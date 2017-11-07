@@ -1,7 +1,8 @@
 @import-normalize;
 
+@import 'utilities/clearfix';
+
 body {
   background-color: yelow;
-  color: green;
-  color: yellow;
+  @include clearfix;
 }
