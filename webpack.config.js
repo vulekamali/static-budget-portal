@@ -2,7 +2,6 @@ const { resolve } = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const normalize = require('postcss-normalize');
-const WebpackMd5Hash = require('webpack-md5-hash');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -69,7 +68,6 @@ module.exports = {
 
   plugins: [
     new CleanWebpackPlugin('assets/*'),
-    new WebpackMd5Hash(),
     new ExtractTextPlugin('styles.[contenthash].css'),
     new ManifestPlugin({
       fileName: './../_data/assets.json',

@@ -1,3 +1,9 @@
+import { h, render } from 'preact';
+import 'preact/devtools';
 import './styles.scss';
+import Button from './components/Button';
 
-console.log('x');
+render(
+  <Button />,
+  document.getElementById('app'),
+);
