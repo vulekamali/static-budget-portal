@@ -1,0 +1,37 @@
+---
+financial_year: 2017-18
+sphere: provincial
+geographic_region: western-cape
+department_name: health
+---
+
+{% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region].departments[page.department_name] %}
+bob: {{ page_data.name }}
+
+<ol>
+  {% for year in page_data.financial_years.previous %}
+  <li>{{ year }}</li>
+  {% endfor %}
+</ol>
+{{ page_data.financial_years.this }}
+<ol>
+  {% for year in page_data.financial_years.future %}
+  <li>{{ year }}</li>
+  {% endfor %}
+</ol>
+
+
+<h2>{{ page_data.geographic_region.name }}</h2>
+<h2>Vote {{ page_data.vote_number }}: {{ page_data.name }}</h2>
+
+<h3>purpose</h3>
+
+<div>
+  {{ page_data.content.purpose | markdownify }}
+</div>
+
+<h3>mandate</h3>
+
+<div>
+  {{ page_data.content.mandate | markdownify }}
+</div>
