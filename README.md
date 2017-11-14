@@ -34,3 +34,12 @@ Run a local server to view the site
 ```
 bundle exec jekyll serve --watch
 ```
+
+### Regenerating data files
+
+```
+source env/bin/activate
+python generate/files.py
+```
+
+Then use `git status` and `git diff` to get an idea of what changed. If it looks sensible, add the updated files and commit and PR back into the branch where you want changes reflected.
