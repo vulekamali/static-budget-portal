@@ -51,6 +51,10 @@ for year_govt_group_id in ckan.action.group_list():
 
 
 for year in years.keys():
+    years[year]['provincial']['department_list'] \
+        = sorted(years[year]['provincial']['department_list'],
+                 key=lambda l: l['province_name'])
+
     # department list data
     directory = "_data/%s/provincial" % year
     if not os.path.exists(directory):
