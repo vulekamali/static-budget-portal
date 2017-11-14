@@ -1,7 +1,7 @@
 <ol>
   {% for province in site.data[page.financial_year].provincial.department_list %}
   <li>
-    <h3>{{ province.province_name }}</h3>
+    <h3>{{ province.name }}</h3>
     <ol>
       {% for department in province.departments %}
       <li>Vote {{ department.vote_number }}: {{ department.name }}</li>

@@ -48,36 +48,35 @@ for year_govt_group_id in ckan.action.group_list():
         government.departments.append(department)
 
 
-for year in years.keys():
+for year_id in years.keys():
     # department list data
-    directory = "_data/%s/provincial" % year
+    directory = "_data/%s/provincial" % year_id
     if not os.path.exists(directory):
         os.makedirs(directory)
     with open(os.path.join(directory, "department_list.yaml"), "wb") as outfile:
-        views.DepartmentList(years[year].provincial).yaml(
+        views.DepartmentList(years[year_id].provincial).yaml(
             outfile, default_flow_style=False, encoding='utf-8')
 
-    # # department list pages
-    # directory = "%s" % year
-    # if not os.path.exists(directory):
-    #     os.makedirs(directory)
-    # with open(os.path.join(directory, "departments.html"), "wb") as outfile:
-    #     outfile.write("---\nfinancial_year: %s\nlayout: department_list\n---" % year)
-    #
-    # for geographic_region in years[year]['provincial'].keys():
-    #     for department in years[year]['provincial'][geographic_region]:
-    #         print department
-    #         # department pages
-    #         geographic_region_slug = department['geographic_region']['slug']
-    #         directory = "%s/provincial/%s/departments" % (year, geographic_region_slug)
-    #         if not os.path.exists(directory):
-    #             os.makedirs(directory)
-    #         with open(os.path.join(directory, "%s.html" % department['slug']), "wb") as outfile:
-    #             outfile.write(
-    #                 "---\n\
-    #                 financial_year: %s\n\
-    #                 sphere: provincial\n\
-    #                 geographic_region_slug: %s\n\
-    #                 department_slug: %s\n\
-    #                 layout: department\n\
-    #                 ---" % (year, geographic_region_slug, department['slug']))
+    # department list pages
+    directory = "%s" % year_id
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    with open(os.path.join(directory, "departments.html"), "wb") as outfile:
+        outfile.write("---\nfinancial_year: %s\nlayout: department_list\n---" % year_id)
+
+
+    # department pages
+    for government in years[year_id].provincial.governments.values():
+        for department in government.departments:
+            directory = "%s/provincial/%s/departments" % (year_id, government.slug)
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            with open(os.path.join(directory, "%s.html" % department.slug), "wb") as outfile:
+                outfile.write(
+                    ("---\n"
+                     "financial_year: %s\n"
+                     "sphere: provincial\n"
+                     "geographic_region_slug: %s\n"
+                     "department_slug: %s\n"
+                     "layout: department\n"
+                     "---") % (year_id, government.slug, department.slug))
