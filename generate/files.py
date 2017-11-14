@@ -65,9 +65,17 @@ for year_id in years.keys():
         outfile.write("---\nfinancial_year: %s\nlayout: department_list\n---" % year_id)
 
 
-    # department pages
     for government in years[year_id].provincial.governments.values():
         for department in government.departments:
+            # department data files
+            directory = "_data/%s/provincial/%s/departments" % (year_id, government.slug)
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            with open(os.path.join(directory, "%s.yaml" % department.slug), "wb") as outfile:
+                views.Department(department, years.values()).yaml(
+                    outfile, default_flow_style=False, encoding='utf-8')
+
+            # department pages
             directory = "%s/provincial/%s/departments" % (year_id, government.slug)
             if not os.path.exists(directory):
                 os.makedirs(directory)

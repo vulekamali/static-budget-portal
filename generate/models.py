@@ -10,16 +10,18 @@ class Government():
 
 
 class Department():
-    def __init__(self, name, vote_number):
+    def __init__(self, government, name, vote_number):
+        self.government = government
         self.name = name
         self.slug = slugify(self.name)
         self.vote_number = vote_number
 
-    @staticmethod
-    def from_ckan_package(government, package):
-        return Department(
-            name=extras_get(package['extras'], 'Department Name'),
-            vote_number=int(extras_get(package['extras'], 'Vote Number')),
+    @classmethod
+    def from_ckan_package(cls, government, package):
+        return cls(
+            government,
+            extras_get(package['extras'], 'Department Name'),
+            int(extras_get(package['extras'], 'Vote Number')),
         )
 
 
