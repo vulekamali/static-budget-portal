@@ -6,7 +6,6 @@ department_name: health
 ---
 
 {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region].departments[page.department_name] %}
-bob: {{ page_data.name }}
 
 <ol>
   {% for year in page_data.financial_years.previous %}
