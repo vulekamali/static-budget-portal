@@ -1,0 +1,11 @@
+{% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.department_slug] %}
+
+<ol>
+  {% for year in page_data.financial_years.previous %}
+  <li>{{ year }}</li>
+  {% endfor %}
+</ol>
+
+
+<h2>{{ page_data.government.name }}</h2>
+<h2>Vote {{ page_data.vote_number }}: {{ page_data.name }}</h2>
