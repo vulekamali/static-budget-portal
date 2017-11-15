@@ -10,6 +10,7 @@ class DepartmentList():
                 departments.append({
                     'name': department.name,
                     'vote_number': department.vote_number,
+                    'url_path': department.get_url_path()
                 })
             departments = sorted(departments, key=lambda d: d['vote_number'])
             governments.append({

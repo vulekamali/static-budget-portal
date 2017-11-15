@@ -8,6 +8,9 @@ class Government():
         self.sphere = sphere
         self.departments = []
 
+    def get_url_path(self):
+        return "%s/%s" % (self.sphere.get_url_path(), self.slug)
+
 
 class Department():
     def __init__(self, government, name, vote_number):
@@ -24,17 +27,26 @@ class Department():
             int(extras_get(package['extras'], 'Vote Number')),
         )
 
+    def get_url_path(self):
+        return "%s/departments/%s" % (self.government.get_url_path(), self.slug)
+
 
 class Sphere():
     def __init__(self, financial_year):
         self.financial_year = financial_year
         self.governments = {}
 
+    def get_url_path(self):
+        return "%s/provincial" % self.financial_year.get_url_path()
+
 
 class FinancialYear():
     def __init__(self, id):
         self.id = id
         self.provincial = Sphere(self)
+
+    def get_url_path(self):
+        return "/%s" % self.id
 
 
 def extras_get(extras, key):
