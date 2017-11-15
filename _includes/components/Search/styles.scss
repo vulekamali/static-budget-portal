@@ -1,0 +1,86 @@
+.Search {
+  padding: 30px;
+  background-color: #f0f0f0;
+  width: 100%;
+}
+
+.Search-wrap {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+
+  &.is-focused {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+.Search-form {
+  overflow: hidden;
+  border-radius: 3px 3px 0 0;
+  border: solid 1px #979797;
+  display: table;
+  width: 100%;
+}
+
+.Search-keywords {
+  display: table-cell;
+  font-size: 14px;
+  padding: 13px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.Search-action {
+  display: table-cell;
+  width: 1px;
+  vertical-align: top;
+  border-left: 1px solid #979797;
+}
+
+.Search-button  {
+  padding: 11px 16px;
+  border: none;
+  display: block;
+  width: 100%;
+}
+
+.SiteHead-icon {
+  width: 18px;
+  height: 17px;
+}
+
+.Search-results {
+  background-color: white;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 13px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  border-left: solid 1px #9b9b9b;
+  border-right: solid 1px #9b9b9b;
+  border-bottom: solid 1px #9b9b9b;
+  border-radius: 0 0 3px 3px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.Search-title {
+  font-weight: 600;
+}
+
+.Search-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.Search-item {
+  text-decoration: none;
+}

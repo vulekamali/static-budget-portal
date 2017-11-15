@@ -1,0 +1,28 @@
+---
+layout: base
+---
+
+<div class="Page">
+  <div class="Page-header">
+    {% include components/YearSelect/index.html years=page.years %}
+    {% include components/Search/index.html %}
+  </div>
+  <div class="Page-content">
+    <div class="Page-title"></div>
+    <div class="Page-main">
+      {% comment %}
+      {% include components/IntroBox/index.html %}
+      {% endcomment %}
+    </div>
+    <div class="Page-sidebar">
+      {% comment %}
+      {% include components/RelatedBox/index.html %}
+      {% endcomment %}
+    </div>
+  </div>
+  <div class="Page-footer">
+    {% comment %}
+    {% include components/Footer/index.html %}
+    {% endcomment %}
+  </div>
+</div>

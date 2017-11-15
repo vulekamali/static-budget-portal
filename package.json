@@ -15,7 +15,8 @@
   "homepage": "https://github.com/OpenUpSA/static-budget-portal#readme",
   "scripts": {
     "build": "webpack --display errors-only --progress -p",
-    "build:debug": "webpack --display errors-only --progress"
+    "build:debug": "webpack --display errors-only --progress",
+    "start": "webpack --display errors-only --progress -p -w"
   },
   "keywords": [],
   "devDependencies": {
@@ -113,12 +114,7 @@
           "varsIgnorePattern": "h"
         }
       ],
-      "max-len": [
-        "error",
-        {
-          "ignoreComments": true
-        }
-      ]
+      "max-len": 0
     }
   },
   "stylelint": {
