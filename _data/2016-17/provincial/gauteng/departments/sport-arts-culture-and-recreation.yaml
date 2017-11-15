@@ -1,9 +1,24 @@
 financial_years:
-- id: 2015-16
+- closest_match:
+    is_exact_match: true
+    name: Sport, Arts, Culture and Recreation
+    organisational_unit: department
+    url_path: /2015-16/provincial/gauteng/departments/sport-arts-culture-and-recreation
+  id: 2015-16
   is_selected: false
-- id: 2016-17
+- closest_match:
+    is_exact_match: true
+    name: Sport, Arts, Culture and Recreation
+    organisational_unit: department
+    url_path: /2016-17/provincial/gauteng/departments/sport-arts-culture-and-recreation
+  id: 2016-17
   is_selected: true
-- id: 2017-18
+- closest_match:
+    is_exact_match: true
+    name: Sport, Arts, Culture and Recreation
+    organisational_unit: department
+    url_path: /2017-18/provincial/gauteng/departments/sport-arts-culture-and-recreation
+  id: 2017-18
   is_selected: false
 government:
   name: Gauteng
