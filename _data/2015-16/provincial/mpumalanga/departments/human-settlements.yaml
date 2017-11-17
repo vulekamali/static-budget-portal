@@ -1,9 +1,24 @@
 financial_years:
-- id: 2015-16
+- closest_match:
+    is_exact_match: true
+    name: Human Settlements
+    organisational_unit: department
+    url_path: /2015-16/provincial/mpumalanga/departments/human-settlements
+  id: 2015-16
   is_selected: true
-- id: 2016-17
+- closest_match:
+    is_exact_match: true
+    name: Human Settlements
+    organisational_unit: department
+    url_path: /2016-17/provincial/mpumalanga/departments/human-settlements
+  id: 2016-17
   is_selected: false
-- id: 2017-18
+- closest_match:
+    is_exact_match: true
+    name: Human Settlements
+    organisational_unit: department
+    url_path: /2017-18/provincial/mpumalanga/departments/human-settlements
+  id: 2017-18
   is_selected: false
 government:
   name: Mpumalanga

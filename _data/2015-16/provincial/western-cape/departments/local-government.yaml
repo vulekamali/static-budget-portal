@@ -1,9 +1,24 @@
 financial_years:
-- id: 2015-16
+- closest_match:
+    is_exact_match: true
+    name: Local Government
+    organisational_unit: department
+    url_path: /2015-16/provincial/western-cape/departments/local-government
+  id: 2015-16
   is_selected: true
-- id: 2016-17
+- closest_match:
+    is_exact_match: true
+    name: Local Government
+    organisational_unit: department
+    url_path: /2016-17/provincial/western-cape/departments/local-government
+  id: 2016-17
   is_selected: false
-- id: 2017-18
+- closest_match:
+    is_exact_match: true
+    name: Local Government
+    organisational_unit: department
+    url_path: /2017-18/provincial/western-cape/departments/local-government
+  id: 2017-18
   is_selected: false
 government:
   name: Western Cape

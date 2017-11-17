@@ -1,9 +1,24 @@
 financial_years:
-- id: 2015-16
+- closest_match:
+    is_exact_match: false
+    name: North West
+    organisational_unit: government
+    url_path: /2015-16/provincial/north-west
+  id: 2015-16
   is_selected: false
-- id: 2016-17
+- closest_match:
+    is_exact_match: true
+    name: Culture, Arts and Traditional Affairs
+    organisational_unit: department
+    url_path: /2016-17/provincial/north-west/departments/culture-arts-and-traditional-affairs
+  id: 2016-17
   is_selected: true
-- id: 2017-18
+- closest_match:
+    is_exact_match: true
+    name: Culture, Arts and Traditional Affairs
+    organisational_unit: department
+    url_path: /2017-18/provincial/north-west/departments/culture-arts-and-traditional-affairs
+  id: 2017-18
   is_selected: false
 government:
   name: North West
