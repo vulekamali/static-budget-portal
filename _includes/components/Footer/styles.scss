@@ -1,0 +1,35 @@
+.Footer {
+  background-color: #f0f0f0;
+  font-size: 14px;
+  line-height: 2.14;
+}
+
+.Footer-column {
+  display: inline-block;
+  font-size: 0;
+}
+
+.Footer-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Footer-wrap {
+  padding: 30px 120px 35px;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Footer-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #4a4a4a;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0 20px;
+
+  &:hover {
+    background-color: darken(#f0f0f0, 5%);
+  }
+}

@@ -1,0 +1,42 @@
+.RelatedBox {
+  border-radius: 2px;
+  background-color: #e6e6e6;
+  padding: 10px;
+  @include clearfix;
+}
+
+.RelatedBox-title {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.RelatedBox-item {
+  float: left;
+  height: 120px;
+  padding: 10px;
+  text-align: center;
+  display: table;
+  width: (100% / 2);
+
+  @media screen and (min-width: 750px) {
+    width: (100% / 3);
+  }
+
+  @media screen and (min-width: 1050px) {
+    width: (100% / 2);
+  }
+}
+
+.RelatedBox-link {
+  display: table-cell;
+  background-color: white;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #4a4a4a;
+
+  &:hover {
+    background-color: darken(white, 15%);
+  }
+}

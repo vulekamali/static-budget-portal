@@ -1,0 +1,33 @@
+
+<nav class="NavBar">
+  <ul class="NavBar-list">
+    {% for item in include.navbar %}
+
+      {% if item[3] == true %}
+        {% assign icon = ' NavBar-link--icon' %}
+      {% endif %}
+
+      {% if item[2] == true %}
+        {% assign active = ' NavBar-link--active' %}
+      {% endif %}
+
+      {% if item[2] == true %}
+        {% assign link = 'a' %}
+      {% endif %}
+
+    <li class="NavBar-item">
+        <{{ link | default: 'span'}} href="{{ item[1] | default: '' }}" class="NavBar-link{{ icon | default: '' }}{{ active | default: '' }}">
+
+          {% if item[0] == 'home-icon' %}
+            {% include components/NavBar/partials/icon.html %}
+          {% else %}
+            {{ item[0] }}
+          {% endif %}
+
+        </{{ link | default: 'span'}}>
+      </span>
+    </li>
+
+    {% endfor %}
+  </ul>
+</nav>

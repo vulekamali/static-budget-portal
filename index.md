@@ -1,6 +1,14 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: homepage
+years: [
+  ['2015-16', 'link'],
+  ['2016-17', 'link'],
+  ['2017-18', 'active'],
+]
+year: '2017-18'
+navbar: [
+  ['home-icon', '#', true, true],
+  ['Departments', '#', false, false],
+  ['About', '#', false, false]
+]
 ---

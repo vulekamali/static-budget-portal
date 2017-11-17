@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+<div class="Page">
+  <header class="Page-header">
+    {% include components/YearSelect/index.html years=page.years %}
+    {% include components/Search/index.html year=page.year%}
+    {% include components/NavBar/index.html navbar=page.navbar %}
+  </header>
+  <div class="Page-content">
+    {{ content }}
+  </div>
+  <footer class="Page-footer">
+    {% include components/Footer/index.html %}
+  </footer>
+</div>

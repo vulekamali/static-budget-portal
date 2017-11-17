@@ -1,3 +1,0 @@
----
-layout: pattern-library
----
