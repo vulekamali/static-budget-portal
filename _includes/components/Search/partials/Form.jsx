@@ -5,10 +5,7 @@ import Icon from './Icon.jsx';
 export default function Form({ eventHandlers, keywords }) {
   const { updateItem, initRequest } = eventHandlers;
 
-  const updateKeyword = event => initRequest(
-    event.target.value,
-    `https://treasurydata.openup.org.za/api/3/action/package_search?q=${event.target.value}`,
-  );
+  const updateKeyword = event => initRequest(event.target.value);
   const addFocus = () => updateItem('focus', true);
   const removeFocus = () => updateItem('focus', false);
 

@@ -1,0 +1,48 @@
+.NavBar {
+  background-color: #e6e6e6;
+}
+
+.NavBar-icon {
+  fill: #4a4a4a;
+  width: 20px;
+  height: 20px;
+}
+
+.NavBar-wrap {
+  background-color: #e6e6e6;
+  width: 100%;
+}
+
+.NavBar-item {
+  list-style: none;
+  float: left;
+}
+
+.NavBar-link {
+  height: 100%;
+  display: block;
+  padding: 16px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  color: #4a4a4a;
+
+  &--icon {
+    padding: 15px 20px;
+  }
+
+  &:not(&--icon):hover {
+    background-color: darken(#e6e6e6, 15%);
+  }
+
+  &--active {
+    background-color: white;
+  }
+}
+
+.NavBar-list {
+  list-style: none;
+  max-width: 1024px;
+  margin: 0 auto;
+  @include clearfix;
+}

@@ -1,0 +1,43 @@
+.Page {
+  display: table;
+  width: 100%;
+  min-height: 100%;
+}
+
+.Page-title {
+  font-size: 28px;
+  line-height: 1.29;
+  padding-bottom: 25px;
+}
+
+.Page-head {
+  height: 1%;
+  display: table-row;
+}
+
+.Page-content {
+  height: 98%;
+  display: table-row;
+}
+
+.Page-sidebar {
+  padding-top: 30px;
+
+  @media screen and (min-width: 1050px) {
+    padding: 0;
+    width: 300px;
+    float: right;
+  }
+}
+
+.Page-contentWrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 15px 40px 40px;
+  @include clearfix;
+}
+
+.Page-footer {
+  height: 1%;
+  display: table-row;
+}

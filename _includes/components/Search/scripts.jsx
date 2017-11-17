@@ -8,7 +8,8 @@ function Search() {
 
   if (nodesArray.length > 0) {
     nodesArray.forEach((node) => {
-      render(<SearchContainer />, node);
+      const selectedYear = node.getAttribute('data-year');
+      render(<SearchContainer {...{ selectedYear }} />, node);
     });
   }
 }

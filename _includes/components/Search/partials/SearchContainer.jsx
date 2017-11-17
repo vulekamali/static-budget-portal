@@ -26,9 +26,9 @@ export default class SearchContainer extends Component {
   }
 
 
-  sendRequest(url) {
+  sendRequest(keyword) {
     const request = new Promise((resolve, reject) => {
-      fetch(url)
+      fetch(`${keyword}`)
         .then((response) => {
           if (!response.ok) {
             reject(response);
@@ -54,15 +54,16 @@ export default class SearchContainer extends Component {
   }
 
 
-  initRequest(value, url) {
+  initRequest(keywords) {
     this.setState({ loading: true });
-    this.setState({ keywords: value });
+    this.setState({ keywords });
 
     if (this.state.keywords.length > 3) {
       if (this.state.timeoutId) {
         clearTimeout(this.state.timeoutId);
       }
 
+      const url = `https://treasurydata.openup.org.za/api/3/action/package_search?q=${keywords}&fq=vocab_financial_years:${this.props.selectedYear}`;
       const request = () => this.sendRequest(url);
       const newTimeoutId = setTimeout(request, 1000);
       this.setState({ timeoutId: newTimeoutId });

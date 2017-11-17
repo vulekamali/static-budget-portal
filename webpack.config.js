@@ -7,20 +7,13 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 
 module.exports = {
-  entry: './_includes/index.js',
+  entry: './_includes/scripts.js',
   output: {
     path: resolve(__dirname, 'assets'),
     filename: 'scripts.[chunkhash].js',
   },
 
   devtool: 'source-map',
-
-  resolve: {
-    extensions: [
-      '.jsx',
-      '.js',
-    ],
-  },
 
   module: {
     rules: [

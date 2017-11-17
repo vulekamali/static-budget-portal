@@ -39,11 +39,17 @@
   border-left: 1px solid #979797;
 }
 
-.Search-button  {
-  padding: 11px 16px;
+.Search-button {
+  padding: 12px 16px;
   border: none;
   display: block;
   width: 100%;
+  background-color: #d2d2d2;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(#d2d2d2, 15%);
+  }
 }
 
 .SiteHead-icon {
@@ -83,4 +89,18 @@
 
 .Search-item {
   text-decoration: none;
+}
+
+.Search-loading::after {
+  position: relative;
+  top: 8px;
+  left: 10px;
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-right: 3px solid #4a4a4a;
+  animation: spin 0.5s linear 0s infinite;
 }
