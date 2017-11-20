@@ -5,18 +5,24 @@
 
       {% if item[3] == true %}
         {% assign icon = ' NavBar-link--icon' %}
+      {% else %}
+        {% assign icon = '' %}
       {% endif %}
 
       {% if item[2] == true %}
         {% assign active = ' NavBar-link--active' %}
+      {% else %}
+        {% assign active = '' %}
       {% endif %}
 
       {% if item[2] == true %}
+        {% assign link = 'span' %}
+      {% else %}
         {% assign link = 'a' %}
       {% endif %}
 
     <li class="NavBar-item">
-        <{{ link | default: 'span'}} href="{{ item[1] | default: '' }}" class="NavBar-link{{ icon | default: '' }}{{ active | default: '' }}">
+        <{{ link }} href="{{ item[1] | default: '' }}" class="NavBar-link{{ icon }}{{ active }}">
 
           {% if item[0] == 'home-icon' %}
             {% include components/NavBar/partials/icon.html %}
@@ -24,7 +30,7 @@
             {{ item[0] }}
           {% endif %}
 
-        </{{ link | default: 'span'}}>
+        </{{ link }}>
       </span>
     </li>
 

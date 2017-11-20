@@ -158,6 +158,8 @@
     ]
   },
   "dependencies": {
-    "preact": "^8.2.6"
+    "fuse.js": "^3.2.0",
+    "preact": "^8.2.6",
+    "query-string": "^5.0.1"
   }
 }

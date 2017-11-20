@@ -2,26 +2,25 @@
   <div class="YearSelect-title">Show data for a financial year</div>
   <div class="YearSelect-wrap">
     <ul class="YearSelect-bar js-dropdown">
-        {% for year in include.years %}
-    
-          {% if year[1] == 'index' %}
+      {% for year in include.years %}
+  
+        {% if year[2] == 'index' %}
           <li class="YearSelect-item">
-            <a class="YearSelect-link" href="{{ '/' | absolute_url }}">{{ year[0] }}</a>
+            <a class="YearSelect-link" href="{{ year[1] | absolute_url }}">{{ year[0] }}</a>
             {% endif %}
 
-            {% if year[1] == 'active' %}
+            {% if year[2] == 'active' %}
               <li class="YearSelect-item is-active">
               <span class="YearSelect-link">{{ year[0] }}</span>
             {% endif %}          
                         
-
-            {% if year[1] == 'link' %}
+            {% if year[2] == 'link' %}
               <li class="YearSelect-item">
-              <a class="YearSelect-link" href="{{ year[0] | absolute_url }}">{{ year[0] }}</a>
+              <a class="YearSelect-link" href="{{ year[1] | absolute_url }}">{{ year[0] }}</a>
             {% endif %} 
 
           </li>
-          {% endfor %}
-      </ul>
+        {% endfor %}
+    </ul>
   </div>
 </div>

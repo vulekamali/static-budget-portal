@@ -1,0 +1,102 @@
+.DeptSearch-keywords {
+  border: solid 1px #9b9b9b;
+  border-radius: 3px;
+  padding: 9px 13px;
+  font-size: 14px;
+  min-width: 300px;
+}
+
+.DeptSearch-select {
+  border-radius: 3px;
+  border: solid 1px #9b9b9b;
+  padding-left: 0;
+  display: inline-block;
+  min-width: 170px;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.DeptSearch-selectWrap {
+  display: inline-block;
+  vertical-align: top;
+  max-height: 36px;
+}
+
+.DeptSearch-item {
+  padding: 9px 13px;
+  font-size: 14px;
+  list-style: none;
+  order: 1;
+  display: none;
+
+  &:hover {
+    background-color: darken(white, 15%);
+  }
+
+  .DeptSearch-select.is-open & {
+    display: block;
+  }
+
+  &.is-active {
+    order: 0;
+    display: block;
+
+    .DeptSearch-select.is-open & {
+      border-bottom: 1px solid #9d9d9d;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      float: right;
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-top: 5px solid #4a4a4a;
+      position: relative;
+      top: 5px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.DeptSearch-radio {
+  display: none;
+}
+
+.DeptSearch-divider {
+  padding: 5px 10px 5px 20px;
+  font-size: 14px;
+}
+
+.DeptSearch-group {
+  padding-top: 30px;
+  line-height: 1.5;
+  @include clearfix;
+
+  &--blank {
+    opacity: 0.3;
+  }
+}
+
+.DeptSearch-title {
+  padding: 0 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.DeptSearch-link {
+  font-size: 14px;
+  color: #4a4a4a;
+  text-decoration: none;
+  width: (100% / 2);
+  border-radius: 3px;
+  float: left;
+  padding: 0 7px;
+
+  &:hover {
+    background-color: darken(white, 5%);
+  }
+}
