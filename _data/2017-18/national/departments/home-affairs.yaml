@@ -1,0 +1,31 @@
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Home Affairs
+    organisational_unit: department
+    slug: home-affairs
+    url_path: /2015-16/national/departments/home-affairs
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Home Affairs
+    organisational_unit: department
+    slug: home-affairs
+    url_path: /2016-17/national/departments/home-affairs
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Home Affairs
+    organisational_unit: department
+    slug: home-affairs
+    url_path: /2017-18/national/departments/home-affairs
+  id: 2017-18
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+name: Home Affairs
+slug: home-affairs
+vote_number: 5
