@@ -9,12 +9,14 @@ class DepartmentList():
             for department in government.departments:
                 departments.append({
                     'name': department.name,
+                    'slug': department.slug,
                     'vote_number': department.vote_number,
                     'url_path': department.get_url_path()
                 })
             departments = sorted(departments, key=lambda d: d['vote_number'])
             governments.append({
                 'name': government.name,
+                'slug': government.slug,
                 'departments': departments,
             })
         governments = sorted(governments, key=lambda g: g['name'])
@@ -34,6 +36,7 @@ class Department():
                 'is_selected': year == department.government.sphere.financial_year,
                 'closest_match': {
                     'name': closest_match.name,
+                    'slug': closest_match.slug,
                     'url_path': closest_match.get_url_path(),
                     'organisational_unit': closest_match.organisational_unit,
                     'is_exact_match': closest_is_exact,
@@ -42,9 +45,11 @@ class Department():
         financial_years_context = sorted(financial_years_context, key=lambda y: y['id'])
         self.context = {
             'name': department.name,
+            'slug': department.slug,
             'vote_number': department.vote_number,
             'government': {
                 'name': department.government.name,
+                'slug': department.government.slug,
             },
             'financial_years': financial_years_context,
         }

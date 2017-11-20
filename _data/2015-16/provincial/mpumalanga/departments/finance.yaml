@@ -3,6 +3,7 @@ financial_years:
     is_exact_match: true
     name: Finance
     organisational_unit: department
+    slug: finance
     url_path: /2015-16/provincial/mpumalanga/departments/finance
   id: 2015-16
   is_selected: true
@@ -10,6 +11,7 @@ financial_years:
     is_exact_match: false
     name: Mpumalanga
     organisational_unit: government
+    slug: mpumalanga
     url_path: /2016-17/provincial/mpumalanga
   id: 2016-17
   is_selected: false
@@ -17,10 +19,13 @@ financial_years:
     is_exact_match: false
     name: Mpumalanga
     organisational_unit: government
+    slug: mpumalanga
     url_path: /2017-18/provincial/mpumalanga
   id: 2017-18
   is_selected: false
 government:
   name: Mpumalanga
+  slug: mpumalanga
 name: Finance
+slug: finance
 vote_number: 3
