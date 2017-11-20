@@ -3,6 +3,7 @@ financial_years:
     is_exact_match: false
     name: Free State
     organisational_unit: government
+    slug: free-state
     url_path: /2015-16/provincial/free-state
   id: 2015-16
   is_selected: false
@@ -11,6 +12,7 @@ financial_years:
     name: Department of Economic and Small Business Development, Tourism and Environmental
       Affairs
     organisational_unit: department
+    slug: department-of-economic-and-small-business-development-tourism-and-environmental-affairs
     url_path: /2016-17/provincial/free-state/departments/department-of-economic-and-small-business-development-tourism-and-environmental-affairs
   id: 2016-17
   is_selected: true
@@ -19,11 +21,14 @@ financial_years:
     name: Department of Economic and Small Business Development, Tourism and Environmental
       Affairs
     organisational_unit: department
+    slug: department-of-economic-and-small-business-development-tourism-and-environmental-affairs
     url_path: /2017-18/provincial/free-state/departments/department-of-economic-and-small-business-development-tourism-and-environmental-affairs
   id: 2017-18
   is_selected: false
 government:
   name: Free State
+  slug: free-state
 name: Department of Economic and Small Business Development, Tourism and Environmental
   Affairs
+slug: department-of-economic-and-small-business-development-tourism-and-environmental-affairs
 vote_number: 3
