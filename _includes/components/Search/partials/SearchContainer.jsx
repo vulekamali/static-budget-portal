@@ -7,7 +7,7 @@ export default class SearchContainer extends Component {
     super(props);
 
     this.state = {
-      keywords: '',
+      keywords: this.props.search || '',
       results: [],
       focus: null,
       loading: true,
@@ -28,7 +28,7 @@ export default class SearchContainer extends Component {
 
   sendRequest(keyword) {
     const request = new Promise((resolve, reject) => {
-      fetch(`${keyword}`)
+      fetch(keyword)
         .then((response) => {
           if (!response.ok) {
             reject(response);

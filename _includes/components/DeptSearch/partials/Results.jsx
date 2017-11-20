@@ -1,9 +1,10 @@
 import { h } from 'preact';
 
 
-export default function Results({ results, province }) {
+export default function Results({ state }) {
+  const { results, province } = state;
   const content = results.map((group) => {
-    if (group.departments.length > 0) {
+    if (group.departments.length > 0 && province.value === group.slug) {
       return (
         <div className="DeptSearch-group">
           <div className="DeptSearch-title">{group.name}</div>

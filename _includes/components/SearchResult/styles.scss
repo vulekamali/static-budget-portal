@@ -1,0 +1,35 @@
+.SearchResult-group {
+  background-color: #f3f3f3;
+  font-size: 14px;
+  line-height: 1.86;
+  padding: 10px;
+}
+
+.SearchResult-title {
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.SearchResult-item {
+  padding: 5px 10px;
+  display: block;
+  color: #4a4a4a;
+  text-decoration: none;
+
+  &:nth-child(odd) {
+    background-color: white;
+  }
+
+  &:hover {
+    background-color: darken(white, 15%);
+  }
+}
+
+.SearchResult-heading {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.SearchResult-heading {
+  padding: 15px 0;
+}

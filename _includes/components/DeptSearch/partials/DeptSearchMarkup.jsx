@@ -7,7 +7,7 @@ export default function DeptSearchMarkup({ state, eventHandlers }) {
   return (
     <div className="DeptSearch-wrap">
       <Form {...{ state, eventHandlers }} />
-      <Results results={state.results} province={state.province.value} />
+      <Results {...{ state }} />
     </div>
   );
 }

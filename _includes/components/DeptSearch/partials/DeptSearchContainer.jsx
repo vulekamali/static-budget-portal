@@ -7,7 +7,7 @@ export default class DeptSearchContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      keywords: this.props.autofill || '',
+      keywords: '',
       province: {
         value: null,
         open: false,
@@ -19,11 +19,6 @@ export default class DeptSearchContainer extends Component {
       updateFilter: this.updateFilter.bind(this),
       filterResults: this.filterResults.bind(this),
     };
-  }
-
-
-  componentWillMount() {
-    this.filterResults(this.props.autofill || '');
   }
 
   updateItem(key, value, parent) {
