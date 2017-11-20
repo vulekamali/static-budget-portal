@@ -12,19 +12,42 @@ export default class SearchContainer extends Component {
       focus: null,
       loading: true,
       timeoutId: null,
+      focusTimeout: null,
     };
 
     this.eventHandlers = {
       updateItem: this.updateItem.bind(this),
       initRequest: this.initRequest.bind(this),
+      setFocus: this.setFocus.bind(this),
     };
   }
 
+  setFocus(state) {
+    if (state === false && this.state.focusTimeout === null) {
+      const focusTimeout = setTimeout(
+        () => {
+          this.updateItem('focus', false);
+          this.updateItem('focusTimeout', null);
+        },
+        500,
+      );
+
+      this.setState({ focusTimeout });
+    }
+
+    if (state === true) {
+      if (this.state.focusTimeout !== null) {
+        clearInterval(this.state.focusTimeout);
+      }
+      return this.updateItem('focus', true);
+    }
+
+    return null;
+  }
 
   updateItem(key, value) {
     return this.setState({ [key]: value });
   }
-
 
   sendRequest(keyword) {
     const request = new Promise((resolve, reject) => {
@@ -70,12 +93,12 @@ export default class SearchContainer extends Component {
     }
   }
 
-
   render() {
     return (
       <SearchMarkup
         state={this.state}
         eventHandlers={this.eventHandlers}
+        selectedYear={this.props.selectedYear}
       />
     );
   }

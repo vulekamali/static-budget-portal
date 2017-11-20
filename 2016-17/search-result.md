@@ -2,9 +2,9 @@
 financial_year: 2017-18
 layout: search-result
 years: [
-  ['2015-16', '2015-16', 'link'],
+  ['2015-16', '2015-16/search-result', 'link'],
   ['2016-17', '#', 'active'],
-  ['2017-18', '/', 'index'],
+  ['2017-18', 'search-result', 'index'],
 ]
 navbar: [
   ['home-icon', '/static-budget-portal/', false, true],

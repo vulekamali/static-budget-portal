@@ -25,6 +25,8 @@
 }
 
 .DeptSearch-item {
+  background: white;
+  z-index: 1;
   cursor: pointer;
   padding: 9px 13px;
   font-size: 14px;
@@ -92,12 +94,16 @@
   font-size: 14px;
   color: #4a4a4a;
   text-decoration: none;
-  width: (100% / 2);
   border-radius: 3px;
-  float: left;
   padding: 0 7px;
+  display: block;
 
   &:hover {
     background-color: darken(white, 5%);
+  }
+
+  @media screen and (min-width: 900px) {
+    float: left;
+    width: (100% / 2);
   }
 }

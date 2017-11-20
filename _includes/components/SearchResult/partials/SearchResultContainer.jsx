@@ -8,12 +8,13 @@ export default class SearchResultsContainer extends Component {
 
     this.state = {
       results: [],
+      province: {
+        value: null,
+        open: false,
+      },
     };
 
-    this.eventHandlers = {
-      updateFilter: this.updateFilter.bind(this),
-      filterResults: this.filterResults.bind(this),
-    };
+    this.updateFilter = this.updateFilter.bind(this);
   }
 
   componentDidMount() {
@@ -38,9 +39,36 @@ export default class SearchResultsContainer extends Component {
       .catch(err => new Error(err));
   }
 
+  updateItem(key, value, parent) {
+    if (parent) {
+      return this.setState({
+        [parent]: {
+          ...this.state[parent],
+          [key]: value,
+        },
+      });
+    }
+
+    return this.setState({ [key]: value });
+  }
+
+  updateFilter(filter, value) {
+    if (this.state[filter].open) {
+      return this.setState({
+        [filter]: {
+          ...this.state[filter],
+          value,
+          open: false,
+        },
+      });
+    }
+
+    return this.updateItem('open', true, [filter]);
+  }
+
   render() {
     return (
-      <SearchResultMarkup {...this.state} />
+      <SearchResultMarkup state={this.state} search={this.props.search} selectedYear={this.props.selectedYear} updateFilter={this.updateFilter} />
     );
   }
 }

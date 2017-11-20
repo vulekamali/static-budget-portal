@@ -61,7 +61,7 @@
   background-color: white;
   font-size: 14px;
   line-height: 24px;
-  padding: 13px;
+  padding: 13px 8px;
   position: absolute;
   top: 100%;
   width: 100%;
@@ -80,6 +80,7 @@
 
 .Search-title {
   font-weight: 600;
+  padding: 0 10px;
 }
 
 .Search-list {
@@ -89,6 +90,10 @@
 
 .Search-item {
   text-decoration: none;
+}
+
+.Search-loading {
+  padding: 0 10px;
 }
 
 .Search-loading::after {
@@ -103,4 +108,16 @@
   border: 3px solid transparent;
   border-right: 3px solid #4a4a4a;
   animation: spin 0.5s linear 0s infinite;
+}
+
+.Search-link {
+  display: block;
+  text-decoration: none;
+  color: #4a4a4a;
+  padding: 0 10px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: darken(white, 15%);
+  }
 }

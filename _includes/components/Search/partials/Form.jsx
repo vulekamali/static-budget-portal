@@ -2,12 +2,14 @@ import { h } from 'preact';
 import Icon from './Icon.jsx';
 
 
-export default function Form({ eventHandlers, keywords }) {
-  const { updateItem, initRequest } = eventHandlers;
+export default function Form({ eventHandlers, keywords, selectedYear }) {
+  const { initRequest, setFocus } = eventHandlers;
 
   const updateKeyword = event => initRequest(event.target.value);
-  const addFocus = () => updateItem('focus', true);
-  const removeFocus = () => updateItem('focus', false);
+  const addFocus = () => setFocus(true);
+  const removeFocus = () => setFocus(false);
+  const year = selectedYear === '2017-18' ? '' : `${selectedYear}/`;
+  const searchUrl = `/static-budget-portal/${year}search-result/?search=${keywords}`;
 
   return (
     <form className="Search-form">
@@ -21,9 +23,12 @@ export default function Form({ eventHandlers, keywords }) {
       />
 
       <div className="Search-action">
-        <button className="Search-button">
+        <a
+          className="Search-button"
+          href={searchUrl}
+        >
           <Icon />
-        </button>
+        </a>
       </div>
     </form>
   );
