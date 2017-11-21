@@ -12,6 +12,10 @@ export default class DeptSearchContainer extends Component {
         value: null,
         open: false,
       },
+      spheres: {
+        value: null,
+        open: false,
+      },
       results: this.props.jsonData,
     };
 
@@ -34,7 +38,6 @@ export default class DeptSearchContainer extends Component {
     return this.setState({ [key]: value });
   }
 
-
   updateFilter(filter, value) {
     if (this.state[filter].open) {
       return this.setState({
@@ -46,7 +49,12 @@ export default class DeptSearchContainer extends Component {
       });
     }
 
-    return this.updateItem('open', true, [filter]);
+    return this.setState({
+      [filter]: {
+        ...this.state[filter],
+        open: true,
+      },
+    });
   }
 
 

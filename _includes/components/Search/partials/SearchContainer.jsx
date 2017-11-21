@@ -10,7 +10,7 @@ export default class SearchContainer extends Component {
       keywords: this.props.search || '',
       results: [],
       focus: null,
-      loading: true,
+      loading: null,
       timeoutId: null,
       focusTimeout: null,
     };

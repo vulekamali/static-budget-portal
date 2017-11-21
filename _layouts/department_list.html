@@ -4,20 +4,7 @@ layout: page-shell
 
 {% assign list = site.data[page.financial_year].provincial.department_list %}
 
-<div class="Page-contentWrap">
-  <div class="Page-title">National, Provincial & Munucipal departments</div>
+<main class="Page-contentWrap">
+  <h2 class="Page-title">National, Provincial & Munucipal departments</h2>
   {% include components/DeptSearch/index.html list=list %}
-</div>
-
-<!-- <ol>
-  {% for province in site.data[page.financial_year].provincial.department_list %}
-  <li>
-    <h3>{{ province.name }}</h3>
-    <ol>
-      {% for department in province.departments %}
-      <li>Vote {{ department.vote_number }}: {{ department.name }}</li>
-      {% endfor %}
-    </ol>
-  </li>
-  {% endfor %}
-</ol> -->
+</main>

@@ -10,14 +10,20 @@ export default function Results({ state }) {
     ) {
       if (group.departments.length > 0) {
         return (
-          <div className="DeptSearch-group">
-            <div className="DeptSearch-title">{group.name}</div>
-            {
-              group.departments.map((link) => {
-                return <a className="DeptSearch-link" href={link.url_path}>{link.name}</a>;
-              })
-            }
-          </div>
+          <li className="DeptSearch-group">
+            <h4 className="DeptSearch-title">{group.name}</h4>
+            <ul className="DeptSearch-results">
+              {
+                group.departments.map((link) => {
+                  return (
+                    <li>
+                      <a className="DeptSearch-link" href={link.url_path}>{link.name}</a>
+                    </li>
+                  );
+                })
+              }
+            </ul>
+          </li>
         );
       }
 

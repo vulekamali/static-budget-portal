@@ -8,12 +8,12 @@ export default function Form({ eventHandlers, keywords, selectedYear }) {
   const updateKeyword = event => initRequest(event.target.value);
   const addFocus = () => setFocus(true);
   const removeFocus = () => setFocus(false);
-  const year = selectedYear === '2017-18' ? '' : `${selectedYear}/`;
-  const searchUrl = `/static-budget-portal/${year}search-result/?search=${keywords}`;
+  const searchUrl = `/${selectedYear}/search-result/`;
 
   return (
-    <form className="Search-form">
+    <form className="Search-form" action={searchUrl} method="GET">
       <input
+        name="search"
         className="Search-keywords"
         placeholder="Find departments"
         value={keywords}
@@ -23,12 +23,9 @@ export default function Form({ eventHandlers, keywords, selectedYear }) {
       />
 
       <div className="Search-action">
-        <a
-          className="Search-button"
-          href={searchUrl}
-        >
+        <button className="Search-button" type="submit" onClick={() => console.log(searchUrl)}>
           <Icon />
-        </a>
+        </button>
       </div>
     </form>
   );

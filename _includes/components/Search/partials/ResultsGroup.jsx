@@ -27,8 +27,6 @@ export default function ResultsGroups({ results, loading, selectedYear }) {
             const provSlug = item.extras[provSlugIndex].value;
             const nameSlug = item.extras[nameSlugIndex].value;
 
-            console.log(item.extras);
-
             return (
               <li>
                 <a className="Search-link" href={`/${selectedYear}/provincial/${provSlug}/departments/${nameSlug}`}>

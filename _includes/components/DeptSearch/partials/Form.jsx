@@ -3,7 +3,7 @@ import Select from './Select.jsx';
 
 
 export default function Form({ state, eventHandlers }) {
-  const items = [
+  const provinces = [
     {
       title: 'All Provinces',
       value: null,
@@ -46,7 +46,23 @@ export default function Form({ state, eventHandlers }) {
     },
   ];
 
+  const spheres = [
+    {
+      title: 'All Spheres',
+      value: null,
+    },
+    {
+      title: 'National',
+      value: '2',
+    },
+    {
+      title: 'Provincial',
+      value: '3',
+    },
+  ]
+
   const updateResults = event => eventHandlers.filterResults(event.target.value);
+  const { updateFilter, openFilter } = eventHandlers;
 
   return (
     <div className="DeptSearch-form">
@@ -56,8 +72,28 @@ export default function Form({ state, eventHandlers }) {
         placeholder="Find a department"
         onInput={updateResults}
       />
-      <span className="DeptSearch-divider">in</span>
-      <Select {...{ items, eventHandlers }} state={state.province} />
+
+      <div className="DeptSearch-filterGroup">
+        <span className="DeptSearch-divider">in</span>
+        <Select
+          update={updateFilter}
+          open={openFilter}
+          items={spheres}
+          filter="spheres"
+          state={state.spheres}
+        />
+      </div>
+
+      <div className="DeptSearch-filterGroup">
+        <span className="DeptSearch-divider">in</span>
+        <Select
+          update={updateFilter}
+          open={openFilter}
+          items={provinces}
+          filter="province"
+          state={state.province}
+        />
+      </div>
     </div>
   );
 }

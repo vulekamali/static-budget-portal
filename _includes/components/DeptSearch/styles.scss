@@ -4,6 +4,7 @@
   padding: 9px 13px;
   font-size: 14px;
   min-width: 300px;
+  display: inline-block;
 }
 
 .DeptSearch-select {
@@ -26,13 +27,16 @@
 
 .DeptSearch-item {
   background: white;
-  z-index: 1;
   cursor: pointer;
   padding: 9px 13px;
   font-size: 14px;
   list-style: none;
   order: 1;
   display: none;
+
+  .DeptSearch-select.is-open & {
+    z-index: 10;
+  }
 
   &:hover {
     background-color: darken(white, 15%);
@@ -61,6 +65,12 @@
       position: relative;
       top: 5px;
       margin-left: 10px;
+
+      .DeptSearch-select.is-open {
+        content: 'xxxx' !important;
+        border: 5px solid transparent !important;
+        border-bottom: 5px solid #4a4a4a !important;
+      }
     }
   }
 }
@@ -70,8 +80,13 @@
 }
 
 .DeptSearch-divider {
-  padding: 5px 10px 5px 20px;
+  padding: 10px 5px 10px 0;
+  display: inline-block;
   font-size: 14px;
+
+  @media screen and (min-width: 800px) {
+    padding: 5px 10px 5px 20px;
+  }
 }
 
 .DeptSearch-group {
@@ -105,5 +120,33 @@
   @media screen and (min-width: 900px) {
     float: left;
     width: (100% / 2);
+  }
+}
+
+.DeptSearch-list {
+  list-style: none;
+  padding-left: 5px;
+}
+
+.DeptSearch-label {
+  cursor: pointer;
+}
+
+.DeptSearch-results {
+  padding-left: 0;
+  list-style: none;
+}
+
+.DeptSearch-items {
+  padding-left: 0;
+  list-style: none;
+}
+
+.DeptSearch-filterGroup {
+  padding-top: 15px;
+
+  @media screen and (min-width: 800px) {
+    display: inline-block;
+    padding: 0;
   }
 }
