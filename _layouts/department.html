@@ -15,15 +15,20 @@ layout: page-shell
   </ol>
 
 
-  <h2></h2>
-  <h2></h2>
-
-
-
 <div class="Page-contentWrap">
   <main class="Page-main">
     <div class="Page-title">{{ page_data.government.name }} Departments: {{ page_data.name }}</div>
-    <div class="Page-paragraph">To develop and support a quality higher and vocational education sector. Promote access to higher education, vocational education, and skills development training opportunities.</div>
+
+    {% if page_data.narrative["vote-purpose"] %}
+    <h2>{{ page_data.narrative["vote-purpose"].name }}</h2>
+    <div class="Page-paragraph">{{ page_data.narrative["vote-purpose"].content | markdownify }}</div>
+    {% endif %}
+
+    {% if page_data.narrative["mandate"] %}
+    <h2>{{ page_data.narrative["mandate"].name }}</h2>
+    <div class="Page-paragraph">{{ page_data.narrative["mandate"].content | markdownify }}</div>
+    {% endif %}
+
     {% include components/IntroBox/index.html %}
   </main>
   <aside class="Page-sidebar">

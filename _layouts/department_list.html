@@ -1,7 +1,7 @@
 <h3>National Departments</h3>
 <ol>
   {% for department in site.data[page.financial_year].national.department_list[0].departments %}
-  <li><a href="/static-budget-portal{{ department.url_path }}">Vote {{ department.vote_number }}: {{ department.name }}</a></li>
+  <li><a href="{{ department.url_path }}">Vote {{ department.vote_number }}: {{ department.name }}</a></li>
   {% endfor %}
 </ol>
 

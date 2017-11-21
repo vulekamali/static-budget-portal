@@ -1,4 +1,6 @@
 from slugify import slugify
+import requests
+from requests.adapters import HTTPAdapter
 
 
 class Government():
@@ -29,18 +31,34 @@ class Government():
 class Department():
     organisational_unit = 'department'
 
-    def __init__(self, government, name, vote_number):
+    def __init__(self, government, name, vote_number, narrative):
         self.government = government
         self.name = name
         self.slug = slugify(self.name)
         self.vote_number = vote_number
+        self.narrative = narrative
 
     @classmethod
     def from_ckan_package(cls, government, package):
+        narrative = {}
+        for resource in package['resources']:
+            if resource['name'].startswith('ENE Section - '):
+                name = resource['name'].replace('ENE Section - ', '')
+                name_slug = slugify(name)
+                print "Downloading %s" % resource['url']
+                r = requests.get(resource['url'])
+                r.raise_for_status()
+                r.encoding = 'utf-8'
+                content = r.text
+                narrative[name_slug] = {
+                    'name': name,
+                    'content': content,
+                }
         return cls(
             government,
             extras_get(package['extras'], 'Department Name'),
             int(extras_get(package['extras'], 'Vote Number')),
+            narrative,
         )
 
     def get_url_path(self):
