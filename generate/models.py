@@ -11,7 +11,10 @@ class Government():
         self.departments = []
 
     def get_url_path(self):
-        return "%s/%s" % (self.sphere.get_url_path(), self.slug)
+        if self.sphere.name == 'national':
+            return self.sphere.get_url_path()
+        else:
+            return "%s/%s" % (self.sphere.get_url_path(), self.slug)
 
     def get_department_by_slug(self, slug):
         departments = [d for d in self.departments if d.slug == slug]
@@ -47,12 +50,13 @@ class Department():
 class Sphere():
     organisational_unit = 'sphere'
 
-    def __init__(self, financial_year):
+    def __init__(self, financial_year, name):
         self.financial_year = financial_year
+        self.name = name
         self.governments = {}
 
     def get_url_path(self):
-        return "%s/provincial" % self.financial_year.get_url_path()
+        return "%s/%s" % (self.financial_year.get_url_path(), self.name)
 
     def get_government_by_slug(self, slug):
         return [g for g in self.governments.values() if g.slug == slug][0]
@@ -63,17 +67,22 @@ class FinancialYear():
 
     def __init__(self, id):
         self.id = id
-        self.provincial = Sphere(self)
+        self.national = Sphere(self, 'national')
+        self.provincial = Sphere(self, 'provincial')
 
     def get_url_path(self):
         return "/%s" % self.id
 
     def get_closest_match(self, department):
-        government = self.provincial.get_government_by_slug(department.government.slug)
+        sphere = getattr(self, department.government.sphere.name)
+        government = sphere.get_government_by_slug(department.government.slug)
         department = government.get_department_by_slug(department.slug)
         if not department:
             return government, False
         return department, True
+
+    def get_sphere(self, name):
+        return getattr(self, name)
 
 
 def extras_get(extras, key):

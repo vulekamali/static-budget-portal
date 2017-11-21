@@ -1,0 +1,31 @@
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Police
+    organisational_unit: department
+    slug: police
+    url_path: /2015-16/national/departments/police
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Police
+    organisational_unit: department
+    slug: police
+    url_path: /2016-17/national/departments/police
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Police
+    organisational_unit: department
+    slug: police
+    url_path: /2017-18/national/departments/police
+  id: 2017-18
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+name: Police
+slug: police
+vote_number: 23

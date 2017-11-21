@@ -1,0 +1,31 @@
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Science and Technology
+    organisational_unit: department
+    slug: science-and-technology
+    url_path: /2015-16/national/departments/science-and-technology
+  id: 2015-16
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Science and Technology
+    organisational_unit: department
+    slug: science-and-technology
+    url_path: /2016-17/national/departments/science-and-technology
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Science and Technology
+    organisational_unit: department
+    slug: science-and-technology
+    url_path: /2017-18/national/departments/science-and-technology
+  id: 2017-18
+  is_selected: false
+government:
+  name: South Africa
+  slug: south-africa
+name: Science and Technology
+slug: science-and-technology
+vote_number: 30
