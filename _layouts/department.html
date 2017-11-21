@@ -1,8 +1,11 @@
 ---
 layout: page-shell
 ---
-
+{% if page.sphere == "national" %}
+{% assign page_data = site.data[page.financial_year][page.sphere].departments[page.department_slug] %}
+{% else %}
 {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.department_slug] %}
+{% endif %}
 
 
 <ol>
@@ -10,11 +13,11 @@ layout: page-shell
     <li>{{ year }}</li>
     {% endfor %}
   </ol>
-  
-  
+
+
   <h2></h2>
   <h2></h2>
-  
+
 
 
 <div class="Page-contentWrap">
