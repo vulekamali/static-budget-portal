@@ -48,6 +48,7 @@ class Department():
                 print "Downloading %s" % resource['url']
                 r = requests.get(resource['url'])
                 r.raise_for_status()
+                r.encoding = 'utf-8'
                 content = r.text
                 narrative[name_slug] = {
                     'name': name,
