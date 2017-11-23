@@ -28,5 +28,15 @@ government:
   slug: kwazulu-natal
 name: Economic Development and Tourism
 narrative: {}
+resources:
+  'EPRE for Vote 04 : Economic Development and Tourism':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/640d176a-d754-4241-a8ac-15f2126b7181/resource/109ae7dc-e3d4-4d02-aa89-d5ee1f4a242e/download/kzn-eco-dev-tou-and-envir.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
+        - Vote 04 - Economic Development and Tourism.pdf
 slug: economic-development-and-tourism
 vote_number: 4

@@ -28,5 +28,15 @@ government:
   slug: northern-cape
 name: Economic Development and Tourism
 narrative: {}
+resources:
+  'EPRE for Vote 06 : Economic Development and Tourism':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/99ad2a96-120c-43e4-9a0d-1aa310dac7fa/resource/077c71c1-167d-44a5-95ce-598325953c74/download/nc-eco.-dev.-and-tourism.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
+        - Vote 06 - Economic Development & Tourism.pdf
 slug: economic-development-and-tourism
 vote_number: 6

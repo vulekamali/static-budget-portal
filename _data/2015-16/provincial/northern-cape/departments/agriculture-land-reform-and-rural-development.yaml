@@ -28,5 +28,15 @@ government:
   slug: northern-cape
 name: Agriculture, Land Reform and Rural Development
 narrative: {}
+resources:
+  'EPRE for Vote 12 : Agriculture, Land Reform and Rural Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/88cb8d54-d105-43b9-8ce5-339b4e002b01/resource/52a5da67-a8b5-4792-8d24-3ef0a05d07e2/download/nc-agriculture-land-reform-and-rural-dev.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
+        - Vote 12 - Agriculture, Land Reform and Rural Dev.pdf
 slug: agriculture-land-reform-and-rural-development
 vote_number: 12

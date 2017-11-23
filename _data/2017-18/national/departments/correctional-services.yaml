@@ -47,5 +47,14 @@ narrative:
 
       '
     name: Vote purpose
+resources:
+  ENE for Vote 18 - Correctional Services:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote18_ChapterTables.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2018%20Correctional%20Services.pdf
 slug: correctional-services
 vote_number: 18

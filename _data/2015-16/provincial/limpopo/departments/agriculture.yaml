@@ -28,5 +28,15 @@ government:
   slug: limpopo
 name: Agriculture
 narrative: {}
+resources:
+  'EPRE for Vote 04 : Agriculture':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/b6db4ed9-5353-4a0f-b35f-27daf9c727c3/resource/969a1c35-eecd-4448-99c4-8a36ac7f83e6/download/lim-agriculture.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
+        - Vote 04 - Agriculture.pdf
 slug: agriculture
 vote_number: 4

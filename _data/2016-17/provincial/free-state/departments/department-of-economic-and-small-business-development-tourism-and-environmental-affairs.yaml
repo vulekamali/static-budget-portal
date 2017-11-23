@@ -31,5 +31,15 @@ government:
 name: Department of Economic and Small Business Development, Tourism and Environmental
   Affairs
 narrative: {}
+resources:
+  'EPRE for Vote 03 : Department of Economic and Small Business Development, Tourism and Environmental Affairs':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/3868892c-3259-46b8-9d4c-96a064be8bbc/resource/c18ba2bf-a7ab-495a-a453-b95a2a559bf7/download/fs-economic-small-busin-dev-tourism.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
+        - Vote 03 - Eco and Small Bus. Dev., Tourism and Env Affairs.pdf
 slug: department-of-economic-and-small-business-development-tourism-and-environmental-affairs
 vote_number: 3

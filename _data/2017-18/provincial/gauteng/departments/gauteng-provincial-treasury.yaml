@@ -28,5 +28,15 @@ government:
   slug: gauteng
 name: Gauteng Provincial Treasury
 narrative: {}
+resources:
+  'EPRE for Vote 14 : Gauteng Provincial Treasury':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/fb38717b-521a-4ba8-96c8-47993c4f9664/resource/17e41ed5-ed19-4ece-bb24-7decf92ba184/download/gt-provincial-treasury.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
+        - Vote 14 - Gauteng Provincial Treasury.pdf
 slug: gauteng-provincial-treasury
 vote_number: 14

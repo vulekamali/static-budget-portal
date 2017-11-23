@@ -28,5 +28,15 @@ government:
   slug: mpumalanga
 name: Office of the Premier
 narrative: {}
+resources:
+  'EPRE for Vote 01 : Office of the Premier':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/c1c58fba-faad-4a38-a047-69b73d903ca7/resource/55d1dcf9-fd4f-4ea0-a161-e333b71cd939/download/mpu-office-of-the-premier.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
+        - Vote 01 - Office of the Premier.pdf
 slug: office-of-the-premier
 vote_number: 1

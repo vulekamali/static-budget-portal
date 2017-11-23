@@ -28,5 +28,15 @@ government:
   slug: north-west
 name: Provincial Legislature
 narrative: {}
+resources:
+  'EPRE for Vote 02 : Provincial Legislature':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/d82fa62f-0064-4940-b86c-11a77ae8fdea/resource/e5f6f188-e22d-4765-8e53-0820c4ddbd7c/download/nw-provincial-legislature.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 02 - Provincial Legislature.pdf
 slug: provincial-legislature
 vote_number: 2

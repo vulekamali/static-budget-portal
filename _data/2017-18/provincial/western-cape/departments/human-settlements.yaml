@@ -28,5 +28,15 @@ government:
   slug: western-cape
 name: Human Settlements
 narrative: {}
+resources:
+  'EPRE for Vote 08 : Human Settlements':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/c79cef29-17cd-4c8b-9832-d82b4c0667fa/resource/2f1d84da-2209-49e7-a91c-4dd69dc674be/download/wc-human-settlements.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
+        - Vote 08 - Human Settlements.pdf
 slug: human-settlements
 vote_number: 8

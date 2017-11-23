@@ -28,5 +28,15 @@ government:
   slug: limpopo
 name: Safety, Security and Liaison
 narrative: {}
+resources:
+  'EPRE for Vote 10 : Safety, Security and Liaison':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/da93f92d-9cb4-4857-90a6-52f116846383/resource/48b9f254-0ecc-4d37-817c-a4de859268a0/download/lim-safetysecurity-and-liaison.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
+        - Vote 10 - Safety and Security.pdf
 slug: safety-security-and-liaison
 vote_number: 10

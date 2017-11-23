@@ -28,5 +28,15 @@ government:
   slug: gauteng
 name: Education
 narrative: {}
+resources:
+  'EPRE for Vote 05 : Education':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/16560fcc-d09a-48e1-a7d3-c85858b41e30/resource/c1b5ac17-631e-459f-8ed6-6d85137d39f1/download/gt-education.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
+        - Vote 05 - Education.pdf
 slug: education
 vote_number: 5

@@ -57,5 +57,14 @@ narrative:
 
       '
     name: Vote purpose
+resources:
+  ENE for Vote 07 - National Treasury:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/Vote%207%20National%20Treasury.pdf
+    - format: XLS
+      url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote07.xls
 slug: national-treasury
 vote_number: 7

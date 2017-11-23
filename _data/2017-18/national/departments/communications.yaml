@@ -59,5 +59,14 @@ narrative:
 
       '
     name: Vote purpose
+resources:
+  ENE for Vote 03 - Communications:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote03_ChapterTables.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2003%20Communications.pdf
 slug: communications
 vote_number: 3

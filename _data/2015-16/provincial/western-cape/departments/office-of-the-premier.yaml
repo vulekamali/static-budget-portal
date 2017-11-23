@@ -28,5 +28,15 @@ government:
   slug: western-cape
 name: Office of the Premier
 narrative: {}
+resources:
+  'EPRE for Vote 01 : Office of the Premier':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/4f40d11f-0574-4fcb-9a2a-bd8f4f72a62c/resource/7bffb503-2fe0-4152-b225-509285455afc/download/wc-premier.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
+        - Vote 01 - Premier.pdf
 slug: office-of-the-premier
 vote_number: 1

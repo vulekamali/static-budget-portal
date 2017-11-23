@@ -28,5 +28,15 @@ government:
   slug: mpumalanga
 name: Human Settlements
 narrative: {}
+resources:
+  'EPRE for Vote 13 : Human Settlements':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/6f366cc6-e4b6-4bb8-8963-90050cdb3026/resource/1c8e9fe6-b943-428c-8807-967f72b2da4e/download/mpu-human-settlements.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
+        - Vote 13 - Human Settlements.pdf
 slug: human-settlements
 vote_number: 13

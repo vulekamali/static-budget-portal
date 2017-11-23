@@ -28,5 +28,15 @@ government:
   slug: limpopo
 name: Limpopo Legislature
 narrative: {}
+resources:
+  'EPRE for Vote 02 : Limpopo Legislature':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/b8ffa7b7-e220-4861-b8d8-cf89e83d219c/resource/56d337eb-dbc2-4dd6-8135-c1e63f2a3282/download/lim-limpopo-legislature.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
+        - Vote 02 - Limpopo Legislature.pdf
 slug: limpopo-legislature
 vote_number: 2
