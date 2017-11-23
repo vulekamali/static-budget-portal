@@ -28,5 +28,15 @@ government:
   slug: gauteng
 name: Roads and Trasport
 narrative: {}
+resources:
+  'EPRE for Vote 09 : Roads and Trasport':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/b8e3ea3e-1207-4a6c-af99-2f9767d9fe45/resource/97f9c8d7-7dba-4528-be28-8aa79f76f137/download/gt-roads-and-transport.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
+        - Vote 09 - Roads and Transport.pdf
 slug: roads-and-trasport
 vote_number: 9

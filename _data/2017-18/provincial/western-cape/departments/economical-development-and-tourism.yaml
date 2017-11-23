@@ -28,5 +28,15 @@ government:
   slug: western-cape
 name: Economical Development and Tourism
 narrative: {}
+resources:
+  'EPRE for Vote 12 : Economical Development and Tourism':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/036eed93-ef8d-421c-8048-6c3c819420bb/resource/0f431b23-1b43-4632-b06c-7ef790ef9d75/download/wc-economic-dev.-and-tourism.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
+        - Vote 12 - Economic Development and Toursim.pdf
 slug: economical-development-and-tourism
 vote_number: 12

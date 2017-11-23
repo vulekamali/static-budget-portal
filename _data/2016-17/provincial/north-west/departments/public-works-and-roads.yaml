@@ -28,5 +28,15 @@ government:
   slug: north-west
 name: Public Works and Roads
 narrative: {}
+resources:
+  'EPRE for Vote 11 : Public Works and Roads':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/474695ab-3dee-47a1-9054-deff84a0e41c/resource/4e71deb5-7919-47aa-94f4-2f3b7f07808a/download/nw-public-works-and-roads.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 11 - Public Works and Roads.pdf
 slug: public-works-and-roads
 vote_number: 11

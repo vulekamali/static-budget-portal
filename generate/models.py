@@ -31,16 +31,18 @@ class Government():
 class Department():
     organisational_unit = 'department'
 
-    def __init__(self, government, name, vote_number, narrative):
+    def __init__(self, government, name, vote_number, narrative, resources):
         self.government = government
         self.name = name
         self.slug = slugify(self.name)
         self.vote_number = vote_number
         self.narrative = narrative
+        self.resources = resources
 
     @classmethod
     def from_ckan_package(cls, government, package):
         narrative = {}
+        resources = {}
         for resource in package['resources']:
             if resource['name'].startswith('ENE Section - '):
                 name = resource['name'].replace('ENE Section - ', '')
@@ -54,11 +56,35 @@ class Department():
                     'name': name,
                     'content': content,
                 }
+            if resource['name'].startswith('Vote'):
+                if government.sphere.name == 'provincial':
+                    doc_short = "EPRE"
+                    doc_long = "Estimates of Provincial Revenue and Expenditure"
+                elif government.sphere.name == 'national':
+                    doc_short = "ENE"
+                    doc_long = "Estimates of National Expenditure"
+                else:
+                    raise Exception("unexpected sphere")
+                name = "%s for %s" % (doc_short, resource['name'])
+                description = ("The %s (%s) sets out the detailed spending "
+                               "plans of each government department for the "
+                               "coming year.") % (doc_long, doc_short)
+                if name not in resources:
+                    resources[name] = {
+                        'description': description,
+                        'formats': []
+                    }
+                resources[name]['formats'].append({
+                    'url': resource['url'],
+                    'format': resource['format'],
+                })
+
         return cls(
             government,
             extras_get(package['extras'], 'Department Name'),
             int(extras_get(package['extras'], 'Vote Number')),
             narrative,
+            resources,
         )
 
     def get_url_path(self):

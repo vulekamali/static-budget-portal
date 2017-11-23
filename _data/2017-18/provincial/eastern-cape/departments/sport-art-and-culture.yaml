@@ -28,5 +28,15 @@ government:
   slug: eastern-cape
 name: Sport, Art and Culture
 narrative: {}
+resources:
+  'EPRE for Vote 14 : Sport, Art and Culture':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/e7e69f18-2b85-44b2-8ca1-450d33091742/resource/2986f8b1-a8c4-4209-856e-31eba78fa8fa/download/ec-sport-rec-arts-and-culture.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
+        - Vote 14 - Sport, Rec, Arts and Culture.pdf
 slug: sport-art-and-culture
 vote_number: 14

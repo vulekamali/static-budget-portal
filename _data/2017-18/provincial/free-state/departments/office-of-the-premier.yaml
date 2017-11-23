@@ -28,5 +28,15 @@ government:
   slug: free-state
 name: Office of the Premier
 narrative: {}
+resources:
+  'EPRE for Vote 01 : Office of the Premier':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/a3597ab9-399d-4d7a-b076-5830b5308118/resource/6dbe2015-860e-450e-9e5f-5c589102a60e/download/fs-premier.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
+        - Vote 01 - Office of the Premier.pdf
 slug: office-of-the-premier
 vote_number: 1

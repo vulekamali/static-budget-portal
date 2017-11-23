@@ -28,5 +28,15 @@ government:
   slug: western-cape
 name: Transport and Public Works
 narrative: {}
+resources:
+  'EPRE for Vote 10 : Transport and Public Works':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/ce4d522c-ba76-4feb-8c51-20954acadc8b/resource/e78ae676-df8a-4dcf-affb-524b08b1c576/download/wc-transport-and-public-works.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
+        - Vote 10 - Transport and Public works.pdf
 slug: transport-and-public-works
 vote_number: 10

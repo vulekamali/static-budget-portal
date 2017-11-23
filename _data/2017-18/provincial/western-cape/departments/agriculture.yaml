@@ -28,5 +28,15 @@ government:
   slug: western-cape
 name: Agriculture
 narrative: {}
+resources:
+  'EPRE for Vote 11 : Agriculture':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/cabfaf1e-dbbc-4766-9440-8301a8eaea2f/resource/6ac974ae-b2d3-4f2a-a9b4-39294b244520/download/wc-agriculture.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
+        - Vote 11 - Agriculture.pdf
 slug: agriculture
 vote_number: 11

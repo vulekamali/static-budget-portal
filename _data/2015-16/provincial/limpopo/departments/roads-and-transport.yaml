@@ -28,5 +28,15 @@ government:
   slug: limpopo
 name: Roads and Transport
 narrative: {}
+resources:
+  'EPRE for Vote 08 : Roads and Transport':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/6af59bd5-b947-4fb5-85fb-7b4caaa5b28e/resource/daa34f19-a5cc-420d-a170-9071ca25fe90/download/lim-transport.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
+        - Vote 08 - Transport.pdf
 slug: roads-and-transport
 vote_number: 8

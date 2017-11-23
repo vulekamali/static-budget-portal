@@ -28,5 +28,15 @@ government:
   slug: kwazulu-natal
 name: Agriculture, Environmental Affairs and Rural Development
 narrative: {}
+resources:
+  'EPRE for Vote 03 : Agriculture, Environmental Affairs and Rural Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/4b7e1dd8-0aad-454e-9b2d-43e7125cd8d7/resource/d0af2c5c-b0c1-455a-8dbe-2434f6a7a5b0/download/kzn-agriculture-and-rural-dev.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
+        - Vote 03 - Agriculture.pdf
 slug: agriculture-environmental-affairs-and-rural-development
 vote_number: 3

@@ -28,5 +28,15 @@ government:
   slug: western-cape
 name: Education
 narrative: {}
+resources:
+  'EPRE for Vote 05 : Education':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/1c329b9e-30bf-4456-90f0-34a0514d247b/resource/b418db45-50fe-4bb6-94bf-81dd52128ba9/download/wc-education.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
+        - Vote 05 - Education.pdf
 slug: education
 vote_number: 5

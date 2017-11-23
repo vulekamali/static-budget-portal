@@ -53,6 +53,7 @@ class Department():
             },
             'financial_years': financial_years_context,
             'narrative': department.narrative,
+            'resources': department.resources,
         }
 
     def yaml(self, *args, **kwargs):
