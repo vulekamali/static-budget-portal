@@ -14,9 +14,11 @@
   },
   "homepage": "https://github.com/OpenUpSA/static-budget-portal#readme",
   "scripts": {
+    "test:lint:css": "stylelint _includes/**/*.scss",
+    "test:lint:js": "eslint _includes/**/*.js & eslint _includes/**/*.jsx",
+    "test:lint": "npm run test:lint:css & npm run test:lint:js",
     "build": "webpack --display errors-only --progress -p",
-    "build:debug": "webpack --display errors-only --progress",
-    "start": "webpack --display errors-only --progress -p -w"
+    "build:dev": "webpack --display errors-only --config webpack.config.dev.js --progress"
   },
   "keywords": [],
   "devDependencies": {
@@ -42,6 +44,7 @@
     "eslint-plugin-react": "^7.4.0",
     "eslint-plugin-require-jsdoc": "^1.0.4",
     "extract-text-webpack-plugin": "^3.0.2",
+    "jest": "^21.2.1",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.8",
     "postcss-normalize": "^4.0.0",
@@ -158,6 +161,9 @@
     ]
   },
   "dependencies": {
-    "preact": "^8.2.6"
+    "fuse.js": "^3.2.0",
+    "preact": "^8.2.6",
+    "prop-types": "^15.6.0",
+    "query-string": "^5.0.1"
   }
 }

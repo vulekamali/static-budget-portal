@@ -3,11 +3,12 @@ layout: page-shell
 ---
 
 <div class="Page-contentWrap">
-  <div class="Page-title">A website for making government budget data and processes accessible to all citizens & interested parties.</div>
+  <span class="Page-title">A website for making government budget data and processes accessible to all citizens & interested parties.</span>
   <main class="Page-main">
-    {% include components/IntroBox/index.html %}
+    {% include components/IntroBox/index.html year=page.financial_year %}
   </main>
   <aside class="Page-sidebar">
-    {% include components/RelatedBox/index.html %}
+    <h2 class="u-sReadOnly">Additional Content</h2>
+    {% include components/RelatedBox/index.html year=page.financial_year %}
   </aside>
 </div>

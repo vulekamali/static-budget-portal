@@ -14,7 +14,7 @@ $years: 3;
   padding-right: 20px;
 }
 
-.YearSelect-wrap {
+.YearSelect-content {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
@@ -37,8 +37,8 @@ $years: 3;
   padding-left: 0;
   margin: 5px 0;
   display: flex;
-  flex-direction: column-reverse;
-  z-index: 10;
+  flex-direction: column;
+  z-index: z-index(YearSelect-bar);
   position: absolute;
   top: 0;
   left: 0;
@@ -60,6 +60,7 @@ $years: 3;
   float: left;
   width: 100%;
   display: none;
+  order: 2;
 
   @media screen and (min-width: 550px) {
     display: block;
@@ -71,11 +72,15 @@ $years: 3;
   }
 
   &.is-active {
-    background-color: #d2d2d2;
+    order: 1;
     font-weight: 600;
     border: none;
     cursor: pointer;
     display: inline-block;
+
+    .YearSelect-bar.is-open & {
+      border-bottom: 1px solid #4a4a4a;
+    }
 
     &:first-child {
       border-left-width: 0;
@@ -85,7 +90,7 @@ $years: 3;
       border-right-width: 0;
     }
 
-    .YearSelect-bar:not(.is-open) &::after {
+    &::after {
       content: '';
       display: inline-block;
       width: 0;
@@ -98,9 +103,12 @@ $years: 3;
     }
 
     @media screen and (min-width: 550px) {
+      cursor: default;
       border-left: solid 1px #9b9b9b;
       border-right: solid 1px #9b9b9b;
       display: block;
+      background-color: #d2d2d2;
+      border-bottom-width: 0 !important;
     }
   }
 

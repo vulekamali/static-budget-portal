@@ -1,0 +1,106 @@
+.SearchResult-group {
+  background-color: #f3f3f3;
+  font-size: 14px;
+  line-height: 1.86;
+  padding: 10px;
+}
+
+.SearchResult-title {
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.SearchResult-link {
+  padding: 5px 10px;
+  display: block;
+  color: #4a4a4a;
+  text-decoration: none;
+
+  &:nth-child(odd) {
+    background-color: white;
+  }
+
+  &:hover {
+    background-color: darken(white, 15%);
+  }
+}
+
+.SearchResult-heading {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.SearchResult-heading {
+  padding: 15px 0;
+}
+
+.SearchResult-select {
+  border-radius: 3px;
+  border: solid 1px #9b9b9b;
+  padding-left: 0;
+  display: inline-block;
+  min-width: 170px;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.SearchResult-selectWrap {
+  display: inline-block;
+  vertical-align: top;
+  max-height: 36px;
+}
+
+.SearchResult-item {
+  background: white;
+  z-index: z-index(SearchResult-item);
+  cursor: pointer;
+  padding: 9px 13px;
+  font-size: 14px;
+  list-style: none;
+  order: 1;
+  display: none;
+
+  &:hover {
+    background-color: darken(white, 15%);
+  }
+
+  .SearchResult-select.is-open & {
+    display: block;
+  }
+
+  &.is-active {
+    order: 0;
+    display: block;
+
+    .SearchResult-select.is-open & {
+      border-bottom: 1px solid #9d9d9d;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      float: right;
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-top: 5px solid #4a4a4a;
+      position: relative;
+      top: 5px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.SearchResult-radio {
+  display: none;
+}
+
+.SearchResult-form {
+  float: right;
+}
+
+.SearchResult-formWrap {
+  @include clearfix;
+}

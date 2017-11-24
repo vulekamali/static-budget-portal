@@ -7,28 +7,51 @@ export default class SearchContainer extends Component {
     super(props);
 
     this.state = {
-      keywords: '',
+      keywords: this.props.search || '',
       results: [],
       focus: null,
-      loading: true,
+      loading: null,
       timeoutId: null,
+      focusTimeout: null,
     };
 
     this.eventHandlers = {
       updateItem: this.updateItem.bind(this),
       initRequest: this.initRequest.bind(this),
+      setFocus: this.setFocus.bind(this),
     };
   }
 
+  setFocus(state) {
+    if (state === false && this.state.focusTimeout === null) {
+      const focusTimeout = setTimeout(
+        () => {
+          this.updateItem('focus', false);
+          this.updateItem('focusTimeout', null);
+        },
+        500,
+      );
+
+      this.setState({ focusTimeout });
+    }
+
+    if (state === true) {
+      if (this.state.focusTimeout !== null) {
+        clearInterval(this.state.focusTimeout);
+      }
+      return this.updateItem('focus', true);
+    }
+
+    return null;
+  }
 
   updateItem(key, value) {
     return this.setState({ [key]: value });
   }
 
-
   sendRequest(keyword) {
     const request = new Promise((resolve, reject) => {
-      fetch(`${keyword}`)
+      fetch(keyword)
         .then((response) => {
           if (!response.ok) {
             reject(response);
@@ -70,12 +93,12 @@ export default class SearchContainer extends Component {
     }
   }
 
-
   render() {
     return (
       <SearchMarkup
         state={this.state}
         eventHandlers={this.eventHandlers}
+        selectedYear={this.props.selectedYear}
       />
     );
   }

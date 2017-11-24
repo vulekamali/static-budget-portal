@@ -1,0 +1,52 @@
+import { h } from 'preact';
+import Form from './Form.jsx';
+
+
+export default function SearchResultMarkup({ state, search, selectedYear, updateFilter }) {
+  const { results } = state;
+  const departments = results.map((item) => {
+    const provSlugIndex = item.extras.findIndex(
+      (data) => {
+        return data.key === 'geographic_region_slug';
+      },
+    );
+
+    const nameSlugIndex = item.extras.findIndex(
+      (data) => {
+        return data.key === 'department_name_slug';
+      },
+    );
+
+    const provSlug = item.extras[provSlugIndex].value;
+    const nameSlug = item.extras[nameSlugIndex].value;
+
+    if (
+      state.province.value === null ||
+      state.province.value === provSlug
+    ) {
+      return (
+        <a href={`/${selectedYear}/provincial/${provSlug}/departments/${nameSlug}`} className="SearchResult-link">
+          {item.province[0]} Department: {item.extras[0].value}
+        </a>
+      );
+    }
+  });
+
+  return (
+    <div className="SearchResult-wrap">
+      <div className="SearchResult-heading">Search result for &quot;{search}&quot; in Departments</div>
+
+      <div className="SearchResult-formWrap">
+        <Form {...{ state, updateFilter }} />
+      </div>
+
+      <div className="SearchResult-group">
+        <div className="SearchResult-title">Suggested Departments</div>
+        <div className="SearchResult-list">
+          {departments}
+        </div>
+      </div>
+    </div>
+  );
+}
+

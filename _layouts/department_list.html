@@ -1,19 +1,20 @@
+---
+layout: page-shell
+---
+
+<!--
 <h3>National Departments</h3>
 <ol>
   {% for department in site.data[page.financial_year].national.department_list[0].departments %}
   <li><a href="{{ department.url_path }}">Vote {{ department.vote_number }}: {{ department.name }}</a></li>
   {% endfor %}
 </ol>
+-->
 
-<ol>
-  {% for province in site.data[page.financial_year].provincial.department_list %}
-  <li>
-    <h3>{{ province.name }} Departments</h3>
-    <ol>
-      {% for department in province.departments %}
-      <li>Vote {{ department.vote_number }}: {{ department.name }}</li>
-      {% endfor %}
-    </ol>
-  </li>
-  {% endfor %}
-</ol>
+{% assign national = site.data[page.financial_year].national.department_list[0] %}
+{% assign provincial = site.data[page.financial_year].provincial.department_list %}
+
+<main class="Page-contentWrap">
+  <h2 class="Page-title">National & Provincial departments</h2>
+  {% include components/DeptSearch/index.html provincial=provincial national=national %}
+</main>

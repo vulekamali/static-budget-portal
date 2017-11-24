@@ -7,7 +7,11 @@ layout: page-shell
 {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.department_slug] %}
 {% endif %}
 
+<div class="Page-contentWrap">
+  <main class="Page-main">
+    <div class="Page-title">{{ page_data.government.name }} Departments: {{ page_data.name }}</div>
 
+<!--
 <ol>
     {% for year in page_data.financial_years.previous %}
     <li>{{ year }}</li>
@@ -30,8 +34,7 @@ layout: page-shell
     {% endif %}
 
     {% include components/IntroBox/index.html %}
+  -->
+
   </main>
-  <aside class="Page-sidebar">
-    {% include components/RelatedBox/index.html %}
-  </aside>
 </div>
