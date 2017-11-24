@@ -11,11 +11,10 @@ function Intro() {
       alert.classList.add('is-active');
     };
 
-    const removeAlert = (event) => {
+    const removeAlert = () => {
       alert.classList.remove('is-active');
     };
 
-    console.log(close);
     trigger.addEventListener('click', displayAlert);
     close.addEventListener('click', removeAlert);
   });
