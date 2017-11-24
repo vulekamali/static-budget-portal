@@ -8,7 +8,7 @@ export default function Form({ eventHandlers, keywords, selectedYear }) {
   const updateKeyword = event => initRequest(event.target.value);
   const addFocus = () => setFocus(true);
   const removeFocus = () => setFocus(false);
-  const searchUrl = `/${selectedYear}/search-result/`;
+  const searchUrl = `/${selectedYear}/search-result`;
 
   return (
     <form className="Search-form" action={searchUrl} method="GET">
@@ -24,7 +24,7 @@ export default function Form({ eventHandlers, keywords, selectedYear }) {
       />
 
       <div className="Search-action">
-        <button className="Search-button" type="submit" onClick={() => console.log(searchUrl)}>
+        <button className="Search-button" type="submit">
           <Icon />
         </button>
       </div>
