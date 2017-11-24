@@ -43,7 +43,7 @@ export default function ResultsGroups({ results, loading, selectedYear }) {
   return (
     <div>
       <span className="Search-title">Suggested Departments</span>
-      {loading ? <Loading /> : buildList() }
+      {loading ? <ul className="Search-list"><Loading /></ul> : buildList() }
     </div>
   );
 }

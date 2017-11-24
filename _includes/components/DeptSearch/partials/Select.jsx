@@ -2,16 +2,12 @@ import { h } from 'preact';
 import PropTypes from 'prop-types';
 
 
-export default function Select({ items, state, update, filter }) {
+export default function Select({ items, state, update, open, filter }) {
   const list = items.map((item) => {
     const updateItem = () => update(filter, item.value);
 
     return (
-      <li
-        className={`DeptSearch-item${item.value === state.value ? ' is-active' : ''}`}
-        onClick={updateItem}
-        tabIndex={1}
-      >
+      <li className={`DeptSearch-item${item.value === state ? ' is-active' : ''}`}>
         <label
           htmlFor={`filter-${filter}-${item.value}`}
           className="DeptSearch-label"
@@ -22,6 +18,7 @@ export default function Select({ items, state, update, filter }) {
             value={item.value}
             name={`filter-${filter}`}
             id={`filter-${filter}-${item.value}`}
+            onClick={updateItem}
           />
           {item.title}
         </label>
@@ -31,7 +28,7 @@ export default function Select({ items, state, update, filter }) {
 
   return (
     <div className="DeptSearch-selectWrap">
-      <ul className={`DeptSearch-select${state.open ? ' is-open' : ''}`}>
+      <ul className={`DeptSearch-select${filter === open ? ' is-open' : ''}`}>
         {list}
       </ul>
     </div>

@@ -2,7 +2,6 @@
   border-radius: 2px;
   background-color: #e6e6e6;
   padding: 10px;
-  @include clearfix;
 }
 
 .RelatedBox-title {
@@ -39,4 +38,9 @@
   &:hover {
     background-color: darken(white, 15%);
   }
+}
+
+.RelatedBox-items {
+  @include clearfix;
+  padding-left: 0;
 }

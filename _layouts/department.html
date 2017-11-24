@@ -7,26 +7,8 @@ layout: page-shell
 {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.department_slug] %}
 {% endif %}
 
-
-<ol>
-    {% for year in page_data.financial_years.previous %}
-    <li>{{ year }}</li>
-    {% endfor %}
-  </ol>
-
-
-  <h2></h2>
-  <h2></h2>
-
-
-
 <div class="Page-contentWrap">
   <main class="Page-main">
     <div class="Page-title">{{ page_data.government.name }} Departments: {{ page_data.name }}</div>
-    <div class="Page-paragraph">To develop and support a quality higher and vocational education sector. Promote access to higher education, vocational education, and skills development training opportunities.</div>
-    {% include components/IntroBox/index.html %}
   </main>
-  <aside class="Page-sidebar">
-    {% include components/RelatedBox/index.html %}
-  </aside>
 </div>

@@ -2,16 +2,19 @@ import { h } from 'preact';
 
 
 export default function Results({ state }) {
-  const { results, province } = state;
-  const content = results.map((group) => {
+  const { results, province, spheres } = state;
+
+
+  const content = results.map((group, i) => {
     if (
-      province.value === null ||
-      province.value === group.slug
+      (province === null || province === group.slug) &&
+      !(i === 0 && spheres === 'provincial') &&
+      !(i > 0 && spheres === 'national')
     ) {
       if (group.departments.length > 0) {
         return (
           <li className="DeptSearch-group">
-            <h4 className="DeptSearch-title">{group.name}</h4>
+            <h4 className="DeptSearch-title">{group.name} Departments</h4>
             <ul className="DeptSearch-results">
               {
                 group.departments.map((link) => {

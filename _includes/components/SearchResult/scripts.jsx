@@ -1,12 +1,11 @@
 import { h, render } from 'preact';
-import queryString from 'query-string';
 import SearchResultContainer from './partials/SearchResultContainer.jsx';
 
 
 function SearchResult() {
   const nodes = document.getElementsByClassName('SearchResult');
   const nodesArray = [...nodes];
-  const { search } = queryString.parse(location.search) || {};
+  const { search } = window.budgetPortal.stringQueries;
 
   if (nodesArray.length > 0) {
     nodesArray.forEach((node) => {

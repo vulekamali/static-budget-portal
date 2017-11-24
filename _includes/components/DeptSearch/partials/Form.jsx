@@ -53,16 +53,28 @@ export default function Form({ state, eventHandlers }) {
     },
     {
       title: 'National',
-      value: '2',
+      value: 'national',
     },
     {
       title: 'Provincial',
-      value: '3',
+      value: 'provincial',
     },
-  ]
+  ];
 
   const updateResults = event => eventHandlers.filterResults(event.target.value);
-  const { updateFilter, openFilter } = eventHandlers;
+  const { updateFilter } = eventHandlers;
+  const provinceFilter = (
+    <div className="DeptSearch-filterGroup">
+      <span className="DeptSearch-divider">in</span>
+      <Select
+        update={updateFilter}
+        items={provinces}
+        filter="province"
+        state={state.province}
+        open={state.open}
+      />
+    </div>
+  );
 
   return (
     <div className="DeptSearch-form">
@@ -77,23 +89,13 @@ export default function Form({ state, eventHandlers }) {
         <span className="DeptSearch-divider">in</span>
         <Select
           update={updateFilter}
-          open={openFilter}
           items={spheres}
           filter="spheres"
           state={state.spheres}
+          open={state.open}
         />
       </div>
-
-      <div className="DeptSearch-filterGroup">
-        <span className="DeptSearch-divider">in</span>
-        <Select
-          update={updateFilter}
-          open={openFilter}
-          items={provinces}
-          filter="province"
-          state={state.province}
-        />
-      </div>
+      {state.spheres === 'provincial' ? provinceFilter : null }
     </div>
   );
 }

@@ -6,16 +6,12 @@ import DeptSearchMarkup from './DeptSearchMarkup.jsx';
 export default class DeptSearchContainer extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       keywords: '',
-      province: {
-        value: null,
-        open: false,
-      },
-      spheres: {
-        value: null,
-        open: false,
-      },
+      province: null,
+      spheres: this.props.spheres || null,
+      open: null,
       results: this.props.jsonData,
     };
 
@@ -39,22 +35,13 @@ export default class DeptSearchContainer extends Component {
   }
 
   updateFilter(filter, value) {
-    if (this.state[filter].open) {
-      return this.setState({
-        [filter]: {
-          ...this.state[filter],
-          value,
-          open: false,
-        },
-      });
+    if (this.state.open === filter) {
+      this.setState({ open: null });
+    } else {
+      this.setState({ open: filter });
     }
 
-    return this.setState({
-      [filter]: {
-        ...this.state[filter],
-        open: true,
-      },
-    });
+    return this.setState({ [filter]: value });
   }
 
 

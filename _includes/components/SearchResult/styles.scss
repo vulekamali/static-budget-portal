@@ -54,7 +54,7 @@
 
 .SearchResult-item {
   background: white;
-  z-index: 1;
+  z-index: z-index(SearchResult-item);
   cursor: pointer;
   padding: 9px 13px;
   font-size: 14px;

@@ -1,5 +1,6 @@
 @import-normalize;
 
+@import 'utilities/scss/variables/z-index';
 @import 'utilities/scss/mixins/clearfix';
 @import 'utilities/scss/global-styles/universal-selector';
 @import 'utilities/scss/global-styles/body';
@@ -14,3 +15,5 @@
 @import 'components/IntroBox/styles';
 @import 'components/DeptSearch/styles';
 @import 'components/SearchResult/styles';
+@import 'components/Tooltip/styles';
+@import 'components/Link/styles';

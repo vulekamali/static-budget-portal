@@ -1,9 +1,11 @@
+---
 layout: page-shell
 ---
 
-{% assign list = site.data[page.financial_year].provincial.department_list %}
+{% assign national = site.data[page.financial_year].national.department_list[0] %}
+{% assign provincial = site.data[page.financial_year].provincial.department_list %}
 
 <main class="Page-contentWrap">
-  <h2 class="Page-title">National, Provincial & Munucipal departments</h2>
-  {% include components/DeptSearch/index.html list=list %}
+  <h2 class="Page-title">National & Provincial departments</h2>
+  {% include components/DeptSearch/index.html provincial=provincial national=national %}
 </main>

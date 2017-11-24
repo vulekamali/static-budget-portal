@@ -20,6 +20,7 @@ export default function Form({ eventHandlers, keywords, selectedYear }) {
         onInput={updateKeyword}
         onFocus={addFocus}
         onBlur={removeFocus}
+        autoComplete="off"
       />
 
       <div className="Search-action">
