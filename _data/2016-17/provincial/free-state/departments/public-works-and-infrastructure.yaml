@@ -27,5 +27,16 @@ government:
   name: Free State
   slug: free-state
 name: Public Works and Infrastructure
+narrative: {}
+resources:
+  'EPRE for Vote 09 : Public Works and Infrastructure':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/b5652054-e5e5-45d9-a45c-d18e85b7a6b6/resource/14553ff5-506e-42a1-9b67-24caf0cf7188/download/fs-public-works-and-infrast.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
+        - Vote 09 - Public Works and Infrastructure.pdf
 slug: public-works-and-infrastructure
 vote_number: 9

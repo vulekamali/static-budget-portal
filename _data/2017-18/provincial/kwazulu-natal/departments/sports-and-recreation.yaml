@@ -27,5 +27,16 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Sports and Recreation
+narrative: {}
+resources:
+  'EPRE for Vote 10 : Sports and Recreation':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/d06629d6-b782-4406-9132-7969d4155e8a/resource/a63eed01-32b6-45ce-a148-5d1cef2b213b/download/kzn-sport-and-recreation.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
+        - Vote 10 - Sports and Recreation.pdf
 slug: sports-and-recreation
 vote_number: 10

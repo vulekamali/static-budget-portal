@@ -27,5 +27,16 @@ government:
   name: Mpumalanga
   slug: mpumalanga
 name: Agricultural, Rural Development and Land Administration
+narrative: {}
+resources:
+  'EPRE for Vote 05 : Agricultural, Rural Development and Land Administration':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/cf28d7c2-da01-42e7-b9e1-7e565ce37ca3/resource/b2dfbb0d-e22c-4069-8a0d-af2dee154d0e/download/mpu-agric.-rural-dev.-land-and-env.-affairs.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
+        - Vote 05 - Agriculture, Rural deve, Land and Environ.pdf
 slug: agricultural-rural-development-and-land-administration
 vote_number: 5

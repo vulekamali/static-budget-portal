@@ -27,5 +27,16 @@ government:
   name: Gauteng
   slug: gauteng
 name: Sport, Arts, Culture and Recreation
+narrative: {}
+resources:
+  'EPRE for Vote 12 : Sport, Arts, Culture and Recreation':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/494f4221-c7ed-4b41-b98f-b920f66efabb/resource/39f0dbf3-e2db-4b08-9526-6577c66d75a2/download/gt-sport-arts-cult-and-recreation.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
+        - Vote 12 - Sport, Arts, Culture and Recreation.pdf
 slug: sport-arts-culture-and-recreation
 vote_number: 12

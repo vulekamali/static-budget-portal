@@ -27,5 +27,16 @@ government:
   name: Limpopo
   slug: limpopo
 name: Economic Development, Environmental Affairs and Tourism
+narrative: {}
+resources:
+  'EPRE for Vote 06 : Economic Development, Environmental Affairs and Tourism':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/1d9b7b92-2fc0-411c-9ca7-5a42b8bbd8b6/resource/b092484a-8c4f-4018-9935-781ba3288ef7/download/lim-eco.-dev.-env.-and-tourism.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
+        - Vote 06 - Economic Dev., Environ. & Tourism.pdf
 slug: economic-development-environmental-affairs-and-tourism
 vote_number: 6

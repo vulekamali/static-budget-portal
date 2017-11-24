@@ -27,5 +27,16 @@ government:
   name: North West
   slug: north-west
 name: Agricultural and Rural Development
+narrative: {}
+resources:
+  'EPRE for Vote 13 : Agricultural and Rural Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/edcb5554-1da5-4c84-ade7-b140e6ef1ac9/resource/38e86002-accf-4660-97fd-cbbe69300b49/download/nw-rural-environ-and-agric-development.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 13 - Agriculture and Rural Development.pdf
 slug: agricultural-and-rural-development
 vote_number: 13

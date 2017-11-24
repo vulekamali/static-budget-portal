@@ -27,5 +27,16 @@ government:
   name: Northern Cape
   slug: northern-cape
 name: Social Development
+narrative: {}
+resources:
+  'EPRE for Vote 11 : Social Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/947bd587-c7ea-406a-8d4d-cfad6b956359/resource/c88a731b-0804-48c1-847b-8cbcaff6956e/download/nc-social-development.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
+        - Vote 11 - Social Development.pdf
 slug: social-development
 vote_number: 11

@@ -27,5 +27,16 @@ government:
   name: Gauteng
   slug: gauteng
 name: Provincial Legislature
+narrative: {}
+resources:
+  'EPRE for Vote 02 : Provincial Legislature':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/5fdd88d9-17ff-4961-8eb5-1e7da57fab78/resource/1652fced-5ad9-4e33-92c0-9a3dd8d8d9c2/download/gt-provincial-legislature.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
+        - Vote 02 - Provincial Legislature.pdf
 slug: provincial-legislature
 vote_number: 2

@@ -27,5 +27,15 @@ government:
   name: South Africa
   slug: south-africa
 name: Agriculture, Forestry and Fisheries
+narrative: {}
+resources:
+  ENE for Vote 24 - Agriculture, Forestry and Fisheries:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote24_ChapterTables.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2024%20Agriculture,%20Forestry%20and%20Fisheries.pdf
 slug: agriculture-forestry-and-fisheries
 vote_number: 24

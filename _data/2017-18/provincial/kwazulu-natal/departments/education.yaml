@@ -27,5 +27,16 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Education
+narrative: {}
+resources:
+  'EPRE for Vote 05 : Education':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/492f7c5a-9a7b-4cf4-a8b8-769d7e94afd2/resource/d0db782b-f26a-4b30-9da1-7023cdeadab8/download/kzn-education.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
+        - Vote 05 - Education.pdf
 slug: education
 vote_number: 5

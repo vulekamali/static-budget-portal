@@ -27,5 +27,16 @@ government:
   name: Gauteng
   slug: gauteng
 name: Agriculture and Rural Development
+narrative: {}
+resources:
+  'EPRE for Vote 11 : Agriculture and Rural Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/da8df597-79a2-4acf-8e00-cdb7e287438e/resource/cc8f976d-2e25-4fd6-adc6-88972122ac5b/download/gt-agriculture-and-rural-dev.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
+        - Vote 11 - Agriculture and Rural Development.pdf
 slug: agriculture-and-rural-development
 vote_number: 11

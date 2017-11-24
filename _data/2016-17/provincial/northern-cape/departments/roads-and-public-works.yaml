@@ -27,5 +27,16 @@ government:
   name: Northern Cape
   slug: northern-cape
 name: Roads and Public Works
+narrative: {}
+resources:
+  'EPRE for Vote 05 : Roads and Public Works':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/abba20a6-e953-4a01-bc63-4ee4f68be457/resource/4f1cdc5f-87f8-4285-9854-5629460cbb25/download/nc-roads-and-public-works.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
+        - Vote 05 - Roads & Public Works.pdf
 slug: roads-and-public-works
 vote_number: 5

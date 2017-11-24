@@ -27,5 +27,16 @@ government:
   name: Gauteng
   slug: gauteng
 name: Social Development
+narrative: {}
+resources:
+  'EPRE for Vote 06 : Social Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/046ee50d-16c9-4ec3-8a6b-dc5f867cddf9/resource/031efb0c-4d42-488e-94ff-eec465396f90/download/gt-social-development.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
+        - Vote 06 - Social Development.pdf
 slug: social-development
 vote_number: 6

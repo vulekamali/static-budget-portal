@@ -27,5 +27,16 @@ government:
   name: North West
   slug: north-west
 name: Culture, Arts and Traditional Affairs
+narrative: {}
+resources:
+  'EPRE for Vote 04 : Culture, Arts and Traditional Affairs':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/9b04f772-73b2-4ab9-a557-0c9aaf81b690/resource/b0d714b1-74ba-4b27-9c02-44a22b2a69ec/download/nw-culture-arts-and-trad.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 04 - Culture, Arts and Traditional Affairs.pdf
 slug: culture-arts-and-traditional-affairs
 vote_number: 4

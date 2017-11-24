@@ -27,5 +27,16 @@ government:
   name: North West
   slug: north-west
 name: Community Safety and Transport Management
+narrative: {}
+resources:
+  'EPRE for Vote 05 : Community Safety and Transport Management':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/2843626c-188b-4b1f-b752-b6716d3cffdc/resource/799da326-c6c2-4480-8168-219b0f6618eb/download/nw-comm.-safety-and-transport-mgt..xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 05 - Community Safety and Transport Management.pdf
 slug: community-safety-and-transport-management
 vote_number: 5

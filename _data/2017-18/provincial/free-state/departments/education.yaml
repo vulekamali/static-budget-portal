@@ -27,5 +27,16 @@ government:
   name: Free State
   slug: free-state
 name: Education
+narrative: {}
+resources:
+  'EPRE for Vote 06 : Education':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/546e51ab-ac6d-4600-a6d2-7bc07b4bbc51/resource/26a734f3-9d2c-431b-876e-ea81dca7f8b2/download/fs-education.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
+        - Vote 06 - Education.pdf
 slug: education
 vote_number: 6

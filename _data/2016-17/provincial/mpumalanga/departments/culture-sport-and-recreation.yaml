@@ -27,5 +27,16 @@ government:
   name: Mpumalanga
   slug: mpumalanga
 name: Culture, Sport and Recreation
+narrative: {}
+resources:
+  'EPRE for Vote 11 : Culture, Sport and Recreation':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/c4681a4e-eec1-4136-9177-65016367be45/resource/2d810238-8e44-4af3-842c-f5c2416a7eab/download/mpu-culture-sport-and-recreation.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
+        - Vote 11 - Cullture, Sport and Recreation.pdf
 slug: culture-sport-and-recreation
 vote_number: 11

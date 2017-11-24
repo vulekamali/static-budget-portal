@@ -27,5 +27,27 @@ government:
   name: South Africa
   slug: south-africa
 name: Parliament
+narrative:
+  vote-purpose:
+    content: '_Provide the support services required by Parliament to fulfil its
+
+      constitutional functions, assist political parties represented in Parliament
+
+      to secure administrative support and service constituents, and provide members
+
+      of Parliament with the necessary facilities._
+
+
+      '
+    name: Vote purpose
+resources:
+  ENE for Vote 02 - Parliament:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/Vote%202%20Parliament.pdf
+    - format: XLS
+      url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote02.xls
 slug: parliament
 vote_number: 2

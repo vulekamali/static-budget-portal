@@ -27,5 +27,46 @@ government:
   name: South Africa
   slug: south-africa
 name: Parliament
+narrative:
+  mandate:
+    content: 'The mandate of Parliament is based on the provisions of chapter 4 in
+      the
+
+      Constitution, which establishes Parliament and sets out the functions it
+
+      performs. Parliament is elected to represent the people, to ensure government
+
+      by the people under the Constitution, and to represent the provinces in the
+
+      national sphere of government. It does this by electing the president,
+
+      providing a national forum for public consideration of issues, passing
+
+      legislation, and scrutinising and overseeing executive action.
+
+
+      '
+    name: Mandate
+  vote-purpose:
+    content: '_Provide the support services required by Parliament to fulfil its
+
+      constitutional functions, assist political parties represented in Parliament
+
+      to secure administrative support and service constituents, and provide members
+
+      of Parliament with the necessary facilities._
+
+
+      '
+    name: Vote purpose
+resources:
+  ENE for Vote 02 - Parliament:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/Vote%202%20Parliament.pdf
+    - format: XLS
+      url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote02.xls
 slug: parliament
 vote_number: 2

@@ -27,5 +27,16 @@ government:
   name: North West
   slug: north-west
 name: Local Government and Human Settlements
+narrative: {}
+resources:
+  'EPRE for Vote 09 : Local Government and Human Settlements':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/adbc6b2b-e84c-4341-8308-60d029934cd9/resource/bcf28d87-0d82-48c6-80ed-b91901e8fabb/download/nw-local-government-and-human-settlements.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 09 - Local Government and Human Settlements.pdf
 slug: local-government-and-human-settlements
 vote_number: 9

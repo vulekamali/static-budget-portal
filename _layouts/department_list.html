@@ -2,6 +2,15 @@
 layout: page-shell
 ---
 
+<!--
+<h3>National Departments</h3>
+<ol>
+  {% for department in site.data[page.financial_year].national.department_list[0].departments %}
+  <li><a href="{{ department.url_path }}">Vote {{ department.vote_number }}: {{ department.name }}</a></li>
+  {% endfor %}
+</ol>
+-->
+
 {% assign national = site.data[page.financial_year].national.department_list[0] %}
 {% assign provincial = site.data[page.financial_year].provincial.department_list %}
 

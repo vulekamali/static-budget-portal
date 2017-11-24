@@ -27,5 +27,16 @@ government:
   name: North West
   slug: north-west
 name: Public Safety and Liaison
+narrative: {}
+resources:
+  'EPRE for Vote 05 : Public Safety and Liaison':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/0771b91f-0aee-4a36-bb48-99bdf79f4304/resource/797f9664-d636-4902-9924-18c94059b0b4/download/nw-community-safety-trans-man.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 05 - Public Safety.pdf
 slug: public-safety-and-liaison
 vote_number: 5

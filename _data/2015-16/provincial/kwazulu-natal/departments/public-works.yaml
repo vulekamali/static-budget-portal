@@ -27,5 +27,16 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Public Works
+narrative: {}
+resources:
+  'EPRE for Vote 14 : Public Works':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/a2789ecd-fd62-4d44-ac8d-f389515634ac/resource/ff0bb21c-e983-4965-bb00-5c67b2807aa0/download/kzn-public-works.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
+        - Vote 14 - Public Works.pdf
 slug: public-works
 vote_number: 14

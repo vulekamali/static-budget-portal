@@ -27,5 +27,30 @@ government:
   name: South Africa
   slug: south-africa
 name: Mineral Resources
+narrative:
+  mandate:
+    content: "The mandate of the Department of Mineral Resources is broadly informed\
+      \ by the\nfollowing:\n\n  * the Mineral and Petroleum Resources Development\
+      \ Act\_(2002), which provides the regulatory framework for equitable access\
+      \ to and the sustainable development of mineral resources and related matters\n\
+      \n  * the Mine Health and Safety Act\_(1996), which governs mine health and\
+      \ safety\n\n  * the 1998 White Paper on the Minerals and Mining Policy for South\
+      \ Africa, which provides the framework for the transparent and efficient regulation\
+      \ of the mineral resources and mineral industry.\n\n"
+    name: Mandate
+  vote-purpose:
+    content: "_Promote and regulate the minerals and mining sector for transformation,\n\
+      growth and development. Ensure that all South Africans derive sustainable\n\
+      benefits from the country\u2019s mineral wealth._\n\n"
+    name: Vote purpose
+resources:
+  ENE for Vote 29 - Mineral Resources:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/Vote%2029%20Mineral%20Resources.pdf
+    - format: XLS
+      url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote29.xls
 slug: mineral-resources
 vote_number: 29

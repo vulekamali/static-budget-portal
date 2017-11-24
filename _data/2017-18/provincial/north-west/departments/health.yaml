@@ -27,5 +27,16 @@ government:
   name: North West
   slug: north-west
 name: Health
+narrative: {}
+resources:
+  'EPRE for Vote 03 : Health':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/682eb07c-0951-422b-b06a-40fc208ec3e2/resource/978fe8cb-0385-4dd4-a024-65281e47655c/download/nw-health.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 03 - Health.pdf
 slug: health
 vote_number: 3
