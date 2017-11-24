@@ -2,7 +2,7 @@ import { h } from 'preact';
 import Form from './Form.jsx';
 
 
-export default function SearchResultMarkup({ state, search, selectedYear, updateFilter }) {
+export default function SearchResultMarkup({ count, changeShown, state, search, selectedYear, updateFilter, shown }) {
   const { results } = state;
   const departments = results.map((item) => {
     const provSlugIndex = item.extras.findIndex(
@@ -30,7 +30,23 @@ export default function SearchResultMarkup({ state, search, selectedYear, update
         </a>
       );
     }
+
+    return null;
   });
+
+  const extra = (
+    <span className="SearchResult-countWrap">
+      <span>Showing </span>
+      <input
+        className="SearchResult-count"
+        type="number"
+        max={count}
+        value={shown}
+        onInput={event => changeShown(event.target.value)}
+      />
+      <span> of {count}</span>
+    </span>
+  );
 
   return (
     <div className="SearchResult-wrap">
@@ -41,7 +57,7 @@ export default function SearchResultMarkup({ state, search, selectedYear, update
       </div>
 
       <div className="SearchResult-group">
-        <div className="SearchResult-title">Suggested Departments</div>
+        <div className="SearchResult-title">Suggested Departments{ count ? extra : ''}</div>
         <div className="SearchResult-list">
           {departments}
         </div>

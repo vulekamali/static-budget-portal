@@ -1,0 +1,45 @@
+{% assign icon = '<svg version="1.2" width="10" height="10" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M58.3 50.4L96.7 12c2.4-2.4 2.4-6.2 0-8.6C94.3 1 90.5 1 88 3.4L49.8 41.8 11.3 3.4C9 1 5 1 2.7 3.4.3 5.8.3 9.6 2.7 12L41 50.4 2.8 88.8C.3 91.2.3 95 2.7 97.4 4 98.6 5.5 99.2 7 99.2c1.6 0 3-.6 4.3-1.8L49.7 59 88 97.4c1.3 1.2 3 1.8 4.4 1.8 1.6 0 3-.6 4.3-1.8 2.4-2.4 2.4-6.2 0-8.6L58.3 50.4zm0 0"></path></svg>' %}
+
+<section class="Intro">
+  <h2 class="Intro-title js-tooltips">The national revenue fund, administered by the <a href="http://www.treasury.gov.za/" class="Link">National Treasury</a>, is distributed to these three levels of government according to allocated expenditure.</h2>
+  <ul class="Intro-stats">
+    <li class="Intro-itemWrap">
+      <a class="Intro-item" href="/{{ include.year }}/departments?spheres=national">
+        <span class="Intro-number">41</span>
+        <span class="Intro-text" >National departments</span>
+      </a>
+    </li>
+    <li class="Intro-itemWrap">
+      <a class="Intro-item" href="/{{ include.year }}/departments?spheres=provincial">
+        <span class="Intro-number">128</span>
+        <span class="Intro-text" >Provincial departments</span>
+      </a>
+    </li>
+    <li class="Intro-itemWrap">
+      <span class="Intro-item js-alertTrigger">
+        <span class="Intro-number">257</span>
+        <span class="Intro-text">Metropolitan, district & local Municipalities</span>
+      </span>
+      <div class="Into-alert js-alert">
+          <div class="Intro-alertBox">
+            <div class="Intro-content">
+              <div class="Intro-shadowBox">
+                <div class="Intro-alertTitle">Redirect Notice</div>
+                <div class="Intro-alertText">Municipal budget information is available on National Treasury's Municipal Money website.</div>
+                <a href="http://municipalmoney.gov.za" class="Intro-linkWrap">
+                  <span class="Intro-alertLink">Proceed to http://municipalmoney.gov.za</span>
+                </a>
+                <span class="Intro-linkWrap js-close">
+                  <span>{{ icon }}</span>
+                  <span class="Intro-alertLink">Cancel</span>
+                </span>
+              <div class="Intro-triangleWrap">
+                <div class="Intro-triangle"></div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </li>
+  </ul>
+</section>
