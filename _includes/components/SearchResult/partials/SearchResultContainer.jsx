@@ -8,6 +8,8 @@ export default class SearchResultsContainer extends Component {
 
     this.state = {
       results: [],
+      count: null,
+      shown: 5,
       province: {
         value: null,
         open: false,
@@ -15,10 +17,11 @@ export default class SearchResultsContainer extends Component {
     };
 
     this.updateFilter = this.updateFilter.bind(this);
+    this.changeShown = this.changeShown.bind(this);
   }
 
   componentDidMount() {
-    const url = `https://treasurydata.openup.org.za/api/3/action/package_search?q=${this.props.search}&fq=vocab_financial_years:${this.props.selectedYear}`;
+    const url = `https://treasurydata.openup.org.za/api/3/action/package_search?q=${this.props.search}&start=0&rows=${this.state.shown}&fq=vocab_financial_years:${this.props.selectedYear}`;
 
     const request = new Promise((resolve, reject) => {
       fetch(url)
@@ -28,7 +31,10 @@ export default class SearchResultsContainer extends Component {
           }
 
           response.json()
-            .then(data => resolve(data.result.results))
+            .then((data) => {
+              this.setState({ count: data.result.count });
+              resolve(data.result.results);
+            })
             .catch(err => reject(err));
         })
         .catch(err => reject(err));
@@ -66,9 +72,37 @@ export default class SearchResultsContainer extends Component {
     return this.updateItem('open', true, [filter]);
   }
 
+  changeShown(value) {
+    const realValue = value > this.state.count ? this.state.count : value;
+    this.setState({ shown: realValue });
+
+    const url = `https://treasurydata.openup.org.za/api/3/action/package_search?q=${this.props.search}&start=0&rows=${this.state.shown}&fq=vocab_financial_years:${this.props.selectedYear}`;
+
+    const request = new Promise((resolve, reject) => {
+      fetch(url)
+        .then((response) => {
+          if (!response.ok) {
+            reject(response);
+          }
+
+          response.json()
+            .then((data) => {
+              this.setState({ count: data.result.count });
+              resolve(data.result.results);
+            })
+            .catch(err => reject(err));
+        })
+        .catch(err => reject(err));
+    });
+
+    request
+      .then(array => this.setState({ results: array }))
+      .catch(err => new Error(err));
+  }
+
   render() {
     return (
-      <SearchResultMarkup state={this.state} search={this.props.search} selectedYear={this.props.selectedYear} updateFilter={this.updateFilter} />
+      <SearchResultMarkup state={this.state} count={this.state.count} search={this.props.search} selectedYear={this.props.selectedYear} updateFilter={this.updateFilter} shown={this.state.shown} changeShown={this.changeShown} />
     );
   }
 }

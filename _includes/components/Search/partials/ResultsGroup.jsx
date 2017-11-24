@@ -2,7 +2,7 @@ import { h } from 'preact';
 import Loading from './Loading.jsx';
 
 
-export default function ResultsGroups({ results, loading, selectedYear }) {
+export default function ResultsGroups({ results, loading, selectedYear, count }) {
   const buildList = () => {
     if (results.length < 1) {
       return <div>No results found</div>;
@@ -42,7 +42,7 @@ export default function ResultsGroups({ results, loading, selectedYear }) {
 
   return (
     <div>
-      <span className="Search-title">Suggested Departments</span>
+      <span className="Search-title">Suggested Departments{count ? ` (Showing 4 of ${count})` : ''}</span>
       {loading ? <ul className="Search-list"><Loading /></ul> : buildList() }
     </div>
   );

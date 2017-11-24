@@ -13,6 +13,7 @@ export default class SearchContainer extends Component {
       loading: null,
       timeoutId: null,
       focusTimeout: null,
+      count: null,
     };
 
     this.eventHandlers = {
@@ -20,6 +21,12 @@ export default class SearchContainer extends Component {
       initRequest: this.initRequest.bind(this),
       setFocus: this.setFocus.bind(this),
     };
+  }
+
+  componentDidMount() {
+    if (this.props.search) {
+      this.initRequest(this.state.keywords);
+    }
   }
 
   setFocus(state) {
@@ -58,7 +65,10 @@ export default class SearchContainer extends Component {
           }
 
           response.json()
-            .then(data => resolve(data.result.results))
+            .then((data) => {
+              this.setState({ count: data.result.count });
+              resolve(data.result.results);
+            })
             .catch(err => reject(err));
         })
         .catch(err => reject(err));
@@ -78,6 +88,7 @@ export default class SearchContainer extends Component {
 
 
   initRequest(keywords) {
+    this.setState({ count: null });
     this.setState({ loading: true });
     this.setState({ keywords });
 
@@ -86,12 +97,13 @@ export default class SearchContainer extends Component {
         clearTimeout(this.state.timeoutId);
       }
 
-      const url = `https://treasurydata.openup.org.za/api/3/action/package_search?q=${keywords}&fq=vocab_financial_years:${this.props.selectedYear}`;
+      const url = `https://treasurydata.openup.org.za/api/3/action/package_search?q=${keywords}&start=0&rows=4&fq=vocab_financial_years:${this.props.selectedYear}`;
       const request = () => this.sendRequest(url);
       const newTimeoutId = setTimeout(request, 1000);
       this.setState({ timeoutId: newTimeoutId });
     }
   }
+
 
   render() {
     return (

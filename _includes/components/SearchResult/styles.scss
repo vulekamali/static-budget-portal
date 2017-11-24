@@ -102,5 +102,33 @@
 }
 
 .SearchResult-formWrap {
+  padding-bottom: 25px;
   @include clearfix;
+}
+
+.SearchResult-button {
+  margin: 20px auto;
+  display: block;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #d2d2d2;
+  border: solid 1px #9b9b9b;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(#d2d2d2, 10%);
+  }
+}
+
+.SearchResult-count {
+  width: 50px;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 0 5px 0 7px;
+}
+
+.SearchResult-countWrap {
+  display: inline-block;
+  float: right;
 }
