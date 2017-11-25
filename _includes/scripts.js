@@ -1,6 +1,7 @@
 import 'preact/devtools';
 import './styles.scss';
 
+import './utilities/js/modules/loadGoogleAnalytics';
 import './utilities/js/modules/loadStringQueries';
 
 import './components/YearSelect/scripts.jsx';
