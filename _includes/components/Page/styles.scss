@@ -34,8 +34,12 @@
 .Page-contentWrap {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 15px 40px 40px;
+  padding: 15px 10px 40px;
   @include clearfix;
+
+  @media screen and (min-width: 300px) {
+    padding: 15px 40px 40px;
+  }
 }
 
 .Page-footer {

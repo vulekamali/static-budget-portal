@@ -20,7 +20,12 @@
   }
 }
 
+.Tooltip-phrase {
+  display: inline-block;
+}
+
 .Tooltip-boxWrap {
+  display: none;
   font-weight: normal;
   z-index: z-index(Tooltip-boxWrap);
   position: absolute;
@@ -33,6 +38,10 @@
 
   @media screen and (min-width: 800px) {
     background: none;
+  }
+
+  &.is-open {
+    display: block;
   }
 }
 
