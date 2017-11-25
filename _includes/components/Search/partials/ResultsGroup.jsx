@@ -5,7 +5,11 @@ import Loading from './Loading.jsx';
 export default function ResultsGroups({ results, loading, selectedYear, count }) {
   const buildList = () => {
     if (results.length < 1) {
-      return <div>No results found</div>;
+      return (
+        <ul className="Search-list">
+          <li className="Search-error">No results found</li>
+        </ul>
+      );
     }
 
     return (
@@ -27,10 +31,12 @@ export default function ResultsGroups({ results, loading, selectedYear, count })
             const provSlug = item.extras[provSlugIndex].value;
             const nameSlug = item.extras[nameSlugIndex].value;
 
+            const type = item.province[0] || 'National';
+
             return (
               <li>
                 <a className="Search-link" href={`/${selectedYear}/provincial/${provSlug}/departments/${nameSlug}`}>
-                  {item.province[0]} Department: {item.extras[0].value}
+                  {type} Department: {item.extras[0].value}
                 </a>
               </li>
             );
@@ -42,7 +48,9 @@ export default function ResultsGroups({ results, loading, selectedYear, count })
 
   return (
     <div>
-      <span className="Search-title">Suggested Departments{count ? ` (Showing 4 of ${count})` : ''}</span>
+      <span className="Search-title">
+        Suggested Departments{count ? ` (Showing 4 of ${count})` : ''}
+      </span>
       {loading ? <ul className="Search-list"><Loading /></ul> : buildList() }
     </div>
   );
