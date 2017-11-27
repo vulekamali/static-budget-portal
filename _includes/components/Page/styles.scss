@@ -5,6 +5,7 @@
 }
 
 .Page-title {
+  font-weight: bold;
   font-size: 28px;
   line-height: 1.29;
   padding-bottom: 25px;
@@ -38,7 +39,7 @@
   @include clearfix;
 
   @media screen and (min-width: 300px) {
-    padding: 15px 40px 40px;
+    padding: 25px 40px 40px;
   }
 }
 
@@ -49,4 +50,21 @@
 
 .Page-main {
   float: left;
+
+  @media screen and (min-width: 1050px) {
+    width: 625px;
+  }
+}
+
+.Page-blurb {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.Page-section {
+  padding-top: 40px;
+}
+
+.Page-smallSection {
+  padding-top: 25px;
 }

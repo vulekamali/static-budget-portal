@@ -18,4 +18,8 @@
   @if $name == Tooltip-boxWrap {
     @return 40;
   }
+
+  @if $name == Intro-alert {
+    @return 50;
+  }
 }

@@ -19,20 +19,24 @@ export default function SearchResultMarkup({ count, changeShown, state, search, 
 
     const provSlug = item.extras[provSlugIndex].value;
     const nameSlug = item.extras[nameSlugIndex].value;
+    const departmentType = item.province.length > 0 ? item.province : 'National';
+    const url = item.province.length > 0 ? `/${selectedYear}/provincial/${provSlug}/departments/${nameSlug}` : `/${selectedYear}/national/departments/${nameSlug}`;
 
     if (
       state.province.value === null ||
       state.province.value === provSlug
     ) {
       return (
-        <a href={`/${selectedYear}/provincial/${provSlug}/departments/${nameSlug}`} className="SearchResult-link">
-          {item.province[0]} Department: {item.extras[0].value}
+        <a href={url} className="SearchResult-link">
+          {departmentType} Department: {item.extras[0].value}
         </a>
       );
     }
 
     return null;
   });
+
+  const newShown = shown < 4 ? count : shown;
 
   const extra = (
     <span className="SearchResult-countWrap">
@@ -41,7 +45,7 @@ export default function SearchResultMarkup({ count, changeShown, state, search, 
         className="SearchResult-count"
         type="number"
         max={count}
-        value={shown}
+        value={newShown}
         onInput={event => changeShown(event.target.value)}
       />
       <span> of {count}</span>

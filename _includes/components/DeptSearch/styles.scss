@@ -3,7 +3,8 @@
   border-radius: 3px;
   padding: 9px 13px;
   font-size: 14px;
-  min-width: 300px;
+  width: 100%;
+  max-width: 300px;
   display: inline-block;
 }
 
@@ -11,11 +12,9 @@
   border-radius: 3px;
   border: solid 1px #9b9b9b;
   padding-left: 0;
-  display: inline-block;
+  display: table;
   min-width: 170px;
   margin: 0;
-  display: inline-flex;
-  flex-direction: column;
   background-color: white;
 }
 
@@ -34,6 +33,10 @@
 
   &:hover {
     background-color: darken(white, 15%);
+  }
+
+  .DeptSearch-select.is-open .DeptSearch-item.is-active & {
+    border-bottom: 1px solid #4a4a4a;
   }
 
   .DeptSearch-item.is-active &::after {
@@ -61,21 +64,15 @@
   background: white;
   cursor: pointer;
   list-style: none;
-  order: 1;
   display: none;
 
   .DeptSearch-select.is-open & {
     z-index: z-index(DeptSearch-select);
-    display: block;
+    display: table-row;
   }
 
   &.is-active {
-    order: 0;
-    display: block;
-
-    .DeptSearch-select.is-open & {
-      border-bottom: 1px solid #9d9d9d;
-    }
+    display: table-header-group !important;
   }
 }
 

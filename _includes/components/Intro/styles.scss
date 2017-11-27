@@ -62,7 +62,7 @@
 
   @media screen and (min-width: 750px) {
     border-radius: 50%;
-    padding: 0;
+    padding: 15px 0;
     width: 160px;
     height: 160px;
     display: flex;
@@ -80,6 +80,7 @@
 }
 
 .Intro-text {
+  margin: 0 auto;
   font-size: 16px;
   display: block;
   text-align: center;
@@ -94,8 +95,8 @@
 
 .Into-alert {
   font-weight: normal;
-  z-index: z-index(Tooltip-boxWrap);
-  position: absolute;
+  z-index: z-index(Intro-alert);
+  position: fixed;
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.4);
@@ -106,6 +107,7 @@
 
   @media screen and (min-width: 800px) {
     background: none;
+    position: absolute;
   }
 
   &.is-active {
