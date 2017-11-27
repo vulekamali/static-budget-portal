@@ -30,13 +30,13 @@ export default function ResultsGroups({ results, loading, selectedYear, count })
 
             const provSlug = item.extras[provSlugIndex].value;
             const nameSlug = item.extras[nameSlugIndex].value;
-
-            const type = item.province[0] || 'National';
+            const departmentType = item.province.length > 0 ? item.province : 'National';
+            const url = item.province.length > 0 ? `/${selectedYear}/provincial/${provSlug}/departments/${nameSlug}` : `/${selectedYear}/national/departments/${nameSlug}`;
 
             return (
               <li>
-                <a className="Search-link" href={`/${selectedYear}/provincial/${provSlug}/departments/${nameSlug}`}>
-                  {type} Department: {item.extras[0].value}
+                <a className="Search-link" href={url}>
+                  {departmentType} Department: {item.extras[0].value}
                 </a>
               </li>
             );

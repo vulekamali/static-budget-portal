@@ -1,0 +1,68 @@
+.PseudoSelect {
+  max-height: 36px;
+}
+
+.PseudoSelect-list {
+  border-radius: 3px;
+  border: solid 1px #9b9b9b;
+  padding-left: 0;
+  display: table;
+  margin: 0;
+  background-color: white;
+  list-style: none;
+  position: relative;
+  min-width: 140px;
+}
+
+.PseudoSelect-item {
+  padding-left: 0;
+  display: none;
+
+  .PseudoSelect-list.is-open & {
+    display: table-row;
+  }
+
+  &.is-active {
+    display: table-header-group !important;
+  }
+}
+
+.PseudoSelect-radio {
+  display: none;
+}
+
+.PseudoSelect-label {
+  cursor: pointer;
+  padding: 9px 13px;
+  font-size: 14px;
+  display: block;
+  user-select: none;
+
+  &:hover {
+    background-color: darken(white, 15%);
+  }
+
+  .PseudoSelect-item.is-active &::after {
+    content: '';
+    display: inline-block;
+    float: right;
+    width: 0;
+    height: 0;
+    position: relative;
+    border: 5px solid transparent;
+    border-top: 5px solid #4a4a4a;
+    margin-left: 10px;
+    top: 5px;
+    transform: rotate(360deg);
+    transition: transform 0.3s, top 0.3s;
+
+    .PseudoSelect-list.is-open & {
+      top: 0;
+      transform: rotate(180deg);
+    }
+  }
+
+  .PseudoSelect-list.is-open .PseudoSelect-item.is-active & {
+    border-bottom: 1px solid #9b9b9b;
+  }
+}

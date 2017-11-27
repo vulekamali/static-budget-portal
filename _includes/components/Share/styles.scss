@@ -1,0 +1,34 @@
+.Share-selectWrap {
+  float: left;
+  border-radius: 3px;
+  @include clearfix;
+}
+
+.Share-action {
+  font-size: 14px;
+  padding: 12px 20px;
+}
+
+.Share-wrap {
+  @include clearfix;
+}
+
+.Share-select {
+  float: left;
+}
+
+.Share-action {
+  float: left;
+}
+
+.Share-button {
+  background-color: #d2d2d2;
+  padding: 10px;
+  float: left;
+  cursor: pointer;
+  border: solid 1px #9b9b9b;
+
+  &:hover {
+    background-color: darken(#d2d2d2, 10%);
+  }
+}
