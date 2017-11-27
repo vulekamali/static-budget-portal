@@ -14,19 +14,21 @@
           <ul class="Resources-links">
             {% for format in item[1].formats %}
               <li class="Resources-linkWrap">
-                <a class="Resources-link" href="{{ format.url }}"">
-
-                  {% if format.format == 'XLSX' %}
+                
+                {% if format.format == 'XLSX' %}
+                  <a class="Resources-link" href="{{ format.url }}">
                     <span class="Resources-icon">{{ excelIcon }}</span>
                     <span class="Resources-text">Save Data (Excel)</span>
-                  {% endif %}
+                  </a>
+                {% endif %}
 
-                  {% if format.format == 'PDF' %}
+                {% if format.format == 'PDF' %}
+                  <a class="Resources-link" href="{{ format.url }}" target="_blank">
                     <span class="Resources-icon">{{ pdfIcon }}</span>
                     <span class="Resources-text">Save PDF</span>
-                  {% endif %}
+                  </a>
+                {% endif %}
 
-                </a>
               </li>
             {% endfor %}
           </ul>
