@@ -6,7 +6,7 @@ export default function Form({ state, updateFilter }) {
   const items = [
     {
       title: 'All Provinces',
-      value: null,
+      value: 'all',
     },
     {
       title: 'Eastern Cape',

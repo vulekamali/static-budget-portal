@@ -129,6 +129,14 @@
 }
 
 .SearchResult-countWrap {
-  display: inline-block;
-  float: right;
+  display: block;
+
+  @media screen and (min-width: 650px) {
+    display: inline-block;
+    float: right;
+  }
+}
+
+.SearchResult-filter {
+  min-width: 150px;
 }

@@ -46,10 +46,12 @@ export default function ResultsGroups({ results, loading, selectedYear, count })
     );
   };
 
+  const newShown = count < 4 ? count : 4;
+
   return (
     <div>
       <span className="Search-title">
-        Suggested Departments{count ? ` (Showing 4 of ${count})` : ''}
+        Suggested Departments{count ? ` (Showing ${newShown} of ${count})` : ''}
       </span>
       {loading ? <ul className="Search-list"><Loading /></ul> : buildList() }
     </div>
