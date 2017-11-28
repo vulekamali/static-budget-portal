@@ -4,10 +4,9 @@ import { h } from 'preact';
 export default function Results({ state }) {
   const { results, province, spheres } = state;
 
-
   const content = results.map((group, i) => {
     if (
-      (province === null || province === group.slug) &&
+      (spheres === 'all' || spheres === 'national' || province === 'all' || province === group.slug) &&
       !(i === 0 && spheres === 'provincial') &&
       !(i > 0 && spheres === 'national')
     ) {

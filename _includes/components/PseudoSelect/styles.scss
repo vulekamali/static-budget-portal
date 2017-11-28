@@ -11,7 +11,7 @@
   background-color: white;
   list-style: none;
   position: relative;
-  min-width: 140px;
+  width: 100%;
 }
 
 .PseudoSelect-item {
@@ -32,6 +32,7 @@
 }
 
 .PseudoSelect-label {
+  @include clearfix;
   cursor: pointer;
   padding: 9px 13px;
   font-size: 14px;
@@ -52,12 +53,12 @@
     border: 5px solid transparent;
     border-top: 5px solid #4a4a4a;
     margin-left: 10px;
-    top: 5px;
+    top: 3px;
     transform: rotate(360deg);
     transition: transform 0.3s, top 0.3s;
 
     .PseudoSelect-list.is-open & {
-      top: 0;
+      top: -2px;
       transform: rotate(180deg);
     }
   }
@@ -65,4 +66,8 @@
   .PseudoSelect-list.is-open .PseudoSelect-item.is-active & {
     border-bottom: 1px solid #9b9b9b;
   }
+}
+
+.PseudoSelect-text {
+  display: inline-block
 }

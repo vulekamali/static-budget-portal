@@ -17,7 +17,7 @@ export default function PseudoSelect({ open, items, changeAction, openAction, na
             onClick={radioChange}
             className="PseudoSelect-radio"
           />
-          <span>{ title }</span>
+          <span className="PseudoSelect-text">{ title }</span>
         </label>
       </li>
     );
