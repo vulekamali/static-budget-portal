@@ -81,7 +81,21 @@
     font-weight: bold;
   }
 
+  ol + h3,
+  ul + h3,
   p + h3 {
     padding-top: 30px;
+  }
+
+  p,
+  li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  h4 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
   }
 }
