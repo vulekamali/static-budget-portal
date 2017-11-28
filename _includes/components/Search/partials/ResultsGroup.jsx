@@ -46,7 +46,7 @@ export default function ResultsGroups({ results, loading, selectedYear, count })
     );
   };
 
-  const newShown = count < 4 ? count : 4;
+  const newShown = count < 10 ? count : 10;
 
   return (
     <div>

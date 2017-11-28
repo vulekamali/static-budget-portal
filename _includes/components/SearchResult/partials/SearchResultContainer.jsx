@@ -9,17 +9,18 @@ export default class SearchResultsContainer extends Component {
     this.state = {
       results: [],
       count: null,
-      shown: 5,
+      page: 1,
       province: 'all',
       open: null,
     };
 
+    this.updateItem = this.updateItem.bind(this);
     this.updateFilter = this.updateFilter.bind(this);
     this.changeShown = this.changeShown.bind(this);
   }
 
   componentDidMount() {
-    const url = `https://treasurydata.openup.org.za/api/3/action/package_search?q=${this.props.search}&start=0&rows=${this.state.shown}&fq=vocab_financial_years:${this.props.selectedYear}`;
+    const url = `https://treasurydata.openup.org.za/api/3/action/package_search?q=${this.props.search}&start=0&rows=999&fq=vocab_financial_years:${this.props.selectedYear}`;
 
     const request = new Promise((resolve, reject) => {
       fetch(url)
@@ -58,6 +59,7 @@ export default class SearchResultsContainer extends Component {
 
   updateFilter(filter, value) {
     if (this.state.open === filter) {
+      this.setState({ page: 1 });
       this.setState({ [filter]: value });
       this.setState({ open: null });
       return null;
@@ -96,7 +98,7 @@ export default class SearchResultsContainer extends Component {
 
   render() {
     return (
-      <SearchResultMarkup state={this.state} count={this.state.count} search={this.props.search} selectedYear={this.props.selectedYear} updateFilter={this.updateFilter} shown={this.state.shown} changeShown={this.changeShown} />
+      <SearchResultMarkup results={this.state.results} search={this.props.search} selectedYear={this.props.selectedYear} updateFilter={this.updateFilter} shown={this.state.shown} changeShown={this.changeShown} page={this.state.page} province={this.state.province} state={this.state} updateItem={this.updateItem} />
     );
   }
 }

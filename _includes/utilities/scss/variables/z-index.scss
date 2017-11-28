@@ -7,8 +7,12 @@
     @return 10;
   }
 
-  @if $name == DeptSearch-select {
+  @if $name == PseudoSelect {
     @return 10;
+  }
+
+  @if $name == PseudoSelect is-open {
+    @return 20;
   }
 
   @if $name == Search-wrap {

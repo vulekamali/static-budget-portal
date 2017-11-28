@@ -33,6 +33,7 @@
 }
 
 .Page-contentWrap {
+  word-break: break-word;
   max-width: 1024px;
   margin: 0 auto;
   padding: 15px 10px 40px;
@@ -69,11 +70,18 @@
   padding-top: 25px;
 }
 
-.Page-subTitle {
-  font-size: 16px;
-  font-weight: bold;
-}
 
-.Page-link {
-  color: #4a4a4a;
+.Page-bodyText {
+  a {
+    color: #4a4a4a;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  p + h3 {
+    padding-top: 30px;
+  }
 }
