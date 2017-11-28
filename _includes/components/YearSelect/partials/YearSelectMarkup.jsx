@@ -3,26 +3,26 @@ import { h } from 'preact';
 
 export default function YearSelectMarkup({ open, updateItem, search }) {
 
-const jsonData = [
-    {
-      "direct": false,
-      "url": "/2015-16/national/departments/national-treasury",
-      "name": "2015-16",
-      "active": false
-    },
-    {
-      "direct": true,
-      "url": "/2016-17/national/departments/national-treasury",
-      "name": "2016-17",
-      "active": false
-    },
-    {
-      "direct": true,
-      "url": "/2017-18/national/departments/national-treasury",
-      "name": "2017-18",
-      "active": true
-    }
-  ]
+// const jsonData = [
+//     {
+//       "direct": false,
+//       "url": "/2015-16/national/departments/national-treasury",
+//       "name": "2015-16",
+//       "active": false
+//     },
+//     {
+//       "direct": true,
+//       "url": "/2016-17/national/departments/national-treasury",
+//       "name": "2016-17",
+//       "active": false
+//     },
+//     {
+//       "direct": true,
+//       "url": "/2017-18/national/departments/national-treasury",
+//       "name": "2017-18",
+//       "active": true
+//     }
+//   ]
 
   const items = jsonData.map((data) => {
     const Tag = data.active || data.direct === false ? 'span' : 'a';
