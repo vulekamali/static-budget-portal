@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import Select from './Select.jsx';
+import PseudoSelect from './../../PseudoSelect/index.jsx';
 
 
 export default function Form({ state, updateFilter }) {
@@ -48,7 +48,15 @@ export default function Form({ state, updateFilter }) {
 
   return (
     <div className="SearchResult-form">
-      <Select {...{ items, updateFilter }} state={state.province} />
+      <div className="SearchResult-filter">
+        <PseudoSelect
+          name="province"
+          items={items}
+          property={state.province}
+          open={state.open === 'province'}
+          changeAction={value => updateFilter('province', value)}
+        />
+      </div>
     </div>
   );
 }
