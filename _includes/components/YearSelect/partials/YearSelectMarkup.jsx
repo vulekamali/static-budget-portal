@@ -1,7 +1,7 @@
 import { h } from 'preact';
 
 
-export default function YearSelectMarkup({ open, updateItem, search }) {
+export default function YearSelectMarkup({ jsonData, open, updateItem, search }) {
 
 // const jsonData = [
 //     {
