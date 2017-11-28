@@ -1,12 +1,13 @@
 import { h } from 'preact';
 import Select from './Select.jsx';
+import PseudoSelect from './../../PseudoSelect/index.jsx';
 
 
 export default function Form({ state, eventHandlers }) {
   const provinces = [
     {
       title: 'All Provinces',
-      value: null,
+      value: 'all',
     },
     {
       title: 'Eastern Cape',
@@ -49,7 +50,7 @@ export default function Form({ state, eventHandlers }) {
   const spheres = [
     {
       title: 'All Spheres',
-      value: null,
+      value: 'all',
     },
     {
       title: 'National',
@@ -66,13 +67,15 @@ export default function Form({ state, eventHandlers }) {
   const provinceFilter = (
     <div className="DeptSearch-filterGroup">
       <span className="DeptSearch-divider">in</span>
-      <Select
-        update={updateFilter}
-        items={provinces}
-        filter="province"
-        state={state.province}
-        open={state.open}
-      />
+      <div className="DeptSearch-filter">
+        <PseudoSelect
+          name="province"
+          items={provinces}
+          property={state.province}
+          open={state.open === 'province'}
+          changeAction={value => updateFilter('province', value)}
+        />
+      </div>
     </div>
   );
 
@@ -87,13 +90,15 @@ export default function Form({ state, eventHandlers }) {
 
       <div className="DeptSearch-filterGroup">
         <span className="DeptSearch-divider">in</span>
-        <Select
-          update={updateFilter}
-          items={spheres}
-          filter="spheres"
-          state={state.spheres}
-          open={state.open}
-        />
+        <div className="DeptSearch-filter">
+          <PseudoSelect
+            name="spheres"
+            items={spheres}
+            property={state.spheres}
+            open={state.open === 'spheres'}
+            changeAction={value => updateFilter('spheres', value)}
+          />
+        </div>
       </div>
       {state.spheres === 'provincial' ? provinceFilter : null }
     </div>

@@ -39,7 +39,7 @@
   @include clearfix;
 
   @media screen and (min-width: 300px) {
-    padding: 25px 40px 40px;
+    padding: 25px 40px 100px;
   }
 }
 
@@ -67,4 +67,13 @@
 
 .Page-smallSection {
   padding-top: 25px;
+}
+
+.Page-subTitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Page-link {
+  color: #4a4a4a;
 }

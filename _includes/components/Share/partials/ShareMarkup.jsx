@@ -26,12 +26,11 @@ export default function ShareMarkup({ selected, updateShare, shareOpen }) {
       <div className="Share-selectWrap">
         <div className="Share-select">
           <PseudoSelect
-            name="test"
+            name="share"
             items={hardCoded}
             property={selected}
             open={shareOpen}
             changeAction={value => updateShare(value)}
-            block
           />
         </div>
         <Button {...{ selected }} />

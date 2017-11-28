@@ -18,7 +18,7 @@
   background-color: white;
 }
 
-.DeptSearch-selectWrap {
+.DeptSearch-filter {
   display: inline-block;
   vertical-align: top;
   max-height: 36px;
@@ -103,7 +103,7 @@
 .DeptSearch-title {
   padding: 0 7px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .DeptSearch-link {
@@ -147,4 +147,8 @@
     display: inline-block;
     padding: 0;
   }
+}
+
+.DeptSearch-filter {
+  min-width: 150px;
 }

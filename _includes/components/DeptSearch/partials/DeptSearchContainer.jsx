@@ -9,8 +9,8 @@ export default class DeptSearchContainer extends Component {
 
     this.state = {
       keywords: '',
-      province: null,
-      spheres: this.props.spheres || null,
+      province: 'all',
+      spheres: this.props.spheres || 'all',
       open: null,
       results: this.props.jsonData,
     };

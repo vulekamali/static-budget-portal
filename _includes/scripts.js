@@ -1,4 +1,5 @@
 import 'classlist-polyfill';
+import 'placeholders\.js';
 import 'preact/devtools';
 import './styles.scss';
 
