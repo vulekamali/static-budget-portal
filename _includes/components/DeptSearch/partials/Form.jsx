@@ -1,5 +1,4 @@
 import { h } from 'preact';
-import Select from './Select.jsx';
 import PseudoSelect from './../../PseudoSelect/index.jsx';
 
 
