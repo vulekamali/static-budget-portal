@@ -23,8 +23,8 @@ export default function SearchResultMarkup({ count, changeShown, state, search, 
     const url = item.province.length > 0 ? `/${selectedYear}/provincial/${provSlug}/departments/${nameSlug}` : `/${selectedYear}/national/departments/${nameSlug}`;
 
     if (
-      state.province.value === null ||
-      state.province.value === provSlug
+      state.province === 'all' ||
+      state.province === provSlug
     ) {
       return (
         <a href={url} className="SearchResult-link">
@@ -36,7 +36,7 @@ export default function SearchResultMarkup({ count, changeShown, state, search, 
     return null;
   });
 
-  const newShown = shown < 4 ? count : shown;
+  const newShown = count < 4 ? count : shown;
 
   const extra = (
     <span className="SearchResult-countWrap">

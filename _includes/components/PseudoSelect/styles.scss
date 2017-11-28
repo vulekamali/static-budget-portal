@@ -53,12 +53,12 @@
     border: 5px solid transparent;
     border-top: 5px solid #4a4a4a;
     margin-left: 10px;
-    top: 3px;
+    top: 4px;
     transform: rotate(360deg);
     transition: transform 0.3s, top 0.3s;
 
     .PseudoSelect-list.is-open & {
-      top: -2px;
+      top: -1px;
       transform: rotate(180deg);
     }
   }

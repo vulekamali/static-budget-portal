@@ -10,10 +10,8 @@ export default class SearchResultsContainer extends Component {
       results: [],
       count: null,
       shown: 5,
-      province: {
-        value: null,
-        open: false,
-      },
+      province: 'all',
+      open: null,
     };
 
     this.updateFilter = this.updateFilter.bind(this);
@@ -59,17 +57,13 @@ export default class SearchResultsContainer extends Component {
   }
 
   updateFilter(filter, value) {
-    if (this.state[filter].open) {
-      return this.setState({
-        [filter]: {
-          ...this.state[filter],
-          value,
-          open: false,
-        },
-      });
+    if (this.state.open === filter) {
+      this.setState({ [filter]: value });
+      this.setState({ open: null });
+      return null;
     }
 
-    return this.updateItem('open', true, [filter]);
+    return this.setState({ open: filter });
   }
 
   changeShown(value) {
