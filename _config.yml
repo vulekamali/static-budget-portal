@@ -57,7 +57,7 @@ defaults:
       ]
       navbar: [
         ['home-icon', '/', false, true],
-        ['Departments', '/2017-18/departments', true, false],
+        ['Departments', '/2017-18/departments', true, false, true],
         ['About', '/2017-18/about', false, false]
       ]
   -
@@ -72,7 +72,7 @@ defaults:
       ]
       navbar: [
         ['home-icon', '/2016-17', false, true],
-        ['Departments', '/2016-17/departments', true, false],
+        ['Departments', '/2016-17/departments', true, false, true],
         ['About', '/2016-17/about', false, false]
       ]
   -
@@ -87,7 +87,7 @@ defaults:
       ]
       navbar: [
         ['home-icon', '/', false, true],
-        ['Departments', '/2017-18/departments', true, false],
+        ['Departments', '/2017-18/departments', true, false, true],
         ['About', '/2017-18/about', false, false]
       ]
 

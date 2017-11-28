@@ -16,11 +16,13 @@
         {% assign active = '' %}
       {% endif %}
 
-      {% if item[2] == true %}
-        {% assign link = 'span' %}
-      {% else %}
+      {% if item[2] == false or item[4] == true %}
         {% assign link = 'a' %}
+      {% else %}
+        {% assign link = 'span' %}
       {% endif %}
+      
+      
 
     <li class="NavBar-item">
         <{{ link }} href="{{ item[1] | default: '' }}" class="NavBar-link{{ icon }}{{ active }}">

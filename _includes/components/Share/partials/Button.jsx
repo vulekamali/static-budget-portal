@@ -9,10 +9,12 @@ export default function Button({ selected }) {
     window.prompt('Press Ctrl+C to copy this link to your clipboard', url);
   };
   const fbDirect = () => {
-    window.location = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+    const win = window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+    win.focus();
   };
   const twDirect = () => {
-    window.location = `https://twitter.com/home?status=${url}`;
+    const win = window.open(`https://twitter.com/home?status=${url}`, '_blank');
+    win.focus();
   };
 
   const share = () => {

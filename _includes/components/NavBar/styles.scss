@@ -19,6 +19,7 @@
 }
 
 .NavBar-link {
+  user-select: none;
   height: 100%;
   display: block;
   padding: 16px 20px;
@@ -31,13 +32,13 @@
     padding: 15px 20px;
   }
 
-  &:not(&--icon):hover {
-    background-color: darken(#e6e6e6, 15%);
-  }
-
   &--active {
     background-color: white;
   }
+}
+
+a.NavBar-link:hover {
+  background-color: darken(#e6e6e6, 15%);
 }
 
 .NavBar-list {

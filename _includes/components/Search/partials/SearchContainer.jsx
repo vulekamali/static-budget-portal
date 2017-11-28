@@ -97,7 +97,7 @@ export default class SearchContainer extends Component {
         clearTimeout(this.state.timeoutId);
       }
 
-      const url = `https://treasurydata.openup.org.za/api/3/action/package_search?q=${keywords}&start=0&rows=4&fq=vocab_financial_years:${this.props.selectedYear}`;
+      const url = `https://treasurydata.openup.org.za/api/3/action/package_search?q=${keywords}&start=0&rows=10&fq=vocab_financial_years:${this.props.selectedYear}`;
       const request = () => this.sendRequest(url);
       const newTimeoutId = setTimeout(request, 1000);
       this.setState({ timeoutId: newTimeoutId });

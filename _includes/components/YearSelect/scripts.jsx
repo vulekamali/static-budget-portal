@@ -9,9 +9,11 @@ function YearSelect() {
 
   nodesArray.forEach((node, i) => {
     const jsonData = JSON.parse(nodes[i].getAttribute('data-json')).data;
+    const jsonDynamicRaw = JSON.parse(nodes[i].getAttribute('data-dynamic'));
+    const jsonDynamic = jsonDynamicRaw ? jsonDynamicRaw.data : null;
 
     render(
-      <YearSelectContainer {...{ jsonData, search }} />,
+      <YearSelectContainer {...{ jsonData, search, jsonDynamic }} />,
       nodes[i],
     );
   });
