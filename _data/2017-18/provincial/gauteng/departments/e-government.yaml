@@ -27,14 +27,28 @@ government:
   name: Gauteng
   slug: gauteng
 name: E-Government
-narrative: {}
+narratives:
+- content: " \r\nA connected Gauteng City that leverages technology to provide quality\
+    \ services to citizens.\r\n\r\n"
+  name: Vision
+- content: "To realize the intent of a connected  government through:\r\n\r\n*Provision\
+    \ of relevant technologies,standards and governance\r\n\r\n* Creation of an environment\
+    \ of collaboration between key stakeholders;and\r\n\r\n* Facilitation of the evolution\
+    \ of the Gauteng Ciyt REgion (GCR) service delivery\r\n\r\n\r\n"
+  name: Mission
+- content: "* To roll out the Gauteng Broadband Network (GBN);\r\n\r\n* To develop\
+    \ and maintain all provincial government owned ICT infrastructure;\r\n\r\n* To\
+    \ develop and maintain applications,networks and services;\r\n\r\n* To improveand\
+    \ provide customer driven HR services;\r\n\r\n* To implement e-Recruitment solutions\
+    \ for job seekers;and\r\n\r\n* To deploy HR systems in the province"
+  name: Core functions
 resources:
   'EPRE for Vote 13 : E-Government':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/f19206bf-f984-4f13-840e-7701ff7333fa/resource/ae0e8ab2-1786-476c-aee7-494b97965a15/download/gt-e-government.xlsm
+      url: https://budgetdata.openup.org.za/dataset/f19206bf-f984-4f13-840e-7701ff7333fa/resource/ae0e8ab2-1786-476c-aee7-494b97965a15/download/gt-e-government.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 13 - E-Government.pdf

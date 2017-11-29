@@ -31,16 +31,6 @@ def write_department_list_data(sphere):
             outfile, default_flow_style=False, encoding='utf-8')
 
 
-def write_department_list_page(year):
-    file_path = ".%s/departments.html" % year.get_url_path()
-    ensure_file_dirs(file_path)
-    with open(file_path, "wb") as outfile:
-        outfile.write(("---\n"
-                       "financial_year: %s\n"
-                       "layout: department_list\n"
-                       "---") % year.id)
-
-
 def write_department_data(department):
     file_path = "_data/%s.yaml" % department.get_url_path()
     ensure_file_dirs(file_path)
@@ -75,7 +65,7 @@ def ensure_file_dirs(file_path):
 
 
 # get all the data
-for year_govt_group_id in ckan.action.group_list():
+for idx, year_govt_group_id in enumerate(ckan.action.group_list()):
     print year_govt_group_id
     year_govt_group = ckan.action.group_show(id=year_govt_group_id)
     department_packages = get_department_packages(year_govt_group_id)
@@ -104,8 +94,6 @@ for year_govt_group_id in ckan.action.group_list():
 for year_id, year in years.iteritems():
     write_department_list_data(year.provincial)
     write_department_list_data(year.national)
-
-    write_department_list_page(year)
 
     for sphere_id in ('national', 'provincial'):
         for government in years[year_id].get_sphere(sphere_id).governments.values():

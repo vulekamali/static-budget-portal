@@ -27,14 +27,43 @@ government:
   name: Northern Cape
   slug: northern-cape
 name: Education
-narrative: {}
+narratives:
+- content: "A transformed quality education system.\r\n\r\n"
+  name: Vision
+- content: "To deliver quality public education to all learners of the Northern Cape\
+    \ which will enable them to play a meaningful role in a dynamic, developmental\
+    \ and economic society\r\n\r\nStrategic Goals\r\n\r\n* To maintain and improve\
+    \ the provision of quality Education.\r\n\r\n* To contribute to the economic growth\
+    \ and development of the province including the creation of decent and sustainable\
+    \ jobs and Entrepreneurship, through education.\r\n\r\n* To promote Health Education\
+    \ and the teaching and learning of healthy lifestyles in order to improve the\
+    \ quality of life\r\n\r\n* To ensure that education programmes in our schools\
+    \ continue to be transformative and developmental\r\n\r\n* To strengthen and improve\
+    \ medium to long term planning, reporting, monitoring, evaluation and administration\
+    \ systems in order to optimise impact of service delivery\r\n\r\n* To re-position\
+    \ schools as centres of community life where quality, administrative excellence\
+    \ and safety and security thrive\r\n\r\n* To promote social and school enrichment\
+    \ programmes in order to enhance and realize objectives of social cohesion and\
+    \ Community development.\r\n\r\n\r\n"
+  name: Mission
+- content: "* Public Ordinary Schools is aimed at the provision of educators in schools,\
+    \ the development of educators to ensure that they are equipped to provide the\
+    \ best quality teaching and the provision of Learner Teacher Support Materials\
+    \ (LTSM). The function is also aimed at the provisioning of food to Public Ordinary\
+    \ School learners through the National school Nutrition Programme (NSNP).\r\n\r\
+    \n* Public Special Schools Education includes the provision of schooling to all\
+    \ learners with special educational needs in special schools and full-service\
+    \ schools.\r\n\r\n* Early Childhood Development is the provision of Grade R in\
+    \ state, private and community centres. The programme also seeks to provide ECD\
+    \ programmes for pre-Grade R learners."
+  name: Core Functions and Responsibilities
 resources:
   'EPRE for Vote 04 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/f878866d-a9f9-4ff8-9cf8-1b29cdb9fe55/resource/5c302979-8582-45af-8219-039f76744062/download/nc-education.xlsm
+      url: https://budgetdata.openup.org.za/dataset/f878866d-a9f9-4ff8-9cf8-1b29cdb9fe55/resource/5c302979-8582-45af-8219-039f76744062/download/nc-education.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 04 - Education.pdf

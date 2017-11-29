@@ -30,14 +30,38 @@ government:
   slug: free-state
 name: Department of Economic and Small Business Development, Tourism and Environmental
   Affairs
-narrative: {}
+narratives:
+- content: "A transformed economy and a prosperous society that is living in harmony\
+    \ with its natural resources through integrated and sustainable economic growth.\r\
+    \n\r\n"
+  name: Vision
+- content: "Radically create a conducive, enabling environment for the creation of\
+    \ decent jobs, poverty and inequality reduction through sustainably managed environment\
+    \ and economic development programmes in the Free State\r\n\r\n"
+  name: Mission
+- content: "Integrated and sustainable Economic Development.\r\n\r\n* To stimulate\
+    \ integrated, regulated, informed and sustainable economic\r\ndevelopment through\
+    \ trade & investment facilitation, sector development and\r\nindustrialization,\
+    \ by providing services to the stakeholders which we service.\r\n\r\n* Environmental\
+    \ assets conserved, valued, sustainably used, protected and\r\ncontinually enhanced\
+    \ to benefit the present and future generations.\r\n\r\n* To manage the environment\
+    \ in order to lead sustainable development of the\r\nenvironment for a better\
+    \ life for all in the province.\r\n\r\n* Radical efficacy in business processes.\r\
+    \n\r\n* To ensure rapid and efficient business processes within the Department:\r\
+    \n- Doing business unusual (fast and efficient).\r\n\r\n- Enabling line function\
+    \ to achieve their mandates.\r\n\r\n* To create a conducive environment for sustainable\
+    \ tourism growth and\r\ndevelopment in the Province.\r\n\r\n* A tourism industry\
+    \ that is supported by sound policies that seeks to transform\r\nthe tourism industry\
+    \ through robust product development to effectively\r\npromote and market the\
+    \ Province as a tourist destination of choice.\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 03 : Department of Economic and Small Business Development, Tourism and Environmental Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/30874949-d94b-4186-9711-fc06aaf96e60/resource/1ac9bf2d-53e3-481a-96ab-773f95fc805e/download/fs-economic-small-busin-dev-tourism.xlsm
+      url: https://budgetdata.openup.org.za/dataset/30874949-d94b-4186-9711-fc06aaf96e60/resource/1ac9bf2d-53e3-481a-96ab-773f95fc805e/download/fs-economic-small-busin-dev-tourism.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 03 - Economic Development, Tourism and Enviroment.pdf

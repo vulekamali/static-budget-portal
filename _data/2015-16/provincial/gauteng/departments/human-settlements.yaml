@@ -27,14 +27,33 @@ government:
   name: Gauteng
   slug: gauteng
 name: Human Settlements
-narrative: {}
+narratives:
+- content: "The vision of the Department of Human Settlements is to provide integrated\
+    \ sustainable human settlements and\r\nimproved quality of household life.\r\n\
+    \r\n\r\n"
+  name: Vision
+- content: "The mission of the department is to provide relevant differentiated, good\
+    \ quality housing opportunities to\r\nqualifying beneficiaries in partnership\
+    \ with various stakeholders.\r\n\r\n"
+  name: Mission
+- content: "The mandate of the department is derived from the Constitution. Its primary\
+    \ roles are:\r\n\r\n* To promote and facilitate the provision of adequate housing\
+    \ in the province;\r\n\r\n* To develop provincial housing policies that will strengthen\
+    \ the ability to provide housing opportunities to\r\nqualifying beneficiaries\
+    \ in order to build sustainable communities.\r\n\r\n* To develop and implement\
+    \ programmes and projects that give effect to the province\uFFFDs short, medium\
+    \ and\r\nlong term housing plans;\r\n\r\n* To manage the housing delivery process\
+    \ and transform informal settlements, especially in priority townships,\r\ninto\
+    \ sustainable and vibrant communities; and provide services in respect of subsidies\
+    \ and rental housing.\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 08 : Human Settlements':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/3936e2af-71d3-4019-b439-e6242e3d29c0/resource/efdb4374-1698-4038-aa94-6388e31656ff/download/gt-human-settlements.xlsx
+      url: https://budgetdata.openup.org.za/dataset/3936e2af-71d3-4019-b439-e6242e3d29c0/resource/efdb4374-1698-4038-aa94-6388e31656ff/download/gt-human-settlements.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 08 - Human Settlements.pdf

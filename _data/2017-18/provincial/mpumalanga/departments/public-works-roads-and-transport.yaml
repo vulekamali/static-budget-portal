@@ -27,14 +27,28 @@ government:
   name: Mpumalanga
   slug: mpumalanga
 name: Public Works, Roads and Transport
-narrative: {}
+narratives:
+- content: "An integrated transport system and infrastructure that promotes socio-economic\r\
+    \ndevelopment\r\n\r\n"
+  name: Vision
+- content: "To provide an integrated, reliable and cost-effective transport system\
+    \ that meets the\r\ndevelopment needs of the province.\r\nTo deliver infrastructure\
+    \ that promotes sustainable economic development and job creation.\r\n\r\n"
+  name: Mission
+- content: "Improve overall performance of the Department.\r\n\r\n* Enhance good governance\
+    \ and accountability.\r\n\r\n* Implementation of building infrastructure projects\
+    \ within the prescribed time and budget.\r\n\r\n* Enhance property management.\r\
+    \n\r\n* Improve the provincial road network.\r\n\r\n* Efficient and effective\
+    \ management of transport services.\r\n\r\n* Coordinate, monitor and evaluate\
+    \ implementation of EPWP III across the Province"
+  name: Core functions
 resources:
   'EPRE for Vote 08 : Public Works, Roads and Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/f2f68ba6-5dd8-4496-b1d8-5f49a5e88a41/resource/7459baf3-0343-4d55-8ef1-b9add3bf0fc1/download/mpu-public-works-roads-and-transport.xlsm
+      url: https://budgetdata.openup.org.za/dataset/f2f68ba6-5dd8-4496-b1d8-5f49a5e88a41/resource/7459baf3-0343-4d55-8ef1-b9add3bf0fc1/download/mpu-public-works-roads-and-transport.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 08 - Public Works, Roads and Transport.pdf

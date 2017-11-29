@@ -27,14 +27,26 @@ government:
   name: Mpumalanga
   slug: mpumalanga
 name: Office of the Premier
-narrative: {}
+narratives:
+- content: "A strategic centre of excellence for effective and efficient governance.\r\
+    \n\r\n"
+  name: Vision
+- content: "Provide strategic direction and support evidence-based decision-making\
+    \ through research, monitoring and evaluation, integrated planning, coordination\
+    \ of Government programmes and institutional development\r\n\r\n"
+  name: Mission
+- content: The Office of the Premier as a strategic centre of excellence is responsible
+    for support, co-ordination, monitoring and evaluation of the implementation of
+    provincial programmes, projects and policies. This function is addressing the
+    governance priority
+  name: Core functions
 resources:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/c1c58fba-faad-4a38-a047-69b73d903ca7/resource/55d1dcf9-fd4f-4ea0-a161-e333b71cd939/download/mpu-office-of-the-premier.xlsx
+      url: https://budgetdata.openup.org.za/dataset/c1c58fba-faad-4a38-a047-69b73d903ca7/resource/55d1dcf9-fd4f-4ea0-a161-e333b71cd939/download/mpu-office-of-the-premier.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 01 - Office of the Premier.pdf

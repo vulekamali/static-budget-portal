@@ -27,14 +27,39 @@ government:
   name: Gauteng
   slug: gauteng
 name: Gauteng Provincial Treasury
-narrative: {}
+narratives:
+- content: "To provide strategic leadership in financial and fiscal matters to ensure\
+    \ sustainable and nclusive social and economic development of the people ofGauteng\
+    \ so that all may enjoy value for money services of the highest quality.\r\n\r\
+    \n"
+  name: Vision
+- content: "We are an activist Treasurt that enables and promotes quality service\
+    \ delivery for the ciizens of Gauteng through:\r\n\r\n* Sustainable financing\
+    \ and funding that ebsures developmentally focused allocation of resources an\
+    \ dinnovative revenue generation;\r\n\r\n* Efficient cash management that ensure\
+    \ sustainable liquidity levels in the province;\r\n\r\n* Effective financial management\
+    \ and reporting that ensures responsible stewardship and transparent resource\
+    \ utilisation and expediture;and\r\n\r\n* A well-structured governance framework\
+    \ that ensures accountability,transparency and fiscal discipline in line with\
+    \ statutory obligations.\r\n\r\n"
+  name: Mission
+- content: "The functions of the Gauteng Provincial TReasury (GPT) are described in\
+    \ the Public Finance Management Act (PFMA,1999) and the Municipal Finance Management\
+    \ Act (MFMA,2003).These canbe summarised as follows:\r\n\r\n* To manage the budget\
+    \ allocation for the Gauteng Provincial Government;\r\n\r\n* To ensure the instilling\
+    \ of fiscal discipline and corporate governance in the province;\r\n\r\n* to ensure\
+    \ the effective and efficient utilisation of resources-value for oney and compliance\
+    \ with all relevant legislation;\r\n\r\n* To develop,implement and monitor compliance\
+    \ withcorporate governance norms and standards realing to provincial and local\
+    \ government;and\r\n\r\n* To ensure adequate financial accountability.\r\n"
+  name: Corefunctions
 resources:
   'EPRE for Vote 14 : Gauteng Provincial Treasury':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/fb38717b-521a-4ba8-96c8-47993c4f9664/resource/17e41ed5-ed19-4ece-bb24-7decf92ba184/download/gt-provincial-treasury.xlsm
+      url: https://budgetdata.openup.org.za/dataset/fb38717b-521a-4ba8-96c8-47993c4f9664/resource/17e41ed5-ed19-4ece-bb24-7decf92ba184/download/gt-provincial-treasury.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 14 - Gauteng Provincial Treasury.pdf

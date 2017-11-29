@@ -27,14 +27,30 @@ government:
   name: Gauteng
   slug: gauteng
 name: Education
-narrative: {}
+narratives:
+- content: "Every learner feels valued and inspired in our innovative education system.\r\
+    \n\r\n"
+  name: Vision
+- content: "We are committed to provide functional and modern schools that enable\
+    \ quality teaching and learning to protect and promote the right of every learner\
+    \ to quality, equitable and relevant education.\r\n\r\n"
+  name: Mission
+- content: "The department works to ensure that people of all ages and backgrounds\
+    \ have the education, skills and opportunities to pursue activities that promote\
+    \ their wellbeing and build strong communities. We are primarily responsible for\
+    \ the delivery and regulation of pre-tertiary schooling and we are a delivery\
+    \ agent for provincial skills development in Gauteng. All the department\uFFFD\
+    s plans and service delivery areas are aligned to national and provincial imperatives\
+    \ with special focus on curriculum delivery, teaching and learning support material,\r\
+    \ninfrastructure, ICT and teacher placements"
+  name: Core functions
 resources:
   'EPRE for Vote 05 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/16560fcc-d09a-48e1-a7d3-c85858b41e30/resource/c1b5ac17-631e-459f-8ed6-6d85137d39f1/download/gt-education.xlsx
+      url: https://budgetdata.openup.org.za/dataset/16560fcc-d09a-48e1-a7d3-c85858b41e30/resource/c1b5ac17-631e-459f-8ed6-6d85137d39f1/download/gt-education.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 05 - Education.pdf

@@ -27,14 +27,34 @@ government:
   name: Gauteng
   slug: gauteng
 name: Roads and Trasport
-narrative: {}
+narratives:
+- content: "A modern integrated,efficient and sustainable transport and roadsinfrastructure\
+    \ system in Gauteng.\r\n\r\n"
+  name: Vision
+- content: "To facilitate and provide an integrated transport system that:\r\n* Is\
+    \ reliable,accessible,safe and affordable;\r\n\r\n\r\n* Pormotes socio-economic\
+    \ development in Gauteng;\r\n*Is environmentally sustainable;and\r\n\r\n* Supports\
+    \ industrialised and radical socio-economic transformation\r\n\r\n"
+  name: Mission
+- content: "* To contribute to the achevement of departments outcomes;\r\n\r\n* To\
+    \ develop and mantain a sustainable road infrastructure that contributes to increased\
+    \ economic growth and enhances quality of life i Gauteng;\r\n\r\n* To develop\
+    \ a policy framework in support of a modern,integrated and intelligent transport\
+    \ system;\r\n\r\n* To contribute to the regulation of the transport-related carbon\
+    \ emissions;\r\n\r\n* Throught green transport,to contribute to environmental\
+    \ protection;\r\n\r\n*To provide public transport infrastructure that promotes\
+    \ integration and onter-modility of public transport;\r\n\r\n* To regulate public\
+    \ transport operations through issuing of operating licenses and permits;\r\n\r\
+    \n* To regulate public transport operations through the registration of associations;\r\
+    \n\r\n* To issue valid driver's licenses;and\r\n\r\n* To issue valid vehicle licenses"
+  name: Core functions
 resources:
   'EPRE for Vote 09 : Roads and Trasport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/b8e3ea3e-1207-4a6c-af99-2f9767d9fe45/resource/97f9c8d7-7dba-4528-be28-8aa79f76f137/download/gt-roads-and-transport.xlsm
+      url: https://budgetdata.openup.org.za/dataset/b8e3ea3e-1207-4a6c-af99-2f9767d9fe45/resource/97f9c8d7-7dba-4528-be28-8aa79f76f137/download/gt-roads-and-transport.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 09 - Roads and Transport.pdf

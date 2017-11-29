@@ -27,14 +27,30 @@ government:
   name: North West
   slug: north-west
 name: Office of the Premier
-narrative: {}
+narratives:
+- content: "A united, non-racial, non-sexist, democratic and prosperous citizenry\
+    \ in Bokone-Bophirima Province.\r\n\r\n"
+  name: Vision
+- content: "To work with partners in order to:\r\n\r\n* Improve government performance\
+    \ in achieving the desired outcomes;\r\n\r\n* Improve service delivery through\
+    \ changing the way government works; and\r\n\r\n* Rebrand, Reposition and Renew\
+    \ Bokone Bophirima Province through the five concretes namely, Agriculture, Culture\
+    \ and Tourism (ACT), Villages, Townships and Small Dorpies(VTSD), Setsokotsane,\
+    \ Reconciliation, Healing and Renewal as well as Saamtrek-Saamwerk philosophy\r\
+    \n\r\n\r\n"
+  name: Mission
+- content: "* To provide efficient and effective Administrative support services;\r\
+    \n\r\n* Effective and efficient institutional development support services to\
+    \ the province; and\r\n\r\n* To provide quality service delivery through integrated\
+    \ planning, performance monitoring, evaluation and intervention."
+  name: Core Functions of the Department
 resources:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/d84d3eb8-88de-4a60-b063-ad4309f57d3d/resource/23ea5cf7-ab40-4c78-8336-a33fe8113c53/download/nw-office-of-the-premier.xlsm
+      url: https://budgetdata.openup.org.za/dataset/d84d3eb8-88de-4a60-b063-ad4309f57d3d/resource/23ea5cf7-ab40-4c78-8336-a33fe8113c53/download/nw-office-of-the-premier.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 01 - Office of The Premier.pdf

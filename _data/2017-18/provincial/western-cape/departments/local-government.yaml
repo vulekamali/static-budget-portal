@@ -27,14 +27,43 @@ government:
   name: Western Cape
   slug: western-cape
 name: Local Government
-narrative: {}
+narratives:
+- content: "An efficient and dynamic team that enables well governed municipalities\
+    \ to deliver services to communities in a responsive, sustainable and integrated\
+    \ manner.\r\n\r\n"
+  name: Vision
+- content: "To monitor, coordinate and support municipalities to be effective in fulfilling\
+    \ their developmental mandate, and facilitate service delivery and disaster resilience\
+    \ through engagement with government spheres and social partners.\r\n\r\n"
+  name: Mission
+- content: "* To support municipalities with the development of legislation and legislative\
+    \ compliance;\r\n\r\n* To intervene where there is non-fulfilment of legislative,\
+    \ executive and or financial  obligation;\r\n\r\n* To support and strengthen the\
+    \ capacity of municipalities;\r\n\r\n* To monitor and support local government;\r\
+    \n\r\n* To regulate the performance of municipalities in terms of their functions\
+    \ listed in\r\n\r\n* Schedules 4 and 5 of the Constitution;\r\n\r\n* To increase\
+    \ the number of people with access to government services & opportunities;\r\n\
+    \r\n* To promote developmental local government; and\r\n\r\n* To coordinate effective\
+    \ disaster management in the Province.\r\n\r\nMain services\r\n\r\n* Guide, advise\
+    \ on the development and support local government legislation.\r\n\r\n* Formulate\
+    \ appropriate provincial legislation on local government.\r\n\r\n* Review and\
+    \ advise on all aspects of municipal Integrated Development Plans (IDPs).\r\n\r\
+    \n* Co-ordinate provincial disaster management.\r\n\r\n* Monitor and evaluate\
+    \ municipal performance.\r\n\r\n* Support municipalities to strengthen public\
+    \ participation through effective communication between municipalities and communities.\r\
+    \n\r\n* Support municipalities through capacity building and training initiatives.\r\
+    \n\r\n* Implement and maintain intergovernmental structures for good governance,\
+    \ co-operation and\r\nco-ordination.\r\n\r\n* Promote developmental local government.\r\
+    \n\r\n* Facilitate access to government services.\r\n\r\n* Facilitate and monitor\
+    \ infrastructure development.\r\n"
+  name: Main services and core functions
 resources:
   'EPRE for Vote 14 : Local Government':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/3bd4523d-d39c-4c80-9b20-b78587fd2960/resource/7925b974-2def-454d-99c3-42c47e4919e5/download/wc-local-government.xlsm
+      url: https://budgetdata.openup.org.za/dataset/3bd4523d-d39c-4c80-9b20-b78587fd2960/resource/7925b974-2def-454d-99c3-42c47e4919e5/download/wc-local-government.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 14 - Local Government.pdf

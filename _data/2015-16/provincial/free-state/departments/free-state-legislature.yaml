@@ -27,14 +27,14 @@ government:
   name: Free State
   slug: free-state
 name: Free State Legislature
-narrative: {}
+narratives: []
 resources:
   'EPRE for Vote 02 : Free State Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/d3f043ba-9656-411a-811c-895ed8882bca/resource/c5e915a6-27c3-42df-a8bb-b325dfba8b98/download/fs-provincial-legislature.xlsx
+      url: https://budgetdata.openup.org.za/dataset/d3f043ba-9656-411a-811c-895ed8882bca/resource/c5e915a6-27c3-42df-a8bb-b325dfba8b98/download/fs-provincial-legislature.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 02 - Free State Legislature.pdf

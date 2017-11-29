@@ -27,14 +27,29 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Transport
-narrative: {}
+narratives:
+- content: "The department\uFFFDs vision is: Prosperity through mobility.\r\n\r\n"
+  name: Vision
+- content: "The department\uFFFDs mission is: We will strive to provide the public\
+    \ with mobility by an affordable transportation system that is safe, integrated,\
+    \ regulated and accessible to meet the developmental needs of our province.\r\n\
+    \r\n\r\n"
+  name: Mission statement
+- content: "Turning the vision of the department into reality can only be achieved\
+    \ by focusing the attention and energy of all employees and relevant stakeholders\
+    \ on the performance of its core functions, namely:\r\nConstruct, maintain and\
+    \ repair the provincial road network\r\nThe department\uFFFDs mandate is to construct\
+    \ and maintain a balanced road network that meets the mobility needs of the citizens\
+    \ of KZN, and supports the national and provincial growth and development plans\
+    \ and strategie"
+  name: Core functions
 resources:
   'EPRE for Vote 12 : Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/fbb12917-9caf-43eb-a19a-caa4e999ac2b/resource/e1f11ba3-823d-4d9b-a71c-5ba73a2ace95/download/kzn-transport.xlsm
+      url: https://budgetdata.openup.org.za/dataset/fbb12917-9caf-43eb-a19a-caa4e999ac2b/resource/e1f11ba3-823d-4d9b-a71c-5ba73a2ace95/download/kzn-transport.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 12 - Transport.pdf

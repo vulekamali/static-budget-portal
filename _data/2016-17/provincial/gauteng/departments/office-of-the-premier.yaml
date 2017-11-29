@@ -27,14 +27,31 @@ government:
   name: Gauteng
   slug: gauteng
 name: Office of the Premier
-narrative: {}
+narratives:
+- content: "Leadership for an integrated city-region, characterised by social cohesion\
+    \ and economic inclusion; the leading economy on\r\nthe continent, underpinned\
+    \ by sustainable socio-economic development.\r\n\r\n"
+  name: Vision
+- content: "In achieving its vision, the Office of the Premier (OoP) defines its mission\
+    \ (aim) as follows:\r\n\uFFFD Providing strategic leadership and direction to\
+    \ government and society;\r\n\uFFFD Ensuring the transformation and modernisation\
+    \ of the public service;\r\n\uFFFD Improving government performance and service\
+    \ delivery through enhanced planning, coordination, monitoring and\r\nevaluation\
+    \ of government performance;\r\n\uFFFD Driving effective communication and stakeholder\
+    \ interfaces with communities and key sectors of society;\r\n\uFFFD Providing\
+    \ strategic and operational support in fulfilling constitutional and legal obligations;\r\
+    \n\uFFFD Actively advancing gender equality, women\uFFFDs empowerment, youth development\
+    \ and the rights of people with\r\ndisabilities, older persons and military veterans;\
+    \ and\r\n\uFFFD Securing partnerships that support the development agenda, both\
+    \ domestic and foreign partners."
+  name: Mission
 resources:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/9995f4b6-acd2-411d-abc1-47bf849622c7/resource/2996a049-bfee-4ca4-8442-1a90a8568e96/download/gt-premier.xlsm
+      url: https://budgetdata.openup.org.za/dataset/9995f4b6-acd2-411d-abc1-47bf849622c7/resource/2996a049-bfee-4ca4-8442-1a90a8568e96/download/gt-premier.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 01 - Office of the Premier.pdf

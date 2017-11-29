@@ -27,14 +27,14 @@ government:
   name: Eastern Cape
   slug: eastern-cape
 name: Health
-narrative: {}
+narratives: []
 resources:
   'EPRE for Vote 03 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/d3ef926e-9430-4986-be00-98cead294916/resource/fea54968-1fd3-484a-bcb1-292181c1b88a/download/ec-health.xlsx
+      url: https://budgetdata.openup.org.za/dataset/d3ef926e-9430-4986-be00-98cead294916/resource/fea54968-1fd3-484a-bcb1-292181c1b88a/download/ec-health.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 03 - Health.pdf

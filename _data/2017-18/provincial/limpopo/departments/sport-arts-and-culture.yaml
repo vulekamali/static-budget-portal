@@ -27,14 +27,26 @@ government:
   name: Limpopo
   slug: limpopo
 name: Sport, Arts and Culture
-narrative: {}
+narratives:
+- content: "A champion of Sport, Arts, Culture and Heritage Services for socio-economic\
+    \ development in Limpopo\r\n\r\n"
+  name: Vision
+- content: "To enhance unity in diversity through the provision of Sport, Arts, Culture\
+    \ and Heritage services for sustainable development.\r\n\r\n"
+  name: Mission
+- content: "Increase participation and excellence in sport, arts and cultural activities.\r\
+    \n\r\n* Increase access to information through the provision of library services.\r\
+    \n\r\n* Promote nation building through sport, arts and culture.\r\n\r\n* Increase\
+    \ social cohesion and national identity.\r\n\r\n* To promote governance; and quality\
+    \ of social services through arts, culture and sport"
+  name: Core functions
 resources:
   'EPRE for Vote 13 : Sport, Arts and Culture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/f06b6368-5d3d-40a9-8e6b-f47190a1014d/resource/0a771448-27b8-4358-a7c8-4bb519b88368/download/lim-sport-arts-and-culture.xlsm
+      url: https://budgetdata.openup.org.za/dataset/f06b6368-5d3d-40a9-8e6b-f47190a1014d/resource/0a771448-27b8-4358-a7c8-4bb519b88368/download/lim-sport-arts-and-culture.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 13 - Sport, Art & Culture.pdf

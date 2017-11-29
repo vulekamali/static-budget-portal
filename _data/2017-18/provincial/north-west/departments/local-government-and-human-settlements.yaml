@@ -27,14 +27,29 @@ government:
   name: North West
   slug: north-west
 name: Local Government and Human Settlements
-narrative: {}
+narratives:
+- content: "A transformed developmental local governance and integrated sustainable\
+    \ human settlements in safe and dignified community.\r\n\r\n"
+  name: Vision
+- content: "To plan and promote integrated and sustainable human settlements and ensure\
+    \ quality service delivery through cooperation and good governance with municipalities\r\
+    \n\r\n"
+  name: Mission
+- content: "The core/main function of the department is to support municipalities\
+    \ in a proactive, responsive and accountable manner. It further promotes community\
+    \ participation in the local government processes. The provision of basic services\
+    \ in terms of the constitution is a long term objective of the Department.\r\n\
+    \r\nThe Department is also responsible for provision of habitable human settlements\
+    \ to all the citizens. These services include amongst others, the Upgrading of\
+    \ informal settlements, provision of tittle deeds and building descent human settlements."
+  name: Core functions
 resources:
   'EPRE for Vote 09 : Local Government and Human Settlements':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/8aa44606-732b-41b3-a756-233dd40cc11c/resource/ab489980-039e-42e3-8e87-5c1de56c78b6/download/nw-local-government-and-human-settlements.xlsm
+      url: https://budgetdata.openup.org.za/dataset/8aa44606-732b-41b3-a756-233dd40cc11c/resource/ab489980-039e-42e3-8e87-5c1de56c78b6/download/nw-local-government-and-human-settlements.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 09 - Local Government and Human Settlements.pdf

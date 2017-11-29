@@ -27,14 +27,41 @@ government:
   name: North West
   slug: north-west
 name: Community Safety and Transport Management
-narrative: {}
+narratives:
+- content: "Safe Communities and effective transport services\r\n\r\n"
+  name: Vision
+- content: "We are committed to promote community and road safety, exercise civilian\
+    \ oversight of police and\r\ncoordinate transport services through an integrated\
+    \ approach.\r\n\r\nValues\r\n\r\nEach employee is committed to an IIMPACCT culture\
+    \ that explains our behavior as follow:\r\n* Integrity\r\n* Innovative\r\n* Motivated\r\
+    \n* Passionate\r\n* Accountability\r\n* Client focused\r\n* Commitment\r\n* Team\
+    \ work\r\n\r\nCore Functions\r\nTo conduct research and formulate policies that\
+    \ informs decision-making processes on policing\r\nmatters.\r\n\r\n* To oversee\
+    \ SAPS compliance to statutory requirements and service delivery;\r\n\r\n* To\
+    \ provide integrated social crime prevention initiatives for safer communities;\r\
+    \n\r\n* To improve the relationship between the police and the community, and\
+    \ mobilization of\r\nstakeholders;\r\n\r\n* To facilitate access to an integrated\
+    \ public transport system with a focus on rural areas;\r\n\r\n* To promote road\
+    \ safety with targeted stakeholders;\r\n\r\n* To provide a planning framework\
+    \ that guides the implementation of transport systems;\r\n\r\n* To ensure compliant\
+    \ airport operations that increase air transport movement;\r\n\r\n*To monitor\
+    \ and control the registration and licensing of all motor vehicles and to render\
+    \ services\r\nregarding the administration of applications in terms of the National\
+    \ Road Traffic Act ( Act 93 of\r\n1996);\r\n\r\n* To regulate, monitor and oversee\
+    \ public transport operations in accordance with statutory\r\nrequirements;\r\n\
+    \r\n* To manage government fleet in accordance with prescribed standards;\r\n\r\
+    \n* To maintain law and order on land transport by providing quality traffic policing\
+    \ (law enforcement)\r\nservices as stipulated by relevant legislation;\r\n\r\n\
+    * To ensure compliance in terms of K53 testing standards in accordance with the\
+    \ National Road\r\nTraffic Act 93 of 1996."
+  name: Mission
 resources:
   'EPRE for Vote 05 : Community Safety and Transport Management':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/2843626c-188b-4b1f-b752-b6716d3cffdc/resource/799da326-c6c2-4480-8168-219b0f6618eb/download/nw-comm.-safety-and-transport-mgt..xlsm
+      url: https://budgetdata.openup.org.za/dataset/2843626c-188b-4b1f-b752-b6716d3cffdc/resource/799da326-c6c2-4480-8168-219b0f6618eb/download/nw-comm.-safety-and-transport-mgt..xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 05 - Community Safety and Transport Management.pdf

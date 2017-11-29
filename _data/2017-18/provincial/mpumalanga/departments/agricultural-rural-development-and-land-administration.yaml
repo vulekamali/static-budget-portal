@@ -27,14 +27,34 @@ government:
   name: Mpumalanga
   slug: mpumalanga
 name: Agricultural, Rural Development and Land Administration
-narrative: {}
+narratives:
+- content: "Vibrant, equitable, and sustainable urban and rural communities with a\
+    \ united and prosperous agricultural sector\r\n\r\n"
+  name: Vision
+- content: "To facilitate an integrated, comprehensive, sustainable, social and agricultural\
+    \ development in rural and urban communities, through ensuring cohesion and collaboration\
+    \ by all sectors\r\nof society.\r\n\r\n"
+  name: Mission
+- content: "The Department will continue with the implementation of the following\
+    \ priority policy initiatives in response to Outcome 7 and Outcome 10 in particular\r\
+    \n\r\n* Accelerate the implementation of Mpumalanga Fortune 40 Young Farmer Incubator\
+    \ Programme\r\n\r\n* Provide Irrigation Infrastructure\r\n\r\n* Identify and capacitate\
+    \ farmers to increase food production\r\n\r\n* Increase Meat Production: (Red\
+    \ and White meat)\r\n\r\n* Increase Grain Production: (Maize, Soya bean, Sorghum)\r\
+    \n\r\n* Increase Tropical Fruit and Vegetable Production\r\n\r\n* Development\
+    \ and refurbishment of the agro-processing facilities for Meat, grains, fruit\
+    \ and vegetable\r\n\r\n* Improve Research Development Programme\r\n\r\n* Provide\
+    \ support to affected farmers through Disaster Relief Schemes\r\n\r\n* Monitor\
+    \ climate change through Climate Change Response Tools\r\n\r\n* Ambient Air Quality\
+    \ Monitoring Stations Commissioned; Operated And Maintained\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 05 : Agricultural, Rural Development and Land Administration':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/12e49641-21e5-4275-9ade-0a7dd036a505/resource/3a6e1679-6da3-4c94-900a-cc3c13ebd6ae/download/mpu-agric.-rural-dev.-land-and-env.-affairs.xlsm
+      url: https://budgetdata.openup.org.za/dataset/12e49641-21e5-4275-9ade-0a7dd036a505/resource/3a6e1679-6da3-4c94-900a-cc3c13ebd6ae/download/mpu-agric.-rural-dev.-land-and-env.-affairs.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 05 - Agriculture, Rural deve, Land and Environ.pdf

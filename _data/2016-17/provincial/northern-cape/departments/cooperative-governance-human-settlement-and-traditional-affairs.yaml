@@ -27,14 +27,28 @@ government:
   name: Northern Cape
   slug: northern-cape
 name: Cooperative Governance, Human Settlement and Traditional Affairs
-narrative: {}
+narratives:
+- content: "People of the Northern Cape living in integrated human settlements, with\
+    \ responsive, accountable and highly effective municipalities and traditional\
+    \ institutions.\r\n\r\n\r\n"
+  name: Vision
+- content: "* To facilitate and manage integrated sustainable human settlements and\
+    \ infrastructure development for effective service delivery.\r\n\r\n* To facilitate,\
+    \ monitor and support the consolidation and sustainability phases at municipalities\
+    \ for integrated, sustainable service delivery.\r\n\r\n* To promote and support\
+    \ inter-sphere engagement for integrated planning and co-ordination.\r\n\r\n*\
+    \ To facilitate, develop and support systems and structure to enhance traditional\
+    \ leadership.\r\n\r\n* To ensure the efficient, effective and economic utilization\
+    \ of departmental resources to maximise service delivery.\r\n\r\n* Acts, rules\
+    \ and regulations\r\n\r\n\r"
+  name: Mission
 resources:
   'EPRE for Vote 09 : Cooperative Governance, Human Settlement and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/518bb2d2-44e1-4384-9777-e4289ac01db1/resource/8c54ea78-f365-4baf-a61b-e6745c652948/download/nc-cog-hs-and-trad.-affairs.xlsm
+      url: https://budgetdata.openup.org.za/dataset/518bb2d2-44e1-4384-9777-e4289ac01db1/resource/8c54ea78-f365-4baf-a61b-e6745c652948/download/nc-cog-hs-and-trad.-affairs.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 09 - COGTA.pdf

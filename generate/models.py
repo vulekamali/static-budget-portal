@@ -1,6 +1,7 @@
 from slugify import slugify
 import requests
 from requests.adapters import HTTPAdapter
+import re
 
 
 class Government():
@@ -31,31 +32,31 @@ class Government():
 class Department():
     organisational_unit = 'department'
 
-    def __init__(self, government, name, vote_number, narrative, resources):
+    def __init__(self, government, name, vote_number, narratives, resources):
         self.government = government
         self.name = name
         self.slug = slugify(self.name)
         self.vote_number = vote_number
-        self.narrative = narrative
+        self.narratives = narratives
         self.resources = resources
 
     @classmethod
     def from_ckan_package(cls, government, package):
-        narrative = {}
+        narratives = []
         resources = {}
         for resource in package['resources']:
-            if resource['name'].startswith('ENE Section - '):
-                name = resource['name'].replace('ENE Section - ', '')
+            if re.match('^(ENE|EPRE) Section', resource['name']):
+                name = re.sub('^(ENE|EPRE) Section - ', '', resource['name'])
                 name_slug = slugify(name)
                 print "Downloading %s" % resource['url']
                 r = requests.get(resource['url'])
                 r.raise_for_status()
                 r.encoding = 'utf-8'
                 content = r.text
-                narrative[name_slug] = {
+                narratives.append({
                     'name': name,
                     'content': content,
-                }
+                }),
             if resource['name'].startswith('Vote'):
                 if government.sphere.name == 'provincial':
                     doc_short = "EPRE"
@@ -72,7 +73,7 @@ class Department():
                 if name not in resources:
                     resources[name] = {
                         'description': description,
-                        'formats': []
+                        'formats': [],
                     }
                 resources[name]['formats'].append({
                     'url': resource['url'],
@@ -83,7 +84,7 @@ class Department():
             government,
             extras_get(package['extras'], 'Department Name'),
             int(extras_get(package['extras'], 'Vote Number')),
-            narrative,
+            narratives,
             resources,
         )
 

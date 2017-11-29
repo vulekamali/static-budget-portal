@@ -27,14 +27,36 @@ government:
   name: Gauteng
   slug: gauteng
 name: Provincial Legislature
-narrative: {}
+narratives:
+- content: "A modern and transformative legislature that fosters public pride and\
+    \ confidence in democracy and enhances service delivery to the people og Gauteng.\r\
+    \n\r\n"
+  name: Vision
+- content: "In observing our constitutional obligations, Gauteng Provincal Legislature\
+    \ (GPL)\r\n* Is a modern and dynamic African legislature of the 21st Century\r\
+    \n\r\n* Ia a caring,responsive,activist and transformative legislature;\r\n\r\n\
+    * Reflects the values, aspirationsand cultured of the South African people\r\n\
+    \r\n* Is the most competent, accessible, transparent and accountable legislature;\r\
+    \n\r\n* Fosters ethical and good governance;\r\n\r\n* Attracts, develops, and\
+    \ retains skilled and prodessional staff; and\r\n\r\n* Recognises staff contributions,rewards\
+    \ their achievements and provides a stimulating environment\r\n\r\n"
+  name: Mission
+- content: "Section 114 of the Constitution of the Republic of South Africa defines\
+    \ the core functions and responsibilities of the GPL.The Act assigns to the GPL\
+    \ the power to exercise oversight over the Executive and organs of the state;\
+    \ and to facilitate law-making through considering,passing, amending or rejecting\
+    \ any bill before the GPL ,including initiating and preparing legislation with\
+    \ the exception of money billd. Section 118 ststes that the GPL must ensure public\
+    \ participations in legislative processes by ensuring that the public has access\
+    \ to and is involves with the processes\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 02 : Provincial Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/595c1405-6715-4e15-bb72-9826d8ee12ba/resource/5dd03b82-9544-4c54-95ef-1886f948cf14/download/gt-legislature.xlsm
+      url: https://budgetdata.openup.org.za/dataset/595c1405-6715-4e15-bb72-9826d8ee12ba/resource/5dd03b82-9544-4c54-95ef-1886f948cf14/download/gt-legislature.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 02 - Provincial Legislature.pdf

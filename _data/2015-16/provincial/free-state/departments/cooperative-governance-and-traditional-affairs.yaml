@@ -27,14 +27,14 @@ government:
   name: Free State
   slug: free-state
 name: Cooperative Governance and Traditional Affairs
-narrative: {}
+narratives: []
 resources:
   'EPRE for Vote 08 : Cooperative Governance and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/b92d2a77-cc1b-45b5-919e-a3b917e466a2/resource/31b38587-f363-4ff5-8534-140f0313b15d/download/fs-cogta.xlsx
+      url: https://budgetdata.openup.org.za/dataset/b92d2a77-cc1b-45b5-919e-a3b917e466a2/resource/31b38587-f363-4ff5-8534-140f0313b15d/download/fs-cogta.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 08 - Cooperative Governance and Trad Affairs.pdf

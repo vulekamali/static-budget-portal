@@ -27,14 +27,23 @@ government:
   name: Northern Cape
   slug: northern-cape
 name: Sport, Arts and Culture
-narrative: {}
+narratives:
+- content: "A department committed to creating a prosperous and empowered province\
+    \ united in the advancement of its sport, heritage, arts and culture.\r\n\r\n"
+  name: Vision
+- content: "To serve all the people of the Northern Cape by promoting, protecting\
+    \ and developing sport and the diverse cultures of our province and at the same\
+    \ time are the catalysts in the development programmes, economic empowerment and\
+    \ other activities, thereby entrenching national building and social cohesion.\r\
+    \n\r\n\r"
+  name: Mission
 resources:
   'EPRE for Vote 07 : Sport, Arts and Culture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/928cba60-0112-442a-bf97-b29798b2c8b3/resource/3e62a007-2884-4ab6-bd89-6eadacab249f/download/nc-sport-arts-and-culture.xlsm
+      url: https://budgetdata.openup.org.za/dataset/928cba60-0112-442a-bf97-b29798b2c8b3/resource/3e62a007-2884-4ab6-bd89-6eadacab249f/download/nc-sport-arts-and-culture.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 07 - Sports, Art & Culture.pdf
