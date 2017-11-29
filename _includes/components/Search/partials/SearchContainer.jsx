@@ -14,6 +14,7 @@ export default class SearchContainer extends Component {
       timeoutId: null,
       focusTimeout: null,
       count: null,
+      error: false,
     };
 
     this.eventHandlers = {
@@ -82,6 +83,7 @@ export default class SearchContainer extends Component {
       })
       .catch((err) => {
         this.setState({ loading: false });
+        this.setState({ error: true });
         return new Error(err);
       });
   }
@@ -111,6 +113,8 @@ export default class SearchContainer extends Component {
         state={this.state}
         eventHandlers={this.eventHandlers}
         selectedYear={this.props.selectedYear}
+        error={this.state.error}
+        initRequest={this.initRequest}
       />
     );
   }

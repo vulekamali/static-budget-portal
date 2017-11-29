@@ -2,12 +2,25 @@ import { h } from 'preact';
 import Loading from './Loading.jsx';
 
 
-export default function ResultsGroups({ results, loading, selectedYear, count }) {
+export default function ResultsGroups({ initRequest, error, results, loading, selectedYear, count }) {
   const buildList = () => {
+    if (error) {
+      return (
+        <ul className="Search-list">
+          <li className="Search-error">
+            <span>Something went wrong with the search. Please try again at a later point.</span>
+          </li>
+        </ul>
+      );
+    }
+
     if (results.length < 1) {
       return (
         <ul className="Search-list">
-          <li className="Search-error">No results found</li>
+          <li className="Search-error">
+            <span>We didn&#8217;t find anything for &#8217;health&#8217;.</span>
+            <a href={`/${selectedYear}/departments`}>View a list of all departments</a>
+          </li>
         </ul>
       );
     }
@@ -51,7 +64,8 @@ export default function ResultsGroups({ results, loading, selectedYear, count })
   return (
     <div>
       <span className="Search-title">
-        Suggested Departments{count ? ` (Showing ${newShown} of ${count})` : ''}
+        <span>Suggested Departments</span>
+        <span className="Search-showing">{count ? ` (Showing ${newShown} of ${count})` : ''}</span>
       </span>
       {loading ? <ul className="Search-list"><Loading /></ul> : buildList() }
     </div>
