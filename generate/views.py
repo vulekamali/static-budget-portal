@@ -52,7 +52,7 @@ class Department():
                 'slug': department.government.slug,
             },
             'financial_years': financial_years_context,
-            'narrative': department.narrative,
+            'narratives': department.narratives,
             'resources': department.resources,
         }
 

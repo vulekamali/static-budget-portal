@@ -27,14 +27,21 @@ government:
   name: Western Cape
   slug: western-cape
 name: Office of the Premier
-narrative: {}
+narratives:
+- content: "To be a leading department enabling the Western Cape Government to improve\
+    \ the quality of life of all its people.\r\n\r\n"
+  name: Vision
+- content: "To embed good governance and to enable integrated service delivery in\
+    \ the Western Cape through partnerships, innovation and people excellence.\r\n\
+    \r\n"
+  name: Mission
 resources:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/1c88c47c-9833-48f9-a5e4-e5cf71eea3bb/resource/90e91345-158a-496a-ac15-d2afd3710b57/download/wc-premier.xlsm
+      url: https://budgetdata.openup.org.za/dataset/1c88c47c-9833-48f9-a5e4-e5cf71eea3bb/resource/90e91345-158a-496a-ac15-d2afd3710b57/download/wc-premier.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 01 - Office of the Premier.pdf

@@ -27,14 +27,30 @@ government:
   name: Free State
   slug: free-state
 name: Agriculture and Rural Development
-narrative: {}
+narratives:
+- content: "The vision of the Free State Department of Agriculture and Rural Development\
+    \ is \uFFFDA dynamic\r\nand prosperous agricultural sector and a better life for\
+    \ rural communities\uFFFD\r\n\r\n"
+  name: Vision
+- content: "The mission of the Department is \uFFFDTo empower the agricultural sector\
+    \ through the provisioning\r\nand facilitation of efficient agricultural development\
+    \ support and investment solutions in order to\r\nensure rural development, constant\
+    \ economic growth and sustainable livelihoods\uFFFD\r\n\r\n"
+  name: Mission Statement
+- content: "The core values of the Department are informed by the letter and spirit\
+    \ of the Constitution of the\r\nRepublic of South Africa (Act No. 108 of 1996)\
+    \ and the supporting suite of transformation\r\nlegislation. These values are:\r\
+    \n\r\n* Transparency\r\n\r\n* Accountability\r\n\r\n* Good governance\r\n\r\n\
+    * Dedication\r\n\r\n* Integrity\r\n\r\n* Professionalism\r\n\r\n* Passion\r\n\r\
+    \n* Confidentiality"
+  name: Core values
 resources:
   'EPRE for Vote 11 : Agriculture and Rural Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/880956a0-7497-4747-ab89-360567652147/resource/695fcc41-8c13-4351-b344-c4457a69f350/download/fs-agriculture-and-rural-dev.xlsm
+      url: https://budgetdata.openup.org.za/dataset/880956a0-7497-4747-ab89-360567652147/resource/695fcc41-8c13-4351-b344-c4457a69f350/download/fs-agriculture-and-rural-dev.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 11 - Agriculture and Rural Development.pdf

@@ -27,14 +27,44 @@ government:
   name: Mpumalanga
   slug: mpumalanga
 name: Education
-narrative: {}
+narratives:
+- content: "Advancing excellence in quality education provision\r\n\r\n"
+  name: Vision
+- content: "The Mpumalanga Department of Education commits to work with its stakeholders\
+    \ to promote\r\neffective teaching and learning through good governance, capable\
+    \ management and\r\nproficient leadership\r\n\r\n"
+  name: Mission
+- content: "Since 2001, the department has been shifting its focus from establishing\
+    \ broad policy and\r\ngovernance structures and stabilisation of the education\
+    \ system, to improving access, quality\r\nand equity. Recent policy pronouncements\
+    \ from the Presidential State of the Nation Address\r\npoint to the centrality\
+    \ of Education in driving an accelerated and shared economic growth.\r\n2015/2016\
+    \ financial year was the beginning of a new 5 Year Cycle 2015 \uFFFD 2020 whereby\
+    \ the\r\nfocus will be on implementing the National Development Plan through the\
+    \ priorities as\r\noutlined Medium Term Strategic Framework 2014 -2019 of Government.\
+    \ In order to achieve\r\nthe outcome of improved quality of basic education, there\
+    \ will be a focus on improving the\r\nquality of teaching so that results improve,\
+    \ as measured by internationally benchmarked\r\ntests. Targets have been set for\
+    \ the improvements in results at various grades over time. In\r\norder to achieve\
+    \ this, we will be providing all schools with appropriate learner and teacher\r\
+    \nsupport materials such as lesson plans, workbooks and textbooks, to ensure proper\r\
+    \ncoverage of the curriculum. Curriculum coverage and the utilisation of these\
+    \ resources will\r\nbe closely monitored as this is part of the non-negotiables\
+    \ for the sector.\r\nThe monitoring of the implementation of the Curriculum and\
+    \ Assessment Policy Statement\r\n(CAPS) in both General Education Training (GET)\
+    \ and Further Education Training (FET)\r\nphases of the system will be prioritised.\
+    \ Some children live far away from school. Others\r\nneed special education and\
+    \ local schools may not offer this, and many are from poor homes.\r\nTo achieve\
+    \ this we will continue to make the number of no-fee schools available and to\r\
+    \nincrease feeding schemes to assist children from poor families."
+  name: Core functions
 resources:
   'EPRE for Vote 07 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/cee75ce4-0d53-4dbd-b869-76ef08138661/resource/7b820758-b458-43c9-a65e-b2785056505e/download/mpu-education.xlsm
+      url: https://budgetdata.openup.org.za/dataset/cee75ce4-0d53-4dbd-b869-76ef08138661/resource/7b820758-b458-43c9-a65e-b2785056505e/download/mpu-education.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 07 - Education.pdf

@@ -27,14 +27,38 @@ government:
   name: North West
   slug: north-west
 name: Culture, Arts and Traditional Affairs
-narrative: {}
+narratives:
+- content: "A thriving arts, culture and traditional affairs sector contributing to\
+    \ sustainable economic development\r\nin a socially cohesive Bokone Bophirima.\r\
+    \n\r\n"
+  name: Vision
+- content: "To enhance job creation by preserving, protecting and developing arts,\
+    \ culture, Heritage and the\r\ninstitution of traditional leadership to reposition,\
+    \ renew and rebrand Bokone Bophirima through VTSD\r\nStrategy.\r\n\r\n"
+  name: Mission
+- content: "* To render an effective, efficient, equitable corporate and management\
+    \ support services to\r\ninternal and external stakeholders to ensure good, clean\
+    \ and value driven corporate governance\r\nthrough, Human Resource, Finance, Communication\
+    \ and Strategic Management Services.\r\n\r\n* The promotion, development and transformation\
+    \ of all cultural activities in Bokone Bophirima, in\r\norder to contribute towards\
+    \ nation-building, god governance, social and human capital\r\ndevelopment and\
+    \ sustainable economic growth and opportunities.\r\n\r\n* The provisioning of\
+    \ library, information and archive services that will contribute to nation building,\r\
+    \ngood governance, human capital development and sustainable economic growth and\r\
+    \nopportunities.\r\n\r\n* To initiate and support socially cohesive recreation\
+    \ structures and activities, through the creation\r\nof access and opportunity\
+    \ with regard to participation in recreation.\r\nThe department also provides\
+    \ support to the institutions of traditional leadership through\r\nworkshops and\
+    \ grants so as to contribute to a transformed, functional, accountable and\r\n\
+    sustainable institution of traditional leadership."
+  name: Main Services that the department intends to deliver
 resources:
   'EPRE for Vote 04 : Culture, Arts and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/9b04f772-73b2-4ab9-a557-0c9aaf81b690/resource/b0d714b1-74ba-4b27-9c02-44a22b2a69ec/download/nw-culture-arts-and-trad.xlsm
+      url: https://budgetdata.openup.org.za/dataset/9b04f772-73b2-4ab9-a557-0c9aaf81b690/resource/b0d714b1-74ba-4b27-9c02-44a22b2a69ec/download/nw-culture-arts-and-trad.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 04 - Culture, Arts and Traditional Affairs.pdf

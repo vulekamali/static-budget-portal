@@ -27,14 +27,35 @@ government:
   name: Eastern Cape
   slug: eastern-cape
 name: Health
-narrative: {}
+narratives:
+- content: "A qualtiy health service to the people of the Eastern Cape Province promoting\
+    \ a better life for all\r\n\r\n"
+  name: Vision
+- content: "To provide and ensure accessible comprhensive intergrated services in\
+    \ the Eastern Cape, emphasising the primary health care apporach, optimally utilising\
+    \ all resources to enable all its present and future generations to enjoy health\
+    \ and quality of life.\r\n\r\n\r\n"
+  name: Mission
+- content: "The core functions and responsibilities of the department are aligned\
+    \ to the national and provincial priorities including overhauling the provincial\
+    \ healthcare system by implementing and sustaining an evidence and results-based\
+    \ provincial health system which is aligned to the National Health System (NHS)\
+    \ 10-point plan, national and provincial legislative requirements and disease\
+    \ profiles; building the required capacity to oversee and manage health services\
+    \ in the province through:\r\n\r\n* Improving quality and continuum of primary\
+    \ healthcare (including community-based and hospital services) by implementing\
+    \ a resourced package of services and improving clinical governance systems and\
+    \ processes;and\r\n\r\n* Reducing morbidity andmortality due to communicable diseases\
+    \ and non-communicable illnesses and conditions by implementing high impact strategies\
+    \ to address prevention,detection,management and support at all levels of care."
+  name: Core functions
 resources:
   'EPRE for Vote 03 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/9c6018ae-740b-4bf0-8885-5e3a70515cb0/resource/8d987463-799d-43a8-a50b-84e03908fda4/download/ec-health.xlsm
+      url: https://budgetdata.openup.org.za/dataset/9c6018ae-740b-4bf0-8885-5e3a70515cb0/resource/8d987463-799d-43a8-a50b-84e03908fda4/download/ec-health.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 03 - Health.pdf

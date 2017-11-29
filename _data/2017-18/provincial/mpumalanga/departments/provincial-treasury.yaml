@@ -27,14 +27,39 @@ government:
   name: Mpumalanga
   slug: mpumalanga
 name: Provincial Treasury
-narrative: {}
+narratives:
+- content: "A dynamic Provincial Treasury leading in service excellence.\r\n\r\n"
+  name: Vision
+- content: "The equitable allocation and optimal utilization of provincial resources\
+    \ to ensure a quality\r\n\r\nand better life for all through:\r\n\r\n* Quality\
+    \ financial advice and support to departments, public entities and municipalities.\r\
+    \n\r\n* Efficient financial management and fiscal discipline.\r\n\r\n* Effective\
+    \ monitoring of resource utilization.\r\n\r\n"
+  name: Mission
+- content: "Administration is responsible for political, financial and administrative\
+    \ management of the\r\n\r\nProvincial Treasury. The Programme provides prompt,\
+    \ continuous, effective and efficient\r\nadministrative support to all line functions\
+    \ in the Provincial Treasury.\r\nSustainable Resources Management exists to promote\
+    \ optimal and effective provincial\r\nresource allocation and utilization, efficient\
+    \ provincial budget management, accurate\r\nfinancial reporting on provincial\
+    \ revenue generation and maximization, promote efficient\r\nplanning, implementation\
+    \ and management of infrastructure by provincial Departments and\r\nMunicipalities,\
+    \ and provide technical support to delegated Municipalities on the\r\nimplementation\
+    \ of the Municipal Finance Management Act, No. 56 of 2003 (MFMA).\r\nAssets and\
+    \ Liabilities Management is responsible for the monitoring and support on Assets,\r\
+    \nLiabilities, Provincial Supply Chain management, Public Private Partnerships,\
+    \ Transversal\r\nSystems as well as the provisioning of Information Technology\
+    \ Services to Departments,\r\nPublic Entities and Municipalities in Mpumalanga\
+    \ Province.\r\n\r\nFinancial Governance serves to facilitate, monitor, support\
+    \ and provide professional advice to ensure good governance in the Province\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 03 : Provincial Treasury':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/c4c5eb1b-14bf-415f-9aef-f4a8594ebc5f/resource/156762ec-be45-4397-a167-6bc806f90cf7/download/mpu-finance.xlsm
+      url: https://budgetdata.openup.org.za/dataset/c4c5eb1b-14bf-415f-9aef-f4a8594ebc5f/resource/156762ec-be45-4397-a167-6bc806f90cf7/download/mpu-finance.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 03 - Provincial Treasury.pdf

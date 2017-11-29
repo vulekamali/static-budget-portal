@@ -27,23 +27,20 @@ government:
   name: South Africa
   slug: south-africa
 name: Science and Technology
-narrative:
-  mandate:
-    content: "The Department of Science and Technology executes its mandate through\
-      \ the\nimplementation of the 1996\_White Paper on Science and Technology, the\
-      \ national\nresearch and development strategy and the 10-year innovation plan.\
-      \ The plan\naims to make science and technology a driving force in enhancing\
-      \ productivity,\neconomic growth and socioeconomic development.\n\n"
-    name: Mandate
-  vote-purpose:
-    content: '_Realise the full potential of science and technology in social and
-      economic
+narratives:
+- content: '_Realise the full potential of science and technology in social and economic
 
-      development by developing human resources, research and innovation._
+    development by developing human resources, research and innovation._
 
 
-      '
-    name: Vote purpose
+    '
+  name: Vote purpose
+- content: "The Department of Science and Technology executes its mandate through\
+    \ the\nimplementation of the 1996\_White Paper on Science and Technology, the\
+    \ national\nresearch and development strategy and the 10-year innovation plan.\
+    \ The plan\naims to make science and technology a driving force in enhancing productivity,\n\
+    economic growth and socioeconomic development.\n\n"
+  name: Mandate
 resources:
   ENE for Vote 30 - Science and Technology:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

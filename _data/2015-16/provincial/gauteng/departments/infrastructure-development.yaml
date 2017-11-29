@@ -27,14 +27,35 @@ government:
   name: Gauteng
   slug: gauteng
 name: Infrastructure Development
-narrative: {}
+narratives:
+- content: "To be a leading sustainable infrastructure provider and facilitator that\
+    \ positions Gauteng as a global competitive\r\ncity region with inclusive economic\
+    \ growth and decent work for all.\r\n\r\n"
+  name: 'Vision '
+- content: "To contribute towards the radical transformation, modernisation and re-industrialisation\
+    \ of Gauteng by\r\naccelerating integrated service delivery, maintenance and management\
+    \ of public infrastructure and deploying\r\nbuilt environment professionals while\
+    \ encouraging the active participation of an empowered citizenry.\r\n\r\n"
+  name: Mission
+- content: "* To ensure the implementation of all infrastructure programmes and projects\
+    \ reflected in the short, medium\r\nand long term plans of the Gauteng Provincial\
+    \ Government (GPG);\r\n\r\n* To manage the construction of GPG capital expenditure\
+    \ (CAPEX) projects such as schools, hospitals, clinics\r\nand recreation centres;\r\
+    \n\r\n* To manage the provision of maintenance services for all GPG infrastructure;\r\
+    \n\r\n* To manage the provincial property portfolio;\r\n\r\n* To ensure participation\
+    \ and involvement of communities through the implementation of the Extended Public\r\
+    \nWorks Programme (EPWP) within GPG CAPEX projects and other departmental projects;\
+    \ and\r\n\r\n* To utilise the construction sector as a catalyst for the development\
+    \ of skills, the creation of jobs and the\r\ndevelopment of sustainable communities\r\
+    \n"
+  name: Core functions
 resources:
   'EPRE for Vote 15 : Infrastructure Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/4db6b8af-9b09-40c3-8090-b96a1221b290/resource/0a9f4552-556e-418e-8fcd-a4f254197c6d/download/gt-infrastructure-development.xlsx
+      url: https://budgetdata.openup.org.za/dataset/4db6b8af-9b09-40c3-8090-b96a1221b290/resource/0a9f4552-556e-418e-8fcd-a4f254197c6d/download/gt-infrastructure-development.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 15 - Infrastructure Development.pdf

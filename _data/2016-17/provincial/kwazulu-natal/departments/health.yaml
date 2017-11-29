@@ -27,14 +27,29 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Health
-narrative: {}
+narratives:
+- content: "The vision of the Department of Health is: Optimal health for all persons\
+    \ in KwaZulu-Natal.\r\n\r\n"
+  name: Vision
+- content: "The department\uFFFDs mission statement is: To develop and implement a\
+    \ sustainable, co-ordinated, integrated and comprehensive health system at all\
+    \ levels, based on the primary health care approach through the district health\
+    \ system, to ensure universal access to health care.\r\n\r\n"
+  name: Mission Statement
+- content: '* The main purpose of the department is to develop and implement a sustainable,
+    co-ordinated, integrated and comprehensive health system based on the primary
+    health care approach, which encompasses promotive, curative, rehabilitative, supportive
+    and palliative care. This is guided by the principles of accessibility, equity,
+    quality and efficiency, sustainability, community participation, appropriate technology,
+    and inter-governmental and inter-sectoral collaboration.'
+  name: Core functions
 resources:
   'EPRE for Vote 07 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/42857ce0-16ce-4959-a681-d3baf98eb912/resource/fbe0b4cc-b120-4dc1-93a1-461a1cfe7463/download/kzn-health.xlsm
+      url: https://budgetdata.openup.org.za/dataset/42857ce0-16ce-4959-a681-d3baf98eb912/resource/fbe0b4cc-b120-4dc1-93a1-461a1cfe7463/download/kzn-health.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 07 - Health.pdf

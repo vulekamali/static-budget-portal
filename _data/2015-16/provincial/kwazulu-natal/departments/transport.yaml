@@ -27,14 +27,33 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Transport
-narrative: {}
+narratives:
+- content: "The department\uFFFDs vision is: Prosperity through mobility\r\n\r\n"
+  name: Vision
+- content: "The department\uFFFDs mission is: To strive to provide the public with\
+    \ mobility by an affordable transportation system that is safe, integrated, regulated\
+    \ and accessible to meet the developmental needs of the province.\r\n\r\n"
+  name: Mision
+- content: "Turning the vision of the department into reality can only be achieved\
+    \ by focusing the attention and energy of all employees and relevant stakeholders\
+    \ on the performance of its core functions, namely:\r\n\r\nConstruct, maintain\
+    \ and repair the provincial road network\r\nThe department\uFFFDs mandate is to\
+    \ construct and maintain a balanced road network that meets the mobility needs\
+    \ of the citizens of KZN, and supports the national and provincial growth and\
+    \ development strategies.\r\n\r\nPlan, regulate and provide an integrated transportation\
+    \ system\r\nThe department\uFFFDs mandate is to regulate public transport and\
+    \ ensure access to safe, efficient and affordable public transport. The department\
+    \ is further mandated to facilitate development in the freight transport industry\
+    \ and the minimisation of negative externalities resultant from the transport\
+    \ of freight."
+  name: Core functions
 resources:
   'EPRE for Vote 12 : Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/1db4972e-f152-4e27-ac2b-a5cc00baaccc/resource/7c6129ac-fc53-43ae-8c40-d4371bdad103/download/kzn-transport.xlsx
+      url: https://budgetdata.openup.org.za/dataset/1db4972e-f152-4e27-ac2b-a5cc00baaccc/resource/7c6129ac-fc53-43ae-8c40-d4371bdad103/download/kzn-transport.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 12 - Transport.pdf

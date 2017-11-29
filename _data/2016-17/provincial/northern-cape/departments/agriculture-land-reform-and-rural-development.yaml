@@ -27,14 +27,39 @@ government:
   name: Northern Cape
   slug: northern-cape
 name: Agriculture, Land Reform and Rural Development
-narrative: {}
+narratives:
+- content: "A transformed, vibrant agricultural sector for food security and sustainable\
+    \ rural development.\r\n\r\n\r\n"
+  name: Vision
+- content: "The Department as a lead agent in the sector, will champion land and agrarian\
+    \ transformation, promote and facilitate increased production and provide expertise\
+    \ for improved livelihoods, sustainable rural development and food security for\
+    \ all.\r\n\r\n"
+  name: Mission
+- content: "* Coordinate and facilitate rural development programmes that contribute\
+    \ to vibrant, equitable and sustainable rural communities\r\n\r\n* Provision of\
+    \ comprehensive post settlement support to land reform beneficiaries\r\n\r\n*\
+    \ Ensure food security for all by increasing agricultural production; providing\
+    \ technical support for development of famers and communities\r\n\r\n* Establishing\
+    \ markets in rural areas\r\n\r\n* Establish agricultural co-operatives throughout\
+    \ the value-chain\r\n\r\n* Development and implementation of the sector job creation\
+    \ plan\r\n\r\n* Promoting sustainable use and management of natural resources\r\
+    \n\r\n* Farm worker development\r\n\r\n* To provide veterinary services which\
+    \ promote sustainable economic growth through export and import and ensure the\
+    \ health and welfare of people and animals in the Northern Cape\r\n\r\n* To ensure\
+    \ the competitive capacity of its clients, through the timely provision of progressive\
+    \ technologies and information with regard to crop production, animal production\
+    \ and resource utilisation\r\n\r\n* To provide economic support to internal and\
+    \ external clients with regard to marketing, statistical information including\
+    \ financial feasibility and economic viability studie"
+  name: Core functions and responsibilities of the department
 resources:
   'EPRE for Vote 12 : Agriculture, Land Reform and Rural Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/9c55b754-5cdb-4aa4-a5ed-2bab08f99ce3/resource/df4d7fcf-c11b-42b3-b914-863a1da669ff/download/nc-agric.-land-reform-and-rural-dev..xlsm
+      url: https://budgetdata.openup.org.za/dataset/9c55b754-5cdb-4aa4-a5ed-2bab08f99ce3/resource/df4d7fcf-c11b-42b3-b914-863a1da669ff/download/nc-agric.-land-reform-and-rural-dev..xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 12 - Agriculture, Land & Rural Dev.pdf

@@ -27,14 +27,35 @@ government:
   name: North West
   slug: north-west
 name: Public Works, Roads and Transport
-narrative: {}
+narratives:
+- content: "Delivery and maintenance of quality infrastructure for sustainable growth\
+    \ and development.\r\n\r\n"
+  name: Vision
+- content: "To provide quality provincial infrastructure and ensure better service\
+    \ delivery.\r\n\r\n"
+  name: Mission
+- content: "* To plan and implement maintenance activities, routine, schedule, conditions\
+    \ assessment of all buildings and other fixed structures;\r\n\r\n* To manage the\
+    \ property portfolio of the province including the establishment and management\
+    \ of the provincial strategic infrastructure plan;\r\n\r\n* To manage the operations\
+    \ of buildings and facilities through cleaning, greening, beautification, interior\
+    \ decoration and designs and to also conduct day to day preventative maintenance\
+    \ of electronic, electrical and mechanical equipment;\r\n\r\n* To promote accessibility\
+    \ support for a safe and affordable movement of people, goods and services through\
+    \ the delivery and maintenance of transport infrastructure that is sustainable,\r\
+    \nintegrated and environmentally sensitive, and which supports and facilitates\
+    \ social empowerment and economic growth;\r\n\r\n* To develop new, re-construct,\
+    \ upgrade, rehabilitate and maintain road and transport infrastructure; and\r\n\
+    \r\n* Contribute to the national goals of job creation and poverty alleviation\
+    \ through Expanded Public Works Programme.\r\n\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 11 : Public Works, Roads and Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/2a2b1d5b-fc28-4c52-bb8c-65edccb24f73/resource/b9ce7918-acf6-4096-9a0d-0470c2b1854e/download/nw-public-works-and-roads.xlsx
+      url: https://budgetdata.openup.org.za/dataset/2a2b1d5b-fc28-4c52-bb8c-65edccb24f73/resource/b9ce7918-acf6-4096-9a0d-0470c2b1854e/download/nw-public-works-and-roads.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 11 - Public Roads and Transport.pdf

@@ -27,14 +27,38 @@ government:
   name: Mpumalanga
   slug: mpumalanga
 name: Mpumalanga Provincial Legislature
-narrative: {}
+narratives:
+- content: "A people-centred, African, world class Legislature.\r\n\r\n"
+  name: Vision
+- content: "To hold the Executive and other state organs accountable through intensified\
+    \ oversight\r\nenhanced public involvement and effective law making supported\
+    \ by professional\r\nadministrative service\r\n\r\n"
+  name: Mission
+- content: "The core functions are as follows:\r\n\r\nLaw making\r\n* To provide strategic\
+    \ leadership and management to ensure divisional effectiveness in\r\nsupport of\
+    \ the core business of the Legislature.\r\n\r\n* Coordinate and facilitate the\
+    \ business of the House, and provide Hansard and language\r\nservices\r\n\r\n\
+    Oversight\r\n* To provide professional and administrative support to Committees\
+    \ and liaison function\r\nbetween the Legislature and the NCOP for the fulfilment\
+    \ of the constitutional mandate.\r\n\r\n* To provide research, policy analysis\
+    \ and knowledge management in support of the core\r\nbusiness of the Legislature.\r\
+    \n\r\n* To provide professional legal services in support of the core business\
+    \ of the Legislature.\r\n\r\nPublic participation and petitions\r\n* To provide\
+    \ professional and administrative services regarding public investment and\r\n\
+    public participation in support of the core business of the Legislature.\r\nMembers\uFFFD\
+    \ affairs and political parties\r\n\r\n* To provide professional and administrative\
+    \ support services to Members in order to fulfil the constitutional mandate of\
+    \ the Legislature.\r\n\r\nCo-operative governance\r\n* To provide professional\
+    \ parliamentary advisory and protocol services in support of the\r\ncore business\
+    \ of the Legislature\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 02 : Mpumalanga Provincial Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/c798f867-8bde-4972-9820-8fa01674f857/resource/45ca68d2-957b-47c2-b176-7f2d5132267f/download/mpu-provincial-legislature.xlsm
+      url: https://budgetdata.openup.org.za/dataset/c798f867-8bde-4972-9820-8fa01674f857/resource/45ca68d2-957b-47c2-b176-7f2d5132267f/download/mpu-provincial-legislature.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 02 - Provincial Legislature.pdf

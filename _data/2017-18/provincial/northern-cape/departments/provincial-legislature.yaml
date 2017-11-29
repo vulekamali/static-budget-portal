@@ -27,14 +27,40 @@ government:
   name: Northern Cape
   slug: northern-cape
 name: Provincial Legislature
-narrative: {}
+narratives:
+- content: "An activist Legislature advancing the aspirations of the people of the\
+    \ Northern Cape.\r\n\r\n"
+  name: Vision
+- content: "To serve people of the Northern Cape by building a developmental institution\
+    \ for effective law making, public participation, accountability and oversight\
+    \ over the executive and municipalities\r\n\r\n"
+  name: Mission
+- content: "*The Northern Cape Provincial Legislature (NCPL) exists in terms of section\
+    \ 104 of the Constitution of the Republic of South Africa, Act 108 of 1996 which\
+    \ vests the legislative authority of the Northern Cape Province in the NCPL. In\
+    \ addition to the legislative authority, Provincial Legislature also has a constitutional\
+    \ mandate of oversight over the provincial executive as well as a responsibility\
+    \ to ensure public participation in its processes.\r\n\r\n*An effective Legislature\
+    \ is strongly correlated with the existence of a viable democracy and an open\
+    \ society. The Northern Cape Provincial Legislature on account of its members\
+    \ and legislative functions can empower ordinary citizens to participate in the\
+    \ development of policies that shape their lives. Due to its oversight role, the\
+    \ NCPL is fundamental in establishing the rule of law, protecting human rights,\
+    \ overseeing transparent governance processes and ensuring compliance with national\
+    \ and provincial legislation in the Northern Cape.\r\n\r\n*These functions, though\
+    \ universally recognised are not always naturally or effectively implemented without\
+    \ sufficient human and financial resources. With its budget the NCPL is able to\
+    \ develop programmes geared at its own development. These programmes are aimed\
+    \ at strengthening representatives, transparency, accountability and effective\
+    \ government"
+  name: Core Services
 resources:
   'EPRE for Vote 02 : Provincial Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/5af9f2ad-b867-41bf-bea5-a6912923906c/resource/5bdbdcb5-ba63-49ce-b7c1-22fffd4c61a6/download/nc-provincial-legislature.xlsm
+      url: https://budgetdata.openup.org.za/dataset/5af9f2ad-b867-41bf-bea5-a6912923906c/resource/5bdbdcb5-ba63-49ce-b7c1-22fffd4c61a6/download/nc-provincial-legislature.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 02 - Provincial Legislature.pdf

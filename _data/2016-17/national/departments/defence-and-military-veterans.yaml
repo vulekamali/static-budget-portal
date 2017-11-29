@@ -27,21 +27,19 @@ government:
   name: South Africa
   slug: south-africa
 name: Defence and Military Veterans
-narrative:
-  mandate:
-    content: "The Department of Defence derives its mandate from section\_200 of the\n\
-      Constitution, the Defence Act\_(2002), as amended by the Defence Amendment Act\n\
-      (2010), as well as the 1996 White Paper on Defence, the 1998 Defence Review\n\
-      and the 2015 South African Defence Review. The department is required to\nprovide,\
-      \ manage, prepare and employ defence capabilities that are commensurate\nwith\
-      \ the needs of South Africa.\n\n"
-    name: Mandate
-  vote-purpose:
-    content: "_Defend and protect the Republic of South Africa, its territorial integrity\n\
-      and its people, in accordance with the Constitution and the principles of\n\
-      international law regulating the use of force. Provide for military veterans\u2019\
-      \nbenefits._\n\n"
-    name: Vote purpose
+narratives:
+- content: "_Defend and protect the Republic of South Africa, its territorial integrity\n\
+    and its people, in accordance with the Constitution and the principles of\ninternational\
+    \ law regulating the use of force. Provide for military veterans\u2019\nbenefits._\n\
+    \n"
+  name: Vote purpose
+- content: "The Department of Defence derives its mandate from section\_200 of the\n\
+    Constitution, the Defence Act\_(2002), as amended by the Defence Amendment Act\n\
+    (2010), as well as the 1996 White Paper on Defence, the 1998 Defence Review\n\
+    and the 2015 South African Defence Review. The department is required to\nprovide,\
+    \ manage, prepare and employ defence capabilities that are commensurate\nwith\
+    \ the needs of South Africa.\n\n"
+  name: Mandate
 resources:
   ENE for Vote 19 - Defence and Military Veterans:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

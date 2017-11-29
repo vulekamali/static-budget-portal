@@ -27,14 +27,32 @@ government:
   name: Limpopo
   slug: limpopo
 name: Transport
-narrative: {}
+narratives:
+- content: "To be a pioneer and leading department at the epi-centre of socio-economic\
+    \ development.\r\n\r\n"
+  name: Vision
+- content: "To provide safe, affordable, sustainable and integrated transport services.\r\
+    \n\r\n"
+  name: Mission
+- content: "The department renders the following main services:\r\n\r\n* Provisioning\
+    \ of public transport and related infrastructure;\r\n\r\n* Administration of all\
+    \ aspects relating to motor vehicle licensing and registration fees, law administration,\
+    \ accident data & statistics and overload control;\r\n\r\n* Promoting investment\
+    \ in rural transport as a means to provide affordable and convenient access to\
+    \ markets, employment, economic activity and social services;\r\n\r\n* Co-ordinating\
+    \ development of transport multi-purpose centres, inter-modal transport facilities\
+    \ and freight logistic services as part of an integrated transport service network;\r\
+    \n\r\n* Advancing equity in the employment of youth and women in transport sectors\
+    \ by employing income generating and labour-intensive methodologies for all infrastructure\
+    \ projects; and\r\n\r\n* Developing and managing airports in the province.\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 08 : Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/9db4bf4d-6649-48dd-9211-3fdff1ab8daf/resource/bbd134c9-e1bf-4288-8e5c-9d5aa95ad71a/download/lim-transport.xlsm
+      url: https://budgetdata.openup.org.za/dataset/9db4bf4d-6649-48dd-9211-3fdff1ab8daf/resource/bbd134c9-e1bf-4288-8e5c-9d5aa95ad71a/download/lim-transport.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 08 - Transport.pdf

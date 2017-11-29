@@ -27,14 +27,14 @@ government:
   name: Free State
   slug: free-state
 name: Social Development
-narrative: {}
+narratives: []
 resources:
   'EPRE for Vote 07 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/25483d7b-4c29-4d7b-b5e7-a42abb3f84be/resource/3986e259-fbe2-4aa4-85ef-145c0d2ce300/download/fs-social-development.xlsx
+      url: https://budgetdata.openup.org.za/dataset/25483d7b-4c29-4d7b-b5e7-a42abb3f84be/resource/3986e259-fbe2-4aa4-85ef-145c0d2ce300/download/fs-social-development.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 07 - Social Development.pdf

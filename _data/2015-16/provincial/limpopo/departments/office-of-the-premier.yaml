@@ -27,14 +27,28 @@ government:
   name: Limpopo
   slug: limpopo
 name: Office of the Premier
-narrative: {}
+narratives:
+- content: "Good governance, integrated planning, sustainable growth and development\r\
+    \n\r\n"
+  name: Vision
+- content: "Provide innovative and strategic leadership and management for service\
+    \ excellence.\r\n\r\n"
+  name: Mission
+- content: "The Provincial Administration, in line with the national policy, committed\
+    \ itself to improve the lives of the people of the province. The following are\
+    \ strategic goals of the Office of the Premier:\r\n\r\n* Improved capacity of\
+    \ the Office of the Premier to provide strategic leadership;\r\n\r\n* Improved\
+    \ institutional efficiency and effectiveness of the Provincial Administration;\r\
+    \n\r\n* Enhanced Monitoring and Evaluation capacity of the Provincial Administration;\
+    \ and\r\n\r\n* Promote intergovernmental and international relations."
+  name: Core functions
 resources:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/e19e2239-3cd9-4956-b7c7-1bbe2f37ab74/resource/629f3bca-cb07-43c4-a522-5eae307b72b9/download/lim-office-of-the-premier.xlsx
+      url: https://budgetdata.openup.org.za/dataset/e19e2239-3cd9-4956-b7c7-1bbe2f37ab74/resource/629f3bca-cb07-43c4-a522-5eae307b72b9/download/lim-office-of-the-premier.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 01 - Premier.pdf

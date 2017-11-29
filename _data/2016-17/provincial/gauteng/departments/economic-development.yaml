@@ -27,14 +27,44 @@ government:
   name: Gauteng
   slug: gauteng
 name: Economic Development
-narrative: {}
+narratives:
+- content: "A radically transformed, modernised and re-industrialised economy in Gauteng,\
+    \ manifesting decent work, economic\r\ninclusion and equity.\r\n\r\n"
+  name: Vision
+- content: "The mission of the Department of Economic Development in quest of its\
+    \ vision is to:\r\n\r\n\uFFFD Ensure radical transformation, modernisation and\
+    \ re-industrialisation of the Gauteng economy;\r\n\r\n\uFFFD Provide an enabling\
+    \ policy and legislative environment for equitable economic growth and development;\r\
+    \n\r\n\uFFFD Develop and implement programmes and projects that will:\r\n\r\n\uFFFD\
+    \ Revitalise Gauteng\uFFFDs township economies;\r\n\r\n\uFFFD Build new smart,\
+    \ green, knowledge-based economy and industries;\r\n\r\n\uFFFD Ensure decent employment\
+    \ and inclusion in key economic sectors;\r\n\r\n\uFFFD Facilitate radical economic\
+    \ transformation, modernisation and re-industrialisation;\r\n\r\n\uFFFD Include\
+    \ the marginalised sectors of women, youth and persons with disabilities in mainstream\
+    \ economic activities;\r\nand\r\n\r\n\uFFFD Establish appropriate partnerships\
+    \ for delivery and ensure the DED effectively delivers on its mandate\r\n\r\n\r\
+    \n\r\n"
+  name: Mission
+- content: "The key cross-cutting principles and outcomes that will underpin the programmes\
+    \ and projects of all the three objectives\r\nare:\r\n\r\n\uFFFD Promoting smart\
+    \ and green industrial and socio-economic development;\r\n\r\n\uFFFD Creating\
+    \ decent work and reducing levels of unemployment;\r\n\r\n\uFFFD Contributing\
+    \ to an increase in Gross Domestic Product (GDP);\r\n\r\n\uFFFD Making the economy\
+    \ inclusive (reversing monopoly capital\uFFFDs domination);\r\n\r\n\uFFFD Applying\
+    \ smart and green technology and processes;\r\n\r\n\uFFFD Mainstreaming the participation\
+    \ of the marginalised sectors of women, youth and persons with disabilities;\r\
+    \n\r\n\uFFFD Developing an appropriately skilled labour force and private sector\
+    \ (SMME\uFFFDs, co-operatives and emerging businesses) to\r\nmeet and grow the\
+    \ economy and work in the key sectors; and\r\n\r\n\uFFFD Ensuring environmental\
+    \ sustainability."
+  name: Main services
 resources:
   'EPRE for Vote 03 : Economic Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/d5e0a13b-e5bf-45aa-922e-f3bbdd17ccde/resource/3a9cadc5-f37c-4fab-a9ef-6f4a1d2419d8/download/gt-economic-development.xlsm
+      url: https://budgetdata.openup.org.za/dataset/d5e0a13b-e5bf-45aa-922e-f3bbdd17ccde/resource/3a9cadc5-f37c-4fab-a9ef-6f4a1d2419d8/download/gt-economic-development.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 03 - Economic Development.pdf

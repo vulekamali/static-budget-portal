@@ -27,14 +27,33 @@ government:
   name: Limpopo
   slug: limpopo
 name: Economic Development, Environmental Affairs and Tourism
-narrative: {}
+narratives:
+- content: "A competitive economy within a sustainable environment.\r\n\r\n"
+  name: Vision
+- content: "To create and facilitate the development of a competitive economy, sustainable\
+    \ environment and\r\ntourism growth.\r\n\r\n"
+  name: Mission
+- content: "The mandate of the Department is to facilitate the provincial economy,\
+    \ promote and manage\r\nenvironmental and tourism activities. To carry out this\
+    \ mandate, the department pursues the\r\nfollowing:\r\n\r\n\uFFFD Improve service\
+    \ delivery to communities and stakeholders through a skilled, accountable,\r\n\
+    corrupt free, development oriented and empowered and intergraded Public Service.\r\
+    \n\r\n\uFFFD Accelerate employment creation, economic growth and development.\r\
+    \n\r\n\uFFFD Ensure sustainable development through targeted intervention on environmental\
+    \ management,\r\ndevelopment of natural resources, creation of green jobs and\
+    \ proactive responses to climate\r\nchange.\r\n\r\n\uFFFD To position Limpopo\
+    \ as a preferred tourist and investment destination within Southern African\r\n\
+    Developing Countries(SADC) and the World.\r\n\r\n\uFFFD Transform Limpopo into\
+    \ a world class knowledge society that uses ICT as an enabler of socioeconomic\r\
+    \ndevelopment and ICT as a production sector."
+  name: Main services
 resources:
   'EPRE for Vote 06 : Economic Development, Environmental Affairs and Tourism':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/1cf5e0b0-ecd8-4e04-bc40-aa70691140b2/resource/aae74592-d1a4-4e71-9c4a-02ebbfa28873/download/lim-eco.-dev.-env.-and-tourism.xlsm
+      url: https://budgetdata.openup.org.za/dataset/1cf5e0b0-ecd8-4e04-bc40-aa70691140b2/resource/aae74592-d1a4-4e71-9c4a-02ebbfa28873/download/lim-eco.-dev.-env.-and-tourism.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 06 - Economic Dev., Environ. & Tourism.pdf

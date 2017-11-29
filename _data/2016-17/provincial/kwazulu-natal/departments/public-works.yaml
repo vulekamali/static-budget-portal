@@ -27,14 +27,30 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Public Works
-narrative: {}
+narratives:
+- content: "The department\uFFFDs vision is: An inclusive economy through sustainable\
+    \ infrastructure development and property management.\r\n\r\n"
+  name: Vision
+- content: "The department\uFFFDs mission is: To improve the life of the people in\
+    \ KwaZulu-Natal through sustainable infrastructure development and property management.\r\
+    \n\r\n"
+  name: Mission statement
+- content: "In carrying out its mandate, the department undertakes the following core\
+    \ functions:\r\n\r\n* The acquisition of public buildings and land.\r\n\r\n* The\
+    \ construction of public buildings, involving the physical erection or major improvements\
+    \ in respect of infrastructure in the building environment.\r\n\r\n* The maintenance\
+    \ of public buildings and land, including performing the necessary work to keep\
+    \ the required level of operation and the payment of property rates.\r\n\r\n*\
+    \ The alienation of public buildings and land, including the disposal of fixed\
+    \ assets by selling, demolition, exchanging and donation.\r\n\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 14 : Public Works':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/6f4e4c9c-dfcf-484a-aae5-21130294953d/resource/a379b68b-3da1-4411-af0c-7e1bc83d23d8/download/kzn-public-works.xlsm
+      url: https://budgetdata.openup.org.za/dataset/6f4e4c9c-dfcf-484a-aae5-21130294953d/resource/a379b68b-3da1-4411-af0c-7e1bc83d23d8/download/kzn-public-works.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 14 - Public Works.pdf

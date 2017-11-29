@@ -27,14 +27,39 @@ government:
   name: Gauteng
   slug: gauteng
 name: Cooperative Governance and Traditional Affairs
-narrative: {}
+narratives:
+- content: "Lead provincial department in the coordination, collaboration, and facilitation\
+    \ of cooperative governance in building a\r\nglobally competitive and people-driven\
+    \ Gauteng City-Region.\r\n\r\n"
+  name: Vision
+- content: "In pursuit of our vision of cooperative governance, COGTA shall:\r\n\r\
+    \n\uFFFD Support, facilitate, coordinate, and regulate inter-sphere and cross-departmental\
+    \ integrated planning, budgeting,\r\nimplementation; and\r\n\r\n\uFFFD Monitor,\
+    \ evaluate and report on local government performance in order to achieve an accountable,\
+    \ stable, efficient,\r\neffective and resilient, activist and ethical local government\
+    \ and empowered communities.\r\n\r\n\r\n"
+  name: Mission
+- content: "The mandate of the department highlights cooperative governance, and is\
+    \ essential for integrated development. The\r\ndepartment provides support to\
+    \ and monitors municipalities and tribal authorities by:\r\n\r\n\uFFFD Monitoring\
+    \ the municipalities and traditional authorities\uFFFD development and performance;\r\
+    \n\r\n\uFFFD Supporting local authorities where there are capacity constraints;\r\
+    \n\r\n\uFFFD Promoting capacity development in a systematic manner, to ensure\
+    \ that municipalities are able to manage their own\r\naffairs;\r\n\r\n\uFFFD Advising,\
+    \ commenting on and approving Integrated Development Plans (IDP\uFFFDs);\r\n\r\
+    \n\uFFFD Providing key support services to municipalities in implementing the\
+    \ Municipal Finance Management Act (No. 56 of\r\n2003) (MFMA) and supporting Community\
+    \ Development Workers (CDW\uFFFDs);\r\n\r\n\uFFFD Intervening where local authorities\
+    \ fail to perform their designated functions and mandates; and\r\n\r\n\uFFFD Strengthening\
+    \ the functioning of Municipal Public Accounts Committees."
+  name: Core functions and responsibilities
 resources:
   'EPRE for Vote 07 : Cooperative Governance and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/97c03d80-c25c-4391-8d89-ad6e6b1d76a0/resource/32a9beef-6329-4f00-8752-04b036637dab/download/gt-cogta.xlsm
+      url: https://budgetdata.openup.org.za/dataset/97c03d80-c25c-4391-8d89-ad6e6b1d76a0/resource/32a9beef-6329-4f00-8752-04b036637dab/download/gt-cogta.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 07 - Cooperative Governance and Trad Affairs.pdf

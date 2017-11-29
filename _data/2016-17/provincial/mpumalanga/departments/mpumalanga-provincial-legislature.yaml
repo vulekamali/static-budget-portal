@@ -27,14 +27,20 @@ government:
   name: Mpumalanga
   slug: mpumalanga
 name: Mpumalanga Provincial Legislature
-narrative: {}
+narratives:
+- content: "A people-centred, African, world class Legislature\r\n\r\n"
+  name: Vision
+- content: "To hold the Executive and other state organs accountable through intensified\
+    \ oversight\r\nenhanced public involvement and effective law making supported\
+    \ by professional\r\nadministrative service"
+  name: Mission
 resources:
   'EPRE for Vote 02 : Mpumalanga Provincial Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/d39fcf33-5b4e-45cd-89fb-9cadf184327a/resource/d0ebadd0-09a3-46c0-8cbc-4a2b85d3bb03/download/mpu-provincial-legislature.xlsm
+      url: https://budgetdata.openup.org.za/dataset/d39fcf33-5b4e-45cd-89fb-9cadf184327a/resource/d0ebadd0-09a3-46c0-8cbc-4a2b85d3bb03/download/mpu-provincial-legislature.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 02 - Provincial Legislature.pdf

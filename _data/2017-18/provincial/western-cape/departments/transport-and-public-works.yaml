@@ -27,14 +27,39 @@ government:
   name: Western Cape
   slug: western-cape
 name: Transport and Public Works
-narrative: {}
+narratives:
+- content: "To lead in the delivery of government infrastructure and related services.\r\
+    \n\r\n"
+  name: Vision
+- content: "The Department of Transport and Public Works delivers infrastructure and\
+    \ services to promote socioeconomic\r\noutcomes and safe, empowered and connected\
+    \ communities.\r\n\r\n"
+  name: Mission
+- content: "The core functions of the Department are to deliver a transport system\
+    \ inclusive of the provincial road network; social and economic infrastructure;\
+    \ and to optimally utilise the provincial property portfolio(excluding human settlements\
+    \ property).\r\nMain services of the Department are the following:\r\n\r\n* Construction\
+    \ and maintenance of education, health and general buildings facilities and  provincial\
+    \ road network infrastructure.\r\n\r\n* Administration and monitoring of motor\
+    \ vehicle licensing, vehicle fitness testing and  driver testing.\r\n\r\n* Administration\
+    \ of public transport operating licences.\r\n\r\n* Monitoring of subsidised bus\
+    \ services.\r\n\r\n* Establishment of subsidised public transport services.\r\n\
+    \r\n* Offering of bursaries to study in the transport, engineering and built environment\
+    \ sector.\r\n\r\n* Construction related skills development.\r\n\r\n* Coordination\
+    \ and compliance monitoring of the Expanded Public Works Programme (EPWP).\r\n\
+    \r\n* Utilisation of the immovable asset portfolio to support Government\uFFFD\
+    s socio economic  objectives.\r\n\r\n* Provision of traffic law enforcement services.\r\
+    \n\r\n* Facilitation of road safety education, communication and awareness.\r\n\
+    \r\n* Provision of training and development opportunities to traffic policing\
+    \ and other law  enforcement officials.\r\n"
+  name: Main Services and Core functions
 resources:
   'EPRE for Vote 10 : Transport and Public Works':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/9a667925-fbf8-4bc3-9357-9a0075f79ff6/resource/dced68d5-0cfc-4fba-88a3-510f4c1fc79b/download/wc-transport-and-public-works.xlsm
+      url: https://budgetdata.openup.org.za/dataset/9a667925-fbf8-4bc3-9357-9a0075f79ff6/resource/dced68d5-0cfc-4fba-88a3-510f4c1fc79b/download/wc-transport-and-public-works.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 10 - Transport and Public works.pdf

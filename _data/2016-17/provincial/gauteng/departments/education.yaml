@@ -27,14 +27,31 @@ government:
   name: Gauteng
   slug: gauteng
 name: Education
-narrative: {}
+narratives:
+- content: "Every learner feels valued and inspired in our innovative education system.\r\
+    \n\r\n"
+  name: Vision
+- content: "We are committed to provide functional and modern schools that enable\
+    \ quality teaching and learning to protect and\r\npromote the right of every learner\
+    \ to quality, equitable and relevant education.\r\n\r\n"
+  name: Mission
+- content: "The department works to ensure that people of all ages and backgrounds\
+    \ have the education, skills and opportunities to\r\npursue activities that promote\
+    \ their wellbeing and build strong communities. We are primarily responsible for\
+    \ the delivery\r\nand regulation of pre-tertiary schooling and we are a delivery\
+    \ agent for provincial skills development in Gauteng. All the\r\ndepartment\uFFFD\
+    s plans and service delivery areas are aligned to national and provincial imperatives\
+    \ with special focus on\r\ncurriculum delivery, teaching and learning support\
+    \ material, infrastructure, and Information Communication Technology\r\n(ICT)\
+    \ and teacher placements."
+  name: Core functions and responsibilities
 resources:
   'EPRE for Vote 05 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/84e6ee2c-9903-41bd-9b6d-a32acf145852/resource/22905a09-9efc-4916-af05-5c77b0420fe5/download/gt-education.xlsm
+      url: https://budgetdata.openup.org.za/dataset/84e6ee2c-9903-41bd-9b6d-a32acf145852/resource/22905a09-9efc-4916-af05-5c77b0420fe5/download/gt-education.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 05 - Education.pdf

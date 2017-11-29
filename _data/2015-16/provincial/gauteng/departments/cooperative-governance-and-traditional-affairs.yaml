@@ -27,14 +27,36 @@ government:
   name: Gauteng
   slug: gauteng
 name: Cooperative Governance and Traditional Affairs
-narrative: {}
+narratives:
+- content: "The vision of the Department of Cooperative Governance and Traditional\
+    \ Affairs is: Sustainable, viable local\r\ngovernment, traditional councils and\
+    \ communities in Gauteng\r\n\r\n"
+  name: Vision
+- content: "To coordinate the effective functioning of local government, promote integrated\
+    \ development planning and\r\ndeepen participatory democracy in order to accelerate\
+    \ service delivery.\r\n\r\n"
+  name: Mission
+- content: "The mandate of the department highlights cooperative governance, this\
+    \ is essential for integrated development, the department provides support and\
+    \ monitors municipalities and tribal authorities by:\r\n\r\n* Monitoring the municipalities\
+    \ and traditional authorities development and performance;\r\n\r\n* Supporting\
+    \ local authorities where there are capacity constraints;\r\n\r\n* Promoting capacity\
+    \ development in a systematic manner; to ensure that municipalities are able to\
+    \ manage\r\ntheir own affairs;\r\n\r\n* Advising, commenting on and approving\
+    \ Integrated Development Plans (IDP\uFFFDs);\r\n\r\n* Providing key support services\
+    \ to municipalities in implementing the Municipal Finance Management Act,\r\n\
+    No.56 of 2003 (MFMA) and supporting Community Development Workers (CDW\uFFFDs);\r\
+    \n\r\n* Intervening where local authorities fail to perform their designated functions\
+    \ and mandates; and\r\n* Strengthening the functioning of Municipal Public Accounts\
+    \ Committees"
+  name: Core fuctions
 resources:
   'EPRE for Vote 07 : Cooperative Governance and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/c13b298d-b762-4912-a52a-a3586a18683d/resource/077b8e8d-cb0d-4574-9e9d-78ccdd71fc60/download/gt-cogta.xlsx
+      url: https://budgetdata.openup.org.za/dataset/c13b298d-b762-4912-a52a-a3586a18683d/resource/077b8e8d-cb0d-4574-9e9d-78ccdd71fc60/download/gt-cogta.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 07 - Cooperative Governance and Trad Affairs.pdf

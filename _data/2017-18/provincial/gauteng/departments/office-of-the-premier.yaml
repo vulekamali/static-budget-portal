@@ -27,14 +27,42 @@ government:
   name: Gauteng
   slug: gauteng
 name: Office of the Premier
-narrative: {}
+narratives:
+- content: "Leadership for an integrated city-region, characterised by social cohesion\
+    \ and economic inclusion; the leading economy on\r\ninclusion; the leading economy\
+    \ on the continent, underpinned by sustainable socio-economic development.\r\n\
+    \r\n"
+  name: Vision
+- content: "In achieving its vision, the Office of the Premier (OoP) defines its mission\
+    \ (aim) as follows:\r\n* Providing strategic leadership and direction to government\
+    \ and society\r\n\r\n* Ensuring the transformation and modernisation of the public\
+    \ service\r\n\r\n* Improving governement performance and service delivery through\
+    \ enhanced planning, coordination,monitoring and evaluation of governmentnpeformance.\r\
+    \n\r\n* Driving effective comunication and stakeholder interfaces with communties\
+    \ and key sectors of society\r\n\r\n* providing strategic an operational support\
+    \ in fulfilling condtitutional and keysectors of society\r\n\r\n* Actively advancing\
+    \ gender equality, women's empowerment, youth development and the rights of people\
+    \ with disabilities, older persons and military veterans\r\n\r\n* Securing domestic\
+    \ and foreign partnerships that support the development agenda\r\n\r\n"
+  name: Mission
+- content: As re apex institution of the Gauteng Provincial Government (GPG), the
+    OoP provides overall leadership to government and society. Particular emphasis
+    is placed on research, strategic analysis amd policy development. The OoP intervenes
+    in key sectors to unlock growth and employment potential and revitalise township
+    economics with the aim of radically transforming the overall economy. It also
+    targets the transformation of society by improving education, modernising upgrading
+    the quality of health care and tackling urban poverty and social development challenges.
+    It is also responsible for innovation in public transport as a means of effecting
+    spatial transformation and for building new, sustainable, intergrated huma settlement
+    and cities.
+  name: Core functions
 resources:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/5be248e1-d2ac-4220-bd23-cf43cfebd6f2/resource/546ea6da-1270-43ef-b048-dd6c26390f74/download/gt-premier.xlsm
+      url: https://budgetdata.openup.org.za/dataset/5be248e1-d2ac-4220-bd23-cf43cfebd6f2/resource/546ea6da-1270-43ef-b048-dd6c26390f74/download/gt-premier.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 01 - Office of the Premier.pdf

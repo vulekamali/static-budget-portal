@@ -27,14 +27,31 @@ government:
   name: Northern Cape
   slug: northern-cape
 name: Sport, Arts and Culture
-narrative: {}
+narratives:
+- content: "A department committed to creating a prosperous and empowered province\
+    \ united in the advancement of its sport, heritage, arts and culture.\r\n\r\n"
+  name: Vision
+- content: "To serve all the people of the Northern Cape by promoting, protecting\
+    \ and developing sport and the diverse cultures of our Province and at the same\
+    \ time are the catalysts in the development programmes, economic empowerment and\
+    \ other activities, thereby entrenching national building and social cohesion.\r\
+    \n\r\n"
+  name: Mission
+- content: "To promote, develop and transform arts and culture, museums heritage,\
+    \ language, library, information and archives services in order to contribute\
+    \ to sustainable economic growth and opportunities, nation building, good governance,\
+    \ social cohesion and human capital development.\r\n\r\nTo improve the quality\
+    \ of life of all the people of the Northern Cape through the development, transformation\
+    \ and promotion of sustainable sport and recreation programmes that will lead\
+    \ to increased participation and global competitiveness in sport."
+  name: Core functions
 resources:
   'EPRE for Vote 07 : Sport, Arts and Culture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/a1f87904-7791-4aef-b7bb-a740980038de/resource/7112bc04-544b-4a74-86e0-a86207eedd62/download/nc-sportarts-and-culture.xlsx
+      url: https://budgetdata.openup.org.za/dataset/a1f87904-7791-4aef-b7bb-a740980038de/resource/7112bc04-544b-4a74-86e0-a86207eedd62/download/nc-sportarts-and-culture.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 07 - Sport, Arts and Culture.pdf

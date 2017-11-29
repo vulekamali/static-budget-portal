@@ -27,14 +27,28 @@ government:
   name: Limpopo
   slug: limpopo
 name: Public Works, Roads and Infrastructure
-narrative: {}
+narratives:
+- content: "A leader in the provision and management of provincial land, buildings\
+    \ and roads infrastructure.\r\n\r\n"
+  name: Vision
+- content: "Optimal utilization of resources in the provision and management of sustainable\
+    \ social and\r\neconomic infrastructure including implementation and coordination\
+    \ of Expanded Public Works\r\nProgramme.\r\n\r\n"
+  name: Mission
+- content: "The core functions and responsibilities of this department are to:\r\n\
+    \r\n\uFFFD Facilitate and co-ordinate the provision of provincial government building\
+    \ infrastructure;\r\n\r\n\uFFFD Manage Provincial government land and buildings;\r\
+    \n\r\n\uFFFD Coordinate and implement the Expanded Public Works Programme and\r\
+    \n\r\n\uFFFD Comply with the requirements of Government Immovable Asset Management\
+    \ Act (GIAMA).\r\n\r\n\uFFFD Plan, Design, upgrade and maintain roads infrastructure."
+  name: Main services
 resources:
   'EPRE for Vote 09 : Public Works, Roads and Infrastructure':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/50d29754-4110-4928-adcf-b20382ee79f8/resource/e142be87-2df1-4e1e-a0f5-c776a12f0ab7/download/lim-public-works-roads-and-infrastructure.xlsm
+      url: https://budgetdata.openup.org.za/dataset/50d29754-4110-4928-adcf-b20382ee79f8/resource/e142be87-2df1-4e1e-a0f5-c776a12f0ab7/download/lim-public-works-roads-and-infrastructure.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 09 - Public Works, Roads & Infrastructure.pdf

@@ -27,14 +27,36 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Provincial Treasury
-narrative: {}
+narratives:
+- content: "The vision of the department is: Be the centre of excellence in financial\
+    \ and fiscal management in the country.\r\n\r\n\r\n\r\n"
+  name: Vision
+- content: "The department\uFFFDs mission is: To enhance the KwaZulu-Natal Provincial\
+    \ Government\uFFFDs service delivery by responding to the expectations of all\
+    \ stakeholders in the value chain as a key driver through:\r\n\r\n* Optimum and\
+    \ transparent allocation of financial resources while enhancing revenue generation\
+    \ and financial management practices in compliance with applicable legislation\
+    \ and corporate governance principles.\r\n\r\n* Competent and dedicated employees\
+    \ who are at the centre of ensuring best value to their stakeholders\r\n\r\n\r\
+    \n"
+  name: Mission statement
+- content: "The core functions of the department include the following:\r\n\r\n* Mobilisation\
+    \ of funds for the provincial government.\r\n\r\n* Allocation of fiscal resources\
+    \ to provincial departments.\r\n\r\n* Preparation of annual and MTEF budgets.\r\
+    \n\r\n* Province-wide cash management.\r\n\r\n* Internal audit.\r\n\r\n* Provincial\
+    \ financial management in terms of the PFMA and MFMA through:\r\n\r\n* Budget\
+    \ monitoring and reporting.\r\n\r\n* Financial accounting.\r\n\r\n* Financial\
+    \ systems maintenance.\r\n\r\n* Provision of advice on procurement policies and\
+    \ procedures in provincial government.\r\n\r\n* Control and regulation of the\
+    \ gaming and betting function."
+  name: Core functions
 resources:
   'EPRE for Vote 06 : Provincial Treasury':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/ab768da0-add6-4f00-afe1-6a92d0af5311/resource/5d1fd575-0d4f-4fda-9a12-25ca99fe6a50/download/kzn-treasury.xlsm
+      url: https://budgetdata.openup.org.za/dataset/ab768da0-add6-4f00-afe1-6a92d0af5311/resource/5d1fd575-0d4f-4fda-9a12-25ca99fe6a50/download/kzn-treasury.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 06 - Provincial Treasury.pdf

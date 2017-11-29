@@ -27,14 +27,34 @@ government:
   name: North West
   slug: north-west
 name: Economic Development, Environment, Conservation and Tourism
-narrative: {}
+narratives:
+- content: "A prosperous society and a growing economy.\r\n\r\n"
+  name: Vision
+- content: "To drive and facilitate a sustainable economic development in the North\
+    \ West Province through:\r\n\r\n* Coordinated economic planning.\r\n\r\n* Integrated\
+    \ economic development services.\r\n\r\n* Trade and investment promotion.\r\n\r\
+    \n* The development of other sectors.\r\n\r\n* Effective business regulations.\r\
+    \n\r\n"
+  name: Mission
+- content: "The department\uFFFDs core functions are summarised as follows:\r\n\r\n\
+    * Small Business Development;\r\n\r\n* Provincial macro-economic planning and\
+    \ development;\r\n\r\n* Research to determine economic potential and policy development;\r\
+    \n\r\n* Economic sector development and sectorial charter implementation;\r\n\r\
+    \n* Enhancement of productivity and competitiveness of various economic sectors;\r\
+    \n\r\n* Industrial development facilitation;\r\n\r\n* Economic infrastructure\
+    \ development facilitation;\r\n\r\n* Investment and trade promotion;\r\n\r\n*\
+    \ Regulatory functions (consumer protection and liquor policy administration,\
+    \ BBBEE policy compliance, gambling amongst others); and\r\n\r\n* Economic development\
+    \ planning & coordination including LED, IDPs, cluster management; and Project\
+    \ management\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 06 : Economic Development, Environment, Conservation':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/981d7c0c-e43c-4f8c-83b1-2675a66ceefc/resource/f5d39468-8b6c-43c8-bda2-e462b85b8d71/download/nw-economy-and-enterprise-development.xlsx
+      url: https://budgetdata.openup.org.za/dataset/981d7c0c-e43c-4f8c-83b1-2675a66ceefc/resource/f5d39468-8b6c-43c8-bda2-e462b85b8d71/download/nw-economy-and-enterprise-development.xlsx
   'EPRE for Vote 06 : Economic Development, Environment, Conservation and Tourism':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -47,6 +67,6 @@ resources:
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/981d7c0c-e43c-4f8c-83b1-2675a66ceefc/resource/2495f4b2-db67-4f90-a85f-3a5f9940db47/download/nw-tourism.xlsx
+      url: https://budgetdata.openup.org.za/dataset/981d7c0c-e43c-4f8c-83b1-2675a66ceefc/resource/2495f4b2-db67-4f90-a85f-3a5f9940db47/download/nw-tourism.xlsx
 slug: economic-development-environment-conservation-and-tourism
 vote_number: 6

@@ -27,14 +27,29 @@ government:
   name: Eastern Cape
   slug: eastern-cape
 name: Transport
-narrative: {}
+narratives:
+- content: "an efficient , safe, sustainable, affordable and accessible transport\
+    \ system\r\n\r\n\r\n"
+  name: vision
+- content: "provide , facilitate, develop, regulate and enhance safe , affordable\
+    \ and reliable multi-model transport\r\nsystem which is integrated with land uses\
+    \ to ensure improving levels of accessibility and optimal mobility\r\nof people\
+    \ and goods in support of socio-economic growth and development in the province\
+    \ of the earstern cape\r\n\r\n\r\n\r\n"
+  name: mission
+- content: "* to plan , regulate and facilitate the province of affordable public\
+    \ transport services in the province\r\n\r\n* to regulate the registration and\
+    \ licencing of all pritavtly and government owned vehicles in the province\r\n\
+    \r\n* to regulate and enforce road traffic laws in the province; and\r\n\r\n*\
+    \ to provide fleet services to provisional departments\r\n\r\n\r\n\r\n"
+  name: core functions and responsibilities
 resources:
   'EPRE for Vote 10 : Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/b67d1cfa-0ccd-4976-8a1d-e9a409641bc9/resource/26c2ea63-b20d-438b-85d8-0a3248a6d8ed/download/ec-transport.xlsm
+      url: https://budgetdata.openup.org.za/dataset/b67d1cfa-0ccd-4976-8a1d-e9a409641bc9/resource/26c2ea63-b20d-438b-85d8-0a3248a6d8ed/download/ec-transport.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 10 - Transport.pdf

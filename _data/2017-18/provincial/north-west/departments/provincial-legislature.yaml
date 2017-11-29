@@ -27,14 +27,38 @@ government:
   name: North West
   slug: north-west
 name: Provincial Legislature
-narrative: {}
+narratives:
+- content: "To Foster Lawmaking, Oversight and Public Participation Processes through\
+    \ robust debates to instil Public Pride and Confidence in Democracy.\r\n\r\n"
+  name: Vision
+- content: "The North West Provincial Legislature has, in its quest to attain its\
+    \ vision, adopted the following dynamic principles and activities as its mission:\r\
+    \n\r\n* To reflect the values and aspirations of the people of the North West.\r\
+    \n\r\n* To promote Public Participation, Accessibility, Transparency and Accountability.\r\
+    \n\r\n* To be a caring, robust, responsive and activist Legislature.\r\n\r\n*\
+    \ To develop capacity and skills of both Members and staff.\r\n\r\n* To hold the\
+    \ Executive accountable.\r\n\r\n* To maintain a skilled, well-motivated, well\
+    \ led and managed administration.\r\n\r\n"
+  name: Mission
+- content: "In order to achieve the above strategic goals, the North West Provincial\
+    \ Legislature (NWPL) is responsible for carrying out the following core functions:\r\
+    \n\r\n* To make laws for the province. Essentially, this means that the North\
+    \ West Provincial Legislature has a duty to improve the quality of life for the\
+    \ people of North West Province by creating laws that are just and responsive\
+    \ to the people\uFFFDs needs.\r\n\r\n* To provide support to Committees and the\
+    \ Institution by ensuring public participation in all its programmes.\r\n\r\n\
+    * To oversee the provincial government \uFFFD it is the North West Provincial\
+    \ Legislature\uFFFDs duty to ensure that the government of North West uses its\
+    \ authority in a responsible manner, and that it implements the province\uFFFD\
+    s legislation in the best interest of the people of this province.\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 02 : Provincial Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/f7f7624d-81d5-494e-92a1-3c1b76af772f/resource/aa1aee00-19cc-491b-a7ff-ff16c6a7fa9a/download/nw-legislature.xlsm
+      url: https://budgetdata.openup.org.za/dataset/f7f7624d-81d5-494e-92a1-3c1b76af772f/resource/aa1aee00-19cc-491b-a7ff-ff16c6a7fa9a/download/nw-legislature.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 02 - Legislature.pdf

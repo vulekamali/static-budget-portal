@@ -27,14 +27,30 @@ government:
   name: Eastern Cape
   slug: eastern-cape
 name: Office of the Premier
-narrative: {}
+narratives:
+- content: "Leading development with excellence and intergrity.\r\n\r\n"
+  name: Vision
+- content: "Lead and coordinate the provincial administration in inclusove, transparent,\
+    \ and accountable governance and evidence-based decision-making for intergrated\
+    \ policy for,ation, planning, montoring, reporting, evaluation and review of governmentnprogrammes\
+    \ towards the achievement of efficient an deffective service delivery and supports\
+    \ intergrated socio-econimoc transformation alignedto cinstitutional and legislated\
+    \ prescripts.\r\n\r\n"
+  name: Mission
+- content: "The Office of the Premier (OTP) has the responsibility to provide support\
+    \ service to the Executive Authority through:\r\n\r\n* Leading the provincial\
+    \ development for a shared vision institutionalisong evidence-based decision-making\
+    \ and intergrated planning over medium term\r\n\r\n* Leading socio- economic tranformation\
+    \ by accelerating implementation of government programmes and stakeholder participatory\
+    \ programmes in th current term"
+  name: Core functions
 resources:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/04da5524-5e09-4cc2-a6e8-a68c153bf04b/resource/d4bd6c9a-98b3-430a-b59d-d14d7a164084/download/ec-office-of-the-premier.xlsm
+      url: https://budgetdata.openup.org.za/dataset/04da5524-5e09-4cc2-a6e8-a68c153bf04b/resource/d4bd6c9a-98b3-430a-b59d-d14d7a164084/download/ec-office-of-the-premier.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 01 - Office of the Premier.pdf
