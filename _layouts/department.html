@@ -10,6 +10,7 @@ layout: page-shell
 
 <div class="Page-contentWrap">
   <main class="Page-main">
+
     {% if page_data.government.slug == 'south-africa' %}
       <div class="Page-title">National Department: {{ page_data.name }}</div>
     {% else %}
@@ -23,11 +24,10 @@ layout: page-shell
       <div class="Page-blurb"><strong>Department mandate:</strong> {{ page_data.narrative["mandate"].content | markdownify }}</div>
     {% endif %}
 
-    <!--
-      <div class="Page-section">
-        {% include components/Programmes/index.html %}
-      </div>
-    -->
+    <div class="Page-section">
+      {% include components/Programmes/index.html programmes=page_data.programmes %}
+    </div>
+
   </main>
   <aside class="Page-sidebar">
       {% include components/Share/index.html %}
