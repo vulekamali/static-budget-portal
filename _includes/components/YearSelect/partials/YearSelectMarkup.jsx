@@ -6,7 +6,7 @@ export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, 
   const items = jsonData.map((data) => {
     const Tag = data.active || data.direct === false ? 'span' : 'a';
     const toggleOpen = () => updateItem('open', !open);
-    const linkWithQuery = search ? `${data.url}/?search=${search}` : data.url;
+    const linkWithQuery = search ? `${data.url}?search=${search}` : data.url;
 
     if (!data.direct) {
       return (
