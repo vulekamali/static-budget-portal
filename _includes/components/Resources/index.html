@@ -14,8 +14,12 @@
           <ul class="Resources-links">
             {% for format in item[1].formats %}
               <li class="Resources-linkWrap">
-                
-                {% if format.format == 'XLSX' %}
+                {% 
+                  if format.format == 'XLS' or
+                  format.format == 'XLSX' or
+                  format.format == 'XLSM' or
+                  format.format == 'XLSB'
+                %}
                   <a class="Resources-link" href="{{ format.url }}">
                     <span class="Resources-icon">{{ excelIcon }}</span>
                     <span class="Resources-text">Save Data (Excel)</span>
