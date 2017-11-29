@@ -7,6 +7,7 @@ export default class YearSelectContainer extends Component {
     super(props);
     this.state = {
       open: false,
+      tooltip: null,
     };
 
     this.updateItem = this.updateItem.bind(this);
@@ -58,6 +59,7 @@ export default class YearSelectContainer extends Component {
         search={this.props.search}
         open={this.state.open}
         updateItem={this.updateItem}
+        tooltip={this.state.tooltip}
       />
     );
   }

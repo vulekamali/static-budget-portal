@@ -1,4 +1,4 @@
-function Intro() {
+function scripts() {
   const nodes = document.getElementsByClassName('Intro');
   const nodesArray = [...nodes];
 
@@ -21,4 +21,4 @@ function Intro() {
 }
 
 
-export default Intro();
+export default scripts();
