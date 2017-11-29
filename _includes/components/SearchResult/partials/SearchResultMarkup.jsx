@@ -2,14 +2,28 @@ import { h } from 'preact';
 import Form from './Form.jsx';
 
 
-export default function SearchResultMarkup({ count, changeShown, state, search, selectedYear, updateFilter, shown }) {
-  const { results } = state;
-  const departments = results.map((item) => {
+export default function SearchResultMarkup({ state, updateItem, page, province, results, search, selectedYear, updateFilter }) {
+
+  const preDepartments = results.filter((item) => {
     const provSlugIndex = item.extras.findIndex(
       (data) => {
         return data.key === 'geographic_region_slug';
       },
     );
+
+    const provSlug = item.extras[provSlugIndex].value;
+
+    return province === 'all' || province === provSlug;
+  });
+
+  const departments = preDepartments.map((item) => {
+    const provSlugIndex = item.extras.findIndex(
+      (data) => {
+        return data.key === 'geographic_region_slug';
+      },
+    );
+
+    const provSlug = item.extras[provSlugIndex].value;
 
     const nameSlugIndex = item.extras.findIndex(
       (data) => {
@@ -17,38 +31,23 @@ export default function SearchResultMarkup({ count, changeShown, state, search, 
       },
     );
 
-    const provSlug = item.extras[provSlugIndex].value;
     const nameSlug = item.extras[nameSlugIndex].value;
     const departmentType = item.province.length > 0 ? item.province : 'National';
+
     const url = item.province.length > 0 ? `/${selectedYear}/provincial/${provSlug}/departments/${nameSlug}` : `/${selectedYear}/national/departments/${nameSlug}`;
 
-    if (
-      state.province === 'all' ||
-      state.province === provSlug
-    ) {
-      return (
-        <a href={url} className="SearchResult-link">
-          {departmentType} Department: {item.extras[0].value}
-        </a>
-      );
-    }
-
-    return null;
+    return (
+      <a href={url} className="SearchResult-link">
+        {departmentType} Department: {item.extras[0].value}
+      </a>
+    );
   });
 
-  const newShown = count < 4 ? count : shown;
+  const pages = Math.ceil(departments.length / 10);
 
   const extra = (
     <span className="SearchResult-countWrap">
-      <span>Showing </span>
-      <input
-        className="SearchResult-count"
-        type="number"
-        max={count}
-        value={newShown}
-        onInput={event => changeShown(event.target.value)}
-      />
-      <span> of {count}</span>
+      <span>Page {page} of {pages}</span>
     </span>
   );
 
@@ -61,10 +60,15 @@ export default function SearchResultMarkup({ count, changeShown, state, search, 
       </div>
 
       <div className="SearchResult-group">
-        <div className="SearchResult-title">Suggested Departments{ count ? extra : ''}</div>
+        <div className="SearchResult-title">Suggested Departments{ departments ? extra : ''}</div>
         <div className="SearchResult-list">
-          {departments}
+          {departments.splice((page * 10) - 10, 10)}
         </div>
+      </div>
+
+      <div className="SearchResult-pageWrap">
+        {page <= 1 ? null : <button onClick={() => updateItem('page', page - 1)} className="SearchResult-prev">Previous Page</button>}
+        {page >= pages ? null : <button onClick={() => updateItem('page', page + 1)} className="SearchResult-next">Next Page</button>}
       </div>
     </div>
   );

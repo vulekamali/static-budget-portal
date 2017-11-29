@@ -2,11 +2,18 @@
 layout: base
 ---
 
+{% if page.sphere == "national" %}
+{% assign page_data = site.data[page.financial_year][page.sphere].departments[page.department_slug] %}
+{% else %}
+{% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.department_slug] %}
+{% endif %}
+
+
 <div class="Page">
   <header class="Page-header">
     <h1 class="u-sReadOnly">Static Budget Portal</h1>
-    {% include components/YearSelect/index.html years=page.years %}
-    {% include components/Search/index.html year=page.financial_year%}
+    {% include components/YearSelect/index.html years=page.years dynamic=page_data.financial_years %}
+    {% include components/Search/index.html year=page.financial_year %}
     {% include components/NavBar/index.html navbar=page.navbar %}
   </header>
   <div class="Page-content">

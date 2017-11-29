@@ -1,25 +1,37 @@
 @function z-index($name) {
-  @if $name == YearSelect-bar {
-    @return 40;
-  }
-
-  @if $name == SearchResult-item {
+  @if $name == 'DeptSearch-select' {
     @return 10;
   }
 
-  @if $name == DeptSearch-select {
+  @if $name == 'SearchResult-item' {
     @return 10;
   }
 
-  @if $name == Search-wrap {
+  @if $name == 'PseudoSelect' {
+    @return 10;
+  }
+
+  @if $name == 'PseudoSelect is-open' {
+    @return 20;
+  }
+
+  @if $name == 'Search-wrap' {
     @return 30;
   }
 
-  @if $name == Tooltip-boxWrap {
+  @if $name == 'Tooltip-boxWrap' {
     @return 40;
   }
 
-  @if $name == Intro-alert {
+  @if $name == 'YearSelect-bar' {
     @return 50;
+  }
+
+  @if $name == 'Intro-alert' {
+    @return 60;
+  }
+
+  @if $name == 'Tooltip-boxWrap is-important' {
+    @return 70;
   }
 }

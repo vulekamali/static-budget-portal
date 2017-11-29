@@ -54,7 +54,7 @@
 
 .SearchResult-item {
   background: white;
-  z-index: z-index(SearchResult-item);
+  z-index: z-index('SearchResult-item');
   cursor: pointer;
   padding: 9px 13px;
   font-size: 14px;
@@ -139,4 +139,35 @@
 
 .SearchResult-filter {
   min-width: 150px;
+}
+
+.SearchResult-pageWrap {
+  @include clearfix;
+  padding: 20px;
+}
+
+.SearchResult-prev {
+  float: left;
+  padding: 10px 20px;
+  border-radius: 3px;
+  background-color: #d2d2d2;
+  border: solid 1px #979797;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(#d2d2d2, 10%);
+  }
+}
+
+.SearchResult-next {
+  float: right;
+  padding: 10px 20px;
+  border-radius: 3px;
+  background-color: #d2d2d2;
+  border: solid 1px #979797;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(#d2d2d2, 10%);
+  }
 }
