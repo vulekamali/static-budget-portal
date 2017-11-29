@@ -67,7 +67,7 @@
   display: none;
 
   .DeptSearch-select.is-open & {
-    z-index: z-index(DeptSearch-select);
+    z-index: z-index('DeptSearch-select');
     display: table-row;
   }
 
