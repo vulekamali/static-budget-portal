@@ -115,6 +115,7 @@ export default class SearchContainer extends Component {
         selectedYear={this.props.selectedYear}
         error={this.state.error}
         initRequest={this.initRequest}
+        search={this.props.search}
       />
     );
   }
