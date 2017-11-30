@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import Icon from './Icon.jsx';
+import analyticsEvents from './../../../utilities/js/helpers/analyticsEvent.js';
 
 
 export default function Form({ eventHandlers, keywords, selectedYear }) {
@@ -7,7 +8,17 @@ export default function Form({ eventHandlers, keywords, selectedYear }) {
 
   const updateKeyword = event => initRequest(event.target.value);
   const addFocus = () => setFocus(true);
-  const removeFocus = () => setFocus(false);
+  const removeFocus = () => {
+    analyticsEvents(
+      'send',
+      'event',
+      'search',
+      'unfocus',
+      `${selectedYear}: ${keywords}`,
+    );
+
+    return setFocus(false);
+  };
   const searchUrl = `/${selectedYear}/search-result`;
 
   return (
@@ -24,7 +35,17 @@ export default function Form({ eventHandlers, keywords, selectedYear }) {
       />
 
       <div className="Search-action">
-        <button className="Search-button" type="submit">
+        <button
+          className="Search-button"
+          type="submit"
+          onClick={() => analyticsEvents(
+            'send',
+            'event',
+            'search',
+            'full-search',
+            `${selectedYear}: ${keywords}`,
+          )}
+        >
           <Icon />
         </button>
       </div>
