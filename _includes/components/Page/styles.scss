@@ -74,6 +74,13 @@
   padding-top: 25px;
 }
 
+.Page-highlightable:target {
+  border-radius: 5px;
+  padding: 20px 99px 20px 20px;
+  position: relative;
+  left: -20px;
+  background-color: lighten(#2fb544, 40%);
+}
 
 .Page-bodyText {
   a {
@@ -85,6 +92,7 @@
     font-weight: bold;
   }
 
+  .Page-highlightable + h3,
   ol + h3,
   ul + h3,
   p + h3 {

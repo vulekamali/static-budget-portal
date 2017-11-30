@@ -73,7 +73,7 @@ export default function SearchResultMarkup({ loading, error, state, updateItem, 
           {!loading && preDepartments.length > 0 ? departments.splice((page * 10) - 10, 10) : null}
           {!loading && preDepartments.length < 1 ?
             <div>
-              <span>We didn&#8217;t find anything for &#8217;{ search }&#8217;.</span>
+              <span>We didn&#8217;t find anything for &#8217;{ search }&#8217;. </span>
               <a href={`/${selectedYear}/departments`}>View a list of all departments</a>
             </div> :
             null
