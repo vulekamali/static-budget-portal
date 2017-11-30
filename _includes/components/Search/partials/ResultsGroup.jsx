@@ -2,7 +2,7 @@ import { h } from 'preact';
 import Loading from './Loading.jsx';
 
 
-export default function ResultsGroups({ search, initRequest, error, results, loading, selectedYear, count }) {
+export default function ResultsGroups({ search, initRequest, keywords, error, results, loading, selectedYear, count }) {
   const buildList = () => {
     if (error) {
       return (
@@ -18,7 +18,7 @@ export default function ResultsGroups({ search, initRequest, error, results, loa
       return (
         <ul className="Search-list">
           <li className="Search-error">
-            <span>We didn&#8217;t find anything for &#8217;{ search }&#8217;. </span>
+            <span>We didn&#8217;t find anything for &#8217;{ keywords }&#8217;. </span>
             <a href={`/${selectedYear}/departments`}>View a list of all departments</a>
           </li>
         </ul>
