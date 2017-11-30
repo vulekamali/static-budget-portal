@@ -18,7 +18,7 @@ layout: page-shell
     {% endif %}
 
     {% for narrative in page_data.narratives %}
-      <div class="Page-blurb"><strong>{{ narrative.name | capitalize }}:</strong> {{ narrative.content | capitalize | markdownify }}</div>
+      <div class="Page-blurb"><strong>{{ narrative.name | capitalize }}:</strong> {{ narrative.content  | markdownify }}</div>
     {% endfor %}
 
     <div class="Page-section">
