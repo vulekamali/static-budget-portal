@@ -27,14 +27,38 @@ government:
   name: Northern Cape
   slug: northern-cape
 name: Roads and Public Works
-narrative: {}
+narratives:
+- content: "Trendsetters in infrastructure delivery to change the economic landscape\
+    \ of the Province.\r\n\r\n"
+  name: Vision
+- content: "* To provide and maintain all provincial land, buildings and road infrastructure\
+    \ in an integrated and sustainable manner.\r\n\r\n* The mission will be promoted\
+    \ through mission statements per programme which are as follow:\r\n\r\n* To promote\
+    \ and support good governance in the department;\r\n\r\n* Meet the accommodation\
+    \ and other specific needs of the provincial departments;\r\n\r\n* Provide and\
+    \ maintain integrated road infrastructure that is safe and functional to support\
+    \ social and economic development;\r\n\r\n* Alleviate poverty and create job opportunities\r\
+    \n\r\n\r\n"
+  name: Mission
+- content: "* Road Construction, Maintenance and Repairs \u2013 The construction of\
+    \ new roads, maintenance of existing roads and the repair of damaged roads and\
+    \ related structures.\r\n\r\n* Strategic Planning and development - The development\
+    \ of integrated provincial transport and development plans, as well as departmental\
+    \ policies and procedures\r\n\r\n* Public works - Provide and maintain functional\
+    \ and accessible buildings, facilities management services and office accommodation\
+    \ according to the identified needs of provincial departments through planning,\
+    \ design and maintenance of safe and cost effective projects and buildings\r\n\
+    \r\n* Community based programme \u2013 The intervention in the infrastructure\
+    \ sector involves increasing the labour intensity of government-funded infrastructure\
+    \ projects."
+  name: Core functions and responsibilities of the department
 resources:
   'EPRE for Vote 05 : Roads and Public Works':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/abba20a6-e953-4a01-bc63-4ee4f68be457/resource/4f1cdc5f-87f8-4285-9854-5629460cbb25/download/nc-roads-and-public-works.xlsm
+      url: https://budgetdata.openup.org.za/dataset/abba20a6-e953-4a01-bc63-4ee4f68be457/resource/4f1cdc5f-87f8-4285-9854-5629460cbb25/download/nc-roads-and-public-works.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 05 - Roads & Public Works.pdf

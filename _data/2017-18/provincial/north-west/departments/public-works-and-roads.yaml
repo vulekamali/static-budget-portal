@@ -27,14 +27,45 @@ government:
   name: North West
   slug: north-west
 name: Public Works and Roads
-narrative: {}
+narratives:
+- content: "Delivery and maintenance of quality infrastructure for sustainable growth\
+    \ and development.\r\n\r\n"
+  name: Vision
+- content: "To provide quality provincial infrastructure and ensure better service\
+    \ delivery.\r\n\r\n"
+  name: Mission
+- content: "Implementation of maintenance activities, routine, scheduled conditions\
+    \ assessment of all buildings and other fixed structures;\r\n\r\n* To manage the\
+    \ property portfolio of the province including the establishment and management\
+    \ of the provincial strategic and infrastructure plan;\r\n\r\n* To manage the\
+    \ operations of buildings including facilities management, cleaning, greening,\
+    \ beautification, interior decoration and designs as well as day to day preventative\
+    \ maintenance of electronic, electrical and mechanical equipment for all services\
+    \ related to managing a building;\r\n\r\n* To promote accessibility support and\
+    \ the safe, affordable movement of people, goods and services through the delivery\
+    \ and maintenance of transport infrastructure that is sustainable, integrated\
+    \ and environmentally sensitive, and which supports and facilitates social empowerment\
+    \ and economic growth;\r\n\r\nDepartment of Public Works and RoadsVote 11To be\
+    \ appropriated by Vote in 2017/18R 2 895 063 000Direct ChargeNot ApplicableResponsible\
+    \ MECMEC for Public Works and RoadsAdministrating DepartmentDepartment of Public\
+    \ Works and RoadsAccounting OfficerDeputy Director General for Public Works and\
+    \ Roads\r\n\r\nTo develop new, re-construct, upgrade and rehabilitate and maintain\
+    \ road and transport infrastructure;\r\n\r\n* To plan, regulate and facilitate\
+    \ the provision of integrated land transport services through co-ordination and\
+    \ co-operation with national planning authorities and the private sector in order\
+    \ to enhance the mobility of all communities particularly those currently without\
+    \ or with limited access;\r\n\r\n* To manage the implementation of programmes\
+    \ and strategies that lead to the development and empowerment of communities and\
+    \ contractors. This includes the provincial management and co-ordination of the\
+    \ Expanded Public Works Programme"
+  name: Core functions
 resources:
   'EPRE for Vote 11 : Public Works and Roads':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/1316bf88-c2dc-4ee0-b025-bf612740a27e/resource/f66ca3b6-0c61-45c8-806d-00f387a3e1c1/download/nw-public-works-and-roads.xlsm
+      url: https://budgetdata.openup.org.za/dataset/1316bf88-c2dc-4ee0-b025-bf612740a27e/resource/f66ca3b6-0c61-45c8-806d-00f387a3e1c1/download/nw-public-works-and-roads.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 11 - Public Works and Roads.pdf

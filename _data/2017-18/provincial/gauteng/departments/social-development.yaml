@@ -27,14 +27,38 @@ government:
   name: Gauteng
   slug: gauteng
 name: Social Development
-narrative: {}
+narratives:
+- content: "A caring and self reliat society.\r\n\r\n"
+  name: Vision
+- content: "To transform our society by building conscious and capable citizens through\
+    \ the provision of intergrated social development services\r\n\r\n"
+  name: Mission
+- content: "* Rendering management and administration to the network of social development\
+    \ services withing Gauteng.\r\n\r\n* Provision, in particular with relevant stakeholder,\
+    \ of prevention,early intervention,rehabilitation and after-care services to people\
+    \ abusing substances;\r\n\r\n* Provision of community and home-based cae,residential\
+    \ and all other protection services for the frail,vulnerable older persons at\
+    \ risk,and people withdisabilities;\r\n\r\n* Provision of secure care facilities,home-based\
+    \ services,and assesssment and referral services for childrenfound to be in conflict\
+    \ with the law;\r\n\r\n* Provision of servicesfor children through the constuction\
+    \ and funding of Early Childhood Development(ECD) facilities throughout the province;\r\
+    \n\r\n* Provision of child care and protection services and implementation of\
+    \ the Children's Act;\r\n\r\n* Provision of shelters and counselling services\
+    \ for women and children who are victims of domestic violence and abuse;\r\n\r\
+    \n* Provision, through home and community-based care (HCBC) centres,of psycho-social\
+    \ support services to people who are infected and affected by HIV and AIDS,especially\
+    \ orphans and vulnerable children;\r\n\r\n* Provision of reunification and preservation\
+    \ services for familie;and\r\n\r\n* Provision of youth development and sustainable\
+    \ livelihood services to poor households through the implementation of the War\
+    \ on Poverty (WoP) programme."
+  name: Core functions
 resources:
   'EPRE for Vote 06 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/b685197f-412e-4260-839f-9d327d0e0fe5/resource/d301815b-5d05-4f71-afb6-a6ab316a5f8d/download/gt-social-development.xlsm
+      url: https://budgetdata.openup.org.za/dataset/b685197f-412e-4260-839f-9d327d0e0fe5/resource/d301815b-5d05-4f71-afb6-a6ab316a5f8d/download/gt-social-development.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 06 - Social Development.pdf

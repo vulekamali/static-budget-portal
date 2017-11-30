@@ -27,14 +27,29 @@ government:
   name: Eastern Cape
   slug: eastern-cape
 name: Social Development
-narrative: {}
+narratives:
+- content: "A caring society for the protection and development of the poor and vulnerable\
+    \ towards a sustainable\r\nsociety.\r\n\r\n"
+  name: Vision
+- content: "To transform our society by building conscious and capable citizens through\
+    \ the provision of integrated\r\nsocial development services.\r\n\r\n"
+  name: Mission
+- content: "To provide community development and services to individuals, families,\
+    \ groups and communities by:\r\n\r\n* Mitigating the negative effects of social\
+    \ risks (disability, substance abuse, HIV & AIDS, crime\r\nprevention and support);\r\
+    \n\r\n* Empowering communities to participate in their own development, through\
+    \ sustainable livelihoods\r\nprogrammes, youth entrepreneurship development programmes\
+    \ and institutional capacity building\r\nand support; and\r\n\r\n* Facilitating,\
+    \ monitoring and evaluating the mainstreaming of gender, disability, children,\
+    \ and elderly\r\nperson\u2019s rights in departmental programmes"
+  name: Core functions and responsibilities
 resources:
   'EPRE for Vote 04 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/46b6575d-c03e-4f3c-aca5-0f582c13748c/resource/e67de700-0366-4b71-aae5-24020bd6d0af/download/ec-social-development.xlsx
+      url: https://budgetdata.openup.org.za/dataset/46b6575d-c03e-4f3c-aca5-0f582c13748c/resource/e67de700-0366-4b71-aae5-24020bd6d0af/download/ec-social-development.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 04 - Social Development.pdf

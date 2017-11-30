@@ -27,14 +27,21 @@ government:
   name: Free State
   slug: free-state
 name: Education
-narrative: {}
+narratives:
+- content: "To be a department that strives to ensure progressive realization of universal\
+    \ schooling, improving quality of education and eliminating disparities amongst\
+    \ Free State citizens.\r\n\r\n"
+  name: Vision
+- content: "To provide an education system that is free, compulsory,universal and\
+    \ equal for all children of the Free State Province\r\n\r\n\r\n\r\n"
+  name: Mission
 resources:
   'EPRE for Vote 06 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/51d1755c-7cb8-4bd5-93f0-f67ac9ac81ba/resource/ffc36b65-09ae-4797-aade-4f7eb3c035d7/download/fs-education.xlsx
+      url: https://budgetdata.openup.org.za/dataset/51d1755c-7cb8-4bd5-93f0-f67ac9ac81ba/resource/ffc36b65-09ae-4797-aade-4f7eb3c035d7/download/fs-education.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 06 - Education.pdf

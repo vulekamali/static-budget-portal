@@ -27,14 +27,30 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Public Works
-narrative: {}
+narratives:
+- content: "The department\u2019s vision is: An inclusive economy through sustainable\
+    \ infrastructure development and property management.\r\n\r\n"
+  name: Vision
+- content: "The department\u2019s mission is: To improve the life of the people in\
+    \ KwaZulu-Natal through sustainable infrastructure development and property management.\r\
+    \n\r\n"
+  name: Mission
+- content: "In carrying out its mandate, the department undertakes the following core\
+    \ functions:\r\n\r\n* The acquisition of public buildings and land.\r\n\r\n* The\
+    \ construction of public buildings, involving the physical erection or major improvements\
+    \ in respect of infrastructure in the building environment.\r\n\r\n* The maintenance\
+    \ of public buildings and land, including performing the necessary work to keep\
+    \ the required level of operation and the payment of property rates.\r\n\r\n*\
+    \ The alienation of public buildings and land, including the disposal of fixed\
+    \ assets by selling, demolition, exchanging and donation."
+  name: Core functions
 resources:
   'EPRE for Vote 14 : Public Works':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/9417b57e-1f82-4750-acc0-efee2825209d/resource/4dba695e-9148-42e4-9f9f-01e1282751ad/download/kzn-public-works.xlsm
+      url: https://budgetdata.openup.org.za/dataset/9417b57e-1f82-4750-acc0-efee2825209d/resource/4dba695e-9148-42e4-9f9f-01e1282751ad/download/kzn-public-works.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 14 - Public Works.pdf

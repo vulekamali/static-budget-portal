@@ -27,14 +27,30 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Community Safety and Liaison
-narrative: {}
+narratives:
+- content: "The department\u2019s vision is to see that: The people of KwaZulu-Natal\
+    \ live in a safe and secure environment\r\n\r\n"
+  name: Vision
+- content: "The mission set for the department is: To be the lead department in co-ordinating\
+    \ integrated, participatory community safety initiatives and promoting police\
+    \ accountability towards a crime free KwaZulu-Natal.\r\n\r\n"
+  name: Mission
+- content: "The provincial department is responsible for the following functions in\
+    \ line with the effective implementation of the Civilian Secretariat for Police\
+    \ Services Act, 2011:\r\n\r\n* Promoting democratic accountability and transparency\
+    \ in the police service.\r\n\r\n* Promoting good relations and establishing partnerships\
+    \ between the police and communities.\r\n\r\n* Directing the SAPS toward effectively\
+    \ addressing provincial needs and priorities.\r\n\r\n* Facilitating the development\
+    \ and co-ordination of social crime prevention initiatives.\r\n\r\n* Promoting\
+    \ and supporting victim empowerment\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 09 : Community Safety and Liaison':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/ec9a427c-38c8-46f5-9b9b-673d0f97b921/resource/1226b5bc-ff8d-4c7a-8170-a0d25950fa73/download/kzn-com-safety-and-lia.xlsm
+      url: https://budgetdata.openup.org.za/dataset/ec9a427c-38c8-46f5-9b9b-673d0f97b921/resource/1226b5bc-ff8d-4c7a-8170-a0d25950fa73/download/kzn-com-safety-and-lia.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 09 - Community Safety.pdf

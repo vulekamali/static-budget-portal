@@ -27,14 +27,36 @@ government:
   name: Eastern Cape
   slug: eastern-cape
 name: Social Development
-narrative: {}
+narratives:
+- content: "a caring society for the protection and development of the poor and vulnerable\
+    \ towrds a sustainable society\r\n\r\n\r\n\r\n"
+  name: vision
+- content: "to tranform our society by building conscious and capable citizens throught\
+    \ the provision of intergrated\r\nsocial development services with families atte\
+    \ the core of social change\r\n\r\n\r\n\r\n"
+  name: mission
+- content: "to provided community development and services to individuals, families,\
+    \ groups and communnities by:\r\n\r\n* partnering with national department of\
+    \ social development, community nutritional development\r\ncenters implemented\
+    \ in poverty pockets of the province where households have no access to\r\nsufficient\
+    \ food;\r\n\r\n* forming household food gardens will be used as the intervention\
+    \ strategy to address the short and \r\nmedium term challenges of hunger and mainutrition\r\
+    \n\r\n* capacitating funded Non- Profit organisation (NPO'S) and Cooperatives\r\
+    \n\r\n* assisting non-complying NPO's with the development and submission of financial\
+    \ and annual reports\r\n\r\n* focusing on youth development structures. National\
+    \ Youth Servic (NYS) programme, skills\r\ndevelopment, entreperneurship development\
+    \ and youth mobilsation ; and\r\n\r\n* prioritising the funding for full implementaion\
+    \ of the woman development resource center for skills\r\ndevelopment as one of\
+    \ the strategies to empower woman with various skills as a contribution towards\
+    \ job creation and\r\nreducing high unemployment levels\r\n\r\n"
+  name: core fucntions and responsabilities
 resources:
   'EPRE for Vote 04 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/79a1ec84-ad48-4f33-9331-06a7fbca1fd3/resource/b566eaa2-09a9-4163-8175-098bb7dc1170/download/ec-social-development.xlsm
+      url: https://budgetdata.openup.org.za/dataset/79a1ec84-ad48-4f33-9331-06a7fbca1fd3/resource/b566eaa2-09a9-4163-8175-098bb7dc1170/download/ec-social-development.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 04 - Social Development.pdf

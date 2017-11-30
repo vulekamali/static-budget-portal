@@ -27,14 +27,32 @@ government:
   name: North West
   slug: north-west
 name: Office of the Premier
-narrative: {}
+narratives:
+- content: "The vision of Office of the Premier is \u201CA united, non-racial, non-sexist,\
+    \ democratic and prosperous citizenry in the Province\u201D.\r\n\r\n"
+  name: Vision
+- content: "The mission of Office of the Premier is to work with partners in order\
+    \ to:\r\n\r\n* Improve government performance in achieving the desired outcomes;\r\
+    \n\r\n* Improve service delivery through changing the way government works; and\r\
+    \n\r\n* Rebrand, Reposition and Renew Bokone Bophirima Province through the five\
+    \ concretes namely; Agriculture, Culture and Tourism (ACT), Villages, Townships\
+    \ and Small Dorpies (VTSD), Reconciliation, Healing and Renewal (RHR), Setsokotsane,\
+    \ as well as Saamtrek-Saamwerk Philosophy.\r\n\r\n"
+  name: Mission
+- content: "In order to ensure alignment with national and provincial priorities and\
+    \ address the weaknesses identified in service delivery, the role of Office of\
+    \ the Premier have been identified as follows:\r\n\r\n* To render administrative\
+    \ and secretarial support to the Executive Council structures;\r\n\r\n* Formulation\
+    \ and review of Provincial policies; and\r\n\r\n* To coordinate Provincial planning\
+    \ and knowledge management"
+  name: Core Functions
 resources:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/d9421d7d-1cc2-4a87-929e-d4692a37bd95/resource/b8a19194-df29-449f-8c21-a672b23960ef/download/nw-office-of-the-premier.xlsm
+      url: https://budgetdata.openup.org.za/dataset/d9421d7d-1cc2-4a87-929e-d4692a37bd95/resource/b8a19194-df29-449f-8c21-a672b23960ef/download/nw-office-of-the-premier.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 01 - Office of The Premier.pdf

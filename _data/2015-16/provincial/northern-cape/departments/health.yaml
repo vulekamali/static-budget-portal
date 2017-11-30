@@ -27,14 +27,31 @@ government:
   name: Northern Cape
   slug: northern-cape
 name: Health
-narrative: {}
+narratives:
+- content: "Health service excellence for all.\r\n\r\n"
+  name: Vision
+- content: "Working together, we are committed to provide quality health care services\
+    \ and promote a healthy society. Our caring, multi- skilled professionals will\
+    \ integrate comprehensive services using evidence-based strategies and partnerships\
+    \ to maximise efficiencies for the benefit of all.\r\n\r\n"
+  name: Mission
+- content: "The department\u2019s core function is the provision of health care, which\
+    \ focuses mainly on the District Health System, based on the Primary Health Care\
+    \ Approach. Health care services are provided at a primary, secondary and tertiary\
+    \ level.\r\n\r\nPrimary health care service is achieved through clinics, community\
+    \ health centres and district hospitals. Secondary health care services are available\
+    \ at Dr Harry Surtie Hospital. Kimberley Hospital provides almost the complete\
+    \ range of tertiary health care services. In addition, the department further\
+    \ fund the training of student nurses, as well as a range of post diploma qualifications\
+    \ in clinical, through the Henrietta Stockdale Nursing College."
+  name: Core functions
 resources:
   'EPRE for Vote 10 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/f477abd9-b8c5-43a9-84dd-4ea95e6dfa66/resource/331b8299-7e36-43bc-bf68-5d0568be7354/download/nc-health.xlsx
+      url: https://budgetdata.openup.org.za/dataset/f477abd9-b8c5-43a9-84dd-4ea95e6dfa66/resource/331b8299-7e36-43bc-bf68-5d0568be7354/download/nc-health.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 10 - Health.pdf

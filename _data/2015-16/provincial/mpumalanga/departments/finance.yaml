@@ -27,7 +27,15 @@ government:
   name: Mpumalanga
   slug: mpumalanga
 name: Finance
-narrative: {}
+narratives:
+- content: "A dynamic Provincial Treasury leading in service excellence.\r\n\r\n"
+  name: Vision
+- content: "The equitable allocation and optimal utilization of provincial resources\
+    \ to ensure a quality and better life for all through:\r\n\r\n* Quality financial\
+    \ advice and support to departments, public entities and municipalities.\r\n\r\
+    \n* Efficient financial management and fiscal discipline.\r\n\r\n* Effective monitoring\
+    \ of resource utilization."
+  name: Mission
 resources:
   'EPRE for Vote 03 : Finance':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
@@ -37,6 +45,6 @@ resources:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 03 - Finance.pdf
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/0627b978-2baf-49aa-92ab-cf381b9f9907/resource/25bf0acd-7992-4fac-aaf6-9d0e36117f35/download/mpu-finance.xlsx
+      url: https://budgetdata.openup.org.za/dataset/0627b978-2baf-49aa-92ab-cf381b9f9907/resource/25bf0acd-7992-4fac-aaf6-9d0e36117f35/download/mpu-finance.xlsx
 slug: finance
 vote_number: 3

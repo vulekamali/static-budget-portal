@@ -27,14 +27,36 @@ government:
   name: Mpumalanga
   slug: mpumalanga
 name: Office of the Premier
-narrative: {}
+narratives:
+- content: "A strategic centre of excellence for effective and efficient governance.\r\
+    \n\r\n"
+  name: Vision
+- content: "Provide strategic direction and support evidence based decision making\
+    \ through research,\r\nM&E, integrated planning, coordination of Government programmes\
+    \ and institutional\r\ndevelopment.\r\n\r\n"
+  name: Mission
+- content: "The core functions and responsibilities for the Office of the Premier\
+    \ are, inter alia:\r\n\r\n* Support the Premier in executing the Executive functions\
+    \ of the Province to achieve\r\nintegrated social development and economic growth;\r\
+    \n\r\n* Support the Executive decision-making processes of the Premier in Executive\
+    \ Council to\r\ninculcate good governance and effective public service delivery;\r\
+    \n\r\n* Monitor and evaluate performance of all Provincial Executive functions\
+    \ and strategic\r\nprogrammes for Provincial growth and development to enable\
+    \ the Premier to be\r\naccountable for the overall executive performance of the\
+    \ Province.\r\n\r\n* Coordinate strategic alignment and integration of sectorial\
+    \ and sub-sectorial strategies,policies and programmes to facilitate social transformation\
+    \ and development and\r\neconomic growth.\r\n\r\n* Support the Premier to implement\
+    \ Provincial Public Service Transformation, reform and\r\nservice delivery improvement\
+    \ to build the capability of the Provincial Government to fulfil its Constitutional\
+    \ obligations"
+  name: Core functions
 resources:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/2502624d-fc77-4d0d-9beb-5f8d0796ae20/resource/bfe1ffb6-608e-4606-82ce-3e0141822b4e/download/mpu-office-of-the-premier.xlsm
+      url: https://budgetdata.openup.org.za/dataset/2502624d-fc77-4d0d-9beb-5f8d0796ae20/resource/bfe1ffb6-608e-4606-82ce-3e0141822b4e/download/mpu-office-of-the-premier.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 01 - Office of the Premier.pdf

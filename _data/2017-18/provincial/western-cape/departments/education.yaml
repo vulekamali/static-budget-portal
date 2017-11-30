@@ -27,14 +27,34 @@ government:
   name: Western Cape
   slug: western-cape
 name: Education
-narrative: {}
+narratives:
+- content: "Creating opportunity for all through improved education outcomes.\r\n\r\
+    \nThis is given expression through the three over-arching goals:\r\n\r\n* An improvement\
+    \ in the level of language and mathematics in all schools\r\n\r\n* An increase\
+    \ in the number and quality of passes in the National Senior Certificate\r\n\r\
+    \n* An increase in the quality of education provision in poorer communities\r\n\
+    \r\n"
+  name: Vision
+- content: "To provide quality education to all learners in the province through the\
+    \ following:\r\n\r\n* Overall planning for, and management of, the education system;\r\
+    \n\r\n* Education in public ordinary schools;\r\n\r\n* Support to independent\
+    \ schools;\r\n\r\n* Education in public special schools;\r\n\r\n* Early Childhood\
+    \ Development (ECD) in Grade R;\r\n\r\n* Training opportunities for teachers;\r\
+    \n\r\n* A targeted feeding programme and other poverty alleviation and safety\
+    \ measures; and\r\n\r\n* Support to teachers through provision of basic conditions\
+    \ of service, incentives and an  employee wellness programme.\r\n\r\n"
+  name: Mission
+- content: "*Curriculum and Assessment support.\r\n\r\n*Administrative and financial\
+    \ support systems.\r\n\r\n*Institutional development and support systems, structures\
+    \ and programmes\r\n\r\n"
+  name: Main Services and Core functions
 resources:
   'EPRE for Vote 05 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/1cd486b7-91ad-400d-8508-74bf802ffdac/resource/69aa72f7-358a-4fa8-8dc1-a6eee2dbb8dc/download/wc-education.xlsm
+      url: https://budgetdata.openup.org.za/dataset/1cd486b7-91ad-400d-8508-74bf802ffdac/resource/69aa72f7-358a-4fa8-8dc1-a6eee2dbb8dc/download/wc-education.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 05 - Education.pdf

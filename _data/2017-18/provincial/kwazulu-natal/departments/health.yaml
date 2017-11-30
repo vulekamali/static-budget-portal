@@ -27,14 +27,57 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Health
-narrative: {}
+narratives:
+- content: "The vision of the Department of Health is: Optimal health for all persons\
+    \ in KwaZulu-Natal.\r\n\r\n"
+  name: Vision
+- content: "The department\u2019s mission statement is: To develop and implement a\
+    \ sustainable, co-ordinated, integrated and comprehensive health system at all\
+    \ levels, based on the primary health care approach through the district health\
+    \ system, to ensure universal access to health care.\r\n\r\n"
+  name: Mission
+- content: "The main purpose of the department is to develop and implement a sustainable,\
+    \ co-ordinated, integrated and comprehensive health system based on the primary\
+    \ health care approach, which encompasses promotive, curative, rehabilitative,\
+    \ supportive and palliative care. This is guided by the principles of accessibility,\
+    \ equity, quality and efficiency, sustainability, community participation, appropriate\
+    \ technology, and inter-governmental and inter-sectoral collaboration.\r\n\r\n\
+    The department provides health services primarily to the uninsured population\
+    \ of KZN, who comprise about 87.5 per cent of the province\u2019s total population\
+    \ of 10 919 077 (2015 Mid-Year Population Estimates, Stats SA). In addition, the\
+    \ department provides central health services to people beyond provincial boundaries.\
+    \ The main categories of health services provided by the department are as follows:\r\
+    \nEstimates of Provincial Revenue and Expenditure\r\n\r\nPrimary health care services\r\
+    \nPrimary health care services are rendered at community/household level by community\
+    \ outreach teams\r\nand mobile clinics and in fixed clinics and community health\
+    \ centres. Services include health promotion\r\nand prevention, screening and\
+    \ early detection of health conditions or risk factors, referral and curative\
+    \ and\r\nrehabilitative services.\r\n\r\nHospital services\r\nDistrict hospitals\
+    \ render hospital services at a general practitioner level, while provincial hospitals\
+    \ render\r\nhospital services at a specialist level. District hospitals provide\
+    \ clinical outreach services to primary health care (PHC) clinics. Specialised\
+    \ hospitals render specialised hospital services for patients with TB,\r\npsychiatric\
+    \ illnesses and those patients requiring long-term or chronic step-down/rehabilitative\
+    \ care.\r\n\r\nTertiary and central hospitals render tertiary, central and quaternary\
+    \ hospital services at specialist level.\r\n\r\nTertiary and central hospitals\
+    \ also provide clinical outreach services to provincial and district hospitals\
+    \ and\r\nparticipate in research to improve evidence-based practice.\r\n\r\nForensic\
+    \ pathology services\r\nThis category renders specialised forensic and medico-legal\
+    \ services including establishing the\r\ncircumstances and causes surrounding\
+    \ unnatural death, ensuring the integrity of forensic evidence and\r\nproviding\
+    \ an Inspector of Anatomy Services.\r\n\r\nEmergency medical services\r\nThis\
+    \ category renders emergency care for trauma patients including patients from\
+    \ road traffic accidents,\r\nand provides emergency transport for emergency medical\
+    \ and obstetric patients. Planned patient transport\r\nis provided for inter-hospital\
+    \ transfer, while indigent patients are transported between clinics and hospitals."
+  name: Core functions
 resources:
   'EPRE for Vote 07 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/82f0fc2b-173f-4e54-921d-20adb421655b/resource/99772b6c-a325-468e-a8da-d4b75ac27fd4/download/kzn-health.xlsm
+      url: https://budgetdata.openup.org.za/dataset/82f0fc2b-173f-4e54-921d-20adb421655b/resource/99772b6c-a325-468e-a8da-d4b75ac27fd4/download/kzn-health.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 07 - Health.pdf

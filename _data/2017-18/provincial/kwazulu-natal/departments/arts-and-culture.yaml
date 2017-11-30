@@ -27,14 +27,25 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Arts and Culture
-narrative: {}
+narratives:
+- content: "The vision of the department is: Prosperity and social cohesion through\
+    \ arts, culture and heritage.\r\n\r\n"
+  name: Vision
+- content: "The department\u2019s mission is to Provide integrated arts and culture\
+    \ services for the people of KwaZulu-Natal by developing and promoting arts and\
+    \ culture in the province and mainstreaming its role in socio-economic development.\r\
+    \n\r\n"
+  name: Mission
+- content: The core functions of the department encompass the development and promotion
+    of arts, culture, museum, archive and library services.
+  name: Core functions
 resources:
   'EPRE for Vote 15 : Arts and Culture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/b75d31f8-d37a-4035-8b99-86a5f183f303/resource/20b8d965-c376-4f8c-a55c-5a5c5a23d013/download/kzn-arts-and-culture.xlsm
+      url: https://budgetdata.openup.org.za/dataset/b75d31f8-d37a-4035-8b99-86a5f183f303/resource/20b8d965-c376-4f8c-a55c-5a5c5a23d013/download/kzn-arts-and-culture.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 15 - Arts and Culture.pdf

@@ -27,14 +27,29 @@ government:
   name: Western Cape
   slug: western-cape
 name: Environmental Affairs and Development Planning
-narrative: {}
+narratives:
+- content: "A resilient, sustainable, quality and inclusive living environment.\r\n\
+    \r\n"
+  name: Vision
+- content: "To promote a resilient, sustainable, quality and inclusive living environment\
+    \ in support of human well-being.\r\n\r\n"
+  name: Mission
+- content: "The core functions of the Department of Environmental Affairs and Development\
+    \ Planning are to promote\r\nsustainable economic development and social equity\
+    \ by upholding the environmental integrity of the\r\nWestern Cape. This will be\
+    \ achieved through:\r\n\r\n* Ensuring cohesive and integrated environmental governance\
+    \ in the Western Cape;\r\n\r\n* Strategically advancing the environmental sustainability\
+    \ of the Western Cape;\r\n\r\n* Sustaining the environmental quality of the Western\
+    \ Cape; and\r\n\r\n* Ensuring integrated environmental and land management in\
+    \ the Western Cape."
+  name: Core functions and responsibilities
 resources:
   'EPRE for Vote 09 : Environmental Affairs and Development Planning':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/640e7dab-469f-45ad-b680-178780aff6f8/resource/ea76734f-6ec4-43cb-9fb1-025294414f4d/download/wc-environ.-affairs-and-dev-planning.xlsm
+      url: https://budgetdata.openup.org.za/dataset/640e7dab-469f-45ad-b680-178780aff6f8/resource/ea76734f-6ec4-43cb-9fb1-025294414f4d/download/wc-environ.-affairs-and-dev-planning.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 09 - Environmental Affairs and Development Planning.pdf

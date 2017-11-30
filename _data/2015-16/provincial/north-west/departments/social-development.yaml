@@ -27,14 +27,24 @@ government:
   name: North West
   slug: north-west
 name: Social Development
-narrative: {}
+narratives:
+- content: "A Caring and Self-reliant Society.\r\n\r\n"
+  name: Vision
+- content: "To transform our society by building conscious and capable citizens through\
+    \ the provision of integrated social development services.\r\n\r\n"
+  name: Mission
+- content: "Promotion of Community Participation\r\n\r\nThe Department is committed\
+    \ to promotion of community participation through information dissemination, community\
+    \ planning, social mobilization, institution building and partnership development.\r\
+    \n"
+  name: Core functions
 resources:
   'EPRE for Vote 12 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/f026b013-e74a-45b0-b68e-e4c1e4817e57/resource/0419ce9b-9b77-46af-a26d-6779576f8eb5/download/nw-social-development.xlsx
+      url: https://budgetdata.openup.org.za/dataset/f026b013-e74a-45b0-b68e-e4c1e4817e57/resource/0419ce9b-9b77-46af-a26d-6779576f8eb5/download/nw-social-development.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 12 - Social Development.pdf

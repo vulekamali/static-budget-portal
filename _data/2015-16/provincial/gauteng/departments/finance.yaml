@@ -27,7 +27,28 @@ government:
   name: Gauteng
   slug: gauteng
 name: Finance
-narrative: {}
+narratives:
+- content: "A Connected Gauteng City Region that uses Information and Communication\
+    \ Technology to support the delivery\r\nof quality services and equitable and\
+    \ inclusive social economic development of its citizens\r\n\r\n"
+  name: Vision
+- content: "To provide GPG citizens with state-of-the-art Information and Communication\
+    \ Technology infrastructure that\r\nconnects them to improved service delivery\
+    \ and greater economic opportunities in collaboration between government, citizens\
+    \ and the private sector through:\r\n\r\nA high speed broadband network connecting\
+    \ government to its citizens;\r\n\r\n* Digitization of back office support for\
+    \ enhanced service delivery;\r\n\r\n* Coordination and regulation of information\
+    \ and communication technology infrastructure and applications to integrate e\
+    \ Government - services in the province;\r\n\r\n* Support radical economic transformation\
+    \ by facilitating the development of an ICT linked economy that leverages off\
+    \ the Broadband Network;\r\n\r\n"
+  name: Mission
+- content: "* To rollout the GBN;\r\n\r\n* To develop and maintain all provincial\
+    \ government owned ICT infrastructure;\r\n\r\n* To develop and maintain applications,\
+    \ networks, and services;\r\n\r\n* To improve and provide customer driven HR services;\r\
+    \n\r\n* To implement e-Recruitment solution for job seekers; and\r\n\r\n* To deploy\
+    \ HR systems in the province."
+  name: Core functions
 resources:
   'EPRE for Vote 13 : Finance':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
@@ -37,6 +58,6 @@ resources:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 13 - Finance.pdf
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/1850c925-5b27-47ef-adb3-2befe79b555b/resource/9b15504a-39a6-48de-8973-63f6a8b0aeb6/download/gt-finance.xlsx
+      url: https://budgetdata.openup.org.za/dataset/1850c925-5b27-47ef-adb3-2befe79b555b/resource/9b15504a-39a6-48de-8973-63f6a8b0aeb6/download/gt-finance.xlsx
 slug: finance
 vote_number: 13

@@ -27,14 +27,47 @@ government:
   name: Mpumalanga
   slug: mpumalanga
 name: Social Development
-narrative: {}
+narratives:
+- content: "A caring, humane and developed society\r\n\r\n"
+  name: Vision
+- content: "To provide, equitable, integrated and quality sustainable social development\
+    \ services in\r\npartnership with all stakeholders to eradicate poverty and protect\
+    \ vulnerable groups in all\r\ncommunities of Mpumalanga.\r\n\r\n"
+  name: Mission
+- content: "Social Welfare Services\r\n* Integrated social welfare services to older\
+    \ persons, persons with disabilities and other\r\nvulnerable groups,\r\n\r\n*\
+    \ Integrated services to people infected and affected by HIV and AIDS,\r\n\r\n\
+    * Social Welfare safety net, through provision of emergency material supplies\
+    \ to individuals\r\nand families affected by disasters.\r\n\r\nChildren and Families\r\
+    \nThe programme aims to provide comprehensive child and family care and support\
+    \ services to\r\ncommunities in partnership with stakeholders and civil society\
+    \ organisations. The following\r\nservices are provided within the programme:\r\
+    \n\r\n* Programmes and services to promote functional families and to prevent\
+    \ vulnerability in\r\nfamilies\r\n\r\n* Integrated programmes and services that\
+    \ provide for the development, care and protection\r\nof the rights of children\r\
+    \n\r\n* Comprehensive early childhood development services and Partial care\r\n\
+    \r\n* Alternative care and support to vulnerable children through Child and Youth\
+    \ care centres\r\n\r\n* Protection, care and support to vulnerable children in\
+    \ communities through community\r\nbased care services\r\n\r\nRestorative Services\r\
+    \n* Development and implementation of social crime prevention programmes and probation\r\
+    \nservices targeting children, youth and adult offenders and victims within the\
+    \ justice system\r\n\r\n* Integrated programmes and services to support ,care\
+    \ and empower victims of crime\r\n\r\n* Integrated services for anti-substance\
+    \ abuse, prevention, treatment and rehabilitation\r\n\r\n* Development and Research\r\
+    \n\r\n* Provision of integrated poverty alleviation services through sustainable\
+    \ development\r\nprogrammes in partnership with community based organisations.\r\
+    \n\r\n* Creation of an environment to help young people to develop constructive,\
+    \ affirmative and\r\nsustainable relationships while concurrently providing opportunities\
+    \ for them to build their\r\ncompetencies and needed skills to engage as partners\
+    \ in their own development and that\r\nof their communities.\r\n\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 12 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/ecef3d97-e109-4c15-84fd-adaa686f82d5/resource/aef52483-668f-4cc9-9ba7-9773d8ea14a5/download/mpu-social-development.xlsm
+      url: https://budgetdata.openup.org.za/dataset/ecef3d97-e109-4c15-84fd-adaa686f82d5/resource/aef52483-668f-4cc9-9ba7-9773d8ea14a5/download/mpu-social-development.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 12 - Social Development.pdf

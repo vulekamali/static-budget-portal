@@ -27,14 +27,46 @@ government:
   name: Western Cape
   slug: western-cape
 name: Social Development
-narrative: {}
+narratives:
+- content: "A self-reliant society.\r\n\r\n"
+  name: Vision
+- content: "To ensure the provision of a comprehensive network of social development\
+    \ services that enables and empowers the poor, the vulnerable and those with special\
+    \ needs.\r\n\r\n"
+  name: Mission
+- content: "The department is committed to the following two core functions:\r\n\r\
+    \n* A Social Welfare Service to the poor and vulnerable in partnership with stakeholders\
+    \ and  civil society organisations; and\r\n\r\n* A Community Development Service\
+    \ that provides sustainable developmental programmes, which\r\n facilitate empowerment\
+    \ of communities.\r\n\r\nWorking in partnership with communities, stakeholders\
+    \ and civil society organisations to provide the following:\r\n\r\nChild care\
+    \ and protection services to approximately 100 000 children in terms of the Children\u2019\
+    s Act and Child Justice Act (including children in foster care, adoptions, temporary\
+    \ safe care, child and youth care centres, early childhood development and after-school\
+    \ care services) as well as family and parenting support services to approximately\
+    \ 25 000 families;\r\n\r\n* Implementation of programmes for the prevention of\
+    \ and treatment for substance abuse to\r\n approximately 12 500 people (which\
+    \ includes awareness about foetal alcohol syndrome; early\r\nintervention programmes;\
+    \ services that are regulated by legislation as well as after care programmes);\r\
+    \n\r\n* Services to support approximately 20 000 victims of violence and trauma\
+    \ (including  shelters services,psycho social support, and support to victims\
+    \ of human trafficking);\r\n* Social crime prevention services to approximately\
+    \ 17 000 people (including probation and diversion services);\r\n\r\n* Specialised\
+    \ support services to approximately 80 000 disabled persons, their families and\
+    \   caregivers and approximately 25 000 older persons including residential care);\
+    \ and\r\n\r\n* Emergency social relief and poverty alleviation services, sustainable\
+    \ development and research programmes which facilitate empowerment of communities,\
+    \ based on empirical research and demographic information (including youth development\
+    \ programmes, expansion of youth cafes from three to eight over the MTEF and targeted\
+    \ community nutrition programmes).\r\n\r\n"
+  name: Main services and core functions
 resources:
   'EPRE for Vote 07 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/1fcc6804-41e3-4371-87ff-2cb998b72aeb/resource/356b1b0b-f8d6-4058-814c-0a9611f7f826/download/wc-social-development.xlsm
+      url: https://budgetdata.openup.org.za/dataset/1fcc6804-41e3-4371-87ff-2cb998b72aeb/resource/356b1b0b-f8d6-4058-814c-0a9611f7f826/download/wc-social-development.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 07 - Social Development.pdf

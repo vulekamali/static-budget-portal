@@ -27,14 +27,38 @@ government:
   name: Western Cape
   slug: western-cape
 name: Cultural Affairs and Sport
-narrative: {}
+narratives:
+- content: "A socially inclusive, creative, active and connected Western Cape.\r\n\
+    \r\n"
+  name: Vision
+- content: "We encourage excellence and inclusiveness in sport and culture through\
+    \ the effective, efficient and sustainable use of our resources, and through creative\
+    \ partnerships. In moving to excellence and making the Western Cape the sports\
+    \ and cultural centre of South Africa, we will create the conditions for access\
+    \ and mass participation, talent identification and skills development.\r\n\r\n"
+  name: Mission
+- content: "Cultural Affairs and Sport is a tool that is used to assist with the building\
+    \ of a  socially inclusive Western Cape community. The Department\u2019s four\
+    \ Programmes provide the following main services and core functions:\r\n\r\n*\
+    \ Programme 1: Administration provides overall financial and strategic management\
+    \ and administrative support for the Department of Cultural Affairs and Sport.\r\
+    \n\r\n* Programme 2: Cultural Affairs provides arts and culture, museum, heritage\
+    \ and language-related services to the inhabitants of the Western Cape.\r\n\r\n\
+    * Programme 3: Library and Archive Services provides comprehensive library and\
+    \ archive services in the Western Cape.\r\n\r\n* Provide library and information\
+    \ services and promote the culture of reading and lifelong learning in partnership\
+    \ with municipalities.\r\n\r\n* Provides access to archival heritage and promotes\
+    \ proper management and care of public records.\r\n\r\n* Programme 4: Sport and\
+    \ Recreation provides sport and recreation activities for the inhabitants of theWestern\
+    \ Cape and After School Programmes to low and no-fee schools.\r\n"
+  name: Main services and core functions
 resources:
   'EPRE for Vote 13 : Cultural Affairs and Sport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/ad4cf929-e9f2-4947-bcef-29e4c41deb1b/resource/68156b34-ba1f-4008-8b4e-f83af714178d/download/wc-cultural-affairs-and-sport.xlsm
+      url: https://budgetdata.openup.org.za/dataset/ad4cf929-e9f2-4947-bcef-29e4c41deb1b/resource/68156b34-ba1f-4008-8b4e-f83af714178d/download/wc-cultural-affairs-and-sport.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 13 - Cultural Affairs and Sport.pdf

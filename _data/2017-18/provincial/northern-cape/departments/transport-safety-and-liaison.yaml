@@ -27,14 +27,32 @@ government:
   name: Northern Cape
   slug: northern-cape
 name: Transport, Safety and Liaison
-narrative: {}
+narratives:
+- content: "A leader in the creation and co-ordination of safe, secure and sustainable\
+    \ transport and policing sytems for a crime-free Northern Cape Province.\r\n\r\
+    \n"
+  name: Vision
+- content: "To enable safe and secure environment and mobility, for the community\
+    \ of the Northern Cape, through:\r\n\r\n* Good corporate governance, management,\
+    \ administration and support;\r\n\r\n* Establishing and supporting community safety\
+    \ partnerships;\r\n\r\n* Monitoring and oversight of the police;\r\n\r\n* Facilitating\
+    \ and coordinating social crime prevention and road safety programmes;\r\n\r\n\
+    * Educating, enforcing and administering road traffic legislation; Liaison with\
+    \ all relevant stakeholders, role-players and clients, pertaining policing, safety\
+    \ and security;\r\n\r\n* Regulated and integrated transport modes which are economically\
+    \ and environmentally\uFFFD\uFFFD\uFFFD. sustainable.\r\n\r\n"
+  name: Mission
+- content: "To promote subsidies transportation for the community as well as ensuring\
+    \ safety on our roads users through effective traffic law enforcement and effectively\
+    \ overseeing the functions of the South African police services (SAPS).\r\n\r\n"
+  name: Core services
 resources:
   'EPRE for Vote 03 : Transport, Safety and Liaison':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/cba02e1c-236d-4bd1-8c6c-389084fa6b4a/resource/83701d81-cc8f-4e15-9cb6-c37a8d0774ed/download/nc-transport-safety-and-liaison.xlsm
+      url: https://budgetdata.openup.org.za/dataset/cba02e1c-236d-4bd1-8c6c-389084fa6b4a/resource/83701d81-cc8f-4e15-9cb6-c37a8d0774ed/download/nc-transport-safety-and-liaison.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 03 - Transport, Safety and Liaison.pdf

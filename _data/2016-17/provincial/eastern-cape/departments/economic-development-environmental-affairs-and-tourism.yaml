@@ -27,14 +27,27 @@ government:
   name: Eastern Cape
   slug: eastern-cape
 name: Economic Development, Environmental Affairs and Tourism
-narrative: {}
+narratives:
+- content: "sustainable development underpinned by economic growth and sound enviromental\
+    \ management\r\n\r\n\r\n"
+  name: vision
+- content: "to lead economic enviromental management in the easter cape\r\n\r\n\r\n"
+  name: 'mission '
+- content: "the core function of the department are summarised as follows\r\n\r\n\
+    * to drive economic growth and development in easter cape\r\n\r\n* to develop\
+    \ and promote the provisional tourism sector\r\n\r\n* to provided consumer protection\
+    \ services, gambling and betting regulations , trade inspection and\r\nregulate\
+    \ the liqour industry; and\r\n\r\n* to develop regularly framework and monitor\
+    \ the implementation of policy for the protection \r\nbiodiversity and the enviroment\
+    \ in the province\r\n\r\n"
+  name: core fucntion and responsibilities
 resources:
   'EPRE for Vote 09 : Economic Development, Environmental Affairs and Tourism':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/a84b303e-28ab-4573-8922-3cb6aae14704/resource/b0679cd8-7bce-4f30-b82f-41b546109b15/download/ec-eco-dev-environment-and-tourism.xlsm
+      url: https://budgetdata.openup.org.za/dataset/a84b303e-28ab-4573-8922-3cb6aae14704/resource/b0679cd8-7bce-4f30-b82f-41b546109b15/download/ec-eco-dev-environment-and-tourism.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 09 - Eco Dev, Environ Affairs and Tourism.pdf

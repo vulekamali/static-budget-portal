@@ -27,14 +27,31 @@ government:
   name: Northern Cape
   slug: northern-cape
 name: Environment and Nature Conservation
-narrative: {}
+narratives:
+- content: "A prosperous society living sustainably with the natural environment.\r\
+    \n\r\n"
+  name: Vision
+- content: "Conserve and protect the natural environment for the benefit, enjoyment\
+    \ and welfare of present and future generations by integrating sustainable utilization\
+    \ with socio-economic development.\r\n\r\n"
+  name: Mission
+- content: "* Environmental assets conserved, valued, sustainably used, protected\
+    \ and continually enhanced; \r\n\r\n* Enhanced socio-economic benefits and employment\
+    \ creation for the present and future generations from a healthy environment;\r\
+    \n\r\n* A department that is fully capacitated to deliver its services efficiently\
+    \ and effectively; \r\n\r\n* Environmental education provide to stimulate critical\
+    \ thinking and influence decision making;\r\n\r\n* Ensure sustainable development\
+    \ and utilisation of natural resources while securing representative and resilient\
+    \ ecosystems through scientific research, spatial planning and cooperative governance;\r\
+    \n\r\n* To promote and enforce compliance with environmental legislation"
+  name: Core functions
 resources:
   'EPRE for Vote 13 : Environment and Nature Conservation':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/3155dc62-5e61-4597-8d89-59c189ce50e5/resource/aa8f2f68-b7d8-46cb-8501-285acac2fc1b/download/nc-environ.-and-nature-conservation.xlsm
+      url: https://budgetdata.openup.org.za/dataset/3155dc62-5e61-4597-8d89-59c189ce50e5/resource/aa8f2f68-b7d8-46cb-8501-285acac2fc1b/download/nc-environ.-and-nature-conservation.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 13 - Environment & Nature Conservation.pdf

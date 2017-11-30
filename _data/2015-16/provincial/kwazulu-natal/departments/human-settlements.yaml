@@ -27,14 +27,35 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Human Settlements
-narrative: {}
+narratives:
+- content: "The vision of the department is: Together breaking new ground to achieve\
+    \ decent, integrated and sustainable human settlement patterns.\r\n\r\n"
+  name: Vision
+- content: "The mission of the department is: To deliver 200 000 suitably located\
+    \ housing opportunities and security of tenure over the next five years through\
+    \ collaborative partnership, legislative planning processes and empowerment of\
+    \ women in construction.\r\n\r\n"
+  name: Mission
+- content: "The following core functions have been identified as key for the attainment\
+    \ of the strategic objectives:\r\n\r\n* To promote the provision of housing development.\r\
+    \n\r\n* To promote the provision of affordable housing and essential services.\r\
+    \n\r\n* To manage, control and maintain the immoveable assets of the department.\r\
+    \n\r\n* To research, establish, monitor and implement policies within the National\
+    \ Housing Policy Framework.\r\n\r\n* To administer and manage housing subsidies\
+    \ of targeted groups.\r\n\r\n* To formulate a Provincial Housing Development Plan\
+    \ for the province.\r\n\r\n* To facilitate and create housing institutions.\r\n\
+    \r\n* To provide legal advice on land and environmental issues.\r\n\r\n* To administer\
+    \ and co-ordinate the Community Residential Unit (CRU) programme.\r\n\r\n* To\
+    \ administer the clearance of slums in KwaZulu-Natal.\r\n\r\n* To capacitate housing\
+    \ stakeholders"
+  name: Core functions
 resources:
   'EPRE for Vote 08 : Human Settlements':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/1454d335-d7ce-4233-90e2-7ea4161fb939/resource/4a91712e-0b57-4c9a-af97-ad19166e1e6d/download/kzn-human-settlements.xlsx
+      url: https://budgetdata.openup.org.za/dataset/1454d335-d7ce-4233-90e2-7ea4161fb939/resource/4a91712e-0b57-4c9a-af97-ad19166e1e6d/download/kzn-human-settlements.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 08 - Human Settlement.pdf

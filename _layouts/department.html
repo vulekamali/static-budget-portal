@@ -17,12 +17,9 @@ layout: page-shell
       <div class="Page-title">{{ page_data.government.name }} Department: {{ page_data.name }}</div>
     {% endif %}
 
-    {% if page_data.narrative["vote-purpose"] %}
-      <div class="Page-blurb"><strong>Department purpose:</strong> {{ page_data.narrative["vote-purpose"].content | markdownify }}</div>
-    {% endif %}
-    {% if page_data.narrative["mandate"] %}
-      <div class="Page-blurb"><strong>Department mandate:</strong> {{ page_data.narrative["mandate"].content | markdownify }}</div>
-    {% endif %}
+    {% for narrative in page_data.narratives %}
+      <div class="Page-blurb"><strong>{{ narrative.name | capitalize }}:</strong> {{ narrative.content  | markdownify }}</div>
+    {% endfor %}
 
     <div class="Page-section">
       {% include components/Programmes/index.html programmes=page_data.programmes %}

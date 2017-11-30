@@ -27,29 +27,27 @@ government:
   name: South Africa
   slug: south-africa
 name: Basic Education
-narrative:
-  mandate:
-    content: "The Department of Basic Education derives its mandate from the following\n\
-      legislation:\n\n  * the National Education Policy Act\_(1996), which inscribed\
-      \ into law the policies, the legislative and monitoring responsibilities of\
-      \ the Minister of Basic Education, as well as the formal relations between national\
-      \ and provincial authorities\n\n  * the South African Schools Act\_(1996), which\
-      \ promotes access, quality and democratic governance in the schooling system\
-      \ and makes schooling compulsory for children aged 7 to 15, to ensure that all\
-      \ learners have right of access to quality education without discrimination\n\
-      \n  * the Employment of Educators Act\_(1998), which regulates the professional,\
-      \ moral and ethical responsibilities of educators, as well as the competency\
-      \ requirements for teachers.\n\n"
-    name: Mandate
-  vote-purpose:
-    content: '_Develop, maintain and support a South African school education system
-      for the
+narratives:
+- content: '_Develop, maintain and support a South African school education system
+    for the
 
-      21st century_.
+    21st century_.
 
 
-      '
-    name: Vote purpose
+    '
+  name: Vote purpose
+- content: "The Department of Basic Education derives its mandate from the following\n\
+    legislation:\n\n  * the National Education Policy Act\_(1996), which inscribed\
+    \ into law the policies, the legislative and monitoring responsibilities of the\
+    \ Minister of Basic Education, as well as the formal relations between national\
+    \ and provincial authorities\n\n  * the South African Schools Act\_(1996), which\
+    \ promotes access, quality and democratic governance in the schooling system and\
+    \ makes schooling compulsory for children aged 7 to 15, to ensure that all learners\
+    \ have right of access to quality education without discrimination\n\n  * the\
+    \ Employment of Educators Act\_(1998), which regulates the professional, moral\
+    \ and ethical responsibilities of educators, as well as the competency requirements\
+    \ for teachers.\n\n"
+  name: Mandate
 resources:
   ENE for Vote 14 - Basic Education:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

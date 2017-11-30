@@ -27,14 +27,29 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Provincial Legislature
-narrative: {}
+narratives:
+- content: "The vision of the Provincial Legislature (hereafter referred to as the\
+    \ Legislature) is: To be an activist, people-centred Legislature.\r\n\r\n"
+  name: Vision
+- content: "The Legislature\u2019s mission statement is: To deepen democracy and entrench\
+    \ activism in KwaZulu-Natal through robust oversight, effective public participation\
+    \ and efficient law-making.\r\n\r\n"
+  name: Mission statement
+- content: "In order to achieve the above strategic objectives, the Legislature is\
+    \ responsible for carrying out the\r\nfollowing core functions:\r\n\r\n* To maintain\
+    \ the highest standards in drafting, amending and passing legislation.\r\n\r\n\
+    * To timeously consider, pass, amend or reject legislation referred to the Legislature\
+    \ by the Executive\r\nCouncil or the National Council of Provinces (NCOP).\r\n\
+    \r\n* To maintain oversight over the provincial executive authority in the province,\
+    \ including the\r\nimplementation of legislation."
+  name: Core functions
 resources:
   'EPRE for Vote 02 : Provincial Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/a10f7634-fe7c-496b-9659-dca6d5a6a36f/resource/c97c9092-322b-4c9d-a45b-a49f2b90e89a/download/kzn-legislature.xlsm
+      url: https://budgetdata.openup.org.za/dataset/a10f7634-fe7c-496b-9659-dca6d5a6a36f/resource/c97c9092-322b-4c9d-a45b-a49f2b90e89a/download/kzn-legislature.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 02 - Legislature.pdf

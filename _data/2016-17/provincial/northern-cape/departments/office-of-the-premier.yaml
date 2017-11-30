@@ -27,14 +27,29 @@ government:
   name: Northern Cape
   slug: northern-cape
 name: Office of the Premier
-narrative: {}
+narratives:
+- content: "A prosperous province with a quality of life for all.\r\n\r\n"
+  name: Vision
+- content: "Improving government\u2019s performance through strategic leadership and\
+    \ integrated planning, monitoring and evaluation.\r\n\r\n"
+  name: Mission Statement
+- content: "* Promote equality, empowerment of the vulnerable sectors of society and\
+    \ drive children\u2019s rights, rights of the elderly and persons with disability\
+    \ through inclusive government programmes and interventions.\r\n\r\n* Create a\
+    \ coordinated, collaborative, diversified, economic partnership in an enabled\
+    \ environment.\r\n\r\n* To provide effective leadership to the province and society.\r\
+    \n\r\n* To enhance the performance of government by making the public service\
+    \ and local government a career of choice.\r\n\r\n* Improved performance through\
+    \ strategic and coordinated skills development for improved service delivery and\
+    \ economic growth in the province."
+  name: Strategic Goals
 resources:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/f7798094-bca7-4aec-bff7-45675b82a8e3/resource/4828864c-72a1-4c9d-b729-70a6dd2ab1bd/download/nc-office-of-the-premier.xlsm
+      url: https://budgetdata.openup.org.za/dataset/f7798094-bca7-4aec-bff7-45675b82a8e3/resource/4828864c-72a1-4c9d-b729-70a6dd2ab1bd/download/nc-office-of-the-premier.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 01 - Office of the Premier.pdf

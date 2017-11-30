@@ -27,14 +27,38 @@ government:
   name: Gauteng
   slug: gauteng
 name: Community Safety
-narrative: {}
+narratives:
+- content: "To ensure that Gauteng is a safe and secure province\r\n\r\n"
+  name: Vision
+- content: "To be an innovative, effective and proactive department that ensures police\
+    \ oversight and promotion of safety\r\nof Gauteng citizens by:\r\n\r\n* Exercising\
+    \ oversight over law enforcement agencies in the Province,\r\n\r\n* To promote\
+    \ and strengthen relations between communities and Law Enforcement Agencies,\r\
+    \n\r\n* To educate and empower citizens on issues of public safety and coordinating\
+    \ community mobilisation in safety initiatives,\r\n\r\n* To promote road safety.\r\
+    \n\r\n"
+  name: Mission
+- content: "The core functions and responsibilities of the department are:\r\n* To\
+    \ monitor police conduct;\r\n\r\n* To oversee the effectiveness and efficiency\
+    \ of the province\u2019s law enforcement agencies (primarily the South African\
+    \ Police Service and the three metropolitan police departments of Ekurhuleni,\
+    \ Johannesburg and Tshwane), including receiving reports on these police services;\r\
+    \n\r\n* To promote good relations between the police and communities;\r\n\r\n\
+    * To assess the effectiveness of visible policing;\r\n\r\n* To liaise with the\
+    \ Minister of Police with respect to crime and policing in the province\r\n\r\n\
+    * To record and investigate public complaints alleging police inefficiency;\r\n\
+    \r\n* To mobilise all communities in the fight against crime;\r\n* To promote\
+    \ social crime prevention through partnerships and other appropriate interventions;\
+    \ and\r\n\r\n* To promote road safety, in collaboration with other law enforcement\
+    \ agencies, to reduce road accidents\r\nand resultant fatalities\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 10 : Community Safety':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/4bbfd32d-ecd5-4ac6-aa7d-8a667b5c7982/resource/824fbddb-6263-4218-a3e2-a0b636088367/download/gt-community-safety.xlsx
+      url: https://budgetdata.openup.org.za/dataset/4bbfd32d-ecd5-4ac6-aa7d-8a667b5c7982/resource/824fbddb-6263-4218-a3e2-a0b636088367/download/gt-community-safety.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 10 - Community Safety.pdf

@@ -27,14 +27,28 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Human Settlements
-narrative: {}
+narratives:
+- content: "The vision of the department is: Together breaking new ground to achieve\
+    \ decent, integrated and sustainable human settlement patterns.\r\n\r\n"
+  name: Vision
+- content: "The mission of the Department of Human Settlements (DOHS) is: To deliver\
+    \ suitably located housing opportunities and security of tenure over the next\
+    \ five years through collaborative partnership, legislative planning processes\
+    \ and empowerment of women in construction.\r\n\r\n"
+  name: Mission
+- content: "The following core functions have been identified as key for the attainment\
+    \ of the strategic objectives:\r\n\r\n* To promote the provision of housing development.\r\
+    \n\r\n* To promote the provision of affordable housing and essential services.\r\
+    \n\r\n* To manage, control and maintain the immoveable assets of the department.\r\
+    \n\r\n* To administer and manage housing subsidies of targeted groups."
+  name: Core functions
 resources:
   'EPRE for Vote 08 : Human Settlements':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/e699a8f3-a6f7-410d-9883-3f383712e66e/resource/066f7c65-fe4a-40b3-84a8-479c03a5dafe/download/kzn-human-settlements.xlsm
+      url: https://budgetdata.openup.org.za/dataset/e699a8f3-a6f7-410d-9883-3f383712e66e/resource/066f7c65-fe4a-40b3-84a8-479c03a5dafe/download/kzn-human-settlements.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 08 - Human Settlement.pdf

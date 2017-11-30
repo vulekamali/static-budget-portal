@@ -27,14 +27,35 @@ government:
   name: Western Cape
   slug: western-cape
 name: Health
-narrative: {}
+narratives:
+- content: "Access to person-centred quality care.\r\n\r\n"
+  name: Vision
+- content: "We undertake to provide equitable access to quality health services in\
+    \ partnership with the relevant\r\nstakeholders within a balanced and well-managed\
+    \ health system to the people of the Western Cape and\r\nbeyond.\r\n\r\n"
+  name: Mission
+- content: "Western Cape Government: Health is primarily responsible for providing\
+    \ health services to the population of the Province, approximately 6.246 million\
+    \ of which 75 per cent is estimated to be uninsured. Tertiary hospitals are considered\
+    \ to be a national resource and therefore obliged to provide for people beyond\
+    \ the\r\nprovincial borders, and this is in line with the National Tertiary Services\
+    \ Grant.\r\n\r\n* The Department will continue to provide a comprehensive, cost-effective\
+    \ package of health services to the\r\npeople of the Western Cape. This includes\
+    \ preventive, promotive, curative, and rehabilitative and palliative\r\ncare via:\r\
+    \n\r\n* District health services including: home and community-based care, clinics,\
+    \ community day/health\r\ncentres and district hospitals.\r\n\r\n* Provincial,\
+    \ central and specialised hospital services, which include hospitals such as Tuberculosis,\r\
+    \nPsychiatric and Rehabilitation hospitals.\r\n\r\n* Emergency medical and planned\
+    \ patient transport services.\r\nForensic pathology: medico-legal and inspector\
+    \ of anatomy services."
+  name: Core functions
 resources:
   'EPRE for Vote 06 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/0617a73d-79a5-4254-a5fd-3cd950c707c2/resource/68c58275-7bea-4e6a-8b86-92dd50109bc5/download/wc-health.xlsx
+      url: https://budgetdata.openup.org.za/dataset/0617a73d-79a5-4254-a5fd-3cd950c707c2/resource/68c58275-7bea-4e6a-8b86-92dd50109bc5/download/wc-health.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 06 - Health.pdf

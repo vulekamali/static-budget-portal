@@ -27,14 +27,27 @@ government:
   name: Eastern Cape
   slug: eastern-cape
 name: Human Settlements
-narrative: {}
+narratives:
+- content: "A department at the centre of creating integrated sustainable human settlements\
+    \ in the Eastern Cape.\r\n\r\n"
+  name: Vision
+- content: "Facilitate and co-ordinate provision of quality, integrated and sustainable\
+    \ human settlement that offer our\r\ncommunities a better living environment.\r\
+    \n\r\n"
+  name: Mission
+- content: "The core functions and responsibilities of the department are:\r\n\r\n\
+    * Rural settlement development;\r\n\r\n* Informal settlement development and upgrading;\r\
+    \n\r\n* Provision of rental and social housing;\r\n\r\n* Secure tenure and land\
+    \ acquisition;\r\n\r\n* Provision of title deeds to land owners; and\r\n\r\n*\
+    \ Installation of services that include other amenities."
+  name: Core functions and responsibilities
 resources:
   'EPRE for Vote 11 : Human Settlements':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/f83c3235-5cb7-4a56-96ea-1e9e1bab606e/resource/bb7cb4c3-be34-4559-a15d-44cebf10c9c1/download/ec-human-settlements.xlsm.xlsx
+      url: https://budgetdata.openup.org.za/dataset/f83c3235-5cb7-4a56-96ea-1e9e1bab606e/resource/bb7cb4c3-be34-4559-a15d-44cebf10c9c1/download/ec-human-settlements.xlsm.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 11 - Human Settlements.pdf

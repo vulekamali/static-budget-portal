@@ -27,14 +27,28 @@ government:
   name: Western Cape
   slug: western-cape
 name: Agriculture
-narrative: {}
+narratives:
+- content: "A united, responsive and prosperous agricultural sector in balance with\
+    \ nature\r\n\r\n"
+  name: Vision
+- content: "Unlock the full potential of agriculture to enhance the economic, ecological\
+    \ and social wealth of all the\r\npeople of the Western Cape through:\r\n\r\n\
+    *Encouraging sound stakeholder engagements\r\n\r\n*Promoting the production of\
+    \ affordable, nutritious, safe and accessible food, fibre and agricultural\r\n\
+    \r\n*products\r\n\r\n*Ensuring sustainable management of natural resources\r\n\
+    \r\n*Executing cutting edge and relevant research and technology development\r\
+    \n\r\n*Developing, retaining and attracting skills and human capital\r\n\r\n*Providing\
+    \ a competent and professional extension support service\r\n\r\n*Enhancing market\
+    \ access for the entire agricultural sector\r\n\r\n*Contributing towards alleviation\
+    \ of poverty and hunger\r\n\r"
+  name: Mission
 resources:
   'EPRE for Vote 11 : Agriculture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/18fa626e-dad1-4298-865d-25e691c188d9/resource/c01a38f0-bdd7-4cff-855f-1fc58e3115b4/download/wc-agriculture.xlsm
+      url: https://budgetdata.openup.org.za/dataset/18fa626e-dad1-4298-865d-25e691c188d9/resource/c01a38f0-bdd7-4cff-855f-1fc58e3115b4/download/wc-agriculture.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 11 - Agriculture.pdf

@@ -27,14 +27,33 @@ government:
   name: Gauteng
   slug: gauteng
 name: Community Safety
-narrative: {}
+narratives:
+- content: "To realise Gauteng as a province where people feel and are safe\r\n\r\n"
+  name: Vision
+- content: "To be an innovative,effcetive and proactive department that ensures the\
+    \ safety of te community through:\r\n\r\n* Improving the quality of policing\r\
+    \n\r\n* Deepening meaningful community participation;\r\n\r\n* Enhancing social\
+    \ crime prevention;\r\n\r\n* Fostering intergrity\r\n\r\n* Initiating and sustaining\
+    \ sound supportive institutional arangements\r\n\r\n* Promoting pedestrian safety;\r\
+    \n\r\n* Intensifying trafiic law ennforcement; and\r\n\r\n* Creating a safer road\
+    \ enironment.\r\n\r\n"
+  name: Mission
+- content: "The core functions and responsibilities of the department are:\r\n\r\n\
+    * To monitor police conduct;\r\n\r\n* To oversee the effectiveness and efficiency\
+    \ of the province's law enforcement agencies;\r\n\r\n* To promote good relations\
+    \ between the police and communities;\r\n\r\n* To assess the effectiveness of\
+    \ visible policing;\r\n\r\n* To record and investigate public complaints alleging\
+    \ police inefficiency\r\n\r\n* To mobilise all communities in the fight against\
+    \ crime;\r\n\r\n* Topromote social crime prevemtion thrugh partnerships and oter\
+    \ appropriate interventions;and\r\n\r\n* To provide  traffic services."
+  name: Core functions
 resources:
   'EPRE for Vote 10 : Community Safety':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/aa0874ae-0a77-40d4-a1e8-0aa41ad913da/resource/912f62e0-9c35-4986-a17e-21c46ae04d2c/download/gt-community-safety.xlsm
+      url: https://budgetdata.openup.org.za/dataset/aa0874ae-0a77-40d4-a1e8-0aa41ad913da/resource/912f62e0-9c35-4986-a17e-21c46ae04d2c/download/gt-community-safety.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 10 - Community Safety.pdf

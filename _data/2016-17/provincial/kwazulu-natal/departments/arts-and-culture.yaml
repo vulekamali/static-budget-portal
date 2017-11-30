@@ -27,14 +27,31 @@ government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
 name: Arts and Culture
-narrative: {}
+narratives:
+- content: "The vision of the department is: Prosperity and social cohesion through\
+    \ arts and culture.\r\n\r\n"
+  name: Vision
+- content: "The department\u2019s mission is to Provide world class services in arts\
+    \ and culture for the people of KwaZulu-Natal by:\r\n\r\n* Developing and promoting\
+    \ arts and culture in the province and mainstreaming its role in socio-economic\
+    \ development.\r\n\r\n* Supporting interventions to develop arts and culture capacity\
+    \ in the province.\r\n\r\n* Implementing social cohesion and moral regeneration\
+    \ programmes that contribute to the transformation of society and nation building.\r\
+    \n\r\n* Developing and promoting previously marginalised languages and enhancing\
+    \ the linguistic diversity of the province.\r\n\r\n* Collecting, preserving and\
+    \ providing archival, museum, library and other forms of information resources.\r\
+    \n\r\n\r\n"
+  name: Mission statement
+- content: "The core functions of the department encompass the development and promotion\
+    \ of arts, culture,\r\nmuseum, archive and library services"
+  name: Core functions
 resources:
   'EPRE for Vote 15 : Arts and Culture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/36fdb6da-7584-4685-bc0b-051aed3382bd/resource/8d9993ab-f679-48bf-bc60-724d2e7e9469/download/kzn-arts-and-culture.xlsm
+      url: https://budgetdata.openup.org.za/dataset/36fdb6da-7584-4685-bc0b-051aed3382bd/resource/8d9993ab-f679-48bf-bc60-724d2e7e9469/download/kzn-arts-and-culture.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 15 - Arts and Culture.pdf

@@ -27,14 +27,40 @@ government:
   name: Northern Cape
   slug: northern-cape
 name: Economic Development and Tourism
-narrative: {}
+narratives:
+- content: "A radically transformed economy in the Northern Cape.\r\n\r\n"
+  name: Vision
+- content: "Accelerating the economic growth and development of the Northern Cape\
+    \ Province through diversification, empowerment, employment, business creation\
+    \ and sustainable development.\r\n\r\n"
+  name: Mission
+- content: "The department\u2019s core functions are summarised as follows:\r\n\r\n\
+    * To provide leadership, strategic management in accordance with government legislation,\
+    \ regulations and policies.\r\n\r\n* To ensure an effective and compliant department\
+    \ that will provide technical support and economic policy advice to the Northern\
+    \ Cape Province.\r\n\r\n* To promote, support and facilitate integrated economic\
+    \ development through shared partnerships in the province.\r\n\r\n* To accelerate\
+    \ economic growth by facilitating export from and investment into the province\
+    \ while simultaneously promoting economic diversification and industrial expansion.\r\
+    \n\r\n* To stimulate economic development through industry development and trade\
+    \ and investment promotion.\r\n\r\n* To regulate business practices and ensure\
+    \ compliance with relevant legislation whilst optimizing revenue collection and\
+    \ monitoring departmental agencies.\r\n\r\n* To support the development of measurable\
+    \ economic policies, strategies and plans informed by relative economic research\
+    \ so that they are in alignment with the NSDP, Northern Cape Provincial Growth\
+    \ and Development Strategy and IDP\u2019s with the aim of halving unemployment\
+    \ and achieving an average annual economic growth of 4-6 per cent.\r\n\r\n* To\
+    \ ensure an equitable, socially responsible business environment that allows for\
+    \ predictability.\r\n\r\n* To manage the development and promotion of the Northern\
+    \ Cape as a competitive tourist destination"
+  name: Core functions
 resources:
   'EPRE for Vote 06 : Economic Development and Tourism':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/79a71137-106b-4a2d-ae17-7e3b549f6b97/resource/661a0a04-10b0-4874-b3d8-100791a1944b/download/nc-eco.-dev.-and-tourism.xlsm
+      url: https://budgetdata.openup.org.za/dataset/79a71137-106b-4a2d-ae17-7e3b549f6b97/resource/661a0a04-10b0-4874-b3d8-100791a1944b/download/nc-eco.-dev.-and-tourism.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 06 - Economic Development & Tourism.pdf

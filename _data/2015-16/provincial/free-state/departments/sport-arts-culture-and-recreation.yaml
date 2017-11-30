@@ -27,14 +27,34 @@ government:
   name: Free State
   slug: free-state
 name: Sport, Arts, Culture and Recreation
-narrative: {}
+narratives:
+- content: "Championing social transformation\r\n\r\n"
+  name: Vision
+- content: "Creation of an enabling environment for social cohesion and nation building\
+    \ by:\r\n\r\n* Establishing structures of civil society to improve levels of governance\
+    \ and administration within Sport, Arts, Culture and Recreation;\r\n\r\n* Implementing\
+    \ inclusive programmes that enhance and retain Free State talent and capacity\
+    \ within Sport, Arts, Culture and Recreation as well as ensuring developmental\
+    \ pathways towards healthy lifestyles and excellence;\r\n\r\n* Promoting intra\
+    \ and inter participation and cooperation within all spheres of government;\r\n\
+    \r\n* Promoting Sport, Arts, Culture and Recreation tourism within and into the\
+    \ Free State province\r\n\r\n\r\n"
+  name: Mission
+- content: "Strategic Goal of the whole Department:\r\n\r\nThe promotion, development\
+    \ and transformation of Sport, Arts, Culture and Recreation in order to contribute\
+    \ to:\r\n\r\n* sustainable economic growth and opportunities,\r\n\r\n* nation\
+    \ building,\r\n\r\n* good governance and\r\n\r\n* social and human capital development.\r\
+    \n\r\nProgrammes of the Department:\r\n\r\n* Administration\r\n\r\n* Cultural\
+    \ Affairs\r\n\r\n* Library and Archives Services\r\n\r\n* Sport and Recreation\r\
+    \n"
+  name: Core functions
 resources:
   'EPRE for Vote 12 : Sport, Arts, Culture and Recreation':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/5fc06e65-258d-4654-a10f-93bc85e2ceb6/resource/d7ac7960-35e3-4d3f-997e-06595f29945d/download/fs-sport-arts-culture-and-recreation.xlsx
+      url: https://budgetdata.openup.org.za/dataset/5fc06e65-258d-4654-a10f-93bc85e2ceb6/resource/d7ac7960-35e3-4d3f-997e-06595f29945d/download/fs-sport-arts-culture-and-recreation.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 12 - Sport, Arts, Culture and Recreation.pdf

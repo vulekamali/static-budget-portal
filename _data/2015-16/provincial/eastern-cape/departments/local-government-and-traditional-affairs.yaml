@@ -27,14 +27,38 @@ government:
   name: Eastern Cape
   slug: eastern-cape
 name: Local Government and Traditional Affairs
-narrative: {}
+narratives:
+- content: "An integrated, capable, responsive and accountable local government and\
+    \ traditional institution system\r\nfocusing on the needs of the community.\r\n\
+    \r\n"
+  name: Vision
+- content: "To promote a developmental local state and traditional institutions that\
+    \ are accountable, focused on\r\ncitizen\u2019s priorities and capable of delivering\
+    \ high-quality services consistently and sustainably through\r\ncooperative governance\
+    \ and participatory democracy.\r\n\r\n"
+  name: Mission
+- content: "* Ensures the transformation and development of local government, institutions\
+    \ of traditional\r\nleadership and democratic structures of governance;\r\n\r\n\
+    * Provides support to municipalities in order to improve access to basic services;\r\
+    \n\r\n* Promotes and supports the implementation of the Community Work Programme\
+    \ (CWP);\r\n\r\n* Strengthens actions supportive of the human settlements outcomes;\r\
+    \n\r\n* Provides support to municipalities to deepen democracy through the Ward\
+    \ Committee Model;\r\n\r\n* Provides support to municipalities to improve their\
+    \ administrative, governance and financial\r\ncapabilities;\r\n\r\n* Provides\
+    \ integrated support to municipalities through a single window of co-ordination\
+    \ that enables\r\ncommunities to experience cohesion, predictability, excellence\
+    \ in service delivery and control over\r\ntheir future;\r\n\r\n* Provides administrative\
+    \ and infrastructural support to traditional leadership institutions; and\r\n\r\
+    \n* Promotes and supports the participation of traditional communities in developmental\
+    \ programmes."
+  name: Core functions and responsibilities
 resources:
   'EPRE for Vote 07 : Local Government and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/25725c1e-f199-44ff-af63-371e64946d19/resource/8d743baf-79f3-40fd-b31e-51e17782c9c3/download/ec-cogta.xlsx
+      url: https://budgetdata.openup.org.za/dataset/25725c1e-f199-44ff-af63-371e64946d19/resource/8d743baf-79f3-40fd-b31e-51e17782c9c3/download/ec-cogta.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 07 - Coop Gov and Traditional Affairs.pdf

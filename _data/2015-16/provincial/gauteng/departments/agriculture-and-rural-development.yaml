@@ -27,14 +27,35 @@ government:
   name: Gauteng
   slug: gauteng
 name: Agriculture and Rural Development
-narrative: {}
+narratives:
+- content: "The vision of the Gauteng Department of Agriculture and Rural Development\
+    \ (GDARD) as reflected in its revised\r\n2014-2019 Strategic Plan is: An economically\
+    \ transformed agricultural sector and sustainable environmental\r\nmanagement\
+    \ for healthy, food secure, developed rural and urban communities in Gauteng.\r\
+    \n\r\n"
+  name: Vision
+- content: "The mission of the GDARD as reflected in its revised 2014-2019 Strategic\
+    \ Plan is to radically modernize and transform agriculture, environment and rural\
+    \ development by:\r\n\r\n* Promoting environmental protection and management;\r\
+    \n\r\n* Expanding access to agricultural opportunities;\r\n\r\n* Maximising food\
+    \ security;\r\n\r\n* Up-scaling rural development;\r\n\r\n* Promoting the One\
+    \ Health System; and\r\n\r\n* Supporting sustainable livelihoods and communities.\r\
+    \n\r\n\r\n"
+  name: Mission
+- content: "The department\u2019s mandate is derived from Sections 24 and 27 and Schedules\
+    \ 4 and 5 of the Constitution of the Republic of South Africa, 1996. These deal\
+    \ with ensuring an environment that supports human well-being, conservation of\
+    \ the environment, provision of sufficient food and water, animal disease control,\
+    \ management of abattoirs and provision of veterinary services in the province\r\
+    \n\r\n"
+  name: Core functions
 resources:
   'EPRE for Vote 11 : Agriculture and Rural Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/abfd1f38-a2cc-46aa-929e-a58e0419b5c6/resource/7bbbe7a3-2455-499d-9083-b81125afd3ac/download/gt-agriculture-and-rural-dev.xlsx
+      url: https://budgetdata.openup.org.za/dataset/abfd1f38-a2cc-46aa-929e-a58e0419b5c6/resource/7bbbe7a3-2455-499d-9083-b81125afd3ac/download/gt-agriculture-and-rural-dev.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 11 - Agriculture and Rural Development.pdf

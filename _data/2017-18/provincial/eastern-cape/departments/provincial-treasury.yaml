@@ -27,14 +27,27 @@ government:
   name: Eastern Cape
   slug: eastern-cape
 name: Provincial Treasury
-narrative: {}
+narratives:
+- content: "A prosperous province supported by sound financial and resource management.\r\
+    \n\r\n"
+  name: Vision
+- content: "To provide strategic and technical leadership in the allocation management\
+    \ and utilisation of financial resources in order to improve the quality of life\
+    \ in the province.\r\n\r\n"
+  name: Mission
+- content: The oversightroleof the department requires it to ensure the stability
+    and soundness of the financial system and financial services, coordinate intergovernmental
+    financial and fiscla relations, manage the budget preparation process and enforce
+    transparency and effective management in respect of revenue and expenditure,assets
+    amd liabilites, public entities and constitutional institutions
+  name: Core functions
 resources:
   'EPRE for Vote 12 : Provincial Treasury':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/c12b9211-ef39-447f-9ca5-bc740fd79b9f/resource/b07764af-1549-45ba-bfee-ff6f770688d7/download/ec-provincial-treasury.xlsm
+      url: https://budgetdata.openup.org.za/dataset/c12b9211-ef39-447f-9ca5-bc740fd79b9f/resource/b07764af-1549-45ba-bfee-ff6f770688d7/download/ec-provincial-treasury.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 12 - Provincial Treasury.pdf

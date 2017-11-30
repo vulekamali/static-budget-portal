@@ -27,14 +27,32 @@ government:
   name: Limpopo
   slug: limpopo
 name: Social Development
-narrative: {}
+narratives:
+- content: "A caring and self-reliant Society.\r\n\r\n"
+  name: Vision
+- content: "To transform our society by building conscious and capable citizens through\
+    \ the provision of integrated social development services\r\n\r\n"
+  name: Mission
+- content: "Integrated poverty alleviation programmes through sustainable development\
+    \ programmes in partnership with implementing agencies (such as Non-government\
+    \ organisation (NGOs), Community based organisations (CBOs) and Faith based organisations\
+    \ (FBOs).\r\n\r\n* Protection, care and support to older people.\r\n* Prevention,\
+    \ care and support services to people with disabilities.\r\n* Integrated services\
+    \ to individuals and families affected and infected by HIV and AIDS.\r\n* Social\
+    \ relief of distress.\r\n* Prevention, care and support services to families.\r\
+    \n* Protection and care services to children.\r\n* Social crime prevention and\
+    \ intervention services.\r\n* Victim empowerment services to victims of crime\
+    \ and violence.\r\n* Substance abuse, prevention, treatment and rehabilitation\
+    \ services.\r\n* These services are supported through financial management, human\
+    \ resource development and management and   other support services."
+  name: Core functions
 resources:
   'EPRE for Vote 12 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/38214806-3e90-4143-bf05-8370031d4999/resource/3e2b611a-4ea3-4f96-ad0d-811573423258/download/lim-social-development.xlsm
+      url: https://budgetdata.openup.org.za/dataset/38214806-3e90-4143-bf05-8370031d4999/resource/3e2b611a-4ea3-4f96-ad0d-811573423258/download/lim-social-development.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 12 - Social Development.pdf

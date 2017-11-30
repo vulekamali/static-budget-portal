@@ -27,14 +27,34 @@ government:
   name: Eastern Cape
   slug: eastern-cape
 name: Roads and Public Works
-narrative: {}
+narratives:
+- content: "Leaders in the provision of high quality services in infrastructure delivery.\r\
+    \n\r\n"
+  name: Vision
+- content: "A custodian of provincial government immovable assets and a provider of\
+    \ sustainable infrastructure\r\nresulting in socio-economic reforms, sector transformation\
+    \ and development.\r\n\r\n"
+  name: Mission
+- content: "The core mandate of the department is to:\r\n\r\n* Provide and manage\
+    \ government\u2019s roads and building infrastructure, including small town\r\n\
+    revitalisation, provision of accommodation, leadership to and regulation of the\
+    \ construction and\r\nproperty industries and related professions;\r\n\r\n* Manage\
+    \ and lead the implementation of the Expanded Public Works Programme (EPWP);\r\
+    \n\r\n* Regulate and manage the implementation of the Government Immovable Asset\
+    \ Management Act,\r\n2007 (GIAMA);\r\n* Implement the Accelerated Professional\
+    \ and Trade Competencies Development (APTCoD)\r\n\r\nprogramme as the skills development\
+    \ initiative aimed at developing artisan and professional skills\r\nwithin the\
+    \ province; and\r\n\r\n* Promote accessibility and safe affordable movement of\
+    \ people, goods and services through the\r\ndelivery and maintenance of transport\
+    \ infrastructure."
+  name: Core functions and responsibilities
 resources:
   'EPRE for Vote 05 : Roads and Public Works':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/f1342814-949f-4ed7-b8ac-dd975582269c/resource/0f957d6c-f511-43d7-beaa-69899825617b/download/ec-roads-and-public-works.xlsx
+      url: https://budgetdata.openup.org.za/dataset/f1342814-949f-4ed7-b8ac-dd975582269c/resource/0f957d6c-f511-43d7-beaa-69899825617b/download/ec-roads-and-public-works.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 05 - Road and Public works.pdf

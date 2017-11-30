@@ -27,14 +27,14 @@ government:
   name: Gauteng
   slug: gauteng
 name: Economic Development
-narrative: {}
+narratives: []
 resources:
   'EPRE for Vote 03 : Economic Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/3b52c50f-344a-4011-a7d0-421e9c124bef/resource/05e84a26-c159-4104-a7be-5d34c2c8f72c/download/gt-economic-development.xlsm
+      url: https://budgetdata.openup.org.za/dataset/3b52c50f-344a-4011-a7d0-421e9c124bef/resource/05e84a26-c159-4104-a7be-5d34c2c8f72c/download/gt-economic-development.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 03 - Economic Development.pdf

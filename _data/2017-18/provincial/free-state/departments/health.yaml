@@ -27,14 +27,34 @@ government:
   name: Free State
   slug: free-state
 name: Health
-narrative: {}
+narratives:
+- content: "Increasing life expectancy through health system effectiveness, driving\
+    \ system change and ensuring sustainable quality services.\r\n\r\n"
+  name: Vision
+- content: "By creating a value driven institution that inculcates operational efficiency\
+    \ and accountability in delivering desired outcomes effectively.\r\n\r\n"
+  name: Mission
+- content: "The Free State Department of Health provides comprehensive health care\
+    \ services, which include the prevention of disease, health promotion, curative\
+    \ and rehabilitative services to the community. The Department delivers an integrated\
+    \ comprehensive level I to IV health care service to the Free State population\
+    \ as well as persons visiting the province. In terms of co-operative agreement,\
+    \ certain level II, III and IV services are also delivered to Northern Cape residents\
+    \ and Lesotho citizens.\r\n\r\nThe services of the Department are geared at achieving\
+    \ Outcome 2, \u201CLong and healthy life for all South Africans\u201D, which constitutes\
+    \ the Negotiated Service Delivery Agreement (NSDA) for the health sector: For\
+    \ the health sector to achieve this outcome, key interventions to improve life\
+    \ expectancy will include, addressing the social determinants of health; promoting\
+    \ health; as well as reducing the burden of disease from both Communicable Diseases\
+    \ and Non-Communicable Diseases"
+  name: Core functions
 resources:
   'EPRE for Vote 05 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/82b2e6c0-7d5a-4a1c-8427-a8a5a48101a8/resource/5acbf022-18f1-4d97-b6ce-2973391606f9/download/fs-health.xlsm
+      url: https://budgetdata.openup.org.za/dataset/82b2e6c0-7d5a-4a1c-8427-a8a5a48101a8/resource/5acbf022-18f1-4d97-b6ce-2973391606f9/download/fs-health.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 05 - Health.pdf

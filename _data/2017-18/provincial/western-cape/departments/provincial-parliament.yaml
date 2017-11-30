@@ -27,14 +27,36 @@ government:
   name: Western Cape
   slug: western-cape
 name: Provincial Parliament
-narrative: {}
+narratives:
+- content: "A dynamic, effective and efficient parliament supporting constitutional\
+    \ democracy.\r\n\r\n"
+  name: Vision
+- content: "The parliamentary administration will provide quality parliamentary and\
+    \ corporate support to enable Members to fulfil their constitutional functions\
+    \ and to facilitate public involvement in parliamentary activities.\r\nBy:\r\n\
+    \r\n* providing quality support to the House and committees\r\n\r\n* promoting\
+    \ public access and involvement in the law-making and oversight processes\r\n\r\
+    \n* ensuring effective communication with all stakeholders\r\n\r\n* ensuring seamless\
+    \ and synergistic parliamentary processes and systems\r\n\r\n* investing in appropriately\
+    \ skilled staff\r\n\r\n* providing a secure environment that is conducive to empowering\
+    \ and enabling members and   staff\r\n\r\n* implementing and adhering to good\
+    \ corporate governance systems and monitoring mechanisms\r\n managing resources\
+    \ effectively, efficiently and economically\r\n\r\n"
+  name: Mission
+- content: "To provide for:\r\n\r\n* procedural and related support to the House and\
+    \ committees to conduct their legislative  and oversight\r\n\r\n* functions effectively;\r\
+    \n\r\n* corporate support to Members and staff to perform their duties effectively;\r\
+    \n\r\n* the promotion of optimal public participation in parliamentary processes;\
+    \ and\r\n\r\n* the promotion of sound administration so as to ensure organisational\
+    \ efficiency."
+  name: Core functions and responsibilities
 resources:
   'EPRE for Vote 02 : Provincial Parliament':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/e8952a28-e278-4f89-8a9d-db98e2e7813d/resource/a3a2243f-9db4-4e11-9cd0-ae362c7ce213/download/wc-provincial-parliament.xlsm
+      url: https://budgetdata.openup.org.za/dataset/e8952a28-e278-4f89-8a9d-db98e2e7813d/resource/a3a2243f-9db4-4e11-9cd0-ae362c7ce213/download/wc-provincial-parliament.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 02 - Provincial Parliament.pdf

@@ -27,26 +27,24 @@ government:
   name: South Africa
   slug: south-africa
 name: Health
-narrative:
-  mandate:
-    content: "The Department of Health derives its mandate from the National Health\
-      \ Act\n(2003), which requires the department to provide a framework for a structured\n\
-      uniform health system within South Africa. The act sets out the functions of\n\
-      the three levels of government as they relate to health services. The\ndepartment\
-      \ contributes directly to achieving the government outcome that calls\nfor a\
-      \ long and healthy life for all South Africans\_(outcome 2).\n\n"
-    name: Mandate
-  vote-purpose:
-    content: '_Provide leadership and coordination of health services to promote the
-      health
+narratives:
+- content: '_Provide leadership and coordination of health services to promote the
+    health
 
-      of all people in South Africa through_ _an accessible, caring and high quality
+    of all people in South Africa through_ _an accessible, caring and high quality
 
-      health system based on the primary health care approach._
+    health system based on the primary health care approach._
 
 
-      '
-    name: Vote purpose
+    '
+  name: Vote purpose
+- content: "The Department of Health derives its mandate from the National Health\
+    \ Act\n(2003), which requires the department to provide a framework for a structured\n\
+    uniform health system within South Africa. The act sets out the functions of\n\
+    the three levels of government as they relate to health services. The\ndepartment\
+    \ contributes directly to achieving the government outcome that calls\nfor a long\
+    \ and healthy life for all South Africans\_(outcome 2).\n\n"
+  name: Mandate
 resources:
   ENE for Vote 16 - Health:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

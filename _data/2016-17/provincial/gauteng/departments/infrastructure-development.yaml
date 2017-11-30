@@ -27,14 +27,27 @@ government:
   name: Gauteng
   slug: gauteng
 name: Infrastructure Development
-narrative: {}
+narratives:
+- content: "To be a leading sustainable infrastructure provider and facilitator that\
+    \ positions Gauteng as a globally competitive city region\r\nwith inclusive economic\
+    \ growth and decent work for all.\r\n\r\n\r\n"
+  name: Vision
+- content: "To contribute towards the radical transformation, modernisation and re-industrialisation\
+    \ of Gauteng by accelerating\r\nintegrated service delivery, maintenance and management\
+    \ of public infrastructure and deploying environment professionals\r\nwhile encouraging\
+    \ the active participation of an empowered citizenry.\r\n\r\n\r\n"
+  name: Mission
+- content: "\u2022 Implementation of Social Infrastructure\r\n\r\n\u2022 Skills Development\r\
+    \n\r\n\u2022 Community Participation\r\n\r\n\u2022 Capital Project Management\r\
+    \n\r\n\u2022 Maintenance Services\r\n\r\n\u2022 Provincial Property Management"
+  name: Core functions and responsibilities
 resources:
   'EPRE for Vote 15 : Infrastructure Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/9aa709a2-9987-4046-8584-e1a00c46a27e/resource/58a2772f-1354-4ff7-aabf-f51d7ca28b8b/download/gt-infrastructure-development.xlsm
+      url: https://budgetdata.openup.org.za/dataset/9aa709a2-9987-4046-8584-e1a00c46a27e/resource/58a2772f-1354-4ff7-aabf-f51d7ca28b8b/download/gt-infrastructure-development.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 15 - Infrastructure Development.pdf

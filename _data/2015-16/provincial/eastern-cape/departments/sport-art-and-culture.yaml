@@ -27,14 +27,25 @@ government:
   name: Eastern Cape
   slug: eastern-cape
 name: Sport, Art and Culture
-narrative: {}
+narratives:
+- content: "A united, active and winning province through sport, recreation, arts\
+    \ and culture.\r\n\r\n"
+  name: Vision
+- content: "To develop and promote sport, recreation, arts and culture for spiritual,\
+    \ intellectual, physical and material\r\nadvancement of the people of the Eastern\
+    \ Cape.\r\n\r\n"
+  name: Mission
+- content: "* Development, promotion and transformation of artists, athletes, cultural\
+    \ and sporting structures\r\n\r\n* Conservation and preservation of heritage through\
+    \ the provision of museums, libraries and archive\r\nservices."
+  name: Core functions and responsibilities
 resources:
   'EPRE for Vote 14 : Sport, Art and Culture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/fcf214e7-5417-41cb-abf9-3a20bbaebb2b/resource/3f78fc0a-7c92-4272-8779-82fcf7d96b8b/download/ec-sport-rec-arts-and-culture.xlsx
+      url: https://budgetdata.openup.org.za/dataset/fcf214e7-5417-41cb-abf9-3a20bbaebb2b/resource/3f78fc0a-7c92-4272-8779-82fcf7d96b8b/download/ec-sport-rec-arts-and-culture.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 14 - Sport, Rec, Arts and Culture.pdf

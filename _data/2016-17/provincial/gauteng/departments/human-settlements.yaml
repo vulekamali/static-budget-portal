@@ -27,14 +27,32 @@ government:
   name: Gauteng
   slug: gauteng
 name: Human Settlements
-narrative: {}
+narratives:
+- content: "To provide integrated sustainable human settlements and improved quality\
+    \ of household life.\r\n\r\n"
+  name: Vision
+- content: "To provide relevant, differentiated and good quality housing opportunities\
+    \ to qualifying beneficiaries in partnership with\r\nvarious stakeholders.\r\n\
+    \r\n"
+  name: Mission
+- content: "The mandate of the department is derived from the Constitution. Its primary\
+    \ roles are:\r\n\r\n\u2022 To promote and facilitate the provision of adequate\
+    \ housing in the province;\r\n\r\n\u2022 To develop provincial housing policies\
+    \ that will strengthen the ability to provide housing opportunities to qualifying\r\
+    \nbeneficiaries in order to build sustainable communities;\r\n\r\n\u2022 To develop\
+    \ and implement programmes and projects that give effect to the province\u2019\
+    s short, medium and long term\r\nhousing plans; and\r\n\r\n\u2022 To manage the\
+    \ housing delivery process and transform informal settlements, especially in priority\
+    \ townships and 50\r\npoorest wards, into sustainable and vibrant communities;\
+    \ and provide services in respect of subsidies and rental housing."
+  name: Core functions and responsibilities
 resources:
   'EPRE for Vote 08 : Human Settlements':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
     formats:
     - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/2b0d9fa6-884e-4c00-ab87-89ae692ea115/resource/834829d6-b237-44f2-b0d2-f1a9c9068a39/download/gt-human-settlement.xlsm
+      url: https://budgetdata.openup.org.za/dataset/2b0d9fa6-884e-4c00-ab87-89ae692ea115/resource/834829d6-b237-44f2-b0d2-f1a9c9068a39/download/gt-human-settlement.xlsm
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 08 - Human Settlements.pdf
