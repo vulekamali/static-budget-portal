@@ -1,0 +1,24 @@
+.Disclaimer {
+  background-color: #2fb544;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-family: Verdana, sans-serif;
+  font-size: 11px;
+
+  @media screen and (min-width: 800px) {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+  }
+}
+
+.Disclaimer-link {
+  opacity: 0.8;
+  color: white;
+  display: inline-block;
+
+  &:hover {
+    opacity: 1;
+  }
+}

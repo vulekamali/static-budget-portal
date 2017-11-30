@@ -60,6 +60,10 @@
 .Page-blurb {
   font-size: 20px;
   line-height: 32px;
+
+  li > p {
+    margin: 0;
+  }
 }
 
 .Page-section {

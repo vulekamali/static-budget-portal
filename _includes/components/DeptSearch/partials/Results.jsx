@@ -11,12 +11,14 @@ export default function Results({ state }) {
       !(i > 0 && spheres === 'national')
     ) {
       if (group.departments.length > 0) {
+        const newDepartments = group.departments.sort((a, b) => a.name.localeCompare(b.name));
+
         return (
           <li className="DeptSearch-group">
             <h4 className="DeptSearch-title">{group.name} Departments</h4>
-            <ul className="DeptSearch-results">
+            <ul className="DeptSearch-nestedResults">
               {
-                group.departments.map((link) => {
+                newDepartments.map((link) => {
                   return (
                     <li>
                       <a className="DeptSearch-link" href={link.url_path}>{link.name}</a>

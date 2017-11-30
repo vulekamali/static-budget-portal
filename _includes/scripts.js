@@ -1,4 +1,6 @@
 import 'classlist-polyfill';
+import 'whatwg-fetch';
+
 import 'preact/devtools';
 import './styles.scss';
 

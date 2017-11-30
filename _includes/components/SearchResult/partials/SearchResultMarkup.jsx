@@ -2,7 +2,14 @@ import { h } from 'preact';
 import Form from './Form.jsx';
 
 
-export default function SearchResultMarkup({ state, updateItem, page, province, results, search, selectedYear, updateFilter }) {
+export default function SearchResultMarkup({ loading, error, state, updateItem, page, province, results, search, selectedYear, updateFilter }) {
+  if (error) {
+    return (
+      <div className="SearchResult-wrap">
+        <span>Something went wrong with the search. Please try again at a later point.</span>
+      </div>
+    );
+  }
 
   const preDepartments = results.filter((item) => {
     const provSlugIndex = item.extras.findIndex(
@@ -62,7 +69,15 @@ export default function SearchResultMarkup({ state, updateItem, page, province, 
       <div className="SearchResult-group">
         <div className="SearchResult-title">Suggested Departments{ departments ? extra : ''}</div>
         <div className="SearchResult-list">
-          {departments.splice((page * 10) - 10, 10)}
+          {loading ? <div>Loading...</div> : null}
+          {!loading && preDepartments.length > 0 ? departments.splice((page * 10) - 10, 10) : null}
+          {!loading && preDepartments.length < 1 ?
+            <div>
+              <span>We didn&#8217;t find anything for &#8217;{ search }&#8217;.</span>
+              <a href={`/${selectedYear}/departments`}>View a list of all departments</a>
+            </div> :
+            null
+          }
         </div>
       </div>
 

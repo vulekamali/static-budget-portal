@@ -1,15 +1,53 @@
 .Search {
-  padding: 30px;
   background-color: #f0f0f0;
   width: 100%;
+
+  @media screen and (min-width: 650px) {
+    display: table;
+  }
+}
+
+.Search-padding {
+  padding: 30px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.Search-logo {
+  font-size: 16px;
+  font-weight: bold;
+
+  @media screen and (min-width: 650px) {
+    width: 220px;
+  }
+}
+
+.Search-logoWrap {
+  text-align: center;
+  position: relative;
+  bottom: 11px;
+
+  @media screen and (min-width: 650px) {
+    text-align: left;
+    top: 6px;
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+
+.Search-function {
+  width: 100%;
+
+  @media screen and (min-width: 650px) {
+    vertical-align: top;
+    display: table-cell;
+  }
 }
 
 .Search-wrap {
   background: white;
   position: relative;
   z-index: z-index('Search-wrap');
-  max-width: 600px;
-  margin: 0 auto;
 
   &.is-focused {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
