@@ -52,6 +52,10 @@
   max-height: 36px;
 }
 
+.SearchResult-error {
+  padding: 20px 10px;
+}
+
 .SearchResult-item {
   background: white;
   z-index: z-index('SearchResult-item');
