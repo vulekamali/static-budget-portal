@@ -1,6 +1,7 @@
 import { h, Component } from 'preact';
 import ShareMarkup from './ShareMarkup.jsx';
 
+
 export default class ShareContainer extends Component {
   constructor(props) {
     super(props);

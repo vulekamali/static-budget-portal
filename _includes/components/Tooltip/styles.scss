@@ -78,10 +78,11 @@
   padding: 10px 10px 20px;
 
   @media screen and (min-width: 800px) {
+    left: -30%;
     width: 250px;
     position: absolute;
     bottom: calc(100% - 0.1em);
-    
+
     &.is-down {
       top: calc(100% - 0.1em);
     }

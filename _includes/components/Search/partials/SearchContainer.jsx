@@ -84,7 +84,7 @@ export default class SearchContainer extends Component {
       .catch((err) => {
         this.setState({ loading: false });
         this.setState({ error: true });
-        return new Error(err);
+        console.warn(err);
       });
   }
 
@@ -94,7 +94,7 @@ export default class SearchContainer extends Component {
     this.setState({ loading: true });
     this.setState({ keywords });
 
-    if (this.state.keywords.length > 3) {
+    if (this.state.keywords.length > 2) {
       if (this.state.timeoutId) {
         clearTimeout(this.state.timeoutId);
       }

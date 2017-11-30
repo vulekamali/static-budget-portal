@@ -10,8 +10,9 @@ function Search() {
 
   if (nodesArray.length > 0) {
     nodesArray.forEach((node) => {
-      const selectedYear = node.getAttribute('data-year');
-      render(<SearchContainer {...{ selectedYear, search }} />, node);
+      const nestedNode = node.getElementsByClassName('Search-function')[0];
+      const selectedYear = nestedNode.getAttribute('data-year');
+      render(<SearchContainer {...{ selectedYear, search }} />, nestedNode);
     });
   }
 }

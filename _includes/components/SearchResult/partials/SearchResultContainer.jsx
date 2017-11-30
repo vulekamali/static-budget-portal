@@ -12,11 +12,12 @@ export default class SearchResultsContainer extends Component {
       page: 1,
       province: 'all',
       open: null,
+      error: false,
+      loading: true,
     };
 
     this.updateItem = this.updateItem.bind(this);
     this.updateFilter = this.updateFilter.bind(this);
-    this.changeShown = this.changeShown.bind(this);
   }
 
   componentDidMount() {
@@ -40,8 +41,15 @@ export default class SearchResultsContainer extends Component {
     });
 
     request
-      .then(array => this.setState({ results: array }))
-      .catch(err => new Error(err));
+      .then((array) => {
+        this.setState({ loading: false });
+        this.setState({ results: array });
+      })
+      .catch((err) => {
+        this.setState({ loading: false });
+        this.setState({ error: true });
+        console.warn(err);
+      });
   }
 
   updateItem(key, value, parent) {
@@ -68,37 +76,9 @@ export default class SearchResultsContainer extends Component {
     return this.setState({ open: filter });
   }
 
-  changeShown(value) {
-    const realValue = value > this.state.count ? this.state.count : value;
-    this.setState({ shown: realValue });
-
-    const url = `https://treasurydata.openup.org.za/api/3/action/package_search?q=${this.props.search}&start=0&rows=${this.state.shown}&fq=vocab_financial_years:${this.props.selectedYear}`;
-
-    const request = new Promise((resolve, reject) => {
-      fetch(url)
-        .then((response) => {
-          if (!response.ok) {
-            reject(response);
-          }
-
-          response.json()
-            .then((data) => {
-              this.setState({ count: data.result.count });
-              resolve(data.result.results);
-            })
-            .catch(err => reject(err));
-        })
-        .catch(err => reject(err));
-    });
-
-    request
-      .then(array => this.setState({ results: array }))
-      .catch(err => new Error(err));
-  }
-
   render() {
     return (
-      <SearchResultMarkup results={this.state.results} search={this.props.search} selectedYear={this.props.selectedYear} updateFilter={this.updateFilter} shown={this.state.shown} changeShown={this.changeShown} page={this.state.page} province={this.state.province} state={this.state} updateItem={this.updateItem} />
+      <SearchResultMarkup results={this.state.results} search={this.props.search} selectedYear={this.props.selectedYear} updateFilter={this.updateFilter} shown={this.state.shown} changeShown={this.changeShown} page={this.state.page} province={this.state.province} state={this.state} updateItem={this.updateItem} error={this.state.error} loading={this.state.loading} />
     );
   }
 }

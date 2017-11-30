@@ -117,11 +117,6 @@
   &:hover {
     background-color: darken(white, 5%);
   }
-
-  @media screen and (min-width: 900px) {
-    float: left;
-    width: (100% / 2);
-  }
 }
 
 .DeptSearch-list {
@@ -132,6 +127,15 @@
 .DeptSearch-results {
   padding-left: 0;
   list-style: none;
+}
+
+.DeptSearch-nestedResults {
+  padding-left: 0;
+  list-style: none;
+
+  @media screen and (min-width: 900px) {
+    column-count: 2;
+  }
 }
 
 .DeptSearch-items {

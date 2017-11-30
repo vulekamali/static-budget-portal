@@ -20,7 +20,7 @@ export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, 
             important
             direction="down"
             title="Content Unavailable"
-            description={`There is no exact match for this department in ${data.name}. Do you want to review the list of all departments for this year?`}
+            description={`There is no exact match for this department in ${data.name}.`}
             actions={[{ text: `View ${data.name} Departments`, link: `/${data.name}/departments` }]}
             openAction={() => updateItem('tooltip', data.name)}
             closeAction={() => updateItem('tooltip', null)}
