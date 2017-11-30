@@ -6,7 +6,7 @@ financial_years:
     slug: agriculture-forestry-and-fisheries
     url_path: /2015-16/national/departments/agriculture-forestry-and-fisheries
   id: 2015-16
-  is_selected: false
+  is_selected: true
 - closest_match:
     is_exact_match: true
     name: Agriculture, Forestry and Fisheries
@@ -22,7 +22,7 @@ financial_years:
     slug: agriculture-forestry-and-fisheries
     url_path: /2017-18/national/departments/agriculture-forestry-and-fisheries
   id: 2017-18
-  is_selected: true
+  is_selected: false
 government:
   name: South Africa
   slug: south-africa
@@ -51,9 +51,9 @@ resources:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
     formats:
-    - format: XLSX
-      url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote24_ChapterTables.xlsx
     - format: PDF
-      url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2024%20Agriculture,%20Forestry%20and%20Fisheries.pdf
+      url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/Vote%2024%20Agriculture,%20Forestry%20and%20Fisheries.pdf
+    - format: XLS
+      url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote24.xls
 slug: agriculture-forestry-and-fisheries
 vote_number: 24
