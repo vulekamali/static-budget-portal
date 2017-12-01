@@ -1,25 +1,18 @@
 import analyticsEvent from './../helpers/analyticsEvent.js';
 
+
 function loadGoogleAnalytics() {
-  window.dataLayer = [
-    ['js', new Date()],
-    ['config', 'UA-93649482-8'],
-  ];
+  const {
+    search_type: searchType,
+    search_string: searchString,
+  } = window.budgetPortal.stringQueries;
 
-  if ('addEventListener' in window) {
-    window.addEventListener('error', (event) => {
-      analyticsEvent(
-        'send',
-        'exception',
-        {
-          exDescription: `${event.message} @ ${event.filename}: ${event.lineno}`,
-          exFatal: true,
-        },
-      );
-    });
+  analyticsEvent('create', 'UA-93649482-8', 'auto');
+  analyticsEvent('send', 'pageview');
+
+  if (searchType && searchString) {
+    analyticsEvent('send', 'event', 'search', searchType, searchString);
   }
-
-  return null;
 }
 
 

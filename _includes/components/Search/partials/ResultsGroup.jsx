@@ -1,6 +1,5 @@
 import { h } from 'preact';
 import Loading from './Loading.jsx';
-import analyticsEvents from './../../../utilities/js/helpers/analyticsEvent.js';
 
 
 export default function ResultsGroups({ search, initRequest, keywords, error, results, loading, selectedYear, count }) {
@@ -16,11 +15,13 @@ export default function ResultsGroups({ search, initRequest, keywords, error, re
     }
 
     if (results.length < 1) {
+      const analyticsQueries = `?search_type=search-empty-view-all&search_string=${selectedYear}%3A%20${keywords}`;
+
       return (
         <ul className="Search-list">
           <li className="Search-error">
             <span>We didn&#8217;t find anything for &#8217;{ keywords }&#8217;. </span>
-            <a href={`/${selectedYear}/departments`}>View a list of all departments</a>
+            <a href={`/${selectedYear}/departments${analyticsQueries}`}>View a list of all departments</a>
           </li>
         </ul>
       );
@@ -46,19 +47,13 @@ export default function ResultsGroups({ search, initRequest, keywords, error, re
             const nameSlug = item.extras[nameSlugIndex].value;
             const departmentType = item.province.length > 0 ? item.province : 'National';
             const url = item.province.length > 0 ? `/${selectedYear}/provincial/${provSlug}/departments/${nameSlug}` : `/${selectedYear}/national/departments/${nameSlug}`;
+            const analyticsQueries = `?search_type=suggestion-click&search_string=${selectedYear}%3A%20${keywords}`;
 
             return (
               <li>
                 <a
                   className="Search-link"
-                  href={url}
-                  onClick={() => analyticsEvents(
-                    'send',
-                    'event',
-                    'search',
-                    'full-search',
-                    `${selectedYear}: ${keywords}`,
-                  )}
+                  href={url + analyticsQueries}
                 >
                   {departmentType} Department: {item.extras[0].value}
                 </a>

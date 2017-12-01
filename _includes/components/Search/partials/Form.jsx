@@ -19,10 +19,14 @@ export default function Form({ eventHandlers, keywords, selectedYear }) {
 
     return setFocus(false);
   };
+
   const searchUrl = `/${selectedYear}/search-result`;
 
   return (
     <form className="Search-form" action={searchUrl} method="GET">
+      <input type="hidden" name="search_type" value="full-search" />
+      <input type="hidden" name="search_string" value={keywords} />
+
       <input
         name="search"
         className="Search-keywords"
@@ -35,17 +39,7 @@ export default function Form({ eventHandlers, keywords, selectedYear }) {
       />
 
       <div className="Search-action">
-        <button
-          className="Search-button"
-          type="submit"
-          onClick={() => analyticsEvents(
-            'send',
-            'event',
-            'search',
-            'full-search',
-            `${selectedYear}: ${keywords}`,
-          )}
-        >
+        <button className="Search-button" type="submit">
           <Icon />
         </button>
       </div>
