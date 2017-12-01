@@ -1,5 +1,6 @@
 import { h, Component } from 'preact';
 import SearchMarkup from './SearchMarkup.jsx';
+import analyticsEvents from './../../../utilities/js/helpers/analyticsEvent.js';
 
 
 export default class SearchContainer extends Component {
@@ -62,11 +63,32 @@ export default class SearchContainer extends Component {
       fetch(keyword)
         .then((response) => {
           if (!response.ok) {
+            response.text()
+              .then((data) => {
+                analyticsEvents(
+                  'send',
+                  'event',
+                  'search-error',
+                  'error-response',
+                  JSON.stringify({ url: response.url, body: data.slice(0, 500) }),
+                );
+              });
+
             reject(response);
           }
 
           response.json()
             .then((data) => {
+              if (!data.success) {
+                analyticsEvents(
+                  'send',
+                  'event',
+                  'search-error',
+                  'ckan-200-error',
+                  JSON.stringify({ url: response.url, error: data.error }),
+                );
+              }
+
               this.setState({ count: data.result.count });
               resolve(data.result.results);
             })

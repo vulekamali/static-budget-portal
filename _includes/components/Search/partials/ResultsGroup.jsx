@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import Loading from './Loading.jsx';
+import analyticsEvents from './../../../utilities/js/helpers/analyticsEvent.js';
 
 
 export default function ResultsGroups({ search, initRequest, keywords, error, results, loading, selectedYear, count }) {
@@ -48,7 +49,17 @@ export default function ResultsGroups({ search, initRequest, keywords, error, re
 
             return (
               <li>
-                <a className="Search-link" href={url}>
+                <a
+                  className="Search-link"
+                  href={url}
+                  onClick={() => analyticsEvents(
+                    'send',
+                    'event',
+                    'search',
+                    'full-search',
+                    `${selectedYear}: ${keywords}`,
+                  )}
+                >
                   {departmentType} Department: {item.extras[0].value}
                 </a>
               </li>
