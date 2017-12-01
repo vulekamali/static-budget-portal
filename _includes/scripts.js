@@ -4,8 +4,8 @@ import 'whatwg-fetch';
 import 'preact/devtools';
 import './styles.scss';
 
-import './utilities/js/modules/loadGoogleAnalytics.js';
 import './utilities/js/modules/loadStringQueries.js';
+import './utilities/js/modules/loadGoogleAnalytics.js';
 import './utilities/js/modules/polyfillOldFeatures.js';
 
 import './components/Intro/scripts.js';
