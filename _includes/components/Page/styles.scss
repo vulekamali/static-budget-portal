@@ -33,7 +33,7 @@
 }
 
 .Page-contentWrap {
-  word-break: break-word;
+  word-break: break-word; /* stylelint-disable-line plugin/no-unsupported-browser-features */ // Is visual enhancement
   max-width: 1024px;
   margin: 0 auto;
   padding: 15px 10px 40px;

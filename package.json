@@ -17,8 +17,11 @@
     "test:lint:css": "stylelint _includes/**/*.scss",
     "test:lint:js": "eslint _includes/**/*.js & eslint _includes/**/*.jsx",
     "test:lint": "npm run test:lint:css & npm run test:lint:js",
+    "test": "npm run test:setup & npm run test:setup",
+    "test:setup": "backstop reference",
+    "test:check": "backstop test",
     "build": "webpack --display errors-only --progress -p",
-    "build:dev": "webpack --display errors-only --config webpack.config.dev.js --progress"
+    "build:dev": "webpack --display errors-only --progress"
   },
   "keywords": [],
   "devDependencies": {
@@ -31,6 +34,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "backstop": "^1.0.1",
+    "backstopjs": "^3.0.36",
     "browserslist": "^2.4.0",
     "classlist-polyfill": "^1.2.0",
     "clean-webpack-plugin": "^0.1.17",
@@ -49,7 +53,10 @@
     "postcss-loader": "^2.0.8",
     "postcss-normalize": "^4.0.0",
     "pre-commit": "^1.2.2",
+    "preact-render-to-string": "^3.7.0",
+    "rimraf": "^2.6.2",
     "sass-loader": "^6.0.6",
+    "static-site-generator-webpack-plugin": "^3.4.1",
     "style-loader": "^0.18.2",
     "stylelint": "^8.1.1",
     "stylelint-config-css-modules": "^1.1.0",
@@ -65,7 +72,7 @@
     "last 12 chrome versions",
     "last 12 firefox versions",
     "last 6 safari versions",
-    "explorer >= 9",
+    "explorer >= 10",
     "edge > 0"
   ],
   "eslintConfig": {
@@ -135,11 +142,26 @@
           "severity": "warning"
         }
       ],
+      "at-rule-empty-line-before": [
+        "never",
+        {
+          "ignoreAtRules": [
+            "media",
+            "import",
+            "if"
+          ]
+        }
+      ],
       "at-rule-no-unknown": [
         true,
         {
           "ignoreAtRules": [
-            "import-normalize"
+            "import-normalize",
+            "if",
+            "return",
+            "function",
+            "mixin",
+            "include"
           ]
         }
       ]

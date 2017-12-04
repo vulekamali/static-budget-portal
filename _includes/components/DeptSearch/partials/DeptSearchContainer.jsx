@@ -8,6 +8,7 @@ export default class DeptSearchContainer extends Component {
     super(props);
 
     this.state = {
+      loading: false,
       keywords: '',
       province: 'all',
       spheres: this.props.spheres || 'all',

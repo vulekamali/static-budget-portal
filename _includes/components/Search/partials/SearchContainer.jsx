@@ -11,6 +11,7 @@ export default class SearchContainer extends Component {
       keywords: this.props.search || '',
       results: [],
       focus: null,
+      fullLoading: false,
       loading: null,
       timeoutId: null,
       focusTimeout: null,
@@ -138,6 +139,7 @@ export default class SearchContainer extends Component {
         error={this.state.error}
         initRequest={this.initRequest}
         search={this.props.search}
+        fullLoading={this.state.fullLoading}
       />
     );
   }

@@ -60,8 +60,8 @@
   border-radius: 3px;
   position: relative;
   left: -12px;
-  @include clearfix;
   display: inline-block;
+  @include clearfix;
 
   &:hover {
     background-color: darken(#d2d2d2, 5%);

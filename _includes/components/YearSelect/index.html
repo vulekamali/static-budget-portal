@@ -1,6 +1,10 @@
 
 {% if include.dynamic %}
-  <section class="YearSelect" data-json='{ "data" : {{ include.years | jsonify }} }' data-dynamic='{ "data" : {{ include.dynamic || jsonify }} }'></section>
+  <section class="YearSelect" data-json='{ "data" : {{ include.years | jsonify }} }' data-dynamic='{ "data" : {{ include.dynamic || jsonify }} }'>
+    {% include components/YearSelect/partials/skeleton-state.html %}
+  </section>
 {% else %}
-  <section class="YearSelect" data-json='{ "data" : {{ include.years | jsonify }} }'></section>
+  <section class="YearSelect" data-json='{ "data" : {{ include.years | jsonify }} }'>
+    {% include components/YearSelect/partials/skeleton-state.html %}
+  </section>
 {% endif %}

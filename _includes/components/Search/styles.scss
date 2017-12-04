@@ -64,6 +64,12 @@
   border: solid 1px #979797;
   display: table;
   width: 100%;
+  margin: 0;
+
+  &.is-loading {
+    display: inline-block;
+    height: 44px;
+  }
 }
 
 .Search-keywords {
@@ -145,7 +151,7 @@
 }
 
 .Search-loading::after {
-  @supports (animation: spin 0.5s linear 0s infinite) {
+  @supports (animation: spin 0.5s linear 0s infinite) { /* stylelint-disable-line plugin/no-unsupported-browser-features */ // Is visual enhancement
     position: relative;
     top: 8px;
     left: 10px;
