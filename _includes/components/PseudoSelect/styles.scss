@@ -3,6 +3,7 @@
 }
 
 .PseudoSelect-list {
+  min-height: 36px;
   border-radius: 3px;
   border: solid 1px #9b9b9b;
   padding-left: 0;
@@ -16,6 +17,10 @@
 
   &.is-open {
     z-index: z-index('PseudoSelect is-open');
+  }
+
+  &.is-loading {
+    display: inline-block;
   }
 }
 

@@ -1,6 +1,6 @@
 import { h } from 'preact';
 
-export default function PseudoSelect({ open, items, changeAction, openAction, name, property, block, }) {
+export default function PseudoSelect({ open, items, loading, changeAction, openAction, name, property, block, }) {
   const radioChange = event => changeAction(event.target.value);
 
   const renderList = items.map(({ value: itemValue, title }) => {
@@ -22,6 +22,14 @@ export default function PseudoSelect({ open, items, changeAction, openAction, na
       </li>
     );
   });
+
+  if (loading) {
+    return (
+      <div className="PseudoSelect">
+        <div className="PseudoSelect-list is-loading" />
+      </div>
+    );
+  }
 
   return (
     <div className="PseudoSelect">

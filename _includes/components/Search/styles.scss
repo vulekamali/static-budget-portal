@@ -64,6 +64,12 @@
   border: solid 1px #979797;
   display: table;
   width: 100%;
+  margin: 0;
+
+  &.is-loading {
+    display: inline-block;
+    height: 44px;
+  }
 }
 
 .Search-keywords {

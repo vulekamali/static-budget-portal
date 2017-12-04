@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import PseudoSelect from './../../PseudoSelect/index.jsx';
+import Loading from './Loading.jsx';
 
 
 export default function Form({ state, eventHandlers }) {
@@ -78,19 +79,27 @@ export default function Form({ state, eventHandlers }) {
     </div>
   );
 
+  const keywordPlaceholder = (
+    <span className="DeptSearch-keywords is-loading" placeholder="Find a department" />
+  );
+
+  const keywordFeature = (
+    <input
+      value={state.keywords}
+      className="DeptSearch-keywords"
+      placeholder="Find a department"
+      onInput={updateResults}
+    />
+  );
+
   return (
     <div className="DeptSearch-form">
-      <input
-        value={state.keywords}
-        className="DeptSearch-keywords"
-        placeholder="Find a department"
-        onInput={updateResults}
-      />
-
+      {state.loading ? keywordPlaceholder : keywordFeature }
       <div className="DeptSearch-filterGroup">
         <span className="DeptSearch-divider">in</span>
         <div className="DeptSearch-filter">
           <PseudoSelect
+            loading={state.loading}
             name="spheres"
             items={spheres}
             property={state.spheres}

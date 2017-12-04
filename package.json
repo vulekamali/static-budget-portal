@@ -17,12 +17,11 @@
     "test:lint:css": "stylelint _includes/**/*.scss",
     "test:lint:js": "eslint _includes/**/*.js & eslint _includes/**/*.jsx",
     "test:lint": "npm run test:lint:css & npm run test:lint:js",
-    "test:regressive:test": "backstop test",
-    "test:regressive:test:verbose": "backstop test openReport",
-    "test:regressive:setup": "backstop reference",
-    "test:regressive": "npm run test:regressive:setup & npm run test:regressive:test",
+    "test": "npm run test:setup & npm run test:setup",
+    "test:setup": "backstop reference",
+    "test:check": "backstop test",
     "build": "webpack --display errors-only --progress -p",
-    "build:dev": "webpack --display errors-only --config webpack.config.dev.js --progress"
+    "build:dev": "webpack --display errors-only --progress"
   },
   "keywords": [],
   "devDependencies": {
@@ -54,7 +53,10 @@
     "postcss-loader": "^2.0.8",
     "postcss-normalize": "^4.0.0",
     "pre-commit": "^1.2.2",
+    "preact-render-to-string": "^3.7.0",
+    "rimraf": "^2.6.2",
     "sass-loader": "^6.0.6",
+    "static-site-generator-webpack-plugin": "^3.4.1",
     "style-loader": "^0.18.2",
     "stylelint": "^8.1.1",
     "stylelint-config-css-modules": "^1.1.0",

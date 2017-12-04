@@ -6,6 +6,7 @@ export default class YearSelectContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      loading: false,
       open: false,
       tooltip: null,
     };
@@ -57,6 +58,7 @@ export default class YearSelectContainer extends Component {
       <YearSelectMarkup
         jsonData={this.data}
         search={this.props.search}
+        loading={this.state.loading}
         open={this.state.open}
         updateItem={this.updateItem}
         tooltip={this.state.tooltip}

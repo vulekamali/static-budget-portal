@@ -6,6 +6,10 @@
   width: 100%;
   max-width: 300px;
   display: inline-block;
+
+  &.is-loading {
+    height: 36px;
+  }
 }
 
 .DeptSearch-select {

@@ -4,7 +4,9 @@
       <div class="Search-logo">Online Budget Data Portal</div>
       <div class="Search-disclaimer">Early Preview</div>
     </div>
-    <div class="Search-function" data-year="{{ include.year }}"></div>
+    <div class="Search-function" data-year="{{ include.year }}">
+      {% include components/Search/partials/skeleton-state.html %}
+    </div>
   </div>
 </div>
 
