@@ -45,6 +45,6 @@
 }
 
 .RelatedBox-items {
-  @include clearfix;
   padding-left: 0;
+  @include clearfix;
 }

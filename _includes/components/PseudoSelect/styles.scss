@@ -37,12 +37,12 @@
 }
 
 .PseudoSelect-label {
-  @include clearfix;
   cursor: pointer;
   padding: 9px 13px;
   font-size: 14px;
   display: block;
   user-select: none;
+  @include clearfix;
 
   &:hover {
     background-color: darken(white, 15%);

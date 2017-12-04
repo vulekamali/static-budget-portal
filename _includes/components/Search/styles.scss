@@ -145,7 +145,7 @@
 }
 
 .Search-loading::after {
-  @supports (animation: spin 0.5s linear 0s infinite) {
+  @supports (animation: spin 0.5s linear 0s infinite) { /* stylelint-disable-line plugin/no-unsupported-browser-features */ // Is visual enhancement
     position: relative;
     top: 8px;
     left: 10px;

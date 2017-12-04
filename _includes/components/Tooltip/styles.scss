@@ -62,7 +62,7 @@
 
 .Tooltip-box {
   position: static;
-  display: flex;
+  display: flex; /* stylelint-disable-line plugin/no-unsupported-browser-features */ // Is visual enhancement
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -73,11 +73,13 @@
 }
 
 .Tooltip-content {
+  margin: 40px auto;
   position: static;
   max-width: 250px;
   padding: 10px 10px 20px;
 
   @media screen and (min-width: 800px) {
+    margin: 0;
     left: -30%;
     width: 250px;
     position: absolute;
@@ -109,7 +111,7 @@
     width: 40px;
     left: 95px;
     top: 100%;
-  
+
     &.is-down {
       top: auto;
       bottom: calc(100% - 0.1em);
@@ -127,7 +129,7 @@
   background: white;
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
   transform: rotate(45deg);
-  
+
   &.is-down {
     top: 9px;
   }

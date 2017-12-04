@@ -134,7 +134,7 @@
   list-style: none;
 
   @media screen and (min-width: 900px) {
-    column-count: 2;
+    column-count: 2; /* stylelint-disable-line plugin/no-unsupported-browser-features */ // Is visual enhancement
   }
 }
 

@@ -41,7 +41,6 @@
   display: inline-block;
   min-width: 170px;
   margin: 0;
-  display: inline-flex;
   flex-direction: column;
   background-color: white;
 }
@@ -146,8 +145,8 @@
 }
 
 .SearchResult-pageWrap {
-  @include clearfix;
   padding: 20px;
+  @include clearfix;
 }
 
 .SearchResult-prev {

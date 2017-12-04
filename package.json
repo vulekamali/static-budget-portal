@@ -17,6 +17,10 @@
     "test:lint:css": "stylelint _includes/**/*.scss",
     "test:lint:js": "eslint _includes/**/*.js & eslint _includes/**/*.jsx",
     "test:lint": "npm run test:lint:css & npm run test:lint:js",
+    "test:regressive:test": "backstop test",
+    "test:regressive:test:verbose": "backstop test openReport",
+    "test:regressive:setup": "backstop reference",
+    "test:regressive": "npm run test:regressive:setup & npm run test:regressive:test",
     "build": "webpack --display errors-only --progress -p",
     "build:dev": "webpack --display errors-only --config webpack.config.dev.js --progress"
   },
@@ -31,6 +35,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "backstop": "^1.0.1",
+    "backstopjs": "^3.0.36",
     "browserslist": "^2.4.0",
     "classlist-polyfill": "^1.2.0",
     "clean-webpack-plugin": "^0.1.17",
@@ -135,11 +140,26 @@
           "severity": "warning"
         }
       ],
+      "at-rule-empty-line-before": [
+        "never",
+        {
+          "ignoreAtRules": [
+            "media",
+            "import",
+            "if"
+          ]
+        }
+      ],
       "at-rule-no-unknown": [
         true,
         {
           "ignoreAtRules": [
-            "import-normalize"
+            "import-normalize",
+            "if",
+            "return",
+            "function",
+            "mixin",
+            "include"
           ]
         }
       ]
