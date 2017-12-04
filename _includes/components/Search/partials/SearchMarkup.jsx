@@ -1,12 +1,24 @@
 import { h } from 'preact';
-import Form from './Form.jsx';
-import ResultsBox from './ResultsBox.jsx';
+import PropTypes from 'prop-types';
+import FormArea from './FormArea.jsx';
+import ResultsArea from './ResultsArea.jsx';
 
 
-export default function SearchMarkup({ fullLoading, search, initRequest, error, state, eventHandlers, selectedYear }) {
-  const { loading, focus, keywords, results, count } = state;
+export default function SearchMarkup(props) {
+  const {
+    count,
+    currentKeywords,
+    error,
+    findSuggestions,
+    focus,
+    itemsArray,
+    loading,
+    searching,
+    selectedYear,
+    setFocus,
+  } = props;
 
-  if (fullLoading) {
+  if (loading) {
     return (
       <div className="Search-wrap">
         <div className="Search-form is-loading" />
@@ -16,10 +28,41 @@ export default function SearchMarkup({ fullLoading, search, initRequest, error, 
 
   return (
     <div className="Search-function">
-      <div className={`Search-wrap ${focus ? ' is-focused' : ''}`}>
-        <Form {...{ eventHandlers, keywords, selectedYear }} />
-        <ResultsBox {...{ search, error, loading, results, focus, keywords, selectedYear, count, initRequest }} />
+      <div className={`Search-wrap${focus ? ' is-focused' : ''}`}>
+        <FormArea
+          {...{
+            currentKeywords,
+            findSuggestions,
+            selectedYear,
+            setFocus,
+          }}
+        />
+
+        <ResultsArea
+          {...{
+            count,
+            currentKeywords,
+            error,
+            focus,
+            itemsArray,
+            searching,
+            selectedYear,
+          }}
+        />
       </div>
     </div>
   );
 }
+
+SearchMarkup.propTypes = {
+  count: PropTypes.string.isRequired,
+  currentKeywords: PropTypes.string.isRequired,
+  error: PropTypes.bool.isRequired,
+  findSuggestions: PropTypes.func.isRequired,
+  focus: PropTypes.bool.isRequired,
+  itemsArray: PropTypes.array.isRequired,
+  loading: PropTypes.bool.isRequired,
+  searching: PropTypes.bool.isRequired,
+  selectedYear: PropTypes.string.isRequired,
+  setFocus: PropTypes.func.isRequired,
+};
