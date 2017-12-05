@@ -4,16 +4,28 @@ import SearchContainer from './partials/SearchContainer.jsx';
 
 
 function Search() {
+  // Find all instances of a specific UI component on a page by parent class name.
   const nodes = document.getElementsByClassName('Search');
-  const nodesArray = [...nodes];
-  const { search, no_js: noJs } = queryString.parse(location.search) || {};
 
-  if (nodesArray.length > 0 && !noJs) {
-    nodesArray.forEach((node) => {
-      const nestedNode = node.getElementsByClassName('Search-function')[0];
-      const selectedYear = nestedNode.getAttribute('data-year');
-      render(<SearchContainer {...{ selectedYear, search }} />, nestedNode.parentNode, nestedNode);
-    });
+  // Destructure needed query strings from URL
+  const { search: searchParam, no_js: noJs } = queryString.parse(location.search) || {};
+
+  if (nodes.length > 0 && !noJs) {
+    for (let i = 0; i < nodes.length; i++) {
+      // Find DOM node that will house the Preact app and get associated data attributes that are passed via HTML
+      const wrapperDomNode = nodes[i].getElementsByClassName('Search-function')[0];
+      const selectedYear = wrapperDomNode.getAttribute('data-year');
+
+      // Initialise Search Preact App
+      render(
+        <SearchContainer
+          selectedYear={selectedYear}
+          searchParam={searchParam}
+        />,
+        wrapperDomNode.parentNode,
+        wrapperDomNode,
+      );
+    }
   }
 }
 
