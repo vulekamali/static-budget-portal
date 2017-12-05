@@ -14,6 +14,13 @@ export default function List(props) {
 
 
   // ...
+  const getExtraValue = (extras, key) => {
+    const index = extras.findIndex(data => data.key === key);
+    return extras[index].value;
+  };
+
+
+  // ...
   const buildGaQuery = () => {
     return `?search_type=suggestion-click&search_string=${selectedYear}%3A%20${currentKeywords}`;
   };
@@ -28,17 +35,10 @@ export default function List(props) {
 
   // ...
   const generateUrl = (item) => {
-    const strings = ['geographic_region_slug', 'department_name_slug'];
+    const provSlug = getExtraValue(item.extras, 'geographic_region_slug');
+    const nameSlug = getExtraValue(item.extras, 'department_name_slug');
 
-    const provSlugIndex = item.extras.findIndex(data => data.key === strings[0]);
-    const nameSlugIndex = item.extras.findIndex(data => data.key === strings[1]);
-
-    const provSlug = item.extras[provSlugIndex].value;
-    const nameSlug = item.extras[nameSlugIndex].value;
-
-    const isNational = item.province.length > 0;
-
-    const baseUrl = isNational ?
+    const baseUrl = item.sphere === 'national' ?
       `/${selectedYear}/provincial/${provSlug}/departments/${nameSlug}` :
       `/${selectedYear}/national/departments/${nameSlug}`;
 
@@ -80,13 +80,12 @@ export default function List(props) {
 
 
   // ...
-  // TO DO do not hardcode [0]
   const itemMarkup = () => {
     const result = itemsArray.map((item) => {
       return (
         <li>
           <a href={generateUrl(item)} className="Search-link">
-            {generateDeptName(item)} Department: {item.extras[0].value}
+            {generateDeptName(item)} Department: {getExtraValue(item.extras, 'Department Name')}
           </a>
         </li>
       );
@@ -146,7 +145,25 @@ List.propTypes = {
   count: PropTypes.string.isRequired,
   currentKeywords: PropTypes.string.isRequired,
   error: PropTypes.bool.isRequired,
-  itemsArray: PropTypes.array.isRequired,
+
+  itemsArray: PropTypes.arrayOf(
+    PropTypes.shape({
+      sphere: PropTypes.arrayOf(PropTypes.string),
+      financial_year: PropTypes.arrayOf(PropTypes.string),
+      extras: PropTypes.arrayOf(
+        PropTypes.shape({
+          key: PropTypes.string,
+          value: PropTypes.string,
+        }),
+      ),
+    }),
+  ),
+
   searching: PropTypes.bool.isRequired,
   selectedYear: PropTypes.string.isRequired,
+};
+
+
+List.defaultProps = {
+  itemsArray: [],
 };
