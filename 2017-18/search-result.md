@@ -6,9 +6,6 @@ years: [
   ['2016-17', '/2016-17/search-result', 'link'],
   ['2017-18', '/2017-18/search-result', 'active'],
 ]
-navbar: [
-  ['home-icon', '/', false, true],
-  ['Departments', '/2017-18/departments', false, false],
-  ['About', '/2017-18/about', false, false]
-]
+active: none
+nested: false
 ---

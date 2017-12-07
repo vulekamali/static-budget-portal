@@ -15,7 +15,7 @@ layout: base
     {% include components/Disclaimer/index.html year=page.financial_year %}
     {% include components/YearSelect/index.html years=page.years dynamic=page_data.financial_years %}
     {% include components/Search/index.html year=page.financial_year %}
-    {% include components/NavBar/index.html navbar=page.navbar %}
+    {% include components/NavBar/index.html year=page.financial_year active=page.active nested=page.nested  %}
   </header>
   <div class="Page-content">
     {{ content }}
