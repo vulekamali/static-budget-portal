@@ -11,8 +11,8 @@ layout: page-shell
   </ol>
 </noscript>
 
-{% assign national = site.data[page.financial_year].national.department_list[0] %}
-{% assign provincial = site.data[page.financial_year].provincial.department_list %}
+{% assign national = site.data[page.financial_year].departments.national[0] %}
+{% assign provincial = site.data[page.financial_year].departments.provincial %}
 
 <main class="Page-contentWrap">
   <h2 class="Page-title">National & Provincial departments</h2>
