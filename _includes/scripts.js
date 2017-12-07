@@ -16,3 +16,4 @@ import './components/Search/index.jsx';
 import './components/DeptSearch/index.jsx';
 import './components/SearchResult/index.jsx';
 import './components/Share/index.jsx';
+import './components/About/scripts.js';

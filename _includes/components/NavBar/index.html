@@ -1,42 +1,77 @@
+{% assign icon = '<svg class="NavBar-icon" width="0" height="0" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 93.2" overflow="scroll"><title>Homepage</title><path d="M83 27V9.3c0-3.2-2.6-5.7-5.7-5.7-3.2 0-5.7 2.6-5.7 5.7v6L60.3 4.2c-5.6-5.6-15.3-5.6-20.8 0L1.7 42c-2.2 2.2-2.2 6 0 8 2.2 2.3 6 2.3 8 0l38-37.7c1-1.2 3.3-1.2 4.5 0L90 50c1 1.2 2.6 1.8 4 1.8 1.5 0 3-.6 4-1.7 2.2-2 2.2-5.8 0-8L83 27z"></path><path d="M52 23c-1.2-1-3-1-4 0L14.6 56.5c-.5.5-.8 1.2-.8 2v24.3C14 88.4 18.4 93 24 93h16.5V67.5h18.6V93h16.5C81.4 93 86 88.4 86 82.7V58.4c0-.7-.3-1.5-.8-2L52 23zm0 0"></path></svg>' %}
+
+
+{% if include.year == '2017-18' and include.active == 'home' %}
+  {% assign urlYear = '' %}
+{% else %}
+  {% assign urlYear = '/{{ include.year }}' %}
+{% endif %}
+
+
+{% assign items = 'home, Home,   | departments, Departments, departments | about, About, about' | split: ' | ' %}
 
 <nav class="NavBar">
+
   <h2 class="u-sReadOnly">Navigate to a section on this site:</h2>
   <ul class="NavBar-list">
-    {% for item in include.navbar %}
+      {% for item in items %}
+        {% assign array = item | split: ', ' %}
 
-      {% if item[3] == true %}
-        {% assign icon = ' NavBar-link--icon' %}
-      {% else %}
-        {% assign icon = '' %}
-      {% endif %}
-
-      {% if item[2] == true %}
-        {% assign active = ' NavBar-link--active' %}
-      {% else %}
-        {% assign active = '' %}
-      {% endif %}
-
-      {% if item[2] == false or item[4] == true %}
-        {% assign link = 'a' %}
-      {% else %}
-        {% assign link = 'span' %}
-      {% endif %}
-      
-      
-
-    <li class="NavBar-item">
-        <{{ link }} href="{{ item[1] | default: '' }}" class="NavBar-link{{ icon }}{{ active }}">
-
-          {% if item[0] == 'home-icon' %}
-            {% include components/NavBar/partials/icon.html %}
-          {% else %}
-            {{ item[0] }}
+        {% if array[0] == include.active %}
+          {% assign activeClass = ' NavBar-link--active' %}
+          {% if include.nested == false %}
+            {% assign tag = 'span' %}
           {% endif %}
+        {% else %}
+          {% assign activeClass = '' %}
+          {% assign tag = 'a' %}
+        {% endif %}
 
-        </{{ link }}>
-      </span>
-    </li>
+        {% if include.active == 'about' %}
+          {% assign currentClass = ' is-currentPage js-box' %}
+        {% else %}
+          {% assign currentClass = '' %}
+        {% endif %}
 
-    {% endfor %}
+        <li class="NavBar-item">
+            <{{ tag }} href="/{{ include.year }}/{{ array[2] }}" class="NavBar-link{{ activeClass }}" >
+
+              {% if array[0] == 'home' %}
+                <span class="NavBar-iconWrap">{{ icon }}</span>
+                <span class="NavBar-text is-mobileOnly">Home</span> 
+              {% elsif array[0] == 'about' %}
+                <span class="NavBar-text">{{ array[1] }}</span>
+                <div class="NavBar-subItemsWrap{{ currentClass }}">
+                  <ul class="NavBar-subItems">
+                      <li class="NavBar-subItem">
+                        <a class="NavBar-subLink js-link js-scroll" href="#">Background</a>
+                      </li>
+                      <li class="NavBar-subItem">
+                        <a class="NavBar-subLink js-link js-scroll" href="#">Development</a>
+                      </li>
+                      <li class="NavBar-subItem">
+                        <a class="NavBar-subLink js-link js-scroll" href="#">Project Status</a>
+                      </li>
+                      <li class="NavBar-subItem">
+                        <a class="NavBar-subLink js-link js-scroll" href="#">Your Contribution</a>
+                      </li>
+                      <!--
+                        <li class="NavBar-subItem">
+                          <a class="NavBar-subLink js-link js-scroll" href="#">Contacts</a>
+                        </li>
+                        <li class="NavBar-subItem">
+                          <a class="NavBar-subLink js-link js-scroll" href="#">Media & Other Information</a>
+                        </li>
+                      -->
+                  </ul>
+                </div>
+              {% else %}
+                <span class="NavBar-text">{{ array[1] }}</span>
+              {% endif %}
+
+            </{{ tag }}>
+        </li>
+      {% endfor %}
+
   </ul>
 </nav>

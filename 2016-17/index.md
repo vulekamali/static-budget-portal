@@ -6,9 +6,6 @@ years: [
   ['2017-18', '/', 'link'],
 ]
 financial_year: '2016-17'
-navbar: [
-  ['home-icon', '/2016-17', true, true],
-  ['Departments', '/2016-17/departments', false, false],
-  ['About', '/2016-17/about', false, false]
-]
+active: home
+nested: false
 ---
