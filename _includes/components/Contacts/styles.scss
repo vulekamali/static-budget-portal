@@ -1,0 +1,48 @@
+.Contacts-icon {
+  vertical-align: top;
+  display: block;
+  background: #4a4a4a;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #4a4a4a;
+}
+
+.Contacts-iconWrap {
+  display: table-cell;
+}
+
+.Contacts-svg {
+  position: relative;
+  top: 3px;
+}
+
+.Contacts-title {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.57;
+  padding: 25px 0;
+}
+
+.Contacts-info {
+  vertical-align: top;
+  display: table-cell;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.Contacts-item {
+  display: table;
+  padding-bottom: 40px;
+}
+
+.Contacts-line {
+  font-size: 14px;
+  line-height: 20px;
+
+  &.is-title {
+    font-weight: bold;
+  }
+}
