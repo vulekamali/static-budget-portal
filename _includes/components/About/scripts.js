@@ -57,14 +57,14 @@ class AboutPageScrollEvents {
 
   // ...
   findCurrentViewedSection(scrollPosition) {
-    const pageMiddle = window.innerHeight / 2;
+    const pageMiddle = (window.innerHeight / 3);
 
     for (let i = this.sectionsNodeList.length - 1; i >= 0; i--) {
       const nodePositionFromTop = this.calcNodeViewportPosition(this.sectionsNodeList[i], scrollPosition);
-      const nodeFromMiddle = nodePositionFromTop - pageMiddle;
+      const nodeFromMiddle = nodePositionFromTop + pageMiddle;
 
       if (nodeFromMiddle >= 0) {
-        return i + 1;
+        return i;
       }
     }
     return 0;
