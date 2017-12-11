@@ -32,7 +32,7 @@ export default class SearchContainer extends Component {
 
   componentDidMount() {
     if (this.props.searchParam) {
-      this.findSuggestions();
+      this.findSuggestions(this.state.currentKeywords);
     }
   }
 
