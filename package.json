@@ -14,10 +14,7 @@
   },
   "homepage": "https://github.com/OpenUpSA/static-budget-portal#readme",
   "scripts": {
-    "test:lint:css": "stylelint _includes/**/*.scss",
-    "test:lint:js": "eslint _includes/**/*.js & eslint _includes/**/*.jsx",
-    "test:lint": "npm run test:lint:css & npm run test:lint:js",
-    "test": "npm run test:setup & npm run test:setup",
+    "test": "npm run test:setup & npm run test:check",
     "test:setup": "backstop reference",
     "test:check": "backstop test",
     "build": "webpack --display errors-only --progress -p",

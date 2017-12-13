@@ -44,6 +44,12 @@ python generate/files.py
 
 Then use `git status` and `git diff` to get an idea of what changed. If it looks sensible, add the updated files and commit and PR back into the branch where you want changes reflected.
 
+Testing
+--------------
+
+### Front-end Regression Testing
+Make sure localhost is running and then run `npm test`.
+
 
 Architecture
 --------------

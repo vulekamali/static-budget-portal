@@ -12,12 +12,12 @@ export default function Button({ selected }) {
   };
   const fbDirect = () => {
     analyticsEvents('send', 'social', 'facebook', 'share', url);
-    const win = window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+    const win = window.open(`https://www.facebook.com/sharer/sharer.php?u=SA%20Budget%20Data%20from%20National%20Treasury%20Open%20Budget%20Data%20Portal%20%23BeyondTransparency%20${url}`, '_blank');
     win.focus();
   };
   const twDirect = () => {
     analyticsEvents('send', 'social', 'twitter', 'share', url);
-    const win = window.open(`https://twitter.com/home?status=${url}`, '_blank');
+    const win = window.open(`https://twitter.com/home?status=SA%20Budget%20Data%20from%20%40TreasuryRSA%20Open%20Budget%20Data%20Portal%20%23BeyondTransparency%20${url}`, '_blank');
     win.focus();
   };
 
