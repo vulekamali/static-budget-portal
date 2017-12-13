@@ -26,7 +26,7 @@
     {
       "label": "general",
       "url": "http://localhost:4000/",
-      "referenceUrl": "https://budgetportal.openup.org.za/"
+      "referenceUrl": "https://budgetportal.openup.org.za"
     },
     {
       "label": "about",
@@ -37,11 +37,6 @@
       "label": "departments-list",
       "url": "http://localhost:4000/2017-18/departments",
       "referenceUrl": "https://budgetportal.openup.org.za/2017-18/departments"
-    },
-    {
-      "label": "departments-list-without-javascript",
-      "url": "http://localhost:4000/2017-18/2017-18/departments?no_js=true",
-      "referenceUrl": "https://budgetportal.openup.org.za/2017-18/2017-18/departments"
     },
     {
       "label": "tooltip",
@@ -58,7 +53,7 @@
     "html_report": "backstop_data/html_report",
     "ci_report": "backstop_data/ci_report"
   },
-  "report": ["browser", "CI"],
+  "report": ["browser"],
   "engine": "chrome",
   "engineFlags": [],
   "asyncCaptureLimit": 5,

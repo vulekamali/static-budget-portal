@@ -19,12 +19,12 @@
     @return 30;
   }
 
-  @if $name == 'Tooltip-boxWrap' {
-    @return 40;
+  @if $name == 'YearSelect-bar' {
+    @return 30;
   }
 
-  @if $name == 'YearSelect-bar' {
-    @return 50;
+  @if $name == 'Tooltip-boxWrap' {
+    @return 40;
   }
 
   @if $name == 'Intro-alert' {
