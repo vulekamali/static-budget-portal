@@ -4,7 +4,17 @@
   line-height: 2.14;
 }
 
-.Footer-column {
+.Footer-container {
+  padding: 0px;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.Footer-section {
   display: block;
   width: 100%;
 
@@ -25,12 +35,6 @@
   padding: 25px 40px 100px;
   max-width: 1024px;
   margin: 0 auto;
-
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 
 .Footer-link {
@@ -47,7 +51,7 @@
 
 .Footer-list {
   list-style: none;
-  padding-left: 0;
+  padding-left: 0px;
   margin-top: 0px;
 }
 
