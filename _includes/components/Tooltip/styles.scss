@@ -17,6 +17,7 @@
 }
 
 .Tooltip-phrase {
+  user-select: none;
   display: inline-block;
 
   &::after {
