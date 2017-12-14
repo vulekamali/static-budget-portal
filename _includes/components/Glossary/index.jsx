@@ -7,7 +7,7 @@ import Container from './partials/Container.jsx';
 function Glossary() {
   const glossaryGroupedObject = createGlossaryGroupedObject(glossaryObject);
   const nodes = document.getElementsByClassName('Glossary');
-  
+
   if (nodes.length > 0) {
     for (let i = 0; i < nodes.length; i++) {
       render(<Container glossaryObject={glossaryGroupedObject} />, nodes[i]);
