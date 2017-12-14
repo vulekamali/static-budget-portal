@@ -17,9 +17,7 @@ layout: page-shell
       <div class="Page-title">{{ page_data.government.name }} Department: {{ page_data.name }}</div>
     {% endif %}
 
-    {% for narrative in page_data.narratives %}
-      <div class="Page-blurb"><strong>{{ narrative.name | capitalize }}:</strong> {{ narrative.content  | markdownify }}</div>
-    {% endfor %}
+    <div class="Page-blurb js-tooltips">{{ page_data.intro  | markdownify }}</div>
 
     <div class="Page-section">
       {% include components/Programmes/index.html programmes=page_data.programmes %}
