@@ -10,10 +10,11 @@ import './utilities/js/modules/polyfillOldFeatures.js';
 
 import './components/Intro/scripts.js';
 import './components/Tooltip/scripts.js';
+import './components/About/scripts.js';
 
-import './components/YearSelect/scripts.jsx';
+import './components/YearSelect/index.jsx';
 import './components/Search/index.jsx';
 import './components/DeptSearch/index.jsx';
 import './components/SearchResult/index.jsx';
 import './components/Share/index.jsx';
-import './components/About/scripts.js';
+import './components/Glossary/index.jsx';
