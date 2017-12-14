@@ -5,23 +5,31 @@
 }
 
 .Footer-column {
-  display: inline-block;
-  font-size: 0;
+  display: block;
+  width: 100%;
+
+  @media screen and (min-width: 500px) {
+    float: left;
+    width: 33%;
+    padding-right: 10px;
+  }
 }
 
 .Footer-title {
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 0px;
 }
 
 .Footer-wrap {
-  padding: 30px 0 35px;
+  padding: 25px 40px 100px;
   max-width: 1024px;
   margin: 0 auto;
-  text-align: center;
 
-  @media screen and (min-width: 500px) {
-    padding: 30px 120px 35px;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -31,7 +39,6 @@
   color: #4a4a4a;
   display: inline-block;
   border-radius: 3px;
-  padding: 0 20px;
 
   &:hover {
     background-color: darken(#f0f0f0, 5%);
@@ -41,8 +48,12 @@
 .Footer-list {
   list-style: none;
   padding-left: 0;
+  margin-top: 0px;
 }
 
-.Footer-container {
-  padding-left: 0;
+.Footer-input {
+  font-size: 14px;
+  padding: 13px;
+  border: 1px solid #979797;
+  border-radius: 3px;
 }
