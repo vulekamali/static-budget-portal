@@ -1,4 +1,5 @@
 import { h, Component } from 'preact';
+import Fuse from 'fuse.js';
 import Markup from './Markup.jsx';
 
 
@@ -8,19 +9,54 @@ export default class Container extends Component {
 
     this.state = {
       currentPhrase: '',
-      itemsObject: this.props,
+      currentItems: this.props.glossaryObject,
     };
 
-    this.updateItem = this.updateItem.bind(this);
+    this.eventHandlers = {
+      changePhrase: this.changePhrase.bind(this),
+    };
   }
 
 
-  updateItem(key, value) {
-    return this.setState({ [key]: value });
+  changePhrase(phrase) {
+    this.setState({ currentPhrase: phrase });
+
+    if (phrase.length > 2) {
+      const options = {
+        shouldSort: true,
+        threshold: 0.3,
+        location: 0,
+        distance: 100,
+        maxPatternLength: 32,
+        minMatchCharLength: 1,
+        keys: [
+          'phrase',
+        ],
+      };
+
+      const letters = Object.keys(this.props.glossaryObject);
+
+      const filteredList = letters.reduce(
+        (result, letter) => {
+          const array = this.props.glossaryObject[letter];
+          const items = new Fuse(array, options);
+
+          return {
+            ...result,
+            [letter]: items.search(phrase),
+          };
+        },
+        {},
+      );
+
+      return this.setState({ currentItems: filteredList });
+    }
+
+    return this.setState({ currentItems: this.props.glossaryObject });
   }
 
 
   render() {
-    return <Markup currentPhrase={this.state.currentPhrase} updateItem={this.updateItem} />;
+    return <Markup {...this.state} {...this.eventHandlers} />;
   }
 }
