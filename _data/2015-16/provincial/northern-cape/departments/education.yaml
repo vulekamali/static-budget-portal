@@ -48,7 +48,14 @@ intro: "## Vision\n\nA transformed quality education system.\r\n\r\n\n\n## Missi
   \ centres. The programme also seeks to provide ECD programmes for pre-Grade R learners.\r\
   \n\r\n"
 name: Education
-programmes: []
+programmes:
+- name: Administration
+- name: Public Ordinary School Education
+- name: Independent School Subsidy
+- name: Public Special School Education
+- name: Early Childhood Development
+- name: Infrastructure Development
+- name: Examination And Education Related Services
 resources:
   'EPRE for Vote 04 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

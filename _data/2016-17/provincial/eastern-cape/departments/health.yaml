@@ -48,7 +48,15 @@ intro: "## Vision\n\nA quality health service to the people of the eastern cape 
   \ framework(2014-1019), the ministers negotiated\r\nservice delivary agreement (NSDA)\
   \ and , national health council priorities\r\n\r\n\r\n"
 name: Health
-programmes: []
+programmes:
+- name: Administration
+- name: District Health Services
+- name: Emergency Medical Services
+- name: Provincial Hospitals Services
+- name: Central Hospital Services
+- name: Health Sciences & Training
+- name: Health Care Support Services
+- name: Health Facilities Management
 resources:
   'EPRE for Vote 03 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -40,7 +40,11 @@ intro: "## vision\n\nLeader in the provision  of high services in infrastructure
   \ of people goods and services through the delivery and maintanance of transport\
   \ infrastructure\r\n\r\n\r\n"
 name: Roads and Public Works
-programmes: []
+programmes:
+- name: Administration
+- name: Public Works Infrastructure
+- name: Transport Infrastructure
+- name: Expanded Public Works Programme
 resources:
   'EPRE for Vote 05 : Roads and Public Works':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

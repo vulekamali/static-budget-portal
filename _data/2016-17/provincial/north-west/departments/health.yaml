@@ -36,7 +36,15 @@ intro: "## Vision\n\nHealthy self-reliant communities in the North West Province
   \ Transparency\r\n\r\n* Community participation\r\n\r\n* Excellence\r\n\r\n* Caring\r\
   \n\r\n* Access, human dignity and respect"
 name: Health
-programmes: []
+programmes:
+- name: Administration
+- name: District Health Services
+- name: Emergency Medical Services
+- name: Provincial Hospital Services
+- name: Central Hospital Services
+- name: Health Science and Training
+- name: Health Care Support Services
+- name: Health Facilities and Maintenance
 resources:
   'EPRE for Vote 03 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

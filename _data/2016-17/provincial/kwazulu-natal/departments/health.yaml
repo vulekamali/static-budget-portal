@@ -39,7 +39,15 @@ intro: "## Vision\n\nThe vision of the Department of Health is: Optimal health f
   \ participation, appropriate technology, and inter-governmental and inter-sectoral\
   \ collaboration."
 name: Health
-programmes: []
+programmes:
+- name: Administration
+- name: District Health Services
+- name: Emergency Medical  Services
+- name: Provincial Hospital Services
+- name: Central Hospital Services
+- name: Health Sciences and Training
+- name: Health Care Support Services
+- name: Health Facilities Management
 resources:
   'EPRE for Vote 07 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

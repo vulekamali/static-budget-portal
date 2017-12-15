@@ -42,7 +42,11 @@ intro: "## Vision\n\nChampioning social transformation\r\n\r\n\n\n## Mission\n\n
   \nProgrammes of the Department:\r\n\r\n* Administration\r\n\r\n* Cultural Affairs\r\
   \n\r\n* Library and Archives Services\r\n\r\n* Sport and Recreation\r\n"
 name: Sport, Arts, Culture and Recreation
-programmes: []
+programmes:
+- name: Administration
+- name: Cultural Affairs
+- name: Library and Archives Services
+- name: Sport and Recreation
 resources:
   'EPRE for Vote 12 : Sport, Arts, Culture and Recreation':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

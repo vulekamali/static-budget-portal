@@ -42,7 +42,16 @@ intro: "## Vision\n\nThe vision of the Department of Education (DOE) is: A well-
   \ the quality of education are also in this programme and these include, but are\
   \ not limited to, the Maths, Science and Technology grant."
 name: Education
-programmes: []
+programmes:
+- name: Administration
+- name: Public Ordinary School Education
+- name: Independent School Subsidies
+- name: Public Special School Education
+- name: Old Prog 5
+- name: Old Prog 6
+- name: Early Childhood Development
+- name: Infrastructure Development
+- name: Examination and Education Related services
 resources:
   'EPRE for Vote 05 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

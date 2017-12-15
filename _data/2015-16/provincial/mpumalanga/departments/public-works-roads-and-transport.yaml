@@ -32,7 +32,12 @@ intro: "## Vision\n\nAn integrated transport system and infrastructure that prom
   \ of the province.\r\n\r\n* To deliver infrastructure that promotes sustainable\
   \ economic development and job creation.\r\n\r\n"
 name: Public Works, Roads and Transport
-programmes: []
+programmes:
+- name: Administration
+- name: Public Works Infrastructure
+- name: Transport Infrastructure
+- name: Transport Operations
+- name: Community Based Programmes
 resources:
   'EPRE for Vote 08 : Public Works, Roads and Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

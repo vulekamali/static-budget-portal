@@ -37,7 +37,12 @@ intro: "## Vision\n\nAn efficient, safe,sustainable, affordable and accessible t
   \ owned vehicles in the province;\r\n\r\n* To regulate and enforce road traffic\
   \ in the province; and\r\n\r\n* To provide fleet services to provincial departments."
 name: Transport
-programmes: []
+programmes:
+- name: Administration
+- name: Transport Infrastructure
+- name: Transport Operations
+- name: Transport Regulation
+- name: Community Based Programme
 resources:
   'EPRE for Vote 10 : Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

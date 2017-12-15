@@ -48,7 +48,15 @@ intro: "## Vision\n\nA long and healthy life for people in Limpopo\r\n\r\n\n\n##
   \ chain management, medico-legal services and other non personnel health services).\r\
   \n"
 name: Health
-programmes: []
+programmes:
+- name: Administration
+- name: District Health Services
+- name: Emergency  Madical Services
+- name: Provincial Hospital Services
+- name: Central Hospital Services
+- name: Health Sciences And Training
+- name: Health Care Support Services
+- name: Health Facilities Management
 resources:
   'EPRE for Vote 07 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

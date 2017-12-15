@@ -36,7 +36,12 @@ intro: "## Vision\n\nAn integrated transport system and infrastructure that prom
   \ delivery.\r\n\r\n* Transport system management, operation and regulation.\r\n\r\
   \n* Coordination of EPWP III across the Province."
 name: Public Works, Roads and Transport
-programmes: []
+programmes:
+- name: Administration
+- name: Public Works Infrastructure
+- name: Transport Infrastructure
+- name: Transport Operations
+- name: Community Based Programmes
 resources:
   'EPRE for Vote 08 : Public Works, Roads and Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
