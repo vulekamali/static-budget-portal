@@ -26,34 +26,23 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+intro: "## Vote purpose\r\n\r\nLead, support and promote agricultural, forestry and\
+  \ fisheries resources management through policies, strategies and programmes to\
+  \ enhance sustainable use, and achieve economic growth, job creation, food security,\
+  \ rural development and transformation.\r\n\r\n## Mandate\r\n\r\nThe mandate of\
+  \ the Department of Agriculture, Forestry and Fisheries includes value chains, inputs,\
+  \ production and consumption in the agriculture, forestry and fishery sectors. The\
+  \ department\u2019s mandate is derived from a range of legislation, including the\
+  \ Sea Fisheries Act (1988), the National Forests Act (1988), the Agricultural Products\
+  \ Standards Act (1990), and the Conservation of Agricultural Resources Act (1993)."
 name: Agriculture, Forestry and Fisheries
-narratives:
-- content: '_Lead, support and promote agricultural, forestry and fisheries resources
-
-    management through policies, strategies and programmes to enhance sustainable
-
-    use, and achieve economic growth, job creation, food security, rural
-
-    development and transformation._
-
-
-    '
-  name: Vote purpose
-- content: "The mandate of the Department of Agriculture, Forestry and Fisheries includes\n\
-    value chains, inputs, production and consumption in the agriculture, forestry\n\
-    and fishery sectors. The department\u2019s mandate is derived from a range of\n\
-    legislation, including the Sea Fisheries Act\_(1988), the National Forests Act\n\
-    (1988), the Agricultural Products Standards Act\_(1990), and the Conservation\n\
-    of Agricultural Resources Act\_(1993).\n\n"
-  name: Mandate
-resources:
-  ENE for Vote 24 - Agriculture, Forestry and Fisheries:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/Vote%2024%20Agriculture,%20Forestry%20and%20Fisheries.pdf
-    - format: XLS
-      url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote24.xls
+programmes:
+- name: Administration
+- name: Agricultural Production, Health and Food Safety
+- name: Food Security and Agrarian Reform
+- name: Trade Promotion and Market Access
+- name: Forestry and Natural Resources Management
+- name: Fisheries
+resources: {}
 slug: agriculture-forestry-and-fisheries
 vote_number: 24
