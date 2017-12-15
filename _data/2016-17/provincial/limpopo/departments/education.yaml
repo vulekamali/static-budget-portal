@@ -47,7 +47,14 @@ intro: "## Vision\n\nExcellence in provisioning of innovative quality basic educ
   \ food needed to learn effectively in primary schools to identified poor and\r\n\
   hungry learners.\r\n"
 name: Education
-programmes: []
+programmes:
+- name: Administration
+- name: Public Ordinary School Education
+- name: Independent School Subsidies
+- name: Public Special School Education
+- name: Early Childhood Development
+- name: Infrastructure Development
+- name: Examination And Education Related Services
 resources:
   'EPRE for Vote 03 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

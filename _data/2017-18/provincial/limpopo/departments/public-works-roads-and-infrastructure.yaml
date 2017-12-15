@@ -36,7 +36,11 @@ intro: "## Vision\n\nA leader in the provision and management of provincial land
   \ Programme and\r\n\r\n* Comply with the requirements of Government Immovable Asset\
   \ Management Act (GIAMA).\r\n\r\n* Plan, Design, upgrade and maintain roads infrastructure."
 name: Public Works, Roads and Infrastructure
-programmes: []
+programmes:
+- name: Administration
+- name: Infrastructure Operations
+- name: Epwp
+- name: Roads Infrastructure
 resources:
   'EPRE for Vote 09 : Public Works, Roads and Infrastructure':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -46,7 +46,11 @@ intro: "## Vision\n\nTrendsetters in infrastructure delivery to change the econo
   \n* Community based programme \u2013 The intervention in the infrastructure sector\
   \ involves increasing the labour intensity of government-funded infrastructure projects."
 name: Roads and Public Works
-programmes: []
+programmes:
+- name: Administration
+- name: Public Works Infrastructure
+- name: Transport Infrastructure
+- name: Community Based Programme
 resources:
   'EPRE for Vote 05 : Roads and Public Works':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

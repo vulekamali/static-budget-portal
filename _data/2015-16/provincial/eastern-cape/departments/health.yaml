@@ -44,7 +44,15 @@ intro: "## Vision\n\nA quality health service to the people of the Eastern Cape 
   \ non-communicable\r\nillnesses and conditions by implementing high impact strategies\
   \ to address prevention, detection,\r\nmanagement and support at all levels of healthcare"
 name: Health
-programmes: []
+programmes:
+- name: Administration
+- name: District Health Services
+- name: Emergency Medical Services
+- name: Provincial Hospitals Services
+- name: Central Hospital Services
+- name: Health Sciences and Training
+- name: Health Care Support Services
+- name: Health Facilities Management
 resources:
   'EPRE for Vote 03 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

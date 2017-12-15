@@ -45,7 +45,15 @@ intro: "## Vision\n\nAccess to person-centred quality care.\r\n\r\n\n\n## Missio
   \ patient transport services.\r\nForensic pathology: medico-legal and inspector\
   \ of anatomy services."
 name: Health
-programmes: []
+programmes:
+- name: Administration
+- name: District Health Services
+- name: Emergency Medical Services
+- name: Provincial Hospital Services
+- name: Central Hospital Services
+- name: Health Sciences and Training
+- name: Health Care Support Services
+- name: Health Facilities Management
 resources:
   'EPRE for Vote 06 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

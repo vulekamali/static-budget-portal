@@ -44,7 +44,11 @@ intro: "## Vision\n\nA socially inclusive, creative, active and connected Wester
   \ Cape.\r\n\r\n* Programme 4: Sport and Recreation provides sport and recreation\
   \ activities for the inhabitants of the\r\nWestern Cape."
 name: Cultural Affairs and Sport
-programmes: []
+programmes:
+- name: Administration
+- name: Cultural Affairs
+- name: Library and Archive Services
+- name: Sport and Recreation
 resources:
   'EPRE for Vote 13 : Cultural Affairs and Sport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

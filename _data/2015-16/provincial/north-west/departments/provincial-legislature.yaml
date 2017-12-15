@@ -46,7 +46,9 @@ intro: "## Vision\n\nDemocratic, Non Racial, Non Sexist, Transparent and Activis
   \ and that it implements the province\u2019s legislation in the best interest of\
   \ the people of this province."
 name: Provincial Legislature
-programmes: []
+programmes:
+- name: Administration
+- name: Legislature operations
 resources:
   'EPRE for Vote 02 : Provincial Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

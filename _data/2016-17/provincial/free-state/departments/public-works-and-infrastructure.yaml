@@ -35,7 +35,10 @@ intro: "## Vision\n\nA prosperous Free State through facilitation of sustainable
   \ security services;\r\n\r\n* Coordination and monitoring of the implementation\
   \ of Expanded Public Works\r\nProgrammes."
 name: Public Works and Infrastructure
-programmes: []
+programmes:
+- name: Administration
+- name: Public Works Infrastructure
+- name: Expanded Public Works Programme
 resources:
   'EPRE for Vote 09 : Public Works and Infrastructure':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

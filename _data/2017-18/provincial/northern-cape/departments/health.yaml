@@ -35,7 +35,15 @@ intro: "## Vision\n\nHealth service excellence for all.\r\n\r\n\n\n## Mission\n\
   \ Health System, based on the Primary Health Care approach. Health care services\
   \ are provided at a primary, secondary and tertiary level."
 name: Health
-programmes: []
+programmes:
+- name: Administration
+- name: District Health Services
+- name: Emergency Medical Services
+- name: Provincial Hospital Services
+- name: Central Hospital Services
+- name: Health Sciences and Training
+- name: Health Care Support Services
+- name: Health Facilities Management
 resources:
   'EPRE for Vote 10 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

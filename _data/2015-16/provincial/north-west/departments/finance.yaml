@@ -45,7 +45,11 @@ intro: "## Vision \n\nWe will be the ultimate financial management authority and
   \r\n* Provision of advice on procurement policies and procedures in provincial departments;\r\
   \n\r\n* Provide oversight on implementation of the MFMA in the province.\r\n"
 name: Finance
-programmes: []
+programmes:
+- name: Administration
+- name: Sustainable Resource Management
+- name: Asset and Liabilities Management
+- name: Financial Governance
 resources:
   'EPRE for Vote 07 : Finance':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -52,7 +52,11 @@ intro: "## Vision\n\nAn efficient and dynamic team that enables well governed mu
   \ local government.\r\n\r\n* Facilitate access to government services.\r\n\r\n*\
   \ Facilitate and monitor infrastructure development.\r\n"
 name: Local Government
-programmes: []
+programmes:
+- name: Administration
+- name: Local Governance
+- name: Development and Planning
+- name: Traditional Institutional Management
 resources:
   'EPRE for Vote 14 : Local Government':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -37,7 +37,12 @@ intro: "## vision\n\nwe envision a prosperous province supported by sound financ
   \ and effective management in respect of revenuw and expenditure, assests and liabilities,\
   \ public entities and constitional institions\r\n\r\n\r\n\r\n"
 name: Provincial Treasury
-programmes: []
+programmes:
+- name: Administration
+- name: Sustainable Resource Management
+- name: Asset and Liabilities Management
+- name: Financial Governance
+- name: Municipal Financial Governance
 resources:
   'EPRE for Vote 12 : Provincial Treasury':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -44,7 +44,11 @@ intro: "## Vision\n\nExcellence in public resource management for socio-economic
   \ and\r\n\r\n* Inspect any system of financial management and internal control applied\
   \ by provincial government institutions\r\n"
 name: Provincial Treasury
-programmes: []
+programmes:
+- name: Administration
+- name: Sustainable Resource Management
+- name: Assets, Liabilities & SCM
+- name: Financial Governance
 resources:
   'EPRE for Vote 05 : Provincial Treasury':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

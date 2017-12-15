@@ -40,7 +40,11 @@ intro: "## Vision\n\nWe will be the ultimate financial management authority and 
   \ departments; and\r\n\r\n* Monitoring of infrastructure spending for provincial\
   \ departments."
 name: Finance
-programmes: []
+programmes:
+- name: Administration
+- name: Sustainable Resource Management
+- name: Asset and Liabilities Management
+- name: Financial Governance
 resources:
   'EPRE for Vote 07 : Finance':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

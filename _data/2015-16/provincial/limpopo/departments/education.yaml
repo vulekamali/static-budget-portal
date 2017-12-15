@@ -39,7 +39,14 @@ intro: "## Vision\n\nA catalyst for an educated and industrious Limpopo\r\n\r\n\
   \ of the education system.\r\n\r\n* Provide minimum food needed to learn effectively\
   \ in primary schools to identified poor and hungry learners."
 name: Education
-programmes: []
+programmes:
+- name: Administration
+- name: Public Ordinary Schools Education
+- name: Independent Schools Subsidies
+- name: Public Special Schools Education
+- name: Early Childhood Development
+- name: Infrastructure Development
+- name: Examination And Education Related Services
 resources:
   'EPRE for Vote 03 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
