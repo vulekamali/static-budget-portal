@@ -1,11 +1,11 @@
-{% if programmes %}
+{% if include.programmes.size > 0 %}
 
 <ul class="Programmes">
     <li>
       <div class="Programmes-title">Programmes in this department</div>
       <ul class="Programmes-list">
 
-        {% for item in include.navbar %}
+        {% for item in include.programmes %}
           <li class="Programmes-item">{{ item.name }}</li>
         {% endfor %}
 
