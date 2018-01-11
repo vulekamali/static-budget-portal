@@ -7,11 +7,15 @@ $years: 3;
 }
 
 .YearSelect-title {
+  display: none;
   color: white;
   font-size: 14px;
-  display: inline-block;
   vertical-align: middle;
   padding-right: 20px;
+
+  @media screen and (min-width: 400px) {
+    display: inline-block;
+  }
 }
 
 .YearSelect-content {
@@ -23,7 +27,7 @@ $years: 3;
   height: 48px;
   margin: 10px 0;
 
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 750px) {
     height: auto;
     max-width: 140px * $years;
   }
@@ -48,7 +52,7 @@ $years: 3;
     height: 38px;
   }
 
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 750px) {
     position: static;
     display: block;
   }
@@ -66,7 +70,7 @@ $years: 3;
   display: none;
   order: 2;
 
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 750px) {
     display: block;
     width: (100% / $years);
 
@@ -106,7 +110,7 @@ $years: 3;
       top: 3px;
     }
 
-    @media screen and (min-width: 550px) {
+    @media screen and (min-width: 750px) {
       cursor: default;
       border-left: solid 1px #9b9b9b;
       border-right: solid 1px #9b9b9b;
@@ -133,7 +137,7 @@ $years: 3;
     background-color: darken(white, 15%);
   }
 
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 750px) {
     width: 100%;
   }
 }

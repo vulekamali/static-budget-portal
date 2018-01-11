@@ -114,7 +114,7 @@ class AboutPageScrollEvents {
     }
 
     const updateStateWrap = () => this.updateState();
-    this.scrollTimeout.value = setTimeout(updateStateWrap, 10);
+    this.scrollTimeout.value = setTimeout(updateStateWrap, 5);
   }
 
 

@@ -13,63 +13,73 @@
 <nav class="NavBar">
 
   <h2 class="u-sReadOnly">Navigate to a section on this site:</h2>
-  <ul class="NavBar-list">
-      {% for item in items %}
-        {% assign array = item | split: ', ' %}
+  <div class="NavBar-wrap">
 
-        {% if array[0] == include.active %}
-          {% assign activeClass = ' NavBar-link--active' %}
-          {% if include.nested == false %}
-            {% assign tag = 'span' %}
+    <div class="NavBar-expand js-closeIcon" aria-hidden>
+      <div class="NavBar-expandText">Hide Menu</div>
+      <div class="NavBar-expandIcon"></div>
+    </div>
+
+    <ul class="NavBar-list">
+        {% for item in items %}
+          {% assign array = item | split: ', ' %}
+
+          {% if array[0] == include.active %}
+            {% assign activeClass = ' NavBar-link--active' %}
+            {% if include.nested == false %}
+              {% assign tag = 'span' %}
+            {% endif %}
+          {% else %}
+            {% assign activeClass = '' %}
+            {% assign tag = 'a' %}
           {% endif %}
-        {% else %}
-          {% assign activeClass = '' %}
-          {% assign tag = 'a' %}
-        {% endif %}
 
-        {% if include.active == 'about' %}
-          {% assign currentClass = ' is-currentPage js-box' %}
-        {% else %}
-          {% assign currentClass = '' %}
-        {% endif %}
+          {% if include.active == 'about' %}
+            {% assign currentClass = ' is-currentPage js-box' %}
+          {% else %}
+            {% assign currentClass = '' %}
+          {% endif %}
 
-        <li class="NavBar-item">
-            <{{ tag }} href="/{{ include.year }}/{{ array[2] }}" class="NavBar-link{{ activeClass }}" >
+          <li class="NavBar-item">
+              <{{ tag }} href="/{{ include.year }}/{{ array[2] }}" class="NavBar-link{{ activeClass }}" >
 
-              {% if array[0] == 'home' %}
-                <span class="NavBar-iconWrap">{{ icon }}</span>
-                <span class="NavBar-text is-mobileOnly">Home</span> 
-              {% elsif array[0] == 'about' %}
-                <span class="NavBar-text">{{ array[1] }}</span>
+                {% if array[0] == 'home' %}
+                  <span class="NavBar-iconWrap">{{ icon }}</span>
+                  <span class="NavBar-text is-mobileOnly">Home</span> 
+                {% else %}
+                  <span class="NavBar-text">{{ array[1] }}</span>
+                {% endif %}
+
+              </{{ tag }}>
+
+              {% if array[0] == 'about' %}
                 <div class="NavBar-subItemsWrap{{ currentClass }}">
                   <ul class="NavBar-subItems">
                       <li class="NavBar-subItem">
-                        <a class="NavBar-subLink js-link js-scroll" href="#">Background</a>
+                        <a class="NavBar-subLink js-link js-scroll" href="/{{ include.year }}/about/#background">Background</a>
                       </li>
                       <li class="NavBar-subItem">
-                        <a class="NavBar-subLink js-link js-scroll" href="#">Development</a>
+                        <a class="NavBar-subLink js-link js-scroll" href="/{{ include.year }}/about/#development">Development</a>
                       </li>
                       <li class="NavBar-subItem">
-                        <a class="NavBar-subLink js-link js-scroll" href="#">Project Status</a>
+                        <a class="NavBar-subLink js-link js-scroll" href="/{{ include.year }}/about/#project-status">Project Status</a>
                       </li>
                       <li class="NavBar-subItem">
-                        <a class="NavBar-subLink js-link js-scroll" href="#">Your Contribution</a>
+                        <a class="NavBar-subLink js-link js-scroll" href="/{{ include.year }}/about/#your-contribution">Your Contribution</a>
                       </li>
                       <li class="NavBar-subItem">
-                        <a class="NavBar-subLink js-link js-scroll" href="#">Contacts</a>
+                        <a class="NavBar-subLink js-link js-scroll" href="/{{ include.year }}/about/#contacts">Contacts</a>
                       </li>
                       <li class="NavBar-subItem">
-                        <a class="NavBar-subLink js-link js-scroll" href="#">Media & Other Information</a>
+                        <a class="NavBar-subLink js-link js-scroll" href="/{{ include.year }}/about/#media-and-other-information">Media & Other Information</a>
                       </li>
                   </ul>
                 </div>
-              {% else %}
-                <span class="NavBar-text">{{ array[1] }}</span>
               {% endif %}
 
-            </{{ tag }}>
-        </li>
-      {% endfor %}
+          </li>
+        {% endfor %}
 
-  </ul>
+    </ul>
+  </div>
 </nav>

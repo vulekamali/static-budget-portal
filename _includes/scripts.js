@@ -11,6 +11,7 @@ import './utilities/js/modules/polyfillOldFeatures.js';
 import './components/Intro/scripts.js';
 import './components/Tooltip/scripts.js';
 import './components/About/scripts.js';
+import './components/Search/scripts.js';
 
 import './components/YearSelect/index.jsx';
 import './components/Search/index.jsx';
