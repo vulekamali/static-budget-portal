@@ -15,7 +15,7 @@
     @return 20;
   }
 
-  @if $name == 'Search-wrap' {
+  @if $name == 'Search-container--desktop' {
     @return 30;
   }
 
@@ -33,5 +33,17 @@
 
   @if $name == 'Tooltip-boxWrap is-important' {
     @return 70;
+  }
+
+  @if $name == 'Page-header' {
+    @return 80;
+  }
+
+  @if $name == 'NavBar' {
+    @return 90;
+  }
+
+  @if $name == 'Search-container--mobile' {
+    @return 90;
   }
 }

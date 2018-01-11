@@ -17,8 +17,10 @@ layout: base
     {% include components/Search/index.html year=page.financial_year %}
     {% include components/NavBar/index.html year=page.financial_year active=page.active nested=page.nested  %}
   </header>
-  <div class="Page-content">
-    {{ content }}
+  <div class="Page-contentContainer">
+    <div class="Page-content">
+      {{ content }}
+    </div>
   </div>
   <footer class="Page-footer">
     {% include components/Footer/index.html %}

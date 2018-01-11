@@ -1,35 +1,112 @@
 .NavBar {
-  background-color: #e6e6e6;
-}
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: z-index(NavBar);
+  transform: translateX(-100%);
+  transition: transform 0.3s;
 
-.NavBar-icon {
-  fill: #4a4a4a;
-  width: 18px;
-  height: 18px;
+  &.is-active {
+    transform: translateX(0);
+    animation-name: blackout;
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+  }
+
+  @media screen and (min-width: 750px) {
+    position: static;
+    background: #e6e6e6;
+    transform: none;
+  }
 }
 
 .NavBar-wrap {
-  background-color: #e6e6e6;
+  height: 100%;
   width: 100%;
+  max-width: 320px;
+  border-radius: 0 3px 3px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 750px) {
+    max-width: 100%;
+    box-shadow: none;
+    background: none;
+  }
+}
+
+.NavBar-list {
+  overflow-y: scroll;
+  background-color: #f0f0f0;
+  list-style: none;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0;
+  padding-left: 0;
+  @include clearfix;
+
+  @media screen and (min-width: 750px) {
+    overflow-y: visible;
+    background: none;
+    margin: 0 auto;
+  }
+}
+
+.NavBar-icon {
+  display: none;
+
+  @media screen and (min-width: 750px) {
+    display: block;
+    fill: #4a4a4a;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .NavBar-item {
-  list-style: none;
-  float: left;
+  margin-left: 0;
+  display: block;
+
+  @media screen and (min-width: 750px) {
+    list-style: none;
+    float: left;
+  }
 }
 
 .NavBar-link {
-  user-select: none;
-  height: 100%;
   display: block;
-  padding: 16px 20px;
-  font-weight: bold;
-  font-size: 16px;
-  text-decoration: none;
+  border-bottom: solid 1px #b9b9b9;
   color: #4a4a4a;
+  text-decoration: none;
+  padding: 12px 22px;
+  font-size: 18px;
+
+  &:hover {
+    background: darken(#f0f0f0, 10%);
+  }
+
+  @media screen and (min-width: 750px) {
+    user-select: none;
+    height: 100%;
+    padding: 16px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom-width: 0;
+  }
 
   &--active {
-    background-color: white;
+    text-decoration: line-through;
+
+    @media screen and (min-width: 750px) {
+      background-color: white;
+      text-decoration: none;
+    }
   }
 }
 
@@ -37,34 +114,74 @@ a.NavBar-link:hover {
   background-color: darken(#e6e6e6, 15%);
 }
 
-.NavBar-list {
+.NavBar-subItems {
   list-style: none;
-  max-width: 1024px;
-  margin: 0 auto;
-  @include clearfix;
-}
+  padding-left: 0;
 
-.NavBar-text {
-  display: inline-block;
-
-  &.is-mobileOnly {
-    display: none;
+  @media screen and (min-width: 750px) {
+    width: 200px;
+    background-color: #f5f6f6;
+    padding: 20px;
+    list-style: none;
+    text-align: right;
   }
 }
 
-.NavBar-subItems {
-  width: 200px;
-  background-color: #f5f6f6;
+.NavBar-subLink {
+  padding: 12px 22px;
+  font-size: (32px / 2);
+  border-bottom: solid 1px #b9b9b9;
+  background: white;
   display: block;
-  padding: 20px;
-  list-style: none;
-  text-align: right;
+  cursor: pointer;
+  padding-left: 36px;
+  text-decoration: none;
+  color: #4a4a4a;
+
+  @media screen and (min-width: 750px) {
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border-radius: 2px;
+    background: none;
+    border-bottom-width: 0;
+  }
+
+  &:not(.is-active):hover {
+    background-color: darken(white, 10%);
+
+    @media screen and (min-width: 750px) {
+      background-color: darken(#f5f6f6, 10%);
+    }
+  }
+
+  &.is-active {
+    text-decoration: line-through;
+
+    @media screen and (min-width: 750px) {
+      font-weight: bold;
+      cursor: default;
+      text-decoration: underline;
+    }
+  }
+}
+
+.NavBar-text {
+  @media screen and (min-width: 750px) {
+    display: inline-block;
+
+    &.is-mobileOnly {
+      display: none;
+    }
+  }
 }
 
 .NavBar-subItemsWrap {
-  display: none;
 
   @media screen and (min-width: 750px) {
+    display: none;
+
     &.is-currentPage {
       display: block;
       position: absolute;
@@ -87,22 +204,47 @@ a.NavBar-link:hover {
   }
 }
 
-.NavBar-subLink {
-  display: inline-block;
-  font-weight: normal;
-  text-decoration: none;
-  color: #4a4a4a;
-  margin-bottom: 10px;
-  padding: 8px 15px;
-  border-radius: 2px;
+.NavBar-expand {
+  border-bottom: solid 1px #b9b9b9;
+  text-align: right;
+  padding: (35px / 2) (33px / 2);
+  cursor: pointer;
 
-  &:not(.is-active):hover {
-    background-color: darken(#f5f6f6, 10%);
+  &:hover {
+    background-color: darken(white, 20%);
   }
 
-  &.is-active {
-    font-weight: bold;
-    cursor: default;
-    text-decoration: underline;
+  @media screen and (min-width: 750px) {
+    display: none;
+  }
+}
+
+.NavBar-expandText {
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  padding: 0 11px;
+}
+
+.NavBar-expandIcon {
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+  height: 25px;
+  border: 2px solid #4a4a4a;
+  border-radius: 3px;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-right: 5px solid black;
+    position: absolute;
+    top: 5px;
+    left: 0;
   }
 }
