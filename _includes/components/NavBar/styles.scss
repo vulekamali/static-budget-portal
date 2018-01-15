@@ -100,12 +100,17 @@
     border-bottom-width: 0;
   }
 
-  &--active {
-    text-decoration: line-through;
+  &:not(.has-subLinks).NavBar-link--active {
+    font-weight: bold;
 
     @media screen and (min-width: 750px) {
+      font-weight: normal;
+    }
+  }
+
+  &--active {
+    @media screen and (min-width: 750px) {
       background-color: white;
-      text-decoration: none;
     }
   }
 }
@@ -157,12 +162,10 @@ a.NavBar-link:hover {
   }
 
   &.is-active {
-    text-decoration: line-through;
+    font-weight: bold;
 
     @media screen and (min-width: 750px) {
-      font-weight: bold;
       cursor: default;
-      text-decoration: underline;
     }
   }
 }
