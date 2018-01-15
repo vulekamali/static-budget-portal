@@ -2,11 +2,6 @@ export default function createGlossaryGroupedObject(rawObject) {
   const alphabetLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 
-  const toTitleCase = (str) => {
-    return str.replace(/\w\S*/g, txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
-  };
-
-
   const objectSkeleton = alphabetLetters.reduce(
     (result, letter) => {
       return {
@@ -28,7 +23,7 @@ export default function createGlossaryGroupedObject(rawObject) {
         [letter]: [
           ...result[letter],
           {
-            phrase: toTitleCase(phrase),
+            phrase,
             description: rawObject[phrase],
           },
         ],
