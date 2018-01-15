@@ -40,12 +40,18 @@
             {% assign currentClass = '' %}
           {% endif %}
 
+          {% if array[0] == 'about' %}
+            {% assign hasSubLinks = ' has-subLinks' %}
+          {% else %}
+            {% assign hasSubLinks = '' %}
+          {% endif %}
+
           <li class="NavBar-item">
-              <{{ tag }} href="/{{ include.year }}/{{ array[2] }}" class="NavBar-link{{ activeClass }}" >
+              <{{ tag }} href="/{{ include.year }}/{{ array[2] }}" class="NavBar-link{{ activeClass }}{{ hasSubLinks }}" >
 
                 {% if array[0] == 'home' %}
                   <span class="NavBar-iconWrap">{{ icon }}</span>
-                  <span class="NavBar-text is-mobileOnly">Home</span> 
+                  <span class="NavBar-text is-mobileOnly">Home</span>
                 {% else %}
                   <span class="NavBar-text">{{ array[1] }}</span>
                 {% endif %}
@@ -56,22 +62,22 @@
                 <div class="NavBar-subItemsWrap{{ currentClass }}">
                   <ul class="NavBar-subItems">
                       <li class="NavBar-subItem">
-                        <a class="NavBar-subLink js-link js-scroll" href="/{{ include.year }}/about#background">Background</a>
+                        <a class="NavBar-subLink js-link js-scroll js-forceClose" href="/{{ include.year }}/about#background">Background</a>
                       </li>
                       <li class="NavBar-subItem">
-                        <a class="NavBar-subLink js-link js-scroll" href="/{{ include.year }}/about#development">Development</a>
+                        <a class="NavBar-subLink js-link js-scroll js-forceClose" href="/{{ include.year }}/about#development">Development</a>
                       </li>
                       <li class="NavBar-subItem">
-                        <a class="NavBar-subLink js-link js-scroll" href="/{{ include.year }}/about#project-status">Project Status</a>
+                        <a class="NavBar-subLink js-link js-scroll js-forceClose" href="/{{ include.year }}/about#project-status">Project Status</a>
                       </li>
                       <li class="NavBar-subItem">
-                        <a class="NavBar-subLink js-link js-scroll" href="/{{ include.year }}/about#your-contribution">Your Contribution</a>
+                        <a class="NavBar-subLink js-link js-scroll js-forceClose" href="/{{ include.year }}/about#your-contribution">Your Contribution</a>
                       </li>
                       <li class="NavBar-subItem">
-                        <a class="NavBar-subLink js-link js-scroll" href="/{{ include.year }}/about#contacts">Contacts</a>
+                        <a class="NavBar-subLink js-link js-scroll js-forceClose" href="/{{ include.year }}/about#contacts">Contacts</a>
                       </li>
                       <li class="NavBar-subItem">
-                        <a class="NavBar-subLink js-link js-scroll" href="/{{ include.year }}/about#media-and-other-information">Media & Other Information</a>
+                        <a class="NavBar-subLink js-link js-scroll js-forceClose" href="/{{ include.year }}/about#media-and-other-information">Media & Other Information</a>
                       </li>
                   </ul>
                 </div>
