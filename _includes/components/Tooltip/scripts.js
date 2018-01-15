@@ -2,7 +2,6 @@ import camelCase from 'camelcase';
 import glossaryObject from './../../data/glossary.json';
 import createComponent from './partials/createComponent.js';
 import escapeRegex from './partials/escapeRegex.js';
-import toTitleCase from './partials/toTitleCase.js';
 import walkTheDom from './partials/walkTheDom.js';
 
 function scripts() {
