@@ -1,10 +1,10 @@
 financial_years:
 - closest_match:
-    is_exact_match: false
-    name: North West
-    organisational_unit: government
-    slug: north-west
-    url_path: /2015-16/provincial/north-west
+    is_exact_match: true
+    name: Tourism
+    organisational_unit: department
+    slug: tourism
+    url_path: /2015-16/provincial/north-west/departments/tourism
   id: 2015-16
   is_selected: false
 - closest_match:
@@ -49,5 +49,9 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 10 - Tourism.pdf
+selected_financial_year: 2016-17
 slug: tourism
+sphere:
+  name: Provincial
+  slug: provincial
 vote_number: 10

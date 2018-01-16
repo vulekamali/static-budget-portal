@@ -8,8 +8,34 @@ LISTINGS = [
     '2017-18/departments.yaml',
 ]
 
-
 base_url = "https://dynamicbudgetportal.openup.org.za/"
+
+
+def ensure_file_dirs(file_path):
+    dirname = os.path.dirname(file_path)
+    if not os.path.exists(dirname):
+        os.makedirs(dirname)
+
+
+def write_department_page(department_url_path, department_yaml):
+    department = yaml.load(department_yaml)
+    file_path = ".%s.html" % department_url_path
+    ensure_file_dirs(file_path)
+    with open(file_path, "wb") as outfile:
+        outfile.write(
+            ("---\n"
+             "financial_year: %s\n"
+             "sphere: %s\n"
+             "geographic_region_slug: %s\n"
+             "department_slug: %s\n"
+             "layout: department\n"
+             "---") % (
+                 department['selected_financial_year'],
+                 department['sphere']['slug'],
+                 department['government']['slug'],
+                 department['slug'],
+             ))
+
 
 for listing in LISTINGS:
     listing_url = base_url + listing
@@ -26,9 +52,15 @@ for listing in LISTINGS:
             for department in government['departments']:
                 print department['url_path']
 
-                department_url = base_url + department['url_path'] + '.yaml'
-                department_path = '_data/' + department['url_path'] + '.yaml'
+                department_path = department['url_path'] + '.yaml'
+                if department_path.startswith('/'):
+                    department_path = department_path[1:]
+                department_url = base_url + department_path
+                department_context_path = '_data/' + department_path
+                ensure_file_dirs(department_context_path)
+
                 r = requests.get(department_url)
                 r.raise_for_status()
-                with open(department_path, 'wb') as department_file:
+                write_department_page(department['url_path'], r.text)
+                with open(department_context_path, 'wb') as department_file:
                     department_file.write(r.text)

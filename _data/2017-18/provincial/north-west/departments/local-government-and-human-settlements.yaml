@@ -1,10 +1,10 @@
 financial_years:
 - closest_match:
-    is_exact_match: false
-    name: North West
-    organisational_unit: government
-    slug: north-west
-    url_path: /2015-16/provincial/north-west
+    is_exact_match: true
+    name: Local Government and Human Settlements
+    organisational_unit: department
+    slug: local-government-and-human-settlements
+    url_path: /2015-16/provincial/north-west/departments/local-government-and-human-settlements
   id: 2015-16
   is_selected: false
 - closest_match:
@@ -54,5 +54,9 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 09 - Local Government and Human Settlements.pdf
+selected_financial_year: 2017-18
 slug: local-government-and-human-settlements
+sphere:
+  name: Provincial
+  slug: provincial
 vote_number: 9
