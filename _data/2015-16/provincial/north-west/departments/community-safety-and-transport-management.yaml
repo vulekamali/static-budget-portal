@@ -1,0 +1,46 @@
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Community Safety and Transport Management
+    organisational_unit: department
+    slug: community-safety-and-transport-management
+    url_path: /2015-16/provincial/north-west/departments/community-safety-and-transport-management
+  id: 2015-16
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Community Safety and Transport Management
+    organisational_unit: department
+    slug: community-safety-and-transport-management
+    url_path: /2016-17/provincial/north-west/departments/community-safety-and-transport-management
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Community Safety and Transport Management
+    organisational_unit: department
+    slug: community-safety-and-transport-management
+    url_path: /2017-18/provincial/north-west/departments/community-safety-and-transport-management
+  id: 2017-18
+  is_selected: false
+government:
+  name: North West
+  slug: north-west
+intro: "## Vision\r\n\r\nSafe communities and effective transport services\r\n \r\n\
+  \r\n\r\n## Mission\r\n\r\nWe are committed to promote community and road safety,\
+  \ exercise civilian oversight of\r\npolice and coordinate transport services through\
+  \ an integrated approach"
+name: Community Safety and Transport Management
+programmes: []
+resources:
+  'EPRE for Vote 05 : Public Safety and Liaison':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://treasurydata.openup.org.za/dataset/0771b91f-0aee-4a36-bb48-99bdf79f4304/resource/797f9664-d636-4902-9924-18c94059b0b4/download/nw-community-safety-trans-man.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 05 - Public Safety.pdf
+slug: community-safety-and-transport-management
+vote_number: 5

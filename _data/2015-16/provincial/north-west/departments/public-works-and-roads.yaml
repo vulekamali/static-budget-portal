@@ -1,35 +1,35 @@
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Public Works, Roads and Transport
+    name: Public Works and Roads
     organisational_unit: department
-    slug: public-works-roads-and-transport
-    url_path: /2015-16/provincial/north-west/departments/public-works-roads-and-transport
+    slug: public-works-and-roads
+    url_path: /2015-16/provincial/north-west/departments/public-works-and-roads
   id: 2015-16
   is_selected: true
 - closest_match:
-    is_exact_match: false
-    name: North West
-    organisational_unit: government
-    slug: north-west
-    url_path: /2016-17/provincial/north-west
+    is_exact_match: true
+    name: Public Works and Roads
+    organisational_unit: department
+    slug: public-works-and-roads
+    url_path: /2016-17/provincial/north-west/departments/public-works-and-roads
   id: 2016-17
   is_selected: false
 - closest_match:
-    is_exact_match: false
-    name: North West
-    organisational_unit: government
-    slug: north-west
-    url_path: /2017-18/provincial/north-west
+    is_exact_match: true
+    name: Public Works and Roads
+    organisational_unit: department
+    slug: public-works-and-roads
+    url_path: /2017-18/provincial/north-west/departments/public-works-and-roads
   id: 2017-18
   is_selected: false
 government:
   name: North West
   slug: north-west
-intro: "## Vision\n\nDelivery and maintenance of quality infrastructure for sustainable\
-  \ growth and development.\r\n\r\n\n\n## Mission\n\nTo provide quality provincial\
-  \ infrastructure and ensure better service delivery.\r\n\r\n\n\n## Core functions\n\
-  \n* To plan and implement maintenance activities, routine, schedule, conditions\
+intro: "## Vision\r\n\r\nDelivery and maintenance of quality infrastructure for sustainable\
+  \ growth and development.\r\n\r\n\r\n\r\n## Mission\r\n\r\nTo provide quality provincial\
+  \ infrastructure and ensure better service delivery.\r\n\r\n\r\n\r\n## Core functions\r\
+  \n\r\n* To plan and implement maintenance activities, routine, schedule, conditions\
   \ assessment of all buildings and other fixed structures;\r\n\r\n* To manage the\
   \ property portfolio of the province including the establishment and management\
   \ of the provincial strategic infrastructure plan;\r\n\r\n* To manage the operations\
@@ -42,8 +42,8 @@ intro: "## Vision\n\nDelivery and maintenance of quality infrastructure for sust
   \ empowerment and economic growth;\r\n\r\n* To develop new, re-construct, upgrade,\
   \ rehabilitate and maintain road and transport infrastructure; and\r\n\r\n* Contribute\
   \ to the national goals of job creation and poverty alleviation through Expanded\
-  \ Public Works Programme.\r\n\r\n"
-name: Public Works, Roads and Transport
+  \ Public Works Programme."
+name: Public Works and Roads
 programmes: []
 resources:
   'EPRE for Vote 11 : Public Works, Roads and Transport':
@@ -55,5 +55,5 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 11 - Public Roads and Transport.pdf
-slug: public-works-roads-and-transport
+slug: public-works-and-roads
 vote_number: 11
