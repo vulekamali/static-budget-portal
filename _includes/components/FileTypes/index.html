@@ -1,0 +1,18 @@
+<div class="FileTypes">
+    <h3 class="FileTypes-title">Individual documents included in this data set</h3>
+    <ul class="u-listReset">
+
+      {% for item in include.resources %}
+        <li class="FileTypes-item">
+          <a class="FileTypes-itemTitle" href="{{ item.url }}">{{ item.name }}</a>
+          <a class="FileTypes-logoWrap" download="{{ item.name | slugify }}.{{ item.format | downcase }}" href="{{ item.url }}">
+            <svg class="FileTypes-logo" xmlns="http://www.w3.org/2000/svg" viewBox="157 347 100 100">
+              <path d="M250.5 402.4a2 2 0 0 0-1.9-1.3h-22.8v-52c0-1.2-1-2.1-2.1-2.1h-33.3a2 2 0 0 0-2.1 2v52.1h-23a2 2 0 0 0-1.4 3.6l41.6 41.7c.4.4.9.6 1.4.6.6 0 1.1-.2 1.5-.6l41.7-41.7a2 2 0 0 0 .4-2.3z"></path>
+            </svg>
+          </a>
+          <div class="FileTypes-text">{{ item.description }}</div>
+        </li>
+      {% endfor %}
+      
+    </ul>
+  </div>
