@@ -1,3 +1,47 @@
+---
+layout: page-shell
+---
+
 {% assign page_data = site.data[page.financial_year].datasets[page.slug] %}
 
-{{ page_data.name }}
+<div class="Page-contentWrap">
+
+  <div>
+    <div class="Page-title">{{ page_data.name }}</div>
+
+    {% include components/CsoMeta/index.html author=page_data.author created=page_data.created last_updated=page_data.last_updated organization=page_data.organization license=page_data.license facebook=page_data.facebook twitter=page_data.twitter %}
+
+    {% include components/CsoRelated/index.html related=page_data.related %}
+  </div>
+
+  <main class="Page-main">
+
+    {% if page_data.intro %}
+      <div class="Page-blurb js-tooltips">
+        <h2>About this data set</h2>
+        {{ page_data.intro | markdownify }}
+      </div>
+    {% endif %}
+
+    {% if page_data.methodology %}
+      <div class="Page-blurb js-tooltips">
+        <h2>Methodology Used in Gathering and Analysis</h2>
+        {{ page_data.methodology | markdownify }}
+      </div>
+    {% endif %}
+       
+  </main>
+
+  <aside class="Page-sidebar">
+      {% include components/Share/index.html %}
+
+      {% if page_data.resources %}
+        <div class="Page-smallSection">
+            {% include components/FileTypes/index.html resources=page_data.resources %}
+        </div>
+      {% endif %}
+
+  </aside>
+
+</div>
+
