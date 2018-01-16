@@ -4,6 +4,7 @@ function scripts() {
 
   if (searchList.length > 0 && navBarList.length > 0) {
     const navBar = navBarList[0] || null;
+    const forceCloseList = navBar ? navBar.getElementsByClassName('js-forceClose') : null;
     const search = searchList[0] || null;
     const searchWrapList = search ? search.getElementsByClassName('js-searchWrap') : null;
     const searchWrap = searchWrapList[0] || null;
@@ -43,6 +44,10 @@ function scripts() {
 
       searchIcon.addEventListener('click', openSearch);
       searchIconClose.addEventListener('click', closeSearch);
+
+      for (let i = 0; i < forceCloseList.length; i++) {
+        forceCloseList[i].addEventListener('click', closeNavBar);
+      }
     }
   }
 }

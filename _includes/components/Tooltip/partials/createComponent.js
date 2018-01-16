@@ -1,4 +1,4 @@
-import toTitleCase from './toTitleCase.js';
+
 import closeIcon from './closeIcon.js';
 
 export default function createComponent(phrase, description) {
@@ -8,7 +8,7 @@ export default function createComponent(phrase, description) {
       <div class="Tooltip-box">
         <div class="Tooltip-content">
           <div class="Tooltip-shadowBox">
-            <div class="Tooltip-title">${toTitleCase(phrase)}</div>
+            <div class="Tooltip-title">${phrase}</div>
             <div class="Tooltip-text">${description}</div>
             <span class="Tooltip-linkWrap js-closeTrigger">
               <span>${closeIcon}</span>
