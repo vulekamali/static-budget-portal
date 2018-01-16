@@ -17,6 +17,26 @@ def ensure_file_dirs(file_path):
         os.makedirs(dirname)
 
 
+def write_department_page(department_url_path, department_yaml):
+    department = yaml.load(department_yaml)
+    file_path = ".%s.html" % department_url_path
+    ensure_file_dirs(file_path)
+    with open(file_path, "wb") as outfile:
+        outfile.write(
+            ("---\n"
+             "financial_year: %s\n"
+             "sphere: %s\n"
+             "geographic_region_slug: %s\n"
+             "department_slug: %s\n"
+             "layout: department\n"
+             "---") % (
+                 department['selected_financial_year'],
+                 department['sphere']['slug'],
+                 department['government']['slug'],
+                 department['slug'],
+             ))
+
+
 for listing in LISTINGS:
     listing_url = base_url + listing
     r = requests.get(listing_url)
@@ -41,5 +61,6 @@ for listing in LISTINGS:
 
                 r = requests.get(department_url)
                 r.raise_for_status()
+                write_department_page(department['url_path'], r.text)
                 with open(department_context_path, 'wb') as department_file:
                     department_file.write(r.text)
