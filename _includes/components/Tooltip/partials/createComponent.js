@@ -5,6 +5,7 @@ export default function createComponent(phrase, description) {
   return `<span class="Tooltip js-scriptHook">
     <span class="Tooltip-phrase js-openTrigger">${phrase}</span>
     <div class="Tooltip-boxWrap js-alert">
+      <div class="Tooltip-modalCover js-modalCover"></div>
       <div class="Tooltip-box">
         <div class="Tooltip-content">
           <div class="Tooltip-shadowBox">
