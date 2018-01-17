@@ -46,7 +46,7 @@ def write_dataset_page(dataset_url_path, dataset_yaml):
             ("---\n"
              "financial_year: %s\n"
              "slug: %s\n"
-             "layout: dataset\n"
+             "layout: contributed_dataset\n"
              "---") % (
                  dataset['selected_financial_year'],
                  dataset['slug'],
