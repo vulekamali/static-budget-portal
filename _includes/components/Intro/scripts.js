@@ -6,6 +6,7 @@ function scripts() {
     const trigger = nodes[i].getElementsByClassName('js-alertTrigger')[0];
     const alert = nodes[i].getElementsByClassName('js-alert')[0];
     const close = nodes[i].getElementsByClassName('js-close')[0];
+    const modalBackground = nodes[i].getElementsByClassName('js-modalBackground')[0];
 
     const displayAlert = () => {
       alert.classList.add('is-active');
@@ -17,6 +18,7 @@ function scripts() {
 
     trigger.addEventListener('click', displayAlert);
     close.addEventListener('click', removeAlert);
+    modalBackground.addEventListener('click', removeAlert);
   });
 }
 
