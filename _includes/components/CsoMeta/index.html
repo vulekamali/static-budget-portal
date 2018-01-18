@@ -90,8 +90,8 @@
             {% if include.created AND include.last_updated %}
               <dt class="CsoMeta-listItem is-title">Version History</dt>
               <dd class="CsoMeta-listItem">
-                <div class="CsoMeta-item">First uploaded on the {{ include.created | date_to_string }}</div>
-                <div class="CsoMeta-item">Last updated on the {{ include.last_updated | date_to_string }}</div>
+                <div class="CsoMeta-item">First uploaded on {{ include.created | date_to_string }}</div>
+                <div class="CsoMeta-item">Last updated on {{ include.last_updated | date_to_string }}</div>
               </dd>
             {% endif %}
 
