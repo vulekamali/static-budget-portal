@@ -182,6 +182,12 @@
   &:hover {
     background-color: darken(white, 10%);
   }
+
+  @media screen and (min-width: 800) {
+    &.is-close {
+      display: none;
+    }
+  }
 }
 
 .Tooltip-link {
