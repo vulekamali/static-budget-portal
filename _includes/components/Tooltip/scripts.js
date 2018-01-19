@@ -32,12 +32,14 @@ function scripts() {
     const openTrigger = tooltipNode.getElementsByClassName('js-openTrigger')[0];
     const closeTrigger = tooltipNode.getElementsByClassName('js-closeTrigger')[0];
     const alertNode = tooltipNode.getElementsByClassName('js-alert')[0];
+    const modalCover = tooltipNode.getElementsByClassName('js-modalCover')[0];
 
     const openTooltip = () => alertNode.classList.add('is-open');
     const closeTooltip = () => alertNode.classList.remove('is-open');
 
     openTrigger.addEventListener('click', openTooltip);
     closeTrigger.addEventListener('click', closeTooltip);
+    modalCover.addEventListener('click', closeTooltip);
   };
 
   const replaceText = (node) => {

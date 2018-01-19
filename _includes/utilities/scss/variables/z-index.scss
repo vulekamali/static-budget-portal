@@ -46,4 +46,8 @@
   @if $name == 'Search-container--mobile' {
     @return 90;
   }
+
+  @if $name == 'Tooltip-boxWrap--mobile' {
+    @return 100;
+  }
 }
