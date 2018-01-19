@@ -59,6 +59,10 @@
   height: 100%;
   cursor: default;
 
+  &.is-open {
+    display: block;
+  }
+
   &.is-important {
     z-index: z-index('Tooltip-boxWrap is-important');
   }
@@ -67,10 +71,14 @@
     background: none;
     position: absolute;
     z-index: z-index('Tooltip-boxWrap');
-  }
 
-  &.is-open {
-    display: block;
+    &.is-open {
+      display: none;
+    }
+
+    .Tooltip:hover & {
+      display: block;
+    }
   }
 }
 

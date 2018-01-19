@@ -11,7 +11,7 @@ export default function createComponent(phrase, description) {
           <div class="Tooltip-shadowBox">
             <div class="Tooltip-title">${phrase}</div>
             <div class="Tooltip-text">${description}</div>
-            <span class="Tooltip-linkWrap js-closeTrigger">
+            <span class="Tooltip-linkWrap is-close js-closeTrigger">
               <span>${closeIcon}</span>
               <span class="Tooltip-link">Close</span>
             </a>
