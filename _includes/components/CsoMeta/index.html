@@ -37,19 +37,19 @@
         </dd>
       {% endif %}
 
-      {% if include.facebook %}
+      {% if include.organization.facebook %}
         <dt class="u-sReadOnly">Facebook Page</dt>
         <dd class="CsoMeta-listItem CsoMeta-listItem--icon">
-          <a class="CsoMeta-iconWrap" href="{{ include.facebook }}">
+          <a class="CsoMeta-iconWrap" href="https://facebook.com/{{ include.organization.facebook }}">
             {{ facebookIcon }}
           </a>
         </dd>
       {% endif %}
 
-      {% if include.twitter %}
+      {% if include.organization.twitter %}
         <dt class="u-sReadOnly">Twitter Page</dt>
         <dd class="CsoMeta-listItem CsoMeta-listItem--icon">
-          <a class="CsoMeta-iconWrap" href="{{ include.facebook }}">
+          <a class="CsoMeta-iconWrap" href="https://twitter.com/{{ include.organization.twitter }}">
               {{ twitterIcon }}
           </a>
         </dd>
@@ -63,10 +63,10 @@
         <h4 class="u-sReadOnly">Attribution</h4>
         <dl class="u-listReset">
 
-          {% if include.author %}
+          {% if include.author.name %}
             <dt class="CsoMeta-listItem is-title">Author</dt>
             <dd class="CsoMeta-listItem">
-              <div class="CsoMeta-item">{{ include.author }}</div>
+              <div class="CsoMeta-item">{{ include.author.name }}</div>
             </dd>
           {% endif %}
 
