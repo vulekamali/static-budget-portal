@@ -4,7 +4,7 @@
 
 <ul class="CsoMeta">
   <li class="CsoMeta-organisation">
-    
+
     {% if include.organization.name %}
       <h3 class="CsoMeta-title">Data provided by {{ include.organization.name }}</h3>
     {% endif %}
@@ -14,14 +14,14 @@
         <dt class="u-sReadOnly" aria-hidden="aria-hidden">Logo</dt>
         <dd class="CsoMeta-listItem is-image" aria-hidden="aria-hidden"><img class="CsoMeta-logo" src="{{ include.organization.logo_url }}" alt=""/></dd>
       {% endif %}
-      
+
       {% if include.organization.telephone %}
         <dt class="u-sReadOnly">Email</dt>
         <dd class="CsoMeta-listItem">
           <span class="CsoMeta-line">{{ include.organization.email }}</span>
         </dd>
       {% endif %}
-      
+
 
       {% if include.organization.telephone %}
         <dt class="u-sReadOnly">Phone</dt>
@@ -57,7 +57,7 @@
     </dl>
   </li>
   <li class="CsoMeta-dataSet">
-    <h3 class="CsoMeta-title">About this data set</h3>
+    <h3 class="CsoMeta-title">About this dataset</h3>
     <ul class="u-listReset">
       <li class="CsoMeta-column">
         <h4 class="u-sReadOnly">Attribution</h4>
@@ -73,7 +73,11 @@
           {% if include.license %}
             <dt class="CsoMeta-listItem is-title">License</dt>
             <dd class="CsoMeta-listItem">
+              {% if include.license.url %}
               <a class="CsoMeta-item CsoMeta-item--link" href="{{ include.license.url }}">{{ include.license.name }}</a>
+              {% else %}
+              {{ include.license.name }}
+              {% endif %}
             </dd>
           {% endif %}
 
@@ -86,8 +90,8 @@
             {% if include.created AND include.last_updated %}
               <dt class="CsoMeta-listItem is-title">Version History</dt>
               <dd class="CsoMeta-listItem">
-                <div class="CsoMeta-item">First uploaded on the {{ include.created | date_to_string }}</div>
-                <div class="CsoMeta-item">Last updated on the {{ include.last_updated | date_to_string }}</div>
+                <div class="CsoMeta-item">First uploaded on {{ include.created | date_to_string }}</div>
+                <div class="CsoMeta-item">Last updated on {{ include.last_updated | date_to_string }}</div>
               </dd>
             {% endif %}
 

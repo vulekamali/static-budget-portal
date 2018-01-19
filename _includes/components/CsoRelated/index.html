@@ -1,3 +1,4 @@
+{% if include.related %}
 <div class="CsoRelated">
   <h2 class="CsoRelated-title">This data is related to:</h2>
   <ul class="u-listReset CsoRelated-wrap">
@@ -7,6 +8,7 @@
         <a class="CsoRelated-item" href="{{ item.url }}">{{ item.label }}</a>
       </li>
       {% endfor %}
-    
+
   </ul>
 </div>
+{% endif %}
