@@ -27,7 +27,10 @@ layout: page-shell
   <aside class="Page-sidebar">
       {% include components/Share/index.html %}
       <div class="Page-smallSection">
-          {% include components/Resources/index.html resources=page_data.resources %}
+          {% include components/Resources/index.html resources=page_data.treasury_datasets %}
+          <div class="Page-csoLinks">
+            {% include components/CsoLinks/index.html resources=page_data.contributed_datasets %}
+          </div>
       </div>
   </aside>
 </div>

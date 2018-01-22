@@ -43,15 +43,19 @@ programmes:
 - name: Trade Promotion and Market Access
 - name: Forestry and Natural Resources Management
 - name: Fisheries
-resources:
-  ENE for Vote 24 - Agriculture, Forestry and Fisheries:
+treasury_datasets:
+  ENE for Vote 35 - Transport:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote24_ChapterTables.xlsx
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote35_ChapterTables.xlsx
     - format: PDF
-      url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2024%20Agriculture,%20Forestry%20and%20Fisheries.pdf
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2035%20Transport.pdf
+contributed_datasets:
+  - name: 'Budget Analysis for Advancing Socioeconomic Rights'
+    contributor: "Studies in Poverty and Inequality Institute"
+    url_path: "/2015-16/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa"
 selected_financial_year: 2017-18
 slug: agriculture-forestry-and-fisheries
 sphere:
