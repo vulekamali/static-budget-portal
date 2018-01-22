@@ -42,7 +42,15 @@ programmes:
 - name: Institutional Performance Monitoring and Evaluation
 - name: National Planning
 - name: National Youth Development
-resources: {}
+resources:
+  ENE for Vote 08 - Planning, Monitoring and Evaluation:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote08.xls
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/Vote%208%20Planning,%20Monitoring%20and%20Evaluation.pdf
 selected_financial_year: 2016-17
 slug: planning-monitoring-and-evaluation
 sphere:
