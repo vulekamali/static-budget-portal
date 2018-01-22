@@ -40,10 +40,6 @@
   bottom: 3px;
   left: -4px;
   max-width: 200px;
-
-  &:hover {
-    background: darken(#f0f0f0, 5%);
-  }
 }
 
 .FileTypes-logo {
@@ -62,14 +58,24 @@
   padding: 4px;
   position: relative;
   bottom: 3px;
-
-  &:hover {
-    background: darken(#f0f0f0, 5%);
-  }
 }
 
 .FileTypes-text {
   width: 100%;
   float: left;
   padding-bottom: 20px;
+}
+
+.FileTypes-link {
+  border-radius: 3px;
+  padding: 5px;
+  position: relative;
+  left: -5px;
+  top: -5px;
+  display: block;
+  @include clearfix;
+
+  &:hover {
+    background: darken(#f0f0f0, 5%);
+  }
 }

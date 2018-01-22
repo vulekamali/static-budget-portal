@@ -16,11 +16,22 @@
   height: 25px;
 }
 
+.CsoMeta-iconWrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  fill: #4a4a4a;
+}
+
 .CsoMeta-title {
   font-size: 18px;
-  font-weight: 600;
   line-height: 1.44;
   margin: 0 0 4px;
+}
+
+.CsoMeta-orgTitle {
+  display: block;
+  font-weight: normal;
 }
 
 .CsoMeta-dataSet {
@@ -111,8 +122,6 @@
     text-align: center;
     width: 40px;
     height: 40px;
-    border-radius: 10px;
-    fill: #4a4a4a;
 
     &:hover {
       background: darken(white, 5%);
