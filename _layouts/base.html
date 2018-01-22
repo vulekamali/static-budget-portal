@@ -1,7 +1,9 @@
 {% if page.sphere == "national" %}
   {% assign page_data = site.data[page.financial_year][page.sphere].departments[page.department_slug] %}
-{% else %}
+{% elsif page.speher == "provincial"  %}
   {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.department_slug] %}
+{% else %}
+  {% assign page_data = site.data[page.financial_year].datasets[page.slug] %}
 {% endif %}
 
 
