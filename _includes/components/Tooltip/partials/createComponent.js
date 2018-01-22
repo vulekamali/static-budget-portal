@@ -14,7 +14,7 @@ export default function createComponent(phrase, description) {
             <span class="Tooltip-linkWrap is-close js-closeTrigger">
               <span>${closeIcon}</span>
               <span class="Tooltip-link">Close</span>
-            </a>
+            </span>
             <div class="Tooltip-triangleWrap">
               <div class="Tooltip-triangle"></div>
             </div>

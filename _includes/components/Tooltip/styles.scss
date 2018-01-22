@@ -1,6 +1,5 @@
 .Tooltip {
   display: inline-block;
-  cursor: pointer;
 
   @media screen and (min-width: 800px) {
     position: relative;
@@ -183,7 +182,7 @@
     background-color: darken(white, 10%);
   }
 
-  @media screen and (min-width: 800) {
+  @media screen and (min-width: 800px) {
     &.is-close {
       display: none;
     }

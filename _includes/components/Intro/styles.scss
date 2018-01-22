@@ -94,6 +94,7 @@
 }
 
 .Into-alert {
+  text-align: left;
   font-weight: normal;
   z-index: z-index('Intro-alert');
   position: fixed;
@@ -104,13 +105,21 @@
   cursor: default;
   display: none;
 
+  &.is-active {
+    display: block;
+  }
+
   @media screen and (min-width: 800px) {
     background: none;
     position: absolute;
-  }
 
-  &.is-active {
-    display: block;
+    &.is-active {
+      display: none;
+    }
+
+    .Intro-item:hover & {
+      display: block !important;
+    }
   }
 }
 
@@ -206,8 +215,17 @@
   color: #4a4a4a;
   display: inline-block;
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 5px;
   border-radius: 3px;
+  position: relative;
+  left: -5px;
+  top: -5px;
+
+  @media screen and (min-width: 800px) {
+    &.is-close {
+      display: none;
+    }
+  }
 
   &:hover {
     background-color: darken(white, 10%);
