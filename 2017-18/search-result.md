@@ -7,5 +7,6 @@ years: [
   ['2017-18', '/2017-18/search-result', 'active'],
 ]
 active: none
+title: Search Results
 nested: false
 ---

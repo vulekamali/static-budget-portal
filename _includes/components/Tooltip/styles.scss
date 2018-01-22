@@ -1,6 +1,5 @@
 .Tooltip {
   display: inline-block;
-  cursor: pointer;
 
   @media screen and (min-width: 800px) {
     position: relative;
@@ -59,6 +58,10 @@
   height: 100%;
   cursor: default;
 
+  &.is-open {
+    display: block;
+  }
+
   &.is-important {
     z-index: z-index('Tooltip-boxWrap is-important');
   }
@@ -67,10 +70,14 @@
     background: none;
     position: absolute;
     z-index: z-index('Tooltip-boxWrap');
-  }
 
-  &.is-open {
-    display: block;
+    &.is-open {
+      display: none;
+    }
+
+    .Tooltip:hover & {
+      display: block;
+    }
   }
 }
 
@@ -173,6 +180,12 @@
 
   &:hover {
     background-color: darken(white, 10%);
+  }
+
+  @media screen and (min-width: 800px) {
+    &.is-close {
+      display: none;
+    }
   }
 }
 

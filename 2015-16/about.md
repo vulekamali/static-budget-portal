@@ -7,5 +7,6 @@ years: [
   ['2017-18', '/2017-18/about', 'link'],
 ]
 active: about
+title: About Page
 nested: false
 ---

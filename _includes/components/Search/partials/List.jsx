@@ -38,7 +38,7 @@ export default function List(props) {
     const provSlug = getExtraValue(item.extras, 'geographic_region_slug');
     const nameSlug = getExtraValue(item.extras, 'department_name_slug');
 
-    const baseUrl = provSlug === 'south africa' ?
+    const baseUrl = provSlug === 'south-africa' ?
       `/${selectedYear}/national/departments/${nameSlug}` :
       `/${selectedYear}/provincial/${provSlug}/departments/${nameSlug}`;
 

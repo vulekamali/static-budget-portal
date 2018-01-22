@@ -17,7 +17,7 @@ export default function Content({ direction, title, description, closeAction, ac
         })
       }
       <div className="Tooltip-div">
-        <span className="Tooltip-linkWrap" onClick={closeAction}>
+        <span className="Tooltip-linkWrap is-close" onClick={closeAction}>
           <span>
             <CloseIcon />
           </span>

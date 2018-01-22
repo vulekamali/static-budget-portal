@@ -1,6 +1,13 @@
+{% if page.sphere == "national" %}
+  {% assign page_data = site.data[page.financial_year][page.sphere].departments[page.department_slug] %}
+{% else %}
+  {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.department_slug] %}
+{% endif %}
+
+
 <!doctype>
 <html>
-  {% include utilities/html/head.html %}
+  {% include utilities/html/head.html title=page.title name=page_data.name %}
   <body>
     {{ content }}
     {% include utilities/html/scripts.html %}

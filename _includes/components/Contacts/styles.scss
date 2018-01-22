@@ -46,3 +46,22 @@
     font-weight: bold;
   }
 }
+
+.Contacts-highlight {
+  &:target {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: -20px;
+    top: -20px;
+    animation-name: background-pulse;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+
+    a {
+      color: white;
+    }
+  }
+}

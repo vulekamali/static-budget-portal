@@ -7,5 +7,6 @@ years: [
   ['2017-18', '/2017-18/departments', 'active'],
 ]
 active: departments
+title: Departments List
 nested: false
 ---

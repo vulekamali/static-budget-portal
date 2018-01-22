@@ -7,5 +7,6 @@ years: [
   ['2017-18', '/2017-18/glossary', 'active'],
 ]
 active: glossary
+title: Glossary Page
 nested: false
 ---
