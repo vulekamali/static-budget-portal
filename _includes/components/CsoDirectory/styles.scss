@@ -1,0 +1,93 @@
+.CsoDirectory {
+  @include clearfix;
+}
+
+.CsoDirectory-itemWrap {
+  padding-top: 20px;
+
+  @media screen and (min-width: 800px) {
+    width: 50%;
+    float: left;
+    padding: 20px 20px 0;
+
+    &:nth-of-type(odd) {
+      padding: 20px 20px 20px 0;
+    }
+
+    &:nth-of-type(even) {
+      padding: 20px 0 20px 20px;
+    }
+  }
+}
+
+.CsoDirectory-item {
+  position: relative;
+  max-height: 230px;
+  background-color: white;
+  display: block;
+  text-decoration: none;
+  color: #606060;
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.2),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+}
+
+.CsoDirectory-box {
+  list-style: none;
+  padding: 15px 25px;
+
+  &.is-dark {
+    font-size: 13px;
+    background-color: #e6e6e6;
+  }
+}
+
+.CsoDirectory-title {
+  display: block;
+  font-size: 16px;
+  margin: 0;
+  text-decoration: underline;
+  padding-bottom: 5px;
+  max-height: 2.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.CsoDirectory-contributor {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.CsoDirectory-imgWrap {
+  height: 50px;
+  max-width: 140px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.CsoDirectory-img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  border-radius: 2px;
+}
+
+.CsoDirectory-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  .CsoDirectory-item:hover & {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
