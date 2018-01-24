@@ -71,7 +71,7 @@ export default class SearchContainer extends Component {
    */
   sendGetRequest(newKeywords = this.state.keywords) {
     return new Promise((resolve, reject) => {
-      fetch(`https://treasurydata.openup.org.za/api/3/action/package_search?q=${newKeywords}&start=0&rows=10&fq=vocab_financial_years:${this.props.selectedYear}`)
+      fetch(`https://treasurydata.openup.org.za/api/3/action/package_search?q=${newKeywords}&start=0&rows=10&fq=+organization:national-treasury+vocab_financial_years:${this.props.selectedYear}`)
         .then((response) => {
           if (!response.ok) {
             response.text()
