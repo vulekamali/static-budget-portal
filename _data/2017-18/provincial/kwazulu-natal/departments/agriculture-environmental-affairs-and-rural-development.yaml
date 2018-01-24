@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
+government_functions: []
 intro: "## Vision\n\nThe vision of the Department of Agriculture and Rural Development\
   \ (DARD) is: An inclusive, sustainable and radically transformed agricultural sector\
   \ that builds thriving communities in balance with nature.\r\n\r\n\n\n## Mission\n\
@@ -35,8 +37,16 @@ intro: "## Vision\n\nThe vision of the Department of Agriculture and Rural Devel
   \ are as follows:\r\n\r\n* Food security\r\n\r\n* Farmer development\r\n\r\n* Veterinary\
   \ services\r\n\r\n* Rural development\r\n\r\n* Governance"
 name: Agriculture, Environmental Affairs and Rural Development
-programmes: []
-resources:
+programmes:
+- name: Administration
+- name: Agriculture
+- name: Rural Development
+selected_financial_year: 2017-18
+slug: agriculture-environmental-affairs-and-rural-development
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 03 : Agriculture, Environmental Affairs and Rural Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -46,9 +56,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 03 - Agriculture.pdf
-selected_financial_year: 2017-18
-slug: agriculture-environmental-affairs-and-rural-development
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 3

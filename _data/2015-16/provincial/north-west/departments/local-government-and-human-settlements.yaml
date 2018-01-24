@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,17 +27,23 @@ financial_years:
 government:
   name: North West
   slug: north-west
+government_functions: []
 intro: "## Vision\r\n\r\nA transformed developmental local governance and integrated\
   \ sustainable human settlements in\r\nsafe and dignified communities.\r\n\r\n\r\n\
   \r\n## Mission Statement\r\n\r\nTo plan and promote integrated and sustainable human\
   \ settlements and ensure quality service\r\ndelivery through cooperation and good\
   \ governance with municipalities."
 name: Local Government and Human Settlements
-programmes: []
-resources: {}
+programmes:
+- name: Administration
+- name: Local Governance
+- name: Development and Planning
+- name: Housing Needs,Planning and Research
+- name: Housing Development
 selected_financial_year: 2015-16
 slug: local-government-and-human-settlements
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets: {}
 vote_number: 9

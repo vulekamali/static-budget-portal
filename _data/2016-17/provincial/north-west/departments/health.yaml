@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: North West
   slug: north-west
+government_functions: []
 intro: "## Vision\n\nHealthy self-reliant communities in the North West Province\r\
   \n\r\n\r\n\n\n## Mission\n\nTo render accessible, equitable and integrated quality\
   \ health care services\r\n\r\n\r\n\n\n## Values\n\nIn rendering such services, we\
@@ -45,7 +47,12 @@ programmes:
 - name: Health Science and Training
 - name: Health Care Support Services
 - name: Health Facilities and Maintenance
-resources:
+selected_financial_year: 2016-17
+slug: health
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 03 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -55,9 +62,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 03 - Health.pdf
-selected_financial_year: 2016-17
-slug: health
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 3

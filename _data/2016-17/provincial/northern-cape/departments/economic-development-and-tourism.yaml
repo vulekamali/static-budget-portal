@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Northern Cape
   slug: northern-cape
+government_functions: []
 intro: "## Vision\n\nA radically transformed economy in the Northern Cape.\r\n\r\n\
   \r\n\n\n## Mission\n\nAccelerating the economic growth and development of the Northern\
   \ Cape Province through diversification, empowerment, employment, business creation\
@@ -38,7 +40,12 @@ programmes:
 - name: Business Regulation And Governance
 - name: Economic Planning
 - name: Tourism
-resources:
+selected_financial_year: 2016-17
+slug: economic-development-and-tourism
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 06 : Economic Development and Tourism':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -48,9 +55,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 06 - Economic Development & Tourism.pdf
-selected_financial_year: 2016-17
-slug: economic-development-and-tourism
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 6

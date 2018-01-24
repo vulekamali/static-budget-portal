@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: North West
   slug: north-west
+government_functions: []
 intro: "## Aim\r\n\r\nTo lead and grow a dynamic, sustainable, diversified and vibrant\
   \ tourism sector for the North West Province through; promoting partnerships and\
   \ collaboration with all key stakeholders, in particular the private sector, promoting\
@@ -33,11 +35,14 @@ intro: "## Aim\r\n\r\nTo lead and grow a dynamic, sustainable, diversified and v
   \ capacity, promote good cooperative governance and branding and marketing of North\
   \ West province as a tourism destination; and creativity and innovation."
 name: Tourism
-programmes: []
-resources: {}
+programmes:
+- name: Administration
+- name: Tourism Planning
+- name: Tourism Growth, Development and Transformation
 selected_financial_year: 2015-16
 slug: tourism
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets: {}
 vote_number: 10

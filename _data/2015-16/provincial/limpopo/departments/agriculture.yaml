@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Limpopo
   slug: limpopo
+government_functions: []
 intro: "## Vision\n\nUnited, prosperous and sustainable agricultural sector\r\n\r\n\
   \n\n## Mission\n\nTo promote economic growth and food security through sustainable\
   \ agricultural and entrepreneurship development\r\n\r\n\n\n## Core functions\n\n\
@@ -42,7 +44,12 @@ programmes:
 - name: Agriculural Economics
 - name: Structured Agric. Training
 - name: Rural development Co-ordination
-resources:
+selected_financial_year: 2015-16
+slug: agriculture
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 04 : Agriculture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -52,9 +59,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 04 - Agriculture.pdf
-selected_financial_year: 2015-16
-slug: agriculture
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 4

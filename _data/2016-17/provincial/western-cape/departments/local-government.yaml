@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Western Cape
   slug: western-cape
+government_functions: []
 intro: "## Vision\n\nAn efficient and dynamic team that enables well governed municipalities\
   \ to deliver services to communities\r\nin a responsive, sustainable and integrated\
   \ manner.\r\n\r\n\n\n## Mission\n\nTo monitor, coordinate and support municipalities\
@@ -40,7 +42,12 @@ programmes:
 - name: Local Governance
 - name: Development and Planning
 - name: Traditional Institutional Management
-resources:
+selected_financial_year: 2016-17
+slug: local-government
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 14 : Local Government':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -50,9 +57,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 14 - Local Government.pdf
-selected_financial_year: 2016-17
-slug: local-government
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 14

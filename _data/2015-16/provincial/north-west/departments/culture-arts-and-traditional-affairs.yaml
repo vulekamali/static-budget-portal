@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: North West
   slug: north-west
+government_functions: []
 intro: "## Vision\r\n\r\nA rooted approach for supporting culture, the arts and tradition\
   \ of our people\r\n\r\n\r\n\r\n## Mission\r\n\r\nPlacing Culture, Arts and tradition\
   \ in the hearts and minds of our communities for their\r\ndevelopment and enrichment.\r\
@@ -42,11 +44,16 @@ intro: "## Vision\r\n\r\nA rooted approach for supporting culture, the arts and 
   \ international linkages; and\r\n\r\n* To promote social cohesion, moral regeneration\
   \ and nation building."
 name: Culture, Arts and Traditional Affairs
-programmes: []
-resources: {}
+programmes:
+- name: Administration
+- name: Cultural Affairs
+- name: Library and Archive Services
+- name: Recreation
+- name: Traditional Affairs
 selected_financial_year: 2015-16
 slug: culture-arts-and-traditional-affairs
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets: {}
 vote_number: 4

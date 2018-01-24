@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Western Cape
   slug: western-cape
+government_functions: []
 intro: "## Vision\n\nTo be a leading department enabling the Western Cape Government\
   \ to improve the quality of life of all its\r\npeople\r\n\r\n\n\n## Mission\n\n\
   To embed good governance and to enable integrated service delivery in the Western\
@@ -35,8 +37,18 @@ intro: "## Vision\n\nTo be a leading department enabling the Western Cape Govern
   \ and integrated service delivery through partnerships and spatial alignment\u201D\
   , it will focus on the\r\nfollowing main services:"
 name: Office of the Premier
-programmes: []
-resources:
+programmes:
+- name: Executive Support (Administration)
+- name: Provincial Strategic Management
+- name: People Management (Corporate Services Centre)
+- name: Centre for E-Innovation (Corporate Services Centre)
+- name: Corporate Assurance (Corporate Services Centre)
+selected_financial_year: 2016-17
+slug: office-of-the-premier
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -46,9 +58,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 01 - Office of the Premier.pdf
-selected_financial_year: 2016-17
-slug: office-of-the-premier
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 1

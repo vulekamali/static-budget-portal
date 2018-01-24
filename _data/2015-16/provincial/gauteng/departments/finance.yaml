@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Gauteng
   slug: gauteng
+government_functions: []
 intro: "## Vision\n\nA Connected Gauteng City Region that uses Information and Communication\
   \ Technology to support the delivery\r\nof quality services and equitable and inclusive\
   \ social economic development of its citizens\r\n\r\n\n\n## Mission\n\nTo provide\
@@ -48,7 +50,12 @@ programmes:
 - name: Administration
 - name: ICT Shared Services
 - name: Business Process Services
-resources:
+selected_financial_year: 2015-16
+slug: finance
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 13 : Finance':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -58,9 +65,4 @@ resources:
         - Vote 13 - Finance.pdf
     - format: XLSX
       url: https://treasurydata.openup.org.za/dataset/1850c925-5b27-47ef-adb3-2befe79b555b/resource/9b15504a-39a6-48de-8973-63f6a8b0aeb6/download/gt-finance.xlsx
-selected_financial_year: 2015-16
-slug: finance
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 13

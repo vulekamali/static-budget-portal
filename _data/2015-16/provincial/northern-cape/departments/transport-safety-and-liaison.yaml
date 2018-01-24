@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Northern Cape
   slug: northern-cape
+government_functions: []
 intro: "## Vision \n\nA leader in the creation and co-ordination of safe, secure and\
   \ sustainable transport and policing systems for a crime-free Northern Cape Province.\r\
   \n\r\n\n\n## Mission\n\nTo enable safe and secure environment and mobility, for\
@@ -43,7 +45,12 @@ programmes:
 - name: Civilian Secretariat
 - name: Transport Operations
 - name: Transport Regulations
-resources:
+selected_financial_year: 2015-16
+slug: transport-safety-and-liaison
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 03 : Transport, Safety and Liaison':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -53,9 +60,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 03 - Transport, Safety and Liaison.pdf
-selected_financial_year: 2015-16
-slug: transport-safety-and-liaison
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 3

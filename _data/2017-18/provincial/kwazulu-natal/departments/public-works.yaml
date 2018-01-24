@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
+government_functions:
+- General public services
 intro: "## Vision\n\nThe department\u2019s vision is: An inclusive economy through\
   \ sustainable infrastructure development and property management.\r\n\r\n\n\n##\
   \ Mission\n\nThe department\u2019s mission is: To improve the life of the people\
@@ -43,7 +46,12 @@ programmes:
 - name: Administration
 - name: Property Management
 - name: Provision of Buildings, Structures and Equipment
-resources:
+selected_financial_year: 2017-18
+slug: public-works
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 14 : Public Works':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -53,9 +61,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 14 - Public Works.pdf
-selected_financial_year: 2017-18
-slug: public-works
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 14

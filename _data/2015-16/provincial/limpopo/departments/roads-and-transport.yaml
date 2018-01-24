@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Limpopo
   slug: limpopo
+government_functions: []
 intro: "## Vision\n\nTo be a pioneer and a leading department at the epi-centre of\
   \ socio economic development.\r\n\r\n\n\n## Mission\n\nTo provide safe, affordable,\
   \ sustainable and integrated transport services.\r\n\r\n\n\n## Core functions\n\n\
@@ -36,8 +38,18 @@ intro: "## Vision\n\nTo be a pioneer and a leading department at the epi-centre 
   \ improve road safety through strengthened law enforcement, informing the public\
   \ about road safety issues and fostering improvements in vehicle safety."
 name: Roads and Transport
-programmes: []
-resources:
+programmes:
+- name: Administration
+- name: Transport Infrastructure
+- name: Transport Operations
+- name: Transport Regulations
+- name: Community Based Programmes
+selected_financial_year: 2015-16
+slug: roads-and-transport
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 08 : Roads and Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -47,9 +59,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 08 - Transport.pdf
-selected_financial_year: 2015-16
-slug: roads-and-transport
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 8

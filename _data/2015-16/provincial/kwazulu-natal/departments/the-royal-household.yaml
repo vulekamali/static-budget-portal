@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
+government_functions: []
 intro: "## Note\n\nIt must be noted that Proclamation No. 83 of 2014, which was signed\
   \ by the President of South Africa on\n12 of December 2014, combines Vote 10: The\
   \ Royal Household with Vote 1: Office of the Premier. In\nline with the recommendations\
@@ -36,7 +38,12 @@ intro: "## Note\n\nIt must be noted that Proclamation No. 83 of 2014, which was 
   \ to Vote 1: Office of the Premier on pages 1 to 46."
 name: The Royal Household
 programmes: []
-resources:
+selected_financial_year: 2015-16
+slug: the-royal-household
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 10 : The Royal Household':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -44,9 +51,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 10 - Royal Household.pdf
-selected_financial_year: 2015-16
-slug: the-royal-household
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 10

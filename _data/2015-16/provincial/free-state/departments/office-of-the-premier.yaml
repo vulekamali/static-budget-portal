@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Free State
   slug: free-state
+government_functions: []
 intro: "## Vision\n\nLeading the Free State Province towards service excellence\r\n\
   \r\n\n\n## Mission\n\nTo provide strategic direction and to coordinate integrated\
   \ service delivery within Government in the Free State.\r\n\r\n\n\n## Core functions\n\
@@ -47,8 +49,16 @@ intro: "## Vision\n\nLeading the Free State Province towards service excellence\
   \ special programmes; and\r\n\r\n* To render efficient and effective Community Liaison\
   \ and Participatory Democracy\r\nServices.\r\n"
 name: Office of the Premier
-programmes: []
-resources:
+programmes:
+- name: Administration
+- name: Institutional Development
+- name: Policy & Governance
+selected_financial_year: 2015-16
+slug: office-of-the-premier
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -58,9 +68,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 01 - Premier.pdf
-selected_financial_year: 2015-16
-slug: office-of-the-premier
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 1
