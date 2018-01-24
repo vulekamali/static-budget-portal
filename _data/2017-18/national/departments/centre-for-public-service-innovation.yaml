@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions:
+- General public services
 intro: "## Department purpose\r\n\r\nFacilitate the unearthing, development and practical\
   \ implementation of innovative solutions within and throughout the public service.\r\
   \n\r\n## Mandate\r\n\r\nThe responsibility for public sector innovation is vested\
@@ -39,10 +42,10 @@ name: Centre for Public Service Innovation
 programmes:
 - name: Administration
 - name: Public Sector Innovation
-resources: {}
 selected_financial_year: 2017-18
 slug: centre-for-public-service-innovation
 sphere:
   name: National
   slug: national
+treasury_datasets: {}
 vote_number: 47

@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,12 +27,24 @@ financial_years:
 government:
   name: Mpumalanga
   slug: mpumalanga
+government_functions: []
 intro: "## Vision\n\nAn Inclusive, Global Competitive Economy\r\n\r\n\n\n## Mission\n\
   \nDrive economic growth that creates decent employment and promote sustainable\r\
   \ndevelopment through partnership.\r\n\r\n\r\n\r\n"
 name: Economic Development, Environment and Tourism
-programmes: []
-resources:
+programmes:
+- name: Administration
+- name: Integrated Economic Development
+- name: Trade and Sector Development
+- name: Business Regulation and Governance
+- name: Economic Planning
+- name: Tourism
+selected_financial_year: 2017-18
+slug: economic-development-environment-and-tourism
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 06 : Economic Development, Environment and Tourism':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -41,9 +54,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 06 - Economic Development and Tourism.pdf
-selected_financial_year: 2017-18
-slug: economic-development-environment-and-tourism
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 6

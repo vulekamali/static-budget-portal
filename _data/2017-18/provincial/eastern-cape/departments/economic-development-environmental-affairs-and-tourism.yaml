@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: Eastern Cape
   slug: eastern-cape
+government_functions:
+- Economic affairs
 intro: "## Vision\n\nSustainable development underpinned by ecpnomic groowth and sound\
   \ environmental management.\r\n\r\n\n\n## Mission\n\nTo lead economic development\
   \ and environmental management in the Easter Cape.\r\n\r\n\n\n## Core functions\n\
@@ -40,7 +43,12 @@ programmes:
 - name: Administration
 - name: Economic Development  and Tourism
 - name: Environmental  Affairs
-resources:
+selected_financial_year: 2017-18
+slug: economic-development-environmental-affairs-and-tourism
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 09 : Economic Development, Environmental Affairs and Tourism':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -50,9 +58,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 09 - Eco Dev, Environ Affairs and Tourism.pdf
-selected_financial_year: 2017-18
-slug: economic-development-environmental-affairs-and-tourism
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 9

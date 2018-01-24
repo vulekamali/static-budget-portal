@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Eastern Cape
   slug: eastern-cape
+government_functions: []
 intro: "## Vision\n\nGrowth and quality of life through safety and security.\r\n\r\
   \n\n\n## Mission\n\nTo make the Eastern Cape the leading province in providing a\
   \ safe and secure environment that\r\nsupports growth and development through liaison\
@@ -41,7 +43,12 @@ name: Safety and Liaison
 programmes:
 - name: Administration
 - name: Civilian Oversight
-resources:
+selected_financial_year: 2015-16
+slug: safety-and-liaison
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 15 : Safety and Liaison':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -51,9 +58,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 15 - Safety and Liaison.pdf
-selected_financial_year: 2015-16
-slug: safety-and-liaison
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 15

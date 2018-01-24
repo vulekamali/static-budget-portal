@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Mpumalanga
   slug: mpumalanga
+government_functions: []
 intro: "## Vision\n\nA people-centred, African, world class Legislature\r\n\r\n\n\n\
   ## Mission\n\nTo effectively and efficiently hold the executive and other state\
   \ organs accountable through intensified oversight, enhance public education and\
@@ -33,8 +35,15 @@ intro: "## Vision\n\nA people-centred, African, world class Legislature\r\n\r\n\
   \ the Batho Pele principles, supported by administrative excellence and good governance\r\
   \n\r\n\r\n\r\n"
 name: Mpumalanga Provincial Legislature
-programmes: []
-resources:
+programmes:
+- name: Administration
+- name: Parliamentary Business
+selected_financial_year: 2015-16
+slug: mpumalanga-provincial-legislature
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 02 : Mpumalanga Provincial Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -44,9 +53,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 02 - Legislature.pdf
-selected_financial_year: 2015-16
-slug: mpumalanga-provincial-legislature
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 2

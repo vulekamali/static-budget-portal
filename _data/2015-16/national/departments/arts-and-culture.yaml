@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Contribute to sustainable economic development and enhance\
   \ job creation by\npreserving, protecting and developing South African arts, culture\
   \ and heritage\nto sustain a socially cohesive and democratic nation._\n\n\n\n##\
@@ -51,7 +53,12 @@ programmes:
 - name: Institutional Governance
 - name: Arts and Culture Promotion and Development
 - name: Heritage Promotion and Preservation
-resources:
+selected_financial_year: 2015-16
+slug: arts-and-culture
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 37 - Arts and Culture:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -60,9 +67,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/Vote%2037%20Arts%20and%20Culture.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote37.xls
-selected_financial_year: 2015-16
-slug: arts-and-culture
-sphere:
-  name: National
-  slug: national
 vote_number: 37

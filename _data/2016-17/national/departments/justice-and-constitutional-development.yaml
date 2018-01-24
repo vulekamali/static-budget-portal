@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Uphold and protect the Constitution and the rule of law,\
   \ and render\naccessible, fair, speedy and cost effective administration of justice\
   \ in the\ninterests of a safer and more secure South Africa._\n\n\n\n## Mandate\n\
@@ -53,7 +55,12 @@ programmes:
 - name: National Prosecuting Authority
 - name: Auxiliary and Associated Services
 - name: Direct charge against the National Revenue Fund
-resources:
+selected_financial_year: 2016-17
+slug: justice-and-constitutional-development
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 21 - Justice and Constitutional Development:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -62,9 +69,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/Vote%2021%20Justice%20and%20Constitutional%20Development.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote21.xls
-selected_financial_year: 2016-17
-slug: justice-and-constitutional-development
-sphere:
-  name: National
-  slug: national
 vote_number: 21

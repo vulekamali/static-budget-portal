@@ -1,0 +1,67 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Economy and Enterprise Development
+    organisational_unit: department
+    slug: economy-and-enterprise-development
+    url_path: /2015-16/provincial/north-west/departments/economy-and-enterprise-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Economy and Enterprise Development
+    organisational_unit: department
+    slug: economy-and-enterprise-development
+    url_path: /2016-17/provincial/north-west/departments/economy-and-enterprise-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Economy and Enterprise Development
+    organisational_unit: department
+    slug: economy-and-enterprise-development
+    url_path: /2017-18/provincial/north-west/departments/economy-and-enterprise-development
+  id: 2017-18
+  is_selected: true
+government:
+  name: North West
+  slug: north-west
+government_functions: []
+intro: "## Vision\r\n\r\n\u201CA growing economy wherein enterprises thrive\u201D\r\
+  \n\r\n\r\n\r\n## Mission\r\n\r\nTo lead, coordinate, support, implement and champion\
+  \ inclusive economic growth for the people of the North West Province through:\r\
+  \n\r\n* Economic Planning and Development;\r\n\r\n* Enterprise Development; and\r\
+  \n\r\n* Effective Regulatory Services\r\n\r\n\r\n\r\n## Core Functions\r\n\r\nThe\
+  \ department\u2019s core functions are summarised as follows:\r\n\r\n* Small Business\
+  \ Development;\r\n\r\n* Provincial macro-economic planning and development;\r\n\r\
+  \n* Research to determine economic potential and policy development;\r\n\r\n* Economic\
+  \ sector development and sectorial charter implementation;\r\n\r\n* Enhancement\
+  \ of productivity and competitiveness of various economic sectors;\r\n\r\n* Industrial\
+  \ development facilitation;\r\n\r\n* Economic infrastructure development facilitation;\r\
+  \n\r\n* Investment and trade promotion;\r\n\r\n* Regulatory functions (consumer\
+  \ protection and liquor policy administration, BBBEE policy compliance, gambling\
+  \ amongst others);\r\n\r\n* Economic development planning & coordination including\
+  \ LED, IDPs, and cluster management\r\n\r\n* Project management."
+name: Economy and Enterprise Development
+programmes:
+- name: Administration
+- name: Integrated Economic Development Services
+- name: Economic Planning and Sector Development
+- name: Business Regulation and Governance
+selected_financial_year: 2017-18
+slug: economy-and-enterprise-development
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 06 : Economy and Entreprise Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://treasurydata.openup.org.za/dataset/41bd264c-39c6-4b86-a4a8-262530cac924/resource/d2f3e435-ede2-4935-a207-2458011ee35e/download/nw-economy-and-enterprise-development.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 06 - Economy and Entreprise Development.pdf
+vote_number: 6

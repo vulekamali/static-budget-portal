@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Transform the delivery of sport and recreation by ensuring\
   \ equitable access,\ndevelopment and excellence at all levels of participation,\
   \ thereby improving\nsocial cohesion, nation building and the quality of life of\
@@ -47,7 +49,12 @@ programmes:
 - name: Winning Nation
 - name: Sport Support
 - name: Sport Infrastructure Support
-resources:
+selected_financial_year: 2015-16
+slug: sport-and-recreation-south-africa
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 40 - Sport and Recreation South Africa:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -56,9 +63,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/Vote%2040%20Sport%20and%20Recreation%20South%20Africa.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote40.xls
-selected_financial_year: 2015-16
-slug: sport-and-recreation-south-africa
-sphere:
-  name: National
-  slug: national
 vote_number: 40

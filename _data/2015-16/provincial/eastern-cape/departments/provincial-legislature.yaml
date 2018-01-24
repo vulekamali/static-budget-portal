@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Eastern Cape
   slug: eastern-cape
+government_functions: []
 intro: "## Vision\n\nA dynamic people\u2019s assembly for good governance, to deepen\
   \ and advance sustainable and\r\ntransformative development towards effective service\
   \ delivery.\r\n\r\n\n\n## Mission\n\nThe Eastern Cape Provincial Legislature (ECPL)\
@@ -56,7 +58,12 @@ programmes:
 - name: Administration
 - name: Facilities for Members and Political Parties
 - name: Parliamentary Services
-resources:
+selected_financial_year: 2015-16
+slug: provincial-legislature
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 02 : Provincial Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -66,9 +73,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 02 - Provincial Legislature.pdf
-selected_financial_year: 2015-16
-slug: provincial-legislature
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 2
