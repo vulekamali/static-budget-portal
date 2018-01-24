@@ -21,7 +21,7 @@ export default class SearchResultsContainer extends Component {
   }
 
   componentDidMount() {
-    const url = `https://treasurydata.openup.org.za/api/3/action/package_search?q=${this.props.search}&start=0&rows=999&fq=vocab_financial_years:${this.props.selectedYear}`;
+    const url = `https://treasurydata.openup.org.za/api/3/action/package_search?q=${this.props.search}&start=0&rows=999&fq=+organization:national-treasury+vocab_financial_years:${this.props.selectedYear}`;
 
     const request = new Promise((resolve, reject) => {
       fetch(url)
