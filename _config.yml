@@ -23,9 +23,6 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -45,7 +42,7 @@ exclude:
 #   - vendor/ruby/
 
 defaults:
-  - 
+  -
     scope:
       path: "2015-16"
     values:
@@ -81,6 +78,3 @@ defaults:
       ]
       active: departments
       nested: true
-
-
-
