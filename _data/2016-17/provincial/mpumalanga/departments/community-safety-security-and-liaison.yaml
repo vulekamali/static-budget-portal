@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Mpumalanga
   slug: mpumalanga
+government_functions: []
 intro: "## Vision\n\nA Safe, secure, crime and road accident free Mpumalanga Province\r\
   \n\r\n\n\n## Mission Statement\n\nTo improve community and road traffic safety through\
   \ mass mobilization, oversee the\r\nperformance of the police and provision of security\
@@ -36,7 +38,12 @@ programmes:
 - name: Civilian Oversight
 - name: Transport Regulation
 - name: Security  Management
-resources:
+selected_financial_year: 2016-17
+slug: community-safety-security-and-liaison
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 09 : Community Safety, Security and Liaison':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -46,9 +53,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 09 - Community Safety, Security and Liaison.pdf
-selected_financial_year: 2016-17
-slug: community-safety-security-and-liaison
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 9

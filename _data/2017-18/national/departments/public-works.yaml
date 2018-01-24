@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,9 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions:
+- Economic affairs
+- General public services
 intro: "## Vote purpose\n\n_Provide policy formulation for, as well as coordination,\
   \ regulation and\noversight of, the public works sector in relation to the accommodation,\n\
   housing, land and infrastructure needs of national departments. Enhance\nintergovernmental\
@@ -51,7 +55,12 @@ programmes:
 - name: Expanded Public Works Programme
 - name: Property and Construction Industry Policy and Research
 - name: Prestige Policy
-resources:
+selected_financial_year: 2017-18
+slug: public-works
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 11 - Public Works:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -60,9 +69,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote11_ChapterTables.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2011%20Public%20Works.pdf
-selected_financial_year: 2017-18
-slug: public-works
-sphere:
-  name: National
-  slug: national
 vote_number: 11

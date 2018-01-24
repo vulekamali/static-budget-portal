@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Provide leadership and coordination of health services\
   \ to promote the health\nof all people in South Africa through_ _an accessible,\
   \ caring and high quality\nhealth system based on the primary health care approach._\n\
@@ -43,7 +45,12 @@ programmes:
 - name: Primary Health Care Services
 - name: Hospitals, Tertiary Health Services and Human Resource Development
 - name: Health Regulation and Compliance Management
-resources:
+selected_financial_year: 2016-17
+slug: health
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 16 - Health:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -52,9 +59,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/Vote%2016%20Health.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote16.xls
-selected_financial_year: 2016-17
-slug: health
-sphere:
-  name: National
-  slug: national
 vote_number: 16

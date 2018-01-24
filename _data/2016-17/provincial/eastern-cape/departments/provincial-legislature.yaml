@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Eastern Cape
   slug: eastern-cape
+government_functions: []
 intro: "## Vision \n\nA people's assembly for good governmance to achive excellence\r\
   \n\r\n\n\n## Mission\n\n* to conduct oversight that will ensure accountability of\
   \ the provincial government to the people of the Province\r\n\r\n* to pass laws\
@@ -51,7 +53,12 @@ programmes:
 - name: Administration
 - name: Facilities for Members and Political Parties
 - name: Parliamentary Services
-resources:
+selected_financial_year: 2016-17
+slug: provincial-legislature
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 02 : Provincial Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -61,9 +68,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 02 - Provincial Legislature.pdf
-selected_financial_year: 2016-17
-slug: provincial-legislature
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 2

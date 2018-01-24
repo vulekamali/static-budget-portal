@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Eastern Cape
   slug: eastern-cape
+government_functions: []
 intro: "## vision\n\nwe envision a prosperous province supported by sound financial\
   \ and resource management\r\n\r\n\r\n\r\n\n\n## mission \n\nour mission is to provide\
   \ strategic and technical leadership in the allocation, management and utilisation\r\
@@ -43,7 +45,12 @@ programmes:
 - name: Asset and Liabilities Management
 - name: Financial Governance
 - name: Municipal Financial Governance
-resources:
+selected_financial_year: 2016-17
+slug: provincial-treasury
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 12 : Provincial Treasury':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -53,9 +60,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 12 - Provincial Treasury.pdf
-selected_financial_year: 2016-17
-slug: provincial-treasury
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 12

@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions:
+- General public services
 intro: "## Vote purpose\n\n_Formulate, coordinate, implement and manage South Africa\u2019\
   s foreign policy and\ninternational relations programmes._\n\n\n\n## Mandate\n\n\
   The president is ultimately responsible for the foreign policy and\ninternational\
@@ -54,7 +57,12 @@ programmes:
 - name: International Cooperation
 - name: Public Diplomacy and Protocol Services
 - name: International Transfers
-resources:
+selected_financial_year: 2017-18
+slug: international-relations-and-cooperation
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 06 - International Relations and Cooperation:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -63,9 +71,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote06_ChapterTables.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2006%20International%20Relations%20and%20Cooperation.pdf
-selected_financial_year: 2017-18
-slug: international-relations-and-cooperation
-sphere:
-  name: National
-  slug: national
 vote_number: 6

@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Department purpose\r\n\r\nProvide a comprehensive communication service\
   \ on behalf of government to facilitate the involvement of the majority of South\
   \ Africans in governance, reconstruction and development, nation building, and reconciliation.\r\
@@ -42,10 +44,10 @@ programmes:
 - name: Administration
 - name: Content Processing and Dissemination
 - name: Intergovernmental Coordination and Stakeholder Management
-resources: {}
 selected_financial_year: 2017-18
 slug: government-communication-and-information-system
 sphere:
   name: National
   slug: national
+treasury_datasets: {}
 vote_number: 46

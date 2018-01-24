@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Formulate energy policies, regulatory frameworks and legislation,\
   \ and oversee\ntheir implementation to ensure energy security, the promotion of\n\
   environmentally friendly energy carriers, and access to affordable and\nreliable\
@@ -67,7 +69,12 @@ programmes:
 - name: Electrification and Energy Programme and Project Management
 - name: Nuclear Energy
 - name: Clean Energy
-resources:
+selected_financial_year: 2016-17
+slug: energy
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 26 - Energy:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -76,9 +83,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/Vote%2026%20Energy.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote26.xls
-selected_financial_year: 2016-17
-slug: energy
-sphere:
-  name: National
-  slug: national
 vote_number: 26

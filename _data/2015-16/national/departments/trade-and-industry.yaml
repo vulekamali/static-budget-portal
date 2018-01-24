@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Lead and facilitate access to sustainable economic activity\
   \ and employment\nfor all South Africans through an understanding of the economy,\
   \ knowledge of\neconomic opportunities and potential, and anticipation of future\
@@ -48,7 +50,12 @@ programmes:
 - name: Consumer and Corporate Regulation
 - name: Incentive Development and Administration
 - name: Trade and Investment South Africa
-resources:
+selected_financial_year: 2015-16
+slug: trade-and-industry
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 34 - Trade and Industry:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -57,9 +64,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/Vote%2034%20Trade%20and%20Industry.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote34.xls
-selected_financial_year: 2015-16
-slug: trade-and-industry
-sphere:
-  name: National
-  slug: national
 vote_number: 34

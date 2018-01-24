@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Support economic growth and development, good governance,\
   \ social progress and\nrising living standards through the accountable, economical,\
   \ efficient,\nequitable and sustainable management of public finances, maintenance\
@@ -55,7 +57,12 @@ programmes:
 - name: Revenue Administration
 - name: Financial Intelligence and State Security
 - name: Direct charge against the National Revenue Fund
-resources:
+selected_financial_year: 2015-16
+slug: national-treasury
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 07 - National Treasury:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -64,9 +71,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/Vote%207%20National%20Treasury.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote07.xls
-selected_financial_year: 2015-16
-slug: national-treasury
-sphere:
-  name: National
-  slug: national
 vote_number: 7

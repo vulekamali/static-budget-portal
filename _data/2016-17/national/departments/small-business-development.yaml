@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Promote the development of small businesses and cooperatives\
   \ that contribute to inclusive economic growth and job creation._\n\n## Mandate\n\
   \nThe Department of Small Business Development was established as a national department\
@@ -44,7 +46,12 @@ programmes:
 - name: Administration
 - name: 'Small Medium and Micro Enterprises and Cooperatives Policy and Research '
 - name: Small Medium and Micro Enterprises and Cooperatives Programme Design and Support
-resources:
+selected_financial_year: 2016-17
+slug: small-business-development
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 31 - Small Business Development:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -53,9 +60,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/Vote%2031%20Small%20Business%20Development.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote31.xls
-selected_financial_year: 2016-17
-slug: small-business-development
-sphere:
-  name: National
-  slug: national
 vote_number: 31

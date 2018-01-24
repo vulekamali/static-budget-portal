@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: '## Vote purpose
 
 
@@ -89,7 +91,12 @@ programmes:
 - name: Maritime Transport
 - name: Public Transport
 - name: Direct charge against the National Revenue Fund
-resources:
+selected_financial_year: 2017-18
+slug: transport
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 35 - Transport:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -98,9 +105,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote35_ChapterTables.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2035%20Transport.pdf
-selected_financial_year: 2017-18
-slug: transport
-sphere:
-  name: National
-  slug: national
 vote_number: 35

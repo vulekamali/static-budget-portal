@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Lead the provision of an integrated, sustainable, reliable\
   \ and safe transport\nsystem through planning, developing, coordinating, promoting\
   \ and implementing\ntransport policies, regulations and strategies._\n\n\n\n## Mandate\n\
@@ -56,7 +58,12 @@ programmes:
 - name: Civil Aviation
 - name: Maritime Transport
 - name: Public Transport
-resources:
+selected_financial_year: 2016-17
+slug: transport
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 35 - Transport:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -65,9 +72,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/Vote%2035%20Transport.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote35.xls
-selected_financial_year: 2016-17
-slug: transport
-sphere:
-  name: National
-  slug: national
 vote_number: 35

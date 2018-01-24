@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Lead, support and promote agricultural, forestry and fisheries\
   \ resources\nmanagement through policies, strategies and programmes to enhance sustainable\n\
   use, and achieve economic growth, job creation, food security, rural\ndevelopment\
@@ -43,22 +45,18 @@ programmes:
 - name: Trade Promotion and Market Access
 - name: Forestry and Natural Resources Management
 - name: Fisheries
-treasury_datasets:
-  ENE for Vote 35 - Transport:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote35_ChapterTables.xlsx
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2035%20Transport.pdf
-contributed_datasets:
-  - name: 'Budget Analysis for Advancing Socioeconomic Rights'
-    contributor: "Studies in Poverty and Inequality Institute"
-    url_path: "/2015-16/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa"
 selected_financial_year: 2017-18
 slug: agriculture-forestry-and-fisheries
 sphere:
   name: National
   slug: national
+treasury_datasets:
+  ENE for Vote 24 - Agriculture, Forestry and Fisheries:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote24_ChapterTables.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2024%20Agriculture,%20Forestry%20and%20Fisheries.pdf
 vote_number: 24

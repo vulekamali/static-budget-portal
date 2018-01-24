@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: Mpumalanga
   slug: mpumalanga
+government_functions:
+- Basic education
 intro: "## Vision\n\nA patriotic socially cohesive society\r\n\r\n\n\n## Mission\n\
   \nTo promote social cohesion and nation building through culture, sport and information\
   \ service\r\nto people of Mpumalanga\r\n\r\n\n\n## Core functions\n\nTo foster a\
@@ -70,7 +73,12 @@ programmes:
 - name: Cultural Affairs
 - name: Library and Archives Services
 - name: Sports and Recreation
-resources:
+selected_financial_year: 2017-18
+slug: culture-sport-and-recreation
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 11 : Culture, Sport and Recreation':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -80,9 +88,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 11 - Culture, Sport and Recreation.pdf
-selected_financial_year: 2017-18
-slug: culture-sport-and-recreation
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 11

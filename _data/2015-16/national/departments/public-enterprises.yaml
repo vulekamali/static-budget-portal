@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Drive investment, productivity and transformation in the\
   \ department\u2019s\nportfolio of state owned companies, to unlock growth, drive\
   \ industrialisation,\ncreate jobs and develop skills._\n\n\n\n## Mandate\n\nThe\
@@ -48,7 +50,12 @@ programmes:
 - name: Administration
 - name: Legal and Governance
 - name: Portfolio Management and Strategic Partnerships
-resources:
+selected_financial_year: 2015-16
+slug: public-enterprises
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 09 - Public Enterprises:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -57,9 +64,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/Vote%209%20Public%20Enterprises.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote09.xls
-selected_financial_year: 2015-16
-slug: public-enterprises
-sphere:
-  name: National
-  slug: national
 vote_number: 9

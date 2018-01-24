@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Eastern Cape
   slug: eastern-cape
+government_functions: []
 intro: "## Vision\n\nVibrant,equitable,sustainable rural communities and food security\
   \ for all.\r\n\r\n\n\n## Mission\n\nPromote ,support and coordinate Rural Development\
   \ and Argrarian Reform interventions to reduce poverty and underdevelopment through\
@@ -52,7 +54,12 @@ programmes:
 - name: Agricultural Economics Services
 - name: Structured Agricultural Education and Training
 - name: Rural Development Coordination
-resources:
+selected_financial_year: 2017-18
+slug: rural-development-and-agrarian-reform
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 08 : Rural Development and Agrarian Reform':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -62,9 +69,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 08 - Rural Development and Agrarian Reform.pdf
-selected_financial_year: 2017-18
-slug: rural-development-and-agrarian-reform
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 8

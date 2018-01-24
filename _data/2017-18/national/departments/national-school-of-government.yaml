@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Department purpose\r\n\r\nProvide or coordinate the provision of learning\
   \ interventions that lead to improved performance and service delivery in the public\
   \ sector.\r\n\r\n## Mandate\r\n\r\nThe National School of Government derives its\
@@ -43,10 +45,10 @@ name: National School of Government
 programmes:
 - name: Administration
 - name: Public Sector Organisational and Staff Development
-resources: {}
 selected_financial_year: 2017-18
 slug: national-school-of-government
 sphere:
   name: National
   slug: national
+treasury_datasets: {}
 vote_number: 44

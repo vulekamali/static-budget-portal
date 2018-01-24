@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Lead South Africa\u2019s environmental sector to achieve\
   \ sustainable development\ntowards a better quality of life  \nfor all._\n\n\n\n\
   ## Mandate\n\nThe Department of Environmental Affairs is mandated to give effect\
@@ -64,7 +66,12 @@ programmes:
 - name: Biodiversity and Conservation
 - name: Environmental Programmes
 - name: Chemicals and Waste Management
-resources:
+selected_financial_year: 2015-16
+slug: environmental-affairs
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 27 - Environmental Affairs:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -73,9 +80,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/Vote%2027%20Environmental%20Affairs.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote27.xls
-selected_financial_year: 2015-16
-slug: environmental-affairs
-sphere:
-  name: National
-  slug: national
 vote_number: 27

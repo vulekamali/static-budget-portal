@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Ensure independent oversight of the South African Police\
   \ Service and the\nMunicipal Police Services. Conduct independent and impartial\
   \ investigations of\nidentified criminal offences allegedly committed by members\
@@ -52,7 +54,12 @@ programmes:
 - name: Investigation and Information Management
 - name: Legal Services
 - name: Compliance Monitoring and Stakeholder Management
-resources:
+selected_financial_year: 2016-17
+slug: independent-police-investigative-directorate
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 20 - Independent Police Investigative Directorate:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -61,9 +68,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/Vote%2020%20Independent%20Police%20Investigative%20Directorate.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote20.xls
-selected_financial_year: 2016-17
-slug: independent-police-investigative-directorate
-sphere:
-  name: National
-  slug: national
 vote_number: 20

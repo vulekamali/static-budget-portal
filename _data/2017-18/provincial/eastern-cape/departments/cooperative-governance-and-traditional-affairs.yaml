@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Eastern Cape
   slug: eastern-cape
+government_functions: []
 intro: "## Vision\n\nAn integrated,capable,responsive and accountable local government\
   \ and traditional institution system focusing on the needs of thhe community.\r\n\
   \r\n\n\n## Mission\n\nTo promote a developmental local state and traditional institutions\
@@ -58,7 +60,12 @@ programmes:
 - name: Development And Planning
 - name: Traditional Institutional Management
 - name: House Of Traditional Leaders
-resources:
+selected_financial_year: 2017-18
+slug: cooperative-governance-and-traditional-affairs
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 07 : Cooperative Governance and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -68,9 +75,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 07 - Coop Gov and Traditional Affairs.pdf
-selected_financial_year: 2017-18
-slug: cooperative-governance-and-traditional-affairs
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 7

@@ -1,3 +1,4 @@
+contributed_datasets: []
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\r\n\r\nImprove government service delivery through planning,\
   \ monitoring and evaluation.\r\n\r\n## Mandate\r\n\r\nThe Department of Planning\
   \ Monitoring and Evaluation is mandated to:\r\n\r\n* facilitate the implementation\
@@ -42,10 +44,10 @@ programmes:
 - name: Institutional Performance Monitoring and Evaluation
 - name: National Planning
 - name: National Youth Development
-resources: {}
 selected_financial_year: 2016-17
 slug: planning-monitoring-and-evaluation
 sphere:
   name: National
   slug: national
+treasury_datasets: {}
 vote_number: 8
