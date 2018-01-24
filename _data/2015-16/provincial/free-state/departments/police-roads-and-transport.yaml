@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Free State
   slug: free-state
+government_functions: []
 intro: "## Vision\n\nContribute towards the creation of a prosperous Free State through\
   \ the facilitation of the provision of sustainable community safety, mobility and\
   \ road infrastructure.\r\n\r\n\n\n## Mission\n\nTo realise the afore said vision,\
@@ -49,7 +51,12 @@ programmes:
 - name: Public, Roads And Transportoperations
 - name: Public, Roads And Transportregulations
 - name: Public, Roads And Transportinfrastructure
-resources:
+selected_financial_year: 2015-16
+slug: police-roads-and-transport
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 10 : Police, Roads and Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -59,9 +66,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 10 - Police, Roads and Transport.pdf
-selected_financial_year: 2015-16
-slug: police-roads-and-transport
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 10

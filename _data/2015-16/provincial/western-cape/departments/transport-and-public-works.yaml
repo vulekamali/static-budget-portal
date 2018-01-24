@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Western Cape
   slug: western-cape
+government_functions: []
 intro: "## Vision\n\n\u201CA highly skilled innovation-driven resource efficient connected\
   \ high opportunity society for all\u201D. (Western\r\nCape Government)\r\n\u201C\
   To lead in the delivery of government infrastructure and related services\u201D\
@@ -55,7 +57,12 @@ programmes:
 - name: Transport Operations
 - name: Transport Regulation
 - name: Community Based Programmes
-resources:
+selected_financial_year: 2015-16
+slug: transport-and-public-works
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 10 : Transport and Public Works':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -65,9 +72,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 10 - Transport and Public works.pdf
-selected_financial_year: 2015-16
-slug: transport-and-public-works
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 10

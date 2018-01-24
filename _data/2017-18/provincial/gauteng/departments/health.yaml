@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: Gauteng
   slug: gauteng
+government_functions:
+- Health
 intro: "## Vision\n\nDailt we provide high-quality,efficient and accessible healthcare\
   \ to transform people's lives\r\n\r\n\r\n\n\n## Mission\n\nCreate an effective public\
   \ health system in Gauteng by ensuring we have the right people,skills,systems and\
@@ -56,7 +59,12 @@ programmes:
 - name: Health Sciences and Training
 - name: Health Care Support Services
 - name: Health Facilities Management
-resources:
+selected_financial_year: 2017-18
+slug: health
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 04 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -66,9 +74,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 04 - Health.pdf
-selected_financial_year: 2017-18
-slug: health
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 4

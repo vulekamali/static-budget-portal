@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: Northern Cape
   slug: northern-cape
+government_functions:
+- General public services
 intro: "## Vision\n\nA prosperous province with a quality of life for all.\r\n\r\n\
   \n\n## Mission Statement\n\nImproving government\u2019s performance through strategic\
   \ leadership and integrated planning, monitoring and evaluation.\r\n\r\n\n\n## Core\
@@ -37,7 +40,12 @@ programmes:
 - name: Administration
 - name: Institutional Development
 - name: Policy and Governance
-resources:
+selected_financial_year: 2017-18
+slug: office-of-the-premier
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -47,9 +55,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 01 - Office of the Premier.pdf
-selected_financial_year: 2017-18
-slug: office-of-the-premier
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 1

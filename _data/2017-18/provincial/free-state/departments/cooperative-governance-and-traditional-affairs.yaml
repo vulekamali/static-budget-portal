@@ -1,3 +1,7 @@
+contributed_datasets:
+- contributor: Studies in Poverty and Inequality Institute
+  name: Monitoring the right of access to adequate housing in South Africa
+  url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +30,8 @@ financial_years:
 government:
   name: Free State
   slug: free-state
+government_functions:
+- Human settlements and municipal infrastructure
 intro: "## Vision\n\nIntegrated, responsive and developmental local governance\r\n\
   \r\n\n\n## Mission\n\nThe Department strives to strengthen inter-sectoral cooperation\
   \ and support municipalities and Traditional Leaders towards effective service delivery\
@@ -42,7 +48,12 @@ programmes:
 - name: Development and Planning
 - name: Traditional Institutional Management
 - name: House of Traditional Leaders
-resources:
+selected_financial_year: 2017-18
+slug: cooperative-governance-and-traditional-affairs
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 08 : Cooperative Governance and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -52,9 +63,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 08 - Cooperative governance and Traditional Affairs.pdf
-selected_financial_year: 2017-18
-slug: cooperative-governance-and-traditional-affairs
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 8

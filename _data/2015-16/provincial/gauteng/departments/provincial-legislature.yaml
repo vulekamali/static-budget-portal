@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Gauteng
   slug: gauteng
+government_functions: []
 intro: "## Vision\n\nTo be a modern and transformative legislature that fosters public\
   \ pride and confidence in democracy and enhances service delivery to the people\
   \ of Gauteng.\r\n\r\n\n\n## Mission\n\nIn observing its constitutional obligations,\
@@ -42,8 +44,18 @@ intro: "## Vision\n\nTo be a modern and transformative legislature that fosters 
   \ furthering\r\ncooperative governance between provincial, national and local legislative\
   \ institutions.\r\n\r\n"
 name: Provincial Legislature
-programmes: []
-resources:
+programmes:
+- name: Leadership And Governance
+- name: Office Of The Secretary
+- name: Corporate Support Services
+- name: Core Business
+- name: Office of the CFO
+selected_financial_year: 2015-16
+slug: provincial-legislature
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 02 : Provincial Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -53,9 +65,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 02 - Provincial Legislature.pdf
-selected_financial_year: 2015-16
-slug: provincial-legislature
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 2

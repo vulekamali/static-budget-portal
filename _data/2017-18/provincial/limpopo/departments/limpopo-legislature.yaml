@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Limpopo
   slug: limpopo
+government_functions: []
 intro: "## Vision\n\nThe Limpopo Legislature seeks to be a representative and consultative\
   \ body, a vanguard of people\u2019s aspirations and interests towards a democratic,\
   \ non-sexist, non-racial, united and prosperous society.\r\n\r\n\n\n## Mission\n\
@@ -50,8 +52,16 @@ intro: "## Vision\n\nThe Limpopo Legislature seeks to be a representative and co
   \ and address petitions brought before the Legislature; and\r\n\r\n* Provide financial\
   \ and administrative assistance to each party represented in the Legislature"
 name: Limpopo Legislature
-programmes: []
-resources:
+programmes:
+- name: Administration
+- name: Facilities for Members and Political Parties
+- name: Parliamentary Services
+selected_financial_year: 2017-18
+slug: limpopo-legislature
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 02 : Limpopo Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -61,9 +71,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 02 - Limpopo Legislature.pdf
-selected_financial_year: 2017-18
-slug: limpopo-legislature
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 2

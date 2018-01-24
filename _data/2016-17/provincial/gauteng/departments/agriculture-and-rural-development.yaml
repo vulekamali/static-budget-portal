@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Gauteng
   slug: gauteng
+government_functions: []
 intro: "## Vision\n\nAn economically transformed agricultural sector including agro-processing\
   \ and sustainable environmental management\r\nfor healthy, food secure, developed\
   \ rural and urban communities in Gauteng.\r\n\r\n\n\n## Mission\n\nTo radically\
@@ -46,7 +48,12 @@ programmes:
 - name: Administration
 - name: Agriculture And Rural Development
 - name: Environmental Affairs
-resources:
+selected_financial_year: 2016-17
+slug: agriculture-and-rural-development
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 11 : Agriculture and Rural Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -56,9 +63,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 11 - Agriculture and Rural Development.pdf
-selected_financial_year: 2016-17
-slug: agriculture-and-rural-development
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 11

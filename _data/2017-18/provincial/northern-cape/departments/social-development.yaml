@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: Northern Cape
   slug: northern-cape
+government_functions:
+- Social protection
 intro: "## Vision\n\nA caring and self-reliant society.\r\n\r\n\n\n## Mission\n\n\
   To transform our society by building conscious and capable citizens through the\
   \ provision of integrated social development services.\r\n\r\n\n\n## Core functions\n\
@@ -62,7 +65,12 @@ programmes:
 - name: Children and Families
 - name: Restorative Services
 - name: Development and Research
-resources:
+selected_financial_year: 2017-18
+slug: social-development
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 11 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -72,9 +80,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 11 - Social Development.pdf
-selected_financial_year: 2017-18
-slug: social-development
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 11

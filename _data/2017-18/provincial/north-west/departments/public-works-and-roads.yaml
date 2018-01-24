@@ -1,3 +1,7 @@
+contributed_datasets:
+- contributor: Studies in Poverty and Inequality Institute
+  name: Monitoring the right of access to adequate housing in South Africa
+  url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +30,10 @@ financial_years:
 government:
   name: North West
   slug: north-west
+government_functions:
+- Economic affairs
+- General public services
+- Human settlements and municipal infrastructure
 intro: "## Vision\n\nDelivery and maintenance of quality infrastructure for sustainable\
   \ growth and development.\r\n\r\n\n\n## Mission\n\nTo provide quality provincial\
   \ infrastructure and ensure better service delivery.\r\n\r\n\n\n## Core functions\n\
@@ -58,7 +66,12 @@ programmes:
 - name: Public Works Infrastructure
 - name: Transport Infrastructure
 - name: Community Based Programme
-resources:
+selected_financial_year: 2017-18
+slug: public-works-and-roads
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 11 : Public Works and Roads':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -68,9 +81,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 11 - Public Works and Roads.pdf
-selected_financial_year: 2017-18
-slug: public-works-and-roads
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 11

@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,9 @@ financial_years:
 government:
   name: North West
   slug: north-west
+government_functions:
+- Agriculture, rural development and land reform
+- Economic affairs
 intro: "## Vision\n\nVibrant and prosperous society in harmony with our natural resources.\r\
   \n\r\n\n\n## Mission\n\nWorking together with our partners to provide a transformed\
   \ sustainable, agricultural, environmental management and comprehensive integrated\
@@ -45,7 +49,12 @@ programmes:
 - name: Structured Agricultural Education and  Training
 - name: Rural Development Coordination
 - name: Environmental Services
-resources:
+selected_financial_year: 2017-18
+slug: rural-environment-and-agricultural-development
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 13 : Rural Environment and Agricultural Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -55,9 +64,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 13 - Rural Environment and Agricultural Development.pdf
-selected_financial_year: 2017-18
-slug: rural-environment-and-agricultural-development
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 13

@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: North West
   slug: north-west
+government_functions: []
 intro: "## Vision\n\nLeading a dynamic, sustainable, diversified and vibrant tourism\
   \ sector for the North West Province\r\n\r\n\n\n## Mission\n\nTo lead and grow a\
   \ dynamic, sustainable, diversified and vibrant tourism sector for the North-West\r\
@@ -39,7 +41,12 @@ programmes:
 - name: Administration
 - name: Tourism Planning
 - name: Tourism Growth, Development and Transformation
-resources:
+selected_financial_year: 2016-17
+slug: tourism
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 10 : Tourism':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -49,9 +56,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 10 - Tourism.pdf
-selected_financial_year: 2016-17
-slug: tourism
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 10

@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Western Cape
   slug: western-cape
+government_functions: []
 intro: "## Vision\n\nA resilient, sustainable, quality and inclusive living environment.\r\
   \n\r\n\n\n## Mission\n\nTo promote a resilient, sustainable, quality and inclusive\
   \ living environment in support of human well-being.\r\n\r\n\n\n## Core functions\
@@ -45,7 +47,12 @@ programmes:
 - name: Biodiversity Management
 - name: Environmental Empowerment Services
 - name: Development Planning
-resources:
+selected_financial_year: 2017-18
+slug: environmental-affairs-and-development-planning
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
   'EPRE for Vote 09 : Environmental Affairs and Development Planning':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
       the detailed spending plans of each government department for the coming year.
@@ -55,9 +62,4 @@ resources:
     - format: PDF
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 09 - Environmental Affairs and Development Planning.pdf
-selected_financial_year: 2017-18
-slug: environmental-affairs-and-development-planning
-sphere:
-  name: Provincial
-  slug: provincial
 vote_number: 9

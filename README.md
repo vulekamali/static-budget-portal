@@ -55,6 +55,12 @@ git ls-files|grep provincial|egrep -v '(mpumalanga|eastern-cape)' | grep html | 
 git ls-files|grep provincial|egrep -v '(mpumalanga|eastern-cape)' | grep html | tr '\n' ' ' | xargs rm
 ```
 
+To remove `assume-unchanged` from all files with that currently configured:
+
+```
+git ls-files -v|grep '^h'| sed 's/^h//' | xargs git update-index --no-assume-unchanged
+```
+
 ### Regenerating data files
 
 ```
