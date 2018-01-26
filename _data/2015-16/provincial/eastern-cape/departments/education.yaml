@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Eastern Cape
   slug: eastern-cape
+government_functions: []
 intro: "## Vision\n\nProvide learners with opportunities to become productive and\
   \ responsible citizens through quality basic\r\neducation.\r\n\r\n\n\n## Mission\n\
   \nTo implement appropriate and relevant educational programmes through quality teaching\
@@ -47,19 +49,19 @@ programmes:
 - name: Early Childhood Development
 - name: Infrastructure Development
 - name: Examination and Education Related Services
-resources:
-  'EPRE for Vote 06 : Education':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/a5b70943-528c-4c7d-b452-eca090e31ec1/resource/ce3a8393-f2dc-4dc7-89ae-412195eb5f3c/download/ec-education.xlsx
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
-        - Vote 06 - Education.pdf
 selected_financial_year: 2015-16
 slug: education
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 06 : Education':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/a5b70943-528c-4c7d-b452-eca090e31ec1/resource/ce3a8393-f2dc-4dc7-89ae-412195eb5f3c/download/ec-education.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
+        - Vote 06 - Education.pdf
 vote_number: 6

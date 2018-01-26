@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions:
+- Economic affairs
 intro: "## Vote purpose\n\n_Develop information and communication technology (ICT)\
   \ policies and\nlegislation that create favourable conditions for accelerated and\
   \ shared\nsustainable economic growth that positively impacts on the wellbeing of\
@@ -57,7 +60,12 @@ programmes:
 - name: Policy, Research and Capacity Development
 - name: ICT Enterprise Development and Oversight
 - name: ICT Infrastructure Support
-resources:
+selected_financial_year: 2017-18
+slug: telecommunications-and-postal-services
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 32 - Telecommunications and Postal Services:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -66,9 +74,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote32_ChapterTables.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2032%20Telecommunications%20and%20Postal%20Services.pdf
-selected_financial_year: 2017-18
-slug: telecommunications-and-postal-services
-sphere:
-  name: National
-  slug: national
 vote_number: 32

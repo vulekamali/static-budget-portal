@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: Northern Cape
   slug: northern-cape
+government_functions:
+- General public services
 intro: "## Vision\n\nA prosperous province with a quality of life for all.\r\n\r\n\
   \n\n## Mission Statement\n\nImproving government\u2019s performance through strategic\
   \ leadership and integrated planning, monitoring and evaluation.\r\n\r\n\n\n## Core\
@@ -37,19 +40,19 @@ programmes:
 - name: Administration
 - name: Institutional Development
 - name: Policy and Governance
-resources:
-  'EPRE for Vote 01 : Office of the Premier':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/413fb843-c67d-4f98-aac0-ee6512f92dc9/resource/480da50d-5c03-40f5-9ec6-a031f5c16be5/download/nc-office-of-the-premier.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
-        - Vote 01 - Office of the Premier.pdf
 selected_financial_year: 2017-18
 slug: office-of-the-premier
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 01 : Office of the Premier':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/413fb843-c67d-4f98-aac0-ee6512f92dc9/resource/480da50d-5c03-40f5-9ec6-a031f5c16be5/download/nc-office-of-the-premier.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
+        - Vote 01 - Office of the Premier.pdf
 vote_number: 1

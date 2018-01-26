@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Mpumalanga
   slug: mpumalanga
+government_functions: []
 intro: "## Vision\n\nA caring, humane and developed society\r\n\r\n\n\n## Mission\n\
   \nTo provide, equitable, integrated and quality sustainable social development services\
   \ in partnership with all stakeholders to eradicate poverty and protect vulnerable\
@@ -37,19 +39,19 @@ programmes:
 - name: Children and Families
 - name: Restorative Services
 - name: Development and Research
-resources:
-  'EPRE for Vote 12 : Social Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/8c0c1c4d-ae1e-4299-8560-1fb8b928a414/resource/5f558a82-6d5c-43f7-9563-d8caf70370ba/download/mpu-social-development.xlsx
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
-        - Vote 12 - Social Development.pdf
 selected_financial_year: 2015-16
 slug: social-development
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 12 : Social Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/8c0c1c4d-ae1e-4299-8560-1fb8b928a414/resource/5f558a82-6d5c-43f7-9563-d8caf70370ba/download/mpu-social-development.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
+        - Vote 12 - Social Development.pdf
 vote_number: 12

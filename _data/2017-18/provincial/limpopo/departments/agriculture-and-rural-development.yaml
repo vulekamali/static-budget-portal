@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: Limpopo
   slug: limpopo
+government_functions:
+- Agriculture, rural development and land reform
 intro: "## Vision\n\nUnited, prosperous and productive agricultural sector for sustainable\
   \ rural communities.\r\n\r\n\n\n## Mission\n\nTo promote food security and economic\
   \ growth through sustainable agricultural development.\r\n\r\n\n\n## Core functions\n\
@@ -34,20 +37,28 @@ intro: "## Vision\n\nUnited, prosperous and productive agricultural sector for s
   \ through governance, knowledge development and transfer, regulatory function and\
   \ financial support to agriculture."
 name: Agriculture and Rural Development
-programmes: []
-resources:
-  'EPRE for Vote 04 : Agriculture and Rural Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/94022497-5ebb-4ae3-952b-458ea862d731/resource/7173e7c3-961b-4410-bf83-68e6920bcb79/download/lim-agriculture.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
-        - Vote 04 - Agriculture and Rural Development.pdf
+programmes:
+- name: Administration
+- name: Sustainable Resource Management
+- name: Farmer Support & Development
+- name: Veterinary Services
+- name: Research & Technology Devel Services
+- name: Agriculural Economics
+- name: Structured Agric. Training
+- name: Rural development Co-ordination
 selected_financial_year: 2017-18
 slug: agriculture-and-rural-development
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 04 : Agriculture and Rural Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/94022497-5ebb-4ae3-952b-458ea862d731/resource/7173e7c3-961b-4410-bf83-68e6920bcb79/download/lim-agriculture.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
+        - Vote 04 - Agriculture and Rural Development.pdf
 vote_number: 4

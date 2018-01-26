@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions:
+- General public services
 intro: "## Department purpose\r\n\r\nPromote constitutional values and principles\
   \ of public administration in the public service.\r\n\r\n## Mandate\r\n\r\nThe Public\
   \ Service Commission is an independent institution established in terms of chapter\
@@ -43,10 +46,10 @@ programmes:
 - name: Leadership and Management Practices
 - name: Monitoring and Evaluation
 - name: Integrity and Anti-Corruption
-resources: {}
 selected_financial_year: 2017-18
 slug: public-service-commission
 sphere:
   name: National
   slug: national
+treasury_datasets: {}
 vote_number: 45

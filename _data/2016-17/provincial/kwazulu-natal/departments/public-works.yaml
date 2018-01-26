@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
+government_functions: []
 intro: "## Vision\n\nThe department\u2019s vision is: An inclusive economy through\
   \ sustainable infrastructure development and property management.\r\n\r\n\n\n##\
   \ Mission statement\n\nThe department\u2019s mission is: To improve the life of\
@@ -41,22 +43,22 @@ intro: "## Vision\n\nThe department\u2019s vision is: An inclusive economy throu
   \ donation.\r\n\r\n"
 name: Public Works
 programmes:
-- name: 1. Administration
-- name: 2. Property Management
-- name: 3. Provision of Buildings, Structures and Equipment
-resources:
-  'EPRE for Vote 14 : Public Works':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/6f4e4c9c-dfcf-484a-aae5-21130294953d/resource/a379b68b-3da1-4411-af0c-7e1bc83d23d8/download/kzn-public-works.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
-        - Vote 14 - Public Works.pdf
+- name: Administration
+- name: Property Management
+- name: Provision of Buildings, Structures and Equipment
 selected_financial_year: 2016-17
 slug: public-works
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 14 : Public Works':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/6f4e4c9c-dfcf-484a-aae5-21130294953d/resource/a379b68b-3da1-4411-af0c-7e1bc83d23d8/download/kzn-public-works.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
+        - Vote 14 - Public Works.pdf
 vote_number: 14

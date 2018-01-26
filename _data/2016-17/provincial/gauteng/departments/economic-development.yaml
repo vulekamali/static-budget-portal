@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Gauteng
   slug: gauteng
+government_functions: []
 intro: "## Vision\n\nA radically transformed, modernised and re-industrialised economy\
   \ in Gauteng, manifesting decent work, economic\r\ninclusion and equity.\r\n\r\n\
   \n\n## Mission\n\nThe mission of the Department of Economic Development in quest\
@@ -59,19 +61,19 @@ programmes:
 - name: Trade And Sector Development
 - name: Business Regulation And Governance
 - name: Economic Planning
-resources:
-  'EPRE for Vote 03 : Economic Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/d5e0a13b-e5bf-45aa-922e-f3bbdd17ccde/resource/3a9cadc5-f37c-4fab-a9ef-6f4a1d2419d8/download/gt-economic-development.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
-        - Vote 03 - Economic Development.pdf
 selected_financial_year: 2016-17
 slug: economic-development
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 03 : Economic Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/d5e0a13b-e5bf-45aa-922e-f3bbdd17ccde/resource/3a9cadc5-f37c-4fab-a9ef-6f4a1d2419d8/download/gt-economic-development.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
+        - Vote 03 - Economic Development.pdf
 vote_number: 3

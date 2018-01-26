@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Gauteng
   slug: gauteng
+government_functions: []
 intro: "## Vision\n\nTo provide strategic leadership in financial and fiscal matters\
   \ to ensure sustainable and inclusive social and\r\neconomic development of the\
   \ people of Gauteng so that all may enjoy value for money services of the highest\
@@ -56,19 +58,19 @@ programmes:
 - name: Provincial Supply Chain and Movable Asset Management
 - name: Municipal Financial Governance
 - name: Gauteng Audit Services
-resources:
-  'EPRE for Vote 14 : Gauteng Provincial Treasury':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/676abf52-8786-4da0-a256-90c5b253d4f4/resource/f28ed1d4-9fb4-4c86-914d-4b1db7ebb237/download/gt-provincial-treasury.xlsx
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
-        - Vote 14 - Gauteng Provincial Treasury.pdf
 selected_financial_year: 2015-16
 slug: gauteng-provincial-treasury
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 14 : Gauteng Provincial Treasury':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/676abf52-8786-4da0-a256-90c5b253d4f4/resource/f28ed1d4-9fb4-4c86-914d-4b1db7ebb237/download/gt-provincial-treasury.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
+        - Vote 14 - Gauteng Provincial Treasury.pdf
 vote_number: 14

@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\r\n\r\nLead, support and promote agricultural, forestry and\
   \ fisheries resources management through policies, strategies and programmes to\
   \ enhance sustainable use, and achieve economic growth, job creation, food security,\
@@ -43,10 +45,10 @@ programmes:
 - name: Trade Promotion and Market Access
 - name: Forestry and Natural Resources Management
 - name: Fisheries
-resources: {}
 selected_financial_year: 2016-17
 slug: agriculture-forestry-and-fisheries
 sphere:
   name: National
   slug: national
+treasury_datasets: {}
 vote_number: 24

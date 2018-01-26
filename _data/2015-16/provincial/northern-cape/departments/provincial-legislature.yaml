@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Northern Cape
   slug: northern-cape
+government_functions: []
 intro: "## Vision\n\nAn institution fulfilling its constitutional mandate for the\
   \ people of the Northern Cape.\r\n\r\n\n\n## Mission\n\nTo serve people of the Northern\
   \ Cape by building a developmental institution for effective law\r\nmaking, public\
@@ -51,19 +53,19 @@ programmes:
 - name: Administration
 - name: Facilities for Members and Political Parties
 - name: Parliamentary Services
-resources:
-  'EPRE for Vote 02 : Provincial Legislature':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/574b9d99-60db-4110-942d-a1ca4fb38b2f/resource/b0180d2e-0ca3-4b94-99da-f3b0279d7a1e/download/nc-provincial-legislature.xlsx
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
-        - Vote 02 - Provincial Legislature.pdf
 selected_financial_year: 2015-16
 slug: provincial-legislature
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 02 : Provincial Legislature':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/574b9d99-60db-4110-942d-a1ca4fb38b2f/resource/b0180d2e-0ca3-4b94-99da-f3b0279d7a1e/download/nc-provincial-legislature.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
+        - Vote 02 - Provincial Legislature.pdf
 vote_number: 2

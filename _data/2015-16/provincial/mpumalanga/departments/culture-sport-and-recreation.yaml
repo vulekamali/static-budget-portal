@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Mpumalanga
   slug: mpumalanga
+government_functions: []
 intro: "## Vision\n\nA patriotic socially cohesive society\r\n\r\n\n\n## Mission\n\
   \nTo promote social cohesion and nation building through culture, sport and information\
   \ service to people of Mpumalanga"
@@ -35,19 +37,19 @@ programmes:
 - name: Cultural Affairs
 - name: Library and Archives Services
 - name: Sports and Recreation
-resources:
-  'EPRE for Vote 11 : Culture, Sport and Recreation':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/8dd96926-5744-45c5-ad93-68c7a30e91e3/resource/1ac508bf-76d6-419f-82ee-a5843da1ebbb/download/mpu-culture-sport-recreation.xlsx
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
-        - Vote 11 - Cullture, Sport and Recreation.pdf
 selected_financial_year: 2015-16
 slug: culture-sport-and-recreation
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 11 : Culture, Sport and Recreation':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/8dd96926-5744-45c5-ad93-68c7a30e91e3/resource/1ac508bf-76d6-419f-82ee-a5843da1ebbb/download/mpu-culture-sport-recreation.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
+        - Vote 11 - Cullture, Sport and Recreation.pdf
 vote_number: 11

@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: Limpopo
   slug: limpopo
+government_functions:
+- Basic education
 intro: "## Vision\n\nExcellence in provisioning of innovative quality basic education.\r\
   \n\r\n\n\n## Mission\n\nTo deliver quality education in an innovative, effective\
   \ and efficient way by giving maximum monitoring and support to districts, circuits\
@@ -54,19 +57,19 @@ programmes:
 - name: Early Childhood Development
 - name: Infrastructure Development
 - name: Examination And Education Related Services
-resources:
-  'EPRE for Vote 03 : Education':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/05074d73-7e3e-437c-a911-08aae7abecce/resource/69b5fc3e-89b4-4d12-aa77-6c1f0880b2bc/download/lim-education.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
-        - Vote 03 - Education.pdf
 selected_financial_year: 2017-18
 slug: education
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 03 : Education':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/05074d73-7e3e-437c-a911-08aae7abecce/resource/69b5fc3e-89b4-4d12-aa77-6c1f0880b2bc/download/lim-education.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
+        - Vote 03 - Education.pdf
 vote_number: 3

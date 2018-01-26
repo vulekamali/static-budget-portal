@@ -1,3 +1,7 @@
+contributed_datasets:
+- contributor: Studies in Poverty and Inequality Institute
+  name: Monitoring the right of access to adequate housing in South Africa
+  url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +30,10 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions:
+- Economic affairs
+- General public services
+- Human settlements and municipal infrastructure
 intro: "## Vote purpose\n\n_Improve cooperative governance across the three spheres\
   \ of government, in\npartnership with institutions of traditional leadership, to\
   \ ensure that\nprovinces and municipalities carry out their service delivery and\
@@ -48,7 +56,12 @@ programmes:
 - name: National Disaster Management Centre
 - name: Local Government Support and Intervention Management
 - name: Community Work Programme
-resources:
+selected_financial_year: 2017-18
+slug: cooperative-governance-and-traditional-affairs
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 04 - Cooperative Governance and Traditional Affairs:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -57,9 +70,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote04_ChapterTables.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2004%20Cooperative%20Governance%20and%20Traditional%20Affairs.pdf
-selected_financial_year: 2017-18
-slug: cooperative-governance-and-traditional-affairs
-sphere:
-  name: National
-  slug: national
 vote_number: 4

@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Free State
   slug: free-state
+government_functions: []
 intro: "## Vision\n\nIncreasing life expectancy through health system effectiveness,\
   \ driving system change and ensuring sustainable quality services\r\n\r\n\n\n##\
   \ Mission\n\nBy creating a value driven institution that inculcates operational\
@@ -50,19 +52,19 @@ programmes:
 - name: Health Science & Training
 - name: Health Care Support Services
 - name: Health Facilities Management
-resources:
-  'EPRE for Vote 05 : Health':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/e7ad4fa5-b71a-4cac-ae2b-a82ccc0e14e3/resource/d79aa8fa-a845-428e-b950-e8ce0ffd986b/download/fs-health.xlsx
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
-        - Vote 05 - Health.pdf
 selected_financial_year: 2015-16
 slug: health
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 05 : Health':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/e7ad4fa5-b71a-4cac-ae2b-a82ccc0e14e3/resource/d79aa8fa-a845-428e-b950-e8ce0ffd986b/download/fs-health.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
+        - Vote 05 - Health.pdf
 vote_number: 5

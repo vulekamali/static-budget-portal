@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Northern Cape
   slug: northern-cape
+government_functions: []
 intro: "## Vision\n\nA department committed to creating a prosperous and empowered\
   \ province united in the advancement of its sport, heritage, arts and culture.\r\
   \n\r\n\n\n## Mission\n\nTo serve all the people of the Northern Cape by promoting,\
@@ -39,19 +41,19 @@ programmes:
 - name: Cultural Affairs
 - name: Library and Archives Services
 - name: Sport and Recreation
-resources:
-  'EPRE for Vote 07 : Sport, Arts and Culture':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/928cba60-0112-442a-bf97-b29798b2c8b3/resource/3e62a007-2884-4ab6-bd89-6eadacab249f/download/nc-sport-arts-and-culture.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
-        - Vote 07 - Sports, Art & Culture.pdf
 selected_financial_year: 2016-17
 slug: sport-arts-and-culture
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 07 : Sport, Arts and Culture':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/928cba60-0112-442a-bf97-b29798b2c8b3/resource/3e62a007-2884-4ab6-bd89-6eadacab249f/download/nc-sport-arts-and-culture.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
+        - Vote 07 - Sports, Art & Culture.pdf
 vote_number: 7

@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -26,6 +27,9 @@ financial_years:
 government:
   name: Free State
   slug: free-state
+government_functions:
+- Economic affairs
+- General public services
 intro: "## Vision\n\nA prosperous Free State through facilitation of sustainable built\
   \ infrastructure.\r\n\r\n\n\n## Mission\n\nCoordination, provision, promotion of\
   \ built infrastructure and sound management of assets.\r\n\r\n\n\n## Core functions\n\
@@ -38,19 +42,19 @@ programmes:
 - name: Administration
 - name: Public Works Infrastructure
 - name: Expanded Public Works Programme
-resources:
-  'EPRE for Vote 09 : Public Works and Infrastructure':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/82f90103-b6a8-4084-9e37-8f76e1d4e23f/resource/e505983c-3780-47ab-b239-2429b1481f14/download/fs-public-works-and-infrast.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
-        - Vote 09 - Public Works and Infrastructure.pdf
 selected_financial_year: 2017-18
 slug: public-works-and-infrastructure
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 09 : Public Works and Infrastructure':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/82f90103-b6a8-4084-9e37-8f76e1d4e23f/resource/e505983c-3780-47ab-b239-2429b1481f14/download/fs-public-works-and-infrast.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
+        - Vote 09 - Public Works and Infrastructure.pdf
 vote_number: 9

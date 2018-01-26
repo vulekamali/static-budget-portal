@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Promote economic development policy formulation and planning\
   \ for the benefit\nof all South Africans._\n\n\n\n## Mandate\n\nThe Economic Development\
   \ Department was established in 2009 and has assumed\nresponsibilities relating\
@@ -46,7 +48,12 @@ programmes:
 - name: Administration
 - name: Growth Path and Social Dialogue
 - name: Investment, Competition and Trade
-resources:
+selected_financial_year: 2015-16
+slug: economic-development
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 25 - Economic Development:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -55,9 +62,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/Vote%2025%20Economic%20Development.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote25.xls
-selected_financial_year: 2015-16
-slug: economic-development
-sphere:
-  name: National
-  slug: national
 vote_number: 25

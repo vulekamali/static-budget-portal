@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Free State
   slug: free-state
+government_functions: []
 intro: "## Vision\n\nYour partner in financial management and service excellence in\
   \ the public sector, for a\r\nbetter life for all in the Free State\r\n\r\n\r\n\n\
   \n## Mission\n\nTo instil prudent financial management and good governance\r\n\r\
@@ -47,19 +49,19 @@ programmes:
 - name: Asset and Liabilities Management
 - name: Financial Governance
 - name: Municipal Finance Management
-resources:
-  'EPRE for Vote 04 : Provincial Treasury':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/30ba46a4-5caa-48a2-be88-fe247b1145dc/resource/0bd03675-87d0-4951-882c-afb8bf773b21/download/fs-provincial-treasury.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
-        - Vote 04 - Free State Provincial Treasury.pdf
 selected_financial_year: 2016-17
 slug: provincial-treasury
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 04 : Provincial Treasury':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/30ba46a4-5caa-48a2-be88-fe247b1145dc/resource/0bd03675-87d0-4951-882c-afb8bf773b21/download/fs-provincial-treasury.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
+        - Vote 04 - Free State Provincial Treasury.pdf
 vote_number: 4

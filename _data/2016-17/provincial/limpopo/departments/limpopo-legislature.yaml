@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Limpopo
   slug: limpopo
+government_functions: []
 intro: "## Vision\n\nThe Limpopo Legislature seeks to be a representative and consultative\
   \ body, a vanguard of\r\npeople\u2019s aspirations and interests towards a democratic,\
   \ non-sexist, non-racial, united and\r\nprosperous society.\r\n\r\n\n\n## Mission\
@@ -51,20 +53,24 @@ intro: "## Vision\n\nThe Limpopo Legislature seeks to be a representative and co
   \ and committees through public participation and\r\npetitions.\r\n\r\n\u2022 Provide\
   \ financial and administrative assistance to each party represented in the Legislature."
 name: Limpopo Legislature
-programmes: []
-resources:
-  'EPRE for Vote 02 : Limpopo Legislature':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/7fe93dd3-67a4-4829-9c42-d65828a05093/resource/691ddfac-21e2-4e6a-8093-cdb23948728b/download/lim-limpopo-legislature.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
-        - Vote 02 - Limpopo Legislature.pdf
+programmes:
+- name: Administration
+- name: Facilities for Members and Political Parties
+- name: Parliamentary Services
+- name: Direct charge against the Provincial Revenue Fund
 selected_financial_year: 2016-17
 slug: limpopo-legislature
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 02 : Limpopo Legislature':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/7fe93dd3-67a4-4829-9c42-d65828a05093/resource/691ddfac-21e2-4e6a-8093-cdb23948728b/download/lim-limpopo-legislature.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
+        - Vote 02 - Limpopo Legislature.pdf
 vote_number: 2

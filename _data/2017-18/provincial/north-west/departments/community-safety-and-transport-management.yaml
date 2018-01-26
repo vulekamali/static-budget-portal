@@ -1,3 +1,7 @@
+contributed_datasets:
+- contributor: Studies in Poverty and Inequality Institute
+  name: Monitoring the right of access to adequate housing in South Africa
+  url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +30,9 @@ financial_years:
 government:
   name: North West
   slug: north-west
+government_functions:
+- Defence, public order and safety
+- Human settlements and municipal infrastructure
 intro: "## Vision\n\nSafe Communities and effective transport services.\r\n\r\n\n\n\
   ## Mission\n\nWe are committed to promote community and road safety, exercise civilian\
   \ oversight of police and coordinate transport services through an integrated approach.\r\
@@ -53,19 +60,19 @@ programmes:
 - name: Provincial Secretariat for Police Service
 - name: Transport Operations
 - name: Transport Regulations
-resources:
-  'EPRE for Vote 05 : Community Safety and Transport Management':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/b8585a2b-f222-469c-83ef-d0742b3f3694/resource/4f06053d-62dc-4e18-b1aa-647957e28d64/download/nw-comm.-safety-and-transport-mgt..xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
-        - Vote 05 - Community Safety and Transport Management.pdf
 selected_financial_year: 2017-18
 slug: community-safety-and-transport-management
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 05 : Community Safety and Transport Management':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/b8585a2b-f222-469c-83ef-d0742b3f3694/resource/4f06053d-62dc-4e18-b1aa-647957e28d64/download/nw-comm.-safety-and-transport-mgt..xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 05 - Community Safety and Transport Management.pdf
 vote_number: 5

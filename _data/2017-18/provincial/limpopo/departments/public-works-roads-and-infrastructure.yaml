@@ -1,3 +1,7 @@
+contributed_datasets:
+- contributor: Studies in Poverty and Inequality Institute
+  name: Monitoring the right of access to adequate housing in South Africa
+  url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -26,6 +30,10 @@ financial_years:
 government:
   name: Limpopo
   slug: limpopo
+government_functions:
+- Economic affairs
+- General public services
+- Human settlements and municipal infrastructure
 intro: "## Vision\n\nA leader in the provision and management of provincial land,\
   \ buildings and roads infrastructure.\r\n\r\n\n\n## Mission\n\nOptimal utilization\
   \ of resources in the provision and management of sustainable social and economic\
@@ -41,19 +49,19 @@ programmes:
 - name: Infrastructure Operations
 - name: Epwp
 - name: Roads Infrastructure
-resources:
-  'EPRE for Vote 09 : Public Works, Roads and Infrastructure':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/b09b28fb-c750-4711-a1c4-d0994356be80/resource/a2114a7a-eedb-4f83-b220-798ac7414c47/download/lim-public-works-roads-and-infrastructure.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
-        - Vote 09 - Public Works, Roads & Infrastructure.pdf
 selected_financial_year: 2017-18
 slug: public-works-roads-and-infrastructure
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 09 : Public Works, Roads and Infrastructure':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/b09b28fb-c750-4711-a1c4-d0994356be80/resource/a2114a7a-eedb-4f83-b220-798ac7414c47/download/lim-public-works-roads-and-infrastructure.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
+        - Vote 09 - Public Works, Roads & Infrastructure.pdf
 vote_number: 9

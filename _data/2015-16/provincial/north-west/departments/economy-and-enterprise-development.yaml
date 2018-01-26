@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -8,24 +9,25 @@ financial_years:
   id: 2015-16
   is_selected: true
 - closest_match:
-    is_exact_match: false
-    name: North West
-    organisational_unit: government
-    slug: north-west
-    url_path: /2016-17/provincial/north-west
+    is_exact_match: true
+    name: Economy and Enterprise Development
+    organisational_unit: department
+    slug: economy-and-enterprise-development
+    url_path: /2016-17/provincial/north-west/departments/economy-and-enterprise-development
   id: 2016-17
   is_selected: false
 - closest_match:
-    is_exact_match: false
-    name: North West
-    organisational_unit: government
-    slug: north-west
-    url_path: /2017-18/provincial/north-west
+    is_exact_match: true
+    name: Economy and Enterprise Development
+    organisational_unit: department
+    slug: economy-and-enterprise-development
+    url_path: /2017-18/provincial/north-west/departments/economy-and-enterprise-development
   id: 2017-18
   is_selected: false
 government:
   name: North West
   slug: north-west
+government_functions: []
 intro: "## Vision\r\n\r\nA prosperous society and a growing economy.\r\n\r\n\r\n\r\
   \n## Mission\r\n\r\nTo drive and facilitate a sustainable economic development in\
   \ the North West Province through:\r\n\r\n* Coordinated economic planning.\r\n\r\
@@ -43,17 +45,22 @@ intro: "## Vision\r\n\r\nA prosperous society and a growing economy.\r\n\r\n\r\n
   \n\r\n* Economic development planning & coordination including LED, IDPs, cluster\
   \ management; and Project management"
 name: Economy and Enterprise Development
-programmes: []
-resources:
-  'EPRE for Vote 06 : Economy and Enterprise Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/981d7c0c-e43c-4f8c-83b1-2675a66ceefc/resource/f5d39468-8b6c-43c8-bda2-e462b85b8d71/download/nw-economy-and-enterprise-development.xlsx
+programmes:
+- name: Administration
+- name: Integrated Economic Development Services
+- name: Trade and Sector Development
+- name: Business Regulation and Governance
+- name: Economic  Planning
 selected_financial_year: 2015-16
 slug: economy-and-enterprise-development
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 06 : Economy and Enterprise Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/981d7c0c-e43c-4f8c-83b1-2675a66ceefc/resource/f5d39468-8b6c-43c8-bda2-e462b85b8d71/download/nw-economy-and-enterprise-development.xlsx
 vote_number: 6

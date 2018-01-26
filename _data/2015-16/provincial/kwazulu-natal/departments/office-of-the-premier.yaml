@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
+government_functions: []
 intro: "## Vision\n\nThe vision of the Office of the Premier (OTP) is: To be the centre\
   \ of governance, providing leadership towards achieving KZN Vision 2030\r\n\r\n\n\
   \n## Mission\n\nThe mission of the department is to support the Premier in carrying\
@@ -52,19 +54,19 @@ programmes:
 - name: Administration
 - name: Institutional Development
 - name: Policy and Governance
-resources:
-  'EPRE for Vote 01 : Office of the Premier':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/5a1cceb7-f488-4d7f-b831-4348714dd7e6/resource/0128e8f0-4a8e-4d24-827c-d2826d247a28/download/kzn-office-of-the-premier.xlsx
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
-        - Vote 01 - Premier.pdf
 selected_financial_year: 2015-16
 slug: office-of-the-premier
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 01 : Office of the Premier':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/5a1cceb7-f488-4d7f-b831-4348714dd7e6/resource/0128e8f0-4a8e-4d24-827c-d2826d247a28/download/kzn-office-of-the-premier.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
+        - Vote 01 - Premier.pdf
 vote_number: 1

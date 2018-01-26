@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: Western Cape
   slug: western-cape
+government_functions:
+- Health
 intro: "## Vision\n\nAccess to person-centered quality care.\r\n\r\n\n\n## Mission\n\
   \nWe undertake to provide equitable access to quality health services in partnership\
   \ with the relevant stakeholders within a balanced and well-managed health system\
@@ -53,19 +56,19 @@ programmes:
 - name: Health Sciences and Training
 - name: Health Care Support Services
 - name: Health Facilities Management
-resources:
-  'EPRE for Vote 06 : Health':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/4378ef2d-5de9-494e-9e36-60874b4b56d1/resource/8d4b3a46-4a44-4d6b-83eb-7035d4cebc8e/download/wc-health.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
-        - Vote 06 - Health.pdf
 selected_financial_year: 2017-18
 slug: health
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 06 : Health':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/4378ef2d-5de9-494e-9e36-60874b4b56d1/resource/8d4b3a46-4a44-4d6b-83eb-7035d4cebc8e/download/wc-health.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
+        - Vote 06 - Health.pdf
 vote_number: 6

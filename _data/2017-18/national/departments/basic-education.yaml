@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions:
+- Basic education
 intro: "## Vote purpose\n\n_Develop, maintain and support a South African school education\
   \ system for the\n21st century._\n\n\n\n## Mandate\n\nThe Department of Basic Education\
   \ derives its mandate from the following\nlegislation:\n\n  * the National Education\
@@ -45,7 +48,12 @@ programmes:
 - name: Teachers, Education Human Resources and Institutional Development
 - name: Planning, Information and Assessment
 - name: Educational Enrichment Services
-resources:
+selected_financial_year: 2017-18
+slug: basic-education
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 14 - Basic Education:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -54,9 +62,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote14_ChapterTables.xlsx
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2014%20Basic%20Education.pdf
-selected_financial_year: 2017-18
-slug: basic-education
-sphere:
-  name: National
-  slug: national
 vote_number: 14

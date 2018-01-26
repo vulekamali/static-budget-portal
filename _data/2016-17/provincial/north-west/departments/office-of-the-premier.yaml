@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: North West
   slug: north-west
+government_functions: []
 intro: "## Vision\n\nA united, non-racial, non-sexist, democratic and prosperous citizenry\
   \ in Bokone-Bophirima Province.\r\n\r\n\n\n## Mission\n\nTo work with partners in\
   \ order to:\r\n\r\n* Improve government performance in achieving the desired outcomes;\r\
@@ -43,19 +45,19 @@ programmes:
 - name: Administration
 - name: Institutional Development
 - name: Policy and Governance
-resources:
-  'EPRE for Vote 01 : Office of the Premier':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/d84d3eb8-88de-4a60-b063-ad4309f57d3d/resource/23ea5cf7-ab40-4c78-8336-a33fe8113c53/download/nw-office-of-the-premier.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
-        - Vote 01 - Office of The Premier.pdf
 selected_financial_year: 2016-17
 slug: office-of-the-premier
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 01 : Office of the Premier':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/d84d3eb8-88de-4a60-b063-ad4309f57d3d/resource/23ea5cf7-ab40-4c78-8336-a33fe8113c53/download/nw-office-of-the-premier.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 01 - Office of The Premier.pdf
 vote_number: 1

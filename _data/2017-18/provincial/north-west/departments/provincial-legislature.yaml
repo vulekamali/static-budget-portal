@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: North West
   slug: north-west
+government_functions:
+- General public services
 intro: "## Vision\n\nTo Foster Lawmaking, Oversight and Public Participation Processes\
   \ through robust debates to instil Public Pride and Confidence in Democracy.\r\n\
   \r\n\n\n## Mission\n\nThe North West Provincial Legislature has, in its quest to\
@@ -52,19 +55,19 @@ programmes:
 - name: Administration
 - name: Statutory Payments
 - name: Legislature operations
-resources:
-  'EPRE for Vote 02 : Provincial Legislature':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/f7f7624d-81d5-494e-92a1-3c1b76af772f/resource/aa1aee00-19cc-491b-a7ff-ff16c6a7fa9a/download/nw-legislature.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
-        - Vote 02 - Legislature.pdf
 selected_financial_year: 2017-18
 slug: provincial-legislature
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 02 : Provincial Legislature':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/f7f7624d-81d5-494e-92a1-3c1b76af772f/resource/aa1aee00-19cc-491b-a7ff-ff16c6a7fa9a/download/nw-legislature.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 02 - Legislature.pdf
 vote_number: 2

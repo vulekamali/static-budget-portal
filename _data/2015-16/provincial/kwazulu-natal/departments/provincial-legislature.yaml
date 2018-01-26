@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
+government_functions: []
 intro: "## Vision\n\nThe vision of the Provincial Legislature (hereafter referred\
   \ to as the Legislature) is: To be an activist, people-centred Legislature\r\n\r\
   \n\n\n## Mission\n\nThe Legislature\u2019s mission statement is: To deepen democracy\
@@ -42,19 +44,19 @@ name: Provincial Legislature
 programmes:
 - name: Administration
 - name: Parliamentary Business
-resources:
-  'EPRE for Vote 02 : Provincial Legislature':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/7e58f768-0b72-4448-83b4-d128f0952831/resource/0e9c058d-1ed7-41b9-90e7-e2dc61863720/download/kzn-legislature.xlsx
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
-        - Vote 02 - Legislature.pdf
 selected_financial_year: 2015-16
 slug: provincial-legislature
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 02 : Provincial Legislature':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/7e58f768-0b72-4448-83b4-d128f0952831/resource/0e9c058d-1ed7-41b9-90e7-e2dc61863720/download/kzn-legislature.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
+        - Vote 02 - Legislature.pdf
 vote_number: 2

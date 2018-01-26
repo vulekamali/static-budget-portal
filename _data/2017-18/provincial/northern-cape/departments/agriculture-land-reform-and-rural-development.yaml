@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: Northern Cape
   slug: northern-cape
+government_functions:
+- Agriculture, rural development and land reform
 intro: "## Core functions and responsibilities of the department\r\n\r\n* Coordinate\
   \ and facilitate rural development programmes that contribute to vibrant, equitable\
   \ and sustainable rural communities;\r\n* Provision of comprehensive post settlement\
@@ -56,19 +59,19 @@ programmes:
 - name: Research and Technology Development Services
 - name: Agricultural Economics Services
 - name: Rural Development
-resources:
-  'EPRE for Vote 12 : Agriculture, Land Reform and Rural Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/18e897b8-3658-4eb3-a5e8-aed4fa9ca1d8/resource/37d8a05d-2b7b-44b1-86c8-e1cda3d87086/download/nc-agric.-land-reform-and-rural-dev..xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
-        - Vote 12 - Agriculture, Land & Rural Dev.pdf
 selected_financial_year: 2017-18
 slug: agriculture-land-reform-and-rural-development
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 12 : Agriculture, Land Reform and Rural Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/18e897b8-3658-4eb3-a5e8-aed4fa9ca1d8/resource/37d8a05d-2b7b-44b1-86c8-e1cda3d87086/download/nc-agric.-land-reform-and-rural-dev..xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
+        - Vote 12 - Agriculture, Land & Rural Dev.pdf
 vote_number: 12

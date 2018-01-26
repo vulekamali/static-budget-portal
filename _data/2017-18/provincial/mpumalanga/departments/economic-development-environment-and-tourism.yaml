@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,24 +27,31 @@ financial_years:
 government:
   name: Mpumalanga
   slug: mpumalanga
+government_functions: []
 intro: "## Vision\n\nAn Inclusive, Global Competitive Economy\r\n\r\n\n\n## Mission\n\
   \nDrive economic growth that creates decent employment and promote sustainable\r\
   \ndevelopment through partnership.\r\n\r\n\r\n\r\n"
 name: Economic Development, Environment and Tourism
-programmes: []
-resources:
-  'EPRE for Vote 06 : Economic Development, Environment and Tourism':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/3075ee2c-23ba-4e66-a2cc-6d58a1fd23ad/resource/d536d1e2-8863-4410-9e0d-1f5d4cb7e96f/download/mpu-eco.-development-and-tourism.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
-        - Vote 06 - Economic Development and Tourism.pdf
+programmes:
+- name: Administration
+- name: Integrated Economic Development
+- name: Trade and Sector Development
+- name: Business Regulation and Governance
+- name: Economic Planning
+- name: Tourism
 selected_financial_year: 2017-18
 slug: economic-development-environment-and-tourism
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 06 : Economic Development, Environment and Tourism':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/3075ee2c-23ba-4e66-a2cc-6d58a1fd23ad/resource/d536d1e2-8863-4410-9e0d-1f5d4cb7e96f/download/mpu-eco.-development-and-tourism.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
+        - Vote 06 - Economic Development and Tourism.pdf
 vote_number: 6

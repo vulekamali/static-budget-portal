@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Gauteng
   slug: gauteng
+government_functions: []
 intro: "## Vision\n\n\u201CAn active, creative and modernised Gauteng City Region\
   \ contributing to sustainable economic growth and\r\nsocial cohesion.\u201D\r\n\r\
   \n\n\n## Mission\n\nIn pursuit of the above vision, the Department of Sport, Arts,\
@@ -48,19 +50,19 @@ programmes:
 - name: Cultural Affairs
 - name: Library And Archives Services
 - name: Sport And Recreation
-resources:
-  'EPRE for Vote 12 : Sport, Arts, Culture and Recreation':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/cbc69671-f3ec-4006-9783-3587904e4cd2/resource/74a56bdf-6d3c-43cf-8b0e-d66d6cadc33f/download/gt-sport-culture-and-recreation.xlsx
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
-        - Vote 12 - Sport, Arts, Culture and Recreation.pdf
 selected_financial_year: 2015-16
 slug: sport-arts-culture-and-recreation
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 12 : Sport, Arts, Culture and Recreation':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/cbc69671-f3ec-4006-9783-3587904e4cd2/resource/74a56bdf-6d3c-43cf-8b0e-d66d6cadc33f/download/gt-sport-culture-and-recreation.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
+        - Vote 12 - Sport, Arts, Culture and Recreation.pdf
 vote_number: 12

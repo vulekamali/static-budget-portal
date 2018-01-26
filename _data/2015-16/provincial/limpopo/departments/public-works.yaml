@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Limpopo
   slug: limpopo
+government_functions: []
 intro: "## Vision\n\nA leader in the provision and management of provincial land,\
   \ buildings and roads infrastructure.\r\n\r\n\n\n## Mission\n\nOptimal utilization\
   \ of resources in the provision and management of sustainable social and economic\
@@ -36,20 +38,24 @@ intro: "## Vision\n\nA leader in the provision and management of provincial land
   \ Programme.\r\n\r\n* Comply with the requirements of Government Immovable Asset\
   \ Management Act (GIAMA).\r\n\r\n* Plan, Design, upgrade and maintain roads infrastructure"
 name: Public Works
-programmes: []
-resources:
-  'EPRE for Vote 09 : Public Works':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/ac6b665c-06cf-4068-9837-54def77c0fde/resource/5841d059-4cd8-41b1-9d7f-d6e265d52017/download/lim-public-works-roads-and-infrastructure.xlsx
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
-        - Vote 09 - Public Works, Roads a& Transport.pdf
+programmes:
+- name: Administration
+- name: Infrastructure Operations
+- name: Epwp
+- name: Roads Infrastructure
 selected_financial_year: 2015-16
 slug: public-works
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 09 : Public Works':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/ac6b665c-06cf-4068-9837-54def77c0fde/resource/5841d059-4cd8-41b1-9d7f-d6e265d52017/download/lim-public-works-roads-and-infrastructure.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
+        - Vote 09 - Public Works, Roads a& Transport.pdf
 vote_number: 9

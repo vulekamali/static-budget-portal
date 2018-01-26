@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Develop and support a quality higher and vocational education\
   \ sector. Promote\naccess to higher and vocational education and skills development\
   \ training\nopportunities._\n\n\n\n## Mandate\n\nThe Department of Higher Education\
@@ -55,7 +57,12 @@ programmes:
 - name: Vocational and Continuing Education and Training
 - name: Skills Development
 - name: Direct charge against the National Revenue Fund
-resources:
+selected_financial_year: 2015-16
+slug: higher-education-and-training
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 15 - Higher Education and Training:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -64,9 +71,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/Vote%2015%20Higher%20Education%20and%20Training.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote15.xls
-selected_financial_year: 2015-16
-slug: higher-education-and-training
-sphere:
-  name: National
-  slug: national
 vote_number: 15

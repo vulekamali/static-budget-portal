@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: North West
   slug: north-west
+government_functions:
+- Basic education
 intro: "## Vision \n\nTowards Excellence in Education and Sport Development.\r\n\r\
   \n\n\n## Mission\n\nWe provide quality basic education for high learner achievement\
   \ through educator excellence, as well as sport development, nation building and\
@@ -75,19 +78,19 @@ programmes:
 - name: Infrastructure Development
 - name: Examination and Education Related Services
 - name: Sport and Recreation
-resources:
-  'EPRE for Vote 08 : Education and Sports Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/bb52dc57-857f-4fd8-a60e-b042d3232593/resource/f358e84d-3774-45cc-8444-ada3f13154d1/download/nw-education-and-sport-development.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
-        - Vote 08 - Education and Sports Development.pdf
 selected_financial_year: 2017-18
 slug: education-and-sports-development
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 08 : Education and Sports Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/bb52dc57-857f-4fd8-a60e-b042d3232593/resource/f358e84d-3774-45cc-8444-ada3f13154d1/download/nw-education-and-sport-development.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 08 - Education and Sports Development.pdf
 vote_number: 8

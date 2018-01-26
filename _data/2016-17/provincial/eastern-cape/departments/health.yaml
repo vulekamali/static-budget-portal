@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Eastern Cape
   slug: eastern-cape
+government_functions: []
 intro: "## Vision\n\nA quality health service to the people of the eastern cape province\
   \ promoting a better life for all\r\n\r\n\n\n## Mission\n\nTo provide and ensure\
   \ accessible comprehensive integrated services in the Eastern cape, emphasizing\
@@ -57,19 +59,19 @@ programmes:
 - name: Health Sciences & Training
 - name: Health Care Support Services
 - name: Health Facilities Management
-resources:
-  'EPRE for Vote 03 : Health':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/b6ae0b43-0ada-4bb7-ab45-6d32159a691b/resource/5668a033-65c1-4abd-a112-684e06a35bcc/download/ec-health.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
-        - Vote 03 - Health.pdf
 selected_financial_year: 2016-17
 slug: health
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 03 : Health':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/b6ae0b43-0ada-4bb7-ab45-6d32159a691b/resource/5668a033-65c1-4abd-a112-684e06a35bcc/download/ec-health.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
+        - Vote 03 - Health.pdf
 vote_number: 3

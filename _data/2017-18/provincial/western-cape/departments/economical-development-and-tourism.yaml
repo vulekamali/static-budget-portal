@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Western Cape
   slug: western-cape
+government_functions: []
 intro: "## Vision\n\nThe Department\u2019s vision is a Western Cape that has a vibrant,\
   \ innovative, and sustainable economy,\r\ncharacterised by growth, employment and\
   \ increasing equity, and built on the full potential of all.\r\n\r\n\n\n## Mission\n\
@@ -54,20 +56,27 @@ intro: "## Vision\n\nThe Department\u2019s vision is a Western Cape that has a v
   \ for business and citizenry growth and development; and\r\n\r\n* Creating a competitive\
   \ and productive economic Province.\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
 name: Economical Development and Tourism
-programmes: []
-resources:
-  'EPRE for Vote 12 : Economical Development and Tourism':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/036eed93-ef8d-421c-8048-6c3c819420bb/resource/0f431b23-1b43-4632-b06c-7ef790ef9d75/download/wc-economic-dev.-and-tourism.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
-        - Vote 12 - Economic Development and Toursim.pdf
+programmes:
+- name: Administration
+- name: Integrated Economic Development Services
+- name: Trade and Sector Development
+- name: Business Regulation and Governance
+- name: Economic Planning
+- name: Tourism Arts and Entertainment
+- name: Skills Development and Innovation
 selected_financial_year: 2017-18
 slug: economical-development-and-tourism
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 12 : Economical Development and Tourism':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/036eed93-ef8d-421c-8048-6c3c819420bb/resource/0f431b23-1b43-4632-b06c-7ef790ef9d75/download/wc-economic-dev.-and-tourism.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
+        - Vote 12 - Economic Development and Toursim.pdf
 vote_number: 12

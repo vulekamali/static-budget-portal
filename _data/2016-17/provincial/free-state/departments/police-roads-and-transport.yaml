@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Free State
   slug: free-state
+government_functions: []
 intro: "## Vision\n\nContribute towards the creation of a prosperous Free State through\
   \ the facilitation of the\r\nprovision of sustainable community safety, mobility\
   \ and road infrastructure.\r\n\r\n\n\n## Mission\n\nTo realise the afore said vision,\
@@ -50,19 +52,19 @@ programmes:
 - name: Transport Operations
 - name: Transport Regulations
 - name: Transport Infrastructure
-resources:
-  'EPRE for Vote 10 : Police, Roads and Transport':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/ff50edde-bc6a-4b4b-b993-5cd7e72a4bae/resource/44a9f385-90c2-4a03-80b8-b3b59b1e4f30/download/fs-police-roads-and-transp.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
-        - Vote 10 - Police, Raods and Transport.pdf
 selected_financial_year: 2016-17
 slug: police-roads-and-transport
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 10 : Police, Roads and Transport':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/ff50edde-bc6a-4b4b-b993-5cd7e72a4bae/resource/44a9f385-90c2-4a03-80b8-b3b59b1e4f30/download/fs-police-roads-and-transp.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
+        - Vote 10 - Police, Raods and Transport.pdf
 vote_number: 10

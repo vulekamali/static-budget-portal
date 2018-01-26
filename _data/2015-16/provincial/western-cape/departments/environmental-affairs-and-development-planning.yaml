@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Western Cape
   slug: western-cape
+government_functions: []
 intro: "## Vision\n\nA resilient, sustainable, quality and inclusive living environment.\r\
   \n\r\n\n\n## Mission\n\nTo promote a resilient, sustainable, quality and inclusive\
   \ living environment in support of human well-being.\r\n\r\n\n\n## Core functions\n\
@@ -46,19 +48,19 @@ programmes:
 - name: Biodiversity Management
 - name: Environmental Empowerment Services
 - name: Development Planning
-resources:
-  'EPRE for Vote 09 : Environmental Affairs and Development Planning':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/9ede39c4-d52e-4d18-8416-3aeee6b82ec6/resource/ba980123-2e03-4f5f-987d-151ea8bcf79a/download/wc-environ-affairs-and-dev-planning.xlsx
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
-        - Vote 09 - Environ Affaris and Dev Planning.pdf
 selected_financial_year: 2015-16
 slug: environmental-affairs-and-development-planning
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 09 : Environmental Affairs and Development Planning':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/9ede39c4-d52e-4d18-8416-3aeee6b82ec6/resource/ba980123-2e03-4f5f-987d-151ea8bcf79a/download/wc-environ-affairs-and-dev-planning.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
+        - Vote 09 - Environ Affaris and Dev Planning.pdf
 vote_number: 9

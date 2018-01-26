@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
+government_functions: []
 intro: "## Vote purpose\n\n_Lead, coordinate and oversee the transformation agenda\
   \ on women\u2019s\nsocioeconomic empowerment, rights and equality._\n\n\n\n## Mandate\n\
   \nThe Department of Women derives its mandate from the Constitution and the\npresidential\
@@ -37,7 +39,12 @@ programmes:
 - name: Administration
 - name: Social Transformation and Economic Empowerment
 - name: Policy, Stakeholder Coordination and Knowledge Management
-resources:
+selected_financial_year: 2016-17
+slug: women
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
   ENE for Vote 13 - Women:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
@@ -46,9 +53,4 @@ resources:
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/Vote%2013%20Women.pdf
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote13.xls
-selected_financial_year: 2016-17
-slug: women
-sphere:
-  name: National
-  slug: national
 vote_number: 13

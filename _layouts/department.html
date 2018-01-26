@@ -19,8 +19,20 @@ layout: page-shell
 
       <div class="Page-blurb js-tooltips">{{ page_data.intro  | markdownify }}</div>
 
-      <div class="Page-section">
-        {% include components/Programmes/index.html programmes=page_data.programmes %}
+    <div class="Page-blurb js-tooltips">{{ page_data.intro  | markdownify }}</div>
+
+    <div class="Page-section">
+      {% include components/Programmes/index.html programmes=page_data.programmes %}
+    </div>
+
+  </main>
+  <aside class="Page-sidebar">
+      {% include components/Share/index.html %}
+      <div class="Page-smallSection">
+          {% include components/Resources/index.html resources=page_data.treasury_datasets %}
+          <div class="Page-csoLinks">
+            {% include components/CsoLinks/index.html resources=page_data.contributed_datasets %}
+          </div>
       </div>
 
     </main>

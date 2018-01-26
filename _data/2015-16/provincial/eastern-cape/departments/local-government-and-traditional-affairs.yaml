@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,7 @@ financial_years:
 government:
   name: Eastern Cape
   slug: eastern-cape
+government_functions: []
 intro: "## Vision\n\nAn integrated, capable, responsive and accountable local government\
   \ and traditional institution system\r\nfocusing on the needs of the community.\r\
   \n\r\n\n\n## Mission\n\nTo promote a developmental local state and traditional institutions\
@@ -46,20 +48,25 @@ intro: "## Vision\n\nAn integrated, capable, responsive and accountable local go
   \ support to traditional leadership institutions; and\r\n\r\n* Promotes and supports\
   \ the participation of traditional communities in developmental programmes."
 name: Local Government and Traditional Affairs
-programmes: []
-resources:
-  'EPRE for Vote 07 : Local Government and Traditional Affairs':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://treasurydata.openup.org.za/dataset/25725c1e-f199-44ff-af63-371e64946d19/resource/8d743baf-79f3-40fd-b31e-51e17782c9c3/download/ec-cogta.xlsx
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
-        - Vote 07 - Coop Gov and Traditional Affairs.pdf
+programmes:
+- name: Administration
+- name: Local Governance
+- name: Development And Planning
+- name: Traditional Institutional Management
+- name: House Of Traditional Leaders
 selected_financial_year: 2015-16
 slug: local-government-and-traditional-affairs
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 07 : Local Government and Traditional Affairs':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/25725c1e-f199-44ff-af63-371e64946d19/resource/8d743baf-79f3-40fd-b31e-51e17782c9c3/download/ec-cogta.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
+        - Vote 07 - Coop Gov and Traditional Affairs.pdf
 vote_number: 7

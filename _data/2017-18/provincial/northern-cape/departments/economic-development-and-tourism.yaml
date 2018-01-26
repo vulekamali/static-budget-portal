@@ -1,3 +1,4 @@
+contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +27,8 @@ financial_years:
 government:
   name: Northern Cape
   slug: northern-cape
+government_functions:
+- Economic affairs
 intro: "## Vision\n\nA radically transformed economy in the Northern Cape.\r\n\r\n\
   \n\n## Mission\n\nAccelerating the economic growth and development of the Northern\
   \ Cape Province through diversification, empowerment, employment, business creation\
@@ -56,19 +59,19 @@ programmes:
 - name: Business Regulation And Governance
 - name: Economic Planning
 - name: Tourism
-resources:
-  'EPRE for Vote 06 : Economic Development and Tourism':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/79a71137-106b-4a2d-ae17-7e3b549f6b97/resource/661a0a04-10b0-4874-b3d8-100791a1944b/download/nc-eco.-dev.-and-tourism.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
-        - Vote 06 - Economic Development & Tourism.pdf
 selected_financial_year: 2017-18
 slug: economic-development-and-tourism
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 06 : Economic Development and Tourism':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/79a71137-106b-4a2d-ae17-7e3b549f6b97/resource/661a0a04-10b0-4874-b3d8-100791a1944b/download/nc-eco.-dev.-and-tourism.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
+        - Vote 06 - Economic Development & Tourism.pdf
 vote_number: 6

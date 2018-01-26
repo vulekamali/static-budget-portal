@@ -1,3 +1,7 @@
+contributed_datasets:
+- contributor: Studies in Poverty and Inequality Institute
+  name: Monitoring the right of access to adequate housing in South Africa
+  url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -26,6 +30,10 @@ financial_years:
 government:
   name: North West
   slug: north-west
+government_functions:
+- Economic affairs
+- General public services
+- Human settlements and municipal infrastructure
 intro: "## Vision\n\nDelivery and maintenance of quality infrastructure for sustainable\
   \ growth and development.\r\n\r\n\n\n## Mission\n\nTo provide quality provincial\
   \ infrastructure and ensure better service delivery.\r\n\r\n\n\n## Core functions\n\
@@ -58,19 +66,19 @@ programmes:
 - name: Public Works Infrastructure
 - name: Transport Infrastructure
 - name: Community Based Programme
-resources:
-  'EPRE for Vote 11 : Public Works and Roads':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://treasurydata.openup.org.za/dataset/1316bf88-c2dc-4ee0-b025-bf612740a27e/resource/f66ca3b6-0c61-45c8-806d-00f387a3e1c1/download/nw-public-works-and-roads.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
-        - Vote 11 - Public Works and Roads.pdf
 selected_financial_year: 2017-18
 slug: public-works-and-roads
 sphere:
   name: Provincial
   slug: provincial
+treasury_datasets:
+  'EPRE for Vote 11 : Public Works and Roads':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/1316bf88-c2dc-4ee0-b025-bf612740a27e/resource/f66ca3b6-0c61-45c8-806d-00f387a3e1c1/download/nw-public-works-and-roads.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
+        - Vote 11 - Public Works and Roads.pdf
 vote_number: 11
