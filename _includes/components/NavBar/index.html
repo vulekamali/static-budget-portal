@@ -8,7 +8,7 @@
 {% endif %}
 
 
-{% assign items = 'home, Home,   | departments, Departments, departments | about, About, about | glossary, Glossary, glossary' | split: ' | ' %}
+{% assign items = 'home, Home,  ,   / departments, Departments, departments,   / glossary, Glossary, glossary,   / contributed-data, Contributed Data, contributed-data, grey / about, About, about',   |  split: ' / ' %}
 
 <nav class="NavBar">
 
@@ -46,8 +46,14 @@
             {% assign hasSubLinks = '' %}
           {% endif %}
 
+          {% if array[3] == 'grey' %}
+            {% assign isGrey = ' is-darkBackground' %}
+          {% else %}
+            {% assign isGrey = '' %}
+          {% endif %}
+
           <li class="NavBar-item">
-              <{{ tag }} href="/{{ include.year }}/{{ array[2] }}" class="NavBar-link{{ activeClass }}{{ hasSubLinks }}" >
+              <{{ tag }} href="/{{ include.year }}/{{ array[2] }}" class="NavBar-link{{ activeClass }}{{ hasSubLinks }}{{ isGrey }}" >
 
                 {% if array[0] == 'home' %}
                   <span class="NavBar-iconWrap">{{ icon }}</span>

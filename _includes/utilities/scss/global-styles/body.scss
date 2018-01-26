@@ -7,4 +7,10 @@ body {
   &.has-overlay {
     overflow: hidden;
   }
+
+  @media screen and (min-width: 750px) {
+    &.has-overlay {
+      overflow: scroll;
+    }
+  }
 }

@@ -31,6 +31,10 @@
   @media screen and (min-width: 750px) {
     padding-top: 0;
   }
+
+  &.is-darkBackground {
+    background-color: #f9f9f9;
+  }
 }
 
 .Page-sidebar {

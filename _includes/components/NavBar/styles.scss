@@ -21,6 +21,10 @@
     position: static;
     background: #e6e6e6;
     transform: none;
+
+    &.is-active {
+      animation: none;
+    }
   }
 }
 
@@ -87,7 +91,7 @@
   padding: 12px 22px;
   font-size: 18px;
 
-  &:hover {
+  &:not(.NavBar-link--active):hover {
     background: darken(#f0f0f0, 10%);
   }
 
@@ -102,15 +106,15 @@
 
   &:not(.has-subLinks).NavBar-link--active {
     font-weight: bold;
-
-    @media screen and (min-width: 750px) {
-      font-weight: normal;
-    }
   }
 
   &--active {
     @media screen and (min-width: 750px) {
       background-color: white;
+
+      &.is-darkBackground {
+        background-color: #f9f9f9;
+      }
     }
   }
 }

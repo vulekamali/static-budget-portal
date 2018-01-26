@@ -55,13 +55,16 @@ def write_dataset_page(dataset_url_path, dataset_yaml):
 
 # Datasets
 for year_slug in YEAR_SLUGS:
-    listing_url_path = year_slug + '/datasets.yaml'
+    listing_url_path = year_slug + '/contributed-data.yaml'
     listing_url = portal_url + listing_url_path
     r = requests.get(listing_url)
     r.raise_for_status()
     listing_path = os.path.join('_data', listing_url_path)
-    listing = yaml.load(r.text)
 
+    with open(listing_path, 'wb') as listing_file:
+        listing_file.write(r.text)
+
+    listing = yaml.load(r.text)
     for dataset in listing['datasets']:
         print dataset['url_path']
         dataset_path = dataset['url_path'] + '.yaml'
