@@ -1,48 +1,20 @@
 <ul class="u-listReset CsoDirectory">
 
+  {% for dataset in include.datasets %}
   <li class="CsoDirectory-itemWrap">
-    <a class="CsoDirectory-item" href="#">
+    <a class="CsoDirectory-item" href="{{ dataset.url_path }}" title="{{ dataset.name }}">
       <div class="CsoDirectory-cover"></div>
       <div class="CsoDirectory-box">
-        <h3 class="CsoDirectory-title">Analysis of University Education spending in 2017</h3><span class="CsoDirectory-contributor">Data provided by Equal Education</span>
-        <div class="CsoDirectory-imgWrap"><img class="CsoDirectory-img" src="https://treasurydata.openup.org.za/uploads/group/2018-01-19-083658.384768spii-logo.jpg" alt=""/></div>
+        <h3 class="CsoDirectory-title">{{ dataset.name }}</h3><span class="CsoDirectory-contributor">Data provided by {{ dataset.organization.name }}</span>
+        <div class="CsoDirectory-imgWrap"><img class="CsoDirectory-img" src="{{ dataset.organization.logo_url }}" alt="Contributor logo"/></div>
       </div>
       <ul class="CsoDirectory-box is-dark">
-        <li class="CsoDirectory-metaData">Total resources: 3</li>
-        <li class="CsoDirectory-metaData">First uploaded: 4th of Dec 2017</li>
-        <li class="CsoDirectory-metaData">Last updated: 4th of Dec 2017</li>
+        <li class="CsoDirectory-metaData">Total resources: {{ dataset.resources.size }}</li>
+        <li class="CsoDirectory-metaData">First uploaded: {{ dataset.created | date_to_long_string }}</li>
+        <li class="CsoDirectory-metaData">Last updated: {{ dataset.last_updated | date_to_long_string }}</li>
       </ul>
     </a>
   </li>
-
-  <li class="CsoDirectory-itemWrap">
-    <a class="CsoDirectory-item" href="#">
-      <div class="CsoDirectory-cover"></div>
-      <div class="CsoDirectory-box">
-        <h3 class="CsoDirectory-title">Analysis of University Education spending in 2017</h3><span class="CsoDirectory-contributor">Data provided by Equal Education</span>
-        <div class="CsoDirectory-imgWrap"><img class="CsoDirectory-img" src="https://treasurydata.openup.org.za/uploads/group/2018-01-19-083658.384768spii-logo.jpg" alt=""/></div>
-      </div>
-      <ul class="CsoDirectory-box is-dark">
-        <li class="CsoDirectory-metaData">Total resources: 3</li>
-        <li class="CsoDirectory-metaData">First uploaded: 4th of Dec 2017</li>
-        <li class="CsoDirectory-metaData">Last updated: 4th of Dec 2017</li>
-      </ul>
-    </a>
-  </li>
-
-  <li class="CsoDirectory-itemWrap">
-    <a class="CsoDirectory-item" href="#">
-      <div class="CsoDirectory-cover"></div>
-      <div class="CsoDirectory-box">
-        <h3 class="CsoDirectory-title">Analysis of University Education spending in 2017</h3><span class="CsoDirectory-contributor">Data provided by Equal Education</span>
-        <div class="CsoDirectory-imgWrap"><img class="CsoDirectory-img" src="https://treasurydata.openup.org.za/uploads/group/2018-01-19-083658.384768spii-logo.jpg" alt=""/></div>
-      </div>
-      <ul class="CsoDirectory-box is-dark">
-        <li class="CsoDirectory-metaData">Total resources: 3</li>
-        <li class="CsoDirectory-metaData">First uploaded: 4th of Dec 2017</li>
-        <li class="CsoDirectory-metaData">Last updated: 4th of Dec 2017</li>
-      </ul>
-    </a>
-  </li>
+  {% endfor %}
 
 </ul>

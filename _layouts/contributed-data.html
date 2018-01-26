@@ -1,12 +1,13 @@
 ---
 layout: page-shell
 ---
+{% assign page_data = site.data[page.financial_year]['contributed-data'] %}
 
 <div class="Page-content is-darkBackground">
   <div class="Page-contentWrap ">
     <main>
       <div class="Page-title">Contributed Data</div>
-      {% include components/CsoDirectory/index.html %}
+      {% include components/CsoDirectory/index.html datasets=page_data.datasets %}
     </main>
   </div>
 </div>
