@@ -55,14 +55,19 @@ intro: "## Vision\n\nResidents of the Western Cape have access to liveable, acce
 name: Human Settlements
 programmes:
 - name: Administration
-- name: Housing Needs, Research and Planning
-- name: Housing Development
-- name: Housing Asset Management Property Management
+  total_budget: 457665.0
+- name: Human Settlements Policy, Strategy and Planning
+  total_budget: 93573.0
+- name: Human Settlements Delivery Support
+  total_budget: 217302.0
+- name: Housing Development Finance
+  total_budget: 32695760.0
 selected_financial_year: 2017-18
 slug: human-settlements
 sphere:
   name: Provincial
   slug: provincial
+total_budget: 33464300.0
 treasury_datasets:
   'EPRE for Vote 08 : Human Settlements':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

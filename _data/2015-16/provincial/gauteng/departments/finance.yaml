@@ -48,13 +48,17 @@ intro: "## Vision\n\nA Connected Gauteng City Region that uses Information and C
 name: Finance
 programmes:
 - name: Administration
+  total_budget: null
 - name: ICT Shared Services
+  total_budget: null
 - name: Business Process Services
+  total_budget: null
 selected_financial_year: 2015-16
 slug: finance
 sphere:
   name: Provincial
   slug: provincial
+total_budget: null
 treasury_datasets:
   'EPRE for Vote 13 : Finance':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -44,17 +44,24 @@ intro: '## Vote purpose
   '
 name: Parliament
 programmes:
-- name: 'Strategic Leadership and Governance '
-- name: 'Administration '
-- name: Core Business
-- name: 'Support Services '
-- name: 'Associated Services '
+- name: Strategic Leadership and Governance
+  total_budget: 71193.0
 - name: Direct charge against the National Revenue Fund
+  total_budget: 556288.0
+- name: Administration
+  total_budget: 116192.0
+- name: Core Business
+  total_budget: 549166.0
+- name: Support Services
+  total_budget: 305852.0
+- name: Associated Services
+  total_budget: 669544.0
 selected_financial_year: 2017-18
 slug: parliament
 sphere:
   name: National
   slug: national
+total_budget: 2268235.0
 treasury_datasets:
   ENE for Vote 02 - Parliament:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

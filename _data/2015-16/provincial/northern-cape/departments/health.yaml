@@ -45,18 +45,23 @@ intro: "## Vision\n\nHealth service excellence for all.\r\n\r\n\n\n## Mission\n\
 name: Health
 programmes:
 - name: Administration
-- name: District Health Services
-- name: Emergency Medical Services
-- name: Provincial Hospital Services
-- name: Central Hospital Services
-- name: Health Sciences and Training
-- name: Health Care Support Services
-- name: Health Facilities Management
+  total_budget: 457078.0
+- name: National Health Insurance, Health Planning and Systems Enablement
+  total_budget: 587807.0
+- name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+  total_budget: 14442144.0
+- name: Primary Health Care Services
+  total_budget: 225005.0
+- name: Hospitals, Tertiary Health Services and Human Resource Development
+  total_budget: 19159065.0
+- name: Health Regulation and Compliance Management
+  total_budget: 1596919.0
 selected_financial_year: 2015-16
 slug: health
 sphere:
   name: Provincial
   slug: provincial
+total_budget: 36468018.0
 treasury_datasets:
   'EPRE for Vote 10 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

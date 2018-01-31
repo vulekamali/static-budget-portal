@@ -54,21 +54,33 @@ intro: "## Vote purpose\n\n_Support economic growth and development, good govern
 name: National Treasury
 programmes:
 - name: Administration
-- name: Economic Policy, Tax, Financial Regulation and Research
-- name: Public Finance and Budget Management
-- name: Asset and Liability Management
-- name: Financial Accounting and Supply Chain Management Systems
-- name: International Financial Relations
-- name: Civil and Military Pensions, Contributions to Funds and Other Benefits
-- name: Technical Support and Development Finance
-- name: Revenue Administration
+  total_budget: 414310.0
 - name: Financial Intelligence and State Security
+  total_budget: 5005639.0
 - name: Direct charge against the National Revenue Fund
+  total_budget: 615856815.0
+- name: Economic Policy, Tax, Financial Regulation and Research
+  total_budget: 139649.0
+- name: Public Finance and Budget Management
+  total_budget: 286103.0
+- name: Asset and Liability Management
+  total_budget: 102355.0
+- name: Financial Accounting and Supply Chain Management Systems
+  total_budget: 1087876.0
+- name: International Financial Relations
+  total_budget: 5836761.0
+- name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+  total_budget: 4835002.0
+- name: Technical Support and Development Finance
+  total_budget: 2873327.0
+- name: Revenue Administration
+  total_budget: 10218198.0
 selected_financial_year: 2017-18
 slug: national-treasury
 sphere:
   name: National
   slug: national
+total_budget: 646656035.0
 treasury_datasets:
   ENE for Vote 07 - National Treasury:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

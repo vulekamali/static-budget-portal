@@ -46,15 +46,25 @@ intro: "## Vision\n\nThe department\u2019s vision is: Prosperity through mobilit
 name: Transport
 programmes:
 - name: Administration
-- name: Transport Infrastructure
-- name: Transport Operations
-- name: Transport Regulation
-- name: Community Based Programme
+  total_budget: 383457.0
+- name: Integrated Transport Planning
+  total_budget: 80583.0
+- name: Rail Transport
+  total_budget: 18311364.0
+- name: Road Transport
+  total_budget: 22784917.0
+- name: Civil Aviation
+  total_budget: 149526.0
+- name: Maritime Transport
+  total_budget: 111089.0
+- name: Public Transport
+  total_budget: 11536361.0
 selected_financial_year: 2015-16
 slug: transport
 sphere:
   name: Provincial
   slug: provincial
+total_budget: 53357297.0
 treasury_datasets:
   'EPRE for Vote 12 : Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -56,13 +56,17 @@ intro: '## Vote purpose
 name: The Presidency
 programmes:
 - name: Administration
-- name: Executive Support
+  total_budget: 483940.0
 - name: Direct charge against the National Revenue Fund
+  total_budget: 5726.0
+- name: Executive Support
+  total_budget: 26390.0
 selected_financial_year: 2015-16
 slug: the-presidency
 sphere:
   name: National
   slug: national
+total_budget: 516056.0
 treasury_datasets:
   ENE for Vote 01 - The Presidency:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

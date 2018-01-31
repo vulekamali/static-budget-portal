@@ -52,16 +52,23 @@ intro: "## Vote purpose\n\n_Develop and support a quality higher and vocational 
 name: Higher Education and Training
 programmes:
 - name: Administration
-- name: Human Resource Development, Planning and Monitoring Coordination
-- name: University Education
-- name: Vocational and Continuing Education and Training
-- name: Skills Development
+  total_budget: 318318.0
 - name: Direct charge against the National Revenue Fund
+  total_budget: 14690000.0
+- name: Human Resource Development, Planning and Monitoring Coordination
+  total_budget: 54843.0
+- name: University Education
+  total_budget: 32844325.0
+- name: Vocational and Continuing Education and Training
+  total_budget: 8515770.0
+- name: Skills Development
+  total_budget: 110699.0
 selected_financial_year: 2015-16
 slug: higher-education-and-training
 sphere:
   name: National
   slug: national
+total_budget: 56533955.0
 treasury_datasets:
   ENE for Vote 15 - Higher Education and Training:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
