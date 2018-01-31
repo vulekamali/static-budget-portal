@@ -37,15 +37,21 @@ intro: "## Vision\n\nThe vision of the Department of Social Development (DSD) is
 name: Social Development
 programmes:
 - name: Administration
-- name: Social Welfare Services
-- name: Children and Families
-- name: Restorative Services
-- name: Development and Research
+  total_budget: 322512.0
+- name: Social Assistance
+  total_budget: 140498691.0
+- name: Social Security Policy and Administration
+  total_budget: 7015500.0
+- name: Welfare Services Policy Development and Implementation Support
+  total_budget: 723322.0
+- name: Social Policy and Integrated Service Delivery
+  total_budget: 377704.0
 selected_financial_year: 2016-17
 slug: social-development
 sphere:
   name: Provincial
   slug: provincial
+total_budget: 148937729.0
 treasury_datasets:
   'EPRE for Vote 13 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

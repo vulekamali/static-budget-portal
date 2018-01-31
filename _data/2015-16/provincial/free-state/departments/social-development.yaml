@@ -38,15 +38,21 @@ intro: "## Vision\n\nA caring and self-reliant society\r\n\r\n\n\n## Mission\n\n
 name: Social Development
 programmes:
 - name: Administration
-- name: Social Welfare Services
-- name: Children and Families
-- name: Restorative Services
-- name: Development and Research
+  total_budget: 297015.0
+- name: Social Assistance
+  total_budget: 130093278.0
+- name: Social Security Policy and Administration
+  total_budget: 6756165.0
+- name: Welfare Services Policy Development and Implementation Support
+  total_budget: 662362.0
+- name: Social Policy and Integrated Service Delivery
+  total_budget: 359820.0
 selected_financial_year: 2015-16
 slug: social-development
 sphere:
   name: Provincial
   slug: provincial
+total_budget: 138168640.0
 treasury_datasets:
   'EPRE for Vote 07 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

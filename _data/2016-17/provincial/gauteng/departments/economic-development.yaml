@@ -57,15 +57,17 @@ intro: "## Vision\n\nA radically transformed, modernised and re-industrialised e
 name: Economic Development
 programmes:
 - name: Administration
-- name: Integrated Economic Development Services
-- name: Trade And Sector Development
-- name: Business Regulation And Governance
-- name: Economic Planning
+  total_budget: 79208.0
+- name: Growth Path and Social Dialogue
+  total_budget: 36008.0
+- name: Investment, Competition and Trade
+  total_budget: 559445.0
 selected_financial_year: 2016-17
 slug: economic-development
 sphere:
   name: Provincial
   slug: provincial
+total_budget: 674661.0
 treasury_datasets:
   'EPRE for Vote 03 : Economic Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

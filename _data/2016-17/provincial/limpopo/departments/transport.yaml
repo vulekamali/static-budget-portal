@@ -46,15 +46,25 @@ intro: "## Vision \n\nTo be a pioneer and leading department at the epi-centre o
 name: Transport
 programmes:
 - name: Administration
-- name: Transport Infrastructure
-- name: Transport Operations
-- name: Transport Regulations
-- name: Community Based Programmes
+  total_budget: 394763.0
+- name: Integrated Transport Planning
+  total_budget: 78954.0
+- name: Rail Transport
+  total_budget: 18985533.0
+- name: Road Transport
+  total_budget: 24525567.0
+- name: Civil Aviation
+  total_budget: 253223.0
+- name: Maritime Transport
+  total_budget: 121733.0
+- name: Public Transport
+  total_budget: 11655390.0
 selected_financial_year: 2016-17
 slug: transport
 sphere:
   name: Provincial
   slug: provincial
+total_budget: 56015163.0
 treasury_datasets:
   'EPRE for Vote 08 : Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

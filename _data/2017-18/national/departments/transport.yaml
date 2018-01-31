@@ -89,18 +89,27 @@ intro: '## Vote purpose
 name: Transport
 programmes:
 - name: Administration
-- name: Integrated Transport Planning
-- name: Rail Transport
-- name: Road Transport
-- name: Civil Aviation
-- name: Maritime Transport
-- name: Public Transport
+  total_budget: 406857.0
 - name: Direct charge against the National Revenue Fund
+  total_budget: 10000.0
+- name: Integrated Transport Planning
+  total_budget: 81663.0
+- name: Rail Transport
+  total_budget: 19320255.0
+- name: Road Transport
+  total_budget: 27128572.0
+- name: Civil Aviation
+  total_budget: 169869.0
+- name: Maritime Transport
+  total_budget: 119692.0
+- name: Public Transport
+  total_budget: 12568272.0
 selected_financial_year: 2017-18
 slug: transport
 sphere:
   name: National
   slug: national
+total_budget: 59805180.0
 treasury_datasets:
   ENE for Vote 35 - Transport:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

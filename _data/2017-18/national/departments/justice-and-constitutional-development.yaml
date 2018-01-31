@@ -52,16 +52,23 @@ intro: "## Vote purpose\n\n_Uphold and protect the Constitution and the rule of 
 name: Justice and Constitutional Development
 programmes:
 - name: Administration
-- name: Court Services
-- name: State Legal Services
-- name: National Prosecuting Authority
-- name: Auxiliary and Associated Services
+  total_budget: 2129281.0
 - name: Direct charge against the National Revenue Fund
+  total_budget: 2140520.0
+- name: Court Services
+  total_budget: 6276828.0
+- name: State Legal Services
+  total_budget: 1221218.0
+- name: National Prosecuting Authority
+  total_budget: 3684311.0
+- name: Auxiliary and Associated Services
+  total_budget: 3475150.0
 selected_financial_year: 2017-18
 slug: justice-and-constitutional-development
 sphere:
   name: National
   slug: national
+total_budget: 18927308.0
 treasury_datasets:
   ENE for Vote 21 - Justice and Constitutional Development:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

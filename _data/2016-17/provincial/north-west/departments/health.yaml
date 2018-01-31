@@ -40,18 +40,23 @@ intro: "## Vision\n\nHealthy self-reliant communities in the North West Province
 name: Health
 programmes:
 - name: Administration
-- name: District Health Services
-- name: Emergency Medical Services
-- name: Provincial Hospital Services
-- name: Central Hospital Services
-- name: Health Science and Training
-- name: Health Care Support Services
-- name: Health Facilities and Maintenance
+  total_budget: 463464.0
+- name: National Health Insurance, Health Planning and Systems Enablement
+  total_budget: 559762.0
+- name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+  total_budget: 16018568.0
+- name: Primary Health Care Services
+  total_budget: 257839.0
+- name: Hospitals, Tertiary Health Services and Human Resource Development
+  total_budget: 19573498.0
+- name: Health Regulation and Compliance Management
+  total_budget: 1690186.0
 selected_financial_year: 2016-17
 slug: health
 sphere:
   name: Provincial
   slug: provincial
+total_budget: 38563317.0
 treasury_datasets:
   'EPRE for Vote 03 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

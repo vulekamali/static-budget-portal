@@ -44,14 +44,19 @@ intro: "## Vision\n\nWe will be the ultimate financial management authority and 
 name: Finance
 programmes:
 - name: Administration
+  total_budget: null
 - name: Sustainable Resource Management
+  total_budget: null
 - name: Asset and Liabilities Management
+  total_budget: null
 - name: Financial Governance
+  total_budget: null
 selected_financial_year: 2016-17
 slug: finance
 sphere:
   name: Provincial
   slug: provincial
+total_budget: null
 treasury_datasets:
   'EPRE for Vote 07 : Finance':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

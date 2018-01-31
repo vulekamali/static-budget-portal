@@ -49,18 +49,23 @@ intro: "## Vision\n\nIncreasing life expectancy through health system effectiven
 name: Health
 programmes:
 - name: Administration
-- name: District Health Services
-- name: Emergency Medical Services
-- name: Provincial Hospital Services
-- name: Central Hospital Services
-- name: Health Science & Training
-- name: Health Care Support Services
-- name: Health Facilities Management
+  total_budget: 512838.0
+- name: National Health Insurance, Health Planning and Systems Enablement
+  total_budget: 735087.0
+- name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+  total_budget: 18278344.0
+- name: Primary Health Care Services
+  total_budget: 264299.0
+- name: Hospitals, Tertiary Health Services and Human Resource Development
+  total_budget: 21108184.0
+- name: Health Regulation and Compliance Management
+  total_budget: 1726971.0
 selected_financial_year: 2017-18
 slug: health
 sphere:
   name: Provincial
   slug: provincial
+total_budget: 42625723.0
 treasury_datasets:
   'EPRE for Vote 05 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
