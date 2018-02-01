@@ -2,45 +2,6 @@
 
 <section class="Intro">
   <h2 class="Intro-title js-tooltips">The national revenue fund, administered by the <a href="http://www.treasury.gov.za/" class="Link">National Treasury</a>, is distributed to these three levels of government according to allocated expenditure.</h2>
-  <ul class="Intro-stats">
-    <li class="Intro-itemWrap">
-      <a class="Intro-item" href="/{{ include.year }}/departments?spheres=national">
-        <span class="Intro-number">41</span>
-        <span class="Intro-text" >National departments</span>
-      </a>
-    </li>
-    <li class="Intro-itemWrap">
-      <a class="Intro-item" href="/{{ include.year }}/departments?spheres=provincial">
-        <span class="Intro-number">128</span>
-        <span class="Intro-text" >Provincial departments</span>
-      </a>
-    </li>
-    <li class="Intro-itemWrap">
-      <span class="Intro-item js-alertTrigger">
-        <span class="Intro-number">257</span>
-        <span class="Intro-text">Metropolitan, district & local Municipalities</span>
-        <div class="Into-alert js-alert">
-          <div class="Intro-alertBox">
-            <div class="Intro-modalCover js-modalBackground"></div>
-            <div class="Intro-content">
-              <div class="Intro-shadowBox">
-                <div class="Intro-alertTitle">Redirect Notice</div>
-                <div class="Intro-alertText">Municipal budget information is available on National Treasury's Municipal Money website.</div>
-                <a href="http://municipalmoney.gov.za" class="Intro-linkWrap">
-                  <span class="Intro-alertLink">Proceed to http://municipalmoney.gov.za</span>
-                </a>
-                <span class="Intro-linkWrap is-close js-close">
-                  <span>{{ icon }}</span>
-                  <span class="Intro-alertLink">Cancel</span>
-                </span>
-              <div class="Intro-triangleWrap">
-                <div class="Intro-triangle"></div>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </span>
-    </li>
-  </ul>
+
+  {% include components/Circles/index.html items=site.data.static.circles year=include.year %}
 </section>

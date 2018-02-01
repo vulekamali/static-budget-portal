@@ -1,0 +1,27 @@
+{% assign svgFloat = '<svg class="Circles-float" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.8 81.4"><path class="Circles-floatFill" d="M.5.3A28.5 28.5 0 0 0 52.4.2s-6.5 20.7-5.5 40.7 2.6 40.3 2.6 40.3a28.6 28.6 0 0 0-47.1-1.6s5.5-26.7 5.5-35.7S.5.3.5.3z"></path><path class="Circles-floatStroke" fill="none" stroke-miterlimit="10" d="M.5.3A28.5 28.5 0 0 0 52.4.2M49.5 81.2a28.6 28.6 0 0 0-47.1-1.6"></path></svg>' %}
+
+<ul class="Circles">
+
+  {% for item in include.items.data %}
+    <li class="Circles-wrap">
+      {% if item.popup %}
+        {% assign finalUrl = '' %}
+        {% assign dataPopup = item.popup | jsonify %}
+        {% assign popupModifier = ' js-popup' %}
+      {% else %}
+        {% assign finalUrl = '/' | append: include.year | append: item.url %}
+      {% endif %}
+
+      {% if item != include.items.data.first %}
+        {{ svgFloat }}
+      {% endif %}
+
+      <a class="Circles-item{{ item.modifiers }}{{ popupModifier }}" data-popup='{{ dataPopup }}' href="{{ finalUrl }}">
+        <div class="Circles-number">{{ item.number }}</div>
+        <div class="Circles-text">{{ item.text }}</div>
+      </a>
+
+    </li>
+  {% endfor %}
+
+</ul>

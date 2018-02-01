@@ -1,0 +1,66 @@
+$mobile-break: 750px;
+
+.HeaderBar {
+  background: white;
+  display: table;
+  width: 100%;
+  padding: 0 10px;
+
+  @media screen and (min-width: $mobile-break) {
+    display: block;
+    border-bottom: 20px solid #3f3f3f;
+  }
+}
+
+.HeaderBar-wrap {
+  display: table-row;
+
+  @media screen and (min-width: $mobile-break) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+}
+
+.HeaderBar-navBarWrap {
+  padding: 20px;
+  display: table-cell;
+  vertical-align: middle;
+
+  @media screen and (min-width: $mobile-break) {
+    display: block;
+    width: 100%;
+    order: 1;
+    padding: 0;
+  }
+}
+
+.HeaderBar-logoWrap {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+
+  @media screen and (min-width: $mobile-break) {
+    display: block;
+    width: 240px;
+    padding: 30px;
+  }
+}
+
+.HeaderBar-searchWrap {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 20px;
+
+  @media screen and (min-width: $mobile-break) {
+    display: block;
+    flex-grow: 1;
+    padding: 30px 0;
+  }
+}
+
+.HeaderBar-logoTitle {
+  font-weight: bold;
+}

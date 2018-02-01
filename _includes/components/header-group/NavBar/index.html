@@ -1,0 +1,90 @@
+{% assign icon = '<svg class="NavBar-icon" width="0" height="0" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 93.2" overflow="scroll"><title>Homepage</title><path d="M83 27V9.3c0-3.2-2.6-5.7-5.7-5.7-3.2 0-5.7 2.6-5.7 5.7v6L60.3 4.2c-5.6-5.6-15.3-5.6-20.8 0L1.7 42c-2.2 2.2-2.2 6 0 8 2.2 2.3 6 2.3 8 0l38-37.7c1-1.2 3.3-1.2 4.5 0L90 50c1 1.2 2.6 1.8 4 1.8 1.5 0 3-.6 4-1.7 2.2-2 2.2-5.8 0-8L83 27z"></path><path d="M52 23c-1.2-1-3-1-4 0L14.6 56.5c-.5.5-.8 1.2-.8 2v24.3C14 88.4 18.4 93 24 93h16.5V67.5h18.6V93h16.5C81.4 93 86 88.4 86 82.7V58.4c0-.7-.3-1.5-.8-2L52 23zm0 0"></path></svg>' %}
+
+<nav class="NavBar">
+  <div class="NavBar-mobileWrap js-mobileTrigger">
+    <svg class="NavBar-mobileTrigger" width="0" height="0" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+      <path d="M5.8 19.7h88.4c3.2 0 5.8-2.6 5.8-5.9 0-3.3-2.6-5.9-5.8-5.9H5.8A5.8 5.8 0 0 0 0 13.8c0 3.3 2.6 5.9 5.8 5.9zm88.4 24.4H5.8A5.8 5.8 0 0 0 0 50c0 3.3 2.6 5.9 5.8 5.9h88.4c3.2 0 5.8-2.6 5.8-5.9 0-3.3-2.6-5.9-5.8-5.9zm0 36.2H5.8A5.9 5.9 0 0 0 0 86.2c0 3.3 2.6 5.9 5.8 5.9h88.4c3.2 0 5.8-2.6 5.8-5.9 0-3.3-2.6-5.9-5.8-5.9zm0 0"></path>
+    </svg>
+  </div>
+  <h2 class="u-sReadOnly">Navigate to a section on this site:</h2>
+  <div class="NavBar-modalCover js-modalCover"></div>
+  <div class="NavBar-container js-mobileShow">
+    <div class="NavBar-wrap">
+      <div class="NavBar-expand js-closeIcon" aria-hidden="">
+        <div class="NavBar-expandText">Hide Menu</div>
+        <div class="NavBar-expandIcon"></div>
+      </div>
+      <ul class="NavBar-list">
+
+        {% for item in include.items %}
+
+        {% if include.active == 'about' %}
+          {% assign aboutCurrentClass = ' is-currentPage js-box' %}
+        {% else %}
+          {% assign aboutCurrentClass = '' %}
+        {% endif %}
+
+        {% if include.active == 'learning-centre' %}
+          {% assign lcCurrentClass = ' is-currentPage js-box' %}
+        {% else %}
+          {% assign lcCurrentClass = '' %}
+        {% endif %}
+
+          {% if item.id == include.active %}
+            {% assign activeClass = ' is-active' %}
+            {% if include.nested == false %}
+              {% assign tag = 'span' %}
+            {% endif %}
+          {% else %}
+            {% assign activeClass = '' %}
+            {% assign tag = 'a' %}
+          {% endif %}
+            
+          {% if include.active == 'about' %}
+            {% assign currentClass = ' is-currentPage js-box' %}
+          {% else %}
+            {% assign currentClass = '' %}
+          {% endif %}
+
+          {% if item.id == 'about' %}
+            {% assign hasSubLinks = ' has-subLinks' %}
+          {% else %}
+            {% assign hasSubLinks = '' %}
+          {% endif %}
+
+          {% if item.align == 'right' %}
+            {% assign align = ' is-right' %}
+          {% else %}
+            {% assign align = '' %}
+          {% endif %}
+
+          <li class="NavBar-item{{ align }}">
+            <{{ tag }} 
+              class="NavBar-link{{ activeClass }}{{ hasSubLinks }}"
+              href="/{{ include.year }}/{{ item.url }}"
+            >
+
+              {% if item.id == 'home' %}
+                <span class="NavBar-iconWrap">{{ icon }}</span>
+                <span class="NavBar-text is-mobileOnly">Home</span>
+              {% else %}
+                <span class="NavBar-text">{{ item.title }}</span>
+              {% endif %}
+
+            </{{ tag }}>
+
+            {% if item.id == 'about' %}
+              {% include components/header-group/SubLinks/index.html type="about" modifiers=aboutCurrentClass year=include.year %}
+            {% endif %}
+
+            {% if item.id == 'learning-centre' %}
+              {% include components/header-group/SubLinks/index.html type="learning-centre" modifiers=lcCurrentClass year=include.year currentPage=include.title %}
+            {% endif %}
+
+          </li>
+
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>
