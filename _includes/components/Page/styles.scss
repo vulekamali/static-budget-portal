@@ -27,13 +27,10 @@
 
 .Page-content {
   padding-top: 144px;
+  background-color: #f0f0f0;
 
   @media screen and (min-width: 750px) {
     padding-top: 0;
-  }
-
-  &.is-darkBackground {
-    background-color: #f9f9f9;
   }
 }
 

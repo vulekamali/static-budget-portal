@@ -12,10 +12,10 @@
 @import 'utilities/scss/utility-classes/u-listReset';
 @import 'utilities/scss/utility-classes/u-listItemReset';
 @import 'components/Page/styles';
-@import 'components/Search/styles';
-@import 'components/YearSelect/styles';
+@import 'components/header-group/Search/styles';
+@import 'components/header-group/YearSelect/styles';
 @import 'components/Footer/styles';
-@import 'components/NavBar/styles';
+@import 'components/header-group/NavBar/styles';
 @import 'components/RelatedBox/styles';
 @import 'components/Intro/styles';
 @import 'components/DeptSearch/styles';
@@ -26,7 +26,7 @@
 @import 'components/Programmes/styles';
 @import 'components/Share/styles';
 @import 'components/PseudoSelect/styles';
-@import 'components/Disclaimer/styles';
+@import 'components/header-group/Disclaimer/styles';
 @import 'components/Progress/styles';
 @import 'components/Stages/styles';
 @import 'components/About/styles';
@@ -37,3 +37,9 @@
 @import 'components/FileTypes/styles';
 @import 'components/CsoDirectory/styles';
 @import 'components/CsoLinks/styles';
+@import 'components/Circles/styles';
+@import 'components/Button/styles';
+@import 'components/Input/styles';
+@import 'components/Icon/styles';
+@import 'components/header-group/SubLinks/styles';
+@import 'components/header-group/HeaderBar/styles';

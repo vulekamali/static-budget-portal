@@ -1,3 +1,7 @@
 export default function analyticsEvent(...args) {
-  return window.ga(...args);
+  try {
+    return window.ga(...args);
+  } catch (err) {
+    console.log(err);
+  }
 }

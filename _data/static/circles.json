@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "url": "/departments?spheres=national",
+      "number": "41",
+      "text": "National departments",
+      "modifiers": " is-positive"
+    },
+    {
+      "url": "/departments?spheres=provincial",
+      "number": "128",
+      "text": "Provincial departments",
+      "modifiers": " is-negative"
+    },
+    {
+      "number": "257",
+      "text": "Metropolitan, district & local municipalities",
+      "modifiers": " is-prominent",
+      "popup": {
+        "title": "111",
+        "description": "222",
+        "button": "444"
+      }
+    }
+  ]
+}

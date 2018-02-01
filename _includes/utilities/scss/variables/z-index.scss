@@ -50,4 +50,8 @@
   @if $name == 'Tooltip-boxWrap--mobile' {
     @return 100;
   }
+
+  @if $name == 'Search--mobile' {
+    @return 110;
+  }
 }
