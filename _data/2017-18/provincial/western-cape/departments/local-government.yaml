@@ -1,4 +1,13 @@
 contributed_datasets:
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
@@ -60,19 +69,18 @@ intro: "## Vision\n\nAn efficient and dynamic team that enables well governed mu
 name: Local Government
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 41652000.0
 - name: Local Governance
-  total_budget: null
+  total_budget: 134382000.0
 - name: Development and Planning
-  total_budget: null
+  total_budget: 73171000.0
 - name: Traditional Institutional Management
-  total_budget: null
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: local-government
 sphere:
   name: Provincial
   slug: provincial
-total_budget: null
 treasury_datasets:
   'EPRE for Vote 14 : Local Government':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

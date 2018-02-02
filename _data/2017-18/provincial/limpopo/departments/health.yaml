@@ -1,4 +1,10 @@
-contributed_datasets: null
+contributed_datasets:
+- contributor: Public Service Accountability Monitor
+  name: "Emergency Medical Services in the Eastern Cape 2005 \u2013 2015"
+  url_path: /2017-18/datasets/emergency-medical-services-in-the-eastern-cape-2005-2015
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-health-2014-15
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -52,24 +58,27 @@ intro: "## Vision\n\nA long and healthy life for people in Limpopo\r\n\r\n\n\n##
   \ non-personnel health services).\r\n"
 name: Health
 programmes:
-- name: Administration
-  total_budget: 512838.0
-- name: National Health Insurance, Health Planning and Systems Enablement
-  total_budget: 735087.0
-- name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
-  total_budget: 18278344.0
-- name: Primary Health Care Services
-  total_budget: 264299.0
-- name: Hospitals, Tertiary Health Services and Human Resource Development
-  total_budget: 21108184.0
-- name: Health Regulation and Compliance Management
-  total_budget: 1726971.0
+- name: ADMINISTRATION
+  total_budget: 306248000.0
+- name: DISTRICT HEALTH SERVICES
+  total_budget: 11421927000.0
+- name: EMERGENCY  MADICAL SERVICES
+  total_budget: 728878000.0
+- name: PROVINCIAL HOSPITAL SERVICES
+  total_budget: 2364444000.0
+- name: CENTRAL HOSPITAL SERVICES
+  total_budget: 1768187000.0
+- name: HEALTH SCIENCES AND TRAINING
+  total_budget: 660478000.0
+- name: HEALTH CARE SUPPORT SERVICES
+  total_budget: 140445000.0
+- name: HEALTH FACILITIES MANAGEMENT
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: health
 sphere:
   name: Provincial
   slug: provincial
-total_budget: 42625723.0
 treasury_datasets:
   'EPRE for Vote 07 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

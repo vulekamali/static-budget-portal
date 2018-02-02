@@ -1,4 +1,13 @@
 contributed_datasets:
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
@@ -44,21 +53,20 @@ intro: "## Vision\n\nIntegrated, responsive and developmental local governance\r
 name: Cooperative Governance and Traditional Affairs
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 139703000.0
 - name: Local Governance
-  total_budget: null
+  total_budget: 122653000.0
 - name: Development and Planning
-  total_budget: null
+  total_budget: 91706000.0
 - name: Traditional Institutional Management
-  total_budget: null
+  total_budget: 42818000.0
 - name: House of Traditional Leaders
-  total_budget: null
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: cooperative-governance-and-traditional-affairs
 sphere:
   name: Provincial
   slug: provincial
-total_budget: null
 treasury_datasets:
   'EPRE for Vote 08 : Cooperative Governance and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

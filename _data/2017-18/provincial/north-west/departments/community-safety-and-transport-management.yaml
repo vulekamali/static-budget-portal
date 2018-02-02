@@ -1,4 +1,13 @@
 contributed_datasets:
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
@@ -57,19 +66,18 @@ intro: "## Vision\n\nSafe Communities and effective transport services.\r\n\r\n\
 name: Community Safety and Transport Management
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 316538000.0
 - name: Provincial Secretariat for Police Service
-  total_budget: null
+  total_budget: 48690000.0
 - name: Transport Operations
-  total_budget: null
+  total_budget: 1068334000.0
 - name: Transport Regulations
-  total_budget: null
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: community-safety-and-transport-management
 sphere:
   name: Provincial
   slug: provincial
-total_budget: null
 treasury_datasets:
   'EPRE for Vote 05 : Community Safety and Transport Management':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
