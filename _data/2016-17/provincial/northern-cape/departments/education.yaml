@@ -55,26 +55,25 @@ intro: "## Vision\n\nA transformed quality education system.\r\n\r\n\n\n## Missi
   \ pre-Grade R learners."
 name: Education
 programmes:
-- name: Administration
-  total_budget: null
-- name: Public Ordinary School Education
-  total_budget: null
-- name: Independent School Subsidy
-  total_budget: null
-- name: Public Special School Education
-  total_budget: null
-- name: Early Childhood Development
-  total_budget: null
-- name: Infrastructure Development
-  total_budget: null
-- name: Examination And Education Related Services
-  total_budget: null
+- name: ADMINISTRATION
+  total_budget: 608470000.0
+- name: PUBLIC ORDINARY SCHOOL EDUCATION
+  total_budget: 3980547000.0
+- name: INDEPENDENT SCHOOL SUBSIDY
+  total_budget: 8725000.0
+- name: PUBLIC SPECIAL SCHOOL EDUCATION
+  total_budget: 116251000.0
+- name: EARLY CHILDHOOD DEVELOPMENT
+  total_budget: 95400000.0
+- name: INFRASTRUCTURE DEVELOPMENT
+  total_budget: 497309000.0
+- name: EXAMINATION AND EDUCATION RELATED SERVICES
+  total_budget: 0.0
 selected_financial_year: 2016-17
 slug: education
 sphere:
   name: Provincial
   slug: provincial
-total_budget: null
 treasury_datasets:
   'EPRE for Vote 04 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

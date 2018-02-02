@@ -48,23 +48,26 @@ intro: "## Vision\n\nA quality health service to the people of the Eastern Cape 
 name: Health
 programmes:
 - name: Administration
-  total_budget: 457078.0
-- name: National Health Insurance, Health Planning and Systems Enablement
-  total_budget: 587807.0
-- name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
-  total_budget: 14442144.0
-- name: Primary Health Care Services
-  total_budget: 225005.0
-- name: Hospitals, Tertiary Health Services and Human Resource Development
-  total_budget: 19159065.0
-- name: Health Regulation and Compliance Management
-  total_budget: 1596919.0
+  total_budget: 625488000.0
+- name: District Health Services
+  total_budget: 9338285000.0
+- name: Emergency Medical Services
+  total_budget: 971832000.0
+- name: Provincial Hospitals Services
+  total_budget: 4691672000.0
+- name: Central Hospital Services
+  total_budget: 803770000.0
+- name: Health Sciences and Training
+  total_budget: 751910000.0
+- name: Health Care Support Services
+  total_budget: 102650000.0
+- name: Health Facilities Management
+  total_budget: 0.0
 selected_financial_year: 2015-16
 slug: health
 sphere:
   name: Provincial
   slug: provincial
-total_budget: 36468018.0
 treasury_datasets:
   'EPRE for Vote 03 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

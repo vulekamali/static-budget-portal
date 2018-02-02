@@ -52,23 +52,26 @@ intro: "## Vision\n\nA long and healthy life for people in Limpopo\r\n\r\n\n\n##
 name: Health
 programmes:
 - name: Administration
-  total_budget: 463464.0
-- name: National Health Insurance, Health Planning and Systems Enablement
-  total_budget: 559762.0
-- name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
-  total_budget: 16018568.0
-- name: Primary Health Care Services
-  total_budget: 257839.0
-- name: Hospitals, Tertiary Health Services and Human Resource Development
-  total_budget: 19573498.0
-- name: Health Regulation and Compliance Management
-  total_budget: 1690186.0
+  total_budget: 281425000.0
+- name: District Health Services
+  total_budget: 10250218000.0
+- name: Emergency  Madical Services
+  total_budget: 686647000.0
+- name: Provincial Hospital Services
+  total_budget: 2138443000.0
+- name: Central Hospital Services
+  total_budget: 1593372000.0
+- name: Health Sciences And Training
+  total_budget: 571492000.0
+- name: Health Care Support Services
+  total_budget: 113758000.0
+- name: Health Facilities Management
+  total_budget: 0.0
 selected_financial_year: 2016-17
 slug: health
 sphere:
   name: Provincial
   slug: provincial
-total_budget: 38563317.0
 treasury_datasets:
   'EPRE for Vote 07 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

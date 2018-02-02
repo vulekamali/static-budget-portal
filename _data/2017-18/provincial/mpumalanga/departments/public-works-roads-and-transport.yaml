@@ -1,4 +1,13 @@
 contributed_datasets:
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
@@ -47,21 +56,20 @@ intro: "## Vision\n\nAn integrated transport system and infrastructure that prom
 name: Public Works, Roads and Transport
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 275057000.0
 - name: Public Works Infrastructure
-  total_budget: null
+  total_budget: 799428000.0
 - name: Transport Infrastructure
-  total_budget: null
+  total_budget: 2421470000.0
 - name: Transport Operations
-  total_budget: null
+  total_budget: 1199817000.0
 - name: Community Based Programmes
-  total_budget: null
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: public-works-roads-and-transport
 sphere:
   name: Provincial
   slug: provincial
-total_budget: null
 treasury_datasets:
   'EPRE for Vote 08 : Public Works, Roads and Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

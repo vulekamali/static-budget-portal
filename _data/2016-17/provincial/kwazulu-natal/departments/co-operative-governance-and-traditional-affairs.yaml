@@ -57,20 +57,19 @@ intro: "## Vision\n\nThe vision of the Department of Co-operative Governance and
   \ and\r\nachievement of government\u2019s priorities as spelt out in the MTSF."
 name: Co-operative Governance and Traditional Affairs
 programmes:
-- name: Administration
-  total_budget: null
-- name: Local Governance
-  total_budget: null
-- name: Development and Planning
-  total_budget: null
-- name: Traditional Institutional Management
-  total_budget: null
+- name: 1. Administration
+  total_budget: 367321000.0
+- name: 2. Local Governance
+  total_budget: 249953000.0
+- name: 3. Development and Planning
+  total_budget: 643650000.0
+- name: 4. Traditional Institutional Management
+  total_budget: 0.0
 selected_financial_year: 2016-17
 slug: co-operative-governance-and-traditional-affairs
 sphere:
   name: Provincial
   slug: provincial
-total_budget: null
 treasury_datasets:
   'EPRE for Vote 11 : Co-operative Governance and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

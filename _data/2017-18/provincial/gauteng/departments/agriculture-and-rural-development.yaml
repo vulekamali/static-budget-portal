@@ -42,18 +42,17 @@ intro: "## Vision\n\nAn economically transformed and agricultural sector and sus
   \ of veterinary services in the province."
 name: Agriculture and Rural Development
 programmes:
-- name: Administration
-  total_budget: null
-- name: Agriculture And Rural Development
-  total_budget: null
-- name: Environmental Affairs
-  total_budget: null
+- name: ADMINISTRATION
+  total_budget: 189016000.0
+- name: AGRICULTURE AND RURAL DEVELOPMENT
+  total_budget: 487848000.0
+- name: ENVIRONMENTAL AFFAIRS
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: agriculture-and-rural-development
 sphere:
   name: Provincial
   slug: provincial
-total_budget: null
 treasury_datasets:
   'EPRE for Vote 11 : Agriculture and Rural Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

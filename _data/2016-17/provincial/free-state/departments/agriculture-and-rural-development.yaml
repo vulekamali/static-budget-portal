@@ -42,28 +42,27 @@ intro: "## Vision\n\nThe vision of the Free State Department of Agriculture and 
   \n\r\n* Passion\r\n\r\n* Confidentiality"
 name: Agriculture and Rural Development
 programmes:
-- name: Administration
-  total_budget: null
-- name: Sustainable Resource Management
-  total_budget: null
-- name: Farmer Support And Development
-  total_budget: null
-- name: Veterinary Services
-  total_budget: null
-- name: Technology,Research And Development Services
-  total_budget: null
-- name: Agricultural Economics
-  total_budget: null
-- name: Structured Agricultural Training
-  total_budget: null
-- name: Rural Development
-  total_budget: null
+- name: ADMINISTRATION
+  total_budget: 155462000.0
+- name: SUSTAINABLE RESOURCE MANAGEMENT
+  total_budget: 32635000.0
+- name: FARMER SUPPORT AND DEVELOPMENT
+  total_budget: 395790000.0
+- name: VETERINARY SERVICES
+  total_budget: 57174000.0
+- name: TECHNOLOGY,RESEARCH AND DEVELOPMENT SERVICES
+  total_budget: 53811000.0
+- name: AGRICULTURAL ECONOMICS
+  total_budget: 10262000.0
+- name: STRUCTURED AGRICULTURAL TRAINING
+  total_budget: 21458000.0
+- name: RURAL DEVELOPMENT
+  total_budget: 0.0
 selected_financial_year: 2016-17
 slug: agriculture-and-rural-development
 sphere:
   name: Provincial
   slug: provincial
-total_budget: null
 treasury_datasets:
   'EPRE for Vote 11 : Agriculture and Rural Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

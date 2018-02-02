@@ -1,4 +1,14 @@
-contributed_datasets: null
+contributed_datasets:
+- contributor: Centre for Child Law
+  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
+  url_path: /2017-18/datasets/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+- contributor: Centre for Child Law
+  name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
+    Primary School case'
+  url_path: /2017-18/datasets/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-education-2016-17
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -59,25 +69,24 @@ intro: "## Vision\n\nAdvancing excellence in quality education provision\r\n\r\n
 name: Education
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 1282005000.0
 - name: Public Ordinary Schools Education
-  total_budget: null
+  total_budget: 15697307000.0
 - name: Independent Schools Subsidies
-  total_budget: null
+  total_budget: 21000000.0
 - name: Public Special Schools Education
-  total_budget: null
+  total_budget: 293303000.0
 - name: Early Childhood Development
-  total_budget: null
+  total_budget: 228373000.0
 - name: Infrastructure Development
-  total_budget: null
+  total_budget: 1165781000.0
 - name: Examination and Education Related Services
-  total_budget: null
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: education
 sphere:
   name: Provincial
   slug: provincial
-total_budget: null
 treasury_datasets:
   'EPRE for Vote 07 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -1,4 +1,13 @@
 contributed_datasets:
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
@@ -51,27 +60,20 @@ intro: "## Vision\n\nTo be a pioneer and leading department at the epi-centre of
 name: Transport
 programmes:
 - name: Administration
-  total_budget: 406857.0
-- name: Direct charge against the National Revenue Fund
-  total_budget: 10000.0
-- name: Integrated Transport Planning
-  total_budget: 81663.0
-- name: Rail Transport
-  total_budget: 19320255.0
-- name: Road Transport
-  total_budget: 27128572.0
-- name: Civil Aviation
-  total_budget: 169869.0
-- name: Maritime Transport
-  total_budget: 119692.0
-- name: Public Transport
-  total_budget: 12568272.0
+  total_budget: 578308000.0
+- name: Transport Infrastructure
+  total_budget: 0.0
+- name: Transport Operations
+  total_budget: 845025000.0
+- name: Transport Regulations
+  total_budget: 539054000.0
+- name: Community Based Programmes
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: transport
 sphere:
   name: Provincial
   slug: provincial
-total_budget: 59805180.0
 treasury_datasets:
   'EPRE for Vote 08 : Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
