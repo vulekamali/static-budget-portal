@@ -1,4 +1,13 @@
 contributed_datasets:
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
@@ -69,23 +78,22 @@ intro: "## Vote purpose\n\n_Formulate energy policies, regulatory frameworks and
 name: Energy
 programmes:
 - name: Administration
-  total_budget: 239541.0
+  total_budget: 239541000.0
 - name: Energy Policy and Planning
-  total_budget: 46668.0
+  total_budget: 46668000.0
 - name: Petroleum and Petroleum Products Regulation
-  total_budget: 81828.0
+  total_budget: 81828000.0
 - name: Electrification and Energy Programme and Project Management
-  total_budget: 6184028.0
+  total_budget: 6184028000.0
 - name: Nuclear Energy
-  total_budget: 786875.0
+  total_budget: 786875000.0
 - name: Clean Energy
-  total_budget: 774510.0
+  total_budget: 774510000.0
 selected_financial_year: 2017-18
 slug: energy
 sphere:
   name: National
   slug: national
-total_budget: 8113450.0
 treasury_datasets:
   ENE for Vote 26 - Energy:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

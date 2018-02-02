@@ -1,4 +1,13 @@
 contributed_datasets:
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
@@ -51,23 +60,22 @@ intro: "## Vote purpose\n\n_Improve cooperative governance across the three sphe
 name: Cooperative Governance and Traditional Affairs
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 247296000.0
 - name: Regional and Urban Development and Legislative Support
-  total_budget: null
+  total_budget: 210261000.0
 - name: Institutional Development
-  total_budget: null
+  total_budget: 57372755000.0
 - name: National Disaster Management Centre
-  total_budget: null
+  total_budget: 521904000.0
 - name: Local Government Support and Intervention Management
-  total_budget: null
+  total_budget: 16366403000.0
 - name: Community Work Programme
-  total_budget: null
+  total_budget: 3695866000.0
 selected_financial_year: 2017-18
 slug: cooperative-governance-and-traditional-affairs
 sphere:
   name: National
   slug: national
-total_budget: null
 treasury_datasets:
   ENE for Vote 04 - Cooperative Governance and Traditional Affairs:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
