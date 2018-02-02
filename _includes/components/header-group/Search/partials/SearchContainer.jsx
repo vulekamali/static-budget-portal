@@ -38,7 +38,7 @@ export default class SearchContainer extends Component {
 
   /**
    * Debounces setting the focus state of the search input (and subsequently the dropdown) by 500 miliseconds. This means that the search only closes if the mouse has left it for a minimum of 500 miliseconds.
-   * 
+   *
    * @param {boolean} value - Whether you want to set the focus on the search input to `true` or `false`.
    */
   setFocus(value) {
@@ -49,11 +49,12 @@ export default class SearchContainer extends Component {
    * Sends a HTTP get request to CKAN that checks if request returns a 200 or whether CKAN returns an error, if so resolves an JavaScript object. It also then logs these events retrospectively to Google Analytics (note the body reponse in an error is maxed at 500 characters). Once fetch is resolved it return an object that contains all the items capped at 10 (under `itemsArray`) and the amount in the CKAN database (under `count`).
    *
    * @param {string} newKeywords - The keywords that should be used to find suggested items. If not included the `currentKeywords` value in the state object will be used.
-   * 
+   *
    * @returns {*} - Returns a promise.
    */
   sendGetRequest(newKeywords = this.state.keywords) {
-    const requestApi = this.props.requestOverride || `https://data.vulekamali.gov.za/api/3/action/package_search?q=${newKeywords}&start=0&rows=10&fq=+organization:national-treasury+vocab_financial_years:${this.props.selectedYear}`;
+    const datasetPackagesQueryUrl = `https://data.vulekamali.gov.za/api/3/action/package_search?q=${newKeywords}&start=0&rows=10&fq=+organization:national-treasury+vocab_financial_years:${this.props.selectedYear}+extras_department_name_slug:[* TO *]+extras_geographic_region_slug:[* TO *]`;
+    const requestApi = this.props.requestOverride || datasetPackagesQueryUrl;
 
 
     return new Promise((resolve, reject) => {
@@ -95,8 +96,8 @@ export default class SearchContainer extends Component {
   }
 
   /**
-   * The wrapper method that executes the HTTP get request (via `this.sendGetRequest`) and sets the UI state accordingly. Note that method logs to the console an error under `console.warn` instead of throwing a traditional error. This is gracefully fail the request in the UI and to prevent an error from unwinding the stack should the HTTP request fail. 
-   * 
+   * The wrapper method that executes the HTTP get request (via `this.sendGetRequest`) and sets the UI state accordingly. Note that method logs to the console an error under `console.warn` instead of throwing a traditional error. This is gracefully fail the request in the UI and to prevent an error from unwinding the stack should the HTTP request fail.
+   *
    * @param {string} newKeywords - The keywords that should be used to find suggested items. If not included the `currentKeywords` value in the state object will be used.
    */
   findSuggestions(newKeywords) {
@@ -118,7 +119,7 @@ export default class SearchContainer extends Component {
           .catch((err) => {
             this.setState({ searching: false });
             this.setState({ error: true });
-            console.warn(err); // eslint-disable-line no-console 
+            console.warn(err); // eslint-disable-line no-console
           });
       };
 
@@ -161,4 +162,3 @@ SearchContainer.defaultProps = {
   searchParam: '',
   requestOverride: null,
 };
-

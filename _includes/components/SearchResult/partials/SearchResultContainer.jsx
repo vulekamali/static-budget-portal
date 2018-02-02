@@ -21,10 +21,10 @@ export default class SearchResultsContainer extends Component {
   }
 
   componentDidMount() {
-    const url = `https://data.vulekamali.gov.za/api/3/action/package_search?q=${this.props.search}&start=0&rows=999&fq=+organization:national-treasury+vocab_financial_years:${this.props.selectedYear}`;
+    const datasetPackagesQueryUrl = `https://data.vulekamali.gov.za/api/3/action/package_search?q=${this.props.search}&start=0&rows=999&fq=+organization:national-treasury+vocab_financial_years:${this.props.selectedYear}+extras_department_name_slug:[* TO *]+extras_geographic_region_slug:[* TO *]`;
 
     const request = new Promise((resolve, reject) => {
-      fetch(url)
+      fetch(datasetPackagesQueryUrl)
         .then((response) => {
           if (!response.ok) {
             reject(response);
@@ -82,4 +82,3 @@ export default class SearchResultsContainer extends Component {
     );
   }
 }
-
