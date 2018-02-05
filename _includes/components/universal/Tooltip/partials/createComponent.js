@@ -2,7 +2,6 @@
 import closeIcon from './closeIcon.js';
 
 export default function createComponent(year, title, description, content) {
-
   return `<span class="Tooltip js-hook">
     <div class="Tooltip-trigger js-trigger">
       ${content}
@@ -26,7 +25,7 @@ export default function createComponent(year, title, description, content) {
                 </span>
               </span>
 
-              <a class="Tooltip-linkWrap" href="http://localhost:4000/${year}/glossary">
+              <a class="Tooltip-linkWrap" href="/${year}/glossary">
                 <div class="Tooltip-link">View glossary</div>
               </a>
             </div>

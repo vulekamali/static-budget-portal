@@ -18,14 +18,14 @@ layout: page-shell
     <main class="Page-main">
 
       {% if page_data.intro %}
-        <div class="Page-blurb js-tooltips">
+        <div class="Page-blurb js-tooltips" data-year="{{ page.financial_year }}">
           <h2>About this dataset</h2>
           {{ page_data.intro | markdownify }}
         </div>
       {% endif %}
 
       {% if page_data.methodology %}
-        <div class="Page-blurb js-tooltips">
+        <div class="Page-blurb js-tooltips" data-year="{{ page.financial_year }}">
           <h2>Methodology Used in Gathering and Analysis</h2>
           {{ page_data.methodology | markdownify }}
         </div>

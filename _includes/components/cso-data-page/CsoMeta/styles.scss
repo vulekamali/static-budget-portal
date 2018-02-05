@@ -11,18 +11,6 @@
   }
 }
 
-.CsoMeta-icon {
-  width: 25px;
-  height: 25px;
-}
-
-.CsoMeta-iconWrap {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  fill: #4a4a4a;
-}
-
 .CsoMeta-title {
   font-size: 18px;
   line-height: 1.44;
@@ -119,13 +107,8 @@
 
   &--icon {
     padding-top: 7px;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-
-    &:hover {
-      background: darken(white, 5%);
-    }
+    display: inline-block;
+    width: auto;
   }
 }
 

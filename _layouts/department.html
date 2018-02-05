@@ -17,9 +17,9 @@ layout: page-shell
         <div class="Page-title">{{ page_data.government.name }} Department: {{ page_data.name }}</div>
       {% endif %}
 
-      <div class="Page-blurb js-tooltips">{{ page_data.intro  | markdownify }}</div>
+      <div class="Page-blurb js-tooltips" data-year="{{ page.financial_year }}">{{ page_data.intro  | markdownify }}</div>
 
-    <div class="Page-blurb js-tooltips">{{ page_data.intro  | markdownify }}</div>
+    <div class="Page-blurb js-tooltips" data-year="{{ page.financial_year }}">{{ page_data.intro  | markdownify }}</div>
 
     <div class="Page-section">
       {% include components/department-page/Programmes/index.html programmes=page_data.programmes %}
@@ -33,14 +33,9 @@ layout: page-shell
           <div class="Page-csoLinks">
             {% include components/department-page/CsoLinks/index.html resources=page_data.contributed_datasets %}
           </div>
+
+          {% include components/department-page/Resources/index.html resources=page_data.resources %}
       </div>
 
-    </main>
-    <aside class="Page-sidebar">
-        {% include components/department-page/Share/index.html %}
-        <div class="Page-smallSection">
-            {% include components/department-page/Resources/index.html resources=page_data.resources %}
-        </div>
-    </aside>
   </div>
 </div>

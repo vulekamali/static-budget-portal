@@ -9,7 +9,7 @@ layout: page-shell
     <div class="HomeLayout">
 
       <div class="HomeLayout-main">
-        <span class="HomeLayout-title js-tooltips">The national revenue fund, administered by the National Treasury,  is distributed to these three levels of government.</span>
+        <span class="HomeLayout-title js-tooltips" data-year="{{ page.financial_year }}">The national revenue fund, administered by the National Treasury,  is distributed to these three levels of government.</span>
 
         <div>
           {% include components/homepage/Circles/index.html year=page.financial_year items=site.data.static.circles %}
