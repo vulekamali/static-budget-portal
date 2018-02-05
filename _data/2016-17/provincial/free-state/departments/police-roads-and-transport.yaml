@@ -47,11 +47,16 @@ intro: "## Vision\n\nContribute towards the creation of a prosperous Free State 
   \ the provincial road network\r\n\r\n* Security management for departmental buildings"
 name: Police, Roads and Transport
 programmes:
-- name: Administration
-- name: Provincial Secretariat For Police Services
-- name: Transport Operations
-- name: Transport Regulations
-- name: Transport Infrastructure
+- name: ADMINISTRATION
+  total_budget: 258852000.0
+- name: PROVINCIAL SECRETARIAT FOR POLICE SERVICES
+  total_budget: 23674000.0
+- name: TRANSPORT OPERATIONS
+  total_budget: 320631000.0
+- name: TRANSPORT REGULATIONS
+  total_budget: 332634000.0
+- name: TRANSPORT INFRASTRUCTURE
+  total_budget: 0.0
 selected_financial_year: 2016-17
 slug: police-roads-and-transport
 sphere:

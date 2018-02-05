@@ -1,4 +1,13 @@
 contributed_datasets:
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
@@ -56,11 +65,16 @@ intro: "## Vision\n\nThe department\u2019s vision is: Prosperity through mobilit
   \ of hazardous locations and the registration and licensing of vehicles."
 name: Transport
 programmes:
-- name: Administration
-- name: Transport Infrastructure
-- name: Transport Operations
-- name: Transport Regulation
-- name: Community Based Programme
+- name: 1. Administration
+  total_budget: 335052000.0
+- name: 2. Transport Infrastructure
+  total_budget: 7177883000.0
+- name: 3. Transport Operations
+  total_budget: 1437403000.0
+- name: 4. Transport Regulation
+  total_budget: 861447000.0
+- name: 5. Community Based Programme
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: transport
 sphere:

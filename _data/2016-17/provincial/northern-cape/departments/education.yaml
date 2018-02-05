@@ -55,13 +55,20 @@ intro: "## Vision\n\nA transformed quality education system.\r\n\r\n\n\n## Missi
   \ pre-Grade R learners."
 name: Education
 programmes:
-- name: Administration
-- name: Public Ordinary School Education
-- name: Independent School Subsidy
-- name: Public Special School Education
-- name: Early Childhood Development
-- name: Infrastructure Development
-- name: Examination And Education Related Services
+- name: ADMINISTRATION
+  total_budget: 608470000.0
+- name: PUBLIC ORDINARY SCHOOL EDUCATION
+  total_budget: 3980547000.0
+- name: INDEPENDENT SCHOOL SUBSIDY
+  total_budget: 8725000.0
+- name: PUBLIC SPECIAL SCHOOL EDUCATION
+  total_budget: 116251000.0
+- name: EARLY CHILDHOOD DEVELOPMENT
+  total_budget: 95400000.0
+- name: INFRASTRUCTURE DEVELOPMENT
+  total_budget: 497309000.0
+- name: EXAMINATION AND EDUCATION RELATED SERVICES
+  total_budget: 0.0
 selected_financial_year: 2016-17
 slug: education
 sphere:

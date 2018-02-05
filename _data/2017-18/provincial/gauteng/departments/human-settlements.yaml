@@ -1,4 +1,13 @@
 contributed_datasets:
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
@@ -54,9 +63,13 @@ intro: "## Vision\n\nIntegrated sustainable huma setllements withing a smart Gau
 name: Human Settlements
 programmes:
 - name: Administration
+  total_budget: 417218000.0
 - name: Housing Needs, Research And Planning
+  total_budget: 35822000.0
 - name: Housing Development
+  total_budget: 5559389000.0
 - name: Housing Assets Management Property Management
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: human-settlements
 sphere:

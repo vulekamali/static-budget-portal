@@ -43,9 +43,12 @@ intro: "## Vision\n\nThe department\u2019s vision is: An inclusive economy throu
   \ donation.\r\n\r\n"
 name: Public Works
 programmes:
-- name: Administration
-- name: Property Management
-- name: Provision of Buildings, Structures and Equipment
+- name: 1. Administration
+  total_budget: 359425000.0
+- name: 2. Property Management
+  total_budget: 647907000.0
+- name: 3. Provision of Buildings, Structures and Equipment
+  total_budget: 0.0
 selected_financial_year: 2016-17
 slug: public-works
 sphere:

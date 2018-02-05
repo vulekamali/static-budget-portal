@@ -1,4 +1,7 @@
-contributed_datasets: null
+contributed_datasets:
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-education-2016-17
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -55,12 +58,19 @@ intro: "## Vote purpose\n\n_Develop and support a quality higher and vocational 
 name: Higher Education and Training
 programmes:
 - name: Administration
-- name: Planning, Policy and Strategy
-- name: University Education
-- name: Technical and Vocational Education and Training
-- name: Skills Development
-- name: Community Education and Training
+  total_budget: 403356000.0
 - name: Direct charge against the National Revenue Fund
+  total_budget: 16641456000.0
+- name: Planning, Policy and Strategy
+  total_budget: 73298000.0
+- name: University Education
+  total_budget: 41943533000.0
+- name: Technical and Vocational Education and Training
+  total_budget: 7408249000.0
+- name: Skills Development
+  total_budget: 244293000.0
+- name: Community Education and Training
+  total_budget: 2234910000.0
 selected_financial_year: 2017-18
 slug: higher-education-and-training
 sphere:

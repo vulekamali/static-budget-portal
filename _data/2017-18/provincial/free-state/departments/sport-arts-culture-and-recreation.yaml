@@ -1,4 +1,14 @@
-contributed_datasets: null
+contributed_datasets:
+- contributor: Centre for Child Law
+  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
+  url_path: /2017-18/datasets/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+- contributor: Centre for Child Law
+  name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
+    Primary School case'
+  url_path: /2017-18/datasets/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-education-2016-17
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -48,9 +58,13 @@ intro: "## Vision\n\nChampioning social transformation.\r\n\r\n\n\n## Mission\n\
 name: Sport, Arts, Culture and Recreation
 programmes:
 - name: Administration
+  total_budget: 88441000.0
 - name: Cultural Affairs
+  total_budget: 151901000.0
 - name: Library and Archives Services
+  total_budget: 247226000.0
 - name: Sport and Recreation
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: sport-arts-culture-and-recreation
 sphere:

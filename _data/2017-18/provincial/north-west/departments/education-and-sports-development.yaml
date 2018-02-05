@@ -1,4 +1,14 @@
-contributed_datasets: null
+contributed_datasets:
+- contributor: Centre for Child Law
+  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
+  url_path: /2017-18/datasets/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+- contributor: Centre for Child Law
+  name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
+    Primary School case'
+  url_path: /2017-18/datasets/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-education-2016-17
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -71,13 +81,21 @@ intro: "## Vision \n\nTowards Excellence in Education and Sport Development.\r\n
 name: Education and Sports Development
 programmes:
 - name: Administration
+  total_budget: 869139000.0
 - name: Public Ordinary School Education
+  total_budget: 11294382000.0
 - name: Independent School Subsidies
+  total_budget: 29613000.0
 - name: Public Special School Education
+  total_budget: 561668000.0
 - name: Early Childhood Development
+  total_budget: 586060000.0
 - name: Infrastructure Development
+  total_budget: 1076331000.0
 - name: Examination and Education Related Services
+  total_budget: 732918000.0
 - name: Sport and Recreation
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: education-and-sports-development
 sphere:

@@ -1,4 +1,13 @@
 contributed_datasets:
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
@@ -48,10 +57,15 @@ intro: "## Vision\n\nResponsive, effective, efficient and sustainable cooperativ
 name: Co-operative Governance and Traditional Affairs
 programmes:
 - name: Administration
+  total_budget: 118642000.0
 - name: Local Governance
+  total_budget: 171613000.0
 - name: Development and Planning
+  total_budget: 53674000.0
 - name: Traditional Institutional Management
+  total_budget: 148469000.0
 - name: The House of Traditional Leaders
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: co-operative-governance-and-traditional-affairs
 sphere:

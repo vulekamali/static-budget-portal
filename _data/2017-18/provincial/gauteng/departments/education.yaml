@@ -1,4 +1,14 @@
-contributed_datasets: null
+contributed_datasets:
+- contributor: Centre for Child Law
+  name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
+    Primary School case'
+  url_path: /2017-18/datasets/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
+- contributor: Centre for Child Law
+  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
+  url_path: /2017-18/datasets/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-education-2016-17
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -41,13 +51,20 @@ intro: "## Vision\n\nEverey learner feels valued and inspired in our innovative 
   \ and learning support material,infrastructure,ICT and teacher placements."
 name: Education
 programmes:
-- name: Administration
-- name: Public Ordirnary School Education
-- name: Independent School Subsidies
-- name: Public Special School Education
-- name: Early Childhood Development
-- name: Infrastructure Development
-- name: Examination And Education Related Services
+- name: ADMINISTRATION
+  total_budget: 2887755000.0
+- name: PUBLIC ORDIRNARY SCHOOL EDUCATION
+  total_budget: 31092723000.0
+- name: INDEPENDENT SCHOOL SUBSIDIES
+  total_budget: 691636000.0
+- name: PUBLIC SPECIAL SCHOOL EDUCATION
+  total_budget: 2343748000.0
+- name: EARLY CHILDHOOD DEVELOPMENT
+  total_budget: 765459000.0
+- name: INFRASTRUCTURE DEVELOPMENT
+  total_budget: 1742829000.0
+- name: EXAMINATION AND EDUCATION RELATED SERVICES
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: education
 sphere:

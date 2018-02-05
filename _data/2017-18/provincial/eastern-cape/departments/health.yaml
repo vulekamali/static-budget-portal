@@ -1,4 +1,10 @@
-contributed_datasets: null
+contributed_datasets:
+- contributor: Public Service Accountability Monitor
+  name: "Emergency Medical Services in the Eastern Cape 2005 \u2013 2015"
+  url_path: /2017-18/datasets/emergency-medical-services-in-the-eastern-cape-2005-2015
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-health-2014-15
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -49,13 +55,21 @@ intro: "## Vision\n\nA qualtiy health service to the people of the Eastern Cape 
 name: Health
 programmes:
 - name: Administration
+  total_budget: 687002000.0
 - name: District Health Services
+  total_budget: 10937544000.0
 - name: Emergency Medical Services
+  total_budget: 1222367000.0
 - name: Provincial Hospitals Services
+  total_budget: 3322570000.0
 - name: Central Hospital Services
+  total_budget: 3108965000.0
 - name: Health Sciences & Training
+  total_budget: 853144000.0
 - name: Health Care Support Services
+  total_budget: 130758000.0
 - name: Health Facilities Management
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: health
 sphere:

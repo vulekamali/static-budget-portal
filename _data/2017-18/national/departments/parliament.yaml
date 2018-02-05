@@ -44,12 +44,18 @@ intro: '## Vote purpose
   '
 name: Parliament
 programmes:
-- name: 'Strategic Leadership and Governance '
-- name: 'Administration '
-- name: Core Business
-- name: 'Support Services '
-- name: 'Associated Services '
+- name: Strategic Leadership and Governance
+  total_budget: 71193000.0
 - name: Direct charge against the National Revenue Fund
+  total_budget: 556288000.0
+- name: Administration
+  total_budget: 116192000.0
+- name: Core Business
+  total_budget: 549166000.0
+- name: Support Services
+  total_budget: 305852000.0
+- name: Associated Services
+  total_budget: 669544000.0
 selected_financial_year: 2017-18
 slug: parliament
 sphere:

@@ -1,4 +1,10 @@
-contributed_datasets: null
+contributed_datasets:
+- contributor: Public Service Accountability Monitor
+  name: "Emergency Medical Services in the Eastern Cape 2005 \u2013 2015"
+  url_path: /2017-18/datasets/emergency-medical-services-in-the-eastern-cape-2005-2015
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
+  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-health-2014-15
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -41,13 +47,21 @@ intro: "## Vision\n\nHealthy self-reliant communities in the North West Province
 name: Health
 programmes:
 - name: Administration
+  total_budget: 329778000.0
 - name: District Health Services
+  total_budget: 5484877000.0
 - name: Emergency Medical Services
+  total_budget: 312417000.0
 - name: Provincial Hospital Services
+  total_budget: 1551296000.0
 - name: Central Hospital Services
+  total_budget: 1472847000.0
 - name: Health Science and Training
+  total_budget: 418140000.0
 - name: Health Care Support Services
+  total_budget: 261238000.0
 - name: Health Facilities and Maintenance
+  total_budget: 0.0
 selected_financial_year: 2017-18
 slug: health
 sphere:
