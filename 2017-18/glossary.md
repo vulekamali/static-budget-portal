@@ -6,7 +6,7 @@ years: [
   ['2016-17', '/2016-17/glossary', 'link'],
   ['2017-18', '/2017-18/glossary', 'active'],
 ]
-active: glossary
-title: Glossary Page
+active: learning-centre
+title: Glossary
 nested: false
 ---

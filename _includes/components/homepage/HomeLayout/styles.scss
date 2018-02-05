@@ -1,0 +1,39 @@
+.HomeLayout {
+  padding-top: 23px;
+  @include clearfix;
+}
+
+.HomeLayout-title {
+  padding-top: 13px;
+  padding-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: bold;
+  display: block;
+}
+
+.HomeLayout-main {
+  width: 100%;
+  padding-bottom: 30px;
+  text-align: center;
+
+  @media screen and (min-width: 1050px) {
+    text-align: left;
+    float: left;
+    max-width: 620px;
+    padding-bottom: 0;
+  }
+}
+
+.HomeLayout-sidebar {
+  width: 100%;
+
+  @media screen and (min-width: 1050px) {
+    float: right;
+    max-width: 300px;
+  }
+}
+
+.HomeLayout-newsletter {
+  padding-bottom: 23px;
+}

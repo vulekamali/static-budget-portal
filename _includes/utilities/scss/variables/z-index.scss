@@ -52,6 +52,18 @@
   }
 
   @if $name == 'Search--mobile' {
+    @return 120;
+  }
+
+  @if $name == 'Tooltip' {
     @return 110;
+  }
+
+  @if $name == 'Tooltip-boxWrap' {
+    @return 130;
+  }
+
+  @if $name == 'Videos-modalWrap' {
+    @return 140;
   }
 }

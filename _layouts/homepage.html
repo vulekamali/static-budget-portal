@@ -4,13 +4,29 @@ layout: page-shell
 
 <div class="Page-content">
   <div class="Page-contentWrap">
-    <span class="Page-title">A website for making government budget data and processes accessible to all citizens & interested parties.</span>
-    <main class="Page-main">
-      {% include components/Intro/index.html year=page.financial_year %}
-    </main>
-    <aside class="Page-sidebar">
-      <h2 class="u-sReadOnly">Additional Content</h2>
-      {% include components/RelatedBox/index.html year=page.financial_year %}
-    </aside>
+    <span class="Page-title">Making government budget data and processes accessible to all citizens & interested parties.</span>
+
+    <div class="HomeLayout">
+
+      <div class="HomeLayout-main">
+        <span class="HomeLayout-title js-tooltips">The national revenue fund, administered by the National Treasury,  is distributed to these three levels of government.</span>
+
+        <div>
+          {% include components/homepage/Circles/index.html year=page.financial_year items=site.data.static.circles %}
+        </div>
+      </div>
+
+      <div class="HomeLayout-sidebar">
+          <h2 class="u-sReadOnly">Additional Content</h2>
+
+          <div class="HomeLayout-newsletter">
+            {% include components/homepage/SignUpBox/index.html %}
+          </div>
+
+          {% include components/homepage/Related/index.html year=page.financial_year %}
+
+      </div>
+
+    </div>
   </div>
 </div>
