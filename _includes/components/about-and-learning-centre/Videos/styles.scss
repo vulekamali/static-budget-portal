@@ -1,0 +1,266 @@
+.Videos {
+  //padding: 15px 20px;
+}
+
+.Videos-item {
+  position: relative;
+  padding: 8px;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+
+  @media screen and (min-width: 1000px) {
+    display: table;
+  }
+
+  &:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+}
+
+.Videos-item {
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.Videos-thumbnailWrap {
+  width: 245.99px;
+  vertical-align: top;
+  background: black;
+  line-height: 0;
+  position: relative;
+
+  @media screen and (min-width: 1000px) {
+    display: table-cell;
+  }
+}
+
+.Videos-thumbnail {
+  width: 100%;
+}
+
+.Videos-info {
+  vertical-align: top;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 10px;
+
+  @media screen and (min-width: 1000px) {
+    padding-left: 16px;
+    display: table-cell;
+  }
+}
+
+.Videos-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.Videos-modalWrap {
+  z-index: z-index(Videos-modalWrap);
+  text-align: center;
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  @media screen and (min-width: 500px) {
+    padding: 50px;
+  }
+}
+
+.Videos-modal {
+  max-height: 90%;
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+  position: relative;
+
+  @media screen and (min-width: 500px) {
+    padding: 20px 30px;
+  }
+}
+
+.Videos-embed {
+  line-height: 0;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  background: black;
+  margin: 10px 0 20px;
+}
+
+.Videos-loading {
+  top: 50%;
+  top: calc(50% - 20px);
+  left: 50%;
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top: 5px solid white;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+.Videos-iframe {
+  border: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Videos-modalTitle {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Videos-modalClose {
+  width: 40px;
+  height: 40px;
+  background: grey;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  cursor: pointer;
+
+  &:hover {
+    background: black;
+  }
+}
+
+.Videos-closeIcon {
+  fill: white;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  line-height: 0;
+}
+
+.Videos-description {
+  margin-top: 9px;
+  font-size: 14px;
+}
+
+.Videos-pill {
+  list-style: none;
+  display: inline-block;
+  background-color: #92979b;
+  font-size: 13px;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 5px;
+  text-transform: capitalize;
+  margin-right: 5px;
+  margin-bottom: 6px;
+}
+
+.Videos-icon {
+  fill: white;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 16px;
+  left: 4px;
+}
+
+.Videos-iconWrap {
+  width: 60px;
+  height: 60px;
+  background: grey;
+  top: 50%;
+  top: calc(50% - 30px);
+  left: 50%;
+  left: calc(50% - 30px);
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    top: calc(50% - 32px);
+    left: 50%;
+    left: calc(50% - 32px);
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid grey;
+    opacity: 0.8;
+    transition: transform 0.4s, opacity 0.3s;
+  }
+
+  .Videos-item:hover &::before {
+    transform: scale(1.2);
+    opacity: 0.4;
+  }
+}
+
+.Videos-modalDescription {
+  overflow-y: auto;
+}
+
+.Videos-input {
+  border: 1px solid #9b9b9b;
+  border-radius: 3px;
+  padding: 9px 13px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.Videos-selectWrap {
+  width: 100%;
+  max-width: 200px;
+  display: inline-block;
+}
+
+.Videos-label {
+  padding: 10px 10px 10px 0;
+  display: inline-block;
+  font-size: 14px;
+  position: relative;
+  bottom: 14px;
+}

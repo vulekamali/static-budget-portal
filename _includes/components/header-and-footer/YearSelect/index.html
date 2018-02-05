@@ -1,0 +1,10 @@
+
+{% if include.dynamic %}
+  <section class="YearSelect" data-json='{ "data" : {{ include.years | jsonify }} }' data-dynamic='{ "data" : {{ include.dynamic || jsonify }} }'>
+    {% include components/header-and-footer/YearSelect/partials/skeleton-state.html %}
+  </section>
+{% else %}
+  <section class="YearSelect" data-json='{ "data" : {{ include.years | jsonify }} }'>
+    {% include components/header-and-footer/YearSelect/partials/skeleton-state.html %}
+  </section>
+{% endif %}

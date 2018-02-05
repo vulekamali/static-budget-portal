@@ -1,0 +1,7 @@
+<div class="SubLinks {{ include.modifiers }}">
+  {% if include.type == 'about' %}
+    {% include components/header-and-footer/SubLinks/partials/about.html year=include.year %}
+  {% else %}
+    {% include components/header-and-footer/SubLinks/partials/learning-centre.html year=include.year currentPage=include.currentPage %}
+  {% endif %}
+<div>
