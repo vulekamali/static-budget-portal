@@ -1,5 +1,5 @@
 .CsoMeta {
-  max-width: 940px;
+  // max-width: 940px;
   width: 100%;
   list-style: none;
   margin: 0;
@@ -22,18 +22,30 @@
   font-weight: normal;
 }
 
-.CsoMeta-dataSet {
-  border-radius: 2px;
-  background-color: #f0f0f0;
-  padding: 22px;
-  display: block;
+.CsoMeta-container {
   margin-top: 10px;
-  @include clearfix;
 
   @media screen and (min-width: 750px) {
     margin-top: 0;
     display: table-cell;
   }
+}
+
+.CsoMeta-dataSetWrap {
+  border-radius: 20px;
+  background-color: #e6e6e6;
+  border: solid 1px #d2d2d2;
+  padding: 10px;
+}
+
+.CsoMeta-dataSet {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  border: solid 1px #d2d2d2;
+  padding: 11px 20px 32px;
+  display: block;
+  @include clearfix;
 }
 
 .CsoMeta-column {
@@ -126,4 +138,8 @@
       background: darken(#f0f0f0, 5%);
     }
   }
+}
+
+.CsoMeta-list {
+  @include clearfix;
 }

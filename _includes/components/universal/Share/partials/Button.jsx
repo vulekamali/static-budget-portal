@@ -34,7 +34,7 @@ export default function Button({ selected }) {
   };
 
   return (
-    <div className="Share-button" onClick={share}>
+    <div className="Button has-icon" onClick={share}>
       <Icon />
     </div>
   );
