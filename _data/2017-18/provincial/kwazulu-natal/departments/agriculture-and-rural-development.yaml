@@ -1,0 +1,62 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Agriculture and Rural Development
+    organisational_unit: department
+    slug: agriculture-and-rural-development
+    url_path: /2015-16/provincial/kwazulu-natal/departments/agriculture-and-rural-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Agriculture and Rural Development
+    organisational_unit: department
+    slug: agriculture-and-rural-development
+    url_path: /2016-17/provincial/kwazulu-natal/departments/agriculture-and-rural-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Agriculture and Rural Development
+    organisational_unit: department
+    slug: agriculture-and-rural-development
+    url_path: /2017-18/provincial/kwazulu-natal/departments/agriculture-and-rural-development
+  id: 2017-18
+  is_selected: true
+government:
+  name: KwaZulu-Natal
+  slug: kwazulu-natal
+government_functions: []
+intro: "## Vision\r\n\r\nThe vision of the Department of Agriculture and Rural Development\
+  \ (DARD) is: An inclusive, sustainable and radically transformed agricultural sector\
+  \ that builds thriving communities in balance with nature.\r\n\r\n\r\n\r\n## Mission\r\
+  \n\r\nThe department\u2019s mission is: To advance sound agricultural practices\
+  \ that stimulate comprehensive economic growth, food security and advancement of\
+  \ rural communities.\r\n\r\n\r\n\r\n## Core functions\r\n\r\nThe core functions\
+  \ of the department are as follows:\r\n\r\n* Food security\r\n\r\n* Farmer development\r\
+  \n\r\n* Veterinary services\r\n\r\n* Rural development\r\n\r\n* Governance"
+name: Agriculture and Rural Development
+programmes:
+- name: Administration
+  total_budget: 510164000.0
+- name: Agriculture
+  total_budget: 1655274000.0
+- name: Rural Development
+  total_budget: 31706000.0
+selected_financial_year: 2017-18
+slug: agriculture-and-rural-development
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 03 : Agriculture and Rural Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/15f4fb23-dcb1-4892-bc20-a6164671ee7a/resource/482d09ee-6f6d-47fc-9473-da6e7d90dccc/download/kzn-agriculture-and-rural-dev.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
+        - Vote 03 - Agriculture.pdf
+vote_number: 3

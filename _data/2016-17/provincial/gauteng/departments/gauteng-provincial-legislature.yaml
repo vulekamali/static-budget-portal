@@ -1,0 +1,75 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Gauteng Provincial Legislature
+    organisational_unit: department
+    slug: gauteng-provincial-legislature
+    url_path: /2015-16/provincial/gauteng/departments/gauteng-provincial-legislature
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Gauteng Provincial Legislature
+    organisational_unit: department
+    slug: gauteng-provincial-legislature
+    url_path: /2016-17/provincial/gauteng/departments/gauteng-provincial-legislature
+  id: 2016-17
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Gauteng Provincial Legislature
+    organisational_unit: department
+    slug: gauteng-provincial-legislature
+    url_path: /2017-18/provincial/gauteng/departments/gauteng-provincial-legislature
+  id: 2017-18
+  is_selected: false
+government:
+  name: Gauteng
+  slug: gauteng
+government_functions: []
+intro: "## Vision \r\n\r\nA modern and transformative legislature that fosters public\
+  \ pride and confidence in democracy and enhances service\r\ndelivery to the people\
+  \ of Gauteng.\r\n\r\n\r\n\r\n## Mission\r\n\r\nIn observing our constitutional obligations,\
+  \ Gauteng Provincial Legislature (GPL):\r\n\u2022 Is a modern and dynamic African\
+  \ Legislature of the 21st century;\r\n\u2022 Is a caring, responsive, activist and\
+  \ transformative Legislature;\r\n\u2022 Reflects the values, aspirations and cultures\
+  \ of the South African people;\r\n\u2022 Is the most competent, accessible, transparent\
+  \ and accountable Legislature;\r\n\u2022 Fosters ethical and good governance;\r\n\
+  \u2022 Attracts, develops, and retains skilled and professional staff; and\r\n\u2022\
+  \ Recognises staff contributions, rewards their achievements and provide a stimulating\
+  \ environment.\r\n\r\n\r\n\r\n## Core functions and responsibilities\r\n\r\nThe\
+  \ core functions of the Gauteng Provincial Legislature are clearly defined in Section\
+  \ 114 of the Constitution of the\r\nRepublic of South Africa. The GPL is entrusted\
+  \ with the following responsibilities: facilitating law-making; ensuring public\r\
+  \nparticipation in the legislative processes; and exercising oversight over the\
+  \ executive and the organs of the state. The GPL is\r\nalso responsible for furthering\
+  \ cooperative governance between provincial, national and local legislative institutions."
+name: Gauteng Provincial Legislature
+programmes:
+- name: Leadership and Governance
+  total_budget: 52375000.0
+- name: Office of the Secretary
+  total_budget: 20706000.0
+- name: Corporate Support Services
+  total_budget: 293806000.0
+- name: Core Business
+  total_budget: 229795000.0
+- name: Office of the CFO
+  total_budget: 44991000.0
+selected_financial_year: 2016-17
+slug: gauteng-provincial-legislature
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 02 : Gauteng Provincial Legislature':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/25cec9b5-17d9-4d34-af96-d16a33ba69d9/resource/1b8e1fe8-a507-491d-951e-8bb56281b489/download/gt-legislature.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
+        - Vote 02 - Provincial Legislature.pdf
+vote_number: 2

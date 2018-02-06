@@ -1,0 +1,72 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Agriculture
+    organisational_unit: department
+    slug: agriculture
+    url_path: /2015-16/provincial/limpopo/departments/agriculture
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Agriculture
+    organisational_unit: department
+    slug: agriculture
+    url_path: /2016-17/provincial/limpopo/departments/agriculture
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Agriculture
+    organisational_unit: department
+    slug: agriculture
+    url_path: /2017-18/provincial/limpopo/departments/agriculture
+  id: 2017-18
+  is_selected: true
+government:
+  name: Limpopo
+  slug: limpopo
+government_functions:
+- Agriculture, rural development and land reform
+intro: "## Vision\r\n\r\nUnited, prosperous and productive agricultural sector for\
+  \ sustainable rural communities.\r\n\r\n\r\n\r\n## Mission\r\n\r\nTo promote food\
+  \ security and economic growth through sustainable agricultural development.\r\n\
+  \r\n\r\n\r\n## Core functions\r\n\r\nThe Limpopo Department of Agriculture and Rural\
+  \ Development (LDARD) aims to lead and support sustainable agriculture and promote\
+  \ rural development in the Province through governance, knowledge development and\
+  \ transfer, regulatory function and financial support to agriculture."
+name: Agriculture
+programmes:
+- name: Administration
+  total_budget: 370346000.0
+- name: Sustainable Resource Management
+  total_budget: 75916000.0
+- name: Farmer Support & Development
+  total_budget: 1100549000.0
+- name: Veterinary Services
+  total_budget: 56221000.0
+- name: Research & Technology Devel Services
+  total_budget: 57325000.0
+- name: Agriculural Economics
+  total_budget: 64261000.0
+- name: Structured Agric. Training
+  total_budget: 125290000.0
+- name: Rural development Co-ordination
+  total_budget: 5444000.0
+selected_financial_year: 2017-18
+slug: agriculture
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 04 : Agriculture':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/94022497-5ebb-4ae3-952b-458ea862d731/resource/7173e7c3-961b-4410-bf83-68e6920bcb79/download/lim-agriculture.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
+        - Vote 04 - Agriculture and Rural Development.pdf
+vote_number: 4

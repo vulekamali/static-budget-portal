@@ -1,19 +1,19 @@
 contributed_datasets: null
 financial_years:
 - closest_match:
-    is_exact_match: false
-    name: Free State
-    organisational_unit: government
-    slug: free-state
-    url_path: /2015-16/provincial/free-state
+    is_exact_match: true
+    name: Premier
+    organisational_unit: department
+    slug: premier
+    url_path: /2015-16/provincial/free-state/departments/premier
   id: 2015-16
   is_selected: false
 - closest_match:
-    is_exact_match: false
-    name: Free State
-    organisational_unit: government
-    slug: free-state
-    url_path: /2016-17/provincial/free-state
+    is_exact_match: true
+    name: Premier
+    organisational_unit: department
+    slug: premier
+    url_path: /2016-17/provincial/free-state/departments/premier
   id: 2016-17
   is_selected: false
 - closest_match:

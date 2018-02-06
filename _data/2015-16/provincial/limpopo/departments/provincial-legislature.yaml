@@ -1,0 +1,75 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Provincial Legislature
+    organisational_unit: department
+    slug: provincial-legislature
+    url_path: /2015-16/provincial/limpopo/departments/provincial-legislature
+  id: 2015-16
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Provincial Legislature
+    organisational_unit: department
+    slug: provincial-legislature
+    url_path: /2016-17/provincial/limpopo/departments/provincial-legislature
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Provincial Legislature
+    organisational_unit: department
+    slug: provincial-legislature
+    url_path: /2017-18/provincial/limpopo/departments/provincial-legislature
+  id: 2017-18
+  is_selected: false
+government:
+  name: Limpopo
+  slug: limpopo
+government_functions: []
+intro: "## Vision\r\n\r\nThe Limpopo Legislature seeks to be a representative and\
+  \ consultative body, a vanguard of people\u2019s aspirations and interests towards\
+  \ a democratic, non-sexist, non-racial, united and prosperous society.\r\n\r\n\r\
+  \n\r\n## Mission\r\n\r\nThe Legislature is an autonomous institution and an agent\
+  \ for transformation that strives to:\r\n\r\n* Defend, strengthen, deepen and maintain\
+  \ democracy;\r\n\r\n* Make quality laws and policies for the citizens of the province;\r\
+  \n\r\n* Have an effective and meaningful participation of the citizens in the law-making\
+  \ processes;\r\n\r\n* Articulate the needs and desires of the citizens of the province;\r\
+  \n\r\n* Be a transparent, consultative and accountable institution;\r\n\r\n* Maintain\
+  \ norms set nationally for the eradication of racism and gender imbalances;\r\n\r\
+  \n* Have a representative and accountable budget; and\r\n\r\n* Ensure provision,\
+  \ retention of competent skills and efficient utilization of human resources;\r\n\
+  \r\n\r\n\r\n## Core functions\r\n\r\nThe core functions of the Legislature are reflected\
+  \ in Section 104 to 124 of the Constitution. These include considering, passing,\
+  \ amending or rejecting any bill before the Legislature and to initiate or prepare\
+  \ legislation except money Bills. In addition the Legislature strives to ensure\
+  \ that all provincial executive organs of state in the province are accountable.\
+  \ This is achieved through vigorous oversight. The Legislature also provides financial\
+  \ and administrative assistance to each party represented and facilitates public\
+  \ involvement in its processes and committees. This is done through public participation\
+  \ and petitions"
+name: Provincial Legislature
+programmes:
+- name: Administration
+  total_budget: 85050000.0
+- name: Facilities for Members and Political Parties
+  total_budget: 70122000.0
+- name: Parliamentary Services
+  total_budget: 63286000.0
+selected_financial_year: 2015-16
+slug: provincial-legislature
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 02 : Provincial Legislature':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/70d9cdf7-5bae-49ef-83d8-3618541d5105/resource/fc1d696e-7bee-4ad5-8951-18ea65b41054/download/lim-provincial-legislature.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
+        - Vote 02 - Legislature.pdf
+vote_number: 2

@@ -189,9 +189,9 @@ national:
   slug: south-africa
 provincial:
 - departments:
-  - name: Office of the Premier
-    slug: office-of-the-premier
-    url_path: /2016-17/provincial/western-cape/departments/office-of-the-premier
+  - name: Premier
+    slug: premier
+    url_path: /2016-17/provincial/western-cape/departments/premier
     vote_number: 1
   - name: Provincial Parliament
     slug: provincial-parliament
@@ -233,9 +233,9 @@ provincial:
     slug: agriculture
     url_path: /2016-17/provincial/western-cape/departments/agriculture
     vote_number: 11
-  - name: Economical Development and Tourism
-    slug: economical-development-and-tourism
-    url_path: /2016-17/provincial/western-cape/departments/economical-development-and-tourism
+  - name: Economic Development and Tourism
+    slug: economic-development-and-tourism
+    url_path: /2016-17/provincial/western-cape/departments/economic-development-and-tourism
     vote_number: 12
   - name: Cultural Affairs and Sport
     slug: cultural-affairs-and-sport
@@ -280,9 +280,9 @@ provincial:
     slug: provincial-treasury
     url_path: /2016-17/provincial/northern-cape/departments/provincial-treasury
     vote_number: 8
-  - name: Cooperative Governance, Human Settlement and Traditional Affairs
-    slug: cooperative-governance-human-settlement-and-traditional-affairs
-    url_path: /2016-17/provincial/northern-cape/departments/cooperative-governance-human-settlement-and-traditional-affairs
+  - name: Cooperative Governance, Human Settlements and Traditional Affairs
+    slug: cooperative-governance-human-settlements-and-traditional-affairs
+    url_path: /2016-17/provincial/northern-cape/departments/cooperative-governance-human-settlements-and-traditional-affairs
     vote_number: 9
   - name: Health
     slug: health
@@ -362,9 +362,9 @@ provincial:
     slug: office-of-the-premier
     url_path: /2016-17/provincial/mpumalanga/departments/office-of-the-premier
     vote_number: 1
-  - name: Mpumalanga Provincial Legislature
-    slug: mpumalanga-provincial-legislature
-    url_path: /2016-17/provincial/mpumalanga/departments/mpumalanga-provincial-legislature
+  - name: Provincial Legislature
+    slug: provincial-legislature
+    url_path: /2016-17/provincial/mpumalanga/departments/provincial-legislature
     vote_number: 2
   - name: Provincial Treasury
     slug: provincial-treasury
@@ -374,13 +374,13 @@ provincial:
     slug: co-operative-governance-and-traditional-affairs
     url_path: /2016-17/provincial/mpumalanga/departments/co-operative-governance-and-traditional-affairs
     vote_number: 4
-  - name: Agricultural, Rural Development and Land Administration
-    slug: agricultural-rural-development-and-land-administration
-    url_path: /2016-17/provincial/mpumalanga/departments/agricultural-rural-development-and-land-administration
+  - name: Agriculture, Rural Development, Land and Environmental Affairs
+    slug: agriculture-rural-development-land-and-environmental-affairs
+    url_path: /2016-17/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
     vote_number: 5
-  - name: Economic Development, Environment and Tourism
-    slug: economic-development-environment-and-tourism
-    url_path: /2016-17/provincial/mpumalanga/departments/economic-development-environment-and-tourism
+  - name: Economic Development And Tourism
+    slug: economic-development-and-tourism
+    url_path: /2016-17/provincial/mpumalanga/departments/economic-development-and-tourism
     vote_number: 6
   - name: Education
     slug: education
@@ -417,25 +417,25 @@ provincial:
     slug: office-of-the-premier
     url_path: /2016-17/provincial/limpopo/departments/office-of-the-premier
     vote_number: 1
-  - name: Limpopo Legislature
-    slug: limpopo-legislature
-    url_path: /2016-17/provincial/limpopo/departments/limpopo-legislature
+  - name: Provincial Legislature
+    slug: provincial-legislature
+    url_path: /2016-17/provincial/limpopo/departments/provincial-legislature
     vote_number: 2
   - name: Education
     slug: education
     url_path: /2016-17/provincial/limpopo/departments/education
     vote_number: 3
-  - name: Agriculture and Rural Development
-    slug: agriculture-and-rural-development
-    url_path: /2016-17/provincial/limpopo/departments/agriculture-and-rural-development
+  - name: Agriculture
+    slug: agriculture
+    url_path: /2016-17/provincial/limpopo/departments/agriculture
     vote_number: 4
   - name: Provincial Treasury
     slug: provincial-treasury
     url_path: /2016-17/provincial/limpopo/departments/provincial-treasury
     vote_number: 5
-  - name: Economic Development, Environmental Affairs and Tourism
-    slug: economic-development-environmental-affairs-and-tourism
-    url_path: /2016-17/provincial/limpopo/departments/economic-development-environmental-affairs-and-tourism
+  - name: Economic Development, Environment and Tourism
+    slug: economic-development-environment-and-tourism
+    url_path: /2016-17/provincial/limpopo/departments/economic-development-environment-and-tourism
     vote_number: 6
   - name: Health
     slug: health
@@ -453,9 +453,9 @@ provincial:
     slug: safety-security-and-liaison
     url_path: /2016-17/provincial/limpopo/departments/safety-security-and-liaison
     vote_number: 10
-  - name: Co-operative Governance, Human Settlement and Traditional Affairs
-    slug: co-operative-governance-human-settlement-and-traditional-affairs
-    url_path: /2016-17/provincial/limpopo/departments/co-operative-governance-human-settlement-and-traditional-affairs
+  - name: Co-operative Governance, Human Settlements and Traditional Affairs
+    slug: co-operative-governance-human-settlements-and-traditional-affairs
+    url_path: /2016-17/provincial/limpopo/departments/co-operative-governance-human-settlements-and-traditional-affairs
     vote_number: 11
   - name: Social Development
     slug: social-development
@@ -476,13 +476,13 @@ provincial:
     slug: provincial-legislature
     url_path: /2016-17/provincial/kwazulu-natal/departments/provincial-legislature
     vote_number: 2
-  - name: Agriculture, Environmental Affairs and Rural Development
-    slug: agriculture-environmental-affairs-and-rural-development
-    url_path: /2016-17/provincial/kwazulu-natal/departments/agriculture-environmental-affairs-and-rural-development
+  - name: Agriculture and Rural Development
+    slug: agriculture-and-rural-development
+    url_path: /2016-17/provincial/kwazulu-natal/departments/agriculture-and-rural-development
     vote_number: 3
-  - name: Economic Development and Tourism
-    slug: economic-development-and-tourism
-    url_path: /2016-17/provincial/kwazulu-natal/departments/economic-development-and-tourism
+  - name: Economic Development, Tourism and Environmental Affairs
+    slug: economic-development-tourism-and-environmental-affairs
+    url_path: /2016-17/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
     vote_number: 4
   - name: Education
     slug: education
@@ -504,9 +504,9 @@ provincial:
     slug: community-safety-and-liaison
     url_path: /2016-17/provincial/kwazulu-natal/departments/community-safety-and-liaison
     vote_number: 9
-  - name: Sports and Recreation
-    slug: sports-and-recreation
-    url_path: /2016-17/provincial/kwazulu-natal/departments/sports-and-recreation
+  - name: Sport and Recreation
+    slug: sport-and-recreation
+    url_path: /2016-17/provincial/kwazulu-natal/departments/sport-and-recreation
     vote_number: 10
   - name: Co-operative Governance and Traditional Affairs
     slug: co-operative-governance-and-traditional-affairs
@@ -535,9 +535,9 @@ provincial:
     slug: office-of-the-premier
     url_path: /2016-17/provincial/gauteng/departments/office-of-the-premier
     vote_number: 1
-  - name: Provincial Legislature
-    slug: provincial-legislature
-    url_path: /2016-17/provincial/gauteng/departments/provincial-legislature
+  - name: Gauteng Provincial Legislature
+    slug: gauteng-provincial-legislature
+    url_path: /2016-17/provincial/gauteng/departments/gauteng-provincial-legislature
     vote_number: 2
   - name: Economic Development
     slug: economic-development
@@ -594,9 +594,9 @@ provincial:
   name: Gauteng
   slug: gauteng
 - departments:
-  - name: Office of the Premier
-    slug: office-of-the-premier
-    url_path: /2016-17/provincial/free-state/departments/office-of-the-premier
+  - name: Premier
+    slug: premier
+    url_path: /2016-17/provincial/free-state/departments/premier
     vote_number: 1
   - name: Free State Legislature
     slug: free-state-legislature
@@ -697,9 +697,9 @@ provincial:
     slug: provincial-treasury
     url_path: /2016-17/provincial/eastern-cape/departments/provincial-treasury
     vote_number: 12
-  - name: Sport, Art and Culture
-    slug: sport-art-and-culture
-    url_path: /2016-17/provincial/eastern-cape/departments/sport-art-and-culture
+  - name: Sport, Recreation, Arts and Culture
+    slug: sport-recreation-arts-and-culture
+    url_path: /2016-17/provincial/eastern-cape/departments/sport-recreation-arts-and-culture
     vote_number: 14
   - name: Safety and Liaison
     slug: safety-and-liaison

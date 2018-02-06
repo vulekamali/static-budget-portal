@@ -1,0 +1,58 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: PROVINCIAL LEGISLATURE
+    organisational_unit: department
+    slug: provincial-legislature
+    url_path: /2015-16/provincial/mpumalanga/departments/provincial-legislature
+  id: 2015-16
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Provincial Legislature
+    organisational_unit: department
+    slug: provincial-legislature
+    url_path: /2016-17/provincial/mpumalanga/departments/provincial-legislature
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Provincial Legislature
+    organisational_unit: department
+    slug: provincial-legislature
+    url_path: /2017-18/provincial/mpumalanga/departments/provincial-legislature
+  id: 2017-18
+  is_selected: false
+government:
+  name: Mpumalanga
+  slug: mpumalanga
+government_functions: []
+intro: "## Vision\r\n\r\nA people-centred, African, world class Legislature\r\n\r\n\
+  \r\n\r\n## Mission\r\n\r\nTo effectively and efficiently hold the executive and\
+  \ other state organs accountable through intensified oversight, enhance public education\
+  \ and participation and law making to ensure improved service delivery by adhering\
+  \ to the Batho Pele principles, supported by administrative excellence and good\
+  \ governance"
+name: PROVINCIAL LEGISLATURE
+programmes:
+- name: Administration
+  total_budget: 128291000.0
+- name: Parliamentary Business
+  total_budget: 142742000.0
+selected_financial_year: 2015-16
+slug: provincial-legislature
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 02 : PROVINCIAL LEGISLATURE':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/e42f298f-3201-4444-b605-60018a738536/resource/165e3066-3948-463c-a355-cbb7ce866c86/download/mpu-provincial-legislature.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
+        - Vote 02 - Legislature.pdf
+vote_number: 2

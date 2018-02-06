@@ -1,0 +1,67 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Transport
+    organisational_unit: department
+    slug: transport
+    url_path: /2015-16/provincial/limpopo/departments/transport
+  id: 2015-16
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Transport
+    organisational_unit: department
+    slug: transport
+    url_path: /2016-17/provincial/limpopo/departments/transport
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Transport
+    organisational_unit: department
+    slug: transport
+    url_path: /2017-18/provincial/limpopo/departments/transport
+  id: 2017-18
+  is_selected: false
+government:
+  name: Limpopo
+  slug: limpopo
+government_functions: []
+intro: "## Vision\r\n\r\nTo be a pioneer and a leading department at the epi-centre\
+  \ of socio economic development.\r\n\r\n\r\n\r\n## Mission\r\n\r\nTo provide safe,\
+  \ affordable, sustainable and integrated transport services.\r\n\r\n\r\n\r\n## Core\
+  \ functions\r\n\r\n* Promote investment in transport as a means to provide affordable\
+  \ and convenient access to markets, employment, economic activity and social services.\r\
+  \n\r\n* Co-ordinate development of inter-modal transport facilities and logistical\
+  \ services as part of an integrated transport service network.\r\n\r\n* Lead in\
+  \ efforts to improve road safety through strengthened law enforcement, informing\
+  \ the public about road safety issues and fostering improvements in vehicle safety."
+name: Transport
+programmes:
+- name: Administration
+  total_budget: 495703000.0
+- name: Transport Infrastructure
+  total_budget: 0.0
+- name: Transport Operations
+  total_budget: 823304000.0
+- name: Transport Regulations
+  total_budget: 519891000.0
+- name: Community Based Programmes
+  total_budget: 0.0
+selected_financial_year: 2015-16
+slug: transport
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 08 : Transport':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/6af59bd5-b947-4fb5-85fb-7b4caaa5b28e/resource/daa34f19-a5cc-420d-a170-9071ca25fe90/download/lim-transport.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
+        - Vote 08 - Transport.pdf
+vote_number: 8

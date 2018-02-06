@@ -1,0 +1,72 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Agriculture, Rural Development, Land And Environmental Affairs
+    organisational_unit: department
+    slug: agriculture-rural-development-land-and-environmental-affairs
+    url_path: /2015-16/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
+  id: 2015-16
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Agriculture, Rural Development, Land and Environmental Affairs
+    organisational_unit: department
+    slug: agriculture-rural-development-land-and-environmental-affairs
+    url_path: /2016-17/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Agriculture, Rural Development, Land and Environmental Affairs
+    organisational_unit: department
+    slug: agriculture-rural-development-land-and-environmental-affairs
+    url_path: /2017-18/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
+  id: 2017-18
+  is_selected: false
+government:
+  name: Mpumalanga
+  slug: mpumalanga
+government_functions: []
+intro: "## Vision\r\n\r\nVibrant, equitable, integrated and sustainable urban and\
+  \ rural communities with a world class, united and prosperous agricultural, forestry\
+  \ and fisheries sector with food security for all in a protected and enhanced environment.\r\
+  \n\r\n\r\n\r\n## Mission\r\n\r\nTo lead and facilitate integrated, comprehensive,\
+  \ sustainable development and social cohesion by participating and partnering with\
+  \ all sectors of society, through agriculture, rural development, land and environment"
+name: Agriculture, Rural Development, Land And Environmental Affairs
+programmes:
+- name: Administration
+  total_budget: 137810000.0
+- name: Sustainable Resource Management
+  total_budget: 65495000.0
+- name: Farmer Support and Development
+  total_budget: 483630000.0
+- name: Veterinary Services
+  total_budget: 116441000.0
+- name: Research and Technology Development Services
+  total_budget: 56590000.0
+- name: Agricultural Economics Services
+  total_budget: 10727000.0
+- name: Structured Agricultural Education and Training
+  total_budget: 38769000.0
+- name: Rural Development Coordination
+  total_budget: 23479000.0
+- name: Environmental Affairs
+  total_budget: 85683000.0
+selected_financial_year: 2015-16
+slug: agriculture-rural-development-land-and-environmental-affairs
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 05 : Agriculture, Rural Development, Land And Environmental Affairs':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/86228ab2-8341-4509-a0c6-d5e9a4b8f14a/resource/a043951e-af6b-42f0-8504-43f8ecbecd04/download/mpu-agriculture-.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
+        - Vote 05 - Agriculture, Rural deve, Land and Environ.pdf
+vote_number: 5

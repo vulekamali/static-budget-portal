@@ -1,0 +1,80 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Economic Development, Tourism and Environmental Affairs
+    organisational_unit: department
+    slug: economic-development-tourism-and-environmental-affairs
+    url_path: /2015-16/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
+  id: 2015-16
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Economic Development, Tourism and Environmental Affairs
+    organisational_unit: department
+    slug: economic-development-tourism-and-environmental-affairs
+    url_path: /2016-17/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Economic Development, Tourism and Environmental Affairs
+    organisational_unit: department
+    slug: economic-development-tourism-and-environmental-affairs
+    url_path: /2017-18/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
+  id: 2017-18
+  is_selected: false
+government:
+  name: KwaZulu-Natal
+  slug: kwazulu-natal
+government_functions: []
+intro: "## Vision\r\n\r\nThe vision of the Department of Economic Development, Tourism\
+  \ and Environmental Affairs (DEDTEA) is: Leading the attainment of inclusive and\
+  \ sustainable economic growth for job creation.\r\n\r\n\r\n\r\n## Mission\r\n\r\n\
+  The department\u2019s mission is to: Provide leadership and facilitate integrated\
+  \ economic planning, be a catalyst for economic transformation and sustainable development,\
+  \ implement strategies that drive economic growth and promote sound environmental\
+  \ management, create a conducive environment for trade, investment and tourism and\
+  \ monitor and enforce sound business and consumer regulations.\r\n\r\n\r\n\r\n##\
+  \ Core functions\r\n\r\nThe department\u2019s core functions are summarised as follows:\r\
+  \n\r\n* To drive the economic development strategies of the province.\r\n\r\n* To\
+  \ facilitate strategies to enhance the competitiveness of priority sectors of the\
+  \ economy, in line with the industrial development strategy.\r\n\r\n* To promote\
+  \ the development of small business and social enterprises.\r\n\r\n* To promote\
+  \ and facilitate economic empowerment programmes.\r\n\r\n* To manage the Enterprise\
+  \ Development and Growth Funds.\r\n\r\n* To provide an effective and efficient consumer\
+  \ protection service.\r\n\r\n* To ensure effective and prudent business regulation\
+  \ in the province.\r\n\r\n* To provide effective and efficient environmental management.\r\
+  \n\r\n* To provide conservation services"
+name: Economic Development, Tourism and Environmental Affairs
+programmes:
+- name: Administration
+  total_budget: 233095000.0
+- name: Integrated Economic Development Services
+  total_budget: 422715000.0
+- name: Trade and Sector Development
+  total_budget: 957259000.0
+- name: Business Regulation and Governance
+  total_budget: 100290000.0
+- name: Economic Planning
+  total_budget: 37482000.0
+- name: Tourism
+  total_budget: 298771000.0
+- name: Environmental Affairs
+  total_budget: 923847000.0
+selected_financial_year: 2015-16
+slug: economic-development-tourism-and-environmental-affairs
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 04 : Economic Development, Tourism and Environmental Affairs':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/6baca5bf-b00a-4585-b4a0-f20334ae475a/resource/d87b0d52-4f42-4a84-92e9-c1352a68e561/download/kzn-eco-dev-tourism-and-env-affairs.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
+        - Vote 04 - Economic Development and Tourism.pdf
+vote_number: 4

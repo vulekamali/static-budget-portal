@@ -1,0 +1,74 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Premier
+    organisational_unit: department
+    slug: premier
+    url_path: /2015-16/provincial/free-state/departments/premier
+  id: 2015-16
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Premier
+    organisational_unit: department
+    slug: premier
+    url_path: /2016-17/provincial/free-state/departments/premier
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Premier
+    organisational_unit: department
+    slug: premier
+    url_path: /2017-18/provincial/free-state/departments/premier
+  id: 2017-18
+  is_selected: false
+government:
+  name: Free State
+  slug: free-state
+government_functions: []
+intro: "## Vision\r\n\r\nLeading the Free State Province towards service excellence\r\
+  \n\r\n\r\n\r\n## Mission\r\n\r\nTo provide strategic direction and to coordinate\
+  \ integrated service delivery within Government in the Free State.\r\n\r\n\r\n\r\
+  \n## Core functions\r\n\r\nThe core functions and responsibilities of the Department\
+  \ of the Premier relate to both the Department itself as well as to the broader\
+  \ Free State provincial government and can be\r\nsummarized as follows:\r\n\r\n\
+  * To ensure integrated governance and policy coordination;\r\n\r\n* To facilitate\
+  \ and coordinate integrated planning, research, monitoring and evaluation;\r\n\r\
+  \n* To provide effective and efficient administrative and support services to the\
+  \ Premier Executive Council and the Director General;\r\n\r\n* To ensure sound financial\
+  \ management in the Department of the Premier;\r\n\r\n* To provide strategic direction\
+  \ and render advice on human resource, organisational development and enhancement,\
+  \ and legal service matters;\r\n\r\n* To provide strategic direction with regard\
+  \ to the effective utilisation of information technology and information communication\
+  \ technology;\r\n\r\n* To provide strategic communication direction and ensure that\
+  \ the image of the FSPG and the Department of the Premier is held in good standing;\r\
+  \n\r\n* To coordinate and advise on the implementation of major government programmes\
+  \ in the FSPG;\r\n\r\n* To provide strategic direction, facilitate and coordinate\
+  \ special programmes; and\r\n\r\n* To render efficient and effective Community Liaison\
+  \ and Participatory Democracy\r\nServices."
+name: Premier
+programmes:
+- name: Administration
+  total_budget: 138867000.0
+- name: Institutional Development
+  total_budget: 101213000.0
+- name: Policy & Governance
+  total_budget: 43816000.0
+selected_financial_year: 2015-16
+slug: premier
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 01 : Premier':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/8c269c50-1bff-49e6-b826-b72ce1d8aa03/resource/8d409be0-db2e-4943-ada9-f0e4db567518/download/fs-premier.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
+        - Vote 01 - Premier.pdf
+vote_number: 1
