@@ -17,11 +17,11 @@ financial_years:
   id: 2016-17
   is_selected: true
 - closest_match:
-    is_exact_match: true
-    name: Office of the Premier
-    organisational_unit: department
-    slug: office-of-the-premier
-    url_path: /2017-18/provincial/free-state/departments/office-of-the-premier
+    is_exact_match: false
+    name: Free State
+    organisational_unit: government
+    slug: free-state
+    url_path: /2017-18/provincial/free-state
   id: 2017-18
   is_selected: false
 government:
