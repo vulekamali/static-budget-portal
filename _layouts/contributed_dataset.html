@@ -18,15 +18,15 @@ layout: page-shell
     <main class="Page-main">
 
       {% if page_data.intro %}
-        <div class="Page-blurb js-tooltips" data-year="{{ page.financial_year }}">
-          <h2>About this dataset</h2>
+        <div class="Card js-tooltips" data-year="{{ page.financial_year }}">
+          <h2 class="Card-title">About this dataset</h2>
           {{ page_data.intro | markdownify }}
         </div>
       {% endif %}
 
-      {% if page_data.methodology %}
-        <div class="Page-blurb js-tooltips" data-year="{{ page.financial_year }}">
-          <h2>Methodology Used in Gathering and Analysis</h2>
+      {% if page_data.methodology and page_data.methodology != '' %}
+        <div class="Card js-tooltips u-marginTop u-marginTop--20" data-year="{{ page.financial_year }}">
+          <h2 class="Card-title">Methodology Used in Gathering and Analysis</h2>
           {{ page_data.methodology | markdownify }}
         </div>
       {% endif %}
@@ -34,13 +34,15 @@ layout: page-shell
     </main>
 
     <aside class="Page-sidebar">
-        {% include components/department-page/Share/index.html %}
+      <div class="Card">
+        {% include components/universal/Share/index.html %}
+      </div>
 
-        {% if page_data.resources %}
-          <div class="Page-smallSection">
-              {% include components/cso-data-page/FileTypes/index.html resources=page_data.resources %}
-          </div>
-        {% endif %}
+      {% if page_data.resources %}
+        <div class="Page-smallSection">
+          {% include components/universal/FileTypes/index.html resources=page_data.resources type="cso" %}
+        </div>
+      {% endif %}
 
     </aside>
 

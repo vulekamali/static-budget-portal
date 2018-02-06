@@ -7,6 +7,7 @@
 @import 'utilities/scss/global-styles/universal-selector';
 @import 'utilities/scss/global-styles/body';
 @import 'utilities/scss/global-styles/a';
+@import 'utilities/scss/global-styles/p';
 
 @import 'utilities/scss/animation/spin';
 @import 'utilities/scss/animation/blackout';
@@ -16,6 +17,7 @@
 @import 'utilities/scss/utility-classes/u-Button';
 @import 'utilities/scss/utility-classes/u-listReset';
 @import 'utilities/scss/utility-classes/u-listItemReset';
+@import 'utilities/scss/utility-classes/u-marginTop';
 
 @import 'components/universal/Tooltip/styles';
 @import 'components/universal/Page/styles';
@@ -24,6 +26,8 @@
 @import 'components/universal/Input/styles';
 @import 'components/universal/Card/styles';
 @import 'components/universal/Icon/styles';
+@import 'components/universal/Share/styles';
+@import 'components/universal/FileTypes/styles';
 
 @import 'components/header-and-footer/Search/styles';
 @import 'components/header-and-footer/YearSelect/styles';
@@ -32,6 +36,7 @@
 @import 'components/header-and-footer/Disclaimer/styles';
 @import 'components/header-and-footer/SubLinks/styles';
 @import 'components/header-and-footer/HeaderBar/styles';
+@import 'components/header-and-footer/Logo/styles';
 
 @import 'components/homepage/Related/styles';
 @import 'components/homepage/Circles/styles';
@@ -45,9 +50,6 @@
 @import 'components/other-pages/DeptControl/styles';
 
 @import 'components/department-page/Programmes/styles';
-@import 'components/department-page/Share/styles';
-@import 'components/department-page/Resources/styles';
-@import 'components/department-page/CsoLinks/styles';
 
 @import 'components/about-and-learning-centre/Progress/styles';
 @import 'components/about-and-learning-centre/Stages/styles';
@@ -57,4 +59,3 @@
 
 @import 'components/cso-data-page/CsoMeta/styles';
 @import 'components/cso-data-page/CsoRelated/styles';
-@import 'components/cso-data-page/FileTypes/styles';

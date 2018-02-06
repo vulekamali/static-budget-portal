@@ -37,7 +37,8 @@
         <dt class="u-sReadOnly">Facebook Page</dt>
         <dd class="CsoMeta-listItem CsoMeta-listItem--icon">
           <a target="_blank" class="Button is-icon is-invisible is-inline" href="https://facebook.com/{{ include.organization.facebook }}">
-            <svg class="CsoMeta-icon" width="0" height="0" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><title>Facebook Link</title><path d="M24.7 56.3h13v41.5c0 1.1.9 2 2 2h17a2 2 0 0 0 2-2V56.3h15.2a2 2 0 0 0 2-2V37.9c0-.5-.2-1.1-.6-1.4a2 2 0 0 0-1.4-.6h-15v-9.6c0-4.6 1.1-7 7.1-7h8.7a2 2 0 0 0 2-2V1.9A2 2 0 0 0 75.3 0H59C46 1.2 37.8 10.5 37.8 24.5v11.3h-13a2 2 0 0 0-2 2v16.4c-.1 1.2.8 2.1 1.9 2.1z"/></svg>
+            <svg class="Icon" width="0" height="0" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><title>Facebook Link</title><path d="M24.7 56.3h13v41.5c0 1.1.9 2 2 2h17a2 2 0 0 0 2-2V56.3h15.2a2 2 0 0 0 2-2V37.9c0-.5-.2-1.1-.6-1.4a2 2 0 0 0-1.4-.6h-15v-9.6c0-4.6 1.1-7 7.1-7h8.7a2 2 0 0 0 2-2V1.9A2 2 0 0 0 75.3 0H59C46 1.2 37.8 10.5 37.8 24.5v11.3h-13a2 2 0 0 0-2 2v16.4c-.1 1.2.8 2.1 1.9 2.1z"/>
+            </svg>
           </a>
 
         </dd>
@@ -56,47 +57,51 @@
       {% endif %}
     </dl>
   </li>
-  <li class="CsoMeta-dataSet">
-    <h3 class="CsoMeta-title">About this dataset</h3>
-    <ul class="u-listReset">
-      <li class="CsoMeta-column">
-        <h4 class="u-sReadOnly">Attribution</h4>
-        <dl class="u-listReset">
+  <li class="CsoMeta-container">
+    <div class="CsoMeta-dataSetWrap">
+      <div class="CsoMeta-dataSet">
+        <h3 class="CsoMeta-title">About this dataset</h3>
+        <ul class="u-listReset CsoMeta-list">
+          <li class="CsoMeta-column">
+            <h4 class="u-sReadOnly">Attribution</h4>
+            <dl class="u-listReset">
 
-          {% if include.author.name %}
-            <dt class="CsoMeta-listItem is-title">Author</dt>
-            <dd class="CsoMeta-listItem">
-              <div class="CsoMeta-item">{{ include.author.name }}</div>
-            </dd>
-          {% endif %}
-
-          {% if include.license %}
-            <dt class="CsoMeta-listItem is-title">License</dt>
-            <dd class="CsoMeta-listItem">
-              {% if include.license.url %}
-              <a class="CsoMeta-item CsoMeta-item--link" href="{{ include.license.url }}">{{ include.license.name }}</a>
-              {% else %}
-              {{ include.license.name }}
+              {% if include.author.name and include.author.name != '' %}
+                <dt class="CsoMeta-listItem is-title">Author</dt>
+                <dd class="CsoMeta-listItem">
+                  <div class="CsoMeta-item">{{ include.author.name }}</div>
+                </dd>
               {% endif %}
-            </dd>
-          {% endif %}
 
-        </dl>
-      </li>
-      <li class="CsoMeta-column">
-        <h4 class="u-sReadOnly">History</h4>
-        <dl class="u-listReset">
+              {% if include.license %}
+                <dt class="CsoMeta-listItem is-title">License</dt>
+                <dd class="CsoMeta-listItem">
+                  {% if include.license.url %}
+                  <a class="CsoMeta-item CsoMeta-item--link" href="{{ include.license.url }}">{{ include.license.name }}</a>
+                  {% else %}
+                  {{ include.license.name }}
+                  {% endif %}
+                </dd>
+              {% endif %}
 
-            {% if include.created AND include.last_updated %}
-              <dt class="CsoMeta-listItem is-title">Version History</dt>
-              <dd class="CsoMeta-listItem">
-                <div class="CsoMeta-item">First uploaded on {{ include.created | date_to_string }}</div>
-                <div class="CsoMeta-item">Last updated on {{ include.last_updated | date_to_string }}</div>
-              </dd>
-            {% endif %}
+            </dl>
+          </li>
+          <li class="CsoMeta-column">
+            <h4 class="u-sReadOnly">History</h4>
+            <dl class="u-listReset">
 
-        </dl>
-      </li>
-    </ul>
+                {% if include.created AND include.last_updated %}
+                  <dt class="CsoMeta-listItem is-title">Version History</dt>
+                  <dd class="CsoMeta-listItem">
+                    <div class="CsoMeta-item">First uploaded on {{ include.created | date_to_string }}</div>
+                    <div class="CsoMeta-item">Last updated on {{ include.last_updated | date_to_string }}</div>
+                  </dd>
+                {% endif %}
+
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </div>
   </li>
 </ul>

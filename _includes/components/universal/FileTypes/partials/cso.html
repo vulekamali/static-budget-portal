@@ -1,0 +1,24 @@
+<li class="u-listItemReset">
+  <h3 class="FileTypes-title">Documents included in this data set</h3>
+  <ul class="u-listReset">
+
+    {% for item in include.resources %}
+
+      <li class="FileTypes-item">
+        <div class="FileTypes-text">{{ item.description }}</div>
+        <a class="FileTypes-link" href="{{ item.url }}">
+          <span class="FileTypes-itemTitle">{{ item.name }} ({{ item.format }})</span>
+          <span class="FileTypes-iconArea">
+            <span class="FileTypes-logoWrap">
+              <svg class="Icon is-12" width="0" height="0" xmlns="http://www.w3.org/2000/svg" viewbox="157 347 100 100">
+                <path d="M250.5 402.4a2 2 0 0 0-1.9-1.3h-22.8v-52c0-1.2-1-2.1-2.1-2.1h-33.3a2 2 0 0 0-2.1 2v52.1h-23a2 2 0 0 0-1.4 3.6l41.6 41.7c.4.4.9.6 1.4.6.6 0 1.1-.2 1.5-.6l41.7-41.7a2 2 0 0 0 .4-2.3z"></path>
+              </svg>
+            </span>
+          </span>
+        </a>
+      </li>
+
+    {% endfor %}
+
+  </ul>
+</li>
