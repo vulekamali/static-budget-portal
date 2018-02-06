@@ -1,0 +1,89 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Economic Development and Tourism
+    organisational_unit: department
+    slug: economic-development-and-tourism
+    url_path: /2015-16/provincial/western-cape/departments/economic-development-and-tourism
+  id: 2015-16
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Economic Development and Tourism
+    organisational_unit: department
+    slug: economic-development-and-tourism
+    url_path: /2016-17/provincial/western-cape/departments/economic-development-and-tourism
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Economic Development and Tourism
+    organisational_unit: department
+    slug: economic-development-and-tourism
+    url_path: /2017-18/provincial/western-cape/departments/economic-development-and-tourism
+  id: 2017-18
+  is_selected: false
+government:
+  name: Western Cape
+  slug: western-cape
+government_functions: []
+intro: "## Vision\r\n\r\nThe Department\u2019s vision is a Western Cape that has a\
+  \ vibrant, innovative, and sustainable economy,\r\ncharacterised by growth, employment\
+  \ and increasing equity, and built on the full potential of all.\r\n\r\n\r\n\r\n\
+  ## Mission\r\n\r\nTo achieve the vision statement as noted above, the Department\
+  \ of Economic Development and Tourism will provide leadership to the Western Cape\
+  \ economy through the Department\u2019s\r\nunderstanding of the economy, its ability\
+  \ to identify economic opportunities and potential, and its\r\ncontribution to government\
+  \ economic priorities.\r\n\r\nThe Department will also act as a catalyst for the\
+  \ transformation of the economy and respond to the challenges and opportunities\
+  \ of its economic citizens, in order to support the government\u2019s goal of creation\
+  \ of opportunities for businesses and citizens to grow the economy and employment.\r\
+  \n\r\nLastly, it will contribute to the provision of a predictable, competitive,\
+  \ equitable and responsible environment for investment, enterprise and trade.\r\n\
+  \r\n\r\n\r\n## Core functions\r\n\r\nWith the adoption of Strategic Goal 1: Create\
+  \ opportunities for growth and jobs and its subsequent Strategic directive, the\
+  \ primary focus for Vote 12: Economic Development and Tourism is squarely placed\
+  \ on delivering effectively on the provision of an enabling business environment\
+  \ which will allow for the private sector to grow the economy and create jobs.\r\
+  \n\r\nFurthermore, there is a national drive and commitment to create jobs. This\
+  \ is demonstrated by the numerous incentives associated with National Government\u2019\
+  s approach to economic stimulation policies, where the emphasis has been placed\
+  \ on the creation of \u201Creal work opportunities\u201D.\r\n\r\nIn this context,\
+  \ this Department, has emphasised a strategic approach that will be grounded in\
+  \ the need to:\r\n\r\n* Create opportunities for growth;\r\n\r\n* Increase work\
+  \ opportunities for all citizens;\r\n\r\n* Creating an enabling environment for\
+  \ business and citizenry growth and development; and\r\n\r\n* Creating a competitive\
+  \ and productive economic Province."
+name: Economic Development and Tourism
+programmes:
+- name: Administration
+  total_budget: 39969000.0
+- name: Integrated Economic Development Services
+  total_budget: 59253000.0
+- name: Trade and Sector Development
+  total_budget: 257051000.0
+- name: Business Regulation and Governance
+  total_budget: 46339000.0
+- name: Economic Planning
+  total_budget: 22466000.0
+- name: Tourism Arts and Entertainment
+  total_budget: 42471000.0
+- name: Skills Development and Innovation
+  total_budget: 51290000.0
+selected_financial_year: 2015-16
+slug: economic-development-and-tourism
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 12 : Economic Development and Tourism':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/c6af03e4-57a2-4ef8-bcb2-bc1bb79be8d8/resource/f1d5735f-0d22-4522-bf54-c322339f8f85/download/wc-economic-development-and-tourism.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
+        - Vote 12 - Economic Development and Tourism.pdf
+vote_number: 12

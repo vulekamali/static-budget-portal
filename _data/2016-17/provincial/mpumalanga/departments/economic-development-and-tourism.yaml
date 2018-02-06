@@ -1,0 +1,82 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Economic Development and Tourism
+    organisational_unit: department
+    slug: economic-development-and-tourism
+    url_path: /2015-16/provincial/mpumalanga/departments/economic-development-and-tourism
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Economic Development And Tourism
+    organisational_unit: department
+    slug: economic-development-and-tourism
+    url_path: /2016-17/provincial/mpumalanga/departments/economic-development-and-tourism
+  id: 2016-17
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Economic Development and Tourism
+    organisational_unit: department
+    slug: economic-development-and-tourism
+    url_path: /2017-18/provincial/mpumalanga/departments/economic-development-and-tourism
+  id: 2017-18
+  is_selected: false
+government:
+  name: Mpumalanga
+  slug: mpumalanga
+government_functions: []
+intro: "## Vision\r\n\r\nAn Inclusive, Global Competitive Economy\r\n\r\n\r\n\r\n\
+  ## Mission\r\n\r\nDrive economic growth that creates decent employment and promote\
+  \ sustainable\r\ndevelopment through partnership.\r\n\r\n\r\n\r\n## Core functions\
+  \ and responsibilities\r\n\r\nThe core function and responsibilities of the Department\
+  \ is to develop policies aimed\r\nat growing the economy to create jobs in the Province\
+  \ and can be summarized as\r\nfollows:\r\n\r\n* Stimulate economic growth in the\
+  \ province by facilitating support and development\r\nof business enterprises, promote\
+  \ economic transformation, and provide strategic\r\neconomic development support\
+  \ to municipalities\r\n\r\n* Support the development of industry within the key\
+  \ economic sectors of the\r\nprovince and create a conducive environment for trade\
+  \ and investment. By ensuring\r\ngrowth in exports and direct investment, facilitate\
+  \ the implementation of economic\r\ninfrastructure projects and the development\
+  \ of competitive growth sectors in the Province\r\n\r\n* Regulate the Liquor and\
+  \ Gambling Industry and to create enabling legislative\r\nenvironment for Business\
+  \ to operate as well as the facilitation of fair trade and effective\r\nConsumer\
+  \ Protection.\r\n\r\n* Provision of economic policy direction and strategies in\
+  \ addition to conducting\r\nresearch on the provincial economy to inform strategy\
+  \ development by providing\r\ninformation on the economy in order to enable better\
+  \ decision making, monitoring and\r\nevaluating the impact of provincial policy\
+  \ and departmental programmes designed for\r\nsustained economic development.\r\n\
+  \r\n* Ensure tourism sector policy development, regulation and compliance and\r\n\
+  promotion of sector transformation in the province"
+name: Economic Development And Tourism
+programmes:
+- name: Administration
+  total_budget: 79602000.0
+- name: Integrated Economic Development
+  total_budget: 441078000.0
+- name: Trade and Sector Development
+  total_budget: 24558000.0
+- name: Business Regulation and Governance
+  total_budget: 85511000.0
+- name: Economic Planning
+  total_budget: 14183000.0
+- name: Tourism
+  total_budget: 349210000.0
+selected_financial_year: 2016-17
+slug: economic-development-and-tourism
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 06 : Economic Development And Tourism':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/59bfcdc2-0827-4f1b-a539-ef48de207d05/resource/a414c14c-dedb-433f-a421-7fdca01b1631/download/mpu-eco.-development-and-tourism.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
+        - Vote 06 - Economic Development and Tourism.pdf
+vote_number: 6

@@ -1,0 +1,64 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Sport, Recreation, Arts and Culture
+    organisational_unit: department
+    slug: sport-recreation-arts-and-culture
+    url_path: /2015-16/provincial/eastern-cape/departments/sport-recreation-arts-and-culture
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Sport, Recreation, Arts and Culture
+    organisational_unit: department
+    slug: sport-recreation-arts-and-culture
+    url_path: /2016-17/provincial/eastern-cape/departments/sport-recreation-arts-and-culture
+  id: 2016-17
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Sport, Recreation, Arts and Culture
+    organisational_unit: department
+    slug: sport-recreation-arts-and-culture
+    url_path: /2017-18/provincial/eastern-cape/departments/sport-recreation-arts-and-culture
+  id: 2017-18
+  is_selected: false
+government:
+  name: Eastern Cape
+  slug: eastern-cape
+government_functions: []
+intro: "## vision\r\n\r\na united active winning province throught sport, recreation\
+  \ , arts and culture\r\n\r\n\r\n\r\n\r\n\r\n## mission\r\n\r\nto develop and promote\
+  \ sport , recreaction , arts and culture for sspiritual , intellectual , physical\
+  \ and material \r\nadvancement of the people of the earstern cape\r\n\r\n\r\n\r\n\
+  ## core function and responsibilities\r\n\r\n* development , promotion and transformation\
+  \ of artist , cultural and sporting stryctures, and\r\n\r\n* conservation and preservation\
+  \ of culture heritage through the provisions of museums, libraries and archives\
+  \ services"
+name: Sport, Recreation, Arts and Culture
+programmes:
+- name: Administration
+  total_budget: 254984000.0
+- name: Cultural Affairs
+  total_budget: 185093000.0
+- name: Library And Archives Services
+  total_budget: 227163000.0
+- name: Sports And Recreation
+  total_budget: 176458000.0
+selected_financial_year: 2016-17
+slug: sport-recreation-arts-and-culture
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 14 : Sport, Recreation, Arts and Culture':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/edab2bbb-5890-47d5-80e6-2769e11cfd79/resource/5fe7515a-e6bc-4af6-b366-569462aea122/download/ec-sport-rec-arts-and-culture.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
+        - Vote 14 - Sport, Rec, Arts and Culture.pdf
+vote_number: 14

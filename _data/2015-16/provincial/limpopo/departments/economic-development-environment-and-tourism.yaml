@@ -1,0 +1,70 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Economic Development, Environment and Tourism
+    organisational_unit: department
+    slug: economic-development-environment-and-tourism
+    url_path: /2015-16/provincial/limpopo/departments/economic-development-environment-and-tourism
+  id: 2015-16
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Economic Development, Environment and Tourism
+    organisational_unit: department
+    slug: economic-development-environment-and-tourism
+    url_path: /2016-17/provincial/limpopo/departments/economic-development-environment-and-tourism
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Economic Development, Environment and Tourism
+    organisational_unit: department
+    slug: economic-development-environment-and-tourism
+    url_path: /2017-18/provincial/limpopo/departments/economic-development-environment-and-tourism
+  id: 2017-18
+  is_selected: false
+government:
+  name: Limpopo
+  slug: limpopo
+government_functions: []
+intro: "## Vision\r\n\r\nA competitive economy within a sustainable environment.\r\
+  \n\r\n\r\n\r\n## Mission\r\n\r\nTo create and facilitate the development of a competitive\
+  \ economy, sustainable environment and tourism growth.\r\n\r\n\r\n\r\n## Core functions\r\
+  \n\r\nThe mandate of the Department is to develop the provincial economy, promote\
+  \ and manage environmental and tourism activities.\r\n\r\nTo carry out this mandate,\
+  \ the department pursues the following:\r\n\r\n* Improve service delivery to communities\
+  \ and stakeholders through a skilled, accountable, corrupt free, development oriented\
+  \ and empowered and intergraded Public Service\r\n\r\n* Accelerate employment, economic\
+  \ growth and development\r\n\r\n* Ensure sustainable development through targeted\
+  \ intervention on environmental management, development of natural resources, creation\
+  \ of green jobs and proactive responses to climate change\r\n\r\n* To position Limpopo\
+  \ as a preferred tourism and investment destination within SADC and the World\r\n\
+  \r\n* Transform Limpopo into a world class knowledge society that uses ICT as an\
+  \ enabler of socio-economic development and ICT as a production sector."
+name: Economic Development, Environment and Tourism
+programmes:
+- name: Administration
+  total_budget: 304280000.0
+- name: Economic Development
+  total_budget: 440680000.0
+- name: Environmental Affairs
+  total_budget: 241817000.0
+- name: Tourism
+  total_budget: 174036000.0
+selected_financial_year: 2015-16
+slug: economic-development-environment-and-tourism
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 06 : Economic Development, Environment and Tourism':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/36bb3596-73a0-4cce-bc3b-0a1cb37ac51f/resource/ebefb9c9-a6ca-40d7-978c-c30d11c85107/download/lim-eco-dev-env-affairs-and-tourism.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
+        - Vote 06 - Economic Dev, Environm & Tourism.pdf
+vote_number: 6

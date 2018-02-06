@@ -1,0 +1,80 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Agriculture, Rural Development, Land And Environmental Affairs
+    organisational_unit: department
+    slug: agriculture-rural-development-land-and-environmental-affairs
+    url_path: /2015-16/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Agriculture, Rural Development, Land and Environmental Affairs
+    organisational_unit: department
+    slug: agriculture-rural-development-land-and-environmental-affairs
+    url_path: /2016-17/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
+  id: 2016-17
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Agriculture, Rural Development, Land and Environmental Affairs
+    organisational_unit: department
+    slug: agriculture-rural-development-land-and-environmental-affairs
+    url_path: /2017-18/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
+  id: 2017-18
+  is_selected: false
+government:
+  name: Mpumalanga
+  slug: mpumalanga
+government_functions: []
+intro: "## Vision\r\n\r\nVibrant, equitable, and sustainable urban and rural communities\
+  \ with a united and\r\nprosperous agricultural sector.\r\n\r\n\r\n\r\n## Mission\r\
+  \n\r\nTo facilitate an integrated, comprehensive & sustainable social & Agricultural\r\
+  \ndevelopment in rural and urban communities through ensuring cohesion and collaboration\r\
+  \nby all sectors of society.\r\n\r\n\r\n\r\n## Core functions and responsibilities\r\
+  \n\r\nThe Department will continue with the implementation of the following priority\
+  \ policy\r\ninitiatives in response to Outcome 7 and Outcome 10 in particular\r\n\
+  \r\n* Land and agrarian reform development\r\n\r\n* Crop and Livestock production\
+  \ (Integrated Food Security and Nutrition Programme\r\n(IFSNP))\r\n\r\n* Livestock\
+  \ improvement strategy , and Aquaculture and fisheries strategy\r\n\r\n* The Agricultural\
+  \ Risk Disaster Management Implementation Strategy\r\n\r\n* Provincial Land Care\
+  \ Strategy (Integrated resource management)\r\n\r\n* Provincial Comprehensive Rural\
+  \ Development Strategy\r\n\r\n* Protect and enhance our environmental assets and\
+  \ natural resources\r\n\r\n* Rural Development"
+name: Agriculture, Rural Development, Land and Environmental Affairs
+programmes:
+- name: Administration
+  total_budget: 134005000.0
+- name: Sustainable Resource Management
+  total_budget: 80075000.0
+- name: Farmer Support and Development
+  total_budget: 359281000.0
+- name: Veterinary Services
+  total_budget: 117753000.0
+- name: Research and Technology Development Services
+  total_budget: 61825000.0
+- name: Agricultural Economics Services
+  total_budget: 9516000.0
+- name: Structured Agricultural Education and Training
+  total_budget: 17379000.0
+- name: Rural Development Coordination
+  total_budget: 101337000.0
+- name: Environmental Affairs
+  total_budget: 92962000.0
+selected_financial_year: 2016-17
+slug: agriculture-rural-development-land-and-environmental-affairs
+sphere:
+  name: Provincial
+  slug: provincial
+treasury_datasets:
+  'EPRE for Vote 05 : Agriculture, Rural Development, Land and Environmental Affairs':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/cf28d7c2-da01-42e7-b9e1-7e565ce37ca3/resource/b2dfbb0d-e22c-4069-8a0d-af2dee154d0e/download/mpu-agric.-rural-dev.-land-and-env.-affairs.xlsm
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
+        - Vote 05 - Agriculture, Rural deve, Land and Environ.pdf
+vote_number: 5
