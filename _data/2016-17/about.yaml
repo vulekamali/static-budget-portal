@@ -1,0 +1,23 @@
+financial_years:
+- closest_match:
+    is_exact_match: true
+    slug: about
+    url_path: /2015-16/about
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    slug: about
+    url_path: /2016-17/about
+  id: 2016-17
+  is_selected: true
+- closest_match:
+    is_exact_match: true
+    slug: about
+    url_path: /2017-18/about
+  id: 2017-18
+  is_selected: false
+organisational_unit: about
+selected_financial_year: 2016-17
+slug: about
+url_path: /2016-17/about

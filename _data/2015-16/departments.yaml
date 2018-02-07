@@ -2,7 +2,7 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Departments
-    organisational_unit: financial_year
+    organisational_unit: department-list
     slug: departments
     url_path: 2015-16/departments
   id: 2015-16
@@ -10,7 +10,7 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Departments
-    organisational_unit: financial_year
+    organisational_unit: department-list
     slug: departments
     url_path: 2016-17/departments
   id: 2016-17
@@ -18,7 +18,7 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Departments
-    organisational_unit: financial_year
+    organisational_unit: department-list
     slug: departments
     url_path: 2017-18/departments
   id: 2017-18
@@ -187,6 +187,7 @@ national:
     vote_number: 40
   name: South Africa
   slug: south-africa
+organisational_unit: department-list
 provincial:
 - departments:
   - name: Premier
@@ -712,3 +713,4 @@ provincial:
   name: Eastern Cape
   slug: eastern-cape
 selected_financial_year: 2015-16
+slug: departments

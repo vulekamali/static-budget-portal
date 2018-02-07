@@ -235,7 +235,7 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Contributed Data
-    organisational_unit: financial_year
+    organisational_unit: dataset-list
     slug: contributed-data
     url_path: 2015-16/contributed-data
   id: 2015-16
@@ -243,7 +243,7 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Contributed Data
-    organisational_unit: financial_year
+    organisational_unit: dataset-list
     slug: contributed-data
     url_path: 2016-17/contributed-data
   id: 2016-17
@@ -251,9 +251,11 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Contributed Data
-    organisational_unit: financial_year
+    organisational_unit: dataset-list
     slug: contributed-data
     url_path: 2017-18/contributed-data
   id: 2017-18
   is_selected: true
+organisational_unit: dataset-list
 selected_financial_year: 2017-18
+slug: contributed-data

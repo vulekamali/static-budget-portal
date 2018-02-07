@@ -14,17 +14,17 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: 2016-17
-    organisational_unit: financial_year
+    organisational_unit: department-list
     slug: 2016-17
-    url_path: /2016-17
+    url_path: /2016-17/departments
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: false
     name: 2017-18
-    organisational_unit: financial_year
+    organisational_unit: department-list
     slug: 2017-18
-    url_path: /2017-18
+    url_path: /2017-18/departments
   id: 2017-18
   is_selected: false
 intro: Analysis of the Eastern Cape Department of Human Settlements budget allocation
@@ -36,6 +36,7 @@ license:
 methodology: Desktop research. Document analysis on Human Settlements mid-term and
   annual reports. No field work was undertaken.
 name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
+organisational_unit: dataset
 organization:
   email: psam-admin@ru.ac.za
   facebook: publicserviceaccountabilitymonitor
