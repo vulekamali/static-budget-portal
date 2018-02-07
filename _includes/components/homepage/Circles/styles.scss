@@ -16,35 +16,35 @@ $mobile-break: 750px;
   background-color: #fff;
   text-decoration: none;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
-  
+
   &:hover {
     background-color: darken(white, 15%);
   }
-  
+
   &.is-positive {
     border-color: #7bb344;
-    
+
     &:hover {
       border-color: darken(#7bb344, 15%);
     }
   }
-  
+
   &.is-negative {
     border-color: #c66347;
-      
+
     &:hover {
       border-color: darken(#c66347, 15%);
     }
   }
-  
+
   &.is-prominent {
     border-color: #ad3c64;
-    
+
     &:hover {
       border-color: darken(#ad3c64, 15%);
     }
   }
-  
+
   @media screen and (min-width: $mobile-break) {
     border-radius: 50%;
     width: 160px;
@@ -56,7 +56,7 @@ $mobile-break: 750px;
 
 .Circles-float {
   display: none;
-  
+
   @media screen and (min-width: $mobile-break) {
     display: block;
     position: absolute;
@@ -73,13 +73,13 @@ $mobile-break: 750px;
   padding: 10px;
   background: #e6e6e6;
   border-radius: 15px;
-  
+
   @media screen and (min-width: $mobile-break) {
     margin: 0;
     float: left;
     border-radius: 50%;
     position: relative;
-  
+
     &:nth-child(n+2) {
       margin-left: 30px;
     }
