@@ -6,9 +6,9 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: 2015-16
-    organisational_unit: financial_year
+    organisational_unit: department-list
     slug: 2015-16
-    url_path: /2015-16
+    url_path: /2015-16/departments
   id: 2015-16
   is_selected: false
 - closest_match:
@@ -22,9 +22,9 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: 2017-18
-    organisational_unit: financial_year
+    organisational_unit: department-list
     slug: 2017-18
-    url_path: /2017-18
+    url_path: /2017-18/departments
   id: 2017-18
   is_selected: false
 intro: Analysis of the Eastern Cape Department of Health's budget allocation for the
@@ -36,6 +36,7 @@ license:
 methodology: Desktop research. Document analysis on Human Settlements mid-term and
   annual reports. No field work was undertaken.
 name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
+organisational_unit: dataset
 organization:
   email: psam-admin@ru.ac.za
   facebook: publicserviceaccountabilitymonitor

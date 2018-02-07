@@ -15,17 +15,17 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: 2016-17
-    organisational_unit: financial_year
+    organisational_unit: department-list
     slug: 2016-17
-    url_path: /2016-17
+    url_path: /2016-17/departments
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: false
     name: 2017-18
-    organisational_unit: financial_year
+    organisational_unit: department-list
     slug: 2017-18
-    url_path: /2017-18
+    url_path: /2017-18/departments
   id: 2017-18
   is_selected: false
 intro: "The study, Budgets & Bricks: Progress with school infrastructure, explores\
@@ -45,6 +45,7 @@ license:
 methodology: ''
 name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
   Primary School case'
+organisational_unit: dataset
 organization:
   email: centreforchildlaw@up.ac.za
   facebook: ''
