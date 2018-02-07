@@ -35,6 +35,10 @@ def write_basic_page(page_url_path, page_yaml, layout=None):
             year['closest_match']['url_path'],
             'active' if year['is_selected'] else 'link'
         ])
+    if page['organisational_unit'] == 'learning':
+        active = 'learning-centre'
+    else:
+        active = None
     title = page['slug'].replace('-', ' ').title()
     with open(file_path, "wb") as outfile:
         outfile.write(
@@ -51,7 +55,7 @@ def write_basic_page(page_url_path, page_yaml, layout=None):
                  page['slug'],
                  layout or page['slug'],
                  yaml.dump({'years': years}),
-                 page['slug'],
+                 active or page['slug'],
                  title,
              ))
 
