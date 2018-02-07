@@ -1,3 +1,11 @@
+"""
+
+Generate routing and data files from the dynamic site's output.
+
+All url_path variables should start with /
+
+"""
+
 import os
 import requests
 import yaml
@@ -26,7 +34,7 @@ def ensure_file_dirs(file_path):
 
 def write_basic_page(page_url_path, page_yaml, layout=None):
     page = yaml.load(page_yaml)
-    file_path = "%s.md" % page_url_path
+    file_path = "%s.md" % page_url_path[1:]
     ensure_file_dirs(file_path)
     years = []
     for year in page['financial_years']:
@@ -99,12 +107,12 @@ def write_dataset_page(dataset_url_path, dataset_yaml):
 # Basic Pages
 for year_slug in YEAR_SLUGS:
     for slug in BASIC_PAGE_SLUGS:
-        url_path = '%s/%s' % (year_slug, slug)
+        url_path = '/%s/%s' % (year_slug, slug)
         print url_path
-        url = portal_url + url_path + ".yaml"
+        url = portal_url + url_path[1:] + ".yaml"
         r = requests.get(url)
         r.raise_for_status()
-        path = '_data/%s.yaml' % url_path
+        path = '_data%s.yaml' % url_path
 
         with open(path, 'wb') as file:
             file.write(r.text)
@@ -114,11 +122,12 @@ for year_slug in YEAR_SLUGS:
 
 # Datasets
 for year_slug in YEAR_SLUGS:
-    listing_url_path = year_slug + '/contributed-data'
-    listing_url = portal_url + listing_url_path + '.yaml'
+    listing_url_path = '/%s/contributed-data' % year_slug
+    print listing_url_path
+    listing_url = portal_url + listing_url_path[1:] + '.yaml'
     r = requests.get(listing_url)
     r.raise_for_status()
-    listing_path = os.path.join('_data', listing_url_path + '.yaml')
+    listing_path = '_data%s.yaml' % listing_url_path
 
     with open(listing_path, 'wb') as listing_file:
         listing_file.write(r.text)
@@ -143,11 +152,12 @@ for year_slug in YEAR_SLUGS:
 
 # Departments
 for year_slug in YEAR_SLUGS:
-    listing_url_path = year_slug + '/departments'
-    listing_url = portal_url + listing_url_path + '.yaml'
+    listing_url_path = '/%s/departments' % year_slug
+    print listing_url_path
+    listing_url = portal_url + listing_url_path[1:] + '.yaml'
     r = requests.get(listing_url)
     r.raise_for_status()
-    listing_path = os.path.join('_data', listing_url_path + '.yaml')
+    listing_path = '_data%s.yaml' % listing_url_path
 
     with open(listing_path, 'wb') as listing_file:
         listing_file.write(r.text)
@@ -160,10 +170,8 @@ for year_slug in YEAR_SLUGS:
                 print department['url_path']
 
                 department_path = department['url_path'] + '.yaml'
-                if department_path.startswith('/'):
-                    department_path = department_path[1:]
-                department_url = portal_url + department_path
-                department_context_path = '_data/' + department_path
+                department_url = portal_url + department_path[1:]
+                department_context_path = '_data/' + department_path[1:]
                 ensure_file_dirs(department_context_path)
 
                 r = requests.get(department_url)
