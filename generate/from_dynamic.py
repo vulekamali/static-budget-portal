@@ -68,6 +68,40 @@ def write_basic_page(page_url_path, page_yaml, layout=None):
              ))
 
 
+def write_financial_year(year_slug, static_path):
+    url_path = '/%s' % year_slug
+    print url_path
+    url = portal_url + url_path[1:] + ".yaml"
+    r = requests.get(url)
+    r.raise_for_status()
+    path = '_data%s/index.yaml' % static_path
+
+    with open(path, 'wb') as file:
+        file.write(r.text)
+
+    years = []
+    page = yaml.load(r.text)
+    for year in page['financial_years']:
+        years.append([
+            year['id'],
+            year['closest_match']['url_path'],
+            'active' if year['is_selected'] else 'link'
+        ])
+    file_path = ".%s/index.md" % static_path
+    with open(file_path, "wb") as outfile:
+        outfile.write(
+            ("---\n"
+             "layout: homepage\n"
+             "%s"
+             "financial_year: %s\n"
+             "active: home\n"
+             "nested: false\n"
+             "---") % (
+                 yaml.dump({'years': years}),
+                 year_slug,
+             ))
+
+
 def write_department_page(department_url_path, department_yaml):
     department = yaml.load(department_yaml)
     file_path = ".%s.html" % department_url_path
@@ -105,7 +139,12 @@ def write_dataset_page(dataset_url_path, dataset_yaml):
 
 
 # Basic Pages
+
+write_financial_year(YEAR_SLUGS[-1], "")
+
 for year_slug in YEAR_SLUGS:
+    write_financial_year(year_slug, "/%s" % year_slug)
+
     for slug in BASIC_PAGE_SLUGS:
         url_path = '/%s/%s' % (year_slug, slug)
         print url_path
