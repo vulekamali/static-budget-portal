@@ -8,6 +8,13 @@ YEAR_SLUGS = [
     '2017-18',
 ]
 
+BASIC_PAGE_SLUGS = [
+    'about',
+    'resources',
+    'search-result',
+    'videos',
+]
+
 portal_url = os.environ.get('PORTAL_URL', "https://dynamicbudgetportal.openup.org.za/")
 
 
@@ -15,6 +22,23 @@ def ensure_file_dirs(file_path):
     dirname = os.path.dirname(file_path)
     if not os.path.exists(dirname):
         os.makedirs(dirname)
+
+
+def write_basic_page(page_url_path, page_yaml, layout=None):
+    page = yaml.load(page_yaml)
+    file_path = "%s.md" % page_url_path
+    ensure_file_dirs(file_path)
+    with open(file_path, "wb") as outfile:
+        outfile.write(
+            ("---\n"
+             "financial_year: %s\n"
+             "slug: %s\n"
+             "layout: %s\n"
+             "---") % (
+                 page['selected_financial_year'],
+                 page['slug'],
+                 layout or page['slug'],
+             ))
 
 
 def write_department_page(department_url_path, department_yaml):
@@ -53,6 +77,22 @@ def write_dataset_page(dataset_url_path, dataset_yaml):
              ))
 
 
+# Basic Pages
+for year_slug in YEAR_SLUGS:
+    for slug in BASIC_PAGE_SLUGS:
+        url_path = '%s/%s' % (year_slug, slug)
+        print url_path
+        url = portal_url + url_path + ".yaml"
+        r = requests.get(url)
+        r.raise_for_status()
+        path = '_data/%s.yaml' % url_path
+
+        with open(path, 'wb') as file:
+            file.write(r.text)
+
+        write_basic_page(url_path, r.text)
+
+
 # Datasets
 for year_slug in YEAR_SLUGS:
     listing_url_path = year_slug + '/contributed-data.yaml'
@@ -63,6 +103,7 @@ for year_slug in YEAR_SLUGS:
 
     with open(listing_path, 'wb') as listing_file:
         listing_file.write(r.text)
+    write_basic_page(listing_url_path, r.text)
 
     listing = yaml.load(r.text)
     for dataset in listing['datasets']:
@@ -91,6 +132,7 @@ for year_slug in YEAR_SLUGS:
 
     with open(listing_path, 'wb') as listing_file:
         listing_file.write(r.text)
+    write_basic_page(listing_url_path, r.text, 'department_list')
 
     listing = yaml.load(r.text)
     for sphere in ('national', 'provincial'):
