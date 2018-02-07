@@ -28,16 +28,31 @@ def write_basic_page(page_url_path, page_yaml, layout=None):
     page = yaml.load(page_yaml)
     file_path = "%s.md" % page_url_path
     ensure_file_dirs(file_path)
+    years = []
+    for year in page['financial_years']:
+        years.append([
+            year['id'],
+            year['closest_match']['url_path'],
+            'active' if year['is_selected'] else 'link'
+        ])
+    title = page['slug'].replace('-', ' ').title()
     with open(file_path, "wb") as outfile:
         outfile.write(
             ("---\n"
              "financial_year: %s\n"
              "slug: %s\n"
              "layout: %s\n"
+             "%s"
+             "active: %s\n"
+             "title: %s\n"
+             "nested: false\n"
              "---") % (
                  page['selected_financial_year'],
                  page['slug'],
                  layout or page['slug'],
+                 yaml.dump({'years': years}),
+                 page['slug'],
+                 title,
              ))
 
 
