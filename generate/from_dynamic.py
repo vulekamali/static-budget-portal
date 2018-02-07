@@ -95,11 +95,11 @@ for year_slug in YEAR_SLUGS:
 
 # Datasets
 for year_slug in YEAR_SLUGS:
-    listing_url_path = year_slug + '/contributed-data.yaml'
-    listing_url = portal_url + listing_url_path
+    listing_url_path = year_slug + '/contributed-data'
+    listing_url = portal_url + listing_url_path + '.yaml'
     r = requests.get(listing_url)
     r.raise_for_status()
-    listing_path = os.path.join('_data', listing_url_path)
+    listing_path = os.path.join('_data', listing_url_path + '.yaml')
 
     with open(listing_path, 'wb') as listing_file:
         listing_file.write(r.text)
@@ -124,11 +124,11 @@ for year_slug in YEAR_SLUGS:
 
 # Departments
 for year_slug in YEAR_SLUGS:
-    listing_url_path = year_slug + '/departments.yaml'
-    listing_url = portal_url + listing_url_path
+    listing_url_path = year_slug + '/departments'
+    listing_url = portal_url + listing_url_path + '.yaml'
     r = requests.get(listing_url)
     r.raise_for_status()
-    listing_path = os.path.join('_data', listing_url_path)
+    listing_path = os.path.join('_data', listing_url_path + '.yaml')
 
     with open(listing_path, 'wb') as listing_file:
         listing_file.write(r.text)
