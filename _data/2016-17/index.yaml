@@ -18,7 +18,19 @@ financial_years:
   id: 2017-18
   is_selected: false
 organisational_unit: financial_year
-revenue: []
+revenue:
+- amount: '441040413000'
+  category: Personal income tax
+- amount: '301259739000'
+  category: Value-added tax
+- amount: '198292812000'
+  category: Corporate income tax
+- amount: '64495096000'
+  category: General fuel levy
+- amount: 95319569000
+  category: Customs and Excise Duties
+- amount: 74380143000
+  category: Other
 selected_financial_year: 2016-17
 slug: 2016-17
 url_path: /2016-17
