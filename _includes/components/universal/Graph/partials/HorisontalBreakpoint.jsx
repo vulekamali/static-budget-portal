@@ -1,8 +1,9 @@
 import { h } from 'preact';
+import trimValues from './trimValues.js';
 
 
 export default function HorisontalBreakpoint({ styling, totalGroupSpace, rank }) {
-  const { units, maxValue, fontSize, valueSpace, buffer, padding, labelBreakpoints } = styling;
+  const { maxValue, fontSize, valueSpace, buffer, padding, labelBreakpoints } = styling;
   const debugIteration = (valueSpace - buffer) / labelBreakpoints;
   const iterationValue = maxValue / (labelBreakpoints - 1);
   const iterationPosition = (valueSpace - buffer) / (labelBreakpoints - 1);
@@ -25,7 +26,7 @@ export default function HorisontalBreakpoint({ styling, totalGroupSpace, rank })
         y={padding[0] + totalGroupSpace + (buffer * 2) + fontSize}
         fontSize={fontSize}
       >
-        {Math.ceil(iterationValue * rank)}{units}
+        {trimValues(iterationValue * rank)}
       </text>
     </g>
   );

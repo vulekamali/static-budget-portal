@@ -1,9 +1,10 @@
 import { h } from 'preact';
+import trimValues from './trimValues.js';
 
 
 export default function VerticalTooltip({ styling, xTriggerPosition, xPosition, yPosition, amount, totalGroupSpace }) {
 
-  const { barWidth, lineGutter, padding, popupWidth, popupHeight, popupFontSize, units } = styling;
+  const { barWidth, lineGutter, padding, popupWidth, popupHeight, popupFontSize } = styling;
 
   // const { popUpOffset } = styling;
 
@@ -68,7 +69,7 @@ export default function VerticalTooltip({ styling, xTriggerPosition, xPosition, 
         fontSize={popupFontSize}
         className="Graph-tooltipText"
       >
-        {amount}{units}
+        {trimValues(amount)}
       </text>
     </g>
   );

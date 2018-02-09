@@ -21,7 +21,7 @@ layout: page-shell
       <div class="Card js-tooltips" data-year="{{ page.financial_year }}">{{ page_data.intro  | markdownify }}</div>
 
       <div class="Page-section">
-        {% include components/department-page/Programmes/index.html programmes=page_data.programmes %}
+          {% include components/universal/Graph/index.html graph=page_data.programmes type="bar" %}
       </div>
 
     </main>

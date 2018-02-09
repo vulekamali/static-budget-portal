@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import trimValues from './trimValues.js';
 
 
 export default function HorisontalTooltip({ styling, xTriggerPosition, xPosition, yPosition, amount, totalGroupSpace }) {
@@ -72,7 +73,7 @@ export default function HorisontalTooltip({ styling, xTriggerPosition, xPosition
         fontSize={popupFontSize}
         className="Graph-tooltipText"
       >
-        {Math.ceil(amount)}{units}
+        {trimValues(amount)}
       </text>
     </g>
   );
