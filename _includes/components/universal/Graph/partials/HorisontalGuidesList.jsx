@@ -20,9 +20,13 @@ export default function HorisontalGuideList({ styling, totalGroupSpace }) {
 
       {
         breakpointArray.map((val, index) => {
-          return (
-            <HorisontalGuide rank={index} {...{ styling, totalGroupSpace }} />
-          );
+          if (index !== breakpointArray.length - 1) {
+            return (
+              <HorisontalGuide rank={index} {...{ styling, totalGroupSpace }} />
+            );
+          }
+
+          return null;
         })
       }
     </g>

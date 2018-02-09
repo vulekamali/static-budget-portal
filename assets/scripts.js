@@ -1331,11 +1331,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(110)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(115)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(112)();
+  module.exports = __webpack_require__(117)();
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
@@ -2674,7 +2674,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   );
 });
 //# sourceMappingURL=fuse.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(128)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(133)(module)))
 
 /***/ }),
 /* 13 */
@@ -3196,22 +3196,33 @@ function HorisontalBreakpoint(_ref) {
   var styling = _ref.styling,
       totalGroupSpace = _ref.totalGroupSpace,
       rank = _ref.rank;
-  var valueSpace = styling.valueSpace,
+  var units = styling.units,
+      maxValue = styling.maxValue,
+      fontSize = styling.fontSize,
+      valueSpace = styling.valueSpace,
       buffer = styling.buffer,
       padding = styling.padding,
       labelBreakpoints = styling.labelBreakpoints;
 
-  var iteration = (valueSpace - buffer) / labelBreakpoints;
+  var debugIteration = (valueSpace - buffer) / labelBreakpoints;
+  var iterationValue = maxValue / (labelBreakpoints - 1);
+  var iterationPosition = (valueSpace - buffer) / (labelBreakpoints - 1);
 
-  return (0, _preact.h)("rect", {
-    x: padding[3] + buffer + rank * iteration,
-    y: padding[0] + totalGroupSpace + buffer * 2,
-    height: padding[2] - buffer,
-    width: iteration,
-    fill: "none",
-    stroke: "red",
-    opacity: "0.5"
-  });
+  return (0, _preact.h)(
+    "g",
+    null,
+    (0, _preact.h)(
+      "text",
+      {
+        className: "Graph-label",
+        x: padding[3] + buffer + rank * iterationPosition,
+        y: padding[0] + totalGroupSpace + buffer * 2 + fontSize,
+        fontSize: fontSize
+      },
+      Math.ceil(iterationValue * rank),
+      units
+    )
+  );
 }
 
 /***/ }),
@@ -3312,21 +3323,21 @@ __webpack_require__(66);
 
 __webpack_require__(71);
 
-__webpack_require__(94);
+__webpack_require__(99);
 
-__webpack_require__(95);
+__webpack_require__(100);
 
-__webpack_require__(101);
+__webpack_require__(106);
 
-__webpack_require__(108);
+__webpack_require__(113);
 
-__webpack_require__(118);
+__webpack_require__(123);
 
-__webpack_require__(130);
+__webpack_require__(135);
 
-__webpack_require__(134);
+__webpack_require__(139);
 
-__webpack_require__(140);
+__webpack_require__(145);
 
 /***/ }),
 /* 29 */
@@ -7208,11 +7219,11 @@ var GraphContainer = function (_Component) {
     var _this = _possibleConstructorReturn(this, (GraphContainer.__proto__ || Object.getPrototypeOf(GraphContainer)).call(this, props));
 
     _this.state = {
-      fontSize: 14,
-      popupFontSize: 14,
+      fontSize: null,
+      popupFontSize: null,
       barWidth: 12,
       lineGutter: 4,
-      valueSpace: 620,
+      valueSpace: null,
       groupMargin: 40,
       titleHeight: 20,
       units: 'bn',
@@ -7220,16 +7231,53 @@ var GraphContainer = function (_Component) {
       popupWidth: 60,
       popupHeight: 30,
       popUpOffset: 6,
-      labelBreakpoints: 4,
-      padding: [230, 30, 90, 60],
+      popupCentre: 5,
+      labelBreakpoints: null,
+      padding: [0, 80, 60, 0],
       buffer: 20
     };
 
     var breakpointsConfig = {
-      100: function _() {
+      430: function _() {
         return _this.setState({
+          valueSpace: 320,
+          fontSize: 55,
+          popupFontSize: 55,
+          padding: [0, 80, 130, 0],
+          lineGutter: 15,
+          popupHeight: 25,
+          popupCentre: 5,
+          titleHeight: 70,
+          barWidth: 15,
+          groupMargin: 10
+        });
+      },
+      600: function _() {
+        return _this.setState({
+          valueSpace: 410,
+          fontSize: 24,
+          popupFontSize: 24,
+          padding: [0, 80, 80, 0],
+          lineGutter: 15,
+          popupHeight: 25,
+          popupCentre: 5,
+          titleHeight: 40,
+          barWidth: 15,
+          groupMargin: 30
+        });
+      },
+      1080: function _() {
+        return _this.setState({
+          valueSpace: 510,
           fontSize: 14,
-          valueFontSize: 14
+          popupFontSize: 14,
+          padding: [0, 80, 60, 0],
+          lineGutter: 8,
+          popupHeight: 30,
+          popupCentre: 5,
+          titleHeight: 25,
+          barWidth: 12,
+          groupMargin: 40
         });
       }
     };
@@ -7390,25 +7438,33 @@ var _Grid = __webpack_require__(81);
 
 var _Grid2 = _interopRequireDefault(_Grid);
 
-var _HoristonalLineGroupList = __webpack_require__(82);
-
-var _HoristonalLineGroupList2 = _interopRequireDefault(_HoristonalLineGroupList);
-
-var _VerticalLineGroupList = __webpack_require__(84);
+var _VerticalLineGroupList = __webpack_require__(82);
 
 var _VerticalLineGroupList2 = _interopRequireDefault(_VerticalLineGroupList);
 
-var _VerticalGuidesList = __webpack_require__(87);
+var _VerticalGuidesList = __webpack_require__(85);
 
 var _VerticalGuidesList2 = _interopRequireDefault(_VerticalGuidesList);
 
-var _VerticalTooltipsList = __webpack_require__(89);
+var _VerticalTooltipsList = __webpack_require__(87);
 
 var _VerticalTooltipsList2 = _interopRequireDefault(_VerticalTooltipsList);
 
-var _HorisontalGuidesList = __webpack_require__(92);
+var _HorisontalGuidesList = __webpack_require__(90);
 
 var _HorisontalGuidesList2 = _interopRequireDefault(_HorisontalGuidesList);
+
+var _HorisontalLineGroupList = __webpack_require__(92);
+
+var _HorisontalLineGroupList2 = _interopRequireDefault(_HorisontalLineGroupList);
+
+var _VerticalLabelList = __webpack_require__(94);
+
+var _VerticalLabelList2 = _interopRequireDefault(_VerticalLabelList);
+
+var _HorisontalTooltipsList = __webpack_require__(96);
+
+var _HorisontalTooltipsList2 = _interopRequireDefault(_HorisontalTooltipsList);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -7426,26 +7482,17 @@ function GraphMarkup(_ref) {
   var height = padding[0] + totalGroupSpace + padding[2];
   var width = padding[3] + valueSpace + padding[1];
 
-  var columnChart = (0, _preact.h)(
-    'g',
-    null,
-    (0, _preact.h)(_VerticalBreakpointsList2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_VerticalGuidesList2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_HorisontalLabelList2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
-    (0, _preact.h)(_Grid2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_VerticalLineGroupList2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
-    (0, _preact.h)(_VerticalTooltipsList2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling })
-  );
+  // const columnChart = (
+  //   <g>
+  //     <VerticalBreakpointsList {...{ styling, totalGroupSpace }} />
+  //     <VerticalGuidesList {...{ styling, totalGroupSpace }} />
 
-  var barChart = (0, _preact.h)(
-    'g',
-    null,
-    (0, _preact.h)(_HorisontalBreakpointsList2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_HorisontalGuidesList2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_Grid2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_VerticalLineGroupList2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
-    (0, _preact.h)(_VerticalTooltipsList2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling })
-  );
+  //     <HorisontalLabelList {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
+  //     <Grid {...{ styling, totalGroupSpace }} />
+  //     <VerticalLineGroupList {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
+  //     <VerticalTooltipsList {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
+  //   </g>
+  // );
 
   return (0, _preact.h)(
     'svg',
@@ -7455,7 +7502,11 @@ function GraphMarkup(_ref) {
       xmlns: 'http://www.w3.org/2000/svg',
       viewBox: '0 0 ' + width + ' ' + height
     }, { width: width, height: height }),
-    barChart
+    (0, _preact.h)(_HorisontalBreakpointsList2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
+    (0, _preact.h)(_HorisontalGuidesList2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
+    (0, _preact.h)(_Grid2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
+    (0, _preact.h)(_HorisontalLineGroupList2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
+    (0, _preact.h)(_HorisontalTooltipsList2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling })
   );
 }
 
@@ -7575,14 +7626,6 @@ function HorisontalBreakpointsList(_ref) {
   return (0, _preact.h)(
     'g',
     { className: 'Graph-verticalLabelList' },
-    (0, _preact.h)('rect', {
-      x: padding[3] + buffer,
-      y: padding[0] + totalGroupSpace + buffer,
-      height: padding[2] - buffer,
-      width: padding[3] + valueSpace - (padding[2] + buffer),
-      fill: 'red',
-      opacity: '0.5'
-    }),
     breakpointArray.map(function (val, index) {
       return (0, _preact.h)(_HorisontalBreakpoint2.default, _extends({ rank: index }, { styling: styling, totalGroupSpace: totalGroupSpace }));
     })
@@ -7749,120 +7792,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-exports.default = HoristonalLineGroupList;
-
-var _preact = __webpack_require__(0);
-
-var _HorisontalLineGroup = __webpack_require__(83);
-
-var _HorisontalLineGroup2 = _interopRequireDefault(_HorisontalLineGroup);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function HoristonalLineGroupList(_ref) {
-  var totalGroupSpace = _ref.totalGroupSpace,
-      groupSpaceArray = _ref.groupSpaceArray,
-      items = _ref.items,
-      styling = _ref.styling;
-
-  var titles = Object.keys(items);
-  var padding = styling.padding,
-      buffer = styling.buffer,
-      valueSpace = styling.valueSpace;
-
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'LineGroupList' },
-    (0, _preact.h)('rect', {
-      x: padding[3] + buffer,
-      y: padding[0],
-      width: valueSpace - buffer,
-      height: totalGroupSpace - buffer,
-      fill: 'red',
-      opacity: '0.5'
-    }),
-    titles.map(function (key, index) {
-      return (0, _preact.h)(_HorisontalLineGroup2.default, _extends({
-        rank: index,
-        lines: items[key],
-        title: key
-      }, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, styling: styling }));
-    })
-  );
-}
-
-/***/ }),
-/* 83 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = HorisontalLineGroup;
-
-var _preact = __webpack_require__(0);
-
-function HorisontalLineGroup(_ref) {
-  var totalGroupSpace = _ref.totalGroupSpace,
-      groupSpaceArray = _ref.groupSpaceArray,
-      rank = _ref.rank,
-      lines = _ref.lines,
-      title = _ref.title,
-      styling = _ref.styling;
-  var barWidth = styling.barWidth,
-      titleHeight = styling.titleHeight,
-      padding = styling.padding,
-      buffer = styling.buffer,
-      valueSpace = styling.valueSpace;
-
-
-  var groupSpace = groupSpaceArray[rank];
-
-  var previousSpace = groupSpaceArray.reduce(function (result, val, index) {
-    if (index < rank) {
-      return result + val;
-    }
-
-    return result;
-  }, 0);
-
-  return (0, _preact.h)(
-    "g",
-    { className: "Graph-group" },
-    (0, _preact.h)("rect", {
-      x: padding[3] + buffer,
-      y: padding[0] + previousSpace,
-      width: valueSpace - buffer,
-      height: groupSpace,
-      fill: "none",
-      stroke: "red",
-      opacity: "1"
-    })
-  );
-}
-
-/***/ }),
-/* 84 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 exports.default = VerticalLineGroupList;
 
 var _preact = __webpack_require__(0);
 
-var _VerticalLineGroup = __webpack_require__(85);
+var _VerticalLineGroup = __webpack_require__(83);
 
 var _VerticalLineGroup2 = _interopRequireDefault(_VerticalLineGroup);
 
@@ -7891,7 +7825,7 @@ function VerticalLineGroupList(_ref) {
 }
 
 /***/ }),
-/* 85 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7904,7 +7838,7 @@ exports.default = VerticalLineGroup;
 
 var _preact = __webpack_require__(0);
 
-var _path = __webpack_require__(86);
+var _path = __webpack_require__(84);
 
 function VerticalLineGroup(_ref) {
   var totalGroupSpace = _ref.totalGroupSpace,
@@ -7961,7 +7895,7 @@ function VerticalLineGroup(_ref) {
 }
 
 /***/ }),
-/* 86 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8189,7 +8123,7 @@ var substr = 'ab'.substr(-1) === 'b' ? function (str, start, len) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 87 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8205,7 +8139,7 @@ exports.default = VerticalGuidesList;
 
 var _preact = __webpack_require__(0);
 
-var _VerticalGuide = __webpack_require__(88);
+var _VerticalGuide = __webpack_require__(86);
 
 var _VerticalGuide2 = _interopRequireDefault(_VerticalGuide);
 
@@ -8233,7 +8167,7 @@ function VerticalGuidesList(_ref) {
 }
 
 /***/ }),
-/* 88 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8274,7 +8208,7 @@ function VerticalGuide(_ref) {
 }
 
 /***/ }),
-/* 89 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8290,7 +8224,7 @@ exports.default = VerticalTooltipsList;
 
 var _preact = __webpack_require__(0);
 
-var _VerticalTooltips = __webpack_require__(90);
+var _VerticalTooltips = __webpack_require__(88);
 
 var _VerticalTooltips2 = _interopRequireDefault(_VerticalTooltips);
 
@@ -8322,7 +8256,7 @@ function VerticalTooltipsList(_ref) {
 }
 
 /***/ }),
-/* 90 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8338,7 +8272,7 @@ exports.default = VerticalTooltips;
 
 var _preact = __webpack_require__(0);
 
-var _VerticalTooltip = __webpack_require__(91);
+var _VerticalTooltip = __webpack_require__(89);
 
 var _VerticalTooltip2 = _interopRequireDefault(_VerticalTooltip);
 
@@ -8402,7 +8336,7 @@ function VerticalTooltips(_ref) {
               */
 
 /***/ }),
-/* 91 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8429,8 +8363,8 @@ function VerticalTooltip(_ref) {
       popupHeight = styling.popupHeight,
       popupFontSize = styling.popupFontSize,
       units = styling.units;
-  var popUpOffset = styling.popUpOffset;
 
+  // const { popUpOffset } = styling;
 
   return (0, _preact.h)(
     "g",
@@ -8471,7 +8405,7 @@ function VerticalTooltip(_ref) {
 }
 
 /***/ }),
-/* 92 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8487,7 +8421,7 @@ exports.default = HorisontalGuideList;
 
 var _preact = __webpack_require__(0);
 
-var _HorisontalGuide = __webpack_require__(93);
+var _HorisontalGuide = __webpack_require__(91);
 
 var _HorisontalGuide2 = _interopRequireDefault(_HorisontalGuide);
 
@@ -8505,13 +8439,17 @@ function HorisontalGuideList(_ref) {
     'g',
     { className: 'Graph-verticalLabelList' },
     breakpointArray.map(function (val, index) {
-      return (0, _preact.h)(_HorisontalGuide2.default, _extends({ rank: index }, { styling: styling, totalGroupSpace: totalGroupSpace }));
+      if (index !== breakpointArray.length - 1) {
+        return (0, _preact.h)(_HorisontalGuide2.default, _extends({ rank: index }, { styling: styling, totalGroupSpace: totalGroupSpace }));
+      }
+
+      return null;
     })
   );
 }
 
 /***/ }),
-/* 93 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8552,7 +8490,436 @@ function HorisontalGuide(_ref) {
 }
 
 /***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = HorisontalLineGroupList;
+
+var _preact = __webpack_require__(0);
+
+var _HorisontalLineGroup = __webpack_require__(93);
+
+var _HorisontalLineGroup2 = _interopRequireDefault(_HorisontalLineGroup);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function HorisontalLineGroupList(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      items = _ref.items,
+      styling = _ref.styling;
+
+  var titles = Object.keys(items);
+  var padding = styling.padding,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace;
+
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'LineGroupList' },
+    titles.map(function (key, index) {
+      return (0, _preact.h)(_HorisontalLineGroup2.default, _extends({
+        rank: index,
+        lines: items[key],
+        title: key
+      }, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, styling: styling }));
+    })
+  );
+}
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = HorisontalLineGroup;
+
+var _preact = __webpack_require__(0);
+
+function HorisontalLineGroup(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      rank = _ref.rank,
+      lines = _ref.lines,
+      title = _ref.title,
+      styling = _ref.styling;
+  var barWidth = styling.barWidth,
+      titleHeight = styling.titleHeight,
+      padding = styling.padding,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace,
+      lineGutter = styling.lineGutter,
+      maxValue = styling.maxValue,
+      groupMargin = styling.groupMargin,
+      fontSize = styling.fontSize;
+
+
+  var groupSpace = groupSpaceArray[rank];
+
+  var previousSpace = groupSpaceArray.reduce(function (result, val, index) {
+    if (index < rank) {
+      return result + val;
+    }
+
+    return result;
+  }, 0);
+
+  var startPoint = padding[0] + previousSpace;
+
+  return (0, _preact.h)(
+    "g",
+    { className: "Graph-group" },
+    (0, _preact.h)(
+      "text",
+      {
+        className: "Graph-label Graph-label--leftAlign",
+        x: padding[3] + buffer,
+        y: padding[0] + previousSpace + groupMargin / 2 + fontSize
+      },
+      title
+    ),
+    lines.map(function (amount, index) {
+      var relativeAmount = amount / maxValue * valueSpace - barWidth;
+      var displayAmount = relativeAmount < barWidth * 2 ? barWidth * 2 : relativeAmount;
+
+      return (0, _preact.h)("line", {
+        "stroke-linecap": "round",
+        "stroke-width": barWidth,
+        y1: groupMargin / 2 + startPoint + index * (barWidth + lineGutter) + barWidth / 2 + titleHeight,
+        x1: padding[3] + buffer + barWidth / 2,
+        y2: groupMargin / 2 + startPoint + index * (barWidth + lineGutter) + barWidth / 2 + titleHeight,
+        x2: padding[3] + buffer + displayAmount - barWidth,
+        className: "Graph-line"
+      });
+    })
+  );
+}
+
+/***/ }),
 /* 94 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = VerticalLabelList;
+
+var _preact = __webpack_require__(0);
+
+var _VerticalLabel = __webpack_require__(95);
+
+var _VerticalLabel2 = _interopRequireDefault(_VerticalLabel);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function VerticalLabelList(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      items = _ref.items,
+      styling = _ref.styling;
+
+  var titles = Object.keys(items);
+  var padding = styling.padding,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace;
+
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'Graph-horisontalLabelList' },
+    (0, _preact.h)('rect', {
+      x: '0',
+      y: padding[0],
+      width: padding[3] - buffer,
+      height: totalGroupSpace,
+      fill: 'red',
+      opacity: '0.5'
+    }),
+    titles.map(function (title, index) {
+      return (0, _preact.h)(_VerticalLabel2.default, _extends({
+        rank: index
+      }, { title: title, totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, styling: styling }));
+    })
+  );
+}
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = VerticalLabel;
+
+var _preact = __webpack_require__(0);
+
+function VerticalLabel(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      rank = _ref.rank,
+      title = _ref.title,
+      styling = _ref.styling;
+  var barWidth = styling.barWidth,
+      titleHeight = styling.titleHeight,
+      padding = styling.padding,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace,
+      fontSize = styling.fontSize;
+
+
+  var groupSpace = groupSpaceArray[rank];
+
+  var generateToScale = function generateToScale(value) {
+    return (valueSpace - buffer) / totalGroupSpace * value;
+  };
+
+  var previousSpace = groupSpaceArray.reduce(function (result, val, index) {
+    if (index < rank) {
+      return result + generateToScale(val);
+    }
+
+    return result;
+  }, 0);
+
+  return (0, _preact.h)(
+    "g",
+    { className: "Graph-horisontalLabel" },
+    (0, _preact.h)("rect", {
+      x: "0",
+      y: padding[0] + previousSpace,
+      width: padding[3] - buffer,
+      height: generateToScale(groupSpace),
+      fill: "none",
+      stroke: "red",
+      opacity: "1"
+    })
+  );
+}
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = HorisontalTooltipsList;
+
+var _preact = __webpack_require__(0);
+
+var _HorisontalTooltips = __webpack_require__(97);
+
+var _HorisontalTooltips2 = _interopRequireDefault(_HorisontalTooltips);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function HorisontalTooltipsList(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      items = _ref.items,
+      styling = _ref.styling;
+
+  var titles = Object.keys(items);
+  var padding = styling.padding,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace;
+
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'LineGroupList' },
+    titles.map(function (key, index) {
+      return (0, _preact.h)(_HorisontalTooltips2.default, _extends({
+        rank: index,
+        lines: items[key],
+        title: key
+      }, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, styling: styling }));
+    })
+  );
+}
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = HorisontalTooltips;
+
+var _preact = __webpack_require__(0);
+
+var _HorisontalTooltip = __webpack_require__(98);
+
+var _HorisontalTooltip2 = _interopRequireDefault(_HorisontalTooltip);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function HorisontalTooltips(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      rank = _ref.rank,
+      lines = _ref.lines,
+      title = _ref.title,
+      styling = _ref.styling;
+  var barWidth = styling.barWidth,
+      titleHeight = styling.titleHeight,
+      padding = styling.padding,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace,
+      lineGutter = styling.lineGutter,
+      maxValue = styling.maxValue,
+      groupMargin = styling.groupMargin,
+      fontSize = styling.fontSize;
+
+
+  var groupSpace = groupSpaceArray[rank];
+
+  var previousSpace = groupSpaceArray.reduce(function (result, val, index) {
+    if (index < rank) {
+      return result + val;
+    }
+
+    return result;
+  }, 0);
+
+  var startPoint = padding[0] + previousSpace;
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'Graph-group' },
+    lines.map(function (amount, index) {
+      var relativeAmount = amount / maxValue * valueSpace - barWidth;
+      var displayAmount = relativeAmount < barWidth * 2 ? barWidth * 2 : relativeAmount;
+
+      return (0, _preact.h)(_HorisontalTooltip2.default, _extends({ styling: styling }, {
+        xPosition: padding[3] + buffer + displayAmount - barWidth / 2,
+        yPosition: groupMargin / 2 + startPoint + index * (barWidth + lineGutter) + barWidth / 2 + titleHeight
+      }, { amount: amount, totalGroupSpace: totalGroupSpace }));
+    })
+  );
+}
+
+/*
+  stroke-linecap="round"
+  stroke-width={barWidth}
+  y1={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + titleHeight}
+  x1={padding[3] + buffer + (barWidth / 2)}
+  y2={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + titleHeight}
+  x2={(padding[3] + buffer + displayAmount) - barWidth}
+  className="Graph-line"
+*/
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = HorisontalTooltip;
+
+var _preact = __webpack_require__(0);
+
+function HorisontalTooltip(_ref) {
+  var styling = _ref.styling,
+      xTriggerPosition = _ref.xTriggerPosition,
+      xPosition = _ref.xPosition,
+      yPosition = _ref.yPosition,
+      amount = _ref.amount,
+      totalGroupSpace = _ref.totalGroupSpace;
+  var barWidth = styling.barWidth,
+      popUpOffset = styling.popUpOffset,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace,
+      lineGutter = styling.lineGutter,
+      padding = styling.padding,
+      popupWidth = styling.popupWidth,
+      popupHeight = styling.popupHeight,
+      popupFontSize = styling.popupFontSize,
+      units = styling.units,
+      popupCentre = styling.popupCentre;
+
+
+  return (0, _preact.h)(
+    "g",
+    { className: "Graph-tooltip" },
+    (0, _preact.h)("rect", {
+      x: padding[3] + buffer,
+      y: yPosition - (barWidth + lineGutter) / 2,
+      width: valueSpace + padding[0] - buffer,
+      height: barWidth + lineGutter,
+      opacity: "0"
+    }),
+    (0, _preact.h)("polygon", {
+      className: "Graph-triangle",
+      points: "\n          " + (xPosition + popUpOffset) + ",\n          " + yPosition + "\n\n          " + (xPosition + barWidth / 2 + popUpOffset) + ",\n          " + (yPosition - barWidth / 2) + "\n\n          " + (xPosition + barWidth + popUpOffset) + ",\n          " + (yPosition - barWidth / 2) + "\n\n          " + (xPosition + barWidth + popUpOffset) + ",\n          " + (yPosition + barWidth / 2) + "\n          \n          " + (xPosition + barWidth / 2 + popUpOffset) + ",\n          " + (yPosition + barWidth / 2) + "\n        "
+    }),
+    (0, _preact.h)("rect", {
+      rx: "10",
+      ry: "10",
+      className: "Graph-tooltipBase",
+      x: xPosition + barWidth / 2 + popUpOffset,
+      y: yPosition - popupHeight / 2,
+      width: popupWidth,
+      height: popupHeight
+    }),
+    (0, _preact.h)(
+      "text",
+      {
+        x: xPosition + popupWidth / 2 + popUpOffset + barWidth / 2,
+        y: yPosition + popupCentre,
+        fontSize: popupFontSize,
+        className: "Graph-tooltipText"
+      },
+      Math.ceil(amount),
+      units
+    )
+  );
+}
+
+/***/ }),
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8608,7 +8975,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 95 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8618,15 +8985,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _FixedNodeBox = __webpack_require__(96);
+var _FixedNodeBox = __webpack_require__(101);
 
 var _FixedNodeBox2 = _interopRequireDefault(_FixedNodeBox);
 
-var _HighlightLinks = __webpack_require__(97);
+var _HighlightLinks = __webpack_require__(102);
 
 var _HighlightLinks2 = _interopRequireDefault(_HighlightLinks);
 
-var _forceClose = __webpack_require__(100);
+var _forceClose = __webpack_require__(105);
 
 var _forceClose2 = _interopRequireDefault(_forceClose);
 
@@ -8662,7 +9029,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 96 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8762,7 +9129,7 @@ var FixedNodeBox = function () {
 exports.default = FixedNodeBox;
 
 /***/ }),
-/* 97 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8776,11 +9143,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _buildLinksObject = __webpack_require__(98);
+var _buildLinksObject = __webpack_require__(103);
 
 var _buildLinksObject2 = _interopRequireDefault(_buildLinksObject);
 
-var _calcViewportPosition = __webpack_require__(99);
+var _calcViewportPosition = __webpack_require__(104);
 
 var _calcViewportPosition2 = _interopRequireDefault(_calcViewportPosition);
 
@@ -8892,7 +9259,7 @@ var HighlightLinks = function () {
 exports.default = HighlightLinks;
 
 /***/ }),
-/* 98 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8920,7 +9287,7 @@ function buildLinksObject(nodeList) {
 }
 
 /***/ }),
-/* 99 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8937,7 +9304,7 @@ function calcViewportPosition(node) {
 }
 
 /***/ }),
-/* 100 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8967,7 +9334,7 @@ function forceClose(nodes) {
 }
 
 /***/ }),
-/* 101 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8979,7 +9346,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _YearSelectContainer = __webpack_require__(102);
+var _YearSelectContainer = __webpack_require__(107);
 
 var _YearSelectContainer2 = _interopRequireDefault(_YearSelectContainer);
 
@@ -9009,7 +9376,7 @@ function YearSelect() {
 exports.default = YearSelect();
 
 /***/ }),
-/* 102 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9023,7 +9390,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _YearSelectMarkup = __webpack_require__(103);
+var _YearSelectMarkup = __webpack_require__(108);
 
 var _YearSelectMarkup2 = _interopRequireDefault(_YearSelectMarkup);
 
@@ -9106,7 +9473,7 @@ var YearSelectContainer = function (_Component) {
 exports.default = YearSelectContainer;
 
 /***/ }),
-/* 103 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9119,7 +9486,7 @@ exports.default = YearSelectMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(104);
+var _index = __webpack_require__(109);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -9217,7 +9584,7 @@ function YearSelectMarkup(_ref) {
 }
 
 /***/ }),
-/* 104 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9230,7 +9597,7 @@ exports.default = Tooltip;
 
 var _preact = __webpack_require__(0);
 
-var _Box = __webpack_require__(105);
+var _Box = __webpack_require__(110);
 
 var _Box2 = _interopRequireDefault(_Box);
 
@@ -9266,7 +9633,7 @@ function Tooltip(_ref) {
 }
 
 /***/ }),
-/* 105 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9279,7 +9646,7 @@ exports.default = Box;
 
 var _preact = __webpack_require__(0);
 
-var _Content = __webpack_require__(106);
+var _Content = __webpack_require__(111);
 
 var _Content2 = _interopRequireDefault(_Content);
 
@@ -9315,7 +9682,7 @@ function Box(_ref) {
 }
 
 /***/ }),
-/* 106 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9328,7 +9695,7 @@ exports.default = Content;
 
 var _preact = __webpack_require__(0);
 
-var _CloseIcon = __webpack_require__(107);
+var _CloseIcon = __webpack_require__(112);
 
 var _CloseIcon2 = _interopRequireDefault(_CloseIcon);
 
@@ -9392,7 +9759,7 @@ function Content(_ref) {
 }
 
 /***/ }),
-/* 107 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9414,7 +9781,7 @@ function CloseIcon() {
 }
 
 /***/ }),
-/* 108 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9430,7 +9797,7 @@ var _queryString = __webpack_require__(13);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
-var _SearchContainer = __webpack_require__(109);
+var _SearchContainer = __webpack_require__(114);
 
 var _SearchContainer2 = _interopRequireDefault(_SearchContainer);
 
@@ -9462,7 +9829,7 @@ function Search() {
 exports.default = Search();
 
 /***/ }),
-/* 109 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9480,7 +9847,7 @@ var _propTypes = __webpack_require__(3);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _SearchMarkup = __webpack_require__(113);
+var _SearchMarkup = __webpack_require__(118);
 
 var _SearchMarkup2 = _interopRequireDefault(_SearchMarkup);
 
@@ -9667,7 +10034,7 @@ SearchContainer.defaultProps = {
 };
 
 /***/ }),
-/* 110 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9688,7 +10055,7 @@ var warning = __webpack_require__(27);
 var assign = __webpack_require__(14);
 
 var ReactPropTypesSecret = __webpack_require__(11);
-var checkPropTypes = __webpack_require__(111);
+var checkPropTypes = __webpack_require__(116);
 
 module.exports = function (isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -10192,7 +10559,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 111 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10260,7 +10627,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 112 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10319,7 +10686,7 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 113 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10336,11 +10703,11 @@ var _propTypes = __webpack_require__(3);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _FormArea = __webpack_require__(114);
+var _FormArea = __webpack_require__(119);
 
 var _FormArea2 = _interopRequireDefault(_FormArea);
 
-var _ResultsArea = __webpack_require__(116);
+var _ResultsArea = __webpack_require__(121);
 
 var _ResultsArea2 = _interopRequireDefault(_ResultsArea);
 
@@ -10453,7 +10820,7 @@ SearchMarkup.defaultProps = {
 };
 
 /***/ }),
-/* 114 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10470,7 +10837,7 @@ var _propTypes = __webpack_require__(3);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Icon = __webpack_require__(115);
+var _Icon = __webpack_require__(120);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -10537,7 +10904,7 @@ FormArea.propTypes = {
 };
 
 /***/ }),
-/* 115 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10564,7 +10931,7 @@ function Icon() {
 }
 
 /***/ }),
-/* 116 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10581,7 +10948,7 @@ var _propTypes = __webpack_require__(3);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _List = __webpack_require__(117);
+var _List = __webpack_require__(122);
 
 var _List2 = _interopRequireDefault(_List);
 
@@ -10643,7 +11010,7 @@ ResultsArea.defaultProps = {
 };
 
 /***/ }),
-/* 117 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10841,7 +11208,7 @@ List.defaultProps = {
 };
 
 /***/ }),
-/* 118 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10855,7 +11222,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _preact = __webpack_require__(0);
 
-var _DeptSearchContainer = __webpack_require__(119);
+var _DeptSearchContainer = __webpack_require__(124);
 
 var _DeptSearchContainer2 = _interopRequireDefault(_DeptSearchContainer);
 
@@ -10891,7 +11258,7 @@ function DeptSearch() {
 exports.default = DeptSearch();
 
 /***/ }),
-/* 119 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10907,11 +11274,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _DeptSearchMarkup = __webpack_require__(120);
+var _DeptSearchMarkup = __webpack_require__(125);
 
 var _DeptSearchMarkup2 = _interopRequireDefault(_DeptSearchMarkup);
 
-var _filterResults = __webpack_require__(126);
+var _filterResults = __webpack_require__(131);
 
 var _filterResults2 = _interopRequireDefault(_filterResults);
 
@@ -10990,7 +11357,7 @@ var DeptSearchContainer = function (_Component) {
 exports.default = DeptSearchContainer;
 
 /***/ }),
-/* 120 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11003,11 +11370,11 @@ exports.default = DeptSearchMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(121);
+var _index = __webpack_require__(126);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(124);
+var _index3 = __webpack_require__(129);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -11080,7 +11447,7 @@ function DeptSearchMarkup(_ref) {
 }
 
 /***/ }),
-/* 121 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11097,9 +11464,9 @@ var _index = __webpack_require__(6);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _provinces = __webpack_require__(122);
+var _provinces = __webpack_require__(127);
 
-var _spheres = __webpack_require__(123);
+var _spheres = __webpack_require__(128);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11186,19 +11553,19 @@ function DeptGroup(_ref) {
 }
 
 /***/ }),
-/* 122 */
+/* 127 */
 /***/ (function(module, exports) {
 
 module.exports = {"provinces":[{"title":"All Provinces","value":"all"},{"title":"Eastern Cape","value":"eastern-cape"},{"title":"Free State","value":"free-state"},{"title":"Gauteng","value":"gauteng"},{"title":"KwaZulu-Natal","value":"kwazulu-natal"},{"title":"Limpopo","value":"limpopo"},{"title":"Mpumalanga","value":"mpumalanga"},{"title":"North West","value":"north-west"},{"title":"Northern Cape","value":"northern-cape"},{"title":"Western Cape","value":"western-cape"}]}
 
 /***/ }),
-/* 123 */
+/* 128 */
 /***/ (function(module, exports) {
 
 module.exports = {"spheres":[{"title":"All levels of government","value":"all"},{"title":"National","value":"national"},{"title":"Provincial","value":"provincial"}]}
 
 /***/ }),
-/* 124 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11211,7 +11578,7 @@ exports.default = DeptGroup;
 
 var _preact = __webpack_require__(0);
 
-var _Map = __webpack_require__(125);
+var _Map = __webpack_require__(130);
 
 var _Map2 = _interopRequireDefault(_Map);
 
@@ -11262,7 +11629,7 @@ function DeptGroup(_ref) {
 }
 
 /***/ }),
-/* 125 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11363,7 +11730,7 @@ function Map(province) {
 }
 
 /***/ }),
-/* 126 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11374,11 +11741,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = filterResults;
 
-var _filterKeywords = __webpack_require__(127);
+var _filterKeywords = __webpack_require__(132);
 
 var _filterKeywords2 = _interopRequireDefault(_filterKeywords);
 
-var _filterGroups = __webpack_require__(129);
+var _filterGroups = __webpack_require__(134);
 
 var _filterGroups2 = _interopRequireDefault(_filterGroups);
 
@@ -11411,7 +11778,7 @@ function filterResults(filtersObject, rawItems) {
 }
 
 /***/ }),
-/* 127 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11452,7 +11819,7 @@ function filterKeywords(keywords, results) {
 }
 
 /***/ }),
-/* 128 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11482,7 +11849,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 129 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11508,7 +11875,7 @@ function filterAccordingToSphere(items, group, remove) {
 }
 
 /***/ }),
-/* 130 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11520,7 +11887,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _SearchResultContainer = __webpack_require__(131);
+var _SearchResultContainer = __webpack_require__(136);
 
 var _SearchResultContainer2 = _interopRequireDefault(_SearchResultContainer);
 
@@ -11545,7 +11912,7 @@ function SearchResult() {
 exports.default = SearchResult();
 
 /***/ }),
-/* 131 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11561,7 +11928,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _SearchResultMarkup = __webpack_require__(132);
+var _SearchResultMarkup = __webpack_require__(137);
 
 var _SearchResultMarkup2 = _interopRequireDefault(_SearchResultMarkup);
 
@@ -11665,7 +12032,7 @@ var SearchResultsContainer = function (_Component) {
 exports.default = SearchResultsContainer;
 
 /***/ }),
-/* 132 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11678,7 +12045,7 @@ exports.default = SearchResultMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _Form = __webpack_require__(133);
+var _Form = __webpack_require__(138);
 
 var _Form2 = _interopRequireDefault(_Form);
 
@@ -11831,7 +12198,7 @@ function SearchResultMarkup(_ref) {
 }
 
 /***/ }),
-/* 133 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11906,7 +12273,7 @@ function Form(_ref) {
 }
 
 /***/ }),
-/* 134 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11922,11 +12289,11 @@ var _glossary = __webpack_require__(25);
 
 var _glossary2 = _interopRequireDefault(_glossary);
 
-var _createGlossaryGroupedObject = __webpack_require__(135);
+var _createGlossaryGroupedObject = __webpack_require__(140);
 
 var _createGlossaryGroupedObject2 = _interopRequireDefault(_createGlossaryGroupedObject);
 
-var _Container = __webpack_require__(136);
+var _Container = __webpack_require__(141);
 
 var _Container2 = _interopRequireDefault(_Container);
 
@@ -11946,7 +12313,7 @@ function Glossary() {
 exports.default = Glossary();
 
 /***/ }),
-/* 135 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11992,7 +12359,7 @@ function createGlossaryGroupedObject(rawObject) {
 }
 
 /***/ }),
-/* 136 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12012,7 +12379,7 @@ var _fuse = __webpack_require__(12);
 
 var _fuse2 = _interopRequireDefault(_fuse);
 
-var _Markup = __webpack_require__(137);
+var _Markup = __webpack_require__(142);
 
 var _Markup2 = _interopRequireDefault(_Markup);
 
@@ -12090,7 +12457,7 @@ var Container = function (_Component) {
 exports.default = Container;
 
 /***/ }),
-/* 137 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12103,11 +12470,11 @@ exports.default = Markup;
 
 var _preact = __webpack_require__(0);
 
-var _Controls = __webpack_require__(138);
+var _Controls = __webpack_require__(143);
 
 var _Controls2 = _interopRequireDefault(_Controls);
 
-var _List = __webpack_require__(139);
+var _List = __webpack_require__(144);
 
 var _List2 = _interopRequireDefault(_List);
 
@@ -12127,7 +12494,7 @@ function Markup(_ref) {
 }
 
 /***/ }),
-/* 138 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12185,7 +12552,7 @@ function Controls(_ref) {
 }
 
 /***/ }),
-/* 139 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12251,7 +12618,7 @@ function List(_ref) {
 }
 
 /***/ }),
-/* 140 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12263,7 +12630,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _VideosContainer = __webpack_require__(141);
+var _VideosContainer = __webpack_require__(146);
 
 var _VideosContainer2 = _interopRequireDefault(_VideosContainer);
 
@@ -12283,7 +12650,7 @@ function Videos() {
 exports.default = Videos();
 
 /***/ }),
-/* 141 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12303,7 +12670,7 @@ var _fuse = __webpack_require__(12);
 
 var _fuse2 = _interopRequireDefault(_fuse);
 
-var _Markup = __webpack_require__(142);
+var _Markup = __webpack_require__(147);
 
 var _Markup2 = _interopRequireDefault(_Markup);
 
@@ -12412,7 +12779,7 @@ var VideosContainer = function (_Component) {
 exports.default = VideosContainer;
 
 /***/ }),
-/* 142 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12428,15 +12795,15 @@ exports.default = Markup;
 
 var _preact = __webpack_require__(0);
 
-var _Item = __webpack_require__(143);
+var _Item = __webpack_require__(148);
 
 var _Item2 = _interopRequireDefault(_Item);
 
-var _Modal = __webpack_require__(146);
+var _Modal = __webpack_require__(151);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
-var _Controls = __webpack_require__(148);
+var _Controls = __webpack_require__(153);
 
 var _Controls2 = _interopRequireDefault(_Controls);
 
@@ -12479,7 +12846,7 @@ function Markup(props) {
 }
 
 /***/ }),
-/* 143 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12492,11 +12859,11 @@ exports.default = Item;
 
 var _preact = __webpack_require__(0);
 
-var _PlayIcon = __webpack_require__(144);
+var _PlayIcon = __webpack_require__(149);
 
 var _PlayIcon2 = _interopRequireDefault(_PlayIcon);
 
-var _trimString = __webpack_require__(145);
+var _trimString = __webpack_require__(150);
 
 var _trimString2 = _interopRequireDefault(_trimString);
 
@@ -12564,7 +12931,7 @@ function Item(_ref) {
 }
 
 /***/ }),
-/* 144 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12586,7 +12953,7 @@ function PlayIcon() {
 }
 
 /***/ }),
-/* 145 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12604,7 +12971,7 @@ function trimString(length, string) {
 }
 
 /***/ }),
-/* 146 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12617,7 +12984,7 @@ exports.default = Modal;
 
 var _preact = __webpack_require__(0);
 
-var _CloseIcon = __webpack_require__(147);
+var _CloseIcon = __webpack_require__(152);
 
 var _CloseIcon2 = _interopRequireDefault(_CloseIcon);
 
@@ -12695,7 +13062,7 @@ function Modal(props) {
 }
 
 /***/ }),
-/* 147 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12717,7 +13084,7 @@ function CloseIcon() {
 }
 
 /***/ }),
-/* 148 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

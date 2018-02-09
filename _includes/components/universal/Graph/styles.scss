@@ -25,6 +25,10 @@
   &--rightAlign {
     text-anchor: end;
   }
+
+  &--leftAlign {
+    text-anchor: start;
+  }
 }
 
 .Graph-guide {
@@ -91,8 +95,12 @@
 }
 
 .Graph-tooltip {
-  opacity: 0;
+  opacity: 1;
   cursor: pointer;
+
+  @media screen and (min-width: 600px) {
+    opacity: 0;
+  }
 
   &:hover {
     opacity: 1;

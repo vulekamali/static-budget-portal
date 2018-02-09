@@ -3,7 +3,7 @@ import { h } from 'preact';
 
 export default function VerticalBreakpoints({ styling, totalGroupSpace, rank }) {
   const { valueSpace, buffer, padding, labelBreakpoints } = styling;
-  const iteration = (valueSpace - buffer) / labelBreakpoints;
+  const iteration = (valueSpace - buffer) / (labelBreakpoints - 1);
 
   return (
     <rect

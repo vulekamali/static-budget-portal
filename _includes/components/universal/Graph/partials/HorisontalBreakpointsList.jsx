@@ -8,14 +8,14 @@ export default function HorisontalBreakpointsList({ items, styling, totalGroupSp
 
   return (
     <g className="Graph-verticalLabelList">
-      <rect
+      {/* <rect
         x={padding[3] + buffer}
         y={padding[0] + totalGroupSpace + buffer}
         height={padding[2] - buffer}
-        width={(padding[3] + valueSpace) - (padding[2] + buffer)}
+        width={(padding[3] + valueSpace) - padding[1]}
         fill="red"
         opacity="0.5"
-      />
+      /> */}
 
       {
         breakpointArray.map((val, index) => {

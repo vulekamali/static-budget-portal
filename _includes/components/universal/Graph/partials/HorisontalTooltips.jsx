@@ -1,7 +1,8 @@
 import { h } from 'preact';
+import HorisontalTooltip from './HorisontalTooltip.jsx';
 
 
-export default function HorisontalLineGroup({ totalGroupSpace, groupSpaceArray, rank, lines, title, styling }) {
+export default function HorisontalTooltips({ totalGroupSpace, groupSpaceArray, rank, lines, title, styling }) {
   const {
     barWidth,
     titleHeight,
@@ -41,28 +42,17 @@ export default function HorisontalLineGroup({ totalGroupSpace, groupSpaceArray, 
         opacity="1"
       /> */}
 
-      <text
-        className="Graph-label Graph-label--leftAlign"
-        x={padding[3] + buffer}
-        y={padding[0] + previousSpace + (groupMargin / 2) + fontSize}
-      >
-        {title}
-      </text>
-
       {
         lines.map((amount, index) => {
           const relativeAmount = ((amount / maxValue) * valueSpace) - barWidth;
           const displayAmount = relativeAmount < (barWidth * 2) ? (barWidth * 2) : relativeAmount;
 
           return (
-            <line
-              stroke-linecap="round"
-              stroke-width={barWidth}
-              y1={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + titleHeight}
-              x1={padding[3] + buffer + (barWidth / 2)}
-              y2={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + titleHeight}
-              x2={(padding[3] + buffer + displayAmount) - barWidth}
-              className="Graph-line"
+            <HorisontalTooltip
+              {...{ styling }}
+              xPosition={(padding[3] + buffer + displayAmount) - (barWidth / 2)}
+              yPosition={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + titleHeight}
+              {...{ amount, totalGroupSpace }}
             />
           );
         })
@@ -71,3 +61,14 @@ export default function HorisontalLineGroup({ totalGroupSpace, groupSpaceArray, 
     </g>
   );
 }
+
+
+/*
+  stroke-linecap="round"
+  stroke-width={barWidth}
+  y1={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + titleHeight}
+  x1={padding[3] + buffer + (barWidth / 2)}
+  y2={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + titleHeight}
+  x2={(padding[3] + buffer + displayAmount) - barWidth}
+  className="Graph-line"
+*/

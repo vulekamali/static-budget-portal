@@ -5,7 +5,7 @@ export default function VerticalTooltip({ styling, xTriggerPosition, xPosition, 
 
   const { barWidth, lineGutter, padding, popupWidth, popupHeight, popupFontSize, units } = styling;
 
-  const { popUpOffset } = styling;
+  // const { popUpOffset } = styling;
 
   return (
     <g className="Graph-tooltip">
@@ -21,7 +21,6 @@ export default function VerticalTooltip({ styling, xTriggerPosition, xPosition, 
 
       {/* <rect
         x={xPosition - ((barWidth + lineGutter) / 2)}
-        x1={xTriggerPosition}
         y={0}
         width={barWidth + lineGutter}
         height={totalGroupSpace + padding[0]}

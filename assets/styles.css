@@ -748,6 +748,8 @@ p {
   font-weight: bold; }
   .Graph-label--rightAlign {
     text-anchor: end; }
+  .Graph-label--leftAlign {
+    text-anchor: start; }
 
 .Graph-guide {
   stroke: #e6e6e6; }
@@ -794,8 +796,11 @@ p {
   text-anchor: middle; }
 
 .Graph-tooltip {
-  opacity: 0;
+  opacity: 1;
   cursor: pointer; }
+  @media screen and (min-width: 600px) {
+    .Graph-tooltip {
+      opacity: 0; } }
   .Graph-tooltip:hover {
     opacity: 1; }
 
