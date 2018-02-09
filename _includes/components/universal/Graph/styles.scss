@@ -1,0 +1,116 @@
+@keyframes expand {
+  0% {
+    stroke-dashoffset: 100%;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.Graph-svg {
+  width: 100%;
+  overflow: visible !important;
+}
+
+.Graph-outline {
+  stroke-width: 2;
+  stroke: #d2d2d2;
+  fill: none;
+}
+
+.Graph-label {
+  text-anchor: middle;
+  font-weight: bold;
+
+  &--rightAlign {
+    text-anchor: end;
+  }
+
+  &--leftAlign {
+    text-anchor: start;
+  }
+}
+
+.Graph-guide {
+  stroke: #e6e6e6;
+}
+
+.Graph-line {
+  stroke: #4a4a4a;
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  animation-name: expand;
+  animation-duration: 2s;
+  animation-iteration-count: 1s;
+  animation-fill-mode: forwards;
+
+  &:nth-of-type(1) {
+    stroke: #79b43c;
+  }
+
+  &:nth-of-type(12) {
+    stroke: #ee9f31;
+  }
+
+  &:nth-of-type(3) {
+    stroke: #ad3c64;
+  }
+}
+
+.Graph-tooltipBase {
+  fill: #4a4a4a;
+
+  .Graph-tooltip:nth-of-type(1) & {
+    fill: #79b43c;
+  }
+
+  .Graph-tooltip:nth-of-type(12) & {
+    fill: #ee9f31;
+  }
+
+  .Graph-tooltip:nth-of-type(3) & {
+    fill: #ad3c64;
+  }
+}
+
+.Graph-triangle {
+  fill: #4a4a4a;
+
+  .Graph-tooltip:nth-of-type(1) & {
+    fill: #79b43c;
+  }
+
+  .Graph-tooltip:nth-of-type(12) & {
+    fill: #ee9f31;
+  }
+
+  .Graph-tooltip:nth-of-type(3) & {
+    fill: #ad3c64;
+  }
+}
+
+.Graph-tooltipText {
+  fill: white;
+  text-anchor: middle;
+}
+
+.Graph-tooltip {
+  opacity: 1;
+  cursor: pointer;
+
+  @media screen and (min-width: 600px) {
+    opacity: 0;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.Graph {
+  background-color: white;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 50px 10px 35px;
+}

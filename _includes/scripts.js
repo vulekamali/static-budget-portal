@@ -11,6 +11,7 @@ import './utilities/js/modules/polyfillOldFeatures.js';
 
 import './components/universal/Tooltip/scripts.js';
 import './components/universal/Share/index.jsx';
+import './components/universal/Graph/index.jsx';
 
 import './components/header-and-footer/NavBar/scripts.js';
 import './components/header-and-footer/SubLinks/scripts.js';
