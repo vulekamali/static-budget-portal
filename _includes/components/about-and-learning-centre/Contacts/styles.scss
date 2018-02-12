@@ -1,13 +1,13 @@
 .Contacts-icon {
   vertical-align: top;
   display: block;
-  background: #4a4a4a;
+  background: $colour-shading-dark;
   width: 60px;
   height: 60px;
   text-align: center;
   border-radius: 50%;
   overflow: hidden;
-  border: 5px solid #4a4a4a;
+  border: 5px solid $colour-shading-dark;
 }
 
 .Contacts-iconWrap {

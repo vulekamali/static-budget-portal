@@ -30,10 +30,10 @@ $mobile-break: 750px;
   }
 
   &.is-negative {
-    border-color: #c66347;
+    border-color: $colour-brand-orange;
 
     &:hover {
-      border-color: darken(#c66347, 15%);
+      border-color: darken($colour-brand-orange, 15%);
     }
   }
 
