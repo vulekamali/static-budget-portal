@@ -3,7 +3,7 @@
 }
 
 .Glossary-search {
-  border: 1px solid #9b9b9b;
+  border: 1px solid $colour-shading-medium;
   border-radius: 3px;
   padding: 9px 13px;
   font-size: 14px;
@@ -21,7 +21,7 @@
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 3px;
-  color: #4a4a4a;
+  color: $colour-shading-dark;
 
   &.is-valid {
     cursor: pointer;
@@ -36,7 +36,7 @@
 .Glossary-heading {
   font-size: 18px;
   font-weight: bold;
-  border-bottom: solid 1px #979797;
+  border-bottom: solid 1px $colour-shading-medium;
   padding-bottom: 5px;
 }
 
