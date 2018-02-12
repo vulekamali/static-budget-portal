@@ -1,0 +1,34 @@
+.ExtraFooter {
+  background-color: white;
+}
+
+.ExtraFooter-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3f3f3f;
+  padding-bottom: 20px;
+}
+
+.ExtraFooter-item {
+  margin-right: 115px;
+  float: left;
+  display: block;
+}
+
+.ExtraFooter-list {
+  padding-bottom: 85px;
+  @include clearfix;
+}
+
+.ExtraFooter-image {
+  width: 175px;
+
+  &--larger {
+    width: 200px;
+  }
+}
+
+.ExtraFooter-wrap {
+  margin: 0 auto;
+  max-width: 1024px;
+}
