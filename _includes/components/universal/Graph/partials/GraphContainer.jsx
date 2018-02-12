@@ -81,6 +81,7 @@ export default class GraphContainer extends Component {
         items={this.props.items}
         legend={this.props.legend}
         styling={this.state}
+        year={this.props.year}
       />
     );
   }
