@@ -9,7 +9,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
   entry: './_includes/scripts.js',
   output: {
-    path: resolve(__dirname, 'assets'),
+    path: resolve(__dirname, 'assets/generated/'),
     filename: 'scripts.[chunkhash].js',
   },
 
@@ -60,11 +60,11 @@ module.exports = {
   },
 
   plugins: [
-    new CleanWebpackPlugin('assets/*'),
+    new CleanWebpackPlugin('assets/generated/*'),
     new ExtractTextPlugin('styles.[contenthash].css'),
     new ManifestPlugin({
-      fileName: './../_data/assets.json',
-      basePath: 'assets/',
+      fileName: './../../_data/assets.json',
+      basePath: 'assets/generated/',
     }),
   ],
 };
