@@ -3,10 +3,13 @@ import glossaryObject from './../../../data/glossary.json';
 import createComponent from './partials/createComponent.js';
 import escapeRegex from './partials/escapeRegex.js';
 import walkTheDom from './partials/walkTheDom.js';
+import findReactInstances from './partials/findReactInstances.jsx';
 
 
 function scripts() {
-  const convertToCamelCase = (rawObject) => {
+  findReactInstances();
+
+  const convertToCamelCase = () => {
     return Object.keys(glossaryObject).reduce(
       (result, key) => {
         return {

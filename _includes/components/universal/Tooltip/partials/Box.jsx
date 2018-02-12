@@ -1,15 +1,16 @@
 import { h } from 'preact';
-import Content from './Content.jsx';
+import Links from './Links.jsx';
 
 
-export default function Box({ open, title, description, direction, actions, important, closeAction }) {
+export default function Box({ title, description, actions, year }) {
   return (
-    <div className={`Tooltip-boxWrap${open ? ' is-open' : ''}${important ? ' is-important' : ''}`}>
-      <div className="Tooltip-modalCover" onClick={closeAction} />
-      <div className="Tooltip-box">
-        <div className={`Tooltip-content${direction === 'down' ? ' is-down' : ''}`}>
-          <div className="Tooltip-shadowBox">
-            <Content {...{ direction, actions, title, description, closeAction }} />
+    <div className="Tooltip-box">
+      <div className={`Tooltip-content${ down ? ' is-down' : '' }`}>
+        <div className="Tooltip-shadowBox">
+          <div className="Tooltip-infoBox">
+            <div className="Tooltip-title">{title}</div>
+            <div className="Tooltip-text">{description}</div>
+            <Links {...{ actions, year }} />
           </div>
         </div>
       </div>

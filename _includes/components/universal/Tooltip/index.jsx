@@ -2,14 +2,16 @@ import { h } from 'preact';
 import Box from './partials/Box.jsx';
 
 
-export default function Tooltip({ block, openAction, closeAction, title, description, underline, children, open, direction, actions, important }) {
+export default function Tooltip({ children, title, description, actions, year }) {
   return (
-    <span className={`Tooltip${block ? ' is-block': ''}`} >
-      {underline ?
-        <span onClick={openAction} className="Tooltip-phrase">{children}</span> :
-        <span onClick={openAction}>{children}</span>
-      }
-      <Box {...{ open, direction, actions, title, description, important, closeAction }} />
+    <span className="Tooltip">
+      <div className="Tooltip-trigger">
+        {children}
+      </div>
+      <div className="Tooltip-boxWrap">
+        <div className="Tooltip-modalCover" />
+        <Box {...{ title, description, actions, year }} />
+      </div>
     </span>
   );
 }
