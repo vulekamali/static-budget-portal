@@ -2,11 +2,11 @@ import { h } from 'preact';
 import CloseIcon from './CloseIcon.jsx';
 
 
-export default function Links({ actions, year }) {
+export default function Links({ actions, year, closeAction }) {
   return (
     <div className="Tooltip-links">
 
-      <span className="Tooltip-linkWrap is-close">
+      <span className="Tooltip-linkWrap is-close" onClick={closeAction}>
         <span className="Tooltip-closeIcon">
           <CloseIcon />
         </span>
@@ -24,8 +24,6 @@ export default function Links({ actions, year }) {
           );
         })
       }
-
-      <div className="Tooltip-triangle" />
     </div>
   );
 }

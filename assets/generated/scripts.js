@@ -3222,25 +3222,31 @@ var _Box2 = _interopRequireDefault(_Box);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Tooltip(_ref) {
-  var children = _ref.children,
+  var block = _ref.block,
+      children = _ref.children,
       title = _ref.title,
       description = _ref.description,
       actions = _ref.actions,
-      year = _ref.year;
+      year = _ref.year,
+      down = _ref.down,
+      open = _ref.open,
+      openAction = _ref.openAction,
+      closeAction = _ref.closeAction;
+
 
   return (0, _preact.h)(
     'span',
-    { className: 'Tooltip' },
+    { className: 'Tooltip' + (block ? ' is-block' : '') },
     (0, _preact.h)(
       'div',
-      { className: 'Tooltip-trigger' },
+      { className: 'Tooltip-trigger', onClick: openAction },
       children
     ),
     (0, _preact.h)(
       'div',
-      { className: 'Tooltip-boxWrap' },
+      { onClick: closeAction, className: 'Tooltip-boxWrap' + (open ? ' is-open' : '') },
       (0, _preact.h)('div', { className: 'Tooltip-modalCover' }),
-      (0, _preact.h)(_Box2.default, { title: title, description: description, actions: actions, year: year })
+      (0, _preact.h)(_Box2.default, { title: title, description: description, actions: actions, year: year, down: down, closeAction: closeAction })
     )
   );
 }
@@ -6992,6 +6998,13 @@ function findReactInstances() {
         title: 'Content Unavailable',
         description: 'There is no exact match for this department in',
         year: '2017-18',
+        openAction: function openAction() {
+          return console.log('open');
+        },
+        closeAction: function closeAction() {
+          return console.log('close');
+        },
+        down: true,
         actions: [{
           url: 'asdsad',
           title: 'asdasd'
@@ -7038,14 +7051,16 @@ function Box(_ref) {
   var title = _ref.title,
       description = _ref.description,
       actions = _ref.actions,
-      year = _ref.year;
+      year = _ref.year,
+      down = _ref.down,
+      closeAction = _ref.closeAction;
 
   return (0, _preact.h)(
     'div',
     { className: 'Tooltip-box' },
     (0, _preact.h)(
       'div',
-      { className: 'Tooltip-content' },
+      { className: 'Tooltip-content' + (down ? ' is-down' : '') },
       (0, _preact.h)(
         'div',
         { className: 'Tooltip-shadowBox' },
@@ -7055,17 +7070,16 @@ function Box(_ref) {
           (0, _preact.h)(
             'div',
             { className: 'Tooltip-title' },
-            '$',
             title
           ),
           (0, _preact.h)(
             'div',
             { className: 'Tooltip-text' },
-            '$',
             description
           ),
-          (0, _preact.h)(_Links2.default, { actions: actions, year: year })
-        )
+          (0, _preact.h)(_Links2.default, { actions: actions, year: year, closeAction: closeAction })
+        ),
+        (0, _preact.h)('div', { className: 'Tooltip-triangle' + (down ? ' is-down' : '') })
       )
     )
   );
@@ -7093,14 +7107,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Links(_ref) {
   var actions = _ref.actions,
-      year = _ref.year;
+      year = _ref.year,
+      closeAction = _ref.closeAction;
 
   return (0, _preact.h)(
     'div',
     { className: 'Tooltip-links' },
     (0, _preact.h)(
       'span',
-      { className: 'Tooltip-linkWrap is-close' },
+      { className: 'Tooltip-linkWrap is-close', onClick: closeAction },
       (0, _preact.h)(
         'span',
         { className: 'Tooltip-closeIcon' },
@@ -7125,8 +7140,7 @@ function Links(_ref) {
           title
         )
       );
-    }),
-    (0, _preact.h)('div', { className: 'Tooltip-triangle' })
+    })
   );
 }
 
@@ -9783,7 +9797,8 @@ function YearSelectMarkup(_ref) {
       open = _ref.open,
       updateItem = _ref.updateItem,
       search = _ref.search,
-      loading = _ref.loading;
+      loading = _ref.loading,
+      year = _ref.year;
 
   var items = jsonData.map(function (data) {
     var Tag = data.active || data.direct === false ? 'span' : 'a';
@@ -9802,20 +9817,22 @@ function YearSelectMarkup(_ref) {
         (0, _preact.h)(
           _index2.default,
           {
-            open: data.name === tooltip,
             block: true,
-            important: true,
-            direction: 'down',
             title: 'Content Unavailable',
             description: 'There is no exact match for this department in ' + data.name + '.',
-            actions: [{ text: 'View ' + data.name + ' Departments', link: '/' + data.name + '/departments' }],
+            year: year,
             openAction: function openAction() {
               return updateItem('tooltip', data.name);
             },
             closeAction: function closeAction() {
               return updateItem('tooltip', null);
-            }
-
+            },
+            open: data.name === tooltip,
+            down: true,
+            actions: [{
+              url: '/' + data.name + '/departments',
+              title: 'View ' + data.name + ' Departments'
+            }]
           },
           (0, _preact.h)(
             Tag,

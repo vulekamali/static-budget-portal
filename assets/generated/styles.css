@@ -200,7 +200,8 @@ p {
     .Tooltip {
       position: relative; } }
   .Tooltip.is-block {
-    width: 100%; }
+    width: 100%;
+    display: block; }
 
 .Tooltip-underline {
   -webkit-user-select: none;
@@ -224,7 +225,7 @@ p {
 
 .Tooltip-modalCover {
   background: rgba(0, 0, 0, 0.4);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -822,7 +823,7 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 120; }
+  z-index: 109; }
   .Search-float.is-focused {
     display: block; }
   @media screen and (min-width: 750px) {
@@ -1088,8 +1089,7 @@ p {
   border-radius: 18px;
   background-color: #fff;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
-  border: solid 1px #d2d2d2;
-  overflow: hidden; }
+  border: solid 1px #d2d2d2; }
   .YearSelect-bar::after {
     clear: both;
     content: "";
@@ -1160,8 +1160,9 @@ p {
   font-size: 14px;
   text-decoration: none;
   padding: 10px 0;
-  display: inline-block;
-  color: #4a4a4a; }
+  display: block;
+  color: #4a4a4a;
+  text-align: center; }
   .YearSelect-item.is-active .YearSelect-link {
     color: white;
     background-color: #ad3c64; }

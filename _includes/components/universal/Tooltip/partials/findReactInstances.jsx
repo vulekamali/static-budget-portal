@@ -10,6 +10,9 @@ export default function findReactInstances() {
         title="Content Unavailable"
         description="There is no exact match for this department in"
         year="2017-18"
+        openAction={() => console.log('open')}
+        closeAction={() => console.log('close')}
+        down
         actions={[
           {
             url: 'asdsad',

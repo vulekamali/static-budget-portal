@@ -47,7 +47,6 @@ $years: 3;
   background-color: #fff;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
   border: solid 1px #d2d2d2;
-  overflow: hidden;
   @include clearfix;
 
   &.is-loading {
@@ -133,8 +132,9 @@ $years: 3;
   font-size: 14px;
   text-decoration: none;
   padding: 10px 0;
-  display: inline-block;
+  display: block;
   color: #4a4a4a;
+  text-align: center;
 
   .YearSelect-item.is-active & {
     color: white;
