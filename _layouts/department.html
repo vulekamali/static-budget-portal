@@ -9,7 +9,6 @@ layout: page-shell
 
 <div class="Page-content">
   <div class="Page-contentWrap">
-
     {% if page_data.government.slug == 'south-africa' %}
       <div class="Page-title">National Department: {{ page_data.name }}</div>
     {% else %}
@@ -21,7 +20,7 @@ layout: page-shell
       <div class="Card js-tooltips" data-year="{{ page.financial_year }}">{{ page_data.intro  | markdownify }}</div>
 
       <div class="Page-section">
-          {% include components/universal/Graph/index.html graph=page_data.programmes type="bar" %}
+          {% include components/universal/Graph/index.html graph=page_data.programmes year=page.financial_year type="bar" %}
       </div>
 
     </main>

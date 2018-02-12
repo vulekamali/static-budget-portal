@@ -9,6 +9,8 @@ for (let i = 0; i < componentList.length; i++) {
   const { data } = JSON.parse(component.getAttribute('data-graph'));
   const legendAttribute = component.getAttribute('data-config') || '{ "legend": [] }';
   const { legend } = JSON.parse(legendAttribute);
+  const year = component.getAttribute('data-year') || '2017-18';
+
 
   const items = data.reduce(
     (result, val) => {
@@ -21,7 +23,7 @@ for (let i = 0; i < componentList.length; i++) {
   );
 
   render(
-    <GraphContainer {...{ items, legend }} />,
+    <GraphContainer {...{ items, year, legend }} />,
     component,
   );
 }
