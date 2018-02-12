@@ -6,18 +6,18 @@ import filterResults from './filterResults.js';
 export default class DeptSearchContainer extends Component {
   constructor(props) {
     super(props);
+    const filters = {
+      keywords: '',
+      sphere: this.props.sphere || 'all',
+      province: 'all',
+    };
+
 
     this.state = {
       loading: false,
       open: null,
-
-      filters: {
-        keywords: '',
-        sphere: this.props.sphere || 'all',
-        province: 'all',
-      },
-
-      results: this.props.jsonData,
+      results: filterResults(filters, this.props.jsonData),
+      filters,
     };
 
     this.eventHandlers = {

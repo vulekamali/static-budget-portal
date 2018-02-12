@@ -1,13 +1,13 @@
 {
   "data": [
     {
-      "url": "/departments?spheres=national",
+      "url": "/departments?sphere=national",
       "number": "41",
       "text": "National departments",
       "modifiers": " is-positive"
     },
     {
-      "url": "/departments?spheres=provincial",
+      "url": "/departments?sphere=provincial",
       "number": "128",
       "text": "Provincial departments",
       "modifiers": " is-negative"
