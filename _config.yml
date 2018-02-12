@@ -47,11 +47,6 @@ defaults:
       path: "2015-16"
     values:
       financial_year: 2015-16
-      years: [
-        ['2015-16', '/2015-16/departments', 'active'],
-        ['2016-17', '/2016-17/departments', 'link'],
-        ['2017-18', '/2017-18/departments', 'link'],
-      ]
       active: departments
       nested: true
   -
@@ -59,11 +54,6 @@ defaults:
       path: "2016-17"
     values:
       financial_year: 2016-17
-      years: [
-        ['2015-16', '/2015-16/departments', 'link'],
-        ['2016-17', '/2016-17/departments', 'active'],
-        ['2017-18', '/2017-18/departments', 'link'],
-      ]
       active: departments
       nested: true
   -
@@ -71,10 +61,43 @@ defaults:
       path: "2017-18"
     values:
       financial_year: 2017-18
-      years: [
-        ['2015-16', '/2015-16/departments', 'link'],
-        ['2016-17', '/2016-17/departments', 'link'],
-        ['2017-18', '/2017-18/departments', 'active'],
-      ]
       active: departments
+      nested: true
+
+
+  -
+    scope:
+      path: "2015-16/datasets"
+    values:
+      financial_year: 2015-16
+      years: [
+        ['2015-16', '/2015-16/contributed-data', 'active'],
+        ['2016-17', '/2016-17/contributed-data', 'link'],
+        ['2017-18', '/2017-18/contributed-data', 'link'],
+      ]
+      active: contributed-data
+      nested: true
+  -
+    scope:
+      path: "2016-17/datasets"
+    values:
+      financial_year: 2016-17
+      years: [
+        ['2015-16', '/2015-16/contributed-data', 'link'],
+        ['2016-17', '/2016-17/contributed-data', 'active'],
+        ['2017-18', '/2017-18/contributed-data', 'link'],
+      ]
+      active: contributed-data
+      nested: true
+  -
+    scope:
+      path: "2017-18/datasets"
+    values:
+      financial_year: 2017-18
+      years: [
+        ['2015-16', '/2015-16/contributed-data', 'link'],
+        ['2016-17', '/2016-17/contributed-data', 'link'],
+        ['2017-18', '/2017-18/contributed-data', 'active'],
+      ]
+      active: contributed-data
       nested: true
