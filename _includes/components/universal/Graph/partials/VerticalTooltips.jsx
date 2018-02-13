@@ -5,7 +5,6 @@ import VerticalTooltip from './VerticalTooltip.jsx';
 export default function VerticalTooltips({ totalGroupSpace, groupSpaceArray, rank, lines, title, styling }) {
   const {
     barWidth,
-    titleHeight,
     padding,
     buffer,
     lineGutter,

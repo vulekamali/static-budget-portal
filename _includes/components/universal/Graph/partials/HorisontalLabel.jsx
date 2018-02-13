@@ -4,7 +4,6 @@ import { h } from 'preact';
 export default function HorisontalLabel({ totalGroupSpace, groupSpaceArray, rank, title, styling }) {
   const {
     barWidth,
-    titleHeight,
     padding,
     buffer,
     valueSpace,

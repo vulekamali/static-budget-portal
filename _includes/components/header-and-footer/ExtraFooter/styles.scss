@@ -10,9 +10,12 @@
 }
 
 .ExtraFooter-item {
-  margin-right: 115px;
-  float: left;
   display: block;
+
+  @media screen and (min-width: 800px) {
+    margin-right: 115px;
+    float: left;
+  }
 }
 
 .ExtraFooter-list {
@@ -21,10 +24,11 @@
 }
 
 .ExtraFooter-image {
-  width: 175px;
+  width: 100%;
+  max-width: 175px;
 
   &--larger {
-    width: 200px;
+    max-width: 200px;
   }
 }
 
