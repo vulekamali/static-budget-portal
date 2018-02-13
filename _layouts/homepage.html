@@ -14,6 +14,20 @@ layout: page-shell
     <div class="HomeLayout">
 
       <div class="HomeLayout-main">
+        <div>
+            {%
+              include components/homepage/Links/index.html
+              speech=resources_data.budget_speech.url
+              webcast=resources_data.budget_webcast.url
+              highlights=resources_data.highlights.url
+              expenditure=resources_data.estimates_national_expenditure.url
+              appropriation=resources_data.appropriation.url
+              division=resources_data.division_revenue_bill.url
+              pocket_guide=resources_data.pocket_guide.url
+              presentation=resources_data.presentation.url
+            %}
+        </div>
+
         <span class="HomeLayout-title js-tooltips" data-year="{{ page.financial_year }}">The national revenue fund, administered by the National Treasury,  is distributed to these three spheres of government.</span>
 
         <div>

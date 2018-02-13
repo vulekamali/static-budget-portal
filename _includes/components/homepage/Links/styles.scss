@@ -1,0 +1,147 @@
+.Links {
+  border-radius: 20px;
+  background-color: #e6e6e6;
+  border: solid 1px #d2d2d2;
+  padding: 5px;
+  @include clearfix;
+}
+
+.Links-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px 22px 0;
+}
+
+.Links-description {
+  padding: 15px 22px;
+}
+
+.Links-itemWrap {
+  float: left;
+  padding: 5px;
+  font-size: 14px;
+  text-align: left;
+
+  @media screen and (min-width: 750px) {
+    width: 50%;
+  }
+
+  &--full {
+    width: 100%;
+    text-align: center;
+  }
+  
+}
+
+.Links-item {
+  color: #3f3f3f;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  border: solid 1px #b9b9b9;
+  padding: 10px;
+  display: table;
+  width: 100%;
+
+  &:hover {
+    background-color: darken(white, 15%);
+  }
+}
+
+.Links-icon {
+  display: table-cell;
+  text-align: center;
+  line-height: 0;
+  width: 50px;
+  height: 50px;
+  fill: white;
+  background: red;
+  border-radius: 50%;
+  vertical-align: middle;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+
+  &--purple {
+    background-color: #ad3c64;
+
+    .Links-item:hover & {
+      fill: darken(white, 15%);
+      background-color: darken(#ad3c64, 15%);
+    }
+  }
+
+  &--orange {
+    background-color: #c66347;
+
+    .Links-item:hover & {
+      fill: darken(white, 15%);
+      background-color: darken(#c66347, 15%);
+    }
+  }
+
+  &--darkYellow {
+    background-color: #ee9f31;
+
+    .Links-item:hover & {
+      fill: darken(white, 15%);
+      background-color: darken(#ee9f31, 15%);
+    }
+  }
+
+  &--lightYellow {
+    background-color: #fec42d;
+
+    .Links-item:hover & {
+      fill: darken(white, 15%);
+      background-color: darken(#fec42d, 15%);
+    }
+  }
+
+  &--lightGreen {
+    background-color: #7bb344;
+
+    .Links-item:hover & {
+      fill: darken(white, 15%);
+      background-color: darken(#7bb344, 15%);
+    }
+  }
+
+  &--darkGreen {
+    background-color: #2f8c5d;
+
+    .Links-item:hover & {
+      fill: darken(white, 15%);
+      background-color: darken(#2f8c5d, 15%);
+    }
+  }
+
+  &--dullBlue {
+    background-color: #5578c2;
+
+    .Links-item:hover & {
+      fill: darken(white, 15%);
+      background-color: darken(#5578c2, 15%);
+    }
+  }
+
+  &--brightBlue {
+    background-color: #5793f3;
+
+    .Links-item:hover & {
+      fill: darken(white, 15%);
+      background-color: darken(#5793f3, 15%);
+    }
+  }
+}
+
+.Links-text {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.Links-svg {
+  width: 25px;
+  height: 25px;
+}
