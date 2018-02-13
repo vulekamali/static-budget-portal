@@ -2,9 +2,14 @@
 layout: page-shell
 ---
 
+{% assign page_data = site.data[page.financial_year].index %}
+{% assign resources_data = site.data[page.financial_year].resources %}
+
+
 <div class="Page-content">
   <div class="Page-contentWrap">
-    <span class="Page-title">Making government budget data and processes accessible to all citizens & interested parties.</span>
+
+    <span class="Page-title">The South African National Budget {{ page.financial_year }}</span>
 
     <div class="HomeLayout">
 
@@ -20,10 +25,20 @@ layout: page-shell
           <h2 class="u-sReadOnly">Additional Content</h2>
 
           <div class="HomeLayout-newsletter">
+            {% include components/homepage/NewIntro/index.html %}
+          </div>
+
+          <div class="HomeLayout-newsletter">
             {% include components/homepage/SignUpBox/index.html %}
           </div>
 
-          {% include components/homepage/Related/index.html year=page.financial_year %}
+          <div class="HomeLayout-newsletter">
+            {% include components/homepage/Related/index.html year=page.financial_year %}
+          </div>
+
+          <div class="HomeLayout-newsletter">
+            {% include components/homepage/ApiCta/index.html %}
+          </div>
 
       </div>
 
