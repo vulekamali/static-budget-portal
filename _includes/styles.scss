@@ -20,6 +20,7 @@
 @import 'utilities/scss/utility-classes/u-listReset';
 @import 'utilities/scss/utility-classes/u-listItemReset';
 @import 'utilities/scss/utility-classes/u-marginTop';
+@import 'utilities/scss/utility-classes/u-underline';
 
 @import 'components/universal/Tooltip/styles';
 @import 'components/universal/Page/styles';
@@ -46,6 +47,8 @@
 @import 'components/homepage/Circles/styles';
 @import 'components/homepage/SignUpBox/styles';
 @import 'components/homepage/HomeLayout/styles';
+@import 'components/homepage/ApiCta/styles';
+@import 'components/homepage/NewIntro/styles';
 
 @import 'components/other-pages/DeptSearch/styles';
 @import 'components/other-pages/SearchResult/styles';

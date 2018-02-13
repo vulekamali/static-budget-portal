@@ -5,9 +5,11 @@ $mobile-break: 750px;
   padding: 0;
   margin: 0;
   display: inline-block;
+  width: 100%;
 }
 
 .Circles-item {
+  text-align: center;
   padding: 20px 15px;
   border: 10px solid grey;
   border-radius: 15px;
