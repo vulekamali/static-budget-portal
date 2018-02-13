@@ -26,7 +26,18 @@ export default function filterResults(filtersObject, rawItems) {
         return filterGroups(results, value);
       }
 
-      return results;
+      return results.map((item) => {
+        const newOrderDept = item.departments.sort(
+          (a, b) => {
+            return a.name.localeCompare(b.name);
+          },
+        );
+
+        return {
+          ...item,
+          departments: newOrderDept,
+        };
+      });
     },
     rawItems,
   );
