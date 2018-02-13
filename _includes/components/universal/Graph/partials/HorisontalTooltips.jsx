@@ -1,18 +1,19 @@
 import { h } from 'preact';
 import HorisontalTooltip from './HorisontalTooltip.jsx';
+import breakIntoWrap from './breakIntoWrap.js';
 
-
-export default function HorisontalTooltips({ totalGroupSpace, groupSpaceArray, rank, lines, title, styling }) {
+export default function HorisontalTooltips({ totalGroupSpace, items, groupSpaceArray, rank, lines, title, styling }) {
   const {
     barWidth,
-    titleHeight,
     padding,
     buffer,
     valueSpace,
     lineGutter,
     maxValue,
     groupMargin,
-    fontSize,
+    charLineHeight,
+    titleSpace,
+    charWrap,
   } = styling;
 
   const groupSpace = groupSpaceArray[rank];
@@ -30,6 +31,18 @@ export default function HorisontalTooltips({ totalGroupSpace, groupSpaceArray, r
 
   const startPoint = padding[0] + previousSpace;
 
+  const breakIntoArray = (string) => {
+    let result = [];
+
+    for (let i = 0; i < string.length; i += charWrap) {
+      result.push(string.substr(i, charWrap));
+    }
+
+    return result;
+  };
+
+  const titles = Object.keys(items);
+
   return (
     <g className="Graph-group">
       {/* <rect
@@ -44,6 +57,8 @@ export default function HorisontalTooltips({ totalGroupSpace, groupSpaceArray, r
 
       {
         lines.map((amount, index) => {
+          const rawCharArray = breakIntoWrap(title, charWrap);
+          const charArray = rawCharArray.filter(val => val !== '');
           const relativeAmount = ((amount / maxValue) * valueSpace) - barWidth;
           const displayAmount = relativeAmount < (barWidth * 2) ? (barWidth * 2) : relativeAmount;
 
@@ -51,7 +66,7 @@ export default function HorisontalTooltips({ totalGroupSpace, groupSpaceArray, r
             <HorisontalTooltip
               {...{ styling }}
               xPosition={(padding[3] + buffer + displayAmount) - (barWidth / 2)}
-              yPosition={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + titleHeight}
+              yPosition={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * (charArray.length + 1)) + titleSpace}
               {...{ amount, totalGroupSpace }}
             />
           );
@@ -61,14 +76,3 @@ export default function HorisontalTooltips({ totalGroupSpace, groupSpaceArray, r
     </g>
   );
 }
-
-
-/*
-  stroke-linecap="round"
-  stroke-width={barWidth}
-  y1={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + titleHeight}
-  x1={padding[3] + buffer + (barWidth / 2)}
-  y2={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + titleHeight}
-  x2={(padding[3] + buffer + displayAmount) - barWidth}
-  className="Graph-line"
-*/

@@ -4,7 +4,6 @@ import { relative } from 'path';
 export default function VerticalLineGroup({ totalGroupSpace, groupSpaceArray, rank, lines, title, styling }) {
   const {
     barWidth,
-    titleHeight,
     padding,
     buffer,
     lineGutter,

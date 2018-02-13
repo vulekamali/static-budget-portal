@@ -24,7 +24,7 @@ export default function HorisontalTooltipsList({ totalGroupSpace, groupSpaceArra
               rank={index}
               lines={items[key]}
               title={key}
-              {...{ totalGroupSpace, groupSpaceArray, styling }}
+              {...{ totalGroupSpace, groupSpaceArray, styling, items }}
             />
           );
         })
