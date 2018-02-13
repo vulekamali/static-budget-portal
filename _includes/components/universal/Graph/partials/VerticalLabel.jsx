@@ -4,11 +4,9 @@ import { h } from 'preact';
 export default function VerticalLabel({ totalGroupSpace, groupSpaceArray, rank, title, styling }) {
   const {
     barWidth,
-    titleHeight,
     padding,
     buffer,
     valueSpace,
-    fontSize,
   } = styling;
 
   const groupSpace = groupSpaceArray[rank];
