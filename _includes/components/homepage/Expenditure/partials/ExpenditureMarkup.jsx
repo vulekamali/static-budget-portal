@@ -38,7 +38,7 @@ export default function ExpenditureMarkup({ items, year }) {
       <GraphContainer {...{ items, year }} legend={[]} />
 
       <div className="Expenditure-linkWrap Expenditure-linkWrap--extra">
-        <a href="http://www.treasury.gov.za/documents/national%20budget/2017/default.aspx" className="Expenditure-link">Explore National and Provincial Expenditure by Department for {year}</a>
+        <a href={`/${year}/departments`} className="Expenditure-link">Explore National and Provincial Expenditure by Department for {year}</a>
       </div>
     </div>
   );
