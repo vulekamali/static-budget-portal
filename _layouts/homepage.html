@@ -9,7 +9,9 @@ layout: page-shell
 <div class="Page-content">
   <div class="Page-contentWrap">
 
-    <span class="Page-title">The South African National Budget {{ page.financial_year }}</span>
+    <div class="HomeLayout-titleWrap">
+      <span class="Page-title">The South African National Budget {{ page.financial_year }}</span>
+    </div>
 
     <div class="HomeLayout">
 
@@ -31,7 +33,19 @@ layout: page-shell
         <span class="HomeLayout-title js-tooltips" data-year="{{ page.financial_year }}">The national revenue fund, administered by the National Treasury,  is distributed to these three spheres of government.</span>
 
         <div>
-          {% include components/homepage/Circles/index.html year=page.financial_year items=site.data.static.circles %}
+          {% 
+            include components/homepage/Circles/index.html 
+            year=page.financial_year
+            items=site.data.static.circles
+          %}
+        </div>
+        {% 
+          include components/homepage/Revenue/index.html 
+          info=page_data.revenue
+          link=resources_data.budget_revenue_data.url
+        %}
+        <div>
+
         </div>
       </div>
 

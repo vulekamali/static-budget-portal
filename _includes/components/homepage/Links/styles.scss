@@ -145,3 +145,22 @@
   width: 25px;
   height: 25px;
 }
+
+.Links-linkWrap {
+  display: block;
+  float: left;
+  padding: 5px;
+  width: 100%;
+}
+
+.Links-link {
+  display: inline-block;
+  color: #3f3f3f;
+  padding: 3px 6px 6px;
+  border-radius: 5px;
+  font-size: 14px;
+
+  &:hover {
+    background-color: darken(#e6e6e6, 15%);
+  }
+}

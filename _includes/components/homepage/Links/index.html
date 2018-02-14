@@ -99,5 +99,18 @@
     </div>
   {% endif %}
 
-  <div class="Links-itemWrap Links-itemWrap--full"><a class="Links-item" href="http://www.treasury.gov.za/documents/national%20budget/2017/default.aspx">Explore all Budget Resources from National Treasury</a></div>
+  {% if page.financial_year == '2017-18' %}
+    {% assign newYear = '2017' %}
+  {% elsif page.financial_year == '2016-17' %}
+    {% assign newYear = '2016' %}
+  {% elsif page.financial_year == '2015-16' %}
+    {% assign newYear = '2015' %}
+  {% else %}
+    {% assign newYear = '2017' %}
+  {% endif %}
+
+  <div class="Links-linkWrap">
+    <a href="http://www.treasury.gov.za/documents/national%20budget/{{ newYear }}/default.aspx" class="Links-link">Explore all Budget Resources from National Treasury</a>
+  </div>
+
 </div>
