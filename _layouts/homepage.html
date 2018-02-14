@@ -39,14 +39,23 @@ layout: page-shell
             items=site.data.static.circles
           %}
         </div>
-        {% 
-          include components/homepage/Revenue/index.html 
-          info=page_data.revenue
-          link=resources_data.budget_revenue_data.url
-        %}
-        <div>
 
+        <div>
+          {% 
+            include components/homepage/Revenue/index.html 
+            info=page_data.revenue
+            link=resources_data.budget_revenue_data.url
+          %}
         </div>
+
+        <div>
+          {% 
+            include components/homepage/Expenditure/index.html 
+            info=page_data.government_functions
+            year=page.financial_year
+          %}
+        </div>
+
       </div>
 
       <div class="HomeLayout-sidebar">

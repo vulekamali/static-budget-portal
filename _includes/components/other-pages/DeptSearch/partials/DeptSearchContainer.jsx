@@ -12,11 +12,28 @@ export default class DeptSearchContainer extends Component {
       province: 'all',
     };
 
+    const getEmptyGroups = (data) => {
+      return data.reduce(
+        (results, val) => {
+          if (val.departments.length <= 0) {
+
+            return [
+              ...results,
+              val.slug,
+            ];
+          }
+
+          return results;
+        },
+        [],
+      );
+    };
 
     this.state = {
       loading: false,
       open: null,
       results: filterResults(filters, this.props.jsonData),
+      emptyGroups: getEmptyGroups(this.props.jsonData),
       filters,
     };
 

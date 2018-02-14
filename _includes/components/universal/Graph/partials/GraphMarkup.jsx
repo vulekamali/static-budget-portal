@@ -34,8 +34,6 @@ export default function GraphMarkup({ items, styling, legend, year }) {
 
   return (
     <div>
-      <div className="Graph-title">Funded programmes for {year}</div>
-      <div className="Graph-description">A department`s programmes are the activities that it performs during the financial year. Different programs have different levels of funding, depending on their requirements and available finances.</div>
       <svg
         version="1.1"
         className="Graph-svg"
