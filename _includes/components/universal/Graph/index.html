@@ -1,7 +1,12 @@
-<div 
-  class="Graph" 
-  data-type="{{ include.type }}"
-  data-graph='{ "data": {{ include.graph | jsonify }} }'
-  data-year="{{ include.year }}"
->
+<div class="Graph">
+  <div class="Graph-title">Funded programmes for {{ include.year }}</div>
+  <div class="Graph-description">A department`s programmes are the activities that it performs during the financial year. Different programs have different levels of funding, depending on their requirements and available finances.</div>
+  <div 
+    class="Graph-data"
+    data-type="{{ include.type }}"
+    data-graph='{ "data": {{ include.graph | jsonify }} }'
+    data-year="{{ include.year }}"
+  ></div>
 </div>
+
+

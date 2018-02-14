@@ -8,6 +8,8 @@ export default class GraphContainer extends Component {
   constructor(props) {
     super(props);
 
+    console.log(this.props);
+
     this.state = {
       fontSize: null,
       popupFontSize: null,
@@ -64,7 +66,7 @@ export default class GraphContainer extends Component {
         valueSpace: 300,
         fontSize: 24,
         popupFontSize: 24,
-        padding: [0, 80, 80, 10],
+        padding: [0, 80, 80, 0],
         lineGutter: 15,
         popupHeight: 25,
         popupCentre: 5,
@@ -78,12 +80,12 @@ export default class GraphContainer extends Component {
         valueSpace: 500,
         fontSize: 14,
         popupFontSize: 14,
-        padding: [0, 80, 60, 25],
+        padding: [0, 80, 60, 0],
         lineGutter: 8,
         popupHeight: 30,
         popupCentre: 5,
         barWidth: 12,
-        groupMargin: 60,
+        groupMargin: 40,
         charWrap: 65,
         charLineHeight: 14,
         titleSpace: 0,

@@ -2,7 +2,7 @@ import { h, render } from 'preact';
 import GraphContainer from './partials/GraphContainer.jsx';
 
 
-const componentList = document.getElementsByClassName('Graph');
+const componentList = document.getElementsByClassName('Graph-data');
 
 for (let i = 0; i < componentList.length; i++) {
   const component = componentList[i];
