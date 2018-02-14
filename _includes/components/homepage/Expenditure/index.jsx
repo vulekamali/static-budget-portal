@@ -1,28 +1,28 @@
 import { h, render } from 'preact';
-import RevenueMarkup from './partials/RevenueMarkup.jsx';
+import ExpenditureMarkup from './partials/ExpenditureMarkup.jsx';
 
 
-function Revenue() {
-  const componentsList = document.getElementsByClassName('Revenue-container');
+function Expenditure() {
+  const componentsList = document.getElementsByClassName('Expenditure-data');
 
   if (componentsList.length > 0) {
     for (let i = 0; i < componentsList.length; i++) {
       const component = componentsList[i];
       const rawItems = JSON.parse(component.getAttribute('data-info')).data;
-      const link = component.getAttribute('data-link');
+      const year = component.getAttribute('data-year') || '2017-18';
 
       const items = rawItems.reduce(
         (results, val) => {
           return {
             ...results,
-            [val.category]: val.amount,
+            [val.name]: [val.total_budget],
           };
         },
         {},
       );
 
       render(
-        <RevenueMarkup {...{ items, link }} />,
+        <ExpenditureMarkup {...{ items, year }} />,
         component,
       );
     }
@@ -30,4 +30,4 @@ function Revenue() {
 }
 
 
-export default Revenue();
+export default Expenditure();
