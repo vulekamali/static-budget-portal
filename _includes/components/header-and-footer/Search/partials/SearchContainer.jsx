@@ -2,6 +2,7 @@ import { h, Component } from 'preact';
 import PropTypes from 'prop-types';
 import SearchMarkup from './SearchMarkup.jsx';
 import analyticsEvents from './../../../../utilities/js/helpers/analyticsEvent.js';
+import { apiBaseURL } from '../../../../utilities/config/global.json';
 
 export default class SearchContainer extends Component {
   constructor(props) {
@@ -53,7 +54,7 @@ export default class SearchContainer extends Component {
    * @returns {*} - Returns a promise.
    */
   sendGetRequest(newKeywords = this.state.keywords) {
-    const datasetPackagesQueryUrl = `https://data.vulekamali.gov.za/api/3/action/package_search?q=${newKeywords}&start=0&rows=10&fq=+organization:national-treasury+vocab_financial_years:${this.props.selectedYear}+extras_department_name_slug:[* TO *]+extras_geographic_region_slug:[* TO *]`;
+    const datasetPackagesQueryUrl = `${apiBaseURL}/api/3/action/package_search?q=${newKeywords}&start=0&rows=10&fq=+organization:national-treasury+vocab_financial_years:${this.props.selectedYear}+extras_department_name_slug:[* TO *]+extras_geographic_region_slug:[* TO *]`;
     const requestApi = this.props.requestOverride || datasetPackagesQueryUrl;
 
 
