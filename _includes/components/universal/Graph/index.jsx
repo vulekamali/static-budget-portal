@@ -1,5 +1,5 @@
 import { h, render } from 'preact';
-import GraphContainer from './partials/GraphContainer.jsx';
+import Toggle from './partials/Toggle.jsx';
 
 
 const componentList = document.getElementsByClassName('Graph-data');
@@ -23,7 +23,7 @@ for (let i = 0; i < componentList.length; i++) {
   );
 
   render(
-    <GraphContainer {...{ items, year, legend }} />,
+    <Toggle {...{ items, year, legend }} />,
     component,
   );
 }
