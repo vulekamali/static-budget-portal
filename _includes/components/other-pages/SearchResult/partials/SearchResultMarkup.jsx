@@ -62,14 +62,14 @@ export default function SearchResultMarkup({ loading, error, state, updateItem, 
 
   return (
     <div className="SearchResult-wrap">
-      <div className="SearchResult-heading">Search result for &quot;{search}&quot; in Departments</div>
+      <div className="SearchResult-heading">Search result for &quot;{search}&quot; in Department Budgets</div>
 
       <div className="SearchResult-formWrap">
         <Form {...{ state, updateFilter }} />
       </div>
 
       <div className="SearchResult-group">
-        <div className="SearchResult-title">Suggested Departments{ departments ? extra : ''}</div>
+        <div className="SearchResult-title">Suggested Department Budgets{ departments ? extra : ''}</div>
         <div className="SearchResult-list">
           {loading ? <div>Loading...</div> : null}
           {!loading && preDepartments.length > 0 ? departments.splice((page * 10) - 10, 10) : null}

@@ -130,7 +130,7 @@ export default function List(props) {
   return (
     <div>
       <span className="Search-title">
-        <span>Suggested Departments</span>
+        <span>Suggested Department Budgets</span>
         <span className="Search-showing">
           {formatCount(count)}
         </span>
