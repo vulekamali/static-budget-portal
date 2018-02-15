@@ -41,6 +41,7 @@ intro: "## Vote purpose\n\n_Lead and facilitate access to sustainable economic a
   \ a wide\nlegislative framework that includes:\n\n  * the Companies Act (2008)\n\
   \n  * the Manufacturing Development Act (1993)\n\n  * the Broad Based Black Economic\
   \ Empowerment Act (2003)\n\n  * the Consumer Protection Act (2008).\n\n"
+is_vote_primary: true
 name: Trade and Industry
 organisational_unit: department
 programmes:
@@ -75,3 +76,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2034%20Trade%20and%20Industry.pdf
 vote_number: 34
+vote_primary:
+  name: Trade and Industry
+  slug: trade-and-industry
+  url_path: /2017-18/national/departments/trade-and-industry

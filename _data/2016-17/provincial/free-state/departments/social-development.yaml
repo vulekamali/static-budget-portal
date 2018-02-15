@@ -35,6 +35,7 @@ intro: "## Vision\n\nA caring and self-reliant society\r\n\r\n\n\n## Mission\n\n
   \ in\r\ncollaboration with partners to reduce their vulnerabilities and promote\
   \ community\r\nempowerment as well as to instil good governance through sound business\
   \ management\r\npractises in support of effective and efficient services delivery"
+is_vote_primary: true
 name: Social Development
 organisational_unit: department
 programmes:
@@ -64,3 +65,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 07 - Social Development.pdf
 vote_number: 7
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2016-17/provincial/free-state/departments/social-development

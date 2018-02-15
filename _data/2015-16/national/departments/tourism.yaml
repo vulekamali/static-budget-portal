@@ -74,6 +74,7 @@ intro: '## Vote purpose
 
 
   '
+is_vote_primary: true
 name: Tourism
 organisational_unit: department
 programmes:
@@ -100,3 +101,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote33.xls
 vote_number: 33
+vote_primary:
+  name: Tourism
+  slug: tourism
+  url_path: /2015-16/national/departments/tourism

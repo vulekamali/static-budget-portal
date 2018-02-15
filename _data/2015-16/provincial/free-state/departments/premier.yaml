@@ -48,6 +48,7 @@ intro: "## Vision\r\n\r\nLeading the Free State Province towards service excelle
   \ in the FSPG;\r\n\r\n* To provide strategic direction, facilitate and coordinate\
   \ special programmes; and\r\n\r\n* To render efficient and effective Community Liaison\
   \ and Participatory Democracy\r\nServices."
+is_vote_primary: true
 name: Premier
 organisational_unit: department
 programmes:
@@ -73,3 +74,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 01 - Premier.pdf
 vote_number: 1
+vote_primary:
+  name: Premier
+  slug: premier
+  url_path: /2015-16/provincial/free-state/departments/premier

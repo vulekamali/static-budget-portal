@@ -34,6 +34,7 @@ intro: "## Aim\r\n\r\nTo lead and grow a dynamic, sustainable, diversified and v
   \ cultural and heritage tourism in the North West Province, strengthening institutional\
   \ capacity, promote good cooperative governance and branding and marketing of North\
   \ West province as a tourism destination; and creativity and innovation."
+is_vote_primary: true
 name: Tourism
 organisational_unit: department
 programmes:
@@ -50,3 +51,7 @@ sphere:
   slug: provincial
 treasury_datasets: {}
 vote_number: 10
+vote_primary:
+  name: Tourism
+  slug: tourism
+  url_path: /2015-16/provincial/north-west/departments/tourism

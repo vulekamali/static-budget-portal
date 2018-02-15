@@ -50,6 +50,7 @@ intro: "## Vision\r\n\r\nAn Inclusive, Global Competitive Economy\r\n\r\n\r\n\r\
   \ and departmental programmes designed for\r\nsustained economic development.\r\n\
   \r\n* Ensure tourism sector policy development, regulation and compliance and\r\n\
   promotion of sector transformation in the province"
+is_vote_primary: true
 name: Economic Development And Tourism
 organisational_unit: department
 programmes:
@@ -81,3 +82,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 06 - Economic Development and Tourism.pdf
 vote_number: 6
+vote_primary:
+  name: Economic Development And Tourism
+  slug: economic-development-and-tourism
+  url_path: /2016-17/provincial/mpumalanga/departments/economic-development-and-tourism

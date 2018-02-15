@@ -43,6 +43,7 @@ intro: "## Vision\n\nThe vision of the Department of Education (DOE) is: A well-
   \ Nutrition\r\nProgramme (NSNP). Other conditional grants that are aimed at uplifting\
   \ the quality of education are also in this programme and these include, but are\
   \ not limited to, the Maths, Science and Technology grant."
+is_vote_primary: true
 name: Education
 organisational_unit: department
 programmes:
@@ -80,3 +81,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 05 - Education.pdf
 vote_number: 5
+vote_primary:
+  name: Education
+  slug: education
+  url_path: /2015-16/provincial/kwazulu-natal/departments/education

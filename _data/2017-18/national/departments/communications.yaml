@@ -49,6 +49,7 @@ intro: "## Vote purpose\n\n_Create an enabling environment for the provision of 
   \ (2002), a joint responsibility with the Minister of Telecommunications and Postal\
   \ Services\n\n  * The Electronic Communications and Transactions Act (2005), a joint\
   \ responsibility with the Minister of Telecommunications and Postal Services.\n\n"
+is_vote_primary: true
 name: Communications
 organisational_unit: department
 programmes:
@@ -75,3 +76,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2003%20Communications.pdf
 vote_number: 3
+vote_primary:
+  name: Communications
+  slug: communications
+  url_path: /2017-18/national/departments/communications

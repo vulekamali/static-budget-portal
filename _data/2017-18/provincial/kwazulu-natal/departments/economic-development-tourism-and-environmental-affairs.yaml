@@ -46,6 +46,7 @@ intro: "## Vision\r\n\r\nThe vision of the Department of Economic Development, T
   \ protection service.\r\n\r\n* To ensure effective and prudent business regulation\
   \ in the province.\r\n\r\n* To provide effective and efficient environmental management.\r\
   \n\r\n* To provide conservation services."
+is_vote_primary: true
 name: Economic Development, Tourism and Environmental Affairs
 organisational_unit: department
 programmes:
@@ -79,3 +80,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 04 - Economic Development and Tourism.pdf
 vote_number: 4
+vote_primary:
+  name: Economic Development, Tourism and Environmental Affairs
+  slug: economic-development-tourism-and-environmental-affairs
+  url_path: /2017-18/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs

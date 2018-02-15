@@ -51,6 +51,7 @@ intro: "## Vision\n\nA radically transformed economy in the Northern Cape.\r\n\r
   \ cent.\r\n\r\n* To ensure an equitable, socially responsible business environment\
   \ that allows for predictability.\r\n\r\n* To manage the development and promotion\
   \ of the Northern Cape as a competitive tourist destination"
+is_vote_primary: true
 name: Economic Development and Tourism
 organisational_unit: department
 programmes:
@@ -82,3 +83,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 06 - Economic Development & Tourism.pdf
 vote_number: 6
+vote_primary:
+  name: Economic Development and Tourism
+  slug: economic-development-and-tourism
+  url_path: /2017-18/provincial/northern-cape/departments/economic-development-and-tourism

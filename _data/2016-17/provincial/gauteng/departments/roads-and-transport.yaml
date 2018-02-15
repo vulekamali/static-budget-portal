@@ -47,6 +47,7 @@ intro: "## Vision\r\n\r\nA modern integrated, efficient and sustainable transpor
   \ To regulate public transport operations through the registration of associations;\r\
   \n\r\n\u2022 To issue valid drivers\u2019 licenses; and\r\n\r\n\u2022 To issue valid\
   \ vehicle licenses."
+is_vote_primary: true
 name: Roads and Transport
 organisational_unit: department
 programmes:
@@ -67,3 +68,7 @@ sphere:
   slug: provincial
 treasury_datasets: {}
 vote_number: 9
+vote_primary:
+  name: Roads and Transport
+  slug: roads-and-transport
+  url_path: /2016-17/provincial/gauteng/departments/roads-and-transport

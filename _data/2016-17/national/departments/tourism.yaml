@@ -43,6 +43,7 @@ intro: "## Vote purpose\n\n_Promote and support the growth and development of an
   \ the\npromotion of domestic and international tourism. The national tourism sector\n\
   strategy provides a blueprint for the sector to meet the growth targets\ncontained\
   \ in the national development plan.\n\n"
+is_vote_primary: true
 name: Tourism
 organisational_unit: department
 programmes:
@@ -69,3 +70,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote33.xls
 vote_number: 33
+vote_primary:
+  name: Tourism
+  slug: tourism
+  url_path: /2016-17/national/departments/tourism

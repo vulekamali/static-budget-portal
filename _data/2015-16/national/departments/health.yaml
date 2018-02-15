@@ -57,6 +57,7 @@ intro: '## Vote purpose
 
 
   '
+is_vote_primary: true
 name: Health
 organisational_unit: department
 programmes:
@@ -87,3 +88,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote16.xls
 vote_number: 16
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2015-16/national/departments/health

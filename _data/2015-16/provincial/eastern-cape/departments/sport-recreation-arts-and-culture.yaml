@@ -35,6 +35,7 @@ intro: "## Vision\r\n\r\nA united, active and winning province through sport, re
   \ and responsibilities\r\n\r\n* Development, promotion and transformation of artists,\
   \ athletes, cultural and sporting structures\r\n\r\n* Conservation and preservation\
   \ of heritage through the provision of museums, libraries and archive\r\nservices."
+is_vote_primary: true
 name: Sport, Recreation, Arts and Culture
 organisational_unit: department
 programmes:
@@ -62,3 +63,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 14 - Sport, Rec, Arts and Culture.pdf
 vote_number: 14
+vote_primary:
+  name: Sport, Recreation, Arts and Culture
+  slug: sport-recreation-arts-and-culture
+  url_path: /2015-16/provincial/eastern-cape/departments/sport-recreation-arts-and-culture

@@ -46,6 +46,7 @@ intro: "## Vision\r\n\r\nTo be a leading department enabling the Western Cape Go
   \ to effectively\r\nexercise their executive authority in respect of provincial\
   \ strategic management matters; and\r\n\r\nA Corporate Services Centre, rendering\
   \ transversal corporate services on a shared services basis."
+is_vote_primary: true
 name: Premier
 organisational_unit: department
 programmes:
@@ -75,3 +76,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 01 - Premier.pdf
 vote_number: 1
+vote_primary:
+  name: Premier
+  slug: premier
+  url_path: /2015-16/provincial/western-cape/departments/premier

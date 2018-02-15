@@ -52,6 +52,7 @@ intro: "## Vision\n\nA leader in the provision and management of provincial land
   \ land and buildings;\r\n\r\n* Coordinate and implement the Expanded Public Works\
   \ Programme and\r\n\r\n* Comply with the requirements of Government Immovable Asset\
   \ Management Act (GIAMA).\r\n\r\n* Plan, Design, upgrade and maintain roads infrastructure."
+is_vote_primary: true
 name: Public Works, Roads and Infrastructure
 organisational_unit: department
 programmes:
@@ -79,3 +80,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 09 - Public Works, Roads & Infrastructure.pdf
 vote_number: 9
+vote_primary:
+  name: Public Works, Roads and Infrastructure
+  slug: public-works-roads-and-infrastructure
+  url_path: /2017-18/provincial/limpopo/departments/public-works-roads-and-infrastructure

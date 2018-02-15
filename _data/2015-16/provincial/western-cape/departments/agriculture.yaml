@@ -64,6 +64,7 @@ intro: "## Vision\n\nA united, responsive and prosperous agricultural sector in 
   \ Promote the conservation and sustainable use of the environment, especially agricultural\
   \ natural resources (land and water) and to prevent the fragmentation and rezoning\
   \ of agricultural land.\r\n\r\n\r\n"
+is_vote_primary: true
 name: Agriculture
 organisational_unit: department
 programmes:
@@ -99,3 +100,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 11 - Agriculture.pdf
 vote_number: 11
+vote_primary:
+  name: Agriculture
+  slug: agriculture
+  url_path: /2015-16/provincial/western-cape/departments/agriculture

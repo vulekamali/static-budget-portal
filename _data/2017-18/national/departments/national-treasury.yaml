@@ -60,6 +60,7 @@ intro: "## Vote purpose\n\n_Support economic growth and development, good govern
   \ financial and fiscal relations\n\n  * manage the budget preparation process\n\n\
   \  * enforce transparency and effective management of national revenue and expenditure,\
   \ assets and liabilities, public entities, and constitutional institutions.\n\n"
+is_vote_primary: true
 name: National Treasury
 organisational_unit: department
 programmes:
@@ -100,3 +101,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2007%20National%20Treasury.pdf
 vote_number: 7
+vote_primary:
+  name: National Treasury
+  slug: national-treasury
+  url_path: /2017-18/national/departments/national-treasury

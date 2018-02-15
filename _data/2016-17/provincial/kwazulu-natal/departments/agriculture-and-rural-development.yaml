@@ -37,6 +37,7 @@ intro: "## Vision\r\n\r\nThe vision of the Department of Agriculture and Rural D
   \ strategic objectives, the department is responsible for carrying out the\r\nfollowing\
   \ core functions:\r\n\r\n* Crop production.\r\n\r\n* Livestock production.\r\n\r\
   \n* Rural development."
+is_vote_primary: true
 name: Agriculture and Rural Development
 organisational_unit: department
 programmes:
@@ -62,3 +63,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 03 - Agriculture.pdf
 vote_number: 3
+vote_primary:
+  name: Agriculture and Rural Development
+  slug: agriculture-and-rural-development
+  url_path: /2016-17/provincial/kwazulu-natal/departments/agriculture-and-rural-development

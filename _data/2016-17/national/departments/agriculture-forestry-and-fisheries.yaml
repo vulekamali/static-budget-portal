@@ -37,6 +37,7 @@ intro: "## Vote purpose\r\n\r\nLead, support and promote agricultural, forestry 
   \ department\u2019s mandate is derived from a range of legislation, including the\
   \ Sea Fisheries Act (1988), the National Forests Act (1988), the Agricultural Products\
   \ Standards Act (1990), and the Conservation of Agricultural Resources Act (1993)."
+is_vote_primary: true
 name: Agriculture, Forestry and Fisheries
 organisational_unit: department
 programmes:
@@ -59,3 +60,7 @@ sphere:
   slug: national
 treasury_datasets: {}
 vote_number: 24
+vote_primary:
+  name: Agriculture, Forestry and Fisheries
+  slug: agriculture-forestry-and-fisheries
+  url_path: /2016-17/national/departments/agriculture-forestry-and-fisheries

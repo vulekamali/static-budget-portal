@@ -59,6 +59,7 @@ intro: "## Vision\n\nA caring, humane and developed society\r\n\r\n\n\n## Missio
   \ providing opportunities for them to build their\r\ncompetencies and needed skills\
   \ to engage as partners in their own development and that\r\nof their communities.\r\
   \n\r\n"
+is_vote_primary: true
 name: Social Development
 organisational_unit: department
 programmes:
@@ -88,3 +89,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 12 - Social Development.pdf
 vote_number: 12
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2017-18/provincial/mpumalanga/departments/social-development

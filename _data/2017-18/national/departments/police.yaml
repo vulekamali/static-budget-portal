@@ -36,6 +36,7 @@ intro: "## Vote purpose\n\n_Prevent, combat and investigate crime, maintain publ
   \ and from the South African Police Service Act\_(1995).\nThis legislation regulates\
   \ the police service in terms of its core function,\nwhich is to prevent, investigate\
   \ and combat crime.\n\n"
+is_vote_primary: true
 name: Police
 organisational_unit: department
 programmes:
@@ -64,3 +65,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2023%20Police.pdf
 vote_number: 23
+vote_primary:
+  name: Police
+  slug: police
+  url_path: /2017-18/national/departments/police

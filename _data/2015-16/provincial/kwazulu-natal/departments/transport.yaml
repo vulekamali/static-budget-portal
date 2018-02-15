@@ -43,6 +43,7 @@ intro: "## Vision\n\nThe department\u2019s vision is: Prosperity through mobilit
   \ to safe, efficient and affordable public transport. The department is further\
   \ mandated to facilitate development in the freight transport industry and the minimisation\
   \ of negative externalities resultant from the transport of freight."
+is_vote_primary: true
 name: Transport
 organisational_unit: department
 programmes:
@@ -72,3 +73,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 12 - Transport.pdf
 vote_number: 12
+vote_primary:
+  name: Transport
+  slug: transport
+  url_path: /2015-16/provincial/kwazulu-natal/departments/transport

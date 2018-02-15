@@ -45,6 +45,7 @@ intro: "## Vision\n\nA Connected Gauteng City Region that uses Information and C
   \ networks, and services;\r\n\r\n* To improve and provide customer driven HR services;\r\
   \n\r\n* To implement e-Recruitment solution for job seekers; and\r\n\r\n* To deploy\
   \ HR systems in the province."
+is_vote_primary: true
 name: Finance
 organisational_unit: department
 programmes:
@@ -70,3 +71,7 @@ treasury_datasets:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/1850c925-5b27-47ef-adb3-2befe79b555b/resource/9b15504a-39a6-48de-8973-63f6a8b0aeb6/download/gt-finance.xlsx
 vote_number: 13
+vote_primary:
+  name: Finance
+  slug: finance
+  url_path: /2015-16/provincial/gauteng/departments/finance

@@ -33,6 +33,7 @@ intro: "## Vision\n\nIntegrated and responsive governance towards sustainable de
   \ cooperative governance and support municipalities and Traditional Leadership through:\
   \ \r\n\r\n* Integrated Planning and Development \r\n\r\n* Partnerships \r\n\r\n\
   * Research\r\n\r\n* Monitoring and Evaluation\r\n\r\n\r\n\r\n"
+is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 organisational_unit: department
 programmes:
@@ -62,3 +63,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 08 - Cooperative Governance and Trad Affairs.pdf
 vote_number: 8
+vote_primary:
+  name: Cooperative Governance and Traditional Affairs
+  slug: cooperative-governance-and-traditional-affairs
+  url_path: /2015-16/provincial/free-state/departments/cooperative-governance-and-traditional-affairs

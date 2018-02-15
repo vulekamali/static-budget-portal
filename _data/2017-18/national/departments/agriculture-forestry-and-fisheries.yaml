@@ -38,6 +38,7 @@ intro: "## Vote purpose\n\n_Lead, support and promote agricultural, forestry and
   \ is derived from a range of\nlegislation, including the Sea Fisheries Act\_(1988),\
   \ the National Forests Act\n(1988), the Agricultural Products Standards Act\_(1990),\
   \ and the Conservation\nof Agricultural Resources Act\_(1993).\n\n"
+is_vote_primary: true
 name: Agriculture, Forestry and Fisheries
 organisational_unit: department
 programmes:
@@ -68,3 +69,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2024%20Agriculture,%20Forestry%20and%20Fisheries.pdf
 vote_number: 24
+vote_primary:
+  name: Agriculture, Forestry and Fisheries
+  slug: agriculture-forestry-and-fisheries
+  url_path: /2017-18/national/departments/agriculture-forestry-and-fisheries

@@ -41,6 +41,7 @@ intro: "## Vote purpose\n\n_Lead and partner in the production of statistics in 
   \ that the department coordinates\nstatistical production among organs of state\
   \ in line with the purpose of\nofficial statistics and statistical principles.\n\
   \n"
+is_vote_primary: true
 name: Statistics South Africa
 organisational_unit: department
 programmes:
@@ -73,3 +74,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2012%20Statistics%20South%20Africa.pdf
 vote_number: 12
+vote_primary:
+  name: Statistics South Africa
+  slug: statistics-south-africa
+  url_path: /2017-18/national/departments/statistics-south-africa

@@ -95,6 +95,7 @@ intro: '## Vote purpose
 
 
   '
+is_vote_primary: true
 name: Transport
 organisational_unit: department
 programmes:
@@ -129,3 +130,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2035%20Transport.pdf
 vote_number: 35
+vote_primary:
+  name: Transport
+  slug: transport
+  url_path: /2017-18/national/departments/transport

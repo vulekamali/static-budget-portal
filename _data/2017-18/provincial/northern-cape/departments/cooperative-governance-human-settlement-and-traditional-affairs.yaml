@@ -46,6 +46,7 @@ intro: "## Vision\n\nPeople of the Northern Cape living in integrated human sett
   \ of local and provincial development planning;\r\n\r\n* To promote, monitor and\
   \ support integrated development and planning;\r\n\r\n* To facilitate, monitor and\
   \ support sustainable governance and accountability\r\n\r\n"
+is_vote_primary: true
 name: Cooperative Governance, Human Settlement and Traditional Affairs
 organisational_unit: department
 programmes:
@@ -73,3 +74,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 09 - COGTA.pdf
 vote_number: 9
+vote_primary:
+  name: Cooperative Governance, Human Settlement and Traditional Affairs
+  slug: cooperative-governance-human-settlement-and-traditional-affairs
+  url_path: /2017-18/provincial/northern-cape/departments/cooperative-governance-human-settlement-and-traditional-affairs

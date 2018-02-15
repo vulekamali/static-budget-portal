@@ -49,6 +49,7 @@ intro: "## Vision\n\nA transformed quality education system.\r\n\r\n\n\n## Missi
   \ Childhood Development is the provision of Grade R in state, private and community\
   \ centres. The programme also seeks to provide ECD programmes for pre-Grade R learners.\r\
   \n\r\n"
+is_vote_primary: true
 name: Education
 organisational_unit: department
 programmes:
@@ -82,3 +83,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 04 - Education.pdf
 vote_number: 4
+vote_primary:
+  name: Education
+  slug: education
+  url_path: /2015-16/provincial/northern-cape/departments/education

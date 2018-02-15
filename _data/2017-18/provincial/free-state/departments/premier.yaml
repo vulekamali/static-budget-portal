@@ -47,6 +47,7 @@ intro: "## Vision\r\n\r\nLeading the Free State Province towards service excelle
   \ of the Premier is held in good standing;\r\n\r\n* To provide strategic direction,\
   \ facilitate and coordinate special programmes; and\r\n\r\n* To render efficient\
   \ and effective community liaison and participatory democracy services."
+is_vote_primary: true
 name: Premier
 organisational_unit: department
 programmes:
@@ -65,3 +66,7 @@ sphere:
   slug: provincial
 treasury_datasets: {}
 vote_number: 1
+vote_primary:
+  name: Premier
+  slug: premier
+  url_path: /2017-18/provincial/free-state/departments/premier

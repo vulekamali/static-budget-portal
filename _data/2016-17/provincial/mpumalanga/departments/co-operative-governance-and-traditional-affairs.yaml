@@ -42,6 +42,7 @@ intro: "## Vision\n\nResponsive, effective, efficient and sustainable cooperativ
   \ capacity in the Province; and\r\n\r\n* Assess the support needed by Municipalities\
   \ to strengthen their capacity to manage\r\ntheir own affairs, exercise their powers\
   \ and perform their functions."
+is_vote_primary: true
 name: Co-operative Governance and Traditional Affairs
 organisational_unit: department
 programmes:
@@ -71,3 +72,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 04 - Co-operative Governance and Traditional Aff.pdf
 vote_number: 4
+vote_primary:
+  name: Co-operative Governance and Traditional Affairs
+  slug: co-operative-governance-and-traditional-affairs
+  url_path: /2016-17/provincial/mpumalanga/departments/co-operative-governance-and-traditional-affairs

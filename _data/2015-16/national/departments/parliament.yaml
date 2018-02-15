@@ -61,6 +61,7 @@ intro: '## Vote purpose
 
 
   '
+is_vote_primary: true
 name: Parliament
 organisational_unit: department
 programmes:
@@ -91,3 +92,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote02.xls
 vote_number: 2
+vote_primary:
+  name: Parliament
+  slug: parliament
+  url_path: /2015-16/national/departments/parliament

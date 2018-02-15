@@ -31,6 +31,7 @@ government_functions: []
 intro: "## Vision\n\nA patriotic socially cohesive society\r\n\r\n\n\n## Mission\n\
   \nTo promote social cohesion and nation building through culture, sport and information\
   \ service to people of Mpumalanga"
+is_vote_primary: true
 name: Culture, Sport and Recreation
 organisational_unit: department
 programmes:
@@ -58,3 +59,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 11 - Cullture, Sport and Recreation.pdf
 vote_number: 11
+vote_primary:
+  name: Culture, Sport and Recreation
+  slug: culture-sport-and-recreation
+  url_path: /2015-16/provincial/mpumalanga/departments/culture-sport-and-recreation

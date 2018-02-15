@@ -44,6 +44,7 @@ intro: "## vision\n\nvibrant , equitable , sustanble rural communities and food 
   \ sustainable agriculture\r\n\r\n* ivest in high impact projects which add value\
   \ in agriculture as a business; and\r\n\r\n* ensure that agriculture production\
   \ is supported by the latest technology development and research\r\n"
+is_vote_primary: true
 name: Rural Development and Agrarian Reform
 organisational_unit: department
 programmes:
@@ -79,3 +80,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 08 - Rural Development and Agrarian Reform.pdf
 vote_number: 8
+vote_primary:
+  name: Rural Development and Agrarian Reform
+  slug: rural-development-and-agrarian-reform
+  url_path: /2016-17/provincial/eastern-cape/departments/rural-development-and-agrarian-reform

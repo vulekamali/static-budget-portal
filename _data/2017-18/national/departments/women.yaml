@@ -34,6 +34,7 @@ intro: "## Vote purpose\n\n_Lead, coordinate and oversee the transformation agen
   \nThe Department of Women derives its mandate from the Constitution and the\npresidential\
   \ proclamation made in 2014 that mandates the department to\nchampion gender equality,\
   \ and the achievement of women\u2019s socioeconomic\nempowerment and rights.\n\n"
+is_vote_primary: true
 name: Women
 organisational_unit: department
 programmes:
@@ -58,3 +59,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2013%20Women.pdf
 vote_number: 13
+vote_primary:
+  name: Women
+  slug: women
+  url_path: /2017-18/national/departments/women

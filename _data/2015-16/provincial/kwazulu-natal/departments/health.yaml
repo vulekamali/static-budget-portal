@@ -62,6 +62,7 @@ intro: "## Vision\n\nThe vision of the Department of Health is: A long and healt
   \ medical and obstetric conditions. Planned patient transport is provided for interhospital\r\
   \ntransfer, while indigent patients are transported between clinics and hospitals\r\
   \n"
+is_vote_primary: true
 name: Health
 organisational_unit: department
 programmes:
@@ -97,3 +98,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 07 - Health.pdf
 vote_number: 7
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2015-16/provincial/kwazulu-natal/departments/health

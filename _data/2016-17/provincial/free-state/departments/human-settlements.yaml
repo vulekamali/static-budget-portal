@@ -35,6 +35,7 @@ intro: "## Vision\n\nIntegrated and Sustainable Human Settlements\r\n\r\n\n\n## 
   \ that are spatially, socially and economically integrated\r\n\r\n* Provision of\
   \ affordable housing\r\n\r\n* Increased access to basic services\r\n\r\n* Acceleration\
   \ of land tenure rights"
+is_vote_primary: true
 name: Human Settlements
 organisational_unit: department
 programmes:
@@ -62,3 +63,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 13 - Human Settlements.pdf
 vote_number: 13
+vote_primary:
+  name: Human Settlements
+  slug: human-settlements
+  url_path: /2016-17/provincial/free-state/departments/human-settlements

@@ -44,6 +44,7 @@ intro: "## Vision\n\nThe vision of the Gauteng Department of Agriculture and Rur
   \ well-being, conservation of the environment, provision of sufficient food and\
   \ water, animal disease control, management of abattoirs and provision of veterinary\
   \ services in the province\r\n\r\n"
+is_vote_primary: true
 name: Agriculture and Rural Development
 organisational_unit: department
 programmes:
@@ -69,3 +70,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 11 - Agriculture and Rural Development.pdf
 vote_number: 11
+vote_primary:
+  name: Agriculture and Rural Development
+  slug: agriculture-and-rural-development
+  url_path: /2015-16/provincial/gauteng/departments/agriculture-and-rural-development

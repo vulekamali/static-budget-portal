@@ -44,6 +44,7 @@ intro: "## Vision\r\n\r\nIntegrated sustainable human settlements.\r\n\r\n\r\n\r
   \n\r\n* Facilitation of property ownership; Township establishment approval\r\n\r\
   \n* Disaster relief services and advisory\r\n\r\n* Facilitation of Co-operative\
   \ Governance\r\n\r\n* Traditional Affairs"
+is_vote_primary: true
 name: Co-operative Governance, Human Settlements and Traditional Affairs
 organisational_unit: department
 programmes:
@@ -71,3 +72,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 11 - Coop Gov, HS & Environment.pdf
 vote_number: 11
+vote_primary:
+  name: Co-operative Governance, Human Settlements and Traditional Affairs
+  slug: co-operative-governance-human-settlements-and-traditional-affairs
+  url_path: /2017-18/provincial/limpopo/departments/co-operative-governance-human-settlements-and-traditional-affairs

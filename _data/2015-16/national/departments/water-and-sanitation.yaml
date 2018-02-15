@@ -39,6 +39,7 @@ intro: "## Vote purpose\n\n_Ensure the availability of water resources, facilita
   \ requirements of water related\npolicies and legislation that are critical in delivering\
   \ on the right of\naccess to sufficient food and water, transforming the economy,\
   \ and eradicating\npoverty.\n\n"
+is_vote_primary: true
 name: Water and Sanitation
 organisational_unit: department
 programmes:
@@ -67,3 +68,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote36.xls
 vote_number: 36
+vote_primary:
+  name: Water and Sanitation
+  slug: water-and-sanitation
+  url_path: /2015-16/national/departments/water-and-sanitation

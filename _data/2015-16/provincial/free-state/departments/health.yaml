@@ -42,6 +42,7 @@ intro: "## Vision\n\nIncreasing life expectancy through health system effectiven
   \ geared at achieving Outcome 2, \u201CLong and healthy life for all South Africans\u201D\
   , which constitutes the Negotiated Service Delivery Agreement (NSDA) 2009/14 for\
   \ the health sector and aligned to the MTSF 2014 \u2013 19 and the NDP 2030"
+is_vote_primary: true
 name: Health
 organisational_unit: department
 programmes:
@@ -77,3 +78,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 05 - Health.pdf
 vote_number: 5
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2015-16/provincial/free-state/departments/health

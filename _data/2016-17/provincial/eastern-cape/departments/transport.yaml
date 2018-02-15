@@ -39,6 +39,7 @@ intro: "## vision\n\nan efficient , safe, sustainable, affordable and accessible
   \ and licencing of all pritavtly and government owned vehicles in the province\r\
   \n\r\n* to regulate and enforce road traffic laws in the province; and\r\n\r\n*\
   \ to provide fleet services to provisional departments\r\n\r\n\r\n\r\n"
+is_vote_primary: true
 name: Transport
 organisational_unit: department
 programmes:
@@ -68,3 +69,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 10 - Transport.pdf
 vote_number: 10
+vote_primary:
+  name: Transport
+  slug: transport
+  url_path: /2016-17/provincial/eastern-cape/departments/transport

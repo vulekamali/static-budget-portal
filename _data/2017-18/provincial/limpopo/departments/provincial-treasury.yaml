@@ -55,6 +55,7 @@ intro: "## Vision\n\nExcellence in public resource management for socio-economic
   \n\r\n* Monitor compliance with the MFMA by municipalities and municipal entities\
   \ in the province;\r\nand\r\n\r\n* Monitor the preparation of municipal budgets\
   \ by municipalities in the province.\r\nLegislative mandate\r\n"
+is_vote_primary: true
 name: Provincial Treasury
 organisational_unit: department
 programmes:
@@ -82,3 +83,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 05 - Provincial Treasury.pdf
 vote_number: 5
+vote_primary:
+  name: Provincial Treasury
+  slug: provincial-treasury
+  url_path: /2017-18/provincial/limpopo/departments/provincial-treasury

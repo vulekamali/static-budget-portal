@@ -48,6 +48,7 @@ intro: "## Vision\n\nTo lead in the delivery of government infrastructure and re
   \ safety education, communication and awareness.\r\n\r\n* Provision of training\
   \ and development opportunities to traffic policing and other law enforcement\r\n\
   officials."
+is_vote_primary: true
 name: Transport and Public Works
 organisational_unit: department
 programmes:
@@ -79,3 +80,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 10 - Transport and Public works.pdf
 vote_number: 10
+vote_primary:
+  name: Transport and Public Works
+  slug: transport-and-public-works
+  url_path: /2016-17/provincial/western-cape/departments/transport-and-public-works

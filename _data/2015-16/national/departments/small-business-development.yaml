@@ -41,6 +41,7 @@ intro: "## Vote purpose\n\n_Promote the development of small businesses and coop
   \ framework that includes:\n\n  * the National Small Business Act\_(1996)\_as amended\n\
   \n  * the Cooperatives Act\_(2005)\n\n  * the Cooperatives Amendment Act\_(2013).\n\
   \n"
+is_vote_primary: true
 name: Small Business Development
 organisational_unit: department
 programmes:
@@ -65,3 +66,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote31.xls
 vote_number: 31
+vote_primary:
+  name: Small Business Development
+  slug: small-business-development
+  url_path: /2015-16/national/departments/small-business-development

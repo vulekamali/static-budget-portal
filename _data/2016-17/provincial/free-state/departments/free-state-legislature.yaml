@@ -50,6 +50,7 @@ intro: "## Vision\n\nThe vision of the Free State Legislature is in line with it
   \ and efficient institution through improvement of institutional governance and\r\
   \npolicies, implementation of modern systems and technologies, as well as the development\
   \ of\r\nhuman resource."
+is_vote_primary: true
 name: Free State Legislature
 organisational_unit: department
 programmes:
@@ -75,3 +76,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 02 - Free State Legislature.pdf
 vote_number: 2
+vote_primary:
+  name: Free State Legislature
+  slug: free-state-legislature
+  url_path: /2016-17/provincial/free-state/departments/free-state-legislature

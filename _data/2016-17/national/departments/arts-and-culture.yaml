@@ -46,6 +46,7 @@ intro: "## Vote purpose\n\n_Contribute to sustainable economic development and e
   \ partnerships in order to ensure the sustainability of the sector\n\n  * develop\
   \ and monitor the implementation of policy, legislation and strategic direction\
   \ for the identification, conservation and promotion of cultural heritage.\n\n"
+is_vote_primary: true
 name: Arts and Culture
 organisational_unit: department
 programmes:
@@ -72,3 +73,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote37.xls
 vote_number: 37
+vote_primary:
+  name: Arts and Culture
+  slug: arts-and-culture
+  url_path: /2016-17/national/departments/arts-and-culture

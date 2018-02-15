@@ -36,6 +36,7 @@ intro: "## vision\n\na crime free an safe eastern cape\r\n\r\n\r\n\r\n\n\n## mis
   \ good relations between the police and community\r\n\r\n* to assess the effectiveness\
   \ of visisble policing and;\r\n\r\n* to liaise with the cabinet memebr responible\
   \ for policing with respect to crime and policing in the province \r\n\r\n\r\n"
+is_vote_primary: true
 name: Safety and Liaison
 organisational_unit: department
 programmes:
@@ -59,3 +60,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 15 - Safety and Liaison.pdf
 vote_number: 15
+vote_primary:
+  name: Safety and Liaison
+  slug: safety-and-liaison
+  url_path: /2016-17/provincial/eastern-cape/departments/safety-and-liaison
