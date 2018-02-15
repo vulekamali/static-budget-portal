@@ -63,7 +63,11 @@
   @include clearfix;
 
   @media screen and (min-width: 300px) {
-    padding: 25px 40px 100px;
+    padding: 25px 10px 100px;
+  }
+
+  @media screen and (min-width: 750px) {
+    padding: 25px 30px 100px;
   }
 
   &.has-floatingLinks {

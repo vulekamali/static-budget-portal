@@ -6,12 +6,10 @@
   
   {% if include.title %}
     {% assign fullTitle = include.title | append: ' - ' | append: 'vulekamali' %}
+  {% elsif include.name %}
+    {% assign fullTitle = include.name | append: ' - ' | append: 'vulekamali' %}
   {% else %}
-    {% if include.name %}
-      {% assign fullTitle = include.name | append: ' - ' | append: 'vulekamali' %}
-    {% else %}
-      {% assign fullTitle = 'vulekamali' %}
-    {% endif %}
+    {% assign fullTitle = 'vulekamali' %}
   {% endif %}
 
   <title>{{ fullTitle }}</title>

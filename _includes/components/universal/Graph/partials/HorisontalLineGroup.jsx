@@ -51,7 +51,7 @@ export default function HorisontalLineGroup({ totalGroupSpace, groupSpaceArray, 
           return (
             <text
               className="Graph-label Graph-label--leftAlign"
-              y={padding[0] + previousSpace + (groupMargin / 2) + fontSize + (charLineHeight * index)}
+              y={padding[0] + previousSpace + (groupMargin / 2) + (charLineHeight * index)}
               x={padding[3] + buffer}
             >
               {val}
@@ -69,9 +69,9 @@ export default function HorisontalLineGroup({ totalGroupSpace, groupSpaceArray, 
             <line
               stroke-linecap="round"
               stroke-width={barWidth}
-              y1={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * (charArray.length + 1)) + titleSpace}
+              y1={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * charArray.length)}
               x1={padding[3] + buffer + (barWidth / 2)}
-              y2={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * (charArray.length + 1)) + titleSpace}
+              y2={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * charArray.length)}
               x2={(padding[3] + buffer + displayAmount) - barWidth}
               className="Graph-line"
             />
