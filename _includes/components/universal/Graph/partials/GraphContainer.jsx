@@ -8,8 +8,6 @@ export default class GraphContainer extends Component {
   constructor(props) {
     super(props);
 
-    console.log(this.props);
-
     this.state = {
       fontSize: null,
       popupFontSize: null,

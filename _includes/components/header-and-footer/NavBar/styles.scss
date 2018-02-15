@@ -97,7 +97,7 @@ $mobile-break: 750px;
 
 .NavBar-iconWrap {
   display: block;
-  padding: 7px;
+  padding: 6px 7px;
 
   .Navbar-link:not(.is-active):hover & {
     border-radius: 18px;
@@ -106,13 +106,14 @@ $mobile-break: 750px;
 }
 
 .NavBar-item {
+  line-height: 1;
   margin-left: 0;
   display: block;
 
   @media screen and (min-width: $mobile-break) {
     list-style: none;
     float: left;
-    
+
     &.is-right {
       float: right;
     }
