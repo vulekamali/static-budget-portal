@@ -71,6 +71,7 @@ $mobile-break: 750px;
 
   &.is-active {
     font-weight: bold;
+    font-weight: 900;
     background-color: #f0f0f0;
 
     @media screen and (min-width: $mobile-break) {
