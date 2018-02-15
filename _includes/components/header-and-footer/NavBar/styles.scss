@@ -96,12 +96,16 @@ $mobile-break: 750px;
 }
 
 .NavBar-iconWrap {
-  display: block;
+  display: none;
   padding: 6px 7px;
 
   .Navbar-link:not(.is-active):hover & {
     border-radius: 18px;
     background: darken(white, 15%);
+  }
+
+  @media screen and (min-width: $mobile-break) {
+    display: block;
   }
 }
 
@@ -156,10 +160,6 @@ $mobile-break: 750px;
   }
 }
 
-// a.NavBar-link:hover {
-//   background-color: darken(#e6e6e6, 15%);
-// }
-
 .NavBar-subItems {
   list-style: none;
   padding-left: 0;
@@ -183,6 +183,7 @@ $mobile-break: 750px;
   padding-left: 36px;
   text-decoration: none;
   color: #4a4a4a;
+
 
   @media screen and (min-width: $mobile-break) {
     display: inline-block;
