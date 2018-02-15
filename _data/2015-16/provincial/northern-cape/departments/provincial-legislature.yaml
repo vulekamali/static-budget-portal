@@ -48,6 +48,7 @@ intro: "## Vision\n\nAn institution fulfilling its constitutional mandate for th
   \ its budget the NCPL is able to develop programmes geared at its own development.\
   \ These programmes are aimed at strengthening representatives, transparency, accountability\
   \ and effective government.\r\n"
+is_vote_primary: true
 name: Provincial Legislature
 organisational_unit: department
 programmes:
@@ -73,3 +74,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 02 - Provincial Legislature.pdf
 vote_number: 2
+vote_primary:
+  name: Provincial Legislature
+  slug: provincial-legislature
+  url_path: /2015-16/provincial/northern-cape/departments/provincial-legislature

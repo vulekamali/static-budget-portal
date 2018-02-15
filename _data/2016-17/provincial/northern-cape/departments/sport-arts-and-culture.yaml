@@ -35,6 +35,7 @@ intro: "## Vision\n\nA department committed to creating a prosperous and empower
   \ the same time are the catalysts in the development programmes, economic empowerment\
   \ and other activities, thereby entrenching national building and social cohesion.\r\
   \n\r\n\r"
+is_vote_primary: true
 name: Sport, Arts and Culture
 organisational_unit: department
 programmes:
@@ -62,3 +63,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 07 - Sports, Art & Culture.pdf
 vote_number: 7
+vote_primary:
+  name: Sport, Arts and Culture
+  slug: sport-arts-and-culture
+  url_path: /2016-17/provincial/northern-cape/departments/sport-arts-and-culture

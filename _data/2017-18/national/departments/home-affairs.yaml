@@ -39,6 +39,7 @@ intro: "## Vote purpose\n\n_Efficiently determine and safeguard the identity and
   \ and status of citizens and foreigners; and provide for the management\nof immigration\
   \ to ensure security, promote development and fulfil South\nAfrica\u2019s international\
   \ obligations.\n\n"
+is_vote_primary: true
 name: Home Affairs
 organisational_unit: department
 programmes:
@@ -63,3 +64,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2005%20Home%20Affairs.pdf
 vote_number: 5
+vote_primary:
+  name: Home Affairs
+  slug: home-affairs
+  url_path: /2017-18/national/departments/home-affairs

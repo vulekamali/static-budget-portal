@@ -51,6 +51,7 @@ intro: "## Vision\n\nTo be the heartbeat of sound financial management that supp
   \ public entities to enhance effective and efficient financial management;\r\n\r\
   \n* Issuing provincial treasury instructions.\r\n\r\n* Preparing consolidated financial\
   \ statements for the Province.\r\n"
+is_vote_primary: true
 name: Provincial Treasury
 organisational_unit: department
 programmes:
@@ -80,3 +81,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 08 - Provincial Treasury.pdf
 vote_number: 8
+vote_primary:
+  name: Provincial Treasury
+  slug: provincial-treasury
+  url_path: /2015-16/provincial/northern-cape/departments/provincial-treasury

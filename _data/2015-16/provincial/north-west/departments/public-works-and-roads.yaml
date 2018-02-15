@@ -45,6 +45,7 @@ intro: "## Vision\r\n\r\nDelivery and maintenance of quality infrastructure for 
   \ rehabilitate and maintain road and transport infrastructure; and\r\n\r\n* Contribute\
   \ to the national goals of job creation and poverty alleviation through Expanded\
   \ Public Works Programme."
+is_vote_primary: true
 name: Public Works and Roads
 organisational_unit: department
 programmes:
@@ -69,3 +70,7 @@ treasury_datasets:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/2a2b1d5b-fc28-4c52-bb8c-65edccb24f73/resource/b9ce7918-acf6-4096-9a0d-0470c2b1854e/download/nw-public-works-and-roads.xlsx
 vote_number: 11
+vote_primary:
+  name: Public Works and Roads
+  slug: public-works-and-roads
+  url_path: /2015-16/provincial/north-west/departments/public-works-and-roads

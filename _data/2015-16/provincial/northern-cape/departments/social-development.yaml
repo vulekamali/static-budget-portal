@@ -51,6 +51,7 @@ intro: "## Vision\n\nA Caring and Self-reliant Society.\r\n\r\n\n\n## Mission\n\
   \ with households and communities to solve collective needs i.e. unemployment,\r\
   \nilliteracy, food security and address social ills such as substance abuse and\
   \ gender based violence,"
+is_vote_primary: true
 name: Social Development
 organisational_unit: department
 programmes:
@@ -80,3 +81,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 11 - Social Development.pdf
 vote_number: 11
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2015-16/provincial/northern-cape/departments/social-development

@@ -43,6 +43,7 @@ intro: "## Vision\n\nLeadership for an integrated city-region, characterised by 
   \ people with\r\ndisabilities, older persons and military veterans; and\r\n\u2022\
   \ Securing partnerships that support the development agenda, both domestic and foreign\
   \ partners."
+is_vote_primary: true
 name: Office of the Premier
 organisational_unit: department
 programmes:
@@ -68,3 +69,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 01 - Office of the Premier.pdf
 vote_number: 1
+vote_primary:
+  name: Office of the Premier
+  slug: office-of-the-premier
+  url_path: /2016-17/provincial/gauteng/departments/office-of-the-premier

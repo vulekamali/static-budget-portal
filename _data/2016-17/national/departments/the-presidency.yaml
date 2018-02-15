@@ -51,6 +51,7 @@ intro: '## Vote purpose
 
 
   '
+is_vote_primary: true
 name: The Presidency
 organisational_unit: department
 programmes:
@@ -75,3 +76,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote01.xls
 vote_number: 1
+vote_primary:
+  name: The Presidency
+  slug: the-presidency
+  url_path: /2016-17/national/departments/the-presidency

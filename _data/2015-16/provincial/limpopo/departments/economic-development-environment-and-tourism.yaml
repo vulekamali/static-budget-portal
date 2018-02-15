@@ -42,6 +42,7 @@ intro: "## Vision\r\n\r\nA competitive economy within a sustainable environment.
   \ as a preferred tourism and investment destination within SADC and the World\r\n\
   \r\n* Transform Limpopo into a world class knowledge society that uses ICT as an\
   \ enabler of socio-economic development and ICT as a production sector."
+is_vote_primary: true
 name: Economic Development, Environment and Tourism
 organisational_unit: department
 programmes:
@@ -69,3 +70,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 06 - Economic Dev, Environm & Tourism.pdf
 vote_number: 6
+vote_primary:
+  name: Economic Development, Environment and Tourism
+  slug: economic-development-environment-and-tourism
+  url_path: /2015-16/provincial/limpopo/departments/economic-development-environment-and-tourism

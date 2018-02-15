@@ -32,6 +32,7 @@ intro: "## Vision\r\n\r\nTo be a leading department enabling the Western Cape Go
   \ to improve the quality of life of all its people.\r\n\r\n\r\n\r\n## Mission\r\n\
   \r\nTo embed good governance and to enable integrated service delivery in the Western\
   \ Cape through partnerships, innovation and people excellence."
+is_vote_primary: true
 name: Premier
 organisational_unit: department
 programmes:
@@ -61,3 +62,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 01 - Office of the Premier.pdf
 vote_number: 1
+vote_primary:
+  name: Premier
+  slug: premier
+  url_path: /2017-18/provincial/western-cape/departments/premier

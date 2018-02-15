@@ -42,6 +42,7 @@ intro: "## Vision\n\nA radically transformed, modernised and re-industrialised e
   \ youth and persons with disabilities in mainstream economic activities;\r\n\r\n\
   * Establish appropriate partnerships for delivery; and\r\n\r\n* Ensure the DED effectively\
   \ and efficiently delivers on its mandate\r\n\r\n"
+is_vote_primary: true
 name: Economic Development
 organisational_unit: department
 programmes:
@@ -71,3 +72,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 03 - Economic Development.pdf
 vote_number: 3
+vote_primary:
+  name: Economic Development
+  slug: economic-development
+  url_path: /2015-16/provincial/gauteng/departments/economic-development

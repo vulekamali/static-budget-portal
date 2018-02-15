@@ -32,6 +32,7 @@ intro: "## Vision\r\n\r\nA prosperous Free State that enhances the quality of li
   \ through integrated and sustainable economic growth\r\n\r\n\r\n\r\n## Mission\r\
   \n\r\nTo provide sound economic and environmental management systems that ensures\
   \ economic development and poverty reduction in the Free State."
+is_vote_primary: true
 name: Economic and Small Business Development,  Tourism and Environmental Affairs
 organisational_unit: department
 programmes:
@@ -59,3 +60,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 03 - Eco Dev, Tourism and Env Affairs.pdf
 vote_number: 3
+vote_primary:
+  name: Economic and Small Business Development,  Tourism and Environmental Affairs
+  slug: economic-and-small-business-development-tourism-and-environmental-affairs
+  url_path: /2015-16/provincial/free-state/departments/economic-and-small-business-development-tourism-and-environmental-affairs

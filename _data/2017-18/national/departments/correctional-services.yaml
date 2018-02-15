@@ -39,6 +39,7 @@ intro: "## Vote purpose\n\n_Contribute to a just, peaceful and safer South Afric
   \ a just, peaceful and safe society by\ncorrecting offending behaviour in a safe,\
   \ secure and humane environment, which\nallows for optimal rehabilitation and reduced\
   \ repeat offending.\n\n"
+is_vote_primary: true
 name: Correctional Services
 organisational_unit: department
 programmes:
@@ -67,3 +68,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2018%20Correctional%20Services.pdf
 vote_number: 18
+vote_primary:
+  name: Correctional Services
+  slug: correctional-services
+  url_path: /2017-18/national/departments/correctional-services

@@ -37,6 +37,7 @@ intro: "## vision\n\nprovide leaners with opportunities to become and responsibl
   \ of the department is the provision of quality education and training from grade\
   \ R\r\nto grade 12, the managing of teacher supply, demand and utilisation and the\
   \ provisioning of high quality school infrastructure in the eastern cape\r\n\r\n"
+is_vote_primary: true
 name: Education
 organisational_unit: department
 programmes:
@@ -70,3 +71,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 06 - Education.pdf
 vote_number: 6
+vote_primary:
+  name: Education
+  slug: education
+  url_path: /2016-17/provincial/eastern-cape/departments/education

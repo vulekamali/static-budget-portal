@@ -42,6 +42,7 @@ intro: "## Vision\n\nTo provide integrated sustainable human settlements and imp
   \ process and transform informal settlements, especially in priority townships and\
   \ 50\r\npoorest wards, into sustainable and vibrant communities; and provide services\
   \ in respect of subsidies and rental housing."
+is_vote_primary: true
 name: Human Settlements
 organisational_unit: department
 programmes:
@@ -69,3 +70,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 08 - Human Settlements.pdf
 vote_number: 8
+vote_primary:
+  name: Human Settlements
+  slug: human-settlements
+  url_path: /2016-17/provincial/gauteng/departments/human-settlements

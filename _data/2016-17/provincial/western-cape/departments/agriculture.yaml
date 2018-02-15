@@ -39,6 +39,7 @@ intro: "## Vision\n\nA united, responsive and prosperous agricultural sector in 
   \ human capital\r\n\r\n*Providing a competent and professional extension support\
   \ service\r\n\r\n*Enhancing market access for the entire agricultural sector\r\n\
   \r\n*Contributing towards alleviation of poverty and hunger\r\n\r"
+is_vote_primary: true
 name: Agriculture
 organisational_unit: department
 programmes:
@@ -74,3 +75,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 11 - Agriculture.pdf
 vote_number: 11
+vote_primary:
+  name: Agriculture
+  slug: agriculture
+  url_path: /2016-17/provincial/western-cape/departments/agriculture

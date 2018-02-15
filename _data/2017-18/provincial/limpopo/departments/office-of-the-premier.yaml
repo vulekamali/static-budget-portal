@@ -39,6 +39,7 @@ intro: "## Vision\n\nGood governance, integrated planning, sustainable growth an
   \ efficiency and effectiveness of the Provincial Administration;\r\n\r\n* Enhance\
   \ Monitoring and Evaluation capacity of the Provincial Administration;\r\n\r\n*\
   \ Promote intergovernmental and international relations."
+is_vote_primary: true
 name: Office of the Premier
 organisational_unit: department
 programmes:
@@ -64,3 +65,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 01 - Office of the Premier.pdf
 vote_number: 1
+vote_primary:
+  name: Office of the Premier
+  slug: office-of-the-premier
+  url_path: /2017-18/provincial/limpopo/departments/office-of-the-premier

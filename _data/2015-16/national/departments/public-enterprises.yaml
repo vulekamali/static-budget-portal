@@ -45,6 +45,7 @@ intro: "## Vote purpose\n\n_Drive investment, productivity and transformation in
   \ state ownership in the economy to support\nthe delivery of key outcomes outlined\
   \ in the national development plan and\ngovernment\u2019s 2014-2019 medium term\
   \ strategic framework.\n\n"
+is_vote_primary: true
 name: Public Enterprises
 organisational_unit: department
 programmes:
@@ -69,3 +70,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote09.xls
 vote_number: 9
+vote_primary:
+  name: Public Enterprises
+  slug: public-enterprises
+  url_path: /2015-16/national/departments/public-enterprises

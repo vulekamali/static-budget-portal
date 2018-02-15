@@ -39,6 +39,7 @@ intro: "## Vision\n\nThe department\u2019s vision is: Prosperity through mobilit
   s mandate is to construct and maintain a balanced road network that meets the mobility\
   \ needs of the citizens of KZN, and supports the national and provincial growth\
   \ and development plans and strategie"
+is_vote_primary: true
 name: Transport
 organisational_unit: department
 programmes:
@@ -68,3 +69,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 12 - Transport.pdf
 vote_number: 12
+vote_primary:
+  name: Transport
+  slug: transport
+  url_path: /2016-17/provincial/kwazulu-natal/departments/transport

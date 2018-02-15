@@ -46,6 +46,7 @@ intro: "## Vote purpose\n\n_Provide leadership and coordination of health servic
   services. The department contributes directly to the realisation of outcome 2\n\
   (a long and healthy life for all South Africans) of government\u2019s 2014-2019\n\
   medium-term strategic framework.\n\n"
+is_vote_primary: true
 name: Health
 organisational_unit: department
 programmes:
@@ -76,3 +77,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2016%20Health.pdf
 vote_number: 16
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2017-18/national/departments/health

@@ -61,6 +61,7 @@ intro: "## Vision\n\nTrendsetters in infrastructure delivery to change the econo
   \ and cost effective projects and buildings; and\r\n\r\n* Community based programme\
   \ \u2013 The intervention in the infrastructure sector involves increasing the labour\
   \ intensity of government-funded infrastructure projects.\r\n"
+is_vote_primary: true
 name: Roads and Public Works
 organisational_unit: department
 programmes:
@@ -88,3 +89,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 05 - Roads & Public Works.pdf
 vote_number: 5
+vote_primary:
+  name: Roads and Public Works
+  slug: roads-and-public-works
+  url_path: /2017-18/provincial/northern-cape/departments/roads-and-public-works

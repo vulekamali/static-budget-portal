@@ -15,7 +15,7 @@ export default function DeptGroup({ changeKeywords, updateFilter, keywords, open
         <div className="DeptControls-keywords">
           <input
             className="Input"
-            placeholder="Start typing to find a department"
+            placeholder="Start typing to find a department budget"
             value={keywords}
             onInput={triggerKeyword}
           />

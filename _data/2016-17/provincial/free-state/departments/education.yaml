@@ -33,6 +33,7 @@ intro: "## Vision\n\nTo be a Department that strives for quality, universal educ
   \ children of the Free State province with quality education in a conductive school\r\
   \nenvironment with qualified professional teachers, learning and teaching material\
   \ of high quality and\r\nparents who are highly involved in school affairs."
+is_vote_primary: true
 name: Education
 organisational_unit: department
 programmes:
@@ -66,3 +67,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 06 - Education.pdf
 vote_number: 6
+vote_primary:
+  name: Education
+  slug: education
+  url_path: /2016-17/provincial/free-state/departments/education

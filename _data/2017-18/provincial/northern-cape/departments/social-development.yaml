@@ -58,6 +58,7 @@ intro: "## Vision\n\nA caring and self-reliant society.\r\n\r\n\n\n## Mission\n\
   \ a community to create therapeutic support networks at family level, social protection\
   \ support networks at soup kitchen, Drop-in- Centre at community level and developmental\
   \ support networks at Youth Service Centre level for the youth.\r\n"
+is_vote_primary: true
 name: Social Development
 organisational_unit: department
 programmes:
@@ -87,3 +88,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 11 - Social Development.pdf
 vote_number: 11
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2017-18/provincial/northern-cape/departments/social-development

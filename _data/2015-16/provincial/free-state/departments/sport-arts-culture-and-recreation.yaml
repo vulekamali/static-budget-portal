@@ -43,6 +43,7 @@ intro: "## Vision\n\nChampioning social transformation\r\n\r\n\n\n## Mission\n\n
   \n\r\n* good governance and\r\n\r\n* social and human capital development.\r\n\r\
   \nProgrammes of the Department:\r\n\r\n* Administration\r\n\r\n* Cultural Affairs\r\
   \n\r\n* Library and Archives Services\r\n\r\n* Sport and Recreation\r\n"
+is_vote_primary: true
 name: Sport, Arts, Culture and Recreation
 organisational_unit: department
 programmes:
@@ -70,3 +71,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 12 - Sport, Arts, Culture and Recreation.pdf
 vote_number: 12
+vote_primary:
+  name: Sport, Arts, Culture and Recreation
+  slug: sport-arts-culture-and-recreation
+  url_path: /2015-16/provincial/free-state/departments/sport-arts-culture-and-recreation

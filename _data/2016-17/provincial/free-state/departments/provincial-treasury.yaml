@@ -42,6 +42,7 @@ intro: "## Vision\n\nYour partner in financial management and service excellence
   \ stakeholders\r\n\r\n\u2022 Proactive\r\nWe will stay ahead by anticipating rather\
   \ than reacting. We will be innovative and diligently\r\nseek new ways to address\
   \ challenges."
+is_vote_primary: true
 name: Provincial Treasury
 organisational_unit: department
 programmes:
@@ -71,3 +72,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 04 - Free State Provincial Treasury.pdf
 vote_number: 4
+vote_primary:
+  name: Provincial Treasury
+  slug: provincial-treasury
+  url_path: /2016-17/provincial/free-state/departments/provincial-treasury

@@ -49,6 +49,7 @@ intro: "## Vote purpose\n\n_Formulate, coordinate, implement and manage South Af
   s sovereignty and territorial integrity\n\n  * contributing to the creation of an\
   \ enabling international environment for South African businesses\n\n  * sourcing\
   \ developmental assistance\n\n  * assisting South African citizens abroad.\n\n"
+is_vote_primary: true
 name: International Relations and Cooperation
 organisational_unit: department
 programmes:
@@ -77,3 +78,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote06.xls
 vote_number: 6
+vote_primary:
+  name: International Relations and Cooperation
+  slug: international-relations-and-cooperation
+  url_path: /2016-17/national/departments/international-relations-and-cooperation

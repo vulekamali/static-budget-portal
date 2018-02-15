@@ -60,6 +60,7 @@ intro: "## Vision\n\nIntegrated sustainable huma setllements withing a smart Gau
   * To manage the housing delivery process and transform informal settlements,especially\
   \ in prioritytownships, into sustainable and vibrant communities;and provides services\
   \ in rspect of sbsidies and rental housing.\r\n"
+is_vote_primary: true
 name: Human Settlements
 organisational_unit: department
 programmes:
@@ -87,3 +88,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 08 - Human Settlements.pdf
 vote_number: 8
+vote_primary:
+  name: Human Settlements
+  slug: human-settlements
+  url_path: /2017-18/provincial/gauteng/departments/human-settlements

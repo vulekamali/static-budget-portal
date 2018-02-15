@@ -52,6 +52,7 @@ intro: "## Vision\n\nA qualtiy health service to the people of the Eastern Cape 
   \ processes;and\r\n\r\n* Reducing morbidity andmortality due to communicable diseases\
   \ and non-communicable illnesses and conditions by implementing high impact strategies\
   \ to address prevention,detection,management and support at all levels of care."
+is_vote_primary: true
 name: Health
 organisational_unit: department
 programmes:
@@ -87,3 +88,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 03 - Health.pdf
 vote_number: 3
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2017-18/provincial/eastern-cape/departments/health
