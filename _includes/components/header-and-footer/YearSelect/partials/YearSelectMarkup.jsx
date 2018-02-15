@@ -2,7 +2,7 @@ import { h } from 'preact';
 import Tooltip from './../../../universal/Tooltip/index.jsx';
 
 
-export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, search, loading }) {
+export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, search, loading, year }) {
   const items = jsonData.map((data) => {
     const Tag = data.active || data.direct === false ? 'span' : 'a';
     const toggleOpen = () => updateItem('open', !open);
@@ -15,16 +15,20 @@ export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, 
           onClick={ data.active ? toggleOpen : null }
           >
           <Tooltip
-            open={data.name === tooltip}
             block
-            important
-            direction="down"
             title="Content Unavailable"
             description={`There is no exact match for this department in ${data.name}.`}
-            actions={[{ text: `View ${data.name} Departments`, link: `/${data.name}/departments` }]}
+            year={year}
             openAction={() => updateItem('tooltip', data.name)}
             closeAction={() => updateItem('tooltip', null)}
-
+            open={data.name === tooltip}
+            down
+            actions={[
+              {
+                url: `/${data.name}/departments`,
+                title: `View ${data.name} Departments`,
+              },
+            ]}
           >
             <Tag href={data.active || data.direct === false ? null : linkWithQuery} className="YearSelect-link">{data.name}</Tag>
           </Tooltip>
