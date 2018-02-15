@@ -11,7 +11,11 @@ function DeptSearch() {
       const { sphere, no_js: noJs } = window.budgetPortal.stringQueries;
 
       const nationalData = JSON.parse(component.getAttribute('data-national-json')).data;
-      const provincialData = JSON.parse(component.getAttribute('data-provincial-json')).data;
+      const rawProvincialData = JSON.parse(component.getAttribute('data-provincial-json')).data;
+
+      const provincialData = rawProvincialData.sort((a, b) => {
+        return a.name.localeCompare(b.name);
+      });
 
       const jsonData = [
         {
