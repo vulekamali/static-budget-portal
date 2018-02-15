@@ -53,6 +53,7 @@ export default class DeptSearchContainer extends Component {
 
     const filters = {
       ...this.state.filters,
+      province: 'all',
       [filter]: value,
     };
 
