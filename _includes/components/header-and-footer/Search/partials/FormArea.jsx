@@ -34,7 +34,7 @@ export default function FormArea({ focus, setFocus, findSuggestions, currentKeyw
         name="search"
         onFocus={addFocus}
         onInput={updateKeyword}
-        placeholder="Find departments"
+        placeholder="Find department budgets"
         value={currentKeywords}
       />
 
