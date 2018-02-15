@@ -44,6 +44,7 @@ intro: "## Vote purpose\n\n_Support economic growth and development, good govern
   \ process\n\n  * enforce transparency and effective management in respect of revenue\
   \ and expenditure, assets and liabilities, public entities, and constitutional institutions.\n\
   \n"
+is_vote_primary: true
 name: National Treasury
 organisational_unit: department
 programmes:
@@ -84,3 +85,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote07.xls
 vote_number: 7
+vote_primary:
+  name: National Treasury
+  slug: national-treasury
+  url_path: /2015-16/national/departments/national-treasury

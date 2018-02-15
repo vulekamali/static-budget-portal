@@ -51,6 +51,7 @@ intro: "## Vision\n\nTo be a Department that strives for quality, universal educ
   \ the provisioning of Corporate Services for the Department\r\n\r\n* Manage and\
   \ oversee the provisioning of Internal Audit Services\r\n\r\n* Ensure and oversee\
   \ the provisioning of effective Communication Services\r\n"
+is_vote_primary: true
 name: Education
 organisational_unit: department
 programmes:
@@ -84,3 +85,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 06 - Education.pdf
 vote_number: 6
+vote_primary:
+  name: Education
+  slug: education
+  url_path: /2017-18/provincial/free-state/departments/education

@@ -48,6 +48,7 @@ intro: "## Vote purpose\n\n_Ensure independent oversight of the South African Po
   \ Police\nServices to report matters that must be investigated by the directorate\
   \ and\nensures the implementation of disciplinary recommendations made by the\n\
   directorate.\n\n"
+is_vote_primary: true
 name: Independent Police Investigative Directorate
 organisational_unit: department
 programmes:
@@ -74,3 +75,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote20.xls
 vote_number: 20
+vote_primary:
+  name: Independent Police Investigative Directorate
+  slug: independent-police-investigative-directorate
+  url_path: /2016-17/national/departments/independent-police-investigative-directorate

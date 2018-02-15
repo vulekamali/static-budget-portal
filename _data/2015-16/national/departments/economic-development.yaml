@@ -43,6 +43,7 @@ intro: "## Vote purpose\n\n_Promote economic development policy formulation and 
   \ of the following legislation:\n\n  * the Industrial Development Corporation Act\_\
   (1940)\n\n  * the Competition Act\_(1998)\n\n  * the International Trade Administration\
   \ Act\_(2002)\n\n  * the Infrastructure Development Act\_(2014).\n\n"
+is_vote_primary: true
 name: Economic Development
 organisational_unit: department
 programmes:
@@ -67,3 +68,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote25.xls
 vote_number: 25
+vote_primary:
+  name: Economic Development
+  slug: economic-development
+  url_path: /2015-16/national/departments/economic-development

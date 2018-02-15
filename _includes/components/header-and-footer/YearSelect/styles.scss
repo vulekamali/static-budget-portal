@@ -10,7 +10,7 @@ $years: 3;
 
 .YearSelect-title {
   display: none;
-  font-size: 14px;
+  font-size: 16px;
   vertical-align: middle;
   padding-right: 20px;
 
@@ -19,7 +19,7 @@ $years: 3;
   }
 }
 
-.YearSelect-content {
+.YearSelect-content {    line-height: 1.1;
   display: inline-block;
   vertical-align: middle;
   width: 100%;
@@ -70,6 +70,7 @@ $years: 3;
   width: 100%;
   display: none;
   order: 2;
+  line-height: 1.1;
 
   @media screen and (min-width: $mobile-break) {
     display: block;

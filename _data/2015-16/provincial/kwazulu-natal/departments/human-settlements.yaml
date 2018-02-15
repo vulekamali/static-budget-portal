@@ -45,6 +45,7 @@ intro: "## Vision\n\nThe vision of the department is: Together breaking new grou
   \ on land and environmental issues.\r\n\r\n* To administer and co-ordinate the Community\
   \ Residential Unit (CRU) programme.\r\n\r\n* To administer the clearance of slums\
   \ in KwaZulu-Natal.\r\n\r\n* To capacitate housing stakeholders"
+is_vote_primary: true
 name: Human Settlements
 organisational_unit: department
 programmes:
@@ -72,3 +73,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 08 - Human Settlement.pdf
 vote_number: 8
+vote_primary:
+  name: Human Settlements
+  slug: human-settlements
+  url_path: /2015-16/provincial/kwazulu-natal/departments/human-settlements

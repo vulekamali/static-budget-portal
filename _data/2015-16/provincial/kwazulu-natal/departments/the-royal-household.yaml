@@ -36,6 +36,7 @@ intro: "## Note\n\nIt must be noted that Proclamation No. 83 of 2014, which was 
   \ Household Trust) are\nadded to Vote 1\u2019s functions and budget. As such, there\
   \ is no Vote 10 chapter in the 2015/16 EPRE. See\nthe departmental chapter relating\
   \ to Vote 1: Office of the Premier on pages 1 to 46."
+is_vote_primary: true
 name: The Royal Household
 organisational_unit: department
 programmes: []
@@ -53,3 +54,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 10 - Royal Household.pdf
 vote_number: 10
+vote_primary:
+  name: The Royal Household
+  slug: the-royal-household
+  url_path: /2015-16/provincial/kwazulu-natal/departments/the-royal-household

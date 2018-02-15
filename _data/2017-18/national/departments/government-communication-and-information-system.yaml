@@ -40,6 +40,7 @@ intro: "## Department purpose\r\n\r\nProvide a comprehensive communication servi
   \ strategic leadership and coordinating government communication to ensure that\
   \ the public is informed and have access to government programmes and policies that\
   \ benefit them."
+is_vote_primary: false
 name: Government Communication and Information System
 organisational_unit: department
 programmes:
@@ -54,5 +55,17 @@ slug: government-communication-and-information-system
 sphere:
   name: National
   slug: national
-treasury_datasets: {}
-vote_number: 46
+treasury_datasets:
+  ENE for Vote 03 - Communications:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote03_ChapterTables.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2003%20Communications.pdf
+vote_number: 3
+vote_primary:
+  name: Communications
+  slug: communications
+  url_path: /2017-18/national/departments/communications

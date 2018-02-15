@@ -37,6 +37,7 @@ intro: "## Vision\n\nA prosperous Free State through facilitation of sustainable
   \ management including the provision of office accommodation, payment of municipal\
   \ services and provisioning of security services;\r\n\r\n* Coordination and monitoring\
   \ of the implementation of Expanded Public Works Programmes"
+is_vote_primary: true
 name: Public Works and Infrastructure
 organisational_unit: department
 programmes:
@@ -62,3 +63,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 09 - Public Works and Infrastructure.pdf
 vote_number: 9
+vote_primary:
+  name: Public Works and Infrastructure
+  slug: public-works-and-infrastructure
+  url_path: /2017-18/provincial/free-state/departments/public-works-and-infrastructure

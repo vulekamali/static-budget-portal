@@ -42,6 +42,7 @@ intro: "## Vote purpose\n\n_Improve cooperative governance across the three sphe
   \ Relations Framework Act\_(2005)\n\n  * the Municipal Property Rates Act\_(2004)\n\
   \n  * the Municipal Systems Act\_(2000)\n\n  * the Municipal Structures Act\_(1998).\n\
   \n"
+is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 organisational_unit: department
 programmes:
@@ -72,3 +73,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote04.xls
 vote_number: 4
+vote_primary:
+  name: Cooperative Governance and Traditional Affairs
+  slug: cooperative-governance-and-traditional-affairs
+  url_path: /2016-17/national/departments/cooperative-governance-and-traditional-affairs

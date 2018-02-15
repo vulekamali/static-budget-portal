@@ -34,6 +34,7 @@ intro: "## Vision\n\nThe vision of the Department of Social Development (DSD) is
   \ through the provision of integrated social development services.\r\n\r\n\n\n##\
   \ Core functions\n\n* To provide developmental social welfare services.\r\n* To\
   \ provide community development services."
+is_vote_primary: true
 name: Social Development
 organisational_unit: department
 programmes:
@@ -63,3 +64,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 13 - Social Development.pdf
 vote_number: 13
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2016-17/provincial/kwazulu-natal/departments/social-development

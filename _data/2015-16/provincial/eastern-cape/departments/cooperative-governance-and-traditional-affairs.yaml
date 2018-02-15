@@ -48,6 +48,7 @@ intro: "## Vision\r\n\r\nAn integrated, capable, responsive and accountable loca
   \ administrative and infrastructural support to traditional leadership institutions;\
   \ and\r\n\r\n* Promotes and supports the participation of traditional communities\
   \ in developmental programmes."
+is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 organisational_unit: department
 programmes:
@@ -77,3 +78,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 07 - Coop Gov and Traditional Affairs.pdf
 vote_number: 7
+vote_primary:
+  name: Cooperative Governance and Traditional Affairs
+  slug: cooperative-governance-and-traditional-affairs
+  url_path: /2015-16/provincial/eastern-cape/departments/cooperative-governance-and-traditional-affairs

@@ -43,6 +43,7 @@ intro: "## Vision\n\nThe vision of Office of the Premier is \u201CA united, non-
   \ as follows:\r\n\r\n* To render administrative and secretarial support to the Executive\
   \ Council structures;\r\n\r\n* Formulation and review of Provincial policies; and\r\
   \n\r\n* To coordinate Provincial planning and knowledge management"
+is_vote_primary: true
 name: Office of the Premier
 organisational_unit: department
 programmes:
@@ -68,3 +69,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 01 - Office of The Premier.pdf
 vote_number: 1
+vote_primary:
+  name: Office of the Premier
+  slug: office-of-the-premier
+  url_path: /2017-18/provincial/north-west/departments/office-of-the-premier

@@ -37,6 +37,7 @@ intro: "## Vision\n\nHealthy self-reliant communities in the North West Province
   \ Persons Pledge\r\n\r\n* Public Service Principles\r\n\r\n* Accountability and\
   \ Transparency\r\n\r\n* Community participation\r\n\r\n* Excellence\r\n\r\n* Caring\r\
   \n\r\n* Access, human dignity and respect"
+is_vote_primary: true
 name: Health
 organisational_unit: department
 programmes:
@@ -72,3 +73,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 03 - Health.pdf
 vote_number: 3
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2016-17/provincial/north-west/departments/health

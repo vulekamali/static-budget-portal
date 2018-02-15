@@ -17,42 +17,41 @@ financial_years:
     url_path: /2017-18
   id: 2017-18
   is_selected: true
+government_functions:
+- name: Agriculture, rural development and land reform
+  total_budget: 16553754000.0
+- name: Basic education
+  total_budget: 28925029000.0
+- name: Debt-service costs
+  total_budget: 162353119000.0
+- name: Defence, public order and safety
+  total_budget: 191686635000.0
+- name: Economic affairs
+  total_budget: 81308018000.0
+- name: General public services
+  total_budget: 481306949000.0
+- name: Health
+  total_budget: 42564050000.0
+- name: Human settlements and municipal infrastructure
+  total_budget: 168860963000.0
+- name: Post school education and training
+  total_budget: 68949095000.0
+- name: Social protection
+  total_budget: 160707768000.0
 organisational_unit: financial_year
 revenue:
 - amount: '482085860000'
-  category: Personal income tax
+  category: Personal Income Tax
 - amount: '312750480000'
-  category: Value-added tax
+  category: Value-Added Tax
 - amount: '218691790000'
-  category: Corporate income tax
+  category: Corporate Income Tax
 - amount: '70901800000'
-  category: General fuel levy
-- amount: '52607510000'
-  category: Customs duties
-- amount: '39870760000'
-  category: Specific excise duties
-- amount: '34716760000'
-  category: Withholding tax
-- amount: '16641460000'
-  category: Skills development levy
-- amount: '8641670000'
-  category: Electricity Levy
-- amount: '8422810000'
-  category: 'Transfer duties '
-- amount: '7281400000'
+  category: Fuel Levies
+- amount: '96117870000'
+  category: Customs and Excise Duties
+- amount: '84940380000'
   category: Other
-- amount: '5774760000'
-  category: Securities transfer tax
-- amount: '3639600000'
-  category: Ad valorem excise duties
-- amount: '2121480000'
-  category: Estate duty
-- amount: '1150910000'
-  category: Air departure tax
-- amount: '189700000'
-  category: Donations tax
-- amount: '-570000'
-  category: 'Stamp duties and fees '
 selected_financial_year: 2017-18
 slug: 2017-18
 url_path: /2017-18

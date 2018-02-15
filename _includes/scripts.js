@@ -23,4 +23,7 @@ import './components/other-pages/SearchResult/index.jsx';
 
 import './components/about-and-learning-centre/Glossary/index.jsx';
 import './components/about-and-learning-centre/Videos/index.jsx';
+import './components/about-and-learning-centre/Video/index.jsx';
 
+import './components/homepage/Revenue/index.jsx';
+import './components/homepage/Expenditure/index.jsx';

@@ -10,6 +10,7 @@
 @import 'utilities/scss/global-styles/body';
 @import 'utilities/scss/global-styles/a';
 @import 'utilities/scss/global-styles/p';
+@import 'utilities/scss/global-styles/li';
 
 @import 'utilities/scss/animation/spin';
 @import 'utilities/scss/animation/blackout';
@@ -20,6 +21,11 @@
 @import 'utilities/scss/utility-classes/u-listReset';
 @import 'utilities/scss/utility-classes/u-listItemReset';
 @import 'utilities/scss/utility-classes/u-marginTop';
+@import 'utilities/scss/utility-classes/u-marginLeft';
+@import 'utilities/scss/utility-classes/u-marginBottom';
+@import 'utilities/scss/utility-classes/u-underline';
+@import 'utilities/scss/utility-classes/u-fontWeight';
+@import 'utilities/scss/utility-classes/u-fontSize';
 
 @import 'components/universal/Tooltip/styles';
 @import 'components/universal/Page/styles';
@@ -35,8 +41,8 @@
 @import 'components/header-and-footer/Search/styles';
 @import 'components/header-and-footer/YearSelect/styles';
 @import 'components/header-and-footer/Footer/styles';
+@import 'components/header-and-footer/ExtraFooter/styles';
 @import 'components/header-and-footer/NavBar/styles';
-@import 'components/header-and-footer/Disclaimer/styles';
 @import 'components/header-and-footer/SubLinks/styles';
 @import 'components/header-and-footer/HeaderBar/styles';
 @import 'components/header-and-footer/Logo/styles';
@@ -45,6 +51,11 @@
 @import 'components/homepage/Circles/styles';
 @import 'components/homepage/SignUpBox/styles';
 @import 'components/homepage/HomeLayout/styles';
+@import 'components/homepage/ApiCta/styles';
+@import 'components/homepage/NewIntro/styles';
+@import 'components/homepage/Links/styles';
+@import 'components/homepage/Revenue/styles';
+@import 'components/homepage/Expenditure/styles';
 
 @import 'components/other-pages/DeptSearch/styles';
 @import 'components/other-pages/SearchResult/styles';
@@ -59,6 +70,7 @@
 @import 'components/about-and-learning-centre/Contacts/styles';
 @import 'components/about-and-learning-centre/Glossary/styles';
 @import 'components/about-and-learning-centre/Videos/styles';
+@import 'components/about-and-learning-centre/Video/styles';
 
 @import 'components/cso-data-page/CsoMeta/styles';
 @import 'components/cso-data-page/CsoRelated/styles';

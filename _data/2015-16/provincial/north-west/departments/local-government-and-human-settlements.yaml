@@ -33,6 +33,7 @@ intro: "## Vision\r\n\r\nA transformed developmental local governance and integr
   \r\n## Mission Statement\r\n\r\nTo plan and promote integrated and sustainable human\
   \ settlements and ensure quality service\r\ndelivery through cooperation and good\
   \ governance with municipalities."
+is_vote_primary: true
 name: Local Government and Human Settlements
 organisational_unit: department
 programmes:
@@ -53,3 +54,7 @@ sphere:
   slug: provincial
 treasury_datasets: {}
 vote_number: 9
+vote_primary:
+  name: Local Government and Human Settlements
+  slug: local-government-and-human-settlements
+  url_path: /2015-16/provincial/north-west/departments/local-government-and-human-settlements

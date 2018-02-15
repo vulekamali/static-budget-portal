@@ -1,10 +1,10 @@
 import { h } from 'preact';
+import breakIntoWrap from './breakIntoWrap.js';
 
 
 export default function HorisontalLineGroup({ totalGroupSpace, groupSpaceArray, rank, lines, title, styling }) {
   const {
     barWidth,
-    titleHeight,
     padding,
     buffer,
     valueSpace,
@@ -12,6 +12,9 @@ export default function HorisontalLineGroup({ totalGroupSpace, groupSpaceArray, 
     maxValue,
     groupMargin,
     fontSize,
+    charWrap,
+    charLineHeight,
+    titleSpace,
   } = styling;
 
   const groupSpace = groupSpaceArray[rank];
@@ -28,6 +31,8 @@ export default function HorisontalLineGroup({ totalGroupSpace, groupSpaceArray, 
   );
 
   const startPoint = padding[0] + previousSpace;
+  const rawCharArray = breakIntoWrap(title, charWrap);
+  const charArray = rawCharArray.filter(val => val !== '');
 
   return (
     <g className="Graph-group">
@@ -41,13 +46,19 @@ export default function HorisontalLineGroup({ totalGroupSpace, groupSpaceArray, 
         opacity="1"
       /> */}
 
-      <text
-        className="Graph-label Graph-label--leftAlign"
-        x={padding[3] + buffer}
-        y={padding[0] + previousSpace + (groupMargin / 2) + fontSize}
-      >
-        {title}
-      </text>
+      {
+        charArray.map((val, index) => {
+          return (
+            <text
+              className="Graph-label Graph-label--leftAlign"
+              y={padding[0] + previousSpace + (groupMargin / 2) + (charLineHeight * index)}
+              x={padding[3] + buffer}
+            >
+              {val}
+            </text>
+          );
+        })
+      }
 
       {
         lines.map((amount, index) => {
@@ -58,9 +69,9 @@ export default function HorisontalLineGroup({ totalGroupSpace, groupSpaceArray, 
             <line
               stroke-linecap="round"
               stroke-width={barWidth}
-              y1={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + titleHeight}
+              y1={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * charArray.length)}
               x1={padding[3] + buffer + (barWidth / 2)}
-              y2={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + titleHeight}
+              y2={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * charArray.length)}
               x2={(padding[3] + buffer + displayAmount) - barWidth}
               className="Graph-line"
             />

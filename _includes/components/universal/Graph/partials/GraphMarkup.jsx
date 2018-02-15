@@ -13,7 +13,7 @@ import VerticalLabelList from './VerticalLabelList.jsx';
 import HorisontalTooltipsList from './HorisontalTooltipsList.jsx';
 
 
-export default function GraphMarkup({ items, styling, legend }) {
+export default function GraphMarkup({ items, styling, legend, year }) {
   const { valueSpace, padding } = styling;
   const groupSpaceArray = buildGroupSpaceArray(items, styling);
   const totalGroupSpace = groupSpaceArray.reduce((result, val) => result + val, 0);
@@ -33,18 +33,20 @@ export default function GraphMarkup({ items, styling, legend }) {
   // );
 
   return (
-    <svg
-      version="1.1"
-      className="Graph-svg"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox={`0 0 ${width} ${height}`}
-      {...{ width, height }}
-    >
-      <HorisontalBreakpointsList {...{ styling, totalGroupSpace }} />
-      <HorisontalGuidesList {...{ styling, totalGroupSpace }} />
-      <Grid {...{ styling, totalGroupSpace }} />
-      <HorisontalLineGroupList {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
-      <HorisontalTooltipsList {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
-    </svg>
+    <div>
+      <svg
+        version="1.1"
+        className="Graph-svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox={`0 0 ${width} ${height}`}
+        {...{ width, height }}
+      >
+        <HorisontalBreakpointsList {...{ styling, totalGroupSpace }} />
+        <HorisontalGuidesList {...{ styling, totalGroupSpace }} />
+        <Grid {...{ styling, totalGroupSpace }} />
+        <HorisontalLineGroupList {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
+        <HorisontalTooltipsList {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
+      </svg>
+    </div>
   );
 }

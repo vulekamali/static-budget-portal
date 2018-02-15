@@ -38,6 +38,7 @@ intro: "## vision\n\nwe envision a prosperous province supported by sound financ
   \ fiscal , manage the budget preparation process\r\nand enforce the transparency\
   \ and effective management in respect of revenuw and expenditure, assests and liabilities,\
   \ public entities and constitional institions\r\n\r\n\r\n\r\n"
+is_vote_primary: true
 name: Provincial Treasury
 organisational_unit: department
 programmes:
@@ -67,3 +68,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 12 - Provincial Treasury.pdf
 vote_number: 12
+vote_primary:
+  name: Provincial Treasury
+  slug: provincial-treasury
+  url_path: /2016-17/provincial/eastern-cape/departments/provincial-treasury

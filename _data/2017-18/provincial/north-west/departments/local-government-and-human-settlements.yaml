@@ -39,6 +39,7 @@ intro: "## Vision\n\nA transformed developmental local governance and integrated
   \n\r\nThe Department is also responsible for provision of habitable human settlements\
   \ to all the citizens. These services include amongst others, the Upgrading of informal\
   \ settlements, provision of tittle deeds and building descent human settlements."
+is_vote_primary: true
 name: Local Government and Human Settlements
 organisational_unit: department
 programmes:
@@ -68,3 +69,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 09 - Local Government and Human Settlements.pdf
 vote_number: 9
+vote_primary:
+  name: Local Government and Human Settlements
+  slug: local-government-and-human-settlements
+  url_path: /2017-18/provincial/north-west/departments/local-government-and-human-settlements

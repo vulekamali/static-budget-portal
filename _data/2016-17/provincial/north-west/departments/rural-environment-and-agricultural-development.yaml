@@ -36,6 +36,7 @@ intro: "## Vision\n\nVibrant and prosperous society in harmony with our natural 
   \ Rural Development Programme\r\n\r\n* Creating decent employment through Inclusive\
   \ Economic Growth\r\n\r\n\r\n* Protecting and Enhancing Environmental Assets and\
   \ Natural Resources"
+is_vote_primary: true
 name: Rural Environment and Agricultural Development
 organisational_unit: department
 programmes:
@@ -73,3 +74,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 13 - Rural Environment and Agricultural Development.pdf
 vote_number: 13
+vote_primary:
+  name: Rural Environment and Agricultural Development
+  slug: rural-environment-and-agricultural-development
+  url_path: /2016-17/provincial/north-west/departments/rural-environment-and-agricultural-development

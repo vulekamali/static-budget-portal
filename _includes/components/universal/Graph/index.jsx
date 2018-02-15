@@ -1,14 +1,16 @@
 import { h, render } from 'preact';
-import GraphContainer from './partials/GraphContainer.jsx';
+import Toggle from './partials/Toggle.jsx';
 
 
-const componentList = document.getElementsByClassName('Graph');
+const componentList = document.getElementsByClassName('Graph-data');
 
 for (let i = 0; i < componentList.length; i++) {
   const component = componentList[i];
   const { data } = JSON.parse(component.getAttribute('data-graph'));
   const legendAttribute = component.getAttribute('data-config') || '{ "legend": [] }';
   const { legend } = JSON.parse(legendAttribute);
+  const year = component.getAttribute('data-year') || '2017-18';
+
 
   const items = data.reduce(
     (result, val) => {
@@ -21,7 +23,7 @@ for (let i = 0; i < componentList.length; i++) {
   );
 
   render(
-    <GraphContainer {...{ items, legend }} />,
+    <Toggle {...{ items, year, legend }} />,
     component,
   );
 }

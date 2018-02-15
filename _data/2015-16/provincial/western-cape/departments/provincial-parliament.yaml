@@ -40,6 +40,7 @@ intro: "## Vision\n\nA dynamic, effective and efficient parliament supporting co
   \ that is conducive to empowering and enabling members and staff\r\n\r\n* implementing\
   \ and adhering good corporate governance systems and * monitoring mechanisms\r\n\
   \r\n* managing resources effectively, efficiently and economically"
+is_vote_primary: true
 name: Provincial Parliament
 organisational_unit: department
 programmes:
@@ -65,3 +66,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 02 - Provincial Parliament.pdf
 vote_number: 2
+vote_primary:
+  name: Provincial Parliament
+  slug: provincial-parliament
+  url_path: /2015-16/provincial/western-cape/departments/provincial-parliament

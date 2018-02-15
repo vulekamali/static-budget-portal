@@ -2,6 +2,7 @@ import { h } from 'preact';
 import DeptControl from './../../DeptControl/index.jsx';
 import DeptGroup from './../../DeptGroup/index.jsx';
 
+
 export default function DeptSearchMarkup({ state, eventHandlers }) {
   return (
     <div className="DeptSearch">
@@ -26,7 +27,17 @@ export default function DeptSearchMarkup({ state, eventHandlers }) {
           {
             state.results.map(
               ({ name, slug, departments }) => {
-                if (departments.length > 0) {
+                if (state.emptyGroups.indexOf(slug) > -1) {
+                  return (
+                    <div className="DeptSearch-groupWrap">
+                      <DeptGroup
+                        empty
+                        map={slug}
+                        name={name}
+                      />
+                    </div>
+                  );
+                } else if (departments.length > 0) {
                   return (
                     <div className="DeptSearch-groupWrap">
                       <DeptGroup

@@ -46,6 +46,7 @@ intro: "## Vision\n\nA strategic centre of excellence for effective and efficien
   \ and\r\neconomic growth.\r\n\r\n* Support the Premier to implement Provincial Public\
   \ Service Transformation, reform and\r\nservice delivery improvement to build the\
   \ capability of the Provincial Government to fulfil its Constitutional obligations"
+is_vote_primary: true
 name: Office of the Premier
 organisational_unit: department
 programmes:
@@ -71,3 +72,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 01 - Office of the Premier.pdf
 vote_number: 1
+vote_primary:
+  name: Office of the Premier
+  slug: office-of-the-premier
+  url_path: /2017-18/provincial/mpumalanga/departments/office-of-the-premier

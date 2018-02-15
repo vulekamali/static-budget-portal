@@ -61,6 +61,7 @@ intro: "## Vote purpose\n\n_Formulate energy policies, regulatory frameworks and
   \ and position South Africa to\nbecome globally competitive in the use of innovative\
   \ technology for the\ndesign, manufacture and deployment of state of the art nuclear\
   \ energy systems,\npower reactors and nuclear fuel cycle systems.\n\n"
+is_vote_primary: true
 name: Energy
 organisational_unit: department
 programmes:
@@ -91,3 +92,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote26.xls
 vote_number: 26
+vote_primary:
+  name: Energy
+  slug: energy
+  url_path: /2016-17/national/departments/energy

@@ -9,7 +9,7 @@
 
 <!doctype>
 <html>
-  {% include utilities/html/head.html title=page.title name=page_data.name %}
+  {% include utilities/html/head.html title=page.title name=page_data.name type=page.sphere province=page_data.government.name %}
   <body>
     {{ content }}
     {% include utilities/html/scripts.html %}

@@ -1,0 +1,97 @@
+.Revenue {
+  padding-top: 30px;
+}
+
+.Revenue-heading {
+  font-size: 24px;
+  font-weight: bold;
+  font-weight: 900;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+.Revenue-box {
+  @include clearfix;
+}
+
+.Revenue-container {
+  border-radius: 20px;
+  background-color: #e6e6e6;
+  border: solid 1px #d2d2d2;
+  padding: 5px;
+}
+
+.Revenue-itemWrap {
+  float: left;
+  padding: 5px;
+  width: 100%;
+
+  @media screen and (min-width: 750px) {
+    width: 50%;
+  }
+}
+
+.Revenue-item {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  border: solid 1px #b9b9b9;
+  padding: 20px 30px;
+  font-size: 19px;
+  text-align: center;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .Revenue-itemWrap:nth-of-type(4n+1) & {
+    color: #ad3c64;
+  }
+
+  .Revenue-itemWrap:nth-of-type(4n+2) & {
+    color: #5793f3;
+  }
+
+  .Revenue-itemWrap:nth-of-type(4n+3) & {
+    color: #7bb344;
+  }
+
+  .Revenue-itemWrap:nth-of-type(4n+4) & {
+    color: #ee9f31;
+  }
+}
+
+.Revenue-title {
+  font-weight: bold;
+  font-weight: 900;
+}
+
+.Revenue-linkWrap {
+  display: block;
+  float: left;
+  padding: 5px;
+  width: 100%;
+}
+
+.Revenue-link {
+  display: inline-block;
+  color: #3f3f3f;
+  padding: 3px 6px 6px;
+  border-radius: 5px;
+  font-size: 14px;
+
+  &:hover {
+    background-color: darken(#e6e6e6, 15%);
+  }
+}
+
+.Revenue-icon {
+  border: 2px solid #3f3f3f;
+  border-radius: 50%;
+  display: inline-block;
+  fill: #3f3f3f;
+  padding: 2px;
+  margin-right: 5px;
+  line-height: 0;
+}

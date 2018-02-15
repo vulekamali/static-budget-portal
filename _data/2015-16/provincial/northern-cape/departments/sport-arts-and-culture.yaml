@@ -41,6 +41,7 @@ intro: "## Vision\n\nA department committed to creating a prosperous and empower
   \ the quality of life of all the people of the Northern Cape through the development,\
   \ transformation and promotion of sustainable sport and recreation programmes that\
   \ will lead to increased participation and global competitiveness in sport."
+is_vote_primary: true
 name: Sport, Arts and Culture
 organisational_unit: department
 programmes:
@@ -68,3 +69,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 07 - Sport, Arts and Culture.pdf
 vote_number: 7
+vote_primary:
+  name: Sport, Arts and Culture
+  slug: sport-arts-and-culture
+  url_path: /2015-16/provincial/northern-cape/departments/sport-arts-and-culture

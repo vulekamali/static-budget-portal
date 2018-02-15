@@ -42,6 +42,7 @@ intro: "## Vision\n\nHealth service excellence for all.\r\n\r\n\n\n## Mission\n\
   \ services. In addition, the department further fund the training of student nurses,\
   \ as well as a range of post diploma qualifications in clinical, through the Henrietta\
   \ Stockdale Nursing College."
+is_vote_primary: true
 name: Health
 organisational_unit: department
 programmes:
@@ -77,3 +78,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 10 - Health.pdf
 vote_number: 10
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2015-16/provincial/northern-cape/departments/health

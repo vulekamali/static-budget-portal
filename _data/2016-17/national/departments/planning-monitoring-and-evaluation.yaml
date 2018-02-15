@@ -37,6 +37,7 @@ intro: "## Vote purpose\r\n\r\nImprove government service delivery through plann
   \ of individual national and provincial government departments and municipalities\r\
   \n* monitor frontline service delivery\r\n* manage the presidential hotline\r\n\
   * promote good planning, monitoring and evaluation practices in government."
+is_vote_primary: true
 name: Planning, Monitoring and Evaluation
 organisational_unit: department
 programmes:
@@ -65,3 +66,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote08.xls
 vote_number: 8
+vote_primary:
+  name: Planning, Monitoring and Evaluation
+  slug: planning-monitoring-and-evaluation
+  url_path: /2016-17/national/departments/planning-monitoring-and-evaluation

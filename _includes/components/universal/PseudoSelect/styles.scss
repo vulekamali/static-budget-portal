@@ -28,6 +28,7 @@
 .PseudoSelect-item {
   padding-left: 0;
   display: none;
+  line-height: 1.3;
 
   .PseudoSelect-list.is-open & {
     display: table-row;
@@ -64,12 +65,12 @@
     border: 5px solid transparent;
     border-top: 5px solid #4a4a4a;
     margin-left: 10px;
-    top: 4px;
+    top: 7px;
     transform: rotate(360deg);
     transition: transform 0.3s, top 0.3s;
 
     .PseudoSelect-list.is-open & {
-      top: -1px;
+      top: 2px;
       transform: rotate(180deg);
     }
   }

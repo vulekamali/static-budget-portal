@@ -55,6 +55,7 @@ intro: "## Vote purpose\n\n_Develop and support a quality higher and vocational 
   \ African Qualifications Authority and the quality councils, for the issuing and\
   \ quality assurance of qualifications required on the sub-frameworks of the national\
   \ qualifications framework.\n\n"
+is_vote_primary: true
 name: Higher Education and Training
 organisational_unit: department
 programmes:
@@ -87,3 +88,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2015%20Higher%20Education%20and%20Training.pdf
 vote_number: 15
+vote_primary:
+  name: Higher Education and Training
+  slug: higher-education-and-training
+  url_path: /2017-18/national/departments/higher-education-and-training

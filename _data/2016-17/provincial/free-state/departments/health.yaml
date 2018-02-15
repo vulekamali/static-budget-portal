@@ -33,6 +33,7 @@ intro: "## The vision\n\nIncreasing life expectancy through health system effect
   \n\n## The Mission\n\nBy creating a value driven institution that inculcates operational\
   \ efficiency and accountability in delivering\r\ndesired outcomes effectively.\r\
   \n\r\n\r"
+is_vote_primary: true
 name: Health
 organisational_unit: department
 programmes:
@@ -68,3 +69,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 05 - Health.pdf
 vote_number: 5
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2016-17/provincial/free-state/departments/health

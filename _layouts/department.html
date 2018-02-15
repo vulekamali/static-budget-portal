@@ -9,19 +9,28 @@ layout: page-shell
 
 <div class="Page-content">
   <div class="Page-contentWrap">
-
     {% if page_data.government.slug == 'south-africa' %}
-      <div class="Page-title">National Department: {{ page_data.name }}</div>
+      <div class="Page-title is-noPadding">National Department: {{ page_data.name }}</div>
     {% else %}
-      <div class="Page-title">{{ page_data.government.name }} Department: {{ page_data.name }}</div>
+      <div class="Page-title is-noPadding">{{ page_data.government.name }} Department: {{ page_data.name }}</div>
     {% endif %}
+
+    <div class="u-marginLeft u-marginLeft--20 u-marginBottom u-marginBottom--30 u-marginTop u-marginTop--5 u-fontWeight u-fontWeight--bold u-fontSize u-fontSize--16">
+      Budget for {{ page.financial_year }}
+    </div>
 
     <main class="Page-main">
 
       <div class="Card js-tooltips" data-year="{{ page.financial_year }}">{{ page_data.intro  | markdownify }}</div>
 
       <div class="Page-section">
-          {% include components/universal/Graph/index.html graph=page_data.programmes type="bar" %}
+          {%
+            include components/universal/Graph/index.html
+            graph=page_data.programmes
+            year=page.financial_year
+            type="bar"
+            treasury=page_data.treasury_datasets
+            %}
       </div>
 
     </main>
@@ -30,8 +39,8 @@ layout: page-shell
       <div class="Card">
         {% include components/universal/Share/index.html %}
       </div>
+
       <div class="u-marginTop u-marginTop--20">
-        
         {% include components/universal/FileTypes/index.html treasury=page_data.treasury_datasets cso=page_data.contributed_datasets type="dept" %}
       </div>
 

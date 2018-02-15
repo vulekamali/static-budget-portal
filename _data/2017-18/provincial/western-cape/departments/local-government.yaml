@@ -66,6 +66,7 @@ intro: "## Vision\n\nAn efficient and dynamic team that enables well governed mu
   \ good governance, co-operation and\r\nco-ordination.\r\n\r\n* Promote developmental\
   \ local government.\r\n\r\n* Facilitate access to government services.\r\n\r\n*\
   \ Facilitate and monitor infrastructure development.\r\n"
+is_vote_primary: true
 name: Local Government
 organisational_unit: department
 programmes:
@@ -93,3 +94,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 14 - Local Government.pdf
 vote_number: 14
+vote_primary:
+  name: Local Government
+  slug: local-government
+  url_path: /2017-18/provincial/western-cape/departments/local-government

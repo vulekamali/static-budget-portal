@@ -49,6 +49,7 @@ intro: "## Vision\n\nA caring society for the protection and development of the 
   \ capacity building and support; and\r\n\r\n* Facilitating, monitoring and evaluating\
   \ the mainstreaming of gender, disability, children an elderly person's rights in\
   \ departmental programmes.\r\n\r\n\r\n"
+is_vote_primary: true
 name: Social Development
 organisational_unit: department
 programmes:
@@ -78,3 +79,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 04 - Social Development.pdf
 vote_number: 4
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2017-18/provincial/eastern-cape/departments/social-development

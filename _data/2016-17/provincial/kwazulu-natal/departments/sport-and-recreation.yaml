@@ -55,6 +55,7 @@ intro: "## Vision\r\n\r\nThe department\u2019s vision is: An active and winning 
   \n\r\n* Develop and implement a talent identification toolkit that is inclusive\
   \ of all participants in sport\r\n(athletes, coaches, administrators and technical\
   \ officials)."
+is_vote_primary: true
 name: Sport and Recreation
 organisational_unit: department
 programmes:
@@ -78,3 +79,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 10 - Sports and Recreation.pdf
 vote_number: 10
+vote_primary:
+  name: Sport and Recreation
+  slug: sport-and-recreation
+  url_path: /2016-17/provincial/kwazulu-natal/departments/sport-and-recreation

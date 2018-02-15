@@ -43,6 +43,7 @@ intro: "## Vision\n\nA safer open opportunity society for all\uFFFD building res
   \ a common vision and understanding regarding the best manner in which to manage\
   \ towards\r\ngreater safety and security by optimising security related resources\
   \ services and/or related spend within the\r\nWestern Cape Government (WCG)."
+is_vote_primary: true
 name: Community Safety
 organisational_unit: department
 programmes:
@@ -70,3 +71,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 04 - Community Safety.pdf
 vote_number: 4
+vote_primary:
+  name: Community Safety
+  slug: community-safety
+  url_path: /2016-17/provincial/western-cape/departments/community-safety

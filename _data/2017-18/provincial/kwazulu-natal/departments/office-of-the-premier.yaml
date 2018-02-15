@@ -41,6 +41,7 @@ intro: "## Vision\n\nThe vision of the Provincial Legislature (hereafter referre
   \ Council or the National Council of Provinces (NCOP).\r\n\r\n* To maintain oversight\
   \ over the provincial executive authority in the province, including the implementation\
   \ of legislation.\r\n"
+is_vote_primary: true
 name: Office of the Premier
 organisational_unit: department
 programmes:
@@ -66,3 +67,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 01 - Premier.pdf
 vote_number: 1
+vote_primary:
+  name: Office of the Premier
+  slug: office-of-the-premier
+  url_path: /2017-18/provincial/kwazulu-natal/departments/office-of-the-premier

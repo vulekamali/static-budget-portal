@@ -1,5 +1,6 @@
 ---
 layout: homepage
+title: South African National Budget 2015-16
 years:
 - [2015-16, /2015-16, active]
 - [2016-17, /2016-17, link]

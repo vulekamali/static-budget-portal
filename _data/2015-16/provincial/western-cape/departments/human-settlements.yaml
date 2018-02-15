@@ -50,6 +50,7 @@ intro: "## Vision\n\nResidents of the Western Cape have access to liveable, acce
   \ support for the development of sustainable human settlements;\r\n\r\n* Sensitising\
   \ the public to the importance of housing as an asset; and \r\n\r\n* Facilitating\
   \ fair relationships in rental housing."
+is_vote_primary: true
 name: Human Settlements
 organisational_unit: department
 programmes:
@@ -77,3 +78,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 08 - Human Settlements.pdf
 vote_number: 8
+vote_primary:
+  name: Human Settlements
+  slug: human-settlements
+  url_path: /2015-16/provincial/western-cape/departments/human-settlements

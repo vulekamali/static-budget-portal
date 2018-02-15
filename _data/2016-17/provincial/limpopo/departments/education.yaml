@@ -48,6 +48,7 @@ intro: "## Vision\n\nExcellence in provisioning of innovative quality basic educ
   \n\r\n\u2022 Overall management of the education system.\r\n\r\n\u2022 Provide minimum\
   \ food needed to learn effectively in primary schools to identified poor and\r\n\
   hungry learners.\r\n"
+is_vote_primary: true
 name: Education
 organisational_unit: department
 programmes:
@@ -81,3 +82,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 03 - Education.pdf
 vote_number: 3
+vote_primary:
+  name: Education
+  slug: education
+  url_path: /2016-17/provincial/limpopo/departments/education

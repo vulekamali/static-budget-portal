@@ -92,11 +92,13 @@ def write_financial_year(year_slug, static_path):
         outfile.write(
             ("---\n"
              "layout: homepage\n"
+             "title: South African National Budget %s\n"
              "%s"
              "financial_year: %s\n"
              "active: home\n"
              "nested: false\n"
              "---") % (
+                 year_slug,
                  yaml.dump({'years': years}),
                  year_slug,
              ))

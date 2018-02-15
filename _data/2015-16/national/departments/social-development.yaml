@@ -57,6 +57,7 @@ intro: "## Vote purpose\n\n_Ensure protection against vulnerability by creating 
   \ the sustainable development of all South Africans by integrating population issues\
   \ with development planning in all spheres of government and all sectors of society.\n\
   \n"
+is_vote_primary: true
 name: Social Development
 organisational_unit: department
 programmes:
@@ -85,3 +86,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote17.xls
 vote_number: 17
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2015-16/national/departments/social-development

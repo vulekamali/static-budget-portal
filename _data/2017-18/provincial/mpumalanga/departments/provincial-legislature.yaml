@@ -48,6 +48,7 @@ intro: "## Vision\r\n\r\nA people-centred, African, world class Legislature.\r\n
   \ services to Members in order to fulfil the constitutional mandate of the Legislature.\r\
   \n\r\nCo-operative governance\r\n* To provide professional parliamentary advisory\
   \ and protocol services in support of the\r\ncore business of the Legislature"
+is_vote_primary: true
 name: Provincial Legislature
 organisational_unit: department
 programmes:
@@ -71,3 +72,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 02 - Provincial Legislature.pdf
 vote_number: 2
+vote_primary:
+  name: Provincial Legislature
+  slug: provincial-legislature
+  url_path: /2017-18/provincial/mpumalanga/departments/provincial-legislature

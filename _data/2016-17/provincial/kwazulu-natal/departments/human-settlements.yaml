@@ -40,6 +40,7 @@ intro: "## Vision\n\nThe vision of the department is: Together breaking new grou
   \ maintain the immoveable assets of the department.\r\n\r\n* To research, establish,\
   \ monitor and implement policies within the National Housing Policy Framework.\r\
   \n\r\n* To administer and manage housing subsidies of targeted groups."
+is_vote_primary: true
 name: Human Settlements
 organisational_unit: department
 programmes:
@@ -67,3 +68,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 08 - Human Settlement.pdf
 vote_number: 8
+vote_primary:
+  name: Human Settlements
+  slug: human-settlements
+  url_path: /2016-17/provincial/kwazulu-natal/departments/human-settlements
