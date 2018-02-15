@@ -4,7 +4,6 @@ import { h } from 'preact';
 import Map from './partials/Map.jsx';
 
 export default function DeptGroup({ map, linksArray, name: title, doubleRow, empty }) {
-  console.log(title)
 
   if (empty) {
     return (
