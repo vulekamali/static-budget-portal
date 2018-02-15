@@ -4,6 +4,7 @@ layout: page-shell
 
 {% assign page_data = site.data[page.financial_year].index %}
 {% assign resources_data = site.data[page.financial_year].resources %}
+{% assign circles_data = site.data[page.financial_year].circles %}
 
 
 <div class="Page-content">
@@ -38,7 +39,7 @@ layout: page-shell
           {% 
             include components/homepage/Circles/index.html 
             year=page.financial_year
-            items=site.data.static.circles
+            items=circles_data
           %}
         </div>
 
@@ -47,6 +48,7 @@ layout: page-shell
             include components/homepage/Revenue/index.html 
             info=page_data.revenue
             link=resources_data.budget_revenue_data.url
+            year=page.financial_year
           %}
         </div>
 

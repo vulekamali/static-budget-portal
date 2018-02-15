@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Online Budget Data Portal
-email: info@openup.org.za
+email: feedback@vulekamali.gov.za
 description: South Africa's National and Provincial budget data from National Treasury in partnership with IMALI YETHU.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://vulekamali.gov.za"
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -40,6 +40,9 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+plugins:
+  - jekyll-sitemap
 
 defaults:
   -
