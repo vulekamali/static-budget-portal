@@ -66,7 +66,7 @@ export default function HorisontalTooltips({ totalGroupSpace, items, groupSpaceA
             <HorisontalTooltip
               {...{ styling }}
               xPosition={(padding[3] + buffer + displayAmount) - (barWidth / 2)}
-              yPosition={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * (charArray.length + 1)) + titleSpace}
+              yPosition={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * charArray.length)}
               {...{ amount, totalGroupSpace }}
             />
           );
