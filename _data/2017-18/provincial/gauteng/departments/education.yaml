@@ -49,6 +49,7 @@ intro: "## Vision\n\nEverey learner feels valued and inspired in our innovative 
   \ responsible for thedelivery and regulation of pre-tertiary and private schooling\
   \ with national and provincial imperatives with a special focuson curriculum delivery,teaching\
   \ and learning support material,infrastructure,ICT and teacher placements."
+is_vote_primary: true
 name: Education
 organisational_unit: department
 programmes:
@@ -82,3 +83,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 05 - Education.pdf
 vote_number: 5
+vote_primary:
+  name: Education
+  slug: education
+  url_path: /2017-18/provincial/gauteng/departments/education

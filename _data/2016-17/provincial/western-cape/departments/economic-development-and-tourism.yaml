@@ -55,6 +55,7 @@ intro: "## Vision\r\n\r\nThe Department\u2019s vision is a Western Cape that has
   * Increase work opportunities for all citizens;\r\n\r\n* Creating an enabling environment\
   \ for business and citizenry growth and development; and\r\n\r\n* Creating a competitive\
   \ and productive economic Province."
+is_vote_primary: true
 name: Economic Development and Tourism
 organisational_unit: department
 programmes:
@@ -88,3 +89,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 12 - Economic Development and Toursim.pdf
 vote_number: 12
+vote_primary:
+  name: Economic Development and Tourism
+  slug: economic-development-and-tourism
+  url_path: /2016-17/provincial/western-cape/departments/economic-development-and-tourism

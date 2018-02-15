@@ -41,6 +41,7 @@ intro: "## Vision\n\nEvery learner feels valued and inspired in our innovative e
   \ and provincial imperatives with special focus on\r\ncurriculum delivery, teaching\
   \ and learning support material, infrastructure, and Information Communication Technology\r\
   \n(ICT) and teacher placements."
+is_vote_primary: true
 name: Education
 organisational_unit: department
 programmes:
@@ -74,3 +75,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 05 - Education.pdf
 vote_number: 5
+vote_primary:
+  name: Education
+  slug: education
+  url_path: /2016-17/provincial/gauteng/departments/education

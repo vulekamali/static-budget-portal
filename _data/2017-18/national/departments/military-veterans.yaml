@@ -37,6 +37,7 @@ intro: "## Department purpose\r\n\r\nFormulate policies and standards aimed at p
   \ on socioeconomic support to military veterans and to their dependants, including\
   \ benefits and entitlement to help realise a dignified, unified, empowered and self-sufficient\
   \ community of military veterans."
+is_vote_primary: false
 name: Military Veterans
 organisational_unit: department
 programmes:
@@ -61,3 +62,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2019%20Defence%20and%20Military%20Veterans.pdf
 vote_number: 19
+vote_primary:
+  name: Defence and Military Veterans
+  slug: defence-and-military-veterans
+  url_path: /2017-18/national/departments/defence-and-military-veterans

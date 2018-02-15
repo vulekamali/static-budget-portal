@@ -50,6 +50,7 @@ intro: "## Vision\n\nTo provide strategic leadership in financial and fiscal mat
   \n\r\n* To develop, implement and monitor compliance with corporate governance norms\
   \ and standards relating\r\nto provincial and local government; and\r\n\r\n* To\
   \ ensure adequate financial accountability\r\n\r\n"
+is_vote_primary: true
 name: Gauteng Provincial Treasury
 organisational_unit: department
 programmes:
@@ -81,3 +82,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 14 - Gauteng Provincial Treasury.pdf
 vote_number: 14
+vote_primary:
+  name: Gauteng Provincial Treasury
+  slug: gauteng-provincial-treasury
+  url_path: /2015-16/provincial/gauteng/departments/gauteng-provincial-treasury

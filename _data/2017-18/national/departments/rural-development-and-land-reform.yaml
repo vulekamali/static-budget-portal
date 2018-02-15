@@ -74,6 +74,7 @@ intro: "## Vote purpose\r\n\r\nCreate and maintain an equitable and sustainable 
   coordinating, catalysing and implementing an integrated rural development programme,\
   \ which is linked to outcome 7 (comprehensive rural development and land reform)\
   \ of government\u2019s 2014-2019 medium-term strategic framework."
+is_vote_primary: true
 name: Rural Development and Land Reform
 organisational_unit: department
 programmes:
@@ -102,3 +103,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2039%20Rural%20Development%20and%20Land%20Reform.pdf
 vote_number: 39
+vote_primary:
+  name: Rural Development and Land Reform
+  slug: rural-development-and-land-reform
+  url_path: /2017-18/national/departments/rural-development-and-land-reform

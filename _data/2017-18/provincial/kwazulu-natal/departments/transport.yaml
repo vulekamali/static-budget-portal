@@ -63,6 +63,7 @@ intro: "## Vision\n\nThe department\u2019s vision is: Prosperity through mobilit
   \ through the reduction of road accidents.\r\nThe main services rendered include\
   \ road traffic enforcement, road safety education, the analysis and reengineering\
   \ of hazardous locations and the registration and licensing of vehicles."
+is_vote_primary: true
 name: Transport
 organisational_unit: department
 programmes:
@@ -92,3 +93,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 12 - Transport.pdf
 vote_number: 12
+vote_primary:
+  name: Transport
+  slug: transport
+  url_path: /2017-18/provincial/kwazulu-natal/departments/transport

@@ -46,6 +46,7 @@ intro: "## Vision \n\nWe will be the ultimate financial management authority and
   \n\r\n* Financial systems support and maintenance;\r\n\r\n* Asset management;\r\n\
   \r\n* Provision of advice on procurement policies and procedures in provincial departments;\r\
   \n\r\n* Provide oversight on implementation of the MFMA in the province.\r\n"
+is_vote_primary: true
 name: Finance
 organisational_unit: department
 programmes:
@@ -73,3 +74,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 07 - Finance.pdf
 vote_number: 7
+vote_primary:
+  name: Finance
+  slug: finance
+  url_path: /2015-16/provincial/north-west/departments/finance

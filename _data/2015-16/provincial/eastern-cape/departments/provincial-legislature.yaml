@@ -53,6 +53,7 @@ intro: "## Vision\n\nA dynamic people\u2019s assembly for good governance, to de
   \ National Council of Provinces (NCOP). The\r\nLegislature also ensures that departments\
   \ spend voted funds in the prescribed manner through the\r\noversight function provided\
   \ by portfolio committees."
+is_vote_primary: true
 name: Provincial Legislature
 organisational_unit: department
 programmes:
@@ -78,3 +79,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 02 - Provincial Legislature.pdf
 vote_number: 2
+vote_primary:
+  name: Provincial Legislature
+  slug: provincial-legislature
+  url_path: /2015-16/provincial/eastern-cape/departments/provincial-legislature

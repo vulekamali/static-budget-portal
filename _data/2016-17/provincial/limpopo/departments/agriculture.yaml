@@ -35,6 +35,7 @@ intro: "## Vision\r\n\r\nUnited, prosperous and productive agricultural sector f
   \ Development (LDARD) aims to lead and\r\nsupport sustainable agriculture and promote\
   \ rural development in the Province through\r\ngovernance, knowledge development\
   \ and transfer, regulatory function and financial support to\r\nagriculture."
+is_vote_primary: true
 name: Agriculture
 organisational_unit: department
 programmes:
@@ -70,3 +71,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 04 - Agriculture and Rural Development.pdf
 vote_number: 4
+vote_primary:
+  name: Agriculture
+  slug: agriculture
+  url_path: /2016-17/provincial/limpopo/departments/agriculture

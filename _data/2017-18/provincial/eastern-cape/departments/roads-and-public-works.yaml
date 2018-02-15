@@ -58,6 +58,7 @@ intro: "## Vision\n\nLeader in the provision of high quality services in frastru
   \ skills withing the province;and\r\n\r\n* Promote accessibility and safe, affrordabele\
   \ movement of people, goods ans services through the delivery and maintenance of\
   \ transport infrastructure.\r\n"
+is_vote_primary: true
 name: Roads and Public Works
 organisational_unit: department
 programmes:
@@ -85,3 +86,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 05 - Road and Public works.pdf
 vote_number: 5
+vote_primary:
+  name: Roads and Public Works
+  slug: roads-and-public-works
+  url_path: /2017-18/provincial/eastern-cape/departments/roads-and-public-works

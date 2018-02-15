@@ -57,6 +57,7 @@ intro: "## Vote purpose\n\n_Lead South Africa's environmental sector to achieve 
   \ Integrated Coastal Management Act\_(2008), which promotes the conservation of\
   \ the coastal environment and ensures sustainable development practices and the\
   \ use of natural resources.\n\n"
+is_vote_primary: true
 name: Environmental Affairs
 organisational_unit: department
 programmes:
@@ -89,3 +90,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote27.xls
 vote_number: 27
+vote_primary:
+  name: Environmental Affairs
+  slug: environmental-affairs
+  url_path: /2016-17/national/departments/environmental-affairs

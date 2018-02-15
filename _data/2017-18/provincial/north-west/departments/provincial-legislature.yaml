@@ -50,6 +50,7 @@ intro: "## Vision\n\nTo Foster Lawmaking, Oversight and Public Participation Pro
   \ of North West uses its authority in a responsible manner, and that it implements\
   \ the province\u2019s legislation in the best interest of the people of this province.\r\
   \n"
+is_vote_primary: true
 name: Provincial Legislature
 organisational_unit: department
 programmes:
@@ -75,3 +76,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 02 - Legislature.pdf
 vote_number: 2
+vote_primary:
+  name: Provincial Legislature
+  slug: provincial-legislature
+  url_path: /2017-18/provincial/north-west/departments/provincial-legislature

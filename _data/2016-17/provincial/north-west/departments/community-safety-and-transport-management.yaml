@@ -52,6 +52,7 @@ intro: "## Vision\n\nSafe Communities and effective transport services\r\n\r\n\n
   \ by providing quality traffic policing (law enforcement)\r\nservices as stipulated\
   \ by relevant legislation;\r\n\r\n* To ensure compliance in terms of K53 testing\
   \ standards in accordance with the National Road\r\nTraffic Act 93 of 1996."
+is_vote_primary: true
 name: Community Safety and Transport Management
 organisational_unit: department
 programmes:
@@ -79,3 +80,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 05 - Community Safety and Transport Management.pdf
 vote_number: 5
+vote_primary:
+  name: Community Safety and Transport Management
+  slug: community-safety-and-transport-management
+  url_path: /2016-17/provincial/north-west/departments/community-safety-and-transport-management

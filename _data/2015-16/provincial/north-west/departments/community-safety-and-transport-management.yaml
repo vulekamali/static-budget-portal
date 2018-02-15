@@ -32,6 +32,7 @@ intro: "## Vision\r\n\r\nSafe communities and effective transport services\r\n \
   \r\n\r\n## Mission\r\n\r\nWe are committed to promote community and road safety,\
   \ exercise civilian oversight of\r\npolice and coordinate transport services through\
   \ an integrated approach"
+is_vote_primary: true
 name: Community Safety and Transport Management
 organisational_unit: department
 programmes:
@@ -58,3 +59,7 @@ treasury_datasets:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/0771b91f-0aee-4a36-bb48-99bdf79f4304/resource/797f9664-d636-4902-9924-18c94059b0b4/download/nw-community-safety-trans-man.xlsx
 vote_number: 5
+vote_primary:
+  name: Community Safety and Transport Management
+  slug: community-safety-and-transport-management
+  url_path: /2015-16/provincial/north-west/departments/community-safety-and-transport-management

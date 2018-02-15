@@ -42,6 +42,7 @@ intro: "## Department purpose\r\n\r\nProvide or coordinate the provision of lear
   \ Academy. The proclamation was followed by the Public Administration Management\
   \ Act (2014). The National School of Government uses its trading account as a delivery\
   \ vehicle for its core outputs."
+is_vote_primary: false
 name: National School of Government
 organisational_unit: department
 programmes:
@@ -64,3 +65,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2010%20Public%20Service%20and%20Administration.pdf
 vote_number: 10
+vote_primary:
+  name: Public Service and Administration
+  slug: public-service-and-administration
+  url_path: /2017-18/national/departments/public-service-and-administration

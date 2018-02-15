@@ -40,6 +40,7 @@ intro: "## Vision\n\nHealthy self-reliant communities in the North West Province
   \ provides health services primarily to the uninsured populationwithin the province\
   \ and required to provide tertiary health services to people beyond the provincial\
   \ boundaries like Gauteng"
+is_vote_primary: true
 name: Health
 organisational_unit: department
 programmes:
@@ -75,3 +76,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 03 - Health.pdf
 vote_number: 3
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2015-16/provincial/north-west/departments/health

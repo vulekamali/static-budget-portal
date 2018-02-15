@@ -51,6 +51,7 @@ intro: "## Vote purpose\n\n_Create an enabling environment for the provision of 
   \ and Transactions Act\_(2005) \u2013 joint responsibility with the Minister of\
   \ Telecommunications and Postal Services.\n\nThe department is also responsible\
   \ for the oversight of its entities.\n\n  \n  \n\n  \n\n"
+is_vote_primary: true
 name: Communications
 organisational_unit: department
 programmes:
@@ -77,3 +78,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote03.xls
 vote_number: 3
+vote_primary:
+  name: Communications
+  slug: communications
+  url_path: /2015-16/national/departments/communications

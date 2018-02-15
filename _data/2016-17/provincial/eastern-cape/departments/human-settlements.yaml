@@ -37,6 +37,7 @@ intro: "## vision\n\na department at the center of creating integrated sustainab
   \n* secure tenture and land acquisition\r\n\r\n* provision of the title deeds to\
   \ land owners and;\r\n\r\n* installation of service that include other amenitites.\r\
   \n\r\n\r\n\r\n\r\n\r\n"
+is_vote_primary: true
 name: Human Settlements
 organisational_unit: department
 programmes:
@@ -64,3 +65,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 11 - Human Settlements.pdf
 vote_number: 11
+vote_primary:
+  name: Human Settlements
+  slug: human-settlements
+  url_path: /2016-17/provincial/eastern-cape/departments/human-settlements

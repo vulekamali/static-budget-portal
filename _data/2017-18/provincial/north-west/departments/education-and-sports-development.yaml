@@ -78,6 +78,7 @@ intro: "## Vision \n\nTowards Excellence in Education and Sport Development.\r\n
   \ of the North West Province;\r\n\r\n* Ensure the existence of proper infrastructure\
   \ and programmes for the development of talent and skills in Sport activities and\r\
   \n\r\n* Promote social cohesion, moral regeneration and nation building"
+is_vote_primary: true
 name: Education and Sports Development
 organisational_unit: department
 programmes:
@@ -113,3 +114,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 08 - Education and Sports Development.pdf
 vote_number: 8
+vote_primary:
+  name: Education and Sports Development
+  slug: education-and-sports-development
+  url_path: /2017-18/provincial/north-west/departments/education-and-sports-development

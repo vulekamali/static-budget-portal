@@ -38,6 +38,7 @@ intro: "## Vision\n\nChampioning social transformation.\r\n\r\n\r\n\n\n## Missio
   \ inter participation and cooperation within all spheres of\r\ngovernment;\r\n\r\
   \n* Promoting Sport, Arts, Culture and Recreation tourism within and into the Free\r\
   \nState province.\r\n\r\n"
+is_vote_primary: true
 name: Sport, Arts, Culture and Recreation
 organisational_unit: department
 programmes:
@@ -65,3 +66,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 12 - Sport, Arts, Culture and Recreation.pdf
 vote_number: 12
+vote_primary:
+  name: Sport, Arts, Culture and Recreation
+  slug: sport-arts-culture-and-recreation
+  url_path: /2016-17/provincial/free-state/departments/sport-arts-culture-and-recreation

@@ -18,10 +18,10 @@ financial_years:
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Government Communication and Information System
+    name: Public Service Commission
     organisational_unit: department
-    slug: government-communication-and-information-system
-    url_path: /2017-18/national/departments/government-communication-and-information-system
+    slug: public-service-commission
+    url_path: /2017-18/national/departments/public-service-commission
   id: 2017-18
   is_selected: true
 government:
@@ -29,38 +29,45 @@ government:
   slug: south-africa
 government_functions:
 - General public services
-intro: "## Department purpose\r\n\r\nProvide a comprehensive communication service\
-  \ on behalf of government to facilitate the involvement of the majority of South\
-  \ Africans in governance, reconstruction and development, nation building, and reconciliation.\r\
-  \n\r\n## Mandate\r\n\r\nThe mandate of the Government Communication and Information\
-  \ System is derived from section 195(g) of the Constitution, which stipulates that\
-  \ the public should be provided with information that is timely, accurate and accessible.\
-  \ This is in support of the constitutional principles of freedom of expression,\
-  \ transparency and openness of government. The department is responsible for providing\
-  \ strategic leadership and coordinating government communication to ensure that\
-  \ the public is informed and have access to government programmes and policies that\
-  \ benefit them."
-name: Government Communication and Information System
+intro: "## Department purpose\r\n\r\nPromote constitutional values and principles\
+  \ of public administration in the public service.\r\n\r\n## Mandate\r\n\r\nThe Public\
+  \ Service Commission is an independent institution established in terms of chapter\
+  \ 10 of the\r\nConstitution. The commission derives its mandate from sections 195\
+  \ and 196 of the Constitution and is tasked and empowered, either of its own accord\
+  \ or if it receives any complaint, to investigate, monitor and evaluate the organisation\
+  \ and administration of the public service. The mandate also requires the commission\
+  \ to: evaluate the performance of government programmes and promote measures throughout\
+  \ the public service, which ensure effective and efficient performance within the\
+  \ public service; and promote the values and principles of public administration\
+  \ as set out in the Constitution."
+is_vote_primary: false
+name: Public Service Commission
 organisational_unit: department
 programmes:
 - name: Administration
-  total_budget: 154316000.0
-- name: Content Processing and Dissemination
-  total_budget: 140367000.0
-- name: Intergovernmental Coordination and Stakeholder Management
-  total_budget: 110067000.0
+  total_budget: 115019000.0
+- name: Leadership and Management Practices
+  total_budget: 43078000.0
+- name: Monitoring and Evaluation
+  total_budget: 36766000.0
+- name: Integrity and Anti-Corruption
+  total_budget: 50801000.0
 selected_financial_year: 2017-18
-slug: government-communication-and-information-system
+slug: public-service-commission
 sphere:
   name: National
   slug: national
 treasury_datasets:
-  ENE for Vote 03 - Communications:
+  ENE for Vote 10 - Public Service and Administration:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
     formats:
     - format: XLSX
-      url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote03_ChapterTables.xlsx
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote10_ChapterTables.xlsx
     - format: PDF
-      url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2003%20Communications.pdf
-vote_number: 3
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2010%20Public%20Service%20and%20Administration.pdf
+vote_number: 10
+vote_primary:
+  name: Public Service and Administration
+  slug: public-service-and-administration
+  url_path: /2017-18/national/departments/public-service-and-administration

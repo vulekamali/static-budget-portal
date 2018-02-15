@@ -48,6 +48,7 @@ intro: "## Vote purpose\n\n_Provide policy formulation for, as well as coordinat
   \ leadership in job\ncreation initiatives through the implementation of the expanded\
   \ public works\nprogramme. Public works is constitutionally designated as a concurrent\n\
   function exercised by the national and provincial spheres of government.\n\n"
+is_vote_primary: true
 name: Public Works
 organisational_unit: department
 programmes:
@@ -76,3 +77,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2011%20Public%20Works.pdf
 vote_number: 11
+vote_primary:
+  name: Public Works
+  slug: public-works
+  url_path: /2017-18/national/departments/public-works

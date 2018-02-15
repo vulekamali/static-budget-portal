@@ -49,6 +49,7 @@ intro: "## Vision\n\nA caring and self reliat society.\r\n\r\n\n\n## Mission\n\n
   \ children;\r\n\r\n* Provision of reunification and preservation services for familie;and\r\
   \n\r\n* Provision of youth development and sustainable livelihood services to poor\
   \ households through the implementation of the War on Poverty (WoP) programme."
+is_vote_primary: true
 name: Social Development
 organisational_unit: department
 programmes:
@@ -78,3 +79,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 06 - Social Development.pdf
 vote_number: 6
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2017-18/provincial/gauteng/departments/social-development

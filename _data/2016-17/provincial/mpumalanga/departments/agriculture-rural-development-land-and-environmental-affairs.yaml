@@ -42,6 +42,7 @@ intro: "## Vision\r\n\r\nVibrant, equitable, and sustainable urban and rural com
   \ Strategy (Integrated resource management)\r\n\r\n* Provincial Comprehensive Rural\
   \ Development Strategy\r\n\r\n* Protect and enhance our environmental assets and\
   \ natural resources\r\n\r\n* Rural Development"
+is_vote_primary: true
 name: Agriculture, Rural Development, Land and Environmental Affairs
 organisational_unit: department
 programmes:
@@ -79,3 +80,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 05 - Agriculture, Rural deve, Land and Environ.pdf
 vote_number: 5
+vote_primary:
+  name: Agriculture, Rural Development, Land and Environmental Affairs
+  slug: agriculture-rural-development-land-and-environmental-affairs
+  url_path: /2016-17/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs

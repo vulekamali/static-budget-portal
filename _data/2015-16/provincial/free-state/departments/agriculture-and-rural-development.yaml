@@ -40,6 +40,7 @@ intro: "## Vision\n\nThe vision of the Free State Department of Agriculture and 
   \ These values are:\r\n\r\n* Commitment to Good Governance;\r\n\r\n* Equitable use\
   \ of scarce resources;\r\n\r\n* Transparency and Accountability to stakeholders;\r\
   \n\r\n* Dedication, Integrity, Professionalism"
+is_vote_primary: true
 name: Agriculture and Rural Development
 organisational_unit: department
 programmes:
@@ -75,3 +76,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 11 - Agriculture and Rural Development.pdf
 vote_number: 11
+vote_primary:
+  name: Agriculture and Rural Development
+  slug: agriculture-and-rural-development
+  url_path: /2015-16/provincial/free-state/departments/agriculture-and-rural-development

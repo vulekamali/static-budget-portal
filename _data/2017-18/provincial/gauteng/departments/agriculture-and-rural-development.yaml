@@ -40,6 +40,7 @@ intro: "## Vision\n\nAn economically transformed and agricultural sector and sus
   \n* Ensure an environment that supports humman wellbeing\r\n* conserve the environment;\r\
   \n\r\n* Ensure provision of sufficient food and watre;and\r\n\r\n* Ensure provision\
   \ of veterinary services in the province."
+is_vote_primary: true
 name: Agriculture and Rural Development
 organisational_unit: department
 programmes:
@@ -65,3 +66,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 11 - Agriculture and Rural Development.pdf
 vote_number: 11
+vote_primary:
+  name: Agriculture and Rural Development
+  slug: agriculture-and-rural-development
+  url_path: /2017-18/provincial/gauteng/departments/agriculture-and-rural-development

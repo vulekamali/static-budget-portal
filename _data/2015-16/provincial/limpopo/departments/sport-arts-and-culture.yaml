@@ -37,6 +37,7 @@ intro: "## Vision\n\nA champion of Sport, Arts, Culture and Heritage Services fo
   \ building through sport, arts and culture.\r\n* Increased social cohesion and national\
   \ identity.\r\n\r\n* To promote governance; and quality of social services through\
   \ arts, culture and sport"
+is_vote_primary: true
 name: Sport, Arts and Culture
 organisational_unit: department
 programmes:
@@ -64,3 +65,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 13 - Sport, Art & Culture.pdf
 vote_number: 13
+vote_primary:
+  name: Sport, Arts and Culture
+  slug: sport-arts-and-culture
+  url_path: /2015-16/provincial/limpopo/departments/sport-arts-and-culture

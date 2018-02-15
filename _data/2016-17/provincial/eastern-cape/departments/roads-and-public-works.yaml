@@ -41,6 +41,7 @@ intro: "## vision\n\nLeader in the provision  of high services in infrastructure
   \ act 2007 (GIAMA)\r\n\r\n* Implement the accelerated and safe, affordable movement\
   \ of people goods and services through the delivery and maintanance of transport\
   \ infrastructure\r\n\r\n\r\n"
+is_vote_primary: true
 name: Roads and Public Works
 organisational_unit: department
 programmes:
@@ -68,3 +69,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 05 - Road and Public works.pdf
 vote_number: 5
+vote_primary:
+  name: Roads and Public Works
+  slug: roads-and-public-works
+  url_path: /2016-17/provincial/eastern-cape/departments/roads-and-public-works

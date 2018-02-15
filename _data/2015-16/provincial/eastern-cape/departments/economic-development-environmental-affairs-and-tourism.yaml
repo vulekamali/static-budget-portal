@@ -40,6 +40,7 @@ intro: "## Vision\n\nA Province where economic growth and sound environmental ma
   \ betting regulations, trade inspections and\r\nregulate the liquor industry; and\r\
   \n\r\n* To develop regulatory frameworks and monitor the implementation of policy\
   \ for the protection of\r\nbiodiversity and the environment in the province."
+is_vote_primary: true
 name: Economic Development, Environmental Affairs and Tourism
 organisational_unit: department
 programmes:
@@ -65,3 +66,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 09 - Eco Dev, Environ Affairs and Tourism.pdf
 vote_number: 9
+vote_primary:
+  name: Economic Development, Environmental Affairs and Tourism
+  slug: economic-development-environmental-affairs-and-tourism
+  url_path: /2015-16/provincial/eastern-cape/departments/economic-development-environmental-affairs-and-tourism

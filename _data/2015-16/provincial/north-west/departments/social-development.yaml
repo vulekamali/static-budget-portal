@@ -34,6 +34,7 @@ intro: "## Vision\n\nA Caring and Self-reliant Society.\r\n\r\n\n\n## Mission\n\
   \nPromotion of Community Participation\r\n\r\nThe Department is committed to promotion\
   \ of community participation through information dissemination, community planning,\
   \ social mobilization, institution building and partnership development.\r\n"
+is_vote_primary: true
 name: Social Development
 organisational_unit: department
 programmes:
@@ -65,3 +66,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 12 - Social Development.pdf
 vote_number: 12
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2015-16/provincial/north-west/departments/social-development

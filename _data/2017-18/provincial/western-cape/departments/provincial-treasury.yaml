@@ -43,6 +43,7 @@ intro: "## Vision\n\nGood financial governance.\r\n\r\n\n\n## Mission\n\n* To im
   \ fiscal resources effectively;\r\n\r\n* To facilitate the effective and efficient\
   \ management of assets and financial systems; and\r\n\r\n* To promote accountability\
   \ in financial activities and compliance with financial norms and  standards."
+is_vote_primary: true
 name: Provincial Treasury
 organisational_unit: department
 programmes:
@@ -70,3 +71,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 03 - Provincial Treasury.pdf
 vote_number: 3
+vote_primary:
+  name: Provincial Treasury
+  slug: provincial-treasury
+  url_path: /2017-18/provincial/western-cape/departments/provincial-treasury

@@ -33,6 +33,7 @@ intro: "## Vision\n\nTransformed developmental local governance and integrated s
   \ Statement\n\nTo plan and promote integrated and sustainable human settlements\
   \ and ensure quality service\r\ndelivery through cooperation and good governance\
   \ with municipalities."
+is_vote_primary: true
 name: Local Government and Human Settlements
 organisational_unit: department
 programmes:
@@ -62,3 +63,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 09 - Local Government and Human Settlements.pdf
 vote_number: 9
+vote_primary:
+  name: Local Government and Human Settlements
+  slug: local-government-and-human-settlements
+  url_path: /2016-17/provincial/north-west/departments/local-government-and-human-settlements

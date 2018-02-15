@@ -39,6 +39,7 @@ intro: "## Vision\n\nA prosperous province with a quality of life for all.\r\n\r
   \ the performance of government by making the public service and local government\
   \ a career of choice.\r\n\r\n* Improved performance through strategic and coordinated\
   \ skills development for improved service delivery and economic growth in the province."
+is_vote_primary: true
 name: Office of the Premier
 organisational_unit: department
 programmes:
@@ -64,3 +65,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 01 - Office of the Premier.pdf
 vote_number: 1
+vote_primary:
+  name: Office of the Premier
+  slug: office-of-the-premier
+  url_path: /2016-17/provincial/northern-cape/departments/office-of-the-premier

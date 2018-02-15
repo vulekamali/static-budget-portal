@@ -39,6 +39,7 @@ intro: "## Vision\n\nAn activist Legislature advancing the aspirations of the pe
   \ and execution of our mandate/roles both of support and oversight\r\n\r\n* Always\
   \ open to scrutiny\r\n\r\n* Value our stakeholders and considerate, caring and timely\r\
   \n\r\n* Promote and embrace change and new ideas"
+is_vote_primary: true
 name: Provincial Legislature
 organisational_unit: department
 programmes:
@@ -64,3 +65,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 02 - Provincial Legislature.pdf
 vote_number: 2
+vote_primary:
+  name: Provincial Legislature
+  slug: provincial-legislature
+  url_path: /2016-17/provincial/northern-cape/departments/provincial-legislature

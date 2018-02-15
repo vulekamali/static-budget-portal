@@ -42,6 +42,7 @@ intro: "## Vote purpose\n\n_Strengthen judicial governance and independence by r
   \ and norms and standards; support the judicial function of\nthe Constitutional\
   \ Court; and support the Judicial Service Commission and\nSouth African Judicial\
   \ Education Institute in the execution of their mandates.\n\n"
+is_vote_primary: true
 name: Office of the Chief Justice and Judicial Administration
 organisational_unit: department
 programmes:
@@ -68,3 +69,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2022%20Office%20of%20the%20Chief%20Justice%20and%20Judicial%20Administration.pdf
 vote_number: 22
+vote_primary:
+  name: Office of the Chief Justice and Judicial Administration
+  slug: office-of-the-chief-justice-and-judicial-administration
+  url_path: /2017-18/national/departments/office-of-the-chief-justice-and-judicial-administration

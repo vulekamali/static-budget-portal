@@ -33,6 +33,7 @@ intro: "## Vision\n\nA Healthy Developed Society\r\n\r\n\n\n## Mission\n\nThe Mp
   \ of all people of Mpumalanga by providing needs based, people centred, equitable\
   \ health care delivery system through an integrated network of health care services\
   \ provided by a cadre of dedicated and well skilled health workers."
+is_vote_primary: true
 name: Health
 organisational_unit: department
 programmes:
@@ -68,3 +69,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 10 - Health.pdf
 vote_number: 10
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2015-16/provincial/mpumalanga/departments/health

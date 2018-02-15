@@ -44,6 +44,7 @@ intro: "## Vision\r\n\r\nA prosperous society and a growing economy.\r\n\r\n\r\n
   \ policy administration, BBBEE policy compliance, gambling amongst others); and\r\
   \n\r\n* Economic development planning & coordination including LED, IDPs, cluster\
   \ management; and Project management"
+is_vote_primary: true
 name: Economy and Enterprise Development
 organisational_unit: department
 programmes:
@@ -70,3 +71,7 @@ treasury_datasets:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/981d7c0c-e43c-4f8c-83b1-2675a66ceefc/resource/f5d39468-8b6c-43c8-bda2-e462b85b8d71/download/nw-economy-and-enterprise-development.xlsx
 vote_number: 6
+vote_primary:
+  name: Economy and Enterprise Development
+  slug: economy-and-enterprise-development
+  url_path: /2015-16/provincial/north-west/departments/economy-and-enterprise-development

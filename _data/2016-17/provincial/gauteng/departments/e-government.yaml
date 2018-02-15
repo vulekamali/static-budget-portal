@@ -40,6 +40,7 @@ intro: "## Vision\n\nAconnected Gauteng City-Region that leverages technology to
   \u2022 To improve and provide customer driven HR services;\r\n\r\n\u2022 To implement\
   \ e-Recruitment solution for job seekers; and\r\n\r\n\u2022 To deploy HR systems\
   \ in the province."
+is_vote_primary: true
 name: E-Government
 organisational_unit: department
 programmes:
@@ -67,3 +68,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 13 - E-Government.pdf
 vote_number: 13
+vote_primary:
+  name: E-Government
+  slug: e-government
+  url_path: /2016-17/provincial/gauteng/departments/e-government

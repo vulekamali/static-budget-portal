@@ -42,6 +42,7 @@ intro: "## Vote purpose\n\n_Drive investment, productivity and transformation in
   \ of creating jobs, and enhancing equity and\ntransformation. The department does\
   \ not directly execute programmes but seeks\nto use state ownership in the economy\
   \ to support the achievement these\nobjectives.\n\n"
+is_vote_primary: true
 name: Public Enterprises
 organisational_unit: department
 programmes:
@@ -66,3 +67,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2009%20Public%20Enterprises.pdf
 vote_number: 9
+vote_primary:
+  name: Public Enterprises
+  slug: public-enterprises
+  url_path: /2017-18/national/departments/public-enterprises

@@ -55,6 +55,7 @@ intro: "## Vote purpose\n\n_Contribute to sustainable economic development and e
   \n  * enhance archives and records management structures and systems and promote\
   \ access to information\n\n  * provide leadership to the art and culture sector\
   \ so as to accelerate its transformation.\n\n  \n\n"
+is_vote_primary: true
 name: Arts and Culture
 organisational_unit: department
 programmes:
@@ -83,3 +84,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2037%20Arts%20and%20Culture.pdf
 vote_number: 37
+vote_primary:
+  name: Arts and Culture
+  slug: arts-and-culture
+  url_path: /2017-18/national/departments/arts-and-culture

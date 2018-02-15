@@ -43,6 +43,7 @@ intro: "## Vision\r\n\r\nTo be a modern and transformative legislature that fost
   \ exercise oversight over the executive and the organs of the state. The GPL is\
   \ also responsible for furthering\r\ncooperative governance between provincial,\
   \ national and local legislative institutions."
+is_vote_primary: true
 name: Gauteng Provincial Legislature
 organisational_unit: department
 programmes:
@@ -72,3 +73,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 02 - Provincial Legislature.pdf
 vote_number: 2
+vote_primary:
+  name: Gauteng Provincial Legislature
+  slug: gauteng-provincial-legislature
+  url_path: /2015-16/provincial/gauteng/departments/gauteng-provincial-legislature

@@ -39,6 +39,7 @@ intro: "## Vision\n\nThe department\u2019s vision is: A thriving economy through
   \ work to keep the required level of operation and the payment of property rates.\r\
   \n\r\n* The alienation of public buildings and land, including the disposal of fixed\
   \ assets by selling, demolition, exchanging and donation."
+is_vote_primary: true
 name: Public Works
 organisational_unit: department
 programmes:
@@ -64,3 +65,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
         - Vote 14 - Public Works.pdf
 vote_number: 14
+vote_primary:
+  name: Public Works
+  slug: public-works
+  url_path: /2015-16/provincial/kwazulu-natal/departments/public-works

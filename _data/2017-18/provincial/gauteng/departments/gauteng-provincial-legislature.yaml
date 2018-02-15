@@ -47,6 +47,7 @@ intro: "## Vision\r\n\r\nA modern and transformative legislature that fosters pu
   \ legislation with the exception of money billd. Section 118 ststes that the GPL\
   \ must ensure public participations in legislative processes by ensuring that the\
   \ public has access to and is involves with the processes"
+is_vote_primary: true
 name: Gauteng Provincial Legislature
 organisational_unit: department
 programmes:
@@ -76,3 +77,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 02 - Provincial Legislature.pdf
 vote_number: 2
+vote_primary:
+  name: Gauteng Provincial Legislature
+  slug: gauteng-provincial-legislature
+  url_path: /2017-18/provincial/gauteng/departments/gauteng-provincial-legislature

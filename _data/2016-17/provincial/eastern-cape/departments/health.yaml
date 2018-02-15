@@ -49,6 +49,7 @@ intro: "## Vision\n\nA quality health service to the people of the eastern cape 
   \ of the national and provincial development plan\r\n(NDP), the medium term strategic\
   \ framework(2014-1019), the ministers negotiated\r\nservice delivary agreement (NSDA)\
   \ and , national health council priorities\r\n\r\n\r\n"
+is_vote_primary: true
 name: Health
 organisational_unit: department
 programmes:
@@ -84,3 +85,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 03 - Health.pdf
 vote_number: 3
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2016-17/provincial/eastern-cape/departments/health
