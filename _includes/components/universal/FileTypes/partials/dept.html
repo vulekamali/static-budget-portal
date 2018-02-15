@@ -12,8 +12,14 @@
           <div class="FileTypes-text">{{ item[1].description }}</div>
           {% for format in item[1].formats %}
 
+            {% if (format.format == 'XLSX') or (format.format == 'XLS') or (format.format == 'XLSXM') %}
+              {% assign newFormat = 'Excel' %}
+            {% else %}
+              {% assign newFormat = format.format %}
+            {% endif %}
+
             <a class="FileTypes-link" href="{{ format.url }}">
-              <span class="FileTypes-itemTitle">{{ title }} ({{ format.format }})</span>
+              <span class="FileTypes-itemTitle">{{ title }} ({{ newFormat}})</span>
               <span class="FileTypes-iconArea">
                 <span class="FileTypes-logoWrap">
                   <svg class="Icon is-12" width="0" height="0" xmlns="http://www.w3.org/2000/svg" viewbox="157 347 100 100">
