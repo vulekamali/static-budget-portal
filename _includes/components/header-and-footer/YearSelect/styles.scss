@@ -137,6 +137,7 @@ $years: 3;
 }
 
 .YearSelect-link {
+  vertical-align: top;
   width: auto;
   font-size: 14px;
   text-decoration: none;
@@ -147,7 +148,7 @@ $years: 3;
   overflow: hidden;
 
   .YearSelect-item:first-child & {
-    border-radius: 0 15px 15px 0;
+    border-radius: 15px 0 0 15px;
   }
 
   .YearSelect-item:last-child & {
