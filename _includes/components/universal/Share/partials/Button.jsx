@@ -4,7 +4,8 @@ import analyticsEvents from './../../../../utilities/js/helpers/analyticsEvent.j
 
 
 export default function Button({ selected }) {
-  const url = window.location.href;
+  const url = encodeURIComponent(window.location.href);
+  const message = encodeURIComponent("SA Budget Data from vulekamali");
 
   const copyText = () => {
     analyticsEvents('send', 'social', 'email', 'share', url);
@@ -12,12 +13,12 @@ export default function Button({ selected }) {
   };
   const fbDirect = () => {
     analyticsEvents('send', 'social', 'facebook', 'share', url);
-    const win = window.open(`https://www.facebook.com/sharer/sharer.php?u=SA%20Budget%20Data%20from%20National%20Treasury%20Open%20Budget%20Data%20Portal%20%23BeyondTransparency%20${url}`, '_blank');
+    const win = window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
     win.focus();
   };
   const twDirect = () => {
     analyticsEvents('send', 'social', 'twitter', 'share', url);
-    const win = window.open(`https://twitter.com/home?status=SA%20Budget%20Data%20from%20%40TreasuryRSA%20Open%20Budget%20Data%20Portal%20%23BeyondTransparency%20${url}`, '_blank');
+    const win = window.open(`https://twitter.com/home?status=${message}%20${url}`, '_blank');
     win.focus();
   };
 
