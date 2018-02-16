@@ -10,6 +10,9 @@ function Revenue() {
       const component = componentsList[i];
       const rawItems = JSON.parse(component.getAttribute('data-info')).data;
       const link = component.getAttribute('data-link');
+      const year = component.getAttribute('data-year') || '2017-18';
+
+      console.log(year);
 
       const items = rawItems.reduce(
         (results, val) => {
@@ -22,7 +25,7 @@ function Revenue() {
       );
 
       render(
-        <RevenueMarkup {...{ items, link }} />,
+        <RevenueMarkup {...{ items, link, year }} />,
         component,
       );
     }
