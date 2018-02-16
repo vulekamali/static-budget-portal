@@ -46,8 +46,10 @@
   flex-direction: column;
   text-decoration: none;
 
-  &:hover {
-    background-color: darken(#fff, 15%);
+  &--link {
+    &:hover {
+      background-color: darken(#fff, 15%);
+    }
   }
 
   .Revenue-itemWrap:nth-of-type(4n+1) & {
