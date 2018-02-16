@@ -38,12 +38,12 @@
 
 .Graph-line {
   stroke: #4a4a4a;
-  stroke-dasharray: 100%;
-  stroke-dashoffset: 100%;
-  animation-name: expand;
-  animation-duration: 2s;
-  animation-iteration-count: 1s;
-  animation-fill-mode: forwards;
+  // stroke-dasharray: 100%;
+  // stroke-dashoffset: 100%;
+  // animation-name: expand;
+  // animation-duration: 2s;
+  // animation-iteration-count: 1s;
+  // animation-fill-mode: forwards;
 
   &:nth-of-type(1) {
     stroke: #79b43c;
