@@ -9,7 +9,7 @@ export default function Modal(props) {
 
   const selectOptions = Object.keys(languageOptions).map((language) => {
     return {
-      title: language.charAt(0).toUpperCase() + language.slice(1),
+      title: language,
       value: languageOptions[language],
     };
   });
