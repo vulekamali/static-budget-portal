@@ -37,6 +37,7 @@ intro: "## Vision\r\n\r\nTo be a pioneer and a leading department at the epi-cen
   \ services as part of an integrated transport service network.\r\n\r\n* Lead in\
   \ efforts to improve road safety through strengthened law enforcement, informing\
   \ the public about road safety issues and fostering improvements in vehicle safety."
+is_vote_primary: true
 name: Transport
 organisational_unit: department
 programmes:
@@ -66,3 +67,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 08 - Transport.pdf
 vote_number: 8
+vote_primary:
+  name: Transport
+  slug: transport
+  url_path: /2015-16/provincial/limpopo/departments/transport

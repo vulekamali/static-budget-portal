@@ -49,6 +49,7 @@ intro: "## Vote purpose\n\n_Uphold and protect the Constitution and the rule of 
   \ and enforcement\nof certain human rights; the protection of vulnerable groups;\
   \ the management\nof third-party funds; and the provision of support to chapter\_\
   9 institutions.\n\n  \n\n"
+is_vote_primary: true
 name: Justice and Constitutional Development
 organisational_unit: department
 programmes:
@@ -79,3 +80,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2021%20Justice%20and%20Constitutional%20Development.pdf
 vote_number: 21
+vote_primary:
+  name: Justice and Constitutional Development
+  slug: justice-and-constitutional-development
+  url_path: /2017-18/national/departments/justice-and-constitutional-development

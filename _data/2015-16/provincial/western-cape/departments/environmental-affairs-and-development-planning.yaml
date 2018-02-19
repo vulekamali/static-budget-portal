@@ -39,6 +39,7 @@ intro: "## Vision\n\nA resilient, sustainable, quality and inclusive living envi
   \ of the Western Cape;\r\n\r\n* Sustain the environmental quality of the Western\
   \ Cape; and\r\n\r\n* Ensure integrated environmental and land management in the\
   \ Western Cape."
+is_vote_primary: true
 name: Environmental Affairs and Development Planning
 organisational_unit: department
 programmes:
@@ -72,3 +73,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 09 - Environ Affaris and Dev Planning.pdf
 vote_number: 9
+vote_primary:
+  name: Environmental Affairs and Development Planning
+  slug: environmental-affairs-and-development-planning
+  url_path: /2015-16/provincial/western-cape/departments/environmental-affairs-and-development-planning

@@ -40,6 +40,7 @@ intro: "## Vision\n\nA united, non-racial, non-sexist, democratic and prosperous
   * Effective and efficient institutional development support services to the province;\
   \ and\r\n\r\n* To provide quality service delivery through integrated planning,\
   \ performance monitoring, evaluation and intervention."
+is_vote_primary: true
 name: Office of the Premier
 organisational_unit: department
 programmes:
@@ -65,3 +66,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 01 - Office of The Premier.pdf
 vote_number: 1
+vote_primary:
+  name: Office of the Premier
+  slug: office-of-the-premier
+  url_path: /2016-17/provincial/north-west/departments/office-of-the-premier

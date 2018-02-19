@@ -50,6 +50,7 @@ intro: "## Vision\r\n\r\nAn Inclusive, Globally Competitive Economy\r\n\r\n\r\n\
   \ the Organisational Re-design Report which paves the way for the new organisational\
   \ structure of the Department and remodeling of the Public Entities, particularly\
   \ MEGA and MTPA"
+is_vote_primary: true
 name: Economic Development and Tourism
 organisational_unit: department
 programmes:
@@ -83,3 +84,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 06 - Economic Development and Tourism.pdf
 vote_number: 6
+vote_primary:
+  name: Economic Development and Tourism
+  slug: economic-development-and-tourism
+  url_path: /2015-16/provincial/mpumalanga/departments/economic-development-and-tourism

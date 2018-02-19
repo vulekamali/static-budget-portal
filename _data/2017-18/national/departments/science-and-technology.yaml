@@ -54,6 +54,7 @@ intro: '## Vote purpose
 
 
   '
+is_vote_primary: true
 name: Science and Technology
 organisational_unit: department
 programmes:
@@ -82,3 +83,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2030%20Science%20and%20Technology.pdf
 vote_number: 30
+vote_primary:
+  name: Science and Technology
+  slug: science-and-technology
+  url_path: /2017-18/national/departments/science-and-technology

@@ -37,6 +37,7 @@ intro: "## Vote purpose\n\n_Defend and protect the Republic of South Africa, its
   \ the 1998 Defence Review\nand the 2015 South African Defence Review. The department\
   \ is required to\nprovide, manage, prepare and employ defence capabilities that\
   \ are commensurate\nwith the needs of South Africa.\n\n"
+is_vote_primary: true
 name: Defence and Military Veterans
 organisational_unit: department
 programmes:
@@ -71,3 +72,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote19.xls
 vote_number: 19
+vote_primary:
+  name: Defence and Military Veterans
+  slug: defence-and-military-veterans
+  url_path: /2016-17/national/departments/defence-and-military-veterans

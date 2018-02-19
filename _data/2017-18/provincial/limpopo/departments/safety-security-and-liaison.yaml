@@ -39,6 +39,7 @@ intro: "## Vision\n\nA safe and secure Limpopo\r\n\r\n\n\n## Mission\n\nTo inten
   \n\r\n* Improving relations between communities and the police;\r\n\r\n* Conduct\
   \ research on safety and security matters; and\r\n\r\n* Raise public awareness and\
   \ enhance public education on safety and security."
+is_vote_primary: true
 name: Safety, Security and Liaison
 organisational_unit: department
 programmes:
@@ -59,6 +60,9 @@ treasury_datasets:
     - format: XLSM
       url: https://data.vulekamali.gov.za/dataset/188d5eb6-dcf7-4dfb-bb86-25a4d830291f/resource/340fcacd-2f9f-41cf-aa64-e38f36b76b66/download/lim-safety-security-and-liaison.xlsm
     - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
-        - Vote 10 - Safety and Security.pdf
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM%20-%20Vote%2010%20-%20Safety,%20Security%20and%20Liaison.pdf
 vote_number: 10
+vote_primary:
+  name: Safety, Security and Liaison
+  slug: safety-security-and-liaison
+  url_path: /2017-18/provincial/limpopo/departments/safety-security-and-liaison

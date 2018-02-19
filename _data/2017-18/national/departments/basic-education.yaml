@@ -51,6 +51,7 @@ intro: "## Vote purpose\n\n_Develop, maintain and support a South African school
   \ discrimination\n\n  * the Employment of Educators Act\_(1998), which regulates\
   \ the professional, moral and ethical responsibilities of educators, as well as\
   \ the competency requirements for teachers.\n\n"
+is_vote_primary: true
 name: Basic Education
 organisational_unit: department
 programmes:
@@ -79,3 +80,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2014%20Basic%20Education.pdf
 vote_number: 14
+vote_primary:
+  name: Basic Education
+  slug: basic-education
+  url_path: /2017-18/national/departments/basic-education

@@ -23,6 +23,6 @@ export default function buildGroupSpaceArray(items, styling) {
     const totalLineWidth = value.length * barWidth;
     const totalText = charLineHeight * lines.length;
 
-    return totalGutters + totalLineWidth + totalText + groupMargin + titleSpace;
+    return totalGutters + totalLineWidth + totalText + groupMargin;
   });
 }

@@ -53,6 +53,7 @@ intro: "## Vote purpose\n\n_Develop information and communication technology (IC
   \n  * the South Africa Post Office SOC Ltd Act (2011)\n\n  * the South African Postbank\
   \ Limited Act (2010)\n\n  * the State Information Technology Agency Act (1998)\n\
   \n  * the Broadband Infraco Act (2007).\n\n"
+is_vote_primary: true
 name: Telecommunications and Postal Services
 organisational_unit: department
 programmes:
@@ -81,3 +82,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2032%20Telecommunications%20and%20Postal%20Services.pdf
 vote_number: 32
+vote_primary:
+  name: Telecommunications and Postal Services
+  slug: telecommunications-and-postal-services
+  url_path: /2017-18/national/departments/telecommunications-and-postal-services

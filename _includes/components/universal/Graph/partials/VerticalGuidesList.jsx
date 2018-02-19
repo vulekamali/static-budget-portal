@@ -4,7 +4,13 @@ import VerticalGuide from './VerticalGuide.jsx';
 
 export default function VerticalGuidesList({ styling, totalGroupSpace }) {
   const { labelBreakpoints } = styling;
-  const breakpointArray = '_'.repeat(labelBreakpoints).split('');
+
+  let breakpointArray = [];
+
+  for (let i = 0; i < labelBreakpoints; i++) {
+    breakpointArray.push('');
+  }
+
   // const { buffer, padding } = styling;
 
   return (

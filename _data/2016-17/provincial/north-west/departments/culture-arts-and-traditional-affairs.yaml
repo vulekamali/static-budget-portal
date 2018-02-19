@@ -48,6 +48,7 @@ intro: "## Vision\n\nA thriving arts, culture and traditional affairs sector con
   \ also provides support to the institutions of traditional leadership through\r\n\
   workshops and grants so as to contribute to a transformed, functional, accountable\
   \ and\r\nsustainable institution of traditional leadership."
+is_vote_primary: true
 name: Culture, Arts and Traditional Affairs
 organisational_unit: department
 programmes:
@@ -77,3 +78,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 04 - Culture, Arts and Traditional Affairs.pdf
 vote_number: 4
+vote_primary:
+  name: Culture, Arts and Traditional Affairs
+  slug: culture-arts-and-traditional-affairs
+  url_path: /2016-17/provincial/north-west/departments/culture-arts-and-traditional-affairs

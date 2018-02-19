@@ -42,6 +42,7 @@ intro: '## Vote purpose
 
 
   '
+is_vote_primary: true
 name: Parliament
 organisational_unit: department
 programmes:
@@ -72,3 +73,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2002%20Parliament.pdf
 vote_number: 2
+vote_primary:
+  name: Parliament
+  slug: parliament
+  url_path: /2017-18/national/departments/parliament

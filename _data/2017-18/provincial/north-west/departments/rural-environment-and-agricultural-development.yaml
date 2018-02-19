@@ -38,6 +38,7 @@ intro: "## Vision\n\nVibrant and prosperous society in harmony with our natural 
   \ Rural Development Programme;\r\n\r\n* Creating decent employment through Inclusive\
   \ Economic Growth; and\r\n\r\n* Protecting and Enhancing Environmental Assets and\
   \ Natural Resources."
+is_vote_primary: true
 name: Rural Environment and Agricultural Development
 organisational_unit: department
 programmes:
@@ -72,6 +73,9 @@ treasury_datasets:
     - format: XLSM
       url: https://data.vulekamali.gov.za/dataset/82b4c8ec-e041-4a12-95fc-48662316eb8d/resource/a6ef8951-3cb3-489d-8426-867e6f50ff96/download/nw-rural-env.-and-agricultural-dev..xlsm
     - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
-        - Vote 13 - Rural Environment and Agricultural Development.pdf
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW%20-%20Vote%2013%20-%20Rural,%20Environment%20and%20Agricultural%20Development.pdf
 vote_number: 13
+vote_primary:
+  name: Rural Environment and Agricultural Development
+  slug: rural-environment-and-agricultural-development
+  url_path: /2017-18/provincial/north-west/departments/rural-environment-and-agricultural-development

@@ -36,6 +36,7 @@ intro: "## Vision\r\n\r\nTo be a leading department enabling the Western Cape Go
   \ performs a strategic leading role through strategic goal 5: \u201CEmbed good\r\
   \ngovernance and integrated service delivery through partnerships and spatial alignment\u201D\
   , it will focus on the\r\nfollowing main services:"
+is_vote_primary: true
 name: Premier
 organisational_unit: department
 programmes:
@@ -65,3 +66,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 01 - Office of the Premier.pdf
 vote_number: 1
+vote_primary:
+  name: Premier
+  slug: premier
+  url_path: /2016-17/provincial/western-cape/departments/premier

@@ -40,6 +40,7 @@ intro: "## Vote purpose\n\n_Promote and regulate the minerals and mining sector 
   \ and Mining Policy for South Africa, which ensures the transparent and efficient\
   \ regulation of South Africa\u2019s mineral resources and mineral industry to meet\
   \ national objectives and bring optimum benefit to the nation.\n\n"
+is_vote_primary: true
 name: Mineral Resources
 organisational_unit: department
 programmes:
@@ -66,3 +67,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2029%20Mineral%20Resources.pdf
 vote_number: 29
+vote_primary:
+  name: Mineral Resources
+  slug: mineral-resources
+  url_path: /2017-18/national/departments/mineral-resources

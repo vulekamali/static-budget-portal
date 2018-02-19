@@ -51,6 +51,7 @@ intro: "## Vision\n\nA Safe, secure, crime and road accident free Mpumalanga Pro
   \nand develop policy interventions through research on policing matters.\r\n\r\n\
   * To provide transport regulation and road safety in the province\r\n\r\n* To coordinate\
   \ security services in the Province"
+is_vote_primary: true
 name: Community Safety, Security and Liaison
 organisational_unit: department
 programmes:
@@ -78,3 +79,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 09 - Community Safety, Security and Liaison.pdf
 vote_number: 9
+vote_primary:
+  name: Community Safety, Security and Liaison
+  slug: community-safety-security-and-liaison
+  url_path: /2017-18/provincial/mpumalanga/departments/community-safety-security-and-liaison

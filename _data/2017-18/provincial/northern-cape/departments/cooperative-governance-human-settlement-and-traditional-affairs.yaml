@@ -46,6 +46,7 @@ intro: "## Vision\n\nPeople of the Northern Cape living in integrated human sett
   \ of local and provincial development planning;\r\n\r\n* To promote, monitor and\
   \ support integrated development and planning;\r\n\r\n* To facilitate, monitor and\
   \ support sustainable governance and accountability\r\n\r\n"
+is_vote_primary: true
 name: Cooperative Governance, Human Settlement and Traditional Affairs
 organisational_unit: department
 programmes:
@@ -70,6 +71,9 @@ treasury_datasets:
     - format: XLSM
       url: https://data.vulekamali.gov.za/dataset/b6eae322-5b89-416b-a8fc-a53438b45eaf/resource/a04472b5-84dc-4bfa-b1d7-66b8d53a7364/download/nc-cog-hs-and-trad.-affairs.xlsm
     - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
-        - Vote 09 - COGTA.pdf
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC%20-%20Vote%2009%20-%20Coop%20Gov.,%20HS%20and%20Trad.%20Affairs.pdf
 vote_number: 9
+vote_primary:
+  name: Cooperative Governance, Human Settlement and Traditional Affairs
+  slug: cooperative-governance-human-settlement-and-traditional-affairs
+  url_path: /2017-18/provincial/northern-cape/departments/cooperative-governance-human-settlement-and-traditional-affairs

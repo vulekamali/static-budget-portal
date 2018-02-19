@@ -39,6 +39,7 @@ intro: "## Vision\n\nGrowth and quality of life through safety and security.\r\n
   \ community;\r\n* Assess the effectiveness of visible policing; and\r\n* Liaise\
   \ with the Cabinet member responsible for policing with respect to crime and policing\
   \ in the\r\nprovince.\r\n"
+is_vote_primary: true
 name: Safety and Liaison
 organisational_unit: department
 programmes:
@@ -62,3 +63,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 15 - Safety and Liaison.pdf
 vote_number: 15
+vote_primary:
+  name: Safety and Liaison
+  slug: safety-and-liaison
+  url_path: /2015-16/provincial/eastern-cape/departments/safety-and-liaison

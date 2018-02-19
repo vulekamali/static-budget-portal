@@ -57,6 +57,7 @@ intro: "## Vision\n\nA leader in the creation and co-ordination of safe, secure 
   \ as ensuring safety on our roads users through effective traffic law enforcement\
   \ and effectively overseeing the functions of the South African police services\
   \ (SAPS).\r\n\r\n"
+is_vote_primary: true
 name: Transport, Safety and Liaison
 organisational_unit: department
 programmes:
@@ -84,3 +85,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 03 - Transport, Safety and Liaison.pdf
 vote_number: 3
+vote_primary:
+  name: Transport, Safety and Liaison
+  slug: transport-safety-and-liaison
+  url_path: /2017-18/provincial/northern-cape/departments/transport-safety-and-liaison

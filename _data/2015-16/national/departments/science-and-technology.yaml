@@ -35,6 +35,7 @@ intro: "## Vote purpose\n\n_Realise the full potential of science and technology
   \ the national\nresearch and development strategy and the 10-year innovation plan.\
   \ The plan\naims to make science and technology a driving force in enhancing productivity,\n\
   economic growth and socioeconomic development.\n\n"
+is_vote_primary: true
 name: Science and Technology
 organisational_unit: department
 programmes:
@@ -63,3 +64,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote30.xls
 vote_number: 30
+vote_primary:
+  name: Science and Technology
+  slug: science-and-technology
+  url_path: /2015-16/national/departments/science-and-technology

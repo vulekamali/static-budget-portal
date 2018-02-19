@@ -50,6 +50,7 @@ intro: "## Vote purpose\n\n_Create an enabling environment for the provision of 
   \ joint responsibility with the Minister of Telecommunications and Postal Services.\n\
   \nThe department is also responsible for the oversight of the entities within\n\
   its portfolio.\n\n"
+is_vote_primary: true
 name: Communications
 organisational_unit: department
 programmes:
@@ -76,3 +77,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote03.xls
 vote_number: 3
+vote_primary:
+  name: Communications
+  slug: communications
+  url_path: /2016-17/national/departments/communications

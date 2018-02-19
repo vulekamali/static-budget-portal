@@ -32,6 +32,7 @@ intro: "## Vision \n\nA prosperous society living sustainably with the natural e
   \ \r\n\r\n\n\n## Mission \n\nConserve and protect the natural environment for the\
   \ benefit, enjoyment and welfare of present and future generations by integrating\
   \ sustainable utilization with socio-economic development.\r\n\r"
+is_vote_primary: true
 name: Environment and Nature Conservation
 organisational_unit: department
 programmes:
@@ -63,3 +64,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
         - Vote 13 - Environment & Nature Conservation.pdf
 vote_number: 13
+vote_primary:
+  name: Environment and Nature Conservation
+  slug: environment-and-nature-conservation
+  url_path: /2016-17/provincial/northern-cape/departments/environment-and-nature-conservation

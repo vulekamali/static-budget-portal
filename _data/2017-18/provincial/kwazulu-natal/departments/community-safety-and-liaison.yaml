@@ -42,6 +42,7 @@ intro: "## Vision\n\nThe department\u2019s vision is to see that: The people of 
   \ needs and priorities.\r\n\r\n* Facilitating the development and co-ordination\
   \ of social crime prevention initiatives.\r\n\r\n* Promoting and supporting victim\
   \ empowerment\r\n"
+is_vote_primary: true
 name: Community Safety and Liaison
 organisational_unit: department
 programmes:
@@ -62,6 +63,9 @@ treasury_datasets:
     - format: XLSM
       url: https://data.vulekamali.gov.za/dataset/ec9a427c-38c8-46f5-9b9b-673d0f97b921/resource/1226b5bc-ff8d-4c7a-8170-a0d25950fa73/download/kzn-com-safety-and-lia.xlsm
     - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
-        - Vote 09 - Community Safety.pdf
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN%20-%20Vote%2009%20-%20Community%20Safety%20and%20Liaison.pdf
 vote_number: 9
+vote_primary:
+  name: Community Safety and Liaison
+  slug: community-safety-and-liaison
+  url_path: /2017-18/provincial/kwazulu-natal/departments/community-safety-and-liaison

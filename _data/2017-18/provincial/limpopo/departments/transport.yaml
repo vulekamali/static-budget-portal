@@ -57,6 +57,7 @@ intro: "## Vision\n\nTo be a pioneer and leading department at the epi-centre of
   \ in the employment of youth and women in transport sectors by employing income\
   \ generating and labour-intensive methodologies for all infrastructure projects;\
   \ and\r\n\r\n* Developing and managing airports in the province.\r\n"
+is_vote_primary: true
 name: Transport
 organisational_unit: department
 programmes:
@@ -86,3 +87,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 08 - Transport.pdf
 vote_number: 8
+vote_primary:
+  name: Transport
+  slug: transport
+  url_path: /2017-18/provincial/limpopo/departments/transport

@@ -42,6 +42,7 @@ intro: "## Vision\n\nA prosperous society living sustainably with the natural en
   \ resources while securing representative and resilient ecosystems through scientific\
   \ research, spatial planning and cooperative governance;\r\n\r\n* To promote and\
   \ enforce compliance with environmental legislation"
+is_vote_primary: true
 name: Environment and Nature Conservation
 organisational_unit: department
 programmes:
@@ -70,6 +71,9 @@ treasury_datasets:
     - format: XLSM
       url: https://data.vulekamali.gov.za/dataset/3155dc62-5e61-4597-8d89-59c189ce50e5/resource/aa8f2f68-b7d8-46cb-8501-285acac2fc1b/download/nc-environ.-and-nature-conservation.xlsm
     - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
-        - Vote 13 - Environment & Nature Conservation.pdf
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC%20-%20Vote%2013%20-%20Environment%20and%20Nature%20Conservation.pdf
 vote_number: 13
+vote_primary:
+  name: Environment and Nature Conservation
+  slug: environment-and-nature-conservation
+  url_path: /2017-18/provincial/northern-cape/departments/environment-and-nature-conservation

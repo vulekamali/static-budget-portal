@@ -52,6 +52,7 @@ intro: "## Vision\n\nTo be the heartbeat of sound financial management that supp
   \ departments or public entities to enhance effective and efficient financial management;\r\
   \n\r\n* Issuing provincial treasury instructions; and\r\n\r\n* Preparing consolidated\
   \ financial statements for the province."
+is_vote_primary: true
 name: Provincial Treasury
 organisational_unit: department
 programmes:
@@ -78,6 +79,9 @@ treasury_datasets:
     - format: XLSM
       url: https://data.vulekamali.gov.za/dataset/83139ea7-d55b-45df-820d-80109b8fb719/resource/245dd349-348b-4808-86c9-6c7a9e63ac0f/download/nc-provincial-treasury.xlsm
     - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC
-        - Vote 08 - Treasury.pdf
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NC%20-%20Vote%2008%20-%20Provincial%20Treasury.pdf
 vote_number: 8
+vote_primary:
+  name: Provincial Treasury
+  slug: provincial-treasury
+  url_path: /2017-18/provincial/northern-cape/departments/provincial-treasury

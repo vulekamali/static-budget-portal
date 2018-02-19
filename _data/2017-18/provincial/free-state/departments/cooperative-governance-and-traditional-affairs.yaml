@@ -50,6 +50,7 @@ intro: "## Vision\n\nIntegrated, responsive and developmental local governance\r
   \ by Batho Pele principles, are:\r\n\r\n* Results-driven\r\n\r\n* Professionalism\
   \ and Integrity\r\n\r\n* Responsiveness\r\n\r\n* Accountable and Transparent\r\n\
   \r\n* Value for money\r\n\r\n* Collaborative Leadership"
+is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 organisational_unit: department
 programmes:
@@ -79,3 +80,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/FS
         - Vote 08 - Cooperative governance and Traditional Affairs.pdf
 vote_number: 8
+vote_primary:
+  name: Cooperative Governance and Traditional Affairs
+  slug: cooperative-governance-and-traditional-affairs
+  url_path: /2017-18/provincial/free-state/departments/cooperative-governance-and-traditional-affairs

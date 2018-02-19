@@ -40,6 +40,7 @@ intro: "## Department purpose\r\n\r\nPromote constitutional values and principle
   \ the public service, which ensure effective and efficient performance within the\
   \ public service; and promote the values and principles of public administration\
   \ as set out in the Constitution."
+is_vote_primary: false
 name: Public Service Commission
 organisational_unit: department
 programmes:
@@ -56,5 +57,17 @@ slug: public-service-commission
 sphere:
   name: National
   slug: national
-treasury_datasets: {}
-vote_number: 45
+treasury_datasets:
+  ENE for Vote 10 - Public Service and Administration:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/ene/ENE17-Vote10_ChapterTables.xlsx
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2010%20Public%20Service%20and%20Administration.pdf
+vote_number: 10
+vote_primary:
+  name: Public Service and Administration
+  slug: public-service-and-administration
+  url_path: /2017-18/national/departments/public-service-and-administration

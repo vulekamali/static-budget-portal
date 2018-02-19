@@ -42,7 +42,9 @@
   margin: 0;
 
   &--doubleRow {
-    column-count: 2;
+    @media screen and (min-width: 750px) {
+      column-count: 2;
+    }
   }
 }
 

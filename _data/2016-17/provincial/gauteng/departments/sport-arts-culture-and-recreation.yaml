@@ -45,6 +45,7 @@ intro: "## Vision\n\n\u201CAn active, creative and modernised Gauteng City Regio
   \ transformation of the sport, arts, culture\r\nand recreation sectors through radical\
   \ economic and accelerated social transformation that benefits all in the province,\r\
   \npromoting nation building and social cohesion."
+is_vote_primary: true
 name: Sport, Arts, Culture and Recreation
 organisational_unit: department
 programmes:
@@ -72,3 +73,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 12 - Sport, Arts, Culture and Recreation.pdf
 vote_number: 12
+vote_primary:
+  name: Sport, Arts, Culture and Recreation
+  slug: sport-arts-culture-and-recreation
+  url_path: /2016-17/provincial/gauteng/departments/sport-arts-culture-and-recreation

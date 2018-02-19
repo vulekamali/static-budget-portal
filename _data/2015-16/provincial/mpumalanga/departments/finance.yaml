@@ -34,6 +34,7 @@ intro: "## Vision\n\nA dynamic Provincial Treasury leading in service excellence
   \ financial advice and support to departments, public entities and municipalities.\r\
   \n\r\n* Efficient financial management and fiscal discipline.\r\n\r\n* Effective\
   \ monitoring of resource utilization."
+is_vote_primary: true
 name: Finance
 organisational_unit: department
 programmes:
@@ -61,3 +62,7 @@ treasury_datasets:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/0627b978-2baf-49aa-92ab-cf381b9f9907/resource/25bf0acd-7992-4fac-aaf6-9d0e36117f35/download/mpu-finance.xlsx
 vote_number: 3
+vote_primary:
+  name: Finance
+  slug: finance
+  url_path: /2015-16/provincial/mpumalanga/departments/finance

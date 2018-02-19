@@ -47,6 +47,7 @@ intro: "## Vote purpose\n\n_Uphold and protect the Constitution and the rule of 
   \ advisory services to government departments; the\npromotion, protection and enforcement\
   \ of certain human rights; the protection\nof vulnerable groups; the management\
   \ of third party funds; and support to\nchapter\_9 institutions.\n\n"
+is_vote_primary: true
 name: Justice and Constitutional Development
 organisational_unit: department
 programmes:
@@ -77,3 +78,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote21.xls
 vote_number: 21
+vote_primary:
+  name: Justice and Constitutional Development
+  slug: justice-and-constitutional-development
+  url_path: /2016-17/national/departments/justice-and-constitutional-development

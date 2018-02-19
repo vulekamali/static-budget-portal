@@ -6,12 +6,10 @@
   
   {% if include.title %}
     {% assign fullTitle = include.title | append: ' - ' | append: 'vulekamali' %}
+  {% elsif include.name %}
+    {% assign fullTitle = include.name | append: ' - ' | append: 'vulekamali' %}
   {% else %}
-    {% if include.name %}
-      {% assign fullTitle = include.name | append: ' - ' | append: 'vulekamali' %}
-    {% else %}
-      {% assign fullTitle = 'vulekamali' %}
-    {% endif %}
+    {% assign fullTitle = 'vulekamali' %}
   {% endif %}
 
   <title>{{ fullTitle }}</title>
@@ -25,6 +23,7 @@
   {% comment %} Facebook's Open Graph data {% endcomment %}
   <meta property="og:title" content="{{ fullTitle }}" />
   <meta property="og:description" content="South Africa's National and Provincial budget data from National Treasury in partnership with IMALI YETHU." />
+  <meta property="og:image" content="{{ site.url }}/assets/images/vulekamali-logo-sq-social.jpg" />
 
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link href="/{{ site.data.assets["assets/generated/main.css"] }}" rel="stylesheet">

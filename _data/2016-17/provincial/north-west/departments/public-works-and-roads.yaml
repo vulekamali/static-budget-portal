@@ -55,6 +55,7 @@ intro: "## Vision\n\nDelivery and maintenance of quality infrastructure for sust
   \ of programmes and strategies that lead to the development and empowerment of communities\
   \ and contractors. This includes the provincial management and co-ordination of\
   \ the Expanded Public Works Programme."
+is_vote_primary: true
 name: Public Works and Roads
 organisational_unit: department
 programmes:
@@ -82,3 +83,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 11 - Public Works and Roads.pdf
 vote_number: 11
+vote_primary:
+  name: Public Works and Roads
+  slug: public-works-and-roads
+  url_path: /2016-17/provincial/north-west/departments/public-works-and-roads

@@ -53,6 +53,7 @@ intro: "## Vision\n\nAn integrated transport system and infrastructure that prom
   \ time and budget.\r\n\r\n* Enhance property management.\r\n\r\n* Improve the provincial\
   \ road network.\r\n\r\n* Efficient and effective management of transport services.\r\
   \n\r\n* Coordinate, monitor and evaluate implementation of EPWP III across the Province"
+is_vote_primary: true
 name: Public Works, Roads and Transport
 organisational_unit: department
 programmes:
@@ -82,3 +83,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 08 - Public Works, Roads and Transport.pdf
 vote_number: 8
+vote_primary:
+  name: Public Works, Roads and Transport
+  slug: public-works-roads-and-transport
+  url_path: /2017-18/provincial/mpumalanga/departments/public-works-roads-and-transport

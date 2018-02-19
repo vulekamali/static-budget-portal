@@ -49,6 +49,7 @@ intro: "## Vote purpose\n\n_Play a significant role in reducing unemployment, po
   \ of sound, and responsive legislation and policies to attain labour market flexibility\
   \ for competitiveness of enterprises, balanced with the promotion of decent employment.\n\
   \n"
+is_vote_primary: true
 name: Labour
 organisational_unit: department
 programmes:
@@ -75,3 +76,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote28.xls
 vote_number: 28
+vote_primary:
+  name: Labour
+  slug: labour
+  url_path: /2016-17/national/departments/labour

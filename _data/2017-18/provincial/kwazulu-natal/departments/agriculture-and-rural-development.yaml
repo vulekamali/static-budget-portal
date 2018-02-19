@@ -36,6 +36,7 @@ intro: "## Vision\r\n\r\nThe vision of the Department of Agriculture and Rural D
   \ rural communities.\r\n\r\n\r\n\r\n## Core functions\r\n\r\nThe core functions\
   \ of the department are as follows:\r\n\r\n* Food security\r\n\r\n* Farmer development\r\
   \n\r\n* Veterinary services\r\n\r\n* Rural development\r\n\r\n* Governance"
+is_vote_primary: true
 name: Agriculture and Rural Development
 organisational_unit: department
 programmes:
@@ -58,6 +59,9 @@ treasury_datasets:
     - format: XLSM
       url: https://data.vulekamali.gov.za/dataset/15f4fb23-dcb1-4892-bc20-a6164671ee7a/resource/482d09ee-6f6d-47fc-9473-da6e7d90dccc/download/kzn-agriculture-and-rural-dev.xlsm
     - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN
-        - Vote 03 - Agriculture.pdf
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/KZN%20-%20Vote%2003%20-%20Agriculture%20and%20Rural%20Development.pdf
 vote_number: 3
+vote_primary:
+  name: Agriculture and Rural Development
+  slug: agriculture-and-rural-development
+  url_path: /2017-18/provincial/kwazulu-natal/departments/agriculture-and-rural-development

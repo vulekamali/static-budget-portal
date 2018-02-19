@@ -34,6 +34,7 @@ intro: "## Vision\n\nIntegrated sustainable human settlements and improved quali
   \ and construction of houses and other socio-economic facilities for poor communities;\r\
   \n\r\n* Collaboration with other state departments in delivery public facilities\r\
   \n\r\n* Collaboration with the private sector and other government agencies"
+is_vote_primary: true
 name: Human Settlements
 organisational_unit: department
 programmes:
@@ -61,3 +62,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 13 - Human Settlements.pdf
 vote_number: 13
+vote_primary:
+  name: Human Settlements
+  slug: human-settlements
+  url_path: /2015-16/provincial/mpumalanga/departments/human-settlements

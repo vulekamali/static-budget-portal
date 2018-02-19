@@ -53,6 +53,7 @@ intro: "## Vision\r\n\r\nThe Limpopo Legislature seeks to be a representative an
   \ Facilitate public involvement in its processes and committees through public participation\
   \ and\r\npetitions.\r\n\r\n\u2022 Provide financial and administrative assistance\
   \ to each party represented in the Legislature."
+is_vote_primary: true
 name: Provincial Legislature
 organisational_unit: department
 programmes:
@@ -80,3 +81,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 02 - Limpopo Legislature.pdf
 vote_number: 2
+vote_primary:
+  name: Provincial Legislature
+  slug: provincial-legislature
+  url_path: /2016-17/provincial/limpopo/departments/provincial-legislature

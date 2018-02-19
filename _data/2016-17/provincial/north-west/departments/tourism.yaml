@@ -36,6 +36,7 @@ intro: "## Vision\n\nLeading a dynamic, sustainable, diversified and vibrant tou
   \ heritage tourism in the North West;\r\n* Strengthening institutional capacity;\r\
   \n* Promoting good cooperative governance\r\n* Branding and marketing of North West\
   \ province as a tourism destination; and\r\n* Creativity and innovation."
+is_vote_primary: true
 name: Tourism
 organisational_unit: department
 programmes:
@@ -61,3 +62,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
         - Vote 10 - Tourism.pdf
 vote_number: 10
+vote_primary:
+  name: Tourism
+  slug: tourism
+  url_path: /2016-17/provincial/north-west/departments/tourism

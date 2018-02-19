@@ -4,7 +4,13 @@ import HorisontalGuide from './HorisontalGuide.jsx';
 
 export default function HorisontalGuideList({ styling, totalGroupSpace }) {
   const { labelBreakpoints } = styling;
-  const breakpointArray = '_'.repeat(labelBreakpoints).split('');
+
+  let breakpointArray = [];
+
+  for (let i = 0; i < labelBreakpoints; i++) {
+    breakpointArray.push('');
+  }
+
   // const { buffer, padding } = styling;
 
   return (

@@ -47,6 +47,7 @@ intro: "## Vision \n\nLeading development with excellence intergrity \r\n\r\n\n\
   \ on-goings basis; and\r\n\r\n* transforming the OTP over the medium term to a high\
   \ performance oragisastion by creating an enabling enviroment, building \r\ncapability\
   \ and empowering employees\r\n"
+is_vote_primary: true
 name: Office of the Premier
 organisational_unit: department
 programmes:
@@ -72,3 +73,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 01 - Office of the Premier.pdf
 vote_number: 1
+vote_primary:
+  name: Office of the Premier
+  slug: office-of-the-premier
+  url_path: /2016-17/provincial/eastern-cape/departments/office-of-the-premier

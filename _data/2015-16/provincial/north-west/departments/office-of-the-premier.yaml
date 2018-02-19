@@ -49,6 +49,7 @@ intro: "## Vision\n\nA dynamic, professional and responsive provincial administr
   \ and Plans;\r\n\r\n* Advocacy, Support and Capacity Building in the Implementation\
   \ of National and Provincial Policies and Plans; and\r\n\r\n* Policy influence and\
   \ coordination.\r\n\r\n"
+is_vote_primary: true
 name: Office of the Premier
 organisational_unit: department
 programmes:
@@ -71,6 +72,9 @@ treasury_datasets:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/6dd53698-a2da-4296-baeb-622d758cf064/resource/53213d77-4bed-4bac-a970-1fa6d80c73d2/download/nw-office-of-the-premier.xlsx
     - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW
-        - Vote 01- Office of the Premier.pdf
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2015/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/NW%20-%20Vote%2001%20-%20Office%20of%20the%20Premier.pdf
 vote_number: 1
+vote_primary:
+  name: Office of the Premier
+  slug: office-of-the-premier
+  url_path: /2015-16/provincial/north-west/departments/office-of-the-premier

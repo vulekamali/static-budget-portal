@@ -34,6 +34,7 @@ intro: "## Vote purpose\n\n_Lead, coordinate and oversee the transformation agen
   \ proclamation made  \nin 2014, in terms of which the department is mandated to\
   \ champion the\nachievement of women\u2019s socioeconomic empowerment and rights.\n\
   \n"
+is_vote_primary: true
 name: Women
 organisational_unit: department
 programmes:
@@ -60,3 +61,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2015/enebooklets/ENE15Chap%20tab-Vote13.xls
 vote_number: 13
+vote_primary:
+  name: Women
+  slug: women
+  url_path: /2015-16/national/departments/women

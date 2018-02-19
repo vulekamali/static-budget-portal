@@ -1,6 +1,13 @@
 <div class="Revenue">
-  <div class="Revenue-heading">Where National Government gets its money</div>
-  <div class="Revenue-container" data-info='{ "data": {{ include.info | jsonify }} }' data-link="{{ include.link }}"></div>
+  <div class="Revenue-heading">Where National Government gets its money for <nobr>{{ include.year }}</nobr></div>
+  <div 
+    class="Revenue-container"
+    data-info='{ "data": {{ include.info | jsonify }} }'
+    data-link="{{ include.link }}"
+    data-year="{{ include.year }}"
+    data-shortcuts="false"
+  >
+  </div>
 </div>
 
 

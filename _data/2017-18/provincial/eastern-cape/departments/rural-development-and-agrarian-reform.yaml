@@ -45,6 +45,7 @@ intro: "## Vision\n\nVibrant,equitable,sustainable rural communities and food se
   \ sustainable agriculture;\r\n\r\n* Invest in High Impact Projects which add value\
   \ in agriculture as a business;and\r\n\r\n* ensure that agricultural production\
   \ is supported by the latest techology and research.\r\n"
+is_vote_primary: true
 name: Rural Development and Agrarian Reform
 organisational_unit: department
 programmes:
@@ -77,6 +78,9 @@ treasury_datasets:
     - format: XLSM
       url: https://data.vulekamali.gov.za/dataset/f1b12e41-fb0f-462e-86d1-fd3ab5de77c8/resource/f1ca1b76-a644-4f9b-ac6d-b803463f59c0/download/ec-rural-dev.-and-agrarian-reform.xlsm
     - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
-        - Vote 08 - Rural Development and Agrarian Reform.pdf
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC%20-%20Vote%2008%20-%20Rural%20Dev.%20and%20Agrarian%20Reform.pdf
 vote_number: 8
+vote_primary:
+  name: Rural Development and Agrarian Reform
+  slug: rural-development-and-agrarian-reform
+  url_path: /2017-18/provincial/eastern-cape/departments/rural-development-and-agrarian-reform

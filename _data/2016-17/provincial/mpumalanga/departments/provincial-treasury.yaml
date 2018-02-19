@@ -50,6 +50,7 @@ intro: "## Vision\n\nA dynamic Provincial Treasury leading in service excellence
   \ Technology Services to\r\nDepartments, Public Entities and Municipalities in Mpumalanga\
   \ Province.\r\n\r\n*Financial Governance serves to facilitate, monitor, support\
   \ and provide professional\r\nadvice to ensure good governance in the Province."
+is_vote_primary: true
 name: Provincial Treasury
 organisational_unit: department
 programmes:
@@ -77,3 +78,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
         - Vote 03 - Provincial Treasury.pdf
 vote_number: 3
+vote_primary:
+  name: Provincial Treasury
+  slug: provincial-treasury
+  url_path: /2016-17/provincial/mpumalanga/departments/provincial-treasury

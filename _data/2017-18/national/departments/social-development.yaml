@@ -65,6 +65,7 @@ intro: "## Vote purpose\n\n_Ensure protection against vulnerability by creating 
   \ Welfare sets out the principles, guidelines, policies and programmes for developmental\
   \ social welfare in South Africa. It provides the foundation for social welfare\
   \ in the post-1994 era.\n\n"
+is_vote_primary: true
 name: Social Development
 organisational_unit: department
 programmes:
@@ -93,3 +94,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2017%20Social%20Development.pdf
 vote_number: 17
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2017-18/national/departments/social-development

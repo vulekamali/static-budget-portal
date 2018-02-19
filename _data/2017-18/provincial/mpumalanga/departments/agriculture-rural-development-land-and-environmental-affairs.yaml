@@ -45,6 +45,7 @@ intro: "## Vision\r\n\r\nVibrant, equitable, and sustainable urban and rural com
   \ through Disaster Relief Schemes\r\n\r\n* Monitor climate change through Climate\
   \ Change Response Tools\r\n\r\n* Ambient Air Quality Monitoring Stations Commissioned;\
   \ Operated And Maintained"
+is_vote_primary: true
 name: Agriculture, Rural Development, Land and Environmental Affairs
 organisational_unit: department
 programmes:
@@ -79,6 +80,9 @@ treasury_datasets:
     - format: XLSM
       url: https://data.vulekamali.gov.za/dataset/12e49641-21e5-4275-9ade-0a7dd036a505/resource/3a6e1679-6da3-4c94-900a-cc3c13ebd6ae/download/mpu-agric.-rural-dev.-land-and-env.-affairs.xlsm
     - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU
-        - Vote 05 - Agriculture, Rural deve, Land and Environ.pdf
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/MPU%20-%20Vote%2005%20-%20Agric.,%20Rural%20Dev.,%20Land%20and%20Env.%20Affairs.pdf
 vote_number: 5
+vote_primary:
+  name: Agriculture, Rural Development, Land and Environmental Affairs
+  slug: agriculture-rural-development-land-and-environmental-affairs
+  url_path: /2017-18/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs

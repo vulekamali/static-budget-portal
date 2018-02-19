@@ -48,6 +48,7 @@ intro: "## Vision\n\nProvide learners with opportunities to bece productive and 
   \ od quality education and training from Grade-R to Grade 12, the manageing of teacher\
   \ supply ,demand and utilisation and the provisioning of hight quality school infrastructure\
   \ in the Eastern Cape."
+is_vote_primary: true
 name: Education
 organisational_unit: department
 programmes:
@@ -81,3 +82,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
         - Vote 06 - Education.pdf
 vote_number: 6
+vote_primary:
+  name: Education
+  slug: education
+  url_path: /2017-18/provincial/eastern-cape/departments/education

@@ -49,6 +49,7 @@ intro: "## Vote purpose\n\n_Lead the provision of an integrated, sustainable, re
   \ responsibilities to public entities and other spheres of\ngovernment, regulating\
   \ the sector through setting norms and standards, and\nmonitoring implementation.\n\
   \n"
+is_vote_primary: true
 name: Transport
 organisational_unit: department
 programmes:
@@ -81,3 +82,7 @@ treasury_datasets:
     - format: XLS
       url: http://www.treasury.gov.za/documents/national%20budget/2016/enebooklets/ENE16Chap%20tab-Vote35.xls
 vote_number: 35
+vote_primary:
+  name: Transport
+  slug: transport
+  url_path: /2016-17/national/departments/transport

@@ -38,6 +38,7 @@ intro: "## Vision\n\nA resilient, sustainable, quality and inclusive living envi
   \ governance;\r\n\r\n* Strategically advancing environmental sustainability;\r\n\
   \r\n* Sustaining the environmental quality; and\r\n\r\n* Ensuring integrated environmental\
   \ and land management in the Western Cape."
+is_vote_primary: true
 name: Environmental Affairs and Development Planning
 organisational_unit: department
 programmes:
@@ -68,6 +69,9 @@ treasury_datasets:
     - format: XLSM
       url: https://data.vulekamali.gov.za/dataset/566130c1-0c22-49d2-aa3c-4a8cfb167115/resource/b770aecf-ee96-4252-9e17-638cbb700ace/download/wc-environ.-affairs-and-dev-planning.xlsm
     - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
-        - Vote 09 - Environmental Affairs and Development Planning.pdf
+      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC%20-%20Vote%2009%20-%20Environmental%20Affairs%20and%20Dev.%20Planning.pdf
 vote_number: 9
+vote_primary:
+  name: Environmental Affairs and Development Planning
+  slug: environmental-affairs-and-development-planning
+  url_path: /2017-18/provincial/western-cape/departments/environmental-affairs-and-development-planning

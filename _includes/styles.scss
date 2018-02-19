@@ -22,7 +22,10 @@
 @import 'utilities/scss/utility-classes/u-listItemReset';
 @import 'utilities/scss/utility-classes/u-marginTop';
 @import 'utilities/scss/utility-classes/u-marginLeft';
+@import 'utilities/scss/utility-classes/u-marginBottom';
 @import 'utilities/scss/utility-classes/u-underline';
+@import 'utilities/scss/utility-classes/u-fontWeight';
+@import 'utilities/scss/utility-classes/u-fontSize';
 
 @import 'components/universal/Tooltip/styles';
 @import 'components/universal/Page/styles';
@@ -67,6 +70,7 @@
 @import 'components/about-and-learning-centre/Contacts/styles';
 @import 'components/about-and-learning-centre/Glossary/styles';
 @import 'components/about-and-learning-centre/Videos/styles';
+@import 'components/about-and-learning-centre/Video/styles';
 
 @import 'components/cso-data-page/CsoMeta/styles';
 @import 'components/cso-data-page/CsoRelated/styles';

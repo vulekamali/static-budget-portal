@@ -45,6 +45,7 @@ intro: "## Vision\r\n\r\nA competitive economy within a sustainable environment.
   \n\r\n* Ensuring protection and sustainable natural resource management and utilisation;\r\
   \n\r\n* Providing environmental empowerment support services; and\r\n\r\n* Ensure\
   \ regulation, promotion and development of tourism in the province."
+is_vote_primary: true
 name: Economic Development, Environment and Tourism
 organisational_unit: department
 programmes:
@@ -72,3 +73,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
         - Vote 06 - Economic Dev., Environ. & Tourism.pdf
 vote_number: 6
+vote_primary:
+  name: Economic Development, Environment and Tourism
+  slug: economic-development-environment-and-tourism
+  url_path: /2017-18/provincial/limpopo/departments/economic-development-environment-and-tourism

@@ -9,7 +9,7 @@ const icon = (
 );
 
 
-export default function RevenueMarkup({ items, link }) {
+export default function RevenueMarkup({ items, link, year, shortcuts }) {
   const keys = Object.keys(items);
 
   const linkMarkup = (
@@ -23,7 +23,7 @@ export default function RevenueMarkup({ items, link }) {
 
   return (
     <div className="Revenue-box">
-      {keys.map(key => <Item title={key} value={items[key]} />)}
+      {keys.map(key => <Item title={key} value={items[key]} {...{ year, shortcuts }} />)}
       { link ? linkMarkup : null }
     </div>
   );

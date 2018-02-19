@@ -64,6 +64,7 @@ intro: '## Vote purpose
 
   * transformation, reform, innovation and any other matter to improve the effectiveness
   and efficiency of the public service and its service delivery to the public.'
+is_vote_primary: true
 name: Public Service and Administration
 organisational_unit: department
 programmes:
@@ -94,3 +95,7 @@ treasury_datasets:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2017/enebooklets/Vote%2010%20Public%20Service%20and%20Administration.pdf
 vote_number: 10
+vote_primary:
+  name: Public Service and Administration
+  slug: public-service-and-administration
+  url_path: /2017-18/national/departments/public-service-and-administration

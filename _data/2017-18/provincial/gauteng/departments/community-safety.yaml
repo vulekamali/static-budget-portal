@@ -45,6 +45,7 @@ intro: "## Vision\n\nTo realise Gauteng as a province where people feel and are 
   \ all communities in the fight against crime;\r\n\r\n* Topromote social crime prevemtion\
   \ thrugh partnerships and oter appropriate interventions;and\r\n\r\n* To provide\
   \  traffic services."
+is_vote_primary: true
 name: Community Safety
 organisational_unit: department
 programmes:
@@ -70,3 +71,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/GT
         - Vote 10 - Community Safety.pdf
 vote_number: 10
+vote_primary:
+  name: Community Safety
+  slug: community-safety
+  url_path: /2017-18/provincial/gauteng/departments/community-safety

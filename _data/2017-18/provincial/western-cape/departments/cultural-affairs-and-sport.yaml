@@ -48,6 +48,7 @@ intro: "## Vision\n\nA socially inclusive, creative, active and connected Wester
   \ heritage and promotes proper management and care of public records.\r\n\r\n* Programme\
   \ 4: Sport and Recreation provides sport and recreation activities for the inhabitants\
   \ of theWestern Cape and After School Programmes to low and no-fee schools.\r\n"
+is_vote_primary: true
 name: Cultural Affairs and Sport
 organisational_unit: department
 programmes:
@@ -75,3 +76,7 @@ treasury_datasets:
       url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/WC
         - Vote 13 - Cultural Affairs and Sport.pdf
 vote_number: 13
+vote_primary:
+  name: Cultural Affairs and Sport
+  slug: cultural-affairs-and-sport
+  url_path: /2017-18/provincial/western-cape/departments/cultural-affairs-and-sport
