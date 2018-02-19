@@ -8,12 +8,14 @@ export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, 
     const toggleOpen = () => updateItem('open', !open);
     const linkWithQuery = search ? `${data.url}?search=${search}` : data.url;
 
+    console.log(data.name);
+
     if (!data.direct) {
       return (
         <li
           className={`YearSelect-item${ data.active ? ' is-active' : '' }`}
           onClick={ data.active ? toggleOpen : null }
-          >
+        >
           <Tooltip
             block
             title="Content Unavailable"
