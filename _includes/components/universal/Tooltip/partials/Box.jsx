@@ -2,7 +2,7 @@ import { h } from 'preact';
 import Links from './Links.jsx';
 
 
-export default function Box({ title, description, actions, year, down, closeAction }) {
+export default function Box({ title, description, actions, down, closeAction }) {
   return (
     <div className="Tooltip-box">
       <div className={`Tooltip-content${down ? ' is-down' : ''}`}>
@@ -10,7 +10,7 @@ export default function Box({ title, description, actions, year, down, closeActi
           <div className="Tooltip-infoBox">
             <div className="Tooltip-title">{title}</div>
             <div className="Tooltip-text">{description}</div>
-            <Links {...{ actions, year, closeAction }} />
+            <Links {...{ actions, closeAction }} />
           </div>
           <div className={`Tooltip-triangle${down ? ' is-down' : ''}`} />
         </div>

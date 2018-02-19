@@ -2,7 +2,7 @@ import { h } from 'preact';
 import Box from './partials/Box.jsx';
 
 
-export default function Tooltip({ block, children, title, description, actions, year, down, open, openAction, closeAction }) {
+export default function Tooltip({ block, children, title, description, actions, down, open, openAction, closeAction }) {
 
   return (
     <span className={`Tooltip${block ? ' is-block' : ''}`}>
@@ -11,7 +11,7 @@ export default function Tooltip({ block, children, title, description, actions, 
       </div>
       <div onClick={closeAction} className={`Tooltip-boxWrap${open ? ' is-open' : ''}`}>
         <div className="Tooltip-modalCover" />
-        <Box {...{ title, description, actions, year, down, closeAction }} />
+        <Box {...{ title, description, actions, down, closeAction }} />
       </div>
     </span>
   );
