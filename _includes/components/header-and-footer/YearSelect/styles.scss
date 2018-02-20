@@ -1,4 +1,4 @@
-$mobile-break: 750px;
+$mobile-break: 900px;
 $years: 3;
 
 .YearSelect {
@@ -112,19 +112,19 @@ $years: 3;
       border-top: 5px solid white;
       margin-left: 5px;
       position: relative;
-      top: -9px;
+      top: 15px;
       transition: top 0.3s, transform 0.3s;
       transform: rotate(0deg);
     }
 
     .YearSelect-bar.is-open &::after {
       transform: rotate(180deg);
-      top: -15px;
+      top: 9px;
     }
 
     @media screen and (min-width: $mobile-break) {
       cursor: default;
-      background: white;
+      background: none;
       display: block;
       border-bottom-width: 0 !important;
       border-radius: 0 18px 18px 0;

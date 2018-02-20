@@ -44,6 +44,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-decoration: none;
+
+  &--link {
+    &:hover {
+      background-color: darken(#fff, 15%);
+    }
+  }
 
   .Revenue-itemWrap:nth-of-type(4n+1) & {
     color: #ad3c64;

@@ -81,13 +81,6 @@ You can update one file at a time as follows:
 curl -o _data/2016-17/national/departments/planning-monitoring-and-evaluation.yaml https://dynamicbudgetportal.openup.org.za/2016-17/national/departments/planning-monitoring-and-evaluation.yaml
 ```
 
-Testing
---------------
-
-### Front-end Regression Testing
-Make sure localhost is running and then run `npm test`.
-
-
 Architecture
 --------------
 
@@ -101,3 +94,25 @@ The above SUIT CSS principles is implemented into our underlying Jekyll structur
 
 - **Utilities** influence the entire front-end on  a global scale. For example, either as the styling of all `<a>` tags, helper scripts used by all components or as polyfills for features not supported on older browsers.
 - **Components** are a variety of files (`.js`, `.scss`, `.html`) scoped to specific UI units. As per SUIT CSS convention, these files are encapsulated by a certain section of the DOM. For example, all behaviour/styling in the `Tooltip` folder will only correspond to the DOM fragment inside a parent DOM Node with the `Tooltip` class.
+
+
+Testing
+--------------
+
+### Front-end Regression Testing
+Note: It is important that you are connected to the internet and that you have a `localhost:4000` instance of the site running. These tests will compare the UI of the live site against your current `localhost:4000` instance.
+
+Before starting a new testing session run `npm run test:setup`. This will take screenshots of the live site and save it as NPG images in the `backstop_data` folder. Remember that these will be used for comparison, so if the live site is changed in some way please re-run this command.
+
+Once these PNG images are downloaded run `npm run test` to compare your UI at `localhost:4000` against them. Once the tests are finished you will get a results screen showing differences between your two sources. Given that you are probably making changes to the UI, you will get a couple of errors where it differs.
+
+If you are happy with the changes (and did not see any unforeseen side-effects) you can run `npm run test:approve`. This will update your reference PNG images with your current UI state (Note that if you run `npm run test:setup` it will replace these with screenshots of the live site).
+
+All tests are respectively ran at the following four viewport sizes:
+- 320 x 480
+- 568 x 1024
+- 1024 x 758
+- 1920 x 1080
+
+Broadly speaking they currently cover the following states:
+- All current pages as loaded without any user interaction, included their variations when passed URL parameters.

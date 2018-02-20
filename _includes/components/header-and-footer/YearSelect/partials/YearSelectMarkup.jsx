@@ -13,7 +13,7 @@ export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, 
         <li
           className={`YearSelect-item${ data.active ? ' is-active' : '' }`}
           onClick={ data.active ? toggleOpen : null }
-          >
+        >
           <Tooltip
             block
             title="Content Unavailable"

@@ -5,7 +5,7 @@ import PseudoSelect from './../../../universal/PseudoSelect/index.jsx';
 export default function Modal({ open, languageOptions, setLanguage }) {
   const selectOptions = Object.keys(languageOptions).map((language) => {
     return {
-      title: language.charAt(0).toUpperCase() + language.slice(1),
+      title: language,
       value: languageOptions[language],
     };
   });
