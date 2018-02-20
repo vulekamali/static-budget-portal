@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import PseudoSelect from './../../../universal/PseudoSelect/index.jsx';
 import Button from './Button.jsx';
+import Modal from './../../../universal/Modal/index.jsx';
 
 
 const hardCoded = [
@@ -18,25 +19,39 @@ const hardCoded = [
   },
 ];
 
+export default function ShareMarkup({ selected, updateShare, modal, shareOpen, updateModal }) {
+  const closeModal = () => updateModal(false);
 
-export default function ShareMarkup({ selected, updateShare, shareOpen }) {
   return (
     <div className="Share-wrap">
-      <div className="Share-title">Share page</div>
-      <div className="Share-action">
-        <div className="Share-select">
-          <PseudoSelect
-            name="share"
-            items={hardCoded}
-            property={selected}
-            open={shareOpen}
-            changeAction={value => updateShare(value)}
-          />
+
+      <Modal
+        title="Share this link:"
+        description={window.location.href}
+        open={modal}
+        forceWrap
+        openAction={null}
+        closeAction={closeModal}
+      >
+
+        <div className="Share-title">Share page</div>
+        <div className="Share-action">
+          <div className="Share-select">
+            <PseudoSelect
+              name="share"
+              items={hardCoded}
+              property={selected}
+              open={shareOpen}
+              changeAction={value => updateShare(value)}
+            />
+          </div>
+          <div className="Share-button">
+            <Button {...{ selected, updateModal }} />
+          </div>
         </div>
-        <div className="Share-button">
-          <Button {...{ selected }} />
-        </div>
-      </div>
+
+      </Modal>
+
     </div>
   );
 }

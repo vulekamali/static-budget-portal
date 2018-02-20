@@ -1,0 +1,162 @@
+.Modal {
+  display: inline-block;
+  text-align: left;
+  z-index: z-index('Tooltip');
+
+  &.is-block {
+    width: 100%;
+    display: block;
+  }
+}
+
+.Modal-underline {
+  user-select: none;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 0.2em;
+    width: 100%;
+    border-bottom: 1px dashed #4a4a4a;
+  }
+
+  &:hover {
+    background-color: darken(white, 10%);
+  }
+}
+
+.Modal-div {
+  position: relative;
+  left: -5px;
+}
+
+.Modal-modalCover {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Modal-boxWrap {
+  display: none;
+  font-weight: normal;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  z-index: z-index('Tooltip-boxWrap');
+
+  &.is-open {
+    display: block;
+  }
+
+  &.is-important {
+    z-index: z-index('Tooltip-boxWrap is-important');
+  }
+}
+
+.Modal-box {
+  position: relative;
+  z-index: 30;
+  display: flex; /* stylelint-disable-line plugin/no-unsupported-browser-features */ // Is visual enhancement
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Modal-content {
+  margin: 40px auto;
+  position: static;
+  max-width: 80%;
+  padding: 10px 10px 20px;
+}
+
+.Modal-shadowBox {
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background: #e6e6e6;
+  font-size: 13px;
+}
+
+.Modal-infoBox {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.Modal-triangle {
+  display: none;
+
+  &::after {
+    content: '';
+    position: relative;
+    top: -30px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #e6e6e6;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transform: rotate(45deg);
+  }
+
+  &.is-down {
+    top: auto;
+    bottom: calc(100% - 0.1em);
+    transform: rotate(180deg);
+  }
+}
+
+.Modal-title {
+  padding-bottom: 5px;
+  display: inline-block;
+  line-height: 1.64;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+.Modal-text {
+  line-height: 1.64;
+  display: block;
+  padding-bottom: 10px;
+
+  &.is-forceWrap {
+    word-break: break-all;
+  }
+}
+
+.Modal-linkWrap {
+  line-height: 1.64;
+  color: #4a4a4a;
+  display: block;
+  cursor: pointer;
+  padding: 5px 10px;
+  position: relative;
+  left: -5px;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: darken(#e6e6e6, 15%);
+  }
+}
+
+.Modal-link {
+  text-decoration: underline;
+  margin-left: 3px;
+}
+
+.Modal-closeIcon {
+  padding-right: 3px;
+}
+
+.Modal-links {
+  margin: 10px 10px 0;
+}
