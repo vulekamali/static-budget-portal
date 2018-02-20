@@ -97,13 +97,13 @@
 }
 
 .Tooltip-content {
-  left: 50%;
   margin: 40px auto;
   position: static;
   max-width: 250px;
   padding: 10px 10px 20px;
 
   @media screen and (min-width: 800px) {
+    left: 50%;
     margin: 0;
     width: 250px;
     position: absolute;
@@ -117,13 +117,16 @@
 }
 
 .Tooltip-shadowBox {
-  left: -50%;
   position: relative;
   padding: 10px;
   border-radius: 20px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background: #e6e6e6;
   font-size: 13px;
+
+  @media screen and (min-width: 800px) {
+    left: -50%;
+  }
 }
 
 .Tooltip-infoBox {

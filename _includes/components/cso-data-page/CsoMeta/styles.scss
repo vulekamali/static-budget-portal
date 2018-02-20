@@ -22,6 +22,7 @@
 .CsoMeta-orgTitle {
   display: block;
   font-weight: normal;
+  max-width: 240px;
 }
 
 .CsoMeta-container {
@@ -62,6 +63,7 @@
 
 .CsoMeta-organisation {
   display: block;
+  padding-left: 20px;
 
   @media screen and (min-width: 750px) {
     display: table-cell;
@@ -70,11 +72,12 @@
 }
 
 .CsoMeta-logo {
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
-  width: auto;
-  border-radius: 2px;
+  max-width: 240px;
+  height: 100px;
+  width: 100%;
+  background-position: 0 center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .CsoMeta-line {
@@ -103,16 +106,6 @@
   float: left;
   width: 100%;
   margin: 0;
-
-  &.is-image {
-    height: 100px;
-    max-width: 270px;
-    width: 100%;
-    margin: 3px 0 17px;
-    display: block;
-    display: flex;
-    align-items: center;
-  }
 
   &.is-title {
     font-weight: bold;
