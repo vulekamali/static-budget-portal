@@ -62,6 +62,7 @@
 
   &.is-open {
     display: block;
+    z-index: 80;
   }
 
   &.is-important {

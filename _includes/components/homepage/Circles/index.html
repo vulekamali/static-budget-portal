@@ -7,7 +7,6 @@
       {% if item.popup %}
         {% assign finalUrl = '' %}
         {% assign dataPopup = item.popup | jsonify %}
-        {% assign popupModifier = ' js-popup' %}
       {% else %}
         {% assign finalUrl = '/' | append: include.year | append: item.url %}
       {% endif %}
@@ -19,10 +18,10 @@
       {% if item.popup %}
       <span class="Tooltip js-hook is-block">
         <div class="Tooltip-trigger js-trigger">
-          <a class="Circles-item{{ item.modifiers }}{{ popupModifier }}" data-popup='{{ dataPopup }}' href="{{ finalUrl }}">
+          <span class="Circles-item{{ item.modifiers }}" data-popup='{{ dataPopup }}'>
             <div class="Circles-number">{{ item.number }}</div>
             <div class="Circles-text">{{ item.text }}</div>
-          </a>
+          </span>
         </div>
         <div class="Tooltip-boxWrap js-box">
           <div class="Tooltip-modalCover js-modalCover"></div>

@@ -35,6 +35,8 @@ function scripts() {
 
 
   const attachEventListeners = (tooltipNode) => {
+    console.log(tooltipNode);
+
     const openTrigger = tooltipNode.getElementsByClassName('js-trigger')[0];
     const closeTrigger = tooltipNode.getElementsByClassName('js-closeTrigger')[0];
     const alertNode = tooltipNode.getElementsByClassName('js-box')[0];
@@ -86,7 +88,7 @@ function scripts() {
       normalisedGlossaryObject,
     );
 
-    const newNodes = parentNode.getElementsByClassName('Tooltip js-hook');
+    const newNodes = document.getElementsByClassName('Tooltip js-hook');
 
     for (let ii = 0; ii < newNodes.length; ii++) {
       attachEventListeners(newNodes[ii]);
