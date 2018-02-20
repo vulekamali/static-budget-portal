@@ -1,7 +1,6 @@
 $mobile-break: 750px;
 
 .Disclaimer {
-  display: none;
   background-color: #3f3f3f;
   color: white;
   text-align: center;
@@ -10,19 +9,8 @@ $mobile-break: 750px;
   font-size: 11px;
 
   @media screen and (min-width: $mobile-break) {
-    display: block;
     font-weight: bold;
     font-size: 14px;
     font-family: Roboto, sans-serif;
-  }
-}
-
-.Disclaimer-link {
-  opacity: 0.8;
-  color: white;
-  display: inline-block;
-
-  &:hover {
-    opacity: 1;
   }
 }
