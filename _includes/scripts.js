@@ -9,7 +9,6 @@ import './utilities/js/modules/loadStringQueries.js';
 import './utilities/js/modules/loadGoogleAnalytics.js';
 import './utilities/js/modules/polyfillOldFeatures.js';
 
-import './components/universal/Modal/scripts.js';
 import './components/universal/Tooltip/scripts.js';
 import './components/universal/Share/index.jsx';
 import './components/universal/Graph/index.jsx';

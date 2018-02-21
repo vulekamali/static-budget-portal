@@ -9,7 +9,7 @@ export default function Tooltip({ block, children, title, description, actions, 
       <div className="Tooltip-trigger" onClick={openAction}>
         {children}
       </div>
-      <div className={`Tooltip-boxWrap${open ? ' is-open' : ''}`}>
+      <div className={`Tooltip-boxWrap${open ? ' is-open' : ''}${down ? ' is-down' : ''}`}>
         <div className="Tooltip-modalCover" onClick={closeAction} />
         <Box {...{ title, description, actions, down, closeAction }} />
       </div>

@@ -29,6 +29,7 @@ export default function ShareMarkup({ selected, updateShare, modal, shareOpen, u
         title="Share this link:"
         description={window.location.href}
         open={modal}
+        block
         forceWrap
         openAction={null}
         closeAction={closeModal}

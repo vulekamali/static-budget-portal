@@ -45,6 +45,8 @@
   display: none;
   font-weight: normal;
   position: fixed;
+  justify-content: center;
+  align-items: center;
   left: 0;
   top: 0;
   width: 100%;
@@ -54,6 +56,8 @@
 
   &.is-open {
     display: block;
+    display: flex;
+    z-index: 150;
   }
 
   &.is-important {
@@ -64,10 +68,6 @@
 .Modal-box {
   position: relative;
   z-index: 30;
-  display: flex; /* stylelint-disable-line plugin/no-unsupported-browser-features */ // Is visual enhancement
-  justify-content: center;
-  align-items: center;
-  height: 100%;
 }
 
 .Modal-content {
