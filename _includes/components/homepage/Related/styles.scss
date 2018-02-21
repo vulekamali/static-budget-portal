@@ -41,10 +41,13 @@
   padding: 20px 30px;
   text-align: center;
   color: #3f3f3f;
-  display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
+
+  @supports (display: flex) {
+    display: flex;
+  }
 
   &:hover {
     background: darken(white, 15%);

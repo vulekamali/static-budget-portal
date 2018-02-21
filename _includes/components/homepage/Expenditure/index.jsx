@@ -9,7 +9,7 @@ function Expenditure() {
     for (let i = 0; i < componentsList.length; i++) {
       const component = componentsList[i];
       const rawItems = JSON.parse(component.getAttribute('data-info')).data;
-      const year = component.getAttribute('data-year') || '2017-18';
+      const year = component.getAttribute('data-year');
 
       const items = rawItems.reduce(
         (results, val) => {

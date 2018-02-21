@@ -1,4 +1,4 @@
-$mobile-break: 750px;
+$mobile-break: 900px;
 
 .SubLinks {
   @media screen and (min-width: $mobile-break) {
@@ -43,7 +43,7 @@ $mobile-break: 750px;
 
 .SubLinks-subLink {
   padding: 12px 22px;
-  font-size: 17px;
+  font-size: 16px;
   border-bottom: solid 1px #b9b9b9;
   background: white;
   display: block;
@@ -51,6 +51,7 @@ $mobile-break: 750px;
   padding-left: 36px;
   text-decoration: none;
   color: #4a4a4a;
+  line-height: 1;
 
   @media screen and (min-width: $mobile-break) {
     font-weight: normal;

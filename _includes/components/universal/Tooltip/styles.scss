@@ -9,6 +9,7 @@
 
   &.is-block {
     width: 100%;
+    display: block;
   }
 }
 
@@ -37,7 +38,7 @@
 
 .Tooltip-modalCover {
   background: rgba(0, 0, 0, 0.4);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -52,6 +53,8 @@
   display: none;
   font-weight: normal;
   position: fixed;
+  justify-content: center;
+  align-items: center;
   left: 0;
   top: 0;
   width: 100%;
@@ -59,8 +62,13 @@
   cursor: default;
   z-index: z-index('Tooltip-boxWrap');
 
+  &.is-down {
+    top: 100%;
+  }
+
   &.is-open {
     display: block;
+    display: flex;
   }
 
   &.is-important {
@@ -85,10 +93,6 @@
 .Tooltip-box {
   position: relative;
   z-index: 30;
-  display: flex; /* stylelint-disable-line plugin/no-unsupported-browser-features */ // Is visual enhancement
-  justify-content: center;
-  align-items: center;
-  height: 100%;
 
   @media screen and (min-width: 800px) {
     position: relative;
@@ -114,6 +118,13 @@
   }
 }
 
+.Tooltip-contentWrap {
+  @media screen and (min-width: 800px) {
+    position: relative;
+    left: 50%;
+  }
+}
+
 .Tooltip-shadowBox {
   position: relative;
   padding: 10px;
@@ -121,6 +132,10 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background: #e6e6e6;
   font-size: 13px;
+
+  @media screen and (min-width: 800px) {
+    left: -50%;
+  }
 }
 
 .Tooltip-infoBox {
@@ -142,7 +157,7 @@
     left: 95px;
     top: 100%;
   }
-  
+
   &::after {
     content: '';
     position: relative;
@@ -154,7 +169,7 @@
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
     transform: rotate(45deg);
   }
-  
+
   &.is-down {
     top: auto;
     bottom: calc(100% - 0.1em);
