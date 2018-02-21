@@ -34,12 +34,46 @@ financial_years:
     url_path: /2017-18/provincial/gauteng/departments/education
   id: 2017-18
   is_selected: true
+- closest_match:
+    is_exact_match: false
+    name: Gauteng
+    organisational_unit: government
+    slug: gauteng
+    url_path: /2018-19/provincial/gauteng
+  id: 2018-19
+  is_selected: false
 government:
   name: Gauteng
   slug: gauteng
 government_functions:
 - Basic education
-intro: "## Vision\n\nEvery learner feels valued and inspired in our innovative education system.\n\n\n\n## Mission\n\nWe are committed to providing functional and modern schools that enable quality teaching and learning to protect and promote the right of every learner to quality, equitable and relevant education.\n\n\n\n## Core functions\n\nThe department will continue to work closely to ensure that people of all ages and backgrounds have the education, skills and opportunities to pursue activities that promote their wellbeing and build strong communities. We are primarily responsible for the delivery and regulation of pre-tertiary and private schooling with national and provincial imperatives with a special focus on curriculum delivery, teaching and learning support material, infrastructure, ICT and teacher placements."
+intro: '## Vision
+
+
+  Every learner feels valued and inspired in our innovative education system.
+
+
+
+
+  ## Mission
+
+
+  We are committed to providing functional and modern schools that enable quality
+  teaching and learning to protect and promote the right of every learner to quality,
+  equitable and relevant education.
+
+
+
+
+  ## Core functions
+
+
+  The department will continue to work closely to ensure that people of all ages and
+  backgrounds have the education, skills and opportunities to pursue activities that
+  promote their wellbeing and build strong communities. We are primarily responsible
+  for the delivery and regulation of pre-tertiary and private schooling with national
+  and provincial imperatives with a special focus on curriculum delivery, teaching
+  and learning support material, infrastructure, ICT and teacher placements.'
 is_vote_primary: true
 name: Education
 organisational_unit: department

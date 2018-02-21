@@ -34,6 +34,14 @@ financial_years:
     url_path: /2017-18/provincial/north-west/departments/education-and-sports-development
   id: 2017-18
   is_selected: true
+- closest_match:
+    is_exact_match: false
+    name: North West
+    organisational_unit: government
+    slug: north-west
+    url_path: /2018-19/provincial/north-west
+  id: 2018-19
+  is_selected: false
 government:
   name: North West
   slug: north-west

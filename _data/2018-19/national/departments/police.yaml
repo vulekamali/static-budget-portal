@@ -1,0 +1,70 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Police
+    organisational_unit: department
+    slug: police
+    url_path: /2015-16/national/departments/police
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Police
+    organisational_unit: department
+    slug: police
+    url_path: /2016-17/national/departments/police
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Police
+    organisational_unit: department
+    slug: police
+    url_path: /2017-18/national/departments/police
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Police
+    organisational_unit: department
+    slug: police
+    url_path: /2018-19/national/departments/police
+  id: 2018-19
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+government_functions: []
+intro: '## Vote purpose
+
+
+  Prevent, combat and investigate crime, maintain public order, protect and secure
+  the inhabitants of South Africa and their property, and uphold and enforce the law.
+
+
+  ## Mandate
+
+
+  The South African Police Service derives its powers and functions from section 205
+  of the Constitution and from the South African Police Service Act (1995). This legislation
+  regulates the police service in terms of its core function, which is to prevent,
+  investigate and combat crime.
+
+
+  '
+is_vote_primary: true
+name: Police
+organisational_unit: department
+programmes: []
+selected_financial_year: 2018-19
+slug: police
+sphere:
+  name: National
+  slug: national
+treasury_datasets: {}
+vote_number: 23
+vote_primary:
+  name: Police
+  slug: police
+  url_path: /2018-19/national/departments/police

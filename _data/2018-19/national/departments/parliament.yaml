@@ -1,0 +1,68 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Parliament
+    organisational_unit: department
+    slug: parliament
+    url_path: /2015-16/national/departments/parliament
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Parliament
+    organisational_unit: department
+    slug: parliament
+    url_path: /2016-17/national/departments/parliament
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Parliament
+    organisational_unit: department
+    slug: parliament
+    url_path: /2017-18/national/departments/parliament
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Parliament
+    organisational_unit: department
+    slug: parliament
+    url_path: /2018-19/national/departments/parliament
+  id: 2018-19
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+government_functions: []
+intro: "## Vote purpose\n\nProvide the support services required by Parliament to\
+  \ fulfil its constitutional functions, assist political parties represented in Parliament\
+  \ to secure administrative support and service constituents, and provide members\
+  \ of Parliament with the necessary facilities.\n\n## Mandate\n\nThe mandate of Parliament\
+  \ is based on the provisions of chapter 4 of the Constitution, which establishes\
+  \ Parliament and sets out the functions it performs. Parliament is elected to represent\
+  \ the people, ensure government by the people under the Constitution, and represent\
+  \ the interests of provinces in the national sphere of government. Members of Parliament\
+  \ elect the president, provide a national forum for the public consideration of\
+  \ issues, pass legislation, and scrutinise and oversee executive action.\n\nParliament\u2019\
+  s policy priorities set out long-term policy and outcomes. These are aligned with\
+  \ the priorities and outcomes of the National Development Plan. To ensure that these\
+  \ outcomes are met over feasible timeframes, 5-year, 10-year and 15-year milestones\
+  \ have been set. The tabled strategic plan for the fifth Parliament is aimed at\
+  \ implementing the first milestone.\n\n\n"
+is_vote_primary: true
+name: Parliament
+organisational_unit: department
+programmes: []
+selected_financial_year: 2018-19
+slug: parliament
+sphere:
+  name: National
+  slug: national
+treasury_datasets: {}
+vote_number: 2
+vote_primary:
+  name: Parliament
+  slug: parliament
+  url_path: /2018-19/national/departments/parliament

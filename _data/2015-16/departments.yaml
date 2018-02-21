@@ -23,6 +23,14 @@ financial_years:
     url_path: /2017-18/departments
   id: 2017-18
   is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Departments
+    organisational_unit: department-list
+    slug: departments
+    url_path: /2018-19/departments
+  id: 2018-19
+  is_selected: false
 national:
 - departments:
   - name: The Presidency

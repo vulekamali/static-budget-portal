@@ -1,0 +1,63 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Health
+    organisational_unit: department
+    slug: health
+    url_path: /2015-16/national/departments/health
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Health
+    organisational_unit: department
+    slug: health
+    url_path: /2016-17/national/departments/health
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Health
+    organisational_unit: department
+    slug: health
+    url_path: /2017-18/national/departments/health
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Health
+    organisational_unit: department
+    slug: health
+    url_path: /2018-19/national/departments/health
+  id: 2018-19
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+government_functions: []
+intro: "## Vote purpose\n\nProvide leadership and coordination of health services\
+  \ to promote the health of all people in South Africa through an accessible, caring\
+  \ and high quality health system, based on the primary health care approach. \n\n\
+  ## Mandate\n\nThe Department of Health derives its mandate from the National Health\
+  \ Act (2003), which requires that the department provides a framework for a structured\
+  \ and uniform health system for South Africa. The act sets out the responsibilities\
+  \ of the three levels of government in the provision of health services. The department\
+  \ contributes directly to the realisation of outcome 2 (a long and healthy life\
+  \ for all South Africans) of government\u2019s 2014-2019 medium-term strategic framework.\n\
+  \n"
+is_vote_primary: true
+name: Health
+organisational_unit: department
+programmes: []
+selected_financial_year: 2018-19
+slug: health
+sphere:
+  name: National
+  slug: national
+treasury_datasets: {}
+vote_number: 16
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2018-19/national/departments/health
