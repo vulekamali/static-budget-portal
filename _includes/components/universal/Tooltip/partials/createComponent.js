@@ -10,26 +10,28 @@ export default function createComponent(year, title, description, content) {
       <div class="Tooltip-modalCover js-modalCover"></div>
       <div class="Tooltip-box">
         <div class="Tooltip-content">
-          <div class="Tooltip-shadowBox">
-            <div class="Tooltip-infoBox">
-              <div class="Tooltip-title">${title}</div>
-              <div class="Tooltip-text">${description}</div>
-            </div>
-            <div class="Tooltip-links">
-              <span class="Tooltip-linkWrap is-close js-closeTrigger">
-                <span class="Tooltip-closeIcon">
-                  ${closeIcon}
+          <div class="Tooltip-contentWrap">
+            <div class="Tooltip-shadowBox">
+              <div class="Tooltip-infoBox">
+                <div class="Tooltip-title">${title}</div>
+                <div class="Tooltip-text">${description}</div>
+              </div>
+              <div class="Tooltip-links">
+                <span class="Tooltip-linkWrap is-close js-closeTrigger">
+                  <span class="Tooltip-closeIcon">
+                    ${closeIcon}
+                  </span>
+                  <span class="Tooltip-link">
+                    Close
+                  </span>
                 </span>
-                <span class="Tooltip-link">
-                  Close
-                </span>
-              </span>
 
-              <a class="Tooltip-linkWrap" href="/${year}/glossary">
-                <div class="Tooltip-link">View glossary</div>
-              </a>
+                <a class="Tooltip-linkWrap" href="/${year}/glossary">
+                  <div class="Tooltip-link">View glossary</div>
+                </a>
+              </div>
+              <div class="Tooltip-triangle"></div>
             </div>
-            <div class="Tooltip-triangle"></div>
           </div>
         </div>
       </div>
