@@ -25,9 +25,17 @@ financial_years:
   is_selected: true
 organisational_unit: financial_year
 revenue:
-- amount: '0'
+- amount: '505844600000'
+  category: Personal Income Tax
+- amount: '348109700000'
+  category: Value-Added Tax
+- amount: '231218700000'
+  category: Corporate Income Tax
+- amount: '77508500000'
+  category: Fuel Levies
+- amount: '97440800000'
   category: Customs and Excise Duties
-- amount: '0'
+- amount: '84447000000'
   category: Other
 selected_financial_year: 2018-19
 slug: 2018-19
