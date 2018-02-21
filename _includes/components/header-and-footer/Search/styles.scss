@@ -2,15 +2,6 @@ $mobile-break: 900px;
 
 .Search {
   width: 100%;
-  padding: 20px;
-
-  &:active {
-    background-color: darken(white, 15%);
-  }
-
-  @media screen and (min-width: $mobile-break) {
-    padding: 0;
-  }
 }
 
 .Search-float {
@@ -285,7 +276,14 @@ $mobile-break: 900px;
 }
 
 .Search-mobile {
+  padding: 20px;
+
+  &:active {
+    background-color: darken(white, 15%);
+  }
+
   @media screen and (min-width: $mobile-break) {
+    padding: 0;
     display: none;
   }
 }
