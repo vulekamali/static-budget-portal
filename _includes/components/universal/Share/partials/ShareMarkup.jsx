@@ -21,13 +21,16 @@ const hardCoded = [
 
 export default function ShareMarkup({ selected, updateShare, modal, shareOpen, updateModal }) {
   const closeModal = () => updateModal(false);
+  const descriptionMarkup = (
+    <a className="u-wordBreak u-wordBreak--breakAll" href={window.location.href}>{window.location.href}</a>
+  );
 
   return (
     <div className="Share-wrap">
 
       <Modal
         title="Share this link:"
-        description={window.location.href}
+        description={descriptionMarkup}
         open={modal}
         block
         forceWrap

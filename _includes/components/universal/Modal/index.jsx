@@ -3,7 +3,7 @@ import { h } from 'preact';
 import Box from './partials/Box.jsx';
 
 
-export default function Modal({ block, children, forceWrap, title, description, actions, down, open, openAction, closeAction }) {
+export default function Modal({ block, children, title, description, actions, down, open, openAction, closeAction }) {
 
   return (
     <span className={`Modal${block ? ' is-block' : ''}`}>
@@ -12,7 +12,7 @@ export default function Modal({ block, children, forceWrap, title, description, 
       </div>
       <div className={`Modal-boxWrap${open ? ' is-open' : ''}`}>
         <div className="Modal-modalCover" onClick={closeAction} />
-        <Box {...{ title, description, actions, down, closeAction, forceWrap }} />
+        <Box {...{ title, description, actions, down, closeAction }} />
       </div>
     </span>
   );
