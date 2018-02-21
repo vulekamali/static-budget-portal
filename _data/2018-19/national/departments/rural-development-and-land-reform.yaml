@@ -120,7 +120,19 @@ slug: rural-development-and-land-reform
 sphere:
   name: National
   slug: national
-treasury_datasets: {}
+treasury_datasets:
+  ENE for Vote 39 - Rural Development and Land Reform:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2039%20Rural%20Development%20and%20Land%20Reform.pdf
+  ENE for Vote 39 - Rural Development and Land Reform - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-rural-development-and-land-reform-2018-19/resource/9c4d6bdb-c1b6-43a8-a2e5-d8ac88fd502e/download/ene18-vote39_chaptertables.xlsx
 vote_number: 39
 vote_primary:
   name: Rural Development and Land Reform

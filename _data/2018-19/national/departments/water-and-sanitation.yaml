@@ -56,7 +56,19 @@ slug: water-and-sanitation
 sphere:
   name: National
   slug: national
-treasury_datasets: {}
+treasury_datasets:
+  ENE for Vote 36 - Water and Sanitation:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2036%20Water%20and%20Sanitation.pdf
+  ENE for Vote 36 - Water and Sanitation - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-water-and-sanitation-2018-19/resource/9730e32b-1c59-4e60-9dcc-f343f37bc7fc/download/ene18-vote36_chaptertables.xlsx
 vote_number: 36
 vote_primary:
   name: Water and Sanitation

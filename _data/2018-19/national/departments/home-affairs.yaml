@@ -54,7 +54,19 @@ slug: home-affairs
 sphere:
   name: National
   slug: national
-treasury_datasets: {}
+treasury_datasets:
+  ENE for Vote 5 - Home Affairs:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2005%20Home%20Affairs.pdf
+  ENE for Vote 5 - Home Affairs - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-home-affairs-2018-19/resource/4abf65d3-c8bc-4653-9090-25ab463a0be5/download/ene18-vote05_chaptertables.xlsx
 vote_number: 5
 vote_primary:
   name: Home Affairs

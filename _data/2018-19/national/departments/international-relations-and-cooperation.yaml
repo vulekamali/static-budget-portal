@@ -66,7 +66,19 @@ slug: international-relations-and-cooperation
 sphere:
   name: National
   slug: national
-treasury_datasets: {}
+treasury_datasets:
+  ENE for Vote 6 - International Relations and Cooperation:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2006%20International%20Relations%20and%20Cooperation.pdf
+  ENE for Vote 6 - International Relations and Cooperation - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2018-19/resource/9f1e11ac-bd85-4a02-b8be-ec9d09aaa368/download/ene18-vote06_chaptertables.xlsx
 vote_number: 6
 vote_primary:
   name: International Relations and Cooperation

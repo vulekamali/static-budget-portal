@@ -77,7 +77,19 @@ slug: energy
 sphere:
   name: National
   slug: national
-treasury_datasets: {}
+treasury_datasets:
+  ENE for Vote 26 - Energy:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2026%20Energy.pdf
+  ENE for Vote 26 - Energy - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-energy-2018-19/resource/ef461a09-0802-4b63-9442-62938ab1d42d/download/ene18-vote26_chaptertables.xlsx
 vote_number: 26
 vote_primary:
   name: Energy

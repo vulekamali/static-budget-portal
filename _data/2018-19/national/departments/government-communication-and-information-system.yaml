@@ -66,7 +66,19 @@ slug: government-communication-and-information-system
 sphere:
   name: National
   slug: national
-treasury_datasets: {}
+treasury_datasets:
+  ENE for Vote 3 - Communications:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2003%20Communications.pdf
+  ENE for Vote 3 - Communications - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-communications-2018-19/resource/7522827a-1e2c-45e4-856c-900a30be25c6/download/ene18-vote03_chaptertables.xlsx
 vote_number: 3
 vote_primary:
   name: Communications
