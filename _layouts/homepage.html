@@ -3,6 +3,7 @@ layout: page-shell
 ---
 
 {% assign page_data = site.data[page.financial_year].index %}
+{% assign government_functions = site.data[page.financial_year].government_functions %}
 {% assign resources_data = site.data[page.financial_year].resources %}
 {% assign circles_data = site.data[page.financial_year].circles %}
 
@@ -40,16 +41,16 @@ layout: page-shell
         <span class="HomeLayout-title js-tooltips" data-year="{{ page.financial_year }}">The national revenue fund, administered by the National Treasury,  is distributed to the three spheres of government.</span>
 
         <div>
-          {% 
-            include components/homepage/Circles/index.html 
+          {%
+            include components/homepage/Circles/index.html
             year=page.financial_year
             items=circles_data
           %}
         </div>
 
         <div>
-          {% 
-            include components/homepage/Revenue/index.html 
+          {%
+            include components/homepage/Revenue/index.html
             info=page_data.revenue
             link=resources_data.budget_revenue_data.url
             year=page.financial_year
@@ -57,9 +58,9 @@ layout: page-shell
         </div>
 
         <div>
-          {% 
-            include components/homepage/Expenditure/index.html 
-            info=page_data.government_functions
+          {%
+            include components/homepage/Expenditure/index.html
+            info=government_functions
             year=page.financial_year
           %}
         </div>

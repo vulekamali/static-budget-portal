@@ -1,11 +1,7 @@
-.Tooltip {
+.Modal {
   display: inline-block;
   text-align: left;
   z-index: z-index('Tooltip');
-
-  @media screen and (min-width: 800px) {
-    position: relative;
-  }
 
   &.is-block {
     width: 100%;
@@ -13,7 +9,7 @@
   }
 }
 
-.Tooltip-underline {
+.Modal-underline {
   user-select: none;
   display: inline-block;
 
@@ -31,25 +27,21 @@
   }
 }
 
-.Tooltip-div {
+.Modal-div {
   position: relative;
   left: -5px;
 }
 
-.Tooltip-modalCover {
+.Modal-modalCover {
   background: rgba(0, 0, 0, 0.4);
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-
-  @media screen and (min-width: 800px) {
-    display: none;
-  }
 }
 
-.Tooltip-boxWrap {
+.Modal-boxWrap {
   display: none;
   font-weight: normal;
   position: fixed;
@@ -62,101 +54,51 @@
   cursor: default;
   z-index: z-index('Tooltip-boxWrap');
 
-  &.is-down {
-    top: 100%;
-  }
-
   &.is-open {
     display: block;
     display: flex;
+    z-index: 150;
   }
 
   &.is-important {
     z-index: z-index('Tooltip-boxWrap is-important');
   }
-
-  @media screen and (min-width: 800px) {
-    background: none;
-    position: absolute;
-    z-index: z-index('Tooltip-boxWrap');
-
-    &.is-open {
-      display: none;
-    }
-
-    .Tooltip:hover & {
-      display: block;
-    }
-  }
 }
 
-.Tooltip-box {
+.Modal-box {
   position: relative;
   z-index: 30;
-
-  @media screen and (min-width: 800px) {
-    position: relative;
-  }
 }
 
-.Tooltip-content {
+.Modal-content {
   margin: 40px auto;
   position: static;
-  max-width: 250px;
+  max-width: 80%;
   padding: 10px 10px 20px;
 
   @media screen and (min-width: 800px) {
-    margin: 0;
-    width: 250px;
-    position: absolute;
-    bottom: calc(100% - 12px);
-
-    &.is-down {
-      bottom: auto;
-      top: calc(100% - 12px);
-    }
+    max-width: 100%;
   }
 }
 
-.Tooltip-contentWrap {
-  @media screen and (min-width: 800px) {
-    position: relative;
-    left: 50%;
-  }
-}
-
-.Tooltip-shadowBox {
+.Modal-shadowBox {
   position: relative;
   padding: 10px;
   border-radius: 20px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background: #e6e6e6;
   font-size: 13px;
-
-  @media screen and (min-width: 800px) {
-    left: -50%;
-  }
 }
 
-.Tooltip-infoBox {
+.Modal-infoBox {
   background-color: #fff;
   border-radius: 10px;
   padding: 15px;
   font-size: 14px;
 }
 
-.Tooltip-triangle {
+.Modal-triangle {
   display: none;
-
-  @media screen and (min-width: 800px) {
-    display: block;
-    position: absolute;
-    overflow: hidden;
-    height: 25px;
-    width: 40px;
-    left: 95px;
-    top: 100%;
-  }
 
   &::after {
     content: '';
@@ -177,7 +119,7 @@
   }
 }
 
-.Tooltip-title {
+.Modal-title {
   padding-bottom: 5px;
   display: inline-block;
   line-height: 1.64;
@@ -185,13 +127,13 @@
   font-weight: bold;
 }
 
-.Tooltip-text {
+.Modal-text {
   line-height: 1.64;
   display: block;
   padding-bottom: 10px;
 }
 
-.Tooltip-linkWrap {
+.Modal-linkWrap {
   line-height: 1.64;
   color: #4a4a4a;
   display: block;
@@ -204,23 +146,17 @@
   &:hover {
     background-color: darken(#e6e6e6, 15%);
   }
-
-  @media screen and (min-width: 800px) {
-    &.is-close {
-      display: none;
-    }
-  }
 }
 
-.Tooltip-link {
+.Modal-link {
   text-decoration: underline;
   margin-left: 3px;
 }
 
-.Tooltip-closeIcon {
+.Modal-closeIcon {
   padding-right: 3px;
 }
 
-.Tooltip-links {
+.Modal-links {
   margin: 10px 10px 0;
 }
