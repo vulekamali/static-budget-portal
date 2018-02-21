@@ -104,7 +104,6 @@
   padding: 10px 10px 20px;
 
   @media screen and (min-width: 800px) {
-    left: 50%;
     margin: 0;
     width: 250px;
     position: absolute;
@@ -114,6 +113,13 @@
       bottom: auto;
       top: calc(100% - 12px);
     }
+  }
+}
+
+.Tooltip-contentWrap {
+  @media screen and (min-width: 800px) {
+    position: relative;
+    left: 50%;
   }
 }
 
