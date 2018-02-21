@@ -11,6 +11,7 @@ layout: base
 <div class="Page">
   <header class="Page-header">
     <h1 class="u-sReadOnly">Static Budget Portal</h1>
+    {% include components/header-and-footer/Disclaimer/index.html %}
     {% include components/header-and-footer/YearSelect/index.html years=page.years dynamic=page_data.financial_years %}
     {% include components/header-and-footer/HeaderBar/index.html year=page.financial_year active=page.active nested=page.nested items=site.data.static.navbar.array title=page.title %}
   </header>

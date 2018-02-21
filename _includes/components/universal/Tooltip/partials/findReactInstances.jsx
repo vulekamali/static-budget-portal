@@ -15,20 +15,20 @@ export default function findReactInstances() {
         down
         actions={[
           {
-            url: 'asdsad',
-            title: 'asdasd',
+            url: '#',
+            title: 'Test 1',
           },
           {
-            url: 'asdsad',
-            title: 'asdasd',
+            url: '#',
+            title: 'Test 2',
           },
           {
-            url: 'asdsad',
-            title: 'asdasd',
+            url: '#',
+            title: 'Test 3',
           },
         ]}
       >
-        <div>asdasdasdsdsadasd</div>
+        <div>Test</div>
       </Tooltip>
     );
 
