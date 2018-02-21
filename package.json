@@ -15,9 +15,9 @@
   "homepage": "https://github.com/OpenUpSA/static-budget-portal#readme",
   "scripts": {
     "patterns": "node tooling/pattern-library/init",
-    "test": "npm run test:setup & npm run test:check",
     "test:setup": "backstop reference",
-    "test:check": "backstop test",
+    "test": "backstop test",
+    "test:approve": "backstop approve",
     "build": "webpack --display errors-only --progress -p",
     "build:dev": "webpack --display errors-only --progress --config patterns.webpack.config.js"
   },
@@ -33,7 +33,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "backstop": "^1.0.1",
-    "backstopjs": "^3.0.36",
+    "backstopjs": "^3.1.17",
     "browserslist": "^2.4.0",
     "classlist-polyfill": "^1.2.0",
     "clean-webpack-plugin": "^0.1.17",

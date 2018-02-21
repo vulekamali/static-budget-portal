@@ -3,11 +3,17 @@ layout: page-shell
 ---
 
 {% assign page_data = site.data[page.financial_year].index %}
-{% assign resources_data = site.data[page.financial_year].resources %}
+{% assign resources_data = site.data[page.financial_year].manual_resources %}
+{% assign government_functions = site.data[page.financial_year].government_functions %}
+{% assign circles_data = site.data[page.financial_year].circles %}
 
 
 <div class="Page-content">
   <div class="Page-contentWrap">
+
+    <div class="Card u-marginTop u-marginTop--20 u-marginBottom u-marginBottom--15">
+      The <a href="http://www.treasury.gov.za/documents/national%20budget/2018/default.aspx">2018-19 budget data</a> is currently being added to the vulekamali site and will be available soon.
+    </div>
 
     <div class="HomeLayout-titleWrap">
       <span class="Page-title">The South African National Budget {{ page.financial_year }}</span>
@@ -21,6 +27,7 @@ layout: page-shell
         <div>
             {%
               include components/homepage/Links/index.html
+              resources_link=resources_data.resources_link.url
               speech=resources_data.budget_speech.url
               webcast=resources_data.budget_webcast.url
               highlights=resources_data.highlights.url
@@ -35,25 +42,26 @@ layout: page-shell
         <span class="HomeLayout-title js-tooltips" data-year="{{ page.financial_year }}">The national revenue fund, administered by the National Treasury,  is distributed to the three spheres of government.</span>
 
         <div>
-          {% 
-            include components/homepage/Circles/index.html 
+          {%
+            include components/homepage/Circles/index.html
             year=page.financial_year
-            items=site.data.static.circles
+            items=circles_data
           %}
         </div>
 
         <div>
-          {% 
-            include components/homepage/Revenue/index.html 
+          {%
+            include components/homepage/Revenue/index.html
             info=page_data.revenue
             link=resources_data.budget_revenue_data.url
+            year=page.financial_year
           %}
         </div>
 
         <div>
-          {% 
-            include components/homepage/Expenditure/index.html 
-            info=page_data.government_functions
+          {%
+            include components/homepage/Expenditure/index.html
+            info=government_functions
             year=page.financial_year
           %}
         </div>

@@ -4,7 +4,11 @@ import HorisontalBreakpoint from './HorisontalBreakpoint.jsx';
 
 export default function HorisontalBreakpointsList({ items, styling, totalGroupSpace }) {
   const { valueSpace, buffer, padding, labelBreakpoints } = styling;
-  const breakpointArray = '_'.repeat(labelBreakpoints).split('');
+  let breakpointArray = [];
+
+  for (let i = 0; i < labelBreakpoints; i++) {
+    breakpointArray.push('');
+  }
 
   return (
     <g className="Graph-verticalLabelList">

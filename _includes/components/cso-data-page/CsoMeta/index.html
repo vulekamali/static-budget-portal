@@ -8,7 +8,9 @@
     <dl class="CsoMeta-listItems">
       {% if include.organization.logo_url %}
         <dt class="u-sReadOnly" aria-hidden="aria-hidden">Logo</dt>
-        <dd class="CsoMeta-listItem is-image" aria-hidden="aria-hidden"><img class="CsoMeta-logo" src="{{ include.organization.logo_url }}" alt=""/></dd>
+        <dd class="CsoMeta-listItem is-image" aria-hidden="aria-hidden">
+          <div class="CsoMeta-logo" style="background-image: url('{{ include.organization.logo_url }}')"></div>
+        </dd>
       {% endif %}
 
       {% if include.organization.telephone %}
