@@ -86,7 +86,7 @@ function scripts() {
       normalisedGlossaryObject,
     );
 
-    const newNodes = parentNode.getElementsByClassName('Tooltip js-hook');
+    const newNodes = document.getElementsByClassName('Tooltip js-hook');
 
     for (let ii = 0; ii < newNodes.length; ii++) {
       attachEventListeners(newNodes[ii]);

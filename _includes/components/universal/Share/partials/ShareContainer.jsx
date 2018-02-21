@@ -8,9 +8,15 @@ export default class ShareContainer extends Component {
     this.state = {
       selected: 'copy',
       shareOpen: false,
+      modal: false,
     };
 
     this.updateShare = this.updateShare.bind(this);
+    this.updateModal = this.updateModal.bind(this);
+  }
+
+  updateModal(state) {
+    this.setState({ modal: state });
   }
 
   updateShare(value) {
@@ -24,6 +30,6 @@ export default class ShareContainer extends Component {
   }
 
   render() {
-    return <ShareMarkup {...this.state} updateShare={this.updateShare} />;
+    return <ShareMarkup {...this.state} updateShare={this.updateShare} updateModal={this.updateModal} />;
   }
 }
