@@ -59,7 +59,10 @@ export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, 
   return (
     <div className="YearSelect">
       <div className="YearSelect-wrap">
-        <h2 className="YearSelect-title">Show data for a financial year</h2>
+        <h2 className="YearSelect-title">
+          <span className="YearSelect-titleExtra">Show data for a </span>
+          <span >financial year</span>
+        </h2>
         <div className="YearSelect-content">
           { loading ? placeholder : realData }
         </div>
