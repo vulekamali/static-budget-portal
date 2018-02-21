@@ -1,7 +1,7 @@
 import { h, Component } from 'preact';
 import SearchResultMarkup from './SearchResultMarkup.jsx';
 import { apiBaseURL } from '../../../../utilities/config/global.json';
-import removePunctuation from './removePunctuation.js';
+import removePunctuation from '../../../../utilities/js/helpers/removePunctuation.js';
 
 
 export default class SearchResultsContainer extends Component {

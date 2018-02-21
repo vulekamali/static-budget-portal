@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import SearchMarkup from './SearchMarkup.jsx';
 import analyticsEvents from './../../../../utilities/js/helpers/analyticsEvent.js';
 import { apiBaseURL } from '../../../../utilities/config/global.json';
-import removePunctuation from './removePunctuation.js';
+import removePunctuation from '../../../../utilities/js/helpers/removePunctuation.js';
 
 
 export default class SearchContainer extends Component {
