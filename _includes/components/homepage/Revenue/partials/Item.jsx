@@ -1,10 +1,11 @@
 import { h } from 'preact';
 import trimValues from './trimValues.js';
+import removePunctuation from '../../../../utilities/js/helpers/removePunctuation.js';
 
 
 export default function Item({ year, title, value, shortcuts }) {
   const Tag = shortcuts ? 'a' : 'div';
-  const link = shortcuts ? `/${year}/search-result?search_type=full-search&search=${encodeURI(title.replace(/[^\w|\s]/g, ' '))}` : null;
+  const link = shortcuts ? `/${year}/search-result?search_type=full-search&search=${encodeURI(removePunctuation(title))}` : null;
 
   return (
     <div className="Revenue-itemWrap">
