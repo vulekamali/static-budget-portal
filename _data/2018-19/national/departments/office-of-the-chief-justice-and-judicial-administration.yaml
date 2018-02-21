@@ -63,7 +63,15 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Office of the Chief Justice and Judicial Administration
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Superior Court Services
+  total_budget: null
+- name: Judicial Education and Support
+  total_budget: null
+- name: Direct charge against the National Revenue Fund
+  total_budget: null
 selected_financial_year: 2018-19
 slug: office-of-the-chief-justice-and-judicial-administration
 sphere:

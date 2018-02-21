@@ -51,7 +51,17 @@ intro: "## Vote purpose\n\nDevelop, maintain and support a South African school 
 is_vote_primary: true
 name: Basic Education
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Curriculum Policy, Support and Monitoring
+  total_budget: null
+- name: Teachers, Education Human Resources and Institutional Development
+  total_budget: null
+- name: Planning, Information and Assessment
+  total_budget: null
+- name: Educational Enrichment Services
+  total_budget: null
 selected_financial_year: 2018-19
 slug: basic-education
 sphere:

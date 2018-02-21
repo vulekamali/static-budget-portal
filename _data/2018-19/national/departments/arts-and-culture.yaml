@@ -54,7 +54,15 @@ intro: "## Vote purpose\n\nContribute to sustainable economic development and en
 is_vote_primary: true
 name: Arts and Culture
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Institutional Governance
+  total_budget: null
+- name: Arts and Culture Promotion and Development
+  total_budget: null
+- name: Heritage Promotion and Preservation
+  total_budget: null
 selected_financial_year: 2018-19
 slug: arts-and-culture
 sphere:

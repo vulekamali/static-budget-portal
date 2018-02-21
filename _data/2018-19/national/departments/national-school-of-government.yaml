@@ -49,7 +49,11 @@ intro: "## Vote purpose\n\nProvide or coordinate the provision of learning, trai
 is_vote_primary: false
 name: National School of Government
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Public Sector Organisational and Staff Development
+  total_budget: null
 selected_financial_year: 2018-19
 slug: national-school-of-government
 sphere:

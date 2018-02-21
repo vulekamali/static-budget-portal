@@ -57,7 +57,13 @@ intro: "## Vote purpose\n\nPromote economic development policy formulation and p
 is_vote_primary: true
 name: Economic Development
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Growth Path and Social Dialogue
+  total_budget: null
+- name: Investment, Competition and Trade
+  total_budget: null
 selected_financial_year: 2018-19
 slug: economic-development
 sphere:

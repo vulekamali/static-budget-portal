@@ -50,7 +50,17 @@ intro: "## Vote purpose\n\nRealise the full potential of science and technology 
 is_vote_primary: true
 name: Science and Technology
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Technology Innovation
+  total_budget: null
+- name: International Cooperation and Resources
+  total_budget: null
+- name: Research, Development and Support
+  total_budget: null
+- name: Socio-Economic Innovation Partnerships
+  total_budget: null
 selected_financial_year: 2018-19
 slug: science-and-technology
 sphere:

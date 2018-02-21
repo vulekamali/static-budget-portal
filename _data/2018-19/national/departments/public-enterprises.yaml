@@ -52,7 +52,13 @@ intro: "## Vote purpose\n\nDrive investment, productivity and transformation in 
 is_vote_primary: true
 name: Public Enterprises
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: State-owned Companies Governance Assurance and Performance
+  total_budget: null
+- name: Business Enhancement, Transformation and Industrialisation
+  total_budget: null
 selected_financial_year: 2018-19
 slug: public-enterprises
 sphere:

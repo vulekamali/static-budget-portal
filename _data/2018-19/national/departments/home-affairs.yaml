@@ -48,7 +48,13 @@ intro: "## Vote purpose\n\nEfficiently determine and safeguard the identity and 
 is_vote_primary: true
 name: Home Affairs
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Citizen Affairs
+  total_budget: null
+- name: Immigration Affairs
+  total_budget: null
 selected_financial_year: 2018-19
 slug: home-affairs
 sphere:

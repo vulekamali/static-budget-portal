@@ -56,7 +56,13 @@ intro: "## Vote purpose\n\nCoordinate traditional affairs across government thro
 is_vote_primary: false
 name: Traditional Affairs
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Research, Policy and Legislation
+  total_budget: null
+- name: Institutional Support and Coordination
+  total_budget: null
 selected_financial_year: 2018-19
 slug: traditional-affairs
 sphere:

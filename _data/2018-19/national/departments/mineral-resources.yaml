@@ -50,7 +50,15 @@ intro: "## Vote purpose\n\nPromote and regulate the minerals and mining sector f
 is_vote_primary: true
 name: Mineral Resources
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Mine Health and Safety
+  total_budget: null
+- name: Mineral Regulation
+  total_budget: null
+- name: Mineral Policy and Promotion
+  total_budget: null
 selected_financial_year: 2018-19
 slug: mineral-resources
 sphere:

@@ -59,7 +59,15 @@ intro: "## Vote purpose\n\nCreate an enabling environment for the provision of i
 is_vote_primary: true
 name: Communications
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Communications Policy, Research and Development
+  total_budget: null
+- name: Industry and Capacity Development
+  total_budget: null
+- name: Entity Oversight
+  total_budget: null
 selected_financial_year: 2018-19
 slug: communications
 sphere:

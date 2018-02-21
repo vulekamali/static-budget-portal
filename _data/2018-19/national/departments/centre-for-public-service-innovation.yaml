@@ -58,7 +58,11 @@ intro: '## Vote purpose
 is_vote_primary: false
 name: Centre for Public Service Innovation
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Public Sector Innovation
+  total_budget: null
 selected_financial_year: 2018-19
 slug: centre-for-public-service-innovation
 sphere:

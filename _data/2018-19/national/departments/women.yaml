@@ -44,7 +44,13 @@ intro: "## Vote purpose\n\nLead, coordinate and oversee the transformation agend
 is_vote_primary: true
 name: Women
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Social Transformation and Economic Empowerment
+  total_budget: null
+- name: Policy, Stakeholder Coordination and Knowledge Management
+  total_budget: null
 selected_financial_year: 2018-19
 slug: women
 sphere:

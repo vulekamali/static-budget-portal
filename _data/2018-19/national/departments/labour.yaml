@@ -60,7 +60,15 @@ intro: "## Vote purpose\n\nPlay a significant role in reducing unemployment, pov
 is_vote_primary: true
 name: Labour
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Inspection and Enforcement Services
+  total_budget: null
+- name: Public Employment Services
+  total_budget: null
+- name: Labour Policy and Industrial Relations
+  total_budget: null
 selected_financial_year: 2018-19
 slug: labour
 sphere:

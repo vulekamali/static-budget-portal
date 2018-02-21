@@ -56,7 +56,17 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Police
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Visible Policing
+  total_budget: null
+- name: Detective Services
+  total_budget: null
+- name: Crime Intelligence
+  total_budget: null
+- name: Protection and Security Services
+  total_budget: null
 selected_financial_year: 2018-19
 slug: police
 sphere:

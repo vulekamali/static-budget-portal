@@ -58,7 +58,13 @@ intro: "## Vote purpose\n\nEnsure independent oversight of the South African Pol
 is_vote_primary: true
 name: Independent Police Investigative Directorate
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Investigation and Information Management
+  total_budget: null
+- name: Compliance Monitoring and Stakeholder Management
+  total_budget: null
 selected_financial_year: 2018-19
 slug: independent-police-investigative-directorate
 sphere:

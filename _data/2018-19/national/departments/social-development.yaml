@@ -76,7 +76,17 @@ intro: "## Vote purpose\n\nEnsure protection against vulnerability by creating a
 is_vote_primary: true
 name: Social Development
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Social Assistance
+  total_budget: null
+- name: Social Security Policy and Administration
+  total_budget: null
+- name: Welfare Services Policy Development and Implementation Support
+  total_budget: null
+- name: Social Policy and Integrated Service Delivery
+  total_budget: null
 selected_financial_year: 2018-19
 slug: social-development
 sphere:

@@ -67,7 +67,21 @@ intro: "## Vote purpose\n\nLead South Africa's environmental sector to achieve s
 is_vote_primary: true
 name: Environmental Affairs
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Legal, Authorisations, Compliance and Enforcement
+  total_budget: null
+- name: Oceans and Coasts
+  total_budget: null
+- name: Climate Change and Air Quality
+  total_budget: null
+- name: Biodiversity and Conservation
+  total_budget: null
+- name: Environmental Programmes
+  total_budget: null
+- name: Chemicals and Waste Management
+  total_budget: null
 selected_financial_year: 2018-19
 slug: environmental-affairs
 sphere:

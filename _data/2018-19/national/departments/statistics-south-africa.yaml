@@ -50,7 +50,21 @@ intro: "## Vote purpose\n\nLead and partner in the production of statistics in l
 is_vote_primary: true
 name: Statistics South Africa
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Economic Statistics
+  total_budget: null
+- name: Population and Social Statistics
+  total_budget: null
+- name: Methodology, Standards and Research
+  total_budget: null
+- name: Statistical Support and Informatics
+  total_budget: null
+- name: Statistical Collection and Outreach
+  total_budget: null
+- name: Survey Operations
+  total_budget: null
 selected_financial_year: 2018-19
 slug: statistics-south-africa
 sphere:

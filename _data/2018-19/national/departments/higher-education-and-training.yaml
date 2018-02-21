@@ -61,7 +61,21 @@ intro: "## Vote purpose\n\nDevelop and support a quality higher and vocational e
 is_vote_primary: true
 name: Higher Education and Training
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Planning, Policy and Strategy
+  total_budget: null
+- name: University Education
+  total_budget: null
+- name: Technical and Vocational Education and Training
+  total_budget: null
+- name: Skills Development
+  total_budget: null
+- name: Community Education and Training
+  total_budget: null
+- name: Direct charge against the National Revenue Fund
+  total_budget: null
 selected_financial_year: 2018-19
 slug: higher-education-and-training
 sphere:

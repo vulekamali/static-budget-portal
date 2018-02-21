@@ -53,7 +53,19 @@ intro: "## Vote purpose\n\nLead the modernisation of the public service, through
 is_vote_primary: true
 name: Public Service and Administration
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Policy Development, Research and Analysis
+  total_budget: null
+- name: Public Service Employment and Conditions of Service
+  total_budget: null
+- name: Government Chief Information Officer
+  total_budget: null
+- name: Service Delivery Support
+  total_budget: null
+- name: Governance of Public Administration
+  total_budget: null
 selected_financial_year: 2018-19
 slug: public-service-and-administration
 sphere:

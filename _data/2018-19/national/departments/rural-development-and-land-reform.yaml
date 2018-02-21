@@ -114,7 +114,17 @@ intro: "## Vote purpose\n\nCreate and maintain an equitable and sustainable land
 is_vote_primary: true
 name: Rural Development and Land Reform
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: National Geomatics Management Services
+  total_budget: null
+- name: Rural Development
+  total_budget: null
+- name: Restitution
+  total_budget: null
+- name: Land Reform
+  total_budget: null
 selected_financial_year: 2018-19
 slug: rural-development-and-land-reform
 sphere:

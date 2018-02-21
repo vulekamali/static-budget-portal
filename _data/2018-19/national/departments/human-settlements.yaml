@@ -65,7 +65,15 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Human Settlements
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Human Settlements Policy, Strategy and Planning
+  total_budget: null
+- name: Human Settlements Delivery Support
+  total_budget: null
+- name: Housing Development Finance
+  total_budget: null
 selected_financial_year: 2018-19
 slug: human-settlements
 sphere:

@@ -60,7 +60,17 @@ intro: "## Vote purpose\n\nFormulate, coordinate, implement and manage South Afr
 is_vote_primary: true
 name: International Relations and Cooperation
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: International Relations
+  total_budget: null
+- name: International Cooperation
+  total_budget: null
+- name: Public Diplomacy and Protocol Services
+  total_budget: null
+- name: International Transfers
+  total_budget: null
 selected_financial_year: 2018-19
 slug: international-relations-and-cooperation
 sphere:

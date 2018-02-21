@@ -50,7 +50,15 @@ intro: "## Vote purpose\n\nPromote the development of small businesses and coope
 is_vote_primary: true
 name: Small Business Development
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Sector Policy and Research
+  total_budget: null
+- name: Integrated Cooperative Development
+  total_budget: null
+- name: Enterprise Development and Entrepreneurship
+  total_budget: null
 selected_financial_year: 2018-19
 slug: small-business-development
 sphere:

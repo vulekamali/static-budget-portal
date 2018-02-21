@@ -67,7 +67,15 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Tourism
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Tourism Research, Policy and International Relations
+  total_budget: null
+- name: Destination Development
+  total_budget: null
+- name: Tourism Sector Support Services
+  total_budget: null
 selected_financial_year: 2018-19
 slug: tourism
 sphere:

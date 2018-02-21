@@ -61,7 +61,15 @@ intro: '## Vote purpose
 is_vote_primary: false
 name: Public Service Commission
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Leadership and Management Practices
+  total_budget: null
+- name: Monitoring and Evaluation
+  total_budget: null
+- name: Integrity and Anti-Corruption
+  total_budget: null
 selected_financial_year: 2018-19
 slug: public-service-commission
 sphere:

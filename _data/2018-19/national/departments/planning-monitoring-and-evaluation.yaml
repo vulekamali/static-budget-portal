@@ -54,7 +54,21 @@ intro: "## Vote purpose\n\nImprove government service delivery through integrate
 is_vote_primary: true
 name: Planning, Monitoring and Evaluation
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: National Planning Coordination
+  total_budget: null
+- name: Sector Planning and Monitoring
+  total_budget: null
+- name: Public Sector Monitoring and Capacity Development
+  total_budget: null
+- name: Frontline and Citizen-Based Service Delivery and Monitoring
+  total_budget: null
+- name: Evidence and Knowledge Systems
+  total_budget: null
+- name: National Youth Development
+  total_budget: null
 selected_financial_year: 2018-19
 slug: planning-monitoring-and-evaluation
 sphere:

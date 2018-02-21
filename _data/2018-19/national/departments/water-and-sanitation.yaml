@@ -50,7 +50,15 @@ intro: "## Vote purpose\n\nEnsure the availability of water resources to facilit
 is_vote_primary: true
 name: Water and Sanitation
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Water Planning and Information Management
+  total_budget: null
+- name: Water Infrastructure Development
+  total_budget: null
+- name: Water Sector Regulation
+  total_budget: null
 selected_financial_year: 2018-19
 slug: water-and-sanitation
 sphere:

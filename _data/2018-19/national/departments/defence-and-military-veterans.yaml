@@ -47,7 +47,23 @@ intro: "## Vote purpose\n\nDefend and protect the Republic of South Africa, its 
 is_vote_primary: true
 name: Defence and Military Veterans
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Force Employment
+  total_budget: null
+- name: Landward Defence
+  total_budget: null
+- name: Air Defence
+  total_budget: null
+- name: Maritime Defence
+  total_budget: null
+- name: Military Health Support
+  total_budget: null
+- name: Defence Intelligence
+  total_budget: null
+- name: General Support
+  total_budget: null
 selected_financial_year: 2018-19
 slug: defence-and-military-veterans
 sphere:

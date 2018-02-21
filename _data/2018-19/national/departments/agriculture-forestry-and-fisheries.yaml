@@ -48,7 +48,19 @@ intro: "## Vote purpose\n\nLead, support and promote agricultural, forestry and 
 is_vote_primary: true
 name: Agriculture, Forestry and Fisheries
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Agricultural Production, Health and Food Safety
+  total_budget: null
+- name: Food Security and Agrarian Reform
+  total_budget: null
+- name: Trade Promotion and Market Access
+  total_budget: null
+- name: Forestry and Natural Resources Management
+  total_budget: null
+- name: Fisheries
+  total_budget: null
 selected_financial_year: 2018-19
 slug: agriculture-forestry-and-fisheries
 sphere:

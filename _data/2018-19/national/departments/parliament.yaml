@@ -54,7 +54,19 @@ intro: "## Vote purpose\n\nProvide the support services required by Parliament t
 is_vote_primary: true
 name: Parliament
 organisational_unit: department
-programmes: []
+programmes:
+- name: Strategic Leadership and Governance
+  total_budget: null
+- name: Administration
+  total_budget: null
+- name: Core Business
+  total_budget: null
+- name: Support Services
+  total_budget: null
+- name: Associated Services
+  total_budget: null
+- name: Direct charge against the National Revenue Fund
+  total_budget: null
 selected_financial_year: 2018-19
 slug: parliament
 sphere:

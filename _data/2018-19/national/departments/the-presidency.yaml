@@ -44,7 +44,13 @@ intro: "## Vote purpose\n\nFacilitate a common programme towards the achievement
 is_vote_primary: true
 name: The Presidency
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Executive Support
+  total_budget: null
+- name: Direct charge against the National Revenue Fund
+  total_budget: null
 selected_financial_year: 2018-19
 slug: the-presidency
 sphere:

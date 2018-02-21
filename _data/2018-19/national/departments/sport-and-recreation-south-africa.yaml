@@ -52,7 +52,17 @@ intro: "## Vote purpose\n\nTransform the delivery of sport and recreation by ens
 is_vote_primary: true
 name: Sport and Recreation South Africa
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Active Nation
+  total_budget: null
+- name: Winning Nation
+  total_budget: null
+- name: Sport Support
+  total_budget: null
+- name: Sport Infrastructure Support
+  total_budget: null
 selected_financial_year: 2018-19
 slug: sport-and-recreation-south-africa
 sphere:

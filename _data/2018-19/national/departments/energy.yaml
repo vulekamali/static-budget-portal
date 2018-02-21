@@ -71,7 +71,19 @@ intro: "## Vote purpose\n\nFormulate energy policies, regulatory frameworks and 
 is_vote_primary: true
 name: Energy
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Energy Policy and Planning
+  total_budget: null
+- name: Petroleum and Petroleum Products Regulation
+  total_budget: null
+- name: Electrification and Energy Programme and Project Management
+  total_budget: null
+- name: Nuclear Energy
+  total_budget: null
+- name: Clean Energy
+  total_budget: null
 selected_financial_year: 2018-19
 slug: energy
 sphere:

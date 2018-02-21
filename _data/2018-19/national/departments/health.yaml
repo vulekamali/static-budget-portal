@@ -49,7 +49,19 @@ intro: "## Vote purpose\n\nProvide leadership and coordination of health service
 is_vote_primary: true
 name: Health
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: National Health Insurance, Health Planning and Systems Enablement
+  total_budget: null
+- name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+  total_budget: null
+- name: Primary Health Care Services
+  total_budget: null
+- name: Hospitals, Tertiary Health Services and Human Resource Development
+  total_budget: null
+- name: Health Regulation and Compliance Management
+  total_budget: null
 selected_financial_year: 2018-19
 slug: health
 sphere:

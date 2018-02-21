@@ -70,7 +70,17 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Telecommunications and Postal Services
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: International Affairs and Trade
+  total_budget: null
+- name: Policy, Research and Capacity Development
+  total_budget: null
+- name: ICT Enterprise Development and Public Entities Oversight
+  total_budget: null
+- name: ICT Infrastructure Support
+  total_budget: null
 selected_financial_year: 2018-19
 slug: telecommunications-and-postal-services
 sphere:

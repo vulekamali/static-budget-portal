@@ -60,7 +60,17 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Correctional Services
 organisational_unit: department
-programmes: []
+programmes:
+- name: Administration
+  total_budget: null
+- name: Incarceration
+  total_budget: null
+- name: Rehabilitation
+  total_budget: null
+- name: Care
+  total_budget: null
+- name: Social Reintegration
+  total_budget: null
 selected_financial_year: 2018-19
 slug: correctional-services
 sphere:
