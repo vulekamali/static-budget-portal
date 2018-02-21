@@ -26,7 +26,10 @@
 @import 'utilities/scss/utility-classes/u-underline';
 @import 'utilities/scss/utility-classes/u-fontWeight';
 @import 'utilities/scss/utility-classes/u-fontSize';
+@import 'utilities/scss/utility-classes/u-wordBreak';
+@import 'utilities/scss/utility-classes/u-fontStyle';
 
+@import 'components/universal/Modal/styles';
 @import 'components/universal/Tooltip/styles';
 @import 'components/universal/Page/styles';
 @import 'components/universal/PseudoSelect/styles';
@@ -46,6 +49,7 @@
 @import 'components/header-and-footer/SubLinks/styles';
 @import 'components/header-and-footer/HeaderBar/styles';
 @import 'components/header-and-footer/Logo/styles';
+@import 'components/header-and-footer/Disclaimer/styles';
 
 @import 'components/homepage/Related/styles';
 @import 'components/homepage/Circles/styles';

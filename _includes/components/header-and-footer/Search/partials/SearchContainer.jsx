@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import SearchMarkup from './SearchMarkup.jsx';
 import analyticsEvents from './../../../../utilities/js/helpers/analyticsEvent.js';
 import { apiBaseURL } from '../../../../utilities/config/global.json';
+import removePunctuation from '../../../../utilities/js/helpers/removePunctuation.js';
+
 
 export default class SearchContainer extends Component {
   constructor(props) {
@@ -110,7 +112,7 @@ export default class SearchContainer extends Component {
       this.setState({ count: null });
 
       const request = () => {
-        return this.sendGetRequest(newKeywords)
+        return this.sendGetRequest(removePunctuation(newKeywords))
           .then(({ itemsArray, count }) => {
             this.setState({ count });
             this.setState({ timeoutId: null });

@@ -9,8 +9,10 @@
   font-size: 28px;
   line-height: 1.29;
   padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
+
+  @media screen and (min-width: 750px) {
+    padding-left: 20px;
+  }
 
   &.is-noPadding {
     padding-bottom: 0;

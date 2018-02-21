@@ -32,7 +32,7 @@ export default class GraphContainer extends Component {
     const breakpointsConfig = {
       490: () => this.setState({
         valueSpace: 200,
-        padding: [0, 100, 80, 10],
+        padding: [0, 110, 80, 10],
         lineGutter: 25,
         popupHeight: 25,
         popupCentre: 5,
@@ -47,7 +47,7 @@ export default class GraphContainer extends Component {
       }),
       550: () => this.setState({
         valueSpace: 300,
-        padding: [0, 100, 80, 0],
+        padding: [0, 110, 80, 0],
         lineGutter: 25,
         popupHeight: 25,
         popupCentre: 5,
@@ -63,7 +63,7 @@ export default class GraphContainer extends Component {
       700: () => this.setState({
         buffer: 20,
         valueSpace: 400,
-        padding: [0, 100, 80, 0],
+        padding: [0, 110, 80, 0],
         lineGutter: 15,
         popupHeight: 25,
         popupCentre: 5,
@@ -77,7 +77,7 @@ export default class GraphContainer extends Component {
       }),
       1080: () => this.setState({
         valueSpace: 500,
-        padding: [0, 100, 60, 0],
+        padding: [0, 110, 60, 0],
         lineGutter: 8,
         popupHeight: 30,
         popupCentre: 5,
