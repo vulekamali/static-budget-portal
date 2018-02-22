@@ -1,17 +1,4 @@
-{% if page.financial_year == '2015-16' %}
-  {% assign shortYear = '2015' %}
-{% elsif page.financial_year == '2016-17' %}
-  {% assign shortYear = '2016' %}
-{% elsif page.financial_year == '2017-18' %}
-  {% assign shortYear = '2017' %}
-{% elsif page.financial_year == '2018-19' %}
-  {% assign shortYear = '2018' %}
-{% else %}
-  {% assign shortYear = page.financial_year %}
-{% endif %}
-
-
 <div class="Expenditure">
-  <div class="Expenditure-title">How Government spends its money for {{ shortYear }}</div>
-  <div class="Expenditure-data" data-info='{ "data": {{ include.info | jsonify }} }' data-year="{{ shortYear }}"></div>
+  <div class="Expenditure-title">How Government spends its money for <span class="u-whiteSpace u-whiteSpace--noWrap">{{ page.financial_year }}</span></div>
+  <div class="Expenditure-data" data-info='{ "data": {{ include.info | jsonify }} }' data-year="{{ page.financial_year }}"></div>
 </div>

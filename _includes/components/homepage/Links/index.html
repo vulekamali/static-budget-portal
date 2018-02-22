@@ -1,18 +1,5 @@
-{% if page.financial_year == '2015-16' %}
-  {% assign shortYear = '2015' %}
-{% elsif page.financial_year == '2016-17' %}
-  {% assign shortYear = '2016' %}
-{% elsif page.financial_year == '2017-18' %}
-  {% assign shortYear = '2017' %}
-{% elsif page.financial_year == '2018-19' %}
-  {% assign shortYear = '2018' %}
-{% else %}
-  {% assign shortYear = page.financial_year %}
-{% endif %}
-
-
 <div class="Links">
-  <div class="Links-title">National Budget {{ shortYear }} Resources from Treasury</div>
+  <div class="Links-title">National Budget {{ page.financial_year | split: "-" | first }} Resources from Treasury</div>
   <div class="Links-description">Below are a collection of links to resources that are available on the South African National Treasury website. </div>
 
   {% if include.webcast %} 
@@ -113,7 +100,7 @@
 
   {% if include.resources_link %}
     <div class="Links-linkWrap">
-      <a href="{{ include.resources_link }} " target="_blank" class="Links-link">Explore all National Budget {{ shortYear }} Resources from National Treasury</a>
+      <a href="{{ include.resources_link }} " target="_blank" class="Links-link">Explore all National Budget {{ page.financial_year | split: "-" | first }} Resources from National Treasury</a>
     </div>
   {% endif %}
 
