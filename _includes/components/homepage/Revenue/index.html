@@ -1,5 +1,18 @@
+{% if page.financial_year == '2015-16' %}
+  {% assign shortYear = '2015' %}
+{% elsif page.financial_year == '2016-17' %}
+  {% assign shortYear = '2016' %}
+{% elsif page.financial_year == '2017-18' %}
+  {% assign shortYear = '2017' %}
+{% elsif page.financial_year == '2018-19' %}
+  {% assign shortYear = '2018' %}
+{% else %}
+  {% assign shortYear = page.financial_year %}
+{% endif %}
+
+
 <div class="Revenue">
-  <div class="Revenue-heading">Where National Government gets its money for <nobr>{{ include.year }}</nobr></div>
+  <div class="Revenue-heading">Where National Government gets its money for {{ shortYear }}</div>
   <div 
     class="Revenue-container"
     data-info='{ "data": {{ include.info | jsonify }} }'
