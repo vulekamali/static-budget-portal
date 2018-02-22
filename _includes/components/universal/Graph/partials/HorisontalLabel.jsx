@@ -46,6 +46,7 @@ export default function HorisontalLabel({ totalGroupSpace, groupSpaceArray, rank
         x={padding[3] + buffer + previousSpace + generateToScale(groupSpace / 2)}
         y={padding[0] + totalGroupSpace + (buffer * 2) + fontSize}
         fontSize={fontSize}
+        font-family="sans-serif"
       >
         {title}
       </text>

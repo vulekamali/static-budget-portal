@@ -68,6 +68,7 @@ export default function VerticalTooltip({ styling, xTriggerPosition, xPosition, 
         y={yPosition + (popupHeight / 2) + (popupFontSize / 2)}
         fontSize={popupFontSize}
         className="Graph-tooltipText"
+        font-family="sans-serif"
       >
         {trimValues(amount)}
       </text>

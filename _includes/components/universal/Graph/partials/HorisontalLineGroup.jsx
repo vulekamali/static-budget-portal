@@ -53,6 +53,7 @@ export default function HorisontalLineGroup({ totalGroupSpace, groupSpaceArray, 
               className="Graph-label Graph-label--leftAlign"
               y={padding[0] + previousSpace + (groupMargin / 2) + (charLineHeight * index)}
               x={padding[3] + buffer}
+              font-family="sans-serif"
             >
               {val}
             </text>

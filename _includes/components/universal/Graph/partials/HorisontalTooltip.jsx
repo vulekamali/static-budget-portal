@@ -72,6 +72,7 @@ export default function HorisontalTooltip({ styling, xTriggerPosition, xPosition
         y={yPosition + popupCentre}
         fontSize={popupFontSize}
         className="Graph-tooltipText"
+        font-family="sans-serif"
       >
         {trimValues(amount)}
       </text>
