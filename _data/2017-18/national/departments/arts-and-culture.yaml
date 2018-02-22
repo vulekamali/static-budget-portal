@@ -34,6 +34,14 @@ financial_years:
     url_path: /2017-18/national/departments/arts-and-culture
   id: 2017-18
   is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Arts and Culture
+    organisational_unit: department
+    slug: arts-and-culture
+    url_path: /2018-19/national/departments/arts-and-culture
+  id: 2018-19
+  is_selected: false
 government:
   name: South Africa
   slug: south-africa

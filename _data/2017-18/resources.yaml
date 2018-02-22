@@ -17,6 +17,12 @@ financial_years:
     url_path: /2017-18/resources
   id: 2017-18
   is_selected: true
+- closest_match:
+    is_exact_match: true
+    slug: resources
+    url_path: /2018-19/resources
+  id: 2018-19
+  is_selected: false
 organisational_unit: learning
 selected_financial_year: 2017-18
 slug: resources

@@ -27,6 +27,14 @@ financial_years:
     url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-health-2014-15
   id: 2017-18
   is_selected: true
+- closest_match:
+    is_exact_match: false
+    name: 2018-19
+    organisational_unit: department-list
+    slug: 2018-19
+    url_path: /2018-19/departments
+  id: 2018-19
+  is_selected: false
 intro: Analysis of the Eastern Cape Department of Health's budget allocation for the
   financial year 2014/15.
 last_updated: '2018-02-01T12:24:33.071656'

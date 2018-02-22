@@ -1,0 +1,113 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Transport
+    organisational_unit: department
+    slug: transport
+    url_path: /2015-16/national/departments/transport
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Transport
+    organisational_unit: department
+    slug: transport
+    url_path: /2016-17/national/departments/transport
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Transport
+    organisational_unit: department
+    slug: transport
+    url_path: /2017-18/national/departments/transport
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Transport
+    organisational_unit: department
+    slug: transport
+    url_path: /2018-19/national/departments/transport
+  id: 2018-19
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+government_functions: []
+intro: '## Vote purpose
+
+
+  Lead the provision of an integrated, sustainable, reliable and safe transport system
+  through planning, developing, coordinating, promoting and implementing transport
+  policies, regulations and strategies.
+
+
+  ## Mandate
+
+
+  The Constitution identifies the legislative responsibilities of different spheres
+  of government with regards to airports and civil aviation, road infrastructure,
+  rail transport, maritime transport, road traffic management and public transport.
+  Transport is a function that is legislated and executed at the national, provincial
+  and local government levels. The implementation of transport functions at the national
+  level takes place through public entities that are overseen by the department, each
+  with a specific delivery mandate, as specified in legislation establishing these
+  entities.
+
+
+  The 1996 White Paper on Transport defines the infrastructure and operations of rail,
+  pipelines, roads, airports, harbours, and the intermodal operations of public transport
+  and freight. The Department of Transport is responsible for the legislation and
+  policies for all these sub-sectors. The department is therefore responsible for
+  conducting sector research, formulating legislation and policy to set the strategic
+  direction of sub-sectors, assigning responsibilities to public entities and other
+  spheres of government, regulating through setting norms and standards, and monitoring
+  implementation.
+
+
+  '
+is_vote_primary: true
+name: Transport
+organisational_unit: department
+programmes:
+- name: Administration
+  total_budget: 430077000.0
+- name: Direct charge against the National Revenue Fund
+  total_budget: 10200000.0
+- name: Integrated Transport Planning
+  total_budget: 89982000.0
+- name: Rail Transport
+  total_budget: 18887279000.0
+- name: Road Transport
+  total_budget: 27098760000.0
+- name: Civil Aviation
+  total_budget: 182253000.0
+- name: Maritime Transport
+  total_budget: 119925000.0
+- name: Public Transport
+  total_budget: 12990018000.0
+selected_financial_year: 2018-19
+slug: transport
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
+  ENE for Vote 35 - Transport:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2035%20Transport.pdf
+  ENE for Vote 35 - Transport - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-transport-2018-19/resource/65f8794b-e12b-4f3e-965c-83d75445e733/download/ene18-vote35_chaptertables.xlsx
+vote_number: 35
+vote_primary:
+  name: Transport
+  slug: transport
+  url_path: /2018-19/national/departments/transport

@@ -1,0 +1,93 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Public Works
+    organisational_unit: department
+    slug: public-works
+    url_path: /2015-16/national/departments/public-works
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Public Works
+    organisational_unit: department
+    slug: public-works
+    url_path: /2016-17/national/departments/public-works
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Public Works
+    organisational_unit: department
+    slug: public-works
+    url_path: /2017-18/national/departments/public-works
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Public Works
+    organisational_unit: department
+    slug: public-works
+    url_path: /2018-19/national/departments/public-works
+  id: 2018-19
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+government_functions: []
+intro: "## Vote purpose\n\nProvide policy formulation for, as well as coordination,\
+  \ regulation and oversight of, the public works sector in relation to the accommodation,\
+  \ housing, land and infrastructure needs of national departments. Enhance intergovernmental\
+  \ relations by coordinating concurrent public works functions. Lead and direct the\
+  \ implementation of the national expanded public works programme. Promote growth,\
+  \ job creation and transformation in the construction and property industries.\n\
+  \n## Mandate\n\nAs set out in the Government Immovable Asset Management Act (2007),\
+  \ the Department of Public Works is mandated to be the custodian and portfolio manager\
+  \ of government\u2019s immovable assets. Following the shift of functions in 2015/16,\
+  \ the department\u2019s role now consists of policy formulation, coordination, regulation\
+  \ and oversight relating to the provision of accommodation and expert built environment\
+  \ services to client departments at national level; and, through the Property Management\
+  \ Trading Entity, the planning, acquiring, managing and disposing of immovable assets\
+  \ in the department\u2019s custody. The department is further mandated to coordinate\
+  \ and provide strategic leadership in job creation initiatives through the implementation\
+  \ of the expanded public works programme. Public works is constitutionally designated\
+  \ as a concurrent function exercised by the national and provincial spheres of government.\n\
+  \n"
+is_vote_primary: true
+name: Public Works
+organisational_unit: department
+programmes:
+- name: Administration
+  total_budget: 480349000.0
+- name: Intergovernmental Coordination
+  total_budget: 58101000.0
+- name: Expanded Public Works Programme
+  total_budget: 2566632000.0
+- name: Property and Construction Industry Policy and Research
+  total_budget: 4250353000.0
+- name: Prestige Policy
+  total_budget: 97891000.0
+selected_financial_year: 2018-19
+slug: public-works
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
+  ENE for Vote 11 - Public Works:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2011%20Public%20Works.pdf
+  ENE for Vote 11 - Public Works - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-public-works-2018-19/resource/522517d6-ba71-458b-a0d3-ae4ac04b8759/download/ene18-vote11_chaptertables.xlsx
+vote_number: 11
+vote_primary:
+  name: Public Works
+  slug: public-works
+  url_path: /2018-19/national/departments/public-works

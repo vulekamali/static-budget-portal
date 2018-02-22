@@ -24,6 +24,14 @@ financial_years:
     url_path: /2017-18/provincial/gauteng/departments/roads-and-transport
   id: 2017-18
   is_selected: false
+- closest_match:
+    is_exact_match: false
+    name: Gauteng
+    organisational_unit: government
+    slug: gauteng
+    url_path: /2018-19/provincial/gauteng
+  id: 2018-19
+  is_selected: false
 government:
   name: Gauteng
   slug: gauteng

@@ -1,0 +1,84 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Water and Sanitation
+    organisational_unit: department
+    slug: water-and-sanitation
+    url_path: /2015-16/national/departments/water-and-sanitation
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Water and Sanitation
+    organisational_unit: department
+    slug: water-and-sanitation
+    url_path: /2016-17/national/departments/water-and-sanitation
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Water and Sanitation
+    organisational_unit: department
+    slug: water-and-sanitation
+    url_path: /2017-18/national/departments/water-and-sanitation
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Water and Sanitation
+    organisational_unit: department
+    slug: water-and-sanitation
+    url_path: /2018-19/national/departments/water-and-sanitation
+  id: 2018-19
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+government_functions: []
+intro: "## Vote purpose\n\nEnsure the availability of water resources to facilitate\
+  \ equitable and sustainable socioeconomic development, and ensure universal access\
+  \ to water and sanitation services.\n\n## Mandate\n\nThe mandate of the Department\
+  \ of Water and Sanitation is set out in the National Water Act (1998) and the Water\
+  \ Services Act (1997). The department\u2019s legislative mandate is to ensure that\
+  \ the country\u2019s water resources are protected, managed, used, developed, conserved\
+  \ and controlled by regulating and supporting the delivery of effective water supply\
+  \ and sanitation. This is done in accordance with the requirements of water-related\
+  \ policies and legislation that are critical in delivering on the people\u2019s\
+  \ right to have sufficient food and water, growing the economy, and eradicating\
+  \ poverty.\n\n"
+is_vote_primary: true
+name: Water and Sanitation
+organisational_unit: department
+programmes:
+- name: Administration
+  total_budget: 1714639000.0
+- name: Water Planning and Information Management
+  total_budget: 862122000.0
+- name: Water Infrastructure Development
+  total_budget: 12496165000.0
+- name: Water Sector Regulation
+  total_budget: 498592000.0
+selected_financial_year: 2018-19
+slug: water-and-sanitation
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
+  ENE for Vote 36 - Water and Sanitation:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2036%20Water%20and%20Sanitation.pdf
+  ENE for Vote 36 - Water and Sanitation - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-water-and-sanitation-2018-19/resource/9730e32b-1c59-4e60-9dcc-f343f37bc7fc/download/ene18-vote36_chaptertables.xlsx
+vote_number: 36
+vote_primary:
+  name: Water and Sanitation
+  slug: water-and-sanitation
+  url_path: /2018-19/national/departments/water-and-sanitation

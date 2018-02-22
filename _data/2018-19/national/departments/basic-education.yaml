@@ -1,0 +1,87 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Basic Education
+    organisational_unit: department
+    slug: basic-education
+    url_path: /2015-16/national/departments/basic-education
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Basic Education
+    organisational_unit: department
+    slug: basic-education
+    url_path: /2016-17/national/departments/basic-education
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Basic Education
+    organisational_unit: department
+    slug: basic-education
+    url_path: /2017-18/national/departments/basic-education
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Basic Education
+    organisational_unit: department
+    slug: basic-education
+    url_path: /2018-19/national/departments/basic-education
+  id: 2018-19
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+government_functions: []
+intro: "## Vote purpose\n\nDevelop, maintain and support a South African school education\
+  \ system for the 21st century.\n\n## Mandate\n\nThe Department of Basic Education\
+  \ derives its mandate from the following legislation:\n\n * the National Education\
+  \ Policy Act (1996), which inscribed into law the policies, the legislative and\
+  \ monitoring responsibilities of the Minister of Basic Education, and the formal\
+  \ relations between national and provincial authorities\n * the South African Schools\
+  \ Act (1996), which promotes access to education, promotes quality and democratic\
+  \ governance in the schooling system, and makes schooling compulsory for children\
+  \ aged 7 to 15, to ensure that all learners have access to quality education without\
+  \ discrimination\n * the Employment of Educators Act (1998), which regulates the\
+  \ professional, moral and ethical responsibilities of educators, as well as the\
+  \ competency requirements for teachers.\n\n"
+is_vote_primary: true
+name: Basic Education
+organisational_unit: department
+programmes:
+- name: Administration
+  total_budget: 450476000.0
+- name: Curriculum Policy, Support and Monitoring
+  total_budget: 1905011000.0
+- name: Teachers, Education Human Resources and Institutional Development
+  total_budget: 1290480000.0
+- name: Planning, Information and Assessment
+  total_budget: 11971342000.0
+- name: Educational Enrichment Services
+  total_budget: 7105128000.0
+selected_financial_year: 2018-19
+slug: basic-education
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
+  ENE for Vote 14 - Basic Education:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2014%20Basic%20Education.pdf
+  ENE for Vote 14 - Basic Education - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-basic-education-2018-19/resource/39d3dcb7-5c04-4c4b-919b-457ee591a21c/download/ene18-vote14_chaptertables.xlsx
+vote_number: 14
+vote_primary:
+  name: Basic Education
+  slug: basic-education
+  url_path: /2018-19/national/departments/basic-education
