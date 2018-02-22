@@ -1,0 +1,84 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Mineral Resources
+    organisational_unit: department
+    slug: mineral-resources
+    url_path: /2015-16/national/departments/mineral-resources
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Mineral Resources
+    organisational_unit: department
+    slug: mineral-resources
+    url_path: /2016-17/national/departments/mineral-resources
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Mineral Resources
+    organisational_unit: department
+    slug: mineral-resources
+    url_path: /2017-18/national/departments/mineral-resources
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Mineral Resources
+    organisational_unit: department
+    slug: mineral-resources
+    url_path: /2018-19/national/departments/mineral-resources
+  id: 2018-19
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+government_functions: []
+intro: "## Vote purpose\n\nPromote and regulate the minerals and mining sector for\
+  \ transformation, growth and development. Ensure that all South Africans derive\
+  \ sustainable benefits from the country\u2019s mineral wealth. \n\n## Mandate\n\n\
+  The mandate of the Department of Mineral Resources is broadly informed by:\n\n *\
+  \ the Mineral and Petroleum Resources Development Act (2002), which provides the\
+  \ regulatory framework for equitable access to and the sustainable development of\
+  \ mineral resources and related matters\n * the Mine Health and Safety Act (1996),\
+  \ which governs mine health and safety\n * the 1998 White Paper on Minerals and\
+  \ Mining Policy for South Africa, which ensures the transparent and efficient regulation\
+  \ of the development of South Africa\u2019s mineral resources and mineral industry\
+  \ to meet national objectives and bring optimum benefit to the nation.\n\n"
+is_vote_primary: true
+name: Mineral Resources
+organisational_unit: department
+programmes:
+- name: Administration
+  total_budget: 327000000.0
+- name: Mine Health and Safety
+  total_budget: 205037000.0
+- name: Mineral Regulation
+  total_budget: 393606000.0
+- name: Mineral Policy and Promotion
+  total_budget: 965018000.0
+selected_financial_year: 2018-19
+slug: mineral-resources
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
+  ENE for Vote 29 - Mineral Resources:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2029%20Mineral%20Resources.pdf
+  ENE for Vote 29 - Mineral Resources - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-mineral-resources-2018-19/resource/f00eacf3-cfe7-424c-a76f-cdd26568c062/download/ene18-vote29_chaptertables.xlsx
+vote_number: 29
+vote_primary:
+  name: Mineral Resources
+  slug: mineral-resources
+  url_path: /2018-19/national/departments/mineral-resources

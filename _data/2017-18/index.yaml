@@ -17,6 +17,12 @@ financial_years:
     url_path: /2017-18
   id: 2017-18
   is_selected: true
+- closest_match:
+    is_exact_match: true
+    slug: 2018-19
+    url_path: /2018-19
+  id: 2018-19
+  is_selected: false
 organisational_unit: financial_year
 revenue:
 - amount: '482085860000'

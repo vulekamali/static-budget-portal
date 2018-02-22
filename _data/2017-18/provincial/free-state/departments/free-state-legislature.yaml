@@ -24,6 +24,14 @@ financial_years:
     url_path: /2017-18/provincial/free-state/departments/free-state-legislature
   id: 2017-18
   is_selected: true
+- closest_match:
+    is_exact_match: false
+    name: Free State
+    organisational_unit: government
+    slug: free-state
+    url_path: /2018-19/provincial/free-state
+  id: 2018-19
+  is_selected: false
 government:
   name: Free State
   slug: free-state

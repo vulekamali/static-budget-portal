@@ -3,8 +3,8 @@ layout: page-shell
 ---
 
 {% assign page_data = site.data[page.financial_year].index %}
+{% assign resources_data = site.data[page.financial_year].manual_resources %}
 {% assign government_functions = site.data[page.financial_year].government_functions %}
-{% assign resources_data = site.data[page.financial_year].resources %}
 {% assign circles_data = site.data[page.financial_year].circles %}
 
 {% if page.financial_year == '2015-16' %}
@@ -34,6 +34,7 @@ layout: page-shell
         <div>
             {%
               include components/homepage/Links/index.html
+              resources_link=resources_data.resources_link.url
               speech=resources_data.budget_speech.url
               webcast=resources_data.budget_webcast.url
               highlights=resources_data.highlights.url

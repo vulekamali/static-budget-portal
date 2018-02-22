@@ -24,6 +24,14 @@ financial_years:
     url_path: /2017-18/national/departments/parliament
   id: 2017-18
   is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Parliament
+    organisational_unit: department
+    slug: parliament
+    url_path: /2018-19/national/departments/parliament
+  id: 2018-19
+  is_selected: false
 government:
   name: South Africa
   slug: south-africa
