@@ -14,7 +14,7 @@ import HorisontalTooltipsList from './HorisontalTooltipsList.jsx';
 
 
 export default function GraphMarkup({ items, styling, legend, year }) {
-  const { valueSpace, padding } = styling;
+  const { valueSpace, padding, showGuides } = styling;
   const groupSpaceArray = buildGroupSpaceArray(items, styling);
   const totalGroupSpace = groupSpaceArray.reduce((result, val) => result + val, 0);
   const height = padding[0] + totalGroupSpace + padding[2];
@@ -40,9 +40,10 @@ export default function GraphMarkup({ items, styling, legend, year }) {
         xmlns="http://www.w3.org/2000/svg"
         viewBox={`0 0 ${width} ${height}`}
         {...{ width, height }}
+        style={{ maxWidth: width }}
       >
         <HorisontalBreakpointsList {...{ styling, totalGroupSpace }} />
-        <HorisontalGuidesList {...{ styling, totalGroupSpace }} />
+        {showGuides ? <HorisontalGuidesList {...{ styling, totalGroupSpace }} /> : null}
         <Grid {...{ styling, totalGroupSpace }} />
         <HorisontalLineGroupList {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
         <HorisontalTooltipsList {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
