@@ -1,0 +1,84 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Public Enterprises
+    organisational_unit: department
+    slug: public-enterprises
+    url_path: /2015-16/national/departments/public-enterprises
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Public Enterprises
+    organisational_unit: department
+    slug: public-enterprises
+    url_path: /2016-17/national/departments/public-enterprises
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Public Enterprises
+    organisational_unit: department
+    slug: public-enterprises
+    url_path: /2017-18/national/departments/public-enterprises
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Public Enterprises
+    organisational_unit: department
+    slug: public-enterprises
+    url_path: /2018-19/national/departments/public-enterprises
+  id: 2018-19
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+government_functions: []
+intro: "## Vote purpose\n\nDrive investment, productivity and transformation in the\
+  \ department\u2019s portfolio of state-owned companies to unlock growth, drive industrialisation,\
+  \ create jobs and develop skills. \n\n## Mandate\n\nThe Department of Public Enterprises\
+  \ is government\u2019s shareholder representative for the state-owned companies\
+  \ in its portfolio. The department\u2019s mandate is to fulfil oversight responsibilities\
+  \ at these\nstate-owned companies to ensure that they contribute to the realisation\
+  \ of government\u2019s strategic objectives, as articulated in the National Development\
+  \ Plan (NDP), government\u2019s 2014-2019 medium-term strategic framework, the new\
+  \ growth path and the industrial policy action plan. State-owned companies are crucial\
+  \ to driving the state\u2019s strategic objectives of creating jobs, and enhancing\
+  \ equity and transformation. The department does not directly execute programmes\
+  \ but seeks to use state ownership in the economy to support the achievement of\
+  \ these objectives.\n\n"
+is_vote_primary: true
+name: Public Enterprises
+organisational_unit: department
+programmes:
+- name: Administration
+  total_budget: 151979000.0
+- name: State-owned Companies Governance Assurance and Performance
+  total_budget: 39084000.0
+- name: Business Enhancement, Transformation and Industrialisation
+  total_budget: 82851000.0
+selected_financial_year: 2018-19
+slug: public-enterprises
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
+  ENE for Vote 9 - Public Enterprises:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2009%20Public%20Enterprises.pdf
+  ENE for Vote 9 - Public Enterprises - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-public-enterprises-2018-19/resource/fc1638b9-b24c-406f-904e-91f00bef9e63/download/ene18-vote09_chaptertables.xlsx
+vote_number: 9
+vote_primary:
+  name: Public Enterprises
+  slug: public-enterprises
+  url_path: /2018-19/national/departments/public-enterprises

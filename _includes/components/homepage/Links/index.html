@@ -1,6 +1,5 @@
-
 <div class="Links">
-  <div class="Links-title">National Budget {{ page.financial_year }} Resources from Treasury</div>
+  <div class="Links-title">National Budget {{ page.financial_year | split: "-" | first }} Resources from Treasury</div>
   <div class="Links-description">Below are a collection of links to resources that are available on the South African National Treasury website. </div>
 
   {% if include.webcast %} 
@@ -101,7 +100,7 @@
 
   {% if include.resources_link %}
     <div class="Links-linkWrap">
-      <a href="{{ include.resources_link }} " target="_blank" class="Links-link">Explore all National Budget {{ page.financial_year }} Resources from National Treasury</a>
+      <a href="{{ include.resources_link }} " target="_blank" class="Links-link">Explore all National Budget {{ page.financial_year | split: "-" | first }} Resources from National Treasury</a>
     </div>
   {% endif %}
 
