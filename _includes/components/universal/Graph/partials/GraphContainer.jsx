@@ -130,10 +130,10 @@ export default class GraphContainer extends Component {
       return window.navigator.msSaveBlob(blob, 'chart.png', { scaleWidth: 10, scaleHeight: 10 });
     }
 
-    // const link = document.createElement('a');
-    // link.download = 'chart.png';
-    // link.href = this.canvas.toDataURL();
-    // return link.click();
+    const link = document.createElement('a');
+    link.download = 'chart.png';
+    link.href = this.canvas.toDataURL();
+    return link.click();
   }
 
   addCanvas(node) {

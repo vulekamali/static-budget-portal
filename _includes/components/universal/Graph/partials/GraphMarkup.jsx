@@ -32,60 +32,22 @@ const hardCoded = [
 
 
 const screenshotsProps = {
-  small: {
-    valueSpace: 1000,
-    popupWidth: 90,
-    popUpOffset: 6,
-    buffer: 20,
-    fontSize: 14,
-    popupFontSize: 14,
-    padding: [0, 100, 60, 0],
-    lineGutter: 8,
-    popupHeight: 30,
-    popupCentre: 5,
-    barWidth: 12,
-    groupMargin: 40,
-    charWrap: 65,
-    charLineHeight: 14,
-    titleSpace: 0,
-    labelBreakpoints: 4,
-  },
-  medium: {
-    valueSpace: 2000,
-    popupWidth: 90,
-    popUpOffset: 6,
-    buffer: 20,
-    fontSize: 14,
-    popupFontSize: 14,
-    padding: [0, 100, 60, 0],
-    lineGutter: 8,
-    popupHeight: 30,
-    popupCentre: 5,
-    barWidth: 12,
-    groupMargin: 40,
-    charWrap: 65,
-    charLineHeight: 14,
-    titleSpace: 0,
-    labelBreakpoints: 4,
-  },
-  large: {
-    valueSpace: 3000,
-    popupWidth: 90 * 3,
-    popUpOffset: 6 * 3,
-    buffer: 20 * 3,
-    fontSize: 14 * 3,
-    popupFontSize: 14 * 3,
-    padding: [0 * 3, 100 * 3, 60 * 3, 0 * 3],
-    lineGutter: 8 * 3,
-    popupHeight: 30 * 3,
-    popupCentre: 5 * 3,
-    barWidth: 12 * 3,
-    groupMargin: 40 * 3,
-    charWrap: 65 * 3,
-    charLineHeight: 14 * 3,
-    titleSpace: 0 * 3,
-    labelBreakpoints: 4 * 3,
-  },
+  valueSpace: 600,
+  popupWidth: 90,
+  popUpOffset: 6,
+  buffer: 20,
+  fontSize: 14,
+  popupFontSize: 14,
+  padding: [30, 140, 90, 30],
+  lineGutter: 8,
+  popupHeight: 30,
+  popupCentre: 5,
+  barWidth: 12,
+  groupMargin: 40,
+  charWrap: 65,
+  charLineHeight: 14,
+  titleSpace: 0,
+  labelBreakpoints: 4,
 };
 
 export default function GraphMarkup({ items, styling, legend, year, addCanvas, downloadImage, open, setOpenState, selected, screenshotProps }) {
@@ -119,13 +81,14 @@ export default function GraphMarkup({ items, styling, legend, year, addCanvas, d
     >
       <HorisontalBreakpointsList {...{ styling, totalGroupSpace }} />
       <HorisontalGuidesList {...{ styling, totalGroupSpace }} />
+      <Grid {...{ styling, totalGroupSpace }} />
       {showGuides ? <HorisontalGuidesList {...{ styling, totalGroupSpace }} /> : null}
       <HorisontalLineGroupList {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
       <HorisontalTooltipsList {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
     </svg>
   );
 
-  const Screenshot = ({ stylingInput }) => {
+  const Screenshot = ({ stylingInput, scale }) => {
     const stylingOverride = {
       ...styling,
       ...stylingInput,
@@ -143,10 +106,19 @@ export default function GraphMarkup({ items, styling, legend, year, addCanvas, d
         className="Graph-svg Graph-svg--responsive"
         xmlns="http://www.w3.org/2000/svg"
         viewBox={`0 0 ${newWidth} ${newHeight}`}
-        height={newHeight}
-        width={newWidth}
+        height={newHeight * scale}
+        width={newWidth * scale}
         style={{ maxWidth: width }}
       >
+
+        <rect
+          x="0"
+          y="0"
+          width={newWidth}
+          height={newHeight}
+          fill="white"
+        />
+
         <HorisontalBreakpointsList styling={stylingOverride} totalGroupSpace={newTotalGroupSpace} />
         <HorisontalGuidesList styling={stylingOverride} totalGroupSpace={newTotalGroupSpace} />
         <Grid styling={stylingOverride} totalGroupSpace={newTotalGroupSpace} />
@@ -155,6 +127,10 @@ export default function GraphMarkup({ items, styling, legend, year, addCanvas, d
       </svg>
     );
   };
+
+
+  const svg = render(<Screenshot stylingInput={screenshotsProps} scale={selected} />);
+  const downloadEvent = () => downloadImage(svg);
 
 
   const download = (
@@ -170,18 +146,16 @@ export default function GraphMarkup({ items, styling, legend, year, addCanvas, d
         />
       </div>
       <div className="Graph-downloadButton">
-        <button className="Button" onClick={downloadImage}>Download</button>
+        <button className="Button" onClick={downloadEvent}>Download</button>
       </div>
     </div>
   );
 
-  const svg = render(<Screenshot stylingInput={screenshotsProps.large} />);
-
   return (
     <div>
-      <canvas ref={node => addCanvas(node)} />
+      <canvas ref={node => addCanvas(node)} style={{ display: 'none' }} />
       {barChart}
-      <button onClick={() => downloadImage(svg)}>DOWNLOAD</button>
+      {download}
     </div>
   );
 }
