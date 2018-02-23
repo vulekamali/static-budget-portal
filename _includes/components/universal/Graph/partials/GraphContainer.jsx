@@ -9,8 +9,8 @@ export default class GraphContainer extends Component {
     super(props);
 
     this.state = {
-      fontSize: null,
-      popupFontSize: null,
+      fontSize: 14,
+      popupFontSize: 14,
       barWidth: 12,
       lineGutter: 4,
       valueSpace: null,
@@ -26,13 +26,12 @@ export default class GraphContainer extends Component {
       charWrap: 10,
       charLineHeight: 20,
       titleSpace: 40,
+      showGuides: true,
     };
 
     const breakpointsConfig = {
       490: () => this.setState({
         valueSpace: 200,
-        fontSize: 55,
-        popupFontSize: 55,
         padding: [0, 110, 80, 10],
         lineGutter: 25,
         popupHeight: 25,
@@ -44,11 +43,10 @@ export default class GraphContainer extends Component {
         titleSpace: 25,
         buffer: 5,
         labelBreakpoints: 2,
+        showGuides: false,
       }),
       550: () => this.setState({
         valueSpace: 300,
-        fontSize: 55,
-        popupFontSize: 55,
         padding: [0, 110, 80, 0],
         lineGutter: 25,
         popupHeight: 25,
@@ -60,12 +58,11 @@ export default class GraphContainer extends Component {
         titleSpace: 25,
         buffer: 10,
         labelBreakpoints: 3,
+        showGuides: false,
       }),
       700: () => this.setState({
         buffer: 20,
         valueSpace: 400,
-        fontSize: 24,
-        popupFontSize: 24,
         padding: [0, 110, 80, 0],
         lineGutter: 15,
         popupHeight: 25,
@@ -76,11 +73,10 @@ export default class GraphContainer extends Component {
         charLineHeight: 20,
         titleSpace: 0,
         labelBreakpoints: 4,
+        showGuides: false,
       }),
       1080: () => this.setState({
         valueSpace: 500,
-        fontSize: 14,
-        popupFontSize: 14,
         padding: [0, 110, 60, 0],
         lineGutter: 8,
         popupHeight: 30,
@@ -91,6 +87,7 @@ export default class GraphContainer extends Component {
         charLineHeight: 14,
         titleSpace: 0,
         labelBreakpoints: 4,
+        showGuides: true,
       }),
     };
 

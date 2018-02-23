@@ -256,6 +256,14 @@ financial_years:
     url_path: /2017-18/contributed-data
   id: 2017-18
   is_selected: true
+- closest_match:
+    is_exact_match: true
+    name: Contributed Data
+    organisational_unit: dataset-list
+    slug: contributed-data
+    url_path: /2018-19/contributed-data
+  id: 2018-19
+  is_selected: false
 organisational_unit: dataset-list
 selected_financial_year: 2017-18
 slug: contributed-data

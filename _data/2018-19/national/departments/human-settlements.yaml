@@ -1,0 +1,99 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Human Settlements
+    organisational_unit: department
+    slug: human-settlements
+    url_path: /2015-16/national/departments/human-settlements
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Human Settlements
+    organisational_unit: department
+    slug: human-settlements
+    url_path: /2016-17/national/departments/human-settlements
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Human Settlements
+    organisational_unit: department
+    slug: human-settlements
+    url_path: /2017-18/national/departments/human-settlements
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Human Settlements
+    organisational_unit: department
+    slug: human-settlements
+    url_path: /2018-19/national/departments/human-settlements
+  id: 2018-19
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+government_functions: []
+intro: '## Vote purpose
+
+
+  Facilitate the creation of sustainable human settlements and the improvement to
+  household quality of life.
+
+
+  ## Mandate
+
+
+  The Department of Human Settlements derives its core mandate and responsibilities
+  from section 26 of the Constitution and section 3 of the Housing Act (1997), read
+  in with conjunction approved policies and chapter 8 of the National Development
+  Plan (NDP). This allows the department, in collaboration with provinces and municipalities,
+  to establish and facilitate a sustainable national housing development process and
+  related interventions. The department does this by: determining national policy
+  and national norms and standards for housing and human settlements development;
+  setting broad national housing delivery goals; providing funding to provinces and
+  metropolitan cities; and monitoring the financial and non-financial performance
+  of provinces and municipalities against these goals. In executing these roles and
+  responsibilities, the department also builds capacity for provinces and municipalities;
+  and promotes consultation with all stakeholders in the housing delivery chain, including
+  other sector departments, civil society and the private sector.
+
+
+  '
+is_vote_primary: true
+name: Human Settlements
+organisational_unit: department
+programmes:
+- name: Administration
+  total_budget: 442650000.0
+- name: Human Settlements Policy, Strategy and Planning
+  total_budget: 89781000.0
+- name: Human Settlements Delivery Support
+  total_budget: 246005000.0
+- name: Housing Development Finance
+  total_budget: 31577280000.0
+selected_financial_year: 2018-19
+slug: human-settlements
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
+  ENE for Vote 38 - Human Settlements:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2038%20Human%20Settlements.pdf
+  ENE for Vote 38 - Human Settlements - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-human-settlements-2018-19/resource/fd6a6a36-6931-4e61-a435-22c8ef240395/download/ene18-vote38_chaptertables.xlsx
+vote_number: 38
+vote_primary:
+  name: Human Settlements
+  slug: human-settlements
+  url_path: /2018-19/national/departments/human-settlements

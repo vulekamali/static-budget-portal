@@ -14,6 +14,7 @@ YEAR_SLUGS = [
     '2015-16',
     '2016-17',
     '2017-18',
+    '2018-19',
 ]
 
 BASIC_PAGE_SLUGS = [
@@ -76,6 +77,7 @@ def write_financial_year(year_slug, static_path):
     r.raise_for_status()
     path = '_data%s/index.yaml' % static_path
 
+    ensure_file_dirs(path)
     with open(path, 'wb') as file:
         file.write(r.text)
 
@@ -88,6 +90,7 @@ def write_financial_year(year_slug, static_path):
             'active' if year['is_selected'] else 'link'
         ])
     file_path = ".%s/index.md" % static_path
+    ensure_file_dirs(file_path)
     with open(file_path, "wb") as outfile:
         outfile.write(
             ("---\n"

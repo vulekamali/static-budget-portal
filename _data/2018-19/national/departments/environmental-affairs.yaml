@@ -1,0 +1,107 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Environmental Affairs
+    organisational_unit: department
+    slug: environmental-affairs
+    url_path: /2015-16/national/departments/environmental-affairs
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Environmental Affairs
+    organisational_unit: department
+    slug: environmental-affairs
+    url_path: /2016-17/national/departments/environmental-affairs
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Environmental Affairs
+    organisational_unit: department
+    slug: environmental-affairs
+    url_path: /2017-18/national/departments/environmental-affairs
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Environmental Affairs
+    organisational_unit: department
+    slug: environmental-affairs
+    url_path: /2018-19/national/departments/environmental-affairs
+  id: 2018-19
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+government_functions: []
+intro: "## Vote purpose\n\nLead South Africa's environmental sector to achieve sustainable\
+  \ development towards a better quality of life for all. \n\n## Mandate\n\nThe Department\
+  \ of Environmental Affairs is mandated to give effect to the right of citizens to\
+  \ an environment that is not harmful to their health or wellbeing, and to have the\
+  \ environment protected for the benefit of present and future generations. To this\
+  \ end, the department provides leadership in environmental management, conservation\
+  \ and protection towards sustainability for the benefit of South Africans and the\
+  \ global community.\n\nThis mandate is derived from the following legislation:\n\
+  \n * the National Environmental Management Act (1998), which provides for specific\
+  \ legislation on biodiversity and heritage resources; oceans and coasts; climate\
+  \ change and air quality management; and waste and chemicals management\n * the\
+  \ National Environmental Management Amendment Act (2004), which streamlines the\
+  \ process of regulating and administering the environmental impact assessment process\n\
+  \ * the National Environmental Management: Protected Areas Amendment Act (2009),\
+  \ which provides for the assignment of national parks, special parks and heritage\
+  \ sites to South Africa in terms of the World Heritage Convention Act (1999)\n *\
+  \ the National Environmental Management: Biodiversity Act (2004), which significantly\
+  \ reforms South Africa\u2019s laws regulating biodiversity\n * the National Environmental\
+  \ Management: Air Quality and Atmospheric Act (2004), which reforms the law regulating\
+  \ air quality in order to protect the environment by providing reasonable measures\
+  \ for preventing pollution and ecological degradation, and securing ecologically\
+  \ sustainable development; and provides for national norms and standards regulating\
+  \ the monitoring of air quality\n * the National Environmental Management: Waste\
+  \ Act (2008), which reforms the law regulating waste management in order to protect\
+  \ health and the environment by providing reasonable measures for the prevention\
+  \ of pollution\n * the National Environmental Management: Integrated Coastal Management\
+  \ Act (2008), which promotes the conservation of the coastal environment and ensures\
+  \ sustainable development practices and the use of natural resources.\n\n"
+is_vote_primary: true
+name: Environmental Affairs
+organisational_unit: department
+programmes:
+- name: Administration
+  total_budget: 941820000.0
+- name: Legal, Authorisations, Compliance and Enforcement
+  total_budget: 189324000.0
+- name: Oceans and Coasts
+  total_budget: 491995000.0
+- name: Climate Change and Air Quality
+  total_budget: 294508000.0
+- name: Biodiversity and Conservation
+  total_budget: 773350000.0
+- name: Environmental Programmes
+  total_budget: 3871281000.0
+- name: Chemicals and Waste Management
+  total_budget: 550254000.0
+selected_financial_year: 2018-19
+slug: environmental-affairs
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
+  ENE for Vote 27 - Environmental Affairs:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2027%20Environmental%20Affairs.pdf
+  ENE for Vote 27 - Environmental Affairs - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-environmental-affairs-2018-19/resource/ccff34e2-d947-4545-8ccd-f3e030615bb9/download/ene18-vote27_chaptertables.xlsx
+vote_number: 27
+vote_primary:
+  name: Environmental Affairs
+  slug: environmental-affairs
+  url_path: /2018-19/national/departments/environmental-affairs

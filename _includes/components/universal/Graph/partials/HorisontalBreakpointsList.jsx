@@ -14,7 +14,7 @@ export default function HorisontalBreakpointsList({ items, styling, totalGroupSp
     <g className="Graph-verticalLabelList">
       {/* <rect
         x={padding[3] + buffer}
-        y={padding[0] + totalGroupSpace + buffer}
+        y={padding[0] + totalGroupSpace + (buffer * 2)}
         height={padding[2] - buffer}
         width={(padding[3] + valueSpace) - padding[1]}
         fill="red"

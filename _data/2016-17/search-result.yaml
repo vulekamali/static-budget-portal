@@ -17,6 +17,12 @@ financial_years:
     url_path: /2017-18/search-result
   id: 2017-18
   is_selected: false
+- closest_match:
+    is_exact_match: true
+    slug: search-result
+    url_path: /2018-19/search-result
+  id: 2018-19
+  is_selected: false
 organisational_unit: financial_year
 selected_financial_year: 2016-17
 slug: search-result

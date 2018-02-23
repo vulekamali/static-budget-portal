@@ -7,16 +7,11 @@ layout: page-shell
 {% assign government_functions = site.data[page.financial_year].government_functions %}
 {% assign circles_data = site.data[page.financial_year].circles %}
 
-
 <div class="Page-content">
   <div class="Page-contentWrap">
 
-    <div class="Card u-marginTop u-marginTop--20 u-marginBottom u-marginBottom--15">
-      The <a href="http://www.treasury.gov.za/documents/national%20budget/2018/default.aspx">2018-19 budget data</a> is currently being added to the vulekamali site and will be available soon.
-    </div>
-
     <div class="HomeLayout-titleWrap">
-      <span class="Page-title">The South African National Budget {{ page.financial_year }}</span>
+      <span class="Page-title">The South African National Budget {{ page.financial_year | split: "-" | first }}</span>
     </div>
 
     <div class="HomeLayout-description">vulekamali is a project by the South African National Treasury and Imali Yethu with the goal of making government budget data and processes accessible to all citizens & interested parties. <a href="/{{ page.financial_year }}/about">Read more about vulekamali.</a></div>
@@ -39,7 +34,7 @@ layout: page-shell
             %}
         </div>
 
-        <span class="HomeLayout-title js-tooltips" data-year="{{ page.financial_year }}">The national revenue fund, administered by the National Treasury,  is distributed to the three spheres of government.</span>
+        <span class="HomeLayout-title js-tooltips" data-year="{{ page.financial_year }}">The national revenue fund, administered by the National Treasury, is distributed to the three spheres of government.</span>
 
         <div>
           {%
