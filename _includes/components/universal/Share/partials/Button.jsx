@@ -3,13 +3,13 @@ import Icon from './Icon.jsx';
 import analyticsEvents from './../../../../utilities/js/helpers/analyticsEvent.js';
 
 
-export default function Button({ selected }) {
+export default function Button({ selected, updateModal }) {
   const url = encodeURIComponent(window.location.href);
   const message = encodeURIComponent("SA Budget Data from vulekamali");
 
   const copyText = () => {
     analyticsEvents('send', 'social', 'email', 'share', url);
-    window.prompt('Press Ctrl+C to copy this link to your clipboard', url);
+    updateModal(true);
   };
   const fbDirect = () => {
     analyticsEvents('send', 'social', 'facebook', 'share', url);

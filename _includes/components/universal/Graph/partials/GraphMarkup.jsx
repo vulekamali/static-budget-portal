@@ -88,9 +88,8 @@ const screenshotsProps = {
   },
 };
 
-
 export default function GraphMarkup({ items, styling, legend, year, addCanvas, downloadImage, open, setOpenState, selected, screenshotProps }) {
-  const { valueSpace, padding } = styling;
+  const { valueSpace, padding, showGuides } = styling;
   const groupSpaceArray = buildGroupSpaceArray(items, styling);
   const totalGroupSpace = groupSpaceArray.reduce((result, val) => result + val, 0);
   const height = padding[0] + totalGroupSpace + padding[2];
@@ -116,10 +115,11 @@ export default function GraphMarkup({ items, styling, legend, year, addCanvas, d
       xmlns="http://www.w3.org/2000/svg"
       viewBox={`0 0 ${width} ${height}`}
       {...{ width, height }}
+      style={{ maxWidth: width }}
     >
       <HorisontalBreakpointsList {...{ styling, totalGroupSpace }} />
       <HorisontalGuidesList {...{ styling, totalGroupSpace }} />
-      <Grid {...{ styling, totalGroupSpace }} />
+      {showGuides ? <HorisontalGuidesList {...{ styling, totalGroupSpace }} /> : null}
       <HorisontalLineGroupList {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
       <HorisontalTooltipsList {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
     </svg>
@@ -145,6 +145,7 @@ export default function GraphMarkup({ items, styling, legend, year, addCanvas, d
         viewBox={`0 0 ${newWidth} ${newHeight}`}
         height={newHeight}
         width={newWidth}
+        style={{ maxWidth: width }}
       >
         <HorisontalBreakpointsList styling={stylingOverride} totalGroupSpace={newTotalGroupSpace} />
         <HorisontalGuidesList styling={stylingOverride} totalGroupSpace={newTotalGroupSpace} />
@@ -154,6 +155,7 @@ export default function GraphMarkup({ items, styling, legend, year, addCanvas, d
       </svg>
     );
   };
+
 
   const download = (
     <div className="Graph-download">

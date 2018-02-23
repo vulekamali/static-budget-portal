@@ -1,0 +1,112 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Social Development
+    organisational_unit: department
+    slug: social-development
+    url_path: /2015-16/national/departments/social-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Social Development
+    organisational_unit: department
+    slug: social-development
+    url_path: /2016-17/national/departments/social-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Social Development
+    organisational_unit: department
+    slug: social-development
+    url_path: /2017-18/national/departments/social-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Social Development
+    organisational_unit: department
+    slug: social-development
+    url_path: /2018-19/national/departments/social-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+government_functions: []
+intro: "## Vote purpose\n\nEnsure protection against vulnerability by creating an\
+  \ enabling environment for the provision of a comprehensive, integrated and sustainable\
+  \ social development service. \n\n## Mandate\n\nThe Department of Social Development\
+  \ is not established in terms of a single act. Several pieces of legislation determine\
+  \ its mandate, many of which are under review. This includes the Social Assistance\
+  \ Act (2004), which provides a legislative framework for providing social assistance.\
+  \ The act sets out the different types of grants payable, as well as their qualifying\
+  \ criteria. It also makes provision for the establishment of the inspectorate for\
+  \ social assistance. Other pieces of legislation further define the department\u2019\
+  s mandate:\n\n * the Non-Profit Organisations Act (1997) establishes an administrative\
+  \ and regulatory framework within which non-profit organisations can conduct their\
+  \ affairs, and provides for their registration by the department\n * the Older Persons\
+  \ Act (2006) establishes a framework for empowering and protecting older persons,\
+  \ and promoting and maintaining their status, rights, wellbeing, safety and security.\
+  \ It provides for older persons to enjoy good quality services while staying with\
+  \ their families in their communities for as long as possible. It also makes provision\
+  \ for older persons to live in residential care facilities\n * the Children\u2019\
+  s Act (2005) sets out principles relating to the care and protection of children,\
+  \ and defines parental responsibilities and rights. It deals with early childhood\
+  \ development (ECD), drop-in centres and early intervention, children in alternative\
+  \ care such as foster care, child and youth care centres, and the adoption of children\n\
+  \ * the Prevention of and Treatment for Substance Abuse Act (2008) regulates substance\
+  \ abuse services and facilities\n * the 1998 White Paper on Population Policy for\
+  \ South Africa is aimed at promoting the sustainable development of all South Africans\
+  \ by integrating population issues with development planning in all spheres of government\
+  \ and all sectors of society\n * the 2015 White Paper on the Rights of Persons with\
+  \ Disabilities focuses on putting in place measures that will reduce the exclusion\
+  \ and inequality experienced by persons with disabilities. This includes contributing\
+  \ towards fighting poverty among persons with disabilities and their families, and\
+  \ providing policy guidelines on building capacity in the public sector to deliver\
+  \ equitable and accessible services\n * the 1997 White Paper for Social Welfare\
+  \ sets out the principles, guidelines, policies and programmes for developmental\
+  \ social welfare in South Africa. It provides the foundation for social welfare\
+  \ in the post-1994 era\n * the Social Service Professions Act (1978) provides for\
+  \ the regulation of social service professionals\n * the Victim Empowerment Support\
+  \ Services Bill is aimed at regulating victim support services and empowering victims.\n\
+  \n\n"
+is_vote_primary: true
+name: Social Development
+organisational_unit: department
+programmes:
+- name: Administration
+  total_budget: 383246000.0
+- name: Social Assistance
+  total_budget: 162960723000.0
+- name: Social Security Policy and Administration
+  total_budget: 7880822000.0
+- name: Welfare Services Policy Development and Implementation Support
+  total_budget: 1284493000.0
+- name: Social Policy and Integrated Service Delivery
+  total_budget: 392303000.0
+selected_financial_year: 2018-19
+slug: social-development
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
+  ENE for Vote 17 - Social Development:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2017%20Social%20Development.pdf
+  ENE for Vote 17 - Social Development - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2018-19/resource/5e09c366-c6fe-4981-8a9d-68d52d586562/download/ene18-vote17_chaptertables.xlsx
+vote_number: 17
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2018-19/national/departments/social-development

@@ -1,0 +1,106 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Telecommunications and Postal Services
+    organisational_unit: department
+    slug: telecommunications-and-postal-services
+    url_path: /2015-16/national/departments/telecommunications-and-postal-services
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Telecommunications and Postal Services
+    organisational_unit: department
+    slug: telecommunications-and-postal-services
+    url_path: /2016-17/national/departments/telecommunications-and-postal-services
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Telecommunications and Postal Services
+    organisational_unit: department
+    slug: telecommunications-and-postal-services
+    url_path: /2017-18/national/departments/telecommunications-and-postal-services
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Telecommunications and Postal Services
+    organisational_unit: department
+    slug: telecommunications-and-postal-services
+    url_path: /2018-19/national/departments/telecommunications-and-postal-services
+  id: 2018-19
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+government_functions: []
+intro: '## Vote purpose
+
+
+  Develop ICT policies and legislation that create favourable conditions for accelerated
+  and shared sustainable economic growth that positively impacts on the wellbeing
+  of all South Africans.
+
+
+  ## Mandate
+
+
+  The mandate of the Department of Telecommunications and Postal Services is to develop
+  ICT policies that will contribute to an inclusive information society. The department
+  has a responsibility to modernise the economy and economic infrastructure through:
+  facilitating the rollout of ICT infrastructure, applications and services; enabling
+  the rollout of postal and banking services; developing e-strategies to roll out
+  e-government and e-sectoral services; promoting cybersecurity and the security of
+  networks; and promoting universal service and electronic communications in underserviced
+  areas.
+
+
+  The department also sets guidelines for the determinations of its regulatory authority,
+  the Independent Communications Authority of South Africa, and oversees and strengthens
+  the capacity of state-owned companies within its portfolio.
+
+
+  The department derives its legislative mandate from the Electronic Communications
+  Act (2005) and the Electronic Communications and Transactions Act (2002).
+
+
+  '
+is_vote_primary: true
+name: Telecommunications and Postal Services
+organisational_unit: department
+programmes:
+- name: Administration
+  total_budget: 218332000.0
+- name: International Affairs and Trade
+  total_budget: 52035000.0
+- name: Policy, Research and Capacity Development
+  total_budget: 85975000.0
+- name: ICT Enterprise Development and Public Entities Oversight
+  total_budget: 250440000.0
+- name: ICT Infrastructure Support
+  total_budget: 316625000.0
+selected_financial_year: 2018-19
+slug: telecommunications-and-postal-services
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
+  ENE for Vote 32 - Telecommunications and Postal Services:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2032%20Telecommunications%20and%20Postal%20Services.pdf
+  ENE for Vote 32 - Telecommunications and Postal Services - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-telecommunications-and-postal-services-2018-19/resource/540e4123-32a6-404e-b8af-06a44cb07944/download/ene18-vote32_chaptertables.xlsx
+vote_number: 32
+vote_primary:
+  name: Telecommunications and Postal Services
+  slug: telecommunications-and-postal-services
+  url_path: /2018-19/national/departments/telecommunications-and-postal-services

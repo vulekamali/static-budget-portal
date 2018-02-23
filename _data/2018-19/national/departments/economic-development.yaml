@@ -1,0 +1,89 @@
+contributed_datasets: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    name: Economic Development
+    organisational_unit: department
+    slug: economic-development
+    url_path: /2015-16/national/departments/economic-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Economic Development
+    organisational_unit: department
+    slug: economic-development
+    url_path: /2016-17/national/departments/economic-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Economic Development
+    organisational_unit: department
+    slug: economic-development
+    url_path: /2017-18/national/departments/economic-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    name: Economic Development
+    organisational_unit: department
+    slug: economic-development
+    url_path: /2018-19/national/departments/economic-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: South Africa
+  slug: south-africa
+government_functions: []
+intro: "## Vote purpose\n\nPromote economic development policy formulation and planning\
+  \ for the benefit of all South Africans.\n\n## Mandate\n\nThe Economic Development\
+  \ Department was established in 2009 and has assumed responsibilities relating to\
+  \ the creation of decent employment through inclusive growth, as captured in outcome\
+  \ 4 (decent employment through inclusive growth) of government\u2019s 2014-2019\
+  \ medium-term strategic framework. This includes the implementation of certain aspects\
+  \ of the National Development Plan (NDP), the new growth path and the national infrastructure\
+  \ plan, as well as the framework\u2019s outcome 6 (an efficient, competitive and\
+  \ responsive economic infrastructure network) and outcome 7 (comprehensive rural\
+  \ development and land reform).\n\nThe department is also responsible for five public\
+  \ entities, comprising three regulatory bodies (the Competition Commission, the\
+  \ Competition Tribunal and the International Trade Administration Commission of\
+  \ South Africa) and two development finance institutions (the Industrial Development\
+  \ Corporation of South Africa and the Small Enterprise Finance Agency).\n\nIn line\
+  \ with these responsibilities, the department\u2019s mandate includes the administration\
+  \ of the following legislation:\n * the Industrial Development Corporation Act (1940)\n\
+  \ * the Competition Act (1998)\n * the International Trade Administration Act (2002)\n\
+  \ * the Infrastructure Development Act (2014).\n\n"
+is_vote_primary: true
+name: Economic Development
+organisational_unit: department
+programmes:
+- name: Administration
+  total_budget: 86516000.0
+- name: Growth Path and Social Dialogue
+  total_budget: 34425000.0
+- name: Investment, Competition and Trade
+  total_budget: 951656000.0
+selected_financial_year: 2018-19
+slug: economic-development
+sphere:
+  name: National
+  slug: national
+treasury_datasets:
+  ENE for Vote 25 - Economic Development:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2025%20Economic%20Development.pdf
+  ENE for Vote 25 - Economic Development - Tables:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-economic-development-2018-19/resource/6f1bc72c-0520-4dd0-8ba2-0fcf2a7cb0ca/download/ene18-vote25_chaptertables.xlsx
+vote_number: 25
+vote_primary:
+  name: Economic Development
+  slug: economic-development
+  url_path: /2018-19/national/departments/economic-development

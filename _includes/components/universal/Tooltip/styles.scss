@@ -53,6 +53,8 @@
   display: none;
   font-weight: normal;
   position: fixed;
+  justify-content: center;
+  align-items: center;
   left: 0;
   top: 0;
   width: 100%;
@@ -60,8 +62,13 @@
   cursor: default;
   z-index: z-index('Tooltip-boxWrap');
 
+  &.is-down {
+    top: 100%;
+  }
+
   &.is-open {
     display: block;
+    display: flex;
   }
 
   &.is-important {
@@ -86,10 +93,6 @@
 .Tooltip-box {
   position: relative;
   z-index: 30;
-  display: flex; /* stylelint-disable-line plugin/no-unsupported-browser-features */ // Is visual enhancement
-  justify-content: center;
-  align-items: center;
-  height: 100%;
 
   @media screen and (min-width: 800px) {
     position: relative;
@@ -103,7 +106,6 @@
   padding: 10px 10px 20px;
 
   @media screen and (min-width: 800px) {
-    left: 50%;
     margin: 0;
     width: 250px;
     position: absolute;
@@ -113,6 +115,13 @@
       bottom: auto;
       top: calc(100% - 12px);
     }
+  }
+}
+
+.Tooltip-contentWrap {
+  @media screen and (min-width: 800px) {
+    position: relative;
+    left: 50%;
   }
 }
 

@@ -66,7 +66,13 @@ defaults:
       financial_year: 2017-18
       active: departments
       nested: true
-
+  -
+    scope:
+      path: "2018-19"
+    values:
+      financial_year: 2018-19
+      active: departments
+      nested: true
 
   -
     scope:
@@ -77,6 +83,7 @@ defaults:
         ['2015-16', '/2015-16/contributed-data', 'active'],
         ['2016-17', '/2016-17/contributed-data', 'link'],
         ['2017-18', '/2017-18/contributed-data', 'link'],
+        ['2018-19', '/2018-19/contributed-data', 'link'],
       ]
       active: contributed-data
       nested: true
@@ -89,6 +96,7 @@ defaults:
         ['2015-16', '/2015-16/contributed-data', 'link'],
         ['2016-17', '/2016-17/contributed-data', 'active'],
         ['2017-18', '/2017-18/contributed-data', 'link'],
+        ['2018-19', '/2018-19/contributed-data', 'link'],
       ]
       active: contributed-data
       nested: true
@@ -101,6 +109,20 @@ defaults:
         ['2015-16', '/2015-16/contributed-data', 'link'],
         ['2016-17', '/2016-17/contributed-data', 'link'],
         ['2017-18', '/2017-18/contributed-data', 'active'],
+        ['2018-19', '/2018-19/contributed-data', 'link'],
+      ]
+      active: contributed-data
+      nested: true
+  -
+    scope:
+      path: "2018-19/datasets"
+    values:
+      financial_year: 2018-19
+      years: [
+        ['2015-16', '/2015-16/contributed-data', 'link'],
+        ['2016-17', '/2016-17/contributed-data', 'link'],
+        ['2017-18', '/2017-18/contributed-data', 'link'],
+        ['2018-19', '/2018-19/contributed-data', 'active'],
       ]
       active: contributed-data
       nested: true

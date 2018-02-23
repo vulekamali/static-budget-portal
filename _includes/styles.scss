@@ -26,7 +26,11 @@
 @import 'utilities/scss/utility-classes/u-underline';
 @import 'utilities/scss/utility-classes/u-fontWeight';
 @import 'utilities/scss/utility-classes/u-fontSize';
+@import 'utilities/scss/utility-classes/u-wordBreak';
+@import 'utilities/scss/utility-classes/u-fontStyle';
+@import 'utilities/scss/utility-classes/u-whiteSpace';
 
+@import 'components/universal/Modal/styles';
 @import 'components/universal/Tooltip/styles';
 @import 'components/universal/Page/styles';
 @import 'components/universal/PseudoSelect/styles';
