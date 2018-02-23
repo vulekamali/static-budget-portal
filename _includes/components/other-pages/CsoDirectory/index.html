@@ -6,7 +6,7 @@
       <div class="CsoDirectory-cover"></div>
       <div class="CsoDirectory-box">
         <h3 class="CsoDirectory-title">{{ dataset.name }}</h3><span class="CsoDirectory-contributor">Data provided by {{ dataset.organization.name }}</span>
-        <div class="CsoDirectory-imgWrap"><img class="CsoDirectory-img" src="{{ dataset.organization.logo_url }}" alt="Contributor logo"/></div>
+        <div class="CsoDirectory-img" style="background-image: url('{{ dataset.organization.logo_url }}')"></div>
       </div>
       <ul class="CsoDirectory-box is-dark">
         <li class="CsoDirectory-metaData">Total resources: {{ dataset.resources.size }}</li>
