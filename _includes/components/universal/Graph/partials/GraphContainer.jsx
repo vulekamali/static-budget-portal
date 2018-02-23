@@ -1,5 +1,4 @@
 import { h, Component } from 'preact';
-import { saveSvgAsPng } from 'save-svg-as-png';
 import canvg from 'canvg-browser';
 import calcMaxValue from './calcMaxValue.js';
 import BreakpointListener from './BreakpointListener.js';
@@ -107,29 +106,10 @@ export default class GraphContainer extends Component {
       breakpointsWrap,
     );
 
-    this.image = null;
-    this.addImage = this.addImage.bind(this);
+    this.canvas = null;
+    this.addCanvas = this.addCanvas.bind(this);
     this.downloadImage = this.downloadImage.bind(this);
     this.setOpenState = this.setOpenState.bind(this);
-    this.screenshotProps = {
-      maxValue: calcMaxValue(this.props.items),
-      popupWidth: 90,
-      popUpOffset: 6,
-      buffer: 20,
-      valueSpace: 600,
-      fontSize: 14,
-      popupFontSize: 14,
-      padding: [0, 100, 60, 0],
-      lineGutter: 8,
-      popupHeight: 30,
-      popupCentre: 5,
-      barWidth: 12,
-      groupMargin: 40,
-      charWrap: 65,
-      charLineHeight: 14,
-      titleSpace: 0,
-      labelBreakpoints: 4,
-    }
   }
 
 
@@ -145,12 +125,22 @@ export default class GraphContainer extends Component {
     return this.setState({ open: true });
   }
 
-  downloadImage() {
-    return saveSvgAsPng(this.image, 'graph.png', { scale: this.state.selected, backgroundColor: 'white', canvg });
+  downloadImage(svg) {
+    canvg(this.canvas, svg);
+
+    if (this.canvas.msToBlob) {
+      const blob = this.canvas.msToBlob();
+      return window.navigator.msSaveBlob(blob, 'chart.png', { scaleWidth: 10, scaleHeight: 10 });
+    }
+
+    // const link = document.createElement('a');
+    // link.download = 'chart.png';
+    // link.href = this.canvas.toDataURL();
+    // return link.click();
   }
 
-  addImage(node) {
-    this.image = node;
+  addCanvas(node) {
+    this.canvas = node;
   }
 
 
@@ -162,7 +152,7 @@ export default class GraphContainer extends Component {
           legend={this.props.legend}
           styling={this.state}
           year={this.props.year}
-          addImage={this.addImage}
+          addCanvas={this.addCanvas}
           downloadImage={this.downloadImage}
           open={this.state.open}
           setOpenState={this.setOpenState}

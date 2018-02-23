@@ -3397,21 +3397,19 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _saveSvgAsPng = __webpack_require__(84);
-
-var _canvgBrowser = __webpack_require__(85);
+var _canvgBrowser = __webpack_require__(84);
 
 var _canvgBrowser2 = _interopRequireDefault(_canvgBrowser);
 
-var _calcMaxValue = __webpack_require__(90);
+var _calcMaxValue = __webpack_require__(89);
 
 var _calcMaxValue2 = _interopRequireDefault(_calcMaxValue);
 
-var _BreakpointListener = __webpack_require__(91);
+var _BreakpointListener = __webpack_require__(90);
 
 var _BreakpointListener2 = _interopRequireDefault(_BreakpointListener);
 
-var _GraphMarkup = __webpack_require__(92);
+var _GraphMarkup = __webpack_require__(91);
 
 var _GraphMarkup2 = _interopRequireDefault(_GraphMarkup);
 
@@ -3535,29 +3533,10 @@ var GraphContainer = function (_Component) {
 
     window.addEventListener('resize', breakpointsWrap);
 
-    _this.image = null;
-    _this.addImage = _this.addImage.bind(_this);
+    _this.canvas = null;
+    _this.addCanvas = _this.addCanvas.bind(_this);
     _this.downloadImage = _this.downloadImage.bind(_this);
     _this.setOpenState = _this.setOpenState.bind(_this);
-    _this.screenshotProps = {
-      maxValue: (0, _calcMaxValue2.default)(_this.props.items),
-      popupWidth: 90,
-      popUpOffset: 6,
-      buffer: 20,
-      valueSpace: 600,
-      fontSize: 14,
-      popupFontSize: 14,
-      padding: [0, 100, 60, 0],
-      lineGutter: 8,
-      popupHeight: 30,
-      popupCentre: 5,
-      barWidth: 12,
-      groupMargin: 40,
-      charWrap: 65,
-      charLineHeight: 14,
-      titleSpace: 0,
-      labelBreakpoints: 4
-    };
     return _this;
   }
 
@@ -3575,13 +3554,23 @@ var GraphContainer = function (_Component) {
     }
   }, {
     key: 'downloadImage',
-    value: function downloadImage() {
-      return (0, _saveSvgAsPng.saveSvgAsPng)(this.image, 'graph.png', { scale: this.state.selected, backgroundColor: 'white', canvg: _canvgBrowser2.default });
+    value: function downloadImage(svg) {
+      (0, _canvgBrowser2.default)(this.canvas, svg);
+
+      if (this.canvas.msToBlob) {
+        var blob = this.canvas.msToBlob();
+        return window.navigator.msSaveBlob(blob, 'chart.png', { scaleWidth: 10, scaleHeight: 10 });
+      }
+
+      // const link = document.createElement('a');
+      // link.download = 'chart.png';
+      // link.href = this.canvas.toDataURL();
+      // return link.click();
     }
   }, {
-    key: 'addImage',
-    value: function addImage(node) {
-      this.image = node;
+    key: 'addCanvas',
+    value: function addCanvas(node) {
+      this.canvas = node;
     }
   }, {
     key: 'render',
@@ -3594,7 +3583,7 @@ var GraphContainer = function (_Component) {
           legend: this.props.legend,
           styling: this.state,
           year: this.props.year,
-          addImage: this.addImage,
+          addCanvas: this.addCanvas,
           downloadImage: this.downloadImage,
           open: this.state.open,
           setOpenState: this.setOpenState,
@@ -4883,7 +4872,8 @@ function HorisontalBreakpoint(_ref) {
         x: padding[3] + buffer + rank * iterationPosition,
         y: padding[0] + totalGroupSpace + buffer * 2 + fontSize,
         fontSize: fontSize,
-        'font-family': 'sans-serif'
+        'font-family': 'sans-serif',
+        'font-weight': 'bold'
       },
       'R',
       (0, _trimValues2.default)(iterationValue * rank)
@@ -9209,490 +9199,11 @@ function Toggle(_ref) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var __WEBPACK_AMD_DEFINE_RESULT__;
 
-(function () {
-  var out$ = typeof exports != 'undefined' && exports || "function" != 'undefined' && {} || this;
 
-  var doctype = '<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [<!ENTITY nbsp "&#160;">]>';
-
-  function isElement(obj) {
-    return obj instanceof HTMLElement || obj instanceof SVGElement;
-  }
-
-  function requireDomNode(el) {
-    if (!isElement(el)) {
-      throw new Error('an HTMLElement or SVGElement is required; got ' + el);
-    }
-  }
-
-  function isExternal(url) {
-    return url && url.lastIndexOf('http', 0) == 0 && url.lastIndexOf(window.location.host) == -1;
-  }
-
-  function inlineImages(el, callback) {
-    requireDomNode(el);
-
-    var images = el.querySelectorAll('image'),
-        left = images.length,
-        checkDone = function checkDone() {
-      if (left === 0) {
-        callback();
-      }
-    };
-
-    checkDone();
-    for (var i = 0; i < images.length; i++) {
-      (function (image) {
-        var href = image.getAttributeNS("http://www.w3.org/1999/xlink", "href");
-        if (href) {
-          if (isExternal(href.value)) {
-            console.warn("Cannot render embedded images linking to external hosts: " + href.value);
-            return;
-          }
-        }
-        var canvas = document.createElement('canvas');
-        var ctx = canvas.getContext('2d');
-        var img = new Image();
-        img.crossOrigin = "anonymous";
-        href = href || image.getAttribute('href');
-        if (href) {
-          img.src = href;
-          img.onload = function () {
-            canvas.width = img.width;
-            canvas.height = img.height;
-            ctx.drawImage(img, 0, 0);
-            image.setAttributeNS("http://www.w3.org/1999/xlink", "href", canvas.toDataURL('image/png'));
-            left--;
-            checkDone();
-          };
-          img.onerror = function () {
-            console.log("Could not load " + href);
-            left--;
-            checkDone();
-          };
-        } else {
-          left--;
-          checkDone();
-        }
-      })(images[i]);
-    }
-  }
-
-  function styles(el, options, cssLoadedCallback) {
-    var selectorRemap = options.selectorRemap;
-    var modifyStyle = options.modifyStyle;
-    var css = "";
-    // each font that has extranl link is saved into queue, and processed
-    // asynchronously
-    var fontsQueue = [];
-    var sheets = document.styleSheets;
-    for (var i = 0; i < sheets.length; i++) {
-      try {
-        var rules = sheets[i].cssRules;
-      } catch (e) {
-        console.warn("Stylesheet could not be loaded: " + sheets[i].href);
-        continue;
-      }
-
-      if (rules != null) {
-        for (var j = 0, match; j < rules.length; j++, match = null) {
-          var rule = rules[j];
-          if (typeof rule.style != "undefined") {
-            var selectorText;
-
-            try {
-              selectorText = rule.selectorText;
-            } catch (err) {
-              console.warn('The following CSS rule has an invalid selector: "' + rule + '"', err);
-            }
-
-            try {
-              if (selectorText) {
-                match = el.querySelector(selectorText) || el.parentNode.querySelector(selectorText);
-              }
-            } catch (err) {
-              console.warn('Invalid CSS selector "' + selectorText + '"', err);
-            }
-
-            if (match) {
-              var selector = selectorRemap ? selectorRemap(rule.selectorText) : rule.selectorText;
-              var cssText = modifyStyle ? modifyStyle(rule.style.cssText) : rule.style.cssText;
-              css += selector + " { " + cssText + " }\n";
-            } else if (rule.cssText.match(/^@font-face/)) {
-              // below we are trying to find matches to external link. E.g.
-              // @font-face {
-              //   // ...
-              //   src: local('Abel'), url(https://fonts.gstatic.com/s/abel/v6/UzN-iejR1VoXU2Oc-7LsbvesZW2xOQ-xsNqO47m55DA.woff2);
-              // }
-              //
-              // This regex will save extrnal link into first capture group
-              var fontUrlRegexp = /url\(["']?(.+?)["']?\)/;
-              // TODO: This needs to be changed to support multiple url declarations per font.
-              var fontUrlMatch = rule.cssText.match(fontUrlRegexp);
-
-              var externalFontUrl = fontUrlMatch && fontUrlMatch[1] || '';
-              var fontUrlIsDataURI = externalFontUrl.match(/^data:/);
-              if (fontUrlIsDataURI) {
-                // We should ignore data uri - they are already embedded
-                externalFontUrl = '';
-              }
-
-              if (externalFontUrl) {
-                // okay, we are lucky. We can fetch this font later
-
-                //handle url if relative
-                if (externalFontUrl.startsWith('../')) {
-                  externalFontUrl = sheets[i].href + '/../' + externalFontUrl;
-                } else if (externalFontUrl.startsWith('./')) {
-                  externalFontUrl = sheets[i].href + '/.' + externalFontUrl;
-                }
-
-                fontsQueue.push({
-                  text: rule.cssText,
-                  // Pass url regex, so that once font is downladed, we can run `replace()` on it
-                  fontUrlRegexp: fontUrlRegexp,
-                  format: getFontMimeTypeFromUrl(externalFontUrl),
-                  url: externalFontUrl
-                });
-              } else {
-                // otherwise, use previous logic
-                css += rule.cssText + '\n';
-              }
-            }
-          }
-        }
-      }
-    }
-
-    // Now all css is processed, it's time to handle scheduled fonts
-    processFontQueue(fontsQueue);
-
-    function getFontMimeTypeFromUrl(fontUrl) {
-      var supportedFormats = {
-        'woff2': 'font/woff2',
-        'woff': 'font/woff',
-        'otf': 'application/x-font-opentype',
-        'ttf': 'application/x-font-ttf',
-        'eot': 'application/vnd.ms-fontobject',
-        'sfnt': 'application/font-sfnt',
-        'svg': 'image/svg+xml'
-      };
-      var extensions = Object.keys(supportedFormats);
-      for (var i = 0; i < extensions.length; ++i) {
-        var extension = extensions[i];
-        // TODO: This is not bullet proof, it needs to handle edge cases...
-        if (fontUrl.indexOf('.' + extension) > 0) {
-          return supportedFormats[extension];
-        }
-      }
-
-      // If you see this error message, you probably need to update code above.
-      console.error('Unknown font format for ' + fontUrl + '; Fonts may not be working correctly');
-      return 'application/octet-stream';
-    }
-
-    function processFontQueue(queue) {
-      if (queue.length > 0) {
-        // load fonts one by one until we have anything in the queue:
-        var font = queue.pop();
-        processNext(font);
-      } else {
-        // no more fonts to load.
-        cssLoadedCallback(css);
-      }
-
-      function processNext(font) {
-        // TODO: This could benefit from caching.
-        var oReq = new XMLHttpRequest();
-        oReq.addEventListener('load', fontLoaded);
-        oReq.addEventListener('error', transferFailed);
-        oReq.addEventListener('abort', transferFailed);
-        oReq.open('GET', font.url);
-        oReq.responseType = 'arraybuffer';
-        oReq.send();
-
-        function fontLoaded() {
-          // TODO: it may be also worth to wait until fonts are fully loaded before
-          // attempting to rasterize them. (e.g. use https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet )
-          var fontBits = oReq.response;
-          var fontInBase64 = arrayBufferToBase64(fontBits);
-          updateFontStyle(font, fontInBase64);
-        }
-
-        function transferFailed(e) {
-          console.warn('Failed to load font from: ' + font.url);
-          console.warn(e);
-          css += font.text + '\n';
-          processFontQueue();
-        }
-
-        function updateFontStyle(font, fontInBase64) {
-          var dataUrl = 'url("data:' + font.format + ';base64,' + fontInBase64 + '")';
-          css += font.text.replace(font.fontUrlRegexp, dataUrl) + '\n';
-
-          // schedule next font download on next tick.
-          setTimeout(function () {
-            processFontQueue(queue);
-          }, 0);
-        }
-      }
-    }
-
-    function arrayBufferToBase64(buffer) {
-      var binary = '';
-      var bytes = new Uint8Array(buffer);
-      var len = bytes.byteLength;
-
-      for (var i = 0; i < len; i++) {
-        binary += String.fromCharCode(bytes[i]);
-      }
-
-      return window.btoa(binary);
-    }
-  }
-
-  function getDimension(el, clone, dim) {
-    var v = el.viewBox && el.viewBox.baseVal && el.viewBox.baseVal[dim] || clone.getAttribute(dim) !== null && !clone.getAttribute(dim).match(/%$/) && parseInt(clone.getAttribute(dim)) || el.getBoundingClientRect()[dim] || parseInt(clone.style[dim]) || parseInt(window.getComputedStyle(el).getPropertyValue(dim));
-    return typeof v === 'undefined' || v === null || isNaN(parseFloat(v)) ? 0 : v;
-  }
-
-  function reEncode(data) {
-    data = encodeURIComponent(data);
-    data = data.replace(/%([0-9A-F]{2})/g, function (match, p1) {
-      var c = String.fromCharCode('0x' + p1);
-      return c === '%' ? '%25' : c;
-    });
-    return decodeURIComponent(data);
-  }
-
-  out$.prepareSvg = function (el, options, cb) {
-    requireDomNode(el);
-
-    options = options || {};
-    options.scale = options.scale || 1;
-    options.responsive = options.responsive || false;
-    var xmlns = "http://www.w3.org/2000/xmlns/";
-
-    inlineImages(el, function () {
-      var outer = document.createElement("div");
-      var clone = el.cloneNode(true);
-      var width, height;
-      if (el.tagName == 'svg') {
-        width = options.width || getDimension(el, clone, 'width');
-        height = options.height || getDimension(el, clone, 'height');
-      } else if (el.getBBox) {
-        var box = el.getBBox();
-        width = box.x + box.width;
-        height = box.y + box.height;
-        clone.setAttribute('transform', clone.getAttribute('transform').replace(/translate\(.*?\)/, ''));
-
-        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        svg.appendChild(clone);
-        clone = svg;
-      } else {
-        console.error('Attempted to render non-SVG element', el);
-        return;
-      }
-
-      clone.setAttribute("version", "1.1");
-      if (!clone.getAttribute('xmlns')) {
-        clone.setAttributeNS(xmlns, "xmlns", "http://www.w3.org/2000/svg");
-      }
-      if (!clone.getAttribute('xmlns:xlink')) {
-        clone.setAttributeNS(xmlns, "xmlns:xlink", "http://www.w3.org/1999/xlink");
-      }
-
-      if (options.responsive) {
-        clone.removeAttribute('width');
-        clone.removeAttribute('height');
-        clone.setAttribute('preserveAspectRatio', 'xMinYMin meet');
-      } else {
-        clone.setAttribute("width", width * options.scale);
-        clone.setAttribute("height", height * options.scale);
-      }
-
-      clone.setAttribute("viewBox", [options.left || 0, options.top || 0, width, height].join(" "));
-
-      var fos = clone.querySelectorAll('foreignObject > *');
-      for (var i = 0; i < fos.length; i++) {
-        if (!fos[i].getAttribute('xmlns')) {
-          fos[i].setAttributeNS(xmlns, "xmlns", "http://www.w3.org/1999/xhtml");
-        }
-      }
-
-      outer.appendChild(clone);
-
-      // In case of custom fonts we need to fetch font first, and then inline
-      // its url into data-uri format (encode as base64). That's why style
-      // processing is done asynchonously. Once all inlining is finshed
-      // cssLoadedCallback() is called.
-      styles(el, options, cssLoadedCallback);
-
-      function cssLoadedCallback(css) {
-        // here all fonts are inlined, so that we can render them properly.
-        var s = document.createElement('style');
-        s.setAttribute('type', 'text/css');
-        s.innerHTML = "<![CDATA[\n" + css + "\n]]>";
-        var defs = document.createElement('defs');
-        defs.appendChild(s);
-        clone.insertBefore(defs, clone.firstChild);
-
-        if (cb) {
-          var outHtml = outer.innerHTML;
-          outHtml = outHtml.replace(/NS\d+:href/gi, 'xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href');
-          cb(outHtml, width, height);
-        }
-      }
-    });
-  };
-
-  out$.svgAsDataUri = function (el, options, cb) {
-    out$.prepareSvg(el, options, function (svg) {
-      var uri = 'data:image/svg+xml;base64,' + window.btoa(reEncode(doctype + svg));
-      if (cb) {
-        cb(uri);
-      }
-    });
-  };
-
-  out$.svgAsPngUri = function (el, options, cb) {
-    requireDomNode(el);
-
-    options = options || {};
-    options.encoderType = options.encoderType || 'image/png';
-    options.encoderOptions = options.encoderOptions || 0.8;
-
-    var convertToPng = function convertToPng(src, w, h) {
-      var canvas = document.createElement('canvas');
-      var context = canvas.getContext('2d');
-      canvas.width = w;
-      canvas.height = h;
-
-      if (options.canvg) {
-        options.canvg(canvas, src);
-      } else {
-        context.drawImage(src, 0, 0);
-      }
-
-      if (options.backgroundColor) {
-        context.globalCompositeOperation = 'destination-over';
-        context.fillStyle = options.backgroundColor;
-        context.fillRect(0, 0, canvas.width, canvas.height);
-      }
-
-      var png;
-      try {
-        png = canvas.toDataURL(options.encoderType, options.encoderOptions);
-      } catch (e) {
-        if (typeof SecurityError !== 'undefined' && e instanceof SecurityError || e.name == "SecurityError") {
-          console.error("Rendered SVG images cannot be downloaded in this browser.");
-          return;
-        } else {
-          throw e;
-        }
-      }
-      cb(png);
-    };
-
-    if (options.canvg) {
-      out$.prepareSvg(el, options, convertToPng);
-    } else {
-      out$.svgAsDataUri(el, options, function (uri) {
-        var image = new Image();
-
-        image.onload = function () {
-          convertToPng(image, image.width, image.height);
-        };
-
-        image.onerror = function () {
-          console.error('There was an error loading the data URI as an image on the following SVG\n', window.atob(uri.slice(26)), '\n', "Open the following link to see browser's diagnosis\n", uri);
-        };
-
-        image.src = uri;
-      });
-    }
-  };
-
-  out$.download = function (name, uri) {
-    if (navigator.msSaveOrOpenBlob) {
-      navigator.msSaveOrOpenBlob(uriToBlob(uri), name);
-    } else {
-      var saveLink = document.createElement('a');
-      var downloadSupported = 'download' in saveLink;
-      if (downloadSupported) {
-        saveLink.download = name;
-        saveLink.style.display = 'none';
-        document.body.appendChild(saveLink);
-        try {
-          var blob = uriToBlob(uri);
-          var url = URL.createObjectURL(blob);
-          saveLink.href = url;
-          saveLink.onclick = function () {
-            requestAnimationFrame(function () {
-              URL.revokeObjectURL(url);
-            });
-          };
-        } catch (e) {
-          console.warn('This browser does not support object URLs. Falling back to string URL.');
-          saveLink.href = uri;
-        }
-        saveLink.click();
-        document.body.removeChild(saveLink);
-      } else {
-        window.open(uri, '_temp', 'menubar=no,toolbar=no,status=no');
-      }
-    }
-  };
-
-  function uriToBlob(uri) {
-    var byteString = window.atob(uri.split(',')[1]);
-    var mimeString = uri.split(',')[0].split(':')[1].split(';')[0];
-    var buffer = new ArrayBuffer(byteString.length);
-    var intArray = new Uint8Array(buffer);
-    for (var i = 0; i < byteString.length; i++) {
-      intArray[i] = byteString.charCodeAt(i);
-    }
-    return new Blob([buffer], { type: mimeString });
-  }
-
-  out$.saveSvg = function (el, name, options) {
-    requireDomNode(el);
-
-    options = options || {};
-    out$.svgAsDataUri(el, options, function (uri) {
-      out$.download(name, uri);
-    });
-  };
-
-  out$.saveSvgAsPng = function (el, name, options) {
-    requireDomNode(el);
-
-    options = options || {};
-    out$.svgAsPngUri(el, options, function (uri) {
-      out$.download(name, uri);
-    });
-  };
-
-  // if define is defined create as an AMD module
-  if (true) {
-    !(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
-      return out$;
-    }).call(exports, __webpack_require__, exports, module),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  }
-})();
-
-/***/ }),
-/* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var RGBColor = __webpack_require__(86);
-var stackblur = __webpack_require__(87);
-var xmldom = __webpack_require__(88);
+var RGBColor = __webpack_require__(85);
+var stackblur = __webpack_require__(86);
+var xmldom = __webpack_require__(87);
 
 /*
  * canvg.js - Javascript SVG parser and renderer on Canvas
@@ -12776,7 +12287,7 @@ function build(opts) {
 module.exports = canvg;
 
 /***/ }),
-/* 86 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13053,7 +12564,7 @@ module.exports = function (color_string) {
 };
 
 /***/ }),
-/* 87 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13332,7 +12843,7 @@ function BlurStack() {
 module.exports = blur;
 
 /***/ }),
-/* 88 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13585,14 +13096,14 @@ function appendElement(hander, node) {
 } //appendChild and setAttributeNS are preformance key
 
 //if(typeof require == 'function'){
-var XMLReader = __webpack_require__(89).XMLReader;
+var XMLReader = __webpack_require__(88).XMLReader;
 var DOMImplementation = exports.DOMImplementation = __webpack_require__(31).DOMImplementation;
 exports.XMLSerializer = __webpack_require__(31).XMLSerializer;
 exports.DOMParser = DOMParser;
 //}
 
 /***/ }),
-/* 89 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14242,7 +13753,7 @@ function split(source, start) {
 exports.XMLReader = XMLReader;
 
 /***/ }),
-/* 90 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14265,7 +13776,7 @@ function calcMaxValue(items) {
 }
 
 /***/ }),
-/* 91 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14335,7 +13846,7 @@ var BreakpointListener = function () {
 exports.default = BreakpointListener;
 
 /***/ }),
-/* 92 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14350,6 +13861,10 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 exports.default = GraphMarkup;
 
 var _preact = __webpack_require__(0);
+
+var _preactRenderToString = __webpack_require__(92);
+
+var _preactRenderToString2 = _interopRequireDefault(_preactRenderToString);
 
 var _buildGroupSpaceArray = __webpack_require__(93);
 
@@ -14416,12 +13931,69 @@ var hardCoded = [{
   title: 'Large'
 }];
 
+var screenshotsProps = {
+  small: {
+    valueSpace: 1000,
+    popupWidth: 90,
+    popUpOffset: 6,
+    buffer: 20,
+    fontSize: 14,
+    popupFontSize: 14,
+    padding: [0, 100, 60, 0],
+    lineGutter: 8,
+    popupHeight: 30,
+    popupCentre: 5,
+    barWidth: 12,
+    groupMargin: 40,
+    charWrap: 65,
+    charLineHeight: 14,
+    titleSpace: 0,
+    labelBreakpoints: 4
+  },
+  medium: {
+    valueSpace: 2000,
+    popupWidth: 90,
+    popUpOffset: 6,
+    buffer: 20,
+    fontSize: 14,
+    popupFontSize: 14,
+    padding: [0, 100, 60, 0],
+    lineGutter: 8,
+    popupHeight: 30,
+    popupCentre: 5,
+    barWidth: 12,
+    groupMargin: 40,
+    charWrap: 65,
+    charLineHeight: 14,
+    titleSpace: 0,
+    labelBreakpoints: 4
+  },
+  large: {
+    valueSpace: 3000,
+    popupWidth: 90 * 3,
+    popUpOffset: 6 * 3,
+    buffer: 20 * 3,
+    fontSize: 14 * 3,
+    popupFontSize: 14 * 3,
+    padding: [0 * 3, 100 * 3, 60 * 3, 0 * 3],
+    lineGutter: 8 * 3,
+    popupHeight: 30 * 3,
+    popupCentre: 5 * 3,
+    barWidth: 12 * 3,
+    groupMargin: 40 * 3,
+    charWrap: 65 * 3,
+    charLineHeight: 14 * 3,
+    titleSpace: 0 * 3,
+    labelBreakpoints: 4 * 3
+  }
+};
+
 function GraphMarkup(_ref) {
   var items = _ref.items,
       styling = _ref.styling,
       legend = _ref.legend,
       year = _ref.year,
-      addImage = _ref.addImage,
+      addCanvas = _ref.addCanvas,
       downloadImage = _ref.downloadImage,
       open = _ref.open,
       setOpenState = _ref.setOpenState,
@@ -14465,26 +14037,38 @@ function GraphMarkup(_ref) {
     (0, _preact.h)(_HorisontalTooltipsList2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling })
   );
 
-  var screenshot = (0, _preact.h)(
-    'svg',
-    _extends({
-      version: '1.1',
-      className: 'Graph-svg',
-      xmlns: 'http://www.w3.org/2000/svg',
-      viewBox: '0 0 800 ' + height,
-      width: '800'
-    }, { height: height }, {
-      ref: function ref(node) {
-        return addImage(node);
+  var Screenshot = function Screenshot(_ref2) {
+    var stylingInput = _ref2.stylingInput;
+
+    var stylingOverride = _extends({}, styling, stylingInput);
+
+    var newValueSpace = stylingOverride.valueSpace,
+        newPadding = stylingOverride.padding;
+
+    var newGroupSpaceArray = (0, _buildGroupSpaceArray2.default)(items, styling);
+    var newTotalGroupSpace = groupSpaceArray.reduce(function (result, val) {
+      return result + val;
+    }, 0);
+    var newHeight = newPadding[0] + totalGroupSpace + newPadding[2];
+    var newWidth = newPadding[3] + newValueSpace + newPadding[1];
+
+    return (0, _preact.h)(
+      'svg',
+      {
+        version: '1.1',
+        className: 'Graph-svg Graph-svg--responsive',
+        xmlns: 'http://www.w3.org/2000/svg',
+        viewBox: '0 0 ' + newWidth + ' ' + newHeight,
+        height: newHeight,
+        width: newWidth
       },
-      style: { position: 'fixed', top: '600px', left: 0 }
-    }),
-    (0, _preact.h)(_HorisontalBreakpointsList2.default, _extends({ styling: screenshotProps }, { totalGroupSpace: totalGroupSpace })),
-    (0, _preact.h)(_HorisontalGuidesList2.default, _extends({ styling: screenshotProps }, { totalGroupSpace: totalGroupSpace })),
-    (0, _preact.h)(_Grid2.default, _extends({ styling: screenshotProps }, { totalGroupSpace: totalGroupSpace })),
-    (0, _preact.h)(_HorisontalLineGroupList2.default, _extends({ styling: screenshotProps }, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items })),
-    (0, _preact.h)(_HorisontalTooltipsList2.default, _extends({ styling: screenshotProps }, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items }))
-  );
+      (0, _preact.h)(_HorisontalBreakpointsList2.default, { styling: stylingOverride, totalGroupSpace: newTotalGroupSpace }),
+      (0, _preact.h)(_HorisontalGuidesList2.default, { styling: stylingOverride, totalGroupSpace: newTotalGroupSpace }),
+      (0, _preact.h)(_Grid2.default, { styling: stylingOverride, totalGroupSpace: newTotalGroupSpace }),
+      (0, _preact.h)(_HorisontalLineGroupList2.default, { styling: stylingOverride, totalGroupSpace: newTotalGroupSpace, groupSpaceArray: newGroupSpaceArray, items: items }),
+      (0, _preact.h)(_HorisontalTooltipsList2.default, { styling: stylingOverride, totalGroupSpace: newTotalGroupSpace, groupSpaceArray: newGroupSpaceArray, items: items })
+    );
+  };
 
   var download = (0, _preact.h)(
     'div',
@@ -14518,14 +14102,329 @@ function GraphMarkup(_ref) {
     )
   );
 
+  var svg = (0, _preactRenderToString2.default)((0, _preact.h)(Screenshot, { stylingInput: screenshotsProps.large }));
+
   return (0, _preact.h)(
     'div',
     null,
+    (0, _preact.h)('canvas', { ref: function ref(node) {
+        return addCanvas(node);
+      } }),
     barChart,
-    download,
-    screenshot
+    (0, _preact.h)(
+      'button',
+      { onClick: function onClick() {
+          return downloadImage(svg);
+        } },
+      'DOWNLOAD'
+    )
   );
 }
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;
+
+var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+(function (global, factory) {
+	( false ? 'undefined' : _typeof2(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory() :  true ? !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : global.preactRenderToString = factory();
+})(undefined, function () {
+
+	var NON_DIMENSION_PROPS = {
+		boxFlex: 1, boxFlexGroup: 1, columnCount: 1, fillOpacity: 1, flex: 1, flexGrow: 1,
+		flexPositive: 1, flexShrink: 1, flexNegative: 1, fontWeight: 1, lineClamp: 1, lineHeight: 1,
+		opacity: 1, order: 1, orphans: 1, strokeOpacity: 1, widows: 1, zIndex: 1, zoom: 1
+	};
+
+	var ESC = {
+		'<': '&lt;',
+		'>': '&gt;',
+		'"': '&quot;',
+		'&': '&amp;'
+	};
+
+	var objectKeys = Object.keys || function (obj) {
+		var keys = [];
+		for (var i in obj) {
+			if (obj.hasOwnProperty(i)) keys.push(i);
+		}return keys;
+	};
+
+	var encodeEntities = function encodeEntities(s) {
+		return String(s).replace(/[<>"&]/g, escapeChar);
+	};
+
+	var escapeChar = function escapeChar(a) {
+		return ESC[a] || a;
+	};
+
+	var falsey = function falsey(v) {
+		return v == null || v === false;
+	};
+
+	var memoize = function memoize(fn) {
+		var mem = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+		return function (v) {
+			return mem[v] || (mem[v] = fn(v));
+		};
+	};
+
+	var indent = function indent(s, char) {
+		return String(s).replace(/(\n+)/g, '$1' + (char || '\t'));
+	};
+
+	var isLargeString = function isLargeString(s, length, ignoreLines) {
+		return String(s).length > (length || 40) || !ignoreLines && String(s).indexOf('\n') !== -1 || String(s).indexOf('<') !== -1;
+	};
+
+	function styleObjToCss(s) {
+		var str = '';
+		for (var prop in s) {
+			var val = s[prop];
+			if (val != null) {
+				if (str) str += ' ';
+				str += jsToCss(prop);
+				str += ': ';
+				str += val;
+				if (typeof val === 'number' && !NON_DIMENSION_PROPS[prop]) {
+					str += 'px';
+				}
+				str += ';';
+			}
+		}
+		return str || undefined;
+	}
+
+	function hashToClassName(c) {
+		var str = '';
+		for (var prop in c) {
+			if (c[prop]) {
+				if (str) str += ' ';
+				str += prop;
+			}
+		}
+		return str;
+	}
+
+	var jsToCss = memoize(function (s) {
+		return s.replace(/([A-Z])/g, '-$1').toLowerCase();
+	});
+
+	function assign(obj, props) {
+		for (var i in props) {
+			obj[i] = props[i];
+		}return obj;
+	}
+
+	function getNodeProps(vnode) {
+		var defaultProps = vnode.nodeName.defaultProps,
+		    props = assign({}, defaultProps || vnode.attributes);
+		if (defaultProps) assign(props, vnode.attributes);
+		if (vnode.children) props.children = vnode.children;
+		return props;
+	}
+
+	var _typeof = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol" ? function (obj) {
+		return typeof obj === 'undefined' ? 'undefined' : _typeof2(obj);
+	} : function (obj) {
+		return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj === 'undefined' ? 'undefined' : _typeof2(obj);
+	};
+
+	var SHALLOW = { shallow: true };
+
+	var UNNAMED = [];
+
+	var EMPTY = {};
+
+	var VOID_ELEMENTS = ['area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'];
+
+	renderToString.render = renderToString;
+
+	var shallowRender = function shallowRender(vnode, context) {
+		return renderToString(vnode, context, SHALLOW);
+	};
+
+	function renderToString(vnode, context, opts, inner, isSvgMode) {
+		var _ref = vnode || EMPTY,
+		    nodeName = _ref.nodeName,
+		    attributes = _ref.attributes,
+		    children = _ref.children,
+		    isComponent = false;
+
+		context = context || {};
+		opts = opts || {};
+
+		var pretty = opts.pretty,
+		    indentChar = typeof pretty === 'string' ? pretty : '\t';
+
+		if (vnode == null || typeof vnode === 'boolean') {
+			return '';
+		}
+
+		if ((typeof vnode === 'undefined' ? 'undefined' : _typeof(vnode)) !== 'object' && !nodeName) {
+			return encodeEntities(vnode);
+		}
+
+		if (typeof nodeName === 'function') {
+			isComponent = true;
+			if (opts.shallow && (inner || opts.renderRootComponent === false)) {
+				nodeName = getComponentName(nodeName);
+			} else {
+				var props = getNodeProps(vnode),
+				    rendered = void 0;
+
+				if (!nodeName.prototype || typeof nodeName.prototype.render !== 'function') {
+					rendered = nodeName(props, context);
+				} else {
+					var c = new nodeName(props, context);
+
+					c._disable = c.__x = true;
+					c.props = props;
+					c.context = context;
+					if (c.componentWillMount) c.componentWillMount();
+					rendered = c.render(c.props, c.state, c.context);
+
+					if (c.getChildContext) {
+						context = assign(assign({}, context), c.getChildContext());
+					}
+				}
+
+				return renderToString(rendered, context, opts, opts.shallowHighOrder !== false);
+			}
+		}
+
+		var s = '',
+		    html = void 0;
+
+		if (attributes) {
+			var attrs = objectKeys(attributes);
+
+			if (opts && opts.sortAttributes === true) attrs.sort();
+
+			for (var i = 0; i < attrs.length; i++) {
+				var name = attrs[i],
+				    v = attributes[name];
+				if (name === 'children') continue;
+				if (!(opts && opts.allAttributes) && (name === 'key' || name === 'ref')) continue;
+
+				if (name === 'className') {
+					if (attributes['class']) continue;
+					name = 'class';
+				} else if (isSvgMode && name.match(/^xlink\:?(.+)/)) {
+					name = name.toLowerCase().replace(/^xlink\:?(.+)/, 'xlink:$1');
+				}
+
+				if (name === 'class' && v && (typeof v === 'undefined' ? 'undefined' : _typeof(v)) === 'object') {
+					v = hashToClassName(v);
+				} else if (name === 'style' && v && (typeof v === 'undefined' ? 'undefined' : _typeof(v)) === 'object') {
+					v = styleObjToCss(v);
+				}
+
+				var hooked = opts.attributeHook && opts.attributeHook(name, v, context, opts, isComponent);
+				if (hooked || hooked === '') {
+					s += hooked;
+					continue;
+				}
+
+				if (name === 'dangerouslySetInnerHTML') {
+					html = v && v.__html;
+				} else if ((v || v === 0 || v === '') && typeof v !== 'function') {
+					if (v === true || v === '') {
+						v = name;
+
+						if (!opts || !opts.xml) {
+							s += ' ' + name;
+							continue;
+						}
+					}
+					s += ' ' + name + '="' + encodeEntities(v) + '"';
+				}
+			}
+		}
+
+		var sub = s.replace(/^\n\s*/, ' ');
+		if (sub !== s && !~sub.indexOf('\n')) s = sub;else if (pretty && ~s.indexOf('\n')) s += '\n';
+
+		s = '<' + nodeName + s + '>';
+
+		if (VOID_ELEMENTS.indexOf(nodeName) > -1) {
+			s = s.replace(/>$/, ' />');
+		}
+
+		if (html) {
+			if (pretty && isLargeString(html)) {
+				html = '\n' + indentChar + indent(html, indentChar);
+			}
+			s += html;
+		} else {
+			var len = children && children.length,
+			    pieces = [],
+			    hasLarge = ~s.indexOf('\n');
+			for (var _i = 0; _i < len; _i++) {
+				var child = children[_i];
+				if (!falsey(child)) {
+					var childSvgMode = nodeName === 'svg' ? true : nodeName === 'foreignObject' ? false : isSvgMode,
+					    ret = renderToString(child, context, opts, true, childSvgMode);
+					if (!hasLarge && pretty && isLargeString(ret)) hasLarge = true;
+					if (ret) pieces.push(ret);
+				}
+			}
+			if (pretty && hasLarge) {
+				for (var _i2 = pieces.length; _i2--;) {
+					pieces[_i2] = '\n' + indentChar + indent(pieces[_i2], indentChar);
+				}
+			}
+			if (pieces.length) {
+				s += pieces.join('');
+			} else if (opts && opts.xml) {
+				return s.substring(0, s.length - 1) + ' />';
+			}
+		}
+
+		if (VOID_ELEMENTS.indexOf(nodeName) === -1) {
+			if (pretty && ~s.indexOf('\n')) s += '\n';
+			s += '</' + nodeName + '>';
+		}
+
+		return s;
+	}
+
+	function getComponentName(component) {
+		return component.displayName || component !== Function && component.name || getFallbackComponentName(component);
+	}
+
+	function getFallbackComponentName(component) {
+		var str = Function.prototype.toString.call(component),
+		    name = (str.match(/^\s*function\s+([^\( ]+)/) || EMPTY)[1];
+		if (!name) {
+			var index = -1;
+			for (var i = UNNAMED.length; i--;) {
+				if (UNNAMED[i] === component) {
+					index = i;
+					break;
+				}
+			}
+
+			if (index < 0) {
+				index = UNNAMED.push(component) - 1;
+			}
+			name = 'UnnamedComponent' + index;
+		}
+		return name;
+	}
+	renderToString.shallowRender = shallowRender;
+
+	return renderToString;
+});
+//# sourceMappingURL=index.js.map
 
 /***/ }),
 /* 93 */
@@ -14766,7 +14665,8 @@ function HorisontalLabel(_ref) {
         x: padding[3] + buffer + previousSpace + generateToScale(groupSpace / 2),
         y: padding[0] + totalGroupSpace + buffer * 2 + fontSize,
         fontSize: fontSize,
-        "font-family": "sans-serif"
+        "font-family": "sans-serif",
+        "font-weight": "bold"
       },
       title
     )
@@ -14803,18 +14703,27 @@ function Grid(_ref) {
       x1: padding[3],
       y1: padding[0],
       x2: padding[3],
-      y2: padding[0] + totalGroupSpace
+      y2: padding[0] + totalGroupSpace,
+      "stroke-width": "2",
+      stroke: "#d2d2d2",
+      fill: "none"
     }),
     (0, _preact.h)("path", {
       className: "Graph-outline",
-      d: "\n          M" + padding[3] + " " + (padding[0] + totalGroupSpace) + " \n          Q " + padding[3] + " " + (padding[0] + buffer + totalGroupSpace) + ", \n          " + (padding[3] + buffer) + " " + (padding[0] + buffer + totalGroupSpace) + "\n        "
+      d: "\n          M" + padding[3] + " " + (padding[0] + totalGroupSpace) + " \n          Q " + padding[3] + " " + (padding[0] + buffer + totalGroupSpace) + ", \n          " + (padding[3] + buffer) + " " + (padding[0] + buffer + totalGroupSpace) + "\n        ",
+      "stroke-width": "2",
+      stroke: "#d2d2d2",
+      fill: "none"
     }),
     (0, _preact.h)("line", {
       className: "Graph-outline",
       x1: padding[3] + buffer,
       y1: padding[0] + totalGroupSpace + buffer,
       x2: padding[3] + valueSpace,
-      y2: padding[0] + totalGroupSpace + buffer
+      y2: padding[0] + totalGroupSpace + buffer,
+      "stroke-width": "2",
+      stroke: "#d2d2d2",
+      fill: "none"
     })
   );
 }
@@ -15658,7 +15567,8 @@ function HorisontalLineGroup(_ref) {
           className: 'Graph-label Graph-label--leftAlign',
           y: padding[0] + previousSpace + groupMargin / 2 + charLineHeight * index,
           x: padding[3] + buffer,
-          'font-family': 'sans-serif'
+          'font-family': 'sans-serif',
+          'font-weight': 'bold'
         },
         val
       );
@@ -15674,7 +15584,8 @@ function HorisontalLineGroup(_ref) {
         x1: padding[3] + buffer + barWidth / 2,
         y2: groupMargin / 2 + startPoint + index * (barWidth + lineGutter) + barWidth / 2 + charLineHeight * charArray.length,
         x2: padding[3] + buffer + displayAmount - barWidth,
-        className: 'Graph-line'
+        className: 'Graph-line',
+        stroke: '#79b43c'
       });
     })
   );
@@ -15979,7 +15890,8 @@ function HorisontalTooltip(_ref) {
     }),
     (0, _preact.h)('polygon', {
       className: 'Graph-triangle',
-      points: '\n          ' + (xPosition + popUpOffset) + ',\n          ' + yPosition + '\n\n          ' + (xPosition + barWidth / 2 + popUpOffset) + ',\n          ' + (yPosition - barWidth / 2) + '\n\n          ' + (xPosition + barWidth + popUpOffset) + ',\n          ' + (yPosition - barWidth / 2) + '\n\n          ' + (xPosition + barWidth + popUpOffset) + ',\n          ' + (yPosition + barWidth / 2) + '\n          \n          ' + (xPosition + barWidth / 2 + popUpOffset) + ',\n          ' + (yPosition + barWidth / 2) + '\n        '
+      points: '\n          ' + (xPosition + popUpOffset) + ',\n          ' + yPosition + '\n\n          ' + (xPosition + barWidth / 2 + popUpOffset) + ',\n          ' + (yPosition - barWidth / 2) + '\n\n          ' + (xPosition + barWidth + popUpOffset) + ',\n          ' + (yPosition - barWidth / 2) + '\n\n          ' + (xPosition + barWidth + popUpOffset) + ',\n          ' + (yPosition + barWidth / 2) + '\n          \n          ' + (xPosition + barWidth / 2 + popUpOffset) + ',\n          ' + (yPosition + barWidth / 2) + '\n        ',
+      fill: '#79b43c'
     }),
     (0, _preact.h)('rect', {
       rx: '10',
@@ -15988,7 +15900,8 @@ function HorisontalTooltip(_ref) {
       x: xPosition + barWidth / 2 + popUpOffset,
       y: yPosition - popupHeight / 2,
       width: popupWidth,
-      height: popupHeight
+      height: popupHeight,
+      fill: '#79b43c'
     }),
     (0, _preact.h)(
       'text',
@@ -15997,7 +15910,9 @@ function HorisontalTooltip(_ref) {
         y: yPosition + popupCentre,
         fontSize: popupFontSize,
         className: 'Graph-tooltipText',
-        'font-family': 'sans-serif'
+        'font-family': 'sans-serif',
+        'text-anchor': 'middle',
+        fill: 'white'
       },
       (0, _trimValues2.default)(amount)
     )

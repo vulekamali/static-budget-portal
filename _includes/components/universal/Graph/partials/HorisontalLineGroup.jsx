@@ -54,6 +54,7 @@ export default function HorisontalLineGroup({ totalGroupSpace, groupSpaceArray, 
               y={padding[0] + previousSpace + (groupMargin / 2) + (charLineHeight * index)}
               x={padding[3] + buffer}
               font-family="sans-serif"
+              font-weight="bold"
             >
               {val}
             </text>
@@ -75,6 +76,7 @@ export default function HorisontalLineGroup({ totalGroupSpace, groupSpaceArray, 
               y2={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * charArray.length)}
               x2={(padding[3] + buffer + displayAmount) - barWidth}
               className="Graph-line"
+              stroke="#79b43c"
             />
           );
         })
