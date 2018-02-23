@@ -122,6 +122,7 @@ export default class GraphContainer extends Component {
     return this.setState({ open: true });
   }
 
+
   downloadImage(svg) {
     canvg(this.canvas, svg);
 

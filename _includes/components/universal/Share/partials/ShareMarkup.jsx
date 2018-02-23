@@ -36,25 +36,23 @@ export default function ShareMarkup({ selected, updateShare, modal, shareOpen, u
         forceWrap
         openAction={null}
         closeAction={closeModal}
-      >
+      />
 
-        <div className="Share-title">Share page</div>
-        <div className="Share-action">
-          <div className="Share-select">
-            <PseudoSelect
-              name="share"
-              items={hardCoded}
-              property={selected}
-              open={shareOpen}
-              changeAction={value => updateShare(value)}
-            />
-          </div>
-          <div className="Share-button">
-            <Button {...{ selected, updateModal }} />
-          </div>
+      <div className="Share-title">Share page</div>
+      <div className="Share-action">
+        <div className="Share-select">
+          <PseudoSelect
+            name="share"
+            items={hardCoded}
+            property={selected}
+            open={shareOpen}
+            changeAction={value => updateShare(value)}
+          />
         </div>
-
-      </Modal>
+        <div className="Share-button">
+          <Button {...{ selected, updateModal }} />
+        </div>
+      </div>
 
     </div>
   );

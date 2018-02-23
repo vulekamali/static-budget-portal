@@ -1,18 +1,22 @@
-
 import { h } from 'preact';
-import Box from './partials/Box.jsx';
+import CloseIcon from './partials/CloseIcon.jsx';
 
 
-export default function Modal({ block, children, title, description, actions, down, open, openAction, closeAction }) {
-
+export default function Modal({ children, title, open, closeAction }) {
   return (
-    <span className={`Modal${block ? ' is-block' : ''}`}>
-      <div className="Modal-trigger" onClick={openAction}>
-        {children}
-      </div>
+    <span className="Modal">
       <div className={`Modal-boxWrap${open ? ' is-open' : ''}`}>
         <div className="Modal-modalCover" onClick={closeAction} />
-        <Box {...{ title, description, actions, down, closeAction }} />
+        <div className="Modal-box">
+          <div className="Modal-content">
+            <div className="Modal-shadowBox">
+              <div className="Modal-infoBox">
+                <div className="Modal-title">{title}</div>
+                {children}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </span>
   );
