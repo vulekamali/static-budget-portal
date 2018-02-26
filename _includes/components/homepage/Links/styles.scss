@@ -45,8 +45,10 @@
   display: table;
   width: 100%;
 
-  &:hover {
-    background-color: darken(white, 15%);
+  &--link {
+    &:hover {
+      background-color: darken(white, 15%);
+    }
   }
 }
 
@@ -65,7 +67,7 @@
   &--purple {
     background-color: #ad3c64;
 
-    .Links-item:hover & {
+    .Links-item--link:hover & {
       fill: darken(white, 15%);
       background-color: darken(#ad3c64, 15%);
     }
@@ -74,7 +76,7 @@
   &--orange {
     background-color: #c66347;
 
-    .Links-item:hover & {
+    .Links-item--link:hover & {
       fill: darken(white, 15%);
       background-color: darken(#c66347, 15%);
     }
@@ -83,7 +85,7 @@
   &--darkYellow {
     background-color: #ee9f31;
 
-    .Links-item:hover & {
+    .Links-item--link:hover & {
       fill: darken(white, 15%);
       background-color: darken(#ee9f31, 15%);
     }
@@ -92,7 +94,7 @@
   &--lightYellow {
     background-color: #fec42d;
 
-    .Links-item:hover & {
+    .Links-item--link:hover & {
       fill: darken(white, 15%);
       background-color: darken(#fec42d, 15%);
     }
@@ -101,7 +103,7 @@
   &--lightGreen {
     background-color: #7bb344;
 
-    .Links-item:hover & {
+    .Links-item--link:hover & {
       fill: darken(white, 15%);
       background-color: darken(#7bb344, 15%);
     }
@@ -110,7 +112,7 @@
   &--darkGreen {
     background-color: #2f8c5d;
 
-    .Links-item:hover & {
+    .Links-item--link:hover & {
       fill: darken(white, 15%);
       background-color: darken(#2f8c5d, 15%);
     }
@@ -119,7 +121,7 @@
   &--dullBlue {
     background-color: #5578c2;
 
-    .Links-item:hover & {
+    .Links-item--link:hover & {
       fill: darken(white, 15%);
       background-color: darken(#5578c2, 15%);
     }
@@ -128,7 +130,7 @@
   &--brightBlue {
     background-color: #5793f3;
 
-    .Links-item:hover & {
+    .Links-item--link:hover & {
       fill: darken(white, 15%);
       background-color: darken(#5793f3, 15%);
     }
@@ -136,6 +138,7 @@
 }
 
 .Links-text {
+  text-align: left;
   display: table-cell;
   vertical-align: middle;
   padding-left: 10px;
@@ -163,5 +166,59 @@
 
   &:hover {
     background-color: darken(#e6e6e6, 15%);
+  }
+}
+
+.Links-button {
+  margin: 5px 3px;
+  display: inline-block;
+  border: 0;
+  border-radius: 18px;
+  background-color: #7bb344;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  padding: 8px 16px 11px 13px;
+  cursor: pointer;
+  text-align: center;
+  fill: white;
+  text-decoration: none;
+
+  @media screen and (min-width: 900px) {
+    margin: 0;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 3px;
+    background: none;
+    color: #3f3f3f;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+
+  &:hover {
+    background-color: darken(white, 15%);
+  }
+}
+
+.Links-seperator {
+  text-decoration: none;
+  display: none;
+
+  @media screen and (min-width: 900px) {
+    display: inline-block;
+  }
+}
+
+.Links-iconWrap {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.Links-buttonList {
+  padding: 10px 10px 10px 0;
+
+  @media screen and (min-width: 900px) {
+    padding: 0;
   }
 }
