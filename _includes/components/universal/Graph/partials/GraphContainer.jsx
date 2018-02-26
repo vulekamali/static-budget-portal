@@ -10,6 +10,7 @@ export default class GraphContainer extends Component {
     super(props);
 
     this.state = {
+      linkModal: false,
       selected: '1',
       open: false,
       fontSize: 14,
@@ -107,6 +108,7 @@ export default class GraphContainer extends Component {
     this.addCanvas = this.addCanvas.bind(this);
     this.downloadImage = this.downloadImage.bind(this);
     this.setOpenState = this.setOpenState.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
 
@@ -122,8 +124,15 @@ export default class GraphContainer extends Component {
     return this.setState({ open: true });
   }
 
+  closeModal() {
+    return this.setState({ linkModal: false });
+  }
 
   downloadImage(svg) {
+    if (this.state.selected === 'link') {
+      return this.setState({ linkModal: true });
+    }
+
     canvg(this.canvas, svg);
 
     if (this.canvas.msToBlob) {
@@ -144,20 +153,20 @@ export default class GraphContainer extends Component {
 
   render() {
     return (
-      <div>
-        <GraphMarkup
-          items={this.props.items}
-          legend={this.props.legend}
-          styling={this.state}
-          year={this.props.year}
-          addCanvas={this.addCanvas}
-          downloadImage={this.downloadImage}
-          open={this.state.open}
-          setOpenState={this.setOpenState}
-          selected={this.state.selected}
-          screenshotProps={this.screenshotProps}
-        />
-      </div>
+      <GraphMarkup
+        items={this.props.items}
+        legend={this.props.legend}
+        styling={this.state}
+        year={this.props.year}
+        addCanvas={this.addCanvas}
+        downloadImage={this.downloadImage}
+        open={this.state.open}
+        setOpenState={this.setOpenState}
+        selected={this.state.selected}
+        screenshotProps={this.screenshotProps}
+        linkModal={this.state.linkModal}
+        closeModal={this.closeModal}
+      />
     );
   }
 }

@@ -13,7 +13,7 @@ import HorisontalLineGroupList from './HorisontalLineGroupList.jsx';
 import VerticalLabelList from './VerticalLabelList.jsx';
 import HorisontalTooltipsList from './HorisontalTooltipsList.jsx';
 import PseudoSelect from './../../../universal/PseudoSelect/index.jsx';
-
+import Modal from './../../../universal/Modal/index.jsx';
 
 const hardCoded = [
   {
@@ -54,7 +54,7 @@ const screenshotsProps = {
   labelBreakpoints: 4,
 };
 
-export default function GraphMarkup({ items, styling, legend, year, addCanvas, downloadImage, open, setOpenState, selected, screenshotProps }) {
+export default function GraphMarkup({ items, styling, legend, year, addCanvas, downloadImage, open, setOpenState, selected, screenshotProps, linkModal, closeModal }) {
   const { valueSpace, padding, showGuides } = styling;
   const groupSpaceArray = buildGroupSpaceArray(items, styling);
   const totalGroupSpace = groupSpaceArray.reduce((result, val) => result + val, 0);
@@ -161,6 +161,17 @@ export default function GraphMarkup({ items, styling, legend, year, addCanvas, d
 
   return (
     <div>
+
+      <Modal
+        title="Share this link:"
+        open={linkModal}
+        closeAction={closeModal}
+      >
+        <a className="u-wordBreak u-wordBreak--breakAll" href={window.location.href}>
+          {window.location.href}
+        </a>
+      </Modal>
+
       <canvas ref={node => addCanvas(node)} style={{ display: 'none' }} />
       {barChart}
       {download}
