@@ -32,7 +32,7 @@ export default function Item({ id, title, description, languages, setModal }) {
           <li className="Videos-title">{title}</li>
           <li className="u-listItemReset">
             <ul className="u-listReset">
-              {languageButtons.map(({ name, action }) => <li className="Videos-pillWrap"><a onClick={action} className="Button is-small is-inline u-marginRight u-marginRight--5">{name}</a></li>)}
+              {languageButtons.map(({ name, action }) => <li className="Videos-pillWrap"><a onClick={action} className="Button is-small is-inline u-marginRight u-marginRight--5 u-marginBottom u-marginBottom--5">{name}</a></li>)}
             </ul>
           </li>
           <li className="Videos-description">{description.length > 200 ? trimString(200, description) : description }</li>
