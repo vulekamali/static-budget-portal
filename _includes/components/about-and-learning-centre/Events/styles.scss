@@ -9,8 +9,9 @@ $past-height: 440px;
 
 .Events-blockWrap {
   padding: 10px 0;
+  width: 100%;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 900px) {
     display: inline-block;
     width: 49%;
 
@@ -38,7 +39,10 @@ $past-height: 440px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   overflow: hidden;
-  height: $upcoming-height;
+
+  @media screen and (min-width: 900px) {
+    height: $upcoming-height;
+  }
 }
 
 .Events-infoWrap {
