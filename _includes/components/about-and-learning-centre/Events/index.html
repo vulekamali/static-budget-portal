@@ -47,55 +47,62 @@
           </div>
         </div>
         
-        {% if event.rsvp or event.url or event.url or event.notes_url or event.video_url or event.photos %}
-          <div class="Events-pastWrap"> 
-            <div class="Events-past"> 
+        <div class="Events-pastWrap"> 
+          <div class="Events-past"> 
 
-              {% if event.rsvp or event.url or event.url or event.notes_url or event.video_url %}
-                <div class="Events-buttons">
+            <div class="Events-buttons">
 
-                  {% if event.rsvp %}
-                    <a class="Button is-small is-inline u-marginRight u-marginRight--5" href="{{ event.rsvp }}">RSVP</a>
-                  {% endif %}
+              {% if event.rsvp_url or event.url %}
 
-                  {% if event.url %}  
-                    <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.url }}">Learn more</a>
-                  {% endif %}
+                {% if event.rsvp_url %}
+                  <a class="Button is-small is-inline u-marginRight u-marginRight--5" href="{{ event.rsvp }}">RSVP</a>
+                {% endif %}
 
-                  {% if event.presentation_url %}
-                    <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.presentation_url }}">
-                      Download the hackathon presentations
-                    </a>
-                  {% endif %}
+                {% if event.url %}  
+                  <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.url }}">Learn more</a>
+                {% endif %}
 
-                  {% if event.notes_url %}
-                    <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.notes_url }}">
-                      Download the data quest notes
-                    </a>
-                  {% endif %}
+              {% else %}
 
-                  {% if event.video_url %}
-                    <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.video_url }}">
-                      Watch the video
-                    </a>
-                  {% endif %}
-                </div>
+              {% if include.upcoming %}  
+                <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="http://eepurl.com/diwJEP">Receive Updates</a>
               {% endif %}
 
-              {% if event.photos %}
-                <div class="Events-buttons">
+              {% endif %}
 
-                  {% for url in event.photos %}
-                    <a class="Events-link" target="_blank" target="_blank" href="{{ url }}">
-                      <img class="Events-image" src="{{ url }}" />
-                    </a>
-                  {% endfor %}
-                  
-                </div>
+              {% if event.presentation_url %}
+                <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.presentation_url }}">
+                  Download the hackathon presentations
+                </a>
+              {% endif %}
+
+              {% if event.notes_url %}
+                <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.notes_url }}">
+                  Download the data quest notes
+                </a>
+              {% endif %}
+
+              {% if event.video_url %}
+                <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.video_url }}">
+                  Watch the video
+                </a>
               {% endif %}
             </div>
+
+            {% if event.photos %}
+              <div class="Events-buttons">
+
+                {% for url in event.photos %}
+                  <a class="Events-link" target="_blank" target="_blank" href="{{ url }}">
+                    <img class="Events-image" src="{{ url }}" />
+                  </a>
+                {% endfor %}
+                
+              </div>
+            {% endif %}
           </div>
-        {% endif %} 
+        </div>
+       
       </div> 
     </div>
   {% endfor %}
