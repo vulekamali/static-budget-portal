@@ -16,17 +16,6 @@
   @media screen and (min-width: 1000px) {
     display: table;
   }
-
-  &:hover::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.1);
-    display: block;
-  }
 }
 
 .Videos-item {
@@ -44,6 +33,17 @@
   position: relative;
   border-radius: 15px;
   overflow: hidden;
+
+  &:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    display: block;
+  }
 
   @media screen and (min-width: 1000px) {
     width: 245.99px;
@@ -247,7 +247,7 @@
     transition: transform 0.4s, opacity 0.3s;
   }
 
-  .Videos-item:hover &::before {
+  .Videos-thumbnailWrap:hover &::before {
     transform: scale(1.2);
     opacity: 0.4;
   }
@@ -279,4 +279,8 @@
   font-size: 14px;
   position: relative;
   bottom: 14px;
+}
+
+.Videos-pillWrap {
+  display: inline;
 }
