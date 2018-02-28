@@ -39,10 +39,6 @@ $past-height: 440px;
   border-radius: 20px;
   overflow: hidden;
   height: $upcoming-height;
-
-  &--past {
-    height: $past-height;
-  }
 }
 
 .Events-infoWrap {

@@ -5,7 +5,7 @@
     {% assign title = 'Hackathon' %}
     {% assign description = 'Join developers, students, enterpreneurs and data experts at a vulekamali hackathon. Build websites, mobile apps and other tools using the data and APIs behind vulekamali.' %}
   {% elsif event.type == 'cid' %}
-    {% assign title = 'CID' %}
+    {% assign title = 'Civic Information Drive' %}
     {% assign description = 'Find out more about how to use vulekamali.gov.za to understand national and provincial budgets.' %}
   {% elsif event.type == 'dataquest' %}
     {% assign title = 'Data Quest' %}
@@ -15,18 +15,11 @@
     {% assign description = '' %}
   {% endif %}
 
-  {% if include.passed == true %}
-    {% assign class = ' Events-block--past' %}
-  {% else %}
-    {% assign class = '' %}
-  {% endif %}
-
-
     <div class="Events-blockWrap">
       <div class="Events-block{{ class }}">
         <div class="Events-infoWrap">
           <div class="Events-info">
-            <div class="Events-type">{{ title }}</div>
+            <div class="Events-type">{{ event.date }} — {{ event.province }} — {{ title }}</div>
 
             {% if event.date %}
               <div class="Events-line"> 
@@ -71,19 +64,19 @@
 
                   {% if event.presentation_url %}
                     <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.presentation_url }}">
-                      Presentation
+                      Download the hackathon presentations
                     </a>
                   {% endif %}
 
                   {% if event.notes_url %}
                     <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.notes_url }}">
-                      Notes
+                      Download the data quest notes
                     </a>
                   {% endif %}
 
                   {% if event.video_url %}
                     <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.video_url }}">
-                      Video
+                      Watch the video
                     </a>
                   {% endif %}
                 </div>
