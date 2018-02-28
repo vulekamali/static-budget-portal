@@ -10,12 +10,8 @@ export default function Modal({ open, languageOptions, setLanguage }) {
     };
   });
 
-  return (
-    <div className="Videos">
-      <div className="Videos-embed">
-        <div className="Videos-loading" />
-        <iframe className="Videos-iframe" width="560" height="315" src={`https://www.youtube.com/embed/${open.language}?rel=0&amp;amp;showinfo=0`} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" />
-      </div>
+  const toggle = (
+    <div>
       <span className="Videos-label">
         Change language:
       </span>
@@ -28,6 +24,16 @@ export default function Modal({ open, languageOptions, setLanguage }) {
           changeAction={value => setLanguage(value)}
         />
       </div>
+    </div>
+  );
+
+  return (
+    <div className="Videos">
+      <div className="Videos-embed">
+        <div className="Videos-loading" />
+        <iframe className="Videos-iframe" width="560" height="315" src={`https://www.youtube.com/embed/${open.language}?rel=0&amp;amp;showinfo=0`} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" />
+      </div>
+      { Object.keys(languageOptions) > 1 ? toggle : null }
     </div>
   );
 }

@@ -31,6 +31,19 @@
     }
   }
 
+  &.is-grey {
+    background-color: grey;
+
+    &:hover {
+      background-color: darken(grey, 15%);
+    }
+  }
+
+  &.is-small {
+    font-size: 13px;
+    padding: 4px 16px 7px 15px;
+  }
+
   &.has-icon {
     line-height: 0;
   }
