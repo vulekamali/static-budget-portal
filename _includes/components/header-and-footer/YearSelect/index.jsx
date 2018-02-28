@@ -11,8 +11,8 @@ function YearSelect() {
   if (nodesArray.length > 0 && !noJs) {
     nodesArray.forEach((node, i) => {
       const jsonData = JSON.parse(decodeHtmlEntities(nodes[i].getAttribute('data-json'))).data;
-      const jsonDynamicRaw = JSON.parse(decodeHtmlEntities(nodes[i].getAttribute('data-dynamic')));
-      const jsonDynamic = jsonDynamicRaw ? jsonDynamicRaw.data : null;
+      const jsonDynamicAttr = nodes[i].getAttribute('data-dynamic') || null;
+      const jsonDynamic = jsonDynamicAttr && JSON.parse(decodeHtmlEntities(jsonDynamicAttr)).data;
 
       render(
         <YearSelectContainer {...{ jsonData, search, jsonDynamic }} />,
