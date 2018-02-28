@@ -8,7 +8,7 @@ export default class VideoContainer extends Component {
 
     this.state = {
       open: {
-        language: 'zFalZt862hk',
+        language: this.props.jsonData[Object.keys(this.props.jsonData)[0]],
         select: false,
       },
     };
