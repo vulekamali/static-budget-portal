@@ -1,3 +1,7 @@
+.Modal {
+  z-index: 10000;
+}
+
 .Modal-inner {
   position: fixed;
   height: 100%;
@@ -7,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .Modal-overlay {

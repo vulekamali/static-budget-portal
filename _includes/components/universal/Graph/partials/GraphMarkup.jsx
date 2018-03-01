@@ -159,17 +159,13 @@ export default function GraphMarkup({ items, styling, legend, year, addCanvas, d
     </div>
   );
 
-  const modal = (
-    <Modal title="Share this link:" closeAction={closeModal}>
-      <a className="u-wordBreak u-wordBreak--breakAll" href={window.location.href}>
-        {window.location.href}
-      </a>
-    </Modal>
-  );
-
   return (
     <div>
-      { linkModal ? modal : null }
+      <Modal title="Share this link:" closeAction={closeModal} open={linkModal}>
+        <a className="u-wordBreak u-wordBreak--breakAll" href={window.location.href}>
+          {window.location.href}
+        </a>
+      </Modal>
       <canvas ref={node => addCanvas(node)} style={{ display: 'none' }} />
       {barChart}
       {download}
