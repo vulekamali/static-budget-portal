@@ -22,6 +22,9 @@ export default function Grid({ styling, totalGroupSpace }) {
         y1={padding[0]}
         x2={padding[3]}
         y2={padding[0] + totalGroupSpace}
+        stroke-width="2"
+        stroke="#d2d2d2"
+        fill="none"
       />
 
       <path
@@ -31,6 +34,9 @@ export default function Grid({ styling, totalGroupSpace }) {
           Q ${padding[3]} ${padding[0] + buffer + totalGroupSpace}, 
           ${padding[3] + buffer} ${padding[0] + buffer + totalGroupSpace}
         `}
+        stroke-width="2"
+        stroke="#d2d2d2"
+        fill="none"
       />
 
       <line
@@ -39,6 +45,9 @@ export default function Grid({ styling, totalGroupSpace }) {
         y1={padding[0] + totalGroupSpace + buffer}
         x2={padding[3] + valueSpace}
         y2={padding[0] + totalGroupSpace + buffer}
+        stroke-width="2"
+        stroke="#d2d2d2"
+        fill="none"
       />
     </g>
   );

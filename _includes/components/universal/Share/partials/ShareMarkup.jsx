@@ -21,40 +21,35 @@ const hardCoded = [
 
 export default function ShareMarkup({ selected, updateShare, modal, shareOpen, updateModal }) {
   const closeModal = () => updateModal(false);
-  const descriptionMarkup = (
-    <a className="u-wordBreak u-wordBreak--breakAll" href={window.location.href}>{window.location.href}</a>
-  );
 
   return (
     <div className="Share-wrap">
 
       <Modal
         title="Share this link:"
-        description={descriptionMarkup}
         open={modal}
-        block
-        forceWrap
-        openAction={null}
         closeAction={closeModal}
       >
-
-        <div className="Share-title">Share page</div>
-        <div className="Share-action">
-          <div className="Share-select">
-            <PseudoSelect
-              name="share"
-              items={hardCoded}
-              property={selected}
-              open={shareOpen}
-              changeAction={value => updateShare(value)}
-            />
-          </div>
-          <div className="Share-button">
-            <Button {...{ selected, updateModal }} />
-          </div>
-        </div>
-
+        <a className="u-wordBreak u-wordBreak--breakAll" href={window.location.href}>
+          {window.location.href}
+        </a>
       </Modal>
+
+      <div className="Share-title">Share page</div>
+      <div className="Share-action">
+        <div className="Share-select">
+          <PseudoSelect
+            name="share"
+            items={hardCoded}
+            property={selected}
+            open={shareOpen}
+            changeAction={value => updateShare(value)}
+          />
+        </div>
+        <div className="Share-button">
+          <Button {...{ selected, updateModal }} />
+        </div>
+      </div>
 
     </div>
   );

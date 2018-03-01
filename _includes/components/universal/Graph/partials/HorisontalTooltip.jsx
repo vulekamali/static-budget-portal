@@ -55,6 +55,7 @@ export default function HorisontalTooltip({ styling, xTriggerPosition, xPosition
           ${xPosition + (barWidth / 2) + popUpOffset},
           ${yPosition + (barWidth / 2)}
         `}
+        fill="#79b43c"
       />
 
       <rect
@@ -65,6 +66,7 @@ export default function HorisontalTooltip({ styling, xTriggerPosition, xPosition
         y={yPosition - ((popupHeight) / 2)}
         width={popupWidth}
         height={popupHeight}
+        fill="#79b43c"
       />
 
       <text
@@ -72,6 +74,9 @@ export default function HorisontalTooltip({ styling, xTriggerPosition, xPosition
         y={yPosition + popupCentre}
         font-size={popupFontSize}
         className="Graph-tooltipText"
+        font-family="sans-serif"
+        text-anchor="middle"
+        fill="white"
       >
         {trimValues(amount)}
       </text>

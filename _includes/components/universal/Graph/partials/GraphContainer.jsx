@@ -1,4 +1,5 @@
 import { h, Component } from 'preact';
+import canvg from 'canvg-browser';
 import calcMaxValue from './calcMaxValue.js';
 import BreakpointListener from './BreakpointListener.js';
 import GraphMarkup from './GraphMarkup.jsx';
@@ -9,6 +10,9 @@ export default class GraphContainer extends Component {
     super(props);
 
     this.state = {
+      linkModal: false,
+      selected: '1',
+      open: false,
       fontSize: 14,
       popupFontSize: 14,
       barWidth: 12,
@@ -99,7 +103,53 @@ export default class GraphContainer extends Component {
       'resize',
       breakpointsWrap,
     );
+
+    this.canvas = null;
+    this.addCanvas = this.addCanvas.bind(this);
+    this.downloadImage = this.downloadImage.bind(this);
+    this.setOpenState = this.setOpenState.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
+
+
+  setOpenState(value) {
+    if (this.state.open === true) {
+      return this.setState({
+        ...this.state,
+        open: false,
+        selected: value,
+      });
+    }
+
+    return this.setState({ open: true });
+  }
+
+  closeModal() {
+    return this.setState({ linkModal: false });
+  }
+
+  downloadImage(svg) {
+    if (this.state.selected === 'link') {
+      return this.setState({ linkModal: true });
+    }
+
+    canvg(this.canvas, svg);
+
+    if (this.canvas.msToBlob) {
+      const blob = this.canvas.msToBlob();
+      return window.navigator.msSaveBlob(blob, 'chart.png', { scaleWidth: 10, scaleHeight: 10 });
+    }
+
+    const link = document.createElement('a');
+    link.download = 'chart.png';
+    link.href = this.canvas.toDataURL();
+    return link.click();
+  }
+
+  addCanvas(node) {
+    this.canvas = node;
+  }
+
 
   render() {
     return (
@@ -108,6 +158,14 @@ export default class GraphContainer extends Component {
         legend={this.props.legend}
         styling={this.state}
         year={this.props.year}
+        addCanvas={this.addCanvas}
+        downloadImage={this.downloadImage}
+        open={this.state.open}
+        setOpenState={this.setOpenState}
+        selected={this.state.selected}
+        screenshotProps={this.screenshotProps}
+        linkModal={this.state.linkModal}
+        closeModal={this.closeModal}
       />
     );
   }

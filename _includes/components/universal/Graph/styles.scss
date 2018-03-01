@@ -9,8 +9,11 @@
 }
 
 .Graph-svg {
-  width: 100%;
   overflow: hidden;
+
+  &--responsive {
+    width: 100%;
+  }
 }
 
 .Graph-outline {
@@ -140,7 +143,7 @@
 .Graph-linkWrap {
   display: block;
   padding: 0 25px;
-  width: 100%;
+  // width: 100%;
 }
 
 .Graph-link {
@@ -163,4 +166,24 @@
   padding: 2px;
   margin-right: 5px;
   line-height: 0;
+}
+
+.Graph-download {
+  display: table;
+  margin: 40px auto 0;
+}
+
+.Graph-downloadTitle {
+  display: table-cell;
+  padding: 0 10px;
+}
+
+.Graph-downloadSelect {
+  display: table-cell;
+  width: 180px;
+}
+
+.Graph-downloadButton {
+  display: table-cell;
+  padding: 0 5px;
 }

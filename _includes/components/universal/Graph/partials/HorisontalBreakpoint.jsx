@@ -25,6 +25,8 @@ export default function HorisontalBreakpoint({ styling, totalGroupSpace, rank })
         x={padding[3] + buffer + (rank * iterationPosition)}
         y={padding[0] + totalGroupSpace + (buffer * 2) + fontSize}
         font-size={fontSize}
+        font-family="sans-serif"
+        font-weight="bold"
       >
         R{trimValues(iterationValue * rank)}
       </text>
