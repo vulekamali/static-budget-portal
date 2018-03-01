@@ -742,7 +742,7 @@ function buildHtmlShell(content, type) {
     } else if (type === 'info') {
       return '<link rel="stylesheet" href="../assets/base/styles.css">';
     } else if (type === 'example') {
-      return '<link rel="stylesheet" href="../../assets/generated/styles.css">';
+      return '<link rel="stylesheet" href="../assets/generated/styles.css">';
     }
 
     return '';

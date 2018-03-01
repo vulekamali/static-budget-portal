@@ -27,5 +27,3 @@ import './components/about-and-learning-centre/Video/index.jsx';
 
 import './components/homepage/Revenue/index.jsx';
 import './components/homepage/Expenditure/index.jsx';
-
-import './components/universal/Modal/docs/doc-scripts.jsx';

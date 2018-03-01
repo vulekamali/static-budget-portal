@@ -1,162 +1,117 @@
-.Modal {
-  display: inline-block;
-  text-align: left;
-  z-index: z-index('Tooltip');
-
-  &.is-block {
-    width: 100%;
-    display: block;
-  }
-}
-
-.Modal-underline {
-  user-select: none;
-  display: inline-block;
-
-  &::after {
-    content: '';
-    display: block;
-    position: relative;
-    bottom: 0.2em;
-    width: 100%;
-    border-bottom: 1px dashed #4a4a4a;
-  }
-
-  &:hover {
-    background-color: darken(white, 10%);
-  }
-}
-
-.Modal-div {
-  position: relative;
-  left: -5px;
-}
-
-.Modal-modalCover {
-  background: rgba(0, 0, 0, 0.4);
+.Modal-inner {
   position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Modal-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  transition: opacity 0.1s;
+
+  .Modal-inner.is-enter & {
+    opacity: 0;
+  }
+
+  .Modal-inner.is-enter-active & {
+    opacity: 1;
+  }
+
+  .Modal-inner.is-leave & {
+    opacity: 1;
+  }
+
+  .Modal-inner.is-leave-active & {
+    opacity: 0;
+  }
 }
 
 .Modal-boxWrap {
-  display: none;
-  font-weight: normal;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  cursor: default;
-  z-index: z-index('Tooltip-boxWrap');
+  position: relative;
+  max-width: 570px;
+  border-radius: 20px;
+  background-color: #e6e6e6;
+  padding: 10px;
+  margin: 40px;
+  transition: transform 0.3s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 
-  &.is-open {
-    display: block;
-    display: flex;
-    z-index: 150;
+  .Modal-inner.is-enter & {
+    transform: scale(0);
   }
 
-  &.is-important {
-    z-index: z-index('Tooltip-boxWrap is-important');
+  .Modal-inner.is-enter-active & {
+    transform: scale(1);
+  }
+
+  .Modal-inner.is-leave & {
+    transform: scale(1);
+  }
+
+  .Modal-inner.is-leave-active & {
+    transform: scale(0);
+  }
+
+  @media screen and (min-width: 900px) {
+    margin: 0;
   }
 }
 
 .Modal-box {
-  position: relative;
-  z-index: 30;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+.Modal-heading {
+  font-size: 18px;
+  font-weight: 900;
+  padding: 15px 40px 15px 20px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .Modal-content {
-  margin: 40px auto;
-  position: static;
-  max-width: 80%;
-  padding: 10px 10px 20px;
-
-  @media screen and (min-width: 800px) {
-    max-width: 100%;
-  }
+  padding: 15px 20px;
 }
 
-.Modal-shadowBox {
-  position: relative;
-  padding: 10px;
-  border-radius: 20px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  background: #e6e6e6;
-  font-size: 13px;
-}
-
-.Modal-infoBox {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 15px;
-  font-size: 14px;
-}
-
-.Modal-triangle {
-  display: none;
-
-  &::after {
-    content: '';
-    position: relative;
-    top: -30px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: #e6e6e6;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
-    transform: rotate(45deg);
-  }
-
-  &.is-down {
-    top: auto;
-    bottom: calc(100% - 0.1em);
-    transform: rotate(180deg);
-  }
-}
-
-.Modal-title {
-  padding-bottom: 5px;
-  display: inline-block;
-  line-height: 1.64;
-  color: #4a4a4a;
-  font-weight: bold;
-}
-
-.Modal-text {
-  line-height: 1.64;
-  display: block;
-  padding-bottom: 10px;
-}
-
-.Modal-linkWrap {
-  line-height: 1.64;
-  color: #4a4a4a;
-  display: block;
+.Modal-close {
   cursor: pointer;
-  padding: 5px 10px;
-  position: relative;
-  left: -5px;
-  border-radius: 3px;
+  position: absolute;
+  background: #e6e6e6;
+  padding: 10px;
+  border-radius: 50%;
+  fill: #c66347;
+  top: -12px; 
+  right: -12px;
+  border: 4px solid white;
+  line-height: 0;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
 
   &:hover {
-    background-color: darken(#e6e6e6, 15%);
+    fill: darken(#c66347, 15%);
+    background: darken(#e6e6e6, 15%);
+    border: 4px solid darken(white, 15%);
   }
-}
 
-.Modal-link {
-  text-decoration: underline;
-  margin-left: 3px;
-}
+  &:focus {
+    outline: 0;
+    fill: darken(#c66347, 15%);
+    background: darken(#e6e6e6, 15%);
+    border: 4px solid darken(white, 15%);
+  }
 
-.Modal-closeIcon {
-  padding-right: 3px;
-}
-
-.Modal-links {
-  margin: 10px 10px 0;
+  &:active {
+    top: -11px;
+    right: -13px;
+    box-shadow: none;
+  }
 }
