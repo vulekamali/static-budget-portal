@@ -55,7 +55,7 @@
               {% if event.rsvp_url or event.url %}
 
                 {% if event.rsvp_url %}
-                  <a class="Button is-small is-inline u-marginRight u-marginRight--5" href="{{ event.rsvp }}">RSVP</a>
+                  <a class="Button is-small is-inline u-marginRight u-marginRight--5" href="{{ event.rsvp_url }}">RSVP</a>
                 {% endif %}
 
                 {% if event.url %}  
@@ -65,7 +65,7 @@
               {% else %}
 
               {% if include.upcoming %}  
-                <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="http://eepurl.com/diwJEP">Receive Updates</a>
+                <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="http://eepurl.com/diwJEP">Receive updates</a>
               {% endif %}
 
               {% endif %}
