@@ -4,6 +4,8 @@ budget_webcast:
   url: http://www.treasury.gov.za/documents/national%20budget/2018/webcast.aspx
 budget_review:
   url: http://www.treasury.gov.za/documents/national%20budget/2017/review/FullBR.pdf
+budget_revenue_data:
+  url: http://www.treasury.gov.za/documents/national%20budget/2018/TimeSeries/Excel/Table%202%20-%20Main%20budget%20estimates%20of%20national%20revenue.xlsx
 estimates_national_expenditure:
   url: http://www.treasury.gov.za/documents/national%20budget/2018/ene/FullENE.pdf
 estimates_national_expenditure_data:
@@ -19,13 +21,13 @@ pocket_guide:
 resources_link:
   url: http://www.treasury.gov.za/documents/national%20budget/2018/default.aspx
 people_guide:
-  afrikaans:
+  - title: 'Afrikaans'
     url: http://www.treasury.gov.za/documents/national%20budget/2018/guides/2018%20Peoples%20Guide%20Afrikaans.pdf
-  english:
+  - title: 'English'
     url: http://www.treasury.gov.za/documents/national%20budget/2018/guides/2018%20Peoples%20Guide%20English.pdf
-  Setswana:
+  - title: 'Setswana'
     url: http://www.treasury.gov.za/documents/national%20budget/2018/guides/2018%20Peoples%20Guide%20Setswana.pdf
-  Xhosa:
+  - title: 'Xhosa'
     url: http://www.treasury.gov.za/documents/national%20budget/2018/guides/2018%20Peoples%20Guide%20Xhosa.pdf
-  Zulu:
+  - title: 'Zulu'
     url: http://www.treasury.gov.za/documents/national%20budget/2018/guides/2018%20Peoples%20Guide%20Zulu.pdf

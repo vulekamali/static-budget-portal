@@ -1,0 +1,109 @@
+<div class="Events">
+  {% for event in include.events %}
+
+  {% if event.type == 'hackathon' %}
+    {% assign title = 'Hackathon' %}
+    {% assign description = 'Join developers, students, enterpreneurs and data experts at a vulekamali hackathon. Build websites, mobile apps and other tools using the data and APIs behind vulekamali.' %}
+  {% elsif event.type == 'cid' %}
+    {% assign title = 'Civic Information Drive' %}
+    {% assign description = 'Find out more about how to use vulekamali.gov.za to understand national and provincial budgets.' %}
+  {% elsif event.type == 'dataquest' %}
+    {% assign title = 'Data Quest' %}
+    {% assign description = 'Tell us what you need to make vulekamali and budget data more accessible and useful. Join us for a full day event discussing budget accessibility.' %}
+  {% else %}
+    {% assign title = 'Event' %}
+    {% assign description = '' %}
+  {% endif %}
+
+    <div class="Events-blockWrap">
+      <div class="Events-block{{ class }}">
+        <div class="Events-infoWrap">
+          <div class="Events-info">
+            <div class="Events-type">{{ event.date }} — {{ event.province }} — {{ title }}</div>
+
+            {% if event.date %}
+              <div class="Events-line"> 
+                <span class="Events-icon">
+                  <svg class="Icon is-12" version="1.2" width="0" height="0" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" overflow="scroll">
+                    <path d="M94.3 16.4a6.9 6.9 0 0 0-5-2.1h-7.1V8.9c0-2.5-.9-4.6-2.6-6.3A9 9 0 0 0 73.2 0h-3.6c-2.5 0-4.6.9-6.3 2.6a8.8 8.8 0 0 0-2.6 6.3v5.4H39.3V8.9A9 9 0 0 0 30.4 0h-3.6c-2.5 0-4.6.9-6.3 2.6a8.8 8.8 0 0 0-2.6 6.3v5.4h-7.1c-1.9 0-3.6.7-5 2.1a6.9 6.9 0 0 0-2.1 5v71.4c0 1.9.7 3.6 2.1 5a6.9 6.9 0 0 0 5 2.1h78.6c1.9 0 3.6-.7 5-2.1a6.9 6.9 0 0 0 2.1-5V21.4a7.4 7.4 0 0 0-2.2-5zM67.9 8.9c0-.5.2-.9.5-1.3.3-.3.8-.5 1.3-.5h3.6c.5 0 .9.2 1.3.5.2.4.4.8.4 1.3V25c0 .5-.2.9-.5 1.3-.3.3-.8.5-1.3.5h-3.6c-.5 0-1-.2-1.3-.5-.3-.3-.5-.8-.5-1.3V8.9zM25 8.9c0-.5.2-.9.5-1.3.3-.3.8-.5 1.3-.5h3.6c.5 0 1 .2 1.3.5.3.4.4.8.4 1.3V25c0 .5-.2.9-.5 1.3-.3.3-.8.5-1.3.5h-3.6c-.5 0-.9-.2-1.3-.5-.2-.4-.4-.8-.4-1.3V8.9zm64.3 84H10.7V35.7h78.6v57.2zm0 0"></path>
+                  </svg>
+                </span>
+                <span>{{ event.date }}</span>
+              </div>
+            {% endif %}
+
+            {% if event.where %}
+              <div class="Events-line">
+                <span class="Events-icon">
+                  <svg class="Icon is-12" version="1.2" width="0" height="0" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <path d="M50 0a35 35 0 0 0-34.8 39.5c3 27.4 32.5 59 32.5 59 .5.6 1 .9 1.5 1.2l1 .3 1-.3c.5-.3 1-.6 1.5-1.2 0 0 29.1-31.6 32-59.1.1-1.4.3-2.8.3-4.3A35 35 0 0 0 50 0zm0 57.7c-12.4 0-22.6-10.2-22.6-22.6S37.6 12.5 50 12.5a22.6 22.6 0 0 1 0 45.2zm0 0"></path>
+                  </svg>
+                </span>
+                <span>{{ event.where }}</span>
+              </div>
+            {% endif %}
+
+            <div class="Events-description">{{ description }}</div>
+          </div>
+        </div>
+        
+        <div class="Events-pastWrap"> 
+          <div class="Events-past"> 
+
+            <div class="Events-buttons">
+
+              {% if event.rsvp_url or event.url %}
+
+                {% if event.rsvp_url %}
+                  <a class="Button is-small is-inline u-marginRight u-marginRight--5" href="{{ event.rsvp_url }}">RSVP</a>
+                {% endif %}
+
+                {% if event.url %}  
+                  <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.url }}">Learn more</a>
+                {% endif %}
+
+              {% else %}
+
+              {% if include.upcoming %}  
+                <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="http://eepurl.com/diwJEP">Receive updates</a>
+              {% endif %}
+
+              {% endif %}
+
+              {% if event.presentation_url %}
+                <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.presentation_url }}">
+                  Download the hackathon presentations
+                </a>
+              {% endif %}
+
+              {% if event.notes_url %}
+                <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.notes_url }}">
+                  Download the data quest notes
+                </a>
+              {% endif %}
+
+              {% if event.video_url %}
+                <a class="Button is-small is-inline u-marginRight u-marginRight--5" target="_blank" href="{{ event.video_url }}">
+                  Watch the video
+                </a>
+              {% endif %}
+            </div>
+
+            {% if event.photos %}
+              <div class="Events-buttons">
+
+                {% for url in event.photos %}
+                  <a class="Events-link" target="_blank" target="_blank" href="{{ url }}">
+                    <img class="Events-image" src="{{ url }}" />
+                  </a>
+                {% endfor %}
+                
+              </div>
+            {% endif %}
+          </div>
+        </div>
+       
+      </div> 
+    </div>
+  {% endfor %}
+</div>

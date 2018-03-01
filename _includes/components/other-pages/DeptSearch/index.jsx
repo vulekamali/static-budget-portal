@@ -1,5 +1,6 @@
 import { h, render } from 'preact';
 import DeptSearchContainer from './partials/DeptSearchContainer.jsx';
+import decodeHtmlEntities from './../../../utilities/js/helpers/decodeHtmlEntities.js';
 
 
 function DeptSearch() {
@@ -10,8 +11,8 @@ function DeptSearch() {
       const component = componentsList[i];
       const { sphere, no_js: noJs } = window.budgetPortal.stringQueries;
 
-      const nationalData = JSON.parse(component.getAttribute('data-national-json')).data;
-      const rawProvincialData = JSON.parse(component.getAttribute('data-provincial-json')).data;
+      const nationalData = JSON.parse(decodeHtmlEntities(component.getAttribute('data-national-json'))).data;
+      const rawProvincialData = JSON.parse(decodeHtmlEntities(component.getAttribute('data-provincial-json'))).data;
 
       const provincialData = rawProvincialData.sort((a, b) => {
         return a.name.localeCompare(b.name);
