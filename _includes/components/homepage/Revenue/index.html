@@ -2,7 +2,7 @@
   <div class="Revenue-heading">Where National Government gets its money for <span class="u-whiteSpace u-whiteSpace--noWrap">{{ page.financial_year }}</span></div>
   <div 
     class="Revenue-container"
-    data-info='{ "data": {{ include.info | jsonify }} }'
+    data-info='{ "data": {{ include.info | jsonify | escape }} }'
     data-link="{{ include.link }}"
     data-year="{{ include.year }}"
     data-shortcuts="false"
