@@ -31,9 +31,9 @@ export default function Modal({ open, languageOptions, setLanguage }) {
     <div className="Videos">
       <div className="Videos-embed">
         <div className="Videos-loading" />
-        <iframe className="Videos-iframe" width="560" height="315" src={`https://www.youtube.com/embed/${open.language}?rel=0&amp;amp;showinfo=0`} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" />
+        <iframe title="Video" className="Videos-iframe" width="560" height="315" src={`https://www.youtube.com/embed/${open.language}?rel=0&amp;amp;showinfo=0`} frameBorder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" />
       </div>
-      { Object.keys(languageOptions) > 1 ? toggle : null }
+      { Object.keys(languageOptions).length > 1 ? toggle : null }
     </div>
   );
 }

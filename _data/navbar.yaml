@@ -1,0 +1,25 @@
+array:
+- id: homepage
+  title: Home
+  url: ""
+  year-range: true
+- id: departments
+  title: Department Budgets
+  url: "departments"
+  year-range: true
+- id: learning-centre
+  title: Learning Centre
+  url: "videos"
+  subLinks: true
+- id: contributed-data
+  title: Contributed Data
+  url: "contributed-data"
+- id: about
+  title: About
+  url: "about"
+  align: right
+  subLinks: true
+- id: faq
+  title: FAQ
+  url: "faq"
+  align: right

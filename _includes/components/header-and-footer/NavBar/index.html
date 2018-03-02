@@ -18,60 +18,62 @@
 
         {% for item in include.items %}
 
-        {% if include.active == 'about' %}
-          {% assign aboutCurrentClass = ' is-currentPage js-isScrollable js-box' %}
+        {% comment %} Create alignment CSS class {% endcomment %}
+        {% if item.align == 'right' %}
+          {% assign alignmentClass = ' is-right' %}
         {% else %}
-          {% assign aboutCurrentClass = ' js-isScrollable' %}
+          {% assign alignmentClass = '' %}
         {% endif %}
 
-        {% if include.active == 'learning-centre' %}
-          {% assign lcCurrentClass = ' is-currentPage js-box' %}
+        {% comment %} Create variable that should be used to compare current id against {% endcomment %}
+        {% if item.align == 'right' %}
+          {% assign alignmentClass = ' is-right' %}
         {% else %}
-          {% assign lcCurrentClass = '' %}
+          {% assign alignmentClass = '' %}
         {% endif %}
 
-          {% if item.id == include.active %}
+        {% comment %} Create CSS class that highlights location {% endcomment %}
+        {% if item.id == include.page_id %}
+          {% assign activeClass = ' is-active' %}
+          {% assign tag = 'span' %}
+        {% else %}
+          {% if include.parent and include.parent == item.id %}
             {% assign activeClass = ' is-active' %}
-            {% if include.nested == false %}
-              {% assign tag = 'span' %}
-            {% endif %}
+            {% assign tag = 'a' %}
           {% else %}
             {% assign activeClass = '' %}
             {% assign tag = 'a' %}
           {% endif %}
-            
-          {% if include.active == 'about' %}
-            {% assign currentClass = ' is-currentPage js-box' %}
-          {% else %}
-            {% assign currentClass = '' %}
-          {% endif %}
+        {% endif %}
+        
+        {% comment %} Create CSS that prevents parent from being highlighted as well on mobile {% endcomment %}
+        {% if item.subLinks %}
+          {% assign subLinkClass = ' has-subLinks' %}
+        {% else %}
+          {% assign subLinkClass = '' %}
+        {% endif %}
 
-          {% if item.id == 'about' %}
-            {% assign hasSubLinks = ' has-subLinks' %}
-          {% else %}
-            {% assign hasSubLinks = '' %}
-          {% endif %}
+        {% comment %} Create year specific URL if needed {% endcomment %}
+        {% if item.year-range %}
+          {% assign finalUrl = include.latest_year | append: "/" | append: item.url %}
+        {% else %}
+          {% assign finalUrl = item.url %}
+        {% endif %} 
 
-          {% if item.align == 'right' %}
-            {% assign align = ' is-right' %}
-          {% else %}
-            {% assign align = '' %}
-          {% endif %}
-
-          <li class="NavBar-item{{ align }}">
-            <a
-              class="NavBar-link{{ activeClass }}{{ hasSubLinks }}"
-              href="/{{ include.year }}/{{ item.url }}"
+          <li class="NavBar-item{{ alignmentClass }}">
+            <{{ tag }}
+              class="NavBar-link{{ activeClass }}{{ subLinkClass }}"
+              href="/{{ finalUrl }}"
             >
 
-              {% if item.id == 'home' %}
+              {% if item.id == 'homepage' %}
                 <span class="NavBar-iconWrap">{{ icon }}</span>
                 <span class="NavBar-text is-mobileOnly">Home</span>
               {% else %}
                 <span class="NavBar-text">{{ item.title }}</span>
               {% endif %}
 
-            </a>
+            </{{ tag }}>
 
             {% if item.id == 'about' %}
               {% include components/header-and-footer/SubLinks/index.html type="about" modifiers=aboutCurrentClass year=include.year %}

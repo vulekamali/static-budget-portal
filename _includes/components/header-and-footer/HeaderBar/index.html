@@ -1,13 +1,23 @@
 <div class="HeaderBar">
   <div class="HeaderBar-wrap">
     <div class="HeaderBar-navBarWrap">
-      {% include components/header-and-footer/NavBar/index.html title=include.title items=include.items year=include.year active=include.active %}
+      {% 
+        include components/header-and-footer/NavBar/index.html
+        items=include.items
+        nested=include.nested
+        page_id=include.page_id
+        parent=include.parent
+        latest_year=include.latest_year
+      %}
     </div>
     <a href="/" class="HeaderBar-logoWrap">
       {% include components/header-and-footer/Logo/index.html %}
     </a>
     <div class="HeaderBar-searchWrap">
-      {% include components/header-and-footer/Search/index.html %}
+      {% 
+        include components/header-and-footer/Search/index.html
+        year=include.year
+      %}
     </div>
   </div>
 </div>
