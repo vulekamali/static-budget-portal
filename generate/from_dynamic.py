@@ -26,37 +26,29 @@ portal_url = os.environ.get('PORTAL_URL', "https://dynamicbudgetportal.openup.or
 
 def ensure_file_dirs(file_path):
     dirname = os.path.dirname(file_path)
-    if not os.path.exists(dirname):
-        os.makedirs(dirname)
+    if dirname:
+        if not os.path.exists(dirname):
+            os.makedirs(dirname)
 
 
 def write_basic_page(page_url_path, page_yaml, layout=None):
     page = yaml.load(page_yaml)
     file_path = "%s.md" % page_url_path[1:]
     ensure_file_dirs(file_path)
-    years = []
-    for year in page['financial_years']:
-        years.append([
-            year['id'],
-            year['closest_match']['url_path'],
-            'active' if year['is_selected'] else 'link'
-        ])
-    if page['organisational_unit'] == 'learning':
-        active = 'learning-centre'
-    else:
-        active = None
-    title = page['slug'].replace('-', ' ').title()
+    front_matter = {
+        'slug': page['slug'],
+        'layout': layout or page['slug'],
+    }
+    financial_year = page.get('selected_financial_year', None)
+    if financial_year:
+        front_matter['financial_year'] = financial_year
     with open(file_path, "wb") as outfile:
-        outfile.write(
-            ("---\n"
-             "financial_year: %s\n"
-             "slug: %s\n"
-             "layout: %s\n"
-             "---") % (
-                 page['selected_financial_year'],
-                 page['slug'],
-                 layout or page['slug'],
-             ))
+        front_matter_yaml = yaml.safe_dump(
+            front_matter,
+            default_flow_style=False,
+            encoding='utf-8',
+        )
+        outfile.write("---\n%s---" % front_matter_yaml)
 
 
 def write_financial_year(year_slug, static_path):
