@@ -1,4 +1,5 @@
 ---
 layout: faq
-page_id: faq
+slug: faq
+title: Frequently Asked Questions
 ---

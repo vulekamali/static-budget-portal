@@ -1,5 +1,5 @@
 ---
 financial_year: 2016-17
-page_id: departments
+slug: departments
 layout: department_list
 ---

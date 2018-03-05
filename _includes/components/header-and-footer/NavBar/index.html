@@ -25,25 +25,13 @@
           {% assign alignmentClass = '' %}
         {% endif %}
 
-        {% comment %} Create variable that should be used to compare current id against {% endcomment %}
-        {% if item.align == 'right' %}
-          {% assign alignmentClass = ' is-right' %}
-        {% else %}
-          {% assign alignmentClass = '' %}
-        {% endif %}
-
         {% comment %} Create CSS class that highlights location {% endcomment %}
-        {% if item.id == include.page_id %}
+        {% if item.id == include.selected_tab %}
           {% assign activeClass = ' is-active' %}
-          {% assign tag = 'span' %}
+          {% assign activeValue = true %}
         {% else %}
-          {% if include.parent and include.parent == item.id %}
-            {% assign activeClass = ' is-active' %}
-            {% assign tag = 'a' %}
-          {% else %}
-            {% assign activeClass = '' %}
-            {% assign tag = 'a' %}
-          {% endif %}
+          {% assign activeClass = '' %}
+          {% assign activeValue = false %}
         {% endif %}
         
         {% comment %} Create CSS that prevents parent from being highlighted as well on mobile {% endcomment %}
@@ -60,8 +48,9 @@
           {% assign finalUrl = item.url %}
         {% endif %} 
 
+
           <li class="NavBar-item{{ alignmentClass }}">
-            <{{ tag }}
+            <a
               class="NavBar-link{{ activeClass }}{{ subLinkClass }}"
               href="/{{ finalUrl }}"
             >
@@ -73,16 +62,17 @@
                 <span class="NavBar-text">{{ item.title }}</span>
               {% endif %}
 
-            </{{ tag }}>
+            </a>
 
-            {% if item.id == 'about' %}
-              {% include components/header-and-footer/SubLinks/index.html type="about" modifiers=aboutCurrentClass year=include.year %}
+            {% if item.children %}
+              {%
+                include components/header-and-footer/SubLinks/index.html 
+                items=item.children
+                active=activeValue
+                layout=include.layout
+                selected_sidebar=include.selected_sidebar
+              %}
             {% endif %}
-
-            {% if item.id == 'learning-centre' %}
-              {% include components/header-and-footer/SubLinks/index.html type="learning-centre" modifiers=lcCurrentClass year=include.year currentPage=include.title %}
-            {% endif %}
-
           </li>
 
         {% endfor %}

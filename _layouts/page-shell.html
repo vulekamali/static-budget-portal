@@ -2,20 +2,23 @@
 layout: base
 ---
 
-{% if page.sphere == "national" %}
-{% assign page_data = site.data[page.financial_year][page.sphere].departments[page.department_slug] %}
 
-{% elsif page.sphere == "provincial" %}
-{% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.department_slug] %}
+{% if page.financial_year %}
 
-{% elsif page.page_id == "departments" %}
-  {% assign page_data = site.data[page.financial_year].departments %}
+  {% if page.sphere %}
 
-{% elsif page.page_id == "search-result" %}
-  {% assign page_data = site.data[page.financial_year].search-result %}
+    {% if page.sphere == "national" %}
+      {% assign page_data = site.data[page.financial_year][page.sphere].departments[page.department_slug] %}
+    {% else %}
+      {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.department_slug] %}
+    {% endif %}
 
-{% elsif page.page_id == "homepage" %}
-  {% assign page_data = site.data[page.financial_year].index %}
+  {% else %}
+    {% assign page_data = site.data[page.slug] %}
+  {% endif %}
+
+{% else %}
+  {% assign page_data = site.data[page.slug] %}
 {% endif %}
 
 
@@ -25,11 +28,10 @@ layout: base
     {% 
       include components/header-and-footer/HeaderBar/index.html
       items=site.data.navbar.array
-      nested=page.nested
-      page_id=page.page_id
-      parent=page.parent
+      selected_tab=page_data.selected_tab
       latest_year=site.latest_year
       year=page.financial_year
+      selected_sidebar=page_data.selected_sidebar
     %}
 
     {% if page.financial_year %}

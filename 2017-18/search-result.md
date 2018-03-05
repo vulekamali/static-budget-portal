@@ -1,5 +1,6 @@
 ---
 financial_year: 2017-18
-page_id: search-result
+slug: search-result
 layout: search-result
+title: Search Results 2017-18
 ---

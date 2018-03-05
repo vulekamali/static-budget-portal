@@ -1,4 +1,5 @@
 ---
 layout: contributed-data
-page_id: contributed-data
+slug: contributed-data
+title: Contributed Data
 ---

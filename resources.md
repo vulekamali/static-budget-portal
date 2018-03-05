@@ -1,5 +1,5 @@
 ---
 layout: resources
-page_id: resources
-parent: learning-centre
+slug: resources
+title: Resources
 ---

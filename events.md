@@ -1,4 +1,5 @@
 ---
 layout: events
-page_id: events
+slug: events
+title: Events
 ---

@@ -1,4 +1,5 @@
 ---
 layout: terms-and-conditions
-page_id: terms-and-conditions
+slug: terms-and-conditions
+title: Terms and Conditions
 ---

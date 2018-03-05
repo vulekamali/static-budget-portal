@@ -1,4 +1,5 @@
 ---
 layout: about
-page_id: about
+slug: about
+title: About
 ---

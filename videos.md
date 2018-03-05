@@ -1,5 +1,5 @@
 ---
 layout: videos
-page_id: videos
-parent: learning-centre
+slug: videos
+title: Videos
 ---
