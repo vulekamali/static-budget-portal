@@ -93,7 +93,7 @@ def write_department_page(department_url_path, department_yaml):
              "financial_year: %s\n"
              "sphere: %s\n"
              "geographic_region_slug: %s\n"
-             "department_slug: %s\n"
+             "slug: %s\n"
              "layout: department\n"
              "---") % (
                  department['selected_financial_year'],
@@ -119,7 +119,7 @@ def write_dataset_page(dataset_url_path, dataset_yaml):
 
 # Basic Pages
 
-write_financial_year(YEAR_SLUGS[-1], "")
+write_financial_year(max(YEAR_SLUGS), "")
 
 for year_slug in YEAR_SLUGS:
     write_financial_year(year_slug, "/%s" % year_slug)

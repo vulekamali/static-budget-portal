@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works, Roads and Infrastructure
-    organisational_unit: department
     slug: public-works-roads-and-infrastructure
     url_path: /2015-16/provincial/limpopo/departments/public-works-roads-and-infrastructure
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works, Roads and Infrastructure
-    organisational_unit: department
     slug: public-works-roads-and-infrastructure
     url_path: /2016-17/provincial/limpopo/departments/public-works-roads-and-infrastructure
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works, Roads and Infrastructure
-    organisational_unit: department
     slug: public-works-roads-and-infrastructure
     url_path: /2017-18/provincial/limpopo/departments/public-works-roads-and-infrastructure
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Limpopo
-    organisational_unit: government
     slug: limpopo
     url_path: /2018-19/provincial/limpopo
   id: 2018-19
@@ -48,7 +44,6 @@ intro: "## Vision\r\n\r\nA leader in the provision and management of provincial 
   \ roads infrastructure"
 is_vote_primary: true
 name: Public Works, Roads and Infrastructure
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 301734000.0
@@ -59,10 +54,12 @@ programmes:
 - name: Roads Infrastructure
   total_budget: 1762327000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: public-works-roads-and-infrastructure
 sphere:
   name: Provincial
   slug: provincial
+title: Public Works, Roads and Infrastructure - vulekamali
 treasury_datasets:
   'EPRE for Vote 09 : Public Works, Roads and Infrastructure':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

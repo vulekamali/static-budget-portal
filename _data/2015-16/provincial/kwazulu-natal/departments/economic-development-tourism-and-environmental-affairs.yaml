@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development, Tourism and Environmental Affairs
-    organisational_unit: department
     slug: economic-development-tourism-and-environmental-affairs
     url_path: /2015-16/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development, Tourism and Environmental Affairs
-    organisational_unit: department
     slug: economic-development-tourism-and-environmental-affairs
     url_path: /2016-17/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development, Tourism and Environmental Affairs
-    organisational_unit: department
     slug: economic-development-tourism-and-environmental-affairs
     url_path: /2017-18/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: KwaZulu-Natal
-    organisational_unit: government
     slug: kwazulu-natal
     url_path: /2018-19/provincial/kwazulu-natal
   id: 2018-19
@@ -56,7 +52,6 @@ intro: "## Vision\r\n\r\nThe vision of the Department of Economic Development, T
   \n\r\n* To provide conservation services"
 is_vote_primary: true
 name: Economic Development, Tourism and Environmental Affairs
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 233095000.0
@@ -73,10 +68,12 @@ programmes:
 - name: Environmental Affairs
   total_budget: 923847000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: economic-development-tourism-and-environmental-affairs
 sphere:
   name: Provincial
   slug: provincial
+title: Economic Development, Tourism and Environmental Affairs - vulekamali
 treasury_datasets:
   'EPRE for Vote 04 : Economic Development, Tourism and Environmental Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

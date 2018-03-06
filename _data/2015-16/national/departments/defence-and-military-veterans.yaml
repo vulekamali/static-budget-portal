@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Defence and Military Veterans
-    organisational_unit: department
     slug: defence-and-military-veterans
     url_path: /2015-16/national/departments/defence-and-military-veterans
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Defence and Military Veterans
-    organisational_unit: department
     slug: defence-and-military-veterans
     url_path: /2016-17/national/departments/defence-and-military-veterans
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Defence and Military Veterans
-    organisational_unit: department
     slug: defence-and-military-veterans
     url_path: /2017-18/national/departments/defence-and-military-veterans
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Defence and Military Veterans
-    organisational_unit: department
     slug: defence-and-military-veterans
     url_path: /2018-19/national/departments/defence-and-military-veterans
   id: 2018-19
@@ -46,7 +42,6 @@ intro: "## Vote purpose\n\n_Defend and protect the Republic of South Africa, its
   \ with the needs of\nSouth Africa.\n\n"
 is_vote_primary: true
 name: Defence and Military Veterans
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 4827173000.0
@@ -65,10 +60,12 @@ programmes:
 - name: General Support
   total_budget: 5816992000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: defence-and-military-veterans
 sphere:
   name: National
   slug: national
+title: Defence and Military Veterans - vulekamali
 treasury_datasets:
   ENE for Vote 19 - Defence and Military Veterans:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
