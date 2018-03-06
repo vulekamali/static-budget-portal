@@ -1,4 +1,4 @@
 ---
 layout: resources
-slug: resources
+data_key: resources
 ---

@@ -1,4 +1,4 @@
 ---
 layout: faq
-slug: faq
+data_key: faq
 ---

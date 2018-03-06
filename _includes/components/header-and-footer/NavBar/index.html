@@ -18,35 +18,35 @@
 
         {% for item in include.items %}
 
-        {% comment %} Create alignment CSS class {% endcomment %}
-        {% if item.align == 'right' %}
-          {% assign alignmentClass = ' is-right' %}
-        {% else %}
-          {% assign alignmentClass = '' %}
-        {% endif %}
+          {% comment %} Create alignment CSS class {% endcomment %}
+          {% if item.align == 'right' %}
+            {% assign alignmentClass = ' is-right' %}
+          {% else %}
+            {% assign alignmentClass = '' %}
+          {% endif %}
 
-        {% comment %} Create CSS class that highlights location {% endcomment %}
-        {% if item.id == include.selected_tab %}
-          {% assign activeClass = ' is-active' %}
-          {% assign activeValue = true %}
-        {% else %}
-          {% assign activeClass = '' %}
-          {% assign activeValue = false %}
-        {% endif %}
-        
-        {% comment %} Create CSS that prevents parent from being highlighted as well on mobile {% endcomment %}
-        {% if item.subLinks %}
-          {% assign subLinkClass = ' has-subLinks' %}
-        {% else %}
-          {% assign subLinkClass = '' %}
-        {% endif %}
+          {% comment %} Create CSS class that highlights location {% endcomment %}
+          {% if item.id == include.selected_tab %}
+            {% assign activeClass = ' is-active' %}
+            {% assign activeValue = true %}
+          {% else %}
+            {% assign activeClass = '' %}
+            {% assign activeValue = false %}
+          {% endif %}
+          
+          {% comment %} Create CSS that prevents parent from being highlighted as well on mobile {% endcomment %}
+          {% if item.subLinks %}
+            {% assign subLinkClass = ' has-subLinks' %}
+          {% else %}
+            {% assign subLinkClass = '' %}
+          {% endif %}
 
-        {% comment %} Create year specific URL if needed {% endcomment %}
-        {% if item.year-range %}
-          {% assign finalUrl = include.latest_year | append: "/" | append: item.url %}
-        {% else %}
-          {% assign finalUrl = item.url %}
-        {% endif %} 
+          {% comment %} Create year specific URL if needed {% endcomment %}
+          {% if item.year-range %}
+            {% assign finalUrl = include.latest_year | append: "/" | append: item.url %}
+          {% else %}
+            {% assign finalUrl = item.url %}
+          {% endif %} 
 
 
           <li class="NavBar-item{{ alignmentClass }}">
@@ -63,7 +63,7 @@
               {% endif %}
 
             </a>
-
+            
             {% if item.children %}
               {%
                 include components/header-and-footer/SubLinks/index.html 

@@ -1,4 +1,4 @@
 ---
 layout: videos
-slug: videos
+data_key: videos
 ---

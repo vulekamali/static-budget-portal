@@ -1,4 +1,4 @@
 ---
 layout: events
-slug: events
+data_key: events
 ---

@@ -1,4 +1,4 @@
 ---
 layout: glossary
-slug: glossary
+data_key: glossary
 ---

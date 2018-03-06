@@ -1,4 +1,4 @@
 ---
 layout: about
-slug: about
+data_key: about
 ---
