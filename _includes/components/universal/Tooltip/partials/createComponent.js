@@ -26,7 +26,7 @@ export default function createComponent(year, title, description, content) {
                   </span>
                 </span>
 
-                <a class="Tooltip-linkWrap" href="/${year}/glossary">
+                <a class="Tooltip-linkWrap" href="/glossary">
                   <div class="Tooltip-link">View glossary</div>
                 </a>
               </div>
