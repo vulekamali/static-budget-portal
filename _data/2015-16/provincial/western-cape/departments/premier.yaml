@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Premier
-    organisational_unit: department
     slug: premier
     url_path: /2015-16/provincial/western-cape/departments/premier
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Premier
-    organisational_unit: department
     slug: premier
     url_path: /2016-17/provincial/western-cape/departments/premier
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Premier
-    organisational_unit: department
     slug: premier
     url_path: /2017-18/provincial/western-cape/departments/premier
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Western Cape
-    organisational_unit: government
     slug: western-cape
     url_path: /2018-19/provincial/western-cape
   id: 2018-19
@@ -56,7 +52,6 @@ intro: "## Vision\r\n\r\nTo be a leading department enabling the Western Cape Go
   \ transversal corporate services on a shared services basis."
 is_vote_primary: true
 name: Premier
-organisational_unit: department
 programmes:
 - name: Executive Support (Administration)
   total_budget: 77019000.0
@@ -69,10 +64,12 @@ programmes:
 - name: Corporate Assurance (Corporate Services Centre)
   total_budget: 117608000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: premier
 sphere:
   name: Provincial
   slug: provincial
+title: Premier - vulekamali
 treasury_datasets:
   'EPRE for Vote 01 : Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Roads and Public Works
-    organisational_unit: department
     slug: roads-and-public-works
     url_path: /2015-16/provincial/northern-cape/departments/roads-and-public-works
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Roads and Public Works
-    organisational_unit: department
     slug: roads-and-public-works
     url_path: /2016-17/provincial/northern-cape/departments/roads-and-public-works
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Roads and Public Works
-    organisational_unit: department
     slug: roads-and-public-works
     url_path: /2017-18/provincial/northern-cape/departments/roads-and-public-works
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Northern Cape
-    organisational_unit: government
     slug: northern-cape
     url_path: /2018-19/provincial/northern-cape
   id: 2018-19
@@ -57,7 +53,6 @@ intro: "## Vision\n\nTo be trendsetter through excellence in service delivery.\r
   \ projects\r\n"
 is_vote_primary: true
 name: Roads and Public Works
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 131879000.0
@@ -68,10 +63,12 @@ programmes:
 - name: Community Based Programme
   total_budget: 77168000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: roads-and-public-works
 sphere:
   name: Provincial
   slug: provincial
+title: Roads and Public Works - vulekamali
 treasury_datasets:
   'EPRE for Vote 05 : Roads and Public Works':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

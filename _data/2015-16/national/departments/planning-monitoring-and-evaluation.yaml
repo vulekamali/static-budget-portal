@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Planning, Montoring and Evaluation
-    organisational_unit: department
     slug: planning-monitoring-and-evaluation
     url_path: /2015-16/national/departments/planning-monitoring-and-evaluation
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Planning, Monitoring and Evaluation
-    organisational_unit: department
     slug: planning-monitoring-and-evaluation
     url_path: /2016-17/national/departments/planning-monitoring-and-evaluation
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Planning, Monitoring and Evaluation
-    organisational_unit: department
     slug: planning-monitoring-and-evaluation
     url_path: /2017-18/national/departments/planning-monitoring-and-evaluation
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Planning, Monitoring and Evaluation
-    organisational_unit: department
     slug: planning-monitoring-and-evaluation
     url_path: /2018-19/national/departments/planning-monitoring-and-evaluation
   id: 2018-19
@@ -47,7 +43,6 @@ intro: "## Vote purpose\r\n\r\nImprove government service delivery through plann
   \ practices in government."
 is_vote_primary: true
 name: Planning, Montoring and Evaluation
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 69784000.0
@@ -60,10 +55,12 @@ programmes:
 - name: National Youth Development
   total_budget: 414542000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: planning-monitoring-and-evaluation
 sphere:
   name: National
   slug: national
+title: Planning, Montoring and Evaluation - vulekamali
 treasury_datasets:
   ENE for Vote 08 - Planning, Monitoring and Evaluation:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

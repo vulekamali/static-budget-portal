@@ -1,15 +1,14 @@
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: "Emergency Medical Services in the Eastern Cape 2005 \u2013 2015"
-  url_path: /2017-18/datasets/emergency-medical-services-in-the-eastern-cape-2005-2015
+  url_path: /datasets/emergency-medical-services-in-the-eastern-cape-2005-2015
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-health-2014-15
+  url_path: /datasets/budget-brief-eastern-cape-department-of-health-2014-15
 financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2015-16/provincial/free-state/departments/health
   id: 2015-16
@@ -17,7 +16,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2016-17/provincial/free-state/departments/health
   id: 2016-17
@@ -25,7 +23,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2017-18/provincial/free-state/departments/health
   id: 2017-18
@@ -33,7 +30,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Free State
-    organisational_unit: government
     slug: free-state
     url_path: /2018-19/provincial/free-state
   id: 2018-19
@@ -62,7 +58,6 @@ intro: "## Vision\n\nIncreasing life expectancy through health system effectiven
   \ and Non-Communicable Diseases"
 is_vote_primary: true
 name: Health
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 279061000.0
@@ -81,10 +76,12 @@ programmes:
 - name: Health Facilities Management
   total_budget: 595710000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: health
 sphere:
   name: Provincial
   slug: provincial
+title: Health - vulekamali
 treasury_datasets:
   'EPRE for Vote 05 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

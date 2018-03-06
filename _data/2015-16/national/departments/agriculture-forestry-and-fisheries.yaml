@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Agriculture, Forestry and Fisheries
-    organisational_unit: department
     slug: agriculture-forestry-and-fisheries
     url_path: /2015-16/national/departments/agriculture-forestry-and-fisheries
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Agriculture, Forestry and Fisheries
-    organisational_unit: department
     slug: agriculture-forestry-and-fisheries
     url_path: /2016-17/national/departments/agriculture-forestry-and-fisheries
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Agriculture, Forestry and Fisheries
-    organisational_unit: department
     slug: agriculture-forestry-and-fisheries
     url_path: /2017-18/national/departments/agriculture-forestry-and-fisheries
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Agriculture, Forestry and Fisheries
-    organisational_unit: department
     slug: agriculture-forestry-and-fisheries
     url_path: /2018-19/national/departments/agriculture-forestry-and-fisheries
   id: 2018-19
@@ -47,7 +43,6 @@ intro: "## Vote purpose\r\n\r\nLead, support and promote agricultural, forestry 
   \ Standards Act (1990), and the Conservation of Agricultural Resources Act (1993)."
 is_vote_primary: true
 name: Agriculture, Forestry and Fisheries
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 729947000.0
@@ -62,10 +57,12 @@ programmes:
 - name: Fisheries
   total_budget: 443267000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: agriculture-forestry-and-fisheries
 sphere:
   name: National
   slug: national
+title: Agriculture, Forestry and Fisheries - vulekamali
 treasury_datasets: {}
 vote_number: 24
 vote_primary:

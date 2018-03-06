@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Social Development
-    organisational_unit: department
     slug: social-development
     url_path: /2015-16/provincial/free-state/departments/social-development
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Social Development
-    organisational_unit: department
     slug: social-development
     url_path: /2016-17/provincial/free-state/departments/social-development
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Social Development
-    organisational_unit: department
     slug: social-development
     url_path: /2017-18/provincial/free-state/departments/social-development
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Free State
-    organisational_unit: government
     slug: free-state
     url_path: /2018-19/provincial/free-state
   id: 2018-19
@@ -46,7 +42,6 @@ intro: "## Vision\n\nA caring and self-reliant society\r\n\r\n\n\n## Mission\n\n
   \ in support of effective and efficient service delivery"
 is_vote_primary: true
 name: Social Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 250997000.0
@@ -59,10 +54,12 @@ programmes:
 - name: Development and Research
   total_budget: 140894000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: social-development
 sphere:
   name: Provincial
   slug: provincial
+title: Social Development - vulekamali
 treasury_datasets:
   'EPRE for Vote 07 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: National Treasury
-    organisational_unit: department
     slug: national-treasury
     url_path: /2015-16/national/departments/national-treasury
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: National Treasury
-    organisational_unit: department
     slug: national-treasury
     url_path: /2016-17/national/departments/national-treasury
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: National Treasury
-    organisational_unit: department
     slug: national-treasury
     url_path: /2017-18/national/departments/national-treasury
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: National Treasury
-    organisational_unit: department
     slug: national-treasury
     url_path: /2018-19/national/departments/national-treasury
   id: 2018-19
@@ -53,7 +49,6 @@ intro: "## Vote purpose\n\nSupport economic growth and development, good governa
   \ public entities, and constitutional institutions.\n\n"
 is_vote_primary: true
 name: National Treasury
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 484733000.0
@@ -78,10 +73,12 @@ programmes:
 - name: Revenue Administration
   total_budget: 9007217000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: national-treasury
 sphere:
   name: National
   slug: national
+title: National Treasury - vulekamali
 treasury_datasets:
   ENE for Vote 7 - National Treasury:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

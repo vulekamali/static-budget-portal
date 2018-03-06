@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Human Settlements
-    organisational_unit: department
     slug: human-settlements
     url_path: /2015-16/national/departments/human-settlements
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Human Settlements
-    organisational_unit: department
     slug: human-settlements
     url_path: /2016-17/national/departments/human-settlements
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Human Settlements
-    organisational_unit: department
     slug: human-settlements
     url_path: /2017-18/national/departments/human-settlements
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Human Settlements
-    organisational_unit: department
     slug: human-settlements
     url_path: /2018-19/national/departments/human-settlements
   id: 2018-19
@@ -50,7 +46,6 @@ intro: "## Vote purpose\n\n_Facilitate the creation of sustainable human settlem
   \ and the private sector.\n\n"
 is_vote_primary: true
 name: Human Settlements
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 435116000.0
@@ -61,10 +56,12 @@ programmes:
 - name: Housing Development Finance
   total_budget: 30264127000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: human-settlements
 sphere:
   name: National
   slug: national
+title: Human Settlements - vulekamali
 treasury_datasets:
   ENE for Vote 38 - Human Settlements:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

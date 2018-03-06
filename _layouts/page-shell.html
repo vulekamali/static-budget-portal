@@ -2,25 +2,56 @@
 layout: base
 ---
 
-{% if page.sphere == "national" %}
-{% assign page_data = site.data[page.financial_year][page.sphere].departments[page.department_slug] %}
+
+{% if page.financial_year %}
+
+  {% if page.sphere %}
+
+    {% if page.sphere == "national" %}
+      {% assign page_data = site.data[page.financial_year][page.sphere].departments[page.data_key] %}
+    {% else %}
+      {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.data_key] %}
+    {% endif %}
+
+  {% else %}
+    {% assign page_data = site.data[page.financial_year][page.data_key] %}
+  {% endif %}
+
+{% elsif page.layout == 'contributed_dataset' %}
+  {% assign page_data = site.data.datasets[page.data_key] %}
+
 {% else %}
-{% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.department_slug] %}
+  {% assign page_data = site.data[page.data_key] %}
 {% endif %}
+
 
 <div class="Page">
   <header class="Page-header">
     <h1 class="u-sReadOnly">Static Budget Portal</h1>
-    {% include components/header-and-footer/HeaderBar/index.html year=page.financial_year active=page.active nested=page.nested items=site.data.static.navbar.array title=page.title %}
-    {% if page.slug != 'about' and page.slug != 'faq' and page.slug != 'glossary' and page.slug != 'contributed-data' and page.slug != 'resources' and page.slug != 'videos' and page.slug != 'terms-and-conditions' %}
-      {% include components/header-and-footer/YearSelect/index.html years=page.years dynamic=page_data.financial_years %}
+    {% 
+      include components/header-and-footer/HeaderBar/index.html
+      items=site.data.navbar.array
+      selected_tab=page_data.selected_tab
+      latest_year=site.latest_year
+      year=page.financial_year
+      selected_sidebar=page_data.selected_sidebar
+    %}
+
+    {% if page.financial_year %}
+      {% 
+        include components/header-and-footer/YearSelect/index.html 
+        years=page_data.financial_years
+      %}
     {% endif %}
   </header>
   <div class="Page-contentContainer">
     {{ content }}
   </div>
   <footer class="Page-footer">
-    {% include components/header-and-footer/Footer/index.html year=page.financial_year %}
+    {% include 
+      components/header-and-footer/Footer/index.html
+      year=page.financial_year
+    %}
     {% include components/header-and-footer/ExtraFooter/index.html %}
   </footer>
 </div>

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Transport and Public Works
-    organisational_unit: department
     slug: transport-and-public-works
     url_path: /2015-16/provincial/western-cape/departments/transport-and-public-works
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Transport and Public Works
-    organisational_unit: department
     slug: transport-and-public-works
     url_path: /2016-17/provincial/western-cape/departments/transport-and-public-works
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Transport and Public Works
-    organisational_unit: department
     slug: transport-and-public-works
     url_path: /2017-18/provincial/western-cape/departments/transport-and-public-works
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Western Cape
-    organisational_unit: government
     slug: western-cape
     url_path: /2018-19/provincial/western-cape
   id: 2018-19
@@ -59,7 +55,6 @@ intro: "## Vision\n\n\u201CA highly skilled innovation-driven resource efficient
   \ other law enforcement officials.\r\n"
 is_vote_primary: true
 name: Transport and Public Works
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 238065000.0
@@ -74,10 +69,12 @@ programmes:
 - name: Community Based Programmes
   total_budget: 58118000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: transport-and-public-works
 sphere:
   name: Provincial
   slug: provincial
+title: Transport and Public Works - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Transport and Public Works':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

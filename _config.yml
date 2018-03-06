@@ -20,6 +20,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://vulekamali.gov.za"
 twitter_username: jekyllrb
 github_username:  jekyll
+latest_year: 2018-19
 
 # Build settings
 markdown: kramdown
@@ -43,86 +44,4 @@ exclude:
 
 plugins:
   - jekyll-sitemap
-
-defaults:
-  -
-    scope:
-      path: "2015-16"
-    values:
-      financial_year: 2015-16
-      active: departments
-      nested: true
-  -
-    scope:
-      path: "2016-17"
-    values:
-      financial_year: 2016-17
-      active: departments
-      nested: true
-  -
-    scope:
-      path: "2017-18"
-    values:
-      financial_year: 2017-18
-      active: departments
-      nested: true
-  -
-    scope:
-      path: "2018-19"
-    values:
-      financial_year: 2018-19
-      active: departments
-      nested: true
-
-  -
-    scope:
-      path: "2015-16/datasets"
-    values:
-      financial_year: 2015-16
-      years: [
-        ['2015-16', '/2015-16/contributed-data', 'active'],
-        ['2016-17', '/2016-17/contributed-data', 'link'],
-        ['2017-18', '/2017-18/contributed-data', 'link'],
-        ['2018-19', '/2018-19/contributed-data', 'link'],
-      ]
-      active: contributed-data
-      nested: true
-  -
-    scope:
-      path: "2016-17/datasets"
-    values:
-      financial_year: 2016-17
-      years: [
-        ['2015-16', '/2015-16/contributed-data', 'link'],
-        ['2016-17', '/2016-17/contributed-data', 'active'],
-        ['2017-18', '/2017-18/contributed-data', 'link'],
-        ['2018-19', '/2018-19/contributed-data', 'link'],
-      ]
-      active: contributed-data
-      nested: true
-  -
-    scope:
-      path: "2017-18/datasets"
-    values:
-      financial_year: 2017-18
-      years: [
-        ['2015-16', '/2015-16/contributed-data', 'link'],
-        ['2016-17', '/2016-17/contributed-data', 'link'],
-        ['2017-18', '/2017-18/contributed-data', 'active'],
-        ['2018-19', '/2018-19/contributed-data', 'link'],
-      ]
-      active: contributed-data
-      nested: true
-  -
-    scope:
-      path: "2018-19/datasets"
-    values:
-      financial_year: 2018-19
-      years: [
-        ['2015-16', '/2015-16/contributed-data', 'link'],
-        ['2016-17', '/2016-17/contributed-data', 'link'],
-        ['2017-18', '/2017-18/contributed-data', 'link'],
-        ['2018-19', '/2018-19/contributed-data', 'active'],
-      ]
-      active: contributed-data
-      nested: true
+  - jekyll-redirect-from

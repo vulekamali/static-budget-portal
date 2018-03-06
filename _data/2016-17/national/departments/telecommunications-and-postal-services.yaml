@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Telecommunications and Postal Services
-    organisational_unit: department
     slug: telecommunications-and-postal-services
     url_path: /2015-16/national/departments/telecommunications-and-postal-services
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Telecommunications and Postal Services
-    organisational_unit: department
     slug: telecommunications-and-postal-services
     url_path: /2016-17/national/departments/telecommunications-and-postal-services
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Telecommunications and Postal Services
-    organisational_unit: department
     slug: telecommunications-and-postal-services
     url_path: /2017-18/national/departments/telecommunications-and-postal-services
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Telecommunications and Postal Services
-    organisational_unit: department
     slug: telecommunications-and-postal-services
     url_path: /2018-19/national/departments/telecommunications-and-postal-services
   id: 2018-19
@@ -63,7 +59,6 @@ intro: "## Vote purpose\n\n_Develop information and communication technology (IC
   \ Act\_(2007).\n\n"
 is_vote_primary: true
 name: Telecommunications and Postal Services
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 193337000.0
@@ -76,10 +71,12 @@ programmes:
 - name: ICT Infrastructure Support
   total_budget: 1191946000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: telecommunications-and-postal-services
 sphere:
   name: National
   slug: national
+title: Telecommunications and Postal Services - vulekamali
 treasury_datasets:
   ENE for Vote 32 - Telecommunications and Postal Services:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Parliament
-    organisational_unit: department
     slug: parliament
     url_path: /2015-16/national/departments/parliament
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Parliament
-    organisational_unit: department
     slug: parliament
     url_path: /2016-17/national/departments/parliament
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Parliament
-    organisational_unit: department
     slug: parliament
     url_path: /2017-18/national/departments/parliament
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Parliament
-    organisational_unit: department
     slug: parliament
     url_path: /2018-19/national/departments/parliament
   id: 2018-19
@@ -51,7 +47,6 @@ intro: '## Vote purpose
   '
 is_vote_primary: true
 name: Parliament
-organisational_unit: department
 programmes:
 - name: Strategic Leadership and Governance
   total_budget: 72801000.0
@@ -66,10 +61,12 @@ programmes:
 - name: Direct charge against the National Revenue Fund
   total_budget: 529798000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: parliament
 sphere:
   name: National
   slug: national
+title: Parliament - vulekamali
 treasury_datasets:
   ENE for Vote 02 - Parliament:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

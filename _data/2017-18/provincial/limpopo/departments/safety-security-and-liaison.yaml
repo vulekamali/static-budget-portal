@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Safety, Security and Liaison
-    organisational_unit: department
     slug: safety-security-and-liaison
     url_path: /2015-16/provincial/limpopo/departments/safety-security-and-liaison
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Safety, Security and Liaison
-    organisational_unit: department
     slug: safety-security-and-liaison
     url_path: /2016-17/provincial/limpopo/departments/safety-security-and-liaison
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Safety, Security and Liaison
-    organisational_unit: department
     slug: safety-security-and-liaison
     url_path: /2017-18/provincial/limpopo/departments/safety-security-and-liaison
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Limpopo
-    organisational_unit: government
     slug: limpopo
     url_path: /2018-19/provincial/limpopo
   id: 2018-19
@@ -49,17 +45,18 @@ intro: "## Vision\n\nA safe and secure Limpopo\r\n\r\n\n\n## Mission\n\nTo inten
   \ enhance public education on safety and security."
 is_vote_primary: true
 name: Safety, Security and Liaison
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 49168000.0
 - name: Civilian Oversight
   total_budget: 54545000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: safety-security-and-liaison
 sphere:
   name: Provincial
   slug: provincial
+title: Safety, Security and Liaison - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Safety, Security and Liaison':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

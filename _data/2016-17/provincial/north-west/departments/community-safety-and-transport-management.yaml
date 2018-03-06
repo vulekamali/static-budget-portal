@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Community Safety and Transport Management
-    organisational_unit: department
     slug: community-safety-and-transport-management
     url_path: /2015-16/provincial/north-west/departments/community-safety-and-transport-management
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Community Safety and Transport Management
-    organisational_unit: department
     slug: community-safety-and-transport-management
     url_path: /2016-17/provincial/north-west/departments/community-safety-and-transport-management
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Community Safety and Transport Management
-    organisational_unit: department
     slug: community-safety-and-transport-management
     url_path: /2017-18/provincial/north-west/departments/community-safety-and-transport-management
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: North West
-    organisational_unit: government
     slug: north-west
     url_path: /2018-19/provincial/north-west
   id: 2018-19
@@ -62,7 +58,6 @@ intro: "## Vision\n\nSafe Communities and effective transport services\r\n\r\n\n
   \ standards in accordance with the National Road\r\nTraffic Act 93 of 1996."
 is_vote_primary: true
 name: Community Safety and Transport Management
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 205942000.0
@@ -73,10 +68,12 @@ programmes:
 - name: Transport Regulations
   total_budget: 582883000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: community-safety-and-transport-management
 sphere:
   name: Provincial
   slug: provincial
+title: Community Safety and Transport Management - vulekamali
 treasury_datasets:
   'EPRE for Vote 05 : Community Safety and Transport Management':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

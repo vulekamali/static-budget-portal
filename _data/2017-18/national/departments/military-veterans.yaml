@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: South Africa
-    organisational_unit: government
     slug: south-africa
     url_path: /2015-16/national
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: South Africa
-    organisational_unit: government
     slug: south-africa
     url_path: /2016-17/national
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Military Veterans
-    organisational_unit: department
     slug: military-veterans
     url_path: /2017-18/national/departments/military-veterans
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Military Veterans
-    organisational_unit: department
     slug: military-veterans
     url_path: /2018-19/national/departments/military-veterans
   id: 2018-19
@@ -47,7 +43,6 @@ intro: "## Department purpose\r\n\r\nFormulate policies and standards aimed at p
   \ community of military veterans."
 is_vote_primary: false
 name: Military Veterans
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 149818000.0
@@ -56,10 +51,12 @@ programmes:
 - name: Empowerment and Stakeholder Management
   total_budget: 164912000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: military-veterans
 sphere:
   name: National
   slug: national
+title: Military Veterans - vulekamali
 treasury_datasets:
   ENE for Vote 19 - Defence and Military Veterans:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Culture, Sport and Recreation
-    organisational_unit: department
     slug: culture-sport-and-recreation
     url_path: /2015-16/provincial/mpumalanga/departments/culture-sport-and-recreation
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Culture, Sport and Recreation
-    organisational_unit: department
     slug: culture-sport-and-recreation
     url_path: /2016-17/provincial/mpumalanga/departments/culture-sport-and-recreation
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Culture, Sport and Recreation
-    organisational_unit: department
     slug: culture-sport-and-recreation
     url_path: /2017-18/provincial/mpumalanga/departments/culture-sport-and-recreation
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Mpumalanga
-    organisational_unit: government
     slug: mpumalanga
     url_path: /2018-19/provincial/mpumalanga
   id: 2018-19
@@ -41,7 +37,6 @@ intro: "## Vision\n\nA patriotic socially cohesive society\r\n\r\n\n\n## Mission
   \ service to people of Mpumalanga"
 is_vote_primary: true
 name: Culture, Sport and Recreation
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 81116000.0
@@ -52,10 +47,12 @@ programmes:
 - name: Sports and Recreation
   total_budget: 89627000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: culture-sport-and-recreation
 sphere:
   name: Provincial
   slug: provincial
+title: Culture, Sport and Recreation - vulekamali
 treasury_datasets:
   'EPRE for Vote 11 : Culture, Sport and Recreation':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

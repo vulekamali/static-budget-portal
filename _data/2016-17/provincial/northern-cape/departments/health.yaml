@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2015-16/provincial/northern-cape/departments/health
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2016-17/provincial/northern-cape/departments/health
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2017-18/provincial/northern-cape/departments/health
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Northern Cape
-    organisational_unit: government
     slug: northern-cape
     url_path: /2018-19/provincial/northern-cape
   id: 2018-19
@@ -46,7 +42,6 @@ intro: "## Vision\n\nHealth service excellence for all.\r\n\r\n\n\n## Mission\n\
   \ are provided at a primary, secondary and tertiary level."
 is_vote_primary: true
 name: Health
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 180368000.0
@@ -65,10 +60,12 @@ programmes:
 - name: Health Facilities Management
   total_budget: 474267000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: health
 sphere:
   name: Provincial
   slug: provincial
+title: Health - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

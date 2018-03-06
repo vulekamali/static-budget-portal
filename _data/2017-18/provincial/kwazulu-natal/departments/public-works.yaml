@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works
-    organisational_unit: department
     slug: public-works
     url_path: /2015-16/provincial/kwazulu-natal/departments/public-works
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works
-    organisational_unit: department
     slug: public-works
     url_path: /2016-17/provincial/kwazulu-natal/departments/public-works
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works
-    organisational_unit: department
     slug: public-works
     url_path: /2017-18/provincial/kwazulu-natal/departments/public-works
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: KwaZulu-Natal
-    organisational_unit: government
     slug: kwazulu-natal
     url_path: /2018-19/provincial/kwazulu-natal
   id: 2018-19
@@ -51,7 +47,6 @@ intro: "## Vision\n\nThe department\u2019s vision is: An inclusive economy throu
   \ assets by selling, demolition, exchanging and donation."
 is_vote_primary: true
 name: Public Works
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 382684000.0
@@ -60,10 +55,12 @@ programmes:
 - name: Provision of Buildings, Structures and Equipment
   total_budget: 445776000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: public-works
 sphere:
   name: Provincial
   slug: provincial
+title: Public Works - vulekamali
 treasury_datasets:
   'EPRE for Vote 14 : Public Works':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

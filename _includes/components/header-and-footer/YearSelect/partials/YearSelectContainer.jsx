@@ -16,24 +16,7 @@ export default class YearSelectContainer extends Component {
   }
 
   normaliseData() {
-    if (!this.props.jsonDynamic) {
-      return this.props.jsonData.reduce(
-        (result, val) => {
-          return [
-            ...result,
-            {
-              direct: true,
-              url: val[1],
-              name: val[0],
-              active: val[2] === 'active',
-            },
-          ];
-        },
-        [],
-      );
-    }
-
-    return this.props.jsonDynamic.reduce(
+    return this.props.jsonData.reduce(
       (result, val) => {
         return [
           ...result,

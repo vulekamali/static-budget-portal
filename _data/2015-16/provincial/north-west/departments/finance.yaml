@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Finance
-    organisational_unit: department
     slug: finance
     url_path: /2015-16/provincial/north-west/departments/finance
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Finance
-    organisational_unit: department
     slug: finance
     url_path: /2016-17/provincial/north-west/departments/finance
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Finance
-    organisational_unit: department
     slug: finance
     url_path: /2017-18/provincial/north-west/departments/finance
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: North West
-    organisational_unit: government
     slug: north-west
     url_path: /2018-19/provincial/north-west
   id: 2018-19
@@ -56,7 +52,6 @@ intro: "## Vision \n\nWe will be the ultimate financial management authority and
   \n\r\n* Provide oversight on implementation of the MFMA in the province.\r\n"
 is_vote_primary: true
 name: Finance
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 163155000.0
@@ -67,10 +62,12 @@ programmes:
 - name: Financial Governance
   total_budget: 146149000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: finance
 sphere:
   name: Provincial
   slug: provincial
+title: Finance - vulekamali
 treasury_datasets:
   'EPRE for Vote 07 : Finance':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

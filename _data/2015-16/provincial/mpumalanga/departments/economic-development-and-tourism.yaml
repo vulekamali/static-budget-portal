@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development and Tourism
-    organisational_unit: department
     slug: economic-development-and-tourism
     url_path: /2015-16/provincial/mpumalanga/departments/economic-development-and-tourism
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development And Tourism
-    organisational_unit: department
     slug: economic-development-and-tourism
     url_path: /2016-17/provincial/mpumalanga/departments/economic-development-and-tourism
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development and Tourism
-    organisational_unit: department
     slug: economic-development-and-tourism
     url_path: /2017-18/provincial/mpumalanga/departments/economic-development-and-tourism
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Mpumalanga
-    organisational_unit: government
     slug: mpumalanga
     url_path: /2018-19/provincial/mpumalanga
   id: 2018-19
@@ -60,7 +56,6 @@ intro: "## Vision\r\n\r\nAn Inclusive, Globally Competitive Economy\r\n\r\n\r\n\
   \ MEGA and MTPA"
 is_vote_primary: true
 name: Economic Development and Tourism
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 86689000.0
@@ -77,10 +72,12 @@ programmes:
 - name: Tourism
   total_budget: 334735000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: economic-development-and-tourism
 sphere:
   name: Provincial
   slug: provincial
+title: Economic Development and Tourism - vulekamali
 treasury_datasets:
   'EPRE for Vote 06 : Economic Development and Tourism':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -1,19 +1,18 @@
 contributed_datasets:
 - contributor: Centre for Child Law
   name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /2017-18/datasets/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+  url_path: /datasets/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
 - contributor: Centre for Child Law
   name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
     Primary School case'
-  url_path: /2017-18/datasets/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
+  url_path: /datasets/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-education-2016-17
+  url_path: /datasets/budget-brief-eastern-cape-department-of-education-2016-17
 financial_years:
 - closest_match:
     is_exact_match: true
     name: Arts and Culture
-    organisational_unit: department
     slug: arts-and-culture
     url_path: /2015-16/national/departments/arts-and-culture
   id: 2015-16
@@ -21,7 +20,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Arts and Culture
-    organisational_unit: department
     slug: arts-and-culture
     url_path: /2016-17/national/departments/arts-and-culture
   id: 2016-17
@@ -29,7 +27,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Arts and Culture
-    organisational_unit: department
     slug: arts-and-culture
     url_path: /2017-18/national/departments/arts-and-culture
   id: 2017-18
@@ -37,7 +34,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Arts and Culture
-    organisational_unit: department
     slug: arts-and-culture
     url_path: /2018-19/national/departments/arts-and-culture
   id: 2018-19
@@ -65,7 +61,6 @@ intro: "## Vote purpose\n\n_Contribute to sustainable economic development and e
   \ so as to accelerate its transformation.\n\n  \n\n"
 is_vote_primary: true
 name: Arts and Culture
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 266509000.0
@@ -78,10 +73,12 @@ programmes:
 - name: Arts and Culture Promotion and Development
   total_budget: 50881000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: arts-and-culture
 sphere:
   name: National
   slug: national
+title: Arts and Culture - vulekamali
 treasury_datasets:
   ENE for Vote 37 - Arts and Culture:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

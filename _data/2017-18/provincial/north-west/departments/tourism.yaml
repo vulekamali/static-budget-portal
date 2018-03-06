@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Tourism
-    organisational_unit: department
     slug: tourism
     url_path: /2015-16/provincial/north-west/departments/tourism
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Tourism
-    organisational_unit: department
     slug: tourism
     url_path: /2016-17/provincial/north-west/departments/tourism
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Tourism
-    organisational_unit: department
     slug: tourism
     url_path: /2017-18/provincial/north-west/departments/tourism
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: North West
-    organisational_unit: government
     slug: north-west
     url_path: /2018-19/provincial/north-west
   id: 2018-19
@@ -64,7 +60,6 @@ intro: "## Vision\n\nLeading a dynamic, sustainable, diversified and vibrant tou
   \ (VTSD), Saamtrek Saamwerk and the Setsokotsane initiatives\r\n"
 is_vote_primary: true
 name: Tourism
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 76218000.0
@@ -73,10 +68,12 @@ programmes:
 - name: Tourism Growth, Development and Transformation
   total_budget: 151663000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: tourism
 sphere:
   name: Provincial
   slug: provincial
+title: Tourism - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Tourism':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

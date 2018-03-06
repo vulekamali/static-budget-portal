@@ -2,9 +2,9 @@
 layout: page-shell
 ---
 {% if page.sphere == "national" %}
-{% assign page_data = site.data[page.financial_year][page.sphere].departments[page.department_slug] %}
+{% assign page_data = site.data[page.financial_year][page.sphere].departments[page.data_key] %}
 {% else %}
-{% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.department_slug] %}
+{% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.data_key] %}
 {% endif %}
 
 <div class="Page-content">
