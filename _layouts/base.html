@@ -24,7 +24,6 @@
 <html>
   {% include utilities/html/head.html title=page_data.title %}
   <body>
-    <div>{{ page_data | jsonify }}</div>
     {{ content }}
     {% include utilities/html/scripts.html %}
   </body>
