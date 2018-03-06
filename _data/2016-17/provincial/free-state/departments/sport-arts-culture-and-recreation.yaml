@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Sport, Arts, Culture and Recreation
-    organisational_unit: department
     slug: sport-arts-culture-and-recreation
     url_path: /2015-16/provincial/free-state/departments/sport-arts-culture-and-recreation
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Sport, Arts, Culture and Recreation
-    organisational_unit: department
     slug: sport-arts-culture-and-recreation
     url_path: /2016-17/provincial/free-state/departments/sport-arts-culture-and-recreation
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Sport, Arts, Culture and Recreation
-    organisational_unit: department
     slug: sport-arts-culture-and-recreation
     url_path: /2017-18/provincial/free-state/departments/sport-arts-culture-and-recreation
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Free State
-    organisational_unit: government
     slug: free-state
     url_path: /2018-19/provincial/free-state
   id: 2018-19
@@ -48,7 +44,6 @@ intro: "## Vision\n\nChampioning social transformation.\r\n\r\n\r\n\n\n## Missio
   \nState province.\r\n\r\n"
 is_vote_primary: true
 name: Sport, Arts, Culture and Recreation
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 86806000.0
@@ -59,10 +54,12 @@ programmes:
 - name: Sport and Recreation
   total_budget: 181608000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: sport-arts-culture-and-recreation
 sphere:
   name: Provincial
   slug: provincial
+title: Sport, Arts, Culture and Recreation - vulekamali
 treasury_datasets:
   'EPRE for Vote 12 : Sport, Arts, Culture and Recreation':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

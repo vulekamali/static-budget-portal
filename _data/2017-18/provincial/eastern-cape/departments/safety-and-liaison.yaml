@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Safety and Liaison
-    organisational_unit: department
     slug: safety-and-liaison
     url_path: /2015-16/provincial/eastern-cape/departments/safety-and-liaison
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Safety and Liaison
-    organisational_unit: department
     slug: safety-and-liaison
     url_path: /2016-17/provincial/eastern-cape/departments/safety-and-liaison
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Safety and Liaison
-    organisational_unit: department
     slug: safety-and-liaison
     url_path: /2017-18/provincial/eastern-cape/departments/safety-and-liaison
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Eastern Cape
-    organisational_unit: government
     slug: eastern-cape
     url_path: /2018-19/provincial/eastern-cape
   id: 2018-19
@@ -47,17 +43,18 @@ intro: "## Vision\n\nA crime free and safe Eastern Cape\r\n\r\n\n\n## Mission\n\
   \ respect to crime and policing in the province"
 is_vote_primary: true
 name: Safety and Liaison
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 49128000.0
 - name: Provincial Secretariat for Police Service
   total_budget: 45680000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: safety-and-liaison
 sphere:
   name: Provincial
   slug: provincial
+title: Safety and Liaison - vulekamali
 treasury_datasets:
   'EPRE for Vote 15 : Safety and Liaison':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

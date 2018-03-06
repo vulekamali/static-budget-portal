@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: South Africa
-    organisational_unit: government
     slug: south-africa
     url_path: /2015-16/national
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: South Africa
-    organisational_unit: government
     slug: south-africa
     url_path: /2016-17/national
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Centre for Public Service Innovation
-    organisational_unit: department
     slug: centre-for-public-service-innovation
     url_path: /2017-18/national/departments/centre-for-public-service-innovation
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Centre for Public Service Innovation
-    organisational_unit: department
     slug: centre-for-public-service-innovation
     url_path: /2018-19/national/departments/centre-for-public-service-innovation
   id: 2018-19
@@ -57,17 +53,18 @@ intro: '## Vote purpose
   '
 is_vote_primary: false
 name: Centre for Public Service Innovation
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 19391000.0
 - name: Public Sector Innovation
   total_budget: 16639000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: centre-for-public-service-innovation
 sphere:
   name: National
   slug: national
+title: Centre for Public Service Innovation - vulekamali
 treasury_datasets:
   ENE for Vote 10 - Public Service and Administration:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

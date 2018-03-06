@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Social Development
-    organisational_unit: department
     slug: social-development
     url_path: /2015-16/provincial/north-west/departments/social-development
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Social Development
-    organisational_unit: department
     slug: social-development
     url_path: /2016-17/provincial/north-west/departments/social-development
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Social Development
-    organisational_unit: department
     slug: social-development
     url_path: /2017-18/provincial/north-west/departments/social-development
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: North West
-    organisational_unit: government
     slug: north-west
     url_path: /2018-19/provincial/north-west
   id: 2018-19
@@ -46,7 +42,6 @@ intro: "## Vision\n\nA united, non-racial, non-sexist, democratic and prosperous
   \ partnership development."
 is_vote_primary: true
 name: Social Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 197768000.0
@@ -61,10 +56,12 @@ programmes:
 - name: Special Programs
   total_budget: 25520000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: social-development
 sphere:
   name: Provincial
   slug: provincial
+title: Social Development - vulekamali
 treasury_datasets:
   'EPRE for Vote 12 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

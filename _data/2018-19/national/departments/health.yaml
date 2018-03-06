@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2015-16/national/departments/health
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2016-17/national/departments/health
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2017-18/national/departments/health
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2018-19/national/departments/health
   id: 2018-19
@@ -48,7 +44,6 @@ intro: "## Vote purpose\n\nProvide leadership and coordination of health service
   \n"
 is_vote_primary: true
 name: Health
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 550792000.0
@@ -63,10 +58,12 @@ programmes:
 - name: Health Regulation and Compliance Management
   total_budget: 1775546000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: health
 sphere:
   name: National
   slug: national
+title: Health - vulekamali
 treasury_datasets:
   ENE for Vote 16 - Health:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development
-    organisational_unit: department
     slug: economic-development
     url_path: /2015-16/provincial/gauteng/departments/economic-development
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development
-    organisational_unit: department
     slug: economic-development
     url_path: /2016-17/provincial/gauteng/departments/economic-development
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development
-    organisational_unit: department
     slug: economic-development
     url_path: /2017-18/provincial/gauteng/departments/economic-development
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Gauteng
-    organisational_unit: government
     slug: gauteng
     url_path: /2018-19/provincial/gauteng
   id: 2018-19
@@ -51,7 +47,6 @@ intro: "## Vision\r\n\r\nA radically transformed, modernised and re-industrialis
   \ and ensure that DED effectively delivers on its mandate."
 is_vote_primary: true
 name: Economic Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 287897000.0
@@ -64,10 +59,12 @@ programmes:
 - name: Economic Planning
   total_budget: 113508000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: economic-development
 sphere:
   name: Provincial
   slug: provincial
+title: Economic Development - vulekamali
 treasury_datasets:
   'EPRE for Vote 03 : Economic Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

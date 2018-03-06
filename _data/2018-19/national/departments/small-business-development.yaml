@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Small Business Development
-    organisational_unit: department
     slug: small-business-development
     url_path: /2015-16/national/departments/small-business-development
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Small Business Development
-    organisational_unit: department
     slug: small-business-development
     url_path: /2016-17/national/departments/small-business-development
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Small Business Development
-    organisational_unit: department
     slug: small-business-development
     url_path: /2017-18/national/departments/small-business-development
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Small Business Development
-    organisational_unit: department
     slug: small-business-development
     url_path: /2018-19/national/departments/small-business-development
   id: 2018-19
@@ -49,7 +45,6 @@ intro: "## Vote purpose\n\nPromote the development of small businesses and coope
   \ Act (2005)\n * the Cooperatives Amendment Act (2013).\n\n"
 is_vote_primary: true
 name: Small Business Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 124729000.0
@@ -60,10 +55,12 @@ programmes:
 - name: Enterprise Development and Entrepreneurship
   total_budget: 1230277000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: small-business-development
 sphere:
   name: National
   slug: national
+title: Small Business Development - vulekamali
 treasury_datasets:
   ENE for Vote 31 - Small Business Development:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

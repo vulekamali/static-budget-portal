@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works
-    organisational_unit: department
     slug: public-works
     url_path: /2015-16/national/departments/public-works
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works
-    organisational_unit: department
     slug: public-works
     url_path: /2016-17/national/departments/public-works
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works
-    organisational_unit: department
     slug: public-works
     url_path: /2017-18/national/departments/public-works
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works
-    organisational_unit: department
     slug: public-works
     url_path: /2018-19/national/departments/public-works
   id: 2018-19
@@ -57,7 +53,6 @@ intro: "## Vote purpose\n\n_Provide policy formulation for, as well as coordinat
   \ national and\nprovincial spheres of government.\n\n"
 is_vote_primary: true
 name: Public Works
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 516634000.0
@@ -70,10 +65,12 @@ programmes:
 - name: Prestige Policy
   total_budget: 96092000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: public-works
 sphere:
   name: National
   slug: national
+title: Public Works - vulekamali
 treasury_datasets:
   ENE for Vote 11 - Public Works:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

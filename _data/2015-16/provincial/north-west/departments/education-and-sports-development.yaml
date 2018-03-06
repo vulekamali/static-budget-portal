@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Education and Sports Development
-    organisational_unit: department
     slug: education-and-sports-development
     url_path: /2015-16/provincial/north-west/departments/education-and-sports-development
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Education and Sports Development
-    organisational_unit: department
     slug: education-and-sports-development
     url_path: /2016-17/provincial/north-west/departments/education-and-sports-development
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Education and Sports Development
-    organisational_unit: department
     slug: education-and-sports-development
     url_path: /2017-18/provincial/north-west/departments/education-and-sports-development
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: North West
-    organisational_unit: government
     slug: north-west
     url_path: /2018-19/provincial/north-west
   id: 2018-19
@@ -82,7 +78,6 @@ intro: "## Vision\r\n\r\nTowards Excellence in Education and Sport Development\r
   \ and nation building"
 is_vote_primary: true
 name: Education and Sports Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 708372000.0
@@ -101,10 +96,12 @@ programmes:
 - name: Sport Development
   total_budget: 98534000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: education-and-sports-development
 sphere:
   name: Provincial
   slug: provincial
+title: Education and Sports Development - vulekamali
 treasury_datasets:
   'EPRE for Vote 08 : Education and Sports Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

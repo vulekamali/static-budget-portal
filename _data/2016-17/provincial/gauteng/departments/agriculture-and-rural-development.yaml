@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Agriculture and Rural Development
-    organisational_unit: department
     slug: agriculture-and-rural-development
     url_path: /2015-16/provincial/gauteng/departments/agriculture-and-rural-development
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Agriculture and Rural Development
-    organisational_unit: department
     slug: agriculture-and-rural-development
     url_path: /2016-17/provincial/gauteng/departments/agriculture-and-rural-development
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Agriculture and Rural Development
-    organisational_unit: department
     slug: agriculture-and-rural-development
     url_path: /2017-18/provincial/gauteng/departments/agriculture-and-rural-development
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Gauteng
-    organisational_unit: government
     slug: gauteng
     url_path: /2018-19/provincial/gauteng
   id: 2018-19
@@ -53,7 +49,6 @@ intro: "## Vision\n\nAn economically transformed agricultural sector including a
   \ in the province."
 is_vote_primary: true
 name: Agriculture and Rural Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 181195000.0
@@ -62,10 +57,12 @@ programmes:
 - name: Environmental Affairs
   total_budget: 217289000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: agriculture-and-rural-development
 sphere:
   name: Provincial
   slug: provincial
+title: Agriculture and Rural Development - vulekamali
 treasury_datasets:
   'EPRE for Vote 11 : Agriculture and Rural Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

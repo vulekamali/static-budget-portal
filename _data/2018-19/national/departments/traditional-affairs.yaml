@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: South Africa
-    organisational_unit: government
     slug: south-africa
     url_path: /2015-16/national
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: South Africa
-    organisational_unit: government
     slug: south-africa
     url_path: /2016-17/national
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Traditional Affairs
-    organisational_unit: department
     slug: traditional-affairs
     url_path: /2017-18/national/departments/traditional-affairs
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Traditional Affairs
-    organisational_unit: department
     slug: traditional-affairs
     url_path: /2018-19/national/departments/traditional-affairs
   id: 2018-19
@@ -55,7 +51,6 @@ intro: "## Vote purpose\n\nCoordinate traditional affairs across government thro
   \ (2002).\n\n"
 is_vote_primary: false
 name: Traditional Affairs
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 45520000.0
@@ -64,10 +59,12 @@ programmes:
 - name: Institutional Support and Coordination
   total_budget: 91146000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: traditional-affairs
 sphere:
   name: National
   slug: national
+title: Traditional Affairs - vulekamali
 treasury_datasets:
   ENE for Vote 4 - Cooperative Governance and Traditional Affairs:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development and Tourism
-    organisational_unit: department
     slug: economic-development-and-tourism
     url_path: /2015-16/provincial/northern-cape/departments/economic-development-and-tourism
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development and Tourism
-    organisational_unit: department
     slug: economic-development-and-tourism
     url_path: /2016-17/provincial/northern-cape/departments/economic-development-and-tourism
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development and Tourism
-    organisational_unit: department
     slug: economic-development-and-tourism
     url_path: /2017-18/provincial/northern-cape/departments/economic-development-and-tourism
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Northern Cape
-    organisational_unit: government
     slug: northern-cape
     url_path: /2018-19/provincial/northern-cape
   id: 2018-19
@@ -42,7 +38,6 @@ intro: "## Vision\n\nA radically transformed economy in the Northern Cape.\r\n\r
   \ and sustainable development.\r\n\r\n\r"
 is_vote_primary: true
 name: Economic Development and Tourism
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 58057000.0
@@ -57,10 +52,12 @@ programmes:
 - name: Tourism
   total_budget: 53569000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: economic-development-and-tourism
 sphere:
   name: Provincial
   slug: provincial
+title: Economic Development and Tourism - vulekamali
 treasury_datasets:
   'EPRE for Vote 06 : Economic Development and Tourism':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Provincial Legislature
-    organisational_unit: department
     slug: provincial-legislature
     url_path: /2015-16/provincial/north-west/departments/provincial-legislature
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Provincial Legislature
-    organisational_unit: department
     slug: provincial-legislature
     url_path: /2016-17/provincial/north-west/departments/provincial-legislature
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Provincial Legislature
-    organisational_unit: department
     slug: provincial-legislature
     url_path: /2017-18/provincial/north-west/departments/provincial-legislature
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: North West
-    organisational_unit: government
     slug: north-west
     url_path: /2018-19/provincial/north-west
   id: 2018-19
@@ -57,17 +53,18 @@ intro: "## Vision\n\nDemocratic, Non Racial, Non Sexist, Transparent and Activis
   \ the people of this province."
 is_vote_primary: true
 name: Provincial Legislature
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 115260000.0
 - name: Legislature operations
   total_budget: 128819000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: provincial-legislature
 sphere:
   name: Provincial
   slug: provincial
+title: Provincial Legislature - vulekamali
 treasury_datasets:
   'EPRE for Vote 02 : Provincial Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

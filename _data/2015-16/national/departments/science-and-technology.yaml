@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Science and Technology
-    organisational_unit: department
     slug: science-and-technology
     url_path: /2015-16/national/departments/science-and-technology
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Science and Technology
-    organisational_unit: department
     slug: science-and-technology
     url_path: /2016-17/national/departments/science-and-technology
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Science and Technology
-    organisational_unit: department
     slug: science-and-technology
     url_path: /2017-18/national/departments/science-and-technology
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Science and Technology
-    organisational_unit: department
     slug: science-and-technology
     url_path: /2018-19/national/departments/science-and-technology
   id: 2018-19
@@ -45,7 +41,6 @@ intro: "## Vote purpose\n\n_Realise the full potential of science and technology
   economic growth and socioeconomic development.\n\n"
 is_vote_primary: true
 name: Science and Technology
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 299776000.0
@@ -58,10 +53,12 @@ programmes:
 - name: Socio-Economic Innovation Partnerships
   total_budget: 1804464000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: science-and-technology
 sphere:
   name: National
   slug: national
+title: Science and Technology - vulekamali
 treasury_datasets:
   ENE for Vote 30 - Science and Technology:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

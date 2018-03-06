@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Rural, Environment and Agricultural Development
-    organisational_unit: department
     slug: rural-environment-and-agricultural-development
     url_path: /2015-16/provincial/north-west/departments/rural-environment-and-agricultural-development
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Rural Environment and Agricultural Development
-    organisational_unit: department
     slug: rural-environment-and-agricultural-development
     url_path: /2016-17/provincial/north-west/departments/rural-environment-and-agricultural-development
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Rural Environment and Agricultural Development
-    organisational_unit: department
     slug: rural-environment-and-agricultural-development
     url_path: /2017-18/provincial/north-west/departments/rural-environment-and-agricultural-development
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: North West
-    organisational_unit: government
     slug: north-west
     url_path: /2018-19/provincial/north-west
   id: 2018-19
@@ -48,7 +44,6 @@ intro: "## Vision\n\nVibrant and prosperous society in harmony with our natural 
   \ Natural Resources."
 is_vote_primary: true
 name: Rural Environment and Agricultural Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 267168000.0
@@ -69,10 +64,12 @@ programmes:
 - name: Environmental Services
   total_budget: 276040000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: rural-environment-and-agricultural-development
 sphere:
   name: Provincial
   slug: provincial
+title: Rural Environment and Agricultural Development - vulekamali
 treasury_datasets:
   'EPRE for Vote 13 : Rural Environment and Agricultural Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
