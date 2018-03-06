@@ -1,5 +1,5 @@
 ---
 financial_year: 2017-18
 layout: department_list
-slug: departments
+data_key: departments
 ---
