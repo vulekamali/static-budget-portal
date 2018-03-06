@@ -3,17 +3,20 @@
   {% if page.sphere %}
 
     {% if page.sphere == "national" %}
-      {% assign page_data = site.data[page.financial_year][page.sphere].departments[page.department_slug] %}
+      {% assign page_data = site.data[page.financial_year][page.sphere].departments[page.data_key] %}
     {% else %}
-      {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.department_slug] %}
+      {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.data_key] %}
     {% endif %}
 
   {% else %}
-    {% assign page_data = site.data[page.slug] %}
+    {% assign page_data = site.data[page.financial_year][page.data_key] %}
   {% endif %}
 
+{% elsif page.layout == 'contributed_dataset' %}
+  {% assign page_data = site.data.datasets[page.data_key] %}
+
 {% else %}
-  {% assign page_data = site.data[page.slug] %}
+  {% assign page_data = site.data[page.data_key] %}
 {% endif %}
 
 
@@ -21,6 +24,7 @@
 <html>
   {% include utilities/html/head.html title=page_data.title %}
   <body>
+    <div>{{ page_data | jsonify }}</div>
     {{ content }}
     {% include utilities/html/scripts.html %}
   </body>
