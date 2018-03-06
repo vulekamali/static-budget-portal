@@ -7,14 +7,14 @@ layout: page-shell
     <h3 class="Page-title is-noPadding">Join us at a vulekamali event in your area</h3>
     {%
       include components/about-and-learning-centre/Events/index.html
-      events=site.data.static.events.upcoming
+      events=site.data.events.upcoming
       upcoming=true
     %}
 
     <h3 class="Page-title is-noPadding">Past Events</h3>
     {%
       include components/about-and-learning-centre/Events/index.html
-      events=site.data.static.events.past
+      events=site.data.events.past
     %}
   </div>
 </div>
