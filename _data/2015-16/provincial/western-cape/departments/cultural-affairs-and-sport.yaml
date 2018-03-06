@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Cultural Affairs and Sport
-    organisational_unit: department
     slug: cultural-affairs-and-sport
     url_path: /2015-16/provincial/western-cape/departments/cultural-affairs-and-sport
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Cultural Affairs and Sport
-    organisational_unit: department
     slug: cultural-affairs-and-sport
     url_path: /2016-17/provincial/western-cape/departments/cultural-affairs-and-sport
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Cultural Affairs and Sport
-    organisational_unit: department
     slug: cultural-affairs-and-sport
     url_path: /2017-18/provincial/western-cape/departments/cultural-affairs-and-sport
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Western Cape
-    organisational_unit: government
     slug: western-cape
     url_path: /2018-19/provincial/western-cape
   id: 2018-19
@@ -72,7 +68,6 @@ intro: "## Vision\n\nA socially inclusive, creative, active and connected Wester
   \n* Provide after school activities\r\n\r\n\r\n"
 is_vote_primary: true
 name: Cultural Affairs and Sport
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 60440000.0
@@ -83,10 +78,12 @@ programmes:
 - name: Sport and Recreation
   total_budget: 175440000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: cultural-affairs-and-sport
 sphere:
   name: Provincial
   slug: provincial
+title: Cultural Affairs and Sport - vulekamali
 treasury_datasets:
   'EPRE for Vote 13 : Cultural Affairs and Sport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

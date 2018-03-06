@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Provincial Treasury
-    organisational_unit: department
     slug: provincial-treasury
     url_path: /2015-16/provincial/free-state/departments/provincial-treasury
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Provincial Treasury
-    organisational_unit: department
     slug: provincial-treasury
     url_path: /2016-17/provincial/free-state/departments/provincial-treasury
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Provincial Treasury
-    organisational_unit: department
     slug: provincial-treasury
     url_path: /2017-18/provincial/free-state/departments/provincial-treasury
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Free State
-    organisational_unit: government
     slug: free-state
     url_path: /2018-19/provincial/free-state
   id: 2018-19
@@ -52,7 +48,6 @@ intro: "## Vision\n\nYour partner in financial management and service excellence
   \ challenges."
 is_vote_primary: true
 name: Provincial Treasury
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 94476000.0
@@ -65,10 +60,12 @@ programmes:
 - name: Municipal Finance Management
   total_budget: 64474000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: provincial-treasury
 sphere:
   name: Provincial
   slug: provincial
+title: Provincial Treasury - vulekamali
 treasury_datasets:
   'EPRE for Vote 04 : Provincial Treasury':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

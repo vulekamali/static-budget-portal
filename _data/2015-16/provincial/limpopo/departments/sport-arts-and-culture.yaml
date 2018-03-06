@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Sport, Arts and Culture
-    organisational_unit: department
     slug: sport-arts-and-culture
     url_path: /2015-16/provincial/limpopo/departments/sport-arts-and-culture
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Sport, Arts and Culture
-    organisational_unit: department
     slug: sport-arts-and-culture
     url_path: /2016-17/provincial/limpopo/departments/sport-arts-and-culture
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Sport, Arts and Culture
-    organisational_unit: department
     slug: sport-arts-and-culture
     url_path: /2017-18/provincial/limpopo/departments/sport-arts-and-culture
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Limpopo
-    organisational_unit: government
     slug: limpopo
     url_path: /2018-19/provincial/limpopo
   id: 2018-19
@@ -47,7 +43,6 @@ intro: "## Vision\n\nA champion of Sport, Arts, Culture and Heritage Services fo
   \ arts, culture and sport"
 is_vote_primary: true
 name: Sport, Arts and Culture
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 103955000.0
@@ -58,10 +53,12 @@ programmes:
 - name: Sport and Recreation
   total_budget: 80367000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: sport-arts-and-culture
 sphere:
   name: Provincial
   slug: provincial
+title: Sport, Arts and Culture - vulekamali
 treasury_datasets:
   'EPRE for Vote 13 : Sport, Arts and Culture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

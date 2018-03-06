@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic and Small Business Development,  Tourism and Environmental Affairs
-    organisational_unit: department
     slug: economic-and-small-business-development-tourism-and-environmental-affairs
     url_path: /2015-16/provincial/free-state/departments/economic-and-small-business-development-tourism-and-environmental-affairs
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic and Small Business Development, Tourism and Environmental Affairs
-    organisational_unit: department
     slug: economic-and-small-business-development-tourism-and-environmental-affairs
     url_path: /2016-17/provincial/free-state/departments/economic-and-small-business-development-tourism-and-environmental-affairs
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic and Small Business Development, Tourism and Environmental Affairs
-    organisational_unit: department
     slug: economic-and-small-business-development-tourism-and-environmental-affairs
     url_path: /2017-18/provincial/free-state/departments/economic-and-small-business-development-tourism-and-environmental-affairs
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Free State
-    organisational_unit: government
     slug: free-state
     url_path: /2018-19/provincial/free-state
   id: 2018-19
@@ -42,7 +38,6 @@ intro: "## Vision\r\n\r\nA prosperous Free State that enhances the quality of li
   \ economic development and poverty reduction in the Free State."
 is_vote_primary: true
 name: Economic and Small Business Development,  Tourism and Environmental Affairs
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 137393000.0
@@ -53,10 +48,13 @@ programmes:
 - name: Tourism
   total_budget: 55738000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: economic-and-small-business-development-tourism-and-environmental-affairs
 sphere:
   name: Provincial
   slug: provincial
+title: Economic and Small Business Development,  Tourism and Environmental Affairs
+  - vulekamali
 treasury_datasets:
   'EPRE for Vote 03 : Economic Development, Tourism and Environmental Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

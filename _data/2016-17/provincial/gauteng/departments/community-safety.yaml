@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Community Safety
-    organisational_unit: department
     slug: community-safety
     url_path: /2015-16/provincial/gauteng/departments/community-safety
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Community Safety
-    organisational_unit: department
     slug: community-safety
     url_path: /2016-17/provincial/gauteng/departments/community-safety
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Community Safety
-    organisational_unit: department
     slug: community-safety
     url_path: /2017-18/provincial/gauteng/departments/community-safety
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Gauteng
-    organisational_unit: government
     slug: gauteng
     url_path: /2018-19/provincial/gauteng
   id: 2018-19
@@ -56,7 +52,6 @@ intro: "## Vision\n\nTo ensure that DCS Gauteng is a Province where people feel 
   \ interventions; and\r\n\r\n\u2022 To reduce road fatalities."
 is_vote_primary: true
 name: Community Safety
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 95742000.0
@@ -65,10 +60,12 @@ programmes:
 - name: Traffic Management
   total_budget: 355787000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: community-safety
 sphere:
   name: Provincial
   slug: provincial
+title: Community Safety - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Community Safety':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

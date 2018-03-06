@@ -2,7 +2,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Departments
-    organisational_unit: department-list
     slug: departments
     url_path: /2015-16/departments
   id: 2015-16
@@ -10,7 +9,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Departments
-    organisational_unit: department-list
     slug: departments
     url_path: /2016-17/departments
   id: 2016-17
@@ -18,7 +16,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Departments
-    organisational_unit: department-list
     slug: departments
     url_path: /2017-18/departments
   id: 2017-18
@@ -26,7 +23,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Departments
-    organisational_unit: department-list
     slug: departments
     url_path: /2018-19/departments
   id: 2018-19
@@ -41,21 +37,21 @@ national:
     slug: parliament
     url_path: /2018-19/national/departments/parliament
     vote_number: 2
-  - name: Government Communication and Information System
-    slug: government-communication-and-information-system
-    url_path: /2018-19/national/departments/government-communication-and-information-system
-    vote_number: 3
   - name: Communications
     slug: communications
     url_path: /2018-19/national/departments/communications
     vote_number: 3
-  - name: Cooperative Governance and Traditional Affairs
-    slug: cooperative-governance-and-traditional-affairs
-    url_path: /2018-19/national/departments/cooperative-governance-and-traditional-affairs
-    vote_number: 4
+  - name: Government Communication and Information System
+    slug: government-communication-and-information-system
+    url_path: /2018-19/national/departments/government-communication-and-information-system
+    vote_number: 3
   - name: Traditional Affairs
     slug: traditional-affairs
     url_path: /2018-19/national/departments/traditional-affairs
+    vote_number: 4
+  - name: Cooperative Governance and Traditional Affairs
+    slug: cooperative-governance-and-traditional-affairs
+    url_path: /2018-19/national/departments/cooperative-governance-and-traditional-affairs
     vote_number: 4
   - name: Home Affairs
     slug: home-affairs
@@ -81,17 +77,17 @@ national:
     slug: centre-for-public-service-innovation
     url_path: /2018-19/national/departments/centre-for-public-service-innovation
     vote_number: 10
-  - name: National School of Government
-    slug: national-school-of-government
-    url_path: /2018-19/national/departments/national-school-of-government
+  - name: Public Service and Administration
+    slug: public-service-and-administration
+    url_path: /2018-19/national/departments/public-service-and-administration
     vote_number: 10
   - name: Public Service Commission
     slug: public-service-commission
     url_path: /2018-19/national/departments/public-service-commission
     vote_number: 10
-  - name: Public Service and Administration
-    slug: public-service-and-administration
-    url_path: /2018-19/national/departments/public-service-and-administration
+  - name: National School of Government
+    slug: national-school-of-government
+    url_path: /2018-19/national/departments/national-school-of-government
     vote_number: 10
   - name: Public Works
     slug: public-works
@@ -145,13 +141,13 @@ national:
     slug: office-of-the-chief-justice-and-judicial-administration
     url_path: /2018-19/national/departments/office-of-the-chief-justice-and-judicial-administration
     vote_number: 22
-  - name: Police
-    slug: police
-    url_path: /2018-19/national/departments/police
-    vote_number: 23
   - name: Civilian Secretariat
     slug: civilian-secretariat
     url_path: /2018-19/national/departments/civilian-secretariat
+    vote_number: 23
+  - name: Police
+    slug: police
+    url_path: /2018-19/national/departments/police
     vote_number: 23
   - name: Agriculture, Forestry and Fisheries
     slug: agriculture-forestry-and-fisheries
@@ -223,7 +219,6 @@ national:
     vote_number: 40
   name: South Africa
   slug: south-africa
-organisational_unit: department-list
 provincial:
 - departments: []
   name: Eastern Cape
@@ -253,4 +248,6 @@ provincial:
   name: Western Cape
   slug: western-cape
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: departments
+title: Department Budgets - vulekamali

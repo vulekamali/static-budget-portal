@@ -18,10 +18,7 @@ YEAR_SLUGS = [
 ]
 
 BASIC_PAGE_SLUGS = [
-    'about',
-    'resources',
     'search-result',
-    'videos',
 ]
 
 portal_url = os.environ.get('PORTAL_URL', "https://dynamicbudgetportal.openup.org.za/")
@@ -29,44 +26,29 @@ portal_url = os.environ.get('PORTAL_URL', "https://dynamicbudgetportal.openup.or
 
 def ensure_file_dirs(file_path):
     dirname = os.path.dirname(file_path)
-    if not os.path.exists(dirname):
-        os.makedirs(dirname)
+    if dirname:
+        if not os.path.exists(dirname):
+            os.makedirs(dirname)
 
 
 def write_basic_page(page_url_path, page_yaml, layout=None):
     page = yaml.load(page_yaml)
     file_path = "%s.md" % page_url_path[1:]
     ensure_file_dirs(file_path)
-    years = []
-    for year in page['financial_years']:
-        years.append([
-            year['id'],
-            year['closest_match']['url_path'],
-            'active' if year['is_selected'] else 'link'
-        ])
-    if page['organisational_unit'] == 'learning':
-        active = 'learning-centre'
-    else:
-        active = None
-    title = page['slug'].replace('-', ' ').title()
+    front_matter = {
+        'slug': page['slug'],
+        'layout': layout or page['slug'],
+    }
+    financial_year = page.get('selected_financial_year', None)
+    if financial_year:
+        front_matter['financial_year'] = financial_year
     with open(file_path, "wb") as outfile:
-        outfile.write(
-            ("---\n"
-             "financial_year: %s\n"
-             "slug: %s\n"
-             "layout: %s\n"
-             "%s"
-             "active: %s\n"
-             "title: %s\n"
-             "nested: false\n"
-             "---") % (
-                 page['selected_financial_year'],
-                 page['slug'],
-                 layout or page['slug'],
-                 yaml.dump({'years': years}),
-                 active or page['slug'],
-                 title,
-             ))
+        front_matter_yaml = yaml.safe_dump(
+            front_matter,
+            default_flow_style=False,
+            encoding='utf-8',
+        )
+        outfile.write("---\n%s---" % front_matter_yaml)
 
 
 def write_financial_year(year_slug, static_path):
@@ -95,14 +77,10 @@ def write_financial_year(year_slug, static_path):
         outfile.write(
             ("---\n"
              "layout: homepage\n"
-             "title: South African National Budget %s\n"
-             "%s"
              "financial_year: %s\n"
-             "active: home\n"
-             "nested: false\n"
+             "slug: %s\n"
              "---") % (
                  year_slug,
-                 yaml.dump({'years': years}),
                  year_slug,
              ))
 
@@ -117,7 +95,7 @@ def write_department_page(department_url_path, department_yaml):
              "financial_year: %s\n"
              "sphere: %s\n"
              "geographic_region_slug: %s\n"
-             "department_slug: %s\n"
+             "slug: %s\n"
              "layout: department\n"
              "---") % (
                  department['selected_financial_year'],
@@ -134,18 +112,16 @@ def write_dataset_page(dataset_url_path, dataset_yaml):
     with open(file_path, "wb") as outfile:
         outfile.write(
             ("---\n"
-             "financial_year: %s\n"
              "slug: %s\n"
              "layout: contributed_dataset\n"
              "---") % (
-                 dataset['selected_financial_year'],
                  dataset['slug'],
              ))
 
 
 # Basic Pages
 
-write_financial_year(YEAR_SLUGS[-1], "")
+write_financial_year(max(YEAR_SLUGS), "")
 
 for year_slug in YEAR_SLUGS:
     write_financial_year(year_slug, "/%s" % year_slug)
@@ -165,33 +141,33 @@ for year_slug in YEAR_SLUGS:
 
 
 # Datasets
-for year_slug in YEAR_SLUGS:
-    listing_url_path = '/%s/contributed-data' % year_slug
-    print listing_url_path
-    listing_url = portal_url + listing_url_path[1:] + '.yaml'
-    r = requests.get(listing_url)
+
+listing_url_path = '/contributed-data'
+print listing_url_path
+listing_url = portal_url + listing_url_path[1:] + '.yaml'
+r = requests.get(listing_url)
+r.raise_for_status()
+listing_path = '_data%s.yaml' % listing_url_path
+
+with open(listing_path, 'wb') as listing_file:
+    listing_file.write(r.text)
+write_basic_page(listing_url_path, r.text)
+
+listing = yaml.load(r.text)
+for dataset in listing['datasets']:
+    print dataset['url_path']
+    dataset_path = dataset['url_path'] + '.yaml'
+    if dataset_path.startswith('/'):
+        dataset_path = dataset_path[1:]
+    dataset_url = portal_url + dataset_path
+    dataset_context_path = '_data/' + dataset_path
+    ensure_file_dirs(dataset_context_path)
+
+    r = requests.get(dataset_url)
     r.raise_for_status()
-    listing_path = '_data%s.yaml' % listing_url_path
-
-    with open(listing_path, 'wb') as listing_file:
-        listing_file.write(r.text)
-    write_basic_page(listing_url_path, r.text)
-
-    listing = yaml.load(r.text)
-    for dataset in listing['datasets']:
-        print dataset['url_path']
-        dataset_path = dataset['url_path'] + '.yaml'
-        if dataset_path.startswith('/'):
-            dataset_path = dataset_path[1:]
-        dataset_url = portal_url + dataset_path
-        dataset_context_path = '_data/' + dataset_path
-        ensure_file_dirs(dataset_context_path)
-
-        r = requests.get(dataset_url)
-        r.raise_for_status()
-        write_dataset_page(dataset['url_path'], r.text)
-        with open(dataset_context_path, 'wb') as dataset_file:
-            dataset_file.write(r.text)
+    write_dataset_page(dataset['url_path'], r.text)
+    with open(dataset_context_path, 'wb') as dataset_file:
+        dataset_file.write(r.text)
 
 
 # Departments

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Office of the Premier
-    organisational_unit: department
     slug: office-of-the-premier
     url_path: /2015-16/provincial/limpopo/departments/office-of-the-premier
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Office of the Premier
-    organisational_unit: department
     slug: office-of-the-premier
     url_path: /2016-17/provincial/limpopo/departments/office-of-the-premier
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Office of the Premier
-    organisational_unit: department
     slug: office-of-the-premier
     url_path: /2017-18/provincial/limpopo/departments/office-of-the-premier
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Limpopo
-    organisational_unit: government
     slug: limpopo
     url_path: /2018-19/provincial/limpopo
   id: 2018-19
@@ -49,7 +45,6 @@ intro: "## Vision\n\nGood governance, integrated planning, sustainable growth an
   \ Promote intergovernmental and international relations."
 is_vote_primary: true
 name: Office of the Premier
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 150425000.0
@@ -58,10 +53,12 @@ programmes:
 - name: Policy & Governance
   total_budget: 96031000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: office-of-the-premier
 sphere:
   name: Provincial
   slug: provincial
+title: Office of the Premier - vulekamali
 treasury_datasets:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

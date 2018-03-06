@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Gauteng Provincial Treasury
-    organisational_unit: department
     slug: gauteng-provincial-treasury
     url_path: /2015-16/provincial/gauteng/departments/gauteng-provincial-treasury
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Gauteng Provincial Treasury
-    organisational_unit: department
     slug: gauteng-provincial-treasury
     url_path: /2016-17/provincial/gauteng/departments/gauteng-provincial-treasury
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Gauteng Provincial Treasury
-    organisational_unit: department
     slug: gauteng-provincial-treasury
     url_path: /2017-18/provincial/gauteng/departments/gauteng-provincial-treasury
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Gauteng
-    organisational_unit: government
     slug: gauteng
     url_path: /2018-19/provincial/gauteng
   id: 2018-19
@@ -62,7 +58,6 @@ intro: "## Vision\n\nTo provide strategic leadership in financial and fiscal mat
   \ To ensure adequate financial accountability."
 is_vote_primary: true
 name: Gauteng Provincial Treasury
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 121342000.0
@@ -77,10 +72,12 @@ programmes:
 - name: Gauteng Audit Services
   total_budget: 80539000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: gauteng-provincial-treasury
 sphere:
   name: Provincial
   slug: provincial
+title: Gauteng Provincial Treasury - vulekamali
 treasury_datasets:
   'EPRE for Vote 14 : Gauteng Provincial Treasury':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

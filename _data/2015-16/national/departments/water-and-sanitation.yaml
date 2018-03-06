@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Water and Sanitation
-    organisational_unit: department
     slug: water-and-sanitation
     url_path: /2015-16/national/departments/water-and-sanitation
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Water and Sanitation
-    organisational_unit: department
     slug: water-and-sanitation
     url_path: /2016-17/national/departments/water-and-sanitation
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Water and Sanitation
-    organisational_unit: department
     slug: water-and-sanitation
     url_path: /2017-18/national/departments/water-and-sanitation
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Water and Sanitation
-    organisational_unit: department
     slug: water-and-sanitation
     url_path: /2018-19/national/departments/water-and-sanitation
   id: 2018-19
@@ -49,7 +45,6 @@ intro: "## Vote purpose\n\n_Ensure the availability of water resources, facilita
   \ and eradicating\npoverty.\n\n"
 is_vote_primary: true
 name: Water and Sanitation
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 1526167000.0
@@ -62,10 +57,12 @@ programmes:
 - name: Water Sector Regulation
   total_budget: 231339000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: water-and-sanitation
 sphere:
   name: National
   slug: national
+title: Water and Sanitation - vulekamali
 treasury_datasets:
   ENE for Vote 36 - Water and Sanitation:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

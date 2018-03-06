@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Transport
-    organisational_unit: department
     slug: transport
     url_path: /2015-16/provincial/kwazulu-natal/departments/transport
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Transport
-    organisational_unit: department
     slug: transport
     url_path: /2016-17/provincial/kwazulu-natal/departments/transport
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Transport
-    organisational_unit: department
     slug: transport
     url_path: /2017-18/provincial/kwazulu-natal/departments/transport
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: KwaZulu-Natal
-    organisational_unit: government
     slug: kwazulu-natal
     url_path: /2018-19/provincial/kwazulu-natal
   id: 2018-19
@@ -49,7 +45,6 @@ intro: "## Vision\n\nThe department\u2019s vision is: Prosperity through mobilit
   \ and development plans and strategie"
 is_vote_primary: true
 name: Transport
-organisational_unit: department
 programmes:
 - name: 1. Administration
   total_budget: 310192000.0
@@ -62,10 +57,12 @@ programmes:
 - name: 5. Community Based Programme
   total_budget: 40180000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: transport
 sphere:
   name: Provincial
   slug: provincial
+title: Transport - vulekamali
 treasury_datasets:
   'EPRE for Vote 12 : Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
