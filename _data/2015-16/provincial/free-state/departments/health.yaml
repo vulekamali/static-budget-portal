@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2015-16/provincial/free-state/departments/health
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2016-17/provincial/free-state/departments/health
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2017-18/provincial/free-state/departments/health
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Free State
-    organisational_unit: government
     slug: free-state
     url_path: /2018-19/provincial/free-state
   id: 2018-19
@@ -52,7 +48,6 @@ intro: "## Vision\n\nIncreasing life expectancy through health system effectiven
   \ the health sector and aligned to the MTSF 2014 \u2013 19 and the NDP 2030"
 is_vote_primary: true
 name: Health
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 286586000.0
@@ -71,10 +66,12 @@ programmes:
 - name: Health Facilities Management
   total_budget: 596138000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: health
 sphere:
   name: Provincial
   slug: provincial
+title: Health - vulekamali
 treasury_datasets:
   'EPRE for Vote 05 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

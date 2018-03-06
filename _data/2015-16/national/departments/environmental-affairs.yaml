@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Environmental Affairs
-    organisational_unit: department
     slug: environmental-affairs
     url_path: /2015-16/national/departments/environmental-affairs
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Environmental Affairs
-    organisational_unit: department
     slug: environmental-affairs
     url_path: /2016-17/national/departments/environmental-affairs
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Environmental Affairs
-    organisational_unit: department
     slug: environmental-affairs
     url_path: /2017-18/national/departments/environmental-affairs
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Environmental Affairs
-    organisational_unit: department
     slug: environmental-affairs
     url_path: /2018-19/national/departments/environmental-affairs
   id: 2018-19
@@ -67,7 +63,6 @@ intro: "## Vote purpose\n\n_Lead South Africa\u2019s environmental sector to ach
   \ use of natural resources.\n\n"
 is_vote_primary: true
 name: Environmental Affairs
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 714049000.0
@@ -84,10 +79,12 @@ programmes:
 - name: Chemicals and Waste Management
   total_budget: 79281000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: environmental-affairs
 sphere:
   name: National
   slug: national
+title: Environmental Affairs - vulekamali
 treasury_datasets:
   ENE for Vote 27 - Environmental Affairs:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

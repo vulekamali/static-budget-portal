@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Rural Development and Land Reform
-    organisational_unit: department
     slug: rural-development-and-land-reform
     url_path: /2015-16/national/departments/rural-development-and-land-reform
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Rural Development and Land Reform
-    organisational_unit: department
     slug: rural-development-and-land-reform
     url_path: /2016-17/national/departments/rural-development-and-land-reform
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Rural Development and Land Reform
-    organisational_unit: department
     slug: rural-development-and-land-reform
     url_path: /2017-18/national/departments/rural-development-and-land-reform
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Rural Development and Land Reform
-    organisational_unit: department
     slug: rural-development-and-land-reform
     url_path: /2018-19/national/departments/rural-development-and-land-reform
   id: 2018-19
@@ -84,7 +80,6 @@ intro: "## Vote purpose\r\n\r\nCreate and maintain an equitable and sustainable 
   \ of government\u2019s 2014-2019 medium-term strategic framework."
 is_vote_primary: true
 name: Rural Development and Land Reform
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 1721620000.0
@@ -97,10 +92,12 @@ programmes:
 - name: Land Reform
   total_budget: 2628223000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: rural-development-and-land-reform
 sphere:
   name: National
   slug: national
+title: Rural Development and Land Reform - vulekamali
 treasury_datasets:
   ENE for Vote 39 - Rural Development and Land Reform:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

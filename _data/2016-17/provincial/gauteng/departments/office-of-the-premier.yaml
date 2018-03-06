@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Office of the Premier
-    organisational_unit: department
     slug: office-of-the-premier
     url_path: /2015-16/provincial/gauteng/departments/office-of-the-premier
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Office of the Premier
-    organisational_unit: department
     slug: office-of-the-premier
     url_path: /2016-17/provincial/gauteng/departments/office-of-the-premier
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Office of the Premier
-    organisational_unit: department
     slug: office-of-the-premier
     url_path: /2017-18/provincial/gauteng/departments/office-of-the-premier
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Gauteng
-    organisational_unit: government
     slug: gauteng
     url_path: /2018-19/provincial/gauteng
   id: 2018-19
@@ -53,7 +49,6 @@ intro: "## Vision\n\nLeadership for an integrated city-region, characterised by 
   \ partners."
 is_vote_primary: true
 name: Office of the Premier
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 104080000.0
@@ -62,10 +57,12 @@ programmes:
 - name: Policy & Governance
   total_budget: 133496000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: office-of-the-premier
 sphere:
   name: Provincial
   slug: provincial
+title: Office of the Premier - vulekamali
 treasury_datasets:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

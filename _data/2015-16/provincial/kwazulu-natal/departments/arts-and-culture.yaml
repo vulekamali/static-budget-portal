@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Arts and Culture
-    organisational_unit: department
     slug: arts-and-culture
     url_path: /2015-16/provincial/kwazulu-natal/departments/arts-and-culture
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Arts and Culture
-    organisational_unit: department
     slug: arts-and-culture
     url_path: /2016-17/provincial/kwazulu-natal/departments/arts-and-culture
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Arts and Culture
-    organisational_unit: department
     slug: arts-and-culture
     url_path: /2017-18/provincial/kwazulu-natal/departments/arts-and-culture
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: KwaZulu-Natal
-    organisational_unit: government
     slug: kwazulu-natal
     url_path: /2018-19/provincial/kwazulu-natal
   id: 2018-19
@@ -51,7 +47,6 @@ intro: "## Vision\n\nThe vision of the department is: Prosperity and social cohe
   \ library services"
 is_vote_primary: true
 name: Arts and Culture
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 113504000.0
@@ -60,10 +55,12 @@ programmes:
 - name: Library and Archive Services
   total_budget: 471670000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: arts-and-culture
 sphere:
   name: Provincial
   slug: provincial
+title: Arts and Culture - vulekamali
 treasury_datasets:
   'EPRE for Vote 15 : Arts and Culture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

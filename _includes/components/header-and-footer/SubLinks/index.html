@@ -1,7 +1,29 @@
-<div class="SubLinks {{ include.modifiers }}">
-  {% if include.type == 'about' %}
-    {% include components/header-and-footer/SubLinks/partials/about.html year=include.year %}
-  {% else %}
-    {% include components/header-and-footer/SubLinks/partials/learning-centre.html year=include.year currentPage=include.currentPage %}
-  {% endif %}
+{% comment %} Determine whether children should show in sidebar {% endcomment %}
+{% if include.activeValue %}
+  {% assign parentActiveClass = ' is-active' %}
+{% else %}
+  {% assign parentActiveClass = '' %}
+{% endif %} 
+
+
+<div class="SubLinks{{ parentActiveClass }}">
+  <ul class="SubLinks-subItems">
+
+    {% for item in items %}
+
+      {% comment %} Determine whether children should show in sidebar {% endcomment %}
+      {% if include.selected_sidebar == item.id %}
+        {% assign activeClass = ' is-active' %}
+      {% else %}
+        {% assign activeClass = '' %}
+      {% endif %} 
+
+      <li class="SubLinks-subItem{{ activeClass }}">
+        <a class="SubLinks-subLink"{{ dataAttribute }} href="/{{ item.url }}">
+          {{ items.title }}
+        </a>
+      </li>
+    {% endfor %}
+
+  </ul>
 <div>

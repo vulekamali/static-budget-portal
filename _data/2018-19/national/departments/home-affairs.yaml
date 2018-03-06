@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Home Affairs
-    organisational_unit: department
     slug: home-affairs
     url_path: /2015-16/national/departments/home-affairs
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Home Affairs
-    organisational_unit: department
     slug: home-affairs
     url_path: /2016-17/national/departments/home-affairs
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Home Affairs
-    organisational_unit: department
     slug: home-affairs
     url_path: /2017-18/national/departments/home-affairs
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Home Affairs
-    organisational_unit: department
     slug: home-affairs
     url_path: /2018-19/national/departments/home-affairs
   id: 2018-19
@@ -47,7 +43,6 @@ intro: "## Vote purpose\n\nEfficiently determine and safeguard the identity and 
   \ government and the private sector.\n\n"
 is_vote_primary: true
 name: Home Affairs
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 2332805000.0
@@ -56,10 +51,12 @@ programmes:
 - name: Immigration Affairs
   total_budget: 1073609000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: home-affairs
 sphere:
   name: National
   slug: national
+title: Home Affairs - vulekamali
 treasury_datasets:
   ENE for Vote 5 - Home Affairs:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Women
-    organisational_unit: department
     slug: women
     url_path: /2015-16/national/departments/women
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Women
-    organisational_unit: department
     slug: women
     url_path: /2016-17/national/departments/women
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Women
-    organisational_unit: department
     slug: women
     url_path: /2017-18/national/departments/women
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Women
-    organisational_unit: department
     slug: women
     url_path: /2018-19/national/departments/women
   id: 2018-19
@@ -44,7 +40,6 @@ intro: "## Vote purpose\n\n_Lead, coordinate and oversee the transformation agen
   \ and the achievement of women\u2019s socioeconomic\nempowerment and rights.\n\n"
 is_vote_primary: true
 name: Women
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 83029000.0
@@ -53,10 +48,12 @@ programmes:
 - name: Policy, Stakeholder Coordination and Knowledge Management
   total_budget: 28198000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: women
 sphere:
   name: National
   slug: national
+title: Women - vulekamali
 treasury_datasets:
   ENE for Vote 13 - Women:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

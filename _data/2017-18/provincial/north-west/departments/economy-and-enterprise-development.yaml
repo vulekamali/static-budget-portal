@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economy and Enterprise Development
-    organisational_unit: department
     slug: economy-and-enterprise-development
     url_path: /2015-16/provincial/north-west/departments/economy-and-enterprise-development
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economy and Enterprise Development
-    organisational_unit: department
     slug: economy-and-enterprise-development
     url_path: /2016-17/provincial/north-west/departments/economy-and-enterprise-development
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economy and Enterprise Development
-    organisational_unit: department
     slug: economy-and-enterprise-development
     url_path: /2017-18/provincial/north-west/departments/economy-and-enterprise-development
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: North West
-    organisational_unit: government
     slug: north-west
     url_path: /2018-19/provincial/north-west
   id: 2018-19
@@ -53,7 +49,6 @@ intro: "## Vision\r\n\r\n\u201CA growing economy wherein enterprises thrive\u201
   \ LED, IDPs, and cluster management\r\n\r\n* Project management."
 is_vote_primary: true
 name: Economy and Enterprise Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 103947000.0
@@ -64,10 +59,12 @@ programmes:
 - name: Business Regulation and Governance
   total_budget: 117824000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: economy-and-enterprise-development
 sphere:
   name: Provincial
   slug: provincial
+title: Economy and Enterprise Development - vulekamali
 treasury_datasets:
   'EPRE for Vote 06 : Economy and Entreprise Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

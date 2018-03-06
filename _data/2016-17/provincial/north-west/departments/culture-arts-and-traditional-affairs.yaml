@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Culture, Arts and Traditional Affairs
-    organisational_unit: department
     slug: culture-arts-and-traditional-affairs
     url_path: /2015-16/provincial/north-west/departments/culture-arts-and-traditional-affairs
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Culture, Arts and Traditional Affairs
-    organisational_unit: department
     slug: culture-arts-and-traditional-affairs
     url_path: /2016-17/provincial/north-west/departments/culture-arts-and-traditional-affairs
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Culture, Arts and Traditional Affairs
-    organisational_unit: department
     slug: culture-arts-and-traditional-affairs
     url_path: /2017-18/provincial/north-west/departments/culture-arts-and-traditional-affairs
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: North West
-    organisational_unit: government
     slug: north-west
     url_path: /2018-19/provincial/north-west
   id: 2018-19
@@ -58,7 +54,6 @@ intro: "## Vision\n\nA thriving arts, culture and traditional affairs sector con
   \ and\r\nsustainable institution of traditional leadership."
 is_vote_primary: true
 name: Culture, Arts and Traditional Affairs
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 100998000.0
@@ -71,10 +66,12 @@ programmes:
 - name: Traditional Affairs
   total_budget: 134482000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: culture-arts-and-traditional-affairs
 sphere:
   name: Provincial
   slug: provincial
+title: Culture, Arts and Traditional Affairs - vulekamali
 treasury_datasets:
   'EPRE for Vote 04 : Culture, Arts and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Community Safety, Security and Liaison
-    organisational_unit: department
     slug: community-safety-security-and-liaison
     url_path: /2015-16/provincial/mpumalanga/departments/community-safety-security-and-liaison
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Community Safety, Security and Liaison
-    organisational_unit: department
     slug: community-safety-security-and-liaison
     url_path: /2016-17/provincial/mpumalanga/departments/community-safety-security-and-liaison
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Community Safety, Security and Liaison
-    organisational_unit: department
     slug: community-safety-security-and-liaison
     url_path: /2017-18/provincial/mpumalanga/departments/community-safety-security-and-liaison
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Mpumalanga
-    organisational_unit: government
     slug: mpumalanga
     url_path: /2018-19/provincial/mpumalanga
   id: 2018-19
@@ -42,7 +38,6 @@ intro: "## Vision\n\nA Safe, secure, crime and road accident free Mpumalanga Pro
   \ services."
 is_vote_primary: true
 name: Community Safety, Security and Liaison
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 110942000.0
@@ -53,10 +48,12 @@ programmes:
 - name: Security  Management
   total_budget: 359812000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: community-safety-security-and-liaison
 sphere:
   name: Provincial
   slug: provincial
+title: Community Safety, Security and Liaison - vulekamali
 treasury_datasets:
   'EPRE for Vote 09 : Community Safety, Security and Liaison':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

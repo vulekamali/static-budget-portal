@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: The Presidency
-    organisational_unit: department
     slug: the-presidency
     url_path: /2015-16/national/departments/the-presidency
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: The Presidency
-    organisational_unit: department
     slug: the-presidency
     url_path: /2016-17/national/departments/the-presidency
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: The Presidency
-    organisational_unit: department
     slug: the-presidency
     url_path: /2017-18/national/departments/the-presidency
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: The Presidency
-    organisational_unit: department
     slug: the-presidency
     url_path: /2018-19/national/departments/the-presidency
   id: 2018-19
@@ -43,7 +39,6 @@ intro: "## Vote purpose\n\nFacilitate a common programme towards the achievement
   \ by the deputy president, as articulated in chapter 5 of the Constitution. \n\n"
 is_vote_primary: true
 name: The Presidency
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 456003000.0
@@ -52,10 +47,12 @@ programmes:
 - name: Executive Support
   total_budget: 49577000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: the-presidency
 sphere:
   name: National
   slug: national
+title: The Presidency - vulekamali
 treasury_datasets:
   ENE for Vote 1 - The Presidency:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

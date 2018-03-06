@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Higher Education and Training
-    organisational_unit: department
     slug: higher-education-and-training
     url_path: /2015-16/national/departments/higher-education-and-training
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Higher Education and Training
-    organisational_unit: department
     slug: higher-education-and-training
     url_path: /2016-17/national/departments/higher-education-and-training
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Higher Education and Training
-    organisational_unit: department
     slug: higher-education-and-training
     url_path: /2017-18/national/departments/higher-education-and-training
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Higher Education and Training
-    organisational_unit: department
     slug: higher-education-and-training
     url_path: /2018-19/national/departments/higher-education-and-training
   id: 2018-19
@@ -60,7 +56,6 @@ intro: "## Vote purpose\n\nDevelop and support a quality higher and vocational e
   \ of the national qualifications framework.\n\n"
 is_vote_primary: true
 name: Higher Education and Training
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 432277000.0
@@ -77,10 +72,12 @@ programmes:
 - name: Community Education and Training
   total_budget: 2358797000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: higher-education-and-training
 sphere:
   name: National
   slug: national
+title: Higher Education and Training - vulekamali
 treasury_datasets:
   ENE for Vote 15 - Higher Education and Training:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works, Roads and Transport
-    organisational_unit: department
     slug: public-works-roads-and-transport
     url_path: /2015-16/provincial/mpumalanga/departments/public-works-roads-and-transport
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works, Roads and Transport
-    organisational_unit: department
     slug: public-works-roads-and-transport
     url_path: /2016-17/provincial/mpumalanga/departments/public-works-roads-and-transport
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works, Roads and Transport
-    organisational_unit: department
     slug: public-works-roads-and-transport
     url_path: /2017-18/provincial/mpumalanga/departments/public-works-roads-and-transport
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Mpumalanga
-    organisational_unit: government
     slug: mpumalanga
     url_path: /2018-19/provincial/mpumalanga
   id: 2018-19
@@ -43,7 +39,6 @@ intro: "## Vision\n\nAn integrated transport system and infrastructure that prom
   \ economic development and job creation.\r\n\r\n"
 is_vote_primary: true
 name: Public Works, Roads and Transport
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 235636000.0
@@ -56,10 +51,12 @@ programmes:
 - name: Community Based Programmes
   total_budget: 66169000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: public-works-roads-and-transport
 sphere:
   name: Provincial
   slug: provincial
+title: Public Works, Roads and Transport - vulekamali
 treasury_datasets:
   'EPRE for Vote 08 : Public Works, Roads and Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

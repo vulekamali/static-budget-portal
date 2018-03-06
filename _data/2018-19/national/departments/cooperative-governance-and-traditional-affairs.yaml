@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Cooperative Governance and Traditional Affairs
-    organisational_unit: department
     slug: cooperative-governance-and-traditional-affairs
     url_path: /2015-16/national/departments/cooperative-governance-and-traditional-affairs
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Cooperative Governance and Traditional Affairs
-    organisational_unit: department
     slug: cooperative-governance-and-traditional-affairs
     url_path: /2016-17/national/departments/cooperative-governance-and-traditional-affairs
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Cooperative Governance and Traditional Affairs
-    organisational_unit: department
     slug: cooperative-governance-and-traditional-affairs
     url_path: /2017-18/national/departments/cooperative-governance-and-traditional-affairs
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Cooperative Governance and Traditional Affairs
-    organisational_unit: department
     slug: cooperative-governance-and-traditional-affairs
     url_path: /2018-19/national/departments/cooperative-governance-and-traditional-affairs
   id: 2018-19
@@ -52,7 +48,6 @@ intro: "## Vote purpose\n\nImprove cooperative governance across the three spher
   \ Municipal Structures Act (1998)\n * the Disaster Management Act (2002).\n\n\n"
 is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 258556000.0
@@ -67,10 +62,12 @@ programmes:
 - name: Community Work Programme
   total_budget: 3869903000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: cooperative-governance-and-traditional-affairs
 sphere:
   name: National
   slug: national
+title: Cooperative Governance and Traditional Affairs - vulekamali
 treasury_datasets:
   ENE for Vote 4 - Cooperative Governance and Traditional Affairs:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

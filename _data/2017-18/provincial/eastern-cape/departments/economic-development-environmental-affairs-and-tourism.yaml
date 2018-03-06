@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development, Environmental Affairs and Tourism
-    organisational_unit: department
     slug: economic-development-environmental-affairs-and-tourism
     url_path: /2015-16/provincial/eastern-cape/departments/economic-development-environmental-affairs-and-tourism
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development, Environmental Affairs and Tourism
-    organisational_unit: department
     slug: economic-development-environmental-affairs-and-tourism
     url_path: /2016-17/provincial/eastern-cape/departments/economic-development-environmental-affairs-and-tourism
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Economic Development, Environmental Affairs and Tourism
-    organisational_unit: department
     slug: economic-development-environmental-affairs-and-tourism
     url_path: /2017-18/provincial/eastern-cape/departments/economic-development-environmental-affairs-and-tourism
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Eastern Cape
-    organisational_unit: government
     slug: eastern-cape
     url_path: /2018-19/provincial/eastern-cape
   id: 2018-19
@@ -48,7 +44,6 @@ intro: "## Vision\n\nSustainable development underpinned by ecpnomic groowth and
   \ for the protection of biodiversity and environment in the province.\r\n\r\n"
 is_vote_primary: true
 name: Economic Development, Environmental Affairs and Tourism
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 235239000.0
@@ -57,10 +52,12 @@ programmes:
 - name: Environmental  Affairs
   total_budget: 302980000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: economic-development-environmental-affairs-and-tourism
 sphere:
   name: Provincial
   slug: provincial
+title: Economic Development, Environmental Affairs and Tourism - vulekamali
 treasury_datasets:
   'EPRE for Vote 09 : Economic Development, Environmental Affairs and Tourism':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

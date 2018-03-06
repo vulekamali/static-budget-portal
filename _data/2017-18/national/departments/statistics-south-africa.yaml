@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Statistics South Africa
-    organisational_unit: department
     slug: statistics-south-africa
     url_path: /2015-16/national/departments/statistics-south-africa
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Statistics South Africa
-    organisational_unit: department
     slug: statistics-south-africa
     url_path: /2016-17/national/departments/statistics-south-africa
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Statistics South Africa
-    organisational_unit: department
     slug: statistics-south-africa
     url_path: /2017-18/national/departments/statistics-south-africa
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Statistics South Africa
-    organisational_unit: department
     slug: statistics-south-africa
     url_path: /2018-19/national/departments/statistics-south-africa
   id: 2018-19
@@ -51,7 +47,6 @@ intro: "## Vote purpose\n\n_Lead and partner in the production of statistics in 
   \n"
 is_vote_primary: true
 name: Statistics South Africa
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 687527000.0
@@ -68,10 +63,12 @@ programmes:
 - name: Survey Operations
   total_budget: 191391000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: statistics-south-africa
 sphere:
   name: National
   slug: national
+title: Statistics South Africa - vulekamali
 treasury_datasets:
   ENE for Vote 12 - Statistics South Africa:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

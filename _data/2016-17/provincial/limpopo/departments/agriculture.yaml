@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Agriculture
-    organisational_unit: department
     slug: agriculture
     url_path: /2015-16/provincial/limpopo/departments/agriculture
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Agriculture
-    organisational_unit: department
     slug: agriculture
     url_path: /2016-17/provincial/limpopo/departments/agriculture
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Agriculture
-    organisational_unit: department
     slug: agriculture
     url_path: /2017-18/provincial/limpopo/departments/agriculture
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Limpopo
-    organisational_unit: government
     slug: limpopo
     url_path: /2018-19/provincial/limpopo
   id: 2018-19
@@ -45,7 +41,6 @@ intro: "## Vision\r\n\r\nUnited, prosperous and productive agricultural sector f
   \ and transfer, regulatory function and financial support to\r\nagriculture."
 is_vote_primary: true
 name: Agriculture
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 363023000.0
@@ -64,10 +59,12 @@ programmes:
 - name: Rural development Co-ordination
   total_budget: 6437000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: agriculture
 sphere:
   name: Provincial
   slug: provincial
+title: Agriculture - vulekamali
 treasury_datasets:
   'EPRE for Vote 04 : Agriculture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

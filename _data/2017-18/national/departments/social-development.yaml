@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Social Development
-    organisational_unit: department
     slug: social-development
     url_path: /2015-16/national/departments/social-development
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Social Development
-    organisational_unit: department
     slug: social-development
     url_path: /2016-17/national/departments/social-development
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Social Development
-    organisational_unit: department
     slug: social-development
     url_path: /2017-18/national/departments/social-development
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Social Development
-    organisational_unit: department
     slug: social-development
     url_path: /2018-19/national/departments/social-development
   id: 2018-19
@@ -75,7 +71,6 @@ intro: "## Vote purpose\n\n_Ensure protection against vulnerability by creating 
   \ in the post-1994 era.\n\n"
 is_vote_primary: true
 name: Social Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 350788000.0
@@ -88,10 +83,12 @@ programmes:
 - name: Social Policy and Integrated Service Delivery
   total_budget: 388856000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: social-development
 sphere:
   name: National
   slug: national
+title: Social Development - vulekamali
 treasury_datasets:
   ENE for Vote 17 - Social Development:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

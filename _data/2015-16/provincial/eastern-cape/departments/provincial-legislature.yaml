@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Provincial Legislature
-    organisational_unit: department
     slug: provincial-legislature
     url_path: /2015-16/provincial/eastern-cape/departments/provincial-legislature
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Provincial Legislature
-    organisational_unit: department
     slug: provincial-legislature
     url_path: /2016-17/provincial/eastern-cape/departments/provincial-legislature
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Provincial Legislature
-    organisational_unit: department
     slug: provincial-legislature
     url_path: /2017-18/provincial/eastern-cape/departments/provincial-legislature
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Eastern Cape
-    organisational_unit: government
     slug: eastern-cape
     url_path: /2018-19/provincial/eastern-cape
   id: 2018-19
@@ -63,7 +59,6 @@ intro: "## Vision\n\nA dynamic people\u2019s assembly for good governance, to de
   \ by portfolio committees."
 is_vote_primary: true
 name: Provincial Legislature
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 150302000.0
@@ -72,10 +67,12 @@ programmes:
 - name: Parliamentary Services
   total_budget: 112817000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: provincial-legislature
 sphere:
   name: Provincial
   slug: provincial
+title: Provincial Legislature - vulekamali
 treasury_datasets:
   'EPRE for Vote 02 : Provincial Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -1,21 +1,20 @@
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+  url_path: /datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+  url_path: /datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
+  url_path: /datasets/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
+  url_path: /datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 financial_years:
 - closest_match:
     is_exact_match: true
     name: Transport
-    organisational_unit: department
     slug: transport
     url_path: /2015-16/provincial/eastern-cape/departments/transport
   id: 2015-16
@@ -23,7 +22,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Transport
-    organisational_unit: department
     slug: transport
     url_path: /2016-17/provincial/eastern-cape/departments/transport
   id: 2016-17
@@ -31,7 +29,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Transport
-    organisational_unit: department
     slug: transport
     url_path: /2017-18/provincial/eastern-cape/departments/transport
   id: 2017-18
@@ -39,7 +36,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Eastern Cape
-    organisational_unit: government
     slug: eastern-cape
     url_path: /2018-19/provincial/eastern-cape
   id: 2018-19
@@ -63,7 +59,6 @@ intro: "## Vision\n\nAn efficient, safe,sustainable, affordable and accessible t
   \ in the province; and\r\n\r\n* To provide fleet services to provincial departments."
 is_vote_primary: true
 name: Transport
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 309166000.0
@@ -76,10 +71,12 @@ programmes:
 - name: Community Based Programme
   total_budget: 51031000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: transport
 sphere:
   name: Provincial
   slug: provincial
+title: Transport - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -1,0 +1,4 @@
+---
+layout: glossary
+slug: glossary
+---

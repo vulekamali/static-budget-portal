@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Free State Legislature
-    organisational_unit: department
     slug: free-state-legislature
     url_path: /2015-16/provincial/free-state/departments/free-state-legislature
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Free State Legislature
-    organisational_unit: department
     slug: free-state-legislature
     url_path: /2016-17/provincial/free-state/departments/free-state-legislature
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Free State Legislature
-    organisational_unit: department
     slug: free-state-legislature
     url_path: /2017-18/provincial/free-state/departments/free-state-legislature
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Free State
-    organisational_unit: government
     slug: free-state
     url_path: /2018-19/provincial/free-state
   id: 2018-19
@@ -59,7 +55,6 @@ intro: "## Vision\n\nThe vision of the Free State Legislature is in line with it
   \ development of\r\nhuman resource.\r\n"
 is_vote_primary: true
 name: Free State Legislature
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 97903000.0
@@ -68,10 +63,12 @@ programmes:
 - name: Parliamentary Services
   total_budget: 32024000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: free-state-legislature
 sphere:
   name: Provincial
   slug: provincial
+title: Free State Legislature - vulekamali
 treasury_datasets:
   'EPRE for Vote 02 : Free State Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Environment and Nature Conservation
-    organisational_unit: department
     slug: environment-and-nature-conservation
     url_path: /2015-16/provincial/northern-cape/departments/environment-and-nature-conservation
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Environment and Nature Conservation
-    organisational_unit: department
     slug: environment-and-nature-conservation
     url_path: /2016-17/provincial/northern-cape/departments/environment-and-nature-conservation
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Environment and Nature Conservation
-    organisational_unit: department
     slug: environment-and-nature-conservation
     url_path: /2017-18/provincial/northern-cape/departments/environment-and-nature-conservation
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Northern Cape
-    organisational_unit: government
     slug: northern-cape
     url_path: /2018-19/provincial/northern-cape
   id: 2018-19
@@ -51,7 +47,6 @@ intro: "## Vision\n\nA prosperous society living sustainably with the natural en
   \ enforce compliance with environmental legislation.\r\n"
 is_vote_primary: true
 name: Environment and Nature Conservation
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 55172000.0
@@ -66,10 +61,12 @@ programmes:
 - name: Environmental Empowerment Services
   total_budget: 12174000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: environment-and-nature-conservation
 sphere:
   name: Provincial
   slug: provincial
+title: Environment and Nature Conservation - vulekamali
 treasury_datasets:
   'EPRE for Vote 13 : Environment and Nature Conservation':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

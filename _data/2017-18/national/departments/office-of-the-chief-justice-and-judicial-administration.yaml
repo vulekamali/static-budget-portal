@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Office of the Chief Justice and Judicial Administration
-    organisational_unit: department
     slug: office-of-the-chief-justice-and-judicial-administration
     url_path: /2015-16/national/departments/office-of-the-chief-justice-and-judicial-administration
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Office of the Chief Justice and Judicial Administration
-    organisational_unit: department
     slug: office-of-the-chief-justice-and-judicial-administration
     url_path: /2016-17/national/departments/office-of-the-chief-justice-and-judicial-administration
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Office of the Chief Justice and Judicial Administration
-    organisational_unit: department
     slug: office-of-the-chief-justice-and-judicial-administration
     url_path: /2017-18/national/departments/office-of-the-chief-justice-and-judicial-administration
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Office of the Chief Justice and Judicial Administration
-    organisational_unit: department
     slug: office-of-the-chief-justice-and-judicial-administration
     url_path: /2018-19/national/departments/office-of-the-chief-justice-and-judicial-administration
   id: 2018-19
@@ -52,7 +48,6 @@ intro: "## Vote purpose\n\n_Strengthen judicial governance and independence by r
   \ Education Institute in the execution of their mandates.\n\n"
 is_vote_primary: true
 name: Office of the Chief Justice and Judicial Administration
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 198991000.0
@@ -63,10 +58,12 @@ programmes:
 - name: Judicial Education and Support
   total_budget: 82104000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: office-of-the-chief-justice-and-judicial-administration
 sphere:
   name: National
   slug: national
+title: Office of the Chief Justice and Judicial Administration - vulekamali
 treasury_datasets:
   ENE for Vote 22 - Office of the Chief Justice and Judicial Administration:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

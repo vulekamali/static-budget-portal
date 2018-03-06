@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Community Safety
-    organisational_unit: department
     slug: community-safety
     url_path: /2015-16/provincial/western-cape/departments/community-safety
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Community Safety
-    organisational_unit: department
     slug: community-safety
     url_path: /2016-17/provincial/western-cape/departments/community-safety
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Community Safety
-    organisational_unit: department
     slug: community-safety
     url_path: /2017-18/provincial/western-cape/departments/community-safety
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Western Cape
-    organisational_unit: government
     slug: western-cape
     url_path: /2018-19/provincial/western-cape
   id: 2018-19
@@ -53,7 +49,6 @@ intro: "## Vision\r\n\r\nA safer open opportunity society for all building resil
   \ risk profile of the Western Cape Government."
 is_vote_primary: true
 name: Community Safety
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 42073000.0
@@ -64,10 +59,12 @@ programmes:
 - name: Security Risk Management
   total_budget: 80903000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: community-safety
 sphere:
   name: Provincial
   slug: provincial
+title: Community Safety - vulekamali
 treasury_datasets:
   'EPRE for Vote 04 : Community Safety':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -1,21 +1,20 @@
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+  url_path: /datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+  url_path: /datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
+  url_path: /datasets/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
+  url_path: /datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 financial_years:
 - closest_match:
     is_exact_match: true
     name: Human Settlements
-    organisational_unit: department
     slug: human-settlements
     url_path: /2015-16/provincial/kwazulu-natal/departments/human-settlements
   id: 2015-16
@@ -23,7 +22,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Human Settlements
-    organisational_unit: department
     slug: human-settlements
     url_path: /2016-17/provincial/kwazulu-natal/departments/human-settlements
   id: 2016-17
@@ -31,7 +29,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Human Settlements
-    organisational_unit: department
     slug: human-settlements
     url_path: /2017-18/provincial/kwazulu-natal/departments/human-settlements
   id: 2017-18
@@ -39,7 +36,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: KwaZulu-Natal
-    organisational_unit: government
     slug: kwazulu-natal
     url_path: /2018-19/provincial/kwazulu-natal
   id: 2018-19
@@ -62,7 +58,6 @@ intro: "## Vision\n\nThe vision of the department is: Together breaking new grou
   \n\r\n* To administer and manage housing subsidies of targeted groups."
 is_vote_primary: true
 name: Human Settlements
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 201248000.0
@@ -73,10 +68,12 @@ programmes:
 - name: Housing Asset Management, Property Management
   total_budget: 206368000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: human-settlements
 sphere:
   name: Provincial
   slug: provincial
+title: Human Settlements - vulekamali
 treasury_datasets:
   'EPRE for Vote 08 : Human Settlements':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

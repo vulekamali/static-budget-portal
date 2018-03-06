@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: South Africa
-    organisational_unit: government
     slug: south-africa
     url_path: /2015-16/national
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: South Africa
-    organisational_unit: government
     slug: south-africa
     url_path: /2016-17/national
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: National School of Government
-    organisational_unit: department
     slug: national-school-of-government
     url_path: /2017-18/national/departments/national-school-of-government
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: National School of Government
-    organisational_unit: department
     slug: national-school-of-government
     url_path: /2018-19/national/departments/national-school-of-government
   id: 2018-19
@@ -48,17 +44,18 @@ intro: "## Vote purpose\n\nProvide or coordinate the provision of learning, trai
   \ the Public Finance Management Act (1999). \n\n"
 is_vote_primary: false
 name: National School of Government
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 102579000.0
 - name: Public Sector Organisational and Staff Development
   total_budget: 66380000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: national-school-of-government
 sphere:
   name: National
   slug: national
+title: National School of Government - vulekamali
 treasury_datasets:
   ENE for Vote 10 - Public Service and Administration:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

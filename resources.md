@@ -1,0 +1,4 @@
+---
+layout: resources
+slug: resources
+---

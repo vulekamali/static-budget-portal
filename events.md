@@ -1,0 +1,4 @@
+---
+layout: events
+slug: events
+---

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Local Government
-    organisational_unit: department
     slug: local-government
     url_path: /2015-16/provincial/western-cape/departments/local-government
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Local Government
-    organisational_unit: department
     slug: local-government
     url_path: /2016-17/provincial/western-cape/departments/local-government
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Local Government
-    organisational_unit: department
     slug: local-government
     url_path: /2017-18/provincial/western-cape/departments/local-government
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Western Cape
-    organisational_unit: government
     slug: western-cape
     url_path: /2018-19/provincial/western-cape
   id: 2018-19
@@ -46,7 +42,6 @@ intro: "## Vision\n\nAn efficient and dynamic team that enables well governed mu
   \n\r\n* Accountability\r\n\r\n* Integrity\r\n\r\n* Responsiveness\r\n\r\n* Innovation"
 is_vote_primary: true
 name: Local Government
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 39174000.0
@@ -57,10 +52,12 @@ programmes:
 - name: Traditional Institutional Management
   total_budget: 1000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: local-government
 sphere:
   name: Provincial
   slug: provincial
+title: Local Government - vulekamali
 treasury_datasets:
   'EPRE for Vote 14 : Local Government':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
