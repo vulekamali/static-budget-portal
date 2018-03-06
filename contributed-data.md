@@ -1,4 +1,4 @@
 ---
+data_key: contributed-data
 layout: contributed-data
-slug: contributed-data
 ---

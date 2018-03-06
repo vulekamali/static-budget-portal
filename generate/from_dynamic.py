@@ -36,7 +36,7 @@ def write_basic_page(page_url_path, page_yaml, layout=None):
     file_path = "%s.md" % page_url_path[1:]
     ensure_file_dirs(file_path)
     front_matter = {
-        'slug': page['slug'],
+        'data_key': page['slug'],
         'layout': layout or page['slug'],
     }
     financial_year = page.get('selected_financial_year', None)
@@ -78,9 +78,8 @@ def write_financial_year(year_slug, static_path):
             ("---\n"
              "layout: homepage\n"
              "financial_year: %s\n"
-             "slug: %s\n"
+             "data_key: index\n"
              "---") % (
-                 year_slug,
                  year_slug,
              ))
 
@@ -95,7 +94,7 @@ def write_department_page(department_url_path, department_yaml):
              "financial_year: %s\n"
              "sphere: %s\n"
              "geographic_region_slug: %s\n"
-             "slug: %s\n"
+             "data_key: %s\n"
              "layout: department\n"
              "---") % (
                  department['selected_financial_year'],
@@ -112,7 +111,7 @@ def write_dataset_page(dataset_url_path, dataset_yaml):
     with open(file_path, "wb") as outfile:
         outfile.write(
             ("---\n"
-             "slug: %s\n"
+             "data_key: %s\n"
              "layout: contributed_dataset\n"
              "---") % (
                  dataset['slug'],
