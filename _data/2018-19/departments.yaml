@@ -1,29 +1,21 @@
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Departments
-    slug: departments
     url_path: /2015-16/departments
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Departments
-    slug: departments
     url_path: /2016-17/departments
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Departments
-    slug: departments
     url_path: /2017-18/departments
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Departments
-    slug: departments
     url_path: /2018-19/departments
   id: 2018-19
   is_selected: true
@@ -45,13 +37,13 @@ national:
     slug: government-communication-and-information-system
     url_path: /2018-19/national/departments/government-communication-and-information-system
     vote_number: 3
-  - name: Traditional Affairs
-    slug: traditional-affairs
-    url_path: /2018-19/national/departments/traditional-affairs
-    vote_number: 4
   - name: Cooperative Governance and Traditional Affairs
     slug: cooperative-governance-and-traditional-affairs
     url_path: /2018-19/national/departments/cooperative-governance-and-traditional-affairs
+    vote_number: 4
+  - name: Traditional Affairs
+    slug: traditional-affairs
+    url_path: /2018-19/national/departments/traditional-affairs
     vote_number: 4
   - name: Home Affairs
     slug: home-affairs
@@ -77,6 +69,10 @@ national:
     slug: centre-for-public-service-innovation
     url_path: /2018-19/national/departments/centre-for-public-service-innovation
     vote_number: 10
+  - name: National School of Government
+    slug: national-school-of-government
+    url_path: /2018-19/national/departments/national-school-of-government
+    vote_number: 10
   - name: Public Service and Administration
     slug: public-service-and-administration
     url_path: /2018-19/national/departments/public-service-and-administration
@@ -84,10 +80,6 @@ national:
   - name: Public Service Commission
     slug: public-service-commission
     url_path: /2018-19/national/departments/public-service-commission
-    vote_number: 10
-  - name: National School of Government
-    slug: national-school-of-government
-    url_path: /2018-19/national/departments/national-school-of-government
     vote_number: 10
   - name: Public Works
     slug: public-works
@@ -121,13 +113,13 @@ national:
     slug: correctional-services
     url_path: /2018-19/national/departments/correctional-services
     vote_number: 18
-  - name: Military Veterans
-    slug: military-veterans
-    url_path: /2018-19/national/departments/military-veterans
-    vote_number: 19
   - name: Defence and Military Veterans
     slug: defence-and-military-veterans
     url_path: /2018-19/national/departments/defence-and-military-veterans
+    vote_number: 19
+  - name: Military Veterans
+    slug: military-veterans
+    url_path: /2018-19/national/departments/military-veterans
     vote_number: 19
   - name: Independent Police Investigative Directorate
     slug: independent-police-investigative-directorate
