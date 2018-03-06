@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Education
-    organisational_unit: department
     slug: education
     url_path: /2015-16/provincial/eastern-cape/departments/education
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Education
-    organisational_unit: department
     slug: education
     url_path: /2016-17/provincial/eastern-cape/departments/education
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Education
-    organisational_unit: department
     slug: education
     url_path: /2017-18/provincial/eastern-cape/departments/education
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Eastern Cape
-    organisational_unit: government
     slug: eastern-cape
     url_path: /2018-19/provincial/eastern-cape
   id: 2018-19
@@ -47,7 +43,6 @@ intro: "## vision\n\nprovide leaners with opportunities to become and responsibl
   \ provisioning of high quality school infrastructure in the eastern cape\r\n\r\n"
 is_vote_primary: true
 name: Education
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 2607598000.0
@@ -64,10 +59,12 @@ programmes:
 - name: Examination and Education Related Services
   total_budget: 377053000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: education
 sphere:
   name: Provincial
   slug: provincial
+title: Education - vulekamali
 treasury_datasets:
   'EPRE for Vote 06 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Cooperative Governance and Traditional Affairs
-    organisational_unit: department
     slug: cooperative-governance-and-traditional-affairs
     url_path: /2015-16/provincial/free-state/departments/cooperative-governance-and-traditional-affairs
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Cooperative Governance and Traditional Affairs
-    organisational_unit: department
     slug: cooperative-governance-and-traditional-affairs
     url_path: /2016-17/provincial/free-state/departments/cooperative-governance-and-traditional-affairs
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Cooperative Governance and Traditional Affairs
-    organisational_unit: department
     slug: cooperative-governance-and-traditional-affairs
     url_path: /2017-18/provincial/free-state/departments/cooperative-governance-and-traditional-affairs
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Free State
-    organisational_unit: government
     slug: free-state
     url_path: /2018-19/provincial/free-state
   id: 2018-19
@@ -78,7 +74,6 @@ intro: "## Vision\n\nIntegrated and responsive governance towards sustainable de
   \nleadership complies with legislation.\r\n"
 is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 133006000.0
@@ -91,10 +86,12 @@ programmes:
 - name: House of Traditional Leaders
   total_budget: 9668000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: cooperative-governance-and-traditional-affairs
 sphere:
   name: Provincial
   slug: provincial
+title: Cooperative Governance and Traditional Affairs - vulekamali
 treasury_datasets:
   'EPRE for Vote 08 : Cooperative Governance and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

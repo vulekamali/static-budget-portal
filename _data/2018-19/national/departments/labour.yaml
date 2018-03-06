@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Labour
-    organisational_unit: department
     slug: labour
     url_path: /2015-16/national/departments/labour
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Labour
-    organisational_unit: department
     slug: labour
     url_path: /2016-17/national/departments/labour
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Labour
-    organisational_unit: department
     slug: labour
     url_path: /2017-18/national/departments/labour
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Labour
-    organisational_unit: department
     slug: labour
     url_path: /2018-19/national/departments/labour
   id: 2018-19
@@ -59,7 +55,6 @@ intro: "## Vote purpose\n\nPlay a significant role in reducing unemployment, pov
   \ balanced with the promotion of decent employment.\n\n\n"
 is_vote_primary: true
 name: Labour
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 917385000.0
@@ -70,10 +65,12 @@ programmes:
 - name: Labour Policy and Industrial Relations
   total_budget: 1197061000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: labour
 sphere:
   name: National
   slug: national
+title: Labour - vulekamali
 treasury_datasets:
   ENE for Vote 28 - Labour:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

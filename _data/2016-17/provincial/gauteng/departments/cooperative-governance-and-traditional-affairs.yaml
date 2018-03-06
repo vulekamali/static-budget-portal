@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Cooperative Governance and Traditional Affairs
-    organisational_unit: department
     slug: cooperative-governance-and-traditional-affairs
     url_path: /2015-16/provincial/gauteng/departments/cooperative-governance-and-traditional-affairs
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Cooperative Governance and Traditional Affairs
-    organisational_unit: department
     slug: cooperative-governance-and-traditional-affairs
     url_path: /2016-17/provincial/gauteng/departments/cooperative-governance-and-traditional-affairs
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Cooperative Governance and Traditional Affairs
-    organisational_unit: department
     slug: cooperative-governance-and-traditional-affairs
     url_path: /2017-18/provincial/gauteng/departments/cooperative-governance-and-traditional-affairs
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Gauteng
-    organisational_unit: government
     slug: gauteng
     url_path: /2018-19/provincial/gauteng
   id: 2018-19
@@ -59,7 +55,6 @@ intro: "## Vision\n\nLead provincial department in the coordination, collaborati
   \ and\r\n\r\n\u2022 Strengthening the functioning of Municipal Public Accounts Committees."
 is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 123862000.0
@@ -70,10 +65,12 @@ programmes:
 - name: Traditional Institutional Management
   total_budget: 10414000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: cooperative-governance-and-traditional-affairs
 sphere:
   name: Provincial
   slug: provincial
+title: Cooperative Governance and Traditional Affairs - vulekamali
 treasury_datasets:
   'EPRE for Vote 07 : Cooperative Governance and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

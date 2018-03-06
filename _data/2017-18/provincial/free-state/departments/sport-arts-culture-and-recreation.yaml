@@ -1,19 +1,18 @@
 contributed_datasets:
 - contributor: Centre for Child Law
   name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /2017-18/datasets/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+  url_path: /datasets/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
 - contributor: Centre for Child Law
   name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
     Primary School case'
-  url_path: /2017-18/datasets/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
+  url_path: /datasets/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-education-2016-17
+  url_path: /datasets/budget-brief-eastern-cape-department-of-education-2016-17
 financial_years:
 - closest_match:
     is_exact_match: true
     name: Sport, Arts, Culture and Recreation
-    organisational_unit: department
     slug: sport-arts-culture-and-recreation
     url_path: /2015-16/provincial/free-state/departments/sport-arts-culture-and-recreation
   id: 2015-16
@@ -21,7 +20,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Sport, Arts, Culture and Recreation
-    organisational_unit: department
     slug: sport-arts-culture-and-recreation
     url_path: /2016-17/provincial/free-state/departments/sport-arts-culture-and-recreation
   id: 2016-17
@@ -29,7 +27,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Sport, Arts, Culture and Recreation
-    organisational_unit: department
     slug: sport-arts-culture-and-recreation
     url_path: /2017-18/provincial/free-state/departments/sport-arts-culture-and-recreation
   id: 2017-18
@@ -37,7 +34,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Free State
-    organisational_unit: government
     slug: free-state
     url_path: /2018-19/provincial/free-state
   id: 2018-19
@@ -65,7 +61,6 @@ intro: "## Vision\n\nChampioning social transformation.\r\n\r\n\n\n## Mission\n\
   \ Recreation\r\n"
 is_vote_primary: true
 name: Sport, Arts, Culture and Recreation
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 88441000.0
@@ -76,10 +71,12 @@ programmes:
 - name: Sport and Recreation
   total_budget: 199727000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: sport-arts-culture-and-recreation
 sphere:
   name: Provincial
   slug: provincial
+title: Sport, Arts, Culture and Recreation - vulekamali
 treasury_datasets:
   'EPRE for Vote 12 : Sport, Arts, Culture and Recreation':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

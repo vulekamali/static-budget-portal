@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Police
-    organisational_unit: department
     slug: police
     url_path: /2015-16/national/departments/police
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Police
-    organisational_unit: department
     slug: police
     url_path: /2016-17/national/departments/police
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Police
-    organisational_unit: department
     slug: police
     url_path: /2017-18/national/departments/police
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Police
-    organisational_unit: department
     slug: police
     url_path: /2018-19/national/departments/police
   id: 2018-19
@@ -55,7 +51,6 @@ intro: '## Vote purpose
   '
 is_vote_primary: true
 name: Police
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 19403113000.0
@@ -68,10 +63,12 @@ programmes:
 - name: Protection and Security Services
   total_budget: 2942375000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: police
 sphere:
   name: National
   slug: national
+title: Police - vulekamali
 treasury_datasets:
   ENE for Vote 23 - Police:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

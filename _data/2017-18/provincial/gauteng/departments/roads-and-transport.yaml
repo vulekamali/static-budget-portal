@@ -1,21 +1,20 @@
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+  url_path: /datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+  url_path: /datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
+  url_path: /datasets/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
+  url_path: /datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 financial_years:
 - closest_match:
     is_exact_match: true
     name: Roads and Transport
-    organisational_unit: department
     slug: roads-and-transport
     url_path: /2015-16/provincial/gauteng/departments/roads-and-transport
   id: 2015-16
@@ -23,7 +22,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Roads and Transport
-    organisational_unit: department
     slug: roads-and-transport
     url_path: /2016-17/provincial/gauteng/departments/roads-and-transport
   id: 2016-17
@@ -31,7 +29,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Roads and Transport
-    organisational_unit: department
     slug: roads-and-transport
     url_path: /2017-18/provincial/gauteng/departments/roads-and-transport
   id: 2017-18
@@ -39,7 +36,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Gauteng
-    organisational_unit: government
     slug: gauteng
     url_path: /2018-19/provincial/gauteng
   id: 2018-19
@@ -70,7 +66,6 @@ intro: "## Vision\r\n\r\nA modern integrated,efficient and sustainable transport
   \n\r\n* To issue valid vehicle licenses"
 is_vote_primary: true
 name: Roads and Transport
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 321364000.0
@@ -83,10 +78,12 @@ programmes:
 - name: Gautrain
   total_budget: 1833694000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: roads-and-transport
 sphere:
   name: Provincial
   slug: provincial
+title: Roads and Transport - vulekamali
 treasury_datasets: {}
 vote_number: 9
 vote_primary:

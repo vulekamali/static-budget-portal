@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works and Infrastructure
-    organisational_unit: department
     slug: public-works-and-infrastructure
     url_path: /2015-16/provincial/free-state/departments/public-works-and-infrastructure
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works and Infrastructure
-    organisational_unit: department
     slug: public-works-and-infrastructure
     url_path: /2016-17/provincial/free-state/departments/public-works-and-infrastructure
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Public Works and Infrastructure
-    organisational_unit: department
     slug: public-works-and-infrastructure
     url_path: /2017-18/provincial/free-state/departments/public-works-and-infrastructure
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Free State
-    organisational_unit: government
     slug: free-state
     url_path: /2018-19/provincial/free-state
   id: 2018-19
@@ -46,7 +42,6 @@ intro: "## Vision\n\nA prosperous Free State through facilitation of sustainable
   \ of Expanded Public Works\r\nProgrammes."
 is_vote_primary: true
 name: Public Works and Infrastructure
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 119658000.0
@@ -55,10 +50,12 @@ programmes:
 - name: Expanded Public Works Programme
   total_budget: 173179000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: public-works-and-infrastructure
 sphere:
   name: Provincial
   slug: provincial
+title: Public Works and Infrastructure - vulekamali
 treasury_datasets:
   'EPRE for Vote 09 : Public Works and Infrastructure':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

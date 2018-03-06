@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Office of the Premier
-    organisational_unit: department
     slug: office-of-the-premier
     url_path: /2015-16/provincial/northern-cape/departments/office-of-the-premier
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Office of the Premier
-    organisational_unit: department
     slug: office-of-the-premier
     url_path: /2016-17/provincial/northern-cape/departments/office-of-the-premier
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Office of the Premier
-    organisational_unit: department
     slug: office-of-the-premier
     url_path: /2017-18/provincial/northern-cape/departments/office-of-the-premier
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Northern Cape
-    organisational_unit: government
     slug: northern-cape
     url_path: /2018-19/provincial/northern-cape
   id: 2018-19
@@ -45,7 +41,6 @@ intro: "## Vision\n\nA prosperous province with a quality of life for all.\r\n\r
   \ throughout the provincial government system."
 is_vote_primary: true
 name: Office of the Premier
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 105568000.0
@@ -54,10 +49,12 @@ programmes:
 - name: Policy and Governance
   total_budget: 43020000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: office-of-the-premier
 sphere:
   name: Provincial
   slug: provincial
+title: Office of the Premier - vulekamali
 treasury_datasets:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

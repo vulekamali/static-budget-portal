@@ -3,7 +3,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2015-16/provincial/gauteng/departments/health
   id: 2015-16
@@ -11,7 +10,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2016-17/provincial/gauteng/departments/health
   id: 2016-17
@@ -19,7 +17,6 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Health
-    organisational_unit: department
     slug: health
     url_path: /2017-18/provincial/gauteng/departments/health
   id: 2017-18
@@ -27,7 +24,6 @@ financial_years:
 - closest_match:
     is_exact_match: false
     name: Gauteng
-    organisational_unit: government
     slug: gauteng
     url_path: /2018-19/provincial/gauteng
   id: 2018-19
@@ -57,7 +53,6 @@ intro: "## Vision\n\nDaily we provide high-quality, efficient and accessible hea
   \ pathology services and clinical-medico legal services."
 is_vote_primary: true
 name: Health
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 829895000.0
@@ -76,10 +71,12 @@ programmes:
 - name: Health Facilities Management
   total_budget: 2017930000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: health
 sphere:
   name: Provincial
   slug: provincial
+title: Health - vulekamali
 treasury_datasets:
   'EPRE for Vote 04 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
