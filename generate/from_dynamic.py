@@ -78,7 +78,9 @@ def write_financial_year(year_slug, static_path):
             ("---\n"
              "layout: homepage\n"
              "financial_year: %s\n"
+             "slug: %s\n"
              "---") % (
+                 year_slug,
                  year_slug,
              ))
 
