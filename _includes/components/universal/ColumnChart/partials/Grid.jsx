@@ -1,8 +1,8 @@
 import { h } from 'preact';
 
 
-export default function Grid({ styling, totalGroupSpace, svgHeight }) {
-  const { padding, valueSpace, buffer } = styling;
+export default function Grid({ styling, totalGroupSpace }) {
+  const { padding, valueSpace, buffer, svgHeight } = styling;
 
   return (
     <g className="Graph-grid">
@@ -21,7 +21,7 @@ export default function Grid({ styling, totalGroupSpace, svgHeight }) {
         x1={padding[3]}
         y1={padding[0]}
         x2={padding[3]}
-        y2={padding[0] + totalGroupSpace}
+        y2={padding[0] + svgHeight}
         stroke-width="2"
         stroke="#d2d2d2"
         fill="none"
@@ -30,9 +30,9 @@ export default function Grid({ styling, totalGroupSpace, svgHeight }) {
       <path
         className="Graph-outline"
         d={`
-          M${padding[3]} ${padding[0] + totalGroupSpace} 
-          Q ${padding[3]} ${padding[0] + buffer + totalGroupSpace}, 
-          ${padding[3] + buffer} ${padding[0] + buffer + totalGroupSpace}
+          M${padding[3]} ${padding[0] + svgHeight} 
+          Q ${padding[3]} ${padding[0] + buffer + svgHeight}, 
+          ${padding[3] + buffer} ${padding[0] + buffer + svgHeight}
         `}
         stroke-width="2"
         stroke="#d2d2d2"
@@ -42,9 +42,9 @@ export default function Grid({ styling, totalGroupSpace, svgHeight }) {
       <line
         className="Graph-outline"
         x1={padding[3] + buffer}
-        y1={padding[0] + totalGroupSpace + buffer}
+        y1={padding[0] + svgHeight + buffer}
         x2={padding[3] + valueSpace}
-        y2={padding[0] + totalGroupSpace + buffer}
+        y2={padding[0] + svgHeight + buffer}
         stroke-width="2"
         stroke="#d2d2d2"
         fill="none"

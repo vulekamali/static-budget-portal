@@ -7,7 +7,6 @@ layout: page-shell
 {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.data_key] %}
 {% endif %}
 
-<div>{{ page_data | jsonify }}</div>
 
 <div class="Page-content">
   <div class="Page-contentWrap">
@@ -27,6 +26,8 @@ layout: page-shell
 
       <div class="Page-section">
         <div class="Card">
+          <h3 class="Card-title">Funded programmes for {{ page.financial_year }}</h3>
+          <p>A department's programmes are the activities that it performs during the financial year. Different programs have different levels of funding, depending on their requirements and available finances.</p>
           {% 
             include components/department-page/ProgrammesChart/index.html 
             values=page_data.programmes
@@ -34,14 +35,19 @@ layout: page-shell
         </div>
       </div>
 
-      <div class="Page-section">
-        <div class="Card">
-          {% 
-            include components/department-page/ExpenditureChart/index.html 
-            values=page_data.expenditure_over_time
-          %}
+      {% if page_data.expenditure_over_time %}
+        <div class="Page-section">
+          <div class="Card">
+            <h3 class="Card-title">Expenditure changes over time</h3>
+            <p>Budgeted expenditure for a department can increase or decrease from year to year. The official budget shows the nominal value of spendiing - the real value is calculated by adjusting for inflation, since most expenditure items are subject to inflation.</p>
+            <p>By stripping out the inflation (GDP or CPI inflation) it is possible to show if a departmental budget is increasing or decreasing in real terms.</p>
+            {% 
+              include components/department-page/ExpenditureChart/index.html 
+              values=page_data.expenditure_over_time
+            %}
+          </div>
         </div>
-      </div>
+      {% endif %}
 
     </main>
     <aside class="Page-sidebar">

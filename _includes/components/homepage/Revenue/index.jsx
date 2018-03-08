@@ -1,36 +1,23 @@
-import { h, render } from 'preact';
-import RevenueMarkup from './partials/RevenueMarkup.jsx';
-import decodeHtmlEntities from './../../../utilities/js/helpers/decodeHtmlEntities.js';
+import { h } from 'preact';
+import ValueBlocks from './../ValueBlocks/index.jsx';
 
 
-function Revenue() {
-  const componentsList = document.getElementsByClassName('Revenue-container');
-
-  if (componentsList.length > 0) {
-    for (let i = 0; i < componentsList.length; i++) {
-      const component = componentsList[i];
-      const rawItems = JSON.parse(decodeHtmlEntities(component.getAttribute('data-info'))).data;
-      const link = component.getAttribute('data-link');
-      const year = component.getAttribute('data-year');
-      const shortcuts = component.getAttribute('data-shortcuts') === 'true';
-
-      const items = rawItems.reduce(
-        (results, val) => {
-          return {
-            ...results,
-            [val.category]: val.amount,
-          };
+export default function Revenue({ values }) {
+  const items = values.data.reduce(
+    (result, val) => {
+      return {
+        ...result,
+        [val.category]: {
+          value: val.amount,
         },
-        {},
-      );
+      };
+    },
+    {},
+  );
 
-      render(
-        <RevenueMarkup {...{ items, link, year, shortcuts }} />,
-        component,
-      );
-    }
-  }
+  return (
+    <ValueBlocks
+      {...{ items }}
+    />
+  );
 }
-
-
-export default Revenue();

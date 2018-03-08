@@ -3,7 +3,7 @@ import trimValues from './../../../../utilities/js/helpers/trimValues.js';
 
 
 export default function TooltipItem({ styling, xTriggerPosition, xPosition, yPosition, amount, totalGroupSpace }) {
-  const { barWidth, lineGutter, padding, popupWidth, popupHeight, popupFontSize } = styling;
+  const { barWidth, lineGutter, padding, popupWidth, popupHeight, buffer, svgHeight, popupFontSize } = styling;
 
   // const { popUpOffset } = styling;
 
@@ -34,7 +34,7 @@ export default function TooltipItem({ styling, xTriggerPosition, xPosition, yPos
         x1={xTriggerPosition}
         y={0}
         width={barWidth + lineGutter}
-        height={totalGroupSpace + padding[0]}
+        height={svgHeight + padding[0] + buffer}
         opacity="0"
       />
 

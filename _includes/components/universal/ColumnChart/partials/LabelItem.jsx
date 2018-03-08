@@ -8,6 +8,7 @@ export default function LabelItem({ totalGroupSpace, groupSpaceArray, rank, titl
     buffer,
     valueSpace,
     fontSize,
+    svgHeight
   } = styling;
 
   const groupSpace = groupSpaceArray[rank];
@@ -42,7 +43,7 @@ export default function LabelItem({ totalGroupSpace, groupSpaceArray, rank, titl
 
       <text
         className="Graph-label"
-        y={totalGroupSpace + padding[0] + (buffer * 2)}
+        y={svgHeight + padding[0] + (buffer * 2)}
         x={padding[3] + previousSpace + buffer + (generateToScale(groupSpace) / 2)}
         font-size={fontSize}
         text-anchor="middle"

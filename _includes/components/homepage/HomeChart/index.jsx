@@ -1,6 +1,6 @@
 import { h } from 'preact';
 import ResponsiveChart from './../../universal/ResponsiveChart/index.jsx';
-import ValueBlocks from './../../universal/ValueBlocks/index.jsx';
+import ValueBlocks from './../../homepage/ValueBlocks/index.jsx';
 
 
 export default function HomeChart({ values, year }) {
@@ -46,11 +46,14 @@ export default function HomeChart({ values, year }) {
     {},
   );
 
+  const charts = { 'National Expenditure': items }
+
   return (
     <ResponsiveChart
-      max={600}
-      offset={20}
-      {...{ items }}
+      max={650}
+      offset={100}
+      {...{ charts }}
+      downloadable
     />
   );
 }

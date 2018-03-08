@@ -39,10 +39,11 @@ export default function ProgrammesChart({ values }) {
   return (
     <div className="ProgrammeChart">
       <ResponsiveChart
-        max={600}
-        offset={20}
+        max={690}
+        offset={120}
         {...{ charts }}
         downloadable
+        name="programmes-chart"
       />
     </div>
   );

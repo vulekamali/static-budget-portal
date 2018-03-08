@@ -815,6 +815,9 @@ li {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   padding: 20px 40px; }
+  .Card--dark {
+    background-color: #e6e6e6;
+    border: 1px solid #d2d2d2; }
 
 .Card-title {
   font-size: 18px;
@@ -2483,36 +2486,36 @@ li {
     .Links-buttonList {
       padding: 0; } }
 
-.Revenue {
+.ValueBlocks {
   padding-top: 30px; }
 
-.Revenue-heading {
+.ValueBlocks-heading {
   font-size: 24px;
   font-weight: bold;
   font-weight: 900;
   padding-bottom: 15px;
   padding-left: 20px; }
 
-.Revenue-box::after {
+.ValueBlocks-box::after {
   clear: both;
   content: "";
   display: block; }
 
-.Revenue-container {
+.ValueBlocks-container {
   border-radius: 20px;
   background-color: #e6e6e6;
   border: solid 1px #d2d2d2;
   padding: 5px; }
 
-.Revenue-itemWrap {
+.ValueBlocks-itemWrap {
   float: left;
   padding: 5px;
   width: 100%; }
   @media screen and (min-width: 750px) {
-    .Revenue-itemWrap {
+    .ValueBlocks-itemWrap {
       width: 50%; } }
 
-.Revenue-item {
+.ValueBlocks-item {
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
@@ -2534,77 +2537,20 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   text-decoration: none; }
-  .Revenue-item--link:hover {
+  .ValueBlocks-item--link:hover {
     background-color: #d9d9d9; }
-  .Revenue-itemWrap:nth-of-type(4n+1) .Revenue-item {
+  .ValueBlocks-itemWrap:nth-of-type(4n+1) .ValueBlocks-item {
     color: #ad3c64; }
-  .Revenue-itemWrap:nth-of-type(4n+2) .Revenue-item {
+  .ValueBlocks-itemWrap:nth-of-type(4n+2) .ValueBlocks-item {
     color: #5793f3; }
-  .Revenue-itemWrap:nth-of-type(4n+3) .Revenue-item {
+  .ValueBlocks-itemWrap:nth-of-type(4n+3) .ValueBlocks-item {
     color: #7bb344; }
-  .Revenue-itemWrap:nth-of-type(4n+4) .Revenue-item {
+  .ValueBlocks-itemWrap:nth-of-type(4n+4) .ValueBlocks-item {
     color: #ee9f31; }
 
-.Revenue-title {
+.ValueBlocks-title {
   font-weight: bold;
   font-weight: 900; }
-
-.Revenue-linkWrap {
-  display: block;
-  float: left;
-  padding: 5px;
-  width: 100%; }
-
-.Revenue-link {
-  display: inline-block;
-  color: #3f3f3f;
-  padding: 3px 6px 6px;
-  border-radius: 5px;
-  font-size: 14px; }
-  .Revenue-link:hover {
-    background-color: silver; }
-
-.Revenue-icon {
-  border: 2px solid #3f3f3f;
-  border-radius: 50%;
-  display: inline-block;
-  fill: #3f3f3f;
-  padding: 2px;
-  margin-right: 5px;
-  line-height: 0; }
-
-.Expenditure {
-  padding-top: 40px; }
-
-.Expenditure-wrap {
-  padding: 5px;
-  border-radius: 20px;
-  background-color: #e6e6e6;
-  border: solid 1px #d2d2d2; }
-  .Expenditure-wrap--graph {
-    padding-top: 50px; }
-
-.Expenditure-title {
-  font-size: 24px;
-  font-weight: bold;
-  font-weight: 900;
-  padding: 0 20px 15px; }
-
-.Expenditure-linkWrap {
-  display: block;
-  padding: 5px;
-  width: 100%; }
-  .Expenditure-linkWrap--extra {
-    padding-top: 15px; }
-
-.Expenditure-link {
-  display: inline-block;
-  color: #3f3f3f;
-  padding: 3px 6px 6px;
-  border-radius: 5px;
-  font-size: 14px; }
-  .Expenditure-link:hover {
-    background-color: silver; }
 
 .DeptSearch-keywords {
   border: solid 1px #9b9b9b;

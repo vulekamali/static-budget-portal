@@ -9,6 +9,7 @@ export default function LineGroupItem({ totalGroupSpace, groupSpaceArray, rank, 
     lineGutter,
     valueSpace,
     maxValue,
+    svgHeight,
   } = styling;
 
   const groupSpace = groupSpaceArray[rank];
@@ -48,16 +49,16 @@ export default function LineGroupItem({ totalGroupSpace, groupSpaceArray, rank, 
 
       {
         lines.map((amount, index) => {
-          const relativeAmount = (amount / maxValue) * totalGroupSpace;
+          const relativeAmount = (amount / maxValue) * svgHeight;
           const displayAmount = relativeAmount < barWidth + 1 ? barWidth + 1 : relativeAmount;
           return (
             <line
               stroke-linecap="round"
               stroke-width={barWidth}
               x1={startPoint + centeringSpace + (index * (barWidth + lineGutter))}
-              y1={(padding[0] + totalGroupSpace) - (barWidth / 2)}
+              y1={(padding[0] + svgHeight) - (barWidth / 2)}
               x2={startPoint + centeringSpace + (index * (barWidth + lineGutter))}
-              y2={(padding[0] + totalGroupSpace + barWidth) - (barWidth / 2) - displayAmount}
+              y2={(padding[0] + svgHeight + barWidth) - (barWidth / 2) - displayAmount}
               className="Graph-line"
               stroke="#79b43c"
             />

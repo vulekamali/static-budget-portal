@@ -193,8 +193,6 @@ export default class ResponsiveChart extends Component {
       );
     };
 
-    console.log(this.sources, this.sources.length)
-
     return (
       <div className="ResponsiveChart">
         {this.props.downloadable ? modal : null}

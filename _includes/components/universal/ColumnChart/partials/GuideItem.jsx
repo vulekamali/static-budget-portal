@@ -2,8 +2,8 @@ import { h } from 'preact';
 
 
 export default function GuideItem({ styling, totalGroupSpace, rank }) {
-  const { valueSpace, buffer, fontSize, padding, labelBreakpoints } = styling;
-  const iteration = totalGroupSpace / (labelBreakpoints - 1);
+  const { valueSpace, buffer, fontSize, padding, labelBreakpoints, svgHeight } = styling;
+  const iteration = svgHeight / (labelBreakpoints - 1);
 
   // const debugIteration = totalGroupSpace / labelBreakpoints;
 

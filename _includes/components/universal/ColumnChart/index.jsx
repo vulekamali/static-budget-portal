@@ -29,6 +29,7 @@ export default function ColumnChart({ items, width, guides, scale = 1, downloada
     lineGutter: 8,
     barWidth: 12,
     groupMargin: 40,
+    svgHeight: 300,
   };
 
   if (downloadable) {
@@ -39,10 +40,10 @@ export default function ColumnChart({ items, width, guides, scale = 1, downloada
     };
   }
 
-  const { valueSpace, padding, showGuides } = styling;
+  const { valueSpace, padding, showGuides, svgHeight, buffer } = styling;
   const groupSpaceArray = buildGroupSpaceArray(items, styling);
   const totalGroupSpace = groupSpaceArray.reduce((result, val) => result + val, 0);
-  const height = padding[0] + 350 + padding[2];
+  const height = padding[0] + svgHeight + padding[2] + (buffer * 2);
   const newWidth = padding[3] + valueSpace + padding[1];
 
   const background = (
@@ -73,7 +74,7 @@ export default function ColumnChart({ items, width, guides, scale = 1, downloada
       <Guides {...{ styling, totalGroupSpace }} />
       <LineGroups {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
       <Tooltips {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
-      <Labels {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
+      <Labels {...{ totalGroupSpace, groupSpaceArray, items, styling }} /> */}
     </svg>
   );
 }

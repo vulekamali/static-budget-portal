@@ -14,10 +14,10 @@ export default function RevenueMarkup({ items }) {
           const Tag = link ? 'a' : 'div';
 
           return (
-            <div className="Revenue-itemWrap">
-              <Tag href={link} className={`Revenue-item${link ? ' Revenue-item--link' : ''}`}>
-                <div className="Revenue-title">{key}</div>
-                { value ? <div className="Revenue-value">R{trimValues(value)}</div> : null }
+            <div className="ValueBlocks-itemWrap">
+              <Tag href={link} className={`ValueBlocks-item${link ? ' ValueBlocks-item--link' : ''}`}>
+                <div className="ValueBlocks-title">{key}</div>
+                { value ? <div className="ValueBlocks-value">R{trimValues(value)}</div> : null }
               </Tag>
             </div>
           );

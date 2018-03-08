@@ -3,9 +3,9 @@ import trimValues from './../../../../utilities/js/helpers/trimValues.js';
 
 
 export default function BreakpointItem({ styling, totalGroupSpace, rank, fontSize }) {
-  const { valueSpace, buffer, padding, labelBreakpoints, maxValue } = styling;
+  const { valueSpace, buffer, padding, labelBreakpoints, maxValue, svgHeight } = styling;
   const iterationValue = maxValue / (labelBreakpoints - 1);
-  const iterationPosition = totalGroupSpace / (labelBreakpoints - 1);
+  const iterationPosition = svgHeight / (labelBreakpoints - 1);
 
   return (
 
