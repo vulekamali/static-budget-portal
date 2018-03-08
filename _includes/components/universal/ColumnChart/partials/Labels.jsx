@@ -4,15 +4,15 @@ import LabelItem from './LabelItem.jsx';
 
 export default function Labels({ totalGroupSpace, groupSpaceArray, items, styling }) {
   const titles = Object.keys(items);
-  // const { padding, buffer, valueSpace } = styling;
+  const { padding, buffer, valueSpace, maxValue } = styling;
 
   return (
     <g className="Graph-horisontalLabelList">
       {/* <rect
-        x={padding[3] + buffer}
-        y={padding[0] + totalGroupSpace + (buffer * 2)}
-        width={valueSpace - buffer}
-        height={padding[2] - (buffer * 2)}
+        y={285}
+        x={padding[3]}
+        width={valueSpace}
+        height={padding[2]}
         fill="red"
         opacity="0.5"
       /> */}

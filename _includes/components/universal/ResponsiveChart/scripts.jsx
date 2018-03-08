@@ -8,13 +8,15 @@ function scripts() {
 
   for (let i = 0; i < componentList.length; i++) {
     const component = componentList[i];
-    const items = JSON.parse(decodeHtmlEntities(component.getAttribute('data-values')));
+    const charts = JSON.parse(decodeHtmlEntities(component.getAttribute('data-charts')));
     const downloadable = component.getAttribute('data-downloadable') !== null;
+    const columns = component.getAttribute('data-columns');
     const max = component.getAttribute('data-max');
     const offset = component.getAttribute('data-offset');
+    const name = component.getAttribute('data-name');
 
     render(
-      <ResponsiveChart {...{ items, downloadable, max, offset }} />,
+      <ResponsiveChart {...{ name, charts, downloadable, max, offset, columns }} />,
       component,
     );
   }

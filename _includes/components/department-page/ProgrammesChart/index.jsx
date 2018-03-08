@@ -2,7 +2,7 @@ import { h } from 'preact';
 import ResponsiveChart from './../../universal/ResponsiveChart/index.jsx';
 
 
-export default function HomeChart({ values }) {
+export default function ProgrammesChart({ values }) {
   const hasNull = values.reduce(
     (result, val) => {
       if (!val.total_budget) {
@@ -16,7 +16,7 @@ export default function HomeChart({ values }) {
 
   if (hasNull) {
     return (
-      <div className="DeptChart">
+      <div className="ProgrammeChart">
         <ul>
           {values.map(val => <li>{val.name}</li>)}
         </ul>
@@ -34,12 +34,15 @@ export default function HomeChart({ values }) {
     {},
   );
 
+  const charts = { 'Programmes List': items };
+
   return (
-    <div className="DeptChart">
+    <div className="ProgrammeChart">
       <ResponsiveChart
         max={600}
         offset={20}
-        {...{ items }}
+        {...{ charts }}
+        downloadable
       />
     </div>
   );

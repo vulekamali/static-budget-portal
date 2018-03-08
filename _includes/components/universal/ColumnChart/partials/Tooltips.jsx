@@ -10,9 +10,9 @@ export default function Tooltips({ totalGroupSpace, groupSpaceArray, items, styl
     <g className="LineGroupList">
       {/* <rect
         x={padding[3] + buffer}
-        y={padding[0]}
+        y="0"
         width={valueSpace - buffer}
-        height={totalGroupSpace}
+        height={totalGroupSpace + padding[0]}
         fill="red"
         opacity="0.5"
       /> */}
@@ -24,7 +24,7 @@ export default function Tooltips({ totalGroupSpace, groupSpaceArray, items, styl
               rank={index}
               lines={items[key]}
               title={key}
-              {...{ totalGroupSpace, groupSpaceArray, styling, items }}
+              {...{ totalGroupSpace, groupSpaceArray, styling }}
             />
           );
         })

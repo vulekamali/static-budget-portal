@@ -7,6 +7,8 @@ layout: page-shell
 {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.data_key] %}
 {% endif %}
 
+<div>{{ page_data | jsonify }}</div>
+
 <div class="Page-content">
   <div class="Page-contentWrap">
     {% if page_data.government.slug == 'south-africa' %}
@@ -24,13 +26,21 @@ layout: page-shell
       <div class="Card js-tooltips" data-year="{{ page.financial_year }}">{{ page_data.intro  | markdownify }}</div>
 
       <div class="Page-section">
-          {%
-            include components/universal/Graph/index.html
-            graph=page_data.programmes
-            year=page.financial_year
-            type="bar"
-            treasury=page_data.treasury_datasets
-            %}
+        <div class="Card">
+          {% 
+            include components/department-page/ProgrammesChart/index.html 
+            values=page_data.programmes
+          %}
+        </div>
+      </div>
+
+      <div class="Page-section">
+        <div class="Card">
+          {% 
+            include components/department-page/ExpenditureChart/index.html 
+            values=page_data.expenditure_over_time
+          %}
+        </div>
       </div>
 
     </main>

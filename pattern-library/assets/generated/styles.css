@@ -253,6 +253,9 @@ li {
 .u-whiteSpace--noWrap {
   white-space: nowrap !important; }
 
+.u-textAlign--center {
+  text-align: center !important; }
+
 .Modal {
   z-index: 10000; }
 
@@ -1055,7 +1058,6 @@ li {
 
 .Radios-input {
   position: absolute;
-  top: -9999px;
   left: -9999px; }
 
 .Radios-label {

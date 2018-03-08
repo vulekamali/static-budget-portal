@@ -31,7 +31,6 @@ export default function Guides({ styling, totalGroupSpace }) {
               <GuideItem rank={index} {...{ styling, totalGroupSpace }} />
             );
           }
-
           return null;
         })
       }

@@ -2,34 +2,23 @@ import { h } from 'preact';
 import trimValues from './../../../../utilities/js/helpers/trimValues.js';
 
 
-export default function HorisontalBreakpoint({ styling, totalGroupSpace, rank }) {
-  const { maxValue, fontSize, valueSpace, buffer, padding, labelBreakpoints } = styling;
-  const debugIteration = (valueSpace - buffer) / labelBreakpoints;
+export default function BreakpointItem({ styling, totalGroupSpace, rank, fontSize }) {
+  const { valueSpace, buffer, padding, labelBreakpoints, maxValue } = styling;
   const iterationValue = maxValue / (labelBreakpoints - 1);
-  const iterationPosition = (valueSpace - buffer) / (labelBreakpoints - 1);
+  const iterationPosition = totalGroupSpace / (labelBreakpoints - 1);
 
   return (
-    <g>
-      {/* <rect
-        x={padding[3] + buffer + (rank * debugIteration)}
-        y={padding[0] + totalGroupSpace + (buffer * 2)}
-        height={padding[2] - buffer}
-        width={debugIteration}
-        fill="none"
-        stroke="red"
-        opacity="0.5"
-      /> */}
 
-      <text
-        className="Graph-label"
-        x={padding[3] + buffer + (rank * iterationPosition)}
-        y={padding[0] + totalGroupSpace + (buffer * 2) + fontSize}
-        font-size={fontSize}
-        font-family="sans-serif"
-        font-weight="bold"
-      >
-        R{trimValues(iterationValue * rank)}
-      </text>
-    </g>
+    <text
+      x={padding[3] - buffer}
+      y={padding[0] + 7 + (iterationPosition * rank)}
+      fill="#3f3f3f"
+      text-anchor="end"
+      font-size={fontSize}
+      font-weight="bold"
+      font-family="sans-serif"
+    >
+      R{trimValues(iterationValue * (labelBreakpoints - (rank + 1)), true)}
+    </text>
   );
 }

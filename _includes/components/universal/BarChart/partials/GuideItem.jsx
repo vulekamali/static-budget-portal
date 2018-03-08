@@ -25,6 +25,7 @@ export default function HorisontalGuide({ styling, totalGroupSpace, rank }) {
         x2={padding[3] + (iteration * rank) + iteration}
         y2={padding[0] + totalGroupSpace + buffer}
         className="Graph-guide"
+        stroke="#e6e6e6"
       />
 
     </g>

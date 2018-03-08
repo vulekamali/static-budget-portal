@@ -1,9 +1,9 @@
 import { h } from 'preact';
 
 
-export default function HorisontalGuide({ styling, totalGroupSpace, rank }) {
+export default function GuideItem({ styling, totalGroupSpace, rank }) {
   const { valueSpace, buffer, fontSize, padding, labelBreakpoints } = styling;
-  const iteration = valueSpace / (labelBreakpoints - 1);
+  const iteration = totalGroupSpace / (labelBreakpoints - 1);
 
   // const debugIteration = totalGroupSpace / labelBreakpoints;
 
@@ -20,11 +20,12 @@ export default function HorisontalGuide({ styling, totalGroupSpace, rank }) {
       /> */} 
 
       <line
-        x1={padding[3] + (iteration * rank) + iteration}
-        y1={padding[0]}
-        x2={padding[3] + (iteration * rank) + iteration}
-        y2={padding[0] + totalGroupSpace + buffer}
+        x1={padding[3]}
+        y1={padding[0] + (iteration * rank)}
+        x2={padding[3] + valueSpace}
+        y2={padding[0] + (iteration * rank)}
         className="Graph-guide"
+        stroke="#e6e6e6"
       />
 
     </g>

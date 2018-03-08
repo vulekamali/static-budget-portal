@@ -20,7 +20,7 @@ export default function ChartDownload(props) {
       <span className="Graph-downloadTitle">Save or share</span>
       <div className="Graph-downloadSelect">
         <PseudoSelect
-          name="download-image"
+          name={`${name}-download-image`}
           open={open}
           changeAction={value => changeAction(value)}
           {...{ items, selected }}

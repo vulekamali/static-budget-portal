@@ -27,15 +27,14 @@ export default function LabelItem({ totalGroupSpace, groupSpaceArray, rank, titl
     0,
   );
 
-
   return (
     <g className="Graph-horisontalLabel">
 
       {/* <rect
-        x={padding[3] + buffer + previousSpace}
-        y={padding[0] + totalGroupSpace + (buffer * 2)}
+        y={285}
+        x={padding[3] + previousSpace + buffer}
         width={generateToScale(groupSpace)}
-        height={padding[2] - (buffer * 2)}
+        height={padding[2]}
         fill="none"
         stroke="red"
         opacity="1"
@@ -43,11 +42,14 @@ export default function LabelItem({ totalGroupSpace, groupSpaceArray, rank, titl
 
       <text
         className="Graph-label"
-        x={padding[3] + buffer + previousSpace + generateToScale(groupSpace / 2)}
-        y={padding[0] + totalGroupSpace + (buffer * 2) + fontSize}
+        y={totalGroupSpace + padding[0] + (buffer * 2)}
+        x={padding[3] + previousSpace + buffer + (generateToScale(groupSpace) / 2)}
         font-size={fontSize}
+        text-anchor="middle"
         font-family="sans-serif"
         font-weight="bold"
+        fill="#3f3f3f"
+        font-size="14"
       >
         {title}
       </text>

@@ -17,8 +17,8 @@ export default function BarChart({ items, width, hover, guides, scale = 1, downl
     popupWidth: 90,
     popUpOffset: 6,
     buffer: 20,
-    valueSpace: width - 110,
     padding: [0, 110, 60, 0],
+    valueSpace: width - (110),
     lineGutter: 23,
     popupHeight: 30,
     popupCentre: 5,
@@ -45,6 +45,7 @@ export default function BarChart({ items, width, hover, guides, scale = 1, downl
     styling = {
       ...styling,
       padding: [30, 140, 90, 30],
+      valueSpace: width - (140 + 30),
     };
   }
 

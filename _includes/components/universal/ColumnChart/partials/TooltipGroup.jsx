@@ -1,27 +1,29 @@
 import { h } from 'preact';
 import TooltipItem from './TooltipItem.jsx';
-import breakIntoWrap from './breakIntoWrap.js';
 
-export default function TooltipGroup({ totalGroupSpace, items, groupSpaceArray, rank, lines, title, styling }) {
+
+export default function TooltipGroup({ totalGroupSpace, groupSpaceArray, rank, lines, title, styling }) {
   const {
     barWidth,
     padding,
     buffer,
-    valueSpace,
     lineGutter,
+    valueSpace,
     maxValue,
-    groupMargin,
-    charLineHeight,
-    titleSpace,
-    charWrap,
+    popUpOffset,
+    popupHeight,
   } = styling;
 
   const groupSpace = groupSpaceArray[rank];
 
+  const generateToScale = (value) => {
+    return ((valueSpace - buffer) / totalGroupSpace) * value;
+  };
+
   const previousSpace = groupSpaceArray.reduce(
     (result, val, index) => {
       if (index < rank) {
-        return result + val;
+        return result + generateToScale(val);
       }
 
       return result;
@@ -29,27 +31,19 @@ export default function TooltipGroup({ totalGroupSpace, items, groupSpaceArray, 
     0,
   );
 
-  const startPoint = padding[0] + previousSpace;
+  const usedSpace = lines.length * (barWidth + lineGutter);
+  const startPoint = padding[3] + buffer + previousSpace;
+  const centeringSpace = ((generateToScale(groupSpace) + barWidth) - usedSpace) / 2;
 
-  const breakIntoArray = (string) => {
-    let result = [];
-
-    for (let i = 0; i < string.length; i += charWrap) {
-      result.push(string.substr(i, charWrap));
-    }
-
-    return result;
-  };
-
-  const titles = Object.keys(items);
 
   return (
     <g className="Graph-group">
+
       {/* <rect
-        x={padding[3] + buffer}
-        y={padding[0] + previousSpace}
-        width={valueSpace - buffer}
-        height={groupSpace}
+        x={padding[3] + buffer + previousSpace}
+        y={0}
+        width={generateToScale(groupSpace)}
+        height={totalGroupSpace + padding[0]}
         fill="none"
         stroke="red"
         opacity="1"
@@ -57,22 +51,18 @@ export default function TooltipGroup({ totalGroupSpace, items, groupSpaceArray, 
 
       {
         lines.map((amount, index) => {
-          const rawCharArray = breakIntoWrap(title, charWrap);
-          const charArray = rawCharArray.filter(val => val !== '');
-          const relativeAmount = ((amount / maxValue) * valueSpace) - barWidth;
-          const displayAmount = relativeAmount < (barWidth * 2) ? (barWidth * 2) : relativeAmount;
-
+          const relativeAmount = (amount / maxValue) * totalGroupSpace;
+          const displayAmount = relativeAmount < barWidth + 1 ? barWidth + 1 : relativeAmount;
           return (
             <TooltipItem
               {...{ styling }}
-              xPosition={(padding[3] + buffer + displayAmount) - (barWidth / 2)}
-              yPosition={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * charArray.length)}
+              xPosition={startPoint + centeringSpace + (index * (barWidth + lineGutter))}
+              yPosition={(padding[0] + totalGroupSpace + barWidth) - ((barWidth * 2) + displayAmount + popUpOffset + popupHeight)}
               {...{ amount, totalGroupSpace }}
             />
           );
         })
       }
-
     </g>
   );
 }

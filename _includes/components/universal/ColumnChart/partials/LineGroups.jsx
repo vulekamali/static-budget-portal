@@ -4,7 +4,7 @@ import LineGroupItem from './LineGroupItem.jsx';
 
 export default function LineGroups({ totalGroupSpace, groupSpaceArray, items, styling }) {
   const titles = Object.keys(items);
-  const { padding, buffer, valueSpace } = styling;
+  // const { padding, buffer, valueSpace } = styling;
 
   return (
     <g className="LineGroupList">

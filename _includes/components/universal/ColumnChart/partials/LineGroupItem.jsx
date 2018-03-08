@@ -1,28 +1,26 @@
 import { h } from 'preact';
-import breakIntoWrap from './breakIntoWrap.js';
-
+import { relative } from 'path';
 
 export default function LineGroupItem({ totalGroupSpace, groupSpaceArray, rank, lines, title, styling }) {
   const {
     barWidth,
     padding,
     buffer,
-    valueSpace,
     lineGutter,
+    valueSpace,
     maxValue,
-    groupMargin,
-    fontSize,
-    charWrap,
-    charLineHeight,
-    titleSpace,
   } = styling;
 
   const groupSpace = groupSpaceArray[rank];
 
+  const generateToScale = (value) => {
+    return ((valueSpace - buffer) / totalGroupSpace) * value;
+  };
+
   const previousSpace = groupSpaceArray.reduce(
     (result, val, index) => {
       if (index < rank) {
-        return result + val;
+        return result + generateToScale(val);
       }
 
       return result;
@@ -30,58 +28,42 @@ export default function LineGroupItem({ totalGroupSpace, groupSpaceArray, rank, 
     0,
   );
 
-  const startPoint = padding[0] + previousSpace;
-  const rawCharArray = breakIntoWrap(title, charWrap);
-  const charArray = rawCharArray.filter(val => val !== '');
+  const usedSpace = lines.length * (barWidth + lineGutter);
+  const startPoint = padding[3] + buffer + previousSpace;
+  const centeringSpace = ((generateToScale(groupSpace) + barWidth) - usedSpace) / 2;
+
 
   return (
     <g className="Graph-group">
+
       {/* <rect
-        x={padding[3] + buffer}
-        y={padding[0] + previousSpace}
-        width={valueSpace - buffer}
-        height={groupSpace}
+        x={padding[3] + buffer + previousSpace}
+        y={padding[0]}
+        width={generateToScale(groupSpace)}
+        height={totalGroupSpace}
         fill="none"
         stroke="red"
         opacity="1"
       /> */}
 
       {
-        charArray.map((val, index) => {
-          return (
-            <text
-              className="Graph-label Graph-label--leftAlign"
-              y={padding[0] + previousSpace + (groupMargin / 2) + (charLineHeight * index)}
-              x={padding[3] + buffer}
-              font-family="sans-serif"
-              font-weight="bold"
-            >
-              {val}
-            </text>
-          );
-        })
-      }
-
-      {
         lines.map((amount, index) => {
-          const relativeAmount = ((amount / maxValue) * valueSpace) - barWidth;
-          const displayAmount = relativeAmount < (barWidth * 2) ? (barWidth * 2) : relativeAmount;
-
+          const relativeAmount = (amount / maxValue) * totalGroupSpace;
+          const displayAmount = relativeAmount < barWidth + 1 ? barWidth + 1 : relativeAmount;
           return (
             <line
               stroke-linecap="round"
               stroke-width={barWidth}
-              y1={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * charArray.length)}
-              x1={padding[3] + buffer + (barWidth / 2)}
-              y2={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * charArray.length)}
-              x2={(padding[3] + buffer + displayAmount) - barWidth}
+              x1={startPoint + centeringSpace + (index * (barWidth + lineGutter))}
+              y1={(padding[0] + totalGroupSpace) - (barWidth / 2)}
+              x2={startPoint + centeringSpace + (index * (barWidth + lineGutter))}
+              y2={(padding[0] + totalGroupSpace + barWidth) - (barWidth / 2) - displayAmount}
               className="Graph-line"
               stroke="#79b43c"
             />
           );
         })
       }
-
     </g>
   );
 }

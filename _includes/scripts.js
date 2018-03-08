@@ -21,7 +21,8 @@ import './components/header-and-footer/SubLinks/scripts.js';
 import './components/header-and-footer/YearSelect/index.jsx';
 import './components/header-and-footer/Search/index.jsx';
 
-import './components/department-page/DeptChart/scripts.jsx';
+import './components/department-page/ProgrammesChart/scripts.jsx';
+import './components/department-page/ExpenditureChart/scripts.jsx';
 
 import './components/other-pages/DeptSearch/index.jsx';
 import './components/other-pages/SearchResult/index.jsx';

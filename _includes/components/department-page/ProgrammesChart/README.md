@@ -1,4 +1,4 @@
-# DeptChart
+# ProgrammesChart
 
 ## Overview
 

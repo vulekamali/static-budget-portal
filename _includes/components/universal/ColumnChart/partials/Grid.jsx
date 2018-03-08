@@ -1,7 +1,7 @@
 import { h } from 'preact';
 
 
-export default function Grid({ styling, totalGroupSpace }) {
+export default function Grid({ styling, totalGroupSpace, svgHeight }) {
   const { padding, valueSpace, buffer } = styling;
 
   return (

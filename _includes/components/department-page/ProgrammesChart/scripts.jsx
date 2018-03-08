@@ -1,10 +1,10 @@
 import { h, render } from 'preact';
-import HomeChart from './index.jsx';
+import ProgrammesChart from './index.jsx';
 import decodeHtmlEntities from './../../../utilities/js/helpers/decodeHtmlEntities.js';
 
 
 function scripts() {
-  const componentList = document.getElementsByClassName('js-deptChart');
+  const componentList = document.getElementsByClassName('js-programmesChart');
 
   for (let i = 0; i < componentList.length; i++) {
     const component = componentList[i];
@@ -12,7 +12,7 @@ function scripts() {
     const values = JSON.parse(decodeHtmlEntities(component.getAttribute('data-values'))).data;
 
     render(
-      <HomeChart {...{ values }} />,
+      <ProgrammesChart {...{ values }} />,
       component,
     );
   }

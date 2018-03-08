@@ -2,21 +2,35 @@ import { h, Component } from 'preact';
 import render from 'preact-render-to-string';
 import canvg from 'canvg-browser';
 import DebounceFunction from './../../../utilities/js/helpers/DebounceFunction.js'
-import Chart from './../BarChart/index.jsx';
+import BarChart from './../BarChart/index.jsx';
+import ColumnChart from './../ColumnChart/index.jsx';
 import Modal from './../../universal/Modal/index.jsx';
 import ChartDownload from './../ChartDownload/index.jsx';
+import Radios from './../Radios/index.jsx';
+
+
+const hardcoded = {
+  'Image (PNG Small)': '1',
+  'Image (PNG Medium)': '2',
+  'Image (PNG Large)': '3',
+  Link: 'link',
+};
 
 
 export default class ResponsiveChart extends Component {
   constructor(props) {
     super(props);
 
+    this.sizes = Object.keys(hardcoded);
+    this.sources = Object.keys(this.props.charts);
+
     this.state = {
       viewport: window.innerWidth,
       mobile: true,
       modalOpen: false,
       selectOpen: false,
-      selected: '1',
+      selected: hardcoded[this.sizes[0]],
+      selectedSource: this.sources[0],
     };
 
     const func = () => {
@@ -75,16 +89,27 @@ export default class ResponsiveChart extends Component {
       return this.setState({ modalOpen: true });
     }
 
-    const svg = render(
-      <Chart
-        width={600}
-        items={this.props.items}
-        hover={false}
-        guides
-        scale={this.state.selected}
-        downloadable
-      />,
-    );
+    const svg = this.props.columns ?
+      render(
+        <ColumnChart
+          width={600}
+          items={this.props.charts[this.state.selectedSource]}
+          hover={false}
+          guides
+          scale={this.state.selected}
+          downloadable
+        />,
+      ) :
+      render(
+        <BarChart
+          width={600}
+          items={this.props.charts[this.state.selectedSource]}
+          hover={false}
+          guides
+          scale={this.state.selected}
+          downloadable
+        />,
+      );
 
     canvg(this.canvas, svg);
 
@@ -109,18 +134,13 @@ export default class ResponsiveChart extends Component {
       </Modal>
     );
 
-    const hardcoded = {
-      'Image (PNG Small)': '1',
-      'Image (PNG Medium)': '2',
-      'Image (PNG Large)': '3',
-      Link: 'link',
-    };
+    const width = this.state.viewport - parseInt(this.props.offset, 10);
 
     const selectDownload = (
       <div>
         <ChartDownload
           open={this.state.selectOpen}
-          name="selectDownload"
+          name={`${this.props.name}-selected-download`}
           selected={this.state.selected}
           clickAction={this.clickAction}
           changeAction={this.changeAction}
@@ -130,15 +150,56 @@ export default class ResponsiveChart extends Component {
       </div>
     );
 
+    const sources = this.sources.reduce(
+      (result, key) => {
+        return {
+          ...result,
+          [key]: key,
+        };
+      },
+      {},
+    );
+
+    const selectSource = (
+      <div className="u-textAlign u-textAlign--center">
+        <Radios
+          items={sources}
+          selected={this.state.selectedSource}
+          name={`${this.props.name}-selected-source`}
+          changeAction={selectedSource => this.setState({ selectedSource })}
+        />
+      </div>
+    );
+
+    const determineChartType = () => {
+      if (this.props.columns && width >= parseInt(this.props.columns, 10)) {
+        return (
+          <ColumnChart
+            items={this.props.charts[this.state.selectedSource]}
+            hover={!this.state.mobile}
+            guides={!this.state.mobile}
+            {...{ width }}
+          />
+        );
+      }
+
+      return (
+        <BarChart
+          items={this.props.charts[this.state.selectedSource]}
+          hover={!this.state.mobile}
+          guides={!this.state.mobile}
+          {...{ width }}
+        />
+      );
+    };
+
+    console.log(this.sources, this.sources.length)
+
     return (
       <div className="ResponsiveChart">
         {this.props.downloadable ? modal : null}
-        <Chart
-          width={this.state.viewport - parseInt(this.props.offset, 10)}
-          items={this.props.items}
-          hover={!this.state.mobile}
-          guides={!this.state.mobile}
-        />
+        {determineChartType()}
+        {this.sources.length > 1 ? selectSource : null}
         {this.props.downloadable ? selectDownload : null}
       </div>
     );

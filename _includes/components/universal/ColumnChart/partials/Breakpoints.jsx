@@ -13,10 +13,10 @@ export default function Breakpoints({ items, styling, totalGroupSpace }) {
   return (
     <g className="Graph-verticalLabelList">
       {/* <rect
-        x={padding[3] + buffer}
-        y={padding[0] + totalGroupSpace + (buffer * 2)}
-        height={padding[2] - buffer}
-        width={(padding[3] + valueSpace) - padding[1]}
+        x={0}
+        y={padding[0]}
+        height={totalGroupSpace}
+        width={(padding[3] - buffer)}
         fill="red"
         opacity="0.5"
       /> */}
