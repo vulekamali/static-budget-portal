@@ -33,13 +33,11 @@ then
 
     # DEBUG
     git status
+    git diff
 
     if ! git diff-index --quiet HEAD --; then
         # save changes
         git add .
-        # DEBUG
-        git diff
-
         setup_git
         git commit -m "Updated data via TravisCI" || exit 0
 
