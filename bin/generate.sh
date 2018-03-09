@@ -39,6 +39,8 @@ then
         git add .
         # DEBUG
         git diff
+
+        setup_git
         git commit -m "Updated data via TravisCI" || exit 0
 
         echo "Deploying to GitHub"
