@@ -14,7 +14,7 @@ setup_git() {
     git remote set-url origin git@github.com:OpenUpSA/static-budget-portal.git
 }
 
-if [ "${TRAVIS_PULL_REQUEST}" = "false" ]
+if [ "${TRAVIS_PULL_REQUEST}" = "true" ]
 then
     echo "Ignoring pull request"
 elif [ "${TRAVIS_COMMIT_MESSAGE}" = *"[ci]"* ]
