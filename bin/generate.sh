@@ -25,14 +25,19 @@ then
     # DEBUG
     git status
 
-    # save changes
-    git add .
-    git commit -m "Updated data via TravisCI" || exit 0
+    if ! git diff-index --quiet HEAD --; then
+        # save changes
+        git add .
+        # DEBUG
+        git status
+        git commit -m "Updated data via TravisCI" || exit 0
 
-    echo "Deploying to GitHub"
+        echo "Deploying to GitHub"
 
-    git push origin
-
+        git push origin
+    else
+        echo "No changes"
+    fi
 else
     echo "No data update requested."
 fi
