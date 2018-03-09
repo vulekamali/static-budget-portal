@@ -1,29 +1,21 @@
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Departments
-    slug: departments
     url_path: /2015-16/departments
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Departments
-    slug: departments
     url_path: /2016-17/departments
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Departments
-    slug: departments
     url_path: /2017-18/departments
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Departments
-    slug: departments
     url_path: /2018-19/departments
   id: 2018-19
   is_selected: false
@@ -37,21 +29,21 @@ national:
     slug: parliament
     url_path: /2017-18/national/departments/parliament
     vote_number: 2
-  - name: Government Communication and Information System
-    slug: government-communication-and-information-system
-    url_path: /2017-18/national/departments/government-communication-and-information-system
-    vote_number: 3
   - name: Communications
     slug: communications
     url_path: /2017-18/national/departments/communications
     vote_number: 3
-  - name: Traditional Affairs
-    slug: traditional-affairs
-    url_path: /2017-18/national/departments/traditional-affairs
-    vote_number: 4
+  - name: Government Communication and Information System
+    slug: government-communication-and-information-system
+    url_path: /2017-18/national/departments/government-communication-and-information-system
+    vote_number: 3
   - name: Cooperative Governance and Traditional Affairs
     slug: cooperative-governance-and-traditional-affairs
     url_path: /2017-18/national/departments/cooperative-governance-and-traditional-affairs
+    vote_number: 4
+  - name: Traditional Affairs
+    slug: traditional-affairs
+    url_path: /2017-18/national/departments/traditional-affairs
     vote_number: 4
   - name: Home Affairs
     slug: home-affairs
@@ -73,10 +65,6 @@ national:
     slug: public-enterprises
     url_path: /2017-18/national/departments/public-enterprises
     vote_number: 9
-  - name: Public Service and Administration
-    slug: public-service-and-administration
-    url_path: /2017-18/national/departments/public-service-and-administration
-    vote_number: 10
   - name: Centre for Public Service Innovation
     slug: centre-for-public-service-innovation
     url_path: /2017-18/national/departments/centre-for-public-service-innovation
@@ -84,6 +72,10 @@ national:
   - name: National School of Government
     slug: national-school-of-government
     url_path: /2017-18/national/departments/national-school-of-government
+    vote_number: 10
+  - name: Public Service and Administration
+    slug: public-service-and-administration
+    url_path: /2017-18/national/departments/public-service-and-administration
     vote_number: 10
   - name: Public Service Commission
     slug: public-service-commission
