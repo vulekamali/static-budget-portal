@@ -14,13 +14,22 @@ setup_git() {
     git remote set-url origin git@github.com:OpenUpSA/static-budget-portal.git
 }
 
+regenerate_data() {
+    if [[ "${TRAVIS_COMMIT_MESSAGE}" == *"[staging]"* ]]
+    then
+        echo "Using STAGING data server"
+        export PORTAL_URL=https://dynamicbudgetportal-staging.openup.org.za/
+    fi
+    python generate/from_dynamic.py
+}
+
 if [ "${TRAVIS_PULL_REQUEST}" = "true" ]
 then
     echo "Ignoring pull request"
 elif [[ "${TRAVIS_COMMIT_MESSAGE}" == *"[ci]"* ]]
 then
 
-    python generate/from_dynamic.py
+    regenerate_data
 
     # DEBUG
     git status
