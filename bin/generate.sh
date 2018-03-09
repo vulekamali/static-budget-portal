@@ -45,7 +45,7 @@ then
 
         git push origin HEAD:$TRAVIS_BRANCH
     else
-        echo "No changes"
+        echo "No changes to commit."
     fi
 else
     echo "No data update requested."
