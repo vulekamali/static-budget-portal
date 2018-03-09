@@ -38,12 +38,12 @@ then
         # save changes
         git add .
         # DEBUG
-        git status
+        git diff
         git commit -m "Updated data via TravisCI" || exit 0
 
         echo "Deploying to GitHub"
 
-        git push origin
+        git push origin HEAD:$TRAVIS_BRANCH
     else
         echo "No changes"
     fi
