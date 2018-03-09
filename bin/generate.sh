@@ -17,7 +17,7 @@ setup_git() {
 if [ "${TRAVIS_PULL_REQUEST}" = "true" ]
 then
     echo "Ignoring pull request"
-elif [ "${TRAVIS_COMMIT_MESSAGE}" = *"[ci]"* ]
+elif [[ "${TRAVIS_COMMIT_MESSAGE}" == *"[ci]"* ]]
 then
 
     python generate/from_dynamic.py
