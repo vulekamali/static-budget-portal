@@ -18,7 +18,7 @@ export default function ColumnChart({ items, width, guides, scale = 1, downloada
     popUpOffset: 6,
     buffer: 20,
     valueSpace: width - (0 + 80),
-    padding: [50, 0, 30, 80],
+    padding: [50, 0, 30, 100],
     popupHeight: 30,
     popupCentre: 5,
     charWrap: width / 10,
@@ -35,8 +35,8 @@ export default function ColumnChart({ items, width, guides, scale = 1, downloada
   if (downloadable) {
     styling = {
       ...styling,
-      padding: [80, 30, 60, 110],
-      valueSpace: width - (30 + 110),
+      padding: [80, 30, 60, 130],
+      valueSpace: width - (30 + 130),
     };
   }
 

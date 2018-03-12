@@ -1,8 +1,10 @@
 @import-normalize;
 
+@import 'utilities/scss/variables/breakpoints';
 @import 'utilities/scss/variables/z-index';
 @import 'utilities/scss/variables/colour-brand';
 @import 'utilities/scss/variables/colour-shading';
+@import 'utilities/scss/variables/font-sizes';
 
 @import 'utilities/scss/mixins/clearfix';
 
@@ -21,10 +23,19 @@
 @import 'utilities/scss/utility-classes/u-Button';
 @import 'utilities/scss/utility-classes/u-listReset';
 @import 'utilities/scss/utility-classes/u-listItemReset';
+
+@import 'utilities/scss/utility-classes/u-padding';
+@import 'utilities/scss/utility-classes/u-paddingTop';
+@import 'utilities/scss/utility-classes/u-paddingLeft';
+@import 'utilities/scss/utility-classes/u-paddingBottom';
+@import 'utilities/scss/utility-classes/u-paddingRight';
+
+@import 'utilities/scss/utility-classes/u-margin';
 @import 'utilities/scss/utility-classes/u-marginTop';
 @import 'utilities/scss/utility-classes/u-marginLeft';
 @import 'utilities/scss/utility-classes/u-marginBottom';
 @import 'utilities/scss/utility-classes/u-marginRight';
+
 @import 'utilities/scss/utility-classes/u-underline';
 @import 'utilities/scss/utility-classes/u-fontWeight';
 @import 'utilities/scss/utility-classes/u-fontSize';
@@ -46,6 +57,7 @@
 @import 'components/universal/BarChart/styles';
 @import 'components/universal/Radios/styles';
 @import 'components/universal/Download/styles';
+@import 'components/universal/ChartDownload/styles';
 
 @import 'components/header-and-footer/Search/styles';
 @import 'components/header-and-footer/YearSelect/styles';

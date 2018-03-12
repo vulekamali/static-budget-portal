@@ -9,10 +9,36 @@ function scripts() {
   for (let i = 0; i < componentList.length; i++) {
     const component = componentList[i];
 
-    const values = JSON.parse(decodeHtmlEntities(component.getAttribute('data-values'))).data;
+    const real = JSON.parse(decodeHtmlEntities(component.getAttribute('data-real'))).data;
+    const nominal = JSON.parse(decodeHtmlEntities(component.getAttribute('data-nominal'))).data;
+
+    const normalise = (source) => {
+      return source.reduce(
+        (results, val) => {
+          if (val.amount) {
+            return {
+              ...results,
+              [val.financial_year]: [val.amount],
+            };
+          }
+
+          return results;
+        },
+        {},
+      );
+    };
+
+    const items = {
+      'Adjusted for inflation': normalise(real),
+      'Not adjusted for inflation': normalise(nominal),
+    };
+
+
+    console.log(items)
+
 
     render(
-      <ExpenditureChart {...{ values }} />,
+      <ExpenditureChart {...{ items }} />,
       component,
     );
   }

@@ -3,11 +3,9 @@ layout: page-shell
 ---
 {% assign page_data = site.data['contributed-data'] %}
 
-<div class="Page-content is-darkBackground">
-  <div class="Page-contentWrap ">
-    <main>
-      <div class="Page-title">Contributed Data</div>
-      {% include components/other-pages/CsoDirectory/index.html datasets=page_data.datasets %}
-    </main>
-  </div>
+<div class="Page-content">
+  <main class="Page-contentInner">
+    <h1 class="Page-mainHeading">Contributed Data</h1>
+    {% include components/other-pages/CsoDirectory/index.html datasets=page_data.datasets %}
+  </main>
 </div>

@@ -1,5 +1,6 @@
 <div
   class="js-expenditureChart"
-  data-values="{ &quot;data&quot;: {{ include.values | jsonify | escape }} }"
+  data-nominal="{ &quot;data&quot;: {{ include.values.nominal | jsonify | escape }} }"
+  data-real="{ &quot;data&quot;: {{ include.values.real | jsonify | escape }} }"
 >
 </div>

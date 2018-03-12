@@ -1,52 +1,103 @@
-import { h } from 'preact';
-import ResponsiveChart from './../../universal/ResponsiveChart/index.jsx';
+import renderToString from 'preact-render-to-string';
+import canvg from 'canvg-browser';
+import { h, Component } from 'preact';
+import Markup from './partials/Markup.jsx';
+import ColumnChart from './../../universal/BarChart/index.jsx';
 
 
-export default function ExpenditureChart({ values }) {
+export default class ExpenditureChart extends Component {
+  constructor(props) {
+    super(props);
 
-  const notAdjusted = values.nominal.reduce(
-    (result, val) => {
-      if (val.amount) {
-        return {
-          ...result,
-          [val.financial_year]: [val.amount],
-        };
-      }
+    this.sources = Object.keys(this.props.items);
+    this.state = {
+      selected: '1',
+      open: false,
+      modal: false,
+      sourceSelected: this.sources[0],
+    };
 
-      return result;
-    },
-    {},
-  );
+    this.canvas = null;
+    this.getCanvas = this.getCanvas.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.changeAction = this.changeAction.bind(this);
+    this.clickAction = this.clickAction.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.changeSourceAction = this.changeSourceAction.bind(this);
 
-  const adjusted = values.real.reduce(
-    (result, val) => {
-      if (val.amount) {
-        return {
-          ...result,
-          [val.financial_year]: [val.amount],
-        };
-      }
+  }
 
-      return result;
-    },
-    {},
-  );
+  getCanvas(node) {
+    this.canvas = node;
+  }
 
-  const charts = {
-    'Adjusted for inflation': adjusted,
-    'Not adjusted for inflation': notAdjusted,
-  };
+  changeSourceAction(sourceSelected) {
+    this.setState({ sourceSelected });
+  }
 
-  return (
-    <div className="ProgrammeChart">
-      <ResponsiveChart
-        max={650}
-        offset={120}
-        {...{ charts }}
+  changeAction(value) {
+    if (this.state.open) {
+      this.setState({ selected: value });
+      return this.setState({ open: false });
+    }
+
+    return this.setState({ open: true });
+  }
+
+  clickAction() {
+    if (this.state.selected === 'link') {
+      return this.setState({ modal: true });
+    }
+
+    canvg(this.canvas, renderToString(
+      <ColumnChart
+        scale={parseInt(this.state.selected, 10)}
         downloadable
-        columns="500"
-        name="expenditure-chart"
+        items={this.props.items[this.state.sourceSelected]}
+        guides
+        width={600}
+      />,
+    ));
+
+    if (this.canvas.msToBlob) {
+      const blob = this.canvas.msToBlob();
+      return window.navigator.msSaveBlob(blob, 'chart.png', { scaleWidth: 10, scaleHeight: 10 });
+    }
+
+    const link = document.createElement('a');
+    link.download = 'chart.png';
+    link.href = this.canvas.toDataURL();
+    return link.click();
+  }
+
+  closeModal() {
+    return this.setState({ modal: false });
+  }
+
+  render() {
+    return (
+      <Markup
+        downloadSelected={this.state.selected}
+        changeAction={this.changeAction}
+        name="programmes-chart"
+        open={this.state.open}
+        canvasAction={(node) => { this.canvas = node; }}
+        clickAction={this.clickAction}
+        downloadItems={{
+          'Image (PNG Small)': '1',
+          'Image (PNG Medium)': '2',
+          'Image (PNG Large)': '3',
+          Link: 'link',
+        }}
+        closeModal={this.closeModal}
+        modal={this.state.modal}
+        sourceItems={this.props.items[this.state.sourceSelected]}
+        hasNull={this.hasNull}
+        year={this.props.year}
+        sources={this.sources}
+        sourceSelected={this.state.sourceSelected}
+        changeSourceAction={this.changeSourceAction}
       />
-    </div>
-  );
+    );
+  }
 }

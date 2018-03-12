@@ -46,13 +46,11 @@ export default function HomeChart({ values, year }) {
     {},
   );
 
-  const charts = { 'National Expenditure': items }
-
   return (
     <ResponsiveChart
       max={650}
       offset={100}
-      {...{ charts }}
+      values={items}
       downloadable
     />
   );

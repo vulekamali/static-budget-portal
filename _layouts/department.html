@@ -9,55 +9,59 @@ layout: page-shell
 
 
 <div class="Page-content">
-  <div class="Page-contentWrap">
+  <div class="Page-contentInner">
     {% if page_data.government.slug == 'south-africa' %}
-      <div class="Page-title is-noPadding">National Department: {{ page_data.name }}</div>
+      <h1 class="Page-mainHeading">National Department: {{ page_data.name }}</h1>
     {% else %}
-      <div class="Page-title is-noPadding">{{ page_data.government.name }} Department: {{ page_data.name }}</div>
+      <h1 class="Page-mainHeading">{{ page_data.government.name }} Department: {{ page_data.name }}</h1>
     {% endif %}
 
-    <div class="u-marginLeft u-marginLeft--20 u-marginBottom u-marginBottom--30 u-marginTop u-marginTop--5 u-fontWeight u-fontWeight--bold u-fontSize u-fontSize--16">
-      Budget for {{ page.financial_year }}
-    </div>
+    <main class="Page-main" u-marginBottom u-marginBottom--20>
 
-    <main class="Page-main">
-
-      <div class="Card js-tooltips" data-year="{{ page.financial_year }}">{{ page_data.intro  | markdownify }}</div>
-
-      <div class="Page-section">
-        <div class="Card">
-          <h3 class="Card-title">Funded programmes for {{ page.financial_year }}</h3>
-          <p>A department's programmes are the activities that it performs during the financial year. Different programs have different levels of funding, depending on their requirements and available finances.</p>
-          {% 
-            include components/department-page/ProgrammesChart/index.html 
-            values=page_data.programmes
-          %}
+      <div class="Page-sectionWrap Page-sectionWrap--card ">
+        <div class="Page-section Page-section--forceStyling js-tooltips">
+          {{ page_data.intro  | markdownify }}
         </div>
       </div>
 
+      {% 
+        include components/department-page/ProgrammesChart/index.html 
+        values=page_data.programmes
+        year=page.financial_year
+      %}
+
+
       {% if page_data.expenditure_over_time %}
-        <div class="Page-section">
-          <div class="Card">
-            <h3 class="Card-title">Expenditure changes over time</h3>
-            <p>Budgeted expenditure for a department can increase or decrease from year to year. The official budget shows the nominal value of spendiing - the real value is calculated by adjusting for inflation, since most expenditure items are subject to inflation.</p>
-            <p>By stripping out the inflation (GDP or CPI inflation) it is possible to show if a departmental budget is increasing or decreasing in real terms.</p>
-            {% 
-              include components/department-page/ExpenditureChart/index.html 
-              values=page_data.expenditure_over_time
-            %}
-          </div>
-        </div>
+        {% 
+          include components/department-page/ExpenditureChart/index.html 
+          values=page_data.expenditure_over_time
+        %}
       {% endif %}
 
     </main>
     <aside class="Page-sidebar">
 
-      <div class="Card">
-        {% include components/universal/Share/index.html %}
+      <div class="Page-sectionWrap Page-sectionWrap--card">
+        <div class="Page-section">
+          <h2 class="Page-subHeading">Share this page:</h2>
+          {% include components/universal/Share/index.html %}
+        </div>
       </div>
 
-      <div class="u-marginTop u-marginTop--20">
-        {% include components/universal/FileTypes/index.html treasury=page_data.treasury_datasets cso=page_data.contributed_datasets type="dept" %}
+      <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--green">
+        <div class="Page-section Page-section--card">
+          {% include components/universal/FileTypes/index.html treasury=page_data.treasury_datasets cso=page_data.contributed_datasets type="dept" %}
+        </div>
+      </div>
+
+      <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark">
+        <div class="Page-section Page-section--card">
+          <h2 class="Page-subHeading">How can I contribute?</h2>
+          <p>Do you have data related to this department that you would like to contribute?</p>
+          <a href="#" class="Button">
+            Send it to us for consideration
+          </a>
+        </div>
       </div>
 
     </aside>

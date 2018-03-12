@@ -8,11 +8,9 @@ layout: page-shell
 {% assign circles_data = site.data[page.financial_year].circles %}
 
 <div class="Page-content">
-  <div class="Page-contentWrap">
+  <div class="Page-contentInner">
 
-    <div class="HomeLayout-titleWrap">
-      <span class="Page-title">The South African National Budget {{ page.financial_year | split: "-" | first }}</span>
-    </div>
+    <h1 class="Page-mainHeading">The South African National Budget {{ page.financial_year | split: "-" | first }}</h1>
 
     <div class="HomeLayout-description">vulekamali is a project by the South African National Treasury and Imali Yethu with the goal of making government budget data and processes accessible to all citizens & interested parties. <a href="/{{ page.financial_year }}/about">Read more about vulekamali.</a></div>
 
