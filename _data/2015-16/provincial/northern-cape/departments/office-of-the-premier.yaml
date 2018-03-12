@@ -2,29 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Office of the Premier
-    slug: office-of-the-premier
     url_path: /2015-16/provincial/northern-cape/departments/office-of-the-premier
   id: 2015-16
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Office of the Premier
-    slug: office-of-the-premier
     url_path: /2016-17/provincial/northern-cape/departments/office-of-the-premier
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Office of the Premier
-    slug: office-of-the-premier
     url_path: /2017-18/provincial/northern-cape/departments/office-of-the-premier
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: false
-    name: Northern Cape
-    slug: northern-cape
     url_path: /2018-19/provincial/northern-cape
   id: 2018-19
   is_selected: false
@@ -32,11 +24,11 @@ government:
   name: Northern Cape
   slug: northern-cape
 government_functions: []
-intro: "## Vision\n\nA safe, democratic and prosperous province with an empowered,\
-  \ diverse and inclusive citizenry.\r\n\r\n\r\n\n\n## Mission \n\nTo provide strategic\
+intro: "## Vision\r\n\r\nA safe, democratic and prosperous province with an empowered,\
+  \ diverse and inclusive citizenry.\r\n\r\n## Mission \r\n\r\nTo provide strategic\
   \ leadership, direction and coordinated planning, monitoring and evaluation of developmental\
-  \ programmes to improve the quality of life for all.\r\n\r\n\n\n## Core functions\n\
-  \nThe core work of the Office of the Premier is to ensure the general improvement\
+  \ programmes to improve the quality of life for all.\r\n\r\n## Core functions\r\n\
+  \r\nThe core work of the Office of the Premier is to ensure the general improvement\
   \ of efficiency and effectiveness of governance within the office and throughout\
   \ the provincial government system."
 is_vote_primary: true

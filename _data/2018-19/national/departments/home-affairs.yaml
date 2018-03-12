@@ -2,29 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Home Affairs
-    slug: home-affairs
     url_path: /2015-16/national/departments/home-affairs
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Home Affairs
-    slug: home-affairs
     url_path: /2016-17/national/departments/home-affairs
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Home Affairs
-    slug: home-affairs
     url_path: /2017-18/national/departments/home-affairs
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Home Affairs
-    slug: home-affairs
     url_path: /2018-19/national/departments/home-affairs
   id: 2018-19
   is_selected: true
@@ -63,11 +55,7 @@ treasury_datasets:
       spending plans of each government department for the coming year.
     formats:
     - format: PDF
-      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2005%20Home%20Affairs.pdf
-  ENE for Vote 5 - Home Affairs - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-home-affairs-2018-19/resource/afcae9bf-ceba-47df-bd4d-873a380606cb/download/vote-05-home-affairs.pdf
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-home-affairs-2018-19/resource/4abf65d3-c8bc-4653-9090-25ab463a0be5/download/ene18-vote05_chaptertables.xlsx
 vote_number: 5

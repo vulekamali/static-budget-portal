@@ -2,29 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Public Works
-    slug: public-works
     url_path: /2015-16/national/departments/public-works
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Public Works
-    slug: public-works
     url_path: /2016-17/national/departments/public-works
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Public Works
-    slug: public-works
     url_path: /2017-18/national/departments/public-works
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Public Works
-    slug: public-works
     url_path: /2018-19/national/departments/public-works
   id: 2018-19
   is_selected: true
@@ -77,10 +69,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2011%20Public%20Works.pdf
-  ENE for Vote 11 - Public Works - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-public-works-2018-19/resource/522517d6-ba71-458b-a0d3-ae4ac04b8759/download/ene18-vote11_chaptertables.xlsx
 vote_number: 11
