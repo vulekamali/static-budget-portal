@@ -54,8 +54,8 @@
     padding: 0 25px 100px;
   }
 
-  &.--floatingLinks {
-    @media ($tablet-breakpoint) {
+  &--floatingLinks {
+    @media (min-width: 900px) {
       padding-left: 240px;
     }
 
