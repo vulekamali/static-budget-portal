@@ -1,6 +1,4 @@
 <div class="Links">
-  <div class="Links-title">National Budget {{ page.financial_year | split: "-" | first }} Resources from Treasury</div>
-  <div class="Links-description">Below are a collection of links to resources that are available on the South African National Treasury website. </div>
 
   {% if include.people_guide %} 
     <div class="Links-itemWrap Links-itemWrap--full">
@@ -142,12 +140,6 @@
         </div>
       </div>
       <div class="Links-text">Budget 2017 Presentation: Transformation for Inclusive </div></a>
-    </div>
-  {% endif %}
-
-  {% if include.resources_link %}
-    <div class="Links-linkWrap">
-      <a href="{{ include.resources_link }} " target="_blank" class="Links-link">Explore all National Budget {{ page.financial_year | split: "-" | first }} Resources from National Treasury</a>
     </div>
   {% endif %}
 

@@ -19,66 +19,106 @@ layout: page-shell
     <div class="HomeLayout">
 
       <div class="HomeLayout-main">
-        <div>
-            {%
-              include components/homepage/Links/index.html
-              resources_link=resources_data.resources_link.url
-              speech=resources_data.budget_speech.url
-              webcast=resources_data.budget_webcast.url
-              highlights=resources_data.highlights.url
-              expenditure=resources_data.estimates_national_expenditure.url
-              appropriation=resources_data.appropriation.url
-              division=resources_data.division_revenue_bill.url
-              pocket_guide=resources_data.pocket_guide.url
-              presentation=resources_data.presentation.url
-              people_guide=resources_data.people_guide
-            %}
-        </div>
 
-        <span class="HomeLayout-title js-tooltips" data-year="{{ page.financial_year }}">The national revenue fund, administered by the National Treasury, is distributed to the three spheres of government.</span>
-
-        <div>
+        <div class="Card Card--dark">
+          <h2 class"Card-title">National Budget {{ page.financial_year | split: "-" | first }} Resources from Treasury</h2>
+          <p>Below are a collection of links to resources that are available on the South African National Treasury website.</p>
           {%
-            include components/homepage/Circles/index.html
-            year=page.financial_year
-            items=circles_data
+            include components/homepage/Links/index.html
+            resources_link=resources_data.resources_link.url
+            speech=resources_data.budget_speech.url
+            webcast=resources_data.budget_webcast.url
+            highlights=resources_data.highlights.url
+            expenditure=resources_data.estimates_national_expenditure.url
+            appropriation=resources_data.appropriation.url
+            division=resources_data.division_revenue_bill.url
+            pocket_guide=resources_data.pocket_guide.url
+            presentation=resources_data.presentation.url
+            people_guide=resources_data.people_guide
           %}
+
+          {% assign shortYear = page.financial_year | split: "-" | first %}
+          {% assign finalLink = "http://www.treasury.gov.za/documents/national%20budget/" | append: shortYear | append: "/default.aspx" %}
+          {% assign finalTitle = "Explore all National Budget " | append: shortYear | append: " Resources from National Treasury" %}
+
+          <div class="u-marginTop u-marginTop--10">
+            {%
+              include components/universal/Download/index.html
+              link=finalLink
+              title=finalTitle
+            %}
+          </div>
         </div>
 
         <div>
+          <span class="HomeLayout-title js-tooltips" data-year="{{ page.financial_year }}">The national revenue fund, administered by the National Treasury, is distributed to the three spheres of government.</span>
+
+          <div>
+            {%
+              include components/homepage/Circles/index.html
+              year=page.financial_year
+              items=circles_data
+            %}
+          </div>
+        </div>
+
+        <div class="Card Card--dark u-marginTop u-marginTop--40">
+          <h2 class"Card-title">Where National Government gets its money for {{ page.financial_year }}</h2>
           {%
             include components/homepage/Revenue/index.html
-            info=page_data.revenue
-            link=resources_data.budget_revenue_data.url
-            year=page.financial_year
+            values=page_data.revenue
           %}
+
+          {% assign finalDownload = "http://www.treasury.gov.za/documents/national%20budget/" | append: shortYear | append: "/TimeSeries/Excel/Table%202%20-%20Main%20budget%20estimates%20of%20national%20revenue.xlsx" %}
+
+          <div class="u-marginTop u-marginTop--10">
+            {%
+              include components/universal/Download/index.html
+              link=finalDownload
+              title="Download Estimates of National Revenue (XLSX)"
+              icon="true"
+            %}
+          </div>
         </div>
 
-        <div>
+        <div class="Card Card--dark u-marginTop u-marginTop--40">
+            <h2 class"Card-title">How Government spends its money for {{ page.financial_year }}</h2>
           {%
-            include components/homepage/Expenditure/index.html
-            info=government_functions
+            include components/homepage/HomeChart/index.html
+            values=government_functions
             year=page.financial_year
           %}
+
+          {% assign finalRedirect = "/" | append: page.financial_year | append: "/departments" %}
+          {% assign finalRedirectTitle = "Explore National and Provincial Expenditure by Department for " | append: page.financial_year %}
+
+          <div class="u-marginTop u-marginTop--10">
+            {%
+              include components/universal/Download/index.html
+              link=finalRedirect
+              title=finalRedirectTitle
+            %}
+          </div>
         </div>
 
       </div>
 
       <div class="HomeLayout-sidebar">
-          <h2 class="u-sReadOnly">Additional Content</h2>
 
-          <div class="HomeLayout-newsletter">
-            {% include components/homepage/SignUpBox/index.html %}
-          </div>
+        <h2 class="u-sReadOnly">Additional Content</h2>
 
-          <div class="HomeLayout-newsletter">
-            {% include components/homepage/Related/index.html year=page.financial_year %}
-          </div>
+        <div class="HomeLayout-newsletter">
+          {% include components/homepage/SignUpBox/index.html %}
+        </div>
 
-          <div class="HomeLayout-newsletter">
-            {% include components/homepage/ApiCta/index.html %}
-          </div>
+        <div class="HomeLayout-newsletter">
+          {% include components/homepage/Related/index.html year=page.financial_year %}
+        </div>
 
+        <div class="HomeLayout-newsletter">
+          {% include components/homepage/ApiCta/index.html %}
+        </div>
+  
       </div>
 
     </div>

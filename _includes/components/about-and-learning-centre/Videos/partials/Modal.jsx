@@ -7,13 +7,6 @@ export default function Modal(props) {
   const { setModal, setLanguage } = props;
   const closeModal = () => setModal(false);
 
-  const selectOptions = Object.keys(languageOptions).map((language) => {
-    return {
-      title: language,
-      value: languageOptions[language],
-    };
-  });
-
   return (
     <div className="Videos-modalWrap">
       <div className="Videos-modal">
@@ -33,8 +26,8 @@ export default function Modal(props) {
             <PseudoSelect
               name="language"
               open={open.select}
-              items={selectOptions}
-              property={open.language}
+              items={languageOptions}
+              selected={open.language}
               changeAction={value => setLanguage(value)}
             />
           </div>

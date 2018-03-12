@@ -3,13 +3,6 @@ import PseudoSelect from './../../../universal/PseudoSelect/index.jsx';
 
 
 export default function Modal({ open, languageOptions, setLanguage }) {
-  const selectOptions = Object.keys(languageOptions).map((language) => {
-    return {
-      title: language,
-      value: languageOptions[language],
-    };
-  });
-
   const toggle = (
     <div>
       <span className="Videos-label">
@@ -19,8 +12,8 @@ export default function Modal({ open, languageOptions, setLanguage }) {
         <PseudoSelect
           name="language"
           open={open.select}
-          items={selectOptions}
-          property={open.language}
+          items={languageOptions}
+          selected={open.language}
           changeAction={value => setLanguage(value)}
         />
       </div>
