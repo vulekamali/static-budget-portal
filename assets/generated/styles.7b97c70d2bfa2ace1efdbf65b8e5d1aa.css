@@ -1004,17 +1004,17 @@ li {
 .Page-contentInner {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 25px 5px 100px; }
+  padding: 0 5px 100px; }
   .Page-contentInner::after {
     clear: both;
     content: "";
     display: block; }
   @media (min-width: 500px) {
     .Page-contentInner {
-      padding: 25px 15px 100px; } }
+      padding: 0 15px 100px; } }
   @media (min-width: 750px) {
     .Page-contentInner {
-      padding: 25px 25px 100px; } }
+      padding: 0 25px 100px; } }
   @media (min-width: 750px) {
     .Page-contentInner.\--floatingLinks {
       padding-left: 240px; } }
@@ -1026,13 +1026,13 @@ li {
   font-weight: bold;
   font-size: 28px;
   line-height: 1.29;
-  margin: 0 20px; }
+  margin: 25px 20px 10px; }
   @media (min-width: 500px) {
     .Page-mainHeading {
-      margin: 0 30px; } }
+      margin: 35px 30px 20px; } }
   @media (min-width: 750px) {
     .Page-mainHeading {
-      margin: 0 40px; } }
+      margin: 45px 40px 30px; } }
 
 .Page-subHeading, .Page-section--forceStyling h2, .FileTypes-title {
   margin: 0 0 10px;
@@ -1052,7 +1052,7 @@ li {
     background-color: white;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border: 1px solid #d2d2d2; }
   .Page-sectionWrap--dark {
     background-color: #e6e6e6; }
@@ -1473,7 +1473,8 @@ li {
 
 .Radios {
   list-style: none;
-  padding-left: 0; }
+  padding-left: 0;
+  margin: 0; }
 
 .Radios-itemWrap {
   display: inline-block; }
@@ -1494,9 +1495,6 @@ li {
   display: block; }
   .Radios-label:hover {
     background: #d9d9d9; }
-  .Radios-input:focus + .Radios-label {
-    background: #d9d9d9;
-    outline: 0; }
   .Radios-label::before {
     position: absolute;
     left: 10px;
@@ -1549,6 +1547,19 @@ li {
   padding: 2px;
   margin-right: 5px;
   line-height: 0; }
+
+.ChartDownload-title {
+  display: table-cell;
+  padding: 0 10px;
+  white-space: nowrap; }
+
+.ChartDownload-select {
+  display: table-cell;
+  width: 100%; }
+
+.ChartDownload-button {
+  display: table-cell;
+  padding: 0 5px; }
 
 .Search {
   width: 100%; }
@@ -4011,9 +4022,6 @@ li {
 .Videos-pillWrap {
   display: inline; }
 
-.Video {
-  max-width: 550; }
-
 .Video-embed {
   line-height: 0;
   position: relative;
@@ -4311,4 +4319,4 @@ li {
     background: red;
     background-color: #cbcbcb; }
 
-/*# sourceMappingURL=styles.469860916c35079134fb6252e7ce4d46.css.map*/
+/*# sourceMappingURL=styles.7b97c70d2bfa2ace1efdbf65b8e5d1aa.css.map*/

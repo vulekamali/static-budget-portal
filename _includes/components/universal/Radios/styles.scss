@@ -1,6 +1,7 @@
 .Radios {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .Radios-itemWrap {
@@ -22,11 +23,6 @@
 
   &:hover {
     background: darken(white, 15%);
-  }
-
-  .Radios-input:focus + & {
-    background: darken(white, 15%);
-    outline: 0;
   }
 
   &::before {

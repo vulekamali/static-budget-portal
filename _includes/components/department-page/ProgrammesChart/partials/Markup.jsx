@@ -28,7 +28,7 @@ export default function ProgrammesChart(props) {
   const withValues = (
     <ResponsiveChart
       max={690}
-      offset={120}
+      offset={150}
       values={sourceItems}
       downloadable
       name="programmes-chart"
@@ -40,7 +40,7 @@ export default function ProgrammesChart(props) {
       <ChartDownload
         selected={this.props.downloadSelected}
         changeAction={this.props.changeAction}
-        name={this.props.name}
+        name="programmes-chart"
         open={this.props.open}
         canvasAction={this.props.canvasAction}
         clickAction={this.props.clickAction}

@@ -43,15 +43,15 @@
 .Page-contentInner {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 25px 5px 100px;
+  padding: 0 5px 100px;
   @include clearfix;
 
   @media ($mobile-breakpoint) {
-    padding: 25px 15px 100px;
+    padding: 0 15px 100px;
   }
 
   @media ($tablet-breakpoint) {
-    padding: 25px 25px 100px;
+    padding: 0 25px 100px;
   }
 
   &.--floatingLinks {
@@ -69,14 +69,14 @@
   font-weight: bold;
   font-size: $font-size-large;
   line-height: 1.29;
-  margin: 0 20px;
+  margin: 25px 20px 10px;
 
   @media ($mobile-breakpoint) {
-    margin: 0 30px;
+    margin: 35px 30px 20px;
   }
 
   @media ($tablet-breakpoint) {
-    margin: 0 40px;
+    margin: 45px 40px 30px;
   }
 }
 
@@ -100,7 +100,7 @@
     background-color: white;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border: 1px solid $colour-shading-border;
   }
 

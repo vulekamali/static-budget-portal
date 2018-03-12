@@ -16,9 +16,9 @@ layout: page-shell
       <h1 class="Page-mainHeading">{{ page_data.government.name }} Department: {{ page_data.name }}</h1>
     {% endif %}
 
-    <main class="Page-main">
+    <main class="Page-main" u-marginBottom u-marginBottom--20>
 
-      <div class="Page-sectionWrap Page-sectionWrap--card u-marginTop u-marginTop--20">
+      <div class="Page-sectionWrap Page-sectionWrap--card ">
         <div class="Page-section Page-section--forceStyling js-tooltips">
           {{ page_data.intro  | markdownify }}
         </div>
@@ -32,25 +32,18 @@ layout: page-shell
 
 
       {% if page_data.expenditure_over_time %}
-      <div class="Page-sectionWrap Page-sectionWrap--card">
-          <div class="Page-section">
-            <h2 class="Page-subHeading">Expenditure changes over time</h2>
-            <p>Budgeted expenditure for a department can increase or decrease from year to year. The official budget shows the nominal value of spendiing - the real value is calculated by adjusting for inflation, since most expenditure items are subject to inflation.</p>
-            <p>By stripping out the inflation (GDP or CPI inflation) it is possible to show if a departmental budget is increasing or decreasing in real terms.</p>
-            {% 
-              include components/department-page/ExpenditureChart/index.html 
-              values=page_data.expenditure_over_time
-            %}
-          </div>
-        </div>
+        {% 
+          include components/department-page/ExpenditureChart/index.html 
+          values=page_data.expenditure_over_time
+        %}
       {% endif %}
 
     </main>
     <aside class="Page-sidebar">
 
-      <div class="Page-sectionWrap Page-sectionWrap--card u-marginTop u-marginTop--20">
+      <div class="Page-sectionWrap Page-sectionWrap--card">
         <div class="Page-section">
-          <span>Share this page:</span>
+          <h2 class="Page-subHeading">Share this page:</h2>
           {% include components/universal/Share/index.html %}
         </div>
       </div>

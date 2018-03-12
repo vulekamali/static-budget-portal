@@ -2,17 +2,19 @@ import renderToString from 'preact-render-to-string';
 import canvg from 'canvg-browser';
 import { h, Component } from 'preact';
 import Markup from './partials/Markup.jsx';
-import BarChart from './../../universal/BarChart/index.jsx';
+import ColumnChart from './../../universal/BarChart/index.jsx';
 
 
-export default class ChartDownloadBasicTest extends Component {
+export default class ExpenditureChart extends Component {
   constructor(props) {
     super(props);
 
+    this.sources = Object.keys(this.props.items);
     this.state = {
       selected: '1',
       open: false,
       modal: false,
+      sourceSelected: this.sources[0],
     };
 
     this.canvas = null;
@@ -21,21 +23,16 @@ export default class ChartDownloadBasicTest extends Component {
     this.changeAction = this.changeAction.bind(this);
     this.clickAction = this.clickAction.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.changeSourceAction = this.changeSourceAction.bind(this);
 
-    this.hasNull = Object.keys(this.props.items).reduce(
-      (result, key) => {
-        if (!this.props.items[key]) {
-          return true;
-        }
-
-        return result;
-      },
-      false,
-    );
   }
 
   getCanvas(node) {
     this.canvas = node;
+  }
+
+  changeSourceAction(sourceSelected) {
+    this.setState({ sourceSelected });
   }
 
   changeAction(value) {
@@ -53,10 +50,10 @@ export default class ChartDownloadBasicTest extends Component {
     }
 
     canvg(this.canvas, renderToString(
-      <BarChart
+      <ColumnChart
         scale={parseInt(this.state.selected, 10)}
         downloadable
-        items={this.props.items}
+        items={this.props.items[this.state.sourceSelected]}
         guides
         width={600}
       />,
@@ -94,9 +91,12 @@ export default class ChartDownloadBasicTest extends Component {
         }}
         closeModal={this.closeModal}
         modal={this.state.modal}
-        sourceItems={this.props.items}
+        sourceItems={this.props.items[this.state.sourceSelected]}
         hasNull={this.hasNull}
         year={this.props.year}
+        sources={this.sources}
+        sourceSelected={this.state.sourceSelected}
+        changeSourceAction={this.changeSourceAction}
       />
     );
   }

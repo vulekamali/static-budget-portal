@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 46);
+/******/ 	return __webpack_require__(__webpack_require__.s = 45);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1391,11 +1391,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(126)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(124)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(128)();
+  module.exports = __webpack_require__(126)();
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
@@ -1408,8 +1408,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var keys = __webpack_require__(59);
-var foreach = __webpack_require__(61);
+var keys = __webpack_require__(57);
+var foreach = __webpack_require__(59);
 var hasSymbols = typeof Symbol === 'function' && _typeof(Symbol()) === 'symbol';
 
 var toStr = Object.prototype.toString;
@@ -1476,6 +1476,80 @@ module.exports = defineProperties;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = trimValues;
+function trimValues(value, abbreviated) {
+  var million = abbreviated ? 'm' : 'million';
+  var billion = abbreviated ? 'bn' : 'billion';
+
+  if (value > 1000000000) {
+    return Math.round(value / 1000000000) + ' ' + million;
+  } else if (value > 1000000) {
+    return Math.round(value / 1000000) + ' ' + billion;
+  }
+
+  return Math.round(value);
+}
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = createSizeModifier;
+function createSizeModifier(string) {
+  switch (string) {
+    case 'small':
+      return ' is-small';
+    default:
+      return '';
+  }
+}
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = analyticsEvent;
+function analyticsEvent() {
+  try {
+    var _window;
+
+    return (_window = window).ga.apply(_window, arguments);
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = __webpack_require__(60);
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -1483,31 +1557,31 @@ exports.default = BarChart;
 
 var _preact = __webpack_require__(0);
 
-var _calcMaxValue = __webpack_require__(89);
+var _calcMaxValue = __webpack_require__(87);
 
 var _calcMaxValue2 = _interopRequireDefault(_calcMaxValue);
 
-var _buildGroupSpaceArray = __webpack_require__(90);
+var _buildGroupSpaceArray = __webpack_require__(88);
 
 var _buildGroupSpaceArray2 = _interopRequireDefault(_buildGroupSpaceArray);
 
-var _Breakpoints = __webpack_require__(91);
+var _Breakpoints = __webpack_require__(89);
 
 var _Breakpoints2 = _interopRequireDefault(_Breakpoints);
 
-var _Grid = __webpack_require__(93);
+var _Grid = __webpack_require__(91);
 
 var _Grid2 = _interopRequireDefault(_Grid);
 
-var _Guides = __webpack_require__(94);
+var _Guides = __webpack_require__(92);
 
 var _Guides2 = _interopRequireDefault(_Guides);
 
-var _LineGroups = __webpack_require__(96);
+var _LineGroups = __webpack_require__(94);
 
 var _LineGroups2 = _interopRequireDefault(_LineGroups);
 
-var _Tooltips = __webpack_require__(98);
+var _Tooltips = __webpack_require__(96);
 
 var _Tooltips2 = _interopRequireDefault(_Tooltips);
 
@@ -1600,80 +1674,6 @@ function BarChart(_ref) {
 }
 
 /***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = trimValues;
-function trimValues(value, abbreviated) {
-  var million = abbreviated ? 'm' : 'million';
-  var billion = abbreviated ? 'bn' : 'billion';
-
-  if (value > 1000000000) {
-    return Math.round(value / 1000000000) + ' ' + million;
-  } else if (value > 1000000) {
-    return Math.round(value / 1000000) + ' ' + billion;
-  }
-
-  return Math.round(value);
-}
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = createSizeModifier;
-function createSizeModifier(string) {
-  switch (string) {
-    case 'small':
-      return ' is-small';
-    default:
-      return '';
-  }
-}
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = analyticsEvent;
-function analyticsEvent() {
-  try {
-    var _window;
-
-    return (_window = window).ga.apply(_window, arguments);
-  } catch (err) {
-    console.log(err);
-  }
-}
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(62);
-
-/***/ }),
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1690,15 +1690,15 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _DebounceFunction = __webpack_require__(119);
+var _DebounceFunction = __webpack_require__(117);
 
 var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
 
-var _index = __webpack_require__(6);
+var _index = __webpack_require__(10);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(39);
+var _index3 = __webpack_require__(35);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -1790,7 +1790,7 @@ exports.default = ResponsiveChart;
 "use strict";
 
 
-var bind = __webpack_require__(27);
+var bind = __webpack_require__(23);
 
 module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 
@@ -1905,6 +1905,1949 @@ function breakIntoWrap(string, wrap) {
 "use strict";
 
 
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * 
+ */
+
+function makeEmptyFunction(arg) {
+  return function () {
+    return arg;
+  };
+}
+
+/**
+ * This function accepts and discards inputs; it has no side effects. This is
+ * primarily useful idiomatically for overridable function endpoints which
+ * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
+ */
+var emptyFunction = function emptyFunction() {};
+
+emptyFunction.thatReturns = makeEmptyFunction;
+emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
+emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
+emptyFunction.thatReturnsNull = makeEmptyFunction(null);
+emptyFunction.thatReturnsThis = function () {
+  return this;
+};
+emptyFunction.thatReturnsArgument = function (arg) {
+  return arg;
+};
+
+module.exports = emptyFunction;
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ */
+
+
+
+/**
+ * Use invariant() to assert state which your program assumes to be true.
+ *
+ * Provide sprintf-style format (only %s is supported) and arguments
+ * to provide information about what broke and what you were
+ * expecting.
+ *
+ * The invariant message will be stripped in production, but the invariant
+ * will remain to ensure logic does not differ in production.
+ */
+
+var validateFormat = function validateFormat(format) {};
+
+if (process.env.NODE_ENV !== 'production') {
+  validateFormat = function validateFormat(format) {
+    if (format === undefined) {
+      throw new Error('invariant requires an error message argument');
+    }
+  };
+}
+
+function invariant(condition, format, a, b, c, d, e, f) {
+  validateFormat(format);
+
+  if (!condition) {
+    var error;
+    if (format === undefined) {
+      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+    } else {
+      var args = [a, b, c, d, e, f];
+      var argIndex = 0;
+      error = new Error(format.replace(/%s/g, function () {
+        return args[argIndex++];
+      }));
+      error.name = 'Invariant Violation';
+    }
+
+    error.framesToPop = 1; // we don't care about invariant's own frame
+    throw error;
+  }
+}
+
+module.exports = invariant;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+module.exports = ReactPropTypesSecret;
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/*!
+ * Fuse.js v3.2.0 - Lightweight fuzzy-search (http://fusejs.io)
+ * 
+ * Copyright (c) 2012-2017 Kirollos Risk (http://kiro.me)
+ * All Rights Reserved. Apache Software License 2.0
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ */
+(function webpackUniversalModuleDefinition(root, factory) {
+  if (( false ? 'undefined' : _typeof(exports)) === 'object' && ( false ? 'undefined' : _typeof(module)) === 'object') module.exports = factory();else if (true) !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else if ((typeof exports === 'undefined' ? 'undefined' : _typeof(exports)) === 'object') exports["Fuse"] = factory();else root["Fuse"] = factory();
+})(undefined, function () {
+  return (/******/function (modules) {
+      // webpackBootstrap
+      /******/ // The module cache
+      /******/var installedModules = {};
+      /******/
+      /******/ // The require function
+      /******/function __webpack_require__(moduleId) {
+        /******/
+        /******/ // Check if module is in cache
+        /******/if (installedModules[moduleId]) {
+          /******/return installedModules[moduleId].exports;
+          /******/
+        }
+        /******/ // Create a new module (and put it into the cache)
+        /******/var module = installedModules[moduleId] = {
+          /******/i: moduleId,
+          /******/l: false,
+          /******/exports: {}
+          /******/ };
+        /******/
+        /******/ // Execute the module function
+        /******/modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+        /******/
+        /******/ // Flag the module as loaded
+        /******/module.l = true;
+        /******/
+        /******/ // Return the exports of the module
+        /******/return module.exports;
+        /******/
+      }
+      /******/
+      /******/
+      /******/ // expose the modules object (__webpack_modules__)
+      /******/__webpack_require__.m = modules;
+      /******/
+      /******/ // expose the module cache
+      /******/__webpack_require__.c = installedModules;
+      /******/
+      /******/ // identity function for calling harmony imports with the correct context
+      /******/__webpack_require__.i = function (value) {
+        return value;
+      };
+      /******/
+      /******/ // define getter function for harmony exports
+      /******/__webpack_require__.d = function (exports, name, getter) {
+        /******/if (!__webpack_require__.o(exports, name)) {
+          /******/Object.defineProperty(exports, name, {
+            /******/configurable: false,
+            /******/enumerable: true,
+            /******/get: getter
+            /******/ });
+          /******/
+        }
+        /******/
+      };
+      /******/
+      /******/ // getDefaultExport function for compatibility with non-harmony modules
+      /******/__webpack_require__.n = function (module) {
+        /******/var getter = module && module.__esModule ?
+        /******/function getDefault() {
+          return module['default'];
+        } :
+        /******/function getModuleExports() {
+          return module;
+        };
+        /******/__webpack_require__.d(getter, 'a', getter);
+        /******/return getter;
+        /******/
+      };
+      /******/
+      /******/ // Object.prototype.hasOwnProperty.call
+      /******/__webpack_require__.o = function (object, property) {
+        return Object.prototype.hasOwnProperty.call(object, property);
+      };
+      /******/
+      /******/ // __webpack_public_path__
+      /******/__webpack_require__.p = "";
+      /******/
+      /******/ // Load entry module and return exports
+      /******/return __webpack_require__(__webpack_require__.s = 8);
+      /******/
+    }(
+    /************************************************************************/
+    /******/[
+    /* 0 */
+    /***/function (module, exports, __webpack_require__) {
+
+      "use strict";
+
+      module.exports = function (obj) {
+        return Object.prototype.toString.call(obj) === '[object Array]';
+      };
+
+      /***/
+    },
+    /* 1 */
+    /***/function (module, exports, __webpack_require__) {
+
+      "use strict";
+
+      var _createClass = function () {
+        function defineProperties(target, props) {
+          for (var i = 0; i < props.length; i++) {
+            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+          }
+        }return function (Constructor, protoProps, staticProps) {
+          if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+        };
+      }();
+
+      function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+          throw new TypeError("Cannot call a class as a function");
+        }
+      }
+
+      var bitapRegexSearch = __webpack_require__(5);
+      var bitapSearch = __webpack_require__(7);
+      var patternAlphabet = __webpack_require__(4);
+
+      var Bitap = function () {
+        function Bitap(pattern, _ref) {
+          var _ref$location = _ref.location,
+              location = _ref$location === undefined ? 0 : _ref$location,
+              _ref$distance = _ref.distance,
+              distance = _ref$distance === undefined ? 100 : _ref$distance,
+              _ref$threshold = _ref.threshold,
+              threshold = _ref$threshold === undefined ? 0.6 : _ref$threshold,
+              _ref$maxPatternLength = _ref.maxPatternLength,
+              maxPatternLength = _ref$maxPatternLength === undefined ? 32 : _ref$maxPatternLength,
+              _ref$isCaseSensitive = _ref.isCaseSensitive,
+              isCaseSensitive = _ref$isCaseSensitive === undefined ? false : _ref$isCaseSensitive,
+              _ref$tokenSeparator = _ref.tokenSeparator,
+              tokenSeparator = _ref$tokenSeparator === undefined ? / +/g : _ref$tokenSeparator,
+              _ref$findAllMatches = _ref.findAllMatches,
+              findAllMatches = _ref$findAllMatches === undefined ? false : _ref$findAllMatches,
+              _ref$minMatchCharLeng = _ref.minMatchCharLength,
+              minMatchCharLength = _ref$minMatchCharLeng === undefined ? 1 : _ref$minMatchCharLeng;
+
+          _classCallCheck(this, Bitap);
+
+          this.options = {
+            location: location,
+            distance: distance,
+            threshold: threshold,
+            maxPatternLength: maxPatternLength,
+            isCaseSensitive: isCaseSensitive,
+            tokenSeparator: tokenSeparator,
+            findAllMatches: findAllMatches,
+            minMatchCharLength: minMatchCharLength
+          };
+
+          this.pattern = this.options.isCaseSensitive ? pattern : pattern.toLowerCase();
+
+          if (this.pattern.length <= maxPatternLength) {
+            this.patternAlphabet = patternAlphabet(this.pattern);
+          }
+        }
+
+        _createClass(Bitap, [{
+          key: 'search',
+          value: function search(text) {
+            if (!this.options.isCaseSensitive) {
+              text = text.toLowerCase();
+            }
+
+            // Exact match
+            if (this.pattern === text) {
+              return {
+                isMatch: true,
+                score: 0,
+                matchedIndices: [[0, text.length - 1]]
+              };
+            }
+
+            // When pattern length is greater than the machine word length, just do a a regex comparison
+            var _options = this.options,
+                maxPatternLength = _options.maxPatternLength,
+                tokenSeparator = _options.tokenSeparator;
+
+            if (this.pattern.length > maxPatternLength) {
+              return bitapRegexSearch(text, this.pattern, tokenSeparator);
+            }
+
+            // Otherwise, use Bitap algorithm
+            var _options2 = this.options,
+                location = _options2.location,
+                distance = _options2.distance,
+                threshold = _options2.threshold,
+                findAllMatches = _options2.findAllMatches,
+                minMatchCharLength = _options2.minMatchCharLength;
+
+            return bitapSearch(text, this.pattern, this.patternAlphabet, {
+              location: location,
+              distance: distance,
+              threshold: threshold,
+              findAllMatches: findAllMatches,
+              minMatchCharLength: minMatchCharLength
+            });
+          }
+        }]);
+
+        return Bitap;
+      }();
+
+      // let x = new Bitap("od mn war", {})
+      // let result = x.search("Old Man's War")
+      // console.log(result)
+
+      module.exports = Bitap;
+
+      /***/
+    },
+    /* 2 */
+    /***/function (module, exports, __webpack_require__) {
+
+      "use strict";
+
+      var isArray = __webpack_require__(0);
+
+      var deepValue = function deepValue(obj, path, list) {
+        if (!path) {
+          // If there's no path left, we've gotten to the object we care about.
+          list.push(obj);
+        } else {
+          var dotIndex = path.indexOf('.');
+          var firstSegment = path;
+          var remaining = null;
+
+          if (dotIndex !== -1) {
+            firstSegment = path.slice(0, dotIndex);
+            remaining = path.slice(dotIndex + 1);
+          }
+
+          var value = obj[firstSegment];
+
+          if (value !== null && value !== undefined) {
+            if (!remaining && (typeof value === 'string' || typeof value === 'number')) {
+              list.push(value.toString());
+            } else if (isArray(value)) {
+              // Search each item in the array.
+              for (var i = 0, len = value.length; i < len; i += 1) {
+                deepValue(value[i], remaining, list);
+              }
+            } else if (remaining) {
+              // An object. Recurse further.
+              deepValue(value, remaining, list);
+            }
+          }
+        }
+
+        return list;
+      };
+
+      module.exports = function (obj, path) {
+        return deepValue(obj, path, []);
+      };
+
+      /***/
+    },
+    /* 3 */
+    /***/function (module, exports, __webpack_require__) {
+
+      "use strict";
+
+      module.exports = function () {
+        var matchmask = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+        var minMatchCharLength = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+
+        var matchedIndices = [];
+        var start = -1;
+        var end = -1;
+        var i = 0;
+
+        for (var len = matchmask.length; i < len; i += 1) {
+          var match = matchmask[i];
+          if (match && start === -1) {
+            start = i;
+          } else if (!match && start !== -1) {
+            end = i - 1;
+            if (end - start + 1 >= minMatchCharLength) {
+              matchedIndices.push([start, end]);
+            }
+            start = -1;
+          }
+        }
+
+        // (i-1 - start) + 1 => i - start
+        if (matchmask[i - 1] && i - start >= minMatchCharLength) {
+          matchedIndices.push([start, i - 1]);
+        }
+
+        return matchedIndices;
+      };
+
+      /***/
+    },
+    /* 4 */
+    /***/function (module, exports, __webpack_require__) {
+
+      "use strict";
+
+      module.exports = function (pattern) {
+        var mask = {};
+        var len = pattern.length;
+
+        for (var i = 0; i < len; i += 1) {
+          mask[pattern.charAt(i)] = 0;
+        }
+
+        for (var _i = 0; _i < len; _i += 1) {
+          mask[pattern.charAt(_i)] |= 1 << len - _i - 1;
+        }
+
+        return mask;
+      };
+
+      /***/
+    },
+    /* 5 */
+    /***/function (module, exports, __webpack_require__) {
+
+      "use strict";
+
+      var SPECIAL_CHARS_REGEX = /[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g;
+
+      module.exports = function (text, pattern) {
+        var tokenSeparator = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : / +/g;
+
+        var regex = new RegExp(pattern.replace(SPECIAL_CHARS_REGEX, '\\$&').replace(tokenSeparator, '|'));
+        var matches = text.match(regex);
+        var isMatch = !!matches;
+        var matchedIndices = [];
+
+        if (isMatch) {
+          for (var i = 0, matchesLen = matches.length; i < matchesLen; i += 1) {
+            var match = matches[i];
+            matchedIndices.push([text.indexOf(match), match.length - 1]);
+          }
+        }
+
+        return {
+          // TODO: revisit this score
+          score: isMatch ? 0.5 : 1,
+          isMatch: isMatch,
+          matchedIndices: matchedIndices
+        };
+      };
+
+      /***/
+    },
+    /* 6 */
+    /***/function (module, exports, __webpack_require__) {
+
+      "use strict";
+
+      module.exports = function (pattern, _ref) {
+        var _ref$errors = _ref.errors,
+            errors = _ref$errors === undefined ? 0 : _ref$errors,
+            _ref$currentLocation = _ref.currentLocation,
+            currentLocation = _ref$currentLocation === undefined ? 0 : _ref$currentLocation,
+            _ref$expectedLocation = _ref.expectedLocation,
+            expectedLocation = _ref$expectedLocation === undefined ? 0 : _ref$expectedLocation,
+            _ref$distance = _ref.distance,
+            distance = _ref$distance === undefined ? 100 : _ref$distance;
+
+        var accuracy = errors / pattern.length;
+        var proximity = Math.abs(expectedLocation - currentLocation);
+
+        if (!distance) {
+          // Dodge divide by zero error.
+          return proximity ? 1.0 : accuracy;
+        }
+
+        return accuracy + proximity / distance;
+      };
+
+      /***/
+    },
+    /* 7 */
+    /***/function (module, exports, __webpack_require__) {
+
+      "use strict";
+
+      var bitapScore = __webpack_require__(6);
+      var matchedIndices = __webpack_require__(3);
+
+      module.exports = function (text, pattern, patternAlphabet, _ref) {
+        var _ref$location = _ref.location,
+            location = _ref$location === undefined ? 0 : _ref$location,
+            _ref$distance = _ref.distance,
+            distance = _ref$distance === undefined ? 100 : _ref$distance,
+            _ref$threshold = _ref.threshold,
+            threshold = _ref$threshold === undefined ? 0.6 : _ref$threshold,
+            _ref$findAllMatches = _ref.findAllMatches,
+            findAllMatches = _ref$findAllMatches === undefined ? false : _ref$findAllMatches,
+            _ref$minMatchCharLeng = _ref.minMatchCharLength,
+            minMatchCharLength = _ref$minMatchCharLeng === undefined ? 1 : _ref$minMatchCharLeng;
+
+        var expectedLocation = location;
+        // Set starting location at beginning text and initialize the alphabet.
+        var textLen = text.length;
+        // Highest score beyond which we give up.
+        var currentThreshold = threshold;
+        // Is there a nearby exact match? (speedup)
+        var bestLocation = text.indexOf(pattern, expectedLocation);
+
+        var patternLen = pattern.length;
+
+        // a mask of the matches
+        var matchMask = [];
+        for (var i = 0; i < textLen; i += 1) {
+          matchMask[i] = 0;
+        }
+
+        if (bestLocation !== -1) {
+          var score = bitapScore(pattern, {
+            errors: 0,
+            currentLocation: bestLocation,
+            expectedLocation: expectedLocation,
+            distance: distance
+          });
+          currentThreshold = Math.min(score, currentThreshold);
+
+          // What about in the other direction? (speed up)
+          bestLocation = text.lastIndexOf(pattern, expectedLocation + patternLen);
+
+          if (bestLocation !== -1) {
+            var _score = bitapScore(pattern, {
+              errors: 0,
+              currentLocation: bestLocation,
+              expectedLocation: expectedLocation,
+              distance: distance
+            });
+            currentThreshold = Math.min(_score, currentThreshold);
+          }
+        }
+
+        // Reset the best location
+        bestLocation = -1;
+
+        var lastBitArr = [];
+        var finalScore = 1;
+        var binMax = patternLen + textLen;
+
+        var mask = 1 << patternLen - 1;
+
+        for (var _i = 0; _i < patternLen; _i += 1) {
+          // Scan for the best match; each iteration allows for one more error.
+          // Run a binary search to determine how far from the match location we can stray
+          // at this error level.
+          var binMin = 0;
+          var binMid = binMax;
+
+          while (binMin < binMid) {
+            var _score3 = bitapScore(pattern, {
+              errors: _i,
+              currentLocation: expectedLocation + binMid,
+              expectedLocation: expectedLocation,
+              distance: distance
+            });
+
+            if (_score3 <= currentThreshold) {
+              binMin = binMid;
+            } else {
+              binMax = binMid;
+            }
+
+            binMid = Math.floor((binMax - binMin) / 2 + binMin);
+          }
+
+          // Use the result from this iteration as the maximum for the next.
+          binMax = binMid;
+
+          var start = Math.max(1, expectedLocation - binMid + 1);
+          var finish = findAllMatches ? textLen : Math.min(expectedLocation + binMid, textLen) + patternLen;
+
+          // Initialize the bit array
+          var bitArr = Array(finish + 2);
+
+          bitArr[finish + 1] = (1 << _i) - 1;
+
+          for (var j = finish; j >= start; j -= 1) {
+            var currentLocation = j - 1;
+            var charMatch = patternAlphabet[text.charAt(currentLocation)];
+
+            if (charMatch) {
+              matchMask[currentLocation] = 1;
+            }
+
+            // First pass: exact match
+            bitArr[j] = (bitArr[j + 1] << 1 | 1) & charMatch;
+
+            // Subsequent passes: fuzzy match
+            if (_i !== 0) {
+              bitArr[j] |= (lastBitArr[j + 1] | lastBitArr[j]) << 1 | 1 | lastBitArr[j + 1];
+            }
+
+            if (bitArr[j] & mask) {
+              finalScore = bitapScore(pattern, {
+                errors: _i,
+                currentLocation: currentLocation,
+                expectedLocation: expectedLocation,
+                distance: distance
+              });
+
+              // This match will almost certainly be better than any existing match.
+              // But check anyway.
+              if (finalScore <= currentThreshold) {
+                // Indeed it is
+                currentThreshold = finalScore;
+                bestLocation = currentLocation;
+
+                // Already passed `loc`, downhill from here on in.
+                if (bestLocation <= expectedLocation) {
+                  break;
+                }
+
+                // When passing `bestLocation`, don't exceed our current distance from `expectedLocation`.
+                start = Math.max(1, 2 * expectedLocation - bestLocation);
+              }
+            }
+          }
+
+          // No hope for a (better) match at greater error levels.
+          var _score2 = bitapScore(pattern, {
+            errors: _i + 1,
+            currentLocation: expectedLocation,
+            expectedLocation: expectedLocation,
+            distance: distance
+          });
+
+          if (_score2 > currentThreshold) {
+            break;
+          }
+
+          lastBitArr = bitArr;
+        }
+
+        // Count exact matches (those with a score of 0) to be "almost" exact
+        return {
+          isMatch: bestLocation >= 0,
+          score: finalScore === 0 ? 0.001 : finalScore,
+          matchedIndices: matchedIndices(matchMask, minMatchCharLength)
+        };
+      };
+
+      /***/
+    },
+    /* 8 */
+    /***/function (module, exports, __webpack_require__) {
+
+      "use strict";
+
+      var _createClass = function () {
+        function defineProperties(target, props) {
+          for (var i = 0; i < props.length; i++) {
+            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+          }
+        }return function (Constructor, protoProps, staticProps) {
+          if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+        };
+      }();
+
+      function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+          throw new TypeError("Cannot call a class as a function");
+        }
+      }
+
+      var Bitap = __webpack_require__(1);
+      var deepValue = __webpack_require__(2);
+      var isArray = __webpack_require__(0);
+
+      var Fuse = function () {
+        function Fuse(list, _ref) {
+          var _ref$location = _ref.location,
+              location = _ref$location === undefined ? 0 : _ref$location,
+              _ref$distance = _ref.distance,
+              distance = _ref$distance === undefined ? 100 : _ref$distance,
+              _ref$threshold = _ref.threshold,
+              threshold = _ref$threshold === undefined ? 0.6 : _ref$threshold,
+              _ref$maxPatternLength = _ref.maxPatternLength,
+              maxPatternLength = _ref$maxPatternLength === undefined ? 32 : _ref$maxPatternLength,
+              _ref$caseSensitive = _ref.caseSensitive,
+              caseSensitive = _ref$caseSensitive === undefined ? false : _ref$caseSensitive,
+              _ref$tokenSeparator = _ref.tokenSeparator,
+              tokenSeparator = _ref$tokenSeparator === undefined ? / +/g : _ref$tokenSeparator,
+              _ref$findAllMatches = _ref.findAllMatches,
+              findAllMatches = _ref$findAllMatches === undefined ? false : _ref$findAllMatches,
+              _ref$minMatchCharLeng = _ref.minMatchCharLength,
+              minMatchCharLength = _ref$minMatchCharLeng === undefined ? 1 : _ref$minMatchCharLeng,
+              _ref$id = _ref.id,
+              id = _ref$id === undefined ? null : _ref$id,
+              _ref$keys = _ref.keys,
+              keys = _ref$keys === undefined ? [] : _ref$keys,
+              _ref$shouldSort = _ref.shouldSort,
+              shouldSort = _ref$shouldSort === undefined ? true : _ref$shouldSort,
+              _ref$getFn = _ref.getFn,
+              getFn = _ref$getFn === undefined ? deepValue : _ref$getFn,
+              _ref$sortFn = _ref.sortFn,
+              sortFn = _ref$sortFn === undefined ? function (a, b) {
+            return a.score - b.score;
+          } : _ref$sortFn,
+              _ref$tokenize = _ref.tokenize,
+              tokenize = _ref$tokenize === undefined ? false : _ref$tokenize,
+              _ref$matchAllTokens = _ref.matchAllTokens,
+              matchAllTokens = _ref$matchAllTokens === undefined ? false : _ref$matchAllTokens,
+              _ref$includeMatches = _ref.includeMatches,
+              includeMatches = _ref$includeMatches === undefined ? false : _ref$includeMatches,
+              _ref$includeScore = _ref.includeScore,
+              includeScore = _ref$includeScore === undefined ? false : _ref$includeScore,
+              _ref$verbose = _ref.verbose,
+              verbose = _ref$verbose === undefined ? false : _ref$verbose;
+
+          _classCallCheck(this, Fuse);
+
+          this.options = {
+            location: location,
+            distance: distance,
+            threshold: threshold,
+            maxPatternLength: maxPatternLength,
+            isCaseSensitive: caseSensitive,
+            tokenSeparator: tokenSeparator,
+            findAllMatches: findAllMatches,
+            minMatchCharLength: minMatchCharLength,
+            id: id,
+            keys: keys,
+            includeMatches: includeMatches,
+            includeScore: includeScore,
+            shouldSort: shouldSort,
+            getFn: getFn,
+            sortFn: sortFn,
+            verbose: verbose,
+            tokenize: tokenize,
+            matchAllTokens: matchAllTokens
+          };
+
+          this.setCollection(list);
+        }
+
+        _createClass(Fuse, [{
+          key: 'setCollection',
+          value: function setCollection(list) {
+            this.list = list;
+            return list;
+          }
+        }, {
+          key: 'search',
+          value: function search(pattern) {
+            this._log('---------\nSearch pattern: "' + pattern + '"');
+
+            var _prepareSearchers2 = this._prepareSearchers(pattern),
+                tokenSearchers = _prepareSearchers2.tokenSearchers,
+                fullSearcher = _prepareSearchers2.fullSearcher;
+
+            var _search2 = this._search(tokenSearchers, fullSearcher),
+                weights = _search2.weights,
+                results = _search2.results;
+
+            this._computeScore(weights, results);
+
+            if (this.options.shouldSort) {
+              this._sort(results);
+            }
+
+            return this._format(results);
+          }
+        }, {
+          key: '_prepareSearchers',
+          value: function _prepareSearchers() {
+            var pattern = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+
+            var tokenSearchers = [];
+
+            if (this.options.tokenize) {
+              // Tokenize on the separator
+              var tokens = pattern.split(this.options.tokenSeparator);
+              for (var i = 0, len = tokens.length; i < len; i += 1) {
+                tokenSearchers.push(new Bitap(tokens[i], this.options));
+              }
+            }
+
+            var fullSearcher = new Bitap(pattern, this.options);
+
+            return { tokenSearchers: tokenSearchers, fullSearcher: fullSearcher };
+          }
+        }, {
+          key: '_search',
+          value: function _search() {
+            var tokenSearchers = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+            var fullSearcher = arguments[1];
+
+            var list = this.list;
+            var resultMap = {};
+            var results = [];
+
+            // Check the first item in the list, if it's a string, then we assume
+            // that every item in the list is also a string, and thus it's a flattened array.
+            if (typeof list[0] === 'string') {
+              // Iterate over every item
+              for (var i = 0, len = list.length; i < len; i += 1) {
+                this._analyze({
+                  key: '',
+                  value: list[i],
+                  record: i,
+                  index: i
+                }, {
+                  resultMap: resultMap,
+                  results: results,
+                  tokenSearchers: tokenSearchers,
+                  fullSearcher: fullSearcher
+                });
+              }
+
+              return { weights: null, results: results };
+            }
+
+            // Otherwise, the first item is an Object (hopefully), and thus the searching
+            // is done on the values of the keys of each item.
+            var weights = {};
+            for (var _i = 0, _len = list.length; _i < _len; _i += 1) {
+              var item = list[_i];
+              // Iterate over every key
+              for (var j = 0, keysLen = this.options.keys.length; j < keysLen; j += 1) {
+                var key = this.options.keys[j];
+                if (typeof key !== 'string') {
+                  weights[key.name] = {
+                    weight: 1 - key.weight || 1
+                  };
+                  if (key.weight <= 0 || key.weight > 1) {
+                    throw new Error('Key weight has to be > 0 and <= 1');
+                  }
+                  key = key.name;
+                } else {
+                  weights[key] = {
+                    weight: 1
+                  };
+                }
+
+                this._analyze({
+                  key: key,
+                  value: this.options.getFn(item, key),
+                  record: item,
+                  index: _i
+                }, {
+                  resultMap: resultMap,
+                  results: results,
+                  tokenSearchers: tokenSearchers,
+                  fullSearcher: fullSearcher
+                });
+              }
+            }
+
+            return { weights: weights, results: results };
+          }
+        }, {
+          key: '_analyze',
+          value: function _analyze(_ref2, _ref3) {
+            var key = _ref2.key,
+                _ref2$arrayIndex = _ref2.arrayIndex,
+                arrayIndex = _ref2$arrayIndex === undefined ? -1 : _ref2$arrayIndex,
+                value = _ref2.value,
+                record = _ref2.record,
+                index = _ref2.index;
+            var _ref3$tokenSearchers = _ref3.tokenSearchers,
+                tokenSearchers = _ref3$tokenSearchers === undefined ? [] : _ref3$tokenSearchers,
+                _ref3$fullSearcher = _ref3.fullSearcher,
+                fullSearcher = _ref3$fullSearcher === undefined ? [] : _ref3$fullSearcher,
+                _ref3$resultMap = _ref3.resultMap,
+                resultMap = _ref3$resultMap === undefined ? {} : _ref3$resultMap,
+                _ref3$results = _ref3.results,
+                results = _ref3$results === undefined ? [] : _ref3$results;
+
+            // Check if the texvaluet can be searched
+            if (value === undefined || value === null) {
+              return;
+            }
+
+            var exists = false;
+            var averageScore = -1;
+            var numTextMatches = 0;
+
+            if (typeof value === 'string') {
+              this._log('\nKey: ' + (key === '' ? '-' : key));
+
+              var mainSearchResult = fullSearcher.search(value);
+              this._log('Full text: "' + value + '", score: ' + mainSearchResult.score);
+
+              if (this.options.tokenize) {
+                var words = value.split(this.options.tokenSeparator);
+                var scores = [];
+
+                for (var i = 0; i < tokenSearchers.length; i += 1) {
+                  var tokenSearcher = tokenSearchers[i];
+
+                  this._log('\nPattern: "' + tokenSearcher.pattern + '"');
+
+                  // let tokenScores = []
+                  var hasMatchInText = false;
+
+                  for (var j = 0; j < words.length; j += 1) {
+                    var word = words[j];
+                    var tokenSearchResult = tokenSearcher.search(word);
+                    var obj = {};
+                    if (tokenSearchResult.isMatch) {
+                      obj[word] = tokenSearchResult.score;
+                      exists = true;
+                      hasMatchInText = true;
+                      scores.push(tokenSearchResult.score);
+                    } else {
+                      obj[word] = 1;
+                      if (!this.options.matchAllTokens) {
+                        scores.push(1);
+                      }
+                    }
+                    this._log('Token: "' + word + '", score: ' + obj[word]);
+                    // tokenScores.push(obj)
+                  }
+
+                  if (hasMatchInText) {
+                    numTextMatches += 1;
+                  }
+                }
+
+                averageScore = scores[0];
+                var scoresLen = scores.length;
+                for (var _i2 = 1; _i2 < scoresLen; _i2 += 1) {
+                  averageScore += scores[_i2];
+                }
+                averageScore = averageScore / scoresLen;
+
+                this._log('Token score average:', averageScore);
+              }
+
+              var finalScore = mainSearchResult.score;
+              if (averageScore > -1) {
+                finalScore = (finalScore + averageScore) / 2;
+              }
+
+              this._log('Score average:', finalScore);
+
+              var checkTextMatches = this.options.tokenize && this.options.matchAllTokens ? numTextMatches >= tokenSearchers.length : true;
+
+              this._log('\nCheck Matches: ' + checkTextMatches);
+
+              // If a match is found, add the item to <rawResults>, including its score
+              if ((exists || mainSearchResult.isMatch) && checkTextMatches) {
+                // Check if the item already exists in our results
+                var existingResult = resultMap[index];
+                if (existingResult) {
+                  // Use the lowest score
+                  // existingResult.score, bitapResult.score
+                  existingResult.output.push({
+                    key: key,
+                    arrayIndex: arrayIndex,
+                    value: value,
+                    score: finalScore,
+                    matchedIndices: mainSearchResult.matchedIndices
+                  });
+                } else {
+                  // Add it to the raw result list
+                  resultMap[index] = {
+                    item: record,
+                    output: [{
+                      key: key,
+                      arrayIndex: arrayIndex,
+                      value: value,
+                      score: finalScore,
+                      matchedIndices: mainSearchResult.matchedIndices
+                    }]
+                  };
+
+                  results.push(resultMap[index]);
+                }
+              }
+            } else if (isArray(value)) {
+              for (var _i3 = 0, len = value.length; _i3 < len; _i3 += 1) {
+                this._analyze({
+                  key: key,
+                  arrayIndex: _i3,
+                  value: value[_i3],
+                  record: record,
+                  index: index
+                }, {
+                  resultMap: resultMap,
+                  results: results,
+                  tokenSearchers: tokenSearchers,
+                  fullSearcher: fullSearcher
+                });
+              }
+            }
+          }
+        }, {
+          key: '_computeScore',
+          value: function _computeScore(weights, results) {
+            this._log('\n\nComputing score:\n');
+
+            for (var i = 0, len = results.length; i < len; i += 1) {
+              var output = results[i].output;
+              var scoreLen = output.length;
+
+              var totalScore = 0;
+              var bestScore = 1;
+
+              for (var j = 0; j < scoreLen; j += 1) {
+                var weight = weights ? weights[output[j].key].weight : 1;
+                var score = weight === 1 ? output[j].score : output[j].score || 0.001;
+                var nScore = score * weight;
+
+                if (weight !== 1) {
+                  bestScore = Math.min(bestScore, nScore);
+                } else {
+                  output[j].nScore = nScore;
+                  totalScore += nScore;
+                }
+              }
+
+              results[i].score = bestScore === 1 ? totalScore / scoreLen : bestScore;
+
+              this._log(results[i]);
+            }
+          }
+        }, {
+          key: '_sort',
+          value: function _sort(results) {
+            this._log('\n\nSorting....');
+            results.sort(this.options.sortFn);
+          }
+        }, {
+          key: '_format',
+          value: function _format(results) {
+            var finalOutput = [];
+
+            this._log('\n\nOutput:\n\n', JSON.stringify(results));
+
+            var transformers = [];
+
+            if (this.options.includeMatches) {
+              transformers.push(function (result, data) {
+                var output = result.output;
+                data.matches = [];
+
+                for (var i = 0, len = output.length; i < len; i += 1) {
+                  var item = output[i];
+
+                  if (item.matchedIndices.length === 0) {
+                    continue;
+                  }
+
+                  var obj = {
+                    indices: item.matchedIndices,
+                    value: item.value
+                  };
+                  if (item.key) {
+                    obj.key = item.key;
+                  }
+                  if (item.hasOwnProperty('arrayIndex') && item.arrayIndex > -1) {
+                    obj.arrayIndex = item.arrayIndex;
+                  }
+                  data.matches.push(obj);
+                }
+              });
+            }
+
+            if (this.options.includeScore) {
+              transformers.push(function (result, data) {
+                data.score = result.score;
+              });
+            }
+
+            for (var i = 0, len = results.length; i < len; i += 1) {
+              var result = results[i];
+
+              if (this.options.id) {
+                result.item = this.options.getFn(result.item, this.options.id)[0];
+              }
+
+              if (!transformers.length) {
+                finalOutput.push(result.item);
+                continue;
+              }
+
+              var data = {
+                item: result.item
+              };
+
+              for (var j = 0, _len2 = transformers.length; j < _len2; j += 1) {
+                transformers[j](result, data);
+              }
+
+              finalOutput.push(data);
+            }
+
+            return finalOutput;
+          }
+        }, {
+          key: '_log',
+          value: function _log() {
+            if (this.options.verbose) {
+              var _console;
+
+              (_console = console).log.apply(_console, arguments);
+            }
+          }
+        }]);
+
+        return Fuse;
+      }();
+
+      module.exports = Fuse;
+
+      /***/
+    }]
+    /******/)
+  );
+});
+//# sourceMappingURL=fuse.js.map
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(170)(module)))
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = RevenueMarkup;
+
+var _preact = __webpack_require__(0);
+
+var _trimValues = __webpack_require__(6);
+
+var _trimValues2 = _interopRequireDefault(_trimValues);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function RevenueMarkup(_ref) {
+  var items = _ref.items;
+
+  var keys = Object.keys(items);
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'ValueBlocks' },
+    keys.map(function (key) {
+      var link = items[key].link;
+      var value = items[key].value;
+      var Tag = link ? 'a' : 'div';
+
+      return (0, _preact.h)(
+        'div',
+        { className: 'ValueBlocks-itemWrap' },
+        (0, _preact.h)(
+          Tag,
+          { href: link, className: 'ValueBlocks-item' + (link ? ' ValueBlocks-item--link' : '') },
+          (0, _preact.h)(
+            'div',
+            { className: 'ValueBlocks-title' },
+            key
+          ),
+          value ? (0, _preact.h)(
+            'div',
+            { className: 'ValueBlocks-value' },
+            'R',
+            (0, _trimValues2.default)(value)
+          ) : null
+        )
+      );
+    })
+  );
+}
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var strictUriEncode = __webpack_require__(52);
+var objectAssign = __webpack_require__(21);
+var decodeComponent = __webpack_require__(53);
+
+function encoderForArrayFormat(opts) {
+	switch (opts.arrayFormat) {
+		case 'index':
+			return function (key, value, index) {
+				return value === null ? [encode(key, opts), '[', index, ']'].join('') : [encode(key, opts), '[', encode(index, opts), ']=', encode(value, opts)].join('');
+			};
+
+		case 'bracket':
+			return function (key, value) {
+				return value === null ? encode(key, opts) : [encode(key, opts), '[]=', encode(value, opts)].join('');
+			};
+
+		default:
+			return function (key, value) {
+				return value === null ? encode(key, opts) : [encode(key, opts), '=', encode(value, opts)].join('');
+			};
+	}
+}
+
+function parserForArrayFormat(opts) {
+	var result;
+
+	switch (opts.arrayFormat) {
+		case 'index':
+			return function (key, value, accumulator) {
+				result = /\[(\d*)\]$/.exec(key);
+
+				key = key.replace(/\[\d*\]$/, '');
+
+				if (!result) {
+					accumulator[key] = value;
+					return;
+				}
+
+				if (accumulator[key] === undefined) {
+					accumulator[key] = {};
+				}
+
+				accumulator[key][result[1]] = value;
+			};
+
+		case 'bracket':
+			return function (key, value, accumulator) {
+				result = /(\[\])$/.exec(key);
+				key = key.replace(/\[\]$/, '');
+
+				if (!result) {
+					accumulator[key] = value;
+					return;
+				} else if (accumulator[key] === undefined) {
+					accumulator[key] = [value];
+					return;
+				}
+
+				accumulator[key] = [].concat(accumulator[key], value);
+			};
+
+		default:
+			return function (key, value, accumulator) {
+				if (accumulator[key] === undefined) {
+					accumulator[key] = value;
+					return;
+				}
+
+				accumulator[key] = [].concat(accumulator[key], value);
+			};
+	}
+}
+
+function encode(value, opts) {
+	if (opts.encode) {
+		return opts.strict ? strictUriEncode(value) : encodeURIComponent(value);
+	}
+
+	return value;
+}
+
+function keysSorter(input) {
+	if (Array.isArray(input)) {
+		return input.sort();
+	} else if ((typeof input === 'undefined' ? 'undefined' : _typeof(input)) === 'object') {
+		return keysSorter(Object.keys(input)).sort(function (a, b) {
+			return Number(a) - Number(b);
+		}).map(function (key) {
+			return input[key];
+		});
+	}
+
+	return input;
+}
+
+exports.extract = function (str) {
+	var queryStart = str.indexOf('?');
+	if (queryStart === -1) {
+		return '';
+	}
+	return str.slice(queryStart + 1);
+};
+
+exports.parse = function (str, opts) {
+	opts = objectAssign({ arrayFormat: 'none' }, opts);
+
+	var formatter = parserForArrayFormat(opts);
+
+	// Create an object with no prototype
+	// https://github.com/sindresorhus/query-string/issues/47
+	var ret = Object.create(null);
+
+	if (typeof str !== 'string') {
+		return ret;
+	}
+
+	str = str.trim().replace(/^[?#&]/, '');
+
+	if (!str) {
+		return ret;
+	}
+
+	str.split('&').forEach(function (param) {
+		var parts = param.replace(/\+/g, ' ').split('=');
+		// Firefox (pre 40) decodes `%3D` to `=`
+		// https://github.com/sindresorhus/query-string/pull/37
+		var key = parts.shift();
+		var val = parts.length > 0 ? parts.join('=') : undefined;
+
+		// missing `=` should be `null`:
+		// http://w3.org/TR/2012/WD-url-20120524/#collect-url-parameters
+		val = val === undefined ? null : decodeComponent(val);
+
+		formatter(decodeComponent(key), val, ret);
+	});
+
+	return Object.keys(ret).sort().reduce(function (result, key) {
+		var val = ret[key];
+		if (Boolean(val) && (typeof val === 'undefined' ? 'undefined' : _typeof(val)) === 'object' && !Array.isArray(val)) {
+			// Sort object keys, not values
+			result[key] = keysSorter(val);
+		} else {
+			result[key] = val;
+		}
+
+		return result;
+	}, Object.create(null));
+};
+
+exports.stringify = function (obj, opts) {
+	var defaults = {
+		encode: true,
+		strict: true,
+		arrayFormat: 'none'
+	};
+
+	opts = objectAssign(defaults, opts);
+
+	if (opts.sort === false) {
+		opts.sort = function () {};
+	}
+
+	var formatter = encoderForArrayFormat(opts);
+
+	return obj ? Object.keys(obj).sort(opts.sort).map(function (key) {
+		var val = obj[key];
+
+		if (val === undefined) {
+			return '';
+		}
+
+		if (val === null) {
+			return encode(key, opts);
+		}
+
+		if (Array.isArray(val)) {
+			var result = [];
+
+			val.slice().forEach(function (val2) {
+				if (val2 === undefined) {
+					return;
+				}
+
+				result.push(formatter(key, val2, result.length));
+			});
+
+			return result.join('&');
+		}
+
+		return encode(key, opts) + '=' + encode(val, opts);
+	}).filter(function (x) {
+		return x.length > 0;
+	}).join('&') : '';
+};
+
+exports.parseUrl = function (str, opts) {
+	return {
+		url: str.split('?')[0] || '',
+		query: this.parse(this.extract(str), opts)
+	};
+};
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+
+/* eslint-disable no-unused-vars */
+
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+
+function toObject(val) {
+	if (val === null || val === undefined) {
+		throw new TypeError('Object.assign cannot be called with null or undefined');
+	}
+
+	return Object(val);
+}
+
+function shouldUseNative() {
+	try {
+		if (!Object.assign) {
+			return false;
+		}
+
+		// Detect buggy property enumeration order in older V8 versions.
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
+		var test1 = new String('abc'); // eslint-disable-line no-new-wrappers
+		test1[5] = 'de';
+		if (Object.getOwnPropertyNames(test1)[0] === '5') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test2 = {};
+		for (var i = 0; i < 10; i++) {
+			test2['_' + String.fromCharCode(i)] = i;
+		}
+		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
+			return test2[n];
+		});
+		if (order2.join('') !== '0123456789') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test3 = {};
+		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
+			test3[letter] = letter;
+		});
+		if (Object.keys(Object.assign({}, test3)).join('') !== 'abcdefghijklmnopqrst') {
+			return false;
+		}
+
+		return true;
+	} catch (err) {
+		// We don't expect any of the above to throw, but better to be safe.
+		return false;
+	}
+}
+
+module.exports = shouldUseNative() ? Object.assign : function (target, source) {
+	var from;
+	var to = toObject(target);
+	var symbols;
+
+	for (var s = 1; s < arguments.length; s++) {
+		from = Object(arguments[s]);
+
+		for (var key in from) {
+			if (hasOwnProperty.call(from, key)) {
+				to[key] = from[key];
+			}
+		}
+
+		if (getOwnPropertySymbols) {
+			symbols = getOwnPropertySymbols(from);
+			for (var i = 0; i < symbols.length; i++) {
+				if (propIsEnumerable.call(from, symbols[i])) {
+					to[symbols[i]] = from[symbols[i]];
+				}
+			}
+		}
+	}
+
+	return to;
+};
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var ES = __webpack_require__(9);
+var supportsDescriptors = __webpack_require__(5).supportsDescriptors;
+
+/*! https://mths.be/array-from v0.2.0 by @mathias */
+module.exports = function from(arrayLike) {
+	var defineProperty = supportsDescriptors ? Object.defineProperty : function put(object, key, descriptor) {
+		object[key] = descriptor.value;
+	};
+	var C = this;
+	if (arrayLike === null || typeof arrayLike === 'undefined') {
+		throw new TypeError('`Array.from` requires an array-like object, not `null` or `undefined`');
+	}
+	var items = ES.ToObject(arrayLike);
+
+	var mapFn, T;
+	if (typeof arguments[1] !== 'undefined') {
+		mapFn = arguments[1];
+		if (!ES.IsCallable(mapFn)) {
+			throw new TypeError('When provided, the second argument to `Array.from` must be a function');
+		}
+		if (arguments.length > 2) {
+			T = arguments[2];
+		}
+	}
+
+	var len = ES.ToLength(items.length);
+	var A = ES.IsCallable(C) ? ES.ToObject(new C(len)) : new Array(len);
+	var k = 0;
+	var kValue, mappedValue;
+	while (k < len) {
+		kValue = items[k];
+		if (mapFn) {
+			mappedValue = typeof T === 'undefined' ? mapFn(kValue, k) : ES.Call(mapFn, T, [kValue, k]);
+		} else {
+			mappedValue = kValue;
+		}
+		defineProperty(A, k, {
+			'configurable': true,
+			'enumerable': true,
+			'value': mappedValue,
+			'writable': true
+		});
+		k += 1;
+	}
+	A.length = len;
+	return A;
+};
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var implementation = __webpack_require__(61);
+
+module.exports = Function.prototype.bind || implementation;
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+module.exports = function isPrimitive(value) {
+	return value === null || typeof value !== 'function' && (typeof value === 'undefined' ? 'undefined' : _typeof(value)) !== 'object';
+};
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = Number.isNaN || function isNaN(a) {
+	return a !== a;
+};
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var $isNaN = Number.isNaN || function (a) {
+  return a !== a;
+};
+
+module.exports = Number.isFinite || function (x) {
+  return typeof x === 'number' && !$isNaN(x) && x !== Infinity && x !== -Infinity;
+};
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function sign(number) {
+	return number >= 0 ? 1 : -1;
+};
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function mod(number, modulo) {
+	var remain = number % modulo;
+	return Math.floor(remain >= 0 ? remain : remain + modulo);
+};
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var ES = __webpack_require__(9);
+var implementation = __webpack_require__(22);
+
+var tryCall = function tryCall(fn) {
+	try {
+		fn();
+		return true;
+	} catch (e) {
+		return false;
+	}
+};
+
+module.exports = function getPolyfill() {
+	var implemented = ES.IsCallable(Array.from) && tryCall(function () {
+		Array.from({ 'length': -Infinity });
+	}) && !tryCall(function () {
+		Array.from([], undefined);
+	});
+
+	return implemented ? Array.from : implementation;
+};
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var g;
+
+// This works in non-strict mode
+g = function () {
+	return this;
+}();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1, eval)("this");
+} catch (e) {
+	// This works if the window reference is available
+	if ((typeof window === "undefined" ? "undefined" : _typeof(window)) === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+// Array.prototype.findIndex - MIT License (c) 2013 Paul Miller <http://paulmillr.com>
+// For all details and docs: <https://github.com/paulmillr/Array.prototype.findIndex>
+
+
+var ES = __webpack_require__(9);
+
+module.exports = function findIndex(predicate) {
+	var list = ES.ToObject(this);
+	var length = ES.ToLength(list.length);
+	if (!ES.IsCallable(predicate)) {
+		throw new TypeError('Array#findIndex: predicate must be a function');
+	}
+	if (length === 0) return -1;
+	var thisArg = arguments[1];
+	for (var i = 0, value; i < length; i++) {
+		value = list[i];
+		if (ES.Call(predicate, thisArg, [value, i, list])) return i;
+	}
+	return -1;
+};
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function getPolyfill() {
+	// Detect if an implementation exists
+	// Detect early implementations which skipped holes in sparse arrays
+	var implemented = Array.prototype.findIndex && [, 1].findIndex(function (item, idx) {
+		return idx === 0;
+	}) === 0;
+
+	return implemented ? Array.prototype.findIndex : __webpack_require__(31);
+};
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports) {
+
+module.exports = {"Accounting officer":"The public servant in a department who is accountable to Parliament for financial management, usually the director-general or head of the department.","Accrual":"An accounting convention by which payments and receipts are recorded as they occur, even if no cash flow takes place.","Acquisition debt":"Debt used to purchase shares or assets.","Ad valorem duties":"Duties levied on commodities as a certain percentage of their value.","Adjustments estimate":"Presentation to Parliament of the amendments to be made to the appropriations voted in the main budget for the year.","Administered prices":"Prices set outside ordinary market processes through administrative decisions by government, a public entity or a regulator.","Agro-processing":"Manufacturing activities that transform raw materials and intermediary goods derived from agriculture into intermediate or final goods.","Allocated expenditure":"The part of the national budget that can be divided between the national, provincial and local spheres of government, after interest and the contingency reserve have been taken into account.","Amortisation":"The repayment of a loan by instalments over the duration of the loan.","Annuity":"A fixed amount of money paid over a period of time as a return on an investment.","Anti-avoidance rule":"A provision aimed at preventing tax avoidance. See principal purpose test.","Anti-fragmentation rule":"A rule that aims to prevent taxpayers from artificially avoiding permanent establishment status by breaking up a cohesive business into several small operations.","Appropriation":"The approval by Parliament of spending from the National Revenue Fund, or by a provincial legislature from a provincial revenue fund.","Artificial debt":"A \"loan\" that is presented as debt but is in effect equity. Often used in tax avoidance or evasion.","Asset price bubble":"A condition occurring when prices for a category of assets rise above the level justified by economic fundamentals.","Balance of payments":"A summary statement of all the international transactions of the residents of a country with the rest of the world over a particular period of time.","Base erosion and profit shifting":"Corporate tax-planning strategies that exploit the gaps and mismatches in tax laws between countries to artificially shift taxable income to lower or no-tax jurisdictions. See also tax evasion and profit shifting.","Basel III":"Reforms developed by the Basel Committee on Banking Supervision to strengthen the regulation, supervision and risk management of the banking sector.","Baseline":"The initial allocations used during the budget process, derived from the previous year's forward estimates.","Basis point":"One hundredth of one per cent.","Beneficiation":"Manufacturing activities that transform raw minerals into higher-value products.","Bond":"A certificate of debt issued by a government or corporation guaranteeing payment of the original investment plus interest by a specified future date.","Bond premium":"Amount by which the purchase price of a bond is greater than its par value.","Bond spread":"The difference in yield between two bonds.","Bond-switch programme":"An auction that aims to ease pressure on targeted areas of the redemption profile by exchanging shorter-dated debt for longer-term debt. See switch auction.","Bracket creep":"Increased real tax liability that arises when the personal income tax tables are not fully adjusted for inflation.","Budget balance":"The difference between budgeted expenditure and budgeted revenue. If expenditure exceeds revenue, the budget is in deficit. If the reverse is true, it is in surplus.","Capital adequacy":"A measure of a financial institution’s capital, expressed as a percentage of its credit exposure.","Capital asset":"Property of any kind, including assets that are movable or immovable, tangible or intangible, fixed or circulating, but excluding trading stock held for the purpose of realising a financial or economic return.","Capital expenditure":"Spending on assets such as buildings, land, infrastructure and equipment.","Capital flow":"A flow of investments in or out of the country.","Capital formation":"A measure of the net increase in the country’s total stock of capital goods, after allowing for depreciation.","Capital gains tax":"Tax levied on the income realised from the disposal of a capital asset by a taxpayer. A capital gain is the excess of the selling price over the purchase price of the capital asset.","Capital goods":"Durable goods used over a period of time for the production of other goods. See also intermediate goods.","Carbon tax":"An environmental tax on emissions of carbon dioxide (CO2).","Category A, B and C municipalities":"Municipal categories established by the Constitution: Category A, or metropolitan municipalities; Category B, or local municipalities; and Category C, or district municipalities.","Collateral":"An asset placed as a guarantee for the repayment of debt, to be recouped in the case of a default.","Commercial paper issuances":"Debt issued by companies through short-term promissory notes.","Conditional grants":"Allocations of money from one sphere of government to another, conditional on certain services being delivered or on compliance with specified requirements.","Connected person debt/credit":"Debt or credit granted by a person/entity to a connected person/entity. In the case of a holding company, for example, a subsidiary company would be a connected person.","Consolidated general government":"National, provincial and local government, as well as extra-budgetary government institutions and social security funds.","Consolidated government expenditure":"Total expenditure by national and provincial government, social security funds and selected public entities, including transfers and subsidies to municipalities, businesses and other entities.","Consumer price index (CPI)":"The measure of inflation based on prices in a basket of goods and services.","Consumption expenditure":"Expenditure on goods and services, including salaries, which are used up within a short period of time, usually a year.","Contingency reserve":"An amount set aside, but not allocated in advance, to accommodate changes to the economic environment and to meet unforeseeable spending pressures.","Contingent liability":"A government obligation, such as a guarantee, that will only result in expenditure upon the occurrence of a specific event. See government guarantee.","Controlled foreign entity":"A foreign business in which South Africans hold a greater than 50 per cent interest, usually of the share capital of a company.","Corporatisation":"The transformation of state-owned enterprises into commercial entities, subject to commercial legal requirements and governance structures, while the state retains ownership.","Cost-push inflation":"Inflation that is caused by an increase in production costs, such as wages or oil prices.","Countercyclical fiscal policy":"Policy that has the opposite effect on economic activity to that caused by the business cycle, such as slowing spending growth in a boom period and accelerating spending in a recession.","Coupon (bond)":"The periodic interest payment made to bondholders during the life of the bond. The interest is usually paid twice a year.","Credit rating":"An indicator of the risk of default by a borrower or the riskiness of a financial instrument. Credit ratings generally fit into three broad risk categories: minimal or low, moderate and high. These categories indicate the extent of a borrower’s capacity to meet their financial obligations or the probability that the value of a financial instrument will be realised. Investments rated as high risk are considered sub-investment grade (or “junk”).","Crowding-in":"An increase in private investment through the income-raising effect of government spending financed by deficits.","Crowding-out":"A fall in private investment or consumption as a result of increased government expenditure financed through borrowing, thereby competing for loanable funds and raising the interest rate, which curtails private investment and consumption spending.","Currency risk":"The potential for a change in the price of a currency that would affect investors with assets, liabilities or operations denominated in other currencies.","Current account (of the balance of payments)":"The difference between total imports and total exports, taking into account service payments and receipts, interest, dividends and transfers. The current account can be in deficit or surplus. See also trade balance.","Current balance":"The difference between revenue and current expenditure, which consists of compensation of employees, goods and services, and interest and rent on land.","Current expenditure":"Government expenditure on salaries and goods and services, such as rent, maintenance and interest payments. See also consumption expenditure.","Customs duties":"Tax levied on imported goods.","Debenture":"An unsecured loan backed by general credit rather than by specified assets.","Debt redemption profile":"The set of fixed repayment dates and amounts to which an issuer of debt, such as a preferred stock or bond, has committed to meeting.","Debt switching":"The exchange of bonds to manage refinancing risk or improve tradability.","Debt-service costs":"The cost of interest on government debt and other costs directly associated with borrowing.","Deflation":"A consistent decrease in the price of goods and services.","Deleveraging":"The reduction of debt previously used to increase the potential return of an investment.","Depreciation (capital)":"A reduction in the value of fixed capital as a result of wear and tear or redundancy.","Depreciation (exchange rate)":"A reduction in the external value of a currency.","Derivative financial instrument":"A financial asset that derives its value from an underlying asset, which may be a physical asset such as gold, or a financial asset such as a government bond.","Designated countries":"Foreign countries from which income may be exempt from South African tax under certain circumstances. See also double tax agreement.","Development finance institutions":"State agencies that aim to meet the credit needs of riskier but socially and economically desirable projects that are beyond the acceptance limits of commercial banks.","Direct taxes":"Taxes charged on taxable income or capital of individuals and legal entities.","Discretionary trust":"A trust where the executor has the choice of whether and how much of the trust’s income or capital is to be distributed to beneficiaries. The beneficiaries have only provisional rights to the income or capital of the trust.","Disposable income":"Total income by households less all taxes and employee contributions.","Dissaving":"An excess of current expenditure, including the depreciation of fixed capital, over current income.","Dividend":"The distribution of a portion of a company's earnings to a class of its shareholders.","Dividend withholding tax":"A tax on dividends that is subtracted and withheld by a company or intermediary before the net dividend is paid to the shareholder.","Division of revenue":"The allocation of funds between spheres of government, as required by the Constitution. See also equitable share.","Domestic demand":"The total level of spending in an economy, including imports but excluding exports.","Double tax agreement":"An agreement between two countries to prevent income that is taxed in one country from being taxed in the other as well. See also designated countries.","Economic cost":"The cost of an alternative that must be forgone to pursue a certain action. In other words, the benefits that could have been received by taking an alternative action.","Economic growth":"An increase in the total amount of output, income and spending in the economy.","Economic rent":"The difference between the return made by a factor of production (capital or labour) and the return necessary to keep the factor in its current occupation. For example, a firm making excess profits is earning economic rent.","Economically active population":"The part of the population that is of working age and is either employed or seeking work.","Effective tax rate":"Actual tax liability (or a reasonable estimate thereof) expressed as a percentage of a pre-tax income base rather than as a percentage of taxable income. In other words, tax rates that take into account not only the statutory or nominal tax rate, but also other aspects of the tax system (for example, allowable deductions), which determine the tax liability.","Embedded derivative":"A provision in a contract modifying its cash flows by making them dependent on an underlying measure – such as interest or exchange rates, or commodity prices – the value of which changes independently.","Emerging economies":"A name given by international investors to middle-income economies.","Employment coefficient":"The ratio of employment growth to economic growth.","Equitable share":"The allocation of revenue to the national, provincial and local spheres of government as required by the Constitution. See also division of revenue.","Equity finance":"Raising money by selling shares of stock to investors, who receive an ownership interest in return.","Exchange control":"Rules that regulate the flow of currency out of South Africa, or restrict the amount of foreign assets held by South African individuals and companies.","Exchange-traded funds":"Funds that track indexes, commodities or baskets of assets, and trade like stocks.","Excise duties":"Taxes on the manufacture or sale of certain domestic or imported products. Excise duties are usually charged on products such as alcoholic beverages, tobacco and petroleum.","Expenditure ceiling":"The maximum allowable level of expenditure to which government has committed itself.","Extra-budgetary institutions":"Public entities not directly funded from the fiscus.","Fair-value adjustment":"A change in the value of an asset or liability resulting from the periodic reassessment of its expected future economic in- or outflows.","Financial Services Board":"An independent institution established by statute that regulates insurers, intermediaries, retirement funds, friendly societies, unit trust schemes, management companies and financial markets.","Financial Stability Board":"An international body made up of representatives of financial authorities and institutions, and central banks. It proposes regulatory, supervisory and other policies in the interest of financial stability.","Financial account":"A statement of all financial transactions between the nation and the rest of the world, including portfolio and fixed investment flows and movements in foreign reserves.","Financial and Fiscal Commission (FFC)":"An independent body established by the Constitution to make recommendations to Parliament and provincial legislatures about financial issues affecting the three spheres of government.","Financial year":"The 12 months according to which companies and organisations budget and account. See also fiscal year.","Fiscal consolidation":"Policy aimed at reducing government deficits and debt accumulation.","Fiscal incidence":"The combined overall economic impact that fiscal policy has on the economy.","Fiscal leakage":"The outflow of revenue from an economy through tax evasion and avoidance.","Fiscal policy":"Policy on taxation, public spending and borrowing by the government.","Fiscal space":"The ability of government’s budget to provide additional resources for a desired programme without jeopardising fiscal or debt sustainability.","Fiscal year":"The 12 months on which government budgets are based, beginning 1 April and ending 31 March of the subsequent calendar year.","Fixed investment/capital formation":"Spending on buildings, machinery and equipment contributing to production capacity in the economy. See also gross fixed-capital formation.","Fixed-income bond":"A bond that pays a specific interest rate.","Floating rate notes":"A bond on which the interest rate is reset periodically in line with a money market reference rate.","Flow-through vehicles":"A vehicle, such as a trust, where income earned is treated as income of the vehicle’s beneficiaries.","Foreign currency swaps":"The exchange of principal and/or interest payments in one currency for those in another.","Foreign direct investment (FDI)":"The acquisition of a controlling interest by governments, institutions or individuals of a business in another country.","Forward book":"The total amount of contracts for the future exchange of foreign currency entered into by the Reserve Bank at any given point in time.","Forward cover":"Transactions involving an agreed exchange rate at which foreign currency will be purchased or sold at a future date.","Fringe benefit":"A benefit supplementing an employee’s wages or salary, such as medical insurance, company cars, housing allowances and pension schemes.","Fuel levy":"An excise tax on liquid fuels.","Function shift":"The movement of a function from one departmental vote or sphere of government to another.","Funded pension arrangements":"A pension scheme in which expected future benefits are funded in advance and as entitlement accrues.","Gold and foreign exchange reserves":"Reserves held by the Reserve Bank to meet foreign exchange obligations and to maintain liquidity in the presence of external shocks.","Government debt":"The total amount of money owed by the government as a consequence of its past borrowing.","Government guarantee":"An assurance made by government to a lender that a financial obligation will be honoured, even if the borrowing government institution is unable to repay the debt. See contingent liability.","Green paper":"A policy document intended for public discussion.","Gross borrowing requirement":"The sum of the main budget balance, extraordinary receipts and payments (referred to as National Revenue Fund receipts and payments), and maturing debt. The amount is funded through domestic short- and long- term loans, foreign loans and changes in cash balances.","Gross domestic product (GDP)":"A measure of the total national output, income and expenditure in the economy. GDP per head is the simplest overall measure of welfare, although it does not take account of the distribution of income, nor of goods and services that are produced outside the market economy, such as work within the household.","Gross domestic product inflation":"A measure of the total increase in prices in the whole economy. Unlike CPI inflation, GDP inflation includes price increases in goods that are exported and intermediate goods such as machines, but excludes imported goods.","Gross fixed-capital formation":"The addition to a country’s fixed-capital stock during a specific period, before provision for depreciation.","Gross value added":"The value of output less intermediate consumption. It is also a measure of the contribution to the economy made by an industry or sector.","Group of Twenty (G20)":"An international forum made up of finance ministers and central bank governors from 20 of the world’s largest economies.","Hedging":"An action taken by a buyer or seller to protect income against changes in prices, interest rates or exchange rates.","Horizontal equity":"A principle in taxation that holds that similarly situated taxpayers should face a similar tax treatment or tax burden. In other words, taxpayers with the same amount of income or capital should be accorded equal treatment.","Impaired advances":"Loans or advances that may not be collected in full.","Impairment":"A reduction in the recorded value of a long-lived asset arising from circumstances that prevent the asset from generating the future economic benefits previously expected and recorded.","Import parity pricing":"When a firm sells goods locally at the price customers would pay if they were to import the same goods from another country.","Inclusion rate":"The portion of the net capital gain derived from the disposal of an asset that will be taxed at the applicable rate.","Industrial development zone":"Designated sites linked to an international air or sea port, supported by incentives to encourage investment in export-orientated manufacturing and job creation.","Inflation":"An increase in the overall price level of goods and services in an economy over a specific period of time.","Inflation targeting":"A monetary policy framework intended to achieve price stability over a certain period of time.","Inter-state debt":"Money that different organs of state owe to each other.","Intergenerational equity":"A value based on ensuring that future generations do not have to repay debts taken on today, unless they also share in the benefits of assets.","Intermediate goods":"Goods produced to be used as inputs in the production of final goods.","Inventories":"Stocks of goods held by firms. An increase in inventories reflects an excess of output relative to spending over a period of time.","Labour intensity":"The relative amount of labour used to produce a unit of output.","Liquidity":"The ease with which assets can be bought and sold.","Liquidity requirements":"The amount of liquid or freely convertible assets that banks are required to hold relative to their liabilities for prudential and regulatory purposes.","Liquidity risk":"The risk that an asset might not easily and quickly be converted into cash through sale, or the risk to a debtor that it cannot meet its current debt obligations.","Lump-sum benefit":"A one-time payment for the total or partial value of an asset, usually received in place of recurring smaller payments.","M3":"The broadest definition of money supply in South Africa, including notes and coins, demand and fixed deposits, and credit.","Macroeconomics":"The branch of economics that deals with the whole economy – including issues such as growth, inflation, unemployment and the balance of payments.","Macroprudential regulation":"Rules that protect the stability of the financial sector and guard against systemic risk.","Marginal income tax rate":"The rate of tax on an incremental unit of income.","Marginal lending rate":"A penalty rate of interest charged by the Reserve Bank for lending to financial institutions in the money market in excess of the daily liquidity provided to the money market at the repurchase rate. See also repurchase agreements.","Marketable securities":"Tradable financial securities listed with a securities exchange.","Means test":"A method for determining whether someone qualifies for state assistance.","Medium Term Expenditure Committee (MTEC)":"The technical committee responsible for evaluating the medium-term expenditure framework budget submissions of national departments and making recommendations to the Minister of Finance regarding allocations to national departments.","Medium-term expenditure framework (MTEF)":"The three-year spending plans of national and provincial governments, published at the time of the Budget.","Microeconomics":"The branch of economics that deals with the behaviour of individual firms, consumers and sectors.","Ministers’ Committee on the Budget":"The political committee that considers key policy and budgetary issues that pertain to the budget process before they are tabled in Cabinet.","Monetary easing":"See quantitative easing.","Monetary policy":"Policy concerning total money supply, exchange rates and the general level of interest rates.","Money supply":"The total stock of money in an economy.","National Development Plan":"A planning framework prepared by the National Planning Commission that aims to eliminate poverty and reduce inequality by 2030.","National Revenue Fund":"The consolidated account of the national government into which all taxes, fees and charges collected by SARS and departmental revenue must be paid.","National budget":"The projected revenue and expenditures that flow through the National Revenue Fund. It does not include spending by provinces or local government from their own revenues.","Negotiable certificate of deposit":"Short-term deposit instruments issued by banks, at a variable interest rate, for a fixed period.","Net borrowing requirement":"The main budget balance.","Net exports":"Exports less imports.","Net open foreign currency position":"Gold and foreign exchange reserves minus the oversold forward book. The figure is expressed in dollars.","Net trade":"The difference between the value of exports and the value of imports.","New Development Bank":"A multilateral lending institution being established by Brazil, Russia, India, China and South Africa.","Nominal exchange rates":"The current rate of exchange between the rand and foreign currencies. The “effective” exchange rate is a trade-weighted average of the rates of exchange with other currencies.","Nominal wage":"The return, or wage, to employees at the current price level.","Non-competitive bid auction":"An auction in which an investor agrees to purchase a certain number of securities such as bonds at the average price of all competitive bids over a given period of time.","Non-financial public enterprises":"Government-owned or controlled organisations that deliver goods and non- financial services, trading as business enterprises, such as Eskom or Transnet.","Non-interest expenditure":"Total expenditure by government less debt-service costs.","Non-tax revenue":"Income received by government as a result of administrative charges, licences, fees, sales of goods and services, and so on.","Occupation-specific salary dispensation":"Revised salary structures unique to identified occupations in the public service, including doctors, nurses and teachers.","Opportunity cost":"The value of that which must be given up to achieve or acquire something. It is represented by the next highest valued alternative use of a resource.","Organisation for Economic Cooperation and Development (OECD)":"An organisation of 35 mainly industrialised member countries. South Africa is not a member.","PAYE":"The pay-as-you-earn (PAYE) system of income tax withholding requires employers to deduct income tax, and in some cases, the employees’ portion of social benefit taxes, from each paycheque delivered to employees.","Payroll tax":"Tax an employer withholds and/or pays on behalf of employees based on employee wages or salaries.","Permanent establishment":"A fixed place of business from which a company operates. When two countries have a tax treaty, the concept of “permanent establishment” is used to determine the right of one state to tax the profits of the business in the other state. See also anti-fragmentation.","Policy reserve":"Additional money in the fiscus to fund new and crucial priorities.","Portfolio investment":"Investment in financial assets such as stocks and bonds.","Potential growth":"The fastest growth an economy can sustain without increasing inflation.","Presidential Infrastructure Coordinating Commission (PICC)":"A commission established by Cabinet to develop, review and coordinate a 20-year infrastructure plan.","Price discovery":"The process of determining the price level of a commodity or asset, based on supply and demand factors.","Price sensitivity":"The extent to which changes in price affect consumer purchasing behaviour.","Primary deficit/surplus":"The difference between total revenue and non-interest expenditure. When revenue exceeds non-interest expenditure there is a surplus.","Primary sector":"The agricultural and mining sectors of the economy.","Principal purpose test":"A test where the benefits of a tax treaty are denied if it is reasonable to conclude that obtaining the benefit was one of the principal purposes behind the arrangement or transaction.","Private-sector credit extension":"Credit provided to the private sector. This includes all loans, credit cards and leases.","Privatisation":"The full or partial sale of state-owned enterprises to private individuals or companies.","Producer price index (PPI)":"Price increases measured by the producer price index – a measure of the prices paid based mainly on producers’ published price lists.","Productivity":"A measure of the amount of output generated from every unit of input. Typically used to measure changes in labour efficiency.","Profit shifting":"The allocation of income and expenses between related corporations or branches of the same legal entity to reduce overall tax liability.","Public Finance Management Act (PFMA)":"The act regulating financial management of national and provincial government, including the efficiency and effectiveness of public expenditure and the responsibilities of those engaging with government financial management.","Public Investment Corporation (PIC)":"A government-owned investment management company that invests funds on behalf of public-sector entities. Its largest client is the Government Employees Pension Fund.","Public entities":"Companies, agencies, funds and accounts that are fully or partly owned by government or public authorities and are regulated by law.","Public goods":"Goods and services that would not be fully provided in a pure free-market system and are largely provided by government.","Public sector":"National government, provincial government, local government, extra- budgetary governmental institutions, social security funds and non- financial public enterprises.","Public-benefit organisations (PBOs)":"Organisations that are mainly funded by donations from the public and other institutions, which engage in social activities to meet the needs of the general public.","Public-private partnerships (PPPs)":"A contractual arrangement whereby a private party performs a government function and assumes the associated risks. In return, the private party receives a fee according to predefined performance criteria. See unitary payment.","Public-sector borrowing requirement":"The consolidated cash borrowing requirement of general government and non-financial public enterprises.","Purchasing managers’ index (PMI)":"A composite index measuring the change in manufacturing activity compared with the previous month. An index value of 50 indicates no change in activity, a value above 50 indicates increased activity and a value below 50 indicates decreased activity.","Quantitative easing":"A measure used by central banks to stimulate economic growth when interest rates are near zero by increasing money supply. Also called monetary easing.","Quarterly Employment Survey":"An establishment-based survey conducted by Statistics South Africa to obtain information about the number of employees and gross salaries paid.","Quarterly Labour Force Survey":"A household-based survey conducted by Statistics South Africa to measure the dynamics of the labour market, producing indicators such as employment, unemployment and inactivity.","Rating agency":"A company that evaluates the ability of countries or other borrowers to honour their debt obligations. Credit ratings are used by international investors as indications of sovereign risk. See also credit rating.","Real effective exchange rate":"A measure of the rate of exchange of the rand relative to a trade-weighted average of South Africa’s trading partners’ currencies, adjusted for price trends in South Africa and the countries included.","Real exchange rate":"The level of the exchange rate taking account of inflation differences.","Real expenditure":"Expenditure measured in constant prices after taking account of inflation.","Real interest rate":"The level of interest after taking account of inflation.","Real wage":"The return, or wage, to employees, measured at a constant price level.","Recapitalisation":"Injection of funds into a company or entity to aid liquidity, either as a loan or in return for equity.","Recession":"A period in which national output and income decline. A recession is usually defined as two consecutive quarters of negative growth.","Redemption":"The return of an investor’s principal in a fixed-income security, such as a preferred stock or bond.","Refinancing":"The repayment of debt at a scheduled time with the proceeds of new loans.","Refinancing risk":"The risk that government will not be able to raise money to repay debt at any scheduled point, or that it will have to do so at a high cost.","Regional integration":"An economic policy intended to boost economic activity in a geographical area extending beyond one country.","Remuneration":"The costs of personnel, including salaries, housing allowances, car allowances and other benefits received by personnel.","Repurchase (repo) rate":"The rate at which the Reserve Bank lends to commercial banks.","Repurchase agreements":"Short-term contracts between the Reserve Bank and private banks in the money market to sell specified amounts of money at an interest rate determined by daily auction.","Reserves (foreign exchange)":"Holdings of foreign exchange, either by the Reserve Bank only or by the Reserve Bank and domestic banking institutions.","Residence-based income tax system":"A tax system in which the worldwide income accruing to a resident of a country is subject to the taxes of that country.","Reticulation scheme":"A piped water network that ensures that water is collected and treated before it reaches the consumer.","Revaluation gain/loss":"The difference between the value of a foreign currency deposit from the original (historical) rate to execution of a trade based on the spot rate.","Risk premium":"A return that compensates for uncertainty.","Saving":"The difference between income and spending.","Seasonally adjusted":"Removal of seasonal volatility (monthly or quarterly) from a time series. This provides a measure of the underlying trend in the data.","Secondary rebate":"A rebate from income tax, in addition to the primary rebate, that is available to taxpayers aged 65 years and older.","Secondary sector":"The part of the economy concerned with the manufacture of goods.","Secondary tax on companies (STC)":"Tax on dividends declared by a company, calculated at the rate of 10 per cent of the net amount of dividends declared. This was discontinued in 2012 and replaced with a 15 per cent dividend withholding tax.","Section 21 company":"Non-profit entities registered in terms of Section 21 of the Companies Act.","Sector education and training authorities":"Institutions funded through employer training levies, responsible for learnership programmes and implementing strategic sector skills plans.","Secured debt instruments":"Debt backed or secured by collateral to reduce the risk of lending.","Securitisation":"The pooling of assets into a financial instrument to sell to different types of investors.","Service and transfer payments":"Services involve transactions of non-tangible commodities, while transfers are unrequited transactions that do not generate a counter-economic value (for example, gifts and grants).","Skills development levy":"A payroll tax designed to finance training initiatives in terms of the skills development strategy.","Social infrastructure":"Infrastructure that supports social services.","Social wage":"Social benefits available to all individuals, funded wholly or partly by the state.","Source-based income tax system":"A system in which income is taxed in the country where the income originates.","Southern African Customs Union (SACU) agreement":"An agreement between South Africa, Botswana, Namibia, Lesotho and Swaziland that allows for the unrestricted flow of goods and services, and the sharing of customs and excise revenue.","Southern African Development Community (SADC)":"A regional intergovernmental organisation that promotes collaboration, economic integration and technical cooperation throughout southern Africa.","Sovereign debt":"Debt issued by a government.","Sovereign debt rating":"An assessment of the likelihood that a government will default on its debt obligations.","Spatial planning":"Planning to influence the geographic distribution of people and economic activity.","Special economic zones":"A designated zone where business and trade laws incentivise trade, investment and employment.","Specific excise duty":"A tax on each unit of output or sale of a good, unrelated to the value of a good.","Standing appropriations":"Government’s expenditure obligations that do not require a vote or statutory provision, including contractual guarantee commitments and international agreements.","Statutory appropriations":"Amounts appropriated to be spent in terms of statutes and not requiring appropriation by vote.","Sterilisation":"Action taken by the Reserve Bank to neutralise excess cash created in the money market when purchasing foreign currency.","Structural budget balance":"A representation of what government revenue and expenditure would be if output were at its potential level, with cyclical variations stripped out.","Structural constraints":"Imbalances in the structure of the economy that hinder growth and development.","Switch auction":"An auction to exchange bonds to manage refinancing risk or improve tradability.","Syndicated loan":"A large loan in which a group of banks work together to provide funds, which they solicit from their clients for the borrower.","Tax amnesty":"A period allowed by tax authorities during which taxpayers who are outside the tax net, but should be registered for tax purposes, can register for tax without incurring penalties.","Tax avoidance":"When individuals or businesses legitimately use provisions in the tax law to reduce their tax liability.","Tax base":"The aggregate value of income, sales or transactions on which particular taxes are levied.","Tax buoyancy":"Describes the relationship between total tax revenue collections and economic growth. This measure includes the effects of policy changes on revenue. A value above one means that revenues are growing faster than the economy and below one means they are growing below the rate of GDP growth.","Tax evasion":"When individuals or businesses illegally reduce their tax liability.","Tax expenditure":"Government revenue forgone due to provisions that allow deductions, exclusions, or exemptions from taxable income. The revenue can also be foregone through the deferral of tax liability or preferential tax rates.","Tax gap":"A measure of tax evasion that emerges from comparing the tax liability or tax base declared to the tax authorities with the tax liability or tax base calculated from other sources.","Tax incentives":"Specific provisions in the tax code that provide favourable tax treatment to individuals and businesses to encourage specific behaviour or activities.","Tax incidence":"The final distribution of the burden of tax. Statutory incidence defines where the law requires a tax to be levied. Economic incidence refers to those who experience a decrease in real income as a result of the imposition of a tax.","Tax loopholes":"Unintended weaknesses in the legal provisions of the tax system used by taxpayers to avoid paying tax liability.","Tax morality":"The willingness, or motivation, of citizens to pay tax. This is separate to the statutory obligation to pay taxes, but may have an influence on tax compliance.","Tax-to-GDP ratio":"For public finance comparison purposes, a country’s tax burden, or tax-to- GDP ratio, is calculated by taking the total tax payments for a particular fiscal year as a fraction or percentage of the GDP for that year.","Term-to-maturity":"The time between issuance and expiry.","Terms of trade":"An index measuring the ratio of a country’s export prices relative to its import prices.","Tertiary sector":"The part of the economy concerned with the provision of services.","Total factor productivity":"An index used to measure the efficiency of all inputs that contribute to the production process.","Trade balance":"The monetary record of a country’s net imports and exports of physical merchandise. See also current account.","Trade regime":"The system of tariffs, quotas and quantitative restrictions applied to protect domestic industries, together with subsidies and incentives used to promote international trade.","Trade-weighted rand":"The value of the rand pegged to or expressed relative to a market basket of selected foreign currencies.","Trademark":"A legal right pointing distinctly to the origin or ownership of merchandise to which it is applied and legally reserved for the exclusive use of the owner as maker or seller.","Treasury bills":"Short-term government debt instruments that yield no interest but are issued at a discount. Maturities vary from one day to 12 months.","Treasury committee":"The Cabinet committee that evaluates all requests for additional funds for unavoidable and unforeseen expenditure during a financial year.","Treaty shopping":"When related companies in different countries establish a third entity in another location to take advantage of a favourable tax arrangement.","Trend GDP growth":"The theoretical level of GDP growth determined by the full utilisation of all factors of production (land, labour and capital). Growth above the trend rate results in macroeconomic imbalances such as rising inflation or a weakening of the current account. Increases in trend GDP growth are achieved through capital formation, growth in employment and/or technological development.","Unallocated reserves":"Potential expenditure provision not allocated to a particular use. It mainly consists of the contingency reserve and amounts of money left unallocated by provinces.","Unemployment (broad definition)":"All those of working age who are unemployed, including those actively seeking employment and discouraged work seekers.","Unemployment (official definition)":"Those of working age, who are unemployed and actively seeking work (excludes discouraged work seekers).","Unit labour cost":"The cost of labour per unit of output, calculated by dividing average wages by productivity (output per worker per hour).","Unitary payment":"The payment made to the private party for meeting its obligations in the project deliverables in a public-private partnership.","Unqualified audit":"An assessment by a registered auditing firm or the Auditor-General of South Africa asserting that the financial statements of a department, entity or company are free of material misstatement.","Unsecured debt instruments":"Debt not backed or secured by collateral to reduce the risk of lending.","Unsecured lending":"A loan that is not backed or secured by any type of collateral to reduce the lender’s risk.","Vertical equity":"A doctrine in taxation that holds that differently situated taxpayers should be treated differently in terms of income tax provisions. In other words, taxpayers with more income and/or capital should pay more tax.","Vested right":"The right to ownership of an asset that cannot be arbitrarily taken away by a third party.","Virement":"The transfer of resources from one programme to another within the same department during a financial year.","Vote":"An appropriation voted by Parliament.","Water trading account":"A departmental account that ring-fences revenue from the sale of bulk water and related services to secure funding to manage the sustainability of water resources and infrastructure.","Weighted average cost of capital":"The average rate of return an organisation expects to pay to investors in its securities, such as bonds, debt and shares. Each category of security is accorded a proportionate weight in the calculation.","White paper":"A policy document used to present government policy preferences.","Withholding tax":"Tax on income deducted at source. Withholding taxes are widely used for dividends, interest and royalties.","Yield":"A financial return or interest paid to buyers of government bonds. The yield/rate of return on bonds takes into account the total annual interest payments, the purchase price, the redemption value and the amount of time remaining until maturity.","Yield curve":"A graph showing the relationship between the yield on bonds of the same credit quality but different maturity at a given point in time."}
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Tooltip;
+
+var _preact = __webpack_require__(0);
+
+var _Box = __webpack_require__(83);
+
+var _Box2 = _interopRequireDefault(_Box);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Tooltip(_ref) {
+  var block = _ref.block,
+      children = _ref.children,
+      title = _ref.title,
+      description = _ref.description,
+      actions = _ref.actions,
+      down = _ref.down,
+      open = _ref.open,
+      openAction = _ref.openAction,
+      closeAction = _ref.closeAction;
+
+
+  return (0, _preact.h)(
+    'span',
+    { className: 'Tooltip' + (block ? ' is-block' : '') },
+    (0, _preact.h)(
+      'div',
+      { className: 'Tooltip-trigger', onClick: openAction },
+      children
+    ),
+    (0, _preact.h)(
+      'div',
+      { className: 'Tooltip-boxWrap' + (open ? ' is-open' : '') + (down ? ' is-down' : '') },
+      (0, _preact.h)('div', { className: 'Tooltip-modalCover', onClick: closeAction }),
+      (0, _preact.h)(_Box2.default, { title: title, description: description, actions: actions, down: down, closeAction: closeAction })
+    )
+  );
+}
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = ColumnChart;
+
+var _preact = __webpack_require__(0);
+
+var _calcMaxValue = __webpack_require__(100);
+
+var _calcMaxValue2 = _interopRequireDefault(_calcMaxValue);
+
+var _buildGroupSpaceArray = __webpack_require__(101);
+
+var _buildGroupSpaceArray2 = _interopRequireDefault(_buildGroupSpaceArray);
+
+var _Breakpoints = __webpack_require__(103);
+
+var _Breakpoints2 = _interopRequireDefault(_Breakpoints);
+
+var _Grid = __webpack_require__(105);
+
+var _Grid2 = _interopRequireDefault(_Grid);
+
+var _Guides = __webpack_require__(106);
+
+var _Guides2 = _interopRequireDefault(_Guides);
+
+var _LineGroups = __webpack_require__(108);
+
+var _LineGroups2 = _interopRequireDefault(_LineGroups);
+
+var _Tooltips = __webpack_require__(111);
+
+var _Tooltips2 = _interopRequireDefault(_Tooltips);
+
+var _Labels = __webpack_require__(114);
+
+var _Labels2 = _interopRequireDefault(_Labels);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ColumnChart(_ref) {
+  var items = _ref.items,
+      width = _ref.width,
+      guides = _ref.guides,
+      _ref$scale = _ref.scale,
+      scale = _ref$scale === undefined ? 1 : _ref$scale,
+      downloadable = _ref.downloadable;
+
+  var styling = {
+    fontSize: 14,
+    popupFontSize: 14,
+    maxValue: (0, _calcMaxValue2.default)(items),
+    popupWidth: 90,
+    popUpOffset: 6,
+    buffer: 20,
+    valueSpace: width - (0 + 80),
+    padding: [50, 0, 30, 100],
+    popupHeight: 30,
+    popupCentre: 5,
+    charWrap: width / 10,
+    titleSpace: 0,
+    labelBreakpoints: 4,
+    showGuides: true,
+    charLineHeight: 14,
+    lineGutter: 8,
+    barWidth: 12,
+    groupMargin: 40,
+    svgHeight: 300
+  };
+
+  if (downloadable) {
+    styling = _extends({}, styling, {
+      padding: [80, 30, 60, 130],
+      valueSpace: width - (30 + 130)
+    });
+  }
+
+  var _styling = styling,
+      valueSpace = _styling.valueSpace,
+      padding = _styling.padding,
+      showGuides = _styling.showGuides,
+      svgHeight = _styling.svgHeight,
+      buffer = _styling.buffer;
+
+  var groupSpaceArray = (0, _buildGroupSpaceArray2.default)(items, styling);
+  var totalGroupSpace = groupSpaceArray.reduce(function (result, val) {
+    return result + val;
+  }, 0);
+  var height = padding[0] + svgHeight + padding[2] + buffer * 2;
+  var newWidth = padding[3] + valueSpace + padding[1];
+
+  var background = (0, _preact.h)('rect', {
+    x: '0',
+    y: '0',
+    width: newWidth,
+    height: height,
+    fill: 'white'
+  });
+
+  return (0, _preact.h)(
+    'svg',
+    {
+      version: '1.1',
+      className: 'Graph-svg is-hoverable',
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 ' + newWidth + ' ' + height,
+      width: newWidth * scale,
+      height: height * scale,
+      style: { maxWidth: newWidth }
+    },
+    downloadable ? background : null,
+    (0, _preact.h)(_Breakpoints2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
+    (0, _preact.h)(_Grid2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
+    (0, _preact.h)(_Guides2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
+    (0, _preact.h)(_LineGroups2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
+    (0, _preact.h)(_Tooltips2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
+    (0, _preact.h)(_Labels2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
+    ' */}'
+  );
+}
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -1912,7 +3855,7 @@ exports.default = Modal;
 
 var _preact = __webpack_require__(0);
 
-var _preactCssTransitionGroup = __webpack_require__(125);
+var _preactCssTransitionGroup = __webpack_require__(123);
 
 var _preactCssTransitionGroup2 = _interopRequireDefault(_preactCssTransitionGroup);
 
@@ -1920,7 +3863,7 @@ var _propTypes = __webpack_require__(4);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _index = __webpack_require__(41);
+var _index = __webpack_require__(38);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -1984,54 +3927,12 @@ Modal.propTypes = {
 };
 
 /***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * 
- */
-
-function makeEmptyFunction(arg) {
-  return function () {
-    return arg;
-  };
-}
-
-/**
- * This function accepts and discards inputs; it has no side effects. This is
- * primarily useful idiomatically for overridable function endpoints which
- * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
- */
-var emptyFunction = function emptyFunction() {};
-
-emptyFunction.thatReturns = makeEmptyFunction;
-emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
-emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
-emptyFunction.thatReturnsNull = makeEmptyFunction(null);
-emptyFunction.thatReturnsThis = function () {
-  return this;
-};
-emptyFunction.thatReturnsArgument = function (arg) {
-  return arg;
-};
-
-module.exports = emptyFunction;
-
-/***/ }),
-/* 17 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright (c) 2013-present, Facebook, Inc.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -2040,71 +3941,139 @@ module.exports = emptyFunction;
 
 
 
+var emptyFunction = __webpack_require__(15);
+
 /**
- * Use invariant() to assert state which your program assumes to be true.
- *
- * Provide sprintf-style format (only %s is supported) and arguments
- * to provide information about what broke and what you were
- * expecting.
- *
- * The invariant message will be stripped in production, but the invariant
- * will remain to ensure logic does not differ in production.
+ * Similar to invariant but only logs a warning if the condition is not met.
+ * This can be used to log issues in development environments in critical
+ * paths. Removing the logging code for production environments will keep the
+ * same logic and follow the same code paths.
  */
 
-var validateFormat = function validateFormat(format) {};
+var warning = emptyFunction;
 
 if (process.env.NODE_ENV !== 'production') {
-  validateFormat = function validateFormat(format) {
+  var printWarning = function printWarning(format) {
+    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      args[_key - 1] = arguments[_key];
+    }
+
+    var argIndex = 0;
+    var message = 'Warning: ' + format.replace(/%s/g, function () {
+      return args[argIndex++];
+    });
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+
+  warning = function warning(condition, format) {
     if (format === undefined) {
-      throw new Error('invariant requires an error message argument');
+      throw new Error('`warning(condition, format, ...args)` requires a warning ' + 'message argument');
+    }
+
+    if (format.indexOf('Failed Composite propType: ') === 0) {
+      return; // Ignore CompositeComponent proptype check.
+    }
+
+    if (!condition) {
+      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+        args[_key2 - 2] = arguments[_key2];
+      }
+
+      printWarning.apply(undefined, [format].concat(args));
     }
   };
 }
 
-function invariant(condition, format, a, b, c, d, e, f) {
-  validateFormat(format);
-
-  if (!condition) {
-    var error;
-    if (format === undefined) {
-      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
-    } else {
-      var args = [a, b, c, d, e, f];
-      var argIndex = 0;
-      error = new Error(format.replace(/%s/g, function () {
-        return args[argIndex++];
-      }));
-      error.name = 'Invariant Violation';
-    }
-
-    error.framesToPop = 1; // we don't care about invariant's own frame
-    throw error;
-  }
-}
-
-module.exports = invariant;
+module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 18 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Icon;
 
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+var _preact = __webpack_require__(0);
 
-module.exports = ReactPropTypesSecret;
+var _Close = __webpack_require__(127);
+
+var _Close2 = _interopRequireDefault(_Close);
+
+var _Download = __webpack_require__(128);
+
+var _Download2 = _interopRequireDefault(_Download);
+
+var _Facebook = __webpack_require__(129);
+
+var _Facebook2 = _interopRequireDefault(_Facebook);
+
+var _Search = __webpack_require__(130);
+
+var _Search2 = _interopRequireDefault(_Search);
+
+var _Twitter = __webpack_require__(131);
+
+var _Twitter2 = _interopRequireDefault(_Twitter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Icon(_ref) {
+  var size = _ref.size,
+      type = _ref.type;
+
+  switch (type) {
+    case 'close':
+      return (0, _preact.h)(_Close2.default, { size: size });
+    case 'download':
+      return (0, _preact.h)(_Download2.default, { size: size });
+    case 'facebook':
+      return (0, _preact.h)(_Facebook2.default, { size: size });
+    case 'search':
+      return (0, _preact.h)(_Search2.default, { size: size });
+    case 'twitter':
+      return (0, _preact.h)(_Twitter2.default, { size: size });
+    default:
+      return null;
+  }
+}
 
 /***/ }),
-/* 19 */
+/* 39 */
+/***/ (function(module, exports) {
+
+module.exports = {"apiBaseURL":"https://data.vulekamali.gov.za"}
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = removePunctuation;
+function removePunctuation(string) {
+  return string.replace(/[^\w\s]/g, ' ');
+}
+
+/***/ }),
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2409,15 +4378,15 @@ var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbo
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 20 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var RGBColor = __webpack_require__(153);
-var stackblur = __webpack_require__(154);
-var xmldom = __webpack_require__(155);
+var RGBColor = __webpack_require__(151);
+var stackblur = __webpack_require__(152);
+var xmldom = __webpack_require__(153);
 
 /*
  * canvg.js - Javascript SVG parser and renderer on Canvas
@@ -5501,2065 +7470,7 @@ function build(opts) {
 module.exports = canvg;
 
 /***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = Markup;
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(3);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _index3 = __webpack_require__(41);
-
-var _index4 = _interopRequireDefault(_index3);
-
-var _index5 = __webpack_require__(15);
-
-var _index6 = _interopRequireDefault(_index5);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Markup(props) {
-  var options = props.options,
-      chart = props.chart,
-      name = props.name,
-      selectOpen = props.selectOpen,
-      selected = props.selected,
-      modal = props.modal,
-      clickAction = props.clickAction,
-      canvasAction = props.canvasAction,
-      closeModal = props.closeModal,
-      open = props.open,
-      _changeAction = props.changeAction,
-      items = props.items;
-
-
-  return (0, _preact.h)(
-    'div',
-    null,
-    (0, _preact.h)(
-      _index6.default,
-      { title: 'Share this link:', closeAction: closeModal, open: modal },
-      (0, _preact.h)(
-        'a',
-        { className: 'u-wordBreak u-wordBreak--breakAll', href: window.location.href },
-        window.location.href
-      )
-    ),
-    (0, _preact.h)('canvas', { ref: function ref(node) {
-        return canvasAction(node);
-      }, style: { display: 'none' } }),
-    (0, _preact.h)(
-      'span',
-      { className: 'ChartDownload-title' },
-      'Save or share'
-    ),
-    (0, _preact.h)(
-      'div',
-      { className: 'ChartDownload-select' },
-      (0, _preact.h)(_index2.default, _extends({
-        name: name + '-download-image',
-        open: open,
-        changeAction: function changeAction(value) {
-          return _changeAction(value);
-        }
-      }, { items: items, selected: selected }))
-    ),
-    (0, _preact.h)(
-      'div',
-      { className: 'ChartDownload-button' },
-      (0, _preact.h)(
-        'button',
-        { onClick: clickAction, className: 'Button has-icon' },
-        (0, _preact.h)(_index4.default, { type: 'download', size: 'small' })
-      )
-    )
-  );
-}
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-/*!
- * Fuse.js v3.2.0 - Lightweight fuzzy-search (http://fusejs.io)
- * 
- * Copyright (c) 2012-2017 Kirollos Risk (http://kiro.me)
- * All Rights Reserved. Apache Software License 2.0
- * 
- * http://www.apache.org/licenses/LICENSE-2.0
- */
-(function webpackUniversalModuleDefinition(root, factory) {
-  if (( false ? 'undefined' : _typeof(exports)) === 'object' && ( false ? 'undefined' : _typeof(module)) === 'object') module.exports = factory();else if (true) !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else if ((typeof exports === 'undefined' ? 'undefined' : _typeof(exports)) === 'object') exports["Fuse"] = factory();else root["Fuse"] = factory();
-})(undefined, function () {
-  return (/******/function (modules) {
-      // webpackBootstrap
-      /******/ // The module cache
-      /******/var installedModules = {};
-      /******/
-      /******/ // The require function
-      /******/function __webpack_require__(moduleId) {
-        /******/
-        /******/ // Check if module is in cache
-        /******/if (installedModules[moduleId]) {
-          /******/return installedModules[moduleId].exports;
-          /******/
-        }
-        /******/ // Create a new module (and put it into the cache)
-        /******/var module = installedModules[moduleId] = {
-          /******/i: moduleId,
-          /******/l: false,
-          /******/exports: {}
-          /******/ };
-        /******/
-        /******/ // Execute the module function
-        /******/modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-        /******/
-        /******/ // Flag the module as loaded
-        /******/module.l = true;
-        /******/
-        /******/ // Return the exports of the module
-        /******/return module.exports;
-        /******/
-      }
-      /******/
-      /******/
-      /******/ // expose the modules object (__webpack_modules__)
-      /******/__webpack_require__.m = modules;
-      /******/
-      /******/ // expose the module cache
-      /******/__webpack_require__.c = installedModules;
-      /******/
-      /******/ // identity function for calling harmony imports with the correct context
-      /******/__webpack_require__.i = function (value) {
-        return value;
-      };
-      /******/
-      /******/ // define getter function for harmony exports
-      /******/__webpack_require__.d = function (exports, name, getter) {
-        /******/if (!__webpack_require__.o(exports, name)) {
-          /******/Object.defineProperty(exports, name, {
-            /******/configurable: false,
-            /******/enumerable: true,
-            /******/get: getter
-            /******/ });
-          /******/
-        }
-        /******/
-      };
-      /******/
-      /******/ // getDefaultExport function for compatibility with non-harmony modules
-      /******/__webpack_require__.n = function (module) {
-        /******/var getter = module && module.__esModule ?
-        /******/function getDefault() {
-          return module['default'];
-        } :
-        /******/function getModuleExports() {
-          return module;
-        };
-        /******/__webpack_require__.d(getter, 'a', getter);
-        /******/return getter;
-        /******/
-      };
-      /******/
-      /******/ // Object.prototype.hasOwnProperty.call
-      /******/__webpack_require__.o = function (object, property) {
-        return Object.prototype.hasOwnProperty.call(object, property);
-      };
-      /******/
-      /******/ // __webpack_public_path__
-      /******/__webpack_require__.p = "";
-      /******/
-      /******/ // Load entry module and return exports
-      /******/return __webpack_require__(__webpack_require__.s = 8);
-      /******/
-    }(
-    /************************************************************************/
-    /******/[
-    /* 0 */
-    /***/function (module, exports, __webpack_require__) {
-
-      "use strict";
-
-      module.exports = function (obj) {
-        return Object.prototype.toString.call(obj) === '[object Array]';
-      };
-
-      /***/
-    },
-    /* 1 */
-    /***/function (module, exports, __webpack_require__) {
-
-      "use strict";
-
-      var _createClass = function () {
-        function defineProperties(target, props) {
-          for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-          }
-        }return function (Constructor, protoProps, staticProps) {
-          if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-        };
-      }();
-
-      function _classCallCheck(instance, Constructor) {
-        if (!(instance instanceof Constructor)) {
-          throw new TypeError("Cannot call a class as a function");
-        }
-      }
-
-      var bitapRegexSearch = __webpack_require__(5);
-      var bitapSearch = __webpack_require__(7);
-      var patternAlphabet = __webpack_require__(4);
-
-      var Bitap = function () {
-        function Bitap(pattern, _ref) {
-          var _ref$location = _ref.location,
-              location = _ref$location === undefined ? 0 : _ref$location,
-              _ref$distance = _ref.distance,
-              distance = _ref$distance === undefined ? 100 : _ref$distance,
-              _ref$threshold = _ref.threshold,
-              threshold = _ref$threshold === undefined ? 0.6 : _ref$threshold,
-              _ref$maxPatternLength = _ref.maxPatternLength,
-              maxPatternLength = _ref$maxPatternLength === undefined ? 32 : _ref$maxPatternLength,
-              _ref$isCaseSensitive = _ref.isCaseSensitive,
-              isCaseSensitive = _ref$isCaseSensitive === undefined ? false : _ref$isCaseSensitive,
-              _ref$tokenSeparator = _ref.tokenSeparator,
-              tokenSeparator = _ref$tokenSeparator === undefined ? / +/g : _ref$tokenSeparator,
-              _ref$findAllMatches = _ref.findAllMatches,
-              findAllMatches = _ref$findAllMatches === undefined ? false : _ref$findAllMatches,
-              _ref$minMatchCharLeng = _ref.minMatchCharLength,
-              minMatchCharLength = _ref$minMatchCharLeng === undefined ? 1 : _ref$minMatchCharLeng;
-
-          _classCallCheck(this, Bitap);
-
-          this.options = {
-            location: location,
-            distance: distance,
-            threshold: threshold,
-            maxPatternLength: maxPatternLength,
-            isCaseSensitive: isCaseSensitive,
-            tokenSeparator: tokenSeparator,
-            findAllMatches: findAllMatches,
-            minMatchCharLength: minMatchCharLength
-          };
-
-          this.pattern = this.options.isCaseSensitive ? pattern : pattern.toLowerCase();
-
-          if (this.pattern.length <= maxPatternLength) {
-            this.patternAlphabet = patternAlphabet(this.pattern);
-          }
-        }
-
-        _createClass(Bitap, [{
-          key: 'search',
-          value: function search(text) {
-            if (!this.options.isCaseSensitive) {
-              text = text.toLowerCase();
-            }
-
-            // Exact match
-            if (this.pattern === text) {
-              return {
-                isMatch: true,
-                score: 0,
-                matchedIndices: [[0, text.length - 1]]
-              };
-            }
-
-            // When pattern length is greater than the machine word length, just do a a regex comparison
-            var _options = this.options,
-                maxPatternLength = _options.maxPatternLength,
-                tokenSeparator = _options.tokenSeparator;
-
-            if (this.pattern.length > maxPatternLength) {
-              return bitapRegexSearch(text, this.pattern, tokenSeparator);
-            }
-
-            // Otherwise, use Bitap algorithm
-            var _options2 = this.options,
-                location = _options2.location,
-                distance = _options2.distance,
-                threshold = _options2.threshold,
-                findAllMatches = _options2.findAllMatches,
-                minMatchCharLength = _options2.minMatchCharLength;
-
-            return bitapSearch(text, this.pattern, this.patternAlphabet, {
-              location: location,
-              distance: distance,
-              threshold: threshold,
-              findAllMatches: findAllMatches,
-              minMatchCharLength: minMatchCharLength
-            });
-          }
-        }]);
-
-        return Bitap;
-      }();
-
-      // let x = new Bitap("od mn war", {})
-      // let result = x.search("Old Man's War")
-      // console.log(result)
-
-      module.exports = Bitap;
-
-      /***/
-    },
-    /* 2 */
-    /***/function (module, exports, __webpack_require__) {
-
-      "use strict";
-
-      var isArray = __webpack_require__(0);
-
-      var deepValue = function deepValue(obj, path, list) {
-        if (!path) {
-          // If there's no path left, we've gotten to the object we care about.
-          list.push(obj);
-        } else {
-          var dotIndex = path.indexOf('.');
-          var firstSegment = path;
-          var remaining = null;
-
-          if (dotIndex !== -1) {
-            firstSegment = path.slice(0, dotIndex);
-            remaining = path.slice(dotIndex + 1);
-          }
-
-          var value = obj[firstSegment];
-
-          if (value !== null && value !== undefined) {
-            if (!remaining && (typeof value === 'string' || typeof value === 'number')) {
-              list.push(value.toString());
-            } else if (isArray(value)) {
-              // Search each item in the array.
-              for (var i = 0, len = value.length; i < len; i += 1) {
-                deepValue(value[i], remaining, list);
-              }
-            } else if (remaining) {
-              // An object. Recurse further.
-              deepValue(value, remaining, list);
-            }
-          }
-        }
-
-        return list;
-      };
-
-      module.exports = function (obj, path) {
-        return deepValue(obj, path, []);
-      };
-
-      /***/
-    },
-    /* 3 */
-    /***/function (module, exports, __webpack_require__) {
-
-      "use strict";
-
-      module.exports = function () {
-        var matchmask = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-        var minMatchCharLength = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
-
-        var matchedIndices = [];
-        var start = -1;
-        var end = -1;
-        var i = 0;
-
-        for (var len = matchmask.length; i < len; i += 1) {
-          var match = matchmask[i];
-          if (match && start === -1) {
-            start = i;
-          } else if (!match && start !== -1) {
-            end = i - 1;
-            if (end - start + 1 >= minMatchCharLength) {
-              matchedIndices.push([start, end]);
-            }
-            start = -1;
-          }
-        }
-
-        // (i-1 - start) + 1 => i - start
-        if (matchmask[i - 1] && i - start >= minMatchCharLength) {
-          matchedIndices.push([start, i - 1]);
-        }
-
-        return matchedIndices;
-      };
-
-      /***/
-    },
-    /* 4 */
-    /***/function (module, exports, __webpack_require__) {
-
-      "use strict";
-
-      module.exports = function (pattern) {
-        var mask = {};
-        var len = pattern.length;
-
-        for (var i = 0; i < len; i += 1) {
-          mask[pattern.charAt(i)] = 0;
-        }
-
-        for (var _i = 0; _i < len; _i += 1) {
-          mask[pattern.charAt(_i)] |= 1 << len - _i - 1;
-        }
-
-        return mask;
-      };
-
-      /***/
-    },
-    /* 5 */
-    /***/function (module, exports, __webpack_require__) {
-
-      "use strict";
-
-      var SPECIAL_CHARS_REGEX = /[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g;
-
-      module.exports = function (text, pattern) {
-        var tokenSeparator = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : / +/g;
-
-        var regex = new RegExp(pattern.replace(SPECIAL_CHARS_REGEX, '\\$&').replace(tokenSeparator, '|'));
-        var matches = text.match(regex);
-        var isMatch = !!matches;
-        var matchedIndices = [];
-
-        if (isMatch) {
-          for (var i = 0, matchesLen = matches.length; i < matchesLen; i += 1) {
-            var match = matches[i];
-            matchedIndices.push([text.indexOf(match), match.length - 1]);
-          }
-        }
-
-        return {
-          // TODO: revisit this score
-          score: isMatch ? 0.5 : 1,
-          isMatch: isMatch,
-          matchedIndices: matchedIndices
-        };
-      };
-
-      /***/
-    },
-    /* 6 */
-    /***/function (module, exports, __webpack_require__) {
-
-      "use strict";
-
-      module.exports = function (pattern, _ref) {
-        var _ref$errors = _ref.errors,
-            errors = _ref$errors === undefined ? 0 : _ref$errors,
-            _ref$currentLocation = _ref.currentLocation,
-            currentLocation = _ref$currentLocation === undefined ? 0 : _ref$currentLocation,
-            _ref$expectedLocation = _ref.expectedLocation,
-            expectedLocation = _ref$expectedLocation === undefined ? 0 : _ref$expectedLocation,
-            _ref$distance = _ref.distance,
-            distance = _ref$distance === undefined ? 100 : _ref$distance;
-
-        var accuracy = errors / pattern.length;
-        var proximity = Math.abs(expectedLocation - currentLocation);
-
-        if (!distance) {
-          // Dodge divide by zero error.
-          return proximity ? 1.0 : accuracy;
-        }
-
-        return accuracy + proximity / distance;
-      };
-
-      /***/
-    },
-    /* 7 */
-    /***/function (module, exports, __webpack_require__) {
-
-      "use strict";
-
-      var bitapScore = __webpack_require__(6);
-      var matchedIndices = __webpack_require__(3);
-
-      module.exports = function (text, pattern, patternAlphabet, _ref) {
-        var _ref$location = _ref.location,
-            location = _ref$location === undefined ? 0 : _ref$location,
-            _ref$distance = _ref.distance,
-            distance = _ref$distance === undefined ? 100 : _ref$distance,
-            _ref$threshold = _ref.threshold,
-            threshold = _ref$threshold === undefined ? 0.6 : _ref$threshold,
-            _ref$findAllMatches = _ref.findAllMatches,
-            findAllMatches = _ref$findAllMatches === undefined ? false : _ref$findAllMatches,
-            _ref$minMatchCharLeng = _ref.minMatchCharLength,
-            minMatchCharLength = _ref$minMatchCharLeng === undefined ? 1 : _ref$minMatchCharLeng;
-
-        var expectedLocation = location;
-        // Set starting location at beginning text and initialize the alphabet.
-        var textLen = text.length;
-        // Highest score beyond which we give up.
-        var currentThreshold = threshold;
-        // Is there a nearby exact match? (speedup)
-        var bestLocation = text.indexOf(pattern, expectedLocation);
-
-        var patternLen = pattern.length;
-
-        // a mask of the matches
-        var matchMask = [];
-        for (var i = 0; i < textLen; i += 1) {
-          matchMask[i] = 0;
-        }
-
-        if (bestLocation !== -1) {
-          var score = bitapScore(pattern, {
-            errors: 0,
-            currentLocation: bestLocation,
-            expectedLocation: expectedLocation,
-            distance: distance
-          });
-          currentThreshold = Math.min(score, currentThreshold);
-
-          // What about in the other direction? (speed up)
-          bestLocation = text.lastIndexOf(pattern, expectedLocation + patternLen);
-
-          if (bestLocation !== -1) {
-            var _score = bitapScore(pattern, {
-              errors: 0,
-              currentLocation: bestLocation,
-              expectedLocation: expectedLocation,
-              distance: distance
-            });
-            currentThreshold = Math.min(_score, currentThreshold);
-          }
-        }
-
-        // Reset the best location
-        bestLocation = -1;
-
-        var lastBitArr = [];
-        var finalScore = 1;
-        var binMax = patternLen + textLen;
-
-        var mask = 1 << patternLen - 1;
-
-        for (var _i = 0; _i < patternLen; _i += 1) {
-          // Scan for the best match; each iteration allows for one more error.
-          // Run a binary search to determine how far from the match location we can stray
-          // at this error level.
-          var binMin = 0;
-          var binMid = binMax;
-
-          while (binMin < binMid) {
-            var _score3 = bitapScore(pattern, {
-              errors: _i,
-              currentLocation: expectedLocation + binMid,
-              expectedLocation: expectedLocation,
-              distance: distance
-            });
-
-            if (_score3 <= currentThreshold) {
-              binMin = binMid;
-            } else {
-              binMax = binMid;
-            }
-
-            binMid = Math.floor((binMax - binMin) / 2 + binMin);
-          }
-
-          // Use the result from this iteration as the maximum for the next.
-          binMax = binMid;
-
-          var start = Math.max(1, expectedLocation - binMid + 1);
-          var finish = findAllMatches ? textLen : Math.min(expectedLocation + binMid, textLen) + patternLen;
-
-          // Initialize the bit array
-          var bitArr = Array(finish + 2);
-
-          bitArr[finish + 1] = (1 << _i) - 1;
-
-          for (var j = finish; j >= start; j -= 1) {
-            var currentLocation = j - 1;
-            var charMatch = patternAlphabet[text.charAt(currentLocation)];
-
-            if (charMatch) {
-              matchMask[currentLocation] = 1;
-            }
-
-            // First pass: exact match
-            bitArr[j] = (bitArr[j + 1] << 1 | 1) & charMatch;
-
-            // Subsequent passes: fuzzy match
-            if (_i !== 0) {
-              bitArr[j] |= (lastBitArr[j + 1] | lastBitArr[j]) << 1 | 1 | lastBitArr[j + 1];
-            }
-
-            if (bitArr[j] & mask) {
-              finalScore = bitapScore(pattern, {
-                errors: _i,
-                currentLocation: currentLocation,
-                expectedLocation: expectedLocation,
-                distance: distance
-              });
-
-              // This match will almost certainly be better than any existing match.
-              // But check anyway.
-              if (finalScore <= currentThreshold) {
-                // Indeed it is
-                currentThreshold = finalScore;
-                bestLocation = currentLocation;
-
-                // Already passed `loc`, downhill from here on in.
-                if (bestLocation <= expectedLocation) {
-                  break;
-                }
-
-                // When passing `bestLocation`, don't exceed our current distance from `expectedLocation`.
-                start = Math.max(1, 2 * expectedLocation - bestLocation);
-              }
-            }
-          }
-
-          // No hope for a (better) match at greater error levels.
-          var _score2 = bitapScore(pattern, {
-            errors: _i + 1,
-            currentLocation: expectedLocation,
-            expectedLocation: expectedLocation,
-            distance: distance
-          });
-
-          if (_score2 > currentThreshold) {
-            break;
-          }
-
-          lastBitArr = bitArr;
-        }
-
-        // Count exact matches (those with a score of 0) to be "almost" exact
-        return {
-          isMatch: bestLocation >= 0,
-          score: finalScore === 0 ? 0.001 : finalScore,
-          matchedIndices: matchedIndices(matchMask, minMatchCharLength)
-        };
-      };
-
-      /***/
-    },
-    /* 8 */
-    /***/function (module, exports, __webpack_require__) {
-
-      "use strict";
-
-      var _createClass = function () {
-        function defineProperties(target, props) {
-          for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-          }
-        }return function (Constructor, protoProps, staticProps) {
-          if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-        };
-      }();
-
-      function _classCallCheck(instance, Constructor) {
-        if (!(instance instanceof Constructor)) {
-          throw new TypeError("Cannot call a class as a function");
-        }
-      }
-
-      var Bitap = __webpack_require__(1);
-      var deepValue = __webpack_require__(2);
-      var isArray = __webpack_require__(0);
-
-      var Fuse = function () {
-        function Fuse(list, _ref) {
-          var _ref$location = _ref.location,
-              location = _ref$location === undefined ? 0 : _ref$location,
-              _ref$distance = _ref.distance,
-              distance = _ref$distance === undefined ? 100 : _ref$distance,
-              _ref$threshold = _ref.threshold,
-              threshold = _ref$threshold === undefined ? 0.6 : _ref$threshold,
-              _ref$maxPatternLength = _ref.maxPatternLength,
-              maxPatternLength = _ref$maxPatternLength === undefined ? 32 : _ref$maxPatternLength,
-              _ref$caseSensitive = _ref.caseSensitive,
-              caseSensitive = _ref$caseSensitive === undefined ? false : _ref$caseSensitive,
-              _ref$tokenSeparator = _ref.tokenSeparator,
-              tokenSeparator = _ref$tokenSeparator === undefined ? / +/g : _ref$tokenSeparator,
-              _ref$findAllMatches = _ref.findAllMatches,
-              findAllMatches = _ref$findAllMatches === undefined ? false : _ref$findAllMatches,
-              _ref$minMatchCharLeng = _ref.minMatchCharLength,
-              minMatchCharLength = _ref$minMatchCharLeng === undefined ? 1 : _ref$minMatchCharLeng,
-              _ref$id = _ref.id,
-              id = _ref$id === undefined ? null : _ref$id,
-              _ref$keys = _ref.keys,
-              keys = _ref$keys === undefined ? [] : _ref$keys,
-              _ref$shouldSort = _ref.shouldSort,
-              shouldSort = _ref$shouldSort === undefined ? true : _ref$shouldSort,
-              _ref$getFn = _ref.getFn,
-              getFn = _ref$getFn === undefined ? deepValue : _ref$getFn,
-              _ref$sortFn = _ref.sortFn,
-              sortFn = _ref$sortFn === undefined ? function (a, b) {
-            return a.score - b.score;
-          } : _ref$sortFn,
-              _ref$tokenize = _ref.tokenize,
-              tokenize = _ref$tokenize === undefined ? false : _ref$tokenize,
-              _ref$matchAllTokens = _ref.matchAllTokens,
-              matchAllTokens = _ref$matchAllTokens === undefined ? false : _ref$matchAllTokens,
-              _ref$includeMatches = _ref.includeMatches,
-              includeMatches = _ref$includeMatches === undefined ? false : _ref$includeMatches,
-              _ref$includeScore = _ref.includeScore,
-              includeScore = _ref$includeScore === undefined ? false : _ref$includeScore,
-              _ref$verbose = _ref.verbose,
-              verbose = _ref$verbose === undefined ? false : _ref$verbose;
-
-          _classCallCheck(this, Fuse);
-
-          this.options = {
-            location: location,
-            distance: distance,
-            threshold: threshold,
-            maxPatternLength: maxPatternLength,
-            isCaseSensitive: caseSensitive,
-            tokenSeparator: tokenSeparator,
-            findAllMatches: findAllMatches,
-            minMatchCharLength: minMatchCharLength,
-            id: id,
-            keys: keys,
-            includeMatches: includeMatches,
-            includeScore: includeScore,
-            shouldSort: shouldSort,
-            getFn: getFn,
-            sortFn: sortFn,
-            verbose: verbose,
-            tokenize: tokenize,
-            matchAllTokens: matchAllTokens
-          };
-
-          this.setCollection(list);
-        }
-
-        _createClass(Fuse, [{
-          key: 'setCollection',
-          value: function setCollection(list) {
-            this.list = list;
-            return list;
-          }
-        }, {
-          key: 'search',
-          value: function search(pattern) {
-            this._log('---------\nSearch pattern: "' + pattern + '"');
-
-            var _prepareSearchers2 = this._prepareSearchers(pattern),
-                tokenSearchers = _prepareSearchers2.tokenSearchers,
-                fullSearcher = _prepareSearchers2.fullSearcher;
-
-            var _search2 = this._search(tokenSearchers, fullSearcher),
-                weights = _search2.weights,
-                results = _search2.results;
-
-            this._computeScore(weights, results);
-
-            if (this.options.shouldSort) {
-              this._sort(results);
-            }
-
-            return this._format(results);
-          }
-        }, {
-          key: '_prepareSearchers',
-          value: function _prepareSearchers() {
-            var pattern = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-
-            var tokenSearchers = [];
-
-            if (this.options.tokenize) {
-              // Tokenize on the separator
-              var tokens = pattern.split(this.options.tokenSeparator);
-              for (var i = 0, len = tokens.length; i < len; i += 1) {
-                tokenSearchers.push(new Bitap(tokens[i], this.options));
-              }
-            }
-
-            var fullSearcher = new Bitap(pattern, this.options);
-
-            return { tokenSearchers: tokenSearchers, fullSearcher: fullSearcher };
-          }
-        }, {
-          key: '_search',
-          value: function _search() {
-            var tokenSearchers = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-            var fullSearcher = arguments[1];
-
-            var list = this.list;
-            var resultMap = {};
-            var results = [];
-
-            // Check the first item in the list, if it's a string, then we assume
-            // that every item in the list is also a string, and thus it's a flattened array.
-            if (typeof list[0] === 'string') {
-              // Iterate over every item
-              for (var i = 0, len = list.length; i < len; i += 1) {
-                this._analyze({
-                  key: '',
-                  value: list[i],
-                  record: i,
-                  index: i
-                }, {
-                  resultMap: resultMap,
-                  results: results,
-                  tokenSearchers: tokenSearchers,
-                  fullSearcher: fullSearcher
-                });
-              }
-
-              return { weights: null, results: results };
-            }
-
-            // Otherwise, the first item is an Object (hopefully), and thus the searching
-            // is done on the values of the keys of each item.
-            var weights = {};
-            for (var _i = 0, _len = list.length; _i < _len; _i += 1) {
-              var item = list[_i];
-              // Iterate over every key
-              for (var j = 0, keysLen = this.options.keys.length; j < keysLen; j += 1) {
-                var key = this.options.keys[j];
-                if (typeof key !== 'string') {
-                  weights[key.name] = {
-                    weight: 1 - key.weight || 1
-                  };
-                  if (key.weight <= 0 || key.weight > 1) {
-                    throw new Error('Key weight has to be > 0 and <= 1');
-                  }
-                  key = key.name;
-                } else {
-                  weights[key] = {
-                    weight: 1
-                  };
-                }
-
-                this._analyze({
-                  key: key,
-                  value: this.options.getFn(item, key),
-                  record: item,
-                  index: _i
-                }, {
-                  resultMap: resultMap,
-                  results: results,
-                  tokenSearchers: tokenSearchers,
-                  fullSearcher: fullSearcher
-                });
-              }
-            }
-
-            return { weights: weights, results: results };
-          }
-        }, {
-          key: '_analyze',
-          value: function _analyze(_ref2, _ref3) {
-            var key = _ref2.key,
-                _ref2$arrayIndex = _ref2.arrayIndex,
-                arrayIndex = _ref2$arrayIndex === undefined ? -1 : _ref2$arrayIndex,
-                value = _ref2.value,
-                record = _ref2.record,
-                index = _ref2.index;
-            var _ref3$tokenSearchers = _ref3.tokenSearchers,
-                tokenSearchers = _ref3$tokenSearchers === undefined ? [] : _ref3$tokenSearchers,
-                _ref3$fullSearcher = _ref3.fullSearcher,
-                fullSearcher = _ref3$fullSearcher === undefined ? [] : _ref3$fullSearcher,
-                _ref3$resultMap = _ref3.resultMap,
-                resultMap = _ref3$resultMap === undefined ? {} : _ref3$resultMap,
-                _ref3$results = _ref3.results,
-                results = _ref3$results === undefined ? [] : _ref3$results;
-
-            // Check if the texvaluet can be searched
-            if (value === undefined || value === null) {
-              return;
-            }
-
-            var exists = false;
-            var averageScore = -1;
-            var numTextMatches = 0;
-
-            if (typeof value === 'string') {
-              this._log('\nKey: ' + (key === '' ? '-' : key));
-
-              var mainSearchResult = fullSearcher.search(value);
-              this._log('Full text: "' + value + '", score: ' + mainSearchResult.score);
-
-              if (this.options.tokenize) {
-                var words = value.split(this.options.tokenSeparator);
-                var scores = [];
-
-                for (var i = 0; i < tokenSearchers.length; i += 1) {
-                  var tokenSearcher = tokenSearchers[i];
-
-                  this._log('\nPattern: "' + tokenSearcher.pattern + '"');
-
-                  // let tokenScores = []
-                  var hasMatchInText = false;
-
-                  for (var j = 0; j < words.length; j += 1) {
-                    var word = words[j];
-                    var tokenSearchResult = tokenSearcher.search(word);
-                    var obj = {};
-                    if (tokenSearchResult.isMatch) {
-                      obj[word] = tokenSearchResult.score;
-                      exists = true;
-                      hasMatchInText = true;
-                      scores.push(tokenSearchResult.score);
-                    } else {
-                      obj[word] = 1;
-                      if (!this.options.matchAllTokens) {
-                        scores.push(1);
-                      }
-                    }
-                    this._log('Token: "' + word + '", score: ' + obj[word]);
-                    // tokenScores.push(obj)
-                  }
-
-                  if (hasMatchInText) {
-                    numTextMatches += 1;
-                  }
-                }
-
-                averageScore = scores[0];
-                var scoresLen = scores.length;
-                for (var _i2 = 1; _i2 < scoresLen; _i2 += 1) {
-                  averageScore += scores[_i2];
-                }
-                averageScore = averageScore / scoresLen;
-
-                this._log('Token score average:', averageScore);
-              }
-
-              var finalScore = mainSearchResult.score;
-              if (averageScore > -1) {
-                finalScore = (finalScore + averageScore) / 2;
-              }
-
-              this._log('Score average:', finalScore);
-
-              var checkTextMatches = this.options.tokenize && this.options.matchAllTokens ? numTextMatches >= tokenSearchers.length : true;
-
-              this._log('\nCheck Matches: ' + checkTextMatches);
-
-              // If a match is found, add the item to <rawResults>, including its score
-              if ((exists || mainSearchResult.isMatch) && checkTextMatches) {
-                // Check if the item already exists in our results
-                var existingResult = resultMap[index];
-                if (existingResult) {
-                  // Use the lowest score
-                  // existingResult.score, bitapResult.score
-                  existingResult.output.push({
-                    key: key,
-                    arrayIndex: arrayIndex,
-                    value: value,
-                    score: finalScore,
-                    matchedIndices: mainSearchResult.matchedIndices
-                  });
-                } else {
-                  // Add it to the raw result list
-                  resultMap[index] = {
-                    item: record,
-                    output: [{
-                      key: key,
-                      arrayIndex: arrayIndex,
-                      value: value,
-                      score: finalScore,
-                      matchedIndices: mainSearchResult.matchedIndices
-                    }]
-                  };
-
-                  results.push(resultMap[index]);
-                }
-              }
-            } else if (isArray(value)) {
-              for (var _i3 = 0, len = value.length; _i3 < len; _i3 += 1) {
-                this._analyze({
-                  key: key,
-                  arrayIndex: _i3,
-                  value: value[_i3],
-                  record: record,
-                  index: index
-                }, {
-                  resultMap: resultMap,
-                  results: results,
-                  tokenSearchers: tokenSearchers,
-                  fullSearcher: fullSearcher
-                });
-              }
-            }
-          }
-        }, {
-          key: '_computeScore',
-          value: function _computeScore(weights, results) {
-            this._log('\n\nComputing score:\n');
-
-            for (var i = 0, len = results.length; i < len; i += 1) {
-              var output = results[i].output;
-              var scoreLen = output.length;
-
-              var totalScore = 0;
-              var bestScore = 1;
-
-              for (var j = 0; j < scoreLen; j += 1) {
-                var weight = weights ? weights[output[j].key].weight : 1;
-                var score = weight === 1 ? output[j].score : output[j].score || 0.001;
-                var nScore = score * weight;
-
-                if (weight !== 1) {
-                  bestScore = Math.min(bestScore, nScore);
-                } else {
-                  output[j].nScore = nScore;
-                  totalScore += nScore;
-                }
-              }
-
-              results[i].score = bestScore === 1 ? totalScore / scoreLen : bestScore;
-
-              this._log(results[i]);
-            }
-          }
-        }, {
-          key: '_sort',
-          value: function _sort(results) {
-            this._log('\n\nSorting....');
-            results.sort(this.options.sortFn);
-          }
-        }, {
-          key: '_format',
-          value: function _format(results) {
-            var finalOutput = [];
-
-            this._log('\n\nOutput:\n\n', JSON.stringify(results));
-
-            var transformers = [];
-
-            if (this.options.includeMatches) {
-              transformers.push(function (result, data) {
-                var output = result.output;
-                data.matches = [];
-
-                for (var i = 0, len = output.length; i < len; i += 1) {
-                  var item = output[i];
-
-                  if (item.matchedIndices.length === 0) {
-                    continue;
-                  }
-
-                  var obj = {
-                    indices: item.matchedIndices,
-                    value: item.value
-                  };
-                  if (item.key) {
-                    obj.key = item.key;
-                  }
-                  if (item.hasOwnProperty('arrayIndex') && item.arrayIndex > -1) {
-                    obj.arrayIndex = item.arrayIndex;
-                  }
-                  data.matches.push(obj);
-                }
-              });
-            }
-
-            if (this.options.includeScore) {
-              transformers.push(function (result, data) {
-                data.score = result.score;
-              });
-            }
-
-            for (var i = 0, len = results.length; i < len; i += 1) {
-              var result = results[i];
-
-              if (this.options.id) {
-                result.item = this.options.getFn(result.item, this.options.id)[0];
-              }
-
-              if (!transformers.length) {
-                finalOutput.push(result.item);
-                continue;
-              }
-
-              var data = {
-                item: result.item
-              };
-
-              for (var j = 0, _len2 = transformers.length; j < _len2; j += 1) {
-                transformers[j](result, data);
-              }
-
-              finalOutput.push(data);
-            }
-
-            return finalOutput;
-          }
-        }, {
-          key: '_log',
-          value: function _log() {
-            if (this.options.verbose) {
-              var _console;
-
-              (_console = console).log.apply(_console, arguments);
-            }
-          }
-        }]);
-
-        return Fuse;
-      }();
-
-      module.exports = Fuse;
-
-      /***/
-    }]
-    /******/)
-  );
-});
-//# sourceMappingURL=fuse.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(171)(module)))
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = RevenueMarkup;
-
-var _preact = __webpack_require__(0);
-
-var _trimValues = __webpack_require__(7);
-
-var _trimValues2 = _interopRequireDefault(_trimValues);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function RevenueMarkup(_ref) {
-  var items = _ref.items;
-
-  var keys = Object.keys(items);
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'ValueBlocks' },
-    keys.map(function (key) {
-      var link = items[key].link;
-      var value = items[key].value;
-      var Tag = link ? 'a' : 'div';
-
-      return (0, _preact.h)(
-        'div',
-        { className: 'ValueBlocks-itemWrap' },
-        (0, _preact.h)(
-          Tag,
-          { href: link, className: 'ValueBlocks-item' + (link ? ' ValueBlocks-item--link' : '') },
-          (0, _preact.h)(
-            'div',
-            { className: 'ValueBlocks-title' },
-            key
-          ),
-          value ? (0, _preact.h)(
-            'div',
-            { className: 'ValueBlocks-value' },
-            'R',
-            (0, _trimValues2.default)(value)
-          ) : null
-        )
-      );
-    })
-  );
-}
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var strictUriEncode = __webpack_require__(54);
-var objectAssign = __webpack_require__(25);
-var decodeComponent = __webpack_require__(55);
-
-function encoderForArrayFormat(opts) {
-	switch (opts.arrayFormat) {
-		case 'index':
-			return function (key, value, index) {
-				return value === null ? [encode(key, opts), '[', index, ']'].join('') : [encode(key, opts), '[', encode(index, opts), ']=', encode(value, opts)].join('');
-			};
-
-		case 'bracket':
-			return function (key, value) {
-				return value === null ? encode(key, opts) : [encode(key, opts), '[]=', encode(value, opts)].join('');
-			};
-
-		default:
-			return function (key, value) {
-				return value === null ? encode(key, opts) : [encode(key, opts), '=', encode(value, opts)].join('');
-			};
-	}
-}
-
-function parserForArrayFormat(opts) {
-	var result;
-
-	switch (opts.arrayFormat) {
-		case 'index':
-			return function (key, value, accumulator) {
-				result = /\[(\d*)\]$/.exec(key);
-
-				key = key.replace(/\[\d*\]$/, '');
-
-				if (!result) {
-					accumulator[key] = value;
-					return;
-				}
-
-				if (accumulator[key] === undefined) {
-					accumulator[key] = {};
-				}
-
-				accumulator[key][result[1]] = value;
-			};
-
-		case 'bracket':
-			return function (key, value, accumulator) {
-				result = /(\[\])$/.exec(key);
-				key = key.replace(/\[\]$/, '');
-
-				if (!result) {
-					accumulator[key] = value;
-					return;
-				} else if (accumulator[key] === undefined) {
-					accumulator[key] = [value];
-					return;
-				}
-
-				accumulator[key] = [].concat(accumulator[key], value);
-			};
-
-		default:
-			return function (key, value, accumulator) {
-				if (accumulator[key] === undefined) {
-					accumulator[key] = value;
-					return;
-				}
-
-				accumulator[key] = [].concat(accumulator[key], value);
-			};
-	}
-}
-
-function encode(value, opts) {
-	if (opts.encode) {
-		return opts.strict ? strictUriEncode(value) : encodeURIComponent(value);
-	}
-
-	return value;
-}
-
-function keysSorter(input) {
-	if (Array.isArray(input)) {
-		return input.sort();
-	} else if ((typeof input === 'undefined' ? 'undefined' : _typeof(input)) === 'object') {
-		return keysSorter(Object.keys(input)).sort(function (a, b) {
-			return Number(a) - Number(b);
-		}).map(function (key) {
-			return input[key];
-		});
-	}
-
-	return input;
-}
-
-exports.extract = function (str) {
-	var queryStart = str.indexOf('?');
-	if (queryStart === -1) {
-		return '';
-	}
-	return str.slice(queryStart + 1);
-};
-
-exports.parse = function (str, opts) {
-	opts = objectAssign({ arrayFormat: 'none' }, opts);
-
-	var formatter = parserForArrayFormat(opts);
-
-	// Create an object with no prototype
-	// https://github.com/sindresorhus/query-string/issues/47
-	var ret = Object.create(null);
-
-	if (typeof str !== 'string') {
-		return ret;
-	}
-
-	str = str.trim().replace(/^[?#&]/, '');
-
-	if (!str) {
-		return ret;
-	}
-
-	str.split('&').forEach(function (param) {
-		var parts = param.replace(/\+/g, ' ').split('=');
-		// Firefox (pre 40) decodes `%3D` to `=`
-		// https://github.com/sindresorhus/query-string/pull/37
-		var key = parts.shift();
-		var val = parts.length > 0 ? parts.join('=') : undefined;
-
-		// missing `=` should be `null`:
-		// http://w3.org/TR/2012/WD-url-20120524/#collect-url-parameters
-		val = val === undefined ? null : decodeComponent(val);
-
-		formatter(decodeComponent(key), val, ret);
-	});
-
-	return Object.keys(ret).sort().reduce(function (result, key) {
-		var val = ret[key];
-		if (Boolean(val) && (typeof val === 'undefined' ? 'undefined' : _typeof(val)) === 'object' && !Array.isArray(val)) {
-			// Sort object keys, not values
-			result[key] = keysSorter(val);
-		} else {
-			result[key] = val;
-		}
-
-		return result;
-	}, Object.create(null));
-};
-
-exports.stringify = function (obj, opts) {
-	var defaults = {
-		encode: true,
-		strict: true,
-		arrayFormat: 'none'
-	};
-
-	opts = objectAssign(defaults, opts);
-
-	if (opts.sort === false) {
-		opts.sort = function () {};
-	}
-
-	var formatter = encoderForArrayFormat(opts);
-
-	return obj ? Object.keys(obj).sort(opts.sort).map(function (key) {
-		var val = obj[key];
-
-		if (val === undefined) {
-			return '';
-		}
-
-		if (val === null) {
-			return encode(key, opts);
-		}
-
-		if (Array.isArray(val)) {
-			var result = [];
-
-			val.slice().forEach(function (val2) {
-				if (val2 === undefined) {
-					return;
-				}
-
-				result.push(formatter(key, val2, result.length));
-			});
-
-			return result.join('&');
-		}
-
-		return encode(key, opts) + '=' + encode(val, opts);
-	}).filter(function (x) {
-		return x.length > 0;
-	}).join('&') : '';
-};
-
-exports.parseUrl = function (str, opts) {
-	return {
-		url: str.split('?')[0] || '',
-		query: this.parse(this.extract(str), opts)
-	};
-};
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/*
-object-assign
-(c) Sindre Sorhus
-@license MIT
-*/
-
-
-/* eslint-disable no-unused-vars */
-
-var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var propIsEnumerable = Object.prototype.propertyIsEnumerable;
-
-function toObject(val) {
-	if (val === null || val === undefined) {
-		throw new TypeError('Object.assign cannot be called with null or undefined');
-	}
-
-	return Object(val);
-}
-
-function shouldUseNative() {
-	try {
-		if (!Object.assign) {
-			return false;
-		}
-
-		// Detect buggy property enumeration order in older V8 versions.
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
-		var test1 = new String('abc'); // eslint-disable-line no-new-wrappers
-		test1[5] = 'de';
-		if (Object.getOwnPropertyNames(test1)[0] === '5') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test2 = {};
-		for (var i = 0; i < 10; i++) {
-			test2['_' + String.fromCharCode(i)] = i;
-		}
-		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
-			return test2[n];
-		});
-		if (order2.join('') !== '0123456789') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test3 = {};
-		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
-			test3[letter] = letter;
-		});
-		if (Object.keys(Object.assign({}, test3)).join('') !== 'abcdefghijklmnopqrst') {
-			return false;
-		}
-
-		return true;
-	} catch (err) {
-		// We don't expect any of the above to throw, but better to be safe.
-		return false;
-	}
-}
-
-module.exports = shouldUseNative() ? Object.assign : function (target, source) {
-	var from;
-	var to = toObject(target);
-	var symbols;
-
-	for (var s = 1; s < arguments.length; s++) {
-		from = Object(arguments[s]);
-
-		for (var key in from) {
-			if (hasOwnProperty.call(from, key)) {
-				to[key] = from[key];
-			}
-		}
-
-		if (getOwnPropertySymbols) {
-			symbols = getOwnPropertySymbols(from);
-			for (var i = 0; i < symbols.length; i++) {
-				if (propIsEnumerable.call(from, symbols[i])) {
-					to[symbols[i]] = from[symbols[i]];
-				}
-			}
-		}
-	}
-
-	return to;
-};
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var ES = __webpack_require__(10);
-var supportsDescriptors = __webpack_require__(5).supportsDescriptors;
-
-/*! https://mths.be/array-from v0.2.0 by @mathias */
-module.exports = function from(arrayLike) {
-	var defineProperty = supportsDescriptors ? Object.defineProperty : function put(object, key, descriptor) {
-		object[key] = descriptor.value;
-	};
-	var C = this;
-	if (arrayLike === null || typeof arrayLike === 'undefined') {
-		throw new TypeError('`Array.from` requires an array-like object, not `null` or `undefined`');
-	}
-	var items = ES.ToObject(arrayLike);
-
-	var mapFn, T;
-	if (typeof arguments[1] !== 'undefined') {
-		mapFn = arguments[1];
-		if (!ES.IsCallable(mapFn)) {
-			throw new TypeError('When provided, the second argument to `Array.from` must be a function');
-		}
-		if (arguments.length > 2) {
-			T = arguments[2];
-		}
-	}
-
-	var len = ES.ToLength(items.length);
-	var A = ES.IsCallable(C) ? ES.ToObject(new C(len)) : new Array(len);
-	var k = 0;
-	var kValue, mappedValue;
-	while (k < len) {
-		kValue = items[k];
-		if (mapFn) {
-			mappedValue = typeof T === 'undefined' ? mapFn(kValue, k) : ES.Call(mapFn, T, [kValue, k]);
-		} else {
-			mappedValue = kValue;
-		}
-		defineProperty(A, k, {
-			'configurable': true,
-			'enumerable': true,
-			'value': mappedValue,
-			'writable': true
-		});
-		k += 1;
-	}
-	A.length = len;
-	return A;
-};
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var implementation = __webpack_require__(63);
-
-module.exports = Function.prototype.bind || implementation;
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-module.exports = function isPrimitive(value) {
-	return value === null || typeof value !== 'function' && (typeof value === 'undefined' ? 'undefined' : _typeof(value)) !== 'object';
-};
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = Number.isNaN || function isNaN(a) {
-	return a !== a;
-};
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var $isNaN = Number.isNaN || function (a) {
-  return a !== a;
-};
-
-module.exports = Number.isFinite || function (x) {
-  return typeof x === 'number' && !$isNaN(x) && x !== Infinity && x !== -Infinity;
-};
-
-/***/ }),
-/* 31 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = function sign(number) {
-	return number >= 0 ? 1 : -1;
-};
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = function mod(number, modulo) {
-	var remain = number % modulo;
-	return Math.floor(remain >= 0 ? remain : remain + modulo);
-};
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var ES = __webpack_require__(10);
-var implementation = __webpack_require__(26);
-
-var tryCall = function tryCall(fn) {
-	try {
-		fn();
-		return true;
-	} catch (e) {
-		return false;
-	}
-};
-
-module.exports = function getPolyfill() {
-	var implemented = ES.IsCallable(Array.from) && tryCall(function () {
-		Array.from({ 'length': -Infinity });
-	}) && !tryCall(function () {
-		Array.from([], undefined);
-	});
-
-	return implemented ? Array.from : implementation;
-};
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var g;
-
-// This works in non-strict mode
-g = function () {
-	return this;
-}();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1, eval)("this");
-} catch (e) {
-	// This works if the window reference is available
-	if ((typeof window === "undefined" ? "undefined" : _typeof(window)) === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-// Array.prototype.findIndex - MIT License (c) 2013 Paul Miller <http://paulmillr.com>
-// For all details and docs: <https://github.com/paulmillr/Array.prototype.findIndex>
-
-
-var ES = __webpack_require__(10);
-
-module.exports = function findIndex(predicate) {
-	var list = ES.ToObject(this);
-	var length = ES.ToLength(list.length);
-	if (!ES.IsCallable(predicate)) {
-		throw new TypeError('Array#findIndex: predicate must be a function');
-	}
-	if (length === 0) return -1;
-	var thisArg = arguments[1];
-	for (var i = 0, value; i < length; i++) {
-		value = list[i];
-		if (ES.Call(predicate, thisArg, [value, i, list])) return i;
-	}
-	return -1;
-};
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = function getPolyfill() {
-	// Detect if an implementation exists
-	// Detect early implementations which skipped holes in sparse arrays
-	var implemented = Array.prototype.findIndex && [, 1].findIndex(function (item, idx) {
-		return idx === 0;
-	}) === 0;
-
-	return implemented ? Array.prototype.findIndex : __webpack_require__(35);
-};
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports) {
-
-module.exports = {"Accounting officer":"The public servant in a department who is accountable to Parliament for financial management, usually the director-general or head of the department.","Accrual":"An accounting convention by which payments and receipts are recorded as they occur, even if no cash flow takes place.","Acquisition debt":"Debt used to purchase shares or assets.","Ad valorem duties":"Duties levied on commodities as a certain percentage of their value.","Adjustments estimate":"Presentation to Parliament of the amendments to be made to the appropriations voted in the main budget for the year.","Administered prices":"Prices set outside ordinary market processes through administrative decisions by government, a public entity or a regulator.","Agro-processing":"Manufacturing activities that transform raw materials and intermediary goods derived from agriculture into intermediate or final goods.","Allocated expenditure":"The part of the national budget that can be divided between the national, provincial and local spheres of government, after interest and the contingency reserve have been taken into account.","Amortisation":"The repayment of a loan by instalments over the duration of the loan.","Annuity":"A fixed amount of money paid over a period of time as a return on an investment.","Anti-avoidance rule":"A provision aimed at preventing tax avoidance. See principal purpose test.","Anti-fragmentation rule":"A rule that aims to prevent taxpayers from artificially avoiding permanent establishment status by breaking up a cohesive business into several small operations.","Appropriation":"The approval by Parliament of spending from the National Revenue Fund, or by a provincial legislature from a provincial revenue fund.","Artificial debt":"A \"loan\" that is presented as debt but is in effect equity. Often used in tax avoidance or evasion.","Asset price bubble":"A condition occurring when prices for a category of assets rise above the level justified by economic fundamentals.","Balance of payments":"A summary statement of all the international transactions of the residents of a country with the rest of the world over a particular period of time.","Base erosion and profit shifting":"Corporate tax-planning strategies that exploit the gaps and mismatches in tax laws between countries to artificially shift taxable income to lower or no-tax jurisdictions. See also tax evasion and profit shifting.","Basel III":"Reforms developed by the Basel Committee on Banking Supervision to strengthen the regulation, supervision and risk management of the banking sector.","Baseline":"The initial allocations used during the budget process, derived from the previous year's forward estimates.","Basis point":"One hundredth of one per cent.","Beneficiation":"Manufacturing activities that transform raw minerals into higher-value products.","Bond":"A certificate of debt issued by a government or corporation guaranteeing payment of the original investment plus interest by a specified future date.","Bond premium":"Amount by which the purchase price of a bond is greater than its par value.","Bond spread":"The difference in yield between two bonds.","Bond-switch programme":"An auction that aims to ease pressure on targeted areas of the redemption profile by exchanging shorter-dated debt for longer-term debt. See switch auction.","Bracket creep":"Increased real tax liability that arises when the personal income tax tables are not fully adjusted for inflation.","Budget balance":"The difference between budgeted expenditure and budgeted revenue. If expenditure exceeds revenue, the budget is in deficit. If the reverse is true, it is in surplus.","Capital adequacy":"A measure of a financial institution’s capital, expressed as a percentage of its credit exposure.","Capital asset":"Property of any kind, including assets that are movable or immovable, tangible or intangible, fixed or circulating, but excluding trading stock held for the purpose of realising a financial or economic return.","Capital expenditure":"Spending on assets such as buildings, land, infrastructure and equipment.","Capital flow":"A flow of investments in or out of the country.","Capital formation":"A measure of the net increase in the country’s total stock of capital goods, after allowing for depreciation.","Capital gains tax":"Tax levied on the income realised from the disposal of a capital asset by a taxpayer. A capital gain is the excess of the selling price over the purchase price of the capital asset.","Capital goods":"Durable goods used over a period of time for the production of other goods. See also intermediate goods.","Carbon tax":"An environmental tax on emissions of carbon dioxide (CO2).","Category A, B and C municipalities":"Municipal categories established by the Constitution: Category A, or metropolitan municipalities; Category B, or local municipalities; and Category C, or district municipalities.","Collateral":"An asset placed as a guarantee for the repayment of debt, to be recouped in the case of a default.","Commercial paper issuances":"Debt issued by companies through short-term promissory notes.","Conditional grants":"Allocations of money from one sphere of government to another, conditional on certain services being delivered or on compliance with specified requirements.","Connected person debt/credit":"Debt or credit granted by a person/entity to a connected person/entity. In the case of a holding company, for example, a subsidiary company would be a connected person.","Consolidated general government":"National, provincial and local government, as well as extra-budgetary government institutions and social security funds.","Consolidated government expenditure":"Total expenditure by national and provincial government, social security funds and selected public entities, including transfers and subsidies to municipalities, businesses and other entities.","Consumer price index (CPI)":"The measure of inflation based on prices in a basket of goods and services.","Consumption expenditure":"Expenditure on goods and services, including salaries, which are used up within a short period of time, usually a year.","Contingency reserve":"An amount set aside, but not allocated in advance, to accommodate changes to the economic environment and to meet unforeseeable spending pressures.","Contingent liability":"A government obligation, such as a guarantee, that will only result in expenditure upon the occurrence of a specific event. See government guarantee.","Controlled foreign entity":"A foreign business in which South Africans hold a greater than 50 per cent interest, usually of the share capital of a company.","Corporatisation":"The transformation of state-owned enterprises into commercial entities, subject to commercial legal requirements and governance structures, while the state retains ownership.","Cost-push inflation":"Inflation that is caused by an increase in production costs, such as wages or oil prices.","Countercyclical fiscal policy":"Policy that has the opposite effect on economic activity to that caused by the business cycle, such as slowing spending growth in a boom period and accelerating spending in a recession.","Coupon (bond)":"The periodic interest payment made to bondholders during the life of the bond. The interest is usually paid twice a year.","Credit rating":"An indicator of the risk of default by a borrower or the riskiness of a financial instrument. Credit ratings generally fit into three broad risk categories: minimal or low, moderate and high. These categories indicate the extent of a borrower’s capacity to meet their financial obligations or the probability that the value of a financial instrument will be realised. Investments rated as high risk are considered sub-investment grade (or “junk”).","Crowding-in":"An increase in private investment through the income-raising effect of government spending financed by deficits.","Crowding-out":"A fall in private investment or consumption as a result of increased government expenditure financed through borrowing, thereby competing for loanable funds and raising the interest rate, which curtails private investment and consumption spending.","Currency risk":"The potential for a change in the price of a currency that would affect investors with assets, liabilities or operations denominated in other currencies.","Current account (of the balance of payments)":"The difference between total imports and total exports, taking into account service payments and receipts, interest, dividends and transfers. The current account can be in deficit or surplus. See also trade balance.","Current balance":"The difference between revenue and current expenditure, which consists of compensation of employees, goods and services, and interest and rent on land.","Current expenditure":"Government expenditure on salaries and goods and services, such as rent, maintenance and interest payments. See also consumption expenditure.","Customs duties":"Tax levied on imported goods.","Debenture":"An unsecured loan backed by general credit rather than by specified assets.","Debt redemption profile":"The set of fixed repayment dates and amounts to which an issuer of debt, such as a preferred stock or bond, has committed to meeting.","Debt switching":"The exchange of bonds to manage refinancing risk or improve tradability.","Debt-service costs":"The cost of interest on government debt and other costs directly associated with borrowing.","Deflation":"A consistent decrease in the price of goods and services.","Deleveraging":"The reduction of debt previously used to increase the potential return of an investment.","Depreciation (capital)":"A reduction in the value of fixed capital as a result of wear and tear or redundancy.","Depreciation (exchange rate)":"A reduction in the external value of a currency.","Derivative financial instrument":"A financial asset that derives its value from an underlying asset, which may be a physical asset such as gold, or a financial asset such as a government bond.","Designated countries":"Foreign countries from which income may be exempt from South African tax under certain circumstances. See also double tax agreement.","Development finance institutions":"State agencies that aim to meet the credit needs of riskier but socially and economically desirable projects that are beyond the acceptance limits of commercial banks.","Direct taxes":"Taxes charged on taxable income or capital of individuals and legal entities.","Discretionary trust":"A trust where the executor has the choice of whether and how much of the trust’s income or capital is to be distributed to beneficiaries. The beneficiaries have only provisional rights to the income or capital of the trust.","Disposable income":"Total income by households less all taxes and employee contributions.","Dissaving":"An excess of current expenditure, including the depreciation of fixed capital, over current income.","Dividend":"The distribution of a portion of a company's earnings to a class of its shareholders.","Dividend withholding tax":"A tax on dividends that is subtracted and withheld by a company or intermediary before the net dividend is paid to the shareholder.","Division of revenue":"The allocation of funds between spheres of government, as required by the Constitution. See also equitable share.","Domestic demand":"The total level of spending in an economy, including imports but excluding exports.","Double tax agreement":"An agreement between two countries to prevent income that is taxed in one country from being taxed in the other as well. See also designated countries.","Economic cost":"The cost of an alternative that must be forgone to pursue a certain action. In other words, the benefits that could have been received by taking an alternative action.","Economic growth":"An increase in the total amount of output, income and spending in the economy.","Economic rent":"The difference between the return made by a factor of production (capital or labour) and the return necessary to keep the factor in its current occupation. For example, a firm making excess profits is earning economic rent.","Economically active population":"The part of the population that is of working age and is either employed or seeking work.","Effective tax rate":"Actual tax liability (or a reasonable estimate thereof) expressed as a percentage of a pre-tax income base rather than as a percentage of taxable income. In other words, tax rates that take into account not only the statutory or nominal tax rate, but also other aspects of the tax system (for example, allowable deductions), which determine the tax liability.","Embedded derivative":"A provision in a contract modifying its cash flows by making them dependent on an underlying measure – such as interest or exchange rates, or commodity prices – the value of which changes independently.","Emerging economies":"A name given by international investors to middle-income economies.","Employment coefficient":"The ratio of employment growth to economic growth.","Equitable share":"The allocation of revenue to the national, provincial and local spheres of government as required by the Constitution. See also division of revenue.","Equity finance":"Raising money by selling shares of stock to investors, who receive an ownership interest in return.","Exchange control":"Rules that regulate the flow of currency out of South Africa, or restrict the amount of foreign assets held by South African individuals and companies.","Exchange-traded funds":"Funds that track indexes, commodities or baskets of assets, and trade like stocks.","Excise duties":"Taxes on the manufacture or sale of certain domestic or imported products. Excise duties are usually charged on products such as alcoholic beverages, tobacco and petroleum.","Expenditure ceiling":"The maximum allowable level of expenditure to which government has committed itself.","Extra-budgetary institutions":"Public entities not directly funded from the fiscus.","Fair-value adjustment":"A change in the value of an asset or liability resulting from the periodic reassessment of its expected future economic in- or outflows.","Financial Services Board":"An independent institution established by statute that regulates insurers, intermediaries, retirement funds, friendly societies, unit trust schemes, management companies and financial markets.","Financial Stability Board":"An international body made up of representatives of financial authorities and institutions, and central banks. It proposes regulatory, supervisory and other policies in the interest of financial stability.","Financial account":"A statement of all financial transactions between the nation and the rest of the world, including portfolio and fixed investment flows and movements in foreign reserves.","Financial and Fiscal Commission (FFC)":"An independent body established by the Constitution to make recommendations to Parliament and provincial legislatures about financial issues affecting the three spheres of government.","Financial year":"The 12 months according to which companies and organisations budget and account. See also fiscal year.","Fiscal consolidation":"Policy aimed at reducing government deficits and debt accumulation.","Fiscal incidence":"The combined overall economic impact that fiscal policy has on the economy.","Fiscal leakage":"The outflow of revenue from an economy through tax evasion and avoidance.","Fiscal policy":"Policy on taxation, public spending and borrowing by the government.","Fiscal space":"The ability of government’s budget to provide additional resources for a desired programme without jeopardising fiscal or debt sustainability.","Fiscal year":"The 12 months on which government budgets are based, beginning 1 April and ending 31 March of the subsequent calendar year.","Fixed investment/capital formation":"Spending on buildings, machinery and equipment contributing to production capacity in the economy. See also gross fixed-capital formation.","Fixed-income bond":"A bond that pays a specific interest rate.","Floating rate notes":"A bond on which the interest rate is reset periodically in line with a money market reference rate.","Flow-through vehicles":"A vehicle, such as a trust, where income earned is treated as income of the vehicle’s beneficiaries.","Foreign currency swaps":"The exchange of principal and/or interest payments in one currency for those in another.","Foreign direct investment (FDI)":"The acquisition of a controlling interest by governments, institutions or individuals of a business in another country.","Forward book":"The total amount of contracts for the future exchange of foreign currency entered into by the Reserve Bank at any given point in time.","Forward cover":"Transactions involving an agreed exchange rate at which foreign currency will be purchased or sold at a future date.","Fringe benefit":"A benefit supplementing an employee’s wages or salary, such as medical insurance, company cars, housing allowances and pension schemes.","Fuel levy":"An excise tax on liquid fuels.","Function shift":"The movement of a function from one departmental vote or sphere of government to another.","Funded pension arrangements":"A pension scheme in which expected future benefits are funded in advance and as entitlement accrues.","Gold and foreign exchange reserves":"Reserves held by the Reserve Bank to meet foreign exchange obligations and to maintain liquidity in the presence of external shocks.","Government debt":"The total amount of money owed by the government as a consequence of its past borrowing.","Government guarantee":"An assurance made by government to a lender that a financial obligation will be honoured, even if the borrowing government institution is unable to repay the debt. See contingent liability.","Green paper":"A policy document intended for public discussion.","Gross borrowing requirement":"The sum of the main budget balance, extraordinary receipts and payments (referred to as National Revenue Fund receipts and payments), and maturing debt. The amount is funded through domestic short- and long- term loans, foreign loans and changes in cash balances.","Gross domestic product (GDP)":"A measure of the total national output, income and expenditure in the economy. GDP per head is the simplest overall measure of welfare, although it does not take account of the distribution of income, nor of goods and services that are produced outside the market economy, such as work within the household.","Gross domestic product inflation":"A measure of the total increase in prices in the whole economy. Unlike CPI inflation, GDP inflation includes price increases in goods that are exported and intermediate goods such as machines, but excludes imported goods.","Gross fixed-capital formation":"The addition to a country’s fixed-capital stock during a specific period, before provision for depreciation.","Gross value added":"The value of output less intermediate consumption. It is also a measure of the contribution to the economy made by an industry or sector.","Group of Twenty (G20)":"An international forum made up of finance ministers and central bank governors from 20 of the world’s largest economies.","Hedging":"An action taken by a buyer or seller to protect income against changes in prices, interest rates or exchange rates.","Horizontal equity":"A principle in taxation that holds that similarly situated taxpayers should face a similar tax treatment or tax burden. In other words, taxpayers with the same amount of income or capital should be accorded equal treatment.","Impaired advances":"Loans or advances that may not be collected in full.","Impairment":"A reduction in the recorded value of a long-lived asset arising from circumstances that prevent the asset from generating the future economic benefits previously expected and recorded.","Import parity pricing":"When a firm sells goods locally at the price customers would pay if they were to import the same goods from another country.","Inclusion rate":"The portion of the net capital gain derived from the disposal of an asset that will be taxed at the applicable rate.","Industrial development zone":"Designated sites linked to an international air or sea port, supported by incentives to encourage investment in export-orientated manufacturing and job creation.","Inflation":"An increase in the overall price level of goods and services in an economy over a specific period of time.","Inflation targeting":"A monetary policy framework intended to achieve price stability over a certain period of time.","Inter-state debt":"Money that different organs of state owe to each other.","Intergenerational equity":"A value based on ensuring that future generations do not have to repay debts taken on today, unless they also share in the benefits of assets.","Intermediate goods":"Goods produced to be used as inputs in the production of final goods.","Inventories":"Stocks of goods held by firms. An increase in inventories reflects an excess of output relative to spending over a period of time.","Labour intensity":"The relative amount of labour used to produce a unit of output.","Liquidity":"The ease with which assets can be bought and sold.","Liquidity requirements":"The amount of liquid or freely convertible assets that banks are required to hold relative to their liabilities for prudential and regulatory purposes.","Liquidity risk":"The risk that an asset might not easily and quickly be converted into cash through sale, or the risk to a debtor that it cannot meet its current debt obligations.","Lump-sum benefit":"A one-time payment for the total or partial value of an asset, usually received in place of recurring smaller payments.","M3":"The broadest definition of money supply in South Africa, including notes and coins, demand and fixed deposits, and credit.","Macroeconomics":"The branch of economics that deals with the whole economy – including issues such as growth, inflation, unemployment and the balance of payments.","Macroprudential regulation":"Rules that protect the stability of the financial sector and guard against systemic risk.","Marginal income tax rate":"The rate of tax on an incremental unit of income.","Marginal lending rate":"A penalty rate of interest charged by the Reserve Bank for lending to financial institutions in the money market in excess of the daily liquidity provided to the money market at the repurchase rate. See also repurchase agreements.","Marketable securities":"Tradable financial securities listed with a securities exchange.","Means test":"A method for determining whether someone qualifies for state assistance.","Medium Term Expenditure Committee (MTEC)":"The technical committee responsible for evaluating the medium-term expenditure framework budget submissions of national departments and making recommendations to the Minister of Finance regarding allocations to national departments.","Medium-term expenditure framework (MTEF)":"The three-year spending plans of national and provincial governments, published at the time of the Budget.","Microeconomics":"The branch of economics that deals with the behaviour of individual firms, consumers and sectors.","Ministers’ Committee on the Budget":"The political committee that considers key policy and budgetary issues that pertain to the budget process before they are tabled in Cabinet.","Monetary easing":"See quantitative easing.","Monetary policy":"Policy concerning total money supply, exchange rates and the general level of interest rates.","Money supply":"The total stock of money in an economy.","National Development Plan":"A planning framework prepared by the National Planning Commission that aims to eliminate poverty and reduce inequality by 2030.","National Revenue Fund":"The consolidated account of the national government into which all taxes, fees and charges collected by SARS and departmental revenue must be paid.","National budget":"The projected revenue and expenditures that flow through the National Revenue Fund. It does not include spending by provinces or local government from their own revenues.","Negotiable certificate of deposit":"Short-term deposit instruments issued by banks, at a variable interest rate, for a fixed period.","Net borrowing requirement":"The main budget balance.","Net exports":"Exports less imports.","Net open foreign currency position":"Gold and foreign exchange reserves minus the oversold forward book. The figure is expressed in dollars.","Net trade":"The difference between the value of exports and the value of imports.","New Development Bank":"A multilateral lending institution being established by Brazil, Russia, India, China and South Africa.","Nominal exchange rates":"The current rate of exchange between the rand and foreign currencies. The “effective” exchange rate is a trade-weighted average of the rates of exchange with other currencies.","Nominal wage":"The return, or wage, to employees at the current price level.","Non-competitive bid auction":"An auction in which an investor agrees to purchase a certain number of securities such as bonds at the average price of all competitive bids over a given period of time.","Non-financial public enterprises":"Government-owned or controlled organisations that deliver goods and non- financial services, trading as business enterprises, such as Eskom or Transnet.","Non-interest expenditure":"Total expenditure by government less debt-service costs.","Non-tax revenue":"Income received by government as a result of administrative charges, licences, fees, sales of goods and services, and so on.","Occupation-specific salary dispensation":"Revised salary structures unique to identified occupations in the public service, including doctors, nurses and teachers.","Opportunity cost":"The value of that which must be given up to achieve or acquire something. It is represented by the next highest valued alternative use of a resource.","Organisation for Economic Cooperation and Development (OECD)":"An organisation of 35 mainly industrialised member countries. South Africa is not a member.","PAYE":"The pay-as-you-earn (PAYE) system of income tax withholding requires employers to deduct income tax, and in some cases, the employees’ portion of social benefit taxes, from each paycheque delivered to employees.","Payroll tax":"Tax an employer withholds and/or pays on behalf of employees based on employee wages or salaries.","Permanent establishment":"A fixed place of business from which a company operates. When two countries have a tax treaty, the concept of “permanent establishment” is used to determine the right of one state to tax the profits of the business in the other state. See also anti-fragmentation.","Policy reserve":"Additional money in the fiscus to fund new and crucial priorities.","Portfolio investment":"Investment in financial assets such as stocks and bonds.","Potential growth":"The fastest growth an economy can sustain without increasing inflation.","Presidential Infrastructure Coordinating Commission (PICC)":"A commission established by Cabinet to develop, review and coordinate a 20-year infrastructure plan.","Price discovery":"The process of determining the price level of a commodity or asset, based on supply and demand factors.","Price sensitivity":"The extent to which changes in price affect consumer purchasing behaviour.","Primary deficit/surplus":"The difference between total revenue and non-interest expenditure. When revenue exceeds non-interest expenditure there is a surplus.","Primary sector":"The agricultural and mining sectors of the economy.","Principal purpose test":"A test where the benefits of a tax treaty are denied if it is reasonable to conclude that obtaining the benefit was one of the principal purposes behind the arrangement or transaction.","Private-sector credit extension":"Credit provided to the private sector. This includes all loans, credit cards and leases.","Privatisation":"The full or partial sale of state-owned enterprises to private individuals or companies.","Producer price index (PPI)":"Price increases measured by the producer price index – a measure of the prices paid based mainly on producers’ published price lists.","Productivity":"A measure of the amount of output generated from every unit of input. Typically used to measure changes in labour efficiency.","Profit shifting":"The allocation of income and expenses between related corporations or branches of the same legal entity to reduce overall tax liability.","Public Finance Management Act (PFMA)":"The act regulating financial management of national and provincial government, including the efficiency and effectiveness of public expenditure and the responsibilities of those engaging with government financial management.","Public Investment Corporation (PIC)":"A government-owned investment management company that invests funds on behalf of public-sector entities. Its largest client is the Government Employees Pension Fund.","Public entities":"Companies, agencies, funds and accounts that are fully or partly owned by government or public authorities and are regulated by law.","Public goods":"Goods and services that would not be fully provided in a pure free-market system and are largely provided by government.","Public sector":"National government, provincial government, local government, extra- budgetary governmental institutions, social security funds and non- financial public enterprises.","Public-benefit organisations (PBOs)":"Organisations that are mainly funded by donations from the public and other institutions, which engage in social activities to meet the needs of the general public.","Public-private partnerships (PPPs)":"A contractual arrangement whereby a private party performs a government function and assumes the associated risks. In return, the private party receives a fee according to predefined performance criteria. See unitary payment.","Public-sector borrowing requirement":"The consolidated cash borrowing requirement of general government and non-financial public enterprises.","Purchasing managers’ index (PMI)":"A composite index measuring the change in manufacturing activity compared with the previous month. An index value of 50 indicates no change in activity, a value above 50 indicates increased activity and a value below 50 indicates decreased activity.","Quantitative easing":"A measure used by central banks to stimulate economic growth when interest rates are near zero by increasing money supply. Also called monetary easing.","Quarterly Employment Survey":"An establishment-based survey conducted by Statistics South Africa to obtain information about the number of employees and gross salaries paid.","Quarterly Labour Force Survey":"A household-based survey conducted by Statistics South Africa to measure the dynamics of the labour market, producing indicators such as employment, unemployment and inactivity.","Rating agency":"A company that evaluates the ability of countries or other borrowers to honour their debt obligations. Credit ratings are used by international investors as indications of sovereign risk. See also credit rating.","Real effective exchange rate":"A measure of the rate of exchange of the rand relative to a trade-weighted average of South Africa’s trading partners’ currencies, adjusted for price trends in South Africa and the countries included.","Real exchange rate":"The level of the exchange rate taking account of inflation differences.","Real expenditure":"Expenditure measured in constant prices after taking account of inflation.","Real interest rate":"The level of interest after taking account of inflation.","Real wage":"The return, or wage, to employees, measured at a constant price level.","Recapitalisation":"Injection of funds into a company or entity to aid liquidity, either as a loan or in return for equity.","Recession":"A period in which national output and income decline. A recession is usually defined as two consecutive quarters of negative growth.","Redemption":"The return of an investor’s principal in a fixed-income security, such as a preferred stock or bond.","Refinancing":"The repayment of debt at a scheduled time with the proceeds of new loans.","Refinancing risk":"The risk that government will not be able to raise money to repay debt at any scheduled point, or that it will have to do so at a high cost.","Regional integration":"An economic policy intended to boost economic activity in a geographical area extending beyond one country.","Remuneration":"The costs of personnel, including salaries, housing allowances, car allowances and other benefits received by personnel.","Repurchase (repo) rate":"The rate at which the Reserve Bank lends to commercial banks.","Repurchase agreements":"Short-term contracts between the Reserve Bank and private banks in the money market to sell specified amounts of money at an interest rate determined by daily auction.","Reserves (foreign exchange)":"Holdings of foreign exchange, either by the Reserve Bank only or by the Reserve Bank and domestic banking institutions.","Residence-based income tax system":"A tax system in which the worldwide income accruing to a resident of a country is subject to the taxes of that country.","Reticulation scheme":"A piped water network that ensures that water is collected and treated before it reaches the consumer.","Revaluation gain/loss":"The difference between the value of a foreign currency deposit from the original (historical) rate to execution of a trade based on the spot rate.","Risk premium":"A return that compensates for uncertainty.","Saving":"The difference between income and spending.","Seasonally adjusted":"Removal of seasonal volatility (monthly or quarterly) from a time series. This provides a measure of the underlying trend in the data.","Secondary rebate":"A rebate from income tax, in addition to the primary rebate, that is available to taxpayers aged 65 years and older.","Secondary sector":"The part of the economy concerned with the manufacture of goods.","Secondary tax on companies (STC)":"Tax on dividends declared by a company, calculated at the rate of 10 per cent of the net amount of dividends declared. This was discontinued in 2012 and replaced with a 15 per cent dividend withholding tax.","Section 21 company":"Non-profit entities registered in terms of Section 21 of the Companies Act.","Sector education and training authorities":"Institutions funded through employer training levies, responsible for learnership programmes and implementing strategic sector skills plans.","Secured debt instruments":"Debt backed or secured by collateral to reduce the risk of lending.","Securitisation":"The pooling of assets into a financial instrument to sell to different types of investors.","Service and transfer payments":"Services involve transactions of non-tangible commodities, while transfers are unrequited transactions that do not generate a counter-economic value (for example, gifts and grants).","Skills development levy":"A payroll tax designed to finance training initiatives in terms of the skills development strategy.","Social infrastructure":"Infrastructure that supports social services.","Social wage":"Social benefits available to all individuals, funded wholly or partly by the state.","Source-based income tax system":"A system in which income is taxed in the country where the income originates.","Southern African Customs Union (SACU) agreement":"An agreement between South Africa, Botswana, Namibia, Lesotho and Swaziland that allows for the unrestricted flow of goods and services, and the sharing of customs and excise revenue.","Southern African Development Community (SADC)":"A regional intergovernmental organisation that promotes collaboration, economic integration and technical cooperation throughout southern Africa.","Sovereign debt":"Debt issued by a government.","Sovereign debt rating":"An assessment of the likelihood that a government will default on its debt obligations.","Spatial planning":"Planning to influence the geographic distribution of people and economic activity.","Special economic zones":"A designated zone where business and trade laws incentivise trade, investment and employment.","Specific excise duty":"A tax on each unit of output or sale of a good, unrelated to the value of a good.","Standing appropriations":"Government’s expenditure obligations that do not require a vote or statutory provision, including contractual guarantee commitments and international agreements.","Statutory appropriations":"Amounts appropriated to be spent in terms of statutes and not requiring appropriation by vote.","Sterilisation":"Action taken by the Reserve Bank to neutralise excess cash created in the money market when purchasing foreign currency.","Structural budget balance":"A representation of what government revenue and expenditure would be if output were at its potential level, with cyclical variations stripped out.","Structural constraints":"Imbalances in the structure of the economy that hinder growth and development.","Switch auction":"An auction to exchange bonds to manage refinancing risk or improve tradability.","Syndicated loan":"A large loan in which a group of banks work together to provide funds, which they solicit from their clients for the borrower.","Tax amnesty":"A period allowed by tax authorities during which taxpayers who are outside the tax net, but should be registered for tax purposes, can register for tax without incurring penalties.","Tax avoidance":"When individuals or businesses legitimately use provisions in the tax law to reduce their tax liability.","Tax base":"The aggregate value of income, sales or transactions on which particular taxes are levied.","Tax buoyancy":"Describes the relationship between total tax revenue collections and economic growth. This measure includes the effects of policy changes on revenue. A value above one means that revenues are growing faster than the economy and below one means they are growing below the rate of GDP growth.","Tax evasion":"When individuals or businesses illegally reduce their tax liability.","Tax expenditure":"Government revenue forgone due to provisions that allow deductions, exclusions, or exemptions from taxable income. The revenue can also be foregone through the deferral of tax liability or preferential tax rates.","Tax gap":"A measure of tax evasion that emerges from comparing the tax liability or tax base declared to the tax authorities with the tax liability or tax base calculated from other sources.","Tax incentives":"Specific provisions in the tax code that provide favourable tax treatment to individuals and businesses to encourage specific behaviour or activities.","Tax incidence":"The final distribution of the burden of tax. Statutory incidence defines where the law requires a tax to be levied. Economic incidence refers to those who experience a decrease in real income as a result of the imposition of a tax.","Tax loopholes":"Unintended weaknesses in the legal provisions of the tax system used by taxpayers to avoid paying tax liability.","Tax morality":"The willingness, or motivation, of citizens to pay tax. This is separate to the statutory obligation to pay taxes, but may have an influence on tax compliance.","Tax-to-GDP ratio":"For public finance comparison purposes, a country’s tax burden, or tax-to- GDP ratio, is calculated by taking the total tax payments for a particular fiscal year as a fraction or percentage of the GDP for that year.","Term-to-maturity":"The time between issuance and expiry.","Terms of trade":"An index measuring the ratio of a country’s export prices relative to its import prices.","Tertiary sector":"The part of the economy concerned with the provision of services.","Total factor productivity":"An index used to measure the efficiency of all inputs that contribute to the production process.","Trade balance":"The monetary record of a country’s net imports and exports of physical merchandise. See also current account.","Trade regime":"The system of tariffs, quotas and quantitative restrictions applied to protect domestic industries, together with subsidies and incentives used to promote international trade.","Trade-weighted rand":"The value of the rand pegged to or expressed relative to a market basket of selected foreign currencies.","Trademark":"A legal right pointing distinctly to the origin or ownership of merchandise to which it is applied and legally reserved for the exclusive use of the owner as maker or seller.","Treasury bills":"Short-term government debt instruments that yield no interest but are issued at a discount. Maturities vary from one day to 12 months.","Treasury committee":"The Cabinet committee that evaluates all requests for additional funds for unavoidable and unforeseen expenditure during a financial year.","Treaty shopping":"When related companies in different countries establish a third entity in another location to take advantage of a favourable tax arrangement.","Trend GDP growth":"The theoretical level of GDP growth determined by the full utilisation of all factors of production (land, labour and capital). Growth above the trend rate results in macroeconomic imbalances such as rising inflation or a weakening of the current account. Increases in trend GDP growth are achieved through capital formation, growth in employment and/or technological development.","Unallocated reserves":"Potential expenditure provision not allocated to a particular use. It mainly consists of the contingency reserve and amounts of money left unallocated by provinces.","Unemployment (broad definition)":"All those of working age who are unemployed, including those actively seeking employment and discouraged work seekers.","Unemployment (official definition)":"Those of working age, who are unemployed and actively seeking work (excludes discouraged work seekers).","Unit labour cost":"The cost of labour per unit of output, calculated by dividing average wages by productivity (output per worker per hour).","Unitary payment":"The payment made to the private party for meeting its obligations in the project deliverables in a public-private partnership.","Unqualified audit":"An assessment by a registered auditing firm or the Auditor-General of South Africa asserting that the financial statements of a department, entity or company are free of material misstatement.","Unsecured debt instruments":"Debt not backed or secured by collateral to reduce the risk of lending.","Unsecured lending":"A loan that is not backed or secured by any type of collateral to reduce the lender’s risk.","Vertical equity":"A doctrine in taxation that holds that differently situated taxpayers should be treated differently in terms of income tax provisions. In other words, taxpayers with more income and/or capital should pay more tax.","Vested right":"The right to ownership of an asset that cannot be arbitrarily taken away by a third party.","Virement":"The transfer of resources from one programme to another within the same department during a financial year.","Vote":"An appropriation voted by Parliament.","Water trading account":"A departmental account that ring-fences revenue from the sale of bulk water and related services to secure funding to manage the sustainability of water resources and infrastructure.","Weighted average cost of capital":"The average rate of return an organisation expects to pay to investors in its securities, such as bonds, debt and shares. Each category of security is accorded a proportionate weight in the calculation.","White paper":"A policy document used to present government policy preferences.","Withholding tax":"Tax on income deducted at source. Withholding taxes are widely used for dividends, interest and royalties.","Yield":"A financial return or interest paid to buyers of government bonds. The yield/rate of return on bonds takes into account the total annual interest payments, the purchase price, the redemption value and the amount of time remaining until maturity.","Yield curve":"A graph showing the relationship between the yield on bonds of the same credit quality but different maturity at a given point in time."}
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Tooltip;
-
-var _preact = __webpack_require__(0);
-
-var _Box = __webpack_require__(85);
-
-var _Box2 = _interopRequireDefault(_Box);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Tooltip(_ref) {
-  var block = _ref.block,
-      children = _ref.children,
-      title = _ref.title,
-      description = _ref.description,
-      actions = _ref.actions,
-      down = _ref.down,
-      open = _ref.open,
-      openAction = _ref.openAction,
-      closeAction = _ref.closeAction;
-
-
-  return (0, _preact.h)(
-    'span',
-    { className: 'Tooltip' + (block ? ' is-block' : '') },
-    (0, _preact.h)(
-      'div',
-      { className: 'Tooltip-trigger', onClick: openAction },
-      children
-    ),
-    (0, _preact.h)(
-      'div',
-      { className: 'Tooltip-boxWrap' + (open ? ' is-open' : '') + (down ? ' is-down' : '') },
-      (0, _preact.h)('div', { className: 'Tooltip-modalCover', onClick: closeAction }),
-      (0, _preact.h)(_Box2.default, { title: title, description: description, actions: actions, down: down, closeAction: closeAction })
-    )
-  );
-}
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = ColumnChart;
-
-var _preact = __webpack_require__(0);
-
-var _calcMaxValue = __webpack_require__(102);
-
-var _calcMaxValue2 = _interopRequireDefault(_calcMaxValue);
-
-var _buildGroupSpaceArray = __webpack_require__(103);
-
-var _buildGroupSpaceArray2 = _interopRequireDefault(_buildGroupSpaceArray);
-
-var _Breakpoints = __webpack_require__(105);
-
-var _Breakpoints2 = _interopRequireDefault(_Breakpoints);
-
-var _Grid = __webpack_require__(107);
-
-var _Grid2 = _interopRequireDefault(_Grid);
-
-var _Guides = __webpack_require__(108);
-
-var _Guides2 = _interopRequireDefault(_Guides);
-
-var _LineGroups = __webpack_require__(110);
-
-var _LineGroups2 = _interopRequireDefault(_LineGroups);
-
-var _Tooltips = __webpack_require__(113);
-
-var _Tooltips2 = _interopRequireDefault(_Tooltips);
-
-var _Labels = __webpack_require__(116);
-
-var _Labels2 = _interopRequireDefault(_Labels);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function ColumnChart(_ref) {
-  var items = _ref.items,
-      width = _ref.width,
-      guides = _ref.guides,
-      _ref$scale = _ref.scale,
-      scale = _ref$scale === undefined ? 1 : _ref$scale,
-      downloadable = _ref.downloadable;
-
-  var styling = {
-    fontSize: 14,
-    popupFontSize: 14,
-    maxValue: (0, _calcMaxValue2.default)(items),
-    popupWidth: 90,
-    popUpOffset: 6,
-    buffer: 20,
-    valueSpace: width - (0 + 80),
-    padding: [50, 0, 30, 80],
-    popupHeight: 30,
-    popupCentre: 5,
-    charWrap: width / 10,
-    titleSpace: 0,
-    labelBreakpoints: 4,
-    showGuides: true,
-    charLineHeight: 14,
-    lineGutter: 8,
-    barWidth: 12,
-    groupMargin: 40,
-    svgHeight: 300
-  };
-
-  if (downloadable) {
-    styling = _extends({}, styling, {
-      padding: [80, 30, 60, 110],
-      valueSpace: width - (30 + 110)
-    });
-  }
-
-  var _styling = styling,
-      valueSpace = _styling.valueSpace,
-      padding = _styling.padding,
-      showGuides = _styling.showGuides,
-      svgHeight = _styling.svgHeight,
-      buffer = _styling.buffer;
-
-  var groupSpaceArray = (0, _buildGroupSpaceArray2.default)(items, styling);
-  var totalGroupSpace = groupSpaceArray.reduce(function (result, val) {
-    return result + val;
-  }, 0);
-  var height = padding[0] + svgHeight + padding[2] + buffer * 2;
-  var newWidth = padding[3] + valueSpace + padding[1];
-
-  var background = (0, _preact.h)('rect', {
-    x: '0',
-    y: '0',
-    width: newWidth,
-    height: height,
-    fill: 'white'
-  });
-
-  return (0, _preact.h)(
-    'svg',
-    {
-      version: '1.1',
-      className: 'Graph-svg is-hoverable',
-      xmlns: 'http://www.w3.org/2000/svg',
-      viewBox: '0 0 ' + newWidth + ' ' + height,
-      width: newWidth * scale,
-      height: height * scale,
-      style: { maxWidth: newWidth }
-    },
-    downloadable ? background : null,
-    (0, _preact.h)(_Breakpoints2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_Grid2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_Guides2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_LineGroups2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
-    (0, _preact.h)(_Tooltips2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
-    (0, _preact.h)(_Labels2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
-    ' */}'
-  );
-}
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright (c) 2014-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
-
-
-
-var emptyFunction = __webpack_require__(16);
-
-/**
- * Similar to invariant but only logs a warning if the condition is not met.
- * This can be used to log issues in development environments in critical
- * paths. Removing the logging code for production environments will keep the
- * same logic and follow the same code paths.
- */
-
-var warning = emptyFunction;
-
-if (process.env.NODE_ENV !== 'production') {
-  var printWarning = function printWarning(format) {
-    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-
-    var argIndex = 0;
-    var message = 'Warning: ' + format.replace(/%s/g, function () {
-      return args[argIndex++];
-    });
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-
-  warning = function warning(condition, format) {
-    if (format === undefined) {
-      throw new Error('`warning(condition, format, ...args)` requires a warning ' + 'message argument');
-    }
-
-    if (format.indexOf('Failed Composite propType: ') === 0) {
-      return; // Ignore CompositeComponent proptype check.
-    }
-
-    if (!condition) {
-      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        args[_key2 - 2] = arguments[_key2];
-      }
-
-      printWarning.apply(undefined, [format].concat(args));
-    }
-  };
-}
-
-module.exports = warning;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Icon;
-
-var _preact = __webpack_require__(0);
-
-var _Close = __webpack_require__(129);
-
-var _Close2 = _interopRequireDefault(_Close);
-
-var _Download = __webpack_require__(130);
-
-var _Download2 = _interopRequireDefault(_Download);
-
-var _Facebook = __webpack_require__(131);
-
-var _Facebook2 = _interopRequireDefault(_Facebook);
-
-var _Search = __webpack_require__(132);
-
-var _Search2 = _interopRequireDefault(_Search);
-
-var _Twitter = __webpack_require__(133);
-
-var _Twitter2 = _interopRequireDefault(_Twitter);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Icon(_ref) {
-  var size = _ref.size,
-      type = _ref.type;
-
-  switch (type) {
-    case 'close':
-      return (0, _preact.h)(_Close2.default, { size: size });
-    case 'download':
-      return (0, _preact.h)(_Download2.default, { size: size });
-    case 'facebook':
-      return (0, _preact.h)(_Facebook2.default, { size: size });
-    case 'search':
-      return (0, _preact.h)(_Search2.default, { size: size });
-    case 'twitter':
-      return (0, _preact.h)(_Twitter2.default, { size: size });
-    default:
-      return null;
-  }
-}
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports) {
-
-module.exports = {"apiBaseURL":"https://data.vulekamali.gov.za"}
-
-/***/ }),
 /* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = removePunctuation;
-function removePunctuation(string) {
-  return string.replace(/[^\w\s]/g, ' ');
-}
-
-/***/ }),
-/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8787,7 +8698,7 @@ exports.XMLSerializer = XMLSerializer;
 //}
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8799,72 +8710,92 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-exports.default = Radios;
+exports.default = Markup;
 
 var _preact = __webpack_require__(0);
 
-function Radios(_ref) {
-  var items = _ref.items,
-      selected = _ref.selected,
-      changeAction = _ref.changeAction,
-      name = _ref.name;
+var _index = __webpack_require__(3);
 
-  var keys = Object.keys(items);
+var _index2 = _interopRequireDefault(_index);
+
+var _index3 = __webpack_require__(38);
+
+var _index4 = _interopRequireDefault(_index3);
+
+var _index5 = __webpack_require__(36);
+
+var _index6 = _interopRequireDefault(_index5);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Markup(props) {
+  var options = props.options,
+      chart = props.chart,
+      name = props.name,
+      selectOpen = props.selectOpen,
+      selected = props.selected,
+      modal = props.modal,
+      clickAction = props.clickAction,
+      canvasAction = props.canvasAction,
+      closeModal = props.closeModal,
+      open = props.open,
+      _changeAction = props.changeAction,
+      items = props.items;
+
 
   return (0, _preact.h)(
-    "ul",
-    { className: "Radios" },
-    keys.map(function (key, index) {
-      return (0, _preact.h)(
-        "li",
-        { className: "Radios-itemWrap", key: key },
-        (0, _preact.h)(
-          "label",
-          { htmlFor: name + "-" + index },
-          (0, _preact.h)("input", _extends({
-            className: "Radios-input",
-            type: "radio",
-            id: name + "-" + index,
-            value: items[key],
-            checked: items[key] === selected,
-            onChange: function onChange(event) {
-              return changeAction(event.target.value);
-            }
-          }, { name: name })),
-          (0, _preact.h)(
-            "span",
-            { className: "Radios-label" },
-            key
-          )
-        )
-      );
-    })
+    'div',
+    null,
+    (0, _preact.h)(
+      _index6.default,
+      { title: 'Share this link:', closeAction: closeModal, open: modal },
+      (0, _preact.h)(
+        'a',
+        { className: 'u-wordBreak u-wordBreak--breakAll', href: window.location.href },
+        window.location.href
+      )
+    ),
+    (0, _preact.h)('canvas', { ref: function ref(node) {
+        return canvasAction(node);
+      }, style: { display: 'none' } }),
+    (0, _preact.h)(
+      'span',
+      { className: 'ChartDownload-title' },
+      'Save or share'
+    ),
+    (0, _preact.h)(
+      'div',
+      { className: 'ChartDownload-select' },
+      (0, _preact.h)(_index2.default, _extends({
+        name: name + '-download-image',
+        open: open,
+        changeAction: function changeAction(value) {
+          return _changeAction(value);
+        }
+      }, { items: items, selected: selected }))
+    ),
+    (0, _preact.h)(
+      'div',
+      { className: 'ChartDownload-button' },
+      (0, _preact.h)(
+        'button',
+        { onClick: clickAction, className: 'Button has-icon' },
+        (0, _preact.h)(_index4.default, { type: 'download', size: 'small' })
+      )
+    )
   );
 }
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
+
+__webpack_require__(46);
 
 __webpack_require__(47);
-
-__webpack_require__(200);
-
-__webpack_require__(201);
-
-__webpack_require__(202);
-
-__webpack_require__(203);
-
-/***/ }),
-/* 47 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
 
 __webpack_require__(48);
 
@@ -8874,54 +8805,50 @@ __webpack_require__(50);
 
 __webpack_require__(51);
 
-__webpack_require__(52);
+__webpack_require__(54);
 
-__webpack_require__(53);
+__webpack_require__(55);
 
-__webpack_require__(56);
+__webpack_require__(76);
 
-__webpack_require__(57);
+__webpack_require__(86);
 
-__webpack_require__(78);
+__webpack_require__(99);
 
-__webpack_require__(88);
-
-__webpack_require__(101);
+__webpack_require__(116);
 
 __webpack_require__(118);
 
-__webpack_require__(120);
+__webpack_require__(132);
 
-__webpack_require__(134);
+__webpack_require__(133);
 
-__webpack_require__(135);
+__webpack_require__(139);
 
-__webpack_require__(141);
+__webpack_require__(142);
 
-__webpack_require__(144);
+__webpack_require__(149);
 
-__webpack_require__(151);
+__webpack_require__(156);
 
-__webpack_require__(158);
+__webpack_require__(160);
 
-__webpack_require__(161);
+__webpack_require__(172);
 
-__webpack_require__(173);
+__webpack_require__(176);
 
-__webpack_require__(177);
+__webpack_require__(182);
 
-__webpack_require__(183);
+__webpack_require__(191);
 
-__webpack_require__(192);
+__webpack_require__(194);
 
-__webpack_require__(195);
+__webpack_require__(196);
 
 __webpack_require__(197);
 
-__webpack_require__(198);
-
 /***/ }),
-/* 48 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9144,7 +9071,7 @@ if ("document" in window.self) {
 }
 
 /***/ }),
-/* 49 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9609,7 +9536,7 @@ if ("document" in window.self) {
 })(typeof self !== 'undefined' ? self : undefined);
 
 /***/ }),
-/* 50 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10023,13 +9950,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 //# sourceMappingURL=devtools.js.map
 
 /***/ }),
-/* 51 */
+/* 49 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 52 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10045,7 +9972,7 @@ function createComponentInterfaces() {
 exports.default = createComponentInterfaces();
 
 /***/ }),
-/* 53 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10055,7 +9982,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _queryString = __webpack_require__(24);
+var _queryString = __webpack_require__(20);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -10070,7 +9997,7 @@ function loadStringQueries() {
 exports.default = loadStringQueries();
 
 /***/ }),
-/* 54 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10083,7 +10010,7 @@ module.exports = function (str) {
 };
 
 /***/ }),
-/* 55 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10186,7 +10113,7 @@ module.exports = function (encodedURI) {
 };
 
 /***/ }),
-/* 56 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10196,7 +10123,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _analyticsEvent = __webpack_require__(9);
+var _analyticsEvent = __webpack_require__(8);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -10219,7 +10146,7 @@ function loadGoogleAnalytics() {
 exports.default = loadGoogleAnalytics();
 
 /***/ }),
-/* 57 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10229,15 +10156,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _array = __webpack_require__(58);
+var _array = __webpack_require__(56);
 
 var _array2 = _interopRequireDefault(_array);
 
-var _promisePolyfill = __webpack_require__(73);
+var _promisePolyfill = __webpack_require__(71);
 
 var _promisePolyfill2 = _interopRequireDefault(_promisePolyfill);
 
-var _arrayPrototype = __webpack_require__(76);
+var _arrayPrototype = __webpack_require__(74);
 
 var _arrayPrototype2 = _interopRequireDefault(_arrayPrototype);
 
@@ -10267,7 +10194,7 @@ function polyfillOldFeatures() {
 exports.default = polyfillOldFeatures();
 
 /***/ }),
-/* 58 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10275,9 +10202,9 @@ exports.default = polyfillOldFeatures();
 
 var define = __webpack_require__(5);
 
-var implementation = __webpack_require__(26);
-var getPolyfill = __webpack_require__(33);
-var shim = __webpack_require__(72);
+var implementation = __webpack_require__(22);
+var getPolyfill = __webpack_require__(29);
+var shim = __webpack_require__(70);
 
 // eslint-disable-next-line no-unused-vars
 var boundFromShim = function from(array) {
@@ -10294,7 +10221,7 @@ define(boundFromShim, {
 module.exports = boundFromShim;
 
 /***/ }),
-/* 59 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10307,7 +10234,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var has = Object.prototype.hasOwnProperty;
 var toStr = Object.prototype.toString;
 var slice = Array.prototype.slice;
-var isArgs = __webpack_require__(60);
+var isArgs = __webpack_require__(58);
 var isEnumerable = Object.prototype.propertyIsEnumerable;
 var hasDontEnumBug = !isEnumerable.call({ toString: null }, 'toString');
 var hasProtoEnumBug = isEnumerable.call(function () {}, 'prototype');
@@ -10437,7 +10364,7 @@ keysShim.shim = function shimObjectKeys() {
 module.exports = keysShim;
 
 /***/ }),
-/* 60 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10457,7 +10384,7 @@ module.exports = function isArguments(value) {
 };
 
 /***/ }),
-/* 61 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10485,7 +10412,7 @@ module.exports = function forEach(obj, fn, ctx) {
 };
 
 /***/ }),
-/* 62 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10494,21 +10421,21 @@ module.exports = function forEach(obj, fn, ctx) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var has = __webpack_require__(12);
-var toPrimitive = __webpack_require__(64);
+var toPrimitive = __webpack_require__(62);
 
 var toStr = Object.prototype.toString;
 var hasSymbols = typeof Symbol === 'function' && _typeof(Symbol.iterator) === 'symbol';
 
-var $isNaN = __webpack_require__(29);
-var $isFinite = __webpack_require__(30);
+var $isNaN = __webpack_require__(25);
+var $isFinite = __webpack_require__(26);
 var MAX_SAFE_INTEGER = Number.MAX_SAFE_INTEGER || Math.pow(2, 53) - 1;
 
-var assign = __webpack_require__(67);
-var sign = __webpack_require__(31);
-var mod = __webpack_require__(32);
-var isPrimitive = __webpack_require__(68);
+var assign = __webpack_require__(65);
+var sign = __webpack_require__(27);
+var mod = __webpack_require__(28);
+var isPrimitive = __webpack_require__(66);
 var parseInteger = parseInt;
-var bind = __webpack_require__(27);
+var bind = __webpack_require__(23);
 var arraySlice = bind.call(Function.call, Array.prototype.slice);
 var strSlice = bind.call(Function.call, String.prototype.slice);
 var isBinary = bind.call(Function.call, RegExp.prototype.test, /^0b[01]+$/i);
@@ -10529,9 +10456,9 @@ var trim = function trim(value) {
 	return replace(value, trimRegex, '');
 };
 
-var ES5 = __webpack_require__(69);
+var ES5 = __webpack_require__(67);
 
-var hasRegExpMatcher = __webpack_require__(71);
+var hasRegExpMatcher = __webpack_require__(69);
 
 // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-abstract-operations
 var ES6 = assign(assign({}, ES5), {
@@ -11076,7 +11003,7 @@ delete ES6.CheckObjectCoercible; // renamed in ES6 to RequireObjectCoercible
 module.exports = ES6;
 
 /***/ }),
-/* 63 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11128,7 +11055,7 @@ module.exports = function bind(that) {
 };
 
 /***/ }),
-/* 64 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11138,10 +11065,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var hasSymbols = typeof Symbol === 'function' && _typeof(Symbol.iterator) === 'symbol';
 
-var isPrimitive = __webpack_require__(28);
+var isPrimitive = __webpack_require__(24);
 var isCallable = __webpack_require__(13);
-var isDate = __webpack_require__(65);
-var isSymbol = __webpack_require__(66);
+var isDate = __webpack_require__(63);
+var isSymbol = __webpack_require__(64);
 
 var ordinaryToPrimitive = function OrdinaryToPrimitive(O, hint) {
 	if (typeof O === 'undefined' || O === null) {
@@ -11210,7 +11137,7 @@ module.exports = function ToPrimitive(input, PreferredType) {
 };
 
 /***/ }),
-/* 65 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11240,7 +11167,7 @@ module.exports = function isDateObject(value) {
 };
 
 /***/ }),
-/* 66 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11281,7 +11208,7 @@ if (hasSymbols) {
 }
 
 /***/ }),
-/* 67 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11301,7 +11228,7 @@ module.exports = function assign(target, source) {
 };
 
 /***/ }),
-/* 68 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11314,7 +11241,7 @@ module.exports = function isPrimitive(value) {
 };
 
 /***/ }),
-/* 69 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11322,14 +11249,14 @@ module.exports = function isPrimitive(value) {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var $isNaN = __webpack_require__(29);
-var $isFinite = __webpack_require__(30);
+var $isNaN = __webpack_require__(25);
+var $isFinite = __webpack_require__(26);
 
-var sign = __webpack_require__(31);
-var mod = __webpack_require__(32);
+var sign = __webpack_require__(27);
+var mod = __webpack_require__(28);
 
 var IsCallable = __webpack_require__(13);
-var toPrimitive = __webpack_require__(70);
+var toPrimitive = __webpack_require__(68);
 
 var has = __webpack_require__(12);
 
@@ -11568,7 +11495,7 @@ var ES5 = {
 module.exports = ES5;
 
 /***/ }),
-/* 70 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11576,7 +11503,7 @@ module.exports = ES5;
 
 var toStr = Object.prototype.toString;
 
-var isPrimitive = __webpack_require__(28);
+var isPrimitive = __webpack_require__(24);
 
 var isCallable = __webpack_require__(13);
 
@@ -11611,7 +11538,7 @@ module.exports = function ToPrimitive(input, PreferredType) {
 };
 
 /***/ }),
-/* 71 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11658,14 +11585,14 @@ module.exports = function isRegex(value) {
 };
 
 /***/ }),
-/* 72 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var define = __webpack_require__(5);
-var getPolyfill = __webpack_require__(33);
+var getPolyfill = __webpack_require__(29);
 
 module.exports = function shimArrayFrom() {
 	var polyfill = getPolyfill();
@@ -11680,7 +11607,7 @@ module.exports = function shimArrayFrom() {
 };
 
 /***/ }),
-/* 73 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11921,10 +11848,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     root.Promise = Promise;
   }
 })(undefined);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(74).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(72).setImmediate))
 
 /***/ }),
-/* 74 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11978,16 +11905,16 @@ exports._unrefActive = exports.active = function (item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(75);
+__webpack_require__(73);
 // On some exotic environments, it's not clear which object `setimmeidate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
 exports.setImmediate = typeof self !== "undefined" && self.setImmediate || typeof global !== "undefined" && global.setImmediate || undefined && undefined.setImmediate;
 exports.clearImmediate = typeof self !== "undefined" && self.clearImmediate || typeof global !== "undefined" && global.clearImmediate || undefined && undefined.clearImmediate;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(34)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(30)))
 
 /***/ }),
-/* 75 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12175,21 +12102,21 @@ exports.clearImmediate = typeof self !== "undefined" && self.clearImmediate || t
     attachTo.setImmediate = setImmediate;
     attachTo.clearImmediate = clearImmediate;
 })(typeof self === "undefined" ? typeof global === "undefined" ? undefined : global : self);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(34), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(30), __webpack_require__(2)))
 
 /***/ }),
-/* 76 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var define = __webpack_require__(5);
-var ES = __webpack_require__(10);
+var ES = __webpack_require__(9);
 
-var implementation = __webpack_require__(35);
-var getPolyfill = __webpack_require__(36);
-var shim = __webpack_require__(77);
+var implementation = __webpack_require__(31);
+var getPolyfill = __webpack_require__(32);
+var shim = __webpack_require__(75);
 
 var slice = Array.prototype.slice;
 
@@ -12210,14 +12137,14 @@ define(boundShim, {
 module.exports = boundShim;
 
 /***/ }),
-/* 77 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var define = __webpack_require__(5);
-var getPolyfill = __webpack_require__(36);
+var getPolyfill = __webpack_require__(32);
 
 module.exports = function shimArrayPrototypeFindIndex() {
 	var polyfill = getPolyfill();
@@ -12232,7 +12159,7 @@ module.exports = function shimArrayPrototypeFindIndex() {
 };
 
 /***/ }),
-/* 78 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12244,27 +12171,27 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _camelcase = __webpack_require__(79);
+var _camelcase = __webpack_require__(77);
 
 var _camelcase2 = _interopRequireDefault(_camelcase);
 
-var _glossary = __webpack_require__(37);
+var _glossary = __webpack_require__(33);
 
 var _glossary2 = _interopRequireDefault(_glossary);
 
-var _createComponent = __webpack_require__(80);
+var _createComponent = __webpack_require__(78);
 
 var _createComponent2 = _interopRequireDefault(_createComponent);
 
-var _escapeRegex = __webpack_require__(82);
+var _escapeRegex = __webpack_require__(80);
 
 var _escapeRegex2 = _interopRequireDefault(_escapeRegex);
 
-var _walkTheDom = __webpack_require__(83);
+var _walkTheDom = __webpack_require__(81);
 
 var _walkTheDom2 = _interopRequireDefault(_walkTheDom);
 
-var _findReactInstances = __webpack_require__(84);
+var _findReactInstances = __webpack_require__(82);
 
 var _findReactInstances2 = _interopRequireDefault(_findReactInstances);
 
@@ -12343,7 +12270,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 79 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12413,7 +12340,7 @@ module.exports = function (str) {
 };
 
 /***/ }),
-/* 80 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12424,7 +12351,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = createComponent;
 
-var _closeIcon = __webpack_require__(81);
+var _closeIcon = __webpack_require__(79);
 
 var _closeIcon2 = _interopRequireDefault(_closeIcon);
 
@@ -12435,7 +12362,7 @@ function createComponent(year, title, description, content) {
 }
 
 /***/ }),
-/* 81 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12447,7 +12374,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = '<svg version="1.2" width="10" height="10" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M58.3 50.4L96.7 12c2.4-2.4 2.4-6.2 0-8.6C94.3 1 90.5 1 88 3.4L49.8 41.8 11.3 3.4C9 1 5 1 2.7 3.4.3 5.8.3 9.6 2.7 12L41 50.4 2.8 88.8C.3 91.2.3 95 2.7 97.4 4 98.6 5.5 99.2 7 99.2c1.6 0 3-.6 4.3-1.8L49.7 59 88 97.4c1.3 1.2 3 1.8 4.4 1.8 1.6 0 3-.6 4.3-1.8 2.4-2.4 2.4-6.2 0-8.6L58.3 50.4zm0 0"></path></svg>';
 
 /***/ }),
-/* 82 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12462,7 +12389,7 @@ function escapeRegExp(text) {
 }
 
 /***/ }),
-/* 83 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12487,7 +12414,7 @@ function walkTheDom(node, func, source, regExpression) {
 }
 
 /***/ }),
-/* 84 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12500,7 +12427,7 @@ exports.default = findReactInstances;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(38);
+var _index = __webpack_require__(34);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -12545,7 +12472,7 @@ function findReactInstances() {
 }
 
 /***/ }),
-/* 85 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12558,7 +12485,7 @@ exports.default = Box;
 
 var _preact = __webpack_require__(0);
 
-var _Links = __webpack_require__(86);
+var _Links = __webpack_require__(84);
 
 var _Links2 = _interopRequireDefault(_Links);
 
@@ -12606,7 +12533,7 @@ function Box(_ref) {
 }
 
 /***/ }),
-/* 86 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12619,7 +12546,7 @@ exports.default = Links;
 
 var _preact = __webpack_require__(0);
 
-var _CloseIcon = __webpack_require__(87);
+var _CloseIcon = __webpack_require__(85);
 
 var _CloseIcon2 = _interopRequireDefault(_CloseIcon);
 
@@ -12664,7 +12591,7 @@ function Links(_ref) {
 }
 
 /***/ }),
-/* 87 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12686,7 +12613,7 @@ function CloseIcon() {
 }
 
 /***/ }),
-/* 88 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12698,7 +12625,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(6);
+var _index = __webpack_require__(10);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -12725,7 +12652,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 89 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12748,7 +12675,7 @@ function calcMaxValue(items) {
 }
 
 /***/ }),
-/* 90 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12791,7 +12718,7 @@ function buildGroupSpaceArray(items, styling) {
 }
 
 /***/ }),
-/* 91 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12807,7 +12734,7 @@ exports.default = Breakpoints;
 
 var _preact = __webpack_require__(0);
 
-var _BreakpointItem = __webpack_require__(92);
+var _BreakpointItem = __webpack_require__(90);
 
 var _BreakpointItem2 = _interopRequireDefault(_BreakpointItem);
 
@@ -12838,7 +12765,7 @@ function Breakpoints(_ref) {
 }
 
 /***/ }),
-/* 92 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12851,7 +12778,7 @@ exports.default = HorisontalBreakpoint;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(7);
+var _trimValues = __webpack_require__(6);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -12892,7 +12819,7 @@ function HorisontalBreakpoint(_ref) {
 }
 
 /***/ }),
-/* 93 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12947,7 +12874,7 @@ function Grid(_ref) {
 }
 
 /***/ }),
-/* 94 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12963,7 +12890,7 @@ exports.default = Guides;
 
 var _preact = __webpack_require__(0);
 
-var _GuideItem = __webpack_require__(95);
+var _GuideItem = __webpack_require__(93);
 
 var _GuideItem2 = _interopRequireDefault(_GuideItem);
 
@@ -12997,7 +12924,7 @@ function Guides(_ref) {
 }
 
 /***/ }),
-/* 95 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13039,7 +12966,7 @@ function HorisontalGuide(_ref) {
 }
 
 /***/ }),
-/* 96 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13055,7 +12982,7 @@ exports.default = LineGroups;
 
 var _preact = __webpack_require__(0);
 
-var _LineGroupItem = __webpack_require__(97);
+var _LineGroupItem = __webpack_require__(95);
 
 var _LineGroupItem2 = _interopRequireDefault(_LineGroupItem);
 
@@ -13087,7 +13014,7 @@ function LineGroups(_ref) {
 }
 
 /***/ }),
-/* 97 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13177,7 +13104,7 @@ function LineGroupItem(_ref) {
 }
 
 /***/ }),
-/* 98 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13193,7 +13120,7 @@ exports.default = Tooltips;
 
 var _preact = __webpack_require__(0);
 
-var _TooltipGroup = __webpack_require__(99);
+var _TooltipGroup = __webpack_require__(97);
 
 var _TooltipGroup2 = _interopRequireDefault(_TooltipGroup);
 
@@ -13225,7 +13152,7 @@ function Tooltips(_ref) {
 }
 
 /***/ }),
-/* 99 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13241,7 +13168,7 @@ exports.default = TooltipGroup;
 
 var _preact = __webpack_require__(0);
 
-var _TooltipItem = __webpack_require__(100);
+var _TooltipItem = __webpack_require__(98);
 
 var _TooltipItem2 = _interopRequireDefault(_TooltipItem);
 
@@ -13315,7 +13242,7 @@ function TooltipGroup(_ref) {
 }
 
 /***/ }),
-/* 100 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13328,7 +13255,7 @@ exports.default = TooltipItem;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(7);
+var _trimValues = __webpack_require__(6);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -13396,7 +13323,7 @@ function TooltipItem(_ref) {
 }
 
 /***/ }),
-/* 101 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13408,7 +13335,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(39);
+var _index = __webpack_require__(35);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -13435,7 +13362,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 102 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13458,7 +13385,7 @@ function calcMaxValue(items) {
 }
 
 /***/ }),
-/* 103 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13469,7 +13396,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = buildGroupSpaceArray;
 
-var _breakIntoWrap = __webpack_require__(104);
+var _breakIntoWrap = __webpack_require__(102);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -13501,7 +13428,7 @@ function buildGroupSpaceArray(items, styling) {
 }
 
 /***/ }),
-/* 104 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13548,7 +13475,7 @@ function breakIntoWrap(string, wrap) {
 }
 
 /***/ }),
-/* 105 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13564,7 +13491,7 @@ exports.default = Breakpoints;
 
 var _preact = __webpack_require__(0);
 
-var _BreakpointItem = __webpack_require__(106);
+var _BreakpointItem = __webpack_require__(104);
 
 var _BreakpointItem2 = _interopRequireDefault(_BreakpointItem);
 
@@ -13595,7 +13522,7 @@ function Breakpoints(_ref) {
 }
 
 /***/ }),
-/* 106 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13608,7 +13535,7 @@ exports.default = BreakpointItem;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(7);
+var _trimValues = __webpack_require__(6);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -13646,7 +13573,7 @@ function BreakpointItem(_ref) {
 }
 
 /***/ }),
-/* 107 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13702,7 +13629,7 @@ function Grid(_ref) {
 }
 
 /***/ }),
-/* 108 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13718,7 +13645,7 @@ exports.default = Guides;
 
 var _preact = __webpack_require__(0);
 
-var _GuideItem = __webpack_require__(109);
+var _GuideItem = __webpack_require__(107);
 
 var _GuideItem2 = _interopRequireDefault(_GuideItem);
 
@@ -13751,7 +13678,7 @@ function Guides(_ref) {
 }
 
 /***/ }),
-/* 109 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13794,7 +13721,7 @@ function GuideItem(_ref) {
 }
 
 /***/ }),
-/* 110 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13810,7 +13737,7 @@ exports.default = LineGroups;
 
 var _preact = __webpack_require__(0);
 
-var _LineGroupItem = __webpack_require__(111);
+var _LineGroupItem = __webpack_require__(109);
 
 var _LineGroupItem2 = _interopRequireDefault(_LineGroupItem);
 
@@ -13839,7 +13766,7 @@ function LineGroups(_ref) {
 }
 
 /***/ }),
-/* 111 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13852,7 +13779,7 @@ exports.default = LineGroupItem;
 
 var _preact = __webpack_require__(0);
 
-var _path = __webpack_require__(112);
+var _path = __webpack_require__(110);
 
 function LineGroupItem(_ref) {
   var totalGroupSpace = _ref.totalGroupSpace,
@@ -13909,7 +13836,7 @@ function LineGroupItem(_ref) {
 }
 
 /***/ }),
-/* 112 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14137,7 +14064,7 @@ var substr = 'ab'.substr(-1) === 'b' ? function (str, start, len) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 113 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14153,7 +14080,7 @@ exports.default = Tooltips;
 
 var _preact = __webpack_require__(0);
 
-var _TooltipGroup = __webpack_require__(114);
+var _TooltipGroup = __webpack_require__(112);
 
 var _TooltipGroup2 = _interopRequireDefault(_TooltipGroup);
 
@@ -14185,7 +14112,7 @@ function Tooltips(_ref) {
 }
 
 /***/ }),
-/* 114 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14201,7 +14128,7 @@ exports.default = TooltipGroup;
 
 var _preact = __webpack_require__(0);
 
-var _TooltipItem = __webpack_require__(115);
+var _TooltipItem = __webpack_require__(113);
 
 var _TooltipItem2 = _interopRequireDefault(_TooltipItem);
 
@@ -14258,7 +14185,7 @@ function TooltipGroup(_ref) {
 }
 
 /***/ }),
-/* 115 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14271,7 +14198,7 @@ exports.default = TooltipItem;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(7);
+var _trimValues = __webpack_require__(6);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -14338,7 +14265,7 @@ function TooltipItem(_ref) {
 }
 
 /***/ }),
-/* 116 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14354,7 +14281,7 @@ exports.default = Labels;
 
 var _preact = __webpack_require__(0);
 
-var _LabelItem = __webpack_require__(117);
+var _LabelItem = __webpack_require__(115);
 
 var _LabelItem2 = _interopRequireDefault(_LabelItem);
 
@@ -14385,7 +14312,7 @@ function Labels(_ref) {
 }
 
 /***/ }),
-/* 117 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14449,7 +14376,7 @@ function LabelItem(_ref) {
 }
 
 /***/ }),
-/* 118 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14489,7 +14416,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 119 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14533,7 +14460,7 @@ var DebounceFunction = function () {
 exports.default = DebounceFunction;
 
 /***/ }),
-/* 120 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14545,7 +14472,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(121);
+var _index = __webpack_require__(119);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -14567,7 +14494,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 121 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14583,7 +14510,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _ShareMarkup = __webpack_require__(122);
+var _ShareMarkup = __webpack_require__(120);
 
 var _ShareMarkup2 = _interopRequireDefault(_ShareMarkup);
 
@@ -14643,7 +14570,7 @@ var ShareContainer = function (_Component) {
 exports.default = ShareContainer;
 
 /***/ }),
-/* 122 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14660,11 +14587,11 @@ var _index = __webpack_require__(3);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _Button = __webpack_require__(123);
+var _Button = __webpack_require__(121);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _index3 = __webpack_require__(15);
+var _index3 = __webpack_require__(36);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -14729,7 +14656,7 @@ function ShareMarkup(_ref) {
 }
 
 /***/ }),
-/* 123 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14742,11 +14669,11 @@ exports.default = Button;
 
 var _preact = __webpack_require__(0);
 
-var _Icon = __webpack_require__(124);
+var _Icon = __webpack_require__(122);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
-var _analyticsEvent = __webpack_require__(9);
+var _analyticsEvent = __webpack_require__(8);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -14794,7 +14721,7 @@ function Button(_ref) {
 }
 
 /***/ }),
-/* 124 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14816,7 +14743,7 @@ function Icon() {
 }
 
 /***/ }),
-/* 125 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15376,7 +15303,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 //# sourceMappingURL=preact-css-transition-group.js.map
 
 /***/ }),
-/* 126 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15391,13 +15318,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var emptyFunction = __webpack_require__(16);
-var invariant = __webpack_require__(17);
-var warning = __webpack_require__(40);
-var assign = __webpack_require__(25);
+var emptyFunction = __webpack_require__(15);
+var invariant = __webpack_require__(16);
+var warning = __webpack_require__(37);
+var assign = __webpack_require__(21);
 
-var ReactPropTypesSecret = __webpack_require__(18);
-var checkPropTypes = __webpack_require__(127);
+var ReactPropTypesSecret = __webpack_require__(17);
+var checkPropTypes = __webpack_require__(125);
 
 module.exports = function (isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -15901,7 +15828,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 127 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15917,9 +15844,9 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 if (process.env.NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(17);
-  var warning = __webpack_require__(40);
-  var ReactPropTypesSecret = __webpack_require__(18);
+  var invariant = __webpack_require__(16);
+  var warning = __webpack_require__(37);
+  var ReactPropTypesSecret = __webpack_require__(17);
   var loggedTypeFailures = {};
 }
 
@@ -15969,7 +15896,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 128 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15982,9 +15909,9 @@ module.exports = checkPropTypes;
 
 
 
-var emptyFunction = __webpack_require__(16);
-var invariant = __webpack_require__(17);
-var ReactPropTypesSecret = __webpack_require__(18);
+var emptyFunction = __webpack_require__(15);
+var invariant = __webpack_require__(16);
+var ReactPropTypesSecret = __webpack_require__(17);
 
 module.exports = function () {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -16028,7 +15955,7 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 129 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16041,7 +15968,7 @@ exports.default = Download;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(8);
+var _createSizeModifier = __webpack_require__(7);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -16058,7 +15985,7 @@ function Download(_ref) {
 }
 
 /***/ }),
-/* 130 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16071,7 +15998,7 @@ exports.default = Download;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(8);
+var _createSizeModifier = __webpack_require__(7);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -16088,7 +16015,7 @@ function Download(_ref) {
 }
 
 /***/ }),
-/* 131 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16101,7 +16028,7 @@ exports.default = Facebook;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(8);
+var _createSizeModifier = __webpack_require__(7);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -16123,7 +16050,7 @@ function Facebook(_ref) {
 }
 
 /***/ }),
-/* 132 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16136,7 +16063,7 @@ exports.default = Facebook;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(8);
+var _createSizeModifier = __webpack_require__(7);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -16158,7 +16085,7 @@ function Facebook(_ref) {
 }
 
 /***/ }),
-/* 133 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16171,7 +16098,7 @@ exports.default = Facebook;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(8);
+var _createSizeModifier = __webpack_require__(7);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -16193,7 +16120,7 @@ function Facebook(_ref) {
 }
 
 /***/ }),
-/* 134 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16249,7 +16176,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 135 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16259,15 +16186,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _FixedNodeBox = __webpack_require__(136);
+var _FixedNodeBox = __webpack_require__(134);
 
 var _FixedNodeBox2 = _interopRequireDefault(_FixedNodeBox);
 
-var _HighlightLinks = __webpack_require__(137);
+var _HighlightLinks = __webpack_require__(135);
 
 var _HighlightLinks2 = _interopRequireDefault(_HighlightLinks);
 
-var _forceClose = __webpack_require__(140);
+var _forceClose = __webpack_require__(138);
 
 var _forceClose2 = _interopRequireDefault(_forceClose);
 
@@ -16306,7 +16233,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 136 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16406,7 +16333,7 @@ var FixedNodeBox = function () {
 exports.default = FixedNodeBox;
 
 /***/ }),
-/* 137 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16420,11 +16347,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _buildLinksObject = __webpack_require__(138);
+var _buildLinksObject = __webpack_require__(136);
 
 var _buildLinksObject2 = _interopRequireDefault(_buildLinksObject);
 
-var _calcViewportPosition = __webpack_require__(139);
+var _calcViewportPosition = __webpack_require__(137);
 
 var _calcViewportPosition2 = _interopRequireDefault(_calcViewportPosition);
 
@@ -16536,7 +16463,7 @@ var HighlightLinks = function () {
 exports.default = HighlightLinks;
 
 /***/ }),
-/* 138 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16564,7 +16491,7 @@ function buildLinksObject(nodeList) {
 }
 
 /***/ }),
-/* 139 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16581,7 +16508,7 @@ function calcViewportPosition(node) {
 }
 
 /***/ }),
-/* 140 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16611,7 +16538,7 @@ function forceClose(nodes) {
 }
 
 /***/ }),
-/* 141 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16623,7 +16550,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _YearSelectContainer = __webpack_require__(142);
+var _YearSelectContainer = __webpack_require__(140);
 
 var _YearSelectContainer2 = _interopRequireDefault(_YearSelectContainer);
 
@@ -16655,7 +16582,7 @@ function YearSelect() {
 exports.default = YearSelect();
 
 /***/ }),
-/* 142 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16669,7 +16596,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _YearSelectMarkup = __webpack_require__(143);
+var _YearSelectMarkup = __webpack_require__(141);
 
 var _YearSelectMarkup2 = _interopRequireDefault(_YearSelectMarkup);
 
@@ -16741,7 +16668,7 @@ var YearSelectContainer = function (_Component) {
 exports.default = YearSelectContainer;
 
 /***/ }),
-/* 143 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16754,7 +16681,7 @@ exports.default = YearSelectMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(38);
+var _index = __webpack_require__(34);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -16864,7 +16791,7 @@ function YearSelectMarkup(_ref) {
 }
 
 /***/ }),
-/* 144 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16876,11 +16803,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _queryString = __webpack_require__(24);
+var _queryString = __webpack_require__(20);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
-var _SearchContainer = __webpack_require__(145);
+var _SearchContainer = __webpack_require__(143);
 
 var _SearchContainer2 = _interopRequireDefault(_SearchContainer);
 
@@ -16912,7 +16839,7 @@ function Search() {
 exports.default = Search();
 
 /***/ }),
-/* 145 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16930,17 +16857,17 @@ var _propTypes = __webpack_require__(4);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _SearchMarkup = __webpack_require__(146);
+var _SearchMarkup = __webpack_require__(144);
 
 var _SearchMarkup2 = _interopRequireDefault(_SearchMarkup);
 
-var _analyticsEvent = __webpack_require__(9);
+var _analyticsEvent = __webpack_require__(8);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
-var _global = __webpack_require__(42);
+var _global = __webpack_require__(39);
 
-var _removePunctuation = __webpack_require__(43);
+var _removePunctuation = __webpack_require__(40);
 
 var _removePunctuation2 = _interopRequireDefault(_removePunctuation);
 
@@ -17123,7 +17050,7 @@ SearchContainer.defaultProps = {
 };
 
 /***/ }),
-/* 146 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17140,11 +17067,11 @@ var _propTypes = __webpack_require__(4);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _FormArea = __webpack_require__(147);
+var _FormArea = __webpack_require__(145);
 
 var _FormArea2 = _interopRequireDefault(_FormArea);
 
-var _ResultsArea = __webpack_require__(149);
+var _ResultsArea = __webpack_require__(147);
 
 var _ResultsArea2 = _interopRequireDefault(_ResultsArea);
 
@@ -17257,7 +17184,7 @@ SearchMarkup.defaultProps = {
 };
 
 /***/ }),
-/* 147 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17274,11 +17201,11 @@ var _propTypes = __webpack_require__(4);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Icon = __webpack_require__(148);
+var _Icon = __webpack_require__(146);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
-var _analyticsEvent = __webpack_require__(9);
+var _analyticsEvent = __webpack_require__(8);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -17341,7 +17268,7 @@ FormArea.propTypes = {
 };
 
 /***/ }),
-/* 148 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17368,7 +17295,7 @@ function Icon() {
 }
 
 /***/ }),
-/* 149 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17385,7 +17312,7 @@ var _propTypes = __webpack_require__(4);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _List = __webpack_require__(150);
+var _List = __webpack_require__(148);
 
 var _List2 = _interopRequireDefault(_List);
 
@@ -17447,7 +17374,7 @@ ResultsArea.defaultProps = {
 };
 
 /***/ }),
-/* 150 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17645,7 +17572,7 @@ List.defaultProps = {
 };
 
 /***/ }),
-/* 151 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17659,7 +17586,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(152);
+var _index = __webpack_require__(150);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -17691,7 +17618,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 152 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17703,21 +17630,21 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _preactRenderToString = __webpack_require__(19);
+var _preactRenderToString = __webpack_require__(41);
 
 var _preactRenderToString2 = _interopRequireDefault(_preactRenderToString);
 
-var _canvgBrowser = __webpack_require__(20);
+var _canvgBrowser = __webpack_require__(42);
 
 var _canvgBrowser2 = _interopRequireDefault(_canvgBrowser);
 
 var _preact = __webpack_require__(0);
 
-var _Markup = __webpack_require__(157);
+var _Markup = __webpack_require__(155);
 
 var _Markup2 = _interopRequireDefault(_Markup);
 
-var _index = __webpack_require__(6);
+var _index = __webpack_require__(10);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -17841,7 +17768,7 @@ var ChartDownloadBasicTest = function (_Component) {
 exports.default = ChartDownloadBasicTest;
 
 /***/ }),
-/* 153 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18118,7 +18045,7 @@ module.exports = function (color_string) {
 };
 
 /***/ }),
-/* 154 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18397,7 +18324,7 @@ function BlurStack() {
 module.exports = blur;
 
 /***/ }),
-/* 155 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18650,14 +18577,14 @@ function appendElement(hander, node) {
 } //appendChild and setAttributeNS are preformance key
 
 //if(typeof require == 'function'){
-var XMLReader = __webpack_require__(156).XMLReader;
-var DOMImplementation = exports.DOMImplementation = __webpack_require__(44).DOMImplementation;
-exports.XMLSerializer = __webpack_require__(44).XMLSerializer;
+var XMLReader = __webpack_require__(154).XMLReader;
+var DOMImplementation = exports.DOMImplementation = __webpack_require__(43).DOMImplementation;
+exports.XMLSerializer = __webpack_require__(43).XMLSerializer;
 exports.DOMParser = DOMParser;
 //}
 
 /***/ }),
-/* 156 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19307,7 +19234,7 @@ function split(source, start) {
 exports.XMLReader = XMLReader;
 
 /***/ }),
-/* 157 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19324,7 +19251,7 @@ var _index = __webpack_require__(11);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(21);
+var _index3 = __webpack_require__(44);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -19359,7 +19286,7 @@ function ProgrammesChart(props) {
 
   var withValues = (0, _preact.h)(_index2.default, {
     max: 690,
-    offset: 120,
+    offset: 150,
     values: sourceItems,
     downloadable: true,
     name: 'programmes-chart'
@@ -19371,7 +19298,7 @@ function ProgrammesChart(props) {
     (0, _preact.h)(_index4.default, {
       selected: this.props.downloadSelected,
       changeAction: this.props.changeAction,
-      name: this.props.name,
+      name: 'programmes-chart',
       open: this.props.open,
       canvasAction: this.props.canvasAction,
       clickAction: this.props.clickAction,
@@ -19409,7 +19336,7 @@ function ProgrammesChart(props) {
 }
 
 /***/ }),
-/* 158 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19423,7 +19350,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(159);
+var _index = __webpack_require__(157);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -19446,8 +19373,8 @@ function scripts() {
 
     var normalise = function normalise(source) {
       return source.reduce(function (results, val) {
-        if (val.total_budget) {
-          return _extends({}, results, _defineProperty({}, val.name, [val.total_budget]));
+        if (val.amount) {
+          return _extends({}, results, _defineProperty({}, val.financial_year, [val.amount]));
         }
 
         return results;
@@ -19459,6 +19386,8 @@ function scripts() {
       'Not adjusted for inflation': normalise(nominal)
     };
 
+    console.log(items);
+
     (0, _preact.render)((0, _preact.h)(_index2.default, { items: items }), component);
   }
 }
@@ -19466,7 +19395,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 159 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19478,21 +19407,21 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _preactRenderToString = __webpack_require__(19);
+var _preactRenderToString = __webpack_require__(41);
 
 var _preactRenderToString2 = _interopRequireDefault(_preactRenderToString);
 
-var _canvgBrowser = __webpack_require__(20);
+var _canvgBrowser = __webpack_require__(42);
 
 var _canvgBrowser2 = _interopRequireDefault(_canvgBrowser);
 
 var _preact = __webpack_require__(0);
 
-var _Markup = __webpack_require__(160);
+var _Markup = __webpack_require__(158);
 
 var _Markup2 = _interopRequireDefault(_Markup);
 
-var _index = __webpack_require__(6);
+var _index = __webpack_require__(10);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -19527,6 +19456,7 @@ var ExpenditureChart = function (_Component) {
     _this.clickAction = _this.clickAction.bind(_this);
     _this.closeModal = _this.closeModal.bind(_this);
     _this.changeSourceAction = _this.changeSourceAction.bind(_this);
+
     return _this;
   }
 
@@ -19618,7 +19548,7 @@ var ExpenditureChart = function (_Component) {
 exports.default = ExpenditureChart;
 
 /***/ }),
-/* 160 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19638,11 +19568,11 @@ var _index = __webpack_require__(11);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(21);
+var _index3 = __webpack_require__(44);
 
 var _index4 = _interopRequireDefault(_index3);
 
-var _index5 = __webpack_require__(45);
+var _index5 = __webpack_require__(159);
 
 var _index6 = _interopRequireDefault(_index5);
 
@@ -19681,13 +19611,17 @@ function ProgrammesChart(props) {
       (0, _preact.h)(
         'h2',
         { className: 'Page-subHeading' },
-        'Funded programmes for ',
-        year
+        'Expenditure changes over time'
       ),
       (0, _preact.h)(
         'p',
         null,
-        'A department\'s programmes are the activities that it performs during the financial year. Different programs have different levels of funding, depending on their requirements and available finances.'
+        'Budgeted expenditure for a department can increase or decrease from year to year. The official budget shows the nominal value of spendiing - the real value is calculated by adjusting for inflation, since most expenditure items are subject to inflation.'
+      ),
+      (0, _preact.h)(
+        'p',
+        null,
+        'By stripping out the inflation (GDP or CPI inflation) it is possible to show if a departmental budget is increasing or decreasing in real terms.'
       )
     ),
     (0, _preact.h)(
@@ -19695,7 +19629,7 @@ function ProgrammesChart(props) {
       { className: 'Page-section Page-section--card u-paddingTop u-paddingTop--10' },
       (0, _preact.h)(_index2.default, {
         max: 690,
-        offset: 120,
+        offset: 170,
         values: sourceItems,
         downloadable: true,
         name: 'programmes-chart',
@@ -19718,7 +19652,7 @@ function ProgrammesChart(props) {
       (0, _preact.h)(_index4.default, {
         selected: this.props.downloadSelected,
         changeAction: this.props.changeAction,
-        name: this.props.name,
+        name: 'expenditure-chart',
         open: this.props.open,
         canvasAction: this.props.canvasAction,
         clickAction: this.props.clickAction,
@@ -19731,7 +19665,63 @@ function ProgrammesChart(props) {
 }
 
 /***/ }),
-/* 161 */
+/* 159 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = Radios;
+
+var _preact = __webpack_require__(0);
+
+function Radios(_ref) {
+  var items = _ref.items,
+      selected = _ref.selected,
+      changeAction = _ref.changeAction,
+      name = _ref.name;
+
+  var keys = Object.keys(items);
+
+  return (0, _preact.h)(
+    "ul",
+    { className: "Radios" },
+    keys.map(function (key, index) {
+      return (0, _preact.h)(
+        "li",
+        { className: "Radios-itemWrap", key: key },
+        (0, _preact.h)(
+          "label",
+          { htmlFor: name + "-" + index },
+          (0, _preact.h)("input", _extends({
+            className: "Radios-input",
+            type: "radio",
+            id: name + "-" + index,
+            value: items[key],
+            checked: items[key] === selected,
+            onChange: function onChange(event) {
+              return changeAction(event.target.value);
+            }
+          }, { name: name })),
+          (0, _preact.h)(
+            "span",
+            { className: "Radios-label" },
+            key
+          )
+        )
+      );
+    })
+  );
+}
+
+/***/ }),
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19745,7 +19735,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _preact = __webpack_require__(0);
 
-var _DeptSearchContainer = __webpack_require__(162);
+var _DeptSearchContainer = __webpack_require__(161);
 
 var _DeptSearchContainer2 = _interopRequireDefault(_DeptSearchContainer);
 
@@ -19789,7 +19779,7 @@ function DeptSearch() {
 exports.default = DeptSearch();
 
 /***/ }),
-/* 162 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19805,11 +19795,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _DeptSearchMarkup = __webpack_require__(163);
+var _DeptSearchMarkup = __webpack_require__(162);
 
 var _DeptSearchMarkup2 = _interopRequireDefault(_DeptSearchMarkup);
 
-var _filterResults = __webpack_require__(169);
+var _filterResults = __webpack_require__(168);
 
 var _filterResults2 = _interopRequireDefault(_filterResults);
 
@@ -19904,7 +19894,7 @@ var DeptSearchContainer = function (_Component) {
 exports.default = DeptSearchContainer;
 
 /***/ }),
-/* 163 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19917,11 +19907,11 @@ exports.default = DeptSearchMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(164);
+var _index = __webpack_require__(163);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(167);
+var _index3 = __webpack_require__(166);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -20004,7 +19994,7 @@ function DeptSearchMarkup(_ref) {
 }
 
 /***/ }),
-/* 164 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20021,11 +20011,11 @@ var _index = __webpack_require__(3);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _provinces = __webpack_require__(165);
+var _provinces = __webpack_require__(164);
 
 var _provinces2 = _interopRequireDefault(_provinces);
 
-var _spheres = __webpack_require__(166);
+var _spheres = __webpack_require__(165);
 
 var _spheres2 = _interopRequireDefault(_spheres);
 
@@ -20114,19 +20104,19 @@ function DeptGroup(_ref) {
 }
 
 /***/ }),
-/* 165 */
+/* 164 */
 /***/ (function(module, exports) {
 
 module.exports = {"All Provinces":"all","Eastern Cape":"eastern-cape","Free State":"free-state","Gauteng":"gauteng","KwaZulu-Natal":"kwazulu-natal","Limpopo":"limpopo","Mpumalanga":"mpumalanga","North West":"north-west","Northern Cape":"northern-cape","Western Cape":"western-cape"}
 
 /***/ }),
-/* 166 */
+/* 165 */
 /***/ (function(module, exports) {
 
 module.exports = {"All spheres of government":"all","National":"national","Provincial":"provincial"}
 
 /***/ }),
-/* 167 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20139,7 +20129,7 @@ exports.default = DeptGroup;
 
 var _preact = __webpack_require__(0);
 
-var _Map = __webpack_require__(168);
+var _Map = __webpack_require__(167);
 
 var _Map2 = _interopRequireDefault(_Map);
 
@@ -20220,7 +20210,7 @@ function DeptGroup(_ref) {
 }
 
 /***/ }),
-/* 168 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20321,7 +20311,7 @@ function Map(province) {
 }
 
 /***/ }),
-/* 169 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20335,11 +20325,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports.default = filterResults;
 
-var _filterKeywords = __webpack_require__(170);
+var _filterKeywords = __webpack_require__(169);
 
 var _filterKeywords2 = _interopRequireDefault(_filterKeywords);
 
-var _filterGroups = __webpack_require__(172);
+var _filterGroups = __webpack_require__(171);
 
 var _filterGroups2 = _interopRequireDefault(_filterGroups);
 
@@ -20380,7 +20370,7 @@ function filterResults(filtersObject, rawItems) {
 }
 
 /***/ }),
-/* 170 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20394,7 +20384,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports.default = filterKeywords;
 
-var _fuse = __webpack_require__(22);
+var _fuse = __webpack_require__(18);
 
 var _fuse2 = _interopRequireDefault(_fuse);
 
@@ -20421,7 +20411,7 @@ function filterKeywords(keywords, results) {
 }
 
 /***/ }),
-/* 171 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20451,7 +20441,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 172 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20477,7 +20467,7 @@ function filterAccordingToSphere(items, group, remove) {
 }
 
 /***/ }),
-/* 173 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20489,7 +20479,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _SearchResultContainer = __webpack_require__(174);
+var _SearchResultContainer = __webpack_require__(173);
 
 var _SearchResultContainer2 = _interopRequireDefault(_SearchResultContainer);
 
@@ -20514,7 +20504,7 @@ function SearchResult() {
 exports.default = SearchResult();
 
 /***/ }),
-/* 174 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20530,13 +20520,13 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _SearchResultMarkup = __webpack_require__(175);
+var _SearchResultMarkup = __webpack_require__(174);
 
 var _SearchResultMarkup2 = _interopRequireDefault(_SearchResultMarkup);
 
-var _global = __webpack_require__(42);
+var _global = __webpack_require__(39);
 
-var _removePunctuation = __webpack_require__(43);
+var _removePunctuation = __webpack_require__(40);
 
 var _removePunctuation2 = _interopRequireDefault(_removePunctuation);
 
@@ -20640,7 +20630,7 @@ var SearchResultsContainer = function (_Component) {
 exports.default = SearchResultsContainer;
 
 /***/ }),
-/* 175 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20653,7 +20643,7 @@ exports.default = SearchResultMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _Form = __webpack_require__(176);
+var _Form = __webpack_require__(175);
 
 var _Form2 = _interopRequireDefault(_Form);
 
@@ -20806,7 +20796,7 @@ function SearchResultMarkup(_ref) {
 }
 
 /***/ }),
-/* 176 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20881,7 +20871,7 @@ function Form(_ref) {
 }
 
 /***/ }),
-/* 177 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20893,15 +20883,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _glossary = __webpack_require__(37);
+var _glossary = __webpack_require__(33);
 
 var _glossary2 = _interopRequireDefault(_glossary);
 
-var _createGlossaryGroupedObject = __webpack_require__(178);
+var _createGlossaryGroupedObject = __webpack_require__(177);
 
 var _createGlossaryGroupedObject2 = _interopRequireDefault(_createGlossaryGroupedObject);
 
-var _Container = __webpack_require__(179);
+var _Container = __webpack_require__(178);
 
 var _Container2 = _interopRequireDefault(_Container);
 
@@ -20921,7 +20911,7 @@ function Glossary() {
 exports.default = Glossary();
 
 /***/ }),
-/* 178 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20967,7 +20957,7 @@ function createGlossaryGroupedObject(rawObject) {
 }
 
 /***/ }),
-/* 179 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20983,11 +20973,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _fuse = __webpack_require__(22);
+var _fuse = __webpack_require__(18);
 
 var _fuse2 = _interopRequireDefault(_fuse);
 
-var _Markup = __webpack_require__(180);
+var _Markup = __webpack_require__(179);
 
 var _Markup2 = _interopRequireDefault(_Markup);
 
@@ -21065,7 +21055,7 @@ var Container = function (_Component) {
 exports.default = Container;
 
 /***/ }),
-/* 180 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21078,11 +21068,11 @@ exports.default = Markup;
 
 var _preact = __webpack_require__(0);
 
-var _Controls = __webpack_require__(181);
+var _Controls = __webpack_require__(180);
 
 var _Controls2 = _interopRequireDefault(_Controls);
 
-var _List = __webpack_require__(182);
+var _List = __webpack_require__(181);
 
 var _List2 = _interopRequireDefault(_List);
 
@@ -21102,7 +21092,7 @@ function Markup(_ref) {
 }
 
 /***/ }),
-/* 181 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21160,7 +21150,7 @@ function Controls(_ref) {
 }
 
 /***/ }),
-/* 182 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21226,7 +21216,7 @@ function List(_ref) {
 }
 
 /***/ }),
-/* 183 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21238,7 +21228,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _VideosContainer = __webpack_require__(184);
+var _VideosContainer = __webpack_require__(183);
 
 var _VideosContainer2 = _interopRequireDefault(_VideosContainer);
 
@@ -21262,7 +21252,7 @@ function Videos() {
 exports.default = Videos();
 
 /***/ }),
-/* 184 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21278,11 +21268,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _fuse = __webpack_require__(22);
+var _fuse = __webpack_require__(18);
 
 var _fuse2 = _interopRequireDefault(_fuse);
 
-var _Markup = __webpack_require__(185);
+var _Markup = __webpack_require__(184);
 
 var _Markup2 = _interopRequireDefault(_Markup);
 
@@ -21391,7 +21381,7 @@ var VideosContainer = function (_Component) {
 exports.default = VideosContainer;
 
 /***/ }),
-/* 185 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21407,15 +21397,15 @@ exports.default = Markup;
 
 var _preact = __webpack_require__(0);
 
-var _Item = __webpack_require__(186);
+var _Item = __webpack_require__(185);
 
 var _Item2 = _interopRequireDefault(_Item);
 
-var _Modal = __webpack_require__(189);
+var _Modal = __webpack_require__(188);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
-var _Controls = __webpack_require__(191);
+var _Controls = __webpack_require__(190);
 
 var _Controls2 = _interopRequireDefault(_Controls);
 
@@ -21458,7 +21448,7 @@ function Markup(props) {
 }
 
 /***/ }),
-/* 186 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21471,11 +21461,11 @@ exports.default = Item;
 
 var _preact = __webpack_require__(0);
 
-var _PlayIcon = __webpack_require__(187);
+var _PlayIcon = __webpack_require__(186);
 
 var _PlayIcon2 = _interopRequireDefault(_PlayIcon);
 
-var _trimString = __webpack_require__(188);
+var _trimString = __webpack_require__(187);
 
 var _trimString2 = _interopRequireDefault(_trimString);
 
@@ -21559,7 +21549,7 @@ function Item(_ref) {
 }
 
 /***/ }),
-/* 187 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21581,7 +21571,7 @@ function PlayIcon() {
 }
 
 /***/ }),
-/* 188 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21599,7 +21589,7 @@ function trimString(length, string) {
 }
 
 /***/ }),
-/* 189 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21612,7 +21602,7 @@ exports.default = Modal;
 
 var _preact = __webpack_require__(0);
 
-var _CloseIcon = __webpack_require__(190);
+var _CloseIcon = __webpack_require__(189);
 
 var _CloseIcon2 = _interopRequireDefault(_CloseIcon);
 
@@ -21683,7 +21673,7 @@ function Modal(props) {
 }
 
 /***/ }),
-/* 190 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21705,7 +21695,7 @@ function CloseIcon() {
 }
 
 /***/ }),
-/* 191 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21738,7 +21728,7 @@ function CloseIcon(_ref) {
 }
 
 /***/ }),
-/* 192 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21750,7 +21740,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _VideoContainer = __webpack_require__(193);
+var _VideoContainer = __webpack_require__(192);
 
 var _VideoContainer2 = _interopRequireDefault(_VideoContainer);
 
@@ -21775,7 +21765,7 @@ function Videos() {
 exports.default = Videos();
 
 /***/ }),
-/* 193 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21791,7 +21781,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _Markup = __webpack_require__(194);
+var _Markup = __webpack_require__(193);
 
 var _Markup2 = _interopRequireDefault(_Markup);
 
@@ -21857,7 +21847,7 @@ var VideoContainer = function (_Component) {
 exports.default = VideoContainer;
 
 /***/ }),
-/* 194 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21918,7 +21908,7 @@ function Modal(_ref) {
 }
 
 /***/ }),
-/* 195 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21930,7 +21920,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(196);
+var _index = __webpack_require__(195);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -21956,7 +21946,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 196 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21972,7 +21962,7 @@ exports.default = Revenue;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(23);
+var _index = __webpack_require__(19);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -21993,7 +21983,7 @@ function Revenue(_ref) {
 }
 
 /***/ }),
-/* 197 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22005,7 +21995,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(23);
+var _index = __webpack_require__(19);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -22029,7 +22019,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 198 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22041,7 +22031,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(199);
+var _index = __webpack_require__(198);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -22067,7 +22057,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 199 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22087,7 +22077,7 @@ var _index = __webpack_require__(11);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(23);
+var _index3 = __webpack_require__(19);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -22132,383 +22122,6 @@ function HomeChart(_ref) {
   }));
 }
 
-/***/ }),
-/* 200 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(15);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ExampleContainer = function (_Component) {
-  _inherits(ExampleContainer, _Component);
-
-  function ExampleContainer(props) {
-    _classCallCheck(this, ExampleContainer);
-
-    var _this = _possibleConstructorReturn(this, (ExampleContainer.__proto__ || Object.getPrototypeOf(ExampleContainer)).call(this, props));
-
-    _this.state = {
-      modal: false
-    };
-    return _this;
-  }
-
-  _createClass(ExampleContainer, [{
-    key: 'setModal',
-    value: function setModal(state) {
-      this.setState({ modal: state });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
-
-      var closeModal = function closeModal() {
-        return _this2.setModal(false);
-      };
-      var openModal = function openModal() {
-        return _this2.setModal(true);
-      };
-
-      return (0, _preact.h)(
-        'div',
-        null,
-        (0, _preact.h)(
-          'button',
-          { onClick: openModal },
-          'Open Modal'
-        ),
-        (0, _preact.h)(
-          _index2.default,
-          { title: 'Example Title', closeAction: closeModal, open: this.state.modal },
-          (0, _preact.h)(
-            'p',
-            null,
-            'Example description text'
-          )
-        )
-      );
-    }
-  }]);
-
-  return ExampleContainer;
-}(_preact.Component);
-
-function init() {
-  var exampleNode = document.getElementById('react-modal-example');
-  if (exampleNode) {
-    (0, _preact.render)((0, _preact.h)(ExampleContainer, null), exampleNode);
-  }
-}
-
-exports.default = init();
-
-/***/ }),
-/* 201 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(45);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-function basicScript() {
-  var TestContainer = function (_Component) {
-    _inherits(TestContainer, _Component);
-
-    function TestContainer(props) {
-      _classCallCheck(this, TestContainer);
-
-      var _this = _possibleConstructorReturn(this, (TestContainer.__proto__ || Object.getPrototypeOf(TestContainer)).call(this, props));
-
-      _this.state = {
-        selected: '2'
-      };
-
-      _this.changeAction = _this.changeAction.bind(_this);
-      return _this;
-    }
-
-    _createClass(TestContainer, [{
-      key: 'changeAction',
-      value: function changeAction(value) {
-        this.setState({ selected: value });
-      }
-    }, {
-      key: 'render',
-      value: function render() {
-        return (0, _preact.h)(_index2.default, { items: { 'Test 1': '1', 'Test 2': '2', 'Test 3': '3' }, selected: this.state.selected, changeAction: this.changeAction, name: 'example' });
-      }
-    }]);
-
-    return TestContainer;
-  }(_preact.Component);
-
-  var node = document.getElementById('radios-basic-example-07-03');
-  (0, _preact.render)((0, _preact.h)(TestContainer, null), node);
-}
-
-exports.default = basicScript();
-
-/***/ }),
-/* 202 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _preactRenderToString = __webpack_require__(19);
-
-var _preactRenderToString2 = _interopRequireDefault(_preactRenderToString);
-
-var _canvgBrowser = __webpack_require__(20);
-
-var _canvgBrowser2 = _interopRequireDefault(_canvgBrowser);
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(21);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _index3 = __webpack_require__(6);
-
-var _index4 = _interopRequireDefault(_index3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-function basicScript() {
-  var ChartDownloadBasicTest = function (_Component) {
-    _inherits(ChartDownloadBasicTest, _Component);
-
-    function ChartDownloadBasicTest(props) {
-      _classCallCheck(this, ChartDownloadBasicTest);
-
-      var _this = _possibleConstructorReturn(this, (ChartDownloadBasicTest.__proto__ || Object.getPrototypeOf(ChartDownloadBasicTest)).call(this, props));
-
-      _this.state = {
-        selected: '1',
-        open: false,
-        modal: false
-      };
-
-      _this.canvas = null;
-      _this.getCanvas = _this.getCanvas.bind(_this);
-      _this.closeModal = _this.closeModal.bind(_this);
-      _this.changeAction = _this.changeAction.bind(_this);
-      _this.clickAction = _this.clickAction.bind(_this);
-      _this.closeModal = _this.closeModal.bind(_this);
-      return _this;
-    }
-
-    _createClass(ChartDownloadBasicTest, [{
-      key: 'getCanvas',
-      value: function getCanvas(node) {
-        this.canvas = node;
-      }
-    }, {
-      key: 'changeAction',
-      value: function changeAction(value) {
-        if (this.state.open) {
-          this.setState({ selected: value });
-          return this.setState({ open: false });
-        }
-
-        return this.setState({ open: true });
-      }
-    }, {
-      key: 'clickAction',
-      value: function clickAction() {
-        if (this.state.selected === 'link') {
-          return this.setState({ modal: true });
-        }
-
-        (0, _canvgBrowser2.default)(this.canvas, (0, _preactRenderToString2.default)((0, _preact.h)(_index4.default, {
-          scale: parseInt(this.state.selected, 10),
-          downloadable: true,
-          items: { 'Test 1': [10], 'Test 2': [20], 'Test 3': [30] },
-          guides: true,
-          width: 600
-        })));
-
-        if (this.canvas.msToBlob) {
-          var blob = this.canvas.msToBlob();
-          return window.navigator.msSaveBlob(blob, 'chart.png', { scaleWidth: 10, scaleHeight: 10 });
-        }
-
-        var link = document.createElement('a');
-        link.download = 'chart.png';
-        link.href = this.canvas.toDataURL();
-        return link.click();
-      }
-    }, {
-      key: 'closeModal',
-      value: function closeModal() {
-        return this.setState({ modal: false });
-      }
-    }, {
-      key: 'render',
-      value: function render() {
-        var _this2 = this;
-
-        return (0, _preact.h)(_index2.default, {
-          selected: this.state.selected,
-          changeAction: this.changeAction,
-          name: 'example',
-          open: this.state.open,
-          canvasAction: function canvasAction(node) {
-            _this2.canvas = node;
-          },
-          clickAction: this.clickAction,
-          items: {
-            'Image (PNG Small)': '1',
-            'Image (PNG Medium)': '2',
-            'Image (PNG Large)': '3',
-            Link: 'link'
-          },
-          closeModal: this.closeModal,
-          modal: this.state.modal
-        });
-      }
-    }]);
-
-    return ChartDownloadBasicTest;
-  }(_preact.Component);
-
-  var node = document.getElementById('basic-chartdownload-07-03');
-  (0, _preact.render)((0, _preact.h)(ChartDownloadBasicTest, null), node);
-}
-
-exports.default = basicScript();
-
-/***/ }),
-/* 203 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(3);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-function basicScript() {
-  var PseudoSelectBasicExample = function (_Component) {
-    _inherits(PseudoSelectBasicExample, _Component);
-
-    function PseudoSelectBasicExample(props) {
-      _classCallCheck(this, PseudoSelectBasicExample);
-
-      var _this = _possibleConstructorReturn(this, (PseudoSelectBasicExample.__proto__ || Object.getPrototypeOf(PseudoSelectBasicExample)).call(this, props));
-
-      _this.state = {
-        selected: '1',
-        open: true
-      };
-
-      _this.changeAction = _this.changeAction.bind(_this);
-      _this.canvas = null;
-      return _this;
-    }
-
-    _createClass(PseudoSelectBasicExample, [{
-      key: 'changeAction',
-      value: function changeAction(value) {
-        if (this.state.open) {
-          this.setState({ selected: value });
-          return this.setState({ open: false });
-        }
-
-        return this.setState({ open: true });
-      }
-    }, {
-      key: 'render',
-      value: function render() {
-        return (0, _preact.h)(_index2.default, {
-          items: { 'Test 1': '1', 'Test 2': '2', 'Test 3': '3' },
-          selected: this.state.selected,
-          changeAction: this.changeAction,
-          name: 'example',
-          open: this.state.open
-        });
-      }
-    }]);
-
-    return PseudoSelectBasicExample;
-  }(_preact.Component);
-
-  var node = document.getElementById('example-pseudoselect-basic-07-03');
-  (0, _preact.render)((0, _preact.h)(PseudoSelectBasicExample, null), node);
-}
-
-exports.default = basicScript();
-
 /***/ })
 /******/ ]);
-//# sourceMappingURL=scripts.js.map
+//# sourceMappingURL=scripts.3b6ed2139ab5b90ffe1f.js.map
