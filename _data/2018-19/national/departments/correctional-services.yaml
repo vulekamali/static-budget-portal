@@ -2,29 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Correctional Services
-    slug: correctional-services
     url_path: /2015-16/national/departments/correctional-services
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Correctional Services
-    slug: correctional-services
     url_path: /2016-17/national/departments/correctional-services
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Correctional Services
-    slug: correctional-services
     url_path: /2017-18/national/departments/correctional-services
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Correctional Services
-    slug: correctional-services
     url_path: /2018-19/national/departments/correctional-services
   id: 2018-19
   is_selected: true
@@ -80,10 +72,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2018%20Correctional%20Services.pdf
-  ENE for Vote 18 - Correctional Services - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-correctional-services-2018-19/resource/dbf0bde2-a38f-402b-b223-c62b4354bb8a/download/ene18-vote18_chaptertables.xlsx
 vote_number: 18

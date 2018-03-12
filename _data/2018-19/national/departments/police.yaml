@@ -2,29 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Police
-    slug: police
     url_path: /2015-16/national/departments/police
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Police
-    slug: police
     url_path: /2016-17/national/departments/police
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Police
-    slug: police
     url_path: /2017-18/national/departments/police
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Police
-    slug: police
     url_path: /2018-19/national/departments/police
   id: 2018-19
   is_selected: true
@@ -76,10 +68,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2023%20Police.pdf
-  ENE for Vote 23 - Police - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-police-2018-19/resource/00ec6d6d-4a74-4953-80bb-2eeee20f1c53/download/ene18-vote23_chaptertables.xlsx
 vote_number: 23

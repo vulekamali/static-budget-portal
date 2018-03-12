@@ -2,29 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Energy
-    slug: energy
     url_path: /2015-16/national/departments/energy
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Energy
-    slug: energy
     url_path: /2016-17/national/departments/energy
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Energy
-    slug: energy
     url_path: /2017-18/national/departments/energy
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Energy
-    slug: energy
     url_path: /2018-19/national/departments/energy
   id: 2018-19
   is_selected: true
@@ -93,10 +85,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2026%20Energy.pdf
-  ENE for Vote 26 - Energy - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-energy-2018-19/resource/ef461a09-0802-4b63-9442-62938ab1d42d/download/ene18-vote26_chaptertables.xlsx
 vote_number: 26

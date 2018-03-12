@@ -2,29 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Telecommunications and Postal Services
-    slug: telecommunications-and-postal-services
     url_path: /2015-16/national/departments/telecommunications-and-postal-services
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Telecommunications and Postal Services
-    slug: telecommunications-and-postal-services
     url_path: /2016-17/national/departments/telecommunications-and-postal-services
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Telecommunications and Postal Services
-    slug: telecommunications-and-postal-services
     url_path: /2017-18/national/departments/telecommunications-and-postal-services
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Telecommunications and Postal Services
-    slug: telecommunications-and-postal-services
     url_path: /2018-19/national/departments/telecommunications-and-postal-services
   id: 2018-19
   is_selected: true
@@ -90,10 +82,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2032%20Telecommunications%20and%20Postal%20Services.pdf
-  ENE for Vote 32 - Telecommunications and Postal Services - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-telecommunications-and-postal-services-2018-19/resource/540e4123-32a6-404e-b8af-06a44cb07944/download/ene18-vote32_chaptertables.xlsx
 vote_number: 32

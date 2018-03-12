@@ -2,29 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Public Enterprises
-    slug: public-enterprises
     url_path: /2015-16/national/departments/public-enterprises
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Public Enterprises
-    slug: public-enterprises
     url_path: /2016-17/national/departments/public-enterprises
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Public Enterprises
-    slug: public-enterprises
     url_path: /2017-18/national/departments/public-enterprises
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Public Enterprises
-    slug: public-enterprises
     url_path: /2018-19/national/departments/public-enterprises
   id: 2018-19
   is_selected: true
@@ -68,10 +60,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2009%20Public%20Enterprises.pdf
-  ENE for Vote 9 - Public Enterprises - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-public-enterprises-2018-19/resource/fc1638b9-b24c-406f-904e-91f00bef9e63/download/ene18-vote09_chaptertables.xlsx
 vote_number: 9
