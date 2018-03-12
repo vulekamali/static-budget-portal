@@ -17,10 +17,12 @@ setup_git() {
 regenerate_data() {
     if [[ "${TRAVIS_COMMIT_MESSAGE}" == *"[staging]"* ]]
     then
-        echo "Using STAGING data server"
+        echo -n "STAGING"
         export PORTAL_URL=https://dynamicbudgetportal-staging.openup.org.za/
+    else
+        echo -n "PROD"
     fi
-    python generate/from_dynamic.py
+    python generate/from_dynamic.py 1>&2
 }
 
 if [ "${TRAVIS_PULL_REQUEST}" = "true" ]
@@ -29,7 +31,7 @@ then
 elif [[ "${TRAVIS_COMMIT_MESSAGE}" == *"[ci]"* ]]
 then
 
-    regenerate_data
+    DATA_ENVIRONMENT=$(regenerate_data)
 
     # DEBUG
     git status
@@ -39,7 +41,7 @@ then
         # save changes
         git add .
         setup_git
-        git commit -m "Updated data via TravisCI" || exit 0
+        git commit -m "Updated data via TravisCI using ${DATA_ENVIRONMENT} data server"
 
         echo "Deploying to GitHub"
 
