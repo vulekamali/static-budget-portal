@@ -13,7 +13,7 @@ import './components/universal/Tooltip/scripts.js';
 import './components/universal/BarChart/scripts.jsx';
 import './components/universal/ColumnChart/scripts.jsx';
 import './components/universal/ResponsiveChart/scripts.jsx';
-import './components/universal/Share/index.jsx';
+import './components/universal/Share/scripts.jsx';
 
 import './components/header-and-footer/NavBar/scripts.js';
 import './components/header-and-footer/SubLinks/scripts.js';

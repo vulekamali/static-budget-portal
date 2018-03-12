@@ -6,8 +6,8 @@ layout: page-shell
 {% assign provincial = site.data[page.financial_year].departments.provincial %}
 
 <div class="Page-content">
-  <main class="Page-contentWrap">
-    <h2 class="Page-title">Department Budgets for {{ page.financial_year }}</h2>
+  <main class="Page-contentInner">
+    <h1 class="Page-mainHeading">Department Budgets for {{ page.financial_year }}</h1>
     {% include 
       components/other-pages/DeptSearch/index.html
       provincial=provincial

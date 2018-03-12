@@ -10,9 +10,20 @@ function scripts() {
     const component = componentList[i];
 
     const values = JSON.parse(decodeHtmlEntities(component.getAttribute('data-values'))).data;
+    const year = component.getAttribute('data-year');
+
+    const items = values.reduce(
+      (results, val) => {
+        return {
+          ...results,
+          [val.name]: [val.total_budget],
+        };
+      },
+      {},
+    );
 
     render(
-      <ProgrammesChart {...{ values }} />,
+      <ProgrammesChart {...{ items, year }} />,
       component,
     );
   }

@@ -24,18 +24,12 @@ layout: page-shell
         </div>
       </div>
 
-      <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark">
-        <div class="Page-section u-paddingBottom u-paddingBottom--0">
-          <h2 class="Page-subHeading">Funded programmes for {{ page.financial_year }}</h2>
-          <p>A department's programmes are the activities that it performs during the financial year. Different programs have different levels of funding, depending on their requirements and available finances.</p>
-        </div>
-        <div class="Page-section Page-section--card u-paddingTop u-paddingTop--40">
-          {% 
-            include components/department-page/ProgrammesChart/index.html 
-            values=page_data.programmes
-          %}
-        </div>
-      </div>
+      {% 
+        include components/department-page/ProgrammesChart/index.html 
+        values=page_data.programmes
+        year=page.financial_year
+      %}
+
 
       {% if page_data.expenditure_over_time %}
       <div class="Page-sectionWrap Page-sectionWrap--card">
@@ -54,26 +48,26 @@ layout: page-shell
     </main>
     <aside class="Page-sidebar">
 
-      <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--green  u-marginTop u-marginTop--20">
-        <div class="Page-section Page-section--card">
-          <h2 class="Page-subHeading">How can I contribute?</h2>
-          <p>Do you have data related to this department that you would like to contribute?</p>
-          <a href="#" class="Button">
-            Send it to us for consideration
-          </a>
-        </div>
-      </div>
-
-      <div class="Page-sectionWrap Page-sectionWrap--card">
+      <div class="Page-sectionWrap Page-sectionWrap--card u-marginTop u-marginTop--20">
         <div class="Page-section">
           <span>Share this page:</span>
           {% include components/universal/Share/index.html %}
         </div>
       </div>
 
-      <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark">
+      <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--green">
         <div class="Page-section Page-section--card">
           {% include components/universal/FileTypes/index.html treasury=page_data.treasury_datasets cso=page_data.contributed_datasets type="dept" %}
+        </div>
+      </div>
+
+      <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark">
+        <div class="Page-section Page-section--card">
+          <h2 class="Page-subHeading">How can I contribute?</h2>
+          <p>Do you have data related to this department that you would like to contribute?</p>
+          <a href="#" class="Button">
+            Send it to us for consideration
+          </a>
         </div>
       </div>
 

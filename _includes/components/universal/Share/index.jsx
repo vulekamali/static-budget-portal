@@ -1,5 +1,5 @@
 import { h, Component } from 'preact';
-import ShareMarkup from './ShareMarkup.jsx';
+import ShareMarkup from './partials/ShareMarkup.jsx';
 
 
 export default class ShareContainer extends Component {

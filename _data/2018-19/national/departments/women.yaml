@@ -1,8 +1,33 @@
 contributed_datasets: null
+expenditure_over_time:
+  nominal:
+    - financial_year: 2014-15
+      amount: 177500000
+    - financial_year: 2015-16
+      amount: 188400000
+    - financial_year: 2016-17
+      amount: 194700000
+    - financial_year: 2017-18
+      amount: 206200000
+    - financial_year: 2018-19
+      amount: 230200000
+  real:
+    - financial_year: 2014-15
+      amount: 199550000
+    - financial_year: 2015-16
+      amount: 202940000
+    - financial_year: 2016-17
+      amount: 205580000
+    - financial_year: 2017-18
+      amount: 206200000
+    - financial_year: 2018-19
+      amount: 208260000
+  base_calendar_year: 2017
 financial_years:
 - closest_match:
     is_exact_match: true
     name: Women
+    organisational_unit: department
     slug: women
     url_path: /2015-16/national/departments/women
   id: 2015-16
@@ -10,6 +35,7 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Women
+    organisational_unit: department
     slug: women
     url_path: /2016-17/national/departments/women
   id: 2016-17
@@ -17,6 +43,7 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Women
+    organisational_unit: department
     slug: women
     url_path: /2017-18/national/departments/women
   id: 2017-18
@@ -24,6 +51,7 @@ financial_years:
 - closest_match:
     is_exact_match: true
     name: Women
+    organisational_unit: department
     slug: women
     url_path: /2018-19/national/departments/women
   id: 2018-19
@@ -39,6 +67,7 @@ intro: "## Vote purpose\n\nLead, coordinate and oversee the transformation agend
   \ and the achievement of women\u2019s socioeconomic empowerment and rights.\n\n"
 is_vote_primary: true
 name: Women
+organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 78672000.0
@@ -47,12 +76,10 @@ programmes:
 - name: Policy, Stakeholder Coordination and Knowledge Management
   total_budget: 44862000.0
 selected_financial_year: 2018-19
-selected_tab: departments
 slug: women
 sphere:
   name: National
   slug: national
-title: Women - vulekamali
 treasury_datasets:
   ENE for Vote 13 - Women:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
