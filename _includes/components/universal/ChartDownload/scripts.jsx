@@ -10,12 +10,10 @@ function scripts() {
     const component = componentList[i];
     const charts = JSON.parse(decodeHtmlEntities(component.getAttribute('data-charts')));
     const columns = component.getAttribute('data-columns');
-    const max = component.getAttribute('data-max');
-    const offset = component.getAttribute('data-offset');
     const name = component.getAttribute('data-name');
 
     render(
-      <ResponsiveChart {...{ name, charts, max, offset, columns }} />,
+      <ResponsiveChart {...{ name, charts, columns }} />,
       component,
     );
   }

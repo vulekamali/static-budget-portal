@@ -27,7 +27,6 @@ export default function ShareMarkup({ selected, updateShare, modal, shareOpen, u
         </a>
       </Modal>
 
-      <div className="Share-title">Share page</div>
       <div className="Share-action">
         <div className="Share-select">
           <PseudoSelect

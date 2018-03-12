@@ -1,19 +1,19 @@
-.u-marginRight {
+.u-paddingBottom {
   @for $i from 0 through 6 {
     &--#{$i * 5} {
-      margin-right: #{$i * 5} !important;
+      padding-bottom: #{$i * 5} !important;
     }
   }
 
   @for $i from 0 through 3 {
     &--#{($i * 10) + 30} {
-      margin-right: #{($i * 10) + 30} !important;
+      padding-bottom: #{($i * 10) + 30} !important;
     }
   }
 
   @for $i from 0 through 3 {
     &--#{($i * 100) + 100} {
-      margin-right: #{($i * 100) + 100} !important;
+      padding-bottom: #{($i * 100) + 100} !important;
     }
   }
 }
