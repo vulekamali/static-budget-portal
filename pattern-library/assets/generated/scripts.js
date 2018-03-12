@@ -7347,7 +7347,7 @@ function ColumnChart(_ref) {
     popUpOffset: 6,
     buffer: 20,
     valueSpace: width - (0 + 80),
-    padding: [50, 0, 30, 80],
+    padding: [50, 0, 30, 100],
     popupHeight: 30,
     popupCentre: 5,
     charWrap: width / 10,
@@ -7363,8 +7363,8 @@ function ColumnChart(_ref) {
 
   if (downloadable) {
     styling = _extends({}, styling, {
-      padding: [80, 30, 60, 110],
-      valueSpace: width - (30 + 110)
+      padding: [80, 30, 60, 130],
+      valueSpace: width - (30 + 130)
     });
   }
 
@@ -19359,7 +19359,7 @@ function ProgrammesChart(props) {
 
   var withValues = (0, _preact.h)(_index2.default, {
     max: 690,
-    offset: 120,
+    offset: 150,
     values: sourceItems,
     downloadable: true,
     name: 'programmes-chart'
@@ -19371,7 +19371,7 @@ function ProgrammesChart(props) {
     (0, _preact.h)(_index4.default, {
       selected: this.props.downloadSelected,
       changeAction: this.props.changeAction,
-      name: this.props.name,
+      name: 'programmes-chart',
       open: this.props.open,
       canvasAction: this.props.canvasAction,
       clickAction: this.props.clickAction,
@@ -19446,8 +19446,8 @@ function scripts() {
 
     var normalise = function normalise(source) {
       return source.reduce(function (results, val) {
-        if (val.total_budget) {
-          return _extends({}, results, _defineProperty({}, val.name, [val.total_budget]));
+        if (val.amount) {
+          return _extends({}, results, _defineProperty({}, val.financial_year, [val.amount]));
         }
 
         return results;
@@ -19458,6 +19458,8 @@ function scripts() {
       'Adjusted for inflation': normalise(real),
       'Not adjusted for inflation': normalise(nominal)
     };
+
+    console.log(items);
 
     (0, _preact.render)((0, _preact.h)(_index2.default, { items: items }), component);
   }
@@ -19527,6 +19529,7 @@ var ExpenditureChart = function (_Component) {
     _this.clickAction = _this.clickAction.bind(_this);
     _this.closeModal = _this.closeModal.bind(_this);
     _this.changeSourceAction = _this.changeSourceAction.bind(_this);
+
     return _this;
   }
 
@@ -19681,13 +19684,17 @@ function ProgrammesChart(props) {
       (0, _preact.h)(
         'h2',
         { className: 'Page-subHeading' },
-        'Funded programmes for ',
-        year
+        'Expenditure changes over time'
       ),
       (0, _preact.h)(
         'p',
         null,
-        'A department\'s programmes are the activities that it performs during the financial year. Different programs have different levels of funding, depending on their requirements and available finances.'
+        'Budgeted expenditure for a department can increase or decrease from year to year. The official budget shows the nominal value of spendiing - the real value is calculated by adjusting for inflation, since most expenditure items are subject to inflation.'
+      ),
+      (0, _preact.h)(
+        'p',
+        null,
+        'By stripping out the inflation (GDP or CPI inflation) it is possible to show if a departmental budget is increasing or decreasing in real terms.'
       )
     ),
     (0, _preact.h)(
@@ -19695,7 +19702,7 @@ function ProgrammesChart(props) {
       { className: 'Page-section Page-section--card u-paddingTop u-paddingTop--10' },
       (0, _preact.h)(_index2.default, {
         max: 690,
-        offset: 120,
+        offset: 170,
         values: sourceItems,
         downloadable: true,
         name: 'programmes-chart',
@@ -19718,7 +19725,7 @@ function ProgrammesChart(props) {
       (0, _preact.h)(_index4.default, {
         selected: this.props.downloadSelected,
         changeAction: this.props.changeAction,
-        name: this.props.name,
+        name: 'expenditure-chart',
         open: this.props.open,
         canvasAction: this.props.canvasAction,
         clickAction: this.props.clickAction,
@@ -22122,14 +22129,12 @@ function HomeChart(_ref) {
     return _extends({}, results, _defineProperty({}, val.name, [val.total_budget]));
   }, {});
 
-  var charts = { 'National Expenditure': items };
-
-  return (0, _preact.h)(_index2.default, _extends({
+  return (0, _preact.h)(_index2.default, {
     max: 650,
-    offset: 100
-  }, { charts: charts }, {
+    offset: 100,
+    values: items,
     downloadable: true
-  }));
+  });
 }
 
 /***/ }),
