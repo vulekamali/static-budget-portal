@@ -17,12 +17,12 @@ setup_git() {
 regenerate_data() {
     if [[ "${TRAVIS_COMMIT_MESSAGE}" == *"[staging]"* ]]
     then
-        echo "STAGING"
+        echo -n "STAGING"
         export PORTAL_URL=https://dynamicbudgetportal-staging.openup.org.za/
     else
-        echo "PROD"
+        echo -n "PROD"
     fi
-    python generate/from_dynamic.py
+    python generate/from_dynamic.py 1>&2
 }
 
 if [ "${TRAVIS_PULL_REQUEST}" = "true" ]
