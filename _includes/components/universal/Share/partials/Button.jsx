@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import Icon from './Icon.jsx';
+import Icon from './../../Icon/index.jsx';
 import analyticsEvents from './../../../../utilities/js/helpers/analyticsEvent.js';
 
 
@@ -35,8 +35,8 @@ export default function Button({ selected, updateModal }) {
   };
 
   return (
-    <div className="Button has-icon" onClick={share}>
-      <Icon />
-    </div>
+    <button className="Button has-icon u-transformRotate u-transformRotate--270" onClick={share}>
+      <Icon type="download" size="small" />
+    </button>
   );
 }

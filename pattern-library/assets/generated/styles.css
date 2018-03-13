@@ -1004,35 +1004,35 @@ li {
 .Page-contentInner {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 25px 5px 100px; }
+  padding: 0 5px 100px; }
   .Page-contentInner::after {
     clear: both;
     content: "";
     display: block; }
   @media (min-width: 500px) {
     .Page-contentInner {
-      padding: 25px 15px 100px; } }
+      padding: 0 15px 100px; } }
   @media (min-width: 750px) {
     .Page-contentInner {
-      padding: 25px 25px 100px; } }
-  @media (min-width: 750px) {
-    .Page-contentInner.\--floatingLinks {
+      padding: 0 25px 100px; } }
+  @media (min-width: 900px) {
+    .Page-contentInner--floatingLinks {
       padding-left: 240px; } }
   @media (min-width: 1500px) {
-    .Page-contentInner.\--floatingLinks {
+    .Page-contentInner--floatingLinks {
       padding-left: 0; } }
 
 .Page-mainHeading {
   font-weight: bold;
   font-size: 28px;
   line-height: 1.29;
-  margin: 0 20px; }
+  margin: 25px 20px 10px; }
   @media (min-width: 500px) {
     .Page-mainHeading {
-      margin: 0 30px; } }
+      margin: 35px 30px 20px; } }
   @media (min-width: 750px) {
     .Page-mainHeading {
-      margin: 0 40px; } }
+      margin: 45px 40px 30px; } }
 
 .Page-subHeading, .Page-section--forceStyling h2, .FileTypes-title {
   margin: 0 0 10px;
@@ -1052,7 +1052,7 @@ li {
     background-color: white;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border: 1px solid #d2d2d2; }
   .Page-sectionWrap--dark {
     background-color: #e6e6e6; }
@@ -4022,9 +4022,6 @@ li {
 .Videos-pillWrap {
   display: inline; }
 
-.Video {
-  max-width: 550; }
-
 .Video-embed {
   line-height: 0;
   position: relative;
@@ -4166,69 +4163,6 @@ li {
   padding: 2px 0;
   font-style: italic; }
 
-.CsoMeta {
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  display: block;
-  padding: 20px 0; }
-  @media screen and (min-width: 750px) {
-    .CsoMeta {
-      display: table; } }
-
-.CsoMeta-title {
-  font-size: 18px;
-  line-height: 1.44;
-  margin: 0 0 4px;
-  font-weight: bold;
-  font-weight: 900; }
-
-.CsoMeta-orgTitle {
-  display: block;
-  font-weight: normal;
-  max-width: 240px; }
-
-.CsoMeta-container {
-  margin-top: 10px; }
-  @media screen and (min-width: 750px) {
-    .CsoMeta-container {
-      margin-top: 0;
-      display: table-cell; } }
-
-.CsoMeta-dataSetWrap {
-  border-radius: 20px;
-  background-color: #e6e6e6;
-  border: solid 1px #d2d2d2;
-  padding: 10px; }
-
-.CsoMeta-dataSet {
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
-  border: solid 1px #d2d2d2;
-  padding: 11px 20px 32px;
-  display: block; }
-  .CsoMeta-dataSet::after {
-    clear: both;
-    content: "";
-    display: block; }
-
-.CsoMeta-column {
-  padding-right: 20px;
-  float: left;
-  width: 100%; }
-  @media screen and (min-width: 950px) {
-    .CsoMeta-column {
-      width: 50%; } }
-
-.CsoMeta-organisation {
-  display: block;
-  padding-left: 20px; }
-  @media screen and (min-width: 750px) {
-    .CsoMeta-organisation {
-      display: table-cell;
-      width: 300px; } }
-
 .CsoMeta-logo {
   max-width: 240px;
   height: 100px;
@@ -4236,54 +4170,6 @@ li {
   background-position: 0 center;
   background-size: contain;
   background-repeat: no-repeat; }
-
-.CsoMeta-line {
-  padding: 2px 0;
-  word-break: break-all; }
-  .CsoMeta-line--link {
-    color: #4a4a4a;
-    border-radius: 6px;
-    padding: 0 6px;
-    position: relative;
-    left: -6px; }
-    .CsoMeta-line--link:hover {
-      background: #f2f2f2; }
-
-.CsoMeta-listItems {
-  margin: 0; }
-  .CsoMeta-listItems::after {
-    clear: both;
-    content: "";
-    display: block; }
-
-.CsoMeta-listItem {
-  float: left;
-  width: 100%;
-  margin: 0; }
-  .CsoMeta-listItem.is-title {
-    font-weight: bold;
-    font-weight: 900;
-    padding-top: 14px; }
-  .CsoMeta-listItem--icon {
-    padding-top: 7px;
-    display: inline-block;
-    width: auto; }
-
-.CsoMeta-item {
-  display: inline-block; }
-  .CsoMeta-item--link {
-    color: #4a4a4a;
-    border-radius: 6px;
-    padding: 0 6px;
-    position: relative;
-    left: -6px; }
-    .CsoMeta-item--link:hover {
-      background: #e3e3e3; }
-
-.CsoMeta-list::after {
-  clear: both;
-  content: "";
-  display: block; }
 
 .CsoRelated {
   border-radius: 2px;

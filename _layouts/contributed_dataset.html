@@ -8,44 +8,60 @@ layout: page-shell
 <div class="Page-content">
   <main class="Page-contentInner">
 
-    <div>
-      <div class="Page-mainHeading">{{ page_data.name }}</div>
-
-      {% include components/cso-data-page/CsoMeta/index.html author=page_data.author created=page_data.created last_updated=page_data.last_updated organization=page_data.organization license=page_data.license facebook=page_data.facebook twitter=page_data.twitter %}
-
-      {% include components/cso-data-page/CsoRelated/index.html related=page_data.related %}
-    </div>
+    <div class="Page-mainHeading">{{ page_data.name }}</div>
 
     <main class="Page-main">
+      <div class="Page-sectionWrap Page-sectionWrap--card">
+        {% if page_data.intro %}
+          <div class="Page-section">
+            <h2 class="Page-subHeading">Data contributed by: {{ page_data.organization.name }}</h2>
+            {{ page_data.intro | markdownify }}
+          </div>
+        {% endif %}
 
-      {% if page_data.intro %}
-        <div class="Card js-tooltips" data-year="{{ page.financial_year }}">
-          <h2 class="Card-title">About this dataset</h2>
-          {{ page_data.intro | markdownify }}
-        </div>
-      {% endif %}
+        {% if page_data.methodology and page_data.methodology != '' %}
+          <div class="Page-section">
+            <h2 class="Page-subHeading">Methodology Used in Gathering and Analysis</h2>
+            {{ page_data.methodology | markdownify }}
+          </div>
+        {% endif %}
+      </div>
 
-      {% if page_data.methodology and page_data.methodology != '' %}
-        <div class="Card js-tooltips u-marginTop u-marginTop--20" data-year="{{ page.financial_year }}">
-          <h2 class="Card-title">Methodology Used in Gathering and Analysis</h2>
-          {{ page_data.methodology | markdownify }}
-        </div>
-      {% endif %}
-
+      <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--green">
+          <div class="Page-section Page-section--card">
+            {% include components/universal/FileTypes/index.html resources=page_data.resources type="cso" %}
+          </div>
+      </div>
     </main>
 
     <aside class="Page-sidebar">
-      <div class="Card">
-        {% include components/universal/Share/index.html %}
-      </div>
 
-      {% if page_data.resources %}
-        <div class="Page-smallSection">
-          {% include components/universal/FileTypes/index.html resources=page_data.resources type="cso" %}
+      <div class="Page-sectionWrap Page-sectionWrap--card">
+        <div class="Page-section">
+          <h2 class="Page-subHeading">Share this page:</h2>
+          {% include components/universal/Share/index.html %}
         </div>
-      {% endif %}
-
+      </div>
+      
+      {% include 
+        components/cso-data-page/CsoMeta/index.html
+        author=page_data.author
+        created=page_data.created
+        last_updated=page_data.last_updated
+        organization=page_data.organization
+        license=page_data.license
+        facebook=page_data.facebook
+        twitter=page_data.twitter
+      %}
+  
+      <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark">
+        <div class="Page-section Page-section--card">
+          <h2 class="Page-subHeading">How can I contribute?</h2>
+          <p>Do you have data related to this dataset that you would like to contribute?</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeK9sfWwfLGReE0qsTudAaz1Z281S2_SsIb35C_B9TdmeLfTw/viewform" class="Button">
+            Send it to us for consideration
+          </a>
+        </div>
+      </div>
     </aside>
-
-  </main>
 </div>
