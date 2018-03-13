@@ -14,7 +14,7 @@ layout: page-shell
       <div class="Page-sectionWrap Page-sectionWrap--card">
         {% if page_data.intro %}
           <div class="Page-section">
-            <h2 class="Page-subHeading">About this dataset</h2>
+            <h2 class="Page-subHeading">Data contributed by: {{ page_data.organization.name }}</h2>
             {{ page_data.intro | markdownify }}
           </div>
         {% endif %}
