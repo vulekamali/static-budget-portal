@@ -10,6 +10,7 @@ function scripts() {
     const component = componentList[i];
 
     const values = JSON.parse(decodeHtmlEntities(component.getAttribute('data-values'))).data;
+    const rawFiles = JSON.parse(decodeHtmlEntities(component.getAttribute('data-files')));
     const year = component.getAttribute('data-year');
 
     const items = values.reduce(
@@ -22,8 +23,28 @@ function scripts() {
       {},
     );
 
+    const files = Object.keys(rawFiles).reduce(
+      (results, key) => {
+        const object = rawFiles[key].formats.reduce(
+          (innerResults, val) => {
+            return {
+              ...innerResults,
+              [`${key} (${val.format})`]: val.url,
+            };
+          },
+          {},
+        );
+
+        return {
+          ...results,
+          ...object,
+        };
+      },
+      {},
+    );
+
     render(
-      <ProgrammesChart {...{ items, year }} />,
+      <ProgrammesChart {...{ items, year, files }} />,
       component,
     );
   }
