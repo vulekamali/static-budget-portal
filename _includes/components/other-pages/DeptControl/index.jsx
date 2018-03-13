@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import PseudoSelect from './../../universal/PseudoSelect/index.jsx';
-import { provinces } from './partials/provinces.json';
-import { spheres } from './partials/spheres.json';
+import provinces from './partials/provinces.json';
+import spheres from './partials/spheres.json';
 
 
 export default function DeptGroup({ changeKeywords, updateFilter, keywords, open, sphere, province }) {
@@ -29,7 +29,7 @@ export default function DeptGroup({ changeKeywords, updateFilter, keywords, open
             open={open === 'sphere'}
             items={spheres}
             changeAction={updateSphere}
-            property={sphere}
+            selected={sphere}
           />
         </div>
       </div>
@@ -44,7 +44,7 @@ export default function DeptGroup({ changeKeywords, updateFilter, keywords, open
                   open={open === 'province'}
                   items={provinces}
                   changeAction={updateProvince}
-                  property={province}
+                  selected={province}
                 />
               </div>
             </div>

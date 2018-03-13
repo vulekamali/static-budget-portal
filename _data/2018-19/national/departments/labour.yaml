@@ -2,29 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Labour
-    slug: labour
     url_path: /2015-16/national/departments/labour
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Labour
-    slug: labour
     url_path: /2016-17/national/departments/labour
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Labour
-    slug: labour
     url_path: /2017-18/national/departments/labour
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Labour
-    slug: labour
     url_path: /2018-19/national/departments/labour
   id: 2018-19
   is_selected: true
@@ -78,10 +70,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2028%20Labour.pdf
-  ENE for Vote 28 - Labour - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-labour-2018-19/resource/528c19b1-44d1-4d0e-963c-74ffe85c3d71/download/ene18-vote28_chaptertables.xlsx
 vote_number: 28

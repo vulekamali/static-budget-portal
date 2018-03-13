@@ -1,8 +1,10 @@
 @import-normalize;
 
+@import 'utilities/scss/variables/breakpoints';
 @import 'utilities/scss/variables/z-index';
 @import 'utilities/scss/variables/colour-brand';
 @import 'utilities/scss/variables/colour-shading';
+@import 'utilities/scss/variables/font-sizes';
 
 @import 'utilities/scss/mixins/clearfix';
 
@@ -21,16 +23,26 @@
 @import 'utilities/scss/utility-classes/u-Button';
 @import 'utilities/scss/utility-classes/u-listReset';
 @import 'utilities/scss/utility-classes/u-listItemReset';
+
+@import 'utilities/scss/utility-classes/u-padding';
+@import 'utilities/scss/utility-classes/u-paddingTop';
+@import 'utilities/scss/utility-classes/u-paddingLeft';
+@import 'utilities/scss/utility-classes/u-paddingBottom';
+@import 'utilities/scss/utility-classes/u-paddingRight';
+
+@import 'utilities/scss/utility-classes/u-margin';
 @import 'utilities/scss/utility-classes/u-marginTop';
 @import 'utilities/scss/utility-classes/u-marginLeft';
 @import 'utilities/scss/utility-classes/u-marginBottom';
 @import 'utilities/scss/utility-classes/u-marginRight';
+
 @import 'utilities/scss/utility-classes/u-underline';
 @import 'utilities/scss/utility-classes/u-fontWeight';
 @import 'utilities/scss/utility-classes/u-fontSize';
 @import 'utilities/scss/utility-classes/u-wordBreak';
 @import 'utilities/scss/utility-classes/u-fontStyle';
 @import 'utilities/scss/utility-classes/u-whiteSpace';
+@import 'utilities/scss/utility-classes/u-textAlign';
 
 @import 'components/universal/Modal/styles';
 @import 'components/universal/Tooltip/styles';
@@ -42,7 +54,10 @@
 @import 'components/universal/Icon/styles';
 @import 'components/universal/Share/styles';
 @import 'components/universal/FileTypes/styles';
-@import 'components/universal/Graph/styles';
+@import 'components/universal/BarChart/styles';
+@import 'components/universal/Radios/styles';
+@import 'components/universal/Download/styles';
+@import 'components/universal/ChartDownload/styles';
 
 @import 'components/header-and-footer/Search/styles';
 @import 'components/header-and-footer/YearSelect/styles';
@@ -60,8 +75,7 @@
 @import 'components/homepage/ApiCta/styles';
 @import 'components/homepage/NewIntro/styles';
 @import 'components/homepage/Links/styles';
-@import 'components/homepage/Revenue/styles';
-@import 'components/homepage/Expenditure/styles';
+@import 'components/homepage/ValueBlocks/styles';
 
 @import 'components/other-pages/DeptSearch/styles';
 @import 'components/other-pages/SearchResult/styles';

@@ -1,35 +1,37 @@
 import { h } from 'preact';
 
-export default function PseudoSelect({ open, items, loading, changeAction, name, property }) {
+export default function PseudoSelect(props) {
+  const {
+    open,
+    items,
+    loading,
+    changeAction,
+    name,
+    selected
+  } = props;
+
+  const keys = Object.keys(items);
   const radioChange = event => changeAction(event.target.value);
 
-  const renderList = items.map(({ value: itemValue, title }) => {
-    const id = `pseudo-select-${name}-${itemValue}`;
+  const renderList = keys.map((key, index) => {
+    const id = `pseudo-select-${name}-${index}`;
 
     return (
-      <li className={`PseudoSelect-item${property === itemValue ? ' is-active' : ''}`}>
+      <li className={`PseudoSelect-item${selected === items[key] ? ' is-active' : ''}`}>
         <label className="PseudoSelect-label" htmlFor={id}>
           <input
             {...{ id, name }}
-            value={itemValue}
+            value={items[key]}
             type="radio"
-            checked={property === itemValue}
+            checked={selected === items[key]}
             onClick={radioChange}
             className="PseudoSelect-radio"
           />
-          <span className="PseudoSelect-text">{ title }</span>
+          <span className="PseudoSelect-text">{ key }</span>
         </label>
       </li>
     );
   });
-
-  if (loading) {
-    return (
-      <div className="PseudoSelect">
-        <div className="PseudoSelect-list is-loading" />
-      </div>
-    );
-  }
 
   return (
     <div className="PseudoSelect">

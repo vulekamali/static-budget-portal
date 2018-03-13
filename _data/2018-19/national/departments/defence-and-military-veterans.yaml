@@ -2,29 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Defence and Military Veterans
-    slug: defence-and-military-veterans
     url_path: /2015-16/national/departments/defence-and-military-veterans
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Defence and Military Veterans
-    slug: defence-and-military-veterans
     url_path: /2016-17/national/departments/defence-and-military-veterans
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Defence and Military Veterans
-    slug: defence-and-military-veterans
     url_path: /2017-18/national/departments/defence-and-military-veterans
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Defence and Military Veterans
-    slug: defence-and-military-veterans
     url_path: /2018-19/national/departments/defence-and-military-veterans
   id: 2018-19
   is_selected: true
@@ -73,10 +65,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2019%20Defence%20and%20Military%20Veterans.pdf
-  ENE for Vote 19 - Defence and Military Veterans - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-defence-and-military-veterans-2018-19/resource/c24c140f-af1a-4461-b8ac-e3654fc2f956/download/ene18-vote19_chaptertables.xlsx
 vote_number: 19
