@@ -17,29 +17,20 @@ layout: page-shell
     </div>
 
     <main class="Page-main">
-
-      {% if page_data.intro %}
-        <div class="Card js-tooltips" data-year="{{ page.financial_year }}">
-          <h2 class="Card-title">About this dataset</h2>
-          {{ page_data.intro | markdownify }}
-        </div>
-      {% endif %}
-
-      {% if page_data.methodology and page_data.methodology != '' %}
-        <div class="Card js-tooltips u-marginTop u-marginTop--20" data-year="{{ page.financial_year }}">
-          <h2 class="Card-title">Methodology Used in Gathering and Analysis</h2>
-          {{ page_data.methodology | markdownify }}
-        </div>
-      {% endif %}
-
-    </main>
-
-    <aside class="Page-sidebar">
       <div class="Page-sectionWrap Page-sectionWrap--card">
-        <div class="Page-section">
-          <h2 class="Page-subHeading">Share this page:</h2>
-          {% include components/universal/Share/index.html %}
-        </div>
+        {% if page_data.intro %}
+          <div class="Page-section">
+            <h2 class="Page-subHeading">Data contributed by: {{ page_data.organization.name }}</h2>
+            {{ page_data.intro | markdownify }}
+          </div>
+        {% endif %}
+
+        {% if page_data.methodology and page_data.methodology != '' %}
+          <div class="Page-section">
+            <h2 class="Page-subHeading">Methodology Used in Gathering and Analysis</h2>
+            {{ page_data.methodology | markdownify }}
+          </div>
+        {% endif %}
       </div>
 
       {% if page_data.resources %}
@@ -53,6 +44,15 @@ layout: page-shell
           </div>
         </div>
       {% endif %}
+    </main>
+
+    <aside class="Page-sidebar">
+      <div class="Page-sectionWrap Page-sectionWrap--card">
+        <div class="Page-section">
+          <h2 class="Page-subHeading">Share this page:</h2>
+          {% include components/universal/Share/index.html %}
+        </div>
+      </div>
 
       <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark">
         <div class="Page-section Page-section--card">
