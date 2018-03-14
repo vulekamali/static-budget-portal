@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import ResponsiveChart from './../../../universal/ResponsiveChart/index.jsx';
 import ChartDownload from './../../../universal/ChartDownload/index.jsx';
+import Download from './../../../universal/Download/index.jsx';
 
 
 export default function ProgrammesChart(props) {
@@ -17,6 +18,7 @@ export default function ProgrammesChart(props) {
     sourceItems,
     hasNull,
     year,
+    files,
   } = props;
 
   const noValues = (
@@ -54,13 +56,21 @@ export default function ProgrammesChart(props) {
   return (
     <div className="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark">
       <div className="Page-section u-paddingBottom u-paddingBottom--0">
-        <h2 className="Page-subHeading">Funded programmes for {year}</h2>
-        <p>A department&#x27;s programmes are the activities that it performs during the financial year. Different programs have different levels of funding, depending on their requirements and available finances.</p>
+        <h2 className="Page-subHeading">Programme budgets for {year}</h2>
+        <p>A department&#x27;s programmes are the activities that it spends money on during the financial year. Different programmes have different expenditure budgets, depending on their requirements and available finances. More detail on the programmes is available in the department&#x27;s Estimates of National Expenditure (ENE) documents.
+        </p>
       </div>
       <div className="Page-section Page-section--card u-paddingTop u-paddingTop--40">
         {hasNull ? noValues : withValues}
       </div>
       {hasNull ? null : downloadPrompt}
+      <div className="Page-section">
+        {
+          Object.keys(files).map((key) => {
+            return <Download title={key} link={files[key]} icon />;
+          })
+        }
+      </div>
     </div>
   );
 }

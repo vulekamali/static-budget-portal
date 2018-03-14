@@ -98,6 +98,7 @@ export default class ChartDownloadBasicTest extends Component {
         sourceItems={this.props.items}
         hasNull={this.hasNull}
         year={this.props.year}
+        files={this.props.files}
       />
     );
   }
