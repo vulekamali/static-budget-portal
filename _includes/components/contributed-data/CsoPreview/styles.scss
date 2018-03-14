@@ -1,5 +1,7 @@
 .CsoPreview {
-  height: 150px;
+  @media screen and ($standard-breakpoint) {
+    height: 150px;
+  }
 }
 
 .CsoPreview-heading {
