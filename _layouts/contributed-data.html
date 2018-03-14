@@ -6,6 +6,32 @@ layout: page-shell
 <div class="Page-content">
   <main class="Page-contentInner">
     <h1 class="Page-mainHeading">Contributed Data</h1>
-    {% include components/other-pages/CsoDirectory/index.html datasets=page_data.datasets %}
+
+    <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--green">
+      <div class="Page-section Page-section--card">
+        {% include components/contributed-data/CsoRequest/index.html %}
+      </div>
+    </div>
+
+    <div class="Page-grid">
+
+      {% for dataset in page_data.datasets %}
+        <div class="Page-gridItem Page-gridItem--half">
+          <a href="{{ dataset.url_path }}" class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark Page-sectionWrap--link" title="{{ dataset.name }}">
+            <div class="Page-section Page-section--card">
+              {% 
+                include components/contributed-data/CsoPreview/index.html
+                name=dataset.name
+                title=dataset.organization.name
+                logo=dataset.organization.logo_url
+                created=dataset.created
+                last_updated=dataset.last_updated
+              %}
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+
+    </div>
   </main>
 </div>

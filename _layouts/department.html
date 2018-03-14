@@ -2,13 +2,13 @@
 layout: page-shell
 ---
 {% if page.sphere == "national" %}
-{% assign page_data = site.data[page.financial_year][page.sphere].departments[page.data_key] %}
+  {% assign page_data = site.data[page.financial_year][page.sphere].departments[page.data_key] %}
 {% else %}
-{% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.data_key] %}
+  {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.data_key] %}
 {% endif %}
 
 
-<div class="Page-content">
+<div class="Page-content Page-content--dynamicYears">
   <div class="Page-contentInner">
     {% if page_data.government.slug == 'south-africa' %}
       <h1 class="Page-mainHeading">National Department: {{ page_data.name }}</h1>
@@ -25,7 +25,7 @@ layout: page-shell
       </div>
 
       {% 
-        include components/department-page/ProgrammesChart/index.html 
+        include components/department-budgets/ProgrammesChart/index.html 
         values=page_data.programmes
         year=page.financial_year
       %}
@@ -33,7 +33,7 @@ layout: page-shell
 
       {% if page_data.expenditure_over_time %}
         {% 
-          include components/department-page/ExpenditureChart/index.html 
+          include components/department-budgets/ExpenditureChart/index.html 
           values=page_data.expenditure_over_time
         %}
       {% endif %}
@@ -50,7 +50,7 @@ layout: page-shell
 
       <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--green">
         <div class="Page-section Page-section--card">
-          {% include components/universal/FileTypes/index.html treasury=page_data.treasury_datasets cso=page_data.contributed_datasets type="dept" %}
+          {% include components/department-budgets/DeptFiles/index.html treasury=page_data.treasury_datasets cso=page_data.contributed_datasets type="dept" %}
         </div>
       </div>
 

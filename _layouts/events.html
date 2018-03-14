@@ -6,14 +6,14 @@ layout: page-shell
   <div class="Page-contentInner">
     <h2 class="Page-mainHeading">Join us at a vulekamali event in your area</h3>
     {%
-      include components/about-and-learning-centre/Events/index.html
+      include components/events/Events/index.html
       events=site.data.events.upcoming
       upcoming=true
     %}
 
     <h2 class="Page-mainHeading">Past Events</h2>
     {%
-      include components/about-and-learning-centre/Events/index.html
+      include components/events/Events/index.html
       events=site.data.events.past
     %}
   </div>
