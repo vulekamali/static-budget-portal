@@ -3,7 +3,7 @@ import Share from './index.jsx';
 
 
 function scripts() {
-  const nodes = document.getElementsByClassName('js-share');
+  const nodes = document.getElementsByClassName('js-initShare');
   const nodesArray = [...nodes];
 
   if (nodesArray.length > 0) {

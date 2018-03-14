@@ -1,7 +1,0 @@
-<ul class="u-listReset">
-  {% if include.type == 'cso' %}
-    {% include components/universal/FileTypes/partials/cso.html resources=include.resources %}
-  {% else %}
-    {% include components/universal/FileTypes/partials/dept.html treasury=include.treasury cso=include.cso %}
-  {% endif %}
-</ul>

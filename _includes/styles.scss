@@ -43,55 +43,65 @@
 @import 'utilities/scss/utility-classes/u-fontStyle';
 @import 'utilities/scss/utility-classes/u-whiteSpace';
 @import 'utilities/scss/utility-classes/u-textAlign';
+@import 'utilities/scss/utility-classes/u-width';
 
-@import 'components/universal/Modal/styles';
-@import 'components/universal/Tooltip/styles';
-@import 'components/universal/Page/styles';
-@import 'components/universal/PseudoSelect/styles';
+@import 'components/universal/BarChart/styles';
 @import 'components/universal/Button/styles';
-@import 'components/universal/Input/styles';
+@import 'components/universal/Card/styles';
+@import 'components/universal/ChartDownload/styles';
+@import 'components/universal/Download/styles';
+@import 'components/universal/Icon/styles';
 @import 'components/universal/Card/styles';
 @import 'components/universal/Icon/styles';
+@import 'components/universal/Input/styles';
+@import 'components/universal/Modal/styles';
+@import 'components/universal/Page/styles';
+@import 'components/universal/PseudoSelect/styles';
 @import 'components/universal/Share/styles';
-@import 'components/universal/FileTypes/styles';
-@import 'components/universal/BarChart/styles';
-@import 'components/universal/Radios/styles';
-@import 'components/universal/Download/styles';
-@import 'components/universal/ChartDownload/styles';
+@import 'components/universal/Tooltip/styles';
 
-@import 'components/header-and-footer/Search/styles';
-@import 'components/header-and-footer/YearSelect/styles';
-@import 'components/header-and-footer/Footer/styles';
-@import 'components/header-and-footer/ExtraFooter/styles';
-@import 'components/header-and-footer/NavBar/styles';
-@import 'components/header-and-footer/SubLinks/styles';
-@import 'components/header-and-footer/HeaderBar/styles';
-@import 'components/header-and-footer/Logo/styles';
-
-@import 'components/homepage/Related/styles';
-@import 'components/homepage/Circles/styles';
-@import 'components/homepage/SignUpBox/styles';
-@import 'components/homepage/HomeLayout/styles';
 @import 'components/homepage/ApiCta/styles';
-@import 'components/homepage/NewIntro/styles';
+@import 'components/homepage/Circles/styles';
+@import 'components/homepage/HomeLayout/styles';
 @import 'components/homepage/Links/styles';
+@import 'components/homepage/NewIntro/styles';
+@import 'components/homepage/Related/styles';
+@import 'components/homepage/SignUpBox/styles';
 @import 'components/homepage/ValueBlocks/styles';
 
-@import 'components/other-pages/DeptSearch/styles';
-@import 'components/other-pages/SearchResult/styles';
-@import 'components/other-pages/CsoDirectory/styles';
-@import 'components/other-pages/DeptGroup/styles';
-@import 'components/other-pages/DeptControl/styles';
+@import 'components/header-and-footer/Disclaimer/styles';
+@import 'components/header-and-footer/ExtraFooter/styles';
+@import 'components/header-and-footer/Footer/styles';
+@import 'components/header-and-footer/HeaderBar/styles';
+@import 'components/header-and-footer/Logo/styles';
+@import 'components/header-and-footer/NavBar/styles';
+@import 'components/header-and-footer/Search/styles';
+@import 'components/header-and-footer/SubLinks/styles';
+@import 'components/header-and-footer/YearSelect/styles';
 
-@import 'components/department-page/Programmes/styles';
+@import 'components/events/Events/styles';
 
-@import 'components/about-and-learning-centre/Progress/styles';
-@import 'components/about-and-learning-centre/Stages/styles';
-@import 'components/about-and-learning-centre/Contacts/styles';
-@import 'components/about-and-learning-centre/Glossary/styles';
-@import 'components/about-and-learning-centre/Videos/styles';
-@import 'components/about-and-learning-centre/Video/styles';
-@import 'components/about-and-learning-centre/Events/styles';
+@import 'components/department-budgets/ColumnChart/styles';
+@import 'components/department-budgets/CsoLinks/styles';
+@import 'components/department-budgets/DeptControl/styles';
+@import 'components/department-budgets/DeptFiles/styles';
+@import 'components/department-budgets/DeptGroup/styles';
+@import 'components/department-budgets/DeptSearch/styles';
+@import 'components/department-budgets/Programmes/styles';
+@import 'components/department-budgets/Radios/styles';
+@import 'components/department-budgets/Resources/styles';
 
-@import 'components/cso-data-page/CsoMeta/styles';
-@import 'components/cso-data-page/CsoRelated/styles';
+@import 'components/contributed-data/CsoDirectory/styles';
+@import 'components/contributed-data/CsoFiles/styles';
+@import 'components/contributed-data/CsoMeta/styles';
+@import 'components/contributed-data/CsoRelated/styles';
+@import 'components/contributed-data/CsoPreview/styles';
+@import 'components/contributed-data/CsoRequest/styles';
+
+@import 'components/learning-centre/Glossary/styles';
+@import 'components/learning-centre/Videos/styles';
+
+@import 'components/about/Contacts/styles';
+@import 'components/about/Progress/styles';
+@import 'components/about/Stages/styles';
+@import 'components/about/Video/styles';

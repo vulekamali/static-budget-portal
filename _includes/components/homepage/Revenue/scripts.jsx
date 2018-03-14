@@ -4,7 +4,7 @@ import decodeHtmlEntities from './../../../utilities/js/helpers/decodeHtmlEntiti
 
 
 function scripts() {
-  const componentList = document.getElementsByClassName('js-revenue');
+  const componentList = document.getElementsByClassName('js-initRevenue');
 
   for (let i = 0; i < componentList.length; i++) {
     const component = componentList[i];

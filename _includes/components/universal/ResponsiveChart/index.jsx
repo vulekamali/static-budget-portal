@@ -1,7 +1,7 @@
 import { h, Component } from 'preact';
 import DebounceFunction from './../../../utilities/js/helpers/DebounceFunction.js';
 import BarChart from './../BarChart/index.jsx';
-import ColumnChart from './../ColumnChart/index.jsx';
+import ColumnChart from './../../department-budgets/ColumnChart/index.jsx';
 
 
 export default class ResponsiveChart extends Component {

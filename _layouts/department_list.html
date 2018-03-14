@@ -5,11 +5,11 @@ layout: page-shell
 {% assign national = site.data[page.financial_year].departments.national[0] %}
 {% assign provincial = site.data[page.financial_year].departments.provincial %}
 
-<div class="Page-content">
+<div class="Page-content Page-content--dynamicYears">
   <main class="Page-contentInner">
     <h1 class="Page-mainHeading">Department Budgets for {{ page.financial_year }}</h1>
     {% include 
-      components/other-pages/DeptSearch/index.html
+      components/department-budgets/DeptSearch/index.html
       provincial=provincial
       national=national
     %}

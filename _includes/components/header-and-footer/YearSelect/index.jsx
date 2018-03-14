@@ -1,25 +1,72 @@
-import { h, render } from 'preact';
-import YearSelectContainer from './partials/YearSelectContainer.jsx';
-import decodeHtmlEntities from './../../../utilities/js/helpers/decodeHtmlEntities.js';
+import { h } from 'preact';
+import Tooltip from './../../universal/Tooltip/index.jsx';
 
 
-function YearSelect() {
-  const nodes = document.getElementsByClassName('YearSelect');
-  const nodesArray = [...nodes];
-  const { search, no_js: noJs } = window.budgetPortal.stringQueries;
+export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, search, loading, year }) {
+  const items = jsonData.map((data) => {
+    const Tag = data.active || data.direct === false ? 'span' : 'a';
+    const toggleOpen = () => updateItem('open', !open);
+    const linkWithQuery = search ? `${data.url}?search=${search}` : data.url;
 
-  if (nodesArray.length > 0 && !noJs) {
-    nodesArray.forEach((node, i) => {
-      const jsonData = JSON.parse(decodeHtmlEntities(nodes[i].getAttribute('data-json'))).data;
-
-      render(
-        <YearSelectContainer {...{ jsonData, search }} />,
-        nodes[i].parentNode,
-        nodes[i],
+    if (!data.direct) {
+      return (
+        <li
+          className={`YearSelect-item${ data.active ? ' is-active' : '' }`}
+          onClick={ data.active ? toggleOpen : null }
+        >
+          <Tooltip
+            block
+            title="Content Unavailable"
+            description={`There is no exact match for this department in ${data.name}.`}
+            year={year}
+            openAction={() => updateItem('tooltip', data.name)}
+            closeAction={() => updateItem('tooltip', null)}
+            open={data.name === tooltip}
+            down
+            actions={[
+              {
+                url: `/${data.name}/departments`,
+                title: `View ${data.name} Departments`,
+              },
+            ]}
+          >
+            <Tag href={data.active || data.direct === false ? null : linkWithQuery} className="YearSelect-link">{data.name}</Tag>
+          </Tooltip>
+        </li>
       );
-    });
-  }
+    }
+
+    return (
+      <li
+        className={`YearSelect-item${ data.active ? ' is-active' : '' }`}
+        onClick={ data.active ? toggleOpen : null }
+        >
+        <Tag href={data.active || data.direct === false ? null : linkWithQuery} className="YearSelect-link">{data.name}</Tag>
+      </li>
+    );
+  });
+
+  const placeholder = (
+    <div className={`YearSelect-bar is-loading${open ? ' is-open' : ''}`} />
+  );
+
+  const realData = (
+    <ul className={`YearSelect-bar${open ? ' is-open' : ''}`}>
+      {items}
+    </ul>
+  );
+
+  return (
+    <div className="YearSelect">
+      <div className="YearSelect-wrap">
+        <h2 className="YearSelect-title">
+          <span className="YearSelect-titleExtra">Show data for a </span>
+          <span >financial year</span>
+        </h2>
+        <div className="YearSelect-content">
+          { loading ? placeholder : realData }
+        </div>
+      </div>
+    </div>
+  );
 }
-
-
-export default YearSelect();
