@@ -79,6 +79,7 @@
     background: none;
     position: absolute;
     z-index: z-index('Tooltip-boxWrap');
+    left: calc(-115px + 50%);
 
     &.is-open {
       display: none;
@@ -121,7 +122,6 @@
 .Tooltip-contentWrap {
   @media screen and (min-width: 800px) {
     position: relative;
-    left: 50%;
   }
 }
 
@@ -134,7 +134,7 @@
   font-size: 13px;
 
   @media screen and (min-width: 800px) {
-    left: -50%;
+
   }
 }
 

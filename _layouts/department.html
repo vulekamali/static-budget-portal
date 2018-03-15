@@ -18,16 +18,16 @@ layout: page-shell
 
     <main class="Page-main" u-marginBottom u-marginBottom--20>
 
-      {% 
-        include components/department-budgets/ProgrammesChart/index.html 
+      {%
+        include components/department-budgets/ProgrammesChart/index.html
         values=page_data.programmes
         year=page.financial_year
       %}
 
 
       {% if page_data.expenditure_over_time %}
-        {% 
-          include components/department-budgets/ExpenditureChart/index.html 
+        {%
+          include components/department-budgets/ExpenditureChart/index.html
           values=page_data.expenditure_over_time
         %}
       {% endif %}
@@ -46,7 +46,6 @@ layout: page-shell
         <div class="Page-section Page-section--card">
           {%
             include components/department-budgets/Participate/index.html
-            items=site.data.participate
           %}
         </div>
       </div>

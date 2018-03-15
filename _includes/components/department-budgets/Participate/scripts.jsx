@@ -1,14 +1,29 @@
 import { h, Component, render } from 'preact';
 import Participate from './index.jsx';
-import decodeHtmlEntities from './../../../utilities/js/helpers/decodeHtmlEntities.js';
 import DebounceFunction from './../../../utilities/js/helpers/DebounceFunction.js';
 
 
 class ParticipateContainer extends Component {
   constructor(props) {
     super(props);
+
+    this.months = {
+      Jan: 'Jan',
+      Feb: 'Feb',
+      Mar: 'Mar',
+      Apr: 'Apr',
+      May: 'May',
+      Jun: 'Jun',
+      Jul: 'Jul',
+      Aug: 'Aug',
+      Sep: 'Sep',
+      Oct: 'Oct',
+      Nov: 'Nov',
+      Dec: 'Dec',
+    };
+
     this.state = {
-      selected: this.props.currentMonth,
+      selected: this.months[Object.keys(this.months)[this.props.currentMonthIndex]],
       open: false,
       mobile: true,
     };
@@ -54,11 +69,11 @@ class ParticipateContainer extends Component {
     return (
       <Participate
         selected={this.state.selected}
-        items={this.props.items}
         setMonth={this.setMonth}
         open={this.state.open}
         setMobileMonth={this.setMobileMonth}
         mobile={this.state.mobile}
+        months={this.months}
       />
     );
   }
@@ -71,11 +86,9 @@ for (let i = 0; i < nodes.length; i++) {
   const node = nodes[i];
 
   const currentMonthIndex = new Date().getMonth();
-  const items = JSON.parse(decodeHtmlEntities(node.getAttribute('data-items')));
-  const currentMonth = Object.keys(items)[currentMonthIndex];
 
   render(
-    <ParticipateContainer {...{ items, currentMonth }} mobile />,
+    <ParticipateContainer {...{ currentMonthIndex }} />,
     node,
   );
 }
