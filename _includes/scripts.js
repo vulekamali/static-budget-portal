@@ -32,5 +32,6 @@ import './components/department-budgets/ProgrammesChart/scripts.jsx';
 import './components/department-budgets/ExpenditureChart/scripts.jsx';
 import './components/department-budgets/ColumnChart/scripts.jsx';
 import './components/department-budgets/DeptSearch/scripts.jsx';
+import './components/department-budgets/Participate/scripts.jsx';
 
 import './components/about/Video/scripts.jsx';

@@ -18,6 +18,19 @@ layout: page-shell
 
     <main class="Page-main" u-marginBottom u-marginBottom--20>
 
+      <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark">
+        <div class="Page-section u-paddingBottom u-paddingBottom--5">
+          <div class="Page-subHeading">Timelines for this department and ways to participate</div>
+          <p>National Treasury, Departments and Commitees are busy with different things depending on the time of year:</p>
+        </div>
+        <div class="Page-section Page-section--card">
+          {%
+            include components/department-budgets/Participate/index.html
+            items=site.data.participate
+          %}
+        </div>
+      </div>
+
       <div class="Page-sectionWrap Page-sectionWrap--card ">
         <div class="Page-section Page-section--forceStyling js-tooltips">
           {{ page_data.intro  | markdownify }}
