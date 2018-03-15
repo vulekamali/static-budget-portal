@@ -1,7 +1,9 @@
 import { h } from 'preact';
+import PseudoSelect from './../../universal/PseudoSelect/index.jsx';
+import fullMonthName from './partials/fullMonthName.js';
 
 
-export default function Participate({ items, selected, setMonth }) {
+export default function Participate({ items, selected, setMonth, mobile, open, setMobileMonth }) {
   const months = Object.keys(items);
 
   const selectors = months.map((month) => {
@@ -10,7 +12,7 @@ export default function Participate({ items, selected, setMonth }) {
     return (
       <button
         key={month}
-        className={`Button is-lightGrey is-inline u-marginRight u-marginRight--10 u-marginBottom u-marginBottom--10${activeState}`}
+        className={`Participate-button${activeState}`}
         onClick={() => setMonth(month)}
       >
         {month}
@@ -18,7 +20,27 @@ export default function Participate({ items, selected, setMonth }) {
     );
   });
 
-  const CallToActions = Object.keys(items[selected].buttons) || [];
+  const mobileItems = months.reduce(
+    (result, month) => {
+      return {
+        ...result,
+        [month]: month,
+      };
+    },
+    {},
+  );
+
+  const mobileSelectors = (
+    <PseudoSelect
+      items={mobileItems}
+      selected={selected}
+      changeAction={month => setMobileMonth(month)}
+      name="participate-select"
+      open={open}
+    />
+  );
+
+  const CallToActions = items[selected].buttons ? Object.keys(items[selected].buttons) : [];
   const CallToActionsButtons = CallToActions.map((key) => {
     return (
       <a
@@ -33,9 +55,9 @@ export default function Participate({ items, selected, setMonth }) {
 
   return (
     <div className="Participate">
-      { selectors }
+      { mobile ? mobileSelectors : selectors }
       <div className="Participate-info" key={selected}>
-        <h3 className="Page-subHeading">What is happening in March with the department?</h3>
+        <h3 className="Page-subHeading">What is happening in {fullMonthName(selected)} with the department?</h3>
         <p>{items[selected].state}</p>
         <h3 className="Page-subHeading">How can I participate?</h3>
         <p>{items[selected].participate}</p>
