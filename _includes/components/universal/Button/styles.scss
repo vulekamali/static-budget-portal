@@ -32,12 +32,13 @@
   }
 
   &.is-grey {
-    background-color: grey;
+    background-color: #e6e6e6;
 
     &:hover {
-      background-color: darken(grey, 15%);
+      background-color: darken(#e6e6e6, 15%);
     }
   }
+  
 
   &.is-small {
     font-size: 13px;
