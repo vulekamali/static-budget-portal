@@ -32,10 +32,11 @@
   }
 
   &.is-grey {
-    background-color: grey;
+    background-color: #e6e6e6;
+    color: #3f3f3f;
 
     &:hover {
-      background-color: darken(grey, 15%);
+      background-color: darken(#e6e6e6, 15%);
     }
   }
 
