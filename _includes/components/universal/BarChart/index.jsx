@@ -9,7 +9,7 @@ import LineGroups from './partials/LineGroups.jsx';
 import Tooltips from './partials/Tooltips.jsx';
 
 
-export default function BarChart({ items, width, hover, guides, scale = 1, downloadable }) {
+export default function BarChart({ items, width, hover, guides, scale = 1, downloadable, parentAction }) {
   let styling = {
     fontSize: 14,
     popupFontSize: 14,
@@ -65,10 +65,10 @@ export default function BarChart({ items, width, hover, guides, scale = 1, downl
     />
   );
 
-  return (
+  const content = (
     <svg
       version="1.1"
-      className={`Graph-svg${hover ? ' is-hoverable' : ''}`}
+      className={`BarChart-svg ${hover ? ' is-hoverable' : ''}`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox={`0 0 ${newWidth} ${height}`}
       width={newWidth * scale}
@@ -85,4 +85,17 @@ export default function BarChart({ items, width, hover, guides, scale = 1, downl
       <Tooltips {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
     </svg>
   );
+
+  if (!downloadable) {
+    return (
+      <div
+        className="BarChart"
+        ref={node => parentAction(node)}
+      >
+        {content}
+      </div>
+    );
+  }
+
+  return content;
 }

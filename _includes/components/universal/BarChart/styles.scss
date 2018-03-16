@@ -8,92 +8,12 @@
   }
 }
 
-.Graph-svg {
+.BarChart-svg {
   overflow: hidden;
-
-  &--responsive {
-    width: 100%;
-  }
 }
 
-.Graph-outline {
-  stroke-width: 2;
-  stroke: #d2d2d2;
-  fill: none;
-}
-
-.Graph-label {
-  text-anchor: middle;
-  font-weight: bold;
-
-  &--rightAlign {
-    text-anchor: end;
-  }
-
-  &--leftAlign {
-    text-anchor: start;
-  }
-}
-
-.Graph-guide {
-  stroke: #e6e6e6;
-}
-
-.Graph-line {
-  stroke: #4a4a4a;
-
-  &:nth-of-type(1) {
-    stroke: #79b43c;
-  }
-
-  &:nth-of-type(12) {
-    stroke: #ee9f31;
-  }
-
-  &:nth-of-type(3) {
-    stroke: #ad3c64;
-  }
-}
-
-.Graph-tooltipBase {
-  fill: #4a4a4a;
-
-  .Graph-tooltip:nth-of-type(1) & {
-    fill: #79b43c;
-  }
-
-  .Graph-tooltip:nth-of-type(12) & {
-    fill: #ee9f31;
-  }
-
-  .Graph-tooltip:nth-of-type(3) & {
-    fill: #ad3c64;
-  }
-}
-
-.Graph-triangle {
-  fill: #4a4a4a;
-
-  .Graph-tooltip:nth-of-type(1) & {
-    fill: #79b43c;
-  }
-
-  .Graph-tooltip:nth-of-type(12) & {
-    fill: #ee9f31;
-  }
-
-  .Graph-tooltip:nth-of-type(3) & {
-    fill: #ad3c64;
-  }
-}
-
-.Graph-tooltipText {
-  fill: white;
-  text-anchor: middle;
-}
-
-.Graph-tooltip {
-  .Graph-svg.is-hoverable & {
+.BarChart-tooltip {
+  .BarChart-svg.is-hoverable & {
     cursor: pointer;
     opacity: 0;
 
@@ -101,80 +21,4 @@
       opacity: 1;
     }
   }
-}
-
-.Graph {
-  background-color: white;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  padding: 50px 10px 20px;
-}
-
-.Graph-title {
-  padding: 0 40px;
-  font-size: 21px;
-  font-weight: 900;
-  color: #4a4a4a;
-}
-
-.Graph-description {
-  padding: 20px 40px;
-  font-size: 14px;
-  color: #4a4a4a;
-  line-height: 1.45;
-}
-
-.Graph-data {
-  padding-bottom: 30px;
-
-  @media screen and (min-width: 700px) {
-    padding-left: 17px;
-  }
-}
-
-.Graph-linkWrap {
-  display: block;
-  padding: 0 25px;
-}
-
-.Graph-link {
-  display: inline-block;
-  color: #3f3f3f;
-  padding: 3px 6px 6px;
-  border-radius: 5px;
-  font-size: 14px;
-
-  &:hover {
-    background-color: darken(#e6e6e6, 15%);
-  }
-}
-
-.Graph-icon {
-  border: 2px solid #3f3f3f;
-  border-radius: 50%;
-  display: inline-block;
-  fill: #3f3f3f;
-  padding: 2px;
-  margin-right: 5px;
-  line-height: 0;
-}
-
-.Graph-download {
-  display: table;
-  margin: 40px auto 0;
-}
-
-.Graph-downloadTitle {
-  display: table-cell;
-  padding: 0 10px;
-}
-
-.Graph-downloadSelect {
-  display: table-cell;
-  width: 180px;
-}
-
-.Graph-downloadButton {
-  display: table-cell;
-  padding: 0 5px;
 }

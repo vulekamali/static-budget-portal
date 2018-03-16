@@ -37,8 +37,6 @@ for (let i = 0; i < nodes.length; i++) {
   const items = JSON.parse(decodeHtmlEntities(node.getAttribute('data-items')));
   const currentMonth = Object.keys(items)[currentMonthIndex];
 
-  console.log(items, currentMonth);
-
   render(
     <ParticipateContainer {...{ items, currentMonth }} />,
     node,
