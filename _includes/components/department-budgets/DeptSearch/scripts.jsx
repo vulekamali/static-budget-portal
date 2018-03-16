@@ -74,7 +74,7 @@ class DeptSearchContainer extends Component {
 
 
   render() {
-    return <DeptSearch state={this.state} eventHandlers={this.eventHandlers} />;
+    return <DeptSearch state={this.state} eventHandlers={this.eventHandlers} epresData={this.props.epresData} />;
   }
 }
 
@@ -89,7 +89,8 @@ function scripts() {
 
       const nationalData = JSON.parse(decodeHtmlEntities(component.getAttribute('data-national-json'))).data;
       const rawProvincialData = JSON.parse(decodeHtmlEntities(component.getAttribute('data-provincial-json'))).data;
-
+      const epresData = JSON.parse(decodeHtmlEntities(component.getAttribute('data-epres-json'))).data; 
+      
       const provincialData = rawProvincialData.sort((a, b) => {
         return a.name.localeCompare(b.name);
       });
@@ -104,8 +105,7 @@ function scripts() {
 
       if (!noJs) {
         render(
-          <DeptSearchContainer {...{ jsonData, sphere }} />,
-          component.parentNode,
+          <DeptSearchContainer {...{ jsonData, sphere, epresData }} />,
           component,
         );
       }
