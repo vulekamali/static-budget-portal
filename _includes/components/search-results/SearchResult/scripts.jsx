@@ -1,5 +1,5 @@
 import { h, render, Component } from 'preact';
-import SearchResults from './index.jsx';
+import SearchResult from './index.jsx';
 import { apiBaseURL } from '../../../utilities/config/global.json';
 import removePunctuation from '../../../utilities/js/helpers/removePunctuation.js';
 
