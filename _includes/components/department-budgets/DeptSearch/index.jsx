@@ -3,7 +3,7 @@ import DeptControl from './../DeptControl/index.jsx';
 import DeptGroup from './../DeptGroup/index.jsx';
 
 
-export default function DeptSearchMarkup({ state, eventHandlers }) {
+export default function DeptSearchMarkup({ state, eventHandlers, epresData }) {
   return (
     <div className="DeptSearch">
       <div className="DeptSearch-wrap">
@@ -34,6 +34,7 @@ export default function DeptSearchMarkup({ state, eventHandlers }) {
                         empty
                         map={slug}
                         name={name}
+                        epre={epresData[slug] || null}
                       />
                     </div>
                   );
