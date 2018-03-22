@@ -929,9 +929,11 @@ li {
     box-shadow: none; }
 
 .Page {
-  display: table;
   width: 100%;
   min-height: 100%; }
+  @media (min-width: 750px) {
+    .Page {
+      display: table; } }
 
 .Page-head {
   position: fixed;
@@ -945,14 +947,17 @@ li {
       height: 1%;
       display: table-row; } }
 
-.Page-footer {
-  height: 1%;
-  display: table-row; }
+@media (min-width: 750px) {
+  .Page-footer {
+    height: 1%;
+    display: table-row; } }
 
 .Page-contentWrap {
-  height: 98%;
-  display: table-row;
   background-color: #f0f0f0; }
+  @media (min-width: 750px) {
+    .Page-contentWrap {
+      height: 98%;
+      display: table-row; } }
 
 .Page-content {
   padding-top: 70px; }
@@ -3376,18 +3381,23 @@ li {
 .Participate-info {
   margin-top: 15px; }
 
-.IntroSection {
-  display: table;
-  margin: 0 auto; }
+@media screen and (min-width: 750px) {
+  .IntroSection {
+    display: table;
+    margin: 0 auto; } }
 
-.IntroSection-box {
-  display: table-cell;
-  width: 362px;
-  padding-left: 35px; }
+@media screen and (min-width: 750px) {
+  .IntroSection-box {
+    display: table-cell;
+    width: 362px;
+    padding-left: 35px; } }
 
 .IntroSection-textWrap {
-  display: table-cell;
-  width: 676px; }
+  margin-bottom: 30px; }
+  @media screen and (min-width: 750px) {
+    .IntroSection-textWrap {
+      display: table-cell;
+      width: 676px; } }
 
 .IntroSection-text {
   max-height: 200px;
@@ -3411,10 +3421,11 @@ li {
   width: 100%;
   position: absolute; }
 
-.ProgrammesChart::after {
-  clear: both;
-  content: "";
-  display: block; }
+@media screen and (min-width: 750px) {
+  .ProgrammesChart::after {
+    clear: both;
+    content: "";
+    display: block; } }
 
 @media screen and (min-width: 750px) {
   .ProgrammesChart-info {
@@ -3438,6 +3449,26 @@ li {
 
 .ProgrammesChart-shareButton {
   float: left; }
+
+@media screen and (min-width: 500px) {
+  .ContributedItem {
+    display: table;
+    width: 100%; } }
+
+@media screen and (min-width: 500px) {
+  .ContributedItem-info {
+    display: table-cell;
+    vertical-align: middle; } }
+
+.ContributedItem-button {
+  margin-top: 20px; }
+  @media screen and (min-width: 500px) {
+    .ContributedItem-button {
+      margin-top: 0;
+      display: table-cell;
+      width: 190px;
+      vertical-align: middle;
+      text-align: center; } }
 
 .CsoDirectory::after {
   clear: both;
@@ -4554,4 +4585,4 @@ li {
   width: 100%;
   height: 100%; }
 
-/*# sourceMappingURL=styles.css.map*/
+/*# sourceMappingURL=styles.4344145c5686fd4e472e4935cfc53cc3.css.map*/

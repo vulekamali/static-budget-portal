@@ -1,7 +1,10 @@
 .Page {
-  display: table;
   width: 100%;
   min-height: 100%;
+
+  @media ($tablet-breakpoint) {
+    display: table;
+  }
 }
 
 .Page-head {
@@ -22,14 +25,19 @@
 }
 
 .Page-footer {
-  height: 1%;
-  display: table-row;
+  @media ($tablet-breakpoint) {
+    height: 1%;
+    display: table-row;
+  }
 }
 
 .Page-contentWrap {
-  height: 98%;
-  display: table-row;
   background-color: $colour-shading-background;
+
+  @media ($tablet-breakpoint) {
+    height: 98%;
+    display: table-row;
+  }
 }
 
 .Page-content {

@@ -1,6 +1,12 @@
+{% if include.datasets | size > 0 %}
+  {% assign padding = '' %}
+{% else %}
+  {% assign padding = ' u-paddingBottom0' %}
+{% endif %}
+
 
 <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark" id="contributed-data">
-  <div class="Page-section u-paddingTop5">
+  <div class="Page-section u-paddingTop5 {{ padding }}">
     <div class="Page-subHeading">Contributed data</div>
   </div>
 
