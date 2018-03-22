@@ -55,14 +55,14 @@ class YearSelectContainer extends Component {
 function scripts() {
   const nodes = document.getElementsByClassName('js-initYearSelect');
   const nodesArray = [...nodes];
-  const { search, no_js: noJs } = window.budgetPortal.stringQueries;
+  const { no_js: noJs } = window.vulekamali.qs;
 
   if (nodesArray.length > 0 && !noJs) {
     nodesArray.forEach((node, i) => {
       const jsonData = JSON.parse(decodeHtmlEntities(nodes[i].getAttribute('data-json'))).data;
 
       render(
-        <YearSelectContainer {...{ jsonData, search }} />,
+        <YearSelectContainer {...{ jsonData }} />,
         nodes[i].parentNode,
         nodes[i],
       );

@@ -1,12 +1,18 @@
 import { h } from 'preact';
+import queryString from 'query-string';
 import Tooltip from './../../universal/Tooltip/index.jsx';
 
+const navToYearPage = (event, page) => {
+  event.preventDefault();
+  window.location.href = `${page}?${queryString.stringify(window.vulekamali.qs)}`;
+};
 
-export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, search, loading, year }) {
+
+export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, search, loading, year, newYear }) {
+
   const items = jsonData.map((data) => {
     const Tag = data.active || data.direct === false ? 'span' : 'a';
     const toggleOpen = () => updateItem('open', !open);
-    const linkWithQuery = search ? `${data.url}?search=${search}` : data.url;
 
     if (!data.direct) {
       return (
@@ -30,7 +36,13 @@ export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, 
               },
             ]}
           >
-            <Tag href={data.active || data.direct === false ? null : linkWithQuery} className="YearSelect-link">{data.name}</Tag>
+            <Tag
+              href={data.active || data.direct === false ? null : data.url}
+              className="YearSelect-link"
+              onClick={event => navToYearPage(event, data.url)}
+            >
+              {data.name}
+            </Tag>
           </Tooltip>
         </li>
       );
@@ -41,7 +53,13 @@ export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, 
         className={`YearSelect-item${ data.active ? ' is-active' : '' }`}
         onClick={ data.active ? toggleOpen : null }
         >
-        <Tag href={data.active || data.direct === false ? null : linkWithQuery} className="YearSelect-link">{data.name}</Tag>
+        <Tag
+          href={data.active || data.direct === false ? null : data.url}
+          className="YearSelect-link"
+          onClick={event => navToYearPage(event, data.url)}
+        >
+          {data.name}
+        </Tag>
       </li>
     );
   });
