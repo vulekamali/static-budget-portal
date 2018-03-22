@@ -1112,6 +1112,223 @@ function decodeHtmlEntities(input) {
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = BarChart;
+
+var _preact = __webpack_require__(0);
+
+var _calcMaxValue = __webpack_require__(79);
+
+var _calcMaxValue2 = _interopRequireDefault(_calcMaxValue);
+
+var _buildGroupSpaceArray = __webpack_require__(80);
+
+var _buildGroupSpaceArray2 = _interopRequireDefault(_buildGroupSpaceArray);
+
+var _Breakpoints = __webpack_require__(81);
+
+var _Breakpoints2 = _interopRequireDefault(_Breakpoints);
+
+var _Grid = __webpack_require__(83);
+
+var _Grid2 = _interopRequireDefault(_Grid);
+
+var _Guides = __webpack_require__(84);
+
+var _Guides2 = _interopRequireDefault(_Guides);
+
+var _LineGroups = __webpack_require__(86);
+
+var _LineGroups2 = _interopRequireDefault(_LineGroups);
+
+var _Tooltips = __webpack_require__(88);
+
+var _Tooltips2 = _interopRequireDefault(_Tooltips);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function BarChart(_ref) {
+  var items = _ref.items,
+      width = _ref.width,
+      hover = _ref.hover,
+      guides = _ref.guides,
+      _ref$scale = _ref.scale,
+      scale = _ref$scale === undefined ? 1 : _ref$scale,
+      downloadable = _ref.downloadable,
+      parentAction = _ref.parentAction;
+
+
+  var styling = {
+    fontSize: 14,
+    popupFontSize: 14,
+    maxValue: (0, _calcMaxValue2.default)(items),
+    popupWidth: 90,
+    popUpOffset: 6,
+    buffer: 20,
+    padding: [0, 110, 60, 2],
+    valueSpace: width - 112,
+    lineGutter: 23,
+    popupHeight: 30,
+    popupCentre: 5,
+    barWidth: 16,
+    groupMargin: 60,
+    charWrap: width / 10,
+    charLineHeight: 16,
+    titleSpace: 0,
+    labelBreakpoints: Math.floor(width / 150),
+    showGuides: true
+  };
+
+  if (hover) {
+    styling = _extends({}, styling, {
+      charLineHeight: 14,
+      lineGutter: 8,
+      barWidth: 12,
+      groupMargin: 40
+    });
+  }
+
+  if (downloadable) {
+    styling = _extends({}, styling, {
+      padding: [30, 140, 90, 30],
+      valueSpace: width - (140 + 30)
+    });
+  }
+
+  var _styling = styling,
+      valueSpace = _styling.valueSpace,
+      padding = _styling.padding,
+      showGuides = _styling.showGuides;
+
+  var groupSpaceArray = (0, _buildGroupSpaceArray2.default)(items, styling);
+  var totalGroupSpace = groupSpaceArray.reduce(function (result, val) {
+    return result + val;
+  }, 0);
+  var height = padding[0] + totalGroupSpace + padding[2];
+  var newWidth = padding[3] + valueSpace + padding[1];
+
+  var background = (0, _preact.h)('rect', {
+    x: '0',
+    y: '0',
+    width: newWidth,
+    height: height,
+    fill: 'white'
+  });
+
+  var content = (0, _preact.h)(
+    'svg',
+    {
+      version: '1.1',
+      className: 'BarChart-svg ' + (hover ? ' is-hoverable' : ''),
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 ' + newWidth + ' ' + height,
+      width: newWidth * scale,
+      height: height * scale,
+      style: { maxWidth: newWidth }
+    },
+    downloadable ? background : null,
+    width > 300 ? (0, _preact.h)(_Breakpoints2.default, { styling: styling, totalGroupSpace: totalGroupSpace }) : null,
+    (0, _preact.h)(_Grid2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
+    guides ? (0, _preact.h)(_Guides2.default, { styling: styling, totalGroupSpace: totalGroupSpace }) : null,
+    (0, _preact.h)(_LineGroups2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
+    (0, _preact.h)(_Tooltips2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling })
+  );
+
+  if (!downloadable) {
+    return (0, _preact.h)(
+      'div',
+      {
+        className: 'BarChart',
+        ref: function ref(node) {
+          return parentAction(node);
+        }
+      },
+      content
+    );
+  }
+
+  return content;
+}
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = PseudoSelect;
+
+var _preact = __webpack_require__(0);
+
+function PseudoSelect(props) {
+  var open = props.open,
+      items = props.items,
+      loading = props.loading,
+      changeAction = props.changeAction,
+      name = props.name,
+      selected = props.selected;
+
+
+  var keys = Object.keys(items);
+  var radioChange = function radioChange(event) {
+    return changeAction(event.target.value);
+  };
+
+  var renderList = keys.map(function (key, index) {
+    var id = 'pseudo-select-' + name + '-' + index;
+
+    return (0, _preact.h)(
+      'li',
+      { className: 'PseudoSelect-item' + (selected === items[key] ? ' is-active' : '') },
+      (0, _preact.h)(
+        'label',
+        { className: 'PseudoSelect-label', htmlFor: id },
+        (0, _preact.h)('input', _extends({ id: id, name: name }, {
+          value: items[key],
+          type: 'radio',
+          checked: selected === items[key],
+          onClick: radioChange,
+          className: 'PseudoSelect-radio'
+        })),
+        (0, _preact.h)(
+          'span',
+          { className: 'PseudoSelect-text' },
+          key
+        )
+      )
+    );
+  });
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'PseudoSelect' },
+    (0, _preact.h)(
+      'ul',
+      { className: 'PseudoSelect-list' + (open ? ' is-open' : '') },
+      renderList
+    )
+  );
+}
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -1299,222 +1516,6 @@ process.umask = function () {
 };
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = PseudoSelect;
-
-var _preact = __webpack_require__(0);
-
-function PseudoSelect(props) {
-  var open = props.open,
-      items = props.items,
-      loading = props.loading,
-      changeAction = props.changeAction,
-      name = props.name,
-      selected = props.selected;
-
-
-  var keys = Object.keys(items);
-  var radioChange = function radioChange(event) {
-    return changeAction(event.target.value);
-  };
-
-  var renderList = keys.map(function (key, index) {
-    var id = 'pseudo-select-' + name + '-' + index;
-
-    return (0, _preact.h)(
-      'li',
-      { className: 'PseudoSelect-item' + (selected === items[key] ? ' is-active' : '') },
-      (0, _preact.h)(
-        'label',
-        { className: 'PseudoSelect-label', htmlFor: id },
-        (0, _preact.h)('input', _extends({ id: id, name: name }, {
-          value: items[key],
-          type: 'radio',
-          checked: selected === items[key],
-          onClick: radioChange,
-          className: 'PseudoSelect-radio'
-        })),
-        (0, _preact.h)(
-          'span',
-          { className: 'PseudoSelect-text' },
-          key
-        )
-      )
-    );
-  });
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'PseudoSelect' },
-    (0, _preact.h)(
-      'ul',
-      { className: 'PseudoSelect-list' + (open ? ' is-open' : '') },
-      renderList
-    )
-  );
-}
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = BarChart;
-
-var _preact = __webpack_require__(0);
-
-var _calcMaxValue = __webpack_require__(79);
-
-var _calcMaxValue2 = _interopRequireDefault(_calcMaxValue);
-
-var _buildGroupSpaceArray = __webpack_require__(80);
-
-var _buildGroupSpaceArray2 = _interopRequireDefault(_buildGroupSpaceArray);
-
-var _Breakpoints = __webpack_require__(81);
-
-var _Breakpoints2 = _interopRequireDefault(_Breakpoints);
-
-var _Grid = __webpack_require__(83);
-
-var _Grid2 = _interopRequireDefault(_Grid);
-
-var _Guides = __webpack_require__(84);
-
-var _Guides2 = _interopRequireDefault(_Guides);
-
-var _LineGroups = __webpack_require__(86);
-
-var _LineGroups2 = _interopRequireDefault(_LineGroups);
-
-var _Tooltips = __webpack_require__(88);
-
-var _Tooltips2 = _interopRequireDefault(_Tooltips);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function BarChart(_ref) {
-  var items = _ref.items,
-      width = _ref.width,
-      hover = _ref.hover,
-      guides = _ref.guides,
-      _ref$scale = _ref.scale,
-      scale = _ref$scale === undefined ? 1 : _ref$scale,
-      downloadable = _ref.downloadable,
-      parentAction = _ref.parentAction;
-
-  var styling = {
-    fontSize: 14,
-    popupFontSize: 14,
-    maxValue: (0, _calcMaxValue2.default)(items),
-    popupWidth: 90,
-    popUpOffset: 6,
-    buffer: 20,
-    padding: [0, 110, 60, 2],
-    valueSpace: width - 112,
-    lineGutter: 23,
-    popupHeight: 30,
-    popupCentre: 5,
-    barWidth: 16,
-    groupMargin: 60,
-    charWrap: width / 10,
-    charLineHeight: 16,
-    titleSpace: 0,
-    labelBreakpoints: Math.floor(width / 150),
-    showGuides: true
-  };
-
-  if (hover) {
-    styling = _extends({}, styling, {
-      charLineHeight: 14,
-      lineGutter: 8,
-      barWidth: 12,
-      groupMargin: 40
-    });
-  }
-
-  if (downloadable) {
-    styling = _extends({}, styling, {
-      padding: [30, 140, 90, 30],
-      valueSpace: width - (140 + 30)
-    });
-  }
-
-  var _styling = styling,
-      valueSpace = _styling.valueSpace,
-      padding = _styling.padding,
-      showGuides = _styling.showGuides;
-
-  var groupSpaceArray = (0, _buildGroupSpaceArray2.default)(items, styling);
-  var totalGroupSpace = groupSpaceArray.reduce(function (result, val) {
-    return result + val;
-  }, 0);
-  var height = padding[0] + totalGroupSpace + padding[2];
-  var newWidth = padding[3] + valueSpace + padding[1];
-
-  var background = (0, _preact.h)('rect', {
-    x: '0',
-    y: '0',
-    width: newWidth,
-    height: height,
-    fill: 'white'
-  });
-
-  var content = (0, _preact.h)(
-    'svg',
-    {
-      version: '1.1',
-      className: 'BarChart-svg ' + (hover ? ' is-hoverable' : ''),
-      xmlns: 'http://www.w3.org/2000/svg',
-      viewBox: '0 0 ' + newWidth + ' ' + height,
-      width: newWidth * scale,
-      height: height * scale,
-      style: { maxWidth: newWidth }
-    },
-    downloadable ? background : null,
-    width > 300 ? (0, _preact.h)(_Breakpoints2.default, { styling: styling, totalGroupSpace: totalGroupSpace }) : null,
-    (0, _preact.h)(_Grid2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    guides ? (0, _preact.h)(_Guides2.default, { styling: styling, totalGroupSpace: totalGroupSpace }) : null,
-    (0, _preact.h)(_LineGroups2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
-    (0, _preact.h)(_Tooltips2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling })
-  );
-
-  if (!downloadable) {
-    return (0, _preact.h)(
-      'div',
-      {
-        className: 'BarChart',
-        ref: function ref(node) {
-          return parentAction(node);
-        }
-      },
-      content
-    );
-  }
-
-  return content;
-}
-
-/***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1546,10 +1547,31 @@ if (process.env.NODE_ENV !== 'production') {
   // http://fb.me/prop-types-in-prod
   module.exports = __webpack_require__(116)();
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = analyticsEvent;
+function analyticsEvent() {
+  try {
+    var _window;
+
+    return (_window = window).ga.apply(_window, arguments);
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1616,7 +1638,7 @@ defineProperties.supportsDescriptors = !!supportsDescriptors;
 module.exports = defineProperties;
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1640,7 +1662,7 @@ function trimValues(value, abbreviated) {
 }
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1656,27 +1678,6 @@ function createSizeModifier(string) {
       return ' is-small';
     default:
       return '';
-  }
-}
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = analyticsEvent;
-function analyticsEvent() {
-  try {
-    var _window;
-
-    return (_window = window).ga.apply(_window, arguments);
-  } catch (err) {
-    console.log(err);
   }
 }
 
@@ -1700,21 +1701,321 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var DebounceFunction = function () {
+  function DebounceFunction(time) {
+    _classCallCheck(this, DebounceFunction);
+
+    this.time = time;
+    this.timeout = null;
+  }
+
+  _createClass(DebounceFunction, [{
+    key: "update",
+    value: function update(func) {
+      var _this = this;
+
+      if (this.timeout) {
+        clearTimeout(this.timeout);
+      }
+
+      this.timeout = window.setTimeout(function () {
+        clearTimeout(_this.timeout);
+        func();
+      }, this.time);
+    }
+  }]);
+
+  return DebounceFunction;
+}();
+
+exports.default = DebounceFunction;
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Modal;
+
+var _preact = __webpack_require__(0);
+
+var _preactCssTransitionGroup = __webpack_require__(113);
+
+var _preactCssTransitionGroup2 = _interopRequireDefault(_preactCssTransitionGroup);
+
+var _propTypes = __webpack_require__(5);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _index = __webpack_require__(13);
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Modal(_ref) {
+  var children = _ref.children,
+      title = _ref.title,
+      open = _ref.open,
+      closeAction = _ref.closeAction;
+
+  var modal = (0, _preact.h)(
+    'div',
+    { className: 'Modal-inner' },
+    (0, _preact.h)('div', { className: 'Modal-overlay', onClick: closeAction, 'aria-hidden': true }),
+    (0, _preact.h)(
+      'div',
+      { className: 'Modal-boxWrap' },
+      (0, _preact.h)(
+        'div',
+        { className: 'Modal-box' },
+        (0, _preact.h)(
+          'div',
+          { className: 'Modal-heading' },
+          title
+        ),
+        (0, _preact.h)(
+          'div',
+          { className: 'Modal-content' },
+          children
+        )
+      ),
+      (0, _preact.h)(
+        'button',
+        { className: 'Modal-close', onClick: closeAction },
+        (0, _preact.h)(_index2.default, { type: 'close' })
+      )
+    )
+  );
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Modal' },
+    (0, _preact.h)(
+      _preactCssTransitionGroup2.default,
+      {
+        transitionName: 'is',
+        transitionEnterTimeout: 300,
+        transitionLeaveTimeout: 300
+      },
+      open ? modal : null
+    )
+  );
+}
+
+Modal.propTypes = {
+  children: _propTypes2.default.node.isRequired,
+  title: _propTypes2.default.string.isRequired,
+  closeAction: _propTypes2.default.func.isRequired,
+  open: _propTypes2.default.bool.isRequired
+};
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Icon;
+
+var _preact = __webpack_require__(0);
+
+var _Close = __webpack_require__(117);
+
+var _Close2 = _interopRequireDefault(_Close);
+
+var _Download = __webpack_require__(118);
+
+var _Download2 = _interopRequireDefault(_Download);
+
+var _Facebook = __webpack_require__(119);
+
+var _Facebook2 = _interopRequireDefault(_Facebook);
+
+var _Search = __webpack_require__(120);
+
+var _Search2 = _interopRequireDefault(_Search);
+
+var _Twitter = __webpack_require__(121);
+
+var _Twitter2 = _interopRequireDefault(_Twitter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Icon(_ref) {
+  var size = _ref.size,
+      type = _ref.type;
+
+  switch (type) {
+    case 'close':
+      return (0, _preact.h)(_Close2.default, { size: size });
+    case 'download':
+      return (0, _preact.h)(_Download2.default, { size: size });
+    case 'facebook':
+      return (0, _preact.h)(_Facebook2.default, { size: size });
+    case 'search':
+      return (0, _preact.h)(_Search2.default, { size: size });
+    case 'twitter':
+      return (0, _preact.h)(_Twitter2.default, { size: size });
+    default:
+      return null;
+  }
+}
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var bind = __webpack_require__(29);
+
+module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var fnToStr = Function.prototype.toString;
+
+var constructorRegex = /^\s*class /;
+var isES6ClassFn = function isES6ClassFn(value) {
+	try {
+		var fnStr = fnToStr.call(value);
+		var singleStripped = fnStr.replace(/\/\/.*\n/g, '');
+		var multiStripped = singleStripped.replace(/\/\*[.\s\S]*\*\//g, '');
+		var spaceStripped = multiStripped.replace(/\n/mg, ' ').replace(/ {2}/g, ' ');
+		return constructorRegex.test(spaceStripped);
+	} catch (e) {
+		return false; // not a function
+	}
+};
+
+var tryFunctionObject = function tryFunctionObject(value) {
+	try {
+		if (isES6ClassFn(value)) {
+			return false;
+		}
+		fnToStr.call(value);
+		return true;
+	} catch (e) {
+		return false;
+	}
+};
+var toStr = Object.prototype.toString;
+var fnClass = '[object Function]';
+var genClass = '[object GeneratorFunction]';
+var hasToStringTag = typeof Symbol === 'function' && _typeof(Symbol.toStringTag) === 'symbol';
+
+module.exports = function isCallable(value) {
+	if (!value) {
+		return false;
+	}
+	if (typeof value !== 'function' && (typeof value === 'undefined' ? 'undefined' : _typeof(value)) !== 'object') {
+		return false;
+	}
+	if (hasToStringTag) {
+		return tryFunctionObject(value);
+	}
+	if (isES6ClassFn(value)) {
+		return false;
+	}
+	var strClass = toStr.call(value);
+	return strClass === fnClass || strClass === genClass;
+};
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = breakIntoWrap;
+function breakIntoWrap(string, wrap) {
+  var splitter = string.split(' ');
+
+  var count = 0;
+  var word = '';
+  var results = [];
+
+  for (var i = 0; i < splitter.length; i++) {
+    if (splitter[count].length >= wrap) {
+      // for (let ii = 0; ii < splitter[count].length; ii += wrap) {
+      //   results.push(splitter[count].substr(ii, wrap));
+      // }
+
+      results.push(splitter[count]);
+
+      word = '';
+      count++;
+    } else {
+      word = word + ' ' + splitter[count];
+      count++;
+
+      if (word.length >= wrap) {
+        results.push(word);
+        word = '';
+      }
+
+      if (i === splitter.length - 1) {
+        results.push(word);
+        word = '';
+      }
+    }
+  }
+
+  return results;
+}
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _preact = __webpack_require__(0);
 
-var _DebounceFunction = __webpack_require__(38);
+var _DebounceFunction = __webpack_require__(11);
 
 var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
 
-var _index = __webpack_require__(4);
+var _index = __webpack_require__(2);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(39);
+var _index3 = __webpack_require__(18);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -1800,75 +2101,7 @@ var ResponsiveChart = function (_Component) {
 exports.default = ResponsiveChart;
 
 /***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var bind = __webpack_require__(28);
-
-module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var fnToStr = Function.prototype.toString;
-
-var constructorRegex = /^\s*class /;
-var isES6ClassFn = function isES6ClassFn(value) {
-	try {
-		var fnStr = fnToStr.call(value);
-		var singleStripped = fnStr.replace(/\/\/.*\n/g, '');
-		var multiStripped = singleStripped.replace(/\/\*[.\s\S]*\*\//g, '');
-		var spaceStripped = multiStripped.replace(/\n/mg, ' ').replace(/ {2}/g, ' ');
-		return constructorRegex.test(spaceStripped);
-	} catch (e) {
-		return false; // not a function
-	}
-};
-
-var tryFunctionObject = function tryFunctionObject(value) {
-	try {
-		if (isES6ClassFn(value)) {
-			return false;
-		}
-		fnToStr.call(value);
-		return true;
-	} catch (e) {
-		return false;
-	}
-};
-var toStr = Object.prototype.toString;
-var fnClass = '[object Function]';
-var genClass = '[object GeneratorFunction]';
-var hasToStringTag = typeof Symbol === 'function' && _typeof(Symbol.toStringTag) === 'symbol';
-
-module.exports = function isCallable(value) {
-	if (!value) {
-		return false;
-	}
-	if (typeof value !== 'function' && (typeof value === 'undefined' ? 'undefined' : _typeof(value)) !== 'object') {
-		return false;
-	}
-	if (hasToStringTag) {
-		return tryFunctionObject(value);
-	}
-	if (isES6ClassFn(value)) {
-		return false;
-	}
-	var strClass = toStr.call(value);
-	return strClass === fnClass || strClass === genClass;
-};
-
-/***/ }),
-/* 14 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1877,130 +2110,146 @@ module.exports = function isCallable(value) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = breakIntoWrap;
-function breakIntoWrap(string, wrap) {
-  var splitter = string.split(' ');
 
-  var count = 0;
-  var word = '';
-  var results = [];
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-  for (var i = 0; i < splitter.length; i++) {
-    if (splitter[count].length >= wrap) {
-      // for (let ii = 0; ii < splitter[count].length; ii += wrap) {
-      //   results.push(splitter[count].substr(ii, wrap));
-      // }
-
-      results.push(splitter[count]);
-
-      word = '';
-      count++;
-    } else {
-      word = word + ' ' + splitter[count];
-      count++;
-
-      if (word.length >= wrap) {
-        results.push(word);
-        word = '';
-      }
-
-      if (i === splitter.length - 1) {
-        results.push(word);
-        word = '';
-      }
-    }
-  }
-
-  return results;
-}
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Modal;
+exports.default = ColumnChart;
 
 var _preact = __webpack_require__(0);
 
-var _preactCssTransitionGroup = __webpack_require__(113);
+var _calcMaxValue = __webpack_require__(92);
 
-var _preactCssTransitionGroup2 = _interopRequireDefault(_preactCssTransitionGroup);
+var _calcMaxValue2 = _interopRequireDefault(_calcMaxValue);
 
-var _propTypes = __webpack_require__(5);
+var _buildGroupSpaceArray = __webpack_require__(93);
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _buildGroupSpaceArray2 = _interopRequireDefault(_buildGroupSpaceArray);
 
-var _index = __webpack_require__(19);
+var _Breakpoints = __webpack_require__(95);
 
-var _index2 = _interopRequireDefault(_index);
+var _Breakpoints2 = _interopRequireDefault(_Breakpoints);
+
+var _Grid = __webpack_require__(97);
+
+var _Grid2 = _interopRequireDefault(_Grid);
+
+var _Guides = __webpack_require__(98);
+
+var _Guides2 = _interopRequireDefault(_Guides);
+
+var _LineGroups = __webpack_require__(100);
+
+var _LineGroups2 = _interopRequireDefault(_LineGroups);
+
+var _Tooltips = __webpack_require__(103);
+
+var _Tooltips2 = _interopRequireDefault(_Tooltips);
+
+var _Labels = __webpack_require__(106);
+
+var _Labels2 = _interopRequireDefault(_Labels);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Modal(_ref) {
-  var children = _ref.children,
-      title = _ref.title,
-      open = _ref.open,
-      closeAction = _ref.closeAction;
+function ColumnChart(_ref) {
+  var items = _ref.items,
+      width = _ref.width,
+      guides = _ref.guides,
+      _ref$scale = _ref.scale,
+      scale = _ref$scale === undefined ? 1 : _ref$scale,
+      downloadable = _ref.downloadable,
+      parentAction = _ref.parentAction;
 
-  var modal = (0, _preact.h)(
-    'div',
-    { className: 'Modal-inner' },
-    (0, _preact.h)('div', { className: 'Modal-overlay', onClick: closeAction, 'aria-hidden': true }),
-    (0, _preact.h)(
+  var styling = {
+    fontSize: 14,
+    popupFontSize: 14,
+    maxValue: (0, _calcMaxValue2.default)(items),
+    popupWidth: 90,
+    popUpOffset: 6,
+    buffer: 20,
+    valueSpace: width - (0 + 100),
+    padding: [50, 0, 30, 100],
+    popupHeight: 30,
+    popupCentre: 5,
+    charWrap: width / 10,
+    titleSpace: 0,
+    labelBreakpoints: 4,
+    showGuides: true,
+    charLineHeight: 14,
+    lineGutter: 8,
+    barWidth: 12,
+    groupMargin: 40,
+    svgHeight: 300
+  };
+
+  if (downloadable) {
+    styling = _extends({}, styling, {
+      padding: [80, 30, 60, 130],
+      valueSpace: width - (30 + 130)
+    });
+  }
+
+  var _styling = styling,
+      valueSpace = _styling.valueSpace,
+      padding = _styling.padding,
+      showGuides = _styling.showGuides,
+      svgHeight = _styling.svgHeight,
+      buffer = _styling.buffer;
+
+  var groupSpaceArray = (0, _buildGroupSpaceArray2.default)(items, styling);
+  var totalGroupSpace = groupSpaceArray.reduce(function (result, val) {
+    return result + val;
+  }, 0);
+  var height = padding[0] + svgHeight + padding[2] + buffer * 2;
+  var newWidth = padding[3] + valueSpace + padding[1];
+
+  var background = (0, _preact.h)('rect', {
+    x: '0',
+    y: '0',
+    width: newWidth,
+    height: height,
+    fill: 'white'
+  });
+
+  var values = (0, _preact.h)(
+    'svg',
+    {
+      version: '1.1',
+      className: 'ColumnChart-svg is-hoverable',
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 ' + newWidth + ' ' + height,
+      width: newWidth * scale,
+      height: height * scale,
+      style: { maxWidth: newWidth }
+    },
+    downloadable ? background : null,
+    (0, _preact.h)(_Breakpoints2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
+    (0, _preact.h)(_Grid2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
+    (0, _preact.h)(_Guides2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
+    (0, _preact.h)(_LineGroups2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
+    (0, _preact.h)(_Tooltips2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
+    (0, _preact.h)(_Labels2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
+    ' */}'
+  );
+
+  if (!downloadable) {
+    return (0, _preact.h)(
       'div',
-      { className: 'Modal-boxWrap' },
-      (0, _preact.h)(
-        'div',
-        { className: 'Modal-box' },
-        (0, _preact.h)(
-          'div',
-          { className: 'Modal-heading' },
-          title
-        ),
-        (0, _preact.h)(
-          'div',
-          { className: 'Modal-content' },
-          children
-        )
-      ),
-      (0, _preact.h)(
-        'button',
-        { className: 'Modal-close', onClick: closeAction },
-        (0, _preact.h)(_index2.default, { type: 'close' })
-      )
-    )
-  );
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'Modal' },
-    (0, _preact.h)(
-      _preactCssTransitionGroup2.default,
       {
-        transitionName: 'is',
-        transitionEnterTimeout: 300,
-        transitionLeaveTimeout: 300
+        className: 'ColumnChart',
+        ref: function ref(node) {
+          return parentAction(node);
+        }
       },
-      open ? modal : null
-    )
-  );
+      values
+    );
+  }
+
+  return values;
 }
 
-Modal.propTypes = {
-  children: _propTypes2.default.node.isRequired,
-  title: _propTypes2.default.string.isRequired,
-  closeAction: _propTypes2.default.func.isRequired,
-  open: _propTypes2.default.bool.isRequired
-};
-
 /***/ }),
-/* 16 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2042,7 +2291,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 module.exports = emptyFunction;
 
 /***/ }),
-/* 17 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2099,10 +2348,10 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
-/* 18 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2120,63 +2369,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Icon;
-
-var _preact = __webpack_require__(0);
-
-var _Close = __webpack_require__(117);
-
-var _Close2 = _interopRequireDefault(_Close);
-
-var _Download = __webpack_require__(118);
-
-var _Download2 = _interopRequireDefault(_Download);
-
-var _Facebook = __webpack_require__(119);
-
-var _Facebook2 = _interopRequireDefault(_Facebook);
-
-var _Search = __webpack_require__(120);
-
-var _Search2 = _interopRequireDefault(_Search);
-
-var _Twitter = __webpack_require__(121);
-
-var _Twitter2 = _interopRequireDefault(_Twitter);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Icon(_ref) {
-  var size = _ref.size,
-      type = _ref.type;
-
-  switch (type) {
-    case 'close':
-      return (0, _preact.h)(_Close2.default, { size: size });
-    case 'download':
-      return (0, _preact.h)(_Download2.default, { size: size });
-    case 'facebook':
-      return (0, _preact.h)(_Facebook2.default, { size: size });
-    case 'search':
-      return (0, _preact.h)(_Search2.default, { size: size });
-    case 'twitter':
-      return (0, _preact.h)(_Twitter2.default, { size: size });
-    default:
-      return null;
-  }
-}
-
-/***/ }),
-/* 20 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3219,7 +3412,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(136)(module)))
 
 /***/ }),
-/* 21 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3232,7 +3425,7 @@ exports.default = RevenueMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(7);
+var _trimValues = __webpack_require__(8);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -3275,7 +3468,7 @@ function RevenueMarkup(_ref) {
 }
 
 /***/ }),
-/* 22 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3580,15 +3773,15 @@ var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbo
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var RGBColor = __webpack_require__(171);
-var stackblur = __webpack_require__(172);
-var xmldom = __webpack_require__(173);
+var RGBColor = __webpack_require__(170);
+var stackblur = __webpack_require__(171);
+var xmldom = __webpack_require__(172);
 
 /*
  * canvg.js - Javascript SVG parser and renderer on Canvas
@@ -6672,96 +6865,7 @@ function build(opts) {
 module.exports = canvg;
 
 /***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = Markup;
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(3);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _index3 = __webpack_require__(19);
-
-var _index4 = _interopRequireDefault(_index3);
-
-var _index5 = __webpack_require__(15);
-
-var _index6 = _interopRequireDefault(_index5);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Markup(props) {
-  var options = props.options,
-      chart = props.chart,
-      name = props.name,
-      selectOpen = props.selectOpen,
-      selected = props.selected,
-      modal = props.modal,
-      clickAction = props.clickAction,
-      canvasAction = props.canvasAction,
-      closeModal = props.closeModal,
-      open = props.open,
-      _changeAction = props.changeAction,
-      items = props.items;
-
-
-  return (0, _preact.h)(
-    'div',
-    null,
-    (0, _preact.h)(
-      _index6.default,
-      { title: 'Share this link:', closeAction: closeModal, open: modal },
-      (0, _preact.h)(
-        'a',
-        { className: 'u-wordBreak u-wordBreak--breakAll', href: window.location.href },
-        window.location.href
-      )
-    ),
-    (0, _preact.h)('canvas', { ref: function ref(node) {
-        return canvasAction(node);
-      }, style: { display: 'none' } }),
-    (0, _preact.h)(
-      'span',
-      { className: 'ChartDownload-title' },
-      'Save or share'
-    ),
-    (0, _preact.h)(
-      'div',
-      { className: 'ChartDownload-select' },
-      (0, _preact.h)(_index2.default, _extends({
-        name: name + '-download-image',
-        open: open,
-        changeAction: function changeAction(value) {
-          return _changeAction(value);
-        }
-      }, { items: items, selected: selected }))
-    ),
-    (0, _preact.h)(
-      'div',
-      { className: 'ChartDownload-button' },
-      (0, _preact.h)(
-        'button',
-        { onClick: clickAction, className: 'Button has-icon' },
-        (0, _preact.h)(_index4.default, { type: 'download', size: 'small' })
-      )
-    )
-  );
-}
-
-/***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6770,7 +6874,7 @@ function Markup(props) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var strictUriEncode = __webpack_require__(54);
-var objectAssign = __webpack_require__(26);
+var objectAssign = __webpack_require__(27);
 var decodeComponent = __webpack_require__(55);
 
 function encoderForArrayFormat(opts) {
@@ -6972,7 +7076,7 @@ exports.parseUrl = function (str, opts) {
 };
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7068,14 +7172,14 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 };
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var ES = __webpack_require__(10);
-var supportsDescriptors = __webpack_require__(6).supportsDescriptors;
+var supportsDescriptors = __webpack_require__(7).supportsDescriptors;
 
 /*! https://mths.be/array-from v0.2.0 by @mathias */
 module.exports = function from(arrayLike) {
@@ -7123,7 +7227,7 @@ module.exports = function from(arrayLike) {
 };
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7134,7 +7238,7 @@ var implementation = __webpack_require__(63);
 module.exports = Function.prototype.bind || implementation;
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7147,7 +7251,7 @@ module.exports = function isPrimitive(value) {
 };
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7158,7 +7262,7 @@ module.exports = Number.isNaN || function isNaN(a) {
 };
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7173,7 +7277,7 @@ module.exports = Number.isFinite || function (x) {
 };
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7184,7 +7288,7 @@ module.exports = function sign(number) {
 };
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7196,14 +7300,14 @@ module.exports = function mod(number, modulo) {
 };
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var ES = __webpack_require__(10);
-var implementation = __webpack_require__(27);
+var implementation = __webpack_require__(28);
 
 var tryCall = function tryCall(fn) {
 	try {
@@ -7225,7 +7329,7 @@ module.exports = function getPolyfill() {
 };
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7255,7 +7359,7 @@ try {
 module.exports = g;
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7281,7 +7385,7 @@ module.exports = function findIndex(predicate) {
 };
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7294,187 +7398,11 @@ module.exports = function getPolyfill() {
 		return idx === 0;
 	}) === 0;
 
-	return implemented ? Array.prototype.findIndex : __webpack_require__(36);
+	return implemented ? Array.prototype.findIndex : __webpack_require__(37);
 };
 
 /***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var DebounceFunction = function () {
-  function DebounceFunction(time) {
-    _classCallCheck(this, DebounceFunction);
-
-    this.time = time;
-    this.timeout = null;
-  }
-
-  _createClass(DebounceFunction, [{
-    key: "update",
-    value: function update(func) {
-      var _this = this;
-
-      if (this.timeout) {
-        clearTimeout(this.timeout);
-      }
-
-      this.timeout = window.setTimeout(function () {
-        clearTimeout(_this.timeout);
-        func();
-      }, this.time);
-    }
-  }]);
-
-  return DebounceFunction;
-}();
-
-exports.default = DebounceFunction;
-
-/***/ }),
 /* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = ColumnChart;
-
-var _preact = __webpack_require__(0);
-
-var _calcMaxValue = __webpack_require__(92);
-
-var _calcMaxValue2 = _interopRequireDefault(_calcMaxValue);
-
-var _buildGroupSpaceArray = __webpack_require__(93);
-
-var _buildGroupSpaceArray2 = _interopRequireDefault(_buildGroupSpaceArray);
-
-var _Breakpoints = __webpack_require__(95);
-
-var _Breakpoints2 = _interopRequireDefault(_Breakpoints);
-
-var _Grid = __webpack_require__(97);
-
-var _Grid2 = _interopRequireDefault(_Grid);
-
-var _Guides = __webpack_require__(98);
-
-var _Guides2 = _interopRequireDefault(_Guides);
-
-var _LineGroups = __webpack_require__(100);
-
-var _LineGroups2 = _interopRequireDefault(_LineGroups);
-
-var _Tooltips = __webpack_require__(103);
-
-var _Tooltips2 = _interopRequireDefault(_Tooltips);
-
-var _Labels = __webpack_require__(106);
-
-var _Labels2 = _interopRequireDefault(_Labels);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function ColumnChart(_ref) {
-  var items = _ref.items,
-      width = _ref.width,
-      guides = _ref.guides,
-      _ref$scale = _ref.scale,
-      scale = _ref$scale === undefined ? 1 : _ref$scale,
-      downloadable = _ref.downloadable;
-
-  var styling = {
-    fontSize: 14,
-    popupFontSize: 14,
-    maxValue: (0, _calcMaxValue2.default)(items),
-    popupWidth: 90,
-    popUpOffset: 6,
-    buffer: 20,
-    valueSpace: width - (0 + 80),
-    padding: [50, 0, 30, 100],
-    popupHeight: 30,
-    popupCentre: 5,
-    charWrap: width / 10,
-    titleSpace: 0,
-    labelBreakpoints: 4,
-    showGuides: true,
-    charLineHeight: 14,
-    lineGutter: 8,
-    barWidth: 12,
-    groupMargin: 40,
-    svgHeight: 300
-  };
-
-  if (downloadable) {
-    styling = _extends({}, styling, {
-      padding: [80, 30, 60, 130],
-      valueSpace: width - (30 + 130)
-    });
-  }
-
-  var _styling = styling,
-      valueSpace = _styling.valueSpace,
-      padding = _styling.padding,
-      showGuides = _styling.showGuides,
-      svgHeight = _styling.svgHeight,
-      buffer = _styling.buffer;
-
-  var groupSpaceArray = (0, _buildGroupSpaceArray2.default)(items, styling);
-  var totalGroupSpace = groupSpaceArray.reduce(function (result, val) {
-    return result + val;
-  }, 0);
-  var height = padding[0] + svgHeight + padding[2] + buffer * 2;
-  var newWidth = padding[3] + valueSpace + padding[1];
-
-  var background = (0, _preact.h)('rect', {
-    x: '0',
-    y: '0',
-    width: newWidth,
-    height: height,
-    fill: 'white'
-  });
-
-  return (0, _preact.h)(
-    'svg',
-    {
-      version: '1.1',
-      className: 'Graph-svg is-hoverable',
-      xmlns: 'http://www.w3.org/2000/svg',
-      viewBox: '0 0 ' + newWidth + ' ' + height,
-      width: newWidth * scale,
-      height: height * scale,
-      style: { maxWidth: newWidth }
-    },
-    downloadable ? background : null,
-    (0, _preact.h)(_Breakpoints2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_Grid2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_Guides2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_LineGroups2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
-    (0, _preact.h)(_Tooltips2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
-    (0, _preact.h)(_Labels2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
-    ' */}'
-  );
-}
-
-/***/ }),
-/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7488,7 +7416,7 @@ function ColumnChart(_ref) {
 
 
 
-var emptyFunction = __webpack_require__(16);
+var emptyFunction = __webpack_require__(19);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -7540,16 +7468,16 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = warning;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = {"Accounting officer":"The public servant in a department who is accountable to Parliament for financial management, usually the director-general or head of the department.","Accrual":"An accounting convention by which payments and receipts are recorded as they occur, even if no cash flow takes place.","Acquisition debt":"Debt used to purchase shares or assets.","Ad valorem duties":"Duties levied on commodities as a certain percentage of their value.","Adjustments estimate":"Presentation to Parliament of the amendments to be made to the appropriations voted in the main budget for the year.","Administered prices":"Prices set outside ordinary market processes through administrative decisions by government, a public entity or a regulator.","Agro-processing":"Manufacturing activities that transform raw materials and intermediary goods derived from agriculture into intermediate or final goods.","Allocated expenditure":"The part of the national budget that can be divided between the national, provincial and local spheres of government, after interest and the contingency reserve have been taken into account.","Amortisation":"The repayment of a loan by instalments over the duration of the loan.","Annuity":"A fixed amount of money paid over a period of time as a return on an investment.","Anti-avoidance rule":"A provision aimed at preventing tax avoidance. See principal purpose test.","Anti-fragmentation rule":"A rule that aims to prevent taxpayers from artificially avoiding permanent establishment status by breaking up a cohesive business into several small operations.","Appropriation":"The approval by Parliament of spending from the National Revenue Fund, or by a provincial legislature from a provincial revenue fund.","Artificial debt":"A \"loan\" that is presented as debt but is in effect equity. Often used in tax avoidance or evasion.","Asset price bubble":"A condition occurring when prices for a category of assets rise above the level justified by economic fundamentals.","Balance of payments":"A summary statement of all the international transactions of the residents of a country with the rest of the world over a particular period of time.","Base erosion and profit shifting":"Corporate tax-planning strategies that exploit the gaps and mismatches in tax laws between countries to artificially shift taxable income to lower or no-tax jurisdictions. See also tax evasion and profit shifting.","Basel III":"Reforms developed by the Basel Committee on Banking Supervision to strengthen the regulation, supervision and risk management of the banking sector.","Baseline":"The initial allocations used during the budget process, derived from the previous year's forward estimates.","Basis point":"One hundredth of one per cent.","Beneficiation":"Manufacturing activities that transform raw minerals into higher-value products.","Bond":"A certificate of debt issued by a government or corporation guaranteeing payment of the original investment plus interest by a specified future date.","Bond premium":"Amount by which the purchase price of a bond is greater than its par value.","Bond spread":"The difference in yield between two bonds.","Bond-switch programme":"An auction that aims to ease pressure on targeted areas of the redemption profile by exchanging shorter-dated debt for longer-term debt. See switch auction.","Bracket creep":"Increased real tax liability that arises when the personal income tax tables are not fully adjusted for inflation.","Budget balance":"The difference between budgeted expenditure and budgeted revenue. If expenditure exceeds revenue, the budget is in deficit. If the reverse is true, it is in surplus.","Capital adequacy":"A measure of a financial institution’s capital, expressed as a percentage of its credit exposure.","Capital asset":"Property of any kind, including assets that are movable or immovable, tangible or intangible, fixed or circulating, but excluding trading stock held for the purpose of realising a financial or economic return.","Capital expenditure":"Spending on assets such as buildings, land, infrastructure and equipment.","Capital flow":"A flow of investments in or out of the country.","Capital formation":"A measure of the net increase in the country’s total stock of capital goods, after allowing for depreciation.","Capital gains tax":"Tax levied on the income realised from the disposal of a capital asset by a taxpayer. A capital gain is the excess of the selling price over the purchase price of the capital asset.","Capital goods":"Durable goods used over a period of time for the production of other goods. See also intermediate goods.","Carbon tax":"An environmental tax on emissions of carbon dioxide (CO2).","Category A, B and C municipalities":"Municipal categories established by the Constitution: Category A, or metropolitan municipalities; Category B, or local municipalities; and Category C, or district municipalities.","Collateral":"An asset placed as a guarantee for the repayment of debt, to be recouped in the case of a default.","Commercial paper issuances":"Debt issued by companies through short-term promissory notes.","Conditional grants":"Allocations of money from one sphere of government to another, conditional on certain services being delivered or on compliance with specified requirements.","Connected person debt/credit":"Debt or credit granted by a person/entity to a connected person/entity. In the case of a holding company, for example, a subsidiary company would be a connected person.","Consolidated general government":"National, provincial and local government, as well as extra-budgetary government institutions and social security funds.","Consolidated government expenditure":"Total expenditure by national and provincial government, social security funds and selected public entities, including transfers and subsidies to municipalities, businesses and other entities.","Consumer price index (CPI)":"The measure of inflation based on prices in a basket of goods and services.","Consumption expenditure":"Expenditure on goods and services, including salaries, which are used up within a short period of time, usually a year.","Contingency reserve":"An amount set aside, but not allocated in advance, to accommodate changes to the economic environment and to meet unforeseeable spending pressures.","Contingent liability":"A government obligation, such as a guarantee, that will only result in expenditure upon the occurrence of a specific event. See government guarantee.","Controlled foreign entity":"A foreign business in which South Africans hold a greater than 50 per cent interest, usually of the share capital of a company.","Corporatisation":"The transformation of state-owned enterprises into commercial entities, subject to commercial legal requirements and governance structures, while the state retains ownership.","Cost-push inflation":"Inflation that is caused by an increase in production costs, such as wages or oil prices.","Countercyclical fiscal policy":"Policy that has the opposite effect on economic activity to that caused by the business cycle, such as slowing spending growth in a boom period and accelerating spending in a recession.","Coupon (bond)":"The periodic interest payment made to bondholders during the life of the bond. The interest is usually paid twice a year.","Credit rating":"An indicator of the risk of default by a borrower or the riskiness of a financial instrument. Credit ratings generally fit into three broad risk categories: minimal or low, moderate and high. These categories indicate the extent of a borrower’s capacity to meet their financial obligations or the probability that the value of a financial instrument will be realised. Investments rated as high risk are considered sub-investment grade (or “junk”).","Crowding-in":"An increase in private investment through the income-raising effect of government spending financed by deficits.","Crowding-out":"A fall in private investment or consumption as a result of increased government expenditure financed through borrowing, thereby competing for loanable funds and raising the interest rate, which curtails private investment and consumption spending.","Currency risk":"The potential for a change in the price of a currency that would affect investors with assets, liabilities or operations denominated in other currencies.","Current account (of the balance of payments)":"The difference between total imports and total exports, taking into account service payments and receipts, interest, dividends and transfers. The current account can be in deficit or surplus. See also trade balance.","Current balance":"The difference between revenue and current expenditure, which consists of compensation of employees, goods and services, and interest and rent on land.","Current expenditure":"Government expenditure on salaries and goods and services, such as rent, maintenance and interest payments. See also consumption expenditure.","Customs duties":"Tax levied on imported goods.","Debenture":"An unsecured loan backed by general credit rather than by specified assets.","Debt redemption profile":"The set of fixed repayment dates and amounts to which an issuer of debt, such as a preferred stock or bond, has committed to meeting.","Debt switching":"The exchange of bonds to manage refinancing risk or improve tradability.","Debt-service costs":"The cost of interest on government debt and other costs directly associated with borrowing.","Deflation":"A consistent decrease in the price of goods and services.","Deleveraging":"The reduction of debt previously used to increase the potential return of an investment.","Depreciation (capital)":"A reduction in the value of fixed capital as a result of wear and tear or redundancy.","Depreciation (exchange rate)":"A reduction in the external value of a currency.","Derivative financial instrument":"A financial asset that derives its value from an underlying asset, which may be a physical asset such as gold, or a financial asset such as a government bond.","Designated countries":"Foreign countries from which income may be exempt from South African tax under certain circumstances. See also double tax agreement.","Development finance institutions":"State agencies that aim to meet the credit needs of riskier but socially and economically desirable projects that are beyond the acceptance limits of commercial banks.","Direct taxes":"Taxes charged on taxable income or capital of individuals and legal entities.","Discretionary trust":"A trust where the executor has the choice of whether and how much of the trust’s income or capital is to be distributed to beneficiaries. The beneficiaries have only provisional rights to the income or capital of the trust.","Disposable income":"Total income by households less all taxes and employee contributions.","Dissaving":"An excess of current expenditure, including the depreciation of fixed capital, over current income.","Dividend":"The distribution of a portion of a company's earnings to a class of its shareholders.","Dividend withholding tax":"A tax on dividends that is subtracted and withheld by a company or intermediary before the net dividend is paid to the shareholder.","Division of revenue":"The allocation of funds between spheres of government, as required by the Constitution. See also equitable share.","Domestic demand":"The total level of spending in an economy, including imports but excluding exports.","Double tax agreement":"An agreement between two countries to prevent income that is taxed in one country from being taxed in the other as well. See also designated countries.","Economic cost":"The cost of an alternative that must be forgone to pursue a certain action. In other words, the benefits that could have been received by taking an alternative action.","Economic growth":"An increase in the total amount of output, income and spending in the economy.","Economic rent":"The difference between the return made by a factor of production (capital or labour) and the return necessary to keep the factor in its current occupation. For example, a firm making excess profits is earning economic rent.","Economically active population":"The part of the population that is of working age and is either employed or seeking work.","Effective tax rate":"Actual tax liability (or a reasonable estimate thereof) expressed as a percentage of a pre-tax income base rather than as a percentage of taxable income. In other words, tax rates that take into account not only the statutory or nominal tax rate, but also other aspects of the tax system (for example, allowable deductions), which determine the tax liability.","Embedded derivative":"A provision in a contract modifying its cash flows by making them dependent on an underlying measure – such as interest or exchange rates, or commodity prices – the value of which changes independently.","Emerging economies":"A name given by international investors to middle-income economies.","Employment coefficient":"The ratio of employment growth to economic growth.","Equitable share":"The allocation of revenue to the national, provincial and local spheres of government as required by the Constitution. See also division of revenue.","Equity finance":"Raising money by selling shares of stock to investors, who receive an ownership interest in return.","Exchange control":"Rules that regulate the flow of currency out of South Africa, or restrict the amount of foreign assets held by South African individuals and companies.","Exchange-traded funds":"Funds that track indexes, commodities or baskets of assets, and trade like stocks.","Excise duties":"Taxes on the manufacture or sale of certain domestic or imported products. Excise duties are usually charged on products such as alcoholic beverages, tobacco and petroleum.","Expenditure ceiling":"The maximum allowable level of expenditure to which government has committed itself.","Extra-budgetary institutions":"Public entities not directly funded from the fiscus.","Fair-value adjustment":"A change in the value of an asset or liability resulting from the periodic reassessment of its expected future economic in- or outflows.","Financial Services Board":"An independent institution established by statute that regulates insurers, intermediaries, retirement funds, friendly societies, unit trust schemes, management companies and financial markets.","Financial Stability Board":"An international body made up of representatives of financial authorities and institutions, and central banks. It proposes regulatory, supervisory and other policies in the interest of financial stability.","Financial account":"A statement of all financial transactions between the nation and the rest of the world, including portfolio and fixed investment flows and movements in foreign reserves.","Financial and Fiscal Commission (FFC)":"An independent body established by the Constitution to make recommendations to Parliament and provincial legislatures about financial issues affecting the three spheres of government.","Financial year":"The 12 months according to which companies and organisations budget and account. See also fiscal year.","Fiscal consolidation":"Policy aimed at reducing government deficits and debt accumulation.","Fiscal incidence":"The combined overall economic impact that fiscal policy has on the economy.","Fiscal leakage":"The outflow of revenue from an economy through tax evasion and avoidance.","Fiscal policy":"Policy on taxation, public spending and borrowing by the government.","Fiscal space":"The ability of government’s budget to provide additional resources for a desired programme without jeopardising fiscal or debt sustainability.","Fiscal year":"The 12 months on which government budgets are based, beginning 1 April and ending 31 March of the subsequent calendar year.","Fixed investment/capital formation":"Spending on buildings, machinery and equipment contributing to production capacity in the economy. See also gross fixed-capital formation.","Fixed-income bond":"A bond that pays a specific interest rate.","Floating rate notes":"A bond on which the interest rate is reset periodically in line with a money market reference rate.","Flow-through vehicles":"A vehicle, such as a trust, where income earned is treated as income of the vehicle’s beneficiaries.","Foreign currency swaps":"The exchange of principal and/or interest payments in one currency for those in another.","Foreign direct investment (FDI)":"The acquisition of a controlling interest by governments, institutions or individuals of a business in another country.","Forward book":"The total amount of contracts for the future exchange of foreign currency entered into by the Reserve Bank at any given point in time.","Forward cover":"Transactions involving an agreed exchange rate at which foreign currency will be purchased or sold at a future date.","Fringe benefit":"A benefit supplementing an employee’s wages or salary, such as medical insurance, company cars, housing allowances and pension schemes.","Fuel levy":"An excise tax on liquid fuels.","Function shift":"The movement of a function from one departmental vote or sphere of government to another.","Funded pension arrangements":"A pension scheme in which expected future benefits are funded in advance and as entitlement accrues.","Gold and foreign exchange reserves":"Reserves held by the Reserve Bank to meet foreign exchange obligations and to maintain liquidity in the presence of external shocks.","Government debt":"The total amount of money owed by the government as a consequence of its past borrowing.","Government guarantee":"An assurance made by government to a lender that a financial obligation will be honoured, even if the borrowing government institution is unable to repay the debt. See contingent liability.","Green paper":"A policy document intended for public discussion.","Gross borrowing requirement":"The sum of the main budget balance, extraordinary receipts and payments (referred to as National Revenue Fund receipts and payments), and maturing debt. The amount is funded through domestic short- and long- term loans, foreign loans and changes in cash balances.","Gross domestic product (GDP)":"A measure of the total national output, income and expenditure in the economy. GDP per head is the simplest overall measure of welfare, although it does not take account of the distribution of income, nor of goods and services that are produced outside the market economy, such as work within the household.","Gross domestic product inflation":"A measure of the total increase in prices in the whole economy. Unlike CPI inflation, GDP inflation includes price increases in goods that are exported and intermediate goods such as machines, but excludes imported goods.","Gross fixed-capital formation":"The addition to a country’s fixed-capital stock during a specific period, before provision for depreciation.","Gross value added":"The value of output less intermediate consumption. It is also a measure of the contribution to the economy made by an industry or sector.","Group of Twenty (G20)":"An international forum made up of finance ministers and central bank governors from 20 of the world’s largest economies.","Hedging":"An action taken by a buyer or seller to protect income against changes in prices, interest rates or exchange rates.","Horizontal equity":"A principle in taxation that holds that similarly situated taxpayers should face a similar tax treatment or tax burden. In other words, taxpayers with the same amount of income or capital should be accorded equal treatment.","Impaired advances":"Loans or advances that may not be collected in full.","Impairment":"A reduction in the recorded value of a long-lived asset arising from circumstances that prevent the asset from generating the future economic benefits previously expected and recorded.","Import parity pricing":"When a firm sells goods locally at the price customers would pay if they were to import the same goods from another country.","Inclusion rate":"The portion of the net capital gain derived from the disposal of an asset that will be taxed at the applicable rate.","Industrial development zone":"Designated sites linked to an international air or sea port, supported by incentives to encourage investment in export-orientated manufacturing and job creation.","Inflation":"An increase in the overall price level of goods and services in an economy over a specific period of time.","Inflation targeting":"A monetary policy framework intended to achieve price stability over a certain period of time.","Inter-state debt":"Money that different organs of state owe to each other.","Intergenerational equity":"A value based on ensuring that future generations do not have to repay debts taken on today, unless they also share in the benefits of assets.","Intermediate goods":"Goods produced to be used as inputs in the production of final goods.","Inventories":"Stocks of goods held by firms. An increase in inventories reflects an excess of output relative to spending over a period of time.","Labour intensity":"The relative amount of labour used to produce a unit of output.","Liquidity":"The ease with which assets can be bought and sold.","Liquidity requirements":"The amount of liquid or freely convertible assets that banks are required to hold relative to their liabilities for prudential and regulatory purposes.","Liquidity risk":"The risk that an asset might not easily and quickly be converted into cash through sale, or the risk to a debtor that it cannot meet its current debt obligations.","Lump-sum benefit":"A one-time payment for the total or partial value of an asset, usually received in place of recurring smaller payments.","M3":"The broadest definition of money supply in South Africa, including notes and coins, demand and fixed deposits, and credit.","Macroeconomics":"The branch of economics that deals with the whole economy – including issues such as growth, inflation, unemployment and the balance of payments.","Macroprudential regulation":"Rules that protect the stability of the financial sector and guard against systemic risk.","Marginal income tax rate":"The rate of tax on an incremental unit of income.","Marginal lending rate":"A penalty rate of interest charged by the Reserve Bank for lending to financial institutions in the money market in excess of the daily liquidity provided to the money market at the repurchase rate. See also repurchase agreements.","Marketable securities":"Tradable financial securities listed with a securities exchange.","Means test":"A method for determining whether someone qualifies for state assistance.","Medium Term Expenditure Committee (MTEC)":"The technical committee responsible for evaluating the medium-term expenditure framework budget submissions of national departments and making recommendations to the Minister of Finance regarding allocations to national departments.","Medium-term expenditure framework (MTEF)":"The three-year spending plans of national and provincial governments, published at the time of the Budget.","Microeconomics":"The branch of economics that deals with the behaviour of individual firms, consumers and sectors.","Ministers’ Committee on the Budget":"The political committee that considers key policy and budgetary issues that pertain to the budget process before they are tabled in Cabinet.","Monetary easing":"See quantitative easing.","Monetary policy":"Policy concerning total money supply, exchange rates and the general level of interest rates.","Money supply":"The total stock of money in an economy.","National Development Plan":"A planning framework prepared by the National Planning Commission that aims to eliminate poverty and reduce inequality by 2030.","National Revenue Fund":"The consolidated account of the national government into which all taxes, fees and charges collected by SARS and departmental revenue must be paid.","National budget":"The projected revenue and expenditures that flow through the National Revenue Fund. It does not include spending by provinces or local government from their own revenues.","Negotiable certificate of deposit":"Short-term deposit instruments issued by banks, at a variable interest rate, for a fixed period.","Net borrowing requirement":"The main budget balance.","Net exports":"Exports less imports.","Net open foreign currency position":"Gold and foreign exchange reserves minus the oversold forward book. The figure is expressed in dollars.","Net trade":"The difference between the value of exports and the value of imports.","New Development Bank":"A multilateral lending institution being established by Brazil, Russia, India, China and South Africa.","Nominal exchange rates":"The current rate of exchange between the rand and foreign currencies. The “effective” exchange rate is a trade-weighted average of the rates of exchange with other currencies.","Nominal wage":"The return, or wage, to employees at the current price level.","Non-competitive bid auction":"An auction in which an investor agrees to purchase a certain number of securities such as bonds at the average price of all competitive bids over a given period of time.","Non-financial public enterprises":"Government-owned or controlled organisations that deliver goods and non- financial services, trading as business enterprises, such as Eskom or Transnet.","Non-interest expenditure":"Total expenditure by government less debt-service costs.","Non-tax revenue":"Income received by government as a result of administrative charges, licences, fees, sales of goods and services, and so on.","Occupation-specific salary dispensation":"Revised salary structures unique to identified occupations in the public service, including doctors, nurses and teachers.","Opportunity cost":"The value of that which must be given up to achieve or acquire something. It is represented by the next highest valued alternative use of a resource.","Organisation for Economic Cooperation and Development (OECD)":"An organisation of 35 mainly industrialised member countries. South Africa is not a member.","PAYE":"The pay-as-you-earn (PAYE) system of income tax withholding requires employers to deduct income tax, and in some cases, the employees’ portion of social benefit taxes, from each paycheque delivered to employees.","Payroll tax":"Tax an employer withholds and/or pays on behalf of employees based on employee wages or salaries.","Permanent establishment":"A fixed place of business from which a company operates. When two countries have a tax treaty, the concept of “permanent establishment” is used to determine the right of one state to tax the profits of the business in the other state. See also anti-fragmentation.","Policy reserve":"Additional money in the fiscus to fund new and crucial priorities.","Portfolio investment":"Investment in financial assets such as stocks and bonds.","Potential growth":"The fastest growth an economy can sustain without increasing inflation.","Presidential Infrastructure Coordinating Commission (PICC)":"A commission established by Cabinet to develop, review and coordinate a 20-year infrastructure plan.","Price discovery":"The process of determining the price level of a commodity or asset, based on supply and demand factors.","Price sensitivity":"The extent to which changes in price affect consumer purchasing behaviour.","Primary deficit/surplus":"The difference between total revenue and non-interest expenditure. When revenue exceeds non-interest expenditure there is a surplus.","Primary sector":"The agricultural and mining sectors of the economy.","Principal purpose test":"A test where the benefits of a tax treaty are denied if it is reasonable to conclude that obtaining the benefit was one of the principal purposes behind the arrangement or transaction.","Private-sector credit extension":"Credit provided to the private sector. This includes all loans, credit cards and leases.","Privatisation":"The full or partial sale of state-owned enterprises to private individuals or companies.","Producer price index (PPI)":"Price increases measured by the producer price index – a measure of the prices paid based mainly on producers’ published price lists.","Productivity":"A measure of the amount of output generated from every unit of input. Typically used to measure changes in labour efficiency.","Profit shifting":"The allocation of income and expenses between related corporations or branches of the same legal entity to reduce overall tax liability.","Public Finance Management Act (PFMA)":"The act regulating financial management of national and provincial government, including the efficiency and effectiveness of public expenditure and the responsibilities of those engaging with government financial management.","Public Investment Corporation (PIC)":"A government-owned investment management company that invests funds on behalf of public-sector entities. Its largest client is the Government Employees Pension Fund.","Public entities":"Companies, agencies, funds and accounts that are fully or partly owned by government or public authorities and are regulated by law.","Public goods":"Goods and services that would not be fully provided in a pure free-market system and are largely provided by government.","Public sector":"National government, provincial government, local government, extra- budgetary governmental institutions, social security funds and non- financial public enterprises.","Public-benefit organisations (PBOs)":"Organisations that are mainly funded by donations from the public and other institutions, which engage in social activities to meet the needs of the general public.","Public-private partnerships (PPPs)":"A contractual arrangement whereby a private party performs a government function and assumes the associated risks. In return, the private party receives a fee according to predefined performance criteria. See unitary payment.","Public-sector borrowing requirement":"The consolidated cash borrowing requirement of general government and non-financial public enterprises.","Purchasing managers’ index (PMI)":"A composite index measuring the change in manufacturing activity compared with the previous month. An index value of 50 indicates no change in activity, a value above 50 indicates increased activity and a value below 50 indicates decreased activity.","Quantitative easing":"A measure used by central banks to stimulate economic growth when interest rates are near zero by increasing money supply. Also called monetary easing.","Quarterly Employment Survey":"An establishment-based survey conducted by Statistics South Africa to obtain information about the number of employees and gross salaries paid.","Quarterly Labour Force Survey":"A household-based survey conducted by Statistics South Africa to measure the dynamics of the labour market, producing indicators such as employment, unemployment and inactivity.","Rating agency":"A company that evaluates the ability of countries or other borrowers to honour their debt obligations. Credit ratings are used by international investors as indications of sovereign risk. See also credit rating.","Real effective exchange rate":"A measure of the rate of exchange of the rand relative to a trade-weighted average of South Africa’s trading partners’ currencies, adjusted for price trends in South Africa and the countries included.","Real exchange rate":"The level of the exchange rate taking account of inflation differences.","Real expenditure":"Expenditure measured in constant prices after taking account of inflation.","Real interest rate":"The level of interest after taking account of inflation.","Real wage":"The return, or wage, to employees, measured at a constant price level.","Recapitalisation":"Injection of funds into a company or entity to aid liquidity, either as a loan or in return for equity.","Recession":"A period in which national output and income decline. A recession is usually defined as two consecutive quarters of negative growth.","Redemption":"The return of an investor’s principal in a fixed-income security, such as a preferred stock or bond.","Refinancing":"The repayment of debt at a scheduled time with the proceeds of new loans.","Refinancing risk":"The risk that government will not be able to raise money to repay debt at any scheduled point, or that it will have to do so at a high cost.","Regional integration":"An economic policy intended to boost economic activity in a geographical area extending beyond one country.","Remuneration":"The costs of personnel, including salaries, housing allowances, car allowances and other benefits received by personnel.","Repurchase (repo) rate":"The rate at which the Reserve Bank lends to commercial banks.","Repurchase agreements":"Short-term contracts between the Reserve Bank and private banks in the money market to sell specified amounts of money at an interest rate determined by daily auction.","Reserves (foreign exchange)":"Holdings of foreign exchange, either by the Reserve Bank only or by the Reserve Bank and domestic banking institutions.","Residence-based income tax system":"A tax system in which the worldwide income accruing to a resident of a country is subject to the taxes of that country.","Reticulation scheme":"A piped water network that ensures that water is collected and treated before it reaches the consumer.","Revaluation gain/loss":"The difference between the value of a foreign currency deposit from the original (historical) rate to execution of a trade based on the spot rate.","Risk premium":"A return that compensates for uncertainty.","Saving":"The difference between income and spending.","Seasonally adjusted":"Removal of seasonal volatility (monthly or quarterly) from a time series. This provides a measure of the underlying trend in the data.","Secondary rebate":"A rebate from income tax, in addition to the primary rebate, that is available to taxpayers aged 65 years and older.","Secondary sector":"The part of the economy concerned with the manufacture of goods.","Secondary tax on companies (STC)":"Tax on dividends declared by a company, calculated at the rate of 10 per cent of the net amount of dividends declared. This was discontinued in 2012 and replaced with a 15 per cent dividend withholding tax.","Section 21 company":"Non-profit entities registered in terms of Section 21 of the Companies Act.","Sector education and training authorities":"Institutions funded through employer training levies, responsible for learnership programmes and implementing strategic sector skills plans.","Secured debt instruments":"Debt backed or secured by collateral to reduce the risk of lending.","Securitisation":"The pooling of assets into a financial instrument to sell to different types of investors.","Service and transfer payments":"Services involve transactions of non-tangible commodities, while transfers are unrequited transactions that do not generate a counter-economic value (for example, gifts and grants).","Skills development levy":"A payroll tax designed to finance training initiatives in terms of the skills development strategy.","Social infrastructure":"Infrastructure that supports social services.","Social wage":"Social benefits available to all individuals, funded wholly or partly by the state.","Source-based income tax system":"A system in which income is taxed in the country where the income originates.","Southern African Customs Union (SACU) agreement":"An agreement between South Africa, Botswana, Namibia, Lesotho and Swaziland that allows for the unrestricted flow of goods and services, and the sharing of customs and excise revenue.","Southern African Development Community (SADC)":"A regional intergovernmental organisation that promotes collaboration, economic integration and technical cooperation throughout southern Africa.","Sovereign debt":"Debt issued by a government.","Sovereign debt rating":"An assessment of the likelihood that a government will default on its debt obligations.","Spatial planning":"Planning to influence the geographic distribution of people and economic activity.","Special economic zones":"A designated zone where business and trade laws incentivise trade, investment and employment.","Specific excise duty":"A tax on each unit of output or sale of a good, unrelated to the value of a good.","Standing appropriations":"Government’s expenditure obligations that do not require a vote or statutory provision, including contractual guarantee commitments and international agreements.","Statutory appropriations":"Amounts appropriated to be spent in terms of statutes and not requiring appropriation by vote.","Sterilisation":"Action taken by the Reserve Bank to neutralise excess cash created in the money market when purchasing foreign currency.","Structural budget balance":"A representation of what government revenue and expenditure would be if output were at its potential level, with cyclical variations stripped out.","Structural constraints":"Imbalances in the structure of the economy that hinder growth and development.","Switch auction":"An auction to exchange bonds to manage refinancing risk or improve tradability.","Syndicated loan":"A large loan in which a group of banks work together to provide funds, which they solicit from their clients for the borrower.","Tax amnesty":"A period allowed by tax authorities during which taxpayers who are outside the tax net, but should be registered for tax purposes, can register for tax without incurring penalties.","Tax avoidance":"When individuals or businesses legitimately use provisions in the tax law to reduce their tax liability.","Tax base":"The aggregate value of income, sales or transactions on which particular taxes are levied.","Tax buoyancy":"Describes the relationship between total tax revenue collections and economic growth. This measure includes the effects of policy changes on revenue. A value above one means that revenues are growing faster than the economy and below one means they are growing below the rate of GDP growth.","Tax evasion":"When individuals or businesses illegally reduce their tax liability.","Tax expenditure":"Government revenue forgone due to provisions that allow deductions, exclusions, or exemptions from taxable income. The revenue can also be foregone through the deferral of tax liability or preferential tax rates.","Tax gap":"A measure of tax evasion that emerges from comparing the tax liability or tax base declared to the tax authorities with the tax liability or tax base calculated from other sources.","Tax incentives":"Specific provisions in the tax code that provide favourable tax treatment to individuals and businesses to encourage specific behaviour or activities.","Tax incidence":"The final distribution of the burden of tax. Statutory incidence defines where the law requires a tax to be levied. Economic incidence refers to those who experience a decrease in real income as a result of the imposition of a tax.","Tax loopholes":"Unintended weaknesses in the legal provisions of the tax system used by taxpayers to avoid paying tax liability.","Tax morality":"The willingness, or motivation, of citizens to pay tax. This is separate to the statutory obligation to pay taxes, but may have an influence on tax compliance.","Tax-to-GDP ratio":"For public finance comparison purposes, a country’s tax burden, or tax-to- GDP ratio, is calculated by taking the total tax payments for a particular fiscal year as a fraction or percentage of the GDP for that year.","Term-to-maturity":"The time between issuance and expiry.","Terms of trade":"An index measuring the ratio of a country’s export prices relative to its import prices.","Tertiary sector":"The part of the economy concerned with the provision of services.","Total factor productivity":"An index used to measure the efficiency of all inputs that contribute to the production process.","Trade balance":"The monetary record of a country’s net imports and exports of physical merchandise. See also current account.","Trade regime":"The system of tariffs, quotas and quantitative restrictions applied to protect domestic industries, together with subsidies and incentives used to promote international trade.","Trade-weighted rand":"The value of the rand pegged to or expressed relative to a market basket of selected foreign currencies.","Trademark":"A legal right pointing distinctly to the origin or ownership of merchandise to which it is applied and legally reserved for the exclusive use of the owner as maker or seller.","Treasury bills":"Short-term government debt instruments that yield no interest but are issued at a discount. Maturities vary from one day to 12 months.","Treasury committee":"The Cabinet committee that evaluates all requests for additional funds for unavoidable and unforeseen expenditure during a financial year.","Treaty shopping":"When related companies in different countries establish a third entity in another location to take advantage of a favourable tax arrangement.","Trend GDP growth":"The theoretical level of GDP growth determined by the full utilisation of all factors of production (land, labour and capital). Growth above the trend rate results in macroeconomic imbalances such as rising inflation or a weakening of the current account. Increases in trend GDP growth are achieved through capital formation, growth in employment and/or technological development.","Unallocated reserves":"Potential expenditure provision not allocated to a particular use. It mainly consists of the contingency reserve and amounts of money left unallocated by provinces.","Unemployment (broad definition)":"All those of working age who are unemployed, including those actively seeking employment and discouraged work seekers.","Unemployment (official definition)":"Those of working age, who are unemployed and actively seeking work (excludes discouraged work seekers).","Unit labour cost":"The cost of labour per unit of output, calculated by dividing average wages by productivity (output per worker per hour).","Unitary payment":"The payment made to the private party for meeting its obligations in the project deliverables in a public-private partnership.","Unqualified audit":"An assessment by a registered auditing firm or the Auditor-General of South Africa asserting that the financial statements of a department, entity or company are free of material misstatement.","Unsecured debt instruments":"Debt not backed or secured by collateral to reduce the risk of lending.","Unsecured lending":"A loan that is not backed or secured by any type of collateral to reduce the lender’s risk.","Vertical equity":"A doctrine in taxation that holds that differently situated taxpayers should be treated differently in terms of income tax provisions. In other words, taxpayers with more income and/or capital should pay more tax.","Vested right":"The right to ownership of an asset that cannot be arbitrarily taken away by a third party.","Virement":"The transfer of resources from one programme to another within the same department during a financial year.","Vote":"An appropriation voted by Parliament.","Water trading account":"A departmental account that ring-fences revenue from the sale of bulk water and related services to secure funding to manage the sustainability of water resources and infrastructure.","Weighted average cost of capital":"The average rate of return an organisation expects to pay to investors in its securities, such as bonds, debt and shares. Each category of security is accorded a proportionate weight in the calculation.","White paper":"A policy document used to present government policy preferences.","Withholding tax":"Tax on income deducted at source. Withholding taxes are widely used for dividends, interest and royalties.","Yield":"A financial return or interest paid to buyers of government bonds. The yield/rate of return on bonds takes into account the total annual interest payments, the purchase price, the redemption value and the amount of time remaining until maturity.","Yield curve":"A graph showing the relationship between the yield on bonds of the same credit quality but different maturity at a given point in time."}
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7598,13 +7526,13 @@ function Tooltip(_ref) {
 }
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = {"apiBaseURL":"https://data.vulekamali.gov.za"}
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7619,7 +7547,7 @@ function removePunctuation(string) {
 }
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8847,6 +8775,95 @@ exports.XMLSerializer = XMLSerializer;
 //}
 
 /***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = Markup;
+
+var _preact = __webpack_require__(0);
+
+var _index = __webpack_require__(3);
+
+var _index2 = _interopRequireDefault(_index);
+
+var _index3 = __webpack_require__(13);
+
+var _index4 = _interopRequireDefault(_index3);
+
+var _index5 = __webpack_require__(12);
+
+var _index6 = _interopRequireDefault(_index5);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Markup(props) {
+  var options = props.options,
+      chart = props.chart,
+      name = props.name,
+      selectOpen = props.selectOpen,
+      selected = props.selected,
+      modal = props.modal,
+      clickAction = props.clickAction,
+      canvasAction = props.canvasAction,
+      closeModal = props.closeModal,
+      open = props.open,
+      _changeAction = props.changeAction,
+      items = props.items;
+
+
+  return (0, _preact.h)(
+    'div',
+    null,
+    (0, _preact.h)(
+      _index6.default,
+      { title: 'Share this link:', closeAction: closeModal, open: modal },
+      (0, _preact.h)(
+        'a',
+        { className: 'u-wordBreakBreakAll', href: window.location.href },
+        window.location.href
+      )
+    ),
+    (0, _preact.h)('canvas', { ref: function ref(node) {
+        return canvasAction(node);
+      }, style: { display: 'none' } }),
+    (0, _preact.h)(
+      'span',
+      { className: 'ChartDownload-title' },
+      'Save or share'
+    ),
+    (0, _preact.h)(
+      'div',
+      { className: 'ChartDownload-select' },
+      (0, _preact.h)(_index2.default, _extends({
+        name: name + '-download-image',
+        open: open,
+        changeAction: function changeAction(value) {
+          return _changeAction(value);
+        }
+      }, { items: items, selected: selected }))
+    ),
+    (0, _preact.h)(
+      'div',
+      { className: 'ChartDownload-button' },
+      (0, _preact.h)(
+        'button',
+        { onClick: clickAction, className: 'Button has-icon' },
+        (0, _preact.h)(_index4.default, { type: 'download', size: 'small' })
+      )
+    )
+  );
+}
+
+/***/ }),
 /* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8855,13 +8872,15 @@ exports.XMLSerializer = XMLSerializer;
 
 __webpack_require__(47);
 
-__webpack_require__(195);
-
-__webpack_require__(196);
-
-__webpack_require__(197);
-
 __webpack_require__(198);
+
+__webpack_require__(199);
+
+__webpack_require__(200);
+
+__webpack_require__(201);
+
+__webpack_require__(202);
 
 /***/ }),
 /* 47 */
@@ -8916,15 +8935,17 @@ __webpack_require__(168);
 
 __webpack_require__(169);
 
-__webpack_require__(177);
-
-__webpack_require__(180);
+__webpack_require__(178);
 
 __webpack_require__(181);
 
-__webpack_require__(191);
+__webpack_require__(182);
 
-__webpack_require__(193);
+__webpack_require__(192);
+
+__webpack_require__(194);
+
+__webpack_require__(196);
 
 /***/ }),
 /* 48 */
@@ -10061,7 +10082,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _queryString = __webpack_require__(25);
+var _queryString = __webpack_require__(26);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -10202,7 +10223,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _analyticsEvent = __webpack_require__(9);
+var _analyticsEvent = __webpack_require__(6);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -10279,10 +10300,10 @@ exports.default = polyfillOldFeatures();
 "use strict";
 
 
-var define = __webpack_require__(6);
+var define = __webpack_require__(7);
 
-var implementation = __webpack_require__(27);
-var getPolyfill = __webpack_require__(34);
+var implementation = __webpack_require__(28);
+var getPolyfill = __webpack_require__(35);
 var shim = __webpack_require__(72);
 
 // eslint-disable-next-line no-unused-vars
@@ -10499,22 +10520,22 @@ module.exports = function forEach(obj, fn, ctx) {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var has = __webpack_require__(12);
+var has = __webpack_require__(14);
 var toPrimitive = __webpack_require__(64);
 
 var toStr = Object.prototype.toString;
 var hasSymbols = typeof Symbol === 'function' && _typeof(Symbol.iterator) === 'symbol';
 
-var $isNaN = __webpack_require__(30);
-var $isFinite = __webpack_require__(31);
+var $isNaN = __webpack_require__(31);
+var $isFinite = __webpack_require__(32);
 var MAX_SAFE_INTEGER = Number.MAX_SAFE_INTEGER || Math.pow(2, 53) - 1;
 
 var assign = __webpack_require__(67);
-var sign = __webpack_require__(32);
-var mod = __webpack_require__(33);
+var sign = __webpack_require__(33);
+var mod = __webpack_require__(34);
 var isPrimitive = __webpack_require__(68);
 var parseInteger = parseInt;
-var bind = __webpack_require__(28);
+var bind = __webpack_require__(29);
 var arraySlice = bind.call(Function.call, Array.prototype.slice);
 var strSlice = bind.call(Function.call, String.prototype.slice);
 var isBinary = bind.call(Function.call, RegExp.prototype.test, /^0b[01]+$/i);
@@ -11144,8 +11165,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var hasSymbols = typeof Symbol === 'function' && _typeof(Symbol.iterator) === 'symbol';
 
-var isPrimitive = __webpack_require__(29);
-var isCallable = __webpack_require__(13);
+var isPrimitive = __webpack_require__(30);
+var isCallable = __webpack_require__(15);
 var isDate = __webpack_require__(65);
 var isSymbol = __webpack_require__(66);
 
@@ -11328,16 +11349,16 @@ module.exports = function isPrimitive(value) {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var $isNaN = __webpack_require__(30);
-var $isFinite = __webpack_require__(31);
+var $isNaN = __webpack_require__(31);
+var $isFinite = __webpack_require__(32);
 
-var sign = __webpack_require__(32);
-var mod = __webpack_require__(33);
+var sign = __webpack_require__(33);
+var mod = __webpack_require__(34);
 
-var IsCallable = __webpack_require__(13);
+var IsCallable = __webpack_require__(15);
 var toPrimitive = __webpack_require__(70);
 
-var has = __webpack_require__(12);
+var has = __webpack_require__(14);
 
 // https://es5.github.io/#x9
 var ES5 = {
@@ -11582,9 +11603,9 @@ module.exports = ES5;
 
 var toStr = Object.prototype.toString;
 
-var isPrimitive = __webpack_require__(29);
+var isPrimitive = __webpack_require__(30);
 
-var isCallable = __webpack_require__(13);
+var isCallable = __webpack_require__(15);
 
 // https://es5.github.io/#x8.12
 var ES5internalSlots = {
@@ -11625,7 +11646,7 @@ module.exports = function ToPrimitive(input, PreferredType) {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var has = __webpack_require__(12);
+var has = __webpack_require__(14);
 var regexExec = RegExp.prototype.exec;
 var gOPD = Object.getOwnPropertyDescriptor;
 
@@ -11670,8 +11691,8 @@ module.exports = function isRegex(value) {
 "use strict";
 
 
-var define = __webpack_require__(6);
-var getPolyfill = __webpack_require__(34);
+var define = __webpack_require__(7);
+var getPolyfill = __webpack_require__(35);
 
 module.exports = function shimArrayFrom() {
 	var polyfill = getPolyfill();
@@ -11990,7 +12011,7 @@ __webpack_require__(75);
 // `setimmediate` library.
 exports.setImmediate = typeof self !== "undefined" && self.setImmediate || typeof global !== "undefined" && global.setImmediate || undefined && undefined.setImmediate;
 exports.clearImmediate = typeof self !== "undefined" && self.clearImmediate || typeof global !== "undefined" && global.clearImmediate || undefined && undefined.clearImmediate;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(35)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(36)))
 
 /***/ }),
 /* 75 */
@@ -12181,7 +12202,7 @@ exports.clearImmediate = typeof self !== "undefined" && self.clearImmediate || t
     attachTo.setImmediate = setImmediate;
     attachTo.clearImmediate = clearImmediate;
 })(typeof self === "undefined" ? typeof global === "undefined" ? undefined : global : self);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(35), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(36), __webpack_require__(4)))
 
 /***/ }),
 /* 76 */
@@ -12190,11 +12211,11 @@ exports.clearImmediate = typeof self !== "undefined" && self.clearImmediate || t
 "use strict";
 
 
-var define = __webpack_require__(6);
+var define = __webpack_require__(7);
 var ES = __webpack_require__(10);
 
-var implementation = __webpack_require__(36);
-var getPolyfill = __webpack_require__(37);
+var implementation = __webpack_require__(37);
+var getPolyfill = __webpack_require__(38);
 var shim = __webpack_require__(77);
 
 var slice = Array.prototype.slice;
@@ -12222,8 +12243,8 @@ module.exports = boundShim;
 "use strict";
 
 
-var define = __webpack_require__(6);
-var getPolyfill = __webpack_require__(37);
+var define = __webpack_require__(7);
+var getPolyfill = __webpack_require__(38);
 
 module.exports = function shimArrayPrototypeFindIndex() {
 	var polyfill = getPolyfill();
@@ -12250,7 +12271,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(4);
+var _index = __webpack_require__(2);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -12311,7 +12332,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = buildGroupSpaceArray;
 
-var _breakIntoWrap = __webpack_require__(14);
+var _breakIntoWrap = __webpack_require__(16);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -12403,7 +12424,7 @@ exports.default = HorisontalBreakpoint;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(7);
+var _trimValues = __webpack_require__(8);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -12435,7 +12456,8 @@ function HorisontalBreakpoint(_ref) {
         y: padding[0] + totalGroupSpace + buffer * 2 + fontSize,
         'font-size': fontSize,
         'font-family': 'sans-serif',
-        'font-weight': 'bold'
+        'font-weight': 'bold',
+        'text-anchor': 'middle'
       },
       'R',
       (0, _trimValues2.default)(iterationValue * rank)
@@ -12652,7 +12674,7 @@ exports.default = LineGroupItem;
 
 var _preact = __webpack_require__(0);
 
-var _breakIntoWrap = __webpack_require__(14);
+var _breakIntoWrap = __webpack_require__(16);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -12799,7 +12821,7 @@ var _TooltipItem = __webpack_require__(90);
 
 var _TooltipItem2 = _interopRequireDefault(_TooltipItem);
 
-var _breakIntoWrap = __webpack_require__(14);
+var _breakIntoWrap = __webpack_require__(16);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -12886,7 +12908,7 @@ exports.default = TooltipItem;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(7);
+var _trimValues = __webpack_require__(8);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -12912,8 +12934,6 @@ function TooltipItem(_ref) {
       units = styling.units,
       popupCentre = styling.popupCentre;
 
-
-  console.log(colour);
 
   return (0, _preact.h)(
     'g',
@@ -12969,7 +12989,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(11);
+var _index = __webpack_require__(17);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -13170,7 +13190,7 @@ exports.default = BreakpointItem;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(7);
+var _trimValues = __webpack_require__(8);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -13416,6 +13436,8 @@ var _preact = __webpack_require__(0);
 
 var _path = __webpack_require__(102);
 
+var colours = ['#79b43c', '#4a4a4a', '#ad3c64'];
+
 function LineGroupItem(_ref) {
   var totalGroupSpace = _ref.totalGroupSpace,
       groupSpaceArray = _ref.groupSpaceArray,
@@ -13464,7 +13486,7 @@ function LineGroupItem(_ref) {
         x2: startPoint + centeringSpace + index * (barWidth + lineGutter),
         y2: padding[0] + svgHeight + barWidth - barWidth / 2 - displayAmount,
         className: 'Graph-line',
-        stroke: '#79b43c'
+        stroke: colours[index]
       });
     })
   );
@@ -13696,7 +13718,7 @@ var substr = 'ab'.substr(-1) === 'b' ? function (str, start, len) {
   if (start < 0) start = str.length + start;
   return str.substr(start, len);
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
 /* 103 */
@@ -13769,6 +13791,8 @@ var _TooltipItem2 = _interopRequireDefault(_TooltipItem);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var colours = ['#79b43c', '#4a4a4a', '#ad3c64'];
+
 function TooltipGroup(_ref) {
   var totalGroupSpace = _ref.totalGroupSpace,
       groupSpaceArray = _ref.groupSpaceArray,
@@ -13814,7 +13838,9 @@ function TooltipGroup(_ref) {
       return (0, _preact.h)(_TooltipItem2.default, _extends({ styling: styling }, {
         xPosition: startPoint + centeringSpace + index * (barWidth + lineGutter),
         yPosition: padding[0] + svgHeight + barWidth - (barWidth * 2 + displayAmount + popUpOffset + popupHeight)
-      }, { amount: amount, totalGroupSpace: totalGroupSpace }));
+      }, { amount: amount, totalGroupSpace: totalGroupSpace }, {
+        colour: colours[index]
+      }));
     })
   );
 }
@@ -13833,7 +13859,7 @@ exports.default = TooltipItem;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(7);
+var _trimValues = __webpack_require__(8);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -13845,6 +13871,7 @@ function TooltipItem(_ref) {
       xPosition = _ref.xPosition,
       yPosition = _ref.yPosition,
       amount = _ref.amount,
+      colour = _ref.colour,
       totalGroupSpace = _ref.totalGroupSpace;
   var barWidth = styling.barWidth,
       lineGutter = styling.lineGutter,
@@ -13859,7 +13886,7 @@ function TooltipItem(_ref) {
 
   return (0, _preact.h)(
     'g',
-    { className: 'Graph-tooltip' },
+    { className: 'ColumnChart-tooltip' },
     (0, _preact.h)('rect', {
       x: xPosition - (barWidth + lineGutter) / 2,
       x1: xTriggerPosition,
@@ -13876,12 +13903,12 @@ function TooltipItem(_ref) {
       y: yPosition,
       width: popupWidth,
       height: popupHeight,
-      fill: '#79b43c'
+      fill: colour
     }),
     (0, _preact.h)('polygon', {
       className: 'Graph-triangle',
       points: '\n          ' + xPosition + ',\n          ' + (yPosition + barWidth + popupHeight) + '\n          ' + (xPosition + barWidth / 2) + ',\n          ' + (yPosition + popupHeight) + '\n          \n          ' + (xPosition - barWidth / 2) + ',\n          ' + (yPosition + popupHeight) + '\n        ',
-      fill: '#79b43c'
+      fill: colour
     }),
     (0, _preact.h)(
       'text',
@@ -14142,7 +14169,7 @@ var _Button = __webpack_require__(111);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _index3 = __webpack_require__(15);
+var _index3 = __webpack_require__(12);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -14177,7 +14204,7 @@ function ShareMarkup(_ref) {
       },
       (0, _preact.h)(
         'a',
-        { className: 'u-wordBreak u-wordBreak--breakAll', href: window.location.href },
+        { className: 'u-wordBreakBreakAll', href: window.location.href },
         window.location.href
       )
     ),
@@ -14224,7 +14251,7 @@ var _Icon = __webpack_require__(112);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
-var _analyticsEvent = __webpack_require__(9);
+var _analyticsEvent = __webpack_require__(6);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -14869,12 +14896,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var emptyFunction = __webpack_require__(16);
-var invariant = __webpack_require__(17);
-var warning = __webpack_require__(40);
-var assign = __webpack_require__(26);
+var emptyFunction = __webpack_require__(19);
+var invariant = __webpack_require__(20);
+var warning = __webpack_require__(39);
+var assign = __webpack_require__(27);
 
-var ReactPropTypesSecret = __webpack_require__(18);
+var ReactPropTypesSecret = __webpack_require__(21);
 var checkPropTypes = __webpack_require__(115);
 
 module.exports = function (isValidElement, throwOnDirectAccess) {
@@ -15376,7 +15403,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 
   return ReactPropTypes;
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
 /* 115 */
@@ -15395,9 +15422,9 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 if (process.env.NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(17);
-  var warning = __webpack_require__(40);
-  var ReactPropTypesSecret = __webpack_require__(18);
+  var invariant = __webpack_require__(20);
+  var warning = __webpack_require__(39);
+  var ReactPropTypesSecret = __webpack_require__(21);
   var loggedTypeFailures = {};
 }
 
@@ -15444,7 +15471,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
 /* 116 */
@@ -15460,9 +15487,9 @@ module.exports = checkPropTypes;
 
 
 
-var emptyFunction = __webpack_require__(16);
-var invariant = __webpack_require__(17);
-var ReactPropTypesSecret = __webpack_require__(18);
+var emptyFunction = __webpack_require__(19);
+var invariant = __webpack_require__(20);
+var ReactPropTypesSecret = __webpack_require__(21);
 
 module.exports = function () {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -15519,7 +15546,7 @@ exports.default = Download;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(8);
+var _createSizeModifier = __webpack_require__(9);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -15549,7 +15576,7 @@ exports.default = Download;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(8);
+var _createSizeModifier = __webpack_require__(9);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -15579,7 +15606,7 @@ exports.default = Facebook;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(8);
+var _createSizeModifier = __webpack_require__(9);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -15614,7 +15641,7 @@ exports.default = Facebook;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(8);
+var _createSizeModifier = __webpack_require__(9);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -15649,7 +15676,7 @@ exports.default = Facebook;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(8);
+var _createSizeModifier = __webpack_require__(9);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -15687,7 +15714,7 @@ var _camelcase = __webpack_require__(123);
 
 var _camelcase2 = _interopRequireDefault(_camelcase);
 
-var _glossary = __webpack_require__(41);
+var _glossary = __webpack_require__(40);
 
 var _glossary2 = _interopRequireDefault(_glossary);
 
@@ -15939,7 +15966,7 @@ exports.default = findReactInstances;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(42);
+var _index = __webpack_require__(41);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -16145,9 +16172,9 @@ var _index = __webpack_require__(133);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _global = __webpack_require__(43);
+var _global = __webpack_require__(42);
 
-var _removePunctuation = __webpack_require__(44);
+var _removePunctuation = __webpack_require__(43);
 
 var _removePunctuation2 = _interopRequireDefault(_removePunctuation);
 
@@ -16502,7 +16529,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _fuse = __webpack_require__(20);
+var _fuse = __webpack_require__(22);
 
 var _fuse2 = _interopRequireDefault(_fuse);
 
@@ -16512,7 +16539,7 @@ var _index = __webpack_require__(137);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _glossary = __webpack_require__(41);
+var _glossary = __webpack_require__(40);
 
 var _glossary2 = _interopRequireDefault(_glossary);
 
@@ -16858,7 +16885,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _fuse = __webpack_require__(20);
+var _fuse = __webpack_require__(22);
 
 var _fuse2 = _interopRequireDefault(_fuse);
 
@@ -17136,7 +17163,7 @@ function Item(_ref) {
                 { className: 'Videos-pillWrap' },
                 (0, _preact.h)(
                   'a',
-                  { onClick: action, className: 'Button is-small is-inline u-marginRight u-marginRight--5 u-marginBottom u-marginBottom--5' },
+                  { onClick: action, className: 'Button is-small is-inline u-marginRight5 u-marginBottom5' },
                   name
                 )
               );
@@ -17345,7 +17372,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(21);
+var _index = __webpack_require__(23);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -17423,7 +17450,7 @@ exports.default = Revenue;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(21);
+var _index = __webpack_require__(23);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -17498,11 +17525,11 @@ exports.default = HomeChart;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(11);
+var _index = __webpack_require__(17);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(21);
+var _index3 = __webpack_require__(23);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -17564,7 +17591,7 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _queryString = __webpack_require__(25);
+var _queryString = __webpack_require__(26);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -17572,13 +17599,13 @@ var _index = __webpack_require__(155);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _analyticsEvent = __webpack_require__(9);
+var _analyticsEvent = __webpack_require__(6);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
-var _global = __webpack_require__(43);
+var _global = __webpack_require__(42);
 
-var _removePunctuation = __webpack_require__(44);
+var _removePunctuation = __webpack_require__(43);
 
 var _removePunctuation2 = _interopRequireDefault(_removePunctuation);
 
@@ -17938,7 +17965,7 @@ var _Icon = __webpack_require__(157);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
-var _analyticsEvent = __webpack_require__(9);
+var _analyticsEvent = __webpack_require__(6);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -18425,7 +18452,7 @@ exports.default = YearSelectMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(42);
+var _index = __webpack_require__(41);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -18965,84 +18992,41 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(170);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _decodeHtmlEntities = __webpack_require__(1);
-
-var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function scripts() {
-  var componentList = document.getElementsByClassName('js-initProgrammesChart');
-
-  var _loop = function _loop(i) {
-    var component = componentList[i];
-
-    var values = JSON.parse((0, _decodeHtmlEntities2.default)(component.getAttribute('data-values'))).data;
-    var rawFiles = JSON.parse((0, _decodeHtmlEntities2.default)(component.getAttribute('data-files')));
-    var year = component.getAttribute('data-year');
-
-    var items = values.reduce(function (results, val) {
-      return _extends({}, results, _defineProperty({}, val.name, [val.total_budget]));
-    }, {});
-
-    var files = Object.keys(rawFiles).reduce(function (results, key) {
-      var object = rawFiles[key].formats.reduce(function (innerResults, val) {
-        return _extends({}, innerResults, _defineProperty({}, key + ' (' + val.format + ')', val.url));
-      }, {});
-
-      return _extends({}, results, object);
-    }, {});
-
-    (0, _preact.render)((0, _preact.h)(_index2.default, { items: items, year: year, files: files }), component);
-  };
-
-  for (var i = 0; i < componentList.length; i++) {
-    _loop(i);
-  }
-}
-
-exports.default = scripts();
-
-/***/ }),
-/* 170 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _preactRenderToString = __webpack_require__(22);
+var _preactRenderToString = __webpack_require__(24);
 
 var _preactRenderToString2 = _interopRequireDefault(_preactRenderToString);
 
-var _canvgBrowser = __webpack_require__(23);
+var _canvgBrowser = __webpack_require__(25);
 
 var _canvgBrowser2 = _interopRequireDefault(_canvgBrowser);
 
 var _preact = __webpack_require__(0);
 
-var _Markup = __webpack_require__(175);
-
-var _Markup2 = _interopRequireDefault(_Markup);
-
-var _index = __webpack_require__(4);
+var _index = __webpack_require__(2);
 
 var _index2 = _interopRequireDefault(_index);
 
+var _DebounceFunction = __webpack_require__(11);
+
+var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
+
+var _index3 = __webpack_require__(174);
+
+var _index4 = _interopRequireDefault(_index3);
+
+var _decodeHtmlEntities = __webpack_require__(1);
+
+var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
+
+var _calcShareAction = __webpack_require__(177);
+
+var _calcShareAction2 = _interopRequireDefault(_calcShareAction);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -19050,62 +19034,87 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ChartDownloadBasicTest = function (_Component) {
-  _inherits(ChartDownloadBasicTest, _Component);
+var ProgrammesChartContainer = function (_Component) {
+  _inherits(ProgrammesChartContainer, _Component);
 
-  function ChartDownloadBasicTest(props) {
-    _classCallCheck(this, ChartDownloadBasicTest);
+  function ProgrammesChartContainer(props) {
+    _classCallCheck(this, ProgrammesChartContainer);
 
-    var _this = _possibleConstructorReturn(this, (ChartDownloadBasicTest.__proto__ || Object.getPrototypeOf(ChartDownloadBasicTest)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (ProgrammesChartContainer.__proto__ || Object.getPrototypeOf(ProgrammesChartContainer)).call(this, props));
 
     _this.state = {
-      selected: '1',
+      width: 200,
+      mobile: true,
+      selected: 'link',
       open: false,
       modal: false
     };
 
-    _this.canvas = null;
-    _this.getCanvas = _this.getCanvas.bind(_this);
-    _this.closeModal = _this.closeModal.bind(_this);
-    _this.changeAction = _this.changeAction.bind(_this);
-    _this.clickAction = _this.clickAction.bind(_this);
-    _this.closeModal = _this.closeModal.bind(_this);
-
     _this.hasNull = Object.keys(_this.props.items).reduce(function (result, key) {
+      return !_this.props.items[key] ? true : result;
+    }, false);
 
-      if (_this.props.items[key][0] === null) {
-        return true;
+    _this.updateWidth = function () {
+      if (_this.state.mobile && window.innerWidth >= 600) {
+        _this.setState({ mobile: false });
+      } else if (!_this.state.mobile && window.innerWidth < 600) {
+        _this.setState({ mobile: true });
       }
 
-      return result;
-    }, false);
+      if (_this.node && _this.node.offsetWidth !== _this.state.width) {
+        if (_this.node.offsetWidth <= 200 && _this.state.width !== 200) {
+          return _this.setState({ width: 200 });
+        }
+
+        return _this.setState({ width: _this.node.offsetWidth });
+      }
+
+      return null;
+    };
+
+    var viewportDebounce = new _DebounceFunction2.default(300);
+    var updateViewport = function updateViewport() {
+      return viewportDebounce.update(_this.updateWidth);
+    };
+
+    window.addEventListener('resize', updateViewport);
+
+    _this.node = null;
+    _this.canvas = null;
+    _this.parentAction = _this.parentAction.bind(_this);
+    _this.changeAction = _this.changeAction.bind(_this);
+    _this.shareAction = _this.shareAction.bind(_this);
+    _this.closeModal = _this.closeModal.bind(_this);
+    _this.downloadAction = _this.downloadAction.bind(_this);
+    _this.canvasAction = _this.canvasAction.bind(_this);
     return _this;
   }
 
-  _createClass(ChartDownloadBasicTest, [{
-    key: 'getCanvas',
-    value: function getCanvas(node) {
-      this.canvas = node;
+  _createClass(ProgrammesChartContainer, [{
+    key: 'shareAction',
+    value: function shareAction() {
+      var _this2 = this;
+
+      (0, _calcShareAction2.default)(this.state.selected, 'programmes-chart', function () {
+        return _this2.setState({ modal: true });
+      });
     }
   }, {
-    key: 'changeAction',
-    value: function changeAction(value) {
-      if (this.state.open) {
-        this.setState({ selected: value });
-        return this.setState({ open: false });
-      }
-
-      return this.setState({ open: true });
+    key: 'closeModal',
+    value: function closeModal() {
+      this.setState({ modal: false });
     }
   }, {
-    key: 'clickAction',
-    value: function clickAction() {
-      if (this.state.selected === 'link') {
-        return this.setState({ modal: true });
-      }
-
+    key: 'parentAction',
+    value: function parentAction(node) {
+      this.node = node;
+      this.updateWidth();
+    }
+  }, {
+    key: 'downloadAction',
+    value: function downloadAction() {
       (0, _canvgBrowser2.default)(this.canvas, (0, _preactRenderToString2.default)((0, _preact.h)(_index2.default, {
-        scale: parseInt(this.state.selected, 10),
+        scale: 1.5,
         downloadable: true,
         items: this.props.items,
         guides: true,
@@ -19123,47 +19132,88 @@ var ChartDownloadBasicTest = function (_Component) {
       return link.click();
     }
   }, {
-    key: 'closeModal',
-    value: function closeModal() {
-      return this.setState({ modal: false });
+    key: 'canvasAction',
+    value: function canvasAction(node) {
+      this.canvas = node;
+    }
+  }, {
+    key: 'changeAction',
+    value: function changeAction(value) {
+      if (this.state.open) {
+        return this.setState(_extends({}, this.state, {
+          selected: value,
+          open: false
+        }));
+      }
+
+      return this.setState({ open: true });
     }
   }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
-      return (0, _preact.h)(_Markup2.default, {
-        downloadSelected: this.state.selected,
-        changeAction: this.changeAction,
-        name: 'programmes-chart',
-        open: this.state.open,
-        canvasAction: function canvasAction(node) {
-          _this2.canvas = node;
-        },
-        clickAction: this.clickAction,
-        downloadItems: {
-          'Image (PNG Small)': '1',
-          'Image (PNG Medium)': '2',
-          'Image (PNG Large)': '3',
-          Link: 'link'
-        },
-        closeModal: this.closeModal,
-        modal: this.state.modal,
-        sourceItems: this.props.items,
+      return (0, _preact.h)(_index4.default, {
+        items: this.props.items,
+        width: this.state.width,
+        parentAction: this.parentAction,
+        mobile: this.state.mobile,
         hasNull: this.hasNull,
         year: this.props.year,
-        files: this.props.files
+        files: this.props.files,
+
+        open: this.state.open,
+        selected: this.state.selected,
+        changeAction: this.changeAction,
+        shareAction: this.shareAction,
+        closeModal: this.closeModal,
+        modal: this.state.modal,
+
+        downloadAction: this.downloadAction,
+        canvasAction: this.canvasAction
       });
     }
   }]);
 
-  return ChartDownloadBasicTest;
+  return ProgrammesChartContainer;
 }(_preact.Component);
 
-exports.default = ChartDownloadBasicTest;
+function scripts() {
+  var nodes = document.getElementsByClassName('js-initProgrammesChart');
+
+  var getJsonAttribute = function getJsonAttribute(name, node) {
+    return JSON.parse((0, _decodeHtmlEntities2.default)(node.getAttribute(name)));
+  };
+
+  var _loop = function _loop(i) {
+    var node = nodes[i];
+
+    var rawValues = getJsonAttribute('data-values', node).data;
+    var rawFiles = getJsonAttribute('data-files', node);
+    var year = node.getAttribute('data-year', node);
+
+    var items = rawValues.reduce(function (results, val) {
+      return _extends({}, results, _defineProperty({}, val.name, [val.total_budget]));
+    }, {});
+
+    var files = Object.keys(rawFiles).reduce(function (results, key) {
+      var object = rawFiles[key].formats.reduce(function (innerResults, val) {
+        return _extends({}, innerResults, _defineProperty({}, key + ' (' + val.format + ')', val.url));
+      }, {});
+
+      return _extends({}, results, object);
+    }, {});
+
+    (0, _preact.render)((0, _preact.h)(ProgrammesChartContainer, { items: items, year: year, files: files }), node);
+  };
+
+  for (var i = 0; i < nodes.length; i++) {
+    _loop(i);
+  }
+}
+
+exports.default = scripts();
 
 /***/ }),
-/* 171 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19440,7 +19490,7 @@ module.exports = function (color_string) {
 };
 
 /***/ }),
-/* 172 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19719,7 +19769,7 @@ function BlurStack() {
 module.exports = blur;
 
 /***/ }),
-/* 173 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19972,14 +20022,14 @@ function appendElement(hander, node) {
 } //appendChild and setAttributeNS are preformance key
 
 //if(typeof require == 'function'){
-var XMLReader = __webpack_require__(174).XMLReader;
-var DOMImplementation = exports.DOMImplementation = __webpack_require__(45).DOMImplementation;
-exports.XMLSerializer = __webpack_require__(45).XMLSerializer;
+var XMLReader = __webpack_require__(173).XMLReader;
+var DOMImplementation = exports.DOMImplementation = __webpack_require__(44).DOMImplementation;
+exports.XMLSerializer = __webpack_require__(44).XMLSerializer;
 exports.DOMParser = DOMParser;
 //}
 
 /***/ }),
-/* 174 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20629,7 +20679,7 @@ function split(source, start) {
 exports.XMLReader = XMLReader;
 
 /***/ }),
-/* 175 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20638,44 +20688,61 @@ exports.XMLReader = XMLReader;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 exports.default = ProgrammesChart;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(11);
+var _index = __webpack_require__(2);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(24);
+var _index3 = __webpack_require__(175);
 
 var _index4 = _interopRequireDefault(_index3);
 
-var _index5 = __webpack_require__(176);
+var _index5 = __webpack_require__(3);
 
 var _index6 = _interopRequireDefault(_index5);
+
+var _shareSelections = __webpack_require__(176);
+
+var _shareSelections2 = _interopRequireDefault(_shareSelections);
+
+var _index7 = __webpack_require__(13);
+
+var _index8 = _interopRequireDefault(_index7);
+
+var _index9 = __webpack_require__(12);
+
+var _index10 = _interopRequireDefault(_index9);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function ProgrammesChart(props) {
-  var selected = props.selected,
-      changeAction = props.changeAction,
-      name = props.name,
-      open = props.open,
-      canvasAction = props.canvasAction,
-      clickAction = props.clickAction,
-      downloadItems = props.downloadItems,
-      closeModal = props.closeModal,
-      modal = props.modal,
-      sourceItems = props.sourceItems,
+  var items = props.items,
+      width = props.width,
+      mobile = props.mobile,
       hasNull = props.hasNull,
       year = props.year,
-      files = props.files;
+      files = props.files,
+      open = props.open,
+      selected = props.selected,
+      modal = props.modal;
+  var parentAction = props.parentAction,
+      changeAction = props.changeAction,
+      downloadAction = props.downloadAction,
+      shareAction = props.shareAction,
+      closeModal = props.closeModal,
+      canvasAction = props.canvasAction;
 
 
   var noValues = (0, _preact.h)(
     'ul',
-    { className: 'u-margin u-margin--0 u-paddingLeft u-paddingLeft--20' },
-    Object.keys(sourceItems).map(function (val) {
+    { className: 'u-margin0 u-paddingLeft20' },
+    Object.keys(items).map(function (val) {
       return (0, _preact.h)(
         'li',
         null,
@@ -20684,66 +20751,130 @@ function ProgrammesChart(props) {
     })
   );
 
-  var withValues = (0, _preact.h)(_index2.default, {
-    max: 690,
-    offset: 150,
-    values: sourceItems,
-    downloadable: true,
-    name: 'programmes-chart'
-  });
+  var withValues = (0, _preact.h)(_index2.default, _extends({
+    name: 'programmes-chart',
+    guides: !mobile,
+    hover: !mobile
+  }, { width: width, parentAction: parentAction, items: items }));
 
-  var downloadPrompt = (0, _preact.h)(
-    'div',
-    { className: 'Page-section' },
-    (0, _preact.h)(_index4.default, {
-      selected: this.props.downloadSelected,
-      changeAction: this.props.changeAction,
-      name: 'programmes-chart',
-      open: this.props.open,
-      canvasAction: this.props.canvasAction,
-      clickAction: this.props.clickAction,
-      items: this.props.downloadItems,
-      closeModal: this.props.closeModal,
-      modal: this.props.modal
-    })
+  var downloadButton = (0, _preact.h)(
+    'button',
+    { className: 'Button is-inline', onClick: downloadAction },
+    'Download chart as image'
   );
 
   return (0, _preact.h)(
     'div',
-    { className: 'Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark' },
+    { className: 'Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark', id: 'programmes-chart' },
+    (0, _preact.h)('canvas', { ref: function ref(node) {
+        return canvasAction(node);
+      }, style: { display: 'none' } }),
     (0, _preact.h)(
-      'div',
-      { className: 'Page-section u-paddingBottom u-paddingBottom--0' },
+      _index10.default,
+      {
+        title: 'Share this link:',
+        closeAction: closeModal,
+        open: modal
+      },
       (0, _preact.h)(
-        'h2',
-        { className: 'Page-subHeading' },
-        'Programme budgets for ',
-        year
-      ),
-      (0, _preact.h)(
-        'p',
-        null,
-        'A department\'s programmes are the activities that it spends money on during the financial year. Different programmes have different expenditure budgets, depending on their requirements and available finances. More detail on the programmes is available in the department\'s Estimates of National Expenditure (ENE) documents.'
+        'a',
+        { className: 'u-wordBreak u-wordBreak--breakAll', href: window.location.href + '#programmes-chart' },
+        window.location.href + '#programmes-chart'
       )
     ),
     (0, _preact.h)(
       'div',
-      { className: 'Page-section Page-section--card u-paddingTop u-paddingTop--40' },
-      hasNull ? noValues : withValues
-    ),
-    hasNull ? null : downloadPrompt,
-    (0, _preact.h)(
-      'div',
-      { className: 'Page-section' },
-      Object.keys(files).map(function (key) {
-        return (0, _preact.h)(_index6.default, { title: key, link: files[key], icon: true });
-      })
+      { className: 'ProgrammesChart' },
+      (0, _preact.h)(
+        'div',
+        { className: 'ProgrammesChart-info' },
+        (0, _preact.h)(
+          'div',
+          { className: 'Page-section' },
+          (0, _preact.h)(
+            'div',
+            { className: 'Page-subHeading' },
+            'Programme budgets for ',
+            year
+          ),
+          (0, _preact.h)(
+            'p',
+            null,
+            'A department\'s programmes are the activities that it spends money on during the financial year. Different programmes have different expenditure budgets, depending on their requirements and available finances. More detail on the programmes is available in the department\'s Estimates of National Expenditure (ENE) documents.'
+          )
+        ),
+        (0, _preact.h)(
+          'div',
+          { className: 'Page-section' },
+          (0, _preact.h)(
+            'div',
+            { className: 'u-fontWeightBold' },
+            'Sources'
+          ),
+          (0, _preact.h)(
+            'p',
+            null,
+            'The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year.'
+          ),
+          Object.keys(files).map(function (key) {
+            return (0, _preact.h)(
+              'div',
+              null,
+              (0, _preact.h)(_index4.default, { title: key, link: files[key], icon: true })
+            );
+          })
+        ),
+        (0, _preact.h)(
+          'div',
+          { className: 'Page-section' },
+          (0, _preact.h)(
+            'div',
+            { className: 'u-fontWeightBold u-marginBottom10' },
+            'Share this chart:'
+          ),
+          (0, _preact.h)(
+            'div',
+            { className: 'ProgrammesChart-share' },
+            (0, _preact.h)(
+              'div',
+              { className: 'ProgrammesChart-shareDropdown' },
+              (0, _preact.h)(_index6.default, _extends({
+                name: name + '-share-selection',
+                items: _shareSelections2.default
+              }, { open: open, selected: selected, changeAction: changeAction }))
+            ),
+            (0, _preact.h)(
+              'div',
+              { className: 'ProgrammesChart-shareButton u-marginLeft5' },
+              (0, _preact.h)(
+                'button',
+                { onClick: shareAction, className: 'Button is-inline has-icon u-transformRotate270' },
+                (0, _preact.h)(_index8.default, { type: 'download', size: 'small' })
+              )
+            )
+          )
+        )
+      ),
+      (0, _preact.h)(
+        'div',
+        { className: 'ProgrammesChart-chart' },
+        (0, _preact.h)(
+          'div',
+          { className: 'Page-section Page-section--card' },
+          hasNull ? noValues : withValues
+        ),
+        (0, _preact.h)(
+          'div',
+          { className: 'Page-section u-textAlignCenter' },
+          hasNull ? null : downloadButton
+        )
+      )
     )
   );
 }
 
 /***/ }),
-/* 176 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20756,7 +20887,7 @@ exports.default = Download;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(19);
+var _index = __webpack_require__(13);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -20775,7 +20906,7 @@ function Download(_ref) {
 
   return (0, _preact.h)(
     'a',
-    { href: link, className: 'Download-link' },
+    { href: link, className: 'Download' },
     icon ? iconSection : null,
     (0, _preact.h)(
       'span',
@@ -20786,7 +20917,65 @@ function Download(_ref) {
 }
 
 /***/ }),
+/* 176 */
+/***/ (function(module, exports) {
+
+module.exports = {"As link":"link","On Facebook":"facebook","On Twitter":"twitter"}
+
+/***/ }),
 /* 177 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = calcShareAction;
+
+var _analyticsEvent = __webpack_require__(6);
+
+var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function calcShareAction(selected, anchorString, updateModal) {
+  console.log(window.location.href, anchor, anchor ? true : false);
+  var url = encodeURIComponent(window.location.href);
+  var anchor = anchorString ? '#' + anchorString : '';
+  var message = encodeURIComponent('SA Budget Data from vulekamali');
+
+  var copyText = function copyText() {
+    (0, _analyticsEvent2.default)('send', 'social', 'email', 'share', url);
+    updateModal();
+  };
+
+  var fbDirect = function fbDirect() {
+    (0, _analyticsEvent2.default)('send', 'social', 'facebook', 'share', url);
+    var win = window.open('https://www.facebook.com/sharer/sharer.php?u=' + url + anchor, '_blank');
+    win.focus();
+  };
+
+  var twDirect = function twDirect() {
+    (0, _analyticsEvent2.default)('send', 'social', 'twitter', 'share', url);
+    var win = window.open('https://twitter.com/home?status=' + message + '%20' + url + anchor, '_blank');
+    win.focus();
+  };
+
+  if (selected === 'link') {
+    return copyText();
+  } else if (selected === 'facebook') {
+    return fbDirect();
+  } else if (selected === 'twitter') {
+    return twDirect();
+  }
+
+  return null;
+}
+
+/***/ }),
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20802,15 +20991,15 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _preactRenderToString = __webpack_require__(22);
+var _preactRenderToString = __webpack_require__(24);
 
 var _preactRenderToString2 = _interopRequireDefault(_preactRenderToString);
 
-var _canvgBrowser = __webpack_require__(23);
+var _canvgBrowser = __webpack_require__(25);
 
 var _canvgBrowser2 = _interopRequireDefault(_canvgBrowser);
 
-var _index = __webpack_require__(178);
+var _index = __webpack_require__(179);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -20818,7 +21007,7 @@ var _decodeHtmlEntities = __webpack_require__(1);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
-var _index3 = __webpack_require__(4);
+var _index3 = __webpack_require__(2);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -20975,7 +21164,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20991,15 +21180,15 @@ exports.default = ProgrammesChart;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(11);
+var _index = __webpack_require__(17);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(24);
+var _index3 = __webpack_require__(45);
 
 var _index4 = _interopRequireDefault(_index3);
 
-var _index5 = __webpack_require__(179);
+var _index5 = __webpack_require__(180);
 
 var _index6 = _interopRequireDefault(_index5);
 
@@ -21034,7 +21223,7 @@ function ProgrammesChart(props) {
     { className: 'Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark' },
     (0, _preact.h)(
       'div',
-      { className: 'Page-section u-paddingBottom u-paddingBottom--0' },
+      { className: 'Page-section u-paddingBottom0' },
       (0, _preact.h)(
         'h2',
         { className: 'Page-subHeading' },
@@ -21053,7 +21242,7 @@ function ProgrammesChart(props) {
     ),
     (0, _preact.h)(
       'div',
-      { className: 'Page-section Page-section--card u-paddingTop u-paddingTop--10' },
+      { className: 'Page-section Page-section--card u-paddingTop10' },
       (0, _preact.h)(_index2.default, {
         max: 690,
         offset: 170,
@@ -21064,7 +21253,7 @@ function ProgrammesChart(props) {
       }),
       (0, _preact.h)(
         'div',
-        { className: 'u-textAlign u-textAlign--center u-marginTop u-marginTop--20' },
+        { className: 'u-textAlignCenter u-marginTop20' },
         (0, _preact.h)(_index6.default, {
           items: sourceRadios,
           selected: sourceSelected,
@@ -21092,7 +21281,7 @@ function ProgrammesChart(props) {
 }
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21148,7 +21337,7 @@ function Radios(_ref) {
 }
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21160,7 +21349,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(39);
+var _index = __webpack_require__(18);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -21187,7 +21376,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21207,11 +21396,11 @@ var _decodeHtmlEntities = __webpack_require__(1);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
-var _index = __webpack_require__(182);
+var _index = __webpack_require__(183);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _filterResults = __webpack_require__(188);
+var _filterResults = __webpack_require__(189);
 
 var _filterResults2 = _interopRequireDefault(_filterResults);
 
@@ -21335,7 +21524,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21348,11 +21537,11 @@ exports.default = DeptSearchMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(183);
+var _index = __webpack_require__(184);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(186);
+var _index3 = __webpack_require__(187);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -21435,7 +21624,7 @@ function DeptSearchMarkup(_ref) {
 }
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21452,11 +21641,11 @@ var _index = __webpack_require__(3);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _provinces = __webpack_require__(184);
+var _provinces = __webpack_require__(185);
 
 var _provinces2 = _interopRequireDefault(_provinces);
 
-var _spheres = __webpack_require__(185);
+var _spheres = __webpack_require__(186);
 
 var _spheres2 = _interopRequireDefault(_spheres);
 
@@ -21545,19 +21734,19 @@ function DeptGroup(_ref) {
 }
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, exports) {
 
 module.exports = {"All Provinces":"all","Eastern Cape":"eastern-cape","Free State":"free-state","Gauteng":"gauteng","KwaZulu-Natal":"kwazulu-natal","Limpopo":"limpopo","Mpumalanga":"mpumalanga","North West":"north-west","Northern Cape":"northern-cape","Western Cape":"western-cape"}
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, exports) {
 
 module.exports = {"All spheres of government":"all","National":"national","Provincial":"provincial"}
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21570,7 +21759,7 @@ exports.default = DeptGroup;
 
 var _preact = __webpack_require__(0);
 
-var _Map = __webpack_require__(187);
+var _Map = __webpack_require__(188);
 
 var _Map2 = _interopRequireDefault(_Map);
 
@@ -21599,7 +21788,7 @@ function DeptGroup(_ref) {
         ),
         (0, _preact.h)(
           'p',
-          { className: 'u-fontStyle u-fontStyle--italic' },
+          { className: 'u-fontStyleItalic' },
           'This data is not yet available. Provincial budgets are tabled after the national budget has been announced. This is because the national budget determines the amount of money each province receives. We expect to be able make provincial budget data available by 29 March 2018.'
         )
       ),
@@ -21651,7 +21840,7 @@ function DeptGroup(_ref) {
 }
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21752,7 +21941,7 @@ function Map(province) {
 }
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21766,11 +21955,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports.default = filterResults;
 
-var _filterKeywords = __webpack_require__(189);
+var _filterKeywords = __webpack_require__(190);
 
 var _filterKeywords2 = _interopRequireDefault(_filterKeywords);
 
-var _filterGroups = __webpack_require__(190);
+var _filterGroups = __webpack_require__(191);
 
 var _filterGroups2 = _interopRequireDefault(_filterGroups);
 
@@ -21811,7 +22000,7 @@ function filterResults(filtersObject, rawItems) {
 }
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21825,7 +22014,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports.default = filterKeywords;
 
-var _fuse = __webpack_require__(20);
+var _fuse = __webpack_require__(22);
 
 var _fuse2 = _interopRequireDefault(_fuse);
 
@@ -21852,7 +22041,7 @@ function filterKeywords(keywords, results) {
 }
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21878,7 +22067,7 @@ function filterAccordingToSphere(items, group, remove) {
 }
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21888,7 +22077,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(192);
+var _index = __webpack_require__(193);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -21947,13 +22136,11 @@ for (var i = 0; i < nodes.length; i++) {
   var items = JSON.parse((0, _decodeHtmlEntities2.default)(node.getAttribute('data-items')));
   var currentMonth = Object.keys(items)[currentMonthIndex];
 
-  console.log(items, currentMonth);
-
   (0, _preact.render)((0, _preact.h)(ParticipateContainer, { items: items, currentMonth: currentMonth }), node);
 }
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21980,7 +22167,7 @@ function Participate(_ref) {
       'button',
       {
         key: month,
-        className: 'Button is-lightGrey is-inline u-marginRight u-marginRight--10 u-marginBottom u-marginBottom--10' + activeState,
+        className: 'Button is-lightGrey is-inline u-marginRight10 u-marginBottom10' + activeState,
         onClick: function onClick() {
           return setMonth(month);
         }
@@ -21995,7 +22182,7 @@ function Participate(_ref) {
       'a',
       {
         href: items[selected].buttons[key],
-        className: 'Button is-inline u-marginRight u-marginRight--10 u-marginBottom u-marginBottom--10',
+        className: 'Button is-inline u-marginRight10 u-marginBottom10',
         key: key
       },
       key
@@ -22035,7 +22222,168 @@ function Participate(_ref) {
 }
 
 /***/ }),
-/* 193 */
+/* 194 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+var _index = __webpack_require__(195);
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var IntroSectionContainer = function (_Component) {
+  _inherits(IntroSectionContainer, _Component);
+
+  function IntroSectionContainer(props) {
+    _classCallCheck(this, IntroSectionContainer);
+
+    var _this = _possibleConstructorReturn(this, (IntroSectionContainer.__proto__ || Object.getPrototypeOf(IntroSectionContainer)).call(this, props));
+
+    _this.state = {
+      open: false,
+      triggered: false
+    };
+
+    _this.parent = null;
+    _this.setOpen = _this.setOpen.bind(_this);
+    _this.parentAction = _this.parentAction.bind(_this);
+    return _this;
+  }
+
+  _createClass(IntroSectionContainer, [{
+    key: 'setOpen',
+    value: function setOpen() {
+      this.setState({ open: !this.state.open });
+    }
+  }, {
+    key: 'parentAction',
+    value: function parentAction(node) {
+      if (node && this.parent !== node.clientHeight) {
+        this.parent = node.clientHeight;
+        this.calcIfTriggered(node.clientHeight);
+      }
+    }
+  }, {
+    key: 'calcIfTriggered',
+    value: function calcIfTriggered(value) {
+      if (value > 190) {
+        return this.setState({ triggered: true });
+      }
+
+      return this.setState({ triggered: false });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return (0, _preact.h)(_index2.default, {
+        triggered: this.state.triggered,
+        innerHtml: this.props.innerHtml,
+        setOpen: this.setOpen,
+        open: this.state.open,
+        parentAction: this.parentAction
+      });
+    }
+  }]);
+
+  return IntroSectionContainer;
+}(_preact.Component);
+
+function scripts() {
+  var nodes = document.getElementsByClassName('js-initIntroSection');
+
+  for (var i = 0; i < nodes.length; i++) {
+    var node = nodes[i];
+    var innerHtml = node.getElementsByClassName('js-content')[0].innerHTML;
+
+    (0, _preact.render)((0, _preact.h)(IntroSectionContainer, { innerHtml: innerHtml }), node.parentNode, node);
+  }
+}
+
+exports.default = scripts();
+
+/***/ }),
+/* 195 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = IntroSection;
+
+var _preact = __webpack_require__(0);
+
+function IntroSection(_ref) {
+  var innerHtml = _ref.innerHtml,
+      open = _ref.open,
+      setOpen = _ref.setOpen,
+      parentAction = _ref.parentAction,
+      triggered = _ref.triggered;
+
+  var prompt = (0, _preact.h)(
+    "div",
+    null,
+    (0, _preact.h)("div", { className: "IntroSection-fade" }),
+    (0, _preact.h)(
+      "div",
+      { className: "IntroSection-button" },
+      (0, _preact.h)(
+        "button",
+        { className: "Button is-secondary is-inline", onClick: setOpen },
+        "Read More"
+      )
+    )
+  );
+
+  if (triggered) {
+    return (0, _preact.h)(
+      "div",
+      { className: "IntroSection-text is-initialised " + (open ? ' is-open' : '') },
+      (0, _preact.h)("div", {
+        className: "IntroSection-content",
+        dangerouslySetInnerHTML: { __html: innerHtml },
+        ref: function ref(node) {
+          return parentAction(node);
+        }
+      }),
+      open ? null : prompt
+    );
+  }
+
+  return (0, _preact.h)(
+    "div",
+    { className: "IntroSection-text" },
+    (0, _preact.h)("div", {
+      className: "IntroSection-content",
+      dangerouslySetInnerHTML: { __html: innerHtml },
+      ref: function ref(node) {
+        return parentAction(node);
+      }
+    })
+  );
+}
+
+/***/ }),
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22055,7 +22403,7 @@ var _decodeHtmlEntities = __webpack_require__(1);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
-var _index = __webpack_require__(194);
+var _index = __webpack_require__(197);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -22133,7 +22481,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 194 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22194,7 +22542,7 @@ function Modal(_ref) {
 }
 
 /***/ }),
-/* 195 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22208,7 +22556,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(15);
+var _index = __webpack_require__(12);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -22285,7 +22633,7 @@ function init() {
 exports.default = init();
 
 /***/ }),
-/* 196 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22299,11 +22647,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _DebounceFunction = __webpack_require__(38);
+var _DebounceFunction = __webpack_require__(11);
 
 var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
 
-var _index = __webpack_require__(4);
+var _index = __webpack_require__(2);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -22335,9 +22683,15 @@ var BarChartContainer = function (_Component) {
         _this.setState({ mobile: true });
       }
 
-      if (_this.node && _this.node.offsetWidth > 200 && _this.node.offsetWidth !== _this.state.width) {
-        _this.setState({ width: _this.node.offsetWidth });
+      if (_this.node && _this.node.offsetWidth !== _this.state.width) {
+        if (_this.node.offsetWidth <= 200 && _this.state.width !== 200) {
+          return _this.setState({ width: 200 });
+        }
+
+        return _this.setState({ width: _this.node.offsetWidth });
       }
+
+      return null;
     };
 
     var viewportDebounce = new _DebounceFunction2.default(300);
@@ -22383,7 +22737,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 197 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22395,21 +22749,131 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _preactRenderToString = __webpack_require__(22);
+var _preact = __webpack_require__(0);
+
+var _DebounceFunction = __webpack_require__(11);
+
+var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
+
+var _index = __webpack_require__(18);
+
+var _index2 = _interopRequireDefault(_index);
+
+var _index3 = __webpack_require__(2);
+
+var _index4 = _interopRequireDefault(_index3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ColumnChartContainer = function (_Component) {
+  _inherits(ColumnChartContainer, _Component);
+
+  function ColumnChartContainer(props) {
+    _classCallCheck(this, ColumnChartContainer);
+
+    var _this = _possibleConstructorReturn(this, (ColumnChartContainer.__proto__ || Object.getPrototypeOf(ColumnChartContainer)).call(this, props));
+
+    _this.state = {
+      width: 200,
+      mobile: true
+    };
+
+    _this.updateWidth = function () {
+      console.log(_this.state.width);
+
+      if (_this.state.mobile && window.innerWidth >= 600) {
+        _this.setState({ mobile: false });
+      } else if (!_this.state.mobile && window.innerWidth < 600) {
+        _this.setState({ mobile: true });
+      }
+
+      if (_this.node && _this.node.offsetWidth > 200 && _this.node.offsetWidth !== _this.state.width) {
+        _this.setState({ width: _this.node.offsetWidth });
+      }
+    };
+
+    var viewportDebounce = new _DebounceFunction2.default(300);
+    var updateViewport = function updateViewport() {
+      return viewportDebounce.update(_this.updateWidth);
+    };
+
+    window.addEventListener('resize', updateViewport);
+
+    _this.node = null;
+    _this.parentAction = _this.parentAction.bind(_this);
+    return _this;
+  }
+
+  _createClass(ColumnChartContainer, [{
+    key: 'parentAction',
+    value: function parentAction(node) {
+      this.node = node;
+      this.updateWidth();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var props = {
+        items: { 'Test 1': [10, 50, 20], 'Test 2': [30, 10, 40], 'Test 3': [20, 20, 40] },
+        width: this.state.width,
+        parentAction: this.parentAction,
+        guides: !this.state.mobile,
+        hover: !this.state.mobile
+      };
+
+      if (this.state.width > 500) {
+        return (0, _preact.h)(_index2.default, props);
+      }
+
+      return (0, _preact.h)(_index4.default, props);
+    }
+  }]);
+
+  return ColumnChartContainer;
+}(_preact.Component);
+
+function scripts() {
+  var node = document.getElementById('column-responsive-chart-example-16-03');
+
+  (0, _preact.render)((0, _preact.h)(ColumnChartContainer, null), node);
+}
+
+exports.default = scripts();
+
+/***/ }),
+/* 201 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preactRenderToString = __webpack_require__(24);
 
 var _preactRenderToString2 = _interopRequireDefault(_preactRenderToString);
 
-var _canvgBrowser = __webpack_require__(23);
+var _canvgBrowser = __webpack_require__(25);
 
 var _canvgBrowser2 = _interopRequireDefault(_canvgBrowser);
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(24);
+var _index = __webpack_require__(45);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(4);
+var _index3 = __webpack_require__(2);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -22526,7 +22990,7 @@ function basicScript() {
 exports.default = basicScript();
 
 /***/ }),
-/* 198 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

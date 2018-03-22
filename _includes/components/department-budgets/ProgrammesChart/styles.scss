@@ -1,0 +1,31 @@
+.ProgrammesChart {
+  @include clearfix;
+}
+
+.ProgrammesChart-info {
+  @media screen and ($tablet-breakpoint) {
+    width: 40%;
+    float: left;
+  }
+}
+
+.ProgrammesChart-chart {
+  @media screen and ($tablet-breakpoint) {
+    width: 60%;
+    float: right;
+  }
+}
+
+.ProgrammesChart-share {
+  @include clearfix;
+}
+
+.ProgrammesChart-shareDropdown {
+  float: left;
+  width: 100%;
+  max-width: 190px;
+}
+
+.ProgrammesChart-shareButton {
+  float: left;
+}

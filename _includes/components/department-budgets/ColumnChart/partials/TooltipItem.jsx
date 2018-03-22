@@ -2,13 +2,13 @@ import { h } from 'preact';
 import trimValues from './../../../../utilities/js/helpers/trimValues.js';
 
 
-export default function TooltipItem({ styling, xTriggerPosition, xPosition, yPosition, amount, totalGroupSpace }) {
+export default function TooltipItem({ styling, xTriggerPosition, xPosition, yPosition, amount, colour, totalGroupSpace }) {
   const { barWidth, lineGutter, padding, popupWidth, popupHeight, buffer, svgHeight, popupFontSize } = styling;
 
   // const { popUpOffset } = styling;
 
   return (
-    <g className="Graph-tooltip">
+    <g className="ColumnChart-tooltip">
 
       {/* <rect
         x={xPosition - (popupWidth / 2)}
@@ -46,7 +46,7 @@ export default function TooltipItem({ styling, xTriggerPosition, xPosition, yPos
         y={yPosition}
         width={popupWidth}
         height={popupHeight}
-        fill="#79b43c"
+        fill={colour}
       />
 
       <polygon
@@ -60,7 +60,7 @@ export default function TooltipItem({ styling, xTriggerPosition, xPosition, yPos
           ${xPosition - (barWidth / 2)},
           ${yPosition + popupHeight}
         `}
-        fill="#79b43c"
+        fill={colour}
       />
 
       <text

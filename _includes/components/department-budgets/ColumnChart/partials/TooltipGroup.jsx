@@ -1,6 +1,12 @@
 import { h } from 'preact';
 import TooltipItem from './TooltipItem.jsx';
 
+const colours = [
+  '#79b43c',
+  '#4a4a4a',
+  '#ad3c64',
+];
+
 
 export default function TooltipGroup({ totalGroupSpace, groupSpaceArray, rank, lines, title, styling }) {
   const {
@@ -60,6 +66,7 @@ export default function TooltipGroup({ totalGroupSpace, groupSpaceArray, rank, l
               xPosition={startPoint + centeringSpace + (index * (barWidth + lineGutter))}
               yPosition={(padding[0] + svgHeight + barWidth) - ((barWidth * 2) + displayAmount + popUpOffset + popupHeight)}
               {...{ amount, totalGroupSpace }}
+              colour={colours[index]}
             />
           );
         })

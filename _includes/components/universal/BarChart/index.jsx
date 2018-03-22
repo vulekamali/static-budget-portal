@@ -10,6 +10,7 @@ import Tooltips from './partials/Tooltips.jsx';
 
 
 export default function BarChart({ items, width, hover, guides, scale = 1, downloadable, parentAction }) {
+
   let styling = {
     fontSize: 14,
     popupFontSize: 14,

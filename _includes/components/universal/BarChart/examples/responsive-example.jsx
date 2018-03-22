@@ -19,13 +19,15 @@ class BarChartContainer extends Component {
         this.setState({ mobile: true });
       }
 
-      if (
-        this.node &&
-        this.node.offsetWidth > 200 &&
-        this.node.offsetWidth !== this.state.width
-      ) {
-        this.setState({ width: this.node.offsetWidth });
+      if (this.node && this.node.offsetWidth !== this.state.width) {
+        if (this.node.offsetWidth <= 200 && this.state.width !== 200) {
+          return this.setState({ width: 200 });
+        }
+
+        return this.setState({ width: this.node.offsetWidth });
       }
+
+      return null;
     };
 
     const viewportDebounce = new DebounceFunction(300);

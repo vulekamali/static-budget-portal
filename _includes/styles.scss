@@ -20,7 +20,6 @@
 @import 'utilities/scss/animation/pop';
 
 @import 'utilities/scss/utility-classes/u-sReadOnly';
-@import 'utilities/scss/utility-classes/u-Button';
 @import 'utilities/scss/utility-classes/u-listReset';
 @import 'utilities/scss/utility-classes/u-listItemReset';
 
@@ -36,6 +35,7 @@
 @import 'utilities/scss/utility-classes/u-marginBottom';
 @import 'utilities/scss/utility-classes/u-marginRight';
 
+@import 'utilities/scss/utility-classes/u-transform';
 @import 'utilities/scss/utility-classes/u-underline';
 @import 'utilities/scss/utility-classes/u-fontWeight';
 @import 'utilities/scss/utility-classes/u-fontSize';
@@ -87,10 +87,11 @@
 @import 'components/department-budgets/DeptFiles/styles';
 @import 'components/department-budgets/DeptGroup/styles';
 @import 'components/department-budgets/DeptSearch/styles';
-@import 'components/department-budgets/Programmes/styles';
 @import 'components/department-budgets/Radios/styles';
 @import 'components/department-budgets/Resources/styles';
 @import 'components/department-budgets/Participate/styles';
+@import 'components/department-budgets/IntroSection/styles';
+@import 'components/department-budgets/ProgrammesChart/styles';
 
 @import 'components/contributed-data/CsoDirectory/styles';
 @import 'components/contributed-data/CsoFiles/styles';
