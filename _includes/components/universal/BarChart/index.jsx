@@ -91,7 +91,7 @@ export default function BarChart({ items, width, hover, guides, scale = 1, downl
     return (
       <div
         className="BarChart"
-        ref={node => parentAction(node)}
+        ref={node => parentAction && parentAction(node)}
       >
         {content}
       </div>
