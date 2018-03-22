@@ -2,10 +2,9 @@ import queryString from 'query-string';
 
 
 function loadStringQueries() {
-  window.budgetPortal = {
-    stringQueries: queryString.parse(location.search) || {},
-  };
+  const object = queryString.parse(location.search);
+  window.vulekamali = {};
+  window.vulekamali.qs = object;
 }
-
 
 export default loadStringQueries();
