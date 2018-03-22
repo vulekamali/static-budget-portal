@@ -1,17 +1,25 @@
 .IntroSection {
-  display: table;
-  margin: 0 auto;
+  @media screen and ($tablet-breakpoint) {
+    display: table;
+    margin: 0 auto;
+  }
 }
 
 .IntroSection-box {
-  display: table-cell;
-  width: 362px;
-  padding-left: 35px;
+  @media screen and ($tablet-breakpoint) {
+    display: table-cell;
+    width: 362px;
+    padding-left: 35px;
+  }
 }
 
 .IntroSection-textWrap {
-  display: table-cell;
-  width: 676px;
+  margin-bottom: 30px;
+
+  @media screen and ($tablet-breakpoint) {
+    display: table-cell;
+    width: 676px;
+  }
 }
 
 .IntroSection-text {

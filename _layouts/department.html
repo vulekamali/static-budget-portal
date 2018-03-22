@@ -23,12 +23,18 @@ layout: page-shell
     {%
       include components/department-budgets/IntroSection/index.html
       description=page_data.intro
+      datasets=page_data.treasury_datasets
     %}
 
     {%
       include components/department-budgets/ProgrammesChart/index.html
       values=page_data.programmes
       year=page.financial_year
+    %}
+
+    {%
+      include components/department-budgets/ContributedData/index.html
+      datasets=page_data.contributed_datasets
     %}
 
   </div>

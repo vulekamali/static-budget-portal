@@ -1,16 +1,18 @@
 .ProgrammesChart {
-  @include clearfix;
+  @media screen and ($standard-breakpoint) {
+    @include clearfix;
+  }
 }
 
 .ProgrammesChart-info {
-  @media screen and ($tablet-breakpoint) {
+  @media screen and ($standard-breakpoint) {
     width: 40%;
     float: left;
   }
 }
 
 .ProgrammesChart-chart {
-  @media screen and ($tablet-breakpoint) {
+  @media screen and ($standard-breakpoint) {
     width: 60%;
     float: right;
   }

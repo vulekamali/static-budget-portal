@@ -650,6 +650,10 @@ li {
 .u-marginRight400 {
   margin-right: 400 !important; }
 
+.u-transformRotate270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg); }
+
 .u-textDecorationUnderline {
   text-decoration: underline !important; }
 
@@ -658,6 +662,9 @@ li {
 
 .u-fontSize16 {
   font-size: 16px !important; }
+
+.u-fontSize14 {
+  font-size: 14px !important; }
 
 .u-wordBreakBreakAll {
   word-break: break-all !important; }
@@ -687,7 +694,7 @@ li {
   width: 100%;
   display: block;
   border: 0;
-  border-radius: 18px;
+  border-radius: 50px;
   background-color: #7bb344;
   font-size: 14px;
   font-weight: bold;
@@ -760,18 +767,12 @@ li {
   padding: 0 5px; }
 
 .Download {
-  display: block;
-  float: left;
-  padding: 5px;
-  width: 100%; }
-
-.Download-link {
   display: inline-block;
   color: #3f3f3f;
   padding: 3px 6px 6px;
   border-radius: 5px;
   font-size: 14px; }
-  .Download-link:hover {
+  .Download:hover {
     background-color: silver; }
 
 .Download-icon {
@@ -3375,18 +3376,23 @@ li {
 .Participate-info {
   margin-top: 15px; }
 
-.IntroSection {
-  display: table;
-  margin: 0 auto; }
+@media screen and (min-width: 750px) {
+  .IntroSection {
+    display: table;
+    margin: 0 auto; } }
 
-.IntroSection-box {
-  display: table-cell;
-  width: 362px;
-  padding-left: 35px; }
+@media screen and (min-width: 750px) {
+  .IntroSection-box {
+    display: table-cell;
+    width: 362px;
+    padding-left: 35px; } }
 
 .IntroSection-textWrap {
-  display: table-cell;
-  width: 676px; }
+  margin-bottom: 30px; }
+  @media screen and (min-width: 750px) {
+    .IntroSection-textWrap {
+      display: table-cell;
+      width: 676px; } }
 
 .IntroSection-text {
   max-height: 200px;
@@ -3410,16 +3416,54 @@ li {
   width: 100%;
   position: absolute; }
 
-.ProgrammesChart {
-  display: table; }
+@media screen and (min-width: 1050px) {
+  .ProgrammesChart::after {
+    clear: both;
+    content: "";
+    display: block; } }
 
-.ProgrammesChart-info {
-  width: 200px;
-  display: table-cell; }
+@media screen and (min-width: 1050px) {
+  .ProgrammesChart-info {
+    width: 40%;
+    float: left; } }
 
-.ProgrammesChart-chart {
-  display: table-cell;
-  width: 200px; }
+@media screen and (min-width: 1050px) {
+  .ProgrammesChart-chart {
+    width: 60%;
+    float: right; } }
+
+.ProgrammesChart-share::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.ProgrammesChart-shareDropdown {
+  float: left;
+  width: 100%;
+  max-width: 190px; }
+
+.ProgrammesChart-shareButton {
+  float: left; }
+
+@media screen and (min-width: 500px) {
+  .ContributedItem {
+    display: table;
+    width: 100%; } }
+
+@media screen and (min-width: 500px) {
+  .ContributedItem-info {
+    display: table-cell;
+    vertical-align: middle; } }
+
+.ContributedItem-button {
+  margin-top: 20px; }
+  @media screen and (min-width: 500px) {
+    .ContributedItem-button {
+      margin-top: 0;
+      display: table-cell;
+      width: 190px;
+      vertical-align: middle;
+      text-align: center; } }
 
 .CsoDirectory::after {
   clear: both;
@@ -4536,4 +4580,4 @@ li {
   width: 100%;
   height: 100%; }
 
-/*# sourceMappingURL=styles.74167708946363d238eceac520a4caea.css.map*/
+/*# sourceMappingURL=styles.34e769220003134bd30c1d6961af4ee2.css.map*/
