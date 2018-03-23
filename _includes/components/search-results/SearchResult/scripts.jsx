@@ -80,17 +80,29 @@ class SearchResultContainer extends Component {
 
   render() {
     return (
-      <SearchResult results={this.state.results} search={this.props.search} selectedYear={this.props.selectedYear} updateFilter={this.updateFilter} shown={this.state.shown} changeShown={this.changeShown} page={this.state.page} province={this.state.province} state={this.state} updateItem={this.updateItem} error={this.state.error} loading={this.state.loading} />
+      <SearchResult
+        results={this.state.results}
+        search={this.props.search}
+        selectedYear={this.props.selectedYear}
+        updateFilter={this.updateFilter}
+        shown={this.state.shown}
+        changeShown={this.changeShown}
+        page={this.state.page}
+        province={this.state.province} 
+        state={this.state}
+        updateItem={this.updateItem}
+        error={this.state.error}
+        loading={this.state.loading}
+      />
     );
   }
 }
 
 
-
 function scripts() {
   const nodes = document.getElementsByClassName('js-initSearchResult');
   const nodesArray = [...nodes];
-  const { search } = window.budgetPortal.stringQueries;
+  const { search } = window.vulekamali.qs;
 
   if (nodesArray.length > 0) {
     nodesArray.forEach((node) => {
