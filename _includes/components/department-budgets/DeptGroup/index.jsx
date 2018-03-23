@@ -10,12 +10,8 @@ export default function DeptGroup({ map, linksArray, name: title, doubleRow, emp
       <div className="DeptGroup">
         <div className="DeptGroup-wrap">
           <h3 className="DeptGroup-title">{title} Department Budgets</h3>
-<<<<<<< HEAD
-          <p className="u-fontStyleItalic">This data is not yet available. Provincial budgets are tabled after the national budget has been announced. This is because the national budget determines the amount of money each province receives. We expect to be able make provincial budget data available by 29 March 2018.</p>
-=======
           <p className="u-fontStyle u-fontStyle--italic">This data is not yet available. Provincial budgets are tabled after the national budget has been announced. This is because the national budget determines the amount of money each province receives. We expect to be able make provincial budget data available by 29 March 2018.</p>
           { epre ? <a target="_blank" className="Button is-inline" href={epre}>Download the full EPRE PDF</a> : null }
->>>>>>> ba2401590c1dc468b9c4b9d37854691326e3be3a
         </div>
         <div className="DeptGroup-map">
           {Map(map)}
