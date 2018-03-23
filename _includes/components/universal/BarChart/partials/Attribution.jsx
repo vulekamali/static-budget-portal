@@ -13,7 +13,7 @@ export default function Attribution({ top, left }) {
         fill="#ed9e31"
         font-family="sans-serif"
       >
-        Downloaded from www.vulekamali.go.za
+        Downloaded from www.vulekamali.gov.za
       </text>
     </g>
   );
