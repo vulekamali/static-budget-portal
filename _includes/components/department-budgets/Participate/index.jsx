@@ -10,7 +10,7 @@ export default function Participate({ items, selected, setMonth }) {
     return (
       <button
         key={month}
-        className={`Button is-lightGrey is-inline u-marginRight u-marginRight--10 u-marginBottom u-marginBottom--10${activeState}`}
+        className={`Button is-lightGrey is-inline u-marginRight10 u-marginBottom10${activeState}`}
         onClick={() => setMonth(month)}
       >
         {month}
@@ -23,7 +23,7 @@ export default function Participate({ items, selected, setMonth }) {
     return (
       <a
         href={items[selected].buttons[key]}
-        className="Button is-inline u-marginRight u-marginRight--10 u-marginBottom u-marginBottom--10"
+        className="Button is-inline u-marginRight10 u-marginBottom10"
         key={key}
       >
         {key}

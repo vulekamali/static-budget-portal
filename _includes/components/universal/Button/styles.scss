@@ -2,7 +2,7 @@
   width: 100%;
   display: block;
   border: 0;
-  border-radius: 18px;
+  border-radius: 50px;
   background-color: #7bb344;
   font-size: 14px;
   font-weight: bold;
@@ -57,6 +57,16 @@
 
     &:hover {
       background: rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &.is-secondary {
+    background: white;
+    border: 1px solid #3F3F3F;
+    color: #3F3F3F;
+
+    &:hover {
+      background: darken(white, 15%);
     }
   }
 }

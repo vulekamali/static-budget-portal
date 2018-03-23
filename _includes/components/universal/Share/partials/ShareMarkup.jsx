@@ -22,7 +22,7 @@ export default function ShareMarkup({ selected, updateShare, modal, shareOpen, u
         open={modal}
         closeAction={closeModal}
       >
-        <a className="u-wordBreak u-wordBreak--breakAll" href={window.location.href}>
+        <a className="u-wordBreakBreakAll" href={window.location.href}>
           {window.location.href}
         </a>
       </Modal>

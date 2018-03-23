@@ -9,61 +9,33 @@ layout: page-shell
 
 
 <div class="Page-content Page-content--dynamicYears">
-  <div class="Page-contentInner">
-    {% if page_data.government.slug == 'south-africa' %}
-      <h1 class="Page-mainHeading">National Department: {{ page_data.name }}</h1>
-    {% else %}
-      <h1 class="Page-mainHeading">{{ page_data.government.name }} Department: {{ page_data.name }}</h1>
-    {% endif %}
-
-    <main class="Page-main" u-marginBottom u-marginBottom--20>
-
-      <div class="Page-sectionWrap Page-sectionWrap--card ">
-        <div class="Page-section Page-section--forceStyling js-tooltips">
-          {{ page_data.intro  | markdownify }}
-        </div>
-      </div>
-
-      {% 
-        include components/department-budgets/ProgrammesChart/index.html 
-        values=page_data.programmes
-        year=page.financial_year
-      %}
-
-
-      {% if page_data.expenditure_over_time %}
-        {% 
-          include components/department-budgets/ExpenditureChart/index.html 
-          values=page_data.expenditure_over_time
-        %}
+  <div class="Page-contentInner Page-contentInner--full">
+    <div class="u-marginBottom25">
+      {% if page_data.government.slug == 'south-africa' %}
+        <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0">{{ page_data.name }}</h1>
+        <span class="Page-subHeading u-textAlignCenter">National Department Budget for {{ page.financial_year }}</span>
+      {% else %}
+        <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0">{{ page_data.name }}</h1>
+        <span class="Page-subHeading u-textAlignCenter">{{ page_data.government.name }} Department Budget for {{ page.financial_year }}</span>
       {% endif %}
+    </div>
 
-    </main>
-    <aside class="Page-sidebar">
+    {%
+      include components/department-budgets/IntroSection/index.html
+      description=page_data.intro
+      datasets=page_data.treasury_datasets
+    %}
 
-      <div class="Page-sectionWrap Page-sectionWrap--card">
-        <div class="Page-section">
-          <h2 class="Page-subHeading">Share this page:</h2>
-          {% include components/universal/Share/index.html %}
-        </div>
-      </div>
+    {%
+      include components/department-budgets/ProgrammesChart/index.html
+      values=page_data.programmes
+      year=page.financial_year
+    %}
 
-      <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--green">
-        <div class="Page-section Page-section--card">
-          {% include components/department-budgets/DeptFiles/index.html treasury=page_data.treasury_datasets cso=page_data.contributed_datasets type="dept" %}
-        </div>
-      </div>
+    {%
+      include components/department-budgets/ContributedData/index.html
+      datasets=page_data.contributed_datasets
+    %}
 
-      <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark">
-        <div class="Page-section Page-section--card">
-          <h2 class="Page-subHeading">How can I contribute?</h2>
-          <p>Do you have data related to this department that you would like to contribute?</p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeK9sfWwfLGReE0qsTudAaz1Z281S2_SsIb35C_B9TdmeLfTw/viewform" class="Button">
-            Send it to us for consideration
-          </a>
-        </div>
-      </div>
-
-    </aside>
   </div>
 </div>

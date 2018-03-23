@@ -36,7 +36,7 @@ for (let i = 0; i < nodes.length; i++) {
   const currentMonthIndex = new Date().getMonth();
   const items = JSON.parse(decodeHtmlEntities(node.getAttribute('data-items')));
   const currentMonth = Object.keys(items)[currentMonthIndex];
-  
+
   render(
     <ParticipateContainer {...{ items, currentMonth }} />,
     node,

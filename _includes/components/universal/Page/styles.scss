@@ -1,7 +1,10 @@
 .Page {
-  display: table;
   width: 100%;
   min-height: 100%;
+
+  @media ($tablet-breakpoint) {
+    display: table;
+  }
 }
 
 .Page-head {
@@ -22,14 +25,19 @@
 }
 
 .Page-footer {
-  height: 1%;
-  display: table-row;
+  @media ($tablet-breakpoint) {
+    height: 1%;
+    display: table-row;
+  }
 }
 
 .Page-contentWrap {
-  height: 98%;
-  display: table-row;
   background-color: $colour-shading-background;
+
+  @media ($tablet-breakpoint) {
+    height: 98%;
+    display: table-row;
+  }
 }
 
 .Page-content {
@@ -49,6 +57,10 @@
   margin: 0 auto;
   padding: 0 5px 100px;
   @include clearfix;
+
+  &--full {
+    max-width: 1800px;
+  }
 
   @media ($mobile-breakpoint) {
     padding: 0 15px 100px;
@@ -74,6 +86,7 @@
   font-size: $font-size-large;
   line-height: 1.29;
   margin: 25px 20px 10px;
+  display: block;
 
   @media ($mobile-breakpoint) {
     margin: 35px 30px 20px;
@@ -89,6 +102,7 @@
   font-size: $font-size-medium;
   font-weight: bold;
   font-weight: 900;
+  display: block;
 }
 
 .Page-grid {

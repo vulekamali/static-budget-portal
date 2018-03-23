@@ -1,6 +1,12 @@
 import { h } from 'preact';
 import breakIntoWrap from './breakIntoWrap.js';
 
+const colours = [
+  '#79b43c',
+  '#4a4a4a',
+  '#ad3c64',
+];
+
 
 export default function LineGroupItem({ totalGroupSpace, groupSpaceArray, rank, lines, title, styling }) {
   const {
@@ -76,7 +82,7 @@ export default function LineGroupItem({ totalGroupSpace, groupSpaceArray, rank, 
               y2={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * charArray.length)}
               x2={(padding[3] + buffer + displayAmount) - barWidth}
               className="Graph-line"
-              stroke="#79b43c"
+              stroke={colours[index]}
             />
           );
         })
