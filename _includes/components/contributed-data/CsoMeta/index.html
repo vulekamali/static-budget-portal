@@ -31,7 +31,7 @@
       {% if include.organization %}
         <dt class="u-sReadOnly">Website</dt>
         <dd class="CsoMeta-listItem">
-          <a class="CsoMeta-line CsoMeta-line--link" href="{{ include.organization.url }}">{{ include.organization.url }}</a>
+          <a class="CsoMeta-line CsoMeta-line--link" href="{{ include.organization.url }}" target="_blank">{{ include.organization.url }}</a>
         </dd>
       {% endif %}
 
@@ -79,7 +79,7 @@
                 <dt class="CsoMeta-listItem is-title">License</dt>
                 <dd class="CsoMeta-listItem">
                   {% if include.license.url %}
-                  <a class="CsoMeta-item CsoMeta-item--link" href="{{ include.license.url }}">{{ include.license.name }}</a>
+                  <a class="CsoMeta-item CsoMeta-item--link" href="{{ include.license.url }}" target="_blank">{{ include.license.name }}</a>
                   {% else %}
                   {{ include.license.name }}
                   {% endif %}
