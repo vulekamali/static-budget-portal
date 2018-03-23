@@ -19,7 +19,7 @@
                 {% assign newFormat = format.format %}
               {% endif %}
   
-              <a class="FileTypes-link" href="{{ format.url }}">
+              <a class="FileTypes-link" href="{{ format.url }}" target="_blank">
                 <span class="FileTypes-itemTitle">{{ title }} ({{ newFormat}})</span>
                 <span class="FileTypes-iconArea">
                   <span class="FileTypes-logoWrap">
@@ -50,7 +50,7 @@
   
           <li class="FileTypes-item">
             <div class="FileTypes-text">Data by {{ item.contributor }}</div>
-            <a class="FileTypes-link" href="{{ item.url_path}}">
+            <a class="FileTypes-link" href="{{ item.url_path}}" target="_blank">
               <span class="FileTypes-itemTitle">{{ item.name }}</span>
             </a>
           </li>

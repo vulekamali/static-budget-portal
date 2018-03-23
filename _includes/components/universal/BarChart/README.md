@@ -9,3 +9,4 @@
 - [Multiple Values example](multiple.html)
 - [Multiple Small example](multiple-small.html)
 - [Responsive Example](responsive-example.html)
+- [Downloadable](downloadable.html)

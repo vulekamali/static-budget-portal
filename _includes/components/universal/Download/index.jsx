@@ -10,7 +10,7 @@ export default function Download({ link, title, icon }) {
   );
 
   return (
-    <a href={link} className="Download">
+    <a href={link} className="Download" target="_blank">
       {icon ? iconSection : null}
       <span>{title}</span>
     </a>
