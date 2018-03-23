@@ -7,17 +7,18 @@ layout: page-shell
   {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.data_key] %}
 {% endif %}
 
+{% if page_data.government.slug == 'south-africa' %}
+  {% assign department_location = 'National' %}
+{% else %}
+  {% assign department_location = page_data.government.name %}
+{% endif %}
+
 
 <div class="Page-content Page-content--dynamicYears">
   <div class="Page-contentInner Page-contentInner--full">
     <div class="u-marginBottom25">
-      {% if page_data.government.slug == 'south-africa' %}
-        <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0">{{ page_data.name }}</h1>
-        <span class="Page-subHeading u-textAlignCenter">National Department Budget for {{ page.financial_year }}</span>
-      {% else %}
-        <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0">{{ page_data.name }}</h1>
-        <span class="Page-subHeading u-textAlignCenter">{{ page_data.government.name }} Department Budget for {{ page.financial_year }}</span>
-      {% endif %}
+      <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0">{{ page_data.name }}</h1>
+      <span class="Page-subHeading u-textAlignCenter"> {{ department_location }} Department Budget for {{ page.financial_year }}</span>
     </div>
 
     {%
@@ -30,6 +31,8 @@ layout: page-shell
       include components/department-budgets/ProgrammesChart/index.html
       values=page_data.programmes
       year=page.financial_year
+      location=department_location
+      department=page_data.name
     %}
 
     {%

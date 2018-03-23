@@ -1,16 +1,19 @@
 import { h } from 'preact';
 import calcMaxValue from './partials/calcMaxValue.js';
 import buildGroupSpaceArray from './partials/buildGroupSpaceArray.js';
+import breakIntoWrap from './partials/breakIntoWrap.js';
 
 import Breakpoints from './partials/Breakpoints.jsx';
 import Grid from './partials/Grid.jsx';
 import Guides from './partials/Guides.jsx';
 import LineGroups from './partials/LineGroups.jsx';
 import Tooltips from './partials/Tooltips.jsx';
+import Attribution from './partials/Attribution.jsx';
+import Heading from './partials/Heading.jsx';
+import Logo from './partials/Logo.jsx';
 
 
 export default function BarChart(props) {
-
   const {
     items,
     width,
@@ -55,9 +58,11 @@ export default function BarChart(props) {
     }
 
     if (downloadable) {
+      const titleArray = breakIntoWrap(downloadable.heading, 33);
+
       styling = {
         ...styling,
-        padding: [30, 140, 90, 30],
+        padding: [83 + (30 * titleArray.length), 140, 137, 30],
         valueSpace: width - (140 + 30),
       };
     }
@@ -91,11 +96,29 @@ export default function BarChart(props) {
 
         {downloadable ? background : null}
 
+        { downloadable ?
+          <Heading
+            left={padding[3]}
+            heading={downloadable.heading}
+            subHeading={downloadable.subHeading}
+            type={downloadable.type}
+          /> :
+          null
+        }
+
         {width > 300 ? <Breakpoints {...{ styling, totalGroupSpace }} /> : null}
         <Grid {...{ styling, totalGroupSpace }} />
         {guides ? <Guides {...{ styling, totalGroupSpace }} /> : null}
         <LineGroups {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
         <Tooltips {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
+
+        { downloadable ?
+          <g>
+            <Logo top={((padding[0] + totalGroupSpace) / 2) + 17} left={padding[3]} />
+            <Attribution top={padding[0] + totalGroupSpace + 90} left={padding[3] + valueSpace} />
+          </g> :
+          null
+        }
       </svg>
     );
 
