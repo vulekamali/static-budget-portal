@@ -180,7 +180,7 @@ function scripts() {
           (innerResults, val) => {
             return {
               ...innerResults,
-              [`${key} (${val.format})`]: val.url,
+              [`${key} (${val.format.replace(/^xls.+/i, 'Excel')})`]: val.url,
             };
           },
           {},

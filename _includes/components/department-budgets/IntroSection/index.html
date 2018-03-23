@@ -14,8 +14,8 @@
         <p>The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year.</p>
 
         {% for item in include.datasets %}
-          <a href="{{ item[1].formats[0].url }}" target="_blank" class="Button u-marginTop30">Download ENE as Excel</a>
-          <a href="{{ item[1].formats[1].url }}" target="_blank" class="Button u-marginTop10">Download ENE as PDF</a>
+          <a href="{{ item[1].formats[0].url }}" target="_blank" class="Button u-marginTop30">Download ENE as PDF</a>
+          <a href="{{ item[1].formats[1].url }}" target="_blank" class="Button u-marginTop10">Download ENE as Excel</a>
         {% endfor %}
 
         <a href="#contributed-data" class="Button is-secondary u-marginTop10">View contributed datasets</a>
