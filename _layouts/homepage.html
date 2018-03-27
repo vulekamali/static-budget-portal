@@ -39,7 +39,7 @@ layout: page-shell
           {% assign finalLink = "http://www.treasury.gov.za/documents/national%20budget/" | append: shortYear | append: "/default.aspx" %}
           {% assign finalTitle = "Explore all National Budget " | append: shortYear | append: " Resources from National Treasury" %}
 
-          <div class="u-marginTop u-marginTop--10">
+          <div class="u-marginTop10">
             {%
               include components/universal/Download/index.html
               link=finalLink
@@ -60,7 +60,7 @@ layout: page-shell
           </div>
         </div>
 
-        <div class="Card Card--dark u-marginTop u-marginTop--40">
+        <div class="Card Card--dark u-marginTop40">
           <h2 class"Card-title">Where National Government gets its money for {{ page.financial_year }}</h2>
           {%
             include components/homepage/Revenue/index.html
@@ -69,7 +69,7 @@ layout: page-shell
 
           {% assign finalDownload = "http://www.treasury.gov.za/documents/national%20budget/" | append: shortYear | append: "/TimeSeries/Excel/Table%202%20-%20Main%20budget%20estimates%20of%20national%20revenue.xlsx" %}
 
-          <div class="u-marginTop u-marginTop--10">
+          <div class="u-marginTop10">
             {%
               include components/universal/Download/index.html
               link=finalDownload
@@ -79,7 +79,7 @@ layout: page-shell
           </div>
         </div>
 
-        <div class="Card Card--dark u-marginTop u-marginTop--40">
+        <div class="Card Card--dark u-marginTop40">
             <h2 class"Card-title">How Government spends its money for {{ page.financial_year }}</h2>
           {%
             include components/homepage/HomeChart/index.html
@@ -90,7 +90,7 @@ layout: page-shell
           {% assign finalRedirect = "/" | append: page.financial_year | append: "/departments" %}
           {% assign finalRedirectTitle = "Explore National and Provincial Expenditure by Department for " | append: page.financial_year %}
 
-          <div class="u-marginTop u-marginTop--10">
+          <div class="u-marginTop10">
             {%
               include components/universal/Download/index.html
               link=finalRedirect
