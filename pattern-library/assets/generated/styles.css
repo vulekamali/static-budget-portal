@@ -2638,14 +2638,31 @@ li {
       .SubLinks-subLink.is-active {
         cursor: default; } }
 
-.YearSelect {
+@media screen and (min-width: 900px) {
+  .YearSelect {
+    padding-top: 15px; } }
+
+.YearSelect-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s; }
+  .YearSelect-fixed.is-active {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+
+.YearSelect-instance {
   text-align: center;
   padding: 0 20px;
   background: #3f3f3f;
   color: white; }
   @media screen and (min-width: 900px) {
-    .YearSelect {
-      padding-top: 15px;
+    .YearSelect-instance {
       color: #3f3f3f;
       background-color: #f0f0f0; } }
 
