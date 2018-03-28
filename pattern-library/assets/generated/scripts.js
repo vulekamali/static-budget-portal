@@ -1741,12 +1741,12 @@ function trimValues(value, abbreviated) {
   var billion = abbreviated ? 'bn' : 'billion';
 
   if (value > 1000000000) {
-    return Math.round(value / 1000000000) + ' ' + billion;
+    return (value / 1000000000).toFixed(1).replace(/\.0$/, '') + ' ' + billion;
   } else if (value > 1000000) {
-    return Math.round(value / 1000000) + ' ' + million;
+    return (value / 1000000).toFixed(1).replace(/\.0$/, '') + ' ' + million;
   }
 
-  return Math.round(value);
+  return value.toFixed(1).replace(/\.0$/, '');
 }
 
 /***/ }),
@@ -18562,7 +18562,8 @@ var YearSelectContainer = function (_Component) {
       loading: false,
       open: false,
       tooltip: null,
-      sticky: false
+      sticky: false,
+      mobile: true
     };
 
     _this.node = null;
@@ -18570,13 +18571,29 @@ var YearSelectContainer = function (_Component) {
     _this.updateItem = _this.updateItem.bind(_this);
     _this.data = _this.normaliseData();
 
+    _this.updateWidth = function () {
+      if (_this.state.mobile && window.innerWidth >= 900) {
+        _this.setState({ mobile: false });
+      } else if (!_this.state.mobile && window.innerWidth < 900) {
+        _this.setState({ mobile: true });
+      }
+      return null;
+    };
+
+    var viewportDebounce = new _DebounceFunction2.default(300);
+    var updateViewport = function updateViewport() {
+      return viewportDebounce.update(_this.updateWidth);
+    };
+
+    window.addEventListener('resize', updateViewport);
+
     _this.updateSticky = function () {
       if (_this.node) {
         var top = _this.node.getBoundingClientRect().top;
 
-        if (top > 0 && _this.state.sticky) {
+        if (top + 300 > 0 && _this.state.sticky) {
           _this.setState({ sticky: false });
-        } else if (top < 0 && !_this.state.sticky) {
+        } else if (top + 300 < 0 && !_this.state.sticky) {
           _this.setState({ sticky: true });
         }
       }
@@ -18584,14 +18601,14 @@ var YearSelectContainer = function (_Component) {
       return null;
     };
 
-    var viewportDebounce = new _DebounceFunction2.default(50);
-    var updateViewport = function updateViewport() {
-      return viewportDebounce.update(_this.updateSticky);
+    var scrollDebounce = new _DebounceFunction2.default(50);
+    var updateScroll = function updateScroll() {
+      return scrollDebounce.update(_this.updateSticky);
     };
 
-    window.addEventListener('resize', updateViewport);
+    window.addEventListener('resize', updateScroll);
 
-    window.addEventListener('scroll', updateViewport);
+    window.addEventListener('scroll', updateScroll);
     return _this;
   }
 
@@ -19378,7 +19395,7 @@ var ProgrammesChartContainer = function (_Component) {
         },
         items: this.props.items,
         guides: true,
-        width: 600
+        width: 900
       })));
 
       if (this.canvas.msToBlob) {

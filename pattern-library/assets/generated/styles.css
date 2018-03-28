@@ -935,17 +935,12 @@ li {
     .Page {
       display: table; } }
 
-.Page-head {
-  position: fixed;
-  width: 100%;
-  z-index: 80;
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.14), 0 0 2px 2px rgba(0, 0, 0, 0.098), 0 0 5px 1px rgba(0, 0, 0, 0.084); }
-  @media (min-width: 750px) {
-    .Page-head {
-      position: static;
-      box-shadow: none;
-      height: 1%;
-      display: table-row; } }
+@media (min-width: 750px) {
+  .Page-head {
+    position: static;
+    box-shadow: none;
+    height: 1%;
+    display: table-row; } }
 
 @media (min-width: 750px) {
   .Page-footer {
@@ -961,8 +956,6 @@ li {
 
 .Page-content {
   padding-top: 70px; }
-  .Page-content--dynamicYears {
-    padding-top: 115px; }
   @media (min-width: 750px) {
     .Page-content {
       padding-top: 0; } }
@@ -2638,11 +2631,17 @@ li {
       .SubLinks-subLink.is-active {
         cursor: default; } }
 
-@media screen and (min-width: 900px) {
-  .YearSelect {
-    padding-top: 15px; } }
+.YearSelect {
+  background: #3f3f3f;
+  color: white; }
+  @media screen and (min-width: 900px) {
+    .YearSelect {
+      color: #3f3f3f;
+      background-color: #f0f0f0;
+      padding-top: 15px; } }
 
 .YearSelect-fixed {
+  background: #3f3f3f;
   position: fixed;
   top: 0;
   left: 0;
@@ -2651,20 +2650,19 @@ li {
           transform: translateY(-100%);
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s; }
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  z-index: 9999999999;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12); }
+  @media screen and (min-width: 900px) {
+    .YearSelect-fixed {
+      background-color: #f0f0f0; } }
   .YearSelect-fixed.is-active {
     -webkit-transform: translateY(0);
             transform: translateY(0); }
 
 .YearSelect-instance {
   text-align: center;
-  padding: 0 20px;
-  background: #3f3f3f;
-  color: white; }
-  @media screen and (min-width: 900px) {
-    .YearSelect-instance {
-      color: #3f3f3f;
-      background-color: #f0f0f0; } }
+  padding: 0 20px; }
 
 .YearSelect-title {
   vertical-align: middle;
@@ -3437,6 +3435,9 @@ li {
   left: 0;
   width: 100%;
   position: absolute; }
+
+.IntroSection-content > h2 {
+  font-size: 14px; }
 
 @media screen and (min-width: 750px) {
   .ProgrammesChart::after {

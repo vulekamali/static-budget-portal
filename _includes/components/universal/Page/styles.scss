@@ -43,9 +43,9 @@
 .Page-content {
   padding-top: 70px;
 
-  &--dynamicYears {
-    padding-top: 115px;
-  }
+  // &--dynamicYears {
+  //   padding-top: 115px;
+  // }
 
   @media ($tablet-breakpoint) {
     padding-top: 0;
