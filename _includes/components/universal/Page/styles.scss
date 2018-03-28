@@ -8,13 +8,13 @@
 }
 
 .Page-head {
-  position: fixed;
-  width: 100%;
-  z-index: z-index(Page-header);
-  box-shadow:
-    0 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 0 2px 2px rgba(0, 0, 0, 0.098),
-    0 0 5px 1px rgba(0, 0, 0, 0.084);
+  // position: fixed;
+  // width: 100%;
+  // z-index: z-index(Page-header);
+  // box-shadow:
+  //   0 0 1px 1px rgba(0, 0, 0, 0.14),
+  //   0 0 2px 2px rgba(0, 0, 0, 0.098),
+  //   0 0 5px 1px rgba(0, 0, 0, 0.084);
 
   @media ($tablet-breakpoint) {
     position: static;
@@ -43,9 +43,9 @@
 .Page-content {
   padding-top: 70px;
 
-  &--dynamicYears {
-    padding-top: 115px;
-  }
+  // &--dynamicYears {
+  //   padding-top: 115px;
+  // }
 
   @media ($tablet-breakpoint) {
     padding-top: 0;
