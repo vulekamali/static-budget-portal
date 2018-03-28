@@ -94,7 +94,7 @@ class ProgrammesChartContainer extends Component {
         }}
         items={this.props.items}
         guides
-        width={600}
+        width={900}
       />,
     ));
 
