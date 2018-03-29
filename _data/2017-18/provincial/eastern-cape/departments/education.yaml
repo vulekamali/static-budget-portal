@@ -9,6 +9,52 @@ contributed_datasets:
   name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
     Primary School case'
   url_path: /datasets/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
+expenditure_over_time:
+  base_financial_year: '2017'
+  nominal:
+  - amount: 26779366000.0
+    financial_year: 2017-18
+    phase: Outcome
+  - amount: 26957826000.0
+    financial_year: 2017-18
+    phase: Outcome
+  - amount: 28425927000.0
+    financial_year: 2017-18
+    phase: Outcome
+  - amount: 30982636000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 32989051000.0
+    financial_year: 2017-18
+    phase: Budget
+  - amount: 35097335000.0
+    financial_year: 2017-18
+    phase: MTEF
+  - amount: 37587452000.0
+    financial_year: 2017-18
+    phase: MTEF
+  real:
+  - amount: 33165657500
+    financial_year: 2017-18
+    phase: Outcome
+  - amount: 31608391212
+    financial_year: 2017-18
+    phase: Outcome
+  - amount: 31692246193
+    financial_year: 2017-18
+    phase: Outcome
+  - amount: 32497005151
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 32989051000
+    financial_year: 2017-18
+    phase: Budget
+  - amount: 33270260589
+    financial_year: 2017-18
+    phase: MTEF
+  - amount: 33840195667
+    financial_year: 2017-18
+    phase: MTEF
 financial_years:
 - closest_match:
     is_exact_match: true

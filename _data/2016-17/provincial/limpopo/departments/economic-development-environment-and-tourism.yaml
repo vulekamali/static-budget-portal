@@ -1,4 +1,50 @@
 contributed_datasets: null
+expenditure_over_time:
+  base_financial_year: '2017'
+  nominal:
+  - amount: 874203000.0
+    financial_year: 2016-17
+    phase: Outcome
+  - amount: 1071242000.0
+    financial_year: 2016-17
+    phase: Outcome
+  - amount: 1112393000.0
+    financial_year: 2016-17
+    phase: Outcome
+  - amount: 1160184000.0
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 1332930000.0
+    financial_year: 2016-17
+    phase: Budget
+  - amount: 1436013000.0
+    financial_year: 2016-17
+    phase: MTEF
+  - amount: 1507810000.0
+    financial_year: 2016-17
+    phase: MTEF
+  real:
+  - amount: 1145660814
+    financial_year: 2016-17
+    phase: Outcome
+  - amount: 1326709723
+    financial_year: 2016-17
+    phase: Outcome
+  - amount: 1304294831
+    financial_year: 2016-17
+    phase: Outcome
+  - amount: 1293496495
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 1398080946
+    financial_year: 2016-17
+    phase: Budget
+  - amount: 1436013000
+    financial_year: 2016-17
+    phase: MTEF
+  - amount: 1429317400
+    financial_year: 2016-17
+    phase: MTEF
 financial_years:
 - closest_match:
     is_exact_match: true

@@ -9,6 +9,52 @@ contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
   url_path: /datasets/budget-brief-eastern-cape-department-of-education-2016-17
+expenditure_over_time:
+  base_financial_year: '2017'
+  nominal:
+  - amount: 1073029000.0
+    financial_year: 2017-18
+    phase: Audited Outcome
+  - amount: 966825000.0
+    financial_year: 2017-18
+    phase: Audited Outcome
+  - amount: 979902000.0
+    financial_year: 2017-18
+    phase: Audited Outcome
+  - amount: 1026600000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1066564000.0
+    financial_year: 2017-18
+    phase: Original Budget
+  - amount: 1125570000.0
+    financial_year: 2017-18
+    phase: MTEF
+  - amount: 1190865000.0
+    financial_year: 2017-18
+    phase: MTEF
+  real:
+  - amount: 1328922884
+    financial_year: 2017-18
+    phase: Audited Outcome
+  - amount: 1133614514
+    financial_year: 2017-18
+    phase: Audited Outcome
+  - amount: 1092498951
+    financial_year: 2017-18
+    phase: Audited Outcome
+  - amount: 1076778150
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1066564000
+    financial_year: 2017-18
+    phase: Original Budget
+  - amount: 1066975803
+    financial_year: 2017-18
+    phase: MTEF
+  - amount: 1072142496
+    financial_year: 2017-18
+    phase: MTEF
 financial_years:
 - closest_match:
     is_exact_match: true
