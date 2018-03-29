@@ -10,13 +10,13 @@ layout: page-shell
 <div class="Page-content Page-content--dynamicYears">
   <div class="Page-contentInner">
 
-    <h1 class="Page-mainHeading">The South African National Budget {{ page.financial_year | split: "-" | first }}</h1>
+    <h1 class="Page-title">The South African National Budget {{ page.financial_year | split: "-" | first }}</h1>
 
-    <div class="HomeLayout-description">vulekamali is a project by the South African National Treasury and Imali Yethu with the goal of making government budget data and processes accessible to all citizens & interested parties. <a href="/{{ page.financial_year }}/about">Read more about vulekamali.</a></div>
+    <p class="NewSection u-fontSize18 u-paddingTop0">
+      <em>vulekamali</em> is a project by the South African National Treasury and Imali Yethu with the goal of making government budget data and processes accessible to all citizens & interested parties. <a href="/about">Read more about vulekamali.</a>
+    </p>
 
-    <div class="HomeLayout">
-
-      <div class="HomeLayout-main">
+      <div class="Page-main">
 
         <div class="Card Card--dark">
           <h2 class"Card-title">National Budget {{ page.financial_year | split: "-" | first }} Resources from Treasury</h2>
@@ -101,11 +101,35 @@ layout: page-shell
 
       </div>
 
-      <div class="HomeLayout-sidebar">
+      <div class="Page-sidebar">
 
         <h2 class="u-sReadOnly">Additional Content</h2>
 
-        <div class="HomeLayout-newsletter">
+        <div class="NewSection is-bevel is-dark">
+          <div class="NewSection-content is-card is-dark">
+            <div class="NewSection-title u-marginBottom20">Receive our newsletter</div>
+            <input class="Input" placeholder="Enter email" />
+            <div class="Button is-secondary u-marginTop10">Subscribe</div>
+          </div>
+        </div>
+
+        <div class="NewSection is-bevel is-dark u-marginTop20">
+          <div class="NewSection-content is-card">
+            <div class="NewSection-title u-marginBottom20">Find budget data related to one of these topics</div>
+              {% for link in site.data.recommended_topics %}
+                <a href="#" class="Button is-secondary u-marginTop10">{{ link }}</a>
+              {% endfor %}
+          </div>
+        </div>
+
+        <a href="#" class="NewSection is-bevel is-green is-link u-marginTop20">
+          <div class="NewSection-content is-card">
+            <div class="NewSection-title u-marginBottom20">Information for Developers & Data Scientists</div>
+            <span class="u-textDecorationUnderline">Access the documentation and API that we used to build this site</span>
+          </div>
+        </a>
+
+        <!-- <div class="HomeLayout-newsletter">
           {% include components/homepage/SignUpBox/index.html %}
         </div>
 
@@ -115,7 +139,7 @@ layout: page-shell
 
         <div class="HomeLayout-newsletter">
           {% include components/homepage/ApiCta/index.html %}
-        </div>
+        </div> -->
   
       </div>
 
