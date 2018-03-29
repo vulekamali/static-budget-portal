@@ -1,29 +1,24 @@
 financial_years:
 - closest_match:
     is_exact_match: true
-    slug: 2015-16
     url_path: /2015-16
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    slug: 2016-17
     url_path: /2016-17
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    slug: 2017-18
     url_path: /2017-18
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: true
-    slug: 2018-19
     url_path: /2018-19
   id: 2018-19
   is_selected: false
-organisational_unit: financial_year
 revenue:
 - amount: '482085860000'
   category: Personal Income Tax
@@ -38,5 +33,7 @@ revenue:
 - amount: '84940380000'
   category: Other
 selected_financial_year: 2017-18
+selected_tab: homepage
 slug: 2017-18
+title: South African National Budget 2017-18 - vulekamali
 url_path: /2017-18

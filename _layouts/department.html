@@ -2,48 +2,43 @@
 layout: page-shell
 ---
 {% if page.sphere == "national" %}
-{% assign page_data = site.data[page.financial_year][page.sphere].departments[page.department_slug] %}
+  {% assign page_data = site.data[page.financial_year][page.sphere].departments[page.data_key] %}
 {% else %}
-{% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.department_slug] %}
+  {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.data_key] %}
 {% endif %}
 
-<div class="Page-content">
-  <div class="Page-contentWrap">
-    {% if page_data.government.slug == 'south-africa' %}
-      <div class="Page-title is-noPadding">National Department: {{ page_data.name }}</div>
-    {% else %}
-      <div class="Page-title is-noPadding">{{ page_data.government.name }} Department: {{ page_data.name }}</div>
-    {% endif %}
+{% if page_data.government.slug == 'south-africa' %}
+  {% assign department_location = 'National' %}
+{% else %}
+  {% assign department_location = page_data.government.name %}
+{% endif %}
 
-    <div class="u-marginLeft u-marginLeft--20 u-marginBottom u-marginBottom--30 u-marginTop u-marginTop--5 u-fontWeight u-fontWeight--bold u-fontSize u-fontSize--16">
-      Budget for {{ page.financial_year }}
+
+<div class="Page-content Page-content--dynamicYears">
+  <div class="Page-contentInner Page-contentInner--full">
+    <div class="u-marginBottom25">
+      <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0">{{ page_data.name }}</h1>
+      <span class="Page-subHeading u-textAlignCenter"> {{ department_location }} Department Budget for {{ page.financial_year }}</span>
     </div>
 
-    <main class="Page-main">
+    {%
+      include components/department-budgets/IntroSection/index.html
+      description=page_data.intro
+      datasets=page_data.treasury_datasets
+    %}
 
-      <div class="Card js-tooltips" data-year="{{ page.financial_year }}">{{ page_data.intro  | markdownify }}</div>
+    {%
+      include components/department-budgets/ProgrammesChart/index.html
+      values=page_data.programmes
+      year=page.financial_year
+      location=department_location
+      department=page_data.name
+    %}
 
-      <div class="Page-section">
-          {%
-            include components/universal/Graph/index.html
-            graph=page_data.programmes
-            year=page.financial_year
-            type="bar"
-            treasury=page_data.treasury_datasets
-            %}
-      </div>
+    {%
+      include components/department-budgets/ContributedData/index.html
+      datasets=page_data.contributed_datasets
+    %}
 
-    </main>
-    <aside class="Page-sidebar">
-
-      <div class="Card">
-        {% include components/universal/Share/index.html %}
-      </div>
-
-      <div class="u-marginTop u-marginTop--20">
-        {% include components/universal/FileTypes/index.html treasury=page_data.treasury_datasets cso=page_data.contributed_datasets type="dept" %}
-      </div>
-
-    </aside>
   </div>
 </div>

@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Parliament
-    organisational_unit: department
-    slug: parliament
     url_path: /2015-16/national/departments/parliament
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Parliament
-    organisational_unit: department
-    slug: parliament
     url_path: /2016-17/national/departments/parliament
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Parliament
-    organisational_unit: department
-    slug: parliament
     url_path: /2017-18/national/departments/parliament
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Parliament
-    organisational_unit: department
-    slug: parliament
     url_path: /2018-19/national/departments/parliament
   id: 2018-19
   is_selected: true
@@ -53,7 +41,6 @@ intro: "## Vote purpose\n\nProvide the support services required by Parliament t
   \ implementing the first milestone.\n\n\n"
 is_vote_primary: true
 name: Parliament
-organisational_unit: department
 programmes:
 - name: Strategic Leadership and Governance
   total_budget: 96926000.0
@@ -68,21 +55,19 @@ programmes:
 - name: Associated Services
   total_budget: 698103000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: parliament
 sphere:
   name: National
   slug: national
+title: Parliament - vulekamali
 treasury_datasets:
   ENE for Vote 2 - Parliament:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
     formats:
     - format: PDF
-      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2002%20Parliament.pdf
-  ENE for Vote 2 - Parliament - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-parliament-2018-19/resource/19c22f5b-14a4-4cf1-95de-217ae211ba5f/download/vote-02-parliament.pdf
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-parliament-2018-19/resource/668a1e09-e93f-4fcc-9b82-9ce33ce99f7c/download/ene18-vote02_chaptertables.xlsx
 vote_number: 2

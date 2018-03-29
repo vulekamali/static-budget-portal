@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Agriculture
-    organisational_unit: department
-    slug: agriculture
     url_path: /2015-16/provincial/western-cape/departments/agriculture
   id: 2015-16
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Agriculture
-    organisational_unit: department
-    slug: agriculture
     url_path: /2016-17/provincial/western-cape/departments/agriculture
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Agriculture
-    organisational_unit: department
-    slug: agriculture
     url_path: /2017-18/provincial/western-cape/departments/agriculture
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: false
-    name: Western Cape
-    organisational_unit: government
-    slug: western-cape
     url_path: /2018-19/provincial/western-cape
   id: 2018-19
   is_selected: false
@@ -74,7 +62,6 @@ intro: "## Vision\n\nA united, responsive and prosperous agricultural sector in 
   \ of agricultural land.\r\n\r\n\r\n"
 is_vote_primary: true
 name: Agriculture
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 124163000.0
@@ -93,10 +80,12 @@ programmes:
 - name: Rural Development
   total_budget: 21110000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: agriculture
 sphere:
   name: Provincial
   slug: provincial
+title: Agriculture - vulekamali
 treasury_datasets:
   'EPRE for Vote 11 : Agriculture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

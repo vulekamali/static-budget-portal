@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Mineral Resources
-    organisational_unit: department
-    slug: mineral-resources
     url_path: /2015-16/national/departments/mineral-resources
   id: 2015-16
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Mineral Resources
-    organisational_unit: department
-    slug: mineral-resources
     url_path: /2016-17/national/departments/mineral-resources
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Mineral Resources
-    organisational_unit: department
-    slug: mineral-resources
     url_path: /2017-18/national/departments/mineral-resources
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Mineral Resources
-    organisational_unit: department
-    slug: mineral-resources
     url_path: /2018-19/national/departments/mineral-resources
   id: 2018-19
   is_selected: false
@@ -49,7 +37,6 @@ intro: "## Vote purpose\n\n_Promote and regulate the minerals and mining sector 
   \ industry.\n\n"
 is_vote_primary: true
 name: Mineral Resources
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 293223000.0
@@ -60,10 +47,12 @@ programmes:
 - name: Mineral Policy and Promotion
   total_budget: 889036000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: mineral-resources
 sphere:
   name: National
   slug: national
+title: Mineral Resources - vulekamali
 treasury_datasets:
   ENE for Vote 29 - Mineral Resources:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

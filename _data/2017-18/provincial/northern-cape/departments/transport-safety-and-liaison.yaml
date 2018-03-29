@@ -1,46 +1,34 @@
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+  url_path: /datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+  url_path: /datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
+  url_path: /datasets/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
+  url_path: /datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Transport, Safety and Liaison
-    organisational_unit: department
-    slug: transport-safety-and-liaison
     url_path: /2015-16/provincial/northern-cape/departments/transport-safety-and-liaison
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Transport, Safety and Liaison
-    organisational_unit: department
-    slug: transport-safety-and-liaison
     url_path: /2016-17/provincial/northern-cape/departments/transport-safety-and-liaison
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Transport, Safety and Liaison
-    organisational_unit: department
-    slug: transport-safety-and-liaison
     url_path: /2017-18/provincial/northern-cape/departments/transport-safety-and-liaison
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: false
-    name: Northern Cape
-    organisational_unit: government
-    slug: northern-cape
     url_path: /2018-19/provincial/northern-cape
   id: 2018-19
   is_selected: false
@@ -67,7 +55,6 @@ intro: "## Vision\n\nA leader in the creation and co-ordination of safe, secure 
   \ (SAPS).\r\n\r\n"
 is_vote_primary: true
 name: Transport, Safety and Liaison
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 78031000.0
@@ -78,10 +65,12 @@ programmes:
 - name: Transport Regulations
   total_budget: 85926000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: transport-safety-and-liaison
 sphere:
   name: Provincial
   slug: provincial
+title: Transport, Safety and Liaison - vulekamali
 treasury_datasets:
   'EPRE for Vote 03 : Transport, Safety and Liaison':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

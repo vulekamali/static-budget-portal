@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Public Service and Administration
-    organisational_unit: department
-    slug: public-service-and-administration
     url_path: /2015-16/national/departments/public-service-and-administration
   id: 2015-16
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Public Service and Administration
-    organisational_unit: department
-    slug: public-service-and-administration
     url_path: /2016-17/national/departments/public-service-and-administration
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Public Service and Administration
-    organisational_unit: department
-    slug: public-service-and-administration
     url_path: /2017-18/national/departments/public-service-and-administration
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Public Service and Administration
-    organisational_unit: department
-    slug: public-service-and-administration
     url_path: /2018-19/national/departments/public-service-and-administration
   id: 2018-19
   is_selected: false
@@ -50,7 +38,6 @@ intro: "## Vote purpose\n\n_Lead the modernisation of the public service, throug
   \ formulate the national anti-corruption strategy.\n\n"
 is_vote_primary: true
 name: Public Service and Administration
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 219702000.0
@@ -65,10 +52,12 @@ programmes:
 - name: Governance of Public Administration
   total_budget: 269027000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: public-service-and-administration
 sphere:
   name: National
   slug: national
+title: Public Service and Administration - vulekamali
 treasury_datasets:
   ENE for Vote 10 - Public Service and Administration:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

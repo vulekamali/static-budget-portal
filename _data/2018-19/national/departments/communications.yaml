@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Communications
-    organisational_unit: department
-    slug: communications
     url_path: /2015-16/national/departments/communications
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Communications
-    organisational_unit: department
-    slug: communications
     url_path: /2016-17/national/departments/communications
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Communications
-    organisational_unit: department
-    slug: communications
     url_path: /2017-18/national/departments/communications
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Communications
-    organisational_unit: department
-    slug: communications
     url_path: /2018-19/national/departments/communications
   id: 2018-19
   is_selected: true
@@ -58,7 +46,6 @@ intro: "## Vote purpose\n\nCreate an enabling environment for the provision of i
   \n\n"
 is_vote_primary: true
 name: Communications
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 64637000.0
@@ -69,21 +56,19 @@ programmes:
 - name: Entity Oversight
   total_budget: 1383669000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: communications
 sphere:
   name: National
   slug: national
+title: Communications - vulekamali
 treasury_datasets:
   ENE for Vote 3 - Communications:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
     formats:
     - format: PDF
-      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2003%20Communications.pdf
-  ENE for Vote 3 - Communications - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-communications-2018-19/resource/85a460e1-4aab-402d-bc3f-213290a99a3c/download/vote-03-communications.pdf
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-communications-2018-19/resource/7522827a-1e2c-45e4-856c-900a30be25c6/download/ene18-vote03_chaptertables.xlsx
 vote_number: 3

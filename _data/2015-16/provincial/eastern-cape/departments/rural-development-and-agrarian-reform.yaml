@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Rural Development and Agrarian Reform
-    organisational_unit: department
-    slug: rural-development-and-agrarian-reform
     url_path: /2015-16/provincial/eastern-cape/departments/rural-development-and-agrarian-reform
   id: 2015-16
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Rural Development and Agrarian Reform
-    organisational_unit: department
-    slug: rural-development-and-agrarian-reform
     url_path: /2016-17/provincial/eastern-cape/departments/rural-development-and-agrarian-reform
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Rural Development and Agrarian Reform
-    organisational_unit: department
-    slug: rural-development-and-agrarian-reform
     url_path: /2017-18/provincial/eastern-cape/departments/rural-development-and-agrarian-reform
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: false
-    name: Eastern Cape
-    organisational_unit: government
-    slug: eastern-cape
     url_path: /2018-19/provincial/eastern-cape
   id: 2018-19
   is_selected: false
@@ -55,7 +43,6 @@ intro: "## Vision\n\nVibrant, equitable, sustainable rural communities and food 
   \ and\r\nresearch."
 is_vote_primary: true
 name: Rural Development and Agrarian Reform
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 406721000.0
@@ -74,10 +61,12 @@ programmes:
 - name: Rural Development Coordination
   total_budget: 160918000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: rural-development-and-agrarian-reform
 sphere:
   name: Provincial
   slug: provincial
+title: Rural Development and Agrarian Reform - vulekamali
 treasury_datasets:
   'EPRE for Vote 08 : Rural Development and Agrarian Reform':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

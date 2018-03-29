@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Community Safety
-    organisational_unit: department
-    slug: community-safety
     url_path: /2015-16/provincial/gauteng/departments/community-safety
   id: 2015-16
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Community Safety
-    organisational_unit: department
-    slug: community-safety
     url_path: /2016-17/provincial/gauteng/departments/community-safety
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Community Safety
-    organisational_unit: department
-    slug: community-safety
     url_path: /2017-18/provincial/gauteng/departments/community-safety
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: false
-    name: Gauteng
-    organisational_unit: government
-    slug: gauteng
     url_path: /2018-19/provincial/gauteng
   id: 2018-19
   is_selected: false
@@ -58,7 +46,6 @@ intro: "## Vision\n\nTo ensure that Gauteng is a safe and secure province\r\n\r\
   \ accidents\r\nand resultant fatalities\r\n"
 is_vote_primary: true
 name: Community Safety
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 85927000.0
@@ -67,10 +54,12 @@ programmes:
 - name: Traffic Management
   total_budget: 346895000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: community-safety
 sphere:
   name: Provincial
   slug: provincial
+title: Community Safety - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Community Safety':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

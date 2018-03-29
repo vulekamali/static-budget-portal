@@ -2,14 +2,11 @@ const { resolve } = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const normalize = require('postcss-normalize');
-const ManifestPlugin = require('webpack-manifest-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-
 
 module.exports = {
-  entry: './_includes/scripts.js',
+  entry: './_includes/patterns.js',
   output: {
-    path: resolve(__dirname, 'assets/generated'),
+    path: resolve(__dirname, 'pattern-library/assets/generated'),
     filename: 'scripts.js',
   },
 
@@ -60,11 +57,6 @@ module.exports = {
   },
 
   plugins: [
-    new CleanWebpackPlugin('assets/generated/*'),
     new ExtractTextPlugin('styles.css'),
-    new ManifestPlugin({
-      fileName: './../../_data/assets.json',
-      basePath: 'assets/generated/',
-    }),
   ],
 };

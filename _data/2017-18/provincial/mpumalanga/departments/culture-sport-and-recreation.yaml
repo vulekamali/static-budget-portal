@@ -1,44 +1,32 @@
 contributed_datasets:
 - contributor: Centre for Child Law
   name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /2017-18/datasets/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+  url_path: /datasets/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
 - contributor: Centre for Child Law
   name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
     Primary School case'
-  url_path: /2017-18/datasets/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
+  url_path: /datasets/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-education-2016-17
+  url_path: /datasets/budget-brief-eastern-cape-department-of-education-2016-17
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Culture, Sport and Recreation
-    organisational_unit: department
-    slug: culture-sport-and-recreation
     url_path: /2015-16/provincial/mpumalanga/departments/culture-sport-and-recreation
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Culture, Sport and Recreation
-    organisational_unit: department
-    slug: culture-sport-and-recreation
     url_path: /2016-17/provincial/mpumalanga/departments/culture-sport-and-recreation
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Culture, Sport and Recreation
-    organisational_unit: department
-    slug: culture-sport-and-recreation
     url_path: /2017-18/provincial/mpumalanga/departments/culture-sport-and-recreation
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: false
-    name: Mpumalanga
-    organisational_unit: government
-    slug: mpumalanga
     url_path: /2018-19/provincial/mpumalanga
   id: 2018-19
   is_selected: false
@@ -87,7 +75,6 @@ intro: "## Vision\n\nA patriotic socially cohesive society\r\n\r\n\n\n## Mission
   \ Sport."
 is_vote_primary: true
 name: Culture, Sport and Recreation
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 99986000.0
@@ -98,10 +85,12 @@ programmes:
 - name: Sports and Recreation
   total_budget: 94345000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: culture-sport-and-recreation
 sphere:
   name: Provincial
   slug: provincial
+title: Culture, Sport and Recreation - vulekamali
 treasury_datasets:
   'EPRE for Vote 11 : Culture, Sport and Recreation':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

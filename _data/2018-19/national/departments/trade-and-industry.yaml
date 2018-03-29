@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Trade and Industry
-    organisational_unit: department
-    slug: trade-and-industry
     url_path: /2015-16/national/departments/trade-and-industry
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Trade and Industry
-    organisational_unit: department
-    slug: trade-and-industry
     url_path: /2016-17/national/departments/trade-and-industry
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Trade and Industry
-    organisational_unit: department
-    slug: trade-and-industry
     url_path: /2017-18/national/departments/trade-and-industry
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Trade and Industry
-    organisational_unit: department
-    slug: trade-and-industry
     url_path: /2018-19/national/departments/trade-and-industry
   id: 2018-19
   is_selected: true
@@ -50,7 +38,6 @@ intro: "## Vote purpose\n\nLead and facilitate access to sustainable economic ac
   \ Act (2003)\n * the Consumer Protection Act (2008).\n\n"
 is_vote_primary: true
 name: Trade and Industry
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 760643000.0
@@ -69,10 +56,12 @@ programmes:
 - name: Investment South Africa
   total_budget: 53846000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: trade-and-industry
 sphere:
   name: National
   slug: national
+title: Trade and Industry - vulekamali
 treasury_datasets:
   ENE for Vote 34 - Trade and Industry:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
@@ -80,10 +69,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2034%20Trade%20and%20Industry.pdf
-  ENE for Vote 34 - Trade and Industry - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-trade-and-industry-2018-19/resource/861e549f-87cf-4a4e-8db7-24bc9d44ea70/download/ene18-vote34_chaptertables.xlsx
 vote_number: 34

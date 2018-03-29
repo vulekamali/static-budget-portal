@@ -2,21 +2,43 @@
 layout: page-shell
 ---
 <div class="Page-content">
-  <div class="Page-contentWrap has-floatingLinks">
+  <main class="Page-contentInner Page-contentInner--floatingLinks">
 
-   {% include components/universal/Page/partials/background.html year=page.financial_year languages=site.data.static.videos.data.first.languages %}
+    {% 
+      include components/about/Background/index.html 
+      year=page.financial_year
+      languages=site.data.videos.data.first.languages
+    %}
 
-   {% include components/universal/Page/partials/development.html year=page.financial_year %}
+    {%
+      include components/about/Development/index.html
+      year=page.financial_year
+    %}
 
-   {% include components/universal/Page/partials/project-status.html year=page.financial_year %}
+    {%
+      include components/about/ProjectStatus/index.html
+      year=page.financial_year
+    %}
 
-   {% include components/universal/Page/partials/your-contribution.html year=page.financial_year %}
+    {% 
+      include components/about/Contribution/index.html
+      year=page.financial_year
+    %}
 
-   {% include components/universal/Page/partials/contacts.html year=page.financial_year %}
+    {%
+      include components/about/Contacts/index.html
+      year=page.financial_year
+    %}
 
-   {% include components/universal/Page/partials/media.html year=page.financial_year %}
+    {%
+      include components/about/Media/index.html
+      year=page.financial_year
+    %}
 
-   {% include components/universal/Page/partials/data-scientists.html year=page.financial_year %}
+    {%
+      include components/about/DataScientists/index.html
+      year=page.financial_year
+    %}
 
-  </div>
+  </main>
 </div>

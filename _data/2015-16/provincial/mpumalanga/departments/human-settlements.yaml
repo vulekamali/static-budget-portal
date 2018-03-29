@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Human Settlements
-    organisational_unit: department
-    slug: human-settlements
     url_path: /2015-16/provincial/mpumalanga/departments/human-settlements
   id: 2015-16
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Human Settlements
-    organisational_unit: department
-    slug: human-settlements
     url_path: /2016-17/provincial/mpumalanga/departments/human-settlements
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Human Settlements
-    organisational_unit: department
-    slug: human-settlements
     url_path: /2017-18/provincial/mpumalanga/departments/human-settlements
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: false
-    name: Mpumalanga
-    organisational_unit: government
-    slug: mpumalanga
     url_path: /2018-19/provincial/mpumalanga
   id: 2018-19
   is_selected: false
@@ -44,7 +32,6 @@ intro: "## Vision\n\nIntegrated sustainable human settlements and improved quali
   \n\r\n* Collaboration with the private sector and other government agencies"
 is_vote_primary: true
 name: Human Settlements
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 120996000.0
@@ -55,10 +42,12 @@ programmes:
 - name: Housing Asset Management
   total_budget: 3819000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: human-settlements
 sphere:
   name: Provincial
   slug: provincial
+title: Human Settlements - vulekamali
 treasury_datasets:
   'EPRE for Vote 13 : Human Settlements':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

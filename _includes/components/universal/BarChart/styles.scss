@@ -1,0 +1,14 @@
+.BarChart-svg {
+  overflow: hidden;
+}
+
+.BarChart-tooltip {
+  .BarChart-svg.is-hoverable & {
+    cursor: pointer;
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

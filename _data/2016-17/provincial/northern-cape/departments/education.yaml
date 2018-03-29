@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Education
-    organisational_unit: department
-    slug: education
     url_path: /2015-16/provincial/northern-cape/departments/education
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Education
-    organisational_unit: department
-    slug: education
     url_path: /2016-17/provincial/northern-cape/departments/education
   id: 2016-17
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Education
-    organisational_unit: department
-    slug: education
     url_path: /2017-18/provincial/northern-cape/departments/education
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: false
-    name: Northern Cape
-    organisational_unit: government
-    slug: northern-cape
     url_path: /2018-19/provincial/northern-cape
   id: 2018-19
   is_selected: false
@@ -63,7 +51,6 @@ intro: "## Vision\n\nA transformed quality education system.\r\n\r\n\n\n## Missi
   \ pre-Grade R learners."
 is_vote_primary: true
 name: Education
-organisational_unit: department
 programmes:
 - name: ADMINISTRATION
   total_budget: 608470000.0
@@ -80,10 +67,12 @@ programmes:
 - name: EXAMINATION AND EDUCATION RELATED SERVICES
   total_budget: 132271000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: education
 sphere:
   name: Provincial
   slug: provincial
+title: Education - vulekamali
 treasury_datasets:
   'EPRE for Vote 04 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

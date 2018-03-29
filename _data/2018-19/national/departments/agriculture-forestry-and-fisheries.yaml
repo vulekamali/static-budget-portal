@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Agriculture, Forestry and Fisheries
-    organisational_unit: department
-    slug: agriculture-forestry-and-fisheries
     url_path: /2015-16/national/departments/agriculture-forestry-and-fisheries
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Agriculture, Forestry and Fisheries
-    organisational_unit: department
-    slug: agriculture-forestry-and-fisheries
     url_path: /2016-17/national/departments/agriculture-forestry-and-fisheries
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Agriculture, Forestry and Fisheries
-    organisational_unit: department
-    slug: agriculture-forestry-and-fisheries
     url_path: /2017-18/national/departments/agriculture-forestry-and-fisheries
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Agriculture, Forestry and Fisheries
-    organisational_unit: department
-    slug: agriculture-forestry-and-fisheries
     url_path: /2018-19/national/departments/agriculture-forestry-and-fisheries
   id: 2018-19
   is_selected: true
@@ -47,7 +35,6 @@ intro: "## Vote purpose\n\nLead, support and promote agricultural, forestry and 
   \ and the Conservation of Agricultural Resources Act (1983).\n\n"
 is_vote_primary: true
 name: Agriculture, Forestry and Fisheries
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 923178000.0
@@ -62,10 +49,12 @@ programmes:
 - name: Fisheries
   total_budget: 487811000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: agriculture-forestry-and-fisheries
 sphere:
   name: National
   slug: national
+title: Agriculture, Forestry and Fisheries - vulekamali
 treasury_datasets:
   ENE for Vote 24 - Agriculture, Forestry and Fisheries:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
@@ -73,10 +62,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2024%20Agriculture%20Forestry%20and%20Fisheries.pdf
-  ENE for Vote 24 - Agriculture, Forestry and Fisheries - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-agriculture-forestry-and-fisheries-2018-19/resource/81cf0f4f-20e1-4e5f-b20f-a4a9d118130f/download/ene18-vote24_chaptertables.xlsx
 vote_number: 24

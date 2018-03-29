@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Premier
-    organisational_unit: department
-    slug: premier
     url_path: /2015-16/provincial/free-state/departments/premier
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Premier
-    organisational_unit: department
-    slug: premier
     url_path: /2016-17/provincial/free-state/departments/premier
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Premier
-    organisational_unit: department
-    slug: premier
     url_path: /2017-18/provincial/free-state/departments/premier
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: false
-    name: Free State
-    organisational_unit: government
-    slug: free-state
     url_path: /2018-19/provincial/free-state
   id: 2018-19
   is_selected: false
@@ -57,7 +45,6 @@ intro: "## Vision\r\n\r\nLeading the Free State Province towards service excelle
   \ and effective community liaison and participatory democracy services."
 is_vote_primary: true
 name: Premier
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 65086000.0
@@ -68,10 +55,12 @@ programmes:
 - name: Monitoring and Evaluation
   total_budget: 117541000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: premier
 sphere:
   name: Provincial
   slug: provincial
+title: Premier - vulekamali
 treasury_datasets: {}
 vote_number: 1
 vote_primary:

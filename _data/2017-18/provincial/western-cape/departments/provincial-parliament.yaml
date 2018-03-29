@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Provincial Parliament
-    organisational_unit: department
-    slug: provincial-parliament
     url_path: /2015-16/provincial/western-cape/departments/provincial-parliament
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Provincial Parliament
-    organisational_unit: department
-    slug: provincial-parliament
     url_path: /2016-17/provincial/western-cape/departments/provincial-parliament
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Provincial Parliament
-    organisational_unit: department
-    slug: provincial-parliament
     url_path: /2017-18/provincial/western-cape/departments/provincial-parliament
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: false
-    name: Western Cape
-    organisational_unit: government
-    slug: western-cape
     url_path: /2018-19/provincial/western-cape
   id: 2018-19
   is_selected: false
@@ -57,7 +45,6 @@ intro: "## Vision\n\nA dynamic, effective and efficient parliament supporting co
   \ so as to ensure organisational efficiency."
 is_vote_primary: true
 name: Provincial Parliament
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 65462000.0
@@ -66,10 +53,12 @@ programmes:
 - name: Parliamentary Services
   total_budget: 25028000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: provincial-parliament
 sphere:
   name: Provincial
   slug: provincial
+title: Provincial Parliament - vulekamali
 treasury_datasets:
   'EPRE for Vote 02 : Provincial Parliament':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

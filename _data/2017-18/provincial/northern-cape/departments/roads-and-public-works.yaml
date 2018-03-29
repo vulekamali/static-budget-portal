@@ -1,46 +1,34 @@
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+  url_path: /datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+  url_path: /datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
+  url_path: /datasets/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
+  url_path: /datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Roads and Public Works
-    organisational_unit: department
-    slug: roads-and-public-works
     url_path: /2015-16/provincial/northern-cape/departments/roads-and-public-works
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Roads and Public Works
-    organisational_unit: department
-    slug: roads-and-public-works
     url_path: /2016-17/provincial/northern-cape/departments/roads-and-public-works
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Roads and Public Works
-    organisational_unit: department
-    slug: roads-and-public-works
     url_path: /2017-18/provincial/northern-cape/departments/roads-and-public-works
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: false
-    name: Northern Cape
-    organisational_unit: government
-    slug: northern-cape
     url_path: /2018-19/provincial/northern-cape
   id: 2018-19
   is_selected: false
@@ -71,7 +59,6 @@ intro: "## Vision\n\nTrendsetters in infrastructure delivery to change the econo
   \ intensity of government-funded infrastructure projects.\r\n"
 is_vote_primary: true
 name: Roads and Public Works
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 143460000.0
@@ -82,10 +69,12 @@ programmes:
 - name: Community Based Programme
   total_budget: 86320000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: roads-and-public-works
 sphere:
   name: Provincial
   slug: provincial
+title: Roads and Public Works - vulekamali
 treasury_datasets:
   'EPRE for Vote 05 : Roads and Public Works':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

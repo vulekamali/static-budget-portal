@@ -1,0 +1,25 @@
+<div class="IntroSection">
+  <div class="IntroSection-textWrap">
+    <div class="js-initIntroSection">
+      <div class="IntroSection-text js-content">
+        {{ include.description | markdownify }}
+      </div>
+    </div>
+  </div>
+  <div class="IntroSection-box">
+    <div class="Page-sectionWrap Page-sectionWrap--card">
+      <div class="Page-section">
+        <div class="Page-subHeading">Documents & Data from Treasury</div>
+        <p>The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year.</p>
+
+        {% for item in include.datasets %}
+          {% assign modifiedFormats = item[1].formats | sort: 'format' %}
+          <a href="{{ modifiedFormats[0].url }}" target="_blank" class="Button u-marginTop30">Download ENE as PDF</a>
+          <a href="{{ modifiedFormats[1].url }}" target="_blank" class="Button u-marginTop10">Download ENE as Excel</a>
+        {% endfor %}
+
+        <a href="#contributed-data" class="Button is-secondary u-marginTop10">View contributed datasets</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Transport
-    organisational_unit: department
-    slug: transport
     url_path: /2015-16/national/departments/transport
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Transport
-    organisational_unit: department
-    slug: transport
     url_path: /2016-17/national/departments/transport
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Transport
-    organisational_unit: department
-    slug: transport
     url_path: /2017-18/national/departments/transport
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Transport
-    organisational_unit: department
-    slug: transport
     url_path: /2018-19/national/departments/transport
   id: 2018-19
   is_selected: true
@@ -70,7 +58,6 @@ intro: '## Vote purpose
   '
 is_vote_primary: true
 name: Transport
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 430077000.0
@@ -89,10 +76,12 @@ programmes:
 - name: Public Transport
   total_budget: 12990018000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: transport
 sphere:
   name: National
   slug: national
+title: Transport - vulekamali
 treasury_datasets:
   ENE for Vote 35 - Transport:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
@@ -100,10 +89,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2035%20Transport.pdf
-  ENE for Vote 35 - Transport - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-transport-2018-19/resource/65f8794b-e12b-4f3e-965c-83d75445e733/download/ene18-vote35_chaptertables.xlsx
 vote_number: 35

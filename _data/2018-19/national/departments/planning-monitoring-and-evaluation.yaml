@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Planning, Montoring and Evaluation
-    organisational_unit: department
-    slug: planning-monitoring-and-evaluation
     url_path: /2015-16/national/departments/planning-monitoring-and-evaluation
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Planning, Monitoring and Evaluation
-    organisational_unit: department
-    slug: planning-monitoring-and-evaluation
     url_path: /2016-17/national/departments/planning-monitoring-and-evaluation
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Planning, Monitoring and Evaluation
-    organisational_unit: department
-    slug: planning-monitoring-and-evaluation
     url_path: /2017-18/national/departments/planning-monitoring-and-evaluation
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Planning, Monitoring and Evaluation
-    organisational_unit: department
-    slug: planning-monitoring-and-evaluation
     url_path: /2018-19/national/departments/planning-monitoring-and-evaluation
   id: 2018-19
   is_selected: true
@@ -53,7 +41,6 @@ intro: "## Vote purpose\n\nImprove government service delivery through integrate
   \ integration of youth development priorities into key government programmes.\n\n"
 is_vote_primary: true
 name: Planning, Monitoring and Evaluation
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 186630000.0
@@ -70,10 +57,12 @@ programmes:
 - name: National Youth Development
   total_budget: 455866000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: planning-monitoring-and-evaluation
 sphere:
   name: National
   slug: national
+title: Planning, Monitoring and Evaluation - vulekamali
 treasury_datasets:
   ENE for Vote 8 - Planning, Monitoring and Evaluation:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
@@ -81,10 +70,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2008%20Planning,%20Monitoring%20and%20Evaluation.pdf
-  ENE for Vote 8 - Planning, Monitoring and Evaluation - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-planning-monitoring-and-evaluation-2018-19/resource/03e8e806-2cb2-4e79-bfb8-159903b415a2/download/ene18-vote08_chaptertables.xlsx
 vote_number: 8

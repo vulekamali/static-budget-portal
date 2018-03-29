@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Gauteng Provincial Legislature
-    organisational_unit: department
-    slug: gauteng-provincial-legislature
     url_path: /2015-16/provincial/gauteng/departments/gauteng-provincial-legislature
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Gauteng Provincial Legislature
-    organisational_unit: department
-    slug: gauteng-provincial-legislature
     url_path: /2016-17/provincial/gauteng/departments/gauteng-provincial-legislature
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Gauteng Provincial Legislature
-    organisational_unit: department
-    slug: gauteng-provincial-legislature
     url_path: /2017-18/provincial/gauteng/departments/gauteng-provincial-legislature
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: false
-    name: Gauteng
-    organisational_unit: government
-    slug: gauteng
     url_path: /2018-19/provincial/gauteng
   id: 2018-19
   is_selected: false
@@ -57,7 +45,6 @@ intro: "## Vision\r\n\r\nA modern and transformative legislature that fosters pu
   \ public has access to and is involves with the processes"
 is_vote_primary: true
 name: Gauteng Provincial Legislature
-organisational_unit: department
 programmes:
 - name: Leadership and Governance
   total_budget: 51701000.0
@@ -70,10 +57,12 @@ programmes:
 - name: Office of the CFO
   total_budget: 56049000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: gauteng-provincial-legislature
 sphere:
   name: Provincial
   slug: provincial
+title: Gauteng Provincial Legislature - vulekamali
 treasury_datasets:
   'EPRE for Vote 02 : Gauteng Provincial Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

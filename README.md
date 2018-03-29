@@ -63,6 +63,26 @@ git ls-files -v|grep '^h'| sed 's/^h//' | xargs git update-index --no-assume-unc
 
 ### Regenerating data files
 
+#### Using Travis CI
+
+Every branch push results in a Travis CI build, but by default it won't regenerate data files.
+
+Add `[ci]` to the commit message of the latest commit in the pushed branch to opt into generating data files.
+
+Add `[staging]` to that commit message  to use the staging web data server instead of production. This is useful if we want to see what the data will look like for a development branch of the web data server.
+
+If any files changed, Travis CI will add and commit the changes and push that back to the branch. That means you'll need to pull the branch and perhaps use `pull --rebase` if you've since committed other changes. ***Don't trust the changes because it was a robot - check that the site works as expected and the diff looks reasonable before merging your PR***
+
+Best practise is to place these tags as the first part of the first line of the commit message. This makes it easy to see whether staging or production was used in the pull request list of commits.
+
+To create a commit without any code changes to trigger a build, use `--allow-empty`. e.g.
+
+```bash
+git commit -m "[ci][staging] trigger data regeneration for new department xyz data" --allow-empty
+```
+
+#### Locally
+
 ```
 source env/bin/activate
 python generate/from_dynamic.py

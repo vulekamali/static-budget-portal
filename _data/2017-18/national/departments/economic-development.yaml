@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Economic Development
-    organisational_unit: department
-    slug: economic-development
     url_path: /2015-16/national/departments/economic-development
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Economic Development
-    organisational_unit: department
-    slug: economic-development
     url_path: /2016-17/national/departments/economic-development
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Economic Development
-    organisational_unit: department
-    slug: economic-development
     url_path: /2017-18/national/departments/economic-development
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Economic Development
-    organisational_unit: department
-    slug: economic-development
     url_path: /2018-19/national/departments/economic-development
   id: 2018-19
   is_selected: false
@@ -57,7 +45,6 @@ intro: "## Vote purpose\n\n_Promote economic development policy formulation and 
   (2002)\n\n  * the Infrastructure Development Act\_(2014).\n\n"
 is_vote_primary: true
 name: Economic Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 80674000.0
@@ -66,10 +53,12 @@ programmes:
 - name: Investment, Competition and Trade
   total_budget: 680954000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: economic-development
 sphere:
   name: National
   slug: national
+title: Economic Development - vulekamali
 treasury_datasets:
   ENE for Vote 25 - Economic Development:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

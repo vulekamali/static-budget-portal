@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Human Settlements
-    organisational_unit: department
-    slug: human-settlements
     url_path: /2015-16/provincial/western-cape/departments/human-settlements
   id: 2015-16
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Human Settlements
-    organisational_unit: department
-    slug: human-settlements
     url_path: /2016-17/provincial/western-cape/departments/human-settlements
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Human Settlements
-    organisational_unit: department
-    slug: human-settlements
     url_path: /2017-18/provincial/western-cape/departments/human-settlements
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: false
-    name: Western Cape
-    organisational_unit: government
-    slug: western-cape
     url_path: /2018-19/provincial/western-cape
   id: 2018-19
   is_selected: false
@@ -60,7 +48,6 @@ intro: "## Vision\n\nResidents of the Western Cape have access to liveable, acce
   \ fair relationships in rental housing."
 is_vote_primary: true
 name: Human Settlements
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 92421000.0
@@ -71,10 +58,12 @@ programmes:
 - name: Housing Asset Management Property Management
   total_budget: 38836000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: human-settlements
 sphere:
   name: Provincial
   slug: provincial
+title: Human Settlements - vulekamali
 treasury_datasets:
   'EPRE for Vote 08 : Human Settlements':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Sport, Recreation, Arts and Culture
-    organisational_unit: department
-    slug: sport-recreation-arts-and-culture
     url_path: /2015-16/provincial/eastern-cape/departments/sport-recreation-arts-and-culture
   id: 2015-16
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Sport, Recreation, Arts and Culture
-    organisational_unit: department
-    slug: sport-recreation-arts-and-culture
     url_path: /2016-17/provincial/eastern-cape/departments/sport-recreation-arts-and-culture
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Sport, Recreation, Arts and Culture
-    organisational_unit: department
-    slug: sport-recreation-arts-and-culture
     url_path: /2017-18/provincial/eastern-cape/departments/sport-recreation-arts-and-culture
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: false
-    name: Eastern Cape
-    organisational_unit: government
-    slug: eastern-cape
     url_path: /2018-19/provincial/eastern-cape
   id: 2018-19
   is_selected: false
@@ -45,7 +33,6 @@ intro: "## Vision\r\n\r\nA united, active and winning province through sport, re
   \ of heritage through the provision of museums, libraries and archive\r\nservices."
 is_vote_primary: true
 name: Sport, Recreation, Arts and Culture
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 233378000.0
@@ -56,10 +43,12 @@ programmes:
 - name: Sports And Recreation
   total_budget: 166153000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: sport-recreation-arts-and-culture
 sphere:
   name: Provincial
   slug: provincial
+title: Sport, Recreation, Arts and Culture - vulekamali
 treasury_datasets:
   'EPRE for Vote 14 : Sport, Recreation, Arts and Culture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

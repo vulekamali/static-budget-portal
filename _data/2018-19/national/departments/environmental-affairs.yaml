@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Environmental Affairs
-    organisational_unit: department
-    slug: environmental-affairs
     url_path: /2015-16/national/departments/environmental-affairs
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Environmental Affairs
-    organisational_unit: department
-    slug: environmental-affairs
     url_path: /2016-17/national/departments/environmental-affairs
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Environmental Affairs
-    organisational_unit: department
-    slug: environmental-affairs
     url_path: /2017-18/national/departments/environmental-affairs
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Environmental Affairs
-    organisational_unit: department
-    slug: environmental-affairs
     url_path: /2018-19/national/departments/environmental-affairs
   id: 2018-19
   is_selected: true
@@ -66,7 +54,6 @@ intro: "## Vote purpose\n\nLead South Africa's environmental sector to achieve s
   \ sustainable development practices and the use of natural resources.\n\n"
 is_vote_primary: true
 name: Environmental Affairs
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 941820000.0
@@ -83,10 +70,12 @@ programmes:
 - name: Chemicals and Waste Management
   total_budget: 550254000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: environmental-affairs
 sphere:
   name: National
   slug: national
+title: Environmental Affairs - vulekamali
 treasury_datasets:
   ENE for Vote 27 - Environmental Affairs:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
@@ -94,10 +83,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2027%20Environmental%20Affairs.pdf
-  ENE for Vote 27 - Environmental Affairs - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-environmental-affairs-2018-19/resource/ccff34e2-d947-4545-8ccd-f3e030615bb9/download/ene18-vote27_chaptertables.xlsx
 vote_number: 27

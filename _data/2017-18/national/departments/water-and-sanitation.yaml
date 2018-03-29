@@ -1,46 +1,34 @@
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
+  url_path: /datasets/budget-brief-department-of-human-settlements
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+  url_path: /datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+  url_path: /datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
+  url_path: /datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Water and Sanitation
-    organisational_unit: department
-    slug: water-and-sanitation
     url_path: /2015-16/national/departments/water-and-sanitation
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Water and Sanitation
-    organisational_unit: department
-    slug: water-and-sanitation
     url_path: /2016-17/national/departments/water-and-sanitation
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Water and Sanitation
-    organisational_unit: department
-    slug: water-and-sanitation
     url_path: /2017-18/national/departments/water-and-sanitation
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Water and Sanitation
-    organisational_unit: department
-    slug: water-and-sanitation
     url_path: /2018-19/national/departments/water-and-sanitation
   id: 2018-19
   is_selected: false
@@ -63,7 +51,6 @@ intro: "## Vote purpose\n\n_Ensure the availability of water resources, facilita
   poverty.\n\n"
 is_vote_primary: true
 name: Water and Sanitation
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 1628414000.0
@@ -74,10 +61,12 @@ programmes:
 - name: Water Sector Regulation
   total_budget: 410827000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: water-and-sanitation
 sphere:
   name: National
   slug: national
+title: Water and Sanitation - vulekamali
 treasury_datasets:
   ENE for Vote 36 - Water and Sanitation:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

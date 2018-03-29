@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Tourism
-    organisational_unit: department
-    slug: tourism
     url_path: /2015-16/national/departments/tourism
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Tourism
-    organisational_unit: department
-    slug: tourism
     url_path: /2016-17/national/departments/tourism
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Tourism
-    organisational_unit: department
-    slug: tourism
     url_path: /2017-18/national/departments/tourism
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Tourism
-    organisational_unit: department
-    slug: tourism
     url_path: /2018-19/national/departments/tourism
   id: 2018-19
   is_selected: true
@@ -66,7 +54,6 @@ intro: '## Vote purpose
   '
 is_vote_primary: true
 name: Tourism
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 271415000.0
@@ -77,10 +64,12 @@ programmes:
 - name: Tourism Sector Support Services
   total_budget: 306653000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: tourism
 sphere:
   name: National
   slug: national
+title: Tourism - vulekamali
 treasury_datasets:
   ENE for Vote 33 - Tourism:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
@@ -88,10 +77,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2033%20Tourism.pdf
-  ENE for Vote 33 - Tourism - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-tourism-2018-19/resource/f9dd5913-aaad-42cd-bc0d-681f6ed97f60/download/ene18-vote33_chaptertables.xlsx
 vote_number: 33

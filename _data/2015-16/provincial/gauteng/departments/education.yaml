@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Education
-    organisational_unit: department
-    slug: education
     url_path: /2015-16/provincial/gauteng/departments/education
   id: 2015-16
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Education
-    organisational_unit: department
-    slug: education
     url_path: /2016-17/provincial/gauteng/departments/education
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Education
-    organisational_unit: department
-    slug: education
     url_path: /2017-18/provincial/gauteng/departments/education
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: false
-    name: Gauteng
-    organisational_unit: government
-    slug: gauteng
     url_path: /2018-19/provincial/gauteng
   id: 2018-19
   is_selected: false
@@ -50,7 +38,6 @@ intro: "## Vision\n\nEvery learner feels valued and inspired in our innovative e
   \ninfrastructure, ICT and teacher placements"
 is_vote_primary: true
 name: Education
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 2548172000.0
@@ -67,10 +54,12 @@ programmes:
 - name: Examination And Education Related Services
   total_budget: 1299459000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: education
 sphere:
   name: Provincial
   slug: provincial
+title: Education - vulekamali
 treasury_datasets:
   'EPRE for Vote 05 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Agriculture, Land Reform and Rural Development
-    organisational_unit: department
-    slug: agriculture-land-reform-and-rural-development
     url_path: /2015-16/provincial/northern-cape/departments/agriculture-land-reform-and-rural-development
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Agriculture, Land Reform and Rural Development
-    organisational_unit: department
-    slug: agriculture-land-reform-and-rural-development
     url_path: /2016-17/provincial/northern-cape/departments/agriculture-land-reform-and-rural-development
   id: 2016-17
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Agriculture, Land Reform and Rural Development
-    organisational_unit: department
-    slug: agriculture-land-reform-and-rural-development
     url_path: /2017-18/provincial/northern-cape/departments/agriculture-land-reform-and-rural-development
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: false
-    name: Northern Cape
-    organisational_unit: government
-    slug: northern-cape
     url_path: /2018-19/provincial/northern-cape
   id: 2018-19
   is_selected: false
@@ -59,7 +47,6 @@ intro: "## Vision\r\n\r\nA transformed, vibrant agricultural sector for food sec
   \ information including financial feasibility and economic viability studie"
 is_vote_primary: true
 name: Agriculture, Land Reform and Rural Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 111486000.0
@@ -76,10 +63,12 @@ programmes:
 - name: Rural Development
   total_budget: 13191000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: agriculture-land-reform-and-rural-development
 sphere:
   name: Provincial
   slug: provincial
+title: Agriculture, Land Reform and Rural Development - vulekamali
 treasury_datasets:
   'EPRE for Vote 12 : Agriculture, Land Reform and Rural Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

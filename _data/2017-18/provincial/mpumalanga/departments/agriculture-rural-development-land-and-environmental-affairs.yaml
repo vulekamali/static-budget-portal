@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Agriculture, Rural Development, Land And Environmental Affairs
-    organisational_unit: department
-    slug: agriculture-rural-development-land-and-environmental-affairs
     url_path: /2015-16/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Agriculture, Rural Development, Land and Environmental Affairs
-    organisational_unit: department
-    slug: agriculture-rural-development-land-and-environmental-affairs
     url_path: /2016-17/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Agriculture, Rural Development, Land and Environmental Affairs
-    organisational_unit: department
-    slug: agriculture-rural-development-land-and-environmental-affairs
     url_path: /2017-18/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: false
-    name: Mpumalanga
-    organisational_unit: government
-    slug: mpumalanga
     url_path: /2018-19/provincial/mpumalanga
   id: 2018-19
   is_selected: false
@@ -55,7 +43,6 @@ intro: "## Vision\r\n\r\nVibrant, equitable, and sustainable urban and rural com
   \ Operated And Maintained"
 is_vote_primary: true
 name: Agriculture, Rural Development, Land and Environmental Affairs
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 158133000.0
@@ -76,10 +63,12 @@ programmes:
 - name: Environmental Affairs
   total_budget: 112733000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: agriculture-rural-development-land-and-environmental-affairs
 sphere:
   name: Provincial
   slug: provincial
+title: Agriculture, Rural Development, Land and Environmental Affairs - vulekamali
 treasury_datasets:
   'EPRE for Vote 05 : Agriculture, Rural Development, Land and Environmental Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

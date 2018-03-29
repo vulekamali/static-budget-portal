@@ -10,7 +10,7 @@ export default function forceClose(nodes) {
     for (let i = 0; nodes.length > i; i++) {
       const link = nodes[i];
 
-      if (link.classList.contains('js-forceClose')) {
+      if (link.classList.contains('js-link')) {
         link.addEventListener('click', closeAllMenus);
       }
     }

@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Social Development
-    organisational_unit: department
-    slug: social-development
     url_path: /2015-16/national/departments/social-development
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Social Development
-    organisational_unit: department
-    slug: social-development
     url_path: /2016-17/national/departments/social-development
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Social Development
-    organisational_unit: department
-    slug: social-development
     url_path: /2017-18/national/departments/social-development
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Social Development
-    organisational_unit: department
-    slug: social-development
     url_path: /2018-19/national/departments/social-development
   id: 2018-19
   is_selected: true
@@ -75,7 +63,6 @@ intro: "## Vote purpose\n\nEnsure protection against vulnerability by creating a
   \n\n"
 is_vote_primary: true
 name: Social Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 383246000.0
@@ -88,10 +75,12 @@ programmes:
 - name: Social Policy and Integrated Service Delivery
   total_budget: 392303000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: social-development
 sphere:
   name: National
   slug: national
+title: Social Development - vulekamali
 treasury_datasets:
   ENE for Vote 17 - Social Development:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
@@ -99,10 +88,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2017%20Social%20Development.pdf
-  ENE for Vote 17 - Social Development - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2018-19/resource/5e09c366-c6fe-4981-8a9d-68d52d586562/download/ene18-vote17_chaptertables.xlsx
 vote_number: 17

@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Infrastructure Development
-    organisational_unit: department
-    slug: infrastructure-development
     url_path: /2015-16/provincial/gauteng/departments/infrastructure-development
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Infrastructure Development
-    organisational_unit: department
-    slug: infrastructure-development
     url_path: /2016-17/provincial/gauteng/departments/infrastructure-development
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Infrastructure Development
-    organisational_unit: department
-    slug: infrastructure-development
     url_path: /2017-18/provincial/gauteng/departments/infrastructure-development
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: false
-    name: Gauteng
-    organisational_unit: government
-    slug: gauteng
     url_path: /2018-19/provincial/gauteng
   id: 2018-19
   is_selected: false
@@ -50,7 +38,6 @@ intro: "## Vision\n\nTo be a leading sustainable infrastructure provider and fac
   \ property management;"
 is_vote_primary: true
 name: Infrastructure Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 325310000.0
@@ -59,10 +46,12 @@ programmes:
 - name: Expanded Public Works Programme
   total_budget: 304697000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: infrastructure-development
 sphere:
   name: Provincial
   slug: provincial
+title: Infrastructure Development - vulekamali
 treasury_datasets:
   'EPRE for Vote 15 : Infrastructure Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

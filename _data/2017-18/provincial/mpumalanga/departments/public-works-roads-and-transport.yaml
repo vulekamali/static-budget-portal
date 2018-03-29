@@ -1,46 +1,34 @@
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+  url_path: /datasets/budget-brief-eastern-cape-department-of-human-settlements-2014-15
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+  url_path: /datasets/budget-brief-eastern-cape-department-of-human-settlements-2016-17
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /2017-18/datasets/budget-brief-department-of-human-settlements
+  url_path: /datasets/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /2017-18/datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
+  url_path: /datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Public Works, Roads and Transport
-    organisational_unit: department
-    slug: public-works-roads-and-transport
     url_path: /2015-16/provincial/mpumalanga/departments/public-works-roads-and-transport
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Public Works, Roads and Transport
-    organisational_unit: department
-    slug: public-works-roads-and-transport
     url_path: /2016-17/provincial/mpumalanga/departments/public-works-roads-and-transport
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Public Works, Roads and Transport
-    organisational_unit: department
-    slug: public-works-roads-and-transport
     url_path: /2017-18/provincial/mpumalanga/departments/public-works-roads-and-transport
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: false
-    name: Mpumalanga
-    organisational_unit: government
-    slug: mpumalanga
     url_path: /2018-19/provincial/mpumalanga
   id: 2018-19
   is_selected: false
@@ -63,7 +51,6 @@ intro: "## Vision\n\nAn integrated transport system and infrastructure that prom
   \n\r\n* Coordinate, monitor and evaluate implementation of EPWP III across the Province"
 is_vote_primary: true
 name: Public Works, Roads and Transport
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 275057000.0
@@ -76,10 +63,12 @@ programmes:
 - name: Community Based Programmes
   total_budget: 69976000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: public-works-roads-and-transport
 sphere:
   name: Provincial
   slug: provincial
+title: Public Works, Roads and Transport - vulekamali
 treasury_datasets:
   'EPRE for Vote 08 : Public Works, Roads and Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -1,0 +1,123 @@
+<!doctype>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../assets/base/styles.css">
+    </head>
+    
+    <body> <a style="position: fixed; left: 10px; bottom: 10px; width: 100px; border: 1px solid grey; background: white; border-radius: 15px; padding: 10px; text-align: center"
+        href="../index.html">← BACK</a>
+
+         <h1 id="button">Button</h1>
+
+        
+<h2 id="overview">Overview</h2>
+
+        
+<h3 id="notes">Notes</h3>
+
+        <ul>
+            <li>You should never set the fill or stroke colour of the component manually,
+                it should be inherited (throught the CSS cascade from its parent DOM node)</li>
+            <li>This component can be used anywhere given that there is enough space for
+                it.</li>
+            <li>Sizes are labeled according to pixel size (instead of for example &#39;large&#39;)
+                in order to keep the naming scaleable should new sizes be introduced.</li>
+            <li>Icons are always exact squares, this makes it easier to resize them (since
+                IE required that you specify both height and width)</li>
+        </ul>
+        
+<h3 id="description">Description</h3>
+
+        <p>Component should be used to communicate a concept iconographically. Can
+            be used inside buttons as well.</p>
+        
+<h3 id="examples">Examples</h3>
+
+        <ul>
+            <li><a href="download.html">Download Icon</a>
+            </li>
+            <li><a href="facebook.html">Facebook Icon</a>
+            </li>
+            <li><a href="twitter.html">Twitter Icon</a>
+            </li>
+            <li><a href="search.html">Search Icon</a>
+            </li>
+            <li><a href="small.html">Small Sizing</a>
+            </li>
+        </ul>
+        
+<h2 id="instructions">Instructions</h2>
+
+        
+<h3 id="using-in-plain-html">Using in Plain HTML</h3>
+
+        <p>If you want to use any of the preset icons as plain HTML you can copy
+            and paste the markup from the examples above. In addition you change the
+            size with the &#39;is-&#39; modifier (make sure that the class corresponds
+            to a React prop for &#39;size&#39;, for example for a small version](small.html)
+            you need the &#39;is-small&#39; class.</p>
+<pre><code>  &lt;svg class=&quot;Icon is-small&quot; version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0&quot; height=&quot;0&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+  ... rest of component ...
+</code></pre>
+        <h3 id="using-in-react">Using in React</h3>
+
+        <p>You can use the <code>&lt;Icon /&gt;</code> component and pass one of the
+            following props:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>download</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>facebook</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>search</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>twitter</code>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>size</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>medium</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>small</code>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+<pre><code>&lt;Icon type=&quot;twitter&quot; size=&quot;small&quot; /&gt;
+</code></pre>
+        <h3 id="using-in-liquid-templating">Using in Liquid Templating</h3>
+
+        <p>You can use the react props as Liquid variables that you pass into the <code>{% include %}</code> tag:</p>
+<pre><code>{% include components/universal/Icon type=&#39;twitter&#39; size=&#39;small&#39; %}
+</code></pre>
+
+        <script src=""></script>
+    </body>
+
+</html>

@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Small Business Development
-    organisational_unit: department
-    slug: small-business-development
     url_path: /2015-16/national/departments/small-business-development
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Small Business Development
-    organisational_unit: department
-    slug: small-business-development
     url_path: /2016-17/national/departments/small-business-development
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Small Business Development
-    organisational_unit: department
-    slug: small-business-development
     url_path: /2017-18/national/departments/small-business-development
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Small Business Development
-    organisational_unit: department
-    slug: small-business-development
     url_path: /2018-19/national/departments/small-business-development
   id: 2018-19
   is_selected: true
@@ -49,7 +37,6 @@ intro: "## Vote purpose\n\nPromote the development of small businesses and coope
   \ Act (2005)\n * the Cooperatives Amendment Act (2013).\n\n"
 is_vote_primary: true
 name: Small Business Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 124729000.0
@@ -60,10 +47,12 @@ programmes:
 - name: Enterprise Development and Entrepreneurship
   total_budget: 1230277000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: small-business-development
 sphere:
   name: National
   slug: national
+title: Small Business Development - vulekamali
 treasury_datasets:
   ENE for Vote 31 - Small Business Development:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
@@ -71,10 +60,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2031%20Small%20Business%20Development.pdf
-  ENE for Vote 31 - Small Business Development - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-small-business-development-2018-19/resource/a6d040c7-b889-4257-8a5f-823fc566a430/download/ene18-vote31_chaptertables.xlsx
 vote_number: 31

@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Cooperative Governance, Human Settlements and Traditional Affairs
-    organisational_unit: department
-    slug: cooperative-governance-human-settlements-and-traditional-affairs
     url_path: /2015-16/provincial/northern-cape/departments/cooperative-governance-human-settlements-and-traditional-affairs
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Cooperative Governance, Human Settlements and Traditional Affairs
-    organisational_unit: department
-    slug: cooperative-governance-human-settlements-and-traditional-affairs
     url_path: /2016-17/provincial/northern-cape/departments/cooperative-governance-human-settlements-and-traditional-affairs
   id: 2016-17
   is_selected: true
 - closest_match:
     is_exact_match: false
-    name: Northern Cape
-    organisational_unit: government
-    slug: northern-cape
     url_path: /2017-18/provincial/northern-cape
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: false
-    name: Northern Cape
-    organisational_unit: government
-    slug: northern-cape
     url_path: /2018-19/provincial/northern-cape
   id: 2018-19
   is_selected: false
@@ -49,7 +37,6 @@ intro: "## Vision\r\n\r\nPeople of the Northern Cape living in integrated human 
   \ delivery.\r\n\r\n* Acts, rules and regulations"
 is_vote_primary: true
 name: Cooperative Governance, Human Settlements and Traditional Affairs
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 89977000.0
@@ -60,10 +47,12 @@ programmes:
 - name: Traditional Institutional Management
   total_budget: 20016000.0
 selected_financial_year: 2016-17
+selected_tab: departments
 slug: cooperative-governance-human-settlements-and-traditional-affairs
 sphere:
   name: Provincial
   slug: provincial
+title: Cooperative Governance, Human Settlements and Traditional Affairs - vulekamali
 treasury_datasets:
   'EPRE for Vote 09 : Cooperative Governance, Human Settlements and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

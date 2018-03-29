@@ -1,178 +1,239 @@
 .Page {
-  display: table;
   width: 100%;
   min-height: 100%;
-}
 
-.Page-title {
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 1.29;
-  padding-bottom: 25px;
-
-  @media screen and (min-width: 750px) {
-    padding-left: 20px;
+  @media ($tablet-breakpoint) {
+    display: table;
   }
-
-  &.is-noPadding {
-    padding-bottom: 0;
-  }
-}
-
-.Page-subTitle {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1.44;
 }
 
 .Page-head {
-  height: 1%;
-  display: table-row;
+  // position: fixed;
+  // width: 100%;
+  // z-index: z-index(Page-header);
+  // box-shadow:
+  //   0 0 1px 1px rgba(0, 0, 0, 0.14),
+  //   0 0 2px 2px rgba(0, 0, 0, 0.098),
+  //   0 0 5px 1px rgba(0, 0, 0, 0.084);
 
-  @media screen and (min-width: 750px) {
+  @media ($tablet-breakpoint) {
+    position: static;
     box-shadow: none;
+    height: 1%;
+    display: table-row;
   }
 }
 
-.Page-contentContainer {
-  height: 98%;
-  display: table-row;
-  background-color: #f0f0f0;
-}
-
-.Page-content {
-  padding-top: 144px;
-
-  @media screen and (min-width: 750px) {
-    padding-top: 0;
-  }
-}
-
-.Page-sidebar {
-  width: 100%;
-  padding-top: 30px;
-  float: right;
-
-  @media screen and (min-width: 1050px) {
-    padding: 0;
-    width: 300px;
+.Page-footer {
+  @media ($tablet-breakpoint) {
+    height: 1%;
+    display: table-row;
   }
 }
 
 .Page-contentWrap {
-  word-break: break-word; /* stylelint-disable-line plugin/no-unsupported-browser-features */ // Is visual enhancement
+  background-color: $colour-shading-background;
+
+  @media ($tablet-breakpoint) {
+    height: 98%;
+    display: table-row;
+  }
+}
+
+.Page-content {
+  padding-top: 70px;
+
+  // &--dynamicYears {
+  //   padding-top: 115px;
+  // }
+
+  @media ($tablet-breakpoint) {
+    padding-top: 0;
+  }
+}
+
+.Page-contentInner {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 15px 10px 40px;
+  padding: 0 5px 100px;
   @include clearfix;
 
-  @media screen and (min-width: 300px) {
-    padding: 25px 10px 100px;
+  &--full {
+    max-width: 1800px;
   }
 
-
-  @media screen and (min-width: 750px) {
-    padding: 25px 30px 100px;
+  @media ($mobile-breakpoint) {
+    padding: 0 15px 100px;
   }
 
-  &.has-floatingLinks {
-    @media screen and (min-width: 750px) {
+  @media ($tablet-breakpoint) {
+    padding: 0 25px 100px;
+  }
+
+  &--floatingLinks {
+    @media (min-width: 900px) {
       padding-left: 240px;
     }
 
-    @media screen and (min-width: 1500px) {
+    @media ($widescreen-breakpoint) {
       padding-left: 0;
     }
   }
 }
 
-.Page-footer {
-  height: 1%;
-  display: table-row;
-}
+.Page-mainHeading {
+  font-weight: bold;
+  font-size: $font-size-large;
+  line-height: 1.29;
+  margin: 25px 20px 10px;
+  display: block;
 
-.Page-main {
-  float: left;
+  @media ($mobile-breakpoint) {
+    margin: 35px 30px 20px;
+  }
 
-  @media screen and (min-width: 1050px) {
-    width: 625px;
+  @media ($tablet-breakpoint) {
+    margin: 45px 40px 30px;
   }
 }
 
-.Page-blurb {
-  font-size: 20px;
-  line-height: 32px;
+.Page-subHeading {
+  margin: 0 0 10px;
+  font-size: $font-size-medium;
+  font-weight: bold;
+  font-weight: 900;
+  display: block;
+}
 
-  li > p {
-    margin: 0;
+.Page-grid {
+  @include clearfix;
+}
+
+.Page-gridItem {
+  @media screen and ($standard-breakpoint) {
+    float: left;
+
+    &--half {
+      width: 50%;
+
+      &:nth-of-type(2n) {
+        padding-left: 15px;
+
+        .Page-sectionWrap & {
+          padding-left: 5px;
+        }
+      }
+
+      &:nth-of-type(2n + 1) {
+        padding-right: 15px;
+
+        .Page-sectionWrap & {
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.Page-sectionWrap {
+  text-align: left;
+  font-size: 14px;
+  padding: 10px;
+  display: block;
+  color: $colour-shading-dark;
+  text-decoration: none;
+  width: 100%;
+
+  &--card {
+    background-color: white;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 1px solid $colour-shading-border;
   }
 
-  h2 {
-      font-size: 20px;
+  &--dark {
+    background-color: $colour-shading-light;
+
+    &.Page-sectionWrap--link:hover {
+      background-color: darken($colour-shading-light, 15%);
+    }
+  }
+
+  &--green {
+    background-color: $colour-brand-green;
+
+    &.Page-sectionWrap--link:hover {
+      background-color: darken($colour-brand-green, 15%);
+    }
   }
 }
 
 .Page-section {
-  padding-top: 40px;
-}
+  padding: 10px 10px 15px;
 
-.Page-smallSection {
-  padding-top: 25px;
-}
-
-.Page-highlightable:target {
-  border-radius: 5px;
-  padding: 20px 99px 20px 20px;
-  position: relative;
-  left: -20px;
-  background-color: darken(white, 20%);
-}
-
-.Page-bodyText {
-  a {
-    color: #4a4a4a;
+  @media ($mobile-breakpoint) {
+    padding: 15px 20px 20px;
   }
 
-  h3 {
-    font-size: 16px;
-    font-weight: bold;
+  @media ($tablet-breakpoint) {
+    padding: 15px 30px 20px;
   }
 
-  .Page-highlightable + h3,
-  ol + h3,
-  ul + h3,
-  p + h3 {
-    padding-top: 30px;
+  &--card {
+    padding: 20px 10px 25px;
+    background: white;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid $colour-shading-border;
+
+    @media ($mobile-breakpoint) {
+      padding: 25px 20px 35px;
+    }
+
+    @media ($tablet-breakpoint) {
+      padding: 25px 30px 35px;
+    }
+
+    .Page-sectionWrap--link:hover & {
+      background-color: darken(white, 15%);
+      border: 1px solid darken(#d2d2d2, 15%);
+    }
   }
 
-  p,
-  li {
-    font-size: 14px;
-    line-height: 22px;
+  &--dark {
+    background-color: #7d7d7d;
+    color: white;
   }
 
-  h4 {
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: bold;
+  & + &--card {
+    margin-top: 10px;
   }
-}
 
-.Page-header {
-  position: fixed;
-  width: 100%;
-  z-index: z-index(Page-header);
-  box-shadow:
-    0 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 0 2px 2px rgba(0, 0, 0, 0.098),
-    0 0 5px 1px rgba(0, 0, 0, 0.084);
+  & p {
+    line-height: 1.45;
+  }
 
-  @media screen and (min-width: 750px) {
-    position: static;
-    box-shadow: none;
+  &--forceStyling {
+    & h2 {
+      @extend .Page-subHeading;
+    }
   }
 }
 
-.Page-card {
-  padding-bottom: 25px;
+.Page-main {
+  @media ($standard-breakpoint) {
+    float: left;
+    width: (100% / 3 * 2);
+    padding-right: 20px;
+  }
+}
+
+.Page-sidebar {
+  @media ($standard-breakpoint) {
+    float: right;
+    width: (100% / 3);
+    padding-left: 20px;
+  }
 }

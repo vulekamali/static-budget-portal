@@ -18,53 +18,44 @@
 
         {% for item in include.items %}
 
-        {% if include.active == 'about' %}
-          {% assign aboutCurrentClass = ' is-currentPage js-isScrollable js-box' %}
-        {% else %}
-          {% assign aboutCurrentClass = ' js-isScrollable' %}
-        {% endif %}
+          {% comment %} Create alignment CSS class {% endcomment %}
+          {% if item.align == 'right' %}
+            {% assign alignmentClass = ' is-right' %}
+          {% else %}
+            {% assign alignmentClass = '' %}
+          {% endif %}
 
-        {% if include.active == 'learning-centre' %}
-          {% assign lcCurrentClass = ' is-currentPage js-box' %}
-        {% else %}
-          {% assign lcCurrentClass = '' %}
-        {% endif %}
-
-          {% if item.id == include.active %}
+          {% comment %} Create CSS class that highlights location {% endcomment %}
+          {% if item.id == include.selected_tab %}
             {% assign activeClass = ' is-active' %}
-            {% if include.nested == false %}
-              {% assign tag = 'span' %}
-            {% endif %}
+            {% assign activeValue = true %}
           {% else %}
             {% assign activeClass = '' %}
-            {% assign tag = 'a' %}
+            {% assign activeValue = false %}
           {% endif %}
-            
-          {% if include.active == 'about' %}
-            {% assign currentClass = ' is-currentPage js-box' %}
+          
+          {% comment %} Create CSS that prevents parent from being highlighted as well on mobile {% endcomment %}
+          {% if item.subLinks %}
+            {% assign subLinkClass = ' has-subLinks' %}
           {% else %}
-            {% assign currentClass = '' %}
+            {% assign subLinkClass = '' %}
           {% endif %}
 
-          {% if item.id == 'about' %}
-            {% assign hasSubLinks = ' has-subLinks' %}
+          {% comment %} Create year specific URL if needed {% endcomment %}
+          {% if item.year-range %}
+            {% assign finalUrl = include.latest_year | append: "/" | append: item.url %}
           {% else %}
-            {% assign hasSubLinks = '' %}
-          {% endif %}
+            {% assign finalUrl = item.url %}
+          {% endif %} 
 
-          {% if item.align == 'right' %}
-            {% assign align = ' is-right' %}
-          {% else %}
-            {% assign align = '' %}
-          {% endif %}
 
-          <li class="NavBar-item{{ align }}">
+          <li class="NavBar-item{{ alignmentClass }}">
             <a
-              class="NavBar-link{{ activeClass }}{{ hasSubLinks }}"
-              href="/{{ include.year }}/{{ item.url }}"
+              class="NavBar-link{{ activeClass }}{{ subLinkClass }}"
+              href="/{{ finalUrl }}"
             >
 
-              {% if item.id == 'home' %}
+              {% if item.id == 'homepage' %}
                 <span class="NavBar-iconWrap">{{ icon }}</span>
                 <span class="NavBar-text is-mobileOnly">Home</span>
               {% else %}
@@ -72,15 +63,16 @@
               {% endif %}
 
             </a>
-
-            {% if item.id == 'about' %}
-              {% include components/header-and-footer/SubLinks/index.html type="about" modifiers=aboutCurrentClass year=include.year %}
+            
+            {% if item.children %}
+              {%
+                include components/header-and-footer/SubLinks/index.html 
+                items=item.children
+                active=activeValue
+                layout=include.layout
+                selected_sidebar=include.selected_sidebar
+              %}
             {% endif %}
-
-            {% if item.id == 'learning-centre' %}
-              {% include components/header-and-footer/SubLinks/index.html type="learning-centre" modifiers=lcCurrentClass year=include.year currentPage=include.title %}
-            {% endif %}
-
           </li>
 
         {% endfor %}

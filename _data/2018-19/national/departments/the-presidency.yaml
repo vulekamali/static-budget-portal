@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: The Presidency
-    organisational_unit: department
-    slug: the-presidency
     url_path: /2015-16/national/departments/the-presidency
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: The Presidency
-    organisational_unit: department
-    slug: the-presidency
     url_path: /2016-17/national/departments/the-presidency
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: The Presidency
-    organisational_unit: department
-    slug: the-presidency
     url_path: /2017-18/national/departments/the-presidency
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: The Presidency
-    organisational_unit: department
-    slug: the-presidency
     url_path: /2018-19/national/departments/the-presidency
   id: 2018-19
   is_selected: true
@@ -43,7 +31,6 @@ intro: "## Vote purpose\n\nFacilitate a common programme towards the achievement
   \ by the deputy president, as articulated in chapter 5 of the Constitution. \n\n"
 is_vote_primary: true
 name: The Presidency
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 456003000.0
@@ -52,21 +39,19 @@ programmes:
 - name: Executive Support
   total_budget: 49577000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: the-presidency
 sphere:
   name: National
   slug: national
+title: The Presidency - vulekamali
 treasury_datasets:
   ENE for Vote 1 - The Presidency:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
       spending plans of each government department for the coming year.
     formats:
     - format: PDF
-      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2001%20The%20Presidency.pdf
-  ENE for Vote 1 - The Presidency - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-the-presidency-2018-19/resource/be77a88e-daaa-4b94-a0b0-b509b9327a80/download/vote-01-the-presidency.pdf
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-the-presidency-2018-19/resource/6824a65f-dfee-43f6-b146-a463d152d1af/download/ene18-vote01_chaptertables.xlsx
 vote_number: 1

@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Communications
-    organisational_unit: department
-    slug: communications
     url_path: /2015-16/national/departments/communications
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Communications
-    organisational_unit: department
-    slug: communications
     url_path: /2016-17/national/departments/communications
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Communications
-    organisational_unit: department
-    slug: communications
     url_path: /2017-18/national/departments/communications
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Communications
-    organisational_unit: department
-    slug: communications
     url_path: /2018-19/national/departments/communications
   id: 2018-19
   is_selected: false
@@ -59,7 +47,6 @@ intro: "## Vote purpose\n\n_Create an enabling environment for the provision of 
   \ responsibility with the Minister of Telecommunications and Postal Services.\n\n"
 is_vote_primary: true
 name: Communications
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 62771000.0
@@ -70,10 +57,12 @@ programmes:
 - name: Entity Oversight
   total_budget: 1331542000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: communications
 sphere:
   name: National
   slug: national
+title: Communications - vulekamali
 treasury_datasets:
   ENE for Vote 03 - Communications:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

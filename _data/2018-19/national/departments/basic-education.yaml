@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Basic Education
-    organisational_unit: department
-    slug: basic-education
     url_path: /2015-16/national/departments/basic-education
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Basic Education
-    organisational_unit: department
-    slug: basic-education
     url_path: /2016-17/national/departments/basic-education
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Basic Education
-    organisational_unit: department
-    slug: basic-education
     url_path: /2017-18/national/departments/basic-education
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Basic Education
-    organisational_unit: department
-    slug: basic-education
     url_path: /2018-19/national/departments/basic-education
   id: 2018-19
   is_selected: true
@@ -50,7 +38,6 @@ intro: "## Vote purpose\n\nDevelop, maintain and support a South African school 
   \ competency requirements for teachers.\n\n"
 is_vote_primary: true
 name: Basic Education
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 450476000.0
@@ -63,10 +50,12 @@ programmes:
 - name: Educational Enrichment Services
   total_budget: 7105128000.0
 selected_financial_year: 2018-19
+selected_tab: departments
 slug: basic-education
 sphere:
   name: National
   slug: national
+title: Basic Education - vulekamali
 treasury_datasets:
   ENE for Vote 14 - Basic Education:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
@@ -74,10 +63,6 @@ treasury_datasets:
     formats:
     - format: PDF
       url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2014%20Basic%20Education.pdf
-  ENE for Vote 14 - Basic Education - Tables:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
     - format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-basic-education-2018-19/resource/39d3dcb7-5c04-4c4b-919b-457ee591a21c/download/ene18-vote14_chaptertables.xlsx
 vote_number: 14

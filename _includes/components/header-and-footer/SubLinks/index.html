@@ -1,7 +1,38 @@
-<div class="SubLinks {{ include.modifiers }}">
-  {% if include.type == 'about' %}
-    {% include components/header-and-footer/SubLinks/partials/about.html year=include.year %}
-  {% else %}
-    {% include components/header-and-footer/SubLinks/partials/learning-centre.html year=include.year currentPage=include.currentPage %}
-  {% endif %}
+{% comment %} Determine whether children should show in sidebar {% endcomment %}
+{% if include.active %}
+  {% assign parentActiveClass = ' is-currentPage' %}
+{% else %}
+  {% assign parentActiveClass = '' %}
+{% endif %} 
+
+
+<div class="SubLinks{{ parentActiveClass }}">
+  <ul class="SubLinks-subItems">
+
+    {% for item in include.items %}
+
+      {% comment %} Determine whether children should show in sidebar {% endcomment %}
+      {% if include.selected_sidebar and include.selected_sidebar == item.id %}
+        {% assign activeClass = ' is-active' %}
+      {% else %}
+        {% assign activeClass = '' %}
+      {% endif %}
+
+      {% comment %} Determine whether link active state should be determined by JavaScript {% endcomment %}
+      {% if item.connected %}
+        {% assign dataAttribute = ' data-connected-id="' | append: item.connected | append: '"' %}
+        {% assign jsClass = ' js-link' %}
+      {% else %}
+        {% assign dataAttribute = '' %}
+        {% assign jsClass = '' %}
+      {% endif %}
+
+      <li class="SubLinks-subItem">
+        <a class="SubLinks-subLink{{ activeClass }}{{ jsClass }}"{{ dataAttribute }} href="/{{ item.url }}">
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+
+  </ul>
 <div>

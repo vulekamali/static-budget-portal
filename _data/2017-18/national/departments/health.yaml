@@ -1,40 +1,28 @@
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: "Emergency Medical Services in the Eastern Cape 2005 \u2013 2015"
-  url_path: /2017-18/datasets/emergency-medical-services-in-the-eastern-cape-2005-2015
+  url_path: /datasets/emergency-medical-services-in-the-eastern-cape-2005-2015
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-health-2014-15
+  url_path: /datasets/budget-brief-eastern-cape-department-of-health-2014-15
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Health
-    organisational_unit: department
-    slug: health
     url_path: /2015-16/national/departments/health
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Health
-    organisational_unit: department
-    slug: health
     url_path: /2016-17/national/departments/health
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Health
-    organisational_unit: department
-    slug: health
     url_path: /2017-18/national/departments/health
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Health
-    organisational_unit: department
-    slug: health
     url_path: /2018-19/national/departments/health
   id: 2018-19
   is_selected: false
@@ -56,7 +44,6 @@ intro: "## Vote purpose\n\n_Provide leadership and coordination of health servic
   medium-term strategic framework.\n\n"
 is_vote_primary: true
 name: Health
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 512838000.0
@@ -71,10 +58,12 @@ programmes:
 - name: Health Regulation and Compliance Management
   total_budget: 1726971000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: health
 sphere:
   name: National
   slug: national
+title: Health - vulekamali
 treasury_datasets:
   ENE for Vote 16 - Health:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: The Royal Household
-    organisational_unit: department
-    slug: the-royal-household
     url_path: /2015-16/provincial/kwazulu-natal/departments/the-royal-household
   id: 2015-16
   is_selected: true
 - closest_match:
     is_exact_match: false
-    name: KwaZulu-Natal
-    organisational_unit: government
-    slug: kwazulu-natal
     url_path: /2016-17/provincial/kwazulu-natal
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: false
-    name: KwaZulu-Natal
-    organisational_unit: government
-    slug: kwazulu-natal
     url_path: /2017-18/provincial/kwazulu-natal
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: false
-    name: KwaZulu-Natal
-    organisational_unit: government
-    slug: kwazulu-natal
     url_path: /2018-19/provincial/kwazulu-natal
   id: 2018-19
   is_selected: false
@@ -46,13 +34,14 @@ intro: "## Note\n\nIt must be noted that Proclamation No. 83 of 2014, which was 
   \ to Vote 1: Office of the Premier on pages 1 to 46."
 is_vote_primary: true
 name: The Royal Household
-organisational_unit: department
 programmes: []
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: the-royal-household
 sphere:
   name: Provincial
   slug: provincial
+title: The Royal Household - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : The Royal Household':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

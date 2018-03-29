@@ -1,40 +1,28 @@
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: "Emergency Medical Services in the Eastern Cape 2005 \u2013 2015"
-  url_path: /2017-18/datasets/emergency-medical-services-in-the-eastern-cape-2005-2015
+  url_path: /datasets/emergency-medical-services-in-the-eastern-cape-2005-2015
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /2017-18/datasets/budget-brief-eastern-cape-department-of-health-2014-15
+  url_path: /datasets/budget-brief-eastern-cape-department-of-health-2014-15
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Health
-    organisational_unit: department
-    slug: health
     url_path: /2015-16/provincial/mpumalanga/departments/health
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Health
-    organisational_unit: department
-    slug: health
     url_path: /2016-17/provincial/mpumalanga/departments/health
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Health
-    organisational_unit: department
-    slug: health
     url_path: /2017-18/provincial/mpumalanga/departments/health
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: false
-    name: Mpumalanga
-    organisational_unit: government
-    slug: mpumalanga
     url_path: /2018-19/provincial/mpumalanga
   id: 2018-19
   is_selected: false
@@ -73,7 +61,6 @@ intro: "## Vision\n\n\u201CA Healthy Developed Society\u201D\r\n\r\n\n\n## Missi
   \ health technologies and the provision of laundry services"
 is_vote_primary: true
 name: Health
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 300668000.0
@@ -92,10 +79,12 @@ programmes:
 - name: Health Facilities Management
   total_budget: 1436440000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: health
 sphere:
   name: Provincial
   slug: provincial
+title: Health - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

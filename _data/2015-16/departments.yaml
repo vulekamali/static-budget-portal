@@ -1,33 +1,21 @@
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Departments
-    organisational_unit: department-list
-    slug: departments
     url_path: /2015-16/departments
   id: 2015-16
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Departments
-    organisational_unit: department-list
-    slug: departments
     url_path: /2016-17/departments
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Departments
-    organisational_unit: department-list
-    slug: departments
     url_path: /2017-18/departments
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Departments
-    organisational_unit: department-list
-    slug: departments
     url_path: /2018-19/departments
   id: 2018-19
   is_selected: false
@@ -195,7 +183,6 @@ national:
     vote_number: 40
   name: South Africa
   slug: south-africa
-organisational_unit: department-list
 provincial:
 - departments:
   - name: Premier
@@ -721,4 +708,6 @@ provincial:
   name: Eastern Cape
   slug: eastern-cape
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: departments
+title: Department Budgets - vulekamali

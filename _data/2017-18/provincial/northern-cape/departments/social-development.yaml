@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Social Development
-    organisational_unit: department
-    slug: social-development
     url_path: /2015-16/provincial/northern-cape/departments/social-development
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Social Development
-    organisational_unit: department
-    slug: social-development
     url_path: /2016-17/provincial/northern-cape/departments/social-development
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Social Development
-    organisational_unit: department
-    slug: social-development
     url_path: /2017-18/provincial/northern-cape/departments/social-development
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: false
-    name: Northern Cape
-    organisational_unit: government
-    slug: northern-cape
     url_path: /2018-19/provincial/northern-cape
   id: 2018-19
   is_selected: false
@@ -68,7 +56,6 @@ intro: "## Vision\n\nA caring and self-reliant society.\r\n\r\n\n\n## Mission\n\
   \ support networks at Youth Service Centre level for the youth.\r\n"
 is_vote_primary: true
 name: Social Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 128936000.0
@@ -81,10 +68,12 @@ programmes:
 - name: Development and Research
   total_budget: 146464000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: social-development
 sphere:
   name: Provincial
   slug: provincial
+title: Social Development - vulekamali
 treasury_datasets:
   'EPRE for Vote 11 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

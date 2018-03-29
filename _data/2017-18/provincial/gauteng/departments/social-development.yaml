@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Social Development
-    organisational_unit: department
-    slug: social-development
     url_path: /2015-16/provincial/gauteng/departments/social-development
   id: 2015-16
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Social Development
-    organisational_unit: department
-    slug: social-development
     url_path: /2016-17/provincial/gauteng/departments/social-development
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Social Development
-    organisational_unit: department
-    slug: social-development
     url_path: /2017-18/provincial/gauteng/departments/social-development
   id: 2017-18
   is_selected: true
 - closest_match:
     is_exact_match: false
-    name: Gauteng
-    organisational_unit: government
-    slug: gauteng
     url_path: /2018-19/provincial/gauteng
   id: 2018-19
   is_selected: false
@@ -59,7 +47,6 @@ intro: "## Vision\n\nA caring and self reliat society.\r\n\r\n\n\n## Mission\n\n
   \ households through the implementation of the War on Poverty (WoP) programme."
 is_vote_primary: true
 name: Social Development
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 551236000.0
@@ -72,10 +59,12 @@ programmes:
 - name: Development and Research
   total_budget: 547069000.0
 selected_financial_year: 2017-18
+selected_tab: departments
 slug: social-development
 sphere:
   name: Provincial
   slug: provincial
+title: Social Development - vulekamali
 treasury_datasets:
   'EPRE for Vote 06 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

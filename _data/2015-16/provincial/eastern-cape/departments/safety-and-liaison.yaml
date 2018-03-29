@@ -2,33 +2,21 @@ contributed_datasets: null
 financial_years:
 - closest_match:
     is_exact_match: true
-    name: Safety and Liaison
-    organisational_unit: department
-    slug: safety-and-liaison
     url_path: /2015-16/provincial/eastern-cape/departments/safety-and-liaison
   id: 2015-16
   is_selected: true
 - closest_match:
     is_exact_match: true
-    name: Safety and Liaison
-    organisational_unit: department
-    slug: safety-and-liaison
     url_path: /2016-17/provincial/eastern-cape/departments/safety-and-liaison
   id: 2016-17
   is_selected: false
 - closest_match:
     is_exact_match: true
-    name: Safety and Liaison
-    organisational_unit: department
-    slug: safety-and-liaison
     url_path: /2017-18/provincial/eastern-cape/departments/safety-and-liaison
   id: 2017-18
   is_selected: false
 - closest_match:
     is_exact_match: false
-    name: Eastern Cape
-    organisational_unit: government
-    slug: eastern-cape
     url_path: /2018-19/provincial/eastern-cape
   id: 2018-19
   is_selected: false
@@ -49,17 +37,18 @@ intro: "## Vision\n\nGrowth and quality of life through safety and security.\r\n
   \ in the\r\nprovince.\r\n"
 is_vote_primary: true
 name: Safety and Liaison
-organisational_unit: department
 programmes:
 - name: Administration
   total_budget: 40768000.0
 - name: Civilian Oversight
   total_budget: 43201000.0
 selected_financial_year: 2015-16
+selected_tab: departments
 slug: safety-and-liaison
 sphere:
   name: Provincial
   slug: provincial
+title: Safety and Liaison - vulekamali
 treasury_datasets:
   'EPRE for Vote 15 : Safety and Liaison':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
