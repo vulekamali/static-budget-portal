@@ -1741,16 +1741,60 @@ function trimValues(value, abbreviated) {
   var billion = abbreviated ? 'bn' : 'billion';
 
   if (value > 1000000000) {
-    return Math.round(value / 1000000000) + ' ' + billion;
+    return (value / 1000000000).toFixed(1).replace(/\.0$/, '') + ' ' + billion;
   } else if (value > 1000000) {
-    return Math.round(value / 1000000) + ' ' + million;
+    return (value / 1000000).toFixed(1).replace(/\.0$/, '') + ' ' + million;
   }
 
-  return Math.round(value);
+  return value.toFixed(1).replace(/\.0$/, '');
 }
 
 /***/ }),
 /* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var DebounceFunction = function () {
+  function DebounceFunction(time) {
+    _classCallCheck(this, DebounceFunction);
+
+    this.time = time;
+    this.timeout = null;
+  }
+
+  _createClass(DebounceFunction, [{
+    key: "update",
+    value: function update(func) {
+      var _this = this;
+
+      if (this.timeout) {
+        clearTimeout(this.timeout);
+      }
+
+      this.timeout = window.setTimeout(function () {
+        clearTimeout(_this.timeout);
+        func();
+      }, this.time);
+    }
+  }]);
+
+  return DebounceFunction;
+}();
+
+exports.default = DebounceFunction;
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1770,7 +1814,7 @@ function createSizeModifier(string) {
 }
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1984,57 +2028,13 @@ exports.parseUrl = function (str, opts) {
 };
 
 /***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(62);
-
-/***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var DebounceFunction = function () {
-  function DebounceFunction(time) {
-    _classCallCheck(this, DebounceFunction);
-
-    this.time = time;
-    this.timeout = null;
-  }
-
-  _createClass(DebounceFunction, [{
-    key: "update",
-    value: function update(func) {
-      var _this = this;
-
-      if (this.timeout) {
-        clearTimeout(this.timeout);
-      }
-
-      this.timeout = window.setTimeout(function () {
-        clearTimeout(_this.timeout);
-        func();
-      }, this.time);
-    }
-  }]);
-
-  return DebounceFunction;
-}();
-
-exports.default = DebounceFunction;
+module.exports = __webpack_require__(62);
 
 /***/ }),
 /* 14 */
@@ -2262,7 +2262,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _DebounceFunction = __webpack_require__(13);
+var _DebounceFunction = __webpack_require__(10);
 
 var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
 
@@ -7222,7 +7222,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 "use strict";
 
 
-var ES = __webpack_require__(12);
+var ES = __webpack_require__(13);
 var supportsDescriptors = __webpack_require__(7).supportsDescriptors;
 
 /*! https://mths.be/array-from v0.2.0 by @mathias */
@@ -7350,7 +7350,7 @@ module.exports = function mod(number, modulo) {
 "use strict";
 
 
-var ES = __webpack_require__(12);
+var ES = __webpack_require__(13);
 var implementation = __webpack_require__(28);
 
 var tryCall = function tryCall(fn) {
@@ -7411,7 +7411,7 @@ module.exports = g;
 // For all details and docs: <https://github.com/paulmillr/Array.prototype.findIndex>
 
 
-var ES = __webpack_require__(12);
+var ES = __webpack_require__(13);
 
 module.exports = function findIndex(predicate) {
 	var list = ES.ToObject(this);
@@ -10112,7 +10112,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _queryString = __webpack_require__(11);
+var _queryString = __webpack_require__(12);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -12258,7 +12258,7 @@ exports.clearImmediate = typeof self !== "undefined" && self.clearImmediate || t
 
 
 var define = __webpack_require__(7);
-var ES = __webpack_require__(12);
+var ES = __webpack_require__(13);
 
 var implementation = __webpack_require__(37);
 var getPolyfill = __webpack_require__(38);
@@ -13054,7 +13054,7 @@ function Attribution(_ref) {
         fill: "#ed9e31",
         "font-family": "sans-serif"
       },
-      "Downloaded from www.vulekamali.go.za"
+      "Downloaded from www.vulekamali.gov.za"
     )
   );
 }
@@ -15713,7 +15713,7 @@ exports.default = Download;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(10);
+var _createSizeModifier = __webpack_require__(11);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -15743,7 +15743,7 @@ exports.default = Download;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(10);
+var _createSizeModifier = __webpack_require__(11);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -15773,7 +15773,7 @@ exports.default = Facebook;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(10);
+var _createSizeModifier = __webpack_require__(11);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -15808,7 +15808,7 @@ exports.default = Facebook;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(10);
+var _createSizeModifier = __webpack_require__(11);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -15843,7 +15843,7 @@ exports.default = Facebook;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(10);
+var _createSizeModifier = __webpack_require__(11);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -17771,7 +17771,7 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _queryString = __webpack_require__(11);
+var _queryString = __webpack_require__(12);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -18534,6 +18534,10 @@ var _decodeHtmlEntities = __webpack_require__(1);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
+var _DebounceFunction = __webpack_require__(10);
+
+var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -18557,11 +18561,54 @@ var YearSelectContainer = function (_Component) {
     _this.state = {
       loading: false,
       open: false,
-      tooltip: null
+      tooltip: null,
+      sticky: false,
+      mobile: true
     };
 
+    _this.node = null;
+    _this.updateNode = _this.updateNode.bind(_this);
     _this.updateItem = _this.updateItem.bind(_this);
     _this.data = _this.normaliseData();
+
+    _this.updateWidth = function () {
+      if (_this.state.mobile && window.innerWidth >= 900) {
+        _this.setState({ mobile: false });
+      } else if (!_this.state.mobile && window.innerWidth < 900) {
+        _this.setState({ mobile: true });
+      }
+      return null;
+    };
+
+    var viewportDebounce = new _DebounceFunction2.default(300);
+    var updateViewport = function updateViewport() {
+      return viewportDebounce.update(_this.updateWidth);
+    };
+
+    window.addEventListener('resize', updateViewport);
+
+    _this.updateSticky = function () {
+      if (_this.node) {
+        var top = _this.node.getBoundingClientRect().top;
+
+        if (top + 300 > 0 && _this.state.sticky) {
+          _this.setState({ sticky: false });
+        } else if (top + 300 < 0 && !_this.state.sticky) {
+          _this.setState({ sticky: true });
+        }
+      }
+
+      return null;
+    };
+
+    var scrollDebounce = new _DebounceFunction2.default(50);
+    var updateScroll = function updateScroll() {
+      return scrollDebounce.update(_this.updateSticky);
+    };
+
+    window.addEventListener('resize', updateScroll);
+
+    window.addEventListener('scroll', updateScroll);
     return _this;
   }
 
@@ -18583,6 +18630,11 @@ var YearSelectContainer = function (_Component) {
       return this.setState(_defineProperty({}, key, value));
     }
   }, {
+    key: 'updateNode',
+    value: function updateNode(node) {
+      this.node = node;
+    }
+  }, {
     key: 'render',
     value: function render() {
       return (0, _preact.h)(_index2.default, {
@@ -18591,7 +18643,9 @@ var YearSelectContainer = function (_Component) {
         loading: this.state.loading,
         open: this.state.open,
         updateItem: this.updateItem,
-        tooltip: this.state.tooltip
+        tooltip: this.state.tooltip,
+        updateNode: this.updateNode,
+        sticky: this.state.sticky
       });
     }
   }]);
@@ -18630,7 +18684,7 @@ exports.default = YearSelectMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _queryString = __webpack_require__(11);
+var _queryString = __webpack_require__(12);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -18646,7 +18700,9 @@ var navToYearPage = function navToYearPage(event, page) {
 };
 
 function YearSelectMarkup(_ref) {
-  var jsonData = _ref.jsonData,
+  var sticky = _ref.sticky,
+      jsonData = _ref.jsonData,
+      updateNode = _ref.updateNode,
       tooltip = _ref.tooltip,
       open = _ref.open,
       updateItem = _ref.updateItem,
@@ -18732,9 +18788,9 @@ function YearSelectMarkup(_ref) {
     items
   );
 
-  return (0, _preact.h)(
+  var instance = (0, _preact.h)(
     'div',
-    { className: 'YearSelect' },
+    { className: 'YearSelect-instance' },
     (0, _preact.h)(
       'div',
       { className: 'YearSelect-wrap' },
@@ -18757,6 +18813,23 @@ function YearSelectMarkup(_ref) {
         { className: 'YearSelect-content' },
         loading ? placeholder : realData
       )
+    )
+  );
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'YearSelect' },
+    (0, _preact.h)(
+      'div',
+      { className: 'YearSelect-static', ref: function ref(node) {
+          return updateNode(node);
+        } },
+      instance
+    ),
+    (0, _preact.h)(
+      'div',
+      { 'aria-hidden': true, className: 'YearSelect-fixed' + (sticky ? ' is-active' : '') },
+      instance
     )
   );
 }
@@ -19208,7 +19281,7 @@ var _index = __webpack_require__(2);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _DebounceFunction = __webpack_require__(13);
+var _DebounceFunction = __webpack_require__(10);
 
 var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
 
@@ -19322,7 +19395,7 @@ var ProgrammesChartContainer = function (_Component) {
         },
         items: this.props.items,
         guides: true,
-        width: 600
+        width: 900
       })));
 
       if (this.canvas.msToBlob) {
@@ -21112,7 +21185,7 @@ function Download(_ref) {
 
   return (0, _preact.h)(
     'a',
-    { href: link, className: 'Download' },
+    { href: link, className: 'Download', target: '_blank' },
     icon ? iconSection : null,
     (0, _preact.h)(
       'span',
@@ -21754,7 +21827,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = updateQs;
 
-var _queryString = __webpack_require__(11);
+var _queryString = __webpack_require__(12);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -22898,7 +22971,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _DebounceFunction = __webpack_require__(13);
+var _DebounceFunction = __webpack_require__(10);
 
 var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
 
@@ -23039,7 +23112,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _DebounceFunction = __webpack_require__(13);
+var _DebounceFunction = __webpack_require__(10);
 
 var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
 

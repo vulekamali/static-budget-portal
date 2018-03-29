@@ -8,7 +8,7 @@ const navToYearPage = (event, page) => {
 };
 
 
-export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, search, loading, year, newYear }) {
+export default function YearSelectMarkup({ sticky, jsonData, updateNode, tooltip, open, updateItem, search, loading, year, newYear }) {
 
   const items = jsonData.map((data) => {
     const Tag = data.active || data.direct === false ? 'span' : 'a';
@@ -74,8 +74,8 @@ export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, 
     </ul>
   );
 
-  return (
-    <div className="YearSelect">
+  const instance = (
+    <div className="YearSelect-instance">
       <div className="YearSelect-wrap">
         <h2 className="YearSelect-title">
           <span className="YearSelect-titleExtra">Show data for a </span>
@@ -84,6 +84,17 @@ export default function YearSelectMarkup({ jsonData, tooltip, open, updateItem, 
         <div className="YearSelect-content">
           { loading ? placeholder : realData }
         </div>
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="YearSelect">
+      <div className="YearSelect-static" ref={node => updateNode(node)}>
+        {instance}
+      </div>
+      <div aria-hidden className={`YearSelect-fixed${sticky ? ' is-active' : ''}`}>
+        {instance}
       </div>
     </div>
   );
