@@ -200,6 +200,12 @@ li {
 .u-listItemReset {
   padding: 0 !important; }
 
+.u-displayTable {
+  display: table; }
+
+.u-displayTableCell {
+  display: table-cell; }
+
 .u-padding0 {
   padding: 0 !important; }
 
@@ -660,6 +666,9 @@ li {
 .u-fontWeightBold {
   font-weight: bold !important; }
 
+.u-fontSize18 {
+  font-size: 16px !important; }
+
 .u-fontSize16 {
   font-size: 16px !important; }
 
@@ -983,6 +992,7 @@ li {
     .Page-contentInner--floatingLinks {
       padding-left: 0; } }
 
+.Page-title,
 .Page-mainHeading {
   font-weight: bold;
   font-size: 28px;
@@ -990,9 +1000,11 @@ li {
   margin: 25px 20px 10px;
   display: block; }
   @media (min-width: 500px) {
+    .Page-title,
     .Page-mainHeading {
       margin: 35px 30px 20px; } }
   @media (min-width: 750px) {
+    .Page-title,
     .Page-mainHeading {
       margin: 45px 40px 30px; } }
 
@@ -1362,6 +1374,70 @@ li {
 
 .Tooltip-links {
   margin: 10px 10px 0; }
+
+.NewSection {
+  text-align: left;
+  font-size: 14px;
+  display: block;
+  color: #3f3f3f;
+  text-decoration: none;
+  width: 100%;
+  padding: 20px 20px 25px; }
+  @media (min-width: 500px) {
+    .NewSection {
+      padding: 25px 30px 30px; } }
+  @media (min-width: 750px) {
+    .NewSection {
+      padding: 25px 40px 30px; } }
+  .NewSection.is-bevel {
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 1px solid #d2d2d2; }
+  .NewSection.is-dark {
+    background-color: #e6e6e6; }
+    .NewSection.is-dark.is-link:hover {
+      background-color: silver; }
+  .NewSection.is-green {
+    background-color: #7bb344; }
+    .NewSection.is-green.is-link:hover {
+      background-color: #557c2f; }
+
+.NewSection-content {
+  padding: 10px 10px 15px; }
+  @media (min-width: 500px) {
+    .NewSection-content {
+      padding: 15px 20px 20px; } }
+  @media (min-width: 750px) {
+    .NewSection-content {
+      padding: 15px 30px 20px; } }
+  .NewSection-content.is-card {
+    padding: 20px 10px 25px;
+    background: white;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid #d2d2d2; }
+    @media (min-width: 500px) {
+      .NewSection-content.is-card {
+        padding: 25px 20px 35px; } }
+    @media (min-width: 750px) {
+      .NewSection-content.is-card {
+        padding: 25px 30px 35px; } }
+    .NewSection.is-link:hover .NewSection-content.is-card {
+      background-color: #d9d9d9;
+      border: 1px solid #acacac; }
+  .NewSection-content.is-dark {
+    background-color: #7d7d7d;
+    color: white; }
+
+.NewSection-title {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  font-weight: 900;
+  display: block; }
 
 .ApiCta-title {
   font-size: 18px;
@@ -2646,8 +2722,8 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;

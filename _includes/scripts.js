@@ -21,7 +21,7 @@ import './components/learning-centre/Videos/scripts.jsx';
 
 import './components/homepage/ValueBlocks/scripts.jsx';
 import './components/homepage/Revenue/scripts.jsx';
-import './components/homepage/HomeChart/scripts.jsx';
+import './components/homepage/NewHomeChart/scripts.jsx';
 
 import './components/header-and-footer/Search/scripts.jsx';
 import './components/header-and-footer/YearSelect/scripts.jsx';
