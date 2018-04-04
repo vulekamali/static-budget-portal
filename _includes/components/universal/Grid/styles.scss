@@ -1,0 +1,21 @@
+.Grid {
+  @include clearfix;
+}
+
+.Grid-item {
+  @media screen and ($standard-breakpoint) {
+    float: left;
+
+    &.is-half {
+      width: 50%;
+
+      &:nth-of-type(2n) {
+        padding-left: 15px;
+      }
+
+      &:nth-of-type(2n + 1) {
+        padding-right: 15px;
+      }
+    }
+  }
+}

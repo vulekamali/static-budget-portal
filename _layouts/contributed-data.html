@@ -7,19 +7,19 @@ layout: page-shell
   <main class="Page-contentInner">
     <h1 class="Page-mainHeading">Contributed Data</h1>
 
-    <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--green">
-      <div class="Page-section Page-section--card">
+    <div class="Section is-bevel is-green u-marginBottom20">
+      <div class="Section-card">
         {% include components/contributed-data/CsoRequest/index.html %}
       </div>
     </div>
 
-    <div class="Page-grid">
+    <div class="Grid">
 
       {% for dataset in page_data.datasets %}
-        <div class="Page-gridItem Page-gridItem--half">
-          <a href="{{ dataset.url_path }}" class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark Page-sectionWrap--link" title="{{ dataset.name }}">
-            <div class="Page-section Page-section--card">
-              {% 
+        <div class="Grid-item is-half">
+          <a href="{{ dataset.url_path }}" class="Section u-marginBottom20 is-bevel is-link" title="{{ dataset.name }}">
+            <div class="Section-card">
+              {%
                 include components/contributed-data/CsoPreview/index.html
                 name=dataset.name
                 title=dataset.organization.name
