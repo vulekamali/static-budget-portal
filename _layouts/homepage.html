@@ -17,14 +17,17 @@ layout: page-shell
 
     <h1 class="Page-title">The South African National Budget {{ page.financial_year | split: "-" | first }}</h1>
 
-    <p class="Section u-fontSize18 u-paddingTop0">
+    <div class="Section is-invisible u-fontSize18 u-paddingTop0">
       <em>vulekamali</em> is a project by the South African National Treasury and Imali Yethu with the goal of making government budget data and processes accessible to all citizens & interested parties. <a href="/about">Read more about vulekamali.</a>
-    </p>
+    </div>
 
     <div class="Page-main">
 
       <div>
-        <span class="HomeLayout-title js-tooltips" data-year="{{ page.financial_year }}">The national revenue fund, administered by the National Treasury, is distributed to the three spheres of government.</span>
+        <div class="Section is-invisible" data-year="{{ page.financial_year }}">
+          <div class="Section-title">Spheres of government</div>
+          <span>The national revenue fund, administered by the National Treasury, is distributed to the three spheres of government.</span>
+        </div>
 
         <div>
           {%
@@ -35,7 +38,7 @@ layout: page-shell
         </div>
 
         <div class="Section is-bevel is-dark u-marginTop40">
-          <div class="Section-invisible">
+          <div class="Section-card is-invisible u-paddingBottom10">
             <div class="Section-title">
               Where National Government gets its money for {{ page.financial_year }}
             </div>
@@ -45,13 +48,13 @@ layout: page-shell
             values=page_data.revenue
             type="revenue"
           %}
-          <div class="Section-invisible u-marginTop15">
+          <div class="Section-card is-invisible u-paddingBottom15 u-paddingTop15">
             {% include components/universal/Download/index.html title=" Download Estimates of National Revenue (Excel)" link=finalDownload icon="true" %}
           </div>
         </div>
 
         <div class="Section is-bevel is-dark u-marginTop40">
-          <div class="Section-invisible">
+          <div class="Section-card is-invisible u-paddingBottom10">
             <div class="Section-title">
               How Government spends its money for {{ page.financial_year }}
             </div>
@@ -61,7 +64,7 @@ layout: page-shell
             values=government_functions
             type="expenditure"
           %}
-          <div class="Section-invisible u-marginTop15">
+          <div class="Section-card is-invisible u-paddingBottom15 u-paddingTop15">
             {% include components/universal/Download/index.html title=finalTitle link=finalLink %}
           </div>
         </div>

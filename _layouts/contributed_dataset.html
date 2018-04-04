@@ -29,16 +29,16 @@ layout: page-shell
     </div>
 
     <main class="Page-main">
-      <div class="Section is-bevel">
+      <div class="Section u-marginBottom20">
         {% if page_data.intro %}
-          <div class="Section-invisible">
+          <div class="Section-card is-invisible">
             <h2 class="Section-title">Data contributed by: {{ page_data.organization.name }}</h2>
             {{ page_data.intro | markdownify }}
           </div>
         {% endif %}
 
         {% if page_data.methodology and page_data.methodology != '' %}
-          <div class="Section-invisible">
+          <div class="Section-card is-invisible">
             <h2 class="Section-title">Methodology Used in Gathering and Analysis</h2>
             {{ page_data.methodology | markdownify }}
           </div>
@@ -46,7 +46,7 @@ layout: page-shell
       </div>
 
       {% if page_data.resources %}
-        <div class="Section is-bevel is-green">
+        <div class="Section is-bevel is-green u-marginBottom20">
           <div class="Section-card">
             {%
               include components/contributed-data/CsoFiles/index.html
@@ -59,11 +59,10 @@ layout: page-shell
     </main>
 
     <aside class="Page-sidebar">
-      <div class="Section is-bevel">
-        <div class="Section-invisible">
-          <h2 class="Section-title">Share this page:</h2>
-          {% include components/universal/Share/index.html %}
-        </div>
+      <div class="Section 
+      u-marginBottom20">
+        <h2 class="Section-title">Share this page:</h2>
+        {% include components/universal/Share/index.html %}
       </div>
 
       <div class="Section is-bevel">

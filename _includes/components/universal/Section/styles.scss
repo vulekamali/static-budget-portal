@@ -6,6 +6,10 @@
   text-decoration: none;
   width: 100%;
   padding: 20px 20px 25px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid $colour-shading-border;
 
   @media ($mobile-breakpoint) {
     padding: 25px 30px 30px;
@@ -34,17 +38,11 @@
       background-color: darken($colour-brand-green, 15%);
     }
   }
-}
 
-.Section-invisible {
-  padding: 10px 10px 15px;
-
-  @media ($mobile-breakpoint) {
-    padding: 15px 20px 20px;
-  }
-
-  @media ($tablet-breakpoint) {
-    padding: 15px 30px 20px;
+  &.is-invisible {
+    box-shadow: none;
+    border-width: 0;
+    background: none;
   }
 }
 
@@ -72,6 +70,12 @@
   &.is-dark {
     background-color: #7d7d7d;
     color: white;
+  }
+
+  &.is-invisible {
+    box-shadow: none;
+    border-width: 0;
+    background: none;
   }
 }
 

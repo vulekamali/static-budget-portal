@@ -21334,7 +21334,7 @@ function ProgrammesChart(props) {
         { className: 'ProgrammesChart-info' },
         (0, _preact.h)(
           'div',
-          { className: 'Section-invisible' },
+          { className: 'Section-card is-invisible' },
           (0, _preact.h)(
             'div',
             { className: 'Page-subHeading' },
@@ -21349,7 +21349,7 @@ function ProgrammesChart(props) {
         ),
         (0, _preact.h)(
           'div',
-          { className: 'Section-invisible' },
+          { className: 'Section-card is-invisible' },
           (0, _preact.h)(
             'div',
             { className: 'u-fontWeightBold' },
@@ -21370,7 +21370,7 @@ function ProgrammesChart(props) {
         ),
         (0, _preact.h)(
           'div',
-          { className: 'Section-invisible' },
+          { className: 'Section-card is-invisible' },
           (0, _preact.h)(
             'div',
             { className: 'u-fontWeightBold u-marginBottom10' },
@@ -21409,7 +21409,7 @@ function ProgrammesChart(props) {
         ),
         (0, _preact.h)(
           'div',
-          { className: 'Section-invisible u-textAlignCenter' },
+          { className: 'Section-card is-invisible u-textAlignCenter' },
           hasNull ? null : downloadButton
         )
       )
@@ -21767,7 +21767,7 @@ function ProgrammesChart(props) {
     { className: 'Section is-bevel' },
     (0, _preact.h)(
       'div',
-      { className: 'Section-invisible u-paddingBottom0' },
+      { className: 'Section-card is-invisible u-paddingBottom0' },
       (0, _preact.h)(
         'h2',
         { className: 'Section-title' },
@@ -21808,7 +21808,7 @@ function ProgrammesChart(props) {
     ),
     (0, _preact.h)(
       'div',
-      { className: 'Section-invisible' },
+      { className: 'Section-card is-invisible' },
       (0, _preact.h)(_index4.default, {
         selected: this.props.downloadSelected,
         changeAction: this.props.changeAction,

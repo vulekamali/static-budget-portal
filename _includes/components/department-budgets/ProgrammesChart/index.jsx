@@ -63,13 +63,13 @@ export default function ProgrammesChart(props) {
       </Modal>
       <div className="ProgrammesChart">
         <div className="ProgrammesChart-info">
-          <div className="Section-invisible">
+          <div className="Section-card is-invisible">
             <div className="Page-subHeading">Programme budgets for {year}</div>
             <p>
               A department&#x27;s programmes are the activities that it spends money on during the financial year. Different programmes have different expenditure budgets, depending on their requirements and available finances. More detail on the programmes is available in the department's Estimates of National Expenditure (ENE) documents.
             </p>
           </div>
-          <div className="Section-invisible">
+          <div className="Section-card is-invisible">
             <div className="u-fontWeightBold">Sources</div>
             <p>
               The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year.
@@ -84,7 +84,7 @@ export default function ProgrammesChart(props) {
               })
             }
           </div>
-          <div className="Section-invisible">
+          <div className="Section-card is-invisible">
             <div className="u-fontWeightBold u-marginBottom10">Share this chart:</div>
             <div className="ProgrammesChart-share">
               <div className="ProgrammesChart-shareDropdown">
@@ -106,7 +106,7 @@ export default function ProgrammesChart(props) {
           <div className="Section-card">
             {hasNull ? noValues : withValues}
           </div>
-          <div className="Section-invisible u-textAlignCenter">
+          <div className="Section-card is-invisible u-textAlignCenter">
             {hasNull ? null : downloadButton}
           </div>
         </div>

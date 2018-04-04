@@ -35,7 +35,7 @@ export default function ProgrammesChart(props) {
 
   return (
     <div className="Section is-bevel">
-      <div className="Section-invisible u-paddingBottom0">
+      <div className="Section-card is-invisible u-paddingBottom0">
         <h2 className="Section-title">Expenditure changes over time</h2>
         <p>Budgeted expenditure for a department can increase or decrease from year to year. The official budget shows the nominal value of spendiing - the real value is calculated by adjusting for inflation, since most expenditure items are subject to inflation.</p>
 
@@ -59,7 +59,7 @@ export default function ProgrammesChart(props) {
           />
         </div>
       </div>
-      <div className="Section-invisible">
+      <div className="Section-card is-invisible">
         <ChartDownload
           selected={this.props.downloadSelected}
           changeAction={this.props.changeAction}
