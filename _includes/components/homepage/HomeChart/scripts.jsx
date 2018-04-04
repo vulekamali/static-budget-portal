@@ -1,9 +1,7 @@
 import { h, render, Component } from 'preact';
 import DebounceFunction from './../../../utilities/js/helpers/DebounceFunction.js';
 import getProp from './../../../utilities/js/helpers/getProp.js';
-import arrayToObject from './../../../utilities/js/helpers/arrayToObject.js';
 import HomeChart from './index.jsx';
-import arrayHasValue from './../../../utilities/js/helpers/arrayHasValue.js';
 
 
 class HomeChartContainer extends Component {
@@ -67,35 +65,53 @@ class HomeChartContainer extends Component {
 
 
 function scripts() {
-  const nodes = document.getElementsByClassName('js-initNewHomeChart');
+  const nodes = document.getElementsByClassName('js-initHomeChart');
+
+  const buildRevenueData = array => array.map((object) => {
+    return {
+      [object.category]: [object.amount],
+    };
+  });
+
+  const buildExpenditureData = array => array.map((object) => {
+    return {
+      [object.name]: [parseInt(object.total_budget, 10)],
+    };
+  });
+
+  const buildExpenditureDataWithNull = array => array.map((object) => {
+    return {
+      [object.name]: {
+        link: `/search-result?search_type=full-search&search=${object.name}`,
+      },
+    };
+  });
+
+  const normaliseData = (array, hasNull, type) => {
+    if (type === 'expenditure' && hasNull) {
+      return buildExpenditureDataWithNull(array);
+    } else if (type === 'expenditure') {
+      return buildExpenditureData(array);
+    } else if (type === 'revenue') {
+      return buildRevenueData(array);
+    }
+
+    return {};
+  };
+
+  const calcIfHasNullTotalBudget = array => !array.every(object => object.total_budget !== null);
+
 
   for (let i = 0; i < nodes.length; i++) {
     const node = nodes[i];
     const rawValues = getProp('values', node, true);
     const type = getProp('type', node);
 
-    const hasNull = type === 'revenue' ?
-      false :
-      arrayHasValue(rawValues.data, null, 'total_budget');
-
-    const items = type === 'revenue' ?
-      arrayToObject(rawValues.data, 'category', val => [val]) :
-      !hasNull ?
-        arrayToObject(rawValues.data, 'name', val => [val]) :
-        arrayToObject(
-          rawValues.data,
-          'name',
-          (value, key) => {
-            return {
-              value,
-              link: `/search-result?search_type=full-search&search=${key}`,
-            };
-          },
-        );
-
+    const hasNull = type === 'revenue' ? false : calcIfHasNullTotalBudget(rawValues.data);
+    const items = Object.assign(...normaliseData(rawValues.data, hasNull, type));
 
     render(
-      <HomeChartContainer {...{ items, hasNull }} />,
+      <HomeChartContainer {...{ hasNull, items }} />,
       node,
     );
   }

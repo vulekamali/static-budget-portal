@@ -17,7 +17,7 @@ layout: page-shell
 
     <h1 class="Page-title">The South African National Budget {{ page.financial_year | split: "-" | first }}</h1>
 
-    <p class="NewSection u-fontSize18 u-paddingTop0">
+    <p class="Section u-fontSize18 u-paddingTop0">
       <em>vulekamali</em> is a project by the South African National Treasury and Imali Yethu with the goal of making government budget data and processes accessible to all citizens & interested parties. <a href="/about">Read more about vulekamali.</a>
     </p>
 
@@ -34,34 +34,34 @@ layout: page-shell
           %}
         </div>
 
-        <div class="NewSection is-bevel is-dark u-marginTop40">
-          <div class="NewSection-content">
-            <div class="NewSection-title">
+        <div class="Section is-bevel is-dark u-marginTop40">
+          <div class="Section-invisible">
+            <div class="Section-title">
               Where National Government gets its money for {{ page.financial_year }}
             </div>
           </div>
           {%
-            include components/homepage/NewHomeChart/index.html
+            include components/homepage/HomeChart/index.html
             values=page_data.revenue
             type="revenue"
           %}
-          <div class="NewSection-content u-marginTop15">
+          <div class="Section-invisible u-marginTop15">
             {% include components/universal/Download/index.html title=" Download Estimates of National Revenue (Excel)" link=finalDownload icon="true" %}
           </div>
         </div>
 
-        <div class="NewSection is-bevel is-dark u-marginTop40">
-          <div class="NewSection-content">
-            <div class="NewSection-title">
+        <div class="Section is-bevel is-dark u-marginTop40">
+          <div class="Section-invisible">
+            <div class="Section-title">
               How Government spends its money for {{ page.financial_year }}
             </div>
           </div>
           {%
-            include components/homepage/NewHomeChart/index.html
+            include components/homepage/HomeChart/index.html
             values=government_functions
             type="expenditure"
           %}
-          <div class="NewSection-content u-marginTop15">
+          <div class="Section-invisible u-marginTop15">
             {% include components/universal/Download/index.html title=finalTitle link=finalLink %}
           </div>
         </div>
@@ -99,26 +99,26 @@ layout: page-shell
     </div>
 
     <div class="Page-sidebar">
-      <div class="NewSection is-bevel is-dark">
-        <div class="NewSection-content is-card is-dark">
-          <div class="NewSection-title u-marginBottom20">Sign up for our newsletter</div>
+      <div class="Section is-bevel">
+        <div class="Section-card is-dark">
+          <div class="Section-title u-marginBottom20">Sign up for our newsletter</div>
           <input class="Input" placeholder="Enter email address" />
           <div class="Button is-secondary u-marginTop10">Subscribe</div>
         </div>
       </div>
 
-      <div class="NewSection is-bevel is-dark u-marginTop20">
-        <div class="NewSection-content is-card">
-          <div class="NewSection-title u-marginBottom20">Find budget data related to one of these topics</div>
+      <div class="Section is-bevel  u-marginTop20">
+        <div class="Section-card">
+          <div class="Section-title u-marginBottom20">Find budget data related to one of these topics</div>
             {% for link in site.data.recommended_topics %}
               <a href="#" class="Button is-secondary u-marginTop10">{{ link }}</a>
             {% endfor %}
         </div>
       </div>
 
-      <a href="#" class="NewSection is-bevel is-green is-link u-marginTop20">
-        <div class="NewSection-content is-card">
-          <div class="NewSection-title u-marginBottom20">Information for Developers & Data Scientists</div>
+      <a href="#" class="Section is-bevel is-green is-link u-marginTop20">
+        <div class="Section-card">
+          <div class="Section-title u-marginBottom20">Information for Developers & Data Scientists</div>
           <span class="u-textDecorationUnderline">Access the documentation and API that we used to build this site</span>
         </div>
       </a>

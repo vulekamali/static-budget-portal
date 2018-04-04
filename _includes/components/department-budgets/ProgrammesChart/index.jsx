@@ -50,7 +50,7 @@ export default function ProgrammesChart(props) {
   );
 
   return (
-    <div className="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark" id="programmes-chart">
+    <div className="Section is-bevel" id="programmes-chart">
       <canvas ref={node => canvasAction(node)} style={{ display: 'none' }} />
       <Modal
         title="Share this link:"
@@ -63,13 +63,13 @@ export default function ProgrammesChart(props) {
       </Modal>
       <div className="ProgrammesChart">
         <div className="ProgrammesChart-info">
-          <div className="Page-section">
+          <div className="Section-invisible">
             <div className="Page-subHeading">Programme budgets for {year}</div>
             <p>
               A department&#x27;s programmes are the activities that it spends money on during the financial year. Different programmes have different expenditure budgets, depending on their requirements and available finances. More detail on the programmes is available in the department's Estimates of National Expenditure (ENE) documents.
             </p>
           </div>
-          <div className="Page-section">
+          <div className="Section-invisible">
             <div className="u-fontWeightBold">Sources</div>
             <p>
               The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year.
@@ -84,7 +84,7 @@ export default function ProgrammesChart(props) {
               })
             }
           </div>
-          <div className="Page-section">
+          <div className="Section-invisible">
             <div className="u-fontWeightBold u-marginBottom10">Share this chart:</div>
             <div className="ProgrammesChart-share">
               <div className="ProgrammesChart-shareDropdown">
@@ -103,10 +103,10 @@ export default function ProgrammesChart(props) {
           </div>
         </div>
         <div className="ProgrammesChart-chart">
-          <div className="Page-section Page-section--card">
+          <div className="Section-card">
             {hasNull ? noValues : withValues}
           </div>
-          <div className="Page-section u-textAlignCenter">
+          <div className="Section-invisible u-textAlignCenter">
             {hasNull ? null : downloadButton}
           </div>
         </div>

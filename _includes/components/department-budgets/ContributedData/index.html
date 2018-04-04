@@ -5,15 +5,15 @@
 {% endif %}
 
 
-<div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark" id="contributed-data">
-  <div class="Page-section u-paddingTop5 {{ padding }}">
-    <div class="Page-subHeading">Contributed data</div>
+<div class="Section is-bevel" id="contributed-data">
+  <div class="Section-invisible u-paddingTop5 {{ padding }}">
+    <div class="Section-title">Contributed data</div>
   </div>
 
   {% if include.datasets | size > 0 %}
     {% for item in include.datasets %}
 
-      <div class="Page-section Page-section--card">
+      <div class="Section-card">
         <div class="ContributedItem">
           <div class="ContributedItem-info">
             <div class="u-fontWeightBold">{{ item.name }}</div>
@@ -28,7 +28,7 @@
     {% endfor %}
   {% endif %}
 
-  <div class="Page-section u-marginTop15">
+  <div class="Section-invisible u-marginTop15">
     <div style="font-weight: bold;">How can I contribute?</div>
     <div>Do you have data related to this department that you would like to contribute?</div>
     <a class="Button is-inline is-secondary u-marginTop15" href="https://docs.google.com/forms/d/e/1FAIpQLSeK9sfWwfLGReE0qsTudAaz1Z281S2_SsIb35C_B9TdmeLfTw/viewform" target="_blank">Send it to us for consideration</a>
