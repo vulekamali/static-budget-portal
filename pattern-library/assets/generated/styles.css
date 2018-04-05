@@ -108,7 +108,8 @@ body {
   font-family: Lato, sans-serif;
   color: #3f3f3f;
   overflow-y: scroll;
-  font-size: 14px; }
+  font-size: 14px;
+  background-color: #f0f0f0; }
   body.has-overlay {
     overflow: hidden; }
   @media screen and (min-width: 750px) {
@@ -1307,36 +1308,37 @@ li {
   color: #3f3f3f;
   text-decoration: none;
   width: 100%;
-  padding: 20px 20px 25px; }
+  padding: 20px 20px 25px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #d2d2d2; }
   @media (min-width: 500px) {
     .Section {
       padding: 25px 30px 30px; } }
   @media (min-width: 750px) {
     .Section {
       padding: 25px 40px 30px; } }
+  .Section.is-link {
+    cursor: pointer; }
+    .Section.is-link:hover {
+      background-color: #e6e6e6; }
   .Section.is-bevel {
     padding: 10px;
-    background-color: white;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    border: 1px solid #d2d2d2; }
-  .Section.is-dark {
+    border: 1px solid #d2d2d2;
     background-color: #e6e6e6; }
-    .Section.is-dark.is-link:hover {
-      background-color: silver; }
+    .Section.is-bevel.is-link:hover {
+      background-color: #cdcdcd; }
   .Section.is-green {
     background-color: #7bb344; }
     .Section.is-green.is-link:hover {
-      background-color: #557c2f; }
-
-.Section-card is-invisible {
-  padding: 10px 10px 15px; }
-  @media (min-width: 500px) {
-    .Section-card is-invisible {
-      padding: 15px 20px 20px; } }
-  @media (min-width: 750px) {
-    .Section-card is-invisible {
-      padding: 15px 30px 20px; } }
+      background-color: #628e36; }
+  .Section.is-invisible {
+    box-shadow: none;
+    border-width: 0;
+    background: none; }
 
 .Section-card {
   padding: 20px 10px 25px;
@@ -1357,6 +1359,10 @@ li {
   .Section-card.is-dark {
     background-color: #7d7d7d;
     color: white; }
+  .Section-card.is-invisible {
+    box-shadow: none;
+    border-width: 0;
+    background: none; }
 
 .Section-title {
   margin: 0 0 10px;
@@ -1364,6 +1370,23 @@ li {
   font-weight: bold;
   font-weight: 900;
   display: block; }
+  .Section-title.is-small {
+    font-size: 14px; }
+
+.Grid::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+@media screen and (min-width: 1050px) {
+  .Grid-item {
+    float: left; }
+    .Grid-item.is-half {
+      width: 50%; }
+      .Grid-item.is-half:nth-of-type(2n) {
+        padding-left: 15px; }
+      .Grid-item.is-half:nth-of-type(2n + 1) {
+        padding-right: 15px; } }
 
 .ApiCta-title {
   font-size: 18px;

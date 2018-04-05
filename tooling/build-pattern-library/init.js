@@ -1,9 +1,11 @@
 const mkdirp = require('mkdirp');
 const rimraf = require('rimraf');
+const fs = require('fs');
 const { writeFileSync, readdirSync, statSync, readFileSync } = require('fs');
 const { prettyPrint } = require('html');
 const { basename, extname } = require('path');
 const marked = require('marked');
+const frontMatter = require('front-matter');
 
 const config = {
   root: `${process.cwd()}/_includes/components`,
@@ -724,18 +726,6 @@ pre {
 function buildHtmlShell(content, type) {
   const scripts = type === 'example' ? '../assets/generated/scripts.js' : '';
 
-  const createBack = () => {
-    if (type === 'index') {
-      return '';
-    } else if (type === 'info') {
-      return '<a style="position: fixed; left: 10px; bottom: 10px; width: 100px; border: 1px solid grey; background: white; border-radius: 15px; padding: 10px; text-align: center" href="../index.html">← BACK</a>';
-    } else if (type === 'example') {
-      return '<a style="position: fixed; left: 10px; bottom: 10px; width: 100px; border: 1px solid grey; background: white; border-radius: 15px; padding: 10px; text-align: center" href="index.html">← BACK</a>';
-    }
-
-    return '';
-  };
-
   const createStylesheet = () => {
     if (type === 'index') {
       return '<link rel="stylesheet" href="assets/base/styles.css">';
@@ -756,8 +746,8 @@ function buildHtmlShell(content, type) {
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       ${createStylesheet()}
     </head>
-    <body>
-      ${createBack()}
+    <body style="padding: 20px">
+      ${type === 'index' ? '<h1>Vulekamali Pattern Library</h1>' : ''}
       ${content}
       <script src="${scripts}"></script>
     </body>
@@ -776,10 +766,31 @@ function getParentFolderName(path) {
 }
 
 
-function createHtml(path, content, type) {
+function createHtml(path, content, type, labels = {}) {
+  const buildLabel = () => {
+    let labelsCode = '';
+    let title = '';
+
+    if (labels) {
+      const labelsKeys = labels ? Object.keys(labels).filter(label => label !== 'title') : [];
+      if (labelsKeys.length > 0) {
+        labelsCode = labelsKeys.map((key) => {
+          const val = labels[key];
+          return `<span style="font-size:  14px; background: ${val.background}; color: ${val.color}; border-radius: 50px; padding: 5px 15px; position:  relative; bottom: 6px; margin-left: 10px;">${val.text}</span>`;
+        }).join('');
+      }
+
+      if (labels.title) {
+        title = labels.title;
+      }
+    }
+
+    return type === 'info' ? `<h1>${title}${labelsCode}</h1>` : '';
+  };
+
   writeFileSync(
     path,
-    buildHtmlShell(content, type),
+    buildHtmlShell(buildLabel() + content, type),
     (err) => {
       if (err) {
         return console.error(err);
@@ -882,7 +893,7 @@ function createCustomObject(rawPaths) {
       return {
         ...results,
         [getParentFolderName(path)]: {
-          markup: marked(readFileSync(path, 'utf-8')),
+          content: frontMatter(readFileSync(path, 'utf-8')),
           path,
           examples,
         },
@@ -894,16 +905,43 @@ function createCustomObject(rawPaths) {
 
 function createComponentFiles(data) {
   const components = Object.keys(data);
+
   components.forEach((component) => {
-    const destination = `${config.destination}/${component}`;
-    createDir(destination);
-    createHtml(`${destination}/index.html`, data[component].markup, 'info');
+    if (data[component].content.attributes.title) {
+      const destination = `${config.destination}/${data[component].content.attributes.title}`;
+      createDir(destination);
+      createHtml(
+        `${destination}/index.html`,
+        marked(data[component].content.body),
+        'info',
+        data[component].content.attributes,
+      );
+    }
   });
 }
 
 function createRootIndex(data) {
   const markup = Object.keys(data).map((title) => {
-    return `<li><a href="${title}/index.html">${title}</a></li>`;
+    if (data[title].content.attributes.title) {
+      const buildLabel = () => {
+        let labelsCode = '';
+
+        const labelsKeys = data[title].content.attributes ? Object.keys(data[title].content.attributes).filter(key => key !== 'title') : [];
+
+        if (labelsKeys.length > 0) {
+          labelsCode = labelsKeys.map((key) => {
+            const val = data[title].content.attributes[key];
+            return `<span style="font-size: 11px; background: ${val.background}; color: ${val.color}; border-radius: 50px; padding: 5px 20px; font-family: verdana, position: relative; bottom: 2px; margin-left: 10px;">${val.text}</span>`;
+          }).join('');
+        }
+
+        return labelsCode;
+      };
+
+      return `<li><a style="font-size: 18px" href="${data[title].content.attributes.title}/index.html">${data[title].content.attributes.title}</a>${buildLabel()}</li>`;
+    }
+
+    return '';
   }).join('');
 
 
@@ -914,12 +952,14 @@ function parseExamples(data) {
   const components = Object.keys(data);
 
   components.forEach((name) => {
-    const component = data[name];
-    const examples = Object.keys(component.examples);
-    examples.forEach((fileName) => {
-      const markup = readFileSync(component.examples[fileName], 'utf-8');
-      createHtml(`${config.destination}/${name}/${fileName}`, markup, 'example');
-    });
+    if (data[name].content.attributes.title) {
+      const component = data[name];
+      const examples = Object.keys(component.examples);
+      examples.forEach((fileName) => {
+        const markup = readFileSync(component.examples[fileName], 'utf-8');
+        createHtml(`${config.destination}/${name}/${fileName}`, markup, 'example');
+      });
+    }
   });
 }
 
