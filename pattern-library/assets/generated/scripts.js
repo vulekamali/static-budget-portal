@@ -18023,7 +18023,7 @@ function HomeChart(props) {
 
   var withValues = (0, _preact.h)(
     'div',
-    { className: 'NewSection-content is-card' },
+    { className: 'Section-card' },
     (0, _preact.h)(_index2.default, _extends({
       name: 'programmes-chart',
       guides: !mobile,

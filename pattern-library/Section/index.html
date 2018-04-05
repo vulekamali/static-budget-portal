@@ -9,7 +9,7 @@
     </head>
     
     <body style="padding: 20px">
-         <h1>Section<span style="font-size:  14px; background: yellow; color: black; border-radius: 50px; padding: 5px 15px; position:  relative; bottom: 6px; margin-left: 10px;">requires more documentation</span></h1>
+         <h1>Section<span style="font-size:  14px; background: green; color: white; border-radius: 50px; padding: 5px 15px; position:  relative; bottom: 6px; margin-left: 10px;">production ready</span></h1>
         <h2 id="overview">Overview</h2>
 
         <p><code>Section</code> should form the backbone of how you seperate groups
@@ -21,6 +21,8 @@
             without the styling.</p>
         <p>It is recommended to not nest component directly inside the Page component
             without having a <code>Section</code> component as a middle-man.</p>
+        <p><em>NOTE: The <code>Section</code> component aims to encapsulate itself from the it&#39;s parent component (usually the <code>Page</code> component), this means that in most cases you will need to add bottom or top margins via utility classes. This is also helpful in circumstances where it would be hard to programatically predict how things should collapse on mobile (specifically with columns and sidebars).</em>
+        </p>
         
 <h2 id="examples">Examples</h2>
 
@@ -43,6 +45,12 @@
         </p>
         <iframe width="100%" height="315" src="green.html" frameborder="0" allowfullscreen></iframe>
         
+<h3 id="dark-card">Dark Card</h3>
+
+        <p><a href="dark.html">View Source</a>
+        </p>
+        <iframe width="100%" height="315" src="dark.html" frameborder="0" allowfullscreen></iframe>
+        
 <h3 id="clickable">Clickable</h3>
 
         <p><a href="clickable.html">View Source</a>
@@ -60,7 +68,7 @@
 <h2 id="modifiers">Modifiers</h2>
 
         
-<h3 id="html">HTML</h3>
+<h3 id="css-classes">CSS Classes</h3>
 
         
 <h4 id="-section">.Section</h4>
@@ -116,13 +124,39 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><code>.is-link</code>
+                    <td><code>.is-dark</code>
                     </td>
-                    <td>Displays pointer cursor and darkens the component by 10% when mouse if
-                        hovered over it, this provides the visual feedback that the card is a clickable
-                        link. It is usually a good idea to include some underline text inside the
-                        component to further indicate this. Remember to add <code>.is-link</code> to
-                        any <code>.Section-card</code> nodes nested in this component as well.</td>
+                    <td>Changes the background to dark grey and the text color to white. This
+                        is an alternative way of indicating a call of action. This is usually used
+                        as a secondary call to action alongside the main green bordered <code>Section</code> call
+                        to action.</td>
+                </tr>
+                <tr>
+                    <td><code>.is-invisible</code>
+                    </td>
+                    <td>Hides all styling associated with the component, but preserves padding.
+                        This is useful when you want the title to be inside the bevel or you want
+                        to add supplimentary content inside the bevel after the cards</td>
+                </tr>
+            </tbody>
+        </table>
+        
+<h4 id="-section-title">.Section-title</h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Modifier</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>.is-small</code>
+                    </td>
+                    <td>Changes the text size from the default <code>16px</code> to <code>14px</code>,
+                        this is usefully when you want to have nested titles in the content underneath
+                        the primary title</td>
                 </tr>
             </tbody>
         </table>

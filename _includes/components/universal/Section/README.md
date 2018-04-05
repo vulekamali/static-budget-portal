@@ -1,9 +1,9 @@
 ---
 title: Section
 state:
-  text: requires more documentation
-  color: black
-  background: yellow
+  text: production ready
+  color: white
+  background: green
 ---
 
 ## Overview
@@ -11,6 +11,8 @@ state:
 `Section` should form the backbone of how you seperate groups of content inside the `Page` component. By default this component takes on the appearance of a traditional UI card component. However, it has the capacity to appear beveled with more than one card nested inside of it to create another level of content grouping. In addition, a modifier can be passed to the component to only use it's padding and structure without the styling. 
 
 It is recommended to not nest component directly inside the Page component without having a `Section` component as a middle-man.
+
+_NOTE: The `Section` component aims to encapsulate itself from the it's parent component (usually the `Page` component), this means that in most cases you will need to add bottom or top margins via utility classes. This is also helpful in circumstances where it would be hard to programatically predict how things should collapse on mobile (specifically with columns and sidebars)._
 
 ## Examples
 
@@ -26,6 +28,10 @@ It is recommended to not nest component directly inside the Page component witho
 [View Source](green.html)
 <iframe width="100%" height="315" src="green.html" frameborder="0" allowfullscreen></iframe>
 
+### Dark Card
+[View Source](dark.html)
+<iframe width="100%" height="315" src="dark.html" frameborder="0" allowfullscreen></iframe>
+
 ### Clickable
 [View Source](clickable.html)
 <iframe width="100%" height="315" src="clickable.html" frameborder="0" allowfullscreen></iframe>
@@ -36,7 +42,7 @@ It is recommended to not nest component directly inside the Page component witho
 
 ## Modifiers
 
-### HTML
+### CSS Classes
 
 #### .Section
 | Modifier | Description |
@@ -49,4 +55,10 @@ It is recommended to not nest component directly inside the Page component witho
 #### .Section-card
 | Modifier | Description |
 |---|---|
-| `.is-link` | Displays pointer cursor and darkens the component by 10% when mouse if hovered over it, this provides the visual feedback that the card is a clickable link. It is usually a good idea to include some underline text inside the component to further indicate this. Remember to add `.is-link` to any `.Section-card` nodes nested in this component as well.
+| `.is-dark` | Changes the background to dark grey and the text color to white. This is an alternative way of indicating a call of action. This is usually used as a secondary call to action alongside the main green bordered `Section` call to action. |
+| `.is-invisible` | Hides all styling associated with the component, but preserves padding. This is useful when you want the title to be inside the bevel or you want to add supplimentary content inside the bevel after the cards |
+
+#### .Section-title
+| Modifier | Description |
+|---|---|
+| `.is-small` | Changes the text size from the default `16px` to `14px`, this is usefully when you want to have nested titles in the content underneath the primary title |
