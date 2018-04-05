@@ -114,7 +114,7 @@ layout: page-shell
         <div class="Section-card">
           <div class="Section-title u-marginBottom20">Find budget data related to one of these topics</div>
             {% for link in site.data.recommended_topics %}
-              <a href="#" class="Button is-secondary u-marginTop10">{{ link }}</a>
+              <a href="/{{ page.financial_year }}/search-result?search={{ link | uri_escape }}" class="Button is-secondary u-marginTop10">{{ link }}</a>
             {% endfor %}
         </div>
       </div>
