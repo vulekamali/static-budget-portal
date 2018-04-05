@@ -35,10 +35,12 @@ layout: page-shell
       department=page_data.name
     %}
 
-    {%
-      include components/department-budgets/ContributedData/index.html
-      datasets=page_data.contributed_datasets
-    %}
+    <div class="u-marginTop20">
+      {%
+        include components/department-budgets/ContributedData/index.html
+        datasets=page_data.contributed_datasets
+      %}
+    </div>
 
   </div>
 </div>
