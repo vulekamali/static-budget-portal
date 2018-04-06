@@ -1,17 +1,19 @@
 .u-marginBottom {
-  &--5 {
-    margin-bottom: 5px !important;
+  @for $i from 0 through 6 {
+    &#{$i * 5} {
+      margin-bottom: #{$i * 5} !important;
+    }
   }
 
-  &--15 {
-    margin-bottom: 15px !important;
+  @for $i from 0 through 3 {
+    &#{($i * 10) + 30} {
+      margin-bottom: #{($i * 10) + 30} !important;
+    }
   }
 
-  &--30 {
-    margin-bottom: 30px !important;
-  }
-
-  &--40 {
-    margin-bottom: 40px !important;
+  @for $i from 0 through 3 {
+    &#{($i * 100) + 100} {
+      margin-bottom: #{($i * 100) + 100} !important;
+    }
   }
 }

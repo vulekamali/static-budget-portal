@@ -3,11 +3,35 @@ layout: page-shell
 ---
 {% assign page_data = site.data['contributed-data'] %}
 
-<div class="Page-content is-darkBackground">
-  <div class="Page-contentWrap ">
-    <main>
-      <div class="Page-title">Contributed Data</div>
-      {% include components/other-pages/CsoDirectory/index.html datasets=page_data.datasets %}
-    </main>
-  </div>
+<div class="Page-content">
+  <main class="Page-contentInner">
+    <h1 class="Page-mainHeading">Contributed Data</h1>
+
+    <div class="Section is-bevel is-green u-marginBottom20">
+      <div class="Section-card">
+        {% include components/contributed-data/CsoRequest/index.html %}
+      </div>
+    </div>
+
+    <div class="Grid">
+
+      {% for dataset in page_data.datasets %}
+        <div class="Grid-item is-half">
+          <a href="{{ dataset.url_path }}" class="Section u-marginBottom20 is-bevel is-link" title="{{ dataset.name }}">
+            <div class="Section-card">
+              {%
+                include components/contributed-data/CsoPreview/index.html
+                name=dataset.name
+                title=dataset.organization.name
+                logo=dataset.organization.logo_url
+                created=dataset.created
+                last_updated=dataset.last_updated
+              %}
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+
+    </div>
+  </main>
 </div>

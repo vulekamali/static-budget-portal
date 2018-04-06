@@ -2,8 +2,11 @@
 layout: page-shell
 ---
 
-<div class="Page-content">
-  <div class="Page-contentWrap">
-    {% include components/other-pages/SearchResult/index.html year=page.financial_year%}
-  </div>
+<div class="Page-content Page-content--dynamicYears">
+  <main class="Page-contentInner">
+    {%
+      include components/search-results/SearchResult/index.html
+      year=page.financial_year
+    %}
+  </main>
 </div>
