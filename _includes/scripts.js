@@ -35,6 +35,4 @@ import './components/department-budgets/DeptSearch/scripts.jsx';
 import './components/department-budgets/Participate/scripts.jsx';
 import './components/department-budgets/IntroSection/scripts.jsx';
 
-import './components/contributed-data/Comments/scripts.js';
-
 import './components/about/Video/scripts.jsx';
