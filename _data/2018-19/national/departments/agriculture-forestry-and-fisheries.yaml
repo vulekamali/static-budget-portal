@@ -1,10 +1,56 @@
 contributed_datasets: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 4920223000.0
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 5813233000.0
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 0.0
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 6692383000.0
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 6383007000.0
+    financial_year: 2015-16
+    phase: Original Budget
+  - amount: 6342539000.0
+    financial_year: 2016-17
+    phase: MTEF
+  - amount: 6777460000.0
+    financial_year: 2017-18
+    phase: MTEF
+  real:
+  - amount: 6805405673
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 7618360102
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 0
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 7846903530
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 7116454963
+    financial_year: 2015-16
+    phase: Original Budget
+  - amount: 6652549594
+    financial_year: 2016-17
+    phase: MTEF
+  - amount: 6777460000
+    financial_year: 2017-18
+    phase: MTEF
 financial_years:
 - closest_match:
     is_exact_match: true
     url_path: /2015-16/national/departments/agriculture-forestry-and-fisheries
   id: 2015-16
-  is_selected: false
+  is_selected: true
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/agriculture-forestry-and-fisheries
@@ -19,53 +65,45 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/national/departments/agriculture-forestry-and-fisheries
   id: 2018-19
-  is_selected: true
+  is_selected: false
 government:
   name: South Africa
   slug: south-africa
 government_functions: []
-intro: "## Vote purpose\n\nLead, support and promote agricultural, forestry and fisheries\
-  \ resources management through policies, strategies and programmes to enhance sustainable\
-  \ use, and achieve economic growth, job creation, food security, rural development\
-  \ and transformation.\n\n## Mandate\n\nThe mandate of the Department of Agriculture,\
-  \ Forestry and Fisheries includes value chains, inputs, production and consumption\
-  \ in the agriculture, forestry and fishery sectors. The department\u2019s mandate\
-  \ is derived from a range of legislation, including the Sea Fishery Act (1988),\
-  \ the National Forests Act (1998), the Agricultural Products Standards Act (1990),\
-  \ and the Conservation of Agricultural Resources Act (1983).\n\n"
+intro: "## Vote purpose\r\n\r\nLead, support and promote agricultural, forestry and\
+  \ fisheries resources management through policies, strategies and programmes to\
+  \ enhance sustainable use, and achieve economic growth, job creation, food security,\
+  \ rural development and transformation.\r\n\r\n## Mandate\r\n\r\nThe mandate of\
+  \ the Department of Agriculture, Forestry and Fisheries includes value chains, inputs,\
+  \ production and consumption in the agriculture, forestry and fishery sectors. The\
+  \ department\u2019s mandate is derived from a range of legislation, including the\
+  \ Sea Fisheries Act (1988), the National Forests Act (1988), the Agricultural Products\
+  \ Standards Act (1990), and the Conservation of Agricultural Resources Act (1993)."
 is_vote_primary: true
 name: Agriculture, Forestry and Fisheries
 programmes:
 - name: Administration
-  total_budget: 923178000.0
+  total_budget: 729947000.0
 - name: Agricultural Production, Health and Food Safety
-  total_budget: 2367078000.0
+  total_budget: 2134770000.0
 - name: Food Security and Agrarian Reform
-  total_budget: 2037889000.0
+  total_budget: 1930297000.0
 - name: Trade Promotion and Market Access
-  total_budget: 273919000.0
+  total_budget: 238162000.0
 - name: Forestry and Natural Resources Management
-  total_budget: 1075123000.0
+  total_budget: 906564000.0
 - name: Fisheries
-  total_budget: 487811000.0
-selected_financial_year: 2018-19
+  total_budget: 443267000.0
+selected_financial_year: 2015-16
 selected_tab: departments
 slug: agriculture-forestry-and-fisheries
 sphere:
   name: National
   slug: national
 title: Agriculture, Forestry and Fisheries - vulekamali
-treasury_datasets:
-  ENE for Vote 24 - Agriculture, Forestry and Fisheries:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2024%20Agriculture%20Forestry%20and%20Fisheries.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-agriculture-forestry-and-fisheries-2018-19/resource/81cf0f4f-20e1-4e5f-b20f-a4a9d118130f/download/ene18-vote24_chaptertables.xlsx
+treasury_datasets: {}
 vote_number: 24
 vote_primary:
   name: Agriculture, Forestry and Fisheries
   slug: agriculture-forestry-and-fisheries
-  url_path: /2018-19/national/departments/agriculture-forestry-and-fisheries
+  url_path: /2015-16/national/departments/agriculture-forestry-and-fisheries

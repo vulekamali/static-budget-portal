@@ -1388,6 +1388,15 @@ li {
       .Grid-item.is-half:nth-of-type(2n + 1) {
         padding-right: 15px; } }
 
+.ColumnChart-svg {
+  overflow: hidden; }
+
+.ColumnChart-svg.is-hoverable .ColumnChart-tooltip {
+  cursor: pointer;
+  opacity: 0; }
+  .ColumnChart-svg.is-hoverable .ColumnChart-tooltip:hover {
+    opacity: 1; }
+
 .ApiCta-title {
   font-size: 18px;
   font-weight: bold;
@@ -2944,15 +2953,6 @@ li {
 .Events-line {
   padding: 2px 0;
   font-style: italic; }
-
-.ColumnChart-svg {
-  overflow: hidden; }
-
-.ColumnChart-svg.is-hoverable .ColumnChart-tooltip {
-  cursor: pointer;
-  opacity: 0; }
-  .ColumnChart-svg.is-hoverable .ColumnChart-tooltip:hover {
-    opacity: 1; }
 
 .CsoLinks {
   padding: 13px 23px 33px 17px; }

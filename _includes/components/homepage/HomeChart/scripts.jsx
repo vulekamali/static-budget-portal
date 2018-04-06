@@ -104,7 +104,7 @@ function scripts() {
 
   for (let i = 0; i < nodes.length; i++) {
     const node = nodes[i];
-    const rawValues = getProp('values', node, true);
+    const rawValues = getProp('values', node, 'json');
     const type = getProp('type', node);
 
     const hasNull = type === 'revenue' ? false : calcIfHasNullTotalBudget(rawValues.data);

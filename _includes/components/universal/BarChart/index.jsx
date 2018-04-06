@@ -20,7 +20,7 @@ export default function BarChart(props) {
     hover,
     guides,
     scale = 1,
-    downloadable,
+    download,
   } = props;
 
   const { parentAction } = props;
@@ -57,8 +57,8 @@ export default function BarChart(props) {
       };
     }
 
-    if (downloadable) {
-      const titleArray = breakIntoWrap(downloadable.heading, 33);
+    if (download) {
+      const titleArray = breakIntoWrap(download.heading, 33);
 
       styling = {
         ...styling,
@@ -94,14 +94,14 @@ export default function BarChart(props) {
         style={{ maxWidth: newWidth }}
       >
 
-        {downloadable ? background : null}
+        {download ? background : null}
 
-        { downloadable ?
+        { download ?
           <Heading
             left={padding[3]}
-            heading={downloadable.heading}
-            subHeading={downloadable.subHeading}
-            type={downloadable.type}
+            heading={download.heading}
+            subHeading={download.subHeading}
+            type={download.type}
           /> :
           null
         }

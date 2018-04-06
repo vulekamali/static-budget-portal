@@ -1,0 +1,97 @@
+<!doctype>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../assets/base/styles.css">
+    </head>
+    
+    <body style="padding: 20px">
+         <h1>BarChart<span style="font-size:  14px; background: yellow; color: black; border-radius: 50px; padding: 5px 15px; position:  relative; bottom: 6px; margin-left: 10px;">use with caution, refactor pending</span></h1>
+        <h2 id="overview">Overview</h2>
+
+        <p>...</p>
+        
+<h2 id="examples">Examples</h2>
+
+        
+<h3 id="basic">Basic</h3>
+
+        <p><a href="basic.html">View Source</a>
+        </p>
+        <iframe width="100%" height="315" src="basic.html" frameborder="0" allowfullscreen></iframe>
+        
+<h3 id="grouped">Grouped</h3>
+
+        <p><a href="multiple.html">View Source</a>
+        </p>
+        <iframe width="100%" height="800" src="grouped.html" frameborder="0" allowfullscreen></iframe>
+        
+<h2 id="modifiers">Modifiers</h2>
+
+        
+<h3 id="preact-props">Preact Props</h3>
+
+        <p>* Required props</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Prop</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>items</code>*</td>
+                    <td>An object with the following schema: <strong>{ <code>string</code>: [ <code>int</code>, <code>int</code> ], ... }</strong>.
+                        Each key (string) indicates a label attached to a value or values, while
+                        each value (int) in the array represents a bar in the chart associated
+                        with the label. Note that even if you just have one value you still need
+                        pass it in an array.</td>
+                </tr>
+                <tr>
+                    <td><code>width</code>*</td>
+                    <td>An integer that determines the amount if pixels that the chart will be
+                        wide. In order to have this be calculated automatically based of it&#39;s
+                        parent node in the DOM wrap this component in the <code>ChartWidthContainer</code> component</td>
+                </tr>
+                <tr>
+                    <td><code>hover</code>
+                    </td>
+                    <td>A boolean that indicates whether values will be displayed as tooltips
+                        on hover, or will be permanently displayed alongside the bar. In order
+                        to have this automatically be calculated based of the viewport width wrap
+                        this component in <code>ChartWidthContainer</code> component</td>
+                </tr>
+                <tr>
+                    <td><code>guides</code>
+                    </td>
+                    <td>A boolean that indicates whether guidelines will be shown alongside numbers
+                        on the x-axis. In order to have this automatically be calculated based
+                        of the viewport width wrap this component in <code>ChartWidthContainer</code> component</td>
+                </tr>
+                <tr>
+                    <td><code>scale</code>
+                    </td>
+                    <td>An integer that determine the scale that the chart will be displayed at.
+                        The size of everything (include the width prop) is multiplied by this number
+                        to emulate changes in scale. This is useful when you want to scale things
+                        up for the downloaded version.</td>
+                </tr>
+                <tr>
+                    <td><code>download</code>
+                    </td>
+                    <td>An object with the following schema: <strong>{ heading: <code>string</code>, subHeading: <code>string</code>, type: <code>string</code> }</strong>.
+                        If the download prop is supplied all the above need to be included. This
+                        prop signals that this rendition of the chart will be used to create a
+                        PNG image for download. This includes a white background, additional padding
+                        on the sides, vulekamali branding and the above values as text in the PNG.</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src=""></script>
+    </body>
+
+</html>

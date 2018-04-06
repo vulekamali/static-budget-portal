@@ -82,7 +82,7 @@ export default function ColumnChart({ items, width, guides, scale = 1, downloada
     return (
       <div
         className="ColumnChart"
-        ref={node => parentAction(node)}
+        ref={parentAction && node => parentAction(node)}
       >
         {values}
       </div>

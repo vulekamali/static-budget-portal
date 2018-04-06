@@ -1,21 +1,21 @@
 import { h, render } from 'preact';
 import BarChart from './index.jsx';
-import decodeHtmlEntities from './../../../utilities/js/helpers/decodeHtmlEntities.js';
+import getProps from './../../../utilities/js/helpers/getProp.js';
 
 
 function scripts() {
-  const componentList = document.getElementsByClassName('js-initBarChart');
+  const nodesList = document.getElementsByClassName('js-initBarChart');
 
-  for (let i = 0; i < componentList.length; i++) {
-    const component = componentList[i];
-    const items = JSON.parse(decodeHtmlEntities(component.getAttribute('data-values')));
-    const guides = component.getAttribute('data-guides') !== null;
-    const hover = component.getAttribute('data-hover') !== null;
-    const width = parseInt(component.getAttribute('data-width'), 10);
+  for (let i = 0; i < nodesList.length; i++) {
+    const node = nodesList[i];
+    const items = getProps('values', node, 'json');
+    const guides = getProps('guides', node, 'bool');
+    const hover = getProps('hover', node, 'bool');
+    const width = getProps('width', node, 'int');
 
     render(
       <BarChart {...{ items, width, hover, guides }} />,
-      component,
+      node,
     );
   }
 }

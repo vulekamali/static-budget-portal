@@ -1,7 +1,7 @@
 ---
 title: Section
 state:
-  text: production ready
+  text: stable
   color: white
   background: green
 ---

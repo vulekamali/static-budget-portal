@@ -13,6 +13,8 @@ layout: page-shell
   {% assign department_location = page_data.government.name %}
 {% endif %}
 
+<div data-values="{{ page_data.expenditure_over_time | jsonify | escape }}"></div>
+
 
 <div class="Page-content Page-content--dynamicYears">
   <div class="Page-contentInner Page-contentInner--full">
