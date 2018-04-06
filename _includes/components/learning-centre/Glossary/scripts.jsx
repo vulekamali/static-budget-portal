@@ -26,7 +26,7 @@ class GlossaryContainer extends Component {
     if (phrase.length > 2) {
       const options = {
         shouldSort: true,
-        threshold: 0.3,
+        threshold: 0.2,
         location: 0,
         distance: 100,
         maxPatternLength: 32,
