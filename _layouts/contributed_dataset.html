@@ -29,46 +29,63 @@ layout: page-shell
     </div>
 
     <main class="Page-main">
-      <div class="Page-sectionWrap Page-sectionWrap--card">
+      <div class="Section u-marginBottom20">
         {% if page_data.intro %}
-          <div class="Page-section">
-            <h2 class="Page-subHeading">Data contributed by: {{ page_data.organization.name }}</h2>
+          <div class="Section-card is-invisible">
+            <h2 class="Section-title">Data contributed by: {{ page_data.organization.name }}</h2>
             {{ page_data.intro | markdownify }}
           </div>
         {% endif %}
 
         {% if page_data.methodology and page_data.methodology != '' %}
-          <div class="Page-section">
-            <h2 class="Page-subHeading">Methodology Used in Gathering and Analysis</h2>
+          <div class="Section-card is-invisible">
+            <h2 class="Section-title">Methodology Used in Gathering and Analysis</h2>
             {{ page_data.methodology | markdownify }}
           </div>
         {% endif %}
       </div>
 
       {% if page_data.resources %}
-        <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--green">
-          <div class="Page-section Page-section--card">
+        <div class="Section is-bevel is-green u-marginBottom20">
+          <div class="Section-card">
             {%
-              include components/contributed-data/CsoFiles/index.html 
+              include components/contributed-data/CsoFiles/index.html
               resources=page_data.resources
               type="cso"
             %}
           </div>
         </div>
       {% endif %}
+
+      <div class="Section u-marginBottom20">
+          <div id='discourse-comments'></div>
+
+          <script type="text/javascript">
+            DiscourseEmbed = {
+              discourseUrl: 'https://discussions.vulekamali.gov.za/',
+              discourseEmbedUrl: 'https://vulekamali.gov.za{{ page_data.url_path }}'
+            };
+
+            (function() {
+              var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+              d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+            })();
+          </script>
+      </div>
+
     </main>
 
     <aside class="Page-sidebar">
-      <div class="Page-sectionWrap Page-sectionWrap--card">
-        <div class="Page-section">
-          <h2 class="Page-subHeading">Share this page:</h2>
-          {% include components/universal/Share/index.html %}
-        </div>
+      <div class="Section 
+      u-marginBottom20">
+        <h2 class="Section-title">Share this page:</h2>
+        {% include components/universal/Share/index.html %}
       </div>
 
-      <div class="Page-sectionWrap Page-sectionWrap--card Page-sectionWrap--dark">
-        <div class="Page-section Page-section--card">
-          <h2 class="Page-subHeading">How can I contribute?</h2>
+      <div class="Section is-bevel">
+        <div class="Section-card">
+          <h2 class="Section-title">How can I contribute?</h2>
           <p>Do you have data related to this dataset that you would like to contribute?</p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeK9sfWwfLGReE0qsTudAaz1Z281S2_SsIb35C_B9TdmeLfTw/viewform" class="Button" target="_blank">
             Send it to us for consideration

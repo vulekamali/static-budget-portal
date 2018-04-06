@@ -7,18 +7,69 @@ layout: page-shell
 {% assign government_functions = site.data[page.financial_year].government_functions %}
 {% assign circles_data = site.data[page.financial_year].circles %}
 
+{% assign shortYear = page.financial_year | split: "-" | first %}
+{% assign finalLink = "http://www.treasury.gov.za/documents/national%20budget/" | append: shortYear | append: "/default.aspx" %}
+{% assign finalTitle = "Explore all National Budget " | append: shortYear | append: " Resources from National Treasury" %}
+{% assign finalDownload = "http://www.treasury.gov.za/documents/national%20budget/" | append: shortYear | append: "/TimeSeries/Excel/Table%202%20-%20Main%20budget%20estimates%20of%20national%20revenue.xlsx" %}
+
 <div class="Page-content Page-content--dynamicYears">
   <div class="Page-contentInner">
 
-    <h1 class="Page-mainHeading">The South African National Budget {{ page.financial_year | split: "-" | first }}</h1>
+    <h1 class="Page-title">The South African National Budget {{ page.financial_year | split: "-" | first }}</h1>
 
-    <div class="HomeLayout-description">vulekamali is a project by the South African National Treasury and Imali Yethu with the goal of making government budget data and processes accessible to all citizens & interested parties. <a href="/{{ page.financial_year }}/about">Read more about vulekamali.</a></div>
+    <div class="Section is-invisible u-fontSize18 u-paddingTop0">
+      <em>vulekamali</em> is a project by the South African National Treasury and Imali Yethu with the goal of making government budget data and processes accessible to all citizens & interested parties. <a href="/about">Read more about vulekamali.</a>
+    </div>
 
-    <div class="HomeLayout">
+    <div class="Page-main">
 
-      <div class="HomeLayout-main">
+      <div>
+        <div class="Section is-invisible" data-year="{{ page.financial_year }}">
+          <div class="Section-title">Spheres of government</div>
+          <span>The national revenue fund, administered by the National Treasury, is distributed to the three spheres of government.</span>
+        </div>
 
-        <div class="Card Card--dark">
+        <div>
+          {%
+            include components/homepage/Circles/index.html
+            year=page.financial_year
+            items=circles_data
+          %}
+        </div>
+
+        <div class="Section is-bevel is-dark u-marginTop40">
+          <div class="Section-card is-invisible u-paddingBottom10">
+            <div class="Section-title">
+              Where National Government gets its money for {{ page.financial_year }}
+            </div>
+          </div>
+          {%
+            include components/homepage/HomeChart/index.html
+            values=page_data.revenue
+            type="revenue"
+          %}
+          <div class="Section-card is-invisible u-paddingBottom15 u-paddingTop15">
+            {% include components/universal/Download/index.html title=" Download Estimates of National Revenue (Excel)" link=finalDownload icon="true" %}
+          </div>
+        </div>
+
+        <div class="Section is-bevel is-dark u-marginTop40">
+          <div class="Section-card is-invisible u-paddingBottom10">
+            <div class="Section-title">
+              How Government spends its money for {{ page.financial_year }}
+            </div>
+          </div>
+          {%
+            include components/homepage/HomeChart/index.html
+            values=government_functions
+            type="expenditure"
+          %}
+          <div class="Section-card is-invisible u-paddingBottom15 u-paddingTop15">
+            {% include components/universal/Download/index.html title=finalTitle link=finalLink %}
+          </div>
+        </div>
+
+        <div class="Card Card--dark u-marginTop40">
           <h2 class"Card-title">National Budget {{ page.financial_year | split: "-" | first }} Resources from Treasury</h2>
           <p>Below are a collection of links to resources that are available on the South African National Treasury website.</p>
           {%
@@ -39,7 +90,7 @@ layout: page-shell
           {% assign finalLink = "http://www.treasury.gov.za/documents/national%20budget/" | append: shortYear | append: "/default.aspx" %}
           {% assign finalTitle = "Explore all National Budget " | append: shortYear | append: " Resources from National Treasury" %}
 
-          <div class="u-marginTop u-marginTop--10">
+          <div class="u-marginTop10">
             {%
               include components/universal/Download/index.html
               link=finalLink
@@ -47,78 +98,35 @@ layout: page-shell
             %}
           </div>
         </div>
+      </div>
+    </div>
 
-        <div>
-          <span class="HomeLayout-title js-tooltips" data-year="{{ page.financial_year }}">The national revenue fund, administered by the National Treasury, is distributed to the three spheres of government.</span>
-
-          <div>
-            {%
-              include components/homepage/Circles/index.html
-              year=page.financial_year
-              items=circles_data
-            %}
-          </div>
+    <div class="Page-sidebar">
+      <div class="Section is-bevel">
+        <div class="Section-card is-dark">
+          <div class="Section-title u-marginBottom20">Sign up for our newsletter</div>
+          <form action="https://openup.us17.list-manage.com/subscribe/post?u=1769390be13958db72c0af6ed&amp;id=308211cb20" method="post" target="_blank">
+            <input class="Input" type="email" value="" name="EMAIL" required="" placeholder="Enter email address" id="mce-EMAIL"/>
+            <button class="Button is-secondary u-marginTop10" type="submit">Subscribe</button>
+          </form>
         </div>
-
-        <div class="Card Card--dark u-marginTop u-marginTop--40">
-          <h2 class"Card-title">Where National Government gets its money for {{ page.financial_year }}</h2>
-          {%
-            include components/homepage/Revenue/index.html
-            values=page_data.revenue
-          %}
-
-          {% assign finalDownload = "http://www.treasury.gov.za/documents/national%20budget/" | append: shortYear | append: "/TimeSeries/Excel/Table%202%20-%20Main%20budget%20estimates%20of%20national%20revenue.xlsx" %}
-
-          <div class="u-marginTop u-marginTop--10">
-            {%
-              include components/universal/Download/index.html
-              link=finalDownload
-              title="Download Estimates of National Revenue (Excel)"
-              icon="true"
-            %}
-          </div>
-        </div>
-
-        <div class="Card Card--dark u-marginTop u-marginTop--40">
-            <h2 class"Card-title">How Government spends its money for {{ page.financial_year }}</h2>
-          {%
-            include components/homepage/HomeChart/index.html
-            values=government_functions
-            year=page.financial_year
-          %}
-
-          {% assign finalRedirect = "/" | append: page.financial_year | append: "/departments" %}
-          {% assign finalRedirectTitle = "Explore National and Provincial Expenditure by Department for " | append: page.financial_year %}
-
-          <div class="u-marginTop u-marginTop--10">
-            {%
-              include components/universal/Download/index.html
-              link=finalRedirect
-              title=finalRedirectTitle
-            %}
-          </div>
-        </div>
-
       </div>
 
-      <div class="HomeLayout-sidebar">
-
-        <h2 class="u-sReadOnly">Additional Content</h2>
-
-        <div class="HomeLayout-newsletter">
-          {% include components/homepage/SignUpBox/index.html %}
+      <div class="Section is-bevel u-marginTop20">
+        <div class="Section-card">
+          <div class="Section-title u-marginBottom20">Find budget data related to one of these topics</div>
+            {% for link in site.data.recommended_topics %}
+              <a href="/{{ page.financial_year }}/search-result?search={{ link | uri_escape }}" class="Button is-secondary u-marginTop10">{{ link }}</a>
+            {% endfor %}
         </div>
-
-        <div class="HomeLayout-newsletter">
-          {% include components/homepage/Related/index.html year=page.financial_year %}
-        </div>
-
-        <div class="HomeLayout-newsletter">
-          {% include components/homepage/ApiCta/index.html %}
-        </div>
-  
       </div>
 
+      <a href="https://data.vulekamali.gov.za/" target="_blank" class="Section is-bevel is-green is-link u-marginTop20">
+        <div class="Section-card">
+          <div class="Section-title u-marginBottom20">Information for Developers & Data Scientists</div>
+          <span class="u-textDecorationUnderline">Access the documentation and API that we used to build this site</span>
+        </div>
+      </a>
     </div>
   </div>
 </div>

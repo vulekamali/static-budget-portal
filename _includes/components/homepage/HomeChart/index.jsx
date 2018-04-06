@@ -1,57 +1,28 @@
 import { h } from 'preact';
-import ResponsiveChart from './../../universal/ResponsiveChart/index.jsx';
-import ValueBlocks from './../../homepage/ValueBlocks/index.jsx';
+import BarChart from './../../universal/BarChart/index.jsx';
+import ValueBlocks from './../ValueBlocks/index.jsx';
 
+export default function HomeChart(props) {
+  const {
+    items,
+    width,
+    mobile,
+    hasNull,
+  } = props;
 
-export default function HomeChart({ values, year }) {
+  const { parentAction } = props;
 
-  const hasNull = values.reduce(
-    (result, val) => {
-      if (!val.total_budget) {
-        return true;
-      }
-
-      return result;
-    },
-    false,
-  );
-
-  if (hasNull) {
-    const items = values.reduce(
-      (results, val) => {
-        return {
-          ...results,
-          [val.name]: {
-            link: encodeURI(`${year}/search-result?search_type=full-search&search=${val.name}`),
-          },
-        };
-      },
-      {},
-    );
-
-    return (
-      <ValueBlocks
-        {...{ items }}
+  const withValues = (
+    <div className="Section-card">
+      <BarChart
+        name="programmes-chart"
+        guides={!mobile}
+        hover={!mobile}
+        {...{ width, parentAction, items }}
       />
-    );
-  }
-
-  const items = values.reduce(
-    (results, val) => {
-      return {
-        ...results,
-        [val.name]: [val.total_budget],
-      };
-    },
-    {},
+    </div>
   );
 
-  return (
-    <ResponsiveChart
-      max={650}
-      offset={100}
-      values={items}
-      downloadable
-    />
-  );
+
+  return hasNull ? <ValueBlocks {...{ items }} /> : withValues;
 }

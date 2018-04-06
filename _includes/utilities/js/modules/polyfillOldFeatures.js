@@ -1,5 +1,6 @@
 import arrayFrom from 'array.from';
 import promisePolyfill from 'promise-polyfill';
+import every from 'array.prototype.every';
 import findIndex from 'array.prototype.findindex';
 
 
@@ -14,6 +15,13 @@ function polyfillOldFeatures() {
 
   if (!window.Promise) {
     window.Promise = promisePolyfill;
+  }
+
+  if (!Array.prototype.every) {
+    Array.prototype = {
+      ...Array.protoype,
+      every,
+    };
   }
 
   if (!String.prototype.startsWith) {

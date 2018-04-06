@@ -3,10 +3,10 @@ export default function trimValues(value, abbreviated) {
   const billion = abbreviated ? 'bn' : 'billion';
 
   if (value > 1000000000) {
-    return `${Math.round(value / 1000000000)} ${billion}`;
+    return `${(value / 1000000000).toFixed(1).replace(/\.0$/, '')} ${billion}`;
   } else if (value > 1000000) {
-    return `${Math.round(value / 1000000)} ${million}`;
+    return `${(value / 1000000).toFixed(1).replace(/\.0$/, '')} ${million}`;
   }
 
-  return Math.round(value);
+  return value.toFixed(1).replace(/\.0$/, '');
 }

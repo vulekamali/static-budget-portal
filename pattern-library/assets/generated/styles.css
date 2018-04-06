@@ -108,7 +108,8 @@ body {
   font-family: Lato, sans-serif;
   color: #3f3f3f;
   overflow-y: scroll;
-  font-size: 14px; }
+  font-size: 14px;
+  background-color: #f0f0f0; }
   body.has-overlay {
     overflow: hidden; }
   @media screen and (min-width: 750px) {
@@ -199,6 +200,12 @@ li {
 
 .u-listItemReset {
   padding: 0 !important; }
+
+.u-displayTable {
+  display: table; }
+
+.u-displayTableCell {
+  display: table-cell; }
 
 .u-padding0 {
   padding: 0 !important; }
@@ -660,6 +667,9 @@ li {
 .u-fontWeightBold {
   font-weight: bold !important; }
 
+.u-fontSize18 {
+  font-size: 16px !important; }
+
 .u-fontSize16 {
   font-size: 16px !important; }
 
@@ -685,7 +695,6 @@ li {
   overflow: hidden; }
 
 .BarChart-svg.is-hoverable .BarChart-tooltip {
-  cursor: pointer;
   opacity: 0; }
   .BarChart-svg.is-hoverable .BarChart-tooltip:hover {
     opacity: 1; }
@@ -935,17 +944,12 @@ li {
     .Page {
       display: table; } }
 
-.Page-head {
-  position: fixed;
-  width: 100%;
-  z-index: 80;
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.14), 0 0 2px 2px rgba(0, 0, 0, 0.098), 0 0 5px 1px rgba(0, 0, 0, 0.084); }
-  @media (min-width: 750px) {
-    .Page-head {
-      position: static;
-      box-shadow: none;
-      height: 1%;
-      display: table-row; } }
+@media (min-width: 750px) {
+  .Page-head {
+    position: static;
+    box-shadow: none;
+    height: 1%;
+    display: table-row; } }
 
 @media (min-width: 750px) {
   .Page-footer {
@@ -960,9 +964,7 @@ li {
       display: table-row; } }
 
 .Page-content {
-  padding-top: 70px; }
-  .Page-content--dynamicYears {
-    padding-top: 115px; }
+  padding-top: 30px; }
   @media (min-width: 750px) {
     .Page-content {
       padding-top: 0; } }
@@ -990,6 +992,7 @@ li {
     .Page-contentInner--floatingLinks {
       padding-left: 0; } }
 
+.Page-title,
 .Page-mainHeading {
   font-weight: bold;
   font-size: 28px;
@@ -997,92 +1000,20 @@ li {
   margin: 25px 20px 10px;
   display: block; }
   @media (min-width: 500px) {
+    .Page-title,
     .Page-mainHeading {
       margin: 35px 30px 20px; } }
   @media (min-width: 750px) {
+    .Page-title,
     .Page-mainHeading {
       margin: 45px 40px 30px; } }
 
-.Page-subHeading, .Page-section--forceStyling h2, .FileTypes-title {
+.Page-subHeading, .FileTypes-title {
   margin: 0 0 10px;
   font-size: 18px;
   font-weight: bold;
   font-weight: 900;
   display: block; }
-
-.Page-grid::after {
-  clear: both;
-  content: "";
-  display: block; }
-
-@media screen and (min-width: 1050px) {
-  .Page-gridItem {
-    float: left; }
-    .Page-gridItem--half {
-      width: 50%; }
-      .Page-gridItem--half:nth-of-type(2n) {
-        padding-left: 15px; }
-        .Page-sectionWrap .Page-gridItem--half:nth-of-type(2n) {
-          padding-left: 5px; }
-      .Page-gridItem--half:nth-of-type(2n + 1) {
-        padding-right: 15px; }
-        .Page-sectionWrap .Page-gridItem--half:nth-of-type(2n + 1) {
-          padding-right: 5px; } }
-
-.Page-sectionWrap {
-  text-align: left;
-  font-size: 14px;
-  padding: 10px;
-  display: block;
-  color: #3f3f3f;
-  text-decoration: none;
-  width: 100%; }
-  .Page-sectionWrap--card {
-    background-color: white;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    margin-bottom: 30px;
-    border: 1px solid #d2d2d2; }
-  .Page-sectionWrap--dark {
-    background-color: #e6e6e6; }
-    .Page-sectionWrap--dark.Page-sectionWrap--link:hover {
-      background-color: silver; }
-  .Page-sectionWrap--green {
-    background-color: #7bb344; }
-    .Page-sectionWrap--green.Page-sectionWrap--link:hover {
-      background-color: #557c2f; }
-
-.Page-section {
-  padding: 10px 10px 15px; }
-  @media (min-width: 500px) {
-    .Page-section {
-      padding: 15px 20px 20px; } }
-  @media (min-width: 750px) {
-    .Page-section {
-      padding: 15px 30px 20px; } }
-  .Page-section--card {
-    padding: 20px 10px 25px;
-    background: white;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
-    border: 1px solid #d2d2d2; }
-    @media (min-width: 500px) {
-      .Page-section--card {
-        padding: 25px 20px 35px; } }
-    @media (min-width: 750px) {
-      .Page-section--card {
-        padding: 25px 30px 35px; } }
-    .Page-sectionWrap--link:hover .Page-section--card {
-      background-color: #d9d9d9;
-      border: 1px solid #acacac; }
-  .Page-section--dark {
-    background-color: #7d7d7d;
-    color: white; }
-  .Page-section + .Page-section--card {
-    margin-top: 10px; }
-  .Page-section p {
-    line-height: 1.45; }
 
 @media (min-width: 1050px) {
   .Page-main {
@@ -1369,6 +1300,93 @@ li {
 
 .Tooltip-links {
   margin: 10px 10px 0; }
+
+.Section {
+  text-align: left;
+  font-size: 14px;
+  display: block;
+  color: #3f3f3f;
+  text-decoration: none;
+  width: 100%;
+  padding: 20px 20px 25px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #d2d2d2; }
+  @media (min-width: 500px) {
+    .Section {
+      padding: 25px 30px 30px; } }
+  @media (min-width: 750px) {
+    .Section {
+      padding: 25px 40px 30px; } }
+  .Section.is-link {
+    cursor: pointer; }
+    .Section.is-link:hover {
+      background-color: #e6e6e6; }
+  .Section.is-bevel {
+    padding: 10px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 1px solid #d2d2d2;
+    background-color: #e6e6e6; }
+    .Section.is-bevel.is-link:hover {
+      background-color: #cdcdcd; }
+  .Section.is-green {
+    background-color: #7bb344; }
+    .Section.is-green.is-link:hover {
+      background-color: #628e36; }
+  .Section.is-invisible {
+    box-shadow: none;
+    border-width: 0;
+    background: none; }
+
+.Section-card {
+  padding: 20px 10px 25px;
+  background: white;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #d2d2d2; }
+  @media (min-width: 500px) {
+    .Section-card {
+      padding: 25px 20px 35px; } }
+  @media (min-width: 750px) {
+    .Section-card {
+      padding: 25px 30px 35px; } }
+  .Section.is-link:hover .Section-card {
+    background-color: #d9d9d9;
+    border: 1px solid #acacac; }
+  .Section-card.is-dark {
+    background-color: #7d7d7d;
+    color: white; }
+  .Section-card.is-invisible {
+    box-shadow: none;
+    border-width: 0;
+    background: none; }
+
+.Section-title {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  font-weight: 900;
+  display: block; }
+  .Section-title.is-small {
+    font-size: 14px; }
+
+.Grid::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+@media screen and (min-width: 1050px) {
+  .Grid-item {
+    float: left; }
+    .Grid-item.is-half {
+      width: 50%; }
+      .Grid-item.is-half:nth-of-type(2n) {
+        padding-left: 15px; }
+      .Grid-item.is-half:nth-of-type(2n + 1) {
+        padding-right: 15px; } }
 
 .ApiCta-title {
   font-size: 18px;
@@ -1835,8 +1853,10 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   text-decoration: none; }
-  .ValueBlocks-item--link:hover {
-    background-color: #d9d9d9; }
+  .ValueBlocks-item--link {
+    text-decoration: underline; }
+    .ValueBlocks-item--link:hover {
+      background-color: #d9d9d9; }
   .ValueBlocks-itemWrap:nth-of-type(4n+1) .ValueBlocks-item {
     color: #ad3c64; }
   .ValueBlocks-itemWrap:nth-of-type(4n+2) .ValueBlocks-item {
@@ -2639,15 +2659,41 @@ li {
         cursor: default; } }
 
 .YearSelect {
-  text-align: center;
-  padding: 0 20px;
   background: #3f3f3f;
   color: white; }
   @media screen and (min-width: 900px) {
     .YearSelect {
-      padding-top: 15px;
       color: #3f3f3f;
+      background-color: #f0f0f0;
+      padding-top: 15px; } }
+
+.YearSelect-fixed {
+  display: none; }
+  @media screen and (900px) {
+    .YearSelect-fixed {
+      background: #3f3f3f;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      -webkit-transform: translateY(-110%);
+              transform: translateY(-110%);
+      transition: -webkit-transform 0.4s;
+      transition: transform 0.4s;
+      transition: transform 0.4s, -webkit-transform 0.4s;
+      z-index: 9999999999;
+      box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12); } }
+  @media screen and (900px) and (min-width: 900px) {
+    .YearSelect-fixed {
       background-color: #f0f0f0; } }
+  @media screen and (900px) {
+      .YearSelect-fixed.is-active {
+        -webkit-transform: translateY(0);
+                transform: translateY(0); } }
+
+.YearSelect-instance {
+  text-align: center;
+  padding: 0 20px; }
 
 .YearSelect-title {
   vertical-align: middle;
@@ -3420,6 +3466,9 @@ li {
   left: 0;
   width: 100%;
   position: absolute; }
+
+.IntroSection-content > h2 {
+  font-size: 14px; }
 
 @media screen and (min-width: 750px) {
   .ProgrammesChart::after {

@@ -3,7 +3,6 @@ import breakIntoWrap from './../partials/breakIntoWrap.js';
 
 export default function Heading({ heading, subHeading, type, left }) {
   const titleArray = breakIntoWrap(heading, 33);
-  console.log(titleArray);
 
   return (
     <g>

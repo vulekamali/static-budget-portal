@@ -94,7 +94,7 @@ class ProgrammesChartContainer extends Component {
         }}
         items={this.props.items}
         guides
-        width={600}
+        width={900}
       />,
     ));
 
@@ -148,6 +148,7 @@ class ProgrammesChartContainer extends Component {
 
         downloadAction={this.downloadAction}
         canvasAction={this.canvasAction}
+        national={this.props.deptLocation === 'National'}
       />
     );
   }
