@@ -29,18 +29,22 @@ layout: page-shell
       datasets=page_data.treasury_datasets
     %}
 
-    {%
-      include components/department-budgets/ProgrammesChart/index.html
-      values=page_data.programmes
-      year=page.financial_year
-      location=department_location
-      department=page_data.name
-    %}
+    <div class="u-marginTop20">
+      {%
+        include components/department-budgets/ProgrammesChart/index.html
+        values=page_data.programmes
+        year=page.financial_year
+        location=department_location
+        department=page_data.name
+      %}
+    </div>
 
-    {%
-      include components/department-budgets/ContributedData/index.html
-      datasets=page_data.contributed_datasets
-    %}
+    <div class="u-marginTop20">
+      {%
+        include components/department-budgets/ContributedData/index.html
+        datasets=page_data.contributed_datasets
+      %}
+    </div>
 
   </div>
 </div>

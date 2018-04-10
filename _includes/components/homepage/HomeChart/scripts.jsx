@@ -79,17 +79,18 @@ function scripts() {
     };
   });
 
-  const buildExpenditureDataWithNull = array => array.map((object) => {
+  const buildExpenditureDataWithNull = (array, yearString) => array.map((object) => {
     return {
       [object.name]: {
-        link: `/search-result?search_type=full-search&search=${object.name}`,
+        link: `/${yearString}/search-result?search_type=full-search&search=${object.name}`,
       },
     };
   });
 
-  const normaliseData = (array, hasNull, type) => {
+  const normaliseData = (array, hasNull, type, yearString) => {
+    console.log(yearString);
     if (type === 'expenditure' && hasNull) {
-      return buildExpenditureDataWithNull(array);
+      return buildExpenditureDataWithNull(array, yearString);
     } else if (type === 'expenditure') {
       return buildExpenditureData(array);
     } else if (type === 'revenue') {
@@ -106,9 +107,10 @@ function scripts() {
     const node = nodes[i];
     const rawValues = getProp('values', node, 'json');
     const type = getProp('type', node);
+    const yearString = getProp('year', node);
 
     const hasNull = type === 'revenue' ? false : calcIfHasNullTotalBudget(rawValues.data);
-    const items = Object.assign(...normaliseData(rawValues.data, hasNull, type));
+    const items = Object.assign(...normaliseData(rawValues.data, hasNull, type, yearString));
 
     render(
       <HomeChartContainer {...{ hasNull, items }} />,

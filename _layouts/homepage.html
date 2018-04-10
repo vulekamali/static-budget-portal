@@ -47,6 +47,7 @@ layout: page-shell
             include components/homepage/HomeChart/index.html
             values=page_data.revenue
             type="revenue"
+            year=page.financial_year
           %}
           <div class="Section-card is-invisible u-paddingBottom15 u-paddingTop15">
             {% include components/universal/Download/index.html title=" Download Estimates of National Revenue (Excel)" link=finalDownload icon="true" %}
@@ -63,6 +64,7 @@ layout: page-shell
             include components/homepage/HomeChart/index.html
             values=government_functions
             type="expenditure"
+            year=page.financial_year
           %}
           <div class="Section-card is-invisible u-paddingBottom15 u-paddingTop15">
             {% include components/universal/Download/index.html title=finalTitle link=finalLink %}
@@ -105,21 +107,23 @@ layout: page-shell
       <div class="Section is-bevel">
         <div class="Section-card is-dark">
           <div class="Section-title u-marginBottom20">Sign up for our newsletter</div>
-          <input class="Input" placeholder="Enter email address" />
-          <div class="Button is-secondary u-marginTop10">Subscribe</div>
+          <form action="https://openup.us17.list-manage.com/subscribe/post?u=1769390be13958db72c0af6ed&amp;id=308211cb20" method="post" target="_blank">
+            <input class="Input" type="email" value="" name="EMAIL" required="" placeholder="Enter email address" id="mce-EMAIL"/>
+            <button class="Button is-secondary u-marginTop10" type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
 
-      <div class="Section is-bevel  u-marginTop20">
+      <div class="Section is-bevel u-marginTop20">
         <div class="Section-card">
           <div class="Section-title u-marginBottom20">Find budget data related to one of these topics</div>
             {% for link in site.data.recommended_topics %}
-              <a href="#" class="Button is-secondary u-marginTop10">{{ link }}</a>
+              <a href="/{{ page.financial_year }}/search-result?search={{ link | uri_escape }}" class="Button is-secondary u-marginTop10">{{ link }}</a>
             {% endfor %}
         </div>
       </div>
 
-      <a href="#" class="Section is-bevel is-green is-link u-marginTop20">
+      <a href="https://data.vulekamali.gov.za/" target="_blank" class="Section is-bevel is-green is-link u-marginTop20">
         <div class="Section-card">
           <div class="Section-title u-marginBottom20">Information for Developers & Data Scientists</div>
           <span class="u-textDecorationUnderline">Access the documentation and API that we used to build this site</span>
