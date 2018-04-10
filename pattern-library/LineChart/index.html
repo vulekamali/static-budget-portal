@@ -27,7 +27,7 @@
 
         <p><a href="basic.html">View Source</a>
         </p>
-        <iframe style="resize: horizontal;" width="100%" height="350" src="basic.html"
+        <iframe style="resize: horizontal;" width="100%" height="500" src="basic.html"
         frameborder="0" allowfullscreen></iframe>
         
 <h3 id="multiple-bars-600px-">Multiple Bars (600px)</h3>
@@ -42,13 +42,6 @@
         <p><a href="no.html">View Source</a>
         </p>
         <iframe style="resize: horizontal;" width="100%" height="470" src="no.html"
-        frameborder="0" allowfullscreen></iframe>
-        
-<h3 id="download-1-5-scale-600px-">Download + 1.5 scale (600px)</h3>
-
-        <p><a href="download.html">View Source</a>
-        </p>
-        <iframe style="resize: horizontal;" width="100%" height="470" src="download.html"
         frameborder="0" allowfullscreen></iframe>
         
 <h2 id="modifiers">Modifiers</h2>
@@ -95,21 +88,9 @@
                         of the viewport width wrap this component in <code>ChartWidthContainer</code> component</td>
                 </tr>
                 <tr>
-                    <td><code>scale</code>
+                    <td><code>parentAction</code>
                     </td>
-                    <td>An integer that determine the scale that the chart will be displayed at.
-                        The size of everything (include the width prop) is multiplied by this number
-                        to emulate changes in scale. This is useful when you want to scale things
-                        up for the downloaded version.</td>
-                </tr>
-                <tr>
-                    <td><code>download</code>
-                    </td>
-                    <td>An object with the following schema: <strong>{ heading: <code>string</code>, subHeading: <code>string</code>, type: <code>string</code> }</strong>.
-                        If the download prop is supplied all the above need to be included. This
-                        prop signals that this rendition of the chart will be used to create a
-                        PNG image for download. This includes a white background, additional padding
-                        on the sides, vulekamali branding and the above values as text in the PNG.</td>
+                    <td>...</td>
                 </tr>
             </tbody>
         </table>

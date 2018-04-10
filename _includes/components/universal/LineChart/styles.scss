@@ -4,7 +4,6 @@
 
 .ColumnChart-tooltip {
   .ColumnChart-svg.is-hoverable & {
-    cursor: pointer;
     opacity: 0;
 
     &:hover {

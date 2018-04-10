@@ -9,7 +9,15 @@ import LineGroups from './partials/LineGroups.jsx';
 import Tooltips from './partials/Tooltips.jsx';
 import Labels from './partials/Labels.jsx';
 
-export default function LineChart({ items, width, guides, scale = 1, downloadable, parentAction }) {
+export default function LineChart(props) {
+  const {
+    items,
+    width,
+    hover
+  } = props;
+
+  const { parentAction } = props;
+
   let styling = {
     fontSize: 14,
     popupFontSize: 14,
@@ -32,7 +40,7 @@ export default function LineChart({ items, width, guides, scale = 1, downloadabl
     svgHeight: 300,
   };
 
-  if (downloadable) {
+  if (hover) {
     styling = {
       ...styling,
       padding: [80, 30, 60, 130],
@@ -46,48 +54,31 @@ export default function LineChart({ items, width, guides, scale = 1, downloadabl
   const height = padding[0] + svgHeight + padding[2] + (buffer * 2);
   const newWidth = padding[3] + valueSpace + padding[1];
 
-  const background = (
-    <rect
-      x="0"
-      y="0"
-      width={newWidth}
-      height={height}
-      fill="white"
-    />
-  );
-
-  const values = (
+  const content = (
     <svg
       version="1.1"
       className="ColumnChart-svg is-hoverable"
       xmlns="http://www.w3.org/2000/svg"
       viewBox={`0 0 ${newWidth} ${height}`}
-      width={newWidth * scale}
-      height={height * scale}
+      width={newWidth}
+      height={height}
       style={{ maxWidth: newWidth }}
     >
-
-      {downloadable ? background : null}
-
       <Breakpoints {...{ styling, totalGroupSpace }} />
       <Grid {...{ styling, totalGroupSpace }} />
       <Guides {...{ styling, totalGroupSpace }} />
       <LineGroups {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
       <Tooltips {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
-      <Labels {...{ totalGroupSpace, groupSpaceArray, items, styling }} /> */}
+      <Labels {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
     </svg>
   );
 
-  if (!downloadable) {
-    return (
-      <div
-        className="ColumnChart"
-        ref={parentAction && node => parentAction(node)}
-      >
-        {values}
-      </div>
-    );
-  }
-
-  return values;
+  return (
+    <div
+      className="LineChart"
+      ref={node => parentAction && parentAction(node)}
+    >
+      {content}
+    </div>
+  );
 }

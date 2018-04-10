@@ -2,7 +2,6 @@ import analyticsEvents from './../../../../utilities/js/helpers/analyticsEvent.j
 
 
 export default function calcShareAction(selected, anchorString, updateModal) {
-  console.log(window.location.href, anchor, anchor ? true : false);
   const url = encodeURIComponent(window.location.href);
   const anchor = anchorString ? `#${anchorString}` : '';
   const message = encodeURIComponent('SA Budget Data from vulekamali');

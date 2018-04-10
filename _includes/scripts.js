@@ -11,7 +11,7 @@ import './utilities/js/modules/polyfillOldFeatures.js';
 
 import './components/universal/Share/scripts.jsx';
 import './components/universal/Tooltip/scripts.js';
-import './components/universal/ColumnChart/scripts.jsx';
+import './components/universal/ResponsiveChart/scripts.jsx';
 
 import './components/search-results/SearchResult/scripts.jsx';
 

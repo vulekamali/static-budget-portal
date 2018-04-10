@@ -1,13 +1,16 @@
-import PropTypes from 'prop-types';
 import { h, Component } from 'preact';
+import Markup from './partials/Markup.jsx';
 import DebounceFunction from './../../../utilities/js/helpers/DebounceFunction.js';
 
 
-class ResponsiveChart extends Component {
+export default class ResponsiveChart extends Component {
   constructor(props) {
     super(props);
 
-    const { minWidth, breakpoint } = this.props;
+    const {
+      minWidth = 250, 
+      breakpoint = 600,
+    } = this.props;
 
     this.state = {
       width: minWidth,
@@ -23,7 +26,7 @@ class ResponsiveChart extends Component {
 
       if (this.node && this.node.offsetWidth !== this.state.width) {
         if (this.node.offsetWidth <= minWidth && this.state.width !== minWidth) {
-          return this.setState({ minWidth });
+          return this.setState({ width: minWidth });
         }
 
         return this.setState({ width: this.node.offsetWidth });
@@ -50,26 +53,16 @@ class ResponsiveChart extends Component {
   }
 
   render() {
-    const { component } = this.props;
+    const { type, items, download } = this.props;
     const { mobile, width } = this.state;
 
-    return component({
-      parentAction: this.parentAction,
-      guides: !mobile,
-      hover: !mobile,
-      ...this.props,
-    });
+    return (
+      <Markup
+        parentAction={this.parentAction}
+        guides={!mobile}
+        hover={!mobile}
+        {...{ type, items, width }}
+      />
+    );
   }
 }
-
-
-ChartWidthContainer.propTypes = {
-  component: PropTypes.element.isRequired,
-  minWidth: PropTypes.number,
-  breakpoint: PropTypes.number,
-};
-
-ChartWidthContainer.defaultProps = {
-  minWidth: 200,
-  breakpoint: 600,
-};

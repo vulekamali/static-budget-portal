@@ -25,48 +25,50 @@ export default function BarChart(props) {
 
   const { parentAction } = props;
 
-  if (width > 200) {
-    let styling = {
-      fontSize: 14,
-      popupFontSize: 14,
-      maxValue: calcMaxValue(items),
-      popupWidth: 90,
-      popUpOffset: 6,
-      buffer: 20,
-      padding: [0, 110, 60, 2],
-      valueSpace: width - (112),
-      lineGutter: 23,
-      popupHeight: 30,
-      popupCentre: 5,
-      barWidth: 16,
-      groupMargin: 60,
-      charWrap: width / 10,
-      charLineHeight: 16,
-      titleSpace: 0,
-      labelBreakpoints: Math.floor(width / 150),
-      showGuides: true,
+  let content = null;
+
+  let styling = {
+    fontSize: 14,
+    popupFontSize: 14,
+    maxValue: calcMaxValue(items),
+    popupWidth: 90,
+    popUpOffset: 6,
+    buffer: 20,
+    padding: [0, 110, 60, 2],
+    valueSpace: width - (112),
+    lineGutter: 23,
+    popupHeight: 30,
+    popupCentre: 5,
+    barWidth: 16,
+    groupMargin: 60,
+    charWrap: width / 10,
+    charLineHeight: 16,
+    titleSpace: 0,
+    labelBreakpoints: Math.floor(width / 150),
+    showGuides: true,
+  };
+
+  if (hover) {
+    styling = {
+      ...styling,
+      charLineHeight: 14,
+      lineGutter: 8,
+      barWidth: 12,
+      groupMargin: 40,
     };
+  }
 
-    if (hover) {
-      styling = {
-        ...styling,
-        charLineHeight: 14,
-        lineGutter: 8,
-        barWidth: 12,
-        groupMargin: 40,
-      };
-    }
+  if (download) {
+    const titleArray = breakIntoWrap(download.heading, 33);
 
-    if (download) {
-      const titleArray = breakIntoWrap(download.heading, 33);
+    styling = {
+      ...styling,
+      padding: [83 + (30 * titleArray.length), 140, 137, 30],
+      valueSpace: width - (140 + 30),
+    };
+  }
 
-      styling = {
-        ...styling,
-        padding: [83 + (30 * titleArray.length), 140, 137, 30],
-        valueSpace: width - (140 + 30),
-      };
-    }
-
+  if (width > 200) {
     const { valueSpace, padding, showGuides } = styling;
     const groupSpaceArray = buildGroupSpaceArray(items, styling);
     const totalGroupSpace = groupSpaceArray.reduce((result, val) => result + val, 0);
@@ -83,7 +85,7 @@ export default function BarChart(props) {
       />
     );
 
-    const content = (
+    content = (
       <svg
         version="1.1"
         className={`BarChart-svg ${hover ? ' is-hoverable' : ''}`}
@@ -121,18 +123,18 @@ export default function BarChart(props) {
         }
       </svg>
     );
-
-    if (!download) {
-      return (
-        <div
-          className="BarChart"
-          ref={node => parentAction && parentAction(node)}
-        >
-          {content}
-        </div>
-      );
-    }
-
-    return content;
   }
+
+  if (!download) {
+    return (
+      <div
+        className="BarChart"
+        ref={node => parentAction && parentAction(node)}
+      >
+        {content}
+      </div>
+    );
+  }
+
+  return content;
 }
