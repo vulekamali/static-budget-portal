@@ -3,7 +3,7 @@ import { h, Component } from 'preact';
 import DebounceFunction from './../../../utilities/js/helpers/DebounceFunction.js';
 
 
-class ChartWidthContainer extends Component {
+class ResponsiveChart extends Component {
   constructor(props) {
     super(props);
 
@@ -22,8 +22,8 @@ class ChartWidthContainer extends Component {
       }
 
       if (this.node && this.node.offsetWidth !== this.state.width) {
-        if (this.node.offsetWidth <= 200 && this.state.width !== 200) {
-          return this.setState({ width: 200 });
+        if (this.node.offsetWidth <= minWidth && this.state.width !== minWidth) {
+          return this.setState({ minWidth });
         }
 
         return this.setState({ width: this.node.offsetWidth });
@@ -50,15 +50,14 @@ class ChartWidthContainer extends Component {
   }
 
   render() {
-    const { component, items } = this.props;
+    const { component } = this.props;
     const { mobile, width } = this.state;
 
     return component({
       parentAction: this.parentAction,
       guides: !mobile,
       hover: !mobile,
-      width,
-      items,
+      ...this.props,
     });
   }
 }
@@ -66,11 +65,8 @@ class ChartWidthContainer extends Component {
 
 ChartWidthContainer.propTypes = {
   component: PropTypes.element.isRequired,
-  minWidth: PropTypes.number, 
+  minWidth: PropTypes.number,
   breakpoint: PropTypes.number,
-  items: PropTypes.shape({
-    [PropTypes.string]: PropTypes.arrayOf(PropTypes.number),
-  }).isRequired,
 };
 
 ChartWidthContainer.defaultProps = {

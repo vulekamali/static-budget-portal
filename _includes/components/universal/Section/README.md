@@ -3,7 +3,15 @@ title: Section
 state:
   text: stable
   color: white
-  background: green
+  background: blue
+API:
+  text: HTML
+  color: black
+  background: '#CCCCCC'
+support:
+  text: untested
+  color: white
+  background: grey
 ---
 
 ## Overview

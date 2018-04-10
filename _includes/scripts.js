@@ -9,7 +9,6 @@ import './utilities/js/modules/createComponentInterfaces.js';
 import './utilities/js/modules/loadGoogleAnalytics.js';
 import './utilities/js/modules/polyfillOldFeatures.js';
 
-import './components/universal/BarChart/scripts.jsx';
 import './components/universal/Share/scripts.jsx';
 import './components/universal/Tooltip/scripts.js';
 import './components/universal/ColumnChart/scripts.jsx';

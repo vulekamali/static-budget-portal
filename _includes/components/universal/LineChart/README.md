@@ -1,5 +1,5 @@
 ---
-title: BarChart
+title: LineChart
 state:
   text: unstable
   color: white

@@ -89,9 +89,9 @@ export default function BarChart(props) {
         className={`BarChart-svg ${hover ? ' is-hoverable' : ''}`}
         xmlns="http://www.w3.org/2000/svg"
         viewBox={`0 0 ${newWidth} ${height}`}
-        width={newWidth * scale}
-        height={height * scale}
-        style={{ maxWidth: newWidth }}
+        width={newWidth * (scale || 1)}
+        height={height * (scale || 1)}
+        style={{ maxWidth: newWidth * (scale || 1) }}
       >
 
         {download ? background : null}
@@ -134,14 +134,5 @@ export default function BarChart(props) {
     }
 
     return content;
-  }
-
-  if (!download) {
-    return (
-      <div
-        className="BarChart"
-        ref={node => parentAction && parentAction(node)}
-      />
-    );
   }
 }

@@ -9,7 +9,7 @@ import LineGroups from './partials/LineGroups.jsx';
 import Tooltips from './partials/Tooltips.jsx';
 import Labels from './partials/Labels.jsx';
 
-export default function ColumnChart({ items, width, guides, scale = 1, downloadable, parentAction }) {
+export default function LineChart({ items, width, guides, scale = 1, downloadable, parentAction }) {
   let styling = {
     fontSize: 14,
     popupFontSize: 14,

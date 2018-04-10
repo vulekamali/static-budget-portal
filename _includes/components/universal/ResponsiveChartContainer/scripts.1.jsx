@@ -11,11 +11,11 @@ function scripts() {
     const items = getProps('values', node, 'json');
     const guides = getProps('guides', node, 'bool');
     const hover = getProps('hover', node, 'bool');
-    const width = getProps('width', node, 'int');
-    const scale = getProps('scale', node, 'int');
+    const width = getProps('width', node, 'num');
+    const scale = getProps('scale', node, 'num');
     const rawDownload = getProps('download', node, 'json');
 
-    const downloadHasProps = rawDownload.heading && rawDownload.subHeading && rawDownload.type;
+    const downloadHasProps = !!(rawDownload && rawDownload.heading && rawDownload.subHeading && rawDownload.type);
     const download = downloadHasProps ? rawDownload : null;
 
     render(
