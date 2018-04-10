@@ -12,13 +12,21 @@ state:
 
 ## Examples
 
-### Basic
+### Basic (500px)
 [View Source](basic.html)
-<iframe width="100%" height="315" src="basic.html" frameborder="0" allowfullscreen></iframe>
+<iframe style="resize: horizontal;" width="100%" height="350" src="basic.html" frameborder="0" allowfullscreen></iframe>
 
-### Grouped
+### Multiple Bars (600px)
 [View Source](multiple.html)
-<iframe width="100%" height="800" src="grouped.html" frameborder="0" allowfullscreen></iframe>
+<iframe style="resize: horizontal;" width="100%" height="500" src="multiple.html" frameborder="0" allowfullscreen></iframe>
+
+### No guides or hover (700px)
+[View Source](no.html)
+<iframe style="resize: horizontal;" width="100%" height="470" src="no.html" frameborder="0" allowfullscreen></iframe>
+
+### Download + 1.5 scale (300px)
+[View Source](download.html)
+<iframe style="resize: horizontal;" width="100%" height="470" src="download.html" frameborder="0" allowfullscreen></iframe>
 
 ## Modifiers
 

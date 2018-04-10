@@ -22,23 +22,23 @@ _NOTE: The `Section` component aims to encapsulate itself from the it's parent c
 
 ### Grouped
 [View Source](grouped.html)
-<iframe width="100%" height="800" src="grouped.html" frameborder="0" allowfullscreen></iframe>
+<iframe style="resize: horizontal;" width="100%" height="800" src="grouped.html" frameborder="0" allowfullscreen></iframe>
 
 ### Green Bevel
 [View Source](green.html)
-<iframe width="100%" height="315" src="green.html" frameborder="0" allowfullscreen></iframe>
+<iframe style="resize: horizontal;" width="100%" height="315" src="green.html" frameborder="0" allowfullscreen></iframe>
 
 ### Dark Card
 [View Source](dark.html)
-<iframe width="100%" height="315" src="dark.html" frameborder="0" allowfullscreen></iframe>
+<iframe style="resize: horizontal;" width="100%" height="315" src="dark.html" frameborder="0" allowfullscreen></iframe>
 
 ### Clickable
 [View Source](clickable.html)
-<iframe width="100%" height="315" src="clickable.html" frameborder="0" allowfullscreen></iframe>
+<iframe style="resize: horizontal;" width="100%" height="315" src="clickable.html" frameborder="0" allowfullscreen></iframe>
 
 ### Invisible Card
 [View Source](invisible.html)
-<iframe width="100%" height="315" src="invisible.html" frameborder="0" allowfullscreen></iframe>
+<iframe style="resize: horizontal;" width="100%" height="315" src="invisible.html" frameborder="0" allowfullscreen></iframe>
 
 ## Modifiers
 

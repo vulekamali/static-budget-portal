@@ -12,9 +12,14 @@ function scripts() {
     const guides = getProps('guides', node, 'bool');
     const hover = getProps('hover', node, 'bool');
     const width = getProps('width', node, 'int');
+    const scale = getProps('scale', node, 'int');
+    const rawDownload = getProps('download', node, 'json');
+
+    const downloadHasProps = rawDownload.heading && rawDownload.subHeading && rawDownload.type;
+    const download = downloadHasProps ? rawDownload : null;
 
     render(
-      <BarChart {...{ items, width, hover, guides }} />,
+      <BarChart {...{ items, width, hover, guides, download, scale }} />,
       node,
     );
   }

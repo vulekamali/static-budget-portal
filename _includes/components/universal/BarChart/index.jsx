@@ -112,7 +112,7 @@ export default function BarChart(props) {
         <LineGroups {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
         <Tooltips {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
 
-        { downloadable ?
+        { download ?
           <g>
             <Logo top={((padding[0] + totalGroupSpace) / 2) + 17} left={padding[3]} />
             <Attribution top={padding[0] + totalGroupSpace + 90} left={padding[3] + valueSpace} />
@@ -122,7 +122,7 @@ export default function BarChart(props) {
       </svg>
     );
 
-    if (!downloadable) {
+    if (!download) {
       return (
         <div
           className="BarChart"
@@ -136,7 +136,7 @@ export default function BarChart(props) {
     return content;
   }
 
-  if (!downloadable) {
+  if (!download) {
     return (
       <div
         className="BarChart"
