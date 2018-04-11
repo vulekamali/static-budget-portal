@@ -48,7 +48,11 @@ export default class ResponsiveChart extends Component {
   }
 
   componentDidUpdate() {
-    this.props.widthAction(this.state.width);
+    if (this.props.widthAction) {
+      return this.props.widthAction(this.state.width);
+    }
+
+    return null;
   }
 
 

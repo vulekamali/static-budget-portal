@@ -2453,7 +2453,11 @@ var ResponsiveChart = function (_Component) {
   _createClass(ResponsiveChart, [{
     key: 'componentDidUpdate',
     value: function componentDidUpdate() {
-      this.props.widthAction(this.state.width);
+      if (this.props.widthAction) {
+        return this.props.widthAction(this.state.width);
+      }
+
+      return null;
     }
   }, {
     key: 'parentAction',
@@ -19600,7 +19604,7 @@ var ProgrammesChartContainer = function (_Component) {
     key: 'render',
     value: function render() {
       return (0, _preact.h)(_index4.default, {
-        items: { hello: [10], goodbye: [20] },
+        items: this.props.items,
         width: this.state.width,
         parentAction: this.parentAction,
         mobile: this.state.mobile,
@@ -23082,4 +23086,4 @@ function Modal(_ref) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=scripts.0f51af7b4ea04351619f.js.map
+//# sourceMappingURL=scripts.1097b953dd9c0b9a3739.js.map

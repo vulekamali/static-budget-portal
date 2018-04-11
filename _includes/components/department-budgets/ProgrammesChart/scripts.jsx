@@ -93,7 +93,7 @@ class ProgrammesChartContainer extends Component {
   render() {
     return (
       <ProgrammesChart
-        items={{ hello: [10], goodbye: [20] }}
+        items={this.props.items}
         width={this.state.width}
         parentAction={this.parentAction}
         mobile={this.state.mobile}
