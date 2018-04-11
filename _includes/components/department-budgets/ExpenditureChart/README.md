@@ -1,5 +1,5 @@
 ---
-title: ProgrammesChart
+title: ExpenditureChart
 state:
   text: ✖ unstable
   color: white

@@ -1,7 +1,7 @@
 ---
 title: LineChart
 state:
-  text: unstable
+  text: ✖ unstable
   color: white
   background: blue
 API:

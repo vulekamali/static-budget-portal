@@ -1,0 +1,17 @@
+.Expenditure-table {
+  margin-top: 20px;
+  border: 1px solid $colour-shading-dark;
+  font-size: 11px;
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+}
+
+.Expenditure-heading {
+  padding: 5px 10px;
+  border: 1px solid $colour-shading-dark;
+}
+
+.Expenditure-cell {
+  padding: 5px 10px;
+  border: 1px solid $colour-shading-dark;
+}

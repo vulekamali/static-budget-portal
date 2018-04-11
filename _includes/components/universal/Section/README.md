@@ -1,7 +1,7 @@
 ---
 title: Section
 state:
-  text: stable
+  text: ✔ stable
   color: white
   background: blue
 API:

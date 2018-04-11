@@ -7,12 +7,14 @@ import Icon from './../../universal/Icon/index.jsx';
 import Modal from './../../universal/Modal/index.jsx';
 
 
-export default function ProgrammesChart(props) {
+export default function ExpenditureChart(props) {
   const {
     items,
     hasNull,
     year,
     files,
+    phaseTable,
+    type,
 
     open,
     selected,
@@ -25,37 +27,12 @@ export default function ProgrammesChart(props) {
     shareAction,
     closeModal,
     canvasAction,
+    widthAction,
   } = props;
 
-  const noValues = (
-    <ul className="u-margin0 u-paddingLeft20">
-      {Object.keys(items).map(val => <li>{val}</li>)}
-    </ul>
-  );
-
-  const withValues = (
-    <ResponsiveChart
-      type="bar"
-      {...{ items }}
-    />
-  );
-
-  const downloadButton = (
-    <button className="Button is-inline" onClick={downloadAction}>Download chart as image</button>
-  );
-
-  const buildDownloadLinks = () => {
-    Object.keys(files).map((key) => {
-      return (
-        <div>
-          <Download title={key} link={files[key]} icon />
-        </div>
-      );
-    });
-  };
 
   return (
-    <div className="Section is-bevel" id="programmes-chart">
+    <div className="Section is-bevel" id="line-chart">
       <canvas ref={node => canvasAction(node)} style={{ display: 'none' }} />
       <Modal
         title="Share this link:"
@@ -63,23 +40,50 @@ export default function ProgrammesChart(props) {
         open={modal}
       >
         <a className="u-wordBreak u-wordBreak--breakAll" href={`${window.location.href}#programmes-chart`}>
-          {`${window.location.href}#programmes-chart`}
+          {`${window.location.href}#line-chart`}
         </a>
       </Modal>
       <div className="ProgrammesChart">
         <div className="ProgrammesChart-info">
           <div className="Section-card is-invisible">
-            <div className="Page-subHeading">Programme budgets for {year}</div>
+            <div className="Page-subHeading">Expenditure changes over time</div>
             <p>
-              A department&#x27;s programmes are the activities that it spends money on during the financial year. Different programmes have different expenditure budgets, depending on their requirements and available finances. More detail on the programmes is available in the department's Estimates of National Expenditure (ENE) documents.
+            Budgeted expenditure for a department can increase or decrease from year to year. The official budget shows the nominal value of spendiing - the real value is calculated by adjusting for inflation, since most expenditure items are subject to inflation. By stripping out the inflation (GDP or CPI inflation) it is possible to show if a departmental budget is increasing or decreasing in real terms
             </p>
+            <div>
+              <span>Previous financial years indicate actual expenditure while upcoming financial years indicate estimated expenditure:</span>
+              <table className="Expenditure-table">
+                <tr>
+                  <th className="Expenditure-heading">Financial year</th>
+                  <th className="Expenditure-heading">Budget phase</th>
+                </tr>
+                {
+                  phaseTable.map((val) => {
+                    return (
+                      <tr>
+                        <td className="Expenditure-cell">{val[0]}</td>
+                        <td className="Expenditure-cell">{val[1]}</td>
+                      </tr>
+                    );
+                  })
+                }
+              </table>
+            </div>
           </div>
           <div className="Section-card is-invisible">
             <div className="u-fontWeightBold">Sources</div>
             <p>
               The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year.
             </p>
-            { files ? buildDownloadLinks : null }
+            {
+              Object.keys(files).map((key) => {
+                return (
+                  <div>
+                    <Download title={key} link={files[key]} icon />
+                  </div>
+                );
+              })
+            }
           </div>
           <div className="Section-card is-invisible">
             <div className="u-fontWeightBold u-marginBottom10">Share this chart:</div>
@@ -101,10 +105,7 @@ export default function ProgrammesChart(props) {
         </div>
         <div className="ProgrammesChart-chart">
           <div className="Section-card">
-            {hasNull ? noValues : withValues}
-          </div>
-          <div className="Section-card is-invisible u-textAlignCenter">
-            {hasNull ? null : downloadButton}
+            <ResponsiveChart {...{ items, widthAction, type }} />
           </div>
         </div>
       </div>
