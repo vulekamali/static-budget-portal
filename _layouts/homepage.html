@@ -47,6 +47,7 @@ layout: page-shell
             include components/homepage/HomeChart/index.html
             values=page_data.revenue
             type="revenue"
+            year=page.financial_year
           %}
           <div class="Section-card is-invisible u-paddingBottom15 u-paddingTop15">
             {% include components/universal/Download/index.html title=" Download Estimates of National Revenue (Excel)" link=finalDownload icon="true" %}
@@ -63,6 +64,7 @@ layout: page-shell
             include components/homepage/HomeChart/index.html
             values=government_functions
             type="expenditure"
+            year=page.financial_year
           %}
           <div class="Section-card is-invisible u-paddingBottom15 u-paddingTop15">
             {% include components/universal/Download/index.html title=finalTitle link=finalLink %}

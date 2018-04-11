@@ -11,7 +11,7 @@ layout: page-shell
     <div>
       <div class="Page-mainHeading">{{ page_data.name }}</div>
 
-      {% 
+      {%
         include components/contributed-data/CsoMeta/index.html
         author=page_data.author
         created=page_data.created
@@ -58,6 +58,7 @@ layout: page-shell
       {% endif %}
 
       <div class="Section u-marginBottom20">
+          <h2 class="Section-title">Discuss this dataset with others</h2>
           <div id='discourse-comments'></div>
 
           <script type="text/javascript">
@@ -77,7 +78,7 @@ layout: page-shell
     </main>
 
     <aside class="Page-sidebar">
-      <div class="Section 
+      <div class="Section
       u-marginBottom20">
         <h2 class="Section-title">Share this page:</h2>
         {% include components/universal/Share/index.html %}
