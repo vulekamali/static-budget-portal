@@ -1,62 +1,71 @@
-import { h, render, Component } from 'preact';
 import renderToString from 'preact-render-to-string';
+import { h, render, Component } from 'preact';
 import canvg from 'canvg-browser';
 import ExpenditureChart from './index.jsx';
-import decodeHtmlEntities from './../../../utilities/js/helpers/decodeHtmlEntities.js';
-import ColumnChart from './../../universal/BarChart/index.jsx';
+import BarChart from './../../universal/BarChart/index.jsx';
+import calcShareAction from './partials/calcShareAction.js';
+import getProp from './../../../utilities/js/helpers/getProp.js';
 
 
 class ExpenditureChartContainer extends Component {
   constructor(props) {
     super(props);
 
-    this.sources = Object.keys(this.props.items);
     this.state = {
-      selected: '1',
+      selected: 'link',
       open: false,
       modal: false,
-      sourceSelected: this.sources[0],
+      source: 'notAdjusted',
+      type: 'bar',
     };
 
-    this.canvas = null;
-    this.getCanvas = this.getCanvas.bind(this);
-    this.closeModal = this.closeModal.bind(this);
     this.changeAction = this.changeAction.bind(this);
-    this.clickAction = this.clickAction.bind(this);
+    this.shareAction = this.shareAction.bind(this);
     this.closeModal = this.closeModal.bind(this);
-    this.changeSourceAction = this.changeSourceAction.bind(this);
-
+    this.downloadAction = this.downloadAction.bind(this);
+    this.canvasAction = this.canvasAction.bind(this);
+    this.widthAction = this.widthAction.bind(this);
   }
 
-  getCanvas(node) {
-    this.canvas = node;
+
+  shareAction() {
+    calcShareAction(
+      this.state.selected,
+      'programmes-chart',
+      () => this.setState({ modal: true }),
+    );
   }
 
-  changeSourceAction(sourceSelected) {
-    this.setState({ sourceSelected });
+  closeModal() {
+    this.setState({ modal: false });
   }
 
-  changeAction(value) {
-    if (this.state.open) {
-      this.setState({ selected: value });
-      return this.setState({ open: false });
+
+  widthAction(val) {
+    if (val > 600 && this.state.type !== 'line') {
+      return this.setState({ type: 'line' });
     }
 
-    return this.setState({ open: true });
-  }
-
-  clickAction() {
-    if (this.state.selected === 'link') {
-      return this.setState({ modal: true });
+    if (val <= 600 && this.state.type !== 'bar') {
+      return this.setState({ type: 'bar' });
     }
 
+    return null;
+  }
+
+
+  downloadAction() {
     canvg(this.canvas, renderToString(
-      <ColumnChart
-        scale={parseInt(this.state.selected, 10)}
-        downloadable
-        items={this.props.items[this.state.sourceSelected]}
+      <BarChart
+        scale={1.5}
+        downloadable={{
+          heading: this.props.department,
+          subHeading: `${this.props.location} Department Budget for ${this.props.year}`,
+          type: 'Programme budgets',
+        }}
+        items={this.props.items}
         guides
-        width={600}
+        width={900}
       />,
     ));
 
@@ -71,73 +80,111 @@ class ExpenditureChartContainer extends Component {
     return link.click();
   }
 
-  closeModal() {
-    return this.setState({ modal: false });
+
+  canvasAction(node) {
+    this.canvas = node;
   }
+
+
+  changeAction(value) {
+    if (this.state.open) {
+      return this.setState({
+        ...this.state,
+        selected: value,
+        open: false,
+      });
+    }
+
+    return this.setState({ open: true });
+  }
+
 
   render() {
     return (
       <ExpenditureChart
-        downloadSelected={this.state.selected}
-        changeAction={this.changeAction}
-        name="programmes-chart"
+        items={this.props.items[this.state.source]}
+        width={this.state.width}
+        parentAction={this.parentAction}
+        mobile={this.state.mobile}
+        year={this.props.year}
+        files={this.props.files}
+
         open={this.state.open}
-        canvasAction={(node) => { this.canvas = node; }}
-        clickAction={this.clickAction}
-        downloadItems={{
-          'Image (PNG Small)': '1',
-          'Image (PNG Medium)': '2',
-          'Image (PNG Large)': '3',
-          Link: 'link',
-        }}
+        selected={this.state.selected}
+        changeAction={this.changeAction}
+        shareAction={this.shareAction}
         closeModal={this.closeModal}
         modal={this.state.modal}
-        sourceItems={this.props.items[this.state.sourceSelected]}
-        hasNull={this.hasNull}
-        year={this.props.year}
-        sources={this.sources}
-        sourceSelected={this.state.sourceSelected}
-        changeSourceAction={this.changeSourceAction}
+
+        downloadAction={this.downloadAction}
+        canvasAction={this.canvasAction}
+        phaseTable={this.props.phaseTable}
+        widthAction={this.widthAction}
+        type={this.state.type}
       />
     );
   }
 }
 
 
-
 function scripts() {
-  const componentList = document.getElementsByClassName('js-initExpenditureChart');
+  const nodes = document.getElementsByClassName('js-initExpenditureChart');
 
-  for (let i = 0; i < componentList.length; i++) {
-    const component = componentList[i];
+  const normaliseObject = (result, val) => {
+    if (val.amount !== null) {
+      return {
+        ...result,
+        [val.financial_year]: [val.amount],
+      };
+    }
 
-    const real = JSON.parse(decodeHtmlEntities(component.getAttribute('data-real'))).data;
-    const nominal = JSON.parse(decodeHtmlEntities(component.getAttribute('data-nominal'))).data;
+    return null;
+  };
 
-    const normalise = (source) => {
-      return source.reduce(
-        (results, val) => {
-          if (val.amount) {
-            return {
-              ...results,
-              [val.financial_year]: [val.amount],
-            };
-          }
-
-          return results;
-        },
-        {},
-      );
+  const normaliseFormats = (key) => {
+    return (innerResults, val) => {
+      return {
+        ...innerResults,
+        [`${key} (${val.format.replace(/^xls.+/i, 'Excel')})`]: val.url,
+      };
     };
+  };
 
-    const items = {
-      'Adjusted for inflation': normalise(real),
-      'Not adjusted for inflation': normalise(nominal),
+  const normaliseFiles = (rawFiles) => {
+    return (result, key) => {
+      const object = rawFiles[key].formats.reduce(normaliseFormats(key), {});
+
+      return {
+        ...result,
+        ...object,
+      };
     };
+  };
+
+  for (let i = 0; i < nodes.length; i++) {
+    const node = nodes[i];
+
+    const rawAdjusted = getProp('adjusted', node, 'json').data;
+    const rawNotAdjusted = getProp('not-adjusted', node, 'json').data;
+    const year = getProp('year', node);
+    const deptartment = getProp('department', node);
+    const location = getProp('location', node);
+    const rawFiles = getProp('files', node, 'json');
+
+    const removeNulls = val => val.amount !== null;
+    const normalisePhaseTable = val => [val.financial_year, val.phase];
+
+    const adjusted = rawAdjusted.filter(removeNulls).reduce(normaliseObject, {});
+    const notAdjusted = rawNotAdjusted.filter(removeNulls).reduce(normaliseObject, {});
+    const phaseTable = rawAdjusted.filter(removeNulls).map(normalisePhaseTable);
+    const files = Object.keys(rawFiles).reduce(normaliseFiles(rawFiles), {});
+    const items = { adjusted, notAdjusted };
 
     render(
-      <ExpenditureChartContainer {...{ items }} />,
-      component,
+      <ExpenditureChartContainer
+        {...{ items, year, deptartment, location, phaseTable, files }}
+      />,
+      node,
     );
   }
 }

@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import BarChart from './../../universal/BarChart/index.jsx';
+import ResponsiveChart from './../../universal/ResponsiveChart/index.jsx';
 import Download from './../../universal/Download/index.jsx';
 import Pseudoselect from './../../universal/PseudoSelect/index.jsx';
 import shareSelections from './partials/shareSelections.json';
@@ -10,8 +10,6 @@ import Modal from './../../universal/Modal/index.jsx';
 export default function ProgrammesChart(props) {
   const {
     items,
-    width,
-    mobile,
     hasNull,
     year,
     files,
@@ -22,7 +20,6 @@ export default function ProgrammesChart(props) {
   } = props;
 
   const {
-    parentAction,
     changeAction,
     downloadAction,
     shareAction,
@@ -37,17 +34,25 @@ export default function ProgrammesChart(props) {
   );
 
   const withValues = (
-    <BarChart
-      name="programmes-chart"
-      guides={!mobile}
-      hover={!mobile}
-      {...{ width, parentAction, items }}
+    <ResponsiveChart
+      type="bar"
+      {...{ items }}
     />
   );
 
   const downloadButton = (
     <button className="Button is-inline" onClick={downloadAction}>Download chart as image</button>
   );
+
+  const buildDownloadLinks = () => {
+    Object.keys(files).map((key) => {
+      return (
+        <div>
+          <Download title={key} link={files[key]} icon />
+        </div>
+      );
+    });
+  };
 
   return (
     <div className="Section is-bevel" id="programmes-chart">
@@ -74,15 +79,7 @@ export default function ProgrammesChart(props) {
             <p>
               The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year.
             </p>
-            {
-              Object.keys(files).map((key) => {
-                return (
-                  <div>
-                    <Download title={key} link={files[key]} icon />
-                  </div>
-                );
-              })
-            }
+            { files ? buildDownloadLinks : null }
           </div>
           <div className="Section-card is-invisible">
             <div className="u-fontWeightBold u-marginBottom10">Share this chart:</div>

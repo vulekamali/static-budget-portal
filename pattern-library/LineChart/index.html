@@ -1,0 +1,100 @@
+<!doctype>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../assets/base/styles.css">
+    </head>
+    
+    <body style="padding: 20px">
+         <h1>LineChart<span style="font-size:  14px; background: blue; color: white; border-radius: 50px; padding: 5px 15px; position:  relative; bottom: 6px; margin-left: 10px;">state: ✖ unstable</span><span style="font-size:  14px; background: #CCCCCC; color: black; border-radius: 50px; padding: 5px 15px; position:  relative; bottom: 6px; margin-left: 10px;">API: Preact</span><span style="font-size:  14px; background: grey; color: white; border-radius: 50px; padding: 5px 15px; position:  relative; bottom: 6px; margin-left: 10px;">support: untested</span></h1>
+        <h2 id="overview">Overview</h2>
+
+        <p>A chart component that represents data via rectangular bars that are relative
+            to one another. Due to the component being primary built in SVG you need
+            to specify the width manually (since SVG is drawn programmatically, as
+            opposed to HTML which is rendered declaratively). However the <code>BarChart</code> component
+            can be passed to the <code>ChartWidthContainer</code> component to automatically
+            determine and update the width according to the width of it&#39;s parent
+            in HTML.</p>
+        
+<h2 id="examples">Examples</h2>
+
+        
+<h3 id="basic-500px-">Basic (500px)</h3>
+
+        <p><a href="basic.html">View Source</a>
+        </p>
+        <iframe style="resize: horizontal;" width="100%" height="500" src="basic.html"
+        frameborder="0" allowfullscreen></iframe>
+        
+<h3 id="multiple-bars-600px-">Multiple Bars (600px)</h3>
+
+        <p><a href="multiple.html">View Source</a>
+        </p>
+        <iframe style="resize: horizontal;" width="100%" height="500" src="multiple.html"
+        frameborder="0" allowfullscreen></iframe>
+        
+<h3 id="no-guides-or-hover-700px-">No guides or hover (700px)</h3>
+
+        <p><a href="no.html">View Source</a>
+        </p>
+        <iframe style="resize: horizontal;" width="100%" height="470" src="no.html"
+        frameborder="0" allowfullscreen></iframe>
+        
+<h2 id="modifiers">Modifiers</h2>
+
+        
+<h3 id="preact-props">Preact Props</h3>
+
+        <p>* Required props</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Prop</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>items</code>*</td>
+                    <td>An object with the following schema: <strong>{ <code>string</code>: [ <code>int</code>, <code>int</code> ], ... }</strong>.
+                        Each key (string) indicates a label attached to a value or values, while
+                        each value (int) in the array represents a bar in the chart associated
+                        with the label. Note that even if you just have one value you still need
+                        pass it in an array.</td>
+                </tr>
+                <tr>
+                    <td><code>width</code>*</td>
+                    <td>An integer that determines the amount if pixels that the chart will be
+                        wide. In order to have this be calculated automatically based of it&#39;s
+                        parent node in the DOM wrap this component in the <code>ChartWidthContainer</code> component</td>
+                </tr>
+                <tr>
+                    <td><code>hover</code>
+                    </td>
+                    <td>A boolean that indicates whether values will be displayed as tooltips
+                        on hover, or will be permanently displayed alongside the bar. In order
+                        to have this automatically be calculated based of the viewport width wrap
+                        this component in <code>ChartWidthContainer</code> component</td>
+                </tr>
+                <tr>
+                    <td><code>guides</code>
+                    </td>
+                    <td>A boolean that indicates whether guidelines will be shown alongside numbers
+                        on the x-axis. In order to have this automatically be calculated based
+                        of the viewport width wrap this component in <code>ChartWidthContainer</code> component</td>
+                </tr>
+                <tr>
+                    <td><code>parentAction</code>
+                    </td>
+                    <td>...</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src=""></script>
+    </body>
+
+</html>

@@ -1,22 +1,23 @@
 import { h, render } from 'preact';
 import ResponsiveChart from './index.jsx';
-import decodeHtmlEntities from './../../../utilities/js/helpers/decodeHtmlEntities.js';
+import getProps from './../../../utilities/js/helpers/getProp.js';
 
 
 function scripts() {
-  const componentList = document.getElementsByClassName('js-initResponsiveChart');
+  const nodesList = document.getElementsByClassName('js-initResponsiveChart');
 
-  for (let i = 0; i < componentList.length; i++) {
-    const component = componentList[i];
-    const values = JSON.parse(decodeHtmlEntities(component.getAttribute('data-values')));
-    const columns = component.getAttribute('data-columns');
-    const max = component.getAttribute('data-max');
-    const offset = component.getAttribute('data-offset');
-    const name = component.getAttribute('data-name');
+  for (let i = 0; i < nodesList.length; i++) {
+    const node = nodesList[i];
+    const items = getProps('items', node, 'json');
+    const type = getProps('type', node);
+    const rawDownload = getProps('download', node, 'json');
+
+    const downloadHasProps = !!(rawDownload && rawDownload.heading && rawDownload.subHeading && rawDownload.type);
+    const download = downloadHasProps ? rawDownload : null;
 
     render(
-      <ResponsiveChart {...{ name, values, max, offset, columns }} />,
-      component,
+      <ResponsiveChart {...{ items, download, type }} />,
+      node,
     );
   }
 }

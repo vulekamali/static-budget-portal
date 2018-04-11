@@ -28,13 +28,28 @@ layout: page-shell
     %}
 
     <div class="u-marginTop20">
-      {%
-        include components/department-budgets/ProgrammesChart/index.html
-        values=page_data.programmes
-        year=page.financial_year
-        location=department_location
-        department=page_data.name
-      %}
+      <div
+        class="js-initProgrammesChart"
+        data-values="{ &quot;data&quot;: {{ page_data.programmes | jsonify | escape }} }"
+        data-year="{{ page.financial_year }}"
+        data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
+        data-dept="{{ page_data.name }}"
+        data-dept-location="{{ department_location }}"
+      >
+      </div>
+    </div>
+
+    <div class="u-marginTop20">
+      <div
+        class="js-initExpenditureChart"
+        data-adjusted="{ &quot;data&quot;:  {{ page_data.expenditure_over_time.nominal | jsonify | escape }} }"
+        data-not-adjusted="{ &quot;data&quot;: {{ page_data.expenditure_over_time.real | jsonify | escape }} }"
+        data-year="{{ page.financial_year }}"
+        data-location="{{ department_location }}"
+        data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
+        data-department="{{ page_data.name }}"
+      >
+      </div>
     </div>
 
     <div class="u-marginTop20">
