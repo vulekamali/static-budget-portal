@@ -19,6 +19,8 @@ export default function ProgrammesChart(props) {
     open,
     selected,
     modal,
+
+    national
   } = props;
 
   const {
@@ -49,6 +51,11 @@ export default function ProgrammesChart(props) {
     <button className="Button is-inline" onClick={downloadAction}>Download chart as image</button>
   );
 
+  const estimateText = national ?
+    'Estimates of National Expenditure (ENE)' :
+    'Estimates of Provincial Revenue and Expenditure (EPRE)';
+
+
   return (
     <div className="Section is-bevel" id="programmes-chart">
       <canvas ref={node => canvasAction(node)} style={{ display: 'none' }} />
@@ -66,13 +73,13 @@ export default function ProgrammesChart(props) {
           <div className="Section-card is-invisible">
             <div className="Page-subHeading">Programme budgets for {year}</div>
             <p>
-              A department&#x27;s programmes are the activities that it spends money on during the financial year. Different programmes have different expenditure budgets, depending on their requirements and available finances. More detail on the programmes is available in the department's Estimates of National Expenditure (ENE) documents.
+              A department&#x27;s programmes are the activities that it spends money on during the financial year. Different programmes have different expenditure budgets, depending on their requirements and available finances. More detail on the programmes is available in the department's {estimateText} documents.
             </p>
           </div>
           <div className="Section-card is-invisible">
             <div className="u-fontWeightBold">Sources</div>
             <p>
-              The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year.
+              The {estimateText} sets out the detailed spending plans of each government department for the coming year.
             </p>
             {
               Object.keys(files).map((key) => {
