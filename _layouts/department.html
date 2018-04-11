@@ -42,8 +42,8 @@ layout: page-shell
     <div class="u-marginTop20">
       <div
         class="js-initExpenditureChart"
-        data-adjusted="{ &quot;data&quot;:  {{ page_data.expenditure_over_time.nominal | jsonify | escape }} }"
-        data-not-adjusted="{ &quot;data&quot;: {{ page_data.expenditure_over_time.real | jsonify | escape }} }"
+        data-adjusted="{ &quot;data&quot;:  {{ page_data.expenditure_over_time.real | jsonify | escape }} }"
+        data-not-adjusted="{ &quot;data&quot;: {{ page_data.expenditure_over_time.nominal | jsonify | escape }} }"
         data-year="{{ page.financial_year }}"
         data-location="{{ department_location }}"
         data-files="{{ page_data.treasury_datasets | jsonify | escape }}"

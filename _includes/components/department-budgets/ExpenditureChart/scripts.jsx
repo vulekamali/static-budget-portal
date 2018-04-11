@@ -55,15 +55,17 @@ class ExpenditureChartContainer extends Component {
 
 
   downloadAction() {
+    const shown = this.state.source === 'adjusted' ? 'adjusted for inflation' : 'not adjusted for inflation';
+
     canvg(this.canvas, renderToString(
       <BarChart
         scale={1.5}
-        downloadable={{
+        download={{
           heading: this.props.department,
           subHeading: `${this.props.location} Department Budget for ${this.props.year}`,
-          type: 'Programme budgets',
+          type: `Expenditure changes over time (${shown})`,
         }}
-        items={this.props.items}
+        items={this.props.items[this.state.source]}
         guides
         width={900}
       />,
@@ -79,7 +81,6 @@ class ExpenditureChartContainer extends Component {
     link.href = this.canvas.toDataURL();
     return link.click();
   }
-
 
   canvasAction(node) {
     this.canvas = node;
@@ -167,7 +168,7 @@ function scripts() {
     const rawAdjusted = getProp('adjusted', node, 'json').data;
     const rawNotAdjusted = getProp('not-adjusted', node, 'json').data;
     const year = getProp('year', node);
-    const deptartment = getProp('department', node);
+    const department = getProp('department', node);
     const location = getProp('location', node);
     const rawFiles = getProp('files', node, 'json');
 
@@ -182,7 +183,7 @@ function scripts() {
 
     render(
       <ExpenditureChartContainer
-        {...{ items, year, deptartment, location, phaseTable, files }}
+        {...{ items, year, department, location, phaseTable, files }}
       />,
       node,
     );

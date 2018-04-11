@@ -107,6 +107,9 @@ export default function ExpenditureChart(props) {
           <div className="Section-card">
             <ResponsiveChart {...{ items, widthAction, type }} />
           </div>
+          <div className="Section-card is-invisible u-textAlignCenter">
+            <button className="Button is-inline" onClick={downloadAction}>Download chart as image</button>
+          </div>
         </div>
       </div>
     </div>

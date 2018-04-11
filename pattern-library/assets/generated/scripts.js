@@ -2453,7 +2453,11 @@ var ResponsiveChart = function (_Component) {
   _createClass(ResponsiveChart, [{
     key: 'componentDidUpdate',
     value: function componentDidUpdate() {
-      this.props.widthAction(this.state.width);
+      if (this.props.widthAction) {
+        return this.props.widthAction(this.state.width);
+      }
+
+      return null;
     }
   }, {
     key: 'parentAction',
@@ -19613,7 +19617,7 @@ var ProgrammesChartContainer = function (_Component) {
     key: 'render',
     value: function render() {
       return (0, _preact.h)(_index4.default, {
-        items: { hello: [10], goodbye: [20] },
+        items: this.props.items,
         width: this.state.width,
         parentAction: this.parentAction,
         mobile: this.state.mobile,
@@ -21494,14 +21498,16 @@ var ExpenditureChartContainer = function (_Component) {
   }, {
     key: 'downloadAction',
     value: function downloadAction() {
+      var shown = this.state.source === 'adjusted' ? 'adjusted for inflation' : 'not adjusted for inflation';
+
       (0, _canvgBrowser2.default)(this.canvas, (0, _preactRenderToString2.default)((0, _preact.h)(_index4.default, {
         scale: 1.5,
-        downloadable: {
+        download: {
           heading: this.props.department,
           subHeading: this.props.location + ' Department Budget for ' + this.props.year,
-          type: 'Programme budgets'
+          type: 'Expenditure changes over time (' + shown + ')'
         },
-        items: this.props.items,
+        items: this.props.items[this.state.source],
         guides: true,
         width: 900
       })));
@@ -21594,7 +21600,7 @@ function scripts() {
     var rawAdjusted = (0, _getProp2.default)('adjusted', node, 'json').data;
     var rawNotAdjusted = (0, _getProp2.default)('not-adjusted', node, 'json').data;
     var year = (0, _getProp2.default)('year', node);
-    var deptartment = (0, _getProp2.default)('department', node);
+    var department = (0, _getProp2.default)('department', node);
     var location = (0, _getProp2.default)('location', node);
     var rawFiles = (0, _getProp2.default)('files', node, 'json');
 
@@ -21611,7 +21617,7 @@ function scripts() {
     var files = Object.keys(rawFiles).reduce(normaliseFiles(rawFiles), {});
     var items = { adjusted: adjusted, notAdjusted: notAdjusted };
 
-    (0, _preact.render)((0, _preact.h)(ExpenditureChartContainer, { items: items, year: year, deptartment: deptartment, location: location, phaseTable: phaseTable, files: files }), node);
+    (0, _preact.render)((0, _preact.h)(ExpenditureChartContainer, { items: items, year: year, department: department, location: location, phaseTable: phaseTable, files: files }), node);
   }
 }
 
@@ -21819,6 +21825,15 @@ function ExpenditureChart(props) {
           'div',
           { className: 'Section-card' },
           (0, _preact.h)(_index2.default, { items: items, widthAction: widthAction, type: type })
+        ),
+        (0, _preact.h)(
+          'div',
+          { className: 'Section-card is-invisible u-textAlignCenter' },
+          (0, _preact.h)(
+            'button',
+            { className: 'Button is-inline', onClick: downloadAction },
+            'Download chart as image'
+          )
         )
       )
     )
