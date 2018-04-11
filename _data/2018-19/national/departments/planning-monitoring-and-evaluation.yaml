@@ -1,4 +1,50 @@
 contributed_datasets: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 740550000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 748777000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 781246000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 898496000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 927351000.0
+    financial_year: 2018-19
+    phase: Original Budget
+  - amount: 972200000.0
+    financial_year: 2019-20
+    phase: MTEF
+  - amount: 1032300000.0
+    financial_year: 2020-21
+    phase: MTEF
+  real:
+  - amount: 868304221
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 834816223
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 819431738
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 898496000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 879075560
+    financial_year: 2018-19
+    phase: Original Budget
+  - amount: 875277159
+    financial_year: 2019-20
+    phase: MTEF
+  - amount: 880593794
+    financial_year: 2020-21
+    phase: MTEF
 financial_years:
 - closest_match:
     is_exact_match: true
