@@ -1,9 +1,10 @@
 ---
 title: Section
+category: Universal Components
 state:
   text: ✔ stable
   color: white
-  background: blue
+  background: green
 API:
   text: HTML
   color: black

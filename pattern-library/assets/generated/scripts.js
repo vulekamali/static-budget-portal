@@ -12880,7 +12880,7 @@ var GlossaryContainer = function (_Component) {
       if (phrase.length > 2) {
         var options = {
           shouldSort: true,
-          threshold: 0.3,
+          threshold: 0.2,
           location: 0,
           distance: 100,
           maxPatternLength: 32,
@@ -17200,7 +17200,8 @@ var ProgrammesChartContainer = function (_Component) {
         modal: this.state.modal,
 
         downloadAction: this.downloadAction,
-        canvasAction: this.canvasAction
+        canvasAction: this.canvasAction,
+        national: this.props.deptLocation === 'National'
       });
     }
   }]);
@@ -17232,7 +17233,7 @@ function scripts() {
       return _extends({}, results, object);
     }, {});
 
-    (0, _preact.render)((0, _preact.h)(ProgrammesChartContainer, { items: items, year: year, files: files, dept: dept, deptLocation: deptLocation }), node);
+    (0, _preact.render)((0, _preact.h)(ProgrammesChartContainer, { items: items, year: year, files: files, location: location }), node);
   };
 
   for (var i = 0; i < nodes.length; i++) {
@@ -18758,7 +18759,8 @@ function ProgrammesChart(props) {
       files = props.files,
       open = props.open,
       selected = props.selected,
-      modal = props.modal;
+      modal = props.modal,
+      location = props.location;
   var changeAction = props.changeAction,
       downloadAction = props.downloadAction,
       shareAction = props.shareAction,
@@ -18798,6 +18800,8 @@ function ProgrammesChart(props) {
     });
   };
 
+  var estimateText = location === 'National' ? 'Estimates of National Expenditure (ENE)' : 'Estimates of Provincial Revenue and Expenditure (EPRE)';
+
   return (0, _preact.h)(
     'div',
     { className: 'Section is-bevel', id: 'programmes-chart' },
@@ -18835,7 +18839,9 @@ function ProgrammesChart(props) {
           (0, _preact.h)(
             'p',
             null,
-            'A department\'s programmes are the activities that it spends money on during the financial year. Different programmes have different expenditure budgets, depending on their requirements and available finances. More detail on the programmes is available in the department\'s Estimates of National Expenditure (ENE) documents.'
+            'A department\'s programmes are the activities that it spends money on during the financial year. Different programmes have different expenditure budgets, depending on their requirements and available finances. More detail on the programmes is available in the department\'s ',
+            estimateText,
+            ' documents.'
           )
         ),
         (0, _preact.h)(
@@ -18849,7 +18855,9 @@ function ProgrammesChart(props) {
           (0, _preact.h)(
             'p',
             null,
-            'The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year.'
+            'The ',
+            estimateText,
+            ' sets out the detailed spending plans of each government department for the coming year.'
           ),
           files ? buildDownloadLinks : null
         ),
@@ -18932,23 +18940,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Markup(props) {
   var width = props.width,
       type = props.type,
-      items = props.items;
+      items = props.items,
+      guides = props.guides,
+      hover = props.hover;
   var parentAction = props.parentAction;
 
 
   if (type === 'bar') {
     return (0, _preact.h)(_index2.default, _extends({
-      guides: true,
-      hover: true,
       scale: 1
-    }, { parentAction: parentAction, items: items, width: width }));
+    }, { parentAction: parentAction, items: items, width: width, guides: guides, hover: hover }));
   }
 
   if (type === 'line') {
-    return (0, _preact.h)(_index4.default, _extends({
-      guides: true,
-      hover: true
-    }, { parentAction: parentAction, width: width, items: items }));
+    return (0, _preact.h)(_index4.default, { parentAction: parentAction, width: width, items: items, guides: guides, hover: hover });
   }
 }
 
@@ -20926,6 +20931,7 @@ var ExpenditureChartContainer = function (_Component) {
         closeModal: this.closeModal,
         modal: this.state.modal,
         source: this.state.source,
+        location: this.props.location,
 
         downloadAction: this.downloadAction,
         canvasAction: this.canvasAction,
@@ -21052,7 +21058,8 @@ function ExpenditureChart(props) {
       cpi = props.cpi,
       open = props.open,
       selected = props.selected,
-      modal = props.modal;
+      modal = props.modal,
+      location = props.location;
   var changeAction = props.changeAction,
       downloadAction = props.downloadAction,
       shareAction = props.shareAction,
@@ -21061,6 +21068,8 @@ function ExpenditureChart(props) {
       widthAction = props.widthAction,
       changeSource = props.changeSource;
 
+
+  var estimateText = location === 'National' ? 'Estimates of National Expenditure (ENE)' : 'Estimates of Provincial Revenue and Expenditure (EPRE)';
 
   return (0, _preact.h)(
     'div',
@@ -21160,7 +21169,9 @@ function ExpenditureChart(props) {
           (0, _preact.h)(
             'p',
             null,
-            'The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year. These documents use amounts not adjusted for inflation unless stated otherwise.'
+            'The ',
+            estimateText,
+            ' sets out the detailed spending plans of each government department for the coming year. These documents use amounts not adjusted for inflation unless stated otherwise.'
           ),
           Object.keys(files).map(function (key) {
             return (0, _preact.h)(

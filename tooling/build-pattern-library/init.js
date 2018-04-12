@@ -921,30 +921,66 @@ function createComponentFiles(data) {
 }
 
 function createRootIndex(data) {
-  const markup = Object.keys(data).map((title) => {
-    if (data[title].content.attributes.title) {
-      const buildLabel = () => {
-        let labelsCode = '';
-
-        const labelsKeys = data[title].content.attributes ? Object.keys(data[title].content.attributes).filter(key => key !== 'title') : [];
-
-        if (labelsKeys.length > 0) {
-          labelsCode = labelsKeys.map((key) => {
-            const val = data[title].content.attributes[key];
-            return `<span style="font-size: 11px; background: ${val.background}; color: ${val.color}; border-radius: 50px; padding: 5px 20px; font-family: verdana, position: relative; bottom: 2px; margin-left: 10px;">${val.text}</span>`;
-          }).join('');
-        }
-
-        return labelsCode;
+  const returnLabel = (results, title) => {
+    if (data[title].content.attributes && data[title].content.attributes.category) {
+      return {
+        ...results,
+        [data[title].content.attributes.category]: [
+          ...(results[data[title].content.attributes.category] || []),
+          title,
+        ],
       };
+    }
 
-      return `<li><a style="font-size: 18px" href="${data[title].content.attributes.title}/index.html">${data[title].content.attributes.title}</a>${buildLabel()}</li>`;
+    return {
+      ...results,
+      none: [
+        ...(results.none || []),
+        title,
+      ],
+    };
+  };
+
+  const totalLabels = Object.keys(data).reduce(returnLabel, {});
+  const categories = Object.keys(totalLabels);
+
+  const wrapInList = (content) => {
+    return `<ul>${content}</ul>`;
+  };
+
+  const buildLabel = (title) => {
+    let labelsCode = '';
+
+    const labelsKeys = data[title].content.attributes ? Object.keys(data[title].content.attributes).filter(key => key !== 'title' && key !== 'category') : [];
+
+    if (labelsKeys.length > 0) {
+      labelsCode = labelsKeys.map((key) => {
+        const val = data[title].content.attributes[key];
+        return `<span style="font-size: 11px; background: ${val.background}; color: ${val.color}; border-radius: 50px; padding: 5px 20px; display: inline-block; font-family: verdana, position: relative; bottom: 2px; margin-left: 10px;">${val.text}</span>`;
+      }).join('');
+    }
+
+    return labelsCode;
+  };
+
+  const createListItem = (title) => {
+    if (data[title].content.attributes.title) {
+      return `<li><a style="font-size: 18px" href="${data[title].content.attributes.title}/index.html">${data[title].content.attributes.title}</a>${buildLabel(title)}</li>`;
     }
 
     return '';
-  }).join('');
+  };
 
+  const createHeading = (heading) => {
+    const itemsArray = totalLabels[heading];
 
+    return `${heading === 'none' ? '' : '<li>'}
+      ${heading === 'none' ? '' : '<h3>' + heading + '</h3>'}
+      <ul>${itemsArray.map(createListItem).join('')}</ul>
+      ${heading === 'none' ? '' : '</li>'}`;
+  };
+
+  const markup = wrapInList(categories.map(createHeading).join(''));
   return createHtml(`${config.destination}/index.html`, markup, 'index');
 }
 

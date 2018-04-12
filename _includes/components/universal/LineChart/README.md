@@ -1,9 +1,10 @@
 ---
 title: LineChart
+category: Universal Components
 state:
   text: ✖ unstable
   color: white
-  background: blue
+  background: red
 API:
   text: Preact
   color: black

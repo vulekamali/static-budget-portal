@@ -1,9 +1,10 @@
 ---
 title: ProgrammesChart
+category: Department Budget Page Components
 state:
   text: ✖ unstable
   color: white
-  background: blue
+  background: red
 API:
   text: HTML
   color: black

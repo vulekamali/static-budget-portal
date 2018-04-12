@@ -3528,7 +3528,8 @@ li {
 
 .ExpenditureChart-heading {
   padding: 5px 10px;
-  border: 1px solid #3f3f3f; }
+  border: 1px solid #3f3f3f;
+  text-align: left; }
 
 .ExpenditureChart-cell {
   padding: 5px 10px;
@@ -3540,10 +3541,12 @@ li {
   font-size: 11px; }
 
 .ExpenditureChart-radio {
-  display: block; }
+  display: block;
+  padding: 10px 0; }
   @media screen and (min-width: 500px) {
     .ExpenditureChart-radio {
-      display: inline-block; } }
+      display: inline-block;
+      padding: 0; } }
 
 .CsoDirectory::after {
   clear: both;
