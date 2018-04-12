@@ -14,18 +14,18 @@ import dec from './dec.html';
 
 export default function returnHtml(key) {
   switch (key) {
-    case 'Jan': return jan;
-    case 'Feb': return feb;
-    case 'Mar': return mar;
-    case 'Apr': return apr;
+    case 'January': return jan;
+    case 'February': return feb;
+    case 'March': return mar;
+    case 'April': return apr;
     case 'May': return may;
-    case 'Jun': return jun;
-    case 'Jul': return jul;
-    case 'Aug': return aug;
-    case 'Sep': return sep;
-    case 'Oct': return oct;
-    case 'Nov': return nov;
-    case 'Dec': return dec;
+    case 'June': return jun;
+    case 'July': return jul;
+    case 'August': return aug;
+    case 'September': return sep;
+    case 'October': return oct;
+    case 'November': return nov;
+    case 'December': return dec;
     default: return '';
   }
 }

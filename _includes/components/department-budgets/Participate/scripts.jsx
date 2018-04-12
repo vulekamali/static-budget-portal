@@ -8,18 +8,18 @@ class ParticipateContainer extends Component {
     super(props);
 
     this.months = {
-      Jan: 'Jan',
-      Feb: 'Feb',
-      Mar: 'Mar',
-      Apr: 'Apr',
+      January: 'January',
+      February: 'February',
+      March: 'March',
+      April: 'April',
       May: 'May',
-      Jun: 'Jun',
-      Jul: 'Jul',
-      Aug: 'Aug',
-      Sep: 'Sep',
-      Oct: 'Oct',
-      Nov: 'Nov',
-      Dec: 'Dec',
+      June: 'June',
+      July: 'July',
+      August: 'August',
+      September: 'September',
+      October: 'October',
+      November: 'November',
+      December: 'December',
     };
 
     this.state = {
