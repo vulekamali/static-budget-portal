@@ -86,7 +86,7 @@ export default function ProgrammesChart(props) {
             <div className="ProgrammesChart-share">
               <div className="ProgrammesChart-shareDropdown">
                 <Pseudoselect
-                  name={`${name}-share-selection`}
+                  name="programmes-chart-share-selection"
                   items={shareSelections}
                   {...{ open, selected, changeAction }}
                 />

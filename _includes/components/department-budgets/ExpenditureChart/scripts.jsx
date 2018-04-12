@@ -15,7 +15,7 @@ class ExpenditureChartContainer extends Component {
       selected: 'link',
       open: false,
       modal: false,
-      source: 'notAdjusted',
+      source: 'adjusted',
       type: 'bar',
     };
 
@@ -25,6 +25,7 @@ class ExpenditureChartContainer extends Component {
     this.downloadAction = this.downloadAction.bind(this);
     this.canvasAction = this.canvasAction.bind(this);
     this.widthAction = this.widthAction.bind(this);
+    this.changeSource = this.changeSource.bind(this);
   }
 
 
@@ -99,6 +100,10 @@ class ExpenditureChartContainer extends Component {
     return this.setState({ open: true });
   }
 
+  changeSource(value) {
+    return this.setState({ source: value });
+  }
+
 
   render() {
     return (
@@ -116,12 +121,15 @@ class ExpenditureChartContainer extends Component {
         shareAction={this.shareAction}
         closeModal={this.closeModal}
         modal={this.state.modal}
+        source={this.state.source}
 
         downloadAction={this.downloadAction}
         canvasAction={this.canvasAction}
         phaseTable={this.props.phaseTable}
         widthAction={this.widthAction}
         type={this.state.type}
+        sourceOpen={this.state.sourceOpen}
+        changeSource={this.changeSource}
       />
     );
   }

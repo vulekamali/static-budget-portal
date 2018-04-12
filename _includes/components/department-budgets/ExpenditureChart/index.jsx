@@ -15,6 +15,8 @@ export default function ExpenditureChart(props) {
     files,
     phaseTable,
     type,
+    source,
+    sourceOpen,
 
     open,
     selected,
@@ -28,6 +30,7 @@ export default function ExpenditureChart(props) {
     closeModal,
     canvasAction,
     widthAction,
+    changeSource
   } = props;
 
 
@@ -90,7 +93,7 @@ export default function ExpenditureChart(props) {
             <div className="ProgrammesChart-share">
               <div className="ProgrammesChart-shareDropdown">
                 <Pseudoselect
-                  name={`${name}-share-selection`}
+                  name="expenditure-chart-share-selection"
                   items={shareSelections}
                   {...{ open, selected, changeAction }}
                 />
@@ -106,6 +109,30 @@ export default function ExpenditureChart(props) {
         <div className="ProgrammesChart-chart">
           <div className="Section-card">
             <ResponsiveChart {...{ items, widthAction, type }} />
+            <div className="u-textAlignCenter">
+              <label htmlFor="expenditure-select-adjusted" className="u-marginRight20">
+                <input
+                  type="radio"
+                  id="expenditure-select-adjusted"
+                  name="expenditure-select"
+                  value="adjusted"
+                  checked={source === 'adjusted'}
+                  onChange={event => changeSource(event.target.value)}
+                />
+                <span className="u-displayInlineBlock u-marginLeft10">Adjusted for Inflation</span>
+              </label>
+              <label htmlFor="expenditure-select-not-adjusted">
+                <input
+                  type="radio"
+                  id="expenditure-select-not-adjusted"
+                  name="expenditure-select"
+                  value="notAdjusted"
+                  checked={source === 'notAdjusted'}
+                  onChange={event => changeSource(event.target.value)}
+                />
+                <span className="u-displayInlineBlock u-marginLeft10">Not adjusted for inflation</span>
+              </label>
+            </div>
           </div>
           <div className="Section-card is-invisible u-textAlignCenter">
             <button className="Button is-inline" onClick={downloadAction}>Download chart as image</button>
