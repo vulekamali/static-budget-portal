@@ -2,13 +2,12 @@ import { h } from 'preact';
 import trimValues from './../../../../utilities/js/helpers/trimValues.js';
 
 
-export default function TooltipItem({ styling, xTriggerPosition, xPosition, yPosition, amount, totalGroupSpace }) {
+export default function TooltipItem({ styling, xTriggerPosition, xPosition, yPosition, amount, colour, totalGroupSpace }) {
 
   const { barWidth, popUpOffset, buffer, valueSpace, lineGutter, padding, popupWidth, popupHeight, popupFontSize, units, popupCentre } = styling;
 
-
   return (
-    <g className="Graph-tooltip">
+    <g className="BarChart-tooltip">
 
       {/* <rect
         x={xPosition}
@@ -38,7 +37,7 @@ export default function TooltipItem({ styling, xTriggerPosition, xPosition, yPos
       />
 
       <polygon
-        className="Graph-triangle"
+        className="BarChart-triangle"
         points={`
           ${xPosition + popUpOffset},
           ${yPosition}
@@ -55,25 +54,25 @@ export default function TooltipItem({ styling, xTriggerPosition, xPosition, yPos
           ${xPosition + 6 + popUpOffset},
           ${yPosition + 6}
         `}
-        fill="#79b43c"
+        fill={colour}
       />
 
       <rect
         rx="10"
         ry="10"
-        className="Graph-tooltipBase"
+        className="BarChart-tooltipBase"
         x={xPosition + 6 + popUpOffset}
         y={yPosition - ((popupHeight) / 2)}
         width={popupWidth}
         height={popupHeight}
-        fill="#79b43c"
+        fill={colour}
       />
 
       <text
         x={xPosition + (popupWidth / 2) + popUpOffset + (barWidth / 2)}
         y={yPosition + popupCentre}
         font-size={popupFontSize}
-        className="Graph-tooltipText"
+        className="BarChart-tooltipText"
         font-family="sans-serif"
         text-anchor="middle"
         fill="white"

@@ -1,5 +1,5 @@
 import { h, render, Component } from 'preact';
-import SearchResults from './index.jsx';
+import SearchResult from './index.jsx';
 import { apiBaseURL } from '../../../utilities/config/global.json';
 import removePunctuation from '../../../utilities/js/helpers/removePunctuation.js';
 
@@ -80,17 +80,29 @@ class SearchResultContainer extends Component {
 
   render() {
     return (
-      <SearchResult results={this.state.results} search={this.props.search} selectedYear={this.props.selectedYear} updateFilter={this.updateFilter} shown={this.state.shown} changeShown={this.changeShown} page={this.state.page} province={this.state.province} state={this.state} updateItem={this.updateItem} error={this.state.error} loading={this.state.loading} />
+      <SearchResult
+        results={this.state.results}
+        search={this.props.search}
+        selectedYear={this.props.selectedYear}
+        updateFilter={this.updateFilter}
+        shown={this.state.shown}
+        changeShown={this.changeShown}
+        page={this.state.page}
+        province={this.state.province} 
+        state={this.state}
+        updateItem={this.updateItem}
+        error={this.state.error}
+        loading={this.state.loading}
+      />
     );
   }
 }
 
 
-
 function scripts() {
   const nodes = document.getElementsByClassName('js-initSearchResult');
   const nodesArray = [...nodes];
-  const { search } = window.budgetPortal.stringQueries;
+  const { search } = window.vulekamali.qs;
 
   if (nodesArray.length > 0) {
     nodesArray.forEach((node) => {

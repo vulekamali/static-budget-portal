@@ -2,6 +2,12 @@ import { h } from 'preact';
 import TooltipItem from './TooltipItem.jsx';
 import breakIntoWrap from './breakIntoWrap.js';
 
+const colours = [
+  '#79b43c',
+  '#4a4a4a',
+  '#ad3c64',
+];
+
 export default function TooltipGroup({ totalGroupSpace, items, groupSpaceArray, rank, lines, title, styling }) {
   const {
     barWidth,
@@ -68,6 +74,7 @@ export default function TooltipGroup({ totalGroupSpace, items, groupSpaceArray, 
               xPosition={(padding[3] + buffer + displayAmount) - (barWidth / 2)}
               yPosition={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * charArray.length)}
               {...{ amount, totalGroupSpace }}
+              colour={colours[index]}
             />
           );
         })

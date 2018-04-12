@@ -9,7 +9,7 @@ import LineGroups from './partials/LineGroups.jsx';
 import Tooltips from './partials/Tooltips.jsx';
 import Labels from './partials/Labels.jsx';
 
-export default function ColumnChart({ items, width, guides, scale = 1, downloadable }) {
+export default function ColumnChart({ items, width, guides, scale = 1, downloadable, parentAction }) {
   let styling = {
     fontSize: 14,
     popupFontSize: 14,
@@ -17,7 +17,7 @@ export default function ColumnChart({ items, width, guides, scale = 1, downloada
     popupWidth: 90,
     popUpOffset: 6,
     buffer: 20,
-    valueSpace: width - (0 + 80),
+    valueSpace: width - (0 + 100),
     padding: [50, 0, 30, 100],
     popupHeight: 30,
     popupCentre: 5,
@@ -56,10 +56,10 @@ export default function ColumnChart({ items, width, guides, scale = 1, downloada
     />
   );
 
-  return (
+  const values = (
     <svg
       version="1.1"
-      className="Graph-svg is-hoverable"
+      className="ColumnChart-svg is-hoverable"
       xmlns="http://www.w3.org/2000/svg"
       viewBox={`0 0 ${newWidth} ${height}`}
       width={newWidth * scale}
@@ -77,4 +77,17 @@ export default function ColumnChart({ items, width, guides, scale = 1, downloada
       <Labels {...{ totalGroupSpace, groupSpaceArray, items, styling }} /> */}
     </svg>
   );
+
+  if (!downloadable) {
+    return (
+      <div
+        className="ColumnChart"
+        ref={node => parentAction(node)}
+      >
+        {values}
+      </div>
+    );
+  }
+
+  return values;
 }

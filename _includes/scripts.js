@@ -4,8 +4,8 @@ import 'preact/devtools';
 
 import './styles.scss';
 
-import './utilities/js/modules/createComponentInterfaces.js';
 import './utilities/js/modules/loadStringQueries.js';
+import './utilities/js/modules/createComponentInterfaces.js';
 import './utilities/js/modules/loadGoogleAnalytics.js';
 import './utilities/js/modules/polyfillOldFeatures.js';
 
@@ -33,5 +33,6 @@ import './components/department-budgets/ExpenditureChart/scripts.jsx';
 import './components/department-budgets/ColumnChart/scripts.jsx';
 import './components/department-budgets/DeptSearch/scripts.jsx';
 import './components/department-budgets/Participate/scripts.jsx';
+import './components/department-budgets/IntroSection/scripts.jsx';
 
 import './components/about/Video/scripts.jsx';

@@ -27,6 +27,7 @@ export default function HorisontalBreakpoint({ styling, totalGroupSpace, rank })
         font-size={fontSize}
         font-family="sans-serif"
         font-weight="bold"
+        text-anchor="middle"
       >
         R{trimValues(iterationValue * rank)}
       </text>

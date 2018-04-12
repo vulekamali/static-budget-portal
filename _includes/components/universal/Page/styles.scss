@@ -1,18 +1,13 @@
 .Page {
-  display: table;
   width: 100%;
   min-height: 100%;
+
+  @media ($tablet-breakpoint) {
+    display: table;
+  }
 }
 
 .Page-head {
-  position: fixed;
-  width: 100%;
-  z-index: z-index(Page-header);
-  box-shadow:
-    0 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 0 2px 2px rgba(0, 0, 0, 0.098),
-    0 0 5px 1px rgba(0, 0, 0, 0.084);
-
   @media ($tablet-breakpoint) {
     position: static;
     box-shadow: none;
@@ -22,22 +17,23 @@
 }
 
 .Page-footer {
-  height: 1%;
-  display: table-row;
+  @media ($tablet-breakpoint) {
+    height: 1%;
+    display: table-row;
+  }
 }
 
 .Page-contentWrap {
-  height: 98%;
-  display: table-row;
   background-color: $colour-shading-background;
+
+  @media ($tablet-breakpoint) {
+    height: 98%;
+    display: table-row;
+  }
 }
 
 .Page-content {
-  padding-top: 70px;
-
-  &--dynamicYears {
-    padding-top: 115px;
-  }
+  padding-top: 30px;
 
   @media ($tablet-breakpoint) {
     padding-top: 0;
@@ -49,6 +45,10 @@
   margin: 0 auto;
   padding: 0 5px 100px;
   @include clearfix;
+
+  &--full {
+    max-width: 1800px;
+  }
 
   @media ($mobile-breakpoint) {
     padding: 0 15px 100px;
@@ -69,11 +69,13 @@
   }
 }
 
+.Page-title,
 .Page-mainHeading {
   font-weight: bold;
   font-size: $font-size-large;
   line-height: 1.29;
   margin: 25px 20px 10px;
+  display: block;
 
   @media ($mobile-breakpoint) {
     margin: 35px 30px 20px;
@@ -89,124 +91,9 @@
   font-size: $font-size-medium;
   font-weight: bold;
   font-weight: 900;
-}
-
-.Page-grid {
-  @include clearfix;
-}
-
-.Page-gridItem {
-  @media screen and ($standard-breakpoint) {
-    float: left;
-
-    &--half {
-      width: 50%;
-
-      &:nth-of-type(2n) {
-        padding-left: 15px;
-
-        .Page-sectionWrap & {
-          padding-left: 5px;
-        }
-      }
-
-      &:nth-of-type(2n + 1) {
-        padding-right: 15px;
-
-        .Page-sectionWrap & {
-          padding-right: 5px;
-        }
-      }
-    }
-  }
-}
-
-.Page-sectionWrap {
-  text-align: left;
-  font-size: 14px;
-  padding: 10px;
   display: block;
-  color: $colour-shading-dark;
-  text-decoration: none;
-  width: 100%;
-
-  &--card {
-    background-color: white;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    margin-bottom: 30px;
-    border: 1px solid $colour-shading-border;
-  }
-
-  &--dark {
-    background-color: $colour-shading-light;
-
-    &.Page-sectionWrap--link:hover {
-      background-color: darken($colour-shading-light, 15%);
-    }
-  }
-
-  &--green {
-    background-color: $colour-brand-green;
-
-    &.Page-sectionWrap--link:hover {
-      background-color: darken($colour-brand-green, 15%);
-    }
-  }
 }
 
-.Page-section {
-  padding: 10px 10px 15px;
-
-  @media ($mobile-breakpoint) {
-    padding: 15px 20px 20px;
-  }
-
-  @media ($tablet-breakpoint) {
-    padding: 15px 30px 20px;
-  }
-
-  &--card {
-    padding: 20px 10px 25px;
-    background: white;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
-    border: 1px solid $colour-shading-border;
-
-    @media ($mobile-breakpoint) {
-      padding: 25px 20px 35px;
-    }
-
-    @media ($tablet-breakpoint) {
-      padding: 25px 30px 35px;
-    }
-
-    .Page-sectionWrap--link:hover & {
-      background-color: darken(white, 15%);
-      border: 1px solid darken(#d2d2d2, 15%);
-    }
-  }
-
-  &--dark {
-    background-color: #7d7d7d;
-    color: white;
-  }
-
-  & + &--card {
-    margin-top: 10px;
-  }
-
-  & p {
-    line-height: 1.45;
-  }
-
-  &--forceStyling {
-    & h2 {
-      @extend .Page-subHeading;
-    }
-  }
-}
 
 .Page-main {
   @media ($standard-breakpoint) {

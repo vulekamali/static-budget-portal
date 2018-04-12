@@ -3,48 +3,17 @@ import PseudoSelect from './../../../universal/PseudoSelect/index.jsx';
 
 
 export default function Form({ state, updateFilter }) {
-  const items = [
-    {
-      title: 'All Provinces',
-      value: 'all',
-    },
-    {
-      title: 'Eastern Cape',
-      value: 'eastern-cape',
-    },
-    {
-      title: 'Free State',
-      value: 'free-state',
-    },
-    {
-      title: 'Gauteng',
-      value: 'gauteng',
-    },
-    {
-      title: 'KwaZulu-Natal',
-      value: 'kwazulu-natal',
-    },
-    {
-      title: 'Limpopo',
-      value: 'limpopo',
-    },
-    {
-      title: 'Mpumalanga',
-      value: 'mpumalanga',
-    },
-    {
-      title: 'North West',
-      value: 'north-west',
-    },
-    {
-      title: 'Northern Cape',
-      value: 'northern-cape',
-    },
-    {
-      title: 'Western Cape',
-      value: 'western-cape',
-    },
-  ];
+  const items = {
+    'All Provinces': 'all',
+    'Free State': 'free-State',
+    Gauteng: 'gauteng',
+    'KwaZulu-Natal': 'kwazulu-natal',
+    Limpopo: 'limpopo',
+    Mpumalanga: 'mpumalanga',
+    'North West': 'north-west',
+    'Northern Cape': 'northern-cape',
+    'Western Cape': 'western-cape',
+  };
 
   return (
     <div className="SearchResult-form">
@@ -52,7 +21,7 @@ export default function Form({ state, updateFilter }) {
         <PseudoSelect
           name="province"
           items={items}
-          property={state.province}
+          selected={state.province}
           open={state.open === 'province'}
           changeAction={value => updateFilter('province', value)}
         />

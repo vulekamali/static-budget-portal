@@ -1,105 +1,123 @@
-import renderToString from 'preact-render-to-string';
-import canvg from 'canvg-browser';
-import { h, Component } from 'preact';
-import Markup from './partials/Markup.jsx';
+import { h } from 'preact';
 import BarChart from './../../universal/BarChart/index.jsx';
+import Download from './../../universal/Download/index.jsx';
+import Pseudoselect from './../../universal/PseudoSelect/index.jsx';
+import shareSelections from './partials/shareSelections.json';
+import Icon from './../../universal/Icon/index.jsx';
+import Modal from './../../universal/Modal/index.jsx';
 
 
-export default class ChartDownloadBasicTest extends Component {
-  constructor(props) {
-    super(props);
+export default function ProgrammesChart(props) {
+  const {
+    items,
+    width,
+    mobile,
+    hasNull,
+    year,
+    files,
 
-    this.state = {
-      selected: '1',
-      open: false,
-      modal: false,
-    };
+    open,
+    selected,
+    modal,
 
-    this.canvas = null;
-    this.getCanvas = this.getCanvas.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-    this.changeAction = this.changeAction.bind(this);
-    this.clickAction = this.clickAction.bind(this);
-    this.closeModal = this.closeModal.bind(this);
+    national
+  } = props;
 
-    this.hasNull = Object.keys(this.props.items).reduce(
-      (result, key) => {
+  const {
+    parentAction,
+    changeAction,
+    downloadAction,
+    shareAction,
+    closeModal,
+    canvasAction,
+  } = props;
 
-        if (this.props.items[key][0] === null) {
-          return true;
-        }
+  const noValues = (
+    <ul className="u-margin0 u-paddingLeft20">
+      {Object.keys(items).map(val => <li>{val}</li>)}
+    </ul>
+  );
 
-        return result;
-      },
-      false,
-    );
-  }
+  const withValues = (
+    <BarChart
+      name="programmes-chart"
+      guides={!mobile}
+      hover={!mobile}
+      {...{ width, parentAction, items }}
+    />
+  );
 
-  getCanvas(node) {
-    this.canvas = node;
-  }
+  const downloadButton = (
+    <button className="Button is-inline" onClick={downloadAction}>Download chart as image</button>
+  );
 
-  changeAction(value) {
-    if (this.state.open) {
-      this.setState({ selected: value });
-      return this.setState({ open: false });
-    }
+  const estimateText = national ?
+    'Estimates of National Expenditure (ENE)' :
+    'Estimates of Provincial Revenue and Expenditure (EPRE)';
 
-    return this.setState({ open: true });
-  }
 
-  clickAction() {
-    if (this.state.selected === 'link') {
-      return this.setState({ modal: true });
-    }
-
-    canvg(this.canvas, renderToString(
-      <BarChart
-        scale={parseInt(this.state.selected, 10)}
-        downloadable
-        items={this.props.items}
-        guides
-        width={600}
-      />,
-    ));
-
-    if (this.canvas.msToBlob) {
-      const blob = this.canvas.msToBlob();
-      return window.navigator.msSaveBlob(blob, 'chart.png', { scaleWidth: 10, scaleHeight: 10 });
-    }
-
-    const link = document.createElement('a');
-    link.download = 'chart.png';
-    link.href = this.canvas.toDataURL();
-    return link.click();
-  }
-
-  closeModal() {
-    return this.setState({ modal: false });
-  }
-
-  render() {
-    return (
-      <Markup
-        downloadSelected={this.state.selected}
-        changeAction={this.changeAction}
-        name="programmes-chart"
-        open={this.state.open}
-        canvasAction={(node) => { this.canvas = node; }}
-        clickAction={this.clickAction}
-        downloadItems={{
-          'Image (PNG Small)': '1',
-          'Image (PNG Medium)': '2',
-          'Image (PNG Large)': '3',
-          Link: 'link',
-        }}
-        closeModal={this.closeModal}
-        modal={this.state.modal}
-        sourceItems={this.props.items}
-        hasNull={this.hasNull}
-        year={this.props.year}
-        files={this.props.files}
-      />
-    );
-  }
+  return (
+    <div className="Section is-bevel" id="programmes-chart">
+      <canvas ref={node => canvasAction(node)} style={{ display: 'none' }} />
+      <Modal
+        title="Share this link:"
+        closeAction={closeModal}
+        open={modal}
+      >
+        <a className="u-wordBreak u-wordBreak--breakAll" href={`${window.location.href}#programmes-chart`}>
+          {`${window.location.href}#programmes-chart`}
+        </a>
+      </Modal>
+      <div className="ProgrammesChart">
+        <div className="ProgrammesChart-info">
+          <div className="Section-card is-invisible">
+            <div className="Page-subHeading">Programme budgets for {year}</div>
+            <p>
+              A department&#x27;s programmes are the activities that it spends money on during the financial year. Different programmes have different expenditure budgets, depending on their requirements and available finances. More detail on the programmes is available in the department's {estimateText} documents.
+            </p>
+          </div>
+          <div className="Section-card is-invisible">
+            <div className="u-fontWeightBold">Sources</div>
+            <p>
+              The {estimateText} sets out the detailed spending plans of each government department for the coming year.
+            </p>
+            {
+              Object.keys(files).map((key) => {
+                return (
+                  <div>
+                    <Download title={key} link={files[key]} icon />
+                  </div>
+                );
+              })
+            }
+          </div>
+          <div className="Section-card is-invisible">
+            <div className="u-fontWeightBold u-marginBottom10">Share this chart:</div>
+            <div className="ProgrammesChart-share">
+              <div className="ProgrammesChart-shareDropdown">
+                <Pseudoselect
+                  name={`${name}-share-selection`}
+                  items={shareSelections}
+                  {...{ open, selected, changeAction }}
+                />
+              </div>
+              <div className="ProgrammesChart-shareButton u-marginLeft5">
+                <button onClick={shareAction} className="Button is-inline has-icon u-transformRotate270">
+                  <Icon type="download" size="small" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="ProgrammesChart-chart">
+          <div className="Section-card">
+            {hasNull ? noValues : withValues}
+          </div>
+          <div className="Section-card is-invisible u-textAlignCenter">
+            {hasNull ? null : downloadButton}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

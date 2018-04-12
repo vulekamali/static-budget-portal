@@ -29,8 +29,6 @@ export default function Participate({ months, selected, setMonth, mobile, open, 
     />
   );
 
-  console.log(selected, returnHtml(selected));
-
   return (
     <div className="Participate">
       { mobile ? mobileSelectors : selectors }

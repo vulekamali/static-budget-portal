@@ -1,6 +1,7 @@
 <a
   href="{{ include.link }}"
-  class="Download-link"
+  class="Download"
+  target="_blank"
 >
   {% if include.icon == 'true' %}
     <span class="Download-icon">
@@ -8,7 +9,7 @@
         include components/universal/Icon/index.html
         type="download"
         size="small"
-      %} 
+      %}
     </span>
   {% endif %}
   <span>{{ include.title }}</span>

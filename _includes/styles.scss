@@ -20,9 +20,9 @@
 @import 'utilities/scss/animation/pop';
 
 @import 'utilities/scss/utility-classes/u-sReadOnly';
-@import 'utilities/scss/utility-classes/u-Button';
 @import 'utilities/scss/utility-classes/u-listReset';
 @import 'utilities/scss/utility-classes/u-listItemReset';
+@import 'utilities/scss/utility-classes/u-display';
 
 @import 'utilities/scss/utility-classes/u-padding';
 @import 'utilities/scss/utility-classes/u-paddingTop';
@@ -36,6 +36,7 @@
 @import 'utilities/scss/utility-classes/u-marginBottom';
 @import 'utilities/scss/utility-classes/u-marginRight';
 
+@import 'utilities/scss/utility-classes/u-transform';
 @import 'utilities/scss/utility-classes/u-underline';
 @import 'utilities/scss/utility-classes/u-fontWeight';
 @import 'utilities/scss/utility-classes/u-fontSize';
@@ -59,6 +60,8 @@
 @import 'components/universal/PseudoSelect/styles';
 @import 'components/universal/Share/styles';
 @import 'components/universal/Tooltip/styles';
+@import 'components/universal/Section/styles';
+@import 'components/universal/Grid/styles';
 
 @import 'components/homepage/ApiCta/styles';
 @import 'components/homepage/Circles/styles';
@@ -87,10 +90,12 @@
 @import 'components/department-budgets/DeptFiles/styles';
 @import 'components/department-budgets/DeptGroup/styles';
 @import 'components/department-budgets/DeptSearch/styles';
-@import 'components/department-budgets/Programmes/styles';
 @import 'components/department-budgets/Radios/styles';
 @import 'components/department-budgets/Resources/styles';
 @import 'components/department-budgets/Participate/styles';
+@import 'components/department-budgets/IntroSection/styles';
+@import 'components/department-budgets/ProgrammesChart/styles';
+@import 'components/department-budgets/ContributedData/styles';
 
 @import 'components/contributed-data/CsoDirectory/styles';
 @import 'components/contributed-data/CsoFiles/styles';
@@ -101,6 +106,8 @@
 
 @import 'components/learning-centre/Glossary/styles';
 @import 'components/learning-centre/Videos/styles';
+
+@import 'components/search-results/SearchResult/styles';
 
 @import 'components/about/Contacts/styles';
 @import 'components/about/Progress/styles';

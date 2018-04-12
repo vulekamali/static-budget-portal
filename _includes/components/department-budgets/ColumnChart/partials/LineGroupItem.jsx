@@ -1,6 +1,12 @@
 import { h } from 'preact';
 import { relative } from 'path';
 
+const colours = [
+  '#79b43c',
+  '#4a4a4a',
+  '#ad3c64',
+];
+
 export default function LineGroupItem({ totalGroupSpace, groupSpaceArray, rank, lines, title, styling }) {
   const {
     barWidth,
@@ -60,7 +66,7 @@ export default function LineGroupItem({ totalGroupSpace, groupSpaceArray, rank, 
               x2={startPoint + centeringSpace + (index * (barWidth + lineGutter))}
               y2={(padding[0] + svgHeight + barWidth) - (barWidth / 2) - displayAmount}
               className="Graph-line"
-              stroke="#79b43c"
+              stroke={colours[index]}
             />
           );
         })

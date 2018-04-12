@@ -8,13 +8,16 @@
   <meta name="description" content="South Africa's National and Provincial budget data from National Treasury in partnership with IMALI YETHU.">
 
   {% comment %} Twitter Card data {% endcomment %}
-  <meta name="twitter:title" content="{{ fullTitle }}">
+  <meta name="twitter:title" content="{{ include.title }}">
   <meta name="twitter:description" content="South Africa's National and Provincial budget data from National Treasury in partnership with IMALI YETHU.">
 
   {% comment %} Facebook's Open Graph data {% endcomment %}
-  <meta property="og:title" content="{{ fullTitle }}" />
+  <meta property="og:title" content="{{ include.title }}" />
   <meta property="og:description" content="South Africa's National and Provincial budget data from National Treasury in partnership with IMALI YETHU." />
   <meta property="og:image" content="{{ site.url }}/assets/images/vulekamali-logo-sq-social.jpg" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:type" content="website" />
+  <meta property="fb:app_id" content="346780042475150" />
 
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link href="/{{ site.data.assets["assets/generated/main.css"] }}" rel="stylesheet">

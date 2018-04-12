@@ -23,7 +23,7 @@ export default function Markup(props) {
   return (
     <div >
       <Modal title="Share this link:" closeAction={closeModal} open={modal}>
-        <a className="u-wordBreak u-wordBreak--breakAll" href={window.location.href}>
+        <a className="u-wordBreakBreakAll" href={window.location.href}>
           {window.location.href}
         </a>
       </Modal>

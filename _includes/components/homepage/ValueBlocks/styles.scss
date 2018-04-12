@@ -28,6 +28,8 @@
   text-decoration: none;
 
   &--link {
+    text-decoration: underline;
+
     &:hover {
       background-color: darken(#fff, 15%);
     }
