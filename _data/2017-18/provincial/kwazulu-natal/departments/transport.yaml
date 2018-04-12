@@ -11,6 +11,52 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 8055187000.0
+    financial_year: 2013-14
+    phase: Outcome
+  - amount: 9051949000.0
+    financial_year: 2014-15
+    phase: Outcome
+  - amount: 9338492000.0
+    financial_year: 2015-16
+    phase: Outcome
+  - amount: 9577620000.0
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 9847024000.0
+    financial_year: 2017-18
+    phase: Budget
+  - amount: 10313722000.0
+    financial_year: 2018-19
+    phase: MTEF
+  - amount: 10970256000.0
+    financial_year: 2019-20
+    phase: MTEF
+  real:
+  - amount: 9976172443
+    financial_year: 2013-14
+    phase: Outcome
+  - amount: 10613524444
+    financial_year: 2014-15
+    phase: Outcome
+  - amount: 10411543923
+    financial_year: 2015-16
+    phase: Outcome
+  - amount: 10045754869
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 9847024000
+    financial_year: 2017-18
+    phase: Budget
+  - amount: 9776816917
+    financial_year: 2018-19
+    phase: MTEF
+  - amount: 9876583535
+    financial_year: 2019-20
+    phase: MTEF
 financial_years:
 - closest_match:
     is_exact_match: true

@@ -5,6 +5,52 @@ contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
   url_path: /datasets/budget-brief-eastern-cape-department-of-health-2014-15
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 8393477000.0
+    financial_year: 2013-14
+    phase: Outcome
+  - amount: 8372853000.0
+    financial_year: 2014-15
+    phase: Outcome
+  - amount: 9042677000.0
+    financial_year: 2015-16
+    phase: Outcome
+  - amount: 9675937000.0
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 10461340000.0
+    financial_year: 2017-18
+    phase: Budget
+  - amount: 11121303000.0
+    financial_year: 2018-19
+    phase: MTEF
+  - amount: 12011392000.0
+    financial_year: 2019-20
+    phase: MTEF
+  real:
+  - amount: 10395137189
+    financial_year: 2013-14
+    phase: Outcome
+  - amount: 9817275814
+    financial_year: 2014-15
+    phase: Outcome
+  - amount: 10081737905
+    financial_year: 2015-16
+    phase: Outcome
+  - amount: 10148877407
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 10461340000
+    financial_year: 2017-18
+    phase: Budget
+  - amount: 10542357387
+    financial_year: 2018-19
+    phase: MTEF
+  - amount: 10813924165
+    financial_year: 2019-20
+    phase: MTEF
 financial_years:
 - closest_match:
     is_exact_match: true
