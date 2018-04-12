@@ -110,6 +110,7 @@ class ProgrammesChartContainer extends Component {
 
         downloadAction={this.downloadAction}
         canvasAction={this.canvasAction}
+        national={this.props.deptLocation === 'National'}
       />
     );
   }
