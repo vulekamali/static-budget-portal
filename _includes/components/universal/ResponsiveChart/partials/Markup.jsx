@@ -8,6 +8,8 @@ export default function Markup(props) {
     width,
     type,
     items,
+    guides,
+    hover,
   } = props;
 
   const { parentAction } = props;
@@ -15,10 +17,8 @@ export default function Markup(props) {
   if (type === 'bar') {
     return (
       <BarChart
-        guides
-        hover
         scale={1}
-        {...{ parentAction, items, width }}
+        {...{ parentAction, items, width, guides, hover }}
       />
     );
   }
@@ -26,9 +26,7 @@ export default function Markup(props) {
   if (type === 'line') {
     return (
       <LineChart
-        guides
-        hover
-        {...{ parentAction, width, items }}
+        {...{ parentAction, width, items, guides, hover }}
       />
     );
   }

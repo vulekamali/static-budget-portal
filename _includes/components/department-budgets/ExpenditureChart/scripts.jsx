@@ -130,6 +130,7 @@ class ExpenditureChartContainer extends Component {
         type={this.state.type}
         sourceOpen={this.state.sourceOpen}
         changeSource={this.changeSource}
+        cpi={this.props.cpi}
       />
     );
   }
@@ -179,6 +180,7 @@ function scripts() {
     const department = getProp('department', node);
     const location = getProp('location', node);
     const rawFiles = getProp('files', node, 'json');
+    const cpi = getProp('cpi', node);
 
     const removeNulls = val => val.amount !== null;
     const normalisePhaseTable = val => [val.financial_year, val.phase];
@@ -191,7 +193,7 @@ function scripts() {
 
     render(
       <ExpenditureChartContainer
-        {...{ items, year, department, location, phaseTable, files }}
+        {...{ items, year, department, location, phaseTable, files, cpi }}
       />,
       node,
     );

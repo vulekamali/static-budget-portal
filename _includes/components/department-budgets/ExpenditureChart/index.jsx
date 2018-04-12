@@ -17,7 +17,7 @@ export default function ExpenditureChart(props) {
     type,
     source,
     sourceOpen,
-
+    cpi,
     open,
     selected,
     modal,
@@ -49,23 +49,26 @@ export default function ExpenditureChart(props) {
       <div className="ProgrammesChart">
         <div className="ProgrammesChart-info">
           <div className="Section-card is-invisible">
-            <div className="Page-subHeading">Expenditure changes over time</div>
-            <p>
-            Budgeted expenditure for a department can increase or decrease from year to year. The official budget shows the nominal value of spendiing - the real value is calculated by adjusting for inflation, since most expenditure items are subject to inflation. By stripping out the inflation (GDP or CPI inflation) it is possible to show if a departmental budget is increasing or decreasing in real terms
+            <div className="Page-subHeading">Actual and planned expenditure changes over time</div>
+            <p className="js-tooltips">
+              Budgeted and actual expenditure/allocations for a department can increase or decrease from year to year. Changes in expenditure for a department can be because of changes in the activities of the department, because of changes in priorities between departments, because of cost efficiencies or because of increases in the price of goods and services due to inflation.
+            </p>
+            <p className="js-tooltips">
+              The chart shows the department’s actual expenditure for past years, and budgeted expenditure for the current year and the upcoming three years of the medium-term expenditure framework (MTEF). By adjusting these numbers to take inflation into account, it is possible to determine if a department’s expenditure is really increasing or decreasing in real terms, as compared to the rest of the economy.
             </p>
             <div>
               <span>Previous financial years indicate actual expenditure while upcoming financial years indicate estimated expenditure:</span>
-              <table className="Expenditure-table">
+              <table className="ExpenditureChart-table">
                 <tr>
-                  <th className="Expenditure-heading">Financial year</th>
-                  <th className="Expenditure-heading">Budget phase</th>
+                  <th className="ExpenditureChart-heading">Financial year</th>
+                  <th className="ExpenditureChart-heading">Budget phase</th>
                 </tr>
                 {
                   phaseTable.map((val) => {
                     return (
                       <tr>
-                        <td className="Expenditure-cell">{val[0]}</td>
-                        <td className="Expenditure-cell">{val[1]}</td>
+                        <td className="ExpenditureChart-cell">{val[0]}</td>
+                        <td className="ExpenditureChart-cell">{val[1]}</td>
                       </tr>
                     );
                   })
@@ -76,7 +79,7 @@ export default function ExpenditureChart(props) {
           <div className="Section-card is-invisible">
             <div className="u-fontWeightBold">Sources</div>
             <p>
-              The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year.
+              The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year. These documents use amounts not adjusted for inflation unless stated otherwise.
             </p>
             {
               Object.keys(files).map((key) => {
@@ -87,6 +90,9 @@ export default function ExpenditureChart(props) {
                 );
               })
             }
+            <div>
+              <Download title="Annual CPI Inflation 2018-19 (Excel)" link={cpi} icon />
+            </div>
           </div>
           <div className="Section-card is-invisible">
             <div className="u-fontWeightBold u-marginBottom10">Share this chart:</div>
@@ -110,7 +116,7 @@ export default function ExpenditureChart(props) {
           <div className="Section-card">
             <ResponsiveChart {...{ items, widthAction, type }} />
             <div className="u-textAlignCenter">
-              <label htmlFor="expenditure-select-adjusted" className="u-marginRight20">
+              <label htmlFor="expenditure-select-adjusted" className="ExpenditureChart-radio u-marginRight20">
                 <input
                   type="radio"
                   id="expenditure-select-adjusted"
@@ -121,7 +127,7 @@ export default function ExpenditureChart(props) {
                 />
                 <span className="u-displayInlineBlock u-marginLeft10">Adjusted for Inflation</span>
               </label>
-              <label htmlFor="expenditure-select-not-adjusted">
+              <label htmlFor="expenditure-select-not-adjusted" className="ExpenditureChart-radio">
                 <input
                   type="radio"
                   id="expenditure-select-not-adjusted"
@@ -133,6 +139,13 @@ export default function ExpenditureChart(props) {
                 <span className="u-displayInlineBlock u-marginLeft10">Not adjusted for inflation</span>
               </label>
             </div>
+            {
+              source === 'adjusted' ?
+                <p className="ExpenditureChart-inflation"><em>
+                  The Rand values in this chart are adjusted for CPI inflation and are the effective value in 2017 Rands. CPI is used as the deflator, with the 2017-18 financial year as the base.
+                </em></p> :
+                ''
+            }
           </div>
           <div className="Section-card is-invisible u-textAlignCenter">
             <button className="Button is-inline" onClick={downloadAction}>Download chart as image</button>

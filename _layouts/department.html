@@ -48,6 +48,7 @@ layout: page-shell
         data-location="{{ department_location }}"
         data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
         data-department="{{ page_data.name }}"
+        data-cpi="{{ data.site.global_values.cpi_dataset_url }}"
       >
       </div>
     </div>

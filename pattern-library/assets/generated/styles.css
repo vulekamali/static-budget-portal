@@ -3519,20 +3519,31 @@ li {
       vertical-align: middle;
       text-align: center; } }
 
-.Expenditure-table {
+.ExpenditureChart-table {
   margin-top: 20px;
   border: 1px solid #3f3f3f;
   font-size: 11px;
   font-family: Verdana, sans-serif;
   border-collapse: collapse; }
 
-.Expenditure-heading {
+.ExpenditureChart-heading {
   padding: 5px 10px;
   border: 1px solid #3f3f3f; }
 
-.Expenditure-cell {
+.ExpenditureChart-cell {
   padding: 5px 10px;
   border: 1px solid #3f3f3f; }
+
+.ExpenditureChart-inflation {
+  text-align: center;
+  font-family: verdana;
+  font-size: 11px; }
+
+.ExpenditureChart-radio {
+  display: block; }
+  @media screen and (min-width: 500px) {
+    .ExpenditureChart-radio {
+      display: inline-block; } }
 
 .CsoDirectory::after {
   clear: both;

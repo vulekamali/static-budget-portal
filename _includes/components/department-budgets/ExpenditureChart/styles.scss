@@ -1,4 +1,4 @@
-.Expenditure-table {
+.ExpenditureChart-table {
   margin-top: 20px;
   border: 1px solid $colour-shading-dark;
   font-size: 11px;
@@ -6,12 +6,29 @@
   border-collapse: collapse;
 }
 
-.Expenditure-heading {
+.ExpenditureChart-heading {
+  padding: 5px 10px;
+  border: 1px solid $colour-shading-dark;
+  text-align: left;
+}
+
+.ExpenditureChart-cell {
   padding: 5px 10px;
   border: 1px solid $colour-shading-dark;
 }
 
-.Expenditure-cell {
-  padding: 5px 10px;
-  border: 1px solid $colour-shading-dark;
+.ExpenditureChart-inflation {
+  text-align: center;
+  font-family: verdana;
+  font-size: 11px;
+}
+
+.ExpenditureChart-radio {
+  display: block;
+  padding: 10px 0;
+
+  @media screen and (min-width: 500px) {
+    display: inline-block;
+    padding: 0;
+  }
 }

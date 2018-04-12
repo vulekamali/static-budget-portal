@@ -1479,11 +1479,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(90)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(122)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(92)();
+  module.exports = __webpack_require__(124)();
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
@@ -1506,14 +1506,18 @@ module.exports = __webpack_require__(66);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = createSizeModifier;
-function createSizeModifier(string) {
-  switch (string) {
-    case 'small':
-      return ' is-small';
-    default:
-      return '';
+exports.default = trimValues;
+function trimValues(value, abbreviated) {
+  var million = abbreviated ? 'm' : 'million';
+  var billion = abbreviated ? 'bn' : 'billion';
+
+  if (value > 1000000000) {
+    return (value / 1000000000).toFixed(1).replace(/\.0$/, '') + ' ' + billion;
+  } else if (value > 1000000) {
+    return (value / 1000000).toFixed(1).replace(/\.0$/, '') + ' ' + million;
   }
+
+  return value.toFixed(1).replace(/\.0$/, '');
 }
 
 /***/ }),
@@ -1533,11 +1537,11 @@ exports.default = BarChart;
 
 var _preact = __webpack_require__(0);
 
-var _calcMaxValue = __webpack_require__(110);
+var _calcMaxValue = __webpack_require__(106);
 
 var _calcMaxValue2 = _interopRequireDefault(_calcMaxValue);
 
-var _buildGroupSpaceArray = __webpack_require__(111);
+var _buildGroupSpaceArray = __webpack_require__(107);
 
 var _buildGroupSpaceArray2 = _interopRequireDefault(_buildGroupSpaceArray);
 
@@ -1545,35 +1549,35 @@ var _breakIntoWrap = __webpack_require__(10);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
-var _Breakpoints = __webpack_require__(112);
+var _Breakpoints = __webpack_require__(108);
 
 var _Breakpoints2 = _interopRequireDefault(_Breakpoints);
 
-var _Grid = __webpack_require__(114);
+var _Grid = __webpack_require__(110);
 
 var _Grid2 = _interopRequireDefault(_Grid);
 
-var _Guides = __webpack_require__(115);
+var _Guides = __webpack_require__(111);
 
 var _Guides2 = _interopRequireDefault(_Guides);
 
-var _LineGroups = __webpack_require__(117);
+var _LineGroups = __webpack_require__(113);
 
 var _LineGroups2 = _interopRequireDefault(_LineGroups);
 
-var _Tooltips = __webpack_require__(119);
+var _Tooltips = __webpack_require__(115);
 
 var _Tooltips2 = _interopRequireDefault(_Tooltips);
 
-var _Attribution = __webpack_require__(122);
+var _Attribution = __webpack_require__(118);
 
 var _Attribution2 = _interopRequireDefault(_Attribution);
 
-var _Heading = __webpack_require__(123);
+var _Heading = __webpack_require__(119);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Logo = __webpack_require__(124);
+var _Logo = __webpack_require__(120);
 
 var _Logo2 = _interopRequireDefault(_Logo);
 
@@ -1757,18 +1761,14 @@ function breakIntoWrap(string, wrap) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = trimValues;
-function trimValues(value, abbreviated) {
-  var million = abbreviated ? 'm' : 'million';
-  var billion = abbreviated ? 'bn' : 'billion';
-
-  if (value > 1000000000) {
-    return (value / 1000000000).toFixed(1).replace(/\.0$/, '') + ' ' + billion;
-  } else if (value > 1000000) {
-    return (value / 1000000).toFixed(1).replace(/\.0$/, '') + ' ' + million;
+exports.default = createSizeModifier;
+function createSizeModifier(string) {
+  switch (string) {
+    case 'small':
+      return ' is-small';
+    default:
+      return '';
   }
-
-  return value.toFixed(1).replace(/\.0$/, '');
 }
 
 /***/ }),
@@ -1995,62 +1995,6 @@ exports.parseUrl = function (str, opts) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = Icon;
-
-var _preact = __webpack_require__(0);
-
-var _Close = __webpack_require__(93);
-
-var _Close2 = _interopRequireDefault(_Close);
-
-var _Download = __webpack_require__(94);
-
-var _Download2 = _interopRequireDefault(_Download);
-
-var _Facebook = __webpack_require__(95);
-
-var _Facebook2 = _interopRequireDefault(_Facebook);
-
-var _Search = __webpack_require__(96);
-
-var _Search2 = _interopRequireDefault(_Search);
-
-var _Twitter = __webpack_require__(97);
-
-var _Twitter2 = _interopRequireDefault(_Twitter);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Icon(_ref) {
-  var size = _ref.size,
-      type = _ref.type;
-
-  switch (type) {
-    case 'close':
-      return (0, _preact.h)(_Close2.default, { size: size });
-    case 'download':
-      return (0, _preact.h)(_Download2.default, { size: size });
-    case 'facebook':
-      return (0, _preact.h)(_Facebook2.default, { size: size });
-    case 'search':
-      return (0, _preact.h)(_Search2.default, { size: size });
-    case 'twitter':
-      return (0, _preact.h)(_Twitter2.default, { size: size });
-    default:
-      return null;
-  }
-}
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
 exports.default = getProp;
 
 var _decodeHtmlEntities = __webpack_require__(1);
@@ -2081,6 +2025,62 @@ function getProp(name, node, parse) {
   }
 
   return parseString((0, _decodeHtmlEntities2.default)(result), parse);
+}
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Icon;
+
+var _preact = __webpack_require__(0);
+
+var _Close = __webpack_require__(165);
+
+var _Close2 = _interopRequireDefault(_Close);
+
+var _Download = __webpack_require__(166);
+
+var _Download2 = _interopRequireDefault(_Download);
+
+var _Facebook = __webpack_require__(167);
+
+var _Facebook2 = _interopRequireDefault(_Facebook);
+
+var _Search = __webpack_require__(168);
+
+var _Search2 = _interopRequireDefault(_Search);
+
+var _Twitter = __webpack_require__(169);
+
+var _Twitter2 = _interopRequireDefault(_Twitter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Icon(_ref) {
+  var size = _ref.size,
+      type = _ref.type;
+
+  switch (type) {
+    case 'close':
+      return (0, _preact.h)(_Close2.default, { size: size });
+    case 'download':
+      return (0, _preact.h)(_Download2.default, { size: size });
+    case 'facebook':
+      return (0, _preact.h)(_Facebook2.default, { size: size });
+    case 'search':
+      return (0, _preact.h)(_Search2.default, { size: size });
+    case 'twitter':
+      return (0, _preact.h)(_Twitter2.default, { size: size });
+    default:
+      return null;
+  }
 }
 
 /***/ }),
@@ -2164,377 +2164,6 @@ module.exports = function isCallable(value) {
 
 /***/ }),
 /* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Modal;
-
-var _preact = __webpack_require__(0);
-
-var _preactCssTransitionGroup = __webpack_require__(89);
-
-var _preactCssTransitionGroup2 = _interopRequireDefault(_preactCssTransitionGroup);
-
-var _propTypes = __webpack_require__(6);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _index = __webpack_require__(13);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Modal(_ref) {
-  var children = _ref.children,
-      title = _ref.title,
-      open = _ref.open,
-      closeAction = _ref.closeAction;
-
-  var modal = (0, _preact.h)(
-    'div',
-    { className: 'Modal-inner' },
-    (0, _preact.h)('div', { className: 'Modal-overlay', onClick: closeAction, 'aria-hidden': true }),
-    (0, _preact.h)(
-      'div',
-      { className: 'Modal-boxWrap' },
-      (0, _preact.h)(
-        'div',
-        { className: 'Modal-box' },
-        (0, _preact.h)(
-          'div',
-          { className: 'Modal-heading' },
-          title
-        ),
-        (0, _preact.h)(
-          'div',
-          { className: 'Modal-content' },
-          children
-        )
-      ),
-      (0, _preact.h)(
-        'button',
-        { className: 'Modal-close', onClick: closeAction },
-        (0, _preact.h)(_index2.default, { type: 'close' })
-      )
-    )
-  );
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'Modal' },
-    (0, _preact.h)(
-      _preactCssTransitionGroup2.default,
-      {
-        transitionName: 'is',
-        transitionEnterTimeout: 300,
-        transitionLeaveTimeout: 300
-      },
-      open ? modal : null
-    )
-  );
-}
-
-Modal.propTypes = {
-  children: _propTypes2.default.node.isRequired,
-  title: _propTypes2.default.string.isRequired,
-  closeAction: _propTypes2.default.func.isRequired,
-  open: _propTypes2.default.bool.isRequired
-};
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * 
- */
-
-function makeEmptyFunction(arg) {
-  return function () {
-    return arg;
-  };
-}
-
-/**
- * This function accepts and discards inputs; it has no side effects. This is
- * primarily useful idiomatically for overridable function endpoints which
- * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
- */
-var emptyFunction = function emptyFunction() {};
-
-emptyFunction.thatReturns = makeEmptyFunction;
-emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
-emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
-emptyFunction.thatReturnsNull = makeEmptyFunction(null);
-emptyFunction.thatReturnsThis = function () {
-  return this;
-};
-emptyFunction.thatReturnsArgument = function (arg) {
-  return arg;
-};
-
-module.exports = emptyFunction;
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
-
-
-
-/**
- * Use invariant() to assert state which your program assumes to be true.
- *
- * Provide sprintf-style format (only %s is supported) and arguments
- * to provide information about what broke and what you were
- * expecting.
- *
- * The invariant message will be stripped in production, but the invariant
- * will remain to ensure logic does not differ in production.
- */
-
-var validateFormat = function validateFormat(format) {};
-
-if (process.env.NODE_ENV !== 'production') {
-  validateFormat = function validateFormat(format) {
-    if (format === undefined) {
-      throw new Error('invariant requires an error message argument');
-    }
-  };
-}
-
-function invariant(condition, format, a, b, c, d, e, f) {
-  validateFormat(format);
-
-  if (!condition) {
-    var error;
-    if (format === undefined) {
-      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
-    } else {
-      var args = [a, b, c, d, e, f];
-      var argIndex = 0;
-      error = new Error(format.replace(/%s/g, function () {
-        return args[argIndex++];
-      }));
-      error.name = 'Invariant Violation';
-    }
-
-    error.framesToPop = 1; // we don't care about invariant's own frame
-    throw error;
-  }
-}
-
-module.exports = invariant;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-
-module.exports = ReactPropTypesSecret;
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _preact = __webpack_require__(0);
-
-var _Markup = __webpack_require__(109);
-
-var _Markup2 = _interopRequireDefault(_Markup);
-
-var _DebounceFunction = __webpack_require__(23);
-
-var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ResponsiveChart = function (_Component) {
-  _inherits(ResponsiveChart, _Component);
-
-  function ResponsiveChart(props) {
-    _classCallCheck(this, ResponsiveChart);
-
-    var _this = _possibleConstructorReturn(this, (ResponsiveChart.__proto__ || Object.getPrototypeOf(ResponsiveChart)).call(this, props));
-
-    var _this$props = _this.props,
-        _this$props$minWidth = _this$props.minWidth,
-        minWidth = _this$props$minWidth === undefined ? 250 : _this$props$minWidth,
-        _this$props$breakpoin = _this$props.breakpoint,
-        breakpoint = _this$props$breakpoin === undefined ? 600 : _this$props$breakpoin;
-
-
-    _this.state = {
-      width: minWidth,
-      mobile: true
-    };
-
-    _this.updateWidth = function () {
-      if (_this.state.mobile && window.innerWidth >= breakpoint) {
-        _this.setState({ mobile: false });
-      } else if (!_this.state.mobile && window.innerWidth < breakpoint) {
-        _this.setState({ mobile: true });
-      }
-
-      if (_this.node && _this.node.offsetWidth !== _this.state.width) {
-        if (_this.node.offsetWidth <= minWidth && _this.state.width !== minWidth) {
-          return _this.setState({ width: minWidth });
-        }
-
-        return _this.setState({ width: _this.node.offsetWidth });
-      }
-
-      return null;
-    };
-
-    var viewportDebounce = new _DebounceFunction2.default(300);
-    var updateViewport = function updateViewport() {
-      return viewportDebounce.update(_this.updateWidth);
-    };
-
-    window.addEventListener('resize', updateViewport);
-
-    _this.node = null;
-    _this.parentAction = _this.parentAction.bind(_this);
-    return _this;
-  }
-
-  _createClass(ResponsiveChart, [{
-    key: 'componentDidUpdate',
-    value: function componentDidUpdate() {
-      if (this.props.widthAction) {
-        return this.props.widthAction(this.state.width);
-      }
-
-      return null;
-    }
-  }, {
-    key: 'parentAction',
-    value: function parentAction(node) {
-      this.node = node;
-      this.updateWidth();
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _props = this.props,
-          type = _props.type,
-          items = _props.items;
-      var _state = this.state,
-          mobile = _state.mobile,
-          width = _state.width;
-
-
-      return (0, _preact.h)(_Markup2.default, _extends({
-        parentAction: this.parentAction,
-        guides: !mobile,
-        hover: !mobile
-      }, { type: type, items: items, width: width }));
-    }
-  }]);
-
-  return ResponsiveChart;
-}(_preact.Component);
-
-exports.default = ResponsiveChart;
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var DebounceFunction = function () {
-  function DebounceFunction(time) {
-    _classCallCheck(this, DebounceFunction);
-
-    this.time = time;
-    this.timeout = null;
-  }
-
-  _createClass(DebounceFunction, [{
-    key: "update",
-    value: function update(func) {
-      var _this = this;
-
-      if (this.timeout) {
-        clearTimeout(this.timeout);
-      }
-
-      this.timeout = window.setTimeout(function () {
-        clearTimeout(_this.timeout);
-        func();
-      }, this.time);
-    }
-  }]);
-
-  return DebounceFunction;
-}();
-
-exports.default = DebounceFunction;
-
-/***/ }),
-/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3574,10 +3203,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   );
 });
 //# sourceMappingURL=fuse.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(145)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(88)(module)))
 
 /***/ }),
-/* 25 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3590,7 +3219,7 @@ exports.default = RevenueMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(11);
+var _trimValues = __webpack_require__(8);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -3631,6 +3260,377 @@ function RevenueMarkup(_ref) {
     })
   );
 }
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var DebounceFunction = function () {
+  function DebounceFunction(time) {
+    _classCallCheck(this, DebounceFunction);
+
+    this.time = time;
+    this.timeout = null;
+  }
+
+  _createClass(DebounceFunction, [{
+    key: "update",
+    value: function update(func) {
+      var _this = this;
+
+      if (this.timeout) {
+        clearTimeout(this.timeout);
+      }
+
+      this.timeout = window.setTimeout(function () {
+        clearTimeout(_this.timeout);
+        func();
+      }, this.time);
+    }
+  }]);
+
+  return DebounceFunction;
+}();
+
+exports.default = DebounceFunction;
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * 
+ */
+
+function makeEmptyFunction(arg) {
+  return function () {
+    return arg;
+  };
+}
+
+/**
+ * This function accepts and discards inputs; it has no side effects. This is
+ * primarily useful idiomatically for overridable function endpoints which
+ * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
+ */
+var emptyFunction = function emptyFunction() {};
+
+emptyFunction.thatReturns = makeEmptyFunction;
+emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
+emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
+emptyFunction.thatReturnsNull = makeEmptyFunction(null);
+emptyFunction.thatReturnsThis = function () {
+  return this;
+};
+emptyFunction.thatReturnsArgument = function (arg) {
+  return arg;
+};
+
+module.exports = emptyFunction;
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ */
+
+
+
+/**
+ * Use invariant() to assert state which your program assumes to be true.
+ *
+ * Provide sprintf-style format (only %s is supported) and arguments
+ * to provide information about what broke and what you were
+ * expecting.
+ *
+ * The invariant message will be stripped in production, but the invariant
+ * will remain to ensure logic does not differ in production.
+ */
+
+var validateFormat = function validateFormat(format) {};
+
+if (process.env.NODE_ENV !== 'production') {
+  validateFormat = function validateFormat(format) {
+    if (format === undefined) {
+      throw new Error('invariant requires an error message argument');
+    }
+  };
+}
+
+function invariant(condition, format, a, b, c, d, e, f) {
+  validateFormat(format);
+
+  if (!condition) {
+    var error;
+    if (format === undefined) {
+      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+    } else {
+      var args = [a, b, c, d, e, f];
+      var argIndex = 0;
+      error = new Error(format.replace(/%s/g, function () {
+        return args[argIndex++];
+      }));
+      error.name = 'Invariant Violation';
+    }
+
+    error.framesToPop = 1; // we don't care about invariant's own frame
+    throw error;
+  }
+}
+
+module.exports = invariant;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+module.exports = ReactPropTypesSecret;
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+var _Markup = __webpack_require__(148);
+
+var _Markup2 = _interopRequireDefault(_Markup);
+
+var _DebounceFunction = __webpack_require__(20);
+
+var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ResponsiveChart = function (_Component) {
+  _inherits(ResponsiveChart, _Component);
+
+  function ResponsiveChart(props) {
+    _classCallCheck(this, ResponsiveChart);
+
+    var _this = _possibleConstructorReturn(this, (ResponsiveChart.__proto__ || Object.getPrototypeOf(ResponsiveChart)).call(this, props));
+
+    var _this$props = _this.props,
+        _this$props$minWidth = _this$props.minWidth,
+        minWidth = _this$props$minWidth === undefined ? 250 : _this$props$minWidth,
+        _this$props$breakpoin = _this$props.breakpoint,
+        breakpoint = _this$props$breakpoin === undefined ? 600 : _this$props$breakpoin;
+
+
+    _this.state = {
+      width: minWidth,
+      mobile: true
+    };
+
+    _this.updateWidth = function () {
+      if (_this.state.mobile && window.innerWidth >= breakpoint) {
+        _this.setState({ mobile: false });
+      } else if (!_this.state.mobile && window.innerWidth < breakpoint) {
+        _this.setState({ mobile: true });
+      }
+
+      if (_this.node && _this.node.offsetWidth !== _this.state.width) {
+        if (_this.node.offsetWidth <= minWidth && _this.state.width !== minWidth) {
+          return _this.setState({ width: minWidth });
+        }
+
+        return _this.setState({ width: _this.node.offsetWidth });
+      }
+
+      return null;
+    };
+
+    var viewportDebounce = new _DebounceFunction2.default(300);
+    var updateViewport = function updateViewport() {
+      return viewportDebounce.update(_this.updateWidth);
+    };
+
+    window.addEventListener('resize', updateViewport);
+
+    _this.node = null;
+    _this.parentAction = _this.parentAction.bind(_this);
+    return _this;
+  }
+
+  _createClass(ResponsiveChart, [{
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      if (this.props.widthAction) {
+        return this.props.widthAction(this.state.width);
+      }
+
+      return null;
+    }
+  }, {
+    key: 'parentAction',
+    value: function parentAction(node) {
+      this.node = node;
+      this.updateWidth();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          type = _props.type,
+          items = _props.items;
+      var _state = this.state,
+          mobile = _state.mobile,
+          width = _state.width;
+
+
+      return (0, _preact.h)(_Markup2.default, _extends({
+        parentAction: this.parentAction,
+        guides: !mobile,
+        hover: !mobile
+      }, { type: type, items: items, width: width }));
+    }
+  }]);
+
+  return ResponsiveChart;
+}(_preact.Component);
+
+exports.default = ResponsiveChart;
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Modal;
+
+var _preact = __webpack_require__(0);
+
+var _preactCssTransitionGroup = __webpack_require__(171);
+
+var _preactCssTransitionGroup2 = _interopRequireDefault(_preactCssTransitionGroup);
+
+var _propTypes = __webpack_require__(6);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _index = __webpack_require__(14);
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Modal(_ref) {
+  var children = _ref.children,
+      title = _ref.title,
+      open = _ref.open,
+      closeAction = _ref.closeAction;
+
+  var modal = (0, _preact.h)(
+    'div',
+    { className: 'Modal-inner' },
+    (0, _preact.h)('div', { className: 'Modal-overlay', onClick: closeAction, 'aria-hidden': true }),
+    (0, _preact.h)(
+      'div',
+      { className: 'Modal-boxWrap' },
+      (0, _preact.h)(
+        'div',
+        { className: 'Modal-box' },
+        (0, _preact.h)(
+          'div',
+          { className: 'Modal-heading' },
+          title
+        ),
+        (0, _preact.h)(
+          'div',
+          { className: 'Modal-content' },
+          children
+        )
+      ),
+      (0, _preact.h)(
+        'button',
+        { className: 'Modal-close', onClick: closeAction },
+        (0, _preact.h)(_index2.default, { type: 'close' })
+      )
+    )
+  );
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Modal' },
+    (0, _preact.h)(
+      _preactCssTransitionGroup2.default,
+      {
+        transitionName: 'is',
+        transitionEnterTimeout: 300,
+        transitionLeaveTimeout: 300
+      },
+      open ? modal : null
+    )
+  );
+}
+
+Modal.propTypes = {
+  children: _propTypes2.default.node.isRequired,
+  title: _propTypes2.default.string.isRequired,
+  closeAction: _propTypes2.default.func.isRequired,
+  open: _propTypes2.default.bool.isRequired
+};
 
 /***/ }),
 /* 26 */
@@ -4266,6 +4266,33 @@ module.exports = function getPolyfill() {
 
 /***/ }),
 /* 40 */
+/***/ (function(module, exports) {
+
+module.exports = {"apiBaseURL":"https://data.vulekamali.gov.za"}
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = removePunctuation;
+function removePunctuation(string) {
+  return string.replace(/[^\w\s]/g, ' ');
+}
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports) {
+
+module.exports = {"Accounting officer":"The public servant in a department who is accountable to Parliament for financial management, usually the director-general or head of the department.","Accrual":"An accounting convention by which payments and receipts are recorded as they occur, even if no cash flow takes place.","Acquisition debt":"Debt used to purchase shares or assets.","Ad valorem duties":"Duties levied on commodities as a certain percentage of their value.","Adjustments estimate":"Presentation to Parliament of the amendments to be made to the appropriations voted in the main budget for the year.","Administered prices":"Prices set outside ordinary market processes through administrative decisions by government, a public entity or a regulator.","Agro-processing":"Manufacturing activities that transform raw materials and intermediary goods derived from agriculture into intermediate or final goods.","Allocated expenditure":"The part of the national budget that can be divided between the national, provincial and local spheres of government, after interest and the contingency reserve have been taken into account.","Amortisation":"The repayment of a loan by instalments over the duration of the loan.","Annuity":"A fixed amount of money paid over a period of time as a return on an investment.","Anti-avoidance rule":"A provision aimed at preventing tax avoidance. See principal purpose test.","Anti-fragmentation rule":"A rule that aims to prevent taxpayers from artificially avoiding permanent establishment status by breaking up a cohesive business into several small operations.","Appropriation":"The approval by Parliament of spending from the National Revenue Fund, or by a provincial legislature from a provincial revenue fund.","Artificial debt":"A \"loan\" that is presented as debt but is in effect equity. Often used in tax avoidance or evasion.","Asset price bubble":"A condition occurring when prices for a category of assets rise above the level justified by economic fundamentals.","Balance of payments":"A summary statement of all the international transactions of the residents of a country with the rest of the world over a particular period of time.","Base erosion and profit shifting":"Corporate tax-planning strategies that exploit the gaps and mismatches in tax laws between countries to artificially shift taxable income to lower or no-tax jurisdictions. See also tax evasion and profit shifting.","Basel III":"Reforms developed by the Basel Committee on Banking Supervision to strengthen the regulation, supervision and risk management of the banking sector.","Baseline":"The initial allocations used during the budget process, derived from the previous year's forward estimates.","Basis point":"One hundredth of one per cent.","Beneficiation":"Manufacturing activities that transform raw minerals into higher-value products.","Bond":"A certificate of debt issued by a government or corporation guaranteeing payment of the original investment plus interest by a specified future date.","Bond premium":"Amount by which the purchase price of a bond is greater than its par value.","Bond spread":"The difference in yield between two bonds.","Bond-switch programme":"An auction that aims to ease pressure on targeted areas of the redemption profile by exchanging shorter-dated debt for longer-term debt. See switch auction.","Bracket creep":"Increased real tax liability that arises when the personal income tax tables are not fully adjusted for inflation.","Budget balance":"The difference between budgeted expenditure and budgeted revenue. If expenditure exceeds revenue, the budget is in deficit. If the reverse is true, it is in surplus.","Capital adequacy":"A measure of a financial institution’s capital, expressed as a percentage of its credit exposure.","Capital asset":"Property of any kind, including assets that are movable or immovable, tangible or intangible, fixed or circulating, but excluding trading stock held for the purpose of realising a financial or economic return.","Capital expenditure":"Spending on assets such as buildings, land, infrastructure and equipment.","Capital flow":"A flow of investments in or out of the country.","Capital formation":"A measure of the net increase in the country’s total stock of capital goods, after allowing for depreciation.","Capital gains tax":"Tax levied on the income realised from the disposal of a capital asset by a taxpayer. A capital gain is the excess of the selling price over the purchase price of the capital asset.","Capital goods":"Durable goods used over a period of time for the production of other goods. See also intermediate goods.","Carbon tax":"An environmental tax on emissions of carbon dioxide (CO2).","Category A, B and C municipalities":"Municipal categories established by the Constitution: Category A, or metropolitan municipalities; Category B, or local municipalities; and Category C, or district municipalities.","Collateral":"An asset placed as a guarantee for the repayment of debt, to be recouped in the case of a default.","Commercial paper issuances":"Debt issued by companies through short-term promissory notes.","Conditional grants":"Allocations of money from one sphere of government to another, conditional on certain services being delivered or on compliance with specified requirements.","Connected person debt/credit":"Debt or credit granted by a person/entity to a connected person/entity. In the case of a holding company, for example, a subsidiary company would be a connected person.","Consolidated general government":"National, provincial and local government, as well as extra-budgetary government institutions and social security funds.","Consolidated government expenditure":"Total expenditure by national and provincial government, social security funds and selected public entities, including transfers and subsidies to municipalities, businesses and other entities.","Consumer price index (CPI)":"The measure of inflation based on prices in a basket of goods and services.","Consumption expenditure":"Expenditure on goods and services, including salaries, which are used up within a short period of time, usually a year.","Contingency reserve":"An amount set aside, but not allocated in advance, to accommodate changes to the economic environment and to meet unforeseeable spending pressures.","Contingent liability":"A government obligation, such as a guarantee, that will only result in expenditure upon the occurrence of a specific event. See government guarantee.","Controlled foreign entity":"A foreign business in which South Africans hold a greater than 50 per cent interest, usually of the share capital of a company.","Corporatisation":"The transformation of state-owned enterprises into commercial entities, subject to commercial legal requirements and governance structures, while the state retains ownership.","Cost-push inflation":"Inflation that is caused by an increase in production costs, such as wages or oil prices.","Countercyclical fiscal policy":"Policy that has the opposite effect on economic activity to that caused by the business cycle, such as slowing spending growth in a boom period and accelerating spending in a recession.","Coupon (bond)":"The periodic interest payment made to bondholders during the life of the bond. The interest is usually paid twice a year.","Credit rating":"An indicator of the risk of default by a borrower or the riskiness of a financial instrument. Credit ratings generally fit into three broad risk categories: minimal or low, moderate and high. These categories indicate the extent of a borrower’s capacity to meet their financial obligations or the probability that the value of a financial instrument will be realised. Investments rated as high risk are considered sub-investment grade (or “junk”).","Crowding-in":"An increase in private investment through the income-raising effect of government spending financed by deficits.","Crowding-out":"A fall in private investment or consumption as a result of increased government expenditure financed through borrowing, thereby competing for loanable funds and raising the interest rate, which curtails private investment and consumption spending.","Currency risk":"The potential for a change in the price of a currency that would affect investors with assets, liabilities or operations denominated in other currencies.","Current account (of the balance of payments)":"The difference between total imports and total exports, taking into account service payments and receipts, interest, dividends and transfers. The current account can be in deficit or surplus. See also trade balance.","Current balance":"The difference between revenue and current expenditure, which consists of compensation of employees, goods and services, and interest and rent on land.","Current expenditure":"Government expenditure on salaries and goods and services, such as rent, maintenance and interest payments. See also consumption expenditure.","Customs duties":"Tax levied on imported goods.","Debenture":"An unsecured loan backed by general credit rather than by specified assets.","Debt redemption profile":"The set of fixed repayment dates and amounts to which an issuer of debt, such as a preferred stock or bond, has committed to meeting.","Debt switching":"The exchange of bonds to manage refinancing risk or improve tradability.","Debt-service costs":"The cost of interest on government debt and other costs directly associated with borrowing.","Deflation":"A consistent decrease in the price of goods and services.","Deleveraging":"The reduction of debt previously used to increase the potential return of an investment.","Depreciation (capital)":"A reduction in the value of fixed capital as a result of wear and tear or redundancy.","Depreciation (exchange rate)":"A reduction in the external value of a currency.","Derivative financial instrument":"A financial asset that derives its value from an underlying asset, which may be a physical asset such as gold, or a financial asset such as a government bond.","Designated countries":"Foreign countries from which income may be exempt from South African tax under certain circumstances. See also double tax agreement.","Development finance institutions":"State agencies that aim to meet the credit needs of riskier but socially and economically desirable projects that are beyond the acceptance limits of commercial banks.","Direct taxes":"Taxes charged on taxable income or capital of individuals and legal entities.","Discretionary trust":"A trust where the executor has the choice of whether and how much of the trust’s income or capital is to be distributed to beneficiaries. The beneficiaries have only provisional rights to the income or capital of the trust.","Disposable income":"Total income by households less all taxes and employee contributions.","Dissaving":"An excess of current expenditure, including the depreciation of fixed capital, over current income.","Dividend":"The distribution of a portion of a company's earnings to a class of its shareholders.","Dividend withholding tax":"A tax on dividends that is subtracted and withheld by a company or intermediary before the net dividend is paid to the shareholder.","Division of revenue":"The allocation of funds between spheres of government, as required by the Constitution. See also equitable share.","Domestic demand":"The total level of spending in an economy, including imports but excluding exports.","Double tax agreement":"An agreement between two countries to prevent income that is taxed in one country from being taxed in the other as well. See also designated countries.","Economic cost":"The cost of an alternative that must be forgone to pursue a certain action. In other words, the benefits that could have been received by taking an alternative action.","Economic growth":"An increase in the total amount of output, income and spending in the economy.","Economic rent":"The difference between the return made by a factor of production (capital or labour) and the return necessary to keep the factor in its current occupation. For example, a firm making excess profits is earning economic rent.","Economically active population":"The part of the population that is of working age and is either employed or seeking work.","Effective tax rate":"Actual tax liability (or a reasonable estimate thereof) expressed as a percentage of a pre-tax income base rather than as a percentage of taxable income. In other words, tax rates that take into account not only the statutory or nominal tax rate, but also other aspects of the tax system (for example, allowable deductions), which determine the tax liability.","Embedded derivative":"A provision in a contract modifying its cash flows by making them dependent on an underlying measure – such as interest or exchange rates, or commodity prices – the value of which changes independently.","Emerging economies":"A name given by international investors to middle-income economies.","Employment coefficient":"The ratio of employment growth to economic growth.","Equitable share":"The allocation of revenue to the national, provincial and local spheres of government as required by the Constitution. See also division of revenue.","Equity finance":"Raising money by selling shares of stock to investors, who receive an ownership interest in return.","Exchange control":"Rules that regulate the flow of currency out of South Africa, or restrict the amount of foreign assets held by South African individuals and companies.","Exchange-traded funds":"Funds that track indexes, commodities or baskets of assets, and trade like stocks.","Excise duties":"Taxes on the manufacture or sale of certain domestic or imported products. Excise duties are usually charged on products such as alcoholic beverages, tobacco and petroleum.","Expenditure ceiling":"The maximum allowable level of expenditure to which government has committed itself.","Extra-budgetary institutions":"Public entities not directly funded from the fiscus.","Fair-value adjustment":"A change in the value of an asset or liability resulting from the periodic reassessment of its expected future economic in- or outflows.","Financial Services Board":"An independent institution established by statute that regulates insurers, intermediaries, retirement funds, friendly societies, unit trust schemes, management companies and financial markets.","Financial Stability Board":"An international body made up of representatives of financial authorities and institutions, and central banks. It proposes regulatory, supervisory and other policies in the interest of financial stability.","Financial account":"A statement of all financial transactions between the nation and the rest of the world, including portfolio and fixed investment flows and movements in foreign reserves.","Financial and Fiscal Commission (FFC)":"An independent body established by the Constitution to make recommendations to Parliament and provincial legislatures about financial issues affecting the three spheres of government.","Financial year":"The 12 months according to which companies and organisations budget and account. See also fiscal year.","Fiscal consolidation":"Policy aimed at reducing government deficits and debt accumulation.","Fiscal incidence":"The combined overall economic impact that fiscal policy has on the economy.","Fiscal leakage":"The outflow of revenue from an economy through tax evasion and avoidance.","Fiscal policy":"Policy on taxation, public spending and borrowing by the government.","Fiscal space":"The ability of government’s budget to provide additional resources for a desired programme without jeopardising fiscal or debt sustainability.","Fiscal year":"The 12 months on which government budgets are based, beginning 1 April and ending 31 March of the subsequent calendar year.","Fixed investment/capital formation":"Spending on buildings, machinery and equipment contributing to production capacity in the economy. See also gross fixed-capital formation.","Fixed-income bond":"A bond that pays a specific interest rate.","Floating rate notes":"A bond on which the interest rate is reset periodically in line with a money market reference rate.","Flow-through vehicles":"A vehicle, such as a trust, where income earned is treated as income of the vehicle’s beneficiaries.","Foreign currency swaps":"The exchange of principal and/or interest payments in one currency for those in another.","Foreign direct investment (FDI)":"The acquisition of a controlling interest by governments, institutions or individuals of a business in another country.","Forward book":"The total amount of contracts for the future exchange of foreign currency entered into by the Reserve Bank at any given point in time.","Forward cover":"Transactions involving an agreed exchange rate at which foreign currency will be purchased or sold at a future date.","Fringe benefit":"A benefit supplementing an employee’s wages or salary, such as medical insurance, company cars, housing allowances and pension schemes.","Fuel levy":"An excise tax on liquid fuels.","Function shift":"The movement of a function from one departmental vote or sphere of government to another.","Funded pension arrangements":"A pension scheme in which expected future benefits are funded in advance and as entitlement accrues.","Gold and foreign exchange reserves":"Reserves held by the Reserve Bank to meet foreign exchange obligations and to maintain liquidity in the presence of external shocks.","Government debt":"The total amount of money owed by the government as a consequence of its past borrowing.","Government guarantee":"An assurance made by government to a lender that a financial obligation will be honoured, even if the borrowing government institution is unable to repay the debt. See contingent liability.","Green paper":"A policy document intended for public discussion.","Gross borrowing requirement":"The sum of the main budget balance, extraordinary receipts and payments (referred to as National Revenue Fund receipts and payments), and maturing debt. The amount is funded through domestic short- and long- term loans, foreign loans and changes in cash balances.","Gross domestic product (GDP)":"A measure of the total national output, income and expenditure in the economy. GDP per head is the simplest overall measure of welfare, although it does not take account of the distribution of income, nor of goods and services that are produced outside the market economy, such as work within the household.","Gross domestic product inflation":"A measure of the total increase in prices in the whole economy. Unlike CPI inflation, GDP inflation includes price increases in goods that are exported and intermediate goods such as machines, but excludes imported goods.","Gross fixed-capital formation":"The addition to a country’s fixed-capital stock during a specific period, before provision for depreciation.","Gross value added":"The value of output less intermediate consumption. It is also a measure of the contribution to the economy made by an industry or sector.","Group of Twenty (G20)":"An international forum made up of finance ministers and central bank governors from 20 of the world’s largest economies.","Hedging":"An action taken by a buyer or seller to protect income against changes in prices, interest rates or exchange rates.","Horizontal equity":"A principle in taxation that holds that similarly situated taxpayers should face a similar tax treatment or tax burden. In other words, taxpayers with the same amount of income or capital should be accorded equal treatment.","Impaired advances":"Loans or advances that may not be collected in full.","Impairment":"A reduction in the recorded value of a long-lived asset arising from circumstances that prevent the asset from generating the future economic benefits previously expected and recorded.","Import parity pricing":"When a firm sells goods locally at the price customers would pay if they were to import the same goods from another country.","Inclusion rate":"The portion of the net capital gain derived from the disposal of an asset that will be taxed at the applicable rate.","Industrial development zone":"Designated sites linked to an international air or sea port, supported by incentives to encourage investment in export-orientated manufacturing and job creation.","Inflation":"An increase in the overall price level of goods and services in an economy over a specific period of time.","Inflation targeting":"A monetary policy framework intended to achieve price stability over a certain period of time.","Inter-state debt":"Money that different organs of state owe to each other.","Intergenerational equity":"A value based on ensuring that future generations do not have to repay debts taken on today, unless they also share in the benefits of assets.","Intermediate goods":"Goods produced to be used as inputs in the production of final goods.","Inventories":"Stocks of goods held by firms. An increase in inventories reflects an excess of output relative to spending over a period of time.","Labour intensity":"The relative amount of labour used to produce a unit of output.","Liquidity":"The ease with which assets can be bought and sold.","Liquidity requirements":"The amount of liquid or freely convertible assets that banks are required to hold relative to their liabilities for prudential and regulatory purposes.","Liquidity risk":"The risk that an asset might not easily and quickly be converted into cash through sale, or the risk to a debtor that it cannot meet its current debt obligations.","Lump-sum benefit":"A one-time payment for the total or partial value of an asset, usually received in place of recurring smaller payments.","M3":"The broadest definition of money supply in South Africa, including notes and coins, demand and fixed deposits, and credit.","Macroeconomics":"The branch of economics that deals with the whole economy – including issues such as growth, inflation, unemployment and the balance of payments.","Macroprudential regulation":"Rules that protect the stability of the financial sector and guard against systemic risk.","Marginal income tax rate":"The rate of tax on an incremental unit of income.","Marginal lending rate":"A penalty rate of interest charged by the Reserve Bank for lending to financial institutions in the money market in excess of the daily liquidity provided to the money market at the repurchase rate. See also repurchase agreements.","Marketable securities":"Tradable financial securities listed with a securities exchange.","Means test":"A method for determining whether someone qualifies for state assistance.","Medium Term Expenditure Committee (MTEC)":"The technical committee responsible for evaluating the medium-term expenditure framework budget submissions of national departments and making recommendations to the Minister of Finance regarding allocations to national departments.","Medium-term expenditure framework (MTEF)":"The three-year spending plans of national and provincial governments, published at the time of the Budget.","Microeconomics":"The branch of economics that deals with the behaviour of individual firms, consumers and sectors.","Ministers’ Committee on the Budget":"The political committee that considers key policy and budgetary issues that pertain to the budget process before they are tabled in Cabinet.","Monetary easing":"See quantitative easing.","Monetary policy":"Policy concerning total money supply, exchange rates and the general level of interest rates.","Money supply":"The total stock of money in an economy.","National Development Plan":"A planning framework prepared by the National Planning Commission that aims to eliminate poverty and reduce inequality by 2030.","National Revenue Fund":"The consolidated account of the national government into which all taxes, fees and charges collected by SARS and departmental revenue must be paid.","National budget":"The projected revenue and expenditures that flow through the National Revenue Fund. It does not include spending by provinces or local government from their own revenues.","Negotiable certificate of deposit":"Short-term deposit instruments issued by banks, at a variable interest rate, for a fixed period.","Net borrowing requirement":"The main budget balance.","Net exports":"Exports less imports.","Net open foreign currency position":"Gold and foreign exchange reserves minus the oversold forward book. The figure is expressed in dollars.","Net trade":"The difference between the value of exports and the value of imports.","New Development Bank":"A multilateral lending institution being established by Brazil, Russia, India, China and South Africa.","Nominal exchange rates":"The current rate of exchange between the rand and foreign currencies. The “effective” exchange rate is a trade-weighted average of the rates of exchange with other currencies.","Nominal wage":"The return, or wage, to employees at the current price level.","Non-competitive bid auction":"An auction in which an investor agrees to purchase a certain number of securities such as bonds at the average price of all competitive bids over a given period of time.","Non-financial public enterprises":"Government-owned or controlled organisations that deliver goods and non- financial services, trading as business enterprises, such as Eskom or Transnet.","Non-interest expenditure":"Total expenditure by government less debt-service costs.","Non-tax revenue":"Income received by government as a result of administrative charges, licences, fees, sales of goods and services, and so on.","Occupation-specific salary dispensation":"Revised salary structures unique to identified occupations in the public service, including doctors, nurses and teachers.","Opportunity cost":"The value of that which must be given up to achieve or acquire something. It is represented by the next highest valued alternative use of a resource.","Organisation for Economic Cooperation and Development (OECD)":"An organisation of 35 mainly industrialised member countries. South Africa is not a member.","PAYE":"The pay-as-you-earn (PAYE) system of income tax withholding requires employers to deduct income tax, and in some cases, the employees’ portion of social benefit taxes, from each paycheque delivered to employees.","Payroll tax":"Tax an employer withholds and/or pays on behalf of employees based on employee wages or salaries.","Permanent establishment":"A fixed place of business from which a company operates. When two countries have a tax treaty, the concept of “permanent establishment” is used to determine the right of one state to tax the profits of the business in the other state. See also anti-fragmentation.","Policy reserve":"Additional money in the fiscus to fund new and crucial priorities.","Portfolio investment":"Investment in financial assets such as stocks and bonds.","Potential growth":"The fastest growth an economy can sustain without increasing inflation.","Presidential Infrastructure Coordinating Commission (PICC)":"A commission established by Cabinet to develop, review and coordinate a 20-year infrastructure plan.","Price discovery":"The process of determining the price level of a commodity or asset, based on supply and demand factors.","Price sensitivity":"The extent to which changes in price affect consumer purchasing behaviour.","Primary deficit/surplus":"The difference between total revenue and non-interest expenditure. When revenue exceeds non-interest expenditure there is a surplus.","Primary sector":"The agricultural and mining sectors of the economy.","Principal purpose test":"A test where the benefits of a tax treaty are denied if it is reasonable to conclude that obtaining the benefit was one of the principal purposes behind the arrangement or transaction.","Private-sector credit extension":"Credit provided to the private sector. This includes all loans, credit cards and leases.","Privatisation":"The full or partial sale of state-owned enterprises to private individuals or companies.","Producer price index (PPI)":"Price increases measured by the producer price index – a measure of the prices paid based mainly on producers’ published price lists.","Productivity":"A measure of the amount of output generated from every unit of input. Typically used to measure changes in labour efficiency.","Profit shifting":"The allocation of income and expenses between related corporations or branches of the same legal entity to reduce overall tax liability.","Public Finance Management Act (PFMA)":"The act regulating financial management of national and provincial government, including the efficiency and effectiveness of public expenditure and the responsibilities of those engaging with government financial management.","Public Investment Corporation (PIC)":"A government-owned investment management company that invests funds on behalf of public-sector entities. Its largest client is the Government Employees Pension Fund.","Public entities":"Companies, agencies, funds and accounts that are fully or partly owned by government or public authorities and are regulated by law.","Public goods":"Goods and services that would not be fully provided in a pure free-market system and are largely provided by government.","Public sector":"National government, provincial government, local government, extra- budgetary governmental institutions, social security funds and non- financial public enterprises.","Public-benefit organisations (PBOs)":"Organisations that are mainly funded by donations from the public and other institutions, which engage in social activities to meet the needs of the general public.","Public-private partnerships (PPPs)":"A contractual arrangement whereby a private party performs a government function and assumes the associated risks. In return, the private party receives a fee according to predefined performance criteria. See unitary payment.","Public-sector borrowing requirement":"The consolidated cash borrowing requirement of general government and non-financial public enterprises.","Purchasing managers’ index (PMI)":"A composite index measuring the change in manufacturing activity compared with the previous month. An index value of 50 indicates no change in activity, a value above 50 indicates increased activity and a value below 50 indicates decreased activity.","Quantitative easing":"A measure used by central banks to stimulate economic growth when interest rates are near zero by increasing money supply. Also called monetary easing.","Quarterly Employment Survey":"An establishment-based survey conducted by Statistics South Africa to obtain information about the number of employees and gross salaries paid.","Quarterly Labour Force Survey":"A household-based survey conducted by Statistics South Africa to measure the dynamics of the labour market, producing indicators such as employment, unemployment and inactivity.","Rating agency":"A company that evaluates the ability of countries or other borrowers to honour their debt obligations. Credit ratings are used by international investors as indications of sovereign risk. See also credit rating.","Real effective exchange rate":"A measure of the rate of exchange of the rand relative to a trade-weighted average of South Africa’s trading partners’ currencies, adjusted for price trends in South Africa and the countries included.","Real exchange rate":"The level of the exchange rate taking account of inflation differences.","Real expenditure":"Expenditure measured in constant prices after taking account of inflation.","Real interest rate":"The level of interest after taking account of inflation.","Real wage":"The return, or wage, to employees, measured at a constant price level.","Recapitalisation":"Injection of funds into a company or entity to aid liquidity, either as a loan or in return for equity.","Recession":"A period in which national output and income decline. A recession is usually defined as two consecutive quarters of negative growth.","Redemption":"The return of an investor’s principal in a fixed-income security, such as a preferred stock or bond.","Refinancing":"The repayment of debt at a scheduled time with the proceeds of new loans.","Refinancing risk":"The risk that government will not be able to raise money to repay debt at any scheduled point, or that it will have to do so at a high cost.","Regional integration":"An economic policy intended to boost economic activity in a geographical area extending beyond one country.","Remuneration":"The costs of personnel, including salaries, housing allowances, car allowances and other benefits received by personnel.","Repurchase (repo) rate":"The rate at which the Reserve Bank lends to commercial banks.","Repurchase agreements":"Short-term contracts between the Reserve Bank and private banks in the money market to sell specified amounts of money at an interest rate determined by daily auction.","Reserves (foreign exchange)":"Holdings of foreign exchange, either by the Reserve Bank only or by the Reserve Bank and domestic banking institutions.","Residence-based income tax system":"A tax system in which the worldwide income accruing to a resident of a country is subject to the taxes of that country.","Reticulation scheme":"A piped water network that ensures that water is collected and treated before it reaches the consumer.","Revaluation gain/loss":"The difference between the value of a foreign currency deposit from the original (historical) rate to execution of a trade based on the spot rate.","Risk premium":"A return that compensates for uncertainty.","Saving":"The difference between income and spending.","Seasonally adjusted":"Removal of seasonal volatility (monthly or quarterly) from a time series. This provides a measure of the underlying trend in the data.","Secondary rebate":"A rebate from income tax, in addition to the primary rebate, that is available to taxpayers aged 65 years and older.","Secondary sector":"The part of the economy concerned with the manufacture of goods.","Secondary tax on companies (STC)":"Tax on dividends declared by a company, calculated at the rate of 10 per cent of the net amount of dividends declared. This was discontinued in 2012 and replaced with a 15 per cent dividend withholding tax.","Section 21 company":"Non-profit entities registered in terms of Section 21 of the Companies Act.","Sector education and training authorities":"Institutions funded through employer training levies, responsible for learnership programmes and implementing strategic sector skills plans.","Secured debt instruments":"Debt backed or secured by collateral to reduce the risk of lending.","Securitisation":"The pooling of assets into a financial instrument to sell to different types of investors.","Service and transfer payments":"Services involve transactions of non-tangible commodities, while transfers are unrequited transactions that do not generate a counter-economic value (for example, gifts and grants).","Skills development levy":"A payroll tax designed to finance training initiatives in terms of the skills development strategy.","Social infrastructure":"Infrastructure that supports social services.","Social wage":"Social benefits available to all individuals, funded wholly or partly by the state.","Source-based income tax system":"A system in which income is taxed in the country where the income originates.","Southern African Customs Union (SACU) agreement":"An agreement between South Africa, Botswana, Namibia, Lesotho and Swaziland that allows for the unrestricted flow of goods and services, and the sharing of customs and excise revenue.","Southern African Development Community (SADC)":"A regional intergovernmental organisation that promotes collaboration, economic integration and technical cooperation throughout southern Africa.","Sovereign debt":"Debt issued by a government.","Sovereign debt rating":"An assessment of the likelihood that a government will default on its debt obligations.","Spatial planning":"Planning to influence the geographic distribution of people and economic activity.","Special economic zones":"A designated zone where business and trade laws incentivise trade, investment and employment.","Specific excise duty":"A tax on each unit of output or sale of a good, unrelated to the value of a good.","Standing appropriations":"Government’s expenditure obligations that do not require a vote or statutory provision, including contractual guarantee commitments and international agreements.","Statutory appropriations":"Amounts appropriated to be spent in terms of statutes and not requiring appropriation by vote.","Sterilisation":"Action taken by the Reserve Bank to neutralise excess cash created in the money market when purchasing foreign currency.","Structural budget balance":"A representation of what government revenue and expenditure would be if output were at its potential level, with cyclical variations stripped out.","Structural constraints":"Imbalances in the structure of the economy that hinder growth and development.","Switch auction":"An auction to exchange bonds to manage refinancing risk or improve tradability.","Syndicated loan":"A large loan in which a group of banks work together to provide funds, which they solicit from their clients for the borrower.","Tax amnesty":"A period allowed by tax authorities during which taxpayers who are outside the tax net, but should be registered for tax purposes, can register for tax without incurring penalties.","Tax avoidance":"When individuals or businesses legitimately use provisions in the tax law to reduce their tax liability.","Tax base":"The aggregate value of income, sales or transactions on which particular taxes are levied.","Tax buoyancy":"Describes the relationship between total tax revenue collections and economic growth. This measure includes the effects of policy changes on revenue. A value above one means that revenues are growing faster than the economy and below one means they are growing below the rate of GDP growth.","Tax evasion":"When individuals or businesses illegally reduce their tax liability.","Tax expenditure":"Government revenue forgone due to provisions that allow deductions, exclusions, or exemptions from taxable income. The revenue can also be foregone through the deferral of tax liability or preferential tax rates.","Tax gap":"A measure of tax evasion that emerges from comparing the tax liability or tax base declared to the tax authorities with the tax liability or tax base calculated from other sources.","Tax incentives":"Specific provisions in the tax code that provide favourable tax treatment to individuals and businesses to encourage specific behaviour or activities.","Tax incidence":"The final distribution of the burden of tax. Statutory incidence defines where the law requires a tax to be levied. Economic incidence refers to those who experience a decrease in real income as a result of the imposition of a tax.","Tax loopholes":"Unintended weaknesses in the legal provisions of the tax system used by taxpayers to avoid paying tax liability.","Tax morality":"The willingness, or motivation, of citizens to pay tax. This is separate to the statutory obligation to pay taxes, but may have an influence on tax compliance.","Tax-to-GDP ratio":"For public finance comparison purposes, a country’s tax burden, or tax-to- GDP ratio, is calculated by taking the total tax payments for a particular fiscal year as a fraction or percentage of the GDP for that year.","Term-to-maturity":"The time between issuance and expiry.","Terms of trade":"An index measuring the ratio of a country’s export prices relative to its import prices.","Tertiary sector":"The part of the economy concerned with the provision of services.","Total factor productivity":"An index used to measure the efficiency of all inputs that contribute to the production process.","Trade balance":"The monetary record of a country’s net imports and exports of physical merchandise. See also current account.","Trade regime":"The system of tariffs, quotas and quantitative restrictions applied to protect domestic industries, together with subsidies and incentives used to promote international trade.","Trade-weighted rand":"The value of the rand pegged to or expressed relative to a market basket of selected foreign currencies.","Trademark":"A legal right pointing distinctly to the origin or ownership of merchandise to which it is applied and legally reserved for the exclusive use of the owner as maker or seller.","Treasury bills":"Short-term government debt instruments that yield no interest but are issued at a discount. Maturities vary from one day to 12 months.","Treasury committee":"The Cabinet committee that evaluates all requests for additional funds for unavoidable and unforeseen expenditure during a financial year.","Treaty shopping":"When related companies in different countries establish a third entity in another location to take advantage of a favourable tax arrangement.","Trend GDP growth":"The theoretical level of GDP growth determined by the full utilisation of all factors of production (land, labour and capital). Growth above the trend rate results in macroeconomic imbalances such as rising inflation or a weakening of the current account. Increases in trend GDP growth are achieved through capital formation, growth in employment and/or technological development.","Unallocated reserves":"Potential expenditure provision not allocated to a particular use. It mainly consists of the contingency reserve and amounts of money left unallocated by provinces.","Unemployment (broad definition)":"All those of working age who are unemployed, including those actively seeking employment and discouraged work seekers.","Unemployment (official definition)":"Those of working age, who are unemployed and actively seeking work (excludes discouraged work seekers).","Unit labour cost":"The cost of labour per unit of output, calculated by dividing average wages by productivity (output per worker per hour).","Unitary payment":"The payment made to the private party for meeting its obligations in the project deliverables in a public-private partnership.","Unqualified audit":"An assessment by a registered auditing firm or the Auditor-General of South Africa asserting that the financial statements of a department, entity or company are free of material misstatement.","Unsecured debt instruments":"Debt not backed or secured by collateral to reduce the risk of lending.","Unsecured lending":"A loan that is not backed or secured by any type of collateral to reduce the lender’s risk.","Vertical equity":"A doctrine in taxation that holds that differently situated taxpayers should be treated differently in terms of income tax provisions. In other words, taxpayers with more income and/or capital should pay more tax.","Vested right":"The right to ownership of an asset that cannot be arbitrarily taken away by a third party.","Virement":"The transfer of resources from one programme to another within the same department during a financial year.","Vote":"An appropriation voted by Parliament.","Water trading account":"A departmental account that ring-fences revenue from the sale of bulk water and related services to secure funding to manage the sustainability of water resources and infrastructure.","Weighted average cost of capital":"The average rate of return an organisation expects to pay to investors in its securities, such as bonds, debt and shares. Each category of security is accorded a proportionate weight in the calculation.","White paper":"A policy document used to present government policy preferences.","Withholding tax":"Tax on income deducted at source. Withholding taxes are widely used for dividends, interest and royalties.","Yield":"A financial return or interest paid to buyers of government bonds. The yield/rate of return on bonds takes into account the total annual interest payments, the purchase price, the redemption value and the amount of time remaining until maturity.","Yield curve":"A graph showing the relationship between the yield on bonds of the same credit quality but different maturity at a given point in time."}
+
+/***/ }),
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4279,7 +4306,7 @@ module.exports = function getPolyfill() {
 
 
 
-var emptyFunction = __webpack_require__(19);
+var emptyFunction = __webpack_require__(21);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -4334,13 +4361,7 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 41 */
-/***/ (function(module, exports) {
-
-module.exports = {"Accounting officer":"The public servant in a department who is accountable to Parliament for financial management, usually the director-general or head of the department.","Accrual":"An accounting convention by which payments and receipts are recorded as they occur, even if no cash flow takes place.","Acquisition debt":"Debt used to purchase shares or assets.","Ad valorem duties":"Duties levied on commodities as a certain percentage of their value.","Adjustments estimate":"Presentation to Parliament of the amendments to be made to the appropriations voted in the main budget for the year.","Administered prices":"Prices set outside ordinary market processes through administrative decisions by government, a public entity or a regulator.","Agro-processing":"Manufacturing activities that transform raw materials and intermediary goods derived from agriculture into intermediate or final goods.","Allocated expenditure":"The part of the national budget that can be divided between the national, provincial and local spheres of government, after interest and the contingency reserve have been taken into account.","Amortisation":"The repayment of a loan by instalments over the duration of the loan.","Annuity":"A fixed amount of money paid over a period of time as a return on an investment.","Anti-avoidance rule":"A provision aimed at preventing tax avoidance. See principal purpose test.","Anti-fragmentation rule":"A rule that aims to prevent taxpayers from artificially avoiding permanent establishment status by breaking up a cohesive business into several small operations.","Appropriation":"The approval by Parliament of spending from the National Revenue Fund, or by a provincial legislature from a provincial revenue fund.","Artificial debt":"A \"loan\" that is presented as debt but is in effect equity. Often used in tax avoidance or evasion.","Asset price bubble":"A condition occurring when prices for a category of assets rise above the level justified by economic fundamentals.","Balance of payments":"A summary statement of all the international transactions of the residents of a country with the rest of the world over a particular period of time.","Base erosion and profit shifting":"Corporate tax-planning strategies that exploit the gaps and mismatches in tax laws between countries to artificially shift taxable income to lower or no-tax jurisdictions. See also tax evasion and profit shifting.","Basel III":"Reforms developed by the Basel Committee on Banking Supervision to strengthen the regulation, supervision and risk management of the banking sector.","Baseline":"The initial allocations used during the budget process, derived from the previous year's forward estimates.","Basis point":"One hundredth of one per cent.","Beneficiation":"Manufacturing activities that transform raw minerals into higher-value products.","Bond":"A certificate of debt issued by a government or corporation guaranteeing payment of the original investment plus interest by a specified future date.","Bond premium":"Amount by which the purchase price of a bond is greater than its par value.","Bond spread":"The difference in yield between two bonds.","Bond-switch programme":"An auction that aims to ease pressure on targeted areas of the redemption profile by exchanging shorter-dated debt for longer-term debt. See switch auction.","Bracket creep":"Increased real tax liability that arises when the personal income tax tables are not fully adjusted for inflation.","Budget balance":"The difference between budgeted expenditure and budgeted revenue. If expenditure exceeds revenue, the budget is in deficit. If the reverse is true, it is in surplus.","Capital adequacy":"A measure of a financial institution’s capital, expressed as a percentage of its credit exposure.","Capital asset":"Property of any kind, including assets that are movable or immovable, tangible or intangible, fixed or circulating, but excluding trading stock held for the purpose of realising a financial or economic return.","Capital expenditure":"Spending on assets such as buildings, land, infrastructure and equipment.","Capital flow":"A flow of investments in or out of the country.","Capital formation":"A measure of the net increase in the country’s total stock of capital goods, after allowing for depreciation.","Capital gains tax":"Tax levied on the income realised from the disposal of a capital asset by a taxpayer. A capital gain is the excess of the selling price over the purchase price of the capital asset.","Capital goods":"Durable goods used over a period of time for the production of other goods. See also intermediate goods.","Carbon tax":"An environmental tax on emissions of carbon dioxide (CO2).","Category A, B and C municipalities":"Municipal categories established by the Constitution: Category A, or metropolitan municipalities; Category B, or local municipalities; and Category C, or district municipalities.","Collateral":"An asset placed as a guarantee for the repayment of debt, to be recouped in the case of a default.","Commercial paper issuances":"Debt issued by companies through short-term promissory notes.","Conditional grants":"Allocations of money from one sphere of government to another, conditional on certain services being delivered or on compliance with specified requirements.","Connected person debt/credit":"Debt or credit granted by a person/entity to a connected person/entity. In the case of a holding company, for example, a subsidiary company would be a connected person.","Consolidated general government":"National, provincial and local government, as well as extra-budgetary government institutions and social security funds.","Consolidated government expenditure":"Total expenditure by national and provincial government, social security funds and selected public entities, including transfers and subsidies to municipalities, businesses and other entities.","Consumer price index (CPI)":"The measure of inflation based on prices in a basket of goods and services.","Consumption expenditure":"Expenditure on goods and services, including salaries, which are used up within a short period of time, usually a year.","Contingency reserve":"An amount set aside, but not allocated in advance, to accommodate changes to the economic environment and to meet unforeseeable spending pressures.","Contingent liability":"A government obligation, such as a guarantee, that will only result in expenditure upon the occurrence of a specific event. See government guarantee.","Controlled foreign entity":"A foreign business in which South Africans hold a greater than 50 per cent interest, usually of the share capital of a company.","Corporatisation":"The transformation of state-owned enterprises into commercial entities, subject to commercial legal requirements and governance structures, while the state retains ownership.","Cost-push inflation":"Inflation that is caused by an increase in production costs, such as wages or oil prices.","Countercyclical fiscal policy":"Policy that has the opposite effect on economic activity to that caused by the business cycle, such as slowing spending growth in a boom period and accelerating spending in a recession.","Coupon (bond)":"The periodic interest payment made to bondholders during the life of the bond. The interest is usually paid twice a year.","Credit rating":"An indicator of the risk of default by a borrower or the riskiness of a financial instrument. Credit ratings generally fit into three broad risk categories: minimal or low, moderate and high. These categories indicate the extent of a borrower’s capacity to meet their financial obligations or the probability that the value of a financial instrument will be realised. Investments rated as high risk are considered sub-investment grade (or “junk”).","Crowding-in":"An increase in private investment through the income-raising effect of government spending financed by deficits.","Crowding-out":"A fall in private investment or consumption as a result of increased government expenditure financed through borrowing, thereby competing for loanable funds and raising the interest rate, which curtails private investment and consumption spending.","Currency risk":"The potential for a change in the price of a currency that would affect investors with assets, liabilities or operations denominated in other currencies.","Current account (of the balance of payments)":"The difference between total imports and total exports, taking into account service payments and receipts, interest, dividends and transfers. The current account can be in deficit or surplus. See also trade balance.","Current balance":"The difference between revenue and current expenditure, which consists of compensation of employees, goods and services, and interest and rent on land.","Current expenditure":"Government expenditure on salaries and goods and services, such as rent, maintenance and interest payments. See also consumption expenditure.","Customs duties":"Tax levied on imported goods.","Debenture":"An unsecured loan backed by general credit rather than by specified assets.","Debt redemption profile":"The set of fixed repayment dates and amounts to which an issuer of debt, such as a preferred stock or bond, has committed to meeting.","Debt switching":"The exchange of bonds to manage refinancing risk or improve tradability.","Debt-service costs":"The cost of interest on government debt and other costs directly associated with borrowing.","Deflation":"A consistent decrease in the price of goods and services.","Deleveraging":"The reduction of debt previously used to increase the potential return of an investment.","Depreciation (capital)":"A reduction in the value of fixed capital as a result of wear and tear or redundancy.","Depreciation (exchange rate)":"A reduction in the external value of a currency.","Derivative financial instrument":"A financial asset that derives its value from an underlying asset, which may be a physical asset such as gold, or a financial asset such as a government bond.","Designated countries":"Foreign countries from which income may be exempt from South African tax under certain circumstances. See also double tax agreement.","Development finance institutions":"State agencies that aim to meet the credit needs of riskier but socially and economically desirable projects that are beyond the acceptance limits of commercial banks.","Direct taxes":"Taxes charged on taxable income or capital of individuals and legal entities.","Discretionary trust":"A trust where the executor has the choice of whether and how much of the trust’s income or capital is to be distributed to beneficiaries. The beneficiaries have only provisional rights to the income or capital of the trust.","Disposable income":"Total income by households less all taxes and employee contributions.","Dissaving":"An excess of current expenditure, including the depreciation of fixed capital, over current income.","Dividend":"The distribution of a portion of a company's earnings to a class of its shareholders.","Dividend withholding tax":"A tax on dividends that is subtracted and withheld by a company or intermediary before the net dividend is paid to the shareholder.","Division of revenue":"The allocation of funds between spheres of government, as required by the Constitution. See also equitable share.","Domestic demand":"The total level of spending in an economy, including imports but excluding exports.","Double tax agreement":"An agreement between two countries to prevent income that is taxed in one country from being taxed in the other as well. See also designated countries.","Economic cost":"The cost of an alternative that must be forgone to pursue a certain action. In other words, the benefits that could have been received by taking an alternative action.","Economic growth":"An increase in the total amount of output, income and spending in the economy.","Economic rent":"The difference between the return made by a factor of production (capital or labour) and the return necessary to keep the factor in its current occupation. For example, a firm making excess profits is earning economic rent.","Economically active population":"The part of the population that is of working age and is either employed or seeking work.","Effective tax rate":"Actual tax liability (or a reasonable estimate thereof) expressed as a percentage of a pre-tax income base rather than as a percentage of taxable income. In other words, tax rates that take into account not only the statutory or nominal tax rate, but also other aspects of the tax system (for example, allowable deductions), which determine the tax liability.","Embedded derivative":"A provision in a contract modifying its cash flows by making them dependent on an underlying measure – such as interest or exchange rates, or commodity prices – the value of which changes independently.","Emerging economies":"A name given by international investors to middle-income economies.","Employment coefficient":"The ratio of employment growth to economic growth.","Equitable share":"The allocation of revenue to the national, provincial and local spheres of government as required by the Constitution. See also division of revenue.","Equity finance":"Raising money by selling shares of stock to investors, who receive an ownership interest in return.","Exchange control":"Rules that regulate the flow of currency out of South Africa, or restrict the amount of foreign assets held by South African individuals and companies.","Exchange-traded funds":"Funds that track indexes, commodities or baskets of assets, and trade like stocks.","Excise duties":"Taxes on the manufacture or sale of certain domestic or imported products. Excise duties are usually charged on products such as alcoholic beverages, tobacco and petroleum.","Expenditure ceiling":"The maximum allowable level of expenditure to which government has committed itself.","Extra-budgetary institutions":"Public entities not directly funded from the fiscus.","Fair-value adjustment":"A change in the value of an asset or liability resulting from the periodic reassessment of its expected future economic in- or outflows.","Financial Services Board":"An independent institution established by statute that regulates insurers, intermediaries, retirement funds, friendly societies, unit trust schemes, management companies and financial markets.","Financial Stability Board":"An international body made up of representatives of financial authorities and institutions, and central banks. It proposes regulatory, supervisory and other policies in the interest of financial stability.","Financial account":"A statement of all financial transactions between the nation and the rest of the world, including portfolio and fixed investment flows and movements in foreign reserves.","Financial and Fiscal Commission (FFC)":"An independent body established by the Constitution to make recommendations to Parliament and provincial legislatures about financial issues affecting the three spheres of government.","Financial year":"The 12 months according to which companies and organisations budget and account. See also fiscal year.","Fiscal consolidation":"Policy aimed at reducing government deficits and debt accumulation.","Fiscal incidence":"The combined overall economic impact that fiscal policy has on the economy.","Fiscal leakage":"The outflow of revenue from an economy through tax evasion and avoidance.","Fiscal policy":"Policy on taxation, public spending and borrowing by the government.","Fiscal space":"The ability of government’s budget to provide additional resources for a desired programme without jeopardising fiscal or debt sustainability.","Fiscal year":"The 12 months on which government budgets are based, beginning 1 April and ending 31 March of the subsequent calendar year.","Fixed investment/capital formation":"Spending on buildings, machinery and equipment contributing to production capacity in the economy. See also gross fixed-capital formation.","Fixed-income bond":"A bond that pays a specific interest rate.","Floating rate notes":"A bond on which the interest rate is reset periodically in line with a money market reference rate.","Flow-through vehicles":"A vehicle, such as a trust, where income earned is treated as income of the vehicle’s beneficiaries.","Foreign currency swaps":"The exchange of principal and/or interest payments in one currency for those in another.","Foreign direct investment (FDI)":"The acquisition of a controlling interest by governments, institutions or individuals of a business in another country.","Forward book":"The total amount of contracts for the future exchange of foreign currency entered into by the Reserve Bank at any given point in time.","Forward cover":"Transactions involving an agreed exchange rate at which foreign currency will be purchased or sold at a future date.","Fringe benefit":"A benefit supplementing an employee’s wages or salary, such as medical insurance, company cars, housing allowances and pension schemes.","Fuel levy":"An excise tax on liquid fuels.","Function shift":"The movement of a function from one departmental vote or sphere of government to another.","Funded pension arrangements":"A pension scheme in which expected future benefits are funded in advance and as entitlement accrues.","Gold and foreign exchange reserves":"Reserves held by the Reserve Bank to meet foreign exchange obligations and to maintain liquidity in the presence of external shocks.","Government debt":"The total amount of money owed by the government as a consequence of its past borrowing.","Government guarantee":"An assurance made by government to a lender that a financial obligation will be honoured, even if the borrowing government institution is unable to repay the debt. See contingent liability.","Green paper":"A policy document intended for public discussion.","Gross borrowing requirement":"The sum of the main budget balance, extraordinary receipts and payments (referred to as National Revenue Fund receipts and payments), and maturing debt. The amount is funded through domestic short- and long- term loans, foreign loans and changes in cash balances.","Gross domestic product (GDP)":"A measure of the total national output, income and expenditure in the economy. GDP per head is the simplest overall measure of welfare, although it does not take account of the distribution of income, nor of goods and services that are produced outside the market economy, such as work within the household.","Gross domestic product inflation":"A measure of the total increase in prices in the whole economy. Unlike CPI inflation, GDP inflation includes price increases in goods that are exported and intermediate goods such as machines, but excludes imported goods.","Gross fixed-capital formation":"The addition to a country’s fixed-capital stock during a specific period, before provision for depreciation.","Gross value added":"The value of output less intermediate consumption. It is also a measure of the contribution to the economy made by an industry or sector.","Group of Twenty (G20)":"An international forum made up of finance ministers and central bank governors from 20 of the world’s largest economies.","Hedging":"An action taken by a buyer or seller to protect income against changes in prices, interest rates or exchange rates.","Horizontal equity":"A principle in taxation that holds that similarly situated taxpayers should face a similar tax treatment or tax burden. In other words, taxpayers with the same amount of income or capital should be accorded equal treatment.","Impaired advances":"Loans or advances that may not be collected in full.","Impairment":"A reduction in the recorded value of a long-lived asset arising from circumstances that prevent the asset from generating the future economic benefits previously expected and recorded.","Import parity pricing":"When a firm sells goods locally at the price customers would pay if they were to import the same goods from another country.","Inclusion rate":"The portion of the net capital gain derived from the disposal of an asset that will be taxed at the applicable rate.","Industrial development zone":"Designated sites linked to an international air or sea port, supported by incentives to encourage investment in export-orientated manufacturing and job creation.","Inflation":"An increase in the overall price level of goods and services in an economy over a specific period of time.","Inflation targeting":"A monetary policy framework intended to achieve price stability over a certain period of time.","Inter-state debt":"Money that different organs of state owe to each other.","Intergenerational equity":"A value based on ensuring that future generations do not have to repay debts taken on today, unless they also share in the benefits of assets.","Intermediate goods":"Goods produced to be used as inputs in the production of final goods.","Inventories":"Stocks of goods held by firms. An increase in inventories reflects an excess of output relative to spending over a period of time.","Labour intensity":"The relative amount of labour used to produce a unit of output.","Liquidity":"The ease with which assets can be bought and sold.","Liquidity requirements":"The amount of liquid or freely convertible assets that banks are required to hold relative to their liabilities for prudential and regulatory purposes.","Liquidity risk":"The risk that an asset might not easily and quickly be converted into cash through sale, or the risk to a debtor that it cannot meet its current debt obligations.","Lump-sum benefit":"A one-time payment for the total or partial value of an asset, usually received in place of recurring smaller payments.","M3":"The broadest definition of money supply in South Africa, including notes and coins, demand and fixed deposits, and credit.","Macroeconomics":"The branch of economics that deals with the whole economy – including issues such as growth, inflation, unemployment and the balance of payments.","Macroprudential regulation":"Rules that protect the stability of the financial sector and guard against systemic risk.","Marginal income tax rate":"The rate of tax on an incremental unit of income.","Marginal lending rate":"A penalty rate of interest charged by the Reserve Bank for lending to financial institutions in the money market in excess of the daily liquidity provided to the money market at the repurchase rate. See also repurchase agreements.","Marketable securities":"Tradable financial securities listed with a securities exchange.","Means test":"A method for determining whether someone qualifies for state assistance.","Medium Term Expenditure Committee (MTEC)":"The technical committee responsible for evaluating the medium-term expenditure framework budget submissions of national departments and making recommendations to the Minister of Finance regarding allocations to national departments.","Medium-term expenditure framework (MTEF)":"The three-year spending plans of national and provincial governments, published at the time of the Budget.","Microeconomics":"The branch of economics that deals with the behaviour of individual firms, consumers and sectors.","Ministers’ Committee on the Budget":"The political committee that considers key policy and budgetary issues that pertain to the budget process before they are tabled in Cabinet.","Monetary easing":"See quantitative easing.","Monetary policy":"Policy concerning total money supply, exchange rates and the general level of interest rates.","Money supply":"The total stock of money in an economy.","National Development Plan":"A planning framework prepared by the National Planning Commission that aims to eliminate poverty and reduce inequality by 2030.","National Revenue Fund":"The consolidated account of the national government into which all taxes, fees and charges collected by SARS and departmental revenue must be paid.","National budget":"The projected revenue and expenditures that flow through the National Revenue Fund. It does not include spending by provinces or local government from their own revenues.","Negotiable certificate of deposit":"Short-term deposit instruments issued by banks, at a variable interest rate, for a fixed period.","Net borrowing requirement":"The main budget balance.","Net exports":"Exports less imports.","Net open foreign currency position":"Gold and foreign exchange reserves minus the oversold forward book. The figure is expressed in dollars.","Net trade":"The difference between the value of exports and the value of imports.","New Development Bank":"A multilateral lending institution being established by Brazil, Russia, India, China and South Africa.","Nominal exchange rates":"The current rate of exchange between the rand and foreign currencies. The “effective” exchange rate is a trade-weighted average of the rates of exchange with other currencies.","Nominal wage":"The return, or wage, to employees at the current price level.","Non-competitive bid auction":"An auction in which an investor agrees to purchase a certain number of securities such as bonds at the average price of all competitive bids over a given period of time.","Non-financial public enterprises":"Government-owned or controlled organisations that deliver goods and non- financial services, trading as business enterprises, such as Eskom or Transnet.","Non-interest expenditure":"Total expenditure by government less debt-service costs.","Non-tax revenue":"Income received by government as a result of administrative charges, licences, fees, sales of goods and services, and so on.","Occupation-specific salary dispensation":"Revised salary structures unique to identified occupations in the public service, including doctors, nurses and teachers.","Opportunity cost":"The value of that which must be given up to achieve or acquire something. It is represented by the next highest valued alternative use of a resource.","Organisation for Economic Cooperation and Development (OECD)":"An organisation of 35 mainly industrialised member countries. South Africa is not a member.","PAYE":"The pay-as-you-earn (PAYE) system of income tax withholding requires employers to deduct income tax, and in some cases, the employees’ portion of social benefit taxes, from each paycheque delivered to employees.","Payroll tax":"Tax an employer withholds and/or pays on behalf of employees based on employee wages or salaries.","Permanent establishment":"A fixed place of business from which a company operates. When two countries have a tax treaty, the concept of “permanent establishment” is used to determine the right of one state to tax the profits of the business in the other state. See also anti-fragmentation.","Policy reserve":"Additional money in the fiscus to fund new and crucial priorities.","Portfolio investment":"Investment in financial assets such as stocks and bonds.","Potential growth":"The fastest growth an economy can sustain without increasing inflation.","Presidential Infrastructure Coordinating Commission (PICC)":"A commission established by Cabinet to develop, review and coordinate a 20-year infrastructure plan.","Price discovery":"The process of determining the price level of a commodity or asset, based on supply and demand factors.","Price sensitivity":"The extent to which changes in price affect consumer purchasing behaviour.","Primary deficit/surplus":"The difference between total revenue and non-interest expenditure. When revenue exceeds non-interest expenditure there is a surplus.","Primary sector":"The agricultural and mining sectors of the economy.","Principal purpose test":"A test where the benefits of a tax treaty are denied if it is reasonable to conclude that obtaining the benefit was one of the principal purposes behind the arrangement or transaction.","Private-sector credit extension":"Credit provided to the private sector. This includes all loans, credit cards and leases.","Privatisation":"The full or partial sale of state-owned enterprises to private individuals or companies.","Producer price index (PPI)":"Price increases measured by the producer price index – a measure of the prices paid based mainly on producers’ published price lists.","Productivity":"A measure of the amount of output generated from every unit of input. Typically used to measure changes in labour efficiency.","Profit shifting":"The allocation of income and expenses between related corporations or branches of the same legal entity to reduce overall tax liability.","Public Finance Management Act (PFMA)":"The act regulating financial management of national and provincial government, including the efficiency and effectiveness of public expenditure and the responsibilities of those engaging with government financial management.","Public Investment Corporation (PIC)":"A government-owned investment management company that invests funds on behalf of public-sector entities. Its largest client is the Government Employees Pension Fund.","Public entities":"Companies, agencies, funds and accounts that are fully or partly owned by government or public authorities and are regulated by law.","Public goods":"Goods and services that would not be fully provided in a pure free-market system and are largely provided by government.","Public sector":"National government, provincial government, local government, extra- budgetary governmental institutions, social security funds and non- financial public enterprises.","Public-benefit organisations (PBOs)":"Organisations that are mainly funded by donations from the public and other institutions, which engage in social activities to meet the needs of the general public.","Public-private partnerships (PPPs)":"A contractual arrangement whereby a private party performs a government function and assumes the associated risks. In return, the private party receives a fee according to predefined performance criteria. See unitary payment.","Public-sector borrowing requirement":"The consolidated cash borrowing requirement of general government and non-financial public enterprises.","Purchasing managers’ index (PMI)":"A composite index measuring the change in manufacturing activity compared with the previous month. An index value of 50 indicates no change in activity, a value above 50 indicates increased activity and a value below 50 indicates decreased activity.","Quantitative easing":"A measure used by central banks to stimulate economic growth when interest rates are near zero by increasing money supply. Also called monetary easing.","Quarterly Employment Survey":"An establishment-based survey conducted by Statistics South Africa to obtain information about the number of employees and gross salaries paid.","Quarterly Labour Force Survey":"A household-based survey conducted by Statistics South Africa to measure the dynamics of the labour market, producing indicators such as employment, unemployment and inactivity.","Rating agency":"A company that evaluates the ability of countries or other borrowers to honour their debt obligations. Credit ratings are used by international investors as indications of sovereign risk. See also credit rating.","Real effective exchange rate":"A measure of the rate of exchange of the rand relative to a trade-weighted average of South Africa’s trading partners’ currencies, adjusted for price trends in South Africa and the countries included.","Real exchange rate":"The level of the exchange rate taking account of inflation differences.","Real expenditure":"Expenditure measured in constant prices after taking account of inflation.","Real interest rate":"The level of interest after taking account of inflation.","Real wage":"The return, or wage, to employees, measured at a constant price level.","Recapitalisation":"Injection of funds into a company or entity to aid liquidity, either as a loan or in return for equity.","Recession":"A period in which national output and income decline. A recession is usually defined as two consecutive quarters of negative growth.","Redemption":"The return of an investor’s principal in a fixed-income security, such as a preferred stock or bond.","Refinancing":"The repayment of debt at a scheduled time with the proceeds of new loans.","Refinancing risk":"The risk that government will not be able to raise money to repay debt at any scheduled point, or that it will have to do so at a high cost.","Regional integration":"An economic policy intended to boost economic activity in a geographical area extending beyond one country.","Remuneration":"The costs of personnel, including salaries, housing allowances, car allowances and other benefits received by personnel.","Repurchase (repo) rate":"The rate at which the Reserve Bank lends to commercial banks.","Repurchase agreements":"Short-term contracts between the Reserve Bank and private banks in the money market to sell specified amounts of money at an interest rate determined by daily auction.","Reserves (foreign exchange)":"Holdings of foreign exchange, either by the Reserve Bank only or by the Reserve Bank and domestic banking institutions.","Residence-based income tax system":"A tax system in which the worldwide income accruing to a resident of a country is subject to the taxes of that country.","Reticulation scheme":"A piped water network that ensures that water is collected and treated before it reaches the consumer.","Revaluation gain/loss":"The difference between the value of a foreign currency deposit from the original (historical) rate to execution of a trade based on the spot rate.","Risk premium":"A return that compensates for uncertainty.","Saving":"The difference between income and spending.","Seasonally adjusted":"Removal of seasonal volatility (monthly or quarterly) from a time series. This provides a measure of the underlying trend in the data.","Secondary rebate":"A rebate from income tax, in addition to the primary rebate, that is available to taxpayers aged 65 years and older.","Secondary sector":"The part of the economy concerned with the manufacture of goods.","Secondary tax on companies (STC)":"Tax on dividends declared by a company, calculated at the rate of 10 per cent of the net amount of dividends declared. This was discontinued in 2012 and replaced with a 15 per cent dividend withholding tax.","Section 21 company":"Non-profit entities registered in terms of Section 21 of the Companies Act.","Sector education and training authorities":"Institutions funded through employer training levies, responsible for learnership programmes and implementing strategic sector skills plans.","Secured debt instruments":"Debt backed or secured by collateral to reduce the risk of lending.","Securitisation":"The pooling of assets into a financial instrument to sell to different types of investors.","Service and transfer payments":"Services involve transactions of non-tangible commodities, while transfers are unrequited transactions that do not generate a counter-economic value (for example, gifts and grants).","Skills development levy":"A payroll tax designed to finance training initiatives in terms of the skills development strategy.","Social infrastructure":"Infrastructure that supports social services.","Social wage":"Social benefits available to all individuals, funded wholly or partly by the state.","Source-based income tax system":"A system in which income is taxed in the country where the income originates.","Southern African Customs Union (SACU) agreement":"An agreement between South Africa, Botswana, Namibia, Lesotho and Swaziland that allows for the unrestricted flow of goods and services, and the sharing of customs and excise revenue.","Southern African Development Community (SADC)":"A regional intergovernmental organisation that promotes collaboration, economic integration and technical cooperation throughout southern Africa.","Sovereign debt":"Debt issued by a government.","Sovereign debt rating":"An assessment of the likelihood that a government will default on its debt obligations.","Spatial planning":"Planning to influence the geographic distribution of people and economic activity.","Special economic zones":"A designated zone where business and trade laws incentivise trade, investment and employment.","Specific excise duty":"A tax on each unit of output or sale of a good, unrelated to the value of a good.","Standing appropriations":"Government’s expenditure obligations that do not require a vote or statutory provision, including contractual guarantee commitments and international agreements.","Statutory appropriations":"Amounts appropriated to be spent in terms of statutes and not requiring appropriation by vote.","Sterilisation":"Action taken by the Reserve Bank to neutralise excess cash created in the money market when purchasing foreign currency.","Structural budget balance":"A representation of what government revenue and expenditure would be if output were at its potential level, with cyclical variations stripped out.","Structural constraints":"Imbalances in the structure of the economy that hinder growth and development.","Switch auction":"An auction to exchange bonds to manage refinancing risk or improve tradability.","Syndicated loan":"A large loan in which a group of banks work together to provide funds, which they solicit from their clients for the borrower.","Tax amnesty":"A period allowed by tax authorities during which taxpayers who are outside the tax net, but should be registered for tax purposes, can register for tax without incurring penalties.","Tax avoidance":"When individuals or businesses legitimately use provisions in the tax law to reduce their tax liability.","Tax base":"The aggregate value of income, sales or transactions on which particular taxes are levied.","Tax buoyancy":"Describes the relationship between total tax revenue collections and economic growth. This measure includes the effects of policy changes on revenue. A value above one means that revenues are growing faster than the economy and below one means they are growing below the rate of GDP growth.","Tax evasion":"When individuals or businesses illegally reduce their tax liability.","Tax expenditure":"Government revenue forgone due to provisions that allow deductions, exclusions, or exemptions from taxable income. The revenue can also be foregone through the deferral of tax liability or preferential tax rates.","Tax gap":"A measure of tax evasion that emerges from comparing the tax liability or tax base declared to the tax authorities with the tax liability or tax base calculated from other sources.","Tax incentives":"Specific provisions in the tax code that provide favourable tax treatment to individuals and businesses to encourage specific behaviour or activities.","Tax incidence":"The final distribution of the burden of tax. Statutory incidence defines where the law requires a tax to be levied. Economic incidence refers to those who experience a decrease in real income as a result of the imposition of a tax.","Tax loopholes":"Unintended weaknesses in the legal provisions of the tax system used by taxpayers to avoid paying tax liability.","Tax morality":"The willingness, or motivation, of citizens to pay tax. This is separate to the statutory obligation to pay taxes, but may have an influence on tax compliance.","Tax-to-GDP ratio":"For public finance comparison purposes, a country’s tax burden, or tax-to- GDP ratio, is calculated by taking the total tax payments for a particular fiscal year as a fraction or percentage of the GDP for that year.","Term-to-maturity":"The time between issuance and expiry.","Terms of trade":"An index measuring the ratio of a country’s export prices relative to its import prices.","Tertiary sector":"The part of the economy concerned with the provision of services.","Total factor productivity":"An index used to measure the efficiency of all inputs that contribute to the production process.","Trade balance":"The monetary record of a country’s net imports and exports of physical merchandise. See also current account.","Trade regime":"The system of tariffs, quotas and quantitative restrictions applied to protect domestic industries, together with subsidies and incentives used to promote international trade.","Trade-weighted rand":"The value of the rand pegged to or expressed relative to a market basket of selected foreign currencies.","Trademark":"A legal right pointing distinctly to the origin or ownership of merchandise to which it is applied and legally reserved for the exclusive use of the owner as maker or seller.","Treasury bills":"Short-term government debt instruments that yield no interest but are issued at a discount. Maturities vary from one day to 12 months.","Treasury committee":"The Cabinet committee that evaluates all requests for additional funds for unavoidable and unforeseen expenditure during a financial year.","Treaty shopping":"When related companies in different countries establish a third entity in another location to take advantage of a favourable tax arrangement.","Trend GDP growth":"The theoretical level of GDP growth determined by the full utilisation of all factors of production (land, labour and capital). Growth above the trend rate results in macroeconomic imbalances such as rising inflation or a weakening of the current account. Increases in trend GDP growth are achieved through capital formation, growth in employment and/or technological development.","Unallocated reserves":"Potential expenditure provision not allocated to a particular use. It mainly consists of the contingency reserve and amounts of money left unallocated by provinces.","Unemployment (broad definition)":"All those of working age who are unemployed, including those actively seeking employment and discouraged work seekers.","Unemployment (official definition)":"Those of working age, who are unemployed and actively seeking work (excludes discouraged work seekers).","Unit labour cost":"The cost of labour per unit of output, calculated by dividing average wages by productivity (output per worker per hour).","Unitary payment":"The payment made to the private party for meeting its obligations in the project deliverables in a public-private partnership.","Unqualified audit":"An assessment by a registered auditing firm or the Auditor-General of South Africa asserting that the financial statements of a department, entity or company are free of material misstatement.","Unsecured debt instruments":"Debt not backed or secured by collateral to reduce the risk of lending.","Unsecured lending":"A loan that is not backed or secured by any type of collateral to reduce the lender’s risk.","Vertical equity":"A doctrine in taxation that holds that differently situated taxpayers should be treated differently in terms of income tax provisions. In other words, taxpayers with more income and/or capital should pay more tax.","Vested right":"The right to ownership of an asset that cannot be arbitrarily taken away by a third party.","Virement":"The transfer of resources from one programme to another within the same department during a financial year.","Vote":"An appropriation voted by Parliament.","Water trading account":"A departmental account that ring-fences revenue from the sale of bulk water and related services to secure funding to manage the sustainability of water resources and infrastructure.","Weighted average cost of capital":"The average rate of return an organisation expects to pay to investors in its securities, such as bonds, debt and shares. Each category of security is accorded a proportionate weight in the calculation.","White paper":"A policy document used to present government policy preferences.","Withholding tax":"Tax on income deducted at source. Withholding taxes are widely used for dividends, interest and royalties.","Yield":"A financial return or interest paid to buyers of government bonds. The yield/rate of return on bonds takes into account the total annual interest payments, the purchase price, the redemption value and the amount of time remaining until maturity.","Yield curve":"A graph showing the relationship between the yield on bonds of the same credit quality but different maturity at a given point in time."}
-
-/***/ }),
-/* 42 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4353,7 +4374,7 @@ exports.default = Tooltip;
 
 var _preact = __webpack_require__(0);
 
-var _Box = __webpack_require__(105);
+var _Box = __webpack_require__(132);
 
 var _Box2 = _interopRequireDefault(_Box);
 
@@ -4389,160 +4410,7 @@ function Tooltip(_ref) {
 }
 
 /***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = LineChart;
-
-var _preact = __webpack_require__(0);
-
-var _calcMaxValue = __webpack_require__(125);
-
-var _calcMaxValue2 = _interopRequireDefault(_calcMaxValue);
-
-var _buildGroupSpaceArray = __webpack_require__(126);
-
-var _buildGroupSpaceArray2 = _interopRequireDefault(_buildGroupSpaceArray);
-
-var _Breakpoints = __webpack_require__(128);
-
-var _Breakpoints2 = _interopRequireDefault(_Breakpoints);
-
-var _Grid = __webpack_require__(130);
-
-var _Grid2 = _interopRequireDefault(_Grid);
-
-var _Guides = __webpack_require__(131);
-
-var _Guides2 = _interopRequireDefault(_Guides);
-
-var _LineGroups = __webpack_require__(133);
-
-var _LineGroups2 = _interopRequireDefault(_LineGroups);
-
-var _Tooltips = __webpack_require__(136);
-
-var _Tooltips2 = _interopRequireDefault(_Tooltips);
-
-var _Labels = __webpack_require__(139);
-
-var _Labels2 = _interopRequireDefault(_Labels);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function LineChart(props) {
-  var items = props.items,
-      width = props.width,
-      hover = props.hover;
-  var parentAction = props.parentAction;
-
-
-  var styling = {
-    fontSize: 14,
-    popupFontSize: 14,
-    maxValue: (0, _calcMaxValue2.default)(items),
-    popupWidth: 90,
-    popUpOffset: 6,
-    buffer: 20,
-    valueSpace: width - (0 + 100),
-    padding: [50, 0, 30, 100],
-    popupHeight: 30,
-    popupCentre: 5,
-    charWrap: width / 10,
-    titleSpace: 0,
-    labelBreakpoints: 4,
-    showGuides: true,
-    charLineHeight: 14,
-    lineGutter: 8,
-    barWidth: 12,
-    groupMargin: 40,
-    svgHeight: 300
-  };
-
-  if (hover) {
-    styling = _extends({}, styling, {
-      padding: [80, 30, 60, 130],
-      valueSpace: width - (30 + 130)
-    });
-  }
-
-  var _styling = styling,
-      valueSpace = _styling.valueSpace,
-      padding = _styling.padding,
-      showGuides = _styling.showGuides,
-      svgHeight = _styling.svgHeight,
-      buffer = _styling.buffer;
-
-  var groupSpaceArray = (0, _buildGroupSpaceArray2.default)(items, styling);
-  var totalGroupSpace = groupSpaceArray.reduce(function (result, val) {
-    return result + val;
-  }, 0);
-  var height = padding[0] + svgHeight + padding[2] + buffer * 2;
-  var newWidth = padding[3] + valueSpace + padding[1];
-
-  var content = (0, _preact.h)(
-    'svg',
-    {
-      version: '1.1',
-      className: 'ColumnChart-svg is-hoverable',
-      xmlns: 'http://www.w3.org/2000/svg',
-      viewBox: '0 0 ' + newWidth + ' ' + height,
-      width: newWidth,
-      height: height,
-      style: { maxWidth: newWidth }
-    },
-    (0, _preact.h)(_Breakpoints2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_Grid2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_Guides2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
-    (0, _preact.h)(_LineGroups2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
-    (0, _preact.h)(_Tooltips2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
-    (0, _preact.h)(_Labels2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling })
-  );
-
-  return (0, _preact.h)(
-    'div',
-    {
-      className: 'LineChart',
-      ref: function ref(node) {
-        return parentAction && parentAction(node);
-      }
-    },
-    content
-  );
-}
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports) {
-
-module.exports = {"apiBaseURL":"https://data.vulekamali.gov.za"}
-
-/***/ }),
 /* 45 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = removePunctuation;
-function removePunctuation(string) {
-  return string.replace(/[^\w\s]/g, ' ');
-}
-
-/***/ }),
-/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4847,15 +4715,15 @@ var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbo
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var RGBColor = __webpack_require__(179);
-var stackblur = __webpack_require__(180);
-var xmldom = __webpack_require__(181);
+var RGBColor = __webpack_require__(143);
+var stackblur = __webpack_require__(144);
+var xmldom = __webpack_require__(145);
 
 /*
  * canvg.js - Javascript SVG parser and renderer on Canvas
@@ -7939,7 +7807,7 @@ function build(opts) {
 module.exports = canvg;
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9167,6 +9035,138 @@ exports.XMLSerializer = XMLSerializer;
 //}
 
 /***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = LineChart;
+
+var _preact = __webpack_require__(0);
+
+var _calcMaxValue = __webpack_require__(149);
+
+var _calcMaxValue2 = _interopRequireDefault(_calcMaxValue);
+
+var _buildGroupSpaceArray = __webpack_require__(150);
+
+var _buildGroupSpaceArray2 = _interopRequireDefault(_buildGroupSpaceArray);
+
+var _Breakpoints = __webpack_require__(152);
+
+var _Breakpoints2 = _interopRequireDefault(_Breakpoints);
+
+var _Grid = __webpack_require__(154);
+
+var _Grid2 = _interopRequireDefault(_Grid);
+
+var _Guides = __webpack_require__(155);
+
+var _Guides2 = _interopRequireDefault(_Guides);
+
+var _LineGroups = __webpack_require__(157);
+
+var _LineGroups2 = _interopRequireDefault(_LineGroups);
+
+var _Tooltips = __webpack_require__(160);
+
+var _Tooltips2 = _interopRequireDefault(_Tooltips);
+
+var _Labels = __webpack_require__(163);
+
+var _Labels2 = _interopRequireDefault(_Labels);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function LineChart(props) {
+  var items = props.items,
+      width = props.width,
+      hover = props.hover;
+  var parentAction = props.parentAction;
+
+
+  var styling = {
+    fontSize: 14,
+    popupFontSize: 14,
+    maxValue: (0, _calcMaxValue2.default)(items),
+    popupWidth: 90,
+    popUpOffset: 6,
+    buffer: 20,
+    valueSpace: width - (0 + 100),
+    padding: [50, 0, 30, 100],
+    popupHeight: 30,
+    popupCentre: 5,
+    charWrap: width / 10,
+    titleSpace: 0,
+    labelBreakpoints: 4,
+    showGuides: true,
+    charLineHeight: 14,
+    lineGutter: 8,
+    barWidth: 12,
+    groupMargin: 40,
+    svgHeight: 300
+  };
+
+  if (hover) {
+    styling = _extends({}, styling, {
+      padding: [80, 30, 60, 130],
+      valueSpace: width - (30 + 130)
+    });
+  }
+
+  var _styling = styling,
+      valueSpace = _styling.valueSpace,
+      padding = _styling.padding,
+      showGuides = _styling.showGuides,
+      svgHeight = _styling.svgHeight,
+      buffer = _styling.buffer;
+
+  var groupSpaceArray = (0, _buildGroupSpaceArray2.default)(items, styling);
+  var totalGroupSpace = groupSpaceArray.reduce(function (result, val) {
+    return result + val;
+  }, 0);
+  var height = padding[0] + svgHeight + padding[2] + buffer * 2;
+  var newWidth = padding[3] + valueSpace + padding[1];
+
+  var content = (0, _preact.h)(
+    'svg',
+    {
+      version: '1.1',
+      className: 'ColumnChart-svg is-hoverable',
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 ' + newWidth + ' ' + height,
+      width: newWidth,
+      height: height,
+      style: { maxWidth: newWidth }
+    },
+    (0, _preact.h)(_Breakpoints2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
+    (0, _preact.h)(_Grid2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
+    (0, _preact.h)(_Guides2.default, { styling: styling, totalGroupSpace: totalGroupSpace }),
+    (0, _preact.h)(_LineGroups2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
+    (0, _preact.h)(_Tooltips2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling }),
+    (0, _preact.h)(_Labels2.default, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, items: items, styling: styling })
+  );
+
+  return (0, _preact.h)(
+    'div',
+    {
+      className: 'LineChart',
+      ref: function ref(node) {
+        return parentAction && parentAction(node);
+      }
+    },
+    content
+  );
+}
+
+/***/ }),
 /* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9180,7 +9180,7 @@ exports.default = Download;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(13);
+var _index = __webpack_require__(14);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -9247,41 +9247,41 @@ __webpack_require__(61);
 
 __webpack_require__(84);
 
-__webpack_require__(98);
+__webpack_require__(87);
 
-__webpack_require__(108);
+__webpack_require__(93);
+
+__webpack_require__(101);
+
+__webpack_require__(102);
+
+__webpack_require__(104);
+
+__webpack_require__(121);
+
+__webpack_require__(130);
+
+__webpack_require__(135);
 
 __webpack_require__(141);
 
-__webpack_require__(144);
+__webpack_require__(142);
 
-__webpack_require__(150);
-
-__webpack_require__(158);
-
-__webpack_require__(159);
-
-__webpack_require__(161);
-
-__webpack_require__(163);
-
-__webpack_require__(169);
-
-__webpack_require__(171);
+__webpack_require__(173);
 
 __webpack_require__(177);
 
-__webpack_require__(178);
-
-__webpack_require__(186);
+__webpack_require__(188);
 
 __webpack_require__(190);
 
-__webpack_require__(201);
+__webpack_require__(192);
 
-__webpack_require__(203);
+__webpack_require__(194);
 
-__webpack_require__(205);
+__webpack_require__(199);
+
+__webpack_require__(206);
 
 /***/ }),
 /* 52 */
@@ -12443,23 +12443,144 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _preact = __webpack_require__(0);
 
 var _index = __webpack_require__(85);
 
 var _index2 = _interopRequireDefault(_index);
 
+var _global = __webpack_require__(40);
+
+var _removePunctuation = __webpack_require__(41);
+
+var _removePunctuation2 = _interopRequireDefault(_removePunctuation);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SearchResultContainer = function (_Component) {
+  _inherits(SearchResultContainer, _Component);
+
+  function SearchResultContainer(props) {
+    _classCallCheck(this, SearchResultContainer);
+
+    var _this = _possibleConstructorReturn(this, (SearchResultContainer.__proto__ || Object.getPrototypeOf(SearchResultContainer)).call(this, props));
+
+    _this.state = {
+      results: [],
+      count: null,
+      page: 1,
+      province: 'all',
+      open: null,
+      error: false,
+      loading: true
+    };
+
+    _this.updateItem = _this.updateItem.bind(_this);
+    _this.updateFilter = _this.updateFilter.bind(_this);
+    return _this;
+  }
+
+  _createClass(SearchResultContainer, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      var datasetPackagesQueryUrl = _global.apiBaseURL + '/api/3/action/package_search?q=' + (0, _removePunctuation2.default)(this.props.search) + '&start=0&rows=999&fq=+organization:national-treasury+vocab_financial_years:' + this.props.selectedYear + '+extras_department_name_slug:[* TO *]+extras_geographic_region_slug:[* TO *]';
+
+      var request = new Promise(function (resolve, reject) {
+        fetch(datasetPackagesQueryUrl).then(function (response) {
+          if (!response.ok) {
+            reject(response);
+          }
+
+          response.json().then(function (data) {
+            _this2.setState({ count: data.result.count });
+            resolve(data.result.results);
+          }).catch(function (err) {
+            return reject(err);
+          });
+        }).catch(function (err) {
+          return reject(err);
+        });
+      });
+
+      request.then(function (array) {
+        _this2.setState({ loading: false });
+        _this2.setState({ results: array });
+      }).catch(function (err) {
+        _this2.setState({ loading: false });
+        _this2.setState({ error: true });
+        console.warn(err);
+      });
+    }
+  }, {
+    key: 'updateItem',
+    value: function updateItem(key, value, parent) {
+      if (parent) {
+        return this.setState(_defineProperty({}, parent, _extends({}, this.state[parent], _defineProperty({}, key, value))));
+      }
+
+      return this.setState(_defineProperty({}, key, value));
+    }
+  }, {
+    key: 'updateFilter',
+    value: function updateFilter(filter, value) {
+      if (this.state.open === filter) {
+        this.setState({ page: 1 });
+        this.setState(_defineProperty({}, filter, value));
+        this.setState({ open: null });
+        return null;
+      }
+
+      return this.setState({ open: filter });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return (0, _preact.h)(_index2.default, {
+        results: this.state.results,
+        search: this.props.search,
+        selectedYear: this.props.selectedYear,
+        updateFilter: this.updateFilter,
+        shown: this.state.shown,
+        changeShown: this.changeShown,
+        page: this.state.page,
+        province: this.state.province,
+        state: this.state,
+        updateItem: this.updateItem,
+        error: this.state.error,
+        loading: this.state.loading
+      });
+    }
+  }]);
+
+  return SearchResultContainer;
+}(_preact.Component);
+
 function scripts() {
-  var nodes = document.getElementsByClassName('js-initShare');
+  var nodes = document.getElementsByClassName('js-initSearchResult');
   var nodesArray = [].concat(_toConsumableArray(nodes));
+  var search = window.vulekamali.qs.search;
+
 
   if (nodesArray.length > 0) {
     nodesArray.forEach(function (node) {
-      (0, _preact.render)((0, _preact.h)(_index2.default, null), node);
+      var selectedYear = node.getAttribute('data-year');
+      (0, _preact.render)((0, _preact.h)(SearchResultContainer, { selectedYear: selectedYear, search: search }), node);
     });
   }
 }
@@ -12476,71 +12597,161 @@ exports.default = scripts();
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+exports.default = SearchResultMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _ShareMarkup = __webpack_require__(86);
+var _Form = __webpack_require__(86);
 
-var _ShareMarkup2 = _interopRequireDefault(_ShareMarkup);
+var _Form2 = _interopRequireDefault(_Form);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function SearchResultMarkup(_ref) {
+  var loading = _ref.loading,
+      error = _ref.error,
+      state = _ref.state,
+      updateItem = _ref.updateItem,
+      page = _ref.page,
+      province = _ref.province,
+      results = _ref.results,
+      search = _ref.search,
+      selectedYear = _ref.selectedYear,
+      updateFilter = _ref.updateFilter;
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ShareContainer = function (_Component) {
-  _inherits(ShareContainer, _Component);
-
-  function ShareContainer(props) {
-    _classCallCheck(this, ShareContainer);
-
-    var _this = _possibleConstructorReturn(this, (ShareContainer.__proto__ || Object.getPrototypeOf(ShareContainer)).call(this, props));
-
-    _this.state = {
-      selected: 'copy',
-      shareOpen: false,
-      modal: false
-    };
-
-    _this.updateShare = _this.updateShare.bind(_this);
-    _this.updateModal = _this.updateModal.bind(_this);
-    return _this;
+  if (error) {
+    return (0, _preact.h)(
+      'div',
+      { className: 'SearchResult-wrap' },
+      (0, _preact.h)(
+        'span',
+        null,
+        'Something went wrong with the search. Please try again at a later point.'
+      )
+    );
   }
 
-  _createClass(ShareContainer, [{
-    key: 'updateModal',
-    value: function updateModal(state) {
-      this.setState({ modal: state });
-    }
-  }, {
-    key: 'updateShare',
-    value: function updateShare(value) {
-      if (this.state.shareOpen) {
-        this.setState({ shareOpen: false });
-        this.setState({ selected: value });
-        return null;
-      }
+  var preDepartments = results.filter(function (item) {
+    var provSlugIndex = item.extras.findIndex(function (data) {
+      return data.key === 'geographic_region_slug';
+    });
 
-      return this.setState({ shareOpen: true });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return (0, _preact.h)(_ShareMarkup2.default, _extends({}, this.state, { updateShare: this.updateShare, updateModal: this.updateModal }));
-    }
-  }]);
+    var provSlug = item.extras[provSlugIndex].value;
 
-  return ShareContainer;
-}(_preact.Component);
+    return province === 'all' || province === provSlug;
+  });
 
-exports.default = ShareContainer;
+  var departments = preDepartments.map(function (item) {
+    var provSlugIndex = item.extras.findIndex(function (data) {
+      return data.key === 'geographic_region_slug';
+    });
+
+    var provSlug = item.extras[provSlugIndex].value;
+
+    var nameSlugIndex = item.extras.findIndex(function (data) {
+      return data.key === 'department_name_slug';
+    });
+
+    var nameSlug = item.extras[nameSlugIndex].value;
+    var departmentType = item.province.length > 0 ? item.province : 'National';
+
+    var url = item.province.length > 0 ? '/' + selectedYear + '/provincial/' + provSlug + '/departments/' + nameSlug : '/' + selectedYear + '/national/departments/' + nameSlug;
+
+    return (0, _preact.h)(
+      'a',
+      { href: url, className: 'SearchResult-link' },
+      departmentType,
+      ' Department: ',
+      item.extras[0].value
+    );
+  });
+
+  var pages = Math.ceil(departments.length / 10);
+
+  var extra = preDepartments.length > 0 ? (0, _preact.h)(
+    'span',
+    { className: 'SearchResult-countWrap' },
+    (0, _preact.h)(
+      'span',
+      null,
+      'Page ',
+      page,
+      ' of ',
+      pages
+    )
+  ) : null;
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'SearchResult-wrap' },
+    (0, _preact.h)(
+      'div',
+      { className: 'SearchResult-heading' },
+      'Search result for "',
+      search,
+      '" in Department Budgets'
+    ),
+    (0, _preact.h)(
+      'div',
+      { className: 'SearchResult-formWrap' },
+      (0, _preact.h)(_Form2.default, { state: state, updateFilter: updateFilter })
+    ),
+    (0, _preact.h)(
+      'div',
+      { className: 'SearchResult-group' },
+      (0, _preact.h)(
+        'div',
+        { className: 'SearchResult-title' },
+        'Suggested Department Budgets',
+        departments ? extra : ''
+      ),
+      (0, _preact.h)(
+        'div',
+        { className: 'SearchResult-list' },
+        loading ? (0, _preact.h)(
+          'div',
+          null,
+          'Loading...'
+        ) : null,
+        !loading && preDepartments.length > 0 ? departments.splice(page * 10 - 10, 10) : null,
+        !loading && preDepartments.length < 1 ? (0, _preact.h)(
+          'div',
+          { className: 'SearchResult-error' },
+          (0, _preact.h)(
+            'span',
+            null,
+            'We didn\u2019t find anything for \u2019',
+            search,
+            '\u2019. '
+          ),
+          (0, _preact.h)(
+            'a',
+            { href: '/' + selectedYear + '/departments' },
+            'View a list of all departments'
+          )
+        ) : null
+      )
+    ),
+    (0, _preact.h)(
+      'div',
+      { className: 'SearchResult-pageWrap' },
+      page <= 1 ? null : (0, _preact.h)(
+        'button',
+        { onClick: function onClick() {
+            return updateItem('page', page - 1);
+          }, className: 'SearchResult-prev' },
+        'Previous Page'
+      ),
+      page >= pages ? null : (0, _preact.h)(
+        'button',
+        { onClick: function onClick() {
+            return updateItem('page', page + 1);
+          }, className: 'SearchResult-next' },
+        'Next Page'
+      )
+    )
+  );
+}
 
 /***/ }),
 /* 86 */
@@ -12552,7 +12763,7 @@ exports.default = ShareContainer;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = ShareMarkup;
+exports.default = Form;
 
 var _preact = __webpack_require__(0);
 
@@ -12560,70 +12771,39 @@ var _index = __webpack_require__(4);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _Button = __webpack_require__(87);
-
-var _Button2 = _interopRequireDefault(_Button);
-
-var _index3 = __webpack_require__(18);
-
-var _index4 = _interopRequireDefault(_index3);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var hardCoded = {
-  'as Link': 'copy',
-  'on Facebook': 'facebook',
-  'on Twitter': 'twitter'
-};
+function Form(_ref) {
+  var state = _ref.state,
+      updateFilter = _ref.updateFilter;
 
-function ShareMarkup(_ref) {
-  var selected = _ref.selected,
-      updateShare = _ref.updateShare,
-      modal = _ref.modal,
-      shareOpen = _ref.shareOpen,
-      updateModal = _ref.updateModal;
-
-  var closeModal = function closeModal() {
-    return updateModal(false);
+  var items = {
+    'All Provinces': 'all',
+    'Free State': 'free-State',
+    Gauteng: 'gauteng',
+    'KwaZulu-Natal': 'kwazulu-natal',
+    Limpopo: 'limpopo',
+    Mpumalanga: 'mpumalanga',
+    'North West': 'north-west',
+    'Northern Cape': 'northern-cape',
+    'Western Cape': 'western-cape'
   };
 
   return (0, _preact.h)(
     'div',
-    { className: 'Share-wrap' },
-    (0, _preact.h)(
-      _index4.default,
-      {
-        title: 'Share this link:',
-        open: modal,
-        closeAction: closeModal
-      },
-      (0, _preact.h)(
-        'a',
-        { className: 'u-wordBreakBreakAll', href: window.location.href },
-        window.location.href
-      )
-    ),
+    { className: 'SearchResult-form' },
     (0, _preact.h)(
       'div',
-      { className: 'Share-action' },
-      (0, _preact.h)(
-        'div',
-        { className: 'Share-select' },
-        (0, _preact.h)(_index2.default, {
-          name: 'share',
-          items: hardCoded,
-          selected: selected,
-          open: shareOpen,
-          changeAction: function changeAction(value) {
-            return updateShare(value);
-          }
-        })
-      ),
-      (0, _preact.h)(
-        'div',
-        { className: 'Share-button' },
-        (0, _preact.h)(_Button2.default, { selected: selected, updateModal: updateModal })
-      )
+      { className: 'SearchResult-filter' },
+      (0, _preact.h)(_index2.default, {
+        name: 'province',
+        items: items,
+        selected: state.province,
+        open: state.open === 'province',
+        changeAction: function changeAction(value) {
+          return updateFilter('province', value);
+        }
+      })
     )
   );
 }
@@ -12638,60 +12818,112 @@ function ShareMarkup(_ref) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = Button;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _fuse = __webpack_require__(18);
+
+var _fuse2 = _interopRequireDefault(_fuse);
 
 var _preact = __webpack_require__(0);
 
-var _Icon = __webpack_require__(88);
+var _index = __webpack_require__(89);
 
-var _Icon2 = _interopRequireDefault(_Icon);
+var _index2 = _interopRequireDefault(_index);
 
-var _analyticsEvent = __webpack_require__(5);
+var _glossary = __webpack_require__(42);
 
-var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
+var _glossary2 = _interopRequireDefault(_glossary);
+
+var _createGlossaryGroupedObject = __webpack_require__(92);
+
+var _createGlossaryGroupedObject2 = _interopRequireDefault(_createGlossaryGroupedObject);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Button(_ref) {
-  var selected = _ref.selected,
-      updateModal = _ref.updateModal;
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-  var url = encodeURIComponent(window.location.href);
-  var message = encodeURIComponent("SA Budget Data from vulekamali");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-  var copyText = function copyText() {
-    (0, _analyticsEvent2.default)('send', 'social', 'email', 'share', url);
-    updateModal(true);
-  };
-  var fbDirect = function fbDirect() {
-    (0, _analyticsEvent2.default)('send', 'social', 'facebook', 'share', url);
-    var win = window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, '_blank');
-    win.focus();
-  };
-  var twDirect = function twDirect() {
-    (0, _analyticsEvent2.default)('send', 'social', 'twitter', 'share', url);
-    var win = window.open('https://twitter.com/home?status=' + message + '%20' + url, '_blank');
-    win.focus();
-  };
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-  var share = function share() {
-    if (selected === 'copy') {
-      return copyText();
-    } else if (selected === 'facebook') {
-      return fbDirect();
-    } else if (selected === 'twitter') {
-      return twDirect();
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var GlossaryContainer = function (_Component) {
+  _inherits(GlossaryContainer, _Component);
+
+  function GlossaryContainer(props) {
+    _classCallCheck(this, GlossaryContainer);
+
+    var _this = _possibleConstructorReturn(this, (GlossaryContainer.__proto__ || Object.getPrototypeOf(GlossaryContainer)).call(this, props));
+
+    _this.state = {
+      currentPhrase: '',
+      currentItems: _this.props.glossaryObject
+    };
+
+    _this.eventHandlers = {
+      changePhrase: _this.changePhrase.bind(_this)
+    };
+    return _this;
+  }
+
+  _createClass(GlossaryContainer, [{
+    key: 'changePhrase',
+    value: function changePhrase(phrase) {
+      var _this2 = this;
+
+      this.setState({ currentPhrase: phrase });
+
+      if (phrase.length > 2) {
+        var options = {
+          shouldSort: true,
+          threshold: 0.3,
+          location: 0,
+          distance: 100,
+          maxPatternLength: 32,
+          minMatchCharLength: 1,
+          keys: ['phrase']
+        };
+
+        var letters = Object.keys(this.props.glossaryObject);
+
+        var filteredList = letters.reduce(function (result, letter) {
+          var array = _this2.props.glossaryObject[letter];
+          var items = new _fuse2.default(array, options);
+
+          return _extends({}, result, _defineProperty({}, letter, items.search(phrase)));
+        }, {});
+
+        return this.setState({ currentItems: filteredList });
+      }
+
+      return this.setState({ currentItems: this.props.glossaryObject });
     }
+  }, {
+    key: 'render',
+    value: function render() {
+      return (0, _preact.h)(_index2.default, _extends({}, this.state, this.eventHandlers));
+    }
+  }]);
 
-    return null;
-  };
+  return GlossaryContainer;
+}(_preact.Component);
 
-  return (0, _preact.h)(
-    'div',
-    { className: 'Button has-icon', onClick: share },
-    (0, _preact.h)(_Icon2.default, null)
-  );
+function scripts() {
+  var glossaryGroupedObject = (0, _createGlossaryGroupedObject2.default)(_glossary2.default);
+  var nodes = document.getElementsByClassName('js-initGlossary');
+
+  if (nodes.length > 0) {
+    for (var i = 0; i < nodes.length; i++) {
+      (0, _preact.render)((0, _preact.h)(GlossaryContainer, { glossaryObject: glossaryGroupedObject }), nodes[i]);
+    }
+  }
 }
+
+exports.default = scripts();
 
 /***/ }),
 /* 88 */
@@ -12700,583 +12932,2084 @@ function Button(_ref) {
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Icon;
-
-var _preact = __webpack_require__(0);
-
-function Icon() {
-  return (0, _preact.h)(
-    "svg",
-    { version: "1.2", width: "14", height: "14", baseProfile: "tiny", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100" },
-    (0, _preact.h)("path", { d: "M93.3 25C88.8 17 82.8 11 75 6.6 67.5 2.2 59 0 50 0S32.6 2.2 25 6.7C17 11.2 11 17.2 6.6 25 2.2 32.5 0 41 0 50s2.2 17.4 6.7 25C11.2 83 17.2 89 25 93.4c7.6 4.5 16 6.7 25 6.7s17.4-2.2 25-6.7C83 88.8 89 82.8 93.4 75c4.5-7.6 6.7-16 6.7-25s-2.2-17.4-6.7-25zM82.5 53l-6 5.8L53 82.4c-.8.8-1.8 1.2-3 1.2-1 0-2-.4-2.8-1.2l-6-6c-.7-.7-1-1.7-1-2.8 0-1 .3-2 1-3l12.4-12.2H20.8c-1 0-2-.4-3-1.2-.7-.8-1-1.8-1-3V46c0-1 .3-2 1-3 1-.7 2-1 3-1h32.7L41.2 29.3c-.8-.8-1.2-1.8-1.2-3 0-1 .4-2 1.2-2.8l6-6c.7-.7 1.7-1 2.8-1 1.2 0 2 .3 3 1l23.5 23.7 6 6c.7.7 1 1.7 1 2.8.2 1.2-.2 2-1 3zm0 0" })
-  );
-}
+module.exports = function (module) {
+	if (!module.webpackPolyfill) {
+		module.deprecate = function () {};
+		module.paths = [];
+		// module.parent = undefined by default
+		if (!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function get() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function get() {
+				return module.i;
+			}
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
 
 /***/ }),
 /* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-(function (global, factory) {
-	( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(__webpack_require__(0)) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(0)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : global.PreactCSSTransitionGroup = factory(global.preact);
-})(undefined, function (preact) {
-	'use strict';
-
-	function getKey(vnode) {
-		return vnode.attributes && vnode.attributes.key;
-	}
-
-	function getComponentBase(component) {
-		return component.base;
-	}
-
-	function onlyChild(children) {
-		return children && children[0];
-	}
-
-	function filterNullChildren(children) {
-		return children && children.filter(function (i) {
-			return i !== null;
-		});
-	}
-
-	function find(arr, iter) {
-		for (var i = arr.length; i--;) {
-			if (iter(arr[i])) return true;
-		}
-		return false;
-	}
-
-	function inChildrenByKey(children, key) {
-		return find(children, function (c) {
-			return getKey(c) === key;
-		});
-	}
-
-	function inChildren(children, child) {
-		return inChildrenByKey(children, getKey(child));
-	}
-
-	function isShownInChildrenByKey(children, key, showProp) {
-		return find(children, function (c) {
-			return getKey(c) === key && c.props[showProp];
-		});
-	}
-
-	function isShownInChildren(children, child, showProp) {
-		return isShownInChildrenByKey(children, getKey(child), showProp);
-	}
-
-	function mergeChildMappings(prev, next) {
-		var ret = [];
-
-		var nextChildrenPending = {},
-		    pendingChildren = [];
-		prev.forEach(function (c) {
-			var key = getKey(c);
-			if (inChildrenByKey(next, key)) {
-				if (pendingChildren.length) {
-					nextChildrenPending[key] = pendingChildren;
-					pendingChildren = [];
-				}
-			} else {
-				pendingChildren.push(c);
-			}
-		});
-
-		next.forEach(function (c) {
-			var key = getKey(c);
-			if (nextChildrenPending.hasOwnProperty(key)) {
-				ret = ret.concat(nextChildrenPending[key]);
-			}
-			ret.push(c);
-		});
-
-		return ret.concat(pendingChildren);
-	}
-
-	var SPACE = ' ';
-	var RE_CLASS = /[\n\t\r]+/g;
-
-	var norm = function norm(elemClass) {
-		return (SPACE + elemClass + SPACE).replace(RE_CLASS, SPACE);
-	};
-
-	function addClass(elem, className) {
-		if (elem.classList) {
-			var _elem$classList;
-
-			(_elem$classList = elem.classList).add.apply(_elem$classList, className.split(' '));
-		} else {
-			elem.className += ' ' + className;
-		}
-	}
-
-	function removeClass(elem, needle) {
-		needle = needle.trim();
-		if (elem.classList) {
-			var _elem$classList2;
-
-			(_elem$classList2 = elem.classList).remove.apply(_elem$classList2, needle.split(' '));
-		} else {
-			var elemClass = elem.className.trim();
-			var className = norm(elemClass);
-			needle = SPACE + needle + SPACE;
-			while (className.indexOf(needle) >= 0) {
-				className = className.replace(needle, SPACE);
-			}
-			elem.className = className.trim();
-		}
-	}
-
-	var EVENT_NAME_MAP = {
-		transitionend: {
-			transition: 'transitionend',
-			WebkitTransition: 'webkitTransitionEnd',
-			MozTransition: 'mozTransitionEnd',
-			OTransition: 'oTransitionEnd',
-			msTransition: 'MSTransitionEnd'
-		},
-
-		animationend: {
-			animation: 'animationend',
-			WebkitAnimation: 'webkitAnimationEnd',
-			MozAnimation: 'mozAnimationEnd',
-			OAnimation: 'oAnimationEnd',
-			msAnimation: 'MSAnimationEnd'
-		}
-	};
-
-	var endEvents = [];
-
-	function detectEvents() {
-		var testEl = document.createElement('div'),
-		    style = testEl.style;
-
-		if (!('AnimationEvent' in window)) {
-			delete EVENT_NAME_MAP.animationend.animation;
-		}
-
-		if (!('TransitionEvent' in window)) {
-			delete EVENT_NAME_MAP.transitionend.transition;
-		}
-
-		for (var baseEventName in EVENT_NAME_MAP) {
-			var baseEvents = EVENT_NAME_MAP[baseEventName];
-			for (var styleName in baseEvents) {
-				if (styleName in style) {
-					endEvents.push(baseEvents[styleName]);
-					break;
-				}
-			}
-		}
-	}
-
-	if (typeof window !== 'undefined') {
-		detectEvents();
-	}
-
-	function addEndEventListener(node, eventListener) {
-		if (!endEvents.length) {
-			return window.setTimeout(eventListener, 0);
-		}
-		endEvents.forEach(function (endEvent) {
-			node.addEventListener(endEvent, eventListener, false);
-		});
-	}
-
-	function removeEndEventListener(node, eventListener) {
-		if (!endEvents.length) return;
-		endEvents.forEach(function (endEvent) {
-			node.removeEventListener(endEvent, eventListener, false);
-		});
-	}
-
-	var classCallCheck = function classCallCheck(instance, Constructor) {
-		if (!(instance instanceof Constructor)) {
-			throw new TypeError("Cannot call a class as a function");
-		}
-	};
-
-	var inherits = function inherits(subClass, superClass) {
-		if (typeof superClass !== "function" && superClass !== null) {
-			throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === 'undefined' ? 'undefined' : _typeof(superClass)));
-		}
-
-		subClass.prototype = Object.create(superClass && superClass.prototype, {
-			constructor: {
-				value: subClass,
-				enumerable: false,
-				writable: true,
-				configurable: true
-			}
-		});
-		if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-	};
-
-	var objectWithoutProperties = function objectWithoutProperties(obj, keys) {
-		var target = {};
-
-		for (var i in obj) {
-			if (keys.indexOf(i) >= 0) continue;
-			if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-			target[i] = obj[i];
-		}
-
-		return target;
-	};
-
-	var possibleConstructorReturn = function possibleConstructorReturn(self, call) {
-		if (!self) {
-			throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-		}
-
-		return call && ((typeof call === 'undefined' ? 'undefined' : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-	};
-
-	var TICK = 17;
-
-	var CSSTransitionGroupChild = function (_Component) {
-		inherits(CSSTransitionGroupChild, _Component);
-
-		function CSSTransitionGroupChild() {
-			var _temp, _this, _ret;
-
-			classCallCheck(this, CSSTransitionGroupChild);
-
-			for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-				args[_key] = arguments[_key];
-			}
-
-			return _ret = (_temp = (_this = possibleConstructorReturn(this, _Component.call.apply(_Component, [this].concat(args))), _this), _this.flushClassNameQueue = function () {
-				if (getComponentBase(_this)) {
-					addClass(getComponentBase(_this), _this.classNameQueue.join(' '));
-				}
-				_this.classNameQueue.length = 0;
-				_this.timeout = null;
-			}, _temp), possibleConstructorReturn(_this, _ret);
-		}
-
-		CSSTransitionGroupChild.prototype.transition = function transition(animationType, finishCallback, timeout) {
-			var _this2 = this;
-
-			var node = getComponentBase(this);
-
-			var className = this.props.name[animationType] || this.props.name + '-' + animationType;
-			var activeClassName = this.props.name[animationType + 'Active'] || className + '-active';
-			var timer = null;
-
-			if (this.endListener) {
-				this.endListener();
-			}
-
-			this.endListener = function (e) {
-				if (e && e.target !== node) return;
-
-				clearTimeout(timer);
-				removeClass(node, className);
-				removeClass(node, activeClassName);
-				removeEndEventListener(node, _this2.endListener);
-				_this2.endListener = null;
-
-				if (finishCallback) {
-					finishCallback();
-				}
-			};
-
-			if (timeout) {
-				timer = setTimeout(this.endListener, timeout);
-				this.transitionTimeouts.push(timer);
-			} else {
-				addEndEventListener(node, this.endListener);
-			}
-
-			addClass(node, className);
-
-			this.queueClass(activeClassName);
-		};
-
-		CSSTransitionGroupChild.prototype.queueClass = function queueClass(className) {
-			this.classNameQueue.push(className);
-
-			if (!this.timeout) {
-				this.timeout = setTimeout(this.flushClassNameQueue, TICK);
-			}
-		};
-
-		CSSTransitionGroupChild.prototype.stop = function stop() {
-			if (this.timeout) {
-				clearTimeout(this.timeout);
-				this.classNameQueue.length = 0;
-				this.timeout = null;
-			}
-			if (this.endListener) {
-				this.endListener();
-			}
-		};
-
-		CSSTransitionGroupChild.prototype.componentWillMount = function componentWillMount() {
-			this.classNameQueue = [];
-			this.transitionTimeouts = [];
-		};
-
-		CSSTransitionGroupChild.prototype.componentWillUnmount = function componentWillUnmount() {
-			if (this.timeout) {
-				clearTimeout(this.timeout);
-			}
-			this.transitionTimeouts.forEach(function (timeout) {
-				clearTimeout(timeout);
-			});
-		};
-
-		CSSTransitionGroupChild.prototype.componentWillEnter = function componentWillEnter(done) {
-			if (this.props.enter) {
-				this.transition('enter', done, this.props.enterTimeout);
-			} else {
-				done();
-			}
-		};
-
-		CSSTransitionGroupChild.prototype.componentWillLeave = function componentWillLeave(done) {
-			if (this.props.leave) {
-				this.transition('leave', done, this.props.leaveTimeout);
-			} else {
-				done();
-			}
-		};
-
-		CSSTransitionGroupChild.prototype.render = function render() {
-			return onlyChild(this.props.children);
-		};
-
-		return CSSTransitionGroupChild;
-	}(preact.Component);
-
-	var CSSTransitionGroup = function (_Component) {
-		inherits(CSSTransitionGroup, _Component);
-
-		function CSSTransitionGroup(props) {
-			classCallCheck(this, CSSTransitionGroup);
-
-			var _this = possibleConstructorReturn(this, _Component.call(this));
-
-			_this.renderChild = function (child) {
-				var _this$props = _this.props;
-				var transitionName = _this$props.transitionName;
-				var transitionEnter = _this$props.transitionEnter;
-				var transitionLeave = _this$props.transitionLeave;
-				var transitionEnterTimeout = _this$props.transitionEnterTimeout;
-				var transitionLeaveTimeout = _this$props.transitionLeaveTimeout;
-				var key = getKey(child);
-				return preact.h(CSSTransitionGroupChild, {
-					key: key,
-					ref: function ref(c) {
-						if (!(_this.refs[key] = c)) child = null;
-					},
-					name: transitionName,
-					enter: transitionEnter,
-					leave: transitionLeave,
-					enterTimeout: transitionEnterTimeout,
-					leaveTimeout: transitionLeaveTimeout }, child);
-			};
-
-			_this.refs = {};
-			_this.state = {
-				children: (props.children || []).slice()
-			};
-			return _this;
-		}
-
-		CSSTransitionGroup.prototype.shouldComponentUpdate = function shouldComponentUpdate(_, _ref) {
-			var children = _ref.children;
-
-			return children !== this.state.children;
-		};
-
-		CSSTransitionGroup.prototype.componentWillMount = function componentWillMount() {
-			this.currentlyTransitioningKeys = {};
-			this.keysToEnter = [];
-			this.keysToLeave = [];
-		};
-
-		CSSTransitionGroup.prototype.componentWillReceiveProps = function componentWillReceiveProps(_ref2) {
-			var _this2 = this;
-
-			var children = _ref2.children;
-			var exclusive = _ref2.exclusive;
-			var showProp = _ref2.showProp;
-
-			var nextChildMapping = filterNullChildren(children || []).slice();
-
-			var prevChildMapping = filterNullChildren(exclusive ? this.props.children : this.state.children);
-
-			var newChildren = mergeChildMappings(prevChildMapping, nextChildMapping);
-
-			if (showProp) {
-				newChildren = newChildren.map(function (c) {
-					if (!c.props[showProp] && isShownInChildren(prevChildMapping, c, showProp)) {
-						var _cloneElement;
-
-						c = preact.cloneElement(c, (_cloneElement = {}, _cloneElement[showProp] = true, _cloneElement));
-					}
-					return c;
-				});
-			}
-
-			if (exclusive) {
-				newChildren.forEach(function (c) {
-					return _this2.stop(getKey(c));
-				});
-			}
-
-			this.setState({ children: newChildren });
-			this.forceUpdate();
-
-			nextChildMapping.forEach(function (c) {
-				var key = c.key;
-				var hasPrev = prevChildMapping && inChildren(prevChildMapping, c);
-				if (showProp) {
-					if (hasPrev) {
-						var showInPrev = isShownInChildren(prevChildMapping, c, showProp),
-						    showInNow = c.props[showProp];
-						if (!showInPrev && showInNow && !_this2.currentlyTransitioningKeys[key]) {
-							_this2.keysToEnter.push(key);
-						}
-					}
-				} else if (!hasPrev && !_this2.currentlyTransitioningKeys[key]) {
-					_this2.keysToEnter.push(key);
-				}
-			});
-
-			prevChildMapping.forEach(function (c) {
-				var key = c.key;
-				var hasNext = nextChildMapping && inChildren(nextChildMapping, c);
-				if (showProp) {
-					if (hasNext) {
-						var showInNext = isShownInChildren(nextChildMapping, c, showProp);
-						var showInNow = c.props[showProp];
-						if (!showInNext && showInNow && !_this2.currentlyTransitioningKeys[key]) {
-							_this2.keysToLeave.push(key);
-						}
-					}
-				} else if (!hasNext && !_this2.currentlyTransitioningKeys[key]) {
-					_this2.keysToLeave.push(key);
-				}
-			});
-		};
-
-		CSSTransitionGroup.prototype.performEnter = function performEnter(key) {
-			var _this3 = this;
-
-			this.currentlyTransitioningKeys[key] = true;
-			var component = this.refs[key];
-			if (component.componentWillEnter) {
-				component.componentWillEnter(function () {
-					return _this3._handleDoneEntering(key);
-				});
-			} else {
-				this._handleDoneEntering(key);
-			}
-		};
-
-		CSSTransitionGroup.prototype._handleDoneEntering = function _handleDoneEntering(key) {
-			delete this.currentlyTransitioningKeys[key];
-			var currentChildMapping = filterNullChildren(this.props.children),
-			    showProp = this.props.showProp;
-			if (!currentChildMapping || !showProp && !inChildrenByKey(currentChildMapping, key) || showProp && !isShownInChildrenByKey(currentChildMapping, key, showProp)) {
-				this.performLeave(key);
-			} else {
-				this.setState({ children: currentChildMapping });
-			}
-		};
-
-		CSSTransitionGroup.prototype.stop = function stop(key) {
-			delete this.currentlyTransitioningKeys[key];
-			var component = this.refs[key];
-			if (component) component.stop();
-		};
-
-		CSSTransitionGroup.prototype.performLeave = function performLeave(key) {
-			var _this4 = this;
-
-			this.currentlyTransitioningKeys[key] = true;
-			var component = this.refs[key];
-			if (component && component.componentWillLeave) {
-				component.componentWillLeave(function () {
-					return _this4._handleDoneLeaving(key);
-				});
-			} else {
-				this._handleDoneLeaving(key);
-			}
-		};
-
-		CSSTransitionGroup.prototype._handleDoneLeaving = function _handleDoneLeaving(key) {
-			delete this.currentlyTransitioningKeys[key];
-			var showProp = this.props.showProp,
-			    currentChildMapping = filterNullChildren(this.props.children);
-			if (showProp && currentChildMapping && isShownInChildrenByKey(currentChildMapping, key, showProp)) {
-				this.performEnter(key);
-			} else if (!showProp && currentChildMapping && inChildrenByKey(currentChildMapping, key)) {
-				this.performEnter(key);
-			} else {
-				this.setState({ children: currentChildMapping });
-			}
-		};
-
-		CSSTransitionGroup.prototype.componentDidUpdate = function componentDidUpdate() {
-			var _this5 = this;
-
-			var keysToEnter = this.keysToEnter;
-			var keysToLeave = this.keysToLeave;
-
-			this.keysToEnter = [];
-			keysToEnter.forEach(function (k) {
-				return _this5.performEnter(k);
-			});
-			this.keysToLeave = [];
-			keysToLeave.forEach(function (k) {
-				return _this5.performLeave(k);
-			});
-		};
-
-		CSSTransitionGroup.prototype.render = function render(_ref3, _ref4) {
-			var Component = _ref3.component;
-			var transitionName = _ref3.transitionName;
-			var transitionEnter = _ref3.transitionEnter;
-			var transitionLeave = _ref3.transitionLeave;
-			var transitionEnterTimeout = _ref3.transitionEnterTimeout;
-			var transitionLeaveTimeout = _ref3.transitionLeaveTimeout;
-			var c = _ref3.children;
-			var props = objectWithoutProperties(_ref3, ['component', 'transitionName', 'transitionEnter', 'transitionLeave', 'transitionEnterTimeout', 'transitionLeaveTimeout', 'children']);
-			var children = _ref4.children;
-
-			return preact.h(Component, props, filterNullChildren(children).map(this.renderChild));
-		};
-
-		return CSSTransitionGroup;
-	}(preact.Component);
-	CSSTransitionGroup.defaultProps = {
-		component: 'span',
-		transitionEnter: true,
-		transitionLeave: true
-	};
-
-	return CSSTransitionGroup;
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-//# sourceMappingURL=preact-css-transition-group.js.map
+exports.default = Markup;
+
+var _preact = __webpack_require__(0);
+
+var _Controls = __webpack_require__(90);
+
+var _Controls2 = _interopRequireDefault(_Controls);
+
+var _List = __webpack_require__(91);
+
+var _List2 = _interopRequireDefault(_List);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Markup(_ref) {
+  var currentPhrase = _ref.currentPhrase,
+      currentItems = _ref.currentItems,
+      changePhrase = _ref.changePhrase;
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Glossary-wrap' },
+    (0, _preact.h)(_Controls2.default, { currentPhrase: currentPhrase, currentItems: currentItems, changePhrase: changePhrase }),
+    (0, _preact.h)(_List2.default, { currentItems: currentItems })
+  );
+}
 
 /***/ }),
 /* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Controls;
+
+var _preact = __webpack_require__(0);
+
+function Controls(_ref) {
+  var currentPhrase = _ref.currentPhrase,
+      currentItems = _ref.currentItems,
+      changePhrase = _ref.changePhrase;
+
+  var buildLetters = function buildLetters() {
+    return Object.keys(currentItems).map(function (letter) {
+      var hasItems = currentItems[letter].length > 0;
+
+      return (0, _preact.h)(
+        'a',
+        {
+          href: '#glossary-item-' + letter,
+          className: 'Glossary-letter' + (hasItems ? ' is-valid' : '')
+        },
+        letter.toUpperCase()
+      );
+    });
+  };
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Glossary-controls' },
+    (0, _preact.h)('input', {
+      className: 'Glossary-search',
+      placeholder: 'Start typing to find a glossary term',
+      value: currentPhrase,
+      onInput: function onInput(event) {
+        return changePhrase(event.target.value);
+      }
+    }),
+    (0, _preact.h)(
+      'div',
+      { className: 'Glossary-lettersWrap' },
+      (0, _preact.h)(
+        'span',
+        { className: 'Glossary-letterLabel' },
+        'Jump to Letter:'
+      ),
+      buildLetters()
+    )
+  );
+}
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = List;
+
+var _preact = __webpack_require__(0);
+
+function List(_ref) {
+  var currentPhrase = _ref.currentPhrase,
+      currentItems = _ref.currentItems;
+
+
+  var buildItems = function buildItems(letterArrayFn) {
+    return letterArrayFn.map(function (item) {
+      return (0, _preact.h)(
+        "div",
+        { className: "Glossary-item" },
+        (0, _preact.h)(
+          "div",
+          { className: "Glossary-title" },
+          item.phrase
+        ),
+        (0, _preact.h)(
+          "div",
+          { className: "Glossary-text" },
+          item.description
+        )
+      );
+    });
+  };
+
+  var buildSections = function buildSections(currentItemsFn) {
+    return Object.keys(currentItemsFn).map(function (letter) {
+      var letterArray = currentItemsFn[letter];
+
+      if (letterArray.length > 0) {
+        return (0, _preact.h)(
+          "div",
+          { className: "Glossary-section", id: "glossary-item-" + letter },
+          (0, _preact.h)(
+            "div",
+            { className: "Glossary-heading" },
+            letter.toUpperCase()
+          ),
+          buildItems(letterArray)
+        );
+      }
+
+      return null;
+    });
+  };
+
+  return (0, _preact.h)(
+    "div",
+    { className: "Glossary-list" },
+    buildSections(currentItems)
+  );
+}
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = createGlossaryGroupedObject;
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function createGlossaryGroupedObject(rawObject) {
+  var alphabetLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+  var objectSkeleton = alphabetLetters.reduce(function (result, letter) {
+    return _extends({}, result, _defineProperty({}, letter, []));
+  }, {});
+
+  var populatedObject = Object.keys(rawObject).reduce(function (result, phrase) {
+    var letter = phrase.match(/\w/i)[0].toLowerCase();
+
+    return _extends({}, result, _defineProperty({}, letter, [].concat(_toConsumableArray(result[letter]), [{
+      phrase: phrase,
+      description: rawObject[phrase]
+    }])));
+  }, objectSkeleton);
+
+  var sortedObject = Object.keys(populatedObject).reduce(function (result, letter) {
+    var sortedArray = result[letter].sort(function (a, b) {
+      return a.phrase.localeCompare(b.phrase);
+    });
+
+    return _extends({}, result, _defineProperty({}, letter, sortedArray));
+  }, populatedObject);
+
+  return sortedObject;
+}
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+var _fuse = __webpack_require__(18);
+
+var _fuse2 = _interopRequireDefault(_fuse);
+
+var _decodeHtmlEntities = __webpack_require__(1);
+
+var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
+
+var _index = __webpack_require__(94);
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var VideosContainer = function (_Component) {
+  _inherits(VideosContainer, _Component);
+
+  function VideosContainer(props) {
+    _classCallCheck(this, VideosContainer);
+
+    var _this = _possibleConstructorReturn(this, (VideosContainer.__proto__ || Object.getPrototypeOf(VideosContainer)).call(this, props));
+
+    _this.state = {
+      open: null,
+      currentPhrase: '',
+      currentItems: _this.props.items
+    };
+
+    _this.setModal = _this.setModal.bind(_this);
+    _this.changePhrase = _this.changePhrase.bind(_this);
+    _this.setLanguage = _this.setLanguage.bind(_this);
+    return _this;
+  }
+
+  _createClass(VideosContainer, [{
+    key: 'setLanguage',
+    value: function setLanguage(language) {
+      if (this.state.open.select === true) {
+        this.setState({
+          open: _extends({}, this.state.open, {
+            language: language,
+            select: false
+          })
+        });
+      } else {
+        this.setState({
+          open: _extends({}, this.state.open, {
+            select: true
+          })
+        });
+      }
+    }
+  }, {
+    key: 'setModal',
+    value: function setModal(state, id, language) {
+      if (state) {
+        this.setState({
+          open: {
+            id: id,
+            language: language,
+            select: false
+          }
+        });
+      } else {
+        this.setState({ open: null });
+      }
+    }
+  }, {
+    key: 'changePhrase',
+    value: function changePhrase(phrase) {
+      this.setState({ currentPhrase: phrase });
+
+      if (phrase.length > 2) {
+        var options = {
+          shouldSort: true,
+          threshold: 0.3,
+          location: 0,
+          distance: 100,
+          maxPatternLength: 32,
+          minMatchCharLength: 1,
+          keys: ['title']
+        };
+
+        var items = new _fuse2.default(this.props.items, options);
+        var result = items.search(phrase);
+        this.setState({ currentItems: result });
+      } else {
+        this.setState({ currentItems: this.props.items });
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return (0, _preact.h)(_index2.default, {
+        open: this.state.open,
+        items: this.state.currentItems,
+        currentPhrase: this.state.currentPhrase,
+
+        changePhrase: this.changePhrase,
+        setModal: this.setModal,
+        setLanguage: this.setLanguage
+      });
+    }
+  }]);
+
+  return VideosContainer;
+}(_preact.Component);
+
+function scripts() {
+  var nodes = document.getElementsByClassName('js-initVideos');
+
+  if (nodes.length > 0) {
+    for (var i = 0; i < nodes.length; i++) {
+      var items = JSON.parse((0, _decodeHtmlEntities2.default)(nodes[i].getAttribute('data-items'))).data;
+      (0, _preact.render)((0, _preact.h)(VideosContainer, { items: items }), nodes[i]);
+    }
+  }
+}
+
+exports.default = scripts();
+
+/***/ }),
+/* 94 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = Markup;
+
+var _preact = __webpack_require__(0);
+
+var _Item = __webpack_require__(95);
+
+var _Item2 = _interopRequireDefault(_Item);
+
+var _Modal = __webpack_require__(98);
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
+var _Controls = __webpack_require__(100);
+
+var _Controls2 = _interopRequireDefault(_Controls);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Markup(props) {
+  var items = props.items,
+      open = props.open,
+      currentPhrase = props.currentPhrase;
+  var setLanguage = props.setLanguage,
+      changePhrase = props.changePhrase,
+      setModal = props.setModal;
+
+  var keys = Object.keys(items);
+
+  return (0, _preact.h)(
+    'div',
+    null,
+    (0, _preact.h)(_Controls2.default, { currentPhrase: currentPhrase, changePhrase: changePhrase }),
+    (0, _preact.h)(
+      'ul',
+      { className: 'u-listReset' },
+      keys.map(function (key) {
+        var _items$key = items[key],
+            title = _items$key.title,
+            description = _items$key.description,
+            languages = _items$key.languages;
+
+        var id = key;
+        return (0, _preact.h)(_Item2.default, { key: key, id: id, title: title, description: description, languages: languages, setModal: setModal });
+      })
+    ),
+    open ? (0, _preact.h)(_Modal2.default, _extends({
+      open: open,
+      title: items[open.id].title,
+      description: items[open.id].description,
+      languageOptions: items[open.id].languages
+    }, { setModal: setModal, setLanguage: setLanguage })) : null
+  );
+}
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Item;
+
+var _preact = __webpack_require__(0);
+
+var _PlayIcon = __webpack_require__(96);
+
+var _PlayIcon2 = _interopRequireDefault(_PlayIcon);
+
+var _trimString = __webpack_require__(97);
+
+var _trimString2 = _interopRequireDefault(_trimString);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function Item(_ref) {
+  var id = _ref.id,
+      title = _ref.title,
+      description = _ref.description,
+      languages = _ref.languages,
+      setModal = _ref.setModal;
+
+  var languageKeys = Object.keys(languages);
+  var setModalWrapper = function setModalWrapper() {
+    return setModal(true, id, languages[languageKeys[0]]);
+  };
+  var languageButtons = Object.keys(languages).reduce(function (result, key) {
+    return [].concat(_toConsumableArray(result), [{
+      name: key,
+      action: function action() {
+        return setModal(true, id, languages[key]);
+      }
+    }]);
+  }, []);
+
+  return (0, _preact.h)(
+    'li',
+    { className: 'u-listItemReset' },
+    (0, _preact.h)(
+      'span',
+      { className: 'Videos-item' },
+      (0, _preact.h)(
+        'a',
+        { className: 'Videos-thumbnailWrap', onClick: setModalWrapper },
+        (0, _preact.h)(
+          'div',
+          { className: 'Videos-iconWrap' },
+          (0, _preact.h)(_PlayIcon2.default, null)
+        ),
+        (0, _preact.h)('img', { className: 'Videos-thumbnail', src: 'https://img.youtube.com/vi/' + languages[languageKeys[0]] + '/mqdefault.jpg', alt: '' })
+      ),
+      (0, _preact.h)(
+        'ul',
+        { className: 'Videos-info' },
+        (0, _preact.h)(
+          'li',
+          { className: 'Videos-title' },
+          title
+        ),
+        (0, _preact.h)(
+          'li',
+          { className: 'u-listItemReset' },
+          (0, _preact.h)(
+            'ul',
+            { className: 'u-listReset' },
+            languageButtons.map(function (_ref2) {
+              var name = _ref2.name,
+                  action = _ref2.action;
+              return (0, _preact.h)(
+                'li',
+                { className: 'Videos-pillWrap' },
+                (0, _preact.h)(
+                  'a',
+                  { onClick: action, className: 'Button is-small is-inline u-marginRight5 u-marginBottom5' },
+                  name
+                )
+              );
+            })
+          )
+        ),
+        (0, _preact.h)(
+          'li',
+          { className: 'Videos-description' },
+          description.length > 200 ? (0, _trimString2.default)(200, description) : description
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = PlayIcon;
+
+var _preact = __webpack_require__(0);
+
+function PlayIcon() {
+  return (0, _preact.h)(
+    "svg",
+    { version: "1.2", className: "Videos-icon", baseProfile: "tiny", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100" },
+    (0, _preact.h)("path", { d: "M85.9 48L16.9.4c-.7-.5-1.7-.6-2.5-.1-.8.4-1.3 1.2-1.3 2.1v95.2c0 .9.5 1.7 1.3 2.1.3.2.7.3 1.1.3a2 2 0 0 0 1.3-.4l69-47.6c.7-.4 1-1.2 1-2 .1-.8-.3-1.5-.9-2zm0 0" })
+  );
+}
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = trimString;
+function trimString(length, string) {
+  var initialTrim = string.substr(0, length);
+  var characterToLastSpace = Math.min(initialTrim.length, initialTrim.lastIndexOf(' '));
+
+  return initialTrim.substr(0, characterToLastSpace) + '...';
+}
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Modal;
+
+var _preact = __webpack_require__(0);
+
+var _CloseIcon = __webpack_require__(99);
+
+var _CloseIcon2 = _interopRequireDefault(_CloseIcon);
+
+var _index = __webpack_require__(4);
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Modal(props) {
+  var open = props.open,
+      title = props.title,
+      description = props.description,
+      languageOptions = props.languageOptions;
+  var setModal = props.setModal,
+      setLanguage = props.setLanguage;
+
+  var closeModal = function closeModal() {
+    return setModal(false);
+  };
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Videos-modalWrap' },
+    (0, _preact.h)(
+      'div',
+      { className: 'Videos-modal' },
+      (0, _preact.h)(
+        'div',
+        { className: 'Videos-modalBox' },
+        (0, _preact.h)(
+          'div',
+          { className: 'Videos-modalClose', onClick: closeModal },
+          (0, _preact.h)(_CloseIcon2.default, null)
+        ),
+        (0, _preact.h)(
+          'div',
+          { className: 'Videos-modalTitle' },
+          title
+        ),
+        (0, _preact.h)(
+          'div',
+          { className: 'Videos-embed' },
+          (0, _preact.h)('div', { className: 'Videos-loading' }),
+          (0, _preact.h)('iframe', { className: 'Videos-iframe', width: '560', height: '315', src: 'https://www.youtube.com/embed/' + open.language + '?rel=0&amp;amp;showinfo=0', frameborder: '0', allow: 'autoplay; encrypted-media', allowfullscreen: 'allowfullscreen' })
+        ),
+        (0, _preact.h)(
+          'span',
+          { className: 'Videos-label' },
+          'Change language:'
+        ),
+        (0, _preact.h)(
+          'div',
+          { className: 'Videos-selectWrap' },
+          (0, _preact.h)(_index2.default, {
+            name: 'language',
+            open: open.select,
+            items: languageOptions,
+            selected: open.language,
+            changeAction: function changeAction(value) {
+              return setLanguage(value);
+            }
+          })
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = CloseIcon;
+
+var _preact = __webpack_require__(0);
+
+function CloseIcon() {
+  return (0, _preact.h)(
+    "svg",
+    { className: "Videos-closeIcon", version: "1.2", baseProfile: "tiny", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", overflow: "scroll" },
+    (0, _preact.h)("path", { d: "M56.8 50L98.6 8.2a4.8 4.8 0 0 0 0-6.8 4.8 4.8 0 0 0-6.8 0L50 43.2 8.2 1.4a4.8 4.8 0 0 0-6.8 0 4.8 4.8 0 0 0 0 6.8L43.2 50 1.4 91.8a4.8 4.8 0 0 0 0 6.8c.9.9 2.1 1.4 3.4 1.4 1.2 0 2.4-.5 3.4-1.4L50 56.8l41.8 41.8c1 .9 2.2 1.4 3.4 1.4a5 5 0 0 0 3.4-1.4 4.8 4.8 0 0 0 0-6.8L56.8 50zm0 0" })
+  );
+}
+
+/***/ }),
+/* 100 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = CloseIcon;
+
+var _preact = __webpack_require__(0);
+
+function CloseIcon(_ref) {
+  var currentPhrase = _ref.currentPhrase,
+      changePhrase = _ref.changePhrase,
+      languageOptions = _ref.languageOptions;
+
+  return (0, _preact.h)(
+    "div",
+    null,
+    (0, _preact.h)("input", {
+      value: currentPhrase,
+      className: "Videos-input",
+      placeholder: "Start typing to find a video",
+      onInput: function onInput(event) {
+        return changePhrase(event.target.value);
+      }
+    })
+  );
+}
+
+/***/ }),
+/* 101 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _preact = __webpack_require__(0);
+
+var _index = __webpack_require__(19);
+
+var _index2 = _interopRequireDefault(_index);
+
+var _decodeHtmlEntities = __webpack_require__(1);
+
+var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function scripts() {
+  var componentList = document.getElementsByClassName('js-initValueBlocks');
+
+  for (var i = 0; i < componentList.length; i++) {
+    var component = componentList[i];
+    var items = JSON.parse((0, _decodeHtmlEntities2.default)(component.getAttribute('data-values')));
+
+    (0, _preact.render)((0, _preact.h)(_index2.default, { items: items }), component);
+  }
+}
+
+exports.default = scripts();
+
+/***/ }),
+/* 102 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _preact = __webpack_require__(0);
+
+var _index = __webpack_require__(103);
+
+var _index2 = _interopRequireDefault(_index);
+
+var _decodeHtmlEntities = __webpack_require__(1);
+
+var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function scripts() {
+  var componentList = document.getElementsByClassName('js-initRevenue');
+
+  for (var i = 0; i < componentList.length; i++) {
+    var component = componentList[i];
+
+    var values = JSON.parse((0, _decodeHtmlEntities2.default)(component.getAttribute('data-values')));
+    var year = component.getAttribute('data-year');
+
+    (0, _preact.render)((0, _preact.h)(_index2.default, { values: values, year: year }), component);
+  }
+}
+
+exports.default = scripts();
+
+/***/ }),
+/* 103 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = Revenue;
+
+var _preact = __webpack_require__(0);
+
+var _index = __webpack_require__(19);
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function Revenue(_ref) {
+  var values = _ref.values;
+
+  var items = values.data.reduce(function (result, val) {
+    return _extends({}, result, _defineProperty({}, val.category, {
+      value: val.amount
+    }));
+  }, {});
+
+  return (0, _preact.h)(_index2.default, { items: items });
+}
+
+/***/ }),
+/* 104 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+var _DebounceFunction = __webpack_require__(20);
+
+var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
+
+var _getProp = __webpack_require__(13);
+
+var _getProp2 = _interopRequireDefault(_getProp);
+
+var _index = __webpack_require__(105);
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var HomeChartContainer = function (_Component) {
+  _inherits(HomeChartContainer, _Component);
+
+  function HomeChartContainer(props) {
+    _classCallCheck(this, HomeChartContainer);
+
+    var _this = _possibleConstructorReturn(this, (HomeChartContainer.__proto__ || Object.getPrototypeOf(HomeChartContainer)).call(this, props));
+
+    _this.state = {
+      width: 200,
+      mobile: true
+    };
+
+    _this.updateWidth = function () {
+      if (_this.state.mobile && window.innerWidth >= 600) {
+        _this.setState({ mobile: false });
+      } else if (!_this.state.mobile && window.innerWidth < 600) {
+        _this.setState({ mobile: true });
+      }
+
+      if (_this.node && _this.node.offsetWidth !== _this.state.width) {
+        if (_this.node.offsetWidth <= 200 && _this.state.width !== 200) {
+          return _this.setState({ width: 200 });
+        }
+
+        return _this.setState({ width: parseInt(_this.node.offsetWidth, 10) });
+      }
+
+      return null;
+    };
+
+    var viewportDebounce = new _DebounceFunction2.default(300);
+    var updateViewport = function updateViewport() {
+      return viewportDebounce.update(_this.updateWidth);
+    };
+
+    window.addEventListener('resize', updateViewport);
+
+    _this.node = null;
+    _this.parentAction = _this.parentAction.bind(_this);
+    return _this;
+  }
+
+  _createClass(HomeChartContainer, [{
+    key: 'parentAction',
+    value: function parentAction(node) {
+      this.node = node;
+      this.updateWidth();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return (0, _preact.h)(_index2.default, {
+        items: this.props.items,
+        width: this.state.width,
+        parentAction: this.parentAction,
+        mobile: this.state.mobile,
+        hasNull: this.props.hasNull
+      });
+    }
+  }]);
+
+  return HomeChartContainer;
+}(_preact.Component);
+
+function scripts() {
+  var nodes = document.getElementsByClassName('js-initHomeChart');
+
+  var buildRevenueData = function buildRevenueData(array) {
+    return array.map(function (object) {
+      return _defineProperty({}, object.category, [object.amount]);
+    });
+  };
+
+  var buildExpenditureData = function buildExpenditureData(array) {
+    return array.map(function (object) {
+      return _defineProperty({}, object.name, [parseInt(object.total_budget, 10)]);
+    });
+  };
+
+  var buildExpenditureDataWithNull = function buildExpenditureDataWithNull(array, yearString) {
+    return array.map(function (object) {
+      return _defineProperty({}, object.name, {
+        link: '/' + yearString + '/search-result?search_type=full-search&search=' + object.name
+      });
+    });
+  };
+
+  var normaliseData = function normaliseData(array, hasNull, type, yearString) {
+    if (type === 'expenditure' && hasNull) {
+      return buildExpenditureDataWithNull(array, yearString);
+    } else if (type === 'expenditure') {
+      return buildExpenditureData(array);
+    } else if (type === 'revenue') {
+      return buildRevenueData(array);
+    }
+
+    return {};
+  };
+
+  var calcIfHasNullTotalBudget = function calcIfHasNullTotalBudget(array) {
+    return !array.every(function (object) {
+      return object.total_budget !== null;
+    });
+  };
+
+  for (var i = 0; i < nodes.length; i++) {
+    var node = nodes[i];
+    var rawValues = (0, _getProp2.default)('values', node, 'json');
+    var type = (0, _getProp2.default)('type', node);
+    var yearString = (0, _getProp2.default)('year', node);
+
+    var hasNull = type === 'revenue' ? false : calcIfHasNullTotalBudget(rawValues.data);
+    var items = Object.assign.apply(Object, _toConsumableArray(normaliseData(rawValues.data, hasNull, type, yearString)));
+
+    (0, _preact.render)((0, _preact.h)(HomeChartContainer, { hasNull: hasNull, items: items }), node);
+  }
+}
+
+exports.default = scripts();
+
+/***/ }),
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = HomeChart;
+
+var _preact = __webpack_require__(0);
+
+var _index = __webpack_require__(9);
+
+var _index2 = _interopRequireDefault(_index);
+
+var _index3 = __webpack_require__(19);
+
+var _index4 = _interopRequireDefault(_index3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function HomeChart(props) {
+  var items = props.items,
+      width = props.width,
+      mobile = props.mobile,
+      hasNull = props.hasNull;
+  var parentAction = props.parentAction;
+
+
+  var withValues = (0, _preact.h)(
+    'div',
+    { className: 'Section-card' },
+    (0, _preact.h)(_index2.default, _extends({
+      name: 'programmes-chart',
+      guides: !mobile,
+      hover: !mobile
+    }, { width: width, parentAction: parentAction, items: items }))
+  );
+
+  return hasNull ? (0, _preact.h)(_index4.default, { items: items }) : withValues;
+}
+
+/***/ }),
+/* 106 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = calcMaxValue;
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function calcMaxValue(items) {
+  var labels = Object.keys(items);
+
+  return labels.reduce(function (result, key) {
+    var maxValue = Math.max.apply(Math, _toConsumableArray(items[key]));
+    return maxValue > result ? maxValue : result;
+  }, 0);
+}
+
+/***/ }),
+/* 107 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = buildGroupSpaceArray;
+
+var _breakIntoWrap = __webpack_require__(10);
+
+var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function buildGroupSpaceArray(items, styling) {
+  var lineGutter = styling.lineGutter,
+      barWidth = styling.barWidth,
+      groupMargin = styling.groupMargin,
+      charWrap = styling.charWrap,
+      charLineHeight = styling.charLineHeight,
+      titleSpace = styling.titleSpace;
+
+
+  return Object.keys(items).map(function (key) {
+    var value = items[key];
+    var rawLines = (0, _breakIntoWrap2.default)(key, charWrap);
+
+    var lines = rawLines.filter(function (val) {
+      return val !== '';
+    });
+
+    var totalGutters = (value.length - 1) * lineGutter;
+    var totalLineWidth = value.length * barWidth;
+    var totalText = charLineHeight * lines.length;
+
+    return totalGutters + totalLineWidth + totalText + groupMargin;
+  });
+}
+
+/***/ }),
+/* 108 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = Breakpoints;
+
+var _preact = __webpack_require__(0);
+
+var _BreakpointItem = __webpack_require__(109);
+
+var _BreakpointItem2 = _interopRequireDefault(_BreakpointItem);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Breakpoints(_ref) {
+  var items = _ref.items,
+      styling = _ref.styling,
+      totalGroupSpace = _ref.totalGroupSpace;
+  var valueSpace = styling.valueSpace,
+      buffer = styling.buffer,
+      padding = styling.padding,
+      labelBreakpoints = styling.labelBreakpoints;
+
+  var breakpointArray = [];
+
+  for (var i = 0; i < labelBreakpoints; i++) {
+    breakpointArray.push('');
+  }
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'Graph-verticalLabelList' },
+    breakpointArray.map(function (val, index) {
+      return (0, _preact.h)(_BreakpointItem2.default, _extends({ rank: index }, { styling: styling, totalGroupSpace: totalGroupSpace }));
+    })
+  );
+}
+
+/***/ }),
+/* 109 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = HorisontalBreakpoint;
+
+var _preact = __webpack_require__(0);
+
+var _trimValues = __webpack_require__(8);
+
+var _trimValues2 = _interopRequireDefault(_trimValues);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function HorisontalBreakpoint(_ref) {
+  var styling = _ref.styling,
+      totalGroupSpace = _ref.totalGroupSpace,
+      rank = _ref.rank;
+  var maxValue = styling.maxValue,
+      fontSize = styling.fontSize,
+      valueSpace = styling.valueSpace,
+      buffer = styling.buffer,
+      padding = styling.padding,
+      labelBreakpoints = styling.labelBreakpoints;
+
+  var debugIteration = (valueSpace - buffer) / labelBreakpoints;
+  var iterationValue = maxValue / (labelBreakpoints - 1);
+  var iterationPosition = (valueSpace - buffer) / (labelBreakpoints - 1);
+
+  return (0, _preact.h)(
+    'g',
+    null,
+    (0, _preact.h)(
+      'text',
+      {
+        className: 'Graph-label',
+        x: padding[3] + buffer + rank * iterationPosition,
+        y: padding[0] + totalGroupSpace + buffer * 2 + fontSize,
+        'font-size': fontSize,
+        'font-family': 'sans-serif',
+        'font-weight': 'bold',
+        'text-anchor': 'middle'
+      },
+      'R',
+      (0, _trimValues2.default)(iterationValue * rank)
+    )
+  );
+}
+
+/***/ }),
+/* 110 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Grid;
+
+var _preact = __webpack_require__(0);
+
+function Grid(_ref) {
+  var styling = _ref.styling,
+      totalGroupSpace = _ref.totalGroupSpace;
+  var padding = styling.padding,
+      valueSpace = styling.valueSpace,
+      buffer = styling.buffer;
+
+
+  return (0, _preact.h)(
+    "g",
+    { className: "Graph-grid" },
+    (0, _preact.h)("line", {
+      className: "Graph-outline",
+      x1: padding[3],
+      y1: padding[0],
+      x2: padding[3],
+      y2: padding[0] + totalGroupSpace,
+      "stroke-width": "2",
+      stroke: "#d2d2d2",
+      fill: "none"
+    }),
+    (0, _preact.h)("path", {
+      className: "Graph-outline",
+      d: "\n          M" + padding[3] + " " + (padding[0] + totalGroupSpace) + " \n          Q " + padding[3] + " " + (padding[0] + buffer + totalGroupSpace) + ", \n          " + (padding[3] + buffer) + " " + (padding[0] + buffer + totalGroupSpace) + "\n        ",
+      "stroke-width": "2",
+      stroke: "#d2d2d2",
+      fill: "none"
+    }),
+    (0, _preact.h)("line", {
+      className: "Graph-outline",
+      x1: padding[3] + buffer,
+      y1: padding[0] + totalGroupSpace + buffer,
+      x2: padding[3] + valueSpace,
+      y2: padding[0] + totalGroupSpace + buffer,
+      "stroke-width": "2",
+      stroke: "#d2d2d2",
+      fill: "none"
+    })
+  );
+}
+
+/***/ }),
+/* 111 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = Guides;
+
+var _preact = __webpack_require__(0);
+
+var _GuideItem = __webpack_require__(112);
+
+var _GuideItem2 = _interopRequireDefault(_GuideItem);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Guides(_ref) {
+  var styling = _ref.styling,
+      totalGroupSpace = _ref.totalGroupSpace;
+  var labelBreakpoints = styling.labelBreakpoints;
+
+
+  var breakpointArray = [];
+
+  for (var i = 0; i < labelBreakpoints; i++) {
+    breakpointArray.push('');
+  }
+
+  // const { buffer, padding } = styling;
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'Graph-verticalLabelList' },
+    breakpointArray.map(function (val, index) {
+      if (index !== breakpointArray.length - 1) {
+        return (0, _preact.h)(_GuideItem2.default, _extends({ rank: index }, { styling: styling, totalGroupSpace: totalGroupSpace }));
+      }
+
+      return null;
+    })
+  );
+}
+
+/***/ }),
+/* 112 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = HorisontalGuide;
+
+var _preact = __webpack_require__(0);
+
+function HorisontalGuide(_ref) {
+  var styling = _ref.styling,
+      totalGroupSpace = _ref.totalGroupSpace,
+      rank = _ref.rank;
+  var valueSpace = styling.valueSpace,
+      buffer = styling.buffer,
+      fontSize = styling.fontSize,
+      padding = styling.padding,
+      labelBreakpoints = styling.labelBreakpoints;
+
+  var iteration = valueSpace / (labelBreakpoints - 1);
+
+  // const debugIteration = totalGroupSpace / labelBreakpoints;
+
+  return (0, _preact.h)(
+    "g",
+    null,
+    (0, _preact.h)("line", {
+      x1: padding[3] + iteration * rank + iteration,
+      y1: padding[0],
+      x2: padding[3] + iteration * rank + iteration,
+      y2: padding[0] + totalGroupSpace + buffer,
+      className: "Graph-guide",
+      stroke: "#e6e6e6"
+    })
+  );
+}
+
+/***/ }),
+/* 113 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = LineGroups;
+
+var _preact = __webpack_require__(0);
+
+var _LineGroupItem = __webpack_require__(114);
+
+var _LineGroupItem2 = _interopRequireDefault(_LineGroupItem);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function LineGroups(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      items = _ref.items,
+      styling = _ref.styling;
+
+  var titles = Object.keys(items);
+  var padding = styling.padding,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace;
+
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'LineGroupList' },
+    titles.map(function (key, index) {
+      return (0, _preact.h)(_LineGroupItem2.default, _extends({
+        rank: index,
+        lines: items[key],
+        title: key
+      }, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, styling: styling }));
+    })
+  );
+}
+
+/***/ }),
+/* 114 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = LineGroupItem;
+
+var _preact = __webpack_require__(0);
+
+var _breakIntoWrap = __webpack_require__(10);
+
+var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var colours = ['#79b43c', '#4a4a4a', '#ad3c64'];
+
+function LineGroupItem(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      rank = _ref.rank,
+      lines = _ref.lines,
+      title = _ref.title,
+      styling = _ref.styling;
+  var barWidth = styling.barWidth,
+      padding = styling.padding,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace,
+      lineGutter = styling.lineGutter,
+      maxValue = styling.maxValue,
+      groupMargin = styling.groupMargin,
+      fontSize = styling.fontSize,
+      charWrap = styling.charWrap,
+      charLineHeight = styling.charLineHeight,
+      titleSpace = styling.titleSpace;
+
+
+  var groupSpace = groupSpaceArray[rank];
+
+  var previousSpace = groupSpaceArray.reduce(function (result, val, index) {
+    if (index < rank) {
+      return result + val;
+    }
+
+    return result;
+  }, 0);
+
+  var startPoint = padding[0] + previousSpace;
+  var rawCharArray = (0, _breakIntoWrap2.default)(title, charWrap);
+  var charArray = rawCharArray.filter(function (val) {
+    return val !== '';
+  });
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'Graph-group' },
+    charArray.map(function (val, index) {
+      return (0, _preact.h)(
+        'text',
+        {
+          className: 'Graph-label Graph-label--leftAlign',
+          y: padding[0] + previousSpace + groupMargin / 2 + charLineHeight * index,
+          x: padding[3] + buffer,
+          'font-family': 'sans-serif',
+          'font-weight': 'bold'
+        },
+        val
+      );
+    }),
+    lines.map(function (amount, index) {
+      var relativeAmount = amount / maxValue * valueSpace - barWidth;
+      var displayAmount = relativeAmount < barWidth * 2 ? barWidth * 2 : relativeAmount;
+
+      return (0, _preact.h)('line', {
+        'stroke-linecap': 'round',
+        'stroke-width': barWidth,
+        y1: groupMargin / 2 + startPoint + index * (barWidth + lineGutter) + barWidth / 2 + charLineHeight * charArray.length,
+        x1: padding[3] + buffer + barWidth / 2,
+        y2: groupMargin / 2 + startPoint + index * (barWidth + lineGutter) + barWidth / 2 + charLineHeight * charArray.length,
+        x2: padding[3] + buffer + displayAmount - barWidth,
+        className: 'Graph-line',
+        stroke: colours[index]
+      });
+    })
+  );
+}
+
+/***/ }),
+/* 115 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = Tooltips;
+
+var _preact = __webpack_require__(0);
+
+var _TooltipGroup = __webpack_require__(116);
+
+var _TooltipGroup2 = _interopRequireDefault(_TooltipGroup);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Tooltips(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      items = _ref.items,
+      styling = _ref.styling;
+
+  var titles = Object.keys(items);
+  var padding = styling.padding,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace;
+
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'LineGroupList' },
+    titles.map(function (key, index) {
+      return (0, _preact.h)(_TooltipGroup2.default, _extends({
+        rank: index,
+        lines: items[key],
+        title: key
+      }, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, styling: styling, items: items }));
+    })
+  );
+}
+
+/***/ }),
+/* 116 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = TooltipGroup;
+
+var _preact = __webpack_require__(0);
+
+var _TooltipItem = __webpack_require__(117);
+
+var _TooltipItem2 = _interopRequireDefault(_TooltipItem);
+
+var _breakIntoWrap = __webpack_require__(10);
+
+var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var colours = ['#79b43c', '#4a4a4a', '#ad3c64'];
+
+function TooltipGroup(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      items = _ref.items,
+      groupSpaceArray = _ref.groupSpaceArray,
+      rank = _ref.rank,
+      lines = _ref.lines,
+      title = _ref.title,
+      styling = _ref.styling;
+  var barWidth = styling.barWidth,
+      padding = styling.padding,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace,
+      lineGutter = styling.lineGutter,
+      maxValue = styling.maxValue,
+      groupMargin = styling.groupMargin,
+      charLineHeight = styling.charLineHeight,
+      titleSpace = styling.titleSpace,
+      charWrap = styling.charWrap;
+
+
+  var groupSpace = groupSpaceArray[rank];
+
+  var previousSpace = groupSpaceArray.reduce(function (result, val, index) {
+    if (index < rank) {
+      return result + val;
+    }
+
+    return result;
+  }, 0);
+
+  var startPoint = padding[0] + previousSpace;
+
+  var breakIntoArray = function breakIntoArray(string) {
+    var result = [];
+
+    for (var i = 0; i < string.length; i += charWrap) {
+      result.push(string.substr(i, charWrap));
+    }
+
+    return result;
+  };
+
+  var titles = Object.keys(items);
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'Graph-group' },
+    lines.map(function (amount, index) {
+      var rawCharArray = (0, _breakIntoWrap2.default)(title, charWrap);
+      var charArray = rawCharArray.filter(function (val) {
+        return val !== '';
+      });
+      var relativeAmount = amount / maxValue * valueSpace - barWidth;
+      var displayAmount = relativeAmount < barWidth * 2 ? barWidth * 2 : relativeAmount;
+
+      return (0, _preact.h)(_TooltipItem2.default, _extends({ styling: styling }, {
+        xPosition: padding[3] + buffer + displayAmount - barWidth / 2,
+        yPosition: groupMargin / 2 + startPoint + index * (barWidth + lineGutter) + barWidth / 2 + charLineHeight * charArray.length
+      }, { amount: amount, totalGroupSpace: totalGroupSpace }, {
+        colour: colours[index]
+      }));
+    })
+  );
+}
+
+/***/ }),
+/* 117 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = TooltipItem;
+
+var _preact = __webpack_require__(0);
+
+var _trimValues = __webpack_require__(8);
+
+var _trimValues2 = _interopRequireDefault(_trimValues);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function TooltipItem(_ref) {
+  var styling = _ref.styling,
+      xTriggerPosition = _ref.xTriggerPosition,
+      xPosition = _ref.xPosition,
+      yPosition = _ref.yPosition,
+      amount = _ref.amount,
+      colour = _ref.colour,
+      totalGroupSpace = _ref.totalGroupSpace;
+  var barWidth = styling.barWidth,
+      popUpOffset = styling.popUpOffset,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace,
+      lineGutter = styling.lineGutter,
+      padding = styling.padding,
+      popupWidth = styling.popupWidth,
+      popupHeight = styling.popupHeight,
+      popupFontSize = styling.popupFontSize,
+      units = styling.units,
+      popupCentre = styling.popupCentre;
+
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'BarChart-tooltip' },
+    (0, _preact.h)('rect', {
+      x: padding[3] + buffer,
+      y: yPosition - (barWidth + lineGutter) / 2,
+      width: valueSpace + padding[0] - buffer,
+      height: barWidth + lineGutter,
+      opacity: '0'
+    }),
+    (0, _preact.h)('polygon', {
+      className: 'BarChart-triangle',
+      points: '\n          ' + (xPosition + popUpOffset) + ',\n          ' + yPosition + '\n\n          ' + (xPosition + 6 + popUpOffset) + ',\n          ' + (yPosition - 6) + '\n\n          ' + (xPosition + barWidth + popUpOffset) + ',\n          ' + (yPosition - 6) + '\n\n          ' + (xPosition + barWidth + popUpOffset) + ',\n          ' + (yPosition + 6) + '\n          \n          ' + (xPosition + 6 + popUpOffset) + ',\n          ' + (yPosition + 6) + '\n        ',
+      fill: colour
+    }),
+    (0, _preact.h)('rect', {
+      rx: '10',
+      ry: '10',
+      className: 'BarChart-tooltipBase',
+      x: xPosition + 6 + popUpOffset,
+      y: yPosition - popupHeight / 2,
+      width: popupWidth,
+      height: popupHeight,
+      fill: colour
+    }),
+    (0, _preact.h)(
+      'text',
+      {
+        x: xPosition + popupWidth / 2 + popUpOffset + barWidth / 2,
+        y: yPosition + popupCentre,
+        'font-size': popupFontSize,
+        className: 'BarChart-tooltipText',
+        'font-family': 'sans-serif',
+        'text-anchor': 'middle',
+        fill: 'white'
+      },
+      (0, _trimValues2.default)(amount)
+    )
+  );
+}
+
+/***/ }),
+/* 118 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Attribution;
+
+var _preact = __webpack_require__(0);
+
+function Attribution(_ref) {
+  var top = _ref.top,
+      left = _ref.left;
+
+  return (0, _preact.h)(
+    "g",
+    null,
+    (0, _preact.h)(
+      "text",
+      {
+        "font-size": "14",
+        x: left,
+        y: top,
+        "font-weight": "bold",
+        "text-anchor": "end",
+        fill: "#ed9e31",
+        "font-family": "sans-serif"
+      },
+      "Downloaded from www.vulekamali.gov.za"
+    )
+  );
+}
+
+/***/ }),
+/* 119 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Heading;
+
+var _preact = __webpack_require__(0);
+
+var _breakIntoWrap = __webpack_require__(10);
+
+var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Heading(_ref) {
+  var heading = _ref.heading,
+      subHeading = _ref.subHeading,
+      type = _ref.type,
+      left = _ref.left;
+
+  var titleArray = (0, _breakIntoWrap2.default)(heading, 33);
+
+  return (0, _preact.h)(
+    'g',
+    null,
+    (0, _preact.h)(
+      'text',
+      { y: '49', x: left, 'font-size': '28', 'font-weight': 'bold', fill: '#3f3f3f', 'font-family': 'sans-serif' },
+      titleArray.map(function (text, index) {
+        return (0, _preact.h)(
+          'tspan',
+          { x: left, y: 49 + 30 * index },
+          text.trim()
+        );
+      })
+    ),
+    (0, _preact.h)(
+      'text',
+      { y: 42 + 30 * titleArray.length, x: left, 'font-size': '14', 'font-weight': 'bold', fill: '#808080', 'font-family': 'sans-serif' },
+      subHeading
+    ),
+    (0, _preact.h)(
+      'text',
+      { y: 62 + 30 * titleArray.length, x: left, 'font-size': '14', 'font-weight': 'bold', fill: '#79b43c', 'font-family': 'sans-serif' },
+      type
+    )
+  );
+}
+
+/***/ }),
+/* 120 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Logo;
+
+var _preact = __webpack_require__(0);
+
+function Logo(_ref) {
+  var top = _ref.top,
+      left = _ref.left;
+
+  return (0, _preact.h)(
+    "svg",
+    { version: "1.2", width: "145", y: top, x: left, baseProfile: "tiny", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 991.4 301.6" },
+    (0, _preact.h)("path", { fill: "#3f3f3f", d: "M543 246a9 9 0 0 0 8.9 9 9 9 0 0 0 6.8-3v2.6h4v-17.4h-4v2.6c-1.1-1.3-3-3-6.8-3a9 9 0 0 0-9 9.3m9.6 5.3a5.3 5.3 0 0 1-5.5-5.5c0-3.3 2.3-5.6 5.5-5.6s5.6 2.3 5.6 5.6c0 3.2-2.4 5.5-5.6 5.5m-26-10.6v13.8h4v-13.8h4.1v-3.6h-4v-7.6h-4.1v7.6h-2.4v3.6h2.4zm-33.5 5.3a9 9 0 0 0 9 8.9 9 9 0 0 0 6.7-3v2.6h4v-17.4h-4v2.6c-1-1.3-3-3-6.7-3a9 9 0 0 0-9 9.3m9.6 5.3a5.3 5.3 0 0 1-5.5-5.5c0-3.3 2.3-5.6 5.5-5.6s5.5 2.3 5.5 5.6c0 3.2-2.3 5.5-5.5 5.5m-38.3-1.1v-21.4h4.9c6 0 10 4.6 10 10.6 0 6.1-4 10.8-10 10.8h-4.9zm19.1-10.8c0-8.3-5.6-14.9-14.2-14.9H460v30h9.2c8.6 0 14.2-6.7 14.2-15m-55.8 1.3v13.7h4v-13.8h4v-3.6h-4v-7.6h-4v7.6h-2.4v3.6h2.4zm-30.4 5c0 5.1 3.7 9 9 9 3.9 0 6.2-2.1 7-3.6l-2.8-2c-.7.8-2.1 2-4 2-3.5 0-5.1-2.3-5.1-5.1H415c0-5.7-3.9-9.3-9-9.3a9 9 0 0 0-9 9m13.6-2.3h-9a4.6 4.6 0 0 1 4.4-3.2c2.5 0 4 1.4 4.6 3.2m-35.2 7.8a5.3 5.3 0 0 1-5.5-5.5c0-3.3 2.3-5.6 5.5-5.6s5.6 2.3 5.6 5.6c0 3.2-2.4 5.5-5.6 5.5m6.1.7v2.5c0 3-1.8 4.8-5.7 4.8-3 0-4.4-1.3-4.7-2.3h-4.7c.8 3 3.9 6 9.3 6 5.8 0 10-3.2 10-8.5v-17.4h-4.2v2.6c-1-1.3-3-3-6.7-3a9 9 0 0 0-9 9.3 9 9 0 0 0 9 8.9 9 9 0 0 0 6.8-3m-37.7-.6a5.3 5.3 0 0 1-5.5-5.5c0-3.3 2.3-5.6 5.5-5.6s5.5 2.3 5.5 5.6c0 3.2-2.3 5.5-5.5 5.5m10.2-27.1h-4v15.5a9 9 0 0 0-15.7 6.3 9 9 0 0 0 8.9 8.8 9 9 0 0 0 6.7-2.9v2.6h4.1v-30.3zm-42.2 13h-4V248c0 3.9 2.7 7 7.4 7s7.5-3.1 7.5-7v-10.9h-4V248c0 2.3-1.4 3.5-3.5 3.5-2 0-3.4-1.2-3.4-3.5v-10.7zm-30.5 13V241h4.6c3 0 5.5 1.5 5.5 4.6 0 3.2-2.6 4.6-5.5 4.6h-4.6zm0-13.5v-8h2c2.3 0 4.2 1.3 4.2 3.8a4 4 0 0 1-4.1 4.2h-2.1zm10.7-4.6c0-5-4.3-8-8.7-8h-6.3v30.4h9.6c4.7 0 9.2-2.5 9.2-8.7 0-4.9-4-7.6-7-8 1.8-1 3.2-2.3 3.2-5.7m-56.9 13.7c0 5.1 3.7 9 9 9 4 0 6.2-2.1 7.1-3.6l-2.9-2c-.6.8-2.1 2-4 2-3.4 0-5-2.3-5-5.1h13.7c0-5.7-3.8-9.3-9-9.3a9 9 0 0 0-8.9 9m13.5-2.3h-9a4.6 4.6 0 0 1 4.5-3.2c2.4 0 3.9 1.4 4.5 3.2m-39.9 11h4.1V245c0-1.7 1.2-4.1 4-4.1 2.3 0 3.2 1.6 3.2 4v9.7h4V244c0-4-1.8-7.2-6.4-7.2-3.3 0-4.3 1.7-4.8 2.8v-2.5h-4v17.4zm-12.3-23c0-1.5-1.1-2.6-2.6-2.6s-2.5 1.1-2.5 2.6 1.1 2.5 2.5 2.5 2.6-1.1 2.6-2.5m-.5 5.6h-4v17.4h4v-17.4zm-17.8-13h-4v30.4h4v-30.3zm-31.9 30.4h4.1V245c0-1.7 1.2-4.1 4-4.1 2.3 0 3.2 1.6 3.2 4v9.7h4V244c0-4-1.8-7.2-6.4-7.2-3.3 0-4.3 1.7-4.8 2.8v-2.5h-4v17.4zm-27.1-3.9c-6.3 0-11-4.7-11-11 0-6.4 4.7-11.1 11-11.1s11.1 4.7 11.1 11c0 6.4-4.8 11.1-11.1 11.1m15.4-11c0-8.7-6.8-15.4-15.4-15.4-8.7 0-15.4 6.7-15.4 15.3 0 8.7 6.7 15.4 15.4 15.4 8.6 0 15.4-6.7 15.4-15.4m-66.9-7l4.5 12h-9l4.5-12zm-1.4-8l-11.2 30h4.3l2.3-6h12l2.1 6h4.5l-11.3-30h-2.7zm-26.3 5.8L43 227c-1.7-1.5-4-2.6-7.3-2.6-4.8 0-8.2 3.3-8.2 7.7 0 4.9 3.1 6.7 7 8.3 4 1.5 5.7 3.4 5.7 5.7 0 2.5-2.3 4.4-4.9 4.4a7 7 0 0 1-6.1-3.3l-3.1 3c1.4 2.1 4.4 4.5 9.4 4.5s9-3 9-8.6-4.7-8.2-8.4-9.6c-3-1.2-4.3-2.3-4.3-4.4 0-1.8 1.3-3.5 3.9-3.5 2 0 3.4.6 4.5 1.7" }),
+    (0, _preact.h)("path", { fill: "#7bb344", d: "M559.7 155.3v-4.4c1-13.3 3.2-26.4 8-38.9 4-10.7 8.9-21.1 13.7-31.5 1.5-3.3 4-6 6-9l1 .4c-.8 5-1.4 10.2-2.5 15.2a289.6 289.6 0 0 1-15.8 47.6c-2.5 6-5.3 11.7-8 17.6a9 9 0 0 1-2.4 3m-46.5-4.2c-6.3 6.1-9.5 14.8-14.4 22.4a35 35 0 0 1-9.4 10.7l-1.9 1.1V178c1-10.5 4.1-20.3 11-28.7 1.9-2.3 4.3-4.4 6.7-6.3 2.8-2.1 5.6-.6 6.1 2.8.3 1.7 1.1 3.2 1.9 5.3m477-6.3a78.2 78.2 0 0 0-47.5-61.3 76.7 76.7 0 0 0-59.6-1.2c-1 .4-1.6.2-2.1-.8l-2.5-4.6A152 152 0 0 0 794 7.5 148.6 148.6 0 0 0 712.6 4 149.8 149.8 0 0 0 617 74.3l-2.3 4.2 2.5.1h18.2c5.5 0 5.6 0 7.6-5 3.4-9.1 9-15.7 18.7-18.6 12-3.7 23.8-8.2 35.9-11.2 19.4-4.9 39.2-7.4 59.2-5.9 8.4.7 16.8 1.7 25 2.8a168 168 0 0 1 30.1 7.5 709 709 0 0 1 25.3 9 18 18 0 0 1 9 7.2A60.4 60.4 0 0 1 854 82c3.1 11.3 5.8 22.7 8.6 34l.5 1.6.5.2.8-1.2a64.7 64.7 0 0 1 20-15.6 62 62 0 0 1 28.2-6c15.4.1 28.8 5.4 40.1 15.7a59.3 59.3 0 0 1 20.7 47 43 43 0 0 1-13.1 31.6c-7.5 7.1-16.4 8.3-25.9 5.7-6-1.6-9.3-6.6-11.6-12.2-1-2.3-1-2.4-3.3-1.4a22 22 0 0 1-12.2 1.5 26.3 26.3 0 1 1 10.3-51.5l3.2.8c0-1.9 1.1-1.7 2.2-1.7h11.8c2.6 0 2.6 0 2.6 2.6V168c0 3.2 1 6.2 2.5 8.9 1.3 2.3 3 2.8 5.3 1.5 1.3-.7 2.7-1.7 3.5-3a32.8 32.8 0 0 0 6-24.5 43.2 43.2 0 0 0-14.3-26.2 41.9 41.9 0 0 0-34-11 42.4 42.4 0 0 0-26.9 13.9 42.8 42.8 0 0 0-6.7 49.5 43.1 43.1 0 0 0 54.5 20.4c1.2-.4 1.9-.3 2.5.8l7.3 13.5c.6 1 .3 1.5-.8 2a62.3 62.3 0 0 1-39 3.7 57.3 57.3 0 0 1-31.4-18.7 73.4 73.4 0 0 1-18.2-34.4l-1.3-5.8c-.5-2-1.6-3.6-3.3-4.8-5.6-3.9-12-5.1-18.5-5.1-8.2 0-16.1 2.1-22.9 7-4 3-7.5 6.5-11.2 9.8l-3.5 3-2.4-11-6.4-31c-1-5.2-4-9-8.8-11.2a54.7 54.7 0 0 0-46-.5c-5.1 2.2-8.4 6.1-9.5 11.7l-8.4 40.4c0 .6-.3 1.2-.5 2-.8-.6-1.5-1-2-1.6l-10-8.5c-3.9-3-7.7-6-12.3-7.8a34.7 34.7 0 0 0-22-.1c-6 1.6-9.7 5-11 11.4a61 61 0 0 1-9.6 23c-2.5 3.6-5.5 6.8-9.7 8.6-5.6 2.2-9.9.3-11.7-5.5-2-6-1.6-12.3-1-18.4.9-7.3 2.4-14.4 3.6-21.7.2-1.4.1-2.9-.2-4.2-.4-2-2.2-2.9-3.8-1.8-1.7 1-3.7 2.4-4.3 4.1-3.4 8.4-6.3 16.9-9.5 25.3a10 10 0 0 1-1.8 3.2 78 78 0 0 1-17 13.3c-2.6 1.5-5.3 3-8.2 3.6-6.2 1.4-10.6.1-12.9-7.4l-.1-.5-1.8-13.2c0-.6.5-1.4.9-1.9 3.4-4 7-7.7 10-12 7-9.6 12.3-20.3 17-31.3a231.5 231.5 0 0 0 15-48.8c1.2-6.5 1.2-13-1.7-19.2a9.9 9.9 0 0 0-7-5.9c-3.6-.8-6.7.2-9.7 2A49.7 49.7 0 0 0 566.5 72c-7 12-11.8 25-15.3 38.6a220.9 220.9 0 0 0-5.8 33.8c-.8 8.6-1 17.1-.4 25.7.1 1.2-.1 2.7-.8 3.7-3.3 5-6.7 10-10.4 14.7a90.4 90.4 0 0 1-8.4 9.1c-1.3 1.3-3.2 1.9-5 .8-1.7-1-1.3-2.8-1-4.2.9-5.5 1.8-11 3.1-16.3 1.6-6.8 3.6-13.6 5.5-20.3 1.2-4.3-1.8-10.4-7-10-1.3.2-1.3-.6-1.2-1.5.6-9-6.7-15.6-15.6-14-5 1-9.1 3.7-12.7 7.1a63.4 63.4 0 0 0-17.8 32.8c-.7 3.3-2.2 6-4.3 8.6a83.7 83.7 0 0 1-5.9 6.3 21 21 0 0 1-9.2 5.4c-1.4.3-2.4 0-3-1.4-.8-1.7-1.3-3.3-1.6-5-1.2-6.2-.7-12.4-.2-18.5.2-4 .7-7.8.8-11.7a7 7 0 0 0-4.4-6.7c-2.7-1.3-5.2-.5-7.3 1.3-1.2 1-2.3 2.3-3.2 3.7-2 3-3.7 6-5.6 9l-5.8 9.4-.4-.1 1.8-9c.9-4 2-8 2.8-12.1.9-4.9 1-9.8-.8-14.6-2.2-5.9-9-8-13.8-4.1a30.4 30.4 0 0 0-7 7.7c-4.9 8.2-9.4 16.6-14 25l-1.3 2.2c-.2-.8 0-1.4.1-2.1 1.1-5 2.3-10.1 3.2-15.2.7-3.6.5-7.3-1-10.8-1-2.5-2.3-2.8-4-.6a35.7 35.7 0 0 0-4.2 7c-1.8 4.5-3.4 9-4.8 13.5-2.8 9-5.5 18.1-8 27.3-1 4.4-1.7 9-.8 13.7 1.2 6.6 6.8 9 12.3 5.2.8-.5 1.6-1 2.1-1.7 3-3.7 6.2-7.2 8.7-11.2 3.9-6.4 7.3-13.1 10.9-19.7.2-.6.5-1 .9-1.6 0 4.3-.2 8.3 0 12.4.2 2.7.7 5.5 1.6 8a8 8 0 0 0 7.9 6.1c3.3 0 6.7-.4 9.3-2.7 2.5-2.1 4.6-4.7 6.7-7.2 1.3-1.5 2.3-3.1 3.5-4.8l.4.4.2 1.2c.7 4.8 1.2 11.2 3.6 15.4 4.2 7.5 12.5 9.9 19.5 5.4 2.5-1.5 5.3-4.7 7.4-7l5.6-6.3.9 2.1c2.8 7.8 12.4 11.5 19.2 7.2 1.9-1.1 3.7-2.2 5.5-3.5 2.7-2 5.2-4 8.1-6.4.2 1.8.2 3.3.5 4.7.8 3.4 1.3 7 2.7 10.2 2 4.5 5.9 6.3 10.7 5.1a25 25 0 0 0 6.8-2.7c7-4 12-10.2 16.6-16.8l4.4-6.3 2 5.1c2 4 4.2 7.5 7.6 10.2 5.6 4.4 11.9 4.5 18.3 2.5a60.8 60.8 0 0 0 21.8-13l2-1.7.1 4.6c1 10.5 6.7 16.4 17.7 14.6a50 50 0 0 0 31.3-18.4c1.7-2 3.2-4.3 4.8-6.4-.2 2-.6 3.8-1.1 5.6-1 3.6-2.2 7.2-3 11-.6 2.4.5 3.8 3 4l2.6.1c2.7 0 4 1.1 4.5 3.7l1.1 5.5c2 8 3.7 9 11.7 7.5 2.3-.4 4-1.5 4.7-3.7a70 70 0 0 0 2.4-8.3c.7-3.6 1.7-4.6 5.3-4.7 4.9 0 5.7-1 4.7-5.7-1.7-7.5-3.6-15-5-22.5-.5-2.7 0-5.7 0-9 1.5.7 2.3 1 3 1.5l17.2 10.3c4.4 2.6 6.6 1.8 8.5-2.9l.3-.6 9.5-23.2c.3-1 .8-1.9 1.2-2.8.8 7 1.1 14 2 21 1.1 10 2.6 20.2 4.2 30.3.8 5 2.2 10 3.5 15a6 6 0 0 0 5.7 5l8.5.2c8.3 0 10.7-1.8 12.2-10 1.5-8.5 3-17 4.1-25.6 1.6-11.6 3-23.2 3.1-35l.1-1.6c1 1 1.5 2.2 2 3.4 3.3 8.3 6.5 16.6 10 24.8 1.5 3.6 3.7 4.2 7.2 2.3l1-.7 18.7-11.6c.3-.2.7-.2 1.3-.4l.8 9.8c1 9.2 2 18.3 3.2 27.4.5 4 1.1 8 2 12 .7 3.5 2.2 4.8 5.9 5.1 3.1.2 6.3.3 9.5 0 4.2-.5 5.5-1.8 6.5-6l.4-1.6 3.9-30.4.6-5.5c4 11 8.8 21.6 16 30.9.4.5.6 1.5.4 2.2-2 7.7-4.3 15.5-8 22.7-2.1 3.8-4.2 7.8-8.3 10a63.6 63.6 0 0 1-8.2 3.7c-20.4 7.4-41 14-62.7 16a203 203 0 0 1-80.2-7l-31.3-10.4c-5.2-1.8-9.1-5.2-11.6-10-1.7-3.3-3.3-6.6-4.6-10-.7-1.6-1.5-2-3-2H617l-2.2.1 1.3 2.5a151 151 0 0 0 235.4 33.7c9-8.6 16.9-18.3 23.4-28.9 1-1.5 1.7-1.7 3.3-1 14.4 6.8 29.5 9 45.2 6.5a77.8 77.8 0 0 0 55.6-36.7 75.5 75.5 0 0 0 11.2-54.5m-375.8-18.6c0 2.7 2.8 5.8 5.4 5.8 2.6 0 5-2.6 5-5.6 0-3.3-1.8-5.2-5-5.2-3 0-5.4 2.1-5.4 5m35.3-1.2c0 11 8.6 19.7 19.7 19.7 11 0 20-9 20-20.1a20 20 0 0 0-20-19.5c-10.9-.2-19.7 9-19.7 19.9m96.4-66.2c-13 0-23.2 10.1-23.2 23A23.2 23.2 0 0 0 746 105a23 23 0 1 0 .1-46.2m78.3 45.8a20 20 0 0 0-19.7 19.6c0 11.9 8.1 20.2 19.8 20.1a20 20 0 0 0 19.6-19.8c0-10.7-9-20-19.7-20m96.5 52.6c0-5-4.3-9.4-9.3-9.5-4.9 0-9.5 4.5-9.5 9.5s4.2 9.2 9.3 9.2c5.2 0 9.5-4.1 9.5-9.2" }),
+    (0, _preact.h)("path", { fill: "#ed9e31", d: "M361.3 206v-57.4h-16.9v3.5a21.6 21.6 0 0 0-8.9-4.6 29.2 29.2 0 0 0-17 1.4c-3.2 1.5-6 3.6-8.4 6.5-2.4 2.8-4.2 6-5.4 9.7a40.6 40.6 0 0 0-1.8 12.2c0 4.7.6 8.9 1.8 12.5 1 3.7 2.8 7 5.2 9.9a22 22 0 0 0 8.5 6.3 27.9 27.9 0 0 0 22-.3 22 22 0 0 0 4-2.8v3.1h16.9zm-17.4-22.3c-.6 1.8-1.5 3.5-2.7 5a10.1 10.1 0 0 1-3.8 3c-1.5.7-3.1 1-5 1-2 0-3.7-.3-5.2-1a11.4 11.4 0 0 1-6-7.4c-.6-1.8-.9-4-.9-6.7 0-2.6.3-4.8 1-6.8a11.3 11.3 0 0 1 6.3-7.7c1.5-.5 3.2-.8 5-.8 2 0 3.8.3 5.2.9 1.4.6 2.7 1.6 3.7 2.7 1 1.3 1.9 2.8 2.4 4.7.6 1.9.9 4 .9 6.5 0 2.6-.3 4.8-1 6.6m-43.7 23.5l-18.8-29.3 16.6-27.6h-22l-13.6 24.2v-50.2h-20v82.9h20v-25.5l16 25.5H300zm-97.3-41.8c5.2 0 9.4 2.7 10.4 8.3h-20.4c1.4-5.3 5.2-8.3 10-8.3m27 20.3c.5-2.7.7-5.4.7-8.2 0-16.7-12-29-27.7-29-15.6 0-28.8 13.6-28.8 30.3s13.2 30.1 28.8 30.1a32 32 0 0 0 24.3-9.4l-7.7-10.8c-1.5 1.9-7.6 5.7-15.5 4.5-4-.6-7.9-3.2-9.8-7.5h35.8zm-85.3 21.5h20v-83h-20v83zm-48 1.8a23 23 0 0 0 16.2-7.4v5.6h20v-56.9h-20v34.3c-.3 6.4-5.9 8.6-9.5 8.6a8.5 8.5 0 0 1-8.5-9v-33.9h-20v36.5c0 13.9 7.3 22.2 21.8 22.2m-31.3-58.7h-22l-10.6 32.5L22 150.3H0l23 56.9h19.2l23-56.9z" }),
+    (0, _preact.h)("path", { fill: "none", d: "M0 0h991.4v301.6H0z" })
+  );
+}
+
+/***/ }),
+/* 121 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+var _propTypes = __webpack_require__(6);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _queryString = __webpack_require__(12);
+
+var _queryString2 = _interopRequireDefault(_queryString);
+
+var _index = __webpack_require__(125);
+
+var _index2 = _interopRequireDefault(_index);
+
+var _analyticsEvent = __webpack_require__(5);
+
+var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
+
+var _global = __webpack_require__(40);
+
+var _removePunctuation = __webpack_require__(41);
+
+var _removePunctuation2 = _interopRequireDefault(_removePunctuation);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SearchContainer = function (_Component) {
+  _inherits(SearchContainer, _Component);
+
+  function SearchContainer(props) {
+    _classCallCheck(this, SearchContainer);
+
+    // 'currentKeywords' indicates the current text the user typed in the search box
+    // The second block contains factors that influence the UI state (searching means that UI is awaiting HTTP reponse for search suggestions)
+    // The third block contains timeout specific variables (used when there is a delay/throttling in the UI)
+    // The last block contains data that is retrieved from the HTTP request for search suggestions
+    var _this = _possibleConstructorReturn(this, (SearchContainer.__proto__ || Object.getPrototypeOf(SearchContainer)).call(this, props));
+
+    _this.state = {
+      currentKeywords: _this.props.searchParam,
+
+      focus: false,
+      loading: false,
+      searching: false,
+      error: false,
+
+      timeoutFocus: null,
+      timeoutId: null,
+
+      itemsArray: [],
+      count: null
+    };
+
+    _this.findSuggestions = _this.findSuggestions.bind(_this);
+    _this.setFocus = _this.setFocus.bind(_this);
+    return _this;
+  }
+
+  _createClass(SearchContainer, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      if (this.props.searchParam) {
+        this.findSuggestions(this.state.currentKeywords);
+      }
+    }
+
+    /**
+     * Debounces setting the focus state of the search input (and subsequently the dropdown) by 500 miliseconds. This means that the search only closes if the mouse has left it for a minimum of 500 miliseconds.
+     *
+     * @param {boolean} value - Whether you want to set the focus on the search input to `true` or `false`.
+     */
+
+  }, {
+    key: 'setFocus',
+    value: function setFocus(value) {
+      return this.setState({ focus: value });
+    }
+
+    /**
+     * Sends a HTTP get request to CKAN that checks if request returns a 200 or whether CKAN returns an error, if so resolves an JavaScript object. It also then logs these events retrospectively to Google Analytics (note the body reponse in an error is maxed at 500 characters). Once fetch is resolved it return an object that contains all the items capped at 10 (under `itemsArray`) and the amount in the CKAN database (under `count`).
+     *
+     * @param {string} newKeywords - The keywords that should be used to find suggested items. If not included the `currentKeywords` value in the state object will be used.
+     *
+     * @returns {*} - Returns a promise.
+     */
+
+  }, {
+    key: 'sendGetRequest',
+    value: function sendGetRequest() {
+      var newKeywords = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.state.keywords;
+
+      var datasetPackagesQueryUrl = _global.apiBaseURL + '/api/3/action/package_search?q=' + newKeywords + '&start=0&rows=10&fq=+organization:national-treasury+vocab_financial_years:' + this.props.selectedYear + '+extras_department_name_slug:[* TO *]+extras_geographic_region_slug:[* TO *]';
+      var requestApi = this.props.requestOverride || datasetPackagesQueryUrl;
+
+      return new Promise(function (resolve, reject) {
+        fetch(requestApi).then(function (response) {
+          if (!response.ok) {
+            response.text().then(function (data) {
+              (0, _analyticsEvent2.default)('send', 'event', 'search-error', 'error-response', JSON.stringify({ url: response.url, body: data.slice(0, 500) }));
+            });
+
+            reject(response);
+          }
+
+          response.json().then(function (data) {
+            if (!data.success) {
+              (0, _analyticsEvent2.default)('send', 'event', 'search-error', 'ckan-200-error', JSON.stringify({ url: response.url, error: data.error }));
+            }
+
+            resolve({ itemsArray: data.result.results, count: data.result.count });
+          }).catch(function (err) {
+            return reject(err);
+          });
+        }).catch(function (err) {
+          return reject(err);
+        });
+      });
+    }
+
+    /**
+     * The wrapper method that executes the HTTP get request (via `this.sendGetRequest`) and sets the UI state accordingly. Note that method logs to the console an error under `console.warn` instead of throwing a traditional error. This is gracefully fail the request in the UI and to prevent an error from unwinding the stack should the HTTP request fail.
+     *
+     * @param {string} newKeywords - The keywords that should be used to find suggested items. If not included the `currentKeywords` value in the state object will be used.
+     */
+
+  }, {
+    key: 'findSuggestions',
+    value: function findSuggestions(newKeywords) {
+      var _this2 = this;
+
+      this.setState({ currentKeywords: newKeywords });
+
+      if (newKeywords.length >= 2) {
+        clearTimeout(this.state.timeoutId);
+        this.setState({ searching: true });
+        this.setState({ count: null });
+
+        var request = function request() {
+          return _this2.sendGetRequest((0, _removePunctuation2.default)(newKeywords)).then(function (_ref) {
+            var itemsArray = _ref.itemsArray,
+                count = _ref.count;
+
+            _this2.setState({ count: count });
+            _this2.setState({ timeoutId: null });
+            _this2.setState({ itemsArray: itemsArray });
+            _this2.setState({ searching: false });
+          }).catch(function (err) {
+            _this2.setState({ searching: false });
+            _this2.setState({ error: true });
+            console.warn(err); // eslint-disable-line no-console
+          });
+        };
+
+        var newTimeoutId = setTimeout(request, 1000);
+        this.setState({ timeoutId: newTimeoutId });
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return (0, _preact.h)(_index2.default, {
+        currentKeywords: this.state.currentKeywords,
+
+        focus: this.state.focus,
+        loading: this.state.loading,
+        searching: this.state.searching,
+        error: this.state.error,
+
+        itemsArray: this.state.itemsArray,
+        count: this.state.count,
+
+        findSuggestions: this.findSuggestions,
+        setFocus: this.setFocus,
+
+        selectedYear: this.props.selectedYear
+      });
+    }
+  }]);
+
+  return SearchContainer;
+}(_preact.Component);
+
+SearchContainer.propTypes = {
+  searchParam: _propTypes2.default.string,
+  selectedYear: _propTypes2.default.string.isRequired,
+  requestOverride: _propTypes2.default.string
+};
+
+SearchContainer.defaultProps = {
+  searchParam: '',
+  requestOverride: null
+};
+
+function scripts() {
+  // Find all instances of a specific UI component on a page by parent class name.
+  var componentsList = document.getElementsByClassName('js-initSearch');
+
+  // Destructure needed query strings from URL
+
+  var _ref2 = _queryString2.default.parse(location.search) || {},
+      searchParam = _ref2.search,
+      noJs = _ref2.no_js;
+
+  if (componentsList.length > 0 && !noJs) {
+    for (var i = 0; i < componentsList.length; i++) {
+      // Find DOM node that will house the Preact app and get associated data attributes that are passed via HTML
+      var component = componentsList[i];
+      var requestOverride = component.getAttribute('data-request-override');
+      var selectedYear = component.getAttribute('data-year') || '2018-19';
+
+      // Initialise Search Preact App
+      (0, _preact.render)((0, _preact.h)(SearchContainer, { requestOverride: requestOverride, selectedYear: selectedYear, searchParam: searchParam }), component);
+    }
+  }
+}
+
+exports.default = scripts();
+
+/***/ }),
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13291,13 +15024,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var emptyFunction = __webpack_require__(19);
-var invariant = __webpack_require__(20);
-var warning = __webpack_require__(40);
+var emptyFunction = __webpack_require__(21);
+var invariant = __webpack_require__(22);
+var warning = __webpack_require__(43);
 var assign = __webpack_require__(26);
 
-var ReactPropTypesSecret = __webpack_require__(21);
-var checkPropTypes = __webpack_require__(91);
+var ReactPropTypesSecret = __webpack_require__(23);
+var checkPropTypes = __webpack_require__(123);
 
 module.exports = function (isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -13801,7 +15534,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 91 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13817,9 +15550,9 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 if (process.env.NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(20);
-  var warning = __webpack_require__(40);
-  var ReactPropTypesSecret = __webpack_require__(21);
+  var invariant = __webpack_require__(22);
+  var warning = __webpack_require__(43);
+  var ReactPropTypesSecret = __webpack_require__(23);
   var loggedTypeFailures = {};
 }
 
@@ -13869,7 +15602,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 92 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13882,9 +15615,9 @@ module.exports = checkPropTypes;
 
 
 
-var emptyFunction = __webpack_require__(19);
-var invariant = __webpack_require__(20);
-var ReactPropTypesSecret = __webpack_require__(21);
+var emptyFunction = __webpack_require__(21);
+var invariant = __webpack_require__(22);
+var ReactPropTypesSecret = __webpack_require__(23);
 
 module.exports = function () {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -13928,4314 +15661,7 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 93 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Download;
-
-var _preact = __webpack_require__(0);
-
-var _createSizeModifier = __webpack_require__(8);
-
-var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Download(_ref) {
-  var size = _ref.size;
-
-  return (0, _preact.h)(
-    'svg',
-    { className: 'Icon' + (0, _createSizeModifier2.default)(size), version: '1.2', baseProfile: 'tiny', xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 100 100' },
-    (0, _preact.h)('path', { d: 'M68.8 50l28.1-28.1a10.7 10.7 0 0 0 0-15l-3.7-3.7a10.7 10.7 0 0 0-15.1-.1L50 31.2 21.9 3.1a10.8 10.8 0 0 0-15.1 0L3.1 6.8a10.7 10.7 0 0 0 0 15L31.2 50 3.1 78.1a10.7 10.7 0 0 0 0 15l3.7 3.7a10.7 10.7 0 0 0 15 0l28.2-28 28.1 28.1a10.7 10.7 0 0 0 15 0l3.7-3.7a10.7 10.7 0 0 0 0-15L68.8 50zm0 0' })
-  );
-}
-
-/***/ }),
-/* 94 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Download;
-
-var _preact = __webpack_require__(0);
-
-var _createSizeModifier = __webpack_require__(8);
-
-var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Download(_ref) {
-  var size = _ref.size;
-
-  return (0, _preact.h)(
-    'svg',
-    { className: 'Icon' + (0, _createSizeModifier2.default)(size), width: '0', height: '0', xmlns: 'http://www.w3.org/2000/svg', viewBox: '157 347 100 100' },
-    (0, _preact.h)('path', { d: 'M250.5 402.4a2 2 0 0 0-1.9-1.3h-22.8v-52c0-1.2-1-2.1-2.1-2.1h-33.3a2 2 0 0 0-2.1 2v52.1h-23a2 2 0 0 0-1.4 3.6l41.6 41.7c.4.4.9.6 1.4.6.6 0 1.1-.2 1.5-.6l41.7-41.7a2 2 0 0 0 .4-2.3z' })
-  );
-}
-
-/***/ }),
-/* 95 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Facebook;
-
-var _preact = __webpack_require__(0);
-
-var _createSizeModifier = __webpack_require__(8);
-
-var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Facebook(_ref) {
-  var size = _ref.size;
-
-  return (0, _preact.h)(
-    'svg',
-    { className: 'Icon' + (0, _createSizeModifier2.default)(size), version: '1.2', baseProfile: 'tiny', xmlns: 'http://www.w3.org/2000/svg', width: '0', height: '0', viewBox: '0 0 100 100' },
-    (0, _preact.h)(
-      'title',
-      null,
-      'Facebook Link'
-    ),
-    (0, _preact.h)('path', { d: 'M24.7 56.3h13v41.5c0 1.1.9 2 2 2h17a2 2 0 0 0 2-2V56.3h15.2a2 2 0 0 0 2-2V37.9c0-.5-.2-1.1-.6-1.4a2 2 0 0 0-1.4-.6h-15v-9.6c0-4.6 1.1-7 7.1-7h8.7a2 2 0 0 0 2-2V1.9A2 2 0 0 0 75.3 0H59C46 1.2 37.8 10.5 37.8 24.5v11.3h-13a2 2 0 0 0-2 2v16.4c-.1 1.2.8 2.1 1.9 2.1z' })
-  );
-}
-
-/***/ }),
-/* 96 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Facebook;
-
-var _preact = __webpack_require__(0);
-
-var _createSizeModifier = __webpack_require__(8);
-
-var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Facebook(_ref) {
-  var size = _ref.size;
-
-  return (0, _preact.h)(
-    'svg',
-    { className: 'Icon' + (0, _createSizeModifier2.default)(size), width: '0', height: '0', version: '1.2', baseProfile: 'tiny', xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 100 100' },
-    (0, _preact.h)(
-      'title',
-      null,
-      'Search'
-    ),
-    (0, _preact.h)('path', { d: 'M97.2 85.4L75.5 63.8l-.4-.3C79.5 57 82 49.3 82 41c0-22.6-18.3-41-41-41S0 18.3 0 41c0 22.6 18.3 41 41 41 8.3 0 16-2.5 22.5-6.7l.3.4 21.6 21.6c3.3 3.3 8.5 3.3 11.8 0 3.2-3.4 3.2-8.6 0-12zM41 67.7c-14.8 0-26.8-12-26.8-26.8 0-15 12-27 26.8-27s26.8 12 26.8 27c0 14.7-12 26.7-26.8 26.7z' })
-  );
-}
-
-/***/ }),
-/* 97 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Facebook;
-
-var _preact = __webpack_require__(0);
-
-var _createSizeModifier = __webpack_require__(8);
-
-var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Facebook(_ref) {
-  var size = _ref.size;
-
-  return (0, _preact.h)(
-    'svg',
-    { className: 'Icon' + (0, _createSizeModifier2.default)(size), version: '1.2', baseProfile: 'tiny', width: '0', height: '0', xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 100 100' },
-    (0, _preact.h)(
-      'title',
-      null,
-      'Twitter Link'
-    ),
-    (0, _preact.h)('path', { d: 'M100 19a42 42 0 0 1-11.8 3.2c4.2-2.5 7.5-6.6 9-11.4a40 40 0 0 1-13.1 5 20.5 20.5 0 0 0-35 18.7c-17.1-.9-32.2-9-42.3-21.4a20.6 20.6 0 0 0 6.3 27.4c-3.4-.1-6.5-1-9.3-2.6v.3c0 9.9 7.1 18.2 16.4 20.1a19 19 0 0 1-9.3.3 20.5 20.5 0 0 0 19.2 14.2A41.2 41.2 0 0 1-.3 81.3a58.4 58.4 0 0 0 31.5 9.2 57.9 57.9 0 0 0 58.3-58.3l-.1-2.7c4.4-2.8 7.9-6.4 10.6-10.5zm0 0' })
-  );
-}
-
-/***/ }),
-/* 98 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _camelcase = __webpack_require__(99);
-
-var _camelcase2 = _interopRequireDefault(_camelcase);
-
-var _glossary = __webpack_require__(41);
-
-var _glossary2 = _interopRequireDefault(_glossary);
-
-var _createComponent = __webpack_require__(100);
-
-var _createComponent2 = _interopRequireDefault(_createComponent);
-
-var _escapeRegex = __webpack_require__(102);
-
-var _escapeRegex2 = _interopRequireDefault(_escapeRegex);
-
-var _walkTheDom = __webpack_require__(103);
-
-var _walkTheDom2 = _interopRequireDefault(_walkTheDom);
-
-var _findReactInstances = __webpack_require__(104);
-
-var _findReactInstances2 = _interopRequireDefault(_findReactInstances);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function scripts() {
-  (0, _findReactInstances2.default)();
-
-  var convertToCamelCase = function convertToCamelCase() {
-    return Object.keys(_glossary2.default).reduce(function (result, key) {
-      return _extends({}, result, _defineProperty({}, (0, _camelcase2.default)(key), _glossary2.default[key]));
-    }, {});
-  };
-
-  var normalisedGlossaryObject = convertToCamelCase(_glossary2.default);
-
-  var regExpTermsWithOrOperators = Object.keys(_glossary2.default).sort(function (a, b) {
-    return b.length - a.length;
-  }).join('|');
-
-  var parentNodes = document.getElementsByClassName('js-tooltips');
-
-  var regExpression = new RegExp('(?:^|\\b)' + (0, _escapeRegex2.default)(regExpTermsWithOrOperators) + '(?!\\w)', 'gi');
-
-  var attachEventListeners = function attachEventListeners(tooltipNode) {
-    var openTrigger = tooltipNode.getElementsByClassName('js-trigger')[0];
-    var closeTrigger = tooltipNode.getElementsByClassName('js-closeTrigger')[0];
-    var alertNode = tooltipNode.getElementsByClassName('js-box')[0];
-    var modalCover = tooltipNode.getElementsByClassName('js-modalCover')[0];
-
-    var openTooltip = function openTooltip() {
-      return alertNode.classList.add('is-open');
-    };
-    var closeTooltip = function closeTooltip() {
-      return alertNode.classList.remove('is-open');
-    };
-
-    openTrigger.addEventListener('click', openTooltip);
-    closeTrigger.addEventListener('click', closeTooltip);
-    modalCover.addEventListener('click', closeTooltip);
-  };
-
-  var replaceText = function replaceText(node, year, source) {
-    if (node.nodeType === 3) {
-      var text = node.data.trim();
-      if (text.length > 0) {
-        var currentText = node.nodeValue;
-        var span = document.createElement('span');
-
-        var newText = currentText.replace(regExpression, function (match) {
-          return (0, _createComponent2.default)(year, match, source[(0, _camelcase2.default)(match)], '<span class="Tooltip-underline">' + match + '</span>');
-        });
-
-        span.innerHTML = newText;
-        node.parentNode.replaceChild(span, node);
-      }
-    }
-  };
-
-  for (var i = 0; i < parentNodes.length; i++) {
-    var parentNode = parentNodes[i];
-    var year = parentNode.getAttribute('data-year');
-
-    (0, _walkTheDom2.default)(parentNode, replaceText, year, normalisedGlossaryObject);
-
-    var newNodes = document.getElementsByClassName('Tooltip js-hook');
-
-    for (var ii = 0; ii < newNodes.length; ii++) {
-      attachEventListeners(newNodes[ii]);
-    }
-  }
-}
-
-exports.default = scripts();
-
-/***/ }),
-/* 99 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function preserveCamelCase(str) {
-	var isLastCharLower = false;
-	var isLastCharUpper = false;
-	var isLastLastCharUpper = false;
-
-	for (var i = 0; i < str.length; i++) {
-		var c = str[i];
-
-		if (isLastCharLower && /[a-zA-Z]/.test(c) && c.toUpperCase() === c) {
-			str = str.substr(0, i) + '-' + str.substr(i);
-			isLastCharLower = false;
-			isLastLastCharUpper = isLastCharUpper;
-			isLastCharUpper = true;
-			i++;
-		} else if (isLastCharUpper && isLastLastCharUpper && /[a-zA-Z]/.test(c) && c.toLowerCase() === c) {
-			str = str.substr(0, i - 1) + '-' + str.substr(i - 1);
-			isLastLastCharUpper = isLastCharUpper;
-			isLastCharUpper = false;
-			isLastCharLower = true;
-		} else {
-			isLastCharLower = c.toLowerCase() === c;
-			isLastLastCharUpper = isLastCharUpper;
-			isLastCharUpper = c.toUpperCase() === c;
-		}
-	}
-
-	return str;
-}
-
-module.exports = function (str) {
-	if (arguments.length > 1) {
-		str = Array.from(arguments).map(function (x) {
-			return x.trim();
-		}).filter(function (x) {
-			return x.length;
-		}).join('-');
-	} else {
-		str = str.trim();
-	}
-
-	if (str.length === 0) {
-		return '';
-	}
-
-	if (str.length === 1) {
-		return str.toLowerCase();
-	}
-
-	if (/^[a-z0-9]+$/.test(str)) {
-		return str;
-	}
-
-	var hasUpperCase = str !== str.toLowerCase();
-
-	if (hasUpperCase) {
-		str = preserveCamelCase(str);
-	}
-
-	return str.replace(/^[_.\- ]+/, '').toLowerCase().replace(/[_.\- ]+(\w|$)/g, function (m, p1) {
-		return p1.toUpperCase();
-	});
-};
-
-/***/ }),
-/* 100 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = createComponent;
-
-var _closeIcon = __webpack_require__(101);
-
-var _closeIcon2 = _interopRequireDefault(_closeIcon);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function createComponent(year, title, description, content) {
-  return '<span class="Tooltip js-hook">\n    <div class="Tooltip-trigger js-trigger">\n      ' + content + '\n    </div>\n    <div class="Tooltip-boxWrap js-box">\n      <div class="Tooltip-modalCover js-modalCover"></div>\n      <div class="Tooltip-box">\n        <div class="Tooltip-content">\n          <div class="Tooltip-contentWrap">\n            <div class="Tooltip-shadowBox">\n              <div class="Tooltip-infoBox">\n                <div class="Tooltip-title">' + title + '</div>\n                <div class="Tooltip-text">' + description + '</div>\n              </div>\n              <div class="Tooltip-links">\n                <span class="Tooltip-linkWrap is-close js-closeTrigger">\n                  <span class="Tooltip-closeIcon">\n                    ' + _closeIcon2.default + '\n                  </span>\n                  <span class="Tooltip-link">\n                    Close\n                  </span>\n                </span>\n\n                <a class="Tooltip-linkWrap" href="/glossary">\n                  <div class="Tooltip-link">View glossary</div>\n                </a>\n              </div>\n              <div class="Tooltip-triangle"></div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </span>';
-}
-
-/***/ }),
-/* 101 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = '<svg version="1.2" width="10" height="10" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M58.3 50.4L96.7 12c2.4-2.4 2.4-6.2 0-8.6C94.3 1 90.5 1 88 3.4L49.8 41.8 11.3 3.4C9 1 5 1 2.7 3.4.3 5.8.3 9.6 2.7 12L41 50.4 2.8 88.8C.3 91.2.3 95 2.7 97.4 4 98.6 5.5 99.2 7 99.2c1.6 0 3-.6 4.3-1.8L49.7 59 88 97.4c1.3 1.2 3 1.8 4.4 1.8 1.6 0 3-.6 4.3-1.8 2.4-2.4 2.4-6.2 0-8.6L58.3 50.4zm0 0"></path></svg>';
-
-/***/ }),
-/* 102 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = escapeRegExp;
-function escapeRegExp(text) {
-  return text.replace(/[\/\-\[\\\]\{\}\(\)\*\+\?\.\,\^\$\#\s]/gi, '\\$&');
-}
-
-/***/ }),
-/* 103 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = walkTheDom;
-function walkTheDom(node, func, source, regExpression) {
-  var children = node.childNodes;
-
-  for (var i = 0; i < children.length; i++) {
-    var childNode = children[i];
-
-    if (childNode.tagName !== 'A') {
-      walkTheDom(childNode, func, source, regExpression);
-    }
-  }
-
-  func(node, source, regExpression);
-}
-
-/***/ }),
-/* 104 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = findReactInstances;
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(42);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function findReactInstances() {
-  var patternId = document.getElementById('pattern-id-4368');
-  if (patternId) {
-    var component = (0, _preact.h)(
-      _index2.default,
-      {
-        title: 'Content Unavailable',
-        description: 'There is no exact match for this department in',
-        year: '2017-18',
-        openAction: function openAction() {
-          return console.log('open');
-        },
-        closeAction: function closeAction() {
-          return console.log('close');
-        },
-        down: true,
-        actions: [{
-          url: '#',
-          title: 'Test 1'
-        }, {
-          url: '#',
-          title: 'Test 2'
-        }, {
-          url: '#',
-          title: 'Test 3'
-        }]
-      },
-      (0, _preact.h)(
-        'div',
-        null,
-        'Test'
-      )
-    );
-
-    (0, _preact.render)(component, patternId);
-  }
-}
-
-/***/ }),
-/* 105 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Box;
-
-var _preact = __webpack_require__(0);
-
-var _Links = __webpack_require__(106);
-
-var _Links2 = _interopRequireDefault(_Links);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Box(_ref) {
-  var title = _ref.title,
-      description = _ref.description,
-      actions = _ref.actions,
-      down = _ref.down,
-      closeAction = _ref.closeAction;
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'Tooltip-box' },
-    (0, _preact.h)(
-      'div',
-      { className: 'Tooltip-content' + (down ? ' is-down' : '') },
-      (0, _preact.h)(
-        'div',
-        { className: 'Tooltip-contentWrap' },
-        (0, _preact.h)(
-          'div',
-          { className: 'Tooltip-shadowBox' },
-          (0, _preact.h)(
-            'div',
-            { className: 'Tooltip-infoBox' },
-            (0, _preact.h)(
-              'div',
-              { className: 'Tooltip-title' },
-              title
-            ),
-            (0, _preact.h)(
-              'div',
-              { className: 'Tooltip-text' },
-              description
-            ),
-            (0, _preact.h)(_Links2.default, { actions: actions, closeAction: closeAction })
-          ),
-          (0, _preact.h)('div', { className: 'Tooltip-triangle' + (down ? ' is-down' : '') })
-        )
-      )
-    )
-  );
-}
-
-/***/ }),
-/* 106 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Links;
-
-var _preact = __webpack_require__(0);
-
-var _CloseIcon = __webpack_require__(107);
-
-var _CloseIcon2 = _interopRequireDefault(_CloseIcon);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Links(_ref) {
-  var actions = _ref.actions,
-      closeAction = _ref.closeAction;
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'Tooltip-links' },
-    (0, _preact.h)(
-      'span',
-      { className: 'Tooltip-linkWrap is-close', onClick: closeAction },
-      (0, _preact.h)(
-        'span',
-        { className: 'Tooltip-closeIcon' },
-        (0, _preact.h)(_CloseIcon2.default, null)
-      ),
-      (0, _preact.h)(
-        'span',
-        { className: 'Tooltip-link' },
-        'Close'
-      )
-    ),
-    actions.map(function (_ref2) {
-      var url = _ref2.url,
-          title = _ref2.title;
-
-      return (0, _preact.h)(
-        'a',
-        { className: 'Tooltip-linkWrap', href: url },
-        (0, _preact.h)(
-          'div',
-          { className: 'Tooltip-link' },
-          title
-        )
-      );
-    })
-  );
-}
-
-/***/ }),
-/* 107 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = CloseIcon;
-
-var _preact = __webpack_require__(0);
-
-function CloseIcon() {
-  return (0, _preact.h)(
-    "svg",
-    { version: "1.2", width: "10", height: "10", baseProfile: "tiny", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100" },
-    (0, _preact.h)("path", { d: "M58.3 50.4L96.7 12c2.4-2.4 2.4-6.2 0-8.6C94.3 1 90.5 1 88 3.4L49.8 41.8 11.3 3.4C9 1 5 1 2.7 3.4.3 5.8.3 9.6 2.7 12L41 50.4 2.8 88.8C.3 91.2.3 95 2.7 97.4 4 98.6 5.5 99.2 7 99.2c1.6 0 3-.6 4.3-1.8L49.7 59 88 97.4c1.3 1.2 3 1.8 4.4 1.8 1.6 0 3-.6 4.3-1.8 2.4-2.4 2.4-6.2 0-8.6L58.3 50.4zm0 0" })
-  );
-}
-
-/***/ }),
-/* 108 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(22);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _getProp = __webpack_require__(14);
-
-var _getProp2 = _interopRequireDefault(_getProp);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function scripts() {
-  var nodesList = document.getElementsByClassName('js-initResponsiveChart');
-
-  for (var i = 0; i < nodesList.length; i++) {
-    var node = nodesList[i];
-    var items = (0, _getProp2.default)('items', node, 'json');
-    var type = (0, _getProp2.default)('type', node);
-    var rawDownload = (0, _getProp2.default)('download', node, 'json');
-
-    var downloadHasProps = !!(rawDownload && rawDownload.heading && rawDownload.subHeading && rawDownload.type);
-    var download = downloadHasProps ? rawDownload : null;
-
-    (0, _preact.render)((0, _preact.h)(_index2.default, { items: items, download: download, type: type }), node);
-  }
-}
-
-exports.default = scripts();
-
-/***/ }),
-/* 109 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = Markup;
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(9);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _index3 = __webpack_require__(43);
-
-var _index4 = _interopRequireDefault(_index3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Markup(props) {
-  var width = props.width,
-      type = props.type,
-      items = props.items;
-  var parentAction = props.parentAction;
-
-
-  if (type === 'bar') {
-    return (0, _preact.h)(_index2.default, _extends({
-      guides: true,
-      hover: true,
-      scale: 1
-    }, { parentAction: parentAction, items: items, width: width }));
-  }
-
-  if (type === 'line') {
-    return (0, _preact.h)(_index4.default, _extends({
-      guides: true,
-      hover: true
-    }, { parentAction: parentAction, width: width, items: items }));
-  }
-}
-
-/***/ }),
-/* 110 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = calcMaxValue;
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function calcMaxValue(items) {
-  var labels = Object.keys(items);
-
-  return labels.reduce(function (result, key) {
-    var maxValue = Math.max.apply(Math, _toConsumableArray(items[key]));
-    return maxValue > result ? maxValue : result;
-  }, 0);
-}
-
-/***/ }),
-/* 111 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = buildGroupSpaceArray;
-
-var _breakIntoWrap = __webpack_require__(10);
-
-var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function buildGroupSpaceArray(items, styling) {
-  var lineGutter = styling.lineGutter,
-      barWidth = styling.barWidth,
-      groupMargin = styling.groupMargin,
-      charWrap = styling.charWrap,
-      charLineHeight = styling.charLineHeight,
-      titleSpace = styling.titleSpace;
-
-
-  return Object.keys(items).map(function (key) {
-    var value = items[key];
-    var rawLines = (0, _breakIntoWrap2.default)(key, charWrap);
-
-    var lines = rawLines.filter(function (val) {
-      return val !== '';
-    });
-
-    var totalGutters = (value.length - 1) * lineGutter;
-    var totalLineWidth = value.length * barWidth;
-    var totalText = charLineHeight * lines.length;
-
-    return totalGutters + totalLineWidth + totalText + groupMargin;
-  });
-}
-
-/***/ }),
-/* 112 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = Breakpoints;
-
-var _preact = __webpack_require__(0);
-
-var _BreakpointItem = __webpack_require__(113);
-
-var _BreakpointItem2 = _interopRequireDefault(_BreakpointItem);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Breakpoints(_ref) {
-  var items = _ref.items,
-      styling = _ref.styling,
-      totalGroupSpace = _ref.totalGroupSpace;
-  var valueSpace = styling.valueSpace,
-      buffer = styling.buffer,
-      padding = styling.padding,
-      labelBreakpoints = styling.labelBreakpoints;
-
-  var breakpointArray = [];
-
-  for (var i = 0; i < labelBreakpoints; i++) {
-    breakpointArray.push('');
-  }
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'Graph-verticalLabelList' },
-    breakpointArray.map(function (val, index) {
-      return (0, _preact.h)(_BreakpointItem2.default, _extends({ rank: index }, { styling: styling, totalGroupSpace: totalGroupSpace }));
-    })
-  );
-}
-
-/***/ }),
-/* 113 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = HorisontalBreakpoint;
-
-var _preact = __webpack_require__(0);
-
-var _trimValues = __webpack_require__(11);
-
-var _trimValues2 = _interopRequireDefault(_trimValues);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function HorisontalBreakpoint(_ref) {
-  var styling = _ref.styling,
-      totalGroupSpace = _ref.totalGroupSpace,
-      rank = _ref.rank;
-  var maxValue = styling.maxValue,
-      fontSize = styling.fontSize,
-      valueSpace = styling.valueSpace,
-      buffer = styling.buffer,
-      padding = styling.padding,
-      labelBreakpoints = styling.labelBreakpoints;
-
-  var debugIteration = (valueSpace - buffer) / labelBreakpoints;
-  var iterationValue = maxValue / (labelBreakpoints - 1);
-  var iterationPosition = (valueSpace - buffer) / (labelBreakpoints - 1);
-
-  return (0, _preact.h)(
-    'g',
-    null,
-    (0, _preact.h)(
-      'text',
-      {
-        className: 'Graph-label',
-        x: padding[3] + buffer + rank * iterationPosition,
-        y: padding[0] + totalGroupSpace + buffer * 2 + fontSize,
-        'font-size': fontSize,
-        'font-family': 'sans-serif',
-        'font-weight': 'bold',
-        'text-anchor': 'middle'
-      },
-      'R',
-      (0, _trimValues2.default)(iterationValue * rank)
-    )
-  );
-}
-
-/***/ }),
-/* 114 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Grid;
-
-var _preact = __webpack_require__(0);
-
-function Grid(_ref) {
-  var styling = _ref.styling,
-      totalGroupSpace = _ref.totalGroupSpace;
-  var padding = styling.padding,
-      valueSpace = styling.valueSpace,
-      buffer = styling.buffer;
-
-
-  return (0, _preact.h)(
-    "g",
-    { className: "Graph-grid" },
-    (0, _preact.h)("line", {
-      className: "Graph-outline",
-      x1: padding[3],
-      y1: padding[0],
-      x2: padding[3],
-      y2: padding[0] + totalGroupSpace,
-      "stroke-width": "2",
-      stroke: "#d2d2d2",
-      fill: "none"
-    }),
-    (0, _preact.h)("path", {
-      className: "Graph-outline",
-      d: "\n          M" + padding[3] + " " + (padding[0] + totalGroupSpace) + " \n          Q " + padding[3] + " " + (padding[0] + buffer + totalGroupSpace) + ", \n          " + (padding[3] + buffer) + " " + (padding[0] + buffer + totalGroupSpace) + "\n        ",
-      "stroke-width": "2",
-      stroke: "#d2d2d2",
-      fill: "none"
-    }),
-    (0, _preact.h)("line", {
-      className: "Graph-outline",
-      x1: padding[3] + buffer,
-      y1: padding[0] + totalGroupSpace + buffer,
-      x2: padding[3] + valueSpace,
-      y2: padding[0] + totalGroupSpace + buffer,
-      "stroke-width": "2",
-      stroke: "#d2d2d2",
-      fill: "none"
-    })
-  );
-}
-
-/***/ }),
-/* 115 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = Guides;
-
-var _preact = __webpack_require__(0);
-
-var _GuideItem = __webpack_require__(116);
-
-var _GuideItem2 = _interopRequireDefault(_GuideItem);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Guides(_ref) {
-  var styling = _ref.styling,
-      totalGroupSpace = _ref.totalGroupSpace;
-  var labelBreakpoints = styling.labelBreakpoints;
-
-
-  var breakpointArray = [];
-
-  for (var i = 0; i < labelBreakpoints; i++) {
-    breakpointArray.push('');
-  }
-
-  // const { buffer, padding } = styling;
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'Graph-verticalLabelList' },
-    breakpointArray.map(function (val, index) {
-      if (index !== breakpointArray.length - 1) {
-        return (0, _preact.h)(_GuideItem2.default, _extends({ rank: index }, { styling: styling, totalGroupSpace: totalGroupSpace }));
-      }
-
-      return null;
-    })
-  );
-}
-
-/***/ }),
-/* 116 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = HorisontalGuide;
-
-var _preact = __webpack_require__(0);
-
-function HorisontalGuide(_ref) {
-  var styling = _ref.styling,
-      totalGroupSpace = _ref.totalGroupSpace,
-      rank = _ref.rank;
-  var valueSpace = styling.valueSpace,
-      buffer = styling.buffer,
-      fontSize = styling.fontSize,
-      padding = styling.padding,
-      labelBreakpoints = styling.labelBreakpoints;
-
-  var iteration = valueSpace / (labelBreakpoints - 1);
-
-  // const debugIteration = totalGroupSpace / labelBreakpoints;
-
-  return (0, _preact.h)(
-    "g",
-    null,
-    (0, _preact.h)("line", {
-      x1: padding[3] + iteration * rank + iteration,
-      y1: padding[0],
-      x2: padding[3] + iteration * rank + iteration,
-      y2: padding[0] + totalGroupSpace + buffer,
-      className: "Graph-guide",
-      stroke: "#e6e6e6"
-    })
-  );
-}
-
-/***/ }),
-/* 117 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = LineGroups;
-
-var _preact = __webpack_require__(0);
-
-var _LineGroupItem = __webpack_require__(118);
-
-var _LineGroupItem2 = _interopRequireDefault(_LineGroupItem);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function LineGroups(_ref) {
-  var totalGroupSpace = _ref.totalGroupSpace,
-      groupSpaceArray = _ref.groupSpaceArray,
-      items = _ref.items,
-      styling = _ref.styling;
-
-  var titles = Object.keys(items);
-  var padding = styling.padding,
-      buffer = styling.buffer,
-      valueSpace = styling.valueSpace;
-
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'LineGroupList' },
-    titles.map(function (key, index) {
-      return (0, _preact.h)(_LineGroupItem2.default, _extends({
-        rank: index,
-        lines: items[key],
-        title: key
-      }, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, styling: styling }));
-    })
-  );
-}
-
-/***/ }),
-/* 118 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = LineGroupItem;
-
-var _preact = __webpack_require__(0);
-
-var _breakIntoWrap = __webpack_require__(10);
-
-var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var colours = ['#79b43c', '#4a4a4a', '#ad3c64'];
-
-function LineGroupItem(_ref) {
-  var totalGroupSpace = _ref.totalGroupSpace,
-      groupSpaceArray = _ref.groupSpaceArray,
-      rank = _ref.rank,
-      lines = _ref.lines,
-      title = _ref.title,
-      styling = _ref.styling;
-  var barWidth = styling.barWidth,
-      padding = styling.padding,
-      buffer = styling.buffer,
-      valueSpace = styling.valueSpace,
-      lineGutter = styling.lineGutter,
-      maxValue = styling.maxValue,
-      groupMargin = styling.groupMargin,
-      fontSize = styling.fontSize,
-      charWrap = styling.charWrap,
-      charLineHeight = styling.charLineHeight,
-      titleSpace = styling.titleSpace;
-
-
-  var groupSpace = groupSpaceArray[rank];
-
-  var previousSpace = groupSpaceArray.reduce(function (result, val, index) {
-    if (index < rank) {
-      return result + val;
-    }
-
-    return result;
-  }, 0);
-
-  var startPoint = padding[0] + previousSpace;
-  var rawCharArray = (0, _breakIntoWrap2.default)(title, charWrap);
-  var charArray = rawCharArray.filter(function (val) {
-    return val !== '';
-  });
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'Graph-group' },
-    charArray.map(function (val, index) {
-      return (0, _preact.h)(
-        'text',
-        {
-          className: 'Graph-label Graph-label--leftAlign',
-          y: padding[0] + previousSpace + groupMargin / 2 + charLineHeight * index,
-          x: padding[3] + buffer,
-          'font-family': 'sans-serif',
-          'font-weight': 'bold'
-        },
-        val
-      );
-    }),
-    lines.map(function (amount, index) {
-      var relativeAmount = amount / maxValue * valueSpace - barWidth;
-      var displayAmount = relativeAmount < barWidth * 2 ? barWidth * 2 : relativeAmount;
-
-      return (0, _preact.h)('line', {
-        'stroke-linecap': 'round',
-        'stroke-width': barWidth,
-        y1: groupMargin / 2 + startPoint + index * (barWidth + lineGutter) + barWidth / 2 + charLineHeight * charArray.length,
-        x1: padding[3] + buffer + barWidth / 2,
-        y2: groupMargin / 2 + startPoint + index * (barWidth + lineGutter) + barWidth / 2 + charLineHeight * charArray.length,
-        x2: padding[3] + buffer + displayAmount - barWidth,
-        className: 'Graph-line',
-        stroke: colours[index]
-      });
-    })
-  );
-}
-
-/***/ }),
-/* 119 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = Tooltips;
-
-var _preact = __webpack_require__(0);
-
-var _TooltipGroup = __webpack_require__(120);
-
-var _TooltipGroup2 = _interopRequireDefault(_TooltipGroup);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Tooltips(_ref) {
-  var totalGroupSpace = _ref.totalGroupSpace,
-      groupSpaceArray = _ref.groupSpaceArray,
-      items = _ref.items,
-      styling = _ref.styling;
-
-  var titles = Object.keys(items);
-  var padding = styling.padding,
-      buffer = styling.buffer,
-      valueSpace = styling.valueSpace;
-
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'LineGroupList' },
-    titles.map(function (key, index) {
-      return (0, _preact.h)(_TooltipGroup2.default, _extends({
-        rank: index,
-        lines: items[key],
-        title: key
-      }, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, styling: styling, items: items }));
-    })
-  );
-}
-
-/***/ }),
-/* 120 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = TooltipGroup;
-
-var _preact = __webpack_require__(0);
-
-var _TooltipItem = __webpack_require__(121);
-
-var _TooltipItem2 = _interopRequireDefault(_TooltipItem);
-
-var _breakIntoWrap = __webpack_require__(10);
-
-var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var colours = ['#79b43c', '#4a4a4a', '#ad3c64'];
-
-function TooltipGroup(_ref) {
-  var totalGroupSpace = _ref.totalGroupSpace,
-      items = _ref.items,
-      groupSpaceArray = _ref.groupSpaceArray,
-      rank = _ref.rank,
-      lines = _ref.lines,
-      title = _ref.title,
-      styling = _ref.styling;
-  var barWidth = styling.barWidth,
-      padding = styling.padding,
-      buffer = styling.buffer,
-      valueSpace = styling.valueSpace,
-      lineGutter = styling.lineGutter,
-      maxValue = styling.maxValue,
-      groupMargin = styling.groupMargin,
-      charLineHeight = styling.charLineHeight,
-      titleSpace = styling.titleSpace,
-      charWrap = styling.charWrap;
-
-
-  var groupSpace = groupSpaceArray[rank];
-
-  var previousSpace = groupSpaceArray.reduce(function (result, val, index) {
-    if (index < rank) {
-      return result + val;
-    }
-
-    return result;
-  }, 0);
-
-  var startPoint = padding[0] + previousSpace;
-
-  var breakIntoArray = function breakIntoArray(string) {
-    var result = [];
-
-    for (var i = 0; i < string.length; i += charWrap) {
-      result.push(string.substr(i, charWrap));
-    }
-
-    return result;
-  };
-
-  var titles = Object.keys(items);
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'Graph-group' },
-    lines.map(function (amount, index) {
-      var rawCharArray = (0, _breakIntoWrap2.default)(title, charWrap);
-      var charArray = rawCharArray.filter(function (val) {
-        return val !== '';
-      });
-      var relativeAmount = amount / maxValue * valueSpace - barWidth;
-      var displayAmount = relativeAmount < barWidth * 2 ? barWidth * 2 : relativeAmount;
-
-      return (0, _preact.h)(_TooltipItem2.default, _extends({ styling: styling }, {
-        xPosition: padding[3] + buffer + displayAmount - barWidth / 2,
-        yPosition: groupMargin / 2 + startPoint + index * (barWidth + lineGutter) + barWidth / 2 + charLineHeight * charArray.length
-      }, { amount: amount, totalGroupSpace: totalGroupSpace }, {
-        colour: colours[index]
-      }));
-    })
-  );
-}
-
-/***/ }),
-/* 121 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = TooltipItem;
-
-var _preact = __webpack_require__(0);
-
-var _trimValues = __webpack_require__(11);
-
-var _trimValues2 = _interopRequireDefault(_trimValues);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function TooltipItem(_ref) {
-  var styling = _ref.styling,
-      xTriggerPosition = _ref.xTriggerPosition,
-      xPosition = _ref.xPosition,
-      yPosition = _ref.yPosition,
-      amount = _ref.amount,
-      colour = _ref.colour,
-      totalGroupSpace = _ref.totalGroupSpace;
-  var barWidth = styling.barWidth,
-      popUpOffset = styling.popUpOffset,
-      buffer = styling.buffer,
-      valueSpace = styling.valueSpace,
-      lineGutter = styling.lineGutter,
-      padding = styling.padding,
-      popupWidth = styling.popupWidth,
-      popupHeight = styling.popupHeight,
-      popupFontSize = styling.popupFontSize,
-      units = styling.units,
-      popupCentre = styling.popupCentre;
-
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'BarChart-tooltip' },
-    (0, _preact.h)('rect', {
-      x: padding[3] + buffer,
-      y: yPosition - (barWidth + lineGutter) / 2,
-      width: valueSpace + padding[0] - buffer,
-      height: barWidth + lineGutter,
-      opacity: '0'
-    }),
-    (0, _preact.h)('polygon', {
-      className: 'BarChart-triangle',
-      points: '\n          ' + (xPosition + popUpOffset) + ',\n          ' + yPosition + '\n\n          ' + (xPosition + 6 + popUpOffset) + ',\n          ' + (yPosition - 6) + '\n\n          ' + (xPosition + barWidth + popUpOffset) + ',\n          ' + (yPosition - 6) + '\n\n          ' + (xPosition + barWidth + popUpOffset) + ',\n          ' + (yPosition + 6) + '\n          \n          ' + (xPosition + 6 + popUpOffset) + ',\n          ' + (yPosition + 6) + '\n        ',
-      fill: colour
-    }),
-    (0, _preact.h)('rect', {
-      rx: '10',
-      ry: '10',
-      className: 'BarChart-tooltipBase',
-      x: xPosition + 6 + popUpOffset,
-      y: yPosition - popupHeight / 2,
-      width: popupWidth,
-      height: popupHeight,
-      fill: colour
-    }),
-    (0, _preact.h)(
-      'text',
-      {
-        x: xPosition + popupWidth / 2 + popUpOffset + barWidth / 2,
-        y: yPosition + popupCentre,
-        'font-size': popupFontSize,
-        className: 'BarChart-tooltipText',
-        'font-family': 'sans-serif',
-        'text-anchor': 'middle',
-        fill: 'white'
-      },
-      (0, _trimValues2.default)(amount)
-    )
-  );
-}
-
-/***/ }),
-/* 122 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Attribution;
-
-var _preact = __webpack_require__(0);
-
-function Attribution(_ref) {
-  var top = _ref.top,
-      left = _ref.left;
-
-  return (0, _preact.h)(
-    "g",
-    null,
-    (0, _preact.h)(
-      "text",
-      {
-        "font-size": "14",
-        x: left,
-        y: top,
-        "font-weight": "bold",
-        "text-anchor": "end",
-        fill: "#ed9e31",
-        "font-family": "sans-serif"
-      },
-      "Downloaded from www.vulekamali.gov.za"
-    )
-  );
-}
-
-/***/ }),
-/* 123 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Heading;
-
-var _preact = __webpack_require__(0);
-
-var _breakIntoWrap = __webpack_require__(10);
-
-var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Heading(_ref) {
-  var heading = _ref.heading,
-      subHeading = _ref.subHeading,
-      type = _ref.type,
-      left = _ref.left;
-
-  var titleArray = (0, _breakIntoWrap2.default)(heading, 33);
-
-  return (0, _preact.h)(
-    'g',
-    null,
-    (0, _preact.h)(
-      'text',
-      { y: '49', x: left, 'font-size': '28', 'font-weight': 'bold', fill: '#3f3f3f', 'font-family': 'sans-serif' },
-      titleArray.map(function (text, index) {
-        return (0, _preact.h)(
-          'tspan',
-          { x: left, y: 49 + 30 * index },
-          text.trim()
-        );
-      })
-    ),
-    (0, _preact.h)(
-      'text',
-      { y: 42 + 30 * titleArray.length, x: left, 'font-size': '14', 'font-weight': 'bold', fill: '#808080', 'font-family': 'sans-serif' },
-      subHeading
-    ),
-    (0, _preact.h)(
-      'text',
-      { y: 62 + 30 * titleArray.length, x: left, 'font-size': '14', 'font-weight': 'bold', fill: '#79b43c', 'font-family': 'sans-serif' },
-      type
-    )
-  );
-}
-
-/***/ }),
-/* 124 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Logo;
-
-var _preact = __webpack_require__(0);
-
-function Logo(_ref) {
-  var top = _ref.top,
-      left = _ref.left;
-
-  return (0, _preact.h)(
-    "svg",
-    { version: "1.2", width: "145", y: top, x: left, baseProfile: "tiny", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 991.4 301.6" },
-    (0, _preact.h)("path", { fill: "#3f3f3f", d: "M543 246a9 9 0 0 0 8.9 9 9 9 0 0 0 6.8-3v2.6h4v-17.4h-4v2.6c-1.1-1.3-3-3-6.8-3a9 9 0 0 0-9 9.3m9.6 5.3a5.3 5.3 0 0 1-5.5-5.5c0-3.3 2.3-5.6 5.5-5.6s5.6 2.3 5.6 5.6c0 3.2-2.4 5.5-5.6 5.5m-26-10.6v13.8h4v-13.8h4.1v-3.6h-4v-7.6h-4.1v7.6h-2.4v3.6h2.4zm-33.5 5.3a9 9 0 0 0 9 8.9 9 9 0 0 0 6.7-3v2.6h4v-17.4h-4v2.6c-1-1.3-3-3-6.7-3a9 9 0 0 0-9 9.3m9.6 5.3a5.3 5.3 0 0 1-5.5-5.5c0-3.3 2.3-5.6 5.5-5.6s5.5 2.3 5.5 5.6c0 3.2-2.3 5.5-5.5 5.5m-38.3-1.1v-21.4h4.9c6 0 10 4.6 10 10.6 0 6.1-4 10.8-10 10.8h-4.9zm19.1-10.8c0-8.3-5.6-14.9-14.2-14.9H460v30h9.2c8.6 0 14.2-6.7 14.2-15m-55.8 1.3v13.7h4v-13.8h4v-3.6h-4v-7.6h-4v7.6h-2.4v3.6h2.4zm-30.4 5c0 5.1 3.7 9 9 9 3.9 0 6.2-2.1 7-3.6l-2.8-2c-.7.8-2.1 2-4 2-3.5 0-5.1-2.3-5.1-5.1H415c0-5.7-3.9-9.3-9-9.3a9 9 0 0 0-9 9m13.6-2.3h-9a4.6 4.6 0 0 1 4.4-3.2c2.5 0 4 1.4 4.6 3.2m-35.2 7.8a5.3 5.3 0 0 1-5.5-5.5c0-3.3 2.3-5.6 5.5-5.6s5.6 2.3 5.6 5.6c0 3.2-2.4 5.5-5.6 5.5m6.1.7v2.5c0 3-1.8 4.8-5.7 4.8-3 0-4.4-1.3-4.7-2.3h-4.7c.8 3 3.9 6 9.3 6 5.8 0 10-3.2 10-8.5v-17.4h-4.2v2.6c-1-1.3-3-3-6.7-3a9 9 0 0 0-9 9.3 9 9 0 0 0 9 8.9 9 9 0 0 0 6.8-3m-37.7-.6a5.3 5.3 0 0 1-5.5-5.5c0-3.3 2.3-5.6 5.5-5.6s5.5 2.3 5.5 5.6c0 3.2-2.3 5.5-5.5 5.5m10.2-27.1h-4v15.5a9 9 0 0 0-15.7 6.3 9 9 0 0 0 8.9 8.8 9 9 0 0 0 6.7-2.9v2.6h4.1v-30.3zm-42.2 13h-4V248c0 3.9 2.7 7 7.4 7s7.5-3.1 7.5-7v-10.9h-4V248c0 2.3-1.4 3.5-3.5 3.5-2 0-3.4-1.2-3.4-3.5v-10.7zm-30.5 13V241h4.6c3 0 5.5 1.5 5.5 4.6 0 3.2-2.6 4.6-5.5 4.6h-4.6zm0-13.5v-8h2c2.3 0 4.2 1.3 4.2 3.8a4 4 0 0 1-4.1 4.2h-2.1zm10.7-4.6c0-5-4.3-8-8.7-8h-6.3v30.4h9.6c4.7 0 9.2-2.5 9.2-8.7 0-4.9-4-7.6-7-8 1.8-1 3.2-2.3 3.2-5.7m-56.9 13.7c0 5.1 3.7 9 9 9 4 0 6.2-2.1 7.1-3.6l-2.9-2c-.6.8-2.1 2-4 2-3.4 0-5-2.3-5-5.1h13.7c0-5.7-3.8-9.3-9-9.3a9 9 0 0 0-8.9 9m13.5-2.3h-9a4.6 4.6 0 0 1 4.5-3.2c2.4 0 3.9 1.4 4.5 3.2m-39.9 11h4.1V245c0-1.7 1.2-4.1 4-4.1 2.3 0 3.2 1.6 3.2 4v9.7h4V244c0-4-1.8-7.2-6.4-7.2-3.3 0-4.3 1.7-4.8 2.8v-2.5h-4v17.4zm-12.3-23c0-1.5-1.1-2.6-2.6-2.6s-2.5 1.1-2.5 2.6 1.1 2.5 2.5 2.5 2.6-1.1 2.6-2.5m-.5 5.6h-4v17.4h4v-17.4zm-17.8-13h-4v30.4h4v-30.3zm-31.9 30.4h4.1V245c0-1.7 1.2-4.1 4-4.1 2.3 0 3.2 1.6 3.2 4v9.7h4V244c0-4-1.8-7.2-6.4-7.2-3.3 0-4.3 1.7-4.8 2.8v-2.5h-4v17.4zm-27.1-3.9c-6.3 0-11-4.7-11-11 0-6.4 4.7-11.1 11-11.1s11.1 4.7 11.1 11c0 6.4-4.8 11.1-11.1 11.1m15.4-11c0-8.7-6.8-15.4-15.4-15.4-8.7 0-15.4 6.7-15.4 15.3 0 8.7 6.7 15.4 15.4 15.4 8.6 0 15.4-6.7 15.4-15.4m-66.9-7l4.5 12h-9l4.5-12zm-1.4-8l-11.2 30h4.3l2.3-6h12l2.1 6h4.5l-11.3-30h-2.7zm-26.3 5.8L43 227c-1.7-1.5-4-2.6-7.3-2.6-4.8 0-8.2 3.3-8.2 7.7 0 4.9 3.1 6.7 7 8.3 4 1.5 5.7 3.4 5.7 5.7 0 2.5-2.3 4.4-4.9 4.4a7 7 0 0 1-6.1-3.3l-3.1 3c1.4 2.1 4.4 4.5 9.4 4.5s9-3 9-8.6-4.7-8.2-8.4-9.6c-3-1.2-4.3-2.3-4.3-4.4 0-1.8 1.3-3.5 3.9-3.5 2 0 3.4.6 4.5 1.7" }),
-    (0, _preact.h)("path", { fill: "#7bb344", d: "M559.7 155.3v-4.4c1-13.3 3.2-26.4 8-38.9 4-10.7 8.9-21.1 13.7-31.5 1.5-3.3 4-6 6-9l1 .4c-.8 5-1.4 10.2-2.5 15.2a289.6 289.6 0 0 1-15.8 47.6c-2.5 6-5.3 11.7-8 17.6a9 9 0 0 1-2.4 3m-46.5-4.2c-6.3 6.1-9.5 14.8-14.4 22.4a35 35 0 0 1-9.4 10.7l-1.9 1.1V178c1-10.5 4.1-20.3 11-28.7 1.9-2.3 4.3-4.4 6.7-6.3 2.8-2.1 5.6-.6 6.1 2.8.3 1.7 1.1 3.2 1.9 5.3m477-6.3a78.2 78.2 0 0 0-47.5-61.3 76.7 76.7 0 0 0-59.6-1.2c-1 .4-1.6.2-2.1-.8l-2.5-4.6A152 152 0 0 0 794 7.5 148.6 148.6 0 0 0 712.6 4 149.8 149.8 0 0 0 617 74.3l-2.3 4.2 2.5.1h18.2c5.5 0 5.6 0 7.6-5 3.4-9.1 9-15.7 18.7-18.6 12-3.7 23.8-8.2 35.9-11.2 19.4-4.9 39.2-7.4 59.2-5.9 8.4.7 16.8 1.7 25 2.8a168 168 0 0 1 30.1 7.5 709 709 0 0 1 25.3 9 18 18 0 0 1 9 7.2A60.4 60.4 0 0 1 854 82c3.1 11.3 5.8 22.7 8.6 34l.5 1.6.5.2.8-1.2a64.7 64.7 0 0 1 20-15.6 62 62 0 0 1 28.2-6c15.4.1 28.8 5.4 40.1 15.7a59.3 59.3 0 0 1 20.7 47 43 43 0 0 1-13.1 31.6c-7.5 7.1-16.4 8.3-25.9 5.7-6-1.6-9.3-6.6-11.6-12.2-1-2.3-1-2.4-3.3-1.4a22 22 0 0 1-12.2 1.5 26.3 26.3 0 1 1 10.3-51.5l3.2.8c0-1.9 1.1-1.7 2.2-1.7h11.8c2.6 0 2.6 0 2.6 2.6V168c0 3.2 1 6.2 2.5 8.9 1.3 2.3 3 2.8 5.3 1.5 1.3-.7 2.7-1.7 3.5-3a32.8 32.8 0 0 0 6-24.5 43.2 43.2 0 0 0-14.3-26.2 41.9 41.9 0 0 0-34-11 42.4 42.4 0 0 0-26.9 13.9 42.8 42.8 0 0 0-6.7 49.5 43.1 43.1 0 0 0 54.5 20.4c1.2-.4 1.9-.3 2.5.8l7.3 13.5c.6 1 .3 1.5-.8 2a62.3 62.3 0 0 1-39 3.7 57.3 57.3 0 0 1-31.4-18.7 73.4 73.4 0 0 1-18.2-34.4l-1.3-5.8c-.5-2-1.6-3.6-3.3-4.8-5.6-3.9-12-5.1-18.5-5.1-8.2 0-16.1 2.1-22.9 7-4 3-7.5 6.5-11.2 9.8l-3.5 3-2.4-11-6.4-31c-1-5.2-4-9-8.8-11.2a54.7 54.7 0 0 0-46-.5c-5.1 2.2-8.4 6.1-9.5 11.7l-8.4 40.4c0 .6-.3 1.2-.5 2-.8-.6-1.5-1-2-1.6l-10-8.5c-3.9-3-7.7-6-12.3-7.8a34.7 34.7 0 0 0-22-.1c-6 1.6-9.7 5-11 11.4a61 61 0 0 1-9.6 23c-2.5 3.6-5.5 6.8-9.7 8.6-5.6 2.2-9.9.3-11.7-5.5-2-6-1.6-12.3-1-18.4.9-7.3 2.4-14.4 3.6-21.7.2-1.4.1-2.9-.2-4.2-.4-2-2.2-2.9-3.8-1.8-1.7 1-3.7 2.4-4.3 4.1-3.4 8.4-6.3 16.9-9.5 25.3a10 10 0 0 1-1.8 3.2 78 78 0 0 1-17 13.3c-2.6 1.5-5.3 3-8.2 3.6-6.2 1.4-10.6.1-12.9-7.4l-.1-.5-1.8-13.2c0-.6.5-1.4.9-1.9 3.4-4 7-7.7 10-12 7-9.6 12.3-20.3 17-31.3a231.5 231.5 0 0 0 15-48.8c1.2-6.5 1.2-13-1.7-19.2a9.9 9.9 0 0 0-7-5.9c-3.6-.8-6.7.2-9.7 2A49.7 49.7 0 0 0 566.5 72c-7 12-11.8 25-15.3 38.6a220.9 220.9 0 0 0-5.8 33.8c-.8 8.6-1 17.1-.4 25.7.1 1.2-.1 2.7-.8 3.7-3.3 5-6.7 10-10.4 14.7a90.4 90.4 0 0 1-8.4 9.1c-1.3 1.3-3.2 1.9-5 .8-1.7-1-1.3-2.8-1-4.2.9-5.5 1.8-11 3.1-16.3 1.6-6.8 3.6-13.6 5.5-20.3 1.2-4.3-1.8-10.4-7-10-1.3.2-1.3-.6-1.2-1.5.6-9-6.7-15.6-15.6-14-5 1-9.1 3.7-12.7 7.1a63.4 63.4 0 0 0-17.8 32.8c-.7 3.3-2.2 6-4.3 8.6a83.7 83.7 0 0 1-5.9 6.3 21 21 0 0 1-9.2 5.4c-1.4.3-2.4 0-3-1.4-.8-1.7-1.3-3.3-1.6-5-1.2-6.2-.7-12.4-.2-18.5.2-4 .7-7.8.8-11.7a7 7 0 0 0-4.4-6.7c-2.7-1.3-5.2-.5-7.3 1.3-1.2 1-2.3 2.3-3.2 3.7-2 3-3.7 6-5.6 9l-5.8 9.4-.4-.1 1.8-9c.9-4 2-8 2.8-12.1.9-4.9 1-9.8-.8-14.6-2.2-5.9-9-8-13.8-4.1a30.4 30.4 0 0 0-7 7.7c-4.9 8.2-9.4 16.6-14 25l-1.3 2.2c-.2-.8 0-1.4.1-2.1 1.1-5 2.3-10.1 3.2-15.2.7-3.6.5-7.3-1-10.8-1-2.5-2.3-2.8-4-.6a35.7 35.7 0 0 0-4.2 7c-1.8 4.5-3.4 9-4.8 13.5-2.8 9-5.5 18.1-8 27.3-1 4.4-1.7 9-.8 13.7 1.2 6.6 6.8 9 12.3 5.2.8-.5 1.6-1 2.1-1.7 3-3.7 6.2-7.2 8.7-11.2 3.9-6.4 7.3-13.1 10.9-19.7.2-.6.5-1 .9-1.6 0 4.3-.2 8.3 0 12.4.2 2.7.7 5.5 1.6 8a8 8 0 0 0 7.9 6.1c3.3 0 6.7-.4 9.3-2.7 2.5-2.1 4.6-4.7 6.7-7.2 1.3-1.5 2.3-3.1 3.5-4.8l.4.4.2 1.2c.7 4.8 1.2 11.2 3.6 15.4 4.2 7.5 12.5 9.9 19.5 5.4 2.5-1.5 5.3-4.7 7.4-7l5.6-6.3.9 2.1c2.8 7.8 12.4 11.5 19.2 7.2 1.9-1.1 3.7-2.2 5.5-3.5 2.7-2 5.2-4 8.1-6.4.2 1.8.2 3.3.5 4.7.8 3.4 1.3 7 2.7 10.2 2 4.5 5.9 6.3 10.7 5.1a25 25 0 0 0 6.8-2.7c7-4 12-10.2 16.6-16.8l4.4-6.3 2 5.1c2 4 4.2 7.5 7.6 10.2 5.6 4.4 11.9 4.5 18.3 2.5a60.8 60.8 0 0 0 21.8-13l2-1.7.1 4.6c1 10.5 6.7 16.4 17.7 14.6a50 50 0 0 0 31.3-18.4c1.7-2 3.2-4.3 4.8-6.4-.2 2-.6 3.8-1.1 5.6-1 3.6-2.2 7.2-3 11-.6 2.4.5 3.8 3 4l2.6.1c2.7 0 4 1.1 4.5 3.7l1.1 5.5c2 8 3.7 9 11.7 7.5 2.3-.4 4-1.5 4.7-3.7a70 70 0 0 0 2.4-8.3c.7-3.6 1.7-4.6 5.3-4.7 4.9 0 5.7-1 4.7-5.7-1.7-7.5-3.6-15-5-22.5-.5-2.7 0-5.7 0-9 1.5.7 2.3 1 3 1.5l17.2 10.3c4.4 2.6 6.6 1.8 8.5-2.9l.3-.6 9.5-23.2c.3-1 .8-1.9 1.2-2.8.8 7 1.1 14 2 21 1.1 10 2.6 20.2 4.2 30.3.8 5 2.2 10 3.5 15a6 6 0 0 0 5.7 5l8.5.2c8.3 0 10.7-1.8 12.2-10 1.5-8.5 3-17 4.1-25.6 1.6-11.6 3-23.2 3.1-35l.1-1.6c1 1 1.5 2.2 2 3.4 3.3 8.3 6.5 16.6 10 24.8 1.5 3.6 3.7 4.2 7.2 2.3l1-.7 18.7-11.6c.3-.2.7-.2 1.3-.4l.8 9.8c1 9.2 2 18.3 3.2 27.4.5 4 1.1 8 2 12 .7 3.5 2.2 4.8 5.9 5.1 3.1.2 6.3.3 9.5 0 4.2-.5 5.5-1.8 6.5-6l.4-1.6 3.9-30.4.6-5.5c4 11 8.8 21.6 16 30.9.4.5.6 1.5.4 2.2-2 7.7-4.3 15.5-8 22.7-2.1 3.8-4.2 7.8-8.3 10a63.6 63.6 0 0 1-8.2 3.7c-20.4 7.4-41 14-62.7 16a203 203 0 0 1-80.2-7l-31.3-10.4c-5.2-1.8-9.1-5.2-11.6-10-1.7-3.3-3.3-6.6-4.6-10-.7-1.6-1.5-2-3-2H617l-2.2.1 1.3 2.5a151 151 0 0 0 235.4 33.7c9-8.6 16.9-18.3 23.4-28.9 1-1.5 1.7-1.7 3.3-1 14.4 6.8 29.5 9 45.2 6.5a77.8 77.8 0 0 0 55.6-36.7 75.5 75.5 0 0 0 11.2-54.5m-375.8-18.6c0 2.7 2.8 5.8 5.4 5.8 2.6 0 5-2.6 5-5.6 0-3.3-1.8-5.2-5-5.2-3 0-5.4 2.1-5.4 5m35.3-1.2c0 11 8.6 19.7 19.7 19.7 11 0 20-9 20-20.1a20 20 0 0 0-20-19.5c-10.9-.2-19.7 9-19.7 19.9m96.4-66.2c-13 0-23.2 10.1-23.2 23A23.2 23.2 0 0 0 746 105a23 23 0 1 0 .1-46.2m78.3 45.8a20 20 0 0 0-19.7 19.6c0 11.9 8.1 20.2 19.8 20.1a20 20 0 0 0 19.6-19.8c0-10.7-9-20-19.7-20m96.5 52.6c0-5-4.3-9.4-9.3-9.5-4.9 0-9.5 4.5-9.5 9.5s4.2 9.2 9.3 9.2c5.2 0 9.5-4.1 9.5-9.2" }),
-    (0, _preact.h)("path", { fill: "#ed9e31", d: "M361.3 206v-57.4h-16.9v3.5a21.6 21.6 0 0 0-8.9-4.6 29.2 29.2 0 0 0-17 1.4c-3.2 1.5-6 3.6-8.4 6.5-2.4 2.8-4.2 6-5.4 9.7a40.6 40.6 0 0 0-1.8 12.2c0 4.7.6 8.9 1.8 12.5 1 3.7 2.8 7 5.2 9.9a22 22 0 0 0 8.5 6.3 27.9 27.9 0 0 0 22-.3 22 22 0 0 0 4-2.8v3.1h16.9zm-17.4-22.3c-.6 1.8-1.5 3.5-2.7 5a10.1 10.1 0 0 1-3.8 3c-1.5.7-3.1 1-5 1-2 0-3.7-.3-5.2-1a11.4 11.4 0 0 1-6-7.4c-.6-1.8-.9-4-.9-6.7 0-2.6.3-4.8 1-6.8a11.3 11.3 0 0 1 6.3-7.7c1.5-.5 3.2-.8 5-.8 2 0 3.8.3 5.2.9 1.4.6 2.7 1.6 3.7 2.7 1 1.3 1.9 2.8 2.4 4.7.6 1.9.9 4 .9 6.5 0 2.6-.3 4.8-1 6.6m-43.7 23.5l-18.8-29.3 16.6-27.6h-22l-13.6 24.2v-50.2h-20v82.9h20v-25.5l16 25.5H300zm-97.3-41.8c5.2 0 9.4 2.7 10.4 8.3h-20.4c1.4-5.3 5.2-8.3 10-8.3m27 20.3c.5-2.7.7-5.4.7-8.2 0-16.7-12-29-27.7-29-15.6 0-28.8 13.6-28.8 30.3s13.2 30.1 28.8 30.1a32 32 0 0 0 24.3-9.4l-7.7-10.8c-1.5 1.9-7.6 5.7-15.5 4.5-4-.6-7.9-3.2-9.8-7.5h35.8zm-85.3 21.5h20v-83h-20v83zm-48 1.8a23 23 0 0 0 16.2-7.4v5.6h20v-56.9h-20v34.3c-.3 6.4-5.9 8.6-9.5 8.6a8.5 8.5 0 0 1-8.5-9v-33.9h-20v36.5c0 13.9 7.3 22.2 21.8 22.2m-31.3-58.7h-22l-10.6 32.5L22 150.3H0l23 56.9h19.2l23-56.9z" }),
-    (0, _preact.h)("path", { fill: "none", d: "M0 0h991.4v301.6H0z" })
-  );
-}
-
-/***/ }),
 /* 125 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = calcMaxValue;
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function calcMaxValue(items) {
-  var labels = Object.keys(items);
-
-  return labels.reduce(function (result, key) {
-    var maxValue = Math.max.apply(Math, _toConsumableArray(items[key]));
-    return maxValue > result ? maxValue : result;
-  }, 0);
-}
-
-/***/ }),
-/* 126 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = buildGroupSpaceArray;
-
-var _breakIntoWrap = __webpack_require__(127);
-
-var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function buildGroupSpaceArray(items, styling) {
-  var lineGutter = styling.lineGutter,
-      barWidth = styling.barWidth,
-      groupMargin = styling.groupMargin,
-      charWrap = styling.charWrap,
-      charLineHeight = styling.charLineHeight,
-      titleSpace = styling.titleSpace;
-
-
-  return Object.keys(items).map(function (key) {
-    var value = items[key];
-    var rawLines = (0, _breakIntoWrap2.default)(key, charWrap);
-
-    var lines = rawLines.filter(function (val) {
-      return val !== '';
-    });
-
-    var totalGutters = (value.length - 1) * lineGutter;
-    var totalLineWidth = value.length * barWidth;
-    var totalText = charLineHeight * lines.length;
-
-    return totalGutters + totalLineWidth + totalText + groupMargin;
-  });
-}
-
-/***/ }),
-/* 127 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = breakIntoWrap;
-function breakIntoWrap(string, wrap) {
-  var splitter = string.split(' ');
-
-  var count = 0;
-  var word = '';
-  var results = [];
-
-  for (var i = 0; i < splitter.length; i++) {
-    if (splitter[count].length >= wrap) {
-      // for (let ii = 0; ii < splitter[count].length; ii += wrap) {
-      //   results.push(splitter[count].substr(ii, wrap));
-      // }
-
-      results.push(splitter[count]);
-
-      word = '';
-      count++;
-    } else {
-      word = word + ' ' + splitter[count];
-      count++;
-
-      if (word.length >= wrap) {
-        results.push(word);
-        word = '';
-      }
-
-      if (i === splitter.length - 1) {
-        results.push(word);
-        word = '';
-      }
-    }
-  }
-
-  return results;
-}
-
-/***/ }),
-/* 128 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = Breakpoints;
-
-var _preact = __webpack_require__(0);
-
-var _BreakpointItem = __webpack_require__(129);
-
-var _BreakpointItem2 = _interopRequireDefault(_BreakpointItem);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Breakpoints(_ref) {
-  var items = _ref.items,
-      styling = _ref.styling,
-      totalGroupSpace = _ref.totalGroupSpace;
-  var valueSpace = styling.valueSpace,
-      buffer = styling.buffer,
-      padding = styling.padding,
-      labelBreakpoints = styling.labelBreakpoints;
-
-  var breakpointArray = [];
-
-  for (var i = 0; i < labelBreakpoints; i++) {
-    breakpointArray.push('');
-  }
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'Graph-verticalLabelList' },
-    breakpointArray.map(function (val, index) {
-      return (0, _preact.h)(_BreakpointItem2.default, _extends({ rank: index }, { styling: styling, totalGroupSpace: totalGroupSpace }));
-    })
-  );
-}
-
-/***/ }),
-/* 129 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = BreakpointItem;
-
-var _preact = __webpack_require__(0);
-
-var _trimValues = __webpack_require__(11);
-
-var _trimValues2 = _interopRequireDefault(_trimValues);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function BreakpointItem(_ref) {
-  var styling = _ref.styling,
-      totalGroupSpace = _ref.totalGroupSpace,
-      rank = _ref.rank,
-      fontSize = _ref.fontSize;
-  var valueSpace = styling.valueSpace,
-      buffer = styling.buffer,
-      padding = styling.padding,
-      labelBreakpoints = styling.labelBreakpoints,
-      maxValue = styling.maxValue,
-      svgHeight = styling.svgHeight;
-
-  var iterationValue = maxValue / (labelBreakpoints - 1);
-  var iterationPosition = svgHeight / (labelBreakpoints - 1);
-
-  return (0, _preact.h)(
-    'text',
-    {
-      x: padding[3] - buffer,
-      y: padding[0] + 7 + iterationPosition * rank,
-      fill: '#3f3f3f',
-      'text-anchor': 'end',
-      'font-size': fontSize,
-      'font-weight': 'bold',
-      'font-family': 'sans-serif'
-    },
-    'R',
-    (0, _trimValues2.default)(iterationValue * (labelBreakpoints - (rank + 1)), true)
-  );
-}
-
-/***/ }),
-/* 130 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Grid;
-
-var _preact = __webpack_require__(0);
-
-function Grid(_ref) {
-  var styling = _ref.styling,
-      totalGroupSpace = _ref.totalGroupSpace;
-  var padding = styling.padding,
-      valueSpace = styling.valueSpace,
-      buffer = styling.buffer,
-      svgHeight = styling.svgHeight;
-
-
-  return (0, _preact.h)(
-    "g",
-    { className: "Graph-grid" },
-    (0, _preact.h)("line", {
-      className: "Graph-outline",
-      x1: padding[3],
-      y1: padding[0],
-      x2: padding[3],
-      y2: padding[0] + svgHeight,
-      "stroke-width": "2",
-      stroke: "#d2d2d2",
-      fill: "none"
-    }),
-    (0, _preact.h)("path", {
-      className: "Graph-outline",
-      d: "\n          M" + padding[3] + " " + (padding[0] + svgHeight) + " \n          Q " + padding[3] + " " + (padding[0] + buffer + svgHeight) + ", \n          " + (padding[3] + buffer) + " " + (padding[0] + buffer + svgHeight) + "\n        ",
-      "stroke-width": "2",
-      stroke: "#d2d2d2",
-      fill: "none"
-    }),
-    (0, _preact.h)("line", {
-      className: "Graph-outline",
-      x1: padding[3] + buffer,
-      y1: padding[0] + svgHeight + buffer,
-      x2: padding[3] + valueSpace,
-      y2: padding[0] + svgHeight + buffer,
-      "stroke-width": "2",
-      stroke: "#d2d2d2",
-      fill: "none"
-    })
-  );
-}
-
-/***/ }),
-/* 131 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = Guides;
-
-var _preact = __webpack_require__(0);
-
-var _GuideItem = __webpack_require__(132);
-
-var _GuideItem2 = _interopRequireDefault(_GuideItem);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Guides(_ref) {
-  var styling = _ref.styling,
-      totalGroupSpace = _ref.totalGroupSpace;
-  var labelBreakpoints = styling.labelBreakpoints;
-
-
-  var breakpointArray = [];
-
-  for (var i = 0; i < labelBreakpoints; i++) {
-    breakpointArray.push('');
-  }
-
-  // const { buffer, padding } = styling;
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'Graph-verticalLabelList' },
-    breakpointArray.map(function (val, index) {
-      if (index !== breakpointArray.length - 1) {
-        return (0, _preact.h)(_GuideItem2.default, _extends({ rank: index }, { styling: styling, totalGroupSpace: totalGroupSpace }));
-      }
-      return null;
-    })
-  );
-}
-
-/***/ }),
-/* 132 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = GuideItem;
-
-var _preact = __webpack_require__(0);
-
-function GuideItem(_ref) {
-  var styling = _ref.styling,
-      totalGroupSpace = _ref.totalGroupSpace,
-      rank = _ref.rank;
-  var valueSpace = styling.valueSpace,
-      buffer = styling.buffer,
-      fontSize = styling.fontSize,
-      padding = styling.padding,
-      labelBreakpoints = styling.labelBreakpoints,
-      svgHeight = styling.svgHeight;
-
-  var iteration = svgHeight / (labelBreakpoints - 1);
-
-  // const debugIteration = totalGroupSpace / labelBreakpoints;
-
-  return (0, _preact.h)(
-    "g",
-    null,
-    (0, _preact.h)("line", {
-      x1: padding[3],
-      y1: padding[0] + iteration * rank,
-      x2: padding[3] + valueSpace,
-      y2: padding[0] + iteration * rank,
-      className: "Graph-guide",
-      stroke: "#e6e6e6"
-    })
-  );
-}
-
-/***/ }),
-/* 133 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = LineGroups;
-
-var _preact = __webpack_require__(0);
-
-var _LineGroupItem = __webpack_require__(134);
-
-var _LineGroupItem2 = _interopRequireDefault(_LineGroupItem);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function LineGroups(_ref) {
-  var totalGroupSpace = _ref.totalGroupSpace,
-      groupSpaceArray = _ref.groupSpaceArray,
-      items = _ref.items,
-      styling = _ref.styling;
-
-  var titles = Object.keys(items);
-  // const { padding, buffer, valueSpace } = styling;
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'LineGroupList' },
-    titles.map(function (key, index) {
-      return (0, _preact.h)(_LineGroupItem2.default, _extends({
-        rank: index,
-        lines: items[key],
-        title: key
-      }, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, styling: styling }));
-    })
-  );
-}
-
-/***/ }),
-/* 134 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = LineGroupItem;
-
-var _preact = __webpack_require__(0);
-
-var _path = __webpack_require__(135);
-
-var colours = ['#79b43c', '#4a4a4a', '#ad3c64'];
-
-function LineGroupItem(_ref) {
-  var totalGroupSpace = _ref.totalGroupSpace,
-      groupSpaceArray = _ref.groupSpaceArray,
-      rank = _ref.rank,
-      lines = _ref.lines,
-      title = _ref.title,
-      styling = _ref.styling;
-  var barWidth = styling.barWidth,
-      padding = styling.padding,
-      buffer = styling.buffer,
-      lineGutter = styling.lineGutter,
-      valueSpace = styling.valueSpace,
-      maxValue = styling.maxValue,
-      svgHeight = styling.svgHeight;
-
-
-  var groupSpace = groupSpaceArray[rank];
-
-  var generateToScale = function generateToScale(value) {
-    return (valueSpace - buffer) / totalGroupSpace * value;
-  };
-
-  var previousSpace = groupSpaceArray.reduce(function (result, val, index) {
-    if (index < rank) {
-      return result + generateToScale(val);
-    }
-
-    return result;
-  }, 0);
-
-  var usedSpace = lines.length * (barWidth + lineGutter);
-  var startPoint = padding[3] + buffer + previousSpace;
-  var centeringSpace = (generateToScale(groupSpace) + barWidth - usedSpace) / 2;
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'Graph-group' },
-    lines.map(function (amount, index) {
-      var relativeAmount = amount / maxValue * svgHeight;
-      var displayAmount = relativeAmount < barWidth + 1 ? barWidth + 1 : relativeAmount;
-      return (0, _preact.h)('line', {
-        'stroke-linecap': 'round',
-        'stroke-width': barWidth,
-        x1: startPoint + centeringSpace + index * (barWidth + lineGutter),
-        y1: padding[0] + svgHeight - barWidth / 2,
-        x2: startPoint + centeringSpace + index * (barWidth + lineGutter),
-        y2: padding[0] + svgHeight + barWidth - barWidth / 2 - displayAmount,
-        className: 'Graph-line',
-        stroke: colours[index]
-      });
-    })
-  );
-}
-
-/***/ }),
-/* 135 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-// resolves . and .. elements in a path array with directory names there
-// must be no slashes, empty elements, or device names (c:\) in the array
-// (so also no leading and trailing slashes - it does not distinguish
-// relative and absolute paths)
-function normalizeArray(parts, allowAboveRoot) {
-  // if the path tries to go above the root, `up` ends up > 0
-  var up = 0;
-  for (var i = parts.length - 1; i >= 0; i--) {
-    var last = parts[i];
-    if (last === '.') {
-      parts.splice(i, 1);
-    } else if (last === '..') {
-      parts.splice(i, 1);
-      up++;
-    } else if (up) {
-      parts.splice(i, 1);
-      up--;
-    }
-  }
-
-  // if the path is allowed to go above the root, restore leading ..s
-  if (allowAboveRoot) {
-    for (; up--; up) {
-      parts.unshift('..');
-    }
-  }
-
-  return parts;
-}
-
-// Split a filename into [root, dir, basename, ext], unix version
-// 'root' is just a slash, or nothing.
-var splitPathRe = /^(\/?|)([\s\S]*?)((?:\.{1,2}|[^\/]+?|)(\.[^.\/]*|))(?:[\/]*)$/;
-var splitPath = function splitPath(filename) {
-  return splitPathRe.exec(filename).slice(1);
-};
-
-// path.resolve([from ...], to)
-// posix version
-exports.resolve = function () {
-  var resolvedPath = '',
-      resolvedAbsolute = false;
-
-  for (var i = arguments.length - 1; i >= -1 && !resolvedAbsolute; i--) {
-    var path = i >= 0 ? arguments[i] : process.cwd();
-
-    // Skip empty and invalid entries
-    if (typeof path !== 'string') {
-      throw new TypeError('Arguments to path.resolve must be strings');
-    } else if (!path) {
-      continue;
-    }
-
-    resolvedPath = path + '/' + resolvedPath;
-    resolvedAbsolute = path.charAt(0) === '/';
-  }
-
-  // At this point the path should be resolved to a full absolute path, but
-  // handle relative paths to be safe (might happen when process.cwd() fails)
-
-  // Normalize the path
-  resolvedPath = normalizeArray(filter(resolvedPath.split('/'), function (p) {
-    return !!p;
-  }), !resolvedAbsolute).join('/');
-
-  return (resolvedAbsolute ? '/' : '') + resolvedPath || '.';
-};
-
-// path.normalize(path)
-// posix version
-exports.normalize = function (path) {
-  var isAbsolute = exports.isAbsolute(path),
-      trailingSlash = substr(path, -1) === '/';
-
-  // Normalize the path
-  path = normalizeArray(filter(path.split('/'), function (p) {
-    return !!p;
-  }), !isAbsolute).join('/');
-
-  if (!path && !isAbsolute) {
-    path = '.';
-  }
-  if (path && trailingSlash) {
-    path += '/';
-  }
-
-  return (isAbsolute ? '/' : '') + path;
-};
-
-// posix version
-exports.isAbsolute = function (path) {
-  return path.charAt(0) === '/';
-};
-
-// posix version
-exports.join = function () {
-  var paths = Array.prototype.slice.call(arguments, 0);
-  return exports.normalize(filter(paths, function (p, index) {
-    if (typeof p !== 'string') {
-      throw new TypeError('Arguments to path.join must be strings');
-    }
-    return p;
-  }).join('/'));
-};
-
-// path.relative(from, to)
-// posix version
-exports.relative = function (from, to) {
-  from = exports.resolve(from).substr(1);
-  to = exports.resolve(to).substr(1);
-
-  function trim(arr) {
-    var start = 0;
-    for (; start < arr.length; start++) {
-      if (arr[start] !== '') break;
-    }
-
-    var end = arr.length - 1;
-    for (; end >= 0; end--) {
-      if (arr[end] !== '') break;
-    }
-
-    if (start > end) return [];
-    return arr.slice(start, end - start + 1);
-  }
-
-  var fromParts = trim(from.split('/'));
-  var toParts = trim(to.split('/'));
-
-  var length = Math.min(fromParts.length, toParts.length);
-  var samePartsLength = length;
-  for (var i = 0; i < length; i++) {
-    if (fromParts[i] !== toParts[i]) {
-      samePartsLength = i;
-      break;
-    }
-  }
-
-  var outputParts = [];
-  for (var i = samePartsLength; i < fromParts.length; i++) {
-    outputParts.push('..');
-  }
-
-  outputParts = outputParts.concat(toParts.slice(samePartsLength));
-
-  return outputParts.join('/');
-};
-
-exports.sep = '/';
-exports.delimiter = ':';
-
-exports.dirname = function (path) {
-  var result = splitPath(path),
-      root = result[0],
-      dir = result[1];
-
-  if (!root && !dir) {
-    // No dirname whatsoever
-    return '.';
-  }
-
-  if (dir) {
-    // It has a dirname, strip trailing slash
-    dir = dir.substr(0, dir.length - 1);
-  }
-
-  return root + dir;
-};
-
-exports.basename = function (path, ext) {
-  var f = splitPath(path)[2];
-  // TODO: make this comparison case-insensitive on windows?
-  if (ext && f.substr(-1 * ext.length) === ext) {
-    f = f.substr(0, f.length - ext.length);
-  }
-  return f;
-};
-
-exports.extname = function (path) {
-  return splitPath(path)[3];
-};
-
-function filter(xs, f) {
-  if (xs.filter) return xs.filter(f);
-  var res = [];
-  for (var i = 0; i < xs.length; i++) {
-    if (f(xs[i], i, xs)) res.push(xs[i]);
-  }
-  return res;
-}
-
-// String.prototype.substr - negative index don't work in IE8
-var substr = 'ab'.substr(-1) === 'b' ? function (str, start, len) {
-  return str.substr(start, len);
-} : function (str, start, len) {
-  if (start < 0) start = str.length + start;
-  return str.substr(start, len);
-};
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
-
-/***/ }),
-/* 136 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = Tooltips;
-
-var _preact = __webpack_require__(0);
-
-var _TooltipGroup = __webpack_require__(137);
-
-var _TooltipGroup2 = _interopRequireDefault(_TooltipGroup);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Tooltips(_ref) {
-  var totalGroupSpace = _ref.totalGroupSpace,
-      groupSpaceArray = _ref.groupSpaceArray,
-      items = _ref.items,
-      styling = _ref.styling;
-
-  var titles = Object.keys(items);
-  var padding = styling.padding,
-      buffer = styling.buffer,
-      valueSpace = styling.valueSpace;
-
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'LineGroupList' },
-    titles.map(function (key, index) {
-      return (0, _preact.h)(_TooltipGroup2.default, _extends({
-        rank: index,
-        lines: items[key],
-        title: key
-      }, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, styling: styling }));
-    })
-  );
-}
-
-/***/ }),
-/* 137 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = TooltipGroup;
-
-var _preact = __webpack_require__(0);
-
-var _TooltipItem = __webpack_require__(138);
-
-var _TooltipItem2 = _interopRequireDefault(_TooltipItem);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var colours = ['#79b43c', '#4a4a4a', '#ad3c64'];
-
-function TooltipGroup(_ref) {
-  var totalGroupSpace = _ref.totalGroupSpace,
-      groupSpaceArray = _ref.groupSpaceArray,
-      rank = _ref.rank,
-      lines = _ref.lines,
-      title = _ref.title,
-      styling = _ref.styling;
-  var barWidth = styling.barWidth,
-      padding = styling.padding,
-      buffer = styling.buffer,
-      lineGutter = styling.lineGutter,
-      valueSpace = styling.valueSpace,
-      maxValue = styling.maxValue,
-      popUpOffset = styling.popUpOffset,
-      popupHeight = styling.popupHeight,
-      svgHeight = styling.svgHeight;
-
-
-  var groupSpace = groupSpaceArray[rank];
-
-  var generateToScale = function generateToScale(value) {
-    return (valueSpace - buffer) / totalGroupSpace * value;
-  };
-
-  var previousSpace = groupSpaceArray.reduce(function (result, val, index) {
-    if (index < rank) {
-      return result + generateToScale(val);
-    }
-
-    return result;
-  }, 0);
-
-  var usedSpace = lines.length * (barWidth + lineGutter);
-  var startPoint = padding[3] + buffer + previousSpace;
-  var centeringSpace = (generateToScale(groupSpace) + barWidth - usedSpace) / 2;
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'Graph-group' },
-    lines.map(function (amount, index) {
-      var relativeAmount = amount / maxValue * svgHeight;
-      var displayAmount = relativeAmount < barWidth + 1 ? barWidth + 1 : relativeAmount;
-      return (0, _preact.h)(_TooltipItem2.default, _extends({ styling: styling }, {
-        xPosition: startPoint + centeringSpace + index * (barWidth + lineGutter),
-        yPosition: padding[0] + svgHeight + barWidth - (barWidth * 2 + displayAmount + popUpOffset + popupHeight)
-      }, { amount: amount, totalGroupSpace: totalGroupSpace }, {
-        colour: colours[index]
-      }));
-    })
-  );
-}
-
-/***/ }),
-/* 138 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = TooltipItem;
-
-var _preact = __webpack_require__(0);
-
-var _trimValues = __webpack_require__(11);
-
-var _trimValues2 = _interopRequireDefault(_trimValues);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function TooltipItem(_ref) {
-  var styling = _ref.styling,
-      xTriggerPosition = _ref.xTriggerPosition,
-      xPosition = _ref.xPosition,
-      yPosition = _ref.yPosition,
-      amount = _ref.amount,
-      colour = _ref.colour,
-      totalGroupSpace = _ref.totalGroupSpace;
-  var barWidth = styling.barWidth,
-      lineGutter = styling.lineGutter,
-      padding = styling.padding,
-      popupWidth = styling.popupWidth,
-      popupHeight = styling.popupHeight,
-      buffer = styling.buffer,
-      svgHeight = styling.svgHeight,
-      popupFontSize = styling.popupFontSize;
-
-  // const { popUpOffset } = styling;
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'ColumnChart-tooltip' },
-    (0, _preact.h)('rect', {
-      x: xPosition - (barWidth + lineGutter) / 2,
-      x1: xTriggerPosition,
-      y: 0,
-      width: barWidth + lineGutter,
-      height: svgHeight + padding[0] + buffer,
-      opacity: '0'
-    }),
-    (0, _preact.h)('rect', {
-      rx: '10',
-      ry: '10',
-      className: 'Graph-tooltipBase',
-      x: xPosition - popupWidth / 2,
-      y: yPosition,
-      width: popupWidth,
-      height: popupHeight,
-      fill: colour
-    }),
-    (0, _preact.h)('polygon', {
-      className: 'Graph-triangle',
-      points: '\n          ' + xPosition + ',\n          ' + (yPosition + barWidth + popupHeight) + '\n          ' + (xPosition + barWidth / 2) + ',\n          ' + (yPosition + popupHeight) + '\n          \n          ' + (xPosition - barWidth / 2) + ',\n          ' + (yPosition + popupHeight) + '\n        ',
-      fill: colour
-    }),
-    (0, _preact.h)(
-      'text',
-      {
-        x: xPosition,
-        y: yPosition + popupHeight / 2 + popupFontSize / 2 - 2,
-        'font-size': popupFontSize,
-        className: 'Graph-tooltipText',
-        'font-family': 'sans-serif',
-        'text-anchor': 'middle',
-        fill: 'white'
-      },
-      (0, _trimValues2.default)(amount)
-    )
-  );
-}
-
-/***/ }),
-/* 139 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = Labels;
-
-var _preact = __webpack_require__(0);
-
-var _LabelItem = __webpack_require__(140);
-
-var _LabelItem2 = _interopRequireDefault(_LabelItem);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Labels(_ref) {
-  var totalGroupSpace = _ref.totalGroupSpace,
-      groupSpaceArray = _ref.groupSpaceArray,
-      items = _ref.items,
-      styling = _ref.styling;
-
-  var titles = Object.keys(items);
-  var padding = styling.padding,
-      buffer = styling.buffer,
-      valueSpace = styling.valueSpace,
-      maxValue = styling.maxValue;
-
-
-  return (0, _preact.h)(
-    'g',
-    { className: 'Graph-horisontalLabelList' },
-    titles.map(function (title, index) {
-      return (0, _preact.h)(_LabelItem2.default, _extends({
-        rank: index
-      }, { title: title, totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, styling: styling }));
-    })
-  );
-}
-
-/***/ }),
-/* 140 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = LabelItem;
-
-var _preact = __webpack_require__(0);
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function LabelItem(_ref) {
-  var totalGroupSpace = _ref.totalGroupSpace,
-      groupSpaceArray = _ref.groupSpaceArray,
-      rank = _ref.rank,
-      title = _ref.title,
-      styling = _ref.styling;
-  var barWidth = styling.barWidth,
-      padding = styling.padding,
-      buffer = styling.buffer,
-      valueSpace = styling.valueSpace,
-      fontSize = styling.fontSize,
-      svgHeight = styling.svgHeight;
-
-
-  var groupSpace = groupSpaceArray[rank];
-
-  var generateToScale = function generateToScale(value) {
-    return (valueSpace - buffer) / totalGroupSpace * value;
-  };
-
-  var previousSpace = groupSpaceArray.reduce(function (result, val, index) {
-    if (index < rank) {
-      return result + generateToScale(val);
-    }
-
-    return result;
-  }, 0);
-
-  return (0, _preact.h)(
-    "g",
-    { className: "Graph-horisontalLabel" },
-    (0, _preact.h)(
-      "text",
-      _defineProperty({
-        className: "Graph-label",
-        y: svgHeight + padding[0] + buffer * 2,
-        x: padding[3] + previousSpace + buffer + generateToScale(groupSpace) / 2,
-        "font-size": fontSize,
-        "text-anchor": "middle",
-        "font-family": "sans-serif",
-        "font-weight": "bold",
-        fill: "#3f3f3f"
-      }, "font-size", "14"),
-      title
-    )
-  );
-}
-
-/***/ }),
-/* 141 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(142);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _global = __webpack_require__(44);
-
-var _removePunctuation = __webpack_require__(45);
-
-var _removePunctuation2 = _interopRequireDefault(_removePunctuation);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var SearchResultContainer = function (_Component) {
-  _inherits(SearchResultContainer, _Component);
-
-  function SearchResultContainer(props) {
-    _classCallCheck(this, SearchResultContainer);
-
-    var _this = _possibleConstructorReturn(this, (SearchResultContainer.__proto__ || Object.getPrototypeOf(SearchResultContainer)).call(this, props));
-
-    _this.state = {
-      results: [],
-      count: null,
-      page: 1,
-      province: 'all',
-      open: null,
-      error: false,
-      loading: true
-    };
-
-    _this.updateItem = _this.updateItem.bind(_this);
-    _this.updateFilter = _this.updateFilter.bind(_this);
-    return _this;
-  }
-
-  _createClass(SearchResultContainer, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      var datasetPackagesQueryUrl = _global.apiBaseURL + '/api/3/action/package_search?q=' + (0, _removePunctuation2.default)(this.props.search) + '&start=0&rows=999&fq=+organization:national-treasury+vocab_financial_years:' + this.props.selectedYear + '+extras_department_name_slug:[* TO *]+extras_geographic_region_slug:[* TO *]';
-
-      var request = new Promise(function (resolve, reject) {
-        fetch(datasetPackagesQueryUrl).then(function (response) {
-          if (!response.ok) {
-            reject(response);
-          }
-
-          response.json().then(function (data) {
-            _this2.setState({ count: data.result.count });
-            resolve(data.result.results);
-          }).catch(function (err) {
-            return reject(err);
-          });
-        }).catch(function (err) {
-          return reject(err);
-        });
-      });
-
-      request.then(function (array) {
-        _this2.setState({ loading: false });
-        _this2.setState({ results: array });
-      }).catch(function (err) {
-        _this2.setState({ loading: false });
-        _this2.setState({ error: true });
-        console.warn(err);
-      });
-    }
-  }, {
-    key: 'updateItem',
-    value: function updateItem(key, value, parent) {
-      if (parent) {
-        return this.setState(_defineProperty({}, parent, _extends({}, this.state[parent], _defineProperty({}, key, value))));
-      }
-
-      return this.setState(_defineProperty({}, key, value));
-    }
-  }, {
-    key: 'updateFilter',
-    value: function updateFilter(filter, value) {
-      if (this.state.open === filter) {
-        this.setState({ page: 1 });
-        this.setState(_defineProperty({}, filter, value));
-        this.setState({ open: null });
-        return null;
-      }
-
-      return this.setState({ open: filter });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return (0, _preact.h)(_index2.default, {
-        results: this.state.results,
-        search: this.props.search,
-        selectedYear: this.props.selectedYear,
-        updateFilter: this.updateFilter,
-        shown: this.state.shown,
-        changeShown: this.changeShown,
-        page: this.state.page,
-        province: this.state.province,
-        state: this.state,
-        updateItem: this.updateItem,
-        error: this.state.error,
-        loading: this.state.loading
-      });
-    }
-  }]);
-
-  return SearchResultContainer;
-}(_preact.Component);
-
-function scripts() {
-  var nodes = document.getElementsByClassName('js-initSearchResult');
-  var nodesArray = [].concat(_toConsumableArray(nodes));
-  var search = window.vulekamali.qs.search;
-
-
-  if (nodesArray.length > 0) {
-    nodesArray.forEach(function (node) {
-      var selectedYear = node.getAttribute('data-year');
-      (0, _preact.render)((0, _preact.h)(SearchResultContainer, { selectedYear: selectedYear, search: search }), node);
-    });
-  }
-}
-
-exports.default = scripts();
-
-/***/ }),
-/* 142 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = SearchResultMarkup;
-
-var _preact = __webpack_require__(0);
-
-var _Form = __webpack_require__(143);
-
-var _Form2 = _interopRequireDefault(_Form);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function SearchResultMarkup(_ref) {
-  var loading = _ref.loading,
-      error = _ref.error,
-      state = _ref.state,
-      updateItem = _ref.updateItem,
-      page = _ref.page,
-      province = _ref.province,
-      results = _ref.results,
-      search = _ref.search,
-      selectedYear = _ref.selectedYear,
-      updateFilter = _ref.updateFilter;
-
-  if (error) {
-    return (0, _preact.h)(
-      'div',
-      { className: 'SearchResult-wrap' },
-      (0, _preact.h)(
-        'span',
-        null,
-        'Something went wrong with the search. Please try again at a later point.'
-      )
-    );
-  }
-
-  var preDepartments = results.filter(function (item) {
-    var provSlugIndex = item.extras.findIndex(function (data) {
-      return data.key === 'geographic_region_slug';
-    });
-
-    var provSlug = item.extras[provSlugIndex].value;
-
-    return province === 'all' || province === provSlug;
-  });
-
-  var departments = preDepartments.map(function (item) {
-    var provSlugIndex = item.extras.findIndex(function (data) {
-      return data.key === 'geographic_region_slug';
-    });
-
-    var provSlug = item.extras[provSlugIndex].value;
-
-    var nameSlugIndex = item.extras.findIndex(function (data) {
-      return data.key === 'department_name_slug';
-    });
-
-    var nameSlug = item.extras[nameSlugIndex].value;
-    var departmentType = item.province.length > 0 ? item.province : 'National';
-
-    var url = item.province.length > 0 ? '/' + selectedYear + '/provincial/' + provSlug + '/departments/' + nameSlug : '/' + selectedYear + '/national/departments/' + nameSlug;
-
-    return (0, _preact.h)(
-      'a',
-      { href: url, className: 'SearchResult-link' },
-      departmentType,
-      ' Department: ',
-      item.extras[0].value
-    );
-  });
-
-  var pages = Math.ceil(departments.length / 10);
-
-  var extra = preDepartments.length > 0 ? (0, _preact.h)(
-    'span',
-    { className: 'SearchResult-countWrap' },
-    (0, _preact.h)(
-      'span',
-      null,
-      'Page ',
-      page,
-      ' of ',
-      pages
-    )
-  ) : null;
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'SearchResult-wrap' },
-    (0, _preact.h)(
-      'div',
-      { className: 'SearchResult-heading' },
-      'Search result for "',
-      search,
-      '" in Department Budgets'
-    ),
-    (0, _preact.h)(
-      'div',
-      { className: 'SearchResult-formWrap' },
-      (0, _preact.h)(_Form2.default, { state: state, updateFilter: updateFilter })
-    ),
-    (0, _preact.h)(
-      'div',
-      { className: 'SearchResult-group' },
-      (0, _preact.h)(
-        'div',
-        { className: 'SearchResult-title' },
-        'Suggested Department Budgets',
-        departments ? extra : ''
-      ),
-      (0, _preact.h)(
-        'div',
-        { className: 'SearchResult-list' },
-        loading ? (0, _preact.h)(
-          'div',
-          null,
-          'Loading...'
-        ) : null,
-        !loading && preDepartments.length > 0 ? departments.splice(page * 10 - 10, 10) : null,
-        !loading && preDepartments.length < 1 ? (0, _preact.h)(
-          'div',
-          { className: 'SearchResult-error' },
-          (0, _preact.h)(
-            'span',
-            null,
-            'We didn\u2019t find anything for \u2019',
-            search,
-            '\u2019. '
-          ),
-          (0, _preact.h)(
-            'a',
-            { href: '/' + selectedYear + '/departments' },
-            'View a list of all departments'
-          )
-        ) : null
-      )
-    ),
-    (0, _preact.h)(
-      'div',
-      { className: 'SearchResult-pageWrap' },
-      page <= 1 ? null : (0, _preact.h)(
-        'button',
-        { onClick: function onClick() {
-            return updateItem('page', page - 1);
-          }, className: 'SearchResult-prev' },
-        'Previous Page'
-      ),
-      page >= pages ? null : (0, _preact.h)(
-        'button',
-        { onClick: function onClick() {
-            return updateItem('page', page + 1);
-          }, className: 'SearchResult-next' },
-        'Next Page'
-      )
-    )
-  );
-}
-
-/***/ }),
-/* 143 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Form;
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(4);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Form(_ref) {
-  var state = _ref.state,
-      updateFilter = _ref.updateFilter;
-
-  var items = {
-    'All Provinces': 'all',
-    'Free State': 'free-State',
-    Gauteng: 'gauteng',
-    'KwaZulu-Natal': 'kwazulu-natal',
-    Limpopo: 'limpopo',
-    Mpumalanga: 'mpumalanga',
-    'North West': 'north-west',
-    'Northern Cape': 'northern-cape',
-    'Western Cape': 'western-cape'
-  };
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'SearchResult-form' },
-    (0, _preact.h)(
-      'div',
-      { className: 'SearchResult-filter' },
-      (0, _preact.h)(_index2.default, {
-        name: 'province',
-        items: items,
-        selected: state.province,
-        open: state.open === 'province',
-        changeAction: function changeAction(value) {
-          return updateFilter('province', value);
-        }
-      })
-    )
-  );
-}
-
-/***/ }),
-/* 144 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _fuse = __webpack_require__(24);
-
-var _fuse2 = _interopRequireDefault(_fuse);
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(146);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _glossary = __webpack_require__(41);
-
-var _glossary2 = _interopRequireDefault(_glossary);
-
-var _createGlossaryGroupedObject = __webpack_require__(149);
-
-var _createGlossaryGroupedObject2 = _interopRequireDefault(_createGlossaryGroupedObject);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var GlossaryContainer = function (_Component) {
-  _inherits(GlossaryContainer, _Component);
-
-  function GlossaryContainer(props) {
-    _classCallCheck(this, GlossaryContainer);
-
-    var _this = _possibleConstructorReturn(this, (GlossaryContainer.__proto__ || Object.getPrototypeOf(GlossaryContainer)).call(this, props));
-
-    _this.state = {
-      currentPhrase: '',
-      currentItems: _this.props.glossaryObject
-    };
-
-    _this.eventHandlers = {
-      changePhrase: _this.changePhrase.bind(_this)
-    };
-    return _this;
-  }
-
-  _createClass(GlossaryContainer, [{
-    key: 'changePhrase',
-    value: function changePhrase(phrase) {
-      var _this2 = this;
-
-      this.setState({ currentPhrase: phrase });
-
-      if (phrase.length > 2) {
-        var options = {
-          shouldSort: true,
-          threshold: 0.3,
-          location: 0,
-          distance: 100,
-          maxPatternLength: 32,
-          minMatchCharLength: 1,
-          keys: ['phrase']
-        };
-
-        var letters = Object.keys(this.props.glossaryObject);
-
-        var filteredList = letters.reduce(function (result, letter) {
-          var array = _this2.props.glossaryObject[letter];
-          var items = new _fuse2.default(array, options);
-
-          return _extends({}, result, _defineProperty({}, letter, items.search(phrase)));
-        }, {});
-
-        return this.setState({ currentItems: filteredList });
-      }
-
-      return this.setState({ currentItems: this.props.glossaryObject });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return (0, _preact.h)(_index2.default, _extends({}, this.state, this.eventHandlers));
-    }
-  }]);
-
-  return GlossaryContainer;
-}(_preact.Component);
-
-function scripts() {
-  var glossaryGroupedObject = (0, _createGlossaryGroupedObject2.default)(_glossary2.default);
-  var nodes = document.getElementsByClassName('js-initGlossary');
-
-  if (nodes.length > 0) {
-    for (var i = 0; i < nodes.length; i++) {
-      (0, _preact.render)((0, _preact.h)(GlossaryContainer, { glossaryObject: glossaryGroupedObject }), nodes[i]);
-    }
-  }
-}
-
-exports.default = scripts();
-
-/***/ }),
-/* 145 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = function (module) {
-	if (!module.webpackPolyfill) {
-		module.deprecate = function () {};
-		module.paths = [];
-		// module.parent = undefined by default
-		if (!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function get() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function get() {
-				return module.i;
-			}
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
-
-/***/ }),
-/* 146 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Markup;
-
-var _preact = __webpack_require__(0);
-
-var _Controls = __webpack_require__(147);
-
-var _Controls2 = _interopRequireDefault(_Controls);
-
-var _List = __webpack_require__(148);
-
-var _List2 = _interopRequireDefault(_List);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Markup(_ref) {
-  var currentPhrase = _ref.currentPhrase,
-      currentItems = _ref.currentItems,
-      changePhrase = _ref.changePhrase;
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'Glossary-wrap' },
-    (0, _preact.h)(_Controls2.default, { currentPhrase: currentPhrase, currentItems: currentItems, changePhrase: changePhrase }),
-    (0, _preact.h)(_List2.default, { currentItems: currentItems })
-  );
-}
-
-/***/ }),
-/* 147 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Controls;
-
-var _preact = __webpack_require__(0);
-
-function Controls(_ref) {
-  var currentPhrase = _ref.currentPhrase,
-      currentItems = _ref.currentItems,
-      changePhrase = _ref.changePhrase;
-
-  var buildLetters = function buildLetters() {
-    return Object.keys(currentItems).map(function (letter) {
-      var hasItems = currentItems[letter].length > 0;
-
-      return (0, _preact.h)(
-        'a',
-        {
-          href: '#glossary-item-' + letter,
-          className: 'Glossary-letter' + (hasItems ? ' is-valid' : '')
-        },
-        letter.toUpperCase()
-      );
-    });
-  };
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'Glossary-controls' },
-    (0, _preact.h)('input', {
-      className: 'Glossary-search',
-      placeholder: 'Start typing to find a glossary term',
-      value: currentPhrase,
-      onInput: function onInput(event) {
-        return changePhrase(event.target.value);
-      }
-    }),
-    (0, _preact.h)(
-      'div',
-      { className: 'Glossary-lettersWrap' },
-      (0, _preact.h)(
-        'span',
-        { className: 'Glossary-letterLabel' },
-        'Jump to Letter:'
-      ),
-      buildLetters()
-    )
-  );
-}
-
-/***/ }),
-/* 148 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = List;
-
-var _preact = __webpack_require__(0);
-
-function List(_ref) {
-  var currentPhrase = _ref.currentPhrase,
-      currentItems = _ref.currentItems;
-
-
-  var buildItems = function buildItems(letterArrayFn) {
-    return letterArrayFn.map(function (item) {
-      return (0, _preact.h)(
-        "div",
-        { className: "Glossary-item" },
-        (0, _preact.h)(
-          "div",
-          { className: "Glossary-title" },
-          item.phrase
-        ),
-        (0, _preact.h)(
-          "div",
-          { className: "Glossary-text" },
-          item.description
-        )
-      );
-    });
-  };
-
-  var buildSections = function buildSections(currentItemsFn) {
-    return Object.keys(currentItemsFn).map(function (letter) {
-      var letterArray = currentItemsFn[letter];
-
-      if (letterArray.length > 0) {
-        return (0, _preact.h)(
-          "div",
-          { className: "Glossary-section", id: "glossary-item-" + letter },
-          (0, _preact.h)(
-            "div",
-            { className: "Glossary-heading" },
-            letter.toUpperCase()
-          ),
-          buildItems(letterArray)
-        );
-      }
-
-      return null;
-    });
-  };
-
-  return (0, _preact.h)(
-    "div",
-    { className: "Glossary-list" },
-    buildSections(currentItems)
-  );
-}
-
-/***/ }),
-/* 149 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = createGlossaryGroupedObject;
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function createGlossaryGroupedObject(rawObject) {
-  var alphabetLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-
-  var objectSkeleton = alphabetLetters.reduce(function (result, letter) {
-    return _extends({}, result, _defineProperty({}, letter, []));
-  }, {});
-
-  var populatedObject = Object.keys(rawObject).reduce(function (result, phrase) {
-    var letter = phrase.match(/\w/i)[0].toLowerCase();
-
-    return _extends({}, result, _defineProperty({}, letter, [].concat(_toConsumableArray(result[letter]), [{
-      phrase: phrase,
-      description: rawObject[phrase]
-    }])));
-  }, objectSkeleton);
-
-  var sortedObject = Object.keys(populatedObject).reduce(function (result, letter) {
-    var sortedArray = result[letter].sort(function (a, b) {
-      return a.phrase.localeCompare(b.phrase);
-    });
-
-    return _extends({}, result, _defineProperty({}, letter, sortedArray));
-  }, populatedObject);
-
-  return sortedObject;
-}
-
-/***/ }),
-/* 150 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _preact = __webpack_require__(0);
-
-var _fuse = __webpack_require__(24);
-
-var _fuse2 = _interopRequireDefault(_fuse);
-
-var _decodeHtmlEntities = __webpack_require__(1);
-
-var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
-
-var _index = __webpack_require__(151);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var VideosContainer = function (_Component) {
-  _inherits(VideosContainer, _Component);
-
-  function VideosContainer(props) {
-    _classCallCheck(this, VideosContainer);
-
-    var _this = _possibleConstructorReturn(this, (VideosContainer.__proto__ || Object.getPrototypeOf(VideosContainer)).call(this, props));
-
-    _this.state = {
-      open: null,
-      currentPhrase: '',
-      currentItems: _this.props.items
-    };
-
-    _this.setModal = _this.setModal.bind(_this);
-    _this.changePhrase = _this.changePhrase.bind(_this);
-    _this.setLanguage = _this.setLanguage.bind(_this);
-    return _this;
-  }
-
-  _createClass(VideosContainer, [{
-    key: 'setLanguage',
-    value: function setLanguage(language) {
-      if (this.state.open.select === true) {
-        this.setState({
-          open: _extends({}, this.state.open, {
-            language: language,
-            select: false
-          })
-        });
-      } else {
-        this.setState({
-          open: _extends({}, this.state.open, {
-            select: true
-          })
-        });
-      }
-    }
-  }, {
-    key: 'setModal',
-    value: function setModal(state, id, language) {
-      if (state) {
-        this.setState({
-          open: {
-            id: id,
-            language: language,
-            select: false
-          }
-        });
-      } else {
-        this.setState({ open: null });
-      }
-    }
-  }, {
-    key: 'changePhrase',
-    value: function changePhrase(phrase) {
-      this.setState({ currentPhrase: phrase });
-
-      if (phrase.length > 2) {
-        var options = {
-          shouldSort: true,
-          threshold: 0.3,
-          location: 0,
-          distance: 100,
-          maxPatternLength: 32,
-          minMatchCharLength: 1,
-          keys: ['title']
-        };
-
-        var items = new _fuse2.default(this.props.items, options);
-        var result = items.search(phrase);
-        this.setState({ currentItems: result });
-      } else {
-        this.setState({ currentItems: this.props.items });
-      }
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return (0, _preact.h)(_index2.default, {
-        open: this.state.open,
-        items: this.state.currentItems,
-        currentPhrase: this.state.currentPhrase,
-
-        changePhrase: this.changePhrase,
-        setModal: this.setModal,
-        setLanguage: this.setLanguage
-      });
-    }
-  }]);
-
-  return VideosContainer;
-}(_preact.Component);
-
-function scripts() {
-  var nodes = document.getElementsByClassName('js-initVideos');
-
-  if (nodes.length > 0) {
-    for (var i = 0; i < nodes.length; i++) {
-      var items = JSON.parse((0, _decodeHtmlEntities2.default)(nodes[i].getAttribute('data-items'))).data;
-      (0, _preact.render)((0, _preact.h)(VideosContainer, { items: items }), nodes[i]);
-    }
-  }
-}
-
-exports.default = scripts();
-
-/***/ }),
-/* 151 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = Markup;
-
-var _preact = __webpack_require__(0);
-
-var _Item = __webpack_require__(152);
-
-var _Item2 = _interopRequireDefault(_Item);
-
-var _Modal = __webpack_require__(155);
-
-var _Modal2 = _interopRequireDefault(_Modal);
-
-var _Controls = __webpack_require__(157);
-
-var _Controls2 = _interopRequireDefault(_Controls);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Markup(props) {
-  var items = props.items,
-      open = props.open,
-      currentPhrase = props.currentPhrase;
-  var setLanguage = props.setLanguage,
-      changePhrase = props.changePhrase,
-      setModal = props.setModal;
-
-  var keys = Object.keys(items);
-
-  return (0, _preact.h)(
-    'div',
-    null,
-    (0, _preact.h)(_Controls2.default, { currentPhrase: currentPhrase, changePhrase: changePhrase }),
-    (0, _preact.h)(
-      'ul',
-      { className: 'u-listReset' },
-      keys.map(function (key) {
-        var _items$key = items[key],
-            title = _items$key.title,
-            description = _items$key.description,
-            languages = _items$key.languages;
-
-        var id = key;
-        return (0, _preact.h)(_Item2.default, { key: key, id: id, title: title, description: description, languages: languages, setModal: setModal });
-      })
-    ),
-    open ? (0, _preact.h)(_Modal2.default, _extends({
-      open: open,
-      title: items[open.id].title,
-      description: items[open.id].description,
-      languageOptions: items[open.id].languages
-    }, { setModal: setModal, setLanguage: setLanguage })) : null
-  );
-}
-
-/***/ }),
-/* 152 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Item;
-
-var _preact = __webpack_require__(0);
-
-var _PlayIcon = __webpack_require__(153);
-
-var _PlayIcon2 = _interopRequireDefault(_PlayIcon);
-
-var _trimString = __webpack_require__(154);
-
-var _trimString2 = _interopRequireDefault(_trimString);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function Item(_ref) {
-  var id = _ref.id,
-      title = _ref.title,
-      description = _ref.description,
-      languages = _ref.languages,
-      setModal = _ref.setModal;
-
-  var languageKeys = Object.keys(languages);
-  var setModalWrapper = function setModalWrapper() {
-    return setModal(true, id, languages[languageKeys[0]]);
-  };
-  var languageButtons = Object.keys(languages).reduce(function (result, key) {
-    return [].concat(_toConsumableArray(result), [{
-      name: key,
-      action: function action() {
-        return setModal(true, id, languages[key]);
-      }
-    }]);
-  }, []);
-
-  return (0, _preact.h)(
-    'li',
-    { className: 'u-listItemReset' },
-    (0, _preact.h)(
-      'span',
-      { className: 'Videos-item' },
-      (0, _preact.h)(
-        'a',
-        { className: 'Videos-thumbnailWrap', onClick: setModalWrapper },
-        (0, _preact.h)(
-          'div',
-          { className: 'Videos-iconWrap' },
-          (0, _preact.h)(_PlayIcon2.default, null)
-        ),
-        (0, _preact.h)('img', { className: 'Videos-thumbnail', src: 'https://img.youtube.com/vi/' + languages[languageKeys[0]] + '/mqdefault.jpg', alt: '' })
-      ),
-      (0, _preact.h)(
-        'ul',
-        { className: 'Videos-info' },
-        (0, _preact.h)(
-          'li',
-          { className: 'Videos-title' },
-          title
-        ),
-        (0, _preact.h)(
-          'li',
-          { className: 'u-listItemReset' },
-          (0, _preact.h)(
-            'ul',
-            { className: 'u-listReset' },
-            languageButtons.map(function (_ref2) {
-              var name = _ref2.name,
-                  action = _ref2.action;
-              return (0, _preact.h)(
-                'li',
-                { className: 'Videos-pillWrap' },
-                (0, _preact.h)(
-                  'a',
-                  { onClick: action, className: 'Button is-small is-inline u-marginRight5 u-marginBottom5' },
-                  name
-                )
-              );
-            })
-          )
-        ),
-        (0, _preact.h)(
-          'li',
-          { className: 'Videos-description' },
-          description.length > 200 ? (0, _trimString2.default)(200, description) : description
-        )
-      )
-    )
-  );
-}
-
-/***/ }),
-/* 153 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = PlayIcon;
-
-var _preact = __webpack_require__(0);
-
-function PlayIcon() {
-  return (0, _preact.h)(
-    "svg",
-    { version: "1.2", className: "Videos-icon", baseProfile: "tiny", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100" },
-    (0, _preact.h)("path", { d: "M85.9 48L16.9.4c-.7-.5-1.7-.6-2.5-.1-.8.4-1.3 1.2-1.3 2.1v95.2c0 .9.5 1.7 1.3 2.1.3.2.7.3 1.1.3a2 2 0 0 0 1.3-.4l69-47.6c.7-.4 1-1.2 1-2 .1-.8-.3-1.5-.9-2zm0 0" })
-  );
-}
-
-/***/ }),
-/* 154 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = trimString;
-function trimString(length, string) {
-  var initialTrim = string.substr(0, length);
-  var characterToLastSpace = Math.min(initialTrim.length, initialTrim.lastIndexOf(' '));
-
-  return initialTrim.substr(0, characterToLastSpace) + '...';
-}
-
-/***/ }),
-/* 155 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Modal;
-
-var _preact = __webpack_require__(0);
-
-var _CloseIcon = __webpack_require__(156);
-
-var _CloseIcon2 = _interopRequireDefault(_CloseIcon);
-
-var _index = __webpack_require__(4);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Modal(props) {
-  var open = props.open,
-      title = props.title,
-      description = props.description,
-      languageOptions = props.languageOptions;
-  var setModal = props.setModal,
-      setLanguage = props.setLanguage;
-
-  var closeModal = function closeModal() {
-    return setModal(false);
-  };
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'Videos-modalWrap' },
-    (0, _preact.h)(
-      'div',
-      { className: 'Videos-modal' },
-      (0, _preact.h)(
-        'div',
-        { className: 'Videos-modalBox' },
-        (0, _preact.h)(
-          'div',
-          { className: 'Videos-modalClose', onClick: closeModal },
-          (0, _preact.h)(_CloseIcon2.default, null)
-        ),
-        (0, _preact.h)(
-          'div',
-          { className: 'Videos-modalTitle' },
-          title
-        ),
-        (0, _preact.h)(
-          'div',
-          { className: 'Videos-embed' },
-          (0, _preact.h)('div', { className: 'Videos-loading' }),
-          (0, _preact.h)('iframe', { className: 'Videos-iframe', width: '560', height: '315', src: 'https://www.youtube.com/embed/' + open.language + '?rel=0&amp;amp;showinfo=0', frameborder: '0', allow: 'autoplay; encrypted-media', allowfullscreen: 'allowfullscreen' })
-        ),
-        (0, _preact.h)(
-          'span',
-          { className: 'Videos-label' },
-          'Change language:'
-        ),
-        (0, _preact.h)(
-          'div',
-          { className: 'Videos-selectWrap' },
-          (0, _preact.h)(_index2.default, {
-            name: 'language',
-            open: open.select,
-            items: languageOptions,
-            selected: open.language,
-            changeAction: function changeAction(value) {
-              return setLanguage(value);
-            }
-          })
-        )
-      )
-    )
-  );
-}
-
-/***/ }),
-/* 156 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = CloseIcon;
-
-var _preact = __webpack_require__(0);
-
-function CloseIcon() {
-  return (0, _preact.h)(
-    "svg",
-    { className: "Videos-closeIcon", version: "1.2", baseProfile: "tiny", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", overflow: "scroll" },
-    (0, _preact.h)("path", { d: "M56.8 50L98.6 8.2a4.8 4.8 0 0 0 0-6.8 4.8 4.8 0 0 0-6.8 0L50 43.2 8.2 1.4a4.8 4.8 0 0 0-6.8 0 4.8 4.8 0 0 0 0 6.8L43.2 50 1.4 91.8a4.8 4.8 0 0 0 0 6.8c.9.9 2.1 1.4 3.4 1.4 1.2 0 2.4-.5 3.4-1.4L50 56.8l41.8 41.8c1 .9 2.2 1.4 3.4 1.4a5 5 0 0 0 3.4-1.4 4.8 4.8 0 0 0 0-6.8L56.8 50zm0 0" })
-  );
-}
-
-/***/ }),
-/* 157 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = CloseIcon;
-
-var _preact = __webpack_require__(0);
-
-function CloseIcon(_ref) {
-  var currentPhrase = _ref.currentPhrase,
-      changePhrase = _ref.changePhrase,
-      languageOptions = _ref.languageOptions;
-
-  return (0, _preact.h)(
-    "div",
-    null,
-    (0, _preact.h)("input", {
-      value: currentPhrase,
-      className: "Videos-input",
-      placeholder: "Start typing to find a video",
-      onInput: function onInput(event) {
-        return changePhrase(event.target.value);
-      }
-    })
-  );
-}
-
-/***/ }),
-/* 158 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(25);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _decodeHtmlEntities = __webpack_require__(1);
-
-var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function scripts() {
-  var componentList = document.getElementsByClassName('js-initValueBlocks');
-
-  for (var i = 0; i < componentList.length; i++) {
-    var component = componentList[i];
-    var items = JSON.parse((0, _decodeHtmlEntities2.default)(component.getAttribute('data-values')));
-
-    (0, _preact.render)((0, _preact.h)(_index2.default, { items: items }), component);
-  }
-}
-
-exports.default = scripts();
-
-/***/ }),
-/* 159 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(160);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _decodeHtmlEntities = __webpack_require__(1);
-
-var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function scripts() {
-  var componentList = document.getElementsByClassName('js-initRevenue');
-
-  for (var i = 0; i < componentList.length; i++) {
-    var component = componentList[i];
-
-    var values = JSON.parse((0, _decodeHtmlEntities2.default)(component.getAttribute('data-values')));
-    var year = component.getAttribute('data-year');
-
-    (0, _preact.render)((0, _preact.h)(_index2.default, { values: values, year: year }), component);
-  }
-}
-
-exports.default = scripts();
-
-/***/ }),
-/* 160 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = Revenue;
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(25);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function Revenue(_ref) {
-  var values = _ref.values;
-
-  var items = values.data.reduce(function (result, val) {
-    return _extends({}, result, _defineProperty({}, val.category, {
-      value: val.amount
-    }));
-  }, {});
-
-  return (0, _preact.h)(_index2.default, { items: items });
-}
-
-/***/ }),
-/* 161 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _preact = __webpack_require__(0);
-
-var _DebounceFunction = __webpack_require__(23);
-
-var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
-
-var _getProp = __webpack_require__(14);
-
-var _getProp2 = _interopRequireDefault(_getProp);
-
-var _index = __webpack_require__(162);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var HomeChartContainer = function (_Component) {
-  _inherits(HomeChartContainer, _Component);
-
-  function HomeChartContainer(props) {
-    _classCallCheck(this, HomeChartContainer);
-
-    var _this = _possibleConstructorReturn(this, (HomeChartContainer.__proto__ || Object.getPrototypeOf(HomeChartContainer)).call(this, props));
-
-    _this.state = {
-      width: 200,
-      mobile: true
-    };
-
-    _this.updateWidth = function () {
-      if (_this.state.mobile && window.innerWidth >= 600) {
-        _this.setState({ mobile: false });
-      } else if (!_this.state.mobile && window.innerWidth < 600) {
-        _this.setState({ mobile: true });
-      }
-
-      if (_this.node && _this.node.offsetWidth !== _this.state.width) {
-        if (_this.node.offsetWidth <= 200 && _this.state.width !== 200) {
-          return _this.setState({ width: 200 });
-        }
-
-        return _this.setState({ width: parseInt(_this.node.offsetWidth, 10) });
-      }
-
-      return null;
-    };
-
-    var viewportDebounce = new _DebounceFunction2.default(300);
-    var updateViewport = function updateViewport() {
-      return viewportDebounce.update(_this.updateWidth);
-    };
-
-    window.addEventListener('resize', updateViewport);
-
-    _this.node = null;
-    _this.parentAction = _this.parentAction.bind(_this);
-    return _this;
-  }
-
-  _createClass(HomeChartContainer, [{
-    key: 'parentAction',
-    value: function parentAction(node) {
-      this.node = node;
-      this.updateWidth();
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return (0, _preact.h)(_index2.default, {
-        items: this.props.items,
-        width: this.state.width,
-        parentAction: this.parentAction,
-        mobile: this.state.mobile,
-        hasNull: this.props.hasNull
-      });
-    }
-  }]);
-
-  return HomeChartContainer;
-}(_preact.Component);
-
-function scripts() {
-  var nodes = document.getElementsByClassName('js-initHomeChart');
-
-  var buildRevenueData = function buildRevenueData(array) {
-    return array.map(function (object) {
-      return _defineProperty({}, object.category, [object.amount]);
-    });
-  };
-
-  var buildExpenditureData = function buildExpenditureData(array) {
-    return array.map(function (object) {
-      return _defineProperty({}, object.name, [parseInt(object.total_budget, 10)]);
-    });
-  };
-
-  var buildExpenditureDataWithNull = function buildExpenditureDataWithNull(array, yearString) {
-    return array.map(function (object) {
-      return _defineProperty({}, object.name, {
-        link: '/' + yearString + '/search-result?search_type=full-search&search=' + object.name
-      });
-    });
-  };
-
-  var normaliseData = function normaliseData(array, hasNull, type, yearString) {
-    if (type === 'expenditure' && hasNull) {
-      return buildExpenditureDataWithNull(array, yearString);
-    } else if (type === 'expenditure') {
-      return buildExpenditureData(array);
-    } else if (type === 'revenue') {
-      return buildRevenueData(array);
-    }
-
-    return {};
-  };
-
-  var calcIfHasNullTotalBudget = function calcIfHasNullTotalBudget(array) {
-    return !array.every(function (object) {
-      return object.total_budget !== null;
-    });
-  };
-
-  for (var i = 0; i < nodes.length; i++) {
-    var node = nodes[i];
-    var rawValues = (0, _getProp2.default)('values', node, 'json');
-    var type = (0, _getProp2.default)('type', node);
-    var yearString = (0, _getProp2.default)('year', node);
-
-    var hasNull = type === 'revenue' ? false : calcIfHasNullTotalBudget(rawValues.data);
-    var items = Object.assign.apply(Object, _toConsumableArray(normaliseData(rawValues.data, hasNull, type, yearString)));
-
-    (0, _preact.render)((0, _preact.h)(HomeChartContainer, { hasNull: hasNull, items: items }), node);
-  }
-}
-
-exports.default = scripts();
-
-/***/ }),
-/* 162 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = HomeChart;
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(9);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _index3 = __webpack_require__(25);
-
-var _index4 = _interopRequireDefault(_index3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function HomeChart(props) {
-  var items = props.items,
-      width = props.width,
-      mobile = props.mobile,
-      hasNull = props.hasNull;
-  var parentAction = props.parentAction;
-
-
-  var withValues = (0, _preact.h)(
-    'div',
-    { className: 'Section-card' },
-    (0, _preact.h)(_index2.default, _extends({
-      name: 'programmes-chart',
-      guides: !mobile,
-      hover: !mobile
-    }, { width: width, parentAction: parentAction, items: items }))
-  );
-
-  return hasNull ? (0, _preact.h)(_index4.default, { items: items }) : withValues;
-}
-
-/***/ }),
-/* 163 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _preact = __webpack_require__(0);
-
-var _propTypes = __webpack_require__(6);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _queryString = __webpack_require__(12);
-
-var _queryString2 = _interopRequireDefault(_queryString);
-
-var _index = __webpack_require__(164);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _analyticsEvent = __webpack_require__(5);
-
-var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
-
-var _global = __webpack_require__(44);
-
-var _removePunctuation = __webpack_require__(45);
-
-var _removePunctuation2 = _interopRequireDefault(_removePunctuation);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var SearchContainer = function (_Component) {
-  _inherits(SearchContainer, _Component);
-
-  function SearchContainer(props) {
-    _classCallCheck(this, SearchContainer);
-
-    // 'currentKeywords' indicates the current text the user typed in the search box
-    // The second block contains factors that influence the UI state (searching means that UI is awaiting HTTP reponse for search suggestions)
-    // The third block contains timeout specific variables (used when there is a delay/throttling in the UI)
-    // The last block contains data that is retrieved from the HTTP request for search suggestions
-    var _this = _possibleConstructorReturn(this, (SearchContainer.__proto__ || Object.getPrototypeOf(SearchContainer)).call(this, props));
-
-    _this.state = {
-      currentKeywords: _this.props.searchParam,
-
-      focus: false,
-      loading: false,
-      searching: false,
-      error: false,
-
-      timeoutFocus: null,
-      timeoutId: null,
-
-      itemsArray: [],
-      count: null
-    };
-
-    _this.findSuggestions = _this.findSuggestions.bind(_this);
-    _this.setFocus = _this.setFocus.bind(_this);
-    return _this;
-  }
-
-  _createClass(SearchContainer, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      if (this.props.searchParam) {
-        this.findSuggestions(this.state.currentKeywords);
-      }
-    }
-
-    /**
-     * Debounces setting the focus state of the search input (and subsequently the dropdown) by 500 miliseconds. This means that the search only closes if the mouse has left it for a minimum of 500 miliseconds.
-     *
-     * @param {boolean} value - Whether you want to set the focus on the search input to `true` or `false`.
-     */
-
-  }, {
-    key: 'setFocus',
-    value: function setFocus(value) {
-      return this.setState({ focus: value });
-    }
-
-    /**
-     * Sends a HTTP get request to CKAN that checks if request returns a 200 or whether CKAN returns an error, if so resolves an JavaScript object. It also then logs these events retrospectively to Google Analytics (note the body reponse in an error is maxed at 500 characters). Once fetch is resolved it return an object that contains all the items capped at 10 (under `itemsArray`) and the amount in the CKAN database (under `count`).
-     *
-     * @param {string} newKeywords - The keywords that should be used to find suggested items. If not included the `currentKeywords` value in the state object will be used.
-     *
-     * @returns {*} - Returns a promise.
-     */
-
-  }, {
-    key: 'sendGetRequest',
-    value: function sendGetRequest() {
-      var newKeywords = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.state.keywords;
-
-      var datasetPackagesQueryUrl = _global.apiBaseURL + '/api/3/action/package_search?q=' + newKeywords + '&start=0&rows=10&fq=+organization:national-treasury+vocab_financial_years:' + this.props.selectedYear + '+extras_department_name_slug:[* TO *]+extras_geographic_region_slug:[* TO *]';
-      var requestApi = this.props.requestOverride || datasetPackagesQueryUrl;
-
-      return new Promise(function (resolve, reject) {
-        fetch(requestApi).then(function (response) {
-          if (!response.ok) {
-            response.text().then(function (data) {
-              (0, _analyticsEvent2.default)('send', 'event', 'search-error', 'error-response', JSON.stringify({ url: response.url, body: data.slice(0, 500) }));
-            });
-
-            reject(response);
-          }
-
-          response.json().then(function (data) {
-            if (!data.success) {
-              (0, _analyticsEvent2.default)('send', 'event', 'search-error', 'ckan-200-error', JSON.stringify({ url: response.url, error: data.error }));
-            }
-
-            resolve({ itemsArray: data.result.results, count: data.result.count });
-          }).catch(function (err) {
-            return reject(err);
-          });
-        }).catch(function (err) {
-          return reject(err);
-        });
-      });
-    }
-
-    /**
-     * The wrapper method that executes the HTTP get request (via `this.sendGetRequest`) and sets the UI state accordingly. Note that method logs to the console an error under `console.warn` instead of throwing a traditional error. This is gracefully fail the request in the UI and to prevent an error from unwinding the stack should the HTTP request fail.
-     *
-     * @param {string} newKeywords - The keywords that should be used to find suggested items. If not included the `currentKeywords` value in the state object will be used.
-     */
-
-  }, {
-    key: 'findSuggestions',
-    value: function findSuggestions(newKeywords) {
-      var _this2 = this;
-
-      this.setState({ currentKeywords: newKeywords });
-
-      if (newKeywords.length >= 2) {
-        clearTimeout(this.state.timeoutId);
-        this.setState({ searching: true });
-        this.setState({ count: null });
-
-        var request = function request() {
-          return _this2.sendGetRequest((0, _removePunctuation2.default)(newKeywords)).then(function (_ref) {
-            var itemsArray = _ref.itemsArray,
-                count = _ref.count;
-
-            _this2.setState({ count: count });
-            _this2.setState({ timeoutId: null });
-            _this2.setState({ itemsArray: itemsArray });
-            _this2.setState({ searching: false });
-          }).catch(function (err) {
-            _this2.setState({ searching: false });
-            _this2.setState({ error: true });
-            console.warn(err); // eslint-disable-line no-console
-          });
-        };
-
-        var newTimeoutId = setTimeout(request, 1000);
-        this.setState({ timeoutId: newTimeoutId });
-      }
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return (0, _preact.h)(_index2.default, {
-        currentKeywords: this.state.currentKeywords,
-
-        focus: this.state.focus,
-        loading: this.state.loading,
-        searching: this.state.searching,
-        error: this.state.error,
-
-        itemsArray: this.state.itemsArray,
-        count: this.state.count,
-
-        findSuggestions: this.findSuggestions,
-        setFocus: this.setFocus,
-
-        selectedYear: this.props.selectedYear
-      });
-    }
-  }]);
-
-  return SearchContainer;
-}(_preact.Component);
-
-SearchContainer.propTypes = {
-  searchParam: _propTypes2.default.string,
-  selectedYear: _propTypes2.default.string.isRequired,
-  requestOverride: _propTypes2.default.string
-};
-
-SearchContainer.defaultProps = {
-  searchParam: '',
-  requestOverride: null
-};
-
-function scripts() {
-  // Find all instances of a specific UI component on a page by parent class name.
-  var componentsList = document.getElementsByClassName('js-initSearch');
-
-  // Destructure needed query strings from URL
-
-  var _ref2 = _queryString2.default.parse(location.search) || {},
-      searchParam = _ref2.search,
-      noJs = _ref2.no_js;
-
-  if (componentsList.length > 0 && !noJs) {
-    for (var i = 0; i < componentsList.length; i++) {
-      // Find DOM node that will house the Preact app and get associated data attributes that are passed via HTML
-      var component = componentsList[i];
-      var requestOverride = component.getAttribute('data-request-override');
-      var selectedYear = component.getAttribute('data-year') || '2018-19';
-
-      // Initialise Search Preact App
-      (0, _preact.render)((0, _preact.h)(SearchContainer, { requestOverride: requestOverride, selectedYear: selectedYear, searchParam: searchParam }), component);
-    }
-  }
-}
-
-exports.default = scripts();
-
-/***/ }),
-/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18252,11 +15678,11 @@ var _propTypes = __webpack_require__(6);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _FormArea = __webpack_require__(165);
+var _FormArea = __webpack_require__(126);
 
 var _FormArea2 = _interopRequireDefault(_FormArea);
 
-var _ResultsArea = __webpack_require__(167);
+var _ResultsArea = __webpack_require__(128);
 
 var _ResultsArea2 = _interopRequireDefault(_ResultsArea);
 
@@ -18369,7 +15795,7 @@ SearchMarkup.defaultProps = {
 };
 
 /***/ }),
-/* 165 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18386,7 +15812,7 @@ var _propTypes = __webpack_require__(6);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Icon = __webpack_require__(166);
+var _Icon = __webpack_require__(127);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -18453,7 +15879,7 @@ FormArea.propTypes = {
 };
 
 /***/ }),
-/* 166 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18480,7 +15906,7 @@ function Icon() {
 }
 
 /***/ }),
-/* 167 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18497,7 +15923,7 @@ var _propTypes = __webpack_require__(6);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _List = __webpack_require__(168);
+var _List = __webpack_require__(129);
 
 var _List2 = _interopRequireDefault(_List);
 
@@ -18559,7 +15985,7 @@ ResultsArea.defaultProps = {
 };
 
 /***/ }),
-/* 168 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18757,7 +16183,7 @@ List.defaultProps = {
 };
 
 /***/ }),
-/* 169 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18771,7 +16197,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(170);
+var _index = __webpack_require__(131);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -18779,7 +16205,7 @@ var _decodeHtmlEntities = __webpack_require__(1);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
-var _DebounceFunction = __webpack_require__(23);
+var _DebounceFunction = __webpack_require__(20);
 
 var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
 
@@ -18899,7 +16325,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 170 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18916,7 +16342,7 @@ var _queryString = __webpack_require__(12);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
-var _index = __webpack_require__(42);
+var _index = __webpack_require__(44);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -19063,7 +16489,148 @@ function YearSelectMarkup(_ref) {
 }
 
 /***/ }),
-/* 171 */
+/* 132 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Box;
+
+var _preact = __webpack_require__(0);
+
+var _Links = __webpack_require__(133);
+
+var _Links2 = _interopRequireDefault(_Links);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Box(_ref) {
+  var title = _ref.title,
+      description = _ref.description,
+      actions = _ref.actions,
+      down = _ref.down,
+      closeAction = _ref.closeAction;
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Tooltip-box' },
+    (0, _preact.h)(
+      'div',
+      { className: 'Tooltip-content' + (down ? ' is-down' : '') },
+      (0, _preact.h)(
+        'div',
+        { className: 'Tooltip-contentWrap' },
+        (0, _preact.h)(
+          'div',
+          { className: 'Tooltip-shadowBox' },
+          (0, _preact.h)(
+            'div',
+            { className: 'Tooltip-infoBox' },
+            (0, _preact.h)(
+              'div',
+              { className: 'Tooltip-title' },
+              title
+            ),
+            (0, _preact.h)(
+              'div',
+              { className: 'Tooltip-text' },
+              description
+            ),
+            (0, _preact.h)(_Links2.default, { actions: actions, closeAction: closeAction })
+          ),
+          (0, _preact.h)('div', { className: 'Tooltip-triangle' + (down ? ' is-down' : '') })
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 133 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Links;
+
+var _preact = __webpack_require__(0);
+
+var _CloseIcon = __webpack_require__(134);
+
+var _CloseIcon2 = _interopRequireDefault(_CloseIcon);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Links(_ref) {
+  var actions = _ref.actions,
+      closeAction = _ref.closeAction;
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Tooltip-links' },
+    (0, _preact.h)(
+      'span',
+      { className: 'Tooltip-linkWrap is-close', onClick: closeAction },
+      (0, _preact.h)(
+        'span',
+        { className: 'Tooltip-closeIcon' },
+        (0, _preact.h)(_CloseIcon2.default, null)
+      ),
+      (0, _preact.h)(
+        'span',
+        { className: 'Tooltip-link' },
+        'Close'
+      )
+    ),
+    actions.map(function (_ref2) {
+      var url = _ref2.url,
+          title = _ref2.title;
+
+      return (0, _preact.h)(
+        'a',
+        { className: 'Tooltip-linkWrap', href: url },
+        (0, _preact.h)(
+          'div',
+          { className: 'Tooltip-link' },
+          title
+        )
+      );
+    })
+  );
+}
+
+/***/ }),
+/* 134 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = CloseIcon;
+
+var _preact = __webpack_require__(0);
+
+function CloseIcon() {
+  return (0, _preact.h)(
+    "svg",
+    { version: "1.2", width: "10", height: "10", baseProfile: "tiny", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100" },
+    (0, _preact.h)("path", { d: "M58.3 50.4L96.7 12c2.4-2.4 2.4-6.2 0-8.6C94.3 1 90.5 1 88 3.4L49.8 41.8 11.3 3.4C9 1 5 1 2.7 3.4.3 5.8.3 9.6 2.7 12L41 50.4 2.8 88.8C.3 91.2.3 95 2.7 97.4 4 98.6 5.5 99.2 7 99.2c1.6 0 3-.6 4.3-1.8L49.7 59 88 97.4c1.3 1.2 3 1.8 4.4 1.8 1.6 0 3-.6 4.3-1.8 2.4-2.4 2.4-6.2 0-8.6L58.3 50.4zm0 0" })
+  );
+}
+
+/***/ }),
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19073,15 +16640,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _FixedNodeBox = __webpack_require__(172);
+var _FixedNodeBox = __webpack_require__(136);
 
 var _FixedNodeBox2 = _interopRequireDefault(_FixedNodeBox);
 
-var _HighlightLinks = __webpack_require__(173);
+var _HighlightLinks = __webpack_require__(137);
 
 var _HighlightLinks2 = _interopRequireDefault(_HighlightLinks);
 
-var _forceClose = __webpack_require__(176);
+var _forceClose = __webpack_require__(140);
 
 var _forceClose2 = _interopRequireDefault(_forceClose);
 
@@ -19120,7 +16687,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 172 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19220,7 +16787,7 @@ var FixedNodeBox = function () {
 exports.default = FixedNodeBox;
 
 /***/ }),
-/* 173 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19234,11 +16801,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _buildLinksObject = __webpack_require__(174);
+var _buildLinksObject = __webpack_require__(138);
 
 var _buildLinksObject2 = _interopRequireDefault(_buildLinksObject);
 
-var _calcViewportPosition = __webpack_require__(175);
+var _calcViewportPosition = __webpack_require__(139);
 
 var _calcViewportPosition2 = _interopRequireDefault(_calcViewportPosition);
 
@@ -19350,7 +16917,7 @@ var HighlightLinks = function () {
 exports.default = HighlightLinks;
 
 /***/ }),
-/* 174 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19378,7 +16945,7 @@ function buildLinksObject(nodeList) {
 }
 
 /***/ }),
-/* 175 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19395,7 +16962,7 @@ function calcViewportPosition(node) {
 }
 
 /***/ }),
-/* 176 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19425,7 +16992,7 @@ function forceClose(nodes) {
 }
 
 /***/ }),
-/* 177 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19481,7 +17048,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 178 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19495,11 +17062,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _preactRenderToString = __webpack_require__(46);
+var _preactRenderToString = __webpack_require__(45);
 
 var _preactRenderToString2 = _interopRequireDefault(_preactRenderToString);
 
-var _canvgBrowser = __webpack_require__(47);
+var _canvgBrowser = __webpack_require__(46);
 
 var _canvgBrowser2 = _interopRequireDefault(_canvgBrowser);
 
@@ -19509,15 +17076,15 @@ var _index = __webpack_require__(9);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(183);
+var _index3 = __webpack_require__(147);
 
 var _index4 = _interopRequireDefault(_index3);
 
-var _calcShareAction = __webpack_require__(185);
+var _calcShareAction = __webpack_require__(172);
 
 var _calcShareAction2 = _interopRequireDefault(_calcShareAction);
 
-var _getProp = __webpack_require__(14);
+var _getProp = __webpack_require__(13);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
@@ -19676,7 +17243,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 179 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19953,7 +17520,7 @@ module.exports = function (color_string) {
 };
 
 /***/ }),
-/* 180 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20232,7 +17799,7 @@ function BlurStack() {
 module.exports = blur;
 
 /***/ }),
-/* 181 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20485,14 +18052,14 @@ function appendElement(hander, node) {
 } //appendChild and setAttributeNS are preformance key
 
 //if(typeof require == 'function'){
-var XMLReader = __webpack_require__(182).XMLReader;
-var DOMImplementation = exports.DOMImplementation = __webpack_require__(48).DOMImplementation;
-exports.XMLSerializer = __webpack_require__(48).XMLSerializer;
+var XMLReader = __webpack_require__(146).XMLReader;
+var DOMImplementation = exports.DOMImplementation = __webpack_require__(47).DOMImplementation;
+exports.XMLSerializer = __webpack_require__(47).XMLSerializer;
 exports.DOMParser = DOMParser;
 //}
 
 /***/ }),
-/* 182 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21142,7 +18709,7 @@ function split(source, start) {
 exports.XMLReader = XMLReader;
 
 /***/ }),
-/* 183 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21158,7 +18725,7 @@ exports.default = ProgrammesChart;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(22);
+var _index = __webpack_require__(24);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -21170,15 +18737,15 @@ var _index5 = __webpack_require__(4);
 
 var _index6 = _interopRequireDefault(_index5);
 
-var _shareSelections = __webpack_require__(184);
+var _shareSelections = __webpack_require__(170);
 
 var _shareSelections2 = _interopRequireDefault(_shareSelections);
 
-var _index7 = __webpack_require__(13);
+var _index7 = __webpack_require__(14);
 
 var _index8 = _interopRequireDefault(_index7);
 
-var _index9 = __webpack_require__(18);
+var _index9 = __webpack_require__(25);
 
 var _index10 = _interopRequireDefault(_index9);
 
@@ -21336,13 +18903,1809 @@ function ProgrammesChart(props) {
 }
 
 /***/ }),
-/* 184 */
+/* 148 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = Markup;
+
+var _preact = __webpack_require__(0);
+
+var _index = __webpack_require__(9);
+
+var _index2 = _interopRequireDefault(_index);
+
+var _index3 = __webpack_require__(48);
+
+var _index4 = _interopRequireDefault(_index3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Markup(props) {
+  var width = props.width,
+      type = props.type,
+      items = props.items;
+  var parentAction = props.parentAction;
+
+
+  if (type === 'bar') {
+    return (0, _preact.h)(_index2.default, _extends({
+      guides: true,
+      hover: true,
+      scale: 1
+    }, { parentAction: parentAction, items: items, width: width }));
+  }
+
+  if (type === 'line') {
+    return (0, _preact.h)(_index4.default, _extends({
+      guides: true,
+      hover: true
+    }, { parentAction: parentAction, width: width, items: items }));
+  }
+}
+
+/***/ }),
+/* 149 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = calcMaxValue;
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function calcMaxValue(items) {
+  var labels = Object.keys(items);
+
+  return labels.reduce(function (result, key) {
+    var maxValue = Math.max.apply(Math, _toConsumableArray(items[key]));
+    return maxValue > result ? maxValue : result;
+  }, 0);
+}
+
+/***/ }),
+/* 150 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = buildGroupSpaceArray;
+
+var _breakIntoWrap = __webpack_require__(151);
+
+var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function buildGroupSpaceArray(items, styling) {
+  var lineGutter = styling.lineGutter,
+      barWidth = styling.barWidth,
+      groupMargin = styling.groupMargin,
+      charWrap = styling.charWrap,
+      charLineHeight = styling.charLineHeight,
+      titleSpace = styling.titleSpace;
+
+
+  return Object.keys(items).map(function (key) {
+    var value = items[key];
+    var rawLines = (0, _breakIntoWrap2.default)(key, charWrap);
+
+    var lines = rawLines.filter(function (val) {
+      return val !== '';
+    });
+
+    var totalGutters = (value.length - 1) * lineGutter;
+    var totalLineWidth = value.length * barWidth;
+    var totalText = charLineHeight * lines.length;
+
+    return totalGutters + totalLineWidth + totalText + groupMargin;
+  });
+}
+
+/***/ }),
+/* 151 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = breakIntoWrap;
+function breakIntoWrap(string, wrap) {
+  var splitter = string.split(' ');
+
+  var count = 0;
+  var word = '';
+  var results = [];
+
+  for (var i = 0; i < splitter.length; i++) {
+    if (splitter[count].length >= wrap) {
+      // for (let ii = 0; ii < splitter[count].length; ii += wrap) {
+      //   results.push(splitter[count].substr(ii, wrap));
+      // }
+
+      results.push(splitter[count]);
+
+      word = '';
+      count++;
+    } else {
+      word = word + ' ' + splitter[count];
+      count++;
+
+      if (word.length >= wrap) {
+        results.push(word);
+        word = '';
+      }
+
+      if (i === splitter.length - 1) {
+        results.push(word);
+        word = '';
+      }
+    }
+  }
+
+  return results;
+}
+
+/***/ }),
+/* 152 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = Breakpoints;
+
+var _preact = __webpack_require__(0);
+
+var _BreakpointItem = __webpack_require__(153);
+
+var _BreakpointItem2 = _interopRequireDefault(_BreakpointItem);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Breakpoints(_ref) {
+  var items = _ref.items,
+      styling = _ref.styling,
+      totalGroupSpace = _ref.totalGroupSpace;
+  var valueSpace = styling.valueSpace,
+      buffer = styling.buffer,
+      padding = styling.padding,
+      labelBreakpoints = styling.labelBreakpoints;
+
+  var breakpointArray = [];
+
+  for (var i = 0; i < labelBreakpoints; i++) {
+    breakpointArray.push('');
+  }
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'Graph-verticalLabelList' },
+    breakpointArray.map(function (val, index) {
+      return (0, _preact.h)(_BreakpointItem2.default, _extends({ rank: index }, { styling: styling, totalGroupSpace: totalGroupSpace }));
+    })
+  );
+}
+
+/***/ }),
+/* 153 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = BreakpointItem;
+
+var _preact = __webpack_require__(0);
+
+var _trimValues = __webpack_require__(8);
+
+var _trimValues2 = _interopRequireDefault(_trimValues);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function BreakpointItem(_ref) {
+  var styling = _ref.styling,
+      totalGroupSpace = _ref.totalGroupSpace,
+      rank = _ref.rank,
+      fontSize = _ref.fontSize;
+  var valueSpace = styling.valueSpace,
+      buffer = styling.buffer,
+      padding = styling.padding,
+      labelBreakpoints = styling.labelBreakpoints,
+      maxValue = styling.maxValue,
+      svgHeight = styling.svgHeight;
+
+  var iterationValue = maxValue / (labelBreakpoints - 1);
+  var iterationPosition = svgHeight / (labelBreakpoints - 1);
+
+  return (0, _preact.h)(
+    'text',
+    {
+      x: padding[3] - buffer,
+      y: padding[0] + 7 + iterationPosition * rank,
+      fill: '#3f3f3f',
+      'text-anchor': 'end',
+      'font-size': fontSize,
+      'font-weight': 'bold',
+      'font-family': 'sans-serif'
+    },
+    'R',
+    (0, _trimValues2.default)(iterationValue * (labelBreakpoints - (rank + 1)), true)
+  );
+}
+
+/***/ }),
+/* 154 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Grid;
+
+var _preact = __webpack_require__(0);
+
+function Grid(_ref) {
+  var styling = _ref.styling,
+      totalGroupSpace = _ref.totalGroupSpace;
+  var padding = styling.padding,
+      valueSpace = styling.valueSpace,
+      buffer = styling.buffer,
+      svgHeight = styling.svgHeight;
+
+
+  return (0, _preact.h)(
+    "g",
+    { className: "Graph-grid" },
+    (0, _preact.h)("line", {
+      className: "Graph-outline",
+      x1: padding[3],
+      y1: padding[0],
+      x2: padding[3],
+      y2: padding[0] + svgHeight,
+      "stroke-width": "2",
+      stroke: "#d2d2d2",
+      fill: "none"
+    }),
+    (0, _preact.h)("path", {
+      className: "Graph-outline",
+      d: "\n          M" + padding[3] + " " + (padding[0] + svgHeight) + " \n          Q " + padding[3] + " " + (padding[0] + buffer + svgHeight) + ", \n          " + (padding[3] + buffer) + " " + (padding[0] + buffer + svgHeight) + "\n        ",
+      "stroke-width": "2",
+      stroke: "#d2d2d2",
+      fill: "none"
+    }),
+    (0, _preact.h)("line", {
+      className: "Graph-outline",
+      x1: padding[3] + buffer,
+      y1: padding[0] + svgHeight + buffer,
+      x2: padding[3] + valueSpace,
+      y2: padding[0] + svgHeight + buffer,
+      "stroke-width": "2",
+      stroke: "#d2d2d2",
+      fill: "none"
+    })
+  );
+}
+
+/***/ }),
+/* 155 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = Guides;
+
+var _preact = __webpack_require__(0);
+
+var _GuideItem = __webpack_require__(156);
+
+var _GuideItem2 = _interopRequireDefault(_GuideItem);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Guides(_ref) {
+  var styling = _ref.styling,
+      totalGroupSpace = _ref.totalGroupSpace;
+  var labelBreakpoints = styling.labelBreakpoints;
+
+
+  var breakpointArray = [];
+
+  for (var i = 0; i < labelBreakpoints; i++) {
+    breakpointArray.push('');
+  }
+
+  // const { buffer, padding } = styling;
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'Graph-verticalLabelList' },
+    breakpointArray.map(function (val, index) {
+      if (index !== breakpointArray.length - 1) {
+        return (0, _preact.h)(_GuideItem2.default, _extends({ rank: index }, { styling: styling, totalGroupSpace: totalGroupSpace }));
+      }
+      return null;
+    })
+  );
+}
+
+/***/ }),
+/* 156 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = GuideItem;
+
+var _preact = __webpack_require__(0);
+
+function GuideItem(_ref) {
+  var styling = _ref.styling,
+      totalGroupSpace = _ref.totalGroupSpace,
+      rank = _ref.rank;
+  var valueSpace = styling.valueSpace,
+      buffer = styling.buffer,
+      fontSize = styling.fontSize,
+      padding = styling.padding,
+      labelBreakpoints = styling.labelBreakpoints,
+      svgHeight = styling.svgHeight;
+
+  var iteration = svgHeight / (labelBreakpoints - 1);
+
+  // const debugIteration = totalGroupSpace / labelBreakpoints;
+
+  return (0, _preact.h)(
+    "g",
+    null,
+    (0, _preact.h)("line", {
+      x1: padding[3],
+      y1: padding[0] + iteration * rank,
+      x2: padding[3] + valueSpace,
+      y2: padding[0] + iteration * rank,
+      className: "Graph-guide",
+      stroke: "#e6e6e6"
+    })
+  );
+}
+
+/***/ }),
+/* 157 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = LineGroups;
+
+var _preact = __webpack_require__(0);
+
+var _LineGroupItem = __webpack_require__(158);
+
+var _LineGroupItem2 = _interopRequireDefault(_LineGroupItem);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function LineGroups(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      items = _ref.items,
+      styling = _ref.styling;
+
+  var titles = Object.keys(items);
+  // const { padding, buffer, valueSpace } = styling;
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'LineGroupList' },
+    titles.map(function (key, index) {
+      return (0, _preact.h)(_LineGroupItem2.default, _extends({
+        rank: index,
+        lines: items[key],
+        title: key
+      }, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, styling: styling }));
+    })
+  );
+}
+
+/***/ }),
+/* 158 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = LineGroupItem;
+
+var _preact = __webpack_require__(0);
+
+var _path = __webpack_require__(159);
+
+var colours = ['#79b43c', '#4a4a4a', '#ad3c64'];
+
+function LineGroupItem(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      rank = _ref.rank,
+      lines = _ref.lines,
+      title = _ref.title,
+      styling = _ref.styling;
+  var barWidth = styling.barWidth,
+      padding = styling.padding,
+      buffer = styling.buffer,
+      lineGutter = styling.lineGutter,
+      valueSpace = styling.valueSpace,
+      maxValue = styling.maxValue,
+      svgHeight = styling.svgHeight;
+
+
+  var groupSpace = groupSpaceArray[rank];
+
+  var generateToScale = function generateToScale(value) {
+    return (valueSpace - buffer) / totalGroupSpace * value;
+  };
+
+  var previousSpace = groupSpaceArray.reduce(function (result, val, index) {
+    if (index < rank) {
+      return result + generateToScale(val);
+    }
+
+    return result;
+  }, 0);
+
+  var usedSpace = lines.length * (barWidth + lineGutter);
+  var startPoint = padding[3] + buffer + previousSpace;
+  var centeringSpace = (generateToScale(groupSpace) + barWidth - usedSpace) / 2;
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'Graph-group' },
+    lines.map(function (amount, index) {
+      var relativeAmount = amount / maxValue * svgHeight;
+      var displayAmount = relativeAmount < barWidth + 1 ? barWidth + 1 : relativeAmount;
+      return (0, _preact.h)('line', {
+        'stroke-linecap': 'round',
+        'stroke-width': barWidth,
+        x1: startPoint + centeringSpace + index * (barWidth + lineGutter),
+        y1: padding[0] + svgHeight - barWidth / 2,
+        x2: startPoint + centeringSpace + index * (barWidth + lineGutter),
+        y2: padding[0] + svgHeight + barWidth - barWidth / 2 - displayAmount,
+        className: 'Graph-line',
+        stroke: colours[index]
+      });
+    })
+  );
+}
+
+/***/ }),
+/* 159 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+// resolves . and .. elements in a path array with directory names there
+// must be no slashes, empty elements, or device names (c:\) in the array
+// (so also no leading and trailing slashes - it does not distinguish
+// relative and absolute paths)
+function normalizeArray(parts, allowAboveRoot) {
+  // if the path tries to go above the root, `up` ends up > 0
+  var up = 0;
+  for (var i = parts.length - 1; i >= 0; i--) {
+    var last = parts[i];
+    if (last === '.') {
+      parts.splice(i, 1);
+    } else if (last === '..') {
+      parts.splice(i, 1);
+      up++;
+    } else if (up) {
+      parts.splice(i, 1);
+      up--;
+    }
+  }
+
+  // if the path is allowed to go above the root, restore leading ..s
+  if (allowAboveRoot) {
+    for (; up--; up) {
+      parts.unshift('..');
+    }
+  }
+
+  return parts;
+}
+
+// Split a filename into [root, dir, basename, ext], unix version
+// 'root' is just a slash, or nothing.
+var splitPathRe = /^(\/?|)([\s\S]*?)((?:\.{1,2}|[^\/]+?|)(\.[^.\/]*|))(?:[\/]*)$/;
+var splitPath = function splitPath(filename) {
+  return splitPathRe.exec(filename).slice(1);
+};
+
+// path.resolve([from ...], to)
+// posix version
+exports.resolve = function () {
+  var resolvedPath = '',
+      resolvedAbsolute = false;
+
+  for (var i = arguments.length - 1; i >= -1 && !resolvedAbsolute; i--) {
+    var path = i >= 0 ? arguments[i] : process.cwd();
+
+    // Skip empty and invalid entries
+    if (typeof path !== 'string') {
+      throw new TypeError('Arguments to path.resolve must be strings');
+    } else if (!path) {
+      continue;
+    }
+
+    resolvedPath = path + '/' + resolvedPath;
+    resolvedAbsolute = path.charAt(0) === '/';
+  }
+
+  // At this point the path should be resolved to a full absolute path, but
+  // handle relative paths to be safe (might happen when process.cwd() fails)
+
+  // Normalize the path
+  resolvedPath = normalizeArray(filter(resolvedPath.split('/'), function (p) {
+    return !!p;
+  }), !resolvedAbsolute).join('/');
+
+  return (resolvedAbsolute ? '/' : '') + resolvedPath || '.';
+};
+
+// path.normalize(path)
+// posix version
+exports.normalize = function (path) {
+  var isAbsolute = exports.isAbsolute(path),
+      trailingSlash = substr(path, -1) === '/';
+
+  // Normalize the path
+  path = normalizeArray(filter(path.split('/'), function (p) {
+    return !!p;
+  }), !isAbsolute).join('/');
+
+  if (!path && !isAbsolute) {
+    path = '.';
+  }
+  if (path && trailingSlash) {
+    path += '/';
+  }
+
+  return (isAbsolute ? '/' : '') + path;
+};
+
+// posix version
+exports.isAbsolute = function (path) {
+  return path.charAt(0) === '/';
+};
+
+// posix version
+exports.join = function () {
+  var paths = Array.prototype.slice.call(arguments, 0);
+  return exports.normalize(filter(paths, function (p, index) {
+    if (typeof p !== 'string') {
+      throw new TypeError('Arguments to path.join must be strings');
+    }
+    return p;
+  }).join('/'));
+};
+
+// path.relative(from, to)
+// posix version
+exports.relative = function (from, to) {
+  from = exports.resolve(from).substr(1);
+  to = exports.resolve(to).substr(1);
+
+  function trim(arr) {
+    var start = 0;
+    for (; start < arr.length; start++) {
+      if (arr[start] !== '') break;
+    }
+
+    var end = arr.length - 1;
+    for (; end >= 0; end--) {
+      if (arr[end] !== '') break;
+    }
+
+    if (start > end) return [];
+    return arr.slice(start, end - start + 1);
+  }
+
+  var fromParts = trim(from.split('/'));
+  var toParts = trim(to.split('/'));
+
+  var length = Math.min(fromParts.length, toParts.length);
+  var samePartsLength = length;
+  for (var i = 0; i < length; i++) {
+    if (fromParts[i] !== toParts[i]) {
+      samePartsLength = i;
+      break;
+    }
+  }
+
+  var outputParts = [];
+  for (var i = samePartsLength; i < fromParts.length; i++) {
+    outputParts.push('..');
+  }
+
+  outputParts = outputParts.concat(toParts.slice(samePartsLength));
+
+  return outputParts.join('/');
+};
+
+exports.sep = '/';
+exports.delimiter = ':';
+
+exports.dirname = function (path) {
+  var result = splitPath(path),
+      root = result[0],
+      dir = result[1];
+
+  if (!root && !dir) {
+    // No dirname whatsoever
+    return '.';
+  }
+
+  if (dir) {
+    // It has a dirname, strip trailing slash
+    dir = dir.substr(0, dir.length - 1);
+  }
+
+  return root + dir;
+};
+
+exports.basename = function (path, ext) {
+  var f = splitPath(path)[2];
+  // TODO: make this comparison case-insensitive on windows?
+  if (ext && f.substr(-1 * ext.length) === ext) {
+    f = f.substr(0, f.length - ext.length);
+  }
+  return f;
+};
+
+exports.extname = function (path) {
+  return splitPath(path)[3];
+};
+
+function filter(xs, f) {
+  if (xs.filter) return xs.filter(f);
+  var res = [];
+  for (var i = 0; i < xs.length; i++) {
+    if (f(xs[i], i, xs)) res.push(xs[i]);
+  }
+  return res;
+}
+
+// String.prototype.substr - negative index don't work in IE8
+var substr = 'ab'.substr(-1) === 'b' ? function (str, start, len) {
+  return str.substr(start, len);
+} : function (str, start, len) {
+  if (start < 0) start = str.length + start;
+  return str.substr(start, len);
+};
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 160 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = Tooltips;
+
+var _preact = __webpack_require__(0);
+
+var _TooltipGroup = __webpack_require__(161);
+
+var _TooltipGroup2 = _interopRequireDefault(_TooltipGroup);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Tooltips(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      items = _ref.items,
+      styling = _ref.styling;
+
+  var titles = Object.keys(items);
+  var padding = styling.padding,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace;
+
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'LineGroupList' },
+    titles.map(function (key, index) {
+      return (0, _preact.h)(_TooltipGroup2.default, _extends({
+        rank: index,
+        lines: items[key],
+        title: key
+      }, { totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, styling: styling }));
+    })
+  );
+}
+
+/***/ }),
+/* 161 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = TooltipGroup;
+
+var _preact = __webpack_require__(0);
+
+var _TooltipItem = __webpack_require__(162);
+
+var _TooltipItem2 = _interopRequireDefault(_TooltipItem);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var colours = ['#79b43c', '#4a4a4a', '#ad3c64'];
+
+function TooltipGroup(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      rank = _ref.rank,
+      lines = _ref.lines,
+      title = _ref.title,
+      styling = _ref.styling;
+  var barWidth = styling.barWidth,
+      padding = styling.padding,
+      buffer = styling.buffer,
+      lineGutter = styling.lineGutter,
+      valueSpace = styling.valueSpace,
+      maxValue = styling.maxValue,
+      popUpOffset = styling.popUpOffset,
+      popupHeight = styling.popupHeight,
+      svgHeight = styling.svgHeight;
+
+
+  var groupSpace = groupSpaceArray[rank];
+
+  var generateToScale = function generateToScale(value) {
+    return (valueSpace - buffer) / totalGroupSpace * value;
+  };
+
+  var previousSpace = groupSpaceArray.reduce(function (result, val, index) {
+    if (index < rank) {
+      return result + generateToScale(val);
+    }
+
+    return result;
+  }, 0);
+
+  var usedSpace = lines.length * (barWidth + lineGutter);
+  var startPoint = padding[3] + buffer + previousSpace;
+  var centeringSpace = (generateToScale(groupSpace) + barWidth - usedSpace) / 2;
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'Graph-group' },
+    lines.map(function (amount, index) {
+      var relativeAmount = amount / maxValue * svgHeight;
+      var displayAmount = relativeAmount < barWidth + 1 ? barWidth + 1 : relativeAmount;
+      return (0, _preact.h)(_TooltipItem2.default, _extends({ styling: styling }, {
+        xPosition: startPoint + centeringSpace + index * (barWidth + lineGutter),
+        yPosition: padding[0] + svgHeight + barWidth - (barWidth * 2 + displayAmount + popUpOffset + popupHeight)
+      }, { amount: amount, totalGroupSpace: totalGroupSpace }, {
+        colour: colours[index]
+      }));
+    })
+  );
+}
+
+/***/ }),
+/* 162 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = TooltipItem;
+
+var _preact = __webpack_require__(0);
+
+var _trimValues = __webpack_require__(8);
+
+var _trimValues2 = _interopRequireDefault(_trimValues);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function TooltipItem(_ref) {
+  var styling = _ref.styling,
+      xTriggerPosition = _ref.xTriggerPosition,
+      xPosition = _ref.xPosition,
+      yPosition = _ref.yPosition,
+      amount = _ref.amount,
+      colour = _ref.colour,
+      totalGroupSpace = _ref.totalGroupSpace;
+  var barWidth = styling.barWidth,
+      lineGutter = styling.lineGutter,
+      padding = styling.padding,
+      popupWidth = styling.popupWidth,
+      popupHeight = styling.popupHeight,
+      buffer = styling.buffer,
+      svgHeight = styling.svgHeight,
+      popupFontSize = styling.popupFontSize;
+
+  // const { popUpOffset } = styling;
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'ColumnChart-tooltip' },
+    (0, _preact.h)('rect', {
+      x: xPosition - (barWidth + lineGutter) / 2,
+      x1: xTriggerPosition,
+      y: 0,
+      width: barWidth + lineGutter,
+      height: svgHeight + padding[0] + buffer,
+      opacity: '0'
+    }),
+    (0, _preact.h)('rect', {
+      rx: '10',
+      ry: '10',
+      className: 'Graph-tooltipBase',
+      x: xPosition - popupWidth / 2,
+      y: yPosition,
+      width: popupWidth,
+      height: popupHeight,
+      fill: colour
+    }),
+    (0, _preact.h)('polygon', {
+      className: 'Graph-triangle',
+      points: '\n          ' + xPosition + ',\n          ' + (yPosition + barWidth + popupHeight) + '\n          ' + (xPosition + barWidth / 2) + ',\n          ' + (yPosition + popupHeight) + '\n          \n          ' + (xPosition - barWidth / 2) + ',\n          ' + (yPosition + popupHeight) + '\n        ',
+      fill: colour
+    }),
+    (0, _preact.h)(
+      'text',
+      {
+        x: xPosition,
+        y: yPosition + popupHeight / 2 + popupFontSize / 2 - 2,
+        'font-size': popupFontSize,
+        className: 'Graph-tooltipText',
+        'font-family': 'sans-serif',
+        'text-anchor': 'middle',
+        fill: 'white'
+      },
+      (0, _trimValues2.default)(amount)
+    )
+  );
+}
+
+/***/ }),
+/* 163 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = Labels;
+
+var _preact = __webpack_require__(0);
+
+var _LabelItem = __webpack_require__(164);
+
+var _LabelItem2 = _interopRequireDefault(_LabelItem);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Labels(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      items = _ref.items,
+      styling = _ref.styling;
+
+  var titles = Object.keys(items);
+  var padding = styling.padding,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace,
+      maxValue = styling.maxValue;
+
+
+  return (0, _preact.h)(
+    'g',
+    { className: 'Graph-horisontalLabelList' },
+    titles.map(function (title, index) {
+      return (0, _preact.h)(_LabelItem2.default, _extends({
+        rank: index
+      }, { title: title, totalGroupSpace: totalGroupSpace, groupSpaceArray: groupSpaceArray, styling: styling }));
+    })
+  );
+}
+
+/***/ }),
+/* 164 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = LabelItem;
+
+var _preact = __webpack_require__(0);
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function LabelItem(_ref) {
+  var totalGroupSpace = _ref.totalGroupSpace,
+      groupSpaceArray = _ref.groupSpaceArray,
+      rank = _ref.rank,
+      title = _ref.title,
+      styling = _ref.styling;
+  var barWidth = styling.barWidth,
+      padding = styling.padding,
+      buffer = styling.buffer,
+      valueSpace = styling.valueSpace,
+      fontSize = styling.fontSize,
+      svgHeight = styling.svgHeight;
+
+
+  var groupSpace = groupSpaceArray[rank];
+
+  var generateToScale = function generateToScale(value) {
+    return (valueSpace - buffer) / totalGroupSpace * value;
+  };
+
+  var previousSpace = groupSpaceArray.reduce(function (result, val, index) {
+    if (index < rank) {
+      return result + generateToScale(val);
+    }
+
+    return result;
+  }, 0);
+
+  return (0, _preact.h)(
+    "g",
+    { className: "Graph-horisontalLabel" },
+    (0, _preact.h)(
+      "text",
+      _defineProperty({
+        className: "Graph-label",
+        y: svgHeight + padding[0] + buffer * 2,
+        x: padding[3] + previousSpace + buffer + generateToScale(groupSpace) / 2,
+        "font-size": fontSize,
+        "text-anchor": "middle",
+        "font-family": "sans-serif",
+        "font-weight": "bold",
+        fill: "#3f3f3f"
+      }, "font-size", "14"),
+      title
+    )
+  );
+}
+
+/***/ }),
+/* 165 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Download;
+
+var _preact = __webpack_require__(0);
+
+var _createSizeModifier = __webpack_require__(11);
+
+var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Download(_ref) {
+  var size = _ref.size;
+
+  return (0, _preact.h)(
+    'svg',
+    { className: 'Icon' + (0, _createSizeModifier2.default)(size), version: '1.2', baseProfile: 'tiny', xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 100 100' },
+    (0, _preact.h)('path', { d: 'M68.8 50l28.1-28.1a10.7 10.7 0 0 0 0-15l-3.7-3.7a10.7 10.7 0 0 0-15.1-.1L50 31.2 21.9 3.1a10.8 10.8 0 0 0-15.1 0L3.1 6.8a10.7 10.7 0 0 0 0 15L31.2 50 3.1 78.1a10.7 10.7 0 0 0 0 15l3.7 3.7a10.7 10.7 0 0 0 15 0l28.2-28 28.1 28.1a10.7 10.7 0 0 0 15 0l3.7-3.7a10.7 10.7 0 0 0 0-15L68.8 50zm0 0' })
+  );
+}
+
+/***/ }),
+/* 166 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Download;
+
+var _preact = __webpack_require__(0);
+
+var _createSizeModifier = __webpack_require__(11);
+
+var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Download(_ref) {
+  var size = _ref.size;
+
+  return (0, _preact.h)(
+    'svg',
+    { className: 'Icon' + (0, _createSizeModifier2.default)(size), width: '0', height: '0', xmlns: 'http://www.w3.org/2000/svg', viewBox: '157 347 100 100' },
+    (0, _preact.h)('path', { d: 'M250.5 402.4a2 2 0 0 0-1.9-1.3h-22.8v-52c0-1.2-1-2.1-2.1-2.1h-33.3a2 2 0 0 0-2.1 2v52.1h-23a2 2 0 0 0-1.4 3.6l41.6 41.7c.4.4.9.6 1.4.6.6 0 1.1-.2 1.5-.6l41.7-41.7a2 2 0 0 0 .4-2.3z' })
+  );
+}
+
+/***/ }),
+/* 167 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Facebook;
+
+var _preact = __webpack_require__(0);
+
+var _createSizeModifier = __webpack_require__(11);
+
+var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Facebook(_ref) {
+  var size = _ref.size;
+
+  return (0, _preact.h)(
+    'svg',
+    { className: 'Icon' + (0, _createSizeModifier2.default)(size), version: '1.2', baseProfile: 'tiny', xmlns: 'http://www.w3.org/2000/svg', width: '0', height: '0', viewBox: '0 0 100 100' },
+    (0, _preact.h)(
+      'title',
+      null,
+      'Facebook Link'
+    ),
+    (0, _preact.h)('path', { d: 'M24.7 56.3h13v41.5c0 1.1.9 2 2 2h17a2 2 0 0 0 2-2V56.3h15.2a2 2 0 0 0 2-2V37.9c0-.5-.2-1.1-.6-1.4a2 2 0 0 0-1.4-.6h-15v-9.6c0-4.6 1.1-7 7.1-7h8.7a2 2 0 0 0 2-2V1.9A2 2 0 0 0 75.3 0H59C46 1.2 37.8 10.5 37.8 24.5v11.3h-13a2 2 0 0 0-2 2v16.4c-.1 1.2.8 2.1 1.9 2.1z' })
+  );
+}
+
+/***/ }),
+/* 168 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Facebook;
+
+var _preact = __webpack_require__(0);
+
+var _createSizeModifier = __webpack_require__(11);
+
+var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Facebook(_ref) {
+  var size = _ref.size;
+
+  return (0, _preact.h)(
+    'svg',
+    { className: 'Icon' + (0, _createSizeModifier2.default)(size), width: '0', height: '0', version: '1.2', baseProfile: 'tiny', xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 100 100' },
+    (0, _preact.h)(
+      'title',
+      null,
+      'Search'
+    ),
+    (0, _preact.h)('path', { d: 'M97.2 85.4L75.5 63.8l-.4-.3C79.5 57 82 49.3 82 41c0-22.6-18.3-41-41-41S0 18.3 0 41c0 22.6 18.3 41 41 41 8.3 0 16-2.5 22.5-6.7l.3.4 21.6 21.6c3.3 3.3 8.5 3.3 11.8 0 3.2-3.4 3.2-8.6 0-12zM41 67.7c-14.8 0-26.8-12-26.8-26.8 0-15 12-27 26.8-27s26.8 12 26.8 27c0 14.7-12 26.7-26.8 26.7z' })
+  );
+}
+
+/***/ }),
+/* 169 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Facebook;
+
+var _preact = __webpack_require__(0);
+
+var _createSizeModifier = __webpack_require__(11);
+
+var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Facebook(_ref) {
+  var size = _ref.size;
+
+  return (0, _preact.h)(
+    'svg',
+    { className: 'Icon' + (0, _createSizeModifier2.default)(size), version: '1.2', baseProfile: 'tiny', width: '0', height: '0', xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 100 100' },
+    (0, _preact.h)(
+      'title',
+      null,
+      'Twitter Link'
+    ),
+    (0, _preact.h)('path', { d: 'M100 19a42 42 0 0 1-11.8 3.2c4.2-2.5 7.5-6.6 9-11.4a40 40 0 0 1-13.1 5 20.5 20.5 0 0 0-35 18.7c-17.1-.9-32.2-9-42.3-21.4a20.6 20.6 0 0 0 6.3 27.4c-3.4-.1-6.5-1-9.3-2.6v.3c0 9.9 7.1 18.2 16.4 20.1a19 19 0 0 1-9.3.3 20.5 20.5 0 0 0 19.2 14.2A41.2 41.2 0 0 1-.3 81.3a58.4 58.4 0 0 0 31.5 9.2 57.9 57.9 0 0 0 58.3-58.3l-.1-2.7c4.4-2.8 7.9-6.4 10.6-10.5zm0 0' })
+  );
+}
+
+/***/ }),
+/* 170 */
 /***/ (function(module, exports) {
 
 module.exports = {"As link":"link","On Facebook":"facebook","On Twitter":"twitter"}
 
 /***/ }),
-/* 185 */
+/* 171 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+(function (global, factory) {
+	( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(__webpack_require__(0)) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(0)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : global.PreactCSSTransitionGroup = factory(global.preact);
+})(undefined, function (preact) {
+	'use strict';
+
+	function getKey(vnode) {
+		return vnode.attributes && vnode.attributes.key;
+	}
+
+	function getComponentBase(component) {
+		return component.base;
+	}
+
+	function onlyChild(children) {
+		return children && children[0];
+	}
+
+	function filterNullChildren(children) {
+		return children && children.filter(function (i) {
+			return i !== null;
+		});
+	}
+
+	function find(arr, iter) {
+		for (var i = arr.length; i--;) {
+			if (iter(arr[i])) return true;
+		}
+		return false;
+	}
+
+	function inChildrenByKey(children, key) {
+		return find(children, function (c) {
+			return getKey(c) === key;
+		});
+	}
+
+	function inChildren(children, child) {
+		return inChildrenByKey(children, getKey(child));
+	}
+
+	function isShownInChildrenByKey(children, key, showProp) {
+		return find(children, function (c) {
+			return getKey(c) === key && c.props[showProp];
+		});
+	}
+
+	function isShownInChildren(children, child, showProp) {
+		return isShownInChildrenByKey(children, getKey(child), showProp);
+	}
+
+	function mergeChildMappings(prev, next) {
+		var ret = [];
+
+		var nextChildrenPending = {},
+		    pendingChildren = [];
+		prev.forEach(function (c) {
+			var key = getKey(c);
+			if (inChildrenByKey(next, key)) {
+				if (pendingChildren.length) {
+					nextChildrenPending[key] = pendingChildren;
+					pendingChildren = [];
+				}
+			} else {
+				pendingChildren.push(c);
+			}
+		});
+
+		next.forEach(function (c) {
+			var key = getKey(c);
+			if (nextChildrenPending.hasOwnProperty(key)) {
+				ret = ret.concat(nextChildrenPending[key]);
+			}
+			ret.push(c);
+		});
+
+		return ret.concat(pendingChildren);
+	}
+
+	var SPACE = ' ';
+	var RE_CLASS = /[\n\t\r]+/g;
+
+	var norm = function norm(elemClass) {
+		return (SPACE + elemClass + SPACE).replace(RE_CLASS, SPACE);
+	};
+
+	function addClass(elem, className) {
+		if (elem.classList) {
+			var _elem$classList;
+
+			(_elem$classList = elem.classList).add.apply(_elem$classList, className.split(' '));
+		} else {
+			elem.className += ' ' + className;
+		}
+	}
+
+	function removeClass(elem, needle) {
+		needle = needle.trim();
+		if (elem.classList) {
+			var _elem$classList2;
+
+			(_elem$classList2 = elem.classList).remove.apply(_elem$classList2, needle.split(' '));
+		} else {
+			var elemClass = elem.className.trim();
+			var className = norm(elemClass);
+			needle = SPACE + needle + SPACE;
+			while (className.indexOf(needle) >= 0) {
+				className = className.replace(needle, SPACE);
+			}
+			elem.className = className.trim();
+		}
+	}
+
+	var EVENT_NAME_MAP = {
+		transitionend: {
+			transition: 'transitionend',
+			WebkitTransition: 'webkitTransitionEnd',
+			MozTransition: 'mozTransitionEnd',
+			OTransition: 'oTransitionEnd',
+			msTransition: 'MSTransitionEnd'
+		},
+
+		animationend: {
+			animation: 'animationend',
+			WebkitAnimation: 'webkitAnimationEnd',
+			MozAnimation: 'mozAnimationEnd',
+			OAnimation: 'oAnimationEnd',
+			msAnimation: 'MSAnimationEnd'
+		}
+	};
+
+	var endEvents = [];
+
+	function detectEvents() {
+		var testEl = document.createElement('div'),
+		    style = testEl.style;
+
+		if (!('AnimationEvent' in window)) {
+			delete EVENT_NAME_MAP.animationend.animation;
+		}
+
+		if (!('TransitionEvent' in window)) {
+			delete EVENT_NAME_MAP.transitionend.transition;
+		}
+
+		for (var baseEventName in EVENT_NAME_MAP) {
+			var baseEvents = EVENT_NAME_MAP[baseEventName];
+			for (var styleName in baseEvents) {
+				if (styleName in style) {
+					endEvents.push(baseEvents[styleName]);
+					break;
+				}
+			}
+		}
+	}
+
+	if (typeof window !== 'undefined') {
+		detectEvents();
+	}
+
+	function addEndEventListener(node, eventListener) {
+		if (!endEvents.length) {
+			return window.setTimeout(eventListener, 0);
+		}
+		endEvents.forEach(function (endEvent) {
+			node.addEventListener(endEvent, eventListener, false);
+		});
+	}
+
+	function removeEndEventListener(node, eventListener) {
+		if (!endEvents.length) return;
+		endEvents.forEach(function (endEvent) {
+			node.removeEventListener(endEvent, eventListener, false);
+		});
+	}
+
+	var classCallCheck = function classCallCheck(instance, Constructor) {
+		if (!(instance instanceof Constructor)) {
+			throw new TypeError("Cannot call a class as a function");
+		}
+	};
+
+	var inherits = function inherits(subClass, superClass) {
+		if (typeof superClass !== "function" && superClass !== null) {
+			throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === 'undefined' ? 'undefined' : _typeof(superClass)));
+		}
+
+		subClass.prototype = Object.create(superClass && superClass.prototype, {
+			constructor: {
+				value: subClass,
+				enumerable: false,
+				writable: true,
+				configurable: true
+			}
+		});
+		if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	};
+
+	var objectWithoutProperties = function objectWithoutProperties(obj, keys) {
+		var target = {};
+
+		for (var i in obj) {
+			if (keys.indexOf(i) >= 0) continue;
+			if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+			target[i] = obj[i];
+		}
+
+		return target;
+	};
+
+	var possibleConstructorReturn = function possibleConstructorReturn(self, call) {
+		if (!self) {
+			throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+		}
+
+		return call && ((typeof call === 'undefined' ? 'undefined' : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	};
+
+	var TICK = 17;
+
+	var CSSTransitionGroupChild = function (_Component) {
+		inherits(CSSTransitionGroupChild, _Component);
+
+		function CSSTransitionGroupChild() {
+			var _temp, _this, _ret;
+
+			classCallCheck(this, CSSTransitionGroupChild);
+
+			for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+				args[_key] = arguments[_key];
+			}
+
+			return _ret = (_temp = (_this = possibleConstructorReturn(this, _Component.call.apply(_Component, [this].concat(args))), _this), _this.flushClassNameQueue = function () {
+				if (getComponentBase(_this)) {
+					addClass(getComponentBase(_this), _this.classNameQueue.join(' '));
+				}
+				_this.classNameQueue.length = 0;
+				_this.timeout = null;
+			}, _temp), possibleConstructorReturn(_this, _ret);
+		}
+
+		CSSTransitionGroupChild.prototype.transition = function transition(animationType, finishCallback, timeout) {
+			var _this2 = this;
+
+			var node = getComponentBase(this);
+
+			var className = this.props.name[animationType] || this.props.name + '-' + animationType;
+			var activeClassName = this.props.name[animationType + 'Active'] || className + '-active';
+			var timer = null;
+
+			if (this.endListener) {
+				this.endListener();
+			}
+
+			this.endListener = function (e) {
+				if (e && e.target !== node) return;
+
+				clearTimeout(timer);
+				removeClass(node, className);
+				removeClass(node, activeClassName);
+				removeEndEventListener(node, _this2.endListener);
+				_this2.endListener = null;
+
+				if (finishCallback) {
+					finishCallback();
+				}
+			};
+
+			if (timeout) {
+				timer = setTimeout(this.endListener, timeout);
+				this.transitionTimeouts.push(timer);
+			} else {
+				addEndEventListener(node, this.endListener);
+			}
+
+			addClass(node, className);
+
+			this.queueClass(activeClassName);
+		};
+
+		CSSTransitionGroupChild.prototype.queueClass = function queueClass(className) {
+			this.classNameQueue.push(className);
+
+			if (!this.timeout) {
+				this.timeout = setTimeout(this.flushClassNameQueue, TICK);
+			}
+		};
+
+		CSSTransitionGroupChild.prototype.stop = function stop() {
+			if (this.timeout) {
+				clearTimeout(this.timeout);
+				this.classNameQueue.length = 0;
+				this.timeout = null;
+			}
+			if (this.endListener) {
+				this.endListener();
+			}
+		};
+
+		CSSTransitionGroupChild.prototype.componentWillMount = function componentWillMount() {
+			this.classNameQueue = [];
+			this.transitionTimeouts = [];
+		};
+
+		CSSTransitionGroupChild.prototype.componentWillUnmount = function componentWillUnmount() {
+			if (this.timeout) {
+				clearTimeout(this.timeout);
+			}
+			this.transitionTimeouts.forEach(function (timeout) {
+				clearTimeout(timeout);
+			});
+		};
+
+		CSSTransitionGroupChild.prototype.componentWillEnter = function componentWillEnter(done) {
+			if (this.props.enter) {
+				this.transition('enter', done, this.props.enterTimeout);
+			} else {
+				done();
+			}
+		};
+
+		CSSTransitionGroupChild.prototype.componentWillLeave = function componentWillLeave(done) {
+			if (this.props.leave) {
+				this.transition('leave', done, this.props.leaveTimeout);
+			} else {
+				done();
+			}
+		};
+
+		CSSTransitionGroupChild.prototype.render = function render() {
+			return onlyChild(this.props.children);
+		};
+
+		return CSSTransitionGroupChild;
+	}(preact.Component);
+
+	var CSSTransitionGroup = function (_Component) {
+		inherits(CSSTransitionGroup, _Component);
+
+		function CSSTransitionGroup(props) {
+			classCallCheck(this, CSSTransitionGroup);
+
+			var _this = possibleConstructorReturn(this, _Component.call(this));
+
+			_this.renderChild = function (child) {
+				var _this$props = _this.props;
+				var transitionName = _this$props.transitionName;
+				var transitionEnter = _this$props.transitionEnter;
+				var transitionLeave = _this$props.transitionLeave;
+				var transitionEnterTimeout = _this$props.transitionEnterTimeout;
+				var transitionLeaveTimeout = _this$props.transitionLeaveTimeout;
+				var key = getKey(child);
+				return preact.h(CSSTransitionGroupChild, {
+					key: key,
+					ref: function ref(c) {
+						if (!(_this.refs[key] = c)) child = null;
+					},
+					name: transitionName,
+					enter: transitionEnter,
+					leave: transitionLeave,
+					enterTimeout: transitionEnterTimeout,
+					leaveTimeout: transitionLeaveTimeout }, child);
+			};
+
+			_this.refs = {};
+			_this.state = {
+				children: (props.children || []).slice()
+			};
+			return _this;
+		}
+
+		CSSTransitionGroup.prototype.shouldComponentUpdate = function shouldComponentUpdate(_, _ref) {
+			var children = _ref.children;
+
+			return children !== this.state.children;
+		};
+
+		CSSTransitionGroup.prototype.componentWillMount = function componentWillMount() {
+			this.currentlyTransitioningKeys = {};
+			this.keysToEnter = [];
+			this.keysToLeave = [];
+		};
+
+		CSSTransitionGroup.prototype.componentWillReceiveProps = function componentWillReceiveProps(_ref2) {
+			var _this2 = this;
+
+			var children = _ref2.children;
+			var exclusive = _ref2.exclusive;
+			var showProp = _ref2.showProp;
+
+			var nextChildMapping = filterNullChildren(children || []).slice();
+
+			var prevChildMapping = filterNullChildren(exclusive ? this.props.children : this.state.children);
+
+			var newChildren = mergeChildMappings(prevChildMapping, nextChildMapping);
+
+			if (showProp) {
+				newChildren = newChildren.map(function (c) {
+					if (!c.props[showProp] && isShownInChildren(prevChildMapping, c, showProp)) {
+						var _cloneElement;
+
+						c = preact.cloneElement(c, (_cloneElement = {}, _cloneElement[showProp] = true, _cloneElement));
+					}
+					return c;
+				});
+			}
+
+			if (exclusive) {
+				newChildren.forEach(function (c) {
+					return _this2.stop(getKey(c));
+				});
+			}
+
+			this.setState({ children: newChildren });
+			this.forceUpdate();
+
+			nextChildMapping.forEach(function (c) {
+				var key = c.key;
+				var hasPrev = prevChildMapping && inChildren(prevChildMapping, c);
+				if (showProp) {
+					if (hasPrev) {
+						var showInPrev = isShownInChildren(prevChildMapping, c, showProp),
+						    showInNow = c.props[showProp];
+						if (!showInPrev && showInNow && !_this2.currentlyTransitioningKeys[key]) {
+							_this2.keysToEnter.push(key);
+						}
+					}
+				} else if (!hasPrev && !_this2.currentlyTransitioningKeys[key]) {
+					_this2.keysToEnter.push(key);
+				}
+			});
+
+			prevChildMapping.forEach(function (c) {
+				var key = c.key;
+				var hasNext = nextChildMapping && inChildren(nextChildMapping, c);
+				if (showProp) {
+					if (hasNext) {
+						var showInNext = isShownInChildren(nextChildMapping, c, showProp);
+						var showInNow = c.props[showProp];
+						if (!showInNext && showInNow && !_this2.currentlyTransitioningKeys[key]) {
+							_this2.keysToLeave.push(key);
+						}
+					}
+				} else if (!hasNext && !_this2.currentlyTransitioningKeys[key]) {
+					_this2.keysToLeave.push(key);
+				}
+			});
+		};
+
+		CSSTransitionGroup.prototype.performEnter = function performEnter(key) {
+			var _this3 = this;
+
+			this.currentlyTransitioningKeys[key] = true;
+			var component = this.refs[key];
+			if (component.componentWillEnter) {
+				component.componentWillEnter(function () {
+					return _this3._handleDoneEntering(key);
+				});
+			} else {
+				this._handleDoneEntering(key);
+			}
+		};
+
+		CSSTransitionGroup.prototype._handleDoneEntering = function _handleDoneEntering(key) {
+			delete this.currentlyTransitioningKeys[key];
+			var currentChildMapping = filterNullChildren(this.props.children),
+			    showProp = this.props.showProp;
+			if (!currentChildMapping || !showProp && !inChildrenByKey(currentChildMapping, key) || showProp && !isShownInChildrenByKey(currentChildMapping, key, showProp)) {
+				this.performLeave(key);
+			} else {
+				this.setState({ children: currentChildMapping });
+			}
+		};
+
+		CSSTransitionGroup.prototype.stop = function stop(key) {
+			delete this.currentlyTransitioningKeys[key];
+			var component = this.refs[key];
+			if (component) component.stop();
+		};
+
+		CSSTransitionGroup.prototype.performLeave = function performLeave(key) {
+			var _this4 = this;
+
+			this.currentlyTransitioningKeys[key] = true;
+			var component = this.refs[key];
+			if (component && component.componentWillLeave) {
+				component.componentWillLeave(function () {
+					return _this4._handleDoneLeaving(key);
+				});
+			} else {
+				this._handleDoneLeaving(key);
+			}
+		};
+
+		CSSTransitionGroup.prototype._handleDoneLeaving = function _handleDoneLeaving(key) {
+			delete this.currentlyTransitioningKeys[key];
+			var showProp = this.props.showProp,
+			    currentChildMapping = filterNullChildren(this.props.children);
+			if (showProp && currentChildMapping && isShownInChildrenByKey(currentChildMapping, key, showProp)) {
+				this.performEnter(key);
+			} else if (!showProp && currentChildMapping && inChildrenByKey(currentChildMapping, key)) {
+				this.performEnter(key);
+			} else {
+				this.setState({ children: currentChildMapping });
+			}
+		};
+
+		CSSTransitionGroup.prototype.componentDidUpdate = function componentDidUpdate() {
+			var _this5 = this;
+
+			var keysToEnter = this.keysToEnter;
+			var keysToLeave = this.keysToLeave;
+
+			this.keysToEnter = [];
+			keysToEnter.forEach(function (k) {
+				return _this5.performEnter(k);
+			});
+			this.keysToLeave = [];
+			keysToLeave.forEach(function (k) {
+				return _this5.performLeave(k);
+			});
+		};
+
+		CSSTransitionGroup.prototype.render = function render(_ref3, _ref4) {
+			var Component = _ref3.component;
+			var transitionName = _ref3.transitionName;
+			var transitionEnter = _ref3.transitionEnter;
+			var transitionLeave = _ref3.transitionLeave;
+			var transitionEnterTimeout = _ref3.transitionEnterTimeout;
+			var transitionLeaveTimeout = _ref3.transitionLeaveTimeout;
+			var c = _ref3.children;
+			var props = objectWithoutProperties(_ref3, ['component', 'transitionName', 'transitionEnter', 'transitionLeave', 'transitionEnterTimeout', 'transitionLeaveTimeout', 'children']);
+			var children = _ref4.children;
+
+			return preact.h(Component, props, filterNullChildren(children).map(this.renderChild));
+		};
+
+		return CSSTransitionGroup;
+	}(preact.Component);
+	CSSTransitionGroup.defaultProps = {
+		component: 'span',
+		transitionEnter: true,
+		transitionLeave: true
+	};
+
+	return CSSTransitionGroup;
+});
+//# sourceMappingURL=preact-css-transition-group.js.map
+
+/***/ }),
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21393,7 +20756,7 @@ function calcShareAction(selected, anchorString, updateModal) {
 }
 
 /***/ }),
-/* 186 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21407,17 +20770,17 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _preactRenderToString = __webpack_require__(46);
+var _preactRenderToString = __webpack_require__(45);
 
 var _preactRenderToString2 = _interopRequireDefault(_preactRenderToString);
 
 var _preact = __webpack_require__(0);
 
-var _canvgBrowser = __webpack_require__(47);
+var _canvgBrowser = __webpack_require__(46);
 
 var _canvgBrowser2 = _interopRequireDefault(_canvgBrowser);
 
-var _index = __webpack_require__(187);
+var _index = __webpack_require__(174);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -21425,11 +20788,11 @@ var _index3 = __webpack_require__(9);
 
 var _index4 = _interopRequireDefault(_index3);
 
-var _calcShareAction = __webpack_require__(189);
+var _calcShareAction = __webpack_require__(176);
 
 var _calcShareAction2 = _interopRequireDefault(_calcShareAction);
 
-var _getProp = __webpack_require__(14);
+var _getProp = __webpack_require__(13);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
@@ -21570,7 +20933,8 @@ var ExpenditureChartContainer = function (_Component) {
         widthAction: this.widthAction,
         type: this.state.type,
         sourceOpen: this.state.sourceOpen,
-        changeSource: this.changeSource
+        changeSource: this.changeSource,
+        cpi: this.props.cpi
       });
     }
   }]);
@@ -21612,6 +20976,7 @@ function scripts() {
     var department = (0, _getProp2.default)('department', node);
     var location = (0, _getProp2.default)('location', node);
     var rawFiles = (0, _getProp2.default)('files', node, 'json');
+    var cpi = (0, _getProp2.default)('cpi', node);
 
     var removeNulls = function removeNulls(val) {
       return val.amount !== null;
@@ -21626,14 +20991,14 @@ function scripts() {
     var files = Object.keys(rawFiles).reduce(normaliseFiles(rawFiles), {});
     var items = { adjusted: adjusted, notAdjusted: notAdjusted };
 
-    (0, _preact.render)((0, _preact.h)(ExpenditureChartContainer, { items: items, year: year, department: department, location: location, phaseTable: phaseTable, files: files }), node);
+    (0, _preact.render)((0, _preact.h)(ExpenditureChartContainer, { items: items, year: year, department: department, location: location, phaseTable: phaseTable, files: files, cpi: cpi }), node);
   }
 }
 
 exports.default = scripts();
 
 /***/ }),
-/* 187 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21649,7 +21014,7 @@ exports.default = ExpenditureChart;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(22);
+var _index = __webpack_require__(24);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -21661,15 +21026,15 @@ var _index5 = __webpack_require__(4);
 
 var _index6 = _interopRequireDefault(_index5);
 
-var _shareSelections = __webpack_require__(188);
+var _shareSelections = __webpack_require__(175);
 
 var _shareSelections2 = _interopRequireDefault(_shareSelections);
 
-var _index7 = __webpack_require__(13);
+var _index7 = __webpack_require__(14);
 
 var _index8 = _interopRequireDefault(_index7);
 
-var _index9 = __webpack_require__(18);
+var _index9 = __webpack_require__(25);
 
 var _index10 = _interopRequireDefault(_index9);
 
@@ -21684,6 +21049,7 @@ function ExpenditureChart(props) {
       type = props.type,
       source = props.source,
       sourceOpen = props.sourceOpen,
+      cpi = props.cpi,
       open = props.open,
       selected = props.selected,
       modal = props.modal;
@@ -21727,12 +21093,17 @@ function ExpenditureChart(props) {
           (0, _preact.h)(
             'div',
             { className: 'Page-subHeading' },
-            'Expenditure changes over time'
+            'Actual and planned expenditure changes over time'
           ),
           (0, _preact.h)(
             'p',
-            null,
-            'Budgeted expenditure for a department can increase or decrease from year to year. The official budget shows the nominal value of spendiing - the real value is calculated by adjusting for inflation, since most expenditure items are subject to inflation. By stripping out the inflation (GDP or CPI inflation) it is possible to show if a departmental budget is increasing or decreasing in real terms'
+            { className: 'js-tooltips' },
+            'Budgeted and actual expenditure/allocations for a department can increase or decrease from year to year. Changes in expenditure for a department can be because of changes in the activities of the department, because of changes in priorities between departments, because of cost efficiencies or because of increases in the price of goods and services due to inflation.'
+          ),
+          (0, _preact.h)(
+            'p',
+            { className: 'js-tooltips' },
+            'The chart shows the department\u2019s actual expenditure for past years, and budgeted expenditure for the current year and the upcoming three years of the medium-term expenditure framework (MTEF). By adjusting these numbers to take inflation into account, it is possible to determine if a department\u2019s expenditure is really increasing or decreasing in real terms, as compared to the rest of the economy.'
           ),
           (0, _preact.h)(
             'div',
@@ -21744,18 +21115,18 @@ function ExpenditureChart(props) {
             ),
             (0, _preact.h)(
               'table',
-              { className: 'Expenditure-table' },
+              { className: 'ExpenditureChart-table' },
               (0, _preact.h)(
                 'tr',
                 null,
                 (0, _preact.h)(
                   'th',
-                  { className: 'Expenditure-heading' },
+                  { className: 'ExpenditureChart-heading' },
                   'Financial year'
                 ),
                 (0, _preact.h)(
                   'th',
-                  { className: 'Expenditure-heading' },
+                  { className: 'ExpenditureChart-heading' },
                   'Budget phase'
                 )
               ),
@@ -21765,12 +21136,12 @@ function ExpenditureChart(props) {
                   null,
                   (0, _preact.h)(
                     'td',
-                    { className: 'Expenditure-cell' },
+                    { className: 'ExpenditureChart-cell' },
                     val[0]
                   ),
                   (0, _preact.h)(
                     'td',
-                    { className: 'Expenditure-cell' },
+                    { className: 'ExpenditureChart-cell' },
                     val[1]
                   )
                 );
@@ -21789,7 +21160,7 @@ function ExpenditureChart(props) {
           (0, _preact.h)(
             'p',
             null,
-            'The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year.'
+            'The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year. These documents use amounts not adjusted for inflation unless stated otherwise.'
           ),
           Object.keys(files).map(function (key) {
             return (0, _preact.h)(
@@ -21797,7 +21168,12 @@ function ExpenditureChart(props) {
               null,
               (0, _preact.h)(_index4.default, { title: key, link: files[key], icon: true })
             );
-          })
+          }),
+          (0, _preact.h)(
+            'div',
+            null,
+            (0, _preact.h)(_index4.default, { title: 'Annual CPI Inflation 2018-19 (Excel)', link: cpi, icon: true })
+          )
         ),
         (0, _preact.h)(
           'div',
@@ -21842,7 +21218,7 @@ function ExpenditureChart(props) {
             { className: 'u-textAlignCenter' },
             (0, _preact.h)(
               'label',
-              { htmlFor: 'expenditure-select-adjusted', className: 'u-marginRight20' },
+              { htmlFor: 'expenditure-select-adjusted', className: 'ExpenditureChart-radio u-marginRight20' },
               (0, _preact.h)('input', {
                 type: 'radio',
                 id: 'expenditure-select-adjusted',
@@ -21861,7 +21237,7 @@ function ExpenditureChart(props) {
             ),
             (0, _preact.h)(
               'label',
-              { htmlFor: 'expenditure-select-not-adjusted' },
+              { htmlFor: 'expenditure-select-not-adjusted', className: 'ExpenditureChart-radio' },
               (0, _preact.h)('input', {
                 type: 'radio',
                 id: 'expenditure-select-not-adjusted',
@@ -21878,7 +21254,16 @@ function ExpenditureChart(props) {
                 'Not adjusted for inflation'
               )
             )
-          )
+          ),
+          source === 'adjusted' ? (0, _preact.h)(
+            'p',
+            { className: 'ExpenditureChart-inflation' },
+            (0, _preact.h)(
+              'em',
+              null,
+              'The Rand values in this chart are adjusted for CPI inflation and are the effective value in 2017 Rands. CPI is used as the deflator, with the 2017-18 financial year as the base.'
+            )
+          ) : ''
         ),
         (0, _preact.h)(
           'div',
@@ -21895,13 +21280,13 @@ function ExpenditureChart(props) {
 }
 
 /***/ }),
-/* 188 */
+/* 175 */
 /***/ (function(module, exports) {
 
 module.exports = {"As link":"link","On Facebook":"facebook","On Twitter":"twitter"}
 
 /***/ }),
-/* 189 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21952,7 +21337,7 @@ function calcShareAction(selected, anchorString, updateModal) {
 }
 
 /***/ }),
-/* 190 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21972,15 +21357,15 @@ var _decodeHtmlEntities = __webpack_require__(1);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
-var _updateQs = __webpack_require__(191);
+var _updateQs = __webpack_require__(178);
 
 var _updateQs2 = _interopRequireDefault(_updateQs);
 
-var _index = __webpack_require__(192);
+var _index = __webpack_require__(179);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _filterResults = __webpack_require__(198);
+var _filterResults = __webpack_require__(185);
 
 var _filterResults2 = _interopRequireDefault(_filterResults);
 
@@ -22113,7 +21498,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 191 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22137,7 +21522,7 @@ function updateQs(object) {
 }
 
 /***/ }),
-/* 192 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22150,11 +21535,11 @@ exports.default = DeptSearchMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(193);
+var _index = __webpack_require__(180);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(196);
+var _index3 = __webpack_require__(183);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -22239,7 +21624,7 @@ function DeptSearchMarkup(_ref) {
 }
 
 /***/ }),
-/* 193 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22256,11 +21641,11 @@ var _index = __webpack_require__(4);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _provinces = __webpack_require__(194);
+var _provinces = __webpack_require__(181);
 
 var _provinces2 = _interopRequireDefault(_provinces);
 
-var _spheres = __webpack_require__(195);
+var _spheres = __webpack_require__(182);
 
 var _spheres2 = _interopRequireDefault(_spheres);
 
@@ -22349,19 +21734,19 @@ function DeptGroup(_ref) {
 }
 
 /***/ }),
-/* 194 */
+/* 181 */
 /***/ (function(module, exports) {
 
 module.exports = {"All Provinces":"all","Eastern Cape":"eastern-cape","Free State":"free-state","Gauteng":"gauteng","KwaZulu-Natal":"kwazulu-natal","Limpopo":"limpopo","Mpumalanga":"mpumalanga","North West":"north-west","Northern Cape":"northern-cape","Western Cape":"western-cape"}
 
 /***/ }),
-/* 195 */
+/* 182 */
 /***/ (function(module, exports) {
 
 module.exports = {"All spheres of government":"all","National":"national","Provincial":"provincial"}
 
 /***/ }),
-/* 196 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22374,7 +21759,7 @@ exports.default = DeptGroup;
 
 var _preact = __webpack_require__(0);
 
-var _Map = __webpack_require__(197);
+var _Map = __webpack_require__(184);
 
 var _Map2 = _interopRequireDefault(_Map);
 
@@ -22461,7 +21846,7 @@ function DeptGroup(_ref) {
 }
 
 /***/ }),
-/* 197 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22562,7 +21947,7 @@ function Map(province) {
 }
 
 /***/ }),
-/* 198 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22576,11 +21961,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports.default = filterResults;
 
-var _filterKeywords = __webpack_require__(199);
+var _filterKeywords = __webpack_require__(186);
 
 var _filterKeywords2 = _interopRequireDefault(_filterKeywords);
 
-var _filterGroups = __webpack_require__(200);
+var _filterGroups = __webpack_require__(187);
 
 var _filterGroups2 = _interopRequireDefault(_filterGroups);
 
@@ -22621,7 +22006,7 @@ function filterResults(filtersObject, rawItems) {
 }
 
 /***/ }),
-/* 199 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22635,7 +22020,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports.default = filterKeywords;
 
-var _fuse = __webpack_require__(24);
+var _fuse = __webpack_require__(18);
 
 var _fuse2 = _interopRequireDefault(_fuse);
 
@@ -22662,7 +22047,7 @@ function filterKeywords(keywords, results) {
 }
 
 /***/ }),
-/* 200 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22688,7 +22073,7 @@ function filterAccordingToSphere(items, group, remove) {
 }
 
 /***/ }),
-/* 201 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22698,7 +22083,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(202);
+var _index = __webpack_require__(189);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -22761,7 +22146,7 @@ for (var i = 0; i < nodes.length; i++) {
 }
 
 /***/ }),
-/* 202 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22843,7 +22228,7 @@ function Participate(_ref) {
 }
 
 /***/ }),
-/* 203 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22857,7 +22242,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(204);
+var _index = __webpack_require__(191);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -22940,7 +22325,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 204 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23004,7 +22389,7 @@ function IntroSection(_ref) {
 }
 
 /***/ }),
-/* 205 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23024,7 +22409,7 @@ var _decodeHtmlEntities = __webpack_require__(1);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
-var _index = __webpack_require__(206);
+var _index = __webpack_require__(193);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -23102,7 +22487,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 206 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23161,6 +22546,643 @@ function Modal(_ref) {
     Object.keys(languageOptions).length > 1 ? toggle : null
   );
 }
+
+/***/ }),
+/* 194 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _preact = __webpack_require__(0);
+
+var _index = __webpack_require__(195);
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function scripts() {
+  var nodes = document.getElementsByClassName('js-initShare');
+  var nodesArray = [].concat(_toConsumableArray(nodes));
+
+  if (nodesArray.length > 0) {
+    nodesArray.forEach(function (node) {
+      (0, _preact.render)((0, _preact.h)(_index2.default, null), node);
+    });
+  }
+}
+
+exports.default = scripts();
+
+/***/ }),
+/* 195 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+var _ShareMarkup = __webpack_require__(196);
+
+var _ShareMarkup2 = _interopRequireDefault(_ShareMarkup);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ShareContainer = function (_Component) {
+  _inherits(ShareContainer, _Component);
+
+  function ShareContainer(props) {
+    _classCallCheck(this, ShareContainer);
+
+    var _this = _possibleConstructorReturn(this, (ShareContainer.__proto__ || Object.getPrototypeOf(ShareContainer)).call(this, props));
+
+    _this.state = {
+      selected: 'copy',
+      shareOpen: false,
+      modal: false
+    };
+
+    _this.updateShare = _this.updateShare.bind(_this);
+    _this.updateModal = _this.updateModal.bind(_this);
+    return _this;
+  }
+
+  _createClass(ShareContainer, [{
+    key: 'updateModal',
+    value: function updateModal(state) {
+      this.setState({ modal: state });
+    }
+  }, {
+    key: 'updateShare',
+    value: function updateShare(value) {
+      if (this.state.shareOpen) {
+        this.setState({ shareOpen: false });
+        this.setState({ selected: value });
+        return null;
+      }
+
+      return this.setState({ shareOpen: true });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return (0, _preact.h)(_ShareMarkup2.default, _extends({}, this.state, { updateShare: this.updateShare, updateModal: this.updateModal }));
+    }
+  }]);
+
+  return ShareContainer;
+}(_preact.Component);
+
+exports.default = ShareContainer;
+
+/***/ }),
+/* 196 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = ShareMarkup;
+
+var _preact = __webpack_require__(0);
+
+var _index = __webpack_require__(4);
+
+var _index2 = _interopRequireDefault(_index);
+
+var _Button = __webpack_require__(197);
+
+var _Button2 = _interopRequireDefault(_Button);
+
+var _index3 = __webpack_require__(25);
+
+var _index4 = _interopRequireDefault(_index3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var hardCoded = {
+  'as Link': 'copy',
+  'on Facebook': 'facebook',
+  'on Twitter': 'twitter'
+};
+
+function ShareMarkup(_ref) {
+  var selected = _ref.selected,
+      updateShare = _ref.updateShare,
+      modal = _ref.modal,
+      shareOpen = _ref.shareOpen,
+      updateModal = _ref.updateModal;
+
+  var closeModal = function closeModal() {
+    return updateModal(false);
+  };
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Share-wrap' },
+    (0, _preact.h)(
+      _index4.default,
+      {
+        title: 'Share this link:',
+        open: modal,
+        closeAction: closeModal
+      },
+      (0, _preact.h)(
+        'a',
+        { className: 'u-wordBreakBreakAll', href: window.location.href },
+        window.location.href
+      )
+    ),
+    (0, _preact.h)(
+      'div',
+      { className: 'Share-action' },
+      (0, _preact.h)(
+        'div',
+        { className: 'Share-select' },
+        (0, _preact.h)(_index2.default, {
+          name: 'share',
+          items: hardCoded,
+          selected: selected,
+          open: shareOpen,
+          changeAction: function changeAction(value) {
+            return updateShare(value);
+          }
+        })
+      ),
+      (0, _preact.h)(
+        'div',
+        { className: 'Share-button' },
+        (0, _preact.h)(_Button2.default, { selected: selected, updateModal: updateModal })
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 197 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Button;
+
+var _preact = __webpack_require__(0);
+
+var _Icon = __webpack_require__(198);
+
+var _Icon2 = _interopRequireDefault(_Icon);
+
+var _analyticsEvent = __webpack_require__(5);
+
+var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Button(_ref) {
+  var selected = _ref.selected,
+      updateModal = _ref.updateModal;
+
+  var url = encodeURIComponent(window.location.href);
+  var message = encodeURIComponent("SA Budget Data from vulekamali");
+
+  var copyText = function copyText() {
+    (0, _analyticsEvent2.default)('send', 'social', 'email', 'share', url);
+    updateModal(true);
+  };
+  var fbDirect = function fbDirect() {
+    (0, _analyticsEvent2.default)('send', 'social', 'facebook', 'share', url);
+    var win = window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, '_blank');
+    win.focus();
+  };
+  var twDirect = function twDirect() {
+    (0, _analyticsEvent2.default)('send', 'social', 'twitter', 'share', url);
+    var win = window.open('https://twitter.com/home?status=' + message + '%20' + url, '_blank');
+    win.focus();
+  };
+
+  var share = function share() {
+    if (selected === 'copy') {
+      return copyText();
+    } else if (selected === 'facebook') {
+      return fbDirect();
+    } else if (selected === 'twitter') {
+      return twDirect();
+    }
+
+    return null;
+  };
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Button has-icon', onClick: share },
+    (0, _preact.h)(_Icon2.default, null)
+  );
+}
+
+/***/ }),
+/* 198 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Icon;
+
+var _preact = __webpack_require__(0);
+
+function Icon() {
+  return (0, _preact.h)(
+    "svg",
+    { version: "1.2", width: "14", height: "14", baseProfile: "tiny", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100" },
+    (0, _preact.h)("path", { d: "M93.3 25C88.8 17 82.8 11 75 6.6 67.5 2.2 59 0 50 0S32.6 2.2 25 6.7C17 11.2 11 17.2 6.6 25 2.2 32.5 0 41 0 50s2.2 17.4 6.7 25C11.2 83 17.2 89 25 93.4c7.6 4.5 16 6.7 25 6.7s17.4-2.2 25-6.7C83 88.8 89 82.8 93.4 75c4.5-7.6 6.7-16 6.7-25s-2.2-17.4-6.7-25zM82.5 53l-6 5.8L53 82.4c-.8.8-1.8 1.2-3 1.2-1 0-2-.4-2.8-1.2l-6-6c-.7-.7-1-1.7-1-2.8 0-1 .3-2 1-3l12.4-12.2H20.8c-1 0-2-.4-3-1.2-.7-.8-1-1.8-1-3V46c0-1 .3-2 1-3 1-.7 2-1 3-1h32.7L41.2 29.3c-.8-.8-1.2-1.8-1.2-3 0-1 .4-2 1.2-2.8l6-6c.7-.7 1.7-1 2.8-1 1.2 0 2 .3 3 1l23.5 23.7 6 6c.7.7 1 1.7 1 2.8.2 1.2-.2 2-1 3zm0 0" })
+  );
+}
+
+/***/ }),
+/* 199 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _camelcase = __webpack_require__(200);
+
+var _camelcase2 = _interopRequireDefault(_camelcase);
+
+var _glossary = __webpack_require__(42);
+
+var _glossary2 = _interopRequireDefault(_glossary);
+
+var _createComponent = __webpack_require__(201);
+
+var _createComponent2 = _interopRequireDefault(_createComponent);
+
+var _escapeRegex = __webpack_require__(203);
+
+var _escapeRegex2 = _interopRequireDefault(_escapeRegex);
+
+var _walkTheDom = __webpack_require__(204);
+
+var _walkTheDom2 = _interopRequireDefault(_walkTheDom);
+
+var _findReactInstances = __webpack_require__(205);
+
+var _findReactInstances2 = _interopRequireDefault(_findReactInstances);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function scripts() {
+  (0, _findReactInstances2.default)();
+
+  var convertToCamelCase = function convertToCamelCase() {
+    return Object.keys(_glossary2.default).reduce(function (result, key) {
+      return _extends({}, result, _defineProperty({}, (0, _camelcase2.default)(key), _glossary2.default[key]));
+    }, {});
+  };
+
+  var normalisedGlossaryObject = convertToCamelCase(_glossary2.default);
+
+  var regExpTermsWithOrOperators = Object.keys(_glossary2.default).sort(function (a, b) {
+    return b.length - a.length;
+  }).join('|');
+
+  var parentNodes = document.getElementsByClassName('js-tooltips');
+
+  var regExpression = new RegExp('(?:^|\\b)' + (0, _escapeRegex2.default)(regExpTermsWithOrOperators) + '(?!\\w)', 'gi');
+
+  var attachEventListeners = function attachEventListeners(tooltipNode) {
+    var openTrigger = tooltipNode.getElementsByClassName('js-trigger')[0];
+    var closeTrigger = tooltipNode.getElementsByClassName('js-closeTrigger')[0];
+    var alertNode = tooltipNode.getElementsByClassName('js-box')[0];
+    var modalCover = tooltipNode.getElementsByClassName('js-modalCover')[0];
+
+    var openTooltip = function openTooltip() {
+      return alertNode.classList.add('is-open');
+    };
+    var closeTooltip = function closeTooltip() {
+      return alertNode.classList.remove('is-open');
+    };
+
+    openTrigger.addEventListener('click', openTooltip);
+    closeTrigger.addEventListener('click', closeTooltip);
+    modalCover.addEventListener('click', closeTooltip);
+  };
+
+  var replaceText = function replaceText(node, year, source) {
+    if (node.nodeType === 3) {
+      var text = node.data.trim();
+      if (text.length > 0) {
+        var currentText = node.nodeValue;
+        var span = document.createElement('span');
+
+        var newText = currentText.replace(regExpression, function (match) {
+          return (0, _createComponent2.default)(year, match, source[(0, _camelcase2.default)(match)], '<span class="Tooltip-underline">' + match + '</span>');
+        });
+
+        span.innerHTML = newText;
+        node.parentNode.replaceChild(span, node);
+      }
+    }
+  };
+
+  for (var i = 0; i < parentNodes.length; i++) {
+    var parentNode = parentNodes[i];
+    var year = parentNode.getAttribute('data-year');
+
+    (0, _walkTheDom2.default)(parentNode, replaceText, year, normalisedGlossaryObject);
+
+    var newNodes = document.getElementsByClassName('Tooltip js-hook');
+
+    for (var ii = 0; ii < newNodes.length; ii++) {
+      attachEventListeners(newNodes[ii]);
+    }
+  }
+}
+
+exports.default = scripts();
+
+/***/ }),
+/* 200 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function preserveCamelCase(str) {
+	var isLastCharLower = false;
+	var isLastCharUpper = false;
+	var isLastLastCharUpper = false;
+
+	for (var i = 0; i < str.length; i++) {
+		var c = str[i];
+
+		if (isLastCharLower && /[a-zA-Z]/.test(c) && c.toUpperCase() === c) {
+			str = str.substr(0, i) + '-' + str.substr(i);
+			isLastCharLower = false;
+			isLastLastCharUpper = isLastCharUpper;
+			isLastCharUpper = true;
+			i++;
+		} else if (isLastCharUpper && isLastLastCharUpper && /[a-zA-Z]/.test(c) && c.toLowerCase() === c) {
+			str = str.substr(0, i - 1) + '-' + str.substr(i - 1);
+			isLastLastCharUpper = isLastCharUpper;
+			isLastCharUpper = false;
+			isLastCharLower = true;
+		} else {
+			isLastCharLower = c.toLowerCase() === c;
+			isLastLastCharUpper = isLastCharUpper;
+			isLastCharUpper = c.toUpperCase() === c;
+		}
+	}
+
+	return str;
+}
+
+module.exports = function (str) {
+	if (arguments.length > 1) {
+		str = Array.from(arguments).map(function (x) {
+			return x.trim();
+		}).filter(function (x) {
+			return x.length;
+		}).join('-');
+	} else {
+		str = str.trim();
+	}
+
+	if (str.length === 0) {
+		return '';
+	}
+
+	if (str.length === 1) {
+		return str.toLowerCase();
+	}
+
+	if (/^[a-z0-9]+$/.test(str)) {
+		return str;
+	}
+
+	var hasUpperCase = str !== str.toLowerCase();
+
+	if (hasUpperCase) {
+		str = preserveCamelCase(str);
+	}
+
+	return str.replace(/^[_.\- ]+/, '').toLowerCase().replace(/[_.\- ]+(\w|$)/g, function (m, p1) {
+		return p1.toUpperCase();
+	});
+};
+
+/***/ }),
+/* 201 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = createComponent;
+
+var _closeIcon = __webpack_require__(202);
+
+var _closeIcon2 = _interopRequireDefault(_closeIcon);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function createComponent(year, title, description, content) {
+  return '<span class="Tooltip js-hook">\n    <div class="Tooltip-trigger js-trigger">\n      ' + content + '\n    </div>\n    <div class="Tooltip-boxWrap js-box">\n      <div class="Tooltip-modalCover js-modalCover"></div>\n      <div class="Tooltip-box">\n        <div class="Tooltip-content">\n          <div class="Tooltip-contentWrap">\n            <div class="Tooltip-shadowBox">\n              <div class="Tooltip-infoBox">\n                <div class="Tooltip-title">' + title + '</div>\n                <div class="Tooltip-text">' + description + '</div>\n              </div>\n              <div class="Tooltip-links">\n                <span class="Tooltip-linkWrap is-close js-closeTrigger">\n                  <span class="Tooltip-closeIcon">\n                    ' + _closeIcon2.default + '\n                  </span>\n                  <span class="Tooltip-link">\n                    Close\n                  </span>\n                </span>\n\n                <a class="Tooltip-linkWrap" href="/glossary">\n                  <div class="Tooltip-link">View glossary</div>\n                </a>\n              </div>\n              <div class="Tooltip-triangle"></div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </span>';
+}
+
+/***/ }),
+/* 202 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = '<svg version="1.2" width="10" height="10" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M58.3 50.4L96.7 12c2.4-2.4 2.4-6.2 0-8.6C94.3 1 90.5 1 88 3.4L49.8 41.8 11.3 3.4C9 1 5 1 2.7 3.4.3 5.8.3 9.6 2.7 12L41 50.4 2.8 88.8C.3 91.2.3 95 2.7 97.4 4 98.6 5.5 99.2 7 99.2c1.6 0 3-.6 4.3-1.8L49.7 59 88 97.4c1.3 1.2 3 1.8 4.4 1.8 1.6 0 3-.6 4.3-1.8 2.4-2.4 2.4-6.2 0-8.6L58.3 50.4zm0 0"></path></svg>';
+
+/***/ }),
+/* 203 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = escapeRegExp;
+function escapeRegExp(text) {
+  return text.replace(/[\/\-\[\\\]\{\}\(\)\*\+\?\.\,\^\$\#\s]/gi, '\\$&');
+}
+
+/***/ }),
+/* 204 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = walkTheDom;
+function walkTheDom(node, func, source, regExpression) {
+  var children = node.childNodes;
+
+  for (var i = 0; i < children.length; i++) {
+    var childNode = children[i];
+
+    if (childNode.tagName !== 'A') {
+      walkTheDom(childNode, func, source, regExpression);
+    }
+  }
+
+  func(node, source, regExpression);
+}
+
+/***/ }),
+/* 205 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = findReactInstances;
+
+var _preact = __webpack_require__(0);
+
+var _index = __webpack_require__(44);
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function findReactInstances() {
+  var patternId = document.getElementById('pattern-id-4368');
+  if (patternId) {
+    var component = (0, _preact.h)(
+      _index2.default,
+      {
+        title: 'Content Unavailable',
+        description: 'There is no exact match for this department in',
+        year: '2017-18',
+        openAction: function openAction() {
+          return console.log('open');
+        },
+        closeAction: function closeAction() {
+          return console.log('close');
+        },
+        down: true,
+        actions: [{
+          url: '#',
+          title: 'Test 1'
+        }, {
+          url: '#',
+          title: 'Test 2'
+        }, {
+          url: '#',
+          title: 'Test 3'
+        }]
+      },
+      (0, _preact.h)(
+        'div',
+        null,
+        'Test'
+      )
+    );
+
+    (0, _preact.render)(component, patternId);
+  }
+}
+
+/***/ }),
+/* 206 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _preact = __webpack_require__(0);
+
+var _index = __webpack_require__(24);
+
+var _index2 = _interopRequireDefault(_index);
+
+var _getProp = __webpack_require__(13);
+
+var _getProp2 = _interopRequireDefault(_getProp);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function scripts() {
+  var nodesList = document.getElementsByClassName('js-initResponsiveChart');
+
+  for (var i = 0; i < nodesList.length; i++) {
+    var node = nodesList[i];
+    var items = (0, _getProp2.default)('items', node, 'json');
+    var type = (0, _getProp2.default)('type', node);
+    var rawDownload = (0, _getProp2.default)('download', node, 'json');
+
+    var downloadHasProps = !!(rawDownload && rawDownload.heading && rawDownload.subHeading && rawDownload.type);
+    var download = downloadHasProps ? rawDownload : null;
+
+    (0, _preact.render)((0, _preact.h)(_index2.default, { items: items, download: download, type: type }), node);
+  }
+}
+
+exports.default = scripts();
 
 /***/ }),
 /* 207 */
@@ -23241,7 +23263,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(43);
+var _index = __webpack_require__(48);
 
 var _index2 = _interopRequireDefault(_index);
 
