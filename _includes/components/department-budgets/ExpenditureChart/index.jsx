@@ -21,6 +21,7 @@ export default function ExpenditureChart(props) {
     open,
     selected,
     modal,
+    location,
   } = props;
 
   const {
@@ -33,6 +34,9 @@ export default function ExpenditureChart(props) {
     changeSource
   } = props;
 
+  const estimateText = location === 'National' ?
+    'Estimates of National Expenditure (ENE)' :
+    'Estimates of Provincial Revenue and Expenditure (EPRE)';
 
   return (
     <div className="Section is-bevel" id="line-chart">
@@ -79,7 +83,7 @@ export default function ExpenditureChart(props) {
           <div className="Section-card is-invisible">
             <div className="u-fontWeightBold">Sources</div>
             <p>
-              The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year. These documents use amounts not adjusted for inflation unless stated otherwise.
+              The {estimateText} sets out the detailed spending plans of each government department for the coming year. These documents use amounts not adjusted for inflation unless stated otherwise.
             </p>
             {
               Object.keys(files).map((key) => {

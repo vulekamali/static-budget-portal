@@ -122,6 +122,7 @@ class ExpenditureChartContainer extends Component {
         closeModal={this.closeModal}
         modal={this.state.modal}
         source={this.state.source}
+        location={this.props.location}
 
         downloadAction={this.downloadAction}
         canvasAction={this.canvasAction}

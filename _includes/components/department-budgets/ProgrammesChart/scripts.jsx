@@ -161,7 +161,7 @@ function scripts() {
     );
 
     render(
-      <ProgrammesChartContainer {...{ items, year, files, dept, deptLocation }} />,
+      <ProgrammesChartContainer {...{ items, year, files, location }} />,
       node,
     );
   }

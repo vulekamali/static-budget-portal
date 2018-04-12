@@ -18,7 +18,7 @@ export default function ProgrammesChart(props) {
     selected,
     modal,
 
-    national
+    location,
   } = props;
 
   const {
@@ -56,7 +56,7 @@ export default function ProgrammesChart(props) {
     });
   };
 
-  const estimateText = national ?
+  const estimateText = location === 'National' ?
     'Estimates of National Expenditure (ENE)' :
     'Estimates of Provincial Revenue and Expenditure (EPRE)';
 
