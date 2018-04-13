@@ -20,6 +20,10 @@
     background: darken(#7bb344, 15%);
   }
 
+  &.has-icon {
+    padding: 13px;
+  }
+
   &.is-inline {
     width: auto;
     display: inline-block;

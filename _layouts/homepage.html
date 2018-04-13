@@ -71,9 +71,11 @@ layout: page-shell
           </div>
         </div>
 
-        <div class="Section Card--dark u-marginTop40">
-          <h2 class"Section-title">National Budget {{ page.financial_year | split: "-" | first }} Resources from Treasury</h2>
-          <p>Below are a collection of links to resources that are available on the South African National Treasury website.</p>
+        <div class="Section is-bevel u-marginTop40 u-marginBottom20">
+          <div class="Section-card is-invisible u-paddingBottom10">
+            <h2 class"Section-title">National Budget {{ page.financial_year | split: "-" | first }} Resources from Treasury</h2>
+            <p class="u-marginBottom0">Below are a collection of links to resources that are available on the South African National Treasury website.</p>
+          </div>
           {%
             include components/homepage/Links/index.html
             resources_link=resources_data.resources_link.url
@@ -92,7 +94,7 @@ layout: page-shell
           {% assign finalLink = "http://www.treasury.gov.za/documents/national%20budget/" | append: shortYear | append: "/default.aspx" %}
           {% assign finalTitle = "Explore all National Budget " | append: shortYear | append: " Resources from National Treasury" %}
 
-          <div class="u-marginTop10">
+          <div class="Section-card is-invisible u-paddingBottom15 u-paddingTop15">
             {%
               include components/universal/Download/index.html
               link=finalLink

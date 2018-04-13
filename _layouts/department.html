@@ -55,14 +55,14 @@ layout: page-shell
     </div>
 
     <div class="u-marginTop20">
-      <div class="Grid is-twoCol">
-        <div class="Grid-item is-third u-marginBottom20">
+      <div class="Grid has-widescreenTrigger">
+        <div class="Grid-item is-1of3 u-marginBottom20">
           {%
             include components/department-budgets/ContributedData/index.html
             datasets=page_data.contributed_datasets
           %}
         </div>
-        <div class="Grid-item is-twoThirds">
+        <div class="Grid-item is-2of3">
           <div class="Section is-bevel">
             <div class="Section-card is-invisible u-paddingBottom15">
               <div class="Section-title">Timelines for this department and ways to participate</div>

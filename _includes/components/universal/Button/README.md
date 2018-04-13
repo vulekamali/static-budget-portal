@@ -62,12 +62,19 @@ support:
 <iframe width="100%" height="100" src="code-inline.html" frameborder="0" allowfullscreen></iframe>
 [View Code](code-inline.html)
 
-### Icon
+### Icon and text
 <iframe width="100%" height="100" src="icon.html" frameborder="0" allowfullscreen></iframe>
 [View Example](icon.html)
 
 <iframe width="100%" height="100" src="code-icon.html" frameborder="0" allowfullscreen></iframe>
 [View Code](code-icon.html)
+
+### Only an icon
+<iframe width="100%" height="100" src="icononly.html" frameborder="0" allowfullscreen></iframe>
+[View Example](icononly.html)
+
+<iframe width="100%" height="100" src="code-icononly.html" frameborder="0" allowfullscreen></iframe>
+[View Code](code-icononly.html)
 
 ### Invisible
 <iframe width="100%" height="100" src="invisible.html" frameborder="0" allowfullscreen></iframe>

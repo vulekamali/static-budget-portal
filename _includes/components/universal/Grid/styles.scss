@@ -8,7 +8,7 @@ $breakpoint-list: (
 
 .Grid {
   @include clearfix;
-    
+
   @each $name, $pixels in $breakpoint-list {
     @media screen and (min-width: #{$pixels}px) {
       &.has-#{$name}Trigger {
@@ -16,13 +16,13 @@ $breakpoint-list: (
         margin-right: -15px;
       }
     }
-  } 
+  }
 }
 
 .Grid-item {
   float: left;
   width: 100%;
-  
+
   @each $name, $pixels in $breakpoint-list {
     @media screen and (min-width: #{$pixels}px) {
       .Grid.has-#{$name}Trigger & {
