@@ -5,15 +5,15 @@
 
   <title>{{ include.title }}</title>
 
-  <meta name="description" content="South Africa's National and Provincial budget data from National Treasury in partnership with IMALI YETHU.">
+  <meta name="description" content="{{ include.description }}">
 
   {% comment %} Twitter Card data {% endcomment %}
   <meta name="twitter:title" content="{{ include.title }}">
-  <meta name="twitter:description" content="South Africa's National and Provincial budget data from National Treasury in partnership with IMALI YETHU.">
+  <meta name="twitter:description" content="{{ include.description }}">
 
   {% comment %} Facebook's Open Graph data {% endcomment %}
   <meta property="og:title" content="{{ include.title }}" />
-  <meta property="og:description" content="South Africa's National and Provincial budget data from National Treasury in partnership with IMALI YETHU." />
+  <meta property="og:description" content="{{ include.description }}" />
   <meta property="og:image" content="{{ site.url }}/assets/images/vulekamali-logo-sq-social.jpg" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:type" content="website" />
