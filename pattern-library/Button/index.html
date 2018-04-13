@@ -9,7 +9,7 @@
     </head>
     
     <body style="padding: 20px">
-         <h1>Button<span style="display: inline-block; font-size: 14px; background: green; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">state: ✔ stable</span><span style="display: inline-block; font-size: 14px; background: #CCCCCC; color: black; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">API: HTML</span><span style="display: inline-block; font-size: 14px; background: grey; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">support: IE 10+</span></h1>
+         <h1>Button<span style="display: inline-block; font-size: 14px; background: green; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">state: ✔ stable</span><span style="display: inline-block; font-size: 14px; background: #CCCCCC; color: black; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">API: HTML</span><span style="display: inline-block; font-size: 14px; background: grey; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">support: untested</span></h1>
         <h2 id="table-of-contents">Table of Contents</h2>
 
         <ul>
@@ -40,6 +40,30 @@
 <a href="code-basic.html">View Code</a>
         </p>
         
+<h3 id="page-transition-animation">Page Transition Animation</h3>
+
+        <p>
+            <iframe width="100%" height="100" src="loader.html" frameborder="0" allowfullscreen></iframe>
+<a href="loader.html">View Example</a>
+        </p>
+        <p>
+            <iframe width="100%" height="100" src="code-loader.html" frameborder="0"
+            allowfullscreen></iframe>
+<a href="code-loader.html">View Code</a>
+        </p>
+        
+<h3 id="small">Small</h3>
+
+        <p>
+            <iframe width="100%" height="100" src="small.html" frameborder="0" allowfullscreen></iframe>
+<a href="small.html">View Example</a>
+        </p>
+        <p>
+            <iframe width="100%" height="100" src="code-small.html" frameborder="0"
+            allowfullscreen></iframe>
+<a href="code-small.html">View Code</a>
+        </p>
+        
 <h3 id="multiple-lines">Multiple Lines</h3>
 
         <p>
@@ -65,13 +89,38 @@
 <a href="code-inline.html">View Code</a>
         </p>
         
+<h3 id="icon">Icon</h3>
+
+        <p>
+            <iframe width="100%" height="100" src="icon.html" frameborder="0" allowfullscreen></iframe>
+<a href="icon.html">View Example</a>
+        </p>
+        <p>
+            <iframe width="100%" height="100" src="code-icon.html" frameborder="0"
+            allowfullscreen></iframe>
+<a href="code-icon.html">View Code</a>
+        </p>
+        
+<h3 id="invisible">Invisible</h3>
+
+        <p>
+            <iframe width="100%" height="100" src="invisible.html" frameborder="0"
+            allowfullscreen></iframe>
+<a href="invisible.html">View Example</a>
+        </p>
+        <p>
+            <iframe width="100%" height="100" src="code-invisible.html" frameborder="0"
+            allowfullscreen></iframe>
+<a href="code-invisible.html">View Code</a>
+        </p>
+        
 <h2 id="api">API</h2>
 
         
 <h3 id="html-via-css-classes">HTML via CSS classes</h3>
 
         
-<h4 id="-section"><code>.Section</code></h4>
+<h4 id="-button"><code>.Button</code></h4>
 
         <table>
             <thead>
@@ -82,81 +131,24 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><code>.is-bevel</code>
+                    <td><code>.is-secondary</code>
                     </td>
-                    <td>Creates the grey bevel effect that forms the base on which additional
-                        cards rest. However can also be used without cards if you want to add supplementary
-                        information with little visual weight</td>
+                    <td>...</td>
                 </tr>
-                <tr>
-                    <td><code>.is-green</code>
-                    </td>
-                    <td>Should only be used in conjunction with <code>.is-bevel</code>, turns the
-                        bevel green. Is used for primary call to action cards</td>
-                </tr>
-                <tr>
-                    <td><code>.is-invisible</code>
-                    </td>
-                    <td>Hides all styling associated with the component, but preserves padding.
-                        This is usefull to ensure that content lines up with cards around it, even
-                        when you want the content to appear &#39;outside&#39; the cards structure</td>
-                </tr>
-                <tr>
-                    <td><code>.is-link</code>
-                    </td>
-                    <td>Displays pointer cursor and darkens the component by 10% when mouse if
-                        hovered over it, this provides the visual feedback that the card is a clickable
-                        link. It is usually a good idea to include some underline text inside the
-                        component to further indicate this. Automatically darkens all children
-                        nested inside section as well.</td>
-                </tr>
-            </tbody>
-        </table>
-        
-<h4 id="-section-card"><code>.Section-card</code></h4>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Modifier</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><code>.is-dark</code>
-                    </td>
-                    <td>Changes the background to dark grey and the text color to white. This
-                        is an alternative way of indicating a call of action. This is usually used
-                        as a secondary call to action alongside the main green bordered <code>Section</code> call
-                        to action.</td>
-                </tr>
-                <tr>
-                    <td><code>.is-invisible</code>
-                    </td>
-                    <td>Hides all styling associated with the component, but preserves padding.
-                        This is useful when you want the title to be inside the bevel or you want
-                        to add supplimentary content inside the bevel after the cards</td>
-                </tr>
-            </tbody>
-        </table>
-        
-<h4 id="-section-title"><code>.Section-title</code></h4>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Modifier</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
                 <tr>
                     <td><code>.is-small</code>
                     </td>
-                    <td>Changes the text size from the default <code>16px</code> to <code>14px</code>,
-                        this is usefully when you want to have nested titles in the content underneath
-                        the primary title</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td><code>.is-inline</code>
+                    </td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td><code>.is-invisible</code>
+                    </td>
+                    <td>...</td>
                 </tr>
             </tbody>
         </table>

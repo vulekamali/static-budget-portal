@@ -1,61 +1,74 @@
-# Button
+---
+title: Icon
+category: Universal Components
+assets: examples
+state:
+  text: ✔ stable
+  color: white
+  background: green
+API:
+  text: HTML / Preact / Jekyll
+  color: black
+  background: '#CCCCCC'
+support:
+  text: untested
+  color: white
+  background: grey
+---
+
+## Table of Contents
+- [Overview](#overview)
+- [Examples](#examples)
+- [API](#api)
 
 ## Overview
 
-### Notes
+A lowel-level component that is used to create Icons.
 
-- You should never set the fill or stroke colour of the component manually, it should be inherited (throught the CSS cascade from its parent DOM node)
-- This component can be used anywhere given that there is enough space for it.
-- Sizes are labeled according to pixel size (instead of for example 'large') in order to keep the naming scaleable should new sizes be introduced.
-- Icons are always exact squares, this makes it easier to resize them (since IE required that you specify both height and width)
+- Usually used inside other components.
+- Icons are always contained in a square (equal height and width) SVG. This makes resizing easier.
+- Never set the fill or stroke colour in the component itself, it should inherit fill and stroke colours of it's parent.
 
-### Description
+## Examples
 
-Component should be used to communicate a concept iconographically. Can be used inside buttons as well. 
+### Basic
+<iframe width="100%" height="315" src="basic.html" frameborder="0" allowfullscreen></iframe>
+[View Example](basic.html)
 
-### Examples
+<iframe width="100%" height="315" src="code-basic.html" frameborder="0" allowfullscreen></iframe>
+[View Code](code-basic.html)
 
-- [Download Icon](download.html)
-- [Facebook Icon](facebook.html)
-- [Twitter Icon](twitter.html)
-- [Search Icon](search.html)
-- [Small Sizing](small.html)
+### Small
 
-## Instructions
+<iframe width="100%" height="315" src="small.html" frameborder="0" allowfullscreen></iframe>
+[View Example](basic.html)
 
-### Using in Plain HTML
+<iframe width="100%" height="315" src="code-small.html" frameborder="0" allowfullscreen></iframe>
+[View Code](code-basic.html)
 
-If you want to use any of the preset icons as plain HTML you can copy and paste the markup from the examples above. In addition you change the size with the 'is-' modifier (make sure that the class corresponds to a React prop for 'size', for example for a small version](small.html) you need the 'is-small' class.
+### Large
 
-```
-  <svg class="Icon is-small" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="0" height="0" viewBox="0 0 100 100">
-  ... rest of component ...
-```
+<iframe width="100%" height="315" src="large.html" frameborder="0" allowfullscreen></iframe>
+[View Example](large.html)
 
-### Using in React
+<iframe width="100%" height="315" src="code-large.html" frameborder="0" allowfullscreen></iframe>
+[View Code](code-large.html)
 
-You can use the `<Icon />` component and pass one of the following props:
+## API
 
-| type |
-|---|
-| `download` |
-| `facebook` |
-| `search` |
-| `twitter` |
+### HTML via CSS classes
 
-| size |
-| --- |
-| `medium` |
-| `small` |
+#### `.Icon`
+| Modifier | Description |
+|---|---|
+| `.is-small` | Changes the width and height of the icon from the default 18px's to 16px. |
+| `.is-large` | Changes the width and height of the icon from the default 18px's to 24px. |
 
-```
-<Icon type="twitter" size="small" />
-```
+### Preact Component
+| Prop | Description |
+|---|---|
+| `size` | String that changes the width and height of the icon. Only accepts `small` and `large`. |
+| `type` | String that determines the icon that will be rendered. Only accepts  `download`, `facebook`, `search`, `twitter`, `close`, `play`, `pin`, `date`, `hamburger` or `home`. |
 
-### Using in Liquid Templating
-
-You can use the react props as Liquid variables that you pass into the `{% include %}` tag:
-
-```
-{% include components/universal/Icon type='twitter' size='small' %}
-```
+### Jekyll via an include
+Use exact same API as Preact, by passing props as variables inside an include. For example: `{% include component/Icon/index.html type="facebook" %}`.

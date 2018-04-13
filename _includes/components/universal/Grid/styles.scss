@@ -1,20 +1,45 @@
+$breakpoint-list: (
+  (mobile, 0),
+  (tablet, 500),
+  (standard, 750),
+  (widescreen, 1050)
+);
+
+
 .Grid {
   @include clearfix;
+    
+  @each $name, $pixels in $breakpoint-list {
+    @media screen and (min-width: #{$pixels}px) {
+      &.has-#{$name}Trigger {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+    }
+  } 
 }
 
 .Grid-item {
-  @media screen and ($standard-breakpoint) {
-    float: left;
-
-    &.is-half {
-      width: 50%;
-
-      &:nth-of-type(2n) {
-        padding-left: 15px;
+  float: left;
+  width: 100%;
+  
+  @each $name, $pixels in $breakpoint-list {
+    @media screen and (min-width: #{$pixels}px) {
+      .Grid.has-#{$name}Trigger & {
+        margin: 0 15px;
+        width: calc(100% - 30px);
       }
 
-      &:nth-of-type(2n + 1) {
-        padding-right: 15px;
+      .Grid.has-#{$name}Trigger &.is-1of3 {
+        width: calc((100% / 3) - 30px);
+      }
+
+      .Grid.has-#{$name}Trigger &.is-2of3 {
+        width: calc((100% / 3 * 2) - 30px);
+      }
+
+      .Grid.has-#{$name}Trigger &.is-1of2 {
+        width: calc(50% - 30px);
       }
     }
   }

@@ -704,18 +704,27 @@ li {
 
 .Button {
   width: 100%;
-  display: block;
   border: 0;
   border-radius: 50px;
   background-color: #7bb344;
   font-size: 14px;
   font-weight: bold;
   color: white;
-  padding: 8px 16px 11px 13px;
+  padding: 10px 15px;
   cursor: pointer;
   text-align: center;
   fill: white;
-  text-decoration: none; }
+  text-decoration: none;
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .Button:hover {
     background: #557c2f; }
   .Button.is-inline {
@@ -733,10 +742,7 @@ li {
       background-color: silver; }
   .Button.is-small {
     font-size: 13px;
-    padding: 4px 16px 7px 15px; }
-  .Button.has-icon {
-    line-height: 0;
-    padding: 13; }
+    padding: 6px 16px; }
   .Button.is-invisible {
     fill: #3f3f3f;
     color: #3f3f3f;
@@ -750,20 +756,20 @@ li {
     .Button.is-secondary:hover {
       background: #d9d9d9; }
 
-.Card {
-  background-color: white;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  padding: 20px 40px; }
-  .Card--dark {
-    background-color: #e6e6e6;
-    border: 1px solid #d2d2d2; }
-
-.Card-title {
-  font-size: 18px;
-  font-weight: bold;
-  font-weight: 900;
-  margin-bottom: 16px; }
+.Button-loader {
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 4px solid white;
+  width: 16px;
+  height: 16px;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
 
 .ChartDownload-title {
   display: table-cell;
@@ -798,32 +804,25 @@ li {
 
 .Icon {
   width: 18px;
-  height: 18px; }
+  height: 18px;
+  display: block; }
   .Icon.is-small {
     width: 12px;
     height: 12px; }
-
-.Card {
-  background-color: white;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  padding: 20px 40px; }
-  .Card--dark {
-    background-color: #e6e6e6;
-    border: 1px solid #d2d2d2; }
-
-.Card-title {
-  font-size: 18px;
-  font-weight: bold;
-  font-weight: 900;
-  margin-bottom: 16px; }
+  .Icon.is-large {
+    width: 24px;
+    height: 24px; }
 
 .Icon {
   width: 18px;
-  height: 18px; }
+  height: 18px;
+  display: block; }
   .Icon.is-small {
     width: 12px;
     height: 12px; }
+  .Icon.is-large {
+    width: 24px;
+    height: 24px; }
 
 .Input {
   border-radius: 3px;
@@ -835,6 +834,9 @@ li {
   width: 100%;
   line-height: 1;
   font-family: Lato; }
+
+.js-initModal {
+  display: none; }
 
 .Modal {
   z-index: 10000; }
@@ -980,7 +982,7 @@ li {
     clear: both;
     content: "";
     display: block; }
-  .Page-contentInner--full {
+  .Page-contentInner.is-full {
     max-width: 1800px; }
   @media (min-width: 500px) {
     .Page-contentInner {
@@ -1381,15 +1383,69 @@ li {
   content: "";
   display: block; }
 
+@media screen and (min-width: 0px) {
+  .Grid.has-mobileTrigger {
+    margin-left: -15px;
+    margin-right: -15px; } }
+
+@media screen and (min-width: 500px) {
+  .Grid.has-tabletTrigger {
+    margin-left: -15px;
+    margin-right: -15px; } }
+
+@media screen and (min-width: 750px) {
+  .Grid.has-standardTrigger {
+    margin-left: -15px;
+    margin-right: -15px; } }
+
 @media screen and (min-width: 1050px) {
-  .Grid-item {
-    float: left; }
-    .Grid-item.is-half {
-      width: 50%; }
-      .Grid-item.is-half:nth-of-type(2n) {
-        padding-left: 15px; }
-      .Grid-item.is-half:nth-of-type(2n + 1) {
-        padding-right: 15px; } }
+  .Grid.has-widescreenTrigger {
+    margin-left: -15px;
+    margin-right: -15px; } }
+
+.Grid-item {
+  float: left;
+  width: 100%; }
+  @media screen and (min-width: 0px) {
+    .Grid.has-mobileTrigger .Grid-item {
+      margin: 0 15px;
+      width: calc(100% - 30px); }
+    .Grid.has-mobileTrigger .Grid-item.is-1of3 {
+      width: calc((100% / 3) - 30px); }
+    .Grid.has-mobileTrigger .Grid-item.is-2of3 {
+      width: calc((100% / 3 * 2) - 30px); }
+    .Grid.has-mobileTrigger .Grid-item.is-1of2 {
+      width: calc(50% - 30px); } }
+  @media screen and (min-width: 500px) {
+    .Grid.has-tabletTrigger .Grid-item {
+      margin: 0 15px;
+      width: calc(100% - 30px); }
+    .Grid.has-tabletTrigger .Grid-item.is-1of3 {
+      width: calc((100% / 3) - 30px); }
+    .Grid.has-tabletTrigger .Grid-item.is-2of3 {
+      width: calc((100% / 3 * 2) - 30px); }
+    .Grid.has-tabletTrigger .Grid-item.is-1of2 {
+      width: calc(50% - 30px); } }
+  @media screen and (min-width: 750px) {
+    .Grid.has-standardTrigger .Grid-item {
+      margin: 0 15px;
+      width: calc(100% - 30px); }
+    .Grid.has-standardTrigger .Grid-item.is-1of3 {
+      width: calc((100% / 3) - 30px); }
+    .Grid.has-standardTrigger .Grid-item.is-2of3 {
+      width: calc((100% / 3 * 2) - 30px); }
+    .Grid.has-standardTrigger .Grid-item.is-1of2 {
+      width: calc(50% - 30px); } }
+  @media screen and (min-width: 1050px) {
+    .Grid.has-widescreenTrigger .Grid-item {
+      margin: 0 15px;
+      width: calc(100% - 30px); }
+    .Grid.has-widescreenTrigger .Grid-item.is-1of3 {
+      width: calc((100% / 3) - 30px); }
+    .Grid.has-widescreenTrigger .Grid-item.is-2of3 {
+      width: calc((100% / 3 * 2) - 30px); }
+    .Grid.has-widescreenTrigger .Grid-item.is-1of2 {
+      width: calc(50% - 30px); } }
 
 .ColumnChart-svg {
   overflow: hidden; }
@@ -4115,12 +4171,9 @@ li {
 
 .Videos-closeIcon {
   fill: white;
-  width: 15px;
-  height: 15px;
   position: relative;
-  top: 10px;
-  left: 10px;
-  line-height: 0; }
+  top: 8px;
+  left: 8px; }
 
 .Videos-description {
   margin-top: 9px;

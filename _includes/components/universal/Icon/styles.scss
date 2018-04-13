@@ -1,9 +1,15 @@
 .Icon {
   width: 18px;
   height: 18px;
+  display: block;
 
   &.is-small {
     width: 12px;
     height: 12px;
+  }
+
+  &.is-large {
+    width: 24px;
+    height: 24px;
   }
 }

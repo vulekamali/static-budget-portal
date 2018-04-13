@@ -71,8 +71,8 @@ layout: page-shell
           </div>
         </div>
 
-        <div class="Card Card--dark u-marginTop40">
-          <h2 class"Card-title">National Budget {{ page.financial_year | split: "-" | first }} Resources from Treasury</h2>
+        <div class="Section Card--dark u-marginTop40">
+          <h2 class"Section-title">National Budget {{ page.financial_year | split: "-" | first }} Resources from Treasury</h2>
           <p>Below are a collection of links to resources that are available on the South African National Treasury website.</p>
           {%
             include components/homepage/Links/index.html
@@ -109,7 +109,7 @@ layout: page-shell
           <div class="Section-title u-marginBottom20">Sign up for our newsletter</div>
           <form action="https://openup.us17.list-manage.com/subscribe/post?u=1769390be13958db72c0af6ed&amp;id=308211cb20" method="post" target="_blank">
             <input class="Input" type="email" value="" name="EMAIL" required="" placeholder="Enter email address" id="mce-EMAIL"/>
-            <button class="Button is-secondary u-marginTop10" type="submit">Subscribe</button>
+            <button class="Button is-secondary js-pageLoad u-marginTop10" type="submit">Subscribe</button>
           </form>
         </div>
       </div>
@@ -118,7 +118,7 @@ layout: page-shell
         <div class="Section-card">
           <div class="Section-title u-marginBottom20">Find budget data related to one of these topics</div>
             {% for link in site.data.recommended_topics %}
-              <a href="/{{ page.financial_year }}/search-result?search={{ link | uri_escape }}" class="Button is-secondary u-marginTop10">{{ link }}</a>
+              <a href="/{{ page.financial_year }}/search-result?search={{ link | uri_escape }}" class="Button is-secondary js-pageLoad u-marginTop10">{{ link }}</a>
             {% endfor %}
         </div>
       </div>

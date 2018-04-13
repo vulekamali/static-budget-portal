@@ -1,0 +1,136 @@
+<!doctype>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../assets/base/styles.css">
+    </head>
+    
+    <body style="padding: 20px">
+         <h1>Icon<span style="display: inline-block; font-size: 14px; background: green; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">state: ✔ stable</span><span style="display: inline-block; font-size: 14px; background: #CCCCCC; color: black; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">API: HTML / Preact / Jekyll</span><span style="display: inline-block; font-size: 14px; background: grey; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">support: untested</span></h1>
+        <h2 id="table-of-contents">Table of Contents</h2>
+
+        <ul>
+            <li><a href="#overview">Overview</a>
+            </li>
+            <li><a href="#examples">Examples</a>
+            </li>
+            <li><a href="#api">API</a>
+            </li>
+        </ul>
+        
+<h2 id="overview">Overview</h2>
+
+        <p>A lowel-level component that is used to create Icons.</p>
+        <ul>
+            <li>Usually used inside other components.</li>
+            <li>Icons are always contained in a square (equal height and width) SVG. This
+                makes resizing easier.</li>
+            <li>Never set the fill or stroke colour in the component itself, it should
+                inherit fill and stroke colours of it&#39;s parent.</li>
+        </ul>
+        
+<h2 id="examples">Examples</h2>
+
+        
+<h3 id="basic">Basic</h3>
+
+        <p>
+            <iframe width="100%" height="315" src="basic.html" frameborder="0" allowfullscreen></iframe>
+<a href="basic.html">View Example</a>
+        </p>
+        <p>
+            <iframe width="100%" height="315" src="code-basic.html" frameborder="0"
+            allowfullscreen></iframe>
+<a href="code-basic.html">View Code</a>
+        </p>
+        
+<h3 id="small">Small</h3>
+
+        <p>
+            <iframe width="100%" height="315" src="small.html" frameborder="0" allowfullscreen></iframe>
+<a href="basic.html">View Example</a>
+        </p>
+        <p>
+            <iframe width="100%" height="315" src="code-small.html" frameborder="0"
+            allowfullscreen></iframe>
+<a href="code-basic.html">View Code</a>
+        </p>
+        
+<h3 id="large">Large</h3>
+
+        <p>
+            <iframe width="100%" height="315" src="large.html" frameborder="0" allowfullscreen></iframe>
+<a href="large.html">View Example</a>
+        </p>
+        <p>
+            <iframe width="100%" height="315" src="code-large.html" frameborder="0"
+            allowfullscreen></iframe>
+<a href="code-large.html">View Code</a>
+        </p>
+        
+<h2 id="api">API</h2>
+
+        
+<h3 id="html-via-css-classes">HTML via CSS classes</h3>
+
+        
+<h4 id="-icon"><code>.Icon</code></h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Modifier</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>.is-small</code>
+                    </td>
+                    <td>Changes the width and height of the icon from the default 18px&#39;s to
+                        16px.</td>
+                </tr>
+                <tr>
+                    <td><code>.is-large</code>
+                    </td>
+                    <td>Changes the width and height of the icon from the default 18px&#39;s to
+                        24px.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+<h3 id="preact-component">Preact Component</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Prop</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>size</code>
+                    </td>
+                    <td>String that changes the width and height of the icon. Only accepts <code>small</code> and <code>large</code>.</td>
+                </tr>
+                <tr>
+                    <td><code>type</code>
+                    </td>
+                    <td>String that determines the icon that will be rendered. Only accepts <code>download</code>, <code>facebook</code>, <code>search</code>, <code>twitter</code>, <code>close</code>, <code>play</code>, <code>pin</code>, <code>date</code>, <code>hamburger</code> or <code>home</code>.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+<h3 id="jekyll-via-an-include">Jekyll via an include</h3>
+
+        <p>Use exact same API as Preact, by passing props as variables inside an
+            include. For example: <code>{% include component/Icon/index.html type=&quot;facebook&quot; %}</code>.</p>
+        <script
+        src=""></script>
+    </body>
+
+</html>
