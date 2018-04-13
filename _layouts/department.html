@@ -39,10 +39,25 @@ layout: page-shell
     </div>
 
     <div class="u-marginTop20">
-      {%
-        include components/department-budgets/ContributedData/index.html
-        datasets=page_data.contributed_datasets
-      %}
+      <div class="Grid is-twoCol">
+        <div class="Grid-item is-third u-marginBottom20">
+          {%
+            include components/department-budgets/ContributedData/index.html
+            datasets=page_data.contributed_datasets
+          %}
+        </div>
+        <div class="Grid-item is-twoThirds">
+          <div class="Section is-bevel">
+            <div class="Section-card is-invisible u-paddingBottom15">
+              <div class="Section-title">Timelines for this department and ways to participate</div>
+              <p>National Treasury, departments and commitees are busy with different things depending on the time of year:</p>
+            </div>
+            <div class="Section-card">
+              <div class="js-initParticipate"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
