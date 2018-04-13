@@ -1,71 +1,77 @@
 import { h, Component } from 'preact';
+import Markup from './partials/Markup.jsx';
 import DebounceFunction from './../../../utilities/js/helpers/DebounceFunction.js';
-import BarChart from './../BarChart/index.jsx';
-import ColumnChart from './../../department-budgets/ColumnChart/index.jsx';
 
 
 export default class ResponsiveChart extends Component {
   constructor(props) {
     super(props);
 
+    const {
+      minWidth = 250, 
+      breakpoint = 600,
+    } = this.props;
+
     this.state = {
-      viewport: window.innerWidth,
+      width: minWidth,
       mobile: true,
     };
 
-    const func = () => {
-      if (this.state.mobile && window.innerWidth >= 600) {
+    this.updateWidth = () => {
+      if (this.state.mobile && window.innerWidth >= breakpoint) {
         this.setState({ mobile: false });
-      } else if (!this.state.mobile && window.innerWidth < 600) {
+      } else if (!this.state.mobile && window.innerWidth < breakpoint) {
         this.setState({ mobile: true });
       }
 
-      if (window.innerWidth < parseInt(this.props.max, 10)) {
-        return this.setState({ viewport: window.innerWidth });
+      if (this.node && this.node.offsetWidth !== this.state.width) {
+        if (this.node.offsetWidth <= minWidth && this.state.width !== minWidth) {
+          return this.setState({ width: minWidth });
+        }
+
+        return this.setState({ width: this.node.offsetWidth });
       }
 
-      return this.setState({ viewport: parseInt(this.props.max, 10) });
+      return null;
     };
 
-    func();
-    const viewportDebounce = new DebounceFunction(100);
-    const updateViewport = () => viewportDebounce.update(func);
+    const viewportDebounce = new DebounceFunction(300);
+    const updateViewport = () => viewportDebounce.update(this.updateWidth);
 
     window.addEventListener(
       'resize',
       updateViewport,
     );
+
+    this.node = null;
+    this.parentAction = this.parentAction.bind(this);
+  }
+
+  componentDidUpdate() {
+    if (this.props.widthAction) {
+      return this.props.widthAction(this.state.width);
+    }
+
+    return null;
+  }
+
+
+  parentAction(node) {
+    this.node = node;
+    this.updateWidth();
   }
 
   render() {
-    const width = this.state.viewport - parseInt(this.props.offset, 10);
-
-    const determineChartType = () => {
-      if (this.props.columns && width >= parseInt(this.props.columns, 10)) {
-        return (
-          <ColumnChart
-            items={this.props.values}
-            hover={!this.state.mobile}
-            guides={!this.state.mobile}
-            {...{ width }}
-          />
-        );
-      }
-
-      return (
-        <BarChart
-          items={this.props.values}
-          hover={!this.state.mobile}
-          guides={!this.state.mobile}
-          {...{ width }}
-        />
-      );
-    };
+    const { type, items } = this.props;
+    const { mobile, width } = this.state;
 
     return (
-      <div className="ResponsiveChart">
-        {determineChartType()}
-      </div>
+      <Markup
+        parentAction={this.parentAction}
+        guides={!mobile}
+        hover={!mobile}
+        {...{ type, items, width }}
+      />
     );
   }
 }

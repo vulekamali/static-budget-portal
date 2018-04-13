@@ -1,4 +1,50 @@
 contributed_datasets: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 2147648000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2133940000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2175360000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2268235000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2365855000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2525460000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2694159000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 2518144384
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2379143232
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2281687236
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2268235000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2242694847
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2273685924
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2298226965
+    financial_year: 2020-21
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true

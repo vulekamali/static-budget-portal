@@ -2,10 +2,9 @@ import renderToString from 'preact-render-to-string';
 import canvg from 'canvg-browser';
 import { h, render, Component } from 'preact';
 import BarChart from './../../universal/BarChart/index.jsx';
-import DebounceFunction from './../../../utilities/js/helpers/DebounceFunction.js';
 import ProgrammesChart from './index.jsx';
-import decodeHtmlEntities from './../../../utilities/js/helpers/decodeHtmlEntities.js';
 import calcShareAction from './partials/calcShareAction.js';
+import getProp from './../../../utilities/js/helpers/getProp.js';
 
 
 class ProgrammesChartContainer extends Component {
@@ -13,8 +12,6 @@ class ProgrammesChartContainer extends Component {
     super(props);
 
     this.state = {
-      width: 200,
-      mobile: true,
       selected: 'link',
       open: false,
       modal: false,
@@ -27,35 +24,6 @@ class ProgrammesChartContainer extends Component {
       false,
     );
 
-    this.updateWidth = () => {
-      if (this.state.mobile && window.innerWidth >= 600) {
-        this.setState({ mobile: false });
-      } else if (!this.state.mobile && window.innerWidth < 600) {
-        this.setState({ mobile: true });
-      }
-
-      if (this.node && this.node.offsetWidth !== this.state.width) {
-        if (this.node.offsetWidth <= 200 && this.state.width !== 200) {
-          return this.setState({ width: 200 });
-        }
-
-        return this.setState({ width: this.node.offsetWidth });
-      }
-
-      return null;
-    };
-
-    const viewportDebounce = new DebounceFunction(300);
-    const updateViewport = () => viewportDebounce.update(this.updateWidth);
-
-    window.addEventListener(
-      'resize',
-      updateViewport,
-    );
-
-    this.node = null;
-    this.canvas = null;
-    this.parentAction = this.parentAction.bind(this);
     this.changeAction = this.changeAction.bind(this);
     this.shareAction = this.shareAction.bind(this);
     this.closeModal = this.closeModal.bind(this);
@@ -77,20 +45,14 @@ class ProgrammesChartContainer extends Component {
   }
 
 
-  parentAction(node) {
-    this.node = node;
-    this.updateWidth();
-  }
-
-
   downloadAction() {
     canvg(this.canvas, renderToString(
       <BarChart
         scale={1.5}
-        downloadable={{
-          heading: this.props.dept,
-          subHeading: `${this.props.deptLocation} Department Budget for ${this.props.year}`,
-          type: 'Programme budgets',
+        download={{
+          heading: this.props.department,
+          subHeading: `${this.props.location} Department Budget for ${this.props.year}`,
+          type: 'Programme budgets chart',
         }}
         items={this.props.items}
         guides
@@ -158,18 +120,14 @@ class ProgrammesChartContainer extends Component {
 function scripts() {
   const nodes = document.getElementsByClassName('js-initProgrammesChart');
 
-  const getJsonAttribute = (name, node) => {
-    return JSON.parse(decodeHtmlEntities(node.getAttribute(name)));
-  };
-
   for (let i = 0; i < nodes.length; i++) {
     const node = nodes[i];
 
-    const rawValues = getJsonAttribute('data-values', node).data;
-    const rawFiles = getJsonAttribute('data-files', node);
-    const year = node.getAttribute('data-year', node);
-    const dept = node.getAttribute('data-dept', node);
-    const deptLocation = node.getAttribute('data-dept-location', node);
+    const rawValues = getProp('values', node, 'json').data;
+    const rawFiles = getProp('files', node, 'json');
+    const year = getProp('year', node);
+    const department = getProp('dept', node);
+    const location = getProp('dept-location', node);
 
 
     const items = rawValues.reduce(
@@ -203,7 +161,7 @@ function scripts() {
     );
 
     render(
-      <ProgrammesChartContainer {...{ items, year, files, dept, deptLocation }} />,
+      <ProgrammesChartContainer {...{ items, year, files, location, department }} />,
       node,
     );
   }

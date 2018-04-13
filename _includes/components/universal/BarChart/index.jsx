@@ -20,53 +20,55 @@ export default function BarChart(props) {
     hover,
     guides,
     scale = 1,
-    downloadable,
+    download,
   } = props;
 
   const { parentAction } = props;
 
-  if (width > 200) {
-    let styling = {
-      fontSize: 14,
-      popupFontSize: 14,
-      maxValue: calcMaxValue(items),
-      popupWidth: 90,
-      popUpOffset: 6,
-      buffer: 20,
-      padding: [0, 110, 60, 2],
-      valueSpace: width - (112),
-      lineGutter: 23,
-      popupHeight: 30,
-      popupCentre: 5,
-      barWidth: 16,
-      groupMargin: 60,
-      charWrap: width / 10,
-      charLineHeight: 16,
-      titleSpace: 0,
-      labelBreakpoints: Math.floor(width / 150),
-      showGuides: true,
+  let content = null;
+
+  let styling = {
+    fontSize: 14,
+    popupFontSize: 14,
+    maxValue: calcMaxValue(items),
+    popupWidth: 90,
+    popUpOffset: 6,
+    buffer: 20,
+    padding: [0, 110, 60, 2],
+    valueSpace: width - (112),
+    lineGutter: 23,
+    popupHeight: 30,
+    popupCentre: 5,
+    barWidth: 16,
+    groupMargin: 60,
+    charWrap: width / 10,
+    charLineHeight: 16,
+    titleSpace: 0,
+    labelBreakpoints: Math.floor(width / 150),
+    showGuides: true,
+  };
+
+  if (hover) {
+    styling = {
+      ...styling,
+      charLineHeight: 14,
+      lineGutter: 8,
+      barWidth: 12,
+      groupMargin: 40,
     };
+  }
 
-    if (hover) {
-      styling = {
-        ...styling,
-        charLineHeight: 14,
-        lineGutter: 8,
-        barWidth: 12,
-        groupMargin: 40,
-      };
-    }
+  if (download) {
+    const titleArray = breakIntoWrap(download.heading, 33);
 
-    if (downloadable) {
-      const titleArray = breakIntoWrap(downloadable.heading, 33);
+    styling = {
+      ...styling,
+      padding: [83 + (30 * titleArray.length), 140, 137, 30],
+      valueSpace: width - (140 + 30),
+    };
+  }
 
-      styling = {
-        ...styling,
-        padding: [83 + (30 * titleArray.length), 140, 137, 30],
-        valueSpace: width - (140 + 30),
-      };
-    }
-
+  if (width > 200) {
     const { valueSpace, padding, showGuides } = styling;
     const groupSpaceArray = buildGroupSpaceArray(items, styling);
     const totalGroupSpace = groupSpaceArray.reduce((result, val) => result + val, 0);
@@ -83,25 +85,25 @@ export default function BarChart(props) {
       />
     );
 
-    const content = (
+    content = (
       <svg
         version="1.1"
         className={`BarChart-svg ${hover ? ' is-hoverable' : ''}`}
         xmlns="http://www.w3.org/2000/svg"
         viewBox={`0 0 ${newWidth} ${height}`}
-        width={newWidth * scale}
-        height={height * scale}
-        style={{ maxWidth: newWidth }}
+        width={newWidth * (scale || 1)}
+        height={height * (scale || 1)}
+        style={{ maxWidth: newWidth * (scale || 1) }}
       >
 
-        {downloadable ? background : null}
+        {download ? background : null}
 
-        { downloadable ?
+        { download ?
           <Heading
             left={padding[3]}
-            heading={downloadable.heading}
-            subHeading={downloadable.subHeading}
-            type={downloadable.type}
+            heading={download.heading}
+            subHeading={download.subHeading}
+            type={download.type}
           /> :
           null
         }
@@ -112,7 +114,7 @@ export default function BarChart(props) {
         <LineGroups {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
         <Tooltips {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
 
-        { downloadable ?
+        { download ?
           <g>
             <Logo top={((padding[0] + totalGroupSpace) / 2) + 17} left={padding[3]} />
             <Attribution top={padding[0] + totalGroupSpace + 90} left={padding[3] + valueSpace} />
@@ -121,27 +123,18 @@ export default function BarChart(props) {
         }
       </svg>
     );
-
-    if (!downloadable) {
-      return (
-        <div
-          className="BarChart"
-          ref={node => parentAction && parentAction(node)}
-        >
-          {content}
-        </div>
-      );
-    }
-
-    return content;
   }
 
-  if (!downloadable) {
+  if (!download) {
     return (
       <div
         className="BarChart"
         ref={node => parentAction && parentAction(node)}
-      />
+      >
+        {content}
+      </div>
     );
   }
+
+  return content;
 }

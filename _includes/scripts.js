@@ -9,11 +9,6 @@ import './utilities/js/modules/createComponentInterfaces.js';
 import './utilities/js/modules/loadGoogleAnalytics.js';
 import './utilities/js/modules/polyfillOldFeatures.js';
 
-import './components/universal/BarChart/scripts.jsx';
-import './components/universal/ResponsiveChart/scripts.jsx';
-import './components/universal/Share/scripts.jsx';
-import './components/universal/Tooltip/scripts.js';
-
 import './components/search-results/SearchResult/scripts.jsx';
 
 import './components/learning-centre/Glossary/scripts.jsx';
@@ -30,9 +25,12 @@ import './components/header-and-footer/NavBar/scripts.js';
 
 import './components/department-budgets/ProgrammesChart/scripts.jsx';
 import './components/department-budgets/ExpenditureChart/scripts.jsx';
-import './components/department-budgets/ColumnChart/scripts.jsx';
 import './components/department-budgets/DeptSearch/scripts.jsx';
 import './components/department-budgets/Participate/scripts.jsx';
 import './components/department-budgets/IntroSection/scripts.jsx';
 
 import './components/about/Video/scripts.jsx';
+
+import './components/universal/Share/scripts.jsx';
+import './components/universal/Tooltip/scripts.js';
+import './components/universal/ResponsiveChart/scripts.jsx';
