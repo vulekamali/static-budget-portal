@@ -1,6 +1,7 @@
 ---
 title: ResponsiveChart
 category: Universal Components
+assets: examples
 state:
   text: ✖ unstable
   color: white

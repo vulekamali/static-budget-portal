@@ -772,11 +772,11 @@ function createHtml(path, content, type, labels = {}) {
     let title = '';
 
     if (labels) {
-      const labelsKeys = labels ? Object.keys(labels).filter(label => label !== 'title') : [];
+      const labelsKeys = labels ? Object.keys(labels).filter(label => label !== 'title' && label !== 'category' && label !== 'assets') : [];
       if (labelsKeys.length > 0) {
         labelsCode = labelsKeys.map((key) => {
           const val = labels[key];
-          return `<span style="font-size:  14px; background: ${val.background}; color: ${val.color}; border-radius: 50px; padding: 5px 15px; position:  relative; bottom: 6px; margin-left: 10px;">${key}: ${val.text}</span>`;
+          return `<span style="display: inline-block; font-size: 14px; background: ${val.background}; color: ${val.color}; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">${key}: ${val.text}</span>`;
         }).join('');
       }
 
@@ -876,15 +876,31 @@ function getAllFileType(folder, extension) {
 }
 
 function createCustomObject(rawPaths) {
+  const getAssets = (result, path) => {
+    const fm = frontMatter(readFileSync(path, 'utf-8'));
+    if (fm.attributes) {
+      return {
+        ...result,
+        [path]: {
+          path: fm.attributes.assets,
+        },
+      };
+    }
+  };
+
+  const assetUrls = rawPaths.reduce(getAssets, {});
+
   return rawPaths.reduce(
     (results, path) => {
       const parentPath = getParentPath(path);
-      const examplesNames = getAllFileType(`${parentPath}/examples`, 'html');
+      const examplesNames = assetUrls[path].path ?
+        getAllFileType(`${parentPath}/${assetUrls[path].path}`, 'html') :
+        [];
       const examples = examplesNames.reduce(
         (result, key) => {
           return {
             ...result,
-            [key]: `${parentPath}//examples/${key}`,
+            [key]: `${parentPath}/examples/${key}`,
           };
         },
         {},
@@ -951,7 +967,7 @@ function createRootIndex(data) {
   const buildLabel = (title) => {
     let labelsCode = '';
 
-    const labelsKeys = data[title].content.attributes ? Object.keys(data[title].content.attributes).filter(key => key !== 'title' && key !== 'category') : [];
+    const labelsKeys = data[title].content.attributes ? Object.keys(data[title].content.attributes).filter(key => key !== 'title' && key !== 'category' && key !== 'assets') : [];
 
     if (labelsKeys.length > 0) {
       labelsCode = labelsKeys.map((key) => {

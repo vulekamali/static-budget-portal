@@ -1,6 +1,7 @@
 ---
 title: Section
 category: Universal Components
+assets: examples
 state:
   text: ✔ stable
   color: white
@@ -10,7 +11,7 @@ API:
   color: black
   background: '#CCCCCC'
 support:
-  text: untested
+  text: IE 10+
   color: white
   background: grey
 ---
@@ -49,11 +50,11 @@ _NOTE: The `Section` component aims to encapsulate itself from the it's parent c
 [View Source](invisible.html)
 <iframe style="resize: horizontal;" width="100%" height="315" src="invisible.html" frameborder="0" allowfullscreen></iframe>
 
-## Modifiers
+## API's
 
-### CSS Classes
+### HTML via CSS classes
 
-#### .Section
+#### `.Section`
 | Modifier | Description |
 |---|---|
 | `.is-bevel` | Creates the grey bevel effect that forms the base on which additional cards rest. However can also be used without cards if you want to add supplementary information with little visual weight |
@@ -61,13 +62,13 @@ _NOTE: The `Section` component aims to encapsulate itself from the it's parent c
 | `.is-invisible` | Hides all styling associated with the component, but preserves padding. This is usefull to ensure that content lines up with cards around it, even when you want the content to appear 'outside' the cards structure |
 | `.is-link` | Displays pointer cursor and darkens the component by 10% when mouse if hovered over it, this provides the visual feedback that the card is a clickable link. It is usually a good idea to include some underline text inside the component to further indicate this. Automatically darkens all children nested inside section as well.
 
-#### .Section-card
+#### `.Section-card`
 | Modifier | Description |
 |---|---|
 | `.is-dark` | Changes the background to dark grey and the text color to white. This is an alternative way of indicating a call of action. This is usually used as a secondary call to action alongside the main green bordered `Section` call to action. |
 | `.is-invisible` | Hides all styling associated with the component, but preserves padding. This is useful when you want the title to be inside the bevel or you want to add supplimentary content inside the bevel after the cards |
 
-#### .Section-title
+#### `.Section-title`
 | Modifier | Description |
 |---|---|
 | `.is-small` | Changes the text size from the default `16px` to `14px`, this is usefully when you want to have nested titles in the content underneath the primary title |
