@@ -1,7 +1,7 @@
 
 import closeIcon from './closeIcon.js';
 
-export default function createComponent(year, title, description, content) {
+export default function createComponent(title, description, content) {
   return `<span class="Tooltip js-hook">
     <div class="Tooltip-trigger js-trigger">
       ${content}

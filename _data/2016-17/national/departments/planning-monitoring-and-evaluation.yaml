@@ -1,4 +1,7 @@
 contributed_datasets: null
+description: 'National department: Planning, Monitoring and Evaluation budget data
+  for the 2016-17 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +19,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 827662000.0
     financial_year: 2016-17
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 907761000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 994255000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 845103458
     financial_year: 2012-13
@@ -38,13 +41,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 868116459
     financial_year: 2016-17
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 907761000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 942496714
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -98,7 +101,7 @@ slug: planning-monitoring-and-evaluation
 sphere:
   name: National
   slug: national
-title: Planning, Monitoring and Evaluation - vulekamali
+title: Planning, Monitoring and Evaluation budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 08 - Planning, Monitoring and Evaluation:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

@@ -1,4 +1,7 @@
 contributed_datasets: null
+description: 'National department: Office of the Chief Justice and Judicial Administration
+  budget data for the 2016-17 financial year from National Treasury in partnership
+  with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +19,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 1785047000.0
     financial_year: 2016-17
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 1975067000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2082942000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 1758654084
     financial_year: 2012-13
@@ -38,13 +41,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 1872296519
     financial_year: 2016-17
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 1975067000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1974509549
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -100,7 +103,7 @@ slug: office-of-the-chief-justice-and-judicial-administration
 sphere:
   name: National
   slug: national
-title: Office of the Chief Justice and Judicial Administration - vulekamali
+title: Office of the Chief Justice and Judicial Administration budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 22 - Office of the Chief Justice and Judicial Administration:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

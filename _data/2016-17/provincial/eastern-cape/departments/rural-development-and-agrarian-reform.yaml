@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'Eastern Cape department: Rural Development and Agrarian Reform budget
+  data for the 2016-17 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 1617094000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1731203000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1852768000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1982681000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 2209319000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 2157373000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2266651000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 2119234582
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2144056948
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2172393863
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2210503614
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 2317306084
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 2157373000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2148655145
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -111,7 +114,7 @@ slug: rural-development-and-agrarian-reform
 sphere:
   name: Provincial
   slug: provincial
-title: Rural Development and Agrarian Reform - vulekamali
+title: Rural Development and Agrarian Reform budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 08 : Rural Development and Agrarian Reform':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

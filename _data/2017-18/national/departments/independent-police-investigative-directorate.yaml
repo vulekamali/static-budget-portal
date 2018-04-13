@@ -1,4 +1,7 @@
 contributed_datasets: null
+description: 'National department: Independent Police Investigative Directorate budget
+  data for the 2017-18 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +19,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 255482000.0
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 266958000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 285824000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 239200892
     financial_year: 2013-14
@@ -38,13 +41,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 255482000
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 253060872
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 257328964
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -106,7 +109,7 @@ slug: independent-police-investigative-directorate
 sphere:
   name: National
   slug: national
-title: Independent Police Investigative Directorate - vulekamali
+title: Independent Police Investigative Directorate budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 20 - Independent Police Investigative Directorate:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

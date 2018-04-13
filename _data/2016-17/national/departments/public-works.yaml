@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Public Works budget data for the 2016-17 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 6528765000.0
     financial_year: 2016-17
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 7221159000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 7661805000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 9440890258
     financial_year: 2012-13
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 6847877948
     financial_year: 2016-17
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 7221159000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 7262951700
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -108,7 +110,7 @@ slug: public-works
 sphere:
   name: National
   slug: national
-title: Public Works - vulekamali
+title: Public Works budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 11 - Public Works:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

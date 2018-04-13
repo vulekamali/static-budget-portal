@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Human Settlements budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 32355716000.0
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 33687905000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 35786164000.0
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 34422897542
     financial_year: 2014-15
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 30671363021
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 30329411443
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 30527050223
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -113,7 +115,7 @@ slug: human-settlements
 sphere:
   name: National
   slug: national
-title: Human Settlements - vulekamali
+title: Human Settlements budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 38 - Human Settlements:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

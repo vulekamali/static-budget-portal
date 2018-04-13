@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'KwaZulu-Natal department: Agriculture and Rural Development budget data
+  for the 2016-17 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 2109591000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2005528000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2003044000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2292480000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 2170644000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 2224422000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2353838000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 2764661919
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2483802445
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2348594369
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2555900483
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 2276740728
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 2224422000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2231303420
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -94,7 +97,7 @@ slug: agriculture-and-rural-development
 sphere:
   name: Provincial
   slug: provincial
-title: Agriculture and Rural Development - vulekamali
+title: Agriculture and Rural Development budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 03 : Agriculture and Rural Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

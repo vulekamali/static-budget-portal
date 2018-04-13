@@ -64,7 +64,7 @@ class ExpenditureChartContainer extends Component {
         download={{
           heading: this.props.department,
           subHeading: `${this.props.location} Department Budget for ${this.props.year}`,
-          type: `Expenditure changes over time (${shown})`,
+          type: `Expenditure changes over time chart (${shown})`,
         }}
         items={this.props.items[this.state.source]}
         guides

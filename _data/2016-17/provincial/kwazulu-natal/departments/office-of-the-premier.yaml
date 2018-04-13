@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'KwaZulu-Natal department: Office of the Premier budget data for the
+  2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 697795000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 721074000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 722239000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 737794000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 658644000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 697500000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 742904000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 914474542
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 893034335
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 846834342
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 822571207
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 690837198
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 697500000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 704230383
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -106,7 +108,7 @@ slug: office-of-the-premier
 sphere:
   name: Provincial
   slug: provincial
-title: Office of the Premier - vulekamali
+title: Office of the Premier budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 01 : Office of the Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

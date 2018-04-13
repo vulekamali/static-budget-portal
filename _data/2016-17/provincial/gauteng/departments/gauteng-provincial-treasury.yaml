@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Gauteng department: Gauteng Provincial Treasury budget data for the
+  2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 346475000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 429905000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 482881000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 609271000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 607394000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 633537000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 671944000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 454062535
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 532427914
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 566184066
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 679280099
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 637082201
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 633537000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 636964372
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -115,7 +117,7 @@ slug: gauteng-provincial-treasury
 sphere:
   name: Provincial
   slug: provincial
-title: Gauteng Provincial Treasury - vulekamali
+title: Gauteng Provincial Treasury budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 14 : Gauteng Provincial Treasury':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

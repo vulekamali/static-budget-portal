@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Northern Cape department: Roads and Public Works budget data for the
+  2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 1016536000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1280918000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1213976000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1463633000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 1473773000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 1552477000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1643543000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 1332191106
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1586388851
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1423402181
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1631813709
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 1545808070
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 1552477000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1557984499
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -106,7 +108,7 @@ slug: roads-and-public-works
 sphere:
   name: Provincial
   slug: provincial
-title: Roads and Public Works - vulekamali
+title: Roads and Public Works budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 05 : Roads and Public Works':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'Western Cape department: Economic Development and Tourism budget data
+  for the 2016-17 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 289319000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 336282000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 469906000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 405354000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 486769000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 396306000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 419647000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 379158434
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 416477882
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 550970715
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 451931743
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 510561293
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 396306000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 397801287
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -120,7 +123,7 @@ slug: economic-development-and-tourism
 sphere:
   name: Provincial
   slug: provincial
-title: Economic Development and Tourism - vulekamali
+title: Economic Development and Tourism budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 12 : Economic Development and Tourism':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

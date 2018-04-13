@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Limpopo department: Safety, Security and Liaison budget data for the
+  2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 53168000.0
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 55170000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 62658000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 80496000.0
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 90354000.0
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 93542000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 98159000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 73539310
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 72301407
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 77600558
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 94382575
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 100736247
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 98114145
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 98159000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -95,7 +97,7 @@ slug: safety-security-and-liaison
 sphere:
   name: Provincial
   slug: provincial
-title: Safety, Security and Liaison - vulekamali
+title: Safety, Security and Liaison budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Safety, Security and Liaison':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

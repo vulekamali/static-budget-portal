@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Western Cape department: Education budget data for the 2016-17 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 13653667000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 15111220000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 16588773000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 17849369000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 19247264000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 20289422000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 21470834000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 17893408352
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 18714914570
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 19450545704
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 19900374638
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 20188031688
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 20289422000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 20353119182
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -109,7 +111,7 @@ slug: education
 sphere:
   name: Provincial
   slug: provincial
-title: Education - vulekamali
+title: Education budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 05 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

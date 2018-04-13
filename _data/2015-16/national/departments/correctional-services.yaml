@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Correctional Services budget data for the 2015-16
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 20617584000.0
     financial_year: 2015-16
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 21858289000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 23135316000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 22513254759
     financial_year: 2011-12
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 22986675088
     financial_year: 2015-16
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 22926678357
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 23135316000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -99,7 +101,7 @@ slug: correctional-services
 sphere:
   name: National
   slug: national
-title: Correctional Services - vulekamali
+title: Correctional Services budget 2015-16  - vulekamali
 treasury_datasets:
   ENE for Vote 18 - Correctional Services:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

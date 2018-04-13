@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Social Development budget data for the 2017-18
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 160707768000.0
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 173186694000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 186109718000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 145039106698
     financial_year: 2013-14
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 160707768000
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 164171052872
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 167555631937
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -126,7 +128,7 @@ slug: social-development
 sphere:
   name: National
   slug: national
-title: Social Development - vulekamali
+title: Social Development budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 17 - Social Development:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

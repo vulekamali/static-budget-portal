@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'Free State department: Cooperative Governance and Traditional Affairs
+  budget data for the 2016-17 financial year from National Treasury in partnership
+  with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 300530000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 307106000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 364265000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 380315000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 407596000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 411525000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 430835000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 393850678
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 380344045
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 427105309
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 424015604
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 427518475
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 411525000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 408406869
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -129,7 +132,7 @@ slug: cooperative-governance-and-traditional-affairs
 sphere:
   name: Provincial
   slug: provincial
-title: Cooperative Governance and Traditional Affairs - vulekamali
+title: Cooperative Governance and Traditional Affairs budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 08 : Cooperative Governance and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

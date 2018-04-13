@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'KwaZulu-Natal department: Human Settlements budget data for the 2015-16
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 3042495000.0
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 3377771000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 3617002000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 3622443000.0
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 3584685000.0
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 3776080000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 4011284000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 4208226483
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 4426637607
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 4479577653
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 4247360135
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 3996588028
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 3960647222
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 4011284000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -104,7 +106,7 @@ slug: human-settlements
 sphere:
   name: Provincial
   slug: provincial
-title: Human Settlements - vulekamali
+title: Human Settlements budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 08 : Human Settlements':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

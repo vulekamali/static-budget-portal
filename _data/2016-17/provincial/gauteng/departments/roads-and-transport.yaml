@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Gauteng department: Roads and Transport budget data for the 2016-17
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 5564906000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 5366174000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 5872084000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 6481601000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 7299704000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 7634841000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 8024170000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 7292922516
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 6645888814
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 6885092600
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 7226378039
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 7656498901
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 7634841000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 7606452937
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -108,7 +110,7 @@ slug: roads-and-transport
 sphere:
   name: Provincial
   slug: provincial
-title: Roads and Transport - vulekamali
+title: Roads and Transport budget 2016-17  - vulekamali
 treasury_datasets: {}
 vote_number: 9
 vote_primary:

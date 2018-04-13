@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'KwaZulu-Natal department: Economic Development, Tourism and Environmental
+  Affairs budget data for the 2016-17 financial year from National Treasury in partnership
+  with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 2421869000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 3311354000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2955803000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2997119000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 2702992000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 2844613000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 3022744000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 3173908591
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 4101039308
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 3465716321
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 3341506970
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 2835108831
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 2844613000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2865387943
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -111,7 +114,7 @@ slug: economic-development-tourism-and-environmental-affairs
 sphere:
   name: Provincial
   slug: provincial
-title: Economic Development, Tourism and Environmental Affairs - vulekamali
+title: Economic Development, Tourism and Environmental Affairs budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 04 : Economic Development, Tourism and Environmental Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

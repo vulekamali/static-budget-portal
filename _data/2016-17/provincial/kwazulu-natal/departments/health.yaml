@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'KwaZulu-Natal department: Health budget data for the 2016-17 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 27390533000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 29531411000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 31245510000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 33969992000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 36578637000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 39541537000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 42183873000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 35895850687
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 36574004878
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 36635754816
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 37873359403
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 38366527464
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 39541537000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 39987892168
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -107,7 +109,7 @@ slug: health
 sphere:
   name: Provincial
   slug: provincial
-title: Health - vulekamali
+title: Health budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 07 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

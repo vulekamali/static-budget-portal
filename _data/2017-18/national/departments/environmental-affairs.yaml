@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Environmental Affairs budget data for the 2017-18
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 6848214000.0
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 7061226000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 7378025000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 6440466173
     financial_year: 2013-14
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 6848214000
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 6693637254
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 6642477644
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -123,7 +125,7 @@ slug: environmental-affairs
 sphere:
   name: National
   slug: national
-title: Environmental Affairs - vulekamali
+title: Environmental Affairs budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 27 - Environmental Affairs:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

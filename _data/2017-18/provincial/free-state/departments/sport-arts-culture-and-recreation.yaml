@@ -9,52 +9,55 @@ contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
   url_path: /datasets/budget-brief-eastern-cape-department-of-education-2016-17
+description: 'Free State department: Sport, Arts, Culture and Recreation budget data
+  for the 2017-18 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 541732000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 661967000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 697897000.0
     financial_year: 2015-16
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 698355000.0
     financial_year: 2016-17
     phase: Adjusted appropriation
   - amount: 687295000.0
     financial_year: 2017-18
-    phase: Budget
+    phase: Main appropriation
   - amount: 660435000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 667107000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 670923201
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 776164662
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 778089788
     financial_year: 2015-16
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 732489192
     financial_year: 2016-17
     phase: Adjusted appropriation
   - amount: 687295000
     financial_year: 2017-18
-    phase: Budget
+    phase: Main appropriation
   - amount: 626054501
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 600600205
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -114,7 +117,7 @@ slug: sport-arts-culture-and-recreation
 sphere:
   name: Provincial
   slug: provincial
-title: Sport, Arts, Culture and Recreation - vulekamali
+title: Sport, Arts, Culture and Recreation budget 2017-18  - vulekamali
 treasury_datasets:
   'EPRE for Vote 12 : Sport, Arts, Culture and Recreation':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

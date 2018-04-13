@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'Mpumalanga department: Public Works, Roads and Transport budget data
+  for the 2016-17 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 3523082000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 3947153000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 4241161000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 4400049000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 4647031000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 4136991000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 4384510000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 4617070629
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 4888462426
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 4972814799
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 4905642520
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 4874168561
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 4136991000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 4156264008
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -98,7 +101,7 @@ slug: public-works-roads-and-transport
 sphere:
   name: Provincial
   slug: provincial
-title: Public Works, Roads and Transport - vulekamali
+title: Public Works, Roads and Transport budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 08 : Public Works, Roads and Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

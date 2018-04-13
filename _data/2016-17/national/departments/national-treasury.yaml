@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: National Treasury budget data for the 2016-17 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 598258833000.0
     financial_year: 2016-17
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 646670159000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 692386151000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 565499672514
     financial_year: 2012-13
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 627500525705
     financial_year: 2016-17
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 646670159000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 656342359673
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -117,7 +119,7 @@ slug: national-treasury
 sphere:
   name: National
   slug: national
-title: National Treasury - vulekamali
+title: National Treasury budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 07 - National Treasury:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

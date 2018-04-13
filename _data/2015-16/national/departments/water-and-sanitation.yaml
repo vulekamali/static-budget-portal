@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Water and Sanitation budget data for the 2015-16
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 16446530000.0
     financial_year: 2015-16
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 16361549000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 18204784000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 11688870696
     financial_year: 2011-12
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 18336340545
     financial_year: 2015-16
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 17161268722
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 18204784000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -100,7 +102,7 @@ slug: water-and-sanitation
 sphere:
   name: National
   slug: national
-title: Water and Sanitation - vulekamali
+title: Water and Sanitation budget 2015-16  - vulekamali
 treasury_datasets:
   ENE for Vote 36 - Water and Sanitation:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

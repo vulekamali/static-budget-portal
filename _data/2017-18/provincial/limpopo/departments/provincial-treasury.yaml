@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Limpopo department: Provincial Treasury budget data for the 2017-18
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 358534000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 346305000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 363722000.0
     financial_year: 2015-16
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 455241000.0
     financial_year: 2016-17
     phase: Adjusted appropriation
   - amount: 474620000.0
     financial_year: 2017-18
-    phase: Budget
+    phase: Main appropriation
   - amount: 448617000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 474632000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 444036496
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 406046983
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 405515963
     financial_year: 2015-16
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 477492267
     financial_year: 2016-17
     phase: Adjusted appropriation
   - amount: 474620000
     financial_year: 2017-18
-    phase: Budget
+    phase: Main appropriation
   - amount: 425263185
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 427313874
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -114,7 +116,7 @@ slug: provincial-treasury
 sphere:
   name: Provincial
   slug: provincial
-title: Provincial Treasury - vulekamali
+title: Provincial Treasury budget 2017-18  - vulekamali
 treasury_datasets:
   'EPRE for Vote 05 : Provincial Treasury':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

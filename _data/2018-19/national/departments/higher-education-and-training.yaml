@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Higher Education and Training budget data for the
+  2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 89950026000.0
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 107938522000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 118670139000.0
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 62016892807
     financial_year: 2014-15
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 85267465607
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 97177661964
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 101230444627
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -115,7 +117,7 @@ slug: higher-education-and-training
 sphere:
   name: National
   slug: national
-title: Higher Education and Training - vulekamali
+title: Higher Education and Training budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 15 - Higher Education and Training:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

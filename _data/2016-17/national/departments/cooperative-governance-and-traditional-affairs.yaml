@@ -1,4 +1,7 @@
 contributed_datasets: null
+description: 'National department: Cooperative Governance and Traditional Affairs
+  budget data for the 2016-17 financial year from National Treasury in partnership
+  with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +19,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 72994048000.0
     financial_year: 2016-17
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 78557210000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 84258462000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 70026822319
     financial_year: 2012-13
@@ -38,13 +41,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 76561850768
     financial_year: 2016-17
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 78557210000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 79872189372
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -105,7 +108,7 @@ slug: cooperative-governance-and-traditional-affairs
 sphere:
   name: National
   slug: national
-title: Cooperative Governance and Traditional Affairs - vulekamali
+title: Cooperative Governance and Traditional Affairs budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 04 - Cooperative Governance and Traditional Affairs:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

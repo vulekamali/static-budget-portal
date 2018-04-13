@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Western Cape department: Cultural Affairs and Sport budget data for
+  the 2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 453573000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 612490000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 685544000.0
     financial_year: 2015-16
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 730472000.0
     financial_year: 2016-17
     phase: Adjusted appropriation
   - amount: 725049000.0
     financial_year: 2017-18
-    phase: Budget
+    phase: Main appropriation
   - amount: 742068000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 739172000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 561740213
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 718152255
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 764317350
     financial_year: 2015-16
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 766176007
     financial_year: 2016-17
     phase: Adjusted appropriation
   - amount: 725049000
     financial_year: 2017-18
-    phase: Budget
+    phase: Main appropriation
   - amount: 703437903
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 665480733
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -107,7 +109,7 @@ slug: cultural-affairs-and-sport
 sphere:
   name: Provincial
   slug: provincial
-title: Cultural Affairs and Sport - vulekamali
+title: Cultural Affairs and Sport budget 2017-18  - vulekamali
 treasury_datasets:
   'EPRE for Vote 13 : Cultural Affairs and Sport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

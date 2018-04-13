@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'Mpumalanga department: Co-operative Governance and Traditional Affairs
+  budget data for the 2016-17 financial year from National Treasury in partnership
+  with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 336914000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 396929000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 447006000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 476292000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 498106000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 486923000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 517827000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 441532650
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 491587861
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 524120176
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 531020969
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 522452422
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 486923000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 490870296
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -103,7 +106,7 @@ slug: co-operative-governance-and-traditional-affairs
 sphere:
   name: Provincial
   slug: provincial
-title: Co-operative Governance and Traditional Affairs - vulekamali
+title: Co-operative Governance and Traditional Affairs budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 04 : Co-operative Governance and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

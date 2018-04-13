@@ -1,4 +1,7 @@
 contributed_datasets: null
+description: 'National department: Justice and Constitutional Development budget data
+  for the 2015-16 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +19,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 16864738000.0
     financial_year: 2015-16
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 18037926000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 19137516000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 16997994551
     financial_year: 2011-12
@@ -38,13 +41,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 18802603295
     financial_year: 2015-16
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 18919583670
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 19137516000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -110,7 +113,7 @@ slug: justice-and-constitutional-development
 sphere:
   name: National
   slug: national
-title: Justice and Constitutional Development - vulekamali
+title: Justice and Constitutional Development budget 2015-16  - vulekamali
 treasury_datasets:
   ENE for Vote 21 - Justice and Constitutional Development:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

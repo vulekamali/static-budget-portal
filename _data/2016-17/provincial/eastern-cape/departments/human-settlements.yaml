@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Eastern Cape department: Human Settlements budget data for the 2016-17
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 2279062000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2827992000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2719830000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2404283000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 2349036000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 2836218000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2876967000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 2986757112
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 3502406072
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 3189035001
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2680550356
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 2463852171
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 2836218000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2727199708
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -96,7 +98,7 @@ slug: human-settlements
 sphere:
   name: Provincial
   slug: provincial
-title: Human Settlements - vulekamali
+title: Human Settlements budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 11 : Human Settlements':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

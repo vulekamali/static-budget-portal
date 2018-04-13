@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Sport and Recreation South Africa budget data for
+  the 2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 988548000.0
     financial_year: 2015-16
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 1034361000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1093639000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 1121211692
     financial_year: 2011-12
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 1102138431
     financial_year: 2015-16
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 1084918492
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1093639000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -103,7 +105,7 @@ slug: sport-and-recreation-south-africa
 sphere:
   name: National
   slug: national
-title: Sport and Recreation South Africa - vulekamali
+title: Sport and Recreation South Africa budget 2015-16  - vulekamali
 treasury_datasets:
   ENE for Vote 40 - Sport and Recreation South Africa:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

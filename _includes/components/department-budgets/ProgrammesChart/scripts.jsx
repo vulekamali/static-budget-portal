@@ -49,10 +49,10 @@ class ProgrammesChartContainer extends Component {
     canvg(this.canvas, renderToString(
       <BarChart
         scale={1.5}
-        downloadable={{
-          heading: this.props.dept,
-          subHeading: `${this.props.deptLocation} Department Budget for ${this.props.year}`,
-          type: 'Programme budgets',
+        download={{
+          heading: this.props.department,
+          subHeading: `${this.props.location} Department Budget for ${this.props.year}`,
+          type: 'Programme budgets chart',
         }}
         items={this.props.items}
         guides
@@ -126,8 +126,8 @@ function scripts() {
     const rawValues = getProp('values', node, 'json').data;
     const rawFiles = getProp('files', node, 'json');
     const year = getProp('year', node);
-    const dept = getProp('dept', node);
-    const deptLocation = getProp('dept-location', node);
+    const department = getProp('dept', node);
+    const location = getProp('dept-location', node);
 
 
     const items = rawValues.reduce(
@@ -161,7 +161,7 @@ function scripts() {
     );
 
     render(
-      <ProgrammesChartContainer {...{ items, year, files, location }} />,
+      <ProgrammesChartContainer {...{ items, year, files, location, department }} />,
       node,
     );
   }

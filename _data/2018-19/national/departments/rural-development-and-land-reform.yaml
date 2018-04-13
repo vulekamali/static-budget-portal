@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Rural Development and Land Reform budget data for
+  the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 10425243000.0
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 11049810000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 11705701000.0
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 11016641318
     financial_year: 2014-15
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 9882532429
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 9948206451
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 9985438012
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -164,7 +166,7 @@ slug: rural-development-and-land-reform
 sphere:
   name: National
   slug: national
-title: Rural Development and Land Reform - vulekamali
+title: Rural Development and Land Reform budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 39 - Rural Development and Land Reform:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Basic Education budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 22722437000.0
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 23615319000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 25203843000.0
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 22897885236
     financial_year: 2014-15
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 21539567041
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 21261005287
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 21499900941
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -101,7 +103,7 @@ slug: basic-education
 sphere:
   name: National
   slug: national
-title: Basic Education - vulekamali
+title: Basic Education budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 14 - Basic Education:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

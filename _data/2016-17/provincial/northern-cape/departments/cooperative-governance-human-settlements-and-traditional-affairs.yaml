@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'Northern Cape department: Cooperative Governance, Human Settlements
+  and Traditional Affairs budget data for the 2016-17 financial year from National
+  Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 581941000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 841569000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 651875000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 716472000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 676175000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 726059000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 772180000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 762645518
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1042264750
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 764331664
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 798799174
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 709225078
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 726059000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 731982351
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -98,7 +101,8 @@ slug: cooperative-governance-human-settlements-and-traditional-affairs
 sphere:
   name: Provincial
   slug: provincial
-title: Cooperative Governance, Human Settlements and Traditional Affairs - vulekamali
+title: Cooperative Governance, Human Settlements and Traditional Affairs budget 2016-17  -
+  vulekamali
 treasury_datasets:
   'EPRE for Vote 09 : Cooperative Governance, Human Settlements and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

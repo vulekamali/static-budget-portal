@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Health budget data for the 2018-19 financial year
+  from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 47142866000.0
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 51453374000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 56269329000.0
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 39324867956
     financial_year: 2014-15
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 44688733111
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 46323763683
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 48000021248
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -101,7 +103,7 @@ slug: health
 sphere:
   name: National
   slug: national
-title: Health - vulekamali
+title: Health budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 16 - Health:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

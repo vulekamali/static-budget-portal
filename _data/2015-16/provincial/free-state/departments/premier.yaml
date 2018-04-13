@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Free State department: Premier budget data for the 2015-16 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 213514000.0
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 252854000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 271881000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 308013000.0
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 283896000.0
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 291978000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 306116000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 295321855
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 331370310
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 336718655
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 361149129
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 316517449
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 306249299
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 306116000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -105,7 +107,7 @@ slug: premier
 sphere:
   name: Provincial
   slug: provincial
-title: Premier - vulekamali
+title: Premier budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 01 : Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

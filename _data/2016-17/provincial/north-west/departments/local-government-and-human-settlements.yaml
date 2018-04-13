@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'North West department: Local Government and Human Settlements budget
+  data for the 2016-17 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 1362901000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1754482000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2189675000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2519750000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 2645675000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 2460464000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2619622000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 1786109485
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2172887479
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2567421572
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2809285246
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 2774990291
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 2460464000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2483251408
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -94,7 +97,7 @@ slug: local-government-and-human-settlements
 sphere:
   name: Provincial
   slug: provincial
-title: Local Government and Human Settlements - vulekamali
+title: Local Government and Human Settlements budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 09 : Local Government and Human Settlements':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

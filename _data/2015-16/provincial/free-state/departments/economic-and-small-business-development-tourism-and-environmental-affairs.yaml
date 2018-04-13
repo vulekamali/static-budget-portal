@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'Free State department: Economic and Small Business Development,  Tourism
+  and Environmental Affairs budget data for the 2015-16 financial year from National
+  Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 389855000.0
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 407139000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 432354000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 449974000.0
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 472179000.0
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 473134000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 498895000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 539227882
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 533563941
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 535460947
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 527600194
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 526435360
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 496259841
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 498895000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -92,7 +95,7 @@ sphere:
   name: Provincial
   slug: provincial
 title: Economic and Small Business Development,  Tourism and Environmental Affairs
-  - vulekamali
+  budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 03 : Economic Development, Tourism and Environmental Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

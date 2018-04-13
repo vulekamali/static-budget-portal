@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Parliament budget data for the 2017-18 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 2268235000.0
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 2371139000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2531189000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 2399354341
     financial_year: 2013-14
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 2268235000
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 2247703776
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2278843775
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -105,7 +107,7 @@ slug: parliament
 sphere:
   name: National
   slug: national
-title: Parliament - vulekamali
+title: Parliament budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 02 - Parliament:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

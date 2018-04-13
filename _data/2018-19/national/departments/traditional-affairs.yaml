@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Traditional Affairs budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 153306000.0
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 163351000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 173912000.0
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 131029457
     financial_year: 2014-15
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 145325295
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 147065829
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 148353993
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -102,7 +104,7 @@ slug: traditional-affairs
 sphere:
   name: National
   slug: national
-title: Traditional Affairs - vulekamali
+title: Traditional Affairs budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 4 - Cooperative Governance and Traditional Affairs:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

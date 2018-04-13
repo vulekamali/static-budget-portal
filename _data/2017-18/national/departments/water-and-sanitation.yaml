@@ -11,6 +11,8 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
+description: 'National department: Water and Sanitation budget data for the 2017-18
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -28,13 +30,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 15107449000.0
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 16560799000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 17514811000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 13011346563
     financial_year: 2013-14
@@ -50,13 +52,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 15107449000
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 15698687615
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 15768683424
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -112,7 +114,7 @@ slug: water-and-sanitation
 sphere:
   name: National
   slug: national
-title: Water and Sanitation - vulekamali
+title: Water and Sanitation budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 36 - Water and Sanitation:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

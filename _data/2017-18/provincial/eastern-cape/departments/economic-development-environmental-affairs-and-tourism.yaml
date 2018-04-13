@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'Eastern Cape department: Economic Development, Environmental Affairs
+  and Tourism budget data for the 2017-18 financial year from National Treasury in
+  partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 1353816000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1134358000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1246351000.0
     financial_year: 2015-16
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1135990000.0
     financial_year: 2016-17
     phase: Adjusted appropriation
   - amount: 1069558000.0
     financial_year: 2017-18
-    phase: Budget
+    phase: Main appropriation
   - amount: 1064089000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1128718000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 1676671425
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1330049071
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1389564630
     financial_year: 2015-16
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1191514914
     financial_year: 2016-17
     phase: Adjusted appropriation
   - amount: 1069558000
     financial_year: 2017-18
-    phase: Budget
+    phase: Main appropriation
   - amount: 1008695341
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1016191200
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -95,7 +98,7 @@ slug: economic-development-environmental-affairs-and-tourism
 sphere:
   name: Provincial
   slug: provincial
-title: Economic Development, Environmental Affairs and Tourism - vulekamali
+title: Economic Development, Environmental Affairs and Tourism budget 2017-18  - vulekamali
 treasury_datasets:
   'EPRE for Vote 09 : Economic Development, Environmental Affairs and Tourism':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

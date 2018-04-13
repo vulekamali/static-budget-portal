@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'Eastern Cape department: Cooperative Governance and Traditional Affairs
+  budget data for the 2015-16 financial year from National Treasury in partnership
+  with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 738942000.0
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 788228000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1001536000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 887340000.0
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 957661000.0
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 941608000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 987794000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 1022067511
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1032988828
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1240380371
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1040417348
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 1067702319
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 987631911
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 987794000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -109,7 +112,7 @@ slug: cooperative-governance-and-traditional-affairs
 sphere:
   name: Provincial
   slug: provincial
-title: Cooperative Governance and Traditional Affairs - vulekamali
+title: Cooperative Governance and Traditional Affairs budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 07 : Cooperative Governance and Traditional Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

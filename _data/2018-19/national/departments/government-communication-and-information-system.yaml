@@ -1,4 +1,7 @@
 contributed_datasets: null
+description: 'National department: Government Communication and Information System
+  budget data for the 2018-19 financial year from National Treasury in partnership
+  with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +19,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 420485000.0
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 441683000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 471442000.0
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 427794747
     financial_year: 2014-15
@@ -38,13 +41,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 398595663
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 397649703
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 402159158
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -106,7 +109,7 @@ slug: government-communication-and-information-system
 sphere:
   name: National
   slug: national
-title: Government Communication and Information System - vulekamali
+title: Government Communication and Information System budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 3 - Communications:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

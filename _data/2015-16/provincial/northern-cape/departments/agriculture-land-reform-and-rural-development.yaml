@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'Northern Cape department: Agriculture, Land Reform and Rural Development
+  budget data for the 2015-16 financial year from National Treasury in partnership
+  with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 369638000.0
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 436462000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 987816000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 776638000.0
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 619947000.0
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 486914000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 518873000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 511264741
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 571992329
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1223388452
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 910617856
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 691182839
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 510713380
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 518873000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -114,7 +117,7 @@ slug: agriculture-land-reform-and-rural-development
 sphere:
   name: Provincial
   slug: provincial
-title: Agriculture, Land Reform and Rural Development - vulekamali
+title: Agriculture, Land Reform and Rural Development budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 12 : Agriculture, Land Reform and Rural Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'North West department: Economy and Enterprise Development budget data
+  for the 2016-17 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 172816000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 221296000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 253850000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 310096000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 302685000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 337000000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 366907000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 226478883
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 274070242
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 297642328
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 345727995
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 317479636
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 337000000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 347806792
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -102,7 +105,7 @@ slug: economy-and-enterprise-development
 sphere:
   name: Provincial
   slug: provincial
-title: Economy and Enterprise Development - vulekamali
+title: Economy and Enterprise Development budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 06 : Economy and Entreprise Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

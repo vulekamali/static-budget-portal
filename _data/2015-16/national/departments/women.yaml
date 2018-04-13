@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Women budget data for the 2015-16 financial year
+  from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 187002000.0
     financial_year: 2015-16
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 196258000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 211904000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 191144392
     financial_year: 2011-12
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 208489715
     financial_year: 2015-16
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 205850697
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 211904000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,7 +95,7 @@ slug: women
 sphere:
   name: National
   slug: national
-title: Women - vulekamali
+title: Women budget 2015-16  - vulekamali
 treasury_datasets:
   ENE for Vote 13 - Women:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

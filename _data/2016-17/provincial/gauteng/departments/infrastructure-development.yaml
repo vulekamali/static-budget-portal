@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Gauteng department: Infrastructure Development budget data for the 2016-17
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 1408343000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1529491000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1826575000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2413813000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 2564853000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 2686747000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2848650000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 1845662150
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1894241060
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2141682240
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2691175413
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 2690217874
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 2686747000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2700356817
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -96,7 +98,7 @@ slug: infrastructure-development
 sphere:
   name: Provincial
   slug: provincial
-title: Infrastructure Development - vulekamali
+title: Infrastructure Development budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 15 : Infrastructure Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

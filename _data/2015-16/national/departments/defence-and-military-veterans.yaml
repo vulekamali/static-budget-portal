@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Defence and Military Veterans budget data for the
+  2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 44579390000.0
     financial_year: 2015-16
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 47118698000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 50113522000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 47485521722
     financial_year: 2011-12
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 49701844482
     financial_year: 2015-16
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 49421765521
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 50113522000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -103,7 +105,7 @@ slug: defence-and-military-veterans
 sphere:
   name: National
   slug: national
-title: Defence and Military Veterans - vulekamali
+title: Defence and Military Veterans budget 2015-16  - vulekamali
 treasury_datasets:
   ENE for Vote 19 - Defence and Military Veterans:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

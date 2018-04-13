@@ -5,6 +5,8 @@ contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
   url_path: /datasets/budget-brief-eastern-cape-department-of-health-2014-15
+description: 'National department: Health budget data for the 2017-18 financial year
+  from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -22,13 +24,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 42625723000.0
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 46666972000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 50384947000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 37432405174
     financial_year: 2013-14
@@ -44,13 +46,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 42625723000
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 44237612894
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 45361852811
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -109,7 +111,7 @@ slug: health
 sphere:
   name: National
   slug: national
-title: Health - vulekamali
+title: Health budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 16 - Health:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

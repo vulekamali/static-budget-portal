@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: The Presidency budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 512322000.0
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 547232000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 584410000.0
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 499693221
     financial_year: 2014-15
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 485651872
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 492676065
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 498525447
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -90,7 +92,7 @@ slug: the-presidency
 sphere:
   name: National
   slug: national
-title: The Presidency - vulekamali
+title: The Presidency budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 1 - The Presidency:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

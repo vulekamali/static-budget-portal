@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'KwaZulu-Natal department: Arts and Culture budget data for the 2016-17
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 479744000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 698686000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 710027000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 808770000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 786472000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 857179000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 870986000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 628714271
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 865307288
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 832515618
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 901702799
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 824913175
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 857179000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 825644773
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -98,7 +100,7 @@ slug: arts-and-culture
 sphere:
   name: Provincial
   slug: provincial
-title: Arts and Culture - vulekamali
+title: Arts and Culture budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 15 : Arts and Culture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

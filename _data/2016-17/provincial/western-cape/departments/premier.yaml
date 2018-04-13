@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Western Cape department: Premier budget data for the 2016-17 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 747165000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 894537000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1042874000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1272608000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 1341110000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 1420535000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1522056000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 979174931
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1107864456
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1222782926
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1418838725
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 1406660768
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 1420535000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1442821791
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -97,7 +99,7 @@ slug: premier
 sphere:
   name: Provincial
   slug: provincial
-title: Premier - vulekamali
+title: Premier budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 01 : Premier':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Gauteng department: Health budget data for the 2016-17 financial year
+  from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 26834347000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 27415801000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 31005212000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 35337088000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 37408057000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 39909927000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 42500389000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 35166957620
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 33953868290
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 36354002378
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 39397543399
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 39236487851
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 39909927000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 40287931182
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -114,7 +116,7 @@ slug: health
 sphere:
   name: Provincial
   slug: provincial
-title: Health - vulekamali
+title: Health budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 04 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

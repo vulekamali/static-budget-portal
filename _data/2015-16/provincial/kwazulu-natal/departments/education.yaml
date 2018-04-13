@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'KwaZulu-Natal department: Education budget data for the 2015-16 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 32809703000.0
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 34556731000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 37156042000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 39066103000.0
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 42142355000.0
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 44210091000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 46488066000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 45380735577
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 45287298944
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 46016943158
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 45805498810
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 46984778713
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 46370991640
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 46488066000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -112,7 +114,7 @@ slug: education
 sphere:
   name: Provincial
   slug: provincial
-title: Education - vulekamali
+title: Education budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 05 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

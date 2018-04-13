@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Tourism budget data for the 2018-19 financial year
+  from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 2261817000.0
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 2404291000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2542612000.0
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 1826298622
     financial_year: 2014-15
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 2144072790
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 2164596788
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 2168951224
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -115,7 +117,7 @@ slug: tourism
 sphere:
   name: National
   slug: national
-title: Tourism - vulekamali
+title: Tourism budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 33 - Tourism:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

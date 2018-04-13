@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Public Service and Administration budget data for
+  the 2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 897144000.0
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 944648000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1008521000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 973189874
     financial_year: 2013-14
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 897144000
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 895472124
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 907977161
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -127,7 +129,7 @@ slug: public-service-and-administration
 sphere:
   name: National
   slug: national
-title: Public Service and Administration - vulekamali
+title: Public Service and Administration budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 10 - Public Service and Administration:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

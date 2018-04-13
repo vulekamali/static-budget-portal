@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Limpopo department: Education budget data for the 2015-16 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 20313347000.0
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 21008469000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 22647979000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 24562692000.0
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 25284705000.0
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 26827235000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 28222996000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 28096402729
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 27532025988
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 28049025305
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 28800066369
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 28190077874
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 28138496478
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 28222996000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -105,7 +107,7 @@ slug: education
 sphere:
   name: Provincial
   slug: provincial
-title: Education - vulekamali
+title: Education budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 03 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

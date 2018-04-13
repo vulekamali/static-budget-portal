@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'KwaZulu-Natal department: Social Development budget data for the 2017-18
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 2329906000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2487432000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2610357000.0
     financial_year: 2015-16
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2782299000.0
     financial_year: 2016-17
     phase: Adjusted appropriation
   - amount: 3041364000.0
     financial_year: 2017-18
-    phase: Budget
+    phase: Main appropriation
   - amount: 3181765000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 3382158000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 2885537484
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2916545413
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2910303565
     financial_year: 2015-16
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2918292198
     financial_year: 2016-17
     phase: Adjusted appropriation
   - amount: 3041364000
     financial_year: 2017-18
-    phase: Budget
+    phase: Main appropriation
   - amount: 3016130731
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 3044975980
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -96,7 +98,7 @@ slug: social-development
 sphere:
   name: Provincial
   slug: provincial
-title: Social Development - vulekamali
+title: Social Development budget 2017-18  - vulekamali
 treasury_datasets:
   'EPRE for Vote 13 : Social Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

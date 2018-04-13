@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Economic Development budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 1072597000.0
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 1016248000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1067223000.0
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 814793090
     financial_year: 2014-15
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 1016760437
     financial_year: 2018-19
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 914933823
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 910384530
     financial_year: 2020-21
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -103,7 +105,7 @@ slug: economic-development
 sphere:
   name: National
   slug: national
-title: Economic Development - vulekamali
+title: Economic Development budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 25 - Economic Development:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

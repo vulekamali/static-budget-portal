@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'Mpumalanga department: Agriculture, Rural Development, Land and Environmental
+  Affairs budget data for the 2016-17 financial year from National Treasury in partnership
+  with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 1028958000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1007100000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1004444000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1002624000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 974133000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 1224529000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1300848000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 1348470390
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1247271263
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1177723266
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1117831852
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 1021746668
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 1224529000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1233129294
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -111,7 +114,8 @@ slug: agriculture-rural-development-land-and-environmental-affairs
 sphere:
   name: Provincial
   slug: provincial
-title: Agriculture, Rural Development, Land and Environmental Affairs - vulekamali
+title: Agriculture, Rural Development, Land and Environmental Affairs budget 2016-17  -
+  vulekamali
 treasury_datasets:
   'EPRE for Vote 05 : Agriculture, Rural Development, Land and Environmental Affairs':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

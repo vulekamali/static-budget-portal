@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Eastern Cape department: Safety and Liaison budget data for the 2015-16
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 57980000.0
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 62207000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 69316000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 83936000.0
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 83969000.0
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 87124000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 91229000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 80195027
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 81523538
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 85846345
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 98416019
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 93617570
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 91382446
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 91229000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -94,7 +96,7 @@ slug: safety-and-liaison
 sphere:
   name: Provincial
   slug: provincial
-title: Safety and Liaison - vulekamali
+title: Safety and Liaison budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 15 : Safety and Liaison':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

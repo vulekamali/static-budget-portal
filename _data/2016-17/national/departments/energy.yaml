@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Energy budget data for the 2016-17 financial year
+  from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 7545171000.0
     financial_year: 2016-17
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 8128980000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 8486400000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 8726733992
     financial_year: 2012-13
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 7913963836
     financial_year: 2016-17
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 8128980000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 8044620466
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -124,7 +126,7 @@ slug: energy
 sphere:
   name: National
   slug: national
-title: Energy - vulekamali
+title: Energy budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 26 - Energy:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

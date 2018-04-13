@@ -9,52 +9,55 @@ contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
   url_path: /datasets/budget-brief-eastern-cape-department-of-education-2016-17
+description: 'North West department: Education and Sports Development budget data
+  for the 2017-18 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 11679448000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 12077940000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 13109934000.0
     financial_year: 2015-16
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 14262562000.0
     financial_year: 2016-17
     phase: Adjusted appropriation
   - amount: 15281697000.0
     financial_year: 2017-18
-    phase: Budget
+    phase: Main appropriation
   - amount: 16261250000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 17398783000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 14464740209
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 14161537082
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 14616348515
     financial_year: 2015-16
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 14959687445
     financial_year: 2016-17
     phase: Adjusted appropriation
   - amount: 15281697000
     financial_year: 2017-18
-    phase: Budget
+    phase: Main appropriation
   - amount: 15414732343
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 15664222759
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -145,7 +148,7 @@ slug: education-and-sports-development
 sphere:
   name: Provincial
   slug: provincial
-title: Education and Sports Development - vulekamali
+title: Education and Sports Development budget 2017-18  - vulekamali
 treasury_datasets:
   'EPRE for Vote 08 : Education and Sports Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

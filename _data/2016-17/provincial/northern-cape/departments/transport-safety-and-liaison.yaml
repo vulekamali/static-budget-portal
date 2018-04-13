@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'Northern Cape department: Transport, Safety and Liaison budget data
+  for the 2016-17 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 282063000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 310301000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 383975000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 355489000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 366977000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 383237000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 406369000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 369649299
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 384300983
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 450215533
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 396336939
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 384914100
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 383237000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 385214504
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -98,7 +101,7 @@ slug: transport-safety-and-liaison
 sphere:
   name: Provincial
   slug: provincial
-title: Transport, Safety and Liaison - vulekamali
+title: Transport, Safety and Liaison budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 03 : Transport, Safety and Liaison':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

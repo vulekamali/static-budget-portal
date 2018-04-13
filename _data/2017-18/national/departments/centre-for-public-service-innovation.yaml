@@ -1,4 +1,7 @@
 contributed_datasets: null
+description: 'National department: Centre for Public Service Innovation budget data
+  for the 2017-18 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +19,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 34055000.0
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 36030000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 38437000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 26715210
     financial_year: 2013-14
@@ -38,13 +41,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 34055000
     financial_year: 2017-18
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 34154373
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 34605048
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -93,7 +96,7 @@ slug: centre-for-public-service-innovation
 sphere:
   name: National
   slug: national
-title: Centre for Public Service Innovation - vulekamali
+title: Centre for Public Service Innovation budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 10 - Public Service and Administration:
     description: The Estimates of National Expenditure (ENE) sets out the detailed

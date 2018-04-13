@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Gauteng department: Community Safety budget data for the 2017-18 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 493481000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 629606000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 693552000.0
     financial_year: 2015-16
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 683580000.0
     financial_year: 2016-17
     phase: Adjusted appropriation
   - amount: 678467000.0
     financial_year: 2017-18
-    phase: Budget
+    phase: Main appropriation
   - amount: 718050000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 759694000.0
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 611165396
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 738220981
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 773245520
     financial_year: 2015-16
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 716992020
     financial_year: 2016-17
     phase: Adjusted appropriation
   - amount: 678467000
     financial_year: 2017-18
-    phase: Budget
+    phase: Main appropriation
   - amount: 680670216
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 683956805
     financial_year: 2019-20
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -102,7 +104,7 @@ slug: community-safety
 sphere:
   name: Provincial
   slug: provincial
-title: Community Safety - vulekamali
+title: Community Safety budget 2017-18  - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Community Safety':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

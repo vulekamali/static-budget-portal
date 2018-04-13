@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'North West department: Education and Sports Development budget data
+  for the 2015-16 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 9882315000.0
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 10421284000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 11665538000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 12300408000.0
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 13432319000.0
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 14080828000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 14881652000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 13668722448
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 13657304676
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 14447512979
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 14422383620
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 14975777595
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 14769070651
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 14881652000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -139,7 +142,7 @@ slug: education-and-sports-development
 sphere:
   name: Provincial
   slug: provincial
-title: Education and Sports Development - vulekamali
+title: Education and Sports Development budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 08 : Education and Sports Development':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

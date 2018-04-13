@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Northern Cape department: Education budget data for the 2015-16 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 3973750000.0
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 4126127000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 4489622000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 4717166000.0
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 5083072000.0
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 5240921000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 5421901000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 5496291691
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 5407373369
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 5560298386
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 5530936669
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 5667149192
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 5497086714
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 5421901000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -114,7 +116,7 @@ slug: education
 sphere:
   name: Provincial
   slug: provincial
-title: Education - vulekamali
+title: Education budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 04 : Education':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

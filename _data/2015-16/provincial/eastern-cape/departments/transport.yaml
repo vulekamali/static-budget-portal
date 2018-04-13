@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Eastern Cape department: Transport budget data for the 2015-16 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 1582910000.0
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1452471000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1517152000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1743596000.0
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 1650288000.0
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 1739374000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1835470000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 2189401719
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1903492792
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 1878959479
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 2044388315
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 1839916551
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 1824391115
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 1835470000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -100,7 +102,7 @@ slug: transport
 sphere:
   name: Provincial
   slug: provincial
-title: Transport - vulekamali
+title: Transport budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Transport':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Free State department: Free State Legislature budget data for the 2016-17
+  financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 185482000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 160731000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 168384000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 190701000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 203803000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 208205000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 217798000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 243077934
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 199061818
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 197432365
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 212613753
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 213764482
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 208205000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 206460012
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -107,7 +109,7 @@ slug: free-state-legislature
 sphere:
   name: Provincial
   slug: provincial
-title: Free State Legislature - vulekamali
+title: Free State Legislature budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 02 : Free State Legislature':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

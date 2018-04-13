@@ -1,50 +1,52 @@
 contributed_datasets: null
+description: 'Eastern Cape department: Health budget data for the 2016-17 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 15602512000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 17048255000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 17549854000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 19023701000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 20244339000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 21476554000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 22831658000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 20447409369
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 21113889937
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 20577425307
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 21209644828
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 21233841715
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 21476554000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 21643102285
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -116,7 +118,7 @@ slug: health
 sphere:
   name: Provincial
   slug: provincial
-title: Health - vulekamali
+title: Health budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 03 : Health':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'Free State department: Sport, Arts, Culture and Recreation budget data
+  for the 2016-17 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 445337000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 541863000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 662300000.0
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 698887000.0
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 655128000.0
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 641030000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 672645000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 583623197
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 671085442
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 776555108
     financial_year: 2014-15
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 779193546
     financial_year: 2015-16
     phase: Adjusted appropriation
   - amount: 687149343
     financial_year: 2016-17
-    phase: Budget
+    phase: Main appropriation
   - amount: 641030000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 637628880
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -97,7 +100,7 @@ slug: sport-arts-culture-and-recreation
 sphere:
   name: Provincial
   slug: provincial
-title: Sport, Arts, Culture and Recreation - vulekamali
+title: Sport, Arts, Culture and Recreation budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 12 : Sport, Arts, Culture and Recreation':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

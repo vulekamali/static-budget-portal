@@ -1,50 +1,53 @@
 contributed_datasets: null
+description: 'Eastern Cape department: Sport, Recreation, Arts and Culture budget
+  data for the 2015-16 financial year from National Treasury in partnership with IMALI
+  YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
   - amount: 649017000.0
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 647479000.0
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 727359000.0
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 775119000.0
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 796920000.0
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 834909000.0
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 879534000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 897687762
     financial_year: 2011-12
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 848534400
     financial_year: 2012-13
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 900818169
     financial_year: 2013-14
-    phase: Outcome
+    phase: Audited Outcome
   - amount: 908836810
     financial_year: 2014-15
     phase: Adjusted appropriation
   - amount: 888491159
     financial_year: 2015-16
-    phase: Budget
+    phase: Main appropriation
   - amount: 875717678
     financial_year: 2016-17
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 879534000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -94,7 +97,7 @@ slug: sport-recreation-arts-and-culture
 sphere:
   name: Provincial
   slug: provincial
-title: Sport, Recreation, Arts and Culture - vulekamali
+title: Sport, Recreation, Arts and Culture budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 14 : Sport, Recreation, Arts and Culture':
     description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out

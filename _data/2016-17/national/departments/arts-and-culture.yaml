@@ -1,4 +1,6 @@
 contributed_datasets: null
+description: 'National department: Arts and Culture budget data for the 2016-17 financial
+  year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
@@ -16,13 +18,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 4070853000.0
     financial_year: 2016-17
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 4492689000.0
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 4542875000.0
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
   real:
   - amount: 3485109993
     financial_year: 2012-13
@@ -38,13 +40,13 @@ expenditure_over_time:
     phase: Adjusted appropriation
   - amount: 4269828135
     financial_year: 2016-17
-    phase: Original Budget
+    phase: Main appropriation
   - amount: 4492689000
     financial_year: 2017-18
-    phase: MTEF
+    phase: Medium Term Estimates
   - amount: 4306384945
     financial_year: 2018-19
-    phase: MTEF
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -105,7 +107,7 @@ slug: arts-and-culture
 sphere:
   name: National
   slug: national
-title: Arts and Culture - vulekamali
+title: Arts and Culture budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 37 - Arts and Culture:
     description: The Estimates of National Expenditure (ENE) sets out the detailed
