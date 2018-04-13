@@ -776,7 +776,7 @@ function createHtml(path, content, type, labels = {}) {
       if (labelsKeys.length > 0) {
         labelsCode = labelsKeys.map((key) => {
           const val = labels[key];
-          return `<span style="font-size:  14px; background: ${val.background}; color: ${val.color}; border-radius: 50px; padding: 5px 15px; position:  relative; bottom: 6px; margin-left: 10px;">${val.text}</span>`;
+          return `<span style="font-size:  14px; background: ${val.background}; color: ${val.color}; border-radius: 50px; padding: 5px 15px; position:  relative; bottom: 6px; margin-left: 10px;">${key}: ${val.text}</span>`;
         }).join('');
       }
 

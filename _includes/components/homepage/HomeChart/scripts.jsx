@@ -88,7 +88,6 @@ function scripts() {
   });
 
   const normaliseData = (array, hasNull, type, yearString) => {
-    console.log(yearString);
     if (type === 'expenditure' && hasNull) {
       return buildExpenditureDataWithNull(array, yearString);
     } else if (type === 'expenditure') {
@@ -105,7 +104,7 @@ function scripts() {
 
   for (let i = 0; i < nodes.length; i++) {
     const node = nodes[i];
-    const rawValues = getProp('values', node, true);
+    const rawValues = getProp('values', node, 'json');
     const type = getProp('type', node);
     const yearString = getProp('year', node);
 

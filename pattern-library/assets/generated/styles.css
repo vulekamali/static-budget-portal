@@ -207,6 +207,9 @@ li {
 .u-displayTableCell {
   display: table-cell; }
 
+.u-displayInlineBlock {
+  display: inline-block; }
+
 .u-padding0 {
   padding: 0 !important; }
 
@@ -1387,6 +1390,14 @@ li {
         padding-left: 15px; }
       .Grid-item.is-half:nth-of-type(2n + 1) {
         padding-right: 15px; } }
+
+.ColumnChart-svg {
+  overflow: hidden; }
+
+.ColumnChart-svg.is-hoverable .ColumnChart-tooltip {
+  opacity: 0; }
+  .ColumnChart-svg.is-hoverable .ColumnChart-tooltip:hover {
+    opacity: 1; }
 
 .ApiCta-title {
   font-size: 18px;
@@ -2668,28 +2679,26 @@ li {
       padding-top: 15px; } }
 
 .YearSelect-fixed {
-  display: none; }
-  @media screen and (900px) {
-    .YearSelect-fixed {
-      background: #3f3f3f;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      -webkit-transform: translateY(-110%);
-              transform: translateY(-110%);
-      transition: -webkit-transform 0.4s;
-      transition: transform 0.4s;
-      transition: transform 0.4s, -webkit-transform 0.4s;
-      z-index: 9999999999;
-      box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12); } }
-  @media screen and (900px) and (min-width: 900px) {
+  overflow: hidden;
+  background: #3f3f3f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  z-index: 9999999999;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12); }
+  @media screen and (min-width: 900px) {
     .YearSelect-fixed {
       background-color: #f0f0f0; } }
-  @media screen and (900px) {
-      .YearSelect-fixed.is-active {
-        -webkit-transform: translateY(0);
-                transform: translateY(0); } }
+  .YearSelect-fixed.is-active {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    overflow: visible; }
 
 .YearSelect-instance {
   text-align: center;
@@ -2944,15 +2953,6 @@ li {
 .Events-line {
   padding: 2px 0;
   font-style: italic; }
-
-.ColumnChart-svg {
-  overflow: hidden; }
-
-.ColumnChart-svg.is-hoverable .ColumnChart-tooltip {
-  cursor: pointer;
-  opacity: 0; }
-  .ColumnChart-svg.is-hoverable .ColumnChart-tooltip:hover {
-    opacity: 1; }
 
 .CsoLinks {
   padding: 13px 23px 33px 17px; }
@@ -3518,6 +3518,32 @@ li {
       width: 190px;
       vertical-align: middle;
       text-align: center; } }
+
+.ExpenditureChart-table {
+  margin-top: 20px;
+  border: 1px solid #3f3f3f;
+  font-size: 11px;
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse; }
+
+.ExpenditureChart-heading {
+  padding: 5px 10px;
+  border: 1px solid #3f3f3f; }
+
+.ExpenditureChart-cell {
+  padding: 5px 10px;
+  border: 1px solid #3f3f3f; }
+
+.ExpenditureChart-inflation {
+  text-align: center;
+  font-family: verdana;
+  font-size: 11px; }
+
+.ExpenditureChart-radio {
+  display: block; }
+  @media screen and (min-width: 500px) {
+    .ExpenditureChart-radio {
+      display: inline-block; } }
 
 .CsoDirectory::after {
   clear: both;
