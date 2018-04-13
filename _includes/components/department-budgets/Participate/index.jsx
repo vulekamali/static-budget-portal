@@ -1,16 +1,17 @@
 import { h } from 'preact';
+import returnHtml from './partials/returnHtml.js';
+import PseudoSelect from './../../universal/PseudoSelect/index.jsx';
+import createTooltips from './../../universal/Tooltip/index.js';
 
 
-export default function Participate({ items, selected, setMonth }) {
-  const months = Object.keys(items);
+export default function Participate({ months, selected, setMonth, mobile, open, setMobileMonth }) {
 
-  const selectors = months.map((month) => {
+  const selectors = Object.keys(months).map((month) => {
     const activeState = selected === month ? ' is-active' : '';
 
     return (
       <button
-        key={month}
-        className={`Button is-lightGrey is-inline u-marginRight10 u-marginBottom10${activeState}`}
+        className={`Participate-button${activeState}`}
         onClick={() => setMonth(month)}
       >
         {month}
@@ -18,29 +19,24 @@ export default function Participate({ items, selected, setMonth }) {
     );
   });
 
-  const CallToActions = Object.keys(items[selected].buttons) || [];
-  const CallToActionsButtons = CallToActions.map((key) => {
-    return (
-      <a
-        href={items[selected].buttons[key]}
-        className="Button is-inline u-marginRight10 u-marginBottom10"
-        key={key}
-      >
-        {key}
-      </a>
-    );
-  });
+  const mobileSelectors = (
+    <PseudoSelect
+      items={months}
+      selected={selected}
+      changeAction={month => setMobileMonth(month)}
+      name="participate-select"
+      open={open}
+    />
+  );
 
   return (
     <div className="Participate">
-      { selectors }
-      <div className="Participate-info" key={selected}>
-        <h3 className="Page-subHeading">What is happening in March with the department?</h3>
-        <p>{items[selected].state}</p>
-        <h3 className="Page-subHeading">How can I participate?</h3>
-        <p>{items[selected].participate}</p>
-        {CallToActionsButtons}
-      </div>
+      { mobile ? mobileSelectors : selectors }
+      <div
+        className="Participate-info"
+        dangerouslySetInnerHTML={{ __html: returnHtml(selected) }}
+        ref={node => createTooltips([node])}
+      />
     </div>
   );
 }
