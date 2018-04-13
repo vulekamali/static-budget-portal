@@ -16,6 +16,11 @@ support:
   background: grey
 ---
 
+## Table of Contents
+- [Overview](#overview)
+- [Examples](#examples)
+- [API](#api)
+
 ## Overview
 
 `Section` should form the backbone of how you seperate groups of content inside the `Page` component. By default this component takes on the appearance of a traditional UI card component. However, it has the capacity to appear beveled with more than one card nested inside of it to create another level of content grouping. In addition, a modifier can be passed to the component to only use it's padding and structure without the styling. 
@@ -27,30 +32,48 @@ _NOTE: The `Section` component aims to encapsulate itself from the it's parent c
 ## Examples
 
 ### Basic
-[View Source](basic.html)
 <iframe width="100%" height="315" src="basic.html" frameborder="0" allowfullscreen></iframe>
+[View Example](basic.html)
+
+<iframe width="100%" height="315" src="code-basic.html" frameborder="0" allowfullscreen></iframe>
+[View Code](code-basic.html)
 
 ### Grouped
-[View Source](grouped.html)
 <iframe style="resize: horizontal;" width="100%" height="800" src="grouped.html" frameborder="0" allowfullscreen></iframe>
+[View Example](grouped.html)
+
+<iframe width="100%" height="315" src="code-grouped.html" frameborder="0" allowfullscreen></iframe>
+[View Code](code-grouped.html)
 
 ### Green Bevel
-[View Source](green.html)
 <iframe style="resize: horizontal;" width="100%" height="315" src="green.html" frameborder="0" allowfullscreen></iframe>
+[View Example](green.html)
+
+<iframe width="100%" height="315" src="code-green.html" frameborder="0" allowfullscreen></iframe>
+[View Code](code-green.html)
 
 ### Dark Card
-[View Source](dark.html)
 <iframe style="resize: horizontal;" width="100%" height="315" src="dark.html" frameborder="0" allowfullscreen></iframe>
+[View Example](dark.html)
+
+<iframe width="100%" height="315" src="code-dark.html" frameborder="0" allowfullscreen></iframe>
+[View Code](code-dark.html)
 
 ### Clickable
-[View Source](clickable.html)
 <iframe style="resize: horizontal;" width="100%" height="315" src="clickable.html" frameborder="0" allowfullscreen></iframe>
+[View Example](clickable.html)
+
+<iframe width="100%" height="315" src="code-clickable.html" frameborder="0" allowfullscreen></iframe>
+[View Code](code-clickable.html)
 
 ### Invisible Card
-[View Source](invisible.html)
 <iframe style="resize: horizontal;" width="100%" height="315" src="invisible.html" frameborder="0" allowfullscreen></iframe>
+[View Example](invisible.html)
 
-## API's
+<iframe width="100%" height="315" src="code-invisible.html" frameborder="0" allowfullscreen></iframe>
+[View Code](code-invisible.html)
+
+## API
 
 ### HTML via CSS classes
 

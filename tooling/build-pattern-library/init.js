@@ -6,6 +6,9 @@ const { prettyPrint } = require('html');
 const { basename, extname } = require('path');
 const marked = require('marked');
 const frontMatter = require('front-matter');
+const { Html5Entities } = require('html-entities');
+
+const entities = new Html5Entities();
 
 const config = {
   root: `${process.cwd()}/_includes/components`,
@@ -723,15 +726,15 @@ pre {
 
 
 // index, info, example
-function buildHtmlShell(content, type) {
+function buildHtmlShell(content, type, noAssets) {
   const scripts = type === 'example' ? '../assets/generated/scripts.js' : '';
 
   const createStylesheet = () => {
-    if (type === 'index') {
+    if (type === 'index' && !noAssets) {
       return '<link rel="stylesheet" href="assets/base/styles.css">';
-    } else if (type === 'info') {
+    } else if (type === 'info' && !noAssets) {
       return '<link rel="stylesheet" href="../assets/base/styles.css">';
-    } else if (type === 'example') {
+    } else if (type === 'example' && !noAssets) {
       return '<link rel="stylesheet" href="../assets/generated/styles.css">';
     }
 
@@ -746,10 +749,10 @@ function buildHtmlShell(content, type) {
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       ${createStylesheet()}
     </head>
-    <body style="padding: 20px">
+    <body ${!noAssets ? 'style="padding: 20px"' : 'style="background: black"'}>
       ${type === 'index' ? '<h1>Vulekamali Pattern Library</h1>' : ''}
       ${content}
-      <script src="${scripts}"></script>
+      ${!noAssets ? '<script src="' + scripts + '"></script>' : ''}
     </body>
   </html>`);
 }
@@ -766,7 +769,7 @@ function getParentFolderName(path) {
 }
 
 
-function createHtml(path, content, type, labels = {}) {
+function createHtml(path, content, type, labels = {}, noAssets) {
   const buildLabel = () => {
     let labelsCode = '';
     let title = '';
@@ -790,7 +793,7 @@ function createHtml(path, content, type, labels = {}) {
 
   writeFileSync(
     path,
-    buildHtmlShell(buildLabel() + content, type),
+    buildHtmlShell(buildLabel() + content, type, noAssets),
     (err) => {
       if (err) {
         return console.error(err);
@@ -1009,6 +1012,7 @@ function parseExamples(data) {
       const examples = Object.keys(component.examples);
       examples.forEach((fileName) => {
         const markup = readFileSync(component.examples[fileName], 'utf-8');
+        createHtml(`${config.destination}/${name}/code-${fileName}`, `<style>pre + code { display: none !important; }</style><pre style="white-space: pre-wrap;"><code style="background: black; padding: 10px; display: block; color: white">${entities.encode(markup)}</pre></code>`, 'example', null, true);
         createHtml(`${config.destination}/${name}/${fileName}`, markup, 'example');
       });
     }
