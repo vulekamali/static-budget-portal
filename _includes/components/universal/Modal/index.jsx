@@ -40,4 +40,3 @@ Modal.propTypes = {
   closeAction: PropTypes.func.isRequired,
   open: PropTypes.bool.isRequired,
 };
-

@@ -72,3 +72,11 @@ A lowel-level component that is used to create Icons.
 
 ### Jekyll via an include
 Use exact same API as Preact, by passing props as variables inside an include. For example: `{% include component/Icon/index.html type="facebook" %}`.
+
+## Support
+
+| Browser | Enhancement |
+|---|---|
+| IE 5 | No support |
+| IE 9 | Complete support for icons, however due to the absence of flexbox icons might have some additional padding below them depending on the size of line-height (Base Support) |
+| Evergreen browsers | No extra padding around icon (Optimal Support) |

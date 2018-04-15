@@ -109,7 +109,7 @@ export default function ExpenditureChart(props) {
                 />
               </div>
               <div className="ProgrammesChart-shareButton u-marginLeft5">
-                <button onClick={shareAction} className="Button has-icon">
+                <button onClick={shareAction} className="Button is-circle">
                   <div className="u-transformRotate270">
                     <Icon type="download" size="small" />
                   </div>

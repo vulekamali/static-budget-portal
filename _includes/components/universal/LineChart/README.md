@@ -1,5 +1,4 @@
 ---
-title: LineChart
 category: Universal Components
 assets: examples
 state:

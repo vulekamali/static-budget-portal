@@ -11,7 +11,7 @@ API:
   color: black
   background: '#CCCCCC'
 support:
-  text: untested
+  text: IE 8
   color: white
   background: grey
 ---
@@ -20,10 +20,14 @@ support:
 - [Overview](#overview)
 - [Examples](#examples)
 - [API](#api)
+- [Support](#support)
 
 ## Overview
 
-...
+- The `Grid` component supports two types of HTML nodes: The `Grid` parent node, `Grid-inner` and `Grid-item`.
+- You apply a modifier to the parent node to determine at what viewport the grid should trigger, at all viewports below this `Grid-items` will just function as normal `<div>` tags.
+- No trigger is set by default in order to preserve mobile-first functionality and as a fallback when the required browser features are not supported.
+- All items are seperated by gutters of `30px` between them.
 
 ## Examples
 
@@ -62,14 +66,22 @@ support:
 #### `.Grid`
 | Modifier | Description |
 |---|---|
-| `.is-mobileTrigger` | ... |
-| `.is-tabletTrigger` | ... |
-| `.is-standardTrigger` | ... |
-| `.is-widescreenTrigger` | ... |
+| `.is-mobileTrigger` | Grid layout get triggered at mobile viewport size (0px) |
+| `.is-tabletTrigger` | Grid layout only gets triggered at tablet viewport size (500px) |
+| `.is-standardTrigger` | Grid layout only gets triggered at standard viewport size (750px) |
+| `.is-widescreenTrigger` | Grid layout only gets triggered at widescreen viewport size (1050px) |
 
 #### `.Grid-item`
 | Modifier | Description |
 |---|---|
-| `.is-1of2` | Changes the width and height of the icon from the default 18px's to 16px. |
-| `.is-1of3` | Changes the width and height of the icon from the default 18px's to 24px. |
-| `.is-2of3` | Changes the width and height of the icon from the default 18px's to 24px. |
+| `.is-1of2` | Sizes the cell as half the size of it's current row |
+| `.is-1of3` | Sizes the cell as a third the size of it's current row |
+| `.is-2of3` | Sizes the cell as two-thirds the size of it's current row |
+
+## Support
+
+| Browser | Enhancement |
+|---|---|
+| IE 5 | No viewports are fired and an addition `30px` margin is added to the bottom of the component due to `calc` not being supported (Partial Support) |
+| IE 8 | No viewport triggers are fired, which means that `Grid-item`'s will retain their default state of a width of  (Base Support) |
+| IE 9 | Viewport triggers fire as expected (Optimal Support) |

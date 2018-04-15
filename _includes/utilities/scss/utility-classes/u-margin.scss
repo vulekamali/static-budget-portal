@@ -1,19 +1,19 @@
 .u-margin {
   @for $i from 0 through 6 {
     &#{$i * 5} {
-      margin: #{$i * 5} !important;
+      margin: #{$i * 5}px !important;
     }
   }
 
   @for $i from 0 through 3 {
     &#{($i * 10) + 30} {
-      margin: #{($i * 10) + 30} !important;
+      margin: #{($i * 10) + 30}px !important;
     }
   }
 
   @for $i from 0 through 3 {
     &#{($i * 100) + 100} {
-      margin: #{($i * 100) + 100} !important;
+      margin: #{($i * 100) + 100}px !important;
     }
   }
 }

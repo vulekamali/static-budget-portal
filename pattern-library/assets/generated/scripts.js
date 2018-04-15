@@ -19219,7 +19219,7 @@ function ProgrammesChart(props) {
               { className: 'ProgrammesChart-shareButton u-marginLeft5' },
               (0, _preact.h)(
                 'button',
-                { onClick: shareAction, className: 'Button has-icon' },
+                { onClick: shareAction, className: 'Button is-circle' },
                 (0, _preact.h)(
                   'div',
                   { className: 'u-transformRotate270' },
@@ -21383,7 +21383,7 @@ function ExpenditureChart(props) {
               { className: 'ProgrammesChart-shareButton u-marginLeft5' },
               (0, _preact.h)(
                 'button',
-                { onClick: shareAction, className: 'Button has-icon' },
+                { onClick: shareAction, className: 'Button is-circle' },
                 (0, _preact.h)(
                   'div',
                   { className: 'u-transformRotate270' },
@@ -22556,73 +22556,73 @@ function returnHtml(key) {
 /* 193 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n| \r\n| <ul>\r");
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Treasury drafts budget documents, including responses to the recommendations Parliament puts forward to the Minister of Finance in Budget Review and Recommendations Reports.</li>\r\n  <li>Departments finalise their budgets and budget documentation.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 194 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n| \r\n| <ul>\r");
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Main Budget is tabled in Parliament, including legislation (Appropriation Bill, Division of Revenue Bill and Revenue Bills) and accompanying documentation.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 195 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n| \r\n| <ul>\r");
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Departments table strategic and annual performance plans.</li>\r\n  <li>Provincial budgets are tabled and submitted to National Treasury.</li>\r\n  <li>Within 16 days of the Budget being tabled, the Committees on Finance must submit a report to the National Assembly and the National Council of Provinces on the fiscal framework and revenue proposals.</li>\r\n  <li>The Committees on Finance hold public hearings when deliberating the contents and recommendations to be included in its reports.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Make submissions to the Committees on Finance providing your input on the fiscal framework and the revenue (tax) proposals.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 196 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n| \r\n| <ul>\r");
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury plans the budget strategy and process, taking into account the priorities set out by the department responsible for planning.</li>\r\n  <li>Departments conducts reviews and analysis of departmental expenditure outcomes and budgets.</li>\r\n  <li>Parliament needs to pass the Division of Revenue Bill with or without amendments within 35 days of the fiscal framework being adopted by Parliament. The Committees on Appropriations holds public hearings when deliberating the contents and recommendations to be included in its report on the division of revenue bill.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Make submissions to the Committees on Appropriations providing your input on the division of money across the three spheres of government.</li>\r\n  <li>Participate in public hearings held by provincial legislatures to debate the Division of Revenue Act and decide on whether to assent to it.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 197 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n| \r\n| <ul>\r");
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury issues budget guidelines to departments requesting budget submissions, including their 3-year expenditure estimates, in accordance with the adopted budget strategy and planned budget process.</li>\r\n  <li>Departments engage with analysts on departmental budgets and the drafting of budget submissions.</li>\r\n  <li>Parliament reviews each department's budget, including the department's Annual Performance Plan (APP) and Strategic Plan (SP).</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Review the department's Annual Annual Performance Plans (APPs) and Strategic Plans (SPs).</li>\r\n  <li>Engage government departments and relevant committees on the content of the APPs and SPs and whether departmental budgets have been properly prioritised.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 198 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n| \r\n| <ul>\r");
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury compiles departmental budget submissions and engage with departments to assist with submissions. Function groups hold discussions and begin formulating recommendations to budget technical structures, including the Ministers' Committee on the Budget Technical Committee (MTEC) and the Technical Committee on Finance (TCF).</li>\r\n  <li>Departments engage with analysts on departmental budgets and the drafting of budget submissions.</li>\r\n  <li>Parliament decides on priorities for the third Parliamentary term.</li>\r\n  <li>Parliament conducts oversight visits, study tours and special projects.</li>\r\n  <li>Parliament holds the \"Youth Parliament\".</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Lobby parliament, parliamentary committees and MPs for specific oversight visits.</li>\r\n  <li>Participate in parliamentary oversight visits.</li>\r\n  <li>Participate in youth parliaments.</li>\r\n  <li>Engage government departments on the likely content of their budget submissions.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 199 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n| \r\n| <ul>\r");
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury compiles departmental budget submissions and engage with departments to assist with submissions. Function groups hold discussions and begin formulating recommendations to budget technical structures, including the Ministers' Committee on the Budget Technical Committee (MTEC) and the Technical Committee on Finance (TCF).</li>\r\n  <li>Departments submit MTEF budgets to the National Treasury and engagements are held on these budget submissions.</li>\r\n  <li>Parliament must pass the Appropriation Bill, with or without amendments, within four months after the start of the financial year: by 31 July.</li>\r\n  <li>The Committees on Appropriations holds public hearings when deliberating the contents and recommendations to be included in its report on the Appropriation Bill.</li>\r\n  <li>Parliament conducts oversight visits, study tours and special projects.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Engagement government departments on their budget submissions.</li>\r\n  <li>Lobby parliament, parliamentary committees and MPs for specific oversight visits.</li>\r\n  <li>Participate in parliamentary oversight visits.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 200 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n| \r\n| <ul>\r");
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury holds technical structures hearings, where function groups present their recommendations.</li>\r\n  <li>The Ministers' Committee on the Budget Technical Committee (MTEC) deliberations culminate in it tabling recommendations to political executive structures, including the Ministers' Committee on the Budget (MINCOMBUD), the Budget Council and the Budget Forum.</li>\r\n  <li>The Ministers' Committee on the Budget (MINCOMBUD) finalises its recommendations to Cabinet on the fiscal framework, key national government spending priorities, division of revenue (DoR) and the substantial adjustments to conditional grants to be tabled in the Medium Term Budget Policy Statement (MTBPS).</li>\r\n  <li>Departments engage with technical and political structures on the budget as per the adopted budget strategy and budget process.</li>\r\n  <li>Holding of \"Women's Parliament\".</li>\r\n  <li>Parliament decides on the priorities for the fourth term.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Engage government departments on their budgets.</li>\r\n</ul>\r\n    \r\n";
 
 /***/ }),
 /* 201 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n| \r\n| <ul>\r");
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury holds technical structures hearings, where function groups present their recommendations.</li>\r\n  <li>The Ministers' Committee on the Budget Technical Committee (MTEC) deliberations culminate in it tabling recommendations to political executive structures, including the Ministers' Committee on the Budget (MINCOMBUD), the Budget Council and the Budget Forum.</li>\r\n  <li>The Ministers' Committee on the Budget (MINCOMBUD) finalises its recommendations to Cabinet on the fiscal framework, key national government spending priorities, division of revenue (DoR) and the substantial adjustments to conditional grants to be tabled in the Medium Term Budget Policy Statement (MTBPS).</li>\r\n  <li>Departments engage with technical and political structures on the budget as per the adopted budget strategy and budget process.</li>\r\n  <li>Parliament decides on the priorities for the fourth term.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Engage government departments on their budgets.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 202 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n| \r\n| <ul>\r");
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Cabinet considers the recommendations tabled before it on the Medium Term Budget Policy Statement (MTBPS) and the MTBPS is then tabled. It includes the 3 year policy position on the fiscal framework, key national government spending priorities, the Division of Revenue (DoR) as well as the substantial adjustments to conditional grants.</li>\r\n  <li>In-year budget processes culminate in the tabling of the Adjustments Appropriation Bill and the Division of Revenue Amendment Bill.</li>\r\n  <li>National Treasury issues draft allocation letters to national departments and the departments begin preparing their budget documentation inputs on the basis of these letters.</li>\r\n  <li>Departments prepare budgets and budget documentation in accordance with the received draft allocations.</li>\r\n  <li>Parliament reviews the Annual Reports (ARs) and preparation for BRRRs.</li>\r\n  <li>Within 9 days of the tabling of the adjustments budget, Parliament must submit a report on the revised fiscal framework to the respective houses for consideration and adoption.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Participate in public hearings on the revised fiscal framework.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 203 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n| \r\n| <ul>\r");
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Deliberations take place within National Treasury's budget technical structures to enable them to finalise recommendations to political structures on the detail of the MTEF National allocations to be tabled in the budget in February.</li>\r\n  <li>Cabinet considers the recommendations tabled before it. Allocations adopted by Cabinet are included in updated allocation letters sent to departments.</li>\r\n  <li>Departments update their budget documentation inputs accordingly.</li>\r\n  <li>Departments finalise their budgets and budget documentation in accordance with the final allocations received.</li>\r\n  <li>Within 9 days after the adoption of the fiscal framework report, Parliament must report to the respective Houses on the Division of Revenue Amendment Bill.</li>\r\n  <li>The Committee on Appropriations must report to the relevant House on the Adjustments Appropriation Bill within 30 days of the tabling of the national adjustments budget.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Participate in public hearings on the Division of Revenue Amendment Bill in the national and provincial legislatures.</li>\r\n  <li>Participate in public hearings on the Adjustments Appropriation Bill. These will be held by the appropriations committee and the relevant sector committees may also be engaged.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 204 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n| \r\n| <ul>\r");
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Treasury drafts budget documents, including responses to the recommendations Parliament puts forward to the Minister of Finance in Budget Review and Recommendations Reports.</li>\r\n  <li>Departments finalise their budgets and budget documentation.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 205 */
@@ -23101,14 +23101,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 function scripts() {
-  var nodesList = document.getElementsByClassName('js-pageLoad ');
+  var nodesList = document.getElementsByClassName('Button js-pageLoad ');
 
   for (var i = 0; i < nodesList.length; i++) {
-    var node = nodesList[i];
-    var addLoader = function addLoader(event) {
-      event.target.innerHTML = '&nbsp;<div class="Button-loader"></div>';
-    };
-    node.addEventListener('click', addLoader);
+    if (CSS && CSS.supports('animation-name', 'spin')) {
+      var node = nodesList[i];
+      var addLoader = function addLoader(event) {
+        event.target.innerHTML = '&nbsp;<div class="Button-loader"></div>';
+      };
+      node.addEventListener('click', addLoader);
+    }
   }
 }
 
@@ -23370,7 +23372,7 @@ function Button(_ref) {
 
   return (0, _preact.h)(
     'div',
-    { className: 'Button has-icon', onClick: share },
+    { className: 'Button is-circle', onClick: share },
     (0, _preact.h)(_Icon2.default, null)
   );
 }

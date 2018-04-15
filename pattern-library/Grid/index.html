@@ -9,7 +9,7 @@
     </head>
     
     <body style="padding: 20px">
-         <h1>Grid<span style="display: inline-block; font-size: 14px; background: green; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">state: ✔ stable</span><span style="display: inline-block; font-size: 14px; background: #CCCCCC; color: black; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">API: HTML</span><span style="display: inline-block; font-size: 14px; background: grey; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">support: untested</span></h1>
+         <h1>Grid<span style="display: inline-block; font-size: 14px; background: green; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">state: ✔ stable</span><span style="display: inline-block; font-size: 14px; background: #CCCCCC; color: black; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">API: HTML</span><span style="display: inline-block; font-size: 14px; background: grey; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">support: IE 8</span></h1>
         <h2 id="table-of-contents">Table of Contents</h2>
 
         <ul>
@@ -19,11 +19,22 @@
             </li>
             <li><a href="#api">API</a>
             </li>
+            <li><a href="#support">Support</a>
+            </li>
         </ul>
         
 <h2 id="overview">Overview</h2>
 
-        <p>...</p>
+        <ul>
+            <li>The <code>Grid</code> component supports two types of HTML nodes: The <code>Grid</code> parent
+                node, <code>Grid-inner</code> and <code>Grid-item</code>.</li>
+            <li>You apply a modifier to the parent node to determine at what viewport
+                the grid should trigger, at all viewports below this <code>Grid-items</code> will
+                just function as normal <code>&lt;div&gt;</code> tags.</li>
+            <li>No trigger is set by default in order to preserve mobile-first functionality
+                and as a fallback when the required browser features are not supported.</li>
+            <li>All items are seperated by gutters of <code>30px</code> between them.</li>
+        </ul>
         
 <h2 id="examples">Examples</h2>
 
@@ -96,22 +107,22 @@
                 <tr>
                     <td><code>.is-mobileTrigger</code>
                     </td>
-                    <td>...</td>
+                    <td>Grid layout get triggered at mobile viewport size (0px)</td>
                 </tr>
                 <tr>
                     <td><code>.is-tabletTrigger</code>
                     </td>
-                    <td>...</td>
+                    <td>Grid layout only gets triggered at tablet viewport size (500px)</td>
                 </tr>
                 <tr>
                     <td><code>.is-standardTrigger</code>
                     </td>
-                    <td>...</td>
+                    <td>Grid layout only gets triggered at standard viewport size (750px)</td>
                 </tr>
                 <tr>
                     <td><code>.is-widescreenTrigger</code>
                     </td>
-                    <td>...</td>
+                    <td>Grid layout only gets triggered at widescreen viewport size (1050px)</td>
                 </tr>
             </tbody>
         </table>
@@ -129,20 +140,45 @@
                 <tr>
                     <td><code>.is-1of2</code>
                     </td>
-                    <td>Changes the width and height of the icon from the default 18px&#39;s to
-                        16px.</td>
+                    <td>Sizes the cell as half the size of it&#39;s current row</td>
                 </tr>
                 <tr>
                     <td><code>.is-1of3</code>
                     </td>
-                    <td>Changes the width and height of the icon from the default 18px&#39;s to
-                        24px.</td>
+                    <td>Sizes the cell as a third the size of it&#39;s current row</td>
                 </tr>
                 <tr>
                     <td><code>.is-2of3</code>
                     </td>
-                    <td>Changes the width and height of the icon from the default 18px&#39;s to
-                        24px.</td>
+                    <td>Sizes the cell as two-thirds the size of it&#39;s current row</td>
+                </tr>
+            </tbody>
+        </table>
+        
+<h2 id="support">Support</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Browser</th>
+                    <th>Enhancement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IE 5</td>
+                    <td>No viewports are fired and an addition <code>30px</code> margin is added
+                        to the bottom of the component due to <code>calc</code> not being supported
+                        (Partial Support)</td>
+                </tr>
+                <tr>
+                    <td>IE 8</td>
+                    <td>No viewport triggers are fired, which means that <code>Grid-item</code>&#39;s
+                        will retain their default state of a width of (Base Support)</td>
+                </tr>
+                <tr>
+                    <td>IE 9</td>
+                    <td>Viewport triggers fire as expected (Optimal Support)</td>
                 </tr>
             </tbody>
         </table>

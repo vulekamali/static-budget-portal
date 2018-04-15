@@ -12,16 +12,21 @@
   fill: white;
   text-decoration: none;
   display: block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  @supports (display: flex) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   &:hover {
     background: darken(#7bb344, 15%);
   }
 
-  &.has-icon {
-    padding: 13px;
+  &.is-circle {
+    @supports (display: flex) {
+      padding: 13px;
+    }
   }
 
   &.is-inline {

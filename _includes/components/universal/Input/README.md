@@ -1,11 +1,10 @@
 ---
-title: Input
 category: Universal Components
 assets: examples
 state:
-  text: ✔ stable
+  text: ✖ unstable
   color: white
-  background: green
+  background: red
 API:
   text: HTML
   color: black

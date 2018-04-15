@@ -19,11 +19,25 @@
             </li>
             <li><a href="#api">API</a>
             </li>
+            <li><a href="#support">Support</a>
+            </li>
         </ul>
         
 <h2 id="overview">Overview</h2>
 
-        <p>...</p>
+        <ul>
+            <li>Buttons indicate an action a user can perform.</li>
+            <li>Class can be used on either <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> tags.
+                Generally a-tags are used for links to pages and button-tags modify the
+                state of the current page.</li>
+            <li>The theming of the button, either primary (the default) or secondary,
+                guides the user to what is perceived to be the next logical action.</li>
+            <li>Buttons should always incate clearly what will happen once clicked. Either
+                when read in combination with it&#39;s header or in the button itself.
+                Prefer phrases like &#39;Sign up for our newsletter&#39; or &#39;Show all
+                departments&#39; above phrases like &#39;Stay informed&#39; or &#39;Explore
+                more departments&#39;.</li>
+        </ul>
         
 <h2 id="examples">Examples</h2>
 
@@ -146,22 +160,78 @@
                 <tr>
                     <td><code>.is-secondary</code>
                     </td>
-                    <td>...</td>
+                    <td>Applies a white background and dark grey colors to the button. Useful
+                        when a call to action needs to sit lower in the visual hierarchy than a
+                        primary call/s to action (default button state)</td>
                 </tr>
                 <tr>
                     <td><code>.is-small</code>
                     </td>
-                    <td>...</td>
+                    <td>Decreases padding and font-size down to <code>13px</code>. Useful when
+                        default button size seems too big in proportion to it&#39;s surrounding
+                        elements. Do not use small to indicate secondary call to actions, rather
+                        rely on the <code>is-secondary</code> modifier</td>
                 </tr>
                 <tr>
                     <td><code>.is-inline</code>
                     </td>
-                    <td>...</td>
+                    <td>By default buttons are rendered as block level elements. This enables
+                        a parent HTML element to control the width of the button while keeping
+                        buttons encapsulated from their parents</td>
                 </tr>
                 <tr>
                     <td><code>.is-invisible</code>
                     </td>
-                    <td>...</td>
+                    <td>Removes visual styling from button, however retains underlying structure
+                        and hover effect. This is useful if you want to create a clickable element,
+                        but do not want it to call attention as a call to action</td>
+                </tr>
+                <tr>
+                    <td><code>.is-circle</code>
+                    </td>
+                    <td>Forces the width and the width and the height padding to be the same,
+                        as opposed to the regular 2:3 ratio. This is useful when a button only
+                        has an icon or single letter and you prefer the button to be a circle.</td>
+                </tr>
+                <tr>
+                    <td><code>.js-padeLoad</code>
+                    </td>
+                    <td>Triggers a loading animation on the button once pressed. This is useful
+                        when a button triggers a new pade to load. When there is high-latency on
+                        the network (usually on mobile devices) it provides the user explicit feedback
+                        that an action is currently in progress</td>
+                </tr>
+            </tbody>
+        </table>
+        
+<h2 id="support">Support</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Browser</th>
+                    <th>Enhancement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IE 5</td>
+                    <td>Has problems with <code>is-small</code> modifier and icons do not display.
+                        (Partial support)</td>
+                </tr>
+                <tr>
+                    <td>IE 7</td>
+                    <td>Icons do not work, can be used as long as icons always have supplementary
+                        text inside the button. (Partial support)</td>
+                </tr>
+                <tr>
+                    <td>IE 9</td>
+                    <td>Everything renders as it should, however page transition loading animation
+                        does not fire (Base Support)</td>
+                </tr>
+                <tr>
+                    <td>Evergreen browsers</td>
+                    <td>Page transition loading animation fires (Optimal Support)</td>
                 </tr>
             </tbody>
         </table>

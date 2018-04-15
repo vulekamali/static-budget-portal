@@ -7,7 +7,7 @@ state:
   color: white
   background: green
 API:
-  text: Preact
+  text: HTML
   color: black
   background: '#CCCCCC'
 support:

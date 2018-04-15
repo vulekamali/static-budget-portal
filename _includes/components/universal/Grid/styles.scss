@@ -7,29 +7,31 @@ $breakpoint-list: (
 
 
 .Grid {
-  @include clearfix;
+  @media screen and (min-width: 0) {
+    overflow: hidden;
+    border: 1px solid transparent;
+  }
+}
 
-  @each $name, $pixels in $breakpoint-list {
-    @media screen and (min-width: #{$pixels}px) {
-      &.has-#{$name}Trigger {
-        margin-left: -15px;
-        margin-right: -15px;
-      }
-    }
+.Grid-inner {
+  @media screen and (min-width: 0) {
+    margin: -15px;
+    @include clearfix;
   }
 }
 
 .Grid-item {
-  float: left;
-  width: 100%;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 0) {
+    float: left;
+    margin: 15px;
+    width: 100%;
+    width: calc(100% - 30px);
+  }
 
   @each $name, $pixels in $breakpoint-list {
     @media screen and (min-width: #{$pixels}px) {
-      .Grid.has-#{$name}Trigger & {
-        margin: 0 15px;
-        width: calc(100% - 30px);
-      }
-
       .Grid.has-#{$name}Trigger &.is-1of3 {
         width: calc((100% / 3) - 30px);
       }

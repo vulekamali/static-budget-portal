@@ -129,8 +129,34 @@
 
         <p>Use exact same API as Preact, by passing props as variables inside an
             include. For example: <code>{% include component/Icon/index.html type=&quot;facebook&quot; %}</code>.</p>
-        <script
-        src=""></script>
+        <h2
+        id="support">Support</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Browser</th>
+                        <th>Enhancement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IE 5</td>
+                        <td>No viewports are fired and an addition <code>30px</code> margin is added
+                            to the bottom of the component due to <code>calc</code> not being supported
+                            (Partial Support)</td>
+                    </tr>
+                    <tr>
+                        <td>IE 8</td>
+                        <td>No viewport triggers are fired, which means that <code>Grid-item</code>&#39;s
+                            will retain their default state of a width of (Base Support)</td>
+                    </tr>
+                    <tr>
+                        <td>IE 9</td>
+                        <td>Viewport triggers fire as expected (Optimal Support)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <script src=""></script>
     </body>
 
 </html>

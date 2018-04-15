@@ -1,6 +1,4 @@
 ---
-title: ProgrammesChart
-category: Department Budget Page Components
 assets: examples
 state:
   text: ✖ unstable

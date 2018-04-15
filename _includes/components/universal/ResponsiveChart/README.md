@@ -1,11 +1,10 @@
 ---
-title: ResponsiveChart
 category: Universal Components
 assets: examples
 state:
-  text: ✖ unstable
+  text: unstable
   color: white
-  background: red
+  background: green
 API:
   text: HTML / Preact
   color: black

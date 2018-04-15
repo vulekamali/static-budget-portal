@@ -11,7 +11,7 @@ API:
   color: black
   background: '#CCCCCC'
 support:
-  text: IE 10+
+  text: IE 7
   color: white
   background: grey
 ---
@@ -20,14 +20,16 @@ support:
 - [Overview](#overview)
 - [Examples](#examples)
 - [API](#api)
+- [Support](#support)
 
 ## Overview
 
-`Section` should form the backbone of how you seperate groups of content inside the `Page` component. By default this component takes on the appearance of a traditional UI card component. However, it has the capacity to appear beveled with more than one card nested inside of it to create another level of content grouping. In addition, a modifier can be passed to the component to only use it's padding and structure without the styling. 
-
-It is recommended to not nest component directly inside the Page component without having a `Section` component as a middle-man.
-
-_NOTE: The `Section` component aims to encapsulate itself from the it's parent component (usually the `Page` component), this means that in most cases you will need to add bottom or top margins via utility classes. This is also helpful in circumstances where it would be hard to programatically predict how things should collapse on mobile (specifically with columns and sidebars)._
+- `Section` should form the backbone of how you seperate groups of content inside the `Page` component.
+- By default this component takes on the appearance of a traditional UI card component.
+- However, it has the capacity to appear beveled with cards nested in it to either distinguish itself visually (with one card) or create a second level of grouping with multiple cards inside it.
+- It is recommended to not nest component directly inside the Page component without having a `Section` component as a middle-man.
+- The `Section` component aims to encapsulate itself from the it's parent component (usually the `Page` component), this means that in most cases you will need to add bottom or top margins via utility classes.
+- Spacing with utility classes is helpful in circumstances where it would be hard to programatically predict how things should collapse on mobile (specifically with columns and sidebars)._
 
 ## Examples
 
@@ -95,3 +97,11 @@ _NOTE: The `Section` component aims to encapsulate itself from the it's parent c
 | Modifier | Description |
 |---|---|
 | `.is-small` | Changes the text size from the default `16px` to `14px`, this is usefully when you want to have nested titles in the content underneath the primary title |
+
+## Support
+
+| Browser | Enhancement |
+|---|---|
+| IE 5 | Has problems with `is-dark` modifier. (Partial support) |
+| IE 7 | Acceptable rendition of component, renders mobile version. (Base Support) |
+| IE 9 | Rounded `border-radius`, `box-shadows` and additional spacing triggers due media query support (Optimal Support) |
