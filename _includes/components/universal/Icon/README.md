@@ -11,7 +11,7 @@ API:
   color: black
   background: '#CCCCCC'
 support:
-  text: untested
+  text: IE 9
   color: white
   background: grey
 ---
@@ -28,6 +28,7 @@ A lowel-level component that is used to create Icons.
 - Usually used inside other components.
 - Icons are always contained in a square (equal height and width) SVG. This makes resizing easier.
 - Never set the fill or stroke colour in the component itself, it should inherit fill and stroke colours of it's parent.
+- On non-evergreen browsers icon will not be converted to `block` elements, and rather retain the default `inline` box modal. This is done to enable icons to be centered without flexbox inside the `Button` component.
 
 ## Examples
 
@@ -78,5 +79,5 @@ Use exact same API as Preact, by passing props as variables inside an include. F
 | Browser | Enhancement |
 |---|---|
 | IE 5 | No support |
-| IE 9 | Complete support for icons, however due to the absence of flexbox icons might have some additional padding below them depending on the size of line-height (Base Support) |
-| Evergreen browsers | No extra padding around icon (Optimal Support) |
+| IE 9 | Complete support for icons, however due to the absence of flexbox icons might have a couple of pixels of padding below them depending on the size of line-height (Base Support) |
+| Evergreen browsers | No extra padding around icon |

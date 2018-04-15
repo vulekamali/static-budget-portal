@@ -813,9 +813,7 @@ li {
 .Icon {
   width: 18px;
   height: 18px;
-  display: inline-block;
-  position: relative;
-  top: 1px; }
+  display: inline-block; }
   @supports (display: flex) {
     .Icon {
       display: block;
@@ -830,9 +828,7 @@ li {
 .Icon {
   width: 18px;
   height: 18px;
-  display: inline-block;
-  position: relative;
-  top: 1px; }
+  display: inline-block; }
   @supports (display: flex) {
     .Icon {
       display: block;
@@ -870,9 +866,6 @@ li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -896,12 +889,12 @@ li {
     opacity: 0; }
 
 .Modal-boxWrap {
+  margin: 40px auto;
   position: relative;
   max-width: 570px;
   border-radius: 20px;
   background-color: #e6e6e6;
   padding: 10px;
-  margin: 40px;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
@@ -918,9 +911,6 @@ li {
   .Modal-inner.is-leave-active .Modal-boxWrap {
     -webkit-transform: scale(0);
             transform: scale(0); }
-  @media screen and (min-width: 900px) {
-    .Modal-boxWrap {
-      margin: 0; } }
 
 .Modal-box {
   border-radius: 10px;

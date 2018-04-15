@@ -11,7 +11,7 @@ API:
   color: black
   background: '#CCCCCC'
 support:
-  text: untested
+  text: IE 9
   color: white
   background: grey
 ---
@@ -20,10 +20,13 @@ support:
 - [Overview](#overview)
 - [Examples](#examples)
 - [API](#api)
+- [Support](#support)
 
 ## Overview
 
-...
+- A component representing a standard 'modal' (or often called 'dialog') pattern.
+- Note that, although feasable, there is currently no HTML for this component. It can only be rendered via Preact.
+- Uses `preact-css-transition-group` to animate showing and hiding of modals.
 
 ## Examples
 
@@ -50,6 +53,15 @@ support:
 
 | Prop | Description |
 |---|---|
-| `title` | ... |
-| `closeAction` | ... |
-| `open` | ... |
+| `title` | A string that determines the text that will be displayed at the top of the modal |
+| `closeAction` | A function that executes whenever a user clicks on the black overlay behind the modal or the close button inside it. |
+| `open` | A boolean that determines whether the modal is currently open or not |
+| children | Any Preact nodes passed as children of the component will be rendered inside it's content area. Note that the principle of JavaScript closures allows for the execution of parent events from inside the modal's passed children.
+
+## Support
+
+| Browser | Enhancement |
+|---|---|
+| IE 5 | Does not support Webpack's transpilation of JavaScript's module system (No support) |
+| IE 9 | Supports all functionality, however due to lacking flexbox support modal is not centered vertically, but offset `40px` from the top (Base support) |
+| IE 10 | Optimal support |

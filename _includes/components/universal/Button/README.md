@@ -11,7 +11,7 @@ API:
   color: black
   background: '#CCCCCC'
 support:
-  text: untested
+  text: IE 9
   color: white
   background: grey
 ---

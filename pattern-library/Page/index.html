@@ -9,7 +9,7 @@
     </head>
     
     <body style="padding: 20px">
-         <h1>Page<span style="display: inline-block; font-size: 14px; background: green; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">state: ✔ stable</span><span style="display: inline-block; font-size: 14px; background: #CCCCCC; color: black; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">API: HTML</span><span style="display: inline-block; font-size: 14px; background: grey; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">support: untested</span></h1>
+         <h1>Page<span style="display: inline-block; font-size: 14px; background: green; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">state: ✔ stable</span><span style="display: inline-block; font-size: 14px; background: #CCCCCC; color: black; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">API: HTML</span><span style="display: inline-block; font-size: 14px; background: grey; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">support: IE 9</span></h1>
         <h2 id="table-of-contents">Table of Contents</h2>
 
         <ul>
@@ -19,11 +19,27 @@
             </li>
             <li><a href="#api">API</a>
             </li>
+            <li><a href="#support">Support</a>
+            </li>
         </ul>
         
 <h2 id="overview">Overview</h2>
 
-        <p>...</p>
+        <ul>
+            <li>The <code>Page</code> component will always be the highest level component
+                on a page.</li>
+            <li>It controls the behaviour and positioning of the header, footer, content
+                and sidebar areas.</li>
+            <li>In order to impliment what is known as the &#39;holy-grail layout&#39;,
+                i.e. footer always sits at the bottom of the viewport, even when there
+                is not sufficient content to push it down (<a href="https://en.wikipedia.org/wiki/Holy_grail_(web_design)">https://en.wikipedia.org/wiki/Holy_grail_(web_design)</a>, <code>display: table</code> is
+                used.</li>
+            <li>However in order to avoid buggy behaviour (when detecting the width of
+                HTML nodes) and since mobile viewports almost always fill the entire viewport
+                with content, the above only triggers on tablet viewport sizes.</li>
+            <li>The sidebar will always collapse under the main content on viewports smaller
+                than widescreen (1050px).</li>
+        </ul>
         
 <h2 id="examples">Examples</h2>
 
@@ -70,30 +86,48 @@
 <h2 id="api">API</h2>
 
         
-<h3 id="preact-component">Preact Component</h3>
+<h3 id="html-via-css-classes">HTML via CSS classes</h3>
+
+        
+<h4 id="-page-contentinner"><code>.Page-contentInner</code></h4>
 
         <table>
             <thead>
                 <tr>
-                    <th>Prop</th>
+                    <th>CSS</th>
                     <th>Description</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><code>title</code>
+                    <td><code>.is-full</code>
                     </td>
-                    <td>...</td>
+                    <td>Modifies the page container width from the default <code>1024</code> to <code>1800</code>.
+                        This is useful when you want to factor very widescreen viewports into your
+                        page layout</td>
+                </tr>
+            </tbody>
+        </table>
+        
+<h2 id="support">Support</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Browser</th>
+                    <th>Enhancement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IE 5</td>
+                    <td>Media queries and <code>max-width</code> are not supported so sidebar will
+                        collapse under content and site will stretch all the way to width of the
+                        screen (Partial support)</td>
                 </tr>
                 <tr>
-                    <td><code>closeAction</code>
-                    </td>
-                    <td>...</td>
-                </tr>
-                <tr>
-                    <td><code>open</code>
-                    </td>
-                    <td>...</td>
+                    <td>IE 9</td>
+                    <td>Optimal Support</td>
                 </tr>
             </tbody>
         </table>

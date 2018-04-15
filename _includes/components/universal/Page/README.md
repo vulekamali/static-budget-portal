@@ -11,7 +11,7 @@ API:
   color: black
   background: '#CCCCCC'
 support:
-  text: untested
+  text: IE 9
   color: white
   background: grey
 ---
@@ -20,10 +20,15 @@ support:
 - [Overview](#overview)
 - [Examples](#examples)
 - [API](#api)
+- [Support](#support)
 
 ## Overview
 
-...
+- The `Page` component will always be the highest level component on a page.
+- It controls the behaviour and positioning of the header, footer, content and sidebar areas.
+- In order to impliment what is known as the 'holy-grail layout', i.e. footer always sits at the bottom of the viewport, even when there is not sufficient content to push it down (https://en.wikipedia.org/wiki/Holy_grail_(web_design), `display: table` is used.
+- However in order to avoid buggy behaviour (when detecting the width of HTML nodes) and since mobile viewports almost always fill the entire viewport with content, the above only triggers on tablet viewport sizes.
+- The sidebar will always collapse under the main content on viewports smaller than widescreen (1050px).
 
 ## Examples
 
@@ -51,10 +56,17 @@ support:
 
 ## API
 
-### Preact Component
+### HTML via CSS classes
 
-| Prop | Description |
+#### `.Page-contentInner`
+
+| CSS | Description |
 |---|---|
-| `title` | ... |
-| `closeAction` | ... |
-| `open` | ... |
+| `.is-full` | Modifies the page container width from the default `1024` to `1800`. This is useful when you want to factor very widescreen viewports into your page layout |
+
+## Support
+
+| Browser | Enhancement |
+|---|---|
+| IE 5 | Media queries and `max-width` are not supported so sidebar will collapse under content and site will stretch all the way to width of the screen (Partial support) |
+| IE 9 | Optimal Support |
