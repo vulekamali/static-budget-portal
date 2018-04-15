@@ -1,9 +1,9 @@
 ---
-title: ExpenditureChart
+assets: examples
 state:
   text: ✖ unstable
   color: white
-  background: blue
+  background: red
 API:
   text: HTML
   color: black

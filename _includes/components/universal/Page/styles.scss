@@ -46,7 +46,7 @@
   padding: 0 5px 100px;
   @include clearfix;
 
-  &--full {
+  &.is-full {
     max-width: 1800px;
   }
 
@@ -93,7 +93,6 @@
   font-weight: 900;
   display: block;
 }
-
 
 .Page-main {
   @media ($standard-breakpoint) {

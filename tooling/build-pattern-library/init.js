@@ -6,6 +6,9 @@ const { prettyPrint } = require('html');
 const { basename, extname } = require('path');
 const marked = require('marked');
 const frontMatter = require('front-matter');
+const { Html5Entities } = require('html-entities');
+
+const entities = new Html5Entities();
 
 const config = {
   root: `${process.cwd()}/_includes/components`,
@@ -723,15 +726,15 @@ pre {
 
 
 // index, info, example
-function buildHtmlShell(content, type) {
+function buildHtmlShell(content, type, noAssets) {
   const scripts = type === 'example' ? '../assets/generated/scripts.js' : '';
 
   const createStylesheet = () => {
-    if (type === 'index') {
+    if (type === 'index' && !noAssets) {
       return '<link rel="stylesheet" href="assets/base/styles.css">';
-    } else if (type === 'info') {
+    } else if (type === 'info' && !noAssets) {
       return '<link rel="stylesheet" href="../assets/base/styles.css">';
-    } else if (type === 'example') {
+    } else if (type === 'example' && !noAssets) {
       return '<link rel="stylesheet" href="../assets/generated/styles.css">';
     }
 
@@ -746,10 +749,10 @@ function buildHtmlShell(content, type) {
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       ${createStylesheet()}
     </head>
-    <body style="padding: 20px">
+    <body ${!noAssets ? 'style="padding: 20px"' : 'style="background: black"'}>
       ${type === 'index' ? '<h1>Vulekamali Pattern Library</h1>' : ''}
       ${content}
-      <script src="${scripts}"></script>
+      ${!noAssets ? '<script src="' + scripts + '"></script>' : ''}
     </body>
   </html>`);
 }
@@ -766,17 +769,17 @@ function getParentFolderName(path) {
 }
 
 
-function createHtml(path, content, type, labels = {}) {
+function createHtml(path, content, type, labels = {}, noAssets) {
   const buildLabel = () => {
     let labelsCode = '';
     let title = '';
 
     if (labels) {
-      const labelsKeys = labels ? Object.keys(labels).filter(label => label !== 'title') : [];
+      const labelsKeys = labels ? Object.keys(labels).filter(label => label !== 'title' && label !== 'category' && label !== 'assets') : [];
       if (labelsKeys.length > 0) {
         labelsCode = labelsKeys.map((key) => {
           const val = labels[key];
-          return `<span style="font-size:  14px; background: ${val.background}; color: ${val.color}; border-radius: 50px; padding: 5px 15px; position:  relative; bottom: 6px; margin-left: 10px;">${key}: ${val.text}</span>`;
+          return `<span style="display: inline-block; font-size: 14px; background: ${val.background}; color: ${val.color}; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">${key}: ${val.text}</span>`;
         }).join('');
       }
 
@@ -790,7 +793,7 @@ function createHtml(path, content, type, labels = {}) {
 
   writeFileSync(
     path,
-    buildHtmlShell(buildLabel() + content, type),
+    buildHtmlShell(buildLabel() + content, type, noAssets),
     (err) => {
       if (err) {
         return console.error(err);
@@ -876,15 +879,31 @@ function getAllFileType(folder, extension) {
 }
 
 function createCustomObject(rawPaths) {
+  const getAssets = (result, path) => {
+    const fm = frontMatter(readFileSync(path, 'utf-8'));
+    if (fm.attributes) {
+      return {
+        ...result,
+        [path]: {
+          path: fm.attributes.assets,
+        },
+      };
+    }
+  };
+
+  const assetUrls = rawPaths.reduce(getAssets, {});
+
   return rawPaths.reduce(
     (results, path) => {
       const parentPath = getParentPath(path);
-      const examplesNames = getAllFileType(`${parentPath}/examples`, 'html');
+      const examplesNames = assetUrls[path].path ?
+        getAllFileType(`${parentPath}/${assetUrls[path].path}`, 'html') :
+        [];
       const examples = examplesNames.reduce(
         (result, key) => {
           return {
             ...result,
-            [key]: `${parentPath}//examples/${key}`,
+            [key]: `${parentPath}/examples/${key}`,
           };
         },
         {},
@@ -921,30 +940,66 @@ function createComponentFiles(data) {
 }
 
 function createRootIndex(data) {
-  const markup = Object.keys(data).map((title) => {
-    if (data[title].content.attributes.title) {
-      const buildLabel = () => {
-        let labelsCode = '';
-
-        const labelsKeys = data[title].content.attributes ? Object.keys(data[title].content.attributes).filter(key => key !== 'title') : [];
-
-        if (labelsKeys.length > 0) {
-          labelsCode = labelsKeys.map((key) => {
-            const val = data[title].content.attributes[key];
-            return `<span style="font-size: 11px; background: ${val.background}; color: ${val.color}; border-radius: 50px; padding: 5px 20px; font-family: verdana, position: relative; bottom: 2px; margin-left: 10px;">${val.text}</span>`;
-          }).join('');
-        }
-
-        return labelsCode;
+  const returnLabel = (results, title) => {
+    if (data[title].content.attributes && data[title].content.attributes.category) {
+      return {
+        ...results,
+        [data[title].content.attributes.category]: [
+          ...(results[data[title].content.attributes.category] || []),
+          title,
+        ],
       };
+    }
 
-      return `<li><a style="font-size: 18px" href="${data[title].content.attributes.title}/index.html">${data[title].content.attributes.title}</a>${buildLabel()}</li>`;
+    return {
+      ...results,
+      none: [
+        ...(results.none || []),
+        title,
+      ],
+    };
+  };
+
+  const totalLabels = Object.keys(data).reduce(returnLabel, {});
+  const categories = Object.keys(totalLabels);
+
+  const wrapInList = (content) => {
+    return `<ul>${content}</ul>`;
+  };
+
+  const buildLabel = (title) => {
+    let labelsCode = '';
+
+    const labelsKeys = data[title].content.attributes ? Object.keys(data[title].content.attributes).filter(key => key !== 'title' && key !== 'category' && key !== 'assets') : [];
+
+    if (labelsKeys.length > 0) {
+      labelsCode = labelsKeys.map((key) => {
+        const val = data[title].content.attributes[key];
+        return `<span style="font-size: 11px; background: ${val.background}; color: ${val.color}; border-radius: 50px; padding: 5px 20px; display: inline-block; font-family: verdana, position: relative; bottom: 2px; margin-left: 10px;">${val.text}</span>`;
+      }).join('');
+    }
+
+    return labelsCode;
+  };
+
+  const createListItem = (title) => {
+    if (data[title].content.attributes.title) {
+      return `<li><a style="font-size: 18px" href="${data[title].content.attributes.title}/index.html">${data[title].content.attributes.title}</a>${buildLabel(title)}</li>`;
     }
 
     return '';
-  }).join('');
+  };
 
+  const createHeading = (heading) => {
+    const itemsArray = totalLabels[heading];
 
+    return `${heading === 'none' ? '' : '<li>'}
+      ${heading === 'none' ? '' : '<h3>' + heading + '</h3>'}
+      <ul>${itemsArray.map(createListItem).join('')}</ul>
+      ${heading === 'none' ? '' : '</li>'}`;
+  };
+
+  const markup = wrapInList(categories.map(createHeading).join(''));
   return createHtml(`${config.destination}/index.html`, markup, 'index');
 }
 
@@ -957,6 +1012,7 @@ function parseExamples(data) {
       const examples = Object.keys(component.examples);
       examples.forEach((fileName) => {
         const markup = readFileSync(component.examples[fileName], 'utf-8');
+        createHtml(`${config.destination}/${name}/code-${fileName}`, `<style>pre + code { display: none !important; }</style><pre style="white-space: pre-wrap;"><code style="background: black; padding: 10px; display: block; color: white">${entities.encode(markup)}</pre></code>`, 'example', null, true);
         createHtml(`${config.destination}/${name}/${fileName}`, markup, 'example');
       });
     }

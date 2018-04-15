@@ -93,6 +93,8 @@
   font-weight: bold;
   font-weight: 900;
   display: block;
+  padding: 0;
+  width: 100%;
 
   &.is-small {
     font-size: $font-size-base;

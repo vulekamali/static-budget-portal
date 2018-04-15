@@ -1,9 +1,10 @@
 ---
-title: BarChart
+category: Universal Components
+assets: examples
 state:
   text: ✖ unstable
   color: white
-  background: blue
+  background: red
 API:
   text: Preact
   color: black

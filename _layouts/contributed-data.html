@@ -13,25 +13,26 @@ layout: page-shell
       </div>
     </div>
 
-    <div class="Grid is-twoCol">
-
-      {% for dataset in page_data.datasets %}
-        <div class="Grid-item is-half">
-          <a href="{{ dataset.url_path }}" class="Section u-marginBottom20 is-bevel is-link" title="{{ dataset.name }}">
-            <div class="Section-card">
-              {%
-                include components/contributed-data/CsoPreview/index.html
-                name=dataset.name
-                title=dataset.organization.name
-                logo=dataset.organization.logo_url
-                created=dataset.created
-                last_updated=dataset.last_updated
-              %}
-            </div>
-          </a>
-        </div>
-      {% endfor %}
-
+    <div class="Grid has-standardTrigger">
+      <div class="Grid-inner">
+        {% for dataset in page_data.datasets %}
+          <div class="Grid-item is-1of2">
+            <a href="{{ dataset.url_path }}" class="Section u-marginBottom20 is-bevel is-link" title="{{ dataset.name }}">
+              <div class="Section-card">
+                {%
+                  include components/contributed-data/CsoPreview/index.html
+                  name=dataset.name
+                  title=dataset.organization.name
+                  logo=dataset.organization.logo_url
+                  created=dataset.created
+                  last_updated=dataset.last_updated
+                %}
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
     </div>
+
   </main>
 </div>
