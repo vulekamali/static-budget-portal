@@ -1,33 +1,48 @@
+$breakpoint-list: (
+  (mobile, 0),
+  (tablet, 500),
+  (standard, 750),
+  (widescreen, 1050)
+);
+
+
 .Grid {
-  @include clearfix;
+  @media screen and (min-width: 0) {
+    overflow: hidden;
+    border: 1px solid transparent;
+  }
+}
+
+.Grid-inner {
+  @media screen and (min-width: 0) {
+    margin: -15px;
+    @include clearfix;
+  }
 }
 
 .Grid-item {
-  @media screen and ($standard-breakpoint) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 0) {
     float: left;
+    margin: 15px;
+    width: 100%;
+    width: calc(100% - 30px);
+  }
 
-    .Grid.is-twoCol & {
-      @media screen and ($standard-breakpoint) {
-        &:nth-of-type(2n) {
-          padding-left: 15px;
-        }
-
-        &:nth-of-type(2n + 1) {
-          padding-right: 15px;
-        }
+  @each $name, $pixels in $breakpoint-list {
+    @media screen and (min-width: #{$pixels}px) {
+      .Grid.has-#{$name}Trigger &.is-1of3 {
+        width: calc((100% / 3) - 30px);
       }
-    }
 
-    &.is-half {
-      width: 50%;
-    }
+      .Grid.has-#{$name}Trigger &.is-2of3 {
+        width: calc((100% / 3 * 2) - 30px);
+      }
 
-    &.is-third {
-      width: (100% / 3);
-    }
-
-    &.is-twoThirds {
-      width: (100% / 3) * 2;
+      .Grid.has-#{$name}Trigger &.is-1of2 {
+        width: calc(50% - 30px);
+      }
     }
   }
 }

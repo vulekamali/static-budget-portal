@@ -1,0 +1,128 @@
+<!doctype>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../assets/base/styles.css">
+    </head>
+    
+    <body style="padding: 20px">
+         <h1>Modal<span style="display: inline-block; font-size: 14px; background: green; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">state: ✔ stable</span><span style="display: inline-block; font-size: 14px; background: #CCCCCC; color: black; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">API: Preact</span><span style="display: inline-block; font-size: 14px; background: grey; color: white; border-radius: 50px; padding: 5px 15px; position: relative; bottom: 6px; margin-left: 10px;">support: IE 9</span></h1>
+        <h2 id="table-of-contents">Table of Contents</h2>
+
+        <ul>
+            <li><a href="#overview">Overview</a>
+            </li>
+            <li><a href="#examples">Examples</a>
+            </li>
+            <li><a href="#api">API</a>
+            </li>
+            <li><a href="#support">Support</a>
+            </li>
+        </ul>
+        
+<h2 id="overview">Overview</h2>
+
+        <ul>
+            <li>A component representing a standard &#39;modal&#39; (or often called &#39;dialog&#39;)
+                pattern.</li>
+            <li>Note that, although feasable, there is currently no HTML for this component.
+                It can only be rendered via Preact.</li>
+            <li>Uses <code>preact-css-transition-group</code> to animate showing and hiding
+                of modals.</li>
+        </ul>
+        
+<h2 id="examples">Examples</h2>
+
+        
+<h3 id="basic-drag-to-resize-this-iframe-">Basic (drag to resize this iframe)</h3>
+
+        <p>
+            <iframe style="resize: horizontal;" width="100%" height="500" src="basic.html"
+            frameborder="0" allowfullscreen></iframe>
+<a href="basic.html">View Example</a>
+        </p>
+<pre><code>// Preact code
+
+&lt;Modal
+  title=&quot;Test title&quot;
+  closeAction={() =&gt; console.log(&#39;Close action triggered&#39;)}
+  open
+&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida at diam sagittis consequat. Sed dictum magna nunc, hendrerit dignissim sem auctor at. In augue arcu, fringilla a eros at, vulputate facilisis ipsum. Nam euismod tortor arcu, eu suscipit ligula interdum vitae. Suspendisse consequat, augue eget luctus scelerisque, massa nunc luctus nunc, eu efficitur nulla nisl at dolor. Mauris ullamcorper fringilla sapien, et lobortis felis mattis et. Mauris rhoncus neque in aliquet volutpat. Duis egestas ac enim eget condimentum. Phasellus fermentum nulla vel elit luctus, ac consectetur ipsum molestie. Nunc at porta felis. Donec et condimentum neque. Integer ac pretium quam.&lt;/p&gt;
+  &lt;a href=&quot;#&quot; className=&quot;Button is-inline&quot;&gt;Example button&lt;/a&gt;
+&lt;/Modal&gt;
+</code></pre>
+        <h2 id="api">API</h2>
+
+        
+<h3 id="preact-component">Preact Component</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Prop</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>title</code>
+                    </td>
+                    <td>A string that determines the text that will be displayed at the top of
+                        the modal</td>
+                </tr>
+                <tr>
+                    <td><code>closeAction</code>
+                    </td>
+                    <td>A function that executes whenever a user clicks on the black overlay behind
+                        the modal or the close button inside it.</td>
+                </tr>
+                <tr>
+                    <td><code>open</code>
+                    </td>
+                    <td>A boolean that determines whether the modal is currently open or not</td>
+                </tr>
+                <tr>
+                    <td>children</td>
+                    <td>Any Preact nodes passed as children of the component will be rendered
+                        inside it&#39;s content area. Note that the principle of JavaScript closures
+                        allows for the execution of parent events from inside the modal&#39;s passed
+                        children.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+<h2 id="support">Support</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Browser</th>
+                    <th>Enhancement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IE 5</td>
+                    <td>Does not support Webpack&#39;s transpilation of JavaScript&#39;s module
+                        system (No support)</td>
+                </tr>
+                <tr>
+                    <td>IE 9</td>
+                    <td>Supports all functionality, however due to lacking flexbox support modal
+                        is not centered vertically, but offset <code>40px</code> from the top (Base
+                        support)</td>
+                </tr>
+                <tr>
+                    <td>IE 10</td>
+                    <td>Optimal support</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src=""></script>
+    </body>
+
+</html>

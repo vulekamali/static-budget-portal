@@ -34,7 +34,7 @@ Note that it's a good idea to make sure your branch's generated assets are up to
 ```
 git fetch
 git merge origin/master # ignore conflicts on assets/* or _data/assets.json
-rm assets/* _data/assets.json
+rm -r assets/generated/* _data/assets.json
 npm run build
 ```
 

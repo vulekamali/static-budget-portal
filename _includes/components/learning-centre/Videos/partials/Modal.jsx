@@ -1,6 +1,6 @@
 import { h } from 'preact';
-import CloseIcon from './CloseIcon.jsx';
 import PseudoSelect from './../../../universal/PseudoSelect/index.jsx';
+import Icon from './../../../universal/Icon/index.jsx'
 
 export default function Modal(props) {
   const { open, title, description, languageOptions } = props;
@@ -12,7 +12,9 @@ export default function Modal(props) {
       <div className="Videos-modal">
         <div className="Videos-modalBox">
           <div className="Videos-modalClose" onClick={closeModal} >
-            <CloseIcon />
+            <div className="Videos-closeIcon">
+              <Icon type="close" size="large" />
+            </div>
           </div>
           <div className="Videos-modalTitle">{title}</div>
           <div className="Videos-embed">

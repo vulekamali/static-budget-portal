@@ -38,7 +38,7 @@ export default function Markup(props) {
         />
       </div>
       <div className="ChartDownload-button">
-        <button onClick={clickAction} className="Button has-icon">
+        <button onClick={clickAction} className="Button is-circle">
           <Icon type="download" size="small" />
         </button>
       </div>

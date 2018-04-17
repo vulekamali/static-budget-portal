@@ -35,7 +35,7 @@ export default function Button({ selected, updateModal }) {
   };
 
   return (
-    <div className="Button has-icon" onClick={share}>
+    <div className="Button is-circle" onClick={share}>
       <Icon />
     </div>
   );
