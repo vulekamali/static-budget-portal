@@ -24,10 +24,10 @@ layout: base
   {% assign page_data = site.data[page.data_key] %}
 {% endif %}
 
-
+<div class="js-initModals"></div>
 <div class="Page">
   <header class="Page-head">
-    {% 
+    {%
       include components/header-and-footer/HeaderBar/index.html
       items=site.data.navbar.array
       selected_tab=page_data.selected_tab
@@ -37,8 +37,8 @@ layout: base
     %}
 
     {% if page.financial_year %}
-      {% 
-        include components/header-and-footer/YearSelect/index.html 
+      {%
+        include components/header-and-footer/YearSelect/index.html
         years=page_data.financial_years
       %}
     {% endif %}

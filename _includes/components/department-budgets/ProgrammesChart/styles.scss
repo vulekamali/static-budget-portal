@@ -19,15 +19,5 @@
 }
 
 .ProgrammesChart-share {
-  @include clearfix;
-}
-
-.ProgrammesChart-shareDropdown {
-  float: left;
-  width: 100%;
-  max-width: 190px;
-}
-
-.ProgrammesChart-shareButton {
-  float: left;
+  max-width: 250px;
 }

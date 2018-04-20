@@ -1,15 +1,15 @@
 import { h } from 'preact';
-import Icon from './Icon.jsx';
+import Icon from './../../../universal/Icon/index.jsx';
 import analyticsEvents from './../../../../utilities/js/helpers/analyticsEvent.js';
 
 
-export default function Button({ selected, updateModal }) {
+export default function Button({ selected, createModal }) {
   const url = encodeURIComponent(window.location.href);
-  const message = encodeURIComponent("SA Budget Data from vulekamali");
+  const message = encodeURIComponent('SA Budget Data from vulekamali');
 
   const copyText = () => {
     analyticsEvents('send', 'social', 'email', 'share', url);
-    updateModal(true);
+    createModal();
   };
   const fbDirect = () => {
     analyticsEvents('send', 'social', 'facebook', 'share', url);
@@ -23,7 +23,7 @@ export default function Button({ selected, updateModal }) {
   };
 
   const share = () => {
-    if (selected === 'copy') {
+    if (selected === 'link') {
       return copyText();
     } else if (selected === 'facebook') {
       return fbDirect();
@@ -35,8 +35,10 @@ export default function Button({ selected, updateModal }) {
   };
 
   return (
-    <div className="Button is-circle" onClick={share}>
-      <Icon />
-    </div>
+    <button className="Button is-circle" onClick={share}>
+      <div className="u-transformRotate270">
+        <Icon type="download" size="small" />
+      </div>
+    </button>
   );
 }

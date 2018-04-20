@@ -1,35 +1,43 @@
 import { h, Component } from 'preact';
 import ShareMarkup from './partials/ShareMarkup.jsx';
+import store from './../../../store.js';
 
 
 export default class ShareContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: 'copy',
-      shareOpen: false,
-      modal: false,
+      selected: 'link',
     };
 
-    this.updateShare = this.updateShare.bind(this);
-    this.updateModal = this.updateModal.bind(this);
+    const createModal = () => {
+      const { anchor } = this.props;
+      const anchorUri = anchor ? `#${anchor}` : '';
+
+      return store.dispatch({
+        type: 'CREATE_MODAL',
+        title: 'Share this link:',
+        markup: (
+          <a className="u-wordBreak u-wordBreak--breakAll" href={window.location.href + anchorUri}>
+            {window.location.href + anchorUri}
+          </a>
+        ),
+      });
+    };
+
+    this.events = {
+      updateShare: this.updateShare.bind(this),
+      createModal,
+    };
   }
 
-  updateModal(state) {
-    this.setState({ modal: state });
-  }
-
-  updateShare(value) {
-    if (this.state.shareOpen) {
-      this.setState({ shareOpen: false });
-      this.setState({ selected: value });
-      return null;
-    }
-
-    return this.setState({ shareOpen: true });
+  updateShare(selected) {
+    return this.setState({ selected });
   }
 
   render() {
-    return <ShareMarkup {...this.state} updateShare={this.updateShare} updateModal={this.updateModal} />;
+    const { selected } = this.state;
+    const { updateShare, createModal } = this.events;
+    return <ShareMarkup {...{ selected, updateShare, createModal }} />;
   }
 }

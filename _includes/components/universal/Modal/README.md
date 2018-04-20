@@ -1,5 +1,4 @@
 ---
-title: Modal
 category: Universal Components
 assets: examples
 state:

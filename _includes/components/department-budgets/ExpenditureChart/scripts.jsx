@@ -19,26 +19,12 @@ class ExpenditureChartContainer extends Component {
       type: 'bar',
     };
 
-    this.changeAction = this.changeAction.bind(this);
-    this.shareAction = this.shareAction.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-    this.downloadAction = this.downloadAction.bind(this);
-    this.canvasAction = this.canvasAction.bind(this);
-    this.widthAction = this.widthAction.bind(this);
-    this.changeSource = this.changeSource.bind(this);
-  }
-
-
-  shareAction() {
-    calcShareAction(
-      this.state.selected,
-      'programmes-chart',
-      () => this.setState({ modal: true }),
-    );
-  }
-
-  closeModal() {
-    this.setState({ modal: false });
+    this.events = {
+      downloadAction: this.downloadAction.bind(this),
+      canvasAction: this.canvasAction.bind(this),
+      widthAction: this.widthAction.bind(this),
+      changeSource: this.changeSource.bind(this),
+    };
   }
 
 
@@ -88,50 +74,36 @@ class ExpenditureChartContainer extends Component {
   }
 
 
-  changeAction(value) {
-    if (this.state.open) {
-      return this.setState({
-        ...this.state,
-        selected: value,
-        open: false,
-      });
-    }
-
-    return this.setState({ open: true });
-  }
-
   changeSource(value) {
     return this.setState({ source: value });
   }
 
 
   render() {
+    const { items, year, files, location, phaseTable } = this.props;
+    const { width, mobile, source, type, cpi } = this.state;
+    const { downloadAction, canvasAction, widthAction, changeSource } = this.events;
+
     return (
       <ExpenditureChart
-        items={this.props.items[this.state.source]}
-        width={this.state.width}
-        parentAction={this.parentAction}
-        mobile={this.state.mobile}
-        year={this.props.year}
-        files={this.props.files}
+        items={items[this.state.source]}
+        {...{
+          year,
+          files,
+          location,
+          phaseTable,
 
-        open={this.state.open}
-        selected={this.state.selected}
-        changeAction={this.changeAction}
-        shareAction={this.shareAction}
-        closeModal={this.closeModal}
-        modal={this.state.modal}
-        source={this.state.source}
-        location={this.props.location}
+          width,
+          mobile,
+          source,
+          type,
+          cpi,
 
-        downloadAction={this.downloadAction}
-        canvasAction={this.canvasAction}
-        phaseTable={this.props.phaseTable}
-        widthAction={this.widthAction}
-        type={this.state.type}
-        sourceOpen={this.state.sourceOpen}
-        changeSource={this.changeSource}
-        cpi={this.props.cpi}
+          downloadAction,
+          canvasAction,
+          widthAction,
+          changeSource,
+        }}
       />
     );
   }

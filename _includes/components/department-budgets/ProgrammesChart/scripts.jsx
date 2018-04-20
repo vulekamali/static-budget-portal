@@ -13,8 +13,6 @@ class ProgrammesChartContainer extends Component {
 
     this.state = {
       selected: 'link',
-      open: false,
-      modal: false,
     };
 
     this.hasNull = Object.keys(this.props.items).reduce(
@@ -24,24 +22,10 @@ class ProgrammesChartContainer extends Component {
       false,
     );
 
-    this.changeAction = this.changeAction.bind(this);
-    this.shareAction = this.shareAction.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-    this.downloadAction = this.downloadAction.bind(this);
-    this.canvasAction = this.canvasAction.bind(this);
-  }
-
-
-  shareAction() {
-    calcShareAction(
-      this.state.selected,
-      'programmes-chart',
-      () => this.setState({ modal: true }),
-    );
-  }
-
-  closeModal() {
-    this.setState({ modal: false });
+    this.events = {
+      downloadAction: this.downloadAction.bind(this),
+      canvasAction: this.canvasAction.bind(this),
+    };
   }
 
 
@@ -77,40 +61,26 @@ class ProgrammesChartContainer extends Component {
   }
 
 
-  changeAction(value) {
-    if (this.state.open) {
-      return this.setState({
-        ...this.state,
-        selected: value,
-        open: false,
-      });
-    }
-
-    return this.setState({ open: true });
-  }
-
-
   render() {
+    const { hasNull } = this;
+    const { width, mobile } = this.state;
+    const { items, files, year, deptLocation } = this.props;
+    const { downloadAction, canvasAction } = this.events;
+
     return (
       <ProgrammesChart
-        items={this.props.items}
-        width={this.state.width}
-        parentAction={this.parentAction}
-        mobile={this.state.mobile}
-        hasNull={this.hasNull}
-        year={this.props.year}
-        files={this.props.files}
-
-        open={this.state.open}
-        selected={this.state.selected}
-        changeAction={this.changeAction}
-        shareAction={this.shareAction}
-        closeModal={this.closeModal}
-        modal={this.state.modal}
-
-        downloadAction={this.downloadAction}
-        canvasAction={this.canvasAction}
-        national={this.props.deptLocation === 'National'}
+        national={deptLocation === 'National'}
+        {...{
+          hasNull,
+          width,
+          mobile,
+          items,
+          files,
+          year,
+          deptLocation,
+          downloadAction,
+          canvasAction,
+        }}
       />
     );
   }
