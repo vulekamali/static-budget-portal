@@ -10,14 +10,14 @@ export default function Modal({ markup, title, closeModal }) {
     }
 
     return (
-      <div className="Modal-inner">
-        <div className="Modal-overlay" onClick={closeModal} aria-hidden />
-        <div className="Modal-boxWrap">
-          <div className="Modal-box">
-            <div className="Modal-heading">{title}</div>
-            <div className="Modal-content">{markup}</div>
+      <div className="Modals-inner">
+        <div className="Modals-overlay" onClick={closeModal} aria-hidden />
+        <div className="Modals-boxWrap">
+          <div className="Modals-box">
+            <div className="Modals-heading">{title}</div>
+            <div className="Modals-content">{markup}</div>
           </div>
-          <button className="Modal-close" onClick={closeModal}>
+          <button className="Modals-close" onClick={closeModal}>
             <Icon type="close" />
           </button>
         </div>
@@ -26,7 +26,7 @@ export default function Modal({ markup, title, closeModal }) {
   };
 
   return (
-    <div className="Modal">
+    <div className="Modals">
       <CssTransitionGroup
         transitionName="is"
         transitionEnterTimeout={300}

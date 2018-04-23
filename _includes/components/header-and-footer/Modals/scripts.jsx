@@ -1,9 +1,10 @@
 import { h, render, Component } from 'preact';
-import store from './../../../store.js';
-import Modal from './index.jsx';
+import { getState, subscribe } from './../../../reduxStore.js';
+import Modals from './index.jsx';
+import createComponents from './../../../utilities/js/helpers/createComponents.js';
 
 
-class ModalContainer extends Component {
+class ModalsContainer extends Component {
   constructor(props) {
     super(props);
 
@@ -16,8 +17,8 @@ class ModalContainer extends Component {
       closeModal: this.closeModal.bind(this),
     };
 
-    store.subscribe(() => {
-      const storeState = store.getState();
+    subscribe(() => {
+      const storeState = getState();
 
       if (!storeState.modal) {
         return this.setState({
@@ -53,22 +54,14 @@ class ModalContainer extends Component {
   render() {
     const { title, markup } = this.state;
     const { closeModal } = this.events;
-    return <Modal {...{ title, markup, closeModal }} />;
+    return <Modals {...{ title, markup, closeModal }} />;
   }
 }
 
 
 function scripts() {
-  const nodesList = document.getElementsByClassName('js-initModals');
-
-  for (let i = 0; i < nodesList.length; i++) {
-    const node = nodesList[i];
-
-    render(
-      <ModalContainer {...{ store }} />,
-      node,
-    );
-  }
+  const createInstance = node => render(<ModalsContainer />, node);
+  createComponents('Modals', createInstance);
 }
 
 

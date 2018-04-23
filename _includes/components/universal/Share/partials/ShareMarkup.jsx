@@ -1,8 +1,7 @@
 import { h } from 'preact';
 import Button from './Button.jsx';
 
-
-export default function ShareMarkup({ selected, updateShare, createModal }) {
+export default function ShareMarkup({ selected, anchor, updateShare }) {
   return (
     <div className="Share-wrap">
       <div className="Share-action">
@@ -17,7 +16,7 @@ export default function ShareMarkup({ selected, updateShare, createModal }) {
           </select>
         </div>
         <div className="Share-button">
-          <Button {...{ selected, createModal }} />
+          <Button {...{ selected, anchor }} />
         </div>
       </div>
     </div>
