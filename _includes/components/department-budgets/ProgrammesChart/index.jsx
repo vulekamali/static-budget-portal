@@ -1,33 +1,23 @@
 import { h } from 'preact';
 import ResponsiveChart from './../../universal/ResponsiveChart/index.jsx';
 import Download from './../../universal/Download/index.jsx';
-import Pseudoselect from './../../universal/PseudoSelect/index.jsx';
 import shareSelections from './partials/shareSelections.json';
-import Icon from './../../universal/Icon/index.jsx';
-import Modal from './../../universal/Modal/index.jsx';
+import Share from './../../universal/Share/index.jsx';
 
 
 export default function ProgrammesChart(props) {
   const {
-    items,
     hasNull,
-    year,
+    width,
+    mobile,
+    items,
     files,
-
-    open,
-    selected,
-    modal,
-
-    location,
-  } = props;
-
-  const {
-    changeAction,
+    year,
+    deptLocation,
     downloadAction,
-    shareAction,
-    closeModal,
     canvasAction,
   } = props;
+
 
   const noValues = (
     <ul className="u-margin0 u-paddingLeft20">
@@ -63,15 +53,6 @@ export default function ProgrammesChart(props) {
   return (
     <div className="Section is-bevel" id="programmes-chart">
       <canvas ref={node => canvasAction(node)} style={{ display: 'none' }} />
-      <Modal
-        title="Share this link:"
-        closeAction={closeModal}
-        open={modal}
-      >
-        <a className="u-wordBreak u-wordBreak--breakAll" href={`${window.location.href}#programmes-chart`}>
-          {`${window.location.href}#programmes-chart`}
-        </a>
-      </Modal>
       <div className="ProgrammesChart">
         <div className="ProgrammesChart-info">
           <div className="Section-card is-invisible">
@@ -90,20 +71,7 @@ export default function ProgrammesChart(props) {
           <div className="Section-card is-invisible">
             <div className="u-fontWeightBold u-marginBottom10">Share this chart:</div>
             <div className="ProgrammesChart-share">
-              <div className="ProgrammesChart-shareDropdown">
-                <Pseudoselect
-                  name="programmes-chart-share-selection"
-                  items={shareSelections}
-                  {...{ open, selected, changeAction }}
-                />
-              </div>
-              <div className="ProgrammesChart-shareButton u-marginLeft5">
-                <button onClick={shareAction} className="Button is-circle">
-                  <div className="u-transformRotate270">
-                    <Icon type="download" size="small" />
-                  </div>
-                </button>
-              </div>
+              <Share anchor="programmes-chart" />
             </div>
           </div>
         </div>
