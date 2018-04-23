@@ -1,7 +1,7 @@
 import Fuse from 'fuse.js';
 import { h, render, Component } from 'preact';
 import Glossary from './index.jsx';
-import glossaryObject from './../../../data/glossary.json';
+import glossaryObject from './../../../../_data/glossary.json';
 import createGlossaryGroupedObject from './../../../utilities/js/helpers/createGlossaryGroupedObject.js';
 
 

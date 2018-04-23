@@ -1,5 +1,5 @@
 import camelCase from 'camelcase';
-import glossaryObject from './../../../data/glossary.json';
+import glossaryObject from './../../../../_data/glossary.json';
 import createComponent from './partials/createComponent.js';
 import escapeRegex from './partials/escapeRegex.js';
 import walkTheDom from './partials/walkTheDom.js';

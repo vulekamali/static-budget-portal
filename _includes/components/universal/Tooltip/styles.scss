@@ -63,7 +63,9 @@
   z-index: z-index('Tooltip-boxWrap');
 
   &.is-down {
-    top: 100%;
+    @media screen and (min-width: 800px) {
+      top: 100%;
+    }
   }
 
   &.is-open {
@@ -189,6 +191,7 @@
   line-height: 1.64;
   display: block;
   padding-bottom: 10px;
+  color: #3f3f3f;
 }
 
 .Tooltip-linkWrap {

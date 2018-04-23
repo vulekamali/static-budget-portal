@@ -1,38 +1,31 @@
 import { h } from 'preact';
 import ResponsiveChart from './../../universal/ResponsiveChart/index.jsx';
 import Download from './../../universal/Download/index.jsx';
-import Pseudoselect from './../../universal/PseudoSelect/index.jsx';
 import shareSelections from './partials/shareSelections.json';
-import Icon from './../../universal/Icon/index.jsx';
-import Modal from './../../universal/Modal/index.jsx';
+import Share from './../../universal/Share/index.jsx';
 
 
 export default function ExpenditureChart(props) {
   const {
     items,
-    hasNull,
+
     year,
     files,
-    phaseTable,
-    type,
-    source,
-    sourceOpen,
-    cpi,
-    open,
-    selected,
-    modal,
     location,
-  } = props;
+    phaseTable,
 
-  const {
-    changeAction,
+    width,
+    mobile,
+    source,
+    type,
+    cpi,
+
     downloadAction,
-    shareAction,
-    closeModal,
     canvasAction,
     widthAction,
-    changeSource
+    changeSource,
   } = props;
+
 
   const estimateText = location === 'National' ?
     'Estimates of National Expenditure (ENE)' :
@@ -41,17 +34,8 @@ export default function ExpenditureChart(props) {
   return (
     <div className="Section is-bevel" id="line-chart">
       <canvas ref={node => canvasAction(node)} style={{ display: 'none' }} />
-      <Modal
-        title="Share this link:"
-        closeAction={closeModal}
-        open={modal}
-      >
-        <a className="u-wordBreak u-wordBreak--breakAll" href={`${window.location.href}#programmes-chart`}>
-          {`${window.location.href}#line-chart`}
-        </a>
-      </Modal>
-      <div className="ProgrammesChart">
-        <div className="ProgrammesChart-info">
+      <div className="ExpenditureChart">
+        <div className="ExpenditureChart-info">
           <div className="Section-card is-invisible">
             <div className="Page-subHeading">Actual and planned expenditure changes over time</div>
             <p className="js-tooltips">
@@ -100,25 +84,12 @@ export default function ExpenditureChart(props) {
           </div>
           <div className="Section-card is-invisible">
             <div className="u-fontWeightBold u-marginBottom10">Share this chart:</div>
-            <div className="ProgrammesChart-share">
-              <div className="ProgrammesChart-shareDropdown">
-                <Pseudoselect
-                  name="expenditure-chart-share-selection"
-                  items={shareSelections}
-                  {...{ open, selected, changeAction }}
-                />
-              </div>
-              <div className="ProgrammesChart-shareButton u-marginLeft5">
-                <button onClick={shareAction} className="Button is-circle">
-                  <div className="u-transformRotate270">
-                    <Icon type="download" size="small" />
-                  </div>
-                </button>
-              </div>
+            <div className="ExpenditureChart-share">
+              <Share anchor="line-chart" />
             </div>
           </div>
         </div>
-        <div className="ProgrammesChart-chart">
+        <div className="ExpenditureChart-chart">
           <div className="Section-card">
             <ResponsiveChart {...{ items, widthAction, type }} />
             <div className="u-textAlignCenter">
@@ -154,7 +125,7 @@ export default function ExpenditureChart(props) {
             }
           </div>
           <div className="Section-card is-invisible u-textAlignCenter">
-            <button className="Button is-inline" onClick={downloadAction}>Download chart as image</button>
+            <button className="Button is-inline" onClick={downloadAction}>Download chart as image (~130 KB)</button>
           </div>
         </div>
       </div>

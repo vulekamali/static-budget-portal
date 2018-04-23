@@ -28,7 +28,7 @@ class IntroSectionContainer extends Component {
   }
 
   calcIfTriggered(value) {
-    if (value > 190) {
+    if (value > 330) {
       return this.setState({ triggered: true });
     }
 
