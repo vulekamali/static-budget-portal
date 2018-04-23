@@ -1,7 +1,7 @@
-<div class="CsoPreview">
+<div class="CsoPreview" data-enhance-component="CsoPreview">
   <h3 class="CsoPreview-heading">{{ include.name }}</h3>
   <div class="CsoPreview-info">
-    <div class="CsoPreview-img" style="background-image: url('{{ include.logo }}');"></div>
+    <div class="CsoPreview-img" data-image="{{ include.logo }}"></div>
     <div class="CsoPreview-details">
       <div>Contributed by {{ include.title }}</div>
       <div>First uploaded: {{ include.created | date_to_long_string }}</div>

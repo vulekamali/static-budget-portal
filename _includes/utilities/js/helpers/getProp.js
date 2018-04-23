@@ -9,8 +9,22 @@ const parseString = (string, parse) => {
   }
 };
 
-export default function getProp(name, node, parse) {
+function innerGetProp(name, node, parse, valueParse) {
   const result = node.getAttribute(`data-${name}`);
+
+  if (parse === 'node') {
+    const innerNode = node.querySelector(`[data-${name}]`);
+
+    if (!valueParse) {
+      return innerNode;
+    }
+
+    return {
+      node: innerNode,
+      value: innerGetProp(name, innerNode, valueParse),
+    };
+  }
+
   if (result === null) {
     return null;
   }
@@ -20,4 +34,9 @@ export default function getProp(name, node, parse) {
   }
 
   return parseString(decodeHtmlEntities(result), parse);
+}
+
+
+export default function getProp(name, node, parse, valueParse) {
+  return innerGetProp(name, node, parse, valueParse);
 }

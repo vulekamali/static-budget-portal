@@ -1,4 +1,4 @@
-<ul class="CsoMeta">
+<ul class="CsoMeta" data-enhance-component="CsoMeta">
   <li class="CsoMeta-organisation">
 
     {% if include.organization.name %}
@@ -9,7 +9,7 @@
       {% if include.organization.logo_url %}
         <dt class="u-sReadOnly" aria-hidden="aria-hidden">Logo</dt>
         <dd class="CsoMeta-listItem is-image" aria-hidden="aria-hidden">
-          <div class="CsoMeta-logo" style="background-image: url('{{ include.organization.logo_url }}')"></div>
+          <div class="CsoMeta-logo" data-image="{{ include.organization.logo_url }}"></div>
         </dd>
       {% endif %}
 

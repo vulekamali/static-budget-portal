@@ -1626,6 +1626,66 @@ function trimValues(value, abbreviated) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = getProp;
+
+var _decodeHtmlEntities = __webpack_require__(4);
+
+var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var parseString = function parseString(string, parse) {
+  switch (parse) {
+    case 'json':
+      return JSON.parse(string);
+    case 'num':
+      return parseFloat(string, 10);
+    default:
+      return string;
+  }
+};
+
+function innerGetProp(name, node, parse, valueParse) {
+  var result = node.getAttribute('data-' + name);
+
+  if (parse === 'node') {
+    var innerNode = node.querySelector('[data-' + name + ']');
+
+    if (!valueParse) {
+      return innerNode;
+    }
+
+    return {
+      node: innerNode,
+      value: innerGetProp(name, innerNode, valueParse)
+    };
+  }
+
+  if (result === null) {
+    return null;
+  }
+
+  if (parse === 'bool') {
+    return result !== null;
+  }
+
+  return parseString((0, _decodeHtmlEntities2.default)(result), parse);
+}
+
+function getProp(name, node, parse, valueParse) {
+  return innerGetProp(name, node, parse, valueParse);
+}
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -1641,7 +1701,7 @@ var _buildGroupSpaceArray = __webpack_require__(113);
 
 var _buildGroupSpaceArray2 = _interopRequireDefault(_buildGroupSpaceArray);
 
-var _breakIntoWrap = __webpack_require__(12);
+var _breakIntoWrap = __webpack_require__(13);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -1801,7 +1861,7 @@ function BarChart(props) {
 }
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1848,7 +1908,7 @@ function breakIntoWrap(string, wrap) {
 }
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2062,7 +2122,7 @@ exports.parseUrl = function (str, opts) {
 };
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2104,48 +2164,6 @@ var DebounceFunction = function () {
 }();
 
 exports.default = DebounceFunction;
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = getProp;
-
-var _decodeHtmlEntities = __webpack_require__(4);
-
-var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var parseString = function parseString(string, parse) {
-  switch (parse) {
-    case 'json':
-      return JSON.parse(string);
-    case 'num':
-      return parseFloat(string, 10);
-    default:
-      return string;
-  }
-};
-
-function getProp(name, node, parse) {
-  var result = node.getAttribute('data-' + name);
-  if (result === null) {
-    return null;
-  }
-
-  if (parse === 'bool') {
-    return result !== null;
-  }
-
-  return parseString((0, _decodeHtmlEntities2.default)(result), parse);
-}
 
 /***/ }),
 /* 16 */
@@ -3551,7 +3569,7 @@ var _Markup = __webpack_require__(155);
 
 var _Markup2 = _interopRequireDefault(_Markup);
 
-var _DebounceFunction = __webpack_require__(14);
+var _DebounceFunction = __webpack_require__(15);
 
 var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
 
@@ -4309,7 +4327,7 @@ function removePunctuation(string) {
 /* 42 */
 /***/ (function(module, exports) {
 
-module.exports = {"Accounting officer":"The public servant in a department who is accountable to Parliament for financial management, usually the director-general or head of the department.","Accrual":"An accounting convention by which payments and receipts are recorded as they occur, even if no cash flow takes place.","Acquisition debt":"Debt used to purchase shares or assets.","Ad valorem duties":"Duties levied on commodities as a certain percentage of their value.","Adjustments estimate":"Presentation to Parliament of the amendments to be made to the appropriations voted in the main budget for the year.","Administered prices":"Prices set outside ordinary market processes through administrative decisions by government, a public entity or a regulator.","Agro-processing":"Manufacturing activities that transform raw materials and intermediary goods derived from agriculture into intermediate or final goods.","Allocated expenditure":"The part of the national budget that can be divided between the national, provincial and local spheres of government, after interest and the contingency reserve have been taken into account.","Amortisation":"The repayment of a loan by instalments over the duration of the loan.","Annuity":"A fixed amount of money paid over a period of time as a return on an investment.","Anti-avoidance rule":"A provision aimed at preventing tax avoidance. See principal purpose test.","Anti-fragmentation rule":"A rule that aims to prevent taxpayers from artificially avoiding permanent establishment status by breaking up a cohesive business into several small operations.","Appropriation":"The approval by Parliament of spending from the National Revenue Fund, or by a provincial legislature from a provincial revenue fund.","Artificial debt":"A \"loan\" that is presented as debt but is in effect equity. Often used in tax avoidance or evasion.","Asset price bubble":"A condition occurring when prices for a category of assets rise above the level justified by economic fundamentals.","Balance of payments":"A summary statement of all the international transactions of the residents of a country with the rest of the world over a particular period of time.","Base erosion and profit shifting":"Corporate tax-planning strategies that exploit the gaps and mismatches in tax laws between countries to artificially shift taxable income to lower or no-tax jurisdictions. See also tax evasion and profit shifting.","Basel III":"Reforms developed by the Basel Committee on Banking Supervision to strengthen the regulation, supervision and risk management of the banking sector.","Baseline":"The initial allocations used during the budget process, derived from the previous year's forward estimates.","Basis point":"One hundredth of one per cent.","Beneficiation":"Manufacturing activities that transform raw minerals into higher-value products.","Bond":"A certificate of debt issued by a government or corporation guaranteeing payment of the original investment plus interest by a specified future date.","Bond premium":"Amount by which the purchase price of a bond is greater than its par value.","Bond spread":"The difference in yield between two bonds.","Bond-switch programme":"An auction that aims to ease pressure on targeted areas of the redemption profile by exchanging shorter-dated debt for longer-term debt. See switch auction.","Bracket creep":"Increased real tax liability that arises when the personal income tax tables are not fully adjusted for inflation.","Budget balance":"The difference between budgeted expenditure and budgeted revenue. If expenditure exceeds revenue, the budget is in deficit. If the reverse is true, it is in surplus.","Capital adequacy":"A measure of a financial institution’s capital, expressed as a percentage of its credit exposure.","Capital asset":"Property of any kind, including assets that are movable or immovable, tangible or intangible, fixed or circulating, but excluding trading stock held for the purpose of realising a financial or economic return.","Capital expenditure":"Spending on assets such as buildings, land, infrastructure and equipment.","Capital flow":"A flow of investments in or out of the country.","Capital formation":"A measure of the net increase in the country’s total stock of capital goods, after allowing for depreciation.","Capital gains tax":"Tax levied on the income realised from the disposal of a capital asset by a taxpayer. A capital gain is the excess of the selling price over the purchase price of the capital asset.","Capital goods":"Durable goods used over a period of time for the production of other goods. See also intermediate goods.","Carbon tax":"An environmental tax on emissions of carbon dioxide (CO2).","Category A, B and C municipalities":"Municipal categories established by the Constitution: Category A, or metropolitan municipalities; Category B, or local municipalities; and Category C, or district municipalities.","Collateral":"An asset placed as a guarantee for the repayment of debt, to be recouped in the case of a default.","Commercial paper issuances":"Debt issued by companies through short-term promissory notes.","Conditional grants":"Allocations of money from one sphere of government to another, conditional on certain services being delivered or on compliance with specified requirements.","Connected person debt/credit":"Debt or credit granted by a person/entity to a connected person/entity. In the case of a holding company, for example, a subsidiary company would be a connected person.","Consolidated general government":"National, provincial and local government, as well as extra-budgetary government institutions and social security funds.","Consolidated government expenditure":"Total expenditure by national and provincial government, social security funds and selected public entities, including transfers and subsidies to municipalities, businesses and other entities.","Consumer price index (CPI)":"The measure of inflation based on prices in a basket of goods and services.","Consumption expenditure":"Expenditure on goods and services, including salaries, which are used up within a short period of time, usually a year.","Contingency reserve":"An amount set aside, but not allocated in advance, to accommodate changes to the economic environment and to meet unforeseeable spending pressures.","Contingent liability":"A government obligation, such as a guarantee, that will only result in expenditure upon the occurrence of a specific event. See government guarantee.","Controlled foreign entity":"A foreign business in which South Africans hold a greater than 50 per cent interest, usually of the share capital of a company.","Corporatisation":"The transformation of state-owned enterprises into commercial entities, subject to commercial legal requirements and governance structures, while the state retains ownership.","Cost-push inflation":"Inflation that is caused by an increase in production costs, such as wages or oil prices.","Countercyclical fiscal policy":"Policy that has the opposite effect on economic activity to that caused by the business cycle, such as slowing spending growth in a boom period and accelerating spending in a recession.","Coupon (bond)":"The periodic interest payment made to bondholders during the life of the bond. The interest is usually paid twice a year.","Credit rating":"An indicator of the risk of default by a borrower or the riskiness of a financial instrument. Credit ratings generally fit into three broad risk categories: minimal or low, moderate and high. These categories indicate the extent of a borrower’s capacity to meet their financial obligations or the probability that the value of a financial instrument will be realised. Investments rated as high risk are considered sub-investment grade (or “junk”).","Crowding-in":"An increase in private investment through the income-raising effect of government spending financed by deficits.","Crowding-out":"A fall in private investment or consumption as a result of increased government expenditure financed through borrowing, thereby competing for loanable funds and raising the interest rate, which curtails private investment and consumption spending.","Currency risk":"The potential for a change in the price of a currency that would affect investors with assets, liabilities or operations denominated in other currencies.","Current account (of the balance of payments)":"The difference between total imports and total exports, taking into account service payments and receipts, interest, dividends and transfers. The current account can be in deficit or surplus. See also trade balance.","Current balance":"The difference between revenue and current expenditure, which consists of compensation of employees, goods and services, and interest and rent on land.","Current expenditure":"Government expenditure on salaries and goods and services, such as rent, maintenance and interest payments. See also consumption expenditure.","Customs duties":"Tax levied on imported goods.","Debenture":"An unsecured loan backed by general credit rather than by specified assets.","Debt redemption profile":"The set of fixed repayment dates and amounts to which an issuer of debt, such as a preferred stock or bond, has committed to meeting.","Debt switching":"The exchange of bonds to manage refinancing risk or improve tradability.","Debt-service costs":"The cost of interest on government debt and other costs directly associated with borrowing.","Deflation":"A consistent decrease in the price of goods and services.","Deleveraging":"The reduction of debt previously used to increase the potential return of an investment.","Depreciation (capital)":"A reduction in the value of fixed capital as a result of wear and tear or redundancy.","Depreciation (exchange rate)":"A reduction in the external value of a currency.","Derivative financial instrument":"A financial asset that derives its value from an underlying asset, which may be a physical asset such as gold, or a financial asset such as a government bond.","Designated countries":"Foreign countries from which income may be exempt from South African tax under certain circumstances. See also double tax agreement.","Development finance institutions":"State agencies that aim to meet the credit needs of riskier but socially and economically desirable projects that are beyond the acceptance limits of commercial banks.","Direct taxes":"Taxes charged on taxable income or capital of individuals and legal entities.","Discretionary trust":"A trust where the executor has the choice of whether and how much of the trust’s income or capital is to be distributed to beneficiaries. The beneficiaries have only provisional rights to the income or capital of the trust.","Disposable income":"Total income by households less all taxes and employee contributions.","Dissaving":"An excess of current expenditure, including the depreciation of fixed capital, over current income.","Dividend":"The distribution of a portion of a company's earnings to a class of its shareholders.","Dividend withholding tax":"A tax on dividends that is subtracted and withheld by a company or intermediary before the net dividend is paid to the shareholder.","Division of revenue":"The allocation of funds between spheres of government, as required by the Constitution. See also equitable share.","Domestic demand":"The total level of spending in an economy, including imports but excluding exports.","Double tax agreement":"An agreement between two countries to prevent income that is taxed in one country from being taxed in the other as well. See also designated countries.","Economic cost":"The cost of an alternative that must be forgone to pursue a certain action. In other words, the benefits that could have been received by taking an alternative action.","Economic growth":"An increase in the total amount of output, income and spending in the economy.","Economic rent":"The difference between the return made by a factor of production (capital or labour) and the return necessary to keep the factor in its current occupation. For example, a firm making excess profits is earning economic rent.","Economically active population":"The part of the population that is of working age and is either employed or seeking work.","Effective tax rate":"Actual tax liability (or a reasonable estimate thereof) expressed as a percentage of a pre-tax income base rather than as a percentage of taxable income. In other words, tax rates that take into account not only the statutory or nominal tax rate, but also other aspects of the tax system (for example, allowable deductions), which determine the tax liability.","Embedded derivative":"A provision in a contract modifying its cash flows by making them dependent on an underlying measure – such as interest or exchange rates, or commodity prices – the value of which changes independently.","Emerging economies":"A name given by international investors to middle-income economies.","Employment coefficient":"The ratio of employment growth to economic growth.","Equitable share":"The allocation of revenue to the national, provincial and local spheres of government as required by the Constitution. See also division of revenue.","Equity finance":"Raising money by selling shares of stock to investors, who receive an ownership interest in return.","Exchange control":"Rules that regulate the flow of currency out of South Africa, or restrict the amount of foreign assets held by South African individuals and companies.","Exchange-traded funds":"Funds that track indexes, commodities or baskets of assets, and trade like stocks.","Excise duties":"Taxes on the manufacture or sale of certain domestic or imported products. Excise duties are usually charged on products such as alcoholic beverages, tobacco and petroleum.","Expenditure ceiling":"The maximum allowable level of expenditure to which government has committed itself.","Extra-budgetary institutions":"Public entities not directly funded from the fiscus.","Fair-value adjustment":"A change in the value of an asset or liability resulting from the periodic reassessment of its expected future economic in- or outflows.","Financial Services Board":"An independent institution established by statute that regulates insurers, intermediaries, retirement funds, friendly societies, unit trust schemes, management companies and financial markets.","Financial Stability Board":"An international body made up of representatives of financial authorities and institutions, and central banks. It proposes regulatory, supervisory and other policies in the interest of financial stability.","Financial account":"A statement of all financial transactions between the nation and the rest of the world, including portfolio and fixed investment flows and movements in foreign reserves.","Financial and Fiscal Commission (FFC)":"An independent body established by the Constitution to make recommendations to Parliament and provincial legislatures about financial issues affecting the three spheres of government.","Financial year":"The 12 months according to which companies and organisations budget and account. See also fiscal year.","Fiscal consolidation":"Policy aimed at reducing government deficits and debt accumulation.","Fiscal incidence":"The combined overall economic impact that fiscal policy has on the economy.","Fiscal leakage":"The outflow of revenue from an economy through tax evasion and avoidance.","Fiscal policy":"Policy on taxation, public spending and borrowing by the government.","Fiscal space":"The ability of government’s budget to provide additional resources for a desired programme without jeopardising fiscal or debt sustainability.","Fiscal year":"The 12 months on which government budgets are based, beginning 1 April and ending 31 March of the subsequent calendar year.","Fixed investment/capital formation":"Spending on buildings, machinery and equipment contributing to production capacity in the economy. See also gross fixed-capital formation.","Fixed-income bond":"A bond that pays a specific interest rate.","Floating rate notes":"A bond on which the interest rate is reset periodically in line with a money market reference rate.","Flow-through vehicles":"A vehicle, such as a trust, where income earned is treated as income of the vehicle’s beneficiaries.","Foreign currency swaps":"The exchange of principal and/or interest payments in one currency for those in another.","Foreign direct investment (FDI)":"The acquisition of a controlling interest by governments, institutions or individuals of a business in another country.","Forward book":"The total amount of contracts for the future exchange of foreign currency entered into by the Reserve Bank at any given point in time.","Forward cover":"Transactions involving an agreed exchange rate at which foreign currency will be purchased or sold at a future date.","Fringe benefit":"A benefit supplementing an employee’s wages or salary, such as medical insurance, company cars, housing allowances and pension schemes.","Fuel levy":"An excise tax on liquid fuels.","Function shift":"The movement of a function from one departmental vote or sphere of government to another.","Funded pension arrangements":"A pension scheme in which expected future benefits are funded in advance and as entitlement accrues.","Gold and foreign exchange reserves":"Reserves held by the Reserve Bank to meet foreign exchange obligations and to maintain liquidity in the presence of external shocks.","Government debt":"The total amount of money owed by the government as a consequence of its past borrowing.","Government guarantee":"An assurance made by government to a lender that a financial obligation will be honoured, even if the borrowing government institution is unable to repay the debt. See contingent liability.","Green paper":"A policy document intended for public discussion.","Gross borrowing requirement":"The sum of the main budget balance, extraordinary receipts and payments (referred to as National Revenue Fund receipts and payments), and maturing debt. The amount is funded through domestic short- and long- term loans, foreign loans and changes in cash balances.","Gross domestic product (GDP)":"A measure of the total national output, income and expenditure in the economy. GDP per head is the simplest overall measure of welfare, although it does not take account of the distribution of income, nor of goods and services that are produced outside the market economy, such as work within the household.","Gross domestic product inflation":"A measure of the total increase in prices in the whole economy. Unlike CPI inflation, GDP inflation includes price increases in goods that are exported and intermediate goods such as machines, but excludes imported goods.","Gross fixed-capital formation":"The addition to a country’s fixed-capital stock during a specific period, before provision for depreciation.","Gross value added":"The value of output less intermediate consumption. It is also a measure of the contribution to the economy made by an industry or sector.","Group of Twenty (G20)":"An international forum made up of finance ministers and central bank governors from 20 of the world’s largest economies.","Hedging":"An action taken by a buyer or seller to protect income against changes in prices, interest rates or exchange rates.","Horizontal equity":"A principle in taxation that holds that similarly situated taxpayers should face a similar tax treatment or tax burden. In other words, taxpayers with the same amount of income or capital should be accorded equal treatment.","Impaired advances":"Loans or advances that may not be collected in full.","Impairment":"A reduction in the recorded value of a long-lived asset arising from circumstances that prevent the asset from generating the future economic benefits previously expected and recorded.","Import parity pricing":"When a firm sells goods locally at the price customers would pay if they were to import the same goods from another country.","Inclusion rate":"The portion of the net capital gain derived from the disposal of an asset that will be taxed at the applicable rate.","Industrial development zone":"Designated sites linked to an international air or sea port, supported by incentives to encourage investment in export-orientated manufacturing and job creation.","Inflation":"An increase in the overall price level of goods and services in an economy over a specific period of time.","Inflation targeting":"A monetary policy framework intended to achieve price stability over a certain period of time.","Inter-state debt":"Money that different organs of state owe to each other.","Intergenerational equity":"A value based on ensuring that future generations do not have to repay debts taken on today, unless they also share in the benefits of assets.","Intermediate goods":"Goods produced to be used as inputs in the production of final goods.","Inventories":"Stocks of goods held by firms. An increase in inventories reflects an excess of output relative to spending over a period of time.","Labour intensity":"The relative amount of labour used to produce a unit of output.","Liquidity":"The ease with which assets can be bought and sold.","Liquidity requirements":"The amount of liquid or freely convertible assets that banks are required to hold relative to their liabilities for prudential and regulatory purposes.","Liquidity risk":"The risk that an asset might not easily and quickly be converted into cash through sale, or the risk to a debtor that it cannot meet its current debt obligations.","Lump-sum benefit":"A one-time payment for the total or partial value of an asset, usually received in place of recurring smaller payments.","M3":"The broadest definition of money supply in South Africa, including notes and coins, demand and fixed deposits, and credit.","Macroeconomics":"The branch of economics that deals with the whole economy – including issues such as growth, inflation, unemployment and the balance of payments.","Macroprudential regulation":"Rules that protect the stability of the financial sector and guard against systemic risk.","Marginal income tax rate":"The rate of tax on an incremental unit of income.","Marginal lending rate":"A penalty rate of interest charged by the Reserve Bank for lending to financial institutions in the money market in excess of the daily liquidity provided to the money market at the repurchase rate. See also repurchase agreements.","Marketable securities":"Tradable financial securities listed with a securities exchange.","Means test":"A method for determining whether someone qualifies for state assistance.","Medium Term Expenditure Committee (MTEC)":"The technical committee responsible for evaluating the medium-term expenditure framework budget submissions of national departments and making recommendations to the Minister of Finance regarding allocations to national departments.","Medium-term expenditure framework (MTEF)":"The three-year spending plans of national and provincial governments, published at the time of the Budget.","Microeconomics":"The branch of economics that deals with the behaviour of individual firms, consumers and sectors.","Ministers’ Committee on the Budget":"The political committee that considers key policy and budgetary issues that pertain to the budget process before they are tabled in Cabinet.","Monetary easing":"See quantitative easing.","Monetary policy":"Policy concerning total money supply, exchange rates and the general level of interest rates.","Money supply":"The total stock of money in an economy.","National Development Plan":"A planning framework prepared by the National Planning Commission that aims to eliminate poverty and reduce inequality by 2030.","National Revenue Fund":"The consolidated account of the national government into which all taxes, fees and charges collected by SARS and departmental revenue must be paid.","National budget":"The projected revenue and expenditures that flow through the National Revenue Fund. It does not include spending by provinces or local government from their own revenues.","Negotiable certificate of deposit":"Short-term deposit instruments issued by banks, at a variable interest rate, for a fixed period.","Net borrowing requirement":"The main budget balance.","Net exports":"Exports less imports.","Net open foreign currency position":"Gold and foreign exchange reserves minus the oversold forward book. The figure is expressed in dollars.","Net trade":"The difference between the value of exports and the value of imports.","New Development Bank":"A multilateral lending institution being established by Brazil, Russia, India, China and South Africa.","Nominal exchange rates":"The current rate of exchange between the rand and foreign currencies. The “effective” exchange rate is a trade-weighted average of the rates of exchange with other currencies.","Nominal wage":"The return, or wage, to employees at the current price level.","Non-competitive bid auction":"An auction in which an investor agrees to purchase a certain number of securities such as bonds at the average price of all competitive bids over a given period of time.","Non-financial public enterprises":"Government-owned or controlled organisations that deliver goods and non- financial services, trading as business enterprises, such as Eskom or Transnet.","Non-interest expenditure":"Total expenditure by government less debt-service costs.","Non-tax revenue":"Income received by government as a result of administrative charges, licences, fees, sales of goods and services, and so on.","Occupation-specific salary dispensation":"Revised salary structures unique to identified occupations in the public service, including doctors, nurses and teachers.","Opportunity cost":"The value of that which must be given up to achieve or acquire something. It is represented by the next highest valued alternative use of a resource.","Organisation for Economic Cooperation and Development (OECD)":"An organisation of 35 mainly industrialised member countries. South Africa is not a member.","PAYE":"The pay-as-you-earn (PAYE) system of income tax withholding requires employers to deduct income tax, and in some cases, the employees’ portion of social benefit taxes, from each paycheque delivered to employees.","Payroll tax":"Tax an employer withholds and/or pays on behalf of employees based on employee wages or salaries.","Permanent establishment":"A fixed place of business from which a company operates. When two countries have a tax treaty, the concept of “permanent establishment” is used to determine the right of one state to tax the profits of the business in the other state. See also anti-fragmentation.","Policy reserve":"Additional money in the fiscus to fund new and crucial priorities.","Portfolio investment":"Investment in financial assets such as stocks and bonds.","Potential growth":"The fastest growth an economy can sustain without increasing inflation.","Presidential Infrastructure Coordinating Commission (PICC)":"A commission established by Cabinet to develop, review and coordinate a 20-year infrastructure plan.","Price discovery":"The process of determining the price level of a commodity or asset, based on supply and demand factors.","Price sensitivity":"The extent to which changes in price affect consumer purchasing behaviour.","Primary deficit/surplus":"The difference between total revenue and non-interest expenditure. When revenue exceeds non-interest expenditure there is a surplus.","Primary sector":"The agricultural and mining sectors of the economy.","Principal purpose test":"A test where the benefits of a tax treaty are denied if it is reasonable to conclude that obtaining the benefit was one of the principal purposes behind the arrangement or transaction.","Private-sector credit extension":"Credit provided to the private sector. This includes all loans, credit cards and leases.","Privatisation":"The full or partial sale of state-owned enterprises to private individuals or companies.","Producer price index (PPI)":"Price increases measured by the producer price index – a measure of the prices paid based mainly on producers’ published price lists.","Productivity":"A measure of the amount of output generated from every unit of input. Typically used to measure changes in labour efficiency.","Profit shifting":"The allocation of income and expenses between related corporations or branches of the same legal entity to reduce overall tax liability.","Public Finance Management Act (PFMA)":"The act regulating financial management of national and provincial government, including the efficiency and effectiveness of public expenditure and the responsibilities of those engaging with government financial management.","Public Investment Corporation (PIC)":"A government-owned investment management company that invests funds on behalf of public-sector entities. Its largest client is the Government Employees Pension Fund.","Public entities":"Companies, agencies, funds and accounts that are fully or partly owned by government or public authorities and are regulated by law.","Public goods":"Goods and services that would not be fully provided in a pure free-market system and are largely provided by government.","Public sector":"National government, provincial government, local government, extra- budgetary governmental institutions, social security funds and non- financial public enterprises.","Public-benefit organisations (PBOs)":"Organisations that are mainly funded by donations from the public and other institutions, which engage in social activities to meet the needs of the general public.","Public-private partnerships (PPPs)":"A contractual arrangement whereby a private party performs a government function and assumes the associated risks. In return, the private party receives a fee according to predefined performance criteria. See unitary payment.","Public-sector borrowing requirement":"The consolidated cash borrowing requirement of general government and non-financial public enterprises.","Purchasing managers’ index (PMI)":"A composite index measuring the change in manufacturing activity compared with the previous month. An index value of 50 indicates no change in activity, a value above 50 indicates increased activity and a value below 50 indicates decreased activity.","Quantitative easing":"A measure used by central banks to stimulate economic growth when interest rates are near zero by increasing money supply. Also called monetary easing.","Quarterly Employment Survey":"An establishment-based survey conducted by Statistics South Africa to obtain information about the number of employees and gross salaries paid.","Quarterly Labour Force Survey":"A household-based survey conducted by Statistics South Africa to measure the dynamics of the labour market, producing indicators such as employment, unemployment and inactivity.","Rating agency":"A company that evaluates the ability of countries or other borrowers to honour their debt obligations. Credit ratings are used by international investors as indications of sovereign risk. See also credit rating.","Real effective exchange rate":"A measure of the rate of exchange of the rand relative to a trade-weighted average of South Africa’s trading partners’ currencies, adjusted for price trends in South Africa and the countries included.","Real exchange rate":"The level of the exchange rate taking account of inflation differences.","Real expenditure":"Expenditure measured in constant prices after taking account of inflation.","Real interest rate":"The level of interest after taking account of inflation.","Real wage":"The return, or wage, to employees, measured at a constant price level.","Recapitalisation":"Injection of funds into a company or entity to aid liquidity, either as a loan or in return for equity.","Recession":"A period in which national output and income decline. A recession is usually defined as two consecutive quarters of negative growth.","Redemption":"The return of an investor’s principal in a fixed-income security, such as a preferred stock or bond.","Refinancing":"The repayment of debt at a scheduled time with the proceeds of new loans.","Refinancing risk":"The risk that government will not be able to raise money to repay debt at any scheduled point, or that it will have to do so at a high cost.","Regional integration":"An economic policy intended to boost economic activity in a geographical area extending beyond one country.","Remuneration":"The costs of personnel, including salaries, housing allowances, car allowances and other benefits received by personnel.","Repurchase (repo) rate":"The rate at which the Reserve Bank lends to commercial banks.","Repurchase agreements":"Short-term contracts between the Reserve Bank and private banks in the money market to sell specified amounts of money at an interest rate determined by daily auction.","Reserves (foreign exchange)":"Holdings of foreign exchange, either by the Reserve Bank only or by the Reserve Bank and domestic banking institutions.","Residence-based income tax system":"A tax system in which the worldwide income accruing to a resident of a country is subject to the taxes of that country.","Reticulation scheme":"A piped water network that ensures that water is collected and treated before it reaches the consumer.","Revaluation gain/loss":"The difference between the value of a foreign currency deposit from the original (historical) rate to execution of a trade based on the spot rate.","Risk premium":"A return that compensates for uncertainty.","Saving":"The difference between income and spending.","Seasonally adjusted":"Removal of seasonal volatility (monthly or quarterly) from a time series. This provides a measure of the underlying trend in the data.","Secondary rebate":"A rebate from income tax, in addition to the primary rebate, that is available to taxpayers aged 65 years and older.","Secondary sector":"The part of the economy concerned with the manufacture of goods.","Secondary tax on companies (STC)":"Tax on dividends declared by a company, calculated at the rate of 10 per cent of the net amount of dividends declared. This was discontinued in 2012 and replaced with a 15 per cent dividend withholding tax.","Section 21 company":"Non-profit entities registered in terms of Section 21 of the Companies Act.","Sector education and training authorities":"Institutions funded through employer training levies, responsible for learnership programmes and implementing strategic sector skills plans.","Secured debt instruments":"Debt backed or secured by collateral to reduce the risk of lending.","Securitisation":"The pooling of assets into a financial instrument to sell to different types of investors.","Service and transfer payments":"Services involve transactions of non-tangible commodities, while transfers are unrequited transactions that do not generate a counter-economic value (for example, gifts and grants).","Skills development levy":"A payroll tax designed to finance training initiatives in terms of the skills development strategy.","Social infrastructure":"Infrastructure that supports social services.","Social wage":"Social benefits available to all individuals, funded wholly or partly by the state.","Source-based income tax system":"A system in which income is taxed in the country where the income originates.","Southern African Customs Union (SACU) agreement":"An agreement between South Africa, Botswana, Namibia, Lesotho and Swaziland that allows for the unrestricted flow of goods and services, and the sharing of customs and excise revenue.","Southern African Development Community (SADC)":"A regional intergovernmental organisation that promotes collaboration, economic integration and technical cooperation throughout southern Africa.","Sovereign debt":"Debt issued by a government.","Sovereign debt rating":"An assessment of the likelihood that a government will default on its debt obligations.","Spatial planning":"Planning to influence the geographic distribution of people and economic activity.","Special economic zones":"A designated zone where business and trade laws incentivise trade, investment and employment.","Specific excise duty":"A tax on each unit of output or sale of a good, unrelated to the value of a good.","Standing appropriations":"Government’s expenditure obligations that do not require a vote or statutory provision, including contractual guarantee commitments and international agreements.","Statutory appropriations":"Amounts appropriated to be spent in terms of statutes and not requiring appropriation by vote.","Sterilisation":"Action taken by the Reserve Bank to neutralise excess cash created in the money market when purchasing foreign currency.","Structural budget balance":"A representation of what government revenue and expenditure would be if output were at its potential level, with cyclical variations stripped out.","Structural constraints":"Imbalances in the structure of the economy that hinder growth and development.","Switch auction":"An auction to exchange bonds to manage refinancing risk or improve tradability.","Syndicated loan":"A large loan in which a group of banks work together to provide funds, which they solicit from their clients for the borrower.","Tax amnesty":"A period allowed by tax authorities during which taxpayers who are outside the tax net, but should be registered for tax purposes, can register for tax without incurring penalties.","Tax avoidance":"When individuals or businesses legitimately use provisions in the tax law to reduce their tax liability.","Tax base":"The aggregate value of income, sales or transactions on which particular taxes are levied.","Tax buoyancy":"Describes the relationship between total tax revenue collections and economic growth. This measure includes the effects of policy changes on revenue. A value above one means that revenues are growing faster than the economy and below one means they are growing below the rate of GDP growth.","Tax evasion":"When individuals or businesses illegally reduce their tax liability.","Tax expenditure":"Government revenue forgone due to provisions that allow deductions, exclusions, or exemptions from taxable income. The revenue can also be foregone through the deferral of tax liability or preferential tax rates.","Tax gap":"A measure of tax evasion that emerges from comparing the tax liability or tax base declared to the tax authorities with the tax liability or tax base calculated from other sources.","Tax incentives":"Specific provisions in the tax code that provide favourable tax treatment to individuals and businesses to encourage specific behaviour or activities.","Tax incidence":"The final distribution of the burden of tax. Statutory incidence defines where the law requires a tax to be levied. Economic incidence refers to those who experience a decrease in real income as a result of the imposition of a tax.","Tax loopholes":"Unintended weaknesses in the legal provisions of the tax system used by taxpayers to avoid paying tax liability.","Tax morality":"The willingness, or motivation, of citizens to pay tax. This is separate to the statutory obligation to pay taxes, but may have an influence on tax compliance.","Tax-to-GDP ratio":"For public finance comparison purposes, a country’s tax burden, or tax-to- GDP ratio, is calculated by taking the total tax payments for a particular fiscal year as a fraction or percentage of the GDP for that year.","Term-to-maturity":"The time between issuance and expiry.","Terms of trade":"An index measuring the ratio of a country’s export prices relative to its import prices.","Tertiary sector":"The part of the economy concerned with the provision of services.","Total factor productivity":"An index used to measure the efficiency of all inputs that contribute to the production process.","Trade balance":"The monetary record of a country’s net imports and exports of physical merchandise. See also current account.","Trade regime":"The system of tariffs, quotas and quantitative restrictions applied to protect domestic industries, together with subsidies and incentives used to promote international trade.","Trade-weighted rand":"The value of the rand pegged to or expressed relative to a market basket of selected foreign currencies.","Trademark":"A legal right pointing distinctly to the origin or ownership of merchandise to which it is applied and legally reserved for the exclusive use of the owner as maker or seller.","Treasury bills":"Short-term government debt instruments that yield no interest but are issued at a discount. Maturities vary from one day to 12 months.","Treasury committee":"The Cabinet committee that evaluates all requests for additional funds for unavoidable and unforeseen expenditure during a financial year.","Treaty shopping":"When related companies in different countries establish a third entity in another location to take advantage of a favourable tax arrangement.","Trend GDP growth":"The theoretical level of GDP growth determined by the full utilisation of all factors of production (land, labour and capital). Growth above the trend rate results in macroeconomic imbalances such as rising inflation or a weakening of the current account. Increases in trend GDP growth are achieved through capital formation, growth in employment and/or technological development.","Unallocated reserves":"Potential expenditure provision not allocated to a particular use. It mainly consists of the contingency reserve and amounts of money left unallocated by provinces.","Unemployment (broad definition)":"All those of working age who are unemployed, including those actively seeking employment and discouraged work seekers.","Unemployment (official definition)":"Those of working age, who are unemployed and actively seeking work (excludes discouraged work seekers).","Unit labour cost":"The cost of labour per unit of output, calculated by dividing average wages by productivity (output per worker per hour).","Unitary payment":"The payment made to the private party for meeting its obligations in the project deliverables in a public-private partnership.","Unqualified audit":"An assessment by a registered auditing firm or the Auditor-General of South Africa asserting that the financial statements of a department, entity or company are free of material misstatement.","Unsecured debt instruments":"Debt not backed or secured by collateral to reduce the risk of lending.","Unsecured lending":"A loan that is not backed or secured by any type of collateral to reduce the lender’s risk.","Vertical equity":"A doctrine in taxation that holds that differently situated taxpayers should be treated differently in terms of income tax provisions. In other words, taxpayers with more income and/or capital should pay more tax.","Vested right":"The right to ownership of an asset that cannot be arbitrarily taken away by a third party.","Virement":"The transfer of resources from one programme to another within the same department during a financial year.","Vote":"An appropriation voted by Parliament.","Water trading account":"A departmental account that ring-fences revenue from the sale of bulk water and related services to secure funding to manage the sustainability of water resources and infrastructure.","Weighted average cost of capital":"The average rate of return an organisation expects to pay to investors in its securities, such as bonds, debt and shares. Each category of security is accorded a proportionate weight in the calculation.","White paper":"A policy document used to present government policy preferences.","Withholding tax":"Tax on income deducted at source. Withholding taxes are widely used for dividends, interest and royalties.","Yield":"A financial return or interest paid to buyers of government bonds. The yield/rate of return on bonds takes into account the total annual interest payments, the purchase price, the redemption value and the amount of time remaining until maturity.","Yield curve":"A graph showing the relationship between the yield on bonds of the same credit quality but different maturity at a given point in time."}
+module.exports = {"Accounting officer":"The public servant in a department who is accountable to Parliament for financial management, usually the director-general or head of the department.","Accrual":"An accounting convention by which payments and receipts are recorded as they occur, even if no cash flow takes place.","Acquisition debt":"Debt used to purchase shares or assets.","Ad valorem duties":"Duties levied on commodities as a certain percentage of their value.","Adjusted Appropriation":"The approval, during the course of the financial year, by Parliament of amendments to appropriations voted in the main appropriation for the year. Most changes are made mid-year at the time of the adjustments budget. These adjustments can be made only in terms of the circumstances listed in section 30 of the Public Finance Management Act (1999). These adjustments are included in an adjustments appropriation bill, which Parliament approves before expenditure can take place. Particulars are tabled in acts of Parliament and the accompanying Adjusted Estimates of National Expenditure, and other, publications.","Adjustments estimate":"Presentation to Parliament of the amendments to be made to the appropriations voted in the main budget for the year.","Administered prices":"Prices set outside ordinary market processes through administrative decisions by government, a public entity or a regulator.","Agro-processing":"Manufacturing activities that transform raw materials and intermediary goods derived from agriculture into intermediate or final goods.","Allocated expenditure":"The part of the national budget that can be divided between the national, provincial and local spheres of government, after interest and the contingency reserve have been taken into account.","Amortisation":"The repayment of a loan by instalments over the duration of the loan.","Annual Performance Plan (APP)":"An annual plan that identifies the outputs, performance indicators and targets that the institution will seek to achieve in the upcoming year, aligned to the outcomes reflected in the Strategic Plan. It also includes forward projections (annual targets) for a further two outer years, consistent with the Medium Term Expenditure Framework (MTEF) period.","Annual report (AR)":"A report published annually by institutions that includes the institution’s audited financial statements, in line with applicable legislation and regulations.","Annuity":"A fixed amount of money paid over a period of time as a return on an investment.","Anti-avoidance rule":"A provision aimed at preventing tax avoidance. See principal purpose test.","Anti-fragmentation rule":"A rule that aims to prevent taxpayers from artificially avoiding permanent establishment status by breaking up a cohesive business into several small operations.","Appropriation":"The approval by Parliament of spending from the National Revenue Fund, or by a provincial legislature from a provincial revenue fund.","Artificial debt":"A \"loan\" that is presented as debt but is in effect equity. Often used in tax avoidance or evasion.","Asset price bubble":"A condition occurring when prices for a category of assets rise above the level justified by economic fundamentals.","Audited Outcome":"The actual expenditure recorded in the institution’s audited annual financial statements.","Auditor General reports":"The Auditor-General was established in terms of section 188 of the Constitution to audit and report on the accounts, financial statements and the financial management of government departments, municipalities as well as any other institution as required by legislation. The Auditor-General must submit audit reports to any legislature that has a direct interest in the audit, and to any other authority prescribed by national legislation. All reports must be made public.","Balance of payments":"A summary statement of all the international transactions of the residents of a country with the rest of the world over a particular period of time.","Base erosion and profit shifting":"Corporate tax-planning strategies that exploit the gaps and mismatches in tax laws between countries to artificially shift taxable income to lower or no-tax jurisdictions. See also tax evasion and profit shifting.","Basel III":"Reforms developed by the Basel Committee on Banking Supervision to strengthen the regulation, supervision and risk management of the banking sector.","Baseline":"The initial allocations used during the budget process, derived from the previous year's forward estimates.","Basis point":"One hundredth of one per cent.","Beneficiation":"Manufacturing activities that transform raw minerals into higher-value products.","Bond premium":"Amount by which the purchase price of a bond is greater than its par value.","Bond spread":"The difference in yield between two bonds.","Bond":"A certificate of debt issued by a government or corporation guaranteeing payment of the original investment plus interest by a specified future date.","Bond-switch programme":"An auction that aims to ease pressure on targeted areas of the redemption profile by exchanging shorter-dated debt for longer-term debt. See switch auction.","Bracket creep":"Increased real tax liability that arises when the personal income tax tables are not fully adjusted for inflation.","Budget balance":"The difference between budgeted expenditure and budgeted revenue. If expenditure exceeds revenue, the budget is in deficit. If the reverse is true, it is in surplus.","Capital adequacy":"A measure of a financial institution’s capital, expressed as a percentage of its credit exposure.","Capital asset":"Property of any kind, including assets that are movable or immovable, tangible or intangible, fixed or circulating, but excluding trading stock held for the purpose of realising a financial or economic return.","Capital expenditure":"Spending on assets such as buildings, land, infrastructure and equipment.","Capital flow":"A flow of investments in or out of the country.","Capital formation":"A measure of the net increase in the country’s total stock of capital goods, after allowing for depreciation.","Capital gains tax":"Tax levied on the income realised from the disposal of a capital asset by a taxpayer. A capital gain is the excess of the selling price over the purchase price of the capital asset.","Capital goods":"Durable goods used over a period of time for the production of other goods. See also intermediate goods.","Carbon tax":"An environmental tax on emissions of carbon dioxide (CO2).","Category A, B and C municipalities":"Municipal categories established by the Constitution: Category A, or metropolitan municipalities; Category B, or local municipalities; and Category C, or district municipalities.","Collateral":"An asset placed as a guarantee for the repayment of debt, to be recouped in the case of a default.","Commercial paper issuances":"Debt issued by companies through short-term promissory notes.","Conditional grants":"Allocations of money from one sphere of government to another, conditional on certain services being delivered or on compliance with specified requirements.","Connected person debt/credit":"Debt or credit granted by a person/entity to a connected person/entity. In the case of a holding company, for example, a subsidiary company would be a connected person.","Consolidated general government":"National, provincial and local government, as well as extra-budgetary government institutions and social security funds.","Consolidated government expenditure":"Total expenditure by national and provincial government, social security funds and selected public entities, including transfers and subsidies to municipalities, businesses and other entities.","Consumer price index (CPI)":"The measure of inflation based on prices in a basket of goods and services.","Consumption expenditure":"Expenditure on goods and services, including salaries, which are used up within a short period of time, usually a year.","Contingency reserve":"An amount set aside, but not allocated in advance, to accommodate changes to the economic environment and to meet unforeseeable spending pressures.","Contingent liability":"A government obligation, such as a guarantee, that will only result in expenditure upon the occurrence of a specific event. See government guarantee.","Controlled foreign entity":"A foreign business in which South Africans hold a greater than 50 per cent interest, usually of the share capital of a company.","Corporatisation":"The transformation of state-owned enterprises into commercial entities, subject to commercial legal requirements and governance structures, while the state retains ownership.","Cost-push inflation":"Inflation that is caused by an increase in production costs, such as wages or oil prices.","Countercyclical fiscal policy":"Policy that has the opposite effect on economic activity to that caused by the business cycle, such as slowing spending growth in a boom period and accelerating spending in a recession.","Coupon (bond)":"The periodic interest payment made to bondholders during the life of the bond. The interest is usually paid twice a year.","Credit rating":"An indicator of the risk of default by a borrower or the riskiness of a financial instrument. Credit ratings generally fit into three broad risk categories: minimal or low, moderate and high. These categories indicate the extent of a borrower’s capacity to meet their financial obligations or the probability that the value of a financial instrument will be realised. Investments rated as high risk are considered sub-investment grade (or “junk”).","Crowding-in":"An increase in private investment through the income-raising effect of government spending financed by deficits.","Crowding-out":"A fall in private investment or consumption as a result of increased government expenditure financed through borrowing, thereby competing for loanable funds and raising the interest rate, which curtails private investment and consumption spending.","Currency risk":"The potential for a change in the price of a currency that would affect investors with assets, liabilities or operations denominated in other currencies.","Current account (of the balance of payments)":"The difference between total imports and total exports, taking into account service payments and receipts, interest, dividends and transfers. The current account can be in deficit or surplus. See also trade balance.","Current balance":"The difference between revenue and current expenditure, which consists of compensation of employees, goods and services, and interest and rent on land.","Current expenditure":"Government expenditure on salaries and goods and services, such as rent, maintenance and interest payments. See also consumption expenditure.","Customs duties":"Tax levied on imported goods.","Debenture":"An unsecured loan backed by general credit rather than by specified assets.","Debt redemption profile":"The set of fixed repayment dates and amounts to which an issuer of debt, such as a preferred stock or bond, has committed to meeting.","Debt switching":"The exchange of bonds to manage refinancing risk or improve tradability.","Debt-service costs":"The cost of interest on government debt and other costs directly associated with borrowing.","Deflation":"A consistent decrease in the price of goods and services.","Deleveraging":"The reduction of debt previously used to increase the potential return of an investment.","Depreciation (capital)":"A reduction in the value of fixed capital as a result of wear and tear or redundancy.","Depreciation (exchange rate)":"A reduction in the external value of a currency.","Derivative financial instrument":"A financial asset that derives its value from an underlying asset, which may be a physical asset such as gold, or a financial asset such as a government bond.","Designated countries":"Foreign countries from which income may be exempt from South African tax under certain circumstances. See also double tax agreement.","Development finance institutions":"State agencies that aim to meet the credit needs of riskier but socially and economically desirable projects that are beyond the acceptance limits of commercial banks.","Direct taxes":"Taxes charged on taxable income or capital of individuals and legal entities.","Discretionary trust":"A trust where the executor has the choice of whether and how much of the trust’s income or capital is to be distributed to beneficiaries. The beneficiaries have only provisional rights to the income or capital of the trust.","Disposable income":"Total income by households less all taxes and employee contributions.","Dissaving":"An excess of current expenditure, including the depreciation of fixed capital, over current income.","Dividend withholding tax":"A tax on dividends that is subtracted and withheld by a company or intermediary before the net dividend is paid to the shareholder.","Dividend":"The distribution of a portion of a company's earnings to a class of its shareholders.","Division of revenue":"The allocation of funds between spheres of government, as required by the Constitution. See also equitable share.","Domestic demand":"The total level of spending in an economy, including imports but excluding exports.","Double tax agreement":"An agreement between two countries to prevent income that is taxed in one country from being taxed in the other as well. See also designated countries.","Economic cost":"The cost of an alternative that must be forgone to pursue a certain action. In other words, the benefits that could have been received by taking an alternative action.","Economic growth":"An increase in the total amount of output, income and spending in the economy.","Economic rent":"The difference between the return made by a factor of production (capital or labour) and the return necessary to keep the factor in its current occupation. For example, a firm making excess profits is earning economic rent.","Economically active population":"The part of the population that is of working age and is either employed or seeking work.","Effective tax rate":"Actual tax liability (or a reasonable estimate thereof) expressed as a percentage of a pre-tax income base rather than as a percentage of taxable income. In other words, tax rates that take into account not only the statutory or nominal tax rate, but also other aspects of the tax system (for example, allowable deductions), which determine the tax liability.","Embedded derivative":"A provision in a contract modifying its cash flows by making them dependent on an underlying measure – such as interest or exchange rates, or commodity prices – the value of which changes independently.","Emerging economies":"A name given by international investors to middle-income economies.","Employment coefficient":"The ratio of employment growth to economic growth.","Equitable share":"The allocation of revenue to the national, provincial and local spheres of government as required by the Constitution. See also division of revenue.","Equity finance":"Raising money by selling shares of stock to investors, who receive an ownership interest in return.","Exchange control":"Rules that regulate the flow of currency out of South Africa, or restrict the amount of foreign assets held by South African individuals and companies.","Exchange-traded funds":"Funds that track indexes, commodities or baskets of assets, and trade like stocks.","Excise duties":"Taxes on the manufacture or sale of certain domestic or imported products. Excise duties are usually charged on products such as alcoholic beverages, tobacco and petroleum.","Expenditure ceiling":"The maximum allowable level of expenditure to which government has committed itself.","Extra-budgetary institutions":"Public entities not directly funded from the fiscus.","Fair-value adjustment":"A change in the value of an asset or liability resulting from the periodic reassessment of its expected future economic in- or outflows.","Financial Services Board":"An independent institution established by statute that regulates insurers, intermediaries, retirement funds, friendly societies, unit trust schemes, management companies and financial markets.","Financial Stability Board":"An international body made up of representatives of financial authorities and institutions, and central banks. It proposes regulatory, supervisory and other policies in the interest of financial stability.","Financial account":"A statement of all financial transactions between the nation and the rest of the world, including portfolio and fixed investment flows and movements in foreign reserves.","Financial and Fiscal Commission (FFC)":"An independent body established by the Constitution to make recommendations to Parliament and provincial legislatures about financial issues affecting the three spheres of government.","Financial year":"The 12 months according to which companies and organisations budget and account. See also fiscal year.","Fiscal consolidation":"Policy aimed at reducing government deficits and debt accumulation.","Fiscal incidence":"The combined overall economic impact that fiscal policy has on the economy.","Fiscal leakage":"The outflow of revenue from an economy through tax evasion and avoidance.","Fiscal policy":"Policy on taxation, public spending and borrowing by the government.","Fiscal space":"The ability of government’s budget to provide additional resources for a desired programme without jeopardising fiscal or debt sustainability.","Fiscal year":"The 12 months on which government budgets are based, beginning 1 April and ending 31 March of the subsequent calendar year.","Fixed investment/capital formation":"Spending on buildings, machinery and equipment contributing to production capacity in the economy. See also gross fixed-capital formation.","Fixed-income bond":"A bond that pays a specific interest rate.","Floating rate notes":"A bond on which the interest rate is reset periodically in line with a money market reference rate.","Flow-through vehicles":"A vehicle, such as a trust, where income earned is treated as income of the vehicle’s beneficiaries.","Foreign currency swaps":"The exchange of principal and/or interest payments in one currency for those in another.","Foreign direct investment (FDI)":"The acquisition of a controlling interest by governments, institutions or individuals of a business in another country.","Forward book":"The total amount of contracts for the future exchange of foreign currency entered into by the Reserve Bank at any given point in time.","Forward cover":"Transactions involving an agreed exchange rate at which foreign currency will be purchased or sold at a future date.","Fringe benefit":"A benefit supplementing an employee’s wages or salary, such as medical insurance, company cars, housing allowances and pension schemes.","Fuel levy":"An excise tax on liquid fuels.","Function shift":"The movement of a function from one departmental vote or sphere of government to another.","Funded pension arrangements":"A pension scheme in which expected future benefits are funded in advance and as entitlement accrues.","Gold and foreign exchange reserves":"Reserves held by the Reserve Bank to meet foreign exchange obligations and to maintain liquidity in the presence of external shocks.","Government debt":"The total amount of money owed by the government as a consequence of its past borrowing.","Government guarantee":"An assurance made by government to a lender that a financial obligation will be honoured, even if the borrowing government institution is unable to repay the debt. See contingent liability.","Green paper":"A policy document intended for public discussion.","Gross borrowing requirement":"The sum of the main budget balance, extraordinary receipts and payments (referred to as National Revenue Fund receipts and payments), and maturing debt. The amount is funded through domestic short- and long- term loans, foreign loans and changes in cash balances.","Gross domestic product (GDP)":"A measure of the total national output, income and expenditure in the economy. GDP per head is the simplest overall measure of welfare, although it does not take account of the distribution of income, nor of goods and services that are produced outside the market economy, such as work within the household.","Gross domestic product inflation":"A measure of the total increase in prices in the whole economy. Unlike CPI inflation, GDP inflation includes price increases in goods that are exported and intermediate goods such as machines, but excludes imported goods.","Gross fixed-capital formation":"The addition to a country’s fixed-capital stock during a specific period, before provision for depreciation.","Gross value added":"The value of output less intermediate consumption. It is also a measure of the contribution to the economy made by an industry or sector.","Group of Twenty (G20)":"An international forum made up of finance ministers and central bank governors from 20 of the world’s largest economies.","Hedging":"An action taken by a buyer or seller to protect income against changes in prices, interest rates or exchange rates.","Horizontal equity":"A principle in taxation that holds that similarly situated taxpayers should face a similar tax treatment or tax burden. In other words, taxpayers with the same amount of income or capital should be accorded equal treatment.","Impaired advances":"Loans or advances that may not be collected in full.","Impairment":"A reduction in the recorded value of a long-lived asset arising from circumstances that prevent the asset from generating the future economic benefits previously expected and recorded.","Import parity pricing":"When a firm sells goods locally at the price customers would pay if they were to import the same goods from another country.","Inclusion rate":"The portion of the net capital gain derived from the disposal of an asset that will be taxed at the applicable rate.","Industrial development zone":"Designated sites linked to an international air or sea port, supported by incentives to encourage investment in export-orientated manufacturing and job creation.","Inflation targeting":"A monetary policy framework intended to achieve price stability over a certain period of time.","Inflation":"An increase in the overall price level of goods and services in an economy over a specific period of time.","Inter-state debt":"Money that different organs of state owe to each other.","Intergenerational equity":"A value based on ensuring that future generations do not have to repay debts taken on today, unless they also share in the benefits of assets.","Intermediate goods":"Goods produced to be used as inputs in the production of final goods.","Inventories":"Stocks of goods held by firms. An increase in inventories reflects an excess of output relative to spending over a period of time.","Labour intensity":"The relative amount of labour used to produce a unit of output.","Liquidity requirements":"The amount of liquid or freely convertible assets that banks are required to hold relative to their liabilities for prudential and regulatory purposes.","Liquidity risk":"The risk that an asset might not easily and quickly be converted into cash through sale, or the risk to a debtor that it cannot meet its current debt obligations.","Liquidity":"The ease with which assets can be bought and sold.","Lump-sum benefit":"A one-time payment for the total or partial value of an asset, usually received in place of recurring smaller payments.","M3":"The broadest definition of money supply in South Africa, including notes and coins, demand and fixed deposits, and credit.","Macroeconomics":"The branch of economics that deals with the whole economy – including issues such as growth, inflation, unemployment and the balance of payments.","Macroprudential regulation":"Rules that protect the stability of the financial sector and guard against systemic risk.","Main Appropriation":"The spending appropriations set out in legislation, at the beginning of the financial year, to authorise spending from the National Revenue Fund and provincial revenue funds. Sometimes referred to as “Annual budget”.","Marginal income tax rate":"The rate of tax on an incremental unit of income.","Marginal lending rate":"A penalty rate of interest charged by the Reserve Bank for lending to financial institutions in the money market in excess of the daily liquidity provided to the money market at the repurchase rate. See also repurchase agreements.","Marketable securities":"Tradable financial securities listed with a securities exchange.","Means test":"A method for determining whether someone qualifies for state assistance.","Medium Term Estimates":"The three-year spending or revenue plans of national and provincial departments as published at the time of the annual budget. Parliament authorises expenditure annually, thus the spending estimates for the two outer years of the medium term are not included in the voted appropriations. These forward estimates or indicative allocations do, however, form the basis of the planning of the following year’s budget.","Medium Term Expenditure Committee (MTEC)":"The technical committee responsible for evaluating the medium-term expenditure framework budget submissions of national departments and making recommendations to the Minister of Finance regarding allocations to national departments.","Medium-term expenditure framework (MTEF)":"The three-year spending plans of national and provincial governments, published at the time of the Budget.","Microeconomics":"The branch of economics that deals with the behaviour of individual firms, consumers and sectors.","Ministers’ Committee on the Budget":"The political committee that considers key policy and budgetary issues that pertain to the budget process before they are tabled in Cabinet.","Monetary easing":"See quantitative easing.","Monetary policy":"Policy concerning total money supply, exchange rates and the general level of interest rates.","Money supply":"The total stock of money in an economy.","National Development Plan":"A planning framework prepared by the National Planning Commission that aims to eliminate poverty and reduce inequality by 2030.","National Revenue Fund":"The consolidated account of the national government into which all taxes, fees and charges collected by SARS and departmental revenue must be paid.","National budget":"The projected revenue and expenditures that flow through the National Revenue Fund. It does not include spending by provinces or local government from their own revenues.","Negotiable certificate of deposit":"Short-term deposit instruments issued by banks, at a variable interest rate, for a fixed period.","Net borrowing requirement":"The main budget balance.","Net exports":"Exports less imports.","Net open foreign currency position":"Gold and foreign exchange reserves minus the oversold forward book. The figure is expressed in dollars.","Net trade":"The difference between the value of exports and the value of imports.","New Development Bank":"A multilateral lending institution being established by Brazil, Russia, India, China and South Africa.","Nominal exchange rates":"The current rate of exchange between the rand and foreign currencies. The “effective” exchange rate is a trade-weighted average of the rates of exchange with other currencies.","Nominal wage":"The return, or wage, to employees at the current price level.","Non-competitive bid auction":"An auction in which an investor agrees to purchase a certain number of securities such as bonds at the average price of all competitive bids over a given period of time.","Non-financial public enterprises":"Government-owned or controlled organisations that deliver goods and non- financial services, trading as business enterprises, such as Eskom or Transnet.","Non-interest expenditure":"Total expenditure by government less debt-service costs.","Non-tax revenue":"Income received by government as a result of administrative charges, licences, fees, sales of goods and services, and so on.","Occupation-specific salary dispensation":"Revised salary structures unique to identified occupations in the public service, including doctors, nurses and teachers.","Opportunity cost":"The value of that which must be given up to achieve or acquire something. It is represented by the next highest valued alternative use of a resource.","Organisation for Economic Cooperation and Development (OECD)":"An organisation of 35 mainly industrialised member countries. South Africa is not a member.","PAYE":"The pay-as-you-earn (PAYE) system of income tax withholding requires employers to deduct income tax, and in some cases, the employees’ portion of social benefit taxes, from each paycheque delivered to employees.","Payroll tax":"Tax an employer withholds and/or pays on behalf of employees based on employee wages or salaries.","Performance agreements (PA)":"The agreement that comprises an official’s duties and responsibilities as contracted with the Executive.","Permanent establishment":"A fixed place of business from which a company operates. When two countries have a tax treaty, the concept of “permanent establishment” is used to determine the right of one state to tax the profits of the business in the other state. See also anti-fragmentation.","Policy reserve":"Additional money in the fiscus to fund new and crucial priorities.","Portfolio investment":"Investment in financial assets such as stocks and bonds.","Potential growth":"The fastest growth an economy can sustain without increasing inflation.","Presidential Infrastructure Coordinating Commission (PICC)":"A commission established by Cabinet to develop, review and coordinate a 20-year infrastructure plan.","Price discovery":"The process of determining the price level of a commodity or asset, based on supply and demand factors.","Price sensitivity":"The extent to which changes in price affect consumer purchasing behaviour.","Primary deficit/surplus":"The difference between total revenue and non-interest expenditure. When revenue exceeds non-interest expenditure there is a surplus.","Primary sector":"The agricultural and mining sectors of the economy.","Principal purpose test":"A test where the benefits of a tax treaty are denied if it is reasonable to conclude that obtaining the benefit was one of the principal purposes behind the arrangement or transaction.","Private-sector credit extension":"Credit provided to the private sector. This includes all loans, credit cards and leases.","Privatisation":"The full or partial sale of state-owned enterprises to private individuals or companies.","Producer price index (PPI)":"Price increases measured by the producer price index – a measure of the prices paid based mainly on producers’ published price lists.","Productivity":"A measure of the amount of output generated from every unit of input. Typically used to measure changes in labour efficiency.","Profit shifting":"The allocation of income and expenses between related corporations or branches of the same legal entity to reduce overall tax liability.","Public Finance Management Act (PFMA)":"The act regulating financial management of national and provincial government, including the efficiency and effectiveness of public expenditure and the responsibilities of those engaging with government financial management.","Public Investment Corporation (PIC)":"A government-owned investment management company that invests funds on behalf of public-sector entities. Its largest client is the Government Employees Pension Fund.","Public entities":"Companies, agencies, funds and accounts that are fully or partly owned by government or public authorities and are regulated by law.","Public goods":"Goods and services that would not be fully provided in a pure free-market system and are largely provided by government.","Public sector":"National government, provincial government, local government, extra- budgetary governmental institutions, social security funds and non- financial public enterprises.","Public-benefit organisations (PBOs)":"Organisations that are mainly funded by donations from the public and other institutions, which engage in social activities to meet the needs of the general public.","Public-private partnerships (PPPs)":"A contractual arrangement whereby a private party performs a government function and assumes the associated risks. In return, the private party receives a fee according to predefined performance criteria. See unitary payment.","Public-sector borrowing requirement":"The consolidated cash borrowing requirement of general government and non-financial public enterprises.","Purchasing managers’ index (PMI)":"A composite index measuring the change in manufacturing activity compared with the previous month. An index value of 50 indicates no change in activity, a value above 50 indicates increased activity and a value below 50 indicates decreased activity.","Quantitative easing":"A measure used by central banks to stimulate economic growth when interest rates are near zero by increasing money supply. Also called monetary easing.","Quarterly Employment Survey":"An establishment-based survey conducted by Statistics South Africa to obtain information about the number of employees and gross salaries paid.","Quarterly Labour Force Survey":"A household-based survey conducted by Statistics South Africa to measure the dynamics of the labour market, producing indicators such as employment, unemployment and inactivity.","Quarterly performance report (QPR)":"A quarterly progress report on the implementation of an institution’s Annual Performance Plan.","Rating agency":"A company that evaluates the ability of countries or other borrowers to honour their debt obligations. Credit ratings are used by international investors as indications of sovereign risk. See also credit rating.","Real effective exchange rate":"A measure of the rate of exchange of the rand relative to a trade-weighted average of South Africa’s trading partners’ currencies, adjusted for price trends in South Africa and the countries included.","Real exchange rate":"The level of the exchange rate taking account of inflation differences.","Real expenditure":"Expenditure measured in constant prices after taking account of inflation.","Real interest rate":"The level of interest after taking account of inflation.","Real wage":"The return, or wage, to employees, measured at a constant price level.","Recapitalisation":"Injection of funds into a company or entity to aid liquidity, either as a loan or in return for equity.","Recession":"A period in which national output and income decline. A recession is usually defined as two consecutive quarters of negative growth.","Redemption":"The return of an investor’s principal in a fixed-income security, such as a preferred stock or bond.","Refinancing risk":"The risk that government will not be able to raise money to repay debt at any scheduled point, or that it will have to do so at a high cost.","Refinancing":"The repayment of debt at a scheduled time with the proceeds of new loans.","Regional integration":"An economic policy intended to boost economic activity in a geographical area extending beyond one country.","Remuneration":"The costs of personnel, including salaries, housing allowances, car allowances and other benefits received by personnel.","Repurchase (repo) rate":"The rate at which the Reserve Bank lends to commercial banks.","Repurchase agreements":"Short-term contracts between the Reserve Bank and private banks in the money market to sell specified amounts of money at an interest rate determined by daily auction.","Reserves (foreign exchange)":"Holdings of foreign exchange, either by the Reserve Bank only or by the Reserve Bank and domestic banking institutions.","Residence-based income tax system":"A tax system in which the worldwide income accruing to a resident of a country is subject to the taxes of that country.","Reticulation scheme":"A piped water network that ensures that water is collected and treated before it reaches the consumer.","Revaluation gain/loss":"The difference between the value of a foreign currency deposit from the original (historical) rate to execution of a trade based on the spot rate.","Revised estimate":"The current estimate of the likely outcome for a particular item of revenue or expenditure for a financial year. This does not imply a change in the amount voted to an institution, but rather an updated estimate of what the department is likely to spend or receive during the financial year.","Risk premium":"A return that compensates for uncertainty.","Saving":"The difference between income and spending.","Seasonally adjusted":"Removal of seasonal volatility (monthly or quarterly) from a time series. This provides a measure of the underlying trend in the data.","Secondary rebate":"A rebate from income tax, in addition to the primary rebate, that is available to taxpayers aged 65 years and older.","Secondary sector":"The part of the economy concerned with the manufacture of goods.","Secondary tax on companies (STC)":"Tax on dividends declared by a company, calculated at the rate of 10 per cent of the net amount of dividends declared. This was discontinued in 2012 and replaced with a 15 per cent dividend withholding tax.","Section 21 company":"Non-profit entities registered in terms of Section 21 of the Companies Act.","Sector education and training authorities":"Institutions funded through employer training levies, responsible for learnership programmes and implementing strategic sector skills plans.","Secured debt instruments":"Debt backed or secured by collateral to reduce the risk of lending.","Securitisation":"The pooling of assets into a financial instrument to sell to different types of investors.","Service and transfer payments":"Services involve transactions of non-tangible commodities, while transfers are unrequited transactions that do not generate a counter-economic value (for example, gifts and grants).","Skills development levy":"A payroll tax designed to finance training initiatives in terms of the skills development strategy.","Social infrastructure":"Infrastructure that supports social services.","Social wage":"Social benefits available to all individuals, funded wholly or partly by the state.","Source-based income tax system":"A system in which income is taxed in the country where the income originates.","Southern African Customs Union (SACU) agreement":"An agreement between South Africa, Botswana, Namibia, Lesotho and Swaziland that allows for the unrestricted flow of goods and services, and the sharing of customs and excise revenue.","Southern African Development Community (SADC)":"A regional intergovernmental organisation that promotes collaboration, economic integration and technical cooperation throughout southern Africa.","Sovereign debt rating":"An assessment of the likelihood that a government will default on its debt obligations.","Sovereign debt":"Debt issued by a government.","Spatial planning":"Planning to influence the geographic distribution of people and economic activity.","Special economic zones":"A designated zone where business and trade laws incentivise trade, investment and employment.","Specific excise duty":"A tax on each unit of output or sale of a good, unrelated to the value of a good.","Standing appropriations":"Government’s expenditure obligations that do not require a vote or statutory provision, including contractual guarantee commitments and international agreements.","Statutory appropriations":"Amounts appropriated to be spent in terms of statutes and not requiring appropriation by vote.","Sterilisation":"Action taken by the Reserve Bank to neutralise excess cash created in the money market when purchasing foreign currency.","Strategic Plan (SP)":"A five year plan that identifies the impact, strategically important outcomes and outputs and associated resource implications against which public institutions’ medium term results can be measured and evaluated by Parliament, provincial legislatures and the public. Strategic Plans span over a five year planning horizon which is aligned to the national electoral cycle.","Structural budget balance":"A representation of what government revenue and expenditure would be if output were at its potential level, with cyclical variations stripped out.","Structural constraints":"Imbalances in the structure of the economy that hinder growth and development.","Switch auction":"An auction to exchange bonds to manage refinancing risk or improve tradability.","Syndicated loan":"A large loan in which a group of banks work together to provide funds, which they solicit from their clients for the borrower.","Tax amnesty":"A period allowed by tax authorities during which taxpayers who are outside the tax net, but should be registered for tax purposes, can register for tax without incurring penalties.","Tax avoidance":"When individuals or businesses legitimately use provisions in the tax law to reduce their tax liability.","Tax base":"The aggregate value of income, sales or transactions on which particular taxes are levied.","Tax buoyancy":"Describes the relationship between total tax revenue collections and economic growth. This measure includes the effects of policy changes on revenue. A value above one means that revenues are growing faster than the economy and below one means they are growing below the rate of GDP growth.","Tax evasion":"When individuals or businesses illegally reduce their tax liability.","Tax expenditure":"Government revenue forgone due to provisions that allow deductions, exclusions, or exemptions from taxable income. The revenue can also be foregone through the deferral of tax liability or preferential tax rates.","Tax gap":"A measure of tax evasion that emerges from comparing the tax liability or tax base declared to the tax authorities with the tax liability or tax base calculated from other sources.","Tax incentives":"Specific provisions in the tax code that provide favourable tax treatment to individuals and businesses to encourage specific behaviour or activities.","Tax incidence":"The final distribution of the burden of tax. Statutory incidence defines where the law requires a tax to be levied. Economic incidence refers to those who experience a decrease in real income as a result of the imposition of a tax.","Tax loopholes":"Unintended weaknesses in the legal provisions of the tax system used by taxpayers to avoid paying tax liability.","Tax morality":"The willingness, or motivation, of citizens to pay tax. This is separate to the statutory obligation to pay taxes, but may have an influence on tax compliance.","Tax-to-GDP ratio":"For public finance comparison purposes, a country’s tax burden, or tax-to- GDP ratio, is calculated by taking the total tax payments for a particular fiscal year as a fraction or percentage of the GDP for that year.","Term-to-maturity":"The time between issuance and expiry.","Terms of trade":"An index measuring the ratio of a country’s export prices relative to its import prices.","Tertiary sector":"The part of the economy concerned with the provision of services.","Total factor productivity":"An index used to measure the efficiency of all inputs that contribute to the production process.","Trade balance":"The monetary record of a country’s net imports and exports of physical merchandise. See also current account.","Trade regime":"The system of tariffs, quotas and quantitative restrictions applied to protect domestic industries, together with subsidies and incentives used to promote international trade.","Trade-weighted rand":"The value of the rand pegged to or expressed relative to a market basket of selected foreign currencies.","Trademark":"A legal right pointing distinctly to the origin or ownership of merchandise to which it is applied and legally reserved for the exclusive use of the owner as maker or seller.","Treasury bills":"Short-term government debt instruments that yield no interest but are issued at a discount. Maturities vary from one day to 12 months.","Treasury committee":"The Cabinet committee that evaluates all requests for additional funds for unavoidable and unforeseen expenditure during a financial year.","Treaty shopping":"When related companies in different countries establish a third entity in another location to take advantage of a favourable tax arrangement.","Trend GDP growth":"The theoretical level of GDP growth determined by the full utilisation of all factors of production (land, labour and capital). Growth above the trend rate results in macroeconomic imbalances such as rising inflation or a weakening of the current account. Increases in trend GDP growth are achieved through capital formation, growth in employment and/or technological development.","Unallocated reserves":"Potential expenditure provision not allocated to a particular use. It mainly consists of the contingency reserve and amounts of money left unallocated by provinces.","Unemployment (broad definition)":"All those of working age who are unemployed, including those actively seeking employment and discouraged work seekers.","Unemployment (official definition)":"Those of working age, who are unemployed and actively seeking work (excludes discouraged work seekers).","Unit labour cost":"The cost of labour per unit of output, calculated by dividing average wages by productivity (output per worker per hour).","Unitary payment":"The payment made to the private party for meeting its obligations in the project deliverables in a public-private partnership.","Unqualified audit":"An assessment by a registered auditing firm or the Auditor-General of South Africa asserting that the financial statements of a department, entity or company are free of material misstatement.","Unsecured debt instruments":"Debt not backed or secured by collateral to reduce the risk of lending.","Unsecured lending":"A loan that is not backed or secured by any type of collateral to reduce the lender’s risk.","Vertical equity":"A doctrine in taxation that holds that differently situated taxpayers should be treated differently in terms of income tax provisions. In other words, taxpayers with more income and/or capital should pay more tax.","Vested right":"The right to ownership of an asset that cannot be arbitrarily taken away by a third party.","Virement":"The transfer of resources from one programme to another within the same department during a financial year.","Vote":"An appropriation voted by Parliament.","Water trading account":"A departmental account that ring-fences revenue from the sale of bulk water and related services to secure funding to manage the sustainability of water resources and infrastructure.","Weighted average cost of capital":"The average rate of return an organisation expects to pay to investors in its securities, such as bonds, debt and shares. Each category of security is accorded a proportionate weight in the calculation.","White paper":"A policy document used to present government policy preferences.","Withholding tax":"Tax on income deducted at source. Withholding taxes are widely used for dividends, interest and royalties.","Yield curve":"A graph showing the relationship between the yield on bonds of the same credit quality but different maturity at a given point in time.","Yield":"A financial return or interest paid to buyers of government bonds. The yield/rate of return on bonds takes into account the total annual interest payments, the purchase price, the redemption value and the amount of time remaining until maturity."}
 
 /***/ }),
 /* 43 */
@@ -9291,11 +9309,11 @@ function createTooltips(parentNodes) {
 
 __webpack_require__(51);
 
-__webpack_require__(222);
-
-__webpack_require__(223);
-
 __webpack_require__(224);
+
+__webpack_require__(225);
+
+__webpack_require__(226);
 
 /***/ }),
 /* 51 */
@@ -9354,11 +9372,13 @@ __webpack_require__(212);
 
 __webpack_require__(214);
 
-__webpack_require__(215);
+__webpack_require__(216);
 
-__webpack_require__(220);
+__webpack_require__(217);
 
-__webpack_require__(221);
+__webpack_require__(222);
+
+__webpack_require__(223);
 
 /***/ }),
 /* 52 */
@@ -9946,7 +9966,10 @@ if ("document" in window.self) {
 
   function parseHeaders(rawHeaders) {
     var headers = new Headers();
-    rawHeaders.split(/\r?\n/).forEach(function (line) {
+    // Replace instances of \r\n and \n followed by at least one space or horizontal tab with a space
+    // https://tools.ietf.org/html/rfc7230#section-3.2
+    var preProcessedHeaders = rawHeaders.replace(/\r?\n[\t ]+/g, ' ');
+    preProcessedHeaders.split(/\r?\n/).forEach(function (line) {
       var parts = line.split(':');
       var key = parts.shift().trim();
       if (key) {
@@ -9965,7 +9988,7 @@ if ("document" in window.self) {
     }
 
     this.type = 'default';
-    this.status = 'status' in options ? options.status : 200;
+    this.status = options.status === undefined ? 200 : options.status;
     this.ok = this.status >= 200 && this.status < 300;
     this.statusText = 'statusText' in options ? options.statusText : 'OK';
     this.headers = new Headers(options.headers);
@@ -10032,6 +10055,8 @@ if ("document" in window.self) {
 
       if (request.credentials === 'include') {
         xhr.withCredentials = true;
+      } else if (request.credentials === 'omit') {
+        xhr.withCredentials = false;
       }
 
       if ('responseType' in xhr && support.blob) {
@@ -10479,7 +10504,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _queryString = __webpack_require__(13);
+var _queryString = __webpack_require__(14);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -10950,6 +10975,7 @@ var toPrimitive = __webpack_require__(68);
 
 var toStr = Object.prototype.toString;
 var hasSymbols = typeof Symbol === 'function' && _typeof(Symbol.iterator) === 'symbol';
+var SymbolIterator = hasSymbols ? Symbol.iterator : null;
 
 var $isNaN = __webpack_require__(29);
 var $isFinite = __webpack_require__(30);
@@ -11389,6 +11415,95 @@ var ES6 = assign(assign({}, ES5), {
 		var argumentsList = arraySlice(arguments, 2);
 		var func = this.GetV(O, P);
 		return this.Call(func, O, argumentsList);
+	},
+
+	// http://ecma-international.org/ecma-262/6.0/#sec-getiterator
+	GetIterator: function GetIterator(obj, method) {
+		if (!hasSymbols) {
+			throw new SyntaxError('ES.GetIterator depends on native iterator support.');
+		}
+
+		var actualMethod = method;
+		if (arguments.length < 2) {
+			actualMethod = this.GetMethod(obj, SymbolIterator);
+		}
+		var iterator = this.Call(actualMethod, obj);
+		if (this.Type(iterator) !== 'Object') {
+			throw new TypeError('iterator must return an object');
+		}
+
+		return iterator;
+	},
+
+	// http://ecma-international.org/ecma-262/6.0/#sec-iteratornext
+	IteratorNext: function IteratorNext(iterator, value) {
+		var result = this.Invoke(iterator, 'next', arguments.length < 2 ? [] : [value]);
+		if (this.Type(result) !== 'Object') {
+			throw new TypeError('iterator next must return an object');
+		}
+		return result;
+	},
+
+	// http://ecma-international.org/ecma-262/6.0/#sec-iteratorcomplete
+	IteratorComplete: function IteratorComplete(iterResult) {
+		if (this.Type(iterResult) !== 'Object') {
+			throw new TypeError('Assertion failed: Type(iterResult) is not Object');
+		}
+		return this.ToBoolean(this.Get(iterResult, 'done'));
+	},
+
+	// http://ecma-international.org/ecma-262/6.0/#sec-iteratorvalue
+	IteratorValue: function IteratorValue(iterResult) {
+		if (this.Type(iterResult) !== 'Object') {
+			throw new TypeError('Assertion failed: Type(iterResult) is not Object');
+		}
+		return this.Get(iterResult, 'value');
+	},
+
+	// http://ecma-international.org/ecma-262/6.0/#sec-iteratorstep
+	IteratorStep: function IteratorStep(iterator) {
+		var result = this.IteratorNext(iterator);
+		var done = this.IteratorComplete(result);
+		return done === true ? false : result;
+	},
+
+	// http://ecma-international.org/ecma-262/6.0/#sec-iteratorclose
+	IteratorClose: function IteratorClose(iterator, completion) {
+		if (this.Type(iterator) !== 'Object') {
+			throw new TypeError('Assertion failed: Type(iterator) is not Object');
+		}
+		if (!this.IsCallable(completion)) {
+			throw new TypeError('Assertion failed: completion is not a thunk for a Completion Record');
+		}
+		var completionThunk = completion;
+
+		var iteratorReturn = this.GetMethod(iterator, 'return');
+
+		if (typeof iteratorReturn === 'undefined') {
+			return completionThunk();
+		}
+
+		var completionRecord;
+		try {
+			var innerResult = this.Call(iteratorReturn, iterator, []);
+		} catch (e) {
+			// if we hit here, then "e" is the innerResult completion that needs re-throwing
+
+			// if the completion is of type "throw", this will throw.
+			completionRecord = completionThunk();
+			completionThunk = null; // ensure it's not called twice.
+
+			// if not, then return the innerResult completion
+			throw e;
+		}
+		completionRecord = completionThunk(); // if innerResult worked, then throw if the completion does
+		completionThunk = null; // ensure it's not called twice.
+
+		if (this.Type(innerResult) !== 'Object') {
+			throw new TypeError('iterator .return must return an object');
+		}
+
+		return completionRecord;
 	},
 
 	// http://ecma-international.org/ecma-262/6.0/#sec-createiterresultobject
@@ -12128,15 +12243,16 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
+var scope = typeof global !== "undefined" && global || typeof self !== "undefined" && self || window;
 var apply = Function.prototype.apply;
 
 // DOM APIs, for completeness
 
 exports.setTimeout = function () {
-  return new Timeout(apply.call(setTimeout, window, arguments), clearTimeout);
+  return new Timeout(apply.call(setTimeout, scope, arguments), clearTimeout);
 };
 exports.setInterval = function () {
-  return new Timeout(apply.call(setInterval, window, arguments), clearInterval);
+  return new Timeout(apply.call(setInterval, scope, arguments), clearInterval);
 };
 exports.clearTimeout = exports.clearInterval = function (timeout) {
   if (timeout) {
@@ -12150,7 +12266,7 @@ function Timeout(id, clearFn) {
 }
 Timeout.prototype.unref = Timeout.prototype.ref = function () {};
 Timeout.prototype.close = function () {
-  this._clearFn.call(window, this._id);
+  this._clearFn.call(scope, this._id);
 };
 
 // Does not start the time, just sets up the members needed.
@@ -12177,7 +12293,7 @@ exports._unrefActive = exports.active = function (item) {
 
 // setimmediate attaches itself to the global object
 __webpack_require__(78);
-// On some exotic environments, it's not clear which object `setimmeidate` was
+// On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
 exports.setImmediate = typeof self !== "undefined" && self.setImmediate || typeof global !== "undefined" && global.setImmediate || undefined && undefined.setImmediate;
@@ -14064,11 +14180,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _DebounceFunction = __webpack_require__(14);
+var _DebounceFunction = __webpack_require__(15);
 
 var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
 
-var _getProp = __webpack_require__(15);
+var _getProp = __webpack_require__(11);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
@@ -14226,7 +14342,7 @@ exports.default = HomeChart;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(11);
+var _index = __webpack_require__(12);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -14292,7 +14408,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = buildGroupSpaceArray;
 
-var _breakIntoWrap = __webpack_require__(12);
+var _breakIntoWrap = __webpack_require__(13);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -14634,7 +14750,7 @@ exports.default = LineGroupItem;
 
 var _preact = __webpack_require__(0);
 
-var _breakIntoWrap = __webpack_require__(12);
+var _breakIntoWrap = __webpack_require__(13);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -14781,7 +14897,7 @@ var _TooltipItem = __webpack_require__(123);
 
 var _TooltipItem2 = _interopRequireDefault(_TooltipItem);
 
-var _breakIntoWrap = __webpack_require__(12);
+var _breakIntoWrap = __webpack_require__(13);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -14987,7 +15103,7 @@ exports.default = Heading;
 
 var _preact = __webpack_require__(0);
 
-var _breakIntoWrap = __webpack_require__(12);
+var _breakIntoWrap = __webpack_require__(13);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -15075,7 +15191,7 @@ var _propTypes = __webpack_require__(7);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _queryString = __webpack_require__(13);
+var _queryString = __webpack_require__(14);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -16490,7 +16606,7 @@ var _decodeHtmlEntities = __webpack_require__(4);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
-var _DebounceFunction = __webpack_require__(14);
+var _DebounceFunction = __webpack_require__(15);
 
 var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
 
@@ -16623,7 +16739,7 @@ exports.default = YearSelectMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _queryString = __webpack_require__(13);
+var _queryString = __webpack_require__(14);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -17406,7 +17522,7 @@ var _canvgBrowser2 = _interopRequireDefault(_canvgBrowser);
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(11);
+var _index = __webpack_require__(12);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -17418,7 +17534,7 @@ var _calcShareAction = __webpack_require__(174);
 
 var _calcShareAction2 = _interopRequireDefault(_calcShareAction);
 
-var _getProp = __webpack_require__(15);
+var _getProp = __webpack_require__(11);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
@@ -19265,7 +19381,7 @@ exports.default = Markup;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(11);
+var _index = __webpack_require__(12);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -20962,7 +21078,7 @@ var _index = __webpack_require__(176);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(11);
+var _index3 = __webpack_require__(12);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -20970,7 +21086,7 @@ var _calcShareAction = __webpack_require__(178);
 
 var _calcShareAction2 = _interopRequireDefault(_calcShareAction);
 
-var _getProp = __webpack_require__(15);
+var _getProp = __webpack_require__(11);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
@@ -21697,7 +21813,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = updateQs;
 
-var _queryString = __webpack_require__(13);
+var _queryString = __webpack_require__(14);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -22277,7 +22393,7 @@ var _index = __webpack_require__(191);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _DebounceFunction = __webpack_require__(14);
+var _DebounceFunction = __webpack_require__(15);
 
 var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
 
@@ -22580,7 +22696,7 @@ module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Depart
 /* 197 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury issues budget guidelines to departments requesting budget submissions, including their 3-year expenditure estimates, in accordance with the adopted budget strategy and planned budget process.</li>\r\n  <li>Departments engage with analysts on departmental budgets and the drafting of budget submissions.</li>\r\n  <li>Parliament reviews each department's budget, including the department's Annual Performance Plan (APP) and Strategic Plan (SP).</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Review the department's Annual Annual Performance Plans (APPs) and Strategic Plans (SPs).</li>\r\n  <li>Engage government departments and relevant committees on the content of the APPs and SPs and whether departmental budgets have been properly prioritised.</li>\r\n</ul>\r\n";
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury issues budget guidelines to departments requesting budget submissions, including their 3-year expenditure estimates, in accordance with the adopted budget strategy and planned budget process.</li>\r\n  <li>Departments engage with analysts on departmental budgets and the drafting of budget submissions.</li>\r\n  <li>Parliament and provincial legislatures review each department's budget, including the department's Annual Performance Plan (APP) and Strategic Plan (SP).</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Review the departments' Annual Annual Performance Plans (APPs) and Strategic Plans (SPs).</li>\r\n  <li>Engage national departments and relevant Parliamentary committees on the content of the APPs and SPs and whether national departmental budgets have been properly prioritised.</li>\r\n  <li>Engage provincial departments and relevant provincial legislature committees on the content of the APPs and SPs and whether national departmental budgets have been properly prioritised.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 198 */
@@ -22942,6 +23058,62 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _getProp = __webpack_require__(11);
+
+var _getProp2 = _interopRequireDefault(_getProp);
+
+var _initComponents = __webpack_require__(213);
+
+var _initComponents2 = _interopRequireDefault(_initComponents);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function scripts() {
+  var enhanceInstance = function enhanceInstance(node) {
+    var image = (0, _getProp2.default)('image', node, 'node', 'string');
+    var imgNode = image.node,
+        value = image.value;
+
+    imgNode.style.backgroundImage = 'url(\'' + value + '\')';
+  };
+
+  (0, _initComponents2.default)('CsoPreview', enhanceInstance);
+}
+
+exports.default = scripts();
+
+/***/ }),
+/* 213 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = initComponents;
+function initComponents(nameString, callback, create) {
+  var type = create ? 'create' : 'enhance';
+  var nodesList = document.querySelectorAll('[data-' + type + '-component="' + nameString + '"]');
+
+  for (var i = 0; i < nodesList.length; i++) {
+    var node = nodesList[i];
+    callback(node);
+  }
+}
+
+/***/ }),
+/* 214 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -22952,7 +23124,7 @@ var _decodeHtmlEntities = __webpack_require__(4);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
-var _index = __webpack_require__(213);
+var _index = __webpack_require__(215);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -23030,7 +23202,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 213 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23091,7 +23263,7 @@ function Modal(_ref) {
 }
 
 /***/ }),
-/* 214 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23117,7 +23289,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 215 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23129,7 +23301,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(216);
+var _index = __webpack_require__(218);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -23151,7 +23323,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 216 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23167,7 +23339,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _ShareMarkup = __webpack_require__(217);
+var _ShareMarkup = __webpack_require__(219);
 
 var _ShareMarkup2 = _interopRequireDefault(_ShareMarkup);
 
@@ -23227,7 +23399,7 @@ var ShareContainer = function (_Component) {
 exports.default = ShareContainer;
 
 /***/ }),
-/* 217 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23244,7 +23416,7 @@ var _index = __webpack_require__(1);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _Button = __webpack_require__(218);
+var _Button = __webpack_require__(220);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -23313,7 +23485,7 @@ function ShareMarkup(_ref) {
 }
 
 /***/ }),
-/* 218 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23326,7 +23498,7 @@ exports.default = Button;
 
 var _preact = __webpack_require__(0);
 
-var _Icon = __webpack_require__(219);
+var _Icon = __webpack_require__(221);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -23378,7 +23550,7 @@ function Button(_ref) {
 }
 
 /***/ }),
-/* 219 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23400,7 +23572,7 @@ function Icon() {
 }
 
 /***/ }),
-/* 220 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23416,7 +23588,7 @@ var _index = __webpack_require__(25);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _getProp = __webpack_require__(15);
+var _getProp = __webpack_require__(11);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
@@ -23441,7 +23613,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 221 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23465,7 +23637,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 222 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23477,7 +23649,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(11);
+var _index = __webpack_require__(12);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -23531,7 +23703,7 @@ function pattern() {
 exports.default = pattern();
 
 /***/ }),
-/* 223 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23583,7 +23755,7 @@ function pattern() {
 exports.default = pattern();
 
 /***/ }),
-/* 224 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
