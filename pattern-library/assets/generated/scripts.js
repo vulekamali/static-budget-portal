@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 54);
+/******/ 	return __webpack_require__(__webpack_require__.s = 55);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1094,6 +1094,66 @@ exports.default = preact;
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = getProp;
+
+var _decodeHtmlEntities = __webpack_require__(3);
+
+var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var parseString = function parseString(string, parse) {
+  switch (parse) {
+    case 'json':
+      return JSON.parse(string);
+    case 'num':
+      return parseFloat(string, 10);
+    default:
+      return string;
+  }
+};
+
+function innerGetProp(name, node, parse, valueParse) {
+  var result = node.getAttribute('data-' + name);
+
+  if (parse === 'node') {
+    var innerNode = node.querySelector('[data-' + name + ']');
+
+    if (!valueParse) {
+      return innerNode;
+    }
+
+    return {
+      node: innerNode,
+      value: innerGetProp(name, innerNode, valueParse)
+    };
+  }
+
+  if (result === null) {
+    return null;
+  }
+
+  if (parse === 'bool') {
+    return result !== null;
+  }
+
+  return parseString((0, _decodeHtmlEntities2.default)(result), parse);
+}
+
+function getProp(name, node, parse, valueParse) {
+  return innerGetProp(name, node, parse, valueParse);
+}
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -1281,7 +1341,25 @@ process.umask = function () {
 };
 
 /***/ }),
-/* 2 */
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = decodeHtmlEntities;
+function decodeHtmlEntities(input) {
+  var element = document.createElement('div');
+  element.innerHTML = input;
+
+  return element.childNodes.length === 0 ? '' : element.childNodes[0].nodeValue;
+}
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1289,8 +1367,8 @@ process.umask = function () {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var keys = __webpack_require__(67);
-var foreach = __webpack_require__(69);
+var keys = __webpack_require__(68);
+var foreach = __webpack_require__(70);
 var hasSymbols = typeof Symbol === 'function' && _typeof(Symbol()) === 'symbol';
 
 var toStr = Object.prototype.toString;
@@ -1348,25 +1426,7 @@ defineProperties.supportsDescriptors = !!supportsDescriptors;
 module.exports = defineProperties;
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = decodeHtmlEntities;
-function decodeHtmlEntities(input) {
-  var element = document.createElement('div');
-  element.innerHTML = input;
-
-  return element.childNodes.length === 0 ? '' : element.childNodes[0].nodeValue;
-}
-
-/***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1388,7 +1448,7 @@ function createSizeModifier(string) {
 }
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1398,27 +1458,31 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = analyticsEvent;
-function analyticsEvent() {
-  try {
-    var _window;
 
-    return (_window = window).ga.apply(_window, arguments);
-  } catch (err) {
-    console.log(err);
-  }
+var _getProp = __webpack_require__(1);
+
+var _getProp2 = _interopRequireDefault(_getProp);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function analyticsEvent() {
+  var _window;
+
+  var production = (0, _getProp2.default)('production', document.body, 'bool');
+  return production ? (_window = window).ga.apply(_window, arguments) : null;
 }
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(70);
+module.exports = __webpack_require__(71);
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1485,7 +1549,7 @@ function PseudoSelect(props) {
 }
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1509,109 +1573,7 @@ function trimValues(value, abbreviated) {
 }
 
 /***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = getProp;
-
-var _decodeHtmlEntities = __webpack_require__(3);
-
-var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var parseString = function parseString(string, parse) {
-  switch (parse) {
-    case 'json':
-      return JSON.parse(string);
-    case 'num':
-      return parseFloat(string, 10);
-    default:
-      return string;
-  }
-};
-
-function getProp(name, node, parse) {
-  var result = node.getAttribute('data-' + name);
-  if (result === null) {
-    return null;
-  }
-
-  if (parse === 'bool') {
-    return result !== null;
-  }
-
-  return parseString((0, _decodeHtmlEntities2.default)(result), parse);
-}
-
-/***/ }),
 /* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = getProp;
-
-var _decodeHtmlEntities = __webpack_require__(4);
-
-var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var parseString = function parseString(string, parse) {
-  switch (parse) {
-    case 'json':
-      return JSON.parse(string);
-    case 'num':
-      return parseFloat(string, 10);
-    default:
-      return string;
-  }
-};
-
-function innerGetProp(name, node, parse, valueParse) {
-  var result = node.getAttribute('data-' + name);
-
-  if (parse === 'node') {
-    var innerNode = node.querySelector('[data-' + name + ']');
-
-    if (!valueParse) {
-      return innerNode;
-    }
-
-    return {
-      node: innerNode,
-      value: innerGetProp(name, innerNode, valueParse)
-    };
-  }
-
-  if (result === null) {
-    return null;
-  }
-
-  if (parse === 'bool') {
-    return result !== null;
-  }
-
-  return parseString((0, _decodeHtmlEntities2.default)(result), parse);
-}
-
-function getProp(name, node, parse, valueParse) {
-  return innerGetProp(name, node, parse, valueParse);
-}
-
-/***/ }),
-/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1627,51 +1589,47 @@ exports.default = BarChart;
 
 var _preact = __webpack_require__(0);
 
-var _calcMaxValue = __webpack_require__(115);
+var _calcMaxValue = __webpack_require__(116);
 
 var _calcMaxValue2 = _interopRequireDefault(_calcMaxValue);
 
-var _buildGroupSpaceArray = __webpack_require__(116);
+var _buildGroupSpaceArray = __webpack_require__(117);
 
 var _buildGroupSpaceArray2 = _interopRequireDefault(_buildGroupSpaceArray);
 
-<<<<<<< HEAD
-var _breakIntoWrap = __webpack_require__(13);
-=======
 var _breakIntoWrap = __webpack_require__(11);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
-var _Breakpoints = __webpack_require__(117);
+var _Breakpoints = __webpack_require__(118);
 
 var _Breakpoints2 = _interopRequireDefault(_Breakpoints);
 
-var _Grid = __webpack_require__(119);
+var _Grid = __webpack_require__(120);
 
 var _Grid2 = _interopRequireDefault(_Grid);
 
-var _Guides = __webpack_require__(120);
+var _Guides = __webpack_require__(121);
 
 var _Guides2 = _interopRequireDefault(_Guides);
 
-var _LineGroups = __webpack_require__(122);
+var _LineGroups = __webpack_require__(123);
 
 var _LineGroups2 = _interopRequireDefault(_LineGroups);
 
-var _Tooltips = __webpack_require__(124);
+var _Tooltips = __webpack_require__(125);
 
 var _Tooltips2 = _interopRequireDefault(_Tooltips);
 
-var _Attribution = __webpack_require__(127);
+var _Attribution = __webpack_require__(128);
 
 var _Attribution2 = _interopRequireDefault(_Attribution);
 
-var _Heading = __webpack_require__(128);
+var _Heading = __webpack_require__(129);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Logo = __webpack_require__(129);
+var _Logo = __webpack_require__(130);
 
 var _Logo2 = _interopRequireDefault(_Logo);
 
@@ -1799,11 +1757,7 @@ function BarChart(props) {
 }
 
 /***/ }),
-<<<<<<< HEAD
-/* 13 */
-=======
 /* 11 */
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1850,9 +1804,6 @@ function breakIntoWrap(string, wrap) {
 }
 
 /***/ }),
-<<<<<<< HEAD
-/* 14 */
-=======
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1878,17 +1829,16 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(131)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(132)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(133)();
+  module.exports = __webpack_require__(134)();
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
 /* 13 */
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1896,9 +1846,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var strictUriEncode = __webpack_require__(61);
+var strictUriEncode = __webpack_require__(62);
 var objectAssign = __webpack_require__(27);
-var decodeComponent = __webpack_require__(62);
+var decodeComponent = __webpack_require__(63);
 
 function encoderForArrayFormat(opts) {
 	switch (opts.arrayFormat) {
@@ -2102,7 +2052,7 @@ exports.parseUrl = function (str, opts) {
 };
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2115,31 +2065,31 @@ exports.default = Icon;
 
 var _preact = __webpack_require__(0);
 
-var _Close = __webpack_require__(102);
+var _Close = __webpack_require__(103);
 
 var _Close2 = _interopRequireDefault(_Close);
 
-var _Download = __webpack_require__(103);
+var _Download = __webpack_require__(104);
 
 var _Download2 = _interopRequireDefault(_Download);
 
-var _Facebook = __webpack_require__(104);
+var _Facebook = __webpack_require__(105);
 
 var _Facebook2 = _interopRequireDefault(_Facebook);
 
-var _Search = __webpack_require__(105);
+var _Search = __webpack_require__(106);
 
 var _Search2 = _interopRequireDefault(_Search);
 
-var _Twitter = __webpack_require__(106);
+var _Twitter = __webpack_require__(107);
 
 var _Twitter2 = _interopRequireDefault(_Twitter);
 
-var _Home = __webpack_require__(107);
+var _Home = __webpack_require__(108);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Play = __webpack_require__(108);
+var _Play = __webpack_require__(109);
 
 var _Play2 = _interopRequireDefault(_Play);
 
@@ -2226,124 +2176,23 @@ exports.default = DebounceFunction;
 "use strict";
 
 
-<<<<<<< HEAD
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Modal;
-
-var _preact = __webpack_require__(0);
-
-var _preactCssTransitionGroup = __webpack_require__(173);
-
-var _preactCssTransitionGroup2 = _interopRequireDefault(_preactCssTransitionGroup);
-
-var _propTypes = __webpack_require__(7);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _index = __webpack_require__(9);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Modal(_ref) {
-  var children = _ref.children,
-      title = _ref.title,
-      open = _ref.open,
-      closeAction = _ref.closeAction;
-
-  var modal = (0, _preact.h)(
-    'div',
-    { className: 'Modal-inner' },
-    (0, _preact.h)('div', { className: 'Modal-overlay', onClick: closeAction, 'aria-hidden': true }),
-    (0, _preact.h)(
-      'div',
-      { className: 'Modal-boxWrap' },
-      (0, _preact.h)(
-        'div',
-        { className: 'Modal-box' },
-        (0, _preact.h)(
-          'div',
-          { className: 'Modal-heading' },
-          title
-        ),
-        (0, _preact.h)(
-          'div',
-          { className: 'Modal-content' },
-          children
-        )
-      ),
-      (0, _preact.h)(
-        'button',
-        { className: 'Modal-close', onClick: closeAction },
-        (0, _preact.h)(_index2.default, { type: 'close' })
-      )
-    )
-  );
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'Modal' },
-    (0, _preact.h)(
-      _preactCssTransitionGroup2.default,
-      {
-        transitionName: 'is',
-        transitionEnterTimeout: 300,
-        transitionLeaveTimeout: 300
-      },
-      open ? modal : null
-    )
-  );
-}
-
-Modal.propTypes = {
-  children: _propTypes2.default.node.isRequired,
-  title: _propTypes2.default.string.isRequired,
-  closeAction: _propTypes2.default.func.isRequired,
-  open: _propTypes2.default.bool.isRequired
-};
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var bind = __webpack_require__(18);
-=======
 var bind = __webpack_require__(17);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 
 module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 
 /***/ }),
-<<<<<<< HEAD
-/* 18 */
-=======
 /* 17 */
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-<<<<<<< HEAD
-var implementation = __webpack_require__(67);
-=======
-var implementation = __webpack_require__(71);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+var implementation = __webpack_require__(72);
 
 module.exports = Function.prototype.bind || implementation;
 
 /***/ }),
-<<<<<<< HEAD
-/* 19 */
-=======
 /* 18 */
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3486,7 +3335,7 @@ exports.default = RevenueMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(8);
+var _trimValues = __webpack_require__(9);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -3628,7 +3477,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
 /* 24 */
@@ -3665,7 +3514,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _Markup = __webpack_require__(164);
+var _Markup = __webpack_require__(165);
 
 var _Markup2 = _interopRequireDefault(_Markup);
 
@@ -3785,7 +3634,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _ShareMarkup = __webpack_require__(182);
+var _ShareMarkup = __webpack_require__(183);
 
 var _ShareMarkup2 = _interopRequireDefault(_ShareMarkup);
 
@@ -3939,8 +3788,8 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 "use strict";
 
 
-var ES = __webpack_require__(6);
-var supportsDescriptors = __webpack_require__(2).supportsDescriptors;
+var ES = __webpack_require__(7);
+var supportsDescriptors = __webpack_require__(4).supportsDescriptors;
 
 /*! https://mths.be/array-from v0.2.0 by @mathias */
 module.exports = function from(arrayLike) {
@@ -4065,7 +3914,7 @@ var sign = __webpack_require__(32);
 var mod = __webpack_require__(33);
 
 var IsCallable = __webpack_require__(18);
-var toPrimitive = __webpack_require__(77);
+var toPrimitive = __webpack_require__(78);
 
 var has = __webpack_require__(16);
 
@@ -4310,7 +4159,7 @@ module.exports = ES5;
 "use strict";
 
 
-var ES = __webpack_require__(6);
+var ES = __webpack_require__(7);
 var implementation = __webpack_require__(28);
 
 var tryCall = function tryCall(fn) {
@@ -4341,7 +4190,7 @@ module.exports = function getPolyfill() {
 
 var ES = __webpack_require__(34);
 var bind = __webpack_require__(17);
-var isString = __webpack_require__(84);
+var isString = __webpack_require__(85);
 
 // Check failure of by-index access of string characters (IE < 9)
 // and failure of `0 in boxedString` (Rhino)
@@ -4404,7 +4253,7 @@ module.exports = function getPolyfill() {
 // For all details and docs: <https://github.com/paulmillr/Array.prototype.findIndex>
 
 
-var ES = __webpack_require__(6);
+var ES = __webpack_require__(7);
 
 module.exports = function findIndex(predicate) {
 	var list = ES.ToObject(this);
@@ -4465,9 +4314,6 @@ function removePunctuation(string) {
 
 "use strict";
 
-<<<<<<< HEAD
-module.exports = {"Accounting officer":"The public servant in a department who is accountable to Parliament for financial management, usually the director-general or head of the department.","Accrual":"An accounting convention by which payments and receipts are recorded as they occur, even if no cash flow takes place.","Acquisition debt":"Debt used to purchase shares or assets.","Ad valorem duties":"Duties levied on commodities as a certain percentage of their value.","Adjusted Appropriation":"The approval, during the course of the financial year, by Parliament of amendments to appropriations voted in the main appropriation for the year. Most changes are made mid-year at the time of the adjustments budget. These adjustments can be made only in terms of the circumstances listed in section 30 of the Public Finance Management Act (1999). These adjustments are included in an adjustments appropriation bill, which Parliament approves before expenditure can take place. Particulars are tabled in acts of Parliament and the accompanying Adjusted Estimates of National Expenditure, and other, publications.","Adjustments estimate":"Presentation to Parliament of the amendments to be made to the appropriations voted in the main budget for the year.","Administered prices":"Prices set outside ordinary market processes through administrative decisions by government, a public entity or a regulator.","Agro-processing":"Manufacturing activities that transform raw materials and intermediary goods derived from agriculture into intermediate or final goods.","Allocated expenditure":"The part of the national budget that can be divided between the national, provincial and local spheres of government, after interest and the contingency reserve have been taken into account.","Amortisation":"The repayment of a loan by instalments over the duration of the loan.","Annual Performance Plan (APP)":"An annual plan that identifies the outputs, performance indicators and targets that the institution will seek to achieve in the upcoming year, aligned to the outcomes reflected in the Strategic Plan. It also includes forward projections (annual targets) for a further two outer years, consistent with the Medium Term Expenditure Framework (MTEF) period.","Annual report (AR)":"A report published annually by institutions that includes the institution’s audited financial statements, in line with applicable legislation and regulations.","Annuity":"A fixed amount of money paid over a period of time as a return on an investment.","Anti-avoidance rule":"A provision aimed at preventing tax avoidance. See principal purpose test.","Anti-fragmentation rule":"A rule that aims to prevent taxpayers from artificially avoiding permanent establishment status by breaking up a cohesive business into several small operations.","Appropriation":"The approval by Parliament of spending from the National Revenue Fund, or by a provincial legislature from a provincial revenue fund.","Artificial debt":"A \"loan\" that is presented as debt but is in effect equity. Often used in tax avoidance or evasion.","Asset price bubble":"A condition occurring when prices for a category of assets rise above the level justified by economic fundamentals.","Audited Outcome":"The actual expenditure recorded in the institution’s audited annual financial statements.","Auditor General reports":"The Auditor-General was established in terms of section 188 of the Constitution to audit and report on the accounts, financial statements and the financial management of government departments, municipalities as well as any other institution as required by legislation. The Auditor-General must submit audit reports to any legislature that has a direct interest in the audit, and to any other authority prescribed by national legislation. All reports must be made public.","Balance of payments":"A summary statement of all the international transactions of the residents of a country with the rest of the world over a particular period of time.","Base erosion and profit shifting":"Corporate tax-planning strategies that exploit the gaps and mismatches in tax laws between countries to artificially shift taxable income to lower or no-tax jurisdictions. See also tax evasion and profit shifting.","Basel III":"Reforms developed by the Basel Committee on Banking Supervision to strengthen the regulation, supervision and risk management of the banking sector.","Baseline":"The initial allocations used during the budget process, derived from the previous year's forward estimates.","Basis point":"One hundredth of one per cent.","Beneficiation":"Manufacturing activities that transform raw minerals into higher-value products.","Bond premium":"Amount by which the purchase price of a bond is greater than its par value.","Bond spread":"The difference in yield between two bonds.","Bond":"A certificate of debt issued by a government or corporation guaranteeing payment of the original investment plus interest by a specified future date.","Bond-switch programme":"An auction that aims to ease pressure on targeted areas of the redemption profile by exchanging shorter-dated debt for longer-term debt. See switch auction.","Bracket creep":"Increased real tax liability that arises when the personal income tax tables are not fully adjusted for inflation.","Budget balance":"The difference between budgeted expenditure and budgeted revenue. If expenditure exceeds revenue, the budget is in deficit. If the reverse is true, it is in surplus.","Capital adequacy":"A measure of a financial institution’s capital, expressed as a percentage of its credit exposure.","Capital asset":"Property of any kind, including assets that are movable or immovable, tangible or intangible, fixed or circulating, but excluding trading stock held for the purpose of realising a financial or economic return.","Capital expenditure":"Spending on assets such as buildings, land, infrastructure and equipment.","Capital flow":"A flow of investments in or out of the country.","Capital formation":"A measure of the net increase in the country’s total stock of capital goods, after allowing for depreciation.","Capital gains tax":"Tax levied on the income realised from the disposal of a capital asset by a taxpayer. A capital gain is the excess of the selling price over the purchase price of the capital asset.","Capital goods":"Durable goods used over a period of time for the production of other goods. See also intermediate goods.","Carbon tax":"An environmental tax on emissions of carbon dioxide (CO2).","Category A, B and C municipalities":"Municipal categories established by the Constitution: Category A, or metropolitan municipalities; Category B, or local municipalities; and Category C, or district municipalities.","Collateral":"An asset placed as a guarantee for the repayment of debt, to be recouped in the case of a default.","Commercial paper issuances":"Debt issued by companies through short-term promissory notes.","Conditional grants":"Allocations of money from one sphere of government to another, conditional on certain services being delivered or on compliance with specified requirements.","Connected person debt/credit":"Debt or credit granted by a person/entity to a connected person/entity. In the case of a holding company, for example, a subsidiary company would be a connected person.","Consolidated general government":"National, provincial and local government, as well as extra-budgetary government institutions and social security funds.","Consolidated government expenditure":"Total expenditure by national and provincial government, social security funds and selected public entities, including transfers and subsidies to municipalities, businesses and other entities.","Consumer price index (CPI)":"The measure of inflation based on prices in a basket of goods and services.","Consumption expenditure":"Expenditure on goods and services, including salaries, which are used up within a short period of time, usually a year.","Contingency reserve":"An amount set aside, but not allocated in advance, to accommodate changes to the economic environment and to meet unforeseeable spending pressures.","Contingent liability":"A government obligation, such as a guarantee, that will only result in expenditure upon the occurrence of a specific event. See government guarantee.","Controlled foreign entity":"A foreign business in which South Africans hold a greater than 50 per cent interest, usually of the share capital of a company.","Corporatisation":"The transformation of state-owned enterprises into commercial entities, subject to commercial legal requirements and governance structures, while the state retains ownership.","Cost-push inflation":"Inflation that is caused by an increase in production costs, such as wages or oil prices.","Countercyclical fiscal policy":"Policy that has the opposite effect on economic activity to that caused by the business cycle, such as slowing spending growth in a boom period and accelerating spending in a recession.","Coupon (bond)":"The periodic interest payment made to bondholders during the life of the bond. The interest is usually paid twice a year.","Credit rating":"An indicator of the risk of default by a borrower or the riskiness of a financial instrument. Credit ratings generally fit into three broad risk categories: minimal or low, moderate and high. These categories indicate the extent of a borrower’s capacity to meet their financial obligations or the probability that the value of a financial instrument will be realised. Investments rated as high risk are considered sub-investment grade (or “junk”).","Crowding-in":"An increase in private investment through the income-raising effect of government spending financed by deficits.","Crowding-out":"A fall in private investment or consumption as a result of increased government expenditure financed through borrowing, thereby competing for loanable funds and raising the interest rate, which curtails private investment and consumption spending.","Currency risk":"The potential for a change in the price of a currency that would affect investors with assets, liabilities or operations denominated in other currencies.","Current account (of the balance of payments)":"The difference between total imports and total exports, taking into account service payments and receipts, interest, dividends and transfers. The current account can be in deficit or surplus. See also trade balance.","Current balance":"The difference between revenue and current expenditure, which consists of compensation of employees, goods and services, and interest and rent on land.","Current expenditure":"Government expenditure on salaries and goods and services, such as rent, maintenance and interest payments. See also consumption expenditure.","Customs duties":"Tax levied on imported goods.","Debenture":"An unsecured loan backed by general credit rather than by specified assets.","Debt redemption profile":"The set of fixed repayment dates and amounts to which an issuer of debt, such as a preferred stock or bond, has committed to meeting.","Debt switching":"The exchange of bonds to manage refinancing risk or improve tradability.","Debt-service costs":"The cost of interest on government debt and other costs directly associated with borrowing.","Deflation":"A consistent decrease in the price of goods and services.","Deleveraging":"The reduction of debt previously used to increase the potential return of an investment.","Depreciation (capital)":"A reduction in the value of fixed capital as a result of wear and tear or redundancy.","Depreciation (exchange rate)":"A reduction in the external value of a currency.","Derivative financial instrument":"A financial asset that derives its value from an underlying asset, which may be a physical asset such as gold, or a financial asset such as a government bond.","Designated countries":"Foreign countries from which income may be exempt from South African tax under certain circumstances. See also double tax agreement.","Development finance institutions":"State agencies that aim to meet the credit needs of riskier but socially and economically desirable projects that are beyond the acceptance limits of commercial banks.","Direct taxes":"Taxes charged on taxable income or capital of individuals and legal entities.","Discretionary trust":"A trust where the executor has the choice of whether and how much of the trust’s income or capital is to be distributed to beneficiaries. The beneficiaries have only provisional rights to the income or capital of the trust.","Disposable income":"Total income by households less all taxes and employee contributions.","Dissaving":"An excess of current expenditure, including the depreciation of fixed capital, over current income.","Dividend withholding tax":"A tax on dividends that is subtracted and withheld by a company or intermediary before the net dividend is paid to the shareholder.","Dividend":"The distribution of a portion of a company's earnings to a class of its shareholders.","Division of revenue":"The allocation of funds between spheres of government, as required by the Constitution. See also equitable share.","Domestic demand":"The total level of spending in an economy, including imports but excluding exports.","Double tax agreement":"An agreement between two countries to prevent income that is taxed in one country from being taxed in the other as well. See also designated countries.","Economic cost":"The cost of an alternative that must be forgone to pursue a certain action. In other words, the benefits that could have been received by taking an alternative action.","Economic growth":"An increase in the total amount of output, income and spending in the economy.","Economic rent":"The difference between the return made by a factor of production (capital or labour) and the return necessary to keep the factor in its current occupation. For example, a firm making excess profits is earning economic rent.","Economically active population":"The part of the population that is of working age and is either employed or seeking work.","Effective tax rate":"Actual tax liability (or a reasonable estimate thereof) expressed as a percentage of a pre-tax income base rather than as a percentage of taxable income. In other words, tax rates that take into account not only the statutory or nominal tax rate, but also other aspects of the tax system (for example, allowable deductions), which determine the tax liability.","Embedded derivative":"A provision in a contract modifying its cash flows by making them dependent on an underlying measure – such as interest or exchange rates, or commodity prices – the value of which changes independently.","Emerging economies":"A name given by international investors to middle-income economies.","Employment coefficient":"The ratio of employment growth to economic growth.","Equitable share":"The allocation of revenue to the national, provincial and local spheres of government as required by the Constitution. See also division of revenue.","Equity finance":"Raising money by selling shares of stock to investors, who receive an ownership interest in return.","Exchange control":"Rules that regulate the flow of currency out of South Africa, or restrict the amount of foreign assets held by South African individuals and companies.","Exchange-traded funds":"Funds that track indexes, commodities or baskets of assets, and trade like stocks.","Excise duties":"Taxes on the manufacture or sale of certain domestic or imported products. Excise duties are usually charged on products such as alcoholic beverages, tobacco and petroleum.","Expenditure ceiling":"The maximum allowable level of expenditure to which government has committed itself.","Extra-budgetary institutions":"Public entities not directly funded from the fiscus.","Fair-value adjustment":"A change in the value of an asset or liability resulting from the periodic reassessment of its expected future economic in- or outflows.","Financial Services Board":"An independent institution established by statute that regulates insurers, intermediaries, retirement funds, friendly societies, unit trust schemes, management companies and financial markets.","Financial Stability Board":"An international body made up of representatives of financial authorities and institutions, and central banks. It proposes regulatory, supervisory and other policies in the interest of financial stability.","Financial account":"A statement of all financial transactions between the nation and the rest of the world, including portfolio and fixed investment flows and movements in foreign reserves.","Financial and Fiscal Commission (FFC)":"An independent body established by the Constitution to make recommendations to Parliament and provincial legislatures about financial issues affecting the three spheres of government.","Financial year":"The 12 months according to which companies and organisations budget and account. See also fiscal year.","Fiscal consolidation":"Policy aimed at reducing government deficits and debt accumulation.","Fiscal incidence":"The combined overall economic impact that fiscal policy has on the economy.","Fiscal leakage":"The outflow of revenue from an economy through tax evasion and avoidance.","Fiscal policy":"Policy on taxation, public spending and borrowing by the government.","Fiscal space":"The ability of government’s budget to provide additional resources for a desired programme without jeopardising fiscal or debt sustainability.","Fiscal year":"The 12 months on which government budgets are based, beginning 1 April and ending 31 March of the subsequent calendar year.","Fixed investment/capital formation":"Spending on buildings, machinery and equipment contributing to production capacity in the economy. See also gross fixed-capital formation.","Fixed-income bond":"A bond that pays a specific interest rate.","Floating rate notes":"A bond on which the interest rate is reset periodically in line with a money market reference rate.","Flow-through vehicles":"A vehicle, such as a trust, where income earned is treated as income of the vehicle’s beneficiaries.","Foreign currency swaps":"The exchange of principal and/or interest payments in one currency for those in another.","Foreign direct investment (FDI)":"The acquisition of a controlling interest by governments, institutions or individuals of a business in another country.","Forward book":"The total amount of contracts for the future exchange of foreign currency entered into by the Reserve Bank at any given point in time.","Forward cover":"Transactions involving an agreed exchange rate at which foreign currency will be purchased or sold at a future date.","Fringe benefit":"A benefit supplementing an employee’s wages or salary, such as medical insurance, company cars, housing allowances and pension schemes.","Fuel levy":"An excise tax on liquid fuels.","Function shift":"The movement of a function from one departmental vote or sphere of government to another.","Funded pension arrangements":"A pension scheme in which expected future benefits are funded in advance and as entitlement accrues.","Gold and foreign exchange reserves":"Reserves held by the Reserve Bank to meet foreign exchange obligations and to maintain liquidity in the presence of external shocks.","Government debt":"The total amount of money owed by the government as a consequence of its past borrowing.","Government guarantee":"An assurance made by government to a lender that a financial obligation will be honoured, even if the borrowing government institution is unable to repay the debt. See contingent liability.","Green paper":"A policy document intended for public discussion.","Gross borrowing requirement":"The sum of the main budget balance, extraordinary receipts and payments (referred to as National Revenue Fund receipts and payments), and maturing debt. The amount is funded through domestic short- and long- term loans, foreign loans and changes in cash balances.","Gross domestic product (GDP)":"A measure of the total national output, income and expenditure in the economy. GDP per head is the simplest overall measure of welfare, although it does not take account of the distribution of income, nor of goods and services that are produced outside the market economy, such as work within the household.","Gross domestic product inflation":"A measure of the total increase in prices in the whole economy. Unlike CPI inflation, GDP inflation includes price increases in goods that are exported and intermediate goods such as machines, but excludes imported goods.","Gross fixed-capital formation":"The addition to a country’s fixed-capital stock during a specific period, before provision for depreciation.","Gross value added":"The value of output less intermediate consumption. It is also a measure of the contribution to the economy made by an industry or sector.","Group of Twenty (G20)":"An international forum made up of finance ministers and central bank governors from 20 of the world’s largest economies.","Hedging":"An action taken by a buyer or seller to protect income against changes in prices, interest rates or exchange rates.","Horizontal equity":"A principle in taxation that holds that similarly situated taxpayers should face a similar tax treatment or tax burden. In other words, taxpayers with the same amount of income or capital should be accorded equal treatment.","Impaired advances":"Loans or advances that may not be collected in full.","Impairment":"A reduction in the recorded value of a long-lived asset arising from circumstances that prevent the asset from generating the future economic benefits previously expected and recorded.","Import parity pricing":"When a firm sells goods locally at the price customers would pay if they were to import the same goods from another country.","Inclusion rate":"The portion of the net capital gain derived from the disposal of an asset that will be taxed at the applicable rate.","Industrial development zone":"Designated sites linked to an international air or sea port, supported by incentives to encourage investment in export-orientated manufacturing and job creation.","Inflation targeting":"A monetary policy framework intended to achieve price stability over a certain period of time.","Inflation":"An increase in the overall price level of goods and services in an economy over a specific period of time.","Inter-state debt":"Money that different organs of state owe to each other.","Intergenerational equity":"A value based on ensuring that future generations do not have to repay debts taken on today, unless they also share in the benefits of assets.","Intermediate goods":"Goods produced to be used as inputs in the production of final goods.","Inventories":"Stocks of goods held by firms. An increase in inventories reflects an excess of output relative to spending over a period of time.","Labour intensity":"The relative amount of labour used to produce a unit of output.","Liquidity requirements":"The amount of liquid or freely convertible assets that banks are required to hold relative to their liabilities for prudential and regulatory purposes.","Liquidity risk":"The risk that an asset might not easily and quickly be converted into cash through sale, or the risk to a debtor that it cannot meet its current debt obligations.","Liquidity":"The ease with which assets can be bought and sold.","Lump-sum benefit":"A one-time payment for the total or partial value of an asset, usually received in place of recurring smaller payments.","M3":"The broadest definition of money supply in South Africa, including notes and coins, demand and fixed deposits, and credit.","Macroeconomics":"The branch of economics that deals with the whole economy – including issues such as growth, inflation, unemployment and the balance of payments.","Macroprudential regulation":"Rules that protect the stability of the financial sector and guard against systemic risk.","Main Appropriation":"The spending appropriations set out in legislation, at the beginning of the financial year, to authorise spending from the National Revenue Fund and provincial revenue funds. Sometimes referred to as “Annual budget”.","Marginal income tax rate":"The rate of tax on an incremental unit of income.","Marginal lending rate":"A penalty rate of interest charged by the Reserve Bank for lending to financial institutions in the money market in excess of the daily liquidity provided to the money market at the repurchase rate. See also repurchase agreements.","Marketable securities":"Tradable financial securities listed with a securities exchange.","Means test":"A method for determining whether someone qualifies for state assistance.","Medium Term Estimates":"The three-year spending or revenue plans of national and provincial departments as published at the time of the annual budget. Parliament authorises expenditure annually, thus the spending estimates for the two outer years of the medium term are not included in the voted appropriations. These forward estimates or indicative allocations do, however, form the basis of the planning of the following year’s budget.","Medium Term Expenditure Committee (MTEC)":"The technical committee responsible for evaluating the medium-term expenditure framework budget submissions of national departments and making recommendations to the Minister of Finance regarding allocations to national departments.","Medium-term expenditure framework (MTEF)":"The three-year spending plans of national and provincial governments, published at the time of the Budget.","Microeconomics":"The branch of economics that deals with the behaviour of individual firms, consumers and sectors.","Ministers’ Committee on the Budget":"The political committee that considers key policy and budgetary issues that pertain to the budget process before they are tabled in Cabinet.","Monetary easing":"See quantitative easing.","Monetary policy":"Policy concerning total money supply, exchange rates and the general level of interest rates.","Money supply":"The total stock of money in an economy.","National Development Plan":"A planning framework prepared by the National Planning Commission that aims to eliminate poverty and reduce inequality by 2030.","National Revenue Fund":"The consolidated account of the national government into which all taxes, fees and charges collected by SARS and departmental revenue must be paid.","National budget":"The projected revenue and expenditures that flow through the National Revenue Fund. It does not include spending by provinces or local government from their own revenues.","Negotiable certificate of deposit":"Short-term deposit instruments issued by banks, at a variable interest rate, for a fixed period.","Net borrowing requirement":"The main budget balance.","Net exports":"Exports less imports.","Net open foreign currency position":"Gold and foreign exchange reserves minus the oversold forward book. The figure is expressed in dollars.","Net trade":"The difference between the value of exports and the value of imports.","New Development Bank":"A multilateral lending institution being established by Brazil, Russia, India, China and South Africa.","Nominal exchange rates":"The current rate of exchange between the rand and foreign currencies. The “effective” exchange rate is a trade-weighted average of the rates of exchange with other currencies.","Nominal wage":"The return, or wage, to employees at the current price level.","Non-competitive bid auction":"An auction in which an investor agrees to purchase a certain number of securities such as bonds at the average price of all competitive bids over a given period of time.","Non-financial public enterprises":"Government-owned or controlled organisations that deliver goods and non- financial services, trading as business enterprises, such as Eskom or Transnet.","Non-interest expenditure":"Total expenditure by government less debt-service costs.","Non-tax revenue":"Income received by government as a result of administrative charges, licences, fees, sales of goods and services, and so on.","Occupation-specific salary dispensation":"Revised salary structures unique to identified occupations in the public service, including doctors, nurses and teachers.","Opportunity cost":"The value of that which must be given up to achieve or acquire something. It is represented by the next highest valued alternative use of a resource.","Organisation for Economic Cooperation and Development (OECD)":"An organisation of 35 mainly industrialised member countries. South Africa is not a member.","PAYE":"The pay-as-you-earn (PAYE) system of income tax withholding requires employers to deduct income tax, and in some cases, the employees’ portion of social benefit taxes, from each paycheque delivered to employees.","Payroll tax":"Tax an employer withholds and/or pays on behalf of employees based on employee wages or salaries.","Performance agreements (PA)":"The agreement that comprises an official’s duties and responsibilities as contracted with the Executive.","Permanent establishment":"A fixed place of business from which a company operates. When two countries have a tax treaty, the concept of “permanent establishment” is used to determine the right of one state to tax the profits of the business in the other state. See also anti-fragmentation.","Policy reserve":"Additional money in the fiscus to fund new and crucial priorities.","Portfolio investment":"Investment in financial assets such as stocks and bonds.","Potential growth":"The fastest growth an economy can sustain without increasing inflation.","Presidential Infrastructure Coordinating Commission (PICC)":"A commission established by Cabinet to develop, review and coordinate a 20-year infrastructure plan.","Price discovery":"The process of determining the price level of a commodity or asset, based on supply and demand factors.","Price sensitivity":"The extent to which changes in price affect consumer purchasing behaviour.","Primary deficit/surplus":"The difference between total revenue and non-interest expenditure. When revenue exceeds non-interest expenditure there is a surplus.","Primary sector":"The agricultural and mining sectors of the economy.","Principal purpose test":"A test where the benefits of a tax treaty are denied if it is reasonable to conclude that obtaining the benefit was one of the principal purposes behind the arrangement or transaction.","Private-sector credit extension":"Credit provided to the private sector. This includes all loans, credit cards and leases.","Privatisation":"The full or partial sale of state-owned enterprises to private individuals or companies.","Producer price index (PPI)":"Price increases measured by the producer price index – a measure of the prices paid based mainly on producers’ published price lists.","Productivity":"A measure of the amount of output generated from every unit of input. Typically used to measure changes in labour efficiency.","Profit shifting":"The allocation of income and expenses between related corporations or branches of the same legal entity to reduce overall tax liability.","Public Finance Management Act (PFMA)":"The act regulating financial management of national and provincial government, including the efficiency and effectiveness of public expenditure and the responsibilities of those engaging with government financial management.","Public Investment Corporation (PIC)":"A government-owned investment management company that invests funds on behalf of public-sector entities. Its largest client is the Government Employees Pension Fund.","Public entities":"Companies, agencies, funds and accounts that are fully or partly owned by government or public authorities and are regulated by law.","Public goods":"Goods and services that would not be fully provided in a pure free-market system and are largely provided by government.","Public sector":"National government, provincial government, local government, extra- budgetary governmental institutions, social security funds and non- financial public enterprises.","Public-benefit organisations (PBOs)":"Organisations that are mainly funded by donations from the public and other institutions, which engage in social activities to meet the needs of the general public.","Public-private partnerships (PPPs)":"A contractual arrangement whereby a private party performs a government function and assumes the associated risks. In return, the private party receives a fee according to predefined performance criteria. See unitary payment.","Public-sector borrowing requirement":"The consolidated cash borrowing requirement of general government and non-financial public enterprises.","Purchasing managers’ index (PMI)":"A composite index measuring the change in manufacturing activity compared with the previous month. An index value of 50 indicates no change in activity, a value above 50 indicates increased activity and a value below 50 indicates decreased activity.","Quantitative easing":"A measure used by central banks to stimulate economic growth when interest rates are near zero by increasing money supply. Also called monetary easing.","Quarterly Employment Survey":"An establishment-based survey conducted by Statistics South Africa to obtain information about the number of employees and gross salaries paid.","Quarterly Labour Force Survey":"A household-based survey conducted by Statistics South Africa to measure the dynamics of the labour market, producing indicators such as employment, unemployment and inactivity.","Quarterly performance report (QPR)":"A quarterly progress report on the implementation of an institution’s Annual Performance Plan.","Rating agency":"A company that evaluates the ability of countries or other borrowers to honour their debt obligations. Credit ratings are used by international investors as indications of sovereign risk. See also credit rating.","Real effective exchange rate":"A measure of the rate of exchange of the rand relative to a trade-weighted average of South Africa’s trading partners’ currencies, adjusted for price trends in South Africa and the countries included.","Real exchange rate":"The level of the exchange rate taking account of inflation differences.","Real expenditure":"Expenditure measured in constant prices after taking account of inflation.","Real interest rate":"The level of interest after taking account of inflation.","Real wage":"The return, or wage, to employees, measured at a constant price level.","Recapitalisation":"Injection of funds into a company or entity to aid liquidity, either as a loan or in return for equity.","Recession":"A period in which national output and income decline. A recession is usually defined as two consecutive quarters of negative growth.","Redemption":"The return of an investor’s principal in a fixed-income security, such as a preferred stock or bond.","Refinancing risk":"The risk that government will not be able to raise money to repay debt at any scheduled point, or that it will have to do so at a high cost.","Refinancing":"The repayment of debt at a scheduled time with the proceeds of new loans.","Regional integration":"An economic policy intended to boost economic activity in a geographical area extending beyond one country.","Remuneration":"The costs of personnel, including salaries, housing allowances, car allowances and other benefits received by personnel.","Repurchase (repo) rate":"The rate at which the Reserve Bank lends to commercial banks.","Repurchase agreements":"Short-term contracts between the Reserve Bank and private banks in the money market to sell specified amounts of money at an interest rate determined by daily auction.","Reserves (foreign exchange)":"Holdings of foreign exchange, either by the Reserve Bank only or by the Reserve Bank and domestic banking institutions.","Residence-based income tax system":"A tax system in which the worldwide income accruing to a resident of a country is subject to the taxes of that country.","Reticulation scheme":"A piped water network that ensures that water is collected and treated before it reaches the consumer.","Revaluation gain/loss":"The difference between the value of a foreign currency deposit from the original (historical) rate to execution of a trade based on the spot rate.","Revised estimate":"The current estimate of the likely outcome for a particular item of revenue or expenditure for a financial year. This does not imply a change in the amount voted to an institution, but rather an updated estimate of what the department is likely to spend or receive during the financial year.","Risk premium":"A return that compensates for uncertainty.","Saving":"The difference between income and spending.","Seasonally adjusted":"Removal of seasonal volatility (monthly or quarterly) from a time series. This provides a measure of the underlying trend in the data.","Secondary rebate":"A rebate from income tax, in addition to the primary rebate, that is available to taxpayers aged 65 years and older.","Secondary sector":"The part of the economy concerned with the manufacture of goods.","Secondary tax on companies (STC)":"Tax on dividends declared by a company, calculated at the rate of 10 per cent of the net amount of dividends declared. This was discontinued in 2012 and replaced with a 15 per cent dividend withholding tax.","Section 21 company":"Non-profit entities registered in terms of Section 21 of the Companies Act.","Sector education and training authorities":"Institutions funded through employer training levies, responsible for learnership programmes and implementing strategic sector skills plans.","Secured debt instruments":"Debt backed or secured by collateral to reduce the risk of lending.","Securitisation":"The pooling of assets into a financial instrument to sell to different types of investors.","Service and transfer payments":"Services involve transactions of non-tangible commodities, while transfers are unrequited transactions that do not generate a counter-economic value (for example, gifts and grants).","Skills development levy":"A payroll tax designed to finance training initiatives in terms of the skills development strategy.","Social infrastructure":"Infrastructure that supports social services.","Social wage":"Social benefits available to all individuals, funded wholly or partly by the state.","Source-based income tax system":"A system in which income is taxed in the country where the income originates.","Southern African Customs Union (SACU) agreement":"An agreement between South Africa, Botswana, Namibia, Lesotho and Swaziland that allows for the unrestricted flow of goods and services, and the sharing of customs and excise revenue.","Southern African Development Community (SADC)":"A regional intergovernmental organisation that promotes collaboration, economic integration and technical cooperation throughout southern Africa.","Sovereign debt rating":"An assessment of the likelihood that a government will default on its debt obligations.","Sovereign debt":"Debt issued by a government.","Spatial planning":"Planning to influence the geographic distribution of people and economic activity.","Special economic zones":"A designated zone where business and trade laws incentivise trade, investment and employment.","Specific excise duty":"A tax on each unit of output or sale of a good, unrelated to the value of a good.","Standing appropriations":"Government’s expenditure obligations that do not require a vote or statutory provision, including contractual guarantee commitments and international agreements.","Statutory appropriations":"Amounts appropriated to be spent in terms of statutes and not requiring appropriation by vote.","Sterilisation":"Action taken by the Reserve Bank to neutralise excess cash created in the money market when purchasing foreign currency.","Strategic Plan (SP)":"A five year plan that identifies the impact, strategically important outcomes and outputs and associated resource implications against which public institutions’ medium term results can be measured and evaluated by Parliament, provincial legislatures and the public. Strategic Plans span over a five year planning horizon which is aligned to the national electoral cycle.","Structural budget balance":"A representation of what government revenue and expenditure would be if output were at its potential level, with cyclical variations stripped out.","Structural constraints":"Imbalances in the structure of the economy that hinder growth and development.","Switch auction":"An auction to exchange bonds to manage refinancing risk or improve tradability.","Syndicated loan":"A large loan in which a group of banks work together to provide funds, which they solicit from their clients for the borrower.","Tax amnesty":"A period allowed by tax authorities during which taxpayers who are outside the tax net, but should be registered for tax purposes, can register for tax without incurring penalties.","Tax avoidance":"When individuals or businesses legitimately use provisions in the tax law to reduce their tax liability.","Tax base":"The aggregate value of income, sales or transactions on which particular taxes are levied.","Tax buoyancy":"Describes the relationship between total tax revenue collections and economic growth. This measure includes the effects of policy changes on revenue. A value above one means that revenues are growing faster than the economy and below one means they are growing below the rate of GDP growth.","Tax evasion":"When individuals or businesses illegally reduce their tax liability.","Tax expenditure":"Government revenue forgone due to provisions that allow deductions, exclusions, or exemptions from taxable income. The revenue can also be foregone through the deferral of tax liability or preferential tax rates.","Tax gap":"A measure of tax evasion that emerges from comparing the tax liability or tax base declared to the tax authorities with the tax liability or tax base calculated from other sources.","Tax incentives":"Specific provisions in the tax code that provide favourable tax treatment to individuals and businesses to encourage specific behaviour or activities.","Tax incidence":"The final distribution of the burden of tax. Statutory incidence defines where the law requires a tax to be levied. Economic incidence refers to those who experience a decrease in real income as a result of the imposition of a tax.","Tax loopholes":"Unintended weaknesses in the legal provisions of the tax system used by taxpayers to avoid paying tax liability.","Tax morality":"The willingness, or motivation, of citizens to pay tax. This is separate to the statutory obligation to pay taxes, but may have an influence on tax compliance.","Tax-to-GDP ratio":"For public finance comparison purposes, a country’s tax burden, or tax-to- GDP ratio, is calculated by taking the total tax payments for a particular fiscal year as a fraction or percentage of the GDP for that year.","Term-to-maturity":"The time between issuance and expiry.","Terms of trade":"An index measuring the ratio of a country’s export prices relative to its import prices.","Tertiary sector":"The part of the economy concerned with the provision of services.","Total factor productivity":"An index used to measure the efficiency of all inputs that contribute to the production process.","Trade balance":"The monetary record of a country’s net imports and exports of physical merchandise. See also current account.","Trade regime":"The system of tariffs, quotas and quantitative restrictions applied to protect domestic industries, together with subsidies and incentives used to promote international trade.","Trade-weighted rand":"The value of the rand pegged to or expressed relative to a market basket of selected foreign currencies.","Trademark":"A legal right pointing distinctly to the origin or ownership of merchandise to which it is applied and legally reserved for the exclusive use of the owner as maker or seller.","Treasury bills":"Short-term government debt instruments that yield no interest but are issued at a discount. Maturities vary from one day to 12 months.","Treasury committee":"The Cabinet committee that evaluates all requests for additional funds for unavoidable and unforeseen expenditure during a financial year.","Treaty shopping":"When related companies in different countries establish a third entity in another location to take advantage of a favourable tax arrangement.","Trend GDP growth":"The theoretical level of GDP growth determined by the full utilisation of all factors of production (land, labour and capital). Growth above the trend rate results in macroeconomic imbalances such as rising inflation or a weakening of the current account. Increases in trend GDP growth are achieved through capital formation, growth in employment and/or technological development.","Unallocated reserves":"Potential expenditure provision not allocated to a particular use. It mainly consists of the contingency reserve and amounts of money left unallocated by provinces.","Unemployment (broad definition)":"All those of working age who are unemployed, including those actively seeking employment and discouraged work seekers.","Unemployment (official definition)":"Those of working age, who are unemployed and actively seeking work (excludes discouraged work seekers).","Unit labour cost":"The cost of labour per unit of output, calculated by dividing average wages by productivity (output per worker per hour).","Unitary payment":"The payment made to the private party for meeting its obligations in the project deliverables in a public-private partnership.","Unqualified audit":"An assessment by a registered auditing firm or the Auditor-General of South Africa asserting that the financial statements of a department, entity or company are free of material misstatement.","Unsecured debt instruments":"Debt not backed or secured by collateral to reduce the risk of lending.","Unsecured lending":"A loan that is not backed or secured by any type of collateral to reduce the lender’s risk.","Vertical equity":"A doctrine in taxation that holds that differently situated taxpayers should be treated differently in terms of income tax provisions. In other words, taxpayers with more income and/or capital should pay more tax.","Vested right":"The right to ownership of an asset that cannot be arbitrarily taken away by a third party.","Virement":"The transfer of resources from one programme to another within the same department during a financial year.","Vote":"An appropriation voted by Parliament.","Water trading account":"A departmental account that ring-fences revenue from the sale of bulk water and related services to secure funding to manage the sustainability of water resources and infrastructure.","Weighted average cost of capital":"The average rate of return an organisation expects to pay to investors in its securities, such as bonds, debt and shares. Each category of security is accorded a proportionate weight in the calculation.","White paper":"A policy document used to present government policy preferences.","Withholding tax":"Tax on income deducted at source. Withholding taxes are widely used for dividends, interest and royalties.","Yield curve":"A graph showing the relationship between the yield on bonds of the same credit quality but different maturity at a given point in time.","Yield":"A financial return or interest paid to buyers of government bonds. The yield/rate of return on bonds takes into account the total annual interest payments, the purchase price, the redemption value and the amount of time remaining until maturity."}
-=======
 
 module.exports = function (module) {
 	if (!module.webpackPolyfill) {
@@ -4491,7 +4337,6 @@ module.exports = function (module) {
 	}
 	return module;
 };
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 
 /***/ }),
 /* 43 */
@@ -4566,7 +4411,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = warning;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
 /* 45 */
@@ -4580,7 +4425,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getState = exports.subscribe = exports.dispatch = undefined;
 
-var _redux = __webpack_require__(153);
+var _redux = __webpack_require__(154);
 
 var _redux2 = __webpack_require__(46);
 
@@ -4991,9 +4836,9 @@ var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbo
 "use strict";
 
 
-var RGBColor = __webpack_require__(159);
-var stackblur = __webpack_require__(160);
-var xmldom = __webpack_require__(161);
+var RGBColor = __webpack_require__(160);
+var stackblur = __webpack_require__(161);
+var xmldom = __webpack_require__(162);
 
 /*
  * canvg.js - Javascript SVG parser and renderer on Canvas
@@ -9321,35 +9166,35 @@ exports.default = LineChart;
 
 var _preact = __webpack_require__(0);
 
-var _calcMaxValue = __webpack_require__(165);
+var _calcMaxValue = __webpack_require__(166);
 
 var _calcMaxValue2 = _interopRequireDefault(_calcMaxValue);
 
-var _buildGroupSpaceArray = __webpack_require__(166);
+var _buildGroupSpaceArray = __webpack_require__(167);
 
 var _buildGroupSpaceArray2 = _interopRequireDefault(_buildGroupSpaceArray);
 
-var _Breakpoints = __webpack_require__(168);
+var _Breakpoints = __webpack_require__(169);
 
 var _Breakpoints2 = _interopRequireDefault(_Breakpoints);
 
-var _Grid = __webpack_require__(170);
+var _Grid = __webpack_require__(171);
 
 var _Grid2 = _interopRequireDefault(_Grid);
 
-var _Guides = __webpack_require__(171);
+var _Guides = __webpack_require__(172);
 
 var _Guides2 = _interopRequireDefault(_Guides);
 
-var _LineGroups = __webpack_require__(173);
+var _LineGroups = __webpack_require__(174);
 
 var _LineGroups2 = _interopRequireDefault(_LineGroups);
 
-var _Tooltips = __webpack_require__(176);
+var _Tooltips = __webpack_require__(177);
 
 var _Tooltips2 = _interopRequireDefault(_Tooltips);
 
-var _Labels = __webpack_require__(179);
+var _Labels = __webpack_require__(180);
 
 var _Labels2 = _interopRequireDefault(_Labels);
 
@@ -9494,7 +9339,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports.default = createTooltips;
 
-var _camelcase = __webpack_require__(215);
+var _camelcase = __webpack_require__(216);
 
 var _camelcase2 = _interopRequireDefault(_camelcase);
 
@@ -9502,15 +9347,15 @@ var _glossary = __webpack_require__(43);
 
 var _glossary2 = _interopRequireDefault(_glossary);
 
-var _createComponent = __webpack_require__(216);
+var _createComponent = __webpack_require__(217);
 
 var _createComponent2 = _interopRequireDefault(_createComponent);
 
-var _escapeRegex = __webpack_require__(218);
+var _escapeRegex = __webpack_require__(219);
 
 var _escapeRegex2 = _interopRequireDefault(_escapeRegex);
 
-var _walkTheDom = __webpack_require__(219);
+var _walkTheDom = __webpack_require__(220);
 
 var _walkTheDom2 = _interopRequireDefault(_walkTheDom);
 
@@ -9588,21 +9433,19 @@ function createTooltips(parentNodes) {
 "use strict";
 
 
-<<<<<<< HEAD
-__webpack_require__(51);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = initComponents;
+function initComponents(nameString, callback, create) {
+  var type = create ? 'create' : 'enhance';
+  var nodesList = document.querySelectorAll('[data-' + type + '-component="' + nameString + '"]');
 
-__webpack_require__(224);
-
-__webpack_require__(225);
-
-__webpack_require__(226);
-=======
-__webpack_require__(55);
-
-__webpack_require__(228);
-
-__webpack_require__(229);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+  for (var i = 0; i < nodesList.length; i++) {
+    var node = nodesList[i];
+    callback(node);
+  }
+}
 
 /***/ }),
 /* 55 */
@@ -9613,6 +9456,17 @@ __webpack_require__(229);
 
 __webpack_require__(56);
 
+__webpack_require__(231);
+
+__webpack_require__(232);
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 __webpack_require__(57);
 
 __webpack_require__(58);
@@ -9621,64 +9475,62 @@ __webpack_require__(59);
 
 __webpack_require__(60);
 
-__webpack_require__(63);
+__webpack_require__(61);
 
 __webpack_require__(64);
 
 __webpack_require__(65);
 
-__webpack_require__(88);
+__webpack_require__(66);
 
-__webpack_require__(91);
+__webpack_require__(89);
 
-__webpack_require__(96);
+__webpack_require__(92);
 
-__webpack_require__(110);
+__webpack_require__(97);
 
 __webpack_require__(111);
 
-__webpack_require__(113);
+__webpack_require__(112);
 
-__webpack_require__(130);
+__webpack_require__(114);
 
-__webpack_require__(139);
+__webpack_require__(131);
 
-__webpack_require__(145);
+__webpack_require__(140);
 
-__webpack_require__(151);
+__webpack_require__(146);
 
 __webpack_require__(152);
 
-__webpack_require__(158);
+__webpack_require__(153);
 
-__webpack_require__(185);
+__webpack_require__(159);
 
-__webpack_require__(189);
+__webpack_require__(186);
 
-<<<<<<< HEAD
-__webpack_require__(216);
-=======
-__webpack_require__(200);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+__webpack_require__(190);
 
-__webpack_require__(217);
+__webpack_require__(201);
 
-__webpack_require__(222);
+__webpack_require__(221);
 
-<<<<<<< HEAD
 __webpack_require__(223);
-=======
+
 __webpack_require__(224);
 
 __webpack_require__(225);
 
-__webpack_require__(226);
-
 __webpack_require__(227);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+
+__webpack_require__(228);
+
+__webpack_require__(229);
+
+__webpack_require__(230);
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9901,7 +9753,7 @@ if ("document" in window.self) {
 }
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10371,7 +10223,7 @@ if ("document" in window.self) {
 })(typeof self !== 'undefined' ? self : undefined);
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10785,13 +10637,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 //# sourceMappingURL=devtools.js.map
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10801,7 +10653,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _queryString = __webpack_require__(14);
+var _queryString = __webpack_require__(13);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -10816,7 +10668,7 @@ function loadStringQueries() {
 exports.default = loadStringQueries();
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10829,7 +10681,7 @@ module.exports = function (str) {
 };
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10932,7 +10784,7 @@ module.exports = function (encodedURI) {
 };
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10948,7 +10800,7 @@ function createComponentInterfaces() {
 exports.default = createComponentInterfaces();
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10958,13 +10810,41 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _analyticsEvent = __webpack_require__(5);
+var _analyticsEvent = __webpack_require__(6);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
+
+var _getProp = __webpack_require__(1);
+
+var _getProp2 = _interopRequireDefault(_getProp);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function loadGoogleAnalytics() {
+  /* eslint-disable */
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments);
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  if ('addEventListener' in window) {
+    window.addEventListener('error', function (e) {
+      if (typeof window.ga === 'function') {
+        window.ga('send', 'exception', {
+          'exDescription': e.message + ' @ ' + e.filename + ': ' + e.lineno,
+          'exFatal': true
+        });
+      }
+    });
+  }
+  /* eslint-enable */
+
   var _window$vulekamali$qs = window.vulekamali.qs,
       searchType = _window$vulekamali$qs.search_type,
       searchString = _window$vulekamali$qs.search_string;
@@ -10978,10 +10858,11 @@ function loadGoogleAnalytics() {
   }
 }
 
-exports.default = loadGoogleAnalytics();
+var production = (0, _getProp2.default)('production', document.body, 'bool');
+exports.default = production ? loadGoogleAnalytics() : null;
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10993,19 +10874,19 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _array = __webpack_require__(66);
+var _array = __webpack_require__(67);
 
 var _array2 = _interopRequireDefault(_array);
 
-var _promisePolyfill = __webpack_require__(80);
+var _promisePolyfill = __webpack_require__(81);
 
 var _promisePolyfill2 = _interopRequireDefault(_promisePolyfill);
 
-var _arrayPrototype = __webpack_require__(83);
+var _arrayPrototype = __webpack_require__(84);
 
 var _arrayPrototype2 = _interopRequireDefault(_arrayPrototype);
 
-var _arrayPrototype3 = __webpack_require__(86);
+var _arrayPrototype3 = __webpack_require__(87);
 
 var _arrayPrototype4 = _interopRequireDefault(_arrayPrototype3);
 
@@ -11041,17 +10922,17 @@ function polyfillOldFeatures() {
 exports.default = polyfillOldFeatures();
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var define = __webpack_require__(2);
+var define = __webpack_require__(4);
 
 var implementation = __webpack_require__(28);
 var getPolyfill = __webpack_require__(35);
-var shim = __webpack_require__(79);
+var shim = __webpack_require__(80);
 
 // eslint-disable-next-line no-unused-vars
 var boundFromShim = function from(array) {
@@ -11068,7 +10949,7 @@ define(boundFromShim, {
 module.exports = boundFromShim;
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11081,7 +10962,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var has = Object.prototype.hasOwnProperty;
 var toStr = Object.prototype.toString;
 var slice = Array.prototype.slice;
-var isArgs = __webpack_require__(68);
+var isArgs = __webpack_require__(69);
 var isEnumerable = Object.prototype.propertyIsEnumerable;
 var hasDontEnumBug = !isEnumerable.call({ toString: null }, 'toString');
 var hasProtoEnumBug = isEnumerable.call(function () {}, 'prototype');
@@ -11211,7 +11092,7 @@ keysShim.shim = function shimObjectKeys() {
 module.exports = keysShim;
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11231,7 +11112,7 @@ module.exports = function isArguments(value) {
 };
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11259,7 +11140,7 @@ module.exports = function forEach(obj, fn, ctx) {
 };
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11268,7 +11149,7 @@ module.exports = function forEach(obj, fn, ctx) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var has = __webpack_require__(16);
-var toPrimitive = __webpack_require__(72);
+var toPrimitive = __webpack_require__(73);
 
 var toStr = Object.prototype.toString;
 var hasSymbols = typeof Symbol === 'function' && _typeof(Symbol.iterator) === 'symbol';
@@ -11278,10 +11159,10 @@ var $isNaN = __webpack_require__(30);
 var $isFinite = __webpack_require__(31);
 var MAX_SAFE_INTEGER = Number.MAX_SAFE_INTEGER || Math.pow(2, 53) - 1;
 
-var assign = __webpack_require__(75);
+var assign = __webpack_require__(76);
 var sign = __webpack_require__(32);
 var mod = __webpack_require__(33);
-var isPrimitive = __webpack_require__(76);
+var isPrimitive = __webpack_require__(77);
 var parseInteger = parseInt;
 var bind = __webpack_require__(17);
 var arraySlice = bind.call(Function.call, Array.prototype.slice);
@@ -11306,7 +11187,7 @@ var trim = function trim(value) {
 
 var ES5 = __webpack_require__(34);
 
-var hasRegExpMatcher = __webpack_require__(78);
+var hasRegExpMatcher = __webpack_require__(79);
 
 // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-abstract-operations
 var ES6 = assign(assign({}, ES5), {
@@ -11940,7 +11821,7 @@ delete ES6.CheckObjectCoercible; // renamed in ES6 to RequireObjectCoercible
 module.exports = ES6;
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11992,7 +11873,7 @@ module.exports = function bind(that) {
 };
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12004,8 +11885,8 @@ var hasSymbols = typeof Symbol === 'function' && _typeof(Symbol.iterator) === 's
 
 var isPrimitive = __webpack_require__(29);
 var isCallable = __webpack_require__(18);
-var isDate = __webpack_require__(73);
-var isSymbol = __webpack_require__(74);
+var isDate = __webpack_require__(74);
+var isSymbol = __webpack_require__(75);
 
 var ordinaryToPrimitive = function OrdinaryToPrimitive(O, hint) {
 	if (typeof O === 'undefined' || O === null) {
@@ -12074,7 +11955,7 @@ module.exports = function ToPrimitive(input, PreferredType) {
 };
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12104,7 +11985,7 @@ module.exports = function isDateObject(value) {
 };
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12145,7 +12026,7 @@ if (hasSymbols) {
 }
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12165,7 +12046,7 @@ module.exports = function assign(target, source) {
 };
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12178,7 +12059,7 @@ module.exports = function isPrimitive(value) {
 };
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12221,7 +12102,7 @@ module.exports = function ToPrimitive(input, PreferredType) {
 };
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12268,13 +12149,13 @@ module.exports = function isRegex(value) {
 };
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var define = __webpack_require__(2);
+var define = __webpack_require__(4);
 var getPolyfill = __webpack_require__(35);
 
 module.exports = function shimArrayFrom() {
@@ -12290,7 +12171,7 @@ module.exports = function shimArrayFrom() {
 };
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12531,10 +12412,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     root.Promise = Promise;
   }
 })(undefined);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(81).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(82).setImmediate))
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12589,11 +12470,7 @@ exports._unrefActive = exports.active = function (item) {
 };
 
 // setimmediate attaches itself to the global object
-<<<<<<< HEAD
-__webpack_require__(78);
-=======
-__webpack_require__(82);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+__webpack_require__(83);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -12602,7 +12479,7 @@ exports.clearImmediate = typeof self !== "undefined" && self.clearImmediate || t
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12790,22 +12667,22 @@ exports.clearImmediate = typeof self !== "undefined" && self.clearImmediate || t
     attachTo.setImmediate = setImmediate;
     attachTo.clearImmediate = clearImmediate;
 })(typeof self === "undefined" ? typeof global === "undefined" ? undefined : global : self);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19), __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19), __webpack_require__(2)))
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var define = __webpack_require__(2);
-var ES = __webpack_require__(6);
+var define = __webpack_require__(4);
+var ES = __webpack_require__(7);
 
 var implementation = __webpack_require__(36);
 var getPolyfill = __webpack_require__(37);
 var polyfill = getPolyfill();
-var shim = __webpack_require__(85);
+var shim = __webpack_require__(86);
 
 var slice = Array.prototype.slice;
 
@@ -12823,7 +12700,7 @@ define(boundEveryShim, {
 module.exports = boundEveryShim;
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12855,13 +12732,13 @@ module.exports = function isString(value) {
 };
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var define = __webpack_require__(2);
+var define = __webpack_require__(4);
 var getPolyfill = __webpack_require__(37);
 
 module.exports = function shimArrayPrototypeEvery() {
@@ -12873,18 +12750,18 @@ module.exports = function shimArrayPrototypeEvery() {
 };
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var define = __webpack_require__(2);
-var ES = __webpack_require__(6);
+var define = __webpack_require__(4);
+var ES = __webpack_require__(7);
 
 var implementation = __webpack_require__(38);
 var getPolyfill = __webpack_require__(39);
-var shim = __webpack_require__(87);
+var shim = __webpack_require__(88);
 
 var slice = Array.prototype.slice;
 
@@ -12905,13 +12782,13 @@ define(boundShim, {
 module.exports = boundShim;
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var define = __webpack_require__(2);
+var define = __webpack_require__(4);
 var getPolyfill = __webpack_require__(39);
 
 module.exports = function shimArrayPrototypeFindIndex() {
@@ -12927,7 +12804,7 @@ module.exports = function shimArrayPrototypeFindIndex() {
 };
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12943,7 +12820,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(89);
+var _index = __webpack_require__(90);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -13082,7 +12959,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13095,7 +12972,7 @@ exports.default = SearchResultMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _Form = __webpack_require__(90);
+var _Form = __webpack_require__(91);
 
 var _Form2 = _interopRequireDefault(_Form);
 
@@ -13248,7 +13125,7 @@ function SearchResultMarkup(_ref) {
 }
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13261,7 +13138,7 @@ exports.default = Form;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(7);
+var _index = __webpack_require__(8);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -13303,7 +13180,7 @@ function Form(_ref) {
 }
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13323,7 +13200,7 @@ var _fuse2 = _interopRequireDefault(_fuse);
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(92);
+var _index = __webpack_require__(93);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -13331,7 +13208,7 @@ var _glossary = __webpack_require__(43);
 
 var _glossary2 = _interopRequireDefault(_glossary);
 
-var _createGlossaryGroupedObject = __webpack_require__(95);
+var _createGlossaryGroupedObject = __webpack_require__(96);
 
 var _createGlossaryGroupedObject2 = _interopRequireDefault(_createGlossaryGroupedObject);
 
@@ -13420,7 +13297,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13433,11 +13310,11 @@ exports.default = Markup;
 
 var _preact = __webpack_require__(0);
 
-var _Controls = __webpack_require__(93);
+var _Controls = __webpack_require__(94);
 
 var _Controls2 = _interopRequireDefault(_Controls);
 
-var _List = __webpack_require__(94);
+var _List = __webpack_require__(95);
 
 var _List2 = _interopRequireDefault(_List);
 
@@ -13457,7 +13334,7 @@ function Markup(_ref) {
 }
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13515,7 +13392,7 @@ function Controls(_ref) {
 }
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13581,7 +13458,7 @@ function List(_ref) {
 }
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13627,7 +13504,7 @@ function createGlossaryGroupedObject(rawObject) {
 }
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13651,7 +13528,7 @@ var _decodeHtmlEntities = __webpack_require__(3);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
-var _index = __webpack_require__(97);
+var _index = __webpack_require__(98);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -13771,7 +13648,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13787,15 +13664,15 @@ exports.default = Markup;
 
 var _preact = __webpack_require__(0);
 
-var _Item = __webpack_require__(98);
+var _Item = __webpack_require__(99);
 
 var _Item2 = _interopRequireDefault(_Item);
 
-var _Modal = __webpack_require__(101);
+var _Modal = __webpack_require__(102);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
-var _Controls = __webpack_require__(109);
+var _Controls = __webpack_require__(110);
 
 var _Controls2 = _interopRequireDefault(_Controls);
 
@@ -13838,7 +13715,7 @@ function Markup(props) {
 }
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13851,11 +13728,11 @@ exports.default = Item;
 
 var _preact = __webpack_require__(0);
 
-var _PlayIcon = __webpack_require__(99);
+var _PlayIcon = __webpack_require__(100);
 
 var _PlayIcon2 = _interopRequireDefault(_PlayIcon);
 
-var _trimString = __webpack_require__(100);
+var _trimString = __webpack_require__(101);
 
 var _trimString2 = _interopRequireDefault(_trimString);
 
@@ -13939,7 +13816,7 @@ function Item(_ref) {
 }
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13961,7 +13838,7 @@ function PlayIcon() {
 }
 
 /***/ }),
-/* 100 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13979,7 +13856,7 @@ function trimString(length, string) {
 }
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13992,7 +13869,7 @@ exports.default = Modal;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(7);
+var _index = __webpack_require__(8);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -14067,7 +13944,7 @@ function Modal(props) {
 }
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14080,7 +13957,7 @@ exports.default = Download;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(4);
+var _createSizeModifier = __webpack_require__(5);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -14097,7 +13974,7 @@ function Download(_ref) {
 }
 
 /***/ }),
-/* 103 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14110,7 +13987,7 @@ exports.default = Download;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(4);
+var _createSizeModifier = __webpack_require__(5);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -14127,7 +14004,7 @@ function Download(_ref) {
 }
 
 /***/ }),
-/* 104 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14140,7 +14017,7 @@ exports.default = Facebook;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(4);
+var _createSizeModifier = __webpack_require__(5);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -14162,7 +14039,7 @@ function Facebook(_ref) {
 }
 
 /***/ }),
-/* 105 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14175,7 +14052,7 @@ exports.default = Facebook;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(4);
+var _createSizeModifier = __webpack_require__(5);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -14197,7 +14074,7 @@ function Facebook(_ref) {
 }
 
 /***/ }),
-/* 106 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14210,7 +14087,7 @@ exports.default = Facebook;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(4);
+var _createSizeModifier = __webpack_require__(5);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -14232,7 +14109,7 @@ function Facebook(_ref) {
 }
 
 /***/ }),
-/* 107 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14245,7 +14122,7 @@ exports.default = Home;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(4);
+var _createSizeModifier = __webpack_require__(5);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -14263,7 +14140,7 @@ function Home(_ref) {
 }
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14276,7 +14153,7 @@ exports.default = Play;
 
 var _preact = __webpack_require__(0);
 
-var _createSizeModifier = __webpack_require__(4);
+var _createSizeModifier = __webpack_require__(5);
 
 var _createSizeModifier2 = _interopRequireDefault(_createSizeModifier);
 
@@ -14293,7 +14170,7 @@ function Play(_ref) {
 }
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14326,7 +14203,7 @@ function CloseIcon(_ref) {
 }
 
 /***/ }),
-/* 110 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14362,7 +14239,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 111 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14374,7 +14251,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(112);
+var _index = __webpack_require__(113);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -14400,7 +14277,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 112 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14437,7 +14314,7 @@ function Revenue(_ref) {
 }
 
 /***/ }),
-/* 113 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14455,15 +14332,11 @@ var _DebounceFunction = __webpack_require__(15);
 
 var _DebounceFunction2 = _interopRequireDefault(_DebounceFunction);
 
-<<<<<<< HEAD
-var _getProp = __webpack_require__(11);
-=======
-var _getProp = __webpack_require__(9);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+var _getProp = __webpack_require__(1);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
-var _index = __webpack_require__(114);
+var _index = __webpack_require__(115);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -14601,7 +14474,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 114 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14617,11 +14490,7 @@ exports.default = HomeChart;
 
 var _preact = __webpack_require__(0);
 
-<<<<<<< HEAD
-var _index = __webpack_require__(12);
-=======
 var _index = __webpack_require__(10);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -14653,7 +14522,7 @@ function HomeChart(props) {
 }
 
 /***/ }),
-/* 115 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14676,7 +14545,7 @@ function calcMaxValue(items) {
 }
 
 /***/ }),
-/* 116 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14687,11 +14556,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = buildGroupSpaceArray;
 
-<<<<<<< HEAD
-var _breakIntoWrap = __webpack_require__(13);
-=======
 var _breakIntoWrap = __webpack_require__(11);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -14723,7 +14588,7 @@ function buildGroupSpaceArray(items, styling) {
 }
 
 /***/ }),
-/* 117 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14739,7 +14604,7 @@ exports.default = Breakpoints;
 
 var _preact = __webpack_require__(0);
 
-var _BreakpointItem = __webpack_require__(118);
+var _BreakpointItem = __webpack_require__(119);
 
 var _BreakpointItem2 = _interopRequireDefault(_BreakpointItem);
 
@@ -14770,7 +14635,7 @@ function Breakpoints(_ref) {
 }
 
 /***/ }),
-/* 118 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14783,7 +14648,7 @@ exports.default = HorisontalBreakpoint;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(8);
+var _trimValues = __webpack_require__(9);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -14825,7 +14690,7 @@ function HorisontalBreakpoint(_ref) {
 }
 
 /***/ }),
-/* 119 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14880,7 +14745,7 @@ function Grid(_ref) {
 }
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14896,7 +14761,7 @@ exports.default = Guides;
 
 var _preact = __webpack_require__(0);
 
-var _GuideItem = __webpack_require__(121);
+var _GuideItem = __webpack_require__(122);
 
 var _GuideItem2 = _interopRequireDefault(_GuideItem);
 
@@ -14930,7 +14795,7 @@ function Guides(_ref) {
 }
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14972,7 +14837,7 @@ function HorisontalGuide(_ref) {
 }
 
 /***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14988,7 +14853,7 @@ exports.default = LineGroups;
 
 var _preact = __webpack_require__(0);
 
-var _LineGroupItem = __webpack_require__(123);
+var _LineGroupItem = __webpack_require__(124);
 
 var _LineGroupItem2 = _interopRequireDefault(_LineGroupItem);
 
@@ -15020,7 +14885,7 @@ function LineGroups(_ref) {
 }
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15033,11 +14898,7 @@ exports.default = LineGroupItem;
 
 var _preact = __webpack_require__(0);
 
-<<<<<<< HEAD
-var _breakIntoWrap = __webpack_require__(13);
-=======
 var _breakIntoWrap = __webpack_require__(11);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -15116,7 +14977,7 @@ function LineGroupItem(_ref) {
 }
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15132,7 +14993,7 @@ exports.default = Tooltips;
 
 var _preact = __webpack_require__(0);
 
-var _TooltipGroup = __webpack_require__(125);
+var _TooltipGroup = __webpack_require__(126);
 
 var _TooltipGroup2 = _interopRequireDefault(_TooltipGroup);
 
@@ -15164,7 +15025,7 @@ function Tooltips(_ref) {
 }
 
 /***/ }),
-/* 125 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15180,15 +15041,11 @@ exports.default = TooltipGroup;
 
 var _preact = __webpack_require__(0);
 
-var _TooltipItem = __webpack_require__(126);
+var _TooltipItem = __webpack_require__(127);
 
 var _TooltipItem2 = _interopRequireDefault(_TooltipItem);
 
-<<<<<<< HEAD
-var _breakIntoWrap = __webpack_require__(13);
-=======
 var _breakIntoWrap = __webpack_require__(11);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -15262,7 +15119,7 @@ function TooltipGroup(_ref) {
 }
 
 /***/ }),
-/* 126 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15275,7 +15132,7 @@ exports.default = TooltipItem;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(8);
+var _trimValues = __webpack_require__(9);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -15344,7 +15201,7 @@ function TooltipItem(_ref) {
 }
 
 /***/ }),
-/* 127 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15381,7 +15238,7 @@ function Attribution(_ref) {
 }
 
 /***/ }),
-/* 128 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15394,11 +15251,7 @@ exports.default = Heading;
 
 var _preact = __webpack_require__(0);
 
-<<<<<<< HEAD
-var _breakIntoWrap = __webpack_require__(13);
-=======
 var _breakIntoWrap = __webpack_require__(11);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -15440,7 +15293,7 @@ function Heading(_ref) {
 }
 
 /***/ }),
-/* 129 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15468,7 +15321,7 @@ function Logo(_ref) {
 }
 
 /***/ }),
-/* 130 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15486,15 +15339,15 @@ var _propTypes = __webpack_require__(12);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _queryString = __webpack_require__(14);
+var _queryString = __webpack_require__(13);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
-var _index = __webpack_require__(134);
+var _index = __webpack_require__(135);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _analyticsEvent = __webpack_require__(5);
+var _analyticsEvent = __webpack_require__(6);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -15705,7 +15558,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 131 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15726,7 +15579,7 @@ var warning = __webpack_require__(44);
 var assign = __webpack_require__(27);
 
 var ReactPropTypesSecret = __webpack_require__(24);
-var checkPropTypes = __webpack_require__(132);
+var checkPropTypes = __webpack_require__(133);
 
 module.exports = function (isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -16227,10 +16080,10 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 
   return ReactPropTypes;
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 132 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16295,10 +16148,10 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 133 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16357,7 +16210,7 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 134 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16374,11 +16227,11 @@ var _propTypes = __webpack_require__(12);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _FormArea = __webpack_require__(135);
+var _FormArea = __webpack_require__(136);
 
 var _FormArea2 = _interopRequireDefault(_FormArea);
 
-var _ResultsArea = __webpack_require__(137);
+var _ResultsArea = __webpack_require__(138);
 
 var _ResultsArea2 = _interopRequireDefault(_ResultsArea);
 
@@ -16491,7 +16344,7 @@ SearchMarkup.defaultProps = {
 };
 
 /***/ }),
-/* 135 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16508,11 +16361,11 @@ var _propTypes = __webpack_require__(12);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Icon = __webpack_require__(136);
+var _Icon = __webpack_require__(137);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
-var _analyticsEvent = __webpack_require__(5);
+var _analyticsEvent = __webpack_require__(6);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -16575,7 +16428,7 @@ FormArea.propTypes = {
 };
 
 /***/ }),
-/* 136 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16602,7 +16455,7 @@ function Icon() {
 }
 
 /***/ }),
-/* 137 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16619,7 +16472,7 @@ var _propTypes = __webpack_require__(12);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _List = __webpack_require__(138);
+var _List = __webpack_require__(139);
 
 var _List2 = _interopRequireDefault(_List);
 
@@ -16681,7 +16534,7 @@ ResultsArea.defaultProps = {
 };
 
 /***/ }),
-/* 138 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16879,7 +16732,7 @@ List.defaultProps = {
 };
 
 /***/ }),
-/* 139 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16893,7 +16746,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(140);
+var _index = __webpack_require__(141);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -17021,7 +16874,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 140 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17034,11 +16887,11 @@ exports.default = YearSelectMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _queryString = __webpack_require__(14);
+var _queryString = __webpack_require__(13);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
-var _index = __webpack_require__(141);
+var _index = __webpack_require__(142);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -17099,16 +16952,17 @@ function YearSelectMarkup(_ref) {
             Tag,
             {
               href: data.active || data.direct === false ? null : data.url,
-              className: 'YearSelect-link',
-              onClick: function onClick(event) {
-                return navToYearPage(event, data.url);
-              }
+              className: 'YearSelect-link u-cursorDefault'
             },
             data.name
           )
         )
       );
     }
+
+    var clickEvent = data.active || data.direct === false ? null : function (event) {
+      return navToYearPage(event, data.url);
+    };
 
     return (0, _preact.h)(
       'li',
@@ -17121,9 +16975,7 @@ function YearSelectMarkup(_ref) {
         {
           href: data.active || data.direct === false ? null : data.url,
           className: 'YearSelect-link',
-          onClick: function onClick(event) {
-            return navToYearPage(event, data.url);
-          }
+          onClick: clickEvent
         },
         data.name
       )
@@ -17185,7 +17037,7 @@ function YearSelectMarkup(_ref) {
 }
 
 /***/ }),
-/* 141 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17198,7 +17050,7 @@ exports.default = Tooltip;
 
 var _preact = __webpack_require__(0);
 
-var _Box = __webpack_require__(142);
+var _Box = __webpack_require__(143);
 
 var _Box2 = _interopRequireDefault(_Box);
 
@@ -17234,7 +17086,7 @@ function Tooltip(_ref) {
 }
 
 /***/ }),
-/* 142 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17247,7 +17099,7 @@ exports.default = Box;
 
 var _preact = __webpack_require__(0);
 
-var _Links = __webpack_require__(143);
+var _Links = __webpack_require__(144);
 
 var _Links2 = _interopRequireDefault(_Links);
 
@@ -17295,7 +17147,7 @@ function Box(_ref) {
 }
 
 /***/ }),
-/* 143 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17308,7 +17160,7 @@ exports.default = Links;
 
 var _preact = __webpack_require__(0);
 
-var _CloseIcon = __webpack_require__(144);
+var _CloseIcon = __webpack_require__(145);
 
 var _CloseIcon2 = _interopRequireDefault(_CloseIcon);
 
@@ -17353,7 +17205,7 @@ function Links(_ref) {
 }
 
 /***/ }),
-/* 144 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17375,7 +17227,7 @@ function CloseIcon() {
 }
 
 /***/ }),
-/* 145 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17385,15 +17237,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _FixedNodeBox = __webpack_require__(146);
+var _FixedNodeBox = __webpack_require__(147);
 
 var _FixedNodeBox2 = _interopRequireDefault(_FixedNodeBox);
 
-var _HighlightLinks = __webpack_require__(147);
+var _HighlightLinks = __webpack_require__(148);
 
 var _HighlightLinks2 = _interopRequireDefault(_HighlightLinks);
 
-var _forceClose = __webpack_require__(150);
+var _forceClose = __webpack_require__(151);
 
 var _forceClose2 = _interopRequireDefault(_forceClose);
 
@@ -17432,7 +17284,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 146 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17532,7 +17384,7 @@ var FixedNodeBox = function () {
 exports.default = FixedNodeBox;
 
 /***/ }),
-/* 147 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17546,11 +17398,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _buildLinksObject = __webpack_require__(148);
+var _buildLinksObject = __webpack_require__(149);
 
 var _buildLinksObject2 = _interopRequireDefault(_buildLinksObject);
 
-var _calcViewportPosition = __webpack_require__(149);
+var _calcViewportPosition = __webpack_require__(150);
 
 var _calcViewportPosition2 = _interopRequireDefault(_calcViewportPosition);
 
@@ -17662,7 +17514,7 @@ var HighlightLinks = function () {
 exports.default = HighlightLinks;
 
 /***/ }),
-/* 148 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17690,7 +17542,7 @@ function buildLinksObject(nodeList) {
 }
 
 /***/ }),
-/* 149 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17707,7 +17559,7 @@ function calcViewportPosition(node) {
 }
 
 /***/ }),
-/* 150 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17737,7 +17589,7 @@ function forceClose(nodes) {
 }
 
 /***/ }),
-/* 151 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17793,7 +17645,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 152 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17809,25 +17661,13 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-<<<<<<< HEAD
-var _index = __webpack_require__(12);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _index3 = __webpack_require__(154);
-=======
 var _reduxStore = __webpack_require__(45);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 
-var _index = __webpack_require__(156);
+var _index = __webpack_require__(157);
 
 var _index2 = _interopRequireDefault(_index);
 
-<<<<<<< HEAD
-var _getProp = __webpack_require__(11);
-=======
 var _createComponents = __webpack_require__(47);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 
 var _createComponents2 = _interopRequireDefault(_createComponents);
 
@@ -17911,7 +17751,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 153 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17924,7 +17764,7 @@ exports.__DO_NOT_USE__ActionTypes = exports.compose = exports.applyMiddleware = 
 
 var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var _symbolObservable = __webpack_require__(154);
+var _symbolObservable = __webpack_require__(155);
 
 var _symbolObservable2 = _interopRequireDefault(_symbolObservable);
 
@@ -18521,10 +18361,10 @@ exports.bindActionCreators = bindActionCreators;
 exports.applyMiddleware = applyMiddleware;
 exports.compose = compose;
 exports.__DO_NOT_USE__ActionTypes = ActionTypes;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 154 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18534,7 +18374,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ponyfill = __webpack_require__(155);
+var _ponyfill = __webpack_require__(156);
 
 var _ponyfill2 = _interopRequireDefault(_ponyfill);
 
@@ -18560,7 +18400,7 @@ exports.default = result;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19), __webpack_require__(42)(module)))
 
 /***/ }),
-/* 155 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18589,7 +18429,7 @@ function symbolObservablePonyfill(root) {
 };
 
 /***/ }),
-/* 156 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18602,7 +18442,7 @@ exports.default = Modal;
 
 var _preact = __webpack_require__(0);
 
-var _preactCssTransitionGroup = __webpack_require__(157);
+var _preactCssTransitionGroup = __webpack_require__(158);
 
 var _preactCssTransitionGroup2 = _interopRequireDefault(_preactCssTransitionGroup);
 
@@ -18668,7 +18508,7 @@ function Modal(_ref) {
 }
 
 /***/ }),
-/* 157 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19228,7 +19068,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 //# sourceMappingURL=preact-css-transition-group.js.map
 
 /***/ }),
-/* 158 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19256,15 +19096,15 @@ var _index = __webpack_require__(10);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(163);
+var _index3 = __webpack_require__(164);
 
 var _index4 = _interopRequireDefault(_index3);
 
-var _calcShareAction = __webpack_require__(184);
+var _calcShareAction = __webpack_require__(185);
 
 var _calcShareAction2 = _interopRequireDefault(_calcShareAction);
 
-var _getProp = __webpack_require__(9);
+var _getProp = __webpack_require__(1);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
@@ -19402,7 +19242,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 159 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19679,7 +19519,7 @@ module.exports = function (color_string) {
 };
 
 /***/ }),
-/* 160 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19958,7 +19798,7 @@ function BlurStack() {
 module.exports = blur;
 
 /***/ }),
-/* 161 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20211,14 +20051,14 @@ function appendElement(hander, node) {
 } //appendChild and setAttributeNS are preformance key
 
 //if(typeof require == 'function'){
-var XMLReader = __webpack_require__(162).XMLReader;
+var XMLReader = __webpack_require__(163).XMLReader;
 var DOMImplementation = exports.DOMImplementation = __webpack_require__(50).DOMImplementation;
 exports.XMLSerializer = __webpack_require__(50).XMLSerializer;
 exports.DOMParser = DOMParser;
 //}
 
 /***/ }),
-/* 162 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20868,7 +20708,7 @@ function split(source, start) {
 exports.XMLReader = XMLReader;
 
 /***/ }),
-/* 163 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20892,7 +20732,7 @@ var _index3 = __webpack_require__(52);
 
 var _index4 = _interopRequireDefault(_index3);
 
-var _shareSelections = __webpack_require__(181);
+var _shareSelections = __webpack_require__(182);
 
 var _shareSelections2 = _interopRequireDefault(_shareSelections);
 
@@ -20933,11 +20773,11 @@ function ProgrammesChart(props) {
   var downloadButton = (0, _preact.h)(
     'button',
     { className: 'Button is-inline', onClick: downloadAction },
-    'Download chart as image'
+    'Download chart as image (~170 KB)'
   );
 
   var buildDownloadLinks = function buildDownloadLinks() {
-    Object.keys(files).map(function (key) {
+    return Object.keys(files).map(function (key) {
       return (0, _preact.h)(
         'div',
         null,
@@ -20992,7 +20832,7 @@ function ProgrammesChart(props) {
             estimateText,
             ' sets out the detailed spending plans of each government department for the coming year.'
           ),
-          files ? buildDownloadLinks : null
+          files ? buildDownloadLinks() : null
         ),
         (0, _preact.h)(
           'div',
@@ -21028,7 +20868,7 @@ function ProgrammesChart(props) {
 }
 
 /***/ }),
-/* 164 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21044,11 +20884,7 @@ exports.default = Markup;
 
 var _preact = __webpack_require__(0);
 
-<<<<<<< HEAD
-var _index = __webpack_require__(12);
-=======
 var _index = __webpack_require__(10);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -21079,7 +20915,7 @@ function Markup(props) {
 }
 
 /***/ }),
-/* 165 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21102,7 +20938,7 @@ function calcMaxValue(items) {
 }
 
 /***/ }),
-/* 166 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21113,7 +20949,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = buildGroupSpaceArray;
 
-var _breakIntoWrap = __webpack_require__(167);
+var _breakIntoWrap = __webpack_require__(168);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -21145,7 +20981,7 @@ function buildGroupSpaceArray(items, styling) {
 }
 
 /***/ }),
-/* 167 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21192,7 +21028,7 @@ function breakIntoWrap(string, wrap) {
 }
 
 /***/ }),
-/* 168 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21208,7 +21044,7 @@ exports.default = Breakpoints;
 
 var _preact = __webpack_require__(0);
 
-var _BreakpointItem = __webpack_require__(169);
+var _BreakpointItem = __webpack_require__(170);
 
 var _BreakpointItem2 = _interopRequireDefault(_BreakpointItem);
 
@@ -21239,7 +21075,7 @@ function Breakpoints(_ref) {
 }
 
 /***/ }),
-/* 169 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21252,7 +21088,7 @@ exports.default = BreakpointItem;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(8);
+var _trimValues = __webpack_require__(9);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -21290,7 +21126,7 @@ function BreakpointItem(_ref) {
 }
 
 /***/ }),
-/* 170 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21346,7 +21182,7 @@ function Grid(_ref) {
 }
 
 /***/ }),
-/* 171 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21362,7 +21198,7 @@ exports.default = Guides;
 
 var _preact = __webpack_require__(0);
 
-var _GuideItem = __webpack_require__(172);
+var _GuideItem = __webpack_require__(173);
 
 var _GuideItem2 = _interopRequireDefault(_GuideItem);
 
@@ -21395,7 +21231,7 @@ function Guides(_ref) {
 }
 
 /***/ }),
-/* 172 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21438,7 +21274,7 @@ function GuideItem(_ref) {
 }
 
 /***/ }),
-/* 173 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21454,7 +21290,7 @@ exports.default = LineGroups;
 
 var _preact = __webpack_require__(0);
 
-var _LineGroupItem = __webpack_require__(174);
+var _LineGroupItem = __webpack_require__(175);
 
 var _LineGroupItem2 = _interopRequireDefault(_LineGroupItem);
 
@@ -21483,7 +21319,7 @@ function LineGroups(_ref) {
 }
 
 /***/ }),
-/* 174 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21496,7 +21332,7 @@ exports.default = LineGroupItem;
 
 var _preact = __webpack_require__(0);
 
-var _path = __webpack_require__(175);
+var _path = __webpack_require__(176);
 
 var colours = ['#79b43c', '#4a4a4a', '#ad3c64'];
 
@@ -21555,7 +21391,7 @@ function LineGroupItem(_ref) {
 }
 
 /***/ }),
-/* 175 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21780,10 +21616,10 @@ var substr = 'ab'.substr(-1) === 'b' ? function (str, start, len) {
   if (start < 0) start = str.length + start;
   return str.substr(start, len);
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 176 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21799,7 +21635,7 @@ exports.default = Tooltips;
 
 var _preact = __webpack_require__(0);
 
-var _TooltipGroup = __webpack_require__(177);
+var _TooltipGroup = __webpack_require__(178);
 
 var _TooltipGroup2 = _interopRequireDefault(_TooltipGroup);
 
@@ -21831,7 +21667,7 @@ function Tooltips(_ref) {
 }
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21847,7 +21683,7 @@ exports.default = TooltipGroup;
 
 var _preact = __webpack_require__(0);
 
-var _TooltipItem = __webpack_require__(178);
+var _TooltipItem = __webpack_require__(179);
 
 var _TooltipItem2 = _interopRequireDefault(_TooltipItem);
 
@@ -21908,7 +21744,7 @@ function TooltipGroup(_ref) {
 }
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21921,7 +21757,7 @@ exports.default = TooltipItem;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(8);
+var _trimValues = __webpack_require__(9);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -21989,7 +21825,7 @@ function TooltipItem(_ref) {
 }
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22005,7 +21841,7 @@ exports.default = Labels;
 
 var _preact = __webpack_require__(0);
 
-var _LabelItem = __webpack_require__(180);
+var _LabelItem = __webpack_require__(181);
 
 var _LabelItem2 = _interopRequireDefault(_LabelItem);
 
@@ -22036,7 +21872,7 @@ function Labels(_ref) {
 }
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22100,13 +21936,13 @@ function LabelItem(_ref) {
 }
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, exports) {
 
 module.exports = {"As link":"link","On Facebook":"facebook","On Twitter":"twitter"}
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22119,7 +21955,7 @@ exports.default = ShareMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _Button = __webpack_require__(183);
+var _Button = __webpack_require__(184);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -22174,7 +22010,7 @@ function ShareMarkup(_ref) {
 }
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22191,7 +22027,7 @@ var _index = __webpack_require__(14);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _analyticsEvent = __webpack_require__(5);
+var _analyticsEvent = __webpack_require__(6);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -22253,7 +22089,7 @@ function Button(_ref) {
 }
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22264,7 +22100,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = calcShareAction;
 
-var _analyticsEvent = __webpack_require__(5);
+var _analyticsEvent = __webpack_require__(6);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -22304,7 +22140,7 @@ function calcShareAction(selected, anchorString, updateModal) {
 }
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22328,27 +22164,19 @@ var _canvgBrowser = __webpack_require__(49);
 
 var _canvgBrowser2 = _interopRequireDefault(_canvgBrowser);
 
-var _index = __webpack_require__(186);
+var _index = __webpack_require__(187);
 
 var _index2 = _interopRequireDefault(_index);
 
-<<<<<<< HEAD
-var _index3 = __webpack_require__(12);
-=======
 var _index3 = __webpack_require__(10);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 
 var _index4 = _interopRequireDefault(_index3);
 
-var _calcShareAction = __webpack_require__(188);
+var _calcShareAction = __webpack_require__(189);
 
 var _calcShareAction2 = _interopRequireDefault(_calcShareAction);
 
-<<<<<<< HEAD
-var _getProp = __webpack_require__(11);
-=======
-var _getProp = __webpack_require__(9);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+var _getProp = __webpack_require__(1);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
@@ -22445,13 +22273,13 @@ var ExpenditureChartContainer = function (_Component) {
           year = _props.year,
           files = _props.files,
           location = _props.location,
-          phaseTable = _props.phaseTable;
+          phaseTable = _props.phaseTable,
+          cpi = _props.cpi;
       var _state = this.state,
           width = _state.width,
           mobile = _state.mobile,
           source = _state.source,
-          type = _state.type,
-          cpi = _state.cpi;
+          type = _state.type;
       var _events = this.events,
           downloadAction = _events.downloadAction,
           canvasAction = _events.canvasAction,
@@ -22540,7 +22368,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22561,7 +22389,7 @@ var _index3 = __webpack_require__(52);
 
 var _index4 = _interopRequireDefault(_index3);
 
-var _shareSelections = __webpack_require__(187);
+var _shareSelections = __webpack_require__(188);
 
 var _shareSelections2 = _interopRequireDefault(_shareSelections);
 
@@ -22772,7 +22600,7 @@ function ExpenditureChart(props) {
           (0, _preact.h)(
             'button',
             { className: 'Button is-inline', onClick: downloadAction },
-            'Download chart as image'
+            'Download chart as image (~130 KB)'
           )
         )
       )
@@ -22781,13 +22609,13 @@ function ExpenditureChart(props) {
 }
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, exports) {
 
 module.exports = {"As link":"link","On Facebook":"facebook","On Twitter":"twitter"}
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22798,7 +22626,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = calcShareAction;
 
-var _analyticsEvent = __webpack_require__(5);
+var _analyticsEvent = __webpack_require__(6);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -22838,7 +22666,7 @@ function calcShareAction(selected, anchorString, updateModal) {
 }
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22858,15 +22686,15 @@ var _decodeHtmlEntities = __webpack_require__(3);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
-var _updateQs = __webpack_require__(190);
+var _updateQs = __webpack_require__(191);
 
 var _updateQs2 = _interopRequireDefault(_updateQs);
 
-var _index = __webpack_require__(191);
+var _index = __webpack_require__(192);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _filterResults = __webpack_require__(197);
+var _filterResults = __webpack_require__(198);
 
 var _filterResults2 = _interopRequireDefault(_filterResults);
 
@@ -22999,7 +22827,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23010,7 +22838,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = updateQs;
 
-var _queryString = __webpack_require__(14);
+var _queryString = __webpack_require__(13);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -23023,7 +22851,7 @@ function updateQs(object) {
 }
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23036,11 +22864,11 @@ exports.default = DeptSearchMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(192);
+var _index = __webpack_require__(193);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(195);
+var _index3 = __webpack_require__(196);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -23125,7 +22953,7 @@ function DeptSearchMarkup(_ref) {
 }
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23138,15 +22966,15 @@ exports.default = DeptGroup;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(7);
+var _index = __webpack_require__(8);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _provinces = __webpack_require__(193);
+var _provinces = __webpack_require__(194);
 
 var _provinces2 = _interopRequireDefault(_provinces);
 
-var _spheres = __webpack_require__(194);
+var _spheres = __webpack_require__(195);
 
 var _spheres2 = _interopRequireDefault(_spheres);
 
@@ -23235,19 +23063,19 @@ function DeptGroup(_ref) {
 }
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports) {
 
 module.exports = {"All Provinces":"all","Eastern Cape":"eastern-cape","Free State":"free-state","Gauteng":"gauteng","KwaZulu-Natal":"kwazulu-natal","Limpopo":"limpopo","Mpumalanga":"mpumalanga","North West":"north-west","Northern Cape":"northern-cape","Western Cape":"western-cape"}
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, exports) {
 
 module.exports = {"All spheres of government":"all","National":"national","Provincial":"provincial"}
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23260,7 +23088,7 @@ exports.default = DeptGroup;
 
 var _preact = __webpack_require__(0);
 
-var _Map = __webpack_require__(196);
+var _Map = __webpack_require__(197);
 
 var _Map2 = _interopRequireDefault(_Map);
 
@@ -23347,7 +23175,7 @@ function DeptGroup(_ref) {
 }
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23448,7 +23276,7 @@ function Map(province) {
 }
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23462,11 +23290,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports.default = filterResults;
 
-var _filterKeywords = __webpack_require__(198);
+var _filterKeywords = __webpack_require__(199);
 
 var _filterKeywords2 = _interopRequireDefault(_filterKeywords);
 
-var _filterGroups = __webpack_require__(199);
+var _filterGroups = __webpack_require__(200);
 
 var _filterGroups2 = _interopRequireDefault(_filterGroups);
 
@@ -23507,7 +23335,7 @@ function filterResults(filtersObject, rawItems) {
 }
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23548,7 +23376,7 @@ function filterKeywords(keywords, results) {
 }
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23574,7 +23402,7 @@ function filterAccordingToSphere(items, group, remove) {
 }
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23586,7 +23414,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(201);
+var _index = __webpack_require__(202);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -23697,7 +23525,7 @@ for (var i = 0; i < nodes.length; i++) {
 }
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23710,11 +23538,11 @@ exports.default = Participate;
 
 var _preact = __webpack_require__(0);
 
-var _returnHtml = __webpack_require__(202);
+var _returnHtml = __webpack_require__(203);
 
 var _returnHtml2 = _interopRequireDefault(_returnHtml);
 
-var _index = __webpack_require__(7);
+var _index = __webpack_require__(8);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -23773,7 +23601,7 @@ function Participate(_ref) {
 }
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23784,51 +23612,51 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = returnHtml;
 
-var _jan = __webpack_require__(203);
+var _jan = __webpack_require__(204);
 
 var _jan2 = _interopRequireDefault(_jan);
 
-var _feb = __webpack_require__(204);
+var _feb = __webpack_require__(205);
 
 var _feb2 = _interopRequireDefault(_feb);
 
-var _mar = __webpack_require__(205);
+var _mar = __webpack_require__(206);
 
 var _mar2 = _interopRequireDefault(_mar);
 
-var _apr = __webpack_require__(206);
+var _apr = __webpack_require__(207);
 
 var _apr2 = _interopRequireDefault(_apr);
 
-var _may = __webpack_require__(207);
+var _may = __webpack_require__(208);
 
 var _may2 = _interopRequireDefault(_may);
 
-var _jun = __webpack_require__(208);
+var _jun = __webpack_require__(209);
 
 var _jun2 = _interopRequireDefault(_jun);
 
-var _jul = __webpack_require__(209);
+var _jul = __webpack_require__(210);
 
 var _jul2 = _interopRequireDefault(_jul);
 
-var _aug = __webpack_require__(210);
+var _aug = __webpack_require__(211);
 
 var _aug2 = _interopRequireDefault(_aug);
 
-var _sep = __webpack_require__(211);
+var _sep = __webpack_require__(212);
 
 var _sep2 = _interopRequireDefault(_sep);
 
-var _oct = __webpack_require__(212);
+var _oct = __webpack_require__(213);
 
 var _oct2 = _interopRequireDefault(_oct);
 
-var _nov = __webpack_require__(213);
+var _nov = __webpack_require__(214);
 
 var _nov2 = _interopRequireDefault(_nov);
 
-var _dec = __webpack_require__(214);
+var _dec = __webpack_require__(215);
 
 var _dec2 = _interopRequireDefault(_dec);
 
@@ -23866,79 +23694,79 @@ function returnHtml(key) {
 }
 
 /***/ }),
-/* 203 */
-/***/ (function(module, exports) {
-
-module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Treasury drafts budget documents, including responses to the recommendations Parliament puts forward to the Minister of Finance in Budget Review and Recommendations Reports.</li>\r\n  <li>Departments finalise their budgets and budget documentation.</li>\r\n</ul>\r\n";
-
-/***/ }),
 /* 204 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Main Budget is tabled in Parliament, including legislation (Appropriation Bill, Division of Revenue Bill and Revenue Bills) and accompanying documentation.</li>\r\n</ul>\r\n";
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Treasury drafts budget documents, including responses to the recommendations Parliament puts forward to the Minister of Finance in Budget Review and Recommendations Reports.</li>\r\n  <li>Departments finalise their budgets and budget documentation.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 205 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Departments table strategic and annual performance plans.</li>\r\n  <li>Provincial budgets are tabled and submitted to National Treasury.</li>\r\n  <li>Within 16 days of the Budget being tabled, the Committees on Finance must submit a report to the National Assembly and the National Council of Provinces on the fiscal framework and revenue proposals.</li>\r\n  <li>The Committees on Finance hold public hearings when deliberating the contents and recommendations to be included in its reports.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Make submissions to the Committees on Finance providing your input on the fiscal framework and the revenue (tax) proposals.</li>\r\n</ul>\r\n";
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Main Budget is tabled in Parliament, including legislation (Appropriation Bill, Division of Revenue Bill and Revenue Bills) and accompanying documentation.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 206 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury plans the budget strategy and process, taking into account the priorities set out by the department responsible for planning.</li>\r\n  <li>Departments conducts reviews and analysis of departmental expenditure outcomes and budgets.</li>\r\n  <li>Parliament needs to pass the Division of Revenue Bill with or without amendments within 35 days of the fiscal framework being adopted by Parliament. The Committees on Appropriations holds public hearings when deliberating the contents and recommendations to be included in its report on the division of revenue bill.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Make submissions to the Committees on Appropriations providing your input on the division of money across the three spheres of government.</li>\r\n  <li>Participate in public hearings held by provincial legislatures to debate the Division of Revenue Act and decide on whether to assent to it.</li>\r\n</ul>\r\n";
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Departments table strategic and annual performance plans.</li>\r\n  <li>Provincial budgets are tabled and submitted to National Treasury.</li>\r\n  <li>Within 16 days of the Budget being tabled, the Committees on Finance must submit a report to the National Assembly and the National Council of Provinces on the fiscal framework and revenue proposals.</li>\r\n  <li>The Committees on Finance hold public hearings when deliberating the contents and recommendations to be included in its reports.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Make submissions to the Committees on Finance providing your input on the fiscal framework and the revenue (tax) proposals.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 207 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury issues budget guidelines to departments requesting budget submissions, including their 3-year expenditure estimates, in accordance with the adopted budget strategy and planned budget process.</li>\r\n  <li>Departments engage with analysts on departmental budgets and the drafting of budget submissions.</li>\r\n  <li>Parliament and provincial legislatures review each department's budget, including the department's Annual Performance Plan (APP) and Strategic Plan (SP).</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Review the departments' Annual Annual Performance Plans (APPs) and Strategic Plans (SPs).</li>\r\n  <li>Engage national departments and relevant Parliamentary committees on the content of the APPs and SPs and whether national departmental budgets have been properly prioritised.</li>\r\n  <li>Engage provincial departments and relevant provincial legislature committees on the content of the APPs and SPs and whether national departmental budgets have been properly prioritised.</li>\r\n</ul>\r\n";
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury plans the budget strategy and process, taking into account the priorities set out by the department responsible for planning.</li>\r\n  <li>Departments conducts reviews and analysis of departmental expenditure outcomes and budgets.</li>\r\n  <li>Parliament needs to pass the Division of Revenue Bill with or without amendments within 35 days of the fiscal framework being adopted by Parliament. The Committees on Appropriations holds public hearings when deliberating the contents and recommendations to be included in its report on the division of revenue bill.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Make submissions to the Committees on Appropriations providing your input on the division of money across the three spheres of government.</li>\r\n  <li>Participate in public hearings held by provincial legislatures to debate the Division of Revenue Act and decide on whether to assent to it.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 208 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury compiles departmental budget submissions and engage with departments to assist with submissions. Function groups hold discussions and begin formulating recommendations to budget technical structures, including the Ministers' Committee on the Budget Technical Committee (MTEC) and the Technical Committee on Finance (TCF).</li>\r\n  <li>Departments engage with analysts on departmental budgets and the drafting of budget submissions.</li>\r\n  <li>Parliament decides on priorities for the third Parliamentary term.</li>\r\n  <li>Parliament conducts oversight visits, study tours and special projects.</li>\r\n  <li>Parliament holds the \"Youth Parliament\".</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Lobby parliament, parliamentary committees and MPs for specific oversight visits.</li>\r\n  <li>Participate in parliamentary oversight visits.</li>\r\n  <li>Participate in youth parliaments.</li>\r\n  <li>Engage government departments on the likely content of their budget submissions.</li>\r\n</ul>\r\n";
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury issues budget guidelines to departments requesting budget submissions, including their 3-year expenditure estimates, in accordance with the adopted budget strategy and planned budget process.</li>\r\n  <li>Departments engage with analysts on departmental budgets and the drafting of budget submissions.</li>\r\n  <li>Parliament and provincial legislatures review the provincial appropriation bill and each department's budget, including the department's Annual Performance Plan (APP) and Strategic Plan (SP).</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Review the departments' Annual Annual Performance Plans (APPs) and Strategic Plans (SPs).</li>\r\n  <li>Engage national departments and relevant Parliamentary committees on the content of the APPs and SPs and whether national departmental budgets have been properly prioritised.</li>\r\n  <li>Engage provincial departments and relevant provincial legislature committees on the content of the APPs and SPs and whether national departmental budgets have been properly prioritised.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 209 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury compiles departmental budget submissions and engage with departments to assist with submissions. Function groups hold discussions and begin formulating recommendations to budget technical structures, including the Ministers' Committee on the Budget Technical Committee (MTEC) and the Technical Committee on Finance (TCF).</li>\r\n  <li>Departments submit MTEF budgets to the National Treasury and engagements are held on these budget submissions.</li>\r\n  <li>Parliament must pass the Appropriation Bill, with or without amendments, within four months after the start of the financial year: by 31 July.</li>\r\n  <li>The Committees on Appropriations holds public hearings when deliberating the contents and recommendations to be included in its report on the Appropriation Bill.</li>\r\n  <li>Parliament conducts oversight visits, study tours and special projects.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Engagement government departments on their budget submissions.</li>\r\n  <li>Lobby parliament, parliamentary committees and MPs for specific oversight visits.</li>\r\n  <li>Participate in parliamentary oversight visits.</li>\r\n</ul>\r\n";
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury compiles departmental budget submissions and engage with departments to assist with submissions. Function groups hold discussions and begin formulating recommendations to budget technical structures, including the Ministers' Committee on the Budget Technical Committee (MTEC) and the Technical Committee on Finance (TCF).</li>\r\n  <li>Departments engage with analysts on departmental budgets and the drafting of budget submissions.</li>\r\n  <li>Parliament decides on priorities for the third Parliamentary term.</li>\r\n  <li>Parliament conducts oversight visits, study tours and special projects.</li>\r\n  <li>Parliament holds the \"Youth Parliament\".</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Lobby parliament, parliamentary committees and MPs for specific oversight visits.</li>\r\n  <li>Participate in parliamentary oversight visits.</li>\r\n  <li>Participate in youth parliaments.</li>\r\n  <li>Engage government departments on the likely content of their budget submissions.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 210 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury holds technical structures hearings, where function groups present their recommendations.</li>\r\n  <li>The Ministers' Committee on the Budget Technical Committee (MTEC) deliberations culminate in it tabling recommendations to political executive structures, including the Ministers' Committee on the Budget (MINCOMBUD), the Budget Council and the Budget Forum.</li>\r\n  <li>The Ministers' Committee on the Budget (MINCOMBUD) finalises its recommendations to Cabinet on the fiscal framework, key national government spending priorities, division of revenue (DoR) and the substantial adjustments to conditional grants to be tabled in the Medium Term Budget Policy Statement (MTBPS).</li>\r\n  <li>Departments engage with technical and political structures on the budget as per the adopted budget strategy and budget process.</li>\r\n  <li>Holding of \"Women's Parliament\".</li>\r\n  <li>Parliament decides on the priorities for the fourth term.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Engage government departments on their budgets.</li>\r\n</ul>\r\n    \r\n";
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury compiles departmental budget submissions and engage with departments to assist with submissions. Function groups hold discussions and begin formulating recommendations to budget technical structures, including the Ministers' Committee on the Budget Technical Committee (MTEC) and the Technical Committee on Finance (TCF).</li>\r\n  <li>Departments submit MTEF budgets to the National Treasury and engagements are held on these budget submissions.</li>\r\n  <li>Parliament must pass the Appropriation Bill, with or without amendments, within four months after the start of the financial year: by 31 July.</li>\r\n  <li>The Committees on Appropriations holds public hearings when deliberating the contents and recommendations to be included in its report on the Appropriation Bill.</li>\r\n  <li>Parliament conducts oversight visits, study tours and special projects.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Engagement government departments on their budget submissions.</li>\r\n  <li>Lobby parliament, parliamentary committees and MPs for specific oversight visits.</li>\r\n  <li>Participate in parliamentary oversight visits.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 211 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury holds technical structures hearings, where function groups present their recommendations.</li>\r\n  <li>The Ministers' Committee on the Budget Technical Committee (MTEC) deliberations culminate in it tabling recommendations to political executive structures, including the Ministers' Committee on the Budget (MINCOMBUD), the Budget Council and the Budget Forum.</li>\r\n  <li>The Ministers' Committee on the Budget (MINCOMBUD) finalises its recommendations to Cabinet on the fiscal framework, key national government spending priorities, division of revenue (DoR) and the substantial adjustments to conditional grants to be tabled in the Medium Term Budget Policy Statement (MTBPS).</li>\r\n  <li>Departments engage with technical and political structures on the budget as per the adopted budget strategy and budget process.</li>\r\n  <li>Parliament decides on the priorities for the fourth term.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Engage government departments on their budgets.</li>\r\n</ul>\r\n";
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury holds technical structures hearings, where function groups present their recommendations.</li>\r\n  <li>The Ministers' Committee on the Budget Technical Committee (MTEC) deliberations culminate in it tabling recommendations to political executive structures, including the Ministers' Committee on the Budget (MINCOMBUD), the Budget Council and the Budget Forum.</li>\r\n  <li>The Ministers' Committee on the Budget (MINCOMBUD) finalises its recommendations to Cabinet on the fiscal framework, key national government spending priorities, division of revenue (DoR) and the substantial adjustments to conditional grants to be tabled in the Medium Term Budget Policy Statement (MTBPS).</li>\r\n  <li>Departments engage with technical and political structures on the budget as per the adopted budget strategy and budget process.</li>\r\n  <li>Holding of \"Women's Parliament\".</li>\r\n  <li>Parliament decides on the priorities for the fourth term.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Engage government departments on their budgets.</li>\r\n</ul>\r\n    \r\n";
 
 /***/ }),
 /* 212 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Cabinet considers the recommendations tabled before it on the Medium Term Budget Policy Statement (MTBPS) and the MTBPS is then tabled. It includes the 3 year policy position on the fiscal framework, key national government spending priorities, the Division of Revenue (DoR) as well as the substantial adjustments to conditional grants.</li>\r\n  <li>In-year budget processes culminate in the tabling of the Adjustments Appropriation Bill and the Division of Revenue Amendment Bill.</li>\r\n  <li>National Treasury issues draft allocation letters to national departments and the departments begin preparing their budget documentation inputs on the basis of these letters.</li>\r\n  <li>Departments prepare budgets and budget documentation in accordance with the received draft allocations.</li>\r\n  <li>Parliament reviews the Annual Reports (ARs) and preparation for BRRRs.</li>\r\n  <li>Within 9 days of the tabling of the adjustments budget, Parliament must submit a report on the revised fiscal framework to the respective houses for consideration and adoption.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Participate in public hearings on the revised fiscal framework.</li>\r\n</ul>\r\n";
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>National Treasury holds technical structures hearings, where function groups present their recommendations.</li>\r\n  <li>The Ministers' Committee on the Budget Technical Committee (MTEC) deliberations culminate in it tabling recommendations to political executive structures, including the Ministers' Committee on the Budget (MINCOMBUD), the Budget Council and the Budget Forum.</li>\r\n  <li>The Ministers' Committee on the Budget (MINCOMBUD) finalises its recommendations to Cabinet on the fiscal framework, key national government spending priorities, division of revenue (DoR) and the substantial adjustments to conditional grants to be tabled in the Medium Term Budget Policy Statement (MTBPS).</li>\r\n  <li>Departments engage with technical and political structures on the budget as per the adopted budget strategy and budget process.</li>\r\n  <li>Parliament decides on the priorities for the fourth term.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Engage government departments on their budgets.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 213 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Deliberations take place within National Treasury's budget technical structures to enable them to finalise recommendations to political structures on the detail of the MTEF National allocations to be tabled in the budget in February.</li>\r\n  <li>Cabinet considers the recommendations tabled before it. Allocations adopted by Cabinet are included in updated allocation letters sent to departments.</li>\r\n  <li>Departments update their budget documentation inputs accordingly.</li>\r\n  <li>Departments finalise their budgets and budget documentation in accordance with the final allocations received.</li>\r\n  <li>Within 9 days after the adoption of the fiscal framework report, Parliament must report to the respective Houses on the Division of Revenue Amendment Bill.</li>\r\n  <li>The Committee on Appropriations must report to the relevant House on the Adjustments Appropriation Bill within 30 days of the tabling of the national adjustments budget.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Participate in public hearings on the Division of Revenue Amendment Bill in the national and provincial legislatures.</li>\r\n  <li>Participate in public hearings on the Adjustments Appropriation Bill. These will be held by the appropriations committee and the relevant sector committees may also be engaged.</li>\r\n</ul>\r\n";
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Cabinet considers the recommendations tabled before it on the Medium Term Budget Policy Statement (MTBPS) and the MTBPS is then tabled. It includes the 3 year policy position on the fiscal framework, key national government spending priorities, the Division of Revenue (DoR) as well as the substantial adjustments to conditional grants.</li>\r\n  <li>In-year budget processes culminate in the tabling of the Adjustments Appropriation Bill and the Division of Revenue Amendment Bill.</li>\r\n  <li>National Treasury issues draft allocation letters to national departments and the departments begin preparing their budget documentation inputs on the basis of these letters.</li>\r\n  <li>Departments prepare budgets and budget documentation in accordance with the received draft allocations.</li>\r\n  <li>Parliament reviews the Annual Reports (ARs) and preparation for BRRRs.</li>\r\n  <li>Within 9 days of the tabling of the adjustments budget, Parliament must submit a report on the revised fiscal framework to the respective houses for consideration and adoption.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Participate in public hearings on the revised fiscal framework.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 214 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Treasury drafts budget documents, including responses to the recommendations Parliament puts forward to the Minister of Finance in Budget Review and Recommendations Reports.</li>\r\n  <li>Departments finalise their budgets and budget documentation.</li>\r\n</ul>\r\n";
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Deliberations take place within National Treasury's budget technical structures to enable them to finalise recommendations to political structures on the detail of the MTEF National allocations to be tabled in the budget in February.</li>\r\n  <li>Cabinet considers the recommendations tabled before it. Allocations adopted by Cabinet are included in updated allocation letters sent to departments.</li>\r\n  <li>Departments update their budget documentation inputs accordingly.</li>\r\n  <li>Departments finalise their budgets and budget documentation in accordance with the final allocations received.</li>\r\n  <li>Within 9 days after the adoption of the fiscal framework report, Parliament must report to the respective Houses on the Division of Revenue Amendment Bill.</li>\r\n  <li>The Committee on Appropriations must report to the relevant House on the Adjustments Appropriation Bill within 30 days of the tabling of the national adjustments budget.</li>\r\n</ul>\r\n\r\n<h3 class=\"Section-title is-small\">How can I participate?</h3>\r\n\r\n<ul>\r\n  <li>Participate in public hearings on the Division of Revenue Amendment Bill in the national and provincial legislatures.</li>\r\n  <li>Participate in public hearings on the Adjustments Appropriation Bill. These will be held by the appropriations committee and the relevant sector committees may also be engaged.</li>\r\n</ul>\r\n";
 
 /***/ }),
 /* 215 */
+/***/ (function(module, exports) {
+
+module.exports = "<h3 class=\"Section-title is-small\">What are Treasury, Departments and Parliament busy with?</h3>\r\n\r\n<ul>\r\n  <li>Treasury drafts budget documents, including responses to the recommendations Parliament puts forward to the Minister of Finance in Budget Review and Recommendations Reports.</li>\r\n  <li>Departments finalise their budgets and budget documentation.</li>\r\n</ul>\r\n";
+
+/***/ }),
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24008,7 +23836,7 @@ module.exports = function (str) {
 };
 
 /***/ }),
-/* 216 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24019,7 +23847,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = createComponent;
 
-var _closeIcon = __webpack_require__(217);
+var _closeIcon = __webpack_require__(218);
 
 var _closeIcon2 = _interopRequireDefault(_closeIcon);
 
@@ -24030,7 +23858,7 @@ function createComponent(title, description, content) {
 }
 
 /***/ }),
-/* 217 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24042,7 +23870,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = '<svg version="1.2" width="10" height="10" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M58.3 50.4L96.7 12c2.4-2.4 2.4-6.2 0-8.6C94.3 1 90.5 1 88 3.4L49.8 41.8 11.3 3.4C9 1 5 1 2.7 3.4.3 5.8.3 9.6 2.7 12L41 50.4 2.8 88.8C.3 91.2.3 95 2.7 97.4 4 98.6 5.5 99.2 7 99.2c1.6 0 3-.6 4.3-1.8L49.7 59 88 97.4c1.3 1.2 3 1.8 4.4 1.8 1.6 0 3-.6 4.3-1.8 2.4-2.4 2.4-6.2 0-8.6L58.3 50.4zm0 0"></path></svg>';
 
 /***/ }),
-/* 218 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24057,7 +23885,7 @@ function escapeRegExp(text) {
 }
 
 /***/ }),
-/* 219 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24084,7 +23912,7 @@ function walkTheDom(node, func, source, regExpression) {
 }
 
 /***/ }),
-/* 220 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24098,7 +23926,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(221);
+var _index = __webpack_require__(222);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -24145,7 +23973,7 @@ var IntroSectionContainer = function (_Component) {
   }, {
     key: 'calcIfTriggered',
     value: function calcIfTriggered(value) {
-      if (value > 190) {
+      if (value > 330) {
         return this.setState({ triggered: true });
       }
 
@@ -24181,7 +24009,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 221 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24245,7 +24073,7 @@ function IntroSection(_ref) {
 }
 
 /***/ }),
-/* 222 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24255,11 +24083,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getProp = __webpack_require__(11);
+var _getProp = __webpack_require__(1);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
-var _initComponents = __webpack_require__(213);
+var _initComponents = __webpack_require__(54);
 
 var _initComponents2 = _interopRequireDefault(_initComponents);
 
@@ -24280,7 +24108,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 213 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24289,19 +24117,33 @@ exports.default = scripts();
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = initComponents;
-function initComponents(nameString, callback, create) {
-  var type = create ? 'create' : 'enhance';
-  var nodesList = document.querySelectorAll('[data-' + type + '-component="' + nameString + '"]');
 
-  for (var i = 0; i < nodesList.length; i++) {
-    var node = nodesList[i];
-    callback(node);
-  }
+var _getProp = __webpack_require__(1);
+
+var _getProp2 = _interopRequireDefault(_getProp);
+
+var _initComponents = __webpack_require__(54);
+
+var _initComponents2 = _interopRequireDefault(_initComponents);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function scripts() {
+  var enhanceInstance = function enhanceInstance(node) {
+    var image = (0, _getProp2.default)('image', node, 'node', 'string');
+    var imgNode = image.node,
+        value = image.value;
+
+    imgNode.style.backgroundImage = 'url(\'' + value + '\')';
+  };
+
+  (0, _initComponents2.default)('CsoMeta', enhanceInstance);
 }
 
+exports.default = scripts();
+
 /***/ }),
-/* 214 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24321,11 +24163,7 @@ var _decodeHtmlEntities = __webpack_require__(3);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
-<<<<<<< HEAD
-var _index = __webpack_require__(215);
-=======
-var _index = __webpack_require__(223);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+var _index = __webpack_require__(226);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -24403,11 +24241,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-<<<<<<< HEAD
-/* 215 */
-=======
-/* 223 */
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24420,7 +24254,7 @@ exports.default = Modal;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(7);
+var _index = __webpack_require__(8);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -24468,11 +24302,7 @@ function Modal(_ref) {
 }
 
 /***/ }),
-<<<<<<< HEAD
-/* 216 */
-=======
-/* 224 */
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24498,121 +24328,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-<<<<<<< HEAD
-/* 217 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(218);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function scripts() {
-  var nodes = document.getElementsByClassName('js-initShare');
-  var nodesArray = [].concat(_toConsumableArray(nodes));
-
-  if (nodesArray.length > 0) {
-    nodesArray.forEach(function (node) {
-      (0, _preact.render)((0, _preact.h)(_index2.default, null), node);
-    });
-  }
-}
-
-exports.default = scripts();
-
-/***/ }),
-/* 218 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _preact = __webpack_require__(0);
-
-var _ShareMarkup = __webpack_require__(219);
-
-var _ShareMarkup2 = _interopRequireDefault(_ShareMarkup);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ShareContainer = function (_Component) {
-  _inherits(ShareContainer, _Component);
-
-  function ShareContainer(props) {
-    _classCallCheck(this, ShareContainer);
-
-    var _this = _possibleConstructorReturn(this, (ShareContainer.__proto__ || Object.getPrototypeOf(ShareContainer)).call(this, props));
-
-    _this.state = {
-      selected: 'copy',
-      shareOpen: false,
-      modal: false
-    };
-
-    _this.updateShare = _this.updateShare.bind(_this);
-    _this.updateModal = _this.updateModal.bind(_this);
-    return _this;
-  }
-
-  _createClass(ShareContainer, [{
-    key: 'updateModal',
-    value: function updateModal(state) {
-      this.setState({ modal: state });
-    }
-  }, {
-    key: 'updateShare',
-    value: function updateShare(value) {
-      if (this.state.shareOpen) {
-        this.setState({ shareOpen: false });
-        this.setState({ selected: value });
-        return null;
-      }
-
-      return this.setState({ shareOpen: true });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return (0, _preact.h)(_ShareMarkup2.default, _extends({}, this.state, { updateShare: this.updateShare, updateModal: this.updateModal }));
-    }
-  }]);
-
-  return ShareContainer;
-}(_preact.Component);
-
-exports.default = ShareContainer;
-
-/***/ }),
-/* 219 */
-=======
-/* 225 */
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24628,93 +24344,7 @@ var _index = __webpack_require__(26);
 
 var _index2 = _interopRequireDefault(_index);
 
-<<<<<<< HEAD
-var _Button = __webpack_require__(220);
-
-var _Button2 = _interopRequireDefault(_Button);
-
-var _index3 = __webpack_require__(16);
-
-var _index4 = _interopRequireDefault(_index3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var hardCoded = {
-  'as Link': 'copy',
-  'on Facebook': 'facebook',
-  'on Twitter': 'twitter'
-};
-
-function ShareMarkup(_ref) {
-  var selected = _ref.selected,
-      updateShare = _ref.updateShare,
-      modal = _ref.modal,
-      shareOpen = _ref.shareOpen,
-      updateModal = _ref.updateModal;
-
-  var closeModal = function closeModal() {
-    return updateModal(false);
-  };
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'Share-wrap' },
-    (0, _preact.h)(
-      _index4.default,
-      {
-        title: 'Share this link:',
-        open: modal,
-        closeAction: closeModal
-      },
-      (0, _preact.h)(
-        'a',
-        { className: 'u-wordBreakBreakAll', href: window.location.href },
-        window.location.href
-      )
-    ),
-    (0, _preact.h)(
-      'div',
-      { className: 'Share-action' },
-      (0, _preact.h)(
-        'div',
-        { className: 'Share-select' },
-        (0, _preact.h)(_index2.default, {
-          name: 'share',
-          items: hardCoded,
-          selected: selected,
-          open: shareOpen,
-          changeAction: function changeAction(value) {
-            return updateShare(value);
-          }
-        })
-      ),
-      (0, _preact.h)(
-        'div',
-        { className: 'Share-button' },
-        (0, _preact.h)(_Button2.default, { selected: selected, updateModal: updateModal })
-      )
-    )
-  );
-}
-
-/***/ }),
-/* 220 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Button;
-
-var _preact = __webpack_require__(0);
-
-var _Icon = __webpack_require__(221);
-=======
-var _getProp = __webpack_require__(9);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+var _getProp = __webpack_require__(1);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
@@ -24733,37 +24363,10 @@ function scripts() {
   (0, _createComponents2.default)('Share', createInstance);
 }
 
-<<<<<<< HEAD
-/***/ }),
-/* 221 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Icon;
-
-var _preact = __webpack_require__(0);
-
-function Icon() {
-  return (0, _preact.h)(
-    "svg",
-    { version: "1.2", width: "14", height: "14", baseProfile: "tiny", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100" },
-    (0, _preact.h)("path", { d: "M93.3 25C88.8 17 82.8 11 75 6.6 67.5 2.2 59 0 50 0S32.6 2.2 25 6.7C17 11.2 11 17.2 6.6 25 2.2 32.5 0 41 0 50s2.2 17.4 6.7 25C11.2 83 17.2 89 25 93.4c7.6 4.5 16 6.7 25 6.7s17.4-2.2 25-6.7C83 88.8 89 82.8 93.4 75c4.5-7.6 6.7-16 6.7-25s-2.2-17.4-6.7-25zM82.5 53l-6 5.8L53 82.4c-.8.8-1.8 1.2-3 1.2-1 0-2-.4-2.8-1.2l-6-6c-.7-.7-1-1.7-1-2.8 0-1 .3-2 1-3l12.4-12.2H20.8c-1 0-2-.4-3-1.2-.7-.8-1-1.8-1-3V46c0-1 .3-2 1-3 1-.7 2-1 3-1h32.7L41.2 29.3c-.8-.8-1.2-1.8-1.2-3 0-1 .4-2 1.2-2.8l6-6c.7-.7 1.7-1 2.8-1 1.2 0 2 .3 3 1l23.5 23.7 6 6c.7.7 1 1.7 1 2.8.2 1.2-.2 2-1 3zm0 0" })
-  );
-}
-
-/***/ }),
-/* 222 */
-=======
 exports.default = scripts();
 
 /***/ }),
-/* 226 */
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24779,11 +24382,7 @@ var _index = __webpack_require__(25);
 
 var _index2 = _interopRequireDefault(_index);
 
-<<<<<<< HEAD
-var _getProp = __webpack_require__(11);
-=======
-var _getProp = __webpack_require__(9);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+var _getProp = __webpack_require__(1);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
@@ -24808,11 +24407,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-<<<<<<< HEAD
-/* 223 */
-=======
-/* 227 */
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24836,11 +24431,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-<<<<<<< HEAD
-/* 224 */
-=======
-/* 228 */
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24852,11 +24443,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-<<<<<<< HEAD
-var _index = __webpack_require__(12);
-=======
 var _index = __webpack_require__(10);
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -24910,11 +24497,7 @@ function pattern() {
 exports.default = pattern();
 
 /***/ }),
-<<<<<<< HEAD
-/* 225 */
-=======
-/* 229 */
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24965,57 +24548,6 @@ function pattern() {
 
 exports.default = pattern();
 
-<<<<<<< HEAD
-/***/ }),
-/* 226 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(16);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function pattern() {
-  var basic = document.getElementById('pattern-modal-basic');
-
-  if (basic) {
-    (0, _preact.render)((0, _preact.h)(
-      _index2.default,
-      {
-        title: 'Test title',
-        closeAction: function closeAction() {
-          return console.log('Close action triggered');
-        },
-        open: true
-      },
-      (0, _preact.h)(
-        'p',
-        null,
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida at diam sagittis consequat. Sed dictum magna nunc, hendrerit dignissim sem auctor at. In augue arcu, fringilla a eros at, vulputate facilisis ipsum. Nam euismod tortor arcu, eu suscipit ligula interdum vitae. Suspendisse consequat, augue eget luctus scelerisque, massa nunc luctus nunc, eu efficitur nulla nisl at dolor. Mauris ullamcorper fringilla sapien, et lobortis felis mattis et. Mauris rhoncus neque in aliquet volutpat. Duis egestas ac enim eget condimentum. Phasellus fermentum nulla vel elit luctus, ac consectetur ipsum molestie. Nunc at porta felis. Donec et condimentum neque. Integer ac pretium quam.'
-      ),
-      (0, _preact.h)(
-        'a',
-        { href: '#', className: 'Button is-inline' },
-        'Example button'
-      )
-    ), basic);
-  }
-}
-
-exports.default = pattern();
-
-=======
->>>>>>> 5457024863a7f9fd77dd9e47070bd7c2041b5fb6
 /***/ })
 /******/ ]);
 //# sourceMappingURL=scripts.js.map

@@ -7,19 +7,25 @@
     http-equiv="Content-Security-Policy"
     content="
       default-src 
+        'self'
         https://vulekamali.gov.za
         https://data.vulekamali.gov.za
-        'self';
-      font-src https://fonts.gstatic.com/;
+        https://discussions.vulekamali.gov.za;
+      font-src 
+        https://fonts.gstatic.com/;
       style-src
         'self'
         https://fonts.googleapis.com;
       script-src 
         'self'
+        https://discussions.vulekamali.gov.za 
         https://www.google-analytics.com
         https://www.youtube.com
         https://i.ytimg.com;
-      frame-src https://www.youtube.com;
+      frame-src 
+        'self'
+        https://www.youtube.com
+        https://discussions.vulekamali.gov.za; 
       img-src 
         'self'
         https://vulekamali.gov.za
