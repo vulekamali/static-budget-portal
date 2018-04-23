@@ -80,8 +80,8 @@ class ExpenditureChartContainer extends Component {
 
 
   render() {
-    const { items, year, files, location, phaseTable } = this.props;
-    const { width, mobile, source, type, cpi } = this.state;
+    const { items, year, files, location, phaseTable, cpi } = this.props;
+    const { width, mobile, source, type } = this.state;
     const { downloadAction, canvasAction, widthAction, changeSource } = this.events;
 
     return (
