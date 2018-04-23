@@ -38,8 +38,7 @@ export default function YearSelectMarkup({ sticky, jsonData, updateNode, tooltip
           >
             <Tag
               href={data.active || data.direct === false ? null : data.url}
-              className="YearSelect-link"
-              onClick={event => navToYearPage(event, data.url)}
+              className="YearSelect-link u-cursorDefault"
             >
               {data.name}
             </Tag>
@@ -47,6 +46,8 @@ export default function YearSelectMarkup({ sticky, jsonData, updateNode, tooltip
         </li>
       );
     }
+
+    const clickEvent = data.active || data.direct === false ? null : event => navToYearPage(event, data.url);
 
     return (
       <li
@@ -56,7 +57,7 @@ export default function YearSelectMarkup({ sticky, jsonData, updateNode, tooltip
         <Tag
           href={data.active || data.direct === false ? null : data.url}
           className="YearSelect-link"
-          onClick={event => navToYearPage(event, data.url)}
+          onClick={clickEvent}
         >
           {data.name}
         </Tag>

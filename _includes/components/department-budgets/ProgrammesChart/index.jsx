@@ -33,11 +33,11 @@ export default function ProgrammesChart(props) {
   );
 
   const downloadButton = (
-    <button className="Button is-inline" onClick={downloadAction}>Download chart as image</button>
+    <button className="Button is-inline" onClick={downloadAction}>Download chart as image (~170 KB)</button>
   );
 
   const buildDownloadLinks = () => {
-    Object.keys(files).map((key) => {
+    return Object.keys(files).map((key) => {
       return (
         <div>
           <Download title={key} link={files[key]} icon />
@@ -66,7 +66,7 @@ export default function ProgrammesChart(props) {
             <p>
               The {estimateText} sets out the detailed spending plans of each government department for the coming year.
             </p>
-            { files ? buildDownloadLinks : null }
+            { files ? buildDownloadLinks() : null }
           </div>
           <div className="Section-card is-invisible">
             <div className="u-fontWeightBold u-marginBottom10">Share this chart:</div>
