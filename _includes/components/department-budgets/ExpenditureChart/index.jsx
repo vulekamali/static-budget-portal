@@ -125,7 +125,7 @@ export default function ExpenditureChart(props) {
             }
           </div>
           <div className="Section-card is-invisible u-textAlignCenter">
-            <button className="Button is-inline" onClick={downloadAction}>Download chart as image</button>
+            <button className="Button is-inline" onClick={downloadAction}>Download chart as image (~130 KB)</button>
           </div>
         </div>
       </div>

@@ -33,7 +33,7 @@ export default function ProgrammesChart(props) {
   );
 
   const downloadButton = (
-    <button className="Button is-inline" onClick={downloadAction}>Download chart as image</button>
+    <button className="Button is-inline" onClick={downloadAction}>Download chart as image (~170 KB)</button>
   );
 
   const buildDownloadLinks = () => {
