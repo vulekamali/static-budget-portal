@@ -659,6 +659,9 @@ li {
 .u-widthFull {
   width: 100% !important; }
 
+.u-cursorDefault {
+  cursor: default !important; }
+
 .BarChart-svg {
   overflow: hidden; }
 
@@ -1037,8 +1040,9 @@ li {
   height: 100%;
   cursor: default;
   z-index: 40; }
-  .Tooltip-boxWrap.is-down {
-    top: 100%; }
+  @media screen and (min-width: 800px) {
+    .Tooltip-boxWrap.is-down {
+      top: 100%; } }
   .Tooltip-boxWrap.is-open {
     display: block;
     display: -ms-flexbox;
@@ -1132,7 +1136,8 @@ li {
 .Tooltip-text {
   line-height: 1.64;
   display: block;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  color: #3f3f3f; }
 
 .Tooltip-linkWrap {
   line-height: 1.64;
@@ -3395,7 +3400,7 @@ li {
       width: 676px; } }
 
 .IntroSection-text {
-  max-height: 200px;
+  max-height: 300px;
   overflow: hidden; }
   .IntroSection-text.is-initialised {
     position: relative; }
@@ -3505,82 +3510,6 @@ li {
   .ExpenditureChart-chart {
     width: 60%;
     float: right; } }
-
-.CsoDirectory::after {
-  clear: both;
-  content: "";
-  display: block; }
-
-.CsoDirectory-itemWrap {
-  padding-top: 20px; }
-  @media screen and (min-width: 900px) {
-    .CsoDirectory-itemWrap {
-      width: 50%;
-      float: left;
-      padding: 20px 20px 0; }
-      .CsoDirectory-itemWrap:nth-of-type(odd) {
-        padding: 20px 20px 20px 0; }
-      .CsoDirectory-itemWrap:nth-of-type(even) {
-        padding: 20px 0 20px 20px; } }
-
-.CsoDirectory-item {
-  position: relative;
-  background-color: white;
-  display: block;
-  text-decoration: none;
-  color: #606060;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-  border-radius: 3px; }
-  @media screen and (min-width: 900px) {
-    .CsoDirectory-item {
-      max-height: 230px; } }
-
-.CsoDirectory-box {
-  list-style: none;
-  padding: 15px 25px; }
-  .CsoDirectory-box.is-dark {
-    font-size: 13px;
-    background-color: #e6e6e6; }
-
-.CsoDirectory-title {
-  display: block;
-  font-size: 16px;
-  margin: 0;
-  text-decoration: underline;
-  padding-bottom: 5px; }
-  @media screen and (min-width: 900px) {
-    .CsoDirectory-title {
-      max-height: 2.5em;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis; } }
-
-.CsoDirectory-contributor {
-  display: block;
-  font-size: 13px;
-  font-weight: bold; }
-  @media screen and (min-width: 900px) {
-    .CsoDirectory-contributor {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis; } }
-
-.CsoDirectory-img {
-  height: 50px;
-  max-width: 140px;
-  margin-top: 20px;
-  background-size: contain;
-  background-position: 0 center;
-  background-repeat: no-repeat; }
-
-.CsoDirectory-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%; }
-  .CsoDirectory-item:hover .CsoDirectory-cover {
-    background: rgba(0, 0, 0, 0.2); }
 
 .FileTypes {
   padding: 15px;

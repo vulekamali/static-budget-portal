@@ -20,10 +20,17 @@
 {% endif %}
 
 
+{% if jekyll.environment == "production" %}
+  {% assign production = 'data-production' %}
+{% else %}
+  {% assign production = '' %}
+{% endif %}
+
+
 <!doctype>
 <html>
   {% include utilities/html/head.html title=page_data.title description=page_data.description %}
-  <body>
+  <body {{ production }}>
     {{ content }}
     {% include utilities/html/scripts.html %}
   </body>
