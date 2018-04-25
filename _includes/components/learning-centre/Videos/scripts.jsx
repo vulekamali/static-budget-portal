@@ -2,7 +2,7 @@ import { h, render, Component } from 'preact';
 import Fuse from 'fuse.js';
 import decodeHtmlEntities from './../../../utilities/js/helpers/decodeHtmlEntities.js';
 import Videos from './index.jsx';
-
+import lunrSearchWrapper from './../../../utilities/js/helpers/lunrSearchWrapper.js';
 
 class VideosContainer extends Component {
   constructor(props) {
@@ -59,21 +59,9 @@ class VideosContainer extends Component {
     this.setState({ currentPhrase: phrase });
 
     if (phrase.length > 2) {
-      const options = {
-        shouldSort: true,
-        threshold: 0.3,
-        location: 0,
-        distance: 100,
-        maxPatternLength: 32,
-        minMatchCharLength: 1,
-        keys: [
-          'title',
-        ],
-      };
-
-      const items = new Fuse(this.props.items, options);
-      const result = items.search(phrase);
-      this.setState({ currentItems: result });
+      console.log(this.props.items);
+      const currentItems = lunrSearchWrapper(this.props.items, 'id', ['title', 'description'], phrase);
+      this.setState({ currentItems });
     } else {
       this.setState({ currentItems: this.props.items });
     }
@@ -94,7 +82,6 @@ class VideosContainer extends Component {
     );
   }
 }
-
 
 
 function scripts() {
