@@ -1,47 +1,24 @@
 import { h } from 'preact';
-import PseudoSelect from './../../../universal/PseudoSelect/index.jsx';
 import Button from './Button.jsx';
-import Modal from './../../../universal/Modal/index.jsx';
 
-
-const hardCoded = {
-  'as Link': 'copy',
-  'on Facebook': 'facebook',
-  'on Twitter': 'twitter',
-};
-
-
-export default function ShareMarkup({ selected, updateShare, modal, shareOpen, updateModal }) {
-  const closeModal = () => updateModal(false);
-
+export default function ShareMarkup({ selected, anchor, updateShare }) {
   return (
     <div className="Share-wrap">
-
-      <Modal
-        title="Share this link:"
-        open={modal}
-        closeAction={closeModal}
-      >
-        <a className="u-wordBreakBreakAll" href={window.location.href}>
-          {window.location.href}
-        </a>
-      </Modal>
-
       <div className="Share-action">
         <div className="Share-select">
-          <PseudoSelect
-            name="share"
-            items={hardCoded}
-            selected={selected}
-            open={shareOpen}
-            changeAction={value => updateShare(value)}
-          />
+          <select
+            className="Share-dropdown"
+            onChange={event => updateShare(event.target.value)}
+          >
+            <option value="link" selected={selected === 'link'}>as Link</option>
+            <option value="facebook" selected={selected === 'facebook'}>on Facebook</option>
+            <option value="twitter" selected={selected === 'twitter'}>on Twitter</option>
+          </select>
         </div>
         <div className="Share-button">
-          <Button {...{ selected, updateModal }} />
+          <Button {...{ selected, anchor }} />
         </div>
       </div>
-
     </div>
   );
 }

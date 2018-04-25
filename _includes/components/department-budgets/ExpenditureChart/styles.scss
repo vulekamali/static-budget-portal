@@ -32,3 +32,27 @@
     padding: 0;
   }
 }
+
+.ExpenditureChart-share {
+  max-width: 250px;
+}
+
+.ExpenditureChart {
+  @media screen and ($tablet-breakpoint) {
+    @include clearfix;
+  }
+}
+
+.ExpenditureChart-info {
+  @media screen and ($tablet-breakpoint) {
+    width: 40%;
+    float: left;
+  }
+}
+
+.ExpenditureChart-chart {
+  @media screen and ($tablet-breakpoint) {
+    width: 60%;
+    float: right;
+  }
+}

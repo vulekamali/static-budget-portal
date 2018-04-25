@@ -1,12 +1,9 @@
-.js-initModal {
-  display: none;
-}
 
-.Modal {
+.Modals {
   z-index: 10000;
 }
 
-.Modal-inner {
+.Modals-inner {
   position: fixed;
   height: 100%;
   width: 100%;
@@ -17,77 +14,83 @@
   z-index: 1000;
 }
 
-.Modal-overlay {
+.Modals-overlay {
   background: rgba(0, 0, 0, 0.4);
   height: 100%;
   width: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  transition: opacity 0.1s;
 
-  .Modal-inner.is-enter & {
+  @supports (transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1)) {
+    transition: opacity 0.1s;
+  }
+
+  .Modals-inner.is-enter & {
     opacity: 0;
   }
 
-  .Modal-inner.is-enter-active & {
+  .Modals-inner.is-enter-active & {
     opacity: 1;
   }
 
-  .Modal-inner.is-leave & {
+  .Modals-inner.is-leave & {
     opacity: 1;
   }
 
-  .Modal-inner.is-leave-active & {
+  .Modals-inner.is-leave-active & {
     opacity: 0;
   }
 }
 
-.Modal-boxWrap {
+.Modals-boxWrap {
   margin: 40px auto;
   position: relative;
   max-width: 570px;
   border-radius: 20px;
   background-color: #e6e6e6;
   padding: 10px;
-  transition: transform 0.3s;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 
-  .Modal-inner.is-enter & {
+  @supports (transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1)) {
+    transition: transform 0.3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .Modals-inner.is-enter & {
     transform: scale(0);
   }
 
-  .Modal-inner.is-enter-active & {
+  .Modals-inner.is-enter-active & {
     transform: scale(1);
   }
 
-  .Modal-inner.is-leave & {
+  .Modals-inner.is-leave & {
     transform: scale(1);
   }
 
-  .Modal-inner.is-leave-active & {
+  .Modals-inner.is-leave-active & {
     transform: scale(0);
   }
 }
 
-.Modal-box {
+.Modals-box {
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
 }
 
-.Modal-heading {
+.Modals-heading {
   font-size: 18px;
   font-weight: 900;
   padding: 15px 40px 15px 20px;
   border-bottom: 1px solid #e6e6e6;
 }
 
-.Modal-content {
+.Modals-content {
   padding: 15px 20px;
 }
 
-.Modal-close {
+.Modals-close {
   cursor: pointer;
   position: absolute;
   background: #e6e6e6;

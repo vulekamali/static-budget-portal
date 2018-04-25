@@ -58,21 +58,10 @@ layout: page-shell
       {% endif %}
 
       <div class="Section u-marginBottom20">
-          <h2 class="Section-title">Discuss this dataset with others</h2>
-          <div id='discourse-comments'></div>
-
-          <script type="text/javascript">
-            DiscourseEmbed = {
-              discourseUrl: 'https://discussions.vulekamali.gov.za/',
-              discourseEmbedUrl: 'https://vulekamali.gov.za{{ page_data.url_path }}'
-            };
-
-            (function() {
-              var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-              d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-            })();
-          </script>
+        <h2 class="Section-title">Discuss this dataset with others</h2>
+        <div data-enhance-component="Comments" data-url="https://vulekamali.gov.za{{ page_data.url_path }}">
+          <div id="discourse-comments"></div>
+        </div>
       </div>
 
     </main>
@@ -81,7 +70,7 @@ layout: page-shell
       <div class="Section
       u-marginBottom20">
         <h2 class="Section-title">Share this page:</h2>
-        {% include components/universal/Share/index.html %}
+        <div data-create-component="Share"></div>
       </div>
 
       <div class="Section is-bevel">
