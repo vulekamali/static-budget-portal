@@ -37,6 +37,5 @@ function innerGetProp(name, node, parse, valueParse) {
 }
 
 
-export default function getProp(name, node, parse, valueParse) {
-  return innerGetProp(name, node, parse, valueParse);
-}
+export default innerGetProp;
+
