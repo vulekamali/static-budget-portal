@@ -1,0 +1,107 @@
+contributed_datasets: null
+description: 'Northern Cape department: Office Of The Premier budget data for the
+  2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 154766000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 161361000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 187984000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 216471000.0039
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 200280000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 200703000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 212211000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 181465088
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 179902401
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 197172281
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 216471000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 189853953
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 180694046
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 181024595
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/northern-cape/departments/office-of-the-premier
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/northern-cape/departments/office-of-the-premier
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/northern-cape/departments/office-of-the-premier
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/northern-cape/departments/office-of-the-premier
+  id: 2018-19
+  is_selected: true
+government:
+  name: Northern Cape
+  slug: northern-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Office Of The Premier
+programmes:
+- name: Administration
+  total_budget: 74473000.0
+- name: Facilities For Members And Political Parties
+  total_budget: 50664000.0
+- name: Parliamentary Business
+  total_budget: 49086000.0
+- name: Direct Charges
+  total_budget: 26057000.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: office-of-the-premier
+sphere:
+  name: Provincial
+  slug: provincial
+title: Office Of The Premier budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 1 - Office Of The Premier:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/ae167f87-c39c-4bf5-84f9-5f83d28879bc/resource/f3b4e3d7-3198-480c-b2bb-722da612049e/download/nc-vote-01-office-of-the-premier.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/ae167f87-c39c-4bf5-84f9-5f83d28879bc/resource/30411478-b8f7-4b03-bc5f-61ac8d45d683/download/nc-office-of-the-premier.xlsm
+vote_number: 1
+vote_primary:
+  name: Office Of The Premier
+  slug: office-of-the-premier
+  url_path: /2018-19/provincial/northern-cape/departments/office-of-the-premier

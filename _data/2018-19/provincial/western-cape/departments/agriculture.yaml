@@ -1,0 +1,117 @@
+contributed_datasets: null
+description: 'Western Cape department: Agriculture budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 855436000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 750633000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 807792000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 877648000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 834342000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 878985000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 929103000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 1003009506
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 836885489
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 847275253
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 877648000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 790908362
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 791355167
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 792562565
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/western-cape/departments/agriculture
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/western-cape/departments/agriculture
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/western-cape/departments/agriculture
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/western-cape/departments/agriculture
+  id: 2018-19
+  is_selected: true
+government:
+  name: Western Cape
+  slug: western-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Agriculture
+programmes:
+- name: Administration
+  total_budget: 124492000.0
+- name: Direct Charges
+  total_budget: 0.0
+- name: Sustainable Resource Management
+  total_budget: 91134000.0
+- name: Farmer Support And Development
+  total_budget: 278508000.0
+- name: Veterinary Services
+  total_budget: 96853000.0
+- name: Research And Technology Development Services
+  total_budget: 126284000.0
+- name: Agricultural Economics Services
+  total_budget: 27923000.0
+- name: Structured Agricultural Education And Training
+  total_budget: 65018000.0
+- name: Rural Development
+  total_budget: 24130000.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: agriculture
+sphere:
+  name: Provincial
+  slug: provincial
+title: Agriculture budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 11 - Agriculture:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/294889bb-047f-4f77-89e2-ccd128cbfbe8/resource/09c0f26e-d574-490e-b884-eff1b9febc1e/download/wc-vote-11-agriculture.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/294889bb-047f-4f77-89e2-ccd128cbfbe8/resource/fc572bab-f3f9-4c12-8243-89c8b372837b/download/wc-agriculture.xlsm
+vote_number: 11
+vote_primary:
+  name: Agriculture
+  slug: agriculture
+  url_path: /2018-19/provincial/western-cape/departments/agriculture

@@ -1,0 +1,111 @@
+contributed_datasets: null
+description: 'Limpopo department: Transport budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1704750000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1727714000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1871614000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1990644544.1
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2106228296.16
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2199372000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2326846000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 1998840890
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1926239289
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1963094741
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1990644544
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1996583623
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1980107053
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1984894069
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/limpopo/departments/transport
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/limpopo/departments/transport
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/limpopo/departments/transport
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/limpopo/departments/transport
+  id: 2018-19
+  is_selected: true
+government:
+  name: Limpopo
+  slug: limpopo
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Transport
+programmes:
+- name: Administration
+  total_budget: 620990018.96
+- name: Transport Infrastructure
+  total_budget: 0.0
+- name: Transport Operations
+  total_budget: 868936438.0
+- name: Transport Regulations
+  total_budget: 616301839.2
+- name: Community Based Programmes
+  total_budget: 0.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: transport
+sphere:
+  name: Provincial
+  slug: provincial
+title: Transport budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 8 - Transport:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/1cba818d-cd4b-4fd4-b727-bf0e41a74a0d/resource/02e33672-4a7d-479a-a544-64c7ae51ae08/download/lim-vote-08-transport.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/1cba818d-cd4b-4fd4-b727-bf0e41a74a0d/resource/22acab82-be67-4b58-b2d6-90fd712bfa63/download/lim-transport.xlsm
+vote_number: 8
+vote_primary:
+  name: Transport
+  slug: transport
+  url_path: /2018-19/provincial/limpopo/departments/transport

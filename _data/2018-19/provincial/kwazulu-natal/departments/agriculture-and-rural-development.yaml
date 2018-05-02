@@ -1,0 +1,55 @@
+contributed_datasets: null
+description: 'KwaZulu-Natal department: Agriculture And Rural Development budget data
+  for the 2018-19 financial year from National Treasury in partnership with IMALI
+  YETHU.'
+expenditure_over_time: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/kwazulu-natal/departments/agriculture-and-rural-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/kwazulu-natal/departments/agriculture-and-rural-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/kwazulu-natal/departments/agriculture-and-rural-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/kwazulu-natal/departments/agriculture-and-rural-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: KwaZulu-Natal
+  slug: kwazulu-natal
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Agriculture And Rural Development
+programmes: []
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: agriculture-and-rural-development
+sphere:
+  name: Provincial
+  slug: provincial
+title: Agriculture And Rural Development budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 3 - Agriculture And Rural Development:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/54830bc7-9ed0-4bb0-9f37-1b9f0d06ff42/resource/085bc845-fd47-49c0-9232-c57328e679ee/download/kzn-vote-03-agriculture-and-rural-development.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/54830bc7-9ed0-4bb0-9f37-1b9f0d06ff42/resource/7b1f556f-55f6-460b-8bf4-2ade8f38460b/download/kzn-agriculture-and-rural-dev.xlsm
+vote_number: 3
+vote_primary:
+  name: Agriculture And Rural Development
+  slug: agriculture-and-rural-development
+  url_path: /2018-19/provincial/kwazulu-natal/departments/agriculture-and-rural-development

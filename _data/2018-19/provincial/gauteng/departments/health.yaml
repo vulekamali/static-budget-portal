@@ -1,0 +1,117 @@
+contributed_datasets: null
+description: 'Gauteng department: Health budget data for the 2018-19 financial year
+  from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 31005212000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 34864555000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 37440067000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 41942834105.65
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 46429326000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 49031984000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 52415712000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 36354002378
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 38870713362
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 39270062436
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 41942834105
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 44012338116
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 44143772568
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 44712729553
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/gauteng/departments/health
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/gauteng/departments/health
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/gauteng/departments/health
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/gauteng/departments/health
+  id: 2018-19
+  is_selected: true
+government:
+  name: Gauteng
+  slug: gauteng
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Health
+programmes:
+- name: Administration
+  total_budget: 893938000.0
+- name: Direct Charges
+  total_budget: 0.0
+- name: District Health Services
+  total_budget: 15305140000.0
+- name: Emergency Medical Services
+  total_budget: 1450885000.0
+- name: Provincial Hospital Services
+  total_budget: 8873068000.0
+- name: Central Hospital Services
+  total_budget: 16675956000.0
+- name: Health Sciences And Training
+  total_budget: 1043393000.0
+- name: Health Care Support Services
+  total_budget: 310255000.0
+- name: Health Facilities Management
+  total_budget: 1876691000.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: health
+sphere:
+  name: Provincial
+  slug: provincial
+title: Health budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 4 - Health:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/faff02b6-6075-4a18-97ff-e13d09f2dfda/resource/044ada6a-e67e-4854-b84c-a68859b28c64/download/gt-vote-04-health.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/faff02b6-6075-4a18-97ff-e13d09f2dfda/resource/fb21d98c-1dc6-4a8e-bb43-9768f6b3c7d7/download/gt-health.xlsm
+vote_number: 4
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2018-19/provincial/gauteng/departments/health

@@ -1,0 +1,107 @@
+contributed_datasets: null
+description: 'Gauteng department: Office Of The Premier budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 356976000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 417689000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 470326000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 641353666.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 702694000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 695548000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 735712000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 418558865
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 465684113
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 493314592
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 641353666
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 666113609
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 626205799
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 627592193
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/gauteng/departments/office-of-the-premier
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/gauteng/departments/office-of-the-premier
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/gauteng/departments/office-of-the-premier
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/gauteng/departments/office-of-the-premier
+  id: 2018-19
+  is_selected: true
+government:
+  name: Gauteng
+  slug: gauteng
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Office Of The Premier
+programmes:
+- name: Administration
+  total_budget: 161526000.0
+- name: Institutional Development
+  total_budget: 245138000.0
+- name: Policy & Governance
+  total_budget: 296030000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: office-of-the-premier
+sphere:
+  name: Provincial
+  slug: provincial
+title: Office Of The Premier budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 1 - Office Of The Premier:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/0a78bf31-af17-488c-81d8-66129db88abe/resource/7a498c1a-12c6-4509-806f-56387bcc9d27/download/gt-vote-01-office-of-the-premier.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/0a78bf31-af17-488c-81d8-66129db88abe/resource/0ba4f80a-6347-442a-90b3-9d21b9bd8429/download/gt-premier.xlsm
+vote_number: 1
+vote_primary:
+  name: Office Of The Premier
+  slug: office-of-the-premier
+  url_path: /2018-19/provincial/gauteng/departments/office-of-the-premier

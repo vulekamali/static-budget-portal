@@ -1,0 +1,54 @@
+contributed_datasets: null
+description: 'KwaZulu-Natal department: Transport budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/kwazulu-natal/departments/transport
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/kwazulu-natal/departments/transport
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/kwazulu-natal/departments/transport
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/kwazulu-natal/departments/transport
+  id: 2018-19
+  is_selected: true
+government:
+  name: KwaZulu-Natal
+  slug: kwazulu-natal
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Transport
+programmes: []
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: transport
+sphere:
+  name: Provincial
+  slug: provincial
+title: Transport budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 12 - Transport:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/927f149a-2ef9-4db4-bd5b-57832a9daa17/resource/c69e4b4b-cf32-4ed1-b2a2-75c0e9ff73d3/download/kzn-vote-12-transport.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/927f149a-2ef9-4db4-bd5b-57832a9daa17/resource/3efa9bee-7f62-480f-ae7a-1c42062fad63/download/kzn-transport.xlsm
+vote_number: 12
+vote_primary:
+  name: Transport
+  slug: transport
+  url_path: /2018-19/provincial/kwazulu-natal/departments/transport

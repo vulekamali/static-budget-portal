@@ -1,0 +1,118 @@
+contributed_datasets: null
+description: 'North West department: Education And Sports Development budget data
+  for the 2018-19 financial year from National Treasury in partnership with IMALI
+  YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 12077940000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 13109934000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 14086368000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 15274429000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 16183868000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 17148058000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 18488567000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 14161537082
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 14616348515
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 14774881435
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 15274429000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 15341378646
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 15438493623
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 15771497983
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/north-west/departments/education-and-sports-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/north-west/departments/education-and-sports-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/north-west/departments/education-and-sports-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/north-west/departments/education-and-sports-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: North West
+  slug: north-west
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Education And Sports Development
+programmes:
+- name: Administration
+  total_budget: 907197000.0
+- name: Direct Charges
+  total_budget: 0.0
+- name: Public Ordinary School Education
+  total_budget: 12106920000.0
+- name: Independent School Subsidies
+  total_budget: 31331000.0
+- name: Public Special School Education
+  total_budget: 623809000.0
+- name: Early Childhood Development
+  total_budget: 625436000.0
+- name: Infrastructure Development
+  total_budget: 1004996000.0
+- name: Examination And Education Related Services
+  total_budget: 741716000.0
+- name: Sport And Recreation
+  total_budget: 142463000.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: education-and-sports-development
+sphere:
+  name: Provincial
+  slug: provincial
+title: Education And Sports Development budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 8 - Education And Sports Development:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/f6143a36-e8ee-4bcd-849e-7545584af6de/resource/7b9aab2f-19e1-43a7-8682-b452609aca16/download/nw-vote-08-education-and-sports-development.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/f6143a36-e8ee-4bcd-849e-7545584af6de/resource/b9a3dbcd-133b-45a3-a168-7fdee61fbcdb/download/nw-education-and-sport-development.xlsm
+vote_number: 8
+vote_primary:
+  name: Education And Sports Development
+  slug: education-and-sports-development
+  url_path: /2018-19/provincial/north-west/departments/education-and-sports-development

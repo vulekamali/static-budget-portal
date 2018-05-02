@@ -1,0 +1,121 @@
+contributed_datasets: null
+description: 'Mpumalanga department: Agriculture, Rural Development, Land And Environmental
+  Affairs budget data for the 2018-19 financial year from National Treasury in partnership
+  with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1004444000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1005346000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 968719000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1143801000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1180437000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1223867000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1293097000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 1177723266
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1120866627
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1016068043
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1143801000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1118986572
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1101854383
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1103064219
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
+  id: 2018-19
+  is_selected: true
+government:
+  name: Mpumalanga
+  slug: mpumalanga
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Agriculture, Rural Development, Land And Environmental Affairs
+programmes:
+- name: Administration
+  total_budget: 196497000.0
+- name: Direct Charges
+  total_budget: 0.0
+- name: Sustainable Resource Management
+  total_budget: 81890000.0
+- name: Farmer Support And Development
+  total_budget: 520079000.0
+- name: Veterinary Services
+  total_budget: 146008000.0
+- name: Research And Technology Development Services
+  total_budget: 62778000.0
+- name: Agricultural Economics Services
+  total_budget: 12244000.0
+- name: Structured Agricultural Education And Training
+  total_budget: 21539000.0
+- name: Rural Development Coordination
+  total_budget: 23893000.0
+- name: Environmental Affairs
+  total_budget: 115509000.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: agriculture-rural-development-land-and-environmental-affairs
+sphere:
+  name: Provincial
+  slug: provincial
+title: Agriculture, Rural Development, Land And Environmental Affairs budget 2018-19  -
+  vulekamali
+treasury_datasets:
+  EPRE for Vote 5 - Agriculture, Rural Development, Land And Environmental Affairs:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/ed390526-1475-4125-8511-6c2dfa3ba343/resource/50703206-8238-4e7e-8cc4-99fbcf999250/download/mpu-vote-05-agric.-rural-dev.-land-and-env.-affairs.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/ed390526-1475-4125-8511-6c2dfa3ba343/resource/9993bb14-0de8-47b5-b4ca-44ae28314a42/download/mpu-agric.-rural-dev.-land-and-env.-affairs.xlsm
+vote_number: 5
+vote_primary:
+  name: Agriculture, Rural Development, Land And Environmental Affairs
+  slug: agriculture-rural-development-land-and-environmental-affairs
+  url_path: /2018-19/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs

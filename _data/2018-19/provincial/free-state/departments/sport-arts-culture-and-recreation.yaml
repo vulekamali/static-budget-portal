@@ -1,0 +1,102 @@
+contributed_datasets: null
+description: 'Free State department: Sport, Arts, Culture And Recreation budget data
+  for the 2018-19 financial year from National Treasury in partnership with IMALI
+  YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 661967000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 697897000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 698026000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 687295000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 727010030.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 740399000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 751818000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 776164662
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 778089788
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 732144111
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 687295000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 689163811
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 666585408
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 641331265
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/free-state/departments/sport-arts-culture-and-recreation
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/free-state/departments/sport-arts-culture-and-recreation
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/free-state/departments/sport-arts-culture-and-recreation
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/free-state/departments/sport-arts-culture-and-recreation
+  id: 2018-19
+  is_selected: true
+government:
+  name: Free State
+  slug: free-state
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Sport, Arts, Culture And Recreation
+programmes:
+- name: Administration
+  total_budget: 94986000.0
+- name: Cultural Affairs
+  total_budget: 166661000.0
+- name: Library And Archives Services
+  total_budget: 217717030.0
+- name: Sport And Recreation
+  total_budget: 247646000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: sport-arts-culture-and-recreation
+sphere:
+  name: Provincial
+  slug: provincial
+title: Sport, Arts, Culture And Recreation budget 2018-19  - vulekamali
+treasury_datasets: {}
+vote_number: 12
+vote_primary:
+  name: Sport, Arts, Culture And Recreation
+  slug: sport-arts-culture-and-recreation
+  url_path: /2018-19/provincial/free-state/departments/sport-arts-culture-and-recreation

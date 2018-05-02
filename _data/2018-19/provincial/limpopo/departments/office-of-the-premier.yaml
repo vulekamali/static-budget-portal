@@ -1,0 +1,107 @@
+contributed_datasets: null
+description: 'Limpopo department: Office Of The Premier budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 340862000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 340674000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 371031000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 405060000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 420680000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 437276000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 461326000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 399664996
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 379819601
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 389166251
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 405060000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 398780512
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 393682056
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 393529800
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/limpopo/departments/office-of-the-premier
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/limpopo/departments/office-of-the-premier
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/limpopo/departments/office-of-the-premier
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/limpopo/departments/office-of-the-premier
+  id: 2018-19
+  is_selected: true
+government:
+  name: Limpopo
+  slug: limpopo
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Office Of The Premier
+programmes:
+- name: Administration
+  total_budget: 164530000.0
+- name: Institutional Support
+  total_budget: 156319000.0
+- name: Policy & Governance
+  total_budget: 99831000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: office-of-the-premier
+sphere:
+  name: Provincial
+  slug: provincial
+title: Office Of The Premier budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 1 - Office Of The Premier:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/0f14491c-b80d-4fe5-97b8-1aa21445b9cd/resource/76eea678-a6a4-4b2e-94a5-d4e35415a12d/download/lim-vote-01-office-of-the-premier.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/0f14491c-b80d-4fe5-97b8-1aa21445b9cd/resource/3a55c9cd-cc3f-4e9c-a92b-21defebc9cd8/download/lim-office-of-the-premier.xlsm
+vote_number: 1
+vote_primary:
+  name: Office Of The Premier
+  slug: office-of-the-premier
+  url_path: /2018-19/provincial/limpopo/departments/office-of-the-premier

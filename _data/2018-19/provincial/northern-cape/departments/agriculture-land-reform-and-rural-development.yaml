@@ -1,0 +1,116 @@
+contributed_datasets: null
+description: 'Northern Cape department: Agriculture, Land Reform And Rural Development
+  budget data for the 2018-19 financial year from National Treasury in partnership
+  with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 769374320.82
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 554050000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 540109000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 624113153.749
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 648908233.2
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 544217000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 576685000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 902101101
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 617713856
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 566508445
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 624113153
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 615127787
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 489961643
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 491935708
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/northern-cape/departments/agriculture-land-reform-and-rural-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/northern-cape/departments/agriculture-land-reform-and-rural-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/northern-cape/departments/agriculture-land-reform-and-rural-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/northern-cape/departments/agriculture-land-reform-and-rural-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: Northern Cape
+  slug: northern-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Agriculture, Land Reform And Rural Development
+programmes:
+- name: Administration
+  total_budget: 120761286.0
+- name: Sustainable Resource Management
+  total_budget: 33828376.0
+- name: Farmer Support And Development
+  total_budget: 360601112.0
+- name: Veterinary Services
+  total_budget: 52264190.0
+- name: Research And Technology Development Services
+  total_budget: 54311725.2
+- name: Agricultural Economics Services
+  total_budget: 12141040.0
+- name: Rural Development
+  total_budget: 15000504.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: agriculture-land-reform-and-rural-development
+sphere:
+  name: Provincial
+  slug: provincial
+title: Agriculture, Land Reform And Rural Development budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 12 - Agriculture, Land Reform And Rural Development:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/0e9ea6f3-50ae-45c7-9523-9398c7c5de05/resource/c27dad6b-e978-42e1-af39-3fea0caaf48e/download/nc-vote-12-agric.-land-reform-and-rural-dev.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/0e9ea6f3-50ae-45c7-9523-9398c7c5de05/resource/2deb8fe4-090c-4735-b614-8f7fc1783819/download/nc-agric.-land-reform-and-rural-dev..xlsm
+vote_number: 12
+vote_primary:
+  name: Agriculture, Land Reform And Rural Development
+  slug: agriculture-land-reform-and-rural-development
+  url_path: /2018-19/provincial/northern-cape/departments/agriculture-land-reform-and-rural-development

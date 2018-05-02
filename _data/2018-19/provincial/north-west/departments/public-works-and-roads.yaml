@@ -1,0 +1,109 @@
+contributed_datasets: null
+description: 'North West department: Public Works And Roads budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 2934376000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2699137000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2594831000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 3032345000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 3020961000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 3125287000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 3326208000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 3440592893
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 3009284950
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2721661138
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 3032345000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2863697762
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2813713565
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2837390413
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/north-west/departments/public-works-and-roads
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/north-west/departments/public-works-and-roads
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/north-west/departments/public-works-and-roads
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/north-west/departments/public-works-and-roads
+  id: 2018-19
+  is_selected: true
+government:
+  name: North West
+  slug: north-west
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Public Works And Roads
+programmes:
+- name: Administration
+  total_budget: 231403000.0
+- name: Public Works Infrastructure
+  total_budget: 1006828000.0
+- name: Transport Infrastructure
+  total_budget: 1706692000.0
+- name: Community Based Programme
+  total_budget: 76038000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: public-works-and-roads
+sphere:
+  name: Provincial
+  slug: provincial
+title: Public Works And Roads budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 11 - Public Works And Roads:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/558b0896-0b5a-4732-94f2-c2b6656de0c1/resource/dc5cf95e-8b01-4d8f-b25d-cbc8b7fa1052/download/nw-vote-11-public-works-and-roads.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/558b0896-0b5a-4732-94f2-c2b6656de0c1/resource/17e62889-a69d-49cd-a17a-c144c090a18b/download/nw-public-works-and-roads.xlsm
+vote_number: 11
+vote_primary:
+  name: Public Works And Roads
+  slug: public-works-and-roads
+  url_path: /2018-19/provincial/north-west/departments/public-works-and-roads

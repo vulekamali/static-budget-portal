@@ -1,0 +1,54 @@
+contributed_datasets: null
+description: 'KwaZulu-Natal department: Office Of The Premier budget data for the
+  2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/kwazulu-natal/departments/office-of-the-premier
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/kwazulu-natal/departments/office-of-the-premier
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/kwazulu-natal/departments/office-of-the-premier
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/kwazulu-natal/departments/office-of-the-premier
+  id: 2018-19
+  is_selected: true
+government:
+  name: KwaZulu-Natal
+  slug: kwazulu-natal
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Office Of The Premier
+programmes: []
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: office-of-the-premier
+sphere:
+  name: Provincial
+  slug: provincial
+title: Office Of The Premier budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 1 - Office Of The Premier:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/f2f3efea-fe9d-4e77-a225-5c50cbc0d114/resource/0d44079b-c398-4f0d-bd9a-13649a9c4ff0/download/kzn-vote-01-office-of-the-premier.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/f2f3efea-fe9d-4e77-a225-5c50cbc0d114/resource/ebccd9cc-ef78-4a36-bc01-604c63ec5962/download/kzn-office-of-the-premier.xlsm
+vote_number: 1
+vote_primary:
+  name: Office Of The Premier
+  slug: office-of-the-premier
+  url_path: /2018-19/provincial/kwazulu-natal/departments/office-of-the-premier

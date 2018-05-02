@@ -1,0 +1,112 @@
+contributed_datasets: null
+description: 'North West department: Local Government And Human Settlements budget
+  data for the 2018-19 financial year from National Treasury in partnership with IMALI
+  YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 2189675000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2612189000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2440933000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2882772000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2476863000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2570660000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2719497000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 2567421572
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2912346073
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2560240912
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2882772000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2347924064
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2314379740
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2319841307
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/north-west/departments/local-government-and-human-settlements
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/north-west/departments/local-government-and-human-settlements
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/north-west/departments/local-government-and-human-settlements
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/north-west/departments/local-government-and-human-settlements
+  id: 2018-19
+  is_selected: true
+government:
+  name: North West
+  slug: north-west
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Local Government And Human Settlements
+programmes:
+- name: Administration
+  total_budget: 243282000.0
+- name: Local Governance
+  total_budget: 44120000.0
+- name: Development And Planning
+  total_budget: 120657000.0
+- name: Housing Needs,Planning And Research
+  total_budget: 34477000.0
+- name: Housing Development
+  total_budget: 2034327000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: local-government-and-human-settlements
+sphere:
+  name: Provincial
+  slug: provincial
+title: Local Government And Human Settlements budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 9 - Local Government And Human Settlements:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/479a81bf-a59d-4996-9fc4-d9cc1d199148/resource/ab689897-0ffb-46c8-aeae-00c607f922b0/download/nw-vote-09-local-government-and-human-settlements.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/479a81bf-a59d-4996-9fc4-d9cc1d199148/resource/28a46b70-28ee-43b0-b061-7d0d8ae9a6f4/download/nw-local-government-and-human-settlements.xlsm
+vote_number: 9
+vote_primary:
+  name: Local Government And Human Settlements
+  slug: local-government-and-human-settlements
+  url_path: /2018-19/provincial/north-west/departments/local-government-and-human-settlements

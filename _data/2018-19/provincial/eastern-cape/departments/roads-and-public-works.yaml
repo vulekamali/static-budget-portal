@@ -1,0 +1,107 @@
+contributed_datasets: null
+description: 'Eastern Cape department: Roads And Public Works budget data for the
+  2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1756002000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1828897000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1981967000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2151585400.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2344172000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2384734000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2525731865.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 2058934507
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2039048857
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2078841574
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2151585400
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2222140607
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2146989510
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2154551784
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/eastern-cape/departments/roads-and-public-works
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/eastern-cape/departments/roads-and-public-works
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/eastern-cape/departments/roads-and-public-works
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/eastern-cape/departments/roads-and-public-works
+  id: 2018-19
+  is_selected: true
+government:
+  name: Eastern Cape
+  slug: eastern-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Roads And Public Works
+programmes:
+- name: Administration
+  total_budget: 580773000.0
+- name: Public Works Infrastructure
+  total_budget: 1667888000.0
+- name: Expanded Public Works Programme
+  total_budget: 95511000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: roads-and-public-works
+sphere:
+  name: Provincial
+  slug: provincial
+title: Roads And Public Works budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 5 - Roads And Public Works:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/74a86b7d-96a8-4d75-94e0-6348ed59b6ad/resource/893bb727-3802-45c7-a3ee-99aba2b5289d/download/ec-vote-05-roads-and-public-works.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/74a86b7d-96a8-4d75-94e0-6348ed59b6ad/resource/8fc2d2c9-c463-4466-b199-84e94797dd0a/download/ec-roads-and-public-works.xlsm
+vote_number: 5
+vote_primary:
+  name: Roads And Public Works
+  slug: roads-and-public-works
+  url_path: /2018-19/provincial/eastern-cape/departments/roads-and-public-works

@@ -1,0 +1,54 @@
+contributed_datasets: null
+description: 'KwaZulu-Natal department: Public Works budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/kwazulu-natal/departments/public-works
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/kwazulu-natal/departments/public-works
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/kwazulu-natal/departments/public-works
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/kwazulu-natal/departments/public-works
+  id: 2018-19
+  is_selected: true
+government:
+  name: KwaZulu-Natal
+  slug: kwazulu-natal
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Public Works
+programmes: []
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: public-works
+sphere:
+  name: Provincial
+  slug: provincial
+title: Public Works budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 14 - Public Works:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/3cf4b815-2c2c-4730-ab81-efee57ce9ae1/resource/110652cd-a3f7-4851-b787-0125a6c8d044/download/kzn-vote-14-public-works.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/3cf4b815-2c2c-4730-ab81-efee57ce9ae1/resource/e7f8796d-584b-4aba-9b48-ef6258c66450/download/kzn-public-works.xlsm
+vote_number: 14
+vote_primary:
+  name: Public Works
+  slug: public-works
+  url_path: /2018-19/provincial/kwazulu-natal/departments/public-works

@@ -1,0 +1,54 @@
+contributed_datasets: null
+description: 'KwaZulu-Natal department: Education budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/kwazulu-natal/departments/education
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/kwazulu-natal/departments/education
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/kwazulu-natal/departments/education
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/kwazulu-natal/departments/education
+  id: 2018-19
+  is_selected: true
+government:
+  name: KwaZulu-Natal
+  slug: kwazulu-natal
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Education
+programmes: []
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: education
+sphere:
+  name: Provincial
+  slug: provincial
+title: Education budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 5 - Education:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/ce8d1719-ae40-4446-99ee-79966afd7f2f/resource/0e0c3ab3-72ca-4b5b-860e-2a52c2e4f5d9/download/kzn-vote-05-education.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/ce8d1719-ae40-4446-99ee-79966afd7f2f/resource/b1232eb7-d204-4225-84f7-11bd34e09f10/download/kzn-education.xlsm
+vote_number: 5
+vote_primary:
+  name: Education
+  slug: education
+  url_path: /2018-19/provincial/kwazulu-natal/departments/education

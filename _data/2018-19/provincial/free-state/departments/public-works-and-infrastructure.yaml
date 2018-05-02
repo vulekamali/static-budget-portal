@@ -1,0 +1,107 @@
+contributed_datasets: null
+description: 'Free State department: Public Works And Infrastructure budget data for
+  the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1382173000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1503355000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1486262000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1532534000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1635268000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1769096000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1859997000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 1620615286
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1676100018
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1558907507
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1532534000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1550140273
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1592727136
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1586652926
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/free-state/departments/public-works-and-infrastructure
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/free-state/departments/public-works-and-infrastructure
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/free-state/departments/public-works-and-infrastructure
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/free-state/departments/public-works-and-infrastructure
+  id: 2018-19
+  is_selected: true
+government:
+  name: Free State
+  slug: free-state
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Public Works And Infrastructure
+programmes:
+- name: Administration
+  total_budget: 138436000.0
+- name: Public Works Infrastructure
+  total_budget: 1324645000.0
+- name: Expanded Public Works Programme
+  total_budget: 172187000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: public-works-and-infrastructure
+sphere:
+  name: Provincial
+  slug: provincial
+title: Public Works And Infrastructure budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 9 - Public Works And Infrastructure:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/47a8d466-e558-4786-abb7-8c772807d6ed/resource/68becb00-fc37-4404-b74f-bdc0ffbef2c3/download/fs-public-works-and-infrast.xlsm
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/47a8d466-e558-4786-abb7-8c772807d6ed/resource/7acc087c-e795-4279-8e2d-854e631605f0/download/fs-vote-09-public-works-and-infrastructure.pdf
+vote_number: 9
+vote_primary:
+  name: Public Works And Infrastructure
+  slug: public-works-and-infrastructure
+  url_path: /2018-19/provincial/free-state/departments/public-works-and-infrastructure

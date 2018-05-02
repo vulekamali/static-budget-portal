@@ -1,0 +1,110 @@
+contributed_datasets: null
+description: 'Mpumalanga department: Community Safety, Security And Liaison budget
+  data for the 2018-19 financial year from National Treasury in partnership with IMALI
+  YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1003379000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1245917000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1175237000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1178722000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1222822000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1278410000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1347192000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 1176474540
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1389080760
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1232680229
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1178722000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1159165121
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1150959754
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1149209449
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/mpumalanga/departments/community-safety-security-and-liaison
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/mpumalanga/departments/community-safety-security-and-liaison
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/mpumalanga/departments/community-safety-security-and-liaison
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/mpumalanga/departments/community-safety-security-and-liaison
+  id: 2018-19
+  is_selected: true
+government:
+  name: Mpumalanga
+  slug: mpumalanga
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Community Safety, Security And Liaison
+programmes:
+- name: Administration
+  total_budget: 134611000.0
+- name: Civilian Oversight
+  total_budget: 60222000.0
+- name: Transport Regulation
+  total_budget: 574660000.0
+- name: Security  Management
+  total_budget: 453329000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: community-safety-security-and-liaison
+sphere:
+  name: Provincial
+  slug: provincial
+title: Community Safety, Security And Liaison budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 9 - Community Safety, Security And Liaison:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/72d383f8-4e00-493c-aeb8-152797e13b0a/resource/b3d8000b-a65b-48c2-bced-17bf1cbc9e38/download/mpu-vote-09-community-safety-security-and-liaison.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/72d383f8-4e00-493c-aeb8-152797e13b0a/resource/c54c688b-9dd8-44a8-be96-17a85f9d193e/download/mpu-cogta.xlsm
+vote_number: 9
+vote_primary:
+  name: Community Safety, Security And Liaison
+  slug: community-safety-security-and-liaison
+  url_path: /2018-19/provincial/mpumalanga/departments/community-safety-security-and-liaison

@@ -1,0 +1,117 @@
+contributed_datasets: null
+description: 'Northern Cape department: Health budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 3713980000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 4168265000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 4369138000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 4630292000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 4735195000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 5132248000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 5504576000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 4354688423
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 4647225069
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 4582692708
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 4630292000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 4488693275
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 4620591907
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 4695626723
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/northern-cape/departments/health
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/northern-cape/departments/health
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/northern-cape/departments/health
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/northern-cape/departments/health
+  id: 2018-19
+  is_selected: true
+government:
+  name: Northern Cape
+  slug: northern-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Health
+programmes:
+- name: Administration
+  total_budget: 207639000.0
+- name: Direct Charges
+  total_budget: 0.0
+- name: District Health Services
+  total_budget: 2169978500.0
+- name: Emergency Medical Services
+  total_budget: 323756500.0
+- name: Provincial Hospital Services
+  total_budget: 369126000.0
+- name: Central Hospital Services
+  total_budget: 1029598000.0
+- name: Health Sciences And Training
+  total_budget: 137809000.0
+- name: Health Care Support Services
+  total_budget: 119223000.0
+- name: Health Facilities Management
+  total_budget: 378065000.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: health
+sphere:
+  name: Provincial
+  slug: provincial
+title: Health budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 10 - Health:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/ef65c852-9ed3-4e22-8dfa-80f71e2d585b/resource/c538595a-8f6d-4789-acda-3e93e8631cbd/download/nc-vote-10-health.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/ef65c852-9ed3-4e22-8dfa-80f71e2d585b/resource/a8c54b67-33a2-47cc-b5f5-89a131a9f801/download/nc-health.xlsm
+vote_number: 10
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2018-19/provincial/northern-cape/departments/health

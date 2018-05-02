@@ -1,0 +1,54 @@
+contributed_datasets: null
+description: 'KwaZulu-Natal department: Provincial Legislature budget data for the
+  2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/kwazulu-natal/departments/provincial-legislature
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/kwazulu-natal/departments/provincial-legislature
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/kwazulu-natal/departments/provincial-legislature
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/kwazulu-natal/departments/provincial-legislature
+  id: 2018-19
+  is_selected: true
+government:
+  name: KwaZulu-Natal
+  slug: kwazulu-natal
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Provincial Legislature
+programmes: []
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: provincial-legislature
+sphere:
+  name: Provincial
+  slug: provincial
+title: Provincial Legislature budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 2 - Provincial Legislature:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/3022eb7f-682a-4d76-8848-45ca46eb58ac/resource/6609cf74-dc5a-4b1d-a79d-174992eac07a/download/kzn-vote-02-legislature.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/3022eb7f-682a-4d76-8848-45ca46eb58ac/resource/dd1cb6d6-97a4-4bac-aa72-89876ea6275e/download/kzn-legislature.xlsm
+vote_number: 2
+vote_primary:
+  name: Provincial Legislature
+  slug: provincial-legislature
+  url_path: /2018-19/provincial/kwazulu-natal/departments/provincial-legislature

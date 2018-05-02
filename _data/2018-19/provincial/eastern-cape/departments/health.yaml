@@ -1,0 +1,117 @@
+contributed_datasets: null
+description: 'Eastern Cape department: Health budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 17549853801.23
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 18943943000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 20506179000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 22336581000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 23699560300.5
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 25223210000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 27043459000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 20577425073
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 21120722128
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 21508479930
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 22336581000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 22465823887
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 22708598650
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 23069168047
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/eastern-cape/departments/health
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/eastern-cape/departments/health
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/eastern-cape/departments/health
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/eastern-cape/departments/health
+  id: 2018-19
+  is_selected: true
+government:
+  name: Eastern Cape
+  slug: eastern-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Health
+programmes:
+- name: Administration
+  total_budget: 695199000.0
+- name: Direct Charges
+  total_budget: 0.0
+- name: District Health Services
+  total_budget: 12031947000.0
+- name: Emergency Medical Services
+  total_budget: 1284612392.3
+- name: Provincial Hospital Services
+  total_budget: 3857134972.9
+- name: Central Hospital Services
+  total_budget: 3447737000.0
+- name: Health Sciences And Training
+  total_budget: 885346480.9
+- name: Health Care Support Services
+  total_budget: 125512454.39999999
+- name: Health Facilities Management
+  total_budget: 1372071000.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: health
+sphere:
+  name: Provincial
+  slug: provincial
+title: Health budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 3 - Health:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/5a5050eb-9a1b-426a-ae20-3571a6d7a999/resource/ebaa1e04-5f19-4ed7-b2ab-bc1ca28139da/download/ec-vote-03-health.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/5a5050eb-9a1b-426a-ae20-3571a6d7a999/resource/315dda0f-1d74-43e4-b560-0cda15112188/download/ec-health.xlsm
+vote_number: 3
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2018-19/provincial/eastern-cape/departments/health

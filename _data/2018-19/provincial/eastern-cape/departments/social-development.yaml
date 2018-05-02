@@ -1,0 +1,111 @@
+contributed_datasets: null
+description: 'Eastern Cape department: Social Development budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 2134236000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2253881000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2360311000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2642011020.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2836581000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 3043850000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 3234084000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 2502418645
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2512866213
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2475678271
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2642011020
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2688916097
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2740395374
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2758804902
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/eastern-cape/departments/social-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/eastern-cape/departments/social-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/eastern-cape/departments/social-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/eastern-cape/departments/social-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: Eastern Cape
+  slug: eastern-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Social Development
+programmes:
+- name: Administration
+  total_budget: 483597000.0
+- name: Social Welfare Services
+  total_budget: 802576000.0
+- name: Children And Families
+  total_budget: 854566700.0
+- name: Restorative Services
+  total_budget: 417596000.0
+- name: Development And Research
+  total_budget: 278245300.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: social-development
+sphere:
+  name: Provincial
+  slug: provincial
+title: Social Development budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 4 - Social Development:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/26d0c4ce-8db8-43fa-b18b-0ffa24c7f817/resource/3e56b1b0-5917-40d2-9ac0-173c28ccd17c/download/ec-vote-04-social-development.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/26d0c4ce-8db8-43fa-b18b-0ffa24c7f817/resource/ef80e778-f9fe-4ba4-9e3a-1306b70d290d/download/ec-social-development.xlsm
+vote_number: 4
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2018-19/provincial/eastern-cape/departments/social-development

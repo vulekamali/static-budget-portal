@@ -1,0 +1,112 @@
+contributed_datasets: null
+description: 'Mpumalanga department: Co-Operative Governance And Traditional Affairs
+  budget data for the 2018-19 financial year from National Treasury in partnership
+  with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 447004000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 476080000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 615669000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 515044000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 522260000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 523763000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 552218040.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 524117831
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 530784609
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 645761666
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 515044000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 495072526
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 471546791
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 471064399
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/mpumalanga/departments/co-operative-governance-and-traditional-affairs
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/mpumalanga/departments/co-operative-governance-and-traditional-affairs
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/mpumalanga/departments/co-operative-governance-and-traditional-affairs
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/mpumalanga/departments/co-operative-governance-and-traditional-affairs
+  id: 2018-19
+  is_selected: true
+government:
+  name: Mpumalanga
+  slug: mpumalanga
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Co-Operative Governance And Traditional Affairs
+programmes:
+- name: Administration
+  total_budget: 125677000.0
+- name: Local Governance
+  total_budget: 194344000.0
+- name: Development And Planning
+  total_budget: 67568000.0
+- name: Traditional Institutional Management
+  total_budget: 114966000.0
+- name: The House Of Traditional Leaders
+  total_budget: 19705000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: co-operative-governance-and-traditional-affairs
+sphere:
+  name: Provincial
+  slug: provincial
+title: Co-Operative Governance And Traditional Affairs budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 4 - Co-Operative Governance And Traditional Affairs:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/cf490917-41bc-4ebb-bb15-c1f6092b16f3/resource/1d1c881a-81c6-4c1c-a4b5-d272c98bea84/download/mpu-vote-04-cooperative-governance-and-trad.-affairs.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/cf490917-41bc-4ebb-bb15-c1f6092b16f3/resource/88a95a50-2f41-47f2-92d7-17f73e002521/download/mpu-comm.-safety-sec.-and-liaison.xlsm
+vote_number: 4
+vote_primary:
+  name: Co-Operative Governance And Traditional Affairs
+  slug: co-operative-governance-and-traditional-affairs
+  url_path: /2018-19/provincial/mpumalanga/departments/co-operative-governance-and-traditional-affairs

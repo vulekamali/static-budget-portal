@@ -1,0 +1,110 @@
+contributed_datasets: null
+description: 'Limpopo department: Public Works, Roads And Infrastructure budget data
+  for the 2018-19 financial year from National Treasury in partnership with IMALI
+  YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 2787867000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2685343000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2988778000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 3428053071.164648
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 3118175538.277785
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 3201303000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 3377178000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 3268809242
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2993905932
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 3134863478
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 3428053071
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2955851568
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2882151200
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2880869892
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/limpopo/departments/public-works-roads-and-infrastructure
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/limpopo/departments/public-works-roads-and-infrastructure
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/limpopo/departments/public-works-roads-and-infrastructure
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/limpopo/departments/public-works-roads-and-infrastructure
+  id: 2018-19
+  is_selected: true
+government:
+  name: Limpopo
+  slug: limpopo
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Public Works, Roads And Infrastructure
+programmes:
+- name: Administration
+  total_budget: 386480741.16321003
+- name: Infrastructure Operations
+  total_budget: 790656781.588475
+- name: Epwp
+  total_budget: 57715920.4078
+- name: Roads Infrastructure
+  total_budget: 1883322095.1183
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: public-works-roads-and-infrastructure
+sphere:
+  name: Provincial
+  slug: provincial
+title: Public Works, Roads And Infrastructure budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 9 - Public Works, Roads And Infrastructure:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/bc53a3a3-b505-4f4a-85f1-33cb08ada409/resource/9880e495-eddd-489d-8161-fdf5c3d4cae0/download/lim-vote-09-public-works-roads-infrastructure.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/bc53a3a3-b505-4f4a-85f1-33cb08ada409/resource/452a6475-b1ad-4015-88ec-49be6ac7c376/download/lim-public-works-roads-and-infrastructure.xlsm
+vote_number: 9
+vote_primary:
+  name: Public Works, Roads And Infrastructure
+  slug: public-works-roads-and-infrastructure
+  url_path: /2018-19/provincial/limpopo/departments/public-works-roads-and-infrastructure

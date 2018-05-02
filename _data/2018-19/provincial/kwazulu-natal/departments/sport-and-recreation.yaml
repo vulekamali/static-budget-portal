@@ -1,0 +1,54 @@
+contributed_datasets: null
+description: 'KwaZulu-Natal department: Sport And Recreation budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/kwazulu-natal/departments/sport-and-recreation
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/kwazulu-natal/departments/sport-and-recreation
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/kwazulu-natal/departments/sport-and-recreation
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/kwazulu-natal/departments/sport-and-recreation
+  id: 2018-19
+  is_selected: true
+government:
+  name: KwaZulu-Natal
+  slug: kwazulu-natal
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Sport And Recreation
+programmes: []
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: sport-and-recreation
+sphere:
+  name: Provincial
+  slug: provincial
+title: Sport And Recreation budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 10 - Sport And Recreation:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/a72b0a7d-61f4-4ce7-98ab-703a6f0348c6/resource/8198a968-6aa5-41ad-a0f5-37b34b6bc769/download/kzn-vote-10-sport-and-recreation.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/a72b0a7d-61f4-4ce7-98ab-703a6f0348c6/resource/e3f279a8-bc02-4be0-8610-f63887060f37/download/kzn-sport-and-recreation.xlsm
+vote_number: 10
+vote_primary:
+  name: Sport And Recreation
+  slug: sport-and-recreation
+  url_path: /2018-19/provincial/kwazulu-natal/departments/sport-and-recreation

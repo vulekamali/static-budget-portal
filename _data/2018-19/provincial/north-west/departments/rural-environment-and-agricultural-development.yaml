@@ -1,0 +1,122 @@
+contributed_datasets: null
+description: 'North West department: Rural, Environment And Agricultural Development
+  budget data for the 2018-19 financial year from National Treasury in partnership
+  with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1072060400.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1087058900.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1274405000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1401161000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1440478000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1531038000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1645694000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 1257004349
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1211968858
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1336695362
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1401161000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1365490526
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1378402172
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1403843770
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/north-west/departments/rural-environment-and-agricultural-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/north-west/departments/rural-environment-and-agricultural-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/north-west/departments/rural-environment-and-agricultural-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/north-west/departments/rural-environment-and-agricultural-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: North West
+  slug: north-west
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Rural, Environment And Agricultural Development
+programmes:
+- name: Administration
+  total_budget: 268486000.0
+- name: None
+  total_budget: 0.0
+- name: Direct Charges
+  total_budget: 0.0
+- name: Sustainable Resource Management
+  total_budget: 78132000.0
+- name: Farmer Support And Development
+  total_budget: 423627000.0
+- name: Veterinary Services
+  total_budget: 128524000.0
+- name: Research And Technology  Development Services
+  total_budget: 53840000.0
+- name: Agricultural Economics Services
+  total_budget: 12243000.0
+- name: Structured Agricultural Education And  Training
+  total_budget: 104795000.0
+- name: Rural Development Coordination
+  total_budget: 83486000.0
+- name: Environmental Services
+  total_budget: 287345000.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: rural-environment-and-agricultural-development
+sphere:
+  name: Provincial
+  slug: provincial
+title: Rural, Environment And Agricultural Development budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 13 - Rural, Environment And Agricultural Development:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/bec46bb9-4425-49d3-8b53-9453f5bbabb0/resource/909aa79d-08bd-419c-ab3d-163e6c3632e1/download/nw-vote-13-rural-environment-and-agricultural-development.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/bec46bb9-4425-49d3-8b53-9453f5bbabb0/resource/0386c596-829d-414f-b640-70937bc498db/download/nw-rural-env.-and-agricultural-dev..xlsm
+vote_number: 13
+vote_primary:
+  name: Rural, Environment And Agricultural Development
+  slug: rural-environment-and-agricultural-development
+  url_path: /2018-19/provincial/north-west/departments/rural-environment-and-agricultural-development

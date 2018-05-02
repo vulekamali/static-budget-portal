@@ -1,0 +1,117 @@
+contributed_datasets: null
+description: 'Limpopo department: Agriculture budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1555401000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1620258000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1689801000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1864207000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1917354000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2002111010.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2115293000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 1823727302
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1806435914
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1772395086
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1864207000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1817541623
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1802511868
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1804430775
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/limpopo/departments/agriculture
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/limpopo/departments/agriculture
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/limpopo/departments/agriculture
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/limpopo/departments/agriculture
+  id: 2018-19
+  is_selected: true
+government:
+  name: Limpopo
+  slug: limpopo
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Agriculture
+programmes:
+- name: Administration
+  total_budget: 393348000.0
+- name: Direct Charges
+  total_budget: 0.0
+- name: Sustainable Resource Management
+  total_budget: 85159000.0
+- name: Farmer Support & Development
+  total_budget: 1152866000.0
+- name: Veterinary Services
+  total_budget: 58654000.0
+- name: Research & Technology Devel Services
+  total_budget: 61166000.0
+- name: Agriculural Economics
+  total_budget: 23052000.0
+- name: Structured Agric. Training
+  total_budget: 137300000.0
+- name: Rural Development Co-Ordination
+  total_budget: 5809000.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: agriculture
+sphere:
+  name: Provincial
+  slug: provincial
+title: Agriculture budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 4 - Agriculture:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/3047d717-15af-4873-9f0b-7ad5feabe23c/resource/3611ff3d-1e2a-4f5f-ac2b-04ba58d7869b/download/lim-vote-04-agriculture.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/3047d717-15af-4873-9f0b-7ad5feabe23c/resource/51abce57-8fb5-406e-8f21-a24a5d67035e/download/lim-agriculture.xlsm
+vote_number: 4
+vote_primary:
+  name: Agriculture
+  slug: agriculture
+  url_path: /2018-19/provincial/limpopo/departments/agriculture

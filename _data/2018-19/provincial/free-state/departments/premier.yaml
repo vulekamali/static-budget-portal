@@ -1,0 +1,119 @@
+contributed_datasets: null
+description: 'Free State department: Premier budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 686732000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 489982000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 619803000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 656786000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 611279000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 650798000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 687028000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 805201937
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 546284037
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 650097728
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 656786000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 579457432
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 585917120
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 586062766
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/free-state/departments/premier
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/free-state/departments/premier
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/free-state/departments/premier
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/free-state/departments/premier
+  id: 2018-19
+  is_selected: true
+government:
+  name: Free State
+  slug: free-state
+government_functions: []
+intro: "## Mandate\n\nIn terms of the Constitution, the Premier (supported by the\
+  \ Department), is responsible for:\n\n * Implementing provincial legislation;\n\
+  \ * Implementing all national legislation within functional areas;\n * Administering\
+  \ in the province  national legislation outside functional areas; \n * Developing\
+  \ and implementing provincial policy;\n * Co-ordinating the functions of the Provincial\
+  \ Administration and its departments.\n * Preparing and initiating provincial legislation\
+  \ and,\n * Performing any other function assigned to the provincial executive in\
+  \ terms of the Constitution or an Act of Parliament.\n\n## Vision\n\nLeading Free\
+  \ State Province towards Service Excellence\n\n## Mission\n\nTo provide strategic\
+  \ direction and coordinate integrated service delivery within government in the\
+  \ Free State \n\n"
+is_vote_primary: true
+name: Premier
+programmes:
+- name: Administration
+  total_budget: 66846000.0
+- name: Institutional Development
+  total_budget: 360921000.0
+- name: Policy & Governance
+  total_budget: 65022000.0
+- name: Monitoring And Evaluation
+  total_budget: 118490000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: premier
+sphere:
+  name: Provincial
+  slug: provincial
+title: Premier budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 1 - Premier:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/6cd7d599-d0cf-4b98-a507-12419472cac2/resource/e82f6543-c83f-4fec-9133-dfe7a117df4e/download/fs-vote-01-office-of-the-premier.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/6cd7d599-d0cf-4b98-a507-12419472cac2/resource/523f87a4-3145-4015-ad60-b9f88eb601f0/download/fs-premier.xlsm
+vote_number: 1
+vote_primary:
+  name: Premier
+  slug: premier
+  url_path: /2018-19/provincial/free-state/departments/premier

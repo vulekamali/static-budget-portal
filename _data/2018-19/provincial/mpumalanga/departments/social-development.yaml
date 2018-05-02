@@ -1,0 +1,111 @@
+contributed_datasets: null
+description: 'Mpumalanga department: Social Development budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1220303000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1270653000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1369843000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1509438000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1551584000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1624299000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1714467000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 1430820668
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1416659083
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1436798180
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1509438000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1470812641
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1462365578
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1462509930
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/mpumalanga/departments/social-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/mpumalanga/departments/social-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/mpumalanga/departments/social-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/mpumalanga/departments/social-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: Mpumalanga
+  slug: mpumalanga
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Social Development
+programmes:
+- name: Administration
+  total_budget: 310527000.0
+- name: Social Welfare Services
+  total_budget: 257695000.0
+- name: Children And Families
+  total_budget: 598829000.0
+- name: Restorative Services
+  total_budget: 176121000.0
+- name: Development And Research
+  total_budget: 208412000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: social-development
+sphere:
+  name: Provincial
+  slug: provincial
+title: Social Development budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 12 - Social Development:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/d7a6c58d-f82b-44cf-a530-c6b0c389ed21/resource/0ce27c27-11e1-4fb0-be82-5b9c70ac17ce/download/mpu-vote-12-social-development.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/d7a6c58d-f82b-44cf-a530-c6b0c389ed21/resource/6761ec02-2f19-4006-b8bb-f581515059d4/download/mpu-social-development.xlsm
+vote_number: 12
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2018-19/provincial/mpumalanga/departments/social-development

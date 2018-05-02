@@ -1,0 +1,109 @@
+contributed_datasets: null
+description: 'Gauteng department: Human Settlements budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 5026297000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 4742709000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 5957683000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 6255557000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 5888425147.3354
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 6117655000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 6534918000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 5893396668
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 5287676326
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 6248882604
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 6255557000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 5581889311
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 5507759404
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 5574550264
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/gauteng/departments/human-settlements
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/gauteng/departments/human-settlements
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/gauteng/departments/human-settlements
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/gauteng/departments/human-settlements
+  id: 2018-19
+  is_selected: true
+government:
+  name: Gauteng
+  slug: gauteng
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Human Settlements
+programmes:
+- name: Administration
+  total_budget: 512510000.0
+- name: Housing Needs, Research And Planning
+  total_budget: 41777975.5902
+- name: Housing Development
+  total_budget: 5163858000.0
+- name: Housing Assets Management Property Management
+  total_budget: 170279171.7452
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: human-settlements
+sphere:
+  name: Provincial
+  slug: provincial
+title: Human Settlements budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 8 - Human Settlements:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/57e2302c-e0be-4790-8533-6cbd0b9f22fb/resource/aa59993d-4a24-4ad6-b39d-b73084f56fc8/download/gt-vote-08-human-settlements.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/57e2302c-e0be-4790-8533-6cbd0b9f22fb/resource/52bb000a-d18c-4098-adbc-ce1a3428e4a5/download/gt-human-settlement.xlsm
+vote_number: 8
+vote_primary:
+  name: Human Settlements
+  slug: human-settlements
+  url_path: /2018-19/provincial/gauteng/departments/human-settlements

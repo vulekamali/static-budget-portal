@@ -1,0 +1,117 @@
+contributed_datasets: null
+description: 'Mpumalanga department: Health budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 8858526000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 10080392000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 10579880000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 12045053000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 13278174000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 13991027000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 14857212000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 10386733536
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 11238692936
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 11097003329
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 12045053000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 12586947388
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 12596200755
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 12673804795
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/mpumalanga/departments/health
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/mpumalanga/departments/health
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/mpumalanga/departments/health
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/mpumalanga/departments/health
+  id: 2018-19
+  is_selected: true
+government:
+  name: Mpumalanga
+  slug: mpumalanga
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Health
+programmes:
+- name: Administration
+  total_budget: 265526000.0
+- name: Direct Charges
+  total_budget: 0.0
+- name: District Health Services
+  total_budget: 8048071000.0
+- name: Emergency Medical Services
+  total_budget: 388002000.0
+- name: Provincial Hospital Services
+  total_budget: 1393406000.0
+- name: Central Hospital Services
+  total_budget: 1218481000.0
+- name: Health Sciences And Training
+  total_budget: 388773000.0
+- name: Health Care Support Services
+  total_budget: 182640000.0
+- name: Health Facilities Management
+  total_budget: 1393275000.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: health
+sphere:
+  name: Provincial
+  slug: provincial
+title: Health budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 10 - Health:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/fa12b468-36c6-42cb-95c3-1dd81c9597f8/resource/d4011af8-0bc1-4974-9ec6-a1dd2b86184c/download/mpu-vote-10-health.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/fa12b468-36c6-42cb-95c3-1dd81c9597f8/resource/04dbee39-3cf4-4ea0-8788-e6865f0ac9d0/download/mpu-finance.xlsm
+vote_number: 10
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2018-19/provincial/mpumalanga/departments/health

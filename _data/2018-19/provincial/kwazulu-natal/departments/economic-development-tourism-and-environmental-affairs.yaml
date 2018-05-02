@@ -1,0 +1,55 @@
+contributed_datasets: null
+description: 'KwaZulu-Natal department: Economic Development, Tourism And Environmental
+  Affairs budget data for the 2018-19 financial year from National Treasury in partnership
+  with IMALI YETHU.'
+expenditure_over_time: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
+  id: 2018-19
+  is_selected: true
+government:
+  name: KwaZulu-Natal
+  slug: kwazulu-natal
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Economic Development, Tourism And Environmental Affairs
+programmes: []
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: economic-development-tourism-and-environmental-affairs
+sphere:
+  name: Provincial
+  slug: provincial
+title: Economic Development, Tourism And Environmental Affairs budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 4 - Economic Development, Tourism And Environmental Affairs:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/fd01308b-3467-4c88-93e0-6864d4113b84/resource/00a68255-bb31-4ea3-bc84-c6cec81e6f5c/download/kzn-vote-04-eco-dev-tourism-and-environmental-affairs.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/fd01308b-3467-4c88-93e0-6864d4113b84/resource/0812ea92-ffa8-44a5-a0cc-9302c00afee0/download/kzn-eco-dev-tou-and-envir.xlsm
+vote_number: 4
+vote_primary:
+  name: Economic Development, Tourism And Environmental Affairs
+  slug: economic-development-tourism-and-environmental-affairs
+  url_path: /2018-19/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs

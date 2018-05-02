@@ -1,0 +1,111 @@
+contributed_datasets: null
+description: 'Western Cape department: Social Development budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1733842000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1892072000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1959993000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2110521000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2241664000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2394377000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2527165000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 2032951627
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2109483065
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2055793529
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2110521000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2124968902
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2155671158
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2155774306
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/western-cape/departments/social-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/western-cape/departments/social-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/western-cape/departments/social-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/western-cape/departments/social-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: Western Cape
+  slug: western-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Social Development
+programmes:
+- name: Administration
+  total_budget: 217894000.0
+- name: Social Welfare Services
+  total_budget: 896905000.0
+- name: Children And Families
+  total_budget: 694273000.0
+- name: Restorative Services
+  total_budget: 386697000.0
+- name: Development And Research
+  total_budget: 45895000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: social-development
+sphere:
+  name: Provincial
+  slug: provincial
+title: Social Development budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 7 - Social Development:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/367cfffb-5ac4-4b65-8883-b3d01c6d9618/resource/d563dc87-c51f-4bf6-bcc0-340b5e92ffb4/download/wc-vote-07-social-development.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/367cfffb-5ac4-4b65-8883-b3d01c6d9618/resource/96b9dd62-6d15-4af1-9059-efaa12c98ae3/download/wc-social-development.xlsm
+vote_number: 7
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2018-19/provincial/western-cape/departments/social-development

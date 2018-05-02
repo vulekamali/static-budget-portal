@@ -1,0 +1,107 @@
+contributed_datasets: null
+description: 'Gauteng department: Infrastructure Development budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1830536000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2416103000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2563607000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2749244894.75
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 3036963930.11
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 3122694231.5
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 3261766000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 2146326562
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2693728549
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2688910972
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2749244894
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2878867622
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2811379281
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2782418772
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/gauteng/departments/infrastructure-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/gauteng/departments/infrastructure-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/gauteng/departments/infrastructure-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/gauteng/departments/infrastructure-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: Gauteng
+  slug: gauteng
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Infrastructure Development
+programmes:
+- name: Administration
+  total_budget: 326559060.04
+- name: Public Works Infrastructure
+  total_budget: 2392641870.07
+- name: Expanded Public Works Programme
+  total_budget: 317763000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: infrastructure-development
+sphere:
+  name: Provincial
+  slug: provincial
+title: Infrastructure Development budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 15 - Infrastructure Development:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/9b9fb354-e108-48af-8ee1-0cda176de861/resource/09804114-621c-4ba1-b487-309d34af3a35/download/gt-vote-15-infrastructure-development.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/9b9fb354-e108-48af-8ee1-0cda176de861/resource/a894b482-1681-4ce9-b4fd-63cf40dc961b/download/gt-infrastructure-development.xlsm
+vote_number: 15
+vote_primary:
+  name: Infrastructure Development
+  slug: infrastructure-development
+  url_path: /2018-19/provincial/gauteng/departments/infrastructure-development

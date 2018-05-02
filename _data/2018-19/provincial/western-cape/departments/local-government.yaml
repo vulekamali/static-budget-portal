@@ -1,0 +1,109 @@
+contributed_datasets: null
+description: 'Western Cape department: Local Government budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 197479000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 213020000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 234934000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 359713000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 252796000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 262461000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 276615000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 231546619
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 237497348
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 246417103
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 359713000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 239636109
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 236295123
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 235963821
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/western-cape/departments/local-government
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/western-cape/departments/local-government
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/western-cape/departments/local-government
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/western-cape/departments/local-government
+  id: 2018-19
+  is_selected: true
+government:
+  name: Western Cape
+  slug: western-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Local Government
+programmes:
+- name: Administration
+  total_budget: 43758000.0
+- name: Local Governance
+  total_budget: 137932000.0
+- name: Development And Planning
+  total_budget: 71105000.0
+- name: Traditional Institutional Management
+  total_budget: 1000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: local-government
+sphere:
+  name: Provincial
+  slug: provincial
+title: Local Government budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 14 - Local Government:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/db235169-ef9f-4170-b019-38f6bc0f38b0/resource/55aa5cca-7446-4c4f-8145-8d7c9d3e0c7e/download/wc-vote-14-local-government.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/db235169-ef9f-4170-b019-38f6bc0f38b0/resource/b4a0d996-ab7c-40da-a9a0-b91467b7d9d8/download/wc-local-government.xlsm
+vote_number: 14
+vote_primary:
+  name: Local Government
+  slug: local-government
+  url_path: /2018-19/provincial/western-cape/departments/local-government

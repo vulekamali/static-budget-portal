@@ -1,0 +1,109 @@
+contributed_datasets: null
+description: 'Mpumalanga department: Culture, Sport And Recreation budget data for
+  the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 411103000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 423084000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 467690000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 452067000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 468461000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 545170000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 574977000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 482023455
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 471699033
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 490549749
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 452067000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 444074159
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 490819635
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 490478715
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/mpumalanga/departments/culture-sport-and-recreation
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/mpumalanga/departments/culture-sport-and-recreation
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/mpumalanga/departments/culture-sport-and-recreation
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/mpumalanga/departments/culture-sport-and-recreation
+  id: 2018-19
+  is_selected: true
+government:
+  name: Mpumalanga
+  slug: mpumalanga
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Culture, Sport And Recreation
+programmes:
+- name: Administration
+  total_budget: 101351000.0
+- name: Cultural Affairs
+  total_budget: 109397000.0
+- name: Library And Archives Services
+  total_budget: 186403000.0
+- name: Sports And Recreation
+  total_budget: 71310000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: culture-sport-and-recreation
+sphere:
+  name: Provincial
+  slug: provincial
+title: Culture, Sport And Recreation budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 11 - Culture, Sport And Recreation:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/f4531fff-5207-46ef-a5b1-4618eda536a6/resource/23f289c5-061d-4bc9-bf7d-106bce7e1e35/download/mpu-vote-11-culture-sport-and-recreation.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/f4531fff-5207-46ef-a5b1-4618eda536a6/resource/de0bc978-1be4-4357-8aa9-d313ae2bebf9/download/mpu-culture-sport-and-recreation.xlsm
+vote_number: 11
+vote_primary:
+  name: Culture, Sport And Recreation
+  slug: culture-sport-and-recreation
+  url_path: /2018-19/provincial/mpumalanga/departments/culture-sport-and-recreation
