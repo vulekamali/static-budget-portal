@@ -62,7 +62,7 @@ class VideosContainer extends Component {
       const filteredItems = lunrSearchWrapper(
         this.props.items,
         'id',
-        ['name'],
+        ['title', 'description'],
         phrase,
       );
 
@@ -72,7 +72,8 @@ class VideosContainer extends Component {
       const currentItems = filteredItems.map((obj) => {
         return {
           ...obj,
-          name: wrapStringPhrases(obj.name, phraseArray, wrapFn),
+          title: wrapStringPhrases(obj.title, phraseArray, wrapFn),
+          description: wrapStringPhrases(obj.title, phraseArray, wrapFn),
         };
       });
 

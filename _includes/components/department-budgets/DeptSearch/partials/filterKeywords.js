@@ -7,7 +7,7 @@ export default function filterKeywords(keywords, results) {
     const filteredItems = lunrSearchWrapper(
       group.departments,
       'slug',
-      ['name'],
+      'name',
       keywords,
     );
 
