@@ -29,7 +29,9 @@ export default function DeptGroup({ map, linksArray, name: title, doubleRow, emp
             linksArray.map(({ name, url_path: url }) => {
               return (
                 <li className="DeptGroup-item">
-                  <a className="DeptGroup-link" href={url} dangerouslySetInnerHTML={{ __html: name }} />
+                  <a className="DeptGroup-link" href={url}>
+                    {name}
+                  </a>
                 </li>
               );
             })
