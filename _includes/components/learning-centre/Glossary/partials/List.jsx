@@ -7,8 +7,8 @@ export default function List({ currentPhrase, currentItems }) {
     return letterArrayFn.map((item) => {
       return (
         <div className="Glossary-item">
-          <div className="Glossary-title" dangerouslySetInnerHTML={{ __html: item.phrase }} />
-          <div className="Glossary-text" dangerouslySetInnerHTML={{ __html: item.description }} />
+          <div className="Glossary-title">{item.phrase}</div>
+          <div className="Glossary-text">{item.description}</div>
         </div>
       );
     });
