@@ -1,8 +1,8 @@
 import { h, render, Component } from 'preact';
-import Fuse from 'fuse.js';
 import decodeHtmlEntities from './../../../utilities/js/helpers/decodeHtmlEntities.js';
 import Videos from './index.jsx';
-
+import lunrSearchWrapper from './../../../utilities/js/helpers/lunrSearchWrapper.js';
+import wrapStringPhrases from './../../../utilities/js/helpers/wrapStringPhrases.js';
 
 class VideosContainer extends Component {
   constructor(props) {
@@ -59,21 +59,25 @@ class VideosContainer extends Component {
     this.setState({ currentPhrase: phrase });
 
     if (phrase.length > 2) {
-      const options = {
-        shouldSort: true,
-        threshold: 0.3,
-        location: 0,
-        distance: 100,
-        maxPatternLength: 32,
-        minMatchCharLength: 1,
-        keys: [
-          'title',
-        ],
-      };
+      const filteredItems = lunrSearchWrapper(
+        this.props.items,
+        'id',
+        ['title', 'description'],
+        phrase,
+      );
 
-      const items = new Fuse(this.props.items, options);
-      const result = items.search(phrase);
-      this.setState({ currentItems: result });
+      const phraseArray = [phrase, ...phrase.split(' ')];
+      const wrapFn = string => `<em class="Highlight">${string}</em>`;
+
+      const currentItems = filteredItems.map((obj) => {
+        return {
+          ...obj,
+          title: wrapStringPhrases(obj.title, phraseArray, wrapFn),
+          description: wrapStringPhrases(obj.title, phraseArray, wrapFn),
+        };
+      });
+
+      this.setState({ currentItems });
     } else {
       this.setState({ currentItems: this.props.items });
     }
@@ -94,7 +98,6 @@ class VideosContainer extends Component {
     );
   }
 }
-
 
 
 function scripts() {
