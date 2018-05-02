@@ -1,5 +1,5 @@
 import { h, render, Component } from 'preact';
-import { pick } from 'lodash';
+import { pick, find } from 'lodash';
 import SearchResult from './index.jsx';
 import { apiBaseURL } from '../../../utilities/config/global.json';
 import removePunctuation from '../../../utilities/js/helpers/removePunctuation.js';
@@ -11,19 +11,15 @@ class SearchResultContainer extends Component {
     super(props);
 
     this.state = {
-      results: [],
+      results: null,
       count: null,
       page: 1,
-      province: 'all',
-      open: null,
       error: false,
-      loading: true,
       otherYears: null,
     };
 
     this.events = {
       updateItem: this.updateItem.bind(this),
-      updateFilter: this.updateFilter.bind(this),
     };
   }
 
@@ -33,15 +29,13 @@ class SearchResultContainer extends Component {
     fetchWrapper(datasetPackagesQueryUrl)
       .then((data) => {
         this.setState({
-          loading: false,
-          results: data.result.count,
+          results: data.result.results,
           count: data.result.count,
         });
       })
       .catch((err) => {
         console.warn(err);
         this.setState({
-          loading: false,
           error: true,
         });
       });
@@ -50,8 +44,18 @@ class SearchResultContainer extends Component {
     fetchWrapper(otherYearsQuery)
       .then((data) => {
         const rawResult = data.result.search_facets.vocab_financial_years.items;
-        const otherYears = rawResult.map(obj => pick(obj, ['count', 'name']));
-        this.setState({ otherYears });
+        const totalYears = rawResult.map(obj => pick(obj, ['count', 'name']));
+        const otherYears = totalYears.filter(obj => obj.name !== this.props.selectedYear);
+        const currentYear = find(totalYears, obj => obj.name === this.props.selectedYear);
+        const total = parseInt(currentYear.count, 10);
+
+        this.setState({
+          count: {
+            shown: total > 10 ? 10 : total,
+            total,
+          },
+          otherYears,
+        });
       })
       .catch(console.warn);
   }
@@ -69,38 +73,23 @@ class SearchResultContainer extends Component {
     return this.setState({ [key]: value });
   }
 
-  updateFilter(filter, value) {
-    if (this.state.open === filter) {
-      this.setState({ page: 1 });
-      this.setState({ [filter]: value });
-      this.setState({ open: null });
-      return null;
-    }
-
-    return this.setState({ open: filter });
-  }
-
   render() {
-    const { results, shown, page, province, error, loading, otherYears } = this.state;
+    const { results, page, error, otherYears, count } = this.state;
     const { search, selectedYear } = this.props;
-    const { updateFilter, changeShown, updateItem } = this.events;
+    const { updateItem } = this.events;
 
     return (
       <SearchResult
         {...{
           results,
-          shown,
           page,
-          province,
           error,
-          loading,
           otherYears,
+          count,
 
           search,
           selectedYear,
 
-          updateFilter,
-          changeShown,
           updateItem,
         }}
       />

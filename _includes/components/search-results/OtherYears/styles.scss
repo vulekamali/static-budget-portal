@@ -1,0 +1,9 @@
+.OtherYears {
+  padding: 20px 0;
+  @include clearfix;
+}
+
+.OtherYears-item {
+  float: left;
+  margin-left: 10px;
+}
