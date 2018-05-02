@@ -5,7 +5,7 @@ export default function buildOtherYears({ items, search, selectedYear }) {
   return (
     <div className="Section is-bevel is-green">
       <div className="OtherYears">
-        <div className="OtherYears-item u-paddingTop10">
+        <div className="OtherYears-title u-paddingTop10 u-marginLeft10">
           <div className="Section-title u-marginRight10 u-colorWhite">See results in other years</div>
         </div>
         {
