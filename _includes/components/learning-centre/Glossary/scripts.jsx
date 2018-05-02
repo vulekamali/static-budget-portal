@@ -1,9 +1,9 @@
-import Fuse from 'fuse.js';
 import { h, render, Component } from 'preact';
 import Glossary from './index.jsx';
 import glossaryObject from './../../../../_data/glossary.json';
 import createGlossaryGroupedObject from './../../../utilities/js/helpers/createGlossaryGroupedObject.js';
-
+import lunrSearchWrapper from './../../../utilities/js/helpers/lunrSearchWrapper.js';
+import wrapStringPhrases from './../../../utilities/js/helpers/wrapStringPhrases.js';
 
 class GlossaryContainer extends Component {
   constructor(props) {
@@ -24,28 +24,35 @@ class GlossaryContainer extends Component {
     this.setState({ currentPhrase: phrase });
 
     if (phrase.length > 2) {
-      const options = {
-        shouldSort: true,
-        threshold: 0.2,
-        location: 0,
-        distance: 100,
-        maxPatternLength: 32,
-        minMatchCharLength: 1,
-        keys: [
-          'phrase',
-        ],
-      };
-
       const letters = Object.keys(this.props.glossaryObject);
 
       const filteredList = letters.reduce(
         (result, letter) => {
           const array = this.props.glossaryObject[letter];
-          const items = new Fuse(array, options);
+
+          const filteredItems = lunrSearchWrapper(
+            array,
+            'phrase',
+            ['phrase', 'description'],
+            phrase,
+          );
+
+          const phraseArray = [phrase, ...phrase.split(' ')];
+          const wrapFn = string => `<em class="Highlight">${string}</em>`;
+
+          const innerResult = filteredItems.map((obj) => {
+            return {
+              ...obj,
+              ...{
+                phrase: wrapStringPhrases(obj.phrase, phraseArray, wrapFn),
+                description: wrapStringPhrases(obj.description, phraseArray, wrapFn),
+              },
+            };
+          });
 
           return {
             ...result,
-            [letter]: items.search(phrase),
+            [letter]: innerResult,
           };
         },
         {},
