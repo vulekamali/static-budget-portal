@@ -11,10 +11,10 @@ import requests
 import yaml
 
 YEAR_SLUGS = [
-    '2015-16',
-    '2016-17',
-    '2017-18',
     '2018-19',
+    '2017-18',
+    '2016-17',
+    '2015-16',
 ]
 
 BASIC_PAGE_SLUGS = [
