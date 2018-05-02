@@ -1,7 +1,9 @@
 import { h, render, Component } from 'preact';
+import { pick } from 'lodash';
 import SearchResult from './index.jsx';
 import { apiBaseURL } from '../../../utilities/config/global.json';
 import removePunctuation from '../../../utilities/js/helpers/removePunctuation.js';
+import fetchWrapper from './../../../utilities/js/helpers/fetchWrapper.js';
 
 
 class SearchResultContainer extends Component {
@@ -16,42 +18,42 @@ class SearchResultContainer extends Component {
       open: null,
       error: false,
       loading: true,
+      otherYears: null,
     };
 
-    this.updateItem = this.updateItem.bind(this);
-    this.updateFilter = this.updateFilter.bind(this);
+    this.events = {
+      updateItem: this.updateItem.bind(this),
+      updateFilter: this.updateFilter.bind(this),
+    };
   }
 
   componentDidMount() {
     const datasetPackagesQueryUrl = `${apiBaseURL}/api/3/action/package_search?q=${removePunctuation(this.props.search)}&start=0&rows=999&fq=+organization:national-treasury+vocab_financial_years:${this.props.selectedYear}+extras_department_name_slug:[* TO *]+extras_geographic_region_slug:[* TO *]`;
 
-    const request = new Promise((resolve, reject) => {
-      fetch(datasetPackagesQueryUrl)
-        .then((response) => {
-          if (!response.ok) {
-            reject(response);
-          }
-
-          response.json()
-            .then((data) => {
-              this.setState({ count: data.result.count });
-              resolve(data.result.results);
-            })
-            .catch(err => reject(err));
-        })
-        .catch(err => reject(err));
-    });
-
-    request
-      .then((array) => {
-        this.setState({ loading: false });
-        this.setState({ results: array });
+    fetchWrapper(datasetPackagesQueryUrl)
+      .then((data) => {
+        this.setState({
+          loading: false,
+          results: data.result.count,
+          count: data.result.count,
+        });
       })
       .catch((err) => {
-        this.setState({ loading: false });
-        this.setState({ error: true });
         console.warn(err);
+        this.setState({
+          loading: false,
+          error: true,
+        });
       });
+
+    const otherYearsQuery = `https://data.vulekamali.gov.za/api/3/action/package_search?q=${removePunctuation(this.props.search)}&start=0&rows=0&fq=+organization:national-treasury+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]&facet.field=[%22vocab_financial_years%22]`;
+    fetchWrapper(otherYearsQuery)
+      .then((data) => {
+        const rawResult = data.result.search_facets.vocab_financial_years.items;
+        const otherYears = rawResult.map(obj => pick(obj, ['count', 'name']));
+        this.setState({ otherYears });
+      })
+      .catch(console.warn);
   }
 
   updateItem(key, value, parent) {
@@ -79,20 +81,28 @@ class SearchResultContainer extends Component {
   }
 
   render() {
+    const { results, shown, page, province, error, loading, otherYears } = this.state;
+    const { search, selectedYear } = this.props;
+    const { updateFilter, changeShown, updateItem } = this.events;
+
     return (
       <SearchResult
-        results={this.state.results}
-        search={this.props.search}
-        selectedYear={this.props.selectedYear}
-        updateFilter={this.updateFilter}
-        shown={this.state.shown}
-        changeShown={this.changeShown}
-        page={this.state.page}
-        province={this.state.province} 
-        state={this.state}
-        updateItem={this.updateItem}
-        error={this.state.error}
-        loading={this.state.loading}
+        {...{
+          results,
+          shown,
+          page,
+          province,
+          error,
+          loading,
+          otherYears,
+
+          search,
+          selectedYear,
+
+          updateFilter,
+          changeShown,
+          updateItem,
+        }}
       />
     );
   }

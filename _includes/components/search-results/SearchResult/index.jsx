@@ -2,7 +2,25 @@ import { h } from 'preact';
 import Form from './partials/Form.jsx';
 
 
-export default function SearchResultMarkup({ loading, error, state, updateItem, page, province, results, search, selectedYear, updateFilter }) {
+export default function SearchResultMarkup(props) {
+  const {
+    results,
+    shown,
+    page,
+    province,
+    error,
+    loading,
+    otherYears,
+
+    search,
+    selectedYear,
+
+    updateFilter,
+    changeShown,
+    updateItem,
+  } = props;
+
+
   if (error) {
     return (
       <div className="SearchResult-wrap">
@@ -60,6 +78,42 @@ export default function SearchResultMarkup({ loading, error, state, updateItem, 
     ) :
     null;
 
+  const buildOtherYears = () => {
+    return (
+      <div className="Section is-bevel is-green">
+        <div className="OtherYears">
+          <div className="OtherYears-item u-paddingTop10">
+            <div className="Section-title u-marginRight10 u-colorWhite">See results in other years</div>
+          </div>
+          {
+            otherYears.map(({ count, name }) => {
+              const escapedSearch = encodeURI(search);
+              return (
+                <a
+                  className="Button is-secondary is-inline"
+                  href={`/${name}/search-result?search_type=full-search&search_string=${escapedSearch}&search=${escapedSearch} `}
+                >
+                  <span>{name}</span>
+                  <span className="u-fontWeightNormal">&nbsp;({count})</span>
+                </a>
+              );
+            })
+          });
+        </div>
+      </div>
+    );
+  };
+
+  const state = {
+    results,
+    shown,
+    page,
+    province,
+    error,
+    loading,
+    otherYears,
+  };
+
   return (
     <div className="SearchResult-wrap">
       <div className="SearchResult-heading">Search result for &quot;{search}&quot; in Department Budgets</div>
@@ -86,6 +140,10 @@ export default function SearchResultMarkup({ loading, error, state, updateItem, 
       <div className="SearchResult-pageWrap">
         {page <= 1 ? null : <button onClick={() => updateItem('page', page - 1)} className="SearchResult-prev">Previous Page</button>}
         {page >= pages ? null : <button onClick={() => updateItem('page', page + 1)} className="SearchResult-next">Next Page</button>}
+      </div>
+
+      <div>
+        {otherYears ? buildOtherYears(otherYears) : null}
       </div>
     </div>
   );
