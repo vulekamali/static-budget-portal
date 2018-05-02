@@ -1,29 +1,25 @@
-import lunrSearchWrapper from './../../../../utilities/js/helpers/lunrSearchWrapper.js';
-import wrapStringPhrases from './../../../../utilities/js/helpers/wrapStringPhrases.js';
+import Fuse from 'fuse.js';
 
 
 export default function filterKeywords(keywords, results) {
-  return results.map((group) => {
-    const filteredItems = lunrSearchWrapper(
-      group.departments,
-      'slug',
+  const options = {
+    shouldSort: true,
+    threshold: 0.3,
+    location: 0,
+    distance: 100,
+    maxPatternLength: 32,
+    minMatchCharLength: 1,
+    keys: [
       'name',
-      keywords,
-    );
+    ],
+  };
 
-    const phraseArray = [keywords, ...keywords.split(' ')];
-    const wrapFn = string => `<em class="Highlight">${string}</em>`;
-
-    const currentItems = filteredItems.map((obj) => {
-      return {
-        ...obj,
-        name: wrapStringPhrases(obj.name, phraseArray, wrapFn),
-      };
-    });
+  return results.map((group) => {
+    const items = new Fuse(group.departments, options);
 
     return {
       ...group,
-      departments: currentItems,
+      departments: items.search(keywords),
     };
   });
 }
