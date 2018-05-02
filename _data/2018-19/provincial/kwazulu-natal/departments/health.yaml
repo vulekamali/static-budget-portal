@@ -1,0 +1,54 @@
+contributed_datasets: null
+description: 'KwaZulu-Natal department: Health budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/kwazulu-natal/departments/health
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/kwazulu-natal/departments/health
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/kwazulu-natal/departments/health
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/kwazulu-natal/departments/health
+  id: 2018-19
+  is_selected: true
+government:
+  name: KwaZulu-Natal
+  slug: kwazulu-natal
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Health
+programmes: []
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: health
+sphere:
+  name: Provincial
+  slug: provincial
+title: Health budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 7 - Health:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/b44285d7-781d-401d-a9d4-2caa7d8704d3/resource/70ce34ba-4583-4e4a-b159-b7208595e4cf/download/kzn-vote-07-health.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/b44285d7-781d-401d-a9d4-2caa7d8704d3/resource/a336f18b-cf0f-42d4-8652-addf8dbd63b0/download/kzn-health.xlsm
+vote_number: 7
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2018-19/provincial/kwazulu-natal/departments/health

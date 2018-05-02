@@ -1,0 +1,115 @@
+contributed_datasets: null
+description: 'Mpumalanga department: Education budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 15674968000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 17098289000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 17809481000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 19587078000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 20973433000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 21783833000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 23241706000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 18379097809
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 19062990785
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 18679972736
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 19587078000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 19881611562
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 19612108080
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 19826118449
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/mpumalanga/departments/education
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/mpumalanga/departments/education
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/mpumalanga/departments/education
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/mpumalanga/departments/education
+  id: 2018-19
+  is_selected: true
+government:
+  name: Mpumalanga
+  slug: mpumalanga
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Education
+programmes:
+- name: Administration
+  total_budget: 1515355000.0
+- name: Public Ordinary Schools Education
+  total_budget: 16823386000.0
+- name: Independent Schools Subsidies
+  total_budget: 22176000.0
+- name: Public Special Schools Education
+  total_budget: 385985000.0
+- name: Early Childhood Development
+  total_budget: 328596000.0
+- name: Infrastructure Development
+  total_budget: 1257793000.0
+- name: Examination And Education Related Services
+  total_budget: 640142000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: education
+sphere:
+  name: Provincial
+  slug: provincial
+title: Education budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 7 - Education:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/c4a1c7da-76be-445c-a184-483b703410d4/resource/573fa2bd-e269-4919-9778-f94beef6c7e8/download/mpu-vote-07-education.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/c4a1c7da-76be-445c-a184-483b703410d4/resource/f274ff92-c0eb-4d49-affb-6314d975b662/download/mpu-education.xlsm
+vote_number: 7
+vote_primary:
+  name: Education
+  slug: education
+  url_path: /2018-19/provincial/mpumalanga/departments/education

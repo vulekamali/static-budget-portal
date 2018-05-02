@@ -1,0 +1,111 @@
+contributed_datasets: null
+description: 'Limpopo department: Co-Operative Governance, Human Settlements And Traditional
+  Affairs budget data for the 2018-19 financial year from National Treasury in partnership
+  with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1525470000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2185684000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2679638000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2667839000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2624005580.0433
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2680955000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2838158000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 1788632827
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2436832945
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2810613334
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2667839000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2487406791
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2413678952
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2421063956
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/limpopo/departments/co-operative-governance-human-settlements-and-traditional-affairs
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/limpopo/departments/co-operative-governance-human-settlements-and-traditional-affairs
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/limpopo/departments/co-operative-governance-human-settlements-and-traditional-affairs
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/limpopo/departments/co-operative-governance-human-settlements-and-traditional-affairs
+  id: 2018-19
+  is_selected: true
+government:
+  name: Limpopo
+  slug: limpopo
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Co-Operative Governance, Human Settlements And Traditional Affairs
+programmes:
+- name: Administration
+  total_budget: 378479665.5
+- name: Human Settlements
+  total_budget: 1444403000.0
+- name: Coorperative Governance
+  total_budget: 305013166.4509
+- name: Traditional Institutional Development
+  total_budget: 496109748.0924
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: co-operative-governance-human-settlements-and-traditional-affairs
+sphere:
+  name: Provincial
+  slug: provincial
+title: Co-Operative Governance, Human Settlements And Traditional Affairs budget 2018-19  -
+  vulekamali
+treasury_datasets:
+  EPRE for Vote 11 - Co-Operative Governance, Human Settlements And Traditional Affairs:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/8da6c9a0-bcf9-435c-b7c0-8220c15b4da1/resource/e2e22828-c7d2-4b25-8403-aa658c2a5af4/download/lim-vote-11-coop-gov-hs-environment.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/8da6c9a0-bcf9-435c-b7c0-8220c15b4da1/resource/cc212996-a749-4d22-b403-de179814dd1b/download/lim-cog-hs-and-trad.-affairs.xlsm
+vote_number: 11
+vote_primary:
+  name: Co-Operative Governance, Human Settlements And Traditional Affairs
+  slug: co-operative-governance-human-settlements-and-traditional-affairs
+  url_path: /2018-19/provincial/limpopo/departments/co-operative-governance-human-settlements-and-traditional-affairs

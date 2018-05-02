@@ -1,0 +1,117 @@
+contributed_datasets: null
+description: 'Limpopo department: Health budget data for the 2018-19 financial year
+  from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 14526109739.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 15432089000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 17217612660.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 18606039183.8645
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 19511420000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 20514589000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 21741023000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 17032046999
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 17205333844
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 18059175058
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 18606039183
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 18495707091
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 18469400527
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 18545974947
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/limpopo/departments/health
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/limpopo/departments/health
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/limpopo/departments/health
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/limpopo/departments/health
+  id: 2018-19
+  is_selected: true
+government:
+  name: Limpopo
+  slug: limpopo
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Health
+programmes:
+- name: Administration
+  total_budget: 308533000.0
+- name: Direct Charges
+  total_budget: 0.0
+- name: District Health Services
+  total_budget: 12548883000.0
+- name: Emergency  Madical Services
+  total_budget: 735863000.0
+- name: Provincial Hospital Services
+  total_budget: 2537298000.0
+- name: Central Hospital Services
+  total_budget: 1838220000.0
+- name: Health Sciences And Training
+  total_budget: 671825000.0
+- name: Health Care Support Services
+  total_budget: 141521000.0
+- name: Health Facilities Management
+  total_budget: 729277000.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: health
+sphere:
+  name: Provincial
+  slug: provincial
+title: Health budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 7 - Health:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/98237d67-83c9-40c4-b7f5-7024cd714782/resource/fa42b5cd-70e8-4759-87ab-b08828ebb456/download/lim-vote-07-health.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/98237d67-83c9-40c4-b7f5-7024cd714782/resource/13621c19-b1a1-40e2-9c25-e4760729e08d/download/lim-health.xlsm
+vote_number: 7
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2018-19/provincial/limpopo/departments/health

@@ -1,0 +1,107 @@
+contributed_datasets: null
+description: 'North West department: Office Of The Premier budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 550729000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 852861000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 569415000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 780522000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 775381400.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 867971000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 936487900.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 645736703
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 950860134
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 597246863
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 780522000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 735017095
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 781439201
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 798862184
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/north-west/departments/office-of-the-premier
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/north-west/departments/office-of-the-premier
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/north-west/departments/office-of-the-premier
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/north-west/departments/office-of-the-premier
+  id: 2018-19
+  is_selected: true
+government:
+  name: North West
+  slug: north-west
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Office Of The Premier
+programmes:
+- name: Administration
+  total_budget: 124488399.99999999
+- name: Institutional Development
+  total_budget: 404717000.0
+- name: Policy And Governance
+  total_budget: 246176000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: office-of-the-premier
+sphere:
+  name: Provincial
+  slug: provincial
+title: Office Of The Premier budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 1 - Office Of The Premier:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/d6bfbe2c-c329-4fab-8f22-ff070f7607fa/resource/5dd33872-e6cb-4af2-8f3f-30f1448650a9/download/nw-vote-01-office-of-the-premier.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/d6bfbe2c-c329-4fab-8f22-ff070f7607fa/resource/5afccc39-e6d6-4b5b-b574-1a1c846967fc/download/nw-office-of-the-premier.xlsm
+vote_number: 1
+vote_primary:
+  name: Office Of The Premier
+  slug: office-of-the-premier
+  url_path: /2018-19/provincial/north-west/departments/office-of-the-premier

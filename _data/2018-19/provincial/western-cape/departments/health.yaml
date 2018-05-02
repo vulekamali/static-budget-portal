@@ -1,0 +1,117 @@
+contributed_datasets: null
+description: 'Western Cape department: Health budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 17305808000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 18737118000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 20078184000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 21686482000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 23063703000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 23964555000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 25431524000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 20291278292
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 20890131625
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 21059565392
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 21686482000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 21863067636
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 21575424433
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 21694122074
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/western-cape/departments/health
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/western-cape/departments/health
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/western-cape/departments/health
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/western-cape/departments/health
+  id: 2018-19
+  is_selected: true
+government:
+  name: Western Cape
+  slug: western-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Health
+programmes:
+- name: Administration
+  total_budget: 845174000.0
+- name: Direct Charges
+  total_budget: 0.0
+- name: District Health Services
+  total_budget: 9344338000.0
+- name: Emergency Medical Services
+  total_budget: 1096633000.0
+- name: Provincial Hospital Services
+  total_budget: 3631615000.0
+- name: Central Hospital Services
+  total_budget: 6439035000.0
+- name: Health Sciences And Training
+  total_budget: 349618000.0
+- name: Health Care Support Services
+  total_budget: 469674000.0
+- name: Health Facilities Management
+  total_budget: 887616000.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: health
+sphere:
+  name: Provincial
+  slug: provincial
+title: Health budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 6 - Health:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/9772b75e-dea9-44ee-babf-684d1f1248fc/resource/e2207b48-599c-4517-8f2e-69b83ea7a297/download/wc-vote-06-health.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/9772b75e-dea9-44ee-babf-684d1f1248fc/resource/ba1a8fef-05c3-4324-8f9c-ac7e33a7a998/download/wc-health.xlsm
+vote_number: 6
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2018-19/provincial/western-cape/departments/health

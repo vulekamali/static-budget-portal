@@ -1,0 +1,109 @@
+contributed_datasets: null
+description: 'North West department: Finance budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 421085000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 425598000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 452001000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 467005000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 484084400.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 515079000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 558512000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 493727476
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 474501907
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 474093902
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 467005000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 458884246
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 463728537
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 476433402
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/north-west/departments/finance
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/north-west/departments/finance
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/north-west/departments/finance
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/north-west/departments/finance
+  id: 2018-19
+  is_selected: true
+government:
+  name: North West
+  slug: north-west
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Finance
+programmes:
+- name: Administration
+  total_budget: 143037400.0
+- name: Sustainable Resource Management
+  total_budget: 131940000.0
+- name: Asset And Liabilities Management
+  total_budget: 52448000.0
+- name: Financial Governance
+  total_budget: 156659000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: finance
+sphere:
+  name: Provincial
+  slug: provincial
+title: Finance budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 7 - Finance:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/f3edbb87-e3fb-4c39-9890-cd3ebef2a057/resource/3fee0bbb-ee5f-413d-b5cb-161b80218cbc/download/nw-vote-07-finance.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/f3edbb87-e3fb-4c39-9890-cd3ebef2a057/resource/08eccd17-e15e-4b48-88df-ec5cede85ae4/download/nw-finance.xlsm
+vote_number: 7
+vote_primary:
+  name: Finance
+  slug: finance
+  url_path: /2018-19/provincial/north-west/departments/finance

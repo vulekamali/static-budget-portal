@@ -1,0 +1,112 @@
+contributed_datasets: null
+description: 'North West department: Culture, Arts And Traditional Affairs budget
+  data for the 2018-19 financial year from National Treasury in partnership with IMALI
+  YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 501449000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 585294000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 642159000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 745299000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 732049400.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 775236000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 812245000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 587955281
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 652547990
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 673546444
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 745299000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 693940844
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 697949356
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 692877948
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/north-west/departments/culture-arts-and-traditional-affairs
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/north-west/departments/culture-arts-and-traditional-affairs
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/north-west/departments/culture-arts-and-traditional-affairs
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/north-west/departments/culture-arts-and-traditional-affairs
+  id: 2018-19
+  is_selected: true
+government:
+  name: North West
+  slug: north-west
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Culture, Arts And Traditional Affairs
+programmes:
+- name: Administration
+  total_budget: 106301400.0
+- name: Cultural Affairs
+  total_budget: 293089000.0
+- name: Library And Archive Services
+  total_budget: 198710000.0
+- name: Recreation
+  total_budget: 0.0
+- name: Traditional Affairs
+  total_budget: 133949000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: culture-arts-and-traditional-affairs
+sphere:
+  name: Provincial
+  slug: provincial
+title: Culture, Arts And Traditional Affairs budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 4 - Culture, Arts And Traditional Affairs:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/bc33fac6-5406-43fb-90cb-8be4eeeec47e/resource/1e7f38cc-9093-4860-b881-9f425c18d5d7/download/nw-vote-04-culture-arts-and-traditional-affairs.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/bc33fac6-5406-43fb-90cb-8be4eeeec47e/resource/e65aa74e-1058-4a91-b12f-b0c4a76a2791/download/nw-culture-arts-and-trad.xlsm
+vote_number: 4
+vote_primary:
+  name: Culture, Arts And Traditional Affairs
+  slug: culture-arts-and-traditional-affairs
+  url_path: /2018-19/provincial/north-west/departments/culture-arts-and-traditional-affairs

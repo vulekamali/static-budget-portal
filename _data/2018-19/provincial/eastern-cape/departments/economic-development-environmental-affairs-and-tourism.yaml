@@ -1,0 +1,108 @@
+contributed_datasets: null
+description: 'Eastern Cape department: Economic Development, Environmental Affairs
+  And Tourism budget data for the 2018-19 financial year from National Treasury in
+  partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1134358000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1246351000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1039523800.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1118666000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1146006188.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1140580000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1199467000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 1330049071
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1389564630
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1090333639
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1118666000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1086348137
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1026870626
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1023194029
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/eastern-cape/departments/economic-development-environmental-affairs-and-tourism
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/eastern-cape/departments/economic-development-environmental-affairs-and-tourism
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/eastern-cape/departments/economic-development-environmental-affairs-and-tourism
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/eastern-cape/departments/economic-development-environmental-affairs-and-tourism
+  id: 2018-19
+  is_selected: true
+government:
+  name: Eastern Cape
+  slug: eastern-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Economic Development, Environmental Affairs And Tourism
+programmes:
+- name: Administration
+  total_budget: 234687000.0
+- name: Economic Development  And Tourism
+  total_budget: 591542188.0
+- name: Environmental  Affairs
+  total_budget: 319777000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: economic-development-environmental-affairs-and-tourism
+sphere:
+  name: Provincial
+  slug: provincial
+title: Economic Development, Environmental Affairs And Tourism budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 9 - Economic Development, Environmental Affairs And Tourism:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/b9dd0243-6f14-417e-8e49-daa4078991d7/resource/78747296-4b08-4d53-8397-322b3a6a7889/download/ec-vote-09-eco-dev.-environ.-affairs-and-tourism.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/b9dd0243-6f14-417e-8e49-daa4078991d7/resource/cd8870cb-589d-4db5-a91e-f32208c835f8/download/ec-eco-dev-environment-and-tourism.xlsm
+vote_number: 9
+vote_primary:
+  name: Economic Development, Environmental Affairs And Tourism
+  slug: economic-development-environmental-affairs-and-tourism
+  url_path: /2018-19/provincial/eastern-cape/departments/economic-development-environmental-affairs-and-tourism

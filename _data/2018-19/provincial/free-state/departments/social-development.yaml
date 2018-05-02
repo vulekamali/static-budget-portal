@@ -1,0 +1,111 @@
+contributed_datasets: null
+description: 'Free State department: Social Development budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 956335000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1002691000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1090754000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1199009000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1266057000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1320685000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1385346000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 1121314857
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1117906551
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1144067869
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1199009000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1200149421
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1189020176
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1181756360
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/free-state/departments/social-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/free-state/departments/social-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/free-state/departments/social-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/free-state/departments/social-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: Free State
+  slug: free-state
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Social Development
+programmes:
+- name: Administration
+  total_budget: 268718000.0
+- name: Social Welfare Services
+  total_budget: 217626000.0
+- name: Children And Families
+  total_budget: 461661000.0
+- name: Restorative Services
+  total_budget: 156898000.0
+- name: Development And Research
+  total_budget: 161154000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: social-development
+sphere:
+  name: Provincial
+  slug: provincial
+title: Social Development budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 7 - Social Development:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/46ac479f-0873-4351-914b-832f0f31fbb2/resource/9a8103c6-6085-4c0d-b881-d60942838a76/download/fs-social-development.xlsm
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/46ac479f-0873-4351-914b-832f0f31fbb2/resource/e524ebb1-000b-4f26-b95a-1aae23e77177/download/fs-vote-07-social-development.pdf
+vote_number: 7
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2018-19/provincial/free-state/departments/social-development

@@ -1,0 +1,118 @@
+contributed_datasets: null
+description: 'Eastern Cape department: Rural Development And Agrarian Reform budget
+  data for the 2018-19 financial year from National Treasury in partnership with IMALI
+  YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1852768000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1968065000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2184529000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2212616090.1
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2328236322.4110003
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2387585000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2532830000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 2172393863
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2194208143
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2291304399
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2212616090
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2207034498
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2149556282
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2160606781
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/eastern-cape/departments/rural-development-and-agrarian-reform
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/eastern-cape/departments/rural-development-and-agrarian-reform
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/eastern-cape/departments/rural-development-and-agrarian-reform
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/eastern-cape/departments/rural-development-and-agrarian-reform
+  id: 2018-19
+  is_selected: true
+government:
+  name: Eastern Cape
+  slug: eastern-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Rural Development And Agrarian Reform
+programmes:
+- name: Administration
+  total_budget: 474026000.0
+- name: Direct Charges
+  total_budget: 0.0
+- name: Sustainable Resource Management
+  total_budget: 127957583.238
+- name: Farmer Support And Development
+  total_budget: 823160212.4
+- name: Veterianary Services
+  total_budget: 329984003.62
+- name: Research And Technology Development
+  total_budget: 135165958.835
+- name: Agricultural Economics Services
+  total_budget: 85815016.6
+- name: Structured Agricultural Education And Training
+  total_budget: 159966112.239
+- name: Rural Development Coordination
+  total_budget: 192161435.479
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: rural-development-and-agrarian-reform
+sphere:
+  name: Provincial
+  slug: provincial
+title: Rural Development And Agrarian Reform budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 8 - Rural Development And Agrarian Reform:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/50ca5486-8b2f-49b4-8163-5ae0ea205f8f/resource/75673125-c771-40ba-9078-60238aba2e3d/download/ec-vote-08-rural-dev.-and-agrarian-reform.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/50ca5486-8b2f-49b4-8163-5ae0ea205f8f/resource/bb27200d-900a-4ffe-813a-52bb1f69de64/download/ec-rural-dev.-and-agrarian-reform.xlsm
+vote_number: 8
+vote_primary:
+  name: Rural Development And Agrarian Reform
+  slug: rural-development-and-agrarian-reform
+  url_path: /2018-19/provincial/eastern-cape/departments/rural-development-and-agrarian-reform

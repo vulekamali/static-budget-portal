@@ -1,0 +1,113 @@
+contributed_datasets: null
+description: 'Gauteng department: Gauteng Provincial Treasury budget data for the
+  2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 482189000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 555189000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 616351000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 654907000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 796413000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 831470000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 882786000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 565372688
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 618983735
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 646477001
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 654907000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 754953846
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 748577144
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 753052284
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/gauteng/departments/gauteng-provincial-treasury
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/gauteng/departments/gauteng-provincial-treasury
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/gauteng/departments/gauteng-provincial-treasury
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/gauteng/departments/gauteng-provincial-treasury
+  id: 2018-19
+  is_selected: true
+government:
+  name: Gauteng
+  slug: gauteng
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Gauteng Provincial Treasury
+programmes:
+- name: Administration
+  total_budget: 149397000.0
+- name: Sustainable Fiscal  Resource Management
+  total_budget: 156001000.0
+- name: Financial Governance
+  total_budget: 166413000.0
+- name: Provincial Supply Chain Management
+  total_budget: 128034000.0
+- name: Municipal Financial Governance
+  total_budget: 78576000.0
+- name: Gauteng Audit Services
+  total_budget: 117992000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: gauteng-provincial-treasury
+sphere:
+  name: Provincial
+  slug: provincial
+title: Gauteng Provincial Treasury budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 14 - Gauteng Provincial Treasury:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/74537e82-8f18-46a3-b861-709649e831bd/resource/4dbd8beb-b57a-49be-97b6-625c8132080d/download/gt-vote-14-gauteng-provincial-treasury.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/74537e82-8f18-46a3-b861-709649e831bd/resource/f579a5bf-7867-4b7b-85d3-0ac694982c8a/download/gt-provincial-treasury.xlsm
+vote_number: 14
+vote_primary:
+  name: Gauteng Provincial Treasury
+  slug: gauteng-provincial-treasury
+  url_path: /2018-19/provincial/gauteng/departments/gauteng-provincial-treasury

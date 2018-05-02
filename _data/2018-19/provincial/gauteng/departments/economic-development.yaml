@@ -1,0 +1,111 @@
+contributed_datasets: null
+description: 'Gauteng department: Economic Development budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1060655000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1270844000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1359269000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1425973000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1510450000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1587355000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1676058000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 1243631373
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1416872030
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1425707344
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1425973000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1431819968
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1429104686
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1429745494
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/gauteng/departments/economic-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/gauteng/departments/economic-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/gauteng/departments/economic-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/gauteng/departments/economic-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: Gauteng
+  slug: gauteng
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Economic Development
+programmes:
+- name: Administration
+  total_budget: 302494000.0
+- name: Integrated Economic Development Services
+  total_budget: 320504000.0
+- name: Trade And Sector Development
+  total_budget: 703148000.0
+- name: Business Regulation And Governance
+  total_budget: 64792000.0
+- name: Economic Planning
+  total_budget: 119512000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: economic-development
+sphere:
+  name: Provincial
+  slug: provincial
+title: Economic Development budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 3 - Economic Development:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/4c440c9e-a827-4bd4-9a80-d1ae51c60830/resource/66d6bd17-1f2e-4388-9319-e423c545e62d/download/gt-vote-03-economic-development.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/4c440c9e-a827-4bd4-9a80-d1ae51c60830/resource/57905a1e-9f04-4064-ac8b-06e0dd526a8c/download/gt-economic-development.xlsm
+vote_number: 3
+vote_primary:
+  name: Economic Development
+  slug: economic-development
+  url_path: /2018-19/provincial/gauteng/departments/economic-development

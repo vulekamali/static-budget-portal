@@ -1,0 +1,54 @@
+contributed_datasets: null
+description: 'KwaZulu-Natal department: Arts And Culture budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/kwazulu-natal/departments/arts-and-culture
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/kwazulu-natal/departments/arts-and-culture
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/kwazulu-natal/departments/arts-and-culture
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/kwazulu-natal/departments/arts-and-culture
+  id: 2018-19
+  is_selected: true
+government:
+  name: KwaZulu-Natal
+  slug: kwazulu-natal
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Arts And Culture
+programmes: []
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: arts-and-culture
+sphere:
+  name: Provincial
+  slug: provincial
+title: Arts And Culture budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 15 - Arts And Culture:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/13bbdef4-de60-4232-bd07-a1774e3e7f1b/resource/8add4b9d-1780-4874-b958-edd0853c046a/download/kzn-vote-15-arts-and-culture.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/13bbdef4-de60-4232-bd07-a1774e3e7f1b/resource/c82b68bf-5d0a-4677-9a0d-87021212de9a/download/kzn-arts-and-culture.xlsm
+vote_number: 15
+vote_primary:
+  name: Arts And Culture
+  slug: arts-and-culture
+  url_path: /2018-19/provincial/kwazulu-natal/departments/arts-and-culture

@@ -1,0 +1,117 @@
+contributed_datasets: null
+description: 'North West department: Health budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 8372853000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 9042677000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 9767254000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 10600197000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 11153568000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 11934038000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 12884404000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 9817275814
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 10081737905
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 10244657799
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 10600197000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 10572942756
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 10744281922
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 10990919507
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/north-west/departments/health
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/north-west/departments/health
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/north-west/departments/health
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/north-west/departments/health
+  id: 2018-19
+  is_selected: true
+government:
+  name: North West
+  slug: north-west
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Health
+programmes:
+- name: Administration
+  total_budget: 344922000.0
+- name: Direct Charges
+  total_budget: 0.0
+- name: District Health Services
+  total_budget: 5662214000.0
+- name: Emergency Medical Services
+  total_budget: 335873000.0
+- name: Provincial Hospital Services
+  total_budget: 1726655000.0
+- name: Central Hospital Services
+  total_budget: 1678819000.0
+- name: Health Science And Training
+  total_budget: 422143000.0
+- name: Health Care Support Services
+  total_budget: 291673000.0
+- name: Health Facilities And Maintenance
+  total_budget: 691269000.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: health
+sphere:
+  name: Provincial
+  slug: provincial
+title: Health budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 3 - Health:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/0ca1158c-3959-464f-97a6-c024a972209b/resource/ffbae3f3-5ace-4619-be10-ac5ef1bd0caf/download/nw-vote-03-health.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/0ca1158c-3959-464f-97a6-c024a972209b/resource/cc80ba6c-5234-418f-9c52-350212e19302/download/nw-health.xlsm
+vote_number: 3
+vote_primary:
+  name: Health
+  slug: health
+  url_path: /2018-19/provincial/north-west/departments/health

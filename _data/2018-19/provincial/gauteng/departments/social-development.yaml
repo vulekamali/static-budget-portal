@@ -1,0 +1,111 @@
+contributed_datasets: null
+description: 'Gauteng department: Social Development budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 3408805000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 3942241000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 4251803000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 4586318700.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 4983495000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 5293915000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 5599412000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 3996866884
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 4395229479
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 4459622609
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 4586318700
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 4724067434
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 4766141622
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 4776525680
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/gauteng/departments/social-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/gauteng/departments/social-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/gauteng/departments/social-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/gauteng/departments/social-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: Gauteng
+  slug: gauteng
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Social Development
+programmes:
+- name: Administration
+  total_budget: 623594000.0
+- name: Social Welfare Services
+  total_budget: 814123000.0
+- name: Children And Families
+  total_budget: 2303871000.0
+- name: Restorative Services
+  total_budget: 619317000.0
+- name: Development And Research
+  total_budget: 622590000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: social-development
+sphere:
+  name: Provincial
+  slug: provincial
+title: Social Development budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 6 - Social Development:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/2c7ba514-7be6-4dce-965c-8b9371a7a2b7/resource/67817038-9849-4b51-ba33-854f858bc7c1/download/gt-vote-06-social-development.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/2c7ba514-7be6-4dce-965c-8b9371a7a2b7/resource/d54ca7a3-1f0b-4c57-92fb-9ea04706e9a9/download/gt-social-development.xlsm
+vote_number: 6
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2018-19/provincial/gauteng/departments/social-development

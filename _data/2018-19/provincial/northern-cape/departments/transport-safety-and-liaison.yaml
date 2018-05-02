@@ -1,0 +1,110 @@
+contributed_datasets: null
+description: 'Northern Cape department: Transport, Safety And Liaison budget data
+  for the 2018-19 financial year from National Treasury in partnership with IMALI
+  YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 383975000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 353227000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 368154000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 417546000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 291696009.59999996
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 306143000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 298507000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 450215533
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 393815021
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 386148629
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 417546000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 276511087
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 275622274
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 254638585
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/northern-cape/departments/transport-safety-and-liaison
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/northern-cape/departments/transport-safety-and-liaison
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/northern-cape/departments/transport-safety-and-liaison
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/northern-cape/departments/transport-safety-and-liaison
+  id: 2018-19
+  is_selected: true
+government:
+  name: Northern Cape
+  slug: northern-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Transport, Safety And Liaison
+programmes:
+- name: Administration
+  total_budget: 79661321.6
+- name: Civilian Oversight
+  total_budget: 27859000.0
+- name: Transport Operations
+  total_budget: 93134000.0
+- name: Transport Regulations
+  total_budget: 91041687.99999999
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: transport-safety-and-liaison
+sphere:
+  name: Provincial
+  slug: provincial
+title: Transport, Safety And Liaison budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 3 - Transport, Safety And Liaison:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/5f05874e-ce27-4f45-a6df-2b5c30d5aa35/resource/beabc6ac-bba9-4468-ad06-fae3d0f9327a/download/nc-vote-03-transport-safety-and-liaison.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/5f05874e-ce27-4f45-a6df-2b5c30d5aa35/resource/9eaaedfb-eff9-42a0-9ee6-e75fe3d4c853/download/nc-transport-safety-and-liaison.xlsm
+vote_number: 3
+vote_primary:
+  name: Transport, Safety And Liaison
+  slug: transport-safety-and-liaison
+  url_path: /2018-19/provincial/northern-cape/departments/transport-safety-and-liaison

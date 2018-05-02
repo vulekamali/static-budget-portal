@@ -1,0 +1,115 @@
+contributed_datasets: null
+description: 'Eastern Cape department: Education budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 26957826000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 28425927000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 30966951000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 33021043911.177
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 34772125813.66324
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 36810482999.9926
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 39327048044.13062
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 31608391212
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 31692246193
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 32480553499
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 33021043911
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 32961980932
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 33140686081
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 33547568014
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/eastern-cape/departments/education
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/eastern-cape/departments/education
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/eastern-cape/departments/education
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/eastern-cape/departments/education
+  id: 2018-19
+  is_selected: true
+government:
+  name: Eastern Cape
+  slug: eastern-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Education
+programmes:
+- name: Administration
+  total_budget: 3012024033.01
+- name: Public Ordinary School Education
+  total_budget: 28057586274.0
+- name: Independent School Subsidies
+  total_budget: 131008839.0
+- name: Public Special School Education
+  total_budget: 805811563.396239
+- name: Early Childhood Development
+  total_budget: 785499611.587
+- name: Infrastructure Development
+  total_budget: 1489828098.0
+- name: Examination And Education Related Services
+  total_budget: 490367394.67
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: education
+sphere:
+  name: Provincial
+  slug: provincial
+title: Education budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 6 - Education:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/42ff63e6-c31d-4dc0-a6ca-8e48d3118daf/resource/58a54253-ab22-4df0-ba05-b37da259bc16/download/ec-vote-06-education.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/42ff63e6-c31d-4dc0-a6ca-8e48d3118daf/resource/321918d0-b11a-4bd5-9594-71c927947867/download/ec-education.xlsm
+vote_number: 6
+vote_primary:
+  name: Education
+  slug: education
+  url_path: /2018-19/provincial/eastern-cape/departments/education

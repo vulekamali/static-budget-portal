@@ -1,0 +1,111 @@
+contributed_datasets: null
+description: 'Free State department: Police, Roads And Transport budget data for the
+  2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 2401921800.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2420214400.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2605121000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2700970000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2776609000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2793979000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2932535000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 2816283624
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2698312375
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2732454093
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2700970000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2632066080
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2515435099
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2501571367
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/free-state/departments/police-roads-and-transport
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/free-state/departments/police-roads-and-transport
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/free-state/departments/police-roads-and-transport
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/free-state/departments/police-roads-and-transport
+  id: 2018-19
+  is_selected: true
+government:
+  name: Free State
+  slug: free-state
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Police, Roads And Transport
+programmes:
+- name: Administration
+  total_budget: 280531000.0
+- name: Provincial Secretariat For Police Services
+  total_budget: 24595000.0
+- name: Transport Operations
+  total_budget: 355224000.0
+- name: Transport Regulations
+  total_budget: 412079000.0
+- name: Transport Infrastructure
+  total_budget: 1704180000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: police-roads-and-transport
+sphere:
+  name: Provincial
+  slug: provincial
+title: Police, Roads And Transport budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 10 - Police, Roads And Transport:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/248691a5-8427-4049-980e-6d6db1d2cb6e/resource/7d1322fc-1f51-4c58-94ba-63799a472bdc/download/fs-police-roads-and-transp.xlsm
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/248691a5-8427-4049-980e-6d6db1d2cb6e/resource/55954fa3-b611-4093-ba28-a12ae7060bd5/download/fs-vote-10-police-roads-and-transport.pdf
+vote_number: 10
+vote_primary:
+  name: Police, Roads And Transport
+  slug: police-roads-and-transport
+  url_path: /2018-19/provincial/free-state/departments/police-roads-and-transport

@@ -1,0 +1,109 @@
+contributed_datasets: null
+description: 'Northern Cape department: Roads And Public Works budget data for the
+  2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1213976000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1462408000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1559757000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1707307000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1747944000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1722632000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1818177000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 1423402181
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1630447948
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1635994796
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1707307000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1656950659
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1550895334
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1550978769
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/northern-cape/departments/roads-and-public-works
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/northern-cape/departments/roads-and-public-works
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/northern-cape/departments/roads-and-public-works
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/northern-cape/departments/roads-and-public-works
+  id: 2018-19
+  is_selected: true
+government:
+  name: Northern Cape
+  slug: northern-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Roads And Public Works
+programmes:
+- name: Administration
+  total_budget: 155259000.0
+- name: Public Works Infrastructure
+  total_budget: 149067000.0
+- name: Transport Infrastructure
+  total_budget: 1351764000.0
+- name: Community Based Programme
+  total_budget: 91854000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: roads-and-public-works
+sphere:
+  name: Provincial
+  slug: provincial
+title: Roads And Public Works budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 5 - Roads And Public Works:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/3453dae8-da1b-4569-9e47-1d57955ef285/resource/fc5a6cc6-538b-4fc6-a399-132335568a26/download/nc-vote-05-roads-and-public-works.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/3453dae8-da1b-4569-9e47-1d57955ef285/resource/60de135a-a4cc-4e57-a359-ab552ddd7d0f/download/nc-roads-and-public-works.xlsm
+vote_number: 5
+vote_primary:
+  name: Roads And Public Works
+  slug: roads-and-public-works
+  url_path: /2018-19/provincial/northern-cape/departments/roads-and-public-works

@@ -1,0 +1,110 @@
+contributed_datasets: null
+description: 'Gauteng department: Sport, Arts, Culture And Recreation budget data
+  for the 2018-19 financial year from National Treasury in partnership with IMALI
+  YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 642606000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 704333000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 810112000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 912943850.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 942651500.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 989706000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1079675000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 753463645
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 785265326
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 849708650
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 912943850
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 893579556
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 891037910
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 921006592
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/gauteng/departments/sport-arts-culture-and-recreation
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/gauteng/departments/sport-arts-culture-and-recreation
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/gauteng/departments/sport-arts-culture-and-recreation
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/gauteng/departments/sport-arts-culture-and-recreation
+  id: 2018-19
+  is_selected: true
+government:
+  name: Gauteng
+  slug: gauteng
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Sport, Arts, Culture And Recreation
+programmes:
+- name: Administration
+  total_budget: 128192000.0
+- name: Cultural Affairs
+  total_budget: 205455500.0
+- name: Library And Archives Services
+  total_budget: 300538000.0
+- name: Sport And Recreation
+  total_budget: 308466000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: sport-arts-culture-and-recreation
+sphere:
+  name: Provincial
+  slug: provincial
+title: Sport, Arts, Culture And Recreation budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 12 - Sport, Arts, Culture And Recreation:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/1c1b8a2e-ac0e-42e5-ba81-90b94e821e69/resource/d08df85b-7bfd-4d8e-a53f-7293ff99ecaf/download/gt-vote-12-sport-arts-culture-and-recreation.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/1c1b8a2e-ac0e-42e5-ba81-90b94e821e69/resource/a15ff09b-86d9-433f-b906-40b1f3c30176/download/gt-sport-arts-cult-and-recreation.xlsm
+vote_number: 12
+vote_primary:
+  name: Sport, Arts, Culture And Recreation
+  slug: sport-arts-culture-and-recreation
+  url_path: /2018-19/provincial/gauteng/departments/sport-arts-culture-and-recreation

@@ -1,0 +1,109 @@
+contributed_datasets: null
+description: 'Western Cape department: Cultural Affairs And Sport budget data for
+  the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 612490000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 685544000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 723373000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 727333000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 760734000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 727627000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 767583000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 718152255
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 764317350
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 758730022
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 727333000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 721132200
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 655086704
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 654779450
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/western-cape/departments/cultural-affairs-and-sport
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/western-cape/departments/cultural-affairs-and-sport
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/western-cape/departments/cultural-affairs-and-sport
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/western-cape/departments/cultural-affairs-and-sport
+  id: 2018-19
+  is_selected: true
+government:
+  name: Western Cape
+  slug: western-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Cultural Affairs And Sport
+programmes:
+- name: Administration
+  total_budget: 66365000.0
+- name: Cultural Affairs
+  total_budget: 111917000.0
+- name: Library And Archive Services
+  total_budget: 396929000.0
+- name: Sport And Recreation
+  total_budget: 185523000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: cultural-affairs-and-sport
+sphere:
+  name: Provincial
+  slug: provincial
+title: Cultural Affairs And Sport budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 13 - Cultural Affairs And Sport:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/52965c96-b2da-4000-bcda-fc1992f9b012/resource/43605d1a-521e-425b-a5c6-696bac9fb777/download/wc-vote-13-cultural-affairs-and-sport.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/52965c96-b2da-4000-bcda-fc1992f9b012/resource/381a8416-d21b-47bd-9e55-0adcf39bcf1b/download/wc-cultural-affairs-and-sport.xlsm
+vote_number: 13
+vote_primary:
+  name: Cultural Affairs And Sport
+  slug: cultural-affairs-and-sport
+  url_path: /2018-19/provincial/western-cape/departments/cultural-affairs-and-sport

@@ -1,0 +1,54 @@
+contributed_datasets: null
+description: 'KwaZulu-Natal department: Community Safety And Liaison budget data for
+  the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time: null
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/kwazulu-natal/departments/community-safety-and-liaison
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/kwazulu-natal/departments/community-safety-and-liaison
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/kwazulu-natal/departments/community-safety-and-liaison
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/kwazulu-natal/departments/community-safety-and-liaison
+  id: 2018-19
+  is_selected: true
+government:
+  name: KwaZulu-Natal
+  slug: kwazulu-natal
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Community Safety And Liaison
+programmes: []
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: community-safety-and-liaison
+sphere:
+  name: Provincial
+  slug: provincial
+title: Community Safety And Liaison budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 9 - Community Safety And Liaison:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/bcc2023d-fd83-4228-af27-0805e9f61a56/resource/568212e2-e1e4-4eed-9a22-499ffd38fa56/download/kzn-vote-09-community-safety-and-liaison.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/bcc2023d-fd83-4228-af27-0805e9f61a56/resource/af7d625f-7ca9-479a-a55a-8ac51c39eea5/download/kzn-com-safety-and-lia.xlsm
+vote_number: 9
+vote_primary:
+  name: Community Safety And Liaison
+  slug: community-safety-and-liaison
+  url_path: /2018-19/provincial/kwazulu-natal/departments/community-safety-and-liaison

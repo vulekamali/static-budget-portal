@@ -1,0 +1,107 @@
+contributed_datasets: null
+description: 'Eastern Cape department: Office Of The Premier budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 450686000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 644886000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 506303000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 860944000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 973396122.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 984164455.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 945389989.575
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 528435022
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 718987489
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 531050075
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 860944000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 922723694
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 886048826
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 806456028
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/eastern-cape/departments/office-of-the-premier
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/eastern-cape/departments/office-of-the-premier
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/eastern-cape/departments/office-of-the-premier
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/eastern-cape/departments/office-of-the-premier
+  id: 2018-19
+  is_selected: true
+government:
+  name: Eastern Cape
+  slug: eastern-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Office Of The Premier
+programmes:
+- name: Administration
+  total_budget: 381691958.0
+- name: Planning, Policy Coordination, Monitoring And Evaluation
+  total_budget: 404516164.0
+- name: Institutional Development And Organisational Support
+  total_budget: 187188000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: office-of-the-premier
+sphere:
+  name: Provincial
+  slug: provincial
+title: Office Of The Premier budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 1 - Office Of The Premier:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/19e1ced0-cc48-47b0-95e1-0a5e06602994/resource/4584cd53-6a5f-49e9-83d0-01b25d527a00/download/ec-vote-01-office-of-the-premier.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/19e1ced0-cc48-47b0-95e1-0a5e06602994/resource/89e2f4d9-bd36-47b9-83a7-9303625e996e/download/ec-office-of-the-premier.xlsm
+vote_number: 1
+vote_primary:
+  name: Office Of The Premier
+  slug: office-of-the-premier
+  url_path: /2018-19/provincial/eastern-cape/departments/office-of-the-premier

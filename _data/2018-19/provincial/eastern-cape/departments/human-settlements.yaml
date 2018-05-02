@@ -1,0 +1,109 @@
+contributed_datasets: null
+description: 'Eastern Cape department: Human Settlements budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 2719830000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2799821000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2362298000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2680648000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2376749000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2474761000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2645847200.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 3189035001
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 3121538179
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2477762391
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2680648000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 2253021734
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 2228041328
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 2257015039
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/eastern-cape/departments/human-settlements
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/eastern-cape/departments/human-settlements
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/eastern-cape/departments/human-settlements
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/eastern-cape/departments/human-settlements
+  id: 2018-19
+  is_selected: true
+government:
+  name: Eastern Cape
+  slug: eastern-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Human Settlements
+programmes:
+- name: Administration
+  total_budget: 156952000.0
+- name: Housing Needs, Research And Planning
+  total_budget: 20120000.0
+- name: Housing Development
+  total_budget: 2186394000.0
+- name: Housing Asset Management
+  total_budget: 13283000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: human-settlements
+sphere:
+  name: Provincial
+  slug: provincial
+title: Human Settlements budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 11 - Human Settlements:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/f85a5a55-edfc-48aa-835c-780b97e7bc16/resource/9faa734a-06c1-4d03-b38b-907328068044/download/ec-vote-11-human-settlements.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/f85a5a55-edfc-48aa-835c-780b97e7bc16/resource/2c4d24d1-1218-4ea2-960f-fc3d86eed00d/download/ec-human-settlements.xlsm
+vote_number: 11
+vote_primary:
+  name: Human Settlements
+  slug: human-settlements
+  url_path: /2018-19/provincial/eastern-cape/departments/human-settlements

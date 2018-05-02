@@ -1,0 +1,110 @@
+contributed_datasets: null
+description: 'North West department: Economy And Enterprise Development budget data
+  for the 2018-19 financial year from National Treasury in partnership with IMALI
+  YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 225799000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 234759500.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 298401000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 297708000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 297190400.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 313762000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 374138000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 264752177
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 261734854
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 312986242
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 297708000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 281719453
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 282481703
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 319154897
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/north-west/departments/economy-and-enterprise-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/north-west/departments/economy-and-enterprise-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/north-west/departments/economy-and-enterprise-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/north-west/departments/economy-and-enterprise-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: North West
+  slug: north-west
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Economy And Enterprise Development
+programmes:
+- name: Administration
+  total_budget: 102727400.0
+- name: Integrated Economic Development Services
+  total_budget: 53118000.0
+- name: Economic Planning And Sector Development
+  total_budget: 32294000.0
+- name: Business Regulation And Governance
+  total_budget: 109051000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: economy-and-enterprise-development
+sphere:
+  name: Provincial
+  slug: provincial
+title: Economy And Enterprise Development budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 6 - Economy And Enterprise Development:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/93a12454-b9bd-40d1-baeb-696f2b30ddc9/resource/f209d915-81f1-4757-b957-c2b215810251/download/nw-vote-06-economy-and-entreprise-development.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/93a12454-b9bd-40d1-baeb-696f2b30ddc9/resource/d03167fd-61fe-4839-8dd5-d1c87b959205/download/nw-economy-and-enterprise-development.xlsm
+vote_number: 6
+vote_primary:
+  name: Economy And Enterprise Development
+  slug: economy-and-enterprise-development
+  url_path: /2018-19/provincial/north-west/departments/economy-and-enterprise-development

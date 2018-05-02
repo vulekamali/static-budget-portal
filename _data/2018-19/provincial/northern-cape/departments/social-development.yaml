@@ -1,0 +1,111 @@
+contributed_datasets: null
+description: 'Northern Cape department: Social Development budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 654471000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 713793000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 729776000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 870316000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 870916000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 922584000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 975277000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 767375507
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 795812340
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 765445988
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 870316000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 825578417
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 830607594
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 831950861
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/northern-cape/departments/social-development
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/northern-cape/departments/social-development
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/northern-cape/departments/social-development
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/northern-cape/departments/social-development
+  id: 2018-19
+  is_selected: true
+government:
+  name: Northern Cape
+  slug: northern-cape
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Social Development
+programmes:
+- name: Administration
+  total_budget: 137214000.0
+- name: Social Welfare Services
+  total_budget: 116778000.0
+- name: Children And Families
+  total_budget: 294163000.0
+- name: Restorative Services
+  total_budget: 177139000.0
+- name: Development And Research
+  total_budget: 145622000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: social-development
+sphere:
+  name: Provincial
+  slug: provincial
+title: Social Development budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 11 - Social Development:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/345a5315-f535-41c8-8ec8-a4e1e3da8c1d/resource/50c5119d-c7a2-472e-9e5f-801b42ace31f/download/nc-vote-11-social-development.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/345a5315-f535-41c8-8ec8-a4e1e3da8c1d/resource/f25aa978-b9c2-48c9-a8ee-a3e730f0c51b/download/nc-social-development.xlsm
+vote_number: 11
+vote_primary:
+  name: Social Development
+  slug: social-development
+  url_path: /2018-19/provincial/northern-cape/departments/social-development

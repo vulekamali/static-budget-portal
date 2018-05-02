@@ -1,0 +1,107 @@
+contributed_datasets: null
+description: 'Mpumalanga department: Office Of The Premier budget data for the 2018-19
+  financial year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 211586000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 262393000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 261901000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 306650000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 281778000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 296299000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 312595000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 248087255
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 292543618
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 274702195
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 306650000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 267109382
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 266759665
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 266656221
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/mpumalanga/departments/office-of-the-premier
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/mpumalanga/departments/office-of-the-premier
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/mpumalanga/departments/office-of-the-premier
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/mpumalanga/departments/office-of-the-premier
+  id: 2018-19
+  is_selected: true
+government:
+  name: Mpumalanga
+  slug: mpumalanga
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Office Of The Premier
+programmes:
+- name: Administration
+  total_budget: 135872000.0
+- name: Institutional Development
+  total_budget: 76414000.0
+- name: Policy And Governance
+  total_budget: 69492000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: office-of-the-premier
+sphere:
+  name: Provincial
+  slug: provincial
+title: Office Of The Premier budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 1 - Office Of The Premier:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/32835bb9-61e1-4b79-9797-2168888d9fbe/resource/ce6c26fa-864d-42fd-b0b7-6c4869491a63/download/mpu-vote-01-office-of-the-premier.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/32835bb9-61e1-4b79-9797-2168888d9fbe/resource/a037a1e3-341a-4bf8-a3e7-15f9073c64dd/download/mpu-human-settlements.xlsm
+vote_number: 1
+vote_primary:
+  name: Office Of The Premier
+  slug: office-of-the-premier
+  url_path: /2018-19/provincial/mpumalanga/departments/office-of-the-premier

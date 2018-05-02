@@ -1,0 +1,115 @@
+contributed_datasets: null
+description: 'Free State department: Education budget data for the 2018-19 financial
+  year from National Treasury in partnership with IMALI YETHU.'
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 10968412000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 11307468000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 11833519000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 12959696000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 13579224000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 14393326000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 15649206000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 12860601499
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 12606767746
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 12411917691
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 12959696000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 12872325522
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 12958392820
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 13349407819
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+financial_years:
+- closest_match:
+    is_exact_match: true
+    url_path: /2015-16/provincial/free-state/departments/education
+  id: 2015-16
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2016-17/provincial/free-state/departments/education
+  id: 2016-17
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2017-18/provincial/free-state/departments/education
+  id: 2017-18
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2018-19/provincial/free-state/departments/education
+  id: 2018-19
+  is_selected: true
+government:
+  name: Free State
+  slug: free-state
+government_functions: []
+intro: ''
+is_vote_primary: true
+name: Education
+programmes:
+- name: Administration
+  total_budget: 1035404000.0
+- name: Public Ordinary School Education
+  total_budget: 10422755000.0
+- name: Independent School Subsidies
+  total_budget: 87844000.0
+- name: Public Special School Education
+  total_budget: 535884000.0
+- name: Early Childhood Development
+  total_budget: 162276000.0
+- name: Infrastructure Development
+  total_budget: 768553000.0
+- name: Examination And Education Related Services
+  total_budget: 566508000.0
+- name: Direct Charges
+  total_budget: 0.0
+selected_financial_year: 2018-19
+selected_tab: departments
+slug: education
+sphere:
+  name: Provincial
+  slug: provincial
+title: Education budget 2018-19  - vulekamali
+treasury_datasets:
+  EPRE for Vote 6 - Education:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/e4b3d7f4-4702-4c94-b1d2-79b2875ca780/resource/2bcf1822-099d-4d85-a35a-736c3c4df86a/download/fs-education.xlsm
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/e4b3d7f4-4702-4c94-b1d2-79b2875ca780/resource/c3560bda-8b9a-45ac-907f-fa64e59a9e98/download/fs-vote-06-education.pdf
+vote_number: 6
+vote_primary:
+  name: Education
+  slug: education
+  url_path: /2018-19/provincial/free-state/departments/education
