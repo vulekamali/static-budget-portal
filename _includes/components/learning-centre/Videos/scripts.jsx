@@ -1,8 +1,8 @@
 import { h, render, Component } from 'preact';
-import Fuse from 'fuse.js';
 import decodeHtmlEntities from './../../../utilities/js/helpers/decodeHtmlEntities.js';
 import Videos from './index.jsx';
 import lunrSearchWrapper from './../../../utilities/js/helpers/lunrSearchWrapper.js';
+import wrapStringPhrases from './../../../utilities/js/helpers/wrapStringPhrases.js';
 
 class VideosContainer extends Component {
   constructor(props) {
@@ -59,8 +59,23 @@ class VideosContainer extends Component {
     this.setState({ currentPhrase: phrase });
 
     if (phrase.length > 2) {
-      console.log(this.props.items);
-      const currentItems = lunrSearchWrapper(this.props.items, 'id', ['title', 'description'], phrase);
+      const filteredItems = lunrSearchWrapper(
+        this.props.items,
+        'id',
+        ['name'],
+        phrase,
+      );
+
+      const phraseArray = [phrase, ...phrase.split(' ')];
+      const wrapFn = string => `<em class="Highlight">${string}</em>`;
+
+      const currentItems = filteredItems.map((obj) => {
+        return {
+          ...obj,
+          name: wrapStringPhrases(obj.name, phraseArray, wrapFn),
+        };
+      });
+
       this.setState({ currentItems });
     } else {
       this.setState({ currentItems: this.props.items });

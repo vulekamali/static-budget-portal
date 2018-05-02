@@ -7,7 +7,7 @@ import Controls from './partials/Controls.jsx';
 export default function Markup(props) {
   const { items, open, currentPhrase } = props;
   const { setLanguage, changePhrase, setModal } = props;
-  const keys = Object.keys(items);
+  const keys = items ? Object.keys(items) : [];
 
   return (
     <div>
@@ -17,7 +17,13 @@ export default function Markup(props) {
           keys.map((key) => {
             const { title, description, languages } = items[key];
             const id = key;
-            return <Item {...{ key, id, title, description, languages, setModal }} />;
+            return (
+              <Item
+                title={<span dangerouslySetInnerHTML={{ __html: title }} />}
+                description={<span dangerouslySetInnerHTML={{ __html: description }} />}
+                {...{ key, id, languages, setModal }}
+              />
+            );
           })
         }
       </ul>
