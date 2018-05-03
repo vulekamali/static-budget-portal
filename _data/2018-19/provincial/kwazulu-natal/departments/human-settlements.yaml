@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'KwaZulu-Natal department: Human Settlements budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 3873178000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 4131025000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 3529003000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 4066733960.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 3647237000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 3787798000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 4057407000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 4541350087
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 4605705957
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 3701493593
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 4066733960
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 3457371490
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 3410175966
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 3461132835
+    financial_year: 2020-21
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -30,7 +75,17 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Human Settlements
-programmes: []
+programmes:
+- name: Administration
+  total_budget: 225774000.0
+- name: Housing Needs, Research And  Planning
+  total_budget: 17968000.0
+- name: Housing Development
+  total_budget: 3210917000.0
+- name: Housing Asset Management, Property Management
+  total_budget: 192578000.0
+- name: Direct Charges
+  total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: human-settlements

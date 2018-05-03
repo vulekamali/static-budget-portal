@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'KwaZulu-Natal department: Public Works budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1388082000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1406247000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1454165000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1542817000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1587932000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1681234000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1788742000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 1627543663
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1567833693
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1525241670
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 1542817000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 1505268460
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 1513624480
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 1525869519
+    financial_year: 2020-21
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -30,7 +75,15 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Public Works
-programmes: []
+programmes:
+- name: Administration
+  total_budget: 406788000.0
+- name: Property Management
+  total_budget: 683593000.0
+- name: Provision Of Buildings, Structures And Equipment
+  total_budget: 497551000.0
+- name: Direct Charges
+  total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: public-works

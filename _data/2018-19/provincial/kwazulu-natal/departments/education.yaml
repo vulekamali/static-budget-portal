@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'KwaZulu-Natal department: Education budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 39289076000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 43096534000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 45960452000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 47900093000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 50903682000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 53785299000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 57880610000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 46066937466
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 48048598928
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 48206906778
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 47900093000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 48253770979
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 48423208952
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 49374509333
+    financial_year: 2020-21
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -30,7 +75,23 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Education
-programmes: []
+programmes:
+- name: Administration
+  total_budget: 1984826000.0
+- name: Public Ordinary School Education
+  total_budget: 42626473000.0
+- name: Independent School Subsidies
+  total_budget: 91028000.0
+- name: Public Special School Education
+  total_budget: 1167951000.0
+- name: Early Childhood Development
+  total_budget: 1280418000.0
+- name: Infrastructure Development
+  total_budget: 2186607000.0
+- name: Examination And Education Related Services
+  total_budget: 1566379000.0
+- name: Direct Charges
+  total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: education
