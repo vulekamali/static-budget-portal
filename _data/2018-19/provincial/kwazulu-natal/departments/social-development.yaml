@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'KwaZulu-Natal department: Social Development budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 2487432000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2610357000.0
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2754077000.0
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2986364000.0
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 3287882000.0
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 3482394000.0
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 3710768000.0
+    financial_year: 2020-21
+    phase: Medium Term Estimates
+  real:
+  - amount: 2916545413
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2910303565
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2888690763
+    financial_year: 2016-17
+    phase: Audited Outcome
+  - amount: 2986364000
+    financial_year: 2017-18
+    phase: Adjusted appropriation
+  - amount: 3116723561
+    financial_year: 2018-19
+    phase: Main appropriation
+  - amount: 3135219018
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  - amount: 3165435700
+    financial_year: 2020-21
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -30,7 +75,19 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Social Development
-programmes: []
+programmes:
+- name: Administration
+  total_budget: 519846000.0
+- name: Social Welfare Services
+  total_budget: 772353000.0
+- name: Children And Families
+  total_budget: 1391089000.0
+- name: Restorative Services
+  total_budget: 393093000.0
+- name: Development And Research
+  total_budget: 211501000.0
+- name: Direct Charges
+  total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: social-development

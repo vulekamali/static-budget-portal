@@ -102,7 +102,15 @@ sphere:
   name: Provincial
   slug: provincial
 title: Agriculture And Rural Development budget 2018-19  - vulekamali
-treasury_datasets: {}
+treasury_datasets:
+  EPRE for Vote 11 - Agriculture And Rural Development:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/654aa33e-2b11-457e-81c0-d70da6c9c1e4/resource/5ba5824c-f7cb-49c2-8ad4-9202bc8da2d8/download/fs-agriculture-and-rural-dev.xlsm
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/654aa33e-2b11-457e-81c0-d70da6c9c1e4/resource/49d8b48e-73e2-4050-b27c-dab042541494/download/fs-vote-11-agriculture-and-rural-development.pdf
 vote_number: 11
 vote_primary:
   name: Agriculture And Rural Development

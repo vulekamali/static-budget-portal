@@ -94,7 +94,15 @@ sphere:
   name: Provincial
   slug: provincial
 title: Sport, Arts, Culture And Recreation budget 2018-19  - vulekamali
-treasury_datasets: {}
+treasury_datasets:
+  EPRE for Vote 12 - Sport, Arts, Culture And Recreation:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/36e4362e-7b7b-47c0-af81-d8d96364485e/resource/5e49e0b7-e80c-499e-a346-0d78511d0dab/download/fs-sport-art-culture-and-recrea.xlsm
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/36e4362e-7b7b-47c0-af81-d8d96364485e/resource/8d6b8668-bfdd-4142-839a-c55e43107a00/download/fs-vote-12-sport-arts-culture-and-recreation.pdf
 vote_number: 12
 vote_primary:
   name: Sport, Arts, Culture And Recreation
