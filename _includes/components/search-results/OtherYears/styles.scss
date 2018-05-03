@@ -1,0 +1,20 @@
+.OtherYears {
+  padding: 20px 0;
+  @include clearfix;
+}
+
+.OtherYears-item {
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.OtherYears-title {
+  margin-right: 10px;
+  width: 100%;
+  float: left;
+
+  @media screen and (min-width: 900px) {
+    width: auto;
+  }
+}

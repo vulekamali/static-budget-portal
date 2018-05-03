@@ -55,18 +55,6 @@ export default function SearchMarkup(props) {
               }}
             />
           </div>
-
-          <ResultsArea
-            {...{
-              count,
-              currentKeywords,
-              error,
-              focus,
-              itemsArray,
-              searching,
-              selectedYear,
-            }}
-          />
         </div>
       </div>
     </div>

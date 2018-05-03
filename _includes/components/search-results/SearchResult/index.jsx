@@ -1,8 +1,25 @@
 import { h } from 'preact';
-import Form from './partials/Form.jsx';
+import { findIndex } from 'lodash';
+import OtherYears from './../OtherYears/index.jsx';
 
 
-export default function SearchResultMarkup({ loading, error, state, updateItem, page, province, results, search, selectedYear, updateFilter }) {
+export default function SearchResultMarkup(props) {
+  const {
+    results,
+    shown,
+    province,
+    error,
+    loading,
+    otherYears,
+    count,
+
+    search,
+    selectedYear,
+
+    updateItem,
+  } = props;
+
+
   if (error) {
     return (
       <div className="SearchResult-wrap">
@@ -11,83 +28,69 @@ export default function SearchResultMarkup({ loading, error, state, updateItem, 
     );
   }
 
-  const preDepartments = results.filter((item) => {
-    const provSlugIndex = item.extras.findIndex(
-      (data) => {
-        return data.key === 'geographic_region_slug';
-      },
-    );
-
-    const provSlug = item.extras[provSlugIndex].value;
-
-    return province === 'all' || province === provSlug;
-  });
-
-  const departments = preDepartments.map((item) => {
-    const provSlugIndex = item.extras.findIndex(
-      (data) => {
-        return data.key === 'geographic_region_slug';
-      },
-    );
-
-    const provSlug = item.extras[provSlugIndex].value;
-
-    const nameSlugIndex = item.extras.findIndex(
-      (data) => {
-        return data.key === 'department_name_slug';
-      },
-    );
-
-    const nameSlug = item.extras[nameSlugIndex].value;
-    const departmentType = item.province.length > 0 ? item.province : 'National';
-
-    const url = item.province.length > 0 ? `/${selectedYear}/provincial/${provSlug}/departments/${nameSlug}` : `/${selectedYear}/national/departments/${nameSlug}`;
-
+  const buildRatio = (count) => {
     return (
-      <a href={url} className="SearchResult-link">
-        {departmentType} Department: {item.extras[0].value}
-      </a>
+      <div className="SearchResult-title">
+        Suggested Department Budgets ({count} found)
+      </div>
     );
-  });
+  };
 
-  const pages = Math.ceil(departments.length / 10);
+  const buildResults = (results, placeholder) => {
+    if (placeholder) {
+      return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(() => {
+        return (
+          <span className="SearchResult-link">
+            &nbsp;
+          </span>
+        );
+      });
+    }
 
-  const extra = preDepartments.length > 0 ?
-    (
-      <span className="SearchResult-countWrap">
-        <span>Page {page} of {pages}</span>
-      </span>
-    ) :
-    null;
+    return results.map((item) => {
+      const isProvince = item.province.length > 0;
+      const departmentType = isProvince > 0 ? item.province : 'National';
+      const extras = item.extras;
+      const nameSlug = extras[findIndex(extras, ({ key }) => key === 'department_name_slug')].value;
+      const name = extras[findIndex(extras, ({ key }) => key === 'Department Name')].value;
+
+      const buildUrl = () => {
+        if (isProvince) {
+          const provSlug = extras[findIndex(extras, ({ key }) => key === 'geographic_region_slug')].value;
+          return `/${selectedYear}/provincial/${provSlug}/departments/${nameSlug}`;
+        }
+        return `/${selectedYear}/national/departments/${nameSlug}`;
+      };
+
+      return (
+        <a href={buildUrl()} className="SearchResult-link">
+          {departmentType} Department: {name}
+        </a>
+      );
+    });
+  };
 
   return (
     <div className="SearchResult-wrap">
       <div className="SearchResult-heading">Search result for &quot;{search}&quot; in Department Budgets</div>
 
-      <div className="SearchResult-formWrap">
-        <Form {...{ state, updateFilter }} />
-      </div>
-
       <div className="SearchResult-group">
-        <div className="SearchResult-title">Suggested Department Budgets{ departments ? extra : ''}</div>
+        {count ? buildRatio(count) : null}
+
         <div className="SearchResult-list">
-          {loading ? <div>Loading...</div> : null}
-          {!loading && preDepartments.length > 0 ? departments.splice((page * 10) - 10, 10) : null}
-          {!loading && preDepartments.length < 1 ?
-            <div className="SearchResult-error">
-              <span>We didn&#8217;t find anything for &#8217;{ search }&#8217;. </span>
-              <a href={`/${selectedYear}/departments`}>View a list of all departments</a>
-            </div> :
-            null
-          }
+          {results ? buildResults(results) : buildResults(null, true)}
         </div>
       </div>
 
-      <div className="SearchResult-pageWrap">
-        {page <= 1 ? null : <button onClick={() => updateItem('page', page - 1)} className="SearchResult-prev">Previous Page</button>}
-        {page >= pages ? null : <button onClick={() => updateItem('page', page + 1)} className="SearchResult-next">Next Page</button>}
+      <div className="u-marginTop25">
+        {otherYears ?
+          <OtherYears
+            items={otherYears}
+            {...{ search, selectedYear }}
+          /> :
+          null
+        }
       </div>
     </div>
   );
 }
-

@@ -25,6 +25,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
+        query: { compact: false },
       },
 
       {
