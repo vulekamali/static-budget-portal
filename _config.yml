@@ -43,6 +43,11 @@ exclude:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+collections_dir: collections
+
+collections:
+  - faqs
+
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from

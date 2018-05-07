@@ -33,6 +33,7 @@ import './components/department-budgets/IntroSection/scripts.jsx';
 import './components/contributed-data/CsoPreview/scripts.js';
 import './components/contributed-data/CsoMeta/scripts.js';
 
+import './components/about/FaqFilter/scripts.jsx';
 import './components/about/Video/scripts.jsx';
 
 import './components/universal/Button/scripts.js';

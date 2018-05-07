@@ -1,9 +1,12 @@
 import { h, render, Component } from 'preact';
 import Glossary from './index.jsx';
-import glossaryObject from './../../../../_data/glossary.json';
+import glossary from './../../../../_data/glossary.json';
 import createGlossaryGroupedObject from './../../../utilities/js/helpers/createGlossaryGroupedObject.js';
 import lunrSearchWrapper from './../../../utilities/js/helpers/lunrSearchWrapper.js';
 import wrapStringPhrases from './../../../utilities/js/helpers/wrapStringPhrases.js';
+
+
+const { items: glossaryObject } = glossary;
 
 class GlossaryContainer extends Component {
   constructor(props) {

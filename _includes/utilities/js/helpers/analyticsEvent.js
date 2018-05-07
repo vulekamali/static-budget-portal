@@ -2,6 +2,6 @@ import getProps from './../helpers/getProp.js';
 
 
 export default function analyticsEvent(...args) {
-  const production = getProps('production', document.body, 'bool');
+  const production = getProps('production', document.body, { parse: 'boolean' });
   return production ? window.ga(...args) : null;
 }
