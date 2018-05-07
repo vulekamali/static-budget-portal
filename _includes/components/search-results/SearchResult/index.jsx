@@ -72,6 +72,16 @@ export default function SearchResultMarkup(props) {
 
   return (
     <div className="SearchResult-wrap">
+      <div className="u-marginBottom25 u-marginTop5">
+        {otherYears ?
+          <OtherYears
+            items={otherYears}
+            {...{ search, selectedYear }}
+          /> :
+          null
+        }
+      </div>
+
       <div className="SearchResult-heading">Search result for &quot;{search}&quot; in Department Budgets</div>
 
       <div className="SearchResult-group">
@@ -80,16 +90,6 @@ export default function SearchResultMarkup(props) {
         <div className="SearchResult-list">
           {results ? buildResults(results) : buildResults(null, true)}
         </div>
-      </div>
-
-      <div className="u-marginTop25">
-        {otherYears ?
-          <OtherYears
-            items={otherYears}
-            {...{ search, selectedYear }}
-          /> :
-          null
-        }
       </div>
     </div>
   );

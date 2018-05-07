@@ -8,9 +8,9 @@ function scripts() {
 
   for (let i = 0; i < nodesList.length; i++) {
     const node = nodesList[i];
-    const items = getProps('items', node, 'json');
+    const items = getProps('items', node, { parse: 'json' });
     const type = getProps('type', node);
-    const rawDownload = getProps('download', node, 'json');
+    const rawDownload = getProps('download', node, { parse: 'json' });
 
     const downloadHasProps = !!(rawDownload && rawDownload.heading && rawDownload.subHeading && rawDownload.type);
     const download = downloadHasProps ? rawDownload : null;

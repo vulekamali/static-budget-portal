@@ -3,10 +3,10 @@ import { h } from 'preact';
 
 export default function buildOtherYears({ items, search, selectedYear }) {
   return (
-    <div className="Section is-bevel is-green">
+    <div className="Section is-bevel">
       <div className="OtherYears">
         <div className="OtherYears-title u-paddingTop10 u-marginLeft10">
-          <div className="Section-title u-marginRight10 u-colorWhite">See results in other years</div>
+          <div className="Section-title u-marginRight10">See results in other years</div>
         </div>
         {
           items.map(({ count, name }) => {
