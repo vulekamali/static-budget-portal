@@ -4,7 +4,7 @@ import initComponents from './../../../utilities/js/helpers/initComponents.js';
 
 function scripts() {
   const enhanceInstance = (node) => {
-    const image = getProp('image', node, 'node', 'string');
+    const image = getProp('image', node, 'node', { valueParse: 'string' });
     const { node: imgNode, value } = image;
     imgNode.style.backgroundImage = `url('${value}')`;
   };

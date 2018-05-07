@@ -31,19 +31,10 @@ const expected1 = [
   },
 ];
 
-const ref1 = {
-  2: [
-    'lorem',
-  ],
-  3: [
-    'lorem',
-  ],
-};
-
 const result = lunrSearchWrapper(array1, 'id', 'value', 'lorem');
 
 test('basic', () => {
-  expect(result).toEqual([expected1, ref1]);
+  expect(result).toEqual(expected1);
 });
 
 const array2 = [
@@ -69,21 +60,6 @@ const array2 = [
   },
 ];
 
-const ref2 = {
-  1: [
-    'lorem',
-  ],
-  2: [
-    'sum',
-  ],
-  3: [
-    'lorem',
-  ],
-  4: [
-    'lorem',
-  ],
-};
-
 const highlightResult2 = lunrSearchWrapper(array2, 'id', ['value', 'other'], 'sum lorem');
 const result2 = [
   { id: '1', other: 'impsum lorem', value: 'impsum' },
@@ -93,5 +69,5 @@ const result2 = [
 ];
 
 test('multiple-highlight', () => {
-  expect(highlightResult2).toEqual([result2, ref2]);
+  expect(highlightResult2).toEqual(result2);
 });

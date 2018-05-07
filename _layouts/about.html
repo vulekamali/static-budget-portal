@@ -1,44 +1,16 @@
 ---
 layout: page-shell
 ---
-<div class="Page-content">
-  <main class="Page-contentInner Page-contentInner--floatingLinks">
 
+{% assign page_data = site.data.about %}
+
+<div class="Page-content">
+  <main class="Page-contentInner">
+    <h2 class="Page-mainHeading">About vulekamali</h2>
     {%
-      include components/about/Background/index.html
-      year=page.financial_year
+      include components/about/AboutFilter/index.html
+      collections=page_data.table_of_contents
       languages=site.data.videos.data.first.languages
     %}
-
-    {%
-      include components/about/Development/index.html
-      year=page.financial_year
-    %}
-
-    {%
-      include components/about/ProjectStatus/index.html
-      year=page.financial_year
-    %}
-
-    {% 
-      include components/about/Contribution/index.html
-      year=page.financial_year
-    %}
-
-    {%
-      include components/about/Contacts/index.html
-      year=page.financial_year
-    %}
-
-    {%
-      include components/about/Media/index.html
-      year=page.financial_year
-    %}
-
-    {%
-      include components/about/DataScientists/index.html
-      year=page.financial_year
-    %}
-
   </main>
 </div>
