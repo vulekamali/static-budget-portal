@@ -4,7 +4,7 @@ import { h } from 'preact';
 export default function buildOtherYears({ items, search, selectedYear }) {
   return (
     <div className="Section is-bevel">
-      <div className="OtherYears u-marginBottom20">
+      <div className="OtherYears">
         <div className="OtherYears-title u-paddingTop10 u-marginLeft10">
           <div className="Section-title u-marginRight10">See results in other years</div>
         </div>

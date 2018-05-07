@@ -72,7 +72,7 @@ export default function SearchResultMarkup(props) {
 
   return (
     <div className="SearchResult-wrap">
-      <div className="u-marginTop25">
+      <div className="u-marginBottom25 u-marginTop5">
         {otherYears ?
           <OtherYears
             items={otherYears}

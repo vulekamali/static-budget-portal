@@ -45,7 +45,9 @@ class SearchResultContainer extends Component {
       .then((data) => {
         const rawResult = data.result.search_facets.vocab_financial_years.items;
         const totalYears = rawResult.map(obj => pick(obj, ['count', 'name']));
-        const otherYears = totalYears.filter(obj => obj.name !== this.props.selectedYear);
+        const otherYears = totalYears
+          .filter(obj => obj.name !== this.props.selectedYear)
+          .reverse();
         const currentYear = find(totalYears, obj => obj.name === this.props.selectedYear);
         const total = parseInt(currentYear.count, 10);
 
