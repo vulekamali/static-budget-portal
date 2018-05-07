@@ -20,7 +20,6 @@ import './components/homepage/HomeChart/scripts.jsx';
 
 import './components/header-and-footer/Search/scripts.jsx';
 import './components/header-and-footer/YearSelect/scripts.jsx';
-import './components/header-and-footer/SubLinks/scripts.js';
 import './components/header-and-footer/NavBar/scripts.js';
 import './components/header-and-footer/Modals/scripts.jsx';
 
@@ -34,6 +33,8 @@ import './components/contributed-data/CsoPreview/scripts.js';
 import './components/contributed-data/CsoMeta/scripts.js';
 
 import './components/about/Video/scripts.jsx';
+import './components/about/FaqFilter/scripts.jsx';
+import './components/about/AboutFilter/scripts.jsx';
 
 import './components/universal/Button/scripts.js';
 import './components/universal/Share/scripts.jsx';

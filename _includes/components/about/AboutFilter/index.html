@@ -1,0 +1,38 @@
+<div data-enhance-component="AboutFilter">
+
+  <div class="Section is-invisible">
+    <div class="u-maxWidth300">
+      <div class="Input is-loading">&nbsp;</div>
+    </div>
+  </div>
+
+  {% for itemsWrap in include.collections %}
+
+    <div class="Section is-invisible">
+      <h3 class="Page-subHeading u-paddingBottom10">{{ itemsWrap.title }}</h3>
+    </div>
+
+    {% for item in site[itemsWrap.collection] %}
+      <div class="u-marginBottom20">
+        <div class="Section">
+          <h4 class="Section-title">{{ item.title }}</h4>
+          <div class="js-tooltips">
+            {{ item.content }}
+          </div>
+
+          {% if item.extra == 'video' %}
+            <div class="js-initVideo" data-json='{{ include.languages | jsonify | escape }}'></div>
+          {% elsif item.extra == 'contacts-list' %}
+            {% include components/about/AboutFilter/partials/contacts-list.html %}
+          {% elsif item.extra == 'planning-chart' %}
+            {% include components/about/AboutFilter/partials/planning-chart.html %}
+          {% elsif item.extra == 'status-chart' %}
+            {% include components/about/AboutFilter/partials/status-chart.html %}
+          {% else %}
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  {% endfor %}
+
+</div>

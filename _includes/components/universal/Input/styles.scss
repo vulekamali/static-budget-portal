@@ -8,4 +8,8 @@
   width: 100%;
   line-height: 1;
   font-family: Lato;
+
+  &.is-loading {
+    padding-bottom: 14px;
+  }
 }

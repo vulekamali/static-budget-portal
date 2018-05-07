@@ -43,6 +43,18 @@ exclude:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+collections_dir: collections
+
+collections:
+  - faqs
+  - background
+  - contacts
+  - development
+  - information-for-developers-and-data-scientists
+  - media-and-other-information
+  - project-status
+  - your-contribution
+
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
