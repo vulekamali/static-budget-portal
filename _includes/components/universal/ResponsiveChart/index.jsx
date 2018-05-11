@@ -47,14 +47,17 @@ export default class ResponsiveChart extends Component {
     this.parentAction = this.parentAction.bind(this);
   }
 
-  componentDidUpdate() {
+  componentDidMount() {
+    this.updateWidth();
+  }
+
+  componentWillUpdate() {
     if (this.props.widthAction) {
       return this.props.widthAction(this.state.width);
     }
 
     return null;
   }
-
 
   parentAction(node) {
     this.node = node;
