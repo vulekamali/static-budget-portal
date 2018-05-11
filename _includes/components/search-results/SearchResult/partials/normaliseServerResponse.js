@@ -1,7 +1,8 @@
-import extractSnippet from './extractSnippet.js';
 import { find } from 'lodash';
+import extractSnippet from './extractSnippet.js';
 
-export default function normaliseItem(item) {
+
+const normaliseDepartmentItem = (item) => {
   const { extras, province, financial_year: financialYear } = item;
 
   const getExtrasValue = (key) => {
@@ -22,5 +23,35 @@ export default function normaliseItem(item) {
     title: `${regionString} Department: ${nameString}`,
     url: `https://vulekamali.gov.za/${year}/${regionSlug}/departments/${nameSlug}`,
     snippet,
+  };
+};
+
+
+const normaliseCsoItem = (item) => {
+  const { title, name, organization = {} } = item;
+
+  return {
+    organisation: organization.title,
+    title,
+    url: `/datasets/${name}`,
+    snippet: extractSnippet(item),
+  };
+};
+
+
+const calcNormaliseType = (results, tab) => {
+  if (tab === 'cso') {
+    return results.map(normaliseCsoItem);
+  }
+
+  return results.map(normaliseDepartmentItem);
+};
+
+
+export default function normaliseServerResponse(reponseObj, tab) {
+  const { count, results } = reponseObj.result;
+  return {
+    count,
+    items: calcNormaliseType(results, tab),
   };
 }

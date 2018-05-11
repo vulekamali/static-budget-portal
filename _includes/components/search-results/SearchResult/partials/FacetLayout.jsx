@@ -3,12 +3,15 @@ import createLinkText from './createLinkText.js';
 
 
 const buildSnippet = (snippet, tabKey) => {
+  if (tabKey === 'cso' && !snippet.organization) {
+    return null;
+  }
   return (
     <div>
       <div className="u-marginBottom20 Result" dangerouslySetInnerHTML={{ __html: snippet.text }} />
       <div>
         <span>Source:&nbsp;</span>
-        <a target="_blank" href={snippet.url}>{createLinkText(tabKey)}</a>
+        <a target="_blank" href={snippet.url}>{createLinkText(tabKey, snippet.organization)}</a>
       </div>
     </div>
   );

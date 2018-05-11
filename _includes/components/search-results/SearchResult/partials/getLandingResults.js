@@ -1,5 +1,5 @@
 import fetchWrapper from './../../../../utilities/js/helpers/fetchWrapper.js';
-import normaliseReturn from './normaliseReturn.js';
+import normaliseServerResponse from './normaliseServerResponse.js';
 import highlightResults from './highlightResults.js';
 import createPromiseToken from './../../../../utilities/js/helpers/createPromiseToken.js';
 
@@ -30,7 +30,7 @@ export default function getLandingResults(phrase, year) {
       .then((returnArr) => {
         const [rawNational, rawNationalOtherYears, rawProvincial, rawProvincialOtherYears] = returnArr;
 
-        const resultsArr = [rawNational, rawProvincial].map(normaliseReturn);
+        const resultsArr = [rawNational, rawProvincial].map(normaliseServerResponse);
         const [national, provincial] = resultsArr.map(item => highlightResults(item, phrase));
 
         const nationalOtherYears = normaliseOtherYears(rawNationalOtherYears, 'national');
