@@ -5,10 +5,10 @@ import createPromiseToken from './../../../../utilities/js/helpers/createPromise
 
 
 export default function getLandingResults(phrase, year) {
-  const normaliseOtherYears = (response) => {
+  const normaliseOtherYears = (response, tab) => {
     const { items } = response.result.search_facets.vocab_financial_years;
     return items.reverse().map(({ count, name }) => {
-      const url = `/${name}/search-result?search=${phrase}`;
+      const url = `/${name}/search-result?search=${phrase}&view=${tab}`;
 
       return {
         count,
@@ -33,8 +33,8 @@ export default function getLandingResults(phrase, year) {
         const resultsArr = [rawNational, rawProvincial].map(normaliseReturn);
         const [national, provincial] = resultsArr.map(item => highlightResults(item, phrase));
 
-        const nationalOtherYears = normaliseOtherYears(rawNationalOtherYears);
-        const provincialOtherYears = normaliseOtherYears(rawProvincialOtherYears);
+        const nationalOtherYears = normaliseOtherYears(rawNationalOtherYears, 'national');
+        const provincialOtherYears = normaliseOtherYears(rawProvincialOtherYears, 'provincial');
 
         resolve(
           {

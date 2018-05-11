@@ -28,7 +28,6 @@ export default class SearchPageContainer extends Component {
     };
   }
 
-
   componentWillMount() {
     const { phrase, view = 'all', year } = this.props;
 
@@ -70,43 +69,35 @@ export default class SearchPageContainer extends Component {
 
 
   addPage() {
-    const { loadingPage } = this.state;
     const { tab, page } = this.state;
-    const { phrase } = this.props;
+    const { phrase, year } = this.props;
 
-    if (!loadingPage) {
-      this.setState({
-        loadingPage: true,
-      });
-
-      if (this.static.currentFetch && this.static.currentFetch.token.active) {
-        this.static.currentFetch.token.cancel();
-      }
-
-      this.static.currentFetch = getFacetResults(phrase, tab, (page - 1) * 5);
-
-      this.static.currentFetch.request
-        .then((data) => {
-          this.setState({
-            loadingPage: false,
-            page: page + 1,
-            items: {
-              count: this.state.items.count,
-              items: [
-                ...this.state.items.items,
-                ...data.items,
-              ],
-            },
-          });
-        })
-        .catch((err) => {
-          this.setState({
-            error: true,
-            loading: false,
-          });
-          console.warn(err);
-        });
+    if (this.static.currentFetch && this.static.currentFetch.token.active) {
+      this.static.currentFetch.token.cancel();
     }
+
+    this.static.currentFetch = getFacetResults(phrase, tab, page * 5, year);
+
+    this.static.currentFetch.request
+      .then((data) => {
+        this.setState({
+          page: page + 1,
+          items: {
+            count: this.state.items.count,
+            items: [
+              ...this.state.items.items,
+              ...data.items,
+            ],
+          },
+        });
+      })
+      .catch((err) => {
+        this.setState({
+          error: true,
+          loading: false,
+        });
+        console.warn(err);
+      });
   }
 
 
