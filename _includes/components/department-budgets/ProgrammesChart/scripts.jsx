@@ -93,8 +93,8 @@ function scripts() {
   for (let i = 0; i < nodes.length; i++) {
     const node = nodes[i];
 
-    const rawValues = getProp('values', node, 'json').data;
-    const rawFiles = getProp('files', node, 'json');
+    const rawValues = getProp('values', node, { parse: 'json' }).data;
+    const rawFiles = getProp('files', node, { parse: 'json' });
     const year = getProp('year', node);
     const department = getProp('dept', node);
     const location = getProp('dept-location', node);

@@ -1,0 +1,16 @@
+<div data-enhance-component="FaqFilter">
+  <div class="Section is-invisible u-paddinTop0">
+    <div class="u-maxWidth300">
+      <div class="Input is-loading">&nbsp;</div>
+    </div>
+  </div>
+
+  {% for item in include.items %}
+    <div class="Page-card u-marginBottom20" data-item>
+      <div class="Section">
+        <h2 class="Section-title" data-title>{{ item.title }}</h2>
+        <div data-text>{{ item.content }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

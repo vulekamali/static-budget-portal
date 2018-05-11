@@ -38,5 +38,5 @@ function loadGoogleAnalytics() {
   }
 }
 
-const production = getProps('production', document.body, 'bool');
+const production = getProps('production', document.body, { parse: 'boolean' });
 export default production ? loadGoogleAnalytics() : null;

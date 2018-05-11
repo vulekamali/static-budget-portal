@@ -147,12 +147,12 @@ function scripts() {
   for (let i = 0; i < nodes.length; i++) {
     const node = nodes[i];
 
-    const rawAdjusted = getProp('adjusted', node, 'json').data;
-    const rawNotAdjusted = getProp('not-adjusted', node, 'json').data;
+    const rawAdjusted = getProp('adjusted', node, { parse: 'json' }).data;
+    const rawNotAdjusted = getProp('not-adjusted', node, { parse: 'json' }).data;
     const year = getProp('year', node);
     const department = getProp('department', node);
     const location = getProp('location', node);
-    const rawFiles = getProp('files', node, 'json');
+    const rawFiles = getProp('files', node, { parse: 'json' });
     const cpi = getProp('cpi', node);
 
     const removeNulls = val => val.amount !== null;
