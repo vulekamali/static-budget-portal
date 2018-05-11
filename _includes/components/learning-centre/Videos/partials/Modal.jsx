@@ -13,7 +13,7 @@ export default function Modal(props) {
         <div className="Videos-modalBox">
           <div className="Videos-modalClose" onClick={closeModal} >
             <div className="Videos-closeIcon">
-              <Icon type="close" size="large" />
+              <Icon type="close" />
             </div>
           </div>
           <div className="Videos-modalTitle">{title}</div>
