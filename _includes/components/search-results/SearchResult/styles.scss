@@ -1,176 +1,111 @@
-.SearchResult-group {
-  background-color: #f3f3f3;
-  font-size: 14px;
-  line-height: 1.86;
-  padding: 10px;
+.SearchPage {
+  min-height: 1000px;
 }
 
-.SearchResult-title {
+.SearchPage-tabWrap {
+  position: relative;
   font-weight: bold;
-  padding: 5px 10px;
-}
+  width: 100%;
+  text-decoration: underline;
+  margin-bottom: 20px;
 
-.SearchResult-link {
-  padding: 5px 10px;
-  display: block;
-  color: #4a4a4a;
-  text-decoration: none;
-
-  &:nth-child(odd) {
-    background-color: white;
-  }
-
-  &:hover {
-    background-color: darken(white, 15%);
-  }
-}
-
-.SearchResult-heading {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.SearchResult-heading {
-  padding: 15px 0;
-}
-
-.SearchResult-select {
-  border-radius: 3px;
-  border: solid 1px #9b9b9b;
-  padding-left: 0;
-  display: inline-block;
-  min-width: 170px;
-  margin: 0;
-  flex-direction: column;
-  background-color: white;
-}
-
-.SearchResult-selectWrap {
-  display: inline-block;
-  vertical-align: top;
-  max-height: 36px;
-}
-
-.SearchResult-error {
-  padding: 20px 10px;
-}
-
-.SearchResult-item {
-  background: white;
-  z-index: z-index('SearchResult-item');
-  cursor: pointer;
-  padding: 9px 13px;
-  font-size: 14px;
-  list-style: none;
-  order: 1;
-  display: none;
-
-  &:hover {
-    background-color: darken(white, 15%);
-  }
-
-  .SearchResult-select.is-open & {
+  &::after {
+    position: absolute;
+    top: 100%;
+    top: calc(100% + 2px);
+    content: '';
     display: block;
+    width: 100%;
+    left: 0;
+    border-bottom: 2px solid #cfcfcf;
+    height: 4px;
+  }
+}
+
+.SearchPage-tabList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.SearchPage-tabItem {
+  position: relative;
+  z-index: 99999;
+  padding: 7px 15px;
+  border-radius: 50px;
+  user-select: none;
+  background: none;
+  border-width: 0;
+  outline-width: 0;
+
+  &::after {
+    position: absolute;
+    top: 100%;
+    top: calc(100% + 2px);
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    background: #7bb344;
+    border-radius: 15px;
+    height: 10px;
+    opacity: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: darken(#f5f5f5, 20%);
   }
 
   &.is-active {
-    order: 0;
-    display: block;
-
-    .SearchResult-select.is-open & {
-      border-bottom: 1px solid #9d9d9d;
-    }
-
     &::after {
-      content: '';
-      display: inline-block;
-      float: right;
-      width: 0;
-      height: 0;
-      border: 5px solid transparent;
-      border-top: 5px solid #4a4a4a;
-      position: relative;
-      top: 5px;
-      margin-left: 10px;
+      opacity: 1;
     }
   }
 }
 
-.SearchResult-radio {
-  display: none;
-}
-
-.SearchResult-form {
-  float: right;
-}
-
-.SearchResult-formWrap {
-  padding-bottom: 25px;
+.SearchResult-heading {
+  padding-bottom: 10px;
   @include clearfix;
 }
 
-.SearchResult-button {
-  margin: 20px auto;
-  display: block;
-  padding: 10px;
-  border-radius: 3px;
-  background-color: #d2d2d2;
-  border: solid 1px #9b9b9b;
-  cursor: pointer;
-
-  &:hover {
-    background-color: darken(#d2d2d2, 10%);
-  }
-}
-
-.SearchResult-count {
-  width: 50px;
-  border: 1px solid #d2d2d2;
-  border-radius: 3px;
-  padding: 5px;
-  margin: 0 5px 0 7px;
-}
-
-.SearchResult-countWrap {
-  display: block;
-
-  @media screen and (min-width: 650px) {
-    display: inline-block;
-    float: right;
-  }
-}
-
-.SearchResult-filter {
-  min-width: 150px;
-}
-
-.SearchResult-pageWrap {
-  padding: 20px;
-  @include clearfix;
-}
-
-.SearchResult-prev {
+.SearchResult-leftHeading {
   float: left;
-  padding: 10px 20px;
-  border-radius: 3px;
-  background-color: #d2d2d2;
-  border: solid 1px #979797;
-  cursor: pointer;
+}
 
-  &:hover {
-    background-color: darken(#d2d2d2, 10%);
+.SearchResult-rightHeading {
+  float: right;
+  display: none;
+
+  @media screen and (min-width: 750px) {
+    display: block;
   }
 }
 
-.SearchResult-next {
-  float: right;
-  padding: 10px 20px;
-  border-radius: 3px;
-  background-color: #d2d2d2;
-  border: solid 1px #979797;
-  cursor: pointer;
+.SearchResult-buttons {
+  @include clearfix;
+}
 
-  &:hover {
-    background-color: darken(#d2d2d2, 10%);
+.SearchResult-buttonsTitle {
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+
+  @media screen and (min-width: 500px) {
+    text-align: left;
+  }
+}
+
+.SearchResult-buttonItem {
+  float: left;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+
+  @media screen and (min-width: 500px) {
+    text-align: left;
+    width: auto;
   }
 }

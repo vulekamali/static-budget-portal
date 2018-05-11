@@ -8,10 +8,14 @@ export default function fetchWrapper(url) {
 
         response.json()
           .then((data) => {
+            if (data.success === 'false') {
+              reject('Requested failed inside CKAN');
+            }
+
             resolve(data);
           })
-          .catch(err => reject(err));
+          .catch(reject);
       })
-      .catch(err => reject(err));
+      .catch(reject);
   });
 }

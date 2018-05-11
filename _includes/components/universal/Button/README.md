@@ -3,9 +3,9 @@ title: Button
 category: Universal Components
 assets: examples
 state:
-  text: ✔ stable
-  color: white
-  background: green
+  text: ✘ unstable (support + is-loading + js hook)
+  color: black
+  background: yellow
 API:
   text: HTML
   color: black

@@ -16,4 +16,9 @@
       margin-left: #{($i * 100) + 100}px !important;
     }
   }
+
+  &Auto {
+    margin-left: auto !important;
+  }
 }
+

@@ -1,13 +1,13 @@
 .u-display {
   &Table {
-    display: table;
+    display: table !important;
   }
 
   &TableCell {
-    display: table-cell;
+    display: table-cell !important;
   }
 
   &InlineBlock {
-    display: inline-block;
+    display: inline-block !important;
   }
 }
