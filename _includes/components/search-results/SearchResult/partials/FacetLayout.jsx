@@ -8,7 +8,7 @@ const buildSnippet = (snippet, tabKey) => {
       <div className="u-marginBottom20 Result" dangerouslySetInnerHTML={{ __html: snippet.text }} />
       <div>
         <span>Source:&nbsp;</span>
-        <a href={snippet.url}>{createLinkText(tabKey)}</a>
+        <a target="_blank" href={snippet.url}>{createLinkText(tabKey)}</a>
       </div>
     </div>
   );
@@ -38,7 +38,7 @@ export default function FacetLayout({ count, items: rawItems, year, tab, tabKey,
     );
   }
 
-  if (items.length <= 0) {
+  if (items.length === 0) {
     return (
       <div className="u-textAlignCenter">
         <div className="Page-title u-marginBottom0">We found no results</div>

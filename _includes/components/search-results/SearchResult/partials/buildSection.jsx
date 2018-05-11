@@ -33,7 +33,7 @@ const buildSnippet = (snippet, tab) => {
     <div>
       <div className="u-marginBottom20 u-lineHeight16" dangerouslySetInnerHTML={{ __html: snippet.text }} />
       <div>Source:&nbsp;</div>
-      <a href={snippet.url}>{createLinkText(tab)}</a>
+      <a target="_blank" href={snippet.url}>{createLinkText(tab)}</a>
     </div>
   );
 };

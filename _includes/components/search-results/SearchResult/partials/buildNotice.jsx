@@ -17,14 +17,14 @@ const calcNoticeObj = (amount, error) => {
       text: 'Try changing the searched year, or broaden your search terms',
     };
 
-    case 2: return {
-      size: 'is-1of3',
+    case 1: return {
+      size: 'is-2of3',
       title: 'We only found 1 result.',
       text: 'Try changing the searched year, or broaden your search terms.',
     };
 
-    case 3: return {
-      size: 'is-2of3',
+    case 2: return {
+      size: 'is-1of3',
       title: 'We only found 2 results.',
       text: 'Try changing the searched year, or broaden your search terms.',
     };

@@ -4,7 +4,7 @@ import highlightResults from './highlightResults.js';
 import createPromiseToken from './../../../../utilities/js/helpers/createPromiseToken.js';
 
 
-export default function getLandingResults(phrase) {
+export default function getLandingResults(phrase, year) {
   const normaliseOtherYears = (response) => {
     const { items } = response.result.search_facets.vocab_financial_years;
     return items.reverse().map(({ count, name }) => {
@@ -20,9 +20,9 @@ export default function getLandingResults(phrase) {
 
   const request = new Promise((resolve, reject) => {
     const urlsArray = [
-      `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=3&fq=+organization:national-treasury+vocab_financial_years:2018-19+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:national&ext_highlight=true`,
+      `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=3&fq=+organization:national-treasury+vocab_financial_years:${year}+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:national&ext_highlight=true`,
       `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=0&fq=+organization:national-treasury+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:national&facet.field=[%22vocab_financial_years%22]`,
-      `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=3&fq=+organization:national-treasury+vocab_financial_years:2018-19+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:provincial&ext_highlight=true`,
+      `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=3&fq=+organization:national-treasury+vocab_financial_years:${year}+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:provincial&ext_highlight=true`,
       `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=0&fq=+organization:national-treasury+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:provincial&facet.field=[%22vocab_financial_years%22]`,
     ];
 

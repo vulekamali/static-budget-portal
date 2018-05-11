@@ -16,7 +16,7 @@ const viewAll = (updateTabWrap, count) => {
 };
 
 const buildHeading = (year, tab, count, updateTab) => {
-  const updateTabWrap = () => updateTab(tab);
+  const updateTabWrap = () => updateTab(tab, true);
 
   return (
     <div className="Section is-invisible u-paddingBottom0">
@@ -30,10 +30,6 @@ const buildHeading = (year, tab, count, updateTab) => {
   );
 };
 
-const fallback = {
-  provincial: {},
-  national: {},
-};
 
 export default function LandingLayout({ items: rawItems, year, error, updateTab }) {
   const items = rawItems || {};

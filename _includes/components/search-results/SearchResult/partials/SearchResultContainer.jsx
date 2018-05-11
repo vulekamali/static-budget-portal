@@ -1,5 +1,4 @@
 import { h, Component } from 'preact';
-import { parse } from 'query-string';
 import getLandingResults from './getLandingResults.js';
 import getFacetResults from './getFacetResults.js';
 import SearchPage from './SearchPage.jsx';
@@ -8,11 +7,10 @@ import SearchPage from './SearchPage.jsx';
 export default class SearchPageContainer extends Component {
   constructor(props) {
     super(props);
-
-    const { tab } = parse(location.search);
+    const { view } = this.props;
 
     this.state = {
-      tab: tab || 'all',
+      tab: view || 'all',
       items: null,
       loading: true,
       error: false,
@@ -32,9 +30,20 @@ export default class SearchPageContainer extends Component {
 
 
   componentWillMount() {
-    const { phrase } = this.props;
-    const callbackWrap = () => getLandingResults(phrase);
-    this.getNewResults(phrase, 'all', callbackWrap);
+    const { phrase, view = 'all', year } = this.props;
+
+    this.setState({
+      loading: true,
+      tab: view,
+    });
+
+    if (view === 'all') {
+      const callbackWrap = () => getLandingResults(phrase, year);
+      return this.getNewResults(phrase, view, callbackWrap);
+    }
+
+    const callbackWrap = () => getFacetResults(phrase, view, 0, year);
+    return this.getNewResults(phrase, view, callbackWrap);
   }
 
 
@@ -101,8 +110,8 @@ export default class SearchPageContainer extends Component {
   }
 
 
-  updateTab(newTab) {
-    const { phrase } = this.props;
+  updateTab(newTab, scroll) {
+    const { phrase, year, rootNode } = this.props;
     const { tab } = this.state;
 
     this.setState({
@@ -112,14 +121,17 @@ export default class SearchPageContainer extends Component {
       items: null,
     });
 
-    if (newTab !== tab) {
-      if (newTab === 'all') {
-        const callbackWrap = () => getLandingResults(phrase);
-        this.getNewResults(phrase, newTab, callbackWrap);
-      } else {
-        const callbackWrap = () => getFacetResults(phrase, newTab, 0);
-        this.getNewResults(phrase, newTab, callbackWrap);
-      }
+    if (scroll) {
+      rootNode.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    history.replaceState({}, '', `/${year}/search-result?search=${encodeURI(phrase)}&view=${newTab}`);
+
+    if (newTab === 'all') {
+      const callbackWrap = () => getLandingResults(phrase, year);
+      this.getNewResults(phrase, newTab, callbackWrap);
+    } else {
+      const callbackWrap = () => getFacetResults(phrase, newTab, 0, year);
+      this.getNewResults(phrase, newTab, callbackWrap);
     }
   }
 

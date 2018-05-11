@@ -4,9 +4,9 @@ import highlightResults from './highlightResults.js';
 import createPromiseToken from './../../../../utilities/js/helpers/createPromiseToken.js';
 
 
-export default function getFacetResults(phrase, facet, start = 0) {
+export default function getFacetResults(phrase, facet, start = 0, year) {
   const request = new Promise((resolve, reject) => {
-    const innerRequest = fetchWrapper(`https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=${start}&rows=5&fq=+organization:national-treasury+vocab_financial_years:2018-19+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:${facet}&ext_highlight=true`);
+    const innerRequest = fetchWrapper(`https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=${start}&rows=5&fq=+organization:national-treasury+vocab_financial_years:${year}+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:${facet}&ext_highlight=true`);
 
     innerRequest
       .then((data) => {
