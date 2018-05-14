@@ -3,12 +3,14 @@ import extractSnippet from './extractSnippet.js';
 
 
 const normaliseDepartmentItem = (item) => {
-  const { extras, province, financial_year: financialYear } = item;
+  const { extras, province, financial_year: financialYear, organization = {}, title: rawTitle } = item;
 
   const getExtrasValue = (key) => {
     const obj = find(extras, extra => extra.key === key) || { value: null };
     return obj.value;
   };
+
+  const isOfficial = organization.title === 'National Treasury';
 
   const year = financialYear[0];
   const region = getExtrasValue('geographic_region_slug');
@@ -19,39 +21,23 @@ const normaliseDepartmentItem = (item) => {
   const nameString = getExtrasValue('department_name');
   const snippet = extractSnippet(item);
 
-  return {
-    title: `${regionString} Department: ${nameString}`,
-    url: `https://vulekamali.gov.za/${year}/${regionSlug}/departments/${nameSlug}`,
-    snippet,
-  };
+  const title = isOfficial ?
+    `${regionString} Department: ${nameString}` :
+    rawTitle;
+
+  const url = isOfficial ?
+    `https://vulekamali.gov.za/${year}/${regionSlug}/departments/${nameSlug}` :
+    `/datasets/${name}`;
+
+  return { title, url, snippet, organisation: organization.title };
 };
 
 
-const normaliseCsoItem = (item) => {
-  const { title, name, organization = {} } = item;
-
-  return {
-    organisation: organization.title,
-    title,
-    url: `/datasets/${name}`,
-    snippet: extractSnippet(item),
-  };
-};
-
-
-const calcNormaliseType = (results, tab) => {
-  if (tab === 'cso') {
-    return results.map(normaliseCsoItem);
-  }
-
-  return results.map(normaliseDepartmentItem);
-};
-
-
-export default function normaliseServerResponse(reponseObj, tab) {
+export default function normaliseServerResponse(reponseObj) {
   const { count, results } = reponseObj.result;
+
   return {
     count,
-    items: calcNormaliseType(results, tab),
+    items: results.map(normaliseDepartmentItem),
   };
 }

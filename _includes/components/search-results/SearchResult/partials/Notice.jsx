@@ -38,7 +38,7 @@ const calcNoticeObj = (amount, error) => {
 };
 
 
-export default function buildNotice(error, amount) {
+export default function Notice({ error, amount }) {
   if (!error && amount >= 3) {
     return null;
   }

@@ -1,6 +1,6 @@
 import { h } from 'preact';
-import buildSection from './buildSection.jsx';
-import tabOptions from './TabOptions.json';
+import Section from './Section.jsx';
+import tabOptions from './tabOptions.json';
 
 
 const viewAll = (updateTabWrap, count) => {
@@ -35,24 +35,44 @@ export default function LandingLayout({ items: rawItems, year, error, updateTab 
   const items = rawItems || {};
   const provincial = items.provincial || {};
   const national = items.national || {};
-
-  const provItems = provincial.items || [];
-  const provCount = provincial.count;
-  const provOtherYears = provincial.otherYears || [];
-  const natItems = national.items || [];
-  const natCount = national.count;
-  const natOtherYears = national.otherYears || [];
-
+  const contributed = items.contributed || {};
 
   return (
     <div>
       <div className="u-marginBottom20">
-        {buildHeading(year, 'national', natCount, updateTab)}
-        {buildSection('grey', natItems, natCount, 'national', natOtherYears, error)}
+        {buildHeading(year, 'cso', contributed.count, updateTab)}
+        <Section
+          type="green"
+          items={contributed.items || []}
+          count={contributed.count}
+          tab="cso"
+          otherYears={[]}
+          {...{ error }}
+        />
       </div>
+
       <div className="u-marginBottom20">
-        {buildHeading(year, 'provincial', provCount, updateTab)}
-        {buildSection('purple', provItems, provCount, 'provincial', provOtherYears, error)}
+        {buildHeading(year, 'national', national.count, updateTab)}
+        <Section
+          type="grey"
+          items={national.items || []}
+          count={national.items}
+          tab="national"
+          otherYears={national.otherYears || []}
+          {...{ error }}
+        />
+      </div>
+
+      <div className="u-marginBottom20">
+        {buildHeading(year, 'provincial', provincial.count, updateTab)}
+        <Section
+          type="purple"
+          items={provincial.items || []}
+          count={provincial.items}
+          tab="national"
+          otherYears={provincial.otherYears || []}
+          {...{ error }}
+        />
       </div>
     </div>
   );

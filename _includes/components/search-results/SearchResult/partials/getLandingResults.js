@@ -21,17 +21,28 @@ export default function getLandingResults(phrase, year) {
   const request = new Promise((resolve, reject) => {
     const urlsArray = [
       `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=3&fq=+organization:national-treasury+vocab_financial_years:${year}+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:national&ext_highlight=true`,
+
       `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=0&fq=+organization:national-treasury+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:national&facet.field=[%22vocab_financial_years%22]`,
+
       `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=3&fq=+organization:national-treasury+vocab_financial_years:${year}+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:provincial&ext_highlight=true`,
+
       `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=0&fq=+organization:national-treasury+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:provincial&facet.field=[%22vocab_financial_years%22]`,
+
+      `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=3&fq=-organization:national-treasury&ext_highlight=true`,
     ];
 
     Promise.all(urlsArray.map(fetchWrapper))
       .then((returnArr) => {
-        const [rawNational, rawNationalOtherYears, rawProvincial, rawProvincialOtherYears] = returnArr;
+        const [
+          rawNational,
+          rawNationalOtherYears,
+          rawProvincial,
+          rawProvincialOtherYears,
+          rawContributed,
+        ] = returnArr;
 
-        const resultsArr = [rawNational, rawProvincial].map(normaliseServerResponse);
-        const [national, provincial] = resultsArr.map(item => highlightResults(item, phrase));
+        const resultsArr = [rawNational, rawProvincial, rawContributed].map(normaliseServerResponse);
+        const [national, provincial, contributed] = resultsArr.map(item => highlightResults(item, phrase));
 
         const nationalOtherYears = normaliseOtherYears(rawNationalOtherYears, 'national');
         const provincialOtherYears = normaliseOtherYears(rawProvincialOtherYears, 'provincial');
@@ -46,6 +57,7 @@ export default function getLandingResults(phrase, year) {
               ...provincial,
               otherYears: provincialOtherYears,
             },
+            contributed,
           },
         );
       })

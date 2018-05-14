@@ -1,7 +1,6 @@
 import { h } from 'preact';
-import buildNotice from './buildNotice.jsx';
-import createLinkText from './createLinkText';
-
+import Notice from './Notice.jsx';
+import ItemPreview from './ItemPreview.jsx';
 
 const calcSectionObj = (type) => {
   switch (type) {
@@ -25,26 +24,6 @@ const calcSectionObj = (type) => {
       cardModifiers: null,
     };
   }
-};
-
-
-const buildSnippet = (snippet, tab) => {
-  return (
-    <div>
-      <div className="u-marginBottom20 u-lineHeight16" dangerouslySetInnerHTML={{ __html: snippet.text }} />
-      <div>Source:&nbsp;</div>
-      <a target="_blank" href={snippet.url}>{createLinkText(tab)}</a>
-    </div>
-  );
-};
-
-const buildItem = (tab, url, title, snippet) => {
-  return (
-    <div className="Grid-item is-1of3">
-      <a className="Section-title" href={url} dangerouslySetInnerHTML={{ __html: title }} />
-      {snippet ? buildSnippet(snippet, tab) : null}
-    </div>
-  );
 };
 
 
@@ -73,7 +52,7 @@ const createOtherYears = (otherYears, color) => {
 };
 
 
-export default function buildSection(type, items, count, tab, otherYears, error) {
+export default function Section({ type, items, count, tab, otherYears, error }) {
   const { modifiers, color } = calcSectionObj(type);
   const validAmount = items.length;
 
@@ -82,14 +61,13 @@ export default function buildSection(type, items, count, tab, otherYears, error)
       <div className="Section-card u-paddingBottom0">
         <div className="Grid has-standardTrigger u-marginBottom30">
           <div className="Grid-inner">
-            {
-              error ? null : items.map(({ title, url, snippet }) => {
-                return buildItem(tab, url, title, snippet);
+            {error ?
+              null :
+              items.map(({ title, url, snippet }) => {
+                return <div className="Grid-item is-1of3"><ItemPreview paddingOverride {...{ tab, url, title, snippet }} /></div>;
               })
             }
-            {
-              buildNotice(error, validAmount)
-            }
+            <Notice amount={validAmount} {...{ error }} />
           </div>
         </div>
       </div>
