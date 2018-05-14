@@ -47,6 +47,12 @@
 @import 'utilities/scss/utility-classes/u-width';
 @import 'utilities/scss/utility-classes/u-cursor';
 @import 'utilities/scss/utility-classes/u-color';
+@import 'utilities/scss/utility-classes/u-maxWidth';
+@import 'utilities/scss/utility-classes/u-borderWidth';
+@import 'utilities/scss/utility-classes/u-background';
+@import 'utilities/scss/utility-classes/u-textDecoration';
+@import 'utilities/scss/utility-classes/u-lineHeight';
+@import 'utilities/scss/utility-classes/u-cursor';
 
 @import 'components/universal/BarChart/styles';
 @import 'components/universal/Button/styles';
@@ -62,6 +68,8 @@
 @import 'components/universal/Grid/styles';
 @import 'components/universal/LineChart/styles';
 @import 'components/universal/Highlight/styles';
+@import 'components/universal/Loader/styles';
+@import 'components/universal/Fineprint/styles';
 
 @import 'components/homepage/ApiCta/styles';
 @import 'components/homepage/Circles/styles';
@@ -108,7 +116,6 @@
 @import 'components/learning-centre/Videos/styles';
 
 @import 'components/search-results/SearchResult/styles';
-@import 'components/search-results/OtherYears/styles';
 
 @import 'components/about/Contacts/styles';
 @import 'components/about/Progress/styles';

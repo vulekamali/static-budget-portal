@@ -4,9 +4,6 @@ layout: page-shell
 
 <div class="Page-content Page-content--dynamicYears">
   <main class="Page-contentInner">
-    {%
-      include components/search-results/SearchResult/index.html
-      year=page.financial_year
-    %}
+    <div data-create-component="SearchResult" data-year="{{ page.financial_year }}" id="SearchResult"></div>
   </main>
 </div>

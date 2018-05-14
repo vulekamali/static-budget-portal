@@ -47,6 +47,14 @@
     }
   }
 
+  &.is-purple {
+    background-color: #ad3c64;
+
+    &.is-link:hover {
+      background-color: darken(#ad3c64, 10%);
+    }
+  }
+
   &.is-invisible {
     box-shadow: none;
     border-width: 0;
