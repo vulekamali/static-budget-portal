@@ -3,7 +3,7 @@ import extractSnippet from './extractSnippet.js';
 
 
 const normaliseDepartmentItem = (item) => {
-  const { extras, province, financial_year: financialYear, organization = {}, title: rawTitle } = item;
+  const { extras, province, financial_year: financialYear, organization = {}, title: rawTitle, name } = item;
 
   const getExtrasValue = (key) => {
     const obj = find(extras, extra => extra.key === key) || { value: null };
@@ -34,6 +34,7 @@ const normaliseDepartmentItem = (item) => {
 
 
 export default function normaliseServerResponse(reponseObj) {
+  console.log(reponseObj.result);
   const { count, results } = reponseObj.result;
 
   return {
