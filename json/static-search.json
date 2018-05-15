@@ -1,0 +1,7 @@
+---
+---
+
+{
+  "glossary": {{ site.data.glossary.items | jsonify }},
+  "videos": {{ site.data.videos.data | jsonify }}
+}
