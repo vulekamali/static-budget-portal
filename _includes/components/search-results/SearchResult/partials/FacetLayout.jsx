@@ -1,29 +1,5 @@
 import { h } from 'preact';
-import createLinkText from './createLinkText.js';
-
-
-const buildSnippet = (snippet, tabKey) => {
-  return (
-    <div>
-      <div className="u-marginBottom20 Result" dangerouslySetInnerHTML={{ __html: snippet.text }} />
-      <div>
-        <span>Source:&nbsp;</span>
-        <a target="_blank" href={snippet.url}>{createLinkText(tabKey)}</a>
-      </div>
-    </div>
-  );
-};
-
-const buildItem = (tabKey) => {
-  return ({ title, url, snippet }) => {
-    return (
-      <div key={url} className="Section u-marginBottom20 is-invisible">
-        <a href={url} className="Section-title" dangerouslySetInnerHTML={{ __html: title }} />
-        {snippet ? buildSnippet(snippet, tabKey) : null}
-      </div>
-    );
-  };
-};
+import ItemPreview from './ItemPreview.jsx';
 
 
 export default function FacetLayout({ count, items: rawItems, year, tab, tabKey, error }) {
@@ -55,7 +31,7 @@ export default function FacetLayout({ count, items: rawItems, year, tab, tabKey,
           <span>{tab} for {year}</span>
         </div>
       </div>
-      {items.map(buildItem(tabKey))}
+      {items.map(({ title, url, snippet }) => <ItemPreview tab={tabKey} {...{ url, title, snippet }} />)}
     </div>
   );
 }

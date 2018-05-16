@@ -119,11 +119,11 @@ export default class SearchPageContainer extends Component {
 
     if (newTab === 'all') {
       const callbackWrap = () => getLandingResults(phrase, year);
-      this.getNewResults(phrase, newTab, callbackWrap);
-    } else {
-      const callbackWrap = () => getFacetResults(phrase, newTab, 0, year);
-      this.getNewResults(phrase, newTab, callbackWrap);
+      return this.getNewResults(phrase, newTab, callbackWrap);
     }
+
+    const callbackWrap = () => getFacetResults(phrase, newTab, 0, year);
+    return this.getNewResults(phrase, newTab, callbackWrap);
   }
 
 
