@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 61);
+/******/ 	return __webpack_require__(__webpack_require__.s = 62);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -212,7 +212,7 @@ var defer = typeof Promise == 'function' ? Promise.resolve().then.bind(Promise.r
 
 /**
  * Clones the given VNode, optionally adding attributes/props and replacing its children.
- * @param {VNode} vnode		The virutal DOM element to clone
+ * @param {VNode} vnode		The virtual DOM element to clone
  * @param {Object} props	Attributes/props to add when cloning
  * @param {VNode} rest		Any additional arguments will be used as replacement children.
  */
@@ -247,7 +247,7 @@ function rerender() {
  *
  * @param {Node} node			DOM Node to compare
  * @param {VNode} vnode			Virtual DOM node to compare
- * @param {boolean} [hyrdating=false]	If true, ignores component constructors when comparing.
+ * @param {boolean} [hydrating=false]	If true, ignores component constructors when comparing.
  * @private
  */
 function isSameNodeType(node, vnode, hydrating) {
@@ -361,7 +361,7 @@ function setAccessor(node, name, old, value, isSvg) {
 		setProperty(node, name, value == null ? '' : value);
 		if (value == null || value === false) node.removeAttribute(name);
 	} else {
-		var ns = isSvg && name !== (name = name.replace(/^xlink\:?/, ''));
+		var ns = isSvg && name !== (name = name.replace(/^xlink:?/, ''));
 		if (value == null || value === false) {
 			if (ns) node.removeAttributeNS('http://www.w3.org/1999/xlink', name.toLowerCase());else node.removeAttribute(name);
 		} else if (typeof value !== 'function') {
@@ -1077,6 +1077,7 @@ var preact = {
 	options: options
 };
 
+exports.default = preact;
 exports.h = h;
 exports.createElement = h;
 exports.cloneElement = cloneElement;
@@ -1084,7 +1085,6 @@ exports.Component = Component;
 exports.render = render;
 exports.rerender = rerender;
 exports.options = options;
-exports.default = preact;
 //# sourceMappingURL=preact.esm.js.map
 
 /***/ }),
@@ -1098,119 +1098,51 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _decodeHtmlEntities = __webpack_require__(3);
+var _decodeHtmlEntities = __webpack_require__(8);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// Convert string to either JSON or number, depending on what is passed to 'parse'
 var parseString = function parseString(string, parse) {
-  var escapedString = (0, _decodeHtmlEntities2.default)(string);
-
   switch (parse) {
     case 'json':
-      return JSON.parse(escapedString);
-    case 'number':
+      return JSON.parse(string);
+    case 'num':
       return parseFloat(string, 10);
     default:
       return string;
   }
 };
 
-// Adds node to output if 'options.returnNode' is true
-var calcOutput = function calcOutput(result, condition, node) {
-  if (!condition) {
-    return result;
-  }
+function innerGetProp(name, node, parse, valueParse) {
+  var result = node.getAttribute('data-' + name);
 
-  return {
-    value: result,
-    node: node
-  };
-};
-
-function getProp(name, node) {
-  var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-
-  // 'parse' is 'boolean'
-  if (options.parse === 'boolean') {
-    var _value = node.getAttribute('data-' + name);
-    var _result = _value !== null;
-    return calcOutput(_result, options.returnNode, node);
-  }
-
-  // 'parse' is node
-  if (options.parse === 'node' && !options.loop) {
+  if (parse === 'node') {
     var innerNode = node.querySelector('[data-' + name + ']');
 
-    // No 'nodeParse' is set
-    if (!options.nodeParse) {
+    if (!valueParse) {
       return innerNode;
     }
 
-    // 'nodeParse' is set to 'innerHTML'
-    if (options.nodeParse === 'innerHTML') {
-      var _result3 = innerNode.innerHTML;
-      return calcOutput(_result3, options.returnNode, innerNode);
-    }
-
-    // 'nodeParse' is set to 'innerText'
-    if (options.nodeParse === 'innerText') {
-      var _result4 = innerNode.innerText;
-      return calcOutput(_result4, options.returnNode, innerNode);
-    }
-
-    // 'nodeParse' is 'string' (default), 'JSON', boolean or 'number'
-    var _result2 = getProp(name, innerNode, { parse: options.nodeParse });
-    return calcOutput(_result2, options.returnNode, innerNode);
+    return {
+      node: innerNode,
+      value: innerGetProp(name, innerNode, valueParse)
+    };
   }
 
-  // 'parse' is node and 'list' is set to true
-  if (options.parse === 'node' && options.loop) {
-    var innerNodesList = node.querySelectorAll('[data-' + name + ']');
-
-    // No 'nodeParse' is set
-    if (!options.nodeParse) {
-      return innerNodesList;
-    }
-
-    if (options.nodeParse === 'innerHTML') {
-      // No 'nodeParse' is set
-      /* eslint-disable */
-      var _result6 = [];
-      /* eslint-enable */
-
-      for (var i = 0; i < innerNodesList.length; i++) {
-        var _innerNode = innerNodesList[i];
-
-        _result6.push(_innerNode.innerHTML);
-      }
-
-      return _result6;
-    }
-
-    // No 'nodeParse' is set
-    /* eslint-disable */
-    var _result5 = [];
-    /* eslint-enable */
-
-    for (var _i = 0; _i < innerNodesList.length; _i++) {
-      var _innerNode2 = innerNodesList[_i];
-
-      _result5.push(getProp(name, _innerNode2, { parse: options.nodeParse }));
-    }
-
-    return _result5;
+  if (result === null) {
+    return null;
   }
 
-  // 'parse' is 'string' (default), 'JSON' or 'number'
-  var value = node.getAttribute('data-' + name);
-  var result = parseString(value, options.parse);
-  return calcOutput(result, options.returnNode, node);
+  if (parse === 'bool') {
+    return result !== null;
+  }
+
+  return parseString((0, _decodeHtmlEntities2.default)(result), parse);
 }
 
-exports.default = getProp;
+exports.default = innerGetProp;
 
 /***/ }),
 /* 2 */
@@ -1412,194 +1344,11 @@ process.umask = function () {
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = decodeHtmlEntities;
-function decodeHtmlEntities(input) {
-  var element = document.createElement('div');
-  element.innerHTML = input;
-
-  return element.childNodes.length === 0 ? '' : element.childNodes[0].nodeValue;
-}
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var keys = __webpack_require__(74);
-var foreach = __webpack_require__(76);
-var hasSymbols = typeof Symbol === 'function' && _typeof(Symbol()) === 'symbol';
-
-var toStr = Object.prototype.toString;
-
-var isFunction = function isFunction(fn) {
-	return typeof fn === 'function' && toStr.call(fn) === '[object Function]';
-};
-
-var arePropertyDescriptorsSupported = function arePropertyDescriptorsSupported() {
-	var obj = {};
-	try {
-		Object.defineProperty(obj, 'x', { enumerable: false, value: obj });
-		/* eslint-disable no-unused-vars, no-restricted-syntax */
-		for (var _ in obj) {
-			return false;
-		}
-		/* eslint-enable no-unused-vars, no-restricted-syntax */
-		return obj.x === obj;
-	} catch (e) {
-		/* this is IE 8. */
-		return false;
-	}
-};
-var supportsDescriptors = Object.defineProperty && arePropertyDescriptorsSupported();
-
-var defineProperty = function defineProperty(object, name, value, predicate) {
-	if (name in object && (!isFunction(predicate) || !predicate())) {
-		return;
-	}
-	if (supportsDescriptors) {
-		Object.defineProperty(object, name, {
-			configurable: true,
-			enumerable: false,
-			value: value,
-			writable: true
-		});
-	} else {
-		object[name] = value;
-	}
-};
-
-var defineProperties = function defineProperties(object, map) {
-	var predicates = arguments.length > 2 ? arguments[2] : {};
-	var props = keys(map);
-	if (hasSymbols) {
-		props = props.concat(Object.getOwnPropertySymbols(map));
-	}
-	foreach(props, function (name) {
-		defineProperty(object, name, map[name], predicates[name]);
-	});
-};
-
-defineProperties.supportsDescriptors = !!supportsDescriptors;
-
-module.exports = defineProperties;
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = createSizeModifier;
-function createSizeModifier(string) {
-  switch (string) {
-    case 'small':
-      return ' is-small';
-    case 'large':
-      return ' is-large';
-    default:
-      return '';
-  }
-}
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = analyticsEvent;
-
-var _getProp = __webpack_require__(1);
-
-var _getProp2 = _interopRequireDefault(_getProp);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function analyticsEvent() {
-  var _window;
-
-  var production = (0, _getProp2.default)('production', document.body, { parse: 'boolean' });
-  return production ? (_window = window).ga.apply(_window, arguments) : null;
-}
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = wrapStringPhrases;
-function wrapStringPhrases(string, phrasesArray, templateFn) {
-  var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
-
-  // Removes phrases that have less charafter than 'minChars' if specified
-  var removeIfNotEnoughChars = function removeIfNotEnoughChars(item) {
-    return item.length > options.minChars;
-  };
-  var returnAsIs = function returnAsIs(item) {
-    return item;
-  };
-  var phrases = phrasesArray.filter(options.minChars ? removeIfNotEnoughChars : returnAsIs);
-
-  // Removes html from results if 'excludeHtml' is specified
-  var excludeHtmlConfig = options && options.excludeHtml;
-  var regexWrap = excludeHtmlConfig ? function (item) {
-    return '(?!<[^<]*)' + item + '(?![^<>]*>)';
-  } : function (item) {
-    return item;
-  };
-  var splitString = excludeHtmlConfig ? '(?![^<>]*>)|(?!<[^<]*)' : '|';
-
-  // Create regular experession string by concatenating all string in the phrases array with the regex 'or' operator.
-  var sortFromLongToShort = function sortFromLongToShort(a, b) {
-    return b.length - a.length;
-  };
-  var regexString = phrases
-  // Sort from long to short (this allows Regex to prioritise longer phrases over shorter phrases)
-  .sort(sortFromLongToShort)
-  // Escapes all regex-specific operators from the regex string.
-  .map(function (item) {
-    return item.replace(/[\/\-\[\\\]\{\}\(\)\*\+\?\.\,\^\$\#\s]/gi, '\\$&');
-  }).join(splitString);
-
-  // Creates an actual regular expression from the regex string.
-  var regex = new RegExp(regexWrap(regexString), 'gi');
-
-  // Runs the passed function (regex match is automatically passed as the first parameter) on all matches of the regex and replaces the match with the function's return.
-  return string.replace(regex, templateFn);
-}
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var strictUriEncode = __webpack_require__(68);
+var strictUriEncode = __webpack_require__(69);
 var objectAssign = __webpack_require__(31);
-var decodeComponent = __webpack_require__(69);
+var decodeComponent = __webpack_require__(70);
 
 function encoderForArrayFormat(opts) {
 	switch (opts.arrayFormat) {
@@ -1803,16 +1552,309 @@ exports.parseUrl = function (str, opts) {
 };
 
 /***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var keys = __webpack_require__(75);
+var foreach = __webpack_require__(77);
+var hasSymbols = typeof Symbol === 'function' && _typeof(Symbol()) === 'symbol';
+
+var toStr = Object.prototype.toString;
+
+var isFunction = function isFunction(fn) {
+	return typeof fn === 'function' && toStr.call(fn) === '[object Function]';
+};
+
+var arePropertyDescriptorsSupported = function arePropertyDescriptorsSupported() {
+	var obj = {};
+	try {
+		Object.defineProperty(obj, 'x', { enumerable: false, value: obj });
+		/* eslint-disable no-unused-vars, no-restricted-syntax */
+		for (var _ in obj) {
+			return false;
+		}
+		/* eslint-enable no-unused-vars, no-restricted-syntax */
+		return obj.x === obj;
+	} catch (e) {
+		/* this is IE 8. */
+		return false;
+	}
+};
+var supportsDescriptors = Object.defineProperty && arePropertyDescriptorsSupported();
+
+var defineProperty = function defineProperty(object, name, value, predicate) {
+	if (name in object && (!isFunction(predicate) || !predicate())) {
+		return;
+	}
+	if (supportsDescriptors) {
+		Object.defineProperty(object, name, {
+			configurable: true,
+			enumerable: false,
+			value: value,
+			writable: true
+		});
+	} else {
+		object[name] = value;
+	}
+};
+
+var defineProperties = function defineProperties(object, map) {
+	var predicates = arguments.length > 2 ? arguments[2] : {};
+	var props = keys(map);
+	if (hasSymbols) {
+		props = props.concat(Object.getOwnPropertySymbols(map));
+	}
+	foreach(props, function (name) {
+		defineProperty(object, name, map[name], predicates[name]);
+	});
+};
+
+defineProperties.supportsDescriptors = !!supportsDescriptors;
+
+module.exports = defineProperties;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = createSizeModifier;
+function createSizeModifier(string) {
+  switch (string) {
+    case 'small':
+      return ' is-small';
+    case 'large':
+      return ' is-large';
+    default:
+      return '';
+  }
+}
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if (process.env.NODE_ENV !== 'production') {
+  var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol.for && Symbol.for('react.element') || 0xeac7;
+
+  var isValidElement = function isValidElement(object) {
+    return (typeof object === 'undefined' ? 'undefined' : _typeof(object)) === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+  };
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(150)(isValidElement, throwOnDirectAccess);
+} else {
+  // By explicitly using `prop-types` you are opting into new production behavior.
+  // http://fb.me/prop-types-in-prod
+  module.exports = __webpack_require__(152)();
+}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = analyticsEvent;
+
+var _getProp = __webpack_require__(1);
+
+var _getProp2 = _interopRequireDefault(_getProp);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function analyticsEvent() {
+  var _window;
+
+  var production = (0, _getProp2.default)('production', document.body, 'bool');
+  return production ? (_window = window).ga.apply(_window, arguments) : null;
+}
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = decodeHtmlEntities;
+function decodeHtmlEntities(input) {
+  var element = document.createElement('div');
+  element.innerHTML = input;
+
+  return element.childNodes.length === 0 ? '' : element.childNodes[0].nodeValue;
+}
+
+/***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(77);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = wrapStringPhrases;
+function wrapStringPhrases(string, phrases, templateFn) {
+
+  // Create regular experession string by concatenating all string in the phrases array with the regex 'or' operator.
+  var sortFromLongToShort = function sortFromLongToShort(a, b) {
+    return b.length - a.length;
+  };
+  var regExpTermsWithOrOperators = phrases.sort(sortFromLongToShort).join('|');
+
+  // Escapes all regex-specific operators from the regex string.
+  var escapeRegExp = function escapeRegExp(regexString) {
+    return regexString.replace(/[\/\-\[\\\]\{\}\(\)\*\+\?\.\,\^\$\#\s]/gi, '\\$&');
+  };
+  var escapededRegExp = escapeRegExp(regExpTermsWithOrOperators);
+
+  // Creates an actual regular expression from the regex string.
+  var regex = new RegExp('(?:^|\\b)' + escapededRegExp + '(?!\\w)', 'gi');
+
+  // Runs the passed function (regex match is automatically passed as the first parameter) on all matches of the regex and replaces the match with the function's return.
+  return string.replace(regex, templateFn);
+}
 
 /***/ }),
 /* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = __webpack_require__(78);
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = initComponents;
+function initComponents(nameString, callback, create) {
+  var type = create ? 'create' : 'enhance';
+  var nodesList = document.querySelectorAll('[data-' + type + '-component="' + nameString + '"]');
+
+  for (var i = 0; i < nodesList.length; i++) {
+    var node = nodesList[i];
+    callback(node);
+  }
+}
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Icon;
+
+var _preact = __webpack_require__(0);
+
+var _Close = __webpack_require__(121);
+
+var _Close2 = _interopRequireDefault(_Close);
+
+var _Download = __webpack_require__(122);
+
+var _Download2 = _interopRequireDefault(_Download);
+
+var _Facebook = __webpack_require__(123);
+
+var _Facebook2 = _interopRequireDefault(_Facebook);
+
+var _Search = __webpack_require__(124);
+
+var _Search2 = _interopRequireDefault(_Search);
+
+var _Twitter = __webpack_require__(125);
+
+var _Twitter2 = _interopRequireDefault(_Twitter);
+
+var _Home = __webpack_require__(126);
+
+var _Home2 = _interopRequireDefault(_Home);
+
+var _Play = __webpack_require__(127);
+
+var _Play2 = _interopRequireDefault(_Play);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Icon(_ref) {
+  var size = _ref.size,
+      type = _ref.type;
+
+  switch (type) {
+    case 'close':
+      return (0, _preact.h)(_Close2.default, { size: size });
+    case 'download':
+      return (0, _preact.h)(_Download2.default, { size: size });
+    case 'facebook':
+      return (0, _preact.h)(_Facebook2.default, { size: size });
+    case 'search':
+      return (0, _preact.h)(_Search2.default, { size: size });
+    case 'twitter':
+      return (0, _preact.h)(_Twitter2.default, { size: size });
+    case 'play':
+      return (0, _preact.h)(_Play2.default, { size: size });
+    case 'home':
+      return (0, _preact.h)(_Home2.default, { size: size });
+    case 'hamburger':
+      return (0, _preact.h)(Hamburger, { size: size });
+    case 'pin':
+      return (0, _preact.h)(Pin, { size: size });
+    case 'date':
+      return (0, _preact.h)(Date, { size: size });
+    default:
+      return null;
+  }
+}
+
+/***/ }),
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1836,7 +1878,7 @@ function trimValues(value, abbreviated) {
 }
 
 /***/ }),
-/* 11 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1860,7 +1902,7 @@ var _buildGroupSpaceArray = __webpack_require__(135);
 
 var _buildGroupSpaceArray2 = _interopRequireDefault(_buildGroupSpaceArray);
 
-var _breakIntoWrap = __webpack_require__(12);
+var _breakIntoWrap = __webpack_require__(15);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -2020,7 +2062,7 @@ function BarChart(props) {
 }
 
 /***/ }),
-/* 12 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2067,41 +2109,7 @@ function breakIntoWrap(string, wrap) {
 }
 
 /***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if (process.env.NODE_ENV !== 'production') {
-  var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol.for && Symbol.for('react.element') || 0xeac7;
-
-  var isValidElement = function isValidElement(object) {
-    return (typeof object === 'undefined' ? 'undefined' : _typeof(object)) === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-  };
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(150)(isValidElement, throwOnDirectAccess);
-} else {
-  // By explicitly using `prop-types` you are opting into new production behavior.
-  // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(152)();
-}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
-
-/***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2131,351 +2139,7 @@ try {
 module.exports = g;
 
 /***/ }),
-/* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = initComponents;
-function initComponents(nameString, callback, create) {
-  var type = create ? 'create' : 'enhance';
-  var nodesList = document.querySelectorAll('[data-' + type + '-component="' + nameString + '"]');
-
-  for (var i = 0; i < nodesList.length; i++) {
-    var node = nodesList[i];
-    callback(node);
-  }
-}
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = lunrSearchWrapper;
-
-var _lodash = __webpack_require__(23);
-
-var _lunr = __webpack_require__(114);
-
-var _lunr2 = _interopRequireDefault(_lunr);
-
-var _wrapStringPhrases = __webpack_require__(7);
-
-var _wrapStringPhrases2 = _interopRequireDefault(_wrapStringPhrases);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function lunrSearchWrapper(array, refProp, fieldProps, search) {
-  // Normalises fieldProps into an array, even when passed as string
-  var fieldPropsArray = Array.isArray(fieldProps) ? fieldProps : [fieldProps];
-
-  // Create Lunr index object
-  /* eslint-disable func-names */
-  var index = (0, _lunr2.default)(function () {
-    var _this = this;
-
-    fieldPropsArray.forEach(function (prop) {
-      return _this.field(prop);
-    });
-    this.ref(refProp);
-    array.forEach(function (object) {
-      return _this.add(object);
-    });
-  });
-  /* eslint-enable */
-
-  // Perfrom Lunr search and edits copy of original array to reflect Lur results
-  var rawResult = index.search(search);
-
-  var renameProp = function renameProp(val) {
-    return _defineProperty({}, refProp, val.ref);
-  };
-
-  var normalisedResult = rawResult.map(renameProp);
-
-  return (0, _lodash.intersectionBy)(array, normalisedResult, function (object) {
-    return object[refProp];
-  });
-}
-
-/***/ }),
 /* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = PseudoSelect;
-
-var _preact = __webpack_require__(0);
-
-function PseudoSelect(props) {
-  var open = props.open,
-      items = props.items,
-      loading = props.loading,
-      changeAction = props.changeAction,
-      name = props.name,
-      selected = props.selected;
-
-
-  var keys = Object.keys(items);
-  var radioChange = function radioChange(event) {
-    return changeAction(event.target.value);
-  };
-
-  var renderList = keys.map(function (key, index) {
-    var id = 'pseudo-select-' + name + '-' + index;
-
-    return (0, _preact.h)(
-      'li',
-      { className: 'PseudoSelect-item' + (selected === items[key] ? ' is-active' : '') },
-      (0, _preact.h)(
-        'label',
-        { className: 'PseudoSelect-label', htmlFor: id },
-        (0, _preact.h)('input', _extends({ id: id, name: name }, {
-          value: items[key],
-          type: 'radio',
-          checked: selected === items[key],
-          onClick: radioChange,
-          className: 'PseudoSelect-radio'
-        })),
-        (0, _preact.h)(
-          'span',
-          { className: 'PseudoSelect-text' },
-          key
-        )
-      )
-    );
-  });
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'PseudoSelect' },
-    (0, _preact.h)(
-      'ul',
-      { className: 'PseudoSelect-list' + (open ? ' is-open' : '') },
-      renderList
-    )
-  );
-}
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Icon;
-
-var _preact = __webpack_require__(0);
-
-var _Close = __webpack_require__(121);
-
-var _Close2 = _interopRequireDefault(_Close);
-
-var _Download = __webpack_require__(122);
-
-var _Download2 = _interopRequireDefault(_Download);
-
-var _Facebook = __webpack_require__(123);
-
-var _Facebook2 = _interopRequireDefault(_Facebook);
-
-var _Search = __webpack_require__(124);
-
-var _Search2 = _interopRequireDefault(_Search);
-
-var _Twitter = __webpack_require__(125);
-
-var _Twitter2 = _interopRequireDefault(_Twitter);
-
-var _Home = __webpack_require__(126);
-
-var _Home2 = _interopRequireDefault(_Home);
-
-var _Play = __webpack_require__(127);
-
-var _Play2 = _interopRequireDefault(_Play);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Icon(_ref) {
-  var size = _ref.size,
-      type = _ref.type;
-
-  switch (type) {
-    case 'close':
-      return (0, _preact.h)(_Close2.default, { size: size });
-    case 'download':
-      return (0, _preact.h)(_Download2.default, { size: size });
-    case 'facebook':
-      return (0, _preact.h)(_Facebook2.default, { size: size });
-    case 'search':
-      return (0, _preact.h)(_Search2.default, { size: size });
-    case 'twitter':
-      return (0, _preact.h)(_Twitter2.default, { size: size });
-    case 'play':
-      return (0, _preact.h)(_Play2.default, { size: size });
-    case 'home':
-      return (0, _preact.h)(_Home2.default, { size: size });
-    case 'hamburger':
-      return (0, _preact.h)(Hamburger, { size: size });
-    case 'pin':
-      return (0, _preact.h)(Pin, { size: size });
-    case 'date':
-      return (0, _preact.h)(Date, { size: size });
-    default:
-      return null;
-  }
-}
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var DebounceFunction = function () {
-  function DebounceFunction(time) {
-    _classCallCheck(this, DebounceFunction);
-
-    this.time = time;
-    this.timeout = null;
-  }
-
-  _createClass(DebounceFunction, [{
-    key: "update",
-    value: function update(func) {
-      var _this = this;
-
-      if (this.timeout) {
-        clearTimeout(this.timeout);
-      }
-
-      this.timeout = window.setTimeout(function () {
-        clearTimeout(_this.timeout);
-        func();
-      }, this.time);
-    }
-  }]);
-
-  return DebounceFunction;
-}();
-
-exports.default = DebounceFunction;
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var bind = __webpack_require__(21);
-
-module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var implementation = __webpack_require__(78);
-
-module.exports = Function.prototype.bind || implementation;
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var fnToStr = Function.prototype.toString;
-
-var constructorRegex = /^\s*class /;
-var isES6ClassFn = function isES6ClassFn(value) {
-	try {
-		var fnStr = fnToStr.call(value);
-		var singleStripped = fnStr.replace(/\/\/.*\n/g, '');
-		var multiStripped = singleStripped.replace(/\/\*[.\s\S]*\*\//g, '');
-		var spaceStripped = multiStripped.replace(/\n/mg, ' ').replace(/ {2}/g, ' ');
-		return constructorRegex.test(spaceStripped);
-	} catch (e) {
-		return false; // not a function
-	}
-};
-
-var tryFunctionObject = function tryFunctionObject(value) {
-	try {
-		if (isES6ClassFn(value)) {
-			return false;
-		}
-		fnToStr.call(value);
-		return true;
-	} catch (e) {
-		return false;
-	}
-};
-var toStr = Object.prototype.toString;
-var fnClass = '[object Function]';
-var genClass = '[object GeneratorFunction]';
-var hasToStringTag = typeof Symbol === 'function' && _typeof(Symbol.toStringTag) === 'symbol';
-
-module.exports = function isCallable(value) {
-	if (!value) {
-		return false;
-	}
-	if (typeof value !== 'function' && (typeof value === 'undefined' ? 'undefined' : _typeof(value)) !== 'object') {
-		return false;
-	}
-	if (hasToStringTag) {
-		return tryFunctionObject(value);
-	}
-	if (isES6ClassFn(value)) {
-		return false;
-	}
-	var strClass = toStr.call(value);
-	return strClass === fnClass || strClass === genClass;
-};
-
-/***/ }),
-/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2486,7 +2150,7 @@ module.exports = function isCallable(value) {
  * Released under MIT license <https://lodash.com/license>
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
- */;(function(){/** Used as a safe reference for `undefined` in pre-ES5 environments. */var undefined;/** Used as the semantic version number. */var VERSION='4.17.5';/** Used as the size to enable large array optimizations. */var LARGE_ARRAY_SIZE=200;/** Error message constants. */var CORE_ERROR_TEXT='Unsupported core-js use. Try https://npms.io/search?q=ponyfill.',FUNC_ERROR_TEXT='Expected a function';/** Used to stand-in for `undefined` hash values. */var HASH_UNDEFINED='__lodash_hash_undefined__';/** Used as the maximum memoize cache size. */var MAX_MEMOIZE_SIZE=500;/** Used as the internal argument placeholder. */var PLACEHOLDER='__lodash_placeholder__';/** Used to compose bitmasks for cloning. */var CLONE_DEEP_FLAG=1,CLONE_FLAT_FLAG=2,CLONE_SYMBOLS_FLAG=4;/** Used to compose bitmasks for value comparisons. */var COMPARE_PARTIAL_FLAG=1,COMPARE_UNORDERED_FLAG=2;/** Used to compose bitmasks for function metadata. */var WRAP_BIND_FLAG=1,WRAP_BIND_KEY_FLAG=2,WRAP_CURRY_BOUND_FLAG=4,WRAP_CURRY_FLAG=8,WRAP_CURRY_RIGHT_FLAG=16,WRAP_PARTIAL_FLAG=32,WRAP_PARTIAL_RIGHT_FLAG=64,WRAP_ARY_FLAG=128,WRAP_REARG_FLAG=256,WRAP_FLIP_FLAG=512;/** Used as default options for `_.truncate`. */var DEFAULT_TRUNC_LENGTH=30,DEFAULT_TRUNC_OMISSION='...';/** Used to detect hot functions by number of calls within a span of milliseconds. */var HOT_COUNT=800,HOT_SPAN=16;/** Used to indicate the type of lazy iteratees. */var LAZY_FILTER_FLAG=1,LAZY_MAP_FLAG=2,LAZY_WHILE_FLAG=3;/** Used as references for various `Number` constants. */var INFINITY=1/0,MAX_SAFE_INTEGER=9007199254740991,MAX_INTEGER=1.7976931348623157e+308,NAN=0/0;/** Used as references for the maximum length and index of an array. */var MAX_ARRAY_LENGTH=4294967295,MAX_ARRAY_INDEX=MAX_ARRAY_LENGTH-1,HALF_MAX_ARRAY_LENGTH=MAX_ARRAY_LENGTH>>>1;/** Used to associate wrap methods with their bit flags. */var wrapFlags=[['ary',WRAP_ARY_FLAG],['bind',WRAP_BIND_FLAG],['bindKey',WRAP_BIND_KEY_FLAG],['curry',WRAP_CURRY_FLAG],['curryRight',WRAP_CURRY_RIGHT_FLAG],['flip',WRAP_FLIP_FLAG],['partial',WRAP_PARTIAL_FLAG],['partialRight',WRAP_PARTIAL_RIGHT_FLAG],['rearg',WRAP_REARG_FLAG]];/** `Object#toString` result references. */var argsTag='[object Arguments]',arrayTag='[object Array]',asyncTag='[object AsyncFunction]',boolTag='[object Boolean]',dateTag='[object Date]',domExcTag='[object DOMException]',errorTag='[object Error]',funcTag='[object Function]',genTag='[object GeneratorFunction]',mapTag='[object Map]',numberTag='[object Number]',nullTag='[object Null]',objectTag='[object Object]',promiseTag='[object Promise]',proxyTag='[object Proxy]',regexpTag='[object RegExp]',setTag='[object Set]',stringTag='[object String]',symbolTag='[object Symbol]',undefinedTag='[object Undefined]',weakMapTag='[object WeakMap]',weakSetTag='[object WeakSet]';var arrayBufferTag='[object ArrayBuffer]',dataViewTag='[object DataView]',float32Tag='[object Float32Array]',float64Tag='[object Float64Array]',int8Tag='[object Int8Array]',int16Tag='[object Int16Array]',int32Tag='[object Int32Array]',uint8Tag='[object Uint8Array]',uint8ClampedTag='[object Uint8ClampedArray]',uint16Tag='[object Uint16Array]',uint32Tag='[object Uint32Array]';/** Used to match empty string literals in compiled template source. */var reEmptyStringLeading=/\b__p \+= '';/g,reEmptyStringMiddle=/\b(__p \+=) '' \+/g,reEmptyStringTrailing=/(__e\(.*?\)|\b__t\)) \+\n'';/g;/** Used to match HTML entities and HTML characters. */var reEscapedHtml=/&(?:amp|lt|gt|quot|#39);/g,reUnescapedHtml=/[&<>"']/g,reHasEscapedHtml=RegExp(reEscapedHtml.source),reHasUnescapedHtml=RegExp(reUnescapedHtml.source);/** Used to match template delimiters. */var reEscape=/<%-([\s\S]+?)%>/g,reEvaluate=/<%([\s\S]+?)%>/g,reInterpolate=/<%=([\s\S]+?)%>/g;/** Used to match property names within property paths. */var reIsDeepProp=/\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,reIsPlainProp=/^\w*$/,rePropName=/[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;/**
+ */;(function(){/** Used as a safe reference for `undefined` in pre-ES5 environments. */var undefined;/** Used as the semantic version number. */var VERSION='4.17.10';/** Used as the size to enable large array optimizations. */var LARGE_ARRAY_SIZE=200;/** Error message constants. */var CORE_ERROR_TEXT='Unsupported core-js use. Try https://npms.io/search?q=ponyfill.',FUNC_ERROR_TEXT='Expected a function';/** Used to stand-in for `undefined` hash values. */var HASH_UNDEFINED='__lodash_hash_undefined__';/** Used as the maximum memoize cache size. */var MAX_MEMOIZE_SIZE=500;/** Used as the internal argument placeholder. */var PLACEHOLDER='__lodash_placeholder__';/** Used to compose bitmasks for cloning. */var CLONE_DEEP_FLAG=1,CLONE_FLAT_FLAG=2,CLONE_SYMBOLS_FLAG=4;/** Used to compose bitmasks for value comparisons. */var COMPARE_PARTIAL_FLAG=1,COMPARE_UNORDERED_FLAG=2;/** Used to compose bitmasks for function metadata. */var WRAP_BIND_FLAG=1,WRAP_BIND_KEY_FLAG=2,WRAP_CURRY_BOUND_FLAG=4,WRAP_CURRY_FLAG=8,WRAP_CURRY_RIGHT_FLAG=16,WRAP_PARTIAL_FLAG=32,WRAP_PARTIAL_RIGHT_FLAG=64,WRAP_ARY_FLAG=128,WRAP_REARG_FLAG=256,WRAP_FLIP_FLAG=512;/** Used as default options for `_.truncate`. */var DEFAULT_TRUNC_LENGTH=30,DEFAULT_TRUNC_OMISSION='...';/** Used to detect hot functions by number of calls within a span of milliseconds. */var HOT_COUNT=800,HOT_SPAN=16;/** Used to indicate the type of lazy iteratees. */var LAZY_FILTER_FLAG=1,LAZY_MAP_FLAG=2,LAZY_WHILE_FLAG=3;/** Used as references for various `Number` constants. */var INFINITY=1/0,MAX_SAFE_INTEGER=9007199254740991,MAX_INTEGER=1.7976931348623157e+308,NAN=0/0;/** Used as references for the maximum length and index of an array. */var MAX_ARRAY_LENGTH=4294967295,MAX_ARRAY_INDEX=MAX_ARRAY_LENGTH-1,HALF_MAX_ARRAY_LENGTH=MAX_ARRAY_LENGTH>>>1;/** Used to associate wrap methods with their bit flags. */var wrapFlags=[['ary',WRAP_ARY_FLAG],['bind',WRAP_BIND_FLAG],['bindKey',WRAP_BIND_KEY_FLAG],['curry',WRAP_CURRY_FLAG],['curryRight',WRAP_CURRY_RIGHT_FLAG],['flip',WRAP_FLIP_FLAG],['partial',WRAP_PARTIAL_FLAG],['partialRight',WRAP_PARTIAL_RIGHT_FLAG],['rearg',WRAP_REARG_FLAG]];/** `Object#toString` result references. */var argsTag='[object Arguments]',arrayTag='[object Array]',asyncTag='[object AsyncFunction]',boolTag='[object Boolean]',dateTag='[object Date]',domExcTag='[object DOMException]',errorTag='[object Error]',funcTag='[object Function]',genTag='[object GeneratorFunction]',mapTag='[object Map]',numberTag='[object Number]',nullTag='[object Null]',objectTag='[object Object]',promiseTag='[object Promise]',proxyTag='[object Proxy]',regexpTag='[object RegExp]',setTag='[object Set]',stringTag='[object String]',symbolTag='[object Symbol]',undefinedTag='[object Undefined]',weakMapTag='[object WeakMap]',weakSetTag='[object WeakSet]';var arrayBufferTag='[object ArrayBuffer]',dataViewTag='[object DataView]',float32Tag='[object Float32Array]',float64Tag='[object Float64Array]',int8Tag='[object Int8Array]',int16Tag='[object Int16Array]',int32Tag='[object Int32Array]',uint8Tag='[object Uint8Array]',uint8ClampedTag='[object Uint8ClampedArray]',uint16Tag='[object Uint16Array]',uint32Tag='[object Uint32Array]';/** Used to match empty string literals in compiled template source. */var reEmptyStringLeading=/\b__p \+= '';/g,reEmptyStringMiddle=/\b(__p \+=) '' \+/g,reEmptyStringTrailing=/(__e\(.*?\)|\b__t\)) \+\n'';/g;/** Used to match HTML entities and HTML characters. */var reEscapedHtml=/&(?:amp|lt|gt|quot|#39);/g,reUnescapedHtml=/[&<>"']/g,reHasEscapedHtml=RegExp(reEscapedHtml.source),reHasUnescapedHtml=RegExp(reUnescapedHtml.source);/** Used to match template delimiters. */var reEscape=/<%-([\s\S]+?)%>/g,reEvaluate=/<%([\s\S]+?)%>/g,reInterpolate=/<%=([\s\S]+?)%>/g;/** Used to match property names within property paths. */var reIsDeepProp=/\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,reIsPlainProp=/^\w*$/,rePropName=/[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;/**
    * Used to match `RegExp`
    * [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).
    */var reRegExpChar=/[\\^$.*+?()[\]{}|]/g,reHasRegExpChar=RegExp(reRegExpChar.source);/** Used to match leading and trailing whitespace. */var reTrim=/^\s+|\s+$/g,reTrimStart=/^\s+/,reTrimEnd=/\s+$/;/** Used to match wrap detail comments. */var reWrapComment=/\{(?:\n\/\* \[wrapped with .+\] \*\/)?\n?/,reWrapDetails=/\{\n\/\* \[wrapped with (.+)\] \*/,reSplitDetails=/,? & /;/** Used to match words composed of alphanumeric characters. */var reAsciiWord=/[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g;/** Used to match backslashes in property paths. */var reEscapeChar=/\\(\\)?/g;/**
@@ -2497,7 +2161,9 @@ module.exports = function isCallable(value) {
    * [combining diacritical marks for symbols](https://en.wikipedia.org/wiki/Combining_Diacritical_Marks_for_Symbols).
    */var reComboMark=RegExp(rsCombo,'g');/** Used to match [string symbols](https://mathiasbynens.be/notes/javascript-unicode). */var reUnicode=RegExp(rsFitz+'(?='+rsFitz+')|'+rsSymbol+rsSeq,'g');/** Used to match complex or compound words. */var reUnicodeWord=RegExp([rsUpper+'?'+rsLower+'+'+rsOptContrLower+'(?='+[rsBreak,rsUpper,'$'].join('|')+')',rsMiscUpper+'+'+rsOptContrUpper+'(?='+[rsBreak,rsUpper+rsMiscLower,'$'].join('|')+')',rsUpper+'?'+rsMiscLower+'+'+rsOptContrLower,rsUpper+'+'+rsOptContrUpper,rsOrdUpper,rsOrdLower,rsDigits,rsEmoji].join('|'),'g');/** Used to detect strings with [zero-width joiners or code points from the astral planes](http://eev.ee/blog/2015/09/12/dark-corners-of-unicode/). */var reHasUnicode=RegExp('['+rsZWJ+rsAstralRange+rsComboRange+rsVarRange+']');/** Used to detect strings that need a more robust regexp to match words. */var reHasUnicodeWord=/[a-z][A-Z]|[A-Z]{2,}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/;/** Used to assign default `context` object properties. */var contextProps=['Array','Buffer','DataView','Date','Error','Float32Array','Float64Array','Function','Int8Array','Int16Array','Int32Array','Map','Math','Object','Promise','RegExp','Set','String','Symbol','TypeError','Uint8Array','Uint8ClampedArray','Uint16Array','Uint32Array','WeakMap','_','clearTimeout','isFinite','parseInt','setTimeout'];/** Used to make template sourceURLs easier to identify. */var templateCounter=-1;/** Used to identify `toStringTag` values of typed arrays. */var typedArrayTags={};typedArrayTags[float32Tag]=typedArrayTags[float64Tag]=typedArrayTags[int8Tag]=typedArrayTags[int16Tag]=typedArrayTags[int32Tag]=typedArrayTags[uint8Tag]=typedArrayTags[uint8ClampedTag]=typedArrayTags[uint16Tag]=typedArrayTags[uint32Tag]=true;typedArrayTags[argsTag]=typedArrayTags[arrayTag]=typedArrayTags[arrayBufferTag]=typedArrayTags[boolTag]=typedArrayTags[dataViewTag]=typedArrayTags[dateTag]=typedArrayTags[errorTag]=typedArrayTags[funcTag]=typedArrayTags[mapTag]=typedArrayTags[numberTag]=typedArrayTags[objectTag]=typedArrayTags[regexpTag]=typedArrayTags[setTag]=typedArrayTags[stringTag]=typedArrayTags[weakMapTag]=false;/** Used to identify `toStringTag` values supported by `_.clone`. */var cloneableTags={};cloneableTags[argsTag]=cloneableTags[arrayTag]=cloneableTags[arrayBufferTag]=cloneableTags[dataViewTag]=cloneableTags[boolTag]=cloneableTags[dateTag]=cloneableTags[float32Tag]=cloneableTags[float64Tag]=cloneableTags[int8Tag]=cloneableTags[int16Tag]=cloneableTags[int32Tag]=cloneableTags[mapTag]=cloneableTags[numberTag]=cloneableTags[objectTag]=cloneableTags[regexpTag]=cloneableTags[setTag]=cloneableTags[stringTag]=cloneableTags[symbolTag]=cloneableTags[uint8Tag]=cloneableTags[uint8ClampedTag]=cloneableTags[uint16Tag]=cloneableTags[uint32Tag]=true;cloneableTags[errorTag]=cloneableTags[funcTag]=cloneableTags[weakMapTag]=false;/** Used to map Latin Unicode letters to basic Latin letters. */var deburredLetters={// Latin-1 Supplement block.
 '\xc0':'A','\xc1':'A','\xc2':'A','\xc3':'A','\xc4':'A','\xc5':'A','\xe0':'a','\xe1':'a','\xe2':'a','\xe3':'a','\xe4':'a','\xe5':'a','\xc7':'C','\xe7':'c','\xd0':'D','\xf0':'d','\xc8':'E','\xc9':'E','\xca':'E','\xcb':'E','\xe8':'e','\xe9':'e','\xea':'e','\xeb':'e','\xcc':'I','\xcd':'I','\xce':'I','\xcf':'I','\xec':'i','\xed':'i','\xee':'i','\xef':'i','\xd1':'N','\xf1':'n','\xd2':'O','\xd3':'O','\xd4':'O','\xd5':'O','\xd6':'O','\xd8':'O','\xf2':'o','\xf3':'o','\xf4':'o','\xf5':'o','\xf6':'o','\xf8':'o','\xd9':'U','\xda':'U','\xdb':'U','\xdc':'U','\xf9':'u','\xfa':'u','\xfb':'u','\xfc':'u','\xdd':'Y','\xfd':'y','\xff':'y','\xc6':'Ae','\xe6':'ae','\xde':'Th','\xfe':'th','\xdf':'ss',// Latin Extended-A block.
-'\u0100':'A','\u0102':'A','\u0104':'A','\u0101':'a','\u0103':'a','\u0105':'a','\u0106':'C','\u0108':'C','\u010A':'C','\u010C':'C','\u0107':'c','\u0109':'c','\u010B':'c','\u010D':'c','\u010E':'D','\u0110':'D','\u010F':'d','\u0111':'d','\u0112':'E','\u0114':'E','\u0116':'E','\u0118':'E','\u011A':'E','\u0113':'e','\u0115':'e','\u0117':'e','\u0119':'e','\u011B':'e','\u011C':'G','\u011E':'G','\u0120':'G','\u0122':'G','\u011D':'g','\u011F':'g','\u0121':'g','\u0123':'g','\u0124':'H','\u0126':'H','\u0125':'h','\u0127':'h','\u0128':'I','\u012A':'I','\u012C':'I','\u012E':'I','\u0130':'I','\u0129':'i','\u012B':'i','\u012D':'i','\u012F':'i','\u0131':'i','\u0134':'J','\u0135':'j','\u0136':'K','\u0137':'k','\u0138':'k','\u0139':'L','\u013B':'L','\u013D':'L','\u013F':'L','\u0141':'L','\u013A':'l','\u013C':'l','\u013E':'l','\u0140':'l','\u0142':'l','\u0143':'N','\u0145':'N','\u0147':'N','\u014A':'N','\u0144':'n','\u0146':'n','\u0148':'n','\u014B':'n','\u014C':'O','\u014E':'O','\u0150':'O','\u014D':'o','\u014F':'o','\u0151':'o','\u0154':'R','\u0156':'R','\u0158':'R','\u0155':'r','\u0157':'r','\u0159':'r','\u015A':'S','\u015C':'S','\u015E':'S','\u0160':'S','\u015B':'s','\u015D':'s','\u015F':'s','\u0161':'s','\u0162':'T','\u0164':'T','\u0166':'T','\u0163':'t','\u0165':'t','\u0167':'t','\u0168':'U','\u016A':'U','\u016C':'U','\u016E':'U','\u0170':'U','\u0172':'U','\u0169':'u','\u016B':'u','\u016D':'u','\u016F':'u','\u0171':'u','\u0173':'u','\u0174':'W','\u0175':'w','\u0176':'Y','\u0177':'y','\u0178':'Y','\u0179':'Z','\u017B':'Z','\u017D':'Z','\u017A':'z','\u017C':'z','\u017E':'z','\u0132':'IJ','\u0133':'ij','\u0152':'Oe','\u0153':'oe','\u0149':"'n",'\u017F':'s'};/** Used to map characters to HTML entities. */var htmlEscapes={'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};/** Used to map HTML entities to characters. */var htmlUnescapes={'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&#39;':"'"};/** Used to escape characters for inclusion in compiled string literals. */var stringEscapes={'\\':'\\',"'":"'",'\n':'n','\r':'r','\u2028':'u2028','\u2029':'u2029'};/** Built-in method references without a dependency on `root`. */var freeParseFloat=parseFloat,freeParseInt=parseInt;/** Detect free variable `global` from Node.js. */var freeGlobal=(typeof global==='undefined'?'undefined':_typeof(global))=='object'&&global&&global.Object===Object&&global;/** Detect free variable `self`. */var freeSelf=(typeof self==='undefined'?'undefined':_typeof(self))=='object'&&self&&self.Object===Object&&self;/** Used as a reference to the global object. */var root=freeGlobal||freeSelf||Function('return this')();/** Detect free variable `exports`. */var freeExports=( false?'undefined':_typeof(exports))=='object'&&exports&&!exports.nodeType&&exports;/** Detect free variable `module`. */var freeModule=freeExports&&( false?'undefined':_typeof(module))=='object'&&module&&!module.nodeType&&module;/** Detect the popular CommonJS extension `module.exports`. */var moduleExports=freeModule&&freeModule.exports===freeExports;/** Detect free variable `process` from Node.js. */var freeProcess=moduleExports&&freeGlobal.process;/** Used to access faster Node.js helpers. */var nodeUtil=function(){try{return freeProcess&&freeProcess.binding&&freeProcess.binding('util');}catch(e){}}();/* Node.js helper references. */var nodeIsArrayBuffer=nodeUtil&&nodeUtil.isArrayBuffer,nodeIsDate=nodeUtil&&nodeUtil.isDate,nodeIsMap=nodeUtil&&nodeUtil.isMap,nodeIsRegExp=nodeUtil&&nodeUtil.isRegExp,nodeIsSet=nodeUtil&&nodeUtil.isSet,nodeIsTypedArray=nodeUtil&&nodeUtil.isTypedArray;/*--------------------------------------------------------------------------*//**
+'\u0100':'A','\u0102':'A','\u0104':'A','\u0101':'a','\u0103':'a','\u0105':'a','\u0106':'C','\u0108':'C','\u010A':'C','\u010C':'C','\u0107':'c','\u0109':'c','\u010B':'c','\u010D':'c','\u010E':'D','\u0110':'D','\u010F':'d','\u0111':'d','\u0112':'E','\u0114':'E','\u0116':'E','\u0118':'E','\u011A':'E','\u0113':'e','\u0115':'e','\u0117':'e','\u0119':'e','\u011B':'e','\u011C':'G','\u011E':'G','\u0120':'G','\u0122':'G','\u011D':'g','\u011F':'g','\u0121':'g','\u0123':'g','\u0124':'H','\u0126':'H','\u0125':'h','\u0127':'h','\u0128':'I','\u012A':'I','\u012C':'I','\u012E':'I','\u0130':'I','\u0129':'i','\u012B':'i','\u012D':'i','\u012F':'i','\u0131':'i','\u0134':'J','\u0135':'j','\u0136':'K','\u0137':'k','\u0138':'k','\u0139':'L','\u013B':'L','\u013D':'L','\u013F':'L','\u0141':'L','\u013A':'l','\u013C':'l','\u013E':'l','\u0140':'l','\u0142':'l','\u0143':'N','\u0145':'N','\u0147':'N','\u014A':'N','\u0144':'n','\u0146':'n','\u0148':'n','\u014B':'n','\u014C':'O','\u014E':'O','\u0150':'O','\u014D':'o','\u014F':'o','\u0151':'o','\u0154':'R','\u0156':'R','\u0158':'R','\u0155':'r','\u0157':'r','\u0159':'r','\u015A':'S','\u015C':'S','\u015E':'S','\u0160':'S','\u015B':'s','\u015D':'s','\u015F':'s','\u0161':'s','\u0162':'T','\u0164':'T','\u0166':'T','\u0163':'t','\u0165':'t','\u0167':'t','\u0168':'U','\u016A':'U','\u016C':'U','\u016E':'U','\u0170':'U','\u0172':'U','\u0169':'u','\u016B':'u','\u016D':'u','\u016F':'u','\u0171':'u','\u0173':'u','\u0174':'W','\u0175':'w','\u0176':'Y','\u0177':'y','\u0178':'Y','\u0179':'Z','\u017B':'Z','\u017D':'Z','\u017A':'z','\u017C':'z','\u017E':'z','\u0132':'IJ','\u0133':'ij','\u0152':'Oe','\u0153':'oe','\u0149':"'n",'\u017F':'s'};/** Used to map characters to HTML entities. */var htmlEscapes={'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};/** Used to map HTML entities to characters. */var htmlUnescapes={'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&#39;':"'"};/** Used to escape characters for inclusion in compiled string literals. */var stringEscapes={'\\':'\\',"'":"'",'\n':'n','\r':'r','\u2028':'u2028','\u2029':'u2029'};/** Built-in method references without a dependency on `root`. */var freeParseFloat=parseFloat,freeParseInt=parseInt;/** Detect free variable `global` from Node.js. */var freeGlobal=(typeof global==='undefined'?'undefined':_typeof(global))=='object'&&global&&global.Object===Object&&global;/** Detect free variable `self`. */var freeSelf=(typeof self==='undefined'?'undefined':_typeof(self))=='object'&&self&&self.Object===Object&&self;/** Used as a reference to the global object. */var root=freeGlobal||freeSelf||Function('return this')();/** Detect free variable `exports`. */var freeExports=( false?'undefined':_typeof(exports))=='object'&&exports&&!exports.nodeType&&exports;/** Detect free variable `module`. */var freeModule=freeExports&&( false?'undefined':_typeof(module))=='object'&&module&&!module.nodeType&&module;/** Detect the popular CommonJS extension `module.exports`. */var moduleExports=freeModule&&freeModule.exports===freeExports;/** Detect free variable `process` from Node.js. */var freeProcess=moduleExports&&freeGlobal.process;/** Used to access faster Node.js helpers. */var nodeUtil=function(){try{// Use `util.types` for Node.js 10+.
+var types=freeModule&&freeModule.require&&freeModule.require('util').types;if(types){return types;}// Legacy `process.binding('util')` for Node.js < 10.
+return freeProcess&&freeProcess.binding&&freeProcess.binding('util');}catch(e){}}();/* Node.js helper references. */var nodeIsArrayBuffer=nodeUtil&&nodeUtil.isArrayBuffer,nodeIsDate=nodeUtil&&nodeUtil.isDate,nodeIsMap=nodeUtil&&nodeUtil.isMap,nodeIsRegExp=nodeUtil&&nodeUtil.isRegExp,nodeIsSet=nodeUtil&&nodeUtil.isSet,nodeIsTypedArray=nodeUtil&&nodeUtil.isTypedArray;/*--------------------------------------------------------------------------*//**
    * A faster alternative to `Function#apply`, this function invokes `func`
    * with the `this` binding of `thisArg` and the arguments of `args`.
    *
@@ -11899,7 +11565,256 @@ else if(freeModule){// Export for Node.js.
 (freeModule.exports=_)._=_;// Export for CommonJS support.
 freeExports._=_;}else{// Export to the global object.
 root._=_;}}).call(undefined);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(14), __webpack_require__(46)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16), __webpack_require__(46)(module)))
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = lunrSearchWrapper;
+
+var _lodash = __webpack_require__(17);
+
+var _lunr = __webpack_require__(101);
+
+var _lunr2 = _interopRequireDefault(_lunr);
+
+var _wrapStringPhrases = __webpack_require__(9);
+
+var _wrapStringPhrases2 = _interopRequireDefault(_wrapStringPhrases);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function lunrSearchWrapper(array, refProp, fieldProps, search) {
+  // Normalises fieldProps into an array, even when passed as string
+  var fieldPropsArray = Array.isArray(fieldProps) ? fieldProps : [fieldProps];
+
+  // Create Lunr index object
+  /* eslint-disable func-names */
+  var index = (0, _lunr2.default)(function () {
+    var _this = this;
+
+    fieldPropsArray.forEach(function (prop) {
+      return _this.field(prop);
+    });
+    this.ref(refProp);
+    array.forEach(function (object) {
+      return _this.add(object);
+    });
+  });
+  /* eslint-enable */
+
+  // Perfrom Lunr search and edits copy of original array to reflect Lur results
+  var rawResult = index.search(search);
+
+  var renameProp = function renameProp(val) {
+    return _defineProperty({}, refProp, val.ref);
+  };
+
+  var normalisedResult = rawResult.map(renameProp);
+
+  return (0, _lodash.intersectionBy)(array, normalisedResult, function (object) {
+    return object[refProp];
+  });
+}
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var DebounceFunction = function () {
+  function DebounceFunction(time) {
+    _classCallCheck(this, DebounceFunction);
+
+    this.time = time;
+    this.timeout = null;
+  }
+
+  _createClass(DebounceFunction, [{
+    key: "update",
+    value: function update(func) {
+      var _this = this;
+
+      if (this.timeout) {
+        clearTimeout(this.timeout);
+      }
+
+      this.timeout = window.setTimeout(function () {
+        clearTimeout(_this.timeout);
+        func();
+      }, this.time);
+    }
+  }]);
+
+  return DebounceFunction;
+}();
+
+exports.default = DebounceFunction;
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var bind = __webpack_require__(21);
+
+module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var implementation = __webpack_require__(79);
+
+module.exports = Function.prototype.bind || implementation;
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var fnToStr = Function.prototype.toString;
+
+var constructorRegex = /^\s*class /;
+var isES6ClassFn = function isES6ClassFn(value) {
+	try {
+		var fnStr = fnToStr.call(value);
+		var singleStripped = fnStr.replace(/\/\/.*\n/g, '');
+		var multiStripped = singleStripped.replace(/\/\*[.\s\S]*\*\//g, '');
+		var spaceStripped = multiStripped.replace(/\n/mg, ' ').replace(/ {2}/g, ' ');
+		return constructorRegex.test(spaceStripped);
+	} catch (e) {
+		return false; // not a function
+	}
+};
+
+var tryFunctionObject = function tryFunctionObject(value) {
+	try {
+		if (isES6ClassFn(value)) {
+			return false;
+		}
+		fnToStr.call(value);
+		return true;
+	} catch (e) {
+		return false;
+	}
+};
+var toStr = Object.prototype.toString;
+var fnClass = '[object Function]';
+var genClass = '[object GeneratorFunction]';
+var hasToStringTag = typeof Symbol === 'function' && _typeof(Symbol.toStringTag) === 'symbol';
+
+module.exports = function isCallable(value) {
+	if (!value) {
+		return false;
+	}
+	if (typeof value !== 'function' && (typeof value === 'undefined' ? 'undefined' : _typeof(value)) !== 'object') {
+		return false;
+	}
+	if (hasToStringTag) {
+		return tryFunctionObject(value);
+	}
+	if (isES6ClassFn(value)) {
+		return false;
+	}
+	var strClass = toStr.call(value);
+	return strClass === fnClass || strClass === genClass;
+};
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = PseudoSelect;
+
+var _preact = __webpack_require__(0);
+
+function PseudoSelect(props) {
+  var open = props.open,
+      items = props.items,
+      loading = props.loading,
+      changeAction = props.changeAction,
+      name = props.name,
+      selected = props.selected;
+
+
+  var keys = Object.keys(items);
+  var radioChange = function radioChange(event) {
+    return changeAction(event.target.value);
+  };
+
+  var renderList = keys.map(function (key, index) {
+    var id = 'pseudo-select-' + name + '-' + index;
+
+    return (0, _preact.h)(
+      'li',
+      { className: 'PseudoSelect-item' + (selected === items[key] ? ' is-active' : '') },
+      (0, _preact.h)(
+        'label',
+        { className: 'PseudoSelect-label', htmlFor: id },
+        (0, _preact.h)('input', _extends({ id: id, name: name }, {
+          value: items[key],
+          type: 'radio',
+          checked: selected === items[key],
+          onClick: radioChange,
+          className: 'PseudoSelect-radio'
+        })),
+        (0, _preact.h)(
+          'span',
+          { className: 'PseudoSelect-text' },
+          key
+        )
+      )
+    );
+  });
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'PseudoSelect' },
+    (0, _preact.h)(
+      'ul',
+      { className: 'PseudoSelect-list' + (open ? ' is-open' : '') },
+      renderList
+    )
+  );
+}
 
 /***/ }),
 /* 24 */
@@ -11915,7 +11830,7 @@ exports.default = RevenueMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(10);
+var _trimValues = __webpack_require__(13);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -12087,14 +12002,52 @@ module.exports = ReactPropTypesSecret;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = createComponents;
-function createComponents(nameString, callback, enhance) {
-  var type = enhance ? 'enhance' : 'create';
-  var nodesList = document.querySelectorAll('[data-' + type + '-component="' + nameString + '"]');
 
-  for (var i = 0; i < nodesList.length; i++) {
-    var node = nodesList[i];
-    callback(node);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.createModal = createModal;
+exports.removeModal = removeModal;
+exports.default = reducer;
+
+var _reduxStore = __webpack_require__(54);
+
+var CREATE_MODAL = 'CREATE_MODAL';
+var REMOVE_MODAL = 'REMOVE_MODAL';
+
+function createModal(title, markup) {
+  return (0, _reduxStore.dispatch)({
+    type: CREATE_MODAL,
+    payload: {
+      title: title,
+      markup: markup
+    }
+  });
+}
+
+function removeModal() {
+  return (0, _reduxStore.dispatch)({ type: REMOVE_MODAL });
+}
+
+function reducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var action = arguments[1];
+
+  switch (action.type) {
+    case 'CREATE_MODAL':
+      return _extends({}, state, {
+        modal: {
+          title: action.payload.title,
+          markup: action.payload.markup
+        }
+      });
+
+    case 'REMOVE_MODAL':
+      return _extends({}, state, {
+        modal: null
+      });
+
+    default:
+      return state;
   }
 }
 
@@ -12389,7 +12342,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 "use strict";
 
 
-var ES = __webpack_require__(9);
+var ES = __webpack_require__(10);
 var supportsDescriptors = __webpack_require__(4).supportsDescriptors;
 
 /*! https://mths.be/array-from v0.2.0 by @mathias */
@@ -12515,7 +12468,7 @@ var sign = __webpack_require__(36);
 var mod = __webpack_require__(37);
 
 var IsCallable = __webpack_require__(22);
-var toPrimitive = __webpack_require__(84);
+var toPrimitive = __webpack_require__(85);
 
 var has = __webpack_require__(20);
 
@@ -12760,7 +12713,7 @@ module.exports = ES5;
 "use strict";
 
 
-var ES = __webpack_require__(9);
+var ES = __webpack_require__(10);
 var implementation = __webpack_require__(32);
 
 var tryCall = function tryCall(fn) {
@@ -12791,7 +12744,7 @@ module.exports = function getPolyfill() {
 
 var ES = __webpack_require__(38);
 var bind = __webpack_require__(21);
-var isString = __webpack_require__(91);
+var isString = __webpack_require__(92);
 
 // Check failure of by-index access of string characters (IE < 9)
 // and failure of `0 in boxedString` (Rhino)
@@ -12854,7 +12807,7 @@ module.exports = function getPolyfill() {
 // For all details and docs: <https://github.com/paulmillr/Array.prototype.findIndex>
 
 
-var ES = __webpack_require__(9);
+var ES = __webpack_require__(10);
 
 module.exports = function findIndex(predicate) {
 	var list = ES.ToObject(this);
@@ -12927,24 +12880,61 @@ function fetchWrapper(url) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = normaliseReturn;
+exports.default = normaliseServerResponse;
 
-var _normaliseItem = __webpack_require__(98);
+var _lodash = __webpack_require__(17);
 
-var _normaliseItem2 = _interopRequireDefault(_normaliseItem);
+var _extractSnippet = __webpack_require__(99);
+
+var _extractSnippet2 = _interopRequireDefault(_extractSnippet);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function normaliseReturn(returnObj) {
-  var _returnObj$result = returnObj.result,
-      count = _returnObj$result.count,
-      results = _returnObj$result.results;
+var normaliseDepartmentItem = function normaliseDepartmentItem(item) {
+  var extras = item.extras,
+      province = item.province,
+      financialYear = item.financial_year,
+      _item$organization = item.organization,
+      organization = _item$organization === undefined ? {} : _item$organization,
+      rawTitle = item.title;
+
+
+  var getExtrasValue = function getExtrasValue(key) {
+    var obj = (0, _lodash.find)(extras, function (extra) {
+      return extra.key === key;
+    }) || { value: null };
+    return obj.value;
+  };
+
+  var isOfficial = organization.title === 'National Treasury';
+
+  var year = financialYear[0];
+  var region = getExtrasValue('geographic_region_slug');
+  var regionString = region === 'south-africa' ? 'National' : province[0];
+  var regionSlug = region === 'south-africa' ? 'national' : 'provincial/' + region;
+
+  var nameSlug = getExtrasValue('department_name_slug');
+  var nameString = getExtrasValue('department_name');
+  var snippet = (0, _extractSnippet2.default)(item);
+
+  var title = isOfficial ? regionString + ' Department: ' + nameString : rawTitle;
+
+  var url = isOfficial ? 'https://vulekamali.gov.za/' + year + '/' + regionSlug + '/departments/' + nameSlug : '/datasets/' + name;
+
+  return { title: title, url: url, snippet: snippet, organisation: organization.title };
+};
+
+function normaliseServerResponse(reponseObj) {
+  var _reponseObj$result = reponseObj.result,
+      count = _reponseObj$result.count,
+      results = _reponseObj$result.results;
+
 
   return {
     count: count,
-    items: results.map(_normaliseItem2.default)
+    items: results.map(normaliseDepartmentItem)
   };
-};
+}
 
 /***/ }),
 /* 46 */
@@ -13000,7 +12990,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports.default = highlightResults;
 
-var _wrapStringPhrases = __webpack_require__(7);
+var _wrapStringPhrases = __webpack_require__(9);
 
 var _wrapStringPhrases2 = _interopRequireDefault(_wrapStringPhrases);
 
@@ -13074,26 +13064,77 @@ function createPromiseToken(cbPromise) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = ItemPreview;
 
-exports.default = function (innerTabKey) {
-  switch (innerTabKey) {
+var _preact = __webpack_require__(0);
+
+var createLinkText = function createLinkText(sphere, string) {
+  switch (sphere) {
     case 'national':
       return 'Estimates of National Expenditure (ENE)';
     case 'provincial':
       return 'Estimates of Provincial Revenue and Expenditure (EPRE)';
+    case 'cso':
+      return string;
     default:
       return null;
   }
 };
 
+var buildSnippet = function buildSnippet(snippet, tab) {
+  if (tab === 'cso' && !snippet.organization) {
+    return null;
+  }
+  return (0, _preact.h)(
+    'div',
+    null,
+    (0, _preact.h)('div', { className: 'u-marginBottom20 u-lineHeight16', dangerouslySetInnerHTML: { __html: snippet.text } }),
+    (0, _preact.h)(
+      'div',
+      null,
+      (0, _preact.h)(
+        'span',
+        null,
+        'Source:\xA0'
+      ),
+      (0, _preact.h)(
+        'a',
+        { target: '_blank', href: snippet.url },
+        createLinkText(tab, snippet.organization)
+      )
+    )
+  );
+};
+
+function ItemPreview(_ref) {
+  var title = _ref.title,
+      url = _ref.url,
+      snippet = _ref.snippet,
+      tab = _ref.tab,
+      paddingOverride = _ref.paddingOverride;
+
+  return (0, _preact.h)(
+    'div',
+    { key: url, className: 'Section u-marginBottom20 is-invisible' + (paddingOverride ? ' u-padding0' : '') },
+    (0, _preact.h)('a', { href: url, className: 'Section-title', dangerouslySetInnerHTML: { __html: title } }),
+    snippet ? buildSnippet(snippet, tab) : null
+  );
+}
+
 /***/ }),
 /* 51 */
+/***/ (function(module, exports) {
+
+module.exports = {"all":"All","national":"National Budgets","provincial":"Provincial Budgets","cso":"Contributed Data"}
+
+/***/ }),
+/* 52 */
 /***/ (function(module, exports) {
 
 module.exports = {"title":"Glossary - vulekamali","description":"South Africa's National and Provincial budget data from National Treasury in partnership with IMALI YETHU.","selected_tab":"learning-centre","selected_sidebar":"glossary","items":{"Accounting officer":"The public servant in a department who is accountable to Parliament for financial management, usually the director-general or head of the department.","Accrual":"An accounting convention by which payments and receipts are recorded as they occur, even if no cash flow takes place.","Acquisition debt":"Debt used to purchase shares or assets.","Ad valorem duties":"Duties levied on commodities as a certain percentage of their value.","Adjusted Appropriation":"The approval, during the course of the financial year, by Parliament of amendments to appropriations voted in the main appropriation for the year. Most changes are made mid-year at the time of the adjustments budget. These adjustments can be made only in terms of the circumstances listed in section 30 of the Public Finance Management Act (1999). These adjustments are included in an adjustments appropriation bill, which Parliament approves before expenditure can take place. Particulars are tabled in acts of Parliament and the accompanying Adjusted Estimates of National Expenditure, and other, publications.","Adjustments estimate":"Presentation to Parliament of the amendments to be made to the appropriations voted in the main budget for the year.","Administered prices":"Prices set outside ordinary market processes through administrative decisions by government, a public entity or a regulator.","Agro-processing":"Manufacturing activities that transform raw materials and intermediary goods derived from agriculture into intermediate or final goods.","Allocated expenditure":"The part of the national budget that can be divided between the national, provincial and local spheres of government, after interest and the contingency reserve have been taken into account.","Amortisation":"The repayment of a loan by instalments over the duration of the loan.","Annual Performance Plan (APP)":"An annual plan that identifies the outputs, performance indicators and targets that the institution will seek to achieve in the upcoming year, aligned to the outcomes reflected in the Strategic Plan. It also includes forward projections (annual targets) for a further two outer years, consistent with the Medium Term Expenditure Framework (MTEF) period.","Annual report (AR)":"A report published annually by institutions that includes the institution’s audited financial statements, in line with applicable legislation and regulations.","Annuity":"A fixed amount of money paid over a period of time as a return on an investment.","Anti-avoidance rule":"A provision aimed at preventing tax avoidance. See principal purpose test.","Anti-fragmentation rule":"A rule that aims to prevent taxpayers from artificially avoiding permanent establishment status by breaking up a cohesive business into several small operations.","Appropriation":"The approval by Parliament of spending from the National Revenue Fund, or by a provincial legislature from a provincial revenue fund.","Artificial debt":"A \"loan\" that is presented as debt but is in effect equity. Often used in tax avoidance or evasion.","Asset price bubble":"A condition occurring when prices for a category of assets rise above the level justified by economic fundamentals.","Audited Outcome":"The actual expenditure recorded in the institution’s audited annual financial statements.","Auditor General reports":"The Auditor-General was established in terms of section 188 of the Constitution to audit and report on the accounts, financial statements and the financial management of government departments, municipalities as well as any other institution as required by legislation. The Auditor-General must submit audit reports to any legislature that has a direct interest in the audit, and to any other authority prescribed by national legislation. All reports must be made public.","Balance of payments":"A summary statement of all the international transactions of the residents of a country with the rest of the world over a particular period of time.","Base erosion and profit shifting":"Corporate tax-planning strategies that exploit the gaps and mismatches in tax laws between countries to artificially shift taxable income to lower or no-tax jurisdictions. See also tax evasion and profit shifting.","Basel III":"Reforms developed by the Basel Committee on Banking Supervision to strengthen the regulation, supervision and risk management of the banking sector.","Baseline":"The initial allocations used during the budget process, derived from the previous year's forward estimates.","Basis point":"One hundredth of one per cent.","Beneficiation":"Manufacturing activities that transform raw minerals into higher-value products.","Bond premium":"Amount by which the purchase price of a bond is greater than its par value.","Bond spread":"The difference in yield between two bonds.","Bond":"A certificate of debt issued by a government or corporation guaranteeing payment of the original investment plus interest by a specified future date.","Bond-switch programme":"An auction that aims to ease pressure on targeted areas of the redemption profile by exchanging shorter-dated debt for longer-term debt. See switch auction.","Bracket creep":"Increased real tax liability that arises when the personal income tax tables are not fully adjusted for inflation.","Budget balance":"The difference between budgeted expenditure and budgeted revenue. If expenditure exceeds revenue, the budget is in deficit. If the reverse is true, it is in surplus.","Capital adequacy":"A measure of a financial institution’s capital, expressed as a percentage of its credit exposure.","Capital asset":"Property of any kind, including assets that are movable or immovable, tangible or intangible, fixed or circulating, but excluding trading stock held for the purpose of realising a financial or economic return.","Capital expenditure":"Spending on assets such as buildings, land, infrastructure and equipment.","Capital flow":"A flow of investments in or out of the country.","Capital formation":"A measure of the net increase in the country’s total stock of capital goods, after allowing for depreciation.","Capital gains tax":"Tax levied on the income realised from the disposal of a capital asset by a taxpayer. A capital gain is the excess of the selling price over the purchase price of the capital asset.","Capital goods":"Durable goods used over a period of time for the production of other goods. See also intermediate goods.","Carbon tax":"An environmental tax on emissions of carbon dioxide (CO2).","Category A, B and C municipalities":"Municipal categories established by the Constitution: Category A, or metropolitan municipalities; Category B, or local municipalities; and Category C, or district municipalities.","Collateral":"An asset placed as a guarantee for the repayment of debt, to be recouped in the case of a default.","Commercial paper issuances":"Debt issued by companies through short-term promissory notes.","Conditional grants":"Allocations of money from one sphere of government to another, conditional on certain services being delivered or on compliance with specified requirements.","Connected person debt/credit":"Debt or credit granted by a person/entity to a connected person/entity. In the case of a holding company, for example, a subsidiary company would be a connected person.","Consolidated general government":"National, provincial and local government, as well as extra-budgetary government institutions and social security funds.","Consolidated government expenditure":"Total expenditure by national and provincial government, social security funds and selected public entities, including transfers and subsidies to municipalities, businesses and other entities.","Consumer price index (CPI)":"The measure of inflation based on prices in a basket of goods and services.","Consumption expenditure":"Expenditure on goods and services, including salaries, which are used up within a short period of time, usually a year.","Contingency reserve":"An amount set aside, but not allocated in advance, to accommodate changes to the economic environment and to meet unforeseeable spending pressures.","Contingent liability":"A government obligation, such as a guarantee, that will only result in expenditure upon the occurrence of a specific event. See government guarantee.","Controlled foreign entity":"A foreign business in which South Africans hold a greater than 50 per cent interest, usually of the share capital of a company.","Corporatisation":"The transformation of state-owned enterprises into commercial entities, subject to commercial legal requirements and governance structures, while the state retains ownership.","Cost-push inflation":"Inflation that is caused by an increase in production costs, such as wages or oil prices.","Countercyclical fiscal policy":"Policy that has the opposite effect on economic activity to that caused by the business cycle, such as slowing spending growth in a boom period and accelerating spending in a recession.","Coupon (bond)":"The periodic interest payment made to bondholders during the life of the bond. The interest is usually paid twice a year.","Credit rating":"An indicator of the risk of default by a borrower or the riskiness of a financial instrument. Credit ratings generally fit into three broad risk categories: minimal or low, moderate and high. These categories indicate the extent of a borrower’s capacity to meet their financial obligations or the probability that the value of a financial instrument will be realised. Investments rated as high risk are considered sub-investment grade (or “junk”).","Crowding-in":"An increase in private investment through the income-raising effect of government spending financed by deficits.","Crowding-out":"A fall in private investment or consumption as a result of increased government expenditure financed through borrowing, thereby competing for loanable funds and raising the interest rate, which curtails private investment and consumption spending.","Currency risk":"The potential for a change in the price of a currency that would affect investors with assets, liabilities or operations denominated in other currencies.","Current account (of the balance of payments)":"The difference between total imports and total exports, taking into account service payments and receipts, interest, dividends and transfers. The current account can be in deficit or surplus. See also trade balance.","Current balance":"The difference between revenue and current expenditure, which consists of compensation of employees, goods and services, and interest and rent on land.","Current expenditure":"Government expenditure on salaries and goods and services, such as rent, maintenance and interest payments. See also consumption expenditure.","Customs duties":"Tax levied on imported goods.","Debenture":"An unsecured loan backed by general credit rather than by specified assets.","Debt redemption profile":"The set of fixed repayment dates and amounts to which an issuer of debt, such as a preferred stock or bond, has committed to meeting.","Debt switching":"The exchange of bonds to manage refinancing risk or improve tradability.","Debt-service costs":"The cost of interest on government debt and other costs directly associated with borrowing.","Deflation":"A consistent decrease in the price of goods and services.","Deleveraging":"The reduction of debt previously used to increase the potential return of an investment.","Depreciation (capital)":"A reduction in the value of fixed capital as a result of wear and tear or redundancy.","Depreciation (exchange rate)":"A reduction in the external value of a currency.","Derivative financial instrument":"A financial asset that derives its value from an underlying asset, which may be a physical asset such as gold, or a financial asset such as a government bond.","Designated countries":"Foreign countries from which income may be exempt from South African tax under certain circumstances. See also double tax agreement.","Development finance institutions":"State agencies that aim to meet the credit needs of riskier but socially and economically desirable projects that are beyond the acceptance limits of commercial banks.","Direct taxes":"Taxes charged on taxable income or capital of individuals and legal entities.","Discretionary trust":"A trust where the executor has the choice of whether and how much of the trust’s income or capital is to be distributed to beneficiaries. The beneficiaries have only provisional rights to the income or capital of the trust.","Disposable income":"Total income by households less all taxes and employee contributions.","Dissaving":"An excess of current expenditure, including the depreciation of fixed capital, over current income.","Dividend withholding tax":"A tax on dividends that is subtracted and withheld by a company or intermediary before the net dividend is paid to the shareholder.","Dividend":"The distribution of a portion of a company's earnings to a class of its shareholders.","Division of revenue":"The allocation of funds between spheres of government, as required by the Constitution. See also equitable share.","Domestic demand":"The total level of spending in an economy, including imports but excluding exports.","Double tax agreement":"An agreement between two countries to prevent income that is taxed in one country from being taxed in the other as well. See also designated countries.","Economic cost":"The cost of an alternative that must be forgone to pursue a certain action. In other words, the benefits that could have been received by taking an alternative action.","Economic growth":"An increase in the total amount of output, income and spending in the economy.","Economic rent":"The difference between the return made by a factor of production (capital or labour) and the return necessary to keep the factor in its current occupation. For example, a firm making excess profits is earning economic rent.","Economically active population":"The part of the population that is of working age and is either employed or seeking work.","Effective tax rate":"Actual tax liability (or a reasonable estimate thereof) expressed as a percentage of a pre-tax income base rather than as a percentage of taxable income. In other words, tax rates that take into account not only the statutory or nominal tax rate, but also other aspects of the tax system (for example, allowable deductions), which determine the tax liability.","Embedded derivative":"A provision in a contract modifying its cash flows by making them dependent on an underlying measure – such as interest or exchange rates, or commodity prices – the value of which changes independently.","Emerging economies":"A name given by international investors to middle-income economies.","Employment coefficient":"The ratio of employment growth to economic growth.","Equitable share":"The allocation of revenue to the national, provincial and local spheres of government as required by the Constitution. See also division of revenue.","Equity finance":"Raising money by selling shares of stock to investors, who receive an ownership interest in return.","Exchange control":"Rules that regulate the flow of currency out of South Africa, or restrict the amount of foreign assets held by South African individuals and companies.","Exchange-traded funds":"Funds that track indexes, commodities or baskets of assets, and trade like stocks.","Excise duties":"Taxes on the manufacture or sale of certain domestic or imported products. Excise duties are usually charged on products such as alcoholic beverages, tobacco and petroleum.","Expenditure ceiling":"The maximum allowable level of expenditure to which government has committed itself.","Extra-budgetary institutions":"Public entities not directly funded from the fiscus.","Fair-value adjustment":"A change in the value of an asset or liability resulting from the periodic reassessment of its expected future economic in- or outflows.","Financial Services Board":"An independent institution established by statute that regulates insurers, intermediaries, retirement funds, friendly societies, unit trust schemes, management companies and financial markets.","Financial Stability Board":"An international body made up of representatives of financial authorities and institutions, and central banks. It proposes regulatory, supervisory and other policies in the interest of financial stability.","Financial account":"A statement of all financial transactions between the nation and the rest of the world, including portfolio and fixed investment flows and movements in foreign reserves.","Financial and Fiscal Commission (FFC)":"An independent body established by the Constitution to make recommendations to Parliament and provincial legislatures about financial issues affecting the three spheres of government.","Financial year":"The 12 months according to which companies and organisations budget and account. See also fiscal year.","Fiscal consolidation":"Policy aimed at reducing government deficits and debt accumulation.","Fiscal incidence":"The combined overall economic impact that fiscal policy has on the economy.","Fiscal leakage":"The outflow of revenue from an economy through tax evasion and avoidance.","Fiscal policy":"Policy on taxation, public spending and borrowing by the government.","Fiscal space":"The ability of government’s budget to provide additional resources for a desired programme without jeopardising fiscal or debt sustainability.","Fiscal year":"The 12 months on which government budgets are based, beginning 1 April and ending 31 March of the subsequent calendar year.","Fixed investment/capital formation":"Spending on buildings, machinery and equipment contributing to production capacity in the economy. See also gross fixed-capital formation.","Fixed-income bond":"A bond that pays a specific interest rate.","Floating rate notes":"A bond on which the interest rate is reset periodically in line with a money market reference rate.","Flow-through vehicles":"A vehicle, such as a trust, where income earned is treated as income of the vehicle’s beneficiaries.","Foreign currency swaps":"The exchange of principal and/or interest payments in one currency for those in another.","Foreign direct investment (FDI)":"The acquisition of a controlling interest by governments, institutions or individuals of a business in another country.","Forward book":"The total amount of contracts for the future exchange of foreign currency entered into by the Reserve Bank at any given point in time.","Forward cover":"Transactions involving an agreed exchange rate at which foreign currency will be purchased or sold at a future date.","Fringe benefit":"A benefit supplementing an employee’s wages or salary, such as medical insurance, company cars, housing allowances and pension schemes.","Fuel levy":"An excise tax on liquid fuels.","Function shift":"The movement of a function from one departmental vote or sphere of government to another.","Funded pension arrangements":"A pension scheme in which expected future benefits are funded in advance and as entitlement accrues.","Gold and foreign exchange reserves":"Reserves held by the Reserve Bank to meet foreign exchange obligations and to maintain liquidity in the presence of external shocks.","Government debt":"The total amount of money owed by the government as a consequence of its past borrowing.","Government guarantee":"An assurance made by government to a lender that a financial obligation will be honoured, even if the borrowing government institution is unable to repay the debt. See contingent liability.","Green paper":"A policy document intended for public discussion.","Gross borrowing requirement":"The sum of the main budget balance, extraordinary receipts and payments (referred to as National Revenue Fund receipts and payments), and maturing debt. The amount is funded through domestic short- and long- term loans, foreign loans and changes in cash balances.","Gross domestic product (GDP)":"A measure of the total national output, income and expenditure in the economy. GDP per head is the simplest overall measure of welfare, although it does not take account of the distribution of income, nor of goods and services that are produced outside the market economy, such as work within the household.","Gross domestic product inflation":"A measure of the total increase in prices in the whole economy. Unlike CPI inflation, GDP inflation includes price increases in goods that are exported and intermediate goods such as machines, but excludes imported goods.","Gross fixed-capital formation":"The addition to a country’s fixed-capital stock during a specific period, before provision for depreciation.","Gross value added":"The value of output less intermediate consumption. It is also a measure of the contribution to the economy made by an industry or sector.","Group of Twenty (G20)":"An international forum made up of finance ministers and central bank governors from 20 of the world’s largest economies.","Hedging":"An action taken by a buyer or seller to protect income against changes in prices, interest rates or exchange rates.","Horizontal equity":"A principle in taxation that holds that similarly situated taxpayers should face a similar tax treatment or tax burden. In other words, taxpayers with the same amount of income or capital should be accorded equal treatment.","Impaired advances":"Loans or advances that may not be collected in full.","Impairment":"A reduction in the recorded value of a long-lived asset arising from circumstances that prevent the asset from generating the future economic benefits previously expected and recorded.","Import parity pricing":"When a firm sells goods locally at the price customers would pay if they were to import the same goods from another country.","Inclusion rate":"The portion of the net capital gain derived from the disposal of an asset that will be taxed at the applicable rate.","Industrial development zone":"Designated sites linked to an international air or sea port, supported by incentives to encourage investment in export-orientated manufacturing and job creation.","Inflation targeting":"A monetary policy framework intended to achieve price stability over a certain period of time.","Inflation":"An increase in the overall price level of goods and services in an economy over a specific period of time.","Inter-state debt":"Money that different organs of state owe to each other.","Intergenerational equity":"A value based on ensuring that future generations do not have to repay debts taken on today, unless they also share in the benefits of assets.","Intermediate goods":"Goods produced to be used as inputs in the production of final goods.","Inventories":"Stocks of goods held by firms. An increase in inventories reflects an excess of output relative to spending over a period of time.","Labour intensity":"The relative amount of labour used to produce a unit of output.","Liquidity requirements":"The amount of liquid or freely convertible assets that banks are required to hold relative to their liabilities for prudential and regulatory purposes.","Liquidity risk":"The risk that an asset might not easily and quickly be converted into cash through sale, or the risk to a debtor that it cannot meet its current debt obligations.","Liquidity":"The ease with which assets can be bought and sold.","Lump-sum benefit":"A one-time payment for the total or partial value of an asset, usually received in place of recurring smaller payments.","M3":"The broadest definition of money supply in South Africa, including notes and coins, demand and fixed deposits, and credit.","Macroeconomics":"The branch of economics that deals with the whole economy – including issues such as growth, inflation, unemployment and the balance of payments.","Macroprudential regulation":"Rules that protect the stability of the financial sector and guard against systemic risk.","Main Appropriation":"The spending appropriations set out in legislation, at the beginning of the financial year, to authorise spending from the National Revenue Fund and provincial revenue funds. Sometimes referred to as “Annual budget”.","Marginal income tax rate":"The rate of tax on an incremental unit of income.","Marginal lending rate":"A penalty rate of interest charged by the Reserve Bank for lending to financial institutions in the money market in excess of the daily liquidity provided to the money market at the repurchase rate. See also repurchase agreements.","Marketable securities":"Tradable financial securities listed with a securities exchange.","Means test":"A method for determining whether someone qualifies for state assistance.","Medium Term Estimates":"The three-year spending or revenue plans of national and provincial departments as published at the time of the annual budget. Parliament authorises expenditure annually, thus the spending estimates for the two outer years of the medium term are not included in the voted appropriations. These forward estimates or indicative allocations do, however, form the basis of the planning of the following year’s budget.","Medium Term Expenditure Committee (MTEC)":"The technical committee responsible for evaluating the medium-term expenditure framework budget submissions of national departments and making recommendations to the Minister of Finance regarding allocations to national departments.","Medium-term expenditure framework (MTEF)":"The three-year spending plans of national and provincial governments, published at the time of the Budget.","Microeconomics":"The branch of economics that deals with the behaviour of individual firms, consumers and sectors.","Ministers’ Committee on the Budget":"The political committee that considers key policy and budgetary issues that pertain to the budget process before they are tabled in Cabinet.","Monetary easing":"See quantitative easing.","Monetary policy":"Policy concerning total money supply, exchange rates and the general level of interest rates.","Money supply":"The total stock of money in an economy.","National Development Plan":"A planning framework prepared by the National Planning Commission that aims to eliminate poverty and reduce inequality by 2030.","National Revenue Fund":"The consolidated account of the national government into which all taxes, fees and charges collected by SARS and departmental revenue must be paid.","National budget":"The projected revenue and expenditures that flow through the National Revenue Fund. It does not include spending by provinces or local government from their own revenues.","Negotiable certificate of deposit":"Short-term deposit instruments issued by banks, at a variable interest rate, for a fixed period.","Net borrowing requirement":"The main budget balance.","Net exports":"Exports less imports.","Net open foreign currency position":"Gold and foreign exchange reserves minus the oversold forward book. The figure is expressed in dollars.","Net trade":"The difference between the value of exports and the value of imports.","New Development Bank":"A multilateral lending institution being established by Brazil, Russia, India, China and South Africa.","Nominal exchange rates":"The current rate of exchange between the rand and foreign currencies. The “effective” exchange rate is a trade-weighted average of the rates of exchange with other currencies.","Nominal wage":"The return, or wage, to employees at the current price level.","Non-competitive bid auction":"An auction in which an investor agrees to purchase a certain number of securities such as bonds at the average price of all competitive bids over a given period of time.","Non-financial public enterprises":"Government-owned or controlled organisations that deliver goods and non- financial services, trading as business enterprises, such as Eskom or Transnet.","Non-interest expenditure":"Total expenditure by government less debt-service costs.","Non-tax revenue":"Income received by government as a result of administrative charges, licences, fees, sales of goods and services, and so on.","Occupation-specific salary dispensation":"Revised salary structures unique to identified occupations in the public service, including doctors, nurses and teachers.","Opportunity cost":"The value of that which must be given up to achieve or acquire something. It is represented by the next highest valued alternative use of a resource.","Organisation for Economic Cooperation and Development (OECD)":"An organisation of 35 mainly industrialised member countries. South Africa is not a member.","PAYE":"The pay-as-you-earn (PAYE) system of income tax withholding requires employers to deduct income tax, and in some cases, the employees’ portion of social benefit taxes, from each paycheque delivered to employees.","Payroll tax":"Tax an employer withholds and/or pays on behalf of employees based on employee wages or salaries.","Performance agreements (PA)":"The agreement that comprises an official’s duties and responsibilities as contracted with the Executive.","Permanent establishment":"A fixed place of business from which a company operates. When two countries have a tax treaty, the concept of “permanent establishment” is used to determine the right of one state to tax the profits of the business in the other state. See also anti-fragmentation.","Policy reserve":"Additional money in the fiscus to fund new and crucial priorities.","Portfolio investment":"Investment in financial assets such as stocks and bonds.","Potential growth":"The fastest growth an economy can sustain without increasing inflation.","Presidential Infrastructure Coordinating Commission (PICC)":"A commission established by Cabinet to develop, review and coordinate a 20-year infrastructure plan.","Price discovery":"The process of determining the price level of a commodity or asset, based on supply and demand factors.","Price sensitivity":"The extent to which changes in price affect consumer purchasing behaviour.","Primary deficit/surplus":"The difference between total revenue and non-interest expenditure. When revenue exceeds non-interest expenditure there is a surplus.","Primary sector":"The agricultural and mining sectors of the economy.","Principal purpose test":"A test where the benefits of a tax treaty are denied if it is reasonable to conclude that obtaining the benefit was one of the principal purposes behind the arrangement or transaction.","Private-sector credit extension":"Credit provided to the private sector. This includes all loans, credit cards and leases.","Privatisation":"The full or partial sale of state-owned enterprises to private individuals or companies.","Producer price index (PPI)":"Price increases measured by the producer price index – a measure of the prices paid based mainly on producers’ published price lists.","Productivity":"A measure of the amount of output generated from every unit of input. Typically used to measure changes in labour efficiency.","Profit shifting":"The allocation of income and expenses between related corporations or branches of the same legal entity to reduce overall tax liability.","Public Finance Management Act (PFMA)":"The act regulating financial management of national and provincial government, including the efficiency and effectiveness of public expenditure and the responsibilities of those engaging with government financial management.","Public Investment Corporation (PIC)":"A government-owned investment management company that invests funds on behalf of public-sector entities. Its largest client is the Government Employees Pension Fund.","Public entities":"Companies, agencies, funds and accounts that are fully or partly owned by government or public authorities and are regulated by law.","Public goods":"Goods and services that would not be fully provided in a pure free-market system and are largely provided by government.","Public sector":"National government, provincial government, local government, extra- budgetary governmental institutions, social security funds and non- financial public enterprises.","Public-benefit organisations (PBOs)":"Organisations that are mainly funded by donations from the public and other institutions, which engage in social activities to meet the needs of the general public.","Public-private partnerships (PPPs)":"A contractual arrangement whereby a private party performs a government function and assumes the associated risks. In return, the private party receives a fee according to predefined performance criteria. See unitary payment.","Public-sector borrowing requirement":"The consolidated cash borrowing requirement of general government and non-financial public enterprises.","Purchasing managers’ index (PMI)":"A composite index measuring the change in manufacturing activity compared with the previous month. An index value of 50 indicates no change in activity, a value above 50 indicates increased activity and a value below 50 indicates decreased activity.","Quantitative easing":"A measure used by central banks to stimulate economic growth when interest rates are near zero by increasing money supply. Also called monetary easing.","Quarterly Employment Survey":"An establishment-based survey conducted by Statistics South Africa to obtain information about the number of employees and gross salaries paid.","Quarterly Labour Force Survey":"A household-based survey conducted by Statistics South Africa to measure the dynamics of the labour market, producing indicators such as employment, unemployment and inactivity.","Quarterly performance report (QPR)":"A quarterly progress report on the implementation of an institution’s Annual Performance Plan.","Rating agency":"A company that evaluates the ability of countries or other borrowers to honour their debt obligations. Credit ratings are used by international investors as indications of sovereign risk. See also credit rating.","Real effective exchange rate":"A measure of the rate of exchange of the rand relative to a trade-weighted average of South Africa’s trading partners’ currencies, adjusted for price trends in South Africa and the countries included.","Real exchange rate":"The level of the exchange rate taking account of inflation differences.","Real expenditure":"Expenditure measured in constant prices after taking account of inflation.","Real interest rate":"The level of interest after taking account of inflation.","Real wage":"The return, or wage, to employees, measured at a constant price level.","Recapitalisation":"Injection of funds into a company or entity to aid liquidity, either as a loan or in return for equity.","Recession":"A period in which national output and income decline. A recession is usually defined as two consecutive quarters of negative growth.","Redemption":"The return of an investor’s principal in a fixed-income security, such as a preferred stock or bond.","Refinancing risk":"The risk that government will not be able to raise money to repay debt at any scheduled point, or that it will have to do so at a high cost.","Refinancing":"The repayment of debt at a scheduled time with the proceeds of new loans.","Regional integration":"An economic policy intended to boost economic activity in a geographical area extending beyond one country.","Remuneration":"The costs of personnel, including salaries, housing allowances, car allowances and other benefits received by personnel.","Repurchase (repo) rate":"The rate at which the Reserve Bank lends to commercial banks.","Repurchase agreements":"Short-term contracts between the Reserve Bank and private banks in the money market to sell specified amounts of money at an interest rate determined by daily auction.","Reserves (foreign exchange)":"Holdings of foreign exchange, either by the Reserve Bank only or by the Reserve Bank and domestic banking institutions.","Residence-based income tax system":"A tax system in which the worldwide income accruing to a resident of a country is subject to the taxes of that country.","Reticulation scheme":"A piped water network that ensures that water is collected and treated before it reaches the consumer.","Revaluation gain/loss":"The difference between the value of a foreign currency deposit from the original (historical) rate to execution of a trade based on the spot rate.","Revised estimate":"The current estimate of the likely outcome for a particular item of revenue or expenditure for a financial year. This does not imply a change in the amount voted to an institution, but rather an updated estimate of what the department is likely to spend or receive during the financial year.","Risk premium":"A return that compensates for uncertainty.","Saving":"The difference between income and spending.","Seasonally adjusted":"Removal of seasonal volatility (monthly or quarterly) from a time series. This provides a measure of the underlying trend in the data.","Secondary rebate":"A rebate from income tax, in addition to the primary rebate, that is available to taxpayers aged 65 years and older.","Secondary sector":"The part of the economy concerned with the manufacture of goods.","Secondary tax on companies (STC)":"Tax on dividends declared by a company, calculated at the rate of 10 per cent of the net amount of dividends declared. This was discontinued in 2012 and replaced with a 15 per cent dividend withholding tax.","Section 21 company":"Non-profit entities registered in terms of Section 21 of the Companies Act.","Sector education and training authorities":"Institutions funded through employer training levies, responsible for learnership programmes and implementing strategic sector skills plans.","Secured debt instruments":"Debt backed or secured by collateral to reduce the risk of lending.","Securitisation":"The pooling of assets into a financial instrument to sell to different types of investors.","Service and transfer payments":"Services involve transactions of non-tangible commodities, while transfers are unrequited transactions that do not generate a counter-economic value (for example, gifts and grants).","Skills development levy":"A payroll tax designed to finance training initiatives in terms of the skills development strategy.","Social infrastructure":"Infrastructure that supports social services.","Social wage":"Social benefits available to all individuals, funded wholly or partly by the state.","Source-based income tax system":"A system in which income is taxed in the country where the income originates.","Southern African Customs Union (SACU) agreement":"An agreement between South Africa, Botswana, Namibia, Lesotho and Swaziland that allows for the unrestricted flow of goods and services, and the sharing of customs and excise revenue.","Southern African Development Community (SADC)":"A regional intergovernmental organisation that promotes collaboration, economic integration and technical cooperation throughout southern Africa.","Sovereign debt rating":"An assessment of the likelihood that a government will default on its debt obligations.","Sovereign debt":"Debt issued by a government.","Spatial planning":"Planning to influence the geographic distribution of people and economic activity.","Special economic zones":"A designated zone where business and trade laws incentivise trade, investment and employment.","Specific excise duty":"A tax on each unit of output or sale of a good, unrelated to the value of a good.","Standing appropriations":"Government’s expenditure obligations that do not require a vote or statutory provision, including contractual guarantee commitments and international agreements.","Statutory appropriations":"Amounts appropriated to be spent in terms of statutes and not requiring appropriation by vote.","Sterilisation":"Action taken by the Reserve Bank to neutralise excess cash created in the money market when purchasing foreign currency.","Strategic Plan (SP)":"A five year plan that identifies the impact, strategically important outcomes and outputs and associated resource implications against which public institutions’ medium term results can be measured and evaluated by Parliament, provincial legislatures and the public. Strategic Plans span over a five year planning horizon which is aligned to the national electoral cycle.","Structural budget balance":"A representation of what government revenue and expenditure would be if output were at its potential level, with cyclical variations stripped out.","Structural constraints":"Imbalances in the structure of the economy that hinder growth and development.","Switch auction":"An auction to exchange bonds to manage refinancing risk or improve tradability.","Syndicated loan":"A large loan in which a group of banks work together to provide funds, which they solicit from their clients for the borrower.","Tax amnesty":"A period allowed by tax authorities during which taxpayers who are outside the tax net, but should be registered for tax purposes, can register for tax without incurring penalties.","Tax avoidance":"When individuals or businesses legitimately use provisions in the tax law to reduce their tax liability.","Tax base":"The aggregate value of income, sales or transactions on which particular taxes are levied.","Tax buoyancy":"Describes the relationship between total tax revenue collections and economic growth. This measure includes the effects of policy changes on revenue. A value above one means that revenues are growing faster than the economy and below one means they are growing below the rate of GDP growth.","Tax evasion":"When individuals or businesses illegally reduce their tax liability.","Tax expenditure":"Government revenue forgone due to provisions that allow deductions, exclusions, or exemptions from taxable income. The revenue can also be foregone through the deferral of tax liability or preferential tax rates.","Tax gap":"A measure of tax evasion that emerges from comparing the tax liability or tax base declared to the tax authorities with the tax liability or tax base calculated from other sources.","Tax incentives":"Specific provisions in the tax code that provide favourable tax treatment to individuals and businesses to encourage specific behaviour or activities.","Tax incidence":"The final distribution of the burden of tax. Statutory incidence defines where the law requires a tax to be levied. Economic incidence refers to those who experience a decrease in real income as a result of the imposition of a tax.","Tax loopholes":"Unintended weaknesses in the legal provisions of the tax system used by taxpayers to avoid paying tax liability.","Tax morality":"The willingness, or motivation, of citizens to pay tax. This is separate to the statutory obligation to pay taxes, but may have an influence on tax compliance.","Tax-to-GDP ratio":"For public finance comparison purposes, a country’s tax burden, or tax-to- GDP ratio, is calculated by taking the total tax payments for a particular fiscal year as a fraction or percentage of the GDP for that year.","Term-to-maturity":"The time between issuance and expiry.","Terms of trade":"An index measuring the ratio of a country’s export prices relative to its import prices.","Tertiary sector":"The part of the economy concerned with the provision of services.","Total factor productivity":"An index used to measure the efficiency of all inputs that contribute to the production process.","Trade balance":"The monetary record of a country’s net imports and exports of physical merchandise. See also current account.","Trade regime":"The system of tariffs, quotas and quantitative restrictions applied to protect domestic industries, together with subsidies and incentives used to promote international trade.","Trade-weighted rand":"The value of the rand pegged to or expressed relative to a market basket of selected foreign currencies.","Trademark":"A legal right pointing distinctly to the origin or ownership of merchandise to which it is applied and legally reserved for the exclusive use of the owner as maker or seller.","Treasury bills":"Short-term government debt instruments that yield no interest but are issued at a discount. Maturities vary from one day to 12 months.","Treasury committee":"The Cabinet committee that evaluates all requests for additional funds for unavoidable and unforeseen expenditure during a financial year.","Treaty shopping":"When related companies in different countries establish a third entity in another location to take advantage of a favourable tax arrangement.","Trend GDP growth":"The theoretical level of GDP growth determined by the full utilisation of all factors of production (land, labour and capital). Growth above the trend rate results in macroeconomic imbalances such as rising inflation or a weakening of the current account. Increases in trend GDP growth are achieved through capital formation, growth in employment and/or technological development.","Unallocated reserves":"Potential expenditure provision not allocated to a particular use. It mainly consists of the contingency reserve and amounts of money left unallocated by provinces.","Unemployment (broad definition)":"All those of working age who are unemployed, including those actively seeking employment and discouraged work seekers.","Unemployment (official definition)":"Those of working age, who are unemployed and actively seeking work (excludes discouraged work seekers).","Unit labour cost":"The cost of labour per unit of output, calculated by dividing average wages by productivity (output per worker per hour).","Unitary payment":"The payment made to the private party for meeting its obligations in the project deliverables in a public-private partnership.","Unqualified audit":"An assessment by a registered auditing firm or the Auditor-General of South Africa asserting that the financial statements of a department, entity or company are free of material misstatement.","Unsecured debt instruments":"Debt not backed or secured by collateral to reduce the risk of lending.","Unsecured lending":"A loan that is not backed or secured by any type of collateral to reduce the lender’s risk.","Vertical equity":"A doctrine in taxation that holds that differently situated taxpayers should be treated differently in terms of income tax provisions. In other words, taxpayers with more income and/or capital should pay more tax.","Vested right":"The right to ownership of an asset that cannot be arbitrarily taken away by a third party.","Virement":"The transfer of resources from one programme to another within the same department during a financial year.","Vote":"An appropriation voted by Parliament.","Water trading account":"A departmental account that ring-fences revenue from the sale of bulk water and related services to secure funding to manage the sustainability of water resources and infrastructure.","Weighted average cost of capital":"The average rate of return an organisation expects to pay to investors in its securities, such as bonds, debt and shares. Each category of security is accorded a proportionate weight in the calculation.","White paper":"A policy document used to present government policy preferences.","Withholding tax":"Tax on income deducted at source. Withholding taxes are widely used for dividends, interest and royalties.","Yield curve":"A graph showing the relationship between the yield on bonds of the same credit quality but different maturity at a given point in time.","Yield":"A financial return or interest paid to buyers of government bonds. The yield/rate of return on bonds takes into account the total annual interest payments, the purchase price, the redemption value and the amount of time remaining until maturity."}}
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13162,7 +13203,7 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13175,7 +13216,7 @@ exports.getState = exports.subscribe = exports.dispatch = undefined;
 
 var _redux = __webpack_require__(174);
 
-var _redux2 = __webpack_require__(54);
+var _redux2 = __webpack_require__(28);
 
 var _redux3 = _interopRequireDefault(_redux2);
 
@@ -13194,7 +13235,7 @@ exports.getState = getState;
 exports.default = store;
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13203,57 +13244,18 @@ exports.default = store;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = createComponents;
+function createComponents(nameString, callback) {
+  var nodesList = document.querySelectorAll("[data-create-component=\"" + nameString + "\"]");
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.createModal = createModal;
-exports.removeModal = removeModal;
-exports.default = reducer;
-
-var _reduxStore = __webpack_require__(53);
-
-var CREATE_MODAL = 'CREATE_MODAL';
-var REMOVE_MODAL = 'REMOVE_MODAL';
-
-function createModal(title, markup) {
-  return (0, _reduxStore.dispatch)({
-    type: CREATE_MODAL,
-    payload: {
-      title: title,
-      markup: markup
-    }
-  });
-}
-
-function removeModal() {
-  return (0, _reduxStore.dispatch)({ type: REMOVE_MODAL });
-}
-
-function reducer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  var action = arguments[1];
-
-  switch (action.type) {
-    case 'CREATE_MODAL':
-      return _extends({}, state, {
-        modal: {
-          title: action.payload.title,
-          markup: action.payload.markup
-        }
-      });
-
-    case 'REMOVE_MODAL':
-      return _extends({}, state, {
-        modal: null
-      });
-
-    default:
-      return state;
+  for (var i = 0; i < nodesList.length; i++) {
+    var node = nodesList[i];
+    callback(node);
   }
 }
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13558,7 +13560,7 @@ var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbo
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16650,7 +16652,7 @@ function build(opts) {
 module.exports = canvg;
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17878,7 +17880,7 @@ exports.XMLSerializer = XMLSerializer;
 //}
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18010,7 +18012,7 @@ function LineChart(props) {
 }
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18023,7 +18025,7 @@ exports.default = Download;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(18);
+var _index = __webpack_require__(12);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -18053,7 +18055,7 @@ function Download(_ref) {
 }
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18071,7 +18073,7 @@ var _camelcase = __webpack_require__(236);
 
 var _camelcase2 = _interopRequireDefault(_camelcase);
 
-var _glossary = __webpack_require__(51);
+var _glossary = __webpack_require__(52);
 
 var _glossary2 = _interopRequireDefault(_glossary);
 
@@ -18156,19 +18158,6 @@ function createTooltips(parentNodes) {
 }
 
 /***/ }),
-/* 61 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(62);
-
-__webpack_require__(254);
-
-__webpack_require__(255);
-
-/***/ }),
 /* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18176,6 +18165,17 @@ __webpack_require__(255);
 
 
 __webpack_require__(63);
+
+__webpack_require__(254);
+
+__webpack_require__(255);
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 __webpack_require__(64);
 
@@ -18185,15 +18185,17 @@ __webpack_require__(66);
 
 __webpack_require__(67);
 
-__webpack_require__(70);
+__webpack_require__(68);
 
 __webpack_require__(71);
 
 __webpack_require__(72);
 
-__webpack_require__(95);
+__webpack_require__(73);
 
-__webpack_require__(109);
+__webpack_require__(96);
+
+__webpack_require__(110);
 
 __webpack_require__(115);
 
@@ -18229,20 +18231,18 @@ __webpack_require__(244);
 
 __webpack_require__(245);
 
+__webpack_require__(246);
+
 __webpack_require__(247);
+
+__webpack_require__(248);
 
 __webpack_require__(249);
 
 __webpack_require__(250);
 
-__webpack_require__(251);
-
-__webpack_require__(252);
-
-__webpack_require__(253);
-
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18465,7 +18465,7 @@ if ("document" in window.self) {
 }
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18935,7 +18935,7 @@ if ("document" in window.self) {
 })(typeof self !== 'undefined' ? self : undefined);
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18953,14 +18953,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 	// render modes
 
-
 	var ATTR_KEY = '__preactattr_';
-
-	// DOM properties that should NOT have "px" added when numeric
 
 	/* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
 
-	// Internal helpers from preact
 	/**
   * Return a ReactElement-compatible object for the current state of a preact
   * component.
@@ -19200,13 +19196,16 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		/** Notify devtools that a component has been updated with new props/state. */
 		var componentUpdated = function componentUpdated(component) {
 			var prevRenderedChildren = [];
-			visitNonCompositeChildren(instanceMap.get(component), function (childInst) {
-				prevRenderedChildren.push(childInst);
-			});
-
+			var instance = instanceMap.get(component);
+			if (instance) {
+				visitNonCompositeChildren(instance, function (childInst) {
+					prevRenderedChildren.push(childInst);
+				});
+			}
 			// Notify devtools about updates to this component and any non-composite
 			// children
-			var instance = updateReactComponent(component);
+			instance = updateReactComponent(component);
+
 			Reconciler.receiveComponent(instance);
 			visitNonCompositeChildren(instance, function (childInst) {
 				if (!childInst._inDevTools) {
@@ -19281,6 +19280,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   * @param {(Component) => void} visitor
   */
 	function visitNonCompositeChildren(component, visitor) {
+		if (!component) return;
 		if (component._renderedComponent) {
 			if (!component._renderedComponent._component) {
 				visitor(component._renderedComponent);
@@ -19349,13 +19349,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 //# sourceMappingURL=devtools.js.map
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19365,7 +19365,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _queryString = __webpack_require__(8);
+var _queryString = __webpack_require__(3);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -19380,7 +19380,7 @@ function loadStringQueries() {
 exports.default = loadStringQueries();
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19393,7 +19393,7 @@ module.exports = function (str) {
 };
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19496,7 +19496,7 @@ module.exports = function (encodedURI) {
 };
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19512,7 +19512,7 @@ function createComponentInterfaces() {
 exports.default = createComponentInterfaces();
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19522,7 +19522,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _analyticsEvent = __webpack_require__(6);
+var _analyticsEvent = __webpack_require__(7);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -19570,11 +19570,11 @@ function loadGoogleAnalytics() {
   }
 }
 
-var production = (0, _getProp2.default)('production', document.body, { parse: 'boolean' });
+var production = (0, _getProp2.default)('production', document.body, 'bool');
 exports.default = production ? loadGoogleAnalytics() : null;
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19586,19 +19586,19 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _array = __webpack_require__(73);
+var _array = __webpack_require__(74);
 
 var _array2 = _interopRequireDefault(_array);
 
-var _promisePolyfill = __webpack_require__(87);
+var _promisePolyfill = __webpack_require__(88);
 
 var _promisePolyfill2 = _interopRequireDefault(_promisePolyfill);
 
-var _arrayPrototype = __webpack_require__(90);
+var _arrayPrototype = __webpack_require__(91);
 
 var _arrayPrototype2 = _interopRequireDefault(_arrayPrototype);
 
-var _arrayPrototype3 = __webpack_require__(93);
+var _arrayPrototype3 = __webpack_require__(94);
 
 var _arrayPrototype4 = _interopRequireDefault(_arrayPrototype3);
 
@@ -19634,7 +19634,7 @@ function polyfillOldFeatures() {
 exports.default = polyfillOldFeatures();
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19644,7 +19644,7 @@ var define = __webpack_require__(4);
 
 var implementation = __webpack_require__(32);
 var getPolyfill = __webpack_require__(39);
-var shim = __webpack_require__(86);
+var shim = __webpack_require__(87);
 
 // eslint-disable-next-line no-unused-vars
 var boundFromShim = function from(array) {
@@ -19661,7 +19661,7 @@ define(boundFromShim, {
 module.exports = boundFromShim;
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19674,7 +19674,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var has = Object.prototype.hasOwnProperty;
 var toStr = Object.prototype.toString;
 var slice = Array.prototype.slice;
-var isArgs = __webpack_require__(75);
+var isArgs = __webpack_require__(76);
 var isEnumerable = Object.prototype.propertyIsEnumerable;
 var hasDontEnumBug = !isEnumerable.call({ toString: null }, 'toString');
 var hasProtoEnumBug = isEnumerable.call(function () {}, 'prototype');
@@ -19804,7 +19804,7 @@ keysShim.shim = function shimObjectKeys() {
 module.exports = keysShim;
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19824,7 +19824,7 @@ module.exports = function isArguments(value) {
 };
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19852,7 +19852,7 @@ module.exports = function forEach(obj, fn, ctx) {
 };
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19861,7 +19861,7 @@ module.exports = function forEach(obj, fn, ctx) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var has = __webpack_require__(20);
-var toPrimitive = __webpack_require__(79);
+var toPrimitive = __webpack_require__(80);
 
 var toStr = Object.prototype.toString;
 var hasSymbols = typeof Symbol === 'function' && _typeof(Symbol.iterator) === 'symbol';
@@ -19871,10 +19871,10 @@ var $isNaN = __webpack_require__(34);
 var $isFinite = __webpack_require__(35);
 var MAX_SAFE_INTEGER = Number.MAX_SAFE_INTEGER || Math.pow(2, 53) - 1;
 
-var assign = __webpack_require__(82);
+var assign = __webpack_require__(83);
 var sign = __webpack_require__(36);
 var mod = __webpack_require__(37);
-var isPrimitive = __webpack_require__(83);
+var isPrimitive = __webpack_require__(84);
 var parseInteger = parseInt;
 var bind = __webpack_require__(21);
 var arraySlice = bind.call(Function.call, Array.prototype.slice);
@@ -19899,7 +19899,7 @@ var trim = function trim(value) {
 
 var ES5 = __webpack_require__(38);
 
-var hasRegExpMatcher = __webpack_require__(85);
+var hasRegExpMatcher = __webpack_require__(86);
 
 // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-abstract-operations
 var ES6 = assign(assign({}, ES5), {
@@ -20533,7 +20533,7 @@ delete ES6.CheckObjectCoercible; // renamed in ES6 to RequireObjectCoercible
 module.exports = ES6;
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20585,7 +20585,7 @@ module.exports = function bind(that) {
 };
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20597,8 +20597,8 @@ var hasSymbols = typeof Symbol === 'function' && _typeof(Symbol.iterator) === 's
 
 var isPrimitive = __webpack_require__(33);
 var isCallable = __webpack_require__(22);
-var isDate = __webpack_require__(80);
-var isSymbol = __webpack_require__(81);
+var isDate = __webpack_require__(81);
+var isSymbol = __webpack_require__(82);
 
 var ordinaryToPrimitive = function OrdinaryToPrimitive(O, hint) {
 	if (typeof O === 'undefined' || O === null) {
@@ -20667,7 +20667,7 @@ module.exports = function ToPrimitive(input, PreferredType) {
 };
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20697,7 +20697,7 @@ module.exports = function isDateObject(value) {
 };
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20738,7 +20738,7 @@ if (hasSymbols) {
 }
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20758,7 +20758,7 @@ module.exports = function assign(target, source) {
 };
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20771,7 +20771,7 @@ module.exports = function isPrimitive(value) {
 };
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20814,7 +20814,7 @@ module.exports = function ToPrimitive(input, PreferredType) {
 };
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20861,7 +20861,7 @@ module.exports = function isRegex(value) {
 };
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20883,7 +20883,7 @@ module.exports = function shimArrayFrom() {
 };
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21124,10 +21124,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     root.Promise = Promise;
   }
 })(undefined);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(88).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(89).setImmediate))
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21182,16 +21182,16 @@ exports._unrefActive = exports.active = function (item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(89);
+__webpack_require__(90);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
 exports.setImmediate = typeof self !== "undefined" && self.setImmediate || typeof global !== "undefined" && global.setImmediate || undefined && undefined.setImmediate;
 exports.clearImmediate = typeof self !== "undefined" && self.clearImmediate || typeof global !== "undefined" && global.clearImmediate || undefined && undefined.clearImmediate;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(14)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16)))
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21379,22 +21379,22 @@ exports.clearImmediate = typeof self !== "undefined" && self.clearImmediate || t
     attachTo.setImmediate = setImmediate;
     attachTo.clearImmediate = clearImmediate;
 })(typeof self === "undefined" ? typeof global === "undefined" ? undefined : global : self);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(14), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16), __webpack_require__(2)))
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var define = __webpack_require__(4);
-var ES = __webpack_require__(9);
+var ES = __webpack_require__(10);
 
 var implementation = __webpack_require__(40);
 var getPolyfill = __webpack_require__(41);
 var polyfill = getPolyfill();
-var shim = __webpack_require__(92);
+var shim = __webpack_require__(93);
 
 var slice = Array.prototype.slice;
 
@@ -21412,7 +21412,7 @@ define(boundEveryShim, {
 module.exports = boundEveryShim;
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21444,7 +21444,7 @@ module.exports = function isString(value) {
 };
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21462,18 +21462,18 @@ module.exports = function shimArrayPrototypeEvery() {
 };
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var define = __webpack_require__(4);
-var ES = __webpack_require__(9);
+var ES = __webpack_require__(10);
 
 var implementation = __webpack_require__(42);
 var getPolyfill = __webpack_require__(43);
-var shim = __webpack_require__(94);
+var shim = __webpack_require__(95);
 
 var slice = Array.prototype.slice;
 
@@ -21494,7 +21494,7 @@ define(boundShim, {
 module.exports = boundShim;
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21516,7 +21516,7 @@ module.exports = function shimArrayPrototypeFindIndex() {
 };
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21528,11 +21528,13 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _SearchResultContainer = __webpack_require__(96);
+var _queryString = __webpack_require__(3);
+
+var _SearchResultContainer = __webpack_require__(97);
 
 var _SearchResultContainer2 = _interopRequireDefault(_SearchResultContainer);
 
-var _initComponents = __webpack_require__(15);
+var _initComponents = __webpack_require__(11);
 
 var _initComponents2 = _interopRequireDefault(_initComponents);
 
@@ -21544,7 +21546,12 @@ function scripts() {
 
   var createInstance = function createInstance(node) {
     var year = node.getAttribute('data-year');
-    (0, _preact.render)((0, _preact.h)(_SearchResultContainer2.default, { year: year, phrase: phrase }), node);
+    var rootNode = node;
+
+    var _parse = (0, _queryString.parse)(location.search),
+        view = _parse.view;
+
+    (0, _preact.render)((0, _preact.h)(_SearchResultContainer2.default, { year: year, view: view, phrase: phrase, rootNode: rootNode }), node);
   };
 
   (0, _initComponents2.default)('SearchResult', createInstance, true);
@@ -21553,7 +21560,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21567,17 +21574,15 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _queryString = __webpack_require__(8);
-
-var _getLandingResults = __webpack_require__(97);
+var _getLandingResults = __webpack_require__(98);
 
 var _getLandingResults2 = _interopRequireDefault(_getLandingResults);
 
-var _getFacetResults = __webpack_require__(100);
+var _getFacetResults = __webpack_require__(102);
 
 var _getFacetResults2 = _interopRequireDefault(_getFacetResults);
 
-var _SearchPage = __webpack_require__(101);
+var _SearchPage = __webpack_require__(103);
 
 var _SearchPage2 = _interopRequireDefault(_SearchPage);
 
@@ -21599,11 +21604,11 @@ var SearchPageContainer = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (SearchPageContainer.__proto__ || Object.getPrototypeOf(SearchPageContainer)).call(this, props));
 
-    var _parse = (0, _queryString.parse)(location.search),
-        tab = _parse.tab;
+    var view = _this.props.view;
+
 
     _this.state = {
-      tab: tab || 'all',
+      tab: view || 'all',
       items: null,
       loading: true,
       error: false,
@@ -21625,12 +21630,29 @@ var SearchPageContainer = function (_Component) {
   _createClass(SearchPageContainer, [{
     key: 'componentWillMount',
     value: function componentWillMount() {
-      var phrase = this.props.phrase;
+      var _props = this.props,
+          phrase = _props.phrase,
+          _props$view = _props.view,
+          view = _props$view === undefined ? 'all' : _props$view,
+          year = _props.year;
+
+
+      this.setState({
+        loading: true,
+        tab: view
+      });
+
+      if (view === 'all') {
+        var _callbackWrap = function _callbackWrap() {
+          return (0, _getLandingResults2.default)(phrase, year);
+        };
+        return this.getNewResults(phrase, view, _callbackWrap);
+      }
 
       var callbackWrap = function callbackWrap() {
-        return (0, _getLandingResults2.default)(phrase);
+        return (0, _getFacetResults2.default)(phrase, view, 0, year);
       };
-      this.getNewResults(phrase, 'all', callbackWrap);
+      return this.getNewResults(phrase, view, callbackWrap);
     }
   }, {
     key: 'getNewResults',
@@ -21661,46 +21683,43 @@ var SearchPageContainer = function (_Component) {
     value: function addPage() {
       var _this3 = this;
 
-      var loadingPage = this.state.loadingPage;
       var _state = this.state,
           tab = _state.tab,
           page = _state.page;
-      var phrase = this.props.phrase;
+      var _props2 = this.props,
+          phrase = _props2.phrase,
+          year = _props2.year;
 
 
-      if (!loadingPage) {
-        this.setState({
-          loadingPage: true
-        });
-
-        if (this.static.currentFetch && this.static.currentFetch.token.active) {
-          this.static.currentFetch.token.cancel();
-        }
-
-        this.static.currentFetch = (0, _getFacetResults2.default)(phrase, tab, (page - 1) * 5);
-
-        this.static.currentFetch.request.then(function (data) {
-          _this3.setState({
-            loadingPage: false,
-            page: page + 1,
-            items: {
-              count: _this3.state.items.count,
-              items: [].concat(_toConsumableArray(_this3.state.items.items), _toConsumableArray(data.items))
-            }
-          });
-        }).catch(function (err) {
-          _this3.setState({
-            error: true,
-            loading: false
-          });
-          console.warn(err);
-        });
+      if (this.static.currentFetch && this.static.currentFetch.token.active) {
+        this.static.currentFetch.token.cancel();
       }
+
+      this.static.currentFetch = (0, _getFacetResults2.default)(phrase, tab, page * 5, year);
+
+      this.static.currentFetch.request.then(function (data) {
+        _this3.setState({
+          page: page + 1,
+          items: {
+            count: _this3.state.items.count,
+            items: [].concat(_toConsumableArray(_this3.state.items.items), _toConsumableArray(data.items))
+          }
+        });
+      }).catch(function (err) {
+        _this3.setState({
+          error: true,
+          loading: false
+        });
+        console.warn(err);
+      });
     }
   }, {
     key: 'updateTab',
-    value: function updateTab(newTab) {
-      var phrase = this.props.phrase;
+    value: function updateTab(newTab, scroll) {
+      var _props3 = this.props,
+          phrase = _props3.phrase,
+          year = _props3.year,
+          rootNode = _props3.rootNode;
       var tab = this.state.tab;
 
 
@@ -21711,26 +21730,29 @@ var SearchPageContainer = function (_Component) {
         items: null
       });
 
-      if (newTab !== tab) {
-        if (newTab === 'all') {
-          var callbackWrap = function callbackWrap() {
-            return (0, _getLandingResults2.default)(phrase);
-          };
-          this.getNewResults(phrase, newTab, callbackWrap);
-        } else {
-          var _callbackWrap = function _callbackWrap() {
-            return (0, _getFacetResults2.default)(phrase, newTab, 0);
-          };
-          this.getNewResults(phrase, newTab, _callbackWrap);
-        }
+      if (scroll) {
+        rootNode.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
+      history.replaceState({}, '', '/' + year + '/search-result?search=' + encodeURI(phrase) + '&view=' + newTab);
+
+      if (newTab === 'all') {
+        var _callbackWrap2 = function _callbackWrap2() {
+          return (0, _getLandingResults2.default)(phrase, year);
+        };
+        return this.getNewResults(phrase, newTab, _callbackWrap2);
+      }
+
+      var callbackWrap = function callbackWrap() {
+        return (0, _getFacetResults2.default)(phrase, newTab, 0, year);
+      };
+      return this.getNewResults(phrase, newTab, callbackWrap);
     }
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props,
-          phrase = _props.phrase,
-          year = _props.year;
+      var _props4 = this.props,
+          phrase = _props4.phrase,
+          year = _props4.year;
       var _state2 = this.state,
           tab = _state2.tab,
           items = _state2.items,
@@ -21764,7 +21786,7 @@ var SearchPageContainer = function (_Component) {
 exports.default = SearchPageContainer;
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21784,9 +21806,9 @@ var _fetchWrapper = __webpack_require__(44);
 
 var _fetchWrapper2 = _interopRequireDefault(_fetchWrapper);
 
-var _normaliseReturn = __webpack_require__(45);
+var _normaliseServerResponse = __webpack_require__(45);
 
-var _normaliseReturn2 = _interopRequireDefault(_normaliseReturn);
+var _normaliseServerResponse2 = _interopRequireDefault(_normaliseServerResponse);
 
 var _highlightResults = __webpack_require__(48);
 
@@ -21796,17 +21818,21 @@ var _createPromiseToken = __webpack_require__(49);
 
 var _createPromiseToken2 = _interopRequireDefault(_createPromiseToken);
 
+var _parseStaticResponse2 = __webpack_require__(100);
+
+var _parseStaticResponse3 = _interopRequireDefault(_parseStaticResponse2);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function getLandingResults(phrase) {
-  var normaliseOtherYears = function normaliseOtherYears(response) {
+function getLandingResults(phrase, year) {
+  var normaliseOtherYears = function normaliseOtherYears(response, tab) {
     var items = response.result.search_facets.vocab_financial_years.items;
 
     return items.reverse().map(function (_ref) {
       var count = _ref.count,
           name = _ref.name;
 
-      var url = '/' + name + '/search-result?search=' + phrase;
+      var url = '/' + name + '/search-result?search=' + phrase + '&view=' + tab;
 
       return {
         count: count,
@@ -21817,26 +21843,33 @@ function getLandingResults(phrase) {
   };
 
   var request = new Promise(function (resolve, reject) {
-    var urlsArray = ['https://data.vulekamali.gov.za/api/3/action/package_search?q=' + encodeURI(phrase) + '&start=0&rows=3&fq=+organization:national-treasury+vocab_financial_years:2018-19+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:national&ext_highlight=true', 'https://data.vulekamali.gov.za/api/3/action/package_search?q=' + encodeURI(phrase) + '&start=0&rows=0&fq=+organization:national-treasury+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:national&facet.field=[%22vocab_financial_years%22]', 'https://data.vulekamali.gov.za/api/3/action/package_search?q=' + encodeURI(phrase) + '&start=0&rows=3&fq=+organization:national-treasury+vocab_financial_years:2018-19+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:provincial&ext_highlight=true', 'https://data.vulekamali.gov.za/api/3/action/package_search?q=' + encodeURI(phrase) + '&start=0&rows=0&fq=+organization:national-treasury+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:provincial&facet.field=[%22vocab_financial_years%22]'];
+    var urlsArray = ['https://data.vulekamali.gov.za/api/3/action/package_search?q=' + encodeURI(phrase) + '&start=0&rows=3&fq=+organization:national-treasury+vocab_financial_years:' + year + '+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:national&ext_highlight=true', 'https://data.vulekamali.gov.za/api/3/action/package_search?q=' + encodeURI(phrase) + '&start=0&rows=0&fq=+organization:national-treasury+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:national&facet.field=[%22vocab_financial_years%22]', 'https://data.vulekamali.gov.za/api/3/action/package_search?q=' + encodeURI(phrase) + '&start=0&rows=3&fq=+organization:national-treasury+vocab_financial_years:' + year + '+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:provincial&ext_highlight=true', 'https://data.vulekamali.gov.za/api/3/action/package_search?q=' + encodeURI(phrase) + '&start=0&rows=0&fq=+organization:national-treasury+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:provincial&facet.field=[%22vocab_financial_years%22]', 'https://data.vulekamali.gov.za/api/3/action/package_search?q=' + encodeURI(phrase) + '&start=0&rows=3&fq=-organization:national-treasury&ext_highlight=true', '/json/static-search.json'];
 
     Promise.all(urlsArray.map(_fetchWrapper2.default)).then(function (returnArr) {
-      var _returnArr = _slicedToArray(returnArr, 4),
+      var _returnArr = _slicedToArray(returnArr, 6),
           rawNational = _returnArr[0],
           rawNationalOtherYears = _returnArr[1],
           rawProvincial = _returnArr[2],
-          rawProvincialOtherYears = _returnArr[3];
+          rawProvincialOtherYears = _returnArr[3],
+          rawContributed = _returnArr[4],
+          staticContent = _returnArr[5];
 
-      var resultsArr = [rawNational, rawProvincial].map(_normaliseReturn2.default);
+      var resultsArr = [rawNational, rawProvincial, rawContributed].map(_normaliseServerResponse2.default);
 
       var _resultsArr$map = resultsArr.map(function (item) {
         return (0, _highlightResults2.default)(item, phrase);
       }),
-          _resultsArr$map2 = _slicedToArray(_resultsArr$map, 2),
+          _resultsArr$map2 = _slicedToArray(_resultsArr$map, 3),
           national = _resultsArr$map2[0],
-          provincial = _resultsArr$map2[1];
+          provincial = _resultsArr$map2[1],
+          contributed = _resultsArr$map2[2];
 
-      var nationalOtherYears = normaliseOtherYears(rawNationalOtherYears);
-      var provincialOtherYears = normaliseOtherYears(rawProvincialOtherYears);
+      var nationalOtherYears = normaliseOtherYears(rawNationalOtherYears, 'national');
+      var provincialOtherYears = normaliseOtherYears(rawProvincialOtherYears, 'provincial');
+
+      var _parseStaticResponse = (0, _parseStaticResponse3.default)(phrase, staticContent.videos, staticContent.glossary),
+          videos = _parseStaticResponse.videos,
+          glossary = _parseStaticResponse.glossary;
 
       resolve({
         national: _extends({}, national, {
@@ -21844,61 +21877,15 @@ function getLandingResults(phrase) {
         }),
         provincial: _extends({}, provincial, {
           otherYears: provincialOtherYears
-        })
+        }),
+        contributed: contributed,
+        videos: videos,
+        glossary: glossary
       });
     }).catch(reject);
   });
 
   return (0, _createPromiseToken2.default)(request);
-}
-
-/***/ }),
-/* 98 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = normaliseItem;
-
-var _extractSnippet = __webpack_require__(99);
-
-var _extractSnippet2 = _interopRequireDefault(_extractSnippet);
-
-var _lodash = __webpack_require__(23);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function normaliseItem(item) {
-  var extras = item.extras,
-      province = item.province,
-      financialYear = item.financial_year;
-
-
-  var getExtrasValue = function getExtrasValue(key) {
-    var obj = (0, _lodash.find)(extras, function (extra) {
-      return extra.key === key;
-    }) || { value: null };
-    return obj.value;
-  };
-
-  var year = financialYear[0];
-  var region = getExtrasValue('geographic_region_slug');
-  var regionString = region === 'south-africa' ? 'National' : province[0];
-  var regionSlug = region === 'south-africa' ? 'national' : 'provincial/' + region;
-
-  var nameSlug = getExtrasValue('department_name_slug');
-  var nameString = getExtrasValue('department_name');
-  var snippet = (0, _extractSnippet2.default)(item);
-
-  return {
-    title: regionString + ' Department: ' + nameString,
-    url: 'https://vulekamali.gov.za/' + year + '/' + regionSlug + '/departments/' + nameSlug,
-    snippet: snippet
-  };
 }
 
 /***/ }),
@@ -21913,30 +21900,39 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = extractSnippet;
 
-var _lodash = __webpack_require__(23);
+var _lodash = __webpack_require__(17);
+
+var escapeText = function escapeText(string) {
+  var withoutMultipleSpaces = string.replace(/\s+/gm, ' ');
+  return (0, _lodash.escape)(withoutMultipleSpaces.replace(/[^a-zA-Z0-9]{5,1000}/g, ' '));
+};
+
+var scanResources = function scanResources(resourcesList) {
+  for (var i = 0; i < resourcesList.length; i++) {
+    var resource = resourcesList[i];
+
+    if (resource.highlighting && resource.highlighting.fulltext) {
+      var highlightArray = resource.highlighting.fulltext;
+
+      return {
+        url: resource.url,
+        text: escapeText(highlightArray[0])
+      };
+    }
+  }
+
+  return null;
+};
 
 function extractSnippet(itemObj) {
-  var escapeText = function escapeText(string) {
-    var withoutMultipleSpaces = string.replace(/\s+/gm, ' ');
-    return (0, _lodash.escape)(withoutMultipleSpaces.replace(/[^a-zA-Z0-9]{5,1000}/g, ' '));
-  };
-
-  var scanResources = function scanResources(resourcesList) {
-    for (var i = 0; i < resourcesList.length; i++) {
-      var resource = resourcesList[i];
-
-      if (resource.highlighting && resource.highlighting.fulltext) {
-        var highlightArray = resource.highlighting.fulltext;
-
-        return {
-          url: resource.url,
-          text: escapeText(highlightArray[0])
-        };
-      }
+  if (itemObj.organization.name !== 'national-treasury') {
+    if (itemObj.highlighting.notes) {
+      return {
+        text: escapeText(itemObj.highlighting.notes[0]),
+        organization: itemObj.organization.title
+      };
     }
-
-    return null;
-  };
+  }
 
   if (itemObj.resources && itemObj.resources.length > 0) {
     return scanResources(itemObj.resources);
@@ -21955,1015 +21951,83 @@ function extractSnippet(itemObj) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = getFacetResults;
+exports.default = parseStaticResponse;
 
-var _fetchWrapper = __webpack_require__(44);
-
-var _fetchWrapper2 = _interopRequireDefault(_fetchWrapper);
-
-var _normaliseReturn = __webpack_require__(45);
-
-var _normaliseReturn2 = _interopRequireDefault(_normaliseReturn);
-
-var _highlightResults = __webpack_require__(48);
-
-var _highlightResults2 = _interopRequireDefault(_highlightResults);
-
-var _createPromiseToken = __webpack_require__(49);
-
-var _createPromiseToken2 = _interopRequireDefault(_createPromiseToken);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function getFacetResults(phrase, facet) {
-  var start = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-
-  var request = new Promise(function (resolve, reject) {
-    var innerRequest = (0, _fetchWrapper2.default)('https://data.vulekamali.gov.za/api/3/action/package_search?q=' + encodeURI(phrase) + '&start=' + start + '&rows=5&fq=+organization:national-treasury+vocab_financial_years:2018-19+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:' + facet + '&ext_highlight=true');
-
-    innerRequest.then(function (data) {
-      var results = (0, _normaliseReturn2.default)(data);
-      resolve((0, _highlightResults2.default)(results, phrase));
-    }).catch(reject);
-  });
-
-  return (0, _createPromiseToken2.default)(request);
-}
-
-/***/ }),
-/* 101 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = SearchPage;
-
-var _preact = __webpack_require__(0);
-
-var _TabSelection = __webpack_require__(102);
-
-var _TabSelection2 = _interopRequireDefault(_TabSelection);
-
-var _LandingLayout = __webpack_require__(103);
-
-var _LandingLayout2 = _interopRequireDefault(_LandingLayout);
-
-var _FacetLayout = __webpack_require__(107);
-
-var _FacetLayout2 = _interopRequireDefault(_FacetLayout);
-
-var _tabOptions = __webpack_require__(108);
-
-var _tabOptions2 = _interopRequireDefault(_tabOptions);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function SearchPage(props) {
-  var phrase = props.phrase,
-      tab = props.tab,
-      updateTab = props.updateTab,
-      year = props.year,
-      rawItems = props.items,
-      loading = props.loading,
-      page = props.page,
-      addPage = props.addPage,
-      loadingPage = props.loadingPage,
-      error = props.error;
-
-
-  var items = rawItems || [];
-
-  var determineLayout = function determineLayout(innerTab) {
-    if (innerTab === 'all') {
-      return (0, _preact.h)(_LandingLayout2.default, { items: items, year: year, error: error, updateTab: updateTab });
-    }
-
-    var buttonCss = ['Button', 'is-secondary', 'is-inline', loadingPage ? 'is-loading' : null].join(' ');
-
-    var button = (0, _preact.h)(
-      'button',
-      { className: buttonCss, onClick: addPage },
-      'Show more'
-    );
-
-    return (0, _preact.h)(
-      'div',
-      null,
-      (0, _preact.h)(_FacetLayout2.default, _extends({
-        count: items.count,
-        items: items.items,
-        tab: _tabOptions2.default[tab],
-        tabKey: tab
-      }, { year: year, error: error })),
-      (0, _preact.h)(
-        'div',
-        { className: 'u-textAlignCenter' },
-        items.count > page * 5 ? button : null
-      )
-    );
-  };
-
-  var loader = (0, _preact.h)('div', { className: 'Loader u-marginTop50 u-marginLeftAuto u-marginRightAuto' });
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'SearchPage' },
-    (0, _preact.h)(
-      'div',
-      { className: 'Page-title u-textAlignCenter' },
-      'Search results for "',
-      phrase,
-      '"'
-    ),
-    (0, _preact.h)(_TabSelection2.default, { tab: tab, updateTab: updateTab, tabOptions: _tabOptions2.default }),
-    loading ? loader : determineLayout(tab)
-  );
-}
-
-/***/ }),
-/* 102 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = TabSelection;
-
-var _preact = __webpack_require__(0);
-
-function TabSelection(_ref) {
-  var tab = _ref.tab,
-      updateTab = _ref.updateTab,
-      tabOptions = _ref.tabOptions;
-
-  var items = Object.keys(tabOptions).map(function (key) {
-    var value = tabOptions[key];
-    var className = ['SearchPage-tabItem', key === tab ? 'is-active' : ''].join(' ');
-    var updateTabWrap = function updateTabWrap() {
-      return updateTab(key);
-    };
-
-    return (0, _preact.h)(
-      'button',
-      _extends({ className: className, key: key }, { onClick: updateTabWrap }),
-      value
-    );
-  });
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'SearchPage-tabWrap' },
-    (0, _preact.h)(
-      'div',
-      { className: 'SearchPage-tabList' },
-      items
-    )
-  );
-}
-
-/***/ }),
-/* 103 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = LandingLayout;
-
-var _preact = __webpack_require__(0);
-
-var _buildSection = __webpack_require__(104);
-
-var _buildSection2 = _interopRequireDefault(_buildSection);
-
-var _TabOptions = __webpack_require__(106);
-
-var _TabOptions2 = _interopRequireDefault(_TabOptions);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var viewAll = function viewAll(updateTabWrap, count) {
-  return (0, _preact.h)(
-    'div',
-    { className: 'SearchResult-rightHeading' },
-    (0, _preact.h)(
-      'button',
-      { className: 'Page-title u-margin0 u-borderWidth0 u-backgroundNone u-textDecorationUnderline u-cursorPointer', onClick: updateTabWrap },
-      (0, _preact.h)(
-        'span',
-        { className: 'u-fontWeightNormal' },
-        'See All\xA0'
-      ),
-      (0, _preact.h)(
-        'span',
-        null,
-        count
-      ),
-      (0, _preact.h)(
-        'span',
-        { className: 'u-fontWeightNormal' },
-        '\xA0>'
-      )
-    )
-  );
-};
-
-var buildHeading = function buildHeading(year, tab, count, updateTab) {
-  var updateTabWrap = function updateTabWrap() {
-    return updateTab(tab);
-  };
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'Section is-invisible u-paddingBottom0' },
-    (0, _preact.h)(
-      'div',
-      { className: 'SearchResult-heading' },
-      (0, _preact.h)(
-        'div',
-        { className: 'SearchResult-leftHeading' },
-        (0, _preact.h)(
-          'div',
-          { className: 'Page-title u-margin0' },
-          'Found in ',
-          year,
-          ' ',
-          _TabOptions2.default[tab]
-        )
-      ),
-      count > 3 ? viewAll(updateTabWrap, count) : null
-    )
-  );
-};
-
-var fallback = {
-  provincial: {},
-  national: {}
-};
-
-function LandingLayout(_ref) {
-  var rawItems = _ref.items,
-      year = _ref.year,
-      error = _ref.error,
-      updateTab = _ref.updateTab;
-
-  var items = rawItems || {};
-  var provincial = items.provincial || {};
-  var national = items.national || {};
-
-  var provItems = provincial.items || [];
-  var provCount = provincial.count;
-  var provOtherYears = provincial.otherYears || [];
-  var natItems = national.items || [];
-  var natCount = national.count;
-  var natOtherYears = national.otherYears || [];
-
-  return (0, _preact.h)(
-    'div',
-    null,
-    (0, _preact.h)(
-      'div',
-      { className: 'u-marginBottom20' },
-      buildHeading(year, 'national', natCount, updateTab),
-      (0, _buildSection2.default)('grey', natItems, natCount, 'national', natOtherYears, error)
-    ),
-    (0, _preact.h)(
-      'div',
-      { className: 'u-marginBottom20' },
-      buildHeading(year, 'provincial', provCount, updateTab),
-      (0, _buildSection2.default)('purple', provItems, provCount, 'provincial', provOtherYears, error)
-    )
-  );
-}
-
-/***/ }),
-/* 104 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = buildSection;
-
-var _preact = __webpack_require__(0);
-
-var _buildNotice = __webpack_require__(105);
-
-var _buildNotice2 = _interopRequireDefault(_buildNotice);
-
-var _createLinkText = __webpack_require__(50);
-
-var _createLinkText2 = _interopRequireDefault(_createLinkText);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var calcSectionObj = function calcSectionObj(type) {
-  switch (type) {
-    case 'green':
-      return {
-        modifiers: ' is-green',
-        color: ' u-colorWhite'
-      };
-
-    case 'purple':
-      return {
-        modifiers: ' is-purple',
-        color: ' u-colorWhite'
-      };
-
-    case 'grey':
-      return {
-        modifiers: '',
-        color: ''
-      };
-
-    default:
-      return {
-        modifiers: null,
-        cardModifiers: null
-      };
-  }
-};
-
-var buildSnippet = function buildSnippet(snippet, tab) {
-  return (0, _preact.h)(
-    'div',
-    null,
-    (0, _preact.h)('div', { className: 'u-marginBottom20 u-lineHeight16', dangerouslySetInnerHTML: { __html: snippet.text } }),
-    (0, _preact.h)(
-      'div',
-      null,
-      'Source:\xA0'
-    ),
-    (0, _preact.h)(
-      'a',
-      { href: snippet.url },
-      (0, _createLinkText2.default)(tab)
-    )
-  );
-};
-
-var buildItem = function buildItem(tab, url, title, snippet) {
-  return (0, _preact.h)(
-    'div',
-    { className: 'Grid-item is-1of3' },
-    (0, _preact.h)('a', { className: 'Section-title', href: url, dangerouslySetInnerHTML: { __html: title } }),
-    snippet ? buildSnippet(snippet, tab) : null
-  );
-};
-
-var createOtherYears = function createOtherYears(otherYears, color) {
-  return (0, _preact.h)(
-    'div',
-    { className: 'Section-card is-invisible u-paddingBottom15' },
-    (0, _preact.h)(
-      'div',
-      { className: 'SearchResult-buttons' },
-      (0, _preact.h)(
-        'div',
-        { className: 'SearchResult-buttonsTitle' },
-        (0, _preact.h)(
-          'div',
-          { className: 'Section-title' + color },
-          'See more results'
-        )
-      ),
-      otherYears.map(function (_ref) {
-        var name = _ref.name,
-            url = _ref.url,
-            innerCount = _ref.count;
-
-        return (0, _preact.h)(
-          'div',
-          { className: 'SearchResult-buttonItem' },
-          (0, _preact.h)(
-            'a',
-            { href: url, className: 'Button is-secondary is-inline' },
-            (0, _preact.h)(
-              'span',
-              null,
-              name
-            ),
-            (0, _preact.h)(
-              'span',
-              { className: 'u-fontWeightNormal' },
-              '\xA0(',
-              innerCount,
-              ' results)'
-            )
-          )
-        );
-      })
-    )
-  );
-};
-
-function buildSection(type, items, count, tab, otherYears, error) {
-  var _calcSectionObj = calcSectionObj(type),
-      modifiers = _calcSectionObj.modifiers,
-      color = _calcSectionObj.color;
-
-  var validAmount = items.length;
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'Section is-bevel' + modifiers },
-    (0, _preact.h)(
-      'div',
-      { className: 'Section-card u-paddingBottom0' },
-      (0, _preact.h)(
-        'div',
-        { className: 'Grid has-standardTrigger u-marginBottom30' },
-        (0, _preact.h)(
-          'div',
-          { className: 'Grid-inner' },
-          error ? null : items.map(function (_ref2) {
-            var title = _ref2.title,
-                url = _ref2.url,
-                snippet = _ref2.snippet;
-
-            return buildItem(tab, url, title, snippet);
-          }),
-          (0, _buildNotice2.default)(error, validAmount)
-        )
-      )
-    ),
-    otherYears.length > 0 ? createOtherYears(otherYears, color) : null
-  );
-}
-
-/***/ }),
-/* 105 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = buildNotice;
-
-var _preact = __webpack_require__(0);
-
-var calcNoticeObj = function calcNoticeObj(amount, error) {
-  if (error) {
-    return {
-      size: 'is-1of1',
-      title: 'Something went wrong.',
-      text: 'Please try again at a later point.'
-    };
-  }
-
-  switch (amount) {
-    case 0:
-      return {
-        size: 'is-1of1',
-        title: 'We found no results.',
-        text: 'Try changing the searched year below, or broaden your search terms'
-      };
-
-    case 2:
-      return {
-        size: 'is-1of3',
-        title: 'We only found 1 result.',
-        text: 'Try changing the searched year below, or broaden your search terms.'
-      };
-
-    case 3:
-      return {
-        size: 'is-2of3',
-        title: 'We only found 2 results.',
-        text: 'Try changing the searched year below, or broaden your search terms.'
-      };
-
-    default:
-      return {
-        size: null,
-        title: null,
-        text: null
-      };
-  }
-};
-
-function buildNotice(error, amount) {
-  if (!error && amount >= 3) {
-    return null;
-  }
-
-  var _calcNoticeObj = calcNoticeObj(amount, error),
-      size = _calcNoticeObj.size,
-      noticeTitle = _calcNoticeObj.title,
-      noticeText = _calcNoticeObj.text;
-
-  var className = ['Grid-item', size, 'u-textAlignCenter', 'u-paddingBottom20'].join(' ');
-
-  return (0, _preact.h)(
-    'div',
-    { className: className },
-    (0, _preact.h)(
-      'div',
-      { className: 'Page-title u-marginBottom0' },
-      noticeTitle
-    ),
-    (0, _preact.h)(
-      'div',
-      { className: 'Section-title u-maxWidth300 u-displayInlineBlock u-marginBottom20' },
-      noticeText
-    )
-  );
-}
-
-/***/ }),
-/* 106 */
-/***/ (function(module, exports) {
-
-module.exports = {"all":"All","national":"National Budgets","provincial":"Provincial Budgets"}
-
-/***/ }),
-/* 107 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = FacetLayout;
-
-var _preact = __webpack_require__(0);
-
-var _createLinkText = __webpack_require__(50);
-
-var _createLinkText2 = _interopRequireDefault(_createLinkText);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var buildSnippet = function buildSnippet(snippet, tabKey) {
-  return (0, _preact.h)(
-    'div',
-    null,
-    (0, _preact.h)('div', { className: 'u-marginBottom20 Result', dangerouslySetInnerHTML: { __html: snippet.text } }),
-    (0, _preact.h)(
-      'div',
-      null,
-      (0, _preact.h)(
-        'span',
-        null,
-        'Source:\xA0'
-      ),
-      (0, _preact.h)(
-        'a',
-        { href: snippet.url },
-        (0, _createLinkText2.default)(tabKey)
-      )
-    )
-  );
-};
-
-var buildItem = function buildItem(tabKey) {
-  return function (_ref) {
-    var title = _ref.title,
-        url = _ref.url,
-        snippet = _ref.snippet;
-
-    return (0, _preact.h)(
-      'div',
-      { key: url, className: 'Section u-marginBottom20 is-invisible' },
-      (0, _preact.h)('a', { href: url, className: 'Section-title', dangerouslySetInnerHTML: { __html: title } }),
-      snippet ? buildSnippet(snippet, tabKey) : null
-    );
-  };
-};
-
-function FacetLayout(_ref2) {
-  var count = _ref2.count,
-      rawItems = _ref2.items,
-      year = _ref2.year,
-      tab = _ref2.tab,
-      tabKey = _ref2.tabKey,
-      error = _ref2.error;
-
-  var items = rawItems || [];
-
-  if (error) {
-    return (0, _preact.h)(
-      'div',
-      { className: 'u-textAlignCenter' },
-      (0, _preact.h)(
-        'div',
-        { className: 'Page-title u-marginBottom0' },
-        'Something went wrong'
-      ),
-      (0, _preact.h)(
-        'div',
-        { className: 'Section-title u-marginBottom20' },
-        'Please try again at a later point.'
-      )
-    );
-  }
-
-  if (items.length <= 0) {
-    return (0, _preact.h)(
-      'div',
-      { className: 'u-textAlignCenter' },
-      (0, _preact.h)(
-        'div',
-        { className: 'Page-title u-marginBottom0' },
-        'We found no results'
-      ),
-      (0, _preact.h)(
-        'div',
-        { className: 'Section-title u-marginBottom20' },
-        'Try changing the searched year, or broaden your search terms.'
-      )
-    );
-  }
-
-  return (0, _preact.h)(
-    'div',
-    null,
-    (0, _preact.h)(
-      'div',
-      { className: 'Section is-invisible' },
-      (0, _preact.h)(
-        'div',
-        { className: 'Section-title' },
-        (0, _preact.h)(
-          'span',
-          { className: 'u-fontWeightNormal' },
-          'All ',
-          count,
-          ' results found in\xA0'
-        ),
-        (0, _preact.h)(
-          'span',
-          null,
-          tab,
-          ' for ',
-          year
-        )
-      )
-    ),
-    items.map(buildItem(tabKey))
-  );
-}
-
-/***/ }),
-/* 108 */
-/***/ (function(module, exports) {
-
-module.exports = {"all":"All","national":"National Budgets","provincial":"Provincial Budgets"}
-
-/***/ }),
-/* 109 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(110);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _glossary = __webpack_require__(51);
-
-var _glossary2 = _interopRequireDefault(_glossary);
-
-var _createGlossaryGroupedObject = __webpack_require__(113);
-
-var _createGlossaryGroupedObject2 = _interopRequireDefault(_createGlossaryGroupedObject);
-
-var _lunrSearchWrapper = __webpack_require__(16);
+var _lunrSearchWrapper = __webpack_require__(18);
 
 var _lunrSearchWrapper2 = _interopRequireDefault(_lunrSearchWrapper);
 
-var _wrapStringPhrases = __webpack_require__(7);
+var _wrapStringPhrases = __webpack_require__(9);
 
 var _wrapStringPhrases2 = _interopRequireDefault(_wrapStringPhrases);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var glossaryToArray = function glossaryToArray(glossaryObj) {
+  var keysArray = Object.keys(glossaryObj);
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var glossaryObject = _glossary2.default.items;
-
-var GlossaryContainer = function (_Component) {
-  _inherits(GlossaryContainer, _Component);
-
-  function GlossaryContainer(props) {
-    _classCallCheck(this, GlossaryContainer);
-
-    var _this = _possibleConstructorReturn(this, (GlossaryContainer.__proto__ || Object.getPrototypeOf(GlossaryContainer)).call(this, props));
-
-    _this.state = {
-      currentPhrase: '',
-      currentItems: _this.props.glossaryObject
+  var convertItemToArray = function convertItemToArray(obj) {
+    return function (title) {
+      var description = obj[title];
+      return { title: title, description: description };
     };
-
-    _this.eventHandlers = {
-      changePhrase: _this.changePhrase.bind(_this)
-    };
-    return _this;
-  }
-
-  _createClass(GlossaryContainer, [{
-    key: 'changePhrase',
-    value: function changePhrase(phrase) {
-      var _this2 = this;
-
-      this.setState({ currentPhrase: phrase });
-
-      if (phrase.length > 2) {
-        var letters = Object.keys(this.props.glossaryObject);
-
-        var filteredList = letters.reduce(function (result, letter) {
-          var array = _this2.props.glossaryObject[letter];
-
-          var filteredItems = (0, _lunrSearchWrapper2.default)(array, 'phrase', ['phrase', 'description'], phrase);
-
-          var phraseArray = [phrase].concat(_toConsumableArray(phrase.split(' ')));
-          var wrapFn = function wrapFn(string) {
-            return '<em class="Highlight">' + string + '</em>';
-          };
-
-          var innerResult = filteredItems.map(function (obj) {
-            return _extends({}, obj, {
-              phrase: (0, _wrapStringPhrases2.default)(obj.phrase, phraseArray, wrapFn),
-              description: (0, _wrapStringPhrases2.default)(obj.description, phraseArray, wrapFn)
-            });
-          });
-
-          return _extends({}, result, _defineProperty({}, letter, innerResult));
-        }, {});
-
-        return this.setState({ currentItems: filteredList });
-      }
-
-      return this.setState({ currentItems: this.props.glossaryObject });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return (0, _preact.h)(_index2.default, _extends({}, this.state, this.eventHandlers));
-    }
-  }]);
-
-  return GlossaryContainer;
-}(_preact.Component);
-
-function scripts() {
-  var glossaryGroupedObject = (0, _createGlossaryGroupedObject2.default)(glossaryObject);
-  var nodes = document.getElementsByClassName('js-initGlossary');
-
-  if (nodes.length > 0) {
-    for (var i = 0; i < nodes.length; i++) {
-      (0, _preact.render)((0, _preact.h)(GlossaryContainer, { glossaryObject: glossaryGroupedObject }), nodes[i]);
-    }
-  }
-}
-
-exports.default = scripts();
-
-/***/ }),
-/* 110 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Markup;
-
-var _preact = __webpack_require__(0);
-
-var _Controls = __webpack_require__(111);
-
-var _Controls2 = _interopRequireDefault(_Controls);
-
-var _List = __webpack_require__(112);
-
-var _List2 = _interopRequireDefault(_List);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Markup(_ref) {
-  var currentPhrase = _ref.currentPhrase,
-      currentItems = _ref.currentItems,
-      changePhrase = _ref.changePhrase;
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'Glossary-wrap' },
-    (0, _preact.h)(_Controls2.default, { currentPhrase: currentPhrase, currentItems: currentItems, changePhrase: changePhrase }),
-    (0, _preact.h)(_List2.default, { currentItems: currentItems })
-  );
-}
-
-/***/ }),
-/* 111 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Controls;
-
-var _preact = __webpack_require__(0);
-
-function Controls(_ref) {
-  var currentPhrase = _ref.currentPhrase,
-      currentItems = _ref.currentItems,
-      changePhrase = _ref.changePhrase;
-
-  var buildLetters = function buildLetters() {
-    return Object.keys(currentItems).map(function (letter) {
-      var hasItems = currentItems[letter].length > 0;
-
-      return (0, _preact.h)(
-        'a',
-        {
-          href: '#glossary-item-' + letter,
-          className: 'Glossary-letter' + (hasItems ? ' is-valid' : '')
-        },
-        letter.toUpperCase()
-      );
-    });
   };
 
-  return (0, _preact.h)(
-    'div',
-    { className: 'Glossary-controls' },
-    (0, _preact.h)('input', {
-      className: 'Glossary-search',
-      placeholder: 'Start typing to find a glossary term',
-      value: currentPhrase,
-      onInput: function onInput(event) {
-        return changePhrase(event.target.value);
-      }
-    }),
-    (0, _preact.h)(
-      'div',
-      { className: 'Glossary-lettersWrap' },
-      (0, _preact.h)(
-        'span',
-        { className: 'Glossary-letterLabel' },
-        'Jump to Letter:'
-      ),
-      buildLetters()
-    )
-  );
-}
+  return keysArray.map(convertItemToArray(glossaryObj));
+};
 
-/***/ }),
-/* 112 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = List;
-
-var _preact = __webpack_require__(0);
-
-function List(_ref) {
-  var currentPhrase = _ref.currentPhrase,
-      currentItems = _ref.currentItems;
-
-
-  var buildItems = function buildItems(letterArrayFn) {
-    return letterArrayFn.map(function (item) {
-      return (0, _preact.h)(
-        "div",
-        { className: "Glossary-item" },
-        (0, _preact.h)("div", { className: "Glossary-title", dangerouslySetInnerHTML: { __html: item.phrase } }),
-        (0, _preact.h)("div", { className: "Glossary-text", dangerouslySetInnerHTML: { __html: item.description } })
-      );
-    });
+var buildResult = function buildResult(phrase, videosResult, glossaryResult) {
+  var phraseArray = [phrase].concat(_toConsumableArray(phrase.split(' ')));
+  var wrapFn = function wrapFn(string) {
+    return '<em class="Highlight">' + string + '</em>';
   };
 
-  var buildSections = function buildSections(currentItemsFn) {
-    return Object.keys(currentItemsFn).map(function (letter) {
-      var letterArray = currentItemsFn[letter];
-
-      if (letterArray.length > 0) {
-        return (0, _preact.h)(
-          "div",
-          { className: "Glossary-section", id: "glossary-item-" + letter },
-          (0, _preact.h)(
-            "div",
-            { className: "Glossary-heading" },
-            letter.toUpperCase()
-          ),
-          buildItems(letterArray)
-        );
-      }
-
+  var addVideoHighlights = function addVideoHighlights(array) {
+    if (array.length <= 0) {
       return null;
-    });
+    }
+
+    return {
+      count: array.length,
+      title: (0, _wrapStringPhrases2.default)(array[0].title, phraseArray, wrapFn),
+      description: (0, _wrapStringPhrases2.default)(array[0].description, phraseArray, wrapFn),
+      url: '/videos?phrase=' + phrase,
+      open: false,
+      languages: array[0].languages
+    };
   };
 
-  return (0, _preact.h)(
-    "div",
-    { className: "Glossary-list" },
-    buildSections(currentItems)
-  );
+  var addGlossaryHighlights = function addGlossaryHighlights(array) {
+    if (array.length <= 0) {
+      return null;
+    }
+
+    return {
+      count: array.length,
+      title: (0, _wrapStringPhrases2.default)(array[0].title, phraseArray, wrapFn),
+      description: (0, _wrapStringPhrases2.default)(array[0].description, phraseArray, wrapFn),
+      url: '/glossary?phrase=' + phrase
+    };
+  };
+
+  return {
+    videos: addVideoHighlights(videosResult),
+    glossary: addGlossaryHighlights(glossaryResult)
+  };
+};
+
+function parseStaticResponse(phrase, videos, glossary) {
+  var videosResult = (0, _lunrSearchWrapper2.default)(videos, 'id', ['title', 'description'], phrase);
+
+  var glossaryResult = (0, _lunrSearchWrapper2.default)(glossaryToArray(glossary), 'title', ['title', 'description'], phrase);
+
+  return buildResult(phrase, videosResult, glossaryResult);
 }
 
 /***/ }),
-/* 113 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = createGlossaryGroupedObject;
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function createGlossaryGroupedObject(rawObject) {
-  var alphabetLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-
-  var objectSkeleton = alphabetLetters.reduce(function (result, letter) {
-    return _extends({}, result, _defineProperty({}, letter, []));
-  }, {});
-
-  var populatedObject = Object.keys(rawObject).reduce(function (result, phrase) {
-    var letter = phrase.match(/\w/i)[0].toLowerCase();
-
-    return _extends({}, result, _defineProperty({}, letter, [].concat(_toConsumableArray(result[letter]), [{
-      phrase: phrase,
-      description: rawObject[phrase]
-    }])));
-  }, objectSkeleton);
-
-  var sortedObject = Object.keys(populatedObject).reduce(function (result, letter) {
-    var sortedArray = result[letter].sort(function (a, b) {
-      return a.phrase.localeCompare(b.phrase);
-    });
-
-    return _extends({}, result, _defineProperty({}, letter, sortedArray));
-  }, populatedObject);
-
-  return sortedObject;
-}
-
-/***/ }),
-/* 114 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22972,7 +22036,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
- * lunr - http://lunrjs.com - A bit like Solr, but much smaller and not as bright - 2.1.6
+ * lunr - http://lunrjs.com - A bit like Solr, but much smaller and not as bright - 2.2.0
  * Copyright (C) 2018 Oliver Nightingale
  * @license MIT
  */
@@ -23021,7 +22085,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     return builder.build();
   };
 
-  lunr.version = "2.1.6";
+  lunr.version = "2.2.0";
   /*!
    * lunr.utils
    * Copyright (C) 2018 Oliver Nightingale
@@ -23029,6 +22093,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   /**
    * A namespace containing utils for the rest of the lunr library
+   * @namespace lunr.utils
    */
   lunr.utils = {};
 
@@ -23036,7 +22101,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    * Print a warning message to the console.
    *
    * @param {String} message The message to be printed.
-   * @memberOf Utils
+   * @memberOf lunr.utils
+   * @function
    */
   lunr.utils.warn = function (global) {
     /* eslint-disable no-console */
@@ -23057,7 +22123,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    *
    * @param {Any} obj The object to convert to a string.
    * @return {String} string representation of the passed object.
-   * @memberOf Utils
+   * @memberOf lunr.utils
    */
   lunr.utils.asString = function (obj) {
     if (obj === void 0 || obj === null) {
@@ -23065,6 +22131,50 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     } else {
       return obj.toString();
     }
+  };
+
+  /**
+   * Clones an object.
+   *
+   * Will create a copy of an existing object such that any mutations
+   * on the copy cannot affect the original.
+   *
+   * Only shallow objects are supported, passing a nested object to this
+   * function will cause a TypeError.
+   *
+   * Objects with primitives, and arrays of primitives are supported.
+   *
+   * @param {Object} obj The object to clone.
+   * @return {Object} a clone of the passed object.
+   * @throws {TypeError} when a nested object is passed.
+   * @memberOf Utils
+   */
+  lunr.utils.clone = function (obj) {
+    if (obj === null || obj === undefined) {
+      return obj;
+    }
+
+    var clone = Object.create(null),
+        keys = Object.keys(obj);
+
+    for (var i = 0; i < keys.length; i++) {
+      var key = keys[i],
+          val = obj[key];
+
+      if (Array.isArray(val)) {
+        clone[key] = val.slice();
+        continue;
+      }
+
+      if (typeof val === 'string' || typeof val === 'number' || typeof val === 'boolean') {
+        clone[key] = val;
+        continue;
+      }
+
+      throw new TypeError("clone is not deep and does not support nested objects");
+    }
+
+    return clone;
   };
   lunr.FieldRef = function (docRef, fieldName, stringValue) {
     this.docRef = docRef;
@@ -23093,6 +22203,124 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     return this._stringValue;
+  };
+  /*!
+   * lunr.Set
+   * Copyright (C) 2018 Oliver Nightingale
+   */
+
+  /**
+   * A lunr set.
+   *
+   * @constructor
+   */
+  lunr.Set = function (elements) {
+    this.elements = Object.create(null);
+
+    if (elements) {
+      this.length = elements.length;
+
+      for (var i = 0; i < this.length; i++) {
+        this.elements[elements[i]] = true;
+      }
+    } else {
+      this.length = 0;
+    }
+  };
+
+  /**
+   * A complete set that contains all elements.
+   *
+   * @static
+   * @readonly
+   * @type {lunr.Set}
+   */
+  lunr.Set.complete = {
+    intersect: function intersect(other) {
+      return other;
+    },
+
+    union: function union(other) {
+      return other;
+    },
+
+    contains: function contains() {
+      return true;
+    }
+
+    /**
+     * An empty set that contains no elements.
+     *
+     * @static
+     * @readonly
+     * @type {lunr.Set}
+     */
+  };lunr.Set.empty = {
+    intersect: function intersect() {
+      return this;
+    },
+
+    union: function union(other) {
+      return other;
+    },
+
+    contains: function contains() {
+      return false;
+    }
+
+    /**
+     * Returns true if this set contains the specified object.
+     *
+     * @param {object} object - Object whose presence in this set is to be tested.
+     * @returns {boolean} - True if this set contains the specified object.
+     */
+  };lunr.Set.prototype.contains = function (object) {
+    return !!this.elements[object];
+  };
+
+  /**
+   * Returns a new set containing only the elements that are present in both
+   * this set and the specified set.
+   *
+   * @param {lunr.Set} other - set to intersect with this set.
+   * @returns {lunr.Set} a new set that is the intersection of this and the specified set.
+   */
+
+  lunr.Set.prototype.intersect = function (other) {
+    var a,
+        b,
+        elements,
+        intersection = [];
+
+    if (this.length < other.length) {
+      a = this;
+      b = other;
+    } else {
+      a = other;
+      b = this;
+    }
+
+    elements = Object.keys(a.elements);
+
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      if (element in b.elements) {
+        intersection.push(element);
+      }
+    }
+
+    return new lunr.Set(intersection);
+  };
+
+  /**
+   * Returns a new set combining the elements of this and the specified set.
+   *
+   * @param {lunr.Set} other - set to union with this set.
+   * @return {lunr.Set} a new set that is the union of this and the specified set.
+   */
+
+  lunr.Set.prototype.union = function (other) {
+    return new lunr.Set(Object.keys(this.elements).concat(Object.keys(other.elements)));
   };
   /**
    * A function to calculate the inverse document frequency for
@@ -23189,18 +22417,23 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    * then will split this string on the character in `lunr.tokenizer.separator`.
    * Arrays will have their elements converted to strings and wrapped in a lunr.Token.
    *
+   * Optional metadata can be passed to the tokenizer, this metadata will be cloned and
+   * added as metadata to every token that is created from the object to be tokenized.
+   *
    * @static
    * @param {?(string|object|object[])} obj - The object to convert into tokens
+   * @param {?object} metadata - Optional metadata to associate with every token
    * @returns {lunr.Token[]}
+   * @see {@link lunr.Pipeline}
    */
-  lunr.tokenizer = function (obj) {
+  lunr.tokenizer = function (obj, metadata) {
     if (obj == null || obj == undefined) {
       return [];
     }
 
     if (Array.isArray(obj)) {
       return obj.map(function (t) {
-        return new lunr.Token(lunr.utils.asString(t).toLowerCase());
+        return new lunr.Token(lunr.utils.asString(t).toLowerCase(), lunr.utils.clone(metadata));
       });
     }
 
@@ -23215,10 +22448,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       if (char.match(lunr.tokenizer.separator) || sliceEnd == len) {
 
         if (sliceLength > 0) {
-          tokens.push(new lunr.Token(str.slice(sliceStart, sliceEnd), {
-            position: [sliceStart, sliceLength],
-            index: tokens.length
-          }));
+          var tokenMetadata = lunr.utils.clone(metadata) || {};
+          tokenMetadata["position"] = [sliceStart, sliceLength];
+          tokenMetadata["index"] = tokens.length;
+
+          tokens.push(new lunr.Token(str.slice(sliceStart, sliceEnd), tokenMetadata));
         }
 
         sliceStart = sliceEnd + 1;
@@ -23469,10 +22703,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    * token and mapping the resulting tokens back to strings.
    *
    * @param {string} str - The string to pass through the pipeline.
+   * @param {?object} metadata - Optional metadata to associate with the token
+   * passed to the pipeline.
    * @returns {string[]}
    */
-  lunr.Pipeline.prototype.runString = function (str) {
-    var token = new lunr.Token(str);
+  lunr.Pipeline.prototype.runString = function (str, metadata) {
+    var token = new lunr.Token(str, metadata);
 
     return this.run([token]).map(function (t) {
       return t.toString();
@@ -23675,7 +22911,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    * @returns {Number}
    */
   lunr.Vector.prototype.similarity = function (otherVector) {
-    return this.dot(otherVector) / (this.magnitude() * otherVector.magnitude());
+    return this.dot(otherVector) / (this.magnitude() * otherVector.magnitude()) || 0;
   };
 
   /**
@@ -23717,6 +22953,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    * @param {lunr.Token} token - The string to stem
    * @returns {lunr.Token}
    * @see {@link lunr.Pipeline}
+   * @function
    */
   lunr.stemmer = function () {
     var step2list = {
@@ -23943,6 +23180,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    * The built in lunr.stopWordFilter is built using this generator and can be used
    * to generate custom stopWordFilters for applications or non English languages.
    *
+   * @function
    * @param {Array} token The token to pass through the filter
    * @returns {lunr.PipelineFunction}
    * @see lunr.Pipeline
@@ -23966,6 +23204,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    * This is intended to be used in the Pipeline. If the token does not pass the
    * filter then undefined will be returned.
    *
+   * @function
    * @implements {lunr.PipelineFunction}
    * @params {lunr.Token} token - A token to check for being a stop word.
    * @returns {lunr.Token}
@@ -24510,7 +23749,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    * @constructor
    * @param {Object} attrs - The attributes of the built search index.
    * @param {Object} attrs.invertedIndex - An index of term/field to document reference.
-   * @param {Object<string, lunr.Vector>} attrs.documentVectors - Document vectors keyed by document reference.
+   * @param {Object<string, lunr.Vector>} attrs.fieldVectors - Field vectors
    * @param {lunr.TokenSet} attrs.tokenSet - An set of all corpus tokens.
    * @param {string[]} attrs.fields - The names of indexed document fields.
    * @param {lunr.Pipeline} attrs.pipeline - The pipeline to use for search terms.
@@ -24556,6 +23795,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    * to provide fuzzy matching, e.g. 'hello~2' will match documents with hello with an edit distance of 2.
    * Avoid large values for edit distance to improve query performance.
    *
+   * Each term also supports a presence modifier. By default a term's presence in document is optional, however
+   * this can be changed to either required or prohibited. For a term's presence to be required in a document the
+   * term should be prefixed with a '+', e.g. `+foo bar` is a search for documents that must contain 'foo' and
+   * optionally contain 'bar'. Conversely a leading '-' sets the terms presence to prohibited, i.e. it must not
+   * appear in a document, e.g. `-foo bar` is a search for documents that do not contain 'foo' but may contain 'bar'.
+   *
    * To escape special characters the backslash character '\' can be used, this allows searches to include
    * characters that would normally be considered modifiers, e.g. `foo\~2` will search for a term "foo~2" instead
    * of attempting to apply a boost of 2 to the search term "foo".
@@ -24571,6 +23816,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    * hello^10
    * @example <caption>term with an edit distance of 2</caption>
    * hello~2
+   * @example <caption>terms with presence modifiers</caption>
+   * -foo +bar baz
    */
 
   /**
@@ -24628,7 +23875,18 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     var query = new lunr.Query(this.fields),
         matchingFields = Object.create(null),
         queryVectors = Object.create(null),
-        termFieldCache = Object.create(null);
+        termFieldCache = Object.create(null),
+        requiredMatches = Object.create(null),
+        prohibitedMatches = Object.create(null);
+
+    /*
+     * To support field level boosts a query vector is created per
+     * field. An empty vector is eagerly created to support negated
+     * queries.
+     */
+    for (var i = 0; i < this.fields.length; i++) {
+      queryVectors[this.fields[i]] = new lunr.Vector();
+    }
 
     fn.call(query, query);
 
@@ -24645,7 +23903,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           terms = null;
 
       if (clause.usePipeline) {
-        terms = this.pipeline.runString(clause.term);
+        terms = this.pipeline.runString(clause.term, {
+          fields: clause.fields
+        });
       } else {
         terms = [clause.term];
       }
@@ -24669,6 +23929,21 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         var termTokenSet = lunr.TokenSet.fromClause(clause),
             expandedTerms = this.tokenSet.intersect(termTokenSet).toArray();
 
+        /*
+         * If a term marked as required does not exist in the tokenSet it is
+         * impossible for the search to return any matches. We set all the field
+         * scoped required matches set to empty and stop examining any further
+         * clauses.
+         */
+        if (expandedTerms.length === 0 && clause.presence === lunr.Query.presence.REQUIRED) {
+          for (var k = 0; k < clause.fields.length; k++) {
+            var field = clause.fields[k];
+            requiredMatches[field] = lunr.Set.empty;
+          }
+
+          break;
+        }
+
         for (var j = 0; j < expandedTerms.length; j++) {
           /*
            * For each term get the posting and termIndex, this is required for
@@ -24690,21 +23965,45 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             var field = clause.fields[k],
                 fieldPosting = posting[field],
                 matchingDocumentRefs = Object.keys(fieldPosting),
-                termField = expandedTerm + "/" + field;
+                termField = expandedTerm + "/" + field,
+                matchingDocumentsSet = new lunr.Set(matchingDocumentRefs);
 
             /*
-             * To support field level boosts a query vector is created per
-             * field. This vector is populated using the termIndex found for
-             * the term and a unit value with the appropriate boost applied.
-             *
-             * If the query vector for this field does not exist yet it needs
-             * to be created.
+             * if the presence of this term is required ensure that the matching
+             * documents are added to the set of required matches for this field,
+             * creating that set if it does not yet exist.
              */
-            if (queryVectors[field] === undefined) {
-              queryVectors[field] = new lunr.Vector();
+            if (clause.presence == lunr.Query.presence.REQUIRED) {
+              if (requiredMatches[field] === undefined) {
+                requiredMatches[field] = lunr.Set.complete;
+              }
+
+              requiredMatches[field] = requiredMatches[field].intersect(matchingDocumentsSet);
             }
 
             /*
+             * if the presence of this term is prohibited ensure that the matching
+             * documents are added to the set of prohibited matches for this field,
+             * creating that set if it does not yet exist.
+             */
+            if (clause.presence == lunr.Query.presence.PROHIBITED) {
+              if (prohibitedMatches[field] === undefined) {
+                prohibitedMatches[field] = lunr.Set.empty;
+              }
+
+              prohibitedMatches[field] = prohibitedMatches[field].union(matchingDocumentsSet);
+
+              /*
+               * Prohibited matches should not be part of the query vector used for
+               * similarity scoring and no metadata should be extracted so we continue
+               * to the next field
+               */
+              continue;
+            }
+
+            /*
+             * The query field vector is populated using the termIndex found for
+             * the term and a unit value with the appropriate boost applied.
              * Using upsert because there could already be an entry in the vector
              * for the term we are working with. In that case we just add the scores
              * together.
@@ -24746,9 +24045,49 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       }
     }
 
+    /**
+     * Need to combine the field scoped required and prohibited
+     * matching documents into a global set of required and prohibited
+     * matches
+     */
+    var allRequiredMatches = lunr.Set.complete,
+        allProhibitedMatches = lunr.Set.empty;
+
+    for (var i = 0; i < this.fields.length; i++) {
+      var field = this.fields[i];
+
+      if (requiredMatches[field]) {
+        allRequiredMatches = allRequiredMatches.union(requiredMatches[field]);
+      }
+
+      if (prohibitedMatches[field]) {
+        allProhibitedMatches = allProhibitedMatches.union(prohibitedMatches[field]);
+      }
+    }
+
     var matchingFieldRefs = Object.keys(matchingFields),
         results = [],
         matches = Object.create(null);
+
+    /*
+     * If the query is negated (contains only prohibited terms)
+     * we need to get _all_ fieldRefs currently existing in the
+     * index. This is only done when we know that the query is
+     * entirely prohibited terms to avoid any cost of getting all
+     * fieldRefs unnecessarily.
+     *
+     * Additionally, blank MatchData must be created to correctly
+     * populate the results.
+     */
+    if (query.isNegated()) {
+      matchingFieldRefs = Object.keys(this.fieldVectors);
+
+      for (var i = 0; i < matchingFieldRefs.length; i++) {
+        var matchingFieldRef = matchingFieldRefs[i];
+        var fieldRef = lunr.FieldRef.fromString(matchingFieldRef);
+        matchingFields[matchingFieldRef] = new lunr.MatchData();
+      }
+    }
 
     for (var i = 0; i < matchingFieldRefs.length; i++) {
       /*
@@ -24760,8 +24099,17 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
        * above, and combined into a final document score using addition.
        */
       var fieldRef = lunr.FieldRef.fromString(matchingFieldRefs[i]),
-          docRef = fieldRef.docRef,
-          fieldVector = this.fieldVectors[fieldRef],
+          docRef = fieldRef.docRef;
+
+      if (!allRequiredMatches.contains(docRef)) {
+        continue;
+      }
+
+      if (allProhibitedMatches.contains(docRef)) {
+        continue;
+      }
+
+      var fieldVector = this.fieldVectors[fieldRef],
           score = queryVectors[fieldRef.fieldName].similarity(fieldVector),
           docMatch;
 
@@ -24984,7 +24332,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     for (var i = 0; i < this._fields.length; i++) {
       var fieldName = this._fields[i],
           field = doc[fieldName],
-          tokens = this.tokenizer(field),
+          tokens = this.tokenizer(field, {
+        fields: [fieldName]
+      }),
           terms = this.pipeline.run(tokens),
           fieldRef = new lunr.FieldRef(docRef, fieldName),
           fieldTerms = Object.create(null);
@@ -25188,7 +24538,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    */
   lunr.MatchData = function (term, field, metadata) {
     var clonedMetadata = Object.create(null),
-        metadataKeys = Object.keys(metadata);
+        metadataKeys = Object.keys(metadata || {});
 
     // Cloning the metadata to prevent the original
     // being mutated during match data combination.
@@ -25201,8 +24551,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     this.metadata = Object.create(null);
-    this.metadata[term] = Object.create(null);
-    this.metadata[term][field] = clonedMetadata;
+
+    if (term !== undefined) {
+      this.metadata[term] = Object.create(null);
+      this.metadata[term][field] = clonedMetadata;
+    }
   };
 
   /**
@@ -25316,34 +24669,65 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    *   wildcard: lunr.Query.wildcard.LEADING | lunr.Query.wildcard.TRAILING
    * })
    */
+
   lunr.Query.wildcard = new String("*");
   lunr.Query.wildcard.NONE = 0;
   lunr.Query.wildcard.LEADING = 1;
   lunr.Query.wildcard.TRAILING = 2;
 
   /**
-   * A single clause in a {@link lunr.Query} contains a term and details on how to
-   * match that term against a {@link lunr.Index}.
+   * Constants for indicating what kind of presence a term must have in matching documents.
    *
-   * @typedef {Object} lunr.Query~Clause
-   * @property {string[]} fields - The fields in an index this clause should be matched against.
-   * @property {number} [boost=1] - Any boost that should be applied when matching this clause.
-   * @property {number} [editDistance] - Whether the term should have fuzzy matching applied, and how fuzzy the match should be.
-   * @property {boolean} [usePipeline] - Whether the term should be passed through the search pipeline.
-   * @property {number} [wildcard=0] - Whether the term should have wildcards appended or prepended.
-   */
-
-  /**
-   * Adds a {@link lunr.Query~Clause} to this query.
-   *
-   * Unless the clause contains the fields to be matched all fields will be matched. In addition
-   * a default boost of 1 is applied to the clause.
-   *
-   * @param {lunr.Query~Clause} clause - The clause to add to this query.
+   * @constant
+   * @enum {number}
    * @see lunr.Query~Clause
-   * @returns {lunr.Query}
+   * @see lunr.Query#clause
+   * @see lunr.Query#term
+   * @example <caption>query term with required presence</caption>
+   * query.term('foo', { presence: lunr.Query.presence.REQUIRED })
    */
-  lunr.Query.prototype.clause = function (clause) {
+  lunr.Query.presence = {
+    /**
+     * Term's presence in a document is optional, this is the default value.
+     */
+    OPTIONAL: 1,
+
+    /**
+     * Term's presence in a document is required, documents that do not contain
+     * this term will not be returned.
+     */
+    REQUIRED: 2,
+
+    /**
+     * Term's presence in a document is prohibited, documents that do contain
+     * this term will not be returned.
+     */
+    PROHIBITED: 3
+
+    /**
+     * A single clause in a {@link lunr.Query} contains a term and details on how to
+     * match that term against a {@link lunr.Index}.
+     *
+     * @typedef {Object} lunr.Query~Clause
+     * @property {string[]} fields - The fields in an index this clause should be matched against.
+     * @property {number} [boost=1] - Any boost that should be applied when matching this clause.
+     * @property {number} [editDistance] - Whether the term should have fuzzy matching applied, and how fuzzy the match should be.
+     * @property {boolean} [usePipeline] - Whether the term should be passed through the search pipeline.
+     * @property {number} [wildcard=lunr.Query.wildcard.NONE] - Whether the term should have wildcards appended or prepended.
+     * @property {number} [presence=lunr.Query.presence.OPTIONAL] - The terms presence in any matching documents.
+     */
+
+    /**
+     * Adds a {@link lunr.Query~Clause} to this query.
+     *
+     * Unless the clause contains the fields to be matched all fields will be matched. In addition
+     * a default boost of 1 is applied to the clause.
+     *
+     * @param {lunr.Query~Clause} clause - The clause to add to this query.
+     * @see lunr.Query~Clause
+     * @returns {lunr.Query}
+     */
+  };lunr.Query.prototype.clause = function (clause) {
     if (!('fields' in clause)) {
       clause.fields = this.allFields;
     }
@@ -25368,17 +24752,44 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       clause.term = "" + clause.term + "*";
     }
 
+    if (!('presence' in clause)) {
+      clause.presence = lunr.Query.presence.OPTIONAL;
+    }
+
     this.clauses.push(clause);
 
     return this;
   };
 
   /**
+   * A negated query is one in which every clause has a presence of
+   * prohibited. These queries require some special processing to return
+   * the expected results.
+   *
+   * @returns boolean
+   */
+  lunr.Query.prototype.isNegated = function () {
+    for (var i = 0; i < this.clauses.length; i++) {
+      if (this.clauses[i].presence != lunr.Query.presence.PROHIBITED) {
+        return false;
+      }
+    }
+
+    return true;
+  };
+
+  /**
    * Adds a term to the current query, under the covers this will create a {@link lunr.Query~Clause}
    * to the list of clauses that make up this query.
    *
-   * @param {string} term - The term to add to the query.
-   * @param {Object} [options] - Any additional properties to add to the query clause.
+   * The term is used as is, i.e. no tokenization will be performed by this method. Instead conversion
+   * to a token or token-like string should be done before calling this method.
+   *
+   * The term will be converted to a string by calling `toString`. Multiple terms can be passed as an
+   * array, each term in the array will share the same options.
+   *
+   * @param {object|object[]} term - The term(s) to add to the query.
+   * @param {object} [options] - Any additional properties to add to the query clause.
    * @returns {lunr.Query}
    * @see lunr.Query#clause
    * @see lunr.Query~Clause
@@ -25390,10 +24801,19 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    *   boost: 10,
    *   wildcard: lunr.Query.wildcard.TRAILING
    * })
+   * @example <caption>using lunr.tokenizer to convert a string to tokens before using them as terms</caption>
+   * query.term(lunr.tokenizer("foo bar"))
    */
   lunr.Query.prototype.term = function (term, options) {
+    if (Array.isArray(term)) {
+      term.forEach(function (t) {
+        this.term(t, options);
+      }, this);
+      return this;
+    }
+
     var clause = options || {};
-    clause.term = term;
+    clause.term = term.toString();
 
     this.clause(clause);
 
@@ -25505,6 +24925,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   lunr.QueryLexer.TERM = 'TERM';
   lunr.QueryLexer.EDIT_DISTANCE = 'EDIT_DISTANCE';
   lunr.QueryLexer.BOOST = 'BOOST';
+  lunr.QueryLexer.PRESENCE = 'PRESENCE';
 
   lunr.QueryLexer.lexField = function (lexer) {
     lexer.backup();
@@ -25593,6 +25014,22 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return lunr.QueryLexer.lexBoost;
       }
 
+      // "+" indicates term presence is required
+      // checking for length to ensure that only
+      // leading "+" are considered
+      if (char == "+" && lexer.width() === 1) {
+        lexer.emit(lunr.QueryLexer.PRESENCE);
+        return lunr.QueryLexer.lexText;
+      }
+
+      // "-" indicates term presence is prohibited
+      // checking for length to ensure that only
+      // leading "-" are considered
+      if (char == "-" && lexer.width() === 1) {
+        lexer.emit(lunr.QueryLexer.PRESENCE);
+        return lunr.QueryLexer.lexText;
+      }
+
       if (char.match(lunr.QueryLexer.termSeparator)) {
         return lunr.QueryLexer.lexTerm;
       }
@@ -25610,7 +25047,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     this.lexer.run();
     this.lexemes = this.lexer.lexemes;
 
-    var state = lunr.QueryParser.parseFieldOrTerm;
+    var state = lunr.QueryParser.parseClause;
 
     while (state) {
       state = state(this);
@@ -25635,7 +25072,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     this.currentClause = {};
   };
 
-  lunr.QueryParser.parseFieldOrTerm = function (parser) {
+  lunr.QueryParser.parseClause = function (parser) {
     var lexeme = parser.peekLexeme();
 
     if (lexeme == undefined) {
@@ -25643,6 +25080,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     switch (lexeme.type) {
+      case lunr.QueryLexer.PRESENCE:
+        return lunr.QueryParser.parsePresence;
       case lunr.QueryLexer.FIELD:
         return lunr.QueryParser.parseField;
       case lunr.QueryLexer.TERM:
@@ -25655,6 +25094,43 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }
 
         throw new lunr.QueryParseError(errorMessage, lexeme.start, lexeme.end);
+    }
+  };
+
+  lunr.QueryParser.parsePresence = function (parser) {
+    var lexeme = parser.consumeLexeme();
+
+    if (lexeme == undefined) {
+      return;
+    }
+
+    switch (lexeme.str) {
+      case "-":
+        parser.currentClause.presence = lunr.Query.presence.PROHIBITED;
+        break;
+      case "+":
+        parser.currentClause.presence = lunr.Query.presence.REQUIRED;
+        break;
+      default:
+        var errorMessage = "unrecognised presence operator'" + lexeme.str + "'";
+        throw new lunr.QueryParseError(errorMessage, lexeme.start, lexeme.end);
+    }
+
+    var nextLexeme = parser.peekLexeme();
+
+    if (nextLexeme == undefined) {
+      var errorMessage = "expecting term or field, found nothing";
+      throw new lunr.QueryParseError(errorMessage, lexeme.start, lexeme.end);
+    }
+
+    switch (nextLexeme.type) {
+      case lunr.QueryLexer.FIELD:
+        return lunr.QueryParser.parseField;
+      case lunr.QueryLexer.TERM:
+        return lunr.QueryParser.parseTerm;
+      default:
+        var errorMessage = "expecting term or field, found '" + nextLexeme.type + "'";
+        throw new lunr.QueryParseError(errorMessage, nextLexeme.start, nextLexeme.end);
     }
   };
 
@@ -25723,6 +25199,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return lunr.QueryParser.parseEditDistance;
       case lunr.QueryLexer.BOOST:
         return lunr.QueryParser.parseBoost;
+      case lunr.QueryLexer.PRESENCE:
+        parser.nextClause();
+        return lunr.QueryParser.parsePresence;
       default:
         var errorMessage = "Unexpected lexeme type '" + nextLexeme.type + "'";
         throw new lunr.QueryParseError(errorMessage, nextLexeme.start, nextLexeme.end);
@@ -25843,6 +25322,1161 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })();
 
 /***/ }),
+/* 102 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = getFacetResults;
+
+var _fetchWrapper = __webpack_require__(44);
+
+var _fetchWrapper2 = _interopRequireDefault(_fetchWrapper);
+
+var _normaliseServerResponse = __webpack_require__(45);
+
+var _normaliseServerResponse2 = _interopRequireDefault(_normaliseServerResponse);
+
+var _highlightResults = __webpack_require__(48);
+
+var _highlightResults2 = _interopRequireDefault(_highlightResults);
+
+var _createPromiseToken = __webpack_require__(49);
+
+var _createPromiseToken2 = _interopRequireDefault(_createPromiseToken);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var buildUrl = function buildUrl(phrase, start, facet, year) {
+  if (facet === 'cso') {
+    return 'https://data.vulekamali.gov.za/api/3/action/package_search?q=' + encodeURI(phrase) + '&start=' + start + '&rows=5&fq=-organization:national-treasury&ext_highlight=true';
+  }
+
+  return 'https://data.vulekamali.gov.za/api/3/action/package_search?q=' + encodeURI(phrase) + '&start=' + start + '&rows=5&fq=+organization:national-treasury+vocab_financial_years:' + year + '+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]+vocab_spheres:' + facet + '&ext_highlight=true';
+};
+
+function getFacetResults(phrase, facet) {
+  var start = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+  var year = arguments[3];
+
+  var request = new Promise(function (resolve, reject) {
+    var innerRequest = (0, _fetchWrapper2.default)(buildUrl(phrase, start, facet, year));
+
+    innerRequest.then(function (data) {
+      var results = (0, _normaliseServerResponse2.default)(data, facet);
+      resolve((0, _highlightResults2.default)(results, phrase));
+    }).catch(reject);
+  });
+
+  return (0, _createPromiseToken2.default)(request);
+}
+
+/***/ }),
+/* 103 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = SearchPage;
+
+var _preact = __webpack_require__(0);
+
+var _TabSelection = __webpack_require__(104);
+
+var _TabSelection2 = _interopRequireDefault(_TabSelection);
+
+var _LandingLayout = __webpack_require__(105);
+
+var _LandingLayout2 = _interopRequireDefault(_LandingLayout);
+
+var _FacetLayout = __webpack_require__(109);
+
+var _FacetLayout2 = _interopRequireDefault(_FacetLayout);
+
+var _tabOptions = __webpack_require__(51);
+
+var _tabOptions2 = _interopRequireDefault(_tabOptions);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function SearchPage(props) {
+  var phrase = props.phrase,
+      tab = props.tab,
+      updateTab = props.updateTab,
+      year = props.year,
+      rawItems = props.items,
+      loading = props.loading,
+      page = props.page,
+      addPage = props.addPage,
+      loadingPage = props.loadingPage,
+      error = props.error;
+
+
+  var items = rawItems || [];
+
+  var determineLayout = function determineLayout(innerTab) {
+    if (innerTab === 'all') {
+      return (0, _preact.h)(_LandingLayout2.default, { items: items, year: year, error: error, updateTab: updateTab });
+    }
+
+    var buttonCss = ['Button', 'is-secondary', 'is-inline', loadingPage ? 'is-loading' : null].join(' ');
+
+    var button = (0, _preact.h)(
+      'button',
+      { className: buttonCss, onClick: addPage },
+      'Show more'
+    );
+
+    return (0, _preact.h)(
+      'div',
+      null,
+      (0, _preact.h)(_FacetLayout2.default, _extends({
+        count: items.count,
+        items: items.items,
+        tab: _tabOptions2.default[tab],
+        tabKey: tab
+      }, { year: year, error: error })),
+      (0, _preact.h)(
+        'div',
+        { className: 'u-textAlignCenter' },
+        items.count > page * 5 ? button : null
+      )
+    );
+  };
+
+  var loader = (0, _preact.h)('div', { className: 'Loader u-marginTop50 u-marginLeftAuto u-marginRightAuto' });
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'SearchPage' },
+    (0, _preact.h)(
+      'div',
+      { className: 'Page-title u-textAlignCenter' },
+      'Search results for "',
+      phrase,
+      '"'
+    ),
+    (0, _preact.h)(_TabSelection2.default, { tab: tab, updateTab: updateTab, tabOptions: _tabOptions2.default }),
+    loading ? loader : determineLayout(tab)
+  );
+}
+
+/***/ }),
+/* 104 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = TabSelection;
+
+var _preact = __webpack_require__(0);
+
+function TabSelection(_ref) {
+  var tab = _ref.tab,
+      updateTab = _ref.updateTab,
+      tabOptions = _ref.tabOptions;
+
+  var items = Object.keys(tabOptions).map(function (key) {
+    var value = tabOptions[key];
+    var className = ['SearchPage-tabItem', key === tab ? 'is-active' : ''].join(' ');
+    var updateTabWrap = function updateTabWrap() {
+      return updateTab(key);
+    };
+
+    return (0, _preact.h)(
+      'button',
+      _extends({ className: className, key: key }, { onClick: updateTabWrap }),
+      value
+    );
+  });
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'SearchPage-tabWrap' },
+    (0, _preact.h)(
+      'div',
+      { className: 'SearchPage-tabList' },
+      items
+    )
+  );
+}
+
+/***/ }),
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = LandingLayout;
+
+var _preact = __webpack_require__(0);
+
+var _Section = __webpack_require__(106);
+
+var _Section2 = _interopRequireDefault(_Section);
+
+var _tabOptions = __webpack_require__(51);
+
+var _tabOptions2 = _interopRequireDefault(_tabOptions);
+
+var _StaticContent = __webpack_require__(108);
+
+var _StaticContent2 = _interopRequireDefault(_StaticContent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var viewAll = function viewAll(updateTabWrap, count) {
+  return (0, _preact.h)(
+    'div',
+    { className: 'SearchResult-rightHeading' },
+    (0, _preact.h)(
+      'button',
+      { className: 'Page-title u-margin0 u-borderWidth0 u-backgroundNone u-textDecorationUnderline u-cursorPointer', onClick: updateTabWrap },
+      (0, _preact.h)(
+        'span',
+        { className: 'u-fontWeightNormal' },
+        'See All\xA0'
+      ),
+      (0, _preact.h)(
+        'span',
+        null,
+        count
+      ),
+      (0, _preact.h)(
+        'span',
+        { className: 'u-fontWeightNormal' },
+        '\xA0>'
+      )
+    )
+  );
+};
+
+var buildHeading = function buildHeading(year, tab, count, updateTab) {
+  var updateTabWrap = function updateTabWrap() {
+    return updateTab(tab, true);
+  };
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Section is-invisible u-paddingBottom0' },
+    (0, _preact.h)(
+      'div',
+      { className: 'SearchResult-heading' },
+      (0, _preact.h)(
+        'div',
+        { className: 'SearchResult-leftHeading' },
+        (0, _preact.h)(
+          'div',
+          { className: 'Page-title u-margin0' },
+          'Found in ',
+          year,
+          ' ',
+          _tabOptions2.default[tab]
+        )
+      ),
+      count > 3 ? viewAll(updateTabWrap, count) : null
+    )
+  );
+};
+
+function LandingLayout(_ref) {
+  var rawItems = _ref.items,
+      year = _ref.year,
+      error = _ref.error,
+      updateTab = _ref.updateTab;
+
+  var items = rawItems || {};
+  var provincial = items.provincial || {};
+  var national = items.national || {};
+  var contributed = items.contributed || {};
+  var videos = rawItems.videos,
+      glossary = rawItems.glossary;
+
+
+  return (0, _preact.h)(
+    'div',
+    null,
+    (0, _preact.h)(_StaticContent2.default, { videos: videos, glossary: glossary }),
+    (0, _preact.h)(
+      'div',
+      { className: 'u-marginBottom20' },
+      buildHeading(year, 'cso', contributed.count, updateTab),
+      (0, _preact.h)(_Section2.default, _extends({
+        type: 'green',
+        items: contributed.items || [],
+        count: contributed.count,
+        tab: 'cso',
+        otherYears: []
+      }, { error: error }))
+    ),
+    (0, _preact.h)(
+      'div',
+      { className: 'u-marginBottom20' },
+      buildHeading(year, 'national', national.count, updateTab),
+      (0, _preact.h)(_Section2.default, _extends({
+        type: 'grey',
+        items: national.items || [],
+        count: national.items,
+        tab: 'national',
+        otherYears: national.otherYears || []
+      }, { error: error }))
+    ),
+    (0, _preact.h)(
+      'div',
+      { className: 'u-marginBottom20' },
+      buildHeading(year, 'provincial', provincial.count, updateTab),
+      (0, _preact.h)(_Section2.default, _extends({
+        type: 'purple',
+        items: provincial.items || [],
+        count: provincial.items,
+        tab: 'national',
+        otherYears: provincial.otherYears || []
+      }, { error: error }))
+    )
+  );
+}
+
+/***/ }),
+/* 106 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = Section;
+
+var _preact = __webpack_require__(0);
+
+var _Notice = __webpack_require__(107);
+
+var _Notice2 = _interopRequireDefault(_Notice);
+
+var _ItemPreview = __webpack_require__(50);
+
+var _ItemPreview2 = _interopRequireDefault(_ItemPreview);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var calcSectionObj = function calcSectionObj(type) {
+  switch (type) {
+    case 'green':
+      return {
+        modifiers: ' is-green',
+        color: ' u-colorWhite'
+      };
+
+    case 'purple':
+      return {
+        modifiers: ' is-purple',
+        color: ' u-colorWhite'
+      };
+
+    case 'grey':
+      return {
+        modifiers: '',
+        color: ''
+      };
+
+    default:
+      return {
+        modifiers: null,
+        cardModifiers: null
+      };
+  }
+};
+
+var createOtherYears = function createOtherYears(otherYears, color) {
+  return (0, _preact.h)(
+    'div',
+    { className: 'Section-card is-invisible u-paddingBottom15' },
+    (0, _preact.h)(
+      'div',
+      { className: 'SearchResult-buttons' },
+      (0, _preact.h)(
+        'div',
+        { className: 'SearchResult-buttonsTitle' },
+        (0, _preact.h)(
+          'div',
+          { className: 'Section-title' + color },
+          'See more results'
+        )
+      ),
+      otherYears.map(function (_ref) {
+        var name = _ref.name,
+            url = _ref.url,
+            innerCount = _ref.count;
+
+        return (0, _preact.h)(
+          'div',
+          { className: 'SearchResult-buttonItem' },
+          (0, _preact.h)(
+            'a',
+            { href: url, className: 'Button is-secondary is-inline' },
+            (0, _preact.h)(
+              'span',
+              null,
+              name
+            ),
+            (0, _preact.h)(
+              'span',
+              { className: 'u-fontWeightNormal' },
+              '\xA0(',
+              innerCount,
+              ' results)'
+            )
+          )
+        );
+      })
+    )
+  );
+};
+
+function Section(_ref2) {
+  var type = _ref2.type,
+      items = _ref2.items,
+      count = _ref2.count,
+      tab = _ref2.tab,
+      otherYears = _ref2.otherYears,
+      error = _ref2.error;
+
+  var _calcSectionObj = calcSectionObj(type),
+      modifiers = _calcSectionObj.modifiers,
+      color = _calcSectionObj.color;
+
+  var validAmount = items.length;
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Section is-bevel' + modifiers },
+    (0, _preact.h)(
+      'div',
+      { className: 'Section-card u-paddingBottom0' },
+      (0, _preact.h)(
+        'div',
+        { className: 'Grid has-standardTrigger u-marginBottom30' },
+        (0, _preact.h)(
+          'div',
+          { className: 'Grid-inner' },
+          error ? null : items.map(function (_ref3) {
+            var title = _ref3.title,
+                url = _ref3.url,
+                snippet = _ref3.snippet;
+
+            return (0, _preact.h)(
+              'div',
+              { className: 'Grid-item is-1of3' },
+              (0, _preact.h)(_ItemPreview2.default, _extends({ paddingOverride: true }, { tab: tab, url: url, title: title, snippet: snippet }))
+            );
+          }),
+          (0, _preact.h)(_Notice2.default, _extends({ amount: validAmount }, { error: error }))
+        )
+      )
+    ),
+    otherYears.length > 0 ? createOtherYears(otherYears, color) : null
+  );
+}
+
+/***/ }),
+/* 107 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Notice;
+
+var _preact = __webpack_require__(0);
+
+var calcNoticeObj = function calcNoticeObj(amount, error) {
+  if (error) {
+    return {
+      size: 'is-1of1',
+      title: 'Something went wrong.',
+      text: 'Please try again at a later point.'
+    };
+  }
+
+  switch (amount) {
+    case 0:
+      return {
+        size: 'is-1of1',
+        title: 'We found no results.',
+        text: 'Try changing the searched year, or broaden your search terms'
+      };
+
+    case 1:
+      return {
+        size: 'is-2of3',
+        title: 'We only found 1 result.',
+        text: 'Try changing the searched year, or broaden your search terms.'
+      };
+
+    case 2:
+      return {
+        size: 'is-1of3',
+        title: 'We only found 2 results.',
+        text: 'Try changing the searched year, or broaden your search terms.'
+      };
+
+    default:
+      return {
+        size: null,
+        title: null,
+        text: null
+      };
+  }
+};
+
+function Notice(_ref) {
+  var error = _ref.error,
+      amount = _ref.amount;
+
+  if (!error && amount >= 3) {
+    return null;
+  }
+
+  var _calcNoticeObj = calcNoticeObj(amount, error),
+      size = _calcNoticeObj.size,
+      noticeTitle = _calcNoticeObj.title,
+      noticeText = _calcNoticeObj.text;
+
+  var className = ['Grid-item', size, 'u-textAlignCenter', 'u-paddingBottom20'].join(' ');
+
+  return (0, _preact.h)(
+    'div',
+    { className: className },
+    (0, _preact.h)(
+      'div',
+      { className: 'Page-title u-marginBottom0' },
+      noticeTitle
+    ),
+    (0, _preact.h)(
+      'div',
+      { className: 'Section-title u-maxWidth300 u-displayInlineBlock u-marginBottom20' },
+      noticeText
+    )
+  );
+}
+
+/***/ }),
+/* 108 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = StaticContent;
+
+var _preact = __webpack_require__(0);
+
+var _lodash = __webpack_require__(17);
+
+var calcSize = function calcSize(total) {
+  switch (total) {
+    case 0:
+      return null;
+    case 1:
+      return 'is-1of1';
+    case 2:
+      return 'is-1of2';
+    default:
+      return 'is-1of3';
+  }
+};
+
+var calcTruncate = function calcTruncate(total) {
+  switch (total) {
+    case 0:
+      return null;
+    case 1:
+      return 400;
+    case 2:
+      return 300;
+    default:
+      return 200;
+  }
+};
+
+var buildButton = function buildButton(url, count) {
+  if (url && count > 1) {
+    return (0, _preact.h)(
+      'a',
+      { className: 'u-marginTop20 Button is-secondary is-inline', href: url },
+      (0, _preact.h)(
+        'span',
+        null,
+        'View all results'
+      ),
+      (0, _preact.h)(
+        'span',
+        { className: 'u-fontWeightNormal' },
+        '\xA0(',
+        count,
+        ' Results)'
+      )
+    );
+  }
+
+  return null;
+};
+
+var buildGlossary = function buildGlossary(_ref, total) {
+  var title = _ref.title,
+      url = _ref.url,
+      count = _ref.count,
+      description = _ref.description;
+
+  var truncatedDescription = description.substring(0, calcTruncate(total));
+  var itemCss = ['Grid-item', calcSize(total)].join(' ');
+
+  return (0, _preact.h)(
+    'div',
+    { className: itemCss },
+    (0, _preact.h)(
+      'div',
+      { className: 'Section is-invisible u-textAlignCenter' },
+      (0, _preact.h)('div', { className: 'Section-title', dangerouslySetInnerHTML: { __html: title } }),
+      (0, _preact.h)('div', { className: 'u-fontStyleItalic u-lineHeight16', dangerouslySetInnerHTML: { __html: '\u201C' + truncatedDescription + '\u201D' } }),
+      buildButton(url, count)
+    )
+  );
+};
+
+var buildVideo = function buildVideo(_ref2, total) {
+  var title = _ref2.title,
+      url = _ref2.url,
+      count = _ref2.count,
+      id = _ref2.id;
+
+  var itemCss = ['Grid-item', calcSize(total)].join(' ');
+
+  return (0, _preact.h)(
+    'div',
+    { className: itemCss },
+    (0, _preact.h)(
+      'div',
+      { className: 'Section is-invisible' },
+      (0, _preact.h)(
+        'div',
+        { className: 'Section-title' },
+        title
+      ),
+      (0, _preact.h)('img', { className: 'u-widthFull u-borderRadius10', alt: '', src: 'https://img.youtube.com/vi/' + id + '/mqdefault.jpg' }),
+      (0, _preact.h)(
+        'div',
+        { className: 'u-textAlignCenter' },
+        buildButton(url, count)
+      )
+    )
+  );
+};
+
+function StaticContent(_ref3) {
+  var video = _ref3.video,
+      glossary = _ref3.glossary;
+
+  var total = (0, _lodash.compact)([video, glossary]).length;
+
+  if (total < 1) {
+    return null;
+  }
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Grid has-standardTrigger' },
+    (0, _preact.h)(
+      'div',
+      { className: 'Grid-inner' },
+      glossary ? buildGlossary(glossary, total) : null,
+      video ? buildVideo(video, total) : null
+    )
+  );
+}
+
+/***/ }),
+/* 109 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = FacetLayout;
+
+var _preact = __webpack_require__(0);
+
+var _ItemPreview = __webpack_require__(50);
+
+var _ItemPreview2 = _interopRequireDefault(_ItemPreview);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function FacetLayout(_ref) {
+  var count = _ref.count,
+      rawItems = _ref.items,
+      year = _ref.year,
+      tab = _ref.tab,
+      tabKey = _ref.tabKey,
+      error = _ref.error;
+
+  var items = rawItems || [];
+
+  if (error) {
+    return (0, _preact.h)(
+      'div',
+      { className: 'u-textAlignCenter' },
+      (0, _preact.h)(
+        'div',
+        { className: 'Page-title u-marginBottom0' },
+        'Something went wrong'
+      ),
+      (0, _preact.h)(
+        'div',
+        { className: 'Section-title u-marginBottom20' },
+        'Please try again at a later point.'
+      )
+    );
+  }
+
+  if (items.length === 0) {
+    return (0, _preact.h)(
+      'div',
+      { className: 'u-textAlignCenter' },
+      (0, _preact.h)(
+        'div',
+        { className: 'Page-title u-marginBottom0' },
+        'We found no results'
+      ),
+      (0, _preact.h)(
+        'div',
+        { className: 'Section-title u-marginBottom20' },
+        'Try changing the searched year, or broaden your search terms.'
+      )
+    );
+  }
+
+  return (0, _preact.h)(
+    'div',
+    null,
+    (0, _preact.h)(
+      'div',
+      { className: 'Section is-invisible' },
+      (0, _preact.h)(
+        'div',
+        { className: 'Section-title' },
+        (0, _preact.h)(
+          'span',
+          { className: 'u-fontWeightNormal' },
+          'All ',
+          count,
+          ' results found in\xA0'
+        ),
+        (0, _preact.h)(
+          'span',
+          null,
+          tab,
+          ' for ',
+          year
+        )
+      )
+    ),
+    items.map(function (_ref2) {
+      var title = _ref2.title,
+          url = _ref2.url,
+          snippet = _ref2.snippet;
+      return (0, _preact.h)(_ItemPreview2.default, { tab: tab, url: url, title: title, snippet: snippet });
+    })
+  );
+}
+
+/***/ }),
+/* 110 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+var _queryString = __webpack_require__(3);
+
+var _index = __webpack_require__(111);
+
+var _index2 = _interopRequireDefault(_index);
+
+var _glossary = __webpack_require__(52);
+
+var _glossary2 = _interopRequireDefault(_glossary);
+
+var _createGlossaryGroupedObject = __webpack_require__(114);
+
+var _createGlossaryGroupedObject2 = _interopRequireDefault(_createGlossaryGroupedObject);
+
+var _lunrSearchWrapper = __webpack_require__(18);
+
+var _lunrSearchWrapper2 = _interopRequireDefault(_lunrSearchWrapper);
+
+var _wrapStringPhrases = __webpack_require__(9);
+
+var _wrapStringPhrases2 = _interopRequireDefault(_wrapStringPhrases);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var glossaryObject = _glossary2.default.items;
+
+var GlossaryContainer = function (_Component) {
+  _inherits(GlossaryContainer, _Component);
+
+  function GlossaryContainer(props) {
+    _classCallCheck(this, GlossaryContainer);
+
+    var _this = _possibleConstructorReturn(this, (GlossaryContainer.__proto__ || Object.getPrototypeOf(GlossaryContainer)).call(this, props));
+
+    _this.state = {
+      currentPhrase: '',
+      currentItems: _this.props.glossaryObject
+    };
+
+    _this.eventHandlers = {
+      changePhrase: _this.changePhrase.bind(_this)
+    };
+    return _this;
+  }
+
+  _createClass(GlossaryContainer, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      var phrase = this.props.phrase;
+
+      this.setState({
+        currentPhrase: phrase,
+        currentItems: this.filterItems(phrase)
+      });
+    }
+  }, {
+    key: 'filterItems',
+    value: function filterItems(phrase) {
+      var _this2 = this;
+
+      if (phrase.length > 2) {
+        var letters = Object.keys(this.props.glossaryObject);
+
+        var filteredList = letters.reduce(function (result, letter) {
+          var array = _this2.props.glossaryObject[letter];
+
+          var filteredItems = (0, _lunrSearchWrapper2.default)(array, 'phrase', ['phrase', 'description'], phrase);
+
+          var phraseArray = [phrase].concat(_toConsumableArray(phrase.split(' ')));
+          var wrapFn = function wrapFn(string) {
+            return '<em class="Highlight">' + string + '</em>';
+          };
+
+          var innerResult = filteredItems.map(function (obj) {
+            return _extends({}, obj, {
+              phrase: (0, _wrapStringPhrases2.default)(obj.phrase, phraseArray, wrapFn),
+              description: (0, _wrapStringPhrases2.default)(obj.description, phraseArray, wrapFn)
+            });
+          });
+
+          return _extends({}, result, _defineProperty({}, letter, innerResult));
+        }, {});
+
+        return filteredList;
+      }
+
+      return this.props.glossaryObject;
+    }
+  }, {
+    key: 'changePhrase',
+    value: function changePhrase(phrase) {
+      this.setState({
+        currentPhrase: phrase,
+        currentItems: this.filterItems(phrase)
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return (0, _preact.h)(_index2.default, _extends({}, this.state, this.eventHandlers));
+    }
+  }]);
+
+  return GlossaryContainer;
+}(_preact.Component);
+
+function scripts() {
+  var glossaryGroupedObject = (0, _createGlossaryGroupedObject2.default)(glossaryObject);
+  var nodes = document.getElementsByClassName('js-initGlossary');
+
+  var _parse = (0, _queryString.parse)(location.search),
+      phrase = _parse.phrase;
+
+  if (nodes.length > 0) {
+    for (var i = 0; i < nodes.length; i++) {
+      (0, _preact.render)((0, _preact.h)(GlossaryContainer, _extends({ glossaryObject: glossaryGroupedObject }, { phrase: phrase })), nodes[i]);
+    }
+  }
+}
+
+exports.default = scripts();
+
+/***/ }),
+/* 111 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Markup;
+
+var _preact = __webpack_require__(0);
+
+var _Controls = __webpack_require__(112);
+
+var _Controls2 = _interopRequireDefault(_Controls);
+
+var _List = __webpack_require__(113);
+
+var _List2 = _interopRequireDefault(_List);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Markup(_ref) {
+  var currentPhrase = _ref.currentPhrase,
+      currentItems = _ref.currentItems,
+      changePhrase = _ref.changePhrase;
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Glossary-wrap' },
+    (0, _preact.h)(_Controls2.default, { currentPhrase: currentPhrase, currentItems: currentItems, changePhrase: changePhrase }),
+    (0, _preact.h)(_List2.default, { currentItems: currentItems })
+  );
+}
+
+/***/ }),
+/* 112 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Controls;
+
+var _preact = __webpack_require__(0);
+
+function Controls(_ref) {
+  var currentPhrase = _ref.currentPhrase,
+      currentItems = _ref.currentItems,
+      changePhrase = _ref.changePhrase;
+
+  var buildLetters = function buildLetters() {
+    return Object.keys(currentItems).map(function (letter) {
+      var hasItems = currentItems[letter].length > 0;
+
+      return (0, _preact.h)(
+        'a',
+        {
+          href: '#glossary-item-' + letter,
+          className: 'Glossary-letter' + (hasItems ? ' is-valid' : '')
+        },
+        letter.toUpperCase()
+      );
+    });
+  };
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Glossary-controls' },
+    (0, _preact.h)('input', {
+      className: 'Glossary-search',
+      placeholder: 'Start typing to find a glossary term',
+      value: currentPhrase,
+      onInput: function onInput(event) {
+        return changePhrase(event.target.value);
+      }
+    }),
+    (0, _preact.h)(
+      'div',
+      { className: 'Glossary-lettersWrap' },
+      (0, _preact.h)(
+        'span',
+        { className: 'Glossary-letterLabel' },
+        'Jump to Letter:'
+      ),
+      buildLetters()
+    )
+  );
+}
+
+/***/ }),
+/* 113 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = List;
+
+var _preact = __webpack_require__(0);
+
+function List(_ref) {
+  var currentPhrase = _ref.currentPhrase,
+      currentItems = _ref.currentItems;
+
+
+  var buildItems = function buildItems(letterArrayFn) {
+    return letterArrayFn.map(function (item) {
+      return (0, _preact.h)(
+        "div",
+        { className: "Glossary-item" },
+        (0, _preact.h)("div", { className: "Glossary-title", dangerouslySetInnerHTML: { __html: item.phrase } }),
+        (0, _preact.h)("div", { className: "Glossary-text", dangerouslySetInnerHTML: { __html: item.description } })
+      );
+    });
+  };
+
+  var buildSections = function buildSections(currentItemsFn) {
+    return Object.keys(currentItemsFn).map(function (letter) {
+      var letterArray = currentItemsFn[letter];
+
+      if (letterArray.length > 0) {
+        return (0, _preact.h)(
+          "div",
+          { className: "Glossary-section", id: "glossary-item-" + letter },
+          (0, _preact.h)(
+            "div",
+            { className: "Glossary-heading" },
+            letter.toUpperCase()
+          ),
+          buildItems(letterArray)
+        );
+      }
+
+      return null;
+    });
+  };
+
+  return (0, _preact.h)(
+    "div",
+    { className: "Glossary-list" },
+    buildSections(currentItems)
+  );
+}
+
+/***/ }),
+/* 114 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = createGlossaryGroupedObject;
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function createGlossaryGroupedObject(rawObject) {
+  var alphabetLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+  var objectSkeleton = alphabetLetters.reduce(function (result, letter) {
+    return _extends({}, result, _defineProperty({}, letter, []));
+  }, {});
+
+  var populatedObject = Object.keys(rawObject).reduce(function (result, phrase) {
+    var letter = phrase.match(/\w/i)[0].toLowerCase();
+
+    return _extends({}, result, _defineProperty({}, letter, [].concat(_toConsumableArray(result[letter]), [{
+      phrase: phrase,
+      description: rawObject[phrase]
+    }])));
+  }, objectSkeleton);
+
+  var sortedObject = Object.keys(populatedObject).reduce(function (result, letter) {
+    var sortedArray = result[letter].sort(function (a, b) {
+      return a.phrase.localeCompare(b.phrase);
+    });
+
+    return _extends({}, result, _defineProperty({}, letter, sortedArray));
+  }, populatedObject);
+
+  return sortedObject;
+}
+
+/***/ }),
 /* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25859,7 +26493,9 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _decodeHtmlEntities = __webpack_require__(3);
+var _queryString = __webpack_require__(3);
+
+var _decodeHtmlEntities = __webpack_require__(8);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
@@ -25867,11 +26503,11 @@ var _index = __webpack_require__(116);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _lunrSearchWrapper = __webpack_require__(16);
+var _lunrSearchWrapper = __webpack_require__(18);
 
 var _lunrSearchWrapper2 = _interopRequireDefault(_lunrSearchWrapper);
 
-var _wrapStringPhrases = __webpack_require__(7);
+var _wrapStringPhrases = __webpack_require__(9);
 
 var _wrapStringPhrases2 = _interopRequireDefault(_wrapStringPhrases);
 
@@ -25893,10 +26529,13 @@ var VideosContainer = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (VideosContainer.__proto__ || Object.getPrototypeOf(VideosContainer)).call(this, props));
 
+    var items = _this.props.items;
+
+
     _this.state = {
       open: null,
       currentPhrase: '',
-      currentItems: _this.props.items
+      currentItems: items
     };
 
     _this.setModal = _this.setModal.bind(_this);
@@ -25906,6 +26545,32 @@ var VideosContainer = function (_Component) {
   }
 
   _createClass(VideosContainer, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      var phrase = this.props.phrase;
+
+
+      this.setState({
+        currentPhrase: phrase,
+        currentItems: this.filterItems(phrase)
+      });
+    }
+  }, {
+    key: 'setModal',
+    value: function setModal(state, id, language) {
+      if (state) {
+        this.setState({
+          open: {
+            id: id,
+            language: language,
+            select: false
+          }
+        });
+      } else {
+        this.setState({ open: null });
+      }
+    }
+  }, {
     key: 'setLanguage',
     value: function setLanguage(language) {
       if (this.state.open.select === true) {
@@ -25924,44 +26589,35 @@ var VideosContainer = function (_Component) {
       }
     }
   }, {
-    key: 'setModal',
-    value: function setModal(state, id, language) {
-      if (state) {
-        this.setState({
-          open: {
-            id: id,
-            language: language,
-            select: false
-          }
-        });
-      } else {
-        this.setState({ open: null });
-      }
-    }
-  }, {
     key: 'changePhrase',
     value: function changePhrase(phrase) {
-      this.setState({ currentPhrase: phrase });
-
-      if (phrase.length > 2) {
-        var filteredItems = (0, _lunrSearchWrapper2.default)(this.props.items, 'id', ['title', 'description'], phrase);
-
-        var phraseArray = [phrase].concat(_toConsumableArray(phrase.split(' ')));
-        var wrapFn = function wrapFn(string) {
-          return '<em class="Highlight">' + string + '</em>';
-        };
-
-        var currentItems = filteredItems.map(function (obj) {
-          return _extends({}, obj, {
-            title: (0, _wrapStringPhrases2.default)(obj.title, phraseArray, wrapFn),
-            description: (0, _wrapStringPhrases2.default)(obj.title, phraseArray, wrapFn)
-          });
-        });
-
-        this.setState({ currentItems: currentItems });
-      } else {
-        this.setState({ currentItems: this.props.items });
+      this.setState({
+        currentPhrase: phrase,
+        currentItems: this.filterItems(phrase)
+      });
+    }
+  }, {
+    key: 'filterItems',
+    value: function filterItems(phrase) {
+      if (phrase.length < 3) {
+        return this.props.items;
       }
+
+      var filteredItems = (0, _lunrSearchWrapper2.default)(this.props.items, 'id', ['title', 'description'], phrase);
+
+      var phraseArray = [phrase].concat(_toConsumableArray(phrase.split(' ')));
+      var wrapFn = function wrapFn(string) {
+        return '<em class="Highlight">' + string + '</em>';
+      };
+
+      var currentItems = filteredItems.map(function (obj) {
+        return _extends({}, obj, {
+          title: (0, _wrapStringPhrases2.default)(obj.title, phraseArray, wrapFn),
+          description: (0, _wrapStringPhrases2.default)(obj.title, phraseArray, wrapFn)
+        });
+      });
+
+      return currentItems;
     }
   }, {
     key: 'render',
@@ -25984,10 +26640,13 @@ var VideosContainer = function (_Component) {
 function scripts() {
   var nodes = document.getElementsByClassName('js-initVideos');
 
+  var _parse = (0, _queryString.parse)(location.search),
+      phrase = _parse.phrase;
+
   if (nodes.length > 0) {
     for (var i = 0; i < nodes.length; i++) {
       var items = JSON.parse((0, _decodeHtmlEntities2.default)(nodes[i].getAttribute('data-items'))).data;
-      (0, _preact.render)((0, _preact.h)(VideosContainer, { items: items }), nodes[i]);
+      (0, _preact.render)((0, _preact.h)(VideosContainer, { items: items, phrase: phrase }), nodes[i]);
     }
   }
 }
@@ -26219,11 +26878,11 @@ exports.default = Modal;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(17);
+var _index = __webpack_require__(23);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(18);
+var _index3 = __webpack_require__(12);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -26256,7 +26915,7 @@ function Modal(props) {
           (0, _preact.h)(
             'div',
             { className: 'Videos-closeIcon' },
-            (0, _preact.h)(_index4.default, { type: 'close', size: 'large' })
+            (0, _preact.h)(_index4.default, { type: 'close' })
           )
         ),
         (0, _preact.h)(
@@ -26569,7 +27228,7 @@ var _index = __webpack_require__(24);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _decodeHtmlEntities = __webpack_require__(3);
+var _decodeHtmlEntities = __webpack_require__(8);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
@@ -26605,7 +27264,7 @@ var _index = __webpack_require__(131);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _decodeHtmlEntities = __webpack_require__(3);
+var _decodeHtmlEntities = __webpack_require__(8);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
@@ -26810,7 +27469,7 @@ function scripts() {
 
   for (var i = 0; i < nodes.length; i++) {
     var node = nodes[i];
-    var rawValues = (0, _getProp2.default)('values', node, { parse: 'json' });
+    var rawValues = (0, _getProp2.default)('values', node, 'json');
     var type = (0, _getProp2.default)('type', node);
     var yearString = (0, _getProp2.default)('year', node);
 
@@ -26840,7 +27499,7 @@ exports.default = HomeChart;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(11);
+var _index = __webpack_require__(14);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -26906,7 +27565,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = buildGroupSpaceArray;
 
-var _breakIntoWrap = __webpack_require__(12);
+var _breakIntoWrap = __webpack_require__(15);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -26998,7 +27657,7 @@ exports.default = HorisontalBreakpoint;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(10);
+var _trimValues = __webpack_require__(13);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -27248,7 +27907,7 @@ exports.default = LineGroupItem;
 
 var _preact = __webpack_require__(0);
 
-var _breakIntoWrap = __webpack_require__(12);
+var _breakIntoWrap = __webpack_require__(15);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -27395,7 +28054,7 @@ var _TooltipItem = __webpack_require__(145);
 
 var _TooltipItem2 = _interopRequireDefault(_TooltipItem);
 
-var _breakIntoWrap = __webpack_require__(12);
+var _breakIntoWrap = __webpack_require__(15);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -27482,7 +28141,7 @@ exports.default = TooltipItem;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(10);
+var _trimValues = __webpack_require__(13);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -27601,7 +28260,7 @@ exports.default = Heading;
 
 var _preact = __webpack_require__(0);
 
-var _breakIntoWrap = __webpack_require__(12);
+var _breakIntoWrap = __webpack_require__(15);
 
 var _breakIntoWrap2 = _interopRequireDefault(_breakIntoWrap);
 
@@ -27685,11 +28344,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _propTypes = __webpack_require__(13);
+var _propTypes = __webpack_require__(6);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _queryString = __webpack_require__(8);
+var _queryString = __webpack_require__(3);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -27697,7 +28356,7 @@ var _index = __webpack_require__(153);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _analyticsEvent = __webpack_require__(6);
+var _analyticsEvent = __webpack_require__(7);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -27925,7 +28584,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var emptyFunction = __webpack_require__(25);
 var invariant = __webpack_require__(26);
-var warning = __webpack_require__(52);
+var warning = __webpack_require__(53);
 var assign = __webpack_require__(31);
 
 var ReactPropTypesSecret = __webpack_require__(27);
@@ -28450,7 +29109,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(26);
-  var warning = __webpack_require__(52);
+  var warning = __webpack_require__(53);
   var ReactPropTypesSecret = __webpack_require__(27);
   var loggedTypeFailures = {};
 }
@@ -28573,7 +29232,7 @@ exports.default = SearchMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _propTypes = __webpack_require__(13);
+var _propTypes = __webpack_require__(6);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -28698,7 +29357,7 @@ exports.default = FormArea;
 
 var _preact = __webpack_require__(0);
 
-var _propTypes = __webpack_require__(13);
+var _propTypes = __webpack_require__(6);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -28706,7 +29365,7 @@ var _Icon = __webpack_require__(155);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
-var _analyticsEvent = __webpack_require__(6);
+var _analyticsEvent = __webpack_require__(7);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -28809,7 +29468,7 @@ exports.default = ResultsArea;
 
 var _preact = __webpack_require__(0);
 
-var _propTypes = __webpack_require__(13);
+var _propTypes = __webpack_require__(6);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -28888,7 +29547,7 @@ exports.default = List;
 
 var _preact = __webpack_require__(0);
 
-var _propTypes = __webpack_require__(13);
+var _propTypes = __webpack_require__(6);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -29112,7 +29771,7 @@ var _index = __webpack_require__(161);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _decodeHtmlEntities = __webpack_require__(3);
+var _decodeHtmlEntities = __webpack_require__(8);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
@@ -29249,7 +29908,7 @@ exports.default = YearSelectMarkup;
 
 var _preact = __webpack_require__(0);
 
-var _queryString = __webpack_require__(8);
+var _queryString = __webpack_require__(3);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -30023,13 +30682,13 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _reduxStore = __webpack_require__(53);
+var _reduxStore = __webpack_require__(54);
 
 var _index = __webpack_require__(177);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _createComponents = __webpack_require__(28);
+var _createComponents = __webpack_require__(55);
 
 var _createComponents2 = _interopRequireDefault(_createComponents);
 
@@ -30759,7 +31418,7 @@ if (typeof self !== 'undefined') {
 
 var result = (0, _ponyfill2.default)(root);
 exports.default = result;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(14), __webpack_require__(46)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16), __webpack_require__(46)(module)))
 
 /***/ }),
 /* 176 */
@@ -30808,7 +31467,7 @@ var _preactCssTransitionGroup = __webpack_require__(178);
 
 var _preactCssTransitionGroup2 = _interopRequireDefault(_preactCssTransitionGroup);
 
-var _index = __webpack_require__(18);
+var _index = __webpack_require__(12);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -31444,17 +32103,17 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _preactRenderToString = __webpack_require__(55);
+var _preactRenderToString = __webpack_require__(56);
 
 var _preactRenderToString2 = _interopRequireDefault(_preactRenderToString);
 
-var _canvgBrowser = __webpack_require__(56);
+var _canvgBrowser = __webpack_require__(57);
 
 var _canvgBrowser2 = _interopRequireDefault(_canvgBrowser);
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(11);
+var _index = __webpack_require__(14);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -31575,8 +32234,8 @@ function scripts() {
   var _loop = function _loop(i) {
     var node = nodes[i];
 
-    var rawValues = (0, _getProp2.default)('values', node, { parse: 'json' }).data;
-    var rawFiles = (0, _getProp2.default)('files', node, { parse: 'json' });
+    var rawValues = (0, _getProp2.default)('values', node, 'json').data;
+    var rawFiles = (0, _getProp2.default)('files', node, 'json');
     var year = (0, _getProp2.default)('year', node);
     var department = (0, _getProp2.default)('dept', node);
     var location = (0, _getProp2.default)('dept-location', node);
@@ -32414,8 +33073,8 @@ function appendElement(hander, node) {
 
 //if(typeof require == 'function'){
 var XMLReader = __webpack_require__(183).XMLReader;
-var DOMImplementation = exports.DOMImplementation = __webpack_require__(57).DOMImplementation;
-exports.XMLSerializer = __webpack_require__(57).XMLSerializer;
+var DOMImplementation = exports.DOMImplementation = __webpack_require__(58).DOMImplementation;
+exports.XMLSerializer = __webpack_require__(58).XMLSerializer;
 exports.DOMParser = DOMParser;
 //}
 
@@ -33090,7 +33749,7 @@ var _index = __webpack_require__(29);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(59);
+var _index3 = __webpack_require__(60);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -33246,11 +33905,11 @@ exports.default = Markup;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(11);
+var _index = __webpack_require__(14);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(58);
+var _index3 = __webpack_require__(59);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -33450,7 +34109,7 @@ exports.default = BreakpointItem;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(10);
+var _trimValues = __webpack_require__(13);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -34119,7 +34778,7 @@ exports.default = TooltipItem;
 
 var _preact = __webpack_require__(0);
 
-var _trimValues = __webpack_require__(10);
+var _trimValues = __webpack_require__(13);
 
 var _trimValues2 = _interopRequireDefault(_trimValues);
 
@@ -34385,15 +35044,15 @@ exports.default = Button;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(18);
+var _index = __webpack_require__(12);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _analyticsEvent = __webpack_require__(6);
+var _analyticsEvent = __webpack_require__(7);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
-var _redux = __webpack_require__(54);
+var _redux = __webpack_require__(28);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34462,7 +35121,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = calcShareAction;
 
-var _analyticsEvent = __webpack_require__(6);
+var _analyticsEvent = __webpack_require__(7);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -34516,13 +35175,13 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _preactRenderToString = __webpack_require__(55);
+var _preactRenderToString = __webpack_require__(56);
 
 var _preactRenderToString2 = _interopRequireDefault(_preactRenderToString);
 
 var _preact = __webpack_require__(0);
 
-var _canvgBrowser = __webpack_require__(56);
+var _canvgBrowser = __webpack_require__(57);
 
 var _canvgBrowser2 = _interopRequireDefault(_canvgBrowser);
 
@@ -34530,7 +35189,7 @@ var _index = __webpack_require__(207);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(11);
+var _index3 = __webpack_require__(14);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -34702,12 +35361,12 @@ function scripts() {
   for (var i = 0; i < nodes.length; i++) {
     var node = nodes[i];
 
-    var rawAdjusted = (0, _getProp2.default)('adjusted', node, { parse: 'json' }).data;
-    var rawNotAdjusted = (0, _getProp2.default)('not-adjusted', node, { parse: 'json' }).data;
+    var rawAdjusted = (0, _getProp2.default)('adjusted', node, 'json').data;
+    var rawNotAdjusted = (0, _getProp2.default)('not-adjusted', node, 'json').data;
     var year = (0, _getProp2.default)('year', node);
     var department = (0, _getProp2.default)('department', node);
     var location = (0, _getProp2.default)('location', node);
-    var rawFiles = (0, _getProp2.default)('files', node, { parse: 'json' });
+    var rawFiles = (0, _getProp2.default)('files', node, 'json');
     var cpi = (0, _getProp2.default)('cpi', node);
 
     var removeNulls = function removeNulls(val) {
@@ -34747,7 +35406,7 @@ var _index = __webpack_require__(29);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(59);
+var _index3 = __webpack_require__(60);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -34988,7 +35647,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = calcShareAction;
 
-var _analyticsEvent = __webpack_require__(6);
+var _analyticsEvent = __webpack_require__(7);
 
 var _analyticsEvent2 = _interopRequireDefault(_analyticsEvent);
 
@@ -35044,7 +35703,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _decodeHtmlEntities = __webpack_require__(3);
+var _decodeHtmlEntities = __webpack_require__(8);
 
 var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
 
@@ -35200,7 +35859,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = updateQs;
 
-var _queryString = __webpack_require__(8);
+var _queryString = __webpack_require__(3);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -35328,7 +35987,7 @@ exports.default = DeptGroup;
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(17);
+var _index = __webpack_require__(23);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -35707,11 +36366,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports.default = filterKeywords;
 
-var _lunrSearchWrapper = __webpack_require__(16);
+var _lunrSearchWrapper = __webpack_require__(18);
 
 var _lunrSearchWrapper2 = _interopRequireDefault(_lunrSearchWrapper);
 
-var _wrapStringPhrases = __webpack_require__(7);
+var _wrapStringPhrases = __webpack_require__(9);
 
 var _wrapStringPhrases2 = _interopRequireDefault(_wrapStringPhrases);
 
@@ -35907,11 +36566,11 @@ var _returnHtml = __webpack_require__(223);
 
 var _returnHtml2 = _interopRequireDefault(_returnHtml);
 
-var _index = __webpack_require__(17);
+var _index = __webpack_require__(23);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(60);
+var _index3 = __webpack_require__(61);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -36452,7 +37111,7 @@ var _getProp = __webpack_require__(1);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
-var _initComponents = __webpack_require__(15);
+var _initComponents = __webpack_require__(11);
 
 var _initComponents2 = _interopRequireDefault(_initComponents);
 
@@ -36460,7 +37119,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function scripts() {
   var enhanceInstance = function enhanceInstance(node) {
-    var image = (0, _getProp2.default)('image', node, { parse: 'node', nodeParse: 'string', returnNode: true });
+    var image = (0, _getProp2.default)('image', node, 'node', 'string');
     var imgNode = image.node,
         value = image.value;
 
@@ -36487,7 +37146,7 @@ var _getProp = __webpack_require__(1);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
-var _initComponents = __webpack_require__(15);
+var _initComponents = __webpack_require__(11);
 
 var _initComponents2 = _interopRequireDefault(_initComponents);
 
@@ -36495,7 +37154,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function scripts() {
   var enhanceInstance = function enhanceInstance(node) {
-    var image = (0, _getProp2.default)('image', node, { parse: 'node', nodeParse: 'string', returnNode: true });
+    var image = (0, _getProp2.default)('image', node, 'node', 'string');
     var imgNode = image.node,
         value = image.value;
 
@@ -36509,357 +37168,6 @@ exports.default = scripts();
 
 /***/ }),
 /* 245 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(246);
-
-var _index2 = _interopRequireDefault(_index);
-
-var _getProp = __webpack_require__(1);
-
-var _getProp2 = _interopRequireDefault(_getProp);
-
-var _createComponents = __webpack_require__(28);
-
-var _createComponents2 = _interopRequireDefault(_createComponents);
-
-var _lunrSearchWrapper = __webpack_require__(16);
-
-var _lunrSearchWrapper2 = _interopRequireDefault(_lunrSearchWrapper);
-
-var _wrapStringPhrases = __webpack_require__(7);
-
-var _wrapStringPhrases2 = _interopRequireDefault(_wrapStringPhrases);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var FaqFilterContainer = function (_Component) {
-  _inherits(FaqFilterContainer, _Component);
-
-  function FaqFilterContainer(props) {
-    _classCallCheck(this, FaqFilterContainer);
-
-    var _this = _possibleConstructorReturn(this, (FaqFilterContainer.__proto__ || Object.getPrototypeOf(FaqFilterContainer)).call(this, props));
-
-    var values = _this.props.values;
-
-
-    _this.state = {
-      results: values,
-      phrase: ''
-    };
-
-    _this.events = {
-      updatePhrase: _this.updatePhrase.bind(_this)
-    };
-    return _this;
-  }
-
-  _createClass(FaqFilterContainer, [{
-    key: 'updatePhrase',
-    value: function updatePhrase(phrase) {
-      this.setState({ phrase: phrase });
-      this.updateResults(phrase);
-    }
-  }, {
-    key: 'updateResults',
-    value: function updateResults(phrase) {
-      var values = this.props.values;
-
-
-      if (phrase.length > 2) {
-        var filteredItems = (0, _lunrSearchWrapper2.default)(values, 'title', ['title', 'text'], phrase.trim());
-
-        var phraseArray = [phrase.trim()].concat(_toConsumableArray(phrase.trim().split(' ')));
-        var wrapFn = function wrapFn(string) {
-          return '<em class="Highlight">' + string + '</em>';
-        };
-
-        var results = filteredItems.map(function (obj) {
-          return _extends({}, obj, {
-            title: (0, _wrapStringPhrases2.default)(obj.title, phraseArray, wrapFn, { minChars: 3, excludeHtml: true }),
-            text: (0, _wrapStringPhrases2.default)(obj.text, phraseArray, wrapFn, { minChars: 3, excludeHtml: true })
-          });
-        });
-
-        return this.setState({ results: results });
-      }
-
-      return this.setState({ results: values });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _state = this.state,
-          results = _state.results,
-          phrase = _state.phrase;
-      var updatePhrase = this.events.updatePhrase;
-
-      return (0, _preact.h)(_index2.default, { results: results, phrase: phrase, updatePhrase: updatePhrase });
-    }
-  }]);
-
-  return FaqFilterContainer;
-}(_preact.Component);
-
-function scripts() {
-  var createInstance = function createInstance(node) {
-    var items = Array.prototype.slice.call((0, _getProp2.default)('item', node, { parse: 'node', loop: true }));
-    var values = items.map(function (innerNode) {
-      return {
-        title: (0, _getProp2.default)('title', innerNode, { parse: 'node', nodeParse: 'innerHTML' }),
-        text: (0, _getProp2.default)('text', innerNode, { parse: 'node', nodeParse: 'innerHTML' })
-      };
-    });
-
-    (0, _preact.render)((0, _preact.h)(FaqFilterContainer, { values: values }), node.parent, node);
-  };
-
-  (0, _createComponents2.default)('FaqFilter', createInstance, true);
-}
-
-exports.default = scripts();
-
-/***/ }),
-/* 246 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = FaqFilter;
-
-var _preact = __webpack_require__(0);
-
-function FaqFilter(_ref) {
-  var results = _ref.results,
-      phrase = _ref.phrase,
-      updatePhrase = _ref.updatePhrase;
-
-  var updatePhraseWrap = function updatePhraseWrap(event) {
-    return updatePhrase(event.target.value);
-  };
-
-  return (0, _preact.h)(
-    "div",
-    null,
-    (0, _preact.h)(
-      "div",
-      { className: "Section is-invisible u-paddinTop0" },
-      (0, _preact.h)(
-        "div",
-        { className: "u-maxWidth300" },
-        (0, _preact.h)("input", {
-          value: phrase,
-          onInput: updatePhraseWrap,
-          className: "Input",
-          placeholder: "Start typing to find a specific question"
-        })
-      )
-    ),
-    results.map(function (_ref2) {
-      var title = _ref2.title,
-          text = _ref2.text;
-
-      return (0, _preact.h)(
-        "div",
-        { className: "u-marginBottom20" },
-        (0, _preact.h)(
-          "div",
-          { className: "Section" },
-          (0, _preact.h)("h2", { className: "Section-title", dangerouslySetInnerHTML: { __html: title } }),
-          (0, _preact.h)("div", { dangerouslySetInnerHTML: { __html: text } })
-        )
-      );
-    })
-  );
-}
-
-/***/ }),
-/* 247 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _preact = __webpack_require__(0);
-
-var _decodeHtmlEntities = __webpack_require__(3);
-
-var _decodeHtmlEntities2 = _interopRequireDefault(_decodeHtmlEntities);
-
-var _index = __webpack_require__(248);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var VideoContainer = function (_Component) {
-  _inherits(VideoContainer, _Component);
-
-  function VideoContainer(props) {
-    _classCallCheck(this, VideoContainer);
-
-    var _this = _possibleConstructorReturn(this, (VideoContainer.__proto__ || Object.getPrototypeOf(VideoContainer)).call(this, props));
-
-    _this.state = {
-      open: {
-        language: _this.props.jsonData[Object.keys(_this.props.jsonData)[0]],
-        select: false
-      }
-    };
-
-    _this.setLanguage = _this.setLanguage.bind(_this);
-    return _this;
-  }
-
-  _createClass(VideoContainer, [{
-    key: 'setLanguage',
-    value: function setLanguage(language) {
-      if (this.state.open.select === true) {
-        this.setState({
-          open: _extends({}, this.state.open, {
-            language: language,
-            select: false
-          })
-        });
-      } else {
-        this.setState({
-          open: _extends({}, this.state.open, {
-            select: true
-          })
-        });
-      }
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return (0, _preact.h)(_index2.default, {
-        open: this.state.open,
-        setLanguage: this.setLanguage,
-        languageOptions: this.props.jsonData
-      });
-    }
-  }]);
-
-  return VideoContainer;
-}(_preact.Component);
-
-function scripts() {
-  var nodes = document.getElementsByClassName('js-initVideo');
-
-  if (nodes.length > 0) {
-    for (var i = 0; i < nodes.length; i++) {
-      var component = nodes[i];
-      var jsonData = JSON.parse((0, _decodeHtmlEntities2.default)(component.getAttribute('data-json')));
-      (0, _preact.render)((0, _preact.h)(VideoContainer, { jsonData: jsonData }), component);
-    }
-  }
-}
-
-exports.default = scripts();
-
-/***/ }),
-/* 248 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Modal;
-
-var _preact = __webpack_require__(0);
-
-var _index = __webpack_require__(17);
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Modal(_ref) {
-  var open = _ref.open,
-      languageOptions = _ref.languageOptions,
-      setLanguage = _ref.setLanguage;
-
-  var toggle = (0, _preact.h)(
-    'div',
-    null,
-    (0, _preact.h)(
-      'span',
-      { className: 'Video-label' },
-      'Change language:'
-    ),
-    (0, _preact.h)(
-      'div',
-      { className: 'Video-selectWrap' },
-      (0, _preact.h)(_index2.default, {
-        name: 'language',
-        open: open.select,
-        items: languageOptions,
-        selected: open.language,
-        changeAction: function changeAction(value) {
-          return setLanguage(value);
-        }
-      })
-    )
-  );
-
-  return (0, _preact.h)(
-    'div',
-    { className: 'Video' },
-    (0, _preact.h)(
-      'div',
-      { className: 'Video-embed' },
-      (0, _preact.h)('div', { className: 'Video-loading' }),
-      (0, _preact.h)('iframe', { title: 'Video', className: 'Video-iframe', width: '560', height: '315', src: 'https://www.youtube.com/embed/' + open.language + '?rel=0&amp;amp;showinfo=0', frameBorder: '0', allow: 'autoplay; encrypted-media', allowfullscreen: 'allowfullscreen' })
-    ),
-    Object.keys(languageOptions).length > 1 ? toggle : null
-  );
-}
-
-/***/ }),
-/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36885,7 +37193,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 250 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36905,7 +37213,7 @@ var _getProp = __webpack_require__(1);
 
 var _getProp2 = _interopRequireDefault(_getProp);
 
-var _createComponents = __webpack_require__(28);
+var _createComponents = __webpack_require__(55);
 
 var _createComponents2 = _interopRequireDefault(_createComponents);
 
@@ -36923,7 +37231,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 251 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36950,9 +37258,9 @@ function scripts() {
 
   for (var i = 0; i < nodesList.length; i++) {
     var node = nodesList[i];
-    var items = (0, _getProp2.default)('items', node, { parse: 'json' });
+    var items = (0, _getProp2.default)('items', node, 'json');
     var type = (0, _getProp2.default)('type', node);
-    var rawDownload = (0, _getProp2.default)('download', node, { parse: 'json' });
+    var rawDownload = (0, _getProp2.default)('download', node, 'json');
 
     var downloadHasProps = !!(rawDownload && rawDownload.heading && rawDownload.subHeading && rawDownload.type);
     var download = downloadHasProps ? rawDownload : null;
@@ -36964,7 +37272,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 252 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36974,7 +37282,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _index = __webpack_require__(60);
+var _index = __webpack_require__(61);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -36988,7 +37296,7 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
-/* 253 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36998,7 +37306,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _initComponents = __webpack_require__(15);
+var _initComponents = __webpack_require__(11);
 
 var _initComponents2 = _interopRequireDefault(_initComponents);
 
@@ -37034,6 +37342,270 @@ function scripts() {
 exports.default = scripts();
 
 /***/ }),
+/* 250 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _preact = __webpack_require__(0);
+
+var _SingleVideoContainer = __webpack_require__(251);
+
+var _SingleVideoContainer2 = _interopRequireDefault(_SingleVideoContainer);
+
+var _initComponents = __webpack_require__(11);
+
+var _initComponents2 = _interopRequireDefault(_initComponents);
+
+var _getProp = __webpack_require__(1);
+
+var _getProp2 = _interopRequireDefault(_getProp);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function scripts() {
+  var createInstance = function createInstance(node) {
+    var languages = (0, _getProp2.default)('languages', node, 'json');
+    var title = (0, _getProp2.default)('title', node);
+    var description = (0, _getProp2.default)('description', node);
+
+    (0, _preact.render)((0, _preact.h)(_SingleVideoContainer2.default, { languages: languages, description: description, title: title }), node);
+  };
+
+  (0, _initComponents2.default)('SingleVideo', createInstance, true);
+}
+
+exports.default = scripts();
+
+/***/ }),
+/* 251 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+var _propTypes = __webpack_require__(6);
+
+var _Embed = __webpack_require__(252);
+
+var _Embed2 = _interopRequireDefault(_Embed);
+
+var _ModalWrap = __webpack_require__(253);
+
+var _ModalWrap2 = _interopRequireDefault(_ModalWrap);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SingleVideoContainer = function (_Component) {
+  _inherits(SingleVideoContainer, _Component);
+
+  function SingleVideoContainer(props) {
+    _classCallCheck(this, SingleVideoContainer);
+
+    var _this = _possibleConstructorReturn(this, (SingleVideoContainer.__proto__ || Object.getPrototypeOf(SingleVideoContainer)).call(this, props));
+
+    _this.state = {
+      activeKey: null
+    };
+
+    _this.events = {
+      setActiveKey: _this.setActiveKey.bind(_this)
+    };
+    return _this;
+  }
+
+  _createClass(SingleVideoContainer, [{
+    key: 'setActiveKey',
+    value: function setActiveKey(activeKey) {
+      this.setActiveId({ activeKey: activeKey });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var setActiveKey = this.events.setActiveKey;
+      var activeKey = this.state.activeKey;
+      var _props = this.props,
+          modal = _props.modal,
+          title = _props.title,
+          description = _props.description,
+          languages = _props.languages;
+
+
+      if (modal) {
+        return (0, _preact.h)(_Embed2.default, { setActiveKey: setActiveKey, activeKey: activeKey, title: title, description: description, languages: languages });
+      }
+
+      return (0, _preact.h)(_ModalWrap2.default, _extends({
+        activeKey: Object.keys(languages)[0]
+      }, { setActiveKey: setActiveKey, title: title, description: description, languages: languages }));
+    }
+  }]);
+
+  return SingleVideoContainer;
+}(_preact.Component);
+
+exports.default = SingleVideoContainer;
+
+
+SingleVideoContainer.propTypes = {
+  modal: _propTypes.PropTypes.bool,
+  title: _propTypes.PropTypes.string.isRequired,
+  description: _propTypes.PropTypes.string.isRequired,
+  languages: _propTypes.PropTypes.objectOf(_propTypes.PropTypes.string).isRequired
+};
+
+SingleVideoContainer.defaultProps = {
+  modal: false
+};
+
+/***/ }),
+/* 252 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Embed;
+
+var _preact = __webpack_require__(0);
+
+var _propTypes = __webpack_require__(6);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var buildToggle = function buildToggle(activeKey, setActiveKey, languages) {
+  var changeWrapper = function changeWrapper(event) {
+    return setActiveKey(event.target.value);
+  };
+  var keys = Object.keys(languages);
+  var buildOption = function buildOption(key) {
+    return (0, _preact.h)(
+      'option',
+      { value: key },
+      key
+    );
+  };
+
+  return (0, _preact.h)(
+    'select',
+    {
+      className: 'Dropdown',
+      selected: activeKey,
+      onChange: changeWrapper
+    },
+    keys.map(buildOption)
+  );
+};
+
+var buildVideo = function buildVideo(id) {
+  return (0, _preact.h)(
+    'div',
+    { className: 'Video-embed' },
+    (0, _preact.h)(
+      'div',
+      { className: 'Video-loader' },
+      (0, _preact.h)('div', { className: 'Loader' })
+    ),
+    (0, _preact.h)('iframe', {
+      title: 'Video',
+      className: 'Video-iframe',
+      src: 'https://www.youtube.com/embed/' + id + '?rel=0&amp;amp;showinfo=0',
+      frameBorder: '0',
+      allow: 'autoplay; encrypted-media',
+      allowfullscreen: true
+    })
+  );
+};
+
+function Embed(_ref) {
+  var activeKey = _ref.activeKey,
+      setActiveKey = _ref.setActiveKey,
+      languages = _ref.languages;
+
+  var id = languages[activeKey];
+
+  return (0, _preact.h)(
+    'div',
+    { className: 'Video' },
+    buildVideo(id),
+    buildToggle(activeKey, setActiveKey, languages)
+  );
+}
+
+Embed.propTypes = {
+  activeKey: _propTypes2.default.string.isRequired,
+  setActiveKey: _propTypes2.default.string.isRequired,
+  languages: _propTypes2.default.objectOf(_propTypes2.default.string).isRequired
+};
+
+/***/ }),
+/* 253 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = ModalWrap;
+
+var _preact = __webpack_require__(0);
+
+var _index = __webpack_require__(12);
+
+var _index2 = _interopRequireDefault(_index);
+
+var _redux = __webpack_require__(28);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ModalWrap() {
+  return (0, _preact.h)(
+    'button',
+    { className: 'Video-thumbnail' },
+    (0, _preact.h)(
+      'div',
+      { className: 'Video-iconWrap' },
+      (0, _preact.h)(
+        'div',
+        { className: 'Video-icon' },
+        (0, _preact.h)(_index2.default, { type: 'play', size: 'large' })
+      )
+    ),
+    (0, _preact.h)('img', { className: 'Video-preview', alt: '', src: 'https://img.youtube.com/vi/zFalZt862hk/mqdefault.jpg' })
+  );
+}
+
+;
+
+/***/ }),
 /* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -37046,7 +37618,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(11);
+var _index = __webpack_require__(14);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -37112,7 +37684,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _preact = __webpack_require__(0);
 
-var _index = __webpack_require__(58);
+var _index = __webpack_require__(59);
 
 var _index2 = _interopRequireDefault(_index);
 
