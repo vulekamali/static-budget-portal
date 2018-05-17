@@ -1,9 +1,14 @@
 import { h, render, Component } from 'preact';
+import { parse } from 'query-string';
 import Glossary from './index.jsx';
-import glossaryObject from './../../../../_data/glossary.json';
+import glossary from './../../../../_data/glossary.json';
 import createGlossaryGroupedObject from './../../../utilities/js/helpers/createGlossaryGroupedObject.js';
 import lunrSearchWrapper from './../../../utilities/js/helpers/lunrSearchWrapper.js';
 import wrapStringPhrases from './../../../utilities/js/helpers/wrapStringPhrases.js';
+
+
+const { items: glossaryObject } = glossary;
+
 
 class GlossaryContainer extends Component {
   constructor(props) {
@@ -20,9 +25,16 @@ class GlossaryContainer extends Component {
   }
 
 
-  changePhrase(phrase) {
-    this.setState({ currentPhrase: phrase });
+  componentWillMount() {
+    const { phrase } = this.props;
+    this.setState({
+      currentPhrase: phrase,
+      currentItems: this.filterItems(phrase),
+    });
+  }
 
+
+  filterItems(phrase) {
     if (phrase.length > 2) {
       const letters = Object.keys(this.props.glossaryObject);
 
@@ -58,10 +70,17 @@ class GlossaryContainer extends Component {
         {},
       );
 
-      return this.setState({ currentItems: filteredList });
+      return filteredList;
     }
 
-    return this.setState({ currentItems: this.props.glossaryObject });
+    return this.props.glossaryObject;
+  }
+
+  changePhrase(phrase) {
+    this.setState({
+      currentPhrase: phrase,
+      currentItems: this.filterItems(phrase),
+    });
   }
 
 
@@ -74,10 +93,11 @@ class GlossaryContainer extends Component {
 function scripts() {
   const glossaryGroupedObject = createGlossaryGroupedObject(glossaryObject);
   const nodes = document.getElementsByClassName('js-initGlossary');
+  const { phrase } = parse(location.search);
 
   if (nodes.length > 0) {
     for (let i = 0; i < nodes.length; i++) {
-      render(<GlossaryContainer glossaryObject={glossaryGroupedObject} />, nodes[i]);
+      render(<GlossaryContainer glossaryObject={glossaryGroupedObject} {...{ phrase }} />, nodes[i]);
     }
   }
 }

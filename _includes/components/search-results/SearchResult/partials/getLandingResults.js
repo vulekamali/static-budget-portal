@@ -2,6 +2,7 @@ import fetchWrapper from './../../../../utilities/js/helpers/fetchWrapper.js';
 import normaliseServerResponse from './normaliseServerResponse.js';
 import highlightResults from './highlightResults.js';
 import createPromiseToken from './../../../../utilities/js/helpers/createPromiseToken.js';
+import parseStaticResponse from './parseStaticResponse.js';
 
 
 export default function getLandingResults(phrase, year) {
@@ -44,13 +45,12 @@ export default function getLandingResults(phrase, year) {
           staticContent,
         ] = returnArr;
 
-        console.log(staticContent);
-
         const resultsArr = [rawNational, rawProvincial, rawContributed].map(normaliseServerResponse);
         const [national, provincial, contributed] = resultsArr.map(item => highlightResults(item, phrase));
 
         const nationalOtherYears = normaliseOtherYears(rawNationalOtherYears, 'national');
         const provincialOtherYears = normaliseOtherYears(rawProvincialOtherYears, 'provincial');
+        const { videos, glossary } = parseStaticResponse(phrase, staticContent.videos, staticContent.glossary);
 
         resolve(
           {
@@ -63,6 +63,8 @@ export default function getLandingResults(phrase, year) {
               otherYears: provincialOtherYears,
             },
             contributed,
+            videos,
+            glossary,
           },
         );
       })

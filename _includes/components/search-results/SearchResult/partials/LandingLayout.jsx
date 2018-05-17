@@ -37,10 +37,11 @@ export default function LandingLayout({ items: rawItems, year, error, updateTab 
   const provincial = items.provincial || {};
   const national = items.national || {};
   const contributed = items.contributed || {};
+  const { videos, glossary } = rawItems;
 
   return (
     <div>
-      <StaticContent />
+      <StaticContent {...{ videos, glossary }} />
 
       <div className="u-marginBottom20">
         {buildHeading(year, 'cso', contributed.count, updateTab)}
