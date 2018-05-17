@@ -54,7 +54,7 @@ export default function SearchPage(props) {
   const loader = <div className="Loader u-marginTop50 u-marginLeftAuto u-marginRightAuto" />;
 
   return (
-    <div className="SearchPage">
+    <div className="SearchResult">
       <div className="Page-title u-textAlignCenter">Search results for &quot;{phrase}&quot;</div>
       <TabSelection {...{ tab, updateTab, tabOptions }} />
       {loading ? loader : determineLayout(tab)}

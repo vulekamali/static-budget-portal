@@ -25,10 +25,12 @@ class VideosContainer extends Component {
   componentWillMount() {
     const { phrase } = this.props;
 
-    this.setState({
-      currentPhrase: phrase,
-      currentItems: this.filterItems(phrase),
-    });
+    if (phrase) {
+      this.setState({
+        currentPhrase: phrase,
+        currentItems: this.filterItems(phrase),
+      });
+    }
   }
 
 

@@ -63,10 +63,17 @@ const buildVideo = ({ title, url, count, id }, total) => {
 
   return (
     <div className={itemCss}>
-      <div className="Section is-invisible">
-        <div className="Section-title">{ title }</div>
-        <img className="u-widthFull u-borderRadius10" alt="" src={`https://img.youtube.com/vi/${id}/mqdefault.jpg`} />
-        <div className="u-textAlignCenter">
+      <div className="Section is-invisible u-textAlignCenter">
+        <div className="Section-title" dangerouslySetInnerHTML={{ __html: title }} />
+        <a className="SearchResult-thumbnailWrap" href={url}>
+          <div className="SearchResult-iconWrap">
+            <svg version="1.2" className="SearchResult-icon" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <path d="M85.9 48L16.9.4c-.7-.5-1.7-.6-2.5-.1-.8.4-1.3 1.2-1.3 2.1v95.2c0 .9.5 1.7 1.3 2.1.3.2.7.3 1.1.3a2 2 0 0 0 1.3-.4l69-47.6c.7-.4 1-1.2 1-2 .1-.8-.3-1.5-.9-2zm0 0" />
+            </svg>
+          </div>
+          <img className="SearchResult-thumbnail" src={`https://img.youtube.com/vi/${id}/mqdefault.jpg`} alt="" />
+        </a>
+        <div>
           {buildButton(url, count)}
         </div>
       </div>
@@ -74,8 +81,8 @@ const buildVideo = ({ title, url, count, id }, total) => {
   );
 };
 
-export default function StaticContent({ video, glossary }) {
-  const total = compact([video, glossary]).length;
+export default function StaticContent({ videos, glossary }) {
+  const total = compact([videos, glossary]).length;
 
   if (total < 1) {
     return null;
@@ -85,7 +92,7 @@ export default function StaticContent({ video, glossary }) {
     <div className="Grid has-standardTrigger">
       <div className="Grid-inner">
         {glossary ? buildGlossary(glossary, total) : null}
-        {video ? buildVideo(video, total) : null}
+        {videos ? buildVideo(videos, total) : null}
       </div>
     </div>
   );

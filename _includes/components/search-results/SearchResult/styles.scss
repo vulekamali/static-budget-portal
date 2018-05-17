@@ -1,8 +1,8 @@
-.SearchPage {
+.SearchResult {
   min-height: 1000px;
 }
 
-.SearchPage-tabWrap {
+.SearchResult-tabWrap {
   position: relative;
   font-weight: bold;
   width: 100%;
@@ -22,12 +22,12 @@
   }
 }
 
-.SearchPage-tabList {
+.SearchResult-tabList {
   display: flex;
   justify-content: space-around;
 }
 
-.SearchPage-tabItem {
+.SearchResult-tabItem {
   position: relative;
   z-index: 99999;
   padding: 7px 15px;
@@ -108,4 +108,76 @@
     text-align: left;
     width: auto;
   }
+}
+
+.SearchResult-icon {
+  fill: white;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 16px;
+  left: 4px;
+}
+
+.SearchResult-iconWrap {
+  width: 60px;
+  height: 60px;
+  background: grey;
+  top: 50%;
+  top: calc(50% - 30px);
+  left: 50%;
+  left: calc(50% - 30px);
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    top: calc(50% - 32px);
+    left: 50%;
+    left: calc(50% - 32px);
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid grey;
+    opacity: 0.8;
+    transition: transform 0.4s, opacity 0.3s;
+  }
+
+  .SearchResult-thumbnailWrap:hover &::before {
+    transform: scale(1.2);
+    opacity: 0.4;
+  }
+}
+
+.SearchResult-thumbnailWrap {
+  display: block;
+  width: 100%;
+  max-width: 245.99px;
+  vertical-align: top;
+  background: black;
+  line-height: 0;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 auto;
+
+  &:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+}
+
+.SearchResult-thumbnail {
+  width: 100%;
 }

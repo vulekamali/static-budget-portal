@@ -25,6 +25,8 @@ const buildResult = (phrase, videosResult, glossaryResult) => {
       return null;
     }
 
+    const languages = array[0].languages;
+
     return {
       count: array.length,
       title: wrapStringPhrases(array[0].title, phraseArray, wrapFn),
@@ -32,6 +34,7 @@ const buildResult = (phrase, videosResult, glossaryResult) => {
       url: `/videos?phrase=${phrase}`,
       open: false,
       languages: array[0].languages,
+      id: languages[(Object.keys(languages)[0])],
     };
   };
 
