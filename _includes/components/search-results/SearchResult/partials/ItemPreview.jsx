@@ -8,7 +8,7 @@ const createLinkText = (sphere, string) => {
     case 'cso': return string;
     default: return null;
   }
-}
+};
 
 const buildSnippet = (snippet, tab) => {
   if (tab === 'cso' && !snippet.organization) {

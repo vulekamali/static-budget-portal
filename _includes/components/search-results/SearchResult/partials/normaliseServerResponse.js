@@ -3,14 +3,14 @@ import extractSnippet from './extractSnippet.js';
 
 
 const normaliseDepartmentItem = (item) => {
-  const { extras, province, financial_year: financialYear, organization = {}, title: rawTitle } = item;
+  const { extras, province, financial_year: financialYear, organization = {}, title: rawTitle, name } = item;
 
   const getExtrasValue = (key) => {
     const obj = find(extras, extra => extra.key === key) || { value: null };
     return obj.value;
   };
 
-  const isOfficial = organization.title === 'National Treasury';
+  const isOfficial = organization.name === 'national-treasury';
 
   const year = financialYear[0];
   const region = getExtrasValue('geographic_region_slug');
@@ -21,13 +21,11 @@ const normaliseDepartmentItem = (item) => {
   const nameString = getExtrasValue('department_name');
   const snippet = extractSnippet(item);
 
-  const title = isOfficial ?
-    `${regionString} Department: ${nameString}` :
-    rawTitle;
+  const buildDeptName = () => `${regionString} Department: ${nameString}`;
+  const title = isOfficial ? buildDeptName() : rawTitle;
 
-  const url = isOfficial ?
-    `https://vulekamali.gov.za/${year}/${regionSlug}/departments/${nameSlug}` :
-    `/datasets/${name}`;
+  const buildDeptUrl = () => `https://vulekamali.gov.za/${year}/${regionSlug}/departments/${nameSlug}`;
+  const url = isOfficial ? buildDeptUrl() : `/datasets/${name}`;
 
   return { title, url, snippet, organisation: organization.title };
 };

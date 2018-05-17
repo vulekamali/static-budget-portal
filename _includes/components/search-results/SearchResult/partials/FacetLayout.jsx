@@ -31,7 +31,7 @@ export default function FacetLayout({ count, items: rawItems, year, tab, tabKey,
           <span>{tab} for {year}</span>
         </div>
       </div>
-      {items.map(({ title, url, snippet }) => <ItemPreview {...{ tab, url, title, snippet }} />)}
+      {items.map(({ title, url, snippet }) => <ItemPreview tab={tabKey} {...{ url, title, snippet }} />)}
     </div>
   );
 }
