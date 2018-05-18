@@ -38,5 +38,5 @@ import './components/about/Video/scripts.jsx';
 import './components/universal/Button/scripts.js';
 import './components/universal/Share/scripts.jsx';
 import './components/universal/ResponsiveChart/scripts.jsx';
-import './components/universal/Tooltip/scripts.js';
 import './components/universal/Comments/scripts.js';
+import './components/universal/Tooltip/scripts.js';

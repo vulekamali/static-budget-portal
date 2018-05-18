@@ -56,7 +56,7 @@ export default function ExpenditureChart(props) {
                     return (
                       <tr>
                         <td className="ExpenditureChart-cell">{val[0]}</td>
-                        <td className="ExpenditureChart-cell">{val[1]}</td>
+                        <td className="ExpenditureChart-cell js-tooltips">{val[1]}</td>
                       </tr>
                     );
                   })
