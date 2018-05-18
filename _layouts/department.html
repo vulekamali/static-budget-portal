@@ -62,6 +62,13 @@ layout: page-shell
               include components/department-budgets/ContributedData/index.html
               datasets=page_data.contributed_datasets
             %}
+
+            <div class="Section u-marginTop20">
+              <h2 class="Section-title">Discuss this dataset with others</h2>
+              <div data-enhance-component="Comments" data-url="https://vulekamali.gov.za{{ page_data.url_path }}">
+                <div id="discourse-comments"></div>
+              </div>
+            </div>
           </div>
           <div class="Grid-item is-2of3">
             <div class="Section is-bevel">
