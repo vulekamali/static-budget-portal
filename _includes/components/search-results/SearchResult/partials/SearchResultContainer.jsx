@@ -130,6 +130,7 @@ export default class SearchPageContainer extends Component {
   render() {
     const { phrase, year } = this.props;
     const { tab, items, loading, loadingPage, page, error } = this.state;
+
     const { updateTab, addPage } = this.events;
 
     return (

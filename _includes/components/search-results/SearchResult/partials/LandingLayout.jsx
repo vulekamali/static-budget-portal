@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import Section from './Section.jsx';
 import tabOptions from './tabOptions.json';
+import StaticContent from './StaticContent.jsx';
 
 
 const viewAll = (updateTabWrap, count) => {
@@ -36,9 +37,12 @@ export default function LandingLayout({ items: rawItems, year, error, updateTab 
   const provincial = items.provincial || {};
   const national = items.national || {};
   const contributed = items.contributed || {};
+  const { videos, glossary } = rawItems;
 
   return (
     <div>
+      <StaticContent {...{ videos, glossary }} />
+
       <div className="u-marginBottom20">
         {buildHeading(year, 'cso', contributed.count, updateTab)}
         <Section

@@ -53,6 +53,7 @@
 @import 'utilities/scss/utility-classes/u-textDecoration';
 @import 'utilities/scss/utility-classes/u-lineHeight';
 @import 'utilities/scss/utility-classes/u-cursor';
+@import 'utilities/scss/utility-classes/u-borderRadius';
 
 @import 'components/universal/BarChart/styles';
 @import 'components/universal/Button/styles';
@@ -70,6 +71,7 @@
 @import 'components/universal/Highlight/styles';
 @import 'components/universal/Loader/styles';
 @import 'components/universal/Fineprint/styles';
+@import 'components/universal/Dropdown/styles';
 
 @import 'components/homepage/ApiCta/styles';
 @import 'components/homepage/Circles/styles';
@@ -120,4 +122,3 @@
 @import 'components/about/Contacts/styles';
 @import 'components/about/Progress/styles';
 @import 'components/about/Stages/styles';
-@import 'components/about/Video/styles';
