@@ -38,8 +38,5 @@ import './components/universal/Button/scripts.js';
 import './components/universal/Share/scripts.jsx';
 import './components/universal/ResponsiveChart/scripts.jsx';
 import './components/universal/Comments/scripts.js';
-<<<<<<< HEAD
 import './components/universal/Participate/scripts.jsx';
-=======
 import './components/universal/Tooltip/scripts.js';
->>>>>>> 5af0d4c3c22119284953f44cb2ec15ac0f5111b6
