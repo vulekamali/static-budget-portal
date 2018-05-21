@@ -27,7 +27,6 @@ import './components/header-and-footer/Modals/scripts.jsx';
 import './components/department-budgets/ProgrammesChart/scripts.jsx';
 import './components/department-budgets/ExpenditureChart/scripts.jsx';
 import './components/department-budgets/DeptSearch/scripts.jsx';
-import './components/department-budgets/Participate/scripts.jsx';
 import './components/department-budgets/IntroSection/scripts.jsx';
 
 import './components/contributed-data/CsoPreview/scripts.js';
@@ -39,4 +38,5 @@ import './components/universal/Button/scripts.js';
 import './components/universal/Share/scripts.jsx';
 import './components/universal/ResponsiveChart/scripts.jsx';
 import './components/universal/Comments/scripts.js';
+import './components/universal/Participate/scripts.jsx';
 import './components/universal/Tooltip/scripts.js';
