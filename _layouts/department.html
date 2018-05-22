@@ -62,13 +62,6 @@ layout: page-shell
               include components/department-budgets/ContributedData/index.html
               datasets=page_data.contributed_datasets
             %}
-
-            <div class="Section u-marginTop20">
-              <h2 class="Section-title">Discuss this budget with others</h2>
-              <div data-enhance-component="Comments" data-url="https://vulekamali.gov.za{{ page_data.url_path }}">
-                <div id="discourse-comments"></div>
-              </div>
-            </div>
           </div>
           <div class="Grid-item is-2of3">
             <div class="Section is-bevel">
@@ -85,6 +78,13 @@ layout: page-shell
                   link="/resources"
                   title="Explore more resources on the budget process and participation"
                 %}
+              </div>
+            </div>
+
+            <div class="Section u-marginTop20">
+              <h2 class="Section-title">Discuss this budget with others</h2>
+              <div data-enhance-component="Comments" data-url="https://vulekamali.gov.za{{ page_data.url_path }}">
+                <div id="discourse-comments"></div>
               </div>
             </div>
           </div>
