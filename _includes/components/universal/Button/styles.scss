@@ -12,6 +12,7 @@
   fill: white;
   text-decoration: none;
   display: block;
+  line-height: 1;
 
   @supports (display: flex) {
     display: flex;
