@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Western Cape department: Agriculture budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 514559000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 555633000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 608862000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 862690000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 742261000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 786590000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 830241000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 711712200
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 728168349
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 754062234
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1011514912
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 827551493
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 825036942
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 830241000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -112,21 +67,21 @@ is_vote_primary: true
 name: Agriculture
 programmes:
 - name: Administration
-  total_budget: 124163000.0
+  total_budget: null
 - name: Sustainable Resource Management
-  total_budget: 75212000.0
+  total_budget: null
 - name: Farmer Support and Development
-  total_budget: 256923000.0
+  total_budget: null
 - name: Veterinary Services
-  total_budget: 76223000.0
+  total_budget: null
 - name: Research and Technology Development Services
-  total_budget: 108825000.0
+  total_budget: null
 - name: Agricultural Economics Services
-  total_budget: 22838000.0
+  total_budget: null
 - name: Structured Agricultural Education and Training
-  total_budget: 56967000.0
+  total_budget: null
 - name: Rural Development
-  total_budget: 21110000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: agriculture

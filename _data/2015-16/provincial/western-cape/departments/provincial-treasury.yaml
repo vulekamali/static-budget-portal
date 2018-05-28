@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Western Cape department: Provincial Treasury budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 142619000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 162283000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 199967000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 239168000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 262029000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 278733000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 325607000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 197263447
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 212675172
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 247654744
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 280427498
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 292137792
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 292356910
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 325607000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -90,13 +45,13 @@ is_vote_primary: true
 name: Provincial Treasury
 programmes:
 - name: Administration
-  total_budget: 52058000.0
+  total_budget: null
 - name: Sustainable Resource Management
-  total_budget: 116418000.0
+  total_budget: null
 - name: Asset Management
-  total_budget: 60078000.0
+  total_budget: null
 - name: Financial Governance
-  total_budget: 33475000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: provincial-treasury

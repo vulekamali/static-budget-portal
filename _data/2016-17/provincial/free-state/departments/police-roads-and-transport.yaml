@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Free State department: Police, Roads and Transport budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1927682000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 2190213000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2401921000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2408003000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 2586841000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 2732693000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 2869303000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 2526266474
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 2712530767
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2816282686
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2684697808
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 2713280603
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 2732693000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 2719934676
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -92,16 +47,16 @@ intro: "## Vision\n\nContribute towards the creation of a prosperous Free State 
 is_vote_primary: true
 name: Police, Roads and Transport
 programmes:
-- name: ADMINISTRATION
-  total_budget: 258852000.0
-- name: PROVINCIAL SECRETARIAT FOR POLICE SERVICES
-  total_budget: 23674000.0
-- name: TRANSPORT OPERATIONS
-  total_budget: 320631000.0
-- name: TRANSPORT REGULATIONS
-  total_budget: 332634000.0
-- name: TRANSPORT INFRASTRUCTURE
-  total_budget: 1651050000.0
+- name: Administration
+  total_budget: null
+- name: Provincial Secretariat For Police Services
+  total_budget: null
+- name: Transport Operations
+  total_budget: null
+- name: Transport Regulations
+  total_budget: null
+- name: Transport Infrastructure
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: police-roads-and-transport

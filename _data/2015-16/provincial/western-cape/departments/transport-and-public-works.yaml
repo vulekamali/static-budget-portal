@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Western Cape department: Transport and Public Works budget data for
   the 2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 4366411000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 4704658000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 5017988000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 5949693000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 6760391000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 7103663000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 6859717000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 6039400692
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 6165550013
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 6214668089
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 6976090131
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 7537202777
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 7450875810
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 6859717000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -97,17 +52,17 @@ is_vote_primary: true
 name: Transport and Public Works
 programmes:
 - name: Administration
-  total_budget: 238065000.0
+  total_budget: null
 - name: Public Works Infrastructure
-  total_budget: 1765632000.0
+  total_budget: null
 - name: Transport Infrastructure
-  total_budget: 3124066000.0
+  total_budget: null
 - name: Transport Operations
-  total_budget: 957501000.0
+  total_budget: null
 - name: Transport Regulation
-  total_budget: 617009000.0
+  total_budget: null
 - name: Community Based Programmes
-  total_budget: 58118000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: transport-and-public-works

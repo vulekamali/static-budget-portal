@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Limpopo department: Social Development budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1168019000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1197232000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1324137000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1476438000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1537758000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1627183000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1706208000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1615545297
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1568996890
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1639914635
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1731142188
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1714456141
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1706716443
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1706208000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -79,15 +34,15 @@ is_vote_primary: true
 name: Social Development
 programmes:
 - name: Administration
-  total_budget: 295681000.0
+  total_budget: null
 - name: Social Welfare Services
-  total_budget: 223108000.0
+  total_budget: null
 - name: Children And Families
-  total_budget: 654000000.0
+  total_budget: null
 - name: Restorative Services
-  total_budget: 207000000.0
+  total_budget: null
 - name: Development And Research
-  total_budget: 157969000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: social-development

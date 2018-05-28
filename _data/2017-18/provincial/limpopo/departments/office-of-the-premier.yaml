@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Limpopo department: Office of the Premier budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 325295000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 340862000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 340674000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 379766000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 395789000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 414480000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 438520000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 402870723
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 399664996
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 379819601
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 398328200
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 395789000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 392903267
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 394802036
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -87,11 +42,11 @@ is_vote_primary: true
 name: Office of the Premier
 programmes:
 - name: Administration
-  total_budget: 150425000.0
+  total_budget: null
 - name: Institutional Support
-  total_budget: 149333000.0
+  total_budget: null
 - name: Policy & Governance
-  total_budget: 96031000.0
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: office-of-the-premier

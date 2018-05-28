@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Gauteng department: Office of the Premier budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 274010000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 290566000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 461791000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 387416000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 425455000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 449419000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 472724000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 378996888
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 380792653
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 571918026
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 454250149
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 474342476
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 471385699
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 472724000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -91,11 +46,11 @@ is_vote_primary: true
 name: Office of the Premier
 programmes:
 - name: Administration
-  total_budget: 97360000.0
+  total_budget: null
 - name: Institutional Development
-  total_budget: 194816000.0
+  total_budget: null
 - name: Policy & Governance
-  total_budget: 133279000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: office-of-the-premier

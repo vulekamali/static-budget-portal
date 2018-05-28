@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'North West department: Community Safety and Transport Management budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1220706000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1333344000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1388534000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1585927000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1831742000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1917999000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 2038063000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1688419313
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1747374435
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1719668907
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1859519423
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 2042220766
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 2011746946
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 2038063000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -81,15 +36,15 @@ is_vote_primary: true
 name: Community Safety and Transport Management
 programmes:
 - name: Administration
-  total_budget: 208957000.0
+  total_budget: null
 - name: Civillian Oversight
-  total_budget: 44182000.0
+  total_budget: null
 - name: Transport Regulations
-  total_budget: 602374000.0
+  total_budget: null
 - name: Crime Prevention and Community Safety
-  total_budget: 0.0
+  total_budget: null
 - name: Transport Operations
-  total_budget: 976229000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: community-safety-and-transport-management

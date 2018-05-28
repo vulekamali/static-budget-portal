@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Limpopo department: Co-operative Governance, Human Settlements and Traditional
   Affairs budget data for the 2015-16 financial year from National Treasury in partnership
   with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1917110000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 2124385000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1186638000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2335016000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 2269327000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 2355545000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 2458137000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 2651650396
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 2784049757
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1469625139
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2737835729
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 2530087056
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 2470679318
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 2458137000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -89,13 +44,13 @@ is_vote_primary: true
 name: Co-operative Governance, Human Settlements and Traditional Affairs
 programmes:
 - name: Administration
-  total_budget: 286698000.0
+  total_budget: null
 - name: Human Settlements
-  total_budget: 1384643000.0
+  total_budget: null
 - name: Coorperative Governance
-  total_budget: 248724000.0
+  total_budget: null
 - name: Traditional Institutional Development
-  total_budget: 349262000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: co-operative-governance-human-settlements-and-traditional-affairs

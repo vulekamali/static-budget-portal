@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Limpopo department: Economic Development, Environment and Tourism budget
   data for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1071242000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1112393000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1153443000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1350120000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1500308000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 1293355000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 1368375000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 1326709723
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1304294831
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1285980911
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1416111159
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1500308000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 1226026360
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 1231955753
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,14 +48,14 @@ intro: "## Vision\r\n\r\nA competitive economy within a sustainable environment.
 is_vote_primary: true
 name: Economic Development, Environment and Tourism
 programmes:
-- name: ADMINISTRATION
-  total_budget: 363183000.0
-- name: ECONOMIC DEVELOPMENT
-  total_budget: 620068000.0
-- name: ENVIRONMENTAL AFFAIRS
-  total_budget: 374820000.0
-- name: TOURISM
-  total_budget: 142237000.0
+- name: Administration
+  total_budget: null
+- name: Economic Development
+  total_budget: null
+- name: Environmental Affairs
+  total_budget: null
+- name: Tourism
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: economic-development-environment-and-tourism

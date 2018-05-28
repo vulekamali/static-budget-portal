@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Eastern Cape department: Safety and Liaison budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 62207000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 69316000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 83058000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 86992000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 89275000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 93133000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 99365000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 81523538
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 85846345
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 97386553
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 96987932
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 93638583
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 93133000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 94192320
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -84,9 +39,9 @@ is_vote_primary: true
 name: Safety and Liaison
 programmes:
 - name: Administration
-  total_budget: 48517000.0
+  total_budget: null
 - name: Civilian Oversight
-  total_budget: 40758000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: safety-and-liaison

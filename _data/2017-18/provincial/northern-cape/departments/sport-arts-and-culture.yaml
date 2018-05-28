@@ -11,52 +11,7 @@ contributed_datasets:
   url_path: /datasets/budget-brief-eastern-cape-department-of-education-2016-17
 description: 'Northern Cape department: Sport, Arts and Culture budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 256651000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 286874000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 337900000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 361046000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 371088000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 371753000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 367875000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 317856634
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 336363385
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 376726851
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 378693204
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 371088000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 352400522
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 331199943
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -113,13 +68,13 @@ is_vote_primary: true
 name: Sport, Arts and Culture
 programmes:
 - name: Administration
-  total_budget: 73673000.0
+  total_budget: null
 - name: Cultural Affairs
-  total_budget: 63132000.0
+  total_budget: null
 - name: Library and Archives Services
-  total_budget: 180953000.0
+  total_budget: null
 - name: Sport and Recreation
-  total_budget: 53330000.0
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: sport-arts-and-culture

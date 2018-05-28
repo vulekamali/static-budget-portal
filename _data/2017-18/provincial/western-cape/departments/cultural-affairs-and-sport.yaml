@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Western Cape department: Cultural Affairs and Sport budget data for
   the 2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 453573000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 612490000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 685544000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 730472000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 725049000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 742068000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 739172000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 561740213
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 718152255
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 764317350
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 766176007
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 725049000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 703437903
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 665480733
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -96,13 +51,13 @@ is_vote_primary: true
 name: Cultural Affairs and Sport
 programmes:
 - name: Administration
-  total_budget: 63304000.0
+  total_budget: null
 - name: Cultural Affairs
-  total_budget: 106145000.0
+  total_budget: null
 - name: Library and Archive Services
-  total_budget: 374646000.0
+  total_budget: null
 - name: Sport and Recreation
-  total_budget: 180954000.0
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: cultural-affairs-and-sport

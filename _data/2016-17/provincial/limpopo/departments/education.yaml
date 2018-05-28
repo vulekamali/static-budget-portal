@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Limpopo department: Education budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 21008469000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 22647979000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 24419274000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 25284705000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 27171746000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 28092167000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 29512120000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 27532025988
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 28049025305
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 28631906954
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 28190077874
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 28499846485
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 28092167000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 27975797106
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -96,19 +51,19 @@ is_vote_primary: true
 name: Education
 programmes:
 - name: Administration
-  total_budget: 1695879000.0
+  total_budget: null
 - name: Public Ordinary School Education
-  total_budget: 23373162000.0
+  total_budget: null
 - name: Independent School Subsidies
-  total_budget: 121736000.0
+  total_budget: null
 - name: Public Special School Education
-  total_budget: 448754000.0
+  total_budget: null
 - name: Early Childhood Development
-  total_budget: 174218000.0
+  total_budget: null
 - name: Infrastructure Development
-  total_budget: 946610000.0
+  total_budget: null
 - name: Examination And Education Related Services
-  total_budget: 411387000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: education

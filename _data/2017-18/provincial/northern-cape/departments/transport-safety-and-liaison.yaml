@@ -14,52 +14,7 @@ contributed_datasets:
 description: 'Northern Cape department: Transport, Safety and Liaison budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 310301000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 383975000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 353227000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 374926000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 388899000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 407926000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 431482000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 384300983
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 450215533
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 393815021
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 393251631
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 388899000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 386690451
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 388465685
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -106,13 +61,13 @@ is_vote_primary: true
 name: Transport, Safety and Liaison
 programmes:
 - name: Administration
-  total_budget: 78031000.0
+  total_budget: null
 - name: Civilian Oversight
-  total_budget: 28141000.0
+  total_budget: null
 - name: Transport Operations
-  total_budget: 196801000.0
+  total_budget: null
 - name: Transport Regulations
-  total_budget: 85926000.0
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: transport-safety-and-liaison

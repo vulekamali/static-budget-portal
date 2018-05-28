@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Gauteng department: E-Government budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1023102000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1213739000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1154906000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1263186000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1356832000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 1168427000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 1231414000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 1267089389
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1423124295
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1287612019
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1324927999
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1356832000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 1107601781
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 1108648990
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -88,11 +43,11 @@ is_vote_primary: true
 name: E-Government
 programmes:
 - name: Administration
-  total_budget: 239764000.0
+  total_budget: null
 - name: Information Communication Technology(ICT) Shared Services
-  total_budget: 1003224000.0
+  total_budget: null
 - name: Human Resources Services
-  total_budget: 113844000.0
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: e-government

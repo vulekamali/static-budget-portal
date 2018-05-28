@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Mpumalanga department: Public Works, Roads and Transport budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 3534642000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 3523082000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 3947153000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 4241591000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 4358045000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 4440856000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 4909739000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 4888939530
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 4617070629
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 4888462426
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 4973318979
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 4858811994
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 4657916140
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 4909739000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -82,15 +37,15 @@ is_vote_primary: true
 name: Public Works, Roads and Transport
 programmes:
 - name: Administration
-  total_budget: 235636000.0
+  total_budget: null
 - name: Public Works Infrastructure
-  total_budget: 710200000.0
+  total_budget: null
 - name: Transport Infrastructure
-  total_budget: 2285291000.0
+  total_budget: null
 - name: Transport Operations
-  total_budget: 1060749000.0
+  total_budget: null
 - name: Community Based Programmes
-  total_budget: 66169000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: public-works-roads-and-transport

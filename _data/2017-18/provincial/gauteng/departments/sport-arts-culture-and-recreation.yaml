@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Gauteng department: Sport, Arts, Culture and Recreation budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 519602000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 642606000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 704333000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 849001000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 875336000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 932302000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 1006853000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 643515681
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 753463645
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 785265326
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 890498467
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 875336000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 883768824
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 906475451
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -92,14 +47,14 @@ intro: "## Vision \n\nAn active ,creative and modernized Gauteng City Region (GC
 is_vote_primary: true
 name: Sport, Arts, Culture and Recreation
 programmes:
-- name: ADMINISTRATION
-  total_budget: 117120000.0
-- name: CULTURAL AFFAIRS
-  total_budget: 190423000.0
-- name: LIBRARY AND ARCHIVES SERVICES
-  total_budget: 280610000.0
-- name: SPORT AND RECREATION
-  total_budget: 287183000.0
+- name: Administration
+  total_budget: null
+- name: Cultural Affairs
+  total_budget: null
+- name: Library And Archives Services
+  total_budget: null
+- name: Sport And Recreation
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: sport-arts-culture-and-recreation

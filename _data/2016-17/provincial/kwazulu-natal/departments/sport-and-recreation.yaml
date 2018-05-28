@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'KwaZulu-Natal department: Sport and Recreation budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 367751000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 414968000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 451245000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 437827000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 426479000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 438628000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 453016000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 481945166
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 513928767
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 529090457
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 488136097
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 447324438
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 438628000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 429433185
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -103,9 +58,9 @@ is_vote_primary: true
 name: Sport and Recreation
 programmes:
 - name: Administration
-  total_budget: 83462000.0
+  total_budget: null
 - name: Sport and Recreation
-  total_budget: 343017000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: sport-and-recreation

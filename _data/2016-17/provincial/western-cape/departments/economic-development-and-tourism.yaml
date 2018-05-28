@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Western Cape department: Economic Development and Tourism budget data
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 289319000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 336282000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 469906000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 405354000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 486769000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 396306000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 419647000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 379158434
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 416477882
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 550970715
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 451931743
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 510561293
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 396306000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 397801287
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -104,19 +59,19 @@ is_vote_primary: true
 name: Economic Development and Tourism
 programmes:
 - name: Administration
-  total_budget: 49919000.0
+  total_budget: null
 - name: Integrated Economic Development Services
-  total_budget: 40938000.0
+  total_budget: null
 - name: Trade and Sector Development
-  total_budget: 59586000.0
+  total_budget: null
 - name: Business Regulation and Governance
-  total_budget: 11311000.0
+  total_budget: null
 - name: Economic Planning
-  total_budget: 215185000.0
+  total_budget: null
 - name: Tourism Arts and Entertainment
-  total_budget: 46588000.0
+  total_budget: null
 - name: Skills Development and Innovation
-  total_budget: 63242000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: economic-development-and-tourism

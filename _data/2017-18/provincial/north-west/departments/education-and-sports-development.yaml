@@ -12,52 +12,7 @@ contributed_datasets:
 description: 'North West department: Education and Sports Development budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 11679448000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 12077940000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 13109934000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 14262562000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 15281697000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 16261250000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 17398783000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 14464740209
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 14161537082
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 14616348515
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 14959687445
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 15281697000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 15414732343
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 15664222759
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -127,21 +82,21 @@ is_vote_primary: true
 name: Education and Sports Development
 programmes:
 - name: Administration
-  total_budget: 869139000.0
+  total_budget: null
 - name: Public Ordinary School Education
-  total_budget: 11294382000.0
+  total_budget: null
 - name: Independent School Subsidies
-  total_budget: 29613000.0
+  total_budget: null
 - name: Public Special School Education
-  total_budget: 561668000.0
+  total_budget: null
 - name: Early Childhood Development
-  total_budget: 586060000.0
+  total_budget: null
 - name: Infrastructure Development
-  total_budget: 1076331000.0
+  total_budget: null
 - name: Examination and Education Related Services
-  total_budget: 732918000.0
+  total_budget: null
 - name: Sport and Recreation
-  total_budget: 131586000.0
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: education-and-sports-development

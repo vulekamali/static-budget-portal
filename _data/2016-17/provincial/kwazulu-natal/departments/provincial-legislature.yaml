@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'KwaZulu-Natal department: Provincial Legislature budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 431718000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 460929000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 476027000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 479262000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 518652000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 538851000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 569128000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 565775221
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 570850457
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 558147665
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 534332241
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 544002670
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 538851000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 539500701
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -90,11 +45,11 @@ is_vote_primary: true
 name: Provincial Legislature
 programmes:
 - name: Administration
-  total_budget: 171165000.0
+  total_budget: null
 - name: Parliamentary Business
-  total_budget: 269697000.0
+  total_budget: null
 - name: Direct charge against the Provincial Revenue Fund
-  total_budget: 77790000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: provincial-legislature

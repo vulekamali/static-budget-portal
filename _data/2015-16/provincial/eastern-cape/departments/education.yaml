@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Eastern Cape department: Education budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 24170055000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 25185436000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 26779366000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 27571607000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 29438366000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 30462019000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 31677061000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 33430807796
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 33006026211
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 33165657500
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 32328057181
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 32821020851
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 31950941435
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 31677061000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -86,23 +41,23 @@ is_vote_primary: true
 name: Education
 programmes:
 - name: Administration
-  total_budget: 2369701000.0
+  total_budget: null
 - name: Public Ordinary School Education
-  total_budget: 23633798000.0
+  total_budget: null
 - name: Independent School Subsidies
-  total_budget: 117527000.0
+  total_budget: null
 - name: Public Special School Education
-  total_budget: 582813000.0
+  total_budget: null
 - name: Further Education and Training
-  total_budget: 0.0
+  total_budget: null
 - name: Adult Basic Education and Training
-  total_budget: 0.0
+  total_budget: null
 - name: Early Childhood Development
-  total_budget: 598206000.0
+  total_budget: null
 - name: Infrastructure Development
-  total_budget: 1823877000.0
+  total_budget: null
 - name: Examination and Education Related Services
-  total_budget: 312444000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: education

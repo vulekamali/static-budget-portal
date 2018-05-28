@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'KwaZulu-Natal department: Public Works budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1133311000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1270253000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1388082000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1412938000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1432608000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1503706000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1590995000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 1485227119
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1573180482
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1627543663
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1575293532
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1502631007
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1503706000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1508172009
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -88,12 +43,12 @@ intro: "## Vision\n\nThe department\u2019s vision is: An inclusive economy throu
 is_vote_primary: true
 name: Public Works
 programmes:
-- name: 1. Administration
-  total_budget: 359425000.0
-- name: 2. Property Management
-  total_budget: 647907000.0
-- name: 3. Provision of Buildings, Structures and Equipment
-  total_budget: 425276000.0
+- name: Administration
+  total_budget: null
+- name: Property Management
+  total_budget: null
+- name: Provision of Buildings, Structures and Equipment
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: public-works

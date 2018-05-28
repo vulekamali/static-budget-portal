@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'KwaZulu-Natal department: Provincial Treasury budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 557733000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 624333000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 673962000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 717869000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 675280000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 659029000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 688508000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 730920442
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 773222728
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 790228950
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 800356698
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 708286332
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 659029000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 652666094
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,15 +48,15 @@ is_vote_primary: true
 name: Provincial Treasury
 programmes:
 - name: Administration
-  total_budget: 134552000.0
+  total_budget: null
 - name: Fiscal Resource Management
-  total_budget: 103056000.0
+  total_budget: null
 - name: Financial Management
-  total_budget: 295563000.0
+  total_budget: null
 - name: Internal Audit
-  total_budget: 121683000.0
+  total_budget: null
 - name: Growth and Development
-  total_budget: 20426000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: provincial-treasury

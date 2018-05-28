@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Gauteng department: Gauteng Provincial Legislature budget data for the
   2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 376190000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 472005000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 473919000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 521768000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 600473000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 641675000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 673757000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 520327139
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 618572154
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 586938288
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 611779565
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 669471153
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 673038787
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 673757000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -91,15 +46,15 @@ is_vote_primary: true
 name: Gauteng Provincial Legislature
 programmes:
 - name: Leadership And Governance
-  total_budget: 44638000.0
+  total_budget: null
 - name: Office Of The Secretary
-  total_budget: 20692000.0
+  total_budget: null
 - name: Corporate Support Services
-  total_budget: 275632000.0
+  total_budget: null
 - name: Core Business
-  total_budget: 217462000.0
+  total_budget: null
 - name: Office of the CFO
-  total_budget: 42049000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: gauteng-provincial-legislature

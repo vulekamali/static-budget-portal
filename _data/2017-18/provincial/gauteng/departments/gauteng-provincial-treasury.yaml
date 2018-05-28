@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Gauteng department: Gauteng Provincial Treasury budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 429322000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 482189000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 555189000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 641552000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 712631000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 764512000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 813070000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 531705881
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 565372688
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 618983735
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 672909775
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 712631000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 724713527
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 732011520
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -98,17 +53,17 @@ is_vote_primary: true
 name: Gauteng Provincial Treasury
 programmes:
 - name: Administration
-  total_budget: 128921000.0
+  total_budget: null
 - name: Sustainable Fiscal  Resource Management
-  total_budget: 141751000.0
+  total_budget: null
 - name: Financial Governance
-  total_budget: 145586000.0
+  total_budget: null
 - name: Provincial Supply Chain Management
-  total_budget: 122614000.0
+  total_budget: null
 - name: Municipal Financial Governance
-  total_budget: 61380000.0
+  total_budget: null
 - name: Gauteng Audit Services
-  total_budget: 112379000.0
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: gauteng-provincial-treasury

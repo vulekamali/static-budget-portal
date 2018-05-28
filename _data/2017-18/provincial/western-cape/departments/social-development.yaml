@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Western Cape department: Social Development budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1580143000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1733842000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1892072000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1963864000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 2106974000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 2204487000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 2329657000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 1956972451
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2032951627
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2109483065
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2059853736
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 2106974000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 2089727238
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 2097403375
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -105,15 +60,15 @@ is_vote_primary: true
 name: Social Development
 programmes:
 - name: Administration
-  total_budget: 199813000.0
+  total_budget: null
 - name: Social Welfare Services
-  total_budget: 850242000.0
+  total_budget: null
 - name: Children and Families
-  total_budget: 651564000.0
+  total_budget: null
 - name: Restorative Services
-  total_budget: 348686000.0
+  total_budget: null
 - name: Development and Research
-  total_budget: 56669000.0
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: social-development

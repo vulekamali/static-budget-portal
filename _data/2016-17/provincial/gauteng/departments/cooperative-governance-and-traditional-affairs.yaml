@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Gauteng department: Cooperative Governance and Traditional Affairs budget
   data for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 208770000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 273657000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 283461000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 406577000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 418763000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 440221000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 466910000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 273597331
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 338918193
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 332361599
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 453295274
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 439231296
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 440221000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 442603900
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -98,13 +53,13 @@ is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 programmes:
 - name: Administration
-  total_budget: 123862000.0
+  total_budget: null
 - name: Local Governance
-  total_budget: 203090000.0
+  total_budget: null
 - name: Development Planning
-  total_budget: 81397000.0
+  total_budget: null
 - name: Traditional Institutional Management
-  total_budget: 10414000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: cooperative-governance-and-traditional-affairs

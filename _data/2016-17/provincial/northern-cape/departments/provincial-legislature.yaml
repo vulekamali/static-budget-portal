@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Northern Cape department: Provincial Legislature budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 117258000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 121891000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 131457000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 176082000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 143852000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 151339000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 160117000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 153668994
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 150959330
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 154134991
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 196314937
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 150883197
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 151339000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 151781732
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -87,11 +42,11 @@ is_vote_primary: true
 name: Provincial Legislature
 programmes:
 - name: Administration
-  total_budget: 56702000.0
+  total_budget: null
 - name: Facilities for Members and Political Parties
-  total_budget: 43460000.0
+  total_budget: null
 - name: Parliamentary Business
-  total_budget: 43690000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: provincial-legislature

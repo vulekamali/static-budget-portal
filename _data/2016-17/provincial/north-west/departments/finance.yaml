@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'North West department: Finance budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 261235000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 391185000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 421085000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 456002000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 485643000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 508287000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 535483000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 342353781
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 484474043
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 493727476
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 508399520
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 509380256
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 508287000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 507607171
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -89,13 +44,13 @@ is_vote_primary: true
 name: Finance
 programmes:
 - name: Administration
-  total_budget: 140649000.0
+  total_budget: null
 - name: Sustainable Resource Management
-  total_budget: 133232000.0
+  total_budget: null
 - name: Asset and Liabilities Management
-  total_budget: 51300000.0
+  total_budget: null
 - name: Financial Governance
-  total_budget: 160462000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: finance

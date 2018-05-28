@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Free State department: Police, Roads and Transport budget data for the
   2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1716893000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1927682000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 2190213000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2428898000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 2390930000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 2494981000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 2662115000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 2374720284
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 2526266474
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 2712530767
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2847913559
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 2665663012
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 2616930670
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 2662115000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -92,15 +47,15 @@ is_vote_primary: true
 name: Police, Roads and Transport
 programmes:
 - name: Administration
-  total_budget: 214456000.0
+  total_budget: null
 - name: Provincial Secretariat For Police Services
-  total_budget: 27806000.0
+  total_budget: null
 - name: Public, Roads And Transportoperations
-  total_budget: 291632000.0
+  total_budget: null
 - name: Public, Roads And Transportregulations
-  total_budget: 331159000.0
+  total_budget: null
 - name: Public, Roads And Transportinfrastructure
-  total_budget: 1525877000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: police-roads-and-transport

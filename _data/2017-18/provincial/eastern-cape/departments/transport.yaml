@@ -13,52 +13,7 @@ contributed_datasets:
   url_path: /datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 description: 'Eastern Cape department: Transport budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1517152000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1689901000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1711849000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1743698000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1843704000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 1940704000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 2070321000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 1878959479
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1981430250
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1908551300
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1828926463
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1843704000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 1839676083
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 1863921708
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -101,15 +56,15 @@ is_vote_primary: true
 name: Transport
 programmes:
 - name: Administration
-  total_budget: 309166000.0
+  total_budget: null
 - name: Transport Infrastructure
-  total_budget: 25079000.0
+  total_budget: null
 - name: Transport Operations
-  total_budget: 1125559000.0
+  total_budget: null
 - name: Transport Regulation
-  total_budget: 332869000.0
+  total_budget: null
 - name: Community Based Programme
-  total_budget: 51031000.0
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: transport

@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'North West department: Community Safety and Transport Management budget
   data for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1333344000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1388534000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1538857000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1881742000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1851672000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1971736000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 2085431000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 1747374435
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1719668907
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1804329254
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2097966083
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1942178016
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1971736000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1976868979
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -101,13 +56,13 @@ is_vote_primary: true
 name: Community Safety and Transport Management
 programmes:
 - name: Administration
-  total_budget: 205942000.0
+  total_budget: null
 - name: Civillian Oversight
-  total_budget: 45861000.0
+  total_budget: null
 - name: Transport Operations
-  total_budget: 1016986000.0
+  total_budget: null
 - name: Transport Regulations
-  total_budget: 582883000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: community-safety-and-transport-management

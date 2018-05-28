@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Gauteng department: Human Settlements budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 4186196000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 4421597000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 4546443000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 5114755000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 5939014000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 6187622000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 6414302000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 5790136343
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 5794592814
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 5630669948
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 5997114789
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 6621444353
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 6490060561
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 6414302000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -91,13 +46,13 @@ is_vote_primary: true
 name: Human Settlements
 programmes:
 - name: Administration
-  total_budget: 444995000.0
+  total_budget: null
 - name: Housing Needs, Research And Planning
-  total_budget: 29603000.0
+  total_budget: null
 - name: Housing Development
-  total_budget: 5363737000.0
+  total_budget: null
 - name: Housing Assets Management Property Management
-  total_budget: 100679000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: human-settlements

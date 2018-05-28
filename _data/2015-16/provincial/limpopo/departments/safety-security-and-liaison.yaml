@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Limpopo department: Safety, Security and Liaison budget data for the
   2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 53168000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 55170000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 62658000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 80496000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 90354000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 93542000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 98159000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 73539310
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 72301407
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 77600558
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 94382575
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 100736247
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 98114145
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 98159000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -86,11 +41,11 @@ is_vote_primary: true
 name: Safety, Security and Liaison
 programmes:
 - name: Administration
-  total_budget: 44387000.0
+  total_budget: null
 - name: Civilian Oversight
-  total_budget: 28316000.0
+  total_budget: null
 - name: Crime Prevention,  and Community Relations
-  total_budget: 17651000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: safety-security-and-liaison

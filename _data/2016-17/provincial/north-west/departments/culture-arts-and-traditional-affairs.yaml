@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'North West department: Culture, Arts and Traditional Affairs budget
   data for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 401064000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 450970000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 514094000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 654157000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 659665000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 717420000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 762489000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 525602530
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 558516454
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 602781703
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 729323785
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 691908103
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 717420000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 722795839
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -97,15 +52,15 @@ is_vote_primary: true
 name: Culture, Arts and Traditional Affairs
 programmes:
 - name: Administration
-  total_budget: 100998000.0
+  total_budget: null
 - name: Cultural Affairs
-  total_budget: 165185000.0
+  total_budget: null
 - name: Library and Archive Services
-  total_budget: 187660000.0
+  total_budget: null
 - name: Recreation
-  total_budget: 71340000.0
+  total_budget: null
 - name: Traditional Affairs
-  total_budget: 134482000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: culture-arts-and-traditional-affairs

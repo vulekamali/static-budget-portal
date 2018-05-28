@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Mpumalanga department: Community Safety, Security and Liaison budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 788630000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 844849000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1099184000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1019005000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1040184000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 933808000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1050815000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1090793461
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1107191800
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1361315278
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1194796223
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1159707734
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 979450663
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1050815000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -81,13 +36,13 @@ is_vote_primary: true
 name: Community Safety, Security and Liaison
 programmes:
 - name: Administration
-  total_budget: 133756000.0
+  total_budget: null
 - name: Civilian Oversight
-  total_budget: 57146000.0
+  total_budget: null
 - name: Transport Regulation
-  total_budget: 490306000.0
+  total_budget: null
 - name: Security  Management
-  total_budget: 358976000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: community-safety-security-and-liaison

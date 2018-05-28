@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Mpumalanga department: Culture, Sport and Recreation budget data for
   the 2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 361171000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 331730000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 373622000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 443576000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 454891000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 481863000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 534963000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 499553612
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 434738913
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 462722653
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 520098458
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 507160859
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 505415497
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 534963000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -79,13 +34,13 @@ is_vote_primary: true
 name: Culture, Sport and Recreation
 programmes:
 - name: Administration
-  total_budget: 81116000.0
+  total_budget: null
 - name: Cultural Affairs
-  total_budget: 88417000.0
+  total_budget: null
 - name: Library and Archives Services
-  total_budget: 195731000.0
+  total_budget: null
 - name: Sports and Recreation
-  total_budget: 89627000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: culture-sport-and-recreation

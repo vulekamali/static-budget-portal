@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Limpopo department: Health budget data for the 2016-17 financial year
   from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 12829996000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 13137862000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 14526110000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 15401793000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 16371023000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 17019294000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 18086454000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 16813970751
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 16270953964
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 17032047305
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 17171556641
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 17171205792
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 17019294000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 17144921052
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -97,21 +52,21 @@ is_vote_primary: true
 name: Health
 programmes:
 - name: Administration
-  total_budget: 281425000.0
+  total_budget: null
 - name: District Health Services
-  total_budget: 10250218000.0
+  total_budget: null
 - name: Emergency  Madical Services
-  total_budget: 686647000.0
+  total_budget: null
 - name: Provincial Hospital Services
-  total_budget: 2138443000.0
+  total_budget: null
 - name: Central Hospital Services
-  total_budget: 1593372000.0
+  total_budget: null
 - name: Health Sciences And Training
-  total_budget: 571492000.0
+  total_budget: null
 - name: Health Care Support Services
-  total_budget: 113758000.0
+  total_budget: null
 - name: Health Facilities Management
-  total_budget: 735668000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: health

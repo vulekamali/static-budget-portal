@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Free State department: Cooperative Governance and Traditional Affairs
   budget data for the 2016-17 financial year from National Treasury in partnership
   with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 300530000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 307106000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 364265000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 380315000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 407596000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 411525000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 430835000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 393850678
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 380344045
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 427105309
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 424015604
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 427518475
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 411525000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 408406869
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -117,15 +72,15 @@ is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 programmes:
 - name: Administration
-  total_budget: 133006000.0
+  total_budget: null
 - name: Local Governance
-  total_budget: 123111000.0
+  total_budget: null
 - name: Development and Planning
-  total_budget: 101696000.0
+  total_budget: null
 - name: Traditional Institutional Management
-  total_budget: 40115000.0
+  total_budget: null
 - name: House of Traditional Leaders
-  total_budget: 9668000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: cooperative-governance-and-traditional-affairs

@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Mpumalanga department: Social Development budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 928267000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1136357000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1220303000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1294698000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1454716000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1512590000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1615511000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 1216512786
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1407353223
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1430820668
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1443467006
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1525819602
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1512590000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1531411771
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -80,15 +35,15 @@ is_vote_primary: true
 name: Social Development
 programmes:
 - name: Administration
-  total_budget: 271198000.0
+  total_budget: null
 - name: Social Welfare Services
-  total_budget: 284642000.0
+  total_budget: null
 - name: Children and Families
-  total_budget: 543628000.0
+  total_budget: null
 - name: Restorative Services
-  total_budget: 158913000.0
+  total_budget: null
 - name: Development and Research
-  total_budget: 196335000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: social-development

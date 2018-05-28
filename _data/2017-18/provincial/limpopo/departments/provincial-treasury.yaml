@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Limpopo department: Provincial Treasury budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 358534000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 346305000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 363722000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 455241000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 474620000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 448617000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 474632000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 444036496
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 406046983
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 405515963
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 477492267
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 474620000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 425263185
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 427313874
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -103,13 +58,13 @@ is_vote_primary: true
 name: Provincial Treasury
 programmes:
 - name: Administration
-  total_budget: 174850000.0
+  total_budget: null
 - name: Sustainable Resource Management
-  total_budget: 119577000.0
+  total_budget: null
 - name: Assets, Liabilities & SCM
-  total_budget: 82940000.0
+  total_budget: null
 - name: Financial Governance
-  total_budget: 97253000.0
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: provincial-treasury

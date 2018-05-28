@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Northern Cape department: Environment and Nature Conservation budget
   data for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 117641000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 127586000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 133652000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 141678000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 148991000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 155954000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 164998000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 145695798
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 149596195
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 149009461
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 148602936
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 148991000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 147835447
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 148548632
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -90,18 +45,18 @@ intro: "## Vision\n\nA prosperous society living sustainably with the natural en
 is_vote_primary: true
 name: Environment and Nature Conservation
 programmes:
-- name: ADMINISTRATION
-  total_budget: 65019000.0
-- name: ENVIRONMENTAL POLICY,PLANNING AND COORDINATION
-  total_budget: 10773000.0
-- name: COMPLIANCE AND ENFORCEMENT
-  total_budget: 11176000.0
-- name: ENVIRONMENTAL QUALITY MANAGEMENT
-  total_budget: 14251000.0
-- name: BIODIVERSITY MANAGEMENT
-  total_budget: 34229000.0
-- name: ENVIRONMENTAL EMPOWERMENT SERVICES
-  total_budget: 13543000.0
+- name: Administration
+  total_budget: null
+- name: Environmental Policy,Planning And Coordination
+  total_budget: null
+- name: Compliance And Enforcement
+  total_budget: null
+- name: Environmental Quality Management
+  total_budget: null
+- name: Biodiversity Management
+  total_budget: null
+- name: Environmental Empowerment Services
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: environment-and-nature-conservation

@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Mpumalanga department: Co-operative Governance and Traditional Affairs
   budget data for the 2015-16 financial year from National Treasury in partnership
   with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 436426000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 336914000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 396929000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 462615000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 443898000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 471148000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 472205000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 603642553
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 441532650
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 491587861
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 542421926
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 494904693
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 494176769
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 472205000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -80,15 +35,15 @@ is_vote_primary: true
 name: Co-operative Governance and Traditional Affairs
 programmes:
 - name: Administration
-  total_budget: 111771000.0
+  total_budget: null
 - name: Local Governance
-  total_budget: 152978000.0
+  total_budget: null
 - name: Development and Planning
-  total_budget: 61860000.0
+  total_budget: null
 - name: Traditional Institutional Management
-  total_budget: 100811000.0
+  total_budget: null
 - name: The House of Traditional Leaders
-  total_budget: 16478000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: co-operative-governance-and-traditional-affairs

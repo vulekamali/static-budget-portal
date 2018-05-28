@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Gauteng department: Agriculture and Rural Development budget data for
   the 2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 543698000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 615022000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 811438000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 831585000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 916600000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 938434000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 974010000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 673358049
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 721121057
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 904677369
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 872231208
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 916600000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 889581608
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 876906712
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -87,12 +42,12 @@ intro: "## Vision\n\nAn economically transformed and agricultural sector and sus
 is_vote_primary: true
 name: Agriculture and Rural Development
 programmes:
-- name: ADMINISTRATION
-  total_budget: 189016000.0
-- name: AGRICULTURE AND RURAL DEVELOPMENT
-  total_budget: 487848000.0
-- name: ENVIRONMENTAL AFFAIRS
-  total_budget: 239736000.0
+- name: Administration
+  total_budget: null
+- name: Agriculture And Rural Development
+  total_budget: null
+- name: Environmental Affairs
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: agriculture-and-rural-development

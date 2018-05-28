@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Gauteng department: Finance budget data for the 2015-16 financial year
   from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1088382000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1118628000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1024284000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1245762000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1171505000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1133913000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1175274000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1505395393
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1465984749
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1268553270
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1460671667
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1306118350
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1189336394
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1175274000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,11 +48,11 @@ is_vote_primary: true
 name: Finance
 programmes:
 - name: Administration
-  total_budget: 215271000.0
+  total_budget: null
 - name: ICT Shared Services
-  total_budget: 867096000.0
+  total_budget: null
 - name: Business Process Services
-  total_budget: 89138000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: finance

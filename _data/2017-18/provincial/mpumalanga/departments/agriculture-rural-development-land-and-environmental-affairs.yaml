@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Mpumalanga department: Agriculture, Rural Development, Land and Environmental
   Affairs budget data for the 2017-18 financial year from National Treasury in partnership
   with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1007100000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1004444000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1005346000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 974133000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1124801000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 1178845000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 1250489000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 1247271263
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1177723266
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1120866627
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1021746668
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1124801000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 1117477447
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 1125822320
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -94,23 +49,23 @@ is_vote_primary: true
 name: Agriculture, Rural Development, Land and Environmental Affairs
 programmes:
 - name: Administration
-  total_budget: 158133000.0
+  total_budget: null
 - name: Sustainable Resource Management
-  total_budget: 69080000.0
+  total_budget: null
 - name: Farmer Support and Development
-  total_budget: 531621000.0
+  total_budget: null
 - name: Veterinary Services
-  total_budget: 130260000.0
+  total_budget: null
 - name: Research and Technology Development Services
-  total_budget: 63608000.0
+  total_budget: null
 - name: Agricultural Economics Services
-  total_budget: 11048000.0
+  total_budget: null
 - name: Structured Agricultural Education and Training
-  total_budget: 26349000.0
+  total_budget: null
 - name: Rural Development Coordination
-  total_budget: 21969000.0
+  total_budget: null
 - name: Environmental Affairs
-  total_budget: 112733000.0
+  total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: agriculture-rural-development-land-and-environmental-affairs

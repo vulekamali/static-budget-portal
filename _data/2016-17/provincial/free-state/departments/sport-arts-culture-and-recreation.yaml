@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Free State department: Sport, Arts, Culture and Recreation budget data
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 445337000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 541863000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 662300000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 698887000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 655128000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 641030000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 672645000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 583623197
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 671085442
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 776555108
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 779193546
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 687149343
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 641030000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 637628880
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -87,13 +42,13 @@ is_vote_primary: true
 name: Sport, Arts, Culture and Recreation
 programmes:
 - name: Administration
-  total_budget: 86806000.0
+  total_budget: null
 - name: Cultural Affairs
-  total_budget: 151117000.0
+  total_budget: null
 - name: Library and Archives Services
-  total_budget: 235597000.0
+  total_budget: null
 - name: Sport and Recreation
-  total_budget: 181608000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: sport-arts-culture-and-recreation

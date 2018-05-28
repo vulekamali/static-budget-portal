@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Northern Cape department: Education budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 4126127000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 4489622000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 4709217000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 5126865000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 5438973000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 5668456000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 6013017000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 5407373369
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 5560298386
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 5521616366
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 5715974285
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 5704819099
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 5668456000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 5699995242
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -100,20 +55,20 @@ intro: "## Vision\n\nA transformed quality education system.\r\n\r\n\n\n## Missi
 is_vote_primary: true
 name: Education
 programmes:
-- name: ADMINISTRATION
-  total_budget: 608470000.0
-- name: PUBLIC ORDINARY SCHOOL EDUCATION
-  total_budget: 3980547000.0
-- name: INDEPENDENT SCHOOL SUBSIDY
-  total_budget: 8725000.0
-- name: PUBLIC SPECIAL SCHOOL EDUCATION
-  total_budget: 116251000.0
-- name: EARLY CHILDHOOD DEVELOPMENT
-  total_budget: 95400000.0
-- name: INFRASTRUCTURE DEVELOPMENT
-  total_budget: 497309000.0
-- name: EXAMINATION AND EDUCATION RELATED SERVICES
-  total_budget: 132271000.0
+- name: Administration
+  total_budget: null
+- name: Public Ordinary School Education
+  total_budget: null
+- name: Independent School Subsidy
+  total_budget: null
+- name: Public Special School Education
+  total_budget: null
+- name: Early Childhood Development
+  total_budget: null
+- name: Infrastructure Development
+  total_budget: null
+- name: Examination And Education Related Services
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: education

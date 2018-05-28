@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'National department: Planning, Montoring and Evaluation budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 547257000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 622196000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 646595000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 733842000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 717694000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 738572000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 784550000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 756938434
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 815400515
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 800793727
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 860439006
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 800161589
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 774671919
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 784550000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -86,15 +41,15 @@ is_vote_primary: true
 name: Planning, Montoring and Evaluation
 programmes:
 - name: Administration
-  total_budget: 69784000.0
+  total_budget: null
 - name: Outcomes Monitoring and Evaluation
-  total_budget: 85604000.0
+  total_budget: null
 - name: Institutional Performance Monitoring and Evaluation
-  total_budget: 59567000.0
+  total_budget: null
 - name: National Planning
-  total_budget: 88197000.0
+  total_budget: null
 - name: National Youth Development
-  total_budget: 414542000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: planning-monitoring-and-evaluation

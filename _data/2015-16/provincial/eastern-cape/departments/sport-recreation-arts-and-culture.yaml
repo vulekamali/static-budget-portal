@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Eastern Cape department: Sport, Recreation, Arts and Culture budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 649017000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 647479000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 727359000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 775119000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 796920000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 834909000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 879534000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 897687762
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 848534400
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 900818169
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 908836810
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 888491159
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 875717678
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 879534000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -84,13 +39,13 @@ is_vote_primary: true
 name: Sport, Recreation, Arts and Culture
 programmes:
 - name: Administration
-  total_budget: 233378000.0
+  total_budget: null
 - name: Cultural Affairs
-  total_budget: 172930000.0
+  total_budget: null
 - name: Library And Archives Services
-  total_budget: 224459000.0
+  total_budget: null
 - name: Sports And Recreation
-  total_budget: 166153000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: sport-recreation-arts-and-culture

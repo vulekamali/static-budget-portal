@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Northern Cape department: Agriculture, Land Reform and Rural Development
   budget data for the 2016-17 financial year from National Treasury in partnership
   with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 436462000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 987816000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 769374000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 557947000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 552383000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 512374000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 540750000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 571992329
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1223388452
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 902100725
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 622058646
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 579382373
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 512374000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 512599985
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -98,19 +53,19 @@ is_vote_primary: true
 name: Agriculture, Land Reform and Rural Development
 programmes:
 - name: Administration
-  total_budget: 111486000.0
+  total_budget: null
 - name: Sustainable Resource Management
-  total_budget: 96832000.0
+  total_budget: null
 - name: Farmer Support and Development
-  total_budget: 225477000.0
+  total_budget: null
 - name: Veterinary Services
-  total_budget: 46546000.0
+  total_budget: null
 - name: Research and Technology Development Services
-  total_budget: 48147000.0
+  total_budget: null
 - name: Agricultural Economics Services
-  total_budget: 10704000.0
+  total_budget: null
 - name: Rural Development
-  total_budget: 13191000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: agriculture-land-reform-and-rural-development

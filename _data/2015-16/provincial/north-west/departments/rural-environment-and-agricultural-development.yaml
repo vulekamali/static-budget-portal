@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'North West department: Rural, Environment and Agricultural Development
   budget data for the 2015-16 financial year from National Treasury in partnership
   with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 752380000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 843760000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 960929000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1103691000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1121317000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1151144000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1247809000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1040654279
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1105764644
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1190089492
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1294091626
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1250163430
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1207409611
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1247809000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -85,23 +40,23 @@ is_vote_primary: true
 name: Rural, Environment and Agricultural Development
 programmes:
 - name: Administration
-  total_budget: 219963000.0
+  total_budget: null
 - name: Sustainable Resource Management
-  total_budget: 56921000.0
+  total_budget: null
 - name: Farmer Support and Development
-  total_budget: 391657000.0
+  total_budget: null
 - name: Veterinary Services
-  total_budget: 95785000.0
+  total_budget: null
 - name: Research and Technology  Development Services
-  total_budget: 56474000.0
+  total_budget: null
 - name: Agricultural Economics Services
-  total_budget: 11233000.0
+  total_budget: null
 - name: Structured Agricultural Education and  Training
-  total_budget: 84403000.0
+  total_budget: null
 - name: Rural Development Coordination
-  total_budget: 49486000.0
+  total_budget: null
 - name: Environmental Services
-  total_budget: 155395000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: rural-environment-and-agricultural-development

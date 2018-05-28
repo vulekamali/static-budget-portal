@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Free State department: Human Settlements budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1068052000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1481761000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1207552000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1241311000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1335504000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1491326000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1586036000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 1399703872
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1835128502
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1415869960
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1383945502
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1400780758
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1491326000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1503471161
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -82,14 +37,14 @@ intro: "## Vision\n\nIntegrated and Sustainable Human Settlements\r\n\r\n\n\n## 
 is_vote_primary: true
 name: Human Settlements
 programmes:
-- name: ADMINISTRATION
-  total_budget: 98423000.0
-- name: HOUSING NEEDS, RESEARCH & PLANNING
-  total_budget: 23514000.0
-- name: HOUSING DEVELOPMENT
-  total_budget: 1212157000.0
-- name: HOUSING ASSETS MANAGEMENT PROPERTY  MAN
-  total_budget: 1410000.0
+- name: Administration
+  total_budget: null
+- name: Housing Needs, Research & Planning
+  total_budget: null
+- name: Housing Development
+  total_budget: null
+- name: Housing Assets Management Property  Man
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: human-settlements

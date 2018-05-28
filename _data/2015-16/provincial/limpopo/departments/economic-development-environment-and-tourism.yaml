@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Limpopo department: Economic Development, Environment and Tourism budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 866942000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 874203000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1071242000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1149777000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1160813000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1224371000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1284953000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1199110691
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1145660814
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1326709723
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1348128043
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1294197771
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1284215800
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1284953000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -91,13 +46,13 @@ is_vote_primary: true
 name: Economic Development, Environment and Tourism
 programmes:
 - name: Administration
-  total_budget: 304280000.0
+  total_budget: null
 - name: Economic Development
-  total_budget: 440680000.0
+  total_budget: null
 - name: Environmental Affairs
-  total_budget: 241817000.0
+  total_budget: null
 - name: Tourism
-  total_budget: 174036000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: economic-development-environment-and-tourism

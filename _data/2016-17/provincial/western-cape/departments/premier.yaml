@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Western Cape department: Premier budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 747165000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 894537000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1042874000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1272608000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1341110000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1420535000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1522056000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 979174931
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1107864456
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1222782926
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1418838725
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1406660768
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1420535000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1442821791
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -84,15 +39,15 @@ is_vote_primary: true
 name: Premier
 programmes:
 - name: Executive Support (Administration)
-  total_budget: 96567000.0
+  total_budget: null
 - name: Provincial Strategic Management
-  total_budget: 63512000.0
+  total_budget: null
 - name: People Management (Corporate Services Centre)
-  total_budget: 201782000.0
+  total_budget: null
 - name: Centre for E-Innovation (Corporate Services Centre)
-  total_budget: 861068000.0
+  total_budget: null
 - name: Corporate Assurance (Corporate Services Centre)
-  total_budget: 118181000.0
+  total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: premier

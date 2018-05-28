@@ -1,52 +1,7 @@
 contributed_datasets: null
 description: 'Gauteng department: Gauteng Provincial Treasury budget data for the
   2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 321764000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 346475000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 429905000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 516643000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 584362000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 596933000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 628756000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 445047826
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 454062535
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 532427914
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 605770437
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 651508897
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 626109888
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 628756000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -98,17 +53,17 @@ is_vote_primary: true
 name: Gauteng Provincial Treasury
 programmes:
 - name: Administration
-  total_budget: 111528000.0
+  total_budget: null
 - name: Sustainable Fiscal  Resource Management
-  total_budget: 183781000.0
+  total_budget: null
 - name: Financial Governance
-  total_budget: 98608000.0
+  total_budget: null
 - name: Provincial Supply Chain and Movable Asset Management
-  total_budget: 86592000.0
+  total_budget: null
 - name: Municipal Financial Governance
-  total_budget: 30097000.0
+  total_budget: null
 - name: Gauteng Audit Services
-  total_budget: 73756000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: gauteng-provincial-treasury

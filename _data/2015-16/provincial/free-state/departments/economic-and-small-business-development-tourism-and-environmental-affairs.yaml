@@ -2,52 +2,7 @@ contributed_datasets: null
 description: 'Free State department: Economic and Small Business Development,  Tourism
   and Environmental Affairs budget data for the 2015-16 financial year from National
   Treasury in partnership with IMALI YETHU.'
-expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 389855000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 407139000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 432354000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 449974000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 472179000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 473134000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 498895000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 539227882
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 533563941
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 535460947
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 527600194
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 526435360
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 496259841
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 498895000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -81,13 +36,13 @@ is_vote_primary: true
 name: Economic and Small Business Development,  Tourism and Environmental Affairs
 programmes:
 - name: Administration
-  total_budget: 137393000.0
+  total_budget: null
 - name: Environmental Affairs
-  total_budget: 154403000.0
+  total_budget: null
 - name: Economic and Small Business Development
-  total_budget: 124645000.0
+  total_budget: null
 - name: Tourism
-  total_budget: 55738000.0
+  total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: economic-and-small-business-development-tourism-and-environmental-affairs
