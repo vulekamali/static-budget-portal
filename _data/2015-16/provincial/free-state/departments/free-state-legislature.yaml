@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Free State department: Free State Legislature budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 176646000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 185482000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 160731000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 179186000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 158255000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 165481000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 173382000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 244327887
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 243077934
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 199061818
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 210097846
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 176439502
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 173569379
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 173382000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -52,11 +97,11 @@ is_vote_primary: true
 name: Free State Legislature
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 97903000
 - name: Facilities For Members And Political Parties
-  total_budget: null
+  total_budget: 28328000
 - name: Parliamentary Services
-  total_budget: null
+  total_budget: 32024000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: free-state-legislature

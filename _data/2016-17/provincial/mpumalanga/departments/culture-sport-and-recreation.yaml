@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Mpumalanga department: Culture, Sport and Recreation budget data for
   the 2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 331730000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 373622000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 411103000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 457322000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 451907000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 540840000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 573607000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 434738913
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 462722653
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 482023455
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 509871196
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 473995308
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 540840000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 543746537
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -48,13 +93,13 @@ is_vote_primary: true
 name: Culture, Sport and Recreation
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 81679000
 - name: Cultural Affairs
-  total_budget: null
+  total_budget: 86838000
 - name: Library and Archives Services
-  total_budget: null
+  total_budget: 187240000
 - name: Sports and Recreation
-  total_budget: null
+  total_budget: 96150000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: culture-sport-and-recreation

@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'North West department: Economy and Enterprise Development budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 181078000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 172816000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 221296000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 259937000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 255096000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 270539000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 286342000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 250458007
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 226478883
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 274070242
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 304779413
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 284408147
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 283762404
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 286342000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -48,15 +93,15 @@ is_vote_primary: true
 name: Economy and Enterprise Development
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 77228000
 - name: Integrated Economic Development Services
-  total_budget: null
+  total_budget: 56203000
 - name: Trade and Sector Development
-  total_budget: null
+  total_budget: 45778000
 - name: Business Regulation and Governance
-  total_budget: null
+  total_budget: 70931000
 - name: Economic  Planning
-  total_budget: null
+  total_budget: 4956000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: economy-and-enterprise-development

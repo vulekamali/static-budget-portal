@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'KwaZulu-Natal department: Agriculture and Rural Development budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1782966000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 2109591000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 2005528000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 2169946000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 2203074000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 2290677000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 2409455000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 2466109144
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 2764661919
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 2483802445
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 2544289071
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 2456221167
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 2402640700
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 2409455000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -41,11 +86,11 @@ is_vote_primary: true
 name: Agriculture and Rural Development
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 407830000
 - name: Agriculture
-  total_budget: null
+  total_budget: 1776283000
 - name: Rural Development
-  total_budget: null
+  total_budget: 18961000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: agriculture-and-rural-development

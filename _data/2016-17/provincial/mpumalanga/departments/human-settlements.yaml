@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Mpumalanga department: Human Settlements budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1146820000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 1218995000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1757403000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1818185000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 1822108000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 1668662000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 1776409000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 1502930939
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 1509698574
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 2060577197
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2027105981
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 1911168987
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 1668662000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 1683933846
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -39,13 +84,13 @@ is_vote_primary: true
 name: Human Settlements
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 133425000
 - name: Housing Needs, Research and Planning
-  total_budget: null
+  total_budget: 38265000
 - name: Housing Development
-  total_budget: null
+  total_budget: 1647162000
 - name: Housing Asset Management
-  total_budget: null
+  total_budget: 3256000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: human-settlements

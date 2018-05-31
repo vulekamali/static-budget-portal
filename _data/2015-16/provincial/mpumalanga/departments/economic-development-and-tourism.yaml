@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'Mpumalanga department: Economic Development and Tourism budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 599666000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 719210000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 736071000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 769093000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 743031000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 753573000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 861424000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 829427934
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 942539335
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 911607790
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 901771249
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 828409971
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 790406137
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 861424000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -54,19 +99,19 @@ is_vote_primary: true
 name: Economic Development and Tourism
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 86689000
 - name: Integrated Economic Development
-  total_budget: null
+  total_budget: 211413000
 - name: Trade and Sector Development
-  total_budget: null
+  total_budget: 15386000
 - name: Business Regulation and Governance
-  total_budget: null
+  total_budget: 81801000
 - name: Economic Planning
-  total_budget: null
+  total_budget: 13007000
 - name: Environmental Services
-  total_budget: null
+  total_budget: 0
 - name: Tourism
-  total_budget: null
+  total_budget: 334735000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: economic-development-and-tourism

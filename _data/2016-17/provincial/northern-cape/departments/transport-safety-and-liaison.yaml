@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'Northern Cape department: Transport, Safety and Liaison budget data
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 282063000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 310301000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 383975000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 355489000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 366977000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 383237000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 406369000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 369649299
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 384300983
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 450215533
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 396336939
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 384914100
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 383237000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 385214504
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -43,13 +88,13 @@ is_vote_primary: true
 name: Transport, Safety and Liaison
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 73616000
 - name: Civilian Oversight
-  total_budget: null
+  total_budget: 24623000
 - name: Transport Operations
-  total_budget: null
+  total_budget: 187821000
 - name: Transport Regulations
-  total_budget: null
+  total_budget: 80917000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: transport-safety-and-liaison

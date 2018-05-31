@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'KwaZulu-Natal department: Education budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 32809703000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 34556731000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 37156042000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 39066103000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 42142355000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 44210091000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 46488066000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 45380735577
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 45287298944
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 46016943158
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 45805498810
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 46984778713
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 46370991640
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 46488066000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -46,23 +91,23 @@ is_vote_primary: true
 name: Education
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 1618968000
 - name: Public Ordinary School Education
-  total_budget: null
+  total_budget: 35070344000
 - name: Independent School Subsidies
-  total_budget: null
+  total_budget: 77817000
 - name: Public Special School Education
-  total_budget: null
+  total_budget: 931199000
 - name: Old Prog 5
-  total_budget: null
+  total_budget: 0
 - name: Old Prog 6
-  total_budget: null
+  total_budget: 0
 - name: Early Childhood Development
-  total_budget: null
+  total_budget: 695420000
 - name: Infrastructure Development
-  total_budget: null
+  total_budget: 2529235000
 - name: Examination and Education Related services
-  total_budget: null
+  total_budget: 1219372000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: education

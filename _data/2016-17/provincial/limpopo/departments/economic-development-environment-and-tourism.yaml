@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'Limpopo department: Economic Development, Environment and Tourism budget
   data for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 874203000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 1071242000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1112393000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1160184000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 1332930000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 1436013000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 1507810000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 1145660814
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 1326709723
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1304294831
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1293496495
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 1398080946
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 1436013000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 1429317400
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -48,13 +93,13 @@ is_vote_primary: true
 name: Economic Development, Environment and Tourism
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 348019000
 - name: Economic Development
-  total_budget: null
+  total_budget: 477147000
 - name: Environmental Affairs
-  total_budget: null
+  total_budget: 371279000
 - name: Tourism
-  total_budget: null
+  total_budget: 136485000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: economic-development-environment-and-tourism

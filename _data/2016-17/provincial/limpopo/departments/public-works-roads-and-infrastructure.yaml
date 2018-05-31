@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'Limpopo department: Public Works, Roads and Infrastructure budget data
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 748024000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 858941000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 2787867000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2756936000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 2901371000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 2999218000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 3157609000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 980300668
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 1063779591
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 3268809242
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 3073725421
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 3043184199
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 2999218000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 2993232228
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -43,13 +88,13 @@ is_vote_primary: true
 name: Public Works, Roads and Infrastructure
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 325954000
 - name: Infrastructure Operations
-  total_budget: null
-- name: Epwp
-  total_budget: null
+  total_budget: 760066000
+- name: EPWP
+  total_budget: 39231000
 - name: Roads Infrastructure
-  total_budget: null
+  total_budget: 1776120000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: public-works-roads-and-infrastructure

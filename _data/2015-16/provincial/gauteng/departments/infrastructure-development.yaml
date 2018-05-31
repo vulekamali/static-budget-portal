@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Gauteng department: Infrastructure Development budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1260419000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 1408343000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 1529491000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1885628000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 2050698000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 2186170000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 2295479000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 1743348342
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 1845662150
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 1894241060
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 2210922628
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 2286336198
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 2293025608
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 2295479000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -49,11 +94,11 @@ is_vote_primary: true
 name: Infrastructure Development
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 437834000
 - name: Public Works Infrastructure
-  total_budget: null
+  total_budget: 1244095000
 - name: Expanded Public Works Programme
-  total_budget: null
+  total_budget: 368769000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: infrastructure-development

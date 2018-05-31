@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Mpumalanga department: Finance budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 251403000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 252888000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 270346000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 286496000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 287550000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 282916000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 312657000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 347728020
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 331414868
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 334817592
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 335920175
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 320591317
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 296744367
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 312657000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -37,13 +82,13 @@ is_vote_primary: true
 name: Finance
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 74688000
 - name: Sustainable Resources Management
-  total_budget: null
+  total_budget: 63074000
 - name: Asset And Liabilities Management
-  total_budget: null
+  total_budget: 115076000
 - name: Financial Governance
-  total_budget: null
+  total_budget: 34712000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: finance

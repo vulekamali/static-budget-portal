@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'North West department: Social Development budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 883010000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 922173000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 1048717000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1254142000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 1334112000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 1397269000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 1482231000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 1221335143
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 1208526475
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 1298813005
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1470497323
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 1487409925
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 1465564708
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 1482231000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -37,17 +82,17 @@ is_vote_primary: true
 name: Social Development
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 177728000
 - name: Social Welfare Services
-  total_budget: null
+  total_budget: 281551000
 - name: Children and Families
-  total_budget: null
+  total_budget: 419149000
 - name: Restorative Services
-  total_budget: null
+  total_budget: 303594000
 - name: Development and Research
-  total_budget: null
+  total_budget: 142144000
 - name: Special Programs
-  total_budget: null
+  total_budget: 9946000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: social-development

@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'KwaZulu-Natal department: Transport budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 7650308000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 8055187000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 9051949000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 9366560000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 9571940000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 10012734000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 10580528000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 10025884260
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 9976172443
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 10613524444
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 10442837114
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 10039797242
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 10012734000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 10029733702
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -41,16 +86,16 @@ intro: "## Vision\n\nThe department\u2019s vision is: Prosperity through mobilit
 is_vote_primary: true
 name: Transport
 programmes:
-- name: Administration
-  total_budget: null
-- name: Transport Infrastructure
-  total_budget: null
-- name: Transport Operations
-  total_budget: null
-- name: Transport Regulation
-  total_budget: null
-- name: Community Based Programme
-  total_budget: null
+- name: 1. Administration
+  total_budget: 310192000
+- name: 2. Transport Infrastructure
+  total_budget: 7056234000
+- name: 3. Transport Operations
+  total_budget: 1353591000
+- name: 4. Transport Regulation
+  total_budget: 811743000
+- name: 5. Community Based Programme
+  total_budget: 40180000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: transport

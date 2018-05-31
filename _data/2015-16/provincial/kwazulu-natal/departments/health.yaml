@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'KwaZulu-Natal department: Health budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 24791118000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 27390530000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 29531409000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 31119465000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 32981786000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 34741665000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 36873548000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 34289830988
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 35895846756
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 36574002401
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 36487965463
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 36771602270
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 36439767954
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 36873548000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -65,21 +110,21 @@ is_vote_primary: true
 name: Health
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 737119000
 - name: District Health Services
-  total_budget: null
+  total_budget: 15578862000
 - name: Emergency Medical  Services
-  total_budget: null
+  total_budget: 1160311000
 - name: Provincial Hospital Services
-  total_budget: null
+  total_budget: 8775638000
 - name: Central Hospital Services
-  total_budget: null
+  total_budget: 3984966000
 - name: Health Sciences and Training
-  total_budget: null
+  total_budget: 1055250000
 - name: Health Care Support Services
-  total_budget: null
+  total_budget: 138288000
 - name: Health Facilities Management
-  total_budget: null
+  total_budget: 1551352000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: health

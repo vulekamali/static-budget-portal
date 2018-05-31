@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Gauteng department: Economic Development budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 873371000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 926787000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1060655000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1305610000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 1331639000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 1383993000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 1467701000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 1144570462
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 1147805374
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1243631373
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1455632864
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 1396726845
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 1383993000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 1391296368
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -57,15 +102,15 @@ is_vote_primary: true
 name: Economic Development
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 227110000
 - name: Integrated Economic Development Services
-  total_budget: null
+  total_budget: 198345000
 - name: Trade And Sector Development
-  total_budget: null
+  total_budget: 624318000
 - name: Business Regulation And Governance
-  total_budget: null
+  total_budget: 77249000
 - name: Economic Planning
-  total_budget: null
+  total_budget: 204617000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: economic-development

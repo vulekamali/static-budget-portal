@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Gauteng department: Roads and Transport budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 5784647000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 5564906000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 5366174000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 6033416000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 6605952000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 7143770000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 7535881000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 8001033594
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 7292922516
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 6645888814
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 7074256406
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 7365017757
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 7492943159
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 7535881000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -48,15 +93,15 @@ is_vote_primary: true
 name: Roads and Transport
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 317637000
 - name: Transport Infrastructure
-  total_budget: null
+  total_budget: 2259326000
 - name: Transport Operations
-  total_budget: null
+  total_budget: 2186195000
 - name: Transport Regulation
-  total_budget: null
+  total_budget: 281343000
 - name: Gautrain
-  total_budget: null
+  total_budget: 1561451000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: roads-and-transport

@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Limpopo department: Sport, Arts and Culture budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 255670000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 258520000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 258813000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 324022000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 345324000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 357359000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 378367000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 353629920
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 338795718
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 320534224
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 379919884
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 385003916
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 374825991
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 378367000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -40,13 +85,13 @@ is_vote_primary: true
 name: Sport, Arts and Culture
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 103955000
 - name: Cultural Affairs
-  total_budget: null
+  total_budget: 33691000
 - name: Library and Archives
-  total_budget: null
+  total_budget: 127311000
 - name: Sport and Recreation
-  total_budget: null
+  total_budget: 80367000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: sport-arts-and-culture

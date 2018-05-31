@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Western Cape department: Community Safety budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 138763000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 166418000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 191099000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 229685000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 234574000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 248071000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 246096000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 191930021
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 218094174
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 236671920
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 269308561
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 261528039
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 260196213
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 246096000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -46,13 +91,13 @@ is_vote_primary: true
 name: Community Safety
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 42073000
 - name: Provincial Secretariat for Police Services
-  total_budget: null
+  total_budget: 55178000
 - name: Provincial Policing Functions
-  total_budget: null
+  total_budget: 56420000
 - name: Security Risk Management
-  total_budget: null
+  total_budget: 80903000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: community-safety

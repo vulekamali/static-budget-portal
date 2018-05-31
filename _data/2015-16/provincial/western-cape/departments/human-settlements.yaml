@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Western Cape department: Human Settlements budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1834400000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 1987458000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 2215466000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 2151330000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 2189533000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 2407570000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 2557667000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 2537250073
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 2604604138
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 2743806054
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 2522461576
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 2441124220
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 2525247196
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 2557667000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -53,13 +98,13 @@ is_vote_primary: true
 name: Human Settlements
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 92421000
 - name: Housing Needs, Research and Planning
-  total_budget: null
+  total_budget: 18859000
 - name: Housing Development
-  total_budget: null
+  total_budget: 2039417000
 - name: Housing Asset Management Property Management
-  total_budget: null
+  total_budget: 38836000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: human-settlements

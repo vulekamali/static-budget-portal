@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Western Cape department: Cultural Affairs and Sport budget data for
   the 2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 390550000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 453573000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 612490000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 694433000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 736184000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 691943000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 730667000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 511823719
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 561740213
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 718152255
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 774227753
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 772167198
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 691943000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 692630408
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -48,13 +93,13 @@ is_vote_primary: true
 name: Cultural Affairs and Sport
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 61450000
 - name: Cultural Affairs
-  total_budget: null
+  total_budget: 109443000
 - name: Library and Archive Services
-  total_budget: null
+  total_budget: 359698000
 - name: Sport and Recreation
-  total_budget: null
+  total_budget: 205593000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: cultural-affairs-and-sport

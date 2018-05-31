@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Gauteng department: Health budget data for the 2016-17 financial year
   from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 26834347000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 27415801000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 31005212000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 35337088000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 37408057000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 39909927000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 42500389000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 35166957620
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 33953868290
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 36354002378
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 39397543399
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 39236487851
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 39909927000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 40287931182
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -50,21 +95,21 @@ is_vote_primary: true
 name: Health
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 829895000
 - name: District Health Services
-  total_budget: null
+  total_budget: 12598039000
 - name: Emergency Medical Services
-  total_budget: null
+  total_budget: 1197221000
 - name: Provincial Hospital Services
-  total_budget: null
+  total_budget: 6910146000
 - name: Central Hospital Services
-  total_budget: null
+  total_budget: 12609627000
 - name: Health Sciences and Training
-  total_budget: null
+  total_budget: 976452000
 - name: Health Care Support Services
-  total_budget: null
+  total_budget: 268747000
 - name: Health Facilities Management
-  total_budget: null
+  total_budget: 2017930000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: health

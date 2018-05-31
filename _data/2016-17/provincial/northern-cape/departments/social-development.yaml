@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Northern Cape department: Social Development budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 531722000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 604415000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 654471000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 719956000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 773894000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 782746000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 833262000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 696832497
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 748554722
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 767375507
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 802683507
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 811720387
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 782746000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 789884584
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -61,15 +106,15 @@ is_vote_primary: true
 name: Social Development
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 119490000
 - name: Social Welfare Services
-  total_budget: null
+  total_budget: 104381000
 - name: Children and Families
-  total_budget: null
+  total_budget: 248789000
 - name: Restorative Services
-  total_budget: null
+  total_budget: 177038000
 - name: Development and Research
-  total_budget: null
+  total_budget: 124196000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: social-development

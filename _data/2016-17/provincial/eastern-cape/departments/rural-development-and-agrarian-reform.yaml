@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'Eastern Cape department: Rural Development and Agrarian Reform budget
   data for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1617094000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 1731203000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1852768000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1982681000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 2209319000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 2157373000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 2266651000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 2119234582
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 2144056948
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 2172393863
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2210503614
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 2317306084
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 2157373000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 2148655145
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -48,21 +93,21 @@ is_vote_primary: true
 name: Rural Development and Agrarian Reform
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 452596000
 - name: Sustainable Resource Management
-  total_budget: null
+  total_budget: 119566000
 - name: Farmer Support And Development
-  total_budget: null
+  total_budget: 800165000
 - name: Veterianary Services
-  total_budget: null
+  total_budget: 296053000
 - name: Research And Technology Development
-  total_budget: null
+  total_budget: 175707000
 - name: Agricultural Economics Services
-  total_budget: null
+  total_budget: 34943000
 - name: Structured Agricultural Education and Training
-  total_budget: null
+  total_budget: 151757000
 - name: Rural Development Coordination
-  total_budget: null
+  total_budget: 178532000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: rural-development-and-agrarian-reform

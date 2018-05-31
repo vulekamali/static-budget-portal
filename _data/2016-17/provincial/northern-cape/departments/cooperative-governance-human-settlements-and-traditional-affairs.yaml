@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'Northern Cape department: Cooperative Governance, Human Settlements
   and Traditional Affairs budget data for the 2016-17 financial year from National
   Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 581941000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 841569000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 651875000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 716472000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 676175000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 726059000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 772180000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 762645518
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 1042264750
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 764331664
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 798799174
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 709225078
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 726059000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 731982351
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -43,13 +88,13 @@ is_vote_primary: true
 name: Cooperative Governance, Human Settlements and Traditional Affairs
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 89977000
 - name: Human Settlement
-  total_budget: null
+  total_budget: 431634000
 - name: Co-operative Governance
-  total_budget: null
+  total_budget: 134548000
 - name: Traditional Institutional Management
-  total_budget: null
+  total_budget: 20016000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: cooperative-governance-human-settlements-and-traditional-affairs

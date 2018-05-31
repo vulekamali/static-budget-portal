@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Gauteng department: Human Settlements budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 4421597000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 4546443000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 5030253000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 5085904000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 5871167000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 6616801000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 7042788000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 5794592814
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 5630669948
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 5898035127
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 5670306607
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 6158137875
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 6616801000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 6676159088
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -45,13 +90,13 @@ is_vote_primary: true
 name: Human Settlements
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 439358000
 - name: Housing Needs, Research And Planning
-  total_budget: null
+  total_budget: 33078000
 - name: Housing Development
-  total_budget: null
+  total_budget: 5287262000
 - name: Housing Assets Management Property Management
-  total_budget: null
+  total_budget: 111469000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: human-settlements

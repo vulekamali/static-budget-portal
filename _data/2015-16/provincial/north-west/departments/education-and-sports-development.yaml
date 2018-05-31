@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'North West department: Education and Sports Development budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 9882315000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 10421284000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 11665538000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 12300408000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 13432319000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 14080828000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 14881652000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 13668722448
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 13657304676
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 14447512979
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 14422383620
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 14975777595
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 14769070651
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 14881652000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -76,21 +121,21 @@ is_vote_primary: true
 name: Education and Sports Development
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 708372000
 - name: Public Ordinary School Education
-  total_budget: null
+  total_budget: 10053955000
 - name: Independent School Subsidies
-  total_budget: null
+  total_budget: 26784000
 - name: Public Special School Education
-  total_budget: null
+  total_budget: 390301000
 - name: Early Childhood Development
-  total_budget: null
+  total_budget: 468582000
 - name: Infrastructure Development
-  total_budget: null
+  total_budget: 997107000
 - name: Examination and Education Related Services
-  total_budget: null
+  total_budget: 688684000
 - name: Sport Development
-  total_budget: null
+  total_budget: 98534000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: education-and-sports-development

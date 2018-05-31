@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'KwaZulu-Natal department: Arts and Culture budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 479744000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 698686000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 710027000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 808770000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 786472000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 857179000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 870986000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 628714271
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 865307288
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 832515618
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 901702799
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 824913175
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 857179000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 825644773
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -43,12 +88,12 @@ intro: "## Vision\n\nThe vision of the department is: Prosperity and social cohe
 is_vote_primary: true
 name: Arts and Culture
 programmes:
-- name: Administration
-  total_budget: null
-- name: Cultural Affairs
-  total_budget: null
-- name: Library and Archive Services
-  total_budget: null
+- name: 1. Administration
+  total_budget: 134546000
+- name: 2. Cultural Affairs
+  total_budget: 205351000
+- name: 3. Library and Archive Services
+  total_budget: 446575000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: arts-and-culture

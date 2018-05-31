@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'KwaZulu-Natal department: Office of the Premier budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 697795000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 721074000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 722239000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 737794000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 658644000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 697500000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 742904000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 914474542
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 893034335
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 846834342
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 822571207
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 690837198
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 697500000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 704230383
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -52,11 +97,11 @@ is_vote_primary: true
 name: Office of the Premier
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 92507000
 - name: Institutional Development
-  total_budget: null
+  total_budget: 273866000
 - name: Policy and Governance
-  total_budget: null
+  total_budget: 292271000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: office-of-the-premier

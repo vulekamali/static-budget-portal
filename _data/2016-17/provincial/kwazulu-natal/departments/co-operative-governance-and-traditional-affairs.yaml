@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'KwaZulu-Natal department: Co-operative Governance and Traditional Affairs
   budget data for the 2016-17 financial year from National Treasury in partnership
   with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1314550000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 1242496000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1482587000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1581163000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 1545923000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 1461452000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 1546475000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 1722744516
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 1538804047
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1738351968
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1762848651
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 1621484617
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 1461452000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 1465969602
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -58,14 +103,14 @@ intro: "## Vision\n\nThe vision of the Department of Co-operative Governance and
 is_vote_primary: true
 name: Co-operative Governance and Traditional Affairs
 programmes:
-- name: Administration
-  total_budget: null
-- name: Local Governance
-  total_budget: null
-- name: Development and Planning
-  total_budget: null
-- name: Traditional Institutional Management
-  total_budget: null
+- name: 1. Administration
+  total_budget: 367321000
+- name: 2. Local Governance
+  total_budget: 249953000
+- name: 3. Development and Planning
+  total_budget: 643650000
+- name: 4. Traditional Institutional Management
+  total_budget: 284999000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: co-operative-governance-and-traditional-affairs

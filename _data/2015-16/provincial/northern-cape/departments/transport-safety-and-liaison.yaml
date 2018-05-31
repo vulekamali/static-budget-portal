@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'Northern Cape department: Transport, Safety and Liaison budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 257285000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 282063000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 310301000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 334406000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 341985000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 360089000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 378690000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 355863707
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 369649299
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 384300983
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 392095255
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 381281244
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 377689428
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 378690000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -43,13 +88,13 @@ is_vote_primary: true
 name: Transport, Safety and Liaison
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 63003000
 - name: Civilian Secretariat
-  total_budget: null
+  total_budget: 19893000
 - name: Transport Operations
-  total_budget: null
+  total_budget: 185099000
 - name: Transport Regulations
-  total_budget: null
+  total_budget: 73990000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: transport-safety-and-liaison

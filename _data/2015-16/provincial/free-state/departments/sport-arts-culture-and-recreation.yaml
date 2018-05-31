@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'Free State department: Sport, Arts, Culture and Recreation budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 479714000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 445337000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 541863000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 669176000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 679605000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 638639000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 637911000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 663516344
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 583623197
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 671085442
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 784617305
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 757695922
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 669854394
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 637911000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -47,13 +92,13 @@ is_vote_primary: true
 name: Sport, Arts, Culture and Recreation
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 77041000
 - name: Cultural Affairs
-  total_budget: null
+  total_budget: 125182000
 - name: Library and Archives Services
-  total_budget: null
+  total_budget: 238138000
 - name: Sport and Recreation
-  total_budget: null
+  total_budget: 239244000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: sport-arts-culture-and-recreation

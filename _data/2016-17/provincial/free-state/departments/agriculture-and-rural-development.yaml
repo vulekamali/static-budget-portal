@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'Free State department: Agriculture and Rural Development budget data
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 595490000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 684003000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 695111000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 752591000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 745825000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 778286000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 815866000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 780401758
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 847122714
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 815026420
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 839068476
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 782279431
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 778286000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 773394174
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -43,22 +88,22 @@ intro: "## Vision\n\nThe vision of the Free State Department of Agriculture and 
 is_vote_primary: true
 name: Agriculture and Rural Development
 programmes:
-- name: Administration
-  total_budget: null
-- name: Sustainable Resource Management
-  total_budget: null
-- name: Farmer Support And Development
-  total_budget: null
-- name: Veterinary Services
-  total_budget: null
-- name: Technology,Research And Development Services
-  total_budget: null
-- name: Agricultural Economics
-  total_budget: null
-- name: Structured Agricultural Training
-  total_budget: null
-- name: Rural Development
-  total_budget: null
+- name: ADMINISTRATION
+  total_budget: 155462000
+- name: SUSTAINABLE RESOURCE MANAGEMENT
+  total_budget: 32635000
+- name: FARMER SUPPORT AND DEVELOPMENT
+  total_budget: 395790000
+- name: VETERINARY SERVICES
+  total_budget: 57174000
+- name: TECHNOLOGY,RESEARCH AND DEVELOPMENT SERVICES
+  total_budget: 53811000
+- name: AGRICULTURAL ECONOMICS
+  total_budget: 10262000
+- name: STRUCTURED AGRICULTURAL TRAINING
+  total_budget: 21458000
+- name: RURAL DEVELOPMENT
+  total_budget: 19233000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: agriculture-and-rural-development

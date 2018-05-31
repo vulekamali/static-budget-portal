@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'Western Cape department: Environmental Affairs and Development Planning
   budget data for the 2016-17 financial year from National Treasury in partnership
   with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 376880000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 412199000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 457181000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 509476000
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 550964000
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 591528000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 582535000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 493908906
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 510499421
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 536050492
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 568018021
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 577894016
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 591528000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 552209768
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -43,19 +88,19 @@ is_vote_primary: true
 name: Environmental Affairs and Development Planning
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 60138000
 - name: Environmental Policy, Planning and Coordination
-  total_budget: null
+  total_budget: 18181000
 - name: Compliance and Enforcement
-  total_budget: null
+  total_budget: 23396000
 - name: Environmental Quality Management
-  total_budget: null
+  total_budget: 85185000
 - name: Biodiversity Management
-  total_budget: null
+  total_budget: 277033000
 - name: Environmental Empowerment Services
-  total_budget: null
+  total_budget: 2066000
 - name: Development Planning
-  total_budget: null
+  total_budget: 84965000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: environmental-affairs-and-development-planning

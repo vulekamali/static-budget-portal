@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Mpumalanga department: Office of the Premier budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 138878000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 153711000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 274248000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 216820000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 237773000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 211909000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 227914000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 192089084
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 201441392
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 339650133
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 254224186
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 265094624
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 222266687
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 227914000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -39,11 +84,11 @@ is_vote_primary: true
 name: Office of the Premier
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 90554000
 - name: Institutional Development
-  total_budget: null
+  total_budget: 96899000
 - name: Policy and Governance
-  total_budget: null
+  total_budget: 50320000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: office-of-the-premier

@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Free State department: Provincial Treasury budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 184972000
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 206545000
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 216367000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 244235000
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 295467000
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 305580000
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 288431000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  real:
+  - amount: 255843992
+    financial_year: 2011-12
+    phase: Audited Outcome
+  - amount: 270681424
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 267965784
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 286368619
+    financial_year: 2014-15
+    phase: Adjusted appropriation
+  - amount: 329418031
+    financial_year: 2015-16
+    phase: Main appropriation
+  - amount: 320516137
+    financial_year: 2016-17
+    phase: Medium Term Estimates
+  - amount: 288431000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -35,15 +80,15 @@ is_vote_primary: true
 name: Provincial Treasury
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 91499000
 - name: Sustainable Resource Management
-  total_budget: null
+  total_budget: 30355000
 - name: Asset and Liabilities Management
-  total_budget: null
+  total_budget: 93936000
 - name: Financial Governance
-  total_budget: null
+  total_budget: 20304000
 - name: Municipal Finance Management
-  total_budget: null
+  total_budget: 59373000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: provincial-treasury
