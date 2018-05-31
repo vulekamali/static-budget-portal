@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'Limpopo department: Co-operative Governance, Human Settlements and Traditional
   Affairs budget data for the 2017-18 financial year from National Treasury in partnership
   with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1186638000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1525470000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2185684000
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2813814000
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 2581772000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 2645313000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 2794961000
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  real:
+  - amount: 1469625139
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1788632827
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2436832945
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2951347588
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 2581772000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 2507605003
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 2516319199
+    financial_year: 2019-20
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -48,13 +93,13 @@ is_vote_primary: true
 name: Co-operative Governance, Human Settlements and Traditional Affairs
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 350776000
 - name: Human Settlements
-  total_budget: null
+  total_budget: 1443590000
 - name: Coorperative Governance
-  total_budget: null
+  total_budget: 290498000
 - name: Traditional Institutional Development
-  total_budget: null
+  total_budget: 496908000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: co-operative-governance-human-settlements-and-traditional-affairs

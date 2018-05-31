@@ -11,7 +11,52 @@ contributed_datasets:
   url_path: /datasets/budget-brief-eastern-cape-department-of-education-2016-17
 description: 'Mpumalanga department: Education budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 14653069000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 15674968000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 17098289000
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 17937287000
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 19322742000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 20921129000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 22095256000
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  real:
+  - amount: 18147504604
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 18379097809
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 19062990785
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 18814025638
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 19322742000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 19832030370
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 19892483969
+    financial_year: 2019-20
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -69,19 +114,19 @@ is_vote_primary: true
 name: Education
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 1282005000
 - name: Public Ordinary Schools Education
-  total_budget: null
+  total_budget: 15697307000
 - name: Independent Schools Subsidies
-  total_budget: null
+  total_budget: 21000000
 - name: Public Special Schools Education
-  total_budget: null
+  total_budget: 293303000
 - name: Early Childhood Development
-  total_budget: null
+  total_budget: 228373000
 - name: Infrastructure Development
-  total_budget: null
+  total_budget: 1165781000
 - name: Examination and Education Related Services
-  total_budget: null
+  total_budget: 634973000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: education

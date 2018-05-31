@@ -13,7 +13,52 @@ contributed_datasets:
   url_path: /datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 description: 'Gauteng department: Roads and Transport budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 5366174000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 5872084000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 6259301000
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 7909447000
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 6832292000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 6690112000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 6832838000
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  real:
+  - amount: 6645888814
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 6885092600
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 6978534360
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 8296044916
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 6832292000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 6341842467
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 6151642704
+    financial_year: 2019-20
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -63,15 +108,15 @@ is_vote_primary: true
 name: Roads and Transport
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 321364000
 - name: Transport Infrastructure
-  total_budget: null
+  total_budget: 1976158000
 - name: Transport Operations
-  total_budget: null
+  total_budget: 2386247000
 - name: Transport Regulation
-  total_budget: null
+  total_budget: 314829000
 - name: Gautrain
-  total_budget: null
+  total_budget: 1833694000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: roads-and-transport

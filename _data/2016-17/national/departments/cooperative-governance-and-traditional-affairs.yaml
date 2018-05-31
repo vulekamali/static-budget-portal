@@ -2,7 +2,52 @@ contributed_datasets: null
 description: 'National department: Cooperative Governance and Traditional Affairs
   budget data for the 2016-17 financial year from National Treasury in partnership
   with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 53434365000.0
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 56401572000.0
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 59563735000.0
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 70815477000.0
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 72994048000.0
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 78557210000.0
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 84258462000.0
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  real:
+  - amount: 70026822319
+    financial_year: 2012-13
+    phase: Audited Outcome
+  - amount: 69852109995
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 69839231025
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 78952624178
+    financial_year: 2015-16
+    phase: Adjusted appropriation
+  - amount: 76561850768
+    financial_year: 2016-17
+    phase: Main appropriation
+  - amount: 78557210000
+    financial_year: 2017-18
+    phase: Medium Term Estimates
+  - amount: 79872189372
+    financial_year: 2018-19
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -46,17 +91,17 @@ is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 266464000.0
 - name: Regional and Urban Development and Legislative Support
-  total_budget: null
+  total_budget: 332176000.0
 - name: Institutional Development
-  total_budget: null
+  total_budget: 68122162000.0
 - name: National Disaster Management Centre
-  total_budget: null
+  total_budget: 598887000.0
 - name: Local Government Support and Intervention Management
-  total_budget: null
+  total_budget: 483174000.0
 - name: Community Work Programme
-  total_budget: null
+  total_budget: 3191185000.0
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: cooperative-governance-and-traditional-affairs

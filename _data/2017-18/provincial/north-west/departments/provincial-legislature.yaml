@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'North West department: Provincial Legislature budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 185892000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 253176000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 275268000
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 358197000
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 417485000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 437588000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 453880000
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  real:
+  - amount: 230223165
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 296852055
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 306898038
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 375704951
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 417485000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 414808326
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 408630731
+    financial_year: 2019-20
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -53,11 +98,11 @@ is_vote_primary: true
 name: Provincial Legislature
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 329134000
 - name: Statutory Payments
-  total_budget: null
+  total_budget: 0
 - name: Legislature operations
-  total_budget: null
+  total_budget: 88351000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: provincial-legislature

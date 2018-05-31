@@ -13,7 +13,52 @@ contributed_datasets:
   url_path: /datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 description: 'Northern Cape department: Roads and Public Works budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1280919000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1213976000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1462408000
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1561343000
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 1683768000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 1752139000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 1868637000
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  real:
+  - amount: 1586390090
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 1423402181
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 1630447948
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 1637658316
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 1683768000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 1660927278
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 1682344461
+    financial_year: 2019-20
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -64,13 +109,13 @@ is_vote_primary: true
 name: Roads and Public Works
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 143460000
 - name: Public Works Infrastructure
-  total_budget: null
+  total_budget: 143715000
 - name: Transport Infrastructure
-  total_budget: null
+  total_budget: 1310273000
 - name: Community Based Programme
-  total_budget: null
+  total_budget: 86320000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: roads-and-public-works

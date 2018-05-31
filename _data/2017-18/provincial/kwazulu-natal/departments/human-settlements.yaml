@@ -13,7 +13,52 @@ contributed_datasets:
   url_path: /datasets/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 description: 'KwaZulu-Natal department: Human Settlements budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 3617002000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 3873178000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 4131025000
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 3530377000
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 3843870000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 4112605000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 4379544000
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  real:
+  - amount: 4479577653
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 4541350087
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 4605705957
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 3702934752
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 3843870000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 3898513663
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 3942928238
+    financial_year: 2019-20
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -55,13 +100,13 @@ is_vote_primary: true
 name: Human Settlements
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 201248000
 - name: Housing Needs, Research and  Planning
-  total_budget: null
+  total_budget: 16903000
 - name: Housing Development
-  total_budget: null
+  total_budget: 3419351000
 - name: Housing Asset Management, Property Management
-  total_budget: null
+  total_budget: 206368000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: human-settlements

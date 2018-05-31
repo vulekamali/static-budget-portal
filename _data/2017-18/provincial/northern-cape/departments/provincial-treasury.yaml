@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Northern Cape department: Provincial Treasury budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 180289000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 193099000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 218566000
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 281848000
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 299180000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 264733000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 280085000
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  real:
+  - amount: 223283972
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 226411014
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 243680618
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 295624165
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 299180000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 250951700
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 252162109
+    financial_year: 2019-20
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -55,15 +100,15 @@ is_vote_primary: true
 name: Provincial Treasury
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 95463000
 - name: Sustainable Resource
-  total_budget: null
+  total_budget: 63570000
 - name: Assets and Liabilities Management
-  total_budget: null
+  total_budget: 75816000
 - name: Financial Governance
-  total_budget: null
+  total_budget: 29012000
 - name: Provincial Internal Audit
-  total_budget: null
+  total_budget: 35319000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: provincial-treasury

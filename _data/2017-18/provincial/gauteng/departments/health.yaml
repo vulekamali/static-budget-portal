@@ -7,7 +7,52 @@ contributed_datasets:
   url_path: /datasets/budget-brief-eastern-cape-department-of-health-2014-15
 description: 'Gauteng department: Health budget data for the 2017-18 financial year
   from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 27415801000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 31005212000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 34864555000
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 37656857000
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 40207046000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 42068419000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 45193153000
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  real:
+  - amount: 33953868290
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 36354002378
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 38870713362
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 39497448696
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 40207046000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 39878448398
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 40687651303
+    financial_year: 2019-20
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -58,21 +103,21 @@ is_vote_primary: true
 name: Health
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 669961000
 - name: District Health Services
-  total_budget: null
+  total_budget: 13752800000
 - name: Emergency Medical Services
-  total_budget: null
+  total_budget: 1275082000
 - name: Provincial Hospital Services
-  total_budget: null
+  total_budget: 7367668000
 - name: Central Hospital Services
-  total_budget: null
+  total_budget: 14211198000
 - name: Health Sciences and Training
-  total_budget: null
+  total_budget: 990163000
 - name: Health Care Support Services
-  total_budget: null
+  total_budget: 281538000
 - name: Health Facilities Management
-  total_budget: null
+  total_budget: 1658636000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: health

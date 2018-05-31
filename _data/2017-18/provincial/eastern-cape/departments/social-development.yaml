@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Eastern Cape department: Social Development budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 1928811000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 2134236000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2253881000
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2403619000
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 2632798000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 2830906000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 3021797000
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  real:
+  - amount: 2388790123
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 2502418645
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 2512866213
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 2521103079
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 2632798000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 2683536522
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 2720540933
+    financial_year: 2019-20
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -52,15 +97,15 @@ is_vote_primary: true
 name: Social Development
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 482842000
 - name: Social Welfare Services
-  total_budget: null
+  total_budget: 688604000
 - name: Children and Families
-  total_budget: null
+  total_budget: 765742000
 - name: Restorative Services
-  total_budget: null
+  total_budget: 399281000
 - name: Development and Research
-  total_budget: null
+  total_budget: 296329000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: social-development

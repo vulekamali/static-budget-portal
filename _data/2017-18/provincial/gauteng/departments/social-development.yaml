@@ -1,7 +1,52 @@
 contributed_datasets: null
 description: 'Gauteng department: Social Development budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 2899683000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 3408805000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 3942241000
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 4271602000
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 4442330000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 4698194000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 4982985000
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  real:
+  - amount: 3591193803
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 3996866884
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 4395229479
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 4480389344
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 4442330000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 4453618449
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 4486209584
+    financial_year: 2019-20
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -52,15 +97,15 @@ is_vote_primary: true
 name: Social Development
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 551236000
 - name: Social Welfare Services
-  total_budget: null
+  total_budget: 759846000
 - name: Children and Families
-  total_budget: null
+  total_budget: 2078060000
 - name: Restorative Services
-  total_budget: null
+  total_budget: 506119000
 - name: Development and Research
-  total_budget: null
+  total_budget: 547069000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: social-development

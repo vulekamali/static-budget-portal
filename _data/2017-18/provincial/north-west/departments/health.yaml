@@ -7,7 +7,52 @@ contributed_datasets:
   url_path: /datasets/budget-brief-eastern-cape-department-of-health-2014-15
 description: 'North West department: Health budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 8393477000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 8372853000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 9042677000
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 9675937000
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 10461340000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 11121303000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 12011392000
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  real:
+  - amount: 10395137189
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 9817275814
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 10081737905
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 10148877407
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 10461340000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 10542357387
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 10813924165
+    financial_year: 2019-20
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -47,21 +92,21 @@ is_vote_primary: true
 name: Health
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 329778000
 - name: District Health Services
-  total_budget: null
+  total_budget: 5484877000
 - name: Emergency Medical Services
-  total_budget: null
+  total_budget: 312417000
 - name: Provincial Hospital Services
-  total_budget: null
+  total_budget: 1551296000
 - name: Central Hospital Services
-  total_budget: null
+  total_budget: 1472847000
 - name: Health Science and Training
-  total_budget: null
+  total_budget: 418140000
 - name: Health Care Support Services
-  total_budget: null
+  total_budget: 261238000
 - name: Health Facilities and Maintenance
-  total_budget: null
+  total_budget: 630747000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: health

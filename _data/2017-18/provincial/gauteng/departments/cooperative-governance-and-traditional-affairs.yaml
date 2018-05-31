@@ -14,7 +14,52 @@ contributed_datasets:
 description: 'Gauteng department: Cooperative Governance and Traditional Affairs budget
   data for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
-expenditure_over_time: null
+expenditure_over_time:
+  base_financial_year: 2017-18
+  nominal:
+  - amount: 273198000
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 283456000
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 368851000
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 516354000
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 470216000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 466238000
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 496588000
+    financial_year: 2019-20
+    phase: Medium Term Estimates
+  real:
+  - amount: 338349731
+    financial_year: 2013-14
+    phase: Audited Outcome
+  - amount: 332355737
+    financial_year: 2014-15
+    phase: Audited Outcome
+  - amount: 411234317
+    financial_year: 2015-16
+    phase: Audited Outcome
+  - amount: 541592348
+    financial_year: 2016-17
+    phase: Adjusted appropriation
+  - amount: 470216000
+    financial_year: 2017-18
+    phase: Main appropriation
+  - amount: 441966883
+    financial_year: 2018-19
+    phase: Medium Term Estimates
+  - amount: 447080985
+    financial_year: 2019-20
+    phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -61,13 +106,13 @@ is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 programmes:
 - name: Administration
-  total_budget: null
+  total_budget: 129090000
 - name: Local Governance
-  total_budget: null
+  total_budget: 224108000
 - name: Development Planning
-  total_budget: null
+  total_budget: 105955000
 - name: Traditional Institutional Management
-  total_budget: null
+  total_budget: 11063000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: cooperative-governance-and-traditional-affairs
