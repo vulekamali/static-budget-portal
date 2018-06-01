@@ -28,7 +28,7 @@ regenerate_data() {
 if [ "${TRAVIS_PULL_REQUEST}" = "true" ]
 then
     echo "Ignoring pull request"
-elif [[ "${TRAVIS_COMMIT_MESSAGE}" == *"[ci]"* ]]
+elif [[ "${TRAVIS_COMMIT_MESSAGE}" == *"[ci]"* ]] || [[ "${REMOTE_TRIGGER}" == "true" ]]
 then
 
     DATA_ENVIRONMENT=$(regenerate_data)
