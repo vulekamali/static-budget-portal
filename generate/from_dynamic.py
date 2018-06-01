@@ -9,6 +9,9 @@ All url_path variables should start with /
 import os
 import requests
 import yaml
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
+
 
 YEAR_SLUGS = [
     '2018-19',
@@ -22,6 +25,28 @@ BASIC_PAGE_SLUGS = [
 ]
 
 portal_url = os.environ.get('PORTAL_URL', "https://dynamicbudgetportal.openup.org.za/")
+
+
+# Use session with retries and keepalive
+# https://www.peterbe.com/plog/best-practice-with-retries-with-requests
+def requests_session(
+    retries=3,
+    backoff_factor=0.3,
+    status_forcelist=(500, 502, 504),
+    session=None,
+):
+    session = session or requests.Session()
+    retry = Retry(
+        total=retries,
+        read=retries,
+        connect=retries,
+        backoff_factor=backoff_factor,
+        status_forcelist=status_forcelist,
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+    return session
 
 
 def ensure_file_dirs(file_path):
@@ -51,11 +76,11 @@ def write_basic_page(page_url_path, page_yaml, layout=None):
         outfile.write("---\n%s---" % front_matter_yaml)
 
 
-def write_financial_year(year_slug, static_path):
+def write_financial_year(session, year_slug, static_path):
     url_path = '/%s' % year_slug
     print url_path
     url = portal_url + url_path[1:] + ".yaml"
-    r = requests.get(url)
+    r = session.get(url)
     r.raise_for_status()
     path = '_data%s/index.yaml' % static_path
 
@@ -118,18 +143,20 @@ def write_dataset_page(dataset_url_path, dataset_yaml):
              ))
 
 
+session = requests_session()
+
 # Basic Pages
 
-write_financial_year(max(YEAR_SLUGS), "")
+write_financial_year(session, max(YEAR_SLUGS), "")
 
 for year_slug in YEAR_SLUGS:
-    write_financial_year(year_slug, "/%s" % year_slug)
+    write_financial_year(session, year_slug, "/%s" % year_slug)
 
     for slug in BASIC_PAGE_SLUGS:
         url_path = '/%s/%s' % (year_slug, slug)
         print url_path
         url = portal_url + url_path[1:] + ".yaml"
-        r = requests.get(url)
+        r = session.get(url)
         r.raise_for_status()
         path = '_data%s.yaml' % url_path
 
@@ -144,7 +171,7 @@ for year_slug in YEAR_SLUGS:
 listing_url_path = '/contributed-data'
 print listing_url_path
 listing_url = portal_url + listing_url_path[1:] + '.yaml'
-r = requests.get(listing_url)
+r = session.get(listing_url)
 r.raise_for_status()
 listing_path = '_data%s.yaml' % listing_url_path
 
@@ -162,7 +189,7 @@ for dataset in listing['datasets']:
     dataset_context_path = '_data/' + dataset_path
     ensure_file_dirs(dataset_context_path)
 
-    r = requests.get(dataset_url)
+    r = session.get(dataset_url)
     r.raise_for_status()
     write_dataset_page(dataset['url_path'], r.text)
     with open(dataset_context_path, 'wb') as dataset_file:
@@ -174,7 +201,7 @@ for year_slug in YEAR_SLUGS:
     listing_url_path = '/%s/departments' % year_slug
     print listing_url_path
     listing_url = portal_url + listing_url_path[1:] + '.yaml'
-    r = requests.get(listing_url)
+    r = session.get(listing_url)
     r.raise_for_status()
     listing_path = '_data%s.yaml' % listing_url_path
 
@@ -193,7 +220,7 @@ for year_slug in YEAR_SLUGS:
                 department_context_path = '_data/' + department_path[1:]
                 ensure_file_dirs(department_context_path)
 
-                r = requests.get(department_url)
+                r = session.get(department_url)
                 r.raise_for_status()
                 write_department_page(department['url_path'], r.text)
                 with open(department_context_path, 'wb') as department_file:
