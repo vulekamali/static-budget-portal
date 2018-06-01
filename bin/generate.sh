@@ -29,6 +29,7 @@ regenerate_data() {
 if [ -z ${REMOTE_TRIGGER+x} ]
 then
     REMOTE_TRIGGER="false"
+fi
 
 if [ "${TRAVIS_PULL_REQUEST}" = "true" ]
 then
