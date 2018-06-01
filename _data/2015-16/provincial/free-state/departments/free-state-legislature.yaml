@@ -4,25 +4,25 @@ description: 'Free State department: Free State Legislature budget data for the 
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
-  - amount: 176646000.0
+  - amount: 176646000
     financial_year: 2011-12
     phase: Audited Outcome
-  - amount: 185482000.0
+  - amount: 185482000
     financial_year: 2012-13
     phase: Audited Outcome
-  - amount: 160731000.0
+  - amount: 160731000
     financial_year: 2013-14
     phase: Audited Outcome
-  - amount: 179186000.0
+  - amount: 179186000
     financial_year: 2014-15
     phase: Adjusted appropriation
-  - amount: 158255000.0
+  - amount: 158255000
     financial_year: 2015-16
     phase: Main appropriation
-  - amount: 165481000.0
+  - amount: 165481000
     financial_year: 2016-17
     phase: Medium Term Estimates
-  - amount: 173382000.0
+  - amount: 173382000
     financial_year: 2017-18
     phase: Medium Term Estimates
   real:
@@ -97,11 +97,11 @@ is_vote_primary: true
 name: Free State Legislature
 programmes:
 - name: Administration
-  total_budget: 97903000.0
+  total_budget: 97903000
 - name: Facilities For Members And Political Parties
-  total_budget: 28328000.0
+  total_budget: 28328000
 - name: Parliamentary Services
-  total_budget: 32024000.0
+  total_budget: 32024000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: free-state-legislature

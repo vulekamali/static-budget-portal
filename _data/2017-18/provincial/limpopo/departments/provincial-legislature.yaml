@@ -4,25 +4,25 @@ description: 'Limpopo department: Provincial Legislature budget data for the 201
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
-  - amount: 209924000.0
+  - amount: 209924000
     financial_year: 2013-14
     phase: Audited Outcome
-  - amount: 232260000.0
+  - amount: 232260000
     financial_year: 2014-15
     phase: Audited Outcome
-  - amount: 253262000.0
+  - amount: 253262000
     financial_year: 2015-16
     phase: Audited Outcome
-  - amount: 301632000.0
+  - amount: 301632000
     financial_year: 2016-17
     phase: Adjusted appropriation
-  - amount: 290593000.0
+  - amount: 290593000
     financial_year: 2017-18
     phase: Main appropriation
-  - amount: 305433000.0
+  - amount: 305433000
     financial_year: 2018-19
     phase: Medium Term Estimates
-  - amount: 323255000.0
+  - amount: 323255000
     financial_year: 2019-20
     phase: Medium Term Estimates
   real:
@@ -99,11 +99,11 @@ is_vote_primary: true
 name: Provincial Legislature
 programmes:
 - name: Administration
-  total_budget: 129084000.0
+  total_budget: 129084000
 - name: Facilities for Members and Political Parties
-  total_budget: 79664000.0
+  total_budget: 79664000
 - name: Parliamentary Services
-  total_budget: 81845000.0
+  total_budget: 81845000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: provincial-legislature

@@ -10,25 +10,25 @@ description: 'Western Cape department: Health budget data for the 2017-18 financ
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
-  - amount: 15916962000.0
+  - amount: 15916962000
     financial_year: 2013-14
     phase: Audited Outcome
-  - amount: 17305808000.0
+  - amount: 17305808000
     financial_year: 2014-15
     phase: Audited Outcome
-  - amount: 18737118000.0
+  - amount: 18737118000
     financial_year: 2015-16
     phase: Audited Outcome
-  - amount: 20144545000.0
+  - amount: 20144545000
     financial_year: 2016-17
     phase: Adjusted appropriation
-  - amount: 21679806000.0
+  - amount: 21679806000
     financial_year: 2017-18
     phase: Main appropriation
-  - amount: 22798527000.0
+  - amount: 22798527000
     financial_year: 2018-19
     phase: Medium Term Estimates
-  - amount: 24030698000.0
+  - amount: 24030698000
     financial_year: 2019-20
     phase: Medium Term Estimates
   real:
@@ -100,21 +100,21 @@ is_vote_primary: true
 name: Health
 programmes:
 - name: Administration
-  total_budget: 858793000.0
+  total_budget: 858793000
 - name: District Health Services
-  total_budget: 8719001000.0
+  total_budget: 8719001000
 - name: Emergency Medical Services
-  total_budget: 1034454000.0
+  total_budget: 1034454000
 - name: Provincial Hospital Services
-  total_budget: 3419143000.0
+  total_budget: 3419143000
 - name: Central Hospital Services
-  total_budget: 6077400000.0
+  total_budget: 6077400000
 - name: Health Sciences and Training
-  total_budget: 316453000.0
+  total_budget: 316453000
 - name: Health Care Support Services
-  total_budget: 439099000.0
+  total_budget: 439099000
 - name: Health Facilities Management
-  total_budget: 815463000.0
+  total_budget: 815463000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: health

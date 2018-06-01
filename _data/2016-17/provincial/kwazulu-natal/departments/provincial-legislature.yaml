@@ -4,25 +4,25 @@ description: 'KwaZulu-Natal department: Provincial Legislature budget data for t
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
-  - amount: 431718000.0
+  - amount: 431718000
     financial_year: 2012-13
     phase: Audited Outcome
-  - amount: 460929000.0
+  - amount: 460929000
     financial_year: 2013-14
     phase: Audited Outcome
-  - amount: 476027000.0
+  - amount: 476027000
     financial_year: 2014-15
     phase: Audited Outcome
-  - amount: 479262000.0
+  - amount: 479262000
     financial_year: 2015-16
     phase: Adjusted appropriation
-  - amount: 518652000.0
+  - amount: 518652000
     financial_year: 2016-17
     phase: Main appropriation
-  - amount: 538851000.0
+  - amount: 538851000
     financial_year: 2017-18
     phase: Medium Term Estimates
-  - amount: 569128000.0
+  - amount: 569128000
     financial_year: 2018-19
     phase: Medium Term Estimates
   real:
@@ -90,11 +90,11 @@ is_vote_primary: true
 name: Provincial Legislature
 programmes:
 - name: Administration
-  total_budget: 171165000.0
+  total_budget: 171165000
 - name: Parliamentary Business
-  total_budget: 269697000.0
+  total_budget: 269697000
 - name: Direct charge against the Provincial Revenue Fund
-  total_budget: 77790000.0
+  total_budget: 77790000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: provincial-legislature

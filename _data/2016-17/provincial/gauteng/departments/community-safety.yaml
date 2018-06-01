@@ -4,25 +4,25 @@ description: 'Gauteng department: Community Safety budget data for the 2016-17 f
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
-  - amount: 414662000.0
+  - amount: 414662000
     financial_year: 2012-13
     phase: Audited Outcome
-  - amount: 493481000.0
+  - amount: 493481000
     financial_year: 2013-14
     phase: Audited Outcome
-  - amount: 629606000.0
+  - amount: 629606000
     financial_year: 2014-15
     phase: Audited Outcome
-  - amount: 736081000.0
+  - amount: 736081000
     financial_year: 2015-16
     phase: Adjusted appropriation
-  - amount: 652880000.0
+  - amount: 652880000
     financial_year: 2016-17
     phase: Main appropriation
-  - amount: 677003000.0
+  - amount: 677003000
     financial_year: 2017-18
     phase: Medium Term Estimates
-  - amount: 718047000.0
+  - amount: 718047000
     financial_year: 2018-19
     phase: Medium Term Estimates
   real:
@@ -94,11 +94,11 @@ is_vote_primary: true
 name: Community Safety
 programmes:
 - name: Administration
-  total_budget: 95742000.0
+  total_budget: 95742000
 - name: Civilian Oversight
-  total_budget: 201351000.0
+  total_budget: 201351000
 - name: Traffic Management
-  total_budget: 355787000.0
+  total_budget: 355787000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: community-safety

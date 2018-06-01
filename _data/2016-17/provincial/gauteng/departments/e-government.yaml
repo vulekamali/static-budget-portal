@@ -4,25 +4,25 @@ description: 'Gauteng department: E-Government budget data for the 2016-17 finan
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
-  - amount: 1118628000.0
+  - amount: 1118628000
     financial_year: 2012-13
     phase: Audited Outcome
-  - amount: 1024284000.0
+  - amount: 1024284000
     financial_year: 2013-14
     phase: Audited Outcome
-  - amount: 1215022000.0
+  - amount: 1215022000
     financial_year: 2014-15
     phase: Audited Outcome
-  - amount: 1178803000.0
+  - amount: 1178803000
     financial_year: 2015-16
     phase: Adjusted appropriation
-  - amount: 1216132000.0
+  - amount: 1216132000
     financial_year: 2016-17
     phase: Main appropriation
-  - amount: 1271158000.0
+  - amount: 1271158000
     financial_year: 2017-18
     phase: Medium Term Estimates
-  - amount: 1077693000.0
+  - amount: 1077693000
     financial_year: 2018-19
     phase: Medium Term Estimates
   real:
@@ -88,13 +88,13 @@ is_vote_primary: true
 name: E-Government
 programmes:
 - name: Administration
-  total_budget: 225760000.0
+  total_budget: 225760000
 - name: Policy Planning, Strategy Development & Support Service
-  total_budget: 413618000.0
+  total_budget: 413618000
 - name: Solutions, Systems & Operations
-  total_budget: 552220000.0
+  total_budget: 552220000
 - name: Regulations, Compliance & Public Relations
-  total_budget: 24534000.0
+  total_budget: 24534000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: e-government

@@ -4,25 +4,25 @@ description: 'North West department: Provincial Legislature budget data for the 
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
-  - amount: 141013000.0
+  - amount: 141013000
     financial_year: 2011-12
     phase: Audited Outcome
-  - amount: 160920000.0
+  - amount: 160920000
     financial_year: 2012-13
     phase: Audited Outcome
-  - amount: 185892000.0
+  - amount: 185892000
     financial_year: 2013-14
     phase: Audited Outcome
-  - amount: 285657000.0
+  - amount: 285657000
     financial_year: 2014-15
     phase: Adjusted appropriation
-  - amount: 244079000.0
+  - amount: 244079000
     financial_year: 2015-16
     phase: Main appropriation
-  - amount: 259501000.0
+  - amount: 259501000
     financial_year: 2016-17
     phase: Medium Term Estimates
-  - amount: 275472000.0
+  - amount: 275472000
     financial_year: 2017-18
     phase: Medium Term Estimates
   real:
@@ -95,9 +95,9 @@ is_vote_primary: true
 name: Provincial Legislature
 programmes:
 - name: Administration
-  total_budget: 115260000.0
+  total_budget: 115260000
 - name: Legislature operations
-  total_budget: 128819000.0
+  total_budget: 128819000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: provincial-legislature

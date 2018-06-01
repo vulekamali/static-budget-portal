@@ -4,25 +4,25 @@ description: 'Western Cape department: Local Government budget data for the 2016
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
-  - amount: 160609000.0
+  - amount: 160609000
     financial_year: 2012-13
     phase: Audited Outcome
-  - amount: 172062000.0
+  - amount: 172062000
     financial_year: 2013-14
     phase: Audited Outcome
-  - amount: 197479000.0
+  - amount: 197479000
     financial_year: 2014-15
     phase: Audited Outcome
-  - amount: 218372000.0
+  - amount: 218372000
     financial_year: 2015-16
     phase: Adjusted appropriation
-  - amount: 217899000.0
+  - amount: 217899000
     financial_year: 2016-17
     phase: Main appropriation
-  - amount: 231309000.0
+  - amount: 231309000
     financial_year: 2017-18
     phase: Medium Term Estimates
-  - amount: 244120000.0
+  - amount: 244120000
     financial_year: 2018-19
     phase: Medium Term Estimates
   real:
@@ -84,13 +84,13 @@ is_vote_primary: true
 name: Local Government
 programmes:
 - name: Administration
-  total_budget: 39174000.0
+  total_budget: 39174000
 - name: Local Governance
-  total_budget: 116742000.0
+  total_budget: 116742000
 - name: Development and Planning
-  total_budget: 61982000.0
+  total_budget: 61982000
 - name: Traditional Institutional Management
-  total_budget: 1000.0
+  total_budget: 1000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: local-government

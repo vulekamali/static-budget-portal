@@ -4,25 +4,25 @@ description: 'Gauteng department: Health budget data for the 2015-16 financial y
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
-  - amount: 23666337000.0
+  - amount: 23666337000
     financial_year: 2011-12
     phase: Audited Outcome
-  - amount: 26834347000.0
+  - amount: 26834347000
     financial_year: 2012-13
     phase: Audited Outcome
-  - amount: 27415801000.0
+  - amount: 27415801000
     financial_year: 2013-14
     phase: Audited Outcome
-  - amount: 31491180000.0
+  - amount: 31491180000
     financial_year: 2014-15
     phase: Adjusted appropriation
-  - amount: 34175179000.0
+  - amount: 34175179000
     financial_year: 2015-16
     phase: Main appropriation
-  - amount: 36659306000.0
+  - amount: 36659306000
     financial_year: 2016-17
     phase: Medium Term Estimates
-  - amount: 39080495000.0
+  - amount: 39080495000
     financial_year: 2017-18
     phase: Medium Term Estimates
   real:
@@ -97,21 +97,21 @@ is_vote_primary: true
 name: Health
 programmes:
 - name: Administration
-  total_budget: 561193000.0
+  total_budget: 561193000
 - name: District Health Services
-  total_budget: 11420846000.0
+  total_budget: 11420846000
 - name: Emergency Medical Services
-  total_budget: 1086491000.0
+  total_budget: 1086491000
 - name: Provincial Hospital Services
-  total_budget: 6698750000.0
+  total_budget: 6698750000
 - name: Central Hospital Services
-  total_budget: 11783047000.0
+  total_budget: 11783047000
 - name: Health Sciences and Training
-  total_budget: 916550000.0
+  total_budget: 916550000
 - name: Health Care Support Services
-  total_budget: 260329000.0
+  total_budget: 260329000
 - name: Health Facilities Management
-  total_budget: 1447973000.0
+  total_budget: 1447973000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: health

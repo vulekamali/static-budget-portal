@@ -4,25 +4,25 @@ description: 'Mpumalanga department: Provincial Legislature budget data for the 
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
-  - amount: 210057000.0
+  - amount: 210057000
     financial_year: 2012-13
     phase: Audited Outcome
-  - amount: 229317000.0
+  - amount: 229317000
     financial_year: 2013-14
     phase: Audited Outcome
-  - amount: 262138000.0
+  - amount: 262138000
     financial_year: 2014-15
     phase: Audited Outcome
-  - amount: 296275000.0
+  - amount: 296275000
     financial_year: 2015-16
     phase: Adjusted appropriation
-  - amount: 273423000.0
+  - amount: 273423000
     financial_year: 2016-17
     phase: Main appropriation
-  - amount: 294834000.0
+  - amount: 294834000
     financial_year: 2017-18
     phase: Medium Term Estimates
-  - amount: 313131000.0
+  - amount: 313131000
     financial_year: 2018-19
     phase: Medium Term Estimates
   real:
@@ -80,9 +80,9 @@ is_vote_primary: true
 name: Provincial Legislature
 programmes:
 - name: Administration
-  total_budget: 143602000.0
+  total_budget: 143602000
 - name: Parliamentary Business
-  total_budget: 129821000.0
+  total_budget: 129821000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: provincial-legislature

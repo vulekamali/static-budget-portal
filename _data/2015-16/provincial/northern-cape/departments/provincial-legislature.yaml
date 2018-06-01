@@ -4,25 +4,25 @@ description: 'Northern Cape department: Provincial Legislature budget data for t
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
-  - amount: 108085000.0
+  - amount: 108085000
     financial_year: 2011-12
     phase: Audited Outcome
-  - amount: 117258000.0
+  - amount: 117258000
     financial_year: 2012-13
     phase: Audited Outcome
-  - amount: 121891000.0
+  - amount: 121891000
     financial_year: 2013-14
     phase: Audited Outcome
-  - amount: 136877000.0
+  - amount: 136877000
     financial_year: 2014-15
     phase: Adjusted appropriation
-  - amount: 171597000.0
+  - amount: 171597000
     financial_year: 2015-16
     phase: Main appropriation
-  - amount: 141449000.0
+  - amount: 141449000
     financial_year: 2016-17
     phase: Medium Term Estimates
-  - amount: 148521000.0
+  - amount: 148521000
     financial_year: 2017-18
     phase: Medium Term Estimates
   real:
@@ -96,11 +96,11 @@ is_vote_primary: true
 name: Provincial Legislature
 programmes:
 - name: Administration
-  total_budget: 87946000.0
+  total_budget: 87946000
 - name: Facilities for Members and Political Parties
-  total_budget: 40842000.0
+  total_budget: 40842000
 - name: Parliamentary Services
-  total_budget: 42809000.0
+  total_budget: 42809000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: provincial-legislature

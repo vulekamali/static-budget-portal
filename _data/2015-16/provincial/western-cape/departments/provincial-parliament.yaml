@@ -4,25 +4,25 @@ description: 'Western Cape department: Provincial Parliament budget data for the
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
-  - amount: 77741000.0
+  - amount: 77741000
     financial_year: 2011-12
     phase: Audited Outcome
-  - amount: 91047000.0
+  - amount: 91047000
     financial_year: 2012-13
     phase: Audited Outcome
-  - amount: 103122000.0
+  - amount: 103122000
     financial_year: 2013-14
     phase: Audited Outcome
-  - amount: 111722000.0
+  - amount: 111722000
     financial_year: 2014-15
     phase: Adjusted appropriation
-  - amount: 117180000.0
+  - amount: 117180000
     financial_year: 2015-16
     phase: Main appropriation
-  - amount: 118112000.0
+  - amount: 118112000
     financial_year: 2016-17
     phase: Medium Term Estimates
-  - amount: 124392000.0
+  - amount: 124392000
     financial_year: 2017-18
     phase: Medium Term Estimates
   real:
@@ -88,11 +88,11 @@ is_vote_primary: true
 name: Provincial Parliament
 programmes:
 - name: Administration
-  total_budget: 52384000.0
+  total_budget: 52384000
 - name: Facilities for Members and Political Parties
-  total_budget: 41219000.0
+  total_budget: 41219000
 - name: Parliamentary Services
-  total_budget: 23577000.0
+  total_budget: 23577000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: provincial-parliament
