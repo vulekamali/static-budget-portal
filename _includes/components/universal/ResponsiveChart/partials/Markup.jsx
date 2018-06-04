@@ -12,13 +12,14 @@ export default function Markup(props) {
     hover,
   } = props;
 
-  const { parentAction } = props;
+  const { getNode } = props;
+
 
   if (type === 'bar') {
     return (
       <BarChart
         scale={1}
-        {...{ parentAction, items, width, guides, hover }}
+        {...{ getNode, items, width, guides, hover }}
       />
     );
   }
@@ -26,7 +27,7 @@ export default function Markup(props) {
   if (type === 'line') {
     return (
       <LineChart
-        {...{ parentAction, width, items, guides, hover }}
+        {...{ getNode, width, items, guides, hover }}
       />
     );
   }

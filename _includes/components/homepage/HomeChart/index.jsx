@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import BarChart from './../../universal/BarChart/index.jsx';
+import ResponsiveChart from './../../universal/ResponsiveChart/index.jsx';
 import ValueBlocks from './../ValueBlocks/index.jsx';
 
 export default function HomeChart(props) {
@@ -14,11 +14,10 @@ export default function HomeChart(props) {
 
   const withValues = (
     <div className="Section-card">
-      <BarChart
+      <ResponsiveChart
         name="programmes-chart"
-        guides={!mobile}
-        hover={!mobile}
-        {...{ width, parentAction, items }}
+        type="bar"
+        {...{ items }}
       />
     </div>
   );
