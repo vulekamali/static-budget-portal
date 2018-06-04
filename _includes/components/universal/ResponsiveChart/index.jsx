@@ -32,10 +32,10 @@ export default class ResponsiveChart extends Component {
       viewportChangeWrap,
     );
 
-    this.static.intervalRefresh = window.setInterval(
-      this.events.viewportChange,
-      2000,
-    );
+    // this.static.intervalRefresh = window.setInterval(
+    //   this.events.viewportChange,
+    //   2000,
+    // );
   }
 
 
