@@ -16,7 +16,13 @@ export default function LineChart(props) {
     hover
   } = props;
 
-  const { parentAction } = props;
+  const { getNode } = props;
+
+
+  if (!width) {
+    return <div className="LineChart" ref={node => getNode && getNode(node)} />;
+  }
+
 
   let styling = {
     fontSize: 14,
@@ -76,7 +82,7 @@ export default function LineChart(props) {
   return (
     <div
       className="LineChart"
-      ref={node => parentAction && parentAction(node)}
+      ref={node => getNode && getNode(node)}
     >
       {content}
     </div>

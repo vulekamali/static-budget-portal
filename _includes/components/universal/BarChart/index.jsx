@@ -23,7 +23,11 @@ export default function BarChart(props) {
     download,
   } = props;
 
-  const { parentAction } = props;
+  const { getNode } = props;
+
+  if (!width) {
+    return <div className="LineChart" ref={node => getNode && getNode(node)} />;
+  }
 
   let content = null;
 
@@ -129,7 +133,7 @@ export default function BarChart(props) {
     return (
       <div
         className="BarChart"
-        ref={node => parentAction && parentAction(node)}
+        ref={node => getNode && getNode(node)}
       >
         {content}
       </div>
