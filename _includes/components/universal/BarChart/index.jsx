@@ -26,7 +26,13 @@ export default function BarChart(props) {
   const { getNode } = props;
 
   if (!width) {
-    return <div className="LineChart" ref={node => getNode && getNode(node)} />;
+    const loader = <div className="Loader u-marginTop50 u-marginLeftAuto u-marginRightAuto u-marginBottom40" />;
+
+    return (
+      <div className="LineChart" ref={node => getNode && getNode(node)}>
+        {loader}
+      </div>
+    );
   }
 
   let content = null;

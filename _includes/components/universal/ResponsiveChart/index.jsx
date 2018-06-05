@@ -35,15 +35,19 @@ export default class ResponsiveChart extends Component {
 
 
   componentDidMount() {
-    const { viewportChange } = this.events;
-    const { resizeAction } = this.props;
+    const delayedComponentMountedTasks = () => {
+      const { viewportChange } = this.events;
+      const { resizeAction } = this.props;
 
-    if (viewportChange) {
-      const width = viewportChange();
-      return resizeAction ? resizeAction(width) : null;
-    }
+      if (viewportChange) {
+        const width = viewportChange();
+        return resizeAction ? resizeAction(width) : null;
+      }
 
-    return resizeAction;
+      return resizeAction;
+    };
+
+    return window.setTimeout(delayedComponentMountedTasks, 2000);
   }
 
 

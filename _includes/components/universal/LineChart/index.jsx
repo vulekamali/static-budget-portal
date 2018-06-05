@@ -20,7 +20,13 @@ export default function LineChart(props) {
 
 
   if (!width) {
-    return <div className="LineChart" ref={node => getNode && getNode(node)} />;
+    const loader = <div className="Loader u-marginTop50 u-marginLeftAuto u-marginRightAuto u-marginBottom40" />;
+
+    return (
+      <div className="LineChart" ref={node => getNode && getNode(node)}>
+        {loader}
+      </div>
+    );
   }
 
 
