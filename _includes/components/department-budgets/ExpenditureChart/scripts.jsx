@@ -22,13 +22,13 @@ class ExpenditureChartContainer extends Component {
     this.events = {
       downloadAction: this.downloadAction.bind(this),
       canvasAction: this.canvasAction.bind(this),
-      widthAction: this.widthAction.bind(this),
+      resizeAction: this.resizeAction.bind(this),
       changeSource: this.changeSource.bind(this),
     };
   }
 
 
-  widthAction(val) {
+  resizeAction(val) {
     if (val > 600 && this.state.type !== 'line') {
       return this.setState({ type: 'line' });
     }
@@ -82,7 +82,7 @@ class ExpenditureChartContainer extends Component {
   render() {
     const { items, year, files, location, phaseTable, cpi } = this.props;
     const { width, mobile, source, type } = this.state;
-    const { downloadAction, canvasAction, widthAction, changeSource } = this.events;
+    const { downloadAction, canvasAction, resizeAction, changeSource } = this.events;
 
     return (
       <ExpenditureChart
@@ -101,7 +101,7 @@ class ExpenditureChartContainer extends Component {
 
           downloadAction,
           canvasAction,
-          widthAction,
+          resizeAction,
           changeSource,
         }}
       />

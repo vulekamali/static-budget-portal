@@ -31,30 +31,29 @@ export default class ResponsiveChart extends Component {
       'resize',
       viewportChangeWrap,
     );
-
-    // this.static.intervalRefresh = window.setInterval(
-    //   this.events.viewportChange,
-    //   2000,
-    // );
   }
 
 
   componentDidMount() {
     const { viewportChange } = this.events;
+    const { resizeAction } = this.props;
 
     if (viewportChange) {
-      return viewportChange();
+      const width = viewportChange();
+      return resizeAction ? resizeAction(width) : null;
     }
 
-    return null;
+    return resizeAction;
   }
 
 
   componentDidUpdate() {
     const { viewportChange } = this.events;
+    const { resizeAction } = this.props;
 
     if (viewportChange) {
-      return viewportChange();
+      const width = viewportChange();
+      return resizeAction ? resizeAction(width) : null;
     }
 
     return null;
@@ -76,7 +75,7 @@ export default class ResponsiveChart extends Component {
     const { node } = this.static || {};
     const { mobile, width: currentWidth } = this.state;
     const { minWidth, breakpoint } = this.props;
-    const newWidth = node.offsetWidth;
+    const newWidth = node ? node.offsetWidth : null;
 
     if (mobile && window.innerWidth >= breakpoint) {
       this.setState({ mobile: false });
@@ -89,10 +88,10 @@ export default class ResponsiveChart extends Component {
         return this.setState({ width: minWidth });
       }
 
-      return this.setState({ width: newWidth });
+      this.setState({ width: newWidth });
     }
 
-    return null;
+    return newWidth || null;
   }
 
 
@@ -116,12 +115,14 @@ ResponsiveChart.propTypes = {
   type: PropTypes.oneOf(['bar', 'line']),
   minWidth: PropTypes.number,
   breakpoint: PropTypes.number,
+  resizeAction: PropTypes.func,
   items: PropTypes.objectOf(PropTypes.arrayOf(PropTypes.number)).isRequired,
 };
 
 
 ResponsiveChart.defaultProps = {
   type: 'bar',
+  resizeAction: null,
   minWidth: 250,
   breakpoint: 600,
 };
