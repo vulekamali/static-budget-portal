@@ -51,7 +51,7 @@ export default function ProgrammesChart(props) {
     'Estimates of Provincial Revenue and Expenditure (EPRE)';
 
   return (
-    <div className="Section is-bevel" id="programmes-chart">
+    <div className="Section is-bevel">
       <canvas ref={node => canvasAction(node)} style={{ display: 'none' }} />
       <div className="ProgrammesChart">
         <div className="ProgrammesChart-info">

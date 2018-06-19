@@ -30,6 +30,7 @@ layout: page-shell
 
     <div class="u-marginTop20">
       <div
+        id="programmes-chart"
         class="js-initProgrammesChart"
         data-values="{ &quot;data&quot;: {{ page_data.programmes | jsonify | escape }} }"
         data-year="{{ page.financial_year }}"
@@ -42,6 +43,7 @@ layout: page-shell
 
     <div class="u-marginTop20">
       <div
+        id="line-chart"
         class="js-initExpenditureChart"
         data-adjusted="{ &quot;data&quot;:  {{ page_data.expenditure_over_time.real | jsonify | escape }} }"
         data-not-adjusted="{ &quot;data&quot;: {{ page_data.expenditure_over_time.nominal | jsonify | escape }} }"
