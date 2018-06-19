@@ -2,11 +2,16 @@ import arrayFrom from 'array.from';
 import promisePolyfill from 'promise-polyfill';
 import every from 'array.prototype.every';
 import findIndex from 'array.prototype.findindex';
+import assign from 'object.assign';
 
 
 function polyfillOldFeatures() {
   if (!window.Array.findIndex) {
     findIndex.shim();
+  }
+
+  if (!window.Object.assign) {
+    window.Object.assign = assign.getPolyfill();
   }
 
   if (!window.Array.from) {

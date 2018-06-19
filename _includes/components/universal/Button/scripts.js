@@ -2,7 +2,7 @@ function scripts() {
   const nodesList = document.getElementsByClassName('Button js-pageLoad ');
 
   for (let i = 0; i < nodesList.length; i++) {
-    if (CSS && CSS.supports('animation-name', 'spin')) {
+    if (window.CSS && window.CSS.supports('animation-name', 'spin')) {
       const node = nodesList[i];
       const addLoader = (event) => {
         event.target.innerHTML = '&nbsp;<div class="Button-loader"></div>';
