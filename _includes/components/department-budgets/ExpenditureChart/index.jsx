@@ -32,7 +32,7 @@ export default function ExpenditureChart(props) {
     'Estimates of Provincial Revenue and Expenditure (EPRE)';
 
   return (
-    <div className="Section is-bevel" id="line-chart">
+    <div className="Section is-bevel">
       <canvas ref={node => canvasAction(node)} style={{ display: 'none' }} />
       <div className="ExpenditureChart">
         <div className="ExpenditureChart-info">
