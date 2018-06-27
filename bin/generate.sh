@@ -25,10 +25,16 @@ regenerate_data() {
     python generate/from_dynamic.py 1>&2
 }
 
+# Initialise REMOTE_TRIGGER if it isn't set.
+if [ -z ${REMOTE_TRIGGER+x} ]
+then
+    REMOTE_TRIGGER="false"
+fi
+
 if [ "${TRAVIS_PULL_REQUEST}" = "true" ]
 then
     echo "Ignoring pull request"
-elif [[ "${TRAVIS_COMMIT_MESSAGE}" == *"[ci]"* ]]
+elif [[ "${TRAVIS_COMMIT_MESSAGE}" == *"[ci]"* ]] || [[ "${REMOTE_TRIGGER}" == "true" ]]
 then
 
     DATA_ENVIRONMENT=$(regenerate_data)
