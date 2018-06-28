@@ -27,7 +27,10 @@ regenerate_data() {
 
 # Initialise REMOTE_TRIGGER if it isn't set.
 # https://stackoverflow.com/questions/3601515/how-to-check-if-a-variable-is-set-in-bash/13864829#13864829
-if [ -z ${REMOTE_TRIGGER+} ]
+# Since we use -u to error when variables are unexpectedly not set, we use
+# conditional substitution (+notnull) so that the conditional expression
+# below doesn't error, and its result be true if REMOTE_TRIGGER wasn't set.
+if [ -z ${REMOTE_TRIGGER+notnull} ]
 then
     REMOTE_TRIGGER="false"
 fi
