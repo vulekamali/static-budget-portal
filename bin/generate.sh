@@ -26,7 +26,8 @@ regenerate_data() {
 }
 
 # Initialise REMOTE_TRIGGER if it isn't set.
-if [ -z ${REMOTE_TRIGGER} ]
+# https://stackoverflow.com/questions/3601515/how-to-check-if-a-variable-is-set-in-bash/13864829#13864829
+if [ -z ${REMOTE_TRIGGER+} ]
 then
     REMOTE_TRIGGER="false"
 fi
