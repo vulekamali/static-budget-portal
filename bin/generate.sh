@@ -26,7 +26,7 @@ regenerate_data() {
 }
 
 # Initialise REMOTE_TRIGGER if it isn't set.
-if [ -z ${REMOTE_TRIGGER+x} ]
+if [ -z ${REMOTE_TRIGGER} ]
 then
     REMOTE_TRIGGER="false"
 fi

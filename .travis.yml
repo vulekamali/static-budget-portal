@@ -5,3 +5,6 @@ cache: pip
 script: bin/generate.sh
 git:
   depth: 3
+branches:
+  except:
+  - master
