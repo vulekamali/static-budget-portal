@@ -40,6 +40,10 @@ then
     echo "Ignoring pull request"
 elif [[ "${TRAVIS_COMMIT_MESSAGE}" == *"[ci]"* ]] || [[ "${REMOTE_TRIGGER}" == "true" ]]
 then
+    setup_git
+    git log -n 2
+    git pull origin $TRAVIS_BRANCH
+    git log -n 2
 
     DATA_ENVIRONMENT=$(regenerate_data)
 
@@ -50,7 +54,8 @@ then
     if ! git diff-index --quiet HEAD --; then
         # save changes
         git add .
-        setup_git
+        # !!! ENSURE WE DON'T COMMIT PLAINTEXT DEPLOY PRIVATE KEY !!!
+        git reset -- deploy_key
         git commit -m "Updated data via TravisCI using ${DATA_ENVIRONMENT} data server"
 
         echo "Deploying to GitHub"
