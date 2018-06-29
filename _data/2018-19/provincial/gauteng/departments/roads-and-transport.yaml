@@ -95,7 +95,15 @@ sphere:
   name: Provincial
   slug: provincial
 title: Roads And Transport budget 2018-19  - vulekamali
-treasury_datasets: {}
+treasury_datasets:
+  EPRE for Vote 9 - Roads And Transport:
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/c8a5e296-d8f6-4c01-81b2-10d1f013a2dd/resource/dfdbfcec-35b1-413e-9f42-617e72af5829/download/gt-vote-09-roads-and-transport.pdf
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/c8a5e296-d8f6-4c01-81b2-10d1f013a2dd/resource/8049545e-d3d5-4a17-a21b-59e236aeb4f8/download/gt-roads-and-transport.xlsm
 vote_number: 9
 vote_primary:
   name: Roads And Transport
