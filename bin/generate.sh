@@ -41,9 +41,9 @@ then
 elif [[ "${TRAVIS_COMMIT_MESSAGE}" == *"[ci]"* ]] || [[ "${REMOTE_TRIGGER}" == "true" ]]
 then
     setup_git
-    git log | head
+    git log -n 2
     git pull origin $TRAVIS_BRANCH
-    git log | head
+    git log -n 2
 
     DATA_ENVIRONMENT=$(regenerate_data)
     date > forcedcommit
