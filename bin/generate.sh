@@ -54,6 +54,7 @@ then
     if ! git diff-index --quiet HEAD --; then
         # save changes
         git add .
+        git reset -- deploy_key
         git commit -m "Updated data via TravisCI using ${DATA_ENVIRONMENT} data server"
 
         echo "Deploying to GitHub"
