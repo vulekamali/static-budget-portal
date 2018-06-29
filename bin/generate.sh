@@ -46,7 +46,6 @@ then
     git log -n 2
 
     DATA_ENVIRONMENT=$(regenerate_data)
-    date > forcedcommit
 
     # DEBUG
     git status
