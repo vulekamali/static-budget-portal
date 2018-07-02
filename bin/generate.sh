@@ -26,7 +26,11 @@ regenerate_data() {
 }
 
 # Initialise REMOTE_TRIGGER if it isn't set.
-if [ -z ${REMOTE_TRIGGER+x} ]
+# https://stackoverflow.com/questions/3601515/how-to-check-if-a-variable-is-set-in-bash/13864829#13864829
+# Since we use -u to error when variables are unexpectedly not set, we use
+# conditional substitution (+notnull) so that the conditional expression
+# below doesn't error, and its result be true if REMOTE_TRIGGER wasn't set.
+if [ -z ${REMOTE_TRIGGER+notnull} ]
 then
     REMOTE_TRIGGER="false"
 fi
@@ -36,6 +40,10 @@ then
     echo "Ignoring pull request"
 elif [[ "${TRAVIS_COMMIT_MESSAGE}" == *"[ci]"* ]] || [[ "${REMOTE_TRIGGER}" == "true" ]]
 then
+    setup_git
+    git log -n 2
+    git pull origin $TRAVIS_BRANCH
+    git log -n 2
 
     DATA_ENVIRONMENT=$(regenerate_data)
 
@@ -46,7 +54,8 @@ then
     if ! git diff-index --quiet HEAD --; then
         # save changes
         git add .
-        setup_git
+        # !!! ENSURE WE DON'T COMMIT PLAINTEXT DEPLOY PRIVATE KEY !!!
+        git reset -- deploy_key
         git commit -m "Updated data via TravisCI using ${DATA_ENVIRONMENT} data server"
 
         echo "Deploying to GitHub"
