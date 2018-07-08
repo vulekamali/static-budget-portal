@@ -7,7 +7,7 @@ Front-end is built on [Jekyll](https://jekyllrb.com/), [React Create App](https:
 
 ### Jekyll
 - Architecture is located in the root of project
-- Follows conventions established in [Jekyll Docs]
+- Follows conventions established in [Jekyll Docs](https://jekyllrb.com/docs/home/)
 
 Get started as follows:
 1. Get Jekyll set up via [the following instructions](https://jekyllrb.com/docs/installation/).
