@@ -1,0 +1,34 @@
+
+.ReactVideoEmbed-embed {
+  line-height: 0;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  background: black;
+  margin: 10px 0 20px;
+}
+
+.ReactVideoEmbed-embedInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.ReactVideoEmbed-iframe {
+  border: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ReactVideoEmbed-modal {
+  width: 100%;
+}

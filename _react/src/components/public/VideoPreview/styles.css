@@ -1,0 +1,68 @@
+.VideoPreview {
+  height: 310px;
+  border-radius: 10px;
+  overflow: hidden; }
+  @media screen and (min-width: 500px) {
+    .VideoPreview {
+      height: 376px; } }
+  @media screen and (min-width: 750px) {
+    .VideoPreview {
+      height: 212px; } }
+
+.VideoPreview-thumbnail {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.VideoPreview-img {
+  width: 100%; }
+
+.VideoPreview-title {
+  font-size: 16px;
+  font-weight: 700; }
+
+.VideoPreview-block {
+  padding-top: 0.75em; }
+
+.VideoPreview-icon {
+  background: grey;
+  border-radius: 50%;
+  fill: white;
+  width: 60px;
+  height: 60px;
+  padding: 18px 20px;
+  position: relative; }
+  .VideoPreview-icon::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    top: -2px;
+    left: -2px;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid grey;
+    opacity: 0.8;
+    transition: transform 0.4s, opacity 0.3s; }
+  .VideoPreview-preview:hover .VideoPreview-icon::before {
+    transform: scale(1.2);
+    opacity: 0.4; }
+
+.VideoPreview-preview {
+  cursor: pointer;
+  height: 169px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.VideoPreview-buttons {
+  display: none; }
+  @media screen and (min-width: 500px) {
+    .VideoPreview-buttons {
+      display: block; } }

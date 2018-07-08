@@ -1,0 +1,17 @@
+@keyframes ReactLoader_spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.ReactLoader {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 10px solid transparent;
+  border-top: 5px solid grey;
+  border-radius: 50%;
+  animation-name: ReactLoader_spin;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }

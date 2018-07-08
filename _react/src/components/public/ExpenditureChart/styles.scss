@@ -1,0 +1,98 @@
+.ExpenditureChart-table {
+  margin-top: 20px;
+  border: 1px solid #3f3f3f;
+  font-size: 11px;
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+}
+
+.ExpenditureChart-heading {
+  padding: 5px 10px;
+  border: 1px solid #3f3f3f;
+  text-align: left;
+}
+
+.ExpenditureChart-cell {
+  padding: 5px 10px;
+  border: 1px solid #3f3f3f;
+}
+
+.ExpenditureChart-inflation {
+  text-align: center;
+  font-family: verdana;
+  font-size: 11px;
+}
+
+.ExpenditureChart-radio {
+  display: block;
+  padding: 10px 0;
+
+  @media screen and (min-width: 500px) {
+    display: inline-block;
+    padding: 0;
+  }
+}
+
+.ExpenditureChart-share {
+  max-width: 250px;
+}
+
+.ExpenditureChart-inner {
+  @media screen and (min-width: 750px) {
+    display: flex;
+  }
+}
+
+.ExpenditureChart-info {
+  padding: 25px 30px 35px;
+
+  @media screen and (min-width: 750px) {
+    width: 40%;
+  }
+}
+
+.ExpenditureChart-chart {
+  @media screen and (min-width: 750px) {
+    width: 60%;
+  }
+}
+
+.ExpenditureChart {
+  background: #e6e6e6;
+  padding: 10px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: 1px solid #d2d2d2;
+  text-align: left;
+  font-size: 14px;
+  display: block;
+  color: #3f3f3f;
+  text-decoration: none;
+  width: 100%;
+}
+
+
+
+
+
+
+
+// .ProgrammesChart-share {
+//   max-width: 250px;
+// }
+
+// .ProgrammesChart {
+
+// }
+
+// .ProgrammesChart-subHeading {
+//   margin: 0 0 10px;
+//   font-size: 18px;
+//   font-weight: 700;
+//   font-weight: 900;
+//   display: block;
+// }
+
+// .ProgrammesChart-chart {
+
+// }

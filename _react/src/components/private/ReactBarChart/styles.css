@@ -1,0 +1,12 @@
+.ReactBartChart {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.ReactBartChart-svg {
+  overflow: hidden; }
+
+.ReactBartChart-svg.is-hoverable .ReactBartChart-tooltip {
+  opacity: 0; }
+  .ReactBartChart-svg.is-hoverable .ReactBartChart-tooltip:hover {
+    opacity: 1; }

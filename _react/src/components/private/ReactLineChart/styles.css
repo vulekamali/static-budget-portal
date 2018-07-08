@@ -1,0 +1,12 @@
+.ReactLineChart {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.ColumnChart-svg {
+  overflow: hidden; }
+
+.ColumnChart-svg.is-hoverable .ColumnChart-tooltip {
+  opacity: 0; }
+  .ColumnChart-svg.is-hoverable .ColumnChart-tooltip:hover {
+    opacity: 1; }

@@ -29,10 +29,32 @@ layout: page-shell
         <div class="Section-title">The Budget Process and Public Participation</div>
         <p>National Treasury, departments and commitees are busy with different things depending on the time of year:</p>
       </div>
-      <div class="Section-card">
+      <div class="Section-card u-mb-3">
         <div class="js-initParticipate"></div>
       </div>
-    </div>
 
+      <div
+        class="VideoPreview u-mb-3"
+        data-component="VideoPreview"
+        data-title="{{ site.data.videos.data[3].title }}"
+        data-description="{{ site.data.videos.data[3].description }}"
+        data-selected="English"
+        data-languages='{{ site.data.videos.data[3].languages | jsonify | escape }}'  
+      >
+        <div class="ReactPlaceholder">&nbsp;</div>
+      </div>
+
+      <div
+        class="VideoPreview"
+        data-component="VideoPreview"
+        data-title="{{ site.data.videos.data[4].title }}"
+        data-description="{{ site.data.videos.data[4].description }}"
+        data-selected="English"
+        data-languages='{{ site.data.videos.data[4].languages | jsonify | escape }}'  
+      >
+        <div class="ReactPlaceholder">&nbsp;</div>
+      </div>
+
+    </div>
   </main>
 </div>

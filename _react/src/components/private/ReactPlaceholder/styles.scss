@@ -1,0 +1,22 @@
+@keyframes ReactPlaceholder_shimmer {
+  from {
+    background-position: -1000px 0;
+  }
+
+  to {
+    background-position: 1000px 0;
+  }
+}
+
+.ReactPlaceholder {
+  height: 100%;
+  width: 100%;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: ReactPlaceholder_shimmer;
+  animation-timing-function: linear;
+  background: #ebebeb;
+  background: linear-gradient(to right, #ebebeb 0%, #e0e0e0 20%, #ebebeb 40%);
+  background-size: 2000px 2000px;
+  position: relative;
+}
