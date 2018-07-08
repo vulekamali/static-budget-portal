@@ -12,28 +12,29 @@ export default class ProgrammesChart extends Component {
     super(props);
 
     this.events = {
-      ReactDownloadAction: this.ReactDownloadAction.bind(this),
+      downloadAction: this.downloadAction.bind(this),
       canvasAction: this.canvasAction.bind(this),
     };
   }
 
 
-  ReactDownloadAction() {
+  downloadAction() {
+    const { department, location, year, items } = this.props;
     canvg(this.canvas, renderToString(
       <ReactBarChart
         scale={1.5}
-        ReactDownload={{
-          heading: this.props.department,
-          subReactHeading: `${this.props.location} Department Budget for ${this.props.year}`,
+        download={{
+          heading: department,
+          subReactHeading: `${location} Department Budget for ${year}`,
           type: 'Programme budgets chart',
         }}
-        items={this.props.items}
+        items={items}
         guides
         width={900}
       />,
     ));
 
-    downloadjs(this.canvas.toDataURL(), `${this.props.department}.png`, 'image/png');
+    downloadjs(this.canvas.toDataURL(), `${department}.png`, 'image/png');
   }
 
 
@@ -45,7 +46,7 @@ export default class ProgrammesChart extends Component {
   render() {
     const { hasNull } = this;
     const { items, files, year, deptLocation } = this.props;
-    const { ReactDownloadAction, canvasAction } = this.events;
+    const { downloadAction, canvasAction } = this.events;
 
     return (
       <Markup
@@ -55,7 +56,7 @@ export default class ProgrammesChart extends Component {
           items,
           files,
           year,
-          ReactDownloadAction,
+          downloadAction,
           canvasAction,
         }}
       />

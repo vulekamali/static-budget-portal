@@ -22,7 +22,7 @@ export default function ReactBartChart(props) {
     hover,
     guides,
     scale = 1,
-    ReactDownload,
+    download,
   } = props;
 
   const { getNode } = props;
@@ -68,8 +68,8 @@ export default function ReactBartChart(props) {
     };
   }
 
-  if (ReactDownload) {
-    const titleArray = breakIntoWrap(ReactDownload.heading, 33);
+  if (download) {
+    const titleArray = breakIntoWrap(download.heading, 33);
 
     styling = {
       ...styling,
@@ -106,14 +106,14 @@ export default function ReactBartChart(props) {
         style={{ maxWidth: newWidth * (scale || 1) }}
       >
 
-        {ReactDownload ? background : null}
+        {download ? background : null}
 
-        { ReactDownload ?
+        { download ?
           <Heading
             left={padding[3]}
-            heading={ReactDownload.heading}
-            subReactHeading={ReactDownload.subReactHeading}
-            type={ReactDownload.type}
+            heading={download.heading}
+            subReactHeading={download.subReactHeading}
+            type={download.type}
           /> :
           null
         }
@@ -124,7 +124,7 @@ export default function ReactBartChart(props) {
         <LineGroups {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
         <Tooltips {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
 
-        { ReactDownload ?
+        { download ?
           <g>
             <Logo top={((padding[0] + totalGroupSpace) / 2) + 17} left={padding[3]} />
             <Attribution top={padding[0] + totalGroupSpace + 90} left={padding[3] + valueSpace} />
@@ -135,7 +135,7 @@ export default function ReactBartChart(props) {
     );
   }
 
-  if (!ReactDownload) {
+  if (!download) {
     return (
       <div
         className="ReactBartChart"

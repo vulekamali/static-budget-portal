@@ -10,7 +10,7 @@ export default function Markup(props) {
     items,
     files,
     year,
-    ReactDownloadAction,
+    downloadAction,
     canvasAction,
     national,
   } = props;
@@ -30,7 +30,7 @@ export default function Markup(props) {
   );
 
   const downloadButton = (
-    <button className="ReactButton is-inline" onClick={ReactDownloadAction}>ReactDownload chart as image (~170 KB)</button>
+    <button className="ReactButton is-inline" onClick={downloadAction}>Download chart as image (~170 KB)</button>
   );
 
   const buildDownloadLinks = () => {

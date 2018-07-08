@@ -21,7 +21,7 @@ class ExpenditureChart extends Component {
     };
 
     this.events = {
-      ReactDownloadAction: this.ReactDownloadAction.bind(this),
+      downloadAction: this.downloadAction.bind(this),
       canvasAction: this.canvasAction.bind(this),
       resizeAction: this.resizeAction.bind(this),
       changeSource: this.changeSource.bind(this),
@@ -42,18 +42,20 @@ class ExpenditureChart extends Component {
   }
 
 
-  ReactDownloadAction() {
-    const shown = this.state.source === 'adjusted' ? 'adjusted for inflation' : 'not adjusted for inflation';
+  downloadAction() {
+    const { source } = this.state;
+    const { location, department, year, items} = this.props;
+    const shown = source === 'adjusted' ? 'adjusted for inflation' : 'not adjusted for inflation';
 
     canvg(this.canvas, renderToString(
       <ReactBarChart
         scale={1.5}
-        ReactDownload={{
-          heading: this.props.department,
-          subReactHeading: `${this.props.location} Department Budget for ${this.props.year}`,
+        download={{
+          heading: department,
+          subReactHeading: `${location} Department Budget for ${year}`,
           type: `Expenditure changes over time chart (${shown})`,
         }}
-        items={this.props.items[this.state.source]}
+        items={items[source]}
         guides
         width={900}
       />,
@@ -75,7 +77,7 @@ class ExpenditureChart extends Component {
   render() {
     const { items, year, files, location, phaseTable, cpi } = this.props;
     const { width, mobile, source, type } = this.state;
-    const { ReactDownloadAction, canvasAction, resizeAction, changeSource } = this.events;
+    const { downloadAction, canvasAction, resizeAction, changeSource } = this.events;
 
     return (
       <Markup
@@ -92,7 +94,7 @@ class ExpenditureChart extends Component {
           type,
           cpi,
 
-          ReactDownloadAction,
+          downloadAction,
           canvasAction,
           resizeAction,
           changeSource,

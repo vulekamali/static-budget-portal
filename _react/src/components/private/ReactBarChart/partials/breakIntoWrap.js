@@ -1,5 +1,5 @@
 export default function breakIntoWrap(string, wrap) {
-  const splitter = string.split(' ');
+  const splitter = String(string).split(' ');
 
   let count = 0;
   let word = '';
@@ -7,10 +7,6 @@ export default function breakIntoWrap(string, wrap) {
 
   for (let i = 0; i < splitter.length; i++) {
     if (splitter[count].length >= wrap) {
-      // for (let ii = 0; ii < splitter[count].length; ii += wrap) {
-      //   results.push(splitter[count].substr(ii, wrap));
-      // }
-
       results.push(splitter[count]);
 
       word = '';
