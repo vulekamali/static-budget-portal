@@ -21,6 +21,28 @@ layout: page-shell
       <em>vulekamali</em> is a project by the South African National Treasury and Imali Yethu with the goal of making government budget data and processes accessible to all citizens & interested parties. <a href="/about">Read more about vulekamali.</a>
     </div>
 
+    <div
+      class="VideoPreview u-mb-3"
+      data-component="VideoPreview"
+      data-title="{{ site.data.videos.data[0].title }}"
+      data-description="{{ site.data.videos.data[0].description }}"
+      data-selected="English"
+      data-languages='{{ site.data.videos.data[0].languages | jsonify | escape }}'  
+    >
+      <div class="ReactPlaceholder">&nbsp;</div>
+    </div>
+
+    <div
+      class="VideoPreview u-mb-8"
+      data-component="VideoPreview"
+      data-title="{{ site.data.videos.data[1].title }}"
+      data-description="{{ site.data.videos.data[1].description }}"
+      data-selected="English"
+      data-languages='{{ site.data.videos.data[1].languages | jsonify | escape }}'  
+    >
+      <div class="ReactPlaceholder">&nbsp;</div>
+    </div>
+
     <div class="Page-main">
 
       <div>

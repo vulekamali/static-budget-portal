@@ -28,29 +28,28 @@ layout: page-shell
       location=department_location
     %}
 
-    <div class="u-marginTop20">
-      <div
-        id="programmes-chart"
-        class="js-initProgrammesChart"
-        data-values="{ &quot;data&quot;: {{ page_data.programmes | jsonify | escape }} }"
-        data-year="{{ page.financial_year }}"
-        data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
-        data-dept="{{ page_data.name }}"
-        data-dept-location="{{ department_location }}"
-      >
-      </div>
+    <div
+      class="u-mt-5"
+      id="programmes-chart" 
+      data-component="ProgrammesChart"
+      data-values="{{ page_data.programmes | jsonify | escape }}" 
+      data-year="{{ page.financial_year }}"
+      data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
+      data-location="{{ department_location }}"
+      data-department="{{ page_data.name }}"
+    >
     </div>
 
     <div class="u-marginTop20">
       <div
-        id="line-chart"
-        class="js-initExpenditureChart"
-        data-adjusted="{ &quot;data&quot;:  {{ page_data.expenditure_over_time.real | jsonify | escape }} }"
-        data-not-adjusted="{ &quot;data&quot;: {{ page_data.expenditure_over_time.nominal | jsonify | escape }} }"
+        id="line-chart" 
+        data-component="ExpenditureChart"
+        data-adjusted="{{ page_data.expenditure_over_time.real | jsonify | escape }}"
+        data-notAdjusted="{{ page_data.expenditure_over_time.nominal | jsonify | escape }}"
         data-year="{{ page.financial_year }}"
-        data-location="{{ department_location }}"
         data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
-        data-department="{{ page_data.name }}"
+        data-department="{{ page_data.name }}" 
+        data-location="National"
         data-cpi="{{ site.data.global_values.cpi_dataset_url }}"
       >
       </div>
@@ -71,9 +70,32 @@ layout: page-shell
                 <div class="Section-title">Timelines for this department and ways to participate</div>
                 <p>National Treasury, departments and commitees are busy with different things depending on the time of year:</p>
               </div>
-              <div class="Section-card">
+              <div class="Section-card u-mb-3">
                 <div class="js-initParticipate"></div>
               </div>
+
+              <div
+              class="VideoPreview u-mb-3"
+              data-component="VideoPreview"
+              data-title="{{ site.data.videos.data[3].title }}"
+              data-description="{{ site.data.videos.data[3].description }}"
+              data-selected="English"
+              data-languages='{{ site.data.videos.data[3].languages | jsonify | escape }}'  
+            >
+              <div class="ReactPlaceholder">&nbsp;</div>
+            </div>
+        
+            <div
+              class="VideoPreview"
+              data-component="VideoPreview"
+              data-title="{{ site.data.videos.data[4].title }}"
+              data-description="{{ site.data.videos.data[4].description }}"
+              data-selected="English"
+              data-languages='{{ site.data.videos.data[4].languages | jsonify | escape }}'  
+            >
+              <div class="ReactPlaceholder">&nbsp;</div>
+            </div>
+
               <div class="Section-card is-invisible">
                 {%
                   include components/universal/Download/index.html

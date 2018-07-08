@@ -1,0 +1,36 @@
+@media screen and (min-width: 750px) {
+  .ProgrammesChart-inner {
+    display: flex; } }
+
+.ProgrammesChart-info {
+  padding: 25px 30px 35px; }
+  @media screen and (min-width: 750px) {
+    .ProgrammesChart-info {
+      width: 40%; } }
+
+@media screen and (min-width: 750px) {
+  .ProgrammesChart-chart {
+    width: 60%; } }
+
+.ProgrammesChart-share {
+  max-width: 250px; }
+
+.ProgrammesChart {
+  background: #e6e6e6;
+  padding: 10px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: 1px solid #d2d2d2;
+  text-align: left;
+  font-size: 14px;
+  display: block;
+  color: #3f3f3f;
+  text-decoration: none;
+  width: 100%; }
+
+.ProgrammesChart-subHeading {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+  font-weight: 900;
+  display: block; }

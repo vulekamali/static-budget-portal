@@ -29,9 +29,9 @@
 
 <!DOCTYPE html>
 <html>
-  {% include utilities/html/head.html title=page_data.title description=page_data.description %}
+  {% include partials/head.html title=page_data.title description=page_data.description %}
   <body {{ production }}>
     {{ content }}
-    {% include utilities/html/scripts.html %}
+    {% include partials/scripts.html %}
   </body>
 </html>

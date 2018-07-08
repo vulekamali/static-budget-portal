@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://vulekamali.gov.za/assets/generated/styles.8699961ec2dbb725fde9455de1bf2b27.css">
+  </head>
+  <body style="margin: 100px 0 800px;">
+    <div data-component="Modal"></div>
+
+    <style>
+      h3 { 
+        display: inline-block;
+        cursor: pointer;
+        }
+    </style>
+    
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h1>Decoupled Jekyll-React integration</h1>
+    </div>
+
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li>Introduction</li>
+        <li>
+          <span>Public Components</span>
+          <ul>
+            <li>Documentation</li>
+            <li>Modal</li>
+            <li>VideoPreview</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h2>Introduction</h2>
+      <div data-component="Documentation" data-url="README.md"></div>
+    </div>
+    
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h2>Public Components</h2>
+      <h3>Documentation</h3>
+      <div data-component="Documentation" data-url="Documentation.md"></div>
+
+      <h3>Modal</h3>
+      <div data-component="Documentation" data-url="Modal.md"></div>
+
+      <h3>VideoPreview</h3>
+      <div data-component="Documentation" data-url="VideoPreview.md"></div>
+      <h4>Basic Example</h4>
+      <div
+        data-component="VideoPreview"
+        data-title="Sample Title"
+        data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra commodo elit, quis bibendum quam faucibus ac."
+        data-selected="English"
+        data-languages='{ "English": "YE7VzlLtp-4" }'  
+      >
+      </div>
+      
+      <h4>ReactVideoEmbed Example</h4>
+      <div
+        data-component="VideoPreview"
+        data-title="Sample Title"
+        data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra commodo elit, quis bibendum quam faucibus ac."
+        data-selected="English"
+        data-languages='{ "English": "YE7VzlLtp-4" }'  
+        data-loading
+      >
+      </div> 
+
+      <h4>Overflow Example</h4>
+      <div
+        data-component="VideoPreview"
+        data-title="Sample Title"
+        data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra commodo elit, quis bibendum quam faucibus ac. Nam interdum, neque ac mollis egestas, elit libero commodo est, vitae consectetur leo quam posuere magna. Aliquam erat volutpat. Nulla fermentum auctor pretium. Cras non fermentum sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur eget quam tempus turpis lobortis auctor. Maecenas sit amet dignissim leo. Ut finibus lacinia dolor sit amet mollis. Nulla tincidunt elit non nulla fringilla, non commodo velit convallis. Aenean vitae massa sit amet lectus bibendum hendrerit ac ac felis. Cras quis magna vitae nulla ultrices ullamcorper id ut nunc. Duis eget nulla ipsum. Morbi in dictum sem. Vestibulum eget gravida lectus. Sed vitae dolor nulla. Nullam interdum porta eleifend. Aliquam erat volutpat. Morbi vitae arcu ut magna volutpat cursus. Phasellus dignissim accumsan augue sed sollicitudin. Nulla mauris nibh, porttitor at diam et, efficitur ornare dui. Nullam vel diam pharetra, vehicula enim sit amet, scelerisque nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+        data-selected="ReactButton One"
+        data-languages='{ 
+          "ReactButton One": "YE7VzlLtp-4", 
+          "ReactButton Two": "ftN0mlhnuNA",
+          "ReactButton Three": "YE7VzlLtp-4",
+          "ReactButton Four": "ftN0mlhnuNA",
+          "ReactButton Five": "YE7VzlLtp-4",
+          "ReactButton Six": "ftN0mlhnuNA",
+          "ReactButton Seven": "YE7VzlLtp-4",
+          "ReactButton Eight": "ftN0mlhnuNA",
+          "Nine": "YE7VzlLtp-4",
+          "ReactButton Ten": "ftN0mlhnuNA"
+        }'  
+      >
+      </div>
+    </div>
+
+    <div style="max-width: 1000px; margin: 0 auto;">
+      <h3>ProgrammesChart</h3>
+      <div data-component="Documentation" data-url="ProgrammesChart.md"></div>
+      <h4>Basic Example</h4>
+      <div
+        id="programmes-chart" 
+        data-component="ProgrammesChart"
+        data-values="[{&quot;name&quot;:&quot;Administration&quot;,&quot;total_budget&quot;:4283755000.0},{&quot;name&quot;:&quot;Incarceration&quot;,&quot;total_budget&quot;:14529263000.0},{&quot;name&quot;:&quot;Rehabilitation&quot;,&quot;total_budget&quot;:1861252000.0},{&quot;name&quot;:&quot;Care&quot;,&quot;total_budget&quot;:2275301000.0},{&quot;name&quot;:&quot;Social Reintegration&quot;,&quot;total_budget&quot;:898939000.0}]" 
+        data-year="2018-19"
+        data-files="{&quot;ENE for Vote 18 - Correctional Services&quot;:{&quot;description&quot;:&quot;The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year.&quot;,&quot;formats&quot;:[{&quot;format&quot;:&quot;PDF&quot;,&quot;url&quot;:&quot;http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Vote%2018%20Correctional%20Services.pdf&quot;},{&quot;format&quot;:&quot;XLSX&quot;,&quot;url&quot;:&quot;https://data.vulekamali.gov.za/dataset/nat-dept-correctional-services-2018-19/resource/dbf0bde2-a38f-402b-b223-c62b4354bb8a/ReactDownload/ene18-vote18_chaptertables.xlsx&quot;}]}}" data-department="Correctional Services" 
+        data-location="National"
+      >
+      </div>
+    </div>
+
+    <div style="max-width: 1000px; margin: 0 auto;">
+      <h3>ExpenditureChart</h3>
+      <div data-component="Documentation" data-url="ExpenditureChart.md"></div>
+      <h4>Basic Example</h4>
+
+      <div
+        id="line-chart"
+        data-component="ExpenditureChart"
+        data-adjusted="[{&quot;amount&quot;:69631477031,&quot;financial_year&quot;:&quot;2014-15&quot;,&quot;phase&quot;:&quot;Audited Outcome&quot;},{&quot;amount&quot;:75922375645,&quot;financial_year&quot;:&quot;2015-16&quot;,&quot;phase&quot;:&quot;Audited Outcome&quot;},{&quot;amount&quot;:73266467002,&quot;financial_year&quot;:&quot;2016-17&quot;,&quot;phase&quot;:&quot;Audited Outcome&quot;},{&quot;amount&quot;:78463890000,&quot;financial_year&quot;:&quot;2017-18&quot;,&quot;phase&quot;:&quot;Adjusted appropriation&quot;},{&quot;amount&quot;:79297192010,&quot;financial_year&quot;:&quot;2018-19&quot;,&quot;phase&quot;:&quot;Main appropriation&quot;},{&quot;amount&quot;:81565224786,&quot;financial_year&quot;:&quot;2019-20&quot;,&quot;phase&quot;:&quot;Medium Term Estimates&quot;},{&quot;amount&quot;:84030976327,&quot;financial_year&quot;:&quot;2020-21&quot;,&quot;phase&quot;:&quot;Medium Term Estimates&quot;}]"
+        data-notAdjusted="[{&quot;amount&quot;:59386548000.0,&quot;financial_year&quot;:&quot;2014-15&quot;,&quot;phase&quot;:&quot;Audited Outcome&quot;},{&quot;amount&quot;:68097537000.0,&quot;financial_year&quot;:&quot;2015-16&quot;,&quot;phase&quot;:&quot;Audited Outcome&quot;},{&quot;amount&quot;:69852230000.0,&quot;financial_year&quot;:&quot;2016-17&quot;,&quot;phase&quot;:&quot;Audited Outcome&quot;},{&quot;amount&quot;:78463890000.0,&quot;financial_year&quot;:&quot;2017-18&quot;,&quot;phase&quot;:&quot;Adjusted appropriation&quot;},{&quot;amount&quot;:83651888000.0,&quot;financial_year&quot;:&quot;2018-19&quot;,&quot;phase&quot;:&quot;Main appropriation&quot;},{&quot;amount&quot;:90597259000.0,&quot;financial_year&quot;:&quot;2019-20&quot;,&quot;phase&quot;:&quot;Medium Term Estimates&quot;},{&quot;amount&quot;:98507595000.0,&quot;financial_year&quot;:&quot;2020-21&quot;,&quot;phase&quot;:&quot;Medium Term Estimates&quot;}]"
+        data-year="2018-19"
+        data-location="National"
+        data-files="{&quot;ENE for Vote 4 - Cooperative Governance and Traditional Affairs&quot;:{&quot;description&quot;:&quot;The Estimates of National Expenditure (ENE) sets out the detailed spending plans of each government department for the coming year.&quot;,&quot;formats&quot;:[{&quot;format&quot;:&quot;PDF&quot;,&quot;url&quot;:&quot;https://data.vulekamali.gov.za/dataset/nat-dept-cooperative-governance-and-traditional-affairs-2018-19/resource/095830d1-8b13-4ccb-9b0a-fa4903bd3fa7/ReactDownload/vote-04-cooperative-governance-and-traditional-affairs.pdf&quot;},{&quot;format&quot;:&quot;XLSX&quot;,&quot;url&quot;:&quot;https://data.vulekamali.gov.za/dataset/nat-dept-cooperative-governance-and-traditional-affairs-2018-19/resource/ae82738c-de8b-46e7-95d2-21f3ce178c9e/ReactDownload/ene18-vote04_chaptertables.xlsx&quot;}]}}"
+        data-department="Cooperative Governance and Traditional Affairs"
+        data-cpi="https://data.vulekamali.gov.za/dataset/8f28ddb0-a0ce-4fea-9be2-34f890ed9f62/resource/5b315ff0-55e9-4ba8-b88c-2d70093bfe9d/ReactDownload/cpi-numbers-form-br2018.csv"
+      >
+      </div>
+    </div>
+  </body>
+</html>
+
+
+  
