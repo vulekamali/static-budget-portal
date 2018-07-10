@@ -36,7 +36,14 @@ export default function extractSnippet(itemObj) {
   }
 
   if (itemObj.resources && itemObj.resources.length > 0) {
-    return scanResources(itemObj.resources);
+    const partial = scanResources(itemObj.resources);
+
+    if (partial) {
+      return {
+        ...partial,
+        organization: itemObj.organization.title,
+      };
+    }
   }
 
   return null;
