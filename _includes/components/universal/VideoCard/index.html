@@ -11,6 +11,6 @@
         {{ language.name }}
       </button>
     {% endfor %}
-    <p class="mt-3">{{ include.video.description | truncate 230, "..." }}</p>
+    <p class="mt-3">{{ include.video.description | truncate: 180 }}</p>
   </div>
 </div>
