@@ -1,4 +1,5 @@
 import { h, Component } from 'preact';
+import analyticsEvent from './../../../utilities/js/helpers/analyticsEvent.js';
 
 
 const Dropdown = ({ selected, setSelected, languages }) => {
@@ -14,6 +15,7 @@ const Dropdown = ({ selected, setSelected, languages }) => {
 
 
 const Markup = ({ title, languages, selected, setSelected }) => {
+  analyticsEvent('send', 'event', 'video', 'view', title, selected);
   const languagesCount = Object.keys(languages).length;
 
   return (
