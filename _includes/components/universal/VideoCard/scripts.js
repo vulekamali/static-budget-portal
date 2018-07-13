@@ -1,4 +1,4 @@
-import { trim } from 'lodash';
+import { trim, pick } from 'lodash';
 import PropTypes, { checkPropTypes } from 'prop-types';
 import { jsConnect } from './../../../utilities/js/helpers/connector';
 
@@ -50,16 +50,17 @@ const callback = (props) => {
   const { thumbnail, title, buttons } = props;
   const url = `url('https://img.youtube.com/vi/${buttons[0].id}/mqdefault.jpg')`;
   thumbnail.style.backgroundImage = url;
+  const languages = buttons.map(obj => pick(obj, ['id', 'language']));
 
   thumbnail.addEventListener(
     'click',
-    () => console.log(title, trim(buttons[0].language), buttons[0].id),
+    () => console.log(title, trim(buttons[0].language), languages),
   );
 
-  buttons.forEach(({ id, language, node }) => {
+  buttons.forEach(({ language, node }) => {
     node.addEventListener(
       'click',
-      () => console.log(title, trim(language), id),
+      () => console.log(title, trim(language), languages),
     );
   });
 };
