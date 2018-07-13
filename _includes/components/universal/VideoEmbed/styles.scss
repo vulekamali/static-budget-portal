@@ -1,3 +1,13 @@
+@keyframes VideoEmbed_spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 .VideoEmbed-embed {
   line-height: 0;
@@ -40,7 +50,7 @@
   border: 10px solid transparent;
   border-top: 5px solid grey;
   border-radius: 50%;
-  animation-name: VideoCard_spin;
+  animation-name: VideoEmbed_spin;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
