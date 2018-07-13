@@ -71,7 +71,7 @@ const buildVideo = ({ title, url, count, id }, total) => {
               <path d="M85.9 48L16.9.4c-.7-.5-1.7-.6-2.5-.1-.8.4-1.3 1.2-1.3 2.1v95.2c0 .9.5 1.7 1.3 2.1.3.2.7.3 1.1.3a2 2 0 0 0 1.3-.4l69-47.6c.7-.4 1-1.2 1-2 .1-.8-.3-1.5-.9-2zm0 0" />
             </svg>
           </div>
-          <img className="SearchResult-thumbnail" src={`https://img.youtube.com/vi/${id}/mqdefault.jpg`} alt="" />
+          <img className="SearchResult-thumbnail" src={`https://img.youtube.com/vi/${id.id}/mqdefault.jpg`} alt="" />
         </a>
         <div>
           {buildButton(url, count)}
