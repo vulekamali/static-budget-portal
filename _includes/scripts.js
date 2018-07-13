@@ -12,7 +12,6 @@ import './utilities/js/modules/polyfillOldFeatures.js';
 import './components/search-results/SearchResult/scripts.jsx';
 
 import './components/learning-centre/Glossary/scripts.jsx';
-import './components/learning-centre/Videos/scripts.jsx';
 
 import './components/homepage/ValueBlocks/scripts.jsx';
 import './components/homepage/Revenue/scripts.jsx';
