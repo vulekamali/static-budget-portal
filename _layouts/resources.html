@@ -24,15 +24,12 @@ layout: page-shell
       </ul>
     </div>
 
-    <div class="Section is-bevel u-marginTop20" id="participate">
-      <div class="Section-card is-invisible u-paddingBottom15">
-        <div class="Section-title">The Budget Process and Public Participation</div>
-        <p>National Treasury, departments and commitees are busy with different things depending on the time of year:</p>
-      </div>
-      <div class="Section-card">
-        <div class="js-initParticipate"></div>
-      </div>
-    </div>
+    {% 
+      include components/universal/Participate/index.html
+      title="The Budget Process and Public Participation"
+      description="National Treasury, departments and commitees are busy with different things depending on the time of year:"
+      utils="u-marginTop15"
+    %}
 
   </main>
 </div>
