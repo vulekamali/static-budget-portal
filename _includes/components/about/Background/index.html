@@ -1,13 +1,8 @@
 <div id="background">
   <h3 class="Page-mainHeading">Background</h3>
 
-  <div class="Page-card u-marginBottom20">
-    <div class="Section">
-      <h4 class="Section-title">Project overview</h4>
-
-      {% include components/about/Video/index.html languages=include.languages %}
-    </div>
-  </div>
+  {% assign video1 = site.data.videos.data[0] %}
+  {% include components/universal/VideoCard/index.html video=video1 utils="u-marginBottom15" %}
 
   <div class="Page-card u-marginBottom20">
     <div class="Section">
