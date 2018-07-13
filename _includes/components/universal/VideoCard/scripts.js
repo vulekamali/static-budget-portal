@@ -1,16 +1,19 @@
-import { trim, pick } from 'lodash';
+import { zipObject } from 'lodash';
+import { h } from 'preact';
 import PropTypes, { checkPropTypes } from 'prop-types';
 import { jsConnect } from './../../../utilities/js/helpers/connector';
+import { createModal } from './../../header-and-footer/Modals/redux.js';
+import VideoEmbed from './../VideoEmbed/index.jsx';
 
 
 const params = {
-  thumbnail: PropTypes.node,
+  thumbnail: PropTypes.object,
   title: PropTypes.string,
   buttons: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string,
       language: PropTypes.string,
-      node: PropTypes.node,
+      node: PropTypes.object,
     }),
   ),
 };
@@ -18,16 +21,23 @@ const params = {
 
 const query = {
   thumbnail: null,
-  title: 'innerHTML',
+  title: 'innerText',
   buttons: [
     {
       id: 'string',
-      language: 'innerHTML',
+      language: 'innerText',
       node: null,
     },
   ],
 };
 
+
+const updateModalState = (title, selected, languages) => {
+  return createModal(
+    title,
+    h(VideoEmbed, { title, languages, initialSelected: selected }),
+  );
+};
 
 /**
  *  Takes all props passed from HTML React Connector query. Starts by setting background image of
@@ -50,17 +60,18 @@ const callback = (props) => {
   const { thumbnail, title, buttons } = props;
   const url = `url('https://img.youtube.com/vi/${buttons[0].id}/mqdefault.jpg')`;
   thumbnail.style.backgroundImage = url;
-  const languages = buttons.map(obj => pick(obj, ['id', 'language']));
+
+  const languages = zipObject(buttons.map(val => val.language), buttons.map(val => val.id));
 
   thumbnail.addEventListener(
     'click',
-    () => console.log(title, trim(buttons[0].language), languages),
+    () => updateModalState(title, buttons[0].language, languages),
   );
 
   buttons.forEach(({ language, node }) => {
     node.addEventListener(
       'click',
-      () => console.log(title, trim(language), languages),
+      () => updateModalState(title, language, languages),
     );
   });
 };
