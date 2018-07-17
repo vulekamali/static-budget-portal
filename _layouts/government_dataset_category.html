@@ -1,4 +1,4 @@
-{% assign page_data = site.data.datasets[page.data_key] %}
+{% assign page_data = site.data.datasets[page.data_key].index %}
 
 {% for dataset in page_data.datasets %}
 <li>{{ dataset.name }}</li>
