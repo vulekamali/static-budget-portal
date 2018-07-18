@@ -224,7 +224,7 @@ listing_path = '_data%s/index.yaml' % listing_url_path
 ensure_file_dirs(listing_path)
 with open(listing_path, 'wb') as listing_file:
     listing_file.write(r.text)
-write_basic_page(listing_url_path, r.text)
+write_basic_page(listing_url_path, r.text, 'government_dataset_category')
 
 listing = yaml.load(r.text)
 for dataset in listing['datasets']:
