@@ -1,0 +1,35 @@
+.BasicPreview {
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2px;
+
+  @media screen and (min-width: 750px) {
+    height: 242px;
+    overflow: hidden;
+  }
+}
+
+.BasicPreview-heading {
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 18px;
+  text-decoration-line: underline;
+  margin-bottom: 1rem;
+  display: inline-block;
+
+  &:hover {
+    background: darken(white, 15%);
+  }
+}
+
+.BasicPreview-content {
+  line-height: 1.45;
+  font-size: 14px;
+}

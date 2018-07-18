@@ -1,3 +1,25 @@
+---
+layout: page-shell
+---
+
 {% assign page_data = site.data.datasets[page.category][page.data_key] %}
 
-{{ page_data.title }}
+<div class="Page-content">
+  <main class="Page-contentInner">
+
+    <div>
+      <div class="Page-mainHeading">{{ page_data.title }}</div>
+
+      <div class="BasicContent">
+        <div class="BasicContent-title">Overview</div>
+        {{ page_data.intro }}
+      </div>
+
+      {% 
+        include components/universal/Downloads/index.html resources=page_data.resources 
+        utils="u-marginTop20"
+      %}
+    </div>
+
+  </main>
+</div>
