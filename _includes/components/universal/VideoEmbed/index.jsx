@@ -1,4 +1,5 @@
 import { h, Component } from 'preact';
+import analyticsEvent from './../../../utilities/js/helpers/analyticsEvent.js';
 
 
 const Dropdown = ({ selected, setSelected, languages }) => {
@@ -42,6 +43,21 @@ export default class VideoEmbed extends Component {
     this.events = {
       setSelected: this.setSelected.bind(this),
     };
+  }
+
+  componentDidMount() {
+    const { title } = this.props;
+    const { selected } = this.state;
+    analyticsEvent('send', 'event', 'video', 'created', title, selected);
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const { title } = this.props;
+    const { selected } = this.state;
+
+    if (prevState.selected !== selected) {
+      analyticsEvent('send', 'event', 'video', 'changed', title, selected);
+    }
   }
 
   setSelected(selected) {
