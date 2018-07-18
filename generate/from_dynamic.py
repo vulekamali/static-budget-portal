@@ -24,6 +24,11 @@ BASIC_PAGE_SLUGS = [
     'search-result',
 ]
 
+GENERATED_MARKDOWN_COMMENT = "[//]: <> GENERATED FILE. Don't edit by hand."
+GENERATED_YAML_COMMENT = ("#########################################\n"
+                          "#  GENERATED FILE. Don't edit by hand.  #\n"
+                          "#########################################\n\n")
+
 portal_url = os.environ.get('PORTAL_URL', "https://dynamicbudgetportal.openup.org.za/")
 
 
@@ -73,7 +78,10 @@ def write_basic_page(page_url_path, page_yaml, layout=None):
             default_flow_style=False,
             encoding='utf-8',
         )
-        outfile.write("---\n%s---" % front_matter_yaml)
+        outfile.write("---\n%s---\n%s" % (
+            front_matter_yaml,
+            GENERATED_MARKDOWN_COMMENT
+        ))
 
 
 def write_financial_year(session, year_slug, static_path):
@@ -86,6 +94,7 @@ def write_financial_year(session, year_slug, static_path):
 
     ensure_file_dirs(path)
     with open(path, 'wb') as file:
+        file.write(GENERATED_YAML_COMMENT)
         file.write(r.text)
 
     years = []
@@ -104,8 +113,9 @@ def write_financial_year(session, year_slug, static_path):
              "layout: homepage\n"
              "financial_year: %s\n"
              "data_key: index\n"
-             "---") % (
+             "---\n%s") % (
                  year_slug,
+                 GENERATED_MARKDOWN_COMMENT,
              ))
 
 
@@ -121,11 +131,12 @@ def write_department_page(department_url_path, department_yaml):
              "geographic_region_slug: %s\n"
              "data_key: %s\n"
              "layout: department\n"
-             "---") % (
+             "---\n%s") % (
                  department['selected_financial_year'],
                  department['sphere']['slug'],
                  department['government']['slug'],
                  department['slug'],
+                 GENERATED_MARKDOWN_COMMENT,
              ))
 
 
@@ -138,8 +149,9 @@ def write_dataset_page(dataset_url_path, dataset_yaml):
             ("---\n"
              "data_key: %s\n"
              "layout: contributed_dataset\n"
-             "---") % (
+             "---\n%s") % (
                  dataset['slug'],
+                 GENERATED_MARKDOWN_COMMENT,
              ))
 
 
@@ -161,6 +173,7 @@ for year_slug in YEAR_SLUGS:
         path = '_data%s.yaml' % url_path
 
         with open(path, 'wb') as file:
+            file.write(GENERATED_YAML_COMMENT)
             file.write(r.text)
 
         write_basic_page(url_path, r.text)
@@ -176,6 +189,7 @@ r.raise_for_status()
 listing_path = '_data%s.yaml' % listing_url_path
 
 with open(listing_path, 'wb') as listing_file:
+    listing_file.write(GENERATED_YAML_COMMENT)
     listing_file.write(r.text)
 write_basic_page(listing_url_path, r.text)
 
@@ -193,6 +207,7 @@ for dataset in listing['datasets']:
     r.raise_for_status()
     write_dataset_page(dataset['url_path'], r.text)
     with open(dataset_context_path, 'wb') as dataset_file:
+        dataset_file.write(GENERATED_YAML_COMMENT)
         dataset_file.write(r.text)
 
 
@@ -206,6 +221,7 @@ for year_slug in YEAR_SLUGS:
     listing_path = '_data%s.yaml' % listing_url_path
 
     with open(listing_path, 'wb') as listing_file:
+        listing_file.write(GENERATED_YAML_COMMENT)
         listing_file.write(r.text)
     write_basic_page(listing_url_path, r.text, 'department_list')
 
@@ -224,4 +240,5 @@ for year_slug in YEAR_SLUGS:
                 r.raise_for_status()
                 write_department_page(department['url_path'], r.text)
                 with open(department_context_path, 'wb') as department_file:
+                    department_file.write(GENERATED_YAML_COMMENT)
                     department_file.write(r.text)
