@@ -1,0 +1,23 @@
+<div class="Downloads">
+  <div class="Downloads-inner">
+    <div class="Downloads-title">Documents included in this data set</div>
+    <div class="Downloads-content">
+      {% for resource in include.resources %}
+        <div class="Downloads-item">
+          <div class="Downloads-iconWrap">
+            <div class="Downloads-icon">
+              {% 
+                include components/universal/Icon/index.html
+                type="download"
+                size="small"
+              %}
+            </div>
+          </div>
+          <a class="Downloads-text" href="{{ resource.url }}">
+            {{ resource.name }} ({{ resource.format }})
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
