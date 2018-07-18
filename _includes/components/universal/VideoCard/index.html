@@ -1,0 +1,16 @@
+<div class="VideoCard {{ include.utils }}" data-component="VideoCard">
+  <div class="VideoCard-preview" data-thumbnail>
+    <div class="VideoCard-icon">
+      {% include components/universal/Icon/index.html type="play" size="large" %}
+    </div>
+  </div>
+  <div class="VideoCard-info">
+    <div class="VideoCard-title" data-title>{{ include.video.title }}</div>
+    {% for language in include.video.languages %}
+      <button data-buttons class="Button is-inline is-small u-marginTop10 u-marginRight5" data-id="{{ language.id }}">
+        {{ language.name }}
+      </button>
+    {% endfor %}
+    <p class="mt-3">{{ include.video.description | truncate: 180 }}</p>
+  </div>
+</div>
