@@ -48,3 +48,10 @@ exclude:
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
+
+defaults:
+  -
+    scope:
+      path:            "20*/search-result.md"
+    values:
+      sitemap:         false
