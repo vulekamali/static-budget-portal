@@ -163,23 +163,23 @@ session = requests_session()
 
 # Basic Pages
 
-## write_financial_year(session, max(YEAR_SLUGS), "")
-##
-## for year_slug in YEAR_SLUGS:
-##     write_financial_year(session, year_slug, "/%s" % year_slug)
-##
-##     for slug in BASIC_PAGE_SLUGS:
-##         url_path = '/%s/%s' % (year_slug, slug)
-##         print url_path
-##         url = portal_url + url_path[1:] + ".yaml"
-##         r = session.get(url)
-##         r.raise_for_status()
-##         path = '_data%s.yaml' % url_path
-##
-##         with open(path, 'wb') as file:
-##             file.write(r.text)
-##
-##         write_basic_page(url_path, r.text)
+write_financial_year(session, max(YEAR_SLUGS), "")
+
+for year_slug in YEAR_SLUGS:
+    write_financial_year(session, year_slug, "/%s" % year_slug)
+
+    for slug in BASIC_PAGE_SLUGS:
+        url_path = '/%s/%s' % (year_slug, slug)
+        print url_path
+        url = portal_url + url_path[1:] + ".yaml"
+        r = session.get(url)
+        r.raise_for_status()
+        path = '_data%s.yaml' % url_path
+
+        with open(path, 'wb') as file:
+            file.write(r.text)
+
+        write_basic_page(url_path, r.text)
 
 
 # Contributed Datasets
