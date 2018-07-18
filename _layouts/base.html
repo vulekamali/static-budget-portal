@@ -15,6 +15,9 @@
 {% elsif page.layout == 'contributed_dataset' %}
   {% assign page_data = site.data.datasets[page.data_key] %}
 
+{% elsif page.layout == 'government_dataset' %}
+  {% assign page_data = site.data.datasets[page.category][page.data_key] %}
+
 {% else %}
   {% assign page_data = site.data[page.data_key] %}
 {% endif %}
