@@ -13,7 +13,7 @@
   {% endif %}
 
 {% elsif page.layout == 'contributed_dataset' %}
-  {% assign page_data = site.data.datasets[page.data_key] %}
+  {% assign page_data = site.data.datasets.contributed[page.data_key] %}
 
 {% elsif page.layout == 'government_dataset' %}
   {% assign page_data = site.data.datasets[page.category][page.data_key] %}
