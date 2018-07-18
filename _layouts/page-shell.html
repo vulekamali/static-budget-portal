@@ -18,7 +18,13 @@ layout: base
   {% endif %}
 
 {% elsif page.layout == 'contributed_dataset' %}
-  {% assign page_data = site.data.datasets[page.data_key] %}
+  {% assign page_data = site.data.datasets.contributed[page.data_key] %}
+
+{% elsif page.layout == 'government_dataset' %}
+  {% assign page_data = site.data.datasets[page.category][page.data_key] %}
+
+{% elsif page.layout == 'government_dataset_category' %}
+  {% assign page_data = site.data.datasets[page.data_key].index %}
 
 {% else %}
   {% assign page_data = site.data[page.data_key] %}
@@ -47,7 +53,7 @@ layout: base
     {{ content }}
   </div>
   <footer class="Page-footer">
-    {% include 
+    {% include
       components/header-and-footer/Footer/index.html
       year=page.financial_year
     %}

@@ -8,15 +8,17 @@ layout: page-shell
   <main class="Page-contentInner">
 
     <div>
-      <div class="Page-mainHeading">{{ page_data.title }}</div>
+      <div class="Page-mainHeading">{{ page_data.name }}</div>
 
+      {% if page_data.intro %}
       <div class="BasicContent">
         <div class="BasicContent-title">Overview</div>
         {{ page_data.intro }}
       </div>
+      {% endif %}
 
-      {% 
-        include components/universal/Downloads/index.html resources=page_data.resources 
+      {%
+        include components/universal/Downloads/index.html resources=page_data.resources
         utils="u-marginTop20"
       %}
     </div>
