@@ -2,7 +2,7 @@
 layout: page-shell
 ---
 
-{% assign page_data = site.data.datasets[page.data_key] %}
+{% assign page_data = site.data.datasets.contributed[page.data_key] %}
 
 
 <div class="Page-content">
@@ -45,17 +45,11 @@ layout: page-shell
         {% endif %}
       </div>
 
-      {% if page_data.resources %}
-        <div class="Section is-bevel is-green u-marginBottom20">
-          <div class="Section-card">
-            {%
-              include components/contributed-data/CsoFiles/index.html
-              resources=page_data.resources
-              type="cso"
-            %}
-          </div>
-        </div>
-      {% endif %}
+      {%
+        include components/universal/Downloads/index.html
+        resources=page_data.resources
+        utils="u-marginBottom20"
+      %}
 
       <div class="Section u-marginBottom20">
         <h2 class="Section-title">Discuss this dataset with others</h2>

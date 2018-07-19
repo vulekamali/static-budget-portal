@@ -140,7 +140,7 @@ def write_department_page(department_url_path, department_yaml):
              ))
 
 
-def write_dataset_page(dataset_url_path, dataset_yaml):
+def write_contributed_dataset_page(dataset_url_path, dataset_yaml):
     dataset = yaml.load(dataset_yaml)
     file_path = ".%s.html" % dataset_url_path
     ensure_file_dirs(file_path)
@@ -152,6 +152,22 @@ def write_dataset_page(dataset_url_path, dataset_yaml):
              "---\n%s") % (
                  dataset['slug'],
                  GENERATED_MARKDOWN_COMMENT,
+             ))
+
+
+def write_categorised_dataset_page(dataset_url_path, dataset_yaml):
+    dataset = yaml.load(dataset_yaml)
+    file_path = ".%s.html" % dataset_url_path
+    ensure_file_dirs(file_path)
+    with open(file_path, "wb") as outfile:
+        outfile.write(
+            ("---\n"
+             "data_key: %s\n"
+             "category: %s\n"
+             "layout: government_dataset\n"
+             "---") % (
+                 dataset['slug'],
+                 dataset['category']['slug'],
              ))
 
 
@@ -179,7 +195,7 @@ for year_slug in YEAR_SLUGS:
         write_basic_page(url_path, r.text)
 
 
-# Datasets
+# Contributed Datasets
 
 listing_url_path = '/contributed-data'
 print listing_url_path
@@ -205,13 +221,44 @@ for dataset in listing['datasets']:
 
     r = session.get(dataset_url)
     r.raise_for_status()
-    write_dataset_page(dataset['url_path'], r.text)
+    write_contributed_dataset_page(dataset['url_path'], r.text)
     with open(dataset_context_path, 'wb') as dataset_file:
         dataset_file.write(GENERATED_YAML_COMMENT)
         dataset_file.write(r.text)
 
 
+# Categorised Datasets
+
+listing_url_path = '/datasets/performance-expenditure-review'
+print listing_url_path
+listing_url = portal_url + listing_url_path[1:] + '.yaml'
+r = session.get(listing_url)
+r.raise_for_status()
+
+listing_path = '_data%s/index.yaml' % listing_url_path
+ensure_file_dirs(listing_path)
+with open(listing_path, 'wb') as listing_file:
+    listing_file.write(r.text)
+write_basic_page(listing_url_path, r.text, 'government_dataset_category')
+
+listing = yaml.load(r.text)
+for dataset in listing['datasets']:
+    print dataset['url_path']
+    dataset_path = dataset['url_path'] + '.yaml'
+    if dataset_path.startswith('/'):
+        dataset_path = dataset_path[1:]
+    dataset_url = portal_url + dataset_path
+    dataset_context_path = '_data/' + dataset_path
+    ensure_file_dirs(dataset_context_path)
+
+    r = session.get(dataset_url)
+    r.raise_for_status()
+    write_categorised_dataset_page(dataset['url_path'], r.text)
+    with open(dataset_context_path, 'wb') as dataset_file:
+        dataset_file.write(r.text)
+
 # Departments
+
 for year_slug in YEAR_SLUGS:
     listing_url_path = '/%s/departments' % year_slug
     print listing_url_path

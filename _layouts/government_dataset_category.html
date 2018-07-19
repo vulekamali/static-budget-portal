@@ -1,0 +1,32 @@
+---
+layout: page-shell
+---
+
+{% assign page_data = site.data.datasets[page.data_key].index %}
+
+
+<div class="Page-content">
+  <main class="Page-contentInner">
+    <h1 class="Page-mainHeading">{{ page_data.name }}</h1>
+
+    <div class="Section is-invisible u-fontSize18 u-paddingTop0">
+      {{ page_data.description }}
+    </div>
+
+    <div class="Grid has-standardTrigger">
+      <div class="Grid-inner">
+        {% for dataset in page_data.datasets %}
+          <div class="Grid-item is-1of2">
+            {%
+              include components/universal/BasicPreview/index.html
+              title=dataset.name
+              excerpt=dataset.description
+              url=dataset.url_path
+            %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </main>
+</div>

@@ -8,7 +8,7 @@ array:
   url: departments
   year-range: true
 - id: learning-centre
-  title: Learning Centre
+  title: Learning
   url: videos
   subLinks: true
   children:
@@ -21,6 +21,9 @@ array:
   - title: Resources
     id: resources
     url: resources
+- id: datasets
+  title: Datasets
+  url: datasets/performance-expenditure-review
 - id: contributed-data
   title: Contributed Data
   url: contributed-data
