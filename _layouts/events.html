@@ -11,10 +11,12 @@ layout: page-shell
       upcoming=true
     %}
 
-    <h2 class="Page-mainHeading">Past Events</h2>
-    {%
-      include components/events/Events/index.html
-      events=site.data.events.past
-    %}
+    {% if site.data.events.past %}
+      <h2 class="Page-mainHeading">Past Events</h2>
+      {%
+        include components/events/Events/index.html
+        events=site.data.events.past
+      %}
+    {% endif %}
   </div>
 </div>
