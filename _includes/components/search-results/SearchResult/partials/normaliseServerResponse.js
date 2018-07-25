@@ -25,7 +25,7 @@ const normaliseDepartmentItem = (item) => {
   const title = isOfficial ? buildDeptName() : rawTitle;
 
   const buildDeptUrl = () => `https://vulekamali.gov.za/${year}/${regionSlug}/departments/${nameSlug}`;
-  const url = isOfficial ? buildDeptUrl() : `/datasets/${name}`;
+  const url = isOfficial ? buildDeptUrl() : `/datasets/contributed/${name}`;
 
   return { title, url, snippet, organisation: organization.title };
 };
