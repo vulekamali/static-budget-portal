@@ -19,4 +19,4 @@ function loadGoogleAnalytics() {
 }
 
 
-export default loadGoogleAnalytics();
+export default document.body.getAttribute('data-production') && loadGoogleAnalytics();
