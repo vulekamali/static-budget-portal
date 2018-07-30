@@ -38,3 +38,4 @@ import './components/universal/Comments/scripts.js';
 import './components/universal/Participate/scripts.jsx';
 import './components/universal/Tooltip/scripts.js';
 import './components/universal/VideoCard/scripts.js';
+import './components/universal/ThumbPreview/scripts.js';
