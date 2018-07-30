@@ -12,10 +12,6 @@
     flex-direction: row;
     height: 250px;
   }
-
-  @media screen and (min-width: 900px) {
-    height: 200px;
-  }
 }
 
 .VideoCard-preview {
@@ -71,7 +67,7 @@
   padding: 10px 20px;
   font-size: 14px;
 
-  @supports (dispay: flex) {
+  @supports (display: flex) {
     display: flex;
     flex-direction: column;
     justify-content: center;
