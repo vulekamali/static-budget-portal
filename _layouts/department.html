@@ -57,33 +57,27 @@ layout: page-shell
     </div>
 
     <div class="u-marginTop20">
-      <div class="Grid has-widescreenTrigger">
-        <div class="Grid-inner">
-          <div class="Grid-item is-1of3 u-marginBottom20">
-            {%
-              include components/department-budgets/ContributedData/index.html
-              datasets=page_data.contributed_datasets
-            %}
-          </div>
-          <div class="Grid-item is-2of3">
+      <div class="Grid has-rightSidebar">
+        {%
+          include components/department-budgets/ContributedData/index.html
+          datasets=page_data.contributed_datasets
+        %}
+          
+        <div>
+          {% 
+            include components/universal/Participate/index.html
+            title="Timelines for this department and ways to participate"
+            description="National Treasury, departments and commitees are busy with different things depending on the time of year:"
+          %}
 
-            {% 
-              include components/universal/Participate/index.html
-              title="Timelines for this department and ways to participate"
-              description="National Treasury, departments and commitees are busy with different things depending on the time of year:"
-            %}
-
-            <div class="Section u-marginTop20">
-              <h2 class="Section-title">Discuss this budget with others</h2>
-              <div data-enhance-component="Comments" data-url="https://vulekamali.gov.za{{ page.url }}">
-                <div id="discourse-comments"></div>
-              </div>
+          <div class="Section u-marginTop20">
+            <h2 class="Section-title">Discuss this budget with others</h2>
+            <div data-enhance-component="Comments" data-url="https://vulekamali.gov.za{{ page.url }}">
+              <div id="discourse-comments"></div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 </div>
