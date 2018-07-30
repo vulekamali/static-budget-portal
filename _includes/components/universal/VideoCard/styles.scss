@@ -10,6 +10,10 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    height: 250px;
+  }
+
+  @media screen and (min-width: 900px) {
     height: 200px;
   }
 }
@@ -66,10 +70,13 @@
 .VideoCard-info {
   padding: 10px 20px;
   font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
+
+  @supports (dispay: flex) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
 }
 
 .VideoCard-title {
