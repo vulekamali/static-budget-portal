@@ -22,6 +22,7 @@ const params = {
 const query = {
   thumbnail: null,
   title: 'innerText',
+  text: null,
   buttons: [
     {
       id: 'string',
@@ -57,13 +58,18 @@ const updateModalState = (title, selected, languages) => {
 const callback = (props) => {
   checkPropTypes(params, props, 'argument', 'VideoCard');
 
-  const { thumbnail, title, buttons } = props;
+  const { thumbnail, title, buttons, text } = props;
   const url = `url('https://img.youtube.com/vi/${buttons[0].id}/mqdefault.jpg')`;
   thumbnail.style.backgroundImage = url;
 
   const languages = zipObject(buttons.map(val => val.language), buttons.map(val => val.id));
 
   thumbnail.addEventListener(
+    'click',
+    () => updateModalState(title, buttons[0].language, languages),
+  );
+
+  text.addEventListener(
     'click',
     () => updateModalState(title, buttons[0].language, languages),
   );
