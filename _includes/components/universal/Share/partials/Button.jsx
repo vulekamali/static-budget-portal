@@ -1,6 +1,6 @@
+import { ga } from 'react-ga';
 import { h } from 'preact';
 import Icon from './../../../universal/Icon/index.jsx';
-import analyticsEvents from './../../../../utilities/js/helpers/analyticsEvent.js';
 import { createModal } from './../../../header-and-footer/Modals/redux.js';
 
 
@@ -11,7 +11,7 @@ export default function Button({ selected, anchor }) {
   const anchorUri = anchor ? encodeURIComponent(anchorText) : '';
 
   const copyText = () => {
-    analyticsEvents('send', 'social', 'email', 'share', url);
+    ga('send', 'social', 'email', 'share', url);
     createModal(
       'Share this link',
       (
@@ -23,13 +23,13 @@ export default function Button({ selected, anchor }) {
   };
 
   const fbDirect = () => {
-    analyticsEvents('send', 'social', 'facebook', 'share', url);
+    ga('send', 'social', 'facebook', 'share', url);
     const win = window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}${anchorUri}`, '_blank');
     win.focus();
   };
 
   const twDirect = () => {
-    analyticsEvents('send', 'social', 'twitter', 'share', url);
+    ga('send', 'social', 'twitter', 'share', url);
     const win = window.open(`https://twitter.com/home?status=${message}%20${url}${anchorUri}`, '_blank');
     win.focus();
   };
