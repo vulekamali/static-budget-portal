@@ -1,4 +1,4 @@
-import { event } from 'react-ga';
+import { ga } from 'react-ga';
 import { h, Component } from 'preact';
 
 
@@ -48,7 +48,7 @@ export default class VideoEmbed extends Component {
   componentDidMount() {
     const { title } = this.props;
     const { selected } = this.state;
-    event('send', 'event', 'video', 'created', title, selected);
+    ga('send', 'event', 'video viewed', title, selected);
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -56,7 +56,7 @@ export default class VideoEmbed extends Component {
     const { selected } = this.state;
 
     if (prevState.selected !== selected) {
-      event('send', 'event', 'video', 'changed', title, selected);
+      ga('send', 'event', 'video viewed', title, selected);
     }
   }
 
