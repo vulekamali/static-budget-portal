@@ -10,6 +10,7 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    height: 200px;
   }
 }
 
@@ -26,7 +27,6 @@
 
   @media screen and (min-width: 768px) {
     flex-basis: 300px;
-    min-height: (300px / 100 * 56.25); // 16:9 aspect ratio
   }
 }
 
@@ -66,9 +66,21 @@
 .VideoCard-info {
   padding: 10px 20px;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
 .VideoCard-title {
-  font-size: 16px;
-  font-weight: 700;
+  display: inline-block;
+  font-weight: 900;
+  font-size: 18px;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background: darken(white, 15%);
+  }
 }

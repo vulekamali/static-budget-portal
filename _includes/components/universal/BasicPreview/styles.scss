@@ -6,10 +6,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 2px;
 
   @media screen and (min-width: 750px) {
-    height: 242px;
+    height: 200px;
     overflow: hidden;
   }
 }
