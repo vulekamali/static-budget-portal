@@ -39,6 +39,8 @@
 }
 
 .ThumbPreview-content {
+  width: 100%;
+
   @supports (display: flex) {
     flex-grow: 1;
     display: flex;
