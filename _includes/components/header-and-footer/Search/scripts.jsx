@@ -1,8 +1,8 @@
+import { ga } from 'react-ga';
 import { h, render, Component } from 'preact';
 import PropTypes from 'prop-types';
 import queryString from 'query-string';
 import Search from './index.jsx';
-import analyticsEvents from './../../../utilities/js/helpers/analyticsEvent.js';
 import { apiBaseURL } from '../../../utilities/config/global.json';
 import removePunctuation from '../../../utilities/js/helpers/removePunctuation.js';
 
@@ -67,7 +67,7 @@ class SearchContainer extends Component {
           if (!response.ok) {
             response.text()
               .then((data) => {
-                analyticsEvents(
+                ga(
                   'send',
                   'event',
                   'search-error',
@@ -82,7 +82,7 @@ class SearchContainer extends Component {
           response.json()
             .then((data) => {
               if (!data.success) {
-                analyticsEvents(
+                ga(
                   'send',
                   'event',
                   'search-error',

@@ -1,28 +1,14 @@
+import { ga } from 'react-ga';
 import { h } from 'preact';
 import PropTypes from 'prop-types';
 import Icon from './Icon.jsx';
-import analyticsEvents from './../../../../utilities/js/helpers/analyticsEvent.js';
 
 
-export default function FormArea({ focus, setFocus, findSuggestions, currentKeywords, selectedYear }) {
-  // ...
+export default function FormArea({ setFocus, findSuggestions, currentKeywords, selectedYear }) {
   const searchUrl = `/${selectedYear}/search-result`;
   const updateKeyword = event => findSuggestions(event.target.value);
   const addFocus = () => setFocus(true);
 
-  const removeFocus = () => {
-    analyticsEvents(
-      'send',
-      'event',
-      'search',
-      'unfocus',
-      `${selectedYear}: ${currentKeywords}`,
-    );
-
-    return setFocus(false);
-  };
-
-  // ...
   return (
     <form className="Search-form" action={searchUrl} method="GET">
       <input type="hidden" name="search_type" value="full-search" />
