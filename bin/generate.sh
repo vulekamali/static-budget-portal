@@ -51,7 +51,7 @@ then
     git status
     git diff
 
-    if ! git diff-index --quiet HEAD --; then
+    if ! git status --porcelain; then
         # save changes
         git add .
         # !!! ENSURE WE DON'T COMMIT PLAINTEXT DEPLOY PRIVATE KEY !!!
