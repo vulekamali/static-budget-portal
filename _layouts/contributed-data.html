@@ -3,39 +3,42 @@ layout: page-shell
 ---
 {% assign page_data = site.data['contributed-data'] %}
 
+
 <div class="Page-content">
   <main class="Page-contentInner">
     <h1 class="Page-mainHeading">Contributed Data</h1>
 
     <div class="Section is-invisible u-fontSize18 u-paddingTop0">
-      This is budget-related data that has been contributed by NGOs, journalists, researchers, academia and other civil society organisations.
+      {{ page_data.description }}
     </div>
 
-    <div class="Section is-bevel is-green u-marginBottom20">
-      <div class="Section-card">
-        {% include components/contributed-data/CsoRequest/index.html %}
-      </div>
-    </div>
-
-    <div class="Grid has-standardTrigger">
-      <div class="Grid-inner">
-        {% for dataset in page_data.datasets %}
-          <div class="Grid-item is-1of2">
-            <a href="{{ dataset.url_path }}" class="Section u-marginBottom20 is-bevel is-link" title="{{ dataset.name }}">
-              <div class="Section-card">
-                {%
-                  include components/contributed-data/CsoPreview/index.html
-                  name=dataset.name
-                  title=dataset.organization.name
-                  logo=dataset.organization.logo_url
-                  created=dataset.created
-                  last_updated=dataset.last_updated
-                %}
-              </div>
-            </a>
+    <div class="BasicContent is-green u-padding10 u-marginBottom25">
+      <div class="BasicContent">
+        <div class="Grid has-rightSidebar">
+          <div>
+            <div class="BasicContent-title">How can I contribute?</div>
+            <div>Do you have data or analysis related to the budget that you would like to contribute?</div>      
           </div>
-        {% endfor %}
+          <div class="u-paddingTop15">
+            <button class="Button">Log in and submit your data</button>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="Grid">
+      {% for dataset in page_data.datasets %}
+        {%
+          include components/universal/ThumbPreview/index.html
+          title=dataset.name
+          source=dataset.organization.name
+          source_url=dataset.organization.url
+          logo=dataset.organization.logo_url
+          url=dataset.url_path
+          created=dataset.created
+          updated=dataset.last_updated
+        %}
+      {% endfor %}
     </div>
 
   </main>

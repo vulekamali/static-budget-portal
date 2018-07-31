@@ -13,19 +13,15 @@ layout: page-shell
       {{ page_data.description }}
     </div>
 
-    <div class="Grid has-standardTrigger">
-      <div class="Grid-inner">
-        {% for dataset in page_data.datasets %}
-          <div class="Grid-item is-1of2">
-            {%
-              include components/universal/BasicPreview/index.html
-              title=dataset.name
-              excerpt=dataset.description
-              url=dataset.url_path
-            %}
-          </div>
-        {% endfor %}
-      </div>
+    <div class="Grid has-twoColumn">
+      {% for dataset in page_data.datasets %}
+        {%
+          include components/universal/BasicPreview/index.html
+          title=dataset.name
+          excerpt=dataset.description
+          url=dataset.url_path
+        %}
+      {% endfor %}
     </div>
 
   </main>
