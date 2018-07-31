@@ -229,7 +229,7 @@ for dataset in listing['datasets']:
 
 # Categorised Datasets
 
-listing_url_path = '/datasets/performance-expenditure-review'
+listing_url_path = '/datasets/performance-and-expenditure-reviews'
 print listing_url_path
 listing_url = portal_url + listing_url_path[1:] + '.yaml'
 r = session.get(listing_url)
