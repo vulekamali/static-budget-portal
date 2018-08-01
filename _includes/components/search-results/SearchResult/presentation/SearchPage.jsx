@@ -2,7 +2,7 @@ import { h } from 'preact';
 import TabSelection from './TabSelection.jsx';
 import LandingLayout from './LandingLayout.jsx';
 import FacetLayout from './FacetLayout.jsx';
-import tabOptions from './tabOptions.json';
+import tabOptions from './../data/tabOptions.json';
 
 
 export default function SearchPage(props) {
