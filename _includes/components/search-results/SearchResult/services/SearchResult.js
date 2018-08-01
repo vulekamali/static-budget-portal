@@ -1,7 +1,7 @@
-import { h, Component } from 'preact';
+import { createElement, Component } from 'preact';
 import getLandingResults from './getLandingResults.js';
 import getFacetResults from './getFacetResults.js';
-import SearchPage from './SearchPage.jsx';
+import SearchPage from './../presentation/SearchPage.jsx';
 
 
 export default class SearchPageContainer extends Component {
@@ -29,7 +29,7 @@ export default class SearchPageContainer extends Component {
   }
 
   componentWillMount() {
-    const { phrase, view = 'all', year } = this.props;
+    const { search: phrase, view = 'all', year } = this.props;
 
     this.setState({
       loading: true,
@@ -70,7 +70,7 @@ export default class SearchPageContainer extends Component {
 
   addPage() {
     const { tab, page } = this.state;
-    const { phrase, year } = this.props;
+    const { search: phrase, year } = this.props;
 
     if (this.static.currentFetch && this.static.currentFetch.token.active) {
       this.static.currentFetch.token.cancel();
@@ -102,7 +102,7 @@ export default class SearchPageContainer extends Component {
 
 
   updateTab(newTab, scroll) {
-    const { phrase, year, rootNode } = this.props;
+    const { search: phrase, year, root } = this.props;
     const { tab } = this.state;
 
     this.setState({
@@ -113,7 +113,7 @@ export default class SearchPageContainer extends Component {
     });
 
     if (scroll) {
-      rootNode.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      root.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     history.replaceState({}, '', `/${year}/search-result?search=${encodeURI(phrase)}&view=${newTab}`);
 
@@ -128,26 +128,25 @@ export default class SearchPageContainer extends Component {
 
 
   render() {
-    const { phrase, year } = this.props;
+    const { search: phrase, year } = this.props;
     const { tab, items, loading, loadingPage, page, error } = this.state;
 
     const { updateTab, addPage } = this.events;
 
-    return (
-      <SearchPage
-        {...{
-          phrase,
-          page,
-          items,
-          tab,
-          year,
-          updateTab,
-          loading,
-          addPage,
-          loadingPage,
-          error,
-        }}
-      />
+    return createElement(
+      SearchPage,
+      {
+        phrase,
+        page,
+        items,
+        tab,
+        year,
+        updateTab,
+        loading,
+        addPage,
+        loadingPage,
+        error,
+      },
     );
   }
 }
