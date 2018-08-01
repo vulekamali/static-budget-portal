@@ -11,7 +11,7 @@ export default class SearchPageContainer extends Component {
 
     this.state = {
       tab: view || 'all',
-      items: null,
+      items: {},
       loading: true,
       error: false,
       loadingPage: false,
@@ -129,7 +129,7 @@ export default class SearchPageContainer extends Component {
 
   render() {
     const { search: phrase, year } = this.props;
-    const { tab, items, loading, loadingPage, page, error } = this.state;
+    const { tab, items: response, loading, loadingPage, page, error } = this.state;
 
     const { updateTab, addPage } = this.events;
 
@@ -138,7 +138,7 @@ export default class SearchPageContainer extends Component {
       {
         phrase,
         page,
-        items,
+        response,
         tab,
         year,
         updateTab,

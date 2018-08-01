@@ -65,6 +65,7 @@ export default function getLandingResults(phrase, year) {
             contributed,
             videos,
             glossary,
+            count: national.count + provincial.count + contributed.count,
           },
         );
       })

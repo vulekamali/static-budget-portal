@@ -203,12 +203,12 @@ const buildHeading = (year, tab, count, updateTab) => {
 };
 
 
-export default function LandingLayout({ items: rawItems, year, error, updateTab }) {
-  const items = rawItems || {};
+export default function LandingLayout({ response, year, error, updateTab }) {
+  const items = response || {};
   const provincial = items.provincial || {};
   const national = items.national || {};
   const contributed = items.contributed || {};
-  const { videos, glossary } = rawItems;
+  const { videos, glossary } = response;
 
   return (
     <div>

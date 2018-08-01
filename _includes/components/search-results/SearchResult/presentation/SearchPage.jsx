@@ -5,59 +5,55 @@ import FacetLayout from './FacetLayout.jsx';
 import tabOptions from './../data/tabOptions.json';
 
 
-export default function SearchPage(props) {
-  const {
-    phrase, 
-    tab,
-    updateTab,
-    year,
-    items: rawItems,
-    loading,
-    page,
-    addPage,
-    loadingPage,
-    error,
-  } = props;
+function calcContent(props) {
+  const { error, loading } = props;
+  const { updateTab, addPage } = props;
+  const { tab, year, response, page } = props;
+  const { count, items } = response || {};
 
-  const items = rawItems || [];
-
-  const determineLayout = (innerTab) => {
-    if (innerTab === 'all') {
-      return <LandingLayout {...{ items, year, error, updateTab }} />;
-    }
-
-    const buttonCss = [
-      'Button',
-      'is-secondary',
-      'is-inline',
-      (loadingPage ? 'is-loading' : null),
-    ].join(' ');
-
-    const button = <button className={buttonCss} onClick={addPage}>Show more</button>;
-
+  if (error) {
     return (
-      <div>
-        <FacetLayout
-          count={items.count}
-          items={items.items}
-          tab={tabOptions[tab]}
-          tabKey={tab}
-          {...{ year, error }}
-        />
-        <div className="u-textAlignCenter">
-          {items.count > page * 5 ? button : null}
-        </div>
+      <div className="SearchResult-card is-dark u-marginTop25">
+        <div className="SearchResult-cardTitle">Something went wrong</div>
+        <div>Please try again at a later point.</div>
       </div>
     );
-  };
+  }
 
-  const loader = <div className="Loader u-marginTop50 u-marginLeftAuto u-marginRightAuto" />;
+  if (loading) {
+    return <div className="Loader u-marginTop50 u-marginLeftAuto u-marginRightAuto" />;
+  }
 
+  if (count < 1) {
+    return (
+      <div className="SearchResult-card is-dark u-marginTop25">
+        <div className="SearchResult-cardTitle">We found no results</div>
+        <div>Try changing the searched year, or broaden your search terms.</div>
+      </div>
+    );
+  }
+
+  if (tab === 'all') {
+    return <LandingLayout {...{ response, year, error, updateTab }} />;
+  }
+
+  return (
+    <FacetLayout
+      tab={tabOptions[tab]}
+      tabKey={tab}
+      {...{ addPage, page, year, error, count, items }} 
+    />
+  );
+}
+
+
+export default function SearchPage(props) {
+  const { tab, updateTab, phrase } = props;
   return (
     <div className="SearchResult">
       <div className="Page-title u-textAlignCenter">Search results for &quot;{phrase}&quot;</div>
       <TabSelection {...{ tab, updateTab, tabOptions }} />
-      {loading ? loader : determineLayout(tab)}
+      {calcContent(props)}
     </div>
   );
 }
