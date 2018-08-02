@@ -28,37 +28,16 @@ const calcSectionObj = (type) => {
 };
 
 
-const createLinkText = (sphere, string) => {
-  switch (sphere) {
-    case 'national': return 'Estimates of National Expenditure (ENE)';
-    case 'provincial': return 'Estimates of Provincial Revenue and Expenditure (EPRE)';
-    case 'cso': return string;
-    default: return null;
-  }
-};
-
-
-const buildSnippet = (snippet, tab) => {
-  if (tab === 'cso' && !snippet.organization) {
-    return null;
-  }
-  return (
-    <div>
-      <div className="u-marginBottom20 u-lineHeight16" dangerouslySetInnerHTML={{ __html: snippet.text }} />
-      <div>
-        <span>Source:&nbsp;</span>
-        <a target="_blank" href={snippet.url}>{createLinkText(tab, snippet.organization)}</a>
-      </div>
-    </div>
-  );
-};
-
-
-function ItemPreview({ title, url, snippet, tab, paddingOverride }) {
+function ItemPreview({ title, url, snippet, paddingOverride, source, contributor }) {
+  const hasSource = source.text && source.url;
   return (
     <div key={url} className={`Section u-marginBottom20 is-invisible${paddingOverride ? ' u-padding0' : ''}`}>
       <a href={url} className="Section-title" dangerouslySetInnerHTML={{ __html: title }} />
-      {snippet ? buildSnippet(snippet, tab) : null}
+      <div className="u-marginTop16 u-marginBottom16">
+        {contributor !== 'National Treasury' ? `Contributor: ${contributor}` : null}
+      </div>
+      <div className="u-marginBottom20 u-lineHeight16" dangerouslySetInnerHTML={{ __html: snippet }} />
+      {hasSource ? <div><span>Source: </span><a target="_blank" href={source.url}>{source.text}</a></div> : null}
     </div>
   );
 }
@@ -149,7 +128,7 @@ const createOtherYears = (otherYears, color) => {
 };
 
 
-function Section({ type, items, count, tab, otherYears, error }) {
+function Section({ type, items, tab, otherYears, error }) {
   const { modifiers, color } = calcSectionObj(type);
   const validAmount = items.length;
 
@@ -158,13 +137,11 @@ function Section({ type, items, count, tab, otherYears, error }) {
       <div className="Section-card u-paddingBottom0">
         <div className="Grid has-standardTrigger u-marginBottom30">
           <div className="Grid-inner">
-            {error ?
-              null :
-              items.map(({ title, url, snippet }) => {
-                return <div className="Grid-item is-1of3"><ItemPreview paddingOverride {...{ tab, url, title, snippet }} /></div>;
+            {
+              items.map(({ title, url, snippet, source, contributor }) => {
+                return <div className="Grid-item is-1of3"><ItemPreview paddingOverride {...{ source, tab, url, contributor, title, snippet }} /></div>;
               })
             }
-            <Notice amount={validAmount} {...{ error }} />
           </div>
         </div>
       </div>
@@ -203,24 +180,23 @@ const buildHeading = (year, tab, count, updateTab) => {
 };
 
 
-export default function LandingLayout({ response, year, error, updateTab }) {
-  const items = response || {};
+export default function LandingLayout({ items, year, error, updateTab }) {
   const provincial = items.provincial || {};
   const national = items.national || {};
   const contributed = items.contributed || {};
-  const { videos, glossary } = response;
+  const { videos, glossary } = items;
 
   return (
     <div>
       <StaticContent {...{ videos, glossary }} />
 
       <div className="u-marginBottom20">
-        {buildHeading(year, 'cso', contributed.count, updateTab)}
+        {buildHeading(year, 'contributed', contributed.count, updateTab)}
         <Section
           type="green"
           items={contributed.items || []}
           count={contributed.count}
-          tab="cso"
+          tab="contributed"
           otherYears={[]}
           {...{ error }}
         />

@@ -26,9 +26,7 @@ function CalcContent(props) {
   const { error, loading } = props;
   const { updateTab, addPage } = props;
   const { tab, year, response, page } = props;
-  const { count, items } = response || {};
-
-  console.log(response);
+  const { count, items = {} } = response || {};
 
   if (error) {
     return (
@@ -53,14 +51,14 @@ function CalcContent(props) {
   }
 
   if (tab === 'all') {
-    return <LandingLayout {...{ response, year, error, updateTab }} />;
+    return <LandingLayout {...{ items, year, error, updateTab }} />;
   }
 
   return (
     <FacetLayout
       tab={tabOptions[tab]}
       tabKey={tab}
-      {...{ addPage, page, year, error, count, items }} 
+      {...{ addPage, page, year, error, count, response }} 
     />
   );
 }
@@ -90,24 +88,26 @@ export default function SearchPage(props) {
 
 
 const responseSchema = PropTypes.shape({
-  count: PropTypes.num.isRequired,
-  items: PropTypes.arrayOf(
+  count: PropTypes.number.isRequired,
+  items: PropTypes.objectOf(
     PropTypes.shape({
-      count: PropTypes.num.isRequired,
-      title: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
-      contributor: PropTypes.string.isRequired,
-      snippet: PropTypes.string,
-      source: {
-        url: PropTypes.string,
-        text: PropTypes.string,
-      },
+      count: PropTypes.number.isRequired,
+      items: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired,
+        contributor: PropTypes.string.isRequired,
+        snippet: PropTypes.string,
+        source: {
+          url: PropTypes.string,
+          text: PropTypes.string,
+        },
+      }),
     }),
   ),
 });
 
 SearchPage.propTypes = {
-  tab: PropTypes.oneOf(['all', 'cso', 'national', 'provincial']).isRequired,
+  tab: PropTypes.oneOf(['all', 'contributed', 'national', 'provincial']).isRequired,
   updateTab: PropTypes.func.isRequired,
   phrase: PropTypes.string.isRequired,
   error: PropTypes.bool,

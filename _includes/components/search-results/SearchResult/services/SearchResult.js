@@ -80,14 +80,18 @@ export default class SearchPageContainer extends Component {
 
     this.static.currentFetch.request
       .then((data) => {
+        const newTab = {
+          ...this.state.items,
+          items: [
+            ...this.state.items[tab].items,
+            ...data[tab].items,
+          ],
+        };
+
         this.setState({
           page: page + 1,
           items: {
-            count: this.state.items.count,
-            items: [
-              ...this.state.items.items,
-              ...data.items,
-            ],
+            [tab]: newTab,
           },
         });
       })
