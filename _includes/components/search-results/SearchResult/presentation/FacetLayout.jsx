@@ -1,18 +1,8 @@
 import { h } from 'preact';
 
 
-const createLinkText = (sphere, string) => {
-  switch (sphere) {
-    case 'national': return 'Estimates of National Expenditure (ENE)';
-    case 'provincial': return 'Estimates of Provincial Revenue and Expenditure (EPRE)';
-    case 'cso': return string;
-    default: return null;
-  }
-};
-
-
 const buildSnippet = (snippet, tab) => {
-  if (tab === 'cso' && !snippet.organization) {
+  if (tab === 'contributed' && !snippet.organization) {
     return null;
   }
   return (
@@ -27,46 +17,48 @@ const buildSnippet = (snippet, tab) => {
 };
 
 
-function ItemPreview({ title, url, snippet, tab, paddingOverride }) {
+function ItemPreview({ title, url, snippet, paddingOverride, source, contributor }) {
+  const hasSource = source.text && source.url;
   return (
     <div key={url} className={`Section u-marginBottom20 is-invisible${paddingOverride ? ' u-padding0' : ''}`}>
       <a href={url} className="Section-title" dangerouslySetInnerHTML={{ __html: title }} />
-      {snippet ? buildSnippet(snippet, tab) : null}
+      <div className="u-marginTop15 u-marginBottom15">
+        {contributor !== 'National Treasury' ? `Contributor: ${contributor}` : null}
+      </div>
+      <div className="u-marginBottom20 u-lineHeight16" dangerouslySetInnerHTML={{ __html: snippet }} />
+      {hasSource ? <div><span>Source: </span><a target="_blank" href={source.url}>{source.text}</a></div> : null}
     </div>
   );
 }
 
 
-export default function FacetLayout({ count, items: rawItems, year, tab, tabKey, error }) {
-  const items = rawItems || [];
+function ShowMoreButton({ addPage }) {
+  return (
+    <div className="u-textAlignCenter">
+      <button className="Button is-secondary is-inline" onClick={addPage}>
+        Show more
+      </button>
+    </div>
+  );
+}
 
-  if (error) {
-    return (
-      <div className="u-textAlignCenter">
-        <div className="Page-title u-marginBottom0">Something went wrong</div>
-        <div className="Section-title u-marginBottom20">Please try again at a later point.</div>
-      </div>
-    );
-  }
 
-  if (items.length === 0) {
-    return (
-      <div className="u-textAlignCenter">
-        <div className="Page-title u-marginBottom0">We found no results</div>
-        <div className="Section-title u-marginBottom20">Try changing the searched year, or broaden your search terms.</div>
-      </div>
-    );
-  }
-
+export default function FacetLayout({ count, response = {}, year, tab, tabKey, addPage, page }) {
+  const { items } = response[tabKey];
   return (
     <div>
-      <div className="Section is-invisible">
-        <div className="Section-title">
-          <span className="u-fontWeightNormal">All {count} results found in&nbsp;</span>
-          <span>{tab} for {year}</span>
+      <div>
+        <div className="Section is-invisible">
+          <div className="Section-title">
+            <span className="u-fontWeightNormal">All {count} results found in&nbsp;</span>
+            <span>{tab} for {year}</span>
+          </div>
         </div>
+        {items.map(({ title, url, snippet, source, contributor }) => <ItemPreview tab={tabKey} {...{ title, url, snippet, source, contributor }} />)}
       </div>
-      {items.map(({ title, url, snippet }) => <ItemPreview tab={tabKey} {...{ url, title, snippet }} />)}
+      <div>
+        {count > page * 5 ? ShowMoreButton({ addPage }) : null}
+      </div>
     </div>
   );
 }

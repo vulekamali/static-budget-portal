@@ -46,7 +46,9 @@ export default function getLandingResults(phrase, year) {
         ] = returnArr;
 
         const resultsArr = [rawNational, rawProvincial, rawContributed].map(normaliseServerResponse);
-        const [national, provincial, contributed] = resultsArr.map(item => highlightResults(item, phrase));
+        const [national, provincial, contributed] = resultsArr.map((item) => {
+          return highlightResults(item, phrase);
+        });
 
         const nationalOtherYears = normaliseOtherYears(rawNationalOtherYears, 'national');
         const provincialOtherYears = normaliseOtherYears(rawProvincialOtherYears, 'provincial');
@@ -54,17 +56,20 @@ export default function getLandingResults(phrase, year) {
 
         resolve(
           {
-            national: {
-              ...national,
-              otherYears: nationalOtherYears,
+            items: {
+              national: {
+                ...national,
+                otherYears: nationalOtherYears,
+              },
+              provincial: {
+                ...provincial,
+                otherYears: provincialOtherYears,
+              },
+              contributed,
+              videos,
+              glossary,
             },
-            provincial: {
-              ...provincial,
-              otherYears: provincialOtherYears,
-            },
-            contributed,
-            videos,
-            glossary,
+            count: national.count + provincial.count + contributed.count,
           },
         );
       })

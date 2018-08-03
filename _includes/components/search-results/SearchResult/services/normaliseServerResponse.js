@@ -2,6 +2,15 @@ import { find } from 'lodash';
 import extractSnippet from './extractSnippet.js';
 
 
+const createLinkText = (sphere) => {
+  if (sphere === 'national') {
+    return 'Estimates of National Expenditure (ENE)';
+  }
+
+  return 'Estimates of Provincial Revenue and Expenditure (EPRE)';
+};
+
+
 const normaliseDepartmentItem = (item) => {
   const { extras, province, financial_year: financialYear, organization = {}, title: rawTitle, name } = item;
 
@@ -19,15 +28,25 @@ const normaliseDepartmentItem = (item) => {
 
   const nameSlug = getExtrasValue('department_name_slug');
   const nameString = getExtrasValue('department_name');
-  const snippet = extractSnippet(item);
+  const { text: snippet, url: sourceUrl } = extractSnippet(item) || {};
 
   const buildDeptName = () => `${regionString} Department: ${nameString}`;
   const title = isOfficial ? buildDeptName() : rawTitle;
 
   const buildDeptUrl = () => `https://vulekamali.gov.za/${year}/${regionSlug}/departments/${nameSlug}`;
   const url = isOfficial ? buildDeptUrl() : `/datasets/contributed/${name}`;
+  const sourceText = isOfficial ? createLinkText(regionSlug) : null;
 
-  return { title, url, snippet, organisation: organization.title };
+  return {
+    title,
+    url,
+    snippet,
+    contributor: organization.title,
+    source: {
+      text: sourceText,
+      url: sourceUrl,
+    },
+  };
 };
 
 

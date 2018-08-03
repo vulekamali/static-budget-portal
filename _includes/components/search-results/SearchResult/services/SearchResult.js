@@ -11,7 +11,7 @@ export default class SearchPageContainer extends Component {
 
     this.state = {
       tab: view || 'all',
-      items: null,
+      items: {},
       loading: true,
       error: false,
       loadingPage: false,
@@ -80,14 +80,18 @@ export default class SearchPageContainer extends Component {
 
     this.static.currentFetch.request
       .then((data) => {
+        const newTab = {
+          ...this.state.items,
+          items: [
+            ...this.state.items[tab].items,
+            ...data[tab].items,
+          ],
+        };
+
         this.setState({
           page: page + 1,
           items: {
-            count: this.state.items.count,
-            items: [
-              ...this.state.items.items,
-              ...data.items,
-            ],
+            [tab]: newTab,
           },
         });
       })
@@ -129,7 +133,7 @@ export default class SearchPageContainer extends Component {
 
   render() {
     const { search: phrase, year } = this.props;
-    const { tab, items, loading, loadingPage, page, error } = this.state;
+    const { tab, items: response, loading, loadingPage, page, error } = this.state;
 
     const { updateTab, addPage } = this.events;
 
@@ -138,7 +142,7 @@ export default class SearchPageContainer extends Component {
       {
         phrase,
         page,
-        items,
+        response,
         tab,
         year,
         updateTab,

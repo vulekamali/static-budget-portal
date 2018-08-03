@@ -5,7 +5,7 @@ import createPromiseToken from './../../../../utilities/js/helpers/createPromise
 
 
 const buildUrl = (phrase, start, facet, year) => {
-  if (facet === 'cso') {
+  if (facet === 'contributed') {
     return `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=${start}&rows=5&fq=-organization:national-treasury&ext_highlight=true`;
   }
 
@@ -20,7 +20,12 @@ export default function getFacetResults(phrase, facet, start = 0, year) {
     innerRequest
       .then((data) => {
         const results = normaliseServerResponse(data, facet);
-        resolve(highlightResults(results, phrase));
+        const output = highlightResults(results, phrase);
+
+        resolve({
+          count: output.count, 
+          [facet]: output,
+        });
       })
       .catch(reject);
   });

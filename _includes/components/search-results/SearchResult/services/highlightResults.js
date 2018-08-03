@@ -6,10 +6,7 @@ export default function highlightResults(results, phrase) {
   const highlightFn = innerString => `<em class="Highlight">${innerString}</em>`;
 
   const buildSnippet = (itemObj) => {
-    return {
-      ...itemObj.snippet,
-      text: wrapStringPhrases(itemObj.snippet.text, phrasesArray, highlightFn),
-    };
+    return wrapStringPhrases(itemObj.snippet, phrasesArray, highlightFn);
   };
 
   return {
