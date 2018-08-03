@@ -4,24 +4,46 @@ layout: page-shell
 
 {% assign page_data = site.data.datasets[page.category][page.data_key] %}
 
+
 <div class="Page-content">
   <main class="Page-contentInner">
 
     <div>
       <div class="Page-mainHeading">{{ page_data.name }}</div>
 
+    </div>
+
+    <main class="Page-main">
       {% if page_data.intro %}
-      <div class="BasicContent">
-        <div class="BasicContent-title">Overview</div>
-        {{ page_data.intro }}
-      </div>
+        <div class="BasicContent">
+          <div class="BasicContent-title">Overview</div>
+          {{ page_data.intro }}
+        </div>
       {% endif %}
 
       {%
         include components/universal/Downloads/index.html resources=page_data.resources
         utils="u-marginTop20"
       %}
-    </div>
+    </main>
+
+    <aside class="Page-sidebar">
+      <div class="Section u-marginBottom20">
+        <h2 class="Section-title">Share this page:</h2>
+        <div data-create-component="Share"></div>
+      </div>
+
+      <div class="Section is-bevel">
+        <div class="Section-card">
+          <h2 class="Section-title">What is a PER?</h2>
+          <p>A Performance and Expenditure Review (PER) is a process of reviewing government spending on a particular service, and how effective this spending is.</p>
+          <a href="/guides/per" class="Button">
+            Learn more
+          </a>
+        </div>
+      </div>
+
+    </aside>
 
   </main>
 </div>
