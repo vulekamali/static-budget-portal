@@ -181,7 +181,6 @@ const buildHeading = (year, tab, count, updateTab) => {
 
 
 export default function LandingLayout({ items = {}, year, error, updateTab }) {
-  console.log(items);
   const { videos, glossary, departments, contributed, datasets } = items || {};
 
   return (
