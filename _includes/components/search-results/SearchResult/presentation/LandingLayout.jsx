@@ -180,11 +180,9 @@ const buildHeading = (year, tab, count, updateTab) => {
 };
 
 
-export default function LandingLayout({ items, year, error, updateTab }) {
-  const provincial = items.provincial || {};
-  const national = items.national || {};
-  const contributed = items.contributed || {};
-  const { videos, glossary } = items;
+export default function LandingLayout({ items = {}, year, error, updateTab }) {
+  console.log(items);
+  const { videos, glossary, departments, contributed, datasets } = items || {};
 
   return (
     <div>
@@ -193,36 +191,33 @@ export default function LandingLayout({ items, year, error, updateTab }) {
       <div className="u-marginBottom20">
         {buildHeading(year, 'contributed', contributed.count, updateTab)}
         <Section
-          type="green"
+          type="grey"
           items={contributed.items || []}
           count={contributed.count}
           tab="contributed"
           otherYears={[]}
-          {...{ error }}
         />
       </div>
 
       <div className="u-marginBottom20">
-        {buildHeading(year, 'national', national.count, updateTab)}
+        {buildHeading(year, 'departments', departments.count, updateTab)}
         <Section
           type="grey"
-          items={national.items || []}
-          count={national.items}
-          tab="national"
-          otherYears={national.otherYears || []}
-          {...{ error }}
+          items={departments.items || []}
+          count={departments.items}
+          tab="departments"
+          otherYears={departments.otherYears || []}
         />
       </div>
 
       <div className="u-marginBottom20">
-        {buildHeading(year, 'provincial', provincial.count, updateTab)}
+        {buildHeading(year, 'datasets', datasets.count, updateTab)}
         <Section
-          type="purple"
-          items={provincial.items || []}
-          count={provincial.items}
-          tab="national"
-          otherYears={provincial.otherYears || []}
-          {...{ error }}
+          type="grey"
+          items={datasets.items || []}
+          count={datasets.items}
+          tab="datasets"
+          otherYears={datasets.otherYears || []}
         />
       </div>
     </div>

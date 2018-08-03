@@ -11,6 +11,19 @@ const createLinkText = (sphere) => {
 };
 
 
+const buildUrl = (isOfficial, buildDeptUrl, treasury, name) => {
+  if (isOfficial) {
+    return buildDeptUrl();
+  }
+
+  if (treasury === 'national-treasury') {
+    return `/datasets/performance-and-expenditure-reviews/${name}`;
+  }
+
+  return `/datasets/contributed/${name}`;
+};
+
+
 const normaliseDepartmentItem = (item) => {
   const { extras, province, financial_year: financialYear, organization = {}, title: rawTitle, name } = item;
 
@@ -19,7 +32,7 @@ const normaliseDepartmentItem = (item) => {
     return obj.value;
   };
 
-  const isOfficial = organization.name === 'national-treasury';
+  const isOfficial = organization.name === 'national-treasury' && !!getExtrasValue('department_name_slug');
 
   const year = financialYear[0];
   const region = getExtrasValue('geographic_region_slug');
@@ -28,13 +41,13 @@ const normaliseDepartmentItem = (item) => {
 
   const nameSlug = getExtrasValue('department_name_slug');
   const nameString = getExtrasValue('department_name');
-  const { text: snippet, url: sourceUrl } = extractSnippet(item) || {};
+  const { text: snippet, url: sourceUrl } = extractSnippet(item, isOfficial) || {};
 
   const buildDeptName = () => `${regionString} Department: ${nameString}`;
   const title = isOfficial ? buildDeptName() : rawTitle;
 
   const buildDeptUrl = () => `https://vulekamali.gov.za/${year}/${regionSlug}/departments/${nameSlug}`;
-  const url = isOfficial ? buildDeptUrl() : `/datasets/contributed/${name}`;
+  const url = buildUrl(isOfficial, buildDeptUrl, organization.name, name);
   const sourceText = isOfficial ? createLinkText(regionSlug) : null;
 
   return {
