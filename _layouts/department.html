@@ -57,12 +57,14 @@ layout: page-shell
     </div>
 
     <div class="u-marginTop20">
-      <div class="Grid has-rightSidebar">
-        {%
-          include components/department-budgets/ContributedData/index.html
-          datasets=page_data.contributed_datasets
-        %}
-          
+      <div class="Grid has-leftSidebar">
+        <div>
+          {%
+            include components/department-budgets/ContributedData/index.html
+            datasets=page_data.contributed_datasets
+          %}
+        </div>
+            
         <div>
           {% 
             include components/universal/Participate/index.html
