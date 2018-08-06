@@ -25,8 +25,8 @@ const scanResources = (resourcesList) => {
 };
 
 
-export default function extractSnippet(itemObj) {
-  if (itemObj.organization.name !== 'national-treasury') {
+export default function extractSnippet(itemObj, isOfficial) {
+  if (!isOfficial) {
     if (itemObj.highlighting.notes) {
       return {
         text: escapeText(itemObj.highlighting.notes[0]),
