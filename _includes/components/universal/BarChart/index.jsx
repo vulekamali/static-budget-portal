@@ -58,16 +58,6 @@ export default function BarChart(props) {
     showGuides: true,
   };
 
-  if (hover) {
-    styling = {
-      ...styling,
-      charLineHeight: 14,
-      lineGutter: 8,
-      barWidth: 12,
-      groupMargin: 40,
-    };
-  }
-
   if (download) {
     const titleArray = breakIntoWrap(download.heading, 33);
 
