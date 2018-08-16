@@ -11,11 +11,29 @@ contributed_datasets:
     in South Africa?
   url_path: /datasets/contributed/how-transparent-and-participatory-are-the-budgets-of-metropolitan-municipalities-in-south-africa
 - contributor: International Budget Partnership
+  name: The transparency of public funding of Basic Education in South Africa
+  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
+- contributor: International Budget Partnership
   name: A Guide to Conducting Social Audits in South Africa
   url_path: /datasets/contributed/a-guide-to-conducting-social-audits-in-south-africa
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+- contributor: Centre for Child Law
+  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
+  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 description: 'Eastern Cape department: Roads and Public Works budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
@@ -128,8 +146,7 @@ treasury_datasets:
     - format: XLSM
       url: https://data.vulekamali.gov.za/dataset/ab41c2ae-e383-4660-889e-a8fbde2ada61/resource/3018afc1-b8f6-4f1e-a1c3-47991d83396b/download/ec-roads-and-public-works.xlsm
     - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2016/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
-        - Vote 05 - Road and Public works.pdf
+      url: https://data.vulekamali.gov.za/dataset/ab41c2ae-e383-4660-889e-a8fbde2ada61/resource/4929a06a-1498-4e25-a95c-4a3426004b1f/download/ec-vote-05-road-and-public-works.pdf
 vote_number: 5
 vote_primary:
   name: Roads and Public Works

@@ -11,11 +11,29 @@ contributed_datasets:
     in South Africa?
   url_path: /datasets/contributed/how-transparent-and-participatory-are-the-budgets-of-metropolitan-municipalities-in-south-africa
 - contributor: International Budget Partnership
+  name: The transparency of public funding of Basic Education in South Africa
+  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
+- contributor: International Budget Partnership
   name: A Guide to Conducting Social Audits in South Africa
   url_path: /datasets/contributed/a-guide-to-conducting-social-audits-in-south-africa
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+- contributor: Centre for Child Law
+  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
+  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 description: 'Eastern Cape department: Sport, Recreation, Arts and Culture budget
   data for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -115,16 +133,7 @@ sphere:
   name: Provincial
   slug: provincial
 title: Sport, Recreation, Arts and Culture budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 14 : Sport, Recreation, Arts and Culture':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/e7e69f18-2b85-44b2-8ca1-450d33091742/resource/2986f8b1-a8c4-4209-856e-31eba78fa8fa/download/ec-sport-rec-arts-and-culture.xlsm
-    - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/EC
-        - Vote 14 - Sport, Rec, Arts and Culture.pdf
+treasury_datasets: {}
 vote_number: 14
 vote_primary:
   name: Sport, Recreation, Arts and Culture

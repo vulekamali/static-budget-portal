@@ -11,11 +11,29 @@ contributed_datasets:
     in South Africa?
   url_path: /datasets/contributed/how-transparent-and-participatory-are-the-budgets-of-metropolitan-municipalities-in-south-africa
 - contributor: International Budget Partnership
+  name: The transparency of public funding of Basic Education in South Africa
+  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
+- contributor: International Budget Partnership
   name: A Guide to Conducting Social Audits in South Africa
   url_path: /datasets/contributed/a-guide-to-conducting-social-audits-in-south-africa
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+- contributor: Centre for Child Law
+  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
+  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 description: 'Limpopo department: Economic Development, Environment and Tourism budget
   data for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -133,8 +151,7 @@ treasury_datasets:
     - format: XLSM
       url: https://data.vulekamali.gov.za/dataset/1d9b7b92-2fc0-411c-9ca7-5a42b8bbd8b6/resource/b092484a-8c4f-4018-9935-781ba3288ef7/download/lim-eco.-dev.-env.-and-tourism.xlsm
     - format: PDF
-      url: http://www.treasury.gov.za/documents/provincial%20budget/2017/4.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM/2.%20Estimates%20of%20Prov%20Rev%20and%20Exp/LIM
-        - Vote 06 - Economic Dev., Environ. & Tourism.pdf
+      url: https://data.vulekamali.gov.za/dataset/1d9b7b92-2fc0-411c-9ca7-5a42b8bbd8b6/resource/006818b5-c294-4cdb-8532-d6b9677fe0f4/download/lim-vote-06-economic-dev.-environ.-tourism.pdf
 vote_number: 6
 vote_primary:
   name: Economic Development, Environment and Tourism

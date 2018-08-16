@@ -11,11 +11,29 @@ contributed_datasets:
     in South Africa?
   url_path: /datasets/contributed/how-transparent-and-participatory-are-the-budgets-of-metropolitan-municipalities-in-south-africa
 - contributor: International Budget Partnership
+  name: The transparency of public funding of Basic Education in South Africa
+  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
+- contributor: International Budget Partnership
   name: A Guide to Conducting Social Audits in South Africa
   url_path: /datasets/contributed/a-guide-to-conducting-social-audits-in-south-africa
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+- contributor: Centre for Child Law
+  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
+  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 description: 'Western Cape department: Transport And Public Works budget data for
   the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
@@ -114,15 +132,7 @@ sphere:
   name: Provincial
   slug: provincial
 title: Transport And Public Works budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 10 - Transport And Public Works:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/9ffb3386-b0ce-454f-a3f1-b4f946c82913/resource/d7117fd7-37fc-4b22-ad19-70175e8bd0f0/download/wc-vote-10-transport-and-public-works.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/9ffb3386-b0ce-454f-a3f1-b4f946c82913/resource/54ffb630-1f12-4dbf-a799-48b2a2a1994e/download/wc-transport-and-public-works.xlsm
+treasury_datasets: {}
 vote_number: 10
 vote_primary:
   name: Transport And Public Works

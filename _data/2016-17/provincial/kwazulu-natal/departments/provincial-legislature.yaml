@@ -11,11 +11,29 @@ contributed_datasets:
     in South Africa?
   url_path: /datasets/contributed/how-transparent-and-participatory-are-the-budgets-of-metropolitan-municipalities-in-south-africa
 - contributor: International Budget Partnership
+  name: The transparency of public funding of Basic Education in South Africa
+  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
+- contributor: International Budget Partnership
   name: A Guide to Conducting Social Audits in South Africa
   url_path: /datasets/contributed/a-guide-to-conducting-social-audits-in-south-africa
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+- contributor: Centre for Child Law
+  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
+  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 description: 'KwaZulu-Natal department: Provincial Legislature budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
@@ -119,15 +137,7 @@ sphere:
   name: Provincial
   slug: provincial
 title: Provincial Legislature budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 02 : Provincial Legislature':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/88af98d2-5cb4-4fa7-a677-d9e27acd5154/resource/3bbdc9a3-6830-48dd-a7be-e0e67ff256bd/download/kzn-legislature.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/88af98d2-5cb4-4fa7-a677-d9e27acd5154/resource/f5541be6-3082-441e-b359-8421298511d6/download/kzn-vote-02-legislature.pdf
+treasury_datasets: {}
 vote_number: 2
 vote_primary:
   name: Provincial Legislature

@@ -11,11 +11,29 @@ contributed_datasets:
     in South Africa?
   url_path: /datasets/contributed/how-transparent-and-participatory-are-the-budgets-of-metropolitan-municipalities-in-south-africa
 - contributor: International Budget Partnership
+  name: The transparency of public funding of Basic Education in South Africa
+  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
+- contributor: International Budget Partnership
   name: A Guide to Conducting Social Audits in South Africa
   url_path: /datasets/contributed/a-guide-to-conducting-social-audits-in-south-africa
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+- contributor: Centre for Child Law
+  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
+  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 description: 'Gauteng department: Agriculture And Rural Development budget data for
   the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
@@ -108,15 +126,7 @@ sphere:
   name: Provincial
   slug: provincial
 title: Agriculture And Rural Development budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 11 - Agriculture And Rural Development:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/3566eec7-d123-4f4e-b426-356d6ace3bdc/resource/78b05b77-bbea-4e15-946e-fb3d0c0e6557/download/gt-vote-11-agriculture-and-rural-development.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/3566eec7-d123-4f4e-b426-356d6ace3bdc/resource/29c44a36-53ac-45ce-8c94-8a938a1820e3/download/gt-agriculture-and-rural-dev.xlsm
+treasury_datasets: {}
 vote_number: 11
 vote_primary:
   name: Agriculture And Rural Development

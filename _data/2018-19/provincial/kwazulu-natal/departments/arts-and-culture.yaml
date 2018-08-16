@@ -11,11 +11,29 @@ contributed_datasets:
     in South Africa?
   url_path: /datasets/contributed/how-transparent-and-participatory-are-the-budgets-of-metropolitan-municipalities-in-south-africa
 - contributor: International Budget Partnership
+  name: The transparency of public funding of Basic Education in South Africa
+  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
+- contributor: International Budget Partnership
   name: A Guide to Conducting Social Audits in South Africa
   url_path: /datasets/contributed/a-guide-to-conducting-social-audits-in-south-africa
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+- contributor: Centre for Child Law
+  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
+  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
+  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 description: 'KwaZulu-Natal department: Arts And Culture budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
@@ -108,15 +126,7 @@ sphere:
   name: Provincial
   slug: provincial
 title: Arts And Culture budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 15 - Arts And Culture:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/13bbdef4-de60-4232-bd07-a1774e3e7f1b/resource/8add4b9d-1780-4874-b958-edd0853c046a/download/kzn-vote-15-arts-and-culture.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/13bbdef4-de60-4232-bd07-a1774e3e7f1b/resource/c82b68bf-5d0a-4677-9a0d-87021212de9a/download/kzn-arts-and-culture.xlsm
+treasury_datasets: {}
 vote_number: 15
 vote_primary:
   name: Arts And Culture
