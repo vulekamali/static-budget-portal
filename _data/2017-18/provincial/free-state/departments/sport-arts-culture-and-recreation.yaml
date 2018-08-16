@@ -4,9 +4,18 @@
 
 contributed_datasets:
 - contributor: Centre for Child Law
+  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
+  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+- contributor: Centre for Child Law
   name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
     Primary School case'
   url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
+- contributor: International Budget Partnership
+  name: The transparency of public funding of Basic Education in South Africa
+  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -15,29 +24,11 @@ contributed_datasets:
     in South Africa?
   url_path: /datasets/contributed/how-transparent-and-participatory-are-the-budgets-of-metropolitan-municipalities-in-south-africa
 - contributor: International Budget Partnership
-  name: The transparency of public funding of Basic Education in South Africa
-  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
-- contributor: International Budget Partnership
   name: A Guide to Conducting Social Audits in South Africa
   url_path: /datasets/contributed/a-guide-to-conducting-social-audits-in-south-africa
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-- contributor: Centre for Child Law
-  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 description: 'Free State department: Sport, Arts, Culture and Recreation budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -147,7 +138,15 @@ sphere:
   name: Provincial
   slug: provincial
 title: Sport, Arts, Culture and Recreation budget 2017-18  - vulekamali
-treasury_datasets: {}
+treasury_datasets:
+  'EPRE for Vote 12 : Sport, Arts, Culture and Recreation':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/3b2a6e6c-0079-4fb5-aa96-733036830be8/resource/d9080839-9b87-4f83-b38b-9592283dcf8f/download/fs-sport-art-culture-and-recrea.xlsm
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/3b2a6e6c-0079-4fb5-aa96-733036830be8/resource/69c8c057-8090-4dde-a526-50ece5279167/download/fs-vote-12-sport-arts-culture-and-recreation.pdf
 vote_number: 12
 vote_primary:
   name: Sport, Arts, Culture and Recreation

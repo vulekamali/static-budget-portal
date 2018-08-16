@@ -11,29 +11,11 @@ contributed_datasets:
     in South Africa?
   url_path: /datasets/contributed/how-transparent-and-participatory-are-the-budgets-of-metropolitan-municipalities-in-south-africa
 - contributor: International Budget Partnership
-  name: The transparency of public funding of Basic Education in South Africa
-  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
-- contributor: International Budget Partnership
   name: A Guide to Conducting Social Audits in South Africa
   url_path: /datasets/contributed/a-guide-to-conducting-social-audits-in-south-africa
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-- contributor: Centre for Child Law
-  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 description: 'Gauteng department: Infrastructure Development budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
@@ -135,7 +117,15 @@ sphere:
   name: Provincial
   slug: provincial
 title: Infrastructure Development budget 2017-18  - vulekamali
-treasury_datasets: {}
+treasury_datasets:
+  'EPRE for Vote 15 : Infrastructure Development':
+    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
+      the detailed spending plans of each government department for the coming year.
+    formats:
+    - format: XLSM
+      url: https://data.vulekamali.gov.za/dataset/7e35203e-64d5-42ef-8ef2-61e7e8187208/resource/224c7672-a65a-4abc-8193-7e86d006a22e/download/gt-infrastructure-development.xlsm
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/7e35203e-64d5-42ef-8ef2-61e7e8187208/resource/d5d5e57c-dec1-4129-b25d-e1124d699edb/download/gt-vote-15-infrastructure-development.pdf
 vote_number: 15
 vote_primary:
   name: Infrastructure Development

@@ -11,29 +11,11 @@ contributed_datasets:
     in South Africa?
   url_path: /datasets/contributed/how-transparent-and-participatory-are-the-budgets-of-metropolitan-municipalities-in-south-africa
 - contributor: International Budget Partnership
-  name: The transparency of public funding of Basic Education in South Africa
-  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
-- contributor: International Budget Partnership
   name: A Guide to Conducting Social Audits in South Africa
   url_path: /datasets/contributed/a-guide-to-conducting-social-audits-in-south-africa
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-- contributor: Centre for Child Law
-  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 description: 'National department: Communications budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
@@ -146,7 +128,15 @@ sphere:
   name: National
   slug: national
 title: Communications budget 2017-18  - vulekamali
-treasury_datasets: {}
+treasury_datasets:
+  ENE for Vote 03 - Communications:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-communications-2017-18/resource/966d323d-ddb5-45a2-a369-3693df2f7aa3/download/ene17-vote03_chaptertables.xlsx
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-communications-2017-18/resource/a9e45a28-d955-4d09-9a69-085e9a36be90/download/vote-03-communications.pdf
 vote_number: 3
 vote_primary:
   name: Communications

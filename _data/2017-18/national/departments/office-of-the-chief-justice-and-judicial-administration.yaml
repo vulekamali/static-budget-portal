@@ -11,29 +11,11 @@ contributed_datasets:
     in South Africa?
   url_path: /datasets/contributed/how-transparent-and-participatory-are-the-budgets-of-metropolitan-municipalities-in-south-africa
 - contributor: International Budget Partnership
-  name: The transparency of public funding of Basic Education in South Africa
-  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
-- contributor: International Budget Partnership
   name: A Guide to Conducting Social Audits in South Africa
   url_path: /datasets/contributed/a-guide-to-conducting-social-audits-in-south-africa
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-- contributor: Centre for Child Law
-  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 description: 'National department: Office of the Chief Justice and Judicial Administration
   budget data for the 2017-18 financial year from National Treasury in partnership
   with IMALI YETHU.'
@@ -140,7 +122,15 @@ sphere:
   name: National
   slug: national
 title: Office of the Chief Justice and Judicial Administration budget 2017-18  - vulekamali
-treasury_datasets: {}
+treasury_datasets:
+  ENE for Vote 22 - Office of the Chief Justice and Judicial Administration:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-office-of-the-chief-justice-and-judicial-administration-2017-18/resource/4de8c0d3-195d-4bad-9e73-eadd8fd5d5c2/download/ene17-vote22_chaptertables.xlsx
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-office-of-the-chief-justice-and-judicial-administration-2017-18/resource/600d1c06-9e85-491b-a265-66bd5779ecaa/download/vote-22-office-of-the-chief-justice-and-judicial-administration.pdf
 vote_number: 22
 vote_primary:
   name: Office of the Chief Justice and Judicial Administration

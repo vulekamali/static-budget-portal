@@ -11,29 +11,11 @@ contributed_datasets:
     in South Africa?
   url_path: /datasets/contributed/how-transparent-and-participatory-are-the-budgets-of-metropolitan-municipalities-in-south-africa
 - contributor: International Budget Partnership
-  name: The transparency of public funding of Basic Education in South Africa
-  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
-- contributor: International Budget Partnership
   name: A Guide to Conducting Social Audits in South Africa
   url_path: /datasets/contributed/a-guide-to-conducting-social-audits-in-south-africa
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-- contributor: Centre for Child Law
-  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 description: 'National department: Health budget data for the 2018-19 financial year
   from National Treasury in partnership with IMALI YETHU.'
 expenditure_over_time:
@@ -139,7 +121,15 @@ sphere:
   name: National
   slug: national
 title: Health budget 2018-19  - vulekamali
-treasury_datasets: {}
+treasury_datasets:
+  ENE for Vote 16 - Health:
+    description: The Estimates of National Expenditure (ENE) sets out the detailed
+      spending plans of each government department for the coming year.
+    formats:
+    - format: PDF
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-health-2018-19/resource/93e86f43-e220-4200-a35c-d1fd45183125/download/vote-16-health.pdf
+    - format: XLSX
+      url: https://data.vulekamali.gov.za/dataset/nat-dept-health-2018-19/resource/de5d360f-30f2-4f31-9689-ec1e5d65d353/download/ene18-vote16_chaptertables.xlsx
 vote_number: 16
 vote_primary:
   name: Health
