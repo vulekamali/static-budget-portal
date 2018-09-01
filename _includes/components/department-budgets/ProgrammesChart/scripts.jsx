@@ -52,6 +52,8 @@ class ProgrammesChartContainer extends Component {
     const link = document.createElement('a');
     link.download = 'chart.png';
     link.href = this.canvas.toDataURL();
+    link.setAttribute('type', 'hidden');
+    document.body.appendChild(link);
     return link.click();
   }
 
