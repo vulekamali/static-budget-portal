@@ -13,9 +13,17 @@ layout: page-shell
       <div>
       {{ page_data.description }}
       </div>
-      <a href="/guides/per" class="Button is-inline u-marginTop15">
-        Learn more about PERs
-      </a>
+
+      {% assign path = "guides/" |append: page.data_key |append: ".md" %}
+      {% for static_file in site.pages %}
+        {{ static_file.path }}
+        {% if static_file.path == path %}
+        <a href="/guides/per" class="Button is-inline u-marginTop15">
+          Learn more about x
+        </a>
+        {% endif %}
+      {% endfor %}
+
     </div>
 
     <div class="Grid has-twoColumn">
