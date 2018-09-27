@@ -1,0 +1,34 @@
+---
+layout: page-shell
+---
+
+
+<div class="Page-content">
+  <main class="Page-contentInner">
+    <h1 class="Page-mainHeading">Datasets</h1>
+
+    <div class="Grid has-twoColumn">
+        {%
+          include components/universal/BasicPreview/index.html
+          title="Contributed Data"
+          excerpt="Contibuted data and documentation for South African government budgets. Hosted by National Treasury in partnership with IMALI YETHU."
+          url="/datasets/contributed"
+        %}
+
+        {%
+          include components/universal/BasicPreview/index.html
+          title="Socio-economic Data"
+          excerpt="External data resources are provided which can help provide context to the budget data in this portal. These can for example be used to compare South African budget allocation to those in other countries, or to compare allocation within South Africa to population density or other demographic data in South Africa."
+          url="/datasets/socio-economic-data"
+        %}
+
+        {%
+          include components/universal/BasicPreview/index.html
+          title="Performance and Expenditure Reviews"
+          excerpt="PERs involve the close scrutiny of both expenditure and programme performance data, and are widely used internationally for quantifying, assessing and improving the cost effectiveness of public policy and the cost-effectiveness of public spending. They are also used to cost the implications of legislative changes and policy choices."
+          url="/datasets/performance-and-expenditure-reviews"
+        %}
+    </div>
+
+  </main>
+</div>
