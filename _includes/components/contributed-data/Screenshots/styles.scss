@@ -1,0 +1,26 @@
+.Screenshots {
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 700px) {
+    padding: 30px;
+    float: right;
+  }
+}
+
+.Screenshots-image {
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 15px;
+
+  &:nth-child(n+2) {
+    display: none;
+  }
+
+  @media screen and (min-width: 700px) {
+    max-width: 200px;
+
+    &:nth-child(n+2) {
+      display: block;
+    }
+  }
+}
