@@ -207,7 +207,7 @@ listing_path = '_data%s.yaml' % listing_url_path
 with open(listing_path, 'wb') as listing_file:
     listing_file.write(GENERATED_YAML_COMMENT)
     listing_file.write(r.text)
-write_basic_page(listing_url_path, r.text)
+write_basic_page(listing_url_path, r.text, 'contributed-data')
 
 listing = yaml.load(r.text)
 for dataset in listing['datasets']:
@@ -229,7 +229,7 @@ for dataset in listing['datasets']:
 
 # Categorised Datasets
 dataset_categories = [
-    'socio-economic-data',
+#    'socio-economic-data',
     'performance-and-expenditure-reviews',
 ]
 
