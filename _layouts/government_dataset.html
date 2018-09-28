@@ -29,7 +29,9 @@ layout: page-shell
             <div class="Screenshots">
               {% for resource in page_data.resources %}
                 {% if resource.format == 'PNG' %}
-                  <img src="{{ resource.url }}" class="Screenshots-image">
+                  <a href="{{ resource.url }}" target="_blank" class="Screenshots-imageWrap">
+                    <img src="{{ resource.url }}" class="Screenshots-image">
+                  </a>
                 {% endif %}
               {% endfor %}
             </div>
