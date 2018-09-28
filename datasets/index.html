@@ -5,22 +5,27 @@ layout: page-shell
 
 <div class="Page-content">
   <main class="Page-contentInner">
-    <h1 class="Page-mainHeading">Datasets</h1>
+    <div class="Section is-invisible">
+      <a href="/">vulekamali</a>
+      <span> / Datasets</span>
+    </div>
+
+    <h1 class="Page-mainHeading u-marginTop15">Datasets</h1>
 
     <div class="Grid has-twoColumn">
         {%
           include components/universal/BasicPreview/index.html
           title="Contributed Data"
           excerpt="Contibuted data and documentation for South African government budgets. Hosted by National Treasury in partnership with IMALI YETHU."
-          url="/datasets/contributed"
+          url="/datasets/contributed-data"
         %}
 
-        {%
+        <!-- {%
           include components/universal/BasicPreview/index.html
           title="Socio-economic Data"
           excerpt="External data resources are provided which can help provide context to the budget data in this portal. These can for example be used to compare South African budget allocation to those in other countries, or to compare allocation within South Africa to population density or other demographic data in South Africa."
           url="/datasets/socio-economic-data"
-        %}
+        %} -->
 
         {%
           include components/universal/BasicPreview/index.html
