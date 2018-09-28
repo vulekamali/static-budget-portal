@@ -7,11 +7,11 @@ import createPromiseToken from './../../../../utilities/js/helpers/createPromise
 const buildUrl = (phrase, start, facet, year) => {
 
   if (facet === 'contributed') {
-    return `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=${start}&rows=5&fq=-organization:national-treasury&ext_highlight=true`;
+    return `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=${start}&rows=5&fq=-organization:national-treasury%20AND%20NOT%20groups:[%22%22%20TO%20*]&ext_highlight=true`;
   }
 
   if (facet === 'datasets') {
-    return `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=${start}&rows=5&fq=+organization:national-treasury+vocab_categories:[*%20TO%20*]&ext_highlight=true`;
+    return `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=${start}&rows=5&fq=groups:[%22%22%20TO%20*]&ext_highlight=true`;
   }
 
   return `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=${start}&rows=5&fq=+organization:national-treasury+vocab_financial_years:${year}+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]&ext_highlight=true`;
