@@ -5,11 +5,17 @@
 author:
   email: ''
   name: ''
-category: null
+category:
+  description: Contibuted data and documentation for South African government budgets.
+    Hosted by National Treasury in partnership with IMALI YETHU.
+  name: Contributed data and analysis
+  slug: contributed
+  url_path: /datasets/contributed
 created: '2018-02-01T12:48:29.490957'
 description: Data and/or documentation related to South African government budgets
   contributed by Centre for Child Law and hosted by National Treasury in partnership
   with IMALI YETHU
+importance: null
 intro: Dilapidated public school infrastructure can be found across the country, but
   the problem is particularly acute in the Eastern Cape where the majority of the
   so called 'mud schools' are located. On 04 February 2011, following court action
@@ -25,6 +31,8 @@ intro: Dilapidated public school infrastructure can be found across the country,
   funding for two years running. The target for the number of schools to be built
   in 2011/2012 and 2012/2013 was 49. However, only 10 schools had been completed at
   the end of the first year.
+intro_short: null
+key_points: null
 last_updated: '2018-02-01T12:51:55.567458'
 license:
   name: Creative Commons Non-Commercial (Any)
@@ -45,7 +53,8 @@ resources:
   format: PDF
   name: Mud to Bricks_Final.pdf
   url: https://data.vulekamali.gov.za/dataset/02e3cbe6-b33d-411a-8e05-d069f3e2e27b/resource/f98312c8-8380-4296-b91d-e5d0511d8284/download/mud-to-bricks_final.pdf
-selected_tab: contributed-data
+selected_tab: datasets
 slug: mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
 title: 'Mud to bricks: A review of school infrastructure spending and delivery - vulekamali'
 url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
+usage: null

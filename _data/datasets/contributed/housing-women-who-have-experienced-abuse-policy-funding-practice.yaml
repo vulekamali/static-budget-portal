@@ -5,11 +5,17 @@
 author:
   email: claudia.lopes@za.boell.org
   name: Claudia Lopes and Patience Mungwari Mpani
-category: null
+category:
+  description: Contibuted data and documentation for South African government budgets.
+    Hosted by National Treasury in partnership with IMALI YETHU.
+  name: Contributed data and analysis
+  slug: contributed
+  url_path: /datasets/contributed
 created: '2018-06-27T16:30:15.483552'
 description: Data and/or documentation related to South African government budgets
   contributed by Heinrich Boell Foundation and hosted by National Treasury in partnership
   with IMALI YETHU
+importance: null
 intro: "The 4 provincial studies explore national and provincial government policy\
   \ and budgets in relation to the provision of shelter services for abused women.\
   \ They also profile the needs of women, and their children, who sought residence\
@@ -17,6 +23,8 @@ intro: "The 4 provincial studies explore national and provincial government poli
   \ of state funding. Essentially the studies sought to determine whether the state\
   \ was fulfilling its obligations in ensuring the provision of sheltering services\r\
   \nto women."
+intro_short: null
+key_points: null
 last_updated: '2018-06-29T16:04:06.708308'
 license:
   name: License not specified
@@ -66,7 +74,8 @@ resources:
   format: PDF
   name: Profiling shelters in KwaZulu-Natal
   url: https://data.vulekamali.gov.za/dataset/c202c7cf-963b-4ce7-bcb5-82bb95d7650c/resource/7b5c2db6-56d9-4de4-9196-71bd49c1e74b/download/kzn_shelterresearchreport_email.pdf
-selected_tab: contributed-data
+selected_tab: datasets
 slug: housing-women-who-have-experienced-abuse-policy-funding-practice
 title: 'Housing women who have experienced abuse: policy, funding & practice - vulekamali'
 url_path: /datasets/contributed/housing-women-who-have-experienced-abuse-policy-funding-practice
+usage: null
