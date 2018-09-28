@@ -6,44 +6,99 @@ layout: page-shell
 
 
 <div class="Page-content">
-  <main class="Page-contentInner">
-
-    <div>
-      <div class="Page-mainHeading">{{ page_data.name }}</div>
-
+  <div class="Page-contentInner">
+    <div class="Section is-invisible">
+      <a href="/">vulekamali</a>
+      <span> / </span>
+      <a href="/datasets/">Datasets</a>
+      <span> / </span>
+      <a href="/datasets/{{ page_data.category.slug }}">{{ page_data.category.name }}</a>
+      <span> / {{ page_data.name }}</span>
     </div>
 
-    <main class="Page-main">
+    <h1 class="Page-mainHeading u-marginTop15">{{ page_data.name }}</h1>
+
+    {% if page_data.category.slug != "socio-economic-data" %}
+      <main class="Page-main">
+    {% endif %}
+
       {% if page_data.intro %}
         <div class="BasicContent">
-          <div class="BasicContent-title">Overview</div>
+
+          {% if page_data.category.slug == "socio-economic-data" %}
+            <div class="Screenshots">
+              {% for resource in page_data.resources %}
+                {% if resource.format == 'PNG' %}
+                  <img src="{{ resource.url }}" class="Screenshots-image">
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+          
+          <div class="BasicContent-title">What is this?</div>
           {{ page_data.intro }}
+
+          {% if page_data.key_points %}
+            <div class="BasicContent-title u-marginTop20">Key points</div>
+            {{ page_data.key_points | markdownify }}
+          {% endif %}
+
+          {% if page_data.importance %}
+            <div class="BasicContent-title u-marginTop20">Why is this important?</div>
+            {{ page_data.importance }}
+          {% endif %}
+
+          {% if page_data.category.slug == "socio-economic-data" %}
+            {% if page_data.resources %}
+              <div>
+                {% for resource in page_data.resources %}
+                  {% if resource.format == 'PNG' %}
+                  {% else %}
+                    <a href="{{ resource.url }}" target=_blank" class="Button is-inline u-marginTop15">{{ resource.name }}</a>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+
+        {% endif %}
         </div>
       {% endif %}
 
-      {%
-        include components/universal/Downloads/index.html resources=page_data.resources
-        utils="u-marginTop20"
-      %}
-    </main>
-
-    <aside class="Page-sidebar">
-      <div class="Section u-marginBottom20">
-        <h2 class="Section-title">Share this page:</h2>
-        <div data-create-component="Share"></div>
-      </div>
-
-      <div class="Section is-bevel">
-        <div class="Section-card">
-          <h2 class="Section-title">What is a PER?</h2>
-          <p>A Performance and Expenditure Review (PER) is a process of reviewing government spending on a particular service, and how effective this spending is.</p>
-          <a href="/guides/per" class="Button">
-            Learn more
-          </a>
+      {% if page_data.usage %}
+        <div class="BasicContent u-marginTop20">
+          <div class="BasicContent-title">How can it be accessed and used?</div>
+          {{ page_data.usage | markdownify }}
         </div>
-      </div>
+      {% endif %}
 
-    </aside>
+      {% if page_data.category.slug != "socio-economic-data" %}
+        {%
+          include components/universal/Downloads/index.html resources=page_data.resources
+          utils="u-marginTop20"
+        %}
+      {% endif %}
 
-  </main>
+    {% if page_data.category.slug != "socio-economic-data" %}
+      </main>
+    {% endif %}
+
+    {% if page_data.category.slug == "performance-and-expenditure-reviews" %}
+      <aside class="Page-sidebar">
+        <div class="Section u-marginBottom20">
+          <h2 class="Section-title">Share this page:</h2>
+          <div data-create-component="Share"></div>
+        </div>
+
+        <div class="Section is-bevel">
+          <div class="Section-card">
+            <h2 class="Section-title">What is a PER?</h2>
+            <p>A Performance and Expenditure Review (PER) is a process of reviewing government spending on a particular service, and how effective this spending is.</p>
+            <a href="/guides/per" class="Button">
+              Learn more
+            </a>
+          </div>
+        </div>
+      </aside>
+    {% endif %}
+  </div>
 </div>
