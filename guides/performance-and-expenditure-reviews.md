@@ -11,7 +11,7 @@ data_key: performance-and-expenditure-reviews
 <div class="BasicContent u-marginBottom15">
   <div class="BasicContent-title">Introduction</div>
     <p>
-      A Performance and Expenditure Review (PER) is a process of reviewing government spending on a particular service, and how effective this spending is.
+      A <a href="/datasets/performance-and-expenditure-reviews">Performance and Expenditure Review (PER)</a> is a process of reviewing government spending on a particular service, and how effective this spending is.
     </p>
 
     <p>
