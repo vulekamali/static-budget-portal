@@ -1,15 +1,21 @@
 ---
 layout: page-shell
 ---
-{% assign page_data = site.data['contributed-data'] %}
-
+{% assign page_data = site.data.datasets.contributed.index %}
 
 <div class="Page-content">
   <main class="Page-contentInner">
-    <h1 class="Page-mainHeading">Contributed Data</h1>
+    <div class="Section is-invisible">
+      <a href="/">vulekamali</a>
+      <span> / </span>
+      <a href="/datasets/">Datasets</a>
+      <span> / Contributed Data</span>
+    </div>
 
-    <div class="Section is-invisible u-fontSize18 u-paddingTop0">
-      {{ page_data.description }}
+    <h1 class="Page-mainHeading u-marginTop15 u-marginBottom0">Contributed Data</h1>
+
+    <div class="Section is-invisible u-fontSize18">
+      Contibuted data and documentation for South African government budgets. Hosted by National Treasury in partnership with IMALI YETHU.
     </div>
 
     <div class="BasicContent is-green u-padding10 u-marginBottom25">

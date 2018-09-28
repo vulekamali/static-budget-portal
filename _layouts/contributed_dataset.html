@@ -8,20 +8,27 @@ layout: page-shell
 <div class="Page-content">
   <main class="Page-contentInner">
 
-    <div>
-      <div class="Page-mainHeading">{{ page_data.name }}</div>
-
-      {%
-        include components/contributed-data/CsoMeta/index.html
-        author=page_data.author
-        created=page_data.created
-        last_updated=page_data.last_updated
-        organization=page_data.organization
-        license=page_data.license
-        facebook=page_data.facebook
-        twitter=page_data.twitter
-      %}
+    <div class="Section is-invisible">
+      <a href="/">vulekamali</a>
+      <span> / </span>
+      <a href="/datasets/">Datasets</a>
+      <span> / </span>
+      <a href="/datasets/contributed-data">Contributed Data</a>
+      <span> / {{ page_data.name }}</span>
     </div>
+  
+    <h1 class="Page-mainHeading u-marginTop15">{{ page_data.name }}</h1>
+
+    {%
+      include components/contributed-data/CsoMeta/index.html
+      author=page_data.author
+      created=page_data.created
+      last_updated=page_data.last_updated
+      organization=page_data.organization
+      license=page_data.license
+      facebook=page_data.facebook
+      twitter=page_data.twitter
+    %}
 
     <main class="Page-main">
       <div class="Section u-marginBottom20">
