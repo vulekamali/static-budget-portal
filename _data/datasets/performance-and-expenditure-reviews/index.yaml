@@ -3,21 +3,115 @@ datasets:
     email: null
     name: null
   category:
+    description: 'Performance Expenditure Reviews (PERs) involve the close scrutiny
+      of both expenditure and programme performance data, and are widely used internationally
+      for quantifying, assessing and improving the cost effectiveness of public policy
+      and the cost-effectiveness of public spending. They are also used to cost the
+      implications of legislative changes and policy choices. '
     name: Performance and Expenditure Reviews
     slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:21:53.650880'
-  description: There is wide agreement that South Africa produces too few artisans
-    to meet the needs of the economy and that improving the efficiency and effectiveness
-    of the artisan development system is important for accelerating growth and reducing
-    unemployment. Indeed, the National Development Plan (NDP) sets a target of producing
-    30 000 artisans a year by 2030, which would be more than double the number of
-    artisans who graduated in 2013. (This was already considerably higher than the
-    low point of 2005, when only 4 500 artisans graduated.)
-  last_updated: '2018-08-16T09:35:45.943088'
+    url_path: /datasets/performance-and-expenditure-reviews
+  created: '2018-07-17T12:13:26.987112'
+  description: Cost implications of the National Association of Welfare Organisations
+    and Non-Governmental Organisations (NAWONGO) court judgements
+  intro_short: null
+  last_updated: '2018-09-28T09:01:36.097953'
   license:
     name: null
     url: null
-  name: PER - Artisan Development
+  name: PER - NAWONGO Implications
+  organization:
+    email: null
+    facebook: null
+    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
+    name: National Treasury
+    slug: national-treasury
+    telephone: null
+    twitter: null
+    url: null
+  resources:
+  - description: ''
+    format: PDF
+    name: Infographic
+    url: https://data.vulekamali.gov.za/dataset/per-nawongo-implications/resource/9873e568-e331-410c-97a7-803326f3153d/download/infographics.pdf
+  slug: per-nawongo-implications
+  url_path: /datasets/performance-and-expenditure-reviews/per-nawongo-implications
+- author:
+    email: null
+    name: null
+  category:
+    description: 'Performance Expenditure Reviews (PERs) involve the close scrutiny
+      of both expenditure and programme performance data, and are widely used internationally
+      for quantifying, assessing and improving the cost effectiveness of public policy
+      and the cost-effectiveness of public spending. They are also used to cost the
+      implications of legislative changes and policy choices. '
+    name: Performance and Expenditure Reviews
+    slug: performance-and-expenditure-reviews
+    url_path: /datasets/performance-and-expenditure-reviews
+  created: '2018-07-17T12:19:13.578640'
+  description: "Section 24 of the constitution gives everyone the right \u201Cto have\
+    \ the environment protected, for the benefit of present and future generations\u201D\
+    \ and requires the promotion of conservation along with ecologically sound, sustainable\
+    \ development. Provincial Nature Reserves (PNRs) play a key role in achieving\
+    \ this. To do so, however, they must be managed efficiently. This report analyses\
+    \ the trends of expenditure, revenue and performance to guide policymakers in\
+    \ support of this objective."
+  intro_short: null
+  last_updated: '2018-09-28T09:01:34.349912'
+  license:
+    name: null
+    url: null
+  name: PER - Provincial Nature Reserves
+  organization:
+    email: null
+    facebook: null
+    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
+    name: National Treasury
+    slug: national-treasury
+    telephone: null
+    twitter: null
+    url: null
+  resources:
+  - description: ''
+    format: PDF
+    name: Technical Report
+    url: https://data.vulekamali.gov.za/dataset/per-provincial-nature-reserves/resource/25def6ba-5f15-49eb-8b1e-0052e389e921/download/technical-report-provincial-nature-reserves.pdf
+  - description: ''
+    format: PDF
+    name: Infographic
+    url: https://data.vulekamali.gov.za/dataset/per-provincial-nature-reserves/resource/ed9a1b91-04e1-4915-b5b9-ca3ebcf8f248/download/infographics-provincial-nature-reserves.pdf
+  slug: per-provincial-nature-reserves
+  url_path: /datasets/performance-and-expenditure-reviews/per-provincial-nature-reserves
+- author:
+    email: null
+    name: null
+  category:
+    description: 'Performance Expenditure Reviews (PERs) involve the close scrutiny
+      of both expenditure and programme performance data, and are widely used internationally
+      for quantifying, assessing and improving the cost effectiveness of public policy
+      and the cost-effectiveness of public spending. They are also used to cost the
+      implications of legislative changes and policy choices. '
+    name: Performance and Expenditure Reviews
+    slug: performance-and-expenditure-reviews
+    url_path: /datasets/performance-and-expenditure-reviews
+  created: '2018-07-17T12:12:01.396886'
+  description: "The Informal Settlements Service Delivery Rapid Verification Study\
+    \ is not a typical performance and expenditure review (PER). It was commissioned\
+    \ by the Department of Performance Monitoring and Evaluation in the Presidency\
+    \ in December 2013 in order to help assess the extent to which government could\
+    \ rely on data prepared and presented by various departments about the delivery\
+    \ of services to communities and households living in informal settlements after\
+    \ it was reported that the target set for service delivery had been achieved.\
+    \ The target had been to provide 400 000 households with upgraded services (in\
+    \ situ or greenfield) and security of tenure between April 2010 and February 2014.\
+    \ The aim of the study was to assess the reliability of the data from various\
+    \ departments underpinning these claims. \u200B\u200B"
+  intro_short: null
+  last_updated: '2018-09-28T09:01:32.504752'
+  license:
+    name: null
+    url: null
+  name: PER - Rapid Verification of Informal Settlements
   organization:
     email: null
     facebook: null
@@ -31,277 +125,25 @@ datasets:
   - description: ''
     format: PDF
     name: Summary
-    url: https://data.vulekamali.gov.za/dataset/per-economicdev-ad/resource/57f8391f-9a5d-4c7b-8454-a3f49eaadb25/download/20.1-summary.pdf
+    url: https://data.vulekamali.gov.za/dataset/per-urbanspace-rvi/resource/e525d795-c9a5-40be-8390-6a15281d8e88/download/2.1-summary.pdf
   - description: ''
     format: PDF
     name: Technical Report
-    url: https://data.vulekamali.gov.za/dataset/per-economicdev-ad/resource/661150c8-5a73-4fc2-9070-5fd5c942acb3/download/20.2-technical-report-.pdf
-  - description: ''
-    format: XLSX
-    name: Logframe
-    url: https://data.vulekamali.gov.za/dataset/per-economicdev-ad/resource/8f44078e-b97a-4a20-8c44-1e98283e4228/download/artisan-logframe.xlsx
-  - description: ''
-    format: XLSX
-    name: Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-economicdev-ad/resource/e66b1045-b1b7-4bc0-93b1-a122f93f7d36/download/artisan-cost-model-locked.xlsx
-  - description: ''
-    format: XLSX
-    name: Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-economicdev-ad/resource/578f4796-82ae-48bb-9eec-4b84d9477300/download/artisan-cost-model.xlsx
-  slug: per-economicdev-ad
-  url_path: /datasets/performance-and-expenditure-reviews/per-economicdev-ad
+    url: https://data.vulekamali.gov.za/dataset/per-urbanspace-rvi/resource/e5fa033e-e309-44c7-a754-bca631d34980/download/2.2-technical-report.pdf
+  slug: per-urbanspace-rvi
+  url_path: /datasets/performance-and-expenditure-reviews/per-urbanspace-rvi
 - author:
     email: null
     name: null
   category:
+    description: 'Performance Expenditure Reviews (PERs) involve the close scrutiny
+      of both expenditure and programme performance data, and are widely used internationally
+      for quantifying, assessing and improving the cost effectiveness of public policy
+      and the cost-effectiveness of public spending. They are also used to cost the
+      implications of legislative changes and policy choices. '
     name: Performance and Expenditure Reviews
     slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:13:41.726707'
-  description: "The biofuels regulatory framework aims to encourage the production\
-    \ of biofuel on a commercial scale by establishing transparent criteria for selecting\
-    \ biofuel manufacturing projects. To achieve a 2% penetration of biofuels into\
-    \ the local transport fuel pool, an incentive scheme was announced in 2013 that\
-    \ will provide a guaranteed return on assets of 15% to an efficient biofuels producer.\
-    \ It is hoped that the commercial production of biofuels will stimulate significant\
-    \ economic development and employment in the agricultural sector. The fiscal production\
-    \ incentive for biofuels will be funded by a biofuels levy on all petrol and diesel\
-    \ sold for domestic consumption. The level of the incentive required to generate\
-    \ the 15% return on assets in an indicative efficient biofuels plant will be determined\
-    \ on a monthly basis via a biofuels incentive model. Should a biofuels manufacturer\u2019\
-    s return on assets exceed 20%, a \u2018claw-back\u2019 would come into effect,\
-    \ in terms of which it would pay the \u2018excessive\u2019 profits back to the\
-    \ subsidy scheme"
-  last_updated: '2018-08-16T09:58:16.465043'
-  license:
-    name: null
-    url: null
-  name: PER - Biofuels
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Technical report
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/87693994-368d-4be7-88dc-d331c7bbb81e/download/8.2-technical-report.pdf
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1B1 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/1aa5cf77-5961-4680-a3d2-04bde8b2e1ec/download/master-model-6-1b1-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1B2 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/cab8e580-67a3-4971-86dd-bfacf813d1e5/download/master-model-6-1b2-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1C1 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/4cd3379c-040f-4c12-8389-bdf8cbf88a6a/download/master-model-6-1c1-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1C2 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/ca281a66-d50d-48d3-b6e0-d349ecfaee08/download/master-model-6-1c2-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1CCoal R100 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/327bcb83-b409-4164-b2bb-019c5c0832cb/download/master-model-6-1ccoal-r100-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1CCoal R220 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/dd98b9e5-bd55-46dd-8f6b-cf0437115766/download/master-model-6-1ccoal-r220-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1D1 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/fbd69035-881a-4cd5-8fa6-7229afff28eb/download/master-model-6-1d1-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master 6- 100 (option 6) -result v2 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/c265738f-5714-4b09-bd33-e248c4485db8/download/master-6-100-option-6-result-v2-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master 6- 220 (option 6) -result v2 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/29833bf2-d2dc-4ba1-a578-f6896f5740bd/download/master-6-220-option-6-result-v2-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master 6 biomass (option 6) -result v2 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/06822956-ed33-4c41-92e7-0c44d247df31/download/master-6-biomass-option-6-result-v2-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1A1 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/b81164d2-31ae-4b2a-abbe-11a0a255cf9b/download/master-model-6-1a1-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1A2 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/754a226e-8afa-4d08-a649-934da7654358/download/master-model-6-1a2-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1ACoal R100 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/ec2325c5-a9fc-4733-8ee3-a9bed977cc13/download/master-model-6-1acoal-r100-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1ACoal R220 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/b5dd9a86-10a7-4608-9726-b341ddb9bc43/download/master-model-6-1acoal-r220-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1DCoal R220 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/0f452168-7231-4ee0-ab9a-51e466f9c56e/download/master-model-6-1dcoal-r220-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 2A1 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/25c4eabc-c40a-4e5c-b2af-5e415e96f2ee/download/master-model-6-2a1-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 2A2 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/506adfc0-bb04-4b7e-b03c-8105553f7948/download/master-model-6-2a2-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 2ACoal R100 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/3e35bae8-2b7a-4883-a84c-a1495c2927b3/download/master-model-6-2acoal-r100-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 2B1 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/06ece253-7b7e-48f6-9525-e039c1796314/download/master-model-6-2b1-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 2BCoal R220 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/8a6b019b-5574-44ab-9d12-b7fd215ccbb4/download/master-model-6-2bcoal-r220-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 2C1 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/673f3042-bffc-4732-a849-18cfd320bf80/download/master-model-6-2c1-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 2C2 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/480fda9b-4f06-4a0c-b164-b3ebdc5d22a9/download/master-model-6-2c2-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 2CCoal R100 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/bad0c069-f2fe-4570-86e9-6254972149b9/download/master-model-6-2ccoal-r100-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 2CCoal R220 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/8a20e7fc-0590-43f1-bd37-93115e3fc975/download/master-model-6-2ccoal-r220-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 2D1 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/9272bbff-6df1-4eba-83a7-0f72b72831ff/download/master-model-6-2d1-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 2DCoal R220 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/5855c387-d504-4776-b227-adc9da5af731/download/master-model-6-2dcoal-r220-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 3A1 - coal 220 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/96d931a0-b3dc-4e53-aec9-1aa6b2221bd6/download/master-model-6-3a1-coal-220-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 3A1 390c locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/cb9c8325-c2de-4587-bc56-7afbd6c6209a/download/master-model-6-3a1-390c-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 3A1 v2 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/6aedf29c-5989-48fe-83f1-25106d7f72f7/download/master-model-6-3a1-v2-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1D2 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/8ee2917f-9113-488b-bc92-cae17018a6e5/download/master-model-6-1d2-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1DCoal R100 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/b044f8f2-4bcb-465b-a532-8650c4ad2d23/download/master-model-6-1dcoal-r100-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 5DCoal R100 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/80ebb6ef-df02-44af-979d-bc9fa17683b8/download/master-model-6-5dcoal-r100-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 8A1 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/9b55d95a-e8d1-4cae-b823-53a5a1708194/download/master-model-6-8a1-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 8ACoal R100 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/b5e514b8-e9f2-4345-bd28-04ac10bfaab2/download/master-model-6-8acoal-r100-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 8ACoal R220 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/7f579d20-7685-4be8-abec-f32247263d2c/download/master-model-6-8acoal-r220-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/306a4c2a-f27a-4bfc-a202-b05daffaf9a1/download/master-model-6-locked.xlsm
-  - description: ''
-    format: XLSX
-    name: PostProcessResults_v3 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/04fd71a0-66f2-40e4-85eb-c7a64a2c1f9b/download/postprocessresults_v3-locked.xlsx
-  - description: ''
-    format: XLSX
-    name: PostProcessResults_v5.2 Biomass locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/3226c8e6-e43c-4d13-a556-6f10062cdbe2/download/postprocessresults_v5.2-biomass-locked.xlsx
-  - description: ''
-    format: XLSX
-    name: PostProcessResults_v5.2 Coal locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/e57a535c-0929-4885-9079-68efd39555b1/download/postprocessresults_v5.2-coal-locked.xlsx
-  - description: ''
-    format: XLSX
-    name: Results of Historical Data locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/d52fbeb1-1c8e-4d71-b558-2954ff4356dc/download/results-of-historical-data-locked.xlsx
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 5D2 locked - Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/9ef99803-dbeb-47aa-b6dd-395194ff8796/download/master-model-6-5d2-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1A1 - Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/53d41433-f5fe-4b73-a8fc-64575857f323/download/master-model-6-1a1.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1A2 - Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/cbc4d0ea-45ca-48f7-984f-cdc078dab3eb/download/master-model-6-1a2.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1ACoal R100 - Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/7a788758-964d-453f-8cd5-f7472fe42b7e/download/master-model-6-1acoal-r100.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1ACoal R220 - Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/e9b5245b-d19c-4abe-9f55-6b726fb92746/download/master-model-6-1acoal-r220.xlsm
-  - description: ''
-    format: XLSM
-    name: Master Model 6 - 1B1 - Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/3b48c4be-bf65-4619-9af8-1e191b3a16c6/download/master-model-6-1b1.xlsm
-  - description: ''
-    format: XLSX
-    name: BFP Historical - Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/4c6edffb-5f6c-409e-8cde-85b8d6804dde/download/bfp-historical.xlsx
-  - description: ''
-    format: XLSM
-    name: Biofuels High Level Project Finance Model v2 0 - Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/538e70a9-a62c-411d-8e52-a767e96b3730/download/biofuels-high-level-project-finance-model-v2-0.xlsm
-  - description: ''
-    format: XLSM
-    name: Master 6- 100 (option 6) -result v2 - Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/1ae93d1a-6978-446b-b920-5e16d8a25906/download/master-6-100-option-6-result-v2.xlsm
-  - description: ''
-    format: XLSM
-    name: Master 6- 220 (option 6) -result v2 - Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/d4a26580-a72a-4b00-95d6-21bdbb227bc5/download/master-6-220-option-6-result-v2.xlsm
-  - description: ''
-    format: XLSM
-    name: Master 6 biomass (option 6) -result v2 - Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-biofuels/resource/7828b142-16a9-48b0-9edf-72e4d57094f4/download/master-6-biomass-option-6-result-v2.xlsm
-  slug: per-ruralspace-biofuels
-  url_path: /datasets/performance-and-expenditure-reviews/per-ruralspace-biofuels
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
+    url_path: /datasets/performance-and-expenditure-reviews
   created: '2018-07-17T12:12:51.180918'
   description: "In many developed countries, people with scarce skills receive preferential\
     \ treatment in the immigration process and some are even proactively sourced,\
@@ -312,7 +154,8 @@ datasets:
     \ Plan, which set a target of 50 000 scarce-skill visas to be issued by 2030.\
     \ In terms of DHA policy, foreign workers with scarce skills may apply for a category\
     \ of work visa called critical skills visas (CSVs)."
-  last_updated: '2018-08-15T20:14:23.147809'
+  intro_short: null
+  last_updated: '2018-09-28T09:01:30.691884'
   license:
     name: null
     url: null
@@ -345,516 +188,14 @@ datasets:
     email: null
     name: null
   category:
+    description: 'Performance Expenditure Reviews (PERs) involve the close scrutiny
+      of both expenditure and programme performance data, and are widely used internationally
+      for quantifying, assessing and improving the cost effectiveness of public policy
+      and the cost-effectiveness of public spending. They are also used to cost the
+      implications of legislative changes and policy choices. '
     name: Performance and Expenditure Reviews
     slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:13:35.616080'
-  description: There is a lack of a comprehensive policy framework for fleet management.
-    The National Transport Circular 4 of 2000 is outdated; while it is currently being
-    updated, it only covers the authorisation and usage of individual vehicles. Provinces
-    have to compile their own policies, procedures and management practices for determining
-    fleet size, age usage and composition.
-  last_updated: '2018-08-15T20:15:54.549937'
-  license:
-    name: null
-    url: null
-  name: PER - Fleet Management
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Technical Report
-    url: https://data.vulekamali.gov.za/dataset/per-fleet-management/resource/aece350b-6b87-4d14-a101-98c790e59036/download/technical-report-provincial-vehicle-fleet-management.pdf
-  - description: ''
-    format: XLSM
-    name: Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-fleet-management/resource/3bb18677-0170-4af9-8ff4-bf7ed4943d40/download/cost-model-provincial-vehicle-fleet-management.xlsm
-  - description: ''
-    format: PDF
-    name: Infographic
-    url: https://data.vulekamali.gov.za/dataset/per-fleet-management/resource/f32db923-bd21-4718-b1d8-024482039381/download/infographics-provincial-vehicle-fleet-management.pdf
-  slug: per-fleet-management
-  url_path: /datasets/performance-and-expenditure-reviews/per-fleet-management
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:12:46.219738'
-  description: "South Africa\u2019s foreign missions play a pivotal role in maintaining\
-    \ diplomatic relationships with the rest of the world; facilitating international\
-    \ trade, investment and tourism; and strengthening political and social ties with\
-    \ host countries. They raise awareness of the country\u2019s foreign policy and\
-    \ articulate its position in global and regional multilateral forums."
-  last_updated: '2018-08-15T20:22:12.932842'
-  license:
-    name: null
-    url: null
-  name: PER - Foreign Missions Cost Drivers
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Technical Report
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-fmcd/resource/7828aaa3-9b52-4b3a-81d6-ba5ce37400f4/download/technical-report.pdf
-  - description: ''
-    format: PDF
-    name: Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-fmcd/resource/44121a8c-9272-4edc-bc58-7ef177d376c7/download/expenditure-model.xlsm
-  - description: ''
-    format: PDF
-    name: Cost Model Open - Foreign Mission Cost Drivers
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-fmcd/resource/4e1efd08-27b6-4f27-9a2c-3d006c50e5ee/download/foreign-missions-cost-drivers.pdf
-  - description: ''
-    format: XLSM
-    name: Cost Model Open - Expenditure Model
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-fmcd/resource/2c3f3d66-3f2f-46d1-a897-9cfbbc8051ef/download/expenditure-model.xlsm
-  slug: per-adminservices-fmcd
-  url_path: /datasets/performance-and-expenditure-reviews/per-adminservices-fmcd
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:12:56.375716'
-  description: Government departments lease much of their office accommodation from
-    private landlords, with national departments incurring around R3 billion a year
-    in rental expenses. The South African Police Service, which is the largest national
-    department and has the largest geographical footprint, incurs about a quarter
-    of this total.
-  last_updated: '2018-08-16T09:34:36.095630'
-  license:
-    name: null
-    url: null
-  name: PER - Government Rental Office Accommodation
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Summary
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-groa/resource/85e8a21a-3e10-4b0c-b581-fae5fcfec2b9/download/23.1-summary.pdf
-  - description: ''
-    format: PDF
-    name: Technical Report
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-groa/resource/f989b417-124f-4468-903d-9e1172d90734/download/23.2-technical-report.pdf
-  - description: ''
-    format: XLSX
-    name: Logframe
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-groa/resource/b75a5e12-f877-46fc-a8a1-56632e371b78/download/government-rental-accommodation-logframe.xlsx
-  - description: ''
-    format: XLSM
-    name: Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-groa/resource/ece4a477-2374-4efc-aa09-61fa823e54c7/download/government-rental-accommodation-cost-model-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-groa/resource/6dabcf6e-dd36-49ec-a341-819f5f914807/download/government-rental-accommodation-cost-model.xlsm
-  slug: per-adminservices-groa
-  url_path: /datasets/performance-and-expenditure-reviews/per-adminservices-groa
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:13:29.030813'
-  description: 'This Performance and Expenditure Review (PER) aimed to address the
-    issue of poor revenue collection rates at public health facilities in South Africa.
-    To achieve this, a detailed understanding of the institutions and operational
-    mandates that govern revenue management systems was developed. Revenue and expenditure
-    on payment systems was estimated and then projected forward from 2017/2018 to
-    2021/2022 in an expenditure and revenue costing model. An efficiencies and trade-offs
-    model was then applied to these projections in order to identify the most efficient
-    components of payment systems across the nine provinces. '
-  last_updated: '2018-08-15T20:17:38.517303'
-  license:
-    name: null
-    url: null
-  name: PER - Health Revenue
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Technical Report
-    url: https://data.vulekamali.gov.za/dataset/per-health-revenue/resource/797ed8c2-9b55-4b7f-b348-88694b08e6e0/download/technical-report-health-revenue-management-in-provincial-hospitals.pdf
-  - description: ''
-    format: XLSB
-    name: Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-health-revenue/resource/36872560-5bcd-4edf-9850-b910ea802a3d/download/cost-model-health-revenue-management-in-provincial-hospitals.xlsb
-  - description: ''
-    format: PDF
-    name: Infographic
-    url: https://data.vulekamali.gov.za/dataset/per-health-revenue/resource/1a05d178-39db-4aff-b062-d8f8a1c84a89/download/infographic-health-revenue-management-in-provincial-hospitals.pdf
-  slug: per-health-revenue
-  url_path: /datasets/performance-and-expenditure-reviews/per-health-revenue
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:18:02.846126'
-  description: 'This Performance and Expenditure Review (PER) was focused on the comparative
-    analysis of three support services, which are pivotal to the delivery of healthcare
-    services by the nine provinces, namely laundry, security and food services. '
-  last_updated: '2018-08-16T09:38:53.085155'
-  license:
-    name: null
-    url: null
-  name: PER - Health Services
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Technical Report - Health services of Laundry, Catering and Security in
-      Provincial Hospitals
-    url: https://data.vulekamali.gov.za/dataset/per-health-services/resource/0dfb5d69-830b-491c-a540-df9013ca70b5/download/technical-report-health-services-of-laundry-catering-and-security-in-provincial-hospitals.pdf
-  - description: ''
-    format: XLSB
-    name: Cost Model - Health Services Catering in Provincial Hospitals
-    url: https://data.vulekamali.gov.za/dataset/per-health-services/resource/76b2bf62-c67d-4eaf-abb7-69207b0added/download/cost-model-health-services-catering-in-provincial-hospitals.xlsb
-  - description: ''
-    format: XLSB
-    name: Cost Model - Health Services Laundry in Provincial Hospitals
-    url: https://data.vulekamali.gov.za/dataset/per-health-services/resource/ad7ef922-0690-4a3d-8b21-0ac348af18fd/download/cost-model-health-services-laundry-in-provincial-hospitals.xlsb
-  - description: ''
-    format: XLSB
-    name: Cost Model - Health Services Security in Provincial Hospitals
-    url: https://data.vulekamali.gov.za/dataset/per-health-services/resource/cd187c7d-3543-4e52-af40-aedf322ceb69/download/cost-model-health-services-security-in-provincial-hospitals.xlsb
-  - description: ''
-    format: PDF
-    name: Infographics - Health Services Catering in Provincial Hospitals
-    url: https://data.vulekamali.gov.za/dataset/per-health-services/resource/be951090-0c3f-4092-a043-3fcf7f46b199/download/infographics-health-services-catering-in-provincial-hospitals.pdf
-  - description: ''
-    format: PDF
-    name: Infographics - Health Services Laundry in Provincial Hospitals
-    url: https://data.vulekamali.gov.za/dataset/per-health-services/resource/02f7fb6c-f7f4-4eb8-8f74-c08bbf7752e5/download/infographics-health-services-laundry-in-provincial-hospitals.pdf
-  - description: ''
-    format: PDF
-    name: Infographics - Health Services Security in Provincial Hospitals
-    url: https://data.vulekamali.gov.za/dataset/per-health-services/resource/651cbe33-8eb4-47b6-b267-2f14cd50bdb9/download/infographics-health-services-security-in-provincial-hospitals.pdf
-  slug: per-health-services
-  url_path: /datasets/performance-and-expenditure-reviews/per-health-services
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:11:52.789191'
-  description: "The promise of better housing has been a central plank of public policy\
-    \ since 1994. To this end, the government has provided public finance for a range\
-    \ of housing programmes, collectively dubbed \u2018RDP housing\u2019. These programmes\
-    \ aim to establish communities and neighbourhoods with access to healthcare, education\
-    \ and other social amenities. One of their basic components is the construction\
-    \ of permanent homes with security of tenure, which provide privacy, protection\
-    \ against the elements, and access to potable water, sanitation and energy."
-  last_updated: '2018-08-15T20:22:54.673742'
-  license:
-    name: null
-    url: null
-  name: PER - Housing Programmatic Comparison
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Read More
-    url: https://data.vulekamali.gov.za/dataset/per-urbanspace-hpc/resource/8655f357-f6a9-4ea1-8d55-7b7442d91fb0/download/housing-programmatic-comparison-read-more.pdf
-  - description: ''
-    format: PDF
-    name: Summary
-    url: https://data.vulekamali.gov.za/dataset/per-urbanspace-hpc/resource/77229b18-da01-4ee5-a45b-d21e1ae2ccf6/download/1.-1-summary.pdf
-  - description: ''
-    format: PDF
-    name: Technical Report
-    url: https://data.vulekamali.gov.za/dataset/per-urbanspace-hpc/resource/a5a94d47-6af7-4909-b7e2-ba9034d233fe/download/1.2-technical-report.pdf
-  - description: ''
-    format: XLSM
-    name: Logframe
-    url: https://data.vulekamali.gov.za/dataset/per-urbanspace-hpc/resource/1be34bd0-c469-4928-a75a-6f0c32cb73b8/download/housing-programmatic-comparison-logframe.xlsm
-  slug: per-urbanspace-hpc
-  url_path: /datasets/performance-and-expenditure-reviews/per-urbanspace-hpc
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:12:35.547978'
-  description: "South Africa\u2019s land restitution programmes date back to the Restitution\
-    \ Act in 1994 and the opening of the land claims process in 1995. The aim was\
-    \ to return a significant proportion of land forcibly taken from individuals and\
-    \ communities after the passage of the 1913 Land Act, and the Commission of Restitution\
-    \ of Land Rights was established to undertake this process. Eligible claimants\
-    \ were given three years from 1 May 1995 to lodge claims, which was later extended\
-    \ to 31 December 1998. By that point, around 60 000 claims had been lodged, some\
-    \ of which were for more than one property."
-  last_updated: '2018-08-16T09:35:04.557457'
-  license:
-    name: null
-    url: null
-  name: PER - Land Restitution
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Summary
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-landrestitution/resource/00c4f470-9aac-4d4f-9eea-406a15148d19/download/7.1-summary.pdf
-  - description: ''
-    format: PDF
-    name: Technical Report
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-landrestitution/resource/58711b5d-1b22-4936-af0a-ce43952e1ccd/download/land-restitution-technical-report.pdf
-  - description: ''
-    format: XLSX
-    name: Logframe
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-landrestitution/resource/4f0b0c93-5cff-4ae7-b159-c94e14706e56/download/land-restitution-logframe.xlsx
-  - description: ''
-    format: XLSM
-    name: Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-landrestitution/resource/b7a2157f-c8d1-4915-baba-6abac9637d58/download/land-restitution-cost-model-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-ruralspace-landrestitution/resource/5cdcb3bc-09dc-4fa2-87a6-d64a16947810/download/land-restitution-cost-model.xlsm
-  slug: per-ruralspace-landrestitution
-  url_path: /datasets/performance-and-expenditure-reviews/per-ruralspace-landrestitution
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:13:08.215472'
-  description: "Historically, English and Afrikaans have been the dominant languages\
-    \ of academia, commerce, government and public life in South Africa, while indigenous\
-    \ languages have been marginalised. For the vast majority of South Africans who\
-    \ are not mother-tongue speakers of English or Afrikaans, language poses a formidable\
-    \ barrier to accessing quality education, socio-economic opportunities, full participation\
-    \ in public life, and the realisation of their potential. Chapter 1 of the Constitution\
-    \ recognises 11 official languages, all of which are equally esteemed and must\
-    \ be treated equitably. The state is constitutionally required to take practical\
-    \ and positive measures to elevate the status and use of all these languages.\u200B"
-  last_updated: '2018-08-15T20:24:03.160121'
-  license:
-    name: null
-    url: null
-  name: PER - Language Services
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Summary
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-ls/resource/db518c06-20fd-4fc1-adb8-8a5685a8396a/download/24.1-summary.pdf
-  - description: ''
-    format: PDF
-    name: Technical Report
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-ls/resource/be78e4cc-ef2b-44cd-b036-e65e55a33203/download/24.2-technical-report.pdf
-  - description: ''
-    format: XLSX
-    name: Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-ls/resource/9854458f-fa20-4dce-95a9-071c83b1c534/download/languages-costing-model-locked.xlsx
-  - description: ''
-    format: XLSX
-    name: Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-ls/resource/fbf2a26e-f1a5-484b-a473-c150a57a4b8e/download/languages-costing-model.xlsx
-  slug: per-adminservices-ls
-  url_path: /datasets/performance-and-expenditure-reviews/per-adminservices-ls
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:13:26.987112'
-  description: Cost implications of the National Association of Welfare Organisations
-    and Non-Governmental Organisations (NAWONGO) court judgements
-  last_updated: '2018-08-15T15:27:06.911729'
-  license:
-    name: null
-    url: null
-  name: PER - NAWONGO Implications
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Infographic
-    url: https://data.vulekamali.gov.za/dataset/per-nawongo-implications/resource/9873e568-e331-410c-97a7-803326f3153d/download/infographics.pdf
-  slug: per-nawongo-implications
-  url_path: /datasets/performance-and-expenditure-reviews/per-nawongo-implications
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:19:53.113153'
-  description: "The main purpose of the National Student Financial Aid Scheme (NSFAS)\
-    \ is to enable young people from poor households to obtain a higher education.\
-    \ This is essential for expanding South Africa\u2019s skills base and a powerful\
-    \ mechanism for breaking the intergenerational cycle of household poverty and\
-    \ exclusion. Tertiary education is unaffordable for most households (see Figure\
-    \ 1). While the average full cost of study for a single year at university was\
-    \ about R28 000 in 2003, this figure was three times greater than the incomes\
-    \ of households in the poorest 20% of the population. It was also more than 30%\
-    \ greater than the annual incomes of households in the second poorest quintile,\
-    \ and just 20% less than the total income of households in the middle 20%. In\
-    \ 2003, in other words, none of the poorest 50% of households could realistically\
-    \ afford to send a child to university."
-  last_updated: '2018-08-16T09:36:11.005814'
-  license:
-    name: null
-    url: null
-  name: PER - National Student Financial Aid Scheme (NSFAS)
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Summary
-    url: https://data.vulekamali.gov.za/dataset/per-higheducation-nsfas/resource/6f325612-dcbe-42e1-af60-02caf53dba65/download/11.1-summary.pdf
-  - description: ''
-    format: PDF
-    name: Technical Report
-    url: https://data.vulekamali.gov.za/dataset/per-higheducation-nsfas/resource/bd4d528d-b023-48eb-baee-2dfc55246d9b/download/11.2-technical-report.pdf
-  - description: ''
-    format: XLSX
-    name: Logframe
-    url: https://data.vulekamali.gov.za/dataset/per-higheducation-nsfas/resource/94902693-8f55-4bad-abbe-260ed0c33e39/download/nfsas-logframe.xlsx
-  - description: ''
-    format: XLSX
-    name: Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-higheducation-nsfas/resource/69031447-82c1-4601-979d-2d0a00b56b65/download/nfsas-cost-model-locked.xlsx
-  - description: ''
-    format: XLSX
-    name: Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-higheducation-nsfas/resource/f042d45d-cecc-44b7-890e-ff5710f35427/download/nfsas-cost-model.xlsx
-  slug: per-higheducation-nsfas
-  url_path: /datasets/performance-and-expenditure-reviews/per-higheducation-nsfas
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:19:13.578640'
-  description: "Section 24 of the constitution gives everyone the right \u201Cto have\
-    \ the environment protected, for the benefit of present and future generations\u201D\
-    \ and requires the promotion of conservation along with ecologically sound, sustainable\
-    \ development. Provincial Nature Reserves (PNRs) play a key role in achieving\
-    \ this. To do so, however, they must be managed efficiently. This report analyses\
-    \ the trends of expenditure, revenue and performance to guide policymakers in\
-    \ support of this objective."
-  last_updated: '2018-08-15T18:12:15.969910'
-  license:
-    name: null
-    url: null
-  name: PER - Provincial Nature Reserves
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Technical Report
-    url: https://data.vulekamali.gov.za/dataset/per-provincial-nature-reserves/resource/25def6ba-5f15-49eb-8b1e-0052e389e921/download/technical-report-provincial-nature-reserves.pdf
-  - description: ''
-    format: PDF
-    name: Infographic
-    url: https://data.vulekamali.gov.za/dataset/per-provincial-nature-reserves/resource/ed9a1b91-04e1-4915-b5b9-ca3ebcf8f248/download/infographics-provincial-nature-reserves.pdf
-  slug: per-provincial-nature-reserves
-  url_path: /datasets/performance-and-expenditure-reviews/per-provincial-nature-reserves
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
+    url_path: /datasets/performance-and-expenditure-reviews
   created: '2018-07-17T12:21:46.369700'
   description: The main purpose of this performance and expenditure review (PER) was
     to understand how much is being spent on provincial roads, what drives this expenditure,
@@ -863,7 +204,8 @@ datasets:
     to analyse the unit cost per kilometre of provincial roads, taking into account
     the different costs structures across provinces due to topographical, climatic,
     soil and other differences.
-  last_updated: '2018-08-15T20:15:50.377573'
+  intro_short: null
+  last_updated: '2018-09-28T09:01:28.724312'
   license:
     name: null
     url: null
@@ -896,8 +238,62 @@ datasets:
     email: null
     name: null
   category:
+    description: 'Performance Expenditure Reviews (PERs) involve the close scrutiny
+      of both expenditure and programme performance data, and are widely used internationally
+      for quantifying, assessing and improving the cost effectiveness of public policy
+      and the cost-effectiveness of public spending. They are also used to cost the
+      implications of legislative changes and policy choices. '
     name: Performance and Expenditure Reviews
     slug: performance-and-expenditure-reviews
+    url_path: /datasets/performance-and-expenditure-reviews
+  created: '2018-07-17T12:13:35.616080'
+  description: There is a lack of a comprehensive policy framework for fleet management.
+    The National Transport Circular 4 of 2000 is outdated; while it is currently being
+    updated, it only covers the authorisation and usage of individual vehicles. Provinces
+    have to compile their own policies, procedures and management practices for determining
+    fleet size, age usage and composition.
+  intro_short: null
+  last_updated: '2018-09-28T09:01:26.982302'
+  license:
+    name: null
+    url: null
+  name: PER - Fleet Management
+  organization:
+    email: null
+    facebook: null
+    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
+    name: National Treasury
+    slug: national-treasury
+    telephone: null
+    twitter: null
+    url: null
+  resources:
+  - description: ''
+    format: PDF
+    name: Technical Report
+    url: https://data.vulekamali.gov.za/dataset/per-fleet-management/resource/aece350b-6b87-4d14-a101-98c790e59036/download/technical-report-provincial-vehicle-fleet-management.pdf
+  - description: ''
+    format: XLSM
+    name: Cost Model Open
+    url: https://data.vulekamali.gov.za/dataset/per-fleet-management/resource/3bb18677-0170-4af9-8ff4-bf7ed4943d40/download/cost-model-provincial-vehicle-fleet-management.xlsm
+  - description: ''
+    format: PDF
+    name: Infographic
+    url: https://data.vulekamali.gov.za/dataset/per-fleet-management/resource/f32db923-bd21-4718-b1d8-024482039381/download/infographics-provincial-vehicle-fleet-management.pdf
+  slug: per-fleet-management
+  url_path: /datasets/performance-and-expenditure-reviews/per-fleet-management
+- author:
+    email: null
+    name: null
+  category:
+    description: 'Performance Expenditure Reviews (PERs) involve the close scrutiny
+      of both expenditure and programme performance data, and are widely used internationally
+      for quantifying, assessing and improving the cost effectiveness of public policy
+      and the cost-effectiveness of public spending. They are also used to cost the
+      implications of legislative changes and policy choices. '
+    name: Performance and Expenditure Reviews
+    slug: performance-and-expenditure-reviews
+    url_path: /datasets/performance-and-expenditure-reviews
   created: '2018-07-17T12:19:26.184613'
   description: "Provincial roads are a vital cog in the South African economy, and\
     \ key to ensuring access to social services. They are generally a high-use infrastructure,\
@@ -922,7 +318,8 @@ datasets:
     \ compare different approaches to the same sections of roads. This also supports\
     \ institutional knowledge accumulation and learning as officials can quickly compare\
     \ the impact of these differences on project costs."
-  last_updated: '2018-08-15T20:16:50.586148'
+  intro_short: null
+  last_updated: '2018-09-28T09:01:25.110909'
   license:
     name: null
     url: null
@@ -955,8 +352,65 @@ datasets:
     email: null
     name: null
   category:
+    description: 'Performance Expenditure Reviews (PERs) involve the close scrutiny
+      of both expenditure and programme performance data, and are widely used internationally
+      for quantifying, assessing and improving the cost effectiveness of public policy
+      and the cost-effectiveness of public spending. They are also used to cost the
+      implications of legislative changes and policy choices. '
     name: Performance and Expenditure Reviews
     slug: performance-and-expenditure-reviews
+    url_path: /datasets/performance-and-expenditure-reviews
+  created: '2018-07-17T12:13:29.030813'
+  description: 'This Performance and Expenditure Review (PER) aimed to address the
+    issue of poor revenue collection rates at public health facilities in South Africa.
+    To achieve this, a detailed understanding of the institutions and operational
+    mandates that govern revenue management systems was developed. Revenue and expenditure
+    on payment systems was estimated and then projected forward from 2017/2018 to
+    2021/2022 in an expenditure and revenue costing model. An efficiencies and trade-offs
+    model was then applied to these projections in order to identify the most efficient
+    components of payment systems across the nine provinces. '
+  intro_short: null
+  last_updated: '2018-09-28T09:01:23.440541'
+  license:
+    name: null
+    url: null
+  name: PER - Health Revenue
+  organization:
+    email: null
+    facebook: null
+    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
+    name: National Treasury
+    slug: national-treasury
+    telephone: null
+    twitter: null
+    url: null
+  resources:
+  - description: ''
+    format: PDF
+    name: Technical Report
+    url: https://data.vulekamali.gov.za/dataset/per-health-revenue/resource/797ed8c2-9b55-4b7f-b348-88694b08e6e0/download/technical-report-health-revenue-management-in-provincial-hospitals.pdf
+  - description: ''
+    format: XLSB
+    name: Cost Model Open
+    url: https://data.vulekamali.gov.za/dataset/per-health-revenue/resource/36872560-5bcd-4edf-9850-b910ea802a3d/download/cost-model-health-revenue-management-in-provincial-hospitals.xlsb
+  - description: ''
+    format: PDF
+    name: Infographic
+    url: https://data.vulekamali.gov.za/dataset/per-health-revenue/resource/1a05d178-39db-4aff-b062-d8f8a1c84a89/download/infographic-health-revenue-management-in-provincial-hospitals.pdf
+  slug: per-health-revenue
+  url_path: /datasets/performance-and-expenditure-reviews/per-health-revenue
+- author:
+    email: null
+    name: null
+  category:
+    description: 'Performance Expenditure Reviews (PERs) involve the close scrutiny
+      of both expenditure and programme performance data, and are widely used internationally
+      for quantifying, assessing and improving the cost effectiveness of public policy
+      and the cost-effectiveness of public spending. They are also used to cost the
+      implications of legislative changes and policy choices. '
+    name: Performance and Expenditure Reviews
+    slug: performance-and-expenditure-reviews
+    url_path: /datasets/performance-and-expenditure-reviews
   created: '2018-07-17T12:12:15.979704'
   description: "South Africa\u2019s approach to the provision of public transport\
     \ is encapsulated in the Public Transport Strategy and Action Plan (2007) and\
@@ -965,7 +419,8 @@ datasets:
     \ and managed largely by local governments. The aim is to shift the delivery of\
     \ public transport away from the present model, which is based on operator-controlled,\
     \ commuter-based, unimodal routes.\u200B\u200B"
-  last_updated: '2018-08-15T20:20:44.568676'
+  intro_short: null
+  last_updated: '2018-09-28T09:01:21.211726'
   license:
     name: null
     url: null
@@ -1002,51 +457,14 @@ datasets:
     email: null
     name: null
   category:
+    description: 'Performance Expenditure Reviews (PERs) involve the close scrutiny
+      of both expenditure and programme performance data, and are widely used internationally
+      for quantifying, assessing and improving the cost effectiveness of public policy
+      and the cost-effectiveness of public spending. They are also used to cost the
+      implications of legislative changes and policy choices. '
     name: Performance and Expenditure Reviews
     slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:12:01.396886'
-  description: "The Informal Settlements Service Delivery Rapid Verification Study\
-    \ is not a typical performance and expenditure review (PER). It was commissioned\
-    \ by the Department of Performance Monitoring and Evaluation in the Presidency\
-    \ in December 2013 in order to help assess the extent to which government could\
-    \ rely on data prepared and presented by various departments about the delivery\
-    \ of services to communities and households living in informal settlements after\
-    \ it was reported that the target set for service delivery had been achieved.\
-    \ The target had been to provide 400 000 households with upgraded services (in\
-    \ situ or greenfield) and security of tenure between April 2010 and February 2014.\
-    \ The aim of the study was to assess the reliability of the data from various\
-    \ departments underpinning these claims. \u200B\u200B"
-  last_updated: '2018-08-15T18:23:51.382475'
-  license:
-    name: null
-    url: null
-  name: PER - Rapid Verification of Informal Settlements
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Summary
-    url: https://data.vulekamali.gov.za/dataset/per-urbanspace-rvi/resource/e525d795-c9a5-40be-8390-6a15281d8e88/download/2.1-summary.pdf
-  - description: ''
-    format: PDF
-    name: Technical Report
-    url: https://data.vulekamali.gov.za/dataset/per-urbanspace-rvi/resource/e5fa033e-e309-44c7-a754-bca631d34980/download/2.2-technical-report.pdf
-  slug: per-urbanspace-rvi
-  url_path: /datasets/performance-and-expenditure-reviews/per-urbanspace-rvi
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
+    url_path: /datasets/performance-and-expenditure-reviews
   created: '2018-07-17T12:21:26.826583'
   description: Public research institutions (PRIs), such as science councils, play
     a pivotal role in fostering innovation and technological progress. They typically
@@ -1054,7 +472,8 @@ datasets:
     development of innovative technologies, and provide training, consulting and other
     services. Their results are disseminated through publications, training and technology
     transfer.
-  last_updated: '2018-08-15T20:20:51.774875'
+  intro_short: null
+  last_updated: '2018-09-28T09:01:19.251675'
   license:
     name: null
     url: null
@@ -1087,113 +506,13 @@ datasets:
     url: https://data.vulekamali.gov.za/dataset/per-economicdev-sc/resource/ecf5866a-1668-421f-96ca-36df922debd1/download/science-councils-expenditure-model.xlsx
   slug: per-economicdev-sc
   url_path: /datasets/performance-and-expenditure-reviews/per-economicdev-sc
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:13:16.405557'
-  description: "The current model of social welfare delivery is largely based on non-profit\
-    \ organisations (NPOs). These provide a range of services, including residential\
-    \ services for older persons, partial-care facilities for children, child protection\
-    \ facilities, child- and youth care centres, as well as early childhood development\
-    \ centres. In 2008 (the most recent year for which data was available), there\
-    \ were 6 210 early childhood development centres and 2 705 other social welfare\
-    \ facilities. Of the latter, 98% of the facilities were operated by NPOs, providing\
-    \ services to 72% of the sector\u2019s clients."
-  last_updated: '2018-08-16T09:33:52.894081'
-  license:
-    name: null
-    url: null
-  name: PER - Social Welfare NPOs
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Summary
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-swnpo/resource/b1972b20-d146-401b-814b-e1a9153c1889/download/25.1-summary.pdf
-  - description: ''
-    format: PDF
-    name: Technical Report
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-swnpo/resource/027311cc-123a-44cb-9bef-49193bd971d6/download/25.2-technical-report.pdf
-  - description: ''
-    format: XLSX
-    name: Logframe
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-swnpo/resource/50a64823-addb-42f6-a61d-d3f26e5cdc76/download/npo-logframe.xlsx
-  - description: ''
-    format: XLSX
-    name: Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-swnpo/resource/24910d31-65c8-407e-b7e9-1ac33510d398/download/npo-cost-model-locked.xlsx
-  - description: ''
-    format: XLSX
-    name: Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-adminservices-swnpo/resource/130cd7a4-2dad-4c33-a87a-e67a7807bd7f/download/npo-cost-model.xlsx
-  slug: per-adminservices-swnpo
-  url_path: /datasets/performance-and-expenditure-reviews/per-adminservices-swnpo
-- author:
-    email: null
-    name: null
-  category:
-    name: Performance and Expenditure Reviews
-    slug: performance-and-expenditure-reviews
-  created: '2018-07-17T12:12:04.529741'
-  description: Although significant progress has been made in providing water to households
-    and communities who had no access to these services before 1994, sizeable backlogs
-    remain. According to the 2011 census, 2.2 million households still lack access
-    to the RDP-standard water supply, and over 5 million households (or 33%) experience
-    problems with their supply. Growth in sectors such as agriculture, mining and
-    energy also depends heavily on reliable access to water.
-  last_updated: '2018-08-16T09:37:05.350992'
-  license:
-    name: null
-    url: null
-  name: PER - Water Services Delivery Chain
-  organization:
-    email: null
-    facebook: null
-    logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
-    name: National Treasury
-    slug: national-treasury
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: PDF
-    name: Summary
-    url: https://data.vulekamali.gov.za/dataset/per-urbanspace-wsdc/resource/59ee9b6c-5074-45ab-a981-003284a7fcb0/download/summary.pdf
-  - description: ''
-    format: PDF
-    name: Technical Report
-    url: https://data.vulekamali.gov.za/dataset/per-urbanspace-wsdc/resource/cb7d3cea-c29c-4f29-bdd5-408b102cc133/download/4.2-technical-report.pdf
-  - description: ''
-    format: XLSX
-    name: Logframe
-    url: https://data.vulekamali.gov.za/dataset/per-urbanspace-wsdc/resource/0f998bb2-8d6d-4674-a875-2c9953e66565/download/water-services-logframe.xlsx
-  - description: ''
-    format: XLSM
-    name: Cost Model Locked
-    url: https://data.vulekamali.gov.za/dataset/per-urbanspace-wsdc/resource/34f91cdb-e594-432b-b968-323d8f47f078/download/water-services-cost-model-locked.xlsm
-  - description: ''
-    format: XLSM
-    name: Cost Model Open
-    url: https://data.vulekamali.gov.za/dataset/per-urbanspace-wsdc/resource/1e2fe211-f116-4fe7-a518-e4adc541f99d/download/water-services-cost-model.xlsm
-  slug: per-urbanspace-wsdc
-  url_path: /datasets/performance-and-expenditure-reviews/per-urbanspace-wsdc
-description: PERs involve the close scrutiny of both expenditure and programme performance
-  data, and are widely used internationally for quantifying, assessing and improving
-  the cost effectiveness of public policy and the cost-effectiveness of public spending.
-  They are also used to cost the implications of legislative changes and policy choices.
+description: 'Performance Expenditure Reviews (PERs) involve the close scrutiny of
+  both expenditure and programme performance data, and are widely used internationally
+  for quantifying, assessing and improving the cost effectiveness of public policy
+  and the cost-effectiveness of public spending. They are also used to cost the implications
+  of legislative changes and policy choices. '
 name: Performance and Expenditure Reviews
 selected_tab: datasets
 slug: performance-and-expenditure-reviews
 title: Performance and Expenditure Reviews - vulekamali
+url_path: /datasets/performance-and-expenditure-reviews
