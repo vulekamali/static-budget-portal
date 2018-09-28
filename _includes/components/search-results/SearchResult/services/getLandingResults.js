@@ -26,9 +26,9 @@ export default function getLandingResults(phrase, year) {
 
       `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=0&fq=+organization:national-treasury+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]&facet.field=[%22vocab_financial_years%22]`,
 
-      `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=3&fq=-organization:national-treasury&ext_highlight=true`,
+      `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=3&fq=-organization:national-treasury%20AND%20NOT%20groups:[%22%22%20TO%20*]&ext_highlight=true`,
 
-      `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=3&fq=+organization:national-treasury+vocab_categories:[*%20TO%20*]&ext_highlight=true`,
+      `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=3&fq=groups:[%22%22%20TO%20*]&ext_highlight=true`,
 
       '/json/static-search.json',
     ];

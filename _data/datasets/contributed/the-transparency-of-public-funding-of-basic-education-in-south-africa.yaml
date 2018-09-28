@@ -5,11 +5,17 @@
 author:
   email: ''
   name: ''
-category: null
+category:
+  description: Contibuted data and documentation for South African government budgets.
+    Hosted by National Treasury in partnership with IMALI YETHU.
+  name: Contributed data and analysis
+  slug: contributed
+  url_path: /datasets/contributed
 created: '2018-07-18T15:17:30.691540'
 description: Data and/or documentation related to South African government budgets
   contributed by International Budget Partnership and hosted by National Treasury
   in partnership with IMALI YETHU
+importance: null
 intro: Like their counterparts around the world, CSOs in South Africa need access
   to disaggregated budget data to be able to monitor budgeting for and expenditure
   on the delivery of services, such as basic education. But they struggle to find
@@ -19,6 +25,8 @@ intro: Like their counterparts around the world, CSOs in South Africa need acces
   Economic Research to assess the availability of disaggregated budget data that responds
   to the requests. Download the report of what they found along with an accompanying
   report with background information on how education is funded in South Africa.
+intro_short: null
+key_points: null
 last_updated: '2018-07-18T15:24:59.662325'
 license:
   name: License not specified
@@ -50,7 +58,8 @@ resources:
   format: PDF
   name: Processes for Financing Public Basic Education in South Africa
   url: https://data.vulekamali.gov.za/dataset/970fccc7-0f42-4256-89ae-0dea945e45e9/resource/14e5e268-744c-4bb3-afb7-33e77f626886/download/processes-for-financing-public-basic-education-in-south-africa-ibp-2017.pdf
-selected_tab: contributed-data
+selected_tab: datasets
 slug: the-transparency-of-public-funding-of-basic-education-in-south-africa
 title: The transparency of public funding of Basic Education in South Africa - vulekamali
 url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
+usage: null

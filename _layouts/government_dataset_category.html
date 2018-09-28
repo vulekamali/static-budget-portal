@@ -7,15 +7,29 @@ layout: page-shell
 
 <div class="Page-content">
   <main class="Page-contentInner">
-    <h1 class="Page-mainHeading">{{ page_data.name }}</h1>
+    <div class="Section is-invisible">
+      <a href="/">vulekamali</a>
+      <span> / </span>
+      <a href="/datasets/">Data and Analysis</a>
+      <span> / {{ page_data.name }}</span>
+    </div>
 
-    <div class="Section is-invisible u-fontSize18 u-paddingTop0">
+    <h1 class="Page-mainHeading u-marginTop15 u-marginBottom0">{{ page_data.name }}</h1>
+
+    <div class="Section is-invisible u-fontSize18">
       <div>
       {{ page_data.description }}
       </div>
-      <a href="/guides/per" class="Button is-inline u-marginTop15">
-        Learn more about PERs
-      </a>
+
+      {% assign path = "guides/" |append: page.data_key |append: ".md" %}
+
+      {% for static_file in site.pages %}
+        {% if static_file.path == path %}
+          <a href="/{{ static_file.path }}" class="Button is-inline u-marginTop25 u-marginBottom10">
+            Learn more about {{ page_data.name }}
+          </a>
+        {% endif %}
+      {% endfor %}
     </div>
 
     <div class="Grid has-twoColumn">

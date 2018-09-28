@@ -5,11 +5,17 @@
 author:
   email: ''
   name: ''
-category: null
+category:
+  description: Contibuted data and documentation for South African government budgets.
+    Hosted by National Treasury in partnership with IMALI YETHU.
+  name: Contributed data and analysis
+  slug: contributed
+  url_path: /datasets/contributed
 created: '2018-07-18T15:27:27.236890'
 description: Data and/or documentation related to South African government budgets
   contributed by International Budget Partnership and hosted by National Treasury
   in partnership with IMALI YETHU
+importance: null
 intro: "How transparent and participatory are the budgets of Metropolitan Municipalities\
   \ in South Africa?\r\n\r\nEvidence from around the world shows that when there is\
   \ public participation in public finance decision making and oversight, it can lead\
@@ -27,6 +33,8 @@ intro: "How transparent and participatory are the budgets of Metropolitan Munici
   \ (metros). Four of the eight metro municipalities will be assessed in 2018.\r\n\
   \r\nThis paper introduces the Metro Open Budget Index and explains how the Metro\
   \ OBI questionnaire was developed and how it will be implemented. "
+intro_short: null
+key_points: null
 last_updated: '2018-07-18T15:29:17.786047'
 license:
   name: License not specified
@@ -52,8 +60,9 @@ resources:
   format: PDF
   name: The South Africa Metro Open Budget Index Questionnaire
   url: https://data.vulekamali.gov.za/dataset/531593ff-2120-41a1-8a4e-050fa9d72f7f/resource/96a2268a-6f06-4df5-8dde-8d3f4a052457/download/south-africa-metro-open-budget-index-questionnaire-ibp-2017.pdf
-selected_tab: contributed-data
+selected_tab: datasets
 slug: how-transparent-and-participatory-are-the-budgets-of-metropolitan-municipalities-in-south-africa
 title: How transparent and participatory are the budgets of Metropolitan Municipalities
   in South Africa? - vulekamali
 url_path: /datasets/contributed/how-transparent-and-participatory-are-the-budgets-of-metropolitan-municipalities-in-south-africa
+usage: null
