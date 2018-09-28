@@ -21,11 +21,12 @@ layout: page-shell
       {{ page_data.description }}
       </div>
 
-      {% assign path = "guides/" |append: page.data_key |append: ".md" %}
+      {% assign guide_path = "guides/" |append: page.data_key %}
+      {% assign guide_file_path = guide_path |append: ".md" %}
 
       {% for static_file in site.pages %}
-        {% if static_file.path == path %}
-          <a href="/{{ static_file.path }}" class="Button is-inline u-marginTop25 u-marginBottom10">
+        {% if static_file.path == guide_file_path %}
+          <a href="/{{ guide_path }}" class="Button is-inline u-marginTop25 u-marginBottom10">
             Learn more about {{ page_data.name }}
           </a>
         {% endif %}
