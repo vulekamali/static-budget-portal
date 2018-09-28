@@ -5,11 +5,17 @@
 author:
   email: ''
   name: ''
-category: null
+category:
+  description: Contibuted data and documentation for South African government budgets.
+    Hosted by National Treasury in partnership with IMALI YETHU.
+  name: Contributed data and analysis
+  slug: contributed
+  url_path: /datasets/contributed
 created: '2018-02-01T12:39:08.930180'
 description: Data and/or documentation related to South African government budgets
   contributed by Centre for Child Law and hosted by National Treasury in partnership
   with IMALI YETHU
+importance: null
 intro: "The study, Budgets & Bricks: Progress with school infrastructure, explores\
   \ whether the Gauteng Department of Education's (GDE) promises in the Rivonia Primary\
   \ School, heard in the Constitutional Court in 2014, case have been met and whether\
@@ -20,6 +26,8 @@ intro: "The study, Budgets & Bricks: Progress with school infrastructure, explor
   \ whether GDE's spending for 2015 is sufficient \u2013 and the task is hampered\
   \ by the fact that the available data is limited, and the data that is available\
   \ is problematic."
+intro_short: null
+key_points: null
 last_updated: '2018-02-01T12:41:09.356136'
 license:
   name: Creative Commons Non-Commercial (Any)
@@ -42,8 +50,9 @@ resources:
   format: PDF
   name: Budgets__Bricks_FINAL.pdf
   url: https://data.vulekamali.gov.za/dataset/79eda387-9d15-4e67-bfc6-f77666f4051d/resource/021663b5-9241-43ab-8a0f-4dc320f73c35/download/budgets__bricks_final.pdf
-selected_tab: contributed-data
+selected_tab: datasets
 slug: budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
 title: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
   Primary School case - vulekamali'
 url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
+usage: null
