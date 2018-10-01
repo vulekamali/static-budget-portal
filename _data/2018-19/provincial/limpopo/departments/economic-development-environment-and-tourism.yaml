@@ -19,6 +19,47 @@ contributed_datasets:
 description: 'Limpopo department: Economic Development, Environment And Tourism budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 361896648.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 22352394.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 10041852.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 637660414.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 109421922.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2481510.0
+  programme_name: Economic Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 325622064.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 53528246.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 4579728.0
+  programme_name: Environmental Affairs
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 109209000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 28579760.0
+  programme_name: Tourism
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

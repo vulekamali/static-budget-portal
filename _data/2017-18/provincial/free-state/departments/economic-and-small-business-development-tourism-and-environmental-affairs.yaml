@@ -19,6 +19,75 @@ contributed_datasets:
 description: 'Free State department: Economic and Small Business Development, Tourism
   and Environmental Affairs budget data for the 2017-18 financial year from National
   Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 91911000
+    - economic_classification_2_name: Goods and services
+      total_budget: 51631000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 648000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 4000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 44050000
+    - economic_classification_2_name: Goods and services
+      total_budget: 37237000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2000000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 105425000
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 32260000
+    - economic_classification_2_name: Households
+      total_budget: 1000000
+  programme_name: Economic and Small Business Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 93952000
+    - economic_classification_2_name: Goods and services
+      total_budget: 48374000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 30895000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 839000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 196000
+    - economic_classification_2_name: Households
+      total_budget: 80000
+  programme_name: Environmental Affairs
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 10207000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 7978000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 91000
+  programme_name: Tourism
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

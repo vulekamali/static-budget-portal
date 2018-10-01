@@ -18,6 +18,49 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Sport and Recreation South Africa budget data for
   the 2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 573906000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 54740000.0
+  programme_name: Active Nation
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 2167000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 122582000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 79000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 9678000.0
+  programme_name: Sport Infrastructure Support
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 118054000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 15190000.0
+  programme_name: Sport Support
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 63521000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 28631000.0
+  programme_name: Winning Nation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

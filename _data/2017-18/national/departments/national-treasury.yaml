@@ -30,6 +30,157 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: National Treasury budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 204418000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 199536000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 6476000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2080000.0
+    - economic_classification_2_name: Households
+      total_budget: 1800000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 77547000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 24134000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 674000.0
+  programme_name: Asset and Liability Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 65196000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 4767239000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 2567000.0
+  programme_name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 162353119000.0
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: Payments for financial assets
+      total_budget: 387551000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 453116145000.0
+  programme_name: Direct charge against the National Revenue Fund
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 78107000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 28836000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 845000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 19275000.0
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 12586000.0
+  programme_name: Economic Policy, Tax, Financial Regulation and Research
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 777072000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 206111000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 5328000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 99365000.0
+  programme_name: Financial Accounting and Supply Chain Management Systems
+- items:
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 5005639000.0
+  programme_name: Financial Intelligence and State Security
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 36030000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 16140000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 556000.0
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: Payments for financial assets
+      total_budget: 4869117000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 914918000.0
+  programme_name: International Financial Relations
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 201945000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 31728000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1783000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 50647000.0
+  programme_name: Public Finance and Budget Management
+- items:
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 10218198000.0
+  programme_name: Revenue Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 389256000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 1598289000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 885782000.0
+  programme_name: Technical Support and Development Finance
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -19,6 +19,113 @@ contributed_datasets:
 description: 'National department: Justice and Constitutional Development budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 1525807000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 572747000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 14882000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 15538000.0
+    - economic_classification_2_name: Households
+      total_budget: 269000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 38000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 654337000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 245788000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2575025000.0
+  programme_name: Auxiliary and Associated Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 3797819000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 1579168000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 769317000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 104786000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 25172000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 545000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 21000.0
+  programme_name: Court Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 2074226000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 66294000.0
+  programme_name: Direct charge against the National Revenue Fund
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 3111219000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 512509000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 43648000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 8993000.0
+    - economic_classification_2_name: Households
+      total_budget: 7942000.0
+  programme_name: National Prosecuting Authority
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 1022029000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 164621000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 16759000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 16000000.0
+    - economic_classification_2_name: Households
+      total_budget: 1778000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 30000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1000.0
+  programme_name: State Legal Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,59 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Social Development budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 459491000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 50958000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 9397000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 767916000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 597469000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 25704000.0
+  programme_name: Children And Families
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 147985000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 50990000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 12526000.0
+  programme_name: Development And Research
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 293832000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 97119000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2142000.0
+  programme_name: Restorative Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 422534000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 266152000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 83667000.0
+  programme_name: Social Welfare Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

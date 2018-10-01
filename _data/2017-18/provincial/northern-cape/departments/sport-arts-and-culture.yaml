@@ -34,6 +34,99 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Northern Cape department: Sport, Arts and Culture budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 52666000
+    - economic_classification_2_name: Goods and services
+      total_budget: 18654000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1873000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 280000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 150000
+    - economic_classification_2_name: Households
+      total_budget: 50000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 30523000
+    - economic_classification_2_name: Goods and services
+      total_budget: 18897000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 244000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 82000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 12636000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 650000
+    - economic_classification_2_name: Households
+      total_budget: 100000
+  programme_name: Cultural Affairs
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 58116000
+    - economic_classification_2_name: Goods and services
+      total_budget: 43057000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 34620000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 6560000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 36250000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1150000
+    - economic_classification_2_name: Higher education institutions
+      total_budget: 600000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 500000
+    - economic_classification_2_name: Households
+      total_budget: 100000
+  programme_name: Library and Archives Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 24863000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 18397000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 1545000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 784000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 6441000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 600000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 600000
+    - economic_classification_2_name: Households
+      total_budget: 100000
+  programme_name: Sport and Recreation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

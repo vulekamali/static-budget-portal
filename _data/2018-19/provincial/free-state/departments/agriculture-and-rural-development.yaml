@@ -19,6 +19,69 @@ contributed_datasets:
 description: 'Free State department: Agriculture And Rural Development budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 166455000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 2948000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1344000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 12335000.0
+  programme_name: Agricultural Economics Services
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 267833000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 125423000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 8598000.0
+  programme_name: Farmer Support And Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 48802000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 21677000.0
+  programme_name: Research And Technology Development Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 8777000.0
+  programme_name: Rural Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 26189000.0
+  programme_name: Structured Agricultural  Education And Training
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 37104000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 14200000.0
+  programme_name: Sustainable Resource Management
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 68794000.0
+  programme_name: Veterinary Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

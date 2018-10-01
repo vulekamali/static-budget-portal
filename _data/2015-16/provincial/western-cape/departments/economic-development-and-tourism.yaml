@@ -19,6 +19,121 @@ contributed_datasets:
 description: 'Western Cape department: Economic Development and Tourism budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 23482000
+    - economic_classification_2_name: Goods and services
+      total_budget: 15585000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 902000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 8254000
+    - economic_classification_2_name: Goods and services
+      total_budget: 2990000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 60000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 35035000
+  programme_name: Business Regulation and Governance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 8694000
+    - economic_classification_2_name: Goods and services
+      total_budget: 6603000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 169000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 7000000
+  programme_name: Economic Planning
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 38242000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 18753000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 478000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1780000
+  programme_name: Integrated Economic Development Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 23059000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 10355000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 76000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 10800000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 7000000
+  programme_name: Skills Development and Innovation
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 12118000
+    - economic_classification_2_name: Goods and services
+      total_budget: 1958000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 94000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 1000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 28300000
+  programme_name: Tourism Arts and Entertainment
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 51374000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 24231000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 344000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 126444000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 54658000
+  programme_name: Trade and Sector Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

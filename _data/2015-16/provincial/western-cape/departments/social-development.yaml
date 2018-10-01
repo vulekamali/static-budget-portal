@@ -18,6 +18,97 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Social Development budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 124417000
+    - economic_classification_2_name: Goods and services
+      total_budget: 40844000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 8840000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 255000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 19000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 21073000
+    - economic_classification_2_name: Goods and services
+      total_budget: 1274000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 577034000
+    - economic_classification_2_name: Households
+      total_budget: 6166000
+  programme_name: Children and Families
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 11404000
+    - economic_classification_2_name: Goods and services
+      total_budget: 1960000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 4000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 66979000
+  programme_name: Development and Research
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 119416000
+    - economic_classification_2_name: Goods and services
+      total_budget: 85629000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2833000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 95800000
+    - economic_classification_2_name: Households
+      total_budget: 636000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 18000
+  programme_name: Restorative Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 354551000
+    - economic_classification_2_name: Goods and services
+      total_budget: 45794000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 13344000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 319593000
+    - economic_classification_2_name: Households
+      total_budget: 100000
+  programme_name: Social Welfare Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

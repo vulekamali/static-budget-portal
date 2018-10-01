@@ -18,6 +18,139 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: National Treasury budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 9231000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 353844000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 3590000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 610000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 92320000.0
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: Payments for financial assets
+      total_budget: 3024000000.0
+  programme_name: Asset and Liability Management
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 3901760000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 61181000.0
+  programme_name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 393332386000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 126440428000.0
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: Payments for financial assets
+      total_budget: 121000000.0
+  programme_name: Direct charge against the National Revenue Fund
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 451000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 105881000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 27560000.0
+  programme_name: Economic Policy, Tax, Financial Regulation and Research
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 4694000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 664639000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 82029000.0
+  programme_name: Financial Accounting and Supply Chain Management Systems
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 342984000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 4199821000.0
+  programme_name: Financial Intelligence and State Security
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 117165000.0
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 117000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 734602000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 48874000.0
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: Payments for financial assets
+      total_budget: 346684000.0
+  programme_name: International Financial Relations
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 1300000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 215109000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 40556000.0
+  programme_name: Public Finance and Budget Management
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 943444000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 8490995000.0
+  programme_name: Revenue Administration
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 858847000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 1878749000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 406267000.0
+  programme_name: Technical Support and Development Finance
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

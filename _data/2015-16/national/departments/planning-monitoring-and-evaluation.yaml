@@ -19,6 +19,55 @@ contributed_datasets:
 description: 'National department: Planning, Montoring and Evaluation budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 2020000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 67764000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 473000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 59094000.0
+  programme_name: Institutional Performance Monitoring and Evaluation
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 88197000.0
+  programme_name: National Planning
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 50000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 409789000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 4703000.0
+  programme_name: National Youth Development
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 375000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 85229000.0
+  programme_name: Outcomes Monitoring and Evaluation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

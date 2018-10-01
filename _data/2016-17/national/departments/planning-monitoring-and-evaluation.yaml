@@ -19,6 +19,77 @@ contributed_datasets:
 description: 'National department: Planning, Monitoring and Evaluation budget data
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 73812000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 46457000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 8117000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 5929000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 47845000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 19614000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 250000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 130000.0
+  programme_name: Institutional Performance Monitoring and Evaluation
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 63365000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 39772000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 100000.0
+  programme_name: National Planning
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 4253000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 3368000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 30000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 405766000.0
+  programme_name: National Youth Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 80868000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 27208000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 600000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 178000.0
+  programme_name: Outcomes Monitoring and Evaluation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

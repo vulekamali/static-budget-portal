@@ -18,6 +18,41 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Public Enterprises budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 82288000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 66588000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2980000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 112000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 11000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 59024000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 23827000.0
+  programme_name: Business Enhancement, Transformation and Industrialisation
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 30132000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 8952000.0
+  programme_name: State-owned Companies Governance Assurance and Performance
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -19,6 +19,119 @@ contributed_datasets:
 description: 'Mpumalanga department: Agriculture, Rural Development, Land and Environmental
   Affairs budget data for the 2016-17 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 93305000
+    - economic_classification_2_name: Goods and services
+      total_budget: 35999000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 610000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 3941000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 150000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 7071000
+    - economic_classification_2_name: Goods and services
+      total_budget: 2445000
+  programme_name: Agricultural Economics Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 73609000
+    - economic_classification_2_name: Goods and services
+      total_budget: 17853000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 1500000
+  programme_name: Environmental Affairs
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 170061000
+    - economic_classification_2_name: Goods and services
+      total_budget: 96322000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 92898000
+  programme_name: Farmer Support and Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 43827000
+    - economic_classification_2_name: Goods and services
+      total_budget: 7998000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 10000000
+  programme_name: Research and Technology Development Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 16991000
+    - economic_classification_2_name: Goods and services
+      total_budget: 8346000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 5360000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 70640000
+  programme_name: Rural Development Coordination
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 13075000
+    - economic_classification_2_name: Goods and services
+      total_budget: 4304000
+  programme_name: Structured Agricultural Education and Training
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 46381000
+    - economic_classification_2_name: Goods and services
+      total_budget: 7160000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 26534000
+  programme_name: Sustainable Resource Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 98911000
+    - economic_classification_2_name: Goods and services
+      total_budget: 15063000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 3500000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 279000
+  programme_name: Veterinary Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

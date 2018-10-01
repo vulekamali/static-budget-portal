@@ -18,6 +18,37 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Public Works And Infrastructure budget data for
   the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 128795000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 8617000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1024000.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 115659000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 56528000.0
+  programme_name: Expanded Public Works Programme
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 873518000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 367856000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 83271000.0
+  programme_name: Public Works Infrastructure
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

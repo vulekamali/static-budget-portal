@@ -24,6 +24,111 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Health budget data for the 2017-18 financial year
   from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 308819000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 197170000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 4597000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2252000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 453331000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 79420000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 16267000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 17557903000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 153876000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 17547000.0
+  programme_name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 54649000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 39625000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2699000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1629998000.0
+  programme_name: Health Regulation and Compliance Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 187048000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 128470000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 714646000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 115531000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 19962489000.0
+  programme_name: Hospitals, Tertiary Health Services and Human Resource Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 585328000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 114740000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 5000000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1618000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 28401000.0
+  programme_name: National Health Insurance, Health Planning and Systems Enablement
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 185583000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 70501000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 5255000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 2960000.0
+  programme_name: Primary Health Care Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

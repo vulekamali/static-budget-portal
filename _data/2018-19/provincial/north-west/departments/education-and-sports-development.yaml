@@ -19,6 +19,83 @@ contributed_datasets:
 description: 'North West department: Education And Sports Development budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 894772000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 6657000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 5768000.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 524570000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 96214000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 4652000.0
+  programme_name: Early Childhood Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 651778000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 76753000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 13185000.0
+  programme_name: Examination And Education Related Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 31331000.0
+  programme_name: Independent School Subsidies
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 919984000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 85012000.0
+  programme_name: Infrastructure Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 11096298000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1004455000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 6167000.0
+  programme_name: Public Ordinary School Education
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 485457000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 134915000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3437000.0
+  programme_name: Public Special School Education
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 120339000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 12847000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 9277000.0
+  programme_name: Sport And Recreation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

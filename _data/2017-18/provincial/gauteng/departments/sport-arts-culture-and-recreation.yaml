@@ -19,6 +19,83 @@ contributed_datasets:
 description: 'Gauteng department: Sport, Arts, Culture and Recreation budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 77202000
+    - economic_classification_2_name: Goods and services
+      total_budget: 36436000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3332000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 150000
+  programme_name: ADMINISTRATION
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 59467000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 53039000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 34985000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3266000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 28766000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 10900000
+  programme_name: CULTURAL AFFAIRS
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 28469000
+    - economic_classification_2_name: Goods and services
+      total_budget: 19357000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 91886000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 9001000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 129097000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 2000000
+    - economic_classification_2_name: Households
+      total_budget: 800000
+  programme_name: LIBRARY AND ARCHIVES SERVICES
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 134301000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 104926000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 26254000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2432000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 19270000
+  programme_name: SPORT AND RECREATION
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,125 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Statistics South Africa budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 225918000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 213505000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 229594000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 7926000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Higher education institutions
+      total_budget: 7500000.0
+    - economic_classification_2_name: Households
+      total_budget: 2940000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 130000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 14000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 201656000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 26109000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1047000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 24000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1000.0
+  programme_name: Economic Statistics
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 62508000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 3739000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 540000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 60000.0
+  programme_name: Methodology, Standards and Research
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 103303000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 22933000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1682000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 120000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 200000.0
+  programme_name: Population and Social Statistics
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 473395000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 96897000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 14768000.0
+  programme_name: Statistical Collection and Outreach
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 132085000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 110324000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 15475000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 529000.0
+  programme_name: Statistical Support and Informatics
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 153353000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 32551000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3151000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2336000.0
+  programme_name: Survey Operations
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

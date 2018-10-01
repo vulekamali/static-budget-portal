@@ -18,6 +18,159 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Health budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 326673000
+    - economic_classification_2_name: Goods and services
+      total_budget: 288638000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 8100000
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: ''
+      total_budget: 107607000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 3100000
+    - economic_classification_2_name: Households
+      total_budget: 3000000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 2226728000
+    - economic_classification_2_name: Goods and services
+      total_budget: 1735334000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 12580000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 10270000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 54000
+  programme_name: Central Hospital Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 10184010000
+    - economic_classification_2_name: Goods and services
+      total_budget: 4922694000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 139500000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 182000000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 105000000
+    - economic_classification_2_name: Households
+      total_budget: 45620000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 38000
+  programme_name: District Health Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 789187000
+    - economic_classification_2_name: Goods and services
+      total_budget: 305933000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 60300000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 3190000
+    - economic_classification_2_name: Households
+      total_budget: 1700000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1000
+  programme_name: Emergency Medical  Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 95700000
+    - economic_classification_2_name: Goods and services
+      total_budget: 39413000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2600000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 575000
+  programme_name: Health Care Support Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 368904000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 37000000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 1143659000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1789000
+  programme_name: Health Facilities Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 743354000
+    - economic_classification_2_name: Goods and services
+      total_budget: 72896000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 9000000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 214000000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 16000000
+  programme_name: Health Sciences and Training
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 6735829000
+    - economic_classification_2_name: Goods and services
+      total_budget: 1908282000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 67920000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 33100000
+    - economic_classification_2_name: Households
+      total_budget: 30430000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 77000
+  programme_name: Provincial Hospital Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

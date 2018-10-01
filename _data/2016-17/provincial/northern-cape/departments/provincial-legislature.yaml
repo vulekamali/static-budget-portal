@@ -18,6 +18,39 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Northern Cape department: Provincial Legislature budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 41670000
+    - economic_classification_2_name: Goods and services
+      total_budget: 14625000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 407000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 10286000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 7513000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 25661000
+  programme_name: Facilities for Members and Political Parties
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 32449000
+    - economic_classification_2_name: Goods and services
+      total_budget: 11241000
+  programme_name: Parliamentary Business
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

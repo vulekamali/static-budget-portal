@@ -18,6 +18,59 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'North West department: Office of the Premier budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 79260000
+    - economic_classification_2_name: Goods and services
+      total_budget: 42872000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 980000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 4176000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 219547000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 85100000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1900000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 11078000
+    - economic_classification_2_name: Households
+      total_budget: 2409000
+  programme_name: Institutional Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 139467000
+    - economic_classification_2_name: Goods and services
+      total_budget: 27054000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2021000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 32893000
+    - economic_classification_2_name: Households
+      total_budget: 100000
+  programme_name: Policy and Governance
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

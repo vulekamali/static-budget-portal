@@ -30,6 +30,77 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'North West department: Public Works and Roads budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 135990000
+    - economic_classification_2_name: Goods and services
+      total_budget: 86650000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 6657000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 4188000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 62161000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 6630000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 200000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 23000
+  programme_name: Community Based Programme
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 351872000
+    - economic_classification_2_name: Goods and services
+      total_budget: 203870000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 113396000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1510000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 245492000
+    - economic_classification_2_name: Households
+      total_budget: 4767000
+  programme_name: Public Works Infrastructure
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 1040127000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 301698000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 294427000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 29911000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 5494000
+  programme_name: Transport Infrastructure
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

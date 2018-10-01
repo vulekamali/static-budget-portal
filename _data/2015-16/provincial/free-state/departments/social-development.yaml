@@ -18,6 +18,99 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Social Development budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 169463000
+    - economic_classification_2_name: Goods and services
+      total_budget: 66971000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3794000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 265000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 22000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 105831000
+    - economic_classification_2_name: Goods and services
+      total_budget: 5996000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 125000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 249994000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 5270000
+  programme_name: Children and Families
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 88614000
+    - economic_classification_2_name: Goods and services
+      total_budget: 2817000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 97000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 20276000
+    - economic_classification_2_name: Households
+      total_budget: 12000
+  programme_name: Development and Research
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 82616000
+    - economic_classification_2_name: Goods and services
+      total_budget: 7642000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 6500000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 472000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 17535000
+    - economic_classification_2_name: Households
+      total_budget: 500000
+  programme_name: Restorative Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 95692000
+    - economic_classification_2_name: Goods and services
+      total_budget: 7920000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 238000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 81337000
+    - economic_classification_2_name: Households
+      total_budget: 75000
+  programme_name: Social Welfare Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

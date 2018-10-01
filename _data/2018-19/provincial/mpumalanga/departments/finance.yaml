@@ -18,6 +18,45 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Mpumalanga department: Finance budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 93664000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1564000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 701000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 128765000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 6167000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 525000.0
+  programme_name: Asset And Liabilities Management
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 32907000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 18000.0
+  programme_name: Financial Governance
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 58388000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 7000.0
+  programme_name: Sustainable Resources Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

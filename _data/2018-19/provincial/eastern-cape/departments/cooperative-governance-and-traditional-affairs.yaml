@@ -19,6 +19,53 @@ contributed_datasets:
 description: 'Eastern Cape department: Cooperative Governance And Traditional Affairs
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 227435493.812611
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 36165173.686
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 5701632.108
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 107343978.934404
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 4000000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3374400.0
+  programme_name: Development And Planning
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 34929750.471778
+  programme_name: House Of Traditional Leaders
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 226327316.27013
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 16148000.0
+  programme_name: Local Governance
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 311837684.65396005
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 5724000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 4812668.022
+  programme_name: Traditional Institutional Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

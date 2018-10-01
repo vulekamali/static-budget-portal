@@ -19,6 +19,113 @@ contributed_datasets:
 description: 'Western Cape department: Environmental Affairs and Development Planning
   budget data for the 2015-16 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 44090000
+    - economic_classification_2_name: Goods and services
+      total_budget: 11368000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2572000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 60000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 6000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 8918000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 6792000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 37000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 243974000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 1400000
+  programme_name: Biodiversity Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 18917000
+    - economic_classification_2_name: Goods and services
+      total_budget: 3857000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 136000
+  programme_name: Compliance and Enforcement
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 42509000
+    - economic_classification_2_name: Goods and services
+      total_budget: 11635000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 236000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 5500000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 5000000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2000
+  programme_name: Development Planning
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 1334000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 500000
+  programme_name: Environmental Empowerment Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 14139000
+    - economic_classification_2_name: Goods and services
+      total_budget: 5546000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 92000
+  programme_name: Environmental Policy, Planning and Coordination
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 53305000
+    - economic_classification_2_name: Goods and services
+      total_budget: 20581000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 468000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2000
+  programme_name: Environmental Quality Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -19,6 +19,59 @@ contributed_datasets:
 description: 'Free State department: Cooperative Governance And Traditional Affairs
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 152893000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2845000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 215000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 79559000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 10595000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 5429000.0
+  programme_name: Development And Planning
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 9295000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 159000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 49000.0
+  programme_name: House Of Traditional Leaders
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 80425000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 53109000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1467000.0
+  programme_name: Local Governance
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 46398000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 784000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 107000.0
+  programme_name: Traditional Institutional Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

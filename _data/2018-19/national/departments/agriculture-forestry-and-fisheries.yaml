@@ -19,6 +19,135 @@ contributed_datasets:
 description: 'National department: Agriculture, Forestry and Fisheries budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 466125000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 413577000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 18319000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 4752000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 20366000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 39000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 631940000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 114663000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 22221000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1031329000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 552430000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 14410000.0
+    - economic_classification_2_name: Households
+      total_budget: 85000.0
+  programme_name: Agricultural Production, Health and Food Safety
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 228078000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 259733000.0
+  programme_name: Fisheries
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 168470000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 84413000.0
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 1000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 34123000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3933000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 1595203000.0
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 126609000.0
+    - economic_classification_2_name: Households
+      total_budget: 24552000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 585000.0
+  programme_name: Food Security and Agrarian Reform
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 577578000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 208585000.0
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 1416000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 41735000.0
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 3000000.0
+    - economic_classification_2_name: Biological assets
+      total_budget: 15000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 234612000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 5646000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2000000.0
+    - economic_classification_2_name: Households
+      total_budget: 536000.0
+  programme_name: Forestry and Natural Resources Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 110060000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 34508000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 474000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 47168000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 43239000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 38466000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 4000.0
+  programme_name: Trade Promotion and Market Access
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

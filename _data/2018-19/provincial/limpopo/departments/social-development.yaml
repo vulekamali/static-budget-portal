@@ -18,6 +18,57 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Social Development budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 259855708.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 43790000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 3885998.5
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 442938054.8
+    - economic_classification_2_name: Current Payments
+      total_budget: 415423972.6
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 500000.0
+  programme_name: Children And Families
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 162914470.4
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 28512327.7
+  programme_name: Development And Research
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 174811084.6
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 38874720.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3098600.0
+  programme_name: Restorative Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 340451117.1
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 70699859.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 973148.4
+  programme_name: Social Welfare Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

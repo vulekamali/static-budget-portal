@@ -18,6 +18,37 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Infrastructure Development budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 288288284.04
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 34000221.6
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 4270554.4
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 317647000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 116000.0
+  programme_name: Expanded Public Works Programme
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 1385891870.07
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 903057000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 103693000.0
+  programme_name: Public Works Infrastructure
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

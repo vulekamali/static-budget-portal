@@ -19,6 +19,59 @@ contributed_datasets:
 description: 'Northern Cape department: Environment And Nature Conservation budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 70411155.93
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1668452.0990000002
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 224296.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 35013000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 174000.0
+  programme_name: Biodiversity Management
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 10308000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 178000.0
+  programme_name: Compliance And Enforcement
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 13854634.6223
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 135267.08500000002
+  programme_name: Environmental Empowerment Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 11326481.6571
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 59813.8521
+  programme_name: Environmental Policy,Planning And Coordination
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 14511612.2791
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 123424.89589999999
+  programme_name: Environmental Quality Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

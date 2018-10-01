@@ -24,6 +24,141 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Health budget data for the 2017-18 financial year
   from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 262950000
+    - economic_classification_2_name: Goods and services
+      total_budget: 41646000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1355000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 272000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 25000
+  programme_name: ADMINISTRATION
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 1299115000
+    - economic_classification_2_name: Goods and services
+      total_budget: 414590000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 53834000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 648000
+  programme_name: CENTRAL HOSPITAL SERVICES
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 8281252000
+    - economic_classification_2_name: Goods and services
+      total_budget: 2477184000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 159282000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 421398000
+    - economic_classification_2_name: Households
+      total_budget: 42227000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 24743000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 15841000
+  programme_name: DISTRICT HEALTH SERVICES
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 603854000
+    - economic_classification_2_name: Goods and services
+      total_budget: 96435000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 28364000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 225000
+  programme_name: EMERGENCY  MADICAL SERVICES
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 84111000
+    - economic_classification_2_name: Goods and services
+      total_budget: 53875000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2234000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 225000
+  programme_name: HEALTH CARE SUPPORT SERVICES
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 256342000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 10788000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 200433000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 184609000
+  programme_name: HEALTH FACILITIES MANAGEMENT
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 406905000
+    - economic_classification_2_name: Goods and services
+      total_budget: 45120000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 7927000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 200526000
+  programme_name: HEALTH SCIENCES AND TRAINING
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 2050417000
+    - economic_classification_2_name: Goods and services
+      total_budget: 299500000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 13899000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 628000
+  programme_name: PROVINCIAL HOSPITAL SERVICES
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

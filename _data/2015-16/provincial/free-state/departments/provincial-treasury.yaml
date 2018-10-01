@@ -18,6 +18,59 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Provincial Treasury budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 64062000
+    - economic_classification_2_name: Goods and services
+      total_budget: 26390000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 700000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 347000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 53419000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 40517000
+  programme_name: Asset and Liabilities Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 19010000
+    - economic_classification_2_name: Goods and services
+      total_budget: 1247000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 47000
+  programme_name: Financial Governance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 32989000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 26384000
+  programme_name: Municipal Finance Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 27341000
+    - economic_classification_2_name: Goods and services
+      total_budget: 3014000
+  programme_name: Sustainable Resource Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

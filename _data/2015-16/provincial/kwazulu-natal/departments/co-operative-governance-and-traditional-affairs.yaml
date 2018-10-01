@@ -19,6 +19,83 @@ contributed_datasets:
 description: 'KwaZulu-Natal department: Co-operative Governance and Traditional Affairs
   budget data for the 2015-16 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 170144000
+    - economic_classification_2_name: Goods and services
+      total_budget: 159396000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 7705000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 2500000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 12449000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 200000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 254398000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 127543000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 71231000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 7470000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 200000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 61656000
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 12100000
+  programme_name: Development and Planning
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 173803000
+    - economic_classification_2_name: Goods and services
+      total_budget: 50041000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 852000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 464000
+  programme_name: Local Governance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 165739000
+    - economic_classification_2_name: Goods and services
+      total_budget: 80949000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 7000000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1103000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1100000
+  programme_name: Traditional Institutional Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

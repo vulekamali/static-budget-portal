@@ -31,6 +31,97 @@ contributed_datasets:
 description: 'Free State department: Cooperative Governance and Traditional Affairs
   budget data for the 2017-18 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 77757000
+    - economic_classification_2_name: Goods and services
+      total_budget: 58030000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2713000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 1000000
+    - economic_classification_2_name: Households
+      total_budget: 203000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 43072000
+    - economic_classification_2_name: Goods and services
+      total_budget: 34237000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 5814000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 8472000
+    - economic_classification_2_name: Households
+      total_budget: 111000
+  programme_name: Development and Planning
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 8283000
+    - economic_classification_2_name: Goods and services
+      total_budget: 1636000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 49000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 339000
+  programme_name: House of Traditional Leaders
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 44477000
+    - economic_classification_2_name: Goods and services
+      total_budget: 33105000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1291000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 42135000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 1327000
+    - economic_classification_2_name: Households
+      total_budget: 318000
+  programme_name: Local Governance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 39645000
+    - economic_classification_2_name: Goods and services
+      total_budget: 2142000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 290000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 498000
+    - economic_classification_2_name: Households
+      total_budget: 243000
+  programme_name: Traditional Institutional Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

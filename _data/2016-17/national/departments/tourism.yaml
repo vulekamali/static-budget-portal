@@ -18,6 +18,87 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Tourism budget data for the 2016-17 financial year
   from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 130408000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 102745000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3742000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 376000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 185000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 202878000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 53880000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 104651000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 977000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 61334000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 16027000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 4392000.0
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 600000.0
+  programme_name: Domestic Tourism
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 38606000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 8616000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1164000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 6322000.0
+  programme_name: International Tourism
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 91283000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 42647000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1425000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 35000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1024847000.0
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 108365000.0
+    - economic_classification_2_name: Higher education institutions
+      total_budget: 4011000.0
+  programme_name: Policy and Knowledge Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

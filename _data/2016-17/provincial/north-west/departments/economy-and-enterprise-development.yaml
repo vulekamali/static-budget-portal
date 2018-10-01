@@ -19,6 +19,63 @@ contributed_datasets:
 description: 'North West department: Economy and Enterprise Development budget data
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 55841000
+    - economic_classification_2_name: Goods and services
+      total_budget: 42360000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 10000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2189000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1305000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 158000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 22031000
+    - economic_classification_2_name: Goods and services
+      total_budget: 3055000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 77154000
+  programme_name: Business Regulation and Governance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 7715000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 5730000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 30498000
+  programme_name: Economic Planning and Sector Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 16188000
+    - economic_classification_2_name: Goods and services
+      total_budget: 6332000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 32119000
+  programme_name: Integrated Economic Development Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

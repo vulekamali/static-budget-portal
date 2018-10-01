@@ -19,6 +19,49 @@ contributed_datasets:
 description: 'KwaZulu-Natal department: Co-Operative Governance And Traditional Affairs
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 407821000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 33220000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 13911000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 286074000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 50424000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 14100000.0
+  programme_name: Development And Planning
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 299539000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1130000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 70000.0
+  programme_name: Local Governance
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 564081000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 7562000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1150000.0
+  programme_name: Traditional Institutional Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

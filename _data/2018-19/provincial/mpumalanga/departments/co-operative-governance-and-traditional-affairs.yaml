@@ -19,6 +19,47 @@ contributed_datasets:
 description: 'Mpumalanga department: Co-Operative Governance And Traditional Affairs
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 123726000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1294000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 657000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 46408000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 21160000.0
+  programme_name: Development And Planning
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 194344000.0
+  programme_name: Local Governance
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 19705000.0
+  programme_name: The House Of Traditional Leaders
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 93966000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 21000000.0
+  programme_name: Traditional Institutional Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

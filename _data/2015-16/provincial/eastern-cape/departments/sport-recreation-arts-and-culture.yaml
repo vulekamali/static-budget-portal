@@ -19,6 +19,89 @@ contributed_datasets:
 description: 'Eastern Cape department: Sport, Recreation, Arts and Culture budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 186664000
+    - economic_classification_2_name: Goods and services
+      total_budget: 38998000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 5208000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1307000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1201000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 104674000
+    - economic_classification_2_name: Goods and services
+      total_budget: 30242000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 3000000
+    - economic_classification_2_name: Heritage assets
+      total_budget: 1150000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 728000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 20732000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 12091000
+    - economic_classification_2_name: Households
+      total_budget: 313000
+  programme_name: Cultural Affairs
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 72014000
+    - economic_classification_2_name: Goods and services
+      total_budget: 33054000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 58500000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 4080000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 55311000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 1500000
+  programme_name: Library And Archives Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 87522000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 56862000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3381000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 3000000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 14678000
+    - economic_classification_2_name: Households
+      total_budget: 710000
+  programme_name: Sports And Recreation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

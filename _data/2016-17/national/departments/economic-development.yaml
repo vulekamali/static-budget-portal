@@ -18,6 +18,53 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Economic Development budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 45804000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 31177000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2184000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 43000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 30137000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 5356000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 368000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 147000.0
+  programme_name: Growth Path and Social Dialogue
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 18054000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 12441000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 169000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 315657000.0
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 213124000.0
+  programme_name: Investment, Competition and Trade
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

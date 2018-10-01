@@ -19,6 +19,65 @@ contributed_datasets:
 description: 'Eastern Cape department: Economic Development, Environmental Affairs
   and Tourism budget data for the 2017-18 financial year from National Treasury in
   partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 127475000
+    - economic_classification_2_name: Goods and services
+      total_budget: 89576000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 15215000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2973000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 46532000
+    - economic_classification_2_name: Goods and services
+      total_budget: 22954000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 1708000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 740000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 431829000
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 24476000
+    - economic_classification_2_name: Higher education institutions
+      total_budget: 3100000
+  programme_name: Economic Development  and Tourism
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 78948000
+    - economic_classification_2_name: Goods and services
+      total_budget: 18581000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 677000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 190953000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 12038000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 1783000
+  programme_name: Environmental  Affairs
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

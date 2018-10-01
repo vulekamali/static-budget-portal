@@ -18,6 +18,67 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Infrastructure Development budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 243719000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 172019000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 500000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 13566000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 4000000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 4020000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 10000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 169311000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 92938000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 106420000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 100000
+  programme_name: Expanded Public Works Programme
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 481493000
+    - economic_classification_2_name: Goods and services
+      total_budget: 314032000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 300000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 118866000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 327084000
+    - economic_classification_2_name: Households
+      total_budget: 2319000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1000
+  programme_name: Public Works Infrastructure
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

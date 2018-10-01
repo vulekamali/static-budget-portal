@@ -18,6 +18,67 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Correctional Services budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 98020000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 3582310000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 16945000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 5184000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 1790517000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 561000.0
+  programme_name: Care
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 831385000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 12146731000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 102742000.0
+  programme_name: Incarceration
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 46183000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 1105754000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 56000.0
+  programme_name: Rehabilitation
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 2070000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 888957000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 169000.0
+  programme_name: Social Reintegration
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

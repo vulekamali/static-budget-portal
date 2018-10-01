@@ -30,6 +30,95 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Eastern Cape department: Transport budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 228428000
+    - economic_classification_2_name: Goods and services
+      total_budget: 70575000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 6335000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 3828000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 44942000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 5289000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 290000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 510000
+  programme_name: Community Based Programme
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 9422000
+    - economic_classification_2_name: Goods and services
+      total_budget: 5438000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 10000000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 219000
+  programme_name: Transport Infrastructure
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 514893000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 108971000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 10130000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 4200000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 481964000
+    - economic_classification_2_name: Households
+      total_budget: 3339000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1883000
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 179000
+  programme_name: Transport Operations
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 239923000
+    - economic_classification_2_name: Goods and services
+      total_budget: 57815000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 25508000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 7100000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2523000
+  programme_name: Transport Regulation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,99 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Water and Sanitation budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 861284000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 769105000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 36816000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 26487000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 17061000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2828000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 973000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 85000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 253070000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 139300000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 3489097000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 5272000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 5438056000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2266928000.0
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 694715000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 208239000.0
+    - economic_classification_2_name: Households
+      total_budget: 1488000.0
+  programme_name: Water Infrastructure Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 457917000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 327365000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 43551000.0
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 30968000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 1008000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 849000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 438000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 26000.0
+  programme_name: Water Planning and Information Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 245685000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 240113000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 11194000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 1000000.0
+    - economic_classification_2_name: Households
+      total_budget: 600000.0
+  programme_name: Water Sector Regulation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,105 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Transport budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 140406000
+    - economic_classification_2_name: Goods and services
+      total_budget: 122352000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 15205000
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: ''
+      total_budget: 4553000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 8866000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 4771000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 78000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 21759000
+    - economic_classification_2_name: Goods and services
+      total_budget: 16867000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 408000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 5000000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 5000
+  programme_name: Community Based Programme
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 2813458000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 897342000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 2985943000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 123786000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 9580000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 1300000
+  programme_name: Transport Infrastructure
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 305709000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 44991000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 293000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 1058000000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 15000
+  programme_name: Transport Operations
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 553258000
+    - economic_classification_2_name: Goods and services
+      total_budget: 168191000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 36143000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2428000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 750000
+  programme_name: Transport Regulation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

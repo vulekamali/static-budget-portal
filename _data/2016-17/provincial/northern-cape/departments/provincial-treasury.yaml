@@ -18,6 +18,79 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Northern Cape department: Provincial Treasury budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 51893000
+    - economic_classification_2_name: Goods and services
+      total_budget: 28633000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1191000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 129000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 210000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 56000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 22000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 34877000
+    - economic_classification_2_name: Goods and services
+      total_budget: 6615000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 16000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 589000
+  programme_name: Assets and Liabilities Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 19145000
+    - economic_classification_2_name: Goods and services
+      total_budget: 3667000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 276000
+  programme_name: Financial Governance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 27219000
+    - economic_classification_2_name: Goods and services
+      total_budget: 3034000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 199000
+  programme_name: Provincial Internal Audit
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 39550000
+    - economic_classification_2_name: Goods and services
+      total_budget: 4174000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 539000
+  programme_name: Sustainable Resource
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

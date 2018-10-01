@@ -19,6 +19,79 @@ contributed_datasets:
 description: 'Mpumalanga department: Economic Development and Tourism budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 59245000
+    - economic_classification_2_name: Goods and services
+      total_budget: 26573000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3371000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 450000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 16576000
+    - economic_classification_2_name: Goods and services
+      total_budget: 2176000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 86186000
+  programme_name: Business Regulation and Governance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 13528000
+    - economic_classification_2_name: Goods and services
+      total_budget: 5230000
+  programme_name: Economic Planning
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 38135000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 26687000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 462980000
+  programme_name: Integrated Economic Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 18120000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 3202000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 338050000
+  programme_name: Tourism
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 16057000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 11232000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 2279000
+  programme_name: Trade and Sector Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,115 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Education budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 766638000
+    - economic_classification_2_name: Goods and services
+      total_budget: 146185000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 2000000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 10336000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 3800000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2735000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 24000
+  programme_name: ADMINISTRATION
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 127756000
+    - economic_classification_2_name: Goods and services
+      total_budget: 2883000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 20942000
+    - economic_classification_2_name: Households
+      total_budget: 5000
+  programme_name: EARLY CHILDHOOD DEVELOPMENT
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 395724000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 186809000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2414000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 400000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 57934000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 28058000
+    - economic_classification_2_name: Households
+      total_budget: 16829000
+  programme_name: EXAMINATION AND EDUCATION RELATED SERVICES
+- items:
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 70074000
+  programme_name: INDEPENDENT SCHOOL SUBSIDIES
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 20000000
+    - economic_classification_2_name: Goods and services
+      total_budget: 20000000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 672886000
+  programme_name: INFRASTRUCTURE DEVELOPMENT
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 7932062000
+    - economic_classification_2_name: Goods and services
+      total_budget: 240591000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 586000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 887455000
+    - economic_classification_2_name: Households
+      total_budget: 17743000
+  programme_name: PUBLIC ORDINARY SCHOOL EDUCATION
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 360090000
+    - economic_classification_2_name: Goods and services
+      total_budget: 1518000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 64982000
+    - economic_classification_2_name: Households
+      total_budget: 288000
+  programme_name: PUBLIC SPECIAL SCHOOL EDUCATION
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

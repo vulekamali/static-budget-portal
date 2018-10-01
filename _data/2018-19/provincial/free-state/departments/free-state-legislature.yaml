@@ -18,6 +18,39 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Free State Legislature budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 120820000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2196000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 515000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 25998000.0
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 63006000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 3609000.0
+  programme_name: Facilities For Members And Political Parties
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 36841000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 133000.0
+  programme_name: Parliamentary Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

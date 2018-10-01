@@ -18,6 +18,81 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Sport, Arts and Culture budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 76527000
+    - economic_classification_2_name: Goods and services
+      total_budget: 70225000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 500000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 1331000
+    - economic_classification_2_name: Households
+      total_budget: 125000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 29469000
+    - economic_classification_2_name: Goods and services
+      total_budget: 26170000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 9900000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 1300000
+  programme_name: Cultural Affairs
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 56866000
+    - economic_classification_2_name: Goods and services
+      total_budget: 55941000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 33349000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 10700000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 400000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 300000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 100000
+  programme_name: Library and Archives
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 54080000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 24557000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 100000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 8264000
+    - economic_classification_2_name: Households
+      total_budget: 85000
+  programme_name: Sport and Recreation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

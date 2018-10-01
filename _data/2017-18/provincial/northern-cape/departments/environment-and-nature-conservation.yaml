@@ -19,6 +19,85 @@ contributed_datasets:
 description: 'Northern Cape department: Environment and Nature Conservation budget
   data for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 42624000
+    - economic_classification_2_name: Goods and services
+      total_budget: 20714000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1469000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 212000
+  programme_name: ADMINISTRATION
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 27455000
+    - economic_classification_2_name: Goods and services
+      total_budget: 6600000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 174000
+  programme_name: BIODIVERSITY MANAGEMENT
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 9362000
+    - economic_classification_2_name: Goods and services
+      total_budget: 1648000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 100000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 66000
+  programme_name: COMPLIANCE AND ENFORCEMENT
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 12242000
+    - economic_classification_2_name: Goods and services
+      total_budget: 1105000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 196000
+  programme_name: ENVIRONMENTAL EMPOWERMENT SERVICES
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 10104000
+    - economic_classification_2_name: Goods and services
+      total_budget: 546000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 123000
+  programme_name: ENVIRONMENTAL POLICY,PLANNING AND COORDINATION
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 10189000
+    - economic_classification_2_name: Goods and services
+      total_budget: 3671000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 391000
+  programme_name: ENVIRONMENTAL QUALITY MANAGEMENT
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

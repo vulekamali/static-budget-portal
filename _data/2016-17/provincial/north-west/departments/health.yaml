@@ -18,6 +18,151 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'North West department: Health budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 190247000
+    - economic_classification_2_name: Goods and services
+      total_budget: 117432000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 200000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 8782000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 13069000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 955471000
+    - economic_classification_2_name: Goods and services
+      total_budget: 330579000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 36000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 30905000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 3332000
+  programme_name: Central Hospital Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 3579815000
+    - economic_classification_2_name: Goods and services
+      total_budget: 1317624000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 599000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 34081000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 8307000
+  programme_name: District Health Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 215904000
+    - economic_classification_2_name: Goods and services
+      total_budget: 66404000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 44000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 22691000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 926000
+  programme_name: Emergency Medical Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 163996000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 51318000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 9000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 17201000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 1500000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 130000
+  programme_name: Health Care Support Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 40581000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 28000000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 466231000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 10300000
+  programme_name: Health Facilities and Maintenance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 141024000
+    - economic_classification_2_name: Goods and services
+      total_budget: 90472000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 29000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3061000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 142216000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 16762000
+  programme_name: Health Science and Training
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 1036925000
+    - economic_classification_2_name: Goods and services
+      total_budget: 330366000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 284000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 16582000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 7095000
+  programme_name: Provincial Hospital Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

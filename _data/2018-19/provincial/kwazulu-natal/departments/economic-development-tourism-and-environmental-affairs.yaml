@@ -19,6 +19,75 @@ contributed_datasets:
 description: 'KwaZulu-Natal department: Economic Development, Tourism And Environmental
   Affairs budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 266715000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3813000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 582000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 80189000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 39686000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 270000.0
+  programme_name: Business Regulation And Governance
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 26594000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 13300000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 130000.0
+  programme_name: Economic Planning
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 745791000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 261339000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2547000.0
+  programme_name: Environmental Affairs
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 209851000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 209206000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 253000.0
+  programme_name: Integrated Economic Development Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 202889000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 44897000.0
+  programme_name: Tourism
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 847508000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 53736000.0
+  programme_name: Trade And Sector Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

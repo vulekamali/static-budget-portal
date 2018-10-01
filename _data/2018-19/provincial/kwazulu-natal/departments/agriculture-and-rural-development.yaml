@@ -19,6 +19,39 @@ contributed_datasets:
 description: 'KwaZulu-Natal department: Agriculture And Rural Development budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 476750000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 47342000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 8713000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 1432677000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 197662000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 129525000.0
+  programme_name: Agriculture
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 28898000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 2324000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 217000.0
+  programme_name: Rural Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

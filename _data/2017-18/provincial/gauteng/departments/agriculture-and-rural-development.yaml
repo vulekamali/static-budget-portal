@@ -18,6 +18,65 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Agriculture and Rural Development budget data for
   the 2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 116783000
+    - economic_classification_2_name: Goods and services
+      total_budget: 67341000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3670000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1002000
+    - economic_classification_2_name: Households
+      total_budget: 220000
+  programme_name: ADMINISTRATION
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 302637000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 169105000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 6470000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 600000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Higher education institutions
+      total_budget: 5001000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 3790000
+    - economic_classification_2_name: Households
+      total_budget: 245000
+  programme_name: AGRICULTURE AND RURAL DEVELOPMENT
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 150398000
+    - economic_classification_2_name: Goods and services
+      total_budget: 85805000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 3309000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 30000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 194000
+  programme_name: ENVIRONMENTAL AFFAIRS
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

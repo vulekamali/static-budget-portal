@@ -18,6 +18,73 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Education budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 3260452000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 33608000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 5834000.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 606034000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 202971000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 850000.0
+  programme_name: Early Childhood Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 926671000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 482147000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 94661000.0
+  programme_name: Examination And Education Related Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 731752000.0
+  programme_name: Independent School Subsidies
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1409241000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 286896000.0
+  programme_name: Infrastructure Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 31951287000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 2519223706.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 21335300.0
+  programme_name: Public Ordinary School Education
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 2193630000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 493247000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 700000.0
+  programme_name: Public Special School Education
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

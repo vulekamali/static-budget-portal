@@ -31,6 +31,73 @@ contributed_datasets:
 description: 'Northern Cape department: Transport, Safety and Liaison budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 51554000
+    - economic_classification_2_name: Goods and services
+      total_budget: 24691000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1586000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 200000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 23602000
+    - economic_classification_2_name: Goods and services
+      total_budget: 3586000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 650000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 303000
+  programme_name: Civilian Oversight
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 130460000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 12669000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 165000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 51121000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 2379000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 7000
+  programme_name: Transport Operations
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 71072000
+    - economic_classification_2_name: Goods and services
+      total_budget: 13836000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1007000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 11000
+  programme_name: Transport Regulations
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

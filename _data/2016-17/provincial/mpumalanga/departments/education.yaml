@@ -18,6 +18,103 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Mpumalanga department: Education budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 972520000
+    - economic_classification_2_name: Goods and services
+      total_budget: 345887000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 14127000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 8462000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 422000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 260284000
+    - economic_classification_2_name: Goods and services
+      total_budget: 41252000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 16136000
+  programme_name: Early Childhood Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 121377000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 116793000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 228815000
+    - economic_classification_2_name: Households
+      total_budget: 188009000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 36646000
+  programme_name: Examination and Education Related Services
+- items:
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 20092000
+  programme_name: Independent Schools Subsidies
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 37168000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 36000000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 957609000
+  programme_name: Infrastructure Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 12415583000
+    - economic_classification_2_name: Goods and services
+      total_budget: 1107546000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1599000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 668297000
+    - economic_classification_2_name: Households
+      total_budget: 74521000
+  programme_name: Public Ordinary Schools Education
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 202758000
+    - economic_classification_2_name: Goods and services
+      total_budget: 8364000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 36013000
+    - economic_classification_2_name: Households
+      total_budget: 503000
+  programme_name: Public Special Schools Education
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

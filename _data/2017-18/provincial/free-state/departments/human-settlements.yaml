@@ -30,6 +30,63 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Human Settlements budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 89372000
+    - economic_classification_2_name: Goods and services
+      total_budget: 33929000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1000000
+  programme_name: ADMINISTRATION
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 1066000
+    - economic_classification_2_name: Goods and services
+      total_budget: 255000
+  programme_name: HOUSING ASSETS MANAGEMENT PROPERTY  MAN
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 62542000
+    - economic_classification_2_name: Goods and services
+      total_budget: 22684000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 3596000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 885000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1205180000
+  programme_name: HOUSING DEVELOPMENT
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 16521000
+    - economic_classification_2_name: Goods and services
+      total_budget: 2579000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 650000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1435000
+    - economic_classification_2_name: Higher education institutions
+      total_budget: 1200000
+  programme_name: HOUSING NEEDS, RESEARCH & PLANNING
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,49 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'North West department: Public Works And Roads budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 226082000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3490000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1831000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 75961000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 53000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 24000.0
+  programme_name: Community Based Programme
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 583740000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 302348000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 120740000.0
+  programme_name: Public Works Infrastructure
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 1386618000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 314261000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 5813000.0
+  programme_name: Transport Infrastructure
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

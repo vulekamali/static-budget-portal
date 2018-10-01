@@ -19,6 +19,35 @@ contributed_datasets:
 description: 'National department: Independent Police Investigative Directorate budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 73879000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 366000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 4618000.0
+  programme_name: Compliance Monitoring and Stakeholder Management
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 150817000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 5000.0
+  programme_name: Investigation and Information Management
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 5096000.0
+  programme_name: Legal Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

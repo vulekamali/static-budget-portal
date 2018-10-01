@@ -30,6 +30,81 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Northern Cape department: Roads and Public Works budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 93923000
+    - economic_classification_2_name: Goods and services
+      total_budget: 45567000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2462000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 905000
+    - economic_classification_2_name: Households
+      total_budget: 603000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 47554000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 12498000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 24643000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 125000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 1000000
+    - economic_classification_2_name: Higher education institutions
+      total_budget: 500000
+  programme_name: Community Based Programme
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 51128000
+    - economic_classification_2_name: Goods and services
+      total_budget: 35043000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 517000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 57027000
+  programme_name: Public Works Infrastructure
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 950903000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 143591000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 212719000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 685000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 60000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2315000
+  programme_name: Transport Infrastructure
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

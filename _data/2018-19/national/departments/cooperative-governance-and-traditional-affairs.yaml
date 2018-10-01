@@ -19,6 +19,97 @@ contributed_datasets:
 description: 'National department: Cooperative Governance and Traditional Affairs
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 141475000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 111717000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 5258000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 106000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 2824752000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 44352000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 1000799000.0
+  programme_name: Community Work Programme
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 147792000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 38121000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 62731845000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 186406000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 5426000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 1946000.0
+  programme_name: Institutional Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 62947000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 23085000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 15287685000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 342456000.0
+  programme_name: Local Government Support and Intervention Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 70575000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 24983000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2499000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 494188000.0
+  programme_name: National Disaster Management Centre
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 27597000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 14957000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 53568000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 7353000.0
+  programme_name: Regional and Urban Development and Legislative Support
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

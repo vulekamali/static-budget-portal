@@ -18,6 +18,131 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Transport budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 198916000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 182162000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2463000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 10117000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1105000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 172751000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 39369000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 401000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 28777000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 9384000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 2541000.0
+  programme_name: Civil Aviation
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 44261000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 34512000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 181000.0
+  programme_name: Integrated Transport Planning
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 66399000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 24680000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 313000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 28561000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 1780000.0
+  programme_name: Maritime Transport
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 238256000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 50210000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 224000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 10992983000.0
+    - economic_classification_2_name: Households
+      total_budget: 353442000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 20275000.0
+  programme_name: Public Transport
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 23320000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 15859000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 100000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 18890267000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 55987000.0
+  programme_name: Rail Transport
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 56383000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 44976000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 650000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 14119541000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 10304017000.0
+  programme_name: Road Transport
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,65 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Economic Development budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 116587000
+    - economic_classification_2_name: Goods and services
+      total_budget: 95023000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 10500000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 5000000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 31070000
+    - economic_classification_2_name: Goods and services
+      total_budget: 19510000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 26669000
+  programme_name: Business Regulation And Governance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 148716000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 55901000
+  programme_name: Economic Planning
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 21653000
+    - economic_classification_2_name: Goods and services
+      total_budget: 274000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 176418000
+  programme_name: Integrated Economic Development Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 5415000
+    - economic_classification_2_name: Goods and services
+      total_budget: 100000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 618803000
+  programme_name: Trade And Sector Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

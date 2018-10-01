@@ -18,6 +18,97 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Trade and Industry budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 15469000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 671848000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 2423000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 150000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 213735000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 80611000.0
+  programme_name: Consumer and Corporate Regulation
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 1317827000.0
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 11980000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 4293200000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 172632000.0
+  programme_name: Incentive Development and Administration
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 176133000.0
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 771000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 1670822000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 125808000.0
+  programme_name: Industrial Development
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 1158000.0
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 759000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 119122000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 43715000.0
+  programme_name: International Trade and Economic Development
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 819000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 196786000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 65619000.0
+  programme_name: Special Economic Zones and Economic Transformation
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 4214000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 240035000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 168079000.0
+  programme_name: Trade and Investment South Africa
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,71 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Basic Education budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 18190000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 339322000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 185000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 347185000.0
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 768000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 1529694000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 118000.0
+  programme_name: Curriculum Policy, Support and Monitoring
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 271000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 5924800000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 49385000.0
+  programme_name: Educational Enrichment Services
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 9517555000.0
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 2025676000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 413802000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 172705000.0
+  programme_name: Planning, Information and Assessment
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 503000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 1071308000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 99673000.0
+  programme_name: Teachers, Education Human Resources and Institutional Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

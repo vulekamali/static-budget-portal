@@ -18,6 +18,61 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Public Works and Infrastructure budget data for
   the 2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 71671000
+    - economic_classification_2_name: Goods and services
+      total_budget: 36562000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2656000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1207000
+    - economic_classification_2_name: Households
+      total_budget: 883000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 34684000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 14344000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 122119000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 142000
+  programme_name: Expanded Public Works Programme
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 476092000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 316787000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 68672000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 977000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 342409000
+    - economic_classification_2_name: Households
+      total_budget: 2728000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2000
+  programme_name: Public Works Infrastructure
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

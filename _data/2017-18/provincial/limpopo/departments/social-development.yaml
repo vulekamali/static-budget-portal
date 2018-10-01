@@ -21,6 +21,91 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Social Development budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 169223000
+    - economic_classification_2_name: Goods and services
+      total_budget: 71629000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 35638000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 6444000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1823000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1500000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 350000
+  programme_name: ADMINISTRATION
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 344448000
+    - economic_classification_2_name: Goods and services
+      total_budget: 27433000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 100000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 411776000
+  programme_name: CHILDREN AND FAMILIES
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 108648000
+    - economic_classification_2_name: Goods and services
+      total_budget: 17974000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 28359000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 4200000
+  programme_name: DEVELOPMENT AND RESEARCH
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 91795000
+    - economic_classification_2_name: Goods and services
+      total_budget: 46801000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1700000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 24340000
+  programme_name: RESTORATIVE SERVICES
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 277199000
+    - economic_classification_2_name: Goods and services
+      total_budget: 76304000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 6966000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 66386000
+  programme_name: SOCIAL WELFARE SERVICES
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

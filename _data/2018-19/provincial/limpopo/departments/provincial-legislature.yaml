@@ -18,6 +18,39 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Provincial Legislature budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 110020477.4
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 21597180.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 78000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 53493167.699999996
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 72397000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 14728864.799999999
+  programme_name: Facilities For Members And Political Parties
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 88060381.5
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 552000.0
+  programme_name: Parliamentary Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

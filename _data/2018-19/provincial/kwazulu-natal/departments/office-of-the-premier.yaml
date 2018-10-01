@@ -18,6 +18,39 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Office Of The Premier budget data for the
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 99880000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1264000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1182000.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 338108000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 63712000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 8557000.0
+  programme_name: Institutional Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 210429000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 52029000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 11976000.0
+  programme_name: Policy And Governance
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

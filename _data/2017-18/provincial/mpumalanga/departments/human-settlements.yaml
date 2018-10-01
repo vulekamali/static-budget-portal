@@ -30,6 +30,57 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Mpumalanga department: Human Settlements budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 93694000
+    - economic_classification_2_name: Goods and services
+      total_budget: 45911000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 4597000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 52000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 3691000
+  programme_name: Housing Asset Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 55238000
+    - economic_classification_2_name: Goods and services
+      total_budget: 4570000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 2500000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1395814000
+  programme_name: Housing Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 35961000
+    - economic_classification_2_name: Goods and services
+      total_budget: 3994000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 60000
+  programme_name: Housing Needs, Research and Planning
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

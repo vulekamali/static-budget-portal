@@ -19,6 +19,89 @@ contributed_datasets:
 description: 'Mpumalanga department: Public Works, Roads and Transport budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 159621000
+    - economic_classification_2_name: Goods and services
+      total_budget: 71627000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2466000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1922000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 34681000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 29955000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1533000
+  programme_name: Community Based Programmes
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 316477000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 267535000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1736000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 123636000
+    - economic_classification_2_name: Households
+      total_budget: 816000
+  programme_name: Public Works Infrastructure
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 559919000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 344353000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 1353096000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 18333000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 9590000
+  programme_name: Transport Infrastructure
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 406199000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 53717000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 61234000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 14001000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 525598000
+  programme_name: Transport Operations
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

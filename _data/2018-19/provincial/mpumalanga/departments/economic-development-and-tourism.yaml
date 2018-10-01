@@ -19,6 +19,59 @@ contributed_datasets:
 description: 'Mpumalanga department: Economic Development And Tourism budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 95310000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3620000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 476000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 96310000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 18900000.0
+  programme_name: Business Regulation And Governance
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 20016000.0
+  programme_name: Economic Planning
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 320488000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 173957000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 64541000.0
+  programme_name: Integrated Economic Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 366433000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 12962000.0
+  programme_name: Tourism
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 21543000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 3502000.0
+  programme_name: Trade And Sector Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

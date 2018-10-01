@@ -18,6 +18,129 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Social Development budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 339083000
+    - economic_classification_2_name: Goods and services
+      total_budget: 143987000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 22115000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 2098000
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: ''
+      total_budget: 1271000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 3941000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 1747000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1321000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 435500000
+    - economic_classification_2_name: Goods and services
+      total_budget: 78549000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 37405000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3617000
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: ''
+      total_budget: 2718000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 415275000
+    - economic_classification_2_name: Households
+      total_budget: 553000
+  programme_name: Children and Families
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 112881000
+    - economic_classification_2_name: Goods and services
+      total_budget: 33727000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 5000000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3398000
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: ''
+      total_budget: 758000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 65994000
+    - economic_classification_2_name: Households
+      total_budget: 568000
+  programme_name: Development and Research
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 156654000
+    - economic_classification_2_name: Goods and services
+      total_budget: 47771000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 15951000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2385000
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: ''
+      total_budget: 792000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 68852000
+    - economic_classification_2_name: Households
+      total_budget: 135000
+  programme_name: Restorative Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 238844000
+    - economic_classification_2_name: Goods and services
+      total_budget: 81485000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 77525000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 4910000
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: ''
+      total_budget: 1441000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 206647000
+    - economic_classification_2_name: Households
+      total_budget: 15583000
+  programme_name: Social Welfare Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

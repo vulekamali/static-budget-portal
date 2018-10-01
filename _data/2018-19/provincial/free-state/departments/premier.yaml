@@ -18,6 +18,49 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Premier budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 66032000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 783000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 31000.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 264862000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 94142000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1917000.0
+  programme_name: Institutional Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 118194000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 150000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 146000.0
+  programme_name: Monitoring And Evaluation
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 64384000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 439000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 199000.0
+  programme_name: Policy & Governance
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

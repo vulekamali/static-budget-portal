@@ -18,6 +18,79 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Human Settlements budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 222442000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 216458000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3059000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 269000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 46000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 18050000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 6811000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 222000.0
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: Payments for financial assets
+      total_budget: 100000000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 29123459000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 692395000.0
+  programme_name: Housing Development Finance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 120919000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 93259000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1049000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 9355000.0
+  programme_name: Human Settlements Delivery Support
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 55724000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 25261000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 867000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 1211000.0
+  programme_name: Human Settlements Policy, Strategy and Planning
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

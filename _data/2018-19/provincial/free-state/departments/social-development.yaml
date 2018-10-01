@@ -18,6 +18,59 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Social Development budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 255545000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 10862000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 2311000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 303889000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 156925000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 847000.0
+  programme_name: Children And Families
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 118014000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 43005000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 135000.0
+  programme_name: Development And Research
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 132649000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 23381000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 868000.0
+  programme_name: Restorative Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 128448000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 88901000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 277000.0
+  programme_name: Social Welfare Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

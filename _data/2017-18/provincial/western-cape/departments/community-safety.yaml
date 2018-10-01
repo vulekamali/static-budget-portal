@@ -18,6 +18,81 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Community Safety budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 39714000
+    - economic_classification_2_name: Goods and services
+      total_budget: 7861000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 950000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 37665000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 16000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 45727000
+    - economic_classification_2_name: Goods and services
+      total_budget: 15047000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2076000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 4500000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 2335000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 396000
+  programme_name: Civilian Oversight
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 19576000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 8269000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 553000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 10486000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 3670000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 3500000
+  programme_name: Provincial Policing Functions
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 51205000
+    - economic_classification_2_name: Goods and services
+      total_budget: 46002000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2506000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2000
+  programme_name: Security Risk Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

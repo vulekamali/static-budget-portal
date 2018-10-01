@@ -19,6 +19,71 @@ contributed_datasets:
 description: 'National department: Office of the Chief Justice and Judicial Administration
   budget data for the 2016-17 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 97070000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 62049000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2048000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 4000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 864991000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 55066000.0
+  programme_name: Direct charge against the National Revenue Fund
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 21583000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 15521000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 738000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 3000.0
+  programme_name: Judicial Education and Research
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 434270000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 206520000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 22603000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2475000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 95000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 9000.0
+  programme_name: Judicial Support and Court Administration
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

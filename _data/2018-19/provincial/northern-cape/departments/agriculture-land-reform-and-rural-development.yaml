@@ -19,6 +19,67 @@ contributed_datasets:
 description: 'Northern Cape department: Agriculture, Land Reform And Rural Development
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 116796320.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2252966.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1712000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 11980224.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 160816.0
+  programme_name: Agricultural Economics Services
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 270883518.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 89717594.0
+  programme_name: Farmer Support And Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 50690501.1
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 2549900.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1071324.1
+  programme_name: Research And Technology Development Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 15000504.0
+  programme_name: Rural Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 33741620.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 86756.0
+  programme_name: Sustainable Resource Management
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 51875078.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 389112.0
+  programme_name: Veterinary Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

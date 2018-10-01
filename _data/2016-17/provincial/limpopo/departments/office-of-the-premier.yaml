@@ -18,6 +18,57 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Office of the Premier budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 106060000
+    - economic_classification_2_name: Goods and services
+      total_budget: 37457000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2168000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 50000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 39000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 19000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 96404000
+    - economic_classification_2_name: Goods and services
+      total_budget: 37002000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2040000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 3287000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 785000
+  programme_name: Institutional Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 69060000
+    - economic_classification_2_name: Goods and services
+      total_budget: 21713000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 200000
+  programme_name: Policy and Governance
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

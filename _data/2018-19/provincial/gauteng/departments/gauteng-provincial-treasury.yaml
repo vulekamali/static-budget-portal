@@ -18,6 +18,53 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Gauteng Provincial Treasury budget data for the
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 136346000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 12036000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1015000.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 166413000.0
+  programme_name: Financial Governance
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 117992000.0
+  programme_name: Gauteng Audit Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 78576000.0
+  programme_name: Municipal Financial Governance
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 118034000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 10000000.0
+  programme_name: Provincial Supply Chain Management
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 97457000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 58544000.0
+  programme_name: Sustainable Fiscal  Resource Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

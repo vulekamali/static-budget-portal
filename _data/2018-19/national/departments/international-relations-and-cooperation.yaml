@@ -19,6 +19,79 @@ contributed_datasets:
 description: 'National department: International Relations and Cooperation budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 789657000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 495553000.0
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 87272000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 267968000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 23560000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1561000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 341835000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 225097000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 115000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1212000.0
+  programme_name: International Cooperation
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 1943564000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 1391356000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 19043000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 5473000.0
+  programme_name: International Relations
+- items:
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 609131000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 48224000.0
+  programme_name: International Transfers
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 183537000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 117057000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1553000.0
+  programme_name: Public Diplomacy and Protocol Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

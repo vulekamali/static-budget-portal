@@ -30,6 +30,83 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Police, Roads and Transport budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 196906000
+    - economic_classification_2_name: Goods and services
+      total_budget: 82366000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 19094000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 3000000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 886000
+  programme_name: ADMINISTRATION
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 16645000
+    - economic_classification_2_name: Goods and services
+      total_budget: 8162000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 276000
+  programme_name: PROVINCIAL SECRETARIAT FOR POLICE SERVICES
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 1064061000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 182934000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 467666000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1529000
+    - economic_classification_2_name: Land and sub-soil assets
+      total_budget: 600000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2767000
+  programme_name: TRANSPORT INFRASTRUCTURE
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 49380000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 19365000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 255669000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 5000000
+  programme_name: TRANSPORT OPERATIONS
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 277084000
+    - economic_classification_2_name: Goods and services
+      total_budget: 65795000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 887000
+  programme_name: TRANSPORT REGULATIONS
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

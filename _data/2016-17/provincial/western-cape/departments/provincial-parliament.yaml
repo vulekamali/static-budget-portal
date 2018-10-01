@@ -18,6 +18,51 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Provincial Parliament budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 39900000
+    - economic_classification_2_name: Goods and services
+      total_budget: 21378000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2302000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 46000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 30000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 5742000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 36942000
+    - economic_classification_2_name: Households
+      total_budget: 1389000
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 165000
+  programme_name: Facilities for Members and Political Parties
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 17402000
+    - economic_classification_2_name: Goods and services
+      total_budget: 5493000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 32000
+  programme_name: Parliamentary Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,35 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Home Affairs budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 10893000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 1585250000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 2059000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 2484689000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 1647012000.0
+  programme_name: Citizen Affairs
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 720570000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 349000.0
+  programme_name: Immigration Affairs
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

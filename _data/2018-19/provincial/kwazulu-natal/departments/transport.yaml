@@ -18,6 +18,55 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Transport budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 333768000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 19344000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 10180000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 36623000.0
+  programme_name: Community Based Programme
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 3866255000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3582046000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 11921000.0
+  programme_name: Transport Infrastructure
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1106214000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 175540000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 92000.0
+  programme_name: Transport Operations
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 881129000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 35000000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 3935000.0
+  programme_name: Transport Regulation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

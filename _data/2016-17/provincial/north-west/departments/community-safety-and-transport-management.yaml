@@ -19,6 +19,77 @@ contributed_datasets:
 description: 'North West department: Community Safety and Transport Management budget
   data for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 100924000
+    - economic_classification_2_name: Goods and services
+      total_budget: 95663000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 8679000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 676000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 33873000
+    - economic_classification_2_name: Goods and services
+      total_budget: 10747000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 928000
+    - economic_classification_2_name: Households
+      total_budget: 313000
+  programme_name: Civillian Oversight
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 314992000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 66587000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1944000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 633107000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 185000
+    - economic_classification_2_name: Households
+      total_budget: 171000
+  programme_name: Transport Operations
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 302576000
+    - economic_classification_2_name: Goods and services
+      total_budget: 244992000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 24554000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 7500000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2767000
+    - economic_classification_2_name: Households
+      total_budget: 494000
+  programme_name: Transport Regulations
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

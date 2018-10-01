@@ -19,6 +19,77 @@ contributed_datasets:
 description: 'Limpopo department: Economic Development, Environment and Tourism budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 165373000
+    - economic_classification_2_name: Goods and services
+      total_budget: 122449000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 5108000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 7067000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 2810000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1473000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 90506000
+    - economic_classification_2_name: Goods and services
+      total_budget: 37280000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 2749000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 309888000
+    - economic_classification_2_name: Households
+      total_budget: 257000
+  programme_name: Economic Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 209134000
+    - economic_classification_2_name: Goods and services
+      total_budget: 28802000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 416000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 491000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1872000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 1102000
+  programme_name: Environmental Affairs
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 12852000
+    - economic_classification_2_name: Goods and services
+      total_budget: 4989000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 156195000
+  programme_name: Tourism
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

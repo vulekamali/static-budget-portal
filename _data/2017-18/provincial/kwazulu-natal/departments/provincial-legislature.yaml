@@ -18,6 +18,45 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Provincial Legislature budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 96610000
+    - economic_classification_2_name: Goods and services
+      total_budget: 76797000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 5129000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 1645000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 940000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 228000
+    - economic_classification_2_name: Households
+      total_budget: 100000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 40000
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 28000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 96312000
+    - economic_classification_2_name: Goods and services
+      total_budget: 67133000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 102282000
+  programme_name: Parliamentary Business
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

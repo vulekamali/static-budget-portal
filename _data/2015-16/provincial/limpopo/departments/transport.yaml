@@ -18,6 +18,71 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Transport budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 319531000
+    - economic_classification_2_name: Goods and services
+      total_budget: 154876000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 13437000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 4805000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2000000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 1054000
+  programme_name: Administration
+- items: []
+  programme_name: Community Based Programmes
+- items: []
+  programme_name: Transport Infrastructure
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 36729000
+    - economic_classification_2_name: Goods and services
+      total_budget: 24564000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 49000000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 670502000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 42300000
+    - economic_classification_2_name: Households
+      total_budget: 209000
+  programme_name: Transport Operations
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 392501000
+    - economic_classification_2_name: Goods and services
+      total_budget: 38561000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 40304000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 17000000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 30000000
+    - economic_classification_2_name: Households
+      total_budget: 1525000
+  programme_name: Transport Regulations
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

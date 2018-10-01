@@ -19,6 +19,105 @@ contributed_datasets:
 description: 'Northern Cape department: Agriculture, Land Reform and Rural Development
   budget data for the 2017-18 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 75210000
+    - economic_classification_2_name: Goods and services
+      total_budget: 37830000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 827000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2000000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 9098000
+    - economic_classification_2_name: Goods and services
+      total_budget: 2198000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 138000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 14000
+  programme_name: Agricultural Economics Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 96114000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 49055000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 134488000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 11261000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 48000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 40400000
+  programme_name: Farmer Support and Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 36362000
+    - economic_classification_2_name: Goods and services
+      total_budget: 12581000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 256000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2550000
+  programme_name: Research and Technology Development Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 10165000
+    - economic_classification_2_name: Goods and services
+      total_budget: 3890000
+  programme_name: Rural Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 20205000
+    - economic_classification_2_name: Goods and services
+      total_budget: 14882000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 82000
+  programme_name: Sustainable Resource Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 39781000
+    - economic_classification_2_name: Goods and services
+      total_budget: 9505000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 364000
+  programme_name: Veterinary Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

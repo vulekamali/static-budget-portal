@@ -21,6 +21,97 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Social Development budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 193366000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 152907000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2060000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 526000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1486000.0
+    - economic_classification_2_name: Households
+      total_budget: 443000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 151580232000.0
+  programme_name: Social Assistance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 78150000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 50038000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 768000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 200913000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 30795000.0
+    - economic_classification_2_name: Households
+      total_budget: 26216000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 1976000.0
+  programme_name: Social Policy and Integrated Service Delivery
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 65951000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 55745000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2906000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 7206060000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 1730000.0
+    - economic_classification_2_name: Households
+      total_budget: 245000.0
+  programme_name: Social Security Policy and Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 139344000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 127869000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 4886000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 556392000.0
+    - economic_classification_2_name: Households
+      total_budget: 124186000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 101819000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 759000.0
+  programme_name: Welfare Services Policy Development and Implementation Support
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

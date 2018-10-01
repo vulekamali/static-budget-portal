@@ -18,6 +18,89 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Agriculture budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 118094000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 3964000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2434000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 21169000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 6215000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 539000.0
+  programme_name: Agricultural Economics Services
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 188970000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 84333000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 5205000.0
+  programme_name: Farmer Support And Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 122929000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3317000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 38000.0
+  programme_name: Research And Technology Development Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 15780000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 8055000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 295000.0
+  programme_name: Rural Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 57682000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 6933000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 403000.0
+  programme_name: Structured Agricultural Education And Training
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 48257000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 40038000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2839000.0
+  programme_name: Sustainable Resource Management
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 93003000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3168000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 682000.0
+  programme_name: Veterinary Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,75 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Higher Education and Training budget data for the
   2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 6658000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 311347000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 313000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 14690000000.0
+  programme_name: Direct charge against the National Revenue Fund
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 628000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 51059000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 3156000.0
+  programme_name: Human Resource Development, Planning and Monitoring Coordination
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 1168000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 87683000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 21848000.0
+  programme_name: Skills Development
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 3314798000.0
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 304000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 29480317000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 48906000.0
+  programme_name: University Education
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 3568000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 7302181000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 1210021000.0
+  programme_name: Vocational and Continuing Education and Training
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

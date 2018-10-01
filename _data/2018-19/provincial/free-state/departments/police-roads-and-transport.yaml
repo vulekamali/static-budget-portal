@@ -18,6 +18,53 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Police, Roads And Transport budget data for the
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 261268000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 17725000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1538000.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 24303000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 292000.0
+  programme_name: Provincial Secretariat For Police Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 1374907000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 327113000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 2160000.0
+  programme_name: Transport Infrastructure
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 268954000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 86270000.0
+  programme_name: Transport Operations
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 410141000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1938000.0
+  programme_name: Transport Regulations
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

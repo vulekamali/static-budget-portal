@@ -19,6 +19,91 @@ contributed_datasets:
 description: 'North West department: Rural, Environment And Agricultural Development
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 262250000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 3182000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3054000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 12189000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 54000.0
+  programme_name: Agricultural Economics Services
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 127619000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 123016000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 36710000.0
+  programme_name: Environmental Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 421779000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1432000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 416000.0
+  programme_name: Farmer Support And Development
+- items: []
+  programme_name: None
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 52389000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1451000.0
+  programme_name: Research And Technology  Development Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 63486000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 20000000.0
+  programme_name: Rural Development Coordination
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 103795000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1000000.0
+  programme_name: Structured Agricultural Education And  Training
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 45000000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 32632000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 500000.0
+  programme_name: Sustainable Resource Management
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 126790000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1734000.0
+  programme_name: Veterinary Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

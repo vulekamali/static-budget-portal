@@ -18,6 +18,97 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Correctional Services budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 2964573000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 761832000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 132085000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 9900000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 5916000.0
+    - economic_classification_2_name: Households
+      total_budget: 1888000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 1229974000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 738385000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 6384000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 373000.0
+  programme_name: Care
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 9584610000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 3199305000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 770829000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 31592000.0
+    - economic_classification_2_name: Biological assets
+      total_budget: 1400000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 113125000.0
+  programme_name: Incarceration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 844531000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 324212000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 47726000.0
+    - economic_classification_2_name: Biological assets
+      total_budget: 811000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 59000.0
+  programme_name: Rehabilitation
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 689317000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 116393000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1891000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 176000.0
+  programme_name: Social Reintegration
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,49 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Community Safety budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 51724000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 39882000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1360000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 67356000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 4398000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2338000.0
+  programme_name: Civilian Oversight
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 23417000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 21375000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 518000.0
+  programme_name: Provincial Policing Functions
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 101524000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2723000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 2000.0
+  programme_name: Security Risk Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

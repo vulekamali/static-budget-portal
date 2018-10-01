@@ -18,6 +18,37 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Eastern Cape department: Office Of The Premier budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 356392184.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 16004000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 9295774.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 171294000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 14999000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 895000.0
+  programme_name: Institutional Development And Organisational Support
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 259002164.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 145514000.0
+  programme_name: Planning, Policy Coordination, Monitoring And Evaluation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

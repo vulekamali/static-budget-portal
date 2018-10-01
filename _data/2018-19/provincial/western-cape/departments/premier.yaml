@@ -18,6 +18,59 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Premier budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 906079000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 50402000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 15506000.0
+  programme_name: Centre For E-Innovation (Corporate Services Centre)
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 128147000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 763000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 3000.0
+  programme_name: Corporate Assurance (Corporate Services Centre)
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 111886000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1550000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 6000.0
+  programme_name: Executive Support (Administration)
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 215819000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2127000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 17000.0
+  programme_name: People Management (Corporate Services Centre)
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 52484000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 904000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 500000.0
+  programme_name: Provincial Strategic Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

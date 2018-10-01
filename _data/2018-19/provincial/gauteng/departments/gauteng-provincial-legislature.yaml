@@ -18,6 +18,43 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Gauteng Provincial Legislature budget data for the
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 259093920.0
+  programme_name: Core Business
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 216501262.4
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 121571702.0
+  programme_name: Corporate Support Services
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 36914000.0
+  programme_name: Leadership And Governance
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 54726220.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1707000.0
+  programme_name: Office Of The Cfo
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 25309620.0
+  programme_name: Office Of The Secretary
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

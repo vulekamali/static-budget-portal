@@ -19,6 +19,67 @@ contributed_datasets:
 description: 'Limpopo department: Co-operative Governance, Human Settlements and Traditional
   Affairs budget data for the 2015-16 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 172251000
+    - economic_classification_2_name: Goods and services
+      total_budget: 108493000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 855000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2918000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1120000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 1061000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 217128000
+    - economic_classification_2_name: Goods and services
+      total_budget: 31281000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 315000
+  programme_name: Coorperative Governance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 85793000
+    - economic_classification_2_name: Goods and services
+      total_budget: 12777000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1285906000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 167000
+  programme_name: Human Settlements
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 333854000
+    - economic_classification_2_name: Goods and services
+      total_budget: 10986000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 4317000
+    - economic_classification_2_name: Households
+      total_budget: 105000
+  programme_name: Traditional Institutional Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

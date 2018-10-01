@@ -47,6 +47,97 @@ contributed_datasets:
 description: 'North West department: Culture, Arts and Traditional Affairs budget
   data for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 67346000
+    - economic_classification_2_name: Goods and services
+      total_budget: 33750000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 33000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1430000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1310000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 220000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 66401000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 60682000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 76000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Heritage assets
+      total_budget: 7500000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 3000000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2461000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 101167000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 22672000
+    - economic_classification_2_name: Households
+      total_budget: 910000
+  programme_name: Cultural Affairs
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 74128000
+    - economic_classification_2_name: Goods and services
+      total_budget: 42593000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 48100000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 8805000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 26550000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 1000000
+    - economic_classification_2_name: Households
+      total_budget: 595000
+  programme_name: Library and Archive Services
+- items: []
+  programme_name: Recreation
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 73846000
+    - economic_classification_2_name: Goods and services
+      total_budget: 22505000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 19358000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 636000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 24045000
+    - economic_classification_2_name: Households
+      total_budget: 321000
+  programme_name: Traditional Affairs
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

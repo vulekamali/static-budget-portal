@@ -19,6 +19,57 @@ contributed_datasets:
 description: 'Mpumalanga department: Public Works, Roads And Transport budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 248126000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 2248000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1431000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 73864000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 565000.0
+  programme_name: Community Based Programmes
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 602604000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 186252000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 86573000.0
+  programme_name: Public Works Infrastructure
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 1375455000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1110054000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 9118000.0
+  programme_name: Transport Infrastructure
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 634969000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 606455000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 49288000.0
+  programme_name: Transport Operations
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

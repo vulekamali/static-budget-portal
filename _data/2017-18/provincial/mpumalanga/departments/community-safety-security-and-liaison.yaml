@@ -19,6 +19,75 @@ contributed_datasets:
 description: 'Mpumalanga department: Community Safety, Security and Liaison budget
   data for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 75654000
+    - economic_classification_2_name: Goods and services
+      total_budget: 38749000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1474000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 200000
+    - economic_classification_2_name: Households
+      total_budget: 158000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 41364000
+    - economic_classification_2_name: Goods and services
+      total_budget: 15138000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 816000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 140000
+  programme_name: Civilian Oversight
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 455087000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 7407000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 100000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 40000
+  programme_name: Security  Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 373682000
+    - economic_classification_2_name: Goods and services
+      total_budget: 123169000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 10000000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 6636000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 3285000
+  programme_name: Transport Regulation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,31 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'North West department: Provincial Legislature budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 202409000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 92717000.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 107403000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 37514000.0
+  programme_name: Legislature Operations
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 33855000.0
+  programme_name: Statutory Payments
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

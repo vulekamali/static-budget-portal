@@ -18,6 +18,77 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Arts and Culture budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 69665000
+    - economic_classification_2_name: Goods and services
+      total_budget: 58971000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 680000
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: ''
+      total_budget: 3830000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 800000
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 250000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 220000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 130000
+  programme_name: 1. Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 69504000
+    - economic_classification_2_name: Goods and services
+      total_budget: 59949000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 13000000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1509000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 33104000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 12709000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 8176000
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 7400000
+  programme_name: 2. Cultural Affairs
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 77536000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 74872000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 69000000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3958000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 217880000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 3329000
+  programme_name: 3. Library and Archive Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

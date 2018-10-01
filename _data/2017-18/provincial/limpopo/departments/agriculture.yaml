@@ -18,6 +18,129 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Agriculture budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 246046000
+    - economic_classification_2_name: Goods and services
+      total_budget: 105480000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 9770000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 8800000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 250000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 17881000
+    - economic_classification_2_name: Goods and services
+      total_budget: 4380000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 42000000
+  programme_name: Agriculural Economics
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 711805000
+    - economic_classification_2_name: Goods and services
+      total_budget: 190937000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 24971000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 6700000
+    - economic_classification_2_name: Biological assets
+      total_budget: 2050000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 163831000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 255000
+  programme_name: Farmer Support & Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 46629000
+    - economic_classification_2_name: Goods and services
+      total_budget: 9576000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 700000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 400000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 20000
+  programme_name: Research & Technology Devel Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 4811000
+    - economic_classification_2_name: Goods and services
+      total_budget: 633000
+  programme_name: Rural development Co-ordination
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 70941000
+    - economic_classification_2_name: Goods and services
+      total_budget: 40327000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 11802000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1445000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 750000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 25000
+  programme_name: Structured Agric. Training
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 42590000
+    - economic_classification_2_name: Goods and services
+      total_budget: 31886000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1440000
+  programme_name: Sustainable Resource Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 38382000
+    - economic_classification_2_name: Goods and services
+      total_budget: 17437000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 402000
+  programme_name: Veterinary Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

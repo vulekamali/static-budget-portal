@@ -18,6 +18,87 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Energy budget data for the 2016-17 financial year
   from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 136792000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 96066000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 4095000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2199000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 985000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 73091000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 17266000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 320326000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 185625000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 20625000.0
+  programme_name: Clean Energy
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 45749000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 15154000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 3692758000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 1946246000.0
+  programme_name: Electrification and Energy Programme and Project Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 34769000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 11979000.0
+  programme_name: Energy Policy and Planning
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 210797000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 19429000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 599338000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 17375000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 16636000.0
+  programme_name: Nuclear Energy
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 56792000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 21079000.0
+  programme_name: Petroleum and Petroleum Products Regulation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

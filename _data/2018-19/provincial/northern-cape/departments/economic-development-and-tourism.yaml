@@ -19,6 +19,69 @@ contributed_datasets:
 description: 'Northern Cape department: Economic Development And Tourism budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 65105000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 275000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 193000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 27299000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 13329000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 129000.0
+  programme_name: Business Regulation And Governance
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 20907000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1581000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 377000.0
+  programme_name: Economic Planning
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 37986000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 26710000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 253000.0
+  programme_name: Intergrated Economic Development Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 36407000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 33832000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 397000.0
+  programme_name: Tourism
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 26951000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 22808000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 295000.0
+  programme_name: Trade And Sector Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

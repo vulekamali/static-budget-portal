@@ -18,6 +18,99 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Public Service and Administration budget data for
   the 2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 112158000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 101117000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1638000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 590000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 145000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 6000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 35193000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 12379000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 256000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 234233000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 220000.0
+  programme_name: Governance of Public Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 14814000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 5920000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 151000.0
+  programme_name: Government Chief Information Officer
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 58116000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 22833000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 428000.0
+  programme_name: Labour Relations and Human Resource Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 22520000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 9383000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 223000.0
+  programme_name: Policy Development, Research and Analysis
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 30013000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 19337000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 267000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 87195000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 1245000.0
+  programme_name: Service Delivery Support
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -19,6 +19,47 @@ contributed_datasets:
 description: 'Northern Cape department: Cooperative Governance, Human Settlements
   And Traditional Affairs budget data for the 2018-19 financial year from National
   Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 125406000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1678000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 130522000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2381000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1944000.0
+  programme_name: Co-Operative Governance
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 497157000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 49816000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 725000.0
+  programme_name: Human Settlement
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 20767000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1338000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 165000.0
+  programme_name: Traditional Institutional Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

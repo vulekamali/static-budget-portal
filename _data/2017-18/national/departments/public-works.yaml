@@ -18,6 +18,101 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Public Works budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 250032000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 230129000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 8385000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 5258000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 6000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 158911000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 156379000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2612000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 1472609000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 623904000.0
+    - economic_classification_2_name: Households
+      total_budget: 168000.0
+  programme_name: Expanded Public Works Programme
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 39273000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 15082000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 725000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 5150000.0
+  programme_name: Intergovernmental Coordination
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 54202000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 25183000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 10000000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 10051000.0
+    - economic_classification_2_name: Households
+      total_budget: 200000.0
+  programme_name: Prestige Policy
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 15629000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 15546000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 300000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 3912035000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 26031000.0
+    - economic_classification_2_name: Households
+      total_budget: 210000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 120000.0
+  programme_name: Property and Construction Industry Policy and Research
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

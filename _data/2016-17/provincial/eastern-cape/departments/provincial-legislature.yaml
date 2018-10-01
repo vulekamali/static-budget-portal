@@ -18,6 +18,39 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Eastern Cape department: Provincial Legislature budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 113767000
+    - economic_classification_2_name: Goods and services
+      total_budget: 49804000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 6031000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 33046000
+    - economic_classification_2_name: Goods and services
+      total_budget: 5182000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 100313000
+  programme_name: Facilities for Members and Political Parties
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 76054000
+    - economic_classification_2_name: Goods and services
+      total_budget: 35173000
+  programme_name: Parliamentary Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

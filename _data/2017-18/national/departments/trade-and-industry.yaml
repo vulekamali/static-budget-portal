@@ -18,6 +18,153 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Trade and Industry budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 437326000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 278580000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 12787000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 2588000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 539000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 53774000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 18104000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 221578000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 5173000.0
+  programme_name: Consumer and Corporate Regulation
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 126578000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 38833000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 5500000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2100000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 5488708000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 84000000.0
+    - economic_classification_2_name: Households
+      total_budget: 800000.0
+  programme_name: Incentive Development and Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 106509000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 15626000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 819000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 1116583000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 411861000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 159314000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 8565000.0
+  programme_name: Industrial Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 75254000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 18709000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 622000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 19672000.0
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 4373000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1188000.0
+  programme_name: International Trade and Economic Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 33224000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 17238000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 397000.0
+  programme_name: Investment South Africa
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 71025000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 15100000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1098000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 28949000.0
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 1738000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 1500000.0
+  programme_name: Special Economic Zones and Economic Transformation
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 157471000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 48344000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2093000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 177644000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 2911000.0
+  programme_name: Trade and Investment South Africa
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -19,6 +19,109 @@ contributed_datasets:
 description: 'Northern Cape department: Economic Development and Tourism budget data
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 40315000
+    - economic_classification_2_name: Goods and services
+      total_budget: 16956000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 329000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 284000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 173000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 8173000
+    - economic_classification_2_name: Goods and services
+      total_budget: 3115000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 85000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 21942000
+  programme_name: Business Regulation And Governance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 12312000
+    - economic_classification_2_name: Goods and services
+      total_budget: 6940000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 315000
+  programme_name: Economic Planning
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 32252000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 15120000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 224000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 29254000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 3795000
+  programme_name: Intergrated Economic Development Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 14497000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 10718000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 451000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 20269000
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 7107000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 527000
+  programme_name: Tourism
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 12306000
+    - economic_classification_2_name: Goods and services
+      total_budget: 12244000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 265000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 4240000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 3707000
+  programme_name: Trade And Sector Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

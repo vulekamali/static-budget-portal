@@ -18,6 +18,69 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Transport And Public Works budget data for
   the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 182016000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 12685000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2755000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 55222000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 575000.0
+  programme_name: Community Based Programmes
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 987609000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 566137000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 254695000.0
+  programme_name: Public Works Infrastructure
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2624001000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 899424000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 64868000.0
+    - economic_classification_2_name: Payments For Financial Assets
+      total_budget: 200000.0
+  programme_name: Transport Infrastructure
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1079911000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 222913000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 327000.0
+  programme_name: Transport Operations
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 741276000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 34699000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 127000.0
+  programme_name: Transport Regulation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

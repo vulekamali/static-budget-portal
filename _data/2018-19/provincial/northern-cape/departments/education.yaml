@@ -18,6 +18,73 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Northern Cape department: Education budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 640778000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 21266000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 628000.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 88866000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 14640000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 136000.0
+  programme_name: Early Childhood Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 109501000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 24371000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 9488000.0
+  programme_name: Examination And Education Related Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 9600000.0
+  programme_name: Independent School Subsidy
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 434833000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 145809000.0
+  programme_name: Infrastructure Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 4328679000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 429312000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 647000.0
+  programme_name: Public Ordinary School Education
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 142850000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 15300000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 519000.0
+  programme_name: Public Special School Education
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

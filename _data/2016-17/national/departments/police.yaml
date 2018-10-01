@@ -18,6 +18,103 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Police budget data for the 2016-17 financial year
   from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 11205496000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 4378069000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 1051350000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 275848000.0
+    - economic_classification_2_name: Biological assets
+      total_budget: 5700000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 486734000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 149440000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 7174000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 3053973000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 244390000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 40132000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 10998000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 1041000.0
+  programme_name: Crime Intelligence
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 13227372000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 2807892000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 667456000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 77285000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 9604000.0
+  programme_name: Detective Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 2279084000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 223788000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 101165000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 4132000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 973000.0
+  programme_name: Protection and Security Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 32304514000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 7282983000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 874641000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 191842000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 21775000.0
+  programme_name: Visible Policing
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

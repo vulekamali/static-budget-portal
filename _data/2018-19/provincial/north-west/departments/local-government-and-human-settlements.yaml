@@ -19,6 +19,47 @@ contributed_datasets:
 description: 'North West department: Local Government And Human Settlements budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 201212000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 38357000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3713000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 78399000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 42258000.0
+  programme_name: Development And Planning
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1977331000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 56996000.0
+  programme_name: Housing Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 34477000.0
+  programme_name: Housing Needs,Planning And Research
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 44120000.0
+  programme_name: Local Governance
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

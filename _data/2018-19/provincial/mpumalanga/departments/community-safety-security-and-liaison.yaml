@@ -19,6 +19,49 @@ contributed_datasets:
 description: 'Mpumalanga department: Community Safety, Security And Liaison budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 132524000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1708000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 379000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 59489000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 573000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 160000.0
+  programme_name: Civilian Oversight
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 453046000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 233000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 50000.0
+  programme_name: Security  Management
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 565489000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 5754000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 3417000.0
+  programme_name: Transport Regulation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

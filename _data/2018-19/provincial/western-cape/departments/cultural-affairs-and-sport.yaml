@@ -18,6 +18,49 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Cultural Affairs And Sport budget data for
   the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 63573000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2778000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 14000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 74434000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 35607000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1876000.0
+  programme_name: Cultural Affairs
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 253390000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 139860000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3679000.0
+  programme_name: Library And Archive Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 93880000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 88899000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2744000.0
+  programme_name: Sport And Recreation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

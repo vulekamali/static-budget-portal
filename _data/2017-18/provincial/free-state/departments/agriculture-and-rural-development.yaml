@@ -19,6 +19,105 @@ contributed_datasets:
 description: 'Free State department: Agriculture and Rural Development budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 115040000
+    - economic_classification_2_name: Goods and services
+      total_budget: 36496000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1270000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2252000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 299000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 66000
+  programme_name: ADMINISTRATION
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 9561000
+    - economic_classification_2_name: Goods and services
+      total_budget: 874000
+  programme_name: AGRICULTURAL ECONOMICS SERVICES
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 97905000
+    - economic_classification_2_name: Goods and services
+      total_budget: 14503000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 267529000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 76000
+  programme_name: FARMER SUPPORT AND DEVELOPMENT
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 29140000
+    - economic_classification_2_name: Goods and services
+      total_budget: 2348000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 24256000
+  programme_name: RESEARCH AND TECHNOLOGY DEVELOPMENT SERVICES
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 15664000
+    - economic_classification_2_name: Goods and services
+      total_budget: 914000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 927000
+  programme_name: RURAL DEVELOPMENT
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 17323000
+    - economic_classification_2_name: Goods and services
+      total_budget: 4787000
+  programme_name: STRUCTURED AGRICULTURAL  EDUCATION AND TRAINING
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 26180000
+    - economic_classification_2_name: Goods and services
+      total_budget: 3134000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 18815000
+  programme_name: SUSTAINABLE RESOURCE MANAGEMENT
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 54624000
+    - economic_classification_2_name: Goods and services
+      total_budget: 8326000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 6500000
+  programme_name: VETERINARY SERVICES
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

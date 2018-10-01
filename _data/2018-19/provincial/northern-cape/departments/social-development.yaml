@@ -18,6 +18,59 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Northern Cape department: Social Development budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 133743000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3048000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 423000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 152036000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 139064000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3063000.0
+  programme_name: Children And Families
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 89928000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 52795000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2899000.0
+  programme_name: Development And Research
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 164700000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 7635000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 4804000.0
+  programme_name: Restorative Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 60771000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 53104000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2903000.0
+  programme_name: Social Welfare Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

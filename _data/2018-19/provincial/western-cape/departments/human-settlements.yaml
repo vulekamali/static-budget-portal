@@ -18,6 +18,43 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Human Settlements budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 96993000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 6480000.0
+    - economic_classification_2_name: Payments For Financial Assets
+      total_budget: 300000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 250000.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 35789000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1000000.0
+  programme_name: Housing Asset Management
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1946468000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 207089000.0
+  programme_name: Housing Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 24185000.0
+  programme_name: Housing Needs, Research And Planning
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

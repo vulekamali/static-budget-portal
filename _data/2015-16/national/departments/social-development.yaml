@@ -18,6 +18,61 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Social Development budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 2889000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 294126000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 130093278000.0
+  programme_name: Social Assistance
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 732000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 239193000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 119895000.0
+  programme_name: Social Policy and Integrated Service Delivery
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 1413000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 6659330000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 95422000.0
+  programme_name: Social Security Policy and Administration
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 47500000.0
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 4602000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 355086000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 255174000.0
+  programme_name: Welfare Services Policy Development and Implementation Support
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,49 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Northern Cape department: Roads And Public Works budget data for the
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 150060000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3609000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1590000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 55100000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 35754000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1000000.0
+  programme_name: Community Based Programme
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 88301000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 60628000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 138000.0
+  programme_name: Public Works Infrastructure
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 1208531000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 139843000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 3390000.0
+  programme_name: Transport Infrastructure
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

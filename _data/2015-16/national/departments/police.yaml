@@ -18,6 +18,67 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Police budget data for the 2015-16 financial year
   from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 1265836000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 14386575000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 611799000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 36184000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 3062732000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 11463000.0
+  programme_name: Crime Intelligence
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 621346000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 15112819000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 81818000.0
+  programme_name: Detective Services
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 30870000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 2295809000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 4844000.0
+  programme_name: Protection and Security Services
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 906515000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 37746512000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 201937000.0
+  programme_name: Visible Policing
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

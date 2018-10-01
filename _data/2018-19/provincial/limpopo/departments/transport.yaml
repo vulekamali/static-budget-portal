@@ -18,6 +18,41 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Transport budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 603541101.86
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 9767501.100000001
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 7681416.0
+  programme_name: Administration
+- items: []
+  programme_name: Community Based Programmes
+- items: []
+  programme_name: Direct Charges
+- items: []
+  programme_name: Transport Infrastructure
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 790458398.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 78478040.0
+  programme_name: Transport Operations
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 585103051.2
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 29415000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1783788.0
+  programme_name: Transport Regulations
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

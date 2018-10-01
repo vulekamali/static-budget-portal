@@ -19,6 +19,91 @@ contributed_datasets:
 description: 'National department: Telecommunications and Postal Services budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 108762000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 97772000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 7280000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 4503000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 15000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 15968000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 5354000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 502000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 228616000.0
+  programme_name: ICT Enterprise Development and Public Entities Oversight
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 33353000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 33253000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 6560000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1679000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 203900000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 37880000.0
+  programme_name: ICT Infrastructure Support
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 13725000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 9438000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 390000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 28482000.0
+  programme_name: International Affairs and Trade
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 52592000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 33039000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 294000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 50000.0
+  programme_name: Policy, Research and Capacity Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

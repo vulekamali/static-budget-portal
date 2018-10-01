@@ -18,6 +18,107 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Rural Development and Land Reform budget data for
   the 2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 759333000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 696352000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 5938000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 424000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 11000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 322214000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 297419000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1516000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1520905000.0
+    - economic_classification_2_name: Households
+      total_budget: 541426000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 78318000.0
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 1000.0
+  programme_name: Land Reform
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 504884000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 206885000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 4070000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 1100000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 71639000.0
+    - economic_classification_2_name: Households
+      total_budget: 24414000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 3326000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 1574000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 21000.0
+  programme_name: National Geomatics Management Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 336637000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 310927000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2459000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2513231000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 4954000.0
+  programme_name: Restitution
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 282506000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 105588000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 4364000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1521909000.0
+  programme_name: Rural Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

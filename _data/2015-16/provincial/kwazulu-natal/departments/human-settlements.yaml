@@ -18,6 +18,63 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Human Settlements budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 117774000
+    - economic_classification_2_name: Goods and services
+      total_budget: 71602000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3142000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 580000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 280000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 168980000
+  programme_name: Housing Asset Management, Property Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 132571000
+    - economic_classification_2_name: Goods and services
+      total_budget: 44815000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 12500000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 742000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2866223000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 148400000
+  programme_name: Housing Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 12905000
+    - economic_classification_2_name: Goods and services
+      total_budget: 4121000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 50000
+  programme_name: Housing Needs, Research and  Planning
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

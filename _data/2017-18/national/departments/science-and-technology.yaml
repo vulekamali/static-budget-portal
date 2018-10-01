@@ -18,6 +18,83 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Science and Technology budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 196510000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 152729000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 20978000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 13503000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 47300000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 17628000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 49647000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 14130000.0
+  programme_name: International Cooperation and Resources
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 32435000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 15525000.000000002
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 4026486000.0
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 274413000.0
+  programme_name: Research, Development and Support
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 38620000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 9171000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 1044849000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 502684000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 27000000.0
+  programme_name: Socioeconomic Innovation Partnerships
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 44443000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 21408000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 660988000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 245934000.0
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 100848000.0
+  programme_name: Technology Innovation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

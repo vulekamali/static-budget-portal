@@ -19,6 +19,77 @@ contributed_datasets:
 description: 'National department: Agriculture, Forestry and Fisheries budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 10963000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 701703000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 17281000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 381049000.0
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 2043000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 1172078000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 579600000.0
+  programme_name: Agricultural Production, Health and Food Safety
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 258623000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 184644000.0
+  programme_name: Fisheries
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 39112000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 1620392000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 270793000.0
+  programme_name: Food Security and Agrarian Reform
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 43636000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 717812000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 145116000.0
+  programme_name: Forestry and Natural Resources Management
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 449000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 131745000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 105968000.0
+  programme_name: Trade Promotion and Market Access
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

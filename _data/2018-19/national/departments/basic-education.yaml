@@ -18,6 +18,111 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Basic Education budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 219762000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 167427000.0
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 51458000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 8016000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3089000.0
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 307000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 417000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 1253958000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 91065000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 3200000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 656000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 555954000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 178000.0
+  programme_name: Curriculum Policy, Support and Monitoring
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 40677000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 18662000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 410000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 7045314000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 65000.0
+  programme_name: Educational Enrichment Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 355783000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 133248000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 1321045000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 710000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 9917734000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 128543000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 110984000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 3295000.0
+  programme_name: Planning, Information and Assessment
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 72173000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 26952000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 428000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1159348000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 16000000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 15579000.0
+  programme_name: Teachers, Education Human Resources and Institutional Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -19,6 +19,71 @@ contributed_datasets:
 description: 'Mpumalanga department: Co-operative Governance and Traditional Affairs
   budget data for the 2016-17 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 72504000
+    - economic_classification_2_name: Goods and services
+      total_budget: 40820000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1215000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1156000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 70000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 38751000
+    - economic_classification_2_name: Goods and services
+      total_budget: 9838000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 17000000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 56000
+  programme_name: Development and Planning
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 156494000
+    - economic_classification_2_name: Goods and services
+      total_budget: 10691000
+  programme_name: Local Governance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 14137000
+    - economic_classification_2_name: Goods and services
+      total_budget: 5845000
+  programme_name: The House of Traditional Leaders
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 87033000
+    - economic_classification_2_name: Goods and services
+      total_budget: 3724000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 14452000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 24320000
+  programme_name: Traditional Institutional Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

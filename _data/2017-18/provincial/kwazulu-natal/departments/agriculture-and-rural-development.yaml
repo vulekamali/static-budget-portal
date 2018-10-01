@@ -19,6 +19,73 @@ contributed_datasets:
 description: 'KwaZulu-Natal department: Agriculture and Rural Development budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 229785000
+    - economic_classification_2_name: Goods and services
+      total_budget: 222169000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 26759000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 22890000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 4840000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 2871000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 850000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 889191000
+    - economic_classification_2_name: Goods and services
+      total_budget: 433601000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 75000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 51138000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 19471000
+    - economic_classification_2_name: Biological assets
+      total_budget: 668000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 60000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 134949000
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 106798000
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 11023000
+    - economic_classification_2_name: Households
+      total_budget: 7564000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 736000
+  programme_name: Agriculture
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 24406000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 6946000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 354000
+  programme_name: Rural Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

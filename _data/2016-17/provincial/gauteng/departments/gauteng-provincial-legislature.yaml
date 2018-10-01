@@ -18,6 +18,61 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Gauteng Provincial Legislature budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 137603000
+    - economic_classification_2_name: Goods and services
+      total_budget: 92192000
+  programme_name: Core Business
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 94339000
+    - economic_classification_2_name: Goods and services
+      total_budget: 92138000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 4028000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 600000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 102701000
+  programme_name: Corporate Support Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 32706000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 19669000
+  programme_name: Leadership and Governance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 35241000
+    - economic_classification_2_name: Goods and services
+      total_budget: 8436000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1314000
+  programme_name: Office of the CFO
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 13319000
+    - economic_classification_2_name: Goods and services
+      total_budget: 7387000
+  programme_name: Office of the Secretary
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

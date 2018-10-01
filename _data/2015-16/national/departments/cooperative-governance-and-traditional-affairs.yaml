@@ -19,6 +19,83 @@ contributed_datasets:
 description: 'National department: Cooperative Governance and Traditional Affairs
   budget data for the 2015-16 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 5080000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 242789000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 100000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 20000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 50274784000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 46541000.0
+  programme_name: Governance and Intergovernmental Relations
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 14955762000.0
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 150000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 2408495000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 304013000.0
+  programme_name: Infrastructure and Economic Development
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 188900000.0
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 2449000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 364343000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 51113000.0
+  programme_name: National Disaster Management Centre
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 22081000.0
+  programme_name: Policy, Research and Knowledge Management
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 100000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 290442000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 37550000.0
+  programme_name: Provincial and Municipal Government Systems
+- items:
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 119447000.0
+  programme_name: Traditional Affairs
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

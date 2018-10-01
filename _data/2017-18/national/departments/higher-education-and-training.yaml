@@ -21,6 +21,113 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Higher Education and Training budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 222153000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 175881000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 5322000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 2069783000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 58641000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1796000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 103898000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 792000.0
+  programme_name: Community Education and Training
+- items:
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 16641456000.0
+  programme_name: Direct charge against the National Revenue Fund
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 59794000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 9844000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 171000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 3489000.0
+  programme_name: Planning, Policy and Strategy
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 97679000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 15103000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 831000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 130680000.0
+  programme_name: Skills Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 5910561000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 154566000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 660000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 1328096000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 14366000.0
+  programme_name: Technical and Vocational Education and Training
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 65408000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 6367000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 359000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Higher education institutions
+      total_budget: 31606841000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 10255977000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 8581000.0
+  programme_name: University Education
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

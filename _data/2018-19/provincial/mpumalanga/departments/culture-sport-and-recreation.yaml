@@ -18,6 +18,49 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Mpumalanga department: Culture, Sport And Recreation budget data for
   the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 96150000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 4500000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 701000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 87129000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 15078000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 7190000.0
+  programme_name: Cultural Affairs
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 115705000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 69198000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1500000.0
+  programme_name: Library And Archives Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 65695000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2874000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 2741000.0
+  programme_name: Sports And Recreation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

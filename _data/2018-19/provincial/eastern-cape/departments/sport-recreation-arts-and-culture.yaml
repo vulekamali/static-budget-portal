@@ -19,6 +19,49 @@ contributed_datasets:
 description: 'Eastern Cape department: Sport, Recreation, Arts And Culture budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 287078000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 4336000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 3694682.6
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 165042000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 40032000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 10700000.0
+  programme_name: Cultural Affairs
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 142752000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 74510000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 34004000.0
+  programme_name: Library And Archives Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 157863000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 18489000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 4259000.0
+  programme_name: Sport And Recreation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,35 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'North West department: Tourism budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 75464000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1878000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 233000.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 94404000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 52106000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 19167000.0
+  programme_name: Tourism Growth, Development And Transformation
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 18299000.0
+  programme_name: Tourism Planning
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

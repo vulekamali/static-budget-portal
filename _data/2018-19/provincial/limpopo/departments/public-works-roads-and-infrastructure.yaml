@@ -19,6 +19,45 @@ contributed_datasets:
 description: 'Limpopo department: Public Works, Roads And Infrastructure budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 349424256.07721
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 30842813.474
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 6213671.612
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 57715920.4078
+  programme_name: Epwp
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 616862781.588475
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 112970000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 60824000.0
+  programme_name: Infrastructure Operations
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 995797000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 867003160.4183
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 20521934.7
+  programme_name: Roads Infrastructure
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -19,6 +19,77 @@ contributed_datasets:
 description: 'Limpopo department: Public Works, Roads and Infrastructure budget data
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 230583000
+    - economic_classification_2_name: Goods and services
+      total_budget: 81177000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 8866000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 1500000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 3428000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 400000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 23379000
+    - economic_classification_2_name: Goods and services
+      total_budget: 15852000
+  programme_name: EPWP
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 413356000
+    - economic_classification_2_name: Goods and services
+      total_budget: 236053000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 55033000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3815000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 48966000
+    - economic_classification_2_name: Households
+      total_budget: 2843000
+  programme_name: Infrastructure Operations
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 355563000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 350478000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 196000000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 131470000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 737330000
+    - economic_classification_2_name: Households
+      total_budget: 2900000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 2379000
+  programme_name: Roads Infrastructure
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

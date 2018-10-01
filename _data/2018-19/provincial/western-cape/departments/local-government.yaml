@@ -18,6 +18,47 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Local Government budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 40628000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3013000.0
+    - economic_classification_2_name: Payments For Financial Assets
+      total_budget: 115000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 2000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 59922000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 11152000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 31000.0
+  programme_name: Development And Planning
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 115578000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 22244000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 110000.0
+  programme_name: Local Governance
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 1000.0
+  programme_name: Traditional Institutional Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

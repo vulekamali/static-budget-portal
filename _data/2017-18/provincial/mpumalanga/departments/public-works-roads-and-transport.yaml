@@ -31,6 +31,91 @@ contributed_datasets:
 description: 'Mpumalanga department: Public Works, Roads and Transport budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 192462000
+    - economic_classification_2_name: Goods and services
+      total_budget: 79116000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1354000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2125000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 35844000
+    - economic_classification_2_name: Goods and services
+      total_budget: 33598000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 534000
+  programme_name: Community Based Programmes
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 302144000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 300909000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 20000000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3375000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 170000000
+    - economic_classification_2_name: Households
+      total_budget: 3000000
+  programme_name: Public Works Infrastructure
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 928153000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 410310000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 1013451000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 60953000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 8603000
+  programme_name: Transport Infrastructure
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 458414000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 73552000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 45856000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 11861000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 610134000
+  programme_name: Transport Operations
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

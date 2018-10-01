@@ -18,6 +18,91 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Environmental Affairs budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 118799000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 579250000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 16000000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 31381000.0
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 683000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 512858000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 110678000.0
+  programme_name: Biodiversity and Conservation
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 572000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 67177000.0
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 11532000.0
+  programme_name: Chemicals and Waste Management
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 1113000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 161823000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 77213000.0
+  programme_name: Climate Change and Air Quality
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 491708000.0
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 22196000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Transfers and subsidies
+      total_budget: 2437471000.0
+    - economic_classification_2_name: Current payments
+      total_budget: 695489000.0
+  programme_name: Environmental Programmes
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 917000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 126600000.0
+  programme_name: Legal, Authorisations and Compliance
+- items:
+  - economic_classification_1_name: Capital
+    items:
+    - economic_classification_2_name: Payments for capital assets
+      total_budget: 13822000.0
+  - economic_classification_1_name: Current
+    items:
+    - economic_classification_2_name: Current payments
+      total_budget: 470707000.0
+  programme_name: Oceans and Coasts
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

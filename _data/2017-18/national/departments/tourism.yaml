@@ -18,6 +18,83 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Tourism budget data for the 2017-18 financial year
   from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 120387000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 96710000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1800000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 197000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 135276000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 46227000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 107493000.0
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1050000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 153307000.0
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 600000.0
+  programme_name: Destination Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 113456000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 61104000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1050000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 87679000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 4612000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 500000.0
+  programme_name: Enterprise and Visitor Support Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 44135000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 18635000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 800000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1134288000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 6638000.0
+    - economic_classification_2_name: Households
+      total_budget: 4212000.0
+  programme_name: Tourism Policy and Planning
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

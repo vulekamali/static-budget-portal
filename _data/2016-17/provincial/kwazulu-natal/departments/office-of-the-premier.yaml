@@ -18,6 +18,71 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Office of the Premier budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 58414000
+    - economic_classification_2_name: Goods and services
+      total_budget: 31892000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1137000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1064000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 144810000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 123042000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 5126000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 766000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 65000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 54000
+    - economic_classification_2_name: Households
+      total_budget: 3000
+  programme_name: Institutional Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 128775000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 94155000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Heritage assets
+      total_budget: 4500000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3915000
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 1171000
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: ''
+      total_budget: 4388000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 45195000
+    - economic_classification_2_name: Households
+      total_budget: 10172000
+  programme_name: Policy and Governance
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

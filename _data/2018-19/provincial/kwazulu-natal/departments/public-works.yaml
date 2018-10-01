@@ -18,6 +18,39 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Public Works budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 384678000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 17946000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 4164000.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 594536000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 88820000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 237000.0
+  programme_name: Property Management
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 448850000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 47573000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1128000.0
+  programme_name: Provision Of Buildings, Structures And Equipment
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

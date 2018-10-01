@@ -30,6 +30,57 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Human Settlements budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 250117000
+    - economic_classification_2_name: Goods and services
+      total_budget: 119493000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 42262000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 5014000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 332000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 3526000
+    - economic_classification_2_name: Goods and services
+      total_budget: 3143000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 167264000
+  programme_name: Housing Assets Management Property Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 129487000
+    - economic_classification_2_name: Goods and services
+      total_budget: 40420000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 5389482000
+  programme_name: Housing Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 35380000
+    - economic_classification_2_name: Goods and services
+      total_budget: 442000
+  programme_name: Housing Needs, Research And Planning
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

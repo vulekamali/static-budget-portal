@@ -18,6 +18,55 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Provincial Treasury budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 178049000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 12278000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 2050000.0
+  programme_name: Administration
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 203156000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 5507000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 939000.0
+  programme_name: Financial Governance
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 143564000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 885000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 106000.0
+  programme_name: Internal Audit
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 63564000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 145000.0
+  programme_name: Municipal Finance Management
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 40499000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 158000.0
+  programme_name: Sustainable Resource Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

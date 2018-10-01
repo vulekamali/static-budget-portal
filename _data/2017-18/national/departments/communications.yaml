@@ -18,6 +18,49 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Communications budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 50202000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 12569000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 6129000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 2363000.0
+  programme_name: Communications Policy, Research and Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 4686000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 1968000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1151122000.0
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 173766000.0
+  programme_name: Entity Oversight
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 15680000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 6569000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 41000.0
+  programme_name: Industry and Capacity Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

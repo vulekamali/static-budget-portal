@@ -19,6 +19,39 @@ contributed_datasets:
 description: 'North West department: Economy And Enterprise Development budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 100925400.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1567000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 235000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 77986000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 31065000.0
+  programme_name: Business Regulation And Governance
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 32294000.0
+  programme_name: Economic Planning And Sector Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 53118000.0
+  programme_name: Integrated Economic Development Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

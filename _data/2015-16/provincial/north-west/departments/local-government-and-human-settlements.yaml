@@ -19,6 +19,73 @@ contributed_datasets:
 description: 'North West department: Local Government and Human Settlements budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 84313000
+    - economic_classification_2_name: Goods and services
+      total_budget: 65986000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 3573000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1348000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 36610000
+    - economic_classification_2_name: Goods and services
+      total_budget: 11994000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 15000000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 71157000
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 40000000
+  programme_name: Development and Planning
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 43250000
+    - economic_classification_2_name: Goods and services
+      total_budget: 7027000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2063131000
+  programme_name: Housing Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 19182000
+    - economic_classification_2_name: Goods and services
+      total_budget: 4091000
+  programme_name: Housing Needs,Planning and Research
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 30445000
+    - economic_classification_2_name: Goods and services
+      total_budget: 17818000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 1100000
+  programme_name: Local Governance
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,53 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Communications budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 35953000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 9105000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 44000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 6156000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 2244000.0
+  programme_name: Communications Policy, Research and Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 8944000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 1864000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1088109000.0
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 182093000.0
+  programme_name: Entity Oversight
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 8116000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 2738000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 40000.0
+  programme_name: Industry and Capacity Development
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

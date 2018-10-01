@@ -18,6 +18,85 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Eastern Cape department: Health budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 687185000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 6401000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 1613000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 3323084000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 106753000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 17900000.0
+  programme_name: Central Hospital Services
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 11824746000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 143728000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 63473000.0
+  programme_name: District Health Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 1147640307.4
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 133746031.3
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 3226053.6
+  programme_name: Emergency Medical Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 124935897.3
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 576557.1
+  programme_name: Health Care Support Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 978835000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 393236000.0
+  programme_name: Health Facilities Management
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 679006475.3
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 183179000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 23161005.6
+  programme_name: Health Sciences And Training
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 3802412651.5
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 36709679.4
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 18012642.0
+  programme_name: Provincial Hospital Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

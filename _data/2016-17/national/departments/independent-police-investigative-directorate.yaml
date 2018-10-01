@@ -19,6 +19,59 @@ contributed_datasets:
 description: 'National department: Independent Police Investigative Directorate budget
   data for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 44729000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 28590000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 562000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 536000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 7806000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 1034000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 61000.0
+  programme_name: Compliance Monitoring and Stakeholder Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 120728000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 36200000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 205000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 9000.0
+  programme_name: Investigation and Information Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 5220000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 431000.0
+  programme_name: Legal Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

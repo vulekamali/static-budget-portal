@@ -18,6 +18,79 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Agriculture budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 370912000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 12910000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 9526000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 23052000.0
+  programme_name: Agriculural Economics
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 895972000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 195242000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 61652000.0
+  programme_name: Farmer Support & Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 59755000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 956000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 455000.0
+  programme_name: Research & Technology Devel Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 5809000.0
+  programme_name: Rural Development Co-Ordination
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 115613000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 20878000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 809000.0
+  programme_name: Structured Agric. Training
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 80432000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 3000000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 1727000.0
+  programme_name: Sustainable Resource Management
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 58335000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 319000.0
+  programme_name: Veterinary Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -19,6 +19,113 @@ contributed_datasets:
 description: 'Free State department: Agriculture and Rural Development budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 122626000
+    - economic_classification_2_name: Goods and services
+      total_budget: 34179000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1500000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2000000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 270000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 60000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 8155000
+    - economic_classification_2_name: Goods and services
+      total_budget: 828000
+  programme_name: Agricultural Economics
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 89999000
+    - economic_classification_2_name: Goods and services
+      total_budget: 14764000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 9963000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 400000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 272303000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 69000
+  programme_name: Farmer Support And Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 15427000
+    - economic_classification_2_name: Goods and services
+      total_budget: 1015000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 9824000
+  programme_name: Rural Development
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 16249000
+    - economic_classification_2_name: Goods and services
+      total_budget: 3649000
+  programme_name: Structured Agricultural Training
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 22238000
+    - economic_classification_2_name: Goods and services
+      total_budget: 2697000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 5275000
+  programme_name: Sustainable Resource Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 25162000
+    - economic_classification_2_name: Goods and services
+      total_budget: 6550000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 21555000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1330000
+  programme_name: Technology,Research And Development Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 46724000
+    - economic_classification_2_name: Goods and services
+      total_budget: 5731000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 4000000
+  programme_name: Veterinary Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

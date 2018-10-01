@@ -19,6 +19,75 @@ contributed_datasets:
 description: 'Mpumalanga department: Agriculture, Rural Development, Land And Environmental
   Affairs budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 184770000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 6836000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 4891000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 12244000.0
+  programme_name: Agricultural Economics Services
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 113309000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2200000.0
+  programme_name: Environmental Affairs
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 485781000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 34298000.0
+  programme_name: Farmer Support And Development
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 60778000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2000000.0
+  programme_name: Research And Technology Development Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 23893000.0
+  programme_name: Rural Development Coordination
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 21539000.0
+  programme_name: Structured Agricultural Education And Training
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 81890000.0
+  programme_name: Sustainable Resource Management
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 143109000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2899000.0
+  programme_name: Veterinary Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

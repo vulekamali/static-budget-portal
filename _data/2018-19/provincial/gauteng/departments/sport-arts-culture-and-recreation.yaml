@@ -19,6 +19,47 @@ contributed_datasets:
 description: 'Gauteng department: Sport, Arts, Culture And Recreation budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 125908000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2284000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 162189500.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 39812000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3454000.0
+  programme_name: Cultural Affairs
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 140220000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 83297000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 77021000.0
+  programme_name: Library And Archives Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 221712000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 84337000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 2417000.0
+  programme_name: Sport And Recreation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

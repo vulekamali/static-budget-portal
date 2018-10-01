@@ -18,6 +18,97 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Roads and Transport budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 161542000
+    - economic_classification_2_name: Goods and services
+      total_budget: 138754000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 100000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 15901000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 1000000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 500000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1832089000
+  programme_name: Gautrain
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 949886000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 346727000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 70000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 1241590000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 7202000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 4201000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 2500000
+  programme_name: Transport Infrastructure
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 35810000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 28575000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 45850000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1640000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 2186420000
+    - economic_classification_2_name: Households
+      total_budget: 130000
+  programme_name: Transport Operations
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 94476000
+    - economic_classification_2_name: Goods and services
+      total_budget: 69052000
+    - economic_classification_2_name: Interest and rent on land
+      total_budget: 200000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 126521000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 7106000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 1800000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 62000
+  programme_name: Transport Regulation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

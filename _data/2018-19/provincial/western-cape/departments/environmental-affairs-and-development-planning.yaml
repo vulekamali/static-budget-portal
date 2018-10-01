@@ -19,6 +19,71 @@ contributed_datasets:
 description: 'Western Cape department: Environmental Affairs And Development Planning
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 65123000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 3572000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 8000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 303731000.0
+    - economic_classification_2_name: Current Payments
+      total_budget: 15898000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 95000.0
+  programme_name: Biodiversity Management
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 24836000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 88000.0
+  programme_name: Compliance And Enforcement
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 56731000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 16970000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 141000.0
+  programme_name: Development Planning
+- items: []
+  programme_name: Direct Charges
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 996000.0
+  programme_name: Environmental Empowerment Services
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 20449000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 170000.0
+  programme_name: Environmental Policy, Planning And Coordination
+- items:
+  - economic_classification_1_name: Payments
+    items:
+    - economic_classification_2_name: Current Payments
+      total_budget: 95302000.0
+    - economic_classification_2_name: Payments For Capital Assets
+      total_budget: 507000.0
+    - economic_classification_2_name: Transfers And Subsidies
+      total_budget: 4000.0
+  programme_name: Environmental Quality Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -19,6 +19,31 @@ contributed_datasets:
 description: 'National department: Centre for Public Service Innovation budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 9403000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 9025000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 246000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 8957000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 6423000.0
+  programme_name: Public Sector Innovation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

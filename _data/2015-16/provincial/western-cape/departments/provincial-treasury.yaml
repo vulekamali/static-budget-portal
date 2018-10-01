@@ -18,6 +18,61 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Provincial Treasury budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 29717000
+    - economic_classification_2_name: Goods and services
+      total_budget: 15069000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 4764000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 25000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 2480000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 3000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 32725000
+    - economic_classification_2_name: Goods and services
+      total_budget: 27230000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 123000
+  programme_name: Asset Management
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 26803000
+    - economic_classification_2_name: Goods and services
+      total_budget: 6672000
+  programme_name: Financial Governance
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 63433000
+    - economic_classification_2_name: Goods and services
+      total_budget: 17666000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 24831000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 10488000
+  programme_name: Sustainable Resource Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

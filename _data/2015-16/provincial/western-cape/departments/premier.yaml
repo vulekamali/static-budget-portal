@@ -18,6 +18,93 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Premier budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 582265000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 191548000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 51304000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 18500000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 7298000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 6000
+  programme_name: Centre for E-Innovation (Corporate Services Centre)
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 96646000
+    - economic_classification_2_name: Goods and services
+      total_budget: 20198000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 761000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 3000
+  programme_name: Corporate Assurance (Corporate Services Centre)
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 61730000
+    - economic_classification_2_name: Goods and services
+      total_budget: 13557000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1727000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 5000
+  programme_name: Executive Support (Administration)
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 141152000
+    - economic_classification_2_name: Goods and services
+      total_budget: 51125000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2090000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 15000
+  programme_name: People Management (Corporate Services Centre)
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 52412000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 38269000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 511000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 900000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 5000
+  programme_name: Provincial Strategic Management
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

@@ -18,6 +18,81 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Labour budget data for the 2016-17 financial year
   from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 405133000.0
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 378796000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 40303000.0
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 28000000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 470000.0
+    - economic_classification_2_name: Households
+      total_budget: 219000.0
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 416655000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 102774000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 65000.0
+  programme_name: Inspection and Enforcement Services
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 84346000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 40510000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 73000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 800818000.0
+    - economic_classification_2_name: Foreign governments and international organisations
+      total_budget: 20566000.0
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 18879000.0
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 1000.0
+  programme_name: Labour Policy and Industrial Relations
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 252442000.0
+    - economic_classification_2_name: Goods and services
+      total_budget: 34174000.0
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 50000.0
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Non-profit institutions
+      total_budget: 156585000.0
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 66976000.0
+    - economic_classification_2_name: Households
+      total_budget: 42000.0
+  programme_name: Public Employment Services
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:

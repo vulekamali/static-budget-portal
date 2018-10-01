@@ -18,6 +18,135 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Transport and Public Works budget data for
   the 2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 123727000
+    - economic_classification_2_name: Goods and services
+      total_budget: 48405000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 2944000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 10051000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 3000000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 3000
+  programme_name: Administration
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 33372000
+    - economic_classification_2_name: Goods and services
+      total_budget: 21039000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 1023000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 10000
+  programme_name: Community Based Programmes
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 743221000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 178233000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 437132000
+    - economic_classification_2_name: Land and sub-soil assets
+      total_budget: 56842000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 4371000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 497290000
+    - economic_classification_2_name: Households
+      total_budget: 160000
+  programme_name: Public Works Infrastructure
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 624085000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 183402000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Buildings and other fixed structures
+      total_budget: 2413496000
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 77731000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 12763000
+    - economic_classification_2_name: Land and sub-soil assets
+      total_budget: 7040000
+  - economic_classification_1_name: Payments for financial assets
+    items:
+    - economic_classification_2_name: ''
+      total_budget: 50000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 70880000
+    - economic_classification_2_name: Households
+      total_budget: 1853000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 115000
+  programme_name: Transport Infrastructure
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 113823000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 16425000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 364000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Public corporations and private enterprises
+      total_budget: 922921000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 105544000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 1000
+  programme_name: Transport Operations
+- items:
+  - economic_classification_1_name: Current payments
+    items:
+    - economic_classification_2_name: Goods and services
+      total_budget: 401293000
+    - economic_classification_2_name: Compensation of employees
+      total_budget: 276964000
+  - economic_classification_1_name: Payments for capital assets
+    items:
+    - economic_classification_2_name: Machinery and equipment
+      total_budget: 35548000
+    - economic_classification_2_name: Software and other intangible assets
+      total_budget: 1328000
+  - economic_classification_1_name: Transfers and subsidies
+    items:
+    - economic_classification_2_name: Households
+      total_budget: 100000
+    - economic_classification_2_name: Provinces and municipalities
+      total_budget: 26000
+    - economic_classification_2_name: Departmental agencies and accounts
+      total_budget: 4000
+  programme_name: Transport Regulation
 expenditure_over_time:
   base_financial_year: 2017-18
   nominal:
