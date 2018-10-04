@@ -18,52 +18,126 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Provincial Legislature budget data for the
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 103310000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 77911000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 5427000.0
+        type: economic_classification_2
+      - name: Software And Other Intangible Assets
+        total_budget: 3940000.0
+        type: economic_classification_2
+      - name: Buildings And Other Fixed Structures
+        total_budget: 995000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Foreign Governments And International Organisations
+        total_budget: 241000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 100000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 42000.0
+        type: economic_classification_2
+      - name: Public Corporations And Private Enterprises
+        total_budget: 30000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 87260000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 2991000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 104994000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 68346000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Non-Profit Institutions
+        total_budget: 109627000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Parliamentary Business
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 476027000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 436137000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 475374000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 617808000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 565214000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 600520000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 640797000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 558147665
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 486251905
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 498609328
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 617808000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 535790454
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 540651553
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 546625846
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 476027000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 436137000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 475374000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 617808000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 565214000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 600520000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 640797000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 558147665
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 486251905
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 498609328
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 617808000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 535790454
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 540651553
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 546625846
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,12 +167,14 @@ intro: ''
 is_vote_primary: true
 name: Provincial Legislature
 programmes:
-- name: Administration
-  total_budget: 191996000.0
-- name: Parliamentary Business
-  total_budget: 282967000.0
-- name: Direct Charges
-  total_budget: 90251000.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 191996000.0
+  - name: Parliamentary Business
+    total_budget: 282967000.0
+  - name: Direct Charges
+    total_budget: 90251000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: provincial-legislature

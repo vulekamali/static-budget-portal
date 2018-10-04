@@ -18,52 +18,156 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Northern Cape department: Roads and Public Works budget data for the
   2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 74914000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 38291000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1002000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 17102000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 570000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 30576000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 10844000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 35635000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 113000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Community Based Programme
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 46188000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 31462000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 414000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 51578000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Public Works Infrastructure
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 821112000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 119896000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 73000000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 506000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1447000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Infrastructure
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1055695000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1016536000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1280918000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1214474000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1354650000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1429943000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1520240000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1460184374
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1332191106
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1586388851
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1423986092
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1510307871
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1499835747
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1520240000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1055695000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1016536000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1280918000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1214474000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1354650000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1429943000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1520240000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 1460184374
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1332191106
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1586388851
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1423986092
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1510307871
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1499835747
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1520240000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -111,14 +215,16 @@ intro: "## Vision\n\nTo be trendsetter through excellence in service delivery.\r
 is_vote_primary: true
 name: Roads and Public Works
 programmes:
-- name: Administration
-  total_budget: 131879000
-- name: Public Works Infrastructure
-  total_budget: 129642000
-- name: Transport Infrastructure
-  total_budget: 1015961000
-- name: Community Based Programme
-  total_budget: 77168000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 131879000
+  - name: Public Works Infrastructure
+    total_budget: 129642000
+  - name: Transport Infrastructure
+    total_budget: 1015961000
+  - name: Community Based Programme
+    total_budget: 77168000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: roads-and-public-works

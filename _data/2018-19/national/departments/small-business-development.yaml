@@ -18,52 +18,144 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Small Business Development budget data for the
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 67615000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 51520000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 5594000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 42648000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 9245000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 104000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 769452000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 408828000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Enterprise Development and Entrepreneurship
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 19768000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 7914000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 34000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 83318000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Integrated Cooperative Development
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 11578000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 10779000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 56000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Sector Policy and Research
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1125536000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1098891000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1197041000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1475670000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1488453000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2574452000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2719451000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 1319705165
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1225160541
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1255549964
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1475670000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1410968074
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2317793699
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2319802068
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1125536000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1098891000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1197041000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1475670000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1488453000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2574452000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2719451000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 1319705165
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1225160541
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1255549964
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1475670000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1410968074
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2317793699
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2319802068
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -103,14 +195,16 @@ intro: "## Vote purpose\n\nPromote the development of small businesses and coope
 is_vote_primary: true
 name: Small Business Development
 programmes:
-- name: Administration
-  total_budget: 124729000.0
-- name: Sector Policy and Research
-  total_budget: 22413000.0
-- name: Integrated Cooperative Development
-  total_budget: 111034000.0
-- name: Enterprise Development and Entrepreneurship
-  total_budget: 1230277000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 124729000.0
+  - name: Sector Policy and Research
+    total_budget: 22413000.0
+  - name: Integrated Cooperative Development
+    total_budget: 111034000.0
+  - name: Enterprise Development and Entrepreneurship
+    total_budget: 1230277000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: small-business-development

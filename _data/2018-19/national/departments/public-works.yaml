@@ -18,52 +18,198 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Public Works budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 263487000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 199395000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 11585000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 5876000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 6000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 178080000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 148590000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2764000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 1516862000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 720158000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 178000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Expanded Public Works Programme
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 36076000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 16150000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 725000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 5150000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Intergovernmental Coordination
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 51627000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 27596000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 8100000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 10368000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 200000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Prestige Policy
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 17405000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 13108000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 300000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 4163419000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 28362000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 27523000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 236000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Property and Construction Industry Policy and Research
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 6022038000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 6281147000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 6403346000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 6985130000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 7453326000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 7898974000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 8346418000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 7060915557
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 7002890604
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 6716328718
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 6985130000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 7065325566
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 7111490976
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 7119833281
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 6022038000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 6281147000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 6403346000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 6985130000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 7453326000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 7898974000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 8346418000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 7060915557
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 7002890604
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 6716328718
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 6985130000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 7065325566
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 7111490976
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 7119833281
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -110,16 +256,18 @@ intro: "## Vote purpose\n\nProvide policy formulation for, as well as coordinati
 is_vote_primary: true
 name: Public Works
 programmes:
-- name: Administration
-  total_budget: 480349000.0
-- name: Intergovernmental Coordination
-  total_budget: 58101000.0
-- name: Expanded Public Works Programme
-  total_budget: 2566632000.0
-- name: Property and Construction Industry Policy and Research
-  total_budget: 4250353000.0
-- name: Prestige Policy
-  total_budget: 97891000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 480349000.0
+  - name: Intergovernmental Coordination
+    total_budget: 58101000.0
+  - name: Expanded Public Works Programme
+    total_budget: 2566632000.0
+  - name: Property and Construction Industry Policy and Research
+    total_budget: 4250353000.0
+  - name: Prestige Policy
+    total_budget: 97891000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: public-works

@@ -18,52 +18,147 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Community Safety budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 31907000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 8971000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1195000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 24937000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 9104000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 669000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 15209000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 6501000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Provincial Policing Functions
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 35436000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 13138000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1641000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 4500000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 463000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Provincial Secretariat for Police Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 49995000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 29577000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1331000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Security Risk Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 138763000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 166418000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 191099000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 229685000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 234574000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 248071000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 246096000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 191930021
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 218094174
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 236671920
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 269308561
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 261528039
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 260196213
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 246096000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 138763000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 166418000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 191099000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 229685000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 234574000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 248071000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 246096000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 191930021
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 218094174
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 236671920
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 269308561
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 261528039
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 260196213
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 246096000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -107,14 +202,16 @@ intro: "## Vision\r\n\r\nA safer open opportunity society for all building resil
 is_vote_primary: true
 name: Community Safety
 programmes:
-- name: Administration
-  total_budget: 42073000
-- name: Provincial Secretariat for Police Services
-  total_budget: 55178000
-- name: Provincial Policing Functions
-  total_budget: 56420000
-- name: Security Risk Management
-  total_budget: 80903000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 42073000
+  - name: Provincial Secretariat for Police Services
+    total_budget: 55178000
+  - name: Provincial Policing Functions
+    total_budget: 56420000
+  - name: Security Risk Management
+    total_budget: 80903000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: community-safety

@@ -19,52 +19,174 @@ contributed_datasets:
 description: 'Mpumalanga department: Economic Development and Tourism budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 53070000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 26619000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2000000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: ''
+        total_budget: 5000000
+        type: economic_classification_2
+      name: Payments for financial assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 19553000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 10043000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 52205000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Business Regulation and Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 7681000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 5326000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Economic Planning
+    type: programme
+  - items: []
+    name: Environmental Services
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 27161000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 24096000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1500000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 158656000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Integrated Economic Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 2780000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1419000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 100000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 330436000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Tourism
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 10593000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 4793000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Trade and Sector Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 599666000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 719210000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 736071000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 769093000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 743031000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 753573000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 861424000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 829427934
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 942539335
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 911607790
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 901771249
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 828409971
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 790406137
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 861424000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 599666000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 719210000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 736071000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 769093000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 743031000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 753573000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 861424000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 829427934
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 942539335
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 911607790
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 901771249
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 828409971
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 790406137
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 861424000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -115,20 +237,22 @@ intro: "## Vision\r\n\r\nAn Inclusive, Globally Competitive Economy\r\n\r\n\r\n\
 is_vote_primary: true
 name: Economic Development and Tourism
 programmes:
-- name: Administration
-  total_budget: 86689000
-- name: Integrated Economic Development
-  total_budget: 211413000
-- name: Trade and Sector Development
-  total_budget: 15386000
-- name: Business Regulation and Governance
-  total_budget: 81801000
-- name: Economic Planning
-  total_budget: 13007000
-- name: Environmental Services
-  total_budget: 0
-- name: Tourism
-  total_budget: 334735000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 86689000
+  - name: Integrated Economic Development
+    total_budget: 211413000
+  - name: Trade and Sector Development
+    total_budget: 15386000
+  - name: Business Regulation and Governance
+    total_budget: 81801000
+  - name: Economic Planning
+    total_budget: 13007000
+  - name: Environmental Services
+    total_budget: 0
+  - name: Tourism
+    total_budget: 334735000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: economic-development-and-tourism

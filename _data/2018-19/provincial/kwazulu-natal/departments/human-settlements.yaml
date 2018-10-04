@@ -18,52 +18,135 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Human Settlements budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 144604000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 76185000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 4098000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 637000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 250000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 192578000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Housing Asset Management, Property Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 179962000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 76549000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 861000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 2846616000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 106929000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Housing Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 15779000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 2189000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: Housing Needs, Research And  Planning
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 3873178000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 4131025000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 3529003000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 4066733960.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 3647237000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 3787798000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 4057407000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 4541350087
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 4605705957
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 3701493593
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 4066733960
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 3457371490
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 3410175966
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 3461132835
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 3873178000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 4131025000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 3529003000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 4066733960.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 3647237000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 3787798000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 4057407000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 4541350087
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 4605705957
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 3701493593
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 4066733960
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 3457371490
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 3410175966
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 3461132835
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,16 +176,18 @@ intro: ''
 is_vote_primary: true
 name: Human Settlements
 programmes:
-- name: Administration
-  total_budget: 225774000.0
-- name: Housing Needs, Research And  Planning
-  total_budget: 17968000.0
-- name: Housing Development
-  total_budget: 3210917000.0
-- name: Housing Asset Management, Property Management
-  total_budget: 192578000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 225774000.0
+  - name: Housing Needs, Research And  Planning
+    total_budget: 17968000.0
+  - name: Housing Development
+    total_budget: 3210917000.0
+  - name: Housing Asset Management, Property Management
+    total_budget: 192578000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: human-settlements

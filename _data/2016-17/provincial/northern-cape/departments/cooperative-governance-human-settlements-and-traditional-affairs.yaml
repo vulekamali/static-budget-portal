@@ -19,52 +19,150 @@ contributed_datasets:
 description: 'Northern Cape department: Cooperative Governance, Human Settlements
   and Traditional Affairs budget data for the 2016-17 financial year from National
   Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 74350000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 14139000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1488000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 108529000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 11498000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1189000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 9332000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 4000000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Co-operative Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 40369000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 17531000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 625000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 373109000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Human Settlement
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 16552000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 2137000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 122000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1205000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Traditional Institutional Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 581941000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 841569000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 651875000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 716472000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 676175000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 726059000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 772180000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 762645518
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1042264750
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 764331664
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 798799174
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 709225078
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 726059000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 731982351
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 581941000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 841569000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 651875000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 716472000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 676175000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 726059000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 772180000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 762645518
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1042264750
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 764331664
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 798799174
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 709225078
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 726059000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 731982351
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -104,14 +202,16 @@ intro: "## Vision\r\n\r\nPeople of the Northern Cape living in integrated human 
 is_vote_primary: true
 name: Cooperative Governance, Human Settlements and Traditional Affairs
 programmes:
-- name: Administration
-  total_budget: 89977000
-- name: Human Settlement
-  total_budget: 431634000
-- name: Co-operative Governance
-  total_budget: 134548000
-- name: Traditional Institutional Management
-  total_budget: 20016000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 89977000
+  - name: Human Settlement
+    total_budget: 431634000
+  - name: Co-operative Governance
+    total_budget: 134548000
+  - name: Traditional Institutional Management
+    total_budget: 20016000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: cooperative-governance-human-settlements-and-traditional-affairs

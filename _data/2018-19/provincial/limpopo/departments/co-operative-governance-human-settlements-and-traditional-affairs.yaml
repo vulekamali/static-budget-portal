@@ -19,52 +19,171 @@ contributed_datasets:
 description: 'Limpopo department: Co-Operative Governance, Human Settlements And Traditional
   Affairs budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 231985630.5
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 138681652.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 1514040.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 3298785.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 2999041.0
+        type: economic_classification_2
+      - name: Departmental Agencies And Accounts
+        total_budget: 517.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 277907518.87
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 24460118.3148
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 2256126.6
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 389402.6661
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Coorperative Governance
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 115616000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 15635000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 758000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1312187000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 207000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Human Settlements
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 415799820.54
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 5771111.011
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 50000000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 6892613.262
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Non-Profit Institutions
+        total_budget: 17514329.61
+        type: economic_classification_2
+      - name: Households
+        total_budget: 131873.6694
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Traditional Institutional Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1525470000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2185684000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2679638000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 2667839000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2624005580.0433
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2680955000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2838158000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 1788632827
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2436832945
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2810613334
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 2667839000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2487406791
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2413678952
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2421063956
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1525470000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2185684000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2679638000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2667839000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2624005580.0433
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2680955000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2838158000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 1788632827
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2436832945
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2810613334
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2667839000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2487406791
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2413678952
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2421063956
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -94,16 +213,18 @@ intro: ''
 is_vote_primary: true
 name: Co-Operative Governance, Human Settlements And Traditional Affairs
 programmes:
-- name: Administration
-  total_budget: 378479665.5
-- name: Human Settlements
-  total_budget: 1444403000.0
-- name: Coorperative Governance
-  total_budget: 305013166.4509
-- name: Traditional Institutional Development
-  total_budget: 496109748.0924
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 378479665.5
+  - name: Human Settlements
+    total_budget: 1444403000.0
+  - name: Coorperative Governance
+    total_budget: 305013166.4509
+  - name: Traditional Institutional Development
+    total_budget: 496109748.0924
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: co-operative-governance-human-settlements-and-traditional-affairs

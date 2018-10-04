@@ -18,52 +18,144 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Agriculture and Rural Development budget data for
   the 2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 113273000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 63040000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 3706000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 962000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 214000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 204938000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 150056000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 7354000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 315000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 11885000
+        type: economic_classification_2
+      - name: Higher education institutions
+        total_budget: 4210000
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 400000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 210000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Agriculture And Rural Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 146379000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 39862000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 30839000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 209000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Environmental Affairs
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 515888000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 543698000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 615022000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 811940000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 777852000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 852053000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 886212000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 676081718
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 673358049
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 721121057
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 905237052
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 815871846
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 852053000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 840078147
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 515888000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 543698000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 615022000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 811940000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 777852000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 852053000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 886212000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 676081718
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 673358049
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 721121057
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 905237052
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 815871846
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 852053000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 840078147
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -107,12 +199,14 @@ intro: "## Vision\n\nAn economically transformed agricultural sector including a
 is_vote_primary: true
 name: Agriculture and Rural Development
 programmes:
-- name: Administration
-  total_budget: 181195000
-- name: Agriculture And Rural Development
-  total_budget: 379368000
-- name: Environmental Affairs
-  total_budget: 217289000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 181195000
+  - name: Agriculture And Rural Development
+    total_budget: 379368000
+  - name: Environmental Affairs
+    total_budget: 217289000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: agriculture-and-rural-development

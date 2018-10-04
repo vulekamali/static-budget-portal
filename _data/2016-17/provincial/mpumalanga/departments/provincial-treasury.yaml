@@ -18,6 +18,9 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Mpumalanga department: Provincial Treasury budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes: []
 expenditure_over_time: null
 financial_years:
 - closest_match:
@@ -69,14 +72,16 @@ intro: "## Vision\n\nA dynamic Provincial Treasury leading in service excellence
 is_vote_primary: true
 name: Provincial Treasury
 programmes:
-- name: Administration
-  total_budget: null
-- name: Sustainable Resources Management
-  total_budget: null
-- name: Asset And Liabilities Management
-  total_budget: null
-- name: Financial Governance
-  total_budget: null
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: null
+  - name: Sustainable Resources Management
+    total_budget: null
+  - name: Asset And Liabilities Management
+    total_budget: null
+  - name: Financial Governance
+    total_budget: null
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: provincial-treasury

@@ -18,52 +18,132 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Premier budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 132331000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 23416000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 499000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 315000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 67091000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 34126000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1460000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 874000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 150000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Institutional Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 39739000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 9069000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 179000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 395000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Policy & Governance
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 252855000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 271881000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 303330000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 317002000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 309644000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 307031000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 322481000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 331371621
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 336718655
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 355658253
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 353427539
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 324778778
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 307031000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 305693492
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 252855000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 271881000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 303330000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 317002000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 309644000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 307031000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 322481000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 331371621
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 336718655
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 355658253
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 353427539
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 324778778
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 307031000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 305693492
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -111,12 +191,14 @@ intro: "## Vision\r\n\r\nLeading the Free State Province towards service excelle
 is_vote_primary: true
 name: Premier
 programmes:
-- name: Administration
-  total_budget: 156561000
-- name: Institutional Development
-  total_budget: 103701000
-- name: Policy & Governance
-  total_budget: 49382000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 156561000
+  - name: Institutional Development
+    total_budget: 103701000
+  - name: Policy & Governance
+    total_budget: 49382000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: premier

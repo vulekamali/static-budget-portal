@@ -19,52 +19,165 @@ contributed_datasets:
 description: 'North West department: Community Safety And Transport Management budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 186144000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 135633400.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 3703000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 751000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 30184000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 11977000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 4489000.0
+        type: economic_classification_2
+      - name: Non-Profit Institutions
+        total_budget: 1030000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Provincial Secretariat For Police Service
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 404243000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 81168000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 37000000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 16001000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Public Corporations And Private Enterprises
+        total_budget: 667440000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1189000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Transport Operations
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 366243000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 173985000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 19520000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 19150000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 3073000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 550000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Transport Regulations
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1538857000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1802470000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1881567000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 2078184000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2163473400.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2263071000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2388476000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 1804329254
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2009585228
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1973534223
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 2078184000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2050848698
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2037455623
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2037466960
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1538857000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1802470000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1881567000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2078184000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2163473400.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2263071000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2388476000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 1804329254
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2009585228
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1973534223
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2078184000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2050848698
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2037455623
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2037466960
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -94,16 +207,18 @@ intro: ''
 is_vote_primary: true
 name: Community Safety And Transport Management
 programmes:
-- name: Administration
-  total_budget: 326231400.0
-- name: Provincial Secretariat For Police Service
-  total_budget: 47680000.0
-- name: Transport Operations
-  total_budget: 1207041000.0
-- name: Transport Regulations
-  total_budget: 582521000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 326231400.0
+  - name: Provincial Secretariat For Police Service
+    total_budget: 47680000.0
+  - name: Transport Operations
+    total_budget: 1207041000.0
+  - name: Transport Regulations
+    total_budget: 582521000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: community-safety-and-transport-management
