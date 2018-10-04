@@ -51,7 +51,7 @@ then
     git status
     git diff
 
-    if [[ `git status --porcelain` ]]
+    if [[ `git status --porcelain | grep -v deploy_key` ]]
     then
         # save changes
         git add .
