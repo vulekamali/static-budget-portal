@@ -49,7 +49,7 @@ then
 
     # DEBUG
     git status
-    git diff
+    git diff | head -n 100
 
     if [[ `git status --porcelain | grep -v deploy_key` ]]
     then
