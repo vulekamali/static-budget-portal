@@ -1,18 +1,24 @@
 categories:
 - name: Performance and Expenditure Reviews
   description:  Performance Expenditure Reviews (PERs) involve the close scrutiny of both expenditure and programme performance data, and are widely used internationally for quantifying, assessing and improving the cost effectiveness of public policy and the cost-effectiveness of public spending. They are also used to cost the implications of legislative changes and policy choices.
-  url_path:
-- name: Socio-economic datasets
-  description: External data resources are provided which can help provide context to the budget data in this portal. These can for example be used to compare South African budget allocation to those in other countries, or to compare allocation within South Africa to population density or other demographic data in South Africa.
-  url_path:
+  url_path: /datasets/performance-and-expenditure-reviews
+  slug: performance-and-expenditure-reviews
+- name: Socio-economic data
+  description:
+  url_path: /datasets/socio-economic-data
+  slug: socio-economic-data
 - name: Contributed data and analysis
   description: Contibuted data and documentation for South African government budgets. Hosted by National Treasury in partnership with IMALI YETHU.
-  url_path:
+  url_path: /datasets/contributed
+  slug: contributed
 - name: Estimates of National Expenditure
-  description: The estimates of expenditure data is used to produce the Appropriation Bill and accompanying Estimates of National Expenditure book at the tabling of the budget.
-  url_path:
+  description:
+  url_path: /datasets/estimates-of-national-expenditure
+  slug: estimates-of-national-expenditure
 - name: Estimates of Provincial Expenditure
-  description: The estimates of expenditure data is used by each provincial treasury to produce their Appropriation Bill and accompanying Estimates of Provincial Revenue and Expenditure book at the tabling of their budget.
+  description:
+  url_path: /datasets/estimates-of-provincial-expenditure
+  slug: estimates-of-provincial-expenditure
 name: Datasets and Analysis
 selected_tab: datasets
 slug: datasets
