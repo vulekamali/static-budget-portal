@@ -41,6 +41,21 @@ layout: page-shell
       </div>
     </div>
 
+    {% if page_data.economic_classification_by_programme %}
+      <div class="Section is-bevel u-marginTop20 u-padding30">
+        <h3 class="Section-title">Economic classification of expenditure for each Programme</h3>
+        <p>Each chart shows the economic classification of spending under that Programme. More detail is available in the dataset.</p>
+        <div class="Grid has-threeColumn">
+          {% for programme in page_data.economic_classification_by_programme %}
+          <div class="BasicContent">
+            <div class="BasicContent-title is-small">{{ programme.programme_name }}</div>
+            <div data-component="EconClassificationProgrammes" data-items="{{ programme.items | jsonify | escape }}"></div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
     <div class="u-marginTop20">
       <div
         id="line-chart"
