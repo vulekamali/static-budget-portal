@@ -20,146 +20,197 @@ description: 'National department: Planning, Monitoring and Evaluation budget da
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 99476000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 78501000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 8153000.0
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 500000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 31461000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 25562000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 161000.0
-  programme_name: Evidence and Knowledge Systems
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 39115000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 20015000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 133000.0
-  programme_name: Frontline and Citizen-Based Service Delivery and Monitoring
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 54938000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 22046000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 250000.0
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 158000.0
-  programme_name: National Planning Coordination
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 6401000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 2968000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 36000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 446461000.0
-  programme_name: National Youth Development
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 31683000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 3087000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 250000.0
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 103000.0
-  programme_name: Public Sector Monitoring and Capacity Development
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 49714000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 6010000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 169000.0
-  programme_name: Sector Planning and Monitoring
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 99476000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 78501000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 8153000.0
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 500000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 31461000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 25562000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 161000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Evidence and Knowledge Systems
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 39115000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 20015000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 133000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Frontline and Citizen-Based Service Delivery and Monitoring
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 54938000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 22046000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Software and other intangible assets
+        total_budget: 250000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 158000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: National Planning Coordination
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 6401000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 2968000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 36000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 446461000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: National Youth Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 31683000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 3087000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Software and other intangible assets
+        total_budget: 250000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 103000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Public Sector Monitoring and Capacity Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 49714000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 6010000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 169000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Sector Planning and Monitoring
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 740550000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 748777000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 781246000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 898496000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 927351000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 972200000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1032300000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 868304221
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 834816223
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 819431738
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 898496000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 879075560
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 875277159
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 880593794
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 740550000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 748777000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 781246000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 898496000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 927351000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 972200000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1032300000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 868304221
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 834816223
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 819431738
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 898496000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 879075560
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 875277159
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 880593794
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -203,20 +254,22 @@ intro: "## Vote purpose\n\nImprove government service delivery through integrate
 is_vote_primary: true
 name: Planning, Monitoring and Evaluation
 programmes:
-- name: Administration
-  total_budget: 186630000.0
-- name: National Planning Coordination
-  total_budget: 77392000.0
-- name: Sector Planning and Monitoring
-  total_budget: 55893000.0
-- name: Public Sector Monitoring and Capacity Development
-  total_budget: 35123000.0
-- name: Frontline and Citizen-Based Service Delivery and Monitoring
-  total_budget: 59263000.0
-- name: Evidence and Knowledge Systems
-  total_budget: 57184000.0
-- name: National Youth Development
-  total_budget: 455866000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 186630000.0
+  - name: National Planning Coordination
+    total_budget: 77392000.0
+  - name: Sector Planning and Monitoring
+    total_budget: 55893000.0
+  - name: Public Sector Monitoring and Capacity Development
+    total_budget: 35123000.0
+  - name: Frontline and Citizen-Based Service Delivery and Monitoring
+    total_budget: 59263000.0
+  - name: Evidence and Knowledge Systems
+    total_budget: 57184000.0
+  - name: National Youth Development
+    total_budget: 455866000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: planning-monitoring-and-evaluation

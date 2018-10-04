@@ -20,78 +20,95 @@ description: 'National department: Centre for Public Service Innovation budget d
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 9917000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 9220000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 154000.0
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 99000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 1000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 9508000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 7131000.0
-  programme_name: Public Sector Innovation
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 9917000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 9220000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 154000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 99000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 1000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 9508000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 7131000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Public Sector Innovation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 22553000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 28055000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 31407000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 34055000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 36030000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 38437000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 40969000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 26443677
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 31278697
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 32942111
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 34055000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 34154373
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 34605048
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 34948219
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 22553000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 28055000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 31407000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 34055000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 36030000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 38437000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 40969000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 26443677
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 31278697
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 32942111
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 34055000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 34154373
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 34605048
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 34948219
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -139,10 +156,12 @@ intro: '## Vote purpose
 is_vote_primary: false
 name: Centre for Public Service Innovation
 programmes:
-- name: Administration
-  total_budget: 19391000.0
-- name: Public Sector Innovation
-  total_budget: 16639000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 19391000.0
+  - name: Public Sector Innovation
+    total_budget: 16639000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: centre-for-public-service-innovation

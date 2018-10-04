@@ -19,126 +19,167 @@ contributed_datasets:
 description: 'National department: Science and Technology budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 183290000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 174032000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 12194000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 14286000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 50352000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 18572000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 52527000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 14948000.0
-  programme_name: International Cooperation and Resources
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 36211000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 16354000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 4057600000.0
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 250139000.0
-  programme_name: Research, Development and Support
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 42968000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 9659000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 1163023000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 562610000.0
-  programme_name: Socio-Economic Innovation Partnerships
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 49317000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 22550000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 677132000.0
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 276027000.0
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 106697000.0
-  programme_name: Technology Innovation
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 183290000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 174032000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 12194000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 14286000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 50352000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 18572000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 52527000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 14948000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: International Cooperation and Resources
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 36211000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 16354000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 4057600000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 250139000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Research, Development and Support
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 42968000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 9659000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 1163023000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 562610000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Socio-Economic Innovation Partnerships
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 49317000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 22550000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 677132000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 276027000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 106697000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Technology Innovation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 6389044000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 7437462000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 7383594000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 7557229000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 7790488000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 8248401000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 8709152000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 7491234724
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 8292073526
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 7744489276
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 7557229000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 7384935804
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 7426082081
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 7429260104
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 6389044000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 7437462000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 7383594000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 7557229000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 7790488000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 8248401000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 8709152000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 7491234724
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 8292073526
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 7744489276
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 7557229000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 7384935804
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 7426082081
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 7429260104
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -178,16 +219,18 @@ intro: "## Vote purpose\n\nRealise the full potential of science and technology 
 is_vote_primary: true
 name: Science and Technology
 programmes:
-- name: Administration
-  total_budget: 383802000.0
-- name: Technology Innovation
-  total_budget: 1131723000.0
-- name: International Cooperation and Resources
-  total_budget: 136399000.0
-- name: Research, Development and Support
-  total_budget: 4360304000.0
-- name: Socio-Economic Innovation Partnerships
-  total_budget: 1778260000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 383802000.0
+  - name: Technology Innovation
+    total_budget: 1131723000.0
+  - name: International Cooperation and Resources
+    total_budget: 136399000.0
+  - name: Research, Development and Support
+    total_budget: 4360304000.0
+  - name: Socio-Economic Innovation Partnerships
+    total_budget: 1778260000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: science-and-technology

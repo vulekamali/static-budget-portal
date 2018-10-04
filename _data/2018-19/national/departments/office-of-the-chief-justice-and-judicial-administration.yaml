@@ -20,102 +20,131 @@ description: 'National department: Office of the Chief Justice and Judicial Admi
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 102141000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 91625000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 8106000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 956118000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 65973000.0
-  programme_name: Direct charge against the National Revenue Fund
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 53277000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 25083000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 647000.0
-  programme_name: Judicial Education and Support
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 571211000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 177407000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 88910000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1340000.0
-  programme_name: Superior Court Services
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 102141000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 91625000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 8106000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 956118000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 65973000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 53277000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 25083000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 647000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Judicial Education and Support
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 571211000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 177407000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 88910000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1340000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Superior Court Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1552465000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1655356000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1786348000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1985378000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2141838000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2296238000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2462807000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 1820284805
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1845566897
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1873661109
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1985378000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2030339579
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2067316061
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2100874320
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1552465000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1655356000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1786348000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1985378000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2141838000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2296238000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2462807000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 1820284805
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1845566897
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1873661109
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1985378000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2030339579
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2067316061
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2100874320
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -168,14 +197,16 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Office of the Chief Justice and Judicial Administration
 programmes:
-- name: Administration
-  total_budget: 201872000.0
-- name: Direct charge against the National Revenue Fund
-  total_budget: 1022091000.0
-- name: Superior Court Services
-  total_budget: 838868000.0
-- name: Judicial Education and Support
-  total_budget: 79007000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 201872000.0
+  - name: Direct charge against the National Revenue Fund
+    total_budget: 1022091000.0
+  - name: Superior Court Services
+    total_budget: 838868000.0
+  - name: Judicial Education and Support
+    total_budget: 79007000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: office-of-the-chief-justice-and-judicial-administration

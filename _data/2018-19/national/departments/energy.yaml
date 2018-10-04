@@ -19,136 +19,182 @@ contributed_datasets:
 description: 'National department: Energy budget data for the 2018-19 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 164202000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 112335000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 4539000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 1108000.0
-    - economic_classification_2_name: Households
-      total_budget: 454000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 62265000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 19906000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 215024000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 70241000.0
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 2747000.0
-  programme_name: Clean Energy
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 49620000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 17623000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 3463680000.0
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 1904477000.0
-  programme_name: Electrification and Energy Programme and Project Management
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 41632000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 11446000.0
-  programme_name: Energy Policy and Planning
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 27746000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 21794000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 682714000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 62042000.0
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 22290000.0
-  programme_name: Nuclear Energy
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 63363000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 20891000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 2878000.0
-  programme_name: Petroleum and Petroleum Products Regulation
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 164202000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 112335000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 4539000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 1108000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 454000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 62265000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 19906000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 215024000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 70241000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 2747000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Clean Energy
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 49620000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 17623000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 3463680000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 1904477000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Electrification and Energy Programme and Project Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 41632000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 11446000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Energy Policy and Planning
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 27746000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 21794000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 682714000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 62042000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 22290000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Nuclear Energy
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 63363000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 20891000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Foreign governments and international organisations
+        total_budget: 2878000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Petroleum and Petroleum Products Regulation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 6220113000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 7142117000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 7512842000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 8145422000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 7045017000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 7573646000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 7997605000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 7293160994
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 7962791514
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 7880054659
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 8145422000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 6678272052
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 6818596337
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 6822281636
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 6220113000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 7142117000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 7512842000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 8145422000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 7045017000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 7573646000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 7997605000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 7293160994
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 7962791514
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 7880054659
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 8145422000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 6678272052
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 6818596337
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 6822281636
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -209,18 +255,20 @@ intro: "## Vote purpose\n\nFormulate energy policies, regulatory frameworks and 
 is_vote_primary: true
 name: Energy
 programmes:
-- name: Administration
-  total_budget: 282638000.0
-- name: Energy Policy and Planning
-  total_budget: 53078000.0
-- name: Petroleum and Petroleum Products Regulation
-  total_budget: 87132000.0
-- name: Electrification and Energy Programme and Project Management
-  total_budget: 5435400000.0
-- name: Nuclear Energy
-  total_budget: 816586000.0
-- name: Clean Energy
-  total_budget: 370183000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 282638000.0
+  - name: Energy Policy and Planning
+    total_budget: 53078000.0
+  - name: Petroleum and Petroleum Products Regulation
+    total_budget: 87132000.0
+  - name: Electrification and Energy Programme and Project Management
+    total_budget: 5435400000.0
+  - name: Nuclear Energy
+    total_budget: 816586000.0
+  - name: Clean Energy
+    total_budget: 370183000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: energy
