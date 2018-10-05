@@ -7,4 +7,4 @@ const query = {
 };
 
 
-export default preactConnect(EconClassificationProgrammes, 'EconClassificationProgrammes', query);
+export default true;

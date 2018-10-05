@@ -1,23 +1,54 @@
 import renderToString from 'preact-render-to-string';
 import canvg from 'canvg-browser';
-import { h, render, Component } from 'preact';
+import { Component } from 'preact';
 import BarChart from './../../universal/BarChart/index.jsx';
-import ProgrammesChart from './index.jsx';
-import calcShareAction from './partials/calcShareAction.js';
-import getProp from './../../../utilities/js/helpers/getProp.js';
+import Markup from './index.jsx';
+import { preactConnect } from '../../../utilities/js/helpers/connector.js';
 
 
-class ProgrammesChartContainer extends Component {
+class ProgrammesChart extends Component {
   constructor(props) {
     super(props);
+    const { values, files } = this.props;
 
+    this.values.items = values.reduce(
+      (results, val) => {
+        return {
+          ...results,
+          [val.name]: [val.total_budget],
+        };
+      },
+      {},
+    );
+
+    this.values.files = Object.keys(files).reduce(
+      (results, key) => {
+        const object = files[key].formats.reduce(
+          (innerResults, val) => {
+            return {
+              ...innerResults,
+              [`${key} (${val.format.replace(/^xls.+/i, 'Excel')})`]: val.url,
+            };
+          },
+          {},
+        );
+
+        return {
+          ...results,
+          ...object,
+        };
+      },
+      {},
+    );
+
+    
     this.state = {
       selected: 'link',
     };
 
-    this.hasNull = Object.keys(this.props.items).reduce(
+    this.hasNull = Object.keys(this.values.items).reduce(
       (result, key) => {
-        return !this.props.items[key] ? true : result;
+        return !this.values.items[key] ? true : result;
       },
       false,
     );
@@ -30,15 +61,18 @@ class ProgrammesChartContainer extends Component {
 
 
   downloadAction() {
+    const { department, location, year } = this.props;
+    const { items } = this.values;
+
     canvg(this.canvas, renderToString(
       <BarChart
         scale={1.5}
         download={{
-          heading: this.props.department,
-          subHeading: `${this.props.location} Department Budget for ${this.props.year}`,
+          heading: department,
+          subHeading: `${location} Department Budget for ${year}`,
           type: 'Programme budgets chart',
         }}
-        items={this.props.items}
+        items={items}
         guides
         width={900}
       />,
@@ -66,12 +100,13 @@ class ProgrammesChartContainer extends Component {
   render() {
     const { hasNull } = this;
     const { width, mobile } = this.state;
-    const { items, files, year, deptLocation } = this.props;
+    const { year, location } = this.props;
+    const { files, items } = this.values;
     const { downloadAction, canvasAction } = this.events;
 
     return (
-      <ProgrammesChart
-        national={deptLocation === 'National'}
+      <Markup
+        national={location === 'National'}
         {...{
           hasNull,
           width,
@@ -79,7 +114,7 @@ class ProgrammesChartContainer extends Component {
           items,
           files,
           year,
-          deptLocation,
+          location,
           downloadAction,
           canvasAction,
         }}
@@ -89,55 +124,24 @@ class ProgrammesChartContainer extends Component {
 }
 
 
-function scripts() {
-  const nodes = document.getElementsByClassName('js-initProgrammesChart');
-
-  for (let i = 0; i < nodes.length; i++) {
-    const node = nodes[i];
-
-    const rawValues = getProp('values', node, 'json').data;
-    const rawFiles = getProp('files', node, 'json');
-    const year = getProp('year', node);
-    const department = getProp('dept', node);
-    const location = getProp('dept-location', node);
+const query = {
+  values: 'json',
+  year: 'string',
+  files: 'json',
+  dept: 'string',
+  location: 'string',
+};
 
 
-    const items = rawValues.reduce(
-      (results, val) => {
-        return {
-          ...results,
-          [val.name]: [val.total_budget],
-        };
-      },
-      {},
-    );
-
-    const files = Object.keys(rawFiles).reduce(
-      (results, key) => {
-        const object = rawFiles[key].formats.reduce(
-          (innerResults, val) => {
-            return {
-              ...innerResults,
-              [`${key} (${val.format.replace(/^xls.+/i, 'Excel')})`]: val.url,
-            };
-          },
-          {},
-        );
-
-        return {
-          ...results,
-          ...object,
-        };
-      },
-      {},
-    );
-
-    render(
-      <ProgrammesChartContainer {...{ items, year, files, location, department }} />,
-      node,
-    );
-  }
-}
+export default preactConnect(ProgrammesChart, 'ProgrammesChart', query);
 
 
-export default scripts();
+//     render(
+//       <ProgrammesChartContainer {...{ items, year, files, location, department }} />,
+//       node,
+//     );
+//   }
+// }
+
+
+// export default scripts();

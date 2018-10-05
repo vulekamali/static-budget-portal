@@ -1,12 +1,12 @@
 export default function normaliseData(data) {
-  const normaliseLevel2 = (result, { economic_classification_2_name: key, total_budget: value }) => ({
+  const normaliseLevel2 = (result, { name, total_budget: value }) => ({
     ...result,
-    [key]: value,
+    [name]: value,
   });
 
-  const normaliseLevel1 = (result, { economic_classification_1_name: key, items }) => ({
+  const normaliseLevel1 = (result, { name, items }) => ({
     ...result,
-    [key]: items.reduce(normaliseLevel2, {}),
+    [name]: items.reduce(normaliseLevel2, {}),
   });
 
   return data.reduce(normaliseLevel1, {});

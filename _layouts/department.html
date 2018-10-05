@@ -30,25 +30,25 @@ layout: page-shell
 
     <div class="u-marginTop20">
       <div
+        data-component="ProgrammesChart"
         id="programmes-chart"
-        class="js-initProgrammesChart"
-        data-values="{ &quot;data&quot;: {{ page_data.programmes | jsonify | escape }} }"
+        data-values="{{ page_data.programmes.programme_budgets | jsonify | escape }}"
         data-year="{{ page.financial_year }}"
         data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
         data-dept="{{ page_data.name }}"
-        data-dept-location="{{ department_location }}"
+        data-location="{{ department_location }}"
       >
       </div>
     </div>
 
-    {% if page_data.economic_classification_by_programme %}
+    {% if page_data.economic_classification_by_programme.programme_budgets.programmes %}
       <div class="Section is-bevel u-marginTop20 u-padding30">
         <h3 class="Section-title">Economic classification of expenditure for each Programme</h3>
         <p>Each chart shows the economic classification of spending under that Programme. More detail is available in the dataset.</p>
         <div class="Grid has-threeColumn">
-          {% for programme in page_data.economic_classification_by_programme %}
+          {% for programme in page_data.economic_classification_by_programme.programme_budgets.programmes %}
           <div class="BasicContent">
-            <div class="BasicContent-title is-small">{{ programme.programme_name }}</div>
+            <div class="BasicContent-title is-small">{{ programme.name }}</div>
             <div data-component="EconClassificationProgrammes" data-items="{{ programme.items | jsonify | escape }}"></div>
           </div>
           {% endfor %}
@@ -60,8 +60,8 @@ layout: page-shell
       <div
         id="line-chart"
         class="js-initExpenditureChart"
-        data-adjusted="{ &quot;data&quot;:  {{ page_data.expenditure_over_time.real | jsonify | escape }} }"
-        data-not-adjusted="{ &quot;data&quot;: {{ page_data.expenditure_over_time.nominal | jsonify | escape }} }"
+        data-adjusted="{ &quot;data&quot;:  {{ page_data.expenditure_over_time.expenditure.real | jsonify | escape }} }"
+        data-not-adjusted="{ &quot;data&quot;: {{ page_data.expenditure_over_time.expenditure.nominal | jsonify | escape }} }"
         data-year="{{ page.financial_year }}"
         data-location="{{ department_location }}"
         data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
