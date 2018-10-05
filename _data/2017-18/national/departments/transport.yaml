@@ -30,52 +30,252 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Transport budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 199838000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 192716000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2521000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 10621000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 1161000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 75349000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 40365000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 421000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 35216000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 15850000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 2668000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Civil Aviation
+    type: programme
+  - items:
+    - items:
+      - name: Foreign governments and international organisations
+        total_budget: 10000000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 45844000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 35629000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 190000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Integrated Transport Planning
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 66621000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 28384000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 329000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 22489000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 1869000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Maritime Transport
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 223086000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 52193000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 233000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 11882430000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 389041000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 21289000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Public Transport
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 25533000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 18635000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 105000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 19216418000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 59564000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Rail Transport
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 57864000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 47979000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 682000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 16161074000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 10860973000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Road Transport
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 43036844000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 49147098000.00001
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 53320787000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 56287554000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 59805180000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 64960407000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 68556311000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 53300187465
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 57625592677
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 59447683405
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 59038776826
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 59805180000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 61578740063
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 61721634616
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 43036844000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 49147098000.00001
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 53320787000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 56287554000.0
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 59805180000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 64960407000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 68556311000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 53300187465
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 57625592677
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 59447683405
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 59038776826
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 59805180000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 61578740063
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 61721634616
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -159,22 +359,24 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Transport
 programmes:
-- name: Administration
-  total_budget: 406857000.0
-- name: Direct charge against the National Revenue Fund
-  total_budget: 10000000.0
-- name: Integrated Transport Planning
-  total_budget: 81663000.0
-- name: Rail Transport
-  total_budget: 19320255000.0
-- name: Road Transport
-  total_budget: 27128572000.0
-- name: Civil Aviation
-  total_budget: 169869000.0
-- name: Maritime Transport
-  total_budget: 119692000.0
-- name: Public Transport
-  total_budget: 12568272000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 406857000.0
+  - name: Direct charge against the National Revenue Fund
+    total_budget: 10000000.0
+  - name: Integrated Transport Planning
+    total_budget: 81663000.0
+  - name: Rail Transport
+    total_budget: 19320255000.0
+  - name: Road Transport
+    total_budget: 27128572000.0
+  - name: Civil Aviation
+    total_budget: 169869000.0
+  - name: Maritime Transport
+    total_budget: 119692000.0
+  - name: Public Transport
+    total_budget: 12568272000.0
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: transport

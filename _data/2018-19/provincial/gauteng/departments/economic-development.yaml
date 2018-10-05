@@ -18,52 +18,138 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Economic Development budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 150573000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 138285000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 13636000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 32125000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 7646000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 25021000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Business Regulation And Governance
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 61829000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 57683000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: Economic Planning
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 19810000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 300694000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Integrated Economic Development Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 6257000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 696891000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Trade And Sector Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1060655000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1270844000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1359269000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1425973000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1510450000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1587355000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1676058000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 1243631373
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1416872030
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1425707344
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1425973000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1431819968
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1429104686
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1429745494
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1060655000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1270844000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1359269000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1425973000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1510450000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1587355000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1676058000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 1243631373
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1416872030
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1425707344
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1425973000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1431819968
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1429104686
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1429745494
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,18 +179,20 @@ intro: ''
 is_vote_primary: true
 name: Economic Development
 programmes:
-- name: Administration
-  total_budget: 302494000.0
-- name: Integrated Economic Development Services
-  total_budget: 320504000.0
-- name: Trade And Sector Development
-  total_budget: 703148000.0
-- name: Business Regulation And Governance
-  total_budget: 64792000.0
-- name: Economic Planning
-  total_budget: 119512000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 302494000.0
+  - name: Integrated Economic Development Services
+    total_budget: 320504000.0
+  - name: Trade And Sector Development
+    total_budget: 703148000.0
+  - name: Business Regulation And Governance
+    total_budget: 64792000.0
+  - name: Economic Planning
+    total_budget: 119512000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: economic-development

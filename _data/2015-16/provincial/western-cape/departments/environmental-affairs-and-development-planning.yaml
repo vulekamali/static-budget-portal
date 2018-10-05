@@ -19,52 +19,216 @@ contributed_datasets:
 description: 'Western Cape department: Environmental Affairs and Development Planning
   budget data for the 2015-16 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 44090000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 11368000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2572000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 60000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 6000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 8918000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 6792000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 37000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 243974000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 1400000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Biodiversity Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 18917000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 3857000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 136000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Compliance and Enforcement
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 42509000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 11635000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 236000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 5500000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 5000000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 2000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Development Planning
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 1334000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 500000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Environmental Empowerment Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 14139000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 5546000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 92000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Environmental Policy, Planning and Coordination
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 53305000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 20581000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 468000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 2000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Environmental Quality Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 348467000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 376880000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 412199000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 482162000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 502976000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 537907000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 588326000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 481982076
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 493908906
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 510499421
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 565341030
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 560771130
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 564198816
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 588326000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 348467000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 376880000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 412199000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 482162000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 502976000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 537907000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 588326000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 481982076
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 493908906
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 510499421
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 565341030
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 560771130
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 564198816
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 588326000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -104,20 +268,22 @@ intro: "## Vision\n\nA resilient, sustainable, quality and inclusive living envi
 is_vote_primary: true
 name: Environmental Affairs and Development Planning
 programmes:
-- name: Administration
-  total_budget: 58096000
-- name: Environmental Policy, Planning and Coordination
-  total_budget: 19777000
-- name: Compliance and Enforcement
-  total_budget: 22910000
-- name: Environmental Quality Management
-  total_budget: 74356000
-- name: Biodiversity Management
-  total_budget: 261121000
-- name: Environmental Empowerment Services
-  total_budget: 1834000
-- name: Development Planning
-  total_budget: 64882000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 58096000
+  - name: Environmental Policy, Planning and Coordination
+    total_budget: 19777000
+  - name: Compliance and Enforcement
+    total_budget: 22910000
+  - name: Environmental Quality Management
+    total_budget: 74356000
+  - name: Biodiversity Management
+    total_budget: 261121000
+  - name: Environmental Empowerment Services
+    total_budget: 1834000
+  - name: Development Planning
+    total_budget: 64882000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: environmental-affairs-and-development-planning

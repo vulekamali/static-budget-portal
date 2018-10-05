@@ -19,52 +19,168 @@ contributed_datasets:
 description: 'Gauteng department: Sport, Arts, Culture And Recreation budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 88397000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 37511000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 2284000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 101920500.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 60269000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 3454000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 30434000.0
+        type: economic_classification_2
+      - name: Non-Profit Institutions
+        total_budget: 7000000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 2378000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Cultural Affairs
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 46090000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 37207000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 60436000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 16585000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces And Municipalities
+        total_budget: 137220000.0
+        type: economic_classification_2
+      - name: Non-Profit Institutions
+        total_budget: 2900000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 100000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Library And Archives Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 112957000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 108755000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 1217000.0
+        type: economic_classification_2
+      - name: Buildings And Other Fixed Structures
+        total_budget: 1200000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Non-Profit Institutions
+        total_budget: 84337000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Sport And Recreation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 642606000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 704333000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 810112000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 912943850.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 942651500.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 989706000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1079675000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 753463645
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 785265326
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 849708650
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 912943850
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 893579556
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 891037910
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 921006592
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 642606000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 704333000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 810112000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 912943850.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 942651500.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 989706000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1079675000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 753463645
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 785265326
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 849708650
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 912943850
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 893579556
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 891037910
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 921006592
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -94,16 +210,18 @@ intro: ''
 is_vote_primary: true
 name: Sport, Arts, Culture And Recreation
 programmes:
-- name: Administration
-  total_budget: 128192000.0
-- name: Cultural Affairs
-  total_budget: 205455500.0
-- name: Library And Archives Services
-  total_budget: 300538000.0
-- name: Sport And Recreation
-  total_budget: 308466000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 128192000.0
+  - name: Cultural Affairs
+    total_budget: 205455500.0
+  - name: Library And Archives Services
+    total_budget: 300538000.0
+  - name: Sport And Recreation
+    total_budget: 308466000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: sport-arts-culture-and-recreation

@@ -30,52 +30,282 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: National Treasury budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 204418000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 199536000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 6476000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 2080000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1800000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 77547000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 24134000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 674000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Asset and Liability Management
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 65196000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 4767239000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 2567000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+    type: programme
+  - items:
+    - items:
+      - name: Interest and rent on land
+        total_budget: 162353119000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Payments for financial assets
+        total_budget: 387551000.0
+        type: economic_classification_2
+      name: Payments for financial assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 453116145000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 78107000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 28836000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 845000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 19275000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 12586000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Economic Policy, Tax, Financial Regulation and Research
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 777072000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 206111000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 5328000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 99365000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Financial Accounting and Supply Chain Management Systems
+    type: programme
+  - items:
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 5005639000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Financial Intelligence and State Security
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 36030000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 16140000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 556000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Payments for financial assets
+        total_budget: 4869117000.0
+        type: economic_classification_2
+      name: Payments for financial assets
+      type: economic_classification_1
+    - items:
+      - name: Foreign governments and international organisations
+        total_budget: 914918000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: International Financial Relations
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 201945000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 31728000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1783000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 50647000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Public Finance and Budget Management
+    type: programme
+  - items:
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 10218198000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Revenue Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 389256000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 1598289000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 885782000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Technical Support and Development Finance
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 472916726000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 512618434000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 555326953000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 599304451000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 646656035000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 697037606000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 750604180000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 585696993749
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 601051583486
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 619137539900
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 628597251417
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 646656035000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 660751672231
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 675773189418
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 472916726000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 512618434000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 555326953000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 599304451000.0
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 646656035000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 697037606000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 750604180000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 585696993749
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 601051583486
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 619137539900
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 628597251417
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 646656035000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 660751672231
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 675773189418
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -124,28 +354,30 @@ intro: "## Vote purpose\n\n_Support economic growth and development, good govern
 is_vote_primary: true
 name: National Treasury
 programmes:
-- name: Administration
-  total_budget: 414310000.0
-- name: Financial Intelligence and State Security
-  total_budget: 5005639000.0
-- name: Direct charge against the National Revenue Fund
-  total_budget: 615856815000.0
-- name: Economic Policy, Tax, Financial Regulation and Research
-  total_budget: 139649000.0
-- name: Public Finance and Budget Management
-  total_budget: 286103000.0
-- name: Asset and Liability Management
-  total_budget: 102355000.0
-- name: Financial Accounting and Supply Chain Management Systems
-  total_budget: 1087876000.0
-- name: International Financial Relations
-  total_budget: 5836761000.0
-- name: Civil and Military Pensions, Contributions to Funds and Other Benefits
-  total_budget: 4835002000.0
-- name: Technical Support and Development Finance
-  total_budget: 2873327000.0
-- name: Revenue Administration
-  total_budget: 10218198000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 414310000.0
+  - name: Financial Intelligence and State Security
+    total_budget: 5005639000.0
+  - name: Direct charge against the National Revenue Fund
+    total_budget: 615856815000.0
+  - name: Economic Policy, Tax, Financial Regulation and Research
+    total_budget: 139649000.0
+  - name: Public Finance and Budget Management
+    total_budget: 286103000.0
+  - name: Asset and Liability Management
+    total_budget: 102355000.0
+  - name: Financial Accounting and Supply Chain Management Systems
+    total_budget: 1087876000.0
+  - name: International Financial Relations
+    total_budget: 5836761000.0
+  - name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+    total_budget: 4835002000.0
+  - name: Technical Support and Development Finance
+    total_budget: 2873327000.0
+  - name: Revenue Administration
+    total_budget: 10218198000.0
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: national-treasury

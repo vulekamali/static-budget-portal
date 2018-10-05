@@ -19,52 +19,159 @@ contributed_datasets:
 description: 'Free State department: Economic and Small Business Development, Tourism
   and Environmental Affairs budget data for the 2016-17 financial year from National
   Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 88284000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 51261000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1670000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 4000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 32659000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 19901000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 881000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 55551000
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 13508000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Economic and Small Business Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 93363000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 35904000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 39148000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 3148000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 182000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Environmental Affairs
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 8348000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 6300000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 249000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 43187000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Tourism
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 407139000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 432354000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 429772000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 468788000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 493548000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 511786000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 537550000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 533563941
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 535460947
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 503913094
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 522654712
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 517671637
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 511786000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 509566569
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 407139000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 432354000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 429772000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 468788000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 493548000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 511786000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 537550000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 533563941
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 535460947
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 503913094
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 522654712
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 517671637
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 511786000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 509566569
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -99,14 +206,16 @@ intro: "## Vision\r\n\r\nA transformed economy and a prosperous society that is 
 is_vote_primary: true
 name: Economic and Small Business Development, Tourism and Environmental Affairs
 programmes:
-- name: Administration
-  total_budget: 141219000
-- name: Environmental Affairs
-  total_budget: 171745000
-- name: Economic and Small Business Development
-  total_budget: 122500000
-- name: Tourism
-  total_budget: 58084000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 141219000
+  - name: Environmental Affairs
+    total_budget: 171745000
+  - name: Economic and Small Business Development
+    total_budget: 122500000
+  - name: Tourism
+    total_budget: 58084000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: economic-and-small-business-development-tourism-and-environmental-affairs

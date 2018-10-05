@@ -18,52 +18,210 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Police budget data for the 2018-19 financial year
   from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 12793453000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 4477400000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 824854000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 332087000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 233014000.0
+        type: economic_classification_2
+      - name: Biological assets
+        total_budget: 6935000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 550795000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 176799000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 7776000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 3482926000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 252922000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 49965000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 17680000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 1220000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Crime Intelligence
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 15120143000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 2871483000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 644732000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 58300000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 106540000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 10449000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Detective Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 2607622000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 254412000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 74664000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 4593000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 1084000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Protection and Security Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 36797752000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 8284570000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1521531000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 240393000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 27067000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 1000000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Visible Policing
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 72507225000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 76720801000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 80984836000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 86761128000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 91834161000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 98169986000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 104901908000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 85015636406
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 85536507338
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 84943212471
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 86761128000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 87053517523
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 88382993742
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 89485584820
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 72507225000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 76720801000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 80984836000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 86761128000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 91834161000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 98169986000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 104901908000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 85015636406
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 85536507338
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 84943212471
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 86761128000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 87053517523
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 88382993742
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 89485584820
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -109,16 +267,18 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Police
 programmes:
-- name: Administration
-  total_budget: 19403113000.0
-- name: Visible Policing
-  total_budget: 46872313000.0
-- name: Detective Services
-  total_budget: 18811647000.0
-- name: Crime Intelligence
-  total_budget: 3804713000.0
-- name: Protection and Security Services
-  total_budget: 2942375000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 19403113000.0
+  - name: Visible Policing
+    total_budget: 46872313000.0
+  - name: Detective Services
+    total_budget: 18811647000.0
+  - name: Crime Intelligence
+    total_budget: 3804713000.0
+  - name: Protection and Security Services
+    total_budget: 2942375000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: police

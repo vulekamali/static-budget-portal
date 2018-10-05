@@ -19,52 +19,171 @@ contributed_datasets:
 description: 'KwaZulu-Natal department: Co-Operative Governance And Traditional Affairs
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 210244000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 197577000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 33220000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 13414000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 497000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 164147000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 121927000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 43054000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 7208000.0
+        type: economic_classification_2
+      - name: Software And Other Intangible Assets
+        total_budget: 162000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces And Municipalities
+        total_budget: 13650000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 450000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Development And Planning
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 237462000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 62077000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 1130000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 70000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Local Governance
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 367525000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 196556000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 7477000.0
+        type: economic_classification_2
+      - name: Software And Other Intangible Assets
+        total_budget: 85000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1150000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Traditional Institutional Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1482587000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1518088000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1603365000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1626726000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1679082000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1777022000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1891067000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 1738351968
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1692525933
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1681734267
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1626726000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1591673433
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1599862959
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1613156897
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1482587000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1518088000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1603365000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1626726000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1679082000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1777022000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1891067000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 1738351968
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1692525933
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1681734267
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1626726000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1591673433
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1599862959
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1613156897
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -94,16 +213,18 @@ intro: ''
 is_vote_primary: true
 name: Co-Operative Governance And Traditional Affairs
 programmes:
-- name: Administration
-  total_budget: 454952000.0
-- name: Local Governance
-  total_budget: 300739000.0
-- name: Development And Planning
-  total_budget: 350598000.0
-- name: Traditional Institutional Management
-  total_budget: 572793000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 454952000.0
+  - name: Local Governance
+    total_budget: 300739000.0
+  - name: Development And Planning
+    total_budget: 350598000.0
+  - name: Traditional Institutional Management
+    total_budget: 572793000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: co-operative-governance-and-traditional-affairs

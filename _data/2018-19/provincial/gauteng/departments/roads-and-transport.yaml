@@ -18,52 +18,192 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Roads And Transport budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 188460000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 154224000.0
+        type: economic_classification_2
+      - name: Interest And Rent On Land
+        total_budget: 60000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 11810000.0
+        type: economic_classification_2
+      - name: Software And Other Intangible Assets
+        total_budget: 4000000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 550000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 1945268000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Gautrain
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 1248618500.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 279404000.0
+        type: economic_classification_2
+      - name: Interest And Rent On Land
+        total_budget: 50000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 968049500.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 14890000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 6170000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 2500000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Transport Infrastructure
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 62950000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 48700000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 680000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Public Corporations And Private Enterprises
+        total_budget: 2476667000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 120000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Transport Operations
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 171700000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 120527000.0
+        type: economic_classification_2
+      - name: Interest And Rent On Land
+        total_budget: 150000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 4300000.0
+        type: economic_classification_2
+      - name: Software And Other Intangible Assets
+        total_budget: 1800000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 1480000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 690000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Transport Regulation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 5872084000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 6259301000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 7771989000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 6967638000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 7713818000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 8269666000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 7954125000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 6885092600
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 6978534360
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 8151868245
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 6967638000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 7312257041
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 7445227081
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 6785191431
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 5872084000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 6259301000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 7771989000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 6967638000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 7713818000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 8269666000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 7954125000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 6885092600
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 6978534360
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 8151868245
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 6967638000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 7312257041
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 7445227081
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 6785191431
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,18 +233,20 @@ intro: ''
 is_vote_primary: true
 name: Roads And Transport
 programmes:
-- name: Administration
-  total_budget: 359104000.0
-- name: Transport Infrastructure
-  total_budget: 2519682000.0
-- name: Transport Operations
-  total_budget: 2589117000.0
-- name: Transport Regulation
-  total_budget: 300647000.0
-- name: Gautrain
-  total_budget: 1945268000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 359104000.0
+  - name: Transport Infrastructure
+    total_budget: 2519682000.0
+  - name: Transport Operations
+    total_budget: 2589117000.0
+  - name: Transport Regulation
+    total_budget: 300647000.0
+  - name: Gautrain
+    total_budget: 1945268000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: roads-and-transport

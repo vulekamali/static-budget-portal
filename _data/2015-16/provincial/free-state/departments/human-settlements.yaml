@@ -18,52 +18,138 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Human Settlements budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 68897000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 24338000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 765000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 587000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 278000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Housing Assets Management Property  Man
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 65544000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 8830000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1869000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1035076000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Housing Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 14657000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 2507000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 532000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Higher education institutions
+        total_budget: 273000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 263000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Housing Needs, Research & Planning
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1061255000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1068052000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1481761000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1228218000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1224416000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1383022000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1466595000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1467874687
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1399703872
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1835128502
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1440101106
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1365109159
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1450621343
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1466595000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1061255000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1068052000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1481761000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1228218000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1224416000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1383022000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1466595000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 1467874687
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1399703872
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1835128502
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1440101106
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1365109159
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1450621343
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1466595000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -119,14 +205,16 @@ intro: "## Vision\n\nIntegrated and Sustainable Human Settlements\r\n\r\n\n\n## 
 is_vote_primary: true
 name: Human Settlements
 programmes:
-- name: Administration
-  total_budget: 94000000
-- name: Housing Needs, Research & Planning
-  total_budget: 18232000
-- name: Housing Development
-  total_budget: 1111319000
-- name: Housing Assets Management Property  Man
-  total_budget: 865000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 94000000
+  - name: Housing Needs, Research & Planning
+    total_budget: 18232000
+  - name: Housing Development
+    total_budget: 1111319000
+  - name: Housing Assets Management Property  Man
+    total_budget: 865000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: human-settlements

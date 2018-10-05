@@ -18,52 +18,207 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'North West department: Social Development budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 133142000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 55189000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 818000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 2838000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 2083000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 187569000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 40809000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 15100000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 2248000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 137962000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Children and Families
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 89908000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 44437000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 926000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 24000000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Development and Research
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 143068000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 74413000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 11670000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 2972000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 27486000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Restorative Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 210057000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 79678000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 8783000
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 7671000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 99925000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Social Welfare Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 8384000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 3743000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 107000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Special Programs
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 922173000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1048717000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1218083000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1336349000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1414986000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1527345000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1632487000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 1208526475
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1298813005
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1428217690
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1489903970
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1484147679
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1527345000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1547504045
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 922173000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1048717000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1218083000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1336349000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1414986000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1527345000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 1632487000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 1208526475
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1298813005
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1428217690
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1489903970
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1484147679
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1527345000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 1547504045
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -99,18 +254,20 @@ intro: "## Vision\n\nA Caring and Self-reliant Society\r\n\r\n\n\n## Mission\n\n
 is_vote_primary: true
 name: Social Development
 programmes:
-- name: Administration
-  total_budget: 194070000
-- name: Social Welfare Services
-  total_budget: 406114000
-- name: Children and Families
-  total_budget: 383688000
-- name: Restorative Services
-  total_budget: 259609000
-- name: Development and Research
-  total_budget: 159271000
-- name: Special Programs
-  total_budget: 12234000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 194070000
+  - name: Social Welfare Services
+    total_budget: 406114000
+  - name: Children and Families
+    total_budget: 383688000
+  - name: Restorative Services
+    total_budget: 259609000
+  - name: Development and Research
+    total_budget: 159271000
+  - name: Special Programs
+    total_budget: 12234000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: social-development

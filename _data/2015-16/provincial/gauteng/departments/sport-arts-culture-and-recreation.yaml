@@ -19,52 +19,165 @@ contributed_datasets:
 description: 'Gauteng department: Sport, Arts, Culture and Recreation budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 68420000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 30949000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2092000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 136000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 40550000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 24540000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2529000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 25993000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 3500000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Cultural Affairs
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 12373000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 9605000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 235400000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 2572000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 117143000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 27000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Library And Archives Services
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 116533000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 79107000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2307000
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 1950000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 12308000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Sport And Recreation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 409623000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 434025000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 519602000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 663408000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 788034000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 661636000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 682752000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 566569988
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 568798591
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 643515681
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 777854252
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 878584101
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 693975441
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 682752000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 409623000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 434025000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 519602000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 663408000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 788034000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 661636000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 682752000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 566569988
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 568798591
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 643515681
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 777854252
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 878584101
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 693975441
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 682752000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -109,14 +222,16 @@ intro: "## Vision\n\n\u201CAn active, creative and modernised Gauteng City Regio
 is_vote_primary: true
 name: Sport, Arts, Culture and Recreation
 programmes:
-- name: Administration
-  total_budget: 101597000
-- name: Cultural Affairs
-  total_budget: 97112000
-- name: Library And Archives Services
-  total_budget: 377120000
-- name: Sport And Recreation
-  total_budget: 212205000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 101597000
+  - name: Cultural Affairs
+    total_budget: 97112000
+  - name: Library And Archives Services
+    total_budget: 377120000
+  - name: Sport And Recreation
+    total_budget: 212205000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: sport-arts-culture-and-recreation

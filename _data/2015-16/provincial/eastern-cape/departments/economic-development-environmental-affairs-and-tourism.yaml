@@ -19,52 +19,132 @@ contributed_datasets:
 description: 'Eastern Cape department: Economic Development, Environmental Affairs
   and Tourism budget data for the 2015-16 financial year from National Treasury in
   partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 107193000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 80861000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 9783000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 2884000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 42892000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 25264000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 573397000
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 37064000
+        type: economic_classification_2
+      - name: Higher education institutions
+        total_budget: 3634000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 1300000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Economic Development  and Tourism
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 75447000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 17226000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 193081000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 10832000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 1000000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Environmental  Affairs
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 885651000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 807407000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1353816000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1333359000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1181858000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1150786000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1319405000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1224988042
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1058123298
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1676671425
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1563380255
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1317660975
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1207034113
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1319405000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 885651000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 807407000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1353816000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1333359000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1181858000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1150786000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1319405000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 1224988042
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1058123298
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1676671425
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1563380255
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1317660975
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1207034113
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1319405000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -105,12 +185,14 @@ intro: "## Vision\n\nA Province where economic growth and sound environmental ma
 is_vote_primary: true
 name: Economic Development, Environmental Affairs and Tourism
 programmes:
-- name: Administration
-  total_budget: 200721000
-- name: Economic Development  and Tourism
-  total_budget: 683551000
-- name: Environmental  Affairs
-  total_budget: 297586000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 200721000
+  - name: Economic Development  and Tourism
+    total_budget: 683551000
+  - name: Environmental  Affairs
+    total_budget: 297586000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: economic-development-environmental-affairs-and-tourism

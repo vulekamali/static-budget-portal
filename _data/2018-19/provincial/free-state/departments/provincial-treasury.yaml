@@ -18,52 +18,156 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Provincial Treasury budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 79251000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 32296000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 2025000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 369000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 39290000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 33327000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 60000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Asset And Liabilities Management
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 23024000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 18834000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 68000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Financial Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 32602000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 10216000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Provinces And Municipalities
+        total_budget: 33000000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Municipal Finance Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 39870000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 3588000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 12000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Sustainable Resource Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 239063000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 300173000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 316364000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 327890000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 347832000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 343926000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 351622000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 280304384
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 334664780
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 331827238
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 327890000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 329724786
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 309638523
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 299947836
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 239063000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 300173000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 316364000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 327890000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 347832000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 343926000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 351622000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 280304384
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 334664780
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 331827238
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 327890000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 329724786
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 309638523
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 299947836
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,18 +197,20 @@ intro: ''
 is_vote_primary: true
 name: Provincial Treasury
 programmes:
-- name: Administration
-  total_budget: 113941000.0
-- name: Sustainable Resource Management
-  total_budget: 43470000.0
-- name: Asset And Liabilities Management
-  total_budget: 72677000.0
-- name: Financial Governance
-  total_budget: 41926000.0
-- name: Municipal Finance Management
-  total_budget: 75818000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 113941000.0
+  - name: Sustainable Resource Management
+    total_budget: 43470000.0
+  - name: Asset And Liabilities Management
+    total_budget: 72677000.0
+  - name: Financial Governance
+    total_budget: 41926000.0
+  - name: Municipal Finance Management
+    total_budget: 75818000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: provincial-treasury

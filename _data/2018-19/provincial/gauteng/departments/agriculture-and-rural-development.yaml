@@ -18,52 +18,147 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Agriculture And Rural Development budget data for
   the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 139653000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 79508000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 4228000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 850000.0
+        type: economic_classification_2
+      - name: Departmental Agencies And Accounts
+        total_budget: 837000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 284864000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 181907000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 10059000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 3048000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Higher Education Institutions
+        total_budget: 5291000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 4000000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 258000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Agriculture And Rural Development
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 157654000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 54440000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 24477000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 5471000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 455000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Environmental Affairs
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 615022000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 811438000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 771423000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 971896000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 957000000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1010840000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1036994000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 721121057
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 904677369
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 809128610
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 971896000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 907181111
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 910064970
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 884597966
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 615022000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 811438000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 771423000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 971896000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 957000000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1010840000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1036994000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 721121057
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 904677369
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 809128610
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 971896000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 907181111
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 910064970
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 884597966
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,14 +188,16 @@ intro: ''
 is_vote_primary: true
 name: Agriculture And Rural Development
 programmes:
-- name: Administration
-  total_budget: 225076000.0
-- name: Agriculture And Rural Development
-  total_budget: 489427000.0
-- name: Environmental Affairs
-  total_budget: 242497000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 225076000.0
+  - name: Agriculture And Rural Development
+    total_budget: 489427000.0
+  - name: Environmental Affairs
+    total_budget: 242497000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: agriculture-and-rural-development

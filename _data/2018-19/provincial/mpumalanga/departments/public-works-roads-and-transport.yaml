@@ -19,52 +19,189 @@ contributed_datasets:
 description: 'Mpumalanga department: Public Works, Roads And Transport budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 174273000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 73853000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 1431000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 2248000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 46192000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 27672000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 565000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Community Based Programmes
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 321537000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 281067000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 83000000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 3573000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces And Municipalities
+        total_budget: 183030000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 3177000.0
+        type: economic_classification_2
+      - name: Departmental Agencies And Accounts
+        total_budget: 45000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Public Works Infrastructure
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 935769000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 439686000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 1101586000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 8468000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 9118000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Transport Infrastructure
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 491778000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 114677000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 48726000.0
+        type: economic_classification_2
+      - name: Buildings And Other Fixed Structures
+        total_budget: 562000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Public Corporations And Private Enterprises
+        total_budget: 634969000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Transport Operations
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 4241161000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 4390245000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 4599578000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 4777135000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 4987002000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 5172741000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 4694952000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 4972814799
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 4894711978
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 4824396154
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 4777135000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 4727391868
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 4657047984
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 4004984594
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 4241161000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 4390245000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 4599578000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 4777135000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 4987002000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 5172741000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 4694952000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 4972814799
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 4894711978
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 4824396154
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 4777135000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 4727391868
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 4657047984
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 4004984594
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -94,18 +231,20 @@ intro: ''
 is_vote_primary: true
 name: Public Works, Roads And Transport
 programmes:
-- name: Administration
-  total_budget: 251805000.0
-- name: Public Works Infrastructure
-  total_budget: 875429000.0
-- name: Transport Infrastructure
-  total_budget: 2494627000.0
-- name: Transport Operations
-  total_budget: 1290712000.0
-- name: Community Based Programmes
-  total_budget: 74429000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 251805000.0
+  - name: Public Works Infrastructure
+    total_budget: 875429000.0
+  - name: Transport Infrastructure
+    total_budget: 2494627000.0
+  - name: Transport Operations
+    total_budget: 1290712000.0
+  - name: Community Based Programmes
+    total_budget: 74429000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: public-works-roads-and-transport

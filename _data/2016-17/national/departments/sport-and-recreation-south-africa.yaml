@@ -18,52 +18,156 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Sport and Recreation South Africa budget data for
   the 2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 42868000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 11651000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 555708000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 38508000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Active Nation
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 77174000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 55438000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2167000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 83000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 8434000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 7848000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Sport Infrastructure Support
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 7543000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 5727000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 113269000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 11033000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Sport Support
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 55527000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 4380000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 21896000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 9346000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Winning Nation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1054084000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1073029000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 966825000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 980879000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1028600000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1074986000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1135004000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 1381398524
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1328922884
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1133614514
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1093588214
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1078875906
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1074986000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1075918694
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1054084000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1073029000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 966825000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 980879000.0
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1028600000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1074986000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 1135004000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 1381398524
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1328922884
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1133614514
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1093588214
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1078875906
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1074986000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 1075918694
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -105,16 +209,18 @@ intro: "## Vote purpose\n\n_Transform the delivery of sport and recreation by en
 is_vote_primary: true
 name: Sport and Recreation South Africa
 programmes:
-- name: Administration
-  total_budget: 134862000.0
-- name: Active Nation
-  total_budget: 648735000.0
-- name: Winning Nation
-  total_budget: 91149000.0
-- name: Sport Support
-  total_budget: 137572000.0
-- name: Sport Infrastructure Support
-  total_budget: 16282000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 134862000.0
+  - name: Active Nation
+    total_budget: 648735000.0
+  - name: Winning Nation
+    total_budget: 91149000.0
+  - name: Sport Support
+    total_budget: 137572000.0
+  - name: Sport Infrastructure Support
+    total_budget: 16282000.0
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: sport-and-recreation-south-africa

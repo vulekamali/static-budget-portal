@@ -19,52 +19,174 @@ contributed_datasets:
 description: 'Northern Cape department: Environment and Nature Conservation budget
   data for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 39352000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 21169000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 576000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 211000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: ADMINISTRATION
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 23001000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 4880000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 169000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: BIODIVERSITY MANAGEMENT
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 11390000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 2463000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 95000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 63000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: COMPLIANCE AND ENFORCEMENT
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 11326000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1187000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 156000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: ENVIRONMENTAL EMPOWERMENT SERVICES
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 9463000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 798000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 150000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: ENVIRONMENTAL POLICY,PLANNING AND COORDINATION
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 9911000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 3924000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 473000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: ENVIRONMENTAL QUALITY MANAGEMENT
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 102739000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 117641000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 127586000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 134178000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 140757000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 145977000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 154824000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 134641549
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 145695798
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 149596195
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 149595902
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 147636920
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 145977000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 146764272
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 102739000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 117641000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 127586000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 134178000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 140757000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 145977000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 154824000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 134641549
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 145695798
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 149596195
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 149595902
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 147636920
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 145977000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 146764272
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -97,18 +219,20 @@ intro: "## Vision \n\nA prosperous society living sustainably with the natural e
 is_vote_primary: true
 name: Environment and Nature Conservation
 programmes:
-- name: ADMINISTRATION
-  total_budget: 61308000
-- name: ENVIRONMENTAL POLICY,PLANNING AND COORDINATION
-  total_budget: 10411000
-- name: COMPLIANCE AND ENFORCEMENT
-  total_budget: 14011000
-- name: ENVIRONMENTAL QUALITY MANAGEMENT
-  total_budget: 14308000
-- name: BIODIVERSITY MANAGEMENT
-  total_budget: 28050000
-- name: ENVIRONMENTAL EMPOWERMENT SERVICES
-  total_budget: 12669000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: ADMINISTRATION
+    total_budget: 61308000
+  - name: ENVIRONMENTAL POLICY,PLANNING AND COORDINATION
+    total_budget: 10411000
+  - name: COMPLIANCE AND ENFORCEMENT
+    total_budget: 14011000
+  - name: ENVIRONMENTAL QUALITY MANAGEMENT
+    total_budget: 14308000
+  - name: BIODIVERSITY MANAGEMENT
+    total_budget: 28050000
+  - name: ENVIRONMENTAL EMPOWERMENT SERVICES
+    total_budget: 12669000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: environment-and-nature-conservation

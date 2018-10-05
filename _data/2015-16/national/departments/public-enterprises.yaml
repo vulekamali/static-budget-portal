@@ -18,52 +18,93 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Public Enterprises budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 3566000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 154916000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 105000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 23829000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Legal and Governance
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 85065000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Portfolio Management and Strategic Partnerships
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 343677000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1364294000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 269396000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 319538000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 267481000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 274314000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 289795000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 475356788
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1787935040
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 333641037
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 374662337
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 298216262
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 287721918
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 289795000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 343677000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1364294000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 269396000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 319538000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 267481000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 274314000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 289795000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 475356788
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1787935040
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 333641037
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 374662337
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 298216262
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 287721918
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 289795000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -109,12 +150,14 @@ intro: "## Vote purpose\n\n_Drive investment, productivity and transformation in
 is_vote_primary: true
 name: Public Enterprises
 programmes:
-- name: Administration
-  total_budget: 158587000.0
-- name: Legal and Governance
-  total_budget: 23829000.0
-- name: Portfolio Management and Strategic Partnerships
-  total_budget: 85065000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 158587000.0
+  - name: Legal and Governance
+    total_budget: 23829000.0
+  - name: Portfolio Management and Strategic Partnerships
+    total_budget: 85065000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: public-enterprises
