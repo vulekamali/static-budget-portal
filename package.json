@@ -14,8 +14,8 @@
   },
   "homepage": "https://github.com/OpenUpSA/static-budget-portal#readme",
   "scripts": {
-    "build": "webpack --display errors-only --progress -p",
-    "build:dev": "webpack --display errors-only --progress"
+    "build": "webpack --display errors-only --progress -p --config webpack.production.js",
+    "build:dev": "webpack --display errors-only --progress --config webpack.development.js"
   },
   "keywords": [],
   "devDependencies": {
