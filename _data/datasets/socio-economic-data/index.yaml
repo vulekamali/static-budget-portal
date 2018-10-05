@@ -1,22 +1,192 @@
 datasets:
 - author:
-    email: null
-    name: null
+    email: ''
+    name: ''
   category:
+    description: ''
     name: Socio-economic Data
     slug: socio-economic-data
-  created: '2018-07-17T12:21:53.650880'
-  intro_short: "The Open Budgets Portal is the first effort to create a one stop shop to budget data worldwide"
-  description: "The BOOST initiative is a Bank-wide collaborative effort launched in 2010 to facilitate access to budget data and promote effective use for improved decision-making processes, transparency and accountability. Currently deployed in about 40 countries globally, the appeal of the BOOST approach is that it provides user-friendly platforms where all expenditure data can be easily accessed"
-  last_updated: '2018-08-16T09:35:45.943088'
+    url_path: /datasets/socio-economic-data
+  created: '2018-10-05T09:53:37.823115'
+  description: An interactive data portal for StatsSA's primary data sets, such as
+    the national census.
+  intro_short: 'South African headline demographic information '
+  last_updated: '2018-10-05T10:01:36.572059'
   license:
-    name: null
+    name: License not specified
     url: null
-  name: Boost Open Budgets Portal
+  name: StatsSA SuperWEB2 Data Portal
   organization:
     email: null
     facebook: null
-    logo_url: null
+    logo_url: ''
+    name: Statistics South Africa
+    slug: statistics-south-africa
+    telephone: null
+    twitter: null
+    url: null
+  resources:
+  - description: ''
+    format: application/xhtml+xml
+    name: StatsSA SuperWEB2 Data Portal
+    url: http://superweb.statssa.gov.za/webapi/jsf/login.xhtml
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Superweb Dataset List'
+    url: https://data.vulekamali.gov.za/dataset/d85dd467-d091-41b9-b68d-7b26f6a70c4c/resource/93738521-3ab6-4102-9a91-da581e4a68f2/download/jbuvd45.png
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Count of Gender of head of household by household size'
+    url: https://data.vulekamali.gov.za/dataset/d85dd467-d091-41b9-b68d-7b26f6a70c4c/resource/650ebc01-f6e2-4f6c-bb75-3e2285177b61/download/jki40hp.png
+  slug: statssa-superweb2-data-portal
+  url_path: /datasets/socio-economic-data/statssa-superweb2-data-portal
+- author:
+    email: ''
+    name: ''
+  category:
+    description: ''
+    name: Socio-economic Data
+    slug: socio-economic-data
+    url_path: /datasets/socio-economic-data
+  created: '2018-10-05T09:49:31.198401'
+  description: Evaluations from the Department of Planning, Monitoring and Evaluation.
+    It includes Terms of Reference (TORs), evaluation reports, management responses,
+    and progress reports.
+  intro_short: 'Evaluations undertaken by the South African government '
+  last_updated: '2018-10-05T09:51:00.233577'
+  license:
+    name: License not specified
+    url: null
+  name: DPME Evaluations Repository
+  organization:
+    email: null
+    facebook: null
+    logo_url: ''
+    name: Department of Planning, Monitoring and Evaluation
+    slug: department-of-planning-monitoring-and-evaluation
+    telephone: null
+    twitter: null
+    url: null
+  resources:
+  - description: ''
+    format: ''
+    name: DPME Evaluations Repository
+    url: https://evaluations.dpme.gov.za/evaluations.aspx
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Diagnostic Evaluation overview page'
+    url: https://data.vulekamali.gov.za/dataset/68f41fb5-da11-4e83-8f68-7fea8134e81e/resource/b716ad57-131a-461e-a2a4-a70c5b11aa15/download/dpb83le.png
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Report on the Assessment of Government Evaluations'
+    url: https://data.vulekamali.gov.za/dataset/68f41fb5-da11-4e83-8f68-7fea8134e81e/resource/983fda40-b348-41b6-9562-70dbafaedc94/download/uiqfhdv.png
+  slug: dpme-evaluations-repository
+  url_path: /datasets/socio-economic-data/dpme-evaluations-repository
+- author:
+    email: ''
+    name: ''
+  category:
+    description: ''
+    name: Socio-economic Data
+    slug: socio-economic-data
+    url_path: /datasets/socio-economic-data
+  created: '2018-10-05T09:45:54.153842'
+  description: The purpose of the Department of Planning, Monitoring and Evaluation
+    is to improve government service delivery through integrated planning, monitoring
+    and evaluation. It publishes planning, monitoring and evaluation data.
+  intro_short: South African national and provincial government's performance evaluation
+    plans and outcomes information
+  last_updated: '2018-10-05T09:47:55.291116'
+  license:
+    name: License not specified
+    url: null
+  name: Department of Planning, Monitoring and Evaluation (DPME) publications
+  organization:
+    email: null
+    facebook: null
+    logo_url: ''
+    name: Department of Planning, Monitoring and Evaluation
+    slug: department-of-planning-monitoring-and-evaluation
+    telephone: null
+    twitter: null
+    url: null
+  resources:
+  - description: ''
+    format: ''
+    name: DPME publications
+    url: http://www.dpme.gov.za/
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Provincial in-year publications'
+    url: https://data.vulekamali.gov.za/dataset/7f335356-0557-4191-88e3-5216aaa6c483/resource/aa6c0f13-2a33-400f-8c31-e15f57bb946a/download/vmpfmsb.png
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Quarterly performance report: Free State'
+    url: https://data.vulekamali.gov.za/dataset/7f335356-0557-4191-88e3-5216aaa6c483/resource/d273a6e6-0e94-49d1-b72b-ffe86059c373/download/5opqfi1.png
+  slug: department-of-planning-monitoring-and-evaluation-dpme-publications
+  url_path: /datasets/socio-economic-data/department-of-planning-monitoring-and-evaluation-dpme-publications
+- author:
+    email: ''
+    name: ''
+  category:
+    description: ''
+    name: Socio-economic Data
+    slug: socio-economic-data
+    url_path: /datasets/socio-economic-data
+  created: '2018-10-05T09:09:48.767828'
+  description: The International Monetary Fund's (IMF) data portal publishes global
+    financial data, as well as economic and trade indicators.
+  intro_short: Global financial, trade, banking and economic indicator data
+  last_updated: '2018-10-05T09:36:50.450937'
+  license:
+    name: License not specified
+    url: null
+  name: International Monetary Fund (IMF) Data
+  organization:
+    email: null
+    facebook: null
+    logo_url: ''
+    name: International Monetary Fund
+    slug: international-monetary-fund
+    telephone: null
+    twitter: null
+    url: null
+  resources:
+  - description: ''
+    format: ''
+    name: International Monetary Fund (IMF) Data
+    url: http://data.imf.org
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Current Account Surplus - Top Ten Economies'
+    url: https://data.vulekamali.gov.za/dataset/bc6d246a-4f20-4fbc-b6b1-94eadbff9c61/resource/3e4782e5-6d20-41f5-be3b-8fdeda889109/download/smayzgx.png
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Current Account, Balance map'
+    url: https://data.vulekamali.gov.za/dataset/bc6d246a-4f20-4fbc-b6b1-94eadbff9c61/resource/0752e74f-14cc-4069-96f7-5449ffa61606/download/q5eorxk.png
+  slug: international-monetary-fund-imf-data
+  url_path: /datasets/socio-economic-data/international-monetary-fund-imf-data
+- author:
+    email: ''
+    name: ''
+  category:
+    description: ''
+    name: Socio-economic Data
+    slug: socio-economic-data
+    url_path: /datasets/socio-economic-data
+  created: '2018-10-05T08:31:08.006283'
+  description: An interactive tool for exploring data in World Bank's databases.
+  intro_short: 'Global and country specific time-series data for economic and development
+    indicators '
+  last_updated: '2018-10-05T08:58:22.603751'
+  license:
+    name: License not specified
+    url: null
+  name: World Bank Data Bank
+  organization:
+    email: null
+    facebook: null
+    logo_url: ''
     name: World Bank
     slug: world-bank
     telephone: null
@@ -24,36 +194,82 @@ datasets:
     url: null
   resources:
   - description: ''
-    format: ""
-    name: Boost Open Budgets Portal
+    format: ''
+    name: World Bank Data Bank
+    url: http://databank.worldbank.org
+  - description: ''
+    format: PNG
+    name: 'Screenshot: World Development Indicators'
+    url: https://data.vulekamali.gov.za/dataset/2c46410b-569b-46b5-8691-03ebb9a4ef1d/resource/2108dd3a-2a03-493b-b7fa-ccaebb488256/download/xvk7632.png
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Population growth map'
+    url: https://data.vulekamali.gov.za/dataset/2c46410b-569b-46b5-8691-03ebb9a4ef1d/resource/e8d4cb6d-4422-4326-8980-389c7601cdbc/download/yytytks.png
+  slug: world-bank-data-bank
+  url_path: /datasets/socio-economic-data/world-bank-data-bank
+- author:
+    email: ''
+    name: ''
+  category:
+    description: ''
+    name: Socio-economic Data
+    slug: socio-economic-data
+    url_path: /datasets/socio-economic-data
+  created: '2018-10-04T14:13:36.563552'
+  description: The BOOST Open Budgets Portal is a World Bank platform with expenditure
+    data for numerous countries that can be used for analyses and comparison purposes.
+  intro_short: Global budget data
+  last_updated: '2018-10-04T14:35:56.335008'
+  license:
+    name: License not specified
+    url: null
+  name: BOOST Open Budgets Portal
+  organization:
+    email: null
+    facebook: null
+    logo_url: ''
+    name: World Bank
+    slug: world-bank
+    telephone: null
+    twitter: null
+    url: null
+  resources:
+  - description: ''
+    format: ''
+    name: BOOST Open Budgets Portal
     url: http://boost.worldbank.org/
   - description: ''
     format: PNG
-    name: Screenshot of Boost countries
-    url: https://i.imgur.com/qhnkR3p.png
+    name: 'Screenshot: Boost Countries'
+    url: https://data.vulekamali.gov.za/dataset/26a0a219-2fbc-4c1d-9d4b-48e98f7b7d97/resource/cb97ab29-6da3-4df6-9a83-eb9392fcaf4b/download/qhnkr3p.png
   - description: ''
     format: PNG
-    name: Screenshot of a Boost country page
-    url: https://i.imgur.com/uDkR468.png
+    name: 'Screenshot: Country page: Solomon Islands'
+    url: https://data.vulekamali.gov.za/dataset/26a0a219-2fbc-4c1d-9d4b-48e98f7b7d97/resource/ae4c70b1-b2e3-4bf9-a0f5-4e735cb86b5e/download/udkr468.png
   slug: boost-open-budgets-portal
   url_path: /datasets/socio-economic-data/boost-open-budgets-portal
 - author:
-    email: null
-    name: null
+    email: ''
+    name: ''
   category:
+    description: ''
     name: Socio-economic Data
     slug: socio-economic-data
-  created: '2018-07-17T12:13:41.726707'
-  description: This site is designed to make World Bank data easy to find, download, and use. Data displayed on this site are a subset of those available in the World Bank’s DataBank
-  last_updated: '2018-08-16T09:58:16.465043'
+    url_path: /datasets/socio-economic-data
+  created: '2018-10-04T14:20:07.906242'
+  description: The World Bank Open Data site provides an entry-point into the World
+    Bank's Data Bank. It includes demographic, developmental, time-series and geospatial
+    data from the Data Bank's data catalogue.
+  intro_short: Demographic, time-series, survey and geospatial data
+  last_updated: '2018-10-04T14:22:09.907107'
   license:
-    name: null
+    name: License not specified
     url: null
-  name: World Bank Open data
+  name: World Bank Open Data
   organization:
     email: null
     facebook: null
-    logo_url: null
+    logo_url: ''
     name: World Bank
     slug: world-bank
     telephone: null
@@ -61,21 +277,22 @@ datasets:
     url: null
   resources:
   - description: ''
-    format: ""
+    format: ''
     name: World Bank Open Data
     url: https://data.worldbank.org/
   - description: ''
     format: PNG
-    name: Screenshot of searching for indicators
-    url: https://i.imgur.com/9Z6ii19.png
+    name: 'Screenshot: Search for an indicator'
+    url: https://data.vulekamali.gov.za/dataset/aa7bae20-e24d-4f67-b68d-119c9aae7580/resource/17b1f9fc-23f1-48ff-834e-6c4a7f65ff30/download/9z6ii19.png
   - description: ''
     format: PNG
-    name: Screenshot of a chart of an indicator comparing South Africa to Sub-Saharan Africa
-    url: https://i.imgur.com/8I8QdLW.png
+    name: 'Screenshot: View the indicator with selected series'
+    url: https://data.vulekamali.gov.za/dataset/aa7bae20-e24d-4f67-b68d-119c9aae7580/resource/dbfa854d-9178-4b59-99b3-26e2cc2b0368/download/8i8qdlw.png
   slug: world-bank-open-data
   url_path: /datasets/socio-economic-data/world-bank-open-data
-description: External data resources are provided which can help provide context to the budget data in this portal. These can for example be used to compare South African budget allocation to those in other countries, or to compare allocation within South Africa to population density or other demographic data in South Africa.
+description: ''
 name: Socio-economic Data
 selected_tab: datasets
 slug: socio-economic-data
 title: Socio-economic Data - vulekamali
+url_path: /datasets/socio-economic-data
