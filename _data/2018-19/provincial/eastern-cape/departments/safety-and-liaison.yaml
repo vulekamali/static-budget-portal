@@ -19,70 +19,95 @@ contributed_datasets:
 description: 'Eastern Cape department: Safety And Liaison budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 52542000.0
-  programme_name: Administration
-- items: []
-  programme_name: Direct Charges
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 47135000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 1763000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 50000.0
-  programme_name: Provincial Secretariat For Police Service
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 42942000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 9600000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 33868000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 13267000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 1763000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 50000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Provincial Secretariat For Police Service
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 83058000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 83280000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 90631000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 95543000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 101490000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 103823000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 110138000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 97386553
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 92849399
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 95060861
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 95543000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 96206699
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 93472434
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 93952183
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 83058000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 83280000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 90631000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 95543000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 101490000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 103823000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 110138000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 97386553
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 92849399
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 95060861
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 95543000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 96206699
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 93472434
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 93952183
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -112,12 +137,14 @@ intro: ''
 is_vote_primary: true
 name: Safety And Liaison
 programmes:
-- name: Administration
-  total_budget: 52542000.0
-- name: Provincial Secretariat For Police Service
-  total_budget: 48948000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 52542000.0
+  - name: Provincial Secretariat For Police Service
+    total_budget: 48948000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: safety-and-liaison

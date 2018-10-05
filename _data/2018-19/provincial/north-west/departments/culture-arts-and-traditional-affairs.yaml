@@ -20,96 +20,194 @@ description: 'North West department: Culture, Arts And Traditional Affairs budge
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 104162400.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 1139000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 1000000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 141891000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 140596000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 10602000.0
-  programme_name: Cultural Affairs
-- items: []
-  programme_name: Direct Charges
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 125394000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 53812000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 19504000.0
-  programme_name: Library And Archive Services
-- items: []
-  programme_name: Recreation
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 94200000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 24733000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 15016000.0
-  programme_name: Traditional Affairs
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 67164400.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 36963000.0
+        type: economic_classification_2
+      - name: Interest And Rent On Land
+        total_budget: 35000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 1000000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 906000.0
+        type: economic_classification_2
+      - name: Departmental Agencies And Accounts
+        total_budget: 233000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 77123000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 64688000.0
+        type: economic_classification_2
+      - name: Interest And Rent On Land
+        total_budget: 80000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Heritage Assets
+        total_budget: 6736000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 2866000.0
+        type: economic_classification_2
+      - name: Buildings And Other Fixed Structures
+        total_budget: 1000000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 97546000.0
+        type: economic_classification_2
+      - name: Non-Profit Institutions
+        total_budget: 42087000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 963000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Cultural Affairs
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 77327000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 48067000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 50300000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 3512000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces And Municipalities
+        total_budget: 17425000.0
+        type: economic_classification_2
+      - name: Non-Profit Institutions
+        total_budget: 1300000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 779000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Library And Archive Services
+    type: programme
+  - items: []
+    name: Recreation
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 74539000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 19661000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 14593000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 423000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Non-Profit Institutions
+        total_budget: 23757000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 976000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Traditional Affairs
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 501449000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 585294000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 642159000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 745299000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 732049400.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 775236000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 812245000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 587955281
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 652547990
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 673546444
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 745299000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 693940844
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 697949356
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 692877948
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 501449000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 585294000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 642159000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 745299000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 732049400.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 775236000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 812245000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 587955281
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 652547990
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 673546444
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 745299000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 693940844
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 697949356
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 692877948
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -139,18 +237,20 @@ intro: ''
 is_vote_primary: true
 name: Culture, Arts And Traditional Affairs
 programmes:
-- name: Administration
-  total_budget: 106301400.0
-- name: Cultural Affairs
-  total_budget: 293089000.0
-- name: Library And Archive Services
-  total_budget: 198710000.0
-- name: Recreation
-  total_budget: 0.0
-- name: Traditional Affairs
-  total_budget: 133949000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 106301400.0
+  - name: Cultural Affairs
+    total_budget: 293089000.0
+  - name: Library And Archive Services
+    total_budget: 198710000.0
+  - name: Recreation
+    total_budget: 0.0
+  - name: Traditional Affairs
+    total_budget: 133949000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: culture-arts-and-traditional-affairs

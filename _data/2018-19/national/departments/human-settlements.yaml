@@ -19,124 +19,164 @@ contributed_datasets:
 description: 'National department: Human Settlements budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 223779000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 215340000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 3481000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 50000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 19690000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 7015000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 229000.0
-  - economic_classification_1_name: Payments for financial assets
-    items:
-    - economic_classification_2_name: Payments for financial assets
-      total_budget: 80000000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 30391312000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 1079034000.0
-  programme_name: Housing Development Finance
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 162289000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 71950000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1374000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 6892000.0
-    - economic_classification_2_name: Higher education institutions
-      total_budget: 3500000.0
-  programme_name: Human Settlements Delivery Support
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 61526000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 26016000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 893000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 1346000.0
-  programme_name: Human Settlements Policy, Strategy and Planning
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 223779000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 215340000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 3481000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 50000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 19690000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 7015000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 229000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Payments for financial assets
+        total_budget: 80000000.0
+        type: economic_classification_2
+      name: Payments for financial assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 30391312000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 1079034000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Housing Development Finance
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 162289000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 71950000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1374000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 6892000.0
+        type: economic_classification_2
+      - name: Higher education institutions
+        total_budget: 3500000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Human Settlements Delivery Support
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 61526000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 26016000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 893000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Foreign governments and international organisations
+        total_budget: 1346000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Human Settlements Policy, Strategy and Planning
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 29358232000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 30034544000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 30587231000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 33477701000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 32355716000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 33687905000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 35786164000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 34422897542
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 33485703482
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 32082273547
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 33477701000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 30671363021
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 30329411443
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 30527050223
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 29358232000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 30034544000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 30587231000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 33477701000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 32355716000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 33687905000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 35786164000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 34422897542
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 33485703482
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 32082273547
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 33477701000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 30671363021
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 30329411443
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 30527050223
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -191,14 +231,16 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Human Settlements
 programmes:
-- name: Administration
-  total_budget: 442650000.0
-- name: Human Settlements Policy, Strategy and Planning
-  total_budget: 89781000.0
-- name: Human Settlements Delivery Support
-  total_budget: 246005000.0
-- name: Housing Development Finance
-  total_budget: 31577280000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 442650000.0
+  - name: Human Settlements Policy, Strategy and Planning
+    total_budget: 89781000.0
+  - name: Human Settlements Delivery Support
+    total_budget: 246005000.0
+  - name: Housing Development Finance
+    total_budget: 31577280000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: human-settlements

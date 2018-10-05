@@ -25,182 +25,251 @@ contributed_datasets:
 description: 'Northern Cape department: Health budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 124373000
-    - economic_classification_2_name: Goods and services
-      total_budget: 65871000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1945000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 122000
-    - economic_classification_2_name: Households
-      total_budget: 107000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 634044000
-    - economic_classification_2_name: Goods and services
-      total_budget: 270664000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 27816000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1448000
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 751000
-  programme_name: Central Hospital Services
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 1116556000
-    - economic_classification_2_name: Goods and services
-      total_budget: 716998000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 18617000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 119098000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 9821000
-    - economic_classification_2_name: Households
-      total_budget: 5703000
-  programme_name: District Health Services
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 183569000
-    - economic_classification_2_name: Goods and services
-      total_budget: 81838000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 31883000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 405000
-  programme_name: Emergency Medical Services
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 68948000
-    - economic_classification_2_name: Goods and services
-      total_budget: 32185000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 3458000
-  programme_name: Health Care Support Services
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 47549000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 11109000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 322483000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 64995000
-  programme_name: Health Facilities Management
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 69168000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 45154000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1638000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 14113000
-  programme_name: Health Sciences and Training
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 247239000
-    - economic_classification_2_name: Goods and services
-      total_budget: 92905000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 184000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1136000
-  programme_name: Provincial Hospital Services
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 124373000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 65871000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1945000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 122000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 107000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 634044000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 270664000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 27816000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1448000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 751000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Central Hospital Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 1116556000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 716998000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 18617000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 119098000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 9821000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 5703000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: District Health Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 183569000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 81838000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 31883000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 405000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Emergency Medical Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 68948000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 32185000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 3458000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Health Care Support Services
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 47549000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 11109000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 322483000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 64995000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Health Facilities Management
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 69168000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 45154000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1638000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 14113000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Health Sciences and Training
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 247239000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 92905000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 184000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1136000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Provincial Hospital Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 3401801000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 3713980000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 4168265000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 4494185000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 4433893000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 4614995000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 4933205000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 4213055934
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 4354688423
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 4647225069
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 4713851755
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 4433893000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 4374750569
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 4441392368
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 3401801000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 3713980000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 4168265000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 4494185000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 4433893000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 4614995000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 4933205000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 4213055934
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 4354688423
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 4647225069
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 4713851755
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 4433893000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 4374750569
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 4441392368
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -238,22 +307,24 @@ intro: "## Vision\n\nHealth service excellence for all.\r\n\r\n\n\n## Mission\n\
 is_vote_primary: true
 name: Health
 programmes:
-- name: Administration
-  total_budget: 192418000
-- name: District Health Services
-  total_budget: 1986793000
-- name: Emergency Medical Services
-  total_budget: 297695000
-- name: Provincial Hospital Services
-  total_budget: 341464000
-- name: Central Hospital Services
-  total_budget: 934723000
-- name: Health Sciences and Training
-  total_budget: 130073000
-- name: Health Care Support Services
-  total_budget: 104591000
-- name: Health Facilities Management
-  total_budget: 446136000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 192418000
+  - name: District Health Services
+    total_budget: 1986793000
+  - name: Emergency Medical Services
+    total_budget: 297695000
+  - name: Provincial Hospital Services
+    total_budget: 341464000
+  - name: Central Hospital Services
+    total_budget: 934723000
+  - name: Health Sciences and Training
+    total_budget: 130073000
+  - name: Health Care Support Services
+    total_budget: 104591000
+  - name: Health Facilities Management
+    total_budget: 446136000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: health

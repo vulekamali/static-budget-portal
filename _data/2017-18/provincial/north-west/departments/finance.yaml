@@ -19,108 +19,140 @@ contributed_datasets:
 description: 'North West department: Finance budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 97630000
-    - economic_classification_2_name: Goods and services
-      total_budget: 38931000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2488000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1229000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 32479000
-    - economic_classification_2_name: Goods and services
-      total_budget: 15513000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 932000
-  programme_name: Asset and Liabilities Management
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 85291000
-    - economic_classification_2_name: Goods and services
-      total_budget: 58548000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1856000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 77000
-  programme_name: Financial Governance
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 78580000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 71608000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1137000
-  programme_name: Sustainable Resource Management
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 97630000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 38931000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2488000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1229000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 32479000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 15513000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 932000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Asset and Liabilities Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 85291000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 58548000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1856000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 77000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Financial Governance
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 78580000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 71608000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1137000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Sustainable Resource Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 391185000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 421085000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 425598000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 464657000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 486299000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 512081000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 545757000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 484474043
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 493727476
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 474501907
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 487368502
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 486299000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 485423417
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 491348114
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 391185000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 421085000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 425598000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 464657000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 486299000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 512081000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 545757000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 484474043
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 493727476
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 474501907
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 487368502
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 486299000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 485423417
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 491348114
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -164,14 +196,16 @@ intro: "## Vision\n\nWe will be the ultimate financial management authority and 
 is_vote_primary: true
 name: Finance
 programmes:
-- name: Administration
-  total_budget: 140278000
-- name: Sustainable Resource Management
-  total_budget: 151325000
-- name: Asset and Liabilities Management
-  total_budget: 48924000
-- name: Financial Governance
-  total_budget: 145772000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 140278000
+  - name: Sustainable Resource Management
+    total_budget: 151325000
+  - name: Asset and Liabilities Management
+    total_budget: 48924000
+  - name: Financial Governance
+    total_budget: 145772000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: finance

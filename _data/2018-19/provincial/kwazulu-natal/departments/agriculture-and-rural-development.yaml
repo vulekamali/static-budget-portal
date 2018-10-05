@@ -20,84 +20,158 @@ description: 'KwaZulu-Natal department: Agriculture And Rural Development budget
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 476750000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 47342000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 8713000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 1432677000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 197662000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 129525000.0
-  programme_name: Agriculture
-- items: []
-  programme_name: Direct Charges
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 28898000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 2324000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 217000.0
-  programme_name: Rural Development
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 253448000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 223302000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 27789000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 19553000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 4710000.0
+        type: economic_classification_2
+      - name: Departmental Agencies And Accounts
+        total_budget: 2823000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 1180000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 873193000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 559394000.0
+        type: economic_classification_2
+      - name: Interest And Rent On Land
+        total_budget: 90000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 102758000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 26217000.0
+        type: economic_classification_2
+      - name: Biological Assets
+        total_budget: 550000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 120015000.0
+        type: economic_classification_2
+      - name: Public Corporations And Private Enterprises
+        total_budget: 71906000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 4829000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 912000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Agriculture
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 18399000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 10499000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 217000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Public Corporations And Private Enterprises
+        total_budget: 2324000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Rural Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 2003044000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2199187000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2216366000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 2197144000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2324108000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2430041000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2591362000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 2348594369
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2451887526
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2324697527
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 2197144000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2203121085
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2187779659
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2210536952
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 2003044000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2199187000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2216366000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2197144000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2324108000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2430041000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2591362000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 2348594369
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2451887526
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2324697527
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2197144000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2203121085
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2187779659
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2210536952
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -127,14 +201,16 @@ intro: ''
 is_vote_primary: true
 name: Agriculture And Rural Development
 programmes:
-- name: Administration
-  total_budget: 532805000.0
-- name: Agriculture
-  total_budget: 1759864000.0
-- name: Rural Development
-  total_budget: 31439000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 532805000.0
+  - name: Agriculture
+    total_budget: 1759864000.0
+  - name: Rural Development
+    total_budget: 31439000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: agriculture-and-rural-development

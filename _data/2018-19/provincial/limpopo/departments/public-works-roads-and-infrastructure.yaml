@@ -20,90 +20,161 @@ description: 'Limpopo department: Public Works, Roads And Infrastructure budget 
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 349424256.07721
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 30842813.474
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 6213671.612
-  programme_name: Administration
-- items: []
-  programme_name: Direct Charges
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 57715920.4078
-  programme_name: Epwp
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 616862781.588475
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 112970000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 60824000.0
-  programme_name: Infrastructure Operations
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 995797000.0
-    - economic_classification_2_name: Current Payments
-      total_budget: 867003160.4183
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 20521934.7
-  programme_name: Roads Infrastructure
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 264436441.13
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 84987814.94721
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 30842407.474
+        type: economic_classification_2
+      - name: Software And Other Intangible Assets
+        total_budget: 406.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 5769811.517
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 443860.095
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 32575683.495
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 25140236.9128
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: Epwp
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 437749000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 179113781.588475
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 101620000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 11350000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces And Municipalities
+        total_budget: 54397000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 6427000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Infrastructure Operations
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 500908177.9183
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 366094982.5
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 20521934.7
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 988918000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 5236000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 1643000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Roads Infrastructure
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 2787867000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2685343000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2988778000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 3428053071.164648
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 3118175538.277785
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 3201303000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 3377178000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 3268809242
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2993905932
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 3134863478
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 3428053071
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2955851568
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2882151200
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2880869892
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 2787867000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2685343000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2988778000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 3428053071.164648
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 3118175538.277785
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 3201303000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 3377178000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 3268809242
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2993905932
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 3134863478
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 3428053071
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2955851568
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2882151200
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2880869892
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -133,16 +204,18 @@ intro: ''
 is_vote_primary: true
 name: Public Works, Roads And Infrastructure
 programmes:
-- name: Administration
-  total_budget: 386480741.16321003
-- name: Infrastructure Operations
-  total_budget: 790656781.588475
-- name: Epwp
-  total_budget: 57715920.4078
-- name: Roads Infrastructure
-  total_budget: 1883322095.1183
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 386480741.16321003
+  - name: Infrastructure Operations
+    total_budget: 790656781.588475
+  - name: Epwp
+    total_budget: 57715920.4078
+  - name: Roads Infrastructure
+    total_budget: 1883322095.1183
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: public-works-roads-and-infrastructure

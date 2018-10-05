@@ -19,82 +19,119 @@ contributed_datasets:
 description: 'Northern Cape department: Office Of The Premier budget data for the
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 64297000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 9723000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 453000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 26057000.0
-  programme_name: Direct Charges
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 35318000.0
-    - economic_classification_2_name: Current Payments
-      total_budget: 15346000.0
-  programme_name: Facilities For Members And Political Parties
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 49086000.0
-  programme_name: Parliamentary Business
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 47332000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 16965000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 9723000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 453000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 26057000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 8592000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 6754000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Non-Profit Institutions
+        total_budget: 35318000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Facilities For Members And Political Parties
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 37328000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 11758000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: Parliamentary Business
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 154766000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 161361000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 187984000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 216471000.0039
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 200280000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 200703000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 212211000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 181465088
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 179902401
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 197172281
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 216471000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 189853953
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 180694046
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 181024595
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 154766000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 161361000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 187984000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 216471000.0039
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 200280000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 200703000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 212211000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 181465088
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 179902401
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 197172281
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 216471000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 189853953
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 180694046
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 181024595
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -124,14 +161,16 @@ intro: ''
 is_vote_primary: true
 name: Office Of The Premier
 programmes:
-- name: Administration
-  total_budget: 74473000.0
-- name: Facilities For Members And Political Parties
-  total_budget: 50664000.0
-- name: Parliamentary Business
-  total_budget: 49086000.0
-- name: Direct Charges
-  total_budget: 26057000.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 74473000.0
+  - name: Facilities For Members And Political Parties
+    total_budget: 50664000.0
+  - name: Parliamentary Business
+    total_budget: 49086000.0
+  - name: Direct Charges
+    total_budget: 26057000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: office-of-the-premier

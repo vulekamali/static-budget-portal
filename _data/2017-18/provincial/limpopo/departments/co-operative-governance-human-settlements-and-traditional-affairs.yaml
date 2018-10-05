@@ -20,126 +20,167 @@ description: 'Limpopo department: Co-operative Governance, Human Settlements and
   Affairs budget data for the 2017-18 financial year from National Treasury in partnership
   with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 208170000
-    - economic_classification_2_name: Goods and services
-      total_budget: 134760000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1029000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 2944000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 2680000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 1193000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 267764000
-    - economic_classification_2_name: Goods and services
-      total_budget: 22086000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 300000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 348000
-  programme_name: Coorperative Governance
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 106941000
-    - economic_classification_2_name: Goods and services
-      total_budget: 14371000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 600000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1321493000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 185000
-  programme_name: Human Settlements
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 398908000
-    - economic_classification_2_name: Goods and services
-      total_budget: 7918000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 70000000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 221000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 19743000
-    - economic_classification_2_name: Households
-      total_budget: 118000
-  programme_name: Traditional Institutional Development
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 208170000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 134760000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1029000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 2944000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 2680000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 1193000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 267764000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 22086000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 300000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 348000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Coorperative Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 106941000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 14371000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 600000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1321493000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 185000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Human Settlements
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 398908000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 7918000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 70000000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 221000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 19743000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 118000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Traditional Institutional Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1186638000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1525470000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2185684000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2813814000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 2581772000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 2645313000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 2794961000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 1469625139
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1788632827
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2436832945
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2951347588
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 2581772000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 2507605003
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 2516319199
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1186638000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1525470000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2185684000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2813814000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2581772000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 2645313000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 2794961000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 1469625139
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1788632827
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2436832945
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2951347588
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2581772000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 2507605003
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 2516319199
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -184,14 +225,16 @@ intro: "## Vision\r\n\r\nIntegrated sustainable human settlements.\r\n\r\n\r\n\r
 is_vote_primary: true
 name: Co-operative Governance, Human Settlements and Traditional Affairs
 programmes:
-- name: Administration
-  total_budget: 350776000
-- name: Human Settlements
-  total_budget: 1443590000
-- name: Coorperative Governance
-  total_budget: 290498000
-- name: Traditional Institutional Development
-  total_budget: 496908000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 350776000
+  - name: Human Settlements
+    total_budget: 1443590000
+  - name: Coorperative Governance
+    total_budget: 290498000
+  - name: Traditional Institutional Development
+    total_budget: 496908000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: co-operative-governance-human-settlements-and-traditional-affairs
