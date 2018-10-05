@@ -19,124 +19,164 @@ contributed_datasets:
 description: 'National department: Mineral Resources budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 186927000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 125077000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 9463000.0
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 1954000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 1973000.0
-    - economic_classification_2_name: Households
-      total_budget: 1606000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 166286000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 33219000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 729000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 4803000.0
-  programme_name: Mine Health and Safety
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 71224000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 58104000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 163000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 449221000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 386306000.0
-  programme_name: Mineral Policy and Promotion
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 193191000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 42830000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 41000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 98439000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 59105000.0
-  programme_name: Mineral Regulation
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 186927000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 125077000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 9463000.0
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 1954000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 1973000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1606000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 166286000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 33219000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 729000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 4803000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Mine Health and Safety
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 71224000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 58104000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 163000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 449221000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 386306000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Mineral Policy and Promotion
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 193191000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 42830000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 41000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 98439000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 59105000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Mineral Regulation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1475157000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1638481000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1661101000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1779449000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1890661000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2015977000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2139723000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 1729640200
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1826752852
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1742292287
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1779449000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1792238190
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1814995497
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1825270556
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1475157000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1638481000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1661101000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1779449000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1890661000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2015977000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2139723000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 1729640200
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1826752852
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1742292287
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1779449000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1792238190
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1814995497
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1825270556
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -176,14 +216,16 @@ intro: "## Vote purpose\n\nPromote and regulate the minerals and mining sector f
 is_vote_primary: true
 name: Mineral Resources
 programmes:
-- name: Administration
-  total_budget: 327000000.0
-- name: Mine Health and Safety
-  total_budget: 205037000.0
-- name: Mineral Regulation
-  total_budget: 393606000.0
-- name: Mineral Policy and Promotion
-  total_budget: 965018000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 327000000.0
+  - name: Mine Health and Safety
+    total_budget: 205037000.0
+  - name: Mineral Regulation
+    total_budget: 393606000.0
+  - name: Mineral Policy and Promotion
+    total_budget: 965018000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: mineral-resources

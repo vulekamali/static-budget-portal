@@ -19,86 +19,107 @@ contributed_datasets:
 description: 'National department: Public Enterprises budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 82288000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 66588000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2980000.0
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 112000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 11000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 59024000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 23827000.0
-  programme_name: Business Enhancement, Transformation and Industrialisation
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 30132000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 8952000.0
-  programme_name: State-owned Companies Governance Assurance and Performance
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 82288000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 66588000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2980000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 112000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 11000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 59024000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 23827000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Business Enhancement, Transformation and Industrialisation
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 30132000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 8952000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: State-owned Companies Governance Assurance and Performance
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 296052000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 23259675000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 253779000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 266696000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 273914000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 293030000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 312835000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 347124706
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 25932359091
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 266183208
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 266696000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 259654761
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 263816566
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 266860950
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 296052000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 23259675000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 253779000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 266696000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 273914000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 293030000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 312835000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 347124706
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 25932359091
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 266183208
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 266696000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 259654761
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 263816566
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 266860950
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -140,12 +161,14 @@ intro: "## Vote purpose\n\nDrive investment, productivity and transformation in 
 is_vote_primary: true
 name: Public Enterprises
 programmes:
-- name: Administration
-  total_budget: 151979000.0
-- name: State-owned Companies Governance Assurance and Performance
-  total_budget: 39084000.0
-- name: Business Enhancement, Transformation and Industrialisation
-  total_budget: 82851000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 151979000.0
+  - name: State-owned Companies Governance Assurance and Performance
+    total_budget: 39084000.0
+  - name: Business Enhancement, Transformation and Industrialisation
+    total_budget: 82851000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: public-enterprises

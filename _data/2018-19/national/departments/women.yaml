@@ -19,98 +19,125 @@ contributed_datasets:
 description: 'National department: Women budget data for the 2018-19 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 47281000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 29499000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 997000.0
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 894000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 23263000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 20845000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 754000.0
-  programme_name: Policy, Stakeholder Coordination and Knowledge Management
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 14907000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 10634000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 397000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 80735000.0
-  programme_name: Social Transformation and Economic Empowerment
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 47281000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 29499000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 997000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 894000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 23263000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 20845000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 754000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Policy, Stakeholder Coordination and Knowledge Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 14907000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 10634000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 397000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 80735000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Social Transformation and Economic Empowerment
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 177528000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 188366000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 194739000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 206163000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 230207000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 244477000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 259751000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 208153820
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 210010447
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 204257452
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 206163000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 218223032
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 220104026
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 221578144
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 177528000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 188366000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 194739000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 206163000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 230207000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 244477000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 259751000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 208153820
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 210010447
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 204257452
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 206163000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 218223032
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 220104026
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 221578144
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -144,12 +171,14 @@ intro: "## Vote purpose\n\nLead, coordinate and oversee the transformation agend
 is_vote_primary: true
 name: Women
 programmes:
-- name: Administration
-  total_budget: 78672000.0
-- name: Social Transformation and Economic Empowerment
-  total_budget: 106673000.0
-- name: Policy, Stakeholder Coordination and Knowledge Management
-  total_budget: 44862000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 78672000.0
+  - name: Social Transformation and Economic Empowerment
+    total_budget: 106673000.0
+  - name: Policy, Stakeholder Coordination and Knowledge Management
+    total_budget: 44862000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: women

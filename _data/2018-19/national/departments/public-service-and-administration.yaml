@@ -19,152 +19,206 @@ contributed_datasets:
 description: 'National department: Public Service and Administration budget data for
   the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 129854000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 116035000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2551000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 340000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 121000.0
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 10000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 35222000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 10611000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 1186000.0
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 249000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 264399000.0
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 272000.0
-  programme_name: Governance of Public Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 15403000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 5964000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 205000.0
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 150000.0
-  programme_name: Government Chief Information Officer
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 26294000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 7604000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 200000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 8000.0
-  programme_name: Policy Development, Research and Analysis
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 49021000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 32816000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 564000.0
-  programme_name: Public Service Employment and Conditions of Service
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 32639000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 18233000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 267000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 204997000.0
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 1441000.0
-  programme_name: Service Delivery Support
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 129854000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 116035000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2551000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Foreign governments and international organisations
+        total_budget: 340000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 121000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 10000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 35222000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 10611000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Software and other intangible assets
+        total_budget: 1186000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 249000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 264399000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 272000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Governance of Public Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 15403000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 5964000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 205000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 150000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Government Chief Information Officer
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 26294000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 7604000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 200000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 8000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Policy Development, Research and Analysis
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 49021000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 32816000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 564000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Public Service Employment and Conditions of Service
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 32639000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 18233000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 267000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 204997000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 1441000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Service Delivery Support
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 787817000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 840949000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 763271000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 877144000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 956656000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1006967000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1076238000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 923725375
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 937579370
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 800578156
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 877144000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 906855019
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 906578086
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 918074691
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 787817000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 840949000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 763271000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 877144000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 956656000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1006967000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1076238000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 923725375
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 937579370
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 800578156
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 877144000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 906855019
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 906578086
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 918074691
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -207,18 +261,20 @@ intro: "## Vote purpose\n\nLead the modernisation of the public service, through
 is_vote_primary: true
 name: Public Service and Administration
 programmes:
-- name: Administration
-  total_budget: 248911000.0
-- name: Policy Development, Research and Analysis
-  total_budget: 34106000.0
-- name: Public Service Employment and Conditions of Service
-  total_budget: 82401000.0
-- name: Government Chief Information Officer
-  total_budget: 21722000.0
-- name: Service Delivery Support
-  total_budget: 257577000.0
-- name: Governance of Public Administration
-  total_budget: 311939000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 248911000.0
+  - name: Policy Development, Research and Analysis
+    total_budget: 34106000.0
+  - name: Public Service Employment and Conditions of Service
+    total_budget: 82401000.0
+  - name: Government Chief Information Officer
+    total_budget: 21722000.0
+  - name: Service Delivery Support
+    total_budget: 257577000.0
+  - name: Governance of Public Administration
+    total_budget: 311939000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: public-service-and-administration

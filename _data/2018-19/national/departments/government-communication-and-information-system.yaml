@@ -20,96 +20,122 @@ description: 'National department: Government Communication and Information Syst
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 88891000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 74473000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 745000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 48000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 86781000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 56839000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1386000.0
-  programme_name: Content Processing and Dissemination
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 92729000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 17469000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1112000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 12000.0
-  programme_name: Intergovernmental Coordination and Stakeholder Management
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 88891000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 74473000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 745000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 48000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 86781000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 56839000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1386000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Content Processing and Dissemination
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 92729000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 17469000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1112000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 12000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Intergovernmental Coordination and Stakeholder Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 364853000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 365241000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 380130000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 401450000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 420485000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 441683000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 471442000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 427794747
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 407209506
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 398709992
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 401450000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 398595663
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 397649703
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 402159158
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 364853000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 365241000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 380130000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 401450000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 420485000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 441683000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 471442000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 427794747
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 407209506
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 398709992
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 401450000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 398595663
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 397649703
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 402159158
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -159,12 +185,14 @@ intro: '## Vote purpose
 is_vote_primary: false
 name: Government Communication and Information System
 programmes:
-- name: Administration
-  total_budget: 164157000.0
-- name: Content Processing and Dissemination
-  total_budget: 145006000.0
-- name: Intergovernmental Coordination and Stakeholder Management
-  total_budget: 111322000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 164157000.0
+  - name: Content Processing and Dissemination
+    total_budget: 145006000.0
+  - name: Intergovernmental Coordination and Stakeholder Management
+    total_budget: 111322000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: government-communication-and-information-system

@@ -19,98 +19,125 @@ contributed_datasets:
 description: 'National department: Military Veterans budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 80343000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 43693000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 3529000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 120734000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 37983000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 15000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 4018000.0
-  programme_name: Empowerment and Stakeholder Management
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 62703000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 40581000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 2500000.0
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 840000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 230148000.0
-  programme_name: Socioeconomic Support
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 80343000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 43693000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 3529000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 120734000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 37983000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 15000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 4018000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Empowerment and Stakeholder Management
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 62703000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 40581000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Software and other intangible assets
+        total_budget: 2500000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 840000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 230148000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Socioeconomic Support
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 463063000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 347951000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 504621000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 622111000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 627087000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 664527000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 703606000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 542947211
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 387932775
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 529285863
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 622111000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 594442509
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 598277417
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 600204472
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 463063000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 347951000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 504621000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 622111000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 627087000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 664527000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 703606000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 542947211
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 387932775
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 529285863
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 622111000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 594442509
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 598277417
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 600204472
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -158,12 +185,14 @@ intro: '## Vote purpose
 is_vote_primary: false
 name: Military Veterans
 programmes:
-- name: Administration
-  total_budget: 127565000.0
-- name: Socioeconomic Support
-  total_budget: 336772000.0
-- name: Empowerment and Stakeholder Management
-  total_budget: 162750000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 127565000.0
+  - name: Socioeconomic Support
+    total_budget: 336772000.0
+  - name: Empowerment and Stakeholder Management
+    total_budget: 162750000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: military-veterans
