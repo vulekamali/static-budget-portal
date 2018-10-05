@@ -18,52 +18,120 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: E-Government budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 165643778.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 76762700.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 2000000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 626466.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 115123000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 6803000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: Human Resources Services
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 708186000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 173381000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 2500000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Higher Education Institutions
+        total_budget: 22800000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Information Communication Technology(Ict) Shared Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1213739000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1154906000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1237378000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1461059217.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1273825944.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1342611000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1421333000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 1423124295
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1287612019
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1297858556
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1461059217
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1207513935
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1208760278
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1212454731
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1213739000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1154906000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1237378000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1461059217.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1273825944.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1342611000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1421333000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 1423124295
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1287612019
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1297858556
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1461059217
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1207513935
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1208760278
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1212454731
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -93,14 +161,16 @@ intro: ''
 is_vote_primary: true
 name: E-Government
 programmes:
-- name: Administration
-  total_budget: 245032944.0
-- name: Information Communication Technology(Ict) Shared Services
-  total_budget: 906867000.0
-- name: Human Resources Services
-  total_budget: 121926000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 245032944.0
+  - name: Information Communication Technology(Ict) Shared Services
+    total_budget: 906867000.0
+  - name: Human Resources Services
+    total_budget: 121926000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: e-government

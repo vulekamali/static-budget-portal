@@ -19,52 +19,141 @@ contributed_datasets:
 description: 'North West department: Local Government and Human Settlements budget
   data for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 129473000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 90905000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 3334000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 5008000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 31652000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 4504000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 128399000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Development and Planning
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 45808000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 5694000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 2186679000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Housing Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 23956000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 3550000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Housing Needs,Planning and Research
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 31556000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 18644000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Local Governance
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1754482000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2189675000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2612189000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2690451000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 2709162000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 2827082000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 2933610000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 2172887479
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2567421572
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2912346073
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2821954852
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 2709162000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 2679911590
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 2641145678
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1754482000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2189675000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2612189000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2690451000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2709162000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 2827082000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 2933610000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 2172887479
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2567421572
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2912346073
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2821954852
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2709162000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 2679911590
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 2641145678
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -104,16 +193,18 @@ intro: "## Vision\n\nA transformed developmental local governance and integrated
 is_vote_primary: true
 name: Local Government and Human Settlements
 programmes:
-- name: Administration
-  total_budget: 228720000
-- name: Local Governance
-  total_budget: 50200000
-- name: Development and Planning
-  total_budget: 164555000
-- name: Housing Needs,Planning and Research
-  total_budget: 27506000
-- name: Housing Development
-  total_budget: 2238181000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 228720000
+  - name: Local Governance
+    total_budget: 50200000
+  - name: Development and Planning
+    total_budget: 164555000
+  - name: Housing Needs,Planning and Research
+    total_budget: 27506000
+  - name: Housing Development
+    total_budget: 2238181000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: local-government-and-human-settlements

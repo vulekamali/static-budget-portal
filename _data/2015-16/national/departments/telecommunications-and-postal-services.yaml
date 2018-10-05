@@ -19,52 +19,147 @@ contributed_datasets:
 description: 'National department: Telecommunications and Postal Services budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1694000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 171956000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 64852000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 573000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 351410000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 31054000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: ICT Enterprise Development and SOE Oversight
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 109000000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 1179000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 351425000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 181160000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: ICT Infrastructure Support
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 520000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 22194000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 20733000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: International Affairs and Trade
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1095000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 104483000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Policy, Research and Capacity Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1325443000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1017886000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1701462000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1616415000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1413328000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1545670000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1275319000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1833286278
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1333960309
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 2107223372
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1895266987
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1575728345
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1621219251
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1275319000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1325443000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1017886000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1701462000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1616415000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1413328000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1545670000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1275319000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 1833286278
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1333960309
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 2107223372
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1895266987
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1575728345
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1621219251
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1275319000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -118,16 +213,18 @@ intro: "## Vote purpose\n\n_Develop information and communication technology (IC
 is_vote_primary: true
 name: Telecommunications and Postal Services
 programmes:
-- name: Administration
-  total_budget: 173650000.0
-- name: International Affairs and Trade
-  total_budget: 43447000.0
-- name: Policy, Research and Capacity Development
-  total_budget: 105578000.0
-- name: ICT Enterprise Development and SOE Oversight
-  total_budget: 447889000.0
-- name: ICT Infrastructure Support
-  total_budget: 642764000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 173650000.0
+  - name: International Affairs and Trade
+    total_budget: 43447000.0
+  - name: Policy, Research and Capacity Development
+    total_budget: 105578000.0
+  - name: ICT Enterprise Development and SOE Oversight
+    total_budget: 447889000.0
+  - name: ICT Infrastructure Support
+    total_budget: 642764000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: telecommunications-and-postal-services

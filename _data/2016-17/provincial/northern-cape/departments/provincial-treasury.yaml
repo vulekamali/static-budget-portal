@@ -18,52 +18,165 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Northern Cape department: Provincial Treasury budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 51893000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 28633000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1191000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 129000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 210000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 56000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 22000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 34877000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 6615000
+        type: economic_classification_2
+      - name: Interest and rent on land
+        total_budget: 16000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 589000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Assets and Liabilities Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 19145000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 3667000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 276000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Financial Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 27219000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 3034000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 199000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Provincial Internal Audit
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 39550000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 4174000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 539000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Sustainable Resource
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 151597000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 180289000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 193099000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 224370000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 222034000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 233685000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 247875000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 198670952
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 223283972
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 226411014
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 250151535
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 232886576
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 233685000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 234971283
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 151597000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 180289000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 193099000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 224370000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 222034000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 233685000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 247875000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 198670952
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 223283972
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 226411014
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 250151535
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 232886576
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 233685000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 234971283
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -115,16 +228,18 @@ intro: "## Vision\n\nTo be the heartbeat of sound financial management that supp
 is_vote_primary: true
 name: Provincial Treasury
 programmes:
-- name: Administration
-  total_budget: 82134000
-- name: Sustainable Resource
-  total_budget: 44263000
-- name: Assets and Liabilities Management
-  total_budget: 42097000
-- name: Financial Governance
-  total_budget: 23088000
-- name: Provincial Internal Audit
-  total_budget: 30452000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 82134000
+  - name: Sustainable Resource
+    total_budget: 44263000
+  - name: Assets and Liabilities Management
+    total_budget: 42097000
+  - name: Financial Governance
+    total_budget: 23088000
+  - name: Provincial Internal Audit
+    total_budget: 30452000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: provincial-treasury

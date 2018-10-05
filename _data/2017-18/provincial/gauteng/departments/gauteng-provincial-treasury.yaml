@@ -18,52 +18,153 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Gauteng Provincial Treasury budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 91902000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 34384000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1635000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1000000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 129892000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 15694000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Financial Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 104180000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 8199000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Gauteng Audit Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 54407000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 6973000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Municipal Financial Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 92511000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 20103000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 10000000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Provincial Supply Chain Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 75424000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 10992000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 55335000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Sustainable Fiscal  Resource Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 429322000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 482189000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 555189000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 641552000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 712631000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 764512000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 813070000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 531705881
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 565372688
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 618983735
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 672909775
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 712631000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 724713527
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 732011520
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 429322000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 482189000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 555189000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 641552000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 712631000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 764512000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 813070000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 531705881
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 565372688
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 618983735
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 672909775
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 712631000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 724713527
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 732011520
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -114,18 +215,20 @@ intro: "## Vision\n\nTo provide strategic leadership in financial and fiscal mat
 is_vote_primary: true
 name: Gauteng Provincial Treasury
 programmes:
-- name: Administration
-  total_budget: 128921000
-- name: Sustainable Fiscal  Resource Management
-  total_budget: 141751000
-- name: Financial Governance
-  total_budget: 145586000
-- name: Provincial Supply Chain Management
-  total_budget: 122614000
-- name: Municipal Financial Governance
-  total_budget: 61380000
-- name: Gauteng Audit Services
-  total_budget: 112379000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 128921000
+  - name: Sustainable Fiscal  Resource Management
+    total_budget: 141751000
+  - name: Financial Governance
+    total_budget: 145586000
+  - name: Provincial Supply Chain Management
+    total_budget: 122614000
+  - name: Municipal Financial Governance
+    total_budget: 61380000
+  - name: Gauteng Audit Services
+    total_budget: 112379000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: gauteng-provincial-treasury

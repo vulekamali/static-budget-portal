@@ -19,52 +19,216 @@ contributed_datasets:
 description: 'National department: Justice and Constitutional Development budget data
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 1500860000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 552324000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 11840000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 14618000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 255000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 37000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 658581000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 194160000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 2309999000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Auxiliary and Associated Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 3573436000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1518134000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 911129000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 97505000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 20943000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 431000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 10000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Court Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 1977024000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 63138000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 3007463000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 482657000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 51255000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 8565000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 7565000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: National Prosecuting Authority
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 959950000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 137300000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 13765000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Foreign governments and international organisations
+        total_budget: 15222000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1705000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 26000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 1000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: State Legal Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 13626004000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 14558593000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 15840330000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 16841542000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 18089898000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 19123673000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 20109884000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 17857155428
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 18030498150
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 18572986841
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 18776741927
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 18974095957
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 19123673000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 19063016639
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 13626004000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 14558593000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 15840330000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 16841542000.0
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 18089898000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 19123673000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 20109884000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 17857155428
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 18030498150
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 18572986841
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 18776741927
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 18974095957
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 19123673000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 19063016639
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -112,18 +276,20 @@ intro: "## Vote purpose\n\n_Uphold and protect the Constitution and the rule of 
 is_vote_primary: true
 name: Justice and Constitutional Development
 programmes:
-- name: Administration
-  total_budget: 2079934000.0
-- name: Court Services
-  total_budget: 6121588000.0
-- name: State Legal Services
-  total_budget: 1127969000.0
-- name: National Prosecuting Authority
-  total_budget: 3557505000.0
-- name: Auxiliary and Associated Services
-  total_budget: 3162740000.0
-- name: Direct charge against the National Revenue Fund
-  total_budget: 2040162000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 2079934000.0
+  - name: Court Services
+    total_budget: 6121588000.0
+  - name: State Legal Services
+    total_budget: 1127969000.0
+  - name: National Prosecuting Authority
+    total_budget: 3557505000.0
+  - name: Auxiliary and Associated Services
+    total_budget: 3162740000.0
+  - name: Direct charge against the National Revenue Fund
+    total_budget: 2040162000.0
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: justice-and-constitutional-development

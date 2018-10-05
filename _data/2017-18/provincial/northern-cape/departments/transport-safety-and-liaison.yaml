@@ -31,52 +31,156 @@ contributed_datasets:
 description: 'Northern Cape department: Transport, Safety and Liaison budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 51554000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 24691000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1586000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 200000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 23602000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 3586000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 650000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 303000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Civilian Oversight
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 130460000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 12669000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 165000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 51121000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 2379000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 7000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Operations
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 71072000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 13836000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1007000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 11000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Regulations
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 310301000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 383975000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 353227000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 374926000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 388899000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 407926000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 431482000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 384300983
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 450215533
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 393815021
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 393251631
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 388899000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 386690451
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 388465685
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 310301000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 383975000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 353227000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 374926000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 388899000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 407926000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 431482000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 384300983
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 450215533
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 393815021
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 393251631
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 388899000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 386690451
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 388465685
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -122,14 +226,16 @@ intro: "## Vision\n\nA leader in the creation and co-ordination of safe, secure 
 is_vote_primary: true
 name: Transport, Safety and Liaison
 programmes:
-- name: Administration
-  total_budget: 78031000
-- name: Civilian Oversight
-  total_budget: 28141000
-- name: Transport Operations
-  total_budget: 196801000
-- name: Transport Regulations
-  total_budget: 85926000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 78031000
+  - name: Civilian Oversight
+    total_budget: 28141000
+  - name: Transport Operations
+    total_budget: 196801000
+  - name: Transport Regulations
+    total_budget: 85926000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: transport-safety-and-liaison

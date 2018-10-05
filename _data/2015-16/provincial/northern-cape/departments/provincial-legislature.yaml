@@ -18,52 +18,117 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Northern Cape department: Provincial Legislature budget data for the
   2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 36186000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 16585000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 30000000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 2890000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 1900000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 385000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 9512000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 6960000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 24370000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Facilities for Members and Political Parties
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 32357000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 10452000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Parliamentary Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 108085000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 117258000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 121891000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 136877000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 171597000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 141449000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 148521000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 149497750
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 153668994
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 150959330
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 160490009
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 191314582
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 148362743
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 148521000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 108085000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 117258000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 121891000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 136877000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 171597000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 141449000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 148521000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 149497750
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 153668994
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 150959330
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 160490009
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 191314582
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 148362743
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 148521000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -112,12 +177,14 @@ intro: "## Vision\n\nAn institution fulfilling its constitutional mandate for th
 is_vote_primary: true
 name: Provincial Legislature
 programmes:
-- name: Administration
-  total_budget: 87946000
-- name: Facilities for Members and Political Parties
-  total_budget: 40842000
-- name: Parliamentary Services
-  total_budget: 42809000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 87946000
+  - name: Facilities for Members and Political Parties
+    total_budget: 40842000
+  - name: Parliamentary Services
+    total_budget: 42809000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: provincial-legislature

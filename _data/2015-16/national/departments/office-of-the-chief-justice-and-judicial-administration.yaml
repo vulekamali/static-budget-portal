@@ -19,52 +19,123 @@ contributed_datasets:
 description: 'National department: Office of the Chief Justice and Judicial Administration
   budget data for the 2015-16 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 9584000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 59824000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 3000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 821454000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 52294000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 380000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 32260000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 3000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Judicial Education and Research
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 3805000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 633558000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 3000000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Judicial Support and Court Administration
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1218155000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1332661000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1457943000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1430017000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1616165000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1724375000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1815983000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1684890897
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1746479350
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1805630431
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1676712980
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1801872602
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1808658993
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1815983000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1218155000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1332661000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1457943000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1430017000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1616165000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1724375000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1815983000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 1684890897
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1746479350
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1805630431
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1676712980
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1801872602
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1808658993
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1815983000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -106,14 +177,16 @@ intro: "## Vote purpose\n\n_Strengthen judicial governance and independence by r
 is_vote_primary: true
 name: Office of the Chief Justice and Judicial Administration
 programmes:
-- name: Administration
-  total_budget: 69411000.0
-- name: Direct charge against the National Revenue Fund
-  total_budget: 873748000.0
-- name: Judicial Support and Court Administration
-  total_budget: 640363000.0
-- name: Judicial Education and Research
-  total_budget: 32643000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 69411000.0
+  - name: Direct charge against the National Revenue Fund
+    total_budget: 873748000.0
+  - name: Judicial Support and Court Administration
+    total_budget: 640363000.0
+  - name: Judicial Education and Research
+    total_budget: 32643000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: office-of-the-chief-justice-and-judicial-administration

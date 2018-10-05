@@ -22,52 +22,147 @@ contributed_datasets:
 description: 'Mpumalanga department: Community Safety, Security and Liaison budget
   data for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 67419000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 41213000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1710000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 400000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 200000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 38302000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 19517000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 461000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Civilian Oversight
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 350865000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 6947000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2000000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Security  Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 309514000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 108555000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 103000000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 17091000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 2176000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Regulation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 844849000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1099184000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1003379000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1249130000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1069370000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1107339000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1180579000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 1107191800
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1361315278
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1176474540
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1392662954
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1121638662
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1107339000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1119121180
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 844849000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1099184000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1003379000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1249130000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1069370000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1107339000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 1180579000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 1107191800
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1361315278
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1176474540
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1392662954
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1121638662
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1107339000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 1119121180
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -100,14 +195,16 @@ intro: "## Vision\n\nA Safe, secure, crime and road accident free Mpumalanga Pro
 is_vote_primary: true
 name: Community Safety, Security and Liaison
 programmes:
-- name: Administration
-  total_budget: 110942000
-- name: Civilian Oversight
-  total_budget: 58280000
-- name: Transport Regulation
-  total_budget: 540336000
-- name: Security  Management
-  total_budget: 359812000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 110942000
+  - name: Civilian Oversight
+    total_budget: 58280000
+  - name: Transport Regulation
+    total_budget: 540336000
+  - name: Security  Management
+    total_budget: 359812000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: community-safety-security-and-liaison

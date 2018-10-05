@@ -19,52 +19,258 @@ contributed_datasets:
 description: 'National department: Agriculture, Forestry and Fisheries budget data
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 434619000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 297193000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 34185000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 3604000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 50000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 18362000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 40000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 591793000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 42792000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2054000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 813189000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 491370000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 12100000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 120000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Agricultural Production, Health and Food Safety
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 216839000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 241759000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Fisheries
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 156788000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 98233000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 33211000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 4109000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 1565339000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 16462000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 5936000.0
+        type: economic_classification_2
+      - name: Higher education institutions
+        total_budget: 5820000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 2200000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1640000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Food Security and Agrarian Reform
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 553715000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 189900000.0
+        type: economic_classification_2
+      - name: Interest and rent on land
+        total_budget: 1013000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 42927000.0
+        type: economic_classification_2
+      - name: Biological assets
+        total_budget: 120000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 146774000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 5084000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 3000000.0
+        type: economic_classification_2
+      - name: Higher education institutions
+        total_budget: 2609000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 420000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Forestry and Natural Resources Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 101628000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 31538000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 567000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 92398000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 36830000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 34525000.0
+        type: economic_classification_2
+      - name: Higher education institutions
+        total_budget: 100000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 10000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Trade Promotion and Market Access
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 5813233000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 6111313000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 6628873000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 6408750000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 6332965000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 6706260000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 6999026000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 7618360102
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 7568727125
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 7772437253
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 7145155997
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 6642507636
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 6706260000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 6634675222
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 5813233000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 6111313000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 6628873000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 6408750000.0
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 6332965000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 6706260000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 6999026000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 7618360102
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 7568727125
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 7772437253
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 7145155997
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 6642507636
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 6706260000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 6634675222
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -102,18 +308,20 @@ intro: "## Vote purpose\r\n\r\nLead, support and promote agricultural, forestry 
 is_vote_primary: true
 name: Agriculture, Forestry and Fisheries
 programmes:
-- name: Administration
-  total_budget: 788053000.0
-- name: Agricultural Production, Health and Food Safety
-  total_budget: 1953418000.0
-- name: Food Security and Agrarian Reform
-  total_budget: 1889738000.0
-- name: Trade Promotion and Market Access
-  total_budget: 297596000.0
-- name: Forestry and Natural Resources Management
-  total_budget: 945562000.0
-- name: Fisheries
-  total_budget: 458598000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 788053000.0
+  - name: Agricultural Production, Health and Food Safety
+    total_budget: 1953418000.0
+  - name: Food Security and Agrarian Reform
+    total_budget: 1889738000.0
+  - name: Trade Promotion and Market Access
+    total_budget: 297596000.0
+  - name: Forestry and Natural Resources Management
+    total_budget: 945562000.0
+  - name: Fisheries
+    total_budget: 458598000.0
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: agriculture-forestry-and-fisheries

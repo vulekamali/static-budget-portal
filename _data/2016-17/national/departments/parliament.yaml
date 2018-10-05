@@ -18,52 +18,162 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Parliament budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 76536000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 37924000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1531000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 180932000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 60211000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 96000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 385478000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Associated Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 380204000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 144724000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1055000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Core Business
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 529798000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 46610000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 25806000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 385000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Strategic Leadership and Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 215255000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 102193000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 691000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Support Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1686998000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1937341000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2147648000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2097370000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 2189429000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 2287483000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 2390828000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 2210845196
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 2399354341
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2518144384
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2338371107
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 2296443901
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 2287483000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 2266367819
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1686998000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1937341000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2147648000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2097370000.0
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 2189429000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 2287483000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 2390828000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 2210845196
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 2399354341
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2518144384
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2338371107
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 2296443901
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 2287483000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 2266367819
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -105,18 +215,20 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Parliament
 programmes:
-- name: Strategic Leadership and Governance
-  total_budget: 72801000.0
-- name: Administration
-  total_budget: 115991000.0
-- name: Core Business
-  total_budget: 525983000.0
-- name: Support Services
-  total_budget: 318139000.0
-- name: Associated Services
-  total_budget: 626717000.0
-- name: Direct charge against the National Revenue Fund
-  total_budget: 529798000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programme_budgets:
+  - name: Strategic Leadership and Governance
+    total_budget: 72801000.0
+  - name: Administration
+    total_budget: 115991000.0
+  - name: Core Business
+    total_budget: 525983000.0
+  - name: Support Services
+    total_budget: 318139000.0
+  - name: Associated Services
+    total_budget: 626717000.0
+  - name: Direct charge against the National Revenue Fund
+    total_budget: 529798000.0
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: parliament

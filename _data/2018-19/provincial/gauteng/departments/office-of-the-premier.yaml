@@ -18,52 +18,123 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Office Of The Premier budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 86117000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 68681000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 6728000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 161844000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 80099000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 3195000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Institutional Development
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 80111000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 76563000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 640000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Non-Profit Institutions
+        total_budget: 117410000.0
+        type: economic_classification_2
+      - name: Higher Education Institutions
+        total_budget: 21306000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Policy & Governance
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 356976000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 417689000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 470326000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 641353666.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 702694000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 695548000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 735712000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 418558865
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 465684113
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 493314592
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 641353666
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 666113609
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 626205799
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 627592193
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 356976000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 417689000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 470326000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 641353666.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 702694000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 695548000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 735712000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 418558865
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 465684113
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 493314592
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 641353666
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 666113609
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 626205799
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 627592193
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,14 +164,16 @@ intro: ''
 is_vote_primary: true
 name: Office Of The Premier
 programmes:
-- name: Administration
-  total_budget: 161526000.0
-- name: Institutional Development
-  total_budget: 245138000.0
-- name: Policy & Governance
-  total_budget: 296030000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 161526000.0
+  - name: Institutional Development
+    total_budget: 245138000.0
+  - name: Policy & Governance
+    total_budget: 296030000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: office-of-the-premier

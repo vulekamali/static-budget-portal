@@ -18,52 +18,189 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Social Development budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 189215000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 66330000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 10862000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 2001000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 310000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 142981000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 13944000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 847000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Non-Profit Institutions
+        total_budget: 303889000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Children And Families
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 107873000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 10141000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 135000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Non-Profit Institutions
+        total_budget: 42990000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 15000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Development And Research
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 119384000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 13265000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 868000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Non-Profit Institutions
+        total_budget: 23381000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Restorative Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 116791000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 11657000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 277000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Non-Profit Institutions
+        total_budget: 88814000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 87000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Social Welfare Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 956335000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1002691000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1090754000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1199009000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1266057000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1320685000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1385346000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 1121314857
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1117906551
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1144067869
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1199009000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1200149421
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1189020176
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1181756360
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 956335000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1002691000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1090754000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1199009000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1266057000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1320685000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1385346000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 1121314857
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1117906551
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1144067869
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1199009000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1200149421
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1189020176
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1181756360
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,18 +230,20 @@ intro: ''
 is_vote_primary: true
 name: Social Development
 programmes:
-- name: Administration
-  total_budget: 268718000.0
-- name: Social Welfare Services
-  total_budget: 217626000.0
-- name: Children And Families
-  total_budget: 461661000.0
-- name: Restorative Services
-  total_budget: 156898000.0
-- name: Development And Research
-  total_budget: 161154000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 268718000.0
+  - name: Social Welfare Services
+    total_budget: 217626000.0
+  - name: Children And Families
+    total_budget: 461661000.0
+  - name: Restorative Services
+    total_budget: 156898000.0
+  - name: Development And Research
+    total_budget: 161154000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: social-development

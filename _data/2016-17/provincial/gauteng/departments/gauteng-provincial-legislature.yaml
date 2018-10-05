@@ -18,52 +18,138 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Gauteng Provincial Legislature budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 137603000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 92192000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Core Business
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 94339000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 92138000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 4028000
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 600000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 102701000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Corporate Support Services
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 32706000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 19669000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Leadership and Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 35241000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 8436000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1314000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Office of the CFO
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 13319000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 7387000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Office of the Secretary
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 472005000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 473919000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 497845000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 600473000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 641673000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 674898000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 715824000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 618572154
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 586938288
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 583729545
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 669471153
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 673036690
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 674898000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 678560096
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 472005000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 473919000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 497845000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 600473000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 641673000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 674898000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 715824000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 618572154
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 586938288
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 583729545
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 669471153
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 673036690
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 674898000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 678560096
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -109,16 +195,18 @@ intro: "## Vision \r\n\r\nA modern and transformative legislature that fosters p
 is_vote_primary: true
 name: Gauteng Provincial Legislature
 programmes:
-- name: Leadership and Governance
-  total_budget: 52375000
-- name: Office of the Secretary
-  total_budget: 20706000
-- name: Corporate Support Services
-  total_budget: 293806000
-- name: Core Business
-  total_budget: 229795000
-- name: Office of the CFO
-  total_budget: 44991000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Leadership and Governance
+    total_budget: 52375000
+  - name: Office of the Secretary
+    total_budget: 20706000
+  - name: Corporate Support Services
+    total_budget: 293806000
+  - name: Core Business
+    total_budget: 229795000
+  - name: Office of the CFO
+    total_budget: 44991000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: gauteng-provincial-legislature

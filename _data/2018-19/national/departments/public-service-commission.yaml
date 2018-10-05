@@ -18,52 +18,144 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Public Service Commission budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 68646000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 56156000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 904000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 113000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 33000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 52660000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1859000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 20000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 3000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Integrity and Anti-Corruption
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 42846000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1613000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 65000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 158000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Leadership and Management Practices
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 38593000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 730000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Monitoring and Evaluation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 225800000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 229320000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 229039000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 242764000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 264399000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 278229000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 297627000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 264753349
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 255670321
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 240233967
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 242764000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 250635087
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 250491142
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 253887909
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 225800000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 229320000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 229039000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 242764000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 264399000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 278229000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 297627000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 264753349
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 255670321
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 240233967
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 242764000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 250635087
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 250491142
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 253887909
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -114,14 +206,16 @@ intro: '## Vote purpose
 is_vote_primary: false
 name: Public Service Commission
 programmes:
-- name: Administration
-  total_budget: 125852000.0
-- name: Leadership and Management Practices
-  total_budget: 44682000.0
-- name: Monitoring and Evaluation
-  total_budget: 39323000.0
-- name: Integrity and Anti-Corruption
-  total_budget: 54542000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 125852000.0
+  - name: Leadership and Management Practices
+    total_budget: 44682000.0
+  - name: Monitoring and Evaluation
+    total_budget: 39323000.0
+  - name: Integrity and Anti-Corruption
+    total_budget: 54542000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: public-service-commission

@@ -18,52 +18,108 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: The Presidency budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 304961000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 139972000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 11032000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 38000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 6742000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 31190000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 17232000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1155000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Executive Support
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 426173000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 472357000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 481046000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 507542000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 512322000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 547232000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 584410000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 499693221
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 526633813
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 504558564
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 507542000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 485651872
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 492676065
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 498525447
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 426173000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 472357000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 481046000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 507542000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 512322000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 547232000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 584410000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 499693221
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 526633813
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 504558564
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 507542000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 485651872
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 492676065
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 498525447
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -97,12 +153,14 @@ intro: "## Vote purpose\n\nFacilitate a common programme towards the achievement
 is_vote_primary: true
 name: The Presidency
 programmes:
-- name: Administration
-  total_budget: 456003000.0
-- name: Direct charge against the National Revenue Fund
-  total_budget: 6742000.0
-- name: Executive Support
-  total_budget: 49577000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 456003000.0
+  - name: Direct charge against the National Revenue Fund
+    total_budget: 6742000.0
+  - name: Executive Support
+    total_budget: 49577000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: the-presidency

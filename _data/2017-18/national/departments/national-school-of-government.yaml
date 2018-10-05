@@ -18,52 +18,84 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: National School of Government budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 51884000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 41046000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2964000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 64612000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Public Sector Organisational and Staff Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 134622000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 133890000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 137638000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 71067000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 160506000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 173291000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 183890000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 166726394
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 156987714
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 153453478
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 74540612
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 160506000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 164269928
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 165557207
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 134622000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 133890000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 137638000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 71067000.0
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 160506000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 173291000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 183890000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 166726394
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 156987714
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 153453478
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 74540612
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 160506000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 164269928
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 165557207
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -106,10 +138,12 @@ intro: "## Department purpose\r\n\r\nProvide or coordinate the provision of lear
 is_vote_primary: false
 name: National School of Government
 programmes:
-- name: Administration
-  total_budget: 95894000.0
-- name: Public Sector Organisational and Staff Development
-  total_budget: 64612000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 95894000.0
+  - name: Public Sector Organisational and Staff Development
+    total_budget: 64612000.0
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: national-school-of-government

@@ -18,52 +18,174 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Labour budget data for the 2018-19 financial year
   from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 474034000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 402874000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 23631000.0
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 16000000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 603000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 243000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 492277000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 71946000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 33928000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 72000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Inspection and Enforcement Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 110672000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 43314000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 88000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 996745000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 25218000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 21023000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 1000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Labour Policy and Industrial Relations
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 311967000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 39599000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1353000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 160239000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 69369000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 47000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Public Employment Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 2419936000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2611995000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2761585000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 3055821000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 3295243000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 3432933000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 3648729000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 2837405501
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2912129781
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2896565739
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 3055821000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 3123701366
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 3090688999
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 3112513915
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 2419936000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2611995000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2761585000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 3055821000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 3295243000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 3432933000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 3648729000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 2837405501
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2912129781
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2896565739
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 3055821000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 3123701366
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 3090688999
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 3112513915
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -113,14 +235,16 @@ intro: "## Vote purpose\n\nPlay a significant role in reducing unemployment, pov
 is_vote_primary: true
 name: Labour
 programmes:
-- name: Administration
-  total_budget: 917385000.0
-- name: Inspection and Enforcement Services
-  total_budget: 598223000.0
-- name: Public Employment Services
-  total_budget: 582574000.0
-- name: Labour Policy and Industrial Relations
-  total_budget: 1197061000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 917385000.0
+  - name: Inspection and Enforcement Services
+    total_budget: 598223000.0
+  - name: Public Employment Services
+    total_budget: 582574000.0
+  - name: Labour Policy and Industrial Relations
+    total_budget: 1197061000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: labour

@@ -18,52 +18,111 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'North West department: Provincial Legislature budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 111333000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 91076000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 89028000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 2456000.0
+        type: economic_classification_2
+      - name: Software And Other Intangible Assets
+        total_budget: 1233000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 59062944.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 48340056.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Non-Profit Institutions
+        total_budget: 37514000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Legislature Operations
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 33855000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: Statutory Payments
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 280293000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 302263000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 394457000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 547400000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 473898000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 488778200.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 487601000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 328647080
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 336994934
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 413737267
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 547400000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 449228123
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 440049778
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 415943441
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 280293000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 302263000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 394457000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 547400000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 473898000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 488778200.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 487601000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 328647080
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 336994934
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 413737267
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 547400000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 449228123
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 440049778
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 415943441
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,14 +152,16 @@ intro: ''
 is_vote_primary: true
 name: Provincial Legislature
 programmes:
-- name: Administration
-  total_budget: 295126000.0
-- name: Statutory Payments
-  total_budget: 33855000.0
-- name: Legislature Operations
-  total_budget: 144917000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 295126000.0
+  - name: Statutory Payments
+    total_budget: 33855000.0
+  - name: Legislature Operations
+    total_budget: 144917000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: provincial-legislature

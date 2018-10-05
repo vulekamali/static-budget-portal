@@ -18,52 +18,144 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Sport, Arts and Culture budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 63432000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 38463000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 1176000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 884000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 25408000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 7542000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 730000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 11000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Cultural Affairs
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 47303000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 37558000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 39000000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 3400000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 50000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Library and Archives
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 51632000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 23024000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 5711000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Sport and Recreation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 255670000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 258520000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 258813000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 324022000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 345324000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 357359000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 378367000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 353629920
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 338795718
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 320534224
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 379919884
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 385003916
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 374825991
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 378367000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 255670000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 258520000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 258813000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 324022000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 345324000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 357359000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 378367000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 353629920
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 338795718
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 320534224
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 379919884
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 385003916
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 374825991
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 378367000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -101,14 +193,16 @@ intro: "## Vision\n\nA champion of Sport, Arts, Culture and Heritage Services fo
 is_vote_primary: true
 name: Sport, Arts and Culture
 programmes:
-- name: Administration
-  total_budget: 103955000
-- name: Cultural Affairs
-  total_budget: 33691000
-- name: Library and Archives
-  total_budget: 127311000
-- name: Sport and Recreation
-  total_budget: 80367000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 103955000
+  - name: Cultural Affairs
+    total_budget: 33691000
+  - name: Library and Archives
+    total_budget: 127311000
+  - name: Sport and Recreation
+    total_budget: 80367000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: sport-arts-and-culture

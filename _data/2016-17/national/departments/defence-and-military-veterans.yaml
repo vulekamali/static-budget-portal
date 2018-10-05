@@ -18,52 +18,321 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Defence and Military Veterans budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 2637075000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 1860533000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 8823000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 618289000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 17738000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 8620000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 30000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 3499610000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 2102018000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 6849000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 1256583000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 18464000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 3000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Air Defence
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 404891000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 38059000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 569000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 452451000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 4278000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Defence Intelligence
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 2170263000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1380617000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 92059000.0
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 1160000.0
+        type: economic_classification_2
+      - name: Specialised military assets
+        total_budget: 993000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 241405000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 8424000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 4714000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Force Employment
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 2422264000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 2028553000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 120643000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 20913000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 326000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 752276000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 551691000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 14376000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 51000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: General Support
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 11295190000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1872384000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 25779000.0
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 132000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 20000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 2379140000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 40390000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 38400000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 3000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Landward Defence
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 2263018000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 719230000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 6633000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 1123038000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 226287000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 17674000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Maritime Defence
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 3362501000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1044892000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2913000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 5612000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 840000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 58000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Military Health Support
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 37702218000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 40447521000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 42842381000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 45088161000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 47169745000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 48744615000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 50725685000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 49409523645
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 50093367715
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 50233232424
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 50269076495
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 49475307596
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 48744615000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 48085040032
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 37702218000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 40447521000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 42842381000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 45088161000.0
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 47169745000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 48744615000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 50725685000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 49409523645
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 50093367715
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 50233232424
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 50269076495
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 49475307596
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 48744615000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 48085040032
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -101,22 +370,24 @@ intro: "## Vote purpose\n\n_Defend and protect the Republic of South Africa, its
 is_vote_primary: true
 name: Defence and Military Veterans
 programmes:
-- name: Administration
-  total_budget: 5151108000.0
-- name: Force Employment
-  total_budget: 3899635000.0
-- name: Landward Defence
-  total_budget: 15651438000.0
-- name: Air Defence
-  total_budget: 6883527000.0
-- name: Maritime Defence
-  total_budget: 4355880000.0
-- name: Military Health Support
-  total_budget: 4416816000.0
-- name: Defence Intelligence
-  total_budget: 900248000.0
-- name: General Support
-  total_budget: 5911093000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 5151108000.0
+  - name: Force Employment
+    total_budget: 3899635000.0
+  - name: Landward Defence
+    total_budget: 15651438000.0
+  - name: Air Defence
+    total_budget: 6883527000.0
+  - name: Maritime Defence
+    total_budget: 4355880000.0
+  - name: Military Health Support
+    total_budget: 4416816000.0
+  - name: Defence Intelligence
+    total_budget: 900248000.0
+  - name: General Support
+    total_budget: 5911093000.0
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: defence-and-military-veterans

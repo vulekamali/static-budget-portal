@@ -18,52 +18,159 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Higher Education and Training budget data for the
   2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 6658000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 311347000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 313000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 14690000000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 628000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 51059000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 3156000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Human Resource Development, Planning and Monitoring Coordination
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1168000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 87683000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 21848000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Skills Development
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 3314798000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 304000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 29480317000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 48906000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: University Education
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 3568000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 7302181000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 1210021000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Vocational and Continuing Education and Training
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 40050115000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 45168370000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 48460204000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 52188456000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 56533955000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 60234246000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 63717020000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 55395310304
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 59194067721
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 60016899887
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 61191623316
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 63030064776
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 63178375220
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 63717020000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 40050115000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 45168370000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 48460204000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 52188456000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 56533955000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 60234246000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 63717020000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 55395310304
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 59194067721
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 60016899887
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 61191623316
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 63030064776
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 63178375220
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 63717020000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -113,18 +220,20 @@ intro: "## Vote purpose\n\n_Develop and support a quality higher and vocational 
 is_vote_primary: true
 name: Higher Education and Training
 programmes:
-- name: Administration
-  total_budget: 318318000.0
-- name: Direct charge against the National Revenue Fund
-  total_budget: 14690000000.0
-- name: Human Resource Development, Planning and Monitoring Coordination
-  total_budget: 54843000.0
-- name: University Education
-  total_budget: 32844325000.0
-- name: Vocational and Continuing Education and Training
-  total_budget: 8515770000.0
-- name: Skills Development
-  total_budget: 110699000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 318318000.0
+  - name: Direct charge against the National Revenue Fund
+    total_budget: 14690000000.0
+  - name: Human Resource Development, Planning and Monitoring Coordination
+    total_budget: 54843000.0
+  - name: University Education
+    total_budget: 32844325000.0
+  - name: Vocational and Continuing Education and Training
+    total_budget: 8515770000.0
+  - name: Skills Development
+    total_budget: 110699000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: higher-education-and-training

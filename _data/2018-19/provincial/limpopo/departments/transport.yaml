@@ -18,52 +18,147 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Transport budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 381798922.66
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 221742179.2
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 7681416.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 4340501.100000001
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 3288000.0
+        type: economic_classification_2
+      - name: Departmental Agencies And Accounts
+        total_budget: 2139000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items: []
+    name: Community Based Programmes
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items: []
+    name: Transport Infrastructure
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 43177930.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 35300110.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Public Corporations And Private Enterprises
+        total_budget: 736834000.0
+        type: economic_classification_2
+      - name: Departmental Agencies And Accounts
+        total_budget: 53380000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 244398.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Transport Operations
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 550343648.1
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 34759403.1
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 27915000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 1500000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1783788.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Transport Regulations
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1704750000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1727714000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1871614000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1990644544.1
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2106228296.16
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2199372000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2326846000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 1998840890
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1926239289
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1963094741
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1990644544
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1996583623
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1980107053
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1984894069
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1704750000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1727714000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1871614000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1990644544.1
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2106228296.16
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2199372000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2326846000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 1998840890
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1926239289
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1963094741
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1990644544
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1996583623
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1980107053
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1984894069
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,18 +188,20 @@ intro: ''
 is_vote_primary: true
 name: Transport
 programmes:
-- name: Administration
-  total_budget: 620990018.96
-- name: Transport Infrastructure
-  total_budget: 0.0
-- name: Transport Operations
-  total_budget: 868936438.0
-- name: Transport Regulations
-  total_budget: 616301839.2
-- name: Community Based Programmes
-  total_budget: 0.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 620990018.96
+  - name: Transport Infrastructure
+    total_budget: 0.0
+  - name: Transport Operations
+    total_budget: 868936438.0
+  - name: Transport Regulations
+    total_budget: 616301839.2
+  - name: Community Based Programmes
+    total_budget: 0.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: transport
