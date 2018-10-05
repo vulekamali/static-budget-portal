@@ -229,7 +229,7 @@ for dataset in listing['datasets']:
 
 # Categorised Datasets
 dataset_categories = [
-#    'socio-economic-data',
+    'socio-economic-data',
     'performance-and-expenditure-reviews',
     'estimates-of-national-expenditure',
     'estimates-of-provincial-expenditure',
