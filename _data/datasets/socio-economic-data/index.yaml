@@ -7,6 +7,40 @@ datasets:
     name: Socio-economic Data
     slug: socio-economic-data
     url_path: /datasets/socio-economic-data
+  created: '2018-10-05T11:44:58.386858'
+  description: The 2011 Census, aggregated using the 2016 municipal boundaries. The
+    census contains demographic information on individuals and households in South
+    Africa down to the level of communities and wards.
+  intro_short: South African 2011 Census data reflecting the 2016 municipal boundaries
+  last_updated: '2018-10-05T11:45:18.567375'
+  license:
+    name: License not specified
+    url: null
+  name: Census 2011 (2016 Boundaries)
+  organization:
+    email: null
+    facebook: null
+    logo_url: ''
+    name: Statistics South Africa
+    slug: statistics-south-africa
+    telephone: null
+    twitter: null
+    url: null
+  resources:
+  - description: ''
+    format: application/xhtml+xml
+    name: Census 2011 (2016 Boundaries)
+    url: http://superweb.statssa.gov.za/webapi/jsf/login.xhtml
+  slug: census-2011-2016-boundaries
+  url_path: /datasets/socio-economic-data/census-2011-2016-boundaries
+- author:
+    email: ''
+    name: ''
+  category:
+    description: ''
+    name: Socio-economic Data
+    slug: socio-economic-data
+    url_path: /datasets/socio-economic-data
   created: '2018-10-05T09:53:37.823115'
   description: An interactive data portal for StatsSA's primary data sets, such as
     the national census.
