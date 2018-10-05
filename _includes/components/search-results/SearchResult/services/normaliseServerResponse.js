@@ -35,8 +35,6 @@ const normaliseDepartmentItem = (item) => {
     groups,
   } = item;
 
-  console.log(item);
-
   const getExtrasValue = (key) => {
     const obj = find(extras, extra => extra.key === key) || { value: null };
     return obj.value;
@@ -64,7 +62,7 @@ const normaliseDepartmentItem = (item) => {
     title,
     url,
     snippet,
-    contributor: organization.title,
+    contributor: groups.length < 1 && organization.title,
     source: {
       text: sourceText,
       url: sourceUrl,
