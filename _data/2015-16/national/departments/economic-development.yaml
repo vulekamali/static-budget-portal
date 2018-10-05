@@ -19,76 +19,92 @@ contributed_datasets:
 description: 'National department: Economic Development budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 2244000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 80979000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 27889000.0
-  programme_name: Growth Path and Social Dialogue
-- items:
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 733245000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 41421000.0
-  programme_name: Investment, Competition and Trade
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 2244000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 80979000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 27889000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Growth Path and Social Dialogue
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 733245000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 41421000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Investment, Competition and Trade
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 577602000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 673473000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 771395000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 696860000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 885778000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 685661000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 727852000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 798910116
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 882600066
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 955355790
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 817077144
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 987559506
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 719174735
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 727852000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 577602000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 673473000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 771395000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 696860000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 885778000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 685661000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 727852000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 798910116
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 882600066
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 955355790
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 817077144
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 987559506
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 719174735
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 727852000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -132,12 +148,14 @@ intro: "## Vote purpose\n\n_Promote economic development policy formulation and 
 is_vote_primary: true
 name: Economic Development
 programmes:
-- name: Administration
-  total_budget: 83223000.0
-- name: Growth Path and Social Dialogue
-  total_budget: 27889000.0
-- name: Investment, Competition and Trade
-  total_budget: 774666000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 83223000.0
+  - name: Growth Path and Social Dialogue
+    total_budget: 27889000.0
+  - name: Investment, Competition and Trade
+    total_budget: 774666000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: economic-development

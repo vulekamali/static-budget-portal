@@ -20,118 +20,155 @@ description: 'KwaZulu-Natal department: Agriculture and Rural Development budget
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 231153000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 201857000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 26775000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 22167000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 2952000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 770000
-    - economic_classification_2_name: Households
-      total_budget: 470000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 775610000
-    - economic_classification_2_name: Goods and services
-      total_budget: 522387000
-    - economic_classification_2_name: Interest and rent on land
-      total_budget: 71000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 109415000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 19800000
-    - economic_classification_2_name: Biological assets
-      total_budget: 636000
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 55000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 128398000
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 83792000
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 25207000
-    - economic_classification_2_name: Households
-      total_budget: 7211000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 696000
-  programme_name: Agriculture
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 6467000
-    - economic_classification_2_name: Goods and services
-      total_budget: 4455000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 300000
-  programme_name: Rural Development
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 231153000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 201857000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 26775000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 22167000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 2952000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 770000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 470000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 775610000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 522387000
+        type: economic_classification_2
+      - name: Interest and rent on land
+        total_budget: 71000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 109415000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 19800000
+        type: economic_classification_2
+      - name: Biological assets
+        total_budget: 636000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 55000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 128398000
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 83792000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 25207000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 7211000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 696000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Agriculture
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 6467000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 4455000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 300000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Rural Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 2109591000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 2005528000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2003044000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2292480000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 2170644000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 2224422000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 2353838000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 2764661919
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 2483802445
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2348594369
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2555900483
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 2276740728
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 2224422000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 2231303420
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 2109591000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 2005528000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2003044000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2292480000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 2170644000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 2224422000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 2353838000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 2764661919
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 2483802445
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2348594369
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2555900483
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 2276740728
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 2224422000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 2231303420
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -169,12 +206,14 @@ intro: "## Vision\r\n\r\nThe vision of the Department of Agriculture and Rural D
 is_vote_primary: true
 name: Agriculture and Rural Development
 programmes:
-- name: Administration
-  total_budget: 486144000
-- name: Agriculture
-  total_budget: 1673278000
-- name: Rural Development
-  total_budget: 11222000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 486144000
+  - name: Agriculture
+    total_budget: 1673278000
+  - name: Rural Development
+    total_budget: 11222000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: agriculture-and-rural-development

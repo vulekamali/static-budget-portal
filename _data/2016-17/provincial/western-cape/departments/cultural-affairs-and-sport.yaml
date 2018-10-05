@@ -19,122 +19,161 @@ contributed_datasets:
 description: 'Western Cape department: Cultural Affairs and Sport budget data for
   the 2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 46255000
-    - economic_classification_2_name: Goods and services
-      total_budget: 12711000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2463000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 21000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 54811000
-    - economic_classification_2_name: Goods and services
-      total_budget: 17071000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1446000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 33427000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 2688000
-  programme_name: Cultural Affairs
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 67395000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 61682000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2254000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 227267000
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 1100000
-  programme_name: Library and Archive Services
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 77363000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 32210000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 5121000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 89520000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 1379000
-  programme_name: Sport and Recreation
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 46255000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 12711000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2463000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 21000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 54811000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 17071000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1446000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 33427000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 2688000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Cultural Affairs
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 67395000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 61682000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2254000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 227267000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 1100000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Library and Archive Services
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 77363000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 32210000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 5121000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 89520000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 1379000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Sport and Recreation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 390550000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 453573000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 612490000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 694433000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 736184000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 691943000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 730667000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 511823719
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 561740213
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 718152255
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 774227753
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 772167198
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 691943000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 692630408
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 390550000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 453573000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 612490000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 694433000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 736184000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 691943000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 730667000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 511823719
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 561740213
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 718152255
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 774227753
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 772167198
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 691943000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 692630408
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -180,14 +219,16 @@ intro: "## Vision\n\nA socially inclusive, creative, active and connected Wester
 is_vote_primary: true
 name: Cultural Affairs and Sport
 programmes:
-- name: Administration
-  total_budget: 61450000
-- name: Cultural Affairs
-  total_budget: 109443000
-- name: Library and Archive Services
-  total_budget: 359698000
-- name: Sport and Recreation
-  total_budget: 205593000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 61450000
+  - name: Cultural Affairs
+    total_budget: 109443000
+  - name: Library and Archive Services
+    total_budget: 359698000
+  - name: Sport and Recreation
+    total_budget: 205593000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: cultural-affairs-and-sport

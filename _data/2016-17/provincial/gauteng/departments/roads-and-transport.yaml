@@ -19,142 +19,191 @@ contributed_datasets:
 description: 'Gauteng department: Roads and Transport budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 161542000
-    - economic_classification_2_name: Goods and services
-      total_budget: 138754000
-    - economic_classification_2_name: Interest and rent on land
-      total_budget: 100000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 15901000
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 1000000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 500000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 1832089000
-  programme_name: Gautrain
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 949886000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 346727000
-    - economic_classification_2_name: Interest and rent on land
-      total_budget: 70000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 1241590000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 7202000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 4201000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 2500000
-  programme_name: Transport Infrastructure
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 35810000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 28575000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 45850000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1640000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 2186420000
-    - economic_classification_2_name: Households
-      total_budget: 130000
-  programme_name: Transport Operations
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 94476000
-    - economic_classification_2_name: Goods and services
-      total_budget: 69052000
-    - economic_classification_2_name: Interest and rent on land
-      total_budget: 200000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 126521000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 7106000
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 1800000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 62000
-  programme_name: Transport Regulation
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 161542000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 138754000
+        type: economic_classification_2
+      - name: Interest and rent on land
+        total_budget: 100000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 15901000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 1000000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 500000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 1832089000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Gautrain
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 949886000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 346727000
+        type: economic_classification_2
+      - name: Interest and rent on land
+        total_budget: 70000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 1241590000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 7202000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 4201000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 2500000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Infrastructure
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 35810000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 28575000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 45850000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 1640000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 2186420000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 130000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Operations
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 94476000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 69052000
+        type: economic_classification_2
+      - name: Interest and rent on land
+        total_budget: 200000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 126521000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 7106000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 1800000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 62000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Regulation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 5564906000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 5366174000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 5872084000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 6481601000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 7299704000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 7634841000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 8024170000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 7292922516
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 6645888814
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 6885092600
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 7226378039
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 7656498901
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 7634841000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 7606452937
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 5564906000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 5366174000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 5872084000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 6481601000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 7299704000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 7634841000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 8024170000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 7292922516
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 6645888814
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 6885092600
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 7226378039
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 7656498901
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 7634841000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 7606452937
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -202,16 +251,18 @@ intro: "## Vision\r\n\r\nA modern integrated, efficient and sustainable transpor
 is_vote_primary: true
 name: Roads and Transport
 programmes:
-- name: Administration
-  total_budget: 317797000
-- name: Transport Infrastructure
-  total_budget: 2552176000
-- name: Transport Operations
-  total_budget: 2298425000
-- name: Transport Regulation
-  total_budget: 299217000
-- name: Gautrain
-  total_budget: 1832089000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 317797000
+  - name: Transport Infrastructure
+    total_budget: 2552176000
+  - name: Transport Operations
+    total_budget: 2298425000
+  - name: Transport Regulation
+    total_budget: 299217000
+  - name: Gautrain
+    total_budget: 1832089000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: roads-and-transport

@@ -20,154 +20,209 @@ description: 'Northern Cape department: Economic Development and Tourism budget 
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 40315000
-    - economic_classification_2_name: Goods and services
-      total_budget: 16956000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 329000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 284000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 173000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 8173000
-    - economic_classification_2_name: Goods and services
-      total_budget: 3115000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 85000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 21942000
-  programme_name: Business Regulation And Governance
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 12312000
-    - economic_classification_2_name: Goods and services
-      total_budget: 6940000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 315000
-  programme_name: Economic Planning
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 32252000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 15120000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 224000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 29254000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 3795000
-  programme_name: Intergrated Economic Development Services
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 14497000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 10718000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 451000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 20269000
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 7107000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 527000
-  programme_name: Tourism
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 12306000
-    - economic_classification_2_name: Goods and services
-      total_budget: 12244000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 265000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 4240000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 3707000
-  programme_name: Trade And Sector Development
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 40315000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 16956000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 329000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 284000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 173000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 8173000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 3115000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 85000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 21942000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Business Regulation And Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 12312000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 6940000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 315000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Economic Planning
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 32252000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 15120000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 224000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 29254000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 3795000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Intergrated Economic Development Services
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 14497000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 10718000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 451000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 20269000
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 7107000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 527000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Tourism
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 12306000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 12244000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 265000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 4240000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 3707000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Trade And Sector Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 223288000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 266380000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 278030000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 271091000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 277915000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 290096000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 307468000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 292623466
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 329905788
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 325993683
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 302241074
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 291498928
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 290096000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 291462029
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 223288000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 266380000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 278030000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 271091000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 277915000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 290096000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 307468000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 292623466
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 329905788
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 325993683
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 302241074
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 291498928
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 290096000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 291462029
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -200,18 +255,20 @@ intro: "## Vision\n\nA radically transformed economy in the Northern Cape.\r\n\r
 is_vote_primary: true
 name: Economic Development and Tourism
 programmes:
-- name: Administration
-  total_budget: 58057000
-- name: Intergrated Economic Development Services
-  total_budget: 80645000
-- name: Trade And Sector Development
-  total_budget: 32762000
-- name: Business Regulation And Governance
-  total_budget: 33315000
-- name: Economic Planning
-  total_budget: 19567000
-- name: Tourism
-  total_budget: 53569000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 58057000
+  - name: Intergrated Economic Development Services
+    total_budget: 80645000
+  - name: Trade And Sector Development
+    total_budget: 32762000
+  - name: Business Regulation And Governance
+    total_budget: 33315000
+  - name: Economic Planning
+    total_budget: 19567000
+  - name: Tourism
+    total_budget: 53569000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: economic-development-and-tourism

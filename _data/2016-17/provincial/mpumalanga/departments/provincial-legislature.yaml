@@ -19,76 +19,92 @@ contributed_datasets:
 description: 'Mpumalanga department: Provincial Legislature budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 77090000
-    - economic_classification_2_name: Goods and services
-      total_budget: 63560000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2952000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 55154000
-    - economic_classification_2_name: Goods and services
-      total_budget: 33713000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 40954000
-  programme_name: Parliamentary Business
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 77090000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 63560000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2952000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 55154000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 33713000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 40954000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Parliamentary Business
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 210057000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 229317000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 262138000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 296275000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 273423000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 294834000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 313131000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 275283971
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 284004075
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 307360113
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 330318875
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 286787368
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 294834000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 296830228
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 210057000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 229317000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 262138000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 296275000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 273423000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 294834000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 313131000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 275283971
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 284004075
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 307360113
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 330318875
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 286787368
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 294834000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 296830228
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -121,10 +137,12 @@ intro: "## Vision\r\n\r\nA people-centred, African, world class Legislature\r\n\
 is_vote_primary: true
 name: Provincial Legislature
 programmes:
-- name: Administration
-  total_budget: 143602000
-- name: Parliamentary Business
-  total_budget: 129821000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 143602000
+  - name: Parliamentary Business
+    total_budget: 129821000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: provincial-legislature

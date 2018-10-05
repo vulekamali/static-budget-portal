@@ -20,120 +20,158 @@ description: 'Free State department: Sport, Arts, Culture and Recreation budget 
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 61776000
-    - economic_classification_2_name: Goods and services
-      total_budget: 13677000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 338000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1250000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 59962000
-    - economic_classification_2_name: Goods and services
-      total_budget: 56397000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 123000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 8700000
-  programme_name: Cultural Affairs
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 120212000
-    - economic_classification_2_name: Goods and services
-      total_budget: 43055000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 66322000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 549000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 8000000
-  programme_name: Library and Archives Services
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 61551000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 39384000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 113645000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 8000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 24656000
-  programme_name: Sport and Recreation
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 61776000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 13677000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 338000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1250000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 59962000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 56397000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 123000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 8700000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Cultural Affairs
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 120212000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 43055000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 66322000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 549000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 8000000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Library and Archives Services
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 61551000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 39384000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 113645000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 8000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 24656000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Sport and Recreation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 479714000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 445337000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 541863000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 669176000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 679605000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 638639000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 637911000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 663516344
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 583623197
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 671085442
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 784617305
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 757695922
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 669854394
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 637911000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 479714000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 445337000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 541863000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 669176000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 679605000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 638639000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 637911000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 663516344
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 583623197
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 671085442
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 784617305
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 757695922
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 669854394
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 637911000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -177,14 +215,16 @@ intro: "## Vision\n\nChampioning social transformation\r\n\r\n\n\n## Mission\n\n
 is_vote_primary: true
 name: Sport, Arts, Culture and Recreation
 programmes:
-- name: Administration
-  total_budget: 77041000
-- name: Cultural Affairs
-  total_budget: 125182000
-- name: Library and Archives Services
-  total_budget: 238138000
-- name: Sport and Recreation
-  total_budget: 239244000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 77041000
+  - name: Cultural Affairs
+    total_budget: 125182000
+  - name: Library and Archives Services
+    total_budget: 238138000
+  - name: Sport and Recreation
+    total_budget: 239244000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: sport-arts-culture-and-recreation

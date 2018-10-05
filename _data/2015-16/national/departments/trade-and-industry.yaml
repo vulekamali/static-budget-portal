@@ -19,142 +19,191 @@ contributed_datasets:
 description: 'National department: Trade and Industry budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 15469000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 671848000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 2423000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 150000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 213735000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 80611000.0
-  programme_name: Consumer and Corporate Regulation
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 1317827000.0
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 11980000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 4293200000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 172632000.0
-  programme_name: Incentive Development and Administration
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 176133000.0
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 771000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 1670822000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 125808000.0
-  programme_name: Industrial Development
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 1158000.0
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 759000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 119122000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 43715000.0
-  programme_name: International Trade and Economic Development
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 819000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 196786000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 65619000.0
-  programme_name: Special Economic Zones and Economic Transformation
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 4214000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 240035000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 168079000.0
-  programme_name: Trade and Investment South Africa
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 15469000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 671848000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 2423000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 150000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 213735000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 80611000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Consumer and Corporate Regulation
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1317827000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 11980000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 4293200000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 172632000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Incentive Development and Administration
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 176133000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 771000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1670822000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 125808000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Industrial Development
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1158000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 759000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 119122000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 43715000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: International Trade and Economic Development
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 819000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 196786000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 65619000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Special Economic Zones and Economic Transformation
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 4214000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 240035000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 168079000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Trade and Investment South Africa
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 6065501000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 7444843000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 8340748000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 8834161000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 9593715000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 10505314000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 9509186000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 8389496760
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 9756618197
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 10329833479
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 10358165266
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 10696093664
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 11018792693
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 9509186000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 6065501000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 7444843000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 8340748000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 8834161000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 9593715000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 10505314000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 9509186000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 8389496760
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 9756618197
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 10329833479
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 10358165266
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 10696093664
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 11018792693
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 9509186000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -196,20 +245,22 @@ intro: "## Vote purpose\n\n_Lead and facilitate access to sustainable economic a
 is_vote_primary: true
 name: Trade and Industry
 programmes:
-- name: Administration
-  total_budget: 689740000.0
-- name: International Trade and Economic Development
-  total_budget: 164754000.0
-- name: Special Economic Zones and Economic Transformation
-  total_budget: 263224000.0
-- name: Industrial Development
-  total_budget: 1973534000.0
-- name: Consumer and Corporate Regulation
-  total_budget: 294496000.0
-- name: Incentive Development and Administration
-  total_budget: 5795639000.0
-- name: Trade and Investment South Africa
-  total_budget: 412328000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 689740000.0
+  - name: International Trade and Economic Development
+    total_budget: 164754000.0
+  - name: Special Economic Zones and Economic Transformation
+    total_budget: 263224000.0
+  - name: Industrial Development
+    total_budget: 1973534000.0
+  - name: Consumer and Corporate Regulation
+    total_budget: 294496000.0
+  - name: Incentive Development and Administration
+    total_budget: 5795639000.0
+  - name: Trade and Investment South Africa
+    total_budget: 412328000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: trade-and-industry

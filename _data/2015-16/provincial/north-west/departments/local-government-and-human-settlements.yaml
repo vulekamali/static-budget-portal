@@ -20,118 +20,155 @@ description: 'North West department: Local Government and Human Settlements budg
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 84313000
-    - economic_classification_2_name: Goods and services
-      total_budget: 65986000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 3573000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1348000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 36610000
-    - economic_classification_2_name: Goods and services
-      total_budget: 11994000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 15000000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 71157000
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 40000000
-  programme_name: Development and Planning
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 43250000
-    - economic_classification_2_name: Goods and services
-      total_budget: 7027000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 2063131000
-  programme_name: Housing Development
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 19182000
-    - economic_classification_2_name: Goods and services
-      total_budget: 4091000
-  programme_name: Housing Needs,Planning and Research
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 30445000
-    - economic_classification_2_name: Goods and services
-      total_budget: 17818000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1100000
-  programme_name: Local Governance
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 84313000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 65986000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 3573000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1348000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 36610000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 11994000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 15000000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 71157000
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 40000000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Development and Planning
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 43250000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 7027000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 2063131000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Housing Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 19182000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 4091000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Housing Needs,Planning and Research
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 30445000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 17818000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1100000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Local Governance
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1531347000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1504451000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1910695000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2192680000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 2516025000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 2779384000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 2954731000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 2118082363
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1971613639
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 2366353854
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2570944973
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 2805132220
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 2915234719
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 2954731000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1531347000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1504451000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1910695000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2192680000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 2516025000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2779384000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 2954731000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 2118082363
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1971613639
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 2366353854
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2570944973
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 2805132220
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2915234719
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 2954731000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -165,16 +202,18 @@ intro: "## Vision\r\n\r\nA transformed developmental local governance and integr
 is_vote_primary: true
 name: Local Government and Human Settlements
 programmes:
-- name: Administration
-  total_budget: 155220000
-- name: Local Governance
-  total_budget: 49363000
-- name: Development and Planning
-  total_budget: 174761000
-- name: Housing Needs,Planning and Research
-  total_budget: 23273000
-- name: Housing Development
-  total_budget: 2113408000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 155220000
+  - name: Local Governance
+    total_budget: 49363000
+  - name: Development and Planning
+    total_budget: 174761000
+  - name: Housing Needs,Planning and Research
+    total_budget: 23273000
+  - name: Housing Development
+    total_budget: 2113408000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: local-government-and-human-settlements

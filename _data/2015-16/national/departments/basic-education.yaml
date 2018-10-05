@@ -19,116 +19,152 @@ contributed_datasets:
 description: 'National department: Basic Education budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 18190000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 339322000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 185000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 347185000.0
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 768000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 1529694000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 118000.0
-  programme_name: Curriculum Policy, Support and Monitoring
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 271000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 5924800000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 49385000.0
-  programme_name: Educational Enrichment Services
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 9517555000.0
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 2025676000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 413802000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 172705000.0
-  programme_name: Planning, Information and Assessment
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 503000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 1071308000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 99673000.0
-  programme_name: Teachers, Education Human Resources and Institutional Development
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 18190000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 339322000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 185000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 347185000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 768000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 1529694000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 118000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Curriculum Policy, Support and Monitoring
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 271000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 5924800000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 49385000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Educational Enrichment Services
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 9517555000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 2025676000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 413802000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 172705000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Planning, Information and Assessment
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 503000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1071308000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 99673000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Teachers, Education Human Resources and Institutional Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 13346178000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 14885884000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 17011094000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 19689873000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 21511140000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 22528638000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 23860373000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 18459764015
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 19508253797
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 21067866853
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 23086624593
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 23982906336
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 23629792672
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 23860373000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 13346178000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 14885884000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 17011094000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 19689873000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 21511140000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 22528638000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 23860373000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 18459764015
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 19508253797
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 21067866853
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 23086624593
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 23982906336
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 23629792672
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 23860373000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -169,16 +205,18 @@ intro: "## Vote purpose\n\n_Develop, maintain and support a South African school
 is_vote_primary: true
 name: Basic Education
 programmes:
-- name: Administration
-  total_budget: 357697000.0
-- name: Curriculum Policy, Support and Monitoring
-  total_budget: 1877765000.0
-- name: Teachers, Education Human Resources and Institutional Development
-  total_budget: 1171484000.0
-- name: Planning, Information and Assessment
-  total_budget: 12129738000.0
-- name: Educational Enrichment Services
-  total_budget: 5974456000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 357697000.0
+  - name: Curriculum Policy, Support and Monitoring
+    total_budget: 1877765000.0
+  - name: Teachers, Education Human Resources and Institutional Development
+    total_budget: 1171484000.0
+  - name: Planning, Information and Assessment
+    total_budget: 12129738000.0
+  - name: Educational Enrichment Services
+    total_budget: 5974456000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: basic-education

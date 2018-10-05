@@ -19,112 +19,146 @@ contributed_datasets:
 description: 'National department: Public Works budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 9727000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 456761000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 9508000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 2360000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 1713828000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 276046000.0
-  programme_name: Expanded Public Works Programme
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 3000000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 43923000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 300000.0
-  programme_name: Intergovernmental Coordination
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 12861000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 70721000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 9090000.0
-  programme_name: Prestige Policy
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 112000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 3767520000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 35330000.0
-  programme_name: Property and Construction Industry Policy and Research
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 9727000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 456761000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 9508000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 2360000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1713828000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 276046000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Expanded Public Works Programme
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 3000000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 43923000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 300000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Intergovernmental Coordination
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 12861000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 70721000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 9090000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Prestige Policy
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 112000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 3767520000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 35330000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Property and Construction Industry Policy and Research
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 7061437000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 7203925000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 6022654000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 6121320000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 6411087000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 6935178000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 7367696000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 9767025483
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 9440890258
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 7458924897
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 7177324955
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 7147761533
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 7274155600
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 7367696000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 7061437000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 7203925000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 6022654000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 6121320000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 6411087000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 6935178000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 7367696000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 9767025483
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 9440890258
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 7458924897
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 7177324955
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 7147761533
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 7274155600
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 7367696000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -173,16 +207,18 @@ intro: "## Vote purpose\n\n_Provide policy formulation for, as well as coordinat
 is_vote_primary: true
 name: Public Works
 programmes:
-- name: Administration
-  total_budget: 475996000.0
-- name: Intergovernmental Coordination
-  total_budget: 47223000.0
-- name: Expanded Public Works Programme
-  total_budget: 1992234000.0
-- name: Property and Construction Industry Policy and Research
-  total_budget: 3802962000.0
-- name: Prestige Policy
-  total_budget: 92672000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 475996000.0
+  - name: Intergovernmental Coordination
+    total_budget: 47223000.0
+  - name: Expanded Public Works Programme
+    total_budget: 1992234000.0
+  - name: Property and Construction Industry Policy and Research
+    total_budget: 3802962000.0
+  - name: Prestige Policy
+    total_budget: 92672000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: public-works

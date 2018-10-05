@@ -19,116 +19,152 @@ contributed_datasets:
 description: 'KwaZulu-Natal department: Office of the Premier budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 58414000
-    - economic_classification_2_name: Goods and services
-      total_budget: 31892000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1137000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1064000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 144810000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 123042000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 5126000
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 766000
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 65000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 54000
-    - economic_classification_2_name: Households
-      total_budget: 3000
-  programme_name: Institutional Development
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 128775000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 94155000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Heritage assets
-      total_budget: 4500000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 3915000
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 1171000
-  - economic_classification_1_name: Payments for financial assets
-    items:
-    - economic_classification_2_name: ''
-      total_budget: 4388000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 45195000
-    - economic_classification_2_name: Households
-      total_budget: 10172000
-  programme_name: Policy and Governance
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 58414000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 31892000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1137000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1064000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 144810000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 123042000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 5126000
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 766000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 65000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 54000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 3000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Institutional Development
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 128775000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 94155000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Heritage assets
+        total_budget: 4500000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 3915000
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 1171000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: ''
+        total_budget: 4388000
+        type: economic_classification_2
+      name: Payments for financial assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 45195000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 10172000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Policy and Governance
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 697795000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 721074000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 722239000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 737794000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 658644000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 697500000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 742904000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 914474542
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 893034335
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 846834342
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 822571207
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 690837198
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 697500000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 704230383
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 697795000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 721074000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 722239000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 737794000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 658644000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 697500000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 742904000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 914474542
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 893034335
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 846834342
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 822571207
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 690837198
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 697500000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 704230383
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -178,12 +214,14 @@ intro: "## Vision\n\nThe vision of the Office of the Premier (OTP) is: To be the
 is_vote_primary: true
 name: Office of the Premier
 programmes:
-- name: Administration
-  total_budget: 92507000
-- name: Institutional Development
-  total_budget: 273866000
-- name: Policy and Governance
-  total_budget: 292271000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 92507000
+  - name: Institutional Development
+    total_budget: 273866000
+  - name: Policy and Governance
+    total_budget: 292271000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: office-of-the-premier

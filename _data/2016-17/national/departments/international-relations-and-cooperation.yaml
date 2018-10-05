@@ -20,130 +20,173 @@ description: 'National department: International Relations and Cooperation budge
   data for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 739272000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 401780000.0
-    - economic_classification_2_name: Interest and rent on land
-      total_budget: 52254000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 248675000.0
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 15289000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1404000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 384632000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 192420000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1711000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 517000.0
-  programme_name: International Cooperation
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 1834429000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 1229371000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 13199000.0
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 1247000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 4833000.0
-  programme_name: International Relations
-- items:
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 506707000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 8831000.0
-  programme_name: International Transfers
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 146513000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 104171000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1015000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 381000.0
-  programme_name: Public Diplomacy and Protocol Services
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 739272000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 401780000.0
+        type: economic_classification_2
+      - name: Interest and rent on land
+        total_budget: 52254000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 248675000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 15289000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1404000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 384632000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 192420000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1711000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 517000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: International Cooperation
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 1834429000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1229371000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 13199000.0
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 1247000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 4833000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: International Relations
+    type: programme
+  - items:
+    - items:
+      - name: Foreign governments and international organisations
+        total_budget: 506707000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 8831000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: International Transfers
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 146513000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 104171000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1015000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 381000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Public Diplomacy and Protocol Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 5233743000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 5915512000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 6066522000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 6510854000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 5888651000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 5913005000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 6182570000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 6858926668
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 7326231880
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 7113073608
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 7258992394
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 6176476458
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 5913005000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 5860721761
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 5233743000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 5915512000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 6066522000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 6510854000.0
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 5888651000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 5913005000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 6182570000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 6858926668
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 7326231880
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 7113073608
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 7258992394
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 6176476458
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 5913005000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 5860721761
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -193,16 +236,18 @@ intro: "## Vote purpose\n\n_Formulate, coordinate, implement and manage South Af
 is_vote_primary: true
 name: International Relations and Cooperation
 programmes:
-- name: Administration
-  total_budget: 1458674000.0
-- name: International Relations
-  total_budget: 3083079000.0
-- name: International Cooperation
-  total_budget: 579280000.0
-- name: Public Diplomacy and Protocol Services
-  total_budget: 252080000.0
-- name: International Transfers
-  total_budget: 515538000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 1458674000.0
+  - name: International Relations
+    total_budget: 3083079000.0
+  - name: International Cooperation
+    total_budget: 579280000.0
+  - name: Public Diplomacy and Protocol Services
+    total_budget: 252080000.0
+  - name: International Transfers
+    total_budget: 515538000.0
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: international-relations-and-cooperation

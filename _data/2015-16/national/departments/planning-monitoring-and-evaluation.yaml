@@ -20,100 +20,128 @@ description: 'National department: Planning, Montoring and Evaluation budget dat
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 2020000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 67764000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 473000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 59094000.0
-  programme_name: Institutional Performance Monitoring and Evaluation
-- items:
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 88197000.0
-  programme_name: National Planning
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 50000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 409789000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 4703000.0
-  programme_name: National Youth Development
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 375000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 85229000.0
-  programme_name: Outcomes Monitoring and Evaluation
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 2020000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 67764000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 473000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 59094000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Institutional Performance Monitoring and Evaluation
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 88197000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: National Planning
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 50000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 409789000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 4703000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: National Youth Development
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 375000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 85229000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Outcomes Monitoring and Evaluation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 547257000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 622196000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 646595000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 733842000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 717694000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 738572000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 784550000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 756938434
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 815400515
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 800793727
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 860439006
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 800161589
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 774671919
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 784550000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 547257000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 622196000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 646595000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 733842000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 717694000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 738572000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 784550000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 756938434
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 815400515
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 800793727
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 860439006
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 800161589
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 774671919
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 784550000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -151,16 +179,18 @@ intro: "## Vote purpose\r\n\r\nImprove government service delivery through plann
 is_vote_primary: true
 name: Planning, Montoring and Evaluation
 programmes:
-- name: Administration
-  total_budget: 69784000.0
-- name: Outcomes Monitoring and Evaluation
-  total_budget: 85604000.0
-- name: Institutional Performance Monitoring and Evaluation
-  total_budget: 59567000.0
-- name: National Planning
-  total_budget: 88197000.0
-- name: National Youth Development
-  total_budget: 414542000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 69784000.0
+  - name: Outcomes Monitoring and Evaluation
+    total_budget: 85604000.0
+  - name: Institutional Performance Monitoring and Evaluation
+    total_budget: 59567000.0
+  - name: National Planning
+    total_budget: 88197000.0
+  - name: National Youth Development
+    total_budget: 414542000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: planning-monitoring-and-evaluation

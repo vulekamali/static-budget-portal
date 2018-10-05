@@ -19,122 +19,161 @@ contributed_datasets:
 description: 'KwaZulu-Natal department: Arts and Culture budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 69665000
-    - economic_classification_2_name: Goods and services
-      total_budget: 58971000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 680000
-  - economic_classification_1_name: Payments for financial assets
-    items:
-    - economic_classification_2_name: ''
-      total_budget: 3830000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 800000
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 250000
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 220000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 130000
-  programme_name: 1. Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 69504000
-    - economic_classification_2_name: Goods and services
-      total_budget: 59949000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 13000000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1509000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 33104000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 12709000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 8176000
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 7400000
-  programme_name: 2. Cultural Affairs
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 77536000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 74872000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 69000000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 3958000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 217880000
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 3329000
-  programme_name: 3. Library and Archive Services
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 69665000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 58971000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 680000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: ''
+        total_budget: 3830000
+        type: economic_classification_2
+      name: Payments for financial assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 800000
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 250000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 220000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 130000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: 1. Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 69504000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 59949000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 13000000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 1509000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 33104000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 12709000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 8176000
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 7400000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: 2. Cultural Affairs
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 77536000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 74872000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 69000000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 3958000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 217880000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 3329000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: 3. Library and Archive Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 479744000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 698686000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 710027000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 808770000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 786472000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 857179000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 870986000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 628714271
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 865307288
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 832515618
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 901702799
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 824913175
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 857179000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 825644773
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 479744000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 698686000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 710027000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 808770000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 786472000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 857179000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 870986000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 628714271
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 865307288
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 832515618
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 901702799
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 824913175
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 857179000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 825644773
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -176,12 +215,14 @@ intro: "## Vision\n\nThe vision of the department is: Prosperity and social cohe
 is_vote_primary: true
 name: Arts and Culture
 programmes:
-- name: 1. Administration
-  total_budget: 134546000
-- name: 2. Cultural Affairs
-  total_budget: 205351000
-- name: 3. Library and Archive Services
-  total_budget: 446575000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: 1. Administration
+    total_budget: 134546000
+  - name: 2. Cultural Affairs
+    total_budget: 205351000
+  - name: 3. Library and Archive Services
+    total_budget: 446575000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: arts-and-culture

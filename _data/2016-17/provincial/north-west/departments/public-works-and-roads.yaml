@@ -19,122 +19,161 @@ contributed_datasets:
 description: 'North West department: Public Works and Roads budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 127798000
-    - economic_classification_2_name: Goods and services
-      total_budget: 94242000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 10878000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 3989000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 134791000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 6385000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 50000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 22000
-  programme_name: Community Based Programme
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 362930000
-    - economic_classification_2_name: Goods and services
-      total_budget: 179476000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 151951000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1100000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 195058000
-    - economic_classification_2_name: Households
-      total_budget: 4088000
-  programme_name: Public Works Infrastructure
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 992446000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 278630000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 156734000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 15112000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 5233000
-  programme_name: Transport Infrastructure
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 127798000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 94242000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 10878000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 3989000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 134791000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 6385000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 50000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 22000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Community Based Programme
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 362930000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 179476000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 151951000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 1100000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 195058000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 4088000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Public Works Infrastructure
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 992446000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 278630000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 156734000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 15112000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 5233000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Infrastructure
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1548722000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 2654570000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2934376000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2670543000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 2720913000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 2904900000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 3082873000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 2029631685
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 3287626728
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 3440592893
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2977405318
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 2853905774
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 2904900000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 2922386787
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1548722000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 2654570000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2934376000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2670543000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 2720913000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 2904900000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 3082873000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 2029631685
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 3287626728
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 3440592893
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2977405318
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 2853905774
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 2904900000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 2922386787
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -190,14 +229,16 @@ intro: "## Vision\n\nDelivery and maintenance of quality infrastructure for sust
 is_vote_primary: true
 name: Public Works and Roads
 programmes:
-- name: Administration
-  total_budget: 236907000
-- name: Public Works Infrastructure
-  total_budget: 894603000
-- name: Transport Infrastructure
-  total_budget: 1448155000
-- name: Community Based Programme
-  total_budget: 141248000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 236907000
+  - name: Public Works Infrastructure
+    total_budget: 894603000
+  - name: Transport Infrastructure
+    total_budget: 1448155000
+  - name: Community Based Programme
+    total_budget: 141248000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: public-works-and-roads

@@ -31,104 +31,134 @@ contributed_datasets:
 description: 'Eastern Cape department: Human Settlements budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 103686000
-    - economic_classification_2_name: Goods and services
-      total_budget: 33030000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 11600000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 150000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 11785000
-    - economic_classification_2_name: Goods and services
-      total_budget: 1763000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 67000
-  programme_name: Housing Asset Management
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 194585000
-    - economic_classification_2_name: Goods and services
-      total_budget: 11529000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 2243265000
-  programme_name: Housing Development
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 18651000
-    - economic_classification_2_name: Goods and services
-      total_budget: 1164000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 123000
-  programme_name: Housing Needs, Research and Planning
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 103686000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 33030000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 11600000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 150000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 11785000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1763000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 67000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Housing Asset Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 194585000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 11529000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 2243265000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Housing Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 18651000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1164000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 123000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Housing Needs, Research and Planning
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 2827992000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2719830000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2799821000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2363222000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 2631398000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 2658380000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 2831210000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 3502406072
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 3189035001
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 3121538179
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2478731554
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 2631398000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 2519991769
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 2548954379
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 2827992000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2719830000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2799821000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2363222000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2631398000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 2658380000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 2831210000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 3502406072
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 3189035001
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 3121538179
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2478731554
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2631398000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 2519991769
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 2548954379
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -165,14 +195,16 @@ intro: "## Vision\n\nA department at the centre of creating intergrated sustaina
 is_vote_primary: true
 name: Human Settlements
 programmes:
-- name: Administration
-  total_budget: 148466000
-- name: Housing Needs, Research and Planning
-  total_budget: 19938000
-- name: Housing Development
-  total_budget: 2449379000
-- name: Housing Asset Management
-  total_budget: 13615000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 148466000
+  - name: Housing Needs, Research and Planning
+    total_budget: 19938000
+  - name: Housing Development
+    total_budget: 2449379000
+  - name: Housing Asset Management
+    total_budget: 13615000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: human-settlements

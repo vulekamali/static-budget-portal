@@ -19,170 +19,233 @@ contributed_datasets:
 description: 'National department: Water and Sanitation budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 837776000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 749569000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 25209000.0
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 22513000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 17175000.0
-    - economic_classification_2_name: Higher education institutions
-      total_budget: 3400000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 2202000.0
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 920000.0
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 700000.0
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 24000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 174741000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 125334000.00000003
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 3954634000.0
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 3739000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 4694982000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 1709462000.0
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 844773000.0
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 187450000.0
-    - economic_classification_2_name: Households
-      total_budget: 1300000.0
-  programme_name: Water Infrastructure Development
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 412460000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 355690000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 41655000.0
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 30000000.0
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 931000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 662000.0
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 395000.0
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 24000.0
-  programme_name: Water Planning and Information Management
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 204801000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 126698000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 10133000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 2000000.0
-    - economic_classification_2_name: Households
-      total_budget: 1200000.0
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 800000.0
-  programme_name: Water Sector Regulation
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 175053000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 153705000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 350000000.0
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 6941000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 15004000.0
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 1242000.0
-  programme_name: Water and Sanitation Services
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 837776000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 749569000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 25209000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 22513000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 17175000.0
+        type: economic_classification_2
+      - name: Higher education institutions
+        total_budget: 3400000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 2202000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 920000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 700000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 24000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 174741000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 125334000.00000003
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 3954634000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 3739000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 4694982000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 1709462000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 844773000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 187450000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1300000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Water Infrastructure Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 412460000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 355690000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 41655000.0
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 30000000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 931000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 662000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 395000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 24000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Water Planning and Information Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 204801000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 126698000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 10133000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 2000000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1200000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 800000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Water Sector Regulation
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 175053000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 153705000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 350000000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 6941000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 15004000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 1242000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Water and Sanitation Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 8907896000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 10505916000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 11616682000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 15746530000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 15245297000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 16038266000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 17159677000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 11673978916
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 13011346563
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 13620706256
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 17555906108
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 15990456562
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 16038266000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 16266389610
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 8907896000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 10505916000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 11616682000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 15746530000.0
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 15245297000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 16038266000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 17159677000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 11673978916
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 13011346563
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 13620706256
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 17555906108
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 15990456562
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 16038266000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 16266389610
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -222,16 +285,18 @@ intro: "## Vote purpose\n\n_Ensure the availability of water resources, facilita
 is_vote_primary: true
 name: Water and Sanitation
 programmes:
-- name: Administration
-  total_budget: 1659488000.0
-- name: Water Planning and Information Management
-  total_budget: 841817000.0
-- name: Water Infrastructure Development
-  total_budget: 11696415000.0
-- name: Water and Sanitation Services
-  total_budget: 701945000.0
-- name: Water Sector Regulation
-  total_budget: 345632000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 1659488000.0
+  - name: Water Planning and Information Management
+    total_budget: 841817000.0
+  - name: Water Infrastructure Development
+    total_budget: 11696415000.0
+  - name: Water and Sanitation Services
+    total_budget: 701945000.0
+  - name: Water Sector Regulation
+    total_budget: 345632000.0
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: water-and-sanitation

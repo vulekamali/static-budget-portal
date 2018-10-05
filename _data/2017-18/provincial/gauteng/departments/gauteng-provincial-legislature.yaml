@@ -19,100 +19,128 @@ contributed_datasets:
 description: 'Gauteng department: Gauteng Provincial Legislature budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 144802000
-    - economic_classification_2_name: Goods and services
-      total_budget: 98793000
-  programme_name: Core Business
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 97719000
-    - economic_classification_2_name: Goods and services
-      total_budget: 87554000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 114907000
-  programme_name: Corporate Support Services
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 29746000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 21955000
-  programme_name: Leadership and Governance
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 38959000
-    - economic_classification_2_name: Goods and services
-      total_budget: 10567000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 6523000
-  programme_name: Office of the CFO
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 14685000
-    - economic_classification_2_name: Goods and services
-      total_budget: 8688000
-  programme_name: Office of the Secretary
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 144802000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 98793000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Core Business
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 97719000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 87554000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 114907000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Corporate Support Services
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 29746000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 21955000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Leadership and Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 38959000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 10567000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 6523000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Office of the CFO
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 14685000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 8688000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Office of the Secretary
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 473919000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 497845000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 562072000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 649557000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 674898000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 715823000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 761430000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 586938288
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 583729545
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 626657635
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 681306044
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 674898000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 678559148
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 685519736
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 473919000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 497845000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 562072000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 649557000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 674898000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 715823000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 761430000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 586938288
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 583729545
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 626657635
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 681306044
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 674898000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 678559148
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 685519736
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -160,16 +188,18 @@ intro: "## Vision\r\n\r\nA modern and transformative legislature that fosters pu
 is_vote_primary: true
 name: Gauteng Provincial Legislature
 programmes:
-- name: Leadership and Governance
-  total_budget: 51701000
-- name: Office of the Secretary
-  total_budget: 23373000
-- name: Corporate Support Services
-  total_budget: 300180000
-- name: Core Business
-  total_budget: 243595000
-- name: Office of the CFO
-  total_budget: 56049000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Leadership and Governance
+    total_budget: 51701000
+  - name: Office of the Secretary
+    total_budget: 23373000
+  - name: Corporate Support Services
+    total_budget: 300180000
+  - name: Core Business
+    total_budget: 243595000
+  - name: Office of the CFO
+    total_budget: 56049000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: gauteng-provincial-legislature

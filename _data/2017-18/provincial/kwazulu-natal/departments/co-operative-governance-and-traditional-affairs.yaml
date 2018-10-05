@@ -20,124 +20,164 @@ description: 'KwaZulu-Natal department: Co-operative Governance and Traditional 
   budget data for the 2017-18 financial year from National Treasury in partnership
   with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 205148000
-    - economic_classification_2_name: Goods and services
-      total_budget: 174491000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1736000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 12249000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 215000
-  programme_name: 1. Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 242275000
-    - economic_classification_2_name: Goods and services
-      total_budget: 47815000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1145000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 150000
-  programme_name: 2. Local Governance
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 167557000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 122072000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 20674000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 7282000
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 150000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 20900000
-    - economic_classification_2_name: Households
-      total_budget: 100000
-  programme_name: 3. Development and Planning
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 517149000
-    - economic_classification_2_name: Goods and services
-      total_budget: 43468000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 50000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 600000
-  programme_name: 4. Traditional Institutional Management
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 205148000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 174491000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1736000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 12249000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 215000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: 1. Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 242275000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 47815000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1145000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 150000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: 2. Local Governance
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 167557000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 122072000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 20674000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 7282000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 150000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 20900000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 100000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: 3. Development and Planning
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 517149000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 43468000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 50000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 600000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: 4. Traditional Institutional Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1242496000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1482587000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1518088000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1616068000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1585226000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 1673030000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 1777022000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 1538804047
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1738351968
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1692525933
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1695058164
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1585226000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 1585936484
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 1599862959
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1242496000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1482587000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1518088000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1616068000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1585226000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1673030000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 1777022000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 1538804047
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1738351968
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1692525933
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1695058164
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1585226000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1585936484
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 1599862959
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -193,14 +233,16 @@ intro: "## Vision\n\nThe vision of the Department of Co-operative Governance and
 is_vote_primary: true
 name: Co-operative Governance and Traditional Affairs
 programmes:
-- name: 1. Administration
-  total_budget: 393839000
-- name: 2. Local Governance
-  total_budget: 291385000
-- name: 3. Development and Planning
-  total_budget: 338735000
-- name: 4. Traditional Institutional Management
-  total_budget: 561267000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: 1. Administration
+    total_budget: 393839000
+  - name: 2. Local Governance
+    total_budget: 291385000
+  - name: 3. Development and Planning
+    total_budget: 338735000
+  - name: 4. Traditional Institutional Management
+    total_budget: 561267000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: co-operative-governance-and-traditional-affairs

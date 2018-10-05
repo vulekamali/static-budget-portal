@@ -19,132 +19,176 @@ contributed_datasets:
 description: 'National department: Tourism budget data for the 2016-17 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 130408000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 102745000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 3742000.0
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 376000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 185000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 202878000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 53880000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 104651000.0
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 977000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 61334000.0
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 16027000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 4392000.0
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 600000.0
-  programme_name: Domestic Tourism
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 38606000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 8616000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1164000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 6322000.0
-  programme_name: International Tourism
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 91283000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 42647000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1425000.0
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 35000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 1024847000.0
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 108365000.0
-    - economic_classification_2_name: Higher education institutions
-      total_budget: 4011000.0
-  programme_name: Policy and Knowledge Services
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 130408000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 102745000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 3742000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 376000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 185000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 202878000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 53880000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 104651000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 977000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 61334000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 16027000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 4392000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 600000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Domestic Tourism
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 38606000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 8616000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1164000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Foreign governments and international organisations
+        total_budget: 6322000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: International Tourism
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 91283000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 42647000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1425000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 35000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 1024847000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 108365000.0
+        type: economic_classification_2
+      - name: Higher education institutions
+        total_budget: 4011000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Policy and Knowledge Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1371959000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1512667000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1557594000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1794178000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 2009516000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 2067301000.0000002
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 2172618000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 1797980178
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1873404905
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1826298622
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2000340424
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 2107737114
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 2067301000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 2059517254
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1371959000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1512667000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1557594000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1794178000.0
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 2009516000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 2067301000.0000002
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 2172618000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 1797980178
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1873404905
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1826298622
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2000340424
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 2107737114
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 2067301000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 2059517254
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -188,14 +232,16 @@ intro: "## Vote purpose\n\n_Promote and support the growth and development of an
 is_vote_primary: true
 name: Tourism
 programmes:
-- name: Administration
-  total_budget: 237456000.0
-- name: Policy and Knowledge Services
-  total_budget: 1272613000.0
-- name: International Tourism
-  total_budget: 54708000.0
-- name: Domestic Tourism
-  total_budget: 444739000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 237456000.0
+  - name: Policy and Knowledge Services
+    total_budget: 1272613000.0
+  - name: International Tourism
+    total_budget: 54708000.0
+  - name: Domestic Tourism
+    total_budget: 444739000.0
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: tourism

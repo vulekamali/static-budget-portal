@@ -19,80 +19,98 @@ contributed_datasets:
 description: 'KwaZulu-Natal department: Community Safety and Liaison budget data for
   the 2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 34119000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 32771000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1992000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 14000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 81288000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 58964000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 975000
-  programme_name: Civilian Oversight
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 34119000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 32771000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1992000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 14000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 81288000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 58964000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 975000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Civilian Oversight
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 135892000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 171922000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 179239000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 191045000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 210123000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 195948000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 207297000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 178089230
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 212921626
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 210159989
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 212997281
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 220393391
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 195948000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 196505666
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 135892000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 171922000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 179239000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 191045000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 210123000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 195948000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 207297000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 178089230
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 212921626
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 210159989
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 212997281
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 220393391
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 195948000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 196505666
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -134,10 +152,12 @@ intro: "## Vision\n\nThe department\u2019s vision is to see that: The people of 
 is_vote_primary: true
 name: Community Safety and Liaison
 programmes:
-- name: Administration
-  total_budget: 68896000
-- name: Civilian Oversight
-  total_budget: 141227000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 68896000
+  - name: Civilian Oversight
+    total_budget: 141227000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: community-safety-and-liaison

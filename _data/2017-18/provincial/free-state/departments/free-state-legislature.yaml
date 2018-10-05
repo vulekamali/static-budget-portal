@@ -19,96 +19,122 @@ contributed_datasets:
 description: 'Free State department: Free State Legislature budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 70351000
-    - economic_classification_2_name: Goods and services
-      total_budget: 41634000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1940000
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 145000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 280000
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 160000
-    - economic_classification_2_name: Higher education institutions
-      total_budget: 14000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 3411000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 52251000
-  programme_name: Facilities For Members And Political Parties
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 33818000
-    - economic_classification_2_name: Goods and services
-      total_budget: 4264000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 125000
-  programme_name: Parliamentary Services
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 70351000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 41634000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1940000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 145000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 280000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 160000
+        type: economic_classification_2
+      - name: Higher education institutions
+        total_budget: 14000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 3411000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 52251000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Facilities For Members And Political Parties
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 33818000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 4264000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 125000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Parliamentary Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 160731000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 168384000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 188457000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 203803000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 208393000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 220550000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 233932000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 199061818
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 197432365
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 210111903
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 213764482
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 208393000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 209068750
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 210610302
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 160731000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 168384000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 188457000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 203803000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 208393000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 220550000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 233932000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 199061818
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 197432365
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 210111903
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 213764482
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 208393000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 209068750
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 210610302
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -158,12 +184,14 @@ intro: "## Vision\n\nThe vision of the Free State Legislature is in line with it
 is_vote_primary: true
 name: Free State Legislature
 programmes:
-- name: Administration
-  total_budget: 114524000
-- name: Facilities For Members And Political Parties
-  total_budget: 55662000
-- name: Parliamentary Services
-  total_budget: 38207000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 114524000
+  - name: Facilities For Members And Political Parties
+    total_budget: 55662000
+  - name: Parliamentary Services
+    total_budget: 38207000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: free-state-legislature

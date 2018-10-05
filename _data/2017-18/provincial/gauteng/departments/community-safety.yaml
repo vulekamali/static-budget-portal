@@ -19,100 +19,128 @@ contributed_datasets:
 description: 'Gauteng department: Community Safety budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 69863000
-    - economic_classification_2_name: Goods and services
-      total_budget: 29073000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2114000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 93072000
-    - economic_classification_2_name: Goods and services
-      total_budget: 91104000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 9992000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 912000
-  programme_name: Civilian Oversight
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 331661000
-    - economic_classification_2_name: Goods and services
-      total_budget: 42807000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 3857000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1789000
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 1312000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 911000
-  programme_name: Traffic Management
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 69863000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 29073000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2114000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 93072000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 91104000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 9992000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 912000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Civilian Oversight
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 331661000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 42807000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 3857000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1789000
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 1312000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 911000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Traffic Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 493481000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 629606000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 693552000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 683580000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 678467000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 718050000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 759694000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 611165396
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 738220981
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 773245520
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 716992020
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 678467000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 680670216
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 683956805
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 493481000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 629606000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 693552000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 683580000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 678467000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 718050000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 759694000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 611165396
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 738220981
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 773245520
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 716992020
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 678467000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 680670216
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 683956805
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -158,12 +186,14 @@ intro: "## Vision\n\nTo realise Gauteng as a province where people feel and are 
 is_vote_primary: true
 name: Community Safety
 programmes:
-- name: Administration
-  total_budget: 101050000
-- name: Civilian Oversight
-  total_budget: 195080000
-- name: Traffic Management
-  total_budget: 382337000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 101050000
+  - name: Civilian Oversight
+    total_budget: 195080000
+  - name: Traffic Management
+    total_budget: 382337000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: community-safety

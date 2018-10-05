@@ -19,112 +19,146 @@ contributed_datasets:
 description: 'Western Cape department: Local Government budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 25204000
-    - economic_classification_2_name: Goods and services
-      total_budget: 12655000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2741000
-  - economic_classification_1_name: Payments for financial assets
-    items:
-    - economic_classification_2_name: ''
-      total_budget: 100000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 31830000
-    - economic_classification_2_name: Goods and services
-      total_budget: 19476000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 127000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 402000
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 400000
-  programme_name: Development and Planning
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 88038000
-    - economic_classification_2_name: Goods and services
-      total_budget: 13630000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 187000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 4928000
-    - economic_classification_2_name: Households
-      total_budget: 440000
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 230000
-  programme_name: Local Governance
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 1000
-  programme_name: Traditional Institutional Management
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 25204000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 12655000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2741000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: ''
+        total_budget: 100000
+        type: economic_classification_2
+      name: Payments for financial assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 31830000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 19476000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 127000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 402000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 400000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Development and Planning
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 88038000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 13630000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 187000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 4928000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 440000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 230000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Local Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 1000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Traditional Institutional Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 129825000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 160609000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 172062000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 199130000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 200389000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 209126000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 219582000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 179567428
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 210481361
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 213095013
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 233482438
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 223414966
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 219347659
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 219582000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 129825000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 160609000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 172062000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 199130000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 200389000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 209126000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 219582000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 179567428
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 210481361
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 213095013
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 233482438
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 223414966
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 219347659
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 219582000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -168,14 +202,16 @@ intro: "## Vision\n\nAn efficient and dynamic team that enables well governed Mu
 is_vote_primary: true
 name: Local Government
 programmes:
-- name: Administration
-  total_budget: 40700000
-- name: Local Governance
-  total_budget: 107453000
-- name: Development and Planning
-  total_budget: 52235000
-- name: Traditional Institutional Management
-  total_budget: 1000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 40700000
+  - name: Local Governance
+    total_budget: 107453000
+  - name: Development and Planning
+    total_budget: 52235000
+  - name: Traditional Institutional Management
+    total_budget: 1000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: local-government

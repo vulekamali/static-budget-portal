@@ -19,138 +19,185 @@ contributed_datasets:
 description: 'National department: Transport budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 2378000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 368589000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 12490000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 420000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 110507000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 38599000.0
-  programme_name: Civil Aviation
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 212000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 80371000.0
-  programme_name: Integrated Transport Planning
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 335000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 91437000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 19317000.0
-  programme_name: Maritime Transport
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 5953090000.0
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 157000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 5307215000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 275899000.0
-  programme_name: Public Transport
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 14155887000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 4119539000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 35938000.0
-  programme_name: Rail Transport
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 18441520000.0
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 631000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 4244066000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 98700000.0
-  programme_name: Road Transport
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 2378000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 368589000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 12490000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 420000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 110507000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 38599000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Civil Aviation
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 212000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 80371000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Integrated Transport Planning
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 335000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 91437000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 19317000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Maritime Transport
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 5953090000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 157000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 5307215000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 275899000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Public Transport
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 14155887000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 4119539000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 35938000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Rail Transport
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 18441520000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 631000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 4244066000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 98700000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Road Transport
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 41690918000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 39328215000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 43036844000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 48770669000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 53357297000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 56132161000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 59327828000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 57664786717
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 51540425790
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 53300187465
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 57184224924
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 59488388636
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 58875788527
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 59327828000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 41690918000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 39328215000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 43036844000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 48770669000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 53357297000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 56132161000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 59327828000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 57664786717
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 51540425790
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 53300187465
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 57184224924
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 59488388636
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 58875788527
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 59327828000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -199,20 +246,22 @@ intro: "## Vote purpose\n\n_Lead the provision of an integrated, sustainable, re
 is_vote_primary: true
 name: Transport
 programmes:
-- name: Administration
-  total_budget: 383457000.0
-- name: Integrated Transport Planning
-  total_budget: 80583000.0
-- name: Rail Transport
-  total_budget: 18311364000.0
-- name: Road Transport
-  total_budget: 22784917000.0
-- name: Civil Aviation
-  total_budget: 149526000.0
-- name: Maritime Transport
-  total_budget: 111089000.0
-- name: Public Transport
-  total_budget: 11536361000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 383457000.0
+  - name: Integrated Transport Planning
+    total_budget: 80583000.0
+  - name: Rail Transport
+    total_budget: 18311364000.0
+  - name: Road Transport
+    total_budget: 22784917000.0
+  - name: Civil Aviation
+    total_budget: 149526000.0
+  - name: Maritime Transport
+    total_budget: 111089000.0
+  - name: Public Transport
+    total_budget: 11536361000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: transport

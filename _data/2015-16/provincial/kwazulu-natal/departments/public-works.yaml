@@ -19,118 +19,155 @@ contributed_datasets:
 description: 'KwaZulu-Natal department: Public Works budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 259803000
-    - economic_classification_2_name: Goods and services
-      total_budget: 67630000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 14916000
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 4171000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 3404000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 520000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 193000
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 100000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 77257000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 45556000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 179000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 507062000
-    - economic_classification_2_name: Households
-      total_budget: 30000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 5000
-  programme_name: Property Management
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 251609000
-    - economic_classification_2_name: Goods and services
-      total_budget: 83350000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 71373000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1104000
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 162000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1186000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 56000
-  programme_name: Provision of Buildings, Structures and Equipment
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 259803000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 67630000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 14916000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 4171000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 3404000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 520000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 193000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 100000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 77257000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 45556000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 179000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 507062000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 30000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 5000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Property Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 251609000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 83350000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 71373000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 1104000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 162000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1186000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 56000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Provision of Buildings, Structures and Equipment
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1182268000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1133311000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1270253000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1391763000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1389666000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1449782000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1526583000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1635253799
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1485227119
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1573180482
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1631859682
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1549347431
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1520644438
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1526583000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1182268000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1133311000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1270253000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1391763000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1389666000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1449782000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1526583000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 1635253799
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1485227119
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1573180482
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1631859682
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1549347431
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1520644438
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1526583000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -170,12 +207,14 @@ intro: "## Vision\n\nThe department\u2019s vision is: A thriving economy through
 is_vote_primary: true
 name: Public Works
 programmes:
-- name: Administration
-  total_budget: 350737000
-- name: Property Management
-  total_budget: 630089000
-- name: Provision of Buildings, Structures and Equipment
-  total_budget: 408840000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 350737000
+  - name: Property Management
+    total_budget: 630089000
+  - name: Provision of Buildings, Structures and Equipment
+    total_budget: 408840000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: public-works

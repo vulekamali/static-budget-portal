@@ -19,116 +19,152 @@ contributed_datasets:
 description: 'National department: Rural Development and Land Reform budget data for
   the 2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 10324000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 1253804000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 137000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 560869000.0
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 1108000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 1563108000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 612023000.0
-  programme_name: Land Reform
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 8352000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 644367000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 147184000.0
-  programme_name: National Geomatics Management Services
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 2116000000.0
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 2067000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 480740000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 3862000.0
-  programme_name: Restitution
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 3268000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 1345679000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 626792000.0
-  programme_name: Rural Development
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 10324000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 1253804000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 137000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 560869000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 1108000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1563108000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 612023000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Land Reform
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 8352000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 644367000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 147184000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: National Geomatics Management Services
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 2116000000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 2067000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 480740000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 3862000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Restitution
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 3268000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1345679000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 626792000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Rural Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 7997725000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 8919567000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 9454056000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 9455305000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 9379684000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 10392008000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 10888698000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 11062052084
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 11689273999
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 11708641021
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 11086464445
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 10457469145
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 10899948523
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 10888698000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 7997725000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 8919567000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 9454056000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 9455305000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 9379684000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 10392008000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 10888698000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 11062052084
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 11689273999
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 11708641021
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 11086464445
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 10457469145
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 10899948523
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 10888698000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -201,16 +237,18 @@ intro: "## Vote purpose\n\n_Create and maintain an equitable and sustainable lan
 is_vote_primary: true
 name: Rural Development and Land Reform
 programmes:
-- name: Administration
-  total_budget: 1264265000.0
-- name: National Geomatics Management Services
-  total_budget: 799903000.0
-- name: Rural Development
-  total_budget: 1975739000.0
-- name: Restitution
-  total_budget: 2602669000.0
-- name: Land Reform
-  total_budget: 2737108000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 1264265000.0
+  - name: National Geomatics Management Services
+    total_budget: 799903000.0
+  - name: Rural Development
+    total_budget: 1975739000.0
+  - name: Restitution
+    total_budget: 2602669000.0
+  - name: Land Reform
+    total_budget: 2737108000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: rural-development-and-land-reform

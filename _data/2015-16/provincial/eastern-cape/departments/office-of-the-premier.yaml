@@ -19,104 +19,134 @@ contributed_datasets:
 description: 'Eastern Cape department: Office of the Premier budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 84341000
-    - economic_classification_2_name: Goods and services
-      total_budget: 30299000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 6524000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1952000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 48227000
-    - economic_classification_2_name: Goods and services
-      total_budget: 19805000
-  programme_name: Executive Support Services
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 95919000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 51381000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2150000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Higher education institutions
-      total_budget: 15998000
-  programme_name: Institutional Development and Organisational Support
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 49169000
-    - economic_classification_2_name: Goods and services
-      total_budget: 11417000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 41737000
-  programme_name: Policy and Governance
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 84341000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 30299000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 6524000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1952000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 48227000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 19805000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Executive Support Services
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 95919000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 51381000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2150000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Higher education institutions
+        total_budget: 15998000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Institutional Development and Organisational Support
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 49169000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 11417000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 41737000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Policy and Governance
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 413723000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 415931000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 465515000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 485833000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 458919000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 485735000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 505358000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 572240902
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 545086036
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 576530118
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 569645324
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 511651702
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 509476753
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 505358000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 413723000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 415931000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 465515000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 485833000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 458919000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 485735000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 505358000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 572240902
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 545086036
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 576530118
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 569645324
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 511651702
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 509476753
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 505358000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -158,14 +188,16 @@ intro: "## Vision\n\nLeading development with excellence and integrity.\r\n\r\n\
 is_vote_primary: true
 name: Office of the Premier
 programmes:
-- name: Administration
-  total_budget: 123116000
-- name: Institutional Development and Organisational Support
-  total_budget: 165448000
-- name: Policy and Governance
-  total_budget: 102323000
-- name: Executive Support Services
-  total_budget: 68032000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 123116000
+  - name: Institutional Development and Organisational Support
+    total_budget: 165448000
+  - name: Policy and Governance
+    total_budget: 102323000
+  - name: Executive Support Services
+    total_budget: 68032000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: office-of-the-premier

@@ -20,178 +20,245 @@ description: 'North West department: Education and Sports Development budget dat
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 624746000
-    - economic_classification_2_name: Goods and services
-      total_budget: 189103000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 8931000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 5193000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 404765000
-    - economic_classification_2_name: Goods and services
-      total_budget: 43975000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 4188000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 91451000
-  programme_name: Early Childhood Development
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 320562000
-    - economic_classification_2_name: Goods and services
-      total_budget: 309784000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 17121000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 37236000
-    - economic_classification_2_name: Households
-      total_budget: 14881000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 14241000
-  programme_name: Examination and Education Related Services
-- items:
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 28203000
-  programme_name: Independent School Subsidies
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 74023000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 25828000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 874045000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 93000
-  programme_name: Infrastructure Development
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 9202893000
-    - economic_classification_2_name: Goods and services
-      total_budget: 544059000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 9439000
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 622000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 824888000
-    - economic_classification_2_name: Households
-      total_budget: 41662000
-  programme_name: Public Ordinary School Education
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 389194000
-    - economic_classification_2_name: Goods and services
-      total_budget: 6389000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1024000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 115704000
-  programme_name: Public Special School Education
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 62076000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 37725000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 989000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 5528000
-    - economic_classification_2_name: Households
-      total_budget: 663000
-  programme_name: Sport Development
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 624746000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 189103000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 8931000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 5193000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 404765000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 43975000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 4188000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 91451000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Early Childhood Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 320562000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 309784000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 17121000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 37236000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 14881000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 14241000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Examination and Education Related Services
+    type: programme
+  - items:
+    - items:
+      - name: Non-profit institutions
+        total_budget: 28203000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Independent School Subsidies
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 74023000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 25828000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 874045000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 93000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Infrastructure Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 9202893000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 544059000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 9439000
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 622000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 824888000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 41662000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Public Ordinary School Education
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 389194000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 6389000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1024000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 115704000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Public Special School Education
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 62076000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 37725000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 989000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 5528000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 663000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Sport Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 10392958000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 11665539000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 12065295000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 13619860000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 14331224000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 15283047000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 16258437000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 13620182877
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 14447514217
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 14146710660
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 15184868244
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 15031705505
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 15283047000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 15412065781
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 10392958000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 11665539000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 12065295000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 13619860000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 14331224000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 15283047000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 16258437000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 13620182877
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 14447514217
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 14146710660
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 15184868244
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 15031705505
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 15283047000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 15412065781
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -229,22 +296,24 @@ intro: "## Vision\n\nTowards Excellence in Education and Sport Development\r\n\r
 is_vote_primary: true
 name: Education and Sports Development
 programmes:
-- name: Administration
-  total_budget: 827973000
-- name: Public Ordinary School Education
-  total_budget: 10623563000
-- name: Independent School Subsidies
-  total_budget: 28203000
-- name: Public Special School Education
-  total_budget: 512311000
-- name: Early Childhood Development
-  total_budget: 544379000
-- name: Infrastructure Development
-  total_budget: 973989000
-- name: Examination and Education Related Services
-  total_budget: 713825000
-- name: Sport Development
-  total_budget: 106981000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 827973000
+  - name: Public Ordinary School Education
+    total_budget: 10623563000
+  - name: Independent School Subsidies
+    total_budget: 28203000
+  - name: Public Special School Education
+    total_budget: 512311000
+  - name: Early Childhood Development
+    total_budget: 544379000
+  - name: Infrastructure Development
+    total_budget: 973989000
+  - name: Examination and Education Related Services
+    total_budget: 713825000
+  - name: Sport Development
+    total_budget: 106981000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: education-and-sports-development

@@ -19,96 +19,122 @@ contributed_datasets:
 description: 'KwaZulu-Natal department: Provincial Legislature budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 94633000
-    - economic_classification_2_name: Goods and services
-      total_budget: 67183000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 6238000
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 1567000
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 395000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 867000
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 217000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 38000
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 27000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 77790000
-  programme_name: Direct charge against the Provincial Revenue Fund
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 90994000
-    - economic_classification_2_name: Goods and services
-      total_budget: 82755000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 95948000
-  programme_name: Parliamentary Business
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 94633000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 67183000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 6238000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 1567000
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 395000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 867000
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 217000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 38000
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 27000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 77790000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Direct charge against the Provincial Revenue Fund
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 90994000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 82755000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 95948000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Parliamentary Business
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 431718000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 460929000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 476027000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 479262000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 518652000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 538851000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 569128000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 565775221
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 570850457
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 558147665
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 534332241
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 544002670
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 538851000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 539500701
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 431718000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 460929000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 476027000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 479262000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 518652000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 538851000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 569128000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 565775221
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 570850457
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 558147665
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 534332241
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 544002670
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 538851000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 539500701
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -151,12 +177,14 @@ intro: "## Vision\n\nThe vision of the Provincial Legislature (hereafter referre
 is_vote_primary: true
 name: Provincial Legislature
 programmes:
-- name: Administration
-  total_budget: 171165000
-- name: Parliamentary Business
-  total_budget: 269697000
-- name: Direct charge against the Provincial Revenue Fund
-  total_budget: 77790000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 171165000
+  - name: Parliamentary Business
+    total_budget: 269697000
+  - name: Direct charge against the Provincial Revenue Fund
+    total_budget: 77790000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: provincial-legislature

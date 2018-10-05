@@ -19,116 +19,152 @@ contributed_datasets:
 description: 'National department: Water and Sanitation budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 56532000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 1449615000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 20020000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 6065856000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 2851280000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 3157818000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 360833000.0
-  programme_name: Water Infrastructure Development
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 60648000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 747296000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 711000.0
-  programme_name: Water Planning and Information Management
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 4297000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 226042000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 1000000.0
-  programme_name: Water Sector Regulation
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 1047804000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 48182000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 332989000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 15607000.0
-  programme_name: Water and Sanitation Services
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 56532000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 1449615000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 20020000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 6065856000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 2851280000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 3157818000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 360833000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Water Infrastructure Development
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 60648000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 747296000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 711000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Water Planning and Information Management
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 4297000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 226042000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 1000000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Water Sector Regulation
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1047804000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 48182000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 332989000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 15607000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Water and Sanitation Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 8450907000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 8907896000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 10505916000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 13647401000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 16446530000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 16361549000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 18204784000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 11688870696
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 11673978916
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 13011346563
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 16001749912
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 18336340545
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 17161268722
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 18204784000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 8450907000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 8907896000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 10505916000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 13647401000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 16446530000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 16361549000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 18204784000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 11688870696
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 11673978916
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 13011346563
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 16001749912
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 18336340545
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 17161268722
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 18204784000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -168,16 +204,18 @@ intro: "## Vote purpose\n\n_Ensure the availability of water resources, facilita
 is_vote_primary: true
 name: Water and Sanitation
 programmes:
-- name: Administration
-  total_budget: 1526167000.0
-- name: Water Planning and Information Management
-  total_budget: 808655000.0
-- name: Water Infrastructure Development
-  total_budget: 12435787000.0
-- name: Water and Sanitation Services
-  total_budget: 1444582000.0
-- name: Water Sector Regulation
-  total_budget: 231339000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 1526167000.0
+  - name: Water Planning and Information Management
+    total_budget: 808655000.0
+  - name: Water Infrastructure Development
+    total_budget: 12435787000.0
+  - name: Water and Sanitation Services
+    total_budget: 1444582000.0
+  - name: Water Sector Regulation
+    total_budget: 231339000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: water-and-sanitation

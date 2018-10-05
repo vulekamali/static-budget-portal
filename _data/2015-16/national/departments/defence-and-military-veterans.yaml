@@ -19,148 +19,200 @@ contributed_datasets:
 description: 'National department: Defence and Military Veterans budget data for the
   2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 15918000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 4187418000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 623837000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 49598000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 5144503000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 1855054000.0
-  programme_name: Air Defence
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 4392000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 445799000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 377260000.0
-  programme_name: Defence Intelligence
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 267949000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 3089385000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 245819000.0
-  programme_name: Force Employment
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 161907000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 4398744000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 1256341000.0
-  programme_name: General Support
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 38487000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 12248947000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 2517869000.0
-  programme_name: Landward Defence
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 22534000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 2816643000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 878072000.0
-  programme_name: Maritime Defence
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 26116000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 3899089000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 7709000.0
-  programme_name: Military Health Support
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 15918000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 4187418000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 623837000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 49598000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 5144503000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 1855054000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Air Defence
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 4392000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 445799000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 377260000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Defence Intelligence
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 267949000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 3089385000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 245819000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Force Employment
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 161907000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 4398744000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 1256341000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: General Support
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 38487000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 12248947000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 2517869000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Landward Defence
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 22534000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 2816643000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 878072000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Maritime Defence
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 26116000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 3899089000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 7709000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Military Health Support
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 34331437000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 37702218000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 40447521000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 42856879000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 44579390000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 47118698000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 50113522000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 47485521722
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 49409523645
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 50093367715
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 50250231512
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 49701844482
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 49421765521
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 50113522000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 34331437000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 37702218000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 40447521000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 42856879000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 44579390000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 47118698000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 50113522000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 47485521722
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 49409523645
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 50093367715
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 50250231512
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 49701844482
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 49421765521
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 50113522000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -197,22 +249,24 @@ intro: "## Vote purpose\n\n_Defend and protect the Republic of South Africa, its
 is_vote_primary: true
 name: Defence and Military Veterans
 programmes:
-- name: Administration
-  total_budget: 4827173000.0
-- name: Force Employment
-  total_budget: 3603153000.0
-- name: Landward Defence
-  total_budget: 14805303000.0
-- name: Air Defence
-  total_budget: 7049155000.0
-- name: Maritime Defence
-  total_budget: 3717249000.0
-- name: Military Health Support
-  total_budget: 3932914000.0
-- name: Defence Intelligence
-  total_budget: 827451000.0
-- name: General Support
-  total_budget: 5816992000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 4827173000.0
+  - name: Force Employment
+    total_budget: 3603153000.0
+  - name: Landward Defence
+    total_budget: 14805303000.0
+  - name: Air Defence
+    total_budget: 7049155000.0
+  - name: Maritime Defence
+    total_budget: 3717249000.0
+  - name: Military Health Support
+    total_budget: 3932914000.0
+  - name: Defence Intelligence
+    total_budget: 827451000.0
+  - name: General Support
+    total_budget: 5816992000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: defence-and-military-veterans
