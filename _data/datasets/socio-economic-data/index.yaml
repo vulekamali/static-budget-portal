@@ -7,59 +7,16 @@ datasets:
     name: Socio-economic Data
     slug: socio-economic-data
     url_path: /datasets/socio-economic-data
-  created: '2018-10-05T12:11:17.669862'
-  description: The national statistical agency of South Africa. It is responsible
-    for all official Censuses and other population surveys. It produces approximately
-    25 monthly data releases plus other quarterly and annual datasets.
-  intro_short: 'South African statistical data '
-  last_updated: '2018-10-05T12:13:54.964773'
+  created: '2018-10-05T11:44:58.386858'
+  description: The 2011 Census, aggregated using the 2016 municipal boundaries. The
+    census contains demographic information on individuals and households in South
+    Africa down to the level of communities and wards.
+  intro_short: South African 2011 Census data reflecting the 2016 municipal boundaries
+  last_updated: '2018-10-05T11:47:37.303188'
   license:
     name: License not specified
     url: null
-  name: Statistics South Africa (StatsSA)
-  organization:
-    email: null
-    facebook: null
-    logo_url: ''
-    name: Statistics South Africa
-    slug: statistics-south-africa
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: ''
-    name: Statistics South Africa (StatsSA)
-    url: http://www.statssa.gov.za/
-  - description: ''
-    format: PNG
-    name: 'Screenshot: Search Statistical Publications'
-    url: https://data.vulekamali.gov.za/dataset/67a8a0ae-190b-46b1-b412-b5969dbd0f94/resource/dc7082aa-a0e1-4c36-92f1-d850fa6521df/download/mrzqpyd.png
-  - description: ''
-    format: PNG
-    name: 'Screenshot: Quarterly employment statistics report'
-    url: https://data.vulekamali.gov.za/dataset/67a8a0ae-190b-46b1-b412-b5969dbd0f94/resource/f7bac374-df38-4008-9aa8-9582929308a0/download/kktkdg0.png
-  slug: statistics-south-africa-statssa
-  url_path: /datasets/socio-economic-data/statistics-south-africa-statssa
-- author:
-    email: ''
-    name: ''
-  category:
-    description: ''
-    name: Socio-economic Data
-    slug: socio-economic-data
-    url_path: /datasets/socio-economic-data
-  created: '2018-10-05T12:08:23.567621'
-  description: 'The General Household Survey measures the performance of government
-    programmes and the quality of service delivery. It focuses on six broad areas:
-    education, health and social development, housing, household access to services
-    and facilities, food security, and agriculture.'
-  intro_short: 'South African household access to key public services data '
-  last_updated: '2018-10-05T12:10:24.187582'
-  license:
-    name: License not specified
-    url: null
-  name: General Household Survey (GHS) (Revised) 2016
+  name: Census 2011 (2016 Boundaries)
   organization:
     email: null
     facebook: null
@@ -72,18 +29,18 @@ datasets:
   resources:
   - description: ''
     format: application/xhtml+xml
-    name: General Household Survey (GHS) (Revised) 2016
+    name: Census 2011 (2016 Boundaries)
     url: http://superweb.statssa.gov.za/webapi/jsf/login.xhtml
   - description: ''
     format: PNG
-    name: 'Screenshot: Provinces by Children 17 and younger'
-    url: https://data.vulekamali.gov.za/dataset/d5cc449f-9bcb-4d52-a8b2-57f17dcbf3c5/resource/1475aff2-e8df-4320-a610-cb72347b9d44/download/j5abve4.png
+    name: 'Screenshot: Census 2011 Education age by completed years'
+    url: https://data.vulekamali.gov.za/dataset/7793c6f2-38cc-4464-bd0b-02556db3fbf5/resource/d938427d-c56b-4963-ae57-aa4defb13e37/download/kqjzzkl.png
   - description: ''
     format: PNG
-    name: 'Screenshot: Chart of Provinces by Children 17 and younger'
-    url: https://data.vulekamali.gov.za/dataset/d5cc449f-9bcb-4d52-a8b2-57f17dcbf3c5/resource/ae8cec73-0800-40c2-a88b-94f272846659/download/ori0jkh.png
-  slug: general-household-survey-ghs-revised-2016
-  url_path: /datasets/socio-economic-data/general-household-survey-ghs-revised-2016
+    name: 'Screenshot: Census 2011 chart: Education age by completed years'
+    url: https://data.vulekamali.gov.za/dataset/7793c6f2-38cc-4464-bd0b-02556db3fbf5/resource/16cc3db8-7d39-4493-a38b-547841538910/download/bfo8mfp.png
+  slug: census-2011-2016-boundaries
+  url_path: /datasets/socio-economic-data/census-2011-2016-boundaries
 - author:
     email: ''
     name: ''
@@ -133,81 +90,43 @@ datasets:
     name: Socio-economic Data
     slug: socio-economic-data
     url_path: /datasets/socio-economic-data
-  created: '2018-10-05T11:44:58.386858'
-  description: The 2011 Census, aggregated using the 2016 municipal boundaries. The
-    census contains demographic information on individuals and households in South
-    Africa down to the level of communities and wards.
-  intro_short: South African 2011 Census data reflecting the 2016 municipal boundaries
-  last_updated: '2018-10-05T11:47:37.303188'
+  created: '2018-10-05T12:15:01.388308'
+  description: The purpose of the Department of Cooperative Governance and Traditional
+    Affairs (COGTA) is to improve cooperative governance across the three spheres
+    of government, in partnership with institutions of traditional leadership, to
+    ensure that provinces and municipalities carry out their service delivery and
+    development functions effectively. It publishes downloadable information (in .pdf
+    format) on municipal support and capacity-building programmes.
+  intro_short: 'South African provincial and municipal government information '
+  last_updated: '2018-10-05T12:31:14.218202'
   license:
     name: License not specified
     url: null
-  name: Census 2011 (2016 Boundaries)
+  name: Cooperative Governance and Traditional Affairs (CoGTA)
   organization:
     email: null
     facebook: null
     logo_url: ''
-    name: Statistics South Africa
-    slug: statistics-south-africa
+    name: Cooperative Governance and Traditional Affairs
+    slug: cooperative-governance-and-traditional-affairs
     telephone: null
     twitter: null
     url: null
   resources:
   - description: ''
-    format: application/xhtml+xml
-    name: Census 2011 (2016 Boundaries)
-    url: http://superweb.statssa.gov.za/webapi/jsf/login.xhtml
+    format: ''
+    name: Cooperative Governance and Traditional Affairs (CoGTA)
+    url: http://www.cogta.gov.za/
   - description: ''
     format: PNG
-    name: 'Screenshot: Census 2011 Education age by completed years'
-    url: https://data.vulekamali.gov.za/dataset/7793c6f2-38cc-4464-bd0b-02556db3fbf5/resource/d938427d-c56b-4963-ae57-aa4defb13e37/download/kqjzzkl.png
+    name: 'Screenshot: Select a programme'
+    url: https://data.vulekamali.gov.za/dataset/8f1f720c-1d24-4063-b9a3-aa2ab5800ec8/resource/6075faf8-09bc-4d06-a97f-93b33a0f0a5a/download/mtferdh.png
   - description: ''
     format: PNG
-    name: 'Screenshot: Census 2011 chart: Education age by completed years'
-    url: https://data.vulekamali.gov.za/dataset/7793c6f2-38cc-4464-bd0b-02556db3fbf5/resource/16cc3db8-7d39-4493-a38b-547841538910/download/bfo8mfp.png
-  slug: census-2011-2016-boundaries
-  url_path: /datasets/socio-economic-data/census-2011-2016-boundaries
-- author:
-    email: ''
-    name: ''
-  category:
-    description: ''
-    name: Socio-economic Data
-    slug: socio-economic-data
-    url_path: /datasets/socio-economic-data
-  created: '2018-10-05T09:53:37.823115'
-  description: An interactive data portal for StatsSA's primary data sets, such as
-    the national census.
-  intro_short: 'South African headline demographic information '
-  last_updated: '2018-10-05T10:01:36.572059'
-  license:
-    name: License not specified
-    url: null
-  name: StatsSA SuperWEB2 Data Portal
-  organization:
-    email: null
-    facebook: null
-    logo_url: ''
-    name: Statistics South Africa
-    slug: statistics-south-africa
-    telephone: null
-    twitter: null
-    url: null
-  resources:
-  - description: ''
-    format: application/xhtml+xml
-    name: StatsSA SuperWEB2 Data Portal
-    url: http://superweb.statssa.gov.za/webapi/jsf/login.xhtml
-  - description: ''
-    format: PNG
-    name: 'Screenshot: Superweb Dataset List'
-    url: https://data.vulekamali.gov.za/dataset/d85dd467-d091-41b9-b68d-7b26f6a70c4c/resource/93738521-3ab6-4102-9a91-da581e4a68f2/download/jbuvd45.png
-  - description: ''
-    format: PNG
-    name: 'Screenshot: Count of Gender of head of household by household size'
-    url: https://data.vulekamali.gov.za/dataset/d85dd467-d091-41b9-b68d-7b26f6a70c4c/resource/650ebc01-f6e2-4f6c-bb75-3e2285177b61/download/jki40hp.png
-  slug: statssa-superweb2-data-portal
-  url_path: /datasets/socio-economic-data/statssa-superweb2-data-portal
+    name: 'Screenshot: View annual performance plan'
+    url: https://data.vulekamali.gov.za/dataset/8f1f720c-1d24-4063-b9a3-aa2ab5800ec8/resource/a33ac283-19d5-4c25-9a59-ed8f8bf0da8c/download/i1bunaa.png
+  slug: cooperative-governance-and-traditional-affairs-cogta
+  url_path: /datasets/socio-economic-data/cooperative-governance-and-traditional-affairs-cogta
 - author:
     email: ''
     name: ''
@@ -301,6 +220,49 @@ datasets:
     name: Socio-economic Data
     slug: socio-economic-data
     url_path: /datasets/socio-economic-data
+  created: '2018-10-05T12:08:23.567621'
+  description: 'The General Household Survey measures the performance of government
+    programmes and the quality of service delivery. It focuses on six broad areas:
+    education, health and social development, housing, household access to services
+    and facilities, food security, and agriculture.'
+  intro_short: 'South African household access to key public services data '
+  last_updated: '2018-10-05T12:10:24.187582'
+  license:
+    name: License not specified
+    url: null
+  name: General Household Survey (GHS) (Revised) 2016
+  organization:
+    email: null
+    facebook: null
+    logo_url: ''
+    name: Statistics South Africa
+    slug: statistics-south-africa
+    telephone: null
+    twitter: null
+    url: null
+  resources:
+  - description: ''
+    format: application/xhtml+xml
+    name: General Household Survey (GHS) (Revised) 2016
+    url: http://superweb.statssa.gov.za/webapi/jsf/login.xhtml
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Provinces by Children 17 and younger'
+    url: https://data.vulekamali.gov.za/dataset/d5cc449f-9bcb-4d52-a8b2-57f17dcbf3c5/resource/1475aff2-e8df-4320-a610-cb72347b9d44/download/j5abve4.png
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Chart of Provinces by Children 17 and younger'
+    url: https://data.vulekamali.gov.za/dataset/d5cc449f-9bcb-4d52-a8b2-57f17dcbf3c5/resource/ae8cec73-0800-40c2-a88b-94f272846659/download/ori0jkh.png
+  slug: general-household-survey-ghs-revised-2016
+  url_path: /datasets/socio-economic-data/general-household-survey-ghs-revised-2016
+- author:
+    email: ''
+    name: ''
+  category:
+    description: ''
+    name: Socio-economic Data
+    slug: socio-economic-data
+    url_path: /datasets/socio-economic-data
   created: '2018-10-05T09:09:48.767828'
   description: The International Monetary Fund's (IMF) data portal publishes global
     financial data, as well as economic and trade indicators.
@@ -342,39 +304,43 @@ datasets:
     name: Socio-economic Data
     slug: socio-economic-data
     url_path: /datasets/socio-economic-data
-  created: '2018-10-05T08:31:08.006283'
-  description: An interactive tool for exploring data in World Bank's databases.
-  intro_short: 'Global and country specific time-series data for economic and development
-    indicators '
-  last_updated: '2018-10-05T08:58:22.603751'
+  created: '2018-10-05T12:32:25.784453'
+  description: The Reserve Bank enacts monetary policy and is a curator of macroeconomic
+    statistics that it publishes in its Quarterly Bulletin.
+  intro_short: 'South African macroeconomic information '
+  last_updated: '2018-10-05T12:37:56.927455'
   license:
     name: License not specified
     url: null
-  name: World Bank Data Bank
+  name: South African Reserve Bank
   organization:
     email: null
     facebook: null
     logo_url: ''
-    name: World Bank
-    slug: world-bank
+    name: Reserve Bank
+    slug: reserve-bank
     telephone: null
     twitter: null
     url: null
   resources:
   - description: ''
     format: ''
-    name: World Bank Data Bank
-    url: http://databank.worldbank.org
+    name: Reserve Bank Homepage
+    url: https://www.resbank.co.za
+  - description: ''
+    format: ''
+    name: Online Statistical Query
+    url: https://www.resbank.co.za/Research/Statistics/Pages/OnlineDownloadFacility.asp
   - description: ''
     format: PNG
-    name: 'Screenshot: World Development Indicators'
-    url: https://data.vulekamali.gov.za/dataset/2c46410b-569b-46b5-8691-03ebb9a4ef1d/resource/2108dd3a-2a03-493b-b7fa-ccaebb488256/download/xvk7632.png
+    name: 'Screenshot: Statistics overview'
+    url: https://data.vulekamali.gov.za/dataset/a7ebe83c-d484-4176-b80d-7b6bba375fca/resource/5bf3dd12-c456-4973-ab84-84580a9e78f2/download/sarb-stats-overview.png
   - description: ''
     format: PNG
-    name: 'Screenshot: Population growth map'
-    url: https://data.vulekamali.gov.za/dataset/2c46410b-569b-46b5-8691-03ebb9a4ef1d/resource/e8d4cb6d-4422-4326-8980-389c7601cdbc/download/yytytks.png
-  slug: world-bank-data-bank
-  url_path: /datasets/socio-economic-data/world-bank-data-bank
+    name: 'Screenshot: Online statistical query'
+    url: https://data.vulekamali.gov.za/dataset/a7ebe83c-d484-4176-b80d-7b6bba375fca/resource/c6c9be7b-a44e-4a75-b675-268d3e447162/download/sarb-stats-query.png
+  slug: south-african-reserve-bank
+  url_path: /datasets/socio-economic-data/south-african-reserve-bank
 - author:
     email: ''
     name: ''
@@ -383,39 +349,81 @@ datasets:
     name: Socio-economic Data
     slug: socio-economic-data
     url_path: /datasets/socio-economic-data
-  created: '2018-10-04T14:13:36.563552'
-  description: The BOOST Open Budgets Portal is a World Bank platform with expenditure
-    data for numerous countries that can be used for analyses and comparison purposes.
-  intro_short: Global budget data
-  last_updated: '2018-10-04T14:35:56.335008'
+  created: '2018-10-05T12:11:17.669862'
+  description: The national statistical agency of South Africa. It is responsible
+    for all official Censuses and other population surveys. It produces approximately
+    25 monthly data releases plus other quarterly and annual datasets.
+  intro_short: 'South African statistical data '
+  last_updated: '2018-10-05T12:13:54.964773'
   license:
     name: License not specified
     url: null
-  name: BOOST Open Budgets Portal
+  name: Statistics South Africa (StatsSA)
   organization:
     email: null
     facebook: null
     logo_url: ''
-    name: World Bank
-    slug: world-bank
+    name: Statistics South Africa
+    slug: statistics-south-africa
     telephone: null
     twitter: null
     url: null
   resources:
   - description: ''
     format: ''
-    name: BOOST Open Budgets Portal
-    url: http://boost.worldbank.org/
+    name: Statistics South Africa (StatsSA)
+    url: http://www.statssa.gov.za/
   - description: ''
     format: PNG
-    name: 'Screenshot: Boost Countries'
-    url: https://data.vulekamali.gov.za/dataset/26a0a219-2fbc-4c1d-9d4b-48e98f7b7d97/resource/cb97ab29-6da3-4df6-9a83-eb9392fcaf4b/download/qhnkr3p.png
+    name: 'Screenshot: Search Statistical Publications'
+    url: https://data.vulekamali.gov.za/dataset/67a8a0ae-190b-46b1-b412-b5969dbd0f94/resource/dc7082aa-a0e1-4c36-92f1-d850fa6521df/download/mrzqpyd.png
   - description: ''
     format: PNG
-    name: 'Screenshot: Country page: Solomon Islands'
-    url: https://data.vulekamali.gov.za/dataset/26a0a219-2fbc-4c1d-9d4b-48e98f7b7d97/resource/ae4c70b1-b2e3-4bf9-a0f5-4e735cb86b5e/download/udkr468.png
-  slug: boost-open-budgets-portal
-  url_path: /datasets/socio-economic-data/boost-open-budgets-portal
+    name: 'Screenshot: Quarterly employment statistics report'
+    url: https://data.vulekamali.gov.za/dataset/67a8a0ae-190b-46b1-b412-b5969dbd0f94/resource/f7bac374-df38-4008-9aa8-9582929308a0/download/kktkdg0.png
+  slug: statistics-south-africa-statssa
+  url_path: /datasets/socio-economic-data/statistics-south-africa-statssa
+- author:
+    email: ''
+    name: ''
+  category:
+    description: ''
+    name: Socio-economic Data
+    slug: socio-economic-data
+    url_path: /datasets/socio-economic-data
+  created: '2018-10-05T09:53:37.823115'
+  description: An interactive data portal for StatsSA's primary data sets, such as
+    the national census.
+  intro_short: 'South African headline demographic information '
+  last_updated: '2018-10-05T10:01:36.572059'
+  license:
+    name: License not specified
+    url: null
+  name: StatsSA SuperWEB2 Data Portal
+  organization:
+    email: null
+    facebook: null
+    logo_url: ''
+    name: Statistics South Africa
+    slug: statistics-south-africa
+    telephone: null
+    twitter: null
+    url: null
+  resources:
+  - description: ''
+    format: application/xhtml+xml
+    name: StatsSA SuperWEB2 Data Portal
+    url: http://superweb.statssa.gov.za/webapi/jsf/login.xhtml
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Superweb Dataset List'
+    url: https://data.vulekamali.gov.za/dataset/d85dd467-d091-41b9-b68d-7b26f6a70c4c/resource/93738521-3ab6-4102-9a91-da581e4a68f2/download/jbuvd45.png
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Count of Gender of head of household by household size'
+    url: https://data.vulekamali.gov.za/dataset/d85dd467-d091-41b9-b68d-7b26f6a70c4c/resource/650ebc01-f6e2-4f6c-bb75-3e2285177b61/download/jki40hp.png
+  slug: statssa-superweb2-data-portal
+  url_path: /datasets/socio-economic-data/statssa-superweb2-data-portal
 description: ''
 name: Socio-economic Data
 selected_tab: datasets
