@@ -34,6 +34,11 @@ const normaliseDepartmentItem = (item) => {
     name,
     groups,
   } = item;
+<<<<<<< HEAD
+=======
+
+  console.log(item);
+>>>>>>> b9aef6a5483855319ebbb96f6c4eb2faeabaa62a
 
   const getExtrasValue = (key) => {
     const obj = find(extras, extra => extra.key === key) || { value: null };

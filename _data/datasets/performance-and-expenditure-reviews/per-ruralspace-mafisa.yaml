@@ -2,8 +2,14 @@ author:
   email: null
   name: null
 category:
+  description: 'Performance Expenditure Reviews (PERs) involve the close scrutiny
+    of both expenditure and programme performance data, and are widely used internationally
+    for quantifying, assessing and improving the cost effectiveness of public policy
+    and the cost-effectiveness of public spending. They are also used to cost the
+    implications of legislative changes and policy choices. '
   name: Performance and Expenditure Reviews
   slug: performance-and-expenditure-reviews
+  url_path: /datasets/performance-and-expenditure-reviews
 created: '2018-07-17T12:12:23.800547'
 description: "The Micro Agricultural Financial Institutions of South Africa (MAFISA)\
   \ programme was launched as a pilot project in three provinces in 2004/05. Its goal\
@@ -29,7 +35,9 @@ intro: "The Micro Agricultural Financial Institutions of South Africa (MAFISA) p
   \ stipulated that financial intermediaries generally would not pay the borrowed\
   \ funds to the beneficiary, but would pay the suppliers of approved inputs and services\
   \ directly.\u200B"
-last_updated: '2018-08-15T15:36:16.616619'
+intro_short: null
+key_points: null
+last_updated: '2018-09-28T09:00:39.258412'
 license:
   name: null
   url: null
@@ -56,16 +64,18 @@ resources:
 - description: ''
   format: XLSX
   name: Logframe
-  url: https://www.gtac.gov.za/perdetail/MAFISA%20-%20logframe.xlsx
+  url: https://data.vulekamali.gov.za/dataset/per-ruralspace-mafisa/resource/251e6f3c-cab3-4b2a-8b42-3c3eeb89631f/download/mafisa-logframe.xlsx
 - description: ''
   format: XLSX
   name: Cost Model Locked
-  url: https://www.gtac.gov.za/perdetail/MAFISA%20-%20cost%20model%20locked.xlsx
+  url: https://data.vulekamali.gov.za/dataset/per-ruralspace-mafisa/resource/92d37a95-117d-475b-904a-b263f73bfe11/download/mafisa-cost-model-locked.xlsx
 - description: ''
   format: XLSX
   name: Cost Model Open
-  url: https://www.gtac.gov.za/perdetail/MAFISA%20-%20cost%20model.xlsx
+  url: https://data.vulekamali.gov.za/dataset/per-ruralspace-mafisa/resource/dfd25c4d-ad3d-44af-b375-8a8f5adb2c7e/download/mafisa-cost-model.xlsx
 selected_tab: datasets
 slug: per-ruralspace-mafisa
 title: PER - MAFISA - vulekamali
 url_path: /datasets/performance-and-expenditure-reviews/per-ruralspace-mafisa
+usage: null
+use_for: null
