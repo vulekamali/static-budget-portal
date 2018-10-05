@@ -12,7 +12,7 @@ datasets:
     census contains demographic information on individuals and households in South
     Africa down to the level of communities and wards.
   intro_short: South African 2011 Census data reflecting the 2016 municipal boundaries
-  last_updated: '2018-10-05T11:45:18.567375'
+  last_updated: '2018-10-05T11:47:37.303188'
   license:
     name: License not specified
     url: null
@@ -31,6 +31,14 @@ datasets:
     format: application/xhtml+xml
     name: Census 2011 (2016 Boundaries)
     url: http://superweb.statssa.gov.za/webapi/jsf/login.xhtml
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Census 2011 Education age by completed years'
+    url: https://data.vulekamali.gov.za/dataset/7793c6f2-38cc-4464-bd0b-02556db3fbf5/resource/d938427d-c56b-4963-ae57-aa4defb13e37/download/kqjzzkl.png
+  - description: ''
+    format: PNG
+    name: 'Screenshot: Census 2011 chart: Education age by completed years'
+    url: https://data.vulekamali.gov.za/dataset/7793c6f2-38cc-4464-bd0b-02556db3fbf5/resource/16cc3db8-7d39-4493-a38b-547841538910/download/bfo8mfp.png
   slug: census-2011-2016-boundaries
   url_path: /datasets/socio-economic-data/census-2011-2016-boundaries
 - author:
