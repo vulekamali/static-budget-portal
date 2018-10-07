@@ -136,6 +136,39 @@ intro: "## Vision\r\n\r\nA people-centred, African, world class Legislature\r\n\
   \ making supported by professional\r\nadministrative service"
 is_vote_primary: true
 name: Provincial Legislature
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 77090000
+      type: programme
+    - name: Parliamentary Business
+      total_budget: 55154000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 63560000
+      type: programme
+    - name: Parliamentary Business
+      total_budget: 33713000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2952000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Parliamentary Business
+      total_budget: 40954000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

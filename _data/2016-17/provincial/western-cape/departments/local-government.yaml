@@ -191,6 +191,75 @@ intro: "## Vision\n\nAn efficient and dynamic team that enables well governed mu
   \n\r\n* Accountability\r\n\r\n* Integrity\r\n\r\n* Responsiveness\r\n\r\n* Innovation"
 is_vote_primary: true
 name: Local Government
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Local Governance
+      total_budget: 87669000
+      type: programme
+    - name: Development and Planning
+      total_budget: 31179000
+      type: programme
+    - name: Administration
+      total_budget: 24315000
+      type: programme
+    - name: Traditional Institutional Management
+      total_budget: 1000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Development and Planning
+      total_budget: 29881000
+      type: programme
+    - name: Local Governance
+      total_budget: 16678000
+      type: programme
+    - name: Administration
+      total_budget: 11526000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3228000
+      type: programme
+    - name: Development and Planning
+      total_budget: 76000
+      type: programme
+    - name: Local Governance
+      total_budget: 3000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 105000
+      type: programme
+    name: 'Payments for financial assets - '
+    type: economic_classification_1_and_2
+  - items:
+    - name: Development and Planning
+      total_budget: 424000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Development and Planning
+      total_budget: 422000
+      type: programme
+    - name: Local Governance
+      total_budget: 242000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Local Governance
+      total_budget: 12150000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

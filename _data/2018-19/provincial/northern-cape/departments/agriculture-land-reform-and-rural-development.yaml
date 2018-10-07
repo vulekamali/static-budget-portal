@@ -245,6 +245,111 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Agriculture, Land Reform And Rural Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 79587274.0
+      type: programme
+    - name: Farmer Support And Development
+      total_budget: 51951818.0
+      type: programme
+    - name: Veterinary Services
+      total_budget: 42044188.0
+      type: programme
+    - name: Research And Technology Development Services
+      total_budget: 38542230.2
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 21347262.0
+      type: programme
+    - name: Rural Development
+      total_budget: 10768220.0
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 9636740.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support And Development
+      total_budget: 218931700.0
+      type: programme
+    - name: Administration
+      total_budget: 37209046.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 12394358.0
+      type: programme
+    - name: Research And Technology Development Services
+      total_budget: 12148270.9
+      type: programme
+    - name: Veterinary Services
+      total_budget: 9830890.0
+      type: programme
+    - name: Rural Development
+      total_budget: 4232284.0
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 2343484.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Research And Technology Development Services
+      total_budget: 800000.0
+      type: programme
+    name: Payments For Capital Assets - Biological Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support And Development
+      total_budget: 78727000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support And Development
+      total_budget: 10939594.0
+      type: programme
+    - name: Administration
+      total_budget: 2252966.0
+      type: programme
+    - name: Veterinary Services
+      total_budget: 389112.0
+      type: programme
+    - name: Research And Technology Development Services
+      total_budget: 271324.1
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 146004.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 86756.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support And Development
+      total_budget: 51000.0
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 14812.0
+      type: programme
+    name: Payments For Capital Assets - Software And Other Intangible Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Research And Technology Development Services
+      total_budget: 2549900.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1712000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

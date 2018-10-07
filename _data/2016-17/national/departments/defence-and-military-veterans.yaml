@@ -369,6 +369,210 @@ intro: "## Vote purpose\n\n_Defend and protect the Republic of South Africa, its
   \ are commensurate\nwith the needs of South Africa.\n\n"
 is_vote_primary: true
 name: Defence and Military Veterans
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Landward Defence
+      total_budget: 11295190000.0
+      type: programme
+    - name: Air Defence
+      total_budget: 3499610000.0
+      type: programme
+    - name: Military Health Support
+      total_budget: 3362501000.0
+      type: programme
+    - name: Maritime Defence
+      total_budget: 2263018000.0
+      type: programme
+    - name: Force Employment
+      total_budget: 2170263000.0
+      type: programme
+    - name: General Support
+      total_budget: 2028553000.0
+      type: programme
+    - name: Administration
+      total_budget: 1860533000.0
+      type: programme
+    - name: Defence Intelligence
+      total_budget: 404891000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2637075000.0
+      type: programme
+    - name: General Support
+      total_budget: 2422264000.0
+      type: programme
+    - name: Air Defence
+      total_budget: 2102018000.0
+      type: programme
+    - name: Landward Defence
+      total_budget: 1872384000.0
+      type: programme
+    - name: Force Employment
+      total_budget: 1380617000.0
+      type: programme
+    - name: Military Health Support
+      total_budget: 1044892000.0
+      type: programme
+    - name: Maritime Defence
+      total_budget: 719230000.0
+      type: programme
+    - name: Defence Intelligence
+      total_budget: 38059000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: General Support
+      total_budget: 120643000.0
+      type: programme
+    - name: Force Employment
+      total_budget: 1160000.0
+      type: programme
+    - name: Landward Defence
+      total_budget: 132000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Force Employment
+      total_budget: 92059000.0
+      type: programme
+    - name: Landward Defence
+      total_budget: 25779000.0
+      type: programme
+    - name: General Support
+      total_budget: 20913000.0
+      type: programme
+    - name: Administration
+      total_budget: 8823000.0
+      type: programme
+    - name: Air Defence
+      total_budget: 6849000.0
+      type: programme
+    - name: Maritime Defence
+      total_budget: 6633000.0
+      type: programme
+    - name: Military Health Support
+      total_budget: 2913000.0
+      type: programme
+    - name: Defence Intelligence
+      total_budget: 569000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: General Support
+      total_budget: 326000.0
+      type: programme
+    - name: Landward Defence
+      total_budget: 20000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Force Employment
+      total_budget: 993000.0
+      type: programme
+    name: Payments for capital assets - Specialised military assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Landward Defence
+      total_budget: 2379140000.0
+      type: programme
+    - name: Air Defence
+      total_budget: 1256583000.0
+      type: programme
+    - name: Maritime Defence
+      total_budget: 1123038000.0
+      type: programme
+    - name: Administration
+      total_budget: 618289000.0
+      type: programme
+    - name: General Support
+      total_budget: 551691000.0
+      type: programme
+    - name: Defence Intelligence
+      total_budget: 452451000.0
+      type: programme
+    - name: Force Employment
+      total_budget: 241405000.0
+      type: programme
+    - name: Military Health Support
+      total_budget: 58000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Landward Defence
+      total_budget: 40390000.0
+      type: programme
+    - name: Air Defence
+      total_budget: 18464000.0
+      type: programme
+    - name: Administration
+      total_budget: 17738000.0
+      type: programme
+    - name: Maritime Defence
+      total_budget: 17674000.0
+      type: programme
+    - name: General Support
+      total_budget: 14376000.0
+      type: programme
+    - name: Military Health Support
+      total_budget: 5612000.0
+      type: programme
+    - name: Force Employment
+      total_budget: 4714000.0
+      type: programme
+    - name: Defence Intelligence
+      total_budget: 4278000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 8620000.0
+      type: programme
+    - name: Military Health Support
+      total_budget: 840000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: General Support
+      total_budget: 51000.0
+      type: programme
+    - name: Administration
+      total_budget: 30000.0
+      type: programme
+    - name: Landward Defence
+      total_budget: 3000.0
+      type: programme
+    - name: Air Defence
+      total_budget: 3000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: General Support
+      total_budget: 752276000.0
+      type: programme
+    - name: Maritime Defence
+      total_budget: 226287000.0
+      type: programme
+    - name: Landward Defence
+      total_budget: 38400000.0
+      type: programme
+    - name: Force Employment
+      total_budget: 8424000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   programme_budgets:

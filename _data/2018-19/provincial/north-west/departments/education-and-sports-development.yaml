@@ -290,6 +290,135 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Education And Sports Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 10510948000.0
+      type: programme
+    - name: Administration
+      total_budget: 715854000.0
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 479515000.0
+      type: programme
+    - name: Public Special School Education
+      total_budget: 474531000.0
+      type: programme
+    - name: Examination And Education Related Services
+      total_budget: 337415000.0
+      type: programme
+    - name: Sport And Recreation
+      total_budget: 54180000.0
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 6831000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 585350000.0
+      type: programme
+    - name: Examination And Education Related Services
+      total_budget: 314363000.0
+      type: programme
+    - name: Administration
+      total_budget: 178918000.0
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 78181000.0
+      type: programme
+    - name: Sport And Recreation
+      total_budget: 66140000.0
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 45055000.0
+      type: programme
+    - name: Public Special School Education
+      total_budget: 10926000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Sport And Recreation
+      total_budget: 19000.0
+      type: programme
+    name: Current Payments - Interest And Rent On Land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Infrastructure Development
+      total_budget: 919984000.0
+      type: programme
+    - name: Sport And Recreation
+      total_budget: 9100000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Examination And Education Related Services
+      total_budget: 13185000.0
+      type: programme
+    - name: Administration
+      total_budget: 6657000.0
+      type: programme
+    - name: Public Ordinary School Education
+      total_budget: 6167000.0
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 4652000.0
+      type: programme
+    - name: Public Special School Education
+      total_budget: 3437000.0
+      type: programme
+    - name: Sport And Recreation
+      total_budget: 177000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Examination And Education Related Services
+      total_budget: 15501000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 46283000.0
+      type: programme
+    - name: Examination And Education Related Services
+      total_budget: 16531000.0
+      type: programme
+    - name: Administration
+      total_budget: 5768000.0
+      type: programme
+    - name: Sport And Recreation
+      total_budget: 1018000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 958172000.0
+      type: programme
+    - name: Public Special School Education
+      total_budget: 134915000.0
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 96214000.0
+      type: programme
+    - name: Examination And Education Related Services
+      total_budget: 44721000.0
+      type: programme
+    - name: Independent School Subsidies
+      total_budget: 31331000.0
+      type: programme
+    - name: Sport And Recreation
+      total_budget: 11829000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

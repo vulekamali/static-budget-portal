@@ -219,6 +219,72 @@ intro: "## Vote purpose\n\n_Develop and support a quality higher and vocational 
   \ and public adult centres.\n\n"
 is_vote_primary: true
 name: Higher Education and Training
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 6658000.0
+      type: programme
+    - name: Vocational and Continuing Education and Training
+      total_budget: 3568000.0
+      type: programme
+    - name: Skills Development
+      total_budget: 1168000.0
+      type: programme
+    - name: Human Resource Development, Planning and Monitoring Coordination
+      total_budget: 628000.0
+      type: programme
+    - name: University Education
+      total_budget: 304000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: University Education
+      total_budget: 3314798000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Vocational and Continuing Education and Training
+      total_budget: 7302181000.0
+      type: programme
+    - name: Administration
+      total_budget: 311347000.0
+      type: programme
+    - name: Skills Development
+      total_budget: 87683000.0
+      type: programme
+    - name: Human Resource Development, Planning and Monitoring Coordination
+      total_budget: 51059000.0
+      type: programme
+    - name: University Education
+      total_budget: 48906000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: University Education
+      total_budget: 29480317000.0
+      type: programme
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 14690000000.0
+      type: programme
+    - name: Vocational and Continuing Education and Training
+      total_budget: 1210021000.0
+      type: programme
+    - name: Skills Development
+      total_budget: 21848000.0
+      type: programme
+    - name: Human Resource Development, Planning and Monitoring Coordination
+      total_budget: 3156000.0
+      type: programme
+    - name: Administration
+      total_budget: 313000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

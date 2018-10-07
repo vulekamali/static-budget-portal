@@ -161,6 +161,51 @@ intro: "## Vote purpose\n\n_Drive investment, productivity and transformation in
   \ to support the achievement these\nobjectives.\n\n"
 is_vote_primary: true
 name: Public Enterprises
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 87553000.0
+      type: programme
+    - name: Portfolio Management and Strategic Partnerships
+      total_budget: 59400000.0
+      type: programme
+    - name: Legal and Governance
+      total_budget: 19953000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 65041000.0
+      type: programme
+    - name: Portfolio Management and Strategic Partnerships
+      total_budget: 26585000.0
+      type: programme
+    - name: Legal and Governance
+      total_budget: 5290000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2758000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 106000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 10000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
   programme_budgets:

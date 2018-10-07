@@ -238,6 +238,117 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Transport
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 397603531.72
+      type: programme
+    - name: Administration
+      total_budget: 259784596.0
+      type: programme
+    - name: Transport Regulation
+      total_budget: 252162874.0
+      type: programme
+    - name: Transport Operations
+      total_budget: 106795238.0
+      type: programme
+    - name: Community Based Programme
+      total_budget: 47685446.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 1006118299.78
+      type: programme
+    - name: Community Based Programme
+      total_budget: 586807410.0
+      type: programme
+    - name: Transport Operations
+      total_budget: 555140024.0
+      type: programme
+    - name: Administration
+      total_budget: 85381858.0
+      type: programme
+    - name: Transport Regulation
+      total_budget: 54462686.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 858559400.0
+      type: programme
+    - name: Community Based Programme
+      total_budget: 12694000.0
+      type: programme
+    - name: Transport Operations
+      total_budget: 8500000.0
+      type: programme
+    - name: Transport Regulation
+      total_budget: 5800000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulation
+      total_budget: 27239534.0
+      type: programme
+    - name: Transport Operations
+      total_budget: 10174490.0
+      type: programme
+    - name: Administration
+      total_budget: 6236884.0
+      type: programme
+    - name: Transport Infrastructure
+      total_budget: 2685000.0
+      type: programme
+    - name: Community Based Programme
+      total_budget: 356000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 1992214.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 382.0
+      type: programme
+    name: Transfers And Subsidies - Foreign Governments And International Organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 6546000.0
+      type: programme
+    - name: Administration
+      total_budget: 6025670.0
+      type: programme
+    - name: Transport Regulation
+      total_budget: 2171130.0
+      type: programme
+    - name: Transport Operations
+      total_budget: 926062.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 7607000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 502128372.0
+      type: programme
+    name: Transfers And Subsidies - Public Corporations And Private Enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

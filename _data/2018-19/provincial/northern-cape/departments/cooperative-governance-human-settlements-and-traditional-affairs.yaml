@@ -191,6 +191,69 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Cooperative Governance, Human Settlements And Traditional Affairs
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Co-Operative Governance
+      total_budget: 122675000.0
+      type: programme
+    - name: Administration
+      total_budget: 82177000.0
+      type: programme
+    - name: Human Settlement
+      total_budget: 45277000.0
+      type: programme
+    - name: Traditional Institutional Management
+      total_budget: 18472000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 43229000.0
+      type: programme
+    - name: Co-Operative Governance
+      total_budget: 7847000.0
+      type: programme
+    - name: Human Settlement
+      total_budget: 4539000.0
+      type: programme
+    - name: Traditional Institutional Management
+      total_budget: 2295000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Co-Operative Governance
+      total_budget: 2381000.0
+      type: programme
+    - name: Administration
+      total_budget: 1678000.0
+      type: programme
+    - name: Human Settlement
+      total_budget: 725000.0
+      type: programme
+    - name: Traditional Institutional Management
+      total_budget: 165000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Human Settlement
+      total_budget: 497157000.0
+      type: programme
+    - name: Traditional Institutional Management
+      total_budget: 1338000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Co-Operative Governance
+      total_budget: 1944000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

@@ -164,6 +164,45 @@ intro: "## Vision \n\nA people's assembly for good governmance to achive excelle
   \n\r\n\r\n"
 is_vote_primary: true
 name: Provincial Legislature
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 113767000
+      type: programme
+    - name: Parliamentary Services
+      total_budget: 76054000
+      type: programme
+    - name: Facilities for Members and Political Parties
+      total_budget: 33046000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 49804000
+      type: programme
+    - name: Parliamentary Services
+      total_budget: 35173000
+      type: programme
+    - name: Facilities for Members and Political Parties
+      total_budget: 5182000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 6031000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Facilities for Members and Political Parties
+      total_budget: 100313000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

@@ -197,6 +197,81 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Transport, Safety And Liaison
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Transport Regulations
+      total_budget: 75885747.99999999
+      type: programme
+    - name: Administration
+      total_budget: 55081198.0
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 23603000.0
+      type: programme
+    - name: Transport Operations
+      total_budget: 10226000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 27461000.0
+      type: programme
+    - name: Administration
+      total_budget: 22905931.6
+      type: programme
+    - name: Transport Regulations
+      total_budget: 13804272.0
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 3666000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1474192.0
+      type: programme
+    - name: Transport Regulations
+      total_budget: 1339668.0
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 590000.0
+      type: programme
+    - name: Transport Operations
+      total_budget: 108000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 200000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 1617000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulations
+      total_budget: 12000.0
+      type: programme
+    - name: Transport Operations
+      total_budget: 7000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 53715000.0
+      type: programme
+    name: Transfers And Subsidies - Public Corporations And Private Enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

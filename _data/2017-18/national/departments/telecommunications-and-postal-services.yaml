@@ -239,6 +239,93 @@ intro: "## Vote purpose\n\n_Develop information and communication technology (IC
   \n  * the Broadband Infraco Act (2007).\n\n"
 is_vote_primary: true
 name: Telecommunications and Postal Services
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 93416000.0
+      type: programme
+    - name: Policy, Research and Capacity Development
+      total_budget: 56247000.0
+      type: programme
+    - name: ICT Enterprise Development and Oversight
+      total_budget: 27160000.0
+      type: programme
+    - name: ICT Infrastructure Support
+      total_budget: 23360000.0
+      type: programme
+    - name: International Affairs and Trade
+      total_budget: 14523000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: ICT Infrastructure Support
+      total_budget: 440073000.0
+      type: programme
+    - name: Administration
+      total_budget: 93252000.0
+      type: programme
+    - name: Policy, Research and Capacity Development
+      total_budget: 33537000.0
+      type: programme
+    - name: International Affairs and Trade
+      total_budget: 7368000.0
+      type: programme
+    - name: ICT Enterprise Development and Oversight
+      total_budget: 6606000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 7169000.0
+      type: programme
+    - name: ICT Enterprise Development and Oversight
+      total_budget: 1266000.0
+      type: programme
+    - name: ICT Infrastructure Support
+      total_budget: 1210000.0
+      type: programme
+    - name: Policy, Research and Capacity Development
+      total_budget: 581000.0
+      type: programme
+    - name: International Affairs and Trade
+      total_budget: 370000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: ICT Infrastructure Support
+      total_budget: 950000.0
+      type: programme
+    - name: Administration
+      total_budget: 405000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: ICT Enterprise Development and Oversight
+      total_budget: 216083000.0
+      type: programme
+    - name: ICT Infrastructure Support
+      total_budget: 79098000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: International Affairs and Trade
+      total_budget: 25532000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: ICT Infrastructure Support
+      total_budget: 486000000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
   programme_budgets:

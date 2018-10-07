@@ -212,6 +212,66 @@ intro: "## Vote purpose\n\n_Develop information and communication technology (IC
   \ Infraco Act\_(2007).\n\n"
 is_vote_primary: true
 name: Telecommunications and Postal Services
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 1694000.0
+      type: programme
+    - name: ICT Infrastructure Support
+      total_budget: 1179000.0
+      type: programme
+    - name: Policy, Research and Capacity Development
+      total_budget: 1095000.0
+      type: programme
+    - name: ICT Enterprise Development and SOE Oversight
+      total_budget: 573000.0
+      type: programme
+    - name: International Affairs and Trade
+      total_budget: 520000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: ICT Infrastructure Support
+      total_budget: 109000000.0
+      type: programme
+    - name: ICT Enterprise Development and SOE Oversight
+      total_budget: 64852000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: ICT Infrastructure Support
+      total_budget: 351425000.0
+      type: programme
+    - name: Administration
+      total_budget: 171956000.0
+      type: programme
+    - name: Policy, Research and Capacity Development
+      total_budget: 104483000.0
+      type: programme
+    - name: ICT Enterprise Development and SOE Oversight
+      total_budget: 31054000.0
+      type: programme
+    - name: International Affairs and Trade
+      total_budget: 20733000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: ICT Enterprise Development and SOE Oversight
+      total_budget: 351410000.0
+      type: programme
+    - name: ICT Infrastructure Support
+      total_budget: 181160000.0
+      type: programme
+    - name: International Affairs and Trade
+      total_budget: 22194000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

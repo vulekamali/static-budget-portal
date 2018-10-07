@@ -215,6 +215,78 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Environment And Nature Conservation
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 45508917.63
+      type: programme
+    - name: Biodiversity Management
+      total_budget: 30512000.0
+      type: programme
+    - name: Environmental Empowerment Services
+      total_budget: 12597771.492
+      type: programme
+    - name: Environmental Quality Management
+      total_budget: 10842846.679
+      type: programme
+    - name: Environmental Policy,Planning And Coordination
+      total_budget: 10750522.8349
+      type: programme
+    - name: Compliance And Enforcement
+      total_budget: 8662000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 24902238.3
+      type: programme
+    - name: Biodiversity Management
+      total_budget: 4501000.0
+      type: programme
+    - name: Environmental Quality Management
+      total_budget: 3668765.6001
+      type: programme
+    - name: Compliance And Enforcement
+      total_budget: 1646000.0
+      type: programme
+    - name: Environmental Empowerment Services
+      total_budget: 1256863.1303
+      type: programme
+    - name: Environmental Policy,Planning And Coordination
+      total_budget: 575958.8222
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1668452.0990000002
+      type: programme
+    - name: Compliance And Enforcement
+      total_budget: 178000.0
+      type: programme
+    - name: Biodiversity Management
+      total_budget: 174000.0
+      type: programme
+    - name: Environmental Empowerment Services
+      total_budget: 135267.08500000002
+      type: programme
+    - name: Environmental Quality Management
+      total_budget: 123424.89589999999
+      type: programme
+    - name: Environmental Policy,Planning And Coordination
+      total_budget: 59813.8521
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 224296.0
+      type: programme
+    name: Transfers And Subsidies - Public Corporations And Private Enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

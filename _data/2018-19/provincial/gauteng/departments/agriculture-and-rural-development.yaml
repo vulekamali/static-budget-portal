@@ -187,6 +187,84 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Agriculture And Rural Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Agriculture And Rural Development
+      total_budget: 181907000.0
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 157654000.0
+      type: programme
+    - name: Administration
+      total_budget: 139653000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agriculture And Rural Development
+      total_budget: 284864000.0
+      type: programme
+    - name: Administration
+      total_budget: 79508000.0
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 54440000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Affairs
+      total_budget: 24477000.0
+      type: programme
+    - name: Agriculture And Rural Development
+      total_budget: 10059000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Affairs
+      total_budget: 5471000.0
+      type: programme
+    - name: Administration
+      total_budget: 4228000.0
+      type: programme
+    - name: Agriculture And Rural Development
+      total_budget: 3048000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 837000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agriculture And Rural Development
+      total_budget: 5291000.0
+      type: programme
+    name: Transfers And Subsidies - Higher Education Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 850000.0
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 455000.0
+      type: programme
+    - name: Agriculture And Rural Development
+      total_budget: 258000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agriculture And Rural Development
+      total_budget: 4000000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

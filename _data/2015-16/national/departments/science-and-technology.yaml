@@ -181,6 +181,60 @@ intro: "## Vote purpose\n\n_Realise the full potential of science and technology
   economic growth and socioeconomic development.\n\n"
 is_vote_primary: true
 name: Science and Technology
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 2309000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Research, Development and Support
+      total_budget: 1678885000.0
+      type: programme
+    - name: Technology Innovation
+      total_budget: 113997000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 284671000.0
+      type: programme
+    - name: Technology Innovation
+      total_budget: 62736000.0
+      type: programme
+    - name: International Cooperation and Resources
+      total_budget: 60948000.0
+      type: programme
+    - name: Research, Development and Support
+      total_budget: 44948000.0
+      type: programme
+    - name: Socio-Economic Innovation Partnerships
+      total_budget: 43075000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Research, Development and Support
+      total_budget: 2523233000.0
+      type: programme
+    - name: Socio-Economic Innovation Partnerships
+      total_budget: 1761389000.0
+      type: programme
+    - name: Technology Innovation
+      total_budget: 832084000.0
+      type: programme
+    - name: International Cooperation and Resources
+      total_budget: 61049000.0
+      type: programme
+    - name: Administration
+      total_budget: 12796000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

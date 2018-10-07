@@ -178,6 +178,60 @@ intro: "## Vision\n\nYou partner in financial resource management excellence, fo
   \ Free State Province\r\n\r\n\r\n"
 is_vote_primary: true
 name: Provincial Treasury
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 64062000
+      type: programme
+    - name: Asset and Liabilities Management
+      total_budget: 40517000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 27341000
+      type: programme
+    - name: Municipal Finance Management
+      total_budget: 26384000
+      type: programme
+    - name: Financial Governance
+      total_budget: 19010000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Asset and Liabilities Management
+      total_budget: 53419000
+      type: programme
+    - name: Municipal Finance Management
+      total_budget: 32989000
+      type: programme
+    - name: Administration
+      total_budget: 26390000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 3014000
+      type: programme
+    - name: Financial Governance
+      total_budget: 1247000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 700000
+      type: programme
+    - name: Financial Governance
+      total_budget: 47000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 347000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

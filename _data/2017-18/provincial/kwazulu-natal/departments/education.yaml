@@ -288,6 +288,123 @@ intro: "## Vision\n\nThe vision of the Department of Education (DOE) is: A well-
   \ for sanitary requirements for all schools.\r\n"
 is_vote_primary: true
 name: Education
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 35816821000
+      type: programme
+    - name: Administration
+      total_budget: 1392891000
+      type: programme
+    - name: Examination and Education Related services
+      total_budget: 1025309000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 931888000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 674100000
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 28276000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 2558446000
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 462000000
+      type: programme
+    - name: Administration
+      total_budget: 365698000
+      type: programme
+    - name: Examination and Education Related services
+      total_budget: 259462000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 120967000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 12377000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Infrastructure Development
+      total_budget: 1817871000
+      type: programme
+    - name: Public Ordinary School Education
+      total_budget: 10000000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 16840000
+      type: programme
+    - name: Administration
+      total_budget: 8820000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 4000000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 31893000
+      type: programme
+    name: 'Payments for financial assets - '
+    type: economic_classification_1_and_2
+  - items:
+    - name: Examination and Education Related services
+      total_budget: 88762000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 48293000
+      type: programme
+    - name: Administration
+      total_budget: 32985000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 1725000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 1499574000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 143819000
+      type: programme
+    - name: Independent School Subsidies
+      total_budget: 86038000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 30528000
+      type: programme
+    - name: Examination and Education Related services
+      total_budget: 6000000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1216000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

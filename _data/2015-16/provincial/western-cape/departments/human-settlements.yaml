@@ -205,6 +205,81 @@ intro: "## Vision\n\nResidents of the Western Cape have access to liveable, acce
   \ fair relationships in rental housing."
 is_vote_primary: true
 name: Human Settlements
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Housing Development
+      total_budget: 71663000
+      type: programme
+    - name: Administration
+      total_budget: 68216000
+      type: programme
+    - name: Housing Asset Management Property Management
+      total_budget: 18322000
+      type: programme
+    - name: Housing Needs, Research and Planning
+      total_budget: 17664000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 50079000
+      type: programme
+    - name: Administration
+      total_budget: 18580000
+      type: programme
+    - name: Housing Asset Management Property Management
+      total_budget: 11892000
+      type: programme
+    - name: Housing Needs, Research and Planning
+      total_budget: 1195000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 5075000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 300000
+      type: programme
+    name: 'Payments for financial assets - '
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 4895000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 1000000
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 1891780000
+      type: programme
+    - name: Administration
+      total_budget: 250000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 20000000
+      type: programme
+    - name: Housing Asset Management Property Management
+      total_budget: 8622000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

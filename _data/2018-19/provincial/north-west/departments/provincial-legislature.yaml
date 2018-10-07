@@ -151,6 +151,54 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Provincial Legislature
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 111333000.0
+      type: programme
+    - name: Legislature Operations
+      total_budget: 48340056.0
+      type: programme
+    - name: Statutory Payments
+      total_budget: 33855000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 91076000.0
+      type: programme
+    - name: Legislature Operations
+      total_budget: 59062944.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 89028000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2456000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1233000.0
+      type: programme
+    name: Payments For Capital Assets - Software And Other Intangible Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Legislature Operations
+      total_budget: 37514000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

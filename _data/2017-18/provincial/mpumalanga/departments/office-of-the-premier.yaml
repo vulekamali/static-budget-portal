@@ -171,6 +171,57 @@ intro: "## Vision\n\nA strategic centre of excellence for effective and efficien
   \ capability of the Provincial Government to fulfil its Constitutional obligations"
 is_vote_primary: true
 name: Office of the Premier
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 59542000
+      type: programme
+    - name: Institutional Development
+      total_budget: 51267000
+      type: programme
+    - name: Policy and Governance
+      total_budget: 33083000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 72425000
+      type: programme
+    - name: Policy and Governance
+      total_budget: 22987000
+      type: programme
+    - name: Institutional Development
+      total_budget: 20866000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 650000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 22000000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 6900000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 50000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

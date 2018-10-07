@@ -247,6 +247,114 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Education
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 38152894000.0
+      type: programme
+    - name: Administration
+      total_budget: 1508404000.0
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 1120137000.0
+      type: programme
+    - name: Examination And Education Related Services
+      total_budget: 1083548000.0
+      type: programme
+    - name: Public Special School Education
+      total_budget: 996044000.0
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 29916000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 2875801000.0
+      type: programme
+    - name: Administration
+      total_budget: 438905000.0
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 420000000.0
+      type: programme
+    - name: Examination And Education Related Services
+      total_budget: 388921000.0
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 126822000.0
+      type: programme
+    - name: Public Special School Education
+      total_budget: 13359000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Infrastructure Development
+      total_budget: 1736691000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 14182000.0
+      type: programme
+    - name: Public Special School Education
+      total_budget: 4562000.0
+      type: programme
+    - name: Administration
+      total_budget: 1332000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 4000000.0
+      type: programme
+    name: Payments For Capital Assets - Software And Other Intangible Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Examination And Education Related Services
+      total_budget: 93910000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 51094000.0
+      type: programme
+    - name: Administration
+      total_budget: 34898000.0
+      type: programme
+    - name: Public Special School Education
+      total_budget: 1825000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 1528502000.0
+      type: programme
+    - name: Public Special School Education
+      total_budget: 152161000.0
+      type: programme
+    - name: Independent School Subsidies
+      total_budget: 91028000.0
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 33459000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1287000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

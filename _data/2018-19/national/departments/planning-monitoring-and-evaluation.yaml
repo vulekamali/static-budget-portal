@@ -253,6 +253,102 @@ intro: "## Vote purpose\n\nImprove government service delivery through integrate
   \ integration of youth development priorities into key government programmes.\n\n"
 is_vote_primary: true
 name: Planning, Monitoring and Evaluation
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 99476000.0
+      type: programme
+    - name: National Planning Coordination
+      total_budget: 54938000.0
+      type: programme
+    - name: Sector Planning and Monitoring
+      total_budget: 49714000.0
+      type: programme
+    - name: Frontline and Citizen-Based Service Delivery and Monitoring
+      total_budget: 39115000.0
+      type: programme
+    - name: Public Sector Monitoring and Capacity Development
+      total_budget: 31683000.0
+      type: programme
+    - name: Evidence and Knowledge Systems
+      total_budget: 31461000.0
+      type: programme
+    - name: National Youth Development
+      total_budget: 6401000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 78501000.0
+      type: programme
+    - name: Evidence and Knowledge Systems
+      total_budget: 25562000.0
+      type: programme
+    - name: National Planning Coordination
+      total_budget: 22046000.0
+      type: programme
+    - name: Frontline and Citizen-Based Service Delivery and Monitoring
+      total_budget: 20015000.0
+      type: programme
+    - name: Sector Planning and Monitoring
+      total_budget: 6010000.0
+      type: programme
+    - name: Public Sector Monitoring and Capacity Development
+      total_budget: 3087000.0
+      type: programme
+    - name: National Youth Development
+      total_budget: 2968000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 500000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 8153000.0
+      type: programme
+    - name: Sector Planning and Monitoring
+      total_budget: 169000.0
+      type: programme
+    - name: Evidence and Knowledge Systems
+      total_budget: 161000.0
+      type: programme
+    - name: National Planning Coordination
+      total_budget: 158000.0
+      type: programme
+    - name: Frontline and Citizen-Based Service Delivery and Monitoring
+      total_budget: 133000.0
+      type: programme
+    - name: Public Sector Monitoring and Capacity Development
+      total_budget: 103000.0
+      type: programme
+    - name: National Youth Development
+      total_budget: 36000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: National Planning Coordination
+      total_budget: 250000.0
+      type: programme
+    - name: Public Sector Monitoring and Capacity Development
+      total_budget: 250000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: National Youth Development
+      total_budget: 446461000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   programme_budgets:

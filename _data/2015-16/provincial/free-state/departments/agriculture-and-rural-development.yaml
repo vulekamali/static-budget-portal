@@ -268,6 +268,117 @@ intro: "## Vision\n\nThe vision of the Free State Department of Agriculture and 
   \n\r\n* Dedication, Integrity, Professionalism"
 is_vote_primary: true
 name: Agriculture and Rural Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 122626000
+      type: programme
+    - name: Farmer Support And Development
+      total_budget: 89999000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 46724000
+      type: programme
+    - name: Technology,Research And Development Services
+      total_budget: 25162000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 22238000
+      type: programme
+    - name: Structured Agricultural Training
+      total_budget: 16249000
+      type: programme
+    - name: Rural Development
+      total_budget: 15427000
+      type: programme
+    - name: Agricultural Economics
+      total_budget: 8155000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 34179000
+      type: programme
+    - name: Farmer Support And Development
+      total_budget: 14764000
+      type: programme
+    - name: Technology,Research And Development Services
+      total_budget: 6550000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 5731000
+      type: programme
+    - name: Structured Agricultural Training
+      total_budget: 3649000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 2697000
+      type: programme
+    - name: Rural Development
+      total_budget: 1015000
+      type: programme
+    - name: Agricultural Economics
+      total_budget: 828000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Technology,Research And Development Services
+      total_budget: 21555000
+      type: programme
+    - name: Farmer Support And Development
+      total_budget: 9963000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Veterinary Services
+      total_budget: 4000000
+      type: programme
+    - name: Administration
+      total_budget: 1500000
+      type: programme
+    - name: Technology,Research And Development Services
+      total_budget: 1330000
+      type: programme
+    - name: Farmer Support And Development
+      total_budget: 400000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 270000
+      type: programme
+    - name: Farmer Support And Development
+      total_budget: 69000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support And Development
+      total_budget: 272303000
+      type: programme
+    - name: Rural Development
+      total_budget: 9824000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 5275000
+      type: programme
+    - name: Administration
+      total_budget: 2000000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 60000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

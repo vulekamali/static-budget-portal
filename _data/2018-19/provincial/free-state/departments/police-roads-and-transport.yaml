@@ -211,6 +211,93 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Police, Roads And Transport
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Transport Regulations
+      total_budget: 362110000.0
+      type: programme
+    - name: Transport Infrastructure
+      total_budget: 179914000.0
+      type: programme
+    - name: Administration
+      total_budget: 172145000.0
+      type: programme
+    - name: Transport Operations
+      total_budget: 23456000.0
+      type: programme
+    - name: Provincial Secretariat For Police Services
+      total_budget: 17676000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 1194993000.0
+      type: programme
+    - name: Administration
+      total_budget: 89123000.0
+      type: programme
+    - name: Transport Operations
+      total_budget: 62814000.0
+      type: programme
+    - name: Transport Regulations
+      total_budget: 48031000.0
+      type: programme
+    - name: Provincial Secretariat For Police Services
+      total_budget: 6627000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 325563000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 600000.0
+      type: programme
+    name: Payments For Capital Assets - Land And Sub-Soil Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 17725000.0
+      type: programme
+    - name: Transport Infrastructure
+      total_budget: 950000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 5000000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 2160000.0
+      type: programme
+    - name: Transport Regulations
+      total_budget: 1938000.0
+      type: programme
+    - name: Administration
+      total_budget: 1538000.0
+      type: programme
+    - name: Provincial Secretariat For Police Services
+      total_budget: 292000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 263954000.0
+      type: programme
+    name: Transfers And Subsidies - Public Corporations And Private Enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

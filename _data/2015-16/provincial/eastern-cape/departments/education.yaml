@@ -268,6 +268,117 @@ intro: "## Vision\n\nProvide learners with opportunities to become productive an
   \ in the Eastern Cape."
 is_vote_primary: true
 name: Education
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 20664370000
+      type: programme
+    - name: Administration
+      total_budget: 2003547000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 466634000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 364641000
+      type: programme
+    - name: Examination and Education Related Services
+      total_budget: 113127000
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 24425000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 807955000
+      type: programme
+    - name: Administration
+      total_budget: 323018000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 225768000
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 224690000
+      type: programme
+    - name: Examination and Education Related Services
+      total_budget: 163842000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 31489000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Infrastructure Development
+      total_budget: 1574762000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 26256000
+      type: programme
+    - name: Public Ordinary School Education
+      total_budget: 24447000
+      type: programme
+    - name: Examination and Education Related Services
+      total_budget: 9496000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 6677000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 689000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Examination and Education Related Services
+      total_budget: 5705000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 150000000
+      type: programme
+    - name: Administration
+      total_budget: 16071000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 1755000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 1987026000
+      type: programme
+    - name: Independent School Subsidies
+      total_budget: 117527000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 76258000
+      type: programme
+    - name: Examination and Education Related Services
+      total_budget: 20274000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 7797000
+      type: programme
+    - name: Administration
+      total_budget: 120000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

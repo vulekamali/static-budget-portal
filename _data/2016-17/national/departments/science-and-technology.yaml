@@ -235,6 +235,96 @@ intro: '## Vote purpose
   '
 is_vote_primary: true
 name: Science and Technology
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 149820000.0
+      type: programme
+    - name: International Cooperation and Resources
+      total_budget: 46150000.0
+      type: programme
+    - name: Technology Innovation
+      total_budget: 43543000.0
+      type: programme
+    - name: Socio-Economic Innovation Partnerships
+      total_budget: 37838000.0
+      type: programme
+    - name: Research, Development and Support
+      total_budget: 31805000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 138999000.0
+      type: programme
+    - name: Technology Innovation
+      total_budget: 20841000.0
+      type: programme
+    - name: International Cooperation and Resources
+      total_budget: 16959000.0
+      type: programme
+    - name: Research, Development and Support
+      total_budget: 14923000.0
+      type: programme
+    - name: Socio-Economic Innovation Partnerships
+      total_budget: 8825000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2309000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Research, Development and Support
+      total_budget: 3939322000.0
+      type: programme
+    - name: Socio-Economic Innovation Partnerships
+      total_budget: 749435000.0
+      type: programme
+    - name: Technology Innovation
+      total_budget: 642329000.0
+      type: programme
+    - name: International Cooperation and Resources
+      total_budget: 13598000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Technology Innovation
+      total_budget: 115153000.0
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Technology Innovation
+      total_budget: 89162000.0
+      type: programme
+    - name: International Cooperation and Resources
+      total_budget: 47756000.0
+      type: programme
+    - name: Administration
+      total_budget: 12860000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Socio-Economic Innovation Partnerships
+      total_budget: 996778000.0
+      type: programme
+    - name: Research, Development and Support
+      total_budget: 214546000.0
+      type: programme
+    - name: Technology Innovation
+      total_budget: 96045000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   programme_budgets:

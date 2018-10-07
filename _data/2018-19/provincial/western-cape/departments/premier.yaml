@@ -226,6 +226,90 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Premier
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Centre For E-Innovation (Corporate Services Centre)
+      total_budget: 213745000.0
+      type: programme
+    - name: People Management (Corporate Services Centre)
+      total_budget: 170489000.0
+      type: programme
+    - name: Corporate Assurance (Corporate Services Centre)
+      total_budget: 113070000.0
+      type: programme
+    - name: Executive Support (Administration)
+      total_budget: 95068000.0
+      type: programme
+    - name: Provincial Strategic Management
+      total_budget: 39197000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Centre For E-Innovation (Corporate Services Centre)
+      total_budget: 692334000.0
+      type: programme
+    - name: People Management (Corporate Services Centre)
+      total_budget: 45330000.0
+      type: programme
+    - name: Executive Support (Administration)
+      total_budget: 16818000.0
+      type: programme
+    - name: Corporate Assurance (Corporate Services Centre)
+      total_budget: 15077000.0
+      type: programme
+    - name: Provincial Strategic Management
+      total_budget: 13287000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Centre For E-Innovation (Corporate Services Centre)
+      total_budget: 50402000.0
+      type: programme
+    - name: People Management (Corporate Services Centre)
+      total_budget: 2127000.0
+      type: programme
+    - name: Executive Support (Administration)
+      total_budget: 1550000.0
+      type: programme
+    - name: Corporate Assurance (Corporate Services Centre)
+      total_budget: 763000.0
+      type: programme
+    - name: Provincial Strategic Management
+      total_budget: 500000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: People Management (Corporate Services Centre)
+      total_budget: 17000.0
+      type: programme
+    - name: Executive Support (Administration)
+      total_budget: 6000.0
+      type: programme
+    - name: Centre For E-Innovation (Corporate Services Centre)
+      total_budget: 6000.0
+      type: programme
+    - name: Provincial Strategic Management
+      total_budget: 4000.0
+      type: programme
+    - name: Corporate Assurance (Corporate Services Centre)
+      total_budget: 3000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Centre For E-Innovation (Corporate Services Centre)
+      total_budget: 15500000.0
+      type: programme
+    - name: Provincial Strategic Management
+      total_budget: 900000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

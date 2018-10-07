@@ -181,6 +181,66 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Human Settlements
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 89446000.0
+      type: programme
+    - name: Housing Development
+      total_budget: 60548000.0
+      type: programme
+    - name: Housing Needs, Research & Planning
+      total_budget: 17826000.0
+      type: programme
+    - name: Housing Assets Management Property  Man
+      total_budget: 1150000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 35697000.0
+      type: programme
+    - name: Housing Development
+      total_budget: 29128000.0
+      type: programme
+    - name: Housing Needs, Research & Planning
+      total_budget: 3207000.0
+      type: programme
+    - name: Housing Assets Management Property  Man
+      total_budget: 251000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3418000.0
+      type: programme
+    - name: Housing Development
+      total_budget: 3160000.0
+      type: programme
+    - name: Housing Needs, Research & Planning
+      total_budget: 1181000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2900000.0
+      type: programme
+    name: Payments For Capital Assets - Software And Other Intangible Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 1142272000.0
+      type: programme
+    - name: Housing Needs, Research & Planning
+      total_budget: 1594000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

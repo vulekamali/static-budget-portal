@@ -184,6 +184,66 @@ intro: "## Vision\n\nIntegrated and Sustainable Human Settlements\r\n\r\n\n\n## 
   \ of land tenure rights"
 is_vote_primary: true
 name: Human Settlements
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: HOUSING DEVELOPMENT
+      total_budget: 76000000
+      type: programme
+    - name: ADMINISTRATION
+      total_budget: 70472000
+      type: programme
+    - name: HOUSING NEEDS, RESEARCH & PLANNING
+      total_budget: 15129000
+      type: programme
+    - name: HOUSING ASSETS MANAGEMENT PROPERTY  MAN
+      total_budget: 1009000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: ADMINISTRATION
+      total_budget: 27136000
+      type: programme
+    - name: HOUSING DEVELOPMENT
+      total_budget: 12949000
+      type: programme
+    - name: HOUSING NEEDS, RESEARCH & PLANNING
+      total_budget: 4261000
+      type: programme
+    - name: HOUSING ASSETS MANAGEMENT PROPERTY  MAN
+      total_budget: 401000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: HOUSING DEVELOPMENT
+      total_budget: 1177000
+      type: programme
+    - name: HOUSING NEEDS, RESEARCH & PLANNING
+      total_budget: 1173000
+      type: programme
+    - name: ADMINISTRATION
+      total_budget: 815000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: HOUSING NEEDS, RESEARCH & PLANNING
+      total_budget: 1081000
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: HOUSING DEVELOPMENT
+      total_budget: 1122031000
+      type: programme
+    - name: HOUSING NEEDS, RESEARCH & PLANNING
+      total_budget: 1870000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

@@ -178,6 +178,51 @@ intro: "## Vote purpose\n\n_Ensure independent oversight of the South African Po
   \n"
 is_vote_primary: true
 name: Independent Police Investigative Directorate
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Investigation and Information Management
+      total_budget: 121949000.0
+      type: programme
+    - name: Administration
+      total_budget: 54114000.0
+      type: programme
+    - name: Compliance Monitoring and Stakeholder Management
+      total_budget: 10094000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Investigation and Information Management
+      total_budget: 35289000.0
+      type: programme
+    - name: Administration
+      total_budget: 32199000.0
+      type: programme
+    - name: Compliance Monitoring and Stakeholder Management
+      total_budget: 1012000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 194000.0
+      type: programme
+    - name: Compliance Monitoring and Stakeholder Management
+      total_budget: 18000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 604000.0
+      type: programme
+    - name: Investigation and Information Management
+      total_budget: 9000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
   programme_budgets:

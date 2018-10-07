@@ -305,6 +305,153 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Rural Development And Agrarian Reform
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Farmer Support And Development
+      total_budget: 380018102.2
+      type: programme
+    - name: Administration
+      total_budget: 314769000.0
+      type: programme
+    - name: Veterianary Services
+      total_budget: 248038718.82000002
+      type: programme
+    - name: Research And Technology Development
+      total_budget: 109486000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 94830502.34
+      type: programme
+    - name: Structured Agricultural Education And Training
+      total_budget: 57449525.938999996
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 28648000.0
+      type: programme
+    - name: Rural Development Coordination
+      total_budget: 16553852.467
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support And Development
+      total_budget: 197123463.3
+      type: programme
+    - name: Administration
+      total_budget: 119274000.0
+      type: programme
+    - name: Veterianary Services
+      total_budget: 72272790.0
+      type: programme
+    - name: Structured Agricultural Education And Training
+      total_budget: 28331830.700000003
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 26854080.898000002
+      type: programme
+    - name: Research And Technology Development
+      total_budget: 20580958.835
+      type: programme
+    - name: Rural Development Coordination
+      total_budget: 10690960.812
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 3313100.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Veterianary Services
+      total_budget: 300.0
+      type: programme
+    name: Payments For Capital Assets - Biological Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support And Development
+      total_budget: 119697420.0
+      type: programme
+    - name: Structured Agricultural Education And Training
+      total_budget: 15878340.3
+      type: programme
+    - name: Rural Development Coordination
+      total_budget: 620000.0
+      type: programme
+    - name: Veterianary Services
+      total_budget: 482000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support And Development
+      total_budget: 22011226.9
+      type: programme
+    - name: Administration
+      total_budget: 17055000.0
+      type: programme
+    - name: Veterianary Services
+      total_budget: 9190194.8
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 6273000.0
+      type: programme
+    - name: Structured Agricultural Education And Training
+      total_budget: 4988346.6
+      type: programme
+    - name: Research And Technology Development
+      total_budget: 3454000.0
+      type: programme
+    - name: Rural Development Coordination
+      total_budget: 1321248.5999999999
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 540916.6
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Rural Development Coordination
+      total_budget: 162975373.6
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 53313000.0
+      type: programme
+    - name: Farmer Support And Development
+      total_budget: 47529000.0
+      type: programme
+    - name: Research And Technology Development
+      total_budget: 1645000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Structured Agricultural Education And Training
+      total_budget: 53318000.0
+      type: programme
+    name: Transfers And Subsidies - Higher Education Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 22928000.0
+      type: programme
+    - name: Farmer Support And Development
+      total_budget: 1900000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Structured Agricultural Education And Training
+      total_budget: 68.7
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support And Development
+      total_budget: 54881000.0
+      type: programme
+    name: Transfers And Subsidies - Public Corporations And Private Enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

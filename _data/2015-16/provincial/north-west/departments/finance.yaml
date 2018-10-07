@@ -195,6 +195,66 @@ intro: "## Vision \n\nWe will be the ultimate financial management authority and
   \n\r\n* Provide oversight on implementation of the MFMA in the province.\r\n"
 is_vote_primary: true
 name: Finance
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 84901000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 84567000
+      type: programme
+    - name: Financial Governance
+      total_budget: 83282000
+      type: programme
+    - name: Asset and Liabilities Management
+      total_budget: 37772000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 71781000
+      type: programme
+    - name: Financial Governance
+      total_budget: 61254000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 43485000
+      type: programme
+    - name: Asset and Liabilities Management
+      total_budget: 9240000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Financial Governance
+      total_budget: 6000
+      type: programme
+    name: Current payments - Interest and rent on land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 5390000
+      type: programme
+    - name: Financial Governance
+      total_budget: 1607000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 1064000
+      type: programme
+    - name: Asset and Liabilities Management
+      total_budget: 570000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1083000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

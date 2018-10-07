@@ -206,6 +206,84 @@ intro: "## Vote purpose\n\n_Promote and regulate the minerals and mining sector 
   \ industry.\n\n"
 is_vote_primary: true
 name: Mineral Resources
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Mineral Regulation
+      total_budget: 178390000.0
+      type: programme
+    - name: Administration
+      total_budget: 171702000.0
+      type: programme
+    - name: Mine Health and Safety
+      total_budget: 153995000.0
+      type: programme
+    - name: Mineral Policy and Promotion
+      total_budget: 68043000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 125047000.0
+      type: programme
+    - name: Mineral Policy and Promotion
+      total_budget: 65786000.0
+      type: programme
+    - name: Mineral Regulation
+      total_budget: 38593000.0
+      type: programme
+    - name: Mine Health and Safety
+      total_budget: 29809000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3852000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 7105000.0
+      type: programme
+    - name: Mine Health and Safety
+      total_budget: 1130000.0
+      type: programme
+    - name: Mineral Policy and Promotion
+      total_budget: 937000.0
+      type: programme
+    - name: Mineral Regulation
+      total_budget: 598000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Mineral Policy and Promotion
+      total_budget: 378598000.0
+      type: programme
+    - name: Mineral Regulation
+      total_budget: 53205000.0
+      type: programme
+    - name: Administration
+      total_budget: 1716000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1446000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Mineral Policy and Promotion
+      total_budget: 389125000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   programme_budgets:

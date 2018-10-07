@@ -263,6 +263,120 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Economic Development And Tourism
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 43809000.0
+      type: programme
+    - name: Economic Planning
+      total_budget: 29830000.0
+      type: programme
+    - name: Integrated Economic Development Services
+      total_budget: 20419000.0
+      type: programme
+    - name: Skills Development And Innovation
+      total_budget: 16112000.0
+      type: programme
+    - name: Trade And Sector Development
+      total_budget: 9339000.0
+      type: programme
+    - name: Business Regulation And Governance
+      total_budget: 8573000.0
+      type: programme
+    - name: Tourism Arts And Entertainment
+      total_budget: 8164000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Skills Development And Innovation
+      total_budget: 41369000.0
+      type: programme
+    - name: Economic Planning
+      total_budget: 28026000.0
+      type: programme
+    - name: Administration
+      total_budget: 17910000.0
+      type: programme
+    - name: Integrated Economic Development Services
+      total_budget: 10664000.0
+      type: programme
+    - name: Tourism Arts And Entertainment
+      total_budget: 4942000.0
+      type: programme
+    - name: Business Regulation And Governance
+      total_budget: 2225000.0
+      type: programme
+    - name: Trade And Sector Development
+      total_budget: 1730000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3500000.0
+      type: programme
+    - name: Economic Planning
+      total_budget: 31000.0
+      type: programme
+    - name: Business Regulation And Governance
+      total_budget: 5000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Skills Development And Innovation
+      total_budget: 500000.0
+      type: programme
+    - name: Integrated Economic Development Services
+      total_budget: 470000.0
+      type: programme
+    - name: Economic Planning
+      total_budget: 2000.0
+      type: programme
+    name: Payments For Capital Assets - Software And Other Intangible Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic Planning
+      total_budget: 63955000.0
+      type: programme
+    - name: Tourism Arts And Entertainment
+      total_budget: 41676000.0
+      type: programme
+    - name: Trade And Sector Development
+      total_budget: 37700000.0
+      type: programme
+    - name: Administration
+      total_budget: 2000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Skills Development And Innovation
+      total_budget: 8000000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic Planning
+      total_budget: 19009000.0
+      type: programme
+    - name: Integrated Economic Development Services
+      total_budget: 5000000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Integrated Economic Development Services
+      total_budget: 7500000.0
+      type: programme
+    - name: Skills Development And Innovation
+      total_budget: 3000000.0
+      type: programme
+    name: Transfers And Subsidies - Public Corporations And Private Enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

@@ -228,6 +228,87 @@ intro: "## Vote purpose\n\n_Transform the delivery of sport and recreation by en
   \ by legislating on\nsports participation and sports infrastructure.\n\n"
 is_vote_primary: true
 name: Sport and Recreation South Africa
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 75372000.0
+      type: programme
+    - name: Sport Support
+      total_budget: 14163000.0
+      type: programme
+    - name: Active Nation
+      total_budget: 7794000.0
+      type: programme
+    - name: Sport Infrastructure Support
+      total_budget: 4870000.0
+      type: programme
+    - name: Winning Nation
+      total_budget: 3905000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 59150000.0
+      type: programme
+    - name: Active Nation
+      total_budget: 55026000.0
+      type: programme
+    - name: Winning Nation
+      total_budget: 33830000.0
+      type: programme
+    - name: Sport Infrastructure Support
+      total_budget: 8185000.0
+      type: programme
+    - name: Sport Support
+      total_budget: 5971000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2247000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Winning Nation
+      total_budget: 22991000.0
+      type: programme
+    - name: Sport Support
+      total_budget: 11595000.0
+      type: programme
+    - name: Administration
+      total_budget: 87000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Winning Nation
+      total_budget: 6372000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Sport Support
+      total_budget: 118932000.0
+      type: programme
+    - name: Active Nation
+      total_budget: 40433000.0
+      type: programme
+    - name: Winning Nation
+      total_budget: 9813000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Active Nation
+      total_budget: 585828000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
   programme_budgets:

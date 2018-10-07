@@ -270,6 +270,102 @@ intro: '## Vote purpose
   and efficiency of the public service and its service delivery to the public.'
 is_vote_primary: true
 name: Public Service and Administration
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 117160000.0
+      type: programme
+    - name: Labour Relations and Human Resource Management
+      total_budget: 49761000.0
+      type: programme
+    - name: Governance of Public Administration
+      total_budget: 34211000.0
+      type: programme
+    - name: Service Delivery Support
+      total_budget: 31589000.0
+      type: programme
+    - name: Policy Development, Research and Analysis
+      total_budget: 26965000.0
+      type: programme
+    - name: Government Chief Information Officer
+      total_budget: 16025000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 111339000.0
+      type: programme
+    - name: Service Delivery Support
+      total_budget: 19995000.0
+      type: programme
+    - name: Labour Relations and Human Resource Management
+      total_budget: 19882000.0
+      type: programme
+    - name: Governance of Public Administration
+      total_budget: 12084000.0
+      type: programme
+    - name: Policy Development, Research and Analysis
+      total_budget: 7246000.0
+      type: programme
+    - name: Government Chief Information Officer
+      total_budget: 5342000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1643000.0
+      type: programme
+    - name: Labour Relations and Human Resource Management
+      total_budget: 450000.0
+      type: programme
+    - name: Service Delivery Support
+      total_budget: 278000.0
+      type: programme
+    - name: Governance of Public Administration
+      total_budget: 268000.0
+      type: programme
+    - name: Policy Development, Research and Analysis
+      total_budget: 235000.0
+      type: programme
+    - name: Government Chief Information Officer
+      total_budget: 146000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Governance of Public Administration
+      total_budget: 245664000.0
+      type: programme
+    - name: Service Delivery Support
+      total_budget: 194561000.0
+      type: programme
+    - name: Administration
+      total_budget: 152000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Service Delivery Support
+      total_budget: 1504000.0
+      type: programme
+    - name: Administration
+      total_budget: 362000.0
+      type: programme
+    - name: Governance of Public Administration
+      total_budget: 276000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 6000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
   programme_budgets:

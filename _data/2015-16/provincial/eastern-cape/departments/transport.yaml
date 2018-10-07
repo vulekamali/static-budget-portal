@@ -227,6 +227,96 @@ intro: "## Vision\n\nAn efficient, safe, sustainable, affordable and accessible 
   \ laws in the province; and\r\n\r\n* To provide fleet services to provincial departments."
 is_vote_primary: true
 name: Transport
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Transport Regulation
+      total_budget: 214812000
+      type: programme
+    - name: Administration
+      total_budget: 214458000
+      type: programme
+    - name: Transport Operations
+      total_budget: 81716000
+      type: programme
+    - name: Transport Infrastructure
+      total_budget: 7059000
+      type: programme
+    - name: Community Based Programme
+      total_budget: 4062000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 459317000
+      type: programme
+    - name: Administration
+      total_budget: 57910000
+      type: programme
+    - name: Transport Regulation
+      total_budget: 41324000
+      type: programme
+    - name: Community Based Programme
+      total_budget: 36986000
+      type: programme
+    - name: Transport Infrastructure
+      total_budget: 16075000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 25000000
+      type: programme
+    - name: Transport Regulation
+      total_budget: 2500000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulation
+      total_budget: 28204000
+      type: programme
+    - name: Administration
+      total_budget: 7818000
+      type: programme
+    - name: Transport Operations
+      total_budget: 5183000
+      type: programme
+    - name: Community Based Programme
+      total_budget: 447000
+      type: programme
+    - name: Transport Infrastructure
+      total_budget: 197000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 1702000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulation
+      total_budget: 5062000
+      type: programme
+    - name: Administration
+      total_budget: 1911000
+      type: programme
+    - name: Transport Operations
+      total_budget: 740000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 437805000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

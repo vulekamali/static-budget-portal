@@ -197,6 +197,75 @@ intro: "## Vision\n\nThe vision of the department is: Together breaking new grou
   \ in KwaZulu-Natal.\r\n\r\n* To capacitate housing stakeholders"
 is_vote_primary: true
 name: Human Settlements
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Housing Development
+      total_budget: 132571000
+      type: programme
+    - name: Administration
+      total_budget: 117774000
+      type: programme
+    - name: Housing Needs, Research and  Planning
+      total_budget: 12905000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 71602000
+      type: programme
+    - name: Housing Development
+      total_budget: 44815000
+      type: programme
+    - name: Housing Needs, Research and  Planning
+      total_budget: 4121000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 12500000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3142000
+      type: programme
+    - name: Housing Development
+      total_budget: 742000
+      type: programme
+    - name: Housing Needs, Research and  Planning
+      total_budget: 50000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Asset Management, Property Management
+      total_budget: 168980000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 2866223000
+      type: programme
+    - name: Administration
+      total_budget: 580000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 148400000
+      type: programme
+    - name: Administration
+      total_budget: 280000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

@@ -214,6 +214,54 @@ intro: '## Vote purpose
   '
 is_vote_primary: true
 name: Tourism
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 3214000.0
+      type: programme
+    - name: Policy and Knowledge Services
+      total_budget: 1159000.0
+      type: programme
+    - name: International Tourism
+      total_budget: 944000.0
+      type: programme
+    - name: Domestic Tourism
+      total_budget: 776000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 228383000.0
+      type: programme
+    - name: Domestic Tourism
+      total_budget: 75544000.0
+      type: programme
+    - name: Policy and Knowledge Services
+      total_budget: 59294000.0
+      type: programme
+    - name: International Tourism
+      total_budget: 39778000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy and Knowledge Services
+      total_budget: 1155118000.0
+      type: programme
+    - name: Domestic Tourism
+      total_budget: 229843000.0
+      type: programme
+    - name: International Tourism
+      total_budget: 6004000.0
+      type: programme
+    - name: Administration
+      total_budget: 176000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

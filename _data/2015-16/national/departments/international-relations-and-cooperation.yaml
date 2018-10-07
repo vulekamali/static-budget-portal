@@ -199,6 +199,57 @@ intro: "## Vote purpose\n\n_Formulate, coordinate, implement and manage South Af
   \ developmental assistance\n\n  * assisting South African citizens abroad.\n\n"
 is_vote_primary: true
 name: International Relations and Cooperation
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 250261000.0
+      type: programme
+    - name: International Relations
+      total_budget: 30020000.0
+      type: programme
+    - name: International Cooperation
+      total_budget: 2069000.0
+      type: programme
+    - name: Public Diplomacy and Protocol Services
+      total_budget: 1613000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: International Relations
+      total_budget: 2897197000.0
+      type: programme
+    - name: Administration
+      total_budget: 1167033000.0
+      type: programme
+    - name: International Cooperation
+      total_budget: 464850000.0
+      type: programme
+    - name: Public Diplomacy and Protocol Services
+      total_budget: 244404000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: International Transfers
+      total_budget: 635231000.0
+      type: programme
+    - name: International Relations
+      total_budget: 4440000.0
+      type: programme
+    - name: Administration
+      total_budget: 1227000.0
+      type: programme
+    - name: Public Diplomacy and Protocol Services
+      total_budget: 263000.0
+      type: programme
+    - name: International Cooperation
+      total_budget: 26000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

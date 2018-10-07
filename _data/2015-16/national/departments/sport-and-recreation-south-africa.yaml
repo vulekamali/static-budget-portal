@@ -173,6 +173,48 @@ intro: "## Vote purpose\n\n_Transform the delivery of sport and recreation by en
   \n"
 is_vote_primary: true
 name: Sport and Recreation South Africa
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 2167000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 122582000.0
+      type: programme
+    - name: Winning Nation
+      total_budget: 63521000.0
+      type: programme
+    - name: Active Nation
+      total_budget: 54740000.0
+      type: programme
+    - name: Sport Support
+      total_budget: 15190000.0
+      type: programme
+    - name: Sport Infrastructure Support
+      total_budget: 9678000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Active Nation
+      total_budget: 573906000.0
+      type: programme
+    - name: Sport Support
+      total_budget: 118054000.0
+      type: programme
+    - name: Winning Nation
+      total_budget: 28631000.0
+      type: programme
+    - name: Administration
+      total_budget: 79000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

@@ -173,6 +173,66 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Economy And Enterprise Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 56919400.0
+      type: programme
+    - name: Business Regulation And Governance
+      total_budget: 25415000.0
+      type: programme
+    - name: Integrated Economic Development Services
+      total_budget: 16458000.0
+      type: programme
+    - name: Economic Planning And Sector Development
+      total_budget: 5723000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 43995000.0
+      type: programme
+    - name: Integrated Economic Development Services
+      total_budget: 36660000.0
+      type: programme
+    - name: Economic Planning And Sector Development
+      total_budget: 26571000.0
+      type: programme
+    - name: Business Regulation And Governance
+      total_budget: 5650000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 11000.0
+      type: programme
+    name: Current Payments - Interest And Rent On Land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1567000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Business Regulation And Governance
+      total_budget: 77986000.0
+      type: programme
+    - name: Administration
+      total_budget: 175000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 60000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

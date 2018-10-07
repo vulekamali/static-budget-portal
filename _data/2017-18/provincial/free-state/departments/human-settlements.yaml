@@ -200,6 +200,72 @@ intro: "## Vision\n\nIntegrated and Sustainable Human Settlements\r\n\r\n\n\n## 
   \r\n* Acceleration of land tenure rights"
 is_vote_primary: true
 name: Human Settlements
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: ADMINISTRATION
+      total_budget: 89372000
+      type: programme
+    - name: HOUSING DEVELOPMENT
+      total_budget: 62542000
+      type: programme
+    - name: HOUSING NEEDS, RESEARCH & PLANNING
+      total_budget: 16521000
+      type: programme
+    - name: HOUSING ASSETS MANAGEMENT PROPERTY  MAN
+      total_budget: 1066000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: ADMINISTRATION
+      total_budget: 33929000
+      type: programme
+    - name: HOUSING DEVELOPMENT
+      total_budget: 22684000
+      type: programme
+    - name: HOUSING NEEDS, RESEARCH & PLANNING
+      total_budget: 2579000
+      type: programme
+    - name: HOUSING ASSETS MANAGEMENT PROPERTY  MAN
+      total_budget: 255000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: HOUSING DEVELOPMENT
+      total_budget: 3596000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: ADMINISTRATION
+      total_budget: 1000000
+      type: programme
+    - name: HOUSING DEVELOPMENT
+      total_budget: 885000
+      type: programme
+    - name: HOUSING NEEDS, RESEARCH & PLANNING
+      total_budget: 650000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: HOUSING NEEDS, RESEARCH & PLANNING
+      total_budget: 1200000
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: HOUSING DEVELOPMENT
+      total_budget: 1205180000
+      type: programme
+    - name: HOUSING NEEDS, RESEARCH & PLANNING
+      total_budget: 1435000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

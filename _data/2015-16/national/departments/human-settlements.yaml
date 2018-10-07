@@ -183,6 +183,60 @@ intro: "## Vote purpose\n\n_Facilitate the creation of sustainable human settlem
   \ and the private sector.\n\n"
 is_vote_primary: true
 name: Human Settlements
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 2711000.0
+      type: programme
+    - name: Human Settlements Policy, Strategy and Planning
+      total_budget: 596000.0
+      type: programme
+    - name: Human Settlements Delivery Support
+      total_budget: 498000.0
+      type: programme
+    - name: Housing Development Finance
+      total_budget: 178000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development Finance
+      total_budget: 29689327000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 432361000.0
+      type: programme
+    - name: Human Settlements Delivery Support
+      total_budget: 160583000.0
+      type: programme
+    - name: Human Settlements Policy, Strategy and Planning
+      total_budget: 72592000.0
+      type: programme
+    - name: Housing Development Finance
+      total_budget: 21422000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development Finance
+      total_budget: 553200000.0
+      type: programme
+    - name: Human Settlements Delivery Support
+      total_budget: 8719000.0
+      type: programme
+    - name: Human Settlements Policy, Strategy and Planning
+      total_budget: 1150000.0
+      type: programme
+    - name: Administration
+      total_budget: 44000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

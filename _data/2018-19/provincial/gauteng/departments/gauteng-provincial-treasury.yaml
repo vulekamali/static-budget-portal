@@ -196,6 +196,75 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Gauteng Provincial Treasury
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Financial Governance
+      total_budget: 135839000.0
+      type: programme
+    - name: Gauteng Audit Services
+      total_budget: 111498000.0
+      type: programme
+    - name: Administration
+      total_budget: 98852000.0
+      type: programme
+    - name: Provincial Supply Chain Management
+      total_budget: 90314000.0
+      type: programme
+    - name: Sustainable Fiscal  Resource Management
+      total_budget: 82421000.0
+      type: programme
+    - name: Municipal Financial Governance
+      total_budget: 71238000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 37494000.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 30574000.0
+      type: programme
+    - name: Provincial Supply Chain Management
+      total_budget: 27720000.0
+      type: programme
+    - name: Sustainable Fiscal  Resource Management
+      total_budget: 15036000.0
+      type: programme
+    - name: Municipal Financial Governance
+      total_budget: 7338000.0
+      type: programme
+    - name: Gauteng Audit Services
+      total_budget: 6494000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 12036000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Sustainable Fiscal  Resource Management
+      total_budget: 58544000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1015000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Provincial Supply Chain Management
+      total_budget: 10000000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

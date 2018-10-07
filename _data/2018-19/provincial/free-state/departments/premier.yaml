@@ -209,6 +209,78 @@ intro: "## Mandate\n\nIn terms of the Constitution, the Premier (supported by th
   \ Free State \n\n"
 is_vote_primary: true
 name: Premier
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Monitoring And Evaluation
+      total_budget: 116030000.0
+      type: programme
+    - name: Institutional Development
+      total_budget: 76439000.0
+      type: programme
+    - name: Administration
+      total_budget: 49461000.0
+      type: programme
+    - name: Policy & Governance
+      total_budget: 43323000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy & Governance
+      total_budget: 21061000.0
+      type: programme
+    - name: Institutional Development
+      total_budget: 17703000.0
+      type: programme
+    - name: Administration
+      total_budget: 16571000.0
+      type: programme
+    - name: Monitoring And Evaluation
+      total_budget: 2164000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 1644000.0
+      type: programme
+    - name: Administration
+      total_budget: 783000.0
+      type: programme
+    - name: Policy & Governance
+      total_budget: 199000.0
+      type: programme
+    - name: Monitoring And Evaluation
+      total_budget: 150000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 273000.0
+      type: programme
+    name: Payments For Capital Assets - Software And Other Intangible Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 264862000.0
+      type: programme
+    name: Transfers And Subsidies - Higher Education Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy & Governance
+      total_budget: 439000.0
+      type: programme
+    - name: Monitoring And Evaluation
+      total_budget: 146000.0
+      type: programme
+    - name: Administration
+      total_budget: 31000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

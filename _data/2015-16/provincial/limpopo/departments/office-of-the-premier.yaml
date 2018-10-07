@@ -172,6 +172,63 @@ intro: "## Vision\n\nGood governance, integrated planning, sustainable growth an
   \ and international relations."
 is_vote_primary: true
 name: Office of the Premier
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 96929000
+      type: programme
+    - name: Institutional Support
+      total_budget: 94302000
+      type: programme
+    - name: Policy & Governance
+      total_budget: 65678000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 33340000
+      type: programme
+    - name: Institutional Support
+      total_budget: 31915000
+      type: programme
+    - name: Policy & Governance
+      total_budget: 17532000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1725000
+      type: programme
+    - name: Institutional Support
+      total_budget: 500000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Support
+      total_budget: 710000
+      type: programme
+    - name: Administration
+      total_budget: 26000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Support
+      total_budget: 8956000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 537000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

@@ -194,6 +194,60 @@ intro: "## Vision\n\nA department at the centre of creating intergrated sustaina
   \ to beneficiaries; and\r\n\r\n* Installation od services that includes other amenities"
 is_vote_primary: true
 name: Human Settlements
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Housing Development
+      total_budget: 194585000
+      type: programme
+    - name: Administration
+      total_budget: 103686000
+      type: programme
+    - name: Housing Needs, Research and Planning
+      total_budget: 18651000
+      type: programme
+    - name: Housing Asset Management
+      total_budget: 11785000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 33030000
+      type: programme
+    - name: Housing Development
+      total_budget: 11529000
+      type: programme
+    - name: Housing Asset Management
+      total_budget: 1763000
+      type: programme
+    - name: Housing Needs, Research and Planning
+      total_budget: 1164000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 11600000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 2243265000
+      type: programme
+    - name: Administration
+      total_budget: 150000
+      type: programme
+    - name: Housing Needs, Research and Planning
+      total_budget: 123000
+      type: programme
+    - name: Housing Asset Management
+      total_budget: 67000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

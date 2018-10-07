@@ -200,6 +200,75 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Community Safety, Security And Liaison
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Transport Regulation
+      total_budget: 409883000.0
+      type: programme
+    - name: Administration
+      total_budget: 86709000.0
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 44356000.0
+      type: programme
+    - name: Security  Management
+      total_budget: 7020000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Security  Management
+      total_budget: 446026000.0
+      type: programme
+    - name: Transport Regulation
+      total_budget: 155606000.0
+      type: programme
+    - name: Administration
+      total_budget: 45815000.0
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 15133000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulation
+      total_budget: 5754000.0
+      type: programme
+    - name: Administration
+      total_budget: 1708000.0
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 573000.0
+      type: programme
+    - name: Security  Management
+      total_budget: 233000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulation
+      total_budget: 3417000.0
+      type: programme
+    - name: Administration
+      total_budget: 167000.0
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 160000.0
+      type: programme
+    - name: Security  Management
+      total_budget: 50000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 212000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

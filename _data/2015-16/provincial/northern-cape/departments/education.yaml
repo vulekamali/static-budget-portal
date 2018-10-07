@@ -270,6 +270,117 @@ intro: "## Vision\n\nA transformed quality education system.\r\n\r\n\n\n## Missi
   \n\r\n"
 is_vote_primary: true
 name: Education
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 3274247000
+      type: programme
+    - name: Administration
+      total_budget: 396181000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 89417000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 64671000
+      type: programme
+    - name: Examination And Education Related Services
+      total_budget: 61412000
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 25138000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 128191000
+      type: programme
+    - name: Public Ordinary School Education
+      total_budget: 88431000
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 82680000
+      type: programme
+    - name: Examination And Education Related Services
+      total_budget: 49536000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 11186000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 1642000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 1028000
+      type: programme
+    name: Current payments - Interest and rent on land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Infrastructure Development
+      total_budget: 347128000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Examination And Education Related Services
+      total_budget: 17947000
+      type: programme
+    - name: Administration
+      total_budget: 15132000
+      type: programme
+    - name: Public Ordinary School Education
+      total_budget: 50000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Examination And Education Related Services
+      total_budget: 10390000
+      type: programme
+    - name: Administration
+      total_budget: 5000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 32728000
+      type: programme
+    - name: Examination And Education Related Services
+      total_budget: 5160000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 3255000
+      type: programme
+    - name: Administration
+      total_budget: 200000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 333882000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 14011000
+      type: programme
+    - name: Examination And Education Related Services
+      total_budget: 11135000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 9980000
+      type: programme
+    - name: Independent School Subsidy
+      total_budget: 8309000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

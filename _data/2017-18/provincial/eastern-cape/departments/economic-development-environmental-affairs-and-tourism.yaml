@@ -194,6 +194,90 @@ intro: "## Vision\n\nSustainable development underpinned by ecpnomic groowth and
   \ for the protection of biodiversity and environment in the province.\r\n\r\n"
 is_vote_primary: true
 name: Economic Development, Environmental Affairs and Tourism
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 127475000
+      type: programme
+    - name: Environmental  Affairs
+      total_budget: 78948000
+      type: programme
+    - name: Economic Development  and Tourism
+      total_budget: 46532000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 89576000
+      type: programme
+    - name: Economic Development  and Tourism
+      total_budget: 22954000
+      type: programme
+    - name: Environmental  Affairs
+      total_budget: 18581000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic Development  and Tourism
+      total_budget: 1708000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 15215000
+      type: programme
+    - name: Economic Development  and Tourism
+      total_budget: 740000
+      type: programme
+    - name: Environmental  Affairs
+      total_budget: 677000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic Development  and Tourism
+      total_budget: 431829000
+      type: programme
+    - name: Environmental  Affairs
+      total_budget: 190953000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic Development  and Tourism
+      total_budget: 3100000
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2973000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental  Affairs
+      total_budget: 1783000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental  Affairs
+      total_budget: 12038000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic Development  and Tourism
+      total_budget: 24476000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

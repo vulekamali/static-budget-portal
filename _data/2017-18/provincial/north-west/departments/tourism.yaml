@@ -191,6 +191,63 @@ intro: "## Vision\n\nLeading a dynamic, sustainable, diversified and vibrant tou
   \ (VTSD), Saamtrek Saamwerk and the Setsokotsane initiatives\r\n"
 is_vote_primary: true
 name: Tourism
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 49107000
+      type: programme
+    - name: Tourism Growth, Development and Transformation
+      total_budget: 15429000
+      type: programme
+    - name: Tourism Planning
+      total_budget: 8140000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 25117000
+      type: programme
+    - name: Tourism Planning
+      total_budget: 9540000
+      type: programme
+    - name: Tourism Growth, Development and Transformation
+      total_budget: 4723000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Tourism Growth, Development and Transformation
+      total_budget: 49000000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1774000
+      type: programme
+    - name: Tourism Growth, Development and Transformation
+      total_budget: 250000
+      type: programme
+    - name: Tourism Planning
+      total_budget: 200000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 220000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Tourism Growth, Development and Transformation
+      total_budget: 82261000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

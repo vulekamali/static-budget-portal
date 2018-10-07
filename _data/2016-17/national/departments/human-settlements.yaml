@@ -216,6 +216,93 @@ intro: "## Vote purpose\n\n_Facilitate the creation of sustainable human settlem
   \ and the private sector.\n\n"
 is_vote_primary: true
 name: Human Settlements
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 216458000.0
+      type: programme
+    - name: Human Settlements Delivery Support
+      total_budget: 93259000.0
+      type: programme
+    - name: Human Settlements Policy, Strategy and Planning
+      total_budget: 55724000.0
+      type: programme
+    - name: Housing Development Finance
+      total_budget: 18050000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 222442000.0
+      type: programme
+    - name: Human Settlements Delivery Support
+      total_budget: 120919000.0
+      type: programme
+    - name: Human Settlements Policy, Strategy and Planning
+      total_budget: 25261000.0
+      type: programme
+    - name: Housing Development Finance
+      total_budget: 6811000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3059000.0
+      type: programme
+    - name: Human Settlements Delivery Support
+      total_budget: 1049000.0
+      type: programme
+    - name: Human Settlements Policy, Strategy and Planning
+      total_budget: 867000.0
+      type: programme
+    - name: Housing Development Finance
+      total_budget: 222000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 269000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development Finance
+      total_budget: 100000000.0
+      type: programme
+    name: Payments for financial assets - Payments for financial assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development Finance
+      total_budget: 692395000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Human Settlements Policy, Strategy and Planning
+      total_budget: 1211000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Human Settlements Delivery Support
+      total_budget: 9355000.0
+      type: programme
+    - name: Administration
+      total_budget: 46000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development Finance
+      total_budget: 29123459000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   programme_budgets:

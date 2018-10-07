@@ -231,6 +231,102 @@ intro: "## Mandate\n\n\nThere are several legislations and policies that the Dep
   \ the Free State\n\n"
 is_vote_primary: true
 name: Economic And Small Business Development, Tourism And Environmental Affairs
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 97493000.0
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 92344000.0
+      type: programme
+    - name: Economic And Small Business Development
+      total_budget: 46607000.0
+      type: programme
+    - name: Tourism
+      total_budget: 9403000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic And Small Business Development
+      total_budget: 88552000.0
+      type: programme
+    - name: Administration
+      total_budget: 60137000.0
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 48011000.0
+      type: programme
+    - name: Tourism
+      total_budget: 2419000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Affairs
+      total_budget: 21498000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2794000.0
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 1315000.0
+      type: programme
+    - name: Economic And Small Business Development
+      total_budget: 1085000.0
+      type: programme
+    - name: Tourism
+      total_budget: 308000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Affairs
+      total_budget: 300000.0
+      type: programme
+    - name: Administration
+      total_budget: 20000.0
+      type: programme
+    name: Payments For Capital Assets - Software And Other Intangible Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic And Small Business Development
+      total_budget: 112327000.0
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 202000.0
+      type: programme
+    - name: Administration
+      total_budget: 4000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic And Small Business Development
+      total_budget: 2000000.0
+      type: programme
+    name: Transfers And Subsidies - Foreign Governments And International Organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic And Small Business Development
+      total_budget: 1179000.0
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 100000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic And Small Business Development
+      total_budget: 43833000.0
+      type: programme
+    name: Transfers And Subsidies - Public Corporations And Private Enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

@@ -204,6 +204,90 @@ intro: "## Vision \n\nTo be a leading sustainable infrastructure provider and fa
   \n"
 is_vote_primary: true
 name: Infrastructure Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 481493000
+      type: programme
+    - name: Administration
+      total_budget: 172019000
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 92938000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 314032000
+      type: programme
+    - name: Administration
+      total_budget: 243719000
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 169311000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 500000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 300000
+      type: programme
+    name: Current payments - Interest and rent on land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 118866000
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 106420000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 13566000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 4000000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 1000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 4020000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 2319000
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 100000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 327084000
+      type: programme
+    - name: Administration
+      total_budget: 10000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

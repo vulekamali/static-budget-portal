@@ -229,6 +229,93 @@ intro: "## Vision\n\nA caring and self-reliant Society\r\n\r\n\n\n## Mission\n\n
   \ development\r\nand management and other support services."
 is_vote_primary: true
 name: Social Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Children And Families
+      total_budget: 288400000
+      type: programme
+    - name: Administration
+      total_budget: 178997000
+      type: programme
+    - name: Restorative Services
+      total_budget: 178914000
+      type: programme
+    - name: Development And Research
+      total_budget: 125568000
+      type: programme
+    - name: Social Welfare Services
+      total_budget: 114733000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 62097000
+      type: programme
+    - name: Social Welfare Services
+      total_budget: 45378000
+      type: programme
+    - name: Restorative Services
+      total_budget: 41283000
+      type: programme
+    - name: Development And Research
+      total_budget: 21888000
+      type: programme
+    - name: Children And Families
+      total_budget: 16963000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 32076000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3947000
+      type: programme
+    - name: Restorative Services
+      total_budget: 2700000
+      type: programme
+    - name: Social Welfare Services
+      total_budget: 1876000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Development And Research
+      total_budget: 4000000
+      type: programme
+    - name: Administration
+      total_budget: 1500000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1665000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Children And Families
+      total_budget: 398989000
+      type: programme
+    - name: Social Welfare Services
+      total_budget: 59850000
+      type: programme
+    - name: Development And Research
+      total_budget: 28795000
+      type: programme
+    - name: Restorative Services
+      total_budget: 24100000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

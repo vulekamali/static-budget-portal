@@ -296,6 +296,129 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Rural, Environment And Agricultural Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 147885000.0
+      type: programme
+    - name: Farmer Support And Development
+      total_budget: 120678000.0
+      type: programme
+    - name: Veterinary Services
+      total_budget: 99348000.0
+      type: programme
+    - name: Environmental Services
+      total_budget: 82493000.0
+      type: programme
+    - name: Structured Agricultural Education And  Training
+      total_budget: 61403000.0
+      type: programme
+    - name: Research And Technology  Development Services
+      total_budget: 44090000.0
+      type: programme
+    - name: Rural Development Coordination
+      total_budget: 25898000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 17752000.0
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 9857000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support And Development
+      total_budget: 301101000.0
+      type: programme
+    - name: Administration
+      total_budget: 114365000.0
+      type: programme
+    - name: Environmental Services
+      total_budget: 45126000.0
+      type: programme
+    - name: Structured Agricultural Education And  Training
+      total_budget: 42392000.0
+      type: programme
+    - name: Rural Development Coordination
+      total_budget: 37588000.0
+      type: programme
+    - name: Veterinary Services
+      total_budget: 27442000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 14880000.0
+      type: programme
+    - name: Research And Technology  Development Services
+      total_budget: 8299000.0
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 2332000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Research And Technology  Development Services
+      total_budget: 951000.0
+      type: programme
+    name: Payments For Capital Assets - Biological Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Services
+      total_budget: 36710000.0
+      type: programme
+    - name: Rural Development Coordination
+      total_budget: 20000000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3054000.0
+      type: programme
+    - name: Veterinary Services
+      total_budget: 1734000.0
+      type: programme
+    - name: Farmer Support And Development
+      total_budget: 1432000.0
+      type: programme
+    - name: Structured Agricultural Education And  Training
+      total_budget: 1000000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 500000.0
+      type: programme
+    - name: Research And Technology  Development Services
+      total_budget: 500000.0
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 54000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Services
+      total_budget: 122828000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 45000000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3182000.0
+      type: programme
+    - name: Farmer Support And Development
+      total_budget: 416000.0
+      type: programme
+    - name: Environmental Services
+      total_budget: 188000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

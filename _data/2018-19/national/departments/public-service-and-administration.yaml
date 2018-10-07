@@ -260,6 +260,114 @@ intro: "## Vote purpose\n\nLead the modernisation of the public service, through
   \ of the public service and its service delivery to the public.\n\n"
 is_vote_primary: true
 name: Public Service and Administration
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 129854000.0
+      type: programme
+    - name: Public Service Employment and Conditions of Service
+      total_budget: 49021000.0
+      type: programme
+    - name: Governance of Public Administration
+      total_budget: 35222000.0
+      type: programme
+    - name: Service Delivery Support
+      total_budget: 32639000.0
+      type: programme
+    - name: Policy Development, Research and Analysis
+      total_budget: 26294000.0
+      type: programme
+    - name: Government Chief Information Officer
+      total_budget: 15403000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 116035000.0
+      type: programme
+    - name: Public Service Employment and Conditions of Service
+      total_budget: 32816000.0
+      type: programme
+    - name: Service Delivery Support
+      total_budget: 18233000.0
+      type: programme
+    - name: Governance of Public Administration
+      total_budget: 10611000.0
+      type: programme
+    - name: Policy Development, Research and Analysis
+      total_budget: 7604000.0
+      type: programme
+    - name: Government Chief Information Officer
+      total_budget: 5964000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2551000.0
+      type: programme
+    - name: Public Service Employment and Conditions of Service
+      total_budget: 564000.0
+      type: programme
+    - name: Service Delivery Support
+      total_budget: 267000.0
+      type: programme
+    - name: Governance of Public Administration
+      total_budget: 249000.0
+      type: programme
+    - name: Government Chief Information Officer
+      total_budget: 205000.0
+      type: programme
+    - name: Policy Development, Research and Analysis
+      total_budget: 200000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Governance of Public Administration
+      total_budget: 1186000.0
+      type: programme
+    - name: Government Chief Information Officer
+      total_budget: 150000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Governance of Public Administration
+      total_budget: 264399000.0
+      type: programme
+    - name: Service Delivery Support
+      total_budget: 204997000.0
+      type: programme
+    - name: Administration
+      total_budget: 121000.0
+      type: programme
+    - name: Policy Development, Research and Analysis
+      total_budget: 8000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Service Delivery Support
+      total_budget: 1441000.0
+      type: programme
+    - name: Administration
+      total_budget: 340000.0
+      type: programme
+    - name: Governance of Public Administration
+      total_budget: 272000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 10000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   programme_budgets:

@@ -242,6 +242,99 @@ intro: "## Vision\n\nContribute towards the creation of a prosperous Free State 
   \ road network; and\r\n\r\n* Security management for department buildings"
 is_vote_primary: true
 name: Police, Roads and Transport
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: TRANSPORT REGULATIONS
+      total_budget: 277084000
+      type: programme
+    - name: ADMINISTRATION
+      total_budget: 196906000
+      type: programme
+    - name: TRANSPORT INFRASTRUCTURE
+      total_budget: 182934000
+      type: programme
+    - name: TRANSPORT OPERATIONS
+      total_budget: 19365000
+      type: programme
+    - name: PROVINCIAL SECRETARIAT FOR POLICE SERVICES
+      total_budget: 16645000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: TRANSPORT INFRASTRUCTURE
+      total_budget: 1064061000
+      type: programme
+    - name: ADMINISTRATION
+      total_budget: 82366000
+      type: programme
+    - name: TRANSPORT REGULATIONS
+      total_budget: 65795000
+      type: programme
+    - name: TRANSPORT OPERATIONS
+      total_budget: 49380000
+      type: programme
+    - name: PROVINCIAL SECRETARIAT FOR POLICE SERVICES
+      total_budget: 8162000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: TRANSPORT INFRASTRUCTURE
+      total_budget: 467666000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: TRANSPORT INFRASTRUCTURE
+      total_budget: 600000
+      type: programme
+    name: Payments for capital assets - Land and sub-soil assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: ADMINISTRATION
+      total_budget: 19094000
+      type: programme
+    - name: TRANSPORT INFRASTRUCTURE
+      total_budget: 1529000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: ADMINISTRATION
+      total_budget: 3000000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: TRANSPORT OPERATIONS
+      total_budget: 5000000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: TRANSPORT INFRASTRUCTURE
+      total_budget: 2767000
+      type: programme
+    - name: TRANSPORT REGULATIONS
+      total_budget: 887000
+      type: programme
+    - name: ADMINISTRATION
+      total_budget: 886000
+      type: programme
+    - name: PROVINCIAL SECRETARIAT FOR POLICE SERVICES
+      total_budget: 276000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: TRANSPORT OPERATIONS
+      total_budget: 255669000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:
