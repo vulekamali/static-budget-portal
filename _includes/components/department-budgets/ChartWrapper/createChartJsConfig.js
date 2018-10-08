@@ -44,7 +44,7 @@ const calcLabelTruncate = (target, space, label) => {
 
 const createModifyLabel = (target, fontString) => ({ label, height, x, y, maxWidth }) => {
   const { textX, textY, align, color, space } = calcLabelPosition(height, x, y, maxWidth);
-  const fontFallbacks = 'Source Sans, Arial, sans-serif';
+  const fontFallbacks = 'Source Sans, sans-serif';
 
   const regexArray = label.match(/(^heading:\s)(.+)/im)
   const isHeading = /(^heading:\s)(.+)/im.test(label);
@@ -91,8 +91,9 @@ function createChartJsConfig({ labels, values }) {
       maintainAspectRatio: false,
       tooltips: {
         intersect: false,
-        custom: (tooltip) => {
-          if (!tooltip) {
+        custom: (tooltip) => {      
+          if (!tooltip || /(^heading:\s)(.+)/im.test(tooltip.title)) {
+            tooltip.opacity = 0;
             return;
           }
           tooltip.displayColors = false;
@@ -128,6 +129,7 @@ function createChartJsConfig({ labels, values }) {
             beginAtZero: true,
             maxRotation: 0,
             callback: value => trimValues(value),
+            maxTicksLimit: 5,
           },
           gridLines: {
             display: false,

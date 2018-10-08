@@ -27,7 +27,7 @@ import './components/department-budgets/ProgrammesChart/scripts.jsx';
 import './components/department-budgets/ExpenditureChart/scripts.jsx';
 import './components/department-budgets/DeptSearch/scripts.jsx';
 import './components/department-budgets/IntroSection/scripts.jsx';
-import './components/department-budgets/EconClassificationProgrammes/scripts.js';
+import './components/department-budgets/SmallMultiple/scripts.js';
 
 import './components/contributed-data/CsoMeta/scripts.js';
 

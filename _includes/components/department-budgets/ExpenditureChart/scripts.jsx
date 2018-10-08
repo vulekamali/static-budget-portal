@@ -1,15 +1,53 @@
 import renderToString from 'preact-render-to-string';
-import { h, render, Component } from 'preact';
+import { h, Component } from 'preact';
 import canvg from 'canvg-browser';
-import ExpenditureChart from './index.jsx';
+import { pick } from 'lodash';
+
+import Markup from './index.jsx';
 import BarChart from './../../universal/BarChart/index.jsx';
-import calcShareAction from './partials/calcShareAction.js';
-import getProp from './../../../utilities/js/helpers/getProp.js';
+import { preactConnect } from '../../../utilities/js/helpers/connector.js';
 
 
-class ExpenditureChartContainer extends Component {
+const removeNulls = val => val.amount !== null;
+const normalisePhaseTable = val => [val.financial_year, val.phase];
+
+
+const normaliseObject = (result, val) => {
+  if (val.amount !== null) {
+    return {
+      ...result,
+      [val.financial_year]: [val.amount],
+    };
+  }
+
+  return null;
+};
+
+const normaliseFormats = (key) => {
+  return (innerResults, val) => {
+    return {
+      ...innerResults,
+      [`${key} (${val.format.replace(/^xls.+/i, 'Excel')})`]: val.url,
+    };
+  };
+};
+
+const normaliseFiles = (rawFiles) => {
+  return (result, key) => {
+    const object = rawFiles[key].formats.reduce(normaliseFormats(key), {});
+
+    return {
+      ...result,
+      ...object,
+    };
+  };
+};
+
+
+class ExpenditureChart extends Component {
   constructor(props) {
     super(props);
+    const { adjusted: rawAdjusted, notAdjusted: rawNotAdjusted, files: rawFiles } = this.props;
 
     this.state = {
       selected: 'link',
@@ -25,15 +63,29 @@ class ExpenditureChartContainer extends Component {
       resizeAction: this.resizeAction.bind(this),
       changeSource: this.changeSource.bind(this),
     };
+
+    const items = {
+      adjusted: rawAdjusted.filter(removeNulls).reduce(normaliseObject, {}),
+      notAdjusted: rawNotAdjusted.filter(removeNulls).reduce(normaliseObject, {}),
+    };
+
+    this.values = {
+      phaseTable: rawAdjusted.filter(removeNulls).map(normalisePhaseTable),
+      files: Object.keys(rawFiles).reduce(normaliseFiles(rawFiles), {}),
+      canvas: null,
+      items,
+    };
   }
 
 
   resizeAction(val) {
-    if (val > 600 && this.state.type !== 'line') {
+    const { type } = this.state;
+
+    if (val > 600 && type !== 'line') {
       return this.setState({ type: 'line' });
     }
 
-    if (val <= 600 && this.state.type !== 'bar') {
+    if (val <= 600 && type !== 'bar') {
       return this.setState({ type: 'bar' });
     }
 
@@ -42,37 +94,41 @@ class ExpenditureChartContainer extends Component {
 
 
   downloadAction() {
-    const shown = this.state.source === 'adjusted' ? 'adjusted for inflation' : 'not adjusted for inflation';
+    const { items, canvas } = this.values;
+    const { department, location, year } = this.props;
+    const { source } = this.state;
 
-    canvg(this.canvas, renderToString(
+    const shown = source === 'adjusted' ? 'adjusted for inflation' : 'not adjusted for inflation';
+
+    canvg(canvas, renderToString(
       <BarChart
         scale={1.5}
         download={{
-          heading: this.props.department,
-          subHeading: `${this.props.location} Department Budget for ${this.props.year}`,
+          heading: department,
+          subHeading: `${location} Department Budget for ${year}`,
           type: `Expenditure changes over time chart (${shown})`,
         }}
-        items={this.props.items[this.state.source]}
+        items={items[source]}
         guides
         width={900}
       />,
     ));
 
-    if (this.canvas.msToBlob) {
-      const blob = this.canvas.msToBlob();
+    if (canvas.msToBlob) {
+      const blob = canvas.msToBlob();
       return window.navigator.msSaveBlob(blob, 'chart.png', { scaleWidth: 10, scaleHeight: 10 });
     }
 
     const link = document.createElement('a');
     link.download = 'chart.png';
-    link.href = this.canvas.toDataURL();
+    link.href = canvas.toDataURL();
     link.setAttribute('type', 'hidden');
     document.body.appendChild(link);
     return link.click();
   }
 
   canvasAction(node) {
-    this.canvas = node;
+    this.values.canvas = node;
   }
 
 
@@ -82,98 +138,32 @@ class ExpenditureChartContainer extends Component {
 
 
   render() {
-    const { items, year, files, location, phaseTable, cpi } = this.props;
-    const { width, mobile, source, type } = this.state;
-    const { downloadAction, canvasAction, resizeAction, changeSource } = this.events;
+    const { source } = this.state;
+    const { items: rawItems } = this.values;
+    const items = rawItems[source];
 
-    return (
-      <ExpenditureChart
-        items={items[this.state.source]}
-        {...{
-          year,
-          files,
-          location,
-          phaseTable,
+    const props = pick(this.props, ['year', 'location', 'cpi', 'dataset']);
+    const values = pick(this.values, ['items', 'files', 'phaseTable']);
+    const state = pick(this.state, ['width', 'mobile', 'source', 'type']);
+    const eventSelected = ['downloadAction', 'canvasAction', 'resizeAction', 'changeSource'];
+    const events = pick(this.events, eventSelected);
 
-          width,
-          mobile,
-          source,
-          type,
-          cpi,
-
-          downloadAction,
-          canvasAction,
-          resizeAction,
-          changeSource,
-        }}
-      />
-    );
+    const passedProps = { ...props, ...values, ...state, ...events, items };
+    return <Markup {...passedProps} />;
   }
 }
 
 
-function scripts() {
-  const nodes = document.getElementsByClassName('js-initExpenditureChart');
-
-  const normaliseObject = (result, val) => {
-    if (val.amount !== null) {
-      return {
-        ...result,
-        [val.financial_year]: [val.amount],
-      };
-    }
-
-    return null;
-  };
-
-  const normaliseFormats = (key) => {
-    return (innerResults, val) => {
-      return {
-        ...innerResults,
-        [`${key} (${val.format.replace(/^xls.+/i, 'Excel')})`]: val.url,
-      };
-    };
-  };
-
-  const normaliseFiles = (rawFiles) => {
-    return (result, key) => {
-      const object = rawFiles[key].formats.reduce(normaliseFormats(key), {});
-
-      return {
-        ...result,
-        ...object,
-      };
-    };
-  };
-
-  for (let i = 0; i < nodes.length; i++) {
-    const node = nodes[i];
-
-    const rawAdjusted = getProp('adjusted', node, 'json').data;
-    const rawNotAdjusted = getProp('not-adjusted', node, 'json').data;
-    const year = getProp('year', node);
-    const department = getProp('department', node);
-    const location = getProp('location', node);
-    const rawFiles = getProp('files', node, 'json');
-    const cpi = getProp('cpi', node);
-
-    const removeNulls = val => val.amount !== null;
-    const normalisePhaseTable = val => [val.financial_year, val.phase];
-
-    const adjusted = rawAdjusted.filter(removeNulls).reduce(normaliseObject, {});
-    const notAdjusted = rawNotAdjusted.filter(removeNulls).reduce(normaliseObject, {});
-    const phaseTable = rawAdjusted.filter(removeNulls).map(normalisePhaseTable);
-    const files = Object.keys(rawFiles).reduce(normaliseFiles(rawFiles), {});
-    const items = { adjusted, notAdjusted };
-
-    render(
-      <ExpenditureChartContainer
-        {...{ items, year, department, location, phaseTable, files, cpi }}
-      />,
-      node,
-    );
-  }
-}
+const query = {
+  adjusted: 'json',
+  notAdjusted: 'json',
+  year: 'string',
+  location: 'string',
+  files: 'json',
+  department: 'string',
+  cpi: 'string',
+  dataset: 'string',
+};
 
 
-export default scripts();
+export default preactConnect(ExpenditureChart, 'ExpenditureChart', query);
