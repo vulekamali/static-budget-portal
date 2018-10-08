@@ -62,7 +62,7 @@ layout: page-shell
         <div class="u-marginTop25 u-marginLeft25">
           {%
             include components/universal/Download/index.html
-            link="{{ page_data.economic_classification_by_programme.programmes.dataset_detail_page }}"
+            link=page_data.economic_classification_by_programme.dataset_detail_page
             title="View this data"
           %}
         </div>
@@ -72,10 +72,13 @@ layout: page-shell
 
         {% for item in page_data.treasury_datasets %}
           {% assign modifiedFormats = item[1].formats | sort: 'format' %}
+            {% assign pdfLink = modifiedFormats[0].url %}
+            {% assign excelLink = modifiedFormats[1].url %}
+
             <div>
               {%
                 include components/universal/Download/index.html
-                link="{{ modifiedFormats[0].url }}"
+                link=pdfLink
                 title=pdfButton
                 icon="true"
               %}
@@ -83,7 +86,7 @@ layout: page-shell
             <div>
               {%
                 include components/universal/Download/index.html
-                link="{{ modifiedFormats[1].url }}"
+                link=excelLink
                 title=excelButton
                 icon="true"
               %}
