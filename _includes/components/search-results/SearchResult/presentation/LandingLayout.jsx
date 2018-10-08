@@ -29,12 +29,13 @@ const calcSectionObj = (type) => {
 
 
 function ItemPreview({ title, url, snippet, paddingOverride, source, contributor }) {
+  const showContributor = contributor && contributor !== 'National Treasury';
   const hasSource = source.text && source.url;
   return (
     <div key={url} className={`Section u-marginBottom20 is-invisible${paddingOverride ? ' u-padding0' : ''}`}>
       <a href={url} className="Section-title" dangerouslySetInnerHTML={{ __html: title }} />
       <div className="u-marginTop16 u-marginBottom16">
-        {contributor !== 'National Treasury' ? `Contributor: ${contributor}` : null}
+        {showContributor ? `Contributor: ${contributor}` : null}
       </div>
       <div className="u-marginBottom20 u-lineHeight16" dangerouslySetInnerHTML={{ __html: snippet }} />
       {hasSource ? <div><span>Source: </span><a target="_blank" href={source.url}>{source.text}</a></div> : null}
