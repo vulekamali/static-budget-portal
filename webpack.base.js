@@ -2,15 +2,14 @@ const { resolve } = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const normalize = require('postcss-normalize');
-const ManifestPlugin = require('webpack-manifest-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 
 module.exports = {
   entry: './_includes/scripts.js',
   output: {
     path: resolve(__dirname, 'assets/generated/'),
-    filename: 'scripts.[chunkhash].js',
   },
 
   devtool: 'source-map',
@@ -67,9 +66,8 @@ module.exports = {
 
   plugins: [
     new CleanWebpackPlugin('assets/generated/*'),
-    new ExtractTextPlugin('styles.[contenthash].css'),
     new ManifestPlugin({
-      fileName: './../../_data/assets.json',
+      fileName: '../../_data/assets.json',
       basePath: 'assets/generated/',
     }),
   ],
