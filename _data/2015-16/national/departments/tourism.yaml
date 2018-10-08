@@ -19,100 +19,128 @@ contributed_datasets:
 description: 'National department: Tourism budget data for the 2015-16 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 3214000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 228383000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 176000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 776000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 229843000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 75544000.0
-  programme_name: Domestic Tourism
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 944000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 39778000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 6004000.0
-  programme_name: International Tourism
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 1159000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 1155118000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 59294000.0
-  programme_name: Policy and Knowledge Services
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 3214000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 228383000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 176000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 776000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 229843000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 75544000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Domestic Tourism
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 944000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 39778000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 6004000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: International Tourism
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1159000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1155118000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 59294000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Policy and Knowledge Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1250246000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1371959000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1512667000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1583260000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1800233000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 2053303000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 2127591000.0000002
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1729277559
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1797980178
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1873404905
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1856392331
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 2007091182
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 2153664335
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 2127591000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1250246000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1371959000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1512667000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1583260000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1800233000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2053303000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 2127591000.0000002
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 1729277559
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1797980178
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1873404905
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1856392331
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 2007091182
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2153664335
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 2127591000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -187,14 +215,16 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Tourism
 programmes:
-- name: Administration
-  total_budget: 231773000.0
-- name: Policy and Knowledge Services
-  total_budget: 1215571000.0
-- name: International Tourism
-  total_budget: 46726000.0
-- name: Domestic Tourism
-  total_budget: 306163000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 231773000.0
+  - name: Policy and Knowledge Services
+    total_budget: 1215571000.0
+  - name: International Tourism
+    total_budget: 46726000.0
+  - name: Domestic Tourism
+    total_budget: 306163000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: tourism

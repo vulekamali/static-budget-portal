@@ -19,168 +19,230 @@ contributed_datasets:
 description: 'National department: Environmental Affairs budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 394092000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 309303000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 136901000.0
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 6749000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 16000000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 71787000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 51902000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 755000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 569787000.0
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 2287000.0
-  programme_name: Biodiversity and Conservation
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 106954000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 57616000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 633000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 278000000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 7132000.0
-  programme_name: Chemicals and Waste Management
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 55477000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 31138000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1227000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 205482000.0
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 1548000.0
-  programme_name: Climate Change and Air Quality
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 254710000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 228969000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2870000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 2879437000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 418768000.0
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 110455000.0
-  programme_name: Environmental Programmes
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 109796000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 68389000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1595000.0
-  programme_name: Legal, Authorisations and Compliance
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 336340000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 117336000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 14779000.0
-  programme_name: Oceans and Coasts
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 394092000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 309303000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 136901000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 6749000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Foreign governments and international organisations
+        total_budget: 16000000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 71787000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 51902000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 755000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 569787000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 2287000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Biodiversity and Conservation
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 106954000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 57616000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 633000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 278000000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 7132000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Chemicals and Waste Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 55477000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 31138000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1227000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 205482000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 1548000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Climate Change and Air Quality
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 254710000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 228969000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2870000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 2879437000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 418768000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 110455000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Environmental Programmes
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 109796000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 68389000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1595000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Legal, Authorisations and Compliance
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 336340000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 117336000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 14779000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Oceans and Coasts
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 5200307000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 5675059000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 5937920000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 6425101000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 6848214000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 7061226000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 7378025000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 6440466173
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 6654078300
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 6620224646
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 6739147059
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 6848214000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 6693637254
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 6642477644
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 5200307000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 5675059000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 5937920000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 6425101000.0
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 6848214000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 7061226000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 7378025000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 6440466173
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 6654078300
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 6620224646
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 6739147059
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 6848214000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 6693637254
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 6642477644
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -239,20 +301,22 @@ intro: "## Vote purpose\n\n_Lead South Africa's environmental sector to achieve 
 is_vote_primary: true
 name: Environmental Affairs
 programmes:
-- name: Administration
-  total_budget: 863045000.0
-- name: Legal, Authorisations and Compliance
-  total_budget: 179780000.0
-- name: Oceans and Coasts
-  total_budget: 468455000.0
-- name: Climate Change and Air Quality
-  total_budget: 294872000.0
-- name: Biodiversity and Conservation
-  total_budget: 696518000.0
-- name: Environmental Programmes
-  total_budget: 3895209000.0
-- name: Chemicals and Waste Management
-  total_budget: 450335000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 863045000.0
+  - name: Legal, Authorisations and Compliance
+    total_budget: 179780000.0
+  - name: Oceans and Coasts
+    total_budget: 468455000.0
+  - name: Climate Change and Air Quality
+    total_budget: 294872000.0
+  - name: Biodiversity and Conservation
+    total_budget: 696518000.0
+  - name: Environmental Programmes
+    total_budget: 3895209000.0
+  - name: Chemicals and Waste Management
+    total_budget: 450335000.0
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: environmental-affairs

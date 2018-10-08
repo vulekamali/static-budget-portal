@@ -19,96 +19,122 @@ contributed_datasets:
 description: 'National department: Labour budget data for the 2015-16 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 46535000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 798368000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 208000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 430716000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 62000.0
-  programme_name: Inspection and Enforcement Services
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 22000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 795865000.0
-    - economic_classification_2_name: Current payments
-      total_budget: 126794000.0
-  programme_name: Labour Policy and Industrial Relations
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 300000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 327916000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 160081000.0
-  programme_name: Public Employment Services
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 46535000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 798368000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 208000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 430716000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 62000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Inspection and Enforcement Services
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 22000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 795865000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 126794000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Labour Policy and Industrial Relations
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 300000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 327916000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 160081000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Public Employment Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 2007122000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 2034572000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 2371444000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2546292000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 2686867000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 2998212000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 3162653000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 2776150480
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 2666347994
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 2936981386
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2985559506
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 2995605049
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 3144758593
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 3162653000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 2007122000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 2034572000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 2371444000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2546292000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 2686867000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2998212000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 3162653000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 2776150480
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 2666347994
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 2936981386
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2985559506
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 2995605049
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 3144758593
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 3162653000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -154,14 +180,16 @@ intro: "## Vote purpose\n\n_Play a significant role in reducing unemployment, po
 is_vote_primary: true
 name: Labour
 programmes:
-- name: Administration
-  total_budget: 845111000.0
-- name: Inspection and Enforcement Services
-  total_budget: 430778000.0
-- name: Public Employment Services
-  total_budget: 488297000.0
-- name: Labour Policy and Industrial Relations
-  total_budget: 922681000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 845111000.0
+  - name: Inspection and Enforcement Services
+    total_budget: 430778000.0
+  - name: Public Employment Services
+    total_budget: 488297000.0
+  - name: Labour Policy and Industrial Relations
+    total_budget: 922681000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: labour

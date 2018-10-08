@@ -20,122 +20,161 @@ description: 'Limpopo department: Economic Development, Environment and Tourism 
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 165373000
-    - economic_classification_2_name: Goods and services
-      total_budget: 122449000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 5108000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 7067000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 2810000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 1473000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 90506000
-    - economic_classification_2_name: Goods and services
-      total_budget: 37280000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 2749000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 309888000
-    - economic_classification_2_name: Households
-      total_budget: 257000
-  programme_name: Economic Development
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 209134000
-    - economic_classification_2_name: Goods and services
-      total_budget: 28802000
-    - economic_classification_2_name: Interest and rent on land
-      total_budget: 416000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 491000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1872000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 1102000
-  programme_name: Environmental Affairs
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 12852000
-    - economic_classification_2_name: Goods and services
-      total_budget: 4989000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 156195000
-  programme_name: Tourism
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 165373000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 122449000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 5108000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 7067000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 2810000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 1473000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 90506000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 37280000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 2749000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 309888000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 257000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Economic Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 209134000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 28802000
+        type: economic_classification_2
+      - name: Interest and rent on land
+        total_budget: 416000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 491000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1872000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 1102000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Environmental Affairs
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 12852000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 4989000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 156195000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Tourism
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 866942000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 874203000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1071242000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1149777000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1160813000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1224371000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1284953000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1199110691
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1145660814
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1326709723
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1348128043
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1294197771
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1284215800
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1284953000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 866942000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 874203000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1071242000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1149777000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1160813000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1224371000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1284953000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 1199110691
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1145660814
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1326709723
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1348128043
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1294197771
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1284215800
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1284953000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -178,14 +217,16 @@ intro: "## Vision\r\n\r\nA competitive economy within a sustainable environment.
 is_vote_primary: true
 name: Economic Development, Environment and Tourism
 programmes:
-- name: Administration
-  total_budget: 304280000
-- name: Economic Development
-  total_budget: 440680000
-- name: Environmental Affairs
-  total_budget: 241817000
-- name: Tourism
-  total_budget: 174036000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 304280000
+  - name: Economic Development
+    total_budget: 440680000
+  - name: Environmental Affairs
+    total_budget: 241817000
+  - name: Tourism
+    total_budget: 174036000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: economic-development-environment-and-tourism

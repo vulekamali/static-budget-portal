@@ -19,94 +19,170 @@ contributed_datasets:
 description: 'Western Cape department: Community Safety budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 51724000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 39882000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 1360000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 67356000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 4398000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 2338000.0
-  programme_name: Civilian Oversight
-- items: []
-  programme_name: Direct Charges
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 23417000.0
-    - economic_classification_2_name: Current Payments
-      total_budget: 21375000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 518000.0
-  programme_name: Provincial Policing Functions
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 101524000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 2723000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 2000.0
-  programme_name: Security Risk Management
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 43841000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 7883000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 1360000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 39882000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 44804000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 22552000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 2338000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 3493000.0
+        type: economic_classification_2
+      - name: Departmental Agencies And Accounts
+        total_budget: 400000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 345000.0
+        type: economic_classification_2
+      - name: Non-Profit Institutions
+        total_budget: 160000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Civilian Oversight
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 14150000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 7225000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 518000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 13327000.0
+        type: economic_classification_2
+      - name: Non-Profit Institutions
+        total_budget: 6152000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 3938000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Provincial Policing Functions
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 55120000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 46404000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 2723000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 2000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Security Risk Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 264966000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 269233000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 285919000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 304356000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 316617000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 314815000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 332119000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 310675979
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 300169578
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 299894147
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 304356000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 300134756
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 283429725
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 283310985
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 264966000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 269233000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 285919000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 304356000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 316617000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 314815000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 332119000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 310675979
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 300169578
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 299894147
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 304356000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 300134756
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 283429725
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 283310985
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -136,16 +212,18 @@ intro: ''
 is_vote_primary: true
 name: Community Safety
 programmes:
-- name: Administration
-  total_budget: 92966000.0
-- name: Civilian Oversight
-  total_budget: 74092000.0
-- name: Provincial Policing Functions
-  total_budget: 45310000.0
-- name: Security Risk Management
-  total_budget: 104249000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 92966000.0
+  - name: Civilian Oversight
+    total_budget: 74092000.0
+  - name: Provincial Policing Functions
+    total_budget: 45310000.0
+  - name: Security Risk Management
+    total_budget: 104249000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: community-safety

@@ -19,112 +19,146 @@ contributed_datasets:
 description: 'National department: Police budget data for the 2015-16 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 1265836000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 14386575000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 611799000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 36184000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 3062732000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 11463000.0
-  programme_name: Crime Intelligence
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 621346000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 15112819000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 81818000.0
-  programme_name: Detective Services
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 30870000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 2295809000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 4844000.0
-  programme_name: Protection and Security Services
-- items:
-  - economic_classification_1_name: Capital
-    items:
-    - economic_classification_2_name: Payments for capital assets
-      total_budget: 906515000.0
-  - economic_classification_1_name: Current
-    items:
-    - economic_classification_2_name: Current payments
-      total_budget: 37746512000.0
-    - economic_classification_2_name: Transfers and subsidies
-      total_budget: 201937000.0
-  programme_name: Visible Policing
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1265836000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 14386575000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 611799000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 36184000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 3062732000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 11463000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Crime Intelligence
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 621346000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 15112819000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 81818000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Detective Services
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 30870000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 2295809000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 4844000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Protection and Security Services
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 906515000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 37746512000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 201937000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Visible Policing
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 57933121000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 63156593000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 68791398000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 72507243000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 76377059000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 80815647000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 86372700000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 80130187259
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 82767999887
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 85196637778
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 85015657512
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 85153267203
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 84765753851
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 86372700000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 57933121000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 63156593000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 68791398000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 72507243000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 76377059000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 80815647000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 86372700000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 80130187259
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 82767999887
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 85196637778
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 85015657512
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 85153267203
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 84765753851
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 86372700000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -160,16 +194,18 @@ intro: "## Vote purpose\n\n_Prevent, combat and investigate crime, maintain publ
 is_vote_primary: true
 name: Police
 programmes:
-- name: Administration
-  total_budget: 16264210000.0
-- name: Visible Policing
-  total_budget: 38854964000.0
-- name: Detective Services
-  total_budget: 15815983000.0
-- name: Crime Intelligence
-  total_budget: 3110379000.0
-- name: Protection and Security Services
-  total_budget: 2331523000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 16264210000.0
+  - name: Visible Policing
+    total_budget: 38854964000.0
+  - name: Detective Services
+    total_budget: 15815983000.0
+  - name: Crime Intelligence
+    total_budget: 3110379000.0
+  - name: Protection and Security Services
+    total_budget: 2331523000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: police

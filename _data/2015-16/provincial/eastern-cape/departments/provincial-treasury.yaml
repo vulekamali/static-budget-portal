@@ -18,7 +18,9 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Eastern Cape department: Provincial Treasury budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
-economic_classification_by_programme: []
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes: []
 expenditure_over_time: null
 financial_years:
 - closest_match:
@@ -58,16 +60,18 @@ intro: "## Vision\n\nA prosperous province supported by sound financial and reso
 is_vote_primary: true
 name: Provincial Treasury
 programmes:
-- name: Administration
-  total_budget: null
-- name: Sustainable Resource Management
-  total_budget: null
-- name: Asset and Liabilities Management
-  total_budget: null
-- name: Financial Governance
-  total_budget: null
-- name: Municipal Financial Governance
-  total_budget: null
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: null
+  - name: Sustainable Resource Management
+    total_budget: null
+  - name: Asset and Liabilities Management
+    total_budget: null
+  - name: Financial Governance
+    total_budget: null
+  - name: Municipal Financial Governance
+    total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: provincial-treasury

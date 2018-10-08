@@ -19,100 +19,128 @@ contributed_datasets:
 description: 'Gauteng department: E-Government budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 145481000
-    - economic_classification_2_name: Goods and services
-      total_budget: 79289000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 440000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 550000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 328426000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 70192000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 15000000
-  programme_name: Policy Planning, Strategy Development & Support Service
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 24534000
-  programme_name: Regulations, Compliance & Public Relations
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 279602000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 263784000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 7434000
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 1400000
-  programme_name: Solutions, Systems & Operations
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 145481000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 79289000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 440000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 550000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 328426000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 70192000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Software and other intangible assets
+        total_budget: 15000000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Policy Planning, Strategy Development & Support Service
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 24534000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Regulations, Compliance & Public Relations
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 279602000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 263784000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 7434000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 1400000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Solutions, Systems & Operations
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1118628000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1024284000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1215022000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1178803000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1216132000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1271158000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1077693000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 1465984749
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1268553270
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1424628629
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1314254936
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1275574094
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1271158000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1021591153
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1118628000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1024284000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1215022000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1178803000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1216132000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1271158000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 1077693000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 1465984749
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1268553270
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1424628629
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1314254936
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1275574094
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1271158000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 1021591153
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -153,14 +181,16 @@ intro: "## Vision\n\nAconnected Gauteng City-Region that leverages technology to
 is_vote_primary: true
 name: E-Government
 programmes:
-- name: Administration
-  total_budget: 225760000
-- name: Policy Planning, Strategy Development & Support Service
-  total_budget: 413618000
-- name: Solutions, Systems & Operations
-  total_budget: 552220000
-- name: Regulations, Compliance & Public Relations
-  total_budget: 24534000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 225760000
+  - name: Policy Planning, Strategy Development & Support Service
+    total_budget: 413618000
+  - name: Solutions, Systems & Operations
+    total_budget: 552220000
+  - name: Regulations, Compliance & Public Relations
+    total_budget: 24534000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: e-government

@@ -36,7 +36,7 @@ layout: page-shell
               {% endfor %}
             </div>
           {% endif %}
-          
+
           <div class="BasicContent-title">What is this?</div>
           {{ page_data.intro }}
 
@@ -45,9 +45,9 @@ layout: page-shell
             {{ page_data.key_points | markdownify }}
           {% endif %}
 
-          {% if page_data.importance %}
-            <div class="BasicContent-title u-marginTop20">Why is this important?</div>
-            {{ page_data.importance }}
+          {% if page_data.use_for %}
+            <div class="BasicContent-title u-marginTop20">What can it be used for?</div>
+            {{ page_data.use_for }}
           {% endif %}
 
           {% if page_data.category.slug == "socio-economic-data" %}

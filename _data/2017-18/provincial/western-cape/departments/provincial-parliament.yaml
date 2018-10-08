@@ -19,96 +19,122 @@ contributed_datasets:
 description: 'Western Cape department: Provincial Parliament budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 45533000
-    - economic_classification_2_name: Goods and services
-      total_budget: 17081000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2777000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 46000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 25000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 6030000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 39545000
-    - economic_classification_2_name: Households
-      total_budget: 1387000
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 263000
-  programme_name: Facilities for Members and Political Parties
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 19384000
-    - economic_classification_2_name: Goods and services
-      total_budget: 5612000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 32000
-  programme_name: Parliamentary Services
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 45533000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 17081000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2777000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 46000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 25000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 6030000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 39545000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1387000
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 263000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Facilities for Members and Political Parties
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 19384000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 5612000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 32000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Parliamentary Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 103122000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 107041000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 116126000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 129321000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 137715000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 138628000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 148471000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 127714335
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 125506923
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 129469613
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 135641951
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 137715000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 131411393
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 133669281
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 103122000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 107041000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 116126000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 129321000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 137715000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 138628000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 148471000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 127714335
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 125506923
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 129469613
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 135641951
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 137715000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 131411393
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 133669281
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -156,12 +182,14 @@ intro: "## Vision\n\nA dynamic, effective and efficient parliament supporting co
 is_vote_primary: true
 name: Provincial Parliament
 programmes:
-- name: Administration
-  total_budget: 65462000
-- name: Facilities for Members and Political Parties
-  total_budget: 47225000
-- name: Parliamentary Services
-  total_budget: 25028000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 65462000
+  - name: Facilities for Members and Political Parties
+    total_budget: 47225000
+  - name: Parliamentary Services
+    total_budget: 25028000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: provincial-parliament

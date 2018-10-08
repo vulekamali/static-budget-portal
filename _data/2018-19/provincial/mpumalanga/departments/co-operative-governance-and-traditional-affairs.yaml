@@ -20,92 +20,149 @@ description: 'Mpumalanga department: Co-Operative Governance And Traditional Aff
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 123726000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 1294000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 657000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 46408000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 21160000.0
-  programme_name: Development And Planning
-- items: []
-  programme_name: Direct Charges
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 194344000.0
-  programme_name: Local Governance
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 19705000.0
-  programme_name: The House Of Traditional Leaders
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 93966000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 21000000.0
-  programme_name: Traditional Institutional Management
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 82869000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 40857000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 657000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1215000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 79000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 39739000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 6669000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 21000000.0
+        type: economic_classification_2
+      - name: Software And Other Intangible Assets
+        total_budget: 160000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Development And Planning
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 180231000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 14113000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: Local Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 13708000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 5997000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: The House Of Traditional Leaders
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 91100000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 2866000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Non-Profit Institutions
+        total_budget: 21000000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Traditional Institutional Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 447004000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 476080000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 615669000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 515044000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 522260000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 523763000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 552218040.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 524117831
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 530784609
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 645761666
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 515044000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 495072526
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 471546791
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 471064399
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 447004000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 476080000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 615669000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 515044000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 522260000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 523763000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 552218040.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 524117831
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 530784609
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 645761666
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 515044000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 495072526
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 471546791
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 471064399
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -135,18 +192,20 @@ intro: ''
 is_vote_primary: true
 name: Co-Operative Governance And Traditional Affairs
 programmes:
-- name: Administration
-  total_budget: 125677000.0
-- name: Local Governance
-  total_budget: 194344000.0
-- name: Development And Planning
-  total_budget: 67568000.0
-- name: Traditional Institutional Management
-  total_budget: 114966000.0
-- name: The House Of Traditional Leaders
-  total_budget: 19705000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 125677000.0
+  - name: Local Governance
+    total_budget: 194344000.0
+  - name: Development And Planning
+    total_budget: 67568000.0
+  - name: Traditional Institutional Management
+    total_budget: 114966000.0
+  - name: The House Of Traditional Leaders
+    total_budget: 19705000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: co-operative-governance-and-traditional-affairs

@@ -20,140 +20,188 @@ description: 'Free State department: Cooperative Governance and Traditional Affa
   budget data for the 2016-17 financial year from National Treasury in partnership
   with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 72829000
-    - economic_classification_2_name: Goods and services
-      total_budget: 57377000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2607000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 193000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 40333000
-    - economic_classification_2_name: Goods and services
-      total_budget: 18520000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 5766000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 36924000
-    - economic_classification_2_name: Households
-      total_budget: 153000
-  programme_name: Development and Planning
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 7740000
-    - economic_classification_2_name: Goods and services
-      total_budget: 1558000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 47000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 323000
-  programme_name: House of Traditional Leaders
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 41663000
-    - economic_classification_2_name: Goods and services
-      total_budget: 33689000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1312000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 44879000
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 1264000
-    - economic_classification_2_name: Households
-      total_budget: 304000
-  programme_name: Local Governance
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 37093000
-    - economic_classification_2_name: Goods and services
-      total_budget: 2040000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 276000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 474000
-    - economic_classification_2_name: Households
-      total_budget: 232000
-  programme_name: Traditional Institutional Management
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 72829000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 57377000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2607000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 193000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 40333000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 18520000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 5766000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 36924000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 153000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Development and Planning
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 7740000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1558000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 47000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 323000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: House of Traditional Leaders
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 41663000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 33689000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1312000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 44879000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 1264000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 304000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Local Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 37093000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 2040000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 276000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 474000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 232000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Traditional Institutional Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 300530000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 307106000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 364265000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 380315000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 407596000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 411525000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 430835000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 393850678
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 380344045
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 427105309
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 424015604
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 427518475
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 411525000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 408406869
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 300530000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 307106000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 364265000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 380315000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 407596000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 411525000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 430835000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 393850678
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 380344045
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 427105309
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 424015604
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 427518475
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 411525000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 408406869
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -222,16 +270,18 @@ intro: "## Vision\n\nIntegrated and responsive governance towards sustainable de
 is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 programmes:
-- name: Administration
-  total_budget: 133006000
-- name: Local Governance
-  total_budget: 123111000
-- name: Development and Planning
-  total_budget: 101696000
-- name: Traditional Institutional Management
-  total_budget: 40115000
-- name: House of Traditional Leaders
-  total_budget: 9668000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 133006000
+  - name: Local Governance
+    total_budget: 123111000
+  - name: Development and Planning
+    total_budget: 101696000
+  - name: Traditional Institutional Management
+    total_budget: 40115000
+  - name: House of Traditional Leaders
+    total_budget: 9668000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: cooperative-governance-and-traditional-affairs

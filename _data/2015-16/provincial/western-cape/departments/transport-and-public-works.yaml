@@ -19,168 +19,230 @@ contributed_datasets:
 description: 'Western Cape department: Transport and Public Works budget data for
   the 2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 165587000
-    - economic_classification_2_name: Goods and services
-      total_budget: 60019000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1183000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 8276000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 3000000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 33391000
-    - economic_classification_2_name: Goods and services
-      total_budget: 22802000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1925000
-  programme_name: Community Based Programmes
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 563952000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 218349000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 521739000
-    - economic_classification_2_name: Land and sub-soil assets
-      total_budget: 72000000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 4910000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 384682000
-  programme_name: Public Works Infrastructure
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 462359000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 190938000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 2353334000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 43635000
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 9110000
-    - economic_classification_2_name: Land and sub-soil assets
-      total_budget: 6880000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 56727000
-    - economic_classification_2_name: Households
-      total_budget: 988000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 95000
-  programme_name: Transport Infrastructure
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 65294000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 25877000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 520000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 796580000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 69230000
-  programme_name: Transport Operations
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 333365000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 265272000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 17315000
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 810000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 156000
-    - economic_classification_2_name: Households
-      total_budget: 90000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 1000
-  programme_name: Transport Regulation
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 165587000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 60019000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1183000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 8276000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 3000000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 33391000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 22802000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1925000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Community Based Programmes
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 563952000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 218349000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 521739000
+        type: economic_classification_2
+      - name: Land and sub-soil assets
+        total_budget: 72000000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 4910000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 384682000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Public Works Infrastructure
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 462359000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 190938000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 2353334000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 43635000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 9110000
+        type: economic_classification_2
+      - name: Land and sub-soil assets
+        total_budget: 6880000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 56727000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 988000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 95000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Infrastructure
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 65294000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 25877000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 520000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 796580000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 69230000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Operations
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 333365000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 265272000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 17315000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 810000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 156000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 90000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 1000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Regulation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 4366411000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 4704658000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 5017988000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 5949693000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 6760391000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 7103663000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 6859717000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 6039400692
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 6165550013
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 6214668089
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 6976090131
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 7537202777
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 7450875810
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 6859717000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 4366411000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 4704658000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 5017988000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 5949693000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 6760391000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 7103663000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 6859717000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 6039400692
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 6165550013
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 6214668089
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 6976090131
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 7537202777
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 7450875810
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 6859717000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -230,18 +292,20 @@ intro: "## Vision\n\n\u201CA highly skilled innovation-driven resource efficient
 is_vote_primary: true
 name: Transport and Public Works
 programmes:
-- name: Administration
-  total_budget: 238065000
-- name: Public Works Infrastructure
-  total_budget: 1765632000
-- name: Transport Infrastructure
-  total_budget: 3124066000
-- name: Transport Operations
-  total_budget: 957501000
-- name: Transport Regulation
-  total_budget: 617009000
-- name: Community Based Programmes
-  total_budget: 58118000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 238065000
+  - name: Public Works Infrastructure
+    total_budget: 1765632000
+  - name: Transport Infrastructure
+    total_budget: 3124066000
+  - name: Transport Operations
+    total_budget: 957501000
+  - name: Transport Regulation
+    total_budget: 617009000
+  - name: Community Based Programmes
+    total_budget: 58118000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: transport-and-public-works

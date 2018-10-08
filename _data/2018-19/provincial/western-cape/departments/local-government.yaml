@@ -19,92 +19,152 @@ contributed_datasets:
 description: 'Western Cape department: Local Government budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 40628000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 3013000.0
-    - economic_classification_2_name: Payments For Financial Assets
-      total_budget: 115000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 2000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 59922000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 11152000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 31000.0
-  programme_name: Development And Planning
-- items: []
-  programme_name: Direct Charges
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 115578000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 22244000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 110000.0
-  programme_name: Local Governance
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 1000.0
-  programme_name: Traditional Institutional Management
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 30163000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 10465000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 3013000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Payments For Financial Assets
+        total_budget: 115000.0
+        type: economic_classification_2
+      name: Payments For Financial Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 2000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 42078000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 17844000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 31000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces And Municipalities
+        total_budget: 10352000.0
+        type: economic_classification_2
+      - name: Departmental Agencies And Accounts
+        total_budget: 400000.0
+        type: economic_classification_2
+      - name: Non-Profit Institutions
+        total_budget: 400000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Development And Planning
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 104925000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 10653000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 110000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces And Municipalities
+        total_budget: 22244000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Local Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 1000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: Traditional Institutional Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 197479000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 213020000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 234934000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 359713000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 252796000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 262461000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 276615000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 231546619
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 237497348
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 246417103
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 359713000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 239636109
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 236295123
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 235963821
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 197479000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 213020000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 234934000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 359713000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 252796000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 262461000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 276615000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 231546619
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 237497348
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 246417103
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 359713000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 239636109
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 236295123
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 235963821
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -134,16 +194,18 @@ intro: ''
 is_vote_primary: true
 name: Local Government
 programmes:
-- name: Administration
-  total_budget: 43758000.0
-- name: Local Governance
-  total_budget: 137932000.0
-- name: Development And Planning
-  total_budget: 71105000.0
-- name: Traditional Institutional Management
-  total_budget: 1000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 43758000.0
+  - name: Local Governance
+    total_budget: 137932000.0
+  - name: Development And Planning
+    total_budget: 71105000.0
+  - name: Traditional Institutional Management
+    total_budget: 1000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: local-government

@@ -19,92 +19,116 @@ contributed_datasets:
 description: 'Gauteng department: Office of the Premier budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 55269000
-    - economic_classification_2_name: Goods and services
-      total_budget: 44608000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 4203000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 138799000
-    - economic_classification_2_name: Goods and services
-      total_budget: 71308000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1737000
-  programme_name: Institutional Development
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 63402000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 50294000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 800000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Higher education institutions
-      total_budget: 19000000
-  programme_name: Policy & Governance
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 55269000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 44608000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 4203000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 138799000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 71308000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1737000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Institutional Development
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 63402000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 50294000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 800000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Higher education institutions
+        total_budget: 19000000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Policy & Governance
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 290566000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 461791000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 355001000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 429965000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 449420000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 474389000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 503154000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 380792653
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 571918026
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 416243152
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 479370703
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 471386748
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 474389000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 476961133
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 290566000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 461791000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 355001000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 429965000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 449420000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 474389000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 503154000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 380792653
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 571918026
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 416243152
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 479370703
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 471386748
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 474389000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 476961133
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -148,12 +172,14 @@ intro: "## Vision\n\nLeadership for an integrated city-region, characterised by 
 is_vote_primary: true
 name: Office of the Premier
 programmes:
-- name: Administration
-  total_budget: 104080000
-- name: Institutional Development
-  total_budget: 211844000
-- name: Policy & Governance
-  total_budget: 133496000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 104080000
+  - name: Institutional Development
+    total_budget: 211844000
+  - name: Policy & Governance
+    total_budget: 133496000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: office-of-the-premier

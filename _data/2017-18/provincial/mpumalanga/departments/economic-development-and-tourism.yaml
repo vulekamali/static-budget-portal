@@ -20,124 +20,164 @@ description: 'Mpumalanga department: Economic Development and Tourism budget dat
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 59245000
-    - economic_classification_2_name: Goods and services
-      total_budget: 26573000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 3371000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 450000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 16576000
-    - economic_classification_2_name: Goods and services
-      total_budget: 2176000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 86186000
-  programme_name: Business Regulation and Governance
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 13528000
-    - economic_classification_2_name: Goods and services
-      total_budget: 5230000
-  programme_name: Economic Planning
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 38135000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 26687000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 462980000
-  programme_name: Integrated Economic Development
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 18120000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 3202000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 338050000
-  programme_name: Tourism
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 16057000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 11232000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 2279000
-  programme_name: Trade and Sector Development
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 59245000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 26573000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 3371000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 450000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 16576000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 2176000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 86186000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Business Regulation and Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 13528000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 5230000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Economic Planning
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 38135000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 26687000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 462980000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Integrated Economic Development
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 18120000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 3202000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 338050000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Tourism
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 16057000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 11232000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 2279000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Trade and Sector Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 739257000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 764536000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 795227000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1002142000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1130077000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 1179612000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 1236351000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 915553582
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 896428109
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 886603622
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1051124692
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1130077000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 1118204519
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 1113093799
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 739257000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 764536000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 795227000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1002142000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1130077000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1179612000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 1236351000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 915553582
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 896428109
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 886603622
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1051124692
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1130077000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1118204519
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 1113093799
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -169,18 +209,20 @@ intro: "## Vision\r\n\r\nAn Inclusive, Global Competitive Economy\r\n\r\n\r\n\r\
 is_vote_primary: true
 name: Economic Development and Tourism
 programmes:
-- name: Administration
-  total_budget: 89639000
-- name: Integrated Economic Development
-  total_budget: 527802000
-- name: Trade and Sector Development
-  total_budget: 29568000
-- name: Business Regulation and Governance
-  total_budget: 104938000
-- name: Economic Planning
-  total_budget: 18758000
-- name: Tourism
-  total_budget: 359372000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 89639000
+  - name: Integrated Economic Development
+    total_budget: 527802000
+  - name: Trade and Sector Development
+    total_budget: 29568000
+  - name: Business Regulation and Governance
+    total_budget: 104938000
+  - name: Economic Planning
+    total_budget: 18758000
+  - name: Tourism
+    total_budget: 359372000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: economic-development-and-tourism

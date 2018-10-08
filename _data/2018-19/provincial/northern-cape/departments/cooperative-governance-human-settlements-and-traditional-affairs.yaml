@@ -20,92 +20,149 @@ description: 'Northern Cape department: Cooperative Governance, Human Settlement
   And Traditional Affairs budget data for the 2018-19 financial year from National
   Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 125406000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 1678000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 130522000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 2381000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 1944000.0
-  programme_name: Co-Operative Governance
-- items: []
-  programme_name: Direct Charges
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 497157000.0
-    - economic_classification_2_name: Current Payments
-      total_budget: 49816000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 725000.0
-  programme_name: Human Settlement
-- items:
-  - economic_classification_1_name: Payments
-    items:
-    - economic_classification_2_name: Current Payments
-      total_budget: 20767000.0
-    - economic_classification_2_name: Transfers And Subsidies
-      total_budget: 1338000.0
-    - economic_classification_2_name: Payments For Capital Assets
-      total_budget: 165000.0
-  programme_name: Traditional Institutional Management
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 82177000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 43229000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 1678000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 122675000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 7847000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 2381000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces And Municipalities
+        total_budget: 1944000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Co-Operative Governance
+    type: programme
+  - items: []
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 45277000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 4539000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 725000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 497157000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Human Settlement
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 18472000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 2295000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 165000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1338000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Traditional Institutional Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 651875000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 723625000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 691313000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 734404800.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 831899000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 866804000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 913620000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 764331664
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 806774099
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 725102993
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 734404800
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 788592538
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 780388544
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 779354937
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 651875000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 723625000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 691313000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 734404800.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 831899000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 866804000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 913620000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 764331664
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 806774099
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 725102993
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 734404800
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 788592538
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 780388544
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 779354937
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -135,16 +192,18 @@ intro: ''
 is_vote_primary: true
 name: Cooperative Governance, Human Settlements And Traditional Affairs
 programmes:
-- name: Administration
-  total_budget: 127084000.0
-- name: Human Settlement
-  total_budget: 547698000.0
-- name: Co-Operative Governance
-  total_budget: 134847000.0
-- name: Traditional Institutional Management
-  total_budget: 22270000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 127084000.0
+  - name: Human Settlement
+    total_budget: 547698000.0
+  - name: Co-Operative Governance
+    total_budget: 134847000.0
+  - name: Traditional Institutional Management
+    total_budget: 22270000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: cooperative-governance-human-settlements-and-traditional-affairs

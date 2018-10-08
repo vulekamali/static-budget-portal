@@ -19,122 +19,161 @@ contributed_datasets:
 description: 'National department: Parliament budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 76413000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 38218000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1561000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 192007000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 62746000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 101000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Non-profit institutions
-      total_budget: 414690000.0
-  programme_name: Associated Services
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 397842000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 150738000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 586000.0
-  programme_name: Core Business
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 556288000.0
-  programme_name: Direct charge against the National Revenue Fund
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 44879000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 25910000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 404000.0
-  programme_name: Strategic Leadership and Governance
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 203623000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 100975000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1254000.0
-  programme_name: Support Services
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 76413000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 38218000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1561000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 192007000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 62746000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 101000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 414690000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Associated Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 397842000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 150738000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 586000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Core Business
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 556288000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 44879000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 25910000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 404000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Strategic Leadership and Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 203623000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 100975000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1254000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Support Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1937341000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2147648000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2133940000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2189429000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 2268235000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 2371139000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 2531189000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 2399354341
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2518144384
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2379143232
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2296443901
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 2268235000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 2247703776
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 2278843775
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1937341000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2147648000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2133940000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2189429000.0
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2268235000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 2371139000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 2531189000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 2399354341
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2518144384
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2379143232
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2296443901
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2268235000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 2247703776
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 2278843775
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -177,18 +216,20 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Parliament
 programmes:
-- name: Strategic Leadership and Governance
-  total_budget: 71193000.0
-- name: Direct charge against the National Revenue Fund
-  total_budget: 556288000.0
-- name: Administration
-  total_budget: 116192000.0
-- name: Core Business
-  total_budget: 549166000.0
-- name: Support Services
-  total_budget: 305852000.0
-- name: Associated Services
-  total_budget: 669544000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programme_budgets:
+  - name: Strategic Leadership and Governance
+    total_budget: 71193000.0
+  - name: Direct charge against the National Revenue Fund
+    total_budget: 556288000.0
+  - name: Administration
+    total_budget: 116192000.0
+  - name: Core Business
+    total_budget: 549166000.0
+  - name: Support Services
+    total_budget: 305852000.0
+  - name: Associated Services
+    total_budget: 669544000.0
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: parliament

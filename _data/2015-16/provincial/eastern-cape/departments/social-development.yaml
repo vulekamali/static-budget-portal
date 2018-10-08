@@ -18,7 +18,9 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Eastern Cape department: Social Development budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
-economic_classification_by_programme: []
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes: []
 expenditure_over_time: null
 financial_years:
 - closest_match:
@@ -60,16 +62,18 @@ intro: "## Vision\n\nA caring society for the protection and development of the 
 is_vote_primary: true
 name: Social Development
 programmes:
-- name: Administration
-  total_budget: null
-- name: Social Welfare Services
-  total_budget: null
-- name: Children and Families
-  total_budget: null
-- name: Restorative Services
-  total_budget: null
-- name: Development and Research
-  total_budget: null
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: null
+  - name: Social Welfare Services
+    total_budget: null
+  - name: Children and Families
+    total_budget: null
+  - name: Restorative Services
+    total_budget: null
+  - name: Development and Research
+    total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: social-development

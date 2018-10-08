@@ -19,142 +19,191 @@ contributed_datasets:
 description: 'National department: Correctional Services budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 3181457000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 868645000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 79295000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 10395000.0
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 6603000.0
-    - economic_classification_2_name: Households
-      total_budget: 4483000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 1196696000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 790283000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 11303000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 392000.0
-  programme_name: Care
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 9687247000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 3394593000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 759944000.0
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 37791000.0
-    - economic_classification_2_name: Biological assets
-      total_budget: 1470000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 105865000.0
-  programme_name: Incarceration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 1392300000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 380926000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 45041000.0
-    - economic_classification_2_name: Biological assets
-      total_budget: 4082000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 62000.0
-  programme_name: Rehabilitation
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 725400000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 127143000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2523000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 185000.0
-  programme_name: Social Reintegration
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 3181457000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 868645000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 79295000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 10395000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 6603000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 4483000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 1196696000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 790283000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 11303000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 392000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Care
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 9687247000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 3394593000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 759944000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 37791000.0
+        type: economic_classification_2
+      - name: Biological assets
+        total_budget: 1470000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 105865000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Incarceration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 1392300000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 380926000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 45041000.0
+        type: economic_classification_2
+      - name: Biological assets
+        total_budget: 4082000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 62000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Rehabilitation
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 725400000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 127143000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2523000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 185000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Social Reintegration
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 18650598000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 19529254000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 20588675000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 21580191000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 22814124000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 24453616000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 26155812000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 23098356602
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 22898296788
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 22954444261
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 22634987484
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 22814124000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 23180625442
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 23548225506
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 18650598000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 19529254000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 20588675000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 21580191000.0
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 22814124000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 24453616000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 26155812000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 23098356602
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 22898296788
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 22954444261
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 22634987484
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 22814124000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 23180625442
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 23548225506
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -194,16 +243,18 @@ intro: "## Vote purpose\n\n_Contribute to a just, peaceful and safer South Afric
 is_vote_primary: true
 name: Correctional Services
 programmes:
-- name: Administration
-  total_budget: 4150878000.0
-- name: Incarceration
-  total_budget: 13986910000.0
-- name: Rehabilitation
-  total_budget: 1822411000.0
-- name: Care
-  total_budget: 1998674000.0
-- name: Social Reintegration
-  total_budget: 855251000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 4150878000.0
+  - name: Incarceration
+    total_budget: 13986910000.0
+  - name: Rehabilitation
+    total_budget: 1822411000.0
+  - name: Care
+    total_budget: 1998674000.0
+  - name: Social Reintegration
+    total_budget: 855251000.0
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: correctional-services

@@ -20,136 +20,182 @@ description: 'National department: Telecommunications and Postal Services budget
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 108762000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 97772000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 7280000.0
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 4503000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 15000.0
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 15968000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 5354000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 502000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 228616000.0
-  programme_name: ICT Enterprise Development and Public Entities Oversight
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 33353000.0
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 33253000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 6560000.0
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1679000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 203900000.0
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 37880000.0
-  programme_name: ICT Infrastructure Support
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 13725000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 9438000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 390000.0
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Foreign governments and international organisations
-      total_budget: 28482000.0
-  programme_name: International Affairs and Trade
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 52592000.0
-    - economic_classification_2_name: Goods and services
-      total_budget: 33039000.0
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 294000.0
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 50000.0
-  programme_name: Policy, Research and Capacity Development
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 108762000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 97772000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 7280000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 4503000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 15000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 15968000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 5354000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 502000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 228616000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: ICT Enterprise Development and Public Entities Oversight
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 33353000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 33253000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Software and other intangible assets
+        total_budget: 6560000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 1679000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 203900000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 37880000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: ICT Infrastructure Support
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 13725000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 9438000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 390000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Foreign governments and international organisations
+        total_budget: 28482000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: International Affairs and Trade
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 52592000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 33039000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 294000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 50000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Policy, Research and Capacity Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1568078000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1300097000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2075692000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 5174377000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 923407000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1024419000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1085592000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 1838591245
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1449486386
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2177147664
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 5174377000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 875336874
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 922290220
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 926054033
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1568078000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1300097000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2075692000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 5174377000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 923407000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1024419000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1085592000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 1838591245
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1449486386
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2177147664
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 5174377000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 875336874
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 922290220
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 926054033
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -209,16 +255,18 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Telecommunications and Postal Services
 programmes:
-- name: Administration
-  total_budget: 218332000.0
-- name: International Affairs and Trade
-  total_budget: 52035000.0
-- name: Policy, Research and Capacity Development
-  total_budget: 85975000.0
-- name: ICT Enterprise Development and Public Entities Oversight
-  total_budget: 250440000.0
-- name: ICT Infrastructure Support
-  total_budget: 316625000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 218332000.0
+  - name: International Affairs and Trade
+    total_budget: 52035000.0
+  - name: Policy, Research and Capacity Development
+    total_budget: 85975000.0
+  - name: ICT Enterprise Development and Public Entities Oversight
+    total_budget: 250440000.0
+  - name: ICT Infrastructure Support
+    total_budget: 316625000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: telecommunications-and-postal-services

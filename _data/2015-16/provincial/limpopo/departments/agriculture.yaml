@@ -19,182 +19,251 @@ contributed_datasets:
 description: 'Limpopo department: Agriculture budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 216656000
-    - economic_classification_2_name: Goods and services
-      total_budget: 79916000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 17319000
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 2801000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 5380000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 187000
-  programme_name: Administration
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 19549000
-    - economic_classification_2_name: Goods and services
-      total_budget: 5093000
-  programme_name: Agriculural Economics
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 652728000
-    - economic_classification_2_name: Goods and services
-      total_budget: 214775000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 22570000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2961000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 146641000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 9000000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 220000
-  programme_name: Farmer Support & Development
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 45969000
-    - economic_classification_2_name: Goods and services
-      total_budget: 10013000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1151000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 425000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 21000
-  programme_name: Research & Technology Devel Services
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 3244000
-    - economic_classification_2_name: Goods and services
-      total_budget: 2898000
-  programme_name: Rural development Co-ordination
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 65456000
-    - economic_classification_2_name: Goods and services
-      total_budget: 27990000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 2447000
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 292000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 1099000
-    - economic_classification_2_name: Provinces and municipalities
-      total_budget: 30000
-  programme_name: Structured Agric. Training
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 38071000
-    - economic_classification_2_name: Goods and services
-      total_budget: 26025000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 19800000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 3905000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 5285000
-  programme_name: Sustainable Resource Management
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 34502000
-    - economic_classification_2_name: Goods and services
-      total_budget: 12124000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 408000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 180000
-  programme_name: Veterinary Services
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 216656000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 79916000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 17319000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 2801000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 5380000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 187000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 19549000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 5093000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Agriculural Economics
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 652728000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 214775000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 22570000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 2961000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 146641000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 9000000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 220000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Farmer Support & Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 45969000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 10013000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1151000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 425000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 21000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Research & Technology Devel Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 3244000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 2898000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Rural development Co-ordination
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 65456000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 27990000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2447000
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 292000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1099000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 30000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Structured Agric. Training
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 38071000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 26025000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 19800000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 3905000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 5285000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Sustainable Resource Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 34502000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 12124000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 408000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 180000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Veterinary Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1450405000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1519763000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1530375000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1605128000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1697131000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1795098000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1883673000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 2006127449
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1991680327
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1895335875
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1882032837
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1892142109
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1882838792
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1883673000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1450405000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1519763000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1530375000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1605128000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1697131000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1795098000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1883673000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 2006127449
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1991680327
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1895335875
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1882032837
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1892142109
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1882838792
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1883673000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -229,22 +298,24 @@ intro: "## Vision\n\nUnited, prosperous and sustainable agricultural sector\r\n\
 is_vote_primary: true
 name: Agriculture
 programmes:
-- name: Administration
-  total_budget: 322259000
-- name: Sustainable Resource Management
-  total_budget: 93086000
-- name: Farmer Support & Development
-  total_budget: 1048895000
-- name: Veterinary Services
-  total_budget: 47214000
-- name: Research & Technology Devel Services
-  total_budget: 57579000
-- name: Agriculural Economics
-  total_budget: 24642000
-- name: Structured Agric. Training
-  total_budget: 97314000
-- name: Rural development Co-ordination
-  total_budget: 6142000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 322259000
+  - name: Sustainable Resource Management
+    total_budget: 93086000
+  - name: Farmer Support & Development
+    total_budget: 1048895000
+  - name: Veterinary Services
+    total_budget: 47214000
+  - name: Research & Technology Devel Services
+    total_budget: 57579000
+  - name: Agriculural Economics
+    total_budget: 24642000
+  - name: Structured Agric. Training
+    total_budget: 97314000
+  - name: Rural development Co-ordination
+    total_budget: 6142000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: agriculture

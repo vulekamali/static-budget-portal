@@ -31,128 +31,170 @@ contributed_datasets:
 description: 'Free State department: Police, Roads and Transport budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 196906000
-    - economic_classification_2_name: Goods and services
-      total_budget: 82366000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 19094000
-    - economic_classification_2_name: Software and other intangible assets
-      total_budget: 3000000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 886000
-  programme_name: ADMINISTRATION
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 16645000
-    - economic_classification_2_name: Goods and services
-      total_budget: 8162000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 276000
-  programme_name: PROVINCIAL SECRETARIAT FOR POLICE SERVICES
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 1064061000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 182934000
-  - economic_classification_1_name: Payments for capital assets
-    items:
-    - economic_classification_2_name: Buildings and other fixed structures
-      total_budget: 467666000
-    - economic_classification_2_name: Machinery and equipment
-      total_budget: 1529000
-    - economic_classification_2_name: Land and sub-soil assets
-      total_budget: 600000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 2767000
-  programme_name: TRANSPORT INFRASTRUCTURE
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Goods and services
-      total_budget: 49380000
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 19365000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Public corporations and private enterprises
-      total_budget: 255669000
-    - economic_classification_2_name: Departmental agencies and accounts
-      total_budget: 5000000
-  programme_name: TRANSPORT OPERATIONS
-- items:
-  - economic_classification_1_name: Current payments
-    items:
-    - economic_classification_2_name: Compensation of employees
-      total_budget: 277084000
-    - economic_classification_2_name: Goods and services
-      total_budget: 65795000
-  - economic_classification_1_name: Transfers and subsidies
-    items:
-    - economic_classification_2_name: Households
-      total_budget: 887000
-  programme_name: TRANSPORT REGULATIONS
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 196906000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 82366000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 19094000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 3000000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 886000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: ADMINISTRATION
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 16645000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 8162000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 276000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: PROVINCIAL SECRETARIAT FOR POLICE SERVICES
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 1064061000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 182934000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 467666000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 1529000
+        type: economic_classification_2
+      - name: Land and sub-soil assets
+        total_budget: 600000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 2767000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: TRANSPORT INFRASTRUCTURE
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 49380000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 19365000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 255669000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 5000000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: TRANSPORT OPERATIONS
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 277084000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 65795000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 887000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: TRANSPORT REGULATIONS
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 2190213000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2401919000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2420218000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2625102000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 2720072000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 2878342000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 3117393000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 2712530767
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2816280341
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2698316389
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2753411724
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 2720072000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 2728503130
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 2806606552
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 2190213000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2401919000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2420218000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2625102000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2720072000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 2878342000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 3117393000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 2712530767
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2816280341
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2698316389
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2753411724
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2720072000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 2728503130
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 2806606552
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -201,16 +243,18 @@ intro: "## Vision\n\nContribute towards the creation of a prosperous Free State 
 is_vote_primary: true
 name: Police, Roads and Transport
 programmes:
-- name: ADMINISTRATION
-  total_budget: 302252000
-- name: PROVINCIAL SECRETARIAT FOR POLICE SERVICES
-  total_budget: 25083000
-- name: TRANSPORT OPERATIONS
-  total_budget: 329414000
-- name: TRANSPORT REGULATIONS
-  total_budget: 343766000
-- name: TRANSPORT INFRASTRUCTURE
-  total_budget: 1719557000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: ADMINISTRATION
+    total_budget: 302252000
+  - name: PROVINCIAL SECRETARIAT FOR POLICE SERVICES
+    total_budget: 25083000
+  - name: TRANSPORT OPERATIONS
+    total_budget: 329414000
+  - name: TRANSPORT REGULATIONS
+    total_budget: 343766000
+  - name: TRANSPORT INFRASTRUCTURE
+    total_budget: 1719557000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: police-roads-and-transport
