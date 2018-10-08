@@ -37,36 +37,73 @@ layout: page-shell
         data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
         data-dept="{{ page_data.name }}"
         data-location="{{ department_location }}"
+        data-dataset="{{ page_data.programmes.dataset_detail_page }}"
       >
       </div>
     </div>
 
-    {% if page_data.economic_classification_by_programme.programme_budgets.programmes %}
+    {% if page_data.economic_classification_by_programme.programmes %}
       <div class="Section is-bevel u-marginTop20 u-padding30">
         <h3 class="Section-title">Economic classification of expenditure for each Programme</h3>
         <p>Each chart shows the economic classification of spending under that Programme. More detail is available in the dataset.</p>
         <div class="Grid has-threeColumn">
-          {% for programme in page_data.economic_classification_by_programme.programme_budgets.programmes %}
-          <div class="BasicContent">
+          {% for programme in page_data.economic_classification_by_programme.programmes %}
+          <div class="BasicContent u-marginTop10">
             <div class="BasicContent-title is-small">{{ programme.name }}</div>
-            <div data-component="EconClassificationProgrammes" data-items="{{ programme.items | jsonify | escape }}"></div>
+            <div 
+              data-component="SmallMultiple"
+              data-items="{{ programme.items | jsonify | escape }}"
+            >
+            </div>
           </div>
           {% endfor %}
         </div>
+
+        <div class="u-marginTop25 u-marginLeft25">
+          {%
+            include components/universal/Download/index.html
+            link="page_data.economic_classification_by_programme.programmes.dataset_detail_page"
+            title="View this data"
+          %}
+        </div>
+
+        {% assign pdfButton = "Download " | append: short_estimate | append: " as PDF" %}
+        {% assign excelButton = "Download " | append: short_estimate | append: " as Excel" %}
+
+        {% for item in page_data.treasury_datasets %}
+          {% assign modifiedFormats = item[1].formats | sort: 'format' %}
+            <div>
+              {%
+                include components/universal/Download/index.html
+                link="{{ modifiedFormats[0].url }}"
+                title=pdfButton
+                icon="true"
+              %}
+            </div>
+            <div>
+              {%
+                include components/universal/Download/index.html
+                link="{{ modifiedFormats[1].url }}"
+                title=excelButton
+                icon="true"
+              %}
+          </div>
+        {% endfor %}
       </div>
     {% endif %}
 
     <div class="u-marginTop20">
       <div
         id="line-chart"
-        class="js-initExpenditureChart"
-        data-adjusted="{ &quot;data&quot;:  {{ page_data.expenditure_over_time.expenditure.real | jsonify | escape }} }"
-        data-not-adjusted="{ &quot;data&quot;: {{ page_data.expenditure_over_time.expenditure.nominal | jsonify | escape }} }"
+        data-component="ExpenditureChart"
+        data-adjusted="{{ page_data.expenditure_over_time.expenditure.real | jsonify | escape }}"
+        data-notAdjusted="{{ page_data.expenditure_over_time.expenditure.nominal | jsonify | escape }}"
         data-year="{{ page.financial_year }}"
         data-location="{{ department_location }}"
         data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
         data-department="{{ page_data.name }}"
         data-cpi="{{ site.data.global_values.cpi_dataset_url }}"
+        data-dataset="{{ page_data.expenditure_over_time.dataset_detail_page }}"
       >
       </div>
     </div>

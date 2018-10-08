@@ -4,8 +4,7 @@ import ChartWrapper from './../ChartWrapper/index.jsx';
 import normaliseData from './normaliseData.js';
 
 
-export default function EconClassificationProgrammes({ items: rawItems }) {
+export default function SmallMultiple({ items: rawItems }) {
   const items = normaliseData(rawItems);
-  console.log(items);
   return <ChartWrapper {...{ items }} />;
 }

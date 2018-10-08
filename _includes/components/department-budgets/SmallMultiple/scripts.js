@@ -1,4 +1,4 @@
-import EconClassificationProgrammes from './index.jsx';
+import SmallMultiple from './index.jsx';
 import { preactConnect } from '../../../utilities/js/helpers/connector.js';
 
 
@@ -7,4 +7,4 @@ const query = {
 };
 
 
-export default true;
+export default preactConnect(SmallMultiple, 'SmallMultiple', query);
