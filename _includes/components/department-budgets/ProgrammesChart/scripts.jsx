@@ -1,6 +1,6 @@
 import renderToString from 'preact-render-to-string';
 import canvg from 'canvg-browser';
-import { Component } from 'preact';
+import { h, Component } from 'preact';
 import BarChart from './../../universal/BarChart/index.jsx';
 import Markup from './index.jsx';
 import { preactConnect } from '../../../utilities/js/helpers/connector.js';
@@ -9,9 +9,9 @@ import { preactConnect } from '../../../utilities/js/helpers/connector.js';
 class ProgrammesChart extends Component {
   constructor(props) {
     super(props);
-    const { values, files } = this.props;
+    const { values, files: rawFiles } = this.props;
 
-    this.values.items = values.reduce(
+    const items = values.reduce(
       (results, val) => {
         return {
           ...results,
@@ -21,9 +21,9 @@ class ProgrammesChart extends Component {
       {},
     );
 
-    this.values.files = Object.keys(files).reduce(
+    const files = Object.keys(rawFiles).reduce(
       (results, key) => {
-        const object = files[key].formats.reduce(
+        const object = rawFiles[key].formats.reduce(
           (innerResults, val) => {
             return {
               ...innerResults,
@@ -41,14 +41,13 @@ class ProgrammesChart extends Component {
       {},
     );
 
-    
     this.state = {
       selected: 'link',
     };
 
-    this.hasNull = Object.keys(this.values.items).reduce(
+    this.hasNull = Object.keys(items).reduce(
       (result, key) => {
-        return !this.values.items[key] ? true : result;
+        return !items[key] ? true : result;
       },
       false,
     );
@@ -56,6 +55,11 @@ class ProgrammesChart extends Component {
     this.events = {
       downloadAction: this.downloadAction.bind(this),
       canvasAction: this.canvasAction.bind(this),
+    };
+
+    this.values = {
+      items,
+      files,
     };
   }
 
@@ -100,7 +104,7 @@ class ProgrammesChart extends Component {
   render() {
     const { hasNull } = this;
     const { width, mobile } = this.state;
-    const { year, location } = this.props;
+    const { year, location, dataset } = this.props;
     const { files, items } = this.values;
     const { downloadAction, canvasAction } = this.events;
 
@@ -117,6 +121,7 @@ class ProgrammesChart extends Component {
           location,
           downloadAction,
           canvasAction,
+          dataset,
         }}
       />
     );
@@ -130,18 +135,8 @@ const query = {
   files: 'json',
   dept: 'string',
   location: 'string',
+  dataset: 'string',
 };
 
 
 export default preactConnect(ProgrammesChart, 'ProgrammesChart', query);
-
-
-//     render(
-//       <ProgrammesChartContainer {...{ items, year, files, location, department }} />,
-//       node,
-//     );
-//   }
-// }
-
-
-// export default scripts();

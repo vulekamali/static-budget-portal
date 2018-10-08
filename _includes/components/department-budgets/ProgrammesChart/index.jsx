@@ -8,14 +8,13 @@ import Share from './../../universal/Share/index.jsx';
 export default function ProgrammesChart(props) {
   const {
     hasNull,
-    width,
-    mobile,
     items,
     files,
     year,
-    deptLocation,
+    location,
     downloadAction,
     canvasAction,
+    dataset,
   } = props;
 
 
@@ -46,6 +45,7 @@ export default function ProgrammesChart(props) {
     });
   };
 
+
   const estimateText = location === 'National' ?
     'Estimates of National Expenditure (ENE)' :
     'Estimates of Provincial Revenue and Expenditure (EPRE)';
@@ -66,6 +66,9 @@ export default function ProgrammesChart(props) {
             <p>
               The {estimateText} sets out the detailed spending plans of each government department for the coming year.
             </p>
+            <div className="u-paddingLeft25">
+              <Download title="View this data" link={dataset} />
+            </div>
             { files ? buildDownloadLinks() : null }
           </div>
           <div className="Section-card is-invisible">

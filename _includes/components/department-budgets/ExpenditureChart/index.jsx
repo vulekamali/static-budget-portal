@@ -1,7 +1,6 @@
 import { h } from 'preact';
 import ResponsiveChart from './../../universal/ResponsiveChart/index.jsx';
 import Download from './../../universal/Download/index.jsx';
-import shareSelections from './partials/shareSelections.json';
 import Share from './../../universal/Share/index.jsx';
 
 
@@ -9,16 +8,14 @@ export default function ExpenditureChart(props) {
   const {
     items,
 
-    year,
     files,
     location,
     phaseTable,
 
-    width,
-    mobile,
     source,
     type,
     cpi,
+    dataset,
 
     downloadAction,
     canvasAction,
@@ -69,6 +66,9 @@ export default function ExpenditureChart(props) {
             <p>
               The {estimateText} sets out the detailed spending plans of each government department for the coming year. These documents use amounts not adjusted for inflation unless stated otherwise.
             </p>
+            <div className="u-paddingLeft25">
+              <Download title="View this data" link={dataset} />
+            </div>
             {
               Object.keys(files).map((key) => {
                 return (
