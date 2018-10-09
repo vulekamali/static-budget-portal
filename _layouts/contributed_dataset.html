@@ -35,14 +35,14 @@ layout: page-shell
         {% if page_data.intro %}
           <div class="Section-card is-invisible">
             <h2 class="Section-title">Data contributed by: {{ page_data.organization.name }}</h2>
-            {{ page_data.intro | markdownify }}
+            {{ page_data.intro |strip_html | markdownify }}
           </div>
         {% endif %}
 
         {% if page_data.methodology and page_data.methodology != '' %}
           <div class="Section-card is-invisible">
             <h2 class="Section-title">Methodology Used in Gathering and Analysis</h2>
-            {{ page_data.methodology | markdownify }}
+            {{ page_data.methodology | strip_html | markdownify }}
           </div>
         {% endif %}
       </div>

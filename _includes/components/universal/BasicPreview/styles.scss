@@ -2,13 +2,14 @@
   background: #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
 
   @media screen and (min-width: 750px) {
     height: 200px;
+    padding: 2rem;
     overflow: hidden;
   }
 }

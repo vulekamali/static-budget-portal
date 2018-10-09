@@ -1,108 +1,17 @@
 import renderToString from 'preact-render-to-string';
 import canvg from 'canvg-browser';
-import { h, render, Component } from 'preact';
+import { h, Component } from 'preact';
 import BarChart from './../../universal/BarChart/index.jsx';
-import ProgrammesChart from './index.jsx';
-import calcShareAction from './partials/calcShareAction.js';
-import getProp from './../../../utilities/js/helpers/getProp.js';
+import Markup from './index.jsx';
+import { preactConnect } from '../../../utilities/js/helpers/connector.js';
 
 
-class ProgrammesChartContainer extends Component {
+class ProgrammesChart extends Component {
   constructor(props) {
     super(props);
+    const { values, files: rawFiles } = this.props;
 
-    this.state = {
-      selected: 'link',
-    };
-
-    this.hasNull = Object.keys(this.props.items).reduce(
-      (result, key) => {
-        return !this.props.items[key] ? true : result;
-      },
-      false,
-    );
-
-    this.events = {
-      downloadAction: this.downloadAction.bind(this),
-      canvasAction: this.canvasAction.bind(this),
-    };
-  }
-
-
-  downloadAction() {
-    canvg(this.canvas, renderToString(
-      <BarChart
-        scale={1.5}
-        download={{
-          heading: this.props.department,
-          subHeading: `${this.props.location} Department Budget for ${this.props.year}`,
-          type: 'Programme budgets chart',
-        }}
-        items={this.props.items}
-        guides
-        width={900}
-      />,
-    ));
-
-    if (this.canvas.msToBlob) {
-      const blob = this.canvas.msToBlob();
-      return window.navigator.msSaveBlob(blob, 'chart.png', { scaleWidth: 10, scaleHeight: 10 });
-    }
-
-    const link = document.createElement('a');
-    link.download = 'chart.png';
-    link.href = this.canvas.toDataURL();
-    link.setAttribute('type', 'hidden');
-    document.body.appendChild(link);
-    return link.click();
-  }
-
-
-  canvasAction(node) {
-    this.canvas = node;
-  }
-
-
-  render() {
-    const { hasNull } = this;
-    const { width, mobile } = this.state;
-    const { items, files, year, deptLocation } = this.props;
-    const { downloadAction, canvasAction } = this.events;
-
-    return (
-      <ProgrammesChart
-        national={deptLocation === 'National'}
-        {...{
-          hasNull,
-          width,
-          mobile,
-          items,
-          files,
-          year,
-          deptLocation,
-          downloadAction,
-          canvasAction,
-        }}
-      />
-    );
-  }
-}
-
-
-function scripts() {
-  const nodes = document.getElementsByClassName('js-initProgrammesChart');
-
-  for (let i = 0; i < nodes.length; i++) {
-    const node = nodes[i];
-
-    const rawValues = getProp('values', node, 'json').data;
-    const rawFiles = getProp('files', node, 'json');
-    const year = getProp('year', node);
-    const department = getProp('dept', node);
-    const location = getProp('dept-location', node);
-
-
-    const items = rawValues.reduce(
+    const items = values.reduce(
       (results, val) => {
         return {
           ...results,
@@ -132,12 +41,102 @@ function scripts() {
       {},
     );
 
-    render(
-      <ProgrammesChartContainer {...{ items, year, files, location, department }} />,
-      node,
+    this.state = {
+      selected: 'link',
+    };
+
+    this.hasNull = Object.keys(items).reduce(
+      (result, key) => {
+        return !items[key] ? true : result;
+      },
+      false,
+    );
+
+    this.events = {
+      downloadAction: this.downloadAction.bind(this),
+      canvasAction: this.canvasAction.bind(this),
+    };
+
+    this.values = {
+      items,
+      files,
+    };
+  }
+
+
+  downloadAction() {
+    const { department, location, year } = this.props;
+    const { items } = this.values;
+
+    canvg(this.canvas, renderToString(
+      <BarChart
+        scale={1.5}
+        download={{
+          heading: department,
+          subHeading: `${location} Department Budget for ${year}`,
+          type: 'Programme budgets chart',
+        }}
+        items={items}
+        guides
+        width={900}
+      />,
+    ));
+
+    if (this.canvas.msToBlob) {
+      const blob = this.canvas.msToBlob();
+      return window.navigator.msSaveBlob(blob, 'chart.png', { scaleWidth: 10, scaleHeight: 10 });
+    }
+
+    const link = document.createElement('a');
+    link.download = 'chart.png';
+    link.href = this.canvas.toDataURL();
+    link.setAttribute('type', 'hidden');
+    document.body.appendChild(link);
+    return link.click();
+  }
+
+
+  canvasAction(node) {
+    this.canvas = node;
+  }
+
+
+  render() {
+    const { hasNull } = this;
+    const { width, mobile } = this.state;
+    const { year, location, dataset } = this.props;
+    const { files, items } = this.values;
+    const { downloadAction, canvasAction } = this.events;
+
+    return (
+      <Markup
+        national={location === 'National'}
+        {...{
+          hasNull,
+          width,
+          mobile,
+          items,
+          files,
+          year,
+          location,
+          downloadAction,
+          canvasAction,
+          dataset,
+        }}
+      />
     );
   }
 }
 
 
-export default scripts();
+const query = {
+  values: 'json',
+  year: 'string',
+  files: 'json',
+  dept: 'string',
+  location: 'string',
+  dataset: 'string',
+};
+
+
+export default preactConnect(ProgrammesChart, 'ProgrammesChart', query);

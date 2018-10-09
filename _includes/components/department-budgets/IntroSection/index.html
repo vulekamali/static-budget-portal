@@ -10,7 +10,7 @@
   <div class="IntroSection-textWrap">
     <div class="js-initIntroSection">
       <div class="IntroSection-text js-content">
-        {{ include.description | markdownify }}
+        {{ include.description | strip_html | markdownify  }}
       </div>
     </div>
   </div>
