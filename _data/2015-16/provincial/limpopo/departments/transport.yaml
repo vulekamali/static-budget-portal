@@ -18,52 +18,147 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Transport budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 319531000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 154876000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 13437000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 4805000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 2000000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 1054000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 36729000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 24564000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 49000000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 670502000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 42300000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 209000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Operations
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 392501000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 38561000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 40304000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 17000000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 30000000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1525000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Regulations
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 3439111000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 3402137000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 2845278000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1792858000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1838898000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1818940000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1912726000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 4756805842
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 4458569746
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 3523814404
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 2102148632
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 2050199036
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1907846141
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1912726000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 3439111000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 3402137000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 2845278000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1792858000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1838898000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1818940000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1912726000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 4756805842
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 4458569746
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 3523814404
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2102148632
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 2050199036
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1907846141
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1912726000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -101,16 +196,18 @@ intro: "## Vision\r\n\r\nTo be a pioneer and a leading department at the epi-cen
 is_vote_primary: true
 name: Transport
 programmes:
-- name: Administration
-  total_budget: 495703000
-- name: Transport Infrastructure
-  total_budget: 0
-- name: Transport Operations
-  total_budget: 823304000
-- name: Transport Regulations
-  total_budget: 519891000
-- name: Community Based Programmes
-  total_budget: 0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 495703000
+  - name: Transport Infrastructure
+    total_budget: 0
+  - name: Transport Operations
+    total_budget: 823304000
+  - name: Transport Regulations
+    total_budget: 519891000
+  - name: Community Based Programmes
+    total_budget: 0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: transport

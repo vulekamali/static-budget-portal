@@ -18,52 +18,168 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Police, Roads And Transport budget data for the
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 172145000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 89123000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 17725000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1538000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 17676000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 6627000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 292000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Provincial Secretariat For Police Services
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 1194993000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 179914000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 325563000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 950000.0
+        type: economic_classification_2
+      - name: Land And Sub-Soil Assets
+        total_budget: 600000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 2160000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Transport Infrastructure
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 62814000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 23456000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Public Corporations And Private Enterprises
+        total_budget: 263954000.0
+        type: economic_classification_2
+      - name: Departmental Agencies And Accounts
+        total_budget: 5000000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Transport Operations
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 362110000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 48031000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1938000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Transport Regulations
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 2401921800.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2420214400.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2605121000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 2700970000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2776609000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2793979000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2932535000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 2816283624
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2698312375
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2732454093
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 2700970000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2632066080
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2515435099
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2501571367
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 2401921800.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2420214400.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2605121000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2700970000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2776609000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2793979000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2932535000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 2816283624
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2698312375
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2732454093
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2700970000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2632066080
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2515435099
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2501571367
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,18 +209,20 @@ intro: ''
 is_vote_primary: true
 name: Police, Roads And Transport
 programmes:
-- name: Administration
-  total_budget: 280531000.0
-- name: Provincial Secretariat For Police Services
-  total_budget: 24595000.0
-- name: Transport Operations
-  total_budget: 355224000.0
-- name: Transport Regulations
-  total_budget: 412079000.0
-- name: Transport Infrastructure
-  total_budget: 1704180000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 280531000.0
+  - name: Provincial Secretariat For Police Services
+    total_budget: 24595000.0
+  - name: Transport Operations
+    total_budget: 355224000.0
+  - name: Transport Regulations
+    total_budget: 412079000.0
+  - name: Transport Infrastructure
+    total_budget: 1704180000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: police-roads-and-transport

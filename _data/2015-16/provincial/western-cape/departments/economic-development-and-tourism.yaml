@@ -19,52 +19,228 @@ contributed_datasets:
 description: 'Western Cape department: Economic Development and Tourism budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 23482000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 15585000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 902000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 8254000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 2990000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 60000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 35035000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Business Regulation and Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 8694000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 6603000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 169000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 7000000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Economic Planning
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 38242000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 18753000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 478000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1780000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Integrated Economic Development Services
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 23059000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 10355000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 76000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 10800000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 7000000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Skills Development and Innovation
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 12118000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1958000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 94000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 1000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 28300000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Tourism Arts and Entertainment
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 51374000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 24231000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 344000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 126444000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 54658000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Trade and Sector Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 256089000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 314344000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 367379000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 510296000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 518839000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 454376000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 458110000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 354209460
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 411954206
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 454990834
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 598328500
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 578456889
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 476584988
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 458110000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 256089000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 314344000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 367379000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 510296000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 518839000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 454376000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 458110000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 354209460
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 411954206
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 454990834
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 598328500
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 578456889
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 476584988
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 458110000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -120,20 +296,22 @@ intro: "## Vision\r\n\r\nThe Department\u2019s vision is a Western Cape that has
 is_vote_primary: true
 name: Economic Development and Tourism
 programmes:
-- name: Administration
-  total_budget: 39969000
-- name: Integrated Economic Development Services
-  total_budget: 59253000
-- name: Trade and Sector Development
-  total_budget: 257051000
-- name: Business Regulation and Governance
-  total_budget: 46339000
-- name: Economic Planning
-  total_budget: 22466000
-- name: Tourism Arts and Entertainment
-  total_budget: 42471000
-- name: Skills Development and Innovation
-  total_budget: 51290000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 39969000
+  - name: Integrated Economic Development Services
+    total_budget: 59253000
+  - name: Trade and Sector Development
+    total_budget: 257051000
+  - name: Business Regulation and Governance
+    total_budget: 46339000
+  - name: Economic Planning
+    total_budget: 22466000
+  - name: Tourism Arts and Entertainment
+    total_budget: 42471000
+  - name: Skills Development and Innovation
+    total_budget: 51290000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: economic-development-and-tourism

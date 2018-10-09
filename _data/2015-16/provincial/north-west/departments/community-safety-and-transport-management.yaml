@@ -19,52 +19,171 @@ contributed_datasets:
 description: 'North West department: Community Safety and Transport Management budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 108398000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 91490000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 8436000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 633000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 28023000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 8980000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 5000000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 1096000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 881000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 202000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Civillian Oversight
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 295800000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 63217000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 3037000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 613837000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 176000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 162000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Operations
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 291212000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 225536000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 57500000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 25029000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 3012000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 85000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Regulations
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1220706000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1333344000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1388534000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1585927000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1831742000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1917999000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 2038063000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1688419313
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1747374435
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1719668907
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1859519423
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 2042220766
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 2011746946
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 2038063000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1220706000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1333344000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1388534000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1585927000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1831742000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1917999000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 2038063000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 1688419313
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1747374435
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1719668907
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1859519423
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 2042220766
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2011746946
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 2038063000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -97,16 +216,18 @@ intro: "## Vision\r\n\r\nSafe communities and effective transport services\r\n \
 is_vote_primary: true
 name: Community Safety and Transport Management
 programmes:
-- name: Administration
-  total_budget: 208957000
-- name: Civillian Oversight
-  total_budget: 44182000
-- name: Transport Regulations
-  total_budget: 602374000
-- name: Crime Prevention and Community Safety
-  total_budget: 0
-- name: Transport Operations
-  total_budget: 976229000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 208957000
+  - name: Civillian Oversight
+    total_budget: 44182000
+  - name: Transport Regulations
+    total_budget: 602374000
+  - name: Crime Prevention and Community Safety
+    total_budget: 0
+  - name: Transport Operations
+    total_budget: 976229000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: community-safety-and-transport-management

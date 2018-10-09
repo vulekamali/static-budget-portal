@@ -19,52 +19,147 @@ contributed_datasets:
 description: 'Eastern Cape department: Economic Development, Environmental Affairs
   And Tourism budget data for the 2018-19 financial year from National Treasury in
   partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 123132000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 100883000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 9669000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1000000.0
+        type: economic_classification_2
+      - name: Departmental Agencies And Accounts
+        total_budget: 3000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 59930190.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 28950998.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 34524000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 783000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 443783000.0
+        type: economic_classification_2
+      - name: Public Corporations And Private Enterprises
+        total_budget: 22801000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 770000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Economic Development  And Tourism
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 82789000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 19427000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 1216000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 201871000.0
+        type: economic_classification_2
+      - name: Provinces And Municipalities
+        total_budget: 12680000.0
+        type: economic_classification_2
+      - name: Non-Profit Institutions
+        total_budget: 1794000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Environmental  Affairs
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1134358000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1246351000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1039523800.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1118666000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1146006188.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1140580000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1199467000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 1330049071
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1389564630
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1090333639
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1118666000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1086348137
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1026870626
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1023194029
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1134358000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1246351000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1039523800.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1118666000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1146006188.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1140580000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1199467000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 1330049071
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1389564630
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1090333639
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1118666000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1086348137
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1026870626
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1023194029
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -94,14 +189,16 @@ intro: ''
 is_vote_primary: true
 name: Economic Development, Environmental Affairs And Tourism
 programmes:
-- name: Administration
-  total_budget: 234687000.0
-- name: Economic Development  And Tourism
-  total_budget: 591542188.0
-- name: Environmental  Affairs
-  total_budget: 319777000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 234687000.0
+  - name: Economic Development  And Tourism
+    total_budget: 591542188.0
+  - name: Environmental  Affairs
+    total_budget: 319777000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: economic-development-environmental-affairs-and-tourism

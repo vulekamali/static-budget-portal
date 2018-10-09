@@ -30,28 +30,56 @@ layout: page-shell
 
     <div class="u-marginTop20">
       <div
+        data-component="ProgrammesChart"
         id="programmes-chart"
-        class="js-initProgrammesChart"
-        data-values="{ &quot;data&quot;: {{ page_data.programmes | jsonify | escape }} }"
+        data-values="{{ page_data.programmes.programme_budgets | jsonify | escape }}"
         data-year="{{ page.financial_year }}"
         data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
         data-dept="{{ page_data.name }}"
-        data-dept-location="{{ department_location }}"
+        data-location="{{ department_location }}"
+        data-dataset="{{ page_data.programmes.dataset_detail_page }}"
       >
       </div>
     </div>
 
     <div class="u-marginTop20">
+      {% if page_data.economic_classification_by_programme.programmes %}
+        {% for item in page_data.treasury_datasets %}
+          {% assign modified_formats = item[1].formats | sort: 'format' %}
+          {% assign pdf_link = modified_formats[0].url %}
+          {% assign excel_link = modified_formats[1].url %}
+        {% endfor %}
+
+        {% assign pdf_text = "Download " | append: short_estimate | append: " as PDF" %}
+        {% assign excel_text = "Download " | append: short_estimate | append: " as Excel" %}
+
+        {%
+          include components/department-budgets/SmallMultiplesSection/index.html
+          title="Economic classification of expenditure for each Programme"
+          description="Each chart shows the economic classification of spending under that Programme. More detail is available in the dataset."
+          charts_list=page_data.economic_classification_by_programme.programmes
+
+          detail_link=page_data.economic_classification_by_programme.dataset_detail_page
+          pdf_text=pdf_text
+          pdf_link=pdf_link
+          excel_text=excel_text
+          excel_link=excel_link
+        %}
+      {% endif %}
+    </div>
+
+    <div class="u-marginTop20">
       <div
         id="line-chart"
-        class="js-initExpenditureChart"
-        data-adjusted="{ &quot;data&quot;:  {{ page_data.expenditure_over_time.real | jsonify | escape }} }"
-        data-not-adjusted="{ &quot;data&quot;: {{ page_data.expenditure_over_time.nominal | jsonify | escape }} }"
+        data-component="ExpenditureChart"
+        data-adjusted="{{ page_data.expenditure_over_time.expenditure.real | jsonify | escape }}"
+        data-notAdjusted="{{ page_data.expenditure_over_time.expenditure.nominal | jsonify | escape }}"
         data-year="{{ page.financial_year }}"
         data-location="{{ department_location }}"
         data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
         data-department="{{ page_data.name }}"
         data-cpi="{{ site.data.global_values.cpi_dataset_url }}"
+        data-dataset="{{ page_data.expenditure_over_time.dataset_detail_page }}"
       >
       </div>
     </div>

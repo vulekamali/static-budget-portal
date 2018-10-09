@@ -18,52 +18,240 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Statistics South Africa budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 222697000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 218841000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 242221000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 1772000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 46000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Higher education institutions
+        total_budget: 7500000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 2070000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 130000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 208443000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 28381000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 96000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 1000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Economic Statistics
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 62860000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 4495000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 20000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 18000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Methodology, Standards and Research
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 176199000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 23456000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2098000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 316000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 200000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Population and Social Statistics
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 490560000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 107178000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 10111000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 162000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 9000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Statistical Collection and Outreach
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 133650000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 117057000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 14157000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 2260000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Statistical Support and Informatics
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 152124000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 40984000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 119000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1468000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Survey Operations
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 2156435000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2273540000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2461205000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 2177562000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2271699000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2439368000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 3304131000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 2528447253
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2534784157
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2581503767
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 2177562000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2153440359
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2196176809
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2818557836
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 2156435000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2273540000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2461205000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2177562000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2271699000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2439368000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 3304131000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 2528447253
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2534784157
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2581503767
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2177562000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2153440359
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2196176809
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2818557836
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -103,20 +291,22 @@ intro: "## Vote purpose\n\nLead and partner in the production of statistics in l
 is_vote_primary: true
 name: Statistics South Africa
 programmes:
-- name: Administration
-  total_budget: 695277000.0
-- name: Economic Statistics
-  total_budget: 236921000.0
-- name: Population and Social Statistics
-  total_budget: 202269000.0
-- name: Methodology, Standards and Research
-  total_budget: 67393000.0
-- name: Statistical Support and Informatics
-  total_budget: 267124000.0
-- name: Statistical Collection and Outreach
-  total_budget: 608020000.0
-- name: Survey Operations
-  total_budget: 194695000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 695277000.0
+  - name: Economic Statistics
+    total_budget: 236921000.0
+  - name: Population and Social Statistics
+    total_budget: 202269000.0
+  - name: Methodology, Standards and Research
+    total_budget: 67393000.0
+  - name: Statistical Support and Informatics
+    total_budget: 267124000.0
+  - name: Statistical Collection and Outreach
+    total_budget: 608020000.0
+  - name: Survey Operations
+    total_budget: 194695000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: statistics-south-africa

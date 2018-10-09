@@ -2,14 +2,23 @@
   background: #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
 
   @media screen and (min-width: 750px) {
     height: 200px;
+    padding: 2rem;
     overflow: hidden;
+  }
+
+  &.is-fullHeight {
+    height: 100%;
+  }
+
+  &.is-topAlign {
+    justify-content: start;
   }
 }
 
@@ -19,12 +28,15 @@
   font-weight: 900;
   line-height: normal;
   font-size: 18px;
-  text-decoration-line: underline;
   margin-bottom: 1rem;
   display: inline-block;
 
-  &:hover {
-    background: darken(white, 15%);
+  &.is-link {
+    text-decoration-line: underline;
+
+    &:hover {
+      background: darken(white, 15%);
+    }
   }
 }
 

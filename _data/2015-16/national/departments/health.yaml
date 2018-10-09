@@ -18,52 +18,168 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Health budget data for the 2015-16 financial year
   from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 7634000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 447475000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 1969000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1802000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 13900399000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 539943000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 3597000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1397643000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 195679000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Health Regulation and Compliance Management
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 5275762000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 650032000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 12772757000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 460514000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Hospitals, Tertiary Health Services and Human Resource Development
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 2588000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 488157000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 97062000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: National Health Insurance, Health Planning and Systems Enablement
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 2325000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 219779000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 2901000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Primary Health Care Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 26212742000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 28282499000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 30228520000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 34325087000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 36468018000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 38923547000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 42337239000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 36256150001
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 37064790275
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 37437359086
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 40246597715
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 40658424424
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 40826051965
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 42337239000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 26212742000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 28282499000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 30228520000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 34325087000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 36468018000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 38923547000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 42337239000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 36256150001
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 37064790275
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 37437359086
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 40246597715
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 40658424424
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 40826051965
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 42337239000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -121,18 +237,20 @@ intro: '## Vote purpose
 is_vote_primary: true
 name: Health
 programmes:
-- name: Administration
-  total_budget: 457078000.0
-- name: National Health Insurance, Health Planning and Systems Enablement
-  total_budget: 587807000.0
-- name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
-  total_budget: 14442144000.0
-- name: Primary Health Care Services
-  total_budget: 225005000.0
-- name: Hospitals, Tertiary Health Services and Human Resource Development
-  total_budget: 19159065000.0
-- name: Health Regulation and Compliance Management
-  total_budget: 1596919000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 457078000.0
+  - name: National Health Insurance, Health Planning and Systems Enablement
+    total_budget: 587807000.0
+  - name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+    total_budget: 14442144000.0
+  - name: Primary Health Care Services
+    total_budget: 225005000.0
+  - name: Hospitals, Tertiary Health Services and Human Resource Development
+    total_budget: 19159065000.0
+  - name: Health Regulation and Compliance Management
+    total_budget: 1596919000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: health

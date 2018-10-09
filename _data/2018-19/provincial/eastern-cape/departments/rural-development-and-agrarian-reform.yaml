@@ -19,52 +19,261 @@ contributed_datasets:
 description: 'Eastern Cape department: Rural Development And Agrarian Reform budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 314769000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 119274000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 17055000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 22928000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 28648000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 3313100.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 540916.6
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 53313000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Agricultural Economics Services
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 380018102.2
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 197123463.3
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 119697420.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 22011226.9
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Public Corporations And Private Enterprises
+        total_budget: 54881000.0
+        type: economic_classification_2
+      - name: Departmental Agencies And Accounts
+        total_budget: 47529000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1900000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Farmer Support And Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 109486000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 20580958.835
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 3454000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 1645000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Research And Technology Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 16553852.467
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 10690960.812
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 1321248.5999999999
+        type: economic_classification_2
+      - name: Buildings And Other Fixed Structures
+        total_budget: 620000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 162975373.6
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Rural Development Coordination
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 57449525.938999996
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 28331830.700000003
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 15878340.3
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 4988346.6
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Higher Education Institutions
+        total_budget: 53318000.0
+        type: economic_classification_2
+      - name: Non-Profit Institutions
+        total_budget: 68.7
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Structured Agricultural Education And Training
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 94830502.34
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 26854080.898000002
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 6273000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Sustainable Resource Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 248038718.82000002
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 72272790.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 9190194.8
+        type: economic_classification_2
+      - name: Buildings And Other Fixed Structures
+        total_budget: 482000.0
+        type: economic_classification_2
+      - name: Biological Assets
+        total_budget: 300.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Veterianary Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1852768000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1968065000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2184529000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 2212616090.1
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2328236322.4110003
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2387585000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2532830000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 2172393863
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2194208143
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2291304399
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 2212616090
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2207034498
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2149556282
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2160606781
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1852768000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1968065000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2184529000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2212616090.1
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2328236322.4110003
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2387585000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2532830000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 2172393863
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2194208143
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2291304399
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2212616090
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2207034498
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2149556282
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2160606781
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -94,24 +303,26 @@ intro: ''
 is_vote_primary: true
 name: Rural Development And Agrarian Reform
 programmes:
-- name: Administration
-  total_budget: 474026000.0
-- name: Direct Charges
-  total_budget: 0.0
-- name: Sustainable Resource Management
-  total_budget: 127957583.238
-- name: Farmer Support And Development
-  total_budget: 823160212.4
-- name: Veterianary Services
-  total_budget: 329984003.62
-- name: Research And Technology Development
-  total_budget: 135165958.835
-- name: Agricultural Economics Services
-  total_budget: 85815016.6
-- name: Structured Agricultural Education And Training
-  total_budget: 159966112.239
-- name: Rural Development Coordination
-  total_budget: 192161435.479
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 474026000.0
+  - name: Direct Charges
+    total_budget: 0.0
+  - name: Sustainable Resource Management
+    total_budget: 127957583.238
+  - name: Farmer Support And Development
+    total_budget: 823160212.4
+  - name: Veterianary Services
+    total_budget: 329984003.62
+  - name: Research And Technology Development
+    total_budget: 135165958.835
+  - name: Agricultural Economics Services
+    total_budget: 85815016.6
+  - name: Structured Agricultural Education And Training
+    total_budget: 159966112.239
+  - name: Rural Development Coordination
+    total_budget: 192161435.479
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: rural-development-and-agrarian-reform

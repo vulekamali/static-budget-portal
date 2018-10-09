@@ -19,52 +19,213 @@ contributed_datasets:
 description: 'North West department: Culture, Arts and Traditional Affairs budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 62279000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 30535000
+        type: economic_classification_2
+      - name: Interest and rent on land
+        total_budget: 32000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 607000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 772000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 200000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 40170000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 29063000
+        type: economic_classification_2
+      - name: Interest and rent on land
+        total_budget: 32000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 3000000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 976000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 82691000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 6600000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 200000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Cultural Affairs
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 61456000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 56602000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 36441000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 8882000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 24410000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 1050000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 500000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Library and Archive Services
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 29576000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 18275000
+        type: economic_classification_2
+      - name: Interest and rent on land
+        total_budget: 52000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 504000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 2625000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Recreation
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 71514000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 17677000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 23468000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 120000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 18180000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 150000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Traditional Affairs
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 392614000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 401064000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 450970000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 612082000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 628639000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 665777000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 718753000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 543043992
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 525602530
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 558516454
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 717673869
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 700873605
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 698318845
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 718753000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 392614000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 401064000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 450970000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 612082000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 628639000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 665777000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 718753000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 543043992
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 525602530
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 558516454
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 717673869
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 700873605
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 698318845
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 718753000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -108,16 +269,18 @@ intro: "## Vision\r\n\r\nA rooted approach for supporting culture, the arts and 
 is_vote_primary: true
 name: Culture, Arts and Traditional Affairs
 programmes:
-- name: Administration
-  total_budget: 94425000
-- name: Cultural Affairs
-  total_budget: 162732000
-- name: Library and Archive Services
-  total_budget: 189341000
-- name: Recreation
-  total_budget: 51032000
-- name: Traditional Affairs
-  total_budget: 131109000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 94425000
+  - name: Cultural Affairs
+    total_budget: 162732000
+  - name: Library and Archive Services
+    total_budget: 189341000
+  - name: Recreation
+    total_budget: 51032000
+  - name: Traditional Affairs
+    total_budget: 131109000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: culture-arts-and-traditional-affairs

@@ -18,52 +18,201 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Social Development budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 193856000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 124100000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2252000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 501000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 1378000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 425000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Households
+        total_budget: 140498691000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Social Assistance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 77243000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 48131000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 734000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 194153000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 30281000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 24869000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 1824000.0
+        type: economic_classification_2
+      - name: Higher education institutions
+        total_budget: 469000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Social Policy and Integrated Service Delivery
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 50683000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 50004000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2207000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 6908932000.0
+        type: economic_classification_2
+      - name: Higher education institutions
+        total_budget: 2000000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 1454000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 220000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Social Security Policy and Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 137075000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 121215000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 4647000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 290780000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 85500000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 82746000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 692000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 667000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Welfare Services Policy Development and Implementation Support
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 111144766000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 117110759000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 127860470000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 137893640000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 148937729000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 161520096000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 174808504000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 145657476802
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 145039106698
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 149918014768
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 153738493290
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 156217506687
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 161520096000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 165708435734
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 111144766000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 117110759000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 127860470000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 137893640000.0
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 148937729000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 161520096000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 174808504000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 145657476802
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 145039106698
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 149918014768
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 153738493290
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 156217506687
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 161520096000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 165708435734
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -121,16 +270,18 @@ intro: "## Vote purpose\n\n_Ensure protection against vulnerability by creating 
 is_vote_primary: true
 name: Social Development
 programmes:
-- name: Administration
-  total_budget: 322512000.0
-- name: Social Assistance
-  total_budget: 140498691000.0
-- name: Social Security Policy and Administration
-  total_budget: 7015500000.0
-- name: Welfare Services Policy Development and Implementation Support
-  total_budget: 723322000.0
-- name: Social Policy and Integrated Service Delivery
-  total_budget: 377704000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 322512000.0
+  - name: Social Assistance
+    total_budget: 140498691000.0
+  - name: Social Security Policy and Administration
+    total_budget: 7015500000.0
+  - name: Welfare Services Policy Development and Implementation Support
+    total_budget: 723322000.0
+  - name: Social Policy and Integrated Service Delivery
+    total_budget: 377704000.0
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: social-development

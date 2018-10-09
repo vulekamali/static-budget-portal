@@ -18,52 +18,138 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Provincial Treasury budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 29717000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 15069000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 4764000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 25000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 2480000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 3000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 32725000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 27230000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 123000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Asset Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 26803000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 6672000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Financial Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 63433000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 17666000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 24831000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 10488000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Sustainable Resource Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 142619000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 162283000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 199967000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 239168000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 262029000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 278733000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 325607000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 197263447
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 212675172
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 247654744
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 280427498
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 292137792
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 292356910
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 325607000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 142619000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 162283000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 199967000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 239168000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 262029000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 278733000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 325607000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 197263447
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 212675172
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 247654744
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 280427498
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 292137792
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 292356910
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 325607000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -106,14 +192,16 @@ intro: "## Vision\n\nGood governance through financial accountability.\r\n\r\n\n
 is_vote_primary: true
 name: Provincial Treasury
 programmes:
-- name: Administration
-  total_budget: 52058000
-- name: Sustainable Resource Management
-  total_budget: 116418000
-- name: Asset Management
-  total_budget: 60078000
-- name: Financial Governance
-  total_budget: 33475000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 52058000
+  - name: Sustainable Resource Management
+    total_budget: 116418000
+  - name: Asset Management
+    total_budget: 60078000
+  - name: Financial Governance
+    total_budget: 33475000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: provincial-treasury

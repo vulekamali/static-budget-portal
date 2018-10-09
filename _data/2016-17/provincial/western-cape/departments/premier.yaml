@@ -18,52 +18,183 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Western Cape department: Premier budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 620650000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 190398000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 32513000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 17500000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 7000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Centre for E-Innovation (Corporate Services Centre)
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 100502000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 17068000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 608000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 3000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Corporate Assurance (Corporate Services Centre)
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 76494000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 18792000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1271000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 10000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Executive Support (Administration)
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 152150000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 47852000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1765000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 15000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: People Management (Corporate Services Centre)
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 37621000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 24964000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 224000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 700000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 3000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Provincial Strategic Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 747165000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 894537000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1042874000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1272608000
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1341110000
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1420535000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1522056000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 979174931
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1107864456
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1222782926
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1418838725
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 1406660768
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 1420535000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 1442821791
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 747165000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 894537000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1042874000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1272608000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1341110000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1420535000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 1522056000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 979174931
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1107864456
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1222782926
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1418838725
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1406660768
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1420535000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 1442821791
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -100,16 +231,18 @@ intro: "## Vision\r\n\r\nTo be a leading department enabling the Western Cape Go
 is_vote_primary: true
 name: Premier
 programmes:
-- name: Executive Support (Administration)
-  total_budget: 96567000
-- name: Provincial Strategic Management
-  total_budget: 63512000
-- name: People Management (Corporate Services Centre)
-  total_budget: 201782000
-- name: Centre for E-Innovation (Corporate Services Centre)
-  total_budget: 861068000
-- name: Corporate Assurance (Corporate Services Centre)
-  total_budget: 118181000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  programme_budgets:
+  - name: Executive Support (Administration)
+    total_budget: 96567000
+  - name: Provincial Strategic Management
+    total_budget: 63512000
+  - name: People Management (Corporate Services Centre)
+    total_budget: 201782000
+  - name: Centre for E-Innovation (Corporate Services Centre)
+    total_budget: 861068000
+  - name: Corporate Assurance (Corporate Services Centre)
+    total_budget: 118181000
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: premier

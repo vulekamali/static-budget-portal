@@ -18,52 +18,120 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'North West department: Tourism budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 56270000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 19194000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 1878000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 233000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 13270000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 5897000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 51842000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 264000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Public Corporations And Private Enterprises
+        total_budget: 94404000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Tourism Growth, Development And Transformation
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 10294000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 8005000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: Tourism Planning
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 138305000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 118073000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 209607000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 257916000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 261551000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 277350000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 304792000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 162164358
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 131640336
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 219852170
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 257916000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 247935346
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 249699773
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 259999945
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 138305000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 118073000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 209607000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 257916000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 261551000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 277350000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 304792000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 162164358
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 131640336
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 219852170
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 257916000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 247935346
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 249699773
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 259999945
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,14 +161,16 @@ intro: ''
 is_vote_primary: true
 name: Tourism
 programmes:
-- name: Administration
-  total_budget: 77575000.0
-- name: Tourism Planning
-  total_budget: 18299000.0
-- name: Tourism Growth, Development And Transformation
-  total_budget: 165677000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 77575000.0
+  - name: Tourism Planning
+    total_budget: 18299000.0
+  - name: Tourism Growth, Development And Transformation
+    total_budget: 165677000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: tourism

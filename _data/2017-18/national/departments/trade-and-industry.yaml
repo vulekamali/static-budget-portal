@@ -18,52 +18,276 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Trade and Industry budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 437326000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 278580000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 12787000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 2588000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 539000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 53774000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 18104000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 221578000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 5173000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Consumer and Corporate Regulation
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 126578000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 38833000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Software and other intangible assets
+        total_budget: 5500000.0
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 2100000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 5488708000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 84000000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 800000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Incentive Development and Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 106509000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 15626000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 819000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 1116583000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 411861000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 159314000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 8565000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Industrial Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 75254000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 18709000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 622000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Foreign governments and international organisations
+        total_budget: 19672000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 4373000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 1188000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: International Trade and Economic Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 33224000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 17238000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 397000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Investment South Africa
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 71025000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 15100000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 1098000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 28949000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 1738000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 1500000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Special Economic Zones and Economic Transformation
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 157471000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 48344000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2093000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 177644000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 2911000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Trade and Investment South Africa
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 8327918000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 8659763000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 9471659000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 10389517000.0
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 9274795000.0
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 9965857000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 9116002000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 10313943805
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 10153681410
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 10560012656
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 10897335767
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 9274795000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 9447060849
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 8207188169
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 8327918000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 8659763000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 9471659000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 10389517000.0
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 9274795000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 9965857000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 9116002000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 10313943805
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 10153681410
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 10560012656
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 10897335767
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 9274795000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 9447060849
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 8207188169
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -105,22 +329,24 @@ intro: "## Vote purpose\n\n_Lead and facilitate access to sustainable economic a
 is_vote_primary: true
 name: Trade and Industry
 programmes:
-- name: Administration
-  total_budget: 731820000.0
-- name: International Trade and Economic Development
-  total_budget: 119818000.0
-- name: Special Economic Zones and Economic Transformation
-  total_budget: 119410000.0
-- name: Industrial Development
-  total_budget: 1819277000.0
-- name: Consumer and Corporate Regulation
-  total_budget: 298629000.0
-- name: Incentive Development and Administration
-  total_budget: 5746519000.0
-- name: Trade and Investment South Africa
-  total_budget: 388463000.0
-- name: Investment South Africa
-  total_budget: 50859000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 731820000.0
+  - name: International Trade and Economic Development
+    total_budget: 119818000.0
+  - name: Special Economic Zones and Economic Transformation
+    total_budget: 119410000.0
+  - name: Industrial Development
+    total_budget: 1819277000.0
+  - name: Consumer and Corporate Regulation
+    total_budget: 298629000.0
+  - name: Incentive Development and Administration
+    total_budget: 5746519000.0
+  - name: Trade and Investment South Africa
+    total_budget: 388463000.0
+  - name: Investment South Africa
+    total_budget: 50859000.0
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: trade-and-industry

@@ -19,52 +19,156 @@ contributed_datasets:
 description: 'Mpumalanga department: Community Safety, Security And Liaison budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 86709000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 45815000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 1708000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces And Municipalities
+        total_budget: 212000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 167000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 44356000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 15133000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 573000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 160000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Civilian Oversight
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 446026000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 7020000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 233000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 50000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Security  Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 409883000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 155606000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 5754000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 3417000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Transport Regulation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1003379000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1245917000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1175237000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1178722000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1222822000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1278410000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1347192000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 1176474540
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1389080760
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1232680229
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 1178722000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 1159165121
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 1150959754
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 1149209449
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1003379000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1245917000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1175237000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1178722000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1222822000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1278410000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1347192000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 1176474540
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1389080760
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1232680229
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1178722000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1159165121
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1150959754
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 1149209449
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -94,16 +198,18 @@ intro: ''
 is_vote_primary: true
 name: Community Safety, Security And Liaison
 programmes:
-- name: Administration
-  total_budget: 134611000.0
-- name: Civilian Oversight
-  total_budget: 60222000.0
-- name: Transport Regulation
-  total_budget: 574660000.0
-- name: Security  Management
-  total_budget: 453329000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 134611000.0
+  - name: Civilian Oversight
+    total_budget: 60222000.0
+  - name: Transport Regulation
+    total_budget: 574660000.0
+  - name: Security  Management
+    total_budget: 453329000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: community-safety-security-and-liaison

@@ -3,6 +3,10 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!--
+    'unsafe-inline' is added to style-src since ChartJS uses inline styling when changing the viewport.
+    If any dynamic data is piped into Jekyll it should be filtered through strip_html.
+   -->
   <meta
     http-equiv="Content-Security-Policy"
     content="
@@ -15,6 +19,7 @@
         https://fonts.gstatic.com/;
       style-src
         'self'
+        'unsafe-inline'
         https://fonts.googleapis.com;
       script-src
         'self'

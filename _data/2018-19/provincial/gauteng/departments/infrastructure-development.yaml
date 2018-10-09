@@ -18,52 +18,138 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Infrastructure Development budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 195707579.32
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 92080660.32
+        type: economic_classification_2
+      - name: Interest And Rent On Land
+        total_budget: 500044.4
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 34000000.0
+        type: economic_classification_2
+      - name: Software And Other Intangible Assets
+        total_budget: 221.6
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 4270554.4
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 186297000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 131350000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 116000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Expanded Public Works Programme
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 706421048.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 679170822.07
+        type: economic_classification_2
+      - name: Interest And Rent On Land
+        total_budget: 300000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 103693000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces And Municipalities
+        total_budget: 901394000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1659000.0
+        type: economic_classification_2
+      - name: Departmental Agencies And Accounts
+        total_budget: 4000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Public Works Infrastructure
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1830536000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2416103000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2563607000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 2749244894.75
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 3036963930.11
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 3122694231.5
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 3261766000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 2146326562
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 2693728549
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 2688910972
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 2749244894
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 2878867622
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 2811379281
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 2782418772
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1830536000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2416103000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2563607000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2749244894.75
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 3036963930.11
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 3122694231.5
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 3261766000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 2146326562
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 2693728549
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2688910972
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2749244894
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2878867622
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2811379281
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 2782418772
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,14 +179,16 @@ intro: ''
 is_vote_primary: true
 name: Infrastructure Development
 programmes:
-- name: Administration
-  total_budget: 326559060.04
-- name: Public Works Infrastructure
-  total_budget: 2392641870.07
-- name: Expanded Public Works Programme
-  total_budget: 317763000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 326559060.04
+  - name: Public Works Infrastructure
+    total_budget: 2392641870.07
+  - name: Expanded Public Works Programme
+    total_budget: 317763000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: infrastructure-development

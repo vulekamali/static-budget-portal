@@ -227,29 +227,43 @@ for dataset in listing['datasets']:
         dataset_file.write(r.text)
 
 
-# Categorised Datasets
-dataset_categories = [
-    'socio-economic-data',
-    'performance-and-expenditure-reviews',
-    'estimates-of-national-expenditure',
-    'estimates-of-provincial-expenditure',
-]
+# Category list page
+
+category_list_url_path = "/datasets"
+print category_list_url_path
+category_list_url = portal_url + category_list_url_path[1:] + '.yaml'
+r = session.get(category_list_url)
+r.raise_for_status()
+
+category_list_path = '_data%s/index.yaml' % category_list_url_path
+ensure_file_dirs(category_list_path)
+with open(category_list_path, 'wb') as category_list_file:
+    category_list_file.write(r.text)
+write_basic_page(category_list_url_path, r.text, 'dataset_landing_page')
+
+dataset_categories = [c['slug'] for c in yaml.load(r.text)['categories']]
+dataset_categories.remove('contributed')
+
+# Category detail pages
 
 for category in dataset_categories:
-    listing_url_path = "/datasets/" + category
-    print listing_url_path
-    listing_url = portal_url + listing_url_path[1:] + '.yaml'
-    r = session.get(listing_url)
+    dataset_list_url_path = "/datasets/" + category
+    print dataset_list_url_path
+    dataset_list_url = portal_url + dataset_list_url_path[1:] + '.yaml'
+    r = session.get(dataset_list_url)
     r.raise_for_status()
 
-    listing_path = '_data%s/index.yaml' % listing_url_path
-    ensure_file_dirs(listing_path)
-    with open(listing_path, 'wb') as listing_file:
-        listing_file.write(r.text)
-    write_basic_page(listing_url_path, r.text, 'government_dataset_category')
+    dataset_list_path = '_data%s/index.yaml' % dataset_list_url_path
+    ensure_file_dirs(dataset_list_path)
+    with open(dataset_list_path, 'wb') as dataset_list_file:
+        dataset_list_file.write(r.text)
+    write_basic_page(dataset_list_url_path, r.text, 'government_dataset_category')
 
-    listing = yaml.load(r.text)
-    for dataset in listing['datasets']:
+    dataset_list = yaml.load(r.text)
+
+    # Dataset detail pages
+
+    for dataset in dataset_list['datasets']:
         print dataset['url_path']
         dataset_path = dataset['url_path'] + '.yaml'
         if dataset_path.startswith('/'):

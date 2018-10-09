@@ -34,52 +34,213 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Education budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 1462686000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 301672000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 31161000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 50685000
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 15848000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 342000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 5000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: ADMINISTRATION
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 125376000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 64322000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 77000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: EARLY CHILDHOOD DEVELOPMENT
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 254177000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 141128000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 2803000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 24321000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1547000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: EXAMINATION AND EDUCATION RELATED SERVICES
+    type: programme
+  - items:
+    - items:
+      - name: Non-profit institutions
+        total_budget: 126973000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: INDEPENDENT SCHOOL SUBSIDIES
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 49871000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 25520000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 734632000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 500000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: INFRASTRUCTURE DEVELOPMENT
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 21046662000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1988081000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 8532000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 1674660000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 163200000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: PUBLIC ORDINARY SCHOOL EDUCATION
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 419885000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 11911000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 55495000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1077000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: PUBLIC SPECIAL SCHOOL EDUCATION
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 22647979000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 24419274000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 25118175000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 27591674000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 28783149000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 30440345000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 32194772000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 28049025305
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 28631906954
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 28004412521
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 28940299724
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 28783149000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 28855701168
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 28985135357
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 22647979000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 24419274000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 25118175000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 27591674000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 28783149000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 30440345000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 32194772000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 28049025305
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 28631906954
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 28004412521
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 28940299724
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 28783149000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 28855701168
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 28985135357
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -128,20 +289,22 @@ intro: "## Vision\n\nExcellence in provisioning of innovative quality basic educ
 is_vote_primary: true
 name: Education
 programmes:
-- name: ADMINISTRATION
-  total_budget: 1862399000
-- name: PUBLIC ORDINARY SCHOOL EDUCATION
-  total_budget: 24881135000
-- name: INDEPENDENT SCHOOL SUBSIDIES
-  total_budget: 126973000
-- name: PUBLIC SPECIAL SCHOOL EDUCATION
-  total_budget: 488368000
-- name: EARLY CHILDHOOD DEVELOPMENT
-  total_budget: 189775000
-- name: INFRASTRUCTURE DEVELOPMENT
-  total_budget: 810523000
-- name: EXAMINATION AND EDUCATION RELATED SERVICES
-  total_budget: 423976000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: ADMINISTRATION
+    total_budget: 1862399000
+  - name: PUBLIC ORDINARY SCHOOL EDUCATION
+    total_budget: 24881135000
+  - name: INDEPENDENT SCHOOL SUBSIDIES
+    total_budget: 126973000
+  - name: PUBLIC SPECIAL SCHOOL EDUCATION
+    total_budget: 488368000
+  - name: EARLY CHILDHOOD DEVELOPMENT
+    total_budget: 189775000
+  - name: INFRASTRUCTURE DEVELOPMENT
+    total_budget: 810523000
+  - name: EXAMINATION AND EDUCATION RELATED SERVICES
+    total_budget: 423976000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: education

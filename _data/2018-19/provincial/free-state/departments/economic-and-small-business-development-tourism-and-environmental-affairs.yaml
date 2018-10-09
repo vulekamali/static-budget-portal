@@ -19,52 +19,168 @@ contributed_datasets:
 description: 'Free State department: Economic And Small Business Development, Tourism
   And Environmental Affairs budget data for the 2018-19 financial year from National
   Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 97493000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 60137000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 2794000.0
+        type: economic_classification_2
+      - name: Software And Other Intangible Assets
+        total_budget: 20000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 4000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 88552000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 46607000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 1085000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 112327000.0
+        type: economic_classification_2
+      - name: Public Corporations And Private Enterprises
+        total_budget: 43833000.0
+        type: economic_classification_2
+      - name: Foreign Governments And International Organisations
+        total_budget: 2000000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1179000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Economic And Small Business Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 92344000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 48011000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings And Other Fixed Structures
+        total_budget: 21498000.0
+        type: economic_classification_2
+      - name: Machinery And Equipment
+        total_budget: 1315000.0
+        type: economic_classification_2
+      - name: Software And Other Intangible Assets
+        total_budget: 300000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 202000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 100000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Environmental Affairs
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 9403000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 2419000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 308000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Tourism
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 429772000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 463414000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 463076000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 505148000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 631931000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 632942000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 675859000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 503913094
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 516663206
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 485710226
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 505148000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 599034343
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 569841263
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 576535155
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 429772000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 463414000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 463076000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 505148000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 631931000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 632942000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 675859000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 503913094
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 516663206
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 485710226
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 505148000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 599034343
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 569841263
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 576535155
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -113,16 +229,18 @@ intro: "## Mandate\n\n\nThere are several legislations and policies that the Dep
 is_vote_primary: true
 name: Economic And Small Business Development, Tourism And Environmental Affairs
 programmes:
-- name: Administration
-  total_budget: 160448000.0
-- name: Environmental Affairs
-  total_budget: 163770000.0
-- name: Economic And Small Business Development
-  total_budget: 295583000.0
-- name: Tourism
-  total_budget: 12130000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 160448000.0
+  - name: Environmental Affairs
+    total_budget: 163770000.0
+  - name: Economic And Small Business Development
+    total_budget: 295583000.0
+  - name: Tourism
+    total_budget: 12130000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: economic-and-small-business-development-tourism-and-environmental-affairs

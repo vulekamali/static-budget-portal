@@ -18,52 +18,132 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Home Affairs budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 1804107000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 514227000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 11937000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1709000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 817000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 8000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 1881470000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 510715000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 2114398000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1376000.0
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 1066000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Citizen Affairs
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 912382000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 160820000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 404000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 3000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Immigration Affairs
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 7069457000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 7343378000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 8143524000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 8402339000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 7915439000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 8308510000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 8750844000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 8289027554
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 8187178679
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 8541563131
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 8402339000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 7503382185
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 7480198554
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 7464825072
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 7069457000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 7343378000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 8143524000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 8402339000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 7915439000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 8308510000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 8750844000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 8289027554
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 8187178679
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 8541563131
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 8402339000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 7503382185
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 7480198554
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 7464825072
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -101,12 +181,14 @@ intro: "## Vote purpose\n\nEfficiently determine and safeguard the identity and 
 is_vote_primary: true
 name: Home Affairs
 programmes:
-- name: Administration
-  total_budget: 2332805000.0
-- name: Citizen Affairs
-  total_budget: 4509025000.0
-- name: Immigration Affairs
-  total_budget: 1073609000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 2332805000.0
+  - name: Citizen Affairs
+    total_budget: 4509025000.0
+  - name: Immigration Affairs
+    total_budget: 1073609000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: home-affairs

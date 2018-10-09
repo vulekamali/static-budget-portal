@@ -19,6 +19,9 @@ contributed_datasets:
 description: 'Northern Cape department: Cooperative Governance, Human Settlement and
   Traditional Affairs budget data for the 2017-18 financial year from National Treasury
   in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes: []
 expenditure_over_time: null
 financial_years:
 - closest_match:
@@ -66,14 +69,16 @@ intro: "## Vision\n\nPeople of the Northern Cape living in integrated human sett
 is_vote_primary: true
 name: Cooperative Governance, Human Settlement and Traditional Affairs
 programmes:
-- name: Administration
-  total_budget: null
-- name: Human Settlement
-  total_budget: null
-- name: Co-operative Governance
-  total_budget: null
-- name: Traditional Institutional Management
-  total_budget: null
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: null
+  - name: Human Settlement
+    total_budget: null
+  - name: Co-operative Governance
+    total_budget: null
+  - name: Traditional Institutional Management
+    total_budget: null
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: cooperative-governance-human-settlement-and-traditional-affairs

@@ -30,52 +30,189 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Eastern Cape department: Transport budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 228428000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 70575000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 6335000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 3828000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 44942000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 5289000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 290000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 510000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Community Based Programme
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 9422000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 5438000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 10000000
+        type: economic_classification_2
+      - name: Machinery and equipment
+        total_budget: 219000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Transport Infrastructure
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 514893000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 108971000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 10130000
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 4200000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 481964000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 3339000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 1883000
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 179000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Operations
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 239923000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 57815000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 25508000
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 7100000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 2523000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Transport Regulation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1517152000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1689901000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1711849000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1743698000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1843704000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 1940704000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 2070321000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 1878959479
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1981430250
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1908551300
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1828926463
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1843704000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 1839676083
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 1863921708
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1517152000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1689901000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1711849000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1743698000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1843704000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1940704000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 2070321000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 1878959479
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1981430250
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1908551300
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1828926463
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1843704000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1839676083
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 1863921708
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -117,16 +254,18 @@ intro: "## Vision\n\nAn efficient, safe,sustainable, affordable and accessible t
 is_vote_primary: true
 name: Transport
 programmes:
-- name: Administration
-  total_budget: 309166000
-- name: Transport Infrastructure
-  total_budget: 25079000
-- name: Transport Operations
-  total_budget: 1125559000
-- name: Transport Regulation
-  total_budget: 332869000
-- name: Community Based Programme
-  total_budget: 51031000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 309166000
+  - name: Transport Infrastructure
+    total_budget: 25079000
+  - name: Transport Operations
+    total_budget: 1125559000
+  - name: Transport Regulation
+    total_budget: 332869000
+  - name: Community Based Programme
+    total_budget: 51031000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: transport

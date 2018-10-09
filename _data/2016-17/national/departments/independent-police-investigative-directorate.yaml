@@ -19,52 +19,135 @@ contributed_datasets:
 description: 'National department: Independent Police Investigative Directorate budget
   data for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 44729000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 28590000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 562000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 536000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 7806000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 1034000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 61000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Compliance Monitoring and Stakeholder Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 120728000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 36200000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 205000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 9000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Investigation and Information Management
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 5220000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 431000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: Legal Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 171449000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 193141000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 232404000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 234781000.0
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 246111000.0
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 255482000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 266958000.0
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  real:
-  - amount: 224687402
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 239200892
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 272496623
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 261758825
-    financial_year: 2015-16
-    phase: Adjusted appropriation
-  - amount: 258140412
-    financial_year: 2016-17
-    phase: Main appropriation
-  - amount: 255482000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  - amount: 253060872
-    financial_year: 2018-19
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 171449000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 193141000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 232404000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 234781000.0
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 246111000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 255482000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 266958000.0
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    real:
+    - amount: 224687402
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 239200892
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 272496623
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 261758825
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 258140412
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 255482000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    - amount: 253060872
+      financial_year: 2018-19
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -113,14 +196,16 @@ intro: "## Vote purpose\n\n_Ensure independent oversight of the South African Po
 is_vote_primary: true
 name: Independent Police Investigative Directorate
 programmes:
-- name: Administration
-  total_budget: 74417000.0
-- name: Investigation and Information Management
-  total_budget: 157142000.0
-- name: Legal Services
-  total_budget: 5651000.0
-- name: Compliance Monitoring and Stakeholder Management
-  total_budget: 8901000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programme_budgets:
+  - name: Administration
+    total_budget: 74417000.0
+  - name: Investigation and Information Management
+    total_budget: 157142000.0
+  - name: Legal Services
+    total_budget: 5651000.0
+  - name: Compliance Monitoring and Stakeholder Management
+    total_budget: 8901000.0
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: independent-police-investigative-directorate

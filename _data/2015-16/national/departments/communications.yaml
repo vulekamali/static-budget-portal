@@ -18,52 +18,120 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Communications budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 40000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 42374000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 178000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 7719000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Communications Policy, Research and Development
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 304000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1210156000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 9920000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Entity Oversight
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 150000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 10047000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Industry and Capacity Development
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1018081000.0
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1257918000.0
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1348418000.0
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1295287000.0
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1280888000.0
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1344685000.0
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1418896000.0
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 1408158576
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 1648527128
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 1669986121
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1518740354
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 1428070150
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 1410410507
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 1418896000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1018081000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1257918000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1348418000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1295287000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1280888000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1344685000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1418896000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 1408158576
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1648527128
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1669986121
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1518740354
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1428070150
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1410410507
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1418896000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -115,14 +183,16 @@ intro: "## Vote purpose\n\n_Create an enabling environment for the provision of 
 is_vote_primary: true
 name: Communications
 programmes:
-- name: Administration
-  total_budget: 42414000.0
-- name: Communications Policy, Research and Development
-  total_budget: 7897000.0
-- name: Industry and Capacity Development
-  total_budget: 10197000.0
-- name: Entity Oversight
-  total_budget: 1220380000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 42414000.0
+  - name: Communications Policy, Research and Development
+    total_budget: 7897000.0
+  - name: Industry and Capacity Development
+    total_budget: 10197000.0
+  - name: Entity Oversight
+    total_budget: 1220380000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: communications

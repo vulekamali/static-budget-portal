@@ -18,52 +18,132 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Free State department: Free State Legislature budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 73983000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 46837000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 1942000.0
+        type: economic_classification_2
+      - name: Software And Other Intangible Assets
+        total_budget: 254000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 310000.0
+        type: economic_classification_2
+      - name: Non-Profit Institutions
+        total_budget: 190000.0
+        type: economic_classification_2
+      - name: Higher Education Institutions
+        total_budget: 15000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 25998000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: Direct Charges
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 3609000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental Agencies And Accounts
+        total_budget: 63006000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Facilities For Members And Political Parties
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 32343000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 4498000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 133000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Parliamentary Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 192181000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 211894000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 220842000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 243056000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 253118000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 261142000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 275521000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 225334647
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 236241963
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 231636314
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 243056000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 239941346
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 235107619
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 235030594
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 192181000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 211894000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 220842000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 243056000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 253118000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 261142000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 275521000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 225334647
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 236241963
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 231636314
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 243056000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 239941346
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 235107619
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 235030594
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -120,14 +200,16 @@ intro: "## Mandate\n\nSection 10 (1) of the Constitution provides that: \u201CTh
 is_vote_primary: true
 name: Free State Legislature
 programmes:
-- name: Administration
-  total_budget: 123531000.0
-- name: Facilities For Members And Political Parties
-  total_budget: 66615000.0
-- name: Parliamentary Services
-  total_budget: 36974000.0
-- name: Direct Charges
-  total_budget: 25998000.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 123531000.0
+  - name: Facilities For Members And Political Parties
+    total_budget: 66615000.0
+  - name: Parliamentary Services
+    total_budget: 36974000.0
+  - name: Direct Charges
+    total_budget: 25998000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: free-state-legislature

@@ -18,52 +18,171 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'National department: Arts and Culture budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 185549000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 107118000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 8177000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 64314000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 51801000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 777149000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 140288000.0
+        type: economic_classification_2
+      - name: Public corporations and private enterprises
+        total_budget: 128948000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 14785000.0
+        type: economic_classification_2
+      - name: Higher education institutions
+        total_budget: 7128000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Arts and Culture Promotion and Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 54255000.0
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 50006000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 1423684000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 920940000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 14228000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 5923000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 1944000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Heritage Promotion and Preservation
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 87243000.0
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 40356000.0
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Heritage assets
+        total_budget: 218478000.0
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 6267000.0
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Public corporations and private enterprises
+        total_budget: 27409000.0
+        type: economic_classification_2
+      - name: Non-profit institutions
+        total_budget: 24409000.0
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 9000000.0
+        type: economic_classification_2
+      - name: Foreign governments and international organisations
+        total_budget: 2865000.0
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Institutional Governance
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 3494327000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 3762353000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 3957467000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 4371738000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 4372264000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 4622723000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 4882785000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 4097142508
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 4194671207
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 4150900055
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 4371738000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 4144655502
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 4161863667
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 4165213765
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 3494327000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 3762353000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 3957467000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 4371738000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 4372264000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 4622723000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 4882785000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 4097142508
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 4194671207
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 4150900055
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 4371738000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 4144655502
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 4161863667
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 4165213765
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -107,14 +226,16 @@ intro: "## Vote purpose\n\nContribute to sustainable economic development and en
 is_vote_primary: true
 name: Arts and Culture
 programmes:
-- name: Administration
-  total_budget: 300844000.0
-- name: Institutional Governance
-  total_budget: 416027000.0
-- name: Arts and Culture Promotion and Development
-  total_budget: 1184413000.0
-- name: Heritage Promotion and Preservation
-  total_budget: 2470980000.0
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 300844000.0
+  - name: Institutional Governance
+    total_budget: 416027000.0
+  - name: Arts and Culture Promotion and Development
+    total_budget: 1184413000.0
+  - name: Heritage Promotion and Preservation
+    total_budget: 2470980000.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: arts-and-culture

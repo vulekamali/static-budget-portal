@@ -19,52 +19,165 @@ contributed_datasets:
 description: 'Eastern Cape department: Cooperative Governance and Traditional Affairs
   budget data for the 2017-18 financial year from National Treasury in partnership
   with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 171311000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 64671000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 25163000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 4269000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 113126000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 12504000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 4115000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 20000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 100800000
+        type: economic_classification_2
+      - name: Departmental agencies and accounts
+        total_budget: 70000000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Development And Planning
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 22090000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 8149000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    name: House Of Traditional Leaders
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 230251000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 10767000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Provinces and municipalities
+        total_budget: 59546000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Local Governance
+    type: programme
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 283108000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 10702000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 6049000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 8410000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Traditional Institutional Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 1001536000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 872093000
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 968519000
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1008480000
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1205051000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 976882000
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 1046439000
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  real:
-  - amount: 1240380371
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 1022540048
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 1079807972
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 1057772481
-    financial_year: 2016-17
-    phase: Adjusted appropriation
-  - amount: 1205051000
-    financial_year: 2017-18
-    phase: Main appropriation
-  - amount: 926028107
-    financial_year: 2018-19
-    phase: Medium Term Estimates
-  - amount: 942114951
-    financial_year: 2019-20
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1001536000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 872093000
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 968519000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1008480000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1205051000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 976882000
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 1046439000
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    real:
+    - amount: 1240380371
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1022540048
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 1079807972
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1057772481
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1205051000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 926028107
+      financial_year: 2018-19
+      phase: Medium Term Estimates
+    - amount: 942114951
+      financial_year: 2019-20
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -118,16 +231,18 @@ intro: "## Vision\n\nAn integrated,capable,responsive and accountable local gove
 is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 programmes:
-- name: Administration
-  total_budget: 265414000
-- name: Local Governance
-  total_budget: 300564000
-- name: Development And Planning
-  total_budget: 300565000
-- name: Traditional Institutional Management
-  total_budget: 308269000
-- name: House Of Traditional Leaders
-  total_budget: 30239000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  programme_budgets:
+  - name: Administration
+    total_budget: 265414000
+  - name: Local Governance
+    total_budget: 300564000
+  - name: Development And Planning
+    total_budget: 300565000
+  - name: Traditional Institutional Management
+    total_budget: 308269000
+  - name: House Of Traditional Leaders
+    total_budget: 30239000
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: cooperative-governance-and-traditional-affairs

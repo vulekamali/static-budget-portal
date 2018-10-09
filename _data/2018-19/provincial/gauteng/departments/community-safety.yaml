@@ -18,52 +18,126 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Gauteng department: Community Safety budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 87220000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 40412000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 2983000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 95625000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 82843000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 5366000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces And Municipalities
+        total_budget: 965000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 665000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Provincial Secretariat For Police Service
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 343359000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 43121000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 14938000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 1998000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Traffic Management
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 629605900.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 693551800.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 632647000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 739187000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 719495000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 759694000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 805786000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 738220863
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 773245297
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 663569517
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 739187000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 682039993
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 683956805
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 687368159
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 629605900.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 693551800.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 632647000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 739187000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 719495000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 759694000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 805786000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 738220863
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 773245297
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 663569517
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 739187000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 682039993
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 683956805
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 687368159
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,14 +167,16 @@ intro: ''
 is_vote_primary: true
 name: Community Safety
 programmes:
-- name: Administration
-  total_budget: 130615000.0
-- name: Provincial Secretariat For Police Service
-  total_budget: 185464000.0
-- name: Traffic Management
-  total_budget: 403416000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 130615000.0
+  - name: Provincial Secretariat For Police Service
+    total_budget: 185464000.0
+  - name: Traffic Management
+    total_budget: 403416000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: community-safety

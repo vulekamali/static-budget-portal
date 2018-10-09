@@ -47,10 +47,6 @@ then
 
     DATA_ENVIRONMENT=$(regenerate_data)
 
-    # DEBUG
-    git status
-    git diff
-
     if [[ `git status --porcelain | grep -v deploy_key` ]]
     then
         # save changes

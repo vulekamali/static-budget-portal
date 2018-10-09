@@ -18,52 +18,120 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'KwaZulu-Natal department: Sport and Recreation budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programmes:
+  - items:
+    - items:
+      - name: Compensation of employees
+        total_budget: 43882000
+        type: economic_classification_2
+      - name: Goods and services
+        total_budget: 43170000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery and equipment
+        total_budget: 5219000
+        type: economic_classification_2
+      - name: Buildings and other fixed structures
+        total_budget: 4500000
+        type: economic_classification_2
+      - name: Software and other intangible assets
+        total_budget: 422000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Departmental agencies and accounts
+        total_budget: 410000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 22000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods and services
+        total_budget: 144680000
+        type: economic_classification_2
+      - name: Compensation of employees
+        total_budget: 92194000
+        type: economic_classification_2
+      name: Current payments
+      type: economic_classification_1
+    - items:
+      - name: Buildings and other fixed structures
+        total_budget: 31814000
+        type: economic_classification_2
+      name: Payments for capital assets
+      type: economic_classification_1
+    - items:
+      - name: Non-profit institutions
+        total_budget: 45126000
+        type: economic_classification_2
+      - name: Provinces and municipalities
+        total_budget: 41650000
+        type: economic_classification_2
+      - name: Households
+        total_budget: 1300000
+        type: economic_classification_2
+      name: Transfers and subsidies
+      type: economic_classification_1
+    name: Sport and Recreation
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 307836000
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 367751000
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 414968000
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 455571000
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 454389000
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 440571000
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 463512000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
-  real:
-  - amount: 425783315
-    financial_year: 2011-12
-    phase: Audited Outcome
-  - amount: 481945166
-    financial_year: 2012-13
-    phase: Audited Outcome
-  - amount: 513928767
-    financial_year: 2013-14
-    phase: Audited Outcome
-  - amount: 534162747
-    financial_year: 2014-15
-    phase: Adjusted appropriation
-  - amount: 506601176
-    financial_year: 2015-16
-    phase: Main appropriation
-  - amount: 462105227
-    financial_year: 2016-17
-    phase: Medium Term Estimates
-  - amount: 463512000
-    financial_year: 2017-18
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 307836000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 367751000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 414968000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 455571000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 454389000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 440571000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 463512000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 425783315
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 481945166
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 513928767
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 534162747
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 506601176
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 462105227
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 463512000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -119,10 +187,12 @@ intro: "## Vision\n\nThe vision of the Department of Sport and Recreation is: An
 is_vote_primary: true
 name: Sport and Recreation
 programmes:
-- name: Administration
-  total_budget: 97625000
-- name: Sport and Recreation
-  total_budget: 356764000
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  programme_budgets:
+  - name: Administration
+    total_budget: 97625000
+  - name: Sport and Recreation
+    total_budget: 356764000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: sport-and-recreation

@@ -18,52 +18,135 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'North West department: Office Of The Premier budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 78225399.99999999
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 41578000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 2070000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 2615000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Goods And Services
+        total_budget: 227405000.0
+        type: economic_classification_2
+      - name: Compensation Of Employees
+        total_budget: 94537000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 24930000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Households
+        total_budget: 46095000.0
+        type: economic_classification_2
+      - name: Public Corporations And Private Enterprises
+        total_budget: 11750000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Institutional Development
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 150235000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 13640000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 2000000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Public Corporations And Private Enterprises
+        total_budget: 79801000.0
+        type: economic_classification_2
+      - name: Households
+        total_budget: 500000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Policy And Governance
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 550729000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 852861000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 569415000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 780522000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 775381400.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 867971000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 936487900.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 645736703
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 950860134
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 597246863
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 780522000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 735017095
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 781439201
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 798862184
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 550729000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 852861000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 569415000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 780522000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 775381400.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 867971000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 936487900.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 645736703
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 950860134
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 597246863
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 780522000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 735017095
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 781439201
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 798862184
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,14 +176,16 @@ intro: ''
 is_vote_primary: true
 name: Office Of The Premier
 programmes:
-- name: Administration
-  total_budget: 124488399.99999999
-- name: Institutional Development
-  total_budget: 404717000.0
-- name: Policy And Governance
-  total_budget: 246176000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 124488399.99999999
+  - name: Institutional Development
+    total_budget: 404717000.0
+  - name: Policy And Governance
+    total_budget: 246176000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: office-of-the-premier

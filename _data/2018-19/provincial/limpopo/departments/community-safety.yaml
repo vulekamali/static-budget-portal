@@ -18,52 +18,93 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 description: 'Limpopo department: Community Safety budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programmes:
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 35130000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 14417000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    - items:
+      - name: Machinery And Equipment
+        total_budget: 484000.0
+        type: economic_classification_2
+      name: Payments For Capital Assets
+      type: economic_classification_1
+    - items:
+      - name: Provinces And Municipalities
+        total_budget: 11000.0
+        type: economic_classification_2
+      name: Transfers And Subsidies
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Compensation Of Employees
+        total_budget: 41837000.0
+        type: economic_classification_2
+      - name: Goods And Services
+        total_budget: 17835000.0
+        type: economic_classification_2
+      name: Current Payments
+      type: economic_classification_1
+    name: Provincial Secretariat Of Police Services
+    type: programme
 expenditure_over_time:
-  base_financial_year: 2017-18
-  nominal:
-  - amount: 72660000.0
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 82656000.0
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 92552000.0
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 103713000.0
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 109714000.0
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 113638000.0
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 119888000.0
-    financial_year: 2020-21
-    phase: Medium Term Estimates
-  real:
-  - amount: 85194767
-    financial_year: 2014-15
-    phase: Audited Outcome
-  - amount: 92153698
-    financial_year: 2015-16
-    phase: Audited Outcome
-  - amount: 97075756
-    financial_year: 2016-17
-    phase: Audited Outcome
-  - amount: 103713000
-    financial_year: 2017-18
-    phase: Adjusted appropriation
-  - amount: 104002579
-    financial_year: 2018-19
-    phase: Main appropriation
-  - amount: 102308934
-    financial_year: 2019-20
-    phase: Medium Term Estimates
-  - amount: 102269329
-    financial_year: 2020-21
-    phase: Medium Term Estimates
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 72660000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 82656000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 92552000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 103713000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 109714000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 113638000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 119888000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 85194767
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 92153698
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 97075756
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 103713000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 104002579
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 102308934
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 102269329
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: false
@@ -93,12 +134,14 @@ intro: ''
 is_vote_primary: true
 name: Community Safety
 programmes:
-- name: Administration
-  total_budget: 50042000.0
-- name: Provincial Secretariat Of Police Services
-  total_budget: 59672000.0
-- name: Direct Charges
-  total_budget: 0.0
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  programme_budgets:
+  - name: Administration
+    total_budget: 50042000.0
+  - name: Provincial Secretariat Of Police Services
+    total_budget: 59672000.0
+  - name: Direct Charges
+    total_budget: 0.0
 selected_financial_year: 2018-19
 selected_tab: departments
 slug: community-safety
