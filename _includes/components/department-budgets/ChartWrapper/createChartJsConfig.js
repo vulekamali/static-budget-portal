@@ -9,7 +9,7 @@ const calcLabelPosition = (height, x, y, maxWidth) => {
       textX: x - (height / 3),
       textY: y - 7,
       align: 'right',
-      color: '#2d520d',
+      color: 'black',
       space: x - (((height / 3) * 2) + 20),
     };
   }
@@ -18,7 +18,7 @@ const calcLabelPosition = (height, x, y, maxWidth) => {
     textX: x + (height / 3),
     textY: y - 7,
     align: 'left',
-    color: '#2d520d',
+    color: 'black',
     space: maxWidth - (x + (((height / 3) * 2) + 20)),
   };
 };
