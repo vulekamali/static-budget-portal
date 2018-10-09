@@ -264,6 +264,120 @@ intro: "## vision\n\nprovide leaners with opportunities to become and responsibl
   \ provisioning of high quality school infrastructure in the eastern cape\r\n\r\n"
 is_vote_primary: true
 name: Education
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 21582910000
+      type: programme
+    - name: Administration
+      total_budget: 2108783000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 576178000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 384731000
+      type: programme
+    - name: Examination and Education Related Services
+      total_budget: 122066000
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 25646000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 1017556000
+      type: programme
+    - name: Administration
+      total_budget: 417283000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 225713000
+      type: programme
+    - name: Examination and Education Related Services
+      total_budget: 163706000
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 150352000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 32199000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Infrastructure Development
+      total_budget: 1538494000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 47632000
+      type: programme
+    - name: Public Ordinary School Education
+      total_budget: 13502000
+      type: programme
+    - name: Examination and Education Related Services
+      total_budget: 10250000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 7039000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3726000
+      type: programme
+    - name: Public Ordinary School Education
+      total_budget: 316000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Examination and Education Related Services
+      total_budget: 59662000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 207089000
+      type: programme
+    - name: Administration
+      total_budget: 30043000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 1850000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 2040888000
+      type: programme
+    - name: Independent School Subsidies
+      total_budget: 120000000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 73014000
+      type: programme
+    - name: Examination and Education Related Services
+      total_budget: 21369000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 20517000
+      type: programme
+    - name: Administration
+      total_budget: 131000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

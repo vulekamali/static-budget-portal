@@ -187,6 +187,66 @@ intro: "## Vision\n\nLeading development with excellence and integrity.\r\n\r\n\
   functions."
 is_vote_primary: true
 name: Office of the Premier
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 84341000
+      type: programme
+    - name: Institutional Development and Organisational Support
+      total_budget: 51381000
+      type: programme
+    - name: Policy and Governance
+      total_budget: 49169000
+      type: programme
+    - name: Executive Support Services
+      total_budget: 48227000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development and Organisational Support
+      total_budget: 95919000
+      type: programme
+    - name: Administration
+      total_budget: 30299000
+      type: programme
+    - name: Executive Support Services
+      total_budget: 19805000
+      type: programme
+    - name: Policy and Governance
+      total_budget: 11417000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 6524000
+      type: programme
+    - name: Institutional Development and Organisational Support
+      total_budget: 2150000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy and Governance
+      total_budget: 41737000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development and Organisational Support
+      total_budget: 15998000
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1952000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

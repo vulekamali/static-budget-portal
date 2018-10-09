@@ -170,6 +170,45 @@ intro: '## Vote purpose
   '
 is_vote_primary: true
 name: The Presidency
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 303743000.0
+      type: programme
+    - name: Executive Support
+      total_budget: 19218000.0
+      type: programme
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 6035000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 136833000.0
+      type: programme
+    - name: Executive Support
+      total_budget: 25970000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 12741000.0
+      type: programme
+    - name: Executive Support
+      total_budget: 1136000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 34000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   programme_budgets:

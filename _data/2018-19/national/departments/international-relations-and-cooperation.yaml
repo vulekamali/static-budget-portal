@@ -226,6 +226,90 @@ intro: "## Vote purpose\n\nFormulate, coordinate, implement and manage South Afr
   \ * assisting South African citizens abroad\n\n\n"
 is_vote_primary: true
 name: International Relations and Cooperation
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: International Relations
+      total_budget: 1943564000.0
+      type: programme
+    - name: Administration
+      total_budget: 495553000.0
+      type: programme
+    - name: International Cooperation
+      total_budget: 341835000.0
+      type: programme
+    - name: Public Diplomacy and Protocol Services
+      total_budget: 183537000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: International Relations
+      total_budget: 1391356000.0
+      type: programme
+    - name: Administration
+      total_budget: 789657000.0
+      type: programme
+    - name: International Cooperation
+      total_budget: 225097000.0
+      type: programme
+    - name: Public Diplomacy and Protocol Services
+      total_budget: 117057000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 87272000.0
+      type: programme
+    name: Current payments - Interest and rent on land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 267968000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 23560000.0
+      type: programme
+    - name: International Relations
+      total_budget: 19043000.0
+      type: programme
+    - name: International Cooperation
+      total_budget: 115000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: International Transfers
+      total_budget: 48224000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: International Transfers
+      total_budget: 609131000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: International Relations
+      total_budget: 5473000.0
+      type: programme
+    - name: Administration
+      total_budget: 1561000.0
+      type: programme
+    - name: Public Diplomacy and Protocol Services
+      total_budget: 1553000.0
+      type: programme
+    - name: International Cooperation
+      total_budget: 1212000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   programme_budgets:

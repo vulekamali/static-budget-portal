@@ -211,6 +211,75 @@ intro: "## Vote purpose\r\n\r\nLead, support and promote agricultural, forestry 
   \ Standards Act (1990), and the Conservation of Agricultural Resources Act (1993)."
 is_vote_primary: true
 name: Agriculture, Forestry and Fisheries
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Forestry and Natural Resources Management
+      total_budget: 43636000.0
+      type: programme
+    - name: Food Security and Agrarian Reform
+      total_budget: 39112000.0
+      type: programme
+    - name: Administration
+      total_budget: 10963000.0
+      type: programme
+    - name: Agricultural Production, Health and Food Safety
+      total_budget: 2043000.0
+      type: programme
+    - name: Trade Promotion and Market Access
+      total_budget: 449000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agricultural Production, Health and Food Safety
+      total_budget: 381049000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Forestry and Natural Resources Management
+      total_budget: 717812000.0
+      type: programme
+    - name: Administration
+      total_budget: 701703000.0
+      type: programme
+    - name: Agricultural Production, Health and Food Safety
+      total_budget: 579600000.0
+      type: programme
+    - name: Food Security and Agrarian Reform
+      total_budget: 270793000.0
+      type: programme
+    - name: Fisheries
+      total_budget: 184644000.0
+      type: programme
+    - name: Trade Promotion and Market Access
+      total_budget: 131745000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Food Security and Agrarian Reform
+      total_budget: 1620392000.0
+      type: programme
+    - name: Agricultural Production, Health and Food Safety
+      total_budget: 1172078000.0
+      type: programme
+    - name: Fisheries
+      total_budget: 258623000.0
+      type: programme
+    - name: Forestry and Natural Resources Management
+      total_budget: 145116000.0
+      type: programme
+    - name: Trade Promotion and Market Access
+      total_budget: 105968000.0
+      type: programme
+    - name: Administration
+      total_budget: 17281000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

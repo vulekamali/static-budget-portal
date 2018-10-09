@@ -189,6 +189,39 @@ intro: '## Vote purpose
   '
 is_vote_primary: true
 name: Parliament
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 3553000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 503132000.0
+      type: programme
+    - name: Administration
+      total_budget: 456019000.0
+      type: programme
+    - name: Legislation and Oversight
+      total_budget: 375458000.0
+      type: programme
+    - name: Members' Facilities
+      total_budget: 234170000.0
+      type: programme
+    - name: Public and International Participation
+      total_budget: 133204000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Associated Services
+      total_budget: 364518000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

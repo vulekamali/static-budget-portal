@@ -205,6 +205,111 @@ intro: "## Vision\r\n\r\nThe vision of the Department of Agriculture and Rural D
   \n* Rural development."
 is_vote_primary: true
 name: Agriculture and Rural Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Agriculture
+      total_budget: 775610000
+      type: programme
+    - name: Administration
+      total_budget: 201857000
+      type: programme
+    - name: Rural Development
+      total_budget: 6467000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agriculture
+      total_budget: 522387000
+      type: programme
+    - name: Administration
+      total_budget: 231153000
+      type: programme
+    - name: Rural Development
+      total_budget: 4455000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agriculture
+      total_budget: 71000
+      type: programme
+    name: Current payments - Interest and rent on land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agriculture
+      total_budget: 636000
+      type: programme
+    name: Payments for capital assets - Biological assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agriculture
+      total_budget: 109415000
+      type: programme
+    - name: Administration
+      total_budget: 26775000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 22167000
+      type: programme
+    - name: Agriculture
+      total_budget: 19800000
+      type: programme
+    - name: Rural Development
+      total_budget: 300000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agriculture
+      total_budget: 55000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agriculture
+      total_budget: 128398000
+      type: programme
+    - name: Administration
+      total_budget: 2952000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agriculture
+      total_budget: 7211000
+      type: programme
+    - name: Administration
+      total_budget: 470000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agriculture
+      total_budget: 25207000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 770000
+      type: programme
+    - name: Agriculture
+      total_budget: 696000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agriculture
+      total_budget: 83792000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

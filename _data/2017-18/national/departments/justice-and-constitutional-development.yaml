@@ -277,6 +277,123 @@ intro: "## Vote purpose\n\n_Uphold and protect the Constitution and the rule of 
   9 institutions.\n\n  \n\n"
 is_vote_primary: true
 name: Justice and Constitutional Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Court Services
+      total_budget: 3797819000.0
+      type: programme
+    - name: National Prosecuting Authority
+      total_budget: 3111219000.0
+      type: programme
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 2074226000.0
+      type: programme
+    - name: State Legal Services
+      total_budget: 1022029000.0
+      type: programme
+    - name: Administration
+      total_budget: 572747000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Court Services
+      total_budget: 1579168000.0
+      type: programme
+    - name: Administration
+      total_budget: 1525807000.0
+      type: programme
+    - name: Auxiliary and Associated Services
+      total_budget: 654337000.0
+      type: programme
+    - name: National Prosecuting Authority
+      total_budget: 512509000.0
+      type: programme
+    - name: State Legal Services
+      total_budget: 164621000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Court Services
+      total_budget: 769317000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Auxiliary and Associated Services
+      total_budget: 245788000.0
+      type: programme
+    - name: Court Services
+      total_budget: 104786000.0
+      type: programme
+    - name: National Prosecuting Authority
+      total_budget: 43648000.0
+      type: programme
+    - name: State Legal Services
+      total_budget: 16759000.0
+      type: programme
+    - name: Administration
+      total_budget: 14882000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Auxiliary and Associated Services
+      total_budget: 2575025000.0
+      type: programme
+    - name: Administration
+      total_budget: 15538000.0
+      type: programme
+    - name: National Prosecuting Authority
+      total_budget: 8993000.0
+      type: programme
+    - name: Court Services
+      total_budget: 21000.0
+      type: programme
+    - name: State Legal Services
+      total_budget: 1000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: State Legal Services
+      total_budget: 16000000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 66294000.0
+      type: programme
+    - name: Court Services
+      total_budget: 25172000.0
+      type: programme
+    - name: National Prosecuting Authority
+      total_budget: 7942000.0
+      type: programme
+    - name: State Legal Services
+      total_budget: 1778000.0
+      type: programme
+    - name: Administration
+      total_budget: 269000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Court Services
+      total_budget: 545000.0
+      type: programme
+    - name: Administration
+      total_budget: 38000.0
+      type: programme
+    - name: State Legal Services
+      total_budget: 30000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
   programme_budgets:

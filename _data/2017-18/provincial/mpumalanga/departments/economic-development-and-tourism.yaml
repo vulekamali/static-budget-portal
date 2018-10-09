@@ -208,6 +208,81 @@ intro: "## Vision\r\n\r\nAn Inclusive, Global Competitive Economy\r\n\r\n\r\n\r\
   \ sustainable\r\ndevelopment through partnership."
 is_vote_primary: true
 name: Economic Development and Tourism
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 59245000
+      type: programme
+    - name: Integrated Economic Development
+      total_budget: 26687000
+      type: programme
+    - name: Business Regulation and Governance
+      total_budget: 16576000
+      type: programme
+    - name: Economic Planning
+      total_budget: 13528000
+      type: programme
+    - name: Trade and Sector Development
+      total_budget: 11232000
+      type: programme
+    - name: Tourism
+      total_budget: 3202000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Integrated Economic Development
+      total_budget: 38135000
+      type: programme
+    - name: Administration
+      total_budget: 26573000
+      type: programme
+    - name: Tourism
+      total_budget: 18120000
+      type: programme
+    - name: Trade and Sector Development
+      total_budget: 16057000
+      type: programme
+    - name: Economic Planning
+      total_budget: 5230000
+      type: programme
+    - name: Business Regulation and Governance
+      total_budget: 2176000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3371000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Tourism
+      total_budget: 338050000
+      type: programme
+    - name: Business Regulation and Governance
+      total_budget: 86186000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 450000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Integrated Economic Development
+      total_budget: 462980000
+      type: programme
+    - name: Trade and Sector Development
+      total_budget: 2279000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

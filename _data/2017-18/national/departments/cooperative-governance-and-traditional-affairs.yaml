@@ -258,6 +258,105 @@ intro: "## Vote purpose\n\n_Improve cooperative governance across the three sphe
   \n  * the Municipal Structures Act (1998).\n\n"
 is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 133663000.0
+      type: programme
+    - name: Local Government Support and Intervention Management
+      total_budget: 68446000.0
+      type: programme
+    - name: Community Work Programme
+      total_budget: 43260000.0
+      type: programme
+    - name: Institutional Development
+      total_budget: 38057000.0
+      type: programme
+    - name: National Disaster Management Centre
+      total_budget: 29584000.0
+      type: programme
+    - name: Regional and Urban Development and Legislative Support
+      total_budget: 25912000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Community Work Programme
+      total_budget: 3652606000.0
+      type: programme
+    - name: Institutional Development
+      total_budget: 139847000.0
+      type: programme
+    - name: Administration
+      total_budget: 108456000.0
+      type: programme
+    - name: National Disaster Management Centre
+      total_budget: 66191000.0
+      type: programme
+    - name: Local Government Support and Intervention Management
+      total_budget: 25222000.0
+      type: programme
+    - name: Regional and Urban Development and Legislative Support
+      total_budget: 14912000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 5074000.0
+      type: programme
+    - name: National Disaster Management Centre
+      total_budget: 2416000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Local Government Support and Intervention Management
+      total_budget: 381483000.0
+      type: programme
+    - name: Institutional Development
+      total_budget: 176306000.0
+      type: programme
+    - name: Regional and Urban Development and Legislative Support
+      total_budget: 50631000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 1281000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Regional and Urban Development and Legislative Support
+      total_budget: 6950000.0
+      type: programme
+    - name: Institutional Development
+      total_budget: 5123000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 57012141000.0
+      type: programme
+    - name: Local Government Support and Intervention Management
+      total_budget: 15891252000.0
+      type: programme
+    - name: National Disaster Management Centre
+      total_budget: 423713000.0
+      type: programme
+    - name: Regional and Urban Development and Legislative Support
+      total_budget: 111856000.0
+      type: programme
+    - name: Administration
+      total_budget: 103000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
   programme_budgets:

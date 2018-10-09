@@ -175,6 +175,75 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Provincial Treasury
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Sustainable Resource Management
+      total_budget: 75560000.0
+      type: programme
+    - name: Administration
+      total_budget: 43091000.0
+      type: programme
+    - name: Asset Management
+      total_budget: 38803000.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 34601000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Asset Management
+      total_budget: 23721000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 16024000.0
+      type: programme
+    - name: Administration
+      total_budget: 11016000.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 7618000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3792000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 40000.0
+      type: programme
+    name: Payments For Capital Assets - Software And Other Intangible Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Sustainable Resource Management
+      total_budget: 29342000.0
+      type: programme
+    - name: Administration
+      total_budget: 4000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3218000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 249000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Sustainable Resource Management
+      total_budget: 38311000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

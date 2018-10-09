@@ -203,6 +203,93 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Community Safety And Transport Management
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Transport Regulations
+      total_budget: 366243000.0
+      type: programme
+    - name: Administration
+      total_budget: 135633400.0
+      type: programme
+    - name: Transport Operations
+      total_budget: 81168000.0
+      type: programme
+    - name: Provincial Secretariat For Police Service
+      total_budget: 30184000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 404243000.0
+      type: programme
+    - name: Administration
+      total_budget: 186144000.0
+      type: programme
+    - name: Transport Regulations
+      total_budget: 173985000.0
+      type: programme
+    - name: Provincial Secretariat For Police Service
+      total_budget: 11977000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 37000000.0
+      type: programme
+    - name: Transport Regulations
+      total_budget: 19520000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulations
+      total_budget: 19150000.0
+      type: programme
+    - name: Transport Operations
+      total_budget: 16001000.0
+      type: programme
+    - name: Administration
+      total_budget: 3703000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulations
+      total_budget: 3073000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Provincial Secretariat For Police Service
+      total_budget: 4489000.0
+      type: programme
+    - name: Transport Operations
+      total_budget: 1189000.0
+      type: programme
+    - name: Administration
+      total_budget: 751000.0
+      type: programme
+    - name: Transport Regulations
+      total_budget: 550000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Provincial Secretariat For Police Service
+      total_budget: 1030000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 667440000.0
+      type: programme
+    name: Transfers And Subsidies - Public Corporations And Private Enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

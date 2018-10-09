@@ -273,6 +273,111 @@ intro: "## Vision\n\nPromotion of Economic Growth and Development in the Norther
   \ of the Northern Cape as a competitive tourist destination\r\n\r\n"
 is_vote_primary: true
 name: Economic Development and Tourism
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 37194000
+      type: programme
+    - name: Intergrated Economic Development Services
+      total_budget: 14266000
+      type: programme
+    - name: Economic Planning
+      total_budget: 11590000
+      type: programme
+    - name: Tourism
+      total_budget: 11226000
+      type: programme
+    - name: Business Regulation And Governance
+      total_budget: 8640000
+      type: programme
+    - name: Trade And Sector Development
+      total_budget: 8082000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Intergrated Economic Development Services
+      total_budget: 27731000
+      type: programme
+    - name: Administration
+      total_budget: 15652000
+      type: programme
+    - name: Trade And Sector Development
+      total_budget: 15133000
+      type: programme
+    - name: Tourism
+      total_budget: 10910000
+      type: programme
+    - name: Economic Planning
+      total_budget: 4727000
+      type: programme
+    - name: Business Regulation And Governance
+      total_budget: 3015000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Tourism
+      total_budget: 2275000
+      type: programme
+    - name: Trade And Sector Development
+      total_budget: 899000
+      type: programme
+    - name: Economic Planning
+      total_budget: 835000
+      type: programme
+    - name: Administration
+      total_budget: 264000
+      type: programme
+    - name: Intergrated Economic Development Services
+      total_budget: 228000
+      type: programme
+    - name: Business Regulation And Governance
+      total_budget: 110000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Tourism
+      total_budget: 19054000
+      type: programme
+    - name: Business Regulation And Governance
+      total_budget: 17635000
+      type: programme
+    - name: Trade And Sector Development
+      total_budget: 5510000
+      type: programme
+    - name: Intergrated Economic Development Services
+      total_budget: 3597000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Tourism
+      total_budget: 500000
+      type: programme
+    - name: Administration
+      total_budget: 164000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Intergrated Economic Development Services
+      total_budget: 38300000
+      type: programme
+    - name: Tourism
+      total_budget: 6929000
+      type: programme
+    - name: Trade And Sector Development
+      total_budget: 1700000
+      type: programme
+    - name: Administration
+      total_budget: 270000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

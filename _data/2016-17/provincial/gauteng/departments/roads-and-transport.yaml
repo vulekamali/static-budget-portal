@@ -250,6 +250,120 @@ intro: "## Vision\r\n\r\nA modern integrated, efficient and sustainable transpor
   \ vehicle licenses."
 is_vote_primary: true
 name: Roads and Transport
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 346727000
+      type: programme
+    - name: Administration
+      total_budget: 161542000
+      type: programme
+    - name: Transport Regulation
+      total_budget: 94476000
+      type: programme
+    - name: Transport Operations
+      total_budget: 28575000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 949886000
+      type: programme
+    - name: Administration
+      total_budget: 138754000
+      type: programme
+    - name: Transport Regulation
+      total_budget: 69052000
+      type: programme
+    - name: Transport Operations
+      total_budget: 35810000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulation
+      total_budget: 200000
+      type: programme
+    - name: Administration
+      total_budget: 100000
+      type: programme
+    - name: Transport Infrastructure
+      total_budget: 70000
+      type: programme
+    name: Current payments - Interest and rent on land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 1241590000
+      type: programme
+    - name: Transport Regulation
+      total_budget: 126521000
+      type: programme
+    - name: Transport Operations
+      total_budget: 45850000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 15901000
+      type: programme
+    - name: Transport Infrastructure
+      total_budget: 7202000
+      type: programme
+    - name: Transport Regulation
+      total_budget: 7106000
+      type: programme
+    - name: Transport Operations
+      total_budget: 1640000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulation
+      total_budget: 1800000
+      type: programme
+    - name: Administration
+      total_budget: 1000000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Gautrain
+      total_budget: 1832089000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 4201000
+      type: programme
+    - name: Administration
+      total_budget: 500000
+      type: programme
+    - name: Transport Operations
+      total_budget: 130000
+      type: programme
+    - name: Transport Regulation
+      total_budget: 62000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 2500000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 2186420000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

@@ -147,6 +147,33 @@ intro: "## Vote purpose\n\n_Promote economic development policy formulation and 
   \ Act\_(2002)\n\n  * the Infrastructure Development Act\_(2014).\n\n"
 is_vote_primary: true
 name: Economic Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 2244000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 80979000.0
+      type: programme
+    - name: Investment, Competition and Trade
+      total_budget: 41421000.0
+      type: programme
+    - name: Growth Path and Social Dialogue
+      total_budget: 27889000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Investment, Competition and Trade
+      total_budget: 733245000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

@@ -203,6 +203,72 @@ intro: "## Vote purpose\n\n_Ensure the availability of water resources, facilita
   \ and eradicating\npoverty.\n\n"
 is_vote_primary: true
 name: Water and Sanitation
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Water Infrastructure Development
+      total_budget: 6065856000.0
+      type: programme
+    - name: Water and Sanitation Services
+      total_budget: 1047804000.0
+      type: programme
+    - name: Water Planning and Information Management
+      total_budget: 60648000.0
+      type: programme
+    - name: Administration
+      total_budget: 56532000.0
+      type: programme
+    - name: Water Sector Regulation
+      total_budget: 4297000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Water Infrastructure Development
+      total_budget: 2851280000.0
+      type: programme
+    - name: Water and Sanitation Services
+      total_budget: 48182000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1449615000.0
+      type: programme
+    - name: Water Planning and Information Management
+      total_budget: 747296000.0
+      type: programme
+    - name: Water Infrastructure Development
+      total_budget: 360833000.0
+      type: programme
+    - name: Water and Sanitation Services
+      total_budget: 332989000.0
+      type: programme
+    - name: Water Sector Regulation
+      total_budget: 226042000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Water Infrastructure Development
+      total_budget: 3157818000.0
+      type: programme
+    - name: Administration
+      total_budget: 20020000.0
+      type: programme
+    - name: Water and Sanitation Services
+      total_budget: 15607000.0
+      type: programme
+    - name: Water Sector Regulation
+      total_budget: 1000000.0
+      type: programme
+    - name: Water Planning and Information Management
+      total_budget: 711000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

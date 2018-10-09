@@ -148,6 +148,39 @@ intro: "## Vote purpose\n\n_Efficiently determine and safeguard the identity and
   \n"
 is_vote_primary: true
 name: Home Affairs
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 10893000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Citizen Affairs
+      total_budget: 2484689000.0
+      type: programme
+    - name: Administration
+      total_budget: 1585250000.0
+      type: programme
+    - name: Immigration Affairs
+      total_budget: 720570000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Citizen Affairs
+      total_budget: 1647012000.0
+      type: programme
+    - name: Administration
+      total_budget: 2059000.0
+      type: programme
+    - name: Immigration Affairs
+      total_budget: 349000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

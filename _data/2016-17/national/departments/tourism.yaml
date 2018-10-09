@@ -231,6 +231,114 @@ intro: "## Vote purpose\n\n_Promote and support the growth and development of an
   \ in the national development plan.\n\n"
 is_vote_primary: true
 name: Tourism
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 130408000.0
+      type: programme
+    - name: Domestic Tourism
+      total_budget: 53880000.0
+      type: programme
+    - name: Policy and Knowledge Services
+      total_budget: 42647000.0
+      type: programme
+    - name: International Tourism
+      total_budget: 38606000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Domestic Tourism
+      total_budget: 202878000.0
+      type: programme
+    - name: Administration
+      total_budget: 102745000.0
+      type: programme
+    - name: Policy and Knowledge Services
+      total_budget: 91283000.0
+      type: programme
+    - name: International Tourism
+      total_budget: 8616000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Domestic Tourism
+      total_budget: 104651000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3742000.0
+      type: programme
+    - name: Policy and Knowledge Services
+      total_budget: 1425000.0
+      type: programme
+    - name: International Tourism
+      total_budget: 1164000.0
+      type: programme
+    - name: Domestic Tourism
+      total_budget: 977000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 376000.0
+      type: programme
+    - name: Policy and Knowledge Services
+      total_budget: 35000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy and Knowledge Services
+      total_budget: 1024847000.0
+      type: programme
+    - name: Domestic Tourism
+      total_budget: 4392000.0
+      type: programme
+    - name: Administration
+      total_budget: 185000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: International Tourism
+      total_budget: 6322000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy and Knowledge Services
+      total_budget: 4011000.0
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Domestic Tourism
+      total_budget: 61334000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Domestic Tourism
+      total_budget: 16027000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy and Knowledge Services
+      total_budget: 108365000.0
+      type: programme
+    - name: Domestic Tourism
+      total_budget: 600000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   programme_budgets:

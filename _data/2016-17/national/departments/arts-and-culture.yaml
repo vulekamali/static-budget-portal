@@ -225,6 +225,114 @@ intro: "## Vote purpose\n\n_Contribute to sustainable economic development and e
   \ for the identification, conservation and promotion of cultural heritage.\n\n"
 is_vote_primary: true
 name: Arts and Culture
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 100424000.0
+      type: programme
+    - name: Heritage Promotion and Preservation
+      total_budget: 53374000.0
+      type: programme
+    - name: Arts and Culture Promotion and Development
+      total_budget: 48712000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 35832000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 173297000.0
+      type: programme
+    - name: Heritage Promotion and Preservation
+      total_budget: 75211000.0
+      type: programme
+    - name: Arts and Culture Promotion and Development
+      total_budget: 65010000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 45323000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Governance
+      total_budget: 239849000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 7398000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Governance
+      total_budget: 6200000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Heritage Promotion and Preservation
+      total_budget: 824647000.0
+      type: programme
+    - name: Arts and Culture Promotion and Development
+      total_budget: 697507000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Governance
+      total_budget: 2403000.0
+      type: programme
+    - name: Heritage Promotion and Preservation
+      total_budget: 1300000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Arts and Culture Promotion and Development
+      total_budget: 12981000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 9338000.0
+      type: programme
+    - name: Heritage Promotion and Preservation
+      total_budget: 5331000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Arts and Culture Promotion and Development
+      total_budget: 129259000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 20484000.0
+      type: programme
+    - name: Heritage Promotion and Preservation
+      total_budget: 13603000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Heritage Promotion and Preservation
+      total_budget: 1357132000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Arts and Culture Promotion and Development
+      total_budget: 141238000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 5000000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   programme_budgets:

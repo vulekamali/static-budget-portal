@@ -324,6 +324,162 @@ intro: "## Vote purpose\n\nLead and facilitate access to sustainable economic ac
   \ Act (2003)\n * the Consumer Protection Act (2008).\n\n"
 is_vote_primary: true
 name: Trade and Industry
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 297197000.0
+      type: programme
+    - name: Trade and Investment South Africa
+      total_budget: 174231000.0
+      type: programme
+    - name: Incentive Development and Administration
+      total_budget: 145360000.0
+      type: programme
+    - name: Industrial Development
+      total_budget: 116790000.0
+      type: programme
+    - name: International Trade and Economic Development
+      total_budget: 79638000.0
+      type: programme
+    - name: Special Economic Zones and Economic Transformation
+      total_budget: 77857000.0
+      type: programme
+    - name: Consumer and Corporate Regulation
+      total_budget: 59398000.0
+      type: programme
+    - name: Investment South Africa
+      total_budget: 37047000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 445987000.0
+      type: programme
+    - name: Trade and Investment South Africa
+      total_budget: 48829000.0
+      type: programme
+    - name: Incentive Development and Administration
+      total_budget: 35941000.0
+      type: programme
+    - name: Consumer and Corporate Regulation
+      total_budget: 18989000.0
+      type: programme
+    - name: International Trade and Economic Development
+      total_budget: 17824000.0
+      type: programme
+    - name: Industrial Development
+      total_budget: 17050000.0
+      type: programme
+    - name: Investment South Africa
+      total_budget: 16369000.0
+      type: programme
+    - name: Special Economic Zones and Economic Transformation
+      total_budget: 14994000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 14959000.0
+      type: programme
+    - name: Incentive Development and Administration
+      total_budget: 2222000.0
+      type: programme
+    - name: Trade and Investment South Africa
+      total_budget: 2215000.0
+      type: programme
+    - name: Industrial Development
+      total_budget: 868000.0
+      type: programme
+    - name: International Trade and Economic Development
+      total_budget: 778000.0
+      type: programme
+    - name: Special Economic Zones and Economic Transformation
+      total_budget: 491000.0
+      type: programme
+    - name: Investment South Africa
+      total_budget: 430000.0
+      type: programme
+    - name: Consumer and Corporate Regulation
+      total_budget: 150000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Incentive Development and Administration
+      total_budget: 5109000.0
+      type: programme
+    - name: Administration
+      total_budget: 2500000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Industrial Development
+      total_budget: 395920000.0
+      type: programme
+    - name: Consumer and Corporate Regulation
+      total_budget: 230578000.0
+      type: programme
+    - name: Special Economic Zones and Economic Transformation
+      total_budget: 68731000.0
+      type: programme
+    - name: International Trade and Economic Development
+      total_budget: 1257000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: International Trade and Economic Development
+      total_budget: 20813000.0
+      type: programme
+    - name: Industrial Development
+      total_budget: 9061000.0
+      type: programme
+    - name: Consumer and Corporate Regulation
+      total_budget: 5473000.0
+      type: programme
+    - name: Trade and Investment South Africa
+      total_budget: 3079000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Incentive Development and Administration
+      total_budget: 846000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Industrial Development
+      total_budget: 197430000.0
+      type: programme
+    - name: Special Economic Zones and Economic Transformation
+      total_budget: 1500000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Incentive Development and Administration
+      total_budget: 5819538000.0
+      type: programme
+    - name: Industrial Development
+      total_budget: 885449000.0
+      type: programme
+    - name: Trade and Investment South Africa
+      total_budget: 183248000.0
+      type: programme
+    - name: International Trade and Economic Development
+      total_budget: 4626000.0
+      type: programme
+    - name: Special Economic Zones and Economic Transformation
+      total_budget: 1839000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   programme_budgets:

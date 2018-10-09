@@ -213,6 +213,96 @@ intro: "## Vision\n\nA leader in the provision and management of provincial land
   \ maintain roads infrastructure."
 is_vote_primary: true
 name: Public Works, Roads and Infrastructure
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Infrastructure Operations
+      total_budget: 413356000
+      type: programme
+    - name: Roads Infrastructure
+      total_budget: 350478000
+      type: programme
+    - name: Administration
+      total_budget: 230583000
+      type: programme
+    - name: EPWP
+      total_budget: 23379000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Roads Infrastructure
+      total_budget: 355563000
+      type: programme
+    - name: Infrastructure Operations
+      total_budget: 236053000
+      type: programme
+    - name: Administration
+      total_budget: 81177000
+      type: programme
+    - name: EPWP
+      total_budget: 15852000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Roads Infrastructure
+      total_budget: 196000000
+      type: programme
+    - name: Infrastructure Operations
+      total_budget: 55033000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Roads Infrastructure
+      total_budget: 131470000
+      type: programme
+    - name: Administration
+      total_budget: 8866000
+      type: programme
+    - name: Infrastructure Operations
+      total_budget: 3815000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1500000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Roads Infrastructure
+      total_budget: 737330000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3428000
+      type: programme
+    - name: Roads Infrastructure
+      total_budget: 2900000
+      type: programme
+    - name: Infrastructure Operations
+      total_budget: 2843000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Infrastructure Operations
+      total_budget: 48966000
+      type: programme
+    - name: Roads Infrastructure
+      total_budget: 2379000
+      type: programme
+    - name: Administration
+      total_budget: 400000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

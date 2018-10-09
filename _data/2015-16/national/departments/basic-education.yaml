@@ -204,6 +204,72 @@ intro: "## Vote purpose\n\n_Develop, maintain and support a South African school
   \ the competency requirements for teachers.\n\n"
 is_vote_primary: true
 name: Basic Education
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Planning, Information and Assessment
+      total_budget: 2025676000.0
+      type: programme
+    - name: Administration
+      total_budget: 18190000.0
+      type: programme
+    - name: Curriculum Policy, Support and Monitoring
+      total_budget: 768000.0
+      type: programme
+    - name: Teachers, Education Human Resources and Institutional Development
+      total_budget: 503000.0
+      type: programme
+    - name: Educational Enrichment Services
+      total_budget: 271000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Planning, Information and Assessment
+      total_budget: 9517555000.0
+      type: programme
+    - name: Curriculum Policy, Support and Monitoring
+      total_budget: 347185000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Curriculum Policy, Support and Monitoring
+      total_budget: 1529694000.0
+      type: programme
+    - name: Planning, Information and Assessment
+      total_budget: 413802000.0
+      type: programme
+    - name: Administration
+      total_budget: 339322000.0
+      type: programme
+    - name: Teachers, Education Human Resources and Institutional Development
+      total_budget: 99673000.0
+      type: programme
+    - name: Educational Enrichment Services
+      total_budget: 49385000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Educational Enrichment Services
+      total_budget: 5924800000.0
+      type: programme
+    - name: Teachers, Education Human Resources and Institutional Development
+      total_budget: 1071308000.0
+      type: programme
+    - name: Planning, Information and Assessment
+      total_budget: 172705000.0
+      type: programme
+    - name: Administration
+      total_budget: 185000.0
+      type: programme
+    - name: Curriculum Policy, Support and Monitoring
+      total_budget: 118000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

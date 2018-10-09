@@ -187,6 +187,66 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Finance
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 101229400.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 99679000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 87806000.0
+      type: programme
+    - name: Asset And Liabilities Management
+      total_budget: 35751000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Financial Governance
+      total_budget: 55360000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 42815000.0
+      type: programme
+    - name: Administration
+      total_budget: 39704000.0
+      type: programme
+    - name: Asset And Liabilities Management
+      total_budget: 15702000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2004000.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 1568000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 1244000.0
+      type: programme
+    - name: Asset And Liabilities Management
+      total_budget: 995000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 100000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 75000.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 52000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

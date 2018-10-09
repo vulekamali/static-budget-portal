@@ -199,6 +199,81 @@ intro: "## Vision\r\n\r\nIntegrated sustainable human settlements.\r\n\r\n\r\n\r
   \ Leadership to operate within the context of Co-operative\r\nGovernance"
 is_vote_primary: true
 name: Co-operative Governance, Human Settlements and Traditional Affairs
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Traditional Institutional Development
+      total_budget: 333854000
+      type: programme
+    - name: Coorperative Governance
+      total_budget: 217128000
+      type: programme
+    - name: Administration
+      total_budget: 172251000
+      type: programme
+    - name: Human Settlements
+      total_budget: 85793000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 108493000
+      type: programme
+    - name: Coorperative Governance
+      total_budget: 31281000
+      type: programme
+    - name: Human Settlements
+      total_budget: 12777000
+      type: programme
+    - name: Traditional Institutional Development
+      total_budget: 10986000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 855000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1120000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Human Settlements
+      total_budget: 1285906000
+      type: programme
+    - name: Administration
+      total_budget: 2918000
+      type: programme
+    - name: Coorperative Governance
+      total_budget: 315000
+      type: programme
+    - name: Traditional Institutional Development
+      total_budget: 105000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Traditional Institutional Development
+      total_budget: 4317000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1061000
+      type: programme
+    - name: Human Settlements
+      total_budget: 167000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

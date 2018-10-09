@@ -179,6 +179,57 @@ intro: "## Vote purpose\n\n_Promote and regulate the minerals and mining sector 
   \ industry.\n\n"
 is_vote_primary: true
 name: Mineral Resources
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 10300000.0
+      type: programme
+    - name: Mine Health and Safety
+      total_budget: 623000.0
+      type: programme
+    - name: Mineral Regulation
+      total_budget: 459000.0
+      type: programme
+    - name: Mineral Policy and Promotion
+      total_budget: 140000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Mineral Policy and Promotion
+      total_budget: 99416000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 280240000.0
+      type: programme
+    - name: Mineral Regulation
+      total_budget: 209457000.0
+      type: programme
+    - name: Mine Health and Safety
+      total_budget: 175217000.0
+      type: programme
+    - name: Mineral Policy and Promotion
+      total_budget: 141187000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Mineral Policy and Promotion
+      total_budget: 648293000.0
+      type: programme
+    - name: Mineral Regulation
+      total_budget: 50527000.0
+      type: programme
+    - name: Administration
+      total_budget: 2683000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

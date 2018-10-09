@@ -175,6 +175,78 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Office Of The Premier
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 114289000.0
+      type: programme
+    - name: Planning, Policy Coordination, Monitoring And Evaluation
+      total_budget: 93755000.0
+      type: programme
+    - name: Institutional Development And Organisational Support
+      total_budget: 85875000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 242103184.0
+      type: programme
+    - name: Institutional Development And Organisational Support
+      total_budget: 85419000.0
+      type: programme
+    - name: Planning, Policy Coordination, Monitoring And Evaluation
+      total_budget: 51759000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 16004000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development And Organisational Support
+      total_budget: 895000.0
+      type: programme
+    name: Payments For Capital Assets - Software And Other Intangible Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Planning, Policy Coordination, Monitoring And Evaluation
+      total_budget: 41429164.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 6000000.0
+      type: programme
+    - name: Planning, Policy Coordination, Monitoring And Evaluation
+      total_budget: 6000000.0
+      type: programme
+    name: Transfers And Subsidies - Higher Education Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development And Organisational Support
+      total_budget: 14999000.0
+      type: programme
+    - name: Planning, Policy Coordination, Monitoring And Evaluation
+      total_budget: 4500000.0
+      type: programme
+    - name: Administration
+      total_budget: 3295774.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Planning, Policy Coordination, Monitoring And Evaluation
+      total_budget: 207073000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

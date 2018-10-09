@@ -218,6 +218,69 @@ intro: "## Vote purpose\n\n_Uphold and protect the Constitution and the rule of 
   of vulnerable groups; and support to chapter 9 institutions.\n\n"
 is_vote_primary: true
 name: Justice and Constitutional Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Court Services
+      total_budget: 772988000.0
+      type: programme
+    - name: Auxiliary and Associated Services
+      total_budget: 358447000.0
+      type: programme
+    - name: National Prosecuting Authority
+      total_budget: 73381000.0
+      type: programme
+    - name: Administration
+      total_budget: 10328000.0
+      type: programme
+    - name: State Legal Services
+      total_budget: 10225000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Court Services
+      total_budget: 4732942000.0
+      type: programme
+    - name: National Prosecuting Authority
+      total_budget: 3285436000.0
+      type: programme
+    - name: Administration
+      total_budget: 1841024000.0
+      type: programme
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 1820809000.0
+      type: programme
+    - name: State Legal Services
+      total_budget: 1005866000.0
+      type: programme
+    - name: Auxiliary and Associated Services
+      total_budget: 617944000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Auxiliary and Associated Services
+      total_budget: 2217153000.0
+      type: programme
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 59960000.0
+      type: programme
+    - name: Court Services
+      total_budget: 20498000.0
+      type: programme
+    - name: State Legal Services
+      total_budget: 16085000.0
+      type: programme
+    - name: National Prosecuting Authority
+      total_budget: 15171000.0
+      type: programme
+    - name: Administration
+      total_budget: 6481000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

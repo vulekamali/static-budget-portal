@@ -167,6 +167,60 @@ intro: "## Vision\n\nLeading a dynamic, sustainable, diversified and vibrant tou
   \ province as a tourism destination; and\r\n* Creativity and innovation."
 is_vote_primary: true
 name: Tourism
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 46871000
+      type: programme
+    - name: Tourism Growth, Development and Transformation
+      total_budget: 18801000
+      type: programme
+    - name: Tourism Planning
+      total_budget: 6366000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 35195000
+      type: programme
+    - name: Tourism Growth, Development and Transformation
+      total_budget: 6702000
+      type: programme
+    - name: Tourism Planning
+      total_budget: 4668000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1755000
+      type: programme
+    - name: Tourism Growth, Development and Transformation
+      total_budget: 111000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Tourism Growth, Development and Transformation
+      total_budget: 35000000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 210000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Tourism Growth, Development and Transformation
+      total_budget: 73582000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

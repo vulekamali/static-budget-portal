@@ -242,6 +242,108 @@ intro: "## Vote purpose\n\n_Contribute to a just, peaceful and safer South Afric
   \ repeat offending.\n\n"
 is_vote_primary: true
 name: Correctional Services
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Incarceration
+      total_budget: 9687247000.0
+      type: programme
+    - name: Administration
+      total_budget: 3181457000.0
+      type: programme
+    - name: Rehabilitation
+      total_budget: 1392300000.0
+      type: programme
+    - name: Care
+      total_budget: 790283000.0
+      type: programme
+    - name: Social Reintegration
+      total_budget: 725400000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Incarceration
+      total_budget: 3394593000.0
+      type: programme
+    - name: Care
+      total_budget: 1196696000.0
+      type: programme
+    - name: Administration
+      total_budget: 868645000.0
+      type: programme
+    - name: Rehabilitation
+      total_budget: 380926000.0
+      type: programme
+    - name: Social Reintegration
+      total_budget: 127143000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Rehabilitation
+      total_budget: 4082000.0
+      type: programme
+    - name: Incarceration
+      total_budget: 1470000.0
+      type: programme
+    name: Payments for capital assets - Biological assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Incarceration
+      total_budget: 759944000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 79295000.0
+      type: programme
+    - name: Rehabilitation
+      total_budget: 45041000.0
+      type: programme
+    - name: Incarceration
+      total_budget: 37791000.0
+      type: programme
+    - name: Care
+      total_budget: 11303000.0
+      type: programme
+    - name: Social Reintegration
+      total_budget: 2523000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 10395000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Incarceration
+      total_budget: 105865000.0
+      type: programme
+    - name: Administration
+      total_budget: 4483000.0
+      type: programme
+    - name: Care
+      total_budget: 392000.0
+      type: programme
+    - name: Social Reintegration
+      total_budget: 185000.0
+      type: programme
+    - name: Rehabilitation
+      total_budget: 62000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 6603000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
   programme_budgets:

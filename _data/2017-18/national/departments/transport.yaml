@@ -358,6 +358,144 @@ intro: '## Vote purpose
   '
 is_vote_primary: true
 name: Transport
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 199838000.0
+      type: programme
+    - name: Road Transport
+      total_budget: 57864000.0
+      type: programme
+    - name: Public Transport
+      total_budget: 52193000.0
+      type: programme
+    - name: Integrated Transport Planning
+      total_budget: 45844000.0
+      type: programme
+    - name: Civil Aviation
+      total_budget: 40365000.0
+      type: programme
+    - name: Maritime Transport
+      total_budget: 28384000.0
+      type: programme
+    - name: Rail Transport
+      total_budget: 25533000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Transport
+      total_budget: 223086000.0
+      type: programme
+    - name: Administration
+      total_budget: 192716000.0
+      type: programme
+    - name: Civil Aviation
+      total_budget: 75349000.0
+      type: programme
+    - name: Maritime Transport
+      total_budget: 66621000.0
+      type: programme
+    - name: Road Transport
+      total_budget: 47979000.0
+      type: programme
+    - name: Integrated Transport Planning
+      total_budget: 35629000.0
+      type: programme
+    - name: Rail Transport
+      total_budget: 18635000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2521000.0
+      type: programme
+    - name: Road Transport
+      total_budget: 682000.0
+      type: programme
+    - name: Civil Aviation
+      total_budget: 421000.0
+      type: programme
+    - name: Maritime Transport
+      total_budget: 329000.0
+      type: programme
+    - name: Public Transport
+      total_budget: 233000.0
+      type: programme
+    - name: Integrated Transport Planning
+      total_budget: 190000.0
+      type: programme
+    - name: Rail Transport
+      total_budget: 105000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Road Transport
+      total_budget: 16161074000.0
+      type: programme
+    - name: Rail Transport
+      total_budget: 59564000.0
+      type: programme
+    - name: Civil Aviation
+      total_budget: 35216000.0
+      type: programme
+    - name: Maritime Transport
+      total_budget: 22489000.0
+      type: programme
+    - name: Administration
+      total_budget: 1161000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Civil Aviation
+      total_budget: 15850000.0
+      type: programme
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 10000000.0
+      type: programme
+    - name: Maritime Transport
+      total_budget: 1869000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Transport
+      total_budget: 389041000.0
+      type: programme
+    - name: Administration
+      total_budget: 10621000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Transport
+      total_budget: 21289000.0
+      type: programme
+    - name: Civil Aviation
+      total_budget: 2668000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Transport
+      total_budget: 11882430000.0
+      type: programme
+    - name: Road Transport
+      total_budget: 10860973000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Rail Transport
+      total_budget: 19216418000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
   programme_budgets:

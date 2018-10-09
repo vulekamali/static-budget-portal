@@ -193,6 +193,72 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Provincial Treasury
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 79251000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 39870000.0
+      type: programme
+    - name: Asset And Liabilities Management
+      total_budget: 39290000.0
+      type: programme
+    - name: Municipal Finance Management
+      total_budget: 32602000.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 23024000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Asset And Liabilities Management
+      total_budget: 33327000.0
+      type: programme
+    - name: Administration
+      total_budget: 32296000.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 18834000.0
+      type: programme
+    - name: Municipal Finance Management
+      total_budget: 10216000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 3588000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2025000.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 68000.0
+      type: programme
+    - name: Asset And Liabilities Management
+      total_budget: 60000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 12000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 369000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Municipal Finance Management
+      total_budget: 33000000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

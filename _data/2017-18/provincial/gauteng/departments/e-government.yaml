@@ -162,6 +162,51 @@ intro: "## Vision\n\n \r\nA connected Gauteng City that leverages technology to 
   \ HR systems in the province"
 is_vote_primary: true
 name: E-Government
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Information Communication Technology(ICT) Shared Services
+      total_budget: 175823000
+      type: programme
+    - name: Administration
+      total_budget: 139667000
+      type: programme
+    - name: Human Resources Services
+      total_budget: 106944000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Information Communication Technology(ICT) Shared Services
+      total_budget: 804601000
+      type: programme
+    - name: Administration
+      total_budget: 95253000
+      type: programme
+    - name: Human Resources Services
+      total_budget: 6900000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 4267000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Information Communication Technology(ICT) Shared Services
+      total_budget: 22800000
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 577000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

@@ -255,6 +255,117 @@ intro: "## Vote purpose\n\nProvide policy formulation for, as well as coordinati
   \n"
 is_vote_primary: true
 name: Public Works
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 263487000.0
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 178080000.0
+      type: programme
+    - name: Intergovernmental Coordination
+      total_budget: 36076000.0
+      type: programme
+    - name: Prestige Policy
+      total_budget: 27596000.0
+      type: programme
+    - name: Property and Construction Industry Policy and Research
+      total_budget: 13108000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 199395000.0
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 148590000.0
+      type: programme
+    - name: Prestige Policy
+      total_budget: 51627000.0
+      type: programme
+    - name: Property and Construction Industry Policy and Research
+      total_budget: 17405000.0
+      type: programme
+    - name: Intergovernmental Coordination
+      total_budget: 16150000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 11585000.0
+      type: programme
+    - name: Prestige Policy
+      total_budget: 8100000.0
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 2764000.0
+      type: programme
+    - name: Intergovernmental Coordination
+      total_budget: 725000.0
+      type: programme
+    - name: Property and Construction Industry Policy and Research
+      total_budget: 300000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Property and Construction Industry Policy and Research
+      total_budget: 4163419000.0
+      type: programme
+    - name: Prestige Policy
+      total_budget: 10368000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Property and Construction Industry Policy and Research
+      total_budget: 27523000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 5876000.0
+      type: programme
+    - name: Intergovernmental Coordination
+      total_budget: 5150000.0
+      type: programme
+    - name: Property and Construction Industry Policy and Research
+      total_budget: 236000.0
+      type: programme
+    - name: Prestige Policy
+      total_budget: 200000.0
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 178000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Expanded Public Works Programme
+      total_budget: 720158000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Expanded Public Works Programme
+      total_budget: 1516862000.0
+      type: programme
+    - name: Administration
+      total_budget: 6000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Property and Construction Industry Policy and Research
+      total_budget: 28362000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   programme_budgets:

@@ -225,6 +225,120 @@ intro: "## Vote purpose\n\nContribute to sustainable economic development and en
   \ and culture sector so as to accelerate its transformation.\n\n\n"
 is_vote_primary: true
 name: Arts and Culture
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 107118000.0
+      type: programme
+    - name: Heritage Promotion and Preservation
+      total_budget: 54255000.0
+      type: programme
+    - name: Arts and Culture Promotion and Development
+      total_budget: 51801000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 40356000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 185549000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 87243000.0
+      type: programme
+    - name: Arts and Culture Promotion and Development
+      total_budget: 64314000.0
+      type: programme
+    - name: Heritage Promotion and Preservation
+      total_budget: 50006000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Governance
+      total_budget: 218478000.0
+      type: programme
+    name: Payments for capital assets - Heritage assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 8177000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Governance
+      total_budget: 6267000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Heritage Promotion and Preservation
+      total_budget: 920940000.0
+      type: programme
+    - name: Arts and Culture Promotion and Development
+      total_budget: 777149000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 9000000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Governance
+      total_budget: 2865000.0
+      type: programme
+    - name: Heritage Promotion and Preservation
+      total_budget: 1944000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Arts and Culture Promotion and Development
+      total_budget: 7128000.0
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Arts and Culture Promotion and Development
+      total_budget: 14785000.0
+      type: programme
+    - name: Heritage Promotion and Preservation
+      total_budget: 5923000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Arts and Culture Promotion and Development
+      total_budget: 140288000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 24409000.0
+      type: programme
+    - name: Heritage Promotion and Preservation
+      total_budget: 14228000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Heritage Promotion and Preservation
+      total_budget: 1423684000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Arts and Culture Promotion and Development
+      total_budget: 128948000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 27409000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   programme_budgets:

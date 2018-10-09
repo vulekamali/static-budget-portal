@@ -152,6 +152,45 @@ intro: "## Vote purpose\n\nFacilitate a common programme towards the achievement
   \ by the deputy president, as articulated in chapter 5 of the Constitution. \n\n"
 is_vote_primary: true
 name: The Presidency
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 304961000.0
+      type: programme
+    - name: Executive Support
+      total_budget: 17232000.0
+      type: programme
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 6742000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 139972000.0
+      type: programme
+    - name: Executive Support
+      total_budget: 31190000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 11032000.0
+      type: programme
+    - name: Executive Support
+      total_budget: 1155000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 38000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   programme_budgets:
