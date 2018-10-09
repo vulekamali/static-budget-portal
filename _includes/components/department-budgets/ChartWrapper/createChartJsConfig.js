@@ -57,7 +57,7 @@ const createModifyLabel = (target, fontString) => ({ label, height, x, y, maxWid
   target.textBaseline = 'top';
   target.fillStyle = isHeading ? 'grey' : color;
   target.textAlign = align;
-  target.fillText(truncatedLabel, isHeading ? 0 : textX, textY);
+  target.fillText(truncatedLabel, isHeading ? 0 : textX, isHeading ? textY + 3 : textY);
 };
 
 
@@ -129,7 +129,6 @@ function createChartJsConfig({ labels, values }) {
             beginAtZero: true,
             maxRotation: 0,
             callback: value => trimValues(value),
-            maxTicksLimit: 5,
           },
           gridLines: {
             display: false,
