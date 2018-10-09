@@ -42,17 +42,17 @@ layout: page-shell
       </div>
     </div>
 
+    {% for item in page_data.treasury_datasets %}
+      {% assign modified_formats = item[1].formats | sort: 'format' %}
+      {% assign pdf_link = modified_formats[0].url %}
+      {% assign excel_link = modified_formats[1].url %}
+    {% endfor %}
+
+    {% assign pdf_text = "Download " | append: short_estimate | append: " as PDF" %}
+    {% assign excel_text = "Download " | append: short_estimate | append: " as Excel" %}
+
     <div class="u-marginTop20">
       {% if page_data.economic_classification_by_programme.programmes %}
-        {% for item in page_data.treasury_datasets %}
-          {% assign modified_formats = item[1].formats | sort: 'format' %}
-          {% assign pdf_link = modified_formats[0].url %}
-          {% assign excel_link = modified_formats[1].url %}
-        {% endfor %}
-
-        {% assign pdf_text = "Download " | append: short_estimate | append: " as PDF" %}
-        {% assign excel_text = "Download " | append: short_estimate | append: " as Excel" %}
-
         {%
           include components/department-budgets/SmallMultiplesSection/index.html
           title="Economic classification of expenditure for each Programme"
@@ -60,6 +60,23 @@ layout: page-shell
           charts_list=page_data.economic_classification_by_programme.programmes
 
           detail_link=page_data.economic_classification_by_programme.dataset_detail_page
+          pdf_text=pdf_text
+          pdf_link=pdf_link
+          excel_text=excel_text
+          excel_link=excel_link
+        %}
+      {% endif %}
+    </div>
+
+    <div class="u-marginTop20">
+      {% if page_data.programme_by_economic_classification.econ_classes %}
+        {%
+          include components/department-budgets/SmallMultiplesSection/index.html
+          title="Programme expenditure for Economic Classifications"
+          description="Each chart shows the spending of each Programme under that Economic Classification. More detail is available in the dataset."
+          charts_list=page_data.programme_by_economic_classification.econ_classes
+
+          detail_link=page_data.programme_by_economic_classification.dataset_detail_page
           pdf_text=pdf_text
           pdf_link=pdf_link
           excel_text=excel_text
