@@ -42,58 +42,31 @@ layout: page-shell
       </div>
     </div>
 
-    {% if page_data.economic_classification_by_programme.programmes %}
-      <div class="Section is-bevel u-marginTop20 u-padding30">
-        <h3 class="Section-title">Economic classification of expenditure for each Programme</h3>
-        <p>Each chart shows the economic classification of spending under that Programme. More detail is available in the dataset.</p>
-        <div class="Grid has-threeColumn">
-          {% for programme in page_data.economic_classification_by_programme.programmes %}
-          <div class="BasicContent u-marginTop10">
-            <div class="BasicContent-title is-small">{{ programme.name }}</div>
-            <div 
-              data-component="SmallMultiple"
-              data-items="{{ programme.items | jsonify | escape }}"
-            >
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-
-        <div class="u-marginTop25 u-marginLeft25">
-          {%
-            include components/universal/Download/index.html
-            link=page_data.economic_classification_by_programme.dataset_detail_page
-            title="View this data"
-          %}
-        </div>
-
-        {% assign pdfButton = "Download " | append: short_estimate | append: " as PDF" %}
-        {% assign excelButton = "Download " | append: short_estimate | append: " as Excel" %}
-
+    <div class="u-marginTop20">
+      {% if page_data.economic_classification_by_programme.programmes %}
         {% for item in page_data.treasury_datasets %}
-          {% assign modifiedFormats = item[1].formats | sort: 'format' %}
-            {% assign pdfLink = modifiedFormats[0].url %}
-            {% assign excelLink = modifiedFormats[1].url %}
-
-            <div>
-              {%
-                include components/universal/Download/index.html
-                link=pdfLink
-                title=pdfButton
-                icon="true"
-              %}
-            </div>
-            <div>
-              {%
-                include components/universal/Download/index.html
-                link=excelLink
-                title=excelButton
-                icon="true"
-              %}
-          </div>
+          {% assign modified_formats = item[1].formats | sort: 'format' %}
+          {% assign pdf_link = modified_formats[0].url %}
+          {% assign excel_link = modified_formats[1].url %}
         {% endfor %}
-      </div>
-    {% endif %}
+
+        {% assign pdf_text = "Download " | append: short_estimate | append: " as PDF" %}
+        {% assign excel_text = "Download " | append: short_estimate | append: " as Excel" %}
+
+        {%
+          include components/department-budgets/SmallMultiplesSection/index.html
+          title="Economic classification of expenditure for each Programme"
+          description="Each chart shows the economic classification of spending under that Programme. More detail is available in the dataset."
+          charts_list=page_data.economic_classification_by_programme.programmes
+
+          detail_link=page_data.economic_classification_by_programme.dataset_detail_page
+          pdf_text=pdf_text
+          pdf_link=pdf_link
+          excel_text=excel_text
+          excel_link=excel_link
+        %}
+      {% endif %}
+    </div>
 
     <div class="u-marginTop20">
       <div

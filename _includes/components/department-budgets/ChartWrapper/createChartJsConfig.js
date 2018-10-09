@@ -9,7 +9,7 @@ const calcLabelPosition = (height, x, y, maxWidth) => {
       textX: x - (height / 3),
       textY: y - 7,
       align: 'right',
-      color: '#2d520d',
+      color: 'black',
       space: x - (((height / 3) * 2) + 20),
     };
   }
@@ -18,7 +18,7 @@ const calcLabelPosition = (height, x, y, maxWidth) => {
     textX: x + (height / 3),
     textY: y - 7,
     align: 'left',
-    color: '#2d520d',
+    color: 'black',
     space: maxWidth - (x + (((height / 3) * 2) + 20)),
   };
 };
@@ -44,7 +44,7 @@ const calcLabelTruncate = (target, space, label) => {
 
 const createModifyLabel = (target, fontString) => ({ label, height, x, y, maxWidth }) => {
   const { textX, textY, align, color, space } = calcLabelPosition(height, x, y, maxWidth);
-  const fontFallbacks = 'Source Sans, sans-serif';
+  const fontFallbacks = '\'Source Sans\', sans-serif';
 
   const regexArray = label.match(/(^heading:\s)(.+)/im)
   const isHeading = /(^heading:\s)(.+)/im.test(label);
@@ -57,7 +57,7 @@ const createModifyLabel = (target, fontString) => ({ label, height, x, y, maxWid
   target.textBaseline = 'top';
   target.fillStyle = isHeading ? 'grey' : color;
   target.textAlign = align;
-  target.fillText(truncatedLabel, isHeading ? 0 : textX, textY);
+  target.fillText(truncatedLabel, isHeading ? 0 : textX, isHeading ? textY + 3 : textY);
 };
 
 
@@ -129,7 +129,6 @@ function createChartJsConfig({ labels, values }) {
             beginAtZero: true,
             maxRotation: 0,
             callback: value => trimValues(value),
-            maxTicksLimit: 5,
           },
           gridLines: {
             display: false,

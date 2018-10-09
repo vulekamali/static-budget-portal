@@ -1,0 +1,51 @@
+<div class="Section is-bevel">
+  <div class="u-marginTop25 u-marginLeft30">
+    <h3 class="Section-title">{{ include.title }}</h3>
+    <p>{{ include.description }}</p>
+  </div>
+
+  <div class="Grid has-threeColumn">
+    {% for chart in include.charts_list %}
+    <div class="BasicPreview is-fullHeight is-topAlign u-marginTop10">
+      <div class="BasicPreview-heading">{{ chart.name }}</div>
+      <div 
+        data-component="SmallMultiple"
+        data-items="{{ chart.items | jsonify | escape }}"
+      >
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  {% if include.detail_link %}
+    <div class="u-marginTop25 u-marginLeft25">
+      {%
+        include components/universal/Download/index.html
+        link=include.detail_link
+        title="View this data"
+      %}
+    </div>
+  {% endif %}
+
+  {% if include.pdf_text %}
+    <div>
+      {%
+        include components/universal/Download/index.html
+        link=include.pdf_link
+        title=include.pdf_text
+        icon="true"
+      %}
+    </div>
+  {% endif %}
+
+  {% if include.excel_text %}
+    <div>
+      {%
+        include components/universal/Download/index.html
+        link=include.excel_link
+        title=include.excel_text
+        icon="true"
+      %}
+    </div>
+  {% endif %}
+</div>
