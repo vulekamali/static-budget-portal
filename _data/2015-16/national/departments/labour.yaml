@@ -179,6 +179,51 @@ intro: "## Vote purpose\n\n_Play a significant role in reducing unemployment, po
   \n  \n\n"
 is_vote_primary: true
 name: Labour
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 46535000.0
+      type: programme
+    - name: Public Employment Services
+      total_budget: 300000.0
+      type: programme
+    - name: Labour Policy and Industrial Relations
+      total_budget: 22000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 798368000.0
+      type: programme
+    - name: Inspection and Enforcement Services
+      total_budget: 430716000.0
+      type: programme
+    - name: Public Employment Services
+      total_budget: 327916000.0
+      type: programme
+    - name: Labour Policy and Industrial Relations
+      total_budget: 126794000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Labour Policy and Industrial Relations
+      total_budget: 795865000.0
+      type: programme
+    - name: Public Employment Services
+      total_budget: 160081000.0
+      type: programme
+    - name: Administration
+      total_budget: 208000.0
+      type: programme
+    - name: Inspection and Enforcement Services
+      total_budget: 62000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

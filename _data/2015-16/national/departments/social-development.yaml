@@ -206,6 +206,60 @@ intro: "## Vote purpose\n\n_Ensure protection against vulnerability by creating 
   \n"
 is_vote_primary: true
 name: Social Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Welfare Services Policy Development and Implementation Support
+      total_budget: 4602000.0
+      type: programme
+    - name: Administration
+      total_budget: 2889000.0
+      type: programme
+    - name: Social Security Policy and Administration
+      total_budget: 1413000.0
+      type: programme
+    - name: Social Policy and Integrated Service Delivery
+      total_budget: 732000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Welfare Services Policy Development and Implementation Support
+      total_budget: 47500000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 294126000.0
+      type: programme
+    - name: Welfare Services Policy Development and Implementation Support
+      total_budget: 255174000.0
+      type: programme
+    - name: Social Policy and Integrated Service Delivery
+      total_budget: 119895000.0
+      type: programme
+    - name: Social Security Policy and Administration
+      total_budget: 95422000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Social Assistance
+      total_budget: 130093278000.0
+      type: programme
+    - name: Social Security Policy and Administration
+      total_budget: 6659330000.0
+      type: programme
+    - name: Welfare Services Policy Development and Implementation Support
+      total_budget: 355086000.0
+      type: programme
+    - name: Social Policy and Integrated Service Delivery
+      total_budget: 239193000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

@@ -201,6 +201,75 @@ intro: "## Vision\n\nThe vision of the department is: Together breaking new grou
   \n\r\n* To administer and manage housing subsidies of targeted groups."
 is_vote_primary: true
 name: Human Settlements
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Housing Development
+      total_budget: 169239000
+      type: programme
+    - name: Administration
+      total_budget: 125871000
+      type: programme
+    - name: Housing Needs, Research and  Planning
+      total_budget: 14524000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 71352000
+      type: programme
+    - name: Housing Development
+      total_budget: 45429000
+      type: programme
+    - name: Housing Needs, Research and  Planning
+      total_budget: 2379000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 22026000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3138000
+      type: programme
+    - name: Housing Development
+      total_budget: 815000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Asset Management, Property Management
+      total_budget: 206368000
+      type: programme
+    - name: Housing Development
+      total_budget: 14000000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 3043632000
+      type: programme
+    - name: Administration
+      total_budget: 637000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 124210000
+      type: programme
+    - name: Administration
+      total_budget: 250000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

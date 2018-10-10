@@ -283,6 +283,129 @@ intro: "## Vision\r\n\r\nUnited, prosperous and productive agricultural sector f
   \ and transfer, regulatory function and financial support to\r\nagriculture."
 is_vote_primary: true
 name: Agriculture
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 674435000
+      type: programme
+    - name: Administration
+      total_budget: 243120000
+      type: programme
+    - name: Structured Agricultural Education and Training
+      total_budget: 73082000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 52271000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 44787000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 41048000
+      type: programme
+    - name: Agriculural Economics Services
+      total_budget: 20012000
+      type: programme
+    - name: Rural development Co-ordination
+      total_budget: 4791000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 203549000
+      type: programme
+    - name: Administration
+      total_budget: 96199000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 36789000
+      type: programme
+    - name: Structured Agricultural Education and Training
+      total_budget: 30273000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 17202000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 9607000
+      type: programme
+    - name: Agriculural Economics Services
+      total_budget: 4431000
+      type: programme
+    - name: Rural development Co-ordination
+      total_budget: 1646000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 2051000
+      type: programme
+    name: Payments for capital assets - Biological assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 24800000
+      type: programme
+    - name: Structured Agricultural Education and Training
+      total_budget: 8914000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 800000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 17960000
+      type: programme
+    - name: Farmer Support and Development
+      total_budget: 9514000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 4350000
+      type: programme
+    - name: Structured Agricultural Education and Training
+      total_budget: 1678000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 786000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 472000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 145541000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 5900000
+      type: programme
+    - name: Administration
+      total_budget: 5564000
+      type: programme
+    - name: Structured Agricultural Education and Training
+      total_budget: 960000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 60000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 180000
+      type: programme
+    - name: Farmer Support and Development
+      total_budget: 140000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

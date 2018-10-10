@@ -230,6 +230,99 @@ intro: "## Vision\n\nTo be the heartbeat of sound financial management that supp
   \ statements for the Province.\r\n"
 is_vote_primary: true
 name: Provincial Treasury
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 48690000
+      type: programme
+    - name: Sustainable Resource
+      total_budget: 36356000
+      type: programme
+    - name: Assets and Liabilities Management
+      total_budget: 32932000
+      type: programme
+    - name: Provincial Internal Audit
+      total_budget: 23170000
+      type: programme
+    - name: Financial Governance
+      total_budget: 16994000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 28215000
+      type: programme
+    - name: Assets and Liabilities Management
+      total_budget: 10886000
+      type: programme
+    - name: Sustainable Resource
+      total_budget: 4429000
+      type: programme
+    - name: Financial Governance
+      total_budget: 4238000
+      type: programme
+    - name: Provincial Internal Audit
+      total_budget: 2044000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Assets and Liabilities Management
+      total_budget: 15000
+      type: programme
+    name: Current payments - Interest and rent on land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 805000
+      type: programme
+    - name: Provincial Internal Audit
+      total_budget: 605000
+      type: programme
+    - name: Assets and Liabilities Management
+      total_budget: 508000
+      type: programme
+    - name: Sustainable Resource
+      total_budget: 504000
+      type: programme
+    - name: Financial Governance
+      total_budget: 217000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 270000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 19000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 396000
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 200000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 53000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

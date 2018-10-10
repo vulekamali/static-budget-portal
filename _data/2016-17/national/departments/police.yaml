@@ -247,6 +247,117 @@ intro: "## Vote purpose\n\n_Prevent, combat and investigate crime, maintain publ
   \ and combat crime.\n\n"
 is_vote_primary: true
 name: Police
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Visible Policing
+      total_budget: 32304514000.0
+      type: programme
+    - name: Detective Services
+      total_budget: 13227372000.0
+      type: programme
+    - name: Administration
+      total_budget: 11205496000.0
+      type: programme
+    - name: Crime Intelligence
+      total_budget: 3053973000.0
+      type: programme
+    - name: Protection and Security Services
+      total_budget: 2279084000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Visible Policing
+      total_budget: 7282983000.0
+      type: programme
+    - name: Administration
+      total_budget: 4378069000.0
+      type: programme
+    - name: Detective Services
+      total_budget: 2807892000.0
+      type: programme
+    - name: Crime Intelligence
+      total_budget: 244390000.0
+      type: programme
+    - name: Protection and Security Services
+      total_budget: 223788000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 5700000.0
+      type: programme
+    name: Payments for capital assets - Biological assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1051350000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Visible Policing
+      total_budget: 874641000.0
+      type: programme
+    - name: Detective Services
+      total_budget: 667456000.0
+      type: programme
+    - name: Administration
+      total_budget: 275848000.0
+      type: programme
+    - name: Protection and Security Services
+      total_budget: 101165000.0
+      type: programme
+    - name: Crime Intelligence
+      total_budget: 40132000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 149440000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 486734000.0
+      type: programme
+    - name: Visible Policing
+      total_budget: 191842000.0
+      type: programme
+    - name: Detective Services
+      total_budget: 77285000.0
+      type: programme
+    - name: Crime Intelligence
+      total_budget: 10998000.0
+      type: programme
+    - name: Protection and Security Services
+      total_budget: 4132000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Visible Policing
+      total_budget: 21775000.0
+      type: programme
+    - name: Detective Services
+      total_budget: 9604000.0
+      type: programme
+    - name: Administration
+      total_budget: 7174000.0
+      type: programme
+    - name: Crime Intelligence
+      total_budget: 1041000.0
+      type: programme
+    - name: Protection and Security Services
+      total_budget: 973000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   programme_budgets:

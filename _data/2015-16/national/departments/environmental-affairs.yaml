@@ -251,6 +251,84 @@ intro: "## Vote purpose\n\n_Lead South Africa\u2019s environmental sector to ach
   \ use of natural resources.\n\n"
 is_vote_primary: true
 name: Environmental Affairs
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 118799000.0
+      type: programme
+    - name: Environmental Programmes
+      total_budget: 22196000.0
+      type: programme
+    - name: Oceans and Coasts
+      total_budget: 13822000.0
+      type: programme
+    - name: Climate Change and Air Quality
+      total_budget: 1113000.0
+      type: programme
+    - name: Legal, Authorisations and Compliance
+      total_budget: 917000.0
+      type: programme
+    - name: Biodiversity and Conservation
+      total_budget: 683000.0
+      type: programme
+    - name: Chemicals and Waste Management
+      total_budget: 572000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Programmes
+      total_budget: 491708000.0
+      type: programme
+    - name: Biodiversity and Conservation
+      total_budget: 31381000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Programmes
+      total_budget: 695489000.0
+      type: programme
+    - name: Administration
+      total_budget: 579250000.0
+      type: programme
+    - name: Oceans and Coasts
+      total_budget: 470707000.0
+      type: programme
+    - name: Legal, Authorisations and Compliance
+      total_budget: 126600000.0
+      type: programme
+    - name: Biodiversity and Conservation
+      total_budget: 110678000.0
+      type: programme
+    - name: Climate Change and Air Quality
+      total_budget: 77213000.0
+      type: programme
+    - name: Chemicals and Waste Management
+      total_budget: 67177000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Programmes
+      total_budget: 2437471000.0
+      type: programme
+    - name: Biodiversity and Conservation
+      total_budget: 512858000.0
+      type: programme
+    - name: Climate Change and Air Quality
+      total_budget: 161823000.0
+      type: programme
+    - name: Administration
+      total_budget: 16000000.0
+      type: programme
+    - name: Chemicals and Waste Management
+      total_budget: 11532000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

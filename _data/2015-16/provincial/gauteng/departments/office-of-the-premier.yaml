@@ -165,6 +165,48 @@ intro: "## Vision\n\nLeadership for an integrated city-region, characterised by 
   \ partnerships that support the development agenda.\r\n\r\n\r\n\r\n"
 is_vote_primary: true
 name: Office of the Premier
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Institutional Development
+      total_budget: 126502000
+      type: programme
+    - name: Administration
+      total_budget: 53436000
+      type: programme
+    - name: Policy & Governance
+      total_budget: 48591000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy & Governance
+      total_budget: 66683000
+      type: programme
+    - name: Institutional Development
+      total_budget: 66664000
+      type: programme
+    - name: Administration
+      total_budget: 40944000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2980000
+      type: programme
+    - name: Institutional Development
+      total_budget: 1650000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy & Governance
+      total_budget: 18005000
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

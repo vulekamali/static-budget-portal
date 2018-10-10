@@ -209,6 +209,69 @@ intro: "## Vision\n\nA radically transformed, modernised and re-industrialised e
   \ sustainability."
 is_vote_primary: true
 name: Economic Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 116587000
+      type: programme
+    - name: Economic Planning
+      total_budget: 55901000
+      type: programme
+    - name: Business Regulation And Governance
+      total_budget: 31070000
+      type: programme
+    - name: Integrated Economic Development Services
+      total_budget: 21653000
+      type: programme
+    - name: Trade And Sector Development
+      total_budget: 5415000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic Planning
+      total_budget: 148716000
+      type: programme
+    - name: Administration
+      total_budget: 95023000
+      type: programme
+    - name: Business Regulation And Governance
+      total_budget: 19510000
+      type: programme
+    - name: Integrated Economic Development Services
+      total_budget: 274000
+      type: programme
+    - name: Trade And Sector Development
+      total_budget: 100000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 10500000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 5000000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Trade And Sector Development
+      total_budget: 618803000
+      type: programme
+    - name: Integrated Economic Development Services
+      total_budget: 176418000
+      type: programme
+    - name: Business Regulation And Governance
+      total_budget: 26669000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

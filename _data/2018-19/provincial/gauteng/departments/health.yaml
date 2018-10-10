@@ -310,6 +310,156 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Health
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Central Hospital Services
+      total_budget: 10627379000.0
+      type: programme
+    - name: District Health Services
+      total_budget: 7714913000.0
+      type: programme
+    - name: Provincial Hospital Services
+      total_budget: 6331558000.0
+      type: programme
+    - name: Health Sciences And Training
+      total_budget: 850291000.0
+      type: programme
+    - name: Emergency Medical Services
+      total_budget: 527405000.0
+      type: programme
+    - name: Administration
+      total_budget: 436135000.0
+      type: programme
+    - name: Health Care Support Services
+      total_budget: 180597000.0
+      type: programme
+    - name: Health Facilities Management
+      total_budget: 37869000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: District Health Services
+      total_budget: 6558454000.0
+      type: programme
+    - name: Central Hospital Services
+      total_budget: 5058214000.0
+      type: programme
+    - name: Provincial Hospital Services
+      total_budget: 2333011000.0
+      type: programme
+    - name: Health Facilities Management
+      total_budget: 843855000.0
+      type: programme
+    - name: Administration
+      total_budget: 442887000.0
+      type: programme
+    - name: Emergency Medical Services
+      total_budget: 385535000.0
+      type: programme
+    - name: Health Care Support Services
+      total_budget: 120083000.0
+      type: programme
+    - name: Health Sciences And Training
+      total_budget: 66210000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Health Facilities Management
+      total_budget: 949457000.0
+      type: programme
+    - name: District Health Services
+      total_budget: 240000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Central Hospital Services
+      total_budget: 742723000.0
+      type: programme
+    - name: District Health Services
+      total_budget: 155328000.0
+      type: programme
+    - name: Emergency Medical Services
+      total_budget: 135500000.0
+      type: programme
+    - name: Provincial Hospital Services
+      total_budget: 85565000.0
+      type: programme
+    - name: Health Facilities Management
+      total_budget: 45510000.0
+      type: programme
+    - name: Administration
+      total_budget: 12466000.0
+      type: programme
+    - name: Health Care Support Services
+      total_budget: 8930000.0
+      type: programme
+    - name: Health Sciences And Training
+      total_budget: 8529000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Health Sciences And Training
+      total_budget: 20962000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Health Sciences And Training
+      total_budget: 13681000.0
+      type: programme
+    name: Transfers And Subsidies - Higher Education Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Health Sciences And Training
+      total_budget: 83720000.0
+      type: programme
+    - name: Central Hospital Services
+      total_budget: 47640000.0
+      type: programme
+    - name: District Health Services
+      total_budget: 28202000.0
+      type: programme
+    - name: Provincial Hospital Services
+      total_budget: 18378000.0
+      type: programme
+    - name: Emergency Medical Services
+      total_budget: 2650000.0
+      type: programme
+    - name: Administration
+      total_budget: 2450000.0
+      type: programme
+    - name: Health Care Support Services
+      total_budget: 645000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: District Health Services
+      total_budget: 464528000.0
+      type: programme
+    - name: Central Hospital Services
+      total_budget: 200000000.0
+      type: programme
+    - name: Provincial Hospital Services
+      total_budget: 104556000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Emergency Medical Services
+      total_budget: 399795000.0
+      type: programme
+    - name: District Health Services
+      total_budget: 383475000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

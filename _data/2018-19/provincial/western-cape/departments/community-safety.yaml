@@ -208,6 +208,93 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Community Safety
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Security Risk Management
+      total_budget: 55120000.0
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 44804000.0
+      type: programme
+    - name: Administration
+      total_budget: 43841000.0
+      type: programme
+    - name: Provincial Policing Functions
+      total_budget: 7225000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Security Risk Management
+      total_budget: 46404000.0
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 22552000.0
+      type: programme
+    - name: Provincial Policing Functions
+      total_budget: 14150000.0
+      type: programme
+    - name: Administration
+      total_budget: 7883000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Security Risk Management
+      total_budget: 2723000.0
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 2338000.0
+      type: programme
+    - name: Administration
+      total_budget: 1360000.0
+      type: programme
+    - name: Provincial Policing Functions
+      total_budget: 518000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 39882000.0
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 400000.0
+      type: programme
+    - name: Security Risk Management
+      total_budget: 2000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Provincial Policing Functions
+      total_budget: 13327000.0
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 3493000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Provincial Policing Functions
+      total_budget: 6152000.0
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 160000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Provincial Policing Functions
+      total_budget: 3938000.0
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 345000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

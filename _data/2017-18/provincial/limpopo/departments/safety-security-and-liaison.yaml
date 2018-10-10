@@ -149,6 +149,45 @@ intro: "## Vision\n\nA safe and secure Limpopo\r\n\r\n\n\n## Mission\n\nTo inten
   \ enhance public education on safety and security."
 is_vote_primary: true
 name: Safety, Security and Liaison
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Civilian Oversight
+      total_budget: 37669000
+      type: programme
+    - name: Administration
+      total_budget: 34387000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Civilian Oversight
+      total_budget: 16776000
+      type: programme
+    - name: Administration
+      total_budget: 14016000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 760000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Civilian Oversight
+      total_budget: 100000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 5000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

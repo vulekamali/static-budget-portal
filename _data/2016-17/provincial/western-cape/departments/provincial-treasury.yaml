@@ -197,6 +197,78 @@ intro: "## Vision\n\nGood financial governance\r\n\r\n\n\n## Mission\n\n \r\n* T
   \ activities and compliance with financial norms and standards\r\n\r\n\r\n"
 is_vote_primary: true
 name: Provincial Treasury
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Sustainable Resource Management
+      total_budget: 70913000
+      type: programme
+    - name: Asset Management
+      total_budget: 35238000
+      type: programme
+    - name: Financial Governance
+      total_budget: 29581000
+      type: programme
+    - name: Administration
+      total_budget: 29496000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Asset Management
+      total_budget: 21093000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 16879000
+      type: programme
+    - name: Administration
+      total_budget: 11324000
+      type: programme
+    - name: Financial Governance
+      total_budget: 6935000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3215000
+      type: programme
+    - name: Financial Governance
+      total_budget: 240000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 25000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Sustainable Resource Management
+      total_budget: 9908000
+      type: programme
+    - name: Administration
+      total_budget: 3000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Sustainable Resource Management
+      total_budget: 2776000
+      type: programme
+    - name: Asset Management
+      total_budget: 1599000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Sustainable Resource Management
+      total_budget: 21514000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

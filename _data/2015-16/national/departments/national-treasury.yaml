@@ -310,6 +310,120 @@ intro: "## Vote purpose\n\n_Support economic growth and development, good govern
   \n"
 is_vote_primary: true
 name: National Treasury
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 9231000.0
+      type: programme
+    - name: Financial Accounting and Supply Chain Management Systems
+      total_budget: 4694000.0
+      type: programme
+    - name: Public Finance and Budget Management
+      total_budget: 1300000.0
+      type: programme
+    - name: Asset and Liability Management
+      total_budget: 610000.0
+      type: programme
+    - name: Economic Policy, Tax, Financial Regulation and Research
+      total_budget: 451000.0
+      type: programme
+    - name: International Financial Relations
+      total_budget: 117000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Revenue Administration
+      total_budget: 943444000.0
+      type: programme
+    - name: Technical Support and Development Finance
+      total_budget: 858847000.0
+      type: programme
+    - name: Financial Intelligence and State Security
+      total_budget: 342984000.0
+      type: programme
+    - name: International Financial Relations
+      total_budget: 117165000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 126440428000.0
+      type: programme
+    - name: Financial Accounting and Supply Chain Management Systems
+      total_budget: 664639000.0
+      type: programme
+    - name: Technical Support and Development Finance
+      total_budget: 406267000.0
+      type: programme
+    - name: Administration
+      total_budget: 353844000.0
+      type: programme
+    - name: Public Finance and Budget Management
+      total_budget: 215109000.0
+      type: programme
+    - name: Economic Policy, Tax, Financial Regulation and Research
+      total_budget: 105881000.0
+      type: programme
+    - name: Asset and Liability Management
+      total_budget: 92320000.0
+      type: programme
+    - name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+      total_budget: 61181000.0
+      type: programme
+    - name: International Financial Relations
+      total_budget: 48874000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 393332386000.0
+      type: programme
+    - name: Revenue Administration
+      total_budget: 8490995000.0
+      type: programme
+    - name: Financial Intelligence and State Security
+      total_budget: 4199821000.0
+      type: programme
+    - name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+      total_budget: 3901760000.0
+      type: programme
+    - name: Technical Support and Development Finance
+      total_budget: 1878749000.0
+      type: programme
+    - name: International Financial Relations
+      total_budget: 734602000.0
+      type: programme
+    - name: Financial Accounting and Supply Chain Management Systems
+      total_budget: 82029000.0
+      type: programme
+    - name: Public Finance and Budget Management
+      total_budget: 40556000.0
+      type: programme
+    - name: Economic Policy, Tax, Financial Regulation and Research
+      total_budget: 27560000.0
+      type: programme
+    - name: Administration
+      total_budget: 3590000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Asset and Liability Management
+      total_budget: 3024000000.0
+      type: programme
+    - name: International Financial Relations
+      total_budget: 346684000.0
+      type: programme
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 121000000.0
+      type: programme
+    name: Payments for financial assets - Payments for financial assets
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

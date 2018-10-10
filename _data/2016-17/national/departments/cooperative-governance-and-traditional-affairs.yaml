@@ -234,6 +234,96 @@ intro: "## Vote purpose\n\n_Improve cooperative governance across the three sphe
   \n"
 is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 119906000.0
+      type: programme
+    - name: Community Work Programme
+      total_budget: 63483000.0
+      type: programme
+    - name: Local Government Support and Intervention Management
+      total_budget: 58348000.0
+      type: programme
+    - name: Institutional Development
+      total_budget: 33211000.0
+      type: programme
+    - name: National Disaster Management Centre
+      total_budget: 27348000.0
+      type: programme
+    - name: Regional and Urban Development and Legislative Support
+      total_budget: 18225000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Community Work Programme
+      total_budget: 3127702000.0
+      type: programme
+    - name: Administration
+      total_budget: 141458000.0
+      type: programme
+    - name: Institutional Development
+      total_budget: 126530000.0
+      type: programme
+    - name: National Disaster Management Centre
+      total_budget: 47725000.0
+      type: programme
+    - name: Local Government Support and Intervention Management
+      total_budget: 21211000.0
+      type: programme
+    - name: Regional and Urban Development and Legislative Support
+      total_budget: 16529000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 5000000.0
+      type: programme
+    - name: National Disaster Management Centre
+      total_budget: 2347000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 479687000.0
+      type: programme
+    - name: Local Government Support and Intervention Management
+      total_budget: 87720000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Local Government Support and Intervention Management
+      total_budget: 309276000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Local Government Support and Intervention Management
+      total_budget: 6619000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 67482734000.0
+      type: programme
+    - name: National Disaster Management Centre
+      total_budget: 521467000.0
+      type: programme
+    - name: Regional and Urban Development and Legislative Support
+      total_budget: 297422000.0
+      type: programme
+    - name: Administration
+      total_budget: 100000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   programme_budgets:

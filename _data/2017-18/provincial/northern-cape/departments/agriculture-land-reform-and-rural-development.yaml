@@ -266,6 +266,108 @@ intro: "## Core functions and responsibilities of the department\r\n\r\n* Coordi
   \ all."
 is_vote_primary: true
 name: Agriculture, Land Reform and Rural Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 75210000
+      type: programme
+    - name: Farmer Support and Development
+      total_budget: 49055000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 39781000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 36362000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 20205000
+      type: programme
+    - name: Rural Development
+      total_budget: 10165000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 9098000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 96114000
+      type: programme
+    - name: Administration
+      total_budget: 37830000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 14882000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 12581000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 9505000
+      type: programme
+    - name: Rural Development
+      total_budget: 3890000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 2198000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 134488000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 11261000
+      type: programme
+    - name: Administration
+      total_budget: 827000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 364000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 256000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 138000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 82000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 48000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 14000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 40400000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 2550000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2000000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

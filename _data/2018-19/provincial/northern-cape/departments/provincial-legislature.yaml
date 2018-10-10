@@ -169,6 +169,60 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Provincial Legislature
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Institutional Development
+      total_budget: 57762000.0
+      type: programme
+    - name: Administration
+      total_budget: 55726000.0
+      type: programme
+    - name: Policy And Governance
+      total_budget: 37751000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 53058000.0
+      type: programme
+    - name: Institutional Development
+      total_budget: 16185000.0
+      type: programme
+    - name: Policy And Governance
+      total_budget: 2802000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2488000.0
+      type: programme
+    - name: Institutional Development
+      total_budget: 644000.0
+      type: programme
+    - name: Policy And Governance
+      total_budget: 81000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 16891000.0
+      type: programme
+    - name: Policy And Governance
+      total_budget: 4940000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

@@ -290,6 +290,138 @@ intro: "## Vote purpose\n\nLead and partner in the production of statistics in l
   \ statistics and statistical principles.\n\n"
 is_vote_primary: true
 name: Statistics South Africa
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Statistical Collection and Outreach
+      total_budget: 490560000.0
+      type: programme
+    - name: Administration
+      total_budget: 218841000.0
+      type: programme
+    - name: Economic Statistics
+      total_budget: 208443000.0
+      type: programme
+    - name: Population and Social Statistics
+      total_budget: 176199000.0
+      type: programme
+    - name: Survey Operations
+      total_budget: 152124000.0
+      type: programme
+    - name: Statistical Support and Informatics
+      total_budget: 133650000.0
+      type: programme
+    - name: Methodology, Standards and Research
+      total_budget: 62860000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 222697000.0
+      type: programme
+    - name: Statistical Support and Informatics
+      total_budget: 117057000.0
+      type: programme
+    - name: Statistical Collection and Outreach
+      total_budget: 107178000.0
+      type: programme
+    - name: Survey Operations
+      total_budget: 40984000.0
+      type: programme
+    - name: Economic Statistics
+      total_budget: 28381000.0
+      type: programme
+    - name: Population and Social Statistics
+      total_budget: 23456000.0
+      type: programme
+    - name: Methodology, Standards and Research
+      total_budget: 4495000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 242221000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Statistical Support and Informatics
+      total_budget: 14157000.0
+      type: programme
+    - name: Statistical Collection and Outreach
+      total_budget: 10111000.0
+      type: programme
+    - name: Population and Social Statistics
+      total_budget: 2098000.0
+      type: programme
+    - name: Administration
+      total_budget: 1772000.0
+      type: programme
+    - name: Survey Operations
+      total_budget: 119000.0
+      type: programme
+    - name: Economic Statistics
+      total_budget: 96000.0
+      type: programme
+    - name: Methodology, Standards and Research
+      total_budget: 20000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Statistical Support and Informatics
+      total_budget: 2260000.0
+      type: programme
+    - name: Population and Social Statistics
+      total_budget: 316000.0
+      type: programme
+    - name: Administration
+      total_budget: 46000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Statistical Collection and Outreach
+      total_budget: 9000.0
+      type: programme
+    - name: Economic Statistics
+      total_budget: 1000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 7500000.0
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2070000.0
+      type: programme
+    - name: Survey Operations
+      total_budget: 1468000.0
+      type: programme
+    - name: Statistical Collection and Outreach
+      total_budget: 162000.0
+      type: programme
+    - name: Methodology, Standards and Research
+      total_budget: 18000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Population and Social Statistics
+      total_budget: 200000.0
+      type: programme
+    - name: Administration
+      total_budget: 130000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   programme_budgets:

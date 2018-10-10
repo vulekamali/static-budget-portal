@@ -227,6 +227,99 @@ intro: "## Vision \n\nAn active ,creative and modernized Gauteng City Region (GC
   \n\r\n\r\n"
 is_vote_primary: true
 name: Sport, Arts, Culture and Recreation
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: SPORT AND RECREATION
+      total_budget: 104926000
+      type: programme
+    - name: ADMINISTRATION
+      total_budget: 77202000
+      type: programme
+    - name: CULTURAL AFFAIRS
+      total_budget: 53039000
+      type: programme
+    - name: LIBRARY AND ARCHIVES SERVICES
+      total_budget: 28469000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: SPORT AND RECREATION
+      total_budget: 134301000
+      type: programme
+    - name: CULTURAL AFFAIRS
+      total_budget: 59467000
+      type: programme
+    - name: ADMINISTRATION
+      total_budget: 36436000
+      type: programme
+    - name: LIBRARY AND ARCHIVES SERVICES
+      total_budget: 19357000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: LIBRARY AND ARCHIVES SERVICES
+      total_budget: 91886000
+      type: programme
+    - name: CULTURAL AFFAIRS
+      total_budget: 34985000
+      type: programme
+    - name: SPORT AND RECREATION
+      total_budget: 26254000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: LIBRARY AND ARCHIVES SERVICES
+      total_budget: 9001000
+      type: programme
+    - name: ADMINISTRATION
+      total_budget: 3332000
+      type: programme
+    - name: CULTURAL AFFAIRS
+      total_budget: 3266000
+      type: programme
+    - name: SPORT AND RECREATION
+      total_budget: 2432000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: CULTURAL AFFAIRS
+      total_budget: 28766000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: LIBRARY AND ARCHIVES SERVICES
+      total_budget: 800000
+      type: programme
+    - name: ADMINISTRATION
+      total_budget: 150000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: SPORT AND RECREATION
+      total_budget: 19270000
+      type: programme
+    - name: CULTURAL AFFAIRS
+      total_budget: 10900000
+      type: programme
+    - name: LIBRARY AND ARCHIVES SERVICES
+      total_budget: 2000000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: LIBRARY AND ARCHIVES SERVICES
+      total_budget: 129097000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

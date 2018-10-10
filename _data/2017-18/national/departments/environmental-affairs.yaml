@@ -300,6 +300,132 @@ intro: "## Vote purpose\n\n_Lead South Africa's environmental sector to achieve 
   \ of natural resources.\n\n"
 is_vote_primary: true
 name: Environmental Affairs
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 394092000.0
+      type: programme
+    - name: Environmental Programmes
+      total_budget: 228969000.0
+      type: programme
+    - name: Oceans and Coasts
+      total_budget: 117336000.0
+      type: programme
+    - name: Legal, Authorisations and Compliance
+      total_budget: 109796000.0
+      type: programme
+    - name: Biodiversity and Conservation
+      total_budget: 71787000.0
+      type: programme
+    - name: Chemicals and Waste Management
+      total_budget: 57616000.0
+      type: programme
+    - name: Climate Change and Air Quality
+      total_budget: 55477000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Oceans and Coasts
+      total_budget: 336340000.0
+      type: programme
+    - name: Administration
+      total_budget: 309303000.0
+      type: programme
+    - name: Environmental Programmes
+      total_budget: 254710000.0
+      type: programme
+    - name: Chemicals and Waste Management
+      total_budget: 106954000.0
+      type: programme
+    - name: Legal, Authorisations and Compliance
+      total_budget: 68389000.0
+      type: programme
+    - name: Biodiversity and Conservation
+      total_budget: 51902000.0
+      type: programme
+    - name: Climate Change and Air Quality
+      total_budget: 31138000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 136901000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Oceans and Coasts
+      total_budget: 14779000.0
+      type: programme
+    - name: Administration
+      total_budget: 6749000.0
+      type: programme
+    - name: Environmental Programmes
+      total_budget: 2870000.0
+      type: programme
+    - name: Legal, Authorisations and Compliance
+      total_budget: 1595000.0
+      type: programme
+    - name: Climate Change and Air Quality
+      total_budget: 1227000.0
+      type: programme
+    - name: Biodiversity and Conservation
+      total_budget: 755000.0
+      type: programme
+    - name: Chemicals and Waste Management
+      total_budget: 633000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Biodiversity and Conservation
+      total_budget: 569787000.0
+      type: programme
+    - name: Environmental Programmes
+      total_budget: 418768000.0
+      type: programme
+    - name: Climate Change and Air Quality
+      total_budget: 205482000.0
+      type: programme
+    - name: Chemicals and Waste Management
+      total_budget: 7132000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 16000000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Programmes
+      total_budget: 2879437000.0
+      type: programme
+    - name: Chemicals and Waste Management
+      total_budget: 278000000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Biodiversity and Conservation
+      total_budget: 2287000.0
+      type: programme
+    - name: Climate Change and Air Quality
+      total_budget: 1548000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Programmes
+      total_budget: 110455000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
   programme_budgets:

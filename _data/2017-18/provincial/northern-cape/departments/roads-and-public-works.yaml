@@ -240,6 +240,99 @@ intro: "## Vision\n\nTrendsetters in infrastructure delivery to change the econo
   \ intensity of government-funded infrastructure projects.\r\n"
 is_vote_primary: true
 name: Roads and Public Works
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 143591000
+      type: programme
+    - name: Administration
+      total_budget: 93923000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 51128000
+      type: programme
+    - name: Community Based Programme
+      total_budget: 12498000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 950903000
+      type: programme
+    - name: Community Based Programme
+      total_budget: 47554000
+      type: programme
+    - name: Administration
+      total_budget: 45567000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 35043000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 212719000
+      type: programme
+    - name: Community Based Programme
+      total_budget: 24643000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2462000
+      type: programme
+    - name: Transport Infrastructure
+      total_budget: 685000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 517000
+      type: programme
+    - name: Community Based Programme
+      total_budget: 125000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 60000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 905000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Community Based Programme
+      total_budget: 500000
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 2315000
+      type: programme
+    - name: Administration
+      total_budget: 603000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 57027000
+      type: programme
+    - name: Community Based Programme
+      total_budget: 1000000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

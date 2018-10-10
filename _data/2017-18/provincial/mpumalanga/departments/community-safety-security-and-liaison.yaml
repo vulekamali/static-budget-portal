@@ -222,6 +222,81 @@ intro: "## Vision\n\nA Safe, secure, crime and road accident free Mpumalanga Pro
   \ security services in the Province"
 is_vote_primary: true
 name: Community Safety, Security and Liaison
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Transport Regulation
+      total_budget: 373682000
+      type: programme
+    - name: Administration
+      total_budget: 75654000
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 41364000
+      type: programme
+    - name: Security  Management
+      total_budget: 7407000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Security  Management
+      total_budget: 455087000
+      type: programme
+    - name: Transport Regulation
+      total_budget: 123169000
+      type: programme
+    - name: Administration
+      total_budget: 38749000
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 15138000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulation
+      total_budget: 10000000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulation
+      total_budget: 6636000
+      type: programme
+    - name: Administration
+      total_budget: 1474000
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 816000
+      type: programme
+    - name: Security  Management
+      total_budget: 100000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulation
+      total_budget: 3285000
+      type: programme
+    - name: Administration
+      total_budget: 158000
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 140000
+      type: programme
+    - name: Security  Management
+      total_budget: 40000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 200000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

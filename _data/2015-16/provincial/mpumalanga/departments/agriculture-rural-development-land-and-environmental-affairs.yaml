@@ -286,6 +286,123 @@ intro: "## Vision\r\n\r\nVibrant, equitable, integrated and sustainable urban an
   \ all sectors of society, through agriculture, rural development, land and environment"
 is_vote_primary: true
 name: Agriculture, Rural Development, Land And Environmental Affairs
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 170855000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 96189000
+      type: programme
+    - name: Administration
+      total_budget: 88086000
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 66471000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 43016000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 36558000
+      type: programme
+    - name: Structured Agricultural Education and Training
+      total_budget: 26029000
+      type: programme
+    - name: Rural Development Coordination
+      total_budget: 16531000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 7830000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 126597000
+      type: programme
+    - name: Administration
+      total_budget: 40537000
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 17943000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 15526000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 11693000
+      type: programme
+    - name: Structured Agricultural Education and Training
+      total_budget: 7691000
+      type: programme
+    - name: Rural Development Coordination
+      total_budget: 6730000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 5571000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 2714000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Research and Technology Development Services
+      total_budget: 8339000
+      type: programme
+    - name: Structured Agricultural Education and Training
+      total_budget: 5049000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 4726000
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 1000000
+      type: programme
+    - name: Administration
+      total_budget: 500000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 26533000
+      type: programme
+    - name: Administration
+      total_budget: 3551000
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 269000
+      type: programme
+    - name: Rural Development Coordination
+      total_budget: 218000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 183000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1458000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 159645000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 16908000
+      type: programme
+    - name: Administration
+      total_budget: 3678000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

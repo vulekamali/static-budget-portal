@@ -193,6 +193,63 @@ intro: "## Vote purpose\n\n_Prevent, combat and investigate crime, maintain publ
   \ and combat crime.\n\n"
 is_vote_primary: true
 name: Police
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 1265836000.0
+      type: programme
+    - name: Visible Policing
+      total_budget: 906515000.0
+      type: programme
+    - name: Detective Services
+      total_budget: 621346000.0
+      type: programme
+    - name: Crime Intelligence
+      total_budget: 36184000.0
+      type: programme
+    - name: Protection and Security Services
+      total_budget: 30870000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Visible Policing
+      total_budget: 37746512000.0
+      type: programme
+    - name: Detective Services
+      total_budget: 15112819000.0
+      type: programme
+    - name: Administration
+      total_budget: 14386575000.0
+      type: programme
+    - name: Crime Intelligence
+      total_budget: 3062732000.0
+      type: programme
+    - name: Protection and Security Services
+      total_budget: 2295809000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 611799000.0
+      type: programme
+    - name: Visible Policing
+      total_budget: 201937000.0
+      type: programme
+    - name: Detective Services
+      total_budget: 81818000.0
+      type: programme
+    - name: Crime Intelligence
+      total_budget: 11463000.0
+      type: programme
+    - name: Protection and Security Services
+      total_budget: 4844000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

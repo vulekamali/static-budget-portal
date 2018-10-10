@@ -236,6 +236,72 @@ intro: "## Vote purpose\n\n_Create and maintain an equitable and sustainable lan
   \ framework).\n\n"
 is_vote_primary: true
 name: Rural Development and Land Reform
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 10324000.0
+      type: programme
+    - name: National Geomatics Management Services
+      total_budget: 8352000.0
+      type: programme
+    - name: Rural Development
+      total_budget: 3268000.0
+      type: programme
+    - name: Restitution
+      total_budget: 2067000.0
+      type: programme
+    - name: Land Reform
+      total_budget: 1108000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Restitution
+      total_budget: 2116000000.0
+      type: programme
+    - name: Land Reform
+      total_budget: 560869000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1253804000.0
+      type: programme
+    - name: National Geomatics Management Services
+      total_budget: 644367000.0
+      type: programme
+    - name: Rural Development
+      total_budget: 626792000.0
+      type: programme
+    - name: Land Reform
+      total_budget: 612023000.0
+      type: programme
+    - name: Restitution
+      total_budget: 480740000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Land Reform
+      total_budget: 1563108000.0
+      type: programme
+    - name: Rural Development
+      total_budget: 1345679000.0
+      type: programme
+    - name: National Geomatics Management Services
+      total_budget: 147184000.0
+      type: programme
+    - name: Restitution
+      total_budget: 3862000.0
+      type: programme
+    - name: Administration
+      total_budget: 137000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

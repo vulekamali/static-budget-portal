@@ -172,6 +172,69 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Office Of The Premier
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 113929000.0
+      type: programme
+    - name: Institutional Support
+      total_budget: 106613000.0
+      type: programme
+    - name: Policy & Governance
+      total_budget: 80034000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 47911000.0
+      type: programme
+    - name: Institutional Support
+      total_budget: 45336000.0
+      type: programme
+    - name: Policy & Governance
+      total_budget: 19534000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Support
+      total_budget: 2980000.0
+      type: programme
+    - name: Administration
+      total_budget: 2511000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 24000.0
+      type: programme
+    - name: Institutional Support
+      total_budget: 10000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Support
+      total_budget: 1380000.0
+      type: programme
+    - name: Policy & Governance
+      total_budget: 263000.0
+      type: programme
+    - name: Administration
+      total_budget: 113000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 42000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

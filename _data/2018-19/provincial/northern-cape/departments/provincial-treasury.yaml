@@ -205,6 +205,93 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Provincial Treasury
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 62459725.8
+      type: programme
+    - name: Sustainable Resource
+      total_budget: 57614352.0
+      type: programme
+    - name: Assets And Liabilities Management
+      total_budget: 49271924.0
+      type: programme
+    - name: Provincial Internal Audit
+      total_budget: 32691352.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 27645636.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 36448321.0
+      type: programme
+    - name: Sustainable Resource
+      total_budget: 10066880.0
+      type: programme
+    - name: Assets And Liabilities Management
+      total_budget: 9272496.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 8469710.0
+      type: programme
+    - name: Provincial Internal Audit
+      total_budget: 4531890.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Assets And Liabilities Management
+      total_budget: 232986.0
+      type: programme
+    name: Current Payments - Interest And Rent On Land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1418505.7
+      type: programme
+    - name: Assets And Liabilities Management
+      total_budget: 757174.0
+      type: programme
+    - name: Sustainable Resource
+      total_budget: 645654.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 216878.0
+      type: programme
+    - name: Provincial Internal Audit
+      total_budget: 216180.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 13000.0
+      type: programme
+    name: Payments For Capital Assets - Software And Other Intangible Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 9000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 100000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 150000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

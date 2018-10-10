@@ -198,6 +198,63 @@ intro: "## Vision\n\nExcellence in public resource management for socio-economic
   \ by municipalities in the province.\r\nLegislative mandate\r\n"
 is_vote_primary: true
 name: Provincial Treasury
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 110716000
+      type: programme
+    - name: Financial Governance
+      total_budget: 80755000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 63037000
+      type: programme
+    - name: Assets, Liabilities & SCM
+      total_budget: 58287000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 54945000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 35779000
+      type: programme
+    - name: Assets, Liabilities & SCM
+      total_budget: 24653000
+      type: programme
+    - name: Financial Governance
+      total_budget: 15931000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 4189000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 5000000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 761000
+      type: programme
+    - name: Financial Governance
+      total_budget: 567000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Sustainable Resource Management
+      total_budget: 20000000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

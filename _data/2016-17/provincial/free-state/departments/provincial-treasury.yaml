@@ -194,6 +194,66 @@ intro: "## Vision\n\nYour partner in financial management and service excellence
   \ challenges."
 is_vote_primary: true
 name: Provincial Treasury
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 65728000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 35468000
+      type: programme
+    - name: Asset and Liabilities Management
+      total_budget: 33758000
+      type: programme
+    - name: Municipal Finance Management
+      total_budget: 31103000
+      type: programme
+    - name: Financial Governance
+      total_budget: 20983000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Asset and Liabilities Management
+      total_budget: 70227000
+      type: programme
+    - name: Administration
+      total_budget: 26365000
+      type: programme
+    - name: Municipal Finance Management
+      total_budget: 20021000
+      type: programme
+    - name: Financial Governance
+      total_budget: 3764000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 3256000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2014000
+      type: programme
+    - name: Asset and Liabilities Management
+      total_budget: 360000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 369000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Municipal Finance Management
+      total_budget: 13350000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

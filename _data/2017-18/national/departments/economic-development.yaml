@@ -184,6 +184,66 @@ intro: "## Vote purpose\n\n_Promote economic development policy formulation and 
   (2002)\n\n  * the Infrastructure Development Act\_(2014).\n\n"
 is_vote_primary: true
 name: Economic Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 44918000.0
+      type: programme
+    - name: Growth Path and Social Dialogue
+      total_budget: 29533000.0
+      type: programme
+    - name: Investment, Competition and Trade
+      total_budget: 15621000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 35281000.0
+      type: programme
+    - name: Investment, Competition and Trade
+      total_budget: 8912000.0
+      type: programme
+    - name: Growth Path and Social Dialogue
+      total_budget: 5525000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 429000.0
+      type: programme
+    - name: Investment, Competition and Trade
+      total_budget: 181000.0
+      type: programme
+    - name: Growth Path and Social Dialogue
+      total_budget: 157000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Growth Path and Social Dialogue
+      total_budget: 394000.0
+      type: programme
+    - name: Administration
+      total_budget: 46000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Investment, Competition and Trade
+      total_budget: 387460000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Investment, Competition and Trade
+      total_budget: 268780000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
   programme_budgets:

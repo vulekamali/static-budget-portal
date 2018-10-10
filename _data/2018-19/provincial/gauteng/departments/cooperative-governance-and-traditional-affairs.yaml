@@ -176,6 +176,63 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Cooperative Governance And Traditional Affairs
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Local Governance
+      total_budget: 178855000.0
+      type: programme
+    - name: Administration
+      total_budget: 93432000.0
+      type: programme
+    - name: Development Planning
+      total_budget: 39606000.0
+      type: programme
+    - name: Traditional Institutional Management
+      total_budget: 8002000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Development Planning
+      total_budget: 46149000.0
+      type: programme
+    - name: Administration
+      total_budget: 43212000.0
+      type: programme
+    - name: Local Governance
+      total_budget: 31534000.0
+      type: programme
+    - name: Traditional Institutional Management
+      total_budget: 4577000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Development Planning
+      total_budget: 8228000.0
+      type: programme
+    - name: Administration
+      total_budget: 5894000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1746000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Local Governance
+      total_budget: 5000000.0
+      type: programme
+    - name: Development Planning
+      total_budget: 2000000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

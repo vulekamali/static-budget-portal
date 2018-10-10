@@ -227,6 +227,75 @@ intro: "## Vote purpose\n\n_Lead and partner in the production of statistics in 
   \ line with the purpose of\nofficial statistics and statistical principles.\n\n"
 is_vote_primary: true
 name: Statistics South Africa
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 242505000.0
+      type: programme
+    - name: Statistical Collection and Outreach
+      total_budget: 11326000.0
+      type: programme
+    - name: Statistical Support and Informatics
+      total_budget: 10572000.0
+      type: programme
+    - name: Survey Operations
+      total_budget: 2233000.0
+      type: programme
+    - name: Economic Statistics
+      total_budget: 1087000.0
+      type: programme
+    - name: Population and Social Statistics
+      total_budget: 942000.0
+      type: programme
+    - name: Methodology, Standards and Research
+      total_budget: 640000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Statistical Collection and Outreach
+      total_budget: 542165000.0
+      type: programme
+    - name: Administration
+      total_budget: 534215000.0
+      type: programme
+    - name: Statistical Support and Informatics
+      total_budget: 239432000.0
+      type: programme
+    - name: Survey Operations
+      total_budget: 233018000.0
+      type: programme
+    - name: Economic Statistics
+      total_budget: 213357000.0
+      type: programme
+    - name: Population and Social Statistics
+      total_budget: 132533000.0
+      type: programme
+    - name: Methodology, Standards and Research
+      total_budget: 65646000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 14542000.0
+      type: programme
+    - name: Survey Operations
+      total_budget: 725000.0
+      type: programme
+    - name: Population and Social Statistics
+      total_budget: 200000.0
+      type: programme
+    - name: Statistical Collection and Outreach
+      total_budget: 69000.0
+      type: programme
+    - name: Economic Statistics
+      total_budget: 1000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

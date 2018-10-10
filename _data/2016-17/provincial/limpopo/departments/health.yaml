@@ -315,6 +315,138 @@ intro: "## Vision\n\nA long and healthy life for people in Limpopo\r\n\r\n\n\n##
   \ medico-legal services and other non-personnel health services)."
 is_vote_primary: true
 name: Health
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: District Health Services
+      total_budget: 7752710000
+      type: programme
+    - name: Provincial Hospital Services
+      total_budget: 1919866000
+      type: programme
+    - name: Central Hospital Services
+      total_budget: 1201328000
+      type: programme
+    - name: Emergency  Madical Services
+      total_budget: 565407000
+      type: programme
+    - name: Health Sciences And Training
+      total_budget: 381847000
+      type: programme
+    - name: Administration
+      total_budget: 246208000
+      type: programme
+    - name: Health Care Support Services
+      total_budget: 78756000
+      type: programme
+    - name: Health Facilities Management
+      total_budget: 25600000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: District Health Services
+      total_budget: 2045466000
+      type: programme
+    - name: Central Hospital Services
+      total_budget: 340156000
+      type: programme
+    - name: Health Facilities Management
+      total_budget: 222344000
+      type: programme
+    - name: Provincial Hospital Services
+      total_budget: 215694000
+      type: programme
+    - name: Emergency  Madical Services
+      total_budget: 96936000
+      type: programme
+    - name: Health Sciences And Training
+      total_budget: 34900000
+      type: programme
+    - name: Administration
+      total_budget: 34429000
+      type: programme
+    - name: Health Care Support Services
+      total_budget: 32660000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Health Facilities Management
+      total_budget: 467625000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: District Health Services
+      total_budget: 67531000
+      type: programme
+    - name: Central Hospital Services
+      total_budget: 51271000
+      type: programme
+    - name: Emergency  Madical Services
+      total_budget: 24090000
+      type: programme
+    - name: Health Facilities Management
+      total_budget: 20099000
+      type: programme
+    - name: Health Sciences And Training
+      total_budget: 7549000
+      type: programme
+    - name: Health Care Support Services
+      total_budget: 2127000
+      type: programme
+    - name: Provincial Hospital Services
+      total_budget: 1808000
+      type: programme
+    - name: Administration
+      total_budget: 529000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: District Health Services
+      total_budget: 15842000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Health Sciences And Training
+      total_budget: 147196000
+      type: programme
+    - name: District Health Services
+      total_budget: 40501000
+      type: programme
+    - name: Provincial Hospital Services
+      total_budget: 1075000
+      type: programme
+    - name: Central Hospital Services
+      total_budget: 617000
+      type: programme
+    - name: Administration
+      total_budget: 259000
+      type: programme
+    - name: Health Care Support Services
+      total_budget: 215000
+      type: programme
+    - name: Emergency  Madical Services
+      total_budget: 214000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: District Health Services
+      total_budget: 305060000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: District Health Services
+      total_budget: 23108000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

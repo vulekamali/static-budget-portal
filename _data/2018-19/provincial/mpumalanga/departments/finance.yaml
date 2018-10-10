@@ -187,6 +187,75 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Finance
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 64150000.0
+      type: programme
+    - name: Asset And Liabilities Management
+      total_budget: 59360000.0
+      type: programme
+    - name: Sustainable Resources Management
+      total_budget: 44266000.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 25854000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Asset And Liabilities Management
+      total_budget: 69405000.0
+      type: programme
+    - name: Administration
+      total_budget: 29514000.0
+      type: programme
+    - name: Sustainable Resources Management
+      total_budget: 14122000.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 7053000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Asset And Liabilities Management
+      total_budget: 6167000.0
+      type: programme
+    - name: Administration
+      total_budget: 1564000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 544000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Asset And Liabilities Management
+      total_budget: 525000.0
+      type: programme
+    - name: Administration
+      total_budget: 140000.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 18000.0
+      type: programme
+    - name: Sustainable Resources Management
+      total_budget: 7000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 17000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

@@ -259,6 +259,111 @@ intro: "## Vote purpose\n\nProvide leadership and coordination of health service
   \n"
 is_vote_primary: true
 name: Health
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 209195000.0
+      type: programme
+    - name: Primary Health Care Services
+      total_budget: 209054000.0
+      type: programme
+    - name: Hospitals, Tertiary Health Services and Human Resource Development
+      total_budget: 145181000.0
+      type: programme
+    - name: National Health Insurance, Health Planning and Systems Enablement
+      total_budget: 116693000.0
+      type: programme
+    - name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+      total_budget: 84413000.0
+      type: programme
+    - name: Health Regulation and Compliance Management
+      total_budget: 64278000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: National Health Insurance, Health Planning and Systems Enablement
+      total_budget: 1345334000.0
+      type: programme
+    - name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+      total_budget: 332742000.0
+      type: programme
+    - name: Administration
+      total_budget: 328136000.0
+      type: programme
+    - name: Hospitals, Tertiary Health Services and Human Resource Development
+      total_budget: 134161000.0
+      type: programme
+    - name: Primary Health Care Services
+      total_budget: 89332000.0
+      type: programme
+    - name: Health Regulation and Compliance Management
+      total_budget: 29866000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Hospitals, Tertiary Health Services and Human Resource Development
+      total_budget: 748073000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: National Health Insurance, Health Planning and Systems Enablement
+      total_budget: 179478000.0
+      type: programme
+    - name: Hospitals, Tertiary Health Services and Human Resource Development
+      total_budget: 95874000.0
+      type: programme
+    - name: Administration
+      total_budget: 11006000.0
+      type: programme
+    - name: Health Regulation and Compliance Management
+      total_budget: 2441000.0
+      type: programme
+    - name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+      total_budget: 367000.0
+      type: programme
+    - name: Primary Health Care Services
+      total_budget: 219000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Health Regulation and Compliance Management
+      total_budget: 1678961000.0
+      type: programme
+    - name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+      total_budget: 17108000.0
+      type: programme
+    - name: Administration
+      total_budget: 2455000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+      total_budget: 162730000.0
+      type: programme
+    - name: National Health Insurance, Health Planning and Systems Enablement
+      total_budget: 30048000.0
+      type: programme
+    - name: Primary Health Care Services
+      total_budget: 3131000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Hospitals, Tertiary Health Services and Human Resource Development
+      total_budget: 21000893000.0
+      type: programme
+    - name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+      total_budget: 20121697000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   programme_budgets:

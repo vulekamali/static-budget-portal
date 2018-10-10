@@ -236,6 +236,78 @@ intro: '## Vote purpose
   '
 is_vote_primary: true
 name: Health
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Hospitals, Tertiary Health Services and Human Resource Development
+      total_budget: 650032000.0
+      type: programme
+    - name: Administration
+      total_budget: 7634000.0
+      type: programme
+    - name: Health Regulation and Compliance Management
+      total_budget: 3597000.0
+      type: programme
+    - name: National Health Insurance, Health Planning and Systems Enablement
+      total_budget: 2588000.0
+      type: programme
+    - name: Primary Health Care Services
+      total_budget: 2325000.0
+      type: programme
+    - name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+      total_budget: 1802000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Hospitals, Tertiary Health Services and Human Resource Development
+      total_budget: 5275762000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+      total_budget: 539943000.0
+      type: programme
+    - name: National Health Insurance, Health Planning and Systems Enablement
+      total_budget: 488157000.0
+      type: programme
+    - name: Hospitals, Tertiary Health Services and Human Resource Development
+      total_budget: 460514000.0
+      type: programme
+    - name: Administration
+      total_budget: 447475000.0
+      type: programme
+    - name: Primary Health Care Services
+      total_budget: 219779000.0
+      type: programme
+    - name: Health Regulation and Compliance Management
+      total_budget: 195679000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+      total_budget: 13900399000.0
+      type: programme
+    - name: Hospitals, Tertiary Health Services and Human Resource Development
+      total_budget: 12772757000.0
+      type: programme
+    - name: Health Regulation and Compliance Management
+      total_budget: 1397643000.0
+      type: programme
+    - name: National Health Insurance, Health Planning and Systems Enablement
+      total_budget: 97062000.0
+      type: programme
+    - name: Primary Health Care Services
+      total_budget: 2901000.0
+      type: programme
+    - name: Administration
+      total_budget: 1969000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

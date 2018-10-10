@@ -400,6 +400,189 @@ intro: "## Vision\n\nA united, responsive and prosperous agricultural sector in 
   \ worker communities.\r\n\r\n"
 is_vote_primary: true
 name: Agriculture
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Research and Technology Development Services
+      total_budget: 81212000
+      type: programme
+    - name: Administration
+      total_budget: 73322000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 63140000
+      type: programme
+    - name: Farmer Support and Development
+      total_budget: 60160000
+      type: programme
+    - name: Structured Agricultural Education and Training
+      total_budget: 35775000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 31575000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 14784000
+      type: programme
+    - name: Rural Development
+      total_budget: 12431000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 51509000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 30394000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 23404000
+      type: programme
+    - name: Farmer Support and Development
+      total_budget: 21790000
+      type: programme
+    - name: Structured Agricultural Education and Training
+      total_budget: 20775000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 9773000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 4220000
+      type: programme
+    - name: Rural Development
+      total_budget: 3606000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Veterinary Services
+      total_budget: 150000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 90000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 4647000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 3797000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 3271000
+      type: programme
+    - name: Administration
+      total_budget: 2774000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 1663000
+      type: programme
+    - name: Structured Agricultural Education and Training
+      total_budget: 1618000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 300000
+      type: programme
+    - name: Rural Development
+      total_budget: 230000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Structured Agricultural Education and Training
+      total_budget: 500000
+      type: programme
+    - name: Administration
+      total_budget: 10000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 10000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agricultural Economics Services
+      total_budget: 1100000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agricultural Economics Services
+      total_budget: 190000
+      type: programme
+    - name: Administration
+      total_budget: 60000
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2815000
+      type: programme
+    - name: Rural Development
+      total_budget: 1000000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agricultural Economics Services
+      total_budget: 3600000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 1400000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 650000
+      type: programme
+    - name: Farmer Support and Development
+      total_budget: 500000
+      type: programme
+    - name: Administration
+      total_budget: 351000
+      type: programme
+    - name: Structured Agricultural Education and Training
+      total_budget: 300000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Research and Technology Development Services
+      total_budget: 38000
+      type: programme
+    - name: Farmer Support and Development
+      total_budget: 20000
+      type: programme
+    - name: Administration
+      total_budget: 1000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 1000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 178238000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 41581000
+      type: programme
+    - name: Rural Development
+      total_budget: 5322000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 1000000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 82000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

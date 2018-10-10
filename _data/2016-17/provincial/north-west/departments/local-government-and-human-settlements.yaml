@@ -186,6 +186,66 @@ intro: "## Vision\n\nTransformed developmental local governance and integrated s
   \ with municipalities."
 is_vote_primary: true
 name: Local Government and Human Settlements
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 119695000
+      type: programme
+    - name: Housing Development
+      total_budget: 42226000
+      type: programme
+    - name: Local Governance
+      total_budget: 32812000
+      type: programme
+    - name: Development and Planning
+      total_budget: 32228000
+      type: programme
+    - name: Housing Needs,Planning and Research
+      total_budget: 21560000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 78630000
+      type: programme
+    - name: Local Governance
+      total_budget: 18297000
+      type: programme
+    - name: Housing Development
+      total_budget: 4628000
+      type: programme
+    - name: Development and Planning
+      total_budget: 4574000
+      type: programme
+    - name: Housing Needs,Planning and Research
+      total_budget: 3246000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2044000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 2151817000
+      type: programme
+    - name: Administration
+      total_budget: 5679000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Development and Planning
+      total_budget: 128239000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

@@ -178,6 +178,72 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Provincial Parliament
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 48033000.0
+      type: programme
+    - name: Direct Charges
+      total_budget: 39081000.0
+      type: programme
+    - name: Parliamentary Services
+      total_budget: 20679000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 14283000.0
+      type: programme
+    - name: Parliamentary Services
+      total_budget: 6607000.0
+      type: programme
+    - name: Facilities For Members And Political Parties
+      total_budget: 6593000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3392000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 28000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Facilities For Members And Political Parties
+      total_budget: 279000.0
+      type: programme
+    name: Transfers And Subsidies - Foreign Governments And International Organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Direct Charges
+      total_budget: 4416000.0
+      type: programme
+    - name: Facilities For Members And Political Parties
+      total_budget: 1455000.0
+      type: programme
+    - name: Administration
+      total_budget: 50000.0
+      type: programme
+    - name: Parliamentary Services
+      total_budget: 31000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Facilities For Members And Political Parties
+      total_budget: 42444000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

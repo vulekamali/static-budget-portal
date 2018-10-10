@@ -228,6 +228,84 @@ intro: "## Vision\n\nDelivery and maintenance of quality infrastructure for sust
   \ the Expanded Public Works Programme."
 is_vote_primary: true
 name: Public Works and Roads
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 362930000
+      type: programme
+    - name: Transport Infrastructure
+      total_budget: 278630000
+      type: programme
+    - name: Administration
+      total_budget: 127798000
+      type: programme
+    - name: Community Based Programme
+      total_budget: 6385000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 992446000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 179476000
+      type: programme
+    - name: Community Based Programme
+      total_budget: 134791000
+      type: programme
+    - name: Administration
+      total_budget: 94242000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 156734000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 151951000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 15112000
+      type: programme
+    - name: Administration
+      total_budget: 10878000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 1100000
+      type: programme
+    - name: Community Based Programme
+      total_budget: 50000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 5233000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 4088000
+      type: programme
+    - name: Administration
+      total_budget: 3989000
+      type: programme
+    - name: Community Based Programme
+      total_budget: 22000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 195058000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

@@ -184,6 +184,54 @@ intro: "## Vote purpose\n\n_Contribute to sustainable economic development and e
   \ heritage.\n\n"
 is_vote_primary: true
 name: Arts and Culture
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 7398000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Heritage Promotion and Preservation
+      total_budget: 511679000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 319650000.0
+      type: programme
+    - name: Arts and Culture Promotion and Development
+      total_budget: 150127000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 236614000.0
+      type: programme
+    - name: Arts and Culture Promotion and Development
+      total_budget: 197913000.0
+      type: programme
+    - name: Heritage Promotion and Preservation
+      total_budget: 129342000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 76331000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Heritage Promotion and Preservation
+      total_budget: 1534544000.0
+      type: programme
+    - name: Arts and Culture Promotion and Development
+      total_budget: 728184000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 28077000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

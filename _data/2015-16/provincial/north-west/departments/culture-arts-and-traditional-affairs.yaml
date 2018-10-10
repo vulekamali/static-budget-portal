@@ -268,6 +268,132 @@ intro: "## Vision\r\n\r\nA rooted approach for supporting culture, the arts and 
   \ and nation building."
 is_vote_primary: true
 name: Culture, Arts and Traditional Affairs
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Traditional Affairs
+      total_budget: 71514000
+      type: programme
+    - name: Administration
+      total_budget: 62279000
+      type: programme
+    - name: Library and Archive Services
+      total_budget: 56602000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 29063000
+      type: programme
+    - name: Recreation
+      total_budget: 18275000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Library and Archive Services
+      total_budget: 61456000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 40170000
+      type: programme
+    - name: Administration
+      total_budget: 30535000
+      type: programme
+    - name: Recreation
+      total_budget: 29576000
+      type: programme
+    - name: Traditional Affairs
+      total_budget: 17677000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Recreation
+      total_budget: 52000
+      type: programme
+    - name: Administration
+      total_budget: 32000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 32000
+      type: programme
+    name: Current payments - Interest and rent on land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Library and Archive Services
+      total_budget: 36441000
+      type: programme
+    - name: Traditional Affairs
+      total_budget: 23468000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 3000000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Library and Archive Services
+      total_budget: 8882000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 976000
+      type: programme
+    - name: Administration
+      total_budget: 607000
+      type: programme
+    - name: Recreation
+      total_budget: 504000
+      type: programme
+    - name: Traditional Affairs
+      total_budget: 120000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Cultural Affairs
+      total_budget: 82691000
+      type: programme
+    - name: Administration
+      total_budget: 200000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 772000
+      type: programme
+    - name: Library and Archive Services
+      total_budget: 500000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 200000
+      type: programme
+    - name: Traditional Affairs
+      total_budget: 150000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Traditional Affairs
+      total_budget: 18180000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 6600000
+      type: programme
+    - name: Recreation
+      total_budget: 2625000
+      type: programme
+    - name: Library and Archive Services
+      total_budget: 1050000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Library and Archive Services
+      total_budget: 24410000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

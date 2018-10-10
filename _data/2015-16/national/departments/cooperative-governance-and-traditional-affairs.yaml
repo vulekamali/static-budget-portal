@@ -225,6 +225,78 @@ intro: "## Vote purpose\n\n_Improve cooperative governance across the three sphe
   \n"
 is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 5080000.0
+      type: programme
+    - name: National Disaster Management Centre
+      total_budget: 2449000.0
+      type: programme
+    - name: Infrastructure and Economic Development
+      total_budget: 150000.0
+      type: programme
+    - name: Provincial and Municipal Government Systems
+      total_budget: 100000.0
+      type: programme
+    - name: Governance and Intergovernmental Relations
+      total_budget: 20000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Infrastructure and Economic Development
+      total_budget: 14955762000.0
+      type: programme
+    - name: National Disaster Management Centre
+      total_budget: 188900000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Infrastructure and Economic Development
+      total_budget: 2408495000.0
+      type: programme
+    - name: Administration
+      total_budget: 242789000.0
+      type: programme
+    - name: National Disaster Management Centre
+      total_budget: 51113000.0
+      type: programme
+    - name: Governance and Intergovernmental Relations
+      total_budget: 46541000.0
+      type: programme
+    - name: Provincial and Municipal Government Systems
+      total_budget: 37550000.0
+      type: programme
+    - name: Policy, Research and Knowledge Management
+      total_budget: 22081000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Governance and Intergovernmental Relations
+      total_budget: 50274784000.0
+      type: programme
+    - name: National Disaster Management Centre
+      total_budget: 364343000.0
+      type: programme
+    - name: Infrastructure and Economic Development
+      total_budget: 304013000.0
+      type: programme
+    - name: Provincial and Municipal Government Systems
+      total_budget: 290442000.0
+      type: programme
+    - name: Traditional Affairs
+      total_budget: 119447000.0
+      type: programme
+    - name: Administration
+      total_budget: 100000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:
