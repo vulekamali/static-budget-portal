@@ -7,7 +7,7 @@ const calcLabelPosition = (height, x, y, maxWidth) => {
   if (x > maxWidth / 2) {
     return {
       textX: x - (height / 3),
-      textY: y - 7,
+      textY: y - 6,
       align: 'right',
       color: 'black',
       space: x - (((height / 3) * 2) + 20),
@@ -16,7 +16,7 @@ const calcLabelPosition = (height, x, y, maxWidth) => {
 
   return {
     textX: x + (height / 3),
-    textY: y - 7,
+    textY: y - 6,
     align: 'left',
     color: 'black',
     space: maxWidth - (x + (((height / 3) * 2) + 20)),
@@ -108,6 +108,12 @@ function createChartJsConfig({ labels, values }) {
       },
       animation: {
         duration: 0,
+      },
+      layout: {
+        padding: {
+          top: 16,
+          bottom: 24,
+        },
       },
       legend: {
         display: false,
