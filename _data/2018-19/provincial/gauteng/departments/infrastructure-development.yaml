@@ -273,6 +273,42 @@ slug: infrastructure-development
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Support
+      total_budget: 306237490.6
+      type: subprogramme
+    - name: Management of the Department
+      total_budget: 12075732.5
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 8245836.9
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Community Development
+      total_budget: 240563000.0
+      type: subprogramme
+    - name: Programme Support CBP
+      total_budget: 77200000.0
+      type: subprogramme
+    name: Expanded Public Works Programme
+    type: programme
+  - items:
+    - name: Immovable Asset Management
+      total_budget: 1519656000.0
+      type: subprogramme
+    - name: Maintenance
+      total_budget: 602337000.0
+      type: subprogramme
+    - name: Construction
+      total_budget: 270648870.07250005
+      type: subprogramme
+    name: Public Works Infrastructure
+    type: programme
 title: Infrastructure Development budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 15 - Infrastructure Development:

@@ -356,6 +356,75 @@ slug: tourism
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Corporate Affairs
+      total_budget: 156493000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 32356000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 29268000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 19339000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Social Responsibility Implementation
+      total_budget: 386108000.0
+      type: subprogramme
+    - name: Strategic Partners in Tourism
+      total_budget: 15527000.0
+      type: subprogramme
+    - name: 'Domestic Tourism Management: Northern Region'
+      total_budget: 15259000.0
+      type: subprogramme
+    - name: 'Domestic Tourism Management: Southern Region'
+      total_budget: 14031000.0
+      type: subprogramme
+    - name: Domestic Tourism Management
+      total_budget: 13814000.0
+      type: subprogramme
+    name: Domestic Tourism
+    type: programme
+  - items:
+    - name: Americas and Western Europe
+      total_budget: 19956000.0
+      type: subprogramme
+    - name: Africa and Middle East
+      total_budget: 16267000.0
+      type: subprogramme
+    - name: Asia, Australasia and Eastern Europe
+      total_budget: 13848000.0
+      type: subprogramme
+    - name: International Tourism Management
+      total_budget: 4637000.0
+      type: subprogramme
+    name: International Tourism
+    type: programme
+  - items:
+    - name: South African Tourism
+      total_budget: 1024847000.0
+      type: subprogramme
+    - name: Tourism Incentive Programme
+      total_budget: 188931000.0
+      type: subprogramme
+    - name: Policy Development and Evaluation
+      total_budget: 27737000.0
+      type: subprogramme
+    - name: Research and Knowledge Management
+      total_budget: 26364000.0
+      type: subprogramme
+    - name: Policy and Knowledge Services Management
+      total_budget: 4734000.0
+      type: subprogramme
+    name: Policy and Knowledge Services
+    type: programme
 title: Tourism budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 33 - Tourism:

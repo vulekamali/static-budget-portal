@@ -294,6 +294,48 @@ slug: arts-and-culture
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 135962000.0
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 16705000.0
+      type: subprogramme
+    name: 1. Administration
+    type: programme
+  - items:
+    - name: Arts and Culture
+      total_budget: 203404000.0
+      type: subprogramme
+    - name: Museum Services
+      total_budget: 27999000.0
+      type: subprogramme
+    - name: Language Services
+      total_budget: 18540000.0
+      type: subprogramme
+    - name: MANAGEMENT
+      total_budget: 5546000.0
+      type: subprogramme
+    name: 2. Cultural Affairs
+    type: programme
+  - items:
+    - name: Library services
+      total_budget: 273861000.0
+      type: subprogramme
+    - name: Community Library Services grant
+      total_budget: 174397000.0
+      type: subprogramme
+    - name: Archives
+      total_budget: 104519000.0
+      type: subprogramme
+    - name: MANAGEMENT
+      total_budget: 1638000.0
+      type: subprogramme
+    name: 3. Library and Archive Services
+    type: programme
 title: Arts And Culture budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 15 - Arts And Culture:

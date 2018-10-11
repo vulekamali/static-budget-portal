@@ -372,6 +372,78 @@ slug: tourism
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Management
+      total_budget: 172662000.0
+      type: subprogramme
+    - name: Office Accomodation
+      total_budget: 37530000.0
+      type: subprogramme
+    - name: Financial Managament
+      total_budget: 34955000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 23603000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 2665000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Working for Tourism
+      total_budget: 334786000.0
+      type: subprogramme
+    - name: Destination Planning and Investment Coordination
+      total_budget: 27695000.0
+      type: subprogramme
+    - name: Destination Development Management
+      total_budget: 20311000.0
+      type: subprogramme
+    - name: Tourism Enhancement
+      total_budget: 18962000.0
+      type: subprogramme
+    name: Destination Development
+    type: programme
+  - items:
+    - name: South African Tourism
+      total_budget: 1208048000.0
+      type: subprogramme
+    - name: International Relations and Cooperation
+      total_budget: 27285000.0
+      type: subprogramme
+    - name: Research and Knowledge Management
+      total_budget: 26298000.0
+      type: subprogramme
+    - name: Policy Planning and Strategy
+      total_budget: 11709000.0
+      type: subprogramme
+    - name: Tourism Research, Policy and International Relations Management
+      total_budget: 8655000.0
+      type: subprogramme
+    name: Tourism Research, Policy and International Relations
+    type: programme
+  - items:
+    - name: Tourism Incentive Programme
+      total_budget: 198777000.0
+      type: subprogramme
+    - name: Enterprise Development and Transformation
+      total_budget: 49652000.0
+      type: subprogramme
+    - name: Tourism Visitor Services
+      total_budget: 22949000.0
+      type: subprogramme
+    - name: Tourism Human Resource Development
+      total_budget: 22596000.0
+      type: subprogramme
+    - name: Tourism Sector Support Services Management
+      total_budget: 12679000.0
+      type: subprogramme
+    name: Tourism Sector Support Services
+    type: programme
 title: Tourism budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 33 - Tourism:

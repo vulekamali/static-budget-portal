@@ -238,6 +238,54 @@ slug: communications
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - name: Ministry
+      total_budget: 12000000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 11974000.0
+      type: subprogramme
+    - name: Departmental Management
+      total_budget: 9889000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 8551000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Broadcasting Policy
+      total_budget: 7897000.0
+      type: subprogramme
+    name: Communications Policy, Research and Development
+    type: programme
+  - items:
+    - name: Communication and Branding
+      total_budget: 540323000.0
+      type: subprogramme
+    - name: Regulatory Institutions
+      total_budget: 477665000.0
+      type: subprogramme
+    - name: Broadcasting and Community Media
+      total_budget: 200253000.0
+      type: subprogramme
+    - name: Programme Management for Entity Oversight
+      total_budget: 2139000.0
+      type: subprogramme
+    name: Entity Oversight
+    type: programme
+  - items:
+    - name: Enterprise Development
+      total_budget: 6381000.0
+      type: subprogramme
+    - name: Broadcasting Digital Migration
+      total_budget: 3816000.0
+      type: subprogramme
+    name: Industry and Capacity Development
+    type: programme
 title: Communications budget 2015-16  - vulekamali
 treasury_datasets:
   ENE for Vote 03 - Communications:

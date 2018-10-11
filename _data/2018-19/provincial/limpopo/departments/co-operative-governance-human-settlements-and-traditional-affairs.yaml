@@ -318,6 +318,48 @@ slug: co-operative-governance-human-settlements-and-traditional-affairs
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 376577654.0
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 1902011.5
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Local Governance
+      total_budget: 234575295.3805
+      type: subprogramme
+    - name: Development Planning
+      total_budget: 70437871.0546
+      type: subprogramme
+    name: Coorperative Governance
+    type: programme
+  - items:
+    - name: Housing Development, Implementation, Planning and Targets
+      total_budget: 1338040000.0
+      type: subprogramme
+    - name: Housing Asset Management and Property Management
+      total_budget: 81919000.0
+      type: subprogramme
+    - name: Housing Needs, Research and Planning
+      total_budget: 24444000.0
+      type: subprogramme
+    name: Human Settlements
+    type: programme
+  - items:
+    - name: Traditional Institutional Admin
+      total_budget: 485017448.93850005
+      type: subprogramme
+    - name: Administration of Houses of Traditional Leaders
+      total_budget: 11092299.1167
+      type: subprogramme
+    name: Traditional Institutional Development
+    type: programme
 title: Co-Operative Governance, Human Settlements And Traditional Affairs budget 2018-19  -
   vulekamali
 treasury_datasets:

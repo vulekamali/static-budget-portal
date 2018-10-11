@@ -374,6 +374,102 @@ slug: energy
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 79232000.0
+      type: subprogramme
+    - name: Departmental Management
+      total_budget: 73165000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 49177000.0
+      type: subprogramme
+    - name: Finance Administration
+      total_budget: 39338000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 33272000.0
+      type: subprogramme
+    - name: Audit Services
+      total_budget: 8454000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Energy Efficiency
+      total_budget: 285720000.0
+      type: subprogramme
+    - name: Renewable Energy
+      total_budget: 75796000.0
+      type: subprogramme
+    - name: Climate Change and Designated National Authority
+      total_budget: 8667000.0
+      type: subprogramme
+    name: Clean Energy
+    type: programme
+  - items:
+    - name: Integrated National Electrification Programme
+      total_budget: 5392463000.0
+      type: subprogramme
+    - name: Energy Regional Offices
+      total_budget: 18123000.0
+      type: subprogramme
+    - name: Programme and Project Management Office
+      total_budget: 11353000.0
+      type: subprogramme
+    - name: Electricity Infrastructure/Industry Transformation
+      total_budget: 8140000.0
+      type: subprogramme
+    - name: Community Upliftment Programmes and Projects
+      total_budget: 5321000.0
+      type: subprogramme
+    name: Electrification and Energy Programme and Project Management
+    type: programme
+  - items:
+    - name: Energy Planning
+      total_budget: 25574000.0
+      type: subprogramme
+    - name: Hydrocarbon Policy
+      total_budget: 15224000.0
+      type: subprogramme
+    - name: Electricity, Energy Efficiency and Environmental Policy
+      total_budget: 9657000.0
+      type: subprogramme
+    - name: Policy Analysis and Research
+      total_budget: 2623000.0
+      type: subprogramme
+    name: Energy Policy and Planning
+    type: programme
+  - items:
+    - name: Nuclear Safety and Technology
+      total_budget: 796159000.0
+      type: subprogramme
+    - name: Nuclear Policy
+      total_budget: 11353000.0
+      type: subprogramme
+    - name: Nuclear Non-proliferation and Radiation Security
+      total_budget: 9074000.0
+      type: subprogramme
+    name: Nuclear Energy
+    type: programme
+  - items:
+    - name: Regional Petroleum Regulation Offices
+      total_budget: 35001000.0
+      type: subprogramme
+    - name: Petroleum Licensing and Fuel Supply
+      total_budget: 27388000.0
+      type: subprogramme
+    - name: Petroleum Compliance, Monitoring and Enforcement
+      total_budget: 18574000.0
+      type: subprogramme
+    - name: Fuel Pricing
+      total_budget: 6169000.0
+      type: subprogramme
+    name: Petroleum and Petroleum Products Regulation
+    type: programme
 title: Energy budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 26 - Energy:

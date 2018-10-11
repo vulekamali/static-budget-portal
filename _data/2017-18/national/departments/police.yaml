@@ -378,6 +378,78 @@ slug: police
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 18371618000.0
+      type: subprogramme
+    - name: Civilian Secretariat
+      total_budget: 124673000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 76725000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 63397000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Intelligence and Information Management
+      total_budget: 2104902000.0
+      type: subprogramme
+    - name: Crime Intelligence Operations
+      total_budget: 1441130000.0
+      type: subprogramme
+    name: Crime Intelligence
+    type: programme
+  - items:
+    - name: Crime Investigations
+      total_budget: 11991548000.0
+      type: subprogramme
+    - name: Criminal Record Centre
+      total_budget: 2441693000.0
+      type: subprogramme
+    - name: Forensic Science Laboratory
+      total_budget: 1972521000.0
+      type: subprogramme
+    - name: Specialised Investigations
+      total_budget: 1528835000.0
+      type: subprogramme
+    name: Detective Services
+    type: programme
+  - items:
+    - name: VIP Protection Services
+      total_budget: 1406967000.0
+      type: subprogramme
+    - name: Static and Mobile Security
+      total_budget: 997932000.0
+      type: subprogramme
+    - name: Operational Support
+      total_budget: 270248000.0
+      type: subprogramme
+    - name: Government Security Regulator
+      total_budget: 132931000.0
+      type: subprogramme
+    name: Protection and Security Services
+    type: programme
+  - items:
+    - name: Crime Prevention
+      total_budget: 34350973000.0
+      type: subprogramme
+    - name: Facilities
+      total_budget: 3913336000.0
+      type: subprogramme
+    - name: Specialised Interventions
+      total_budget: 3873859000.0
+      type: subprogramme
+    - name: Border Security
+      total_budget: 1961840000.0
+      type: subprogramme
+    name: Visible Policing
+    type: programme
 title: Police budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 23 - Police:

@@ -248,6 +248,69 @@ slug: communications
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Departmental Management
+      total_budget: 30537000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 11849000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 10221000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 9377000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 787000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Broadcasting Policy
+      total_budget: 6802000.0
+      type: subprogramme
+    - name: Technology and Engineering Services
+      total_budget: 1532000.0
+      type: subprogramme
+    - name: Media Policy
+      total_budget: 158000.0
+      type: subprogramme
+    name: Communications Policy, Research and Development
+    type: programme
+  - items:
+    - name: Communication and Branding
+      total_budget: 599542000.0
+      type: subprogramme
+    - name: Regulatory Institutions
+      total_budget: 523981000.0
+      type: subprogramme
+    - name: Broadcasting and Community Media
+      total_budget: 205449000.0
+      type: subprogramme
+    - name: Programme Management for Entity Oversight
+      total_budget: 2570000.0
+      type: subprogramme
+    name: Entity Oversight
+    type: programme
+  - items:
+    - name: Broadcasting Digital Migration
+      total_budget: 14383000.0
+      type: subprogramme
+    - name: Enterprise Development
+      total_budget: 3045000.0
+      type: subprogramme
+    - name: Industry Research and Analysis
+      total_budget: 2922000.0
+      type: subprogramme
+    - name: Inter-governmental Relations and Stakeholder Management
+      total_budget: 1940000.0
+      type: subprogramme
+    name: Industry and Capacity Development
+    type: programme
 title: Communications budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 03 - Communications:

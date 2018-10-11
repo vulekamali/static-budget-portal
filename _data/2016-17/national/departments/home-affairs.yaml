@@ -262,6 +262,63 @@ slug: home-affairs
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Transversal Information Technology Management
+      total_budget: 872673000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 630663000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 467272000.0
+      type: subprogramme
+    - name: Management Support Services
+      total_budget: 208525000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 43757000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Service Delivery to Provinces
+      total_budget: 1749357000.0
+      type: subprogramme
+    - name: Electoral Commission
+      total_budget: 1586561000.0
+      type: subprogramme
+    - name: Identification Services
+      total_budget: 292429000.0
+      type: subprogramme
+    - name: "Represented Political Parties\u2019 Fund"
+      total_budget: 134480000.0
+      type: subprogramme
+    - name: Status Services
+      total_budget: 116757000.0
+      type: subprogramme
+    - name: Citizen Affairs Management
+      total_budget: 21975000.0
+      type: subprogramme
+    name: Citizen Affairs
+    type: programme
+  - items:
+    - name: Admission Services
+      total_budget: 515080000.0
+      type: subprogramme
+    - name: Immigration Services
+      total_budget: 287109000.0
+      type: subprogramme
+    - name: Asylum Seekers
+      total_budget: 209382000.0
+      type: subprogramme
+    - name: Immigration Affairs Management
+      total_budget: 31120000.0
+      type: subprogramme
+    name: Immigration Affairs
+    type: programme
 title: Home Affairs budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 05 - Home Affairs:

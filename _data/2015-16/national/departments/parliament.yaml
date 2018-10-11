@@ -243,6 +243,75 @@ slug: parliament
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - name: Office of the Secretary
+      total_budget: 229332000.0
+      type: subprogramme
+    - name: Institutional Support
+      total_budget: 98653000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 61110000.0
+      type: subprogramme
+    - name: Office of the Speaker
+      total_budget: 45516000.0
+      type: subprogramme
+    - name: Office of the Chairperson
+      total_budget: 24961000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Constituency Support
+      total_budget: 269658000.0
+      type: subprogramme
+    - name: Political Party Support
+      total_budget: 87025000.0
+      type: subprogramme
+    - name: Party Leadership Support
+      total_budget: 7835000.0
+      type: subprogramme
+    name: Associated Services
+    type: programme
+  - items:
+    - name: Members' remuneration
+      total_budget: 503132000.0
+      type: subprogramme
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - name: Legislation and Oversight
+      total_budget: 314502000.0
+      type: subprogramme
+    - name: National Council of Provinces
+      total_budget: 34960000.0
+      type: subprogramme
+    - name: National Assembly
+      total_budget: 25996000.0
+      type: subprogramme
+    name: Legislation and Oversight
+    type: programme
+  - items:
+    - name: National Assembly Members' Facilities
+      total_budget: 201836000.0
+      type: subprogramme
+    - name: National Council of Provinces Members' Facilities
+      total_budget: 32334000.0
+      type: subprogramme
+    name: Members' Facilities
+    type: programme
+  - items:
+    - name: Public Affairs
+      total_budget: 79634000.0
+      type: subprogramme
+    - name: International Relations
+      total_budget: 53570000.0
+      type: subprogramme
+    name: Public and International Participation
+    type: programme
 title: Parliament budget 2015-16  - vulekamali
 treasury_datasets:
   ENE for Vote 02 - Parliament:

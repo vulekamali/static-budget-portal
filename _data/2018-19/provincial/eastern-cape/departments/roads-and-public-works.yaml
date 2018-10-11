@@ -252,6 +252,57 @@ slug: roads-and-public-works
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Support
+      total_budget: 542832000.0
+      type: subprogramme
+    - name: Management of the Department
+      total_budget: 19255000.0
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 18686000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Innovation and Empowerment
+      total_budget: 47386000.0
+      type: subprogramme
+    - name: Co -ordination and Compliance Monitoring
+      total_budget: 33995000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 7622000.0
+      type: subprogramme
+    - name: Community Development
+      total_budget: 6508000.0
+      type: subprogramme
+    name: Expanded Public Works Programme
+    type: programme
+  - items:
+    - name: Immovable Asset Management
+      total_budget: 903655000.0
+      type: subprogramme
+    - name: Construction
+      total_budget: 267992000.0
+      type: subprogramme
+    - name: Maintenance
+      total_budget: 193823000.0
+      type: subprogramme
+    - name: Facility Operations
+      total_budget: 172586000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 122911000.0
+      type: subprogramme
+    - name: PLANNING
+      total_budget: 6921000.0
+      type: subprogramme
+    name: Public Works Infrastructure
+    type: programme
 title: Roads And Public Works budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 5 - Roads And Public Works:

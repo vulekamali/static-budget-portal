@@ -257,6 +257,57 @@ slug: human-settlements
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 131461000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Administration
+      total_budget: 1401000.0
+      type: subprogramme
+    name: HOUSING ASSETS MANAGEMENT PROPERTY  MAN
+    type: programme
+  - items:
+    - name: Incremental Interventions
+      total_budget: 848371000.0
+      type: subprogramme
+    - name: Social and Rental Intervention
+      total_budget: 138052000.0
+      type: subprogramme
+    - name: Financial Interventions
+      total_budget: 128455000.0
+      type: subprogramme
+    - name: Administration
+      total_budget: 69463000.0
+      type: subprogramme
+    - name: Title Deeds Restoration Grant
+      total_budget: 50187000.0
+      type: subprogramme
+    - name: Rural Intervention
+      total_budget: 580000.0
+      type: subprogramme
+    name: HOUSING DEVELOPMENT
+    type: programme
+  - items:
+    - name: PLANNING
+      total_budget: 15867000.0
+      type: subprogramme
+    - name: Administration
+      total_budget: 3419000.0
+      type: subprogramme
+    - name: Policy
+      total_budget: 3328000.0
+      type: subprogramme
+    - name: RESEARCH
+      total_budget: 1194000.0
+      type: subprogramme
+    name: HOUSING NEEDS, RESEARCH & PLANNING
+    type: programme
 title: Human Settlements budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 13 - Human Settlements:

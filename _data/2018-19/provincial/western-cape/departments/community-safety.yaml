@@ -314,6 +314,63 @@ slug: community-safety
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 58955000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 23662000.0
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 6245000.0
+      type: subprogramme
+    - name: Office of the HOD
+      total_budget: 4104000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Safety Promotion
+      total_budget: 29582000.0
+      type: subprogramme
+    - name: Community Police Relations
+      total_budget: 13864000.0
+      type: subprogramme
+    - name: Monitoring and Evaluation
+      total_budget: 13092000.0
+      type: subprogramme
+    - name: Policy and Research
+      total_budget: 11550000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 6004000.0
+      type: subprogramme
+    name: Civilian Oversight
+    type: programme
+  - items:
+    - name: Safety Partnership
+      total_budget: 34440000.0
+      type: subprogramme
+    - name: Western Cape  Police Ombudsman
+      total_budget: 10870000.0
+      type: subprogramme
+    name: Provincial Policing Functions
+    type: programme
+  - items:
+    - name: Provincial Security Operations
+      total_budget: 77560000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 15506000.0
+      type: subprogramme
+    - name: Security Advisory Services
+      total_budget: 11183000.0
+      type: subprogramme
+    name: Security Risk Management
+    type: programme
 title: Community Safety budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 4 - Community Safety:

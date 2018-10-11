@@ -368,6 +368,51 @@ slug: culture-arts-and-traditional-affairs
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 95723000.0
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 10578400.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Arts and Culture
+      total_budget: 181481000.0
+      type: subprogramme
+    - name: MANAGEMENT
+      total_budget: 78147000.0
+      type: subprogramme
+    - name: Museum  Services
+      total_budget: 22027000.0
+      type: subprogramme
+    - name: Language Services
+      total_budget: 11434000.0
+      type: subprogramme
+    name: Cultural Affairs
+    type: programme
+  - items:
+    - name: Library services
+      total_budget: 176480000.0
+      type: subprogramme
+    - name: MANAGEMENT
+      total_budget: 12844000.0
+      type: subprogramme
+    - name: Archives
+      total_budget: 9386000.0
+      type: subprogramme
+    name: Library and Archive Services
+    type: programme
+  - items:
+    - name: Traditional Leadership Support
+      total_budget: 133949000.0
+      type: subprogramme
+    name: Traditional Affairs
+    type: programme
 title: Culture, Arts And Traditional Affairs budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 4 - Culture, Arts And Traditional Affairs:

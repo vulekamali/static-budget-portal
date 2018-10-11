@@ -279,6 +279,63 @@ slug: office-of-the-premier
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Financial Management
+      total_budget: 49853000.0
+      type: subprogramme
+    - name: Premier Support
+      total_budget: 27751000.0
+      type: subprogramme
+    - name: Director-General Support
+      total_budget: 14458000.0
+      type: subprogramme
+    - name: Executive Council Support
+      total_budget: 10264000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Special Programmes
+      total_budget: 98383000.0
+      type: subprogramme
+    - name: Strategic Human Resources
+      total_budget: 91093000.0
+      type: subprogramme
+    - name: Information Communication Technology (ICT)
+      total_budget: 82823000.0
+      type: subprogramme
+    - name: Communication Services
+      total_budget: 62608000.0
+      type: subprogramme
+    - name: Gaming and Betting
+      total_budget: 47634000.0
+      type: subprogramme
+    - name: Intergovermental relations
+      total_budget: 16117000.0
+      type: subprogramme
+    - name: Legal Services
+      total_budget: 11719000.0
+      type: subprogramme
+    name: Institutional Development
+    type: programme
+  - items:
+    - name: Premier's Priority Programmes
+      total_budget: 98145000.0
+      type: subprogramme
+    - name: Royal Household
+      total_budget: 65830000.0
+      type: subprogramme
+    - name: Heritage
+      total_budget: 59833000.0
+      type: subprogramme
+    - name: Provincial Policy Management
+      total_budget: 50626000.0
+      type: subprogramme
+    name: Policy and Governance
+    type: programme
 title: Office Of The Premier budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 1 - Office Of The Premier:

@@ -299,6 +299,81 @@ slug: public-works-and-roads
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Support
+      total_budget: 186433000.0
+      type: subprogramme
+    - name: Office of the HOD
+      total_budget: 30564000.0
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 8112000.0
+      type: subprogramme
+    - name: Departmental Strategy
+      total_budget: 6294000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Community Development
+      total_budget: 63739000.0
+      type: subprogramme
+    - name: Innovation and Empowerment
+      total_budget: 6418000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 5581000.0
+      type: subprogramme
+    - name: EPWP Co-Ordination and Monitoring
+      total_budget: 300000.0
+      type: subprogramme
+    name: Community Based Programme
+    type: programme
+  - items:
+    - name: Facility Management
+      total_budget: 429815000.0
+      type: subprogramme
+    - name: Maintenance
+      total_budget: 384529000.0
+      type: subprogramme
+    - name: Construction
+      total_budget: 148169000.0
+      type: subprogramme
+    - name: Immovable Asset Management
+      total_budget: 13508000.0
+      type: subprogramme
+    - name: DESIGN
+      total_budget: 12868000.0
+      type: subprogramme
+    - name: PLANNING
+      total_budget: 10989000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 6950000.0
+      type: subprogramme
+    name: Public Works Infrastructure
+    type: programme
+  - items:
+    - name: 'Construction: Roads'
+      total_budget: 1246592000.0
+      type: subprogramme
+    - name: 'Maintenance: Roads'
+      total_budget: 380076000.0
+      type: subprogramme
+    - name: 'Programme Support: Roads'
+      total_budget: 61929000.0
+      type: subprogramme
+    - name: 'Infrastructure Design: Roads'
+      total_budget: 12113000.0
+      type: subprogramme
+    - name: 'Infrastructure  Planning: Roads'
+      total_budget: 5982000.0
+      type: subprogramme
+    name: Transport Infrastructure
+    type: programme
 title: Public Works And Roads budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 11 - Public Works And Roads:

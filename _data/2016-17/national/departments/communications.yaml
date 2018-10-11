@@ -258,6 +258,66 @@ slug: communications
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Departmental Management
+      total_budget: 14643000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 13142000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 9412000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 7440000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 465000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Broadcasting Policy
+      total_budget: 7840000.0
+      type: subprogramme
+    - name: Technology and Engineering Services
+      total_budget: 410000.0
+      type: subprogramme
+    - name: Media Policy
+      total_budget: 150000.0
+      type: subprogramme
+    name: Communications Policy, Research and Development
+    type: programme
+  - items:
+    - name: Communication and Branding
+      total_budget: 565159000.0
+      type: subprogramme
+    - name: Regulatory Institutions
+      total_budget: 502770000.0
+      type: subprogramme
+    - name: Broadcasting and Community Media
+      total_budget: 210950000.0
+      type: subprogramme
+    - name: Programme Management for Entity Oversight
+      total_budget: 2131000.0
+      type: subprogramme
+    name: Entity Oversight
+    type: programme
+  - items:
+    - name: Enterprise Development
+      total_budget: 6622000.0
+      type: subprogramme
+    - name: Broadcasting Digital Migration
+      total_budget: 4104000.0
+      type: subprogramme
+    - name: Industry Research and Analysis
+      total_budget: 168000.0
+      type: subprogramme
+    name: Industry and Capacity Development
+    type: programme
 title: Communications budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 03 - Communications:

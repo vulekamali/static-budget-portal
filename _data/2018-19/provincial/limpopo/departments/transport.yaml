@@ -274,6 +274,57 @@ slug: transport
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Support
+      total_budget: 595324976.4254
+      type: subprogramme
+    - name: Management of the Department
+      total_budget: 15783232.9
+      type: subprogramme
+    - name: Departmental Strategy
+      total_budget: 7808809.6824
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 2073000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Public Transport Services
+      total_budget: 761906462.0
+      type: subprogramme
+    - name: Infrastructure Operations
+      total_budget: 53380000.0
+      type: subprogramme
+    - name: Transport Safety and Comliance
+      total_budget: 38943776.0
+      type: subprogramme
+    - name: Transport Systems
+      total_budget: 13245102.0
+      type: subprogramme
+    - name: Programme Support Operations
+      total_budget: 1461098.0
+      type: subprogramme
+    name: Transport Operations
+    type: programme
+  - items:
+    - name: Law Enforcement
+      total_budget: 555205120.4
+      type: subprogramme
+    - name: Operator Licence and Permits
+      total_budget: 33559206.0
+      type: subprogramme
+    - name: Transport Administration and Licencing
+      total_budget: 25075880.8
+      type: subprogramme
+    - name: Programme Support Regulation
+      total_budget: 2461632.0
+      type: subprogramme
+    name: Transport Regulations
+    type: programme
 title: Transport budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 8 - Transport:

@@ -177,6 +177,27 @@ slug: national-school-of-government
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 81598000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 13705000.0
+      type: subprogramme
+    - name: Property Management
+      total_budget: 591000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Augmentation of Training Trading Account
+      total_budget: 64612000.0
+      type: subprogramme
+    name: Public Sector Organisational and Staff Development
+    type: programme
 title: National School of Government budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 10 - Public Service and Administration:

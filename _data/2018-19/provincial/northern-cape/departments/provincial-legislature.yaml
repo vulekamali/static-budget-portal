@@ -240,6 +240,48 @@ slug: provincial-legislature
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 33176000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 23627000.0
+      type: subprogramme
+    - name: Office of the Speaker
+      total_budget: 10604000.0
+      type: subprogramme
+    - name: Office of the Secretary
+      total_budget: 7066000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Members'Remuneration
+      total_budget: 26057000.0
+      type: subprogramme
+    name: Direct charge against the Provincial Revenue Fund
+    type: programme
+  - items:
+    - name: Political Party Support
+      total_budget: 43910000.0
+      type: subprogramme
+    - name: Members Facilities
+      total_budget: 6754000.0
+      type: subprogramme
+    name: Facilities for Members and Political Parties
+    type: programme
+  - items:
+    - name: Public Participation and Oversight
+      total_budget: 31635000.0
+      type: subprogramme
+    - name: Law Making and House Business
+      total_budget: 17451000.0
+      type: subprogramme
+    name: Parliamentary Business
+    type: programme
 title: Provincial Legislature budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 2 - Provincial Legislature:
