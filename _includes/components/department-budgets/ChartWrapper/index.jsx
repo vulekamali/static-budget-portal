@@ -49,7 +49,7 @@ function Markup({ renderChart, items }) {
 
   return (
     <div>
-      <canvas ref={ref => renderChart(ref)} height={(labels.length * 25) + 25} />
+      <canvas ref={ref => renderChart(ref)} height={(labels.length * 25) + 55} />
     </div>
   );
 }
