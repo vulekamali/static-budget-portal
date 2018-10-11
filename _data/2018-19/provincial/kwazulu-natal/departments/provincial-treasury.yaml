@@ -340,6 +340,87 @@ slug: provincial-treasury
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 86714000.0
+      type: subprogramme
+    - name: Management Services(HOD)
+      total_budget: 46263000.0
+      type: subprogramme
+    - name: Financial Management(CFO)
+      total_budget: 30894000.0
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 28506000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Support and Interlinked Financial Systems
+      total_budget: 94182000.0
+      type: subprogramme
+    - name: Supply Chain Management
+      total_budget: 44731000.0
+      type: subprogramme
+    - name: Accounting Services
+      total_budget: 32668000.0
+      type: subprogramme
+    - name: Asset & Liabilities  Management
+      total_budget: 19219000.0
+      type: subprogramme
+    - name: Public, Private Partnerships
+      total_budget: 8288000.0
+      type: subprogramme
+    - name: Norms and Standards
+      total_budget: 6622000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 3892000.0
+      type: subprogramme
+    name: Financial Governance
+    type: programme
+  - items:
+    - name: Assurance Services
+      total_budget: 78993000.0
+      type: subprogramme
+    - name: Forensics Services
+      total_budget: 36932000.0
+      type: subprogramme
+    - name: Risk Management
+      total_budget: 25055000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 3575000.0
+      type: subprogramme
+    name: Internal Audit
+    type: programme
+  - items:
+    - name: Municipal Support Programme
+      total_budget: 32545000.0
+      type: subprogramme
+    - name: Municipal Budget
+      total_budget: 27813000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 3351000.0
+      type: subprogramme
+    name: Municipal Finance Management
+    type: programme
+  - items:
+    - name: Economic Analysis
+      total_budget: 20760000.0
+      type: subprogramme
+    - name: Public Finance
+      total_budget: 16247000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 3650000.0
+      type: subprogramme
+    name: Sustainable Resource Management
+    type: programme
 title: Provincial Treasury budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 6 - Provincial Treasury:

@@ -258,6 +258,45 @@ slug: economic-development
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Management Services
+      total_budget: 37100000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 23896000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 14368000.0
+      type: subprogramme
+    - name: Office of the Director General
+      total_budget: 11152000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Growth Path and Job Drivers
+      total_budget: 22375000.0
+      type: subprogramme
+    - name: Social Dialogue, Productivity and Innovation
+      total_budget: 12050000.0
+      type: subprogramme
+    name: Growth Path and Social Dialogue
+    type: programme
+  - items:
+    - name: Competition, Trade and other Economic Regulation
+      total_budget: 423263000.0
+      type: subprogramme
+    - name: Infrastructure Development Coordination
+      total_budget: 265287000.0
+      type: subprogramme
+    - name: Development Investment, Industrial Funding and Entrepreneurship
+      total_budget: 263106000.0
+      type: subprogramme
+    name: Investment, Competition and Trade
+    type: programme
 title: Economic Development budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 25 - Economic Development:

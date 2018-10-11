@@ -376,6 +376,84 @@ slug: transport
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Support
+      total_budget: 306651000.0
+      type: subprogramme
+    - name: Departmental Strategy
+      total_budget: 27358000.0
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 16781000.0
+      type: subprogramme
+    - name: MANAGEMENT
+      total_budget: 12502000.0
+      type: subprogramme
+    name: 1. Administration
+    type: programme
+  - items:
+    - name: Maintenance
+      total_budget: 3671656000.0
+      type: subprogramme
+    - name: Construction
+      total_budget: 3436542000.0
+      type: subprogramme
+    - name: Programme Support Infrastrucure
+      total_budget: 283386000.0
+      type: subprogramme
+    - name: Infrastructure Design
+      total_budget: 44190000.0
+      type: subprogramme
+    - name: Infrastructure Planning
+      total_budget: 24448000.0
+      type: subprogramme
+    name: 2. Transport Infrastructure
+    type: programme
+  - items:
+    - name: Public Transport Services
+      total_budget: 1152992000.0
+      type: subprogramme
+    - name: Transport Safety and Compliance
+      total_budget: 93333000.0
+      type: subprogramme
+    - name: Programme Support Operations
+      total_budget: 35521000.0
+      type: subprogramme
+    name: 3. Transport Operations
+    type: programme
+  - items:
+    - name: Law Enforcement
+      total_budget: 708216000.0
+      type: subprogramme
+    - name: Transport Administration and Licensing
+      total_budget: 140195000.0
+      type: subprogramme
+    - name: Operator Licenses and Permits
+      total_budget: 68585000.0
+      type: subprogramme
+    - name: Programme Support Regulation
+      total_budget: 3068000.0
+      type: subprogramme
+    name: 4. Transport Regulation
+    type: programme
+  - items:
+    - name: Innovation and Empowerment
+      total_budget: 17801000.0
+      type: subprogramme
+    - name: Programme Support Community Based
+      total_budget: 8151000.0
+      type: subprogramme
+    - name: EPWP Co-Ordination and Monitoring
+      total_budget: 5504000.0
+      type: subprogramme
+    - name: Community Development
+      total_budget: 5167000.0
+      type: subprogramme
+    name: 5. Community Based Programme
+    type: programme
 title: Transport budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 12 - Transport:

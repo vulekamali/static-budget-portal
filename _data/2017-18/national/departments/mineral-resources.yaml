@@ -317,6 +317,84 @@ slug: mineral-resources
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 123920000.0
+      type: subprogramme
+    - name: Financial Administration
+      total_budget: 98903000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 32883000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 27513000.0
+      type: subprogramme
+    - name: Department Management
+      total_budget: 20324000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 14179000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Mine Health and Safety Regions
+      total_budget: 137179000.0
+      type: subprogramme
+    - name: Governance Policy and Oversight
+      total_budget: 46060000.0
+      type: subprogramme
+    - name: Mine Health and Safety Council
+      total_budget: 6162000.0
+      type: subprogramme
+    name: Mine Health and Safety
+    type: programme
+  - items:
+    - name: Mintek
+      total_budget: 367256000.0
+      type: subprogramme
+    - name: Council for Geoscience
+      total_budget: 366988000.0
+      type: subprogramme
+    - name: Mineral Promotion and International Coordination
+      total_budget: 75615000.0
+      type: subprogramme
+    - name: Mine Environmental Management
+      total_budget: 37163000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 31163000.0
+      type: subprogramme
+    - name: Mineral Policy
+      total_budget: 19619000.0
+      type: subprogramme
+    - name: Assistance to Mines
+      total_budget: 5555000.0
+      type: subprogramme
+    - name: Economic Advisory Services
+      total_budget: 4390000.0
+      type: subprogramme
+    name: Mineral Policy and Promotion
+    type: programme
+  - items:
+    - name: Mineral Regulation and Administration
+      total_budget: 194120000.0
+      type: subprogramme
+    - name: Petroleum Agency South Africa
+      total_budget: 87138000.0
+      type: subprogramme
+    - name: South African Diamond and Precious Metals Regulator
+      total_budget: 55865000.0
+      type: subprogramme
+    - name: Management Mineral Regulation
+      total_budget: 27454000.0
+      type: subprogramme
+    name: Mineral Regulation
+    type: programme
 title: Mineral Resources budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 29 - Mineral Resources:

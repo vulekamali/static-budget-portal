@@ -247,6 +247,62 @@ slug: government-communication-and-information-system
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 52884000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 51826000.0
+      type: subprogramme
+    - name: Financial Administration
+      total_budget: 34177000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 7764000.0
+      type: subprogramme
+    - name: Departmental Management
+      total_budget: 7665000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Communication Service Agency
+      total_budget: 52854000.0
+      type: subprogramme
+    - name: Products and Platforms
+      total_budget: 48873000.0
+      type: subprogramme
+    - name: Policy and Research
+      total_budget: 35007000.0
+      type: subprogramme
+    - name: Programme Management for Content Processing and Dissemination
+      total_budget: 3633000.0
+      type: subprogramme
+    name: Content Processing and Dissemination
+    type: programme
+  - items:
+    - name: Provincial and Local Liaison
+      total_budget: 77061000.0
+      type: subprogramme
+    - name: Media Engagement
+      total_budget: 13337000.0
+      type: subprogramme
+    - name: Cluster Supervision (Human Development, Social Protection and Governance
+        and Administration)
+      total_budget: 8735000.0
+      type: subprogramme
+    - name: Cluster Supervision (Economic and Infrastructure, Justice and International)
+      total_budget: 7682000.0
+      type: subprogramme
+    - name: Programme Management for Intergovernmental Coordination and Stakeholder
+        Management
+      total_budget: 3252000.0
+      type: subprogramme
+    name: Intergovernmental Coordination and Stakeholder Management
+    type: programme
 title: Government Communication and Information System budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 03 - Communications:

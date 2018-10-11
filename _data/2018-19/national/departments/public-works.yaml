@@ -385,6 +385,93 @@ slug: public-works
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 220977000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 118967000.0
+      type: subprogramme
+    - name: Finance and Supply Chain Management
+      total_budget: 58253000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 42492000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 39660000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: 'Expanded Public Works Programme: Infrastructure'
+      total_budget: 1213432000.0
+      type: subprogramme
+    - name: 'Expanded Public Works Programme: Operations'
+      total_budget: 1208218000.0
+      type: subprogramme
+    - name: 'Expanded Public Works Programme: Partnership Support'
+      total_budget: 79020000.0
+      type: subprogramme
+    - name: 'Expanded Public Works Programme: Monitoring and Evaluation'
+      total_budget: 57845000.0
+      type: subprogramme
+    - name: 'Expanded Public Works Programme: Public Employment Coordinating Commission'
+      total_budget: 8117000.0
+      type: subprogramme
+    name: Expanded Public Works Programme
+    type: programme
+  - items:
+    - name: Intergovernmental Relations and Coordination
+      total_budget: 26074000.0
+      type: subprogramme
+    - name: Professional Services
+      total_budget: 25708000.0
+      type: subprogramme
+    - name: Monitoring, Evaluation and Reporting
+      total_budget: 6319000.0
+      type: subprogramme
+    name: Intergovernmental Coordination
+    type: programme
+  - items:
+    - name: Prestige Accommodation and State Functions
+      total_budget: 87523000.0
+      type: subprogramme
+    - name: Parliamentary Villages Management Board
+      total_budget: 10368000.0
+      type: subprogramme
+    name: Prestige Policy
+    type: programme
+  - items:
+    - name: Property Management Trading Entity
+      total_budget: 4009490000.0
+      type: subprogramme
+    - name: Construction Industry Development Board
+      total_budget: 73323000.0
+      type: subprogramme
+    - name: Council for the Built Environment
+      total_budget: 50100000.0
+      type: subprogramme
+    - name: Construction Policy Development Programme
+      total_budget: 46397000.0
+      type: subprogramme
+    - name: Independent Development Trust
+      total_budget: 28362000.0
+      type: subprogramme
+    - name: Assistance to Organisations for the Preservation of National Memorials
+      total_budget: 27523000.0
+      type: subprogramme
+    - name: Property Policy Development Programme
+      total_budget: 14640000.0
+      type: subprogramme
+    - name: Construction Education and Training Authority
+      total_budget: 518000.0
+      type: subprogramme
+    name: Property and Construction Industry Policy and Research
+    type: programme
 title: Public Works budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 11 - Public Works:

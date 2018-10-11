@@ -252,6 +252,54 @@ slug: military-veterans
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 66374000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 26499000.0
+      type: subprogramme
+    - name: Financial Administration
+      total_budget: 20808000.0
+      type: subprogramme
+    - name: Strategic Planning, Policy Development and Monitoring and Evaluation
+      total_budget: 16583000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 10786000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 8768000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Empowerment and Skills Development
+      total_budget: 94026000.0
+      type: subprogramme
+    - name: Provincial Offices and Stakeholder Relations
+      total_budget: 49092000.0
+      type: subprogramme
+    - name: Heritage, Memorials, Burials and Honours
+      total_budget: 21794000.0
+      type: subprogramme
+    name: Empowerment and Stakeholder Management
+    type: programme
+  - items:
+    - name: Socio Economic Support Management
+      total_budget: 219673000.0
+      type: subprogramme
+    - name: Health Care and Wellbeing Support
+      total_budget: 76709000.0
+      type: subprogramme
+    - name: Database and Benefits Management
+      total_budget: 10999000.0
+      type: subprogramme
+    name: Socio Economic Support
+    type: programme
 title: Military Veterans budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 19 - Defence and Military Veterans:

@@ -306,6 +306,63 @@ slug: sport-arts-culture-and-recreation
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Office of the MEC
+      total_budget: 49088000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 45898000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Arts and Culture
+      total_budget: 110857000.0
+      type: subprogramme
+    - name: Museum Services
+      total_budget: 43672000.0
+      type: subprogramme
+    - name: Language Services
+      total_budget: 5467000.0
+      type: subprogramme
+    - name: HERITAGE RESOURCE SERVICES
+      total_budget: 3998000.0
+      type: subprogramme
+    - name: MANAGEMENT
+      total_budget: 2667000.0
+      type: subprogramme
+    name: Cultural Affairs
+    type: programme
+  - items:
+    - name: Library services
+      total_budget: 207079030.0
+      type: subprogramme
+    - name: Archives
+      total_budget: 6295000.0
+      type: subprogramme
+    - name: MANAGEMENT
+      total_budget: 4343000.0
+      type: subprogramme
+    name: LIBRARY AND ARCHIVES SERVICES
+    type: programme
+  - items:
+    - name: Sport
+      total_budget: 117364000.0
+      type: subprogramme
+    - name: MANAGEMENT
+      total_budget: 65776000.0
+      type: subprogramme
+    - name: Recreation
+      total_budget: 33543000.0
+      type: subprogramme
+    - name: SCHOOL SPORT
+      total_budget: 30963000.0
+      type: subprogramme
+    name: Sport and Recreation
+    type: programme
 title: Sport, Arts, Culture And Recreation budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 12 - Sport, Arts, Culture And Recreation:

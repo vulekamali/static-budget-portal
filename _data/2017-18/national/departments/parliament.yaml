@@ -302,6 +302,99 @@ slug: parliament
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Finance Management Office
+      total_budget: 44957000.0
+      type: subprogramme
+    - name: Secretary's Office
+      total_budget: 29584000.0
+      type: subprogramme
+    - name: Strategic Management and Governance
+      total_budget: 27703000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 13948000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Constituency Support
+      total_budget: 309360000.0
+      type: subprogramme
+    - name: "National Assembly Members\u2019 Facilities"
+      total_budget: 212555000.0
+      type: subprogramme
+    - name: Political Party Support
+      total_budget: 96630000.0
+      type: subprogramme
+    - name: "National Council of Provinces Members\u2019 Facilities"
+      total_budget: 32293000.0
+      type: subprogramme
+    - name: Members Support Services
+      total_budget: 10006000.0
+      type: subprogramme
+    - name: Party Leadership Support
+      total_budget: 8700000.0
+      type: subprogramme
+    name: Associated Services
+    type: programme
+  - items:
+    - name: Core Business Support
+      total_budget: 258783000.0
+      type: subprogramme
+    - name: Knowledge and Information Services
+      total_budget: 168740000.0
+      type: subprogramme
+    - name: International Relations and Protocol
+      total_budget: 52410000.0
+      type: subprogramme
+    - name: National Council of Provinces
+      total_budget: 36791000.0
+      type: subprogramme
+    - name: National Assembly
+      total_budget: 27091000.0
+      type: subprogramme
+    - name: Office of the Deputy Secretary
+      total_budget: 5351000.0
+      type: subprogramme
+    name: Core Business
+    type: programme
+  - items:
+    - name: Members Remuneration
+      total_budget: 556288000.0
+      type: subprogramme
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - name: Office of the Speaker
+      total_budget: 39402000.0
+      type: subprogramme
+    - name: Office of the Chairperson
+      total_budget: 31791000.0
+      type: subprogramme
+    name: Strategic Leadership and Governance
+    type: programme
+  - items:
+    - name: Institutional Support Services
+      total_budget: 109365000.0
+      type: subprogramme
+    - name: Parliamentary Communication Services
+      total_budget: 80103000.0
+      type: subprogramme
+    - name: Information Communication and Technology
+      total_budget: 60267000.0
+      type: subprogramme
+    - name: Human Resources Management
+      total_budget: 50915000.0
+      type: subprogramme
+    - name: Office of the Deputy Secretary
+      total_budget: 5202000.0
+      type: subprogramme
+    name: Support Services
+    type: programme
 title: Parliament budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 02 - Parliament:

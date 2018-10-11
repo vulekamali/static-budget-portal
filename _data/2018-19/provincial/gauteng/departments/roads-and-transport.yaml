@@ -361,6 +361,66 @@ slug: roads-and-transport
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Support
+      total_budget: 328139000.0
+      type: subprogramme
+    - name: Management of the Department
+      total_budget: 18140000.0
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 9490000.0
+      type: subprogramme
+    - name: Departmental Strategy
+      total_budget: 3335000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Gautrain Rapid Link
+      total_budget: 1945268000.0
+      type: subprogramme
+    name: Gautrain
+    type: programme
+  - items:
+    - name: Maintenance
+      total_budget: 1367518500.0
+      type: subprogramme
+    - name: Construction
+      total_budget: 947364500.0
+      type: subprogramme
+    - name: Infrastructure Design
+      total_budget: 110105000.0
+      type: subprogramme
+    - name: Infrastructure Planning
+      total_budget: 60299000.0
+      type: subprogramme
+    - name: Programme Support Infrastructure
+      total_budget: 34395000.0
+      type: subprogramme
+    name: Transport Infrastructure
+    type: programme
+  - items:
+    - name: Public Transport Services
+      total_budget: 2580547000.0
+      type: subprogramme
+    - name: Programme Support Operations
+      total_budget: 8570000.0
+      type: subprogramme
+    name: Transport Operations
+    type: programme
+  - items:
+    - name: Transport Administration and Licencing
+      total_budget: 164912000.0
+      type: subprogramme
+    - name: Operator Licence and Permits
+      total_budget: 135735000.0
+      type: subprogramme
+    name: Transport Regulation
+    type: programme
 title: Roads And Transport budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 9 - Roads And Transport:

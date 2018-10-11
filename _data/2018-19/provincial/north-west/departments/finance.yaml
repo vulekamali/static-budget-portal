@@ -266,6 +266,75 @@ slug: finance
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 74529000.0
+      type: subprogramme
+    - name: Financial Management (Office of the CFO)
+      total_budget: 48968000.0
+      type: subprogramme
+    - name: Management Services
+      total_budget: 10578000.0
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 8962400.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Support and Interlinked Financial System
+      total_budget: 37421000.0
+      type: subprogramme
+    - name: Asset Management
+      total_budget: 12601000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 2426000.0
+      type: subprogramme
+    name: Asset And Liabilities Management
+    type: programme
+  - items:
+    - name: Accounting Services
+      total_budget: 73570000.0
+      type: subprogramme
+    - name: Provincial Internal Audit
+      total_budget: 68679000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 7634000.0
+      type: subprogramme
+    - name: Risk Management
+      total_budget: 4070000.0
+      type: subprogramme
+    - name: Norms and Standards
+      total_budget: 2706000.0
+      type: subprogramme
+    name: Financial Governance
+    type: programme
+  - items:
+    - name: Municipal Finance
+      total_budget: 75167000.0
+      type: subprogramme
+    - name: Budget Management
+      total_budget: 23423000.0
+      type: subprogramme
+    - name: Public Finance
+      total_budget: 18515000.0
+      type: subprogramme
+    - name: Fiscal Policy
+      total_budget: 6448000.0
+      type: subprogramme
+    - name: Economic Analysis
+      total_budget: 5165000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 3222000.0
+      type: subprogramme
+    name: Sustainable Resource Management
+    type: programme
 title: Finance budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 7 - Finance:

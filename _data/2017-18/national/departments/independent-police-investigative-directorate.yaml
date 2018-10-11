@@ -238,6 +238,48 @@ slug: independent-police-investigative-directorate
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 37932000.0
+      type: subprogramme
+    - name: Finance Services
+      total_budget: 19608000.0
+      type: subprogramme
+    - name: Department Management
+      total_budget: 13477000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 11768000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 4326000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Compliance Monitoring
+      total_budget: 5574000.0
+      type: subprogramme
+    - name: Stakeholder Management
+      total_budget: 5550000.0
+      type: subprogramme
+    name: Compliance Monitoring and Stakeholder Management
+    type: programme
+  - items:
+    - name: Investigation Services
+      total_budget: 139967000.0
+      type: subprogramme
+    - name: Investigation Management
+      total_budget: 12568000.0
+      type: subprogramme
+    - name: Information Management
+      total_budget: 4712000.0
+      type: subprogramme
+    name: Investigation and Information Management
+    type: programme
 title: Independent Police Investigative Directorate budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 20 - Independent Police Investigative Directorate:

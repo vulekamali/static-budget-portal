@@ -279,6 +279,60 @@ slug: agriculture-and-rural-development
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: GRA:FARMER SUPPORT & DEVELOPMENT
+      total_budget: 205579000.0
+      type: subprogramme
+    - name: GRA:VETERINARY SERVICES
+      total_budget: 99060000.0
+      type: subprogramme
+    - name: GRA:RESEARCH & TECHNOLGY DEV SER
+      total_budget: 75093000.0
+      type: subprogramme
+    - name: GRA:SUSTAINABLE RESOURCE MANAGE
+      total_budget: 62302000.0
+      type: subprogramme
+    - name: GRA:AGRICULTURAL ECONOMICS SERV
+      total_budget: 33560000.0
+      type: subprogramme
+    - name: GRA:RURAL DEVELOPMNT CORDINATION
+      total_budget: 13833000.0
+      type: subprogramme
+    name: AGRICULTURE AND RURAL DEVELOPMENT
+    type: programme
+  - items:
+    - name: GRA:FINANCIAL MANAGEMENT
+      total_budget: 104372000.0
+      type: subprogramme
+    - name: GRA:CORPORATE SERVICES
+      total_budget: 87080000.0
+      type: subprogramme
+    - name: GRA:SENIOR MANAGEMENT
+      total_budget: 27459000.0
+      type: subprogramme
+    - name: GRA:OFFICE OF THE MEC
+      total_budget: 6165000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: 'GRA: BIODIVERSITY MANAGEMENT'
+      total_budget: 129870000.0
+      type: subprogramme
+    - name: GRA:ENVIRONMENTAL QUALITY MANAGEMENT
+      total_budget: 46120000.0
+      type: subprogramme
+    - name: GRA:COMPLIANCE AND ENFORCEMENT
+      total_budget: 43880000.0
+      type: subprogramme
+    - name: GRA:ENVIRONMENTAL POLICY,PLANNING AND COORDINATION
+      total_budget: 22627000.0
+      type: subprogramme
+    name: ENVIRONMENTAL AFFAIRS
+    type: programme
 title: Agriculture And Rural Development budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 11 - Agriculture And Rural Development:

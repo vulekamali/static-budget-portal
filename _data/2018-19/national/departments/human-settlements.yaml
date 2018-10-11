@@ -334,6 +334,75 @@ slug: human-settlements
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 197654000.0
+      type: subprogramme
+    - name: Departmental Management
+      total_budget: 90219000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 58172000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 55508000.0
+      type: subprogramme
+    - name: Property Management
+      total_budget: 41097000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Human Settlements Development Grant
+      total_budget: 18166520000.0
+      type: subprogramme
+    - name: Urban Settlements Development Grant
+      total_budget: 11306137000.0
+      type: subprogramme
+    - name: Contributions
+      total_budget: 1159034000.0
+      type: subprogramme
+    - name: Title Deeds Restoration Grant
+      total_budget: 518655000.0
+      type: subprogramme
+    - name: Emergency Housing Grant
+      total_budget: 400000000.0
+      type: subprogramme
+    - name: Chief Investment Officer
+      total_budget: 22481000.0
+      type: subprogramme
+    - name: Management for Housing Development Finance
+      total_budget: 4453000.0
+      type: subprogramme
+    name: Housing Development Finance
+    type: programme
+  - items:
+    - name: Programme Management Unit
+      total_budget: 189016000.0
+      type: subprogramme
+    - name: Chief of Operations
+      total_budget: 47958000.0
+      type: subprogramme
+    - name: Management for Human Settlements Delivery Support
+      total_budget: 9031000.0
+      type: subprogramme
+    name: Human Settlements Delivery Support
+    type: programme
+  - items:
+    - name: Human Settlements Strategy and Planning
+      total_budget: 48311000.0
+      type: subprogramme
+    - name: Human Settlements Policy Frameworks
+      total_budget: 33387000.0
+      type: subprogramme
+    - name: Management for Policy, Strategy and Planning
+      total_budget: 8083000.0
+      type: subprogramme
+    name: Human Settlements Policy, Strategy and Planning
+    type: programme
 title: Human Settlements budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 38 - Human Settlements:

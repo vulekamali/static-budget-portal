@@ -275,6 +275,60 @@ slug: public-service-commission
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 47434000.0
+      type: subprogramme
+    - name: Property Management
+      total_budget: 32991000.0
+      type: subprogramme
+    - name: Public Service Commission
+      total_budget: 20546000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 14048000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Professional Ethics
+      total_budget: 21777000.0
+      type: subprogramme
+    - name: 'Programme Management: Integrity and Anti-Corruption'
+      total_budget: 16296000.0
+      type: subprogramme
+    - name: Public Administration Investigations
+      total_budget: 12728000.0
+      type: subprogramme
+    name: Integrity and Anti-Corruption
+    type: programme
+  - items:
+    - name: 'Programme Management: Leadership and Management Practices'
+      total_budget: 20165000.0
+      type: subprogramme
+    - name: Labour Relations Improvement
+      total_budget: 13086000.0
+      type: subprogramme
+    - name: Leadership and Human Resource Reviews
+      total_budget: 9827000.0
+      type: subprogramme
+    name: Leadership and Management Practices
+    type: programme
+  - items:
+    - name: 'Programme Management: Monitoring and Evaluation'
+      total_budget: 20185000.0
+      type: subprogramme
+    - name: Governance Monitoring
+      total_budget: 8768000.0
+      type: subprogramme
+    - name: Service Delivery and Compliance Evaluations
+      total_budget: 7813000.0
+      type: subprogramme
+    name: Monitoring and Evaluation
+    type: programme
 title: Public Service Commission budget 2017-18  - vulekamali
 treasury_datasets:
   ENE for Vote 10 - Public Service and Administration:

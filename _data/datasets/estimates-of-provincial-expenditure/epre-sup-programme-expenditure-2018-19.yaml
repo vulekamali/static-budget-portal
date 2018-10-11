@@ -13,8 +13,10 @@ category:
   name: Estimates of Provincial Expenditure
   slug: estimates-of-provincial-expenditure
   url_path: /datasets/estimates-of-provincial-expenditure
-created: '2018-02-08T14:39:32.048533'
-description: "This dataset includes expenditure data as published in the Estimates\
+created: '2018-10-11T06:01:46.129260'
+description: null
+intro: null
+intro_short: "This dataset includes expenditure data as published in the Estimates\
   \ of Provincial Revenue and Expenditure. Departmental expenditure data in previous\
   \ financial years have been aligned with the budget and programme structures of\
   \ departments as they are structured in the current Medium Term Expenditure Framework.\
@@ -25,27 +27,14 @@ description: "This dataset includes expenditure data as published in the Estimat
   \ in a department\u2019s budget programme structures (BPS) as departments are afforded\
   \ an opportunity before the start of the Budget to change their BPS.This is to ensure\
   \ a more economical, efficient and effective delivery of public services and performance\
-  \ by the department as a whole.\r\n"
-intro: "This dataset includes expenditure data as published in the Estimates of Provincial\
-  \ Revenue and Expenditure. Departmental expenditure data in previous financial years\
-  \ have been aligned with the budget and programme structures of departments as they\
-  \ are structured in the current Medium Term Expenditure Framework. This means that\
-  \ the structure of historical expenditure data for a department, may not necessarily\
-  \ reflect the same structure of that department when expenditure was incurred during\
-  \ a particular financial year. This may be due to functions shifts which may have\
-  \ occurred within a particular department or a general change in a department\u2019\
-  s budget programme structures (BPS) as departments are afforded an opportunity before\
-  \ the start of the Budget to change their BPS.This is to ensure a more economical,\
-  \ efficient and effective delivery of public services and performance by the department\
-  \ as a whole.\r\n"
-intro_short: ''
+  \ by the department as a whole."
 key_points: ''
-last_updated: '2018-10-11T06:09:16.913452'
+last_updated: '2018-10-11T06:54:49.073832'
 license:
-  name: Other (Public Domain)
+  name: License not specified
   url: null
 methodology: ''
-name: Estimates of Provincial Expenditure 2017-18
+name: EPRE Sup-programme Expenditure 2018-19
 organization:
   email: null
   facebook: null
@@ -57,16 +46,16 @@ organization:
   url: null
 resources:
 - description: ''
-  format: OpenSpending API
-  name: Estimates of Provincial Expenditure 2017-18
-  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:estimates-of-provincial-expenditure-south-africa-2017-18/model/
-- description: ''
   format: CSV
-  name: Estimates of Provincial Expenditure 2017-18
-  url: https://data.vulekamali.gov.za/dataset/9ac6e267-77e3-44a4-bd99-9a31a7112875/resource/4d5579ca-de40-4c2f-8d5b-55e4432da78a/download/estimates-of-provincial-expenditure-south-africa-2017-18.csv
+  name: EPRE Sub-programme Expenditure
+  url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/epre-sub-programme-drilldown-2018-19-v2/final/data/epre-subprogrammes-2018-19-from-jonathan.csv
+- description: ''
+  format: OpenSpending API
+  name: EPRE Sub-programme Expenditure
+  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:epre-sub-programme-drilldown-2018-19-v2/model/
 selected_tab: datasets
-slug: estimates-of-provincial-expenditure-2017-18
-title: Estimates of Provincial Expenditure 2017-18 - vulekamali
-url_path: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+slug: epre-sup-programme-expenditure-2018-19
+title: EPRE Sup-programme Expenditure 2018-19 - vulekamali
+url_path: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
 usage: ''
 use_for: ''

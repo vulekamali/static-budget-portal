@@ -190,6 +190,45 @@ slug: community-safety-and-liaison
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 52070000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 13110000.0
+      type: subprogramme
+    - name: Office of the HOD
+      total_budget: 8333000.0
+      type: subprogramme
+    - name: SECURITY
+      total_budget: 6178000.0
+      type: subprogramme
+    - name: Legal
+      total_budget: 3928000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Safety Promotion
+      total_budget: 79230000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 35386000.0
+      type: subprogramme
+    - name: Monitoring and Evaluation
+      total_budget: 16707000.0
+      type: subprogramme
+    - name: Community Police Relations
+      total_budget: 5900000.0
+      type: subprogramme
+    - name: Policy and Research
+      total_budget: 4107000.0
+      type: subprogramme
+    name: Provincial Secretariat for Police Service
+    type: programme
 title: Community Safety And Liaison budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 9 - Community Safety And Liaison:

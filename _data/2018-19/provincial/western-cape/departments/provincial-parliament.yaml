@@ -261,6 +261,66 @@ slug: provincial-parliament
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Office of the Secretary
+      total_budget: 23459000.0
+      type: subprogramme
+    - name: Information Technology
+      total_budget: 9934000.0
+      type: subprogramme
+    - name: Human Resources
+      total_budget: 7630000.0
+      type: subprogramme
+    - name: Office of the Speaker
+      total_budget: 6205000.0
+      type: subprogramme
+    - name: Security and Facilities Management
+      total_budget: 5318000.0
+      type: subprogramme
+    - name: Supply Chain Management
+      total_budget: 4997000.0
+      type: subprogramme
+    - name: Finance
+      total_budget: 4517000.0
+      type: subprogramme
+    - name: Internal Control
+      total_budget: 3726000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Direct Charges
+      total_budget: 43497000.0
+      type: subprogramme
+    name: Direct charge against the Provincial Revenue Fund
+    type: programme
+  - items:
+    - name: Political Parties Support Service
+      total_budget: 42444000.0
+      type: subprogramme
+    - name: Facilities and Benefits to Members
+      total_budget: 8327000.0
+      type: subprogramme
+    name: Facilities for Members and Political Parties
+    type: programme
+  - items:
+    - name: Committee Support
+      total_budget: 15164000.0
+      type: subprogramme
+    - name: Public Education and Outreach
+      total_budget: 4730000.0
+      type: subprogramme
+    - name: Hansard and Language Services
+      total_budget: 4209000.0
+      type: subprogramme
+    - name: Plenary Support
+      total_budget: 3214000.0
+      type: subprogramme
+    name: Parliamentary Services
+    type: programme
 title: Provincial Parliament budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 2 - Provincial Parliament:

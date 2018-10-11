@@ -220,6 +220,66 @@ slug: public-enterprises
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Communications
+      total_budget: 37790000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 28766000.0
+      type: subprogramme
+    - name: Human Resources
+      total_budget: 25683000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 22712000.0
+      type: subprogramme
+    - name: Chief Financial Officer
+      total_budget: 17649000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 10956000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 4624000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 3799000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Business Enhancement Services
+      total_budget: 35706000.0
+      type: subprogramme
+    - name: Transport and Defence
+      total_budget: 20006000.0
+      type: subprogramme
+    - name: Energy Resources
+      total_budget: 13658000.0
+      type: subprogramme
+    - name: Research and Economic Modelling
+      total_budget: 13481000.0
+      type: subprogramme
+    name: Business Enhancement, Transformation and Industrialisation
+    type: programme
+  - items:
+    - name: Financial Assessment and Investment Support
+      total_budget: 14041000.0
+      type: subprogramme
+    - name: Legal
+      total_budget: 11431000.0
+      type: subprogramme
+    - name: Governance
+      total_budget: 10699000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 2913000.0
+      type: subprogramme
+    name: State-owned Companies Governance Assurance and Performance
+    type: programme
 title: Public Enterprises budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 9 - Public Enterprises:

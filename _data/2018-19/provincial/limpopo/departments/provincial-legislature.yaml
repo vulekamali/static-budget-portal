@@ -237,6 +237,69 @@ slug: provincial-legislature
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 78308954.7
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 20193900.0
+      type: subprogramme
+    - name: Office of the Speaker
+      total_budget: 14108369.3
+      type: subprogramme
+    - name: Office of the Secretary
+      total_budget: 7316460.2
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 5984500.0
+      type: subprogramme
+    - name: Safety
+      total_budget: 5783473.2
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Subprogramme1
+      total_budget: 53493167.699999996
+      type: subprogramme
+    name: Direct charge against the Provincial Revenue Fund
+    type: programme
+  - items:
+    - name: Political Support Services
+      total_budget: 75012000.0
+      type: subprogramme
+    - name: Facilities for Members and Political Parties
+      total_budget: 12113864.799999999
+      type: subprogramme
+    name: Facilities for Members and Political Parties
+    type: programme
+  - items:
+    - name: Committee Services
+      total_budget: 21179805.400000002
+      type: subprogramme
+    - name: Library, Research and Information Services
+      total_budget: 18849857.0
+      type: subprogramme
+    - name: Public Participation and Petitions
+      total_budget: 12755473.4
+      type: subprogramme
+    - name: House Proceedings
+      total_budget: 11291000.0
+      type: subprogramme
+    - name: Hansard and Language Services
+      total_budget: 10909728.0
+      type: subprogramme
+    - name: NCOP
+      total_budget: 7277353.9
+      type: subprogramme
+    - name: Legal Services
+      total_budget: 6349163.8
+      type: subprogramme
+    name: Parliamentary Services
+    type: programme
 title: Provincial Legislature budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 2 - Provincial Legislature:

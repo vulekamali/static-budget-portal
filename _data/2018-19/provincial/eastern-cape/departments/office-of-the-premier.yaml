@@ -264,6 +264,66 @@ slug: office-of-the-premier
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Director General Support
+      total_budget: 222410000.0
+      type: subprogramme
+    - name: Corporate Management
+      total_budget: 77489324.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 50926000.0
+      type: subprogramme
+    - name: 'Programme Management: Corporate Services'
+      total_budget: 15751000.0
+      type: subprogramme
+    - name: Premier Support
+      total_budget: 15115634.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Provincial ICT
+      total_budget: 92496000.0
+      type: subprogramme
+    - name: Human Resource Management & Development
+      total_budget: 47533000.0
+      type: subprogramme
+    - name: Provincial Communications Services
+      total_budget: 17401000.0
+      type: subprogramme
+    - name: Provincial State Law Advisory Services
+      total_budget: 12840000.0
+      type: subprogramme
+    - name: 'Programme Management: Institutional Development Support & Integrity Management'
+      total_budget: 8510000.0
+      type: subprogramme
+    - name: Provincial Integrity Management
+      total_budget: 8408000.0
+      type: subprogramme
+    name: Institutional Development and Organisational Support
+    type: programme
+  - items:
+    - name: IGR &Stakeholder Relations Management
+      total_budget: 246372000.0
+      type: subprogramme
+    - name: Research Coordination & Policy Development Support
+      total_budget: 59014164.0
+      type: subprogramme
+    - name: Performance Monitoring and Evaluation
+      total_budget: 55993000.0
+      type: subprogramme
+    - name: 'Programme Management: Research, Policy Coordination, Monitoring & Evaluation'
+      total_budget: 22139000.0
+      type: subprogramme
+    - name: Transformation Programmes
+      total_budget: 20998000.0
+      type: subprogramme
+    name: Planning, Policy Coordination, Monitoring and Evaluation
+    type: programme
 title: Office Of The Premier budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 1 - Office Of The Premier:

@@ -206,6 +206,36 @@ slug: the-presidency
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Management
+      total_budget: 335440000.0
+      type: subprogramme
+    - name: Support Service to President
+      total_budget: 65692000.0
+      type: subprogramme
+    - name: Support Service to Deputy President
+      total_budget: 54871000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Salary of the President
+      total_budget: 3637000.0
+      type: subprogramme
+    - name: Salary of the Deputy President
+      total_budget: 3105000.0
+      type: subprogramme
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - name: Cabinet Services
+      total_budget: 49577000.0
+      type: subprogramme
+    name: Executive Support
+    type: programme
 title: The Presidency budget 2018-19  - vulekamali
 treasury_datasets:
   ENE for Vote 1 - The Presidency:

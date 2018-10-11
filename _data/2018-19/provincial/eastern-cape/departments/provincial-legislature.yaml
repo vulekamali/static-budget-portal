@@ -213,6 +213,66 @@ slug: provincial-legislature
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Coperate Services
+      total_budget: 91587091.98
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 61291784.0
+      type: subprogramme
+    - name: Office of the Secretary
+      total_budget: 33272348.7905
+      type: subprogramme
+    - name: Office of the Speaker
+      total_budget: 17706000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 2058575.4189
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Direct Charge
+      total_budget: 64003000.0
+      type: subprogramme
+    name: Direct charge against the Provincial Revenue Fund
+    type: programme
+  - items:
+    - name: Political Support Services
+      total_budget: 141927000.0
+      type: subprogramme
+    - name: Facilities and Benefits
+      total_budget: 9966000.0
+      type: subprogramme
+    name: Facilities for Members and Political Parties
+    type: programme
+  - items:
+    - name: Committee Services
+      total_budget: 34479554.0
+      type: subprogramme
+    - name: Research Services
+      total_budget: 23289000.0
+      type: subprogramme
+    - name: Public Participation and Awareness
+      total_budget: 21561000.0
+      type: subprogramme
+    - name: Legal Services
+      total_budget: 9404000.0
+      type: subprogramme
+    - name: Hansard and Language Services
+      total_budget: 5792657.5489
+      type: subprogramme
+    - name: National Council of Provinces (NCOP)
+      total_budget: 4860000.0
+      type: subprogramme
+    - name: House Proceedings
+      total_budget: 4801431.6311
+      type: subprogramme
+    name: Parliamentary Services
+    type: programme
 title: Provincial Legislature budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 2 - Provincial Legislature:

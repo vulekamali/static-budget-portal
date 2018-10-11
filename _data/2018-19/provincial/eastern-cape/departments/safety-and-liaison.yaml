@@ -181,6 +181,42 @@ slug: safety-and-liaison
 sphere:
   name: Provincial
   slug: provincial
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sup-programme-expenditure-2018-19
+  programmes:
+  - items:
+    - name: Finacial Management
+      total_budget: 20279000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 19095000.0
+      type: subprogramme
+    - name: Office of the Head of Department
+      total_budget: 11196000.0
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 1972000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Safety Promotion
+      total_budget: 34241000.0
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 7294000.0
+      type: subprogramme
+    - name: Monitoring and Evaluation
+      total_budget: 4657000.0
+      type: subprogramme
+    - name: Policy and Research
+      total_budget: 2533000.0
+      type: subprogramme
+    - name: Community Police Relations
+      total_budget: 223000.0
+      type: subprogramme
+    name: Provincial Secretariat for Police Service
+    type: programme
 title: Safety And Liaison budget 2018-19  - vulekamali
 treasury_datasets:
   EPRE for Vote 15 - Safety And Liaison:
