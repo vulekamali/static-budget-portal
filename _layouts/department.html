@@ -51,7 +51,7 @@ layout: page-shell
     {% assign pdf_text = "Learn more about these programmes in the " | append: short_estimate | append: " (PDF)" %}
     {% assign excel_text = "Learn more about these programmes in the " | append: short_estimate | append: " (Excel)" %}
 
-    {% if page_data.subprogramme_by_programme %}
+    {% if page_data.subprogramme_by_programme !== "" %}
       <div class="u-marginTop20">
         {%
           include components/department-budgets/SmallMultiplesSection/index.html
@@ -69,7 +69,7 @@ layout: page-shell
     {% endif %}
 
     <div class="u-marginTop20">
-      {% if page_data.economic_classification_by_programme.programmes %}
+      {% if page_data.economic_classification_by_programme !== "" %}
         {%
           include components/department-budgets/SmallMultiplesSection/index.html
           title="Budgeted spending by Economic Classification for each programme"
@@ -85,7 +85,7 @@ layout: page-shell
       {% endif %}
     </div>
 
-    {% if page_data.programme_by_economic_classification.econ_classes %}
+    {% if page_data.programme_by_economic_classification !== "" %}
       <div class="u-marginTop20">
         {%
           include components/department-budgets/SmallMultiplesSection/index.html
