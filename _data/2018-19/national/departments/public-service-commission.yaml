@@ -205,6 +205,69 @@ intro: '## Vote purpose
   '
 is_vote_primary: false
 name: Public Service Commission
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 68646000.0
+      type: programme
+    - name: Integrity and Anti-Corruption
+      total_budget: 52660000.0
+      type: programme
+    - name: Leadership and Management Practices
+      total_budget: 42846000.0
+      type: programme
+    - name: Monitoring and Evaluation
+      total_budget: 38593000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 56156000.0
+      type: programme
+    - name: Integrity and Anti-Corruption
+      total_budget: 1859000.0
+      type: programme
+    - name: Leadership and Management Practices
+      total_budget: 1613000.0
+      type: programme
+    - name: Monitoring and Evaluation
+      total_budget: 730000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 904000.0
+      type: programme
+    - name: Leadership and Management Practices
+      total_budget: 65000.0
+      type: programme
+    - name: Integrity and Anti-Corruption
+      total_budget: 20000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 33000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Leadership and Management Practices
+      total_budget: 158000.0
+      type: programme
+    - name: Administration
+      total_budget: 113000.0
+      type: programme
+    - name: Integrity and Anti-Corruption
+      total_budget: 3000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   programme_budgets:

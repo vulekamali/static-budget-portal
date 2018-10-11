@@ -165,6 +165,45 @@ intro: "## Vote purpose\n\n_Lead, coordinate and oversee the transformation agen
   \n"
 is_vote_primary: true
 name: Women
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 2512000.0
+      type: programme
+    - name: Monitoring, Evaluation and Outreach
+      total_budget: 398000.0
+      type: programme
+    - name: Social, Political and Economic Participation and Empowerment
+      total_budget: 339000.0
+      type: programme
+    - name: Research, Policy Coordination and Knowledge Management
+      total_budget: 245000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 77939000.0
+      type: programme
+    - name: Social, Political and Economic Participation and Empowerment
+      total_budget: 19202000.0
+      type: programme
+    - name: Monitoring, Evaluation and Outreach
+      total_budget: 12753000.0
+      type: programme
+    - name: Research, Policy Coordination and Knowledge Management
+      total_budget: 5925000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Social, Political and Economic Participation and Empowerment
+      total_budget: 67689000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

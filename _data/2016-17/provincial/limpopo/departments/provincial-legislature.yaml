@@ -184,6 +184,54 @@ intro: "## Vision\r\n\r\nThe Limpopo Legislature seeks to be a representative an
   \ to each party represented in the Legislature."
 is_vote_primary: true
 name: Provincial Legislature
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 64960000
+      type: programme
+    - name: Parliamentary Services
+      total_budget: 56480000
+      type: programme
+    - name: Direct charge against the Provincial Revenue Fund
+      total_budget: 48153000
+      type: programme
+    - name: Facilities for Members and Political Parties
+      total_budget: 6263000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 28750000
+      type: programme
+    - name: Parliamentary Services
+      total_budget: 16301000
+      type: programme
+    - name: Facilities for Members and Political Parties
+      total_budget: 7300000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 25100000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 462000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Facilities for Members and Political Parties
+      total_budget: 62474000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

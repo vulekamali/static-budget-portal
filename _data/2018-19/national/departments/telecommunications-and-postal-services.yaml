@@ -254,6 +254,102 @@ intro: '## Vote purpose
   '
 is_vote_primary: true
 name: Telecommunications and Postal Services
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 108762000.0
+      type: programme
+    - name: Policy, Research and Capacity Development
+      total_budget: 52592000.0
+      type: programme
+    - name: ICT Infrastructure Support
+      total_budget: 33253000.0
+      type: programme
+    - name: ICT Enterprise Development and Public Entities Oversight
+      total_budget: 15968000.0
+      type: programme
+    - name: International Affairs and Trade
+      total_budget: 13725000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 97772000.0
+      type: programme
+    - name: ICT Infrastructure Support
+      total_budget: 33353000.0
+      type: programme
+    - name: Policy, Research and Capacity Development
+      total_budget: 33039000.0
+      type: programme
+    - name: International Affairs and Trade
+      total_budget: 9438000.0
+      type: programme
+    - name: ICT Enterprise Development and Public Entities Oversight
+      total_budget: 5354000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 7280000.0
+      type: programme
+    - name: ICT Infrastructure Support
+      total_budget: 1679000.0
+      type: programme
+    - name: ICT Enterprise Development and Public Entities Oversight
+      total_budget: 502000.0
+      type: programme
+    - name: International Affairs and Trade
+      total_budget: 390000.0
+      type: programme
+    - name: Policy, Research and Capacity Development
+      total_budget: 294000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: ICT Infrastructure Support
+      total_budget: 6560000.0
+      type: programme
+    - name: Administration
+      total_budget: 4503000.0
+      type: programme
+    - name: Policy, Research and Capacity Development
+      total_budget: 50000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: ICT Enterprise Development and Public Entities Oversight
+      total_budget: 228616000.0
+      type: programme
+    - name: ICT Infrastructure Support
+      total_budget: 37880000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: International Affairs and Trade
+      total_budget: 28482000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 15000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: ICT Infrastructure Support
+      total_budget: 203900000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   programme_budgets:

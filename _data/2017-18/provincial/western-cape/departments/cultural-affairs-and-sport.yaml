@@ -224,6 +224,90 @@ intro: "## Vision\n\nA socially inclusive, creative, active and connected Wester
   \ of theWestern Cape and After School Programmes to low and no-fee schools.\r\n"
 is_vote_primary: true
 name: Cultural Affairs and Sport
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Library and Archive Services
+      total_budget: 65659000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 56736000
+      type: programme
+    - name: Administration
+      total_budget: 47763000
+      type: programme
+    - name: Sport and Recreation
+      total_budget: 31257000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Library and Archive Services
+      total_budget: 63169000
+      type: programme
+    - name: Sport and Recreation
+      total_budget: 61540000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 14678000
+      type: programme
+    - name: Administration
+      total_budget: 12110000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3003000
+      type: programme
+    - name: Sport and Recreation
+      total_budget: 2867000
+      type: programme
+    - name: Library and Archive Services
+      total_budget: 1910000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 1534000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Cultural Affairs
+      total_budget: 2424000
+      type: programme
+    - name: Administration
+      total_budget: 5000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 423000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Sport and Recreation
+      total_budget: 83819000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 30773000
+      type: programme
+    - name: Library and Archive Services
+      total_budget: 550000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Library and Archive Services
+      total_budget: 243358000
+      type: programme
+    - name: Sport and Recreation
+      total_budget: 1471000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

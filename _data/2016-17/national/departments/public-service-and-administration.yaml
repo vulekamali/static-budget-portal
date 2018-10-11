@@ -246,6 +246,102 @@ intro: "## Vote purpose\n\n_Lead the modernisation of the public service, throug
   \ formulate the national anti-corruption strategy.\n\n"
 is_vote_primary: true
 name: Public Service and Administration
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 112158000.0
+      type: programme
+    - name: Labour Relations and Human Resource Management
+      total_budget: 58116000.0
+      type: programme
+    - name: Governance of Public Administration
+      total_budget: 35193000.0
+      type: programme
+    - name: Service Delivery Support
+      total_budget: 30013000.0
+      type: programme
+    - name: Policy Development, Research and Analysis
+      total_budget: 22520000.0
+      type: programme
+    - name: Government Chief Information Officer
+      total_budget: 14814000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 101117000.0
+      type: programme
+    - name: Labour Relations and Human Resource Management
+      total_budget: 22833000.0
+      type: programme
+    - name: Service Delivery Support
+      total_budget: 19337000.0
+      type: programme
+    - name: Governance of Public Administration
+      total_budget: 12379000.0
+      type: programme
+    - name: Policy Development, Research and Analysis
+      total_budget: 9383000.0
+      type: programme
+    - name: Government Chief Information Officer
+      total_budget: 5920000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1638000.0
+      type: programme
+    - name: Labour Relations and Human Resource Management
+      total_budget: 428000.0
+      type: programme
+    - name: Service Delivery Support
+      total_budget: 267000.0
+      type: programme
+    - name: Governance of Public Administration
+      total_budget: 256000.0
+      type: programme
+    - name: Policy Development, Research and Analysis
+      total_budget: 223000.0
+      type: programme
+    - name: Government Chief Information Officer
+      total_budget: 151000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Governance of Public Administration
+      total_budget: 234233000.0
+      type: programme
+    - name: Service Delivery Support
+      total_budget: 87195000.0
+      type: programme
+    - name: Administration
+      total_budget: 145000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Service Delivery Support
+      total_budget: 1245000.0
+      type: programme
+    - name: Administration
+      total_budget: 590000.0
+      type: programme
+    - name: Governance of Public Administration
+      total_budget: 220000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 6000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   programme_budgets:

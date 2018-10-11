@@ -176,6 +176,51 @@ intro: "## Vote purpose\n\n_Strengthen judicial governance and independence by r
   \ African Judicial Education Institute in the\nexecution of their mandates.\n\n"
 is_vote_primary: true
 name: Office of the Chief Justice and Judicial Administration
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 9584000.0
+      type: programme
+    - name: Judicial Support and Court Administration
+      total_budget: 3805000.0
+      type: programme
+    - name: Judicial Education and Research
+      total_budget: 380000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 821454000.0
+      type: programme
+    - name: Judicial Support and Court Administration
+      total_budget: 633558000.0
+      type: programme
+    - name: Administration
+      total_budget: 59824000.0
+      type: programme
+    - name: Judicial Education and Research
+      total_budget: 32260000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 52294000.0
+      type: programme
+    - name: Judicial Support and Court Administration
+      total_budget: 3000000.0
+      type: programme
+    - name: Administration
+      total_budget: 3000.0
+      type: programme
+    - name: Judicial Education and Research
+      total_budget: 3000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

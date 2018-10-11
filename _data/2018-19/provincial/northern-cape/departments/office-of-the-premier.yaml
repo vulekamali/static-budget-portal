@@ -160,6 +160,54 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Office Of The Premier
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 47332000.0
+      type: programme
+    - name: Parliamentary Business
+      total_budget: 37328000.0
+      type: programme
+    - name: Direct Charges
+      total_budget: 26057000.0
+      type: programme
+    - name: Facilities For Members And Political Parties
+      total_budget: 8592000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 16965000.0
+      type: programme
+    - name: Parliamentary Business
+      total_budget: 11758000.0
+      type: programme
+    - name: Facilities For Members And Political Parties
+      total_budget: 6754000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 9723000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 453000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Facilities For Members And Political Parties
+      total_budget: 35318000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

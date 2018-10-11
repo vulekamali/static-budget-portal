@@ -182,6 +182,45 @@ intro: "## Vote purpose\n\n_Create an enabling environment for the provision of 
   \ for the oversight of its entities.\n\n  \n  \n\n  \n\n"
 is_vote_primary: true
 name: Communications
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Entity Oversight
+      total_budget: 304000.0
+      type: programme
+    - name: Communications Policy, Research and Development
+      total_budget: 178000.0
+      type: programme
+    - name: Industry and Capacity Development
+      total_budget: 150000.0
+      type: programme
+    - name: Administration
+      total_budget: 40000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 42374000.0
+      type: programme
+    - name: Industry and Capacity Development
+      total_budget: 10047000.0
+      type: programme
+    - name: Entity Oversight
+      total_budget: 9920000.0
+      type: programme
+    - name: Communications Policy, Research and Development
+      total_budget: 7719000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Entity Oversight
+      total_budget: 1210156000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

@@ -222,6 +222,93 @@ intro: "## Vision\n\nAn open opportunity society for all\uFFFDtowards safer resi
   \ spend within the Western Cape Government (WCG).\r\n"
 is_vote_primary: true
 name: Community Safety
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Security Risk Management
+      total_budget: 51205000
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 45727000
+      type: programme
+    - name: Administration
+      total_budget: 39714000
+      type: programme
+    - name: Provincial Policing Functions
+      total_budget: 8269000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Security Risk Management
+      total_budget: 46002000
+      type: programme
+    - name: Provincial Policing Functions
+      total_budget: 19576000
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 15047000
+      type: programme
+    - name: Administration
+      total_budget: 7861000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Security Risk Management
+      total_budget: 2506000
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 2076000
+      type: programme
+    - name: Administration
+      total_budget: 950000
+      type: programme
+    - name: Provincial Policing Functions
+      total_budget: 553000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 37665000
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 396000
+      type: programme
+    - name: Security Risk Management
+      total_budget: 2000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Provincial Policing Functions
+      total_budget: 10486000
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 4500000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Provincial Policing Functions
+      total_budget: 3670000
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 2335000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Provincial Policing Functions
+      total_budget: 3500000
+      type: programme
+    - name: Administration
+      total_budget: 16000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

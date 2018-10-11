@@ -278,6 +278,126 @@ intro: "## Vision\n\nThe department\u2019s vision is: Prosperity through mobilit
   \ of hazardous locations and the registration and licensing of vehicles."
 is_vote_primary: true
 name: Transport
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: 2. Transport Infrastructure
+      total_budget: 950205000
+      type: programme
+    - name: 4. Transport Regulation
+      total_budget: 615896000
+      type: programme
+    - name: 1. Administration
+      total_budget: 141536000
+      type: programme
+    - name: 3. Transport Operations
+      total_budget: 40152000
+      type: programme
+    - name: 5. Community Based Programme
+      total_budget: 14228000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: 2. Transport Infrastructure
+      total_budget: 2650723000
+      type: programme
+    - name: 3. Transport Operations
+      total_budget: 325498000
+      type: programme
+    - name: 4. Transport Regulation
+      total_budget: 206337000
+      type: programme
+    - name: 1. Administration
+      total_budget: 155744000
+      type: programme
+    - name: 5. Community Based Programme
+      total_budget: 20911000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: 2. Transport Infrastructure
+      total_budget: 3424685000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: 2. Transport Infrastructure
+      total_budget: 138579000
+      type: programme
+    - name: 4. Transport Regulation
+      total_budget: 35498000
+      type: programme
+    - name: 1. Administration
+      total_budget: 19325000
+      type: programme
+    - name: 3. Transport Operations
+      total_budget: 257000
+      type: programme
+    - name: 5. Community Based Programme
+      total_budget: 100000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: 1. Administration
+      total_budget: 7000000
+      type: programme
+    - name: 2. Transport Infrastructure
+      total_budget: 1157000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: 1. Administration
+      total_budget: 6052000
+      type: programme
+    - name: 3. Transport Operations
+      total_budget: 5000
+      type: programme
+    - name: 2. Transport Infrastructure
+      total_budget: 1000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: 2. Transport Infrastructure
+      total_budget: 8463000
+      type: programme
+    - name: 1. Administration
+      total_budget: 5303000
+      type: programme
+    - name: 4. Transport Regulation
+      total_budget: 2904000
+      type: programme
+    - name: 3. Transport Operations
+      total_budget: 40000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: 2. Transport Infrastructure
+      total_budget: 4070000
+      type: programme
+    - name: 4. Transport Regulation
+      total_budget: 812000
+      type: programme
+    - name: 1. Administration
+      total_budget: 92000
+      type: programme
+    - name: 3. Transport Operations
+      total_budget: 12000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: 3. Transport Operations
+      total_budget: 1071439000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

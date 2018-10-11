@@ -196,6 +196,75 @@ intro: "## Vision\r\n\r\n\u201CA growing economy wherein enterprises thrive\u201
   \ LED, IDPs, cluster management, and\r\n\r\n* Project management."
 is_vote_primary: true
 name: Economy and Enterprise Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 55841000
+      type: programme
+    - name: Business Regulation and Governance
+      total_budget: 22031000
+      type: programme
+    - name: Integrated Economic Development Services
+      total_budget: 16188000
+      type: programme
+    - name: Economic Planning and Sector Development
+      total_budget: 5730000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 42360000
+      type: programme
+    - name: Economic Planning and Sector Development
+      total_budget: 7715000
+      type: programme
+    - name: Integrated Economic Development Services
+      total_budget: 6332000
+      type: programme
+    - name: Business Regulation and Governance
+      total_budget: 3055000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 10000
+      type: programme
+    name: Current payments - Interest and rent on land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2189000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Business Regulation and Governance
+      total_budget: 77154000
+      type: programme
+    - name: Administration
+      total_budget: 158000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1305000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Integrated Economic Development Services
+      total_budget: 32119000
+      type: programme
+    - name: Economic Planning and Sector Development
+      total_budget: 30498000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

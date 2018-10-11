@@ -42,24 +42,41 @@ layout: page-shell
       </div>
     </div>
 
+    {% for item in page_data.treasury_datasets %}
+      {% assign modified_formats = item[1].formats | sort: 'format' %}
+      {% assign pdf_link = modified_formats[0].url %}
+      {% assign excel_link = modified_formats[1].url %}
+    {% endfor %}
+
+    {% assign pdf_text = "Learn more about these programmes in the " | append: short_estimate | append: " (PDF)" %}
+    {% assign excel_text = "Learn more about these programmes in the " | append: short_estimate | append: " (Excel)" %}
+
     <div class="u-marginTop20">
       {% if page_data.economic_classification_by_programme.programmes %}
-        {% for item in page_data.treasury_datasets %}
-          {% assign modified_formats = item[1].formats | sort: 'format' %}
-          {% assign pdf_link = modified_formats[0].url %}
-          {% assign excel_link = modified_formats[1].url %}
-        {% endfor %}
-
-        {% assign pdf_text = "Learn more about these programmes in the " | append: short_estimate | append: " (PDF)" %}
-        {% assign excel_text = "Learn more about these programmes in the " | append: short_estimate | append: " (Excel)" %}
-
         {%
           include components/department-budgets/SmallMultiplesSection/index.html
-          title="Economic classification of expenditure for each Programme"
-          description="Each chart shows the economic classification of spending under that Programme. More detail is available in the dataset."
+          title="Budgeted spending by Economic Classification for each programme"
+          description="Each chart shows the budgeted spending by economic classification under that Programme."
           charts_list=page_data.economic_classification_by_programme.programmes
 
           detail_link=page_data.economic_classification_by_programme.dataset_detail_page
+          pdf_text=pdf_text
+          pdf_link=pdf_link
+          excel_text=excel_text
+          excel_link=excel_link
+        %}
+      {% endif %}
+    </div>
+
+    <div class="u-marginTop20">
+      {% if page_data.programme_by_economic_classification.econ_classes %}
+        {%
+          include components/department-budgets/SmallMultiplesSection/index.html
+          title="Budgeted spending by programme for Economic Classification items"
+          description="Each chart shows the budgeted spending of each Programme under that Economic Classification."
+          charts_list=page_data.programme_by_economic_classification.econ_classes
+
+          detail_link=page_data.programme_by_economic_classification.dataset_detail_page
           pdf_text=pdf_text
           pdf_link=pdf_link
           excel_text=excel_text
@@ -92,9 +109,9 @@ layout: page-shell
             datasets=page_data.contributed_datasets
           %}
         </div>
-            
+
         <div>
-          {% 
+          {%
             include components/universal/Participate/index.html
             title="Timelines for this department and ways to participate"
             description="National Treasury, departments and commitees are busy with different things depending on the time of year:"

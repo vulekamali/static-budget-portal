@@ -143,6 +143,36 @@ intro: "## Vision\n\nGrowth and quality of life through safety and security.\r\n
   \ in the\r\nprovince.\r\n"
 is_vote_primary: true
 name: Safety and Liaison
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 33444000
+      type: programme
+    - name: Civilian Oversight
+      total_budget: 27311000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Civilian Oversight
+      total_budget: 13877000
+      type: programme
+    - name: Administration
+      total_budget: 7081000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Civilian Oversight
+      total_budget: 2013000
+      type: programme
+    - name: Administration
+      total_budget: 243000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

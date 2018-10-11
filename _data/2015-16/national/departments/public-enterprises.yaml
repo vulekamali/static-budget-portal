@@ -149,6 +149,33 @@ intro: "## Vote purpose\n\n_Drive investment, productivity and transformation in
   \ strategic framework.\n\n"
 is_vote_primary: true
 name: Public Enterprises
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 3566000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 154916000.0
+      type: programme
+    - name: Portfolio Management and Strategic Partnerships
+      total_budget: 85065000.0
+      type: programme
+    - name: Legal and Governance
+      total_budget: 23829000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 105000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

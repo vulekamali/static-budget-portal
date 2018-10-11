@@ -196,6 +196,63 @@ intro: "## Vote purpose\n\n_Contribute to a just, peaceful and safer South Afric
   \ and reduced repeat\noffending.\n\n"
 is_vote_primary: true
 name: Correctional Services
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Incarceration
+      total_budget: 831385000.0
+      type: programme
+    - name: Administration
+      total_budget: 98020000.0
+      type: programme
+    - name: Rehabilitation
+      total_budget: 46183000.0
+      type: programme
+    - name: Care
+      total_budget: 5184000.0
+      type: programme
+    - name: Social Reintegration
+      total_budget: 2070000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Incarceration
+      total_budget: 12146731000.0
+      type: programme
+    - name: Administration
+      total_budget: 3582310000.0
+      type: programme
+    - name: Care
+      total_budget: 1790517000.0
+      type: programme
+    - name: Rehabilitation
+      total_budget: 1105754000.0
+      type: programme
+    - name: Social Reintegration
+      total_budget: 888957000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Incarceration
+      total_budget: 102742000.0
+      type: programme
+    - name: Administration
+      total_budget: 16945000.0
+      type: programme
+    - name: Care
+      total_budget: 561000.0
+      type: programme
+    - name: Social Reintegration
+      total_budget: 169000.0
+      type: programme
+    - name: Rehabilitation
+      total_budget: 56000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

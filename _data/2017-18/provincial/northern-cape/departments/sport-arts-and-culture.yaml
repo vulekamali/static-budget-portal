@@ -277,6 +277,129 @@ intro: "## Vision\n\nA department committed to creating a prosperous and empower
   \n"
 is_vote_primary: true
 name: Sport, Arts and Culture
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Library and Archives Services
+      total_budget: 58116000
+      type: programme
+    - name: Administration
+      total_budget: 52666000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 30523000
+      type: programme
+    - name: Sport and Recreation
+      total_budget: 18397000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Library and Archives Services
+      total_budget: 43057000
+      type: programme
+    - name: Sport and Recreation
+      total_budget: 24863000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 18897000
+      type: programme
+    - name: Administration
+      total_budget: 18654000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Library and Archives Services
+      total_budget: 34620000
+      type: programme
+    - name: Sport and Recreation
+      total_budget: 1545000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Library and Archives Services
+      total_budget: 6560000
+      type: programme
+    - name: Administration
+      total_budget: 1873000
+      type: programme
+    - name: Sport and Recreation
+      total_budget: 784000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 244000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Cultural Affairs
+      total_budget: 82000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Cultural Affairs
+      total_budget: 12636000
+      type: programme
+    - name: Sport and Recreation
+      total_budget: 6441000
+      type: programme
+    - name: Library and Archives Services
+      total_budget: 1150000
+      type: programme
+    - name: Administration
+      total_budget: 280000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Library and Archives Services
+      total_budget: 600000
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Cultural Affairs
+      total_budget: 100000
+      type: programme
+    - name: Library and Archives Services
+      total_budget: 100000
+      type: programme
+    - name: Sport and Recreation
+      total_budget: 100000
+      type: programme
+    - name: Administration
+      total_budget: 50000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Cultural Affairs
+      total_budget: 650000
+      type: programme
+    - name: Sport and Recreation
+      total_budget: 600000
+      type: programme
+    - name: Library and Archives Services
+      total_budget: 500000
+      type: programme
+    - name: Administration
+      total_budget: 150000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Library and Archives Services
+      total_budget: 36250000
+      type: programme
+    - name: Sport and Recreation
+      total_budget: 600000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

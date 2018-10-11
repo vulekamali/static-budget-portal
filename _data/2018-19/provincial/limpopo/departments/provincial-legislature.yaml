@@ -166,6 +166,60 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Provincial Legislature
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 72164539.5
+      type: programme
+    - name: Parliamentary Services
+      total_budget: 65425262.49999999
+      type: programme
+    - name: Direct Charges
+      total_budget: 53493167.699999996
+      type: programme
+    - name: Facilities For Members And Political Parties
+      total_budget: 7235024.099999999
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 37855937.9
+      type: programme
+    - name: Parliamentary Services
+      total_budget: 22635119.0
+      type: programme
+    - name: Facilities For Members And Political Parties
+      total_budget: 7493840.7
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 21597180.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Parliamentary Services
+      total_budget: 552000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Facilities For Members And Political Parties
+      total_budget: 72397000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 78000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

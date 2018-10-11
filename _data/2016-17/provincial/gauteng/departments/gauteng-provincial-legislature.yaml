@@ -194,6 +194,66 @@ intro: "## Vision \r\n\r\nA modern and transformative legislature that fosters p
   \ cooperative governance between provincial, national and local legislative institutions."
 is_vote_primary: true
 name: Gauteng Provincial Legislature
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Core Business
+      total_budget: 137603000
+      type: programme
+    - name: Corporate Support Services
+      total_budget: 94339000
+      type: programme
+    - name: Office of the CFO
+      total_budget: 35241000
+      type: programme
+    - name: Leadership and Governance
+      total_budget: 19669000
+      type: programme
+    - name: Office of the Secretary
+      total_budget: 13319000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Core Business
+      total_budget: 92192000
+      type: programme
+    - name: Corporate Support Services
+      total_budget: 92138000
+      type: programme
+    - name: Leadership and Governance
+      total_budget: 32706000
+      type: programme
+    - name: Office of the CFO
+      total_budget: 8436000
+      type: programme
+    - name: Office of the Secretary
+      total_budget: 7387000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Corporate Support Services
+      total_budget: 600000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Corporate Support Services
+      total_budget: 4028000
+      type: programme
+    - name: Office of the CFO
+      total_budget: 1314000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Corporate Support Services
+      total_budget: 102701000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

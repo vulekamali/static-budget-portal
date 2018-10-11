@@ -245,6 +245,102 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Environmental Affairs And Development Planning
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Environmental Quality Management
+      total_budget: 68912000.0
+      type: programme
+    - name: Administration
+      total_budget: 54962000.0
+      type: programme
+    - name: Development Planning
+      total_budget: 52529000.0
+      type: programme
+    - name: Compliance And Enforcement
+      total_budget: 21118000.0
+      type: programme
+    - name: Environmental Policy, Planning And Coordination
+      total_budget: 14950000.0
+      type: programme
+    - name: Biodiversity Management
+      total_budget: 9088000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Quality Management
+      total_budget: 26390000.0
+      type: programme
+    - name: Administration
+      total_budget: 10161000.0
+      type: programme
+    - name: Biodiversity Management
+      total_budget: 6810000.0
+      type: programme
+    - name: Environmental Policy, Planning And Coordination
+      total_budget: 5499000.0
+      type: programme
+    - name: Development Planning
+      total_budget: 4202000.0
+      type: programme
+    - name: Compliance And Enforcement
+      total_budget: 3718000.0
+      type: programme
+    - name: Environmental Empowerment Services
+      total_budget: 996000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3572000.0
+      type: programme
+    - name: Environmental Quality Management
+      total_budget: 507000.0
+      type: programme
+    - name: Environmental Policy, Planning And Coordination
+      total_budget: 170000.0
+      type: programme
+    - name: Development Planning
+      total_budget: 141000.0
+      type: programme
+    - name: Biodiversity Management
+      total_budget: 95000.0
+      type: programme
+    - name: Compliance And Enforcement
+      total_budget: 88000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Biodiversity Management
+      total_budget: 302531000.0
+      type: programme
+    - name: Administration
+      total_budget: 8000.0
+      type: programme
+    - name: Environmental Quality Management
+      total_budget: 4000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Development Planning
+      total_budget: 1970000.0
+      type: programme
+    - name: Biodiversity Management
+      total_budget: 1200000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Development Planning
+      total_budget: 15000000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

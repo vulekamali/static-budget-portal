@@ -307,6 +307,183 @@ intro: "## Vote purpose\r\n\r\nLead, support and promote agricultural, forestry 
   \ Standards Act (1990), and the Conservation of Agricultural Resources Act (1993)."
 is_vote_primary: true
 name: Agriculture, Forestry and Fisheries
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Agricultural Production, Health and Food Safety
+      total_budget: 591793000.0
+      type: programme
+    - name: Forestry and Natural Resources Management
+      total_budget: 553715000.0
+      type: programme
+    - name: Administration
+      total_budget: 434619000.0
+      type: programme
+    - name: Fisheries
+      total_budget: 216839000.0
+      type: programme
+    - name: Food Security and Agrarian Reform
+      total_budget: 156788000.0
+      type: programme
+    - name: Trade Promotion and Market Access
+      total_budget: 101628000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 297193000.0
+      type: programme
+    - name: Forestry and Natural Resources Management
+      total_budget: 189900000.0
+      type: programme
+    - name: Food Security and Agrarian Reform
+      total_budget: 98233000.0
+      type: programme
+    - name: Agricultural Production, Health and Food Safety
+      total_budget: 42792000.0
+      type: programme
+    - name: Trade Promotion and Market Access
+      total_budget: 31538000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Forestry and Natural Resources Management
+      total_budget: 1013000.0
+      type: programme
+    name: Current payments - Interest and rent on land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Forestry and Natural Resources Management
+      total_budget: 120000.0
+      type: programme
+    name: Payments for capital assets - Biological assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 34185000.0
+      type: programme
+    - name: Food Security and Agrarian Reform
+      total_budget: 33211000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Forestry and Natural Resources Management
+      total_budget: 42927000.0
+      type: programme
+    - name: Food Security and Agrarian Reform
+      total_budget: 4109000.0
+      type: programme
+    - name: Administration
+      total_budget: 3604000.0
+      type: programme
+    - name: Agricultural Production, Health and Food Safety
+      total_budget: 2054000.0
+      type: programme
+    - name: Trade Promotion and Market Access
+      total_budget: 567000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 50000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agricultural Production, Health and Food Safety
+      total_budget: 813189000.0
+      type: programme
+    - name: Fisheries
+      total_budget: 241759000.0
+      type: programme
+    - name: Trade Promotion and Market Access
+      total_budget: 36830000.0
+      type: programme
+    - name: Administration
+      total_budget: 18362000.0
+      type: programme
+    - name: Food Security and Agrarian Reform
+      total_budget: 16462000.0
+      type: programme
+    - name: Forestry and Natural Resources Management
+      total_budget: 3000000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Trade Promotion and Market Access
+      total_budget: 34525000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Food Security and Agrarian Reform
+      total_budget: 5820000.0
+      type: programme
+    - name: Forestry and Natural Resources Management
+      total_budget: 2609000.0
+      type: programme
+    - name: Trade Promotion and Market Access
+      total_budget: 100000.0
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Food Security and Agrarian Reform
+      total_budget: 1640000.0
+      type: programme
+    - name: Forestry and Natural Resources Management
+      total_budget: 420000.0
+      type: programme
+    - name: Agricultural Production, Health and Food Safety
+      total_budget: 120000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Agricultural Production, Health and Food Safety
+      total_budget: 12100000.0
+      type: programme
+    - name: Forestry and Natural Resources Management
+      total_budget: 5084000.0
+      type: programme
+    - name: Food Security and Agrarian Reform
+      total_budget: 2200000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Food Security and Agrarian Reform
+      total_budget: 1565339000.0
+      type: programme
+    - name: Agricultural Production, Health and Food Safety
+      total_budget: 491370000.0
+      type: programme
+    - name: Forestry and Natural Resources Management
+      total_budget: 146774000.0
+      type: programme
+    - name: Administration
+      total_budget: 40000.0
+      type: programme
+    - name: Trade Promotion and Market Access
+      total_budget: 10000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Trade Promotion and Market Access
+      total_budget: 92398000.0
+      type: programme
+    - name: Food Security and Agrarian Reform
+      total_budget: 5936000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   programme_budgets:

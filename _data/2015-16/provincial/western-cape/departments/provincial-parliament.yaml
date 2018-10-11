@@ -174,6 +174,66 @@ intro: "## Vision\n\nA dynamic, effective and efficient parliament supporting co
   \r\n* managing resources effectively, efficiently and economically"
 is_vote_primary: true
 name: Provincial Parliament
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 35487000
+      type: programme
+    - name: Parliamentary Services
+      total_budget: 16268000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 15532000
+      type: programme
+    - name: Parliamentary Services
+      total_budget: 7277000
+      type: programme
+    - name: Facilities for Members and Political Parties
+      total_budget: 4955000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1275000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 38000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Facilities for Members and Political Parties
+      total_budget: 150000
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Facilities for Members and Political Parties
+      total_budget: 1276000
+      type: programme
+    - name: Administration
+      total_budget: 52000
+      type: programme
+    - name: Parliamentary Services
+      total_budget: 32000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Facilities for Members and Political Parties
+      total_budget: 34838000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

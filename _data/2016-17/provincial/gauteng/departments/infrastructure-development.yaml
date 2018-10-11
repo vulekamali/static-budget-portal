@@ -188,6 +188,81 @@ intro: "## Vision\n\nTo be a leading sustainable infrastructure provider and fac
   \ Property Management"
 is_vote_primary: true
 name: Infrastructure Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 482510000
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 183649000
+      type: programme
+    - name: Administration
+      total_budget: 167045000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 434025000
+      type: programme
+    - name: Administration
+      total_budget: 215197000
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 154528000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1000000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 300000
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 53000
+      type: programme
+    name: Current payments - Interest and rent on land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 169825000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 28800000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 1000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 7554000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 1717000
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 105000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 718544000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

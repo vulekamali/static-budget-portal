@@ -228,6 +228,84 @@ intro: "## Vision\n\nA prosperous society living sustainably with the natural en
   \ enforce compliance with environmental legislation"
 is_vote_primary: true
 name: Environment and Nature Conservation
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: ADMINISTRATION
+      total_budget: 42624000
+      type: programme
+    - name: BIODIVERSITY MANAGEMENT
+      total_budget: 27455000
+      type: programme
+    - name: ENVIRONMENTAL EMPOWERMENT SERVICES
+      total_budget: 12242000
+      type: programme
+    - name: ENVIRONMENTAL QUALITY MANAGEMENT
+      total_budget: 10189000
+      type: programme
+    - name: ENVIRONMENTAL POLICY,PLANNING AND COORDINATION
+      total_budget: 10104000
+      type: programme
+    - name: COMPLIANCE AND ENFORCEMENT
+      total_budget: 9362000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: ADMINISTRATION
+      total_budget: 20714000
+      type: programme
+    - name: BIODIVERSITY MANAGEMENT
+      total_budget: 6600000
+      type: programme
+    - name: ENVIRONMENTAL QUALITY MANAGEMENT
+      total_budget: 3671000
+      type: programme
+    - name: COMPLIANCE AND ENFORCEMENT
+      total_budget: 1648000
+      type: programme
+    - name: ENVIRONMENTAL EMPOWERMENT SERVICES
+      total_budget: 1105000
+      type: programme
+    - name: ENVIRONMENTAL POLICY,PLANNING AND COORDINATION
+      total_budget: 546000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: COMPLIANCE AND ENFORCEMENT
+      total_budget: 66000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: ADMINISTRATION
+      total_budget: 1469000
+      type: programme
+    - name: ENVIRONMENTAL QUALITY MANAGEMENT
+      total_budget: 391000
+      type: programme
+    - name: ENVIRONMENTAL EMPOWERMENT SERVICES
+      total_budget: 196000
+      type: programme
+    - name: BIODIVERSITY MANAGEMENT
+      total_budget: 174000
+      type: programme
+    - name: ENVIRONMENTAL POLICY,PLANNING AND COORDINATION
+      total_budget: 123000
+      type: programme
+    - name: COMPLIANCE AND ENFORCEMENT
+      total_budget: 100000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: ADMINISTRATION
+      total_budget: 212000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

@@ -216,6 +216,57 @@ intro: "## Vote purpose\n\n_Formulate energy policies, regulatory frameworks and
   \ systems.\n\n"
 is_vote_primary: true
 name: Energy
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 4007000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Electrification and Energy Programme and Project Management
+      total_budget: 5724650000.0
+      type: programme
+    - name: Nuclear Energy
+      total_budget: 97971000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 237281000.0
+      type: programme
+    - name: Petroleum and Petroleum Products Regulation
+      total_budget: 74378000.0
+      type: programme
+    - name: Electrification and Energy Programme and Project Management
+      total_budget: 53647000.0
+      type: programme
+    - name: Clean Energy
+      total_budget: 46252000.0
+      type: programme
+    - name: Energy Policy and Planning
+      total_budget: 45096000.0
+      type: programme
+    - name: Nuclear Energy
+      total_budget: 35941000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Clean Energy
+      total_budget: 641075000.0
+      type: programme
+    - name: Nuclear Energy
+      total_budget: 520486000.0
+      type: programme
+    - name: Administration
+      total_budget: 1310000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

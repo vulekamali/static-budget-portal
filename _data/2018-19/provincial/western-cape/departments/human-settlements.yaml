@@ -187,6 +187,87 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Human Settlements
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Housing Development
+      total_budget: 104763000.0
+      type: programme
+    - name: Administration
+      total_budget: 78510000.0
+      type: programme
+    - name: Housing Asset Management
+      total_budget: 23431000.0
+      type: programme
+    - name: Housing Needs, Research And Planning
+      total_budget: 22592000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 102326000.0
+      type: programme
+    - name: Administration
+      total_budget: 18483000.0
+      type: programme
+    - name: Housing Asset Management
+      total_budget: 12358000.0
+      type: programme
+    - name: Housing Needs, Research And Planning
+      total_budget: 1593000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 6480000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 300000.0
+      type: programme
+    name: Payments For Financial Assets - Payments For Financial Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 6000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 500000.0
+      type: programme
+    name: Transfers And Subsidies - Higher Education Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 1933669000.0
+      type: programme
+    - name: Administration
+      total_budget: 244000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 1400000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 10899000.0
+      type: programme
+    - name: Housing Asset Management
+      total_budget: 1000000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

@@ -184,6 +184,57 @@ intro: "## Vision\n\nLeadership for an integrated city-region, characterised by 
   \ and cities."
 is_vote_primary: true
 name: Office of the Premier
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: INSTITUTIONAL DEVELOPMENT
+      total_budget: 152722000
+      type: programme
+    - name: POLICY & GOVERNANCE
+      total_budget: 72001000
+      type: programme
+    - name: ADMINISTRATION
+      total_budget: 67435000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: INSTITUTIONAL DEVELOPMENT
+      total_budget: 74211000
+      type: programme
+    - name: POLICY & GOVERNANCE
+      total_budget: 57049000
+      type: programme
+    - name: ADMINISTRATION
+      total_budget: 43484000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: ADMINISTRATION
+      total_budget: 8472000
+      type: programme
+    - name: INSTITUTIONAL DEVELOPMENT
+      total_budget: 1860000
+      type: programme
+    - name: POLICY & GOVERNANCE
+      total_budget: 1200000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: POLICY & GOVERNANCE
+      total_budget: 19950000
+      type: programme
+    name: Transfers and subsidies - Higher education institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: POLICY & GOVERNANCE
+      total_budget: 110926000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

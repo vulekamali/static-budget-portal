@@ -6,8 +6,8 @@
 
   <div class="Grid has-threeColumn">
     {% for chart in include.charts_list %}
-    <div class="BasicPreview is-fullHeight is-topAlign u-marginTop10">
-      <div class="BasicPreview-heading">{{ chart.name }}</div>
+    <div class="BasicPreview is-fullHeight is-topAlign u-marginTop10 u-paddingBottom0">
+      <div class="BasicPreview-heading u-marginBottom0">{{ chart.name }}</div>
       <div 
         data-component="SmallMultiple"
         data-items="{{ chart.items | jsonify | escape }}"

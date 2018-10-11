@@ -190,6 +190,90 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Public Works
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 306398000.0
+      type: programme
+    - name: Provision Of Buildings, Structures And Equipment
+      total_budget: 303864000.0
+      type: programme
+    - name: Property Management
+      total_budget: 56684000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Provision Of Buildings, Structures And Equipment
+      total_budget: 144986000.0
+      type: programme
+    - name: Administration
+      total_budget: 78280000.0
+      type: programme
+    - name: Property Management
+      total_budget: 32136000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Provision Of Buildings, Structures And Equipment
+      total_budget: 46049000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 13946000.0
+      type: programme
+    - name: Provision Of Buildings, Structures And Equipment
+      total_budget: 1524000.0
+      type: programme
+    - name: Property Management
+      total_budget: 237000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 4000000.0
+      type: programme
+    name: Payments For Capital Assets - Software And Other Intangible Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 459000.0
+      type: programme
+    - name: Provision Of Buildings, Structures And Equipment
+      total_budget: 24000.0
+      type: programme
+    - name: Property Management
+      total_budget: 5000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3448000.0
+      type: programme
+    - name: Provision Of Buildings, Structures And Equipment
+      total_budget: 1104000.0
+      type: programme
+    - name: Property Management
+      total_budget: 76000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Property Management
+      total_budget: 594455000.0
+      type: programme
+    - name: Administration
+      total_budget: 257000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

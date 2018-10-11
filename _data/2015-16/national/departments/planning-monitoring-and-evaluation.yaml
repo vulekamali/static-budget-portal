@@ -178,6 +178,48 @@ intro: "## Vote purpose\r\n\r\nImprove government service delivery through plann
   \ practices in government."
 is_vote_primary: true
 name: Planning, Montoring and Evaluation
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 2020000.0
+      type: programme
+    - name: Institutional Performance Monitoring and Evaluation
+      total_budget: 473000.0
+      type: programme
+    - name: Outcomes Monitoring and Evaluation
+      total_budget: 375000.0
+      type: programme
+    - name: National Youth Development
+      total_budget: 50000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: National Planning
+      total_budget: 88197000.0
+      type: programme
+    - name: Outcomes Monitoring and Evaluation
+      total_budget: 85229000.0
+      type: programme
+    - name: Administration
+      total_budget: 67764000.0
+      type: programme
+    - name: Institutional Performance Monitoring and Evaluation
+      total_budget: 59094000.0
+      type: programme
+    - name: National Youth Development
+      total_budget: 4703000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: National Youth Development
+      total_budget: 409789000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

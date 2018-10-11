@@ -190,6 +190,93 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Arts And Culture
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 84525000.0
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 74524000.0
+      type: programme
+    - name: Library And Archive Services
+      total_budget: 74459000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Cultural Affairs
+      total_budget: 81599000.0
+      type: programme
+    - name: Library And Archive Services
+      total_budget: 69313000.0
+      type: programme
+    - name: Administration
+      total_budget: 66473000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Library And Archive Services
+      total_budget: 146824000.0
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 19500000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Library And Archive Services
+      total_budget: 6327000.0
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 1546000.0
+      type: programme
+    - name: Administration
+      total_budget: 269000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Cultural Affairs
+      total_budget: 8657000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1200000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Cultural Affairs
+      total_budget: 25365000.0
+      type: programme
+    - name: Library And Archive Services
+      total_budget: 2800000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Library And Archive Services
+      total_budget: 254692000.0
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 15898000.0
+      type: programme
+    - name: Administration
+      total_budget: 200000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Cultural Affairs
+      total_budget: 28400000.0
+      type: programme
+    name: Transfers And Subsidies - Public Corporations And Private Enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

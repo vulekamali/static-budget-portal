@@ -264,6 +264,138 @@ intro: "## Vote purpose\n\nDevelop, maintain and support a South African school 
   \ competency requirements for teachers.\n\n"
 is_vote_primary: true
 name: Basic Education
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 167427000.0
+      type: programme
+    - name: Planning, Information and Assessment
+      total_budget: 133248000.0
+      type: programme
+    - name: Curriculum Policy, Support and Monitoring
+      total_budget: 91065000.0
+      type: programme
+    - name: Teachers, Education Human Resources and Institutional Development
+      total_budget: 72173000.0
+      type: programme
+    - name: Educational Enrichment Services
+      total_budget: 40677000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Curriculum Policy, Support and Monitoring
+      total_budget: 1253958000.0
+      type: programme
+    - name: Planning, Information and Assessment
+      total_budget: 355783000.0
+      type: programme
+    - name: Administration
+      total_budget: 219762000.0
+      type: programme
+    - name: Teachers, Education Human Resources and Institutional Development
+      total_budget: 26952000.0
+      type: programme
+    - name: Educational Enrichment Services
+      total_budget: 18662000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 51458000.0
+      type: programme
+    name: Current payments - Interest and rent on land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Planning, Information and Assessment
+      total_budget: 1321045000.0
+      type: programme
+    - name: Administration
+      total_budget: 8016000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3089000.0
+      type: programme
+    - name: Planning, Information and Assessment
+      total_budget: 710000.0
+      type: programme
+    - name: Curriculum Policy, Support and Monitoring
+      total_budget: 656000.0
+      type: programme
+    - name: Teachers, Education Human Resources and Institutional Development
+      total_budget: 428000.0
+      type: programme
+    - name: Educational Enrichment Services
+      total_budget: 410000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Curriculum Policy, Support and Monitoring
+      total_budget: 3200000.0
+      type: programme
+    - name: Administration
+      total_budget: 307000.0
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Planning, Information and Assessment
+      total_budget: 128543000.0
+      type: programme
+    - name: Teachers, Education Human Resources and Institutional Development
+      total_budget: 16000000.0
+      type: programme
+    - name: Administration
+      total_budget: 417000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Teachers, Education Human Resources and Institutional Development
+      total_budget: 15579000.0
+      type: programme
+    - name: Planning, Information and Assessment
+      total_budget: 3295000.0
+      type: programme
+    - name: Curriculum Policy, Support and Monitoring
+      total_budget: 178000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Teachers, Education Human Resources and Institutional Development
+      total_budget: 1159348000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Planning, Information and Assessment
+      total_budget: 110984000.0
+      type: programme
+    - name: Educational Enrichment Services
+      total_budget: 65000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Planning, Information and Assessment
+      total_budget: 9917734000.0
+      type: programme
+    - name: Educational Enrichment Services
+      total_budget: 7045314000.0
+      type: programme
+    - name: Curriculum Policy, Support and Monitoring
+      total_budget: 555954000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   programme_budgets:

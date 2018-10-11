@@ -248,6 +248,99 @@ intro: "## Vision\n\nAn integrated transport system and infrastructure that prom
   \n\r\n* Coordinate, monitor and evaluate implementation of EPWP III across the Province"
 is_vote_primary: true
 name: Public Works, Roads and Transport
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 410310000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 300909000
+      type: programme
+    - name: Administration
+      total_budget: 192462000
+      type: programme
+    - name: Transport Operations
+      total_budget: 73552000
+      type: programme
+    - name: Community Based Programmes
+      total_budget: 35844000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 928153000
+      type: programme
+    - name: Transport Operations
+      total_budget: 458414000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 302144000
+      type: programme
+    - name: Administration
+      total_budget: 79116000
+      type: programme
+    - name: Community Based Programmes
+      total_budget: 33598000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 1013451000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 20000000
+      type: programme
+    - name: Transport Operations
+      total_budget: 11861000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 60953000
+      type: programme
+    - name: Transport Operations
+      total_budget: 45856000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 3375000
+      type: programme
+    - name: Administration
+      total_budget: 1354000
+      type: programme
+    - name: Community Based Programmes
+      total_budget: 534000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Infrastructure
+      total_budget: 8603000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 3000000
+      type: programme
+    - name: Administration
+      total_budget: 2125000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 170000000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 610134000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

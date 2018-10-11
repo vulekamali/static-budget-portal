@@ -289,6 +289,132 @@ intro: "## Vision\n\nCreating opportunity for all through improved education out
   \ programmes."
 is_vote_primary: true
 name: Education
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 12131991000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 964688000
+      type: programme
+    - name: Administration
+      total_budget: 899727000
+      type: programme
+    - name: Examination and Education Related Services
+      total_budget: 171301000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 161840000
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 22433000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 1012088000
+      type: programme
+    - name: Administration
+      total_budget: 476059000
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 428211000
+      type: programme
+    - name: Examination and Education Related Services
+      total_budget: 78013000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 55324000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 35966000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Infrastructure Development
+      total_budget: 984171000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Special School Education
+      total_budget: 33216000
+      type: programme
+    - name: Administration
+      total_budget: 32341000
+      type: programme
+    - name: Public Ordinary School Education
+      total_budget: 1446000
+      type: programme
+    - name: Examination and Education Related Services
+      total_budget: 232000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 5128000
+      type: programme
+    name: 'Payments for financial assets - '
+    type: economic_classification_1_and_2
+  - items:
+    - name: Examination and Education Related Services
+      total_budget: 6850000
+      type: programme
+    - name: Administration
+      total_budget: 6000
+      type: programme
+    - name: Public Ordinary School Education
+      total_budget: 3000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 27053000
+      type: programme
+    - name: Administration
+      total_budget: 6645000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 1758000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 1648000
+      type: programme
+    - name: Examination and Education Related Services
+      total_budget: 1578000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Ordinary School Education
+      total_budget: 914160000
+      type: programme
+    - name: Early Childhood Development
+      total_budget: 446432000
+      type: programme
+    - name: Public Special School Education
+      total_budget: 146458000
+      type: programme
+    - name: Independent School Subsidies
+      total_budget: 101298000
+      type: programme
+    - name: Administration
+      total_budget: 40101000
+      type: programme
+    - name: Examination and Education Related Services
+      total_budget: 39099000
+      type: programme
+    - name: Infrastructure Development
+      total_budget: 20000000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

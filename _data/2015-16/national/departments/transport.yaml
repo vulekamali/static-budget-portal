@@ -245,6 +245,87 @@ intro: "## Vote purpose\n\n_Lead the provision of an integrated, sustainable, re
   \ and monitoring\nimplementation.\n\n"
 is_vote_primary: true
 name: Transport
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 2378000.0
+      type: programme
+    - name: Road Transport
+      total_budget: 631000.0
+      type: programme
+    - name: Civil Aviation
+      total_budget: 420000.0
+      type: programme
+    - name: Maritime Transport
+      total_budget: 335000.0
+      type: programme
+    - name: Integrated Transport Planning
+      total_budget: 212000.0
+      type: programme
+    - name: Public Transport
+      total_budget: 157000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Road Transport
+      total_budget: 18441520000.0
+      type: programme
+    - name: Rail Transport
+      total_budget: 14155887000.0
+      type: programme
+    - name: Public Transport
+      total_budget: 5953090000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 368589000.0
+      type: programme
+    - name: Public Transport
+      total_budget: 275899000.0
+      type: programme
+    - name: Civil Aviation
+      total_budget: 110507000.0
+      type: programme
+    - name: Road Transport
+      total_budget: 98700000.0
+      type: programme
+    - name: Maritime Transport
+      total_budget: 91437000.0
+      type: programme
+    - name: Integrated Transport Planning
+      total_budget: 80371000.0
+      type: programme
+    - name: Rail Transport
+      total_budget: 35938000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Transport
+      total_budget: 5307215000.0
+      type: programme
+    - name: Road Transport
+      total_budget: 4244066000.0
+      type: programme
+    - name: Rail Transport
+      total_budget: 4119539000.0
+      type: programme
+    - name: Civil Aviation
+      total_budget: 38599000.0
+      type: programme
+    - name: Maritime Transport
+      total_budget: 19317000.0
+      type: programme
+    - name: Administration
+      total_budget: 12490000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

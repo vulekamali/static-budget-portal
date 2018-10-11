@@ -202,6 +202,90 @@ intro: "## Vision\n\nThe department\u2019s vision is: An inclusive economy throu
   \ donation.\r\n\r\n"
 is_vote_primary: true
 name: Public Works
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: 1. Administration
+      total_budget: 268384000
+      type: programme
+    - name: 3. Provision of Buildings, Structures and Equipment
+      total_budget: 266505000
+      type: programme
+    - name: 2. Property Management
+      total_budget: 49350000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: 3. Provision of Buildings, Structures and Equipment
+      total_budget: 90415000
+      type: programme
+    - name: 1. Administration
+      total_budget: 70994000
+      type: programme
+    - name: 2. Property Management
+      total_budget: 64571000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: 3. Provision of Buildings, Structures and Equipment
+      total_budget: 66318000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: 1. Administration
+      total_budget: 11683000
+      type: programme
+    - name: 3. Provision of Buildings, Structures and Equipment
+      total_budget: 408000
+      type: programme
+    - name: 2. Property Management
+      total_budget: 20000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: 1. Administration
+      total_budget: 4000000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: 1. Administration
+      total_budget: 435000
+      type: programme
+    - name: 3. Provision of Buildings, Structures and Equipment
+      total_budget: 57000
+      type: programme
+    - name: 2. Property Management
+      total_budget: 5000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: 1. Administration
+      total_budget: 3706000
+      type: programme
+    - name: 3. Provision of Buildings, Structures and Equipment
+      total_budget: 1573000
+      type: programme
+    - name: 2. Property Management
+      total_budget: 30000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: 2. Property Management
+      total_budget: 533931000
+      type: programme
+    - name: 1. Administration
+      total_budget: 223000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

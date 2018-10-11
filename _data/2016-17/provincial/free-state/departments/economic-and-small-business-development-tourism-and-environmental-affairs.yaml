@@ -205,6 +205,81 @@ intro: "## Vision\r\n\r\nA transformed economy and a prosperous society that is 
   \ in the Free State."
 is_vote_primary: true
 name: Economic and Small Business Development, Tourism and Environmental Affairs
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Environmental Affairs
+      total_budget: 93363000
+      type: programme
+    - name: Administration
+      total_budget: 88284000
+      type: programme
+    - name: Economic and Small Business Development
+      total_budget: 32659000
+      type: programme
+    - name: Tourism
+      total_budget: 8348000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 51261000
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 35904000
+      type: programme
+    - name: Economic and Small Business Development
+      total_budget: 19901000
+      type: programme
+    - name: Tourism
+      total_budget: 6300000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Affairs
+      total_budget: 39148000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Affairs
+      total_budget: 3148000
+      type: programme
+    - name: Administration
+      total_budget: 1670000
+      type: programme
+    - name: Economic and Small Business Development
+      total_budget: 881000
+      type: programme
+    - name: Tourism
+      total_budget: 249000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic and Small Business Development
+      total_budget: 55551000
+      type: programme
+    - name: Tourism
+      total_budget: 43187000
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 182000
+      type: programme
+    - name: Administration
+      total_budget: 4000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic and Small Business Development
+      total_budget: 13508000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

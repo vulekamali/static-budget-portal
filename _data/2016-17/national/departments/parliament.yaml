@@ -214,6 +214,72 @@ intro: '## Vote purpose
   '
 is_vote_primary: true
 name: Parliament
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 529798000.0
+      type: programme
+    - name: Core Business
+      total_budget: 380204000.0
+      type: programme
+    - name: Support Services
+      total_budget: 215255000.0
+      type: programme
+    - name: Administration
+      total_budget: 76536000.0
+      type: programme
+    - name: Associated Services
+      total_budget: 60211000.0
+      type: programme
+    - name: Strategic Leadership and Governance
+      total_budget: 46610000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Associated Services
+      total_budget: 180932000.0
+      type: programme
+    - name: Core Business
+      total_budget: 144724000.0
+      type: programme
+    - name: Support Services
+      total_budget: 102193000.0
+      type: programme
+    - name: Administration
+      total_budget: 37924000.0
+      type: programme
+    - name: Strategic Leadership and Governance
+      total_budget: 25806000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1531000.0
+      type: programme
+    - name: Core Business
+      total_budget: 1055000.0
+      type: programme
+    - name: Support Services
+      total_budget: 691000.0
+      type: programme
+    - name: Strategic Leadership and Governance
+      total_budget: 385000.0
+      type: programme
+    - name: Associated Services
+      total_budget: 96000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Associated Services
+      total_budget: 385478000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   programme_budgets:

@@ -184,6 +184,84 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Office Of The Premier
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Institutional Development
+      total_budget: 156911000.0
+      type: programme
+    - name: Policy And Governance
+      total_budget: 99239000.0
+      type: programme
+    - name: Administration
+      total_budget: 66878000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 181197000.0
+      type: programme
+    - name: Policy And Governance
+      total_budget: 111190000.0
+      type: programme
+    - name: Administration
+      total_budget: 33002000.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 4747000.0
+      type: programme
+    - name: Policy And Governance
+      total_budget: 982000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy And Governance
+      total_budget: 4819000.0
+      type: programme
+    name: Payments For Capital Assets - Heritage Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy And Governance
+      total_budget: 6175000.0
+      type: programme
+    - name: Institutional Development
+      total_budget: 3810000.0
+      type: programme
+    - name: Administration
+      total_budget: 1264000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy And Governance
+      total_budget: 52029000.0
+      type: programme
+    - name: Institutional Development
+      total_budget: 42925000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 20727000.0
+      type: programme
+    - name: Administration
+      total_budget: 1182000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 60000.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

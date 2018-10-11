@@ -268,6 +268,111 @@ intro: "## Vision\r\n\r\nA transformed, vibrant agricultural sector for food sec
   \ information including financial feasibility and economic viability studie"
 is_vote_primary: true
 name: Agriculture, Land Reform and Rural Development
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 70220000
+      type: programme
+    - name: Farmer Support and Development
+      total_budget: 45719000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 36778000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 33890000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 18849000
+      type: programme
+    - name: Rural Development
+      total_budget: 9472000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 8492000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 58872000
+      type: programme
+    - name: Administration
+      total_budget: 36272000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 23355000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 11463000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 9426000
+      type: programme
+    - name: Rural Development
+      total_budget: 3719000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 2067000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 70480000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 54550000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 12010000
+      type: programme
+    - name: Administration
+      total_budget: 2044000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 342000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 244000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 132000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 78000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 46000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 13000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support and Development
+      total_budget: 38350000
+      type: programme
+    - name: Research and Technology Development Services
+      total_budget: 2550000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2950000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

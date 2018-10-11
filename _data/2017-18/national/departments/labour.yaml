@@ -234,6 +234,105 @@ intro: "## Vote purpose\n\n_Play a significant role in reducing unemployment, po
   \ balanced with the promotion of decent employment.\n\n  \n\n"
 is_vote_primary: true
 name: Labour
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Inspection and Enforcement Services
+      total_budget: 433177000.0
+      type: programme
+    - name: Administration
+      total_budget: 384564000.0
+      type: programme
+    - name: Public Employment Services
+      total_budget: 304941000.0
+      type: programme
+    - name: Labour Policy and Industrial Relations
+      total_budget: 101820000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 446956000.0
+      type: programme
+    - name: Inspection and Enforcement Services
+      total_budget: 65575000.0
+      type: programme
+    - name: Labour Policy and Industrial Relations
+      total_budget: 44783000.0
+      type: programme
+    - name: Public Employment Services
+      total_budget: 35790000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 14000000.0
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 39332000.0
+      type: programme
+    - name: Inspection and Enforcement Services
+      total_budget: 33928000.0
+      type: programme
+    - name: Labour Policy and Industrial Relations
+      total_budget: 195000.0
+      type: programme
+    - name: Public Employment Services
+      total_budget: 50000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Labour Policy and Industrial Relations
+      total_budget: 895923000.0
+      type: programme
+    - name: Public Employment Services
+      total_budget: 66259000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Labour Policy and Industrial Relations
+      total_budget: 23813000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 221000.0
+      type: programme
+    - name: Inspection and Enforcement Services
+      total_budget: 68000.0
+      type: programme
+    - name: Public Employment Services
+      total_budget: 44000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Employment Services
+      total_budget: 154029000.0
+      type: programme
+    - name: Labour Policy and Industrial Relations
+      total_budget: 19863000.0
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 489000.0
+      type: programme
+    - name: Labour Policy and Industrial Relations
+      total_budget: 1000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
   programme_budgets:

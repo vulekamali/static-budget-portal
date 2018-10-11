@@ -230,6 +230,90 @@ intro: "## Vision\n\nAn integrated,capable,responsive and accountable local gove
   \ of traditional programmes."
 is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Traditional Institutional Management
+      total_budget: 283108000
+      type: programme
+    - name: Local Governance
+      total_budget: 230251000
+      type: programme
+    - name: Administration
+      total_budget: 171311000
+      type: programme
+    - name: Development And Planning
+      total_budget: 113126000
+      type: programme
+    - name: House Of Traditional Leaders
+      total_budget: 22090000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 64671000
+      type: programme
+    - name: Development And Planning
+      total_budget: 12504000
+      type: programme
+    - name: Local Governance
+      total_budget: 10767000
+      type: programme
+    - name: Traditional Institutional Management
+      total_budget: 10702000
+      type: programme
+    - name: House Of Traditional Leaders
+      total_budget: 8149000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Traditional Institutional Management
+      total_budget: 6049000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 25163000
+      type: programme
+    - name: Development And Planning
+      total_budget: 4115000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Development And Planning
+      total_budget: 20000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Development And Planning
+      total_budget: 70000000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Traditional Institutional Management
+      total_budget: 8410000
+      type: programme
+    - name: Administration
+      total_budget: 4269000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Development And Planning
+      total_budget: 100800000
+      type: programme
+    - name: Local Governance
+      total_budget: 59546000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

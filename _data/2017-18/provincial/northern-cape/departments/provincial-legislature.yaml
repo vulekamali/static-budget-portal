@@ -175,6 +175,57 @@ intro: "## Vision\n\nAn activist Legislature advancing the aspirations of the pe
   \ strengthening representatives, transparency, accountability and effective government"
 is_vote_primary: true
 name: Provincial Legislature
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 44344000
+      type: programme
+    - name: Parliamentary Business
+      total_budget: 34473000
+      type: programme
+    - name: Facilities for Members and Political Parties
+      total_budget: 7963000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 16616000
+      type: programme
+    - name: Parliamentary Business
+      total_budget: 11827000
+      type: programme
+    - name: Facilities for Members and Political Parties
+      total_budget: 10822000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 13354000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 3052000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 428000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Facilities for Members and Political Parties
+      total_budget: 26937000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   programme_budgets:

@@ -200,6 +200,93 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Public Works, Roads And Infrastructure
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Infrastructure Operations
+      total_budget: 437749000.0
+      type: programme
+    - name: Roads Infrastructure
+      total_budget: 366094982.5
+      type: programme
+    - name: Administration
+      total_budget: 264436441.13
+      type: programme
+    - name: Epwp
+      total_budget: 32575683.495
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Roads Infrastructure
+      total_budget: 500908177.9183
+      type: programme
+    - name: Infrastructure Operations
+      total_budget: 179113781.588475
+      type: programme
+    - name: Administration
+      total_budget: 84987814.94721
+      type: programme
+    - name: Epwp
+      total_budget: 25140236.9128
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Infrastructure Operations
+      total_budget: 101620000.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 30842407.474
+      type: programme
+    - name: Roads Infrastructure
+      total_budget: 20521934.7
+      type: programme
+    - name: Infrastructure Operations
+      total_budget: 11350000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 406.0
+      type: programme
+    name: Payments For Capital Assets - Software And Other Intangible Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Roads Infrastructure
+      total_budget: 988918000.0
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Infrastructure Operations
+      total_budget: 6427000.0
+      type: programme
+    - name: Administration
+      total_budget: 5769811.517
+      type: programme
+    - name: Roads Infrastructure
+      total_budget: 5236000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Infrastructure Operations
+      total_budget: 54397000.0
+      type: programme
+    - name: Roads Infrastructure
+      total_budget: 1643000.0
+      type: programme
+    - name: Administration
+      total_budget: 443860.095
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

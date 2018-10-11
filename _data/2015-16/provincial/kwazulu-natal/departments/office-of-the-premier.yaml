@@ -219,6 +219,102 @@ intro: "## Vision\n\nThe vision of the Office of the Premier (OTP) is: To be the
   \ initiatives as an ambassador to\r\nKZN."
 is_vote_primary: true
 name: Office of the Premier
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Institutional Development
+      total_budget: 122174000
+      type: programme
+    - name: Policy and Governance
+      total_budget: 76807000
+      type: programme
+    - name: Administration
+      total_budget: 63968000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy and Governance
+      total_budget: 170178000
+      type: programme
+    - name: Institutional Development
+      total_budget: 155315000
+      type: programme
+    - name: Administration
+      total_budget: 54045000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 16417000
+      type: programme
+    - name: Policy and Governance
+      total_budget: 3212000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy and Governance
+      total_budget: 4000000
+      type: programme
+    - name: Institutional Development
+      total_budget: 200000
+      type: programme
+    name: Payments for capital assets - Heritage assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 3227000
+      type: programme
+    - name: Policy and Governance
+      total_budget: 2619000
+      type: programme
+    - name: Administration
+      total_budget: 1079000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 62000
+      type: programme
+    name: Payments for capital assets - Software and other intangible assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy and Governance
+      total_budget: 2500000
+      type: programme
+    name: 'Payments for financial assets - '
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy and Governance
+      total_budget: 58392000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Policy and Governance
+      total_budget: 7911000
+      type: programme
+    - name: Administration
+      total_budget: 1045000
+      type: programme
+    - name: Institutional Development
+      total_budget: 3000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Institutional Development
+      total_budget: 50000
+      type: programme
+    - name: Policy and Governance
+      total_budget: 10000
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
   programme_budgets:

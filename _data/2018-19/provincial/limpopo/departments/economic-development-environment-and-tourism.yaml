@@ -215,6 +215,114 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Economic Development, Environment And Tourism
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Environmental Affairs
+      total_budget: 276688000.0
+      type: programme
+    - name: Administration
+      total_budget: 192442416.0
+      type: programme
+    - name: Economic Development
+      total_budget: 78965000.0
+      type: programme
+    - name: Tourism
+      total_budget: 16887000.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 169454232.0
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 48014442.0
+      type: programme
+    - name: Economic Development
+      total_budget: 30456922.0
+      type: programme
+    - name: Tourism
+      total_budget: 11692760.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Affairs
+      total_budget: 919622.0
+      type: programme
+    name: Current Payments - Interest And Rent On Land
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Affairs
+      total_budget: 52000000.0
+      type: programme
+    - name: Economic Development
+      total_budget: 2481010.0
+      type: programme
+    name: Payments For Capital Assets - Buildings And Other Fixed Structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic Development
+      total_budget: 200.0
+      type: programme
+    name: Payments For Capital Assets - Land And Sub-Soil Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 22352394.0
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 1528246.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic Development
+      total_budget: 300.0
+      type: programme
+    name: Payments For Capital Assets - Software And Other Intangible Assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Economic Development
+      total_budget: 637361000.0
+      type: programme
+    - name: Tourism
+      total_budget: 109209000.0
+      type: programme
+    - name: Administration
+      total_budget: 129639.99999999999
+      type: programme
+    name: Transfers And Subsidies - Departmental Agencies And Accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 7292936.0
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 3126028.0
+      type: programme
+    - name: Economic Development
+      total_budget: 299414.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Affairs
+      total_budget: 754000.0
+      type: programme
+    name: Transfers And Subsidies - Non-Profit Institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2619276.0
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 699700.0
+      type: programme
+    name: Transfers And Subsidies - Provinces And Municipalities
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

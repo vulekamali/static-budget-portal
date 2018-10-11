@@ -206,6 +206,63 @@ intro: "## Vote purpose\n\n_Provide policy formulation for, as well as coordinat
   \ national and\nprovincial spheres of government.\n\n"
 is_vote_primary: true
 name: Public Works
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  econ_classes:
+  - items:
+    - name: Prestige Policy
+      total_budget: 12861000.0
+      type: programme
+    - name: Administration
+      total_budget: 9727000.0
+      type: programme
+    - name: Intergovernmental Coordination
+      total_budget: 3000000.0
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 2360000.0
+      type: programme
+    - name: Property and Construction Industry Policy and Research
+      total_budget: 112000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 456761000.0
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 276046000.0
+      type: programme
+    - name: Prestige Policy
+      total_budget: 70721000.0
+      type: programme
+    - name: Intergovernmental Coordination
+      total_budget: 43923000.0
+      type: programme
+    - name: Property and Construction Industry Policy and Research
+      total_budget: 35330000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Property and Construction Industry Policy and Research
+      total_budget: 3767520000.0
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 1713828000.0
+      type: programme
+    - name: Administration
+      total_budget: 9508000.0
+      type: programme
+    - name: Prestige Policy
+      total_budget: 9090000.0
+      type: programme
+    - name: Intergovernmental Coordination
+      total_budget: 300000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:

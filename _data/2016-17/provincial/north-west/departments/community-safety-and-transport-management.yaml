@@ -226,6 +226,93 @@ intro: "## Vision\n\nSafe Communities and effective transport services\r\n\r\n\n
   \ standards in accordance with the National Road\r\nTraffic Act 93 of 1996."
 is_vote_primary: true
 name: Community Safety and Transport Management
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Transport Regulations
+      total_budget: 302576000
+      type: programme
+    - name: Administration
+      total_budget: 100924000
+      type: programme
+    - name: Transport Operations
+      total_budget: 66587000
+      type: programme
+    - name: Civillian Oversight
+      total_budget: 33873000
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 314992000
+      type: programme
+    - name: Transport Regulations
+      total_budget: 244992000
+      type: programme
+    - name: Administration
+      total_budget: 95663000
+      type: programme
+    - name: Civillian Oversight
+      total_budget: 10747000
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulations
+      total_budget: 7500000
+      type: programme
+    name: Payments for capital assets - Buildings and other fixed structures
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulations
+      total_budget: 24554000
+      type: programme
+    - name: Administration
+      total_budget: 8679000
+      type: programme
+    - name: Transport Operations
+      total_budget: 1944000
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Regulations
+      total_budget: 2767000
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 676000
+      type: programme
+    - name: Transport Regulations
+      total_budget: 494000
+      type: programme
+    - name: Civillian Oversight
+      total_budget: 313000
+      type: programme
+    - name: Transport Operations
+      total_budget: 171000
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Civillian Oversight
+      total_budget: 928000
+      type: programme
+    - name: Transport Operations
+      total_budget: 185000
+      type: programme
+    name: Transfers and subsidies - Non-profit institutions
+    type: economic_classification_1_and_2
+  - items:
+    - name: Transport Operations
+      total_budget: 633107000
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   programme_budgets:

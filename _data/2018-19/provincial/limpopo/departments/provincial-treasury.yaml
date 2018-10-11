@@ -169,6 +169,57 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Provincial Treasury
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 105382000.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 91318592.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 64782000.0
+      type: programme
+    - name: Assets, Liabilities & Scm
+      total_budget: 49175775.0
+      type: programme
+    name: Current Payments - Compensation Of Employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 60102000.0
+      type: programme
+    - name: Financial Governance
+      total_budget: 44986093.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 31722000.0
+      type: programme
+    - name: Assets, Liabilities & Scm
+      total_budget: 7144900.0
+      type: programme
+    name: Current Payments - Goods And Services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 10936000.0
+      type: programme
+    name: Payments For Capital Assets - Machinery And Equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 6295000.0
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 806000.0
+      type: programme
+    - name: Assets, Liabilities & Scm
+      total_budget: 200000.0
+      type: programme
+    name: Transfers And Subsidies - Households
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   programme_budgets:

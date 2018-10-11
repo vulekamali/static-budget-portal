@@ -249,6 +249,102 @@ intro: "## Vote purpose\n\n_Formulate energy policies, regulatory frameworks and
   \ energy systems,\npower reactors and nuclear fuel cycle systems.\n\n"
 is_vote_primary: true
 name: Energy
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 136792000.0
+      type: programme
+    - name: Petroleum and Petroleum Products Regulation
+      total_budget: 56792000.0
+      type: programme
+    - name: Electrification and Energy Programme and Project Management
+      total_budget: 45749000.0
+      type: programme
+    - name: Energy Policy and Planning
+      total_budget: 34769000.0
+      type: programme
+    - name: Nuclear Energy
+      total_budget: 19429000.0
+      type: programme
+    - name: Clean Energy
+      total_budget: 17266000.0
+      type: programme
+    name: Current payments - Compensation of employees
+    type: economic_classification_1_and_2
+  - items:
+    - name: Nuclear Energy
+      total_budget: 210797000.0
+      type: programme
+    - name: Administration
+      total_budget: 96066000.0
+      type: programme
+    - name: Clean Energy
+      total_budget: 73091000.0
+      type: programme
+    - name: Petroleum and Petroleum Products Regulation
+      total_budget: 21079000.0
+      type: programme
+    - name: Electrification and Energy Programme and Project Management
+      total_budget: 15154000.0
+      type: programme
+    - name: Energy Policy and Planning
+      total_budget: 11979000.0
+      type: programme
+    name: Current payments - Goods and services
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 4095000.0
+      type: programme
+    name: Payments for capital assets - Machinery and equipment
+    type: economic_classification_1_and_2
+  - items:
+    - name: Clean Energy
+      total_budget: 20625000.0
+      type: programme
+    - name: Nuclear Energy
+      total_budget: 16636000.0
+      type: programme
+    - name: Administration
+      total_budget: 985000.0
+      type: programme
+    name: Transfers and subsidies - Departmental agencies and accounts
+    type: economic_classification_1_and_2
+  - items:
+    - name: Nuclear Energy
+      total_budget: 17375000.0
+      type: programme
+    name: Transfers and subsidies - Foreign governments and international organisations
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 2199000.0
+      type: programme
+    name: Transfers and subsidies - Households
+    type: economic_classification_1_and_2
+  - items:
+    - name: Electrification and Energy Programme and Project Management
+      total_budget: 1946246000.0
+      type: programme
+    - name: Clean Energy
+      total_budget: 185625000.0
+      type: programme
+    name: Transfers and subsidies - Provinces and municipalities
+    type: economic_classification_1_and_2
+  - items:
+    - name: Electrification and Energy Programme and Project Management
+      total_budget: 3692758000.0
+      type: programme
+    - name: Nuclear Energy
+      total_budget: 599338000.0
+      type: programme
+    - name: Clean Energy
+      total_budget: 320326000.0
+      type: programme
+    name: Transfers and subsidies - Public corporations and private enterprises
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   programme_budgets:
