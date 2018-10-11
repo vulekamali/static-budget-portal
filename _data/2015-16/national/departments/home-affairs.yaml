@@ -196,6 +196,66 @@ slug: home-affairs
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 589111000.0
+      type: subprogramme
+    - name: Transversal Information Technology Management
+      total_budget: 476245000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 379487000.0
+      type: subprogramme
+    - name: Management Support Services
+      total_budget: 109588000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 43771000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Service Delivery to Provinces
+      total_budget: 1973426000.0
+      type: subprogramme
+    - name: Electoral Commission
+      total_budget: 1517104000.0
+      type: subprogramme
+    - name: Identification Services
+      total_budget: 275158000.0
+      type: subprogramme
+    - name: "Represented Political Parties\u2019 Fund"
+      total_budget: 127712000.0
+      type: subprogramme
+    - name: Status Services
+      total_budget: 107901000.0
+      type: subprogramme
+    - name: Access to Services
+      total_budget: 106000000.0
+      type: subprogramme
+    - name: Citizen Affairs Management
+      total_budget: 24400000.0
+      type: subprogramme
+    name: Citizen Affairs
+    type: programme
+  - items:
+    - name: Immigration Services
+      total_budget: 365137000.0
+      type: subprogramme
+    - name: Admission Services
+      total_budget: 259577000.0
+      type: subprogramme
+    - name: Asylum Seekers
+      total_budget: 65518000.0
+      type: subprogramme
+    - name: Immigration Affairs Management
+      total_budget: 30687000.0
+      type: subprogramme
+    name: Immigration Affairs
+    type: programme
 title: Home Affairs budget 2015-16  - vulekamali
 treasury_datasets:
   ENE for Vote 05 - Home Affairs:

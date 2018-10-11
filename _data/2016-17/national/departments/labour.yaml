@@ -341,6 +341,111 @@ slug: labour
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 249537000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 248791000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 196708000.0
+      type: subprogramme
+    - name: Office of the Chief Financial Officer
+      total_budget: 131660000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 26225000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Compliance, Monitoring and Enforcement Services
+      total_budget: 401574000.0
+      type: subprogramme
+    - name: 'Registration: Inspection and Enforcement Services'
+      total_budget: 68065000.0
+      type: subprogramme
+    - name: Occupational Health and Safety
+      total_budget: 29944000.0
+      type: subprogramme
+    - name: Statutory and Advocacy Services
+      total_budget: 9598000.0
+      type: subprogramme
+    - name: 'Training of Staff: Inspection and Enforcement Services'
+      total_budget: 5341000.0
+      type: subprogramme
+    - name: 'Management and Support Services: Inspection and Enforcement Services'
+      total_budget: 4972000.0
+      type: subprogramme
+    name: Inspection and Enforcement Services
+    type: programme
+  - items:
+    - name: Commission for Conciliation, Mediation and Arbitration
+      total_budget: 770501000.0
+      type: subprogramme
+    - name: Labour Market Information and Statistics
+      total_budget: 37241000.0
+      type: subprogramme
+    - name: International Labour Matters
+      total_budget: 36530000.0
+      type: subprogramme
+    - name: National Economic Development and Labour Council
+      total_budget: 31008000.0
+      type: subprogramme
+    - name: Strengthen Civil Society
+      total_budget: 18879000.0
+      type: subprogramme
+    - name: 'Management and Support Services: Labour Policy and Industrial Relations'
+      total_budget: 18749000.0
+      type: subprogramme
+    - name: Employment Equity
+      total_budget: 16402000.0
+      type: subprogramme
+    - name: Collective Bargaining
+      total_budget: 14291000.0
+      type: subprogramme
+    - name: Employment Standards
+      total_budget: 12238000.0
+      type: subprogramme
+    - name: Research, Policy and Planning
+      total_budget: 9354000.0
+      type: subprogramme
+    name: Labour Policy and Industrial Relations
+    type: programme
+  - items:
+    - name: Supported Employment Enterprises
+      total_budget: 144468000.0
+      type: subprogramme
+    - name: Employer Services
+      total_budget: 124389000.0
+      type: subprogramme
+    - name: Work Seeker Services
+      total_budget: 120496000.0
+      type: subprogramme
+    - name: Productivity South Africa
+      total_budget: 47944000.0
+      type: subprogramme
+    - name: 'Management and Support Services: Public Employment Services'
+      total_budget: 40697000.0
+      type: subprogramme
+    - name: Compensation Fund
+      total_budget: 19031000.0
+      type: subprogramme
+    - name: Designated Groups Special Services
+      total_budget: 12117000.0
+      type: subprogramme
+    - name: 'Training of Staff: Public Employment Services'
+      total_budget: 1126000.0
+      type: subprogramme
+    - name: Unemployment Insurance Fund
+      total_budget: 1000.0
+      type: subprogramme
+    name: Public Employment Services
+    type: programme
 title: Labour budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 28 - Labour:

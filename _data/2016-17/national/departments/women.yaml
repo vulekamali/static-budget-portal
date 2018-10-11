@@ -252,6 +252,63 @@ slug: women
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 20216000.0
+      type: subprogramme
+    - name: Departmental Management
+      total_budget: 20162000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 19674000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 15279000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 14026000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Stakeholder Coordination and Outreach
+      total_budget: 8137000.0
+      type: subprogramme
+    - name: Research and Policy Analysis
+      total_budget: 4481000.0
+      type: subprogramme
+    - name: Monitoring and Evauluation
+      total_budget: 4229000.0
+      type: subprogramme
+    - name: 'Management: Policy Coordination and Knowledge Management'
+      total_budget: 4057000.0
+      type: subprogramme
+    - name: Information and Knowledge Management
+      total_budget: 2224000.0
+      type: subprogramme
+    name: Policy, Stakeholder Coordination and Knowledge Management
+    type: programme
+  - items:
+    - name: Commission for Gender Equality
+      total_budget: 69891000.0
+      type: subprogramme
+    - name: Governance Transformation, Justice and Security
+      total_budget: 4192000.0
+      type: subprogramme
+    - name: Economic Empowerment and Participation
+      total_budget: 3639000.0
+      type: subprogramme
+    - name: 'Management: Social Transformation and Economic Empowerment'
+      total_budget: 3459000.0
+      type: subprogramme
+    - name: Social Empowerment and Transformation
+      total_budget: 3221000.0
+      type: subprogramme
+    name: Social Transformation and Economic Empowerment
+    type: programme
 title: Women budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 13 - Women:

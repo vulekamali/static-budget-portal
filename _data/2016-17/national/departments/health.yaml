@@ -399,6 +399,132 @@ slug: health
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 206733000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 143695000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 61433000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 31534000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 20069000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: HIV and AIDS
+      total_budget: 15744874000.0
+      type: subprogramme
+    - name: Child, Youth and School Health
+      total_budget: 222664000.0
+      type: subprogramme
+    - name: Tuberculosis
+      total_budget: 27370000.0
+      type: subprogramme
+    - name: Women's Maternal and Reproductive Health
+      total_budget: 18924000.0
+      type: subprogramme
+    - name: Programme Management
+      total_budget: 4736000.0
+      type: subprogramme
+    name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+    type: programme
+  - items:
+    - name: Public Entities Management
+      total_budget: 1474937000.0
+      type: subprogramme
+    - name: Pharmaceutical Trade and Product Regulation
+      total_budget: 139572000.0
+      type: subprogramme
+    - name: Compensation Commissioner for Occupational Diseases and Occupational Health
+      total_budget: 61643000.0
+      type: subprogramme
+    - name: Food Control
+      total_budget: 9972000.0
+      type: subprogramme
+    - name: Programme Management
+      total_budget: 4062000.0
+      type: subprogramme
+    name: Health Regulation and Compliance Management
+    type: programme
+  - items:
+    - name: Tertiary Health Care Planning and Policy
+      total_budget: 10851438000.0
+      type: subprogramme
+    - name: Health Facilities Infrastructure Management
+      total_budget: 6078821000.0
+      type: subprogramme
+    - name: Human Resources for Health
+      total_budget: 2500069000.0
+      type: subprogramme
+    - name: Forensic Chemistry Laboratories
+      total_budget: 120533000.0
+      type: subprogramme
+    - name: Violence, Trauma and EMS
+      total_budget: 7138000.0
+      type: subprogramme
+    - name: Nursing Services
+      total_budget: 6627000.0
+      type: subprogramme
+    - name: Hospital Management
+      total_budget: 5159000.0
+      type: subprogramme
+    - name: Programme Management
+      total_budget: 3713000.0
+      type: subprogramme
+    name: Hospitals, Tertiary Health Services and Human Resource Development
+    type: programme
+  - items:
+    - name: Health Financing and National Health Insurance
+      total_budget: 373528000.0
+      type: subprogramme
+    - name: International Health and Development
+      total_budget: 65998000.0
+      type: subprogramme
+    - name: Health Information Management, Monitoring and Evaluation
+      total_budget: 55491000.0
+      type: subprogramme
+    - name: Sector-wide Procurement
+      total_budget: 39550000.0
+      type: subprogramme
+    - name: Technical Policy and Planning
+      total_budget: 22011000.0
+      type: subprogramme
+    - name: Programme Management
+      total_budget: 3184000.0
+      type: subprogramme
+    name: National Health Insurance, Health Planning and Systems Enablement
+    type: programme
+  - items:
+    - name: Environmental and Port Health Services
+      total_budget: 162916000.0
+      type: subprogramme
+    - name: District Health Services
+      total_budget: 26047000.0
+      type: subprogramme
+    - name: Health Promotion and Nutrition
+      total_budget: 22723000.0
+      type: subprogramme
+    - name: Non-Communicable Diseases
+      total_budget: 21598000.0
+      type: subprogramme
+    - name: Communicable Diseases
+      total_budget: 21561000.0
+      type: subprogramme
+    - name: Programme Management
+      total_budget: 2994000.0
+      type: subprogramme
+    name: Primary Health Care Services
+    type: programme
 title: Health budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 16 - Health:

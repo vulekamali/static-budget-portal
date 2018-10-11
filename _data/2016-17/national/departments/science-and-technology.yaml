@@ -344,6 +344,87 @@ slug: science-and-technology
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 180325000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 105426000.0
+      type: subprogramme
+    - name: Governance
+      total_budget: 9307000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 4561000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 4369000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: International Resources
+      total_budget: 57459000.0
+      type: subprogramme
+    - name: Overseas Bilateral Cooperation
+      total_budget: 38307000.0
+      type: subprogramme
+    - name: Multilateral Cooperation and Africa
+      total_budget: 28697000.0
+      type: subprogramme
+    name: International Cooperation and Resources
+    type: programme
+  - items:
+    - name: Human Capital and Science Promotions
+      total_budget: 2356414000.0
+      type: subprogramme
+    - name: Basic Science and Infrastructure
+      total_budget: 988306000.0
+      type: subprogramme
+    - name: Astronomy
+      total_budget: 691541000.0
+      type: subprogramme
+    - name: Science Missions
+      total_budget: 164335000.0
+      type: subprogramme
+    name: Research, Development and Support
+    type: programme
+  - items:
+    - name: Sector Innovation and Green Economy
+      total_budget: 937080000.0
+      type: subprogramme
+    - name: Technology Localisation, Beneficiation and Advanced Manufacturing
+      total_budget: 476278000.0
+      type: subprogramme
+    - name: Innovation for Inclusive Development
+      total_budget: 349970000.0
+      type: subprogramme
+    - name: Science and Technology Investment
+      total_budget: 29548000.0
+      type: subprogramme
+    name: Socio-Economic Innovation Partnerships
+    type: programme
+  - items:
+    - name: Innovation Priorities and Instruments
+      total_budget: 523079000.0
+      type: subprogramme
+    - name: Space Science
+      total_budget: 166916000.0
+      type: subprogramme
+    - name: Hydrogen and Energy
+      total_budget: 152611000.0
+      type: subprogramme
+    - name: Bioeconomy
+      total_budget: 138151000.0
+      type: subprogramme
+    - name: National Intellectual Property Management Office
+      total_budget: 26316000.0
+      type: subprogramme
+    name: Technology Innovation
+    type: programme
 title: Science and Technology budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 30 - Science and Technology:

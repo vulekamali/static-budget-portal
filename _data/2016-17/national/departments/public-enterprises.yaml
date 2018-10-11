@@ -224,6 +224,72 @@ slug: public-enterprises
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Ministry
+      total_budget: 34478000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 31509000.0
+      type: subprogramme
+    - name: Human Resources
+      total_budget: 23854000.0
+      type: subprogramme
+    - name: Communications
+      total_budget: 13946000.0
+      type: subprogramme
+    - name: Chief Financial Officer
+      total_budget: 13363000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 12867000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 8970000.0
+      type: subprogramme
+    - name: Intergovernmental Relations
+      total_budget: 6975000.0
+      type: subprogramme
+    - name: Strategic Planning, Monitoring and Evaluation
+      total_budget: 6638000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 5392000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Legal
+      total_budget: 14222000.0
+      type: subprogramme
+    - name: Governance
+      total_budget: 8628000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 3157000.0
+      type: subprogramme
+    name: Legal and Governance
+    type: programme
+  - items:
+    - name: Transport Enterprises
+      total_budget: 25018000.0
+      type: subprogramme
+    - name: Manufacturing Enterprises
+      total_budget: 20682000.0
+      type: subprogramme
+    - name: Energy Enterprises
+      total_budget: 18016000.0
+      type: subprogramme
+    - name: Economic Impact and Policy Alignment
+      total_budget: 13580000.0
+      type: subprogramme
+    - name: Strategic Partnerships
+      total_budget: 12681000.0
+      type: subprogramme
+    name: Portfolio Management and Strategic Partnerships
+    type: programme
 title: Public Enterprises budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 09 - Public Enterprises:

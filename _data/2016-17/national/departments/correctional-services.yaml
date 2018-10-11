@@ -362,6 +362,84 @@ slug: correctional-services
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Human Resources
+      total_budget: 1670267000.0
+      type: subprogramme
+    - name: Finance
+      total_budget: 957027000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 739863000.0
+      type: subprogramme
+    - name: Information Technology
+      total_budget: 235292000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 95286000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 78528000.0
+      type: subprogramme
+    - name: Judicial Inspectorate for Correctional Services
+      total_budget: 65309000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 34622000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Nutritional Services
+      total_budget: 1130810000.0
+      type: subprogramme
+    - name: Health and Hygiene Services
+      total_budget: 844306000.0
+      type: subprogramme
+    name: Care
+    type: programme
+  - items:
+    - name: Security Operations
+      total_budget: 6775685000.0
+      type: subprogramme
+    - name: Facilities
+      total_budget: 3949612000.0
+      type: subprogramme
+    - name: Offender Management
+      total_budget: 2291032000.0
+      type: subprogramme
+    - name: Remand Detention
+      total_budget: 684532000.0
+      type: subprogramme
+    name: Incarceration
+    type: programme
+  - items:
+    - name: Offender Development
+      total_budget: 795619000.0
+      type: subprogramme
+    - name: Psychological, Social and Spiritual Services
+      total_budget: 371039000.0
+      type: subprogramme
+    - name: Correctional Programmes
+      total_budget: 50681000.0
+      type: subprogramme
+    name: Rehabilitation
+    type: programme
+  - items:
+    - name: Supervision
+      total_budget: 733412000.0
+      type: subprogramme
+    - name: Community Reintegration
+      total_budget: 42696000.0
+      type: subprogramme
+    - name: 'Office Accommodation: Community Corrections'
+      total_budget: 31669000.0
+      type: subprogramme
+    name: Social Reintegration
+    type: programme
 title: Correctional Services budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 18 - Correctional Services:

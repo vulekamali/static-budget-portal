@@ -208,6 +208,39 @@ slug: the-presidency
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - name: Management
+      total_budget: 325483000.0
+      type: subprogramme
+    - name: Support Services to President
+      total_budget: 67357000.0
+      type: subprogramme
+    - name: Support Services to Deputy President
+      total_budget: 57786000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 33314000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Salary of the President
+      total_budget: 3109000.0
+      type: subprogramme
+    - name: Salary of the Deputy President
+      total_budget: 2617000.0
+      type: subprogramme
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - name: Cabinet Services
+      total_budget: 26390000.0
+      type: subprogramme
+    name: Executive Support
+    type: programme
 title: The Presidency budget 2015-16  - vulekamali
 treasury_datasets:
   ENE for Vote 01 - The Presidency:

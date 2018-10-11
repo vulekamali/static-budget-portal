@@ -459,6 +459,102 @@ slug: water-and-sanitation
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 776232000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 334920000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 275384000.0
+      type: subprogramme
+    - name: Departmental Management
+      total_budget: 145542000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 52300000.0
+      type: subprogramme
+    - name: International Water Support
+      total_budget: 42180000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 27768000.0
+      type: subprogramme
+    - name: Programme Management Unit
+      total_budget: 5162000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Water Services Infrastructure
+      total_budget: 9799503000.0
+      type: subprogramme
+    - name: Infrastructure Development and Rehabilitation
+      total_budget: 1731912000.0
+      type: subprogramme
+    - name: Operation of Water Resources
+      total_budget: 165000000.0
+      type: subprogramme
+    name: Water Infrastructure Development
+    type: programme
+  - items:
+    - name: Water Information Management
+      total_budget: 515736000.0
+      type: subprogramme
+    - name: Integrated Planning
+      total_budget: 124668000.0
+      type: subprogramme
+    - name: Water Services and Local Water Management
+      total_budget: 121589000.0
+      type: subprogramme
+    - name: Water Ecosystems
+      total_budget: 53706000.0
+      type: subprogramme
+    - name: Sanitation Planning and Management
+      total_budget: 18599000.0
+      type: subprogramme
+    - name: Water Planning, Information Management and Support
+      total_budget: 7519000.0
+      type: subprogramme
+    name: Water Planning and Information Management
+    type: programme
+  - items:
+    - name: Water Use Authorisation and Administration
+      total_budget: 79999000.0
+      type: subprogramme
+    - name: Institutional Oversight
+      total_budget: 78548000.0
+      type: subprogramme
+    - name: Compliance Monitoring
+      total_budget: 62874000.0
+      type: subprogramme
+    - name: Water Sector Regulation Management and Support
+      total_budget: 43351000.0
+      type: subprogramme
+    - name: Enforcement
+      total_budget: 34834000.0
+      type: subprogramme
+    - name: Economic and Social Regulation
+      total_budget: 26043000.0
+      type: subprogramme
+    - name: Water Supply Services and Sanitation Regulation
+      total_budget: 19983000.0
+      type: subprogramme
+    name: Water Sector Regulation
+    type: programme
+  - items:
+    - name: National Sanitation Services
+      total_budget: 434681000.0
+      type: subprogramme
+    - name: Water Sector Support
+      total_budget: 267264000.0
+      type: subprogramme
+    name: Water and Sanitation Services
+    type: programme
 title: Water and Sanitation budget 2016-17  - vulekamali
 treasury_datasets:
   ENE for Vote 36 - Water and Sanitation:

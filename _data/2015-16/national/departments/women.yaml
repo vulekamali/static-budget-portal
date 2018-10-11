@@ -221,6 +221,78 @@ slug: women
 sphere:
   name: National
   slug: national
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  programmes:
+  - items:
+    - name: Ministry
+      total_budget: 23923000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 21889000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 14660000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 13114000.0
+      type: subprogramme
+    - name: Departmental Management
+      total_budget: 6865000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Monitoring and Evaluation
+      total_budget: 5933000.0
+      type: subprogramme
+    - name: Outreach Initiatives
+      total_budget: 3618000.0
+      type: subprogramme
+    - name: Stakeholder Coordination
+      total_budget: 3000000.0
+      type: subprogramme
+    - name: 'Management: Monitoring, Evaluation and Outreach'
+      total_budget: 600000.0
+      type: subprogramme
+    name: Monitoring, Evaluation and Outreach
+    type: programme
+  - items:
+    - name: Research Management
+      total_budget: 3369000.0
+      type: subprogramme
+    - name: Policy Analysis and Coordination
+      total_budget: 1601000.0
+      type: subprogramme
+    - name: Information and Knowledge Management
+      total_budget: 600000.0
+      type: subprogramme
+    - name: 'Management: Research, Policy Coordination and Knowledge Management'
+      total_budget: 600000.0
+      type: subprogramme
+    name: Research, Policy Coordination and Knowledge Management
+    type: programme
+  - items:
+    - name: Commission for Gender Equality
+      total_budget: 67689000.0
+      type: subprogramme
+    - name: Social and Related Functions
+      total_budget: 7436000.0
+      type: subprogramme
+    - name: 'Management: Social, Political and Economic Participation and Empowerment'
+      total_budget: 3105000.0
+      type: subprogramme
+    - name: Economic Empowerment
+      total_budget: 3000000.0
+      type: subprogramme
+    - name: Governance and Administration
+      total_budget: 3000000.0
+      type: subprogramme
+    - name: Justice and Public Order
+      total_budget: 3000000.0
+      type: subprogramme
+    name: Social, Political and Economic Participation and Empowerment
+    type: programme
 title: Women budget 2015-16  - vulekamali
 treasury_datasets:
   ENE for Vote 13 - Women:
