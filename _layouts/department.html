@@ -55,8 +55,8 @@ layout: page-shell
       {% if page_data.economic_classification_by_programme.programmes %}
         {%
           include components/department-budgets/SmallMultiplesSection/index.html
-          title="Economic classification of expenditure for each Programme"
-          description="Each chart shows the economic classification of spending under that Programme. More detail is available in the dataset."
+          title="Budgeted spending by Economic Classification for each programme"
+          description="Each chart shows the budgeted spending by economic classification under that Programme."
           charts_list=page_data.economic_classification_by_programme.programmes
 
           detail_link=page_data.economic_classification_by_programme.dataset_detail_page
@@ -72,8 +72,8 @@ layout: page-shell
       {% if page_data.programme_by_economic_classification.econ_classes %}
         {%
           include components/department-budgets/SmallMultiplesSection/index.html
-          title="Programme expenditure for Economic Classifications"
-          description="Each chart shows the spending of each Programme under that Economic Classification. More detail is available in the dataset."
+          title="Budgeted spending by programme for Economic Classification items"
+          description="Each chart shows the budgeted spending of each Programme under that Economic Classification."
           charts_list=page_data.programme_by_economic_classification.econ_classes
 
           detail_link=page_data.programme_by_economic_classification.dataset_detail_page
@@ -109,9 +109,9 @@ layout: page-shell
             datasets=page_data.contributed_datasets
           %}
         </div>
-            
+
         <div>
-          {% 
+          {%
             include components/universal/Participate/index.html
             title="Timelines for this department and ways to participate"
             description="National Treasury, departments and commitees are busy with different things depending on the time of year:"
