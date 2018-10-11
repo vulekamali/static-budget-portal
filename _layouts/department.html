@@ -51,6 +51,23 @@ layout: page-shell
     {% assign pdf_text = "Learn more about these programmes in the " | append: short_estimate | append: " (PDF)" %}
     {% assign excel_text = "Learn more about these programmes in the " | append: short_estimate | append: " (Excel)" %}
 
+    {% if page_data.subprogramme_by_programme %}
+      <div class="u-marginTop20">
+        {%
+          include components/department-budgets/SmallMultiplesSection/index.html
+          title="Budgeted spending by sub-programme for each programme"
+          description="Each chart shows the budgeted spending by each sub-programme of that programme."
+          charts_list=page_data.subprogramme_by_programme.programmes
+
+          detail_link=page_data.subprogramme_by_programme.dataset_detail_page
+          pdf_text=pdf_text
+          pdf_link=pdf_link
+          excel_text=excel_text
+          excel_link=excel_link
+        %}
+      </div>
+    {% endif %}
+
     <div class="u-marginTop20">
       {% if page_data.economic_classification_by_programme.programmes %}
         {%
@@ -68,8 +85,8 @@ layout: page-shell
       {% endif %}
     </div>
 
-    <div class="u-marginTop20">
-      {% if page_data.programme_by_economic_classification.econ_classes %}
+    {% if page_data.programme_by_economic_classification.econ_classes %}
+      <div class="u-marginTop20">
         {%
           include components/department-budgets/SmallMultiplesSection/index.html
           title="Budgeted spending by programme for Economic Classification items"
@@ -82,8 +99,8 @@ layout: page-shell
           excel_text=excel_text
           excel_link=excel_link
         %}
-      {% endif %}
-    </div>
+      </div>
+    {% endif %}
 
     <div class="u-marginTop20">
       <div
