@@ -102,7 +102,7 @@ function createChartJsConfig({ labels, values }) {
           label: (item, dataObject) => {
             const { index } = item;
             const { data } = dataObject.datasets[0];
-            return `R${data[index]}`;
+            return `R${trimValues(data[index])}`;
           },
         },
       },
@@ -134,7 +134,7 @@ function createChartJsConfig({ labels, values }) {
           ticks: {
             beginAtZero: true,
             maxRotation: 0,
-            callback: value => trimValues(value),
+            callback: value => `R${trimValues(value)}`,
           },
           gridLines: {
             display: false,
