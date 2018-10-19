@@ -552,7 +552,114 @@ slug: agriculture
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 50717000
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 42741000
+      type: subprogramme
+    - name: Senior Management
+      total_budget: 23348000
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 7709000
+      type: subprogramme
+    - name: Communication Services
+      total_budget: 6118000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Agric-Business Support and Development
+      total_budget: 16691000
+      type: subprogramme
+    - name: Macroeconomics  Support
+      total_budget: 6757000
+      type: subprogramme
+    name: Agricultural Economics Services
+    type: programme
+  - items:
+    - name: Farmer-settlement and Development
+      total_budget: 191585000
+      type: subprogramme
+    - name: Extension and Advisory Services
+      total_budget: 35010000
+      type: subprogramme
+    - name: Casidra SOC Ltd
+      total_budget: 21100000
+      type: subprogramme
+    - name: Food Security
+      total_budget: 12154000
+      type: subprogramme
+    name: Farmer Support and Development
+    type: programme
+  - items:
+    - name: Research
+      total_budget: 70068000
+      type: subprogramme
+    - name: Infrastructure Support Services
+      total_budget: 38051000
+      type: subprogramme
+    - name: Technology Transfer Services
+      total_budget: 1534000
+      type: subprogramme
+    name: Research and Technology Development Services
+    type: programme
+  - items:
+    - name: Farm Worker Development
+      total_budget: 15535000
+      type: subprogramme
+    - name: Rural Development Coordination
+      total_budget: 5206000
+      type: subprogramme
+    - name: Social Facilitation
+      total_budget: 1049000
+      type: subprogramme
+    name: Rural Development
+    type: programme
+  - items:
+    - name: Higher Education and Training
+      total_budget: 44736000
+      type: subprogramme
+    - name: Further Education and Training (FET)
+      total_budget: 14001000
+      type: subprogramme
+    name: Structured Agricultural Education and Training
+    type: programme
+  - items:
+    - name: Disaster Risk Management
+      total_budget: 48430000
+      type: subprogramme
+    - name: LandCare
+      total_budget: 29949000
+      type: subprogramme
+    - name: Engineering Services
+      total_budget: 18350000
+      type: subprogramme
+    - name: Land Use Management
+      total_budget: 981000
+      type: subprogramme
+    name: Sustainable Resource Management
+    type: programme
+  - items:
+    - name: Animal Health
+      total_budget: 42796000
+      type: subprogramme
+    - name: Veterinary Laboratory Services
+      total_budget: 25063000
+      type: subprogramme
+    - name: Export Control
+      total_budget: 12099000
+      type: subprogramme
+    - name: Veterinary Public Health
+      total_budget: 6077000
+      type: subprogramme
+    name: Veterinary Services
+    type: programme
 title: Agriculture budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 11 : Agriculture':

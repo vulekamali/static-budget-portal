@@ -273,7 +273,96 @@ slug: provincial-treasury
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Financial Management (Office of the CFO)
+      total_budget: 38657000
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 27913000
+      type: subprogramme
+    - name: Management Services
+      total_budget: 15911000
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 6911000
+      type: subprogramme
+    - name: Internal Audit (Departmental)
+      total_budget: 5084000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Asset Management
+      total_budget: 56061000
+      type: subprogramme
+    - name: Supporting and Interlinked Financial Systems
+      total_budget: 46549000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 1735000
+      type: subprogramme
+    name: Asset and Liabilities Management
+    type: programme
+  - items:
+    - name: Accounting Services
+      total_budget: 13019000
+      type: subprogramme
+    - name: Risk Management and Internal Audit Provincial
+      total_budget: 9459000
+      type: subprogramme
+    - name: Program Support
+      total_budget: 2269000
+      type: subprogramme
+    name: Financial Governance
+    type: programme
+  - items:
+    - name: Municipal Support Program & IGR
+      total_budget: 32356000
+      type: subprogramme
+    - name: Thabo Mafutsonyana District
+      total_budget: 7154000
+      type: subprogramme
+    - name: Lejwelephutswa District
+      total_budget: 6832000
+      type: subprogramme
+    - name: Fezile Dabi District
+      total_budget: 5795000
+      type: subprogramme
+    - name: Xhariep District
+      total_budget: 5508000
+      type: subprogramme
+    - name: Municipal Risk Management & Internal Audit
+      total_budget: 4490000
+      type: subprogramme
+    - name: Program Support
+      total_budget: 2339000
+      type: subprogramme
+    name: Municipal Finance Management
+    type: programme
+  - items:
+    - name: Public Finance
+      total_budget: 11992000
+      type: subprogramme
+    - name: Budget Management
+      total_budget: 10268000
+      type: subprogramme
+    - name: Fiscal Policy
+      total_budget: 7310000
+      type: subprogramme
+    - name: Economic Analysis
+      total_budget: 6987000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 1622000
+      type: subprogramme
+    - name: Compensation Directorate
+      total_budget: 545000
+      type: subprogramme
+    name: Sustainable Resource Management
+    type: programme
 title: Provincial Treasury budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 04 : Provincial Treasury':

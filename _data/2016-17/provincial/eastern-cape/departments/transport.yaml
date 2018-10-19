@@ -330,7 +330,84 @@ slug: transport
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Corporate Support
+      total_budget: 264053000
+      type: subprogramme
+    - name: Management
+      total_budget: 31116000
+      type: subprogramme
+    - name: Departmental Strategy
+      total_budget: 8804000
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 8544000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Community Development
+      total_budget: 31629000
+      type: subprogramme
+    - name: EPWP Co-ordination and Monitoring
+      total_budget: 6383000
+      type: subprogramme
+    - name: Innovation and Empowerment
+      total_budget: 4232000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 1086000
+      type: subprogramme
+    name: Community Based Programme
+    type: programme
+  - items:
+    - name: Infrastructure Planning
+      total_budget: 10764000
+      type: subprogramme
+    - name: Infrastructure Design
+      total_budget: 3275000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 838000
+      type: subprogramme
+    name: Transport Infrastructure
+    type: programme
+  - items:
+    - name: Public Transport Services
+      total_budget: 480905000
+      type: subprogramme
+    - name: Scholar Transport
+      total_budget: 462951000
+      type: subprogramme
+    - name: Transport Safety and Compliance
+      total_budget: 67308000
+      type: subprogramme
+    - name: Infrastructure Operations
+      total_budget: 57881000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 8084000
+      type: subprogramme
+    name: Transport Operations
+    type: programme
+  - items:
+    - name: Law Enforcement
+      total_budget: 277809000
+      type: subprogramme
+    - name: Transport Administration and Licensing
+      total_budget: 11631000
+      type: subprogramme
+    - name: Operator License and Permits
+      total_budget: 8497000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 4908000
+      type: subprogramme
+    name: Transport Regulation
+    type: programme
 title: Transport budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Transport':

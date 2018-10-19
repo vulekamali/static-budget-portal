@@ -287,7 +287,63 @@ slug: community-safety
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
+  programmes:
+  - items:
+    - name: Financial Management
+      total_budget: 17698000
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 14742000
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 5912000
+      type: subprogramme
+    - name: Office of the HOD
+      total_budget: 3721000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Safety Partnership
+      total_budget: 46356000
+      type: subprogramme
+    - name: Ombudsman
+      total_budget: 10064000
+      type: subprogramme
+    name: Provincial Policing Functions
+    type: programme
+  - items:
+    - name: Safety Promotion
+      total_budget: 22850000
+      type: subprogramme
+    - name: Community Police Relations
+      total_budget: 12839000
+      type: subprogramme
+    - name: Policy and Research
+      total_budget: 8957000
+      type: subprogramme
+    - name: Monitoring and Evaluation
+      total_budget: 8041000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 2491000
+      type: subprogramme
+    name: Provincial Secretariat for Police Services
+    type: programme
+  - items:
+    - name: Provincial Security Operations
+      total_budget: 58702000
+      type: subprogramme
+    - name: Security Advisory Services
+      total_budget: 14706000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 7495000
+      type: subprogramme
+    name: Security Risk Management
+    type: programme
 title: Community Safety budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 04 : Community Safety':

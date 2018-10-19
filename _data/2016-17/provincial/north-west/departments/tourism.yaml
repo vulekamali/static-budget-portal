@@ -236,7 +236,45 @@ slug: tourism
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Financial Management
+      total_budget: 34811000
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 33414000
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 9896000
+      type: subprogramme
+    - name: Office of the HOD
+      total_budget: 5910000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Tourism Growth and Development
+      total_budget: 118840000
+      type: subprogramme
+    - name: Tourism Sector and Transformation
+      total_budget: 8352000
+      type: subprogramme
+    - name: Tourist Guiding and Regulatory Services
+      total_budget: 7004000
+      type: subprogramme
+    name: Tourism Growth, Development and Transformation
+    type: programme
+  - items:
+    - name: Planning and Sector Performance
+      total_budget: 5517000
+      type: subprogramme
+    - name: Research and Policy Development
+      total_budget: 5517000
+      type: subprogramme
+    name: Tourism Planning
+    type: programme
 title: Tourism budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Tourism':

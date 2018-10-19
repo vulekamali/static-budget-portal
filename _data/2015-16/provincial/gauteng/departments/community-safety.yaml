@@ -245,7 +245,69 @@ slug: community-safety
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
+  programmes:
+  - items:
+    - name: CORPORATE SERVICES
+      total_budget: 37305000
+      type: subprogramme
+    - name: OFFICE OF THE HOD
+      total_budget: 23544000
+      type: subprogramme
+    - name: FINANCIAL MANAGEMENT
+      total_budget: 17408000
+      type: subprogramme
+    - name: OFFICE OF THE MEC
+      total_budget: 7670000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Safety Promotion
+      total_budget: 88809000
+      type: subprogramme
+    - name: Monitoring And Evaluation
+      total_budget: 47841000
+      type: subprogramme
+    - name: Community Police Relations
+      total_budget: 40577000
+      type: subprogramme
+    - name: Policy And Research
+      total_budget: 8063000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 4040000
+      type: subprogramme
+    name: Civilian Oversight
+    type: programme
+  - items:
+    - name: TRAFFIC LAW ENFORCEMENT
+      total_budget: 201473000
+      type: subprogramme
+    - name: PUBLIC TRANSPORT INSPECTION
+      total_budget: 35377000
+      type: subprogramme
+    - name: TRAINING TRAFFIC COLLEGE
+      total_budget: 32918000
+      type: subprogramme
+    - name: ROAD SAFETY PROJECT
+      total_budget: 25644000
+      type: subprogramme
+    - name: SPECIAL SERVICES
+      total_budget: 24137000
+      type: subprogramme
+    - name: ROAD SAFETY EDUCATION
+      total_budget: 17076000
+      type: subprogramme
+    - name: GDS ALLOC INTELL TRNSPRT SYS
+      total_budget: 8640000
+      type: subprogramme
+    - name: MANAGEMENT
+      total_budget: 1630000
+      type: subprogramme
+    name: Traffic Management
+    type: programme
 title: Community Safety budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Community Safety':

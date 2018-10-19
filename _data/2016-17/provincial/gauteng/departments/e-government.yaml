@@ -251,7 +251,72 @@ slug: e-government
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 154655000
+      type: subprogramme
+    - name: Office of the CFO
+      total_budget: 56979000
+      type: subprogramme
+    - name: Office of the HOD
+      total_budget: 7859000
+      type: subprogramme
+    - name: Risk Management
+      total_budget: 6267000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: BN Connectivity
+      total_budget: 349491000
+      type: subprogramme
+    - name: ICT Architecture
+      total_budget: 32290000
+      type: subprogramme
+    - name: Program Management
+      total_budget: 16708000
+      type: subprogramme
+    - name: Innovation Platforms
+      total_budget: 13332000
+      type: subprogramme
+    - name: Policy Planning Programme Support
+      total_budget: 1797000
+      type: subprogramme
+    name: Policy Planning, Strategy Development & Support Service
+    type: programme
+  - items:
+    - name: Public Relations & Oversight
+      total_budget: 11375000
+      type: subprogramme
+    - name: Regulations & Compliance
+      total_budget: 11375000
+      type: subprogramme
+    - name: Regulations Programme Support
+      total_budget: 1784000
+      type: subprogramme
+    name: Regulations, Compliance & Public Relations
+    type: programme
+  - items:
+    - name: Operations Management
+      total_budget: 256038000
+      type: subprogramme
+    - name: Business Automation Processes
+      total_budget: 127059000
+      type: subprogramme
+    - name: Applications
+      total_budget: 123436000
+      type: subprogramme
+    - name: Infrastructure Management
+      total_budget: 43629000
+      type: subprogramme
+    - name: Operations Programme Support
+      total_budget: 2058000
+      type: subprogramme
+    name: Solutions, Systems & Operations
+    type: programme
 title: E-Government budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 13 : E-Government':

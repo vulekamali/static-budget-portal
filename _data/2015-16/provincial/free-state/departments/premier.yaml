@@ -254,7 +254,51 @@ slug: premier
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
+  programmes:
+  - items:
+    - name: Director General
+      total_budget: 97999000
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 22521000
+      type: subprogramme
+    - name: Premier's Support
+      total_budget: 15025000
+      type: subprogramme
+    - name: Executive Council Support
+      total_budget: 3322000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Strategic Human Resource Management
+      total_budget: 32324000
+      type: subprogramme
+    - name: Communication Services
+      total_budget: 31655000
+      type: subprogramme
+    - name: Information Communication Technology
+      total_budget: 29375000
+      type: subprogramme
+    - name: Legal Services
+      total_budget: 7859000
+      type: subprogramme
+    name: Institutional Development
+    type: programme
+  - items:
+    - name: Provincial Policy Management
+      total_budget: 20858000
+      type: subprogramme
+    - name: Special Programmes
+      total_budget: 12284000
+      type: subprogramme
+    - name: Intergovernmental Relations
+      total_budget: 10674000
+      type: subprogramme
+    name: Policy & Governance
+    type: programme
 title: Premier budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 01 : Premier':

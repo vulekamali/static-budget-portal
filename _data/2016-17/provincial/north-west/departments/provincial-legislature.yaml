@@ -229,7 +229,51 @@ slug: provincial-legislature
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 90583000
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 80187000
+      type: subprogramme
+    - name: Office of the Speaker
+      total_budget: 6504000
+      type: subprogramme
+    - name: Office of the Secretary
+      total_budget: 5812000
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 1156000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Commitee Services
+      total_budget: 60427000
+      type: subprogramme
+    - name: Logistics Members
+      total_budget: 43863000
+      type: subprogramme
+    - name: Public Participation
+      total_budget: 20405000
+      type: subprogramme
+    - name: House Proceedings
+      total_budget: 3431000
+      type: subprogramme
+    - name: Library, Research & Information Services
+      total_budget: 2489000
+      type: subprogramme
+    - name: Exposure to Parliamentary Services
+      total_budget: 2475000
+      type: subprogramme
+    - name: NCOP Liaison Services
+      total_budget: 1628000
+      type: subprogramme
+    name: Legislature operations
+    type: programme
 title: Provincial Legislature budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 02 : Provincial Legislature':

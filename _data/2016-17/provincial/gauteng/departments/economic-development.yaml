@@ -291,7 +291,84 @@ slug: economic-development
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 154768000
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 39824000
+      type: subprogramme
+    - name: Office of the HOD
+      total_budget: 19712000
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 12806000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Consumer Protection
+      total_budget: 30727000
+      type: subprogramme
+    - name: Liquor Regulation
+      total_budget: 26695000
+      type: subprogramme
+    - name: Governance
+      total_budget: 10202000
+      type: subprogramme
+    - name: IGR And Strategic Partnerships
+      total_budget: 9625000
+      type: subprogramme
+    name: Business Regulation And Governance
+    type: programme
+  - items:
+    - name: Economic Infrastructure development
+      total_budget: 82386000
+      type: subprogramme
+    - name: Sector and industry development
+      total_budget: 65232000
+      type: subprogramme
+    - name: Policy and Planning
+      total_budget: 38046000
+      type: subprogramme
+    - name: Inclusive economy
+      total_budget: 8514000
+      type: subprogramme
+    - name: Research and Development
+      total_budget: 7500000
+      type: subprogramme
+    - name: Monitoring and Evaluation
+      total_budget: 2939000
+      type: subprogramme
+    name: Economic Planning
+    type: programme
+  - items:
+    - name: Enterprise Development
+      total_budget: 180817000
+      type: subprogramme
+    - name: Economic Empowerment
+      total_budget: 16484000
+      type: subprogramme
+    - name: Regional and Local Economic Development
+      total_budget: 1044000
+      type: subprogramme
+    name: Integrated Economic Development Services
+    type: programme
+  - items:
+    - name: Strategic Initiatives
+      total_budget: 405949000
+      type: subprogramme
+    - name: Sector Development
+      total_budget: 212854000
+      type: subprogramme
+    - name: Trade and Investment Promotion
+      total_budget: 5515000
+      type: subprogramme
+    name: Trade And Sector Development
+    type: programme
 title: Economic Development budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 03 : Economic Development':

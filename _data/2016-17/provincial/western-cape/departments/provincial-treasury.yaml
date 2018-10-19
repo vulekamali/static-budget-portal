@@ -286,7 +286,60 @@ slug: provincial-treasury
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Financial Management
+      total_budget: 24014000
+      type: subprogramme
+    - name: Management Services
+      total_budget: 13519000
+      type: subprogramme
+    - name: Office of the Minister
+      total_budget: 6530000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Supporting and Interlinked Financial Systems
+      total_budget: 33966000
+      type: subprogramme
+    - name: Supply Chain Management
+      total_budget: 19483000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 4481000
+      type: subprogramme
+    name: Asset Management
+    type: programme
+  - items:
+    - name: Accounting Services
+      total_budget: 18119000
+      type: subprogramme
+    - name: Corporate Governance
+      total_budget: 13341000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 5296000
+      type: subprogramme
+    name: Financial Governance
+    type: programme
+  - items:
+    - name: Public Finance
+      total_budget: 67500000
+      type: subprogramme
+    - name: Fiscal Policy
+      total_budget: 20799000
+      type: subprogramme
+    - name: Budget Management
+      total_budget: 17723000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 15968000
+      type: subprogramme
+    name: Sustainable Resource Management
+    type: programme
 title: Provincial Treasury budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 03 : Provincial Treasury':
