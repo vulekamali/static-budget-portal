@@ -18,7 +18,7 @@ description: null
 intro: null
 intro_short: null
 key_points: null
-last_updated: '2018-10-19T06:34:06.520276'
+last_updated: '2018-10-19T06:45:00.545630'
 license:
   name: License not specified
   url: null
@@ -38,6 +38,10 @@ resources:
   format: OpenSpending API
   name: EPRE Sub-programme Expenditure 2017-18
   url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:epre-sub-programme-expenditure-2017-18-v2/model/
+- description: ''
+  format: CSV
+  name: EPRE Sub-programme Expenditure 2017-18
+  url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/epre-sub-programme-expenditure-2017-18-v2/final/data/epre-subprogrammes-2017-18.csv
 selected_tab: datasets
 slug: epre-sub-programme-expenditure-2017-18
 title: EPRE Sub-programme Expenditure 2017-18 - vulekamali
