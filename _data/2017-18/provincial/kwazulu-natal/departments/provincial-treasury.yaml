@@ -331,7 +331,81 @@ slug: provincial-treasury
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 80702000
+      type: subprogramme
+    - name: Chief Financial Office
+      total_budget: 30560000
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 30345000
+      type: subprogramme
+    - name: Head of Department
+      total_budget: 9989000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Support and Interlinked Financial Systems
+      total_budget: 109891000
+      type: subprogramme
+    - name: Supply Chain Management
+      total_budget: 44272000
+      type: subprogramme
+    - name: Financial Reporting
+      total_budget: 28331000
+      type: subprogramme
+    - name: Cash Management and Liabilities
+      total_budget: 17070000
+      type: subprogramme
+    - name: Public, Private Partnerships
+      total_budget: 8288000
+      type: subprogramme
+    - name: Norms and Standards
+      total_budget: 5968000
+      type: subprogramme
+    name: Financial Management
+    type: programme
+  - items:
+    - name: Municipal Finance
+      total_budget: 57181000
+      type: subprogramme
+    - name: Economic Analysis
+      total_budget: 21415000
+      type: subprogramme
+    - name: Public Finance
+      total_budget: 14190000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 3270000
+      type: subprogramme
+    name: Fiscal Resource Management
+    type: programme
+  - items:
+    - name: Air Shows/ Special Projects
+      total_budget: 19458000
+      type: subprogramme
+    - name: Budget Communication
+      total_budget: 3026000
+      type: subprogramme
+    name: Growth and Development
+    type: programme
+  - items:
+    - name: Assurance Services
+      total_budget: 65275000
+      type: subprogramme
+    - name: Forensics Services
+      total_budget: 39558000
+      type: subprogramme
+    - name: Risk Management
+      total_budget: 19055000
+      type: subprogramme
+    name: Internal Audit
+    type: programme
 title: Provincial Treasury budget 2017-18  - vulekamali
 treasury_datasets:
   'EPRE for Vote 06 : Provincial Treasury':

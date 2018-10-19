@@ -269,7 +269,75 @@ slug: finance
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 73739000
+      type: subprogramme
+    - name: Financial Management (Office of the CFO)
+      total_budget: 47925000
+      type: subprogramme
+    - name: Management Services
+      total_budget: 10000000
+      type: subprogramme
+    - name: Office Of The Mec
+      total_budget: 8614000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Support and Interlinked Financial System
+      total_budget: 35202000
+      type: subprogramme
+    - name: Asset Management
+      total_budget: 11833000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 1889000
+      type: subprogramme
+    name: Asset and Liabilities Management
+    type: programme
+  - items:
+    - name: Accounting Services
+      total_budget: 68029000
+      type: subprogramme
+    - name: Provincial Internal Audit
+      total_budget: 63939000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 7334000
+      type: subprogramme
+    - name: Risk Management
+      total_budget: 4017000
+      type: subprogramme
+    - name: Norms and Standards
+      total_budget: 2453000
+      type: subprogramme
+    name: Financial Governance
+    type: programme
+  - items:
+    - name: Municipal Finance
+      total_budget: 95978000
+      type: subprogramme
+    - name: Budget Management
+      total_budget: 22396000
+      type: subprogramme
+    - name: Public Finance
+      total_budget: 18528000
+      type: subprogramme
+    - name: Fiscal Policy
+      total_budget: 6697000
+      type: subprogramme
+    - name: Economic Analysis
+      total_budget: 4701000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 3025000
+      type: subprogramme
+    name: Sustainable Resource Management
+    type: programme
 title: Finance budget 2017-18  - vulekamali
 treasury_datasets:
   'EPRE for Vote 07 : Finance':

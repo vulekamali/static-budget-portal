@@ -222,7 +222,63 @@ slug: e-government
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 162752000
+      type: subprogramme
+    - name: Office of the CFO
+      total_budget: 62671000
+      type: subprogramme
+    - name: Office of the HOD
+      total_budget: 10361000
+      type: subprogramme
+    - name: Risk Management
+      total_budget: 3980000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: HR Administration Cluster 2
+      total_budget: 26517000
+      type: subprogramme
+    - name: Payroll Services
+      total_budget: 24381000
+      type: subprogramme
+    - name: HR Administration Cluster 1
+      total_budget: 22914000
+      type: subprogramme
+    - name: Debt Administration
+      total_budget: 21763000
+      type: subprogramme
+    - name: Injury on Duty
+      total_budget: 6900000
+      type: subprogramme
+    - name: HR Chief  Dir  Support
+      total_budget: 5880000
+      type: subprogramme
+    - name: HR Information Management
+      total_budget: 5489000
+      type: subprogramme
+    name: Human Resources Services
+    type: programme
+  - items:
+    - name: APPLICATIONS
+      total_budget: 643332000
+      type: subprogramme
+    - name: OPERATIONS
+      total_budget: 317715000
+      type: subprogramme
+    - name: BUSINESS ALIGNMENT
+      total_budget: 39487000
+      type: subprogramme
+    - name: INFORMATION COMMUNICATION TECHNOLOGY PROGRAMME SUPPORT
+      total_budget: 2690000
+      type: subprogramme
+    name: Information Communication Technology(ICT) Shared Services
+    type: programme
 title: E-Government budget 2017-18  - vulekamali
 treasury_datasets:
   'EPRE for Vote 13 : E-Government':
