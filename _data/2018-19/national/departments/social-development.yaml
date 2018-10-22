@@ -540,15 +540,23 @@ subprogramme_by_programme:
     name: Welfare Services Policy Development and Implementation Support
     type: programme
 title: Social Development budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 17 - Social Development:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
+department_budget:
+  book_chapter:
+    name: ENE for Vote 17 - Social Development:
+    document:
+      format: PDF
       url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2018-19/resource/15f48a6b-c054-4159-be2a-04243bcc6fc3/download/vote201720social20development.pdf
-    - format: XLSX
+    tables:
+      format: XLSX
       url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2018-19/resource/5e09c366-c6fe-4981-8a9d-68d52d586562/download/ene18-vote17_chaptertables.xlsx
+department_adjusted_budget:
+  name: AENE for Vote 17 - Social Development
+  document:
+    format: PDF
+    url: https://example.com/fake.pdf
+  tables:
+    format: XLSX
+    url: https://example.com/fake.xlsx
 vote_number: 17
 vote_primary:
   name: Social Development

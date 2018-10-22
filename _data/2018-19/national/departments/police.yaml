@@ -484,15 +484,15 @@ subprogramme_by_programme:
     name: Visible Policing
     type: programme
 title: Police budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 23 - Police:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-police-2018-19/resource/cceef4f3-b4d6-464a-a563-bfb6d11994a7/download/vote-23-police.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-police-2018-19/resource/00ec6d6d-4a74-4953-80bb-2eeee20f1c53/download/ene18-vote23_chaptertables.xlsx
+department_budget:
+  name: ENE for Vote 23 - Police
+  document:
+    format: PDF
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-police-2018-19/resource/cceef4f3-b4d6-464a-a563-bfb6d11994a7/download/vote-23-police.pdf
+  tables:
+    format: XLSX
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-police-2018-19/resource/00ec6d6d-4a74-4953-80bb-2eeee20f1c53/download/ene18-vote23_chaptertables.xlsx
+department_adjusted_budget: null
 vote_number: 23
 vote_primary:
   name: Police
