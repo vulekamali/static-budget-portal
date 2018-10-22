@@ -21,6 +21,14 @@ layout: page-shell
       <em>vulekamali</em> is a project by the South African National Treasury and Imali Yethu with the goal of making government budget data and processes accessible to all citizens & interested parties. <a href="/about">Read more about vulekamali.</a>
     </div>
 
+    <div class="u-marginBottom25">
+      {%
+        include components/universal/Alert/index.html
+        title="Reminder"
+        message="The Medium Term Budget Policy Statement (MTBPS), a Cabinet policy statement tabled in Parliament about three months before the annual budget, will be streamed live from the vulekamali homepage on Wednesday, the 25th of October."
+      %}
+    </div>
+
     {% assign video1 = site.data.videos.data[0] %}
     {% include components/universal/VideoCard/index.html video=video1 utils="u-marginBottom15" %}
 
