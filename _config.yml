@@ -40,10 +40,12 @@ exclude:
   - _includes
   - .history
   - .vscode
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - 2015-16
+  - 2016-17
+  - 2017-18
+  - 2018-19
+  - guides
+  - datasets
 
 plugins:
   - jekyll-sitemap
