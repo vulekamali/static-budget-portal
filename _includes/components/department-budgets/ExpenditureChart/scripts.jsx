@@ -140,11 +140,11 @@ class ExpenditureChart extends Component {
   render() {
     const { source } = this.state;
     const { items: rawItems } = this.values;
-    const { files } = this.props;
+    const { files = {} } = this.props;
     const items = rawItems[source];
-
-    const pdf = files.formats[Object.keys(files.formats)[0]];
-    const excel = files.formats[Object.keys(files.formats)[1]];
+    const { formats } = files[Object.keys(files)[0]];
+    const { url: pdf } = formats[0];
+    const { url: excel } = formats[1];
 
     const props = pick(this.props, ['year', 'location', 'cpi', 'dataset', 'year', 'sourceType', 'guide']);
     const values = pick(this.values, ['items', 'phaseTable']);
