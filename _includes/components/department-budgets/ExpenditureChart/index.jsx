@@ -1,16 +1,18 @@
 import { h } from 'preact';
 import ResponsiveChart from './../../universal/ResponsiveChart/index.jsx';
-import Download from './../../universal/Download/index.jsx';
+import Icon from './../../universal/Icon/index.jsx';
 import Share from './../../universal/Share/index.jsx';
 
 
 export default function ExpenditureChart(props) {
   const {
     items,
-
-    files,
-    location,
     phaseTable,
+    sourceType,
+    year,
+    guide,
+    excel,
+    pdf,
 
     source,
     type,
@@ -23,10 +25,55 @@ export default function ExpenditureChart(props) {
     changeSource,
   } = props;
 
+  const buildDataset = () => (
+    <div>
+      <a href={dataset} className="LinksList-item u-textDecorationNone">
+        <span className="LinksList-icon"><Icon type="dataset" /></span>
+        <span className="LinksList-title">
+          <span>Source:&nbsp;</span>
+          <span className="u-textDecorationUnderline">{sourceType} {year}</span>
+        </span>
+      </a>
+    </div>
+  );
 
-  const estimateText = location === 'National' ?
-    'Estimates of National Expenditure (ENE)' :
-    'Estimates of Provincial Revenue and Expenditure (EPRE)';
+  const buildGuide = () => (
+    <div>
+      <a href={guide} className="LinksList-item">
+        <span className="LinksList-icon"><Icon type="guide" /></span>
+        <span className="LinksList-title">Dataset Guide for {sourceType}</span>
+      </a>
+    </div>
+  );
+
+  const buildPdf = () => (
+    <div>
+      <a href={pdf} className="LinksList-item" target="_blank" rel="noopener noreferrer">
+        <span className="LinksList-icon"><Icon type="download" /></span>
+        <span className="LinksList-title">Learn more about these programmes in the { sourceType } as PDF</span>
+      </a>
+    </div>
+  );
+
+  const buildExcel = () => (
+    <div>
+      <a href={excel} className="LinksList-item" target="_blank" rel="noopener noreferrer">
+        <span className="LinksList-icon"><Icon type="download" /></span>
+        <span className="LinksList-title">Learn more about these programmes in the { sourceType } as Excel</span>
+      </a>
+    </div>
+  );
+
+
+  const buildCpi = () => (
+    <div>
+      <a href={cpi} className="LinksList-item" target="_blank" rel="noopener noreferrer">
+        <span className="LinksList-icon"><Icon type="download" /></span>
+        <span className="LinksList-title">Annual CPI Inflation {year} as Excel document</span>
+      </a>
+    </div>
+  );
+
 
   return (
     <div className="Section is-bevel">
@@ -61,26 +108,12 @@ export default function ExpenditureChart(props) {
               </table>
             </div>
           </div>
-          <div className="Section-card is-invisible">
-            <div className="u-fontWeightBold">Sources</div>
-            <p>
-              The {estimateText} sets out the detailed spending plans of each government department for the coming year. These documents use amounts not adjusted for inflation unless stated otherwise.
-            </p>
-            <div className="u-paddingLeft25">
-              <Download title="View this data" link={dataset} />
-            </div>
-            {
-              Object.keys(files).map((key) => {
-                return (
-                  <div>
-                    <Download title={key} link={files[key]} icon />
-                  </div>
-                );
-              })
-            }
-            <div>
-              <Download title="Annual CPI Inflation 2018-19 (Excel)" link={cpi} icon />
-            </div>
+          <div className="u-marginLeft30">
+            {dataset && buildDataset()}
+            {guide && buildGuide()}
+            {pdf && buildPdf()}
+            {excel && buildExcel()}
+            {cpi && buildCpi()}
           </div>
           <div className="Section-card is-invisible">
             <div className="u-fontWeightBold u-marginBottom10">Share this chart:</div>

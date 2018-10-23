@@ -140,15 +140,19 @@ class ExpenditureChart extends Component {
   render() {
     const { source } = this.state;
     const { items: rawItems } = this.values;
+    const { files = {} } = this.props;
     const items = rawItems[source];
+    const { formats } = files[Object.keys(files)[0]];
+    const { url: pdf } = formats[0];
+    const { url: excel } = formats[1];
 
-    const props = pick(this.props, ['year', 'location', 'cpi', 'dataset']);
-    const values = pick(this.values, ['items', 'files', 'phaseTable']);
+    const props = pick(this.props, ['year', 'location', 'cpi', 'dataset', 'year', 'sourceType', 'guide']);
+    const values = pick(this.values, ['items', 'phaseTable']);
     const state = pick(this.state, ['width', 'mobile', 'source', 'type']);
     const eventSelected = ['downloadAction', 'canvasAction', 'resizeAction', 'changeSource'];
     const events = pick(this.events, eventSelected);
 
-    const passedProps = { ...props, ...values, ...state, ...events, items };
+    const passedProps = { ...props, ...values, ...state, ...events, items, pdf, excel };
     return <Markup {...passedProps} />;
   }
 }
@@ -163,6 +167,8 @@ const query = {
   department: 'string',
   cpi: 'string',
   dataset: 'string',
+  sourceType: 'string',
+  guide: 'string',
 };
 
 
