@@ -54,6 +54,7 @@
 @import 'utilities/scss/utility-classes/u-lineHeight';
 @import 'utilities/scss/utility-classes/u-cursor';
 @import 'utilities/scss/utility-classes/u-borderRadius';
+@import 'utilities/scss/utility-classes/u-supports';
 
 @import 'components/universal/BarChart/styles';
 @import 'components/universal/Button/styles';
@@ -113,6 +114,9 @@
 @import 'components/department-budgets/ContributedData/styles';
 @import 'components/department-budgets/ExpenditureChart/styles';
 @import 'components/department-budgets/LinksList/styles';
+@import 'components/department-budgets/ArrowButtons/styles';
+@import 'components/department-budgets/DeptSectionHead/styles';
+@import 'components/department-budgets/DeptIntroWrap/styles';
 
 @import 'components/contributed-data/CsoMeta/styles';
 @import 'components/contributed-data/Screenshots/styles';
