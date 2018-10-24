@@ -43,7 +43,7 @@
 .Page-contentInner {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 1.5rem 100px;
+  padding: 0 5px 100px;
   @include clearfix;
 
   &.is-full {
@@ -54,6 +54,14 @@
     padding: 0 3rem 100px;
   }
 
+  @media ($mobile-breakpoint) {
+    padding: 0 15px 100px;
+  }
+
+  @media ($tablet-breakpoint) {
+    padding: 0 25px 100px;
+  }
+
   &--floatingLinks {
     @media (min-width: 900px) {
       padding-left: 240px;
@@ -61,6 +69,14 @@
 
     @media ($widescreen-breakpoint) {
       padding-left: 0;
+    }
+  }
+
+  &--department {
+    padding: 0 1.5rem 100px;
+
+    @media screen and (min-width: 750px) {
+      padding: 0 3rem 100px;
     }
   }
 }
