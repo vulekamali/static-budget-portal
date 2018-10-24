@@ -12,7 +12,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      z-index: 999999999999;
+      z-index: 999999;
       overflow: hidden;
       transform: translateY(-100px);
       transition: transform 0.4s;
@@ -71,9 +71,9 @@
 
   @media screen and (min-width: 900px) {
     &.is-responsive::after {
-      border-top: 4.5rem solid transparent;
+      border-top: 3rem solid transparent;
       border-left: 5rem solid grey;
-      border-bottom: 4.5rem solid transparent;
+      border-bottom: 3rem solid transparent;
     }
   }
 
@@ -113,7 +113,7 @@
 
   @media screen and (min-width: 900px) {
     &.is-responsive {
-      height: 9rem;
+      height: 6rem;
       padding: 0 2rem;
     }
   }
@@ -148,7 +148,7 @@
 
   @media screen and (min-width: 900px) {
     &.is-responsive {
-      line-height: 1.45;
+      line-height: 1.2;
       display: block;
     }
   }
@@ -157,13 +157,12 @@
 .ArrowButtons-heading {
   font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
-  text-decoration: underline;
   line-height: 2;
 
   @media screen and (min-width: 900px) {
     &.is-responsive {
       font-size: 1.25rem;
+      line-height: 1;
     }
   }
 }
