@@ -36,7 +36,7 @@
 <!DOCTYPE html>
 <html>
   {% include utilities/html/head.html title=page_data.title description=page_data.description %}
-  <body {{ production }}>
+  <body {{ production }} data-spy="scroll" data-target="#spy">
     {{ content }}
     {% include utilities/html/scripts.html %}
   </body>
