@@ -124,7 +124,7 @@ export default function ExpenditureChart(props) {
         </div>
         <div className="ExpenditureChart-chart">
           <div className="Section-card">
-            <ResponsiveChart {...{ items, resizeAction, type }} />
+            <ResponsiveChart {...{ items, resizeAction, type }} purple />
             <div className="u-textAlignCenter">
               <label htmlFor="expenditure-select-adjusted" className="ExpenditureChart-radio u-marginRight20">
                 <input

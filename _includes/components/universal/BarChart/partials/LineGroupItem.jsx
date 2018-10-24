@@ -8,7 +8,7 @@ const colours = [
 ];
 
 
-export default function LineGroupItem({ totalGroupSpace, groupSpaceArray, rank, lines, title, styling }) {
+export default function LineGroupItem({ totalGroupSpace, groupSpaceArray, rank, lines, title, styling, purple }) {
   const {
     barWidth,
     padding,
@@ -82,7 +82,7 @@ export default function LineGroupItem({ totalGroupSpace, groupSpaceArray, rank, 
               y2={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * charArray.length)}
               x2={(padding[3] + buffer + displayAmount) - barWidth}
               className="Graph-line"
-              stroke={colours[index]}
+              stroke={purple ? '#ad3c64' : colours[index]}
             />
           );
         })
