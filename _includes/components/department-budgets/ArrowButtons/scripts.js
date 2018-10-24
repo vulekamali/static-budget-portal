@@ -1,6 +1,13 @@
 import DebounceFunction from '../../../utilities/js/helpers/DebounceFunction.js';
 
 
+const calcAbsolutePositionFromTop = (node) => {
+  const { top } = node.getBoundingClientRect();
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  return top + scrollTop;
+};
+
+
 function ArrowButtons() {
   const node = document.querySelector('[data-sticky-arrows]');
   const clickNodes = document.querySelectorAll('[data-scroll-smooth]');
@@ -8,9 +15,12 @@ function ArrowButtons() {
   const clickOverride = (event, target) => {
     event.preventDefault();
     const targetNode = document.querySelector(target);
+    const absoluteTop = calcAbsolutePositionFromTop(targetNode);
+    const top = absoluteTop - 100;
 
-    targetNode.scrollIntoView({
+    window.scrollTo({
       behavior: 'smooth',
+      top,
     });
   };
 
