@@ -76,7 +76,7 @@ export default function ExpenditureChart(props) {
 
 
   return (
-    <div className="Section is-bevel">
+    <div>
       <canvas ref={node => canvasAction(node)} style={{ display: 'none' }} />
       <div className="ExpenditureChart">
         <div className="ExpenditureChart-info">
