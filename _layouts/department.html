@@ -32,19 +32,17 @@ layout: page-shell
 
 <div class="Page-content Page-content--dynamicYears">
   <div class="Page-contentInner is-full">
-    <div class="DeptIntroWrap u-marginBottom25">
-      <h1 class="Page-mainHeading u-marginBottom0 u-marginLeft0">{{ page_data.name }}</h1>
-      <span class="Page-subHeading"> {{ department_location }} Department Budget for {{ page.financial_year }}</span>
+    <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0 u-marginLeft0">{{ page_data.name }}</h1>
+    <span class="Page-subHeading u-textAlignCenter"> {{ department_location }} Department Budget for {{ page.financial_year }}</span>
 
-      {%
-        include components/department-budgets/IntroSection/index.html
-        description=page_data.intro
-        datasets=page_data.treasury_datasets
-        location=department_location
-      %}
+    {%
+      include components/department-budgets/IntroSection/index.html
+      description=page_data.intro
+      datasets=page_data.treasury_datasets
+      location=department_location
+    %}
 
-      <div class="Page-mainHeading u-margin0 u-supportsFlex">The Budget Cycle</div>
-    </div>
+    <div class="Page-mainHeading u-marginTop15 u-supportsFlex u-textAlignCenter u-marginBottom25">The Budget Cycle</div>
     <div>
       {%
         include components/department-budgets/ArrowButtons/index.html
