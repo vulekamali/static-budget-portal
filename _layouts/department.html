@@ -32,6 +32,23 @@ layout: page-shell
 
 <div class="Page-content Page-content--dynamicYears">
   <div class="Page-contentInner is-full">
+
+    <nav class="SectionIndicator" data-sticky-arrows>
+      <ul class="SectionIndicator-list nav">
+        <li class="SectionIndicator-item nav-item">
+          <a href="#section-plan" data-scroll-smooth="#section-plan" class="SectionIndicator-circle SectionIndicator-circle--green nav-link"></a>
+        </li>
+
+        <li>
+          <span class="SectionIndicator-circle SectionIndicator-circle--orange"></span>
+        </li>
+
+        <li class="nav-item">
+          <a href="#section-review" data-scroll-smooth="#section-review" class="SectionIndicator-circle SectionIndicator-circle--purple nav-link"></a>
+        </li>
+      </ul>
+    </nav>
+
     <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0 u-marginLeft0">{{ page_data.name }}</h1>
     <span class="Page-subHeading u-textAlignCenter"> {{ department_location }} Department Budget for {{ page.financial_year }}</span>
 
