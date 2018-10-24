@@ -6,6 +6,12 @@ import Search from './partials/Search.jsx';
 import Twitter from './partials/Twitter.jsx';
 import Home from './partials/Home.jsx';
 import Play from './partials/Play.jsx';
+import Hamburger from './partials/Hamburger.jsx';
+import Pin from './partials/Pin.jsx';
+import Date from './partials/Date.jsx';
+import Dataset from './partials/Dataset.jsx';
+import Guide from './partials/Guide.jsx';
+
 
 export default function Icon({ size, type }) {
   switch (type) {
@@ -19,6 +25,8 @@ export default function Icon({ size, type }) {
     case 'hamburger': return <Hamburger {...{ size }} />;
     case 'pin': return <Pin {...{ size }} />;
     case 'date': return <Date {...{ size }} />;
+    case 'dataset': return <Dataset {...{ size }} />;
+    case 'guide': return <Guide {...{ size }} />;
     default: return null;
   }
 }

@@ -104,9 +104,12 @@ class ProgrammesChart extends Component {
   render() {
     const { hasNull } = this;
     const { width, mobile } = this.state;
-    const { year, location, dataset } = this.props;
+    const { year, dataset, sourceType, guide } = this.props;
     const { files, items } = this.values;
     const { downloadAction, canvasAction } = this.events;
+
+    const pdf = files[Object.keys(files)[0]];
+    const excel = files[Object.keys(files)[1]];
 
     return (
       <Markup
@@ -121,7 +124,11 @@ class ProgrammesChart extends Component {
           location,
           downloadAction,
           canvasAction,
+          sourceType,
           dataset,
+          pdf,
+          excel,
+          guide,
         }}
       />
     );
@@ -134,8 +141,9 @@ const query = {
   year: 'string',
   files: 'json',
   dept: 'string',
-  location: 'string',
+  sourceType: 'string',
   dataset: 'string',
+  guide: 'string',
 };
 
 
