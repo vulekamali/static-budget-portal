@@ -118,7 +118,7 @@ export default function ExpenditureChart(props) {
           <div className="Section-card is-invisible">
             <div className="u-fontWeightBold u-marginBottom10">Share this chart:</div>
             <div className="ExpenditureChart-share">
-              <Share anchor="line-chart" />
+              <Share anchor="line-chart" purple />
             </div>
           </div>
         </div>
@@ -158,7 +158,7 @@ export default function ExpenditureChart(props) {
             }
           </div>
           <div className="Section-card is-invisible u-textAlignCenter">
-            <button className="Button is-inline" onClick={downloadAction}>Download chart as image (~130 KB)</button>
+            <button className="Button is-purple is-inline" onClick={downloadAction}>Download chart as image (~130 KB)</button>
           </div>
         </div>
       </div>
