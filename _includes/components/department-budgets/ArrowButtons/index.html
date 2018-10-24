@@ -1,0 +1,47 @@
+{% if include.fixed == "true" %}
+  {% assign root = "<div class='ArrowButtons ArrowButtons--fixed' id='spy' data-sticky-arrows>" %}
+  {% assign activeModifiers = "" %}
+  {% assign responsiveModifiers = "" %}
+{% else %}
+  {% assign root = "<div class='ArrowButtons'>" %}
+  {% assign activeModifiers = " active" %}
+  {% assign responsiveModifiers = " is-responsive" %}
+{% endif %}
+
+
+{{ root }}
+  <ul class="ArrowButtons-list list-group nav">
+    <li class="ArrowButtons-item nav-item">
+      <a class="ArrowButtons-button ArrowButtons-button--link ArrowButtons-button--green nav-link{{ activeModifiers }}{{ responsiveModifiers }}" href="{{ include.link_1 }}" data-scroll-smooth="{{ include.link_1 }}">
+        <div class="ArrowButtons-box ArrowButtons-box--green{{ responsiveModifiers }}">
+          <div>
+            <div class="ArrowButtons-heading{{ responsiveModifiers }}">Plan</div>
+            <div class="ArrowButtons-description{{ responsiveModifiers }}">Budgets and expenditure planning.</div>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <li class="ArrowButtons-item">
+      <span class="ArrowButtons-button ArrowButtons-button--orange {{ activeModifiers }}{{ responsiveModifiers }}">
+        <div class="ArrowButtons-box ArrowButtons-box--orange{{ responsiveModifiers }}">
+          <div>
+            <div class="ArrowButtons-heading u-textDecorationNone{{ responsiveModifiers }}">Implement</div>
+            <div class="ArrowButtons-description{{ responsiveModifiers }}">Implementation of department’s programmes.</div>
+          </div>
+        </div>
+      </span>
+    </li>
+
+    <li class="ArrowButtons-item nav-item">
+      <a class="ArrowButtons-button ArrowButtons-button--link ArrowButtons-button--purple nav-link{{ activeModifiers }}{{ responsiveModifiers }}" href="{{ include.link_3 }}" data-scroll-smooth="{{ include.link_3 }}">
+        <div class="ArrowButtons-box ArrowButtons-box--purple{{ responsiveModifiers }}">
+          <div>
+            <div class="ArrowButtons-heading{{ responsiveModifiers }}">Review</div>
+            <div class="ArrowButtons-description{{ responsiveModifiers }}">Review of expenditure over the fiscal year.</div>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
