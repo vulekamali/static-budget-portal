@@ -42,11 +42,11 @@ function ArrowButtons() {
       const active = node.classList.contains('is-active');
       const top = window.pageYOffset || document.documentElement.scrollTop;
 
-      if (top < 400 && active) {
+      if (top < 700 && active) {
         return node.classList.remove('is-active');
       }
 
-      if (top > 400 && !active) {
+      if (top > 700 && !active) {
         return node.classList.add('is-active');
       }
     }
