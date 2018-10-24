@@ -1,18 +1,22 @@
 {% if include.fixed == "true" %}
-  {% assign root = "<div class='ArrowButtons ArrowButtons--fixed' id='spy' data-sticky-arrows>" %}
+  {% assign root = "<nav class='ArrowButtons ArrowButtons--fixed' data-sticky-arrows>" %}
   {% assign activeModifiers = "" %}
   {% assign responsiveModifiers = "" %}
+  {% assign closingTag = "</nav>" %}
+  {% assign navlinkModifier = " nav-link" %}
 {% else %}
   {% assign root = "<div class='ArrowButtons'>" %}
   {% assign activeModifiers = " active" %}
   {% assign responsiveModifiers = " is-responsive" %}
+  {% assign closingTag = "</div>" %}
+  {% assign navlinkModifier = "" %}
 {% endif %}
 
 
 {{ root }}
-  <ul class="ArrowButtons-list list-group nav">
+  <ul class="ArrowButtons-list nav">
     <li class="ArrowButtons-item nav-item">
-      <a class="ArrowButtons-button ArrowButtons-button--link ArrowButtons-button--green nav-link{{ activeModifiers }}{{ responsiveModifiers }}" href="{{ include.link_1 }}" data-scroll-smooth="{{ include.link_1 }}">
+      <a class="ArrowButtons-button ArrowButtons-button--link ArrowButtons-button--green{{ navlinkModifier }}{{ activeModifiers }}{{ responsiveModifiers }}" href="{{ include.link_1 }}" data-scroll-smooth="{{ include.link_1 }}">
         <div class="ArrowButtons-box ArrowButtons-box--green{{ responsiveModifiers }}">
           <div>
             <div class="ArrowButtons-heading{{ responsiveModifiers }}">Plan</div>
@@ -34,7 +38,7 @@
     </li>
 
     <li class="ArrowButtons-item nav-item">
-      <a class="ArrowButtons-button ArrowButtons-button--link ArrowButtons-button--purple nav-link{{ activeModifiers }}{{ responsiveModifiers }}" href="{{ include.link_3 }}" data-scroll-smooth="{{ include.link_3 }}">
+      <a class="ArrowButtons-button ArrowButtons-button--link ArrowButtons-button--purple {{ navlinkModifier }}{{ activeModifiers }}{{ responsiveModifiers }}" href="{{ include.link_3 }}" data-scroll-smooth="{{ include.link_3 }}">
         <div class="ArrowButtons-box ArrowButtons-box--purple{{ responsiveModifiers }}">
           <div>
             <div class="ArrowButtons-heading{{ responsiveModifiers }}">Review</div>
@@ -44,4 +48,4 @@
       </a>
     </li>
   </ul>
-</div>
+{{ closingTag }}

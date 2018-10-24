@@ -43,19 +43,15 @@
 .Page-contentInner {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 5px 100px;
+  padding: 0 1.5rem 100px;
   @include clearfix;
 
   &.is-full {
     max-width: 1800px;
   }
 
-  @media ($mobile-breakpoint) {
-    padding: 0 15px 100px;
-  }
-
-  @media ($tablet-breakpoint) {
-    padding: 0 25px 100px;
+  @media screen and (min-width: 750px) {
+    padding: 0 3rem 100px;
   }
 
   &--floatingLinks {

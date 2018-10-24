@@ -53,7 +53,7 @@
 
   @media screen and (min-width: 900px) {
     &.is-responsive {
-      padding-right: 5rem;
+      padding-right: 3rem;
     }
   }
 
@@ -65,14 +65,14 @@
     width: 0;
     height: 0;
     border-top: 1rem solid transparent;
-    border-left: 1rem solid grey;
+    border-left: 1rem solid #aaa;
     border-bottom: 1rem solid transparent;
   }
 
   @media screen and (min-width: 900px) {
     &.is-responsive::after {
       border-top: 3rem solid transparent;
-      border-left: 5rem solid grey;
+      border-left: 3rem solid #aaa;
       border-bottom: 3rem solid transparent;
     }
   }
@@ -104,7 +104,7 @@
 
 .ArrowButtons-box {
   height: 2rem;
-  background-color: grey;
+  background-color: #aaa;
   display: flex;
   justify-content: center;
   align-items: center;
