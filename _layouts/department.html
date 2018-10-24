@@ -42,7 +42,7 @@ layout: page-shell
       location=department_location
     %}
 
-    <div class="Page-mainHeading u-marginTop15 u-supportsFlex u-textAlignCenter u-marginBottom25">The Budget Cycle</div>
+    <div class="Page-subHeading u-marginTop15 u-supportsFlex u-textAlignCenter u-marginBottom25">The Budget Cycle</div>
     <div>
       {%
         include components/department-budgets/ArrowButtons/index.html
@@ -52,12 +52,9 @@ layout: page-shell
     </div>
 
     <div class="u-marginTop100">
-      {%
-        include components/department-budgets/DeptSectionHead/index.html
-        title="Plan"
-        id="section-plan"
-        color="green"
-      %}
+      <div class="DeptSectionHead DeptSectionHead--green" id="section-plan">
+        Plan
+      </div>
     </div>
 
     <div class="u-marginTop20">
@@ -132,12 +129,9 @@ layout: page-shell
     {% endif %}
 
     <div class="u-marginTop100">
-      {%
-        include components/department-budgets/DeptSectionHead/index.html
-        title="Review"
-        id="section-review"
-        color="purple"
-      %}
+      <div class="DeptSectionHead DeptSectionHead--purple" id="section-review">
+        Review
+      </div>
     </div>
 
     <div class="u-marginTop20">
