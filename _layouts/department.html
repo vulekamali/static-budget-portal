@@ -7,6 +7,7 @@ layout: page-shell
   {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.data_key] %}
 {% endif %}
 
+
 {% if page_data.government.slug == 'south-africa' %}
   {% assign department_location = 'National' %}
 {% else %}
@@ -21,19 +22,45 @@ layout: page-shell
 {% endif %}
 
 
+{%
+  include components/department-budgets/ArrowButtons/index.html
+  fixed="true"
+  link_1="#section-plan"
+  link_3="#section-review"
+%}
+
+
 <div class="Page-content Page-content--dynamicYears">
   <div class="Page-contentInner is-full">
-    <div class="u-marginBottom25">
-      <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0">{{ page_data.name }}</h1>
-      <span class="Page-subHeading u-textAlignCenter"> {{ department_location }} Department Budget for {{ page.financial_year }}</span>
+    <div class="DeptIntroWrap u-marginBottom25">
+      <h1 class="Page-mainHeading u-marginBottom0 u-marginLeft0">{{ page_data.name }}</h1>
+      <span class="Page-subHeading"> {{ department_location }} Department Budget for {{ page.financial_year }}</span>
+
+      {%
+        include components/department-budgets/IntroSection/index.html
+        description=page_data.intro
+        datasets=page_data.treasury_datasets
+        location=department_location
+      %}
+
+      <div class="Page-mainHeading u-margin0 u-supportsFlex">The Budget Cycle</div>
+    </div>
+    <div>
+      {%
+        include components/department-budgets/ArrowButtons/index.html
+        link_1="#section-plan"
+        link_3="#section-review"
+      %}
     </div>
 
-    {%
-      include components/department-budgets/IntroSection/index.html
-      description=page_data.intro
-      datasets=page_data.treasury_datasets
-      location=department_location
-    %}
+    <div class="u-marginTop100">
+      {%
+        include components/department-budgets/DeptSectionHead/index.html
+        title="Plan"
+        id="section-plan"
+        color="green"
+      %}
+    </div>
 
     <div class="u-marginTop20">
       <div
@@ -105,6 +132,15 @@ layout: page-shell
         %}
       </div>
     {% endif %}
+
+    <div class="u-marginTop100">
+      {%
+        include components/department-budgets/DeptSectionHead/index.html
+        title="Review"
+        id="section-review"
+        color="purple"
+      %}
+    </div>
 
     <div class="u-marginTop20">
       <div
