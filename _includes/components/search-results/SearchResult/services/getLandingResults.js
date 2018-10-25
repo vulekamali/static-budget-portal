@@ -22,7 +22,7 @@ export default function getLandingResults(phrase, year) {
 
   const request = new Promise((resolve, reject) => {
     const urlsArray = [
-      `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=3&fq=+organization:national-treasury+vocab_financial_years:${year}+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]&ext_highlight=true`,
+      `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=3&fq=+organization:national-treasury+vocab_financial_years:${year}+groups:"budget-vote-documents"+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]&ext_highlight=true`,
 
       `https://data.vulekamali.gov.za/api/3/action/package_search?q=${encodeURI(phrase)}&start=0&rows=0&fq=+organization:national-treasury+groups:"budget-vote-documents"+extras_department_name_slug:[*%20TO%20*]+extras_geographic_region_slug:[*%20TO%20*]&facet.field=[%22vocab_financial_years%22]`,
 
@@ -32,6 +32,7 @@ export default function getLandingResults(phrase, year) {
 
       '/json/static-search.json',
     ];
+
 
     Promise.all(urlsArray.map(fetchWrapper))
       .then((returnArr) => {
