@@ -303,7 +303,63 @@ slug: premier
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Financial Management
+      total_budget: 34297000
+      type: subprogramme
+    - name: Premier's Support
+      total_budget: 13462000
+      type: subprogramme
+    - name: Director General
+      total_budget: 13437000
+      type: subprogramme
+    - name: Executive Council Support
+      total_budget: 3890000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Strategic Human Resource Management
+      total_budget: 290194000
+      type: subprogramme
+    - name: Communication Services
+      total_budget: 24643000
+      type: subprogramme
+    - name: Information Communication Technology
+      total_budget: 13331000
+      type: subprogramme
+    - name: Legal Services
+      total_budget: 8579000
+      type: subprogramme
+    name: Institutional Development
+    type: programme
+  - items:
+    - name: Provincial Intervention
+      total_budget: 101747000
+      type: subprogramme
+    - name: Public Sector Monitoring and Evaluation
+      total_budget: 10193000
+      type: subprogramme
+    - name: Monitoring and Evaluation Programmes
+      total_budget: 5601000
+      type: subprogramme
+    name: Monitoring and Evaluation
+    type: programme
+  - items:
+    - name: Provincial Policy Management
+      total_budget: 19343000
+      type: subprogramme
+    - name: Special Programmes
+      total_budget: 16656000
+      type: subprogramme
+    - name: Intergovernmental Relations
+      total_budget: 9607000
+      type: subprogramme
+    name: Policy & Governance
+    type: programme
 title: Premier budget 2017-18  - vulekamali
 treasury_datasets: {}
 vote_number: 1

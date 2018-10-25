@@ -9,9 +9,16 @@ All url_path variables should start with /
 import os
 import requests
 import yaml
+import logging
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+logFormatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logHandler = logging.StreamHandler()
+logHandler.setFormatter(logFormatter)
+logger.addHandler(logHandler)
 
 YEAR_SLUGS = [
     '2018-19',
@@ -86,7 +93,7 @@ def write_basic_page(page_url_path, page_yaml, layout=None):
 
 def write_financial_year(session, year_slug, static_path):
     url_path = '/%s' % year_slug
-    print url_path
+    logger.info(url_path)
     url = portal_url + url_path[1:] + ".yaml"
     r = session.get(url)
     r.raise_for_status()
@@ -182,7 +189,7 @@ for year_slug in YEAR_SLUGS:
 
     for slug in BASIC_PAGE_SLUGS:
         url_path = '/%s/%s' % (year_slug, slug)
-        print url_path
+        logger.info(url_path)
         url = portal_url + url_path[1:] + ".yaml"
         r = session.get(url)
         r.raise_for_status()
@@ -198,7 +205,7 @@ for year_slug in YEAR_SLUGS:
 # Contributed Datasets
 
 listing_url_path = '/datasets/contributed'
-print listing_url_path
+logger.info(listing_url_path)
 listing_url = portal_url + listing_url_path[1:] + '.yaml'
 r = session.get(listing_url)
 r.raise_for_status()
@@ -211,7 +218,7 @@ write_basic_page(listing_url_path, r.text, 'contributed-data')
 
 listing = yaml.load(r.text)
 for dataset in listing['datasets']:
-    print dataset['url_path']
+    logger.info(dataset['url_path'])
     dataset_path = dataset['url_path'] + '.yaml'
     if dataset_path.startswith('/'):
         dataset_path = dataset_path[1:]
@@ -230,7 +237,7 @@ for dataset in listing['datasets']:
 # Category list page
 
 category_list_url_path = "/datasets"
-print category_list_url_path
+logger.info(category_list_url_path)
 category_list_url = portal_url + category_list_url_path[1:] + '.yaml'
 r = session.get(category_list_url)
 r.raise_for_status()
@@ -248,7 +255,7 @@ dataset_categories.remove('contributed')
 
 for category in dataset_categories:
     dataset_list_url_path = "/datasets/" + category
-    print dataset_list_url_path
+    logger.info(dataset_list_url_path)
     dataset_list_url = portal_url + dataset_list_url_path[1:] + '.yaml'
     r = session.get(dataset_list_url)
     r.raise_for_status()
@@ -264,7 +271,7 @@ for category in dataset_categories:
     # Dataset detail pages
 
     for dataset in dataset_list['datasets']:
-        print dataset['url_path']
+        logger.info(dataset['url_path'])
         dataset_path = dataset['url_path'] + '.yaml'
         if dataset_path.startswith('/'):
             dataset_path = dataset_path[1:]
@@ -282,7 +289,7 @@ for category in dataset_categories:
 
 for year_slug in YEAR_SLUGS:
     listing_url_path = '/%s/departments' % year_slug
-    print listing_url_path
+    logger.info(listing_url_path)
     listing_url = portal_url + listing_url_path[1:] + '.yaml'
     r = session.get(listing_url)
     r.raise_for_status()
@@ -297,7 +304,7 @@ for year_slug in YEAR_SLUGS:
     for sphere in ('national', 'provincial'):
         for government in listing[sphere]:
             for department in government['departments']:
-                print department['url_path']
+                logger.info(department['url_path'])
 
                 department_path = department['url_path'] + '.yaml'
                 department_url = portal_url + department_path[1:]

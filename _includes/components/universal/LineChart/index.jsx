@@ -76,7 +76,7 @@ export default function LineChart(props) {
       height={height}
       style={{ maxWidth: newWidth }}
     >
-      <Breakpoints {...{ styling, totalGroupSpace }} />
+      <Breakpoints {...{ styling, totalGroupSpace, }} />
       <Grid {...{ styling, totalGroupSpace }} />
       <Guides {...{ styling, totalGroupSpace }} />
       <LineGroups {...{ totalGroupSpace, groupSpaceArray, items, styling }} />

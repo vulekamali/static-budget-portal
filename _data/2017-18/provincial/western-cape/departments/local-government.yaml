@@ -316,7 +316,54 @@ slug: local-government
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 41652000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Disaster Management
+      total_budget: 40958000
+      type: subprogramme
+    - name: Municipal Infrastructure
+      total_budget: 23709000
+      type: subprogramme
+    - name: Integrated Development Planning Coordination
+      total_budget: 8504000
+      type: subprogramme
+    name: Development and Planning
+    type: programme
+  - items:
+    - name: Community Development Worker Programme
+      total_budget: 63886000
+      type: subprogramme
+    - name: Municipal Performance, Monitoring, Reporting and Evaluation
+      total_budget: 26316000
+      type: subprogramme
+    - name: Capacity Development
+      total_budget: 13711000
+      type: subprogramme
+    - name: Service Delivery Integration
+      total_budget: 10754000
+      type: subprogramme
+    - name: Municipal Administration
+      total_budget: 9864000
+      type: subprogramme
+    - name: Public Participation
+      total_budget: 9851000
+      type: subprogramme
+    name: Local Governance
+    type: programme
+  - items:
+    - name: Traditional Institutional Administration
+      total_budget: 1000
+      type: subprogramme
+    name: Traditional Institutional Management
+    type: programme
 title: Local Government budget 2017-18  - vulekamali
 treasury_datasets:
   'EPRE for Vote 14 : Local Government':

@@ -9,6 +9,13 @@
   flex-direction: column;
 
   @media screen and (min-width: 768px) {
+    &--fullPage {
+      flex-direction: row;
+      height: 250px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
     height: 250px;
   }
@@ -26,6 +33,12 @@
   align-items: center;
 
   @media screen and (min-width: 768px) {
+    &--fullPage {
+      flex-basis: 300px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
     flex-basis: 300px;
   }
 }

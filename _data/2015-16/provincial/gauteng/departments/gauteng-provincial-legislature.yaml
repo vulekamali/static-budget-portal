@@ -262,7 +262,84 @@ slug: gauteng-provincial-legislature
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
+  programmes:
+  - items:
+    - name: Management
+      total_budget: 134123000
+      type: subprogramme
+    - name: Parliamentary Business
+      total_budget: 35040000
+      type: subprogramme
+    - name: Communication
+      total_budget: 33844000
+      type: subprogramme
+    - name: Information and Knowledge Management
+      total_budget: 14455000
+      type: subprogramme
+    name: Core Business
+    type: programme
+  - items:
+    - name: Members Affairs
+      total_budget: 108360000
+      type: subprogramme
+    - name: Management
+      total_budget: 89808000
+      type: subprogramme
+    - name: Operational Support Services
+      total_budget: 32315000
+      type: subprogramme
+    - name: Institutional Support Services
+      total_budget: 31938000
+      type: subprogramme
+    - name: IT and Technology
+      total_budget: 13211000
+      type: subprogramme
+    name: Corporate Support Services
+    type: programme
+  - items:
+    - name: Office of the Speaker
+      total_budget: 28949000
+      type: subprogramme
+    - name: Chair of Chairs
+      total_budget: 10482000
+      type: subprogramme
+    - name: Office of the Deputy Speaker
+      total_budget: 3203000
+      type: subprogramme
+    - name: Legislative Service board
+      total_budget: 1422000
+      type: subprogramme
+    - name: Deputy Chair of chairs
+      total_budget: 582000
+      type: subprogramme
+    name: Leadership And Governance
+    type: programme
+  - items:
+    - name: Office of the Secretary
+      total_budget: 20290000
+      type: subprogramme
+    - name: Office of the Integrity
+      total_budget: 402000
+      type: subprogramme
+    name: Office Of The Secretary
+    type: programme
+  - items:
+    - name: Management
+      total_budget: 38852000
+      type: subprogramme
+    - name: Risk Management
+      total_budget: 2098000
+      type: subprogramme
+    - name: Supply Chain Management
+      total_budget: 701000
+      type: subprogramme
+    - name: Finance
+      total_budget: 398000
+      type: subprogramme
+    name: Office of the CFO
+    type: programme
 title: Gauteng Provincial Legislature budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 02 : Gauteng Provincial Legislature':

@@ -292,7 +292,132 @@ slug: gauteng-provincial-treasury
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
+  programmes:
+  - items:
+    - name: Corporate Management
+      total_budget: 64241000
+      type: subprogramme
+    - name: Financial Management Services (CFO)
+      total_budget: 24045000
+      type: subprogramme
+    - name: Office of the HOD
+      total_budget: 15523000
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 7719000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Provincial Accounting Services
+      total_budget: 37147000
+      type: subprogramme
+    - name: Provincial Forensic Audits
+      total_budget: 19194000
+      type: subprogramme
+    - name: Transversal Internal Audit and Risk Management
+      total_budget: 14704000
+      type: subprogramme
+    - name: Compliance
+      total_budget: 13699000
+      type: subprogramme
+    - name: Financial Information Management Systems
+      total_budget: 10400000
+      type: subprogramme
+    - name: Programme Support/Office of the DDG
+      total_budget: 3464000
+      type: subprogramme
+    name: Financial Governance
+    type: programme
+  - items:
+    - name: Risk and Compliance Audit Services( Cluster 3,4,5)
+      total_budget: 23375000
+      type: subprogramme
+    - name: Performance and Computer Audit Services
+      total_budget: 19815000
+      type: subprogramme
+    - name: Risk and Compliance Audit Services( Cluster 1,2)
+      total_budget: 16881000
+      type: subprogramme
+    - name: Programme Support/Office of the DDG
+      total_budget: 7302000
+      type: subprogramme
+    - name: Audit Centre of Excellence
+      total_budget: 6383000
+      type: subprogramme
+    name: Gauteng Audit Services
+    type: programme
+  - items:
+    - name: Muncipal Financial Assets and Liabilities
+      total_budget: 5440000
+      type: subprogramme
+    - name: Municipal Governace and Institutional Management
+      total_budget: 5440000
+      type: subprogramme
+    - name: Municipal Supply Chain and Asset Management
+      total_budget: 5440000
+      type: subprogramme
+    - name: Municipal Accounting and Reporting
+      total_budget: 5439000
+      type: subprogramme
+    - name: Municipal Budget
+      total_budget: 5439000
+      type: subprogramme
+    - name: Programme Support/Office of the DDG
+      total_budget: 2899000
+      type: subprogramme
+    name: Municipal Financial Governance
+    type: programme
+  - items:
+    - name: SCM Client Support
+      total_budget: 29120000
+      type: subprogramme
+    - name: Transversal Contract Management
+      total_budget: 16642000
+      type: subprogramme
+    - name: Programme Support/Office of the DDG
+      total_budget: 11490000
+      type: subprogramme
+    - name: Procurement Services
+      total_budget: 8767000
+      type: subprogramme
+    - name: Strategic Procurement
+      total_budget: 7373000
+      type: subprogramme
+    - name: SCM Policy, Norms and Standards
+      total_budget: 7000000
+      type: subprogramme
+    - name: Governance, Compliance, Monitoring and Evaluation
+      total_budget: 3200000
+      type: subprogramme
+    - name: Movable Asset Management
+      total_budget: 3000000
+      type: subprogramme
+    name: Provincial Supply Chain and Movable Asset Management
+    type: programme
+  - items:
+    - name: Programme Support/Office of the DDG
+      total_budget: 102810000
+      type: subprogramme
+    - name: Budget Management
+      total_budget: 22127000
+      type: subprogramme
+    - name: Financial Asset and Liabilities Management
+      total_budget: 21846000
+      type: subprogramme
+    - name: Public Finance
+      total_budget: 17646000
+      type: subprogramme
+    - name: Economic and Fiscal Policy Oversight
+      total_budget: 11193000
+      type: subprogramme
+    - name: Infrastructure Management
+      total_budget: 8159000
+      type: subprogramme
+    name: Sustainable Fiscal  Resource Management
+    type: programme
 title: Gauteng Provincial Treasury budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 14 : Gauteng Provincial Treasury':

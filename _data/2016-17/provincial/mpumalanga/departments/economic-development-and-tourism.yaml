@@ -335,7 +335,96 @@ slug: economic-development-and-tourism
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Financial Management
+      total_budget: 36306000
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 29400000
+      type: subprogramme
+    - name: Office of MEC
+      total_budget: 7487000
+      type: subprogramme
+    - name: Senior Management (HOD)
+      total_budget: 6409000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Regulation Services
+      total_budget: 71690000
+      type: subprogramme
+    - name: Consumer Protection
+      total_budget: 12002000
+      type: subprogramme
+    - name: 'CD: Office Support'
+      total_budget: 1819000
+      type: subprogramme
+    name: Business Regulation and Governance
+    type: programme
+  - items:
+    - name: Economic Analysis
+      total_budget: 4763000
+      type: subprogramme
+    - name: Knowledge Management
+      total_budget: 2894000
+      type: subprogramme
+    - name: Economic Policy and Planning
+      total_budget: 2398000
+      type: subprogramme
+    - name: Monitoring and Evaluation
+      total_budget: 1925000
+      type: subprogramme
+    - name: 'Cd: Office Support'
+      total_budget: 1495000
+      type: subprogramme
+    - name: Research and Development
+      total_budget: 708000
+      type: subprogramme
+    name: Economic Planning
+    type: programme
+  - items:
+    - name: Enterprise Development
+      total_budget: 400029000
+      type: subprogramme
+    - name: Regional Directors
+      total_budget: 29868000
+      type: subprogramme
+    - name: Local Economic Development
+      total_budget: 5424000
+      type: subprogramme
+    - name: Economic Empowerment
+      total_budget: 4268000
+      type: subprogramme
+    - name: CD:Office Support
+      total_budget: 1489000
+      type: subprogramme
+    name: Integrated Economic Development
+    type: programme
+  - items:
+    - name: Tourism
+      total_budget: 349210000
+      type: subprogramme
+    name: Tourism
+    type: programme
+  - items:
+    - name: Sector Development
+      total_budget: 13284000
+      type: subprogramme
+    - name: Strategic Initiatives
+      total_budget: 5182000
+      type: subprogramme
+    - name: Trade and Investment Promotion
+      total_budget: 4410000
+      type: subprogramme
+    - name: CD:Office support
+      total_budget: 1682000
+      type: subprogramme
+    name: Trade and Sector Development
+    type: programme
 title: Economic Development And Tourism budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 06 : Economic Development And Tourism':

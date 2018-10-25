@@ -314,7 +314,39 @@ slug: public-works
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
+  programmes:
+  - items:
+    - name: Management
+      total_budget: 337488000
+      type: subprogramme
+    - name: Minister Support
+      total_budget: 13249000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Personnel and Admin Related
+      total_budget: 624534000
+      type: subprogramme
+    - name: Hiring
+      total_budget: 5247000
+      type: subprogramme
+    - name: Acquisition of Land, Control and Disposal
+      total_budget: 308000
+      type: subprogramme
+    name: Property Management
+    type: programme
+  - items:
+    - name: Personnel and Admin Related
+      total_budget: 331214000
+      type: subprogramme
+    - name: Buildings and  Structures
+      total_budget: 77626000
+      type: subprogramme
+    name: Provision of Buildings, Structures and Equipment
+    type: programme
 title: Public Works budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 14 : Public Works':

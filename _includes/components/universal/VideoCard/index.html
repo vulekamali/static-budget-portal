@@ -1,5 +1,13 @@
-<div class="VideoCard {{ include.utils }}" data-component="VideoCard">
-  <div class="VideoCard-preview" data-thumbnail>
+{% if include.fullpage == "true" %}
+  {% assign video_card_root = " VideoCard--fullPage" %}
+  {% assign video_card_preview = " VideoCard-preview--fullPage" %}
+{% else %}
+  {% assign video_card_root = "" %}
+  {% assign video_card_preview = "" %}
+{% endif %}
+
+<div class="VideoCard{{ video_card_root }} {{ include.utils }}" data-component="VideoCard">
+  <div class="VideoCard-preview{{ video_card_preview }}" data-thumbnail>
     <div class="VideoCard-icon">
       {% include components/universal/Icon/index.html type="play" size="large" %}
     </div>

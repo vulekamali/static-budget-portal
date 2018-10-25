@@ -248,7 +248,63 @@ slug: provincial-legislature
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
+  programmes:
+  - items:
+    - name: Security and Records Management
+      total_budget: 41634000
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 22031000
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 11481000
+      type: subprogramme
+    - name: Office of the Speaker
+      total_budget: 7300000
+      type: subprogramme
+    - name: Office of the Secretary
+      total_budget: 5500000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Political Party Support
+      total_budget: 35253000
+      type: subprogramme
+    - name: Members Facilities
+      total_budget: 5589000
+      type: subprogramme
+    name: Facilities for Members and Political Parties
+    type: programme
+  - items:
+    - name: Committees and Research Services
+      total_budget: 13444000
+      type: subprogramme
+    - name: Public Participation and Awareness
+      total_budget: 10682000
+      type: subprogramme
+    - name: Hansard and Language Services
+      total_budget: 4616000
+      type: subprogramme
+    - name: Proceedings and NCOP
+      total_budget: 3788000
+      type: subprogramme
+    - name: Legal Services
+      total_budget: 3762000
+      type: subprogramme
+    - name: 'Deputy Secretary: Parliamentary Services'
+      total_budget: 3168000
+      type: subprogramme
+    - name: Standing Committees
+      total_budget: 2816000
+      type: subprogramme
+    - name: Portfolio Committees
+      total_budget: 533000
+      type: subprogramme
+    name: Parliamentary Services
+    type: programme
 title: Provincial Legislature budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 02 : Provincial Legislature':

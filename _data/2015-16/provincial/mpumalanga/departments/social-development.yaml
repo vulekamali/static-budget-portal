@@ -365,7 +365,99 @@ slug: social-development
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
+  programmes:
+  - items:
+    - name: District Management
+      total_budget: 128832000
+      type: subprogramme
+    - name: Corporate Management services
+      total_budget: 124446000
+      type: subprogramme
+    - name: Office Of the MEC
+      total_budget: 6090000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: ECD and partial care
+      total_budget: 204088000
+      type: subprogramme
+    - name: Community-Based care services to children
+      total_budget: 67629000
+      type: subprogramme
+    - name: Management and Support
+      total_budget: 60427000
+      type: subprogramme
+    - name: Child care and protection services
+      total_budget: 53746000
+      type: subprogramme
+    - name: Child and youth care centres
+      total_budget: 51037000
+      type: subprogramme
+    - name: Care and support services to families
+      total_budget: 18605000
+      type: subprogramme
+    name: Children and Families
+    type: programme
+  - items:
+    - name: Management and support
+      total_budget: 65053000
+      type: subprogramme
+    - name: Youth development
+      total_budget: 32784000
+      type: subprogramme
+    - name: Poverty Alleviation and Sustainable Livelihoods
+      total_budget: 26884000
+      type: subprogramme
+    - name: Population Policy Promotion
+      total_budget: 11820000
+      type: subprogramme
+    - name: Institutional capacity building and support for NPOs
+      total_budget: 5193000
+      type: subprogramme
+    - name: Community Based Research and Planning
+      total_budget: 253000
+      type: subprogramme
+    - name: Community Mobilisation
+      total_budget: 132000
+      type: subprogramme
+    name: Development and Research
+    type: programme
+  - items:
+    - name: Management and support
+      total_budget: 64125000
+      type: subprogramme
+    - name: Social Crime prevention and support
+      total_budget: 46067000
+      type: subprogramme
+    - name: Substance abuse, Prevention. Treatment and Rehabilation
+      total_budget: 31388000
+      type: subprogramme
+    - name: Victim empowerment programme
+      total_budget: 17729000
+      type: subprogramme
+    name: Restorative Services
+    type: programme
+  - items:
+    - name: Management and support
+      total_budget: 167949000
+      type: subprogramme
+    - name: Services to Older Persons
+      total_budget: 49175000
+      type: subprogramme
+    - name: Services to Persons with Disabiities
+      total_budget: 46681000
+      type: subprogramme
+    - name: HIV and AIDS
+      total_budget: 8322000
+      type: subprogramme
+    - name: Social Relief
+      total_budget: 4743000
+      type: subprogramme
+    name: Social Welfare Services
+    type: programme
 title: Social Development budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 12 : Social Development':

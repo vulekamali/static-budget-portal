@@ -284,7 +284,81 @@ slug: provincial-treasury
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Financial Management (Office of the CFO)
+      total_budget: 48565000
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 40940000
+      type: subprogramme
+    - name: Management Services
+      total_budget: 39829000
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 7874000
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 7123000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Asset Management
+      total_budget: 22391000
+      type: subprogramme
+    name: Asset and Liabilities Management
+    type: programme
+  - items:
+    - name: Programme Support
+      total_budget: 29577000
+      type: subprogramme
+    - name: Supporting  and Interlinked Financial Systems
+      total_budget: 22607000
+      type: subprogramme
+    - name: Provincial Internal Audit
+      total_budget: 15551000
+      type: subprogramme
+    - name: Accounting Services
+      total_budget: 13497000
+      type: subprogramme
+    - name: Norms & Standards
+      total_budget: 7649000
+      type: subprogramme
+    - name: Risk Management
+      total_budget: 3648000
+      type: subprogramme
+    name: Financial Governance
+    type: programme
+  - items:
+    - name: Programme Support
+      total_budget: 676814000
+      type: subprogramme
+    - name: Municipal Budget & Institutional Governance
+      total_budget: 20029000
+      type: subprogramme
+    - name: Municipal Accounting & Reporting
+      total_budget: 18831000
+      type: subprogramme
+    name: Municipal Financial Governance
+    type: programme
+  - items:
+    - name: Budget Management
+      total_budget: 47503000
+      type: subprogramme
+    - name: Fiscal Policy
+      total_budget: 6438000
+      type: subprogramme
+    - name: Economic Analysis
+      total_budget: 2632000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 2514000
+      type: subprogramme
+    name: Sustainable Resource Management
+    type: programme
 title: Provincial Treasury budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 12 : Provincial Treasury':

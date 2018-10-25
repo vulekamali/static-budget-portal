@@ -414,7 +414,120 @@ slug: education
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
+  programmes:
+  - items:
+    - name: Education Management
+      total_budget: 843031000
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 665826000
+      type: subprogramme
+    - name: Education Mgt Information System (EMIS)
+      total_budget: 50509000
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 50015000
+      type: subprogramme
+    - name: Human Resource Development
+      total_budget: 9587000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Grade R in Public Schools
+      total_budget: 606375000
+      type: subprogramme
+    - name: Pre-grade R Training
+      total_budget: 63096000
+      type: subprogramme
+    - name: Grade R in Early Childhood Development Centres
+      total_budget: 20511000
+      type: subprogramme
+    - name: Human Resource Development
+      total_budget: 5438000
+      type: subprogramme
+    name: Early Childhood Development
+    type: programme
+  - items:
+    - name: External Examinations
+      total_budget: 562603000
+      type: subprogramme
+    - name: Professional Services
+      total_budget: 528042000
+      type: subprogramme
+    - name: Payments to SETA
+      total_budget: 78139000
+      type: subprogramme
+    - name: Conditional Grants
+      total_budget: 50588000
+      type: subprogramme
+    name: Examination and Education Related services
+    type: programme
+  - items:
+    - name: Primary Level
+      total_budget: 47754000
+      type: subprogramme
+    - name: Secondary Level
+      total_budget: 30063000
+      type: subprogramme
+    name: Independent School Subsidies
+    type: programme
+  - items:
+    - name: Public Ordinary Schools
+      total_budget: 1531910000
+      type: subprogramme
+    - name: Early Childhood Development
+      total_budget: 471329000
+      type: subprogramme
+    - name: Special Schools
+      total_budget: 404947000
+      type: subprogramme
+    - name: Administration
+      total_budget: 121049000
+      type: subprogramme
+    name: Infrastructure Development
+    type: programme
+  - items:
+    - name: Public Primary Level
+      total_budget: 20359665000
+      type: subprogramme
+    - name: Public Secondary Level
+      total_budget: 13141770000
+      type: subprogramme
+    - name: National School Nutrition Programme grant
+      total_budget: 1287034000
+      type: subprogramme
+    - name: Human Resource Development
+      total_budget: 166659000
+      type: subprogramme
+    - name: Maths, Science and Technology grant
+      total_budget: 59998000
+      type: subprogramme
+    - name: School Sport, Culture and Media Services
+      total_budget: 49574000
+      type: subprogramme
+    - name: Social Sector EPWP Incentive Grant for Provinces grant
+      total_budget: 3000000
+      type: subprogramme
+    - name: EPWP Incentive Grant for Provinces grant
+      total_budget: 2644000
+      type: subprogramme
+    name: Public Ordinary School Education
+    type: programme
+  - items:
+    - name: Schools
+      total_budget: 911638000
+      type: subprogramme
+    - name: OSD for Therapists  conditional grant
+      total_budget: 13079000
+      type: subprogramme
+    - name: Human Resource Development
+      total_budget: 6482000
+      type: subprogramme
+    name: Public Special School Education
+    type: programme
 title: Education budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 05 : Education':

@@ -333,7 +333,96 @@ slug: provincial-treasury
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 25066000
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 22514000
+      type: subprogramme
+    - name: Security and Records Management
+      total_budget: 18495000
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 11292000
+      type: subprogramme
+    - name: Management Services
+      total_budget: 4767000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Support and Interlinked Financial Systems
+      total_budget: 18780000
+      type: subprogramme
+    - name: Asset Management
+      total_budget: 9526000
+      type: subprogramme
+    - name: Public Private Partnership
+      total_budget: 6106000
+      type: subprogramme
+    - name: Banking and Cashflow Management
+      total_budget: 5840000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 1845000
+      type: subprogramme
+    name: Assets and Liabilities Management
+    type: programme
+  - items:
+    - name: Accounting Services
+      total_budget: 8769000
+      type: subprogramme
+    - name: Norms and Standards
+      total_budget: 6335000
+      type: subprogramme
+    - name: Risk Management
+      total_budget: 6090000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 1894000
+      type: subprogramme
+    name: Financial Governance
+    type: programme
+  - items:
+    - name: Internal Audit (Health)
+      total_budget: 6508000
+      type: subprogramme
+    - name: Internal Audit (Education)
+      total_budget: 6395000
+      type: subprogramme
+    - name: Internal Audit( DPW)
+      total_budget: 6311000
+      type: subprogramme
+    - name: Internal Audit (Sector Departments)
+      total_budget: 6261000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 4977000
+      type: subprogramme
+    name: Provincial Internal Audit
+    type: programme
+  - items:
+    - name: Municipal Finance
+      total_budget: 21091000
+      type: subprogramme
+    - name: Budget Management
+      total_budget: 9717000
+      type: subprogramme
+    - name: Fiscal Policy
+      total_budget: 6054000
+      type: subprogramme
+    - name: Economic Analysis
+      total_budget: 5565000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 1836000
+      type: subprogramme
+    name: Sustainable Resource
+    type: programme
 title: Provincial Treasury budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 08 : Provincial Treasury':

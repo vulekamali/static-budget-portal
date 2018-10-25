@@ -453,7 +453,114 @@ slug: health
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Management
+      total_budget: 170235000
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 10133000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Provincial Tertiary Hospital Services
+      total_budget: 881574000
+      type: subprogramme
+    name: Central Hospital Services
+    type: programme
+  - items:
+    - name: District Hospitals
+      total_budget: 504790000
+      type: subprogramme
+    - name: HIV/AIDS
+      total_budget: 456570000
+      type: subprogramme
+    - name: Community Health Clinics
+      total_budget: 402741000
+      type: subprogramme
+    - name: Community Health Centres
+      total_budget: 263918000
+      type: subprogramme
+    - name: District Management
+      total_budget: 135623000
+      type: subprogramme
+    - name: Other Community Services
+      total_budget: 65244000
+      type: subprogramme
+    - name: Nutrition
+      total_budget: 4430000
+      type: subprogramme
+    name: District Health Services
+    type: programme
+  - items:
+    - name: Emergency Transport
+      total_budget: 278289000
+      type: subprogramme
+    - name: Planned Patient Transport
+      total_budget: 2639000
+      type: subprogramme
+    name: Emergency Medical Services
+    type: programme
+  - items:
+    - name: Forensic Services
+      total_budget: 33584000
+      type: subprogramme
+    - name: Medicine Trading Account
+      total_budget: 30388000
+      type: subprogramme
+    - name: Engineering
+      total_budget: 18113000
+      type: subprogramme
+    - name: Orthotic and Prostetic Services
+      total_budget: 9350000
+      type: subprogramme
+    - name: Laundry Services
+      total_budget: 7127000
+      type: subprogramme
+    name: Health Care Support Services
+    type: programme
+  - items:
+    - name: District Hospital Services
+      total_budget: 351404000
+      type: subprogramme
+    - name: Provincial Hospital Services
+      total_budget: 122863000
+      type: subprogramme
+    name: Health Facilities Management
+    type: programme
+  - items:
+    - name: Nurse Training College
+      total_budget: 58055000
+      type: subprogramme
+    - name: Training  Other
+      total_budget: 37542000
+      type: subprogramme
+    - name: Bursaries
+      total_budget: 24942000
+      type: subprogramme
+    - name: EMS Training College
+      total_budget: 4256000
+      type: subprogramme
+    - name: Primary Health Care Training
+      total_budget: 1505000
+      type: subprogramme
+    name: Health Sciences and Training
+    type: programme
+  - items:
+    - name: General (Regional) Hospitals
+      total_budget: 255042000
+      type: subprogramme
+    - name: Psychiatric/Mental Hospitals
+      total_budget: 50215000
+      type: subprogramme
+    - name: Tuberculosis Hospitals
+      total_budget: 16933000
+      type: subprogramme
+    name: Provincial Hospital Services
+    type: programme
 title: Health budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 10 : Health':

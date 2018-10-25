@@ -257,7 +257,81 @@ slug: gauteng-provincial-legislature
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
+  programmes:
+  - items:
+    - name: ED Core Business
+      total_budget: 147348000
+      type: subprogramme
+    - name: Communication
+      total_budget: 46944000
+      type: subprogramme
+    - name: Parliamentary Business
+      total_budget: 34388000
+      type: subprogramme
+    - name: Information and Knowledge Management
+      total_budget: 14915000
+      type: subprogramme
+    name: Core Business
+    type: programme
+  - items:
+    - name: Members Affairs
+      total_budget: 127854000
+      type: subprogramme
+    - name: ED Corporate Support Services
+      total_budget: 97917000
+      type: subprogramme
+    - name: Operational Support Services
+      total_budget: 38587000
+      type: subprogramme
+    - name: Institutional Support Services
+      total_budget: 21156000
+      type: subprogramme
+    - name: IT and Technology
+      total_budget: 14666000
+      type: subprogramme
+    name: Corporate Support Services
+    type: programme
+  - items:
+    - name: Office of the Executive Director
+      total_budget: 22197000
+      type: subprogramme
+    - name: Oversight and Liaison
+      total_budget: 17583000
+      type: subprogramme
+    - name: Inter-Legislature Relations
+      total_budget: 8415000
+      type: subprogramme
+    - name: Adminstrative Operations
+      total_budget: 3506000
+      type: subprogramme
+    name: Leadership and Governance
+    type: programme
+  - items:
+    - name: Chief Financial Officer
+      total_budget: 44025000
+      type: subprogramme
+    - name: Supply Chain Management
+      total_budget: 10361000
+      type: subprogramme
+    - name: Audit, Risk and Governance
+      total_budget: 1449000
+      type: subprogramme
+    - name: Finance
+      total_budget: 214000
+      type: subprogramme
+    name: Office of the CFO
+    type: programme
+  - items:
+    - name: Office of the Secretary
+      total_budget: 23159000
+      type: subprogramme
+    - name: Office of the Integrity Commisioner
+      total_budget: 214000
+      type: subprogramme
+    name: Office of the Secretary
+    type: programme
 title: Gauteng Provincial Legislature budget 2017-18  - vulekamali
 treasury_datasets:
   'EPRE for Vote 02 : Gauteng Provincial Legislature':

@@ -6,7 +6,7 @@ layout: page-shell
   <main class="Page-contentInner Page-contentInner--floatingLinks">
     <h1 class="Page-mainHeading">Videos</h1>
     {% for video in site.data.videos.data %}
-      {% include components/universal/VideoCard/index.html video=video utils="u-marginBottom15" %}
+      {% include components/universal/VideoCard/index.html fullpage="true" video=video utils="u-marginBottom15" %}
     {% endfor %}
   </main>
 </div>

@@ -261,7 +261,42 @@ slug: free-state-legislature
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
+  programmes:
+  - items:
+    - name: Financial Management
+      total_budget: 41526000
+      type: subprogramme
+    - name: Office of the Secretary
+      total_budget: 33008000
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 23425000
+      type: subprogramme
+    - name: Office of the Speaker
+      total_budget: 16565000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Political Support Services
+      total_budget: 52251000
+      type: subprogramme
+    - name: Facilities and Benefits to Members
+      total_budget: 3412000
+      type: subprogramme
+    name: Facilities For Members And Political Parties
+    type: programme
+  - items:
+    - name: Procedural Services
+      total_budget: 33868000
+      type: subprogramme
+    - name: Legal Services
+      total_budget: 4339000
+      type: subprogramme
+    name: Parliamentary Services
+    type: programme
 title: Free State Legislature budget 2017-18  - vulekamali
 treasury_datasets:
   'EPRE for Vote 02 : Free State Legislature':

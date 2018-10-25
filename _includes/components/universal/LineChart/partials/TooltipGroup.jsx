@@ -66,7 +66,7 @@ export default function TooltipGroup({ totalGroupSpace, groupSpaceArray, rank, l
               xPosition={startPoint + centeringSpace + (index * (barWidth + lineGutter))}
               yPosition={(padding[0] + svgHeight + barWidth) - ((barWidth * 2) + displayAmount + popUpOffset + popupHeight)}
               {...{ amount, totalGroupSpace }}
-              colour={colours[index]}
+              colour="#ad3c64"
             />
           );
         })

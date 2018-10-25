@@ -2,6 +2,9 @@ import 'classlist-polyfill';
 import 'whatwg-fetch';
 import 'preact/devtools';
 
+import 'jquery';
+import 'bootstrap/js/dist/scrollspy.js';
+
 import './styles.scss';
 
 import './utilities/js/modules/loadStringQueries.js';
@@ -28,6 +31,7 @@ import './components/department-budgets/ExpenditureChart/scripts.jsx';
 import './components/department-budgets/DeptSearch/scripts.jsx';
 import './components/department-budgets/IntroSection/scripts.jsx';
 import './components/department-budgets/SmallMultiple/scripts.js';
+import './components/department-budgets/ArrowButtons/scripts.js';
 
 import './components/contributed-data/CsoMeta/scripts.js';
 

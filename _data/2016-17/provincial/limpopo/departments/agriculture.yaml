@@ -431,7 +431,90 @@ slug: agriculture
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 164072000
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 156808000
+      type: subprogramme
+    - name: Senior Management
+      total_budget: 25278000
+      type: subprogramme
+    - name: Communication and Liaison Services
+      total_budget: 8656000
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 8209000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Agri-Business Support and Development
+      total_budget: 18001000
+      type: subprogramme
+    - name: Macro economics Support
+      total_budget: 6442000
+      type: subprogramme
+    name: Agriculural Economics Services
+    type: programme
+  - items:
+    - name: Food Security
+      total_budget: 780302000
+      type: subprogramme
+    - name: Farmer Settlement and Development
+      total_budget: 275482000
+      type: subprogramme
+    - name: Extension and Advisory Services
+      total_budget: 4246000
+      type: subprogramme
+    name: Farmer Support and Development
+    type: programme
+  - items:
+    - name: Research Services
+      total_budget: 63464000
+      type: subprogramme
+    name: Research and Technology Development Services
+    type: programme
+  - items:
+    - name: Development Planning
+      total_budget: 6437000
+      type: subprogramme
+    name: Rural development Co-ordination
+    type: programme
+  - items:
+    - name: Further Education  And Training
+      total_budget: 114907000
+      type: subprogramme
+    name: Structured Agricultural Education and Training
+    type: programme
+  - items:
+    - name: Land Care
+      total_budget: 47880000
+      type: subprogramme
+    - name: Engineering Services
+      total_budget: 27269000
+      type: subprogramme
+    - name: Disaster Risk Management
+      total_budget: 16677000
+      type: subprogramme
+    name: Sustainable Resource Management
+    type: programme
+  - items:
+    - name: Animal Health
+      total_budget: 31146000
+      type: subprogramme
+    - name: Veterinary Laboratory Services
+      total_budget: 18388000
+      type: subprogramme
+    - name: Veterinary Public Health
+      total_budget: 9248000
+      type: subprogramme
+    name: Veterinary Services
+    type: programme
 title: Agriculture budget 2016-17  - vulekamali
 treasury_datasets:
   'EPRE for Vote 04 : Agriculture':

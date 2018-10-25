@@ -10,6 +10,7 @@ export default function Markup(props) {
     items,
     guides,
     hover,
+    purple,
   } = props;
 
   const { getNode } = props;
@@ -19,7 +20,7 @@ export default function Markup(props) {
     return (
       <BarChart
         scale={1}
-        {...{ getNode, items, width, guides, hover }}
+        {...{ getNode, items, width, guides, hover, purple }}
       />
     );
   }

@@ -7,6 +7,7 @@ layout: page-shell
   {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.data_key] %}
 {% endif %}
 
+
 {% if page_data.government.slug == 'south-africa' %}
   {% assign department_location = 'National' %}
 {% else %}
@@ -14,12 +15,42 @@ layout: page-shell
 {% endif %}
 
 
+{% if page_data.government.slug == 'south-africa' %}
+  {% assign source_type = 'Estimates of National Expenditure' %}
+{% else %}
+  {% assign source_type = 'Estimates of Provincial Expenditure' %}
+{% endif %}
+
+
+{%
+  include components/department-budgets/ArrowButtons/index.html
+  fixed="true"
+  link_1="#section-plan"
+  link_3="#section-review"
+%}
+
+
 <div class="Page-content Page-content--dynamicYears">
-  <div class="Page-contentInner is-full">
-    <div class="u-marginBottom25">
-      <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0">{{ page_data.name }}</h1>
-      <span class="Page-subHeading u-textAlignCenter"> {{ department_location }} Department Budget for {{ page.financial_year }}</span>
-    </div>
+  <div class="Page-contentInner Page-contentInner--department is-full">
+
+    <nav class="SectionIndicator" data-sticky-arrows>
+      <ul class="SectionIndicator-list nav">
+        <li class="SectionIndicator-item nav-item">
+          <a href="#section-plan" data-scroll-smooth="#section-plan" class="SectionIndicator-circle SectionIndicator-circle--green nav-link"></a>
+        </li>
+
+        <li>
+          <span class="SectionIndicator-circle SectionIndicator-circle--orange"></span>
+        </li>
+
+        <li class="nav-item">
+          <a href="#section-review" data-scroll-smooth="#section-review" class="SectionIndicator-circle SectionIndicator-circle--purple nav-link"></a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0 u-marginLeft0">{{ page_data.name }}</h1>
+    <span class="Page-subHeading u-textAlignCenter"> {{ department_location }} Department Budget for {{ page.financial_year }}</span>
 
     {%
       include components/department-budgets/IntroSection/index.html
@@ -27,6 +58,21 @@ layout: page-shell
       datasets=page_data.treasury_datasets
       location=department_location
     %}
+
+    <div class="Page-subHeading u-marginTop15 u-supportsFlex u-textAlignCenter u-marginBottom25">The Budget Cycle</div>
+    <div>
+      {%
+        include components/department-budgets/ArrowButtons/index.html
+        link_1="#section-plan"
+        link_3="#section-review"
+      %}
+    </div>
+
+    <div class="u-marginTop100">
+      <div class="DeptSectionHead DeptSectionHead--green" id="section-plan">
+        Plan
+      </div>
+    </div>
 
     <div class="u-marginTop20">
       <div
@@ -36,7 +82,7 @@ layout: page-shell
         data-year="{{ page.financial_year }}"
         data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
         data-dept="{{ page_data.name }}"
-        data-location="{{ department_location }}"
+        data-sourceType="{{ source_type }}"
         data-dataset="{{ page_data.programmes.dataset_detail_page }}"
       >
       </div>
@@ -44,12 +90,9 @@ layout: page-shell
 
     {% for item in page_data.treasury_datasets %}
       {% assign modified_formats = item[1].formats | sort: 'format' %}
-      {% assign pdf_link = modified_formats[0].url %}
-      {% assign excel_link = modified_formats[1].url %}
+      {% assign pdf = modified_formats[0].url %}
+      {% assign excel = modified_formats[1].url %}
     {% endfor %}
-
-    {% assign pdf_text = "Learn more about these programmes in the " | append: short_estimate | append: " (PDF)" %}
-    {% assign excel_text = "Learn more about these programmes in the " | append: short_estimate | append: " (Excel)" %}
 
     {% if page_data.subprogramme_by_programme %}
       <div class="u-marginTop20">
@@ -59,11 +102,11 @@ layout: page-shell
           description="Each chart shows the budgeted spending by each sub-programme of that programme."
           charts_list=page_data.subprogramme_by_programme.programmes
 
-          detail_link=page_data.subprogramme_by_programme.dataset_detail_page
-          pdf_text=pdf_text
-          pdf_link=pdf_link
-          excel_text=excel_text
-          excel_link=excel_link
+          source_type=source_type
+          year=page.financial_year
+          dataset=page_data.subprogramme_by_programme.dataset_detail_page
+          pdf=pdf
+          excel=excel
         %}
       </div>
     {% endif %}
@@ -76,11 +119,11 @@ layout: page-shell
           description="Each chart shows the budgeted spending by economic classification under that Programme."
           charts_list=page_data.economic_classification_by_programme.programmes
 
-          detail_link=page_data.economic_classification_by_programme.dataset_detail_page
-          pdf_text=pdf_text
-          pdf_link=pdf_link
-          excel_text=excel_text
-          excel_link=excel_link
+          source_type=source_type
+          year=page.financial_year
+          dataset=page_data.subprogramme_by_programme.dataset_detail_page
+          pdf=pdf
+          excel=excel
         %}
       {% endif %}
     </div>
@@ -93,14 +136,20 @@ layout: page-shell
           description="Each chart shows the budgeted spending of each Programme under that Economic Classification."
           charts_list=page_data.programme_by_economic_classification.econ_classes
 
-          detail_link=page_data.programme_by_economic_classification.dataset_detail_page
-          pdf_text=pdf_text
-          pdf_link=pdf_link
-          excel_text=excel_text
-          excel_link=excel_link
+          source_type=source_type
+          year=page.financial_year
+          dataset=page_data.subprogramme_by_programme.dataset_detail_page
+          pdf=pdf
+          excel=excel
         %}
       </div>
     {% endif %}
+
+    <div class="u-marginTop100">
+      <div class="DeptSectionHead DeptSectionHead--purple" id="section-review">
+        Review
+      </div>
+    </div>
 
     <div class="u-marginTop20">
       <div
@@ -109,11 +158,11 @@ layout: page-shell
         data-adjusted="{{ page_data.expenditure_over_time.expenditure.real | jsonify | escape }}"
         data-notAdjusted="{{ page_data.expenditure_over_time.expenditure.nominal | jsonify | escape }}"
         data-year="{{ page.financial_year }}"
-        data-location="{{ department_location }}"
         data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
         data-department="{{ page_data.name }}"
         data-cpi="{{ site.data.global_values.cpi_dataset_url }}"
-        data-dataset="{{ page_data.expenditure_over_time.dataset_detail_page }}"
+        data-sourceType="{{ source_type }}"
+        data-dataset="{{ page_data.programmes.dataset_detail_page }}"
       >
       </div>
     </div>

@@ -281,7 +281,84 @@ slug: finance
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
+  programmes:
+  - items:
+    - name: Financial Management
+      total_budget: 38185000
+      type: subprogramme
+    - name: Management Services
+      total_budget: 32356000
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 4147000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: InformationTechnology
+      total_budget: 72286000
+      type: subprogramme
+    - name: Provincial Supply Chain Management
+      total_budget: 16769000
+      type: subprogramme
+    - name: Interlinked Financial Systems
+      total_budget: 11470000
+      type: subprogramme
+    - name: Public Sector Liabilities
+      total_budget: 4985000
+      type: subprogramme
+    - name: Physical Assets Management
+      total_budget: 4715000
+      type: subprogramme
+    - name: Financial Assets Management
+      total_budget: 3189000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 1662000
+      type: subprogramme
+    name: Asset And Liabilities Management
+    type: programme
+  - items:
+    - name: Norms And Standards
+      total_budget: 14731000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 10872000
+      type: subprogramme
+    - name: Accounting Services
+      total_budget: 5026000
+      type: subprogramme
+    - name: Provincial Internal Audit
+      total_budget: 2170000
+      type: subprogramme
+    - name: Risk Management
+      total_budget: 1913000
+      type: subprogramme
+    name: Financial Governance
+    type: programme
+  - items:
+    - name: Municipal Finance
+      total_budget: 26895000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 13772000
+      type: subprogramme
+    - name: Budget And Expenditure Management
+      total_budget: 10644000
+      type: subprogramme
+    - name: Provincial Administration Fiscal Discilpine
+      total_budget: 4405000
+      type: subprogramme
+    - name: Economic Analysis
+      total_budget: 3714000
+      type: subprogramme
+    - name: Infrastructure Co-Ordination
+      total_budget: 3644000
+      type: subprogramme
+    name: Sustainable Resources Management
+    type: programme
 title: Finance budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 03 : Finance':

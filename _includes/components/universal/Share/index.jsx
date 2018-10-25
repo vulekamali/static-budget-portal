@@ -19,9 +19,9 @@ export default class ShareContainer extends Component {
   }
 
   render() {
-    const { anchor } = this.props;
+    const { anchor, purple } = this.props;
     const { selected } = this.state;
     const { updateShare } = this.events;
-    return <ShareMarkup {...{ selected, anchor, updateShare }} />;
+    return <ShareMarkup {...{ selected, anchor, updateShare, purple }} />;
   }
 }

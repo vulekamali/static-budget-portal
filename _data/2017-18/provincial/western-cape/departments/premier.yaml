@@ -329,7 +329,102 @@ slug: premier
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
+  programmes:
+  - items:
+    - name: GITO Management Services
+      total_budget: 466589000
+      type: subprogramme
+    - name: Connected Government and Unified Communications
+      total_budget: 328406000
+      type: subprogramme
+    - name: Strategic ICT Services
+      total_budget: 91013000
+      type: subprogramme
+    - name: Transversal Applications Development and Support
+      total_budget: 39887000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 8334000
+      type: subprogramme
+    name: Centre for E-Innovation (Corporate Services Centre)
+    type: programme
+  - items:
+    - name: Internal Audit
+      total_budget: 44158000
+      type: subprogramme
+    - name: Legal Services
+      total_budget: 41328000
+      type: subprogramme
+    - name: Provincial Forensic Services
+      total_budget: 16301000
+      type: subprogramme
+    - name: Corporate Communication
+      total_budget: 14446000
+      type: subprogramme
+    - name: Enterprise Risk Management
+      total_budget: 8048000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 2609000
+      type: subprogramme
+    name: Corporate Assurance (Corporate Services Centre)
+    type: programme
+  - items:
+    - name: Financial Management
+      total_budget: 39951000
+      type: subprogramme
+    - name: Office of the Director-General
+      total_budget: 26588000
+      type: subprogramme
+    - name: Office of the Premier
+      total_budget: 17481000
+      type: subprogramme
+    - name: Executive Council Support
+      total_budget: 9124000
+      type: subprogramme
+    - name: Departmental Strategy
+      total_budget: 5582000
+      type: subprogramme
+    - name: Strategic Communications
+      total_budget: 4517000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 2133000
+      type: subprogramme
+    name: Executive Support (Administration)
+    type: programme
+  - items:
+    - name: People Management Practices
+      total_budget: 98891000
+      type: subprogramme
+    - name: Organisation Development
+      total_budget: 80769000
+      type: subprogramme
+    - name: People Training and Empowerment
+      total_budget: 31678000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 3728000
+      type: subprogramme
+    name: People Management (Corporate Services Centre)
+    type: programme
+  - items:
+    - name: Strategic Management Information
+      total_budget: 20973000
+      type: subprogramme
+    - name: Strategic Programmes
+      total_budget: 18923000
+      type: subprogramme
+    - name: Policy and Strategy
+      total_budget: 16038000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 3254000
+      type: subprogramme
+    name: Provincial Strategic Management
+    type: programme
 title: Premier budget 2017-18  - vulekamali
 treasury_datasets:
   'EPRE for Vote 01 : Premier':

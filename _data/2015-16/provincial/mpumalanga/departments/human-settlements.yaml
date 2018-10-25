@@ -245,7 +245,57 @@ slug: human-settlements
 sphere:
   name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 114257000
+      type: subprogramme
+    - name: Office of the MEC
+      total_budget: 6739000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Administration
+      total_budget: 3819000
+      type: subprogramme
+    name: Housing Asset Management
+    type: programme
+  - items:
+    - name: Incremental Intervention
+      total_budget: 953654000
+      type: subprogramme
+    - name: Administration
+      total_budget: 247915000
+      type: subprogramme
+    - name: Financial Intervention
+      total_budget: 145157000
+      type: subprogramme
+    - name: Rural Intervention
+      total_budget: 99851000
+      type: subprogramme
+    - name: Social and Rental Intervention
+      total_budget: 66500000
+      type: subprogramme
+    name: Housing Development
+    type: programme
+  - items:
+    - name: Administration
+      total_budget: 33627000
+      type: subprogramme
+    - name: Research
+      total_budget: 2574000
+      type: subprogramme
+    - name: Planning
+      total_budget: 1821000
+      type: subprogramme
+    - name: Policy
+      total_budget: 1563000
+      type: subprogramme
+    name: Housing Needs, Planning and Research
+    type: programme
 title: Human Settlements budget 2015-16  - vulekamali
 treasury_datasets:
   'EPRE for Vote 13 : Human Settlements':

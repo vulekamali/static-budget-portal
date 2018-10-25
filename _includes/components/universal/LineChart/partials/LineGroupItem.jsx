@@ -66,7 +66,7 @@ export default function LineGroupItem({ totalGroupSpace, groupSpaceArray, rank, 
               x2={startPoint + centeringSpace + (index * (barWidth + lineGutter))}
               y2={(padding[0] + svgHeight + barWidth) - (barWidth / 2) - displayAmount}
               className="Graph-line"
-              stroke={colours[index]}
+              stroke="#ad3c64"
             />
           );
         })
