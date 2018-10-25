@@ -133,7 +133,7 @@ layout: page-shell
                 {% include components/universal/Icon/index.html type="download" %}
               </span>
               <span class="LinksList-title">
-                View {{ source_type_revenue_short }} chapter for {{ chapter_name }} (PDF).
+                View the {{ source_type_revenue_short }} chapter for {{ chapter_name }} (PDF).
               </span>
             </a>
           </div>
@@ -146,7 +146,7 @@ layout: page-shell
                 {% include components/universal/Icon/index.html type="download" %}
                 </span>
               <span class="LinksList-title">
-                View tables in {{ source_type_revenue_short }} chapter (Excel).
+                View tables in the {{ source_type_revenue_short }} chapter (Excel).
               </span>
             </a>
           </div>
@@ -235,12 +235,12 @@ layout: page-shell
       {% if pdf_link_adjusted or excel_link_adjusted %}
         {% if pdf_link_adjusted %}
           <div>
-            <a href="{{ pdf_link }}" class="LinksList-item" target="_blank" rel="noopener noreferrer">
+            <a href="{{ pdf_link_adjusted }}" class="LinksList-item" target="_blank" rel="noopener noreferrer">
               <span class="LinksList-icon">
                 {% include components/universal/Icon/index.html type="download" %}
                 </span>
               <span class="LinksList-title">
-                View the {{ source_type_revenue_short }}.
+                View the {{ source_type_adjusted_short }} chapter for {{ chapter_name }} (PDF).
               </span>
             </a>
           </div>
@@ -248,12 +248,12 @@ layout: page-shell
 
         {% if excel_link_adjusted %}
           <div>
-            <a href="{{ excel_link }}" class="LinksList-item" target="_blank" rel="noopener noreferrer">
+            <a href="{{ excel_link_adjusted }}" class="LinksList-item" target="_blank" rel="noopener noreferrer">
               <span class="LinksList-icon">
                 {% include components/universal/Icon/index.html type="download" %}
                 </span>
               <span class="LinksList-title">
-                View tables.
+                View tables in the {{ source_type_adjusted_short }} chapter (Excel).
               </span>
             </a>
           </div>
