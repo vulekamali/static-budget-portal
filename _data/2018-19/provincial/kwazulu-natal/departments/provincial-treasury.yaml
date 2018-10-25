@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 6 - Provincial Treasury
+    url: https://data.vulekamali.gov.za/dataset/9d1a5044-c69c-4534-b99f-a0228a0f16cb/resource/8f157edd-20b7-4e8c-93ea-95f335c3b2d7/download/kzn-vote-06-treasury.pdf
+  name: 'KwaZulu-Natal Department: Provincial Treasury 2018-19'
+  tables: null
 description: 'KwaZulu-Natal department: Provincial Treasury budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -422,15 +431,6 @@ subprogramme_by_programme:
     name: Sustainable Resource Management
     type: programme
 title: Provincial Treasury budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 6 - Provincial Treasury:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/9d1a5044-c69c-4534-b99f-a0228a0f16cb/resource/8f157edd-20b7-4e8c-93ea-95f335c3b2d7/download/kzn-vote-06-treasury.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/9d1a5044-c69c-4534-b99f-a0228a0f16cb/resource/a5641f2d-c0f0-42ed-a2ef-e9c5e265d16b/download/kzn-treasury.xlsm
 vote_number: 6
 vote_primary:
   name: Provincial Treasury

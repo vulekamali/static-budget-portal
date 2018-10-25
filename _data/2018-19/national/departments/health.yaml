@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 16 - Health
+    url: https://data.vulekamali.gov.za/dataset/b5438722-27d3-4a04-8ca8-004aa0965300/resource/9d0e2164-89d2-4eb2-81b9-3197f74a1c96/download/vote-16-health.pdf
+  name: AENE 2018-19 - Vote 16 - Health
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 16 - Health
+    url: https://data.vulekamali.gov.za/dataset/b5438722-27d3-4a04-8ca8-004aa0965300/resource/ea91c70b-4ada-4705-9ea1-4f4af06c083b/download/aene18chap-tab-vote16.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 16 - Health
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-health-2018-19/resource/93e86f43-e220-4200-a35c-d1fd45183125/download/vote-16-health.pdf
+  name: 'National Department: Health 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 16 - Health
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-health-2018-19/resource/de5d360f-30f2-4f31-9689-ec1e5d65d353/download/ene18-vote16_chaptertables.xlsx
 description: 'National department: Health budget data for the 2018-19 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -512,15 +536,6 @@ subprogramme_by_programme:
     name: Primary Health Care Services
     type: programme
 title: Health budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 16 - Health:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-health-2018-19/resource/93e86f43-e220-4200-a35c-d1fd45183125/download/vote-16-health.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-health-2018-19/resource/de5d360f-30f2-4f31-9689-ec1e5d65d353/download/ene18-vote16_chaptertables.xlsx
 vote_number: 16
 vote_primary:
   name: Health

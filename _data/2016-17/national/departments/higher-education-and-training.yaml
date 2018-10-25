@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 15 - Higher Education and Training
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-higher-education-and-training-2016-17/resource/5806f03e-4ea4-4844-b468-7b18db5a54f6/download/vote-15-higher-education-and-training.pdf
+  name: 'National Department: Higher Education and Training 2016-17'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 15 - Higher Education and Training
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-higher-education-and-training-2016-17/resource/3b10b2d6-be08-4a81-93e2-d667d29cbc13/download/ene16chap-tab-vote15.xls
 description: 'National department: Higher Education and Training budget data for the
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -543,15 +556,6 @@ subprogramme_by_programme:
     name: University Education
     type: programme
 title: Higher Education and Training budget 2016-17  - vulekamali
-treasury_datasets:
-  ENE for Vote 15 - Higher Education and Training:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-higher-education-and-training-2016-17/resource/5806f03e-4ea4-4844-b468-7b18db5a54f6/download/vote-15-higher-education-and-training.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-higher-education-and-training-2016-17/resource/3b10b2d6-be08-4a81-93e2-d667d29cbc13/download/ene16chap-tab-vote15.xls
 vote_number: 15
 vote_primary:
   name: Higher Education and Training

@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 3 - Communications
+    url: https://data.vulekamali.gov.za/dataset/c811d2ba-f1f5-4606-8f04-ebf0d3fecb0d/resource/9265e7cb-564e-4e29-a3ed-69bae09eb8ea/download/vote-3-communications.pdf
+  name: AENE 2018-19 - Vote 3 - Communications
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 3 - Communications
+    url: https://data.vulekamali.gov.za/dataset/c811d2ba-f1f5-4606-8f04-ebf0d3fecb0d/resource/60bae48d-bc8f-4f00-b27b-30e09bd68e62/download/aene18chap-tab-vote03.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 3 - Communications
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-communications-2018-19/resource/85a460e1-4aab-402d-bc3f-213290a99a3c/download/vote-03-communications.pdf
+  name: 'National Department: Communications 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 3 - Communications
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-communications-2018-19/resource/7522827a-1e2c-45e4-856c-900a30be25c6/download/ene18-vote03_chaptertables.xlsx
 description: 'National department: Communications budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -305,15 +329,6 @@ subprogramme_by_programme:
     name: Industry and Capacity Development
     type: programme
 title: Communications budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 3 - Communications:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-communications-2018-19/resource/85a460e1-4aab-402d-bc3f-213290a99a3c/download/vote-03-communications.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-communications-2018-19/resource/7522827a-1e2c-45e4-856c-900a30be25c6/download/ene18-vote03_chaptertables.xlsx
 vote_number: 3
 vote_primary:
   name: Communications

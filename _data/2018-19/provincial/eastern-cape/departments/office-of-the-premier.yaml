@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 1 - Office Of The Premier
+    url: https://data.vulekamali.gov.za/dataset/19e1ced0-cc48-47b0-95e1-0a5e06602994/resource/4584cd53-6a5f-49e9-83d0-01b25d527a00/download/ec-vote-01-office-of-the-premier.pdf
+  name: 'Eastern Cape Department: Office Of The Premier 2018-19'
+  tables: null
 description: 'Eastern Cape department: Office Of The Premier budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -325,15 +334,6 @@ subprogramme_by_programme:
     name: Planning, Policy Coordination, Monitoring and Evaluation
     type: programme
 title: Office Of The Premier budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 1 - Office Of The Premier:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/19e1ced0-cc48-47b0-95e1-0a5e06602994/resource/4584cd53-6a5f-49e9-83d0-01b25d527a00/download/ec-vote-01-office-of-the-premier.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/19e1ced0-cc48-47b0-95e1-0a5e06602994/resource/89e2f4d9-bd36-47b9-83a7-9303625e996e/download/ec-office-of-the-premier.xlsm
 vote_number: 1
 vote_primary:
   name: Office Of The Premier

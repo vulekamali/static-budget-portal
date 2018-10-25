@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 2 - Provincial Legislature
+    url: https://data.vulekamali.gov.za/dataset/3ff57abc-f5fd-4666-90f3-7e4089aa4c62/resource/d69a7301-06c3-47bc-a94f-806a6835b1c0/download/lim-vote-02-limpopo-legislature.pdf
+  name: 'Limpopo Department: Provincial Legislature 2018-19'
+  tables: null
 description: 'Limpopo department: Provincial Legislature budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -301,15 +310,6 @@ subprogramme_by_programme:
     name: Parliamentary Services
     type: programme
 title: Provincial Legislature budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 2 - Provincial Legislature:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/3ff57abc-f5fd-4666-90f3-7e4089aa4c62/resource/d69a7301-06c3-47bc-a94f-806a6835b1c0/download/lim-vote-02-limpopo-legislature.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/3ff57abc-f5fd-4666-90f3-7e4089aa4c62/resource/a54b52cd-0d89-4a0f-8dc5-1a0eba592a32/download/lim-limpopo-legislature.xlsm
 vote_number: 2
 vote_primary:
   name: Provincial Legislature

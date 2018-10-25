@@ -16,6 +16,16 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 4 - Economic Development, Tourism And Environmental Affairs
+    url: https://data.vulekamali.gov.za/dataset/fd01308b-3467-4c88-93e0-6864d4113b84/resource/00a68255-bb31-4ea3-bc84-c6cec81e6f5c/download/kzn-vote-04-eco-dev-tourism-and-environmental-affairs.pdf
+  name: 'KwaZulu-Natal Department: Economic Development, Tourism And Environmental
+    Affairs 2018-19'
+  tables: null
 description: 'KwaZulu-Natal department: Economic Development, Tourism And Environmental
   Affairs budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
@@ -592,15 +602,6 @@ subprogramme_by_programme:
     name: Trade and Sector Development
     type: programme
 title: Economic Development, Tourism And Environmental Affairs budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 4 - Economic Development, Tourism And Environmental Affairs:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/fd01308b-3467-4c88-93e0-6864d4113b84/resource/00a68255-bb31-4ea3-bc84-c6cec81e6f5c/download/kzn-vote-04-eco-dev-tourism-and-environmental-affairs.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/fd01308b-3467-4c88-93e0-6864d4113b84/resource/0812ea92-ffa8-44a5-a0cc-9302c00afee0/download/kzn-eco-dev-tou-and-envir.xlsm
 vote_number: 4
 vote_primary:
   name: Economic Development, Tourism And Environmental Affairs

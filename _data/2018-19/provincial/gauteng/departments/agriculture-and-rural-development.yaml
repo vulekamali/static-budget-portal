@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 11 - Agriculture And Rural Development
+    url: https://data.vulekamali.gov.za/dataset/3566eec7-d123-4f4e-b426-356d6ace3bdc/resource/78b05b77-bbea-4e15-946e-fb3d0c0e6557/download/gt-vote-11-agriculture-and-rural-development.pdf
+  name: 'Gauteng Department: Agriculture And Rural Development 2018-19'
+  tables: null
 description: 'Gauteng department: Agriculture And Rural Development budget data for
   the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -334,15 +343,6 @@ subprogramme_by_programme:
     name: ENVIRONMENTAL AFFAIRS
     type: programme
 title: Agriculture And Rural Development budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 11 - Agriculture And Rural Development:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/3566eec7-d123-4f4e-b426-356d6ace3bdc/resource/78b05b77-bbea-4e15-946e-fb3d0c0e6557/download/gt-vote-11-agriculture-and-rural-development.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/3566eec7-d123-4f4e-b426-356d6ace3bdc/resource/29c44a36-53ac-45ce-8c94-8a938a1820e3/download/gt-agriculture-and-rural-dev.xlsm
 vote_number: 11
 vote_primary:
   name: Agriculture And Rural Development

@@ -16,6 +16,16 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 12 - Agriculture, Land Reform And Rural Development
+    url: https://data.vulekamali.gov.za/dataset/0e9ea6f3-50ae-45c7-9523-9398c7c5de05/resource/c27dad6b-e978-42e1-af39-3fea0caaf48e/download/nc-vote-12-agric.-land-reform-and-rural-dev.pdf
+  name: 'Northern Cape Department: Agriculture, Land Reform And Rural Development
+    2018-19'
+  tables: null
 description: 'Northern Cape department: Agriculture, Land Reform And Rural Development
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
@@ -460,15 +470,6 @@ subprogramme_by_programme:
     name: Veterinary Services
     type: programme
 title: Agriculture, Land Reform And Rural Development budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 12 - Agriculture, Land Reform And Rural Development:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/0e9ea6f3-50ae-45c7-9523-9398c7c5de05/resource/c27dad6b-e978-42e1-af39-3fea0caaf48e/download/nc-vote-12-agric.-land-reform-and-rural-dev.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/0e9ea6f3-50ae-45c7-9523-9398c7c5de05/resource/2deb8fe4-090c-4735-b614-8f7fc1783819/download/nc-agric.-land-reform-and-rural-dev..xlsm
 vote_number: 12
 vote_primary:
   name: Agriculture, Land Reform And Rural Development

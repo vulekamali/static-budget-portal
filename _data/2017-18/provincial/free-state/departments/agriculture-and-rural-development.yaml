@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 11 : Agriculture and Rural Development'
+    url: https://data.vulekamali.gov.za/dataset/525744b0-4c29-4ca3-8881-6d948c77780b/resource/35b52d03-8777-4bf6-9c98-7f0f0377b1f3/download/fs-vote-11-agriculture-and-rural-development.pdf
+  name: 'Free State Department: Agriculture and Rural Development 2017-18'
+  tables: null
 description: 'Free State department: Agriculture and Rural Development budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -388,15 +397,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
   programmes: []
 title: Agriculture and Rural Development budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 11 : Agriculture and Rural Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/525744b0-4c29-4ca3-8881-6d948c77780b/resource/969f3bae-df1c-4cf7-9dff-463eb655876b/download/fs-agriculture-and-rural-dev.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/525744b0-4c29-4ca3-8881-6d948c77780b/resource/35b52d03-8777-4bf6-9c98-7f0f0377b1f3/download/fs-vote-11-agriculture-and-rural-development.pdf
 vote_number: 11
 vote_primary:
   name: Agriculture and Rural Development

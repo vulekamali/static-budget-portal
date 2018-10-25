@@ -3,9 +3,6 @@
 #########################################
 
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
 - contributor: International Budget Partnership
   name: The transparency of public funding of Basic Education in South Africa
   url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
@@ -16,9 +13,6 @@ contributed_datasets:
   name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
     Primary School case'
   url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -32,6 +26,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 37 - Arts and Culture
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-arts-and-culture-2017-18/resource/23e51bbd-edf3-4099-ae0c-e869dd8cf406/download/vote-37-arts-and-culture.pdf
+  name: 'National Department: Arts and Culture 2017-18'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 37 - Arts and Culture
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-arts-and-culture-2017-18/resource/be096788-9249-42aa-9285-6bb00d04a2ed/download/ene17-vote37_chaptertables.xlsx
 description: 'National department: Arts and Culture budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -494,15 +501,6 @@ subprogramme_by_programme:
     name: Institutional Governance
     type: programme
 title: Arts and Culture budget 2017-18  - vulekamali
-treasury_datasets:
-  ENE for Vote 37 - Arts and Culture:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-arts-and-culture-2017-18/resource/be096788-9249-42aa-9285-6bb00d04a2ed/download/ene17-vote37_chaptertables.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-arts-and-culture-2017-18/resource/23e51bbd-edf3-4099-ae0c-e869dd8cf406/download/vote-37-arts-and-culture.pdf
 vote_number: 37
 vote_primary:
   name: Arts and Culture

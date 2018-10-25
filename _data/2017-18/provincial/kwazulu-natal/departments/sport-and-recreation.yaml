@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 10 : Sport and Recreation'
+    url: https://data.vulekamali.gov.za/dataset/d06629d6-b782-4406-9132-7969d4155e8a/resource/2c98b411-b9f2-4840-939d-56ab2447d75a/download/kzn-vote-10-sport-and-recreation.pdf
+  name: 'KwaZulu-Natal Department: Sport and Recreation 2017-18'
+  tables: null
 description: 'KwaZulu-Natal department: Sport and Recreation budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -280,15 +289,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
   programmes: []
 title: Sport and Recreation budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 10 : Sport and Recreation':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/d06629d6-b782-4406-9132-7969d4155e8a/resource/a63eed01-32b6-45ce-a148-5d1cef2b213b/download/kzn-sport-and-recreation.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/d06629d6-b782-4406-9132-7969d4155e8a/resource/2c98b411-b9f2-4840-939d-56ab2447d75a/download/kzn-vote-10-sport-and-recreation.pdf
 vote_number: 10
 vote_primary:
   name: Sport and Recreation

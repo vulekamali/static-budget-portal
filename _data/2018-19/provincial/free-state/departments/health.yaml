@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 5 - Health
+    url: https://data.vulekamali.gov.za/dataset/47a793ec-64ec-437d-820b-71c9f75aa677/resource/ccdc1923-c053-4515-8306-7af9284e1b58/download/fs-vote-05-health.pdf
+  name: 'Free State Department: Health 2018-19'
+  tables: null
 description: 'Free State department: Health budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -617,15 +626,6 @@ subprogramme_by_programme:
     name: Provincial Hospital Services
     type: programme
 title: Health budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 5 - Health:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/47a793ec-64ec-437d-820b-71c9f75aa677/resource/ccdc1923-c053-4515-8306-7af9284e1b58/download/fs-vote-05-health.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/47a793ec-64ec-437d-820b-71c9f75aa677/resource/90653cb6-a1dc-4aa8-ae83-9550860f8865/download/fs-health.xlsm
 vote_number: 5
 vote_primary:
   name: Health

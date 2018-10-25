@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 2 - Provincial Legislature
+    url: https://data.vulekamali.gov.za/dataset/ce410486-fb11-4ac7-a389-f9661b4683a1/resource/a1ef95be-3750-4189-8241-6a3f406d425c/download/ec-vote-02-legislature.pdf
+  name: 'Eastern Cape Department: Provincial Legislature 2018-19'
+  tables: null
 description: 'Eastern Cape department: Provincial Legislature budget data for the
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -274,15 +283,6 @@ subprogramme_by_programme:
     name: Parliamentary Services
     type: programme
 title: Provincial Legislature budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 2 - Provincial Legislature:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/ce410486-fb11-4ac7-a389-f9661b4683a1/resource/a1ef95be-3750-4189-8241-6a3f406d425c/download/ec-vote-02-legislature.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/ce410486-fb11-4ac7-a389-f9661b4683a1/resource/692bb13a-2ba5-4770-b093-dd5d18d6c8e5/download/ec-provincial-legislature.xlsm
 vote_number: 2
 vote_primary:
   name: Provincial Legislature

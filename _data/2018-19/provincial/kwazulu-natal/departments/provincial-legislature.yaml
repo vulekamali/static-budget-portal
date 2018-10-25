@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 2 - Provincial Legislature
+    url: https://data.vulekamali.gov.za/dataset/3022eb7f-682a-4d76-8848-45ca46eb58ac/resource/6609cf74-dc5a-4b1d-a79d-174992eac07a/download/kzn-vote-02-legislature.pdf
+  name: 'KwaZulu-Natal Department: Provincial Legislature 2018-19'
+  tables: null
 description: 'KwaZulu-Natal department: Provincial Legislature budget data for the
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -299,15 +308,6 @@ subprogramme_by_programme:
     name: Parliamentary Business
     type: programme
 title: Provincial Legislature budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 2 - Provincial Legislature:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/3022eb7f-682a-4d76-8848-45ca46eb58ac/resource/6609cf74-dc5a-4b1d-a79d-174992eac07a/download/kzn-vote-02-legislature.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/3022eb7f-682a-4d76-8848-45ca46eb58ac/resource/dd1cb6d6-97a4-4bac-aa72-89876ea6275e/download/kzn-legislature.xlsm
 vote_number: 2
 vote_primary:
   name: Provincial Legislature

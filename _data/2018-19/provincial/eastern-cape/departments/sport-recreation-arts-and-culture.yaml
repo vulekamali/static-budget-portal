@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 14 - Sport, Recreation, Arts And Culture
+    url: https://data.vulekamali.gov.za/dataset/7bbf6dc5-8df1-4db1-b32c-e59decfd4ce7/resource/ec72209c-d286-4b8c-8b34-3103fa23ae1c/download/ec-vote-14-sport-rec-arts-and-culture.pdf
+  name: 'Eastern Cape Department: Sport, Recreation, Arts And Culture 2018-19'
+  tables: null
 description: 'Eastern Cape department: Sport, Recreation, Arts And Culture budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -403,15 +412,6 @@ subprogramme_by_programme:
     name: Sport and Recreation
     type: programme
 title: Sport, Recreation, Arts And Culture budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 14 - Sport, Recreation, Arts And Culture:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/7bbf6dc5-8df1-4db1-b32c-e59decfd4ce7/resource/ec72209c-d286-4b8c-8b34-3103fa23ae1c/download/ec-vote-14-sport-rec-arts-and-culture.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/7bbf6dc5-8df1-4db1-b32c-e59decfd4ce7/resource/d0a2319a-1186-40e1-89b5-e28d0e851b0e/download/ec-sport-rec-arts-and-culture.xlsm
 vote_number: 14
 vote_primary:
   name: Sport, Recreation, Arts And Culture

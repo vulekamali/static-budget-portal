@@ -16,6 +16,16 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 11 : Co-operative Governance and Traditional Affairs'
+    url: https://data.vulekamali.gov.za/dataset/0c16b443-3425-4921-a182-4ee6c4ac6846/resource/bc20d4de-7deb-4791-90b3-7842ea002aae/download/kzn-vote-11-cogta.pdf
+  name: 'KwaZulu-Natal Department: Co-operative Governance and Traditional Affairs
+    2017-18'
+  tables: null
 description: 'KwaZulu-Natal department: Co-operative Governance and Traditional Affairs
   budget data for the 2017-18 financial year from National Treasury in partnership
   with IMALI YETHU.'
@@ -337,15 +347,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
   programmes: []
 title: Co-operative Governance and Traditional Affairs budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 11 : Co-operative Governance and Traditional Affairs':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/0c16b443-3425-4921-a182-4ee6c4ac6846/resource/47f06eb2-a149-462e-ad30-8067192596e5/download/kzn-cogta.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/0c16b443-3425-4921-a182-4ee6c4ac6846/resource/bc20d4de-7deb-4791-90b3-7842ea002aae/download/kzn-vote-11-cogta.pdf
 vote_number: 11
 vote_primary:
   name: Co-operative Governance and Traditional Affairs

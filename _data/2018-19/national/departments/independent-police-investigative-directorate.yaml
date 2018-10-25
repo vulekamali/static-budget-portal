@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 20 - Independent Police Investigative Directorate
+    url: https://data.vulekamali.gov.za/dataset/8e205df9-7883-4ecd-99f2-d45ae38d9dce/resource/dc0f2595-785c-41cc-963f-1b7c343738a9/download/vote-20-independent-police-investigative-directorate.pdf
+  name: AENE 2018-19 - Vote 20 - Independent Police Investigative Directorate
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 20 - Independent Police Investigative Directorate
+    url: https://data.vulekamali.gov.za/dataset/8e205df9-7883-4ecd-99f2-d45ae38d9dce/resource/1ee6f527-af62-4882-922d-9bf1d9d93279/download/aene18chap-tab-vote20.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 20 - Independent Police Investigative Directorate
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-independent-police-investigative-directorate-2018-19/resource/ce80baf3-0d4e-47e0-8aa4-1152f31dae13/download/vote202020independent20police20investigative20directorate.pdf
+  name: 'National Department: Independent Police Investigative Directorate 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 20 - Independent Police Investigative Directorate
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-independent-police-investigative-directorate-2018-19/resource/11592ee2-6b08-4ed0-b4f7-2d27349d73f6/download/ene18-vote20_chaptertables.xlsx
 description: 'National department: Independent Police Investigative Directorate budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -270,15 +294,6 @@ subprogramme_by_programme:
     name: Investigation and Information Management
     type: programme
 title: Independent Police Investigative Directorate budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 20 - Independent Police Investigative Directorate:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-independent-police-investigative-directorate-2018-19/resource/ce80baf3-0d4e-47e0-8aa4-1152f31dae13/download/vote202020independent20police20investigative20directorate.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-independent-police-investigative-directorate-2018-19/resource/11592ee2-6b08-4ed0-b4f7-2d27349d73f6/download/ene18-vote20_chaptertables.xlsx
 vote_number: 20
 vote_primary:
   name: Independent Police Investigative Directorate

@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 26 - Energy
+    url: https://data.vulekamali.gov.za/dataset/05cd11c8-efe0-4dee-a99a-e5ab76483793/resource/68d33229-4a7e-4249-a96b-bd56019658ef/download/vote-26-energy.pdf
+  name: AENE 2018-19 - Vote 26 - Energy
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 26 - Energy
+    url: https://data.vulekamali.gov.za/dataset/05cd11c8-efe0-4dee-a99a-e5ab76483793/resource/a3b36268-ac91-4b14-8e81-c3b8d6f20e36/download/aene18chap-tab-vote26.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 26 - Energy
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-energy-2018-19/resource/fd5eadda-1a21-4b08-adc8-c4ba40e55af5/download/vote-26-energy.pdf
+  name: 'National Department: Energy 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 26 - Energy
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-energy-2018-19/resource/ef461a09-0802-4b63-9442-62938ab1d42d/download/ene18-vote26_chaptertables.xlsx
 description: 'National department: Energy budget data for the 2018-19 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -471,15 +495,6 @@ subprogramme_by_programme:
     name: Petroleum and Petroleum Products Regulation
     type: programme
 title: Energy budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 26 - Energy:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-energy-2018-19/resource/fd5eadda-1a21-4b08-adc8-c4ba40e55af5/download/vote-26-energy.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-energy-2018-19/resource/ef461a09-0802-4b63-9442-62938ab1d42d/download/ene18-vote26_chaptertables.xlsx
 vote_number: 26
 vote_primary:
   name: Energy

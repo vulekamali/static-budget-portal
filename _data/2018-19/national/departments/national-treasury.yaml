@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 7 - National Treasury
+    url: https://data.vulekamali.gov.za/dataset/014f5cd1-d340-4403-80d5-eb53425dcd75/resource/ad58bd1d-bd66-4f65-baf7-9459fd3dfa41/download/vote-7-national-treasury.pdf
+  name: AENE 2018-19 - Vote 7 - National Treasury
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 7 - National Treasury
+    url: https://data.vulekamali.gov.za/dataset/014f5cd1-d340-4403-80d5-eb53425dcd75/resource/6f2a2d09-07c6-4f18-b819-3d2325596c5e/download/aene18chap-tab-vote07.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 7 - National Treasury
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-national-treasury-2018-19/resource/59010939-0a3f-4b5f-bad7-7d6fe5ac8225/download/vote-07-national-treasury.pdf
+  name: 'National Department: National Treasury 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 7 - National Treasury
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-national-treasury-2018-19/resource/86faafc1-945e-4704-9c09-a6170e7dfbb5/download/ene18-vote07_chaptertables.xlsx
 description: 'National department: National Treasury budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -724,15 +748,6 @@ subprogramme_by_programme:
     name: Technical Support and Development Finance
     type: programme
 title: National Treasury budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 7 - National Treasury:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-national-treasury-2018-19/resource/59010939-0a3f-4b5f-bad7-7d6fe5ac8225/download/vote-07-national-treasury.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-national-treasury-2018-19/resource/86faafc1-945e-4704-9c09-a6170e7dfbb5/download/ene18-vote07_chaptertables.xlsx
 vote_number: 7
 vote_primary:
   name: National Treasury

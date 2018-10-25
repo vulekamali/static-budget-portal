@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 01 : Premier'
+    url: https://data.vulekamali.gov.za/dataset/1c88c47c-9833-48f9-a5e4-e5cf71eea3bb/resource/0db3cc32-0422-4d15-be28-3f534ca76374/download/wc-vote-01-office-of-the-premier.pdf
+  name: 'Western Cape Department: Premier 2017-18'
+  tables: null
 description: 'Western Cape department: Premier budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -426,15 +435,6 @@ subprogramme_by_programme:
     name: Provincial Strategic Management
     type: programme
 title: Premier budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 01 : Premier':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/1c88c47c-9833-48f9-a5e4-e5cf71eea3bb/resource/90e91345-158a-496a-ac15-d2afd3710b57/download/wc-premier.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/1c88c47c-9833-48f9-a5e4-e5cf71eea3bb/resource/0db3cc32-0422-4d15-be28-3f534ca76374/download/wc-vote-01-office-of-the-premier.pdf
 vote_number: 1
 vote_primary:
   name: Premier

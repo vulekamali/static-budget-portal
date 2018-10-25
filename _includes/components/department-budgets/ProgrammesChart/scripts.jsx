@@ -9,33 +9,13 @@ import { preactConnect } from '../../../utilities/js/helpers/connector.js';
 class ProgrammesChart extends Component {
   constructor(props) {
     super(props);
-    const { values, files: rawFiles } = this.props;
+    const { values } = this.props;
 
     const items = values.reduce(
       (results, val) => {
         return {
           ...results,
           [val.name]: [val.total_budget],
-        };
-      },
-      {},
-    );
-
-    const files = Object.keys(rawFiles).reduce(
-      (results, key) => {
-        const object = rawFiles[key].formats.reduce(
-          (innerResults, val) => {
-            return {
-              ...innerResults,
-              [`${key} (${val.format.replace(/^xls.+/i, 'Excel')})`]: val.url,
-            };
-          },
-          {},
-        );
-
-        return {
-          ...results,
-          ...object,
         };
       },
       {},
@@ -59,7 +39,6 @@ class ProgrammesChart extends Component {
 
     this.values = {
       items,
-      files,
     };
   }
 
@@ -104,12 +83,9 @@ class ProgrammesChart extends Component {
   render() {
     const { hasNull } = this;
     const { width, mobile } = this.state;
-    const { year, dataset, sourceType, guide } = this.props;
-    const { files, items } = this.values;
+    const { year, dataset, sourceType, guide, excel, pdf } = this.props;
+    const { items } = this.values;
     const { downloadAction, canvasAction } = this.events;
-
-    const pdf = files[Object.keys(files)[0]];
-    const excel = files[Object.keys(files)[1]];
 
     return (
       <Markup
@@ -119,7 +95,6 @@ class ProgrammesChart extends Component {
           width,
           mobile,
           items,
-          files,
           year,
           location,
           downloadAction,
@@ -139,7 +114,8 @@ class ProgrammesChart extends Component {
 const query = {
   values: 'json',
   year: 'string',
-  files: 'json',
+  excel: 'string',
+  pdf: 'string',
   dept: 'string',
   sourceType: 'string',
   dataset: 'string',

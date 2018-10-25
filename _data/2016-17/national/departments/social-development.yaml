@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 17 - Social Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2016-17/resource/21fb9223-1ec7-4329-9378-b5832a87bf52/download/vote-17-social-development.pdf
+  name: 'National Department: Social Development 2016-17'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 17 - Social Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2016-17/resource/e2d1ac30-a175-4234-95aa-eb633000884d/download/ene16chap-tab-vote17.xls
 description: 'National department: Social Development budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -544,15 +557,6 @@ subprogramme_by_programme:
     name: Welfare Services Policy Development and Implementation Support
     type: programme
 title: Social Development budget 2016-17  - vulekamali
-treasury_datasets:
-  ENE for Vote 17 - Social Development:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2016-17/resource/21fb9223-1ec7-4329-9378-b5832a87bf52/download/vote-17-social-development.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2016-17/resource/e2d1ac30-a175-4234-95aa-eb633000884d/download/ene16chap-tab-vote17.xls
 vote_number: 17
 vote_primary:
   name: Social Development

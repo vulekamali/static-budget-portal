@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 01 : Office of the Premier'
+    url: https://data.vulekamali.gov.za/dataset/9995f4b6-acd2-411d-abc1-47bf849622c7/resource/7291eacb-1a23-4fb2-b4d9-8881f7932fab/download/gt-vote-01-office-of-the-premier.pdf
+  name: 'Gauteng Department: Office of the Premier 2016-17'
+  tables: null
 description: 'Gauteng department: Office of the Premier budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -235,15 +244,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
   programmes: []
 title: Office of the Premier budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 01 : Office of the Premier':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/9995f4b6-acd2-411d-abc1-47bf849622c7/resource/2996a049-bfee-4ca4-8442-1a90a8568e96/download/gt-premier.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/9995f4b6-acd2-411d-abc1-47bf849622c7/resource/7291eacb-1a23-4fb2-b4d9-8881f7932fab/download/gt-vote-01-office-of-the-premier.pdf
 vote_number: 1
 vote_primary:
   name: Office of the Premier

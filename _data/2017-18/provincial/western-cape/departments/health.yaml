@@ -6,9 +6,6 @@ contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: "Emergency Medical Services in the Eastern Cape 2005 \u2013 2015"
   url_path: /datasets/contributed/emergency-medical-services-in-the-eastern-cape-2005-2015
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -22,6 +19,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 06 : Health'
+    url: https://data.vulekamali.gov.za/dataset/4378ef2d-5de9-494e-9e36-60874b4b56d1/resource/5bc2f7f6-9e4e-48d9-819d-ffb8fb1ed299/download/wc-vote-06-health.pdf
+  name: 'Western Cape Department: Health 2017-18'
+  tables: null
 description: 'Western Cape department: Health budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -683,15 +689,6 @@ subprogramme_by_programme:
     name: Provincial Hospital Services
     type: programme
 title: Health budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 06 : Health':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/4378ef2d-5de9-494e-9e36-60874b4b56d1/resource/8d4b3a46-4a44-4d6b-83eb-7035d4cebc8e/download/wc-health.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/4378ef2d-5de9-494e-9e36-60874b4b56d1/resource/5bc2f7f6-9e4e-48d9-819d-ffb8fb1ed299/download/wc-vote-06-health.pdf
 vote_number: 6
 vote_primary:
   name: Health

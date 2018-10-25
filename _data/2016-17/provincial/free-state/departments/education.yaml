@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 06 : Education'
+    url: https://data.vulekamali.gov.za/dataset/205ce975-f53a-4573-ad9d-49cd4c4b10fd/resource/9cccee79-2d39-480c-93ff-c8062a619a89/download/fs-vote-06-education.pdf
+  name: 'Free State Department: Education 2016-17'
+  tables: null
 description: 'Free State department: Education budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -521,15 +530,6 @@ subprogramme_by_programme:
     name: PUBLIC SPECIAL SCHOOL EDUCATION
     type: programme
 title: Education budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 06 : Education':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/205ce975-f53a-4573-ad9d-49cd4c4b10fd/resource/8a7965de-9d60-4f71-b1e9-9d90dd978029/download/fs-education.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/205ce975-f53a-4573-ad9d-49cd4c4b10fd/resource/9cccee79-2d39-480c-93ff-c8062a619a89/download/fs-vote-06-education.pdf
 vote_number: 6
 vote_primary:
   name: Education

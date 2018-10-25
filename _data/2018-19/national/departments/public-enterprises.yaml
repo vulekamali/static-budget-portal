@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 9 - Public Enterprises
+    url: https://data.vulekamali.gov.za/dataset/c4b8788a-0c0a-4b2b-ace2-755418c57ff4/resource/d77b852c-dd98-406b-b7b6-f1f4c97767b2/download/vote-9-public-enterprises.pdf
+  name: AENE 2018-19 - Vote 9 - Public Enterprises
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 9 - Public Enterprises
+    url: https://data.vulekamali.gov.za/dataset/c4b8788a-0c0a-4b2b-ace2-755418c57ff4/resource/adb51f94-ccef-462a-940a-c43cfc2f6466/download/aene18chap-tab-vote09.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 9 - Public Enterprises
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-public-enterprises-2018-19/resource/9f205db4-9464-402d-9510-5b53c7720893/download/vote-09-public-enterprises.pdf
+  name: 'National Department: Public Enterprises 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 9 - Public Enterprises
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-public-enterprises-2018-19/resource/fc1638b9-b24c-406f-904e-91f00bef9e63/download/ene18-vote09_chaptertables.xlsx
 description: 'National department: Public Enterprises budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -281,15 +305,6 @@ subprogramme_by_programme:
     name: State-owned Companies Governance Assurance and Performance
     type: programme
 title: Public Enterprises budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 9 - Public Enterprises:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-public-enterprises-2018-19/resource/9f205db4-9464-402d-9510-5b53c7720893/download/vote-09-public-enterprises.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-public-enterprises-2018-19/resource/fc1638b9-b24c-406f-904e-91f00bef9e63/download/ene18-vote09_chaptertables.xlsx
 vote_number: 9
 vote_primary:
   name: Public Enterprises

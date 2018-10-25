@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 11 : Agriculture'
+    url: https://data.vulekamali.gov.za/dataset/18fa626e-dad1-4298-865d-25e691c188d9/resource/3658e03c-cc74-43df-8264-352179db53c2/download/wc-vote-11-agriculture.pdf
+  name: 'Western Cape Department: Agriculture 2016-17'
+  tables: null
 description: 'Western Cape department: Agriculture budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -661,15 +670,6 @@ subprogramme_by_programme:
     name: Veterinary Services
     type: programme
 title: Agriculture budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 11 : Agriculture':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/18fa626e-dad1-4298-865d-25e691c188d9/resource/c01a38f0-bdd7-4cff-855f-1fc58e3115b4/download/wc-agriculture.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/18fa626e-dad1-4298-865d-25e691c188d9/resource/3658e03c-cc74-43df-8264-352179db53c2/download/wc-vote-11-agriculture.pdf
 vote_number: 11
 vote_primary:
   name: Agriculture

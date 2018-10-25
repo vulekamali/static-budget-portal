@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 09 : Community Safety and Liaison'
+    url: https://data.vulekamali.gov.za/dataset/6784d984-a54e-4c18-ac9f-13e962d54c4c/resource/fbb034a4-7958-45de-974c-a618761de150/download/kzn-vote-09-community-safety.pdf
+  name: 'KwaZulu-Natal Department: Community Safety and Liaison 2016-17'
+  tables: null
 description: 'KwaZulu-Natal department: Community Safety and Liaison budget data for
   the 2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -204,15 +213,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
   programmes: []
 title: Community Safety and Liaison budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 09 : Community Safety and Liaison':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/6784d984-a54e-4c18-ac9f-13e962d54c4c/resource/24fde5f1-47c4-4ad1-b6a3-f33ac06bf506/download/kzn-com-safety-and-lia.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/6784d984-a54e-4c18-ac9f-13e962d54c4c/resource/fbb034a4-7958-45de-974c-a618761de150/download/kzn-vote-09-community-safety.pdf
 vote_number: 9
 vote_primary:
   name: Community Safety and Liaison

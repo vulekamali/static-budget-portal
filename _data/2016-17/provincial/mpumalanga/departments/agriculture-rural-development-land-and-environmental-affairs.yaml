@@ -16,6 +16,16 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 05 : Agriculture, Rural Development, Land and Environmental Affairs'
+    url: https://data.vulekamali.gov.za/dataset/cf28d7c2-da01-42e7-b9e1-7e565ce37ca3/resource/1c8b1b06-9d7f-4f1a-a81c-0c33e6c8b0d9/download/mpu-vote-05-agriculture-rural-deve-land-and-environ.pdf
+  name: 'Mpumalanga Department: Agriculture, Rural Development, Land and Environmental
+    Affairs 2016-17'
+  tables: null
 description: 'Mpumalanga department: Agriculture, Rural Development, Land and Environmental
   Affairs budget data for the 2016-17 financial year from National Treasury in partnership
   with IMALI YETHU.'
@@ -419,15 +429,6 @@ subprogramme_by_programme:
   programmes: []
 title: Agriculture, Rural Development, Land and Environmental Affairs budget 2016-17  -
   vulekamali
-treasury_datasets:
-  'EPRE for Vote 05 : Agriculture, Rural Development, Land and Environmental Affairs':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/cf28d7c2-da01-42e7-b9e1-7e565ce37ca3/resource/b2dfbb0d-e22c-4069-8a0d-af2dee154d0e/download/mpu-agric.-rural-dev.-land-and-env.-affairs.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/cf28d7c2-da01-42e7-b9e1-7e565ce37ca3/resource/1c8b1b06-9d7f-4f1a-a81c-0c33e6c8b0d9/download/mpu-vote-05-agriculture-rural-deve-land-and-environ.pdf
 vote_number: 5
 vote_primary:
   name: Agriculture, Rural Development, Land and Environmental Affairs

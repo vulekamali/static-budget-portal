@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 15 : Safety and Liaison'
+    url: https://data.vulekamali.gov.za/dataset/da5c7982-883f-44f2-b7cf-95bbb14f4f2b/resource/8e7977a6-d12c-4d80-b9c8-696b821b87e7/download/ec-vote-15-safety-and-liaison.pdf
+  name: 'Eastern Cape Department: Safety and Liaison 2017-18'
+  tables: null
 description: 'Eastern Cape department: Safety and Liaison budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -179,15 +188,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
   programmes: []
 title: Safety and Liaison budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 15 : Safety and Liaison':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/da5c7982-883f-44f2-b7cf-95bbb14f4f2b/resource/46eee9f6-6058-4abf-b98e-b9cfdc647173/download/ec-safety-and-liason.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/da5c7982-883f-44f2-b7cf-95bbb14f4f2b/resource/8e7977a6-d12c-4d80-b9c8-696b821b87e7/download/ec-vote-15-safety-and-liaison.pdf
 vote_number: 15
 vote_primary:
   name: Safety and Liaison

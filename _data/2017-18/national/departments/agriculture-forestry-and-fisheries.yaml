@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 24 - Agriculture, Forestry and Fisheries
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-agriculture-forestry-and-fisheries-2017-18/resource/9c1ae541-d48c-4208-a50d-bad5f07d14c6/download/vote-24-agriculture-forestry-and-fisheries.pdf
+  name: 'National Department: Agriculture, Forestry and Fisheries 2017-18'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 24 - Agriculture, Forestry and Fisheries
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-agriculture-forestry-and-fisheries-2017-18/resource/5e56ac86-a884-4d4b-9cfc-743c113b4df6/download/ene17-vote24_chaptertables.xlsx
 description: 'National department: Agriculture, Forestry and Fisheries budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -594,15 +607,6 @@ subprogramme_by_programme:
     name: Trade Promotion and Market Access
     type: programme
 title: Agriculture, Forestry and Fisheries budget 2017-18  - vulekamali
-treasury_datasets:
-  ENE for Vote 24 - Agriculture, Forestry and Fisheries:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-agriculture-forestry-and-fisheries-2017-18/resource/5e56ac86-a884-4d4b-9cfc-743c113b4df6/download/ene17-vote24_chaptertables.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-agriculture-forestry-and-fisheries-2017-18/resource/9c1ae541-d48c-4208-a50d-bad5f07d14c6/download/vote-24-agriculture-forestry-and-fisheries.pdf
 vote_number: 24
 vote_primary:
   name: Agriculture, Forestry and Fisheries

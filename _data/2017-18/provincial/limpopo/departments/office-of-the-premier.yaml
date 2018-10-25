@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 01 : Office of the Premier'
+    url: https://data.vulekamali.gov.za/dataset/37317da2-2506-42b4-8811-996de4f68d90/resource/0e753d9e-6076-4893-b148-58c82f750903/download/lim-vote-01-office-of-the-premier.pdf
+  name: 'Limpopo Department: Office of the Premier 2017-18'
+  tables: null
 description: 'Limpopo department: Office of the Premier budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -258,15 +267,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
   programmes: []
 title: Office of the Premier budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 01 : Office of the Premier':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/37317da2-2506-42b4-8811-996de4f68d90/resource/b41ded0d-39fd-4fdf-a807-a45027903897/download/lim-office-of-the-premier.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/37317da2-2506-42b4-8811-996de4f68d90/resource/0e753d9e-6076-4893-b148-58c82f750903/download/lim-vote-01-office-of-the-premier.pdf
 vote_number: 1
 vote_primary:
   name: Office of the Premier

@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 10 - Tourism
+    url: https://data.vulekamali.gov.za/dataset/044bdcf6-6dc2-4ca5-a41b-7bf5c5759a02/resource/03898a21-1496-456f-bb46-a42153e97343/download/nw-vote-10-tourism.pdf
+  name: 'North West Department: Tourism 2018-19'
+  tables: null
 description: 'North West department: Tourism budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -271,15 +280,6 @@ subprogramme_by_programme:
     name: Tourism Planning
     type: programme
 title: Tourism budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 10 - Tourism:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/044bdcf6-6dc2-4ca5-a41b-7bf5c5759a02/resource/03898a21-1496-456f-bb46-a42153e97343/download/nw-vote-10-tourism.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/044bdcf6-6dc2-4ca5-a41b-7bf5c5759a02/resource/5e5085aa-a739-4a0f-b93f-9c6f5851a601/download/nw-tourism.xlsm
 vote_number: 10
 vote_primary:
   name: Tourism

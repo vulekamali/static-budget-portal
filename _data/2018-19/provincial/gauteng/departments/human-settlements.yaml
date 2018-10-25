@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 8 - Human Settlements
+    url: https://data.vulekamali.gov.za/dataset/57e2302c-e0be-4790-8533-6cbd0b9f22fb/resource/aa59993d-4a24-4ad6-b39d-b73084f56fc8/download/gt-vote-08-human-settlements.pdf
+  name: 'Gauteng Department: Human Settlements 2018-19'
+  tables: null
 description: 'Gauteng department: Human Settlements budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -333,15 +342,6 @@ subprogramme_by_programme:
     name: Housing Needs, Research And Planning
     type: programme
 title: Human Settlements budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 8 - Human Settlements:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/57e2302c-e0be-4790-8533-6cbd0b9f22fb/resource/aa59993d-4a24-4ad6-b39d-b73084f56fc8/download/gt-vote-08-human-settlements.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/57e2302c-e0be-4790-8533-6cbd0b9f22fb/resource/52bb000a-d18c-4098-adbc-ce1a3428e4a5/download/gt-human-settlement.xlsm
 vote_number: 8
 vote_primary:
   name: Human Settlements

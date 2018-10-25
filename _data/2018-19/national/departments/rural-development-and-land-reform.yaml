@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 39 - Rural Development and Land Reform
+    url: https://data.vulekamali.gov.za/dataset/ac044b9b-edec-4471-8adb-3d51edf5c8a8/resource/72c37906-f584-4c4f-a134-a07c326a515e/download/vote-39-rural-development-and-land-reform.pdf
+  name: AENE 2018-19 - Vote 39 - Rural Development and Land Reform
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 39 - Rural Development and Land Reform
+    url: https://data.vulekamali.gov.za/dataset/ac044b9b-edec-4471-8adb-3d51edf5c8a8/resource/acbca699-de25-4465-b00b-4e1477a005d8/download/aene18chap-tab-vote39.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 39 - Rural Development and Land Reform
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-rural-development-and-land-reform-2018-19/resource/07971f2d-5c99-45b9-b9c1-72148a8f0b94/download/vote-39-rural-development-and-land-reform.pdf
+  name: 'National Department: Rural Development and Land Reform 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 39 - Rural Development and Land Reform
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-rural-development-and-land-reform-2018-19/resource/9c4d6bdb-c1b6-43a8-a2e5-d8ac88fd502e/download/ene18-vote39_chaptertables.xlsx
 description: 'National department: Rural Development and Land Reform budget data for
   the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -545,15 +569,6 @@ subprogramme_by_programme:
     name: Rural Development
     type: programme
 title: Rural Development and Land Reform budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 39 - Rural Development and Land Reform:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-rural-development-and-land-reform-2018-19/resource/07971f2d-5c99-45b9-b9c1-72148a8f0b94/download/vote-39-rural-development-and-land-reform.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-rural-development-and-land-reform-2018-19/resource/9c4d6bdb-c1b6-43a8-a2e5-d8ac88fd502e/download/ene18-vote39_chaptertables.xlsx
 vote_number: 39
 vote_primary:
   name: Rural Development and Land Reform

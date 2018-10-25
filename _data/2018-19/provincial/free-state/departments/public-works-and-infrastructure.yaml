@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 9 - Public Works And Infrastructure
+    url: https://data.vulekamali.gov.za/dataset/47a8d466-e558-4786-abb7-8c772807d6ed/resource/7acc087c-e795-4279-8e2d-854e631605f0/download/fs-vote-09-public-works-and-infrastructure.pdf
+  name: 'Free State Department: Public Works And Infrastructure 2018-19'
+  tables: null
 description: 'Free State department: Public Works And Infrastructure budget data for
   the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -322,15 +331,6 @@ subprogramme_by_programme:
     name: Public Works Infrastructure
     type: programme
 title: Public Works And Infrastructure budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 9 - Public Works And Infrastructure:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/47a8d466-e558-4786-abb7-8c772807d6ed/resource/68becb00-fc37-4404-b74f-bdc0ffbef2c3/download/fs-public-works-and-infrast.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/47a8d466-e558-4786-abb7-8c772807d6ed/resource/7acc087c-e795-4279-8e2d-854e631605f0/download/fs-vote-09-public-works-and-infrastructure.pdf
 vote_number: 9
 vote_primary:
   name: Public Works And Infrastructure

@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 12 : Provincial Treasury'
+    url: https://data.vulekamali.gov.za/dataset/0ddbaf2f-7cf5-4d10-9ea6-f3812f1694ee/resource/bbda0f80-232c-469c-8c99-be5069dad0ac/download/ec-vote-12-provincial-treasury.pdf
+  name: 'Eastern Cape Department: Provincial Treasury 2016-17'
+  tables: null
 description: 'Eastern Cape department: Provincial Treasury budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -360,15 +369,6 @@ subprogramme_by_programme:
     name: Sustainable Resource Management
     type: programme
 title: Provincial Treasury budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 12 : Provincial Treasury':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/0ddbaf2f-7cf5-4d10-9ea6-f3812f1694ee/resource/f78a4da7-2a03-4009-91ca-d59232c4744d/download/ec-provincial-treasury.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/0ddbaf2f-7cf5-4d10-9ea6-f3812f1694ee/resource/bbda0f80-232c-469c-8c99-be5069dad0ac/download/ec-vote-12-provincial-treasury.pdf
 vote_number: 12
 vote_primary:
   name: Provincial Treasury

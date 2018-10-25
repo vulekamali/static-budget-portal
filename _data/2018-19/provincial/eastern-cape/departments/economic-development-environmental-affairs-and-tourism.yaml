@@ -16,6 +16,16 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 9 - Economic Development, Environmental Affairs And Tourism
+    url: https://data.vulekamali.gov.za/dataset/b9dd0243-6f14-417e-8e49-daa4078991d7/resource/78747296-4b08-4d53-8397-322b3a6a7889/download/ec-vote-09-eco-dev.-environ.-affairs-and-tourism.pdf
+  name: 'Eastern Cape Department: Economic Development, Environmental Affairs And
+    Tourism 2018-19'
+  tables: null
 description: 'Eastern Cape department: Economic Development, Environmental Affairs
   And Tourism budget data for the 2018-19 financial year from National Treasury in
   partnership with IMALI YETHU.'
@@ -344,15 +354,6 @@ subprogramme_by_programme:
     name: Environmental  Affairs
     type: programme
 title: Economic Development, Environmental Affairs And Tourism budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 9 - Economic Development, Environmental Affairs And Tourism:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/b9dd0243-6f14-417e-8e49-daa4078991d7/resource/78747296-4b08-4d53-8397-322b3a6a7889/download/ec-vote-09-eco-dev.-environ.-affairs-and-tourism.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/b9dd0243-6f14-417e-8e49-daa4078991d7/resource/cd8870cb-589d-4db5-a91e-f32208c835f8/download/ec-eco-dev-environment-and-tourism.xlsm
 vote_number: 9
 vote_primary:
   name: Economic Development, Environmental Affairs And Tourism

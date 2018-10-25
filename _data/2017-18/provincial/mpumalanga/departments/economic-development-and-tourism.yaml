@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 06 : Economic Development and Tourism'
+    url: https://data.vulekamali.gov.za/dataset/3075ee2c-23ba-4e66-a2cc-6d58a1fd23ad/resource/091f0c2f-3c1e-45a6-aa9f-764be90e16cd/download/mpu-vote-06-economic-development-and-tourism.pdf
+  name: 'Mpumalanga Department: Economic Development and Tourism 2017-18'
+  tables: null
 description: 'Mpumalanga department: Economic Development and Tourism budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -308,15 +317,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
   programmes: []
 title: Economic Development and Tourism budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 06 : Economic Development and Tourism':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/3075ee2c-23ba-4e66-a2cc-6d58a1fd23ad/resource/d536d1e2-8863-4410-9e0d-1f5d4cb7e96f/download/mpu-eco.-development-and-tourism.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/3075ee2c-23ba-4e66-a2cc-6d58a1fd23ad/resource/091f0c2f-3c1e-45a6-aa9f-764be90e16cd/download/mpu-vote-06-economic-development-and-tourism.pdf
 vote_number: 6
 vote_primary:
   name: Economic Development and Tourism

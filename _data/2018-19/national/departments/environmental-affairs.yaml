@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 27 - Environmental Affairs
+    url: https://data.vulekamali.gov.za/dataset/c4e85a96-8148-46d6-97cf-4495c7bf2cbd/resource/c824dc35-b049-4582-b121-f6d5fdfda164/download/vote-27-environmental-affairs.pdf
+  name: AENE 2018-19 - Vote 27 - Environmental Affairs
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 27 - Environmental Affairs
+    url: https://data.vulekamali.gov.za/dataset/c4e85a96-8148-46d6-97cf-4495c7bf2cbd/resource/1d2a226c-893f-48fe-b574-de96af65920b/download/aene18chap-tab-vote27.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 27 - Environmental Affairs
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-environmental-affairs-2018-19/resource/2834953b-8379-4b41-a6b3-cbe5c9969ea9/download/vote-27-environmental-affairs.pdf
+  name: 'National Department: Environmental Affairs 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 27 - Environmental Affairs
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-environmental-affairs-2018-19/resource/ccff34e2-d947-4545-8ccd-f3e030615bb9/download/ene18-vote27_chaptertables.xlsx
 description: 'National department: Environmental Affairs budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -592,15 +616,6 @@ subprogramme_by_programme:
     name: Oceans and Coasts
     type: programme
 title: Environmental Affairs budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 27 - Environmental Affairs:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-environmental-affairs-2018-19/resource/2834953b-8379-4b41-a6b3-cbe5c9969ea9/download/vote-27-environmental-affairs.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-environmental-affairs-2018-19/resource/ccff34e2-d947-4545-8ccd-f3e030615bb9/download/ene18-vote27_chaptertables.xlsx
 vote_number: 27
 vote_primary:
   name: Environmental Affairs

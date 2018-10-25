@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 14 : Public Works'
+    url: https://data.vulekamali.gov.za/dataset/9417b57e-1f82-4750-acc0-efee2825209d/resource/306f0fa3-b267-407d-9433-8686ee211757/download/kzn-vote-14-public-works.pdf
+  name: 'KwaZulu-Natal Department: Public Works 2017-18'
+  tables: null
 description: 'KwaZulu-Natal department: Public Works budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -335,15 +344,6 @@ subprogramme_by_programme:
     name: Provision of Buildings, Structures and Equipment
     type: programme
 title: Public Works budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 14 : Public Works':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/9417b57e-1f82-4750-acc0-efee2825209d/resource/4dba695e-9148-42e4-9f9f-01e1282751ad/download/kzn-public-works.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/9417b57e-1f82-4750-acc0-efee2825209d/resource/306f0fa3-b267-407d-9433-8686ee211757/download/kzn-vote-14-public-works.pdf
 vote_number: 14
 vote_primary:
   name: Public Works

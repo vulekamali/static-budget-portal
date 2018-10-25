@@ -19,6 +19,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 12 : Social Development'
+    url: https://data.vulekamali.gov.za/dataset/7844db0e-0081-4008-9234-81f0fd5641cf/resource/281aecd6-9e28-438c-9c83-f2850eaf0ad8/download/nw-vote-12-social-development.pdf
+  name: 'North West Department: Social Development 2017-18'
+  tables: null
 description: 'North West department: Social Development budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -486,15 +495,6 @@ subprogramme_by_programme:
     name: Special Programs
     type: programme
 title: Social Development budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 12 : Social Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/7844db0e-0081-4008-9234-81f0fd5641cf/resource/a6386176-59cb-4ddb-a026-9a77005cbc7f/download/nw-social-development.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/7844db0e-0081-4008-9234-81f0fd5641cf/resource/281aecd6-9e28-438c-9c83-f2850eaf0ad8/download/nw-vote-12-social-development.pdf
 vote_number: 12
 vote_primary:
   name: Social Development

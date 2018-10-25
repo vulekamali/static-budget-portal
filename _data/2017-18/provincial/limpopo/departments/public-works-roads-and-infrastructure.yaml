@@ -4,12 +4,6 @@
 
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
   url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
@@ -28,6 +22,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 09 : Public Works, Roads and Infrastructure'
+    url: https://data.vulekamali.gov.za/dataset/b09b28fb-c750-4711-a1c4-d0994356be80/resource/1cc4790c-b363-4841-a0a6-ba50376aee55/download/lim-vote-09-public-works-roads-infrastructure.pdf
+  name: 'Limpopo Department: Public Works, Roads and Infrastructure 2017-18'
+  tables: null
 description: 'Limpopo department: Public Works, Roads and Infrastructure budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -328,15 +331,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
   programmes: []
 title: Public Works, Roads and Infrastructure budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 09 : Public Works, Roads and Infrastructure':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/b09b28fb-c750-4711-a1c4-d0994356be80/resource/a2114a7a-eedb-4f83-b220-798ac7414c47/download/lim-public-works-roads-and-infrastructure.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/b09b28fb-c750-4711-a1c4-d0994356be80/resource/1cc4790c-b363-4841-a0a6-ba50376aee55/download/lim-vote-09-public-works-roads-infrastructure.pdf
 vote_number: 9
 vote_primary:
   name: Public Works, Roads and Infrastructure

@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 40 - Sport and Recreation South Africa
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-sport-and-recreation-south-africa-2016-17/resource/b7abb4a9-f56c-4194-8a5b-959b49e7c779/download/vote-40-sport-and-recreation-south-africa.pdf
+  name: 'National Department: Sport and Recreation South Africa 2016-17'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 40 - Sport and Recreation South Africa
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-sport-and-recreation-south-africa-2016-17/resource/6ec2d175-5427-4590-9eb7-1362528fe804/download/ene16chap-tab-vote40.xls
 description: 'National department: Sport and Recreation South Africa budget data for
   the 2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -384,15 +397,6 @@ subprogramme_by_programme:
     name: Winning Nation
     type: programme
 title: Sport and Recreation South Africa budget 2016-17  - vulekamali
-treasury_datasets:
-  ENE for Vote 40 - Sport and Recreation South Africa:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-sport-and-recreation-south-africa-2016-17/resource/b7abb4a9-f56c-4194-8a5b-959b49e7c779/download/vote-40-sport-and-recreation-south-africa.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-sport-and-recreation-south-africa-2016-17/resource/6ec2d175-5427-4590-9eb7-1362528fe804/download/ene16chap-tab-vote40.xls
 vote_number: 40
 vote_primary:
   name: Sport and Recreation South Africa

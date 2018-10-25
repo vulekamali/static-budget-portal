@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 3 - Health
+    url: https://data.vulekamali.gov.za/dataset/5a5050eb-9a1b-426a-ae20-3571a6d7a999/resource/ebaa1e04-5f19-4ed7-b2ab-bc1ca28139da/download/ec-vote-03-health.pdf
+  name: 'Eastern Cape Department: Health 2018-19'
+  tables: null
 description: 'Eastern Cape department: Health budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -563,15 +572,6 @@ subprogramme_by_programme:
     name: Provincial Hospital Services
     type: programme
 title: Health budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 3 - Health:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/5a5050eb-9a1b-426a-ae20-3571a6d7a999/resource/ebaa1e04-5f19-4ed7-b2ab-bc1ca28139da/download/ec-vote-03-health.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/5a5050eb-9a1b-426a-ae20-3571a6d7a999/resource/315dda0f-1d74-43e4-b560-0cda15112188/download/ec-health.xlsm
 vote_number: 3
 vote_primary:
   name: Health

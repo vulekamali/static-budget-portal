@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 02 : Provincial Legislature'
+    url: https://data.vulekamali.gov.za/dataset/d39fcf33-5b4e-45cd-89fb-9cadf184327a/resource/cf5c0a17-96e2-43a2-923d-85fd05e0159b/download/mpu-vote-02-provincial-legislature.pdf
+  name: 'Mpumalanga Department: Provincial Legislature 2016-17'
+  tables: null
 description: 'Mpumalanga department: Provincial Legislature budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -219,15 +228,6 @@ subprogramme_by_programme:
     name: Parliamentary Business
     type: programme
 title: Provincial Legislature budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 02 : Provincial Legislature':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/d39fcf33-5b4e-45cd-89fb-9cadf184327a/resource/d0ebadd0-09a3-46c0-8cbc-4a2b85d3bb03/download/mpu-provincial-legislature.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/d39fcf33-5b4e-45cd-89fb-9cadf184327a/resource/cf5c0a17-96e2-43a2-923d-85fd05e0159b/download/mpu-vote-02-provincial-legislature.pdf
 vote_number: 2
 vote_primary:
   name: Provincial Legislature

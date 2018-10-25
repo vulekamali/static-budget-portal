@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 12 : Sport, Arts, Culture and Recreation'
+    url: https://data.vulekamali.gov.za/dataset/eaf3771c-21c5-4140-a161-1c0da038bbe2/resource/9ef33cec-2a78-41d3-9057-27417f23621b/download/fs-vote-12-sport-arts-culture-and-recreation.pdf
+  name: 'Free State Department: Sport, Arts, Culture and Recreation 2016-17'
+  tables: null
 description: 'Free State department: Sport, Arts, Culture and Recreation budget data
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -314,15 +323,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
   programmes: []
 title: Sport, Arts, Culture and Recreation budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 12 : Sport, Arts, Culture and Recreation':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/eaf3771c-21c5-4140-a161-1c0da038bbe2/resource/8c4b10f9-fcbe-4f3b-9824-853d7d81406e/download/fs-sport-art-culture-and-recrea.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/eaf3771c-21c5-4140-a161-1c0da038bbe2/resource/9ef33cec-2a78-41d3-9057-27417f23621b/download/fs-vote-12-sport-arts-culture-and-recreation.pdf
 vote_number: 12
 vote_primary:
   name: Sport, Arts, Culture and Recreation

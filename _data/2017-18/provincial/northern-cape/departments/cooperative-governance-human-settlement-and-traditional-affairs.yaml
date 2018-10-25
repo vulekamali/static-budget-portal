@@ -16,6 +16,16 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 09 : Cooperative Governance, Human Settlement and Traditional Affairs'
+    url: https://data.vulekamali.gov.za/dataset/b6eae322-5b89-416b-a8fc-a53438b45eaf/resource/8913c8a7-531d-49a6-b1db-2ce4676502cd/download/nc-vote-09-coop-gov.-hs-and-trad.-affairs.pdf
+  name: 'Northern Cape Department: Cooperative Governance, Human Settlement and Traditional
+    Affairs 2017-18'
+  tables: null
 description: 'Northern Cape department: Cooperative Governance, Human Settlement and
   Traditional Affairs budget data for the 2017-18 financial year from National Treasury
   in partnership with IMALI YETHU.'
@@ -93,15 +103,6 @@ subprogramme_by_programme:
   programmes: []
 title: Cooperative Governance, Human Settlement and Traditional Affairs budget 2017-18  -
   vulekamali
-treasury_datasets:
-  'EPRE for Vote 09 : Cooperative Governance, Human Settlement and Traditional Affairs':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/b6eae322-5b89-416b-a8fc-a53438b45eaf/resource/a04472b5-84dc-4bfa-b1d7-66b8d53a7364/download/nc-cog-hs-and-trad.-affairs.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/b6eae322-5b89-416b-a8fc-a53438b45eaf/resource/8913c8a7-531d-49a6-b1db-2ce4676502cd/download/nc-vote-09-coop-gov.-hs-and-trad.-affairs.pdf
 vote_number: 9
 vote_primary:
   name: Cooperative Governance, Human Settlement and Traditional Affairs

@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 5 - Home Affairs
+    url: https://data.vulekamali.gov.za/dataset/2f6ffa63-0091-4f63-bf6e-cea0a58ff532/resource/3741a8aa-2070-4639-ab61-ab4d89b9990d/download/vote-5-home-affairs.pdf
+  name: AENE 2018-19 - Vote 5 - Home Affairs
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 5 - Home Affairs
+    url: https://data.vulekamali.gov.za/dataset/2f6ffa63-0091-4f63-bf6e-cea0a58ff532/resource/23e18680-482a-4ebc-b55d-c26bce00cc83/download/aene18chap-tab-vote05.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 5 - Home Affairs
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-home-affairs-2018-19/resource/afcae9bf-ceba-47df-bd4d-873a380606cb/download/vote-05-home-affairs.pdf
+  name: 'National Department: Home Affairs 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 5 - Home Affairs
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-home-affairs-2018-19/resource/4abf65d3-c8bc-4653-9090-25ab463a0be5/download/ene18-vote05_chaptertables.xlsx
 description: 'National department: Home Affairs budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -319,15 +343,6 @@ subprogramme_by_programme:
     name: Immigration Affairs
     type: programme
 title: Home Affairs budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 5 - Home Affairs:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-home-affairs-2018-19/resource/afcae9bf-ceba-47df-bd4d-873a380606cb/download/vote-05-home-affairs.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-home-affairs-2018-19/resource/4abf65d3-c8bc-4653-9090-25ab463a0be5/download/ene18-vote05_chaptertables.xlsx
 vote_number: 5
 vote_primary:
   name: Home Affairs

@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 03 - Communications
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-communications-2016-17/resource/af36c0f2-ff15-4ec0-9d1f-374ebd24b2fe/download/vote-3-communications.pdf
+  name: 'National Department: Communications 2016-17'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 03 - Communications
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-communications-2016-17/resource/6a11b0c5-d545-498a-8126-21baade014da/download/ene16chap-tab-vote03.xls
 description: 'National department: Communications budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -319,15 +332,6 @@ subprogramme_by_programme:
     name: Industry and Capacity Development
     type: programme
 title: Communications budget 2016-17  - vulekamali
-treasury_datasets:
-  ENE for Vote 03 - Communications:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-communications-2016-17/resource/af36c0f2-ff15-4ec0-9d1f-374ebd24b2fe/download/vote-3-communications.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-communications-2016-17/resource/6a11b0c5-d545-498a-8126-21baade014da/download/ene16chap-tab-vote03.xls
 vote_number: 3
 vote_primary:
   name: Communications

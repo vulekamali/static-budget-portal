@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 1 - The Presidency
+    url: https://data.vulekamali.gov.za/dataset/9cd6c425-1a57-4c59-a037-544582772cd7/resource/9532fcbc-01d5-4792-934f-351c65969200/download/vote-1-the-presidency.pdf
+  name: AENE 2018-19 - Vote 1 - The Presidency
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 1 - The Presidency
+    url: https://data.vulekamali.gov.za/dataset/9cd6c425-1a57-4c59-a037-544582772cd7/resource/f4684d6d-7576-48d6-8560-4511fe091e6c/download/aene18chap-tab-vote01.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 1 - The Presidency
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-the-presidency-2018-19/resource/be77a88e-daaa-4b94-a0b0-b509b9327a80/download/vote-01-the-presidency.pdf
+  name: 'National Department: The Presidency 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 1 - The Presidency
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-the-presidency-2018-19/resource/6824a65f-dfee-43f6-b146-a463d152d1af/download/ene18-vote01_chaptertables.xlsx
 description: 'National department: The Presidency budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -237,15 +261,6 @@ subprogramme_by_programme:
     name: Executive Support
     type: programme
 title: The Presidency budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 1 - The Presidency:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-the-presidency-2018-19/resource/be77a88e-daaa-4b94-a0b0-b509b9327a80/download/vote-01-the-presidency.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-the-presidency-2018-19/resource/6824a65f-dfee-43f6-b146-a463d152d1af/download/ene18-vote01_chaptertables.xlsx
 vote_number: 1
 vote_primary:
   name: The Presidency

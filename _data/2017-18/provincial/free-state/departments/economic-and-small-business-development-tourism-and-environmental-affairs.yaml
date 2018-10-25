@@ -16,6 +16,17 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 03 : Department of Economic and Small Business Development, Tourism
+      and Environmental Affairs'
+    url: https://data.vulekamali.gov.za/dataset/30874949-d94b-4186-9711-fc06aaf96e60/resource/2a03a454-a2e1-48bb-b4ba-b534c373085d/download/fs-vote-03-economic-development-tourism-and-enviroment.pdf
+  name: 'Free State Department: Economic and Small Business Development, Tourism and
+    Environmental Affairs 2017-18'
+  tables: null
 description: 'Free State department: Economic and Small Business Development, Tourism
   and Environmental Affairs budget data for the 2017-18 financial year from National
   Treasury in partnership with IMALI YETHU.'
@@ -322,15 +333,6 @@ subprogramme_by_programme:
   programmes: []
 title: Economic and Small Business Development, Tourism and Environmental Affairs
   budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 03 : Department of Economic and Small Business Development, Tourism and Environmental Affairs':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/30874949-d94b-4186-9711-fc06aaf96e60/resource/1ac9bf2d-53e3-481a-96ab-773f95fc805e/download/fs-economic-small-busin-dev-tourism.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/30874949-d94b-4186-9711-fc06aaf96e60/resource/2a03a454-a2e1-48bb-b4ba-b534c373085d/download/fs-vote-03-economic-development-tourism-and-enviroment.pdf
 vote_number: 3
 vote_primary:
   name: Economic and Small Business Development, Tourism and Environmental Affairs

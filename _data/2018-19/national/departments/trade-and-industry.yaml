@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 34 - Trade and Industry
+    url: https://data.vulekamali.gov.za/dataset/a505498c-ae78-47d0-87d8-51417f615303/resource/b9f09f17-81bd-4ab7-b09e-a82655de231c/download/vote-34-trade-and-industry.pdf
+  name: AENE 2018-19 - Vote 34 - Trade and Industry
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 34 - Trade and Industry
+    url: https://data.vulekamali.gov.za/dataset/a505498c-ae78-47d0-87d8-51417f615303/resource/afe4f51f-3d2b-4d80-8924-d0d492c705c7/download/aene18chap-tab-vote34.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 34 - Trade and Industry
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-trade-and-industry-2018-19/resource/20d3c8e7-30ec-4271-bf58-5a971d60fb4a/download/vote203420trade20and20industry.pdf
+  name: 'National Department: Trade and Industry 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 34 - Trade and Industry
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-trade-and-industry-2018-19/resource/861e549f-87cf-4a4e-8db7-24bc9d44ea70/download/ene18-vote34_chaptertables.xlsx
 description: 'National department: Trade and Industry budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -623,15 +647,6 @@ subprogramme_by_programme:
     name: Trade and Investment South Africa
     type: programme
 title: Trade and Industry budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 34 - Trade and Industry:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-trade-and-industry-2018-19/resource/20d3c8e7-30ec-4271-bf58-5a971d60fb4a/download/vote203420trade20and20industry.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-trade-and-industry-2018-19/resource/861e549f-87cf-4a4e-8db7-24bc9d44ea70/download/ene18-vote34_chaptertables.xlsx
 vote_number: 34
 vote_primary:
   name: Trade and Industry

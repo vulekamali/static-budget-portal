@@ -4,12 +4,6 @@
 
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
   url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
@@ -28,6 +22,8 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget: null
 description: 'Gauteng department: Roads and Transport budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -400,7 +396,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
   programmes: []
 title: Roads and Transport budget 2017-18  - vulekamali
-treasury_datasets: {}
 vote_number: 9
 vote_primary:
   name: Roads and Transport

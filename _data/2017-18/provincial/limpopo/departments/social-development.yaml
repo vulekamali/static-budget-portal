@@ -19,6 +19,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 12 : Social Development'
+    url: https://data.vulekamali.gov.za/dataset/38214806-3e90-4143-bf05-8370031d4999/resource/da0f7acd-3a86-446a-9f03-e2aa250aa8b8/download/lim-vote-12-social-development.pdf
+  name: 'Limpopo Department: Social Development 2017-18'
+  tables: null
 description: 'Limpopo department: Social Development budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -453,15 +462,6 @@ subprogramme_by_programme:
     name: SOCIAL WELFARE SERVICES
     type: programme
 title: Social Development budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 12 : Social Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/38214806-3e90-4143-bf05-8370031d4999/resource/3e2b611a-4ea3-4f96-ad0d-811573423258/download/lim-social-development.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/38214806-3e90-4143-bf05-8370031d4999/resource/da0f7acd-3a86-446a-9f03-e2aa250aa8b8/download/lim-vote-12-social-development.pdf
 vote_number: 12
 vote_primary:
   name: Social Development

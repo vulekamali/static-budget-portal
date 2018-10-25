@@ -7,11 +7,11 @@ contributed_datasets:
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
   url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 - contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
   url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
+- contributor: Public Service Accountability Monitor
+  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
+  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
@@ -28,6 +28,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 07 - National Treasury
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-national-treasury-2017-18/resource/178383b5-c184-4f0a-96da-f3481ada4075/download/vote-07-national-treasury.pdf
+  name: 'National Department: National Treasury 2017-18'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 07 - National Treasury
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-national-treasury-2017-18/resource/52e4b17b-7b75-4f57-a076-41885eb2c8b8/download/ene17-vote07_chaptertables.xlsx
 description: 'National department: National Treasury budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -723,15 +736,6 @@ subprogramme_by_programme:
     name: Technical Support and Development Finance
     type: programme
 title: National Treasury budget 2017-18  - vulekamali
-treasury_datasets:
-  ENE for Vote 07 - National Treasury:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-national-treasury-2017-18/resource/52e4b17b-7b75-4f57-a076-41885eb2c8b8/download/ene17-vote07_chaptertables.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-national-treasury-2017-18/resource/178383b5-c184-4f0a-96da-f3481ada4075/download/vote-07-national-treasury.pdf
 vote_number: 7
 vote_primary:
   name: National Treasury

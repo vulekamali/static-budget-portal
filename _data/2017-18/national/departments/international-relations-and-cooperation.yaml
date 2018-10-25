@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 06 - International Relations and Cooperation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2017-18/resource/d07dd96c-fc97-4f92-b388-2a95947f2468/download/vote-06-international-relations-and-cooperation.pdf
+  name: 'National Department: International Relations and Cooperation 2017-18'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 06 - International Relations and Cooperation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2017-18/resource/5504deaf-d489-46ba-adfd-8888fc01ce34/download/ene17-vote06_chaptertables.xlsx
 description: 'National department: International Relations and Cooperation budget
   data for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -418,15 +431,6 @@ subprogramme_by_programme:
     name: Public Diplomacy and Protocol Services
     type: programme
 title: International Relations and Cooperation budget 2017-18  - vulekamali
-treasury_datasets:
-  ENE for Vote 06 - International Relations and Cooperation:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2017-18/resource/5504deaf-d489-46ba-adfd-8888fc01ce34/download/ene17-vote06_chaptertables.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2017-18/resource/d07dd96c-fc97-4f92-b388-2a95947f2468/download/vote-06-international-relations-and-cooperation.pdf
 vote_number: 6
 vote_primary:
   name: International Relations and Cooperation

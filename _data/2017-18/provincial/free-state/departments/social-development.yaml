@@ -19,6 +19,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 07 : Social Development'
+    url: https://data.vulekamali.gov.za/dataset/2a0bac34-dab6-459f-a0a5-872f90019393/resource/5356d889-c63b-4a69-bc3b-903c92306608/download/fs-vote-07-social-development.pdf
+  name: 'Free State Department: Social Development 2017-18'
+  tables: null
 description: 'Free State department: Social Development budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -451,15 +460,6 @@ subprogramme_by_programme:
     name: Social Welfare Services
     type: programme
 title: Social Development budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 07 : Social Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/2a0bac34-dab6-459f-a0a5-872f90019393/resource/ceadbf50-ee8d-4137-8679-7a5264786bd8/download/fs-social-development.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/2a0bac34-dab6-459f-a0a5-872f90019393/resource/5356d889-c63b-4a69-bc3b-903c92306608/download/fs-vote-07-social-development.pdf
 vote_number: 7
 vote_primary:
   name: Social Development

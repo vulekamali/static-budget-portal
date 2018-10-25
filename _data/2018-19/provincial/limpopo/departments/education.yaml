@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 3 - Education
+    url: https://data.vulekamali.gov.za/dataset/e66df710-2ec4-42de-991e-b90647cf1a07/resource/f19cb47c-d0a1-4f68-b71c-f951092a26de/download/lim-vote-03-education.pdf
+  name: 'Limpopo Department: Education 2018-19'
+  tables: null
 description: 'Limpopo department: Education budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -549,15 +558,6 @@ subprogramme_by_programme:
     name: Public Ordinary School Education
     type: programme
 title: Education budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 3 - Education:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/e66df710-2ec4-42de-991e-b90647cf1a07/resource/f19cb47c-d0a1-4f68-b71c-f951092a26de/download/lim-vote-03-education.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/e66df710-2ec4-42de-991e-b90647cf1a07/resource/631fa108-03bd-443c-8ddf-55b076a0bd5b/download/lim-education.xlsm
 vote_number: 3
 vote_primary:
   name: Education

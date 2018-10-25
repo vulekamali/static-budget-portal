@@ -19,6 +19,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 06 : Social Development'
+    url: https://data.vulekamali.gov.za/dataset/b685197f-412e-4260-839f-9d327d0e0fe5/resource/85339f2b-0a63-4488-992b-07132adb5d76/download/gt-vote-06-social-development.pdf
+  name: 'Gauteng Department: Social Development 2017-18'
+  tables: null
 description: 'Gauteng department: Social Development budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -440,15 +449,6 @@ subprogramme_by_programme:
     name: Social Welfare Services
     type: programme
 title: Social Development budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 06 : Social Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/b685197f-412e-4260-839f-9d327d0e0fe5/resource/d301815b-5d05-4f71-afb6-a6ab316a5f8d/download/gt-social-development.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/b685197f-412e-4260-839f-9d327d0e0fe5/resource/85339f2b-0a63-4488-992b-07132adb5d76/download/gt-vote-06-social-development.pdf
 vote_number: 6
 vote_primary:
   name: Social Development

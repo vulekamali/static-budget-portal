@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 6 - Economic Development, Environment And Tourism
+    url: https://data.vulekamali.gov.za/dataset/95eda5cb-c3c4-4d60-ba28-b7891b4f98f2/resource/acf32d84-5c97-418f-acbd-92914dda1ce3/download/lim-vote-06-economic-dev.-environ.-tourism.pdf
+  name: 'Limpopo Department: Economic Development, Environment And Tourism 2018-19'
+  tables: null
 description: 'Limpopo department: Economic Development, Environment And Tourism budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -346,15 +355,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2018-19
   programmes: []
 title: Economic Development, Environment And Tourism budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 6 - Economic Development, Environment And Tourism:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/95eda5cb-c3c4-4d60-ba28-b7891b4f98f2/resource/acf32d84-5c97-418f-acbd-92914dda1ce3/download/lim-vote-06-economic-dev.-environ.-tourism.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/95eda5cb-c3c4-4d60-ba28-b7891b4f98f2/resource/97a6f9c1-4132-4ddc-8006-50653fe89ef7/download/lim-eco.-dev.-env.-and-tourism.xlsm
 vote_number: 6
 vote_primary:
   name: Economic Development, Environment And Tourism

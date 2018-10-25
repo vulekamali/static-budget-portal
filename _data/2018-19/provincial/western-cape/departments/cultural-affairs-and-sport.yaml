@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 13 - Cultural Affairs And Sport
+    url: https://data.vulekamali.gov.za/dataset/52965c96-b2da-4000-bcda-fc1992f9b012/resource/43605d1a-521e-425b-a5c6-696bac9fb777/download/wc-vote-13-cultural-affairs-and-sport.pdf
+  name: 'Western Cape Department: Cultural Affairs And Sport 2018-19'
+  tables: null
 description: 'Western Cape department: Cultural Affairs And Sport budget data for
   the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -303,15 +312,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2018-19
   programmes: []
 title: Cultural Affairs And Sport budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 13 - Cultural Affairs And Sport:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/52965c96-b2da-4000-bcda-fc1992f9b012/resource/43605d1a-521e-425b-a5c6-696bac9fb777/download/wc-vote-13-cultural-affairs-and-sport.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/52965c96-b2da-4000-bcda-fc1992f9b012/resource/381a8416-d21b-47bd-9e55-0adcf39bcf1b/download/wc-cultural-affairs-and-sport.xlsm
 vote_number: 13
 vote_primary:
   name: Cultural Affairs And Sport

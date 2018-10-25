@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 8 - Provincial Treasury
+    url: https://data.vulekamali.gov.za/dataset/5a7c16bf-a284-41f1-bd7f-1d532d44bb46/resource/03136d5a-0552-4e60-99c6-e0a8c07239b1/download/nc-vote-08-provincial-treasury.pdf
+  name: 'Northern Cape Department: Provincial Treasury 2018-19'
+  tables: null
 description: 'Northern Cape department: Provincial Treasury budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -404,15 +413,6 @@ subprogramme_by_programme:
     name: Sustainable Resource
     type: programme
 title: Provincial Treasury budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 8 - Provincial Treasury:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/5a7c16bf-a284-41f1-bd7f-1d532d44bb46/resource/03136d5a-0552-4e60-99c6-e0a8c07239b1/download/nc-vote-08-provincial-treasury.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/5a7c16bf-a284-41f1-bd7f-1d532d44bb46/resource/3cc0b8e0-0510-4684-a7a5-5c672bd64a21/download/nc-provincial-treasury.xlsm
 vote_number: 8
 vote_primary:
   name: Provincial Treasury

@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 04 : Education'
+    url: https://data.vulekamali.gov.za/dataset/f878866d-a9f9-4ff8-9cf8-1b29cdb9fe55/resource/1fe3eb94-41d9-4e00-a1e8-2f0914cc6c49/download/nc-vote-04-education.pdf
+  name: 'Northern Cape Department: Education 2016-17'
+  tables: null
 description: 'Northern Cape department: Education budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -544,15 +553,6 @@ subprogramme_by_programme:
     name: PUBLIC SPECIAL SCHOOL EDUCATION
     type: programme
 title: Education budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 04 : Education':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/f878866d-a9f9-4ff8-9cf8-1b29cdb9fe55/resource/5c302979-8582-45af-8219-039f76744062/download/nc-education.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/f878866d-a9f9-4ff8-9cf8-1b29cdb9fe55/resource/1fe3eb94-41d9-4e00-a1e8-2f0914cc6c49/download/nc-vote-04-education.pdf
 vote_number: 4
 vote_primary:
   name: Education

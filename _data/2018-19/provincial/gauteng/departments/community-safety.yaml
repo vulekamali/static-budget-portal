@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 10 - Community Safety
+    url: https://data.vulekamali.gov.za/dataset/101d351a-4edc-43e5-a383-dd9f546b76f0/resource/18ba159f-424c-43bc-899e-653181ad9dc5/download/gt-vote-10-community-safety.pdf
+  name: 'Gauteng Department: Community Safety 2018-19'
+  tables: null
 description: 'Gauteng department: Community Safety budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -295,15 +304,6 @@ subprogramme_by_programme:
     name: Traffic Management
     type: programme
 title: Community Safety budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 10 - Community Safety:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/101d351a-4edc-43e5-a383-dd9f546b76f0/resource/18ba159f-424c-43bc-899e-653181ad9dc5/download/gt-vote-10-community-safety.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/101d351a-4edc-43e5-a383-dd9f546b76f0/resource/d8222bb5-4a9a-4763-a019-5688da88d184/download/gt-community-safety.xlsm
 vote_number: 10
 vote_primary:
   name: Community Safety

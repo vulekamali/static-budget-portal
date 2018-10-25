@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 25 - Economic Development
+    url: https://data.vulekamali.gov.za/dataset/4f69ecf7-a184-4ec3-bdd9-4fe4bfaf32c1/resource/fbe9cb1e-20d7-4540-9a81-0a855bc50d65/download/vote-25-economic-development.pdf
+  name: AENE 2018-19 - Vote 25 - Economic Development
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 25 - Economic Development
+    url: https://data.vulekamali.gov.za/dataset/4f69ecf7-a184-4ec3-bdd9-4fe4bfaf32c1/resource/8ccc8e0b-9e05-472e-a108-441c4302f28e/download/aene18chap-tab-vote25.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 25 - Economic Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-economic-development-2018-19/resource/52e92a33-def4-4d50-b8fc-96d45d07c6d3/download/vote-25-economic-development.pdf
+  name: 'National Department: Economic Development 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 25 - Economic Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-economic-development-2018-19/resource/6f1bc72c-0520-4dd0-8ba2-0fcf2a7cb0ca/download/ene18-vote25_chaptertables.xlsx
 description: 'National department: Economic Development budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -298,15 +322,6 @@ subprogramme_by_programme:
     name: Investment, Competition and Trade
     type: programme
 title: Economic Development budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 25 - Economic Development:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-economic-development-2018-19/resource/52e92a33-def4-4d50-b8fc-96d45d07c6d3/download/vote-25-economic-development.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-economic-development-2018-19/resource/6f1bc72c-0520-4dd0-8ba2-0fcf2a7cb0ca/download/ene18-vote25_chaptertables.xlsx
 vote_number: 25
 vote_primary:
   name: Economic Development

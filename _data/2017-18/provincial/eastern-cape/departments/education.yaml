@@ -3,15 +3,9 @@
 #########################################
 
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
 - contributor: Centre for Child Law
   name: 'Mud to bricks: A review of school infrastructure spending and delivery'
   url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
 - contributor: Centre for Child Law
   name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
     Primary School case'
@@ -32,6 +26,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 06 : Education'
+    url: https://data.vulekamali.gov.za/dataset/cedcd4b0-7fdf-4d63-a650-566c045e60a3/resource/41bf2cee-be1b-423d-9c5e-f3896104a9cc/download/ec-vote-06-education.pdf
+  name: 'Eastern Cape Department: Education 2017-18'
+  tables: null
 description: 'Eastern Cape department: Education budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -536,15 +539,6 @@ subprogramme_by_programme:
     name: Public Special School Education
     type: programme
 title: Education budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 06 : Education':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/cedcd4b0-7fdf-4d63-a650-566c045e60a3/resource/1bafbea9-40a9-4f1a-ae09-2c0e9e574818/download/ec-education.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/cedcd4b0-7fdf-4d63-a650-566c045e60a3/resource/41bf2cee-be1b-423d-9c5e-f3896104a9cc/download/ec-vote-06-education.pdf
 vote_number: 6
 vote_primary:
   name: Education

@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 8 - Public Works, Roads And Transport
+    url: https://data.vulekamali.gov.za/dataset/70cd9827-86e4-4fae-a3dd-0b8b76c70885/resource/2a72851d-a3cf-48a3-a82b-211e94761d6e/download/mpu-vote-08-public-works-roads-and-transport.pdf
+  name: 'Mpumalanga Department: Public Works, Roads And Transport 2018-19'
+  tables: null
 description: 'Mpumalanga department: Public Works, Roads And Transport budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -432,15 +441,6 @@ subprogramme_by_programme:
     name: Transport Operations
     type: programme
 title: Public Works, Roads And Transport budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 8 - Public Works, Roads And Transport:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/70cd9827-86e4-4fae-a3dd-0b8b76c70885/resource/2a72851d-a3cf-48a3-a82b-211e94761d6e/download/mpu-vote-08-public-works-roads-and-transport.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/70cd9827-86e4-4fae-a3dd-0b8b76c70885/resource/4157bfa1-7f61-4356-b51a-f91c9c0e16ef/download/mpu-public-works-roads-and-transport.xlsm
 vote_number: 8
 vote_primary:
   name: Public Works, Roads And Transport

@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 1 - Premier
+    url: https://data.vulekamali.gov.za/dataset/6cd7d599-d0cf-4b98-a507-12419472cac2/resource/e82f6543-c83f-4fec-9133-dfe7a117df4e/download/fs-vote-01-office-of-the-premier.pdf
+  name: 'Free State Department: Premier 2018-19'
+  tables: null
 description: 'Free State department: Premier budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -355,15 +364,6 @@ subprogramme_by_programme:
     name: POLICY & GOVERNANCE
     type: programme
 title: Premier budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 1 - Premier:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/6cd7d599-d0cf-4b98-a507-12419472cac2/resource/e82f6543-c83f-4fec-9133-dfe7a117df4e/download/fs-vote-01-office-of-the-premier.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/6cd7d599-d0cf-4b98-a507-12419472cac2/resource/523f87a4-3145-4015-ad60-b9f88eb601f0/download/fs-premier.xlsm
 vote_number: 1
 vote_primary:
   name: Premier

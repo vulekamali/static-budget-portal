@@ -3,9 +3,6 @@
 #########################################
 
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -19,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 15 - Higher Education and Training
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-higher-education-and-training-2017-18/resource/9b63316f-5880-4a00-b8a4-c3db9611a056/download/vote-15-higher-education-and-training.pdf
+  name: 'National Department: Higher Education and Training 2017-18'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 15 - Higher Education and Training
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-higher-education-and-training-2017-18/resource/c6f2d0e0-5554-44ff-a172-de7a1a839abf/download/ene17-vote15_chaptertables.xlsx
 description: 'National department: Higher Education and Training budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -539,15 +549,6 @@ subprogramme_by_programme:
     name: University Education
     type: programme
 title: Higher Education and Training budget 2017-18  - vulekamali
-treasury_datasets:
-  ENE for Vote 15 - Higher Education and Training:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-higher-education-and-training-2017-18/resource/c6f2d0e0-5554-44ff-a172-de7a1a839abf/download/ene17-vote15_chaptertables.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-higher-education-and-training-2017-18/resource/9b63316f-5880-4a00-b8a4-c3db9611a056/download/vote-15-higher-education-and-training.pdf
 vote_number: 15
 vote_primary:
   name: Higher Education and Training

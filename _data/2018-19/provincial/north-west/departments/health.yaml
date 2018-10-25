@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 3 - Health
+    url: https://data.vulekamali.gov.za/dataset/0ca1158c-3959-464f-97a6-c024a972209b/resource/ffbae3f3-5ace-4619-be10-ac5ef1bd0caf/download/nw-vote-03-health.pdf
+  name: 'North West Department: Health 2018-19'
+  tables: null
 description: 'North West department: Health budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -590,15 +599,6 @@ subprogramme_by_programme:
     name: Provincial Hospital Services
     type: programme
 title: Health budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 3 - Health:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/0ca1158c-3959-464f-97a6-c024a972209b/resource/ffbae3f3-5ace-4619-be10-ac5ef1bd0caf/download/nw-vote-03-health.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/0ca1158c-3959-464f-97a6-c024a972209b/resource/cc80ba6c-5234-418f-9c52-350212e19302/download/nw-health.xlsm
 vote_number: 3
 vote_primary:
   name: Health

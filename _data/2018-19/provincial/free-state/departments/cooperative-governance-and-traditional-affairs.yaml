@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 8 - Cooperative Governance And Traditional Affairs
+    url: https://data.vulekamali.gov.za/dataset/e96db310-e618-460e-88f7-13bf077cdf07/resource/b2ef5474-26de-4b81-b122-c2d8afa11740/download/fs-vote-08-cooperative-governance-and-traditional-affairs.pdf
+  name: 'Free State Department: Cooperative Governance And Traditional Affairs 2018-19'
+  tables: null
 description: 'Free State department: Cooperative Governance And Traditional Affairs
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
@@ -396,15 +405,6 @@ subprogramme_by_programme:
     name: Traditional Institutional Management
     type: programme
 title: Cooperative Governance And Traditional Affairs budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 8 - Cooperative Governance And Traditional Affairs:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/e96db310-e618-460e-88f7-13bf077cdf07/resource/7b1db721-f252-46f8-9661-c50cccac9201/download/fs-cogta.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/e96db310-e618-460e-88f7-13bf077cdf07/resource/b2ef5474-26de-4b81-b122-c2d8afa11740/download/fs-vote-08-cooperative-governance-and-traditional-affairs.pdf
 vote_number: 8
 vote_primary:
   name: Cooperative Governance And Traditional Affairs

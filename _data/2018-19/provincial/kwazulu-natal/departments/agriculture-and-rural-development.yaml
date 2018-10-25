@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 3 - Agriculture And Rural Development
+    url: https://data.vulekamali.gov.za/dataset/54830bc7-9ed0-4bb0-9f37-1b9f0d06ff42/resource/085bc845-fd47-49c0-9232-c57328e679ee/download/kzn-vote-03-agriculture-and-rural-development.pdf
+  name: 'KwaZulu-Natal Department: Agriculture And Rural Development 2018-19'
+  tables: null
 description: 'KwaZulu-Natal department: Agriculture And Rural Development budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -362,15 +371,6 @@ subprogramme_by_programme:
     name: Rural Development
     type: programme
 title: Agriculture And Rural Development budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 3 - Agriculture And Rural Development:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/54830bc7-9ed0-4bb0-9f37-1b9f0d06ff42/resource/085bc845-fd47-49c0-9232-c57328e679ee/download/kzn-vote-03-agriculture-and-rural-development.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/54830bc7-9ed0-4bb0-9f37-1b9f0d06ff42/resource/7b1f556f-55f6-460b-8bf4-2ade8f38460b/download/kzn-agriculture-and-rural-dev.xlsm
 vote_number: 3
 vote_primary:
   name: Agriculture And Rural Development

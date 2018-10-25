@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 6 - International Relations and Cooperation
+    url: https://data.vulekamali.gov.za/dataset/0c4b9c66-2b22-4ba2-a74d-1f2c5e67ff27/resource/f22f5343-6093-4c46-9c9f-3ea06cdfbf2d/download/vote-6-international-relations-and-cooperation.pdf
+  name: AENE 2018-19 - Vote 6 - International Relations and Cooperation
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 6 - International Relations and Cooperation
+    url: https://data.vulekamali.gov.za/dataset/0c4b9c66-2b22-4ba2-a74d-1f2c5e67ff27/resource/3e7d9a21-fdd9-490e-b2b7-e3901c37cc36/download/aene18chap-tab-vote06.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 6 - International Relations and Cooperation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2018-19/resource/74dda099-84eb-4a09-bcf7-25cfd3033e55/download/vote-06-international-relations-and-cooperation.pdf
+  name: 'National Department: International Relations and Cooperation 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 6 - International Relations and Cooperation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2018-19/resource/9f1e11ac-bd85-4a02-b8be-ec9d09aaa368/download/ene18-vote06_chaptertables.xlsx
 description: 'National department: International Relations and Cooperation budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -408,15 +432,6 @@ subprogramme_by_programme:
     name: Public Diplomacy and Protocol Services
     type: programme
 title: International Relations and Cooperation budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 6 - International Relations and Cooperation:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2018-19/resource/74dda099-84eb-4a09-bcf7-25cfd3033e55/download/vote-06-international-relations-and-cooperation.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2018-19/resource/9f1e11ac-bd85-4a02-b8be-ec9d09aaa368/download/ene18-vote06_chaptertables.xlsx
 vote_number: 6
 vote_primary:
   name: International Relations and Cooperation

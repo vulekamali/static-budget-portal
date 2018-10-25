@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 35 - Transport
+    url: https://data.vulekamali.gov.za/dataset/c453016c-1338-407c-b08f-22317f5334ff/resource/3ee796cc-398f-4d24-8631-9217fe62177c/download/vote-35-transport.pdf
+  name: AENE 2018-19 - Vote 35 - Transport
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 35 - Transport
+    url: https://data.vulekamali.gov.za/dataset/c453016c-1338-407c-b08f-22317f5334ff/resource/43af0860-a191-4095-9644-2f6c3920779d/download/aene18chap-tab-vote35.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 35 - Transport
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-transport-2018-19/resource/01df6d3b-b0d0-4957-b815-94b23866f710/download/vote-35-transport.pdf
+  name: 'National Department: Transport 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 35 - Transport
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-transport-2018-19/resource/65f8794b-e12b-4f3e-965c-83d75445e733/download/ene18-vote35_chaptertables.xlsx
 description: 'National department: Transport budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -628,15 +652,6 @@ subprogramme_by_programme:
     name: Road Transport
     type: programme
 title: Transport budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 35 - Transport:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-transport-2018-19/resource/01df6d3b-b0d0-4957-b815-94b23866f710/download/vote-35-transport.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-transport-2018-19/resource/65f8794b-e12b-4f3e-965c-83d75445e733/download/ene18-vote35_chaptertables.xlsx
 vote_number: 35
 vote_primary:
   name: Transport

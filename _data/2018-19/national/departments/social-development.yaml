@@ -16,6 +16,30 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 17 - Social Development
+    url: https://data.vulekamali.gov.za/dataset/d7a58767-88a4-47eb-8aad-8f915c58c5e1/resource/1b6aa4cf-08e4-4631-a1d0-5e4484f053ab/download/vote-17-social-development.pdf
+  name: AENE 2018-19 - Vote 17 - Social Development
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 17 - Social Development
+    url: https://data.vulekamali.gov.za/dataset/d7a58767-88a4-47eb-8aad-8f915c58c5e1/resource/4519af1b-59f2-4ceb-928c-f5b8be4e3b6e/download/aene18chap-tab-vote17.xlsx
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 17 - Social Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2018-19/resource/15f48a6b-c054-4159-be2a-04243bcc6fc3/download/vote201720social20development.pdf
+  name: 'National Department: Social Development 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 17 - Social Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2018-19/resource/5e09c366-c6fe-4981-8a9d-68d52d586562/download/ene18-vote17_chaptertables.xlsx
 description: 'National department: Social Development budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -540,15 +564,6 @@ subprogramme_by_programme:
     name: Welfare Services Policy Development and Implementation Support
     type: programme
 title: Social Development budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 17 - Social Development:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2018-19/resource/15f48a6b-c054-4159-be2a-04243bcc6fc3/download/vote201720social20development.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2018-19/resource/5e09c366-c6fe-4981-8a9d-68d52d586562/download/ene18-vote17_chaptertables.xlsx
 vote_number: 17
 vote_primary:
   name: Social Development

@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 08 - Planning, Monitoring and Evaluation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-planning-2016-17/resource/1f9bb3f2-7138-4731-9067-9cc44bc69170/download/vote-8-planning-monitoring-and-evaluation.pdf
+  name: 'National Department: Planning, Monitoring and Evaluation 2016-17'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 08 - Planning, Monitoring and Evaluation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-planning-2016-17/resource/361902ad-4153-4884-8892-4b838f9e1427/download/ene16chap-tab-vote08.xls
 description: 'National department: Planning, Monitoring and Evaluation budget data
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -378,15 +391,6 @@ subprogramme_by_programme:
     name: Outcomes Monitoring and Evaluation
     type: programme
 title: Planning, Monitoring and Evaluation budget 2016-17  - vulekamali
-treasury_datasets:
-  ENE for Vote 08 - Planning, Monitoring and Evaluation:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-planning-2016-17/resource/1f9bb3f2-7138-4731-9067-9cc44bc69170/download/vote-8-planning-monitoring-and-evaluation.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-planning-2016-17/resource/361902ad-4153-4884-8892-4b838f9e1427/download/ene16chap-tab-vote08.xls
 vote_number: 8
 vote_primary:
   name: Planning, Monitoring and Evaluation

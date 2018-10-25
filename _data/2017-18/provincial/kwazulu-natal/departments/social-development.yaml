@@ -19,6 +19,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 13 : Social Development'
+    url: https://data.vulekamali.gov.za/dataset/1adedb2e-8d03-4b7a-ae05-4fc59ed9d1c3/resource/a942b2d4-3283-4438-8d42-8336b5ef069d/download/kzn-vote-13-social-development.pdf
+  name: 'KwaZulu-Natal Department: Social Development 2017-18'
+  tables: null
 description: 'KwaZulu-Natal department: Social Development budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -489,15 +498,6 @@ subprogramme_by_programme:
     name: Social Welfare Services
     type: programme
 title: Social Development budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 13 : Social Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/1adedb2e-8d03-4b7a-ae05-4fc59ed9d1c3/resource/350c711c-5a3b-44f8-a81d-bd25c7e4f9da/download/kzn-social-development.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/1adedb2e-8d03-4b7a-ae05-4fc59ed9d1c3/resource/a942b2d4-3283-4438-8d42-8336b5ef069d/download/kzn-vote-13-social-development.pdf
 vote_number: 13
 vote_primary:
   name: Social Development

@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 07 : Cooperative Governance and Traditional Affairs'
+    url: https://data.vulekamali.gov.za/dataset/1a8cd52b-6fce-4536-ab21-c97e28d0f05b/resource/e0fcad08-ab25-4681-b8d2-a97f892ff0a5/download/ec-vote-07-cogta.pdf
+  name: 'Eastern Cape Department: Cooperative Governance and Traditional Affairs 2017-18'
+  tables: null
 description: 'Eastern Cape department: Cooperative Governance and Traditional Affairs
   budget data for the 2017-18 financial year from National Treasury in partnership
   with IMALI YETHU.'
@@ -337,15 +346,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
   programmes: []
 title: Cooperative Governance and Traditional Affairs budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 07 : Cooperative Governance and Traditional Affairs':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/1a8cd52b-6fce-4536-ab21-c97e28d0f05b/resource/ac0f8023-54cd-434c-b44c-db4d21b9d2c7/download/ec-cogta.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/1a8cd52b-6fce-4536-ab21-c97e28d0f05b/resource/e0fcad08-ab25-4681-b8d2-a97f892ff0a5/download/ec-vote-07-cogta.pdf
 vote_number: 7
 vote_primary:
   name: Cooperative Governance and Traditional Affairs
