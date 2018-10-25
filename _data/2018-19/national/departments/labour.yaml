@@ -16,7 +16,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 28 - Labour
+    url: https://data.vulekamali.gov.za/dataset/1a5dabca-9ae5-441c-bbed-15312334f3e3/resource/8e5691b7-c32f-4308-ba73-fb60a0c32c3b/download/vote-28-labour.pdf
+  name: AENE 2018-19 - Vote 28 - Labour
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 28 - Labour
+    url: https://data.vulekamali.gov.za/dataset/1a5dabca-9ae5-441c-bbed-15312334f3e3/resource/daefaa0d-5a99-4b45-9e54-e8db53ab959b/download/aene18chap-tab-vote28.xlsx
 department_budget:
   document:
     description: ''

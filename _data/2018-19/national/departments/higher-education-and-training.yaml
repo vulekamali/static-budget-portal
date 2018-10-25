@@ -16,7 +16,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 15 - Higher Education and Training
+    url: https://data.vulekamali.gov.za/dataset/fef78114-9a77-48bd-b522-ed1d5db98449/resource/6a259317-dc17-44bd-aae4-a5ef296c9b4f/download/vote-15-higher-education-and-training.pdf
+  name: AENE 2018-19 - Vote 15 - Higher Education and Training
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2018-19 - Vote 15 - Higher Education and Training
+    url: https://data.vulekamali.gov.za/dataset/fef78114-9a77-48bd-b522-ed1d5db98449/resource/036ffe0a-3c5c-4784-a61e-ed4e09b79281/download/aene18chap-tab-vote15.xlsx
 department_budget:
   document:
     description: ''
