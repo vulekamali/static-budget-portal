@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 17 - Social Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2018-19/resource/15f48a6b-c054-4159-be2a-04243bcc6fc3/download/vote201720social20development.pdf
+  name: 'National Department: Social Development 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 17 - Social Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2018-19/resource/5e09c366-c6fe-4981-8a9d-68d52d586562/download/ene18-vote17_chaptertables.xlsx
 description: 'National department: Social Development budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -540,23 +553,6 @@ subprogramme_by_programme:
     name: Welfare Services Policy Development and Implementation Support
     type: programme
 title: Social Development budget 2018-19  - vulekamali
-department_budget:
-  book_chapter:
-    name: ENE for Vote 17 - Social Development
-    document:
-      format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2018-19/resource/15f48a6b-c054-4159-be2a-04243bcc6fc3/download/vote201720social20development.pdf
-    tables:
-      format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-social-development-2018-19/resource/5e09c366-c6fe-4981-8a9d-68d52d586562/download/ene18-vote17_chaptertables.xlsx
-department_adjusted_budget:
-  name: AENE for Vote 17 - Social Development
-  document:
-    format: PDF
-    url: https://example.com/fake.pdf
-  tables:
-    format: XLSX
-    url: https://example.com/fake.xlsx
 vote_number: 17
 vote_primary:
   name: Social Development

@@ -3,9 +3,6 @@
 #########################################
 
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
 - contributor: International Budget Partnership
   name: The transparency of public funding of Basic Education in South Africa
   url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
@@ -16,9 +13,6 @@ contributed_datasets:
   name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
     Primary School case'
   url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -32,6 +26,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 40 - Sport and Recreation South Africa
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-sport-and-recreation-south-africa-2017-18/resource/782a70c6-4d35-48c1-b9cf-71c4ecdfea88/download/vote-40-sport-and-recreation-south-africa.pdf
+  name: 'National Department: Sport and Recreation South Africa 2017-18'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 40 - Sport and Recreation South Africa
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-sport-and-recreation-south-africa-2017-18/resource/bd373194-9985-4187-af78-04791bab0d26/download/ene17-vote40_chaptertables.xlsx
 description: 'National department: Sport and Recreation South Africa budget data for
   the 2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -410,15 +417,6 @@ subprogramme_by_programme:
     name: Winning Nation
     type: programme
 title: Sport and Recreation South Africa budget 2017-18  - vulekamali
-treasury_datasets:
-  ENE for Vote 40 - Sport and Recreation South Africa:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-sport-and-recreation-south-africa-2017-18/resource/bd373194-9985-4187-af78-04791bab0d26/download/ene17-vote40_chaptertables.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-sport-and-recreation-south-africa-2017-18/resource/782a70c6-4d35-48c1-b9cf-71c4ecdfea88/download/vote-40-sport-and-recreation-south-africa.pdf
 vote_number: 40
 vote_primary:
   name: Sport and Recreation South Africa

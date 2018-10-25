@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 11 - Culture, Sport And Recreation
+    url: https://data.vulekamali.gov.za/dataset/f4531fff-5207-46ef-a5b1-4618eda536a6/resource/23f289c5-061d-4bc9-bf7d-106bce7e1e35/download/mpu-vote-11-culture-sport-and-recreation.pdf
+  name: 'Mpumalanga Department: Culture, Sport And Recreation 2018-19'
+  tables: null
 description: 'Mpumalanga department: Culture, Sport And Recreation budget data for
   the 2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -363,15 +372,6 @@ subprogramme_by_programme:
     name: Sports and Recreation
     type: programme
 title: Culture, Sport And Recreation budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 11 - Culture, Sport And Recreation:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/f4531fff-5207-46ef-a5b1-4618eda536a6/resource/23f289c5-061d-4bc9-bf7d-106bce7e1e35/download/mpu-vote-11-culture-sport-and-recreation.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/f4531fff-5207-46ef-a5b1-4618eda536a6/resource/de0bc978-1be4-4357-8aa9-d313ae2bebf9/download/mpu-culture-sport-and-recreation.xlsm
 vote_number: 11
 vote_primary:
   name: Culture, Sport And Recreation

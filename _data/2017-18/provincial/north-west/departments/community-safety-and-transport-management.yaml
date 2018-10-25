@@ -4,12 +4,6 @@
 
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
   url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
@@ -28,6 +22,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 05 : Community Safety and Transport Management'
+    url: https://data.vulekamali.gov.za/dataset/b8585a2b-f222-469c-83ef-d0742b3f3694/resource/7a8d7a69-4b7d-4ec1-af88-8339a569520e/download/nw-vote-05-community-safety-and-transport-management.pdf
+  name: 'North West Department: Community Safety and Transport Management 2017-18'
+  tables: null
 description: 'North West department: Community Safety and Transport Management budget
   data for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -345,15 +348,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
   programmes: []
 title: Community Safety and Transport Management budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 05 : Community Safety and Transport Management':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/b8585a2b-f222-469c-83ef-d0742b3f3694/resource/4f06053d-62dc-4e18-b1aa-647957e28d64/download/nw-comm.-safety-and-transport-mgt..xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/b8585a2b-f222-469c-83ef-d0742b3f3694/resource/7a8d7a69-4b7d-4ec1-af88-8339a569520e/download/nw-vote-05-community-safety-and-transport-management.pdf
 vote_number: 5
 vote_primary:
   name: Community Safety and Transport Management

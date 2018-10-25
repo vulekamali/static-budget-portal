@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 33 - Tourism
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-tourism-2016-17/resource/ab1b5fb4-f58e-47b3-b5f8-488770fc0877/download/vote-33-tourism.pdf
+  name: 'National Department: Tourism 2016-17'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 33 - Tourism
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-tourism-2016-17/resource/e15999fe-3e7d-48eb-b832-316179661638/download/ene16chap-tab-vote33.xls
 description: 'National department: Tourism budget data for the 2016-17 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -426,15 +439,6 @@ subprogramme_by_programme:
     name: Policy and Knowledge Services
     type: programme
 title: Tourism budget 2016-17  - vulekamali
-treasury_datasets:
-  ENE for Vote 33 - Tourism:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-tourism-2016-17/resource/ab1b5fb4-f58e-47b3-b5f8-488770fc0877/download/vote-33-tourism.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-tourism-2016-17/resource/e15999fe-3e7d-48eb-b832-316179661638/download/ene16chap-tab-vote33.xls
 vote_number: 33
 vote_primary:
   name: Tourism

@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 18 - Correctional Services
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-correctional-services-2018-19/resource/e77fbd87-ebad-45a0-b29c-7313e4bf0c4e/download/vote-18-correctional-services.pdf
+  name: 'National Department: Correctional Services 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 18 - Correctional Services
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-correctional-services-2018-19/resource/dbf0bde2-a38f-402b-b223-c62b4354bb8a/download/ene18-vote18_chaptertables.xlsx
 description: 'National department: Correctional Services budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -446,15 +459,6 @@ subprogramme_by_programme:
     name: Social Reintegration
     type: programme
 title: Correctional Services budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 18 - Correctional Services:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-correctional-services-2018-19/resource/e77fbd87-ebad-45a0-b29c-7313e4bf0c4e/download/vote-18-correctional-services.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-correctional-services-2018-19/resource/dbf0bde2-a38f-402b-b223-c62b4354bb8a/download/ene18-vote18_chaptertables.xlsx
 vote_number: 18
 vote_primary:
   name: Correctional Services

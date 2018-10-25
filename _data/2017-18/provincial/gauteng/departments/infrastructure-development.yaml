@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 15 : Infrastructure Development'
+    url: https://data.vulekamali.gov.za/dataset/7e35203e-64d5-42ef-8ef2-61e7e8187208/resource/d5d5e57c-dec1-4129-b25d-e1124d699edb/download/gt-vote-15-infrastructure-development.pdf
+  name: 'Gauteng Department: Infrastructure Development 2017-18'
+  tables: null
 description: 'Gauteng department: Infrastructure Development budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -292,15 +301,6 @@ subprogramme_by_programme:
     name: Public Works Infrastructure
     type: programme
 title: Infrastructure Development budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 15 : Infrastructure Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/7e35203e-64d5-42ef-8ef2-61e7e8187208/resource/224c7672-a65a-4abc-8193-7e86d006a22e/download/gt-infrastructure-development.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/7e35203e-64d5-42ef-8ef2-61e7e8187208/resource/d5d5e57c-dec1-4129-b25d-e1124d699edb/download/gt-vote-15-infrastructure-development.pdf
 vote_number: 15
 vote_primary:
   name: Infrastructure Development

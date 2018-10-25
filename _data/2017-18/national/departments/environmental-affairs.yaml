@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 27 - Environmental Affairs
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-environmental-affairs-2017-18/resource/1c5ac8e0-fe98-4838-ab6e-44b823641a4f/download/vote-27-environmental-affairs.pdf
+  name: 'National Department: Environmental Affairs 2017-18'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 27 - Environmental Affairs
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-environmental-affairs-2017-18/resource/1892de86-458f-4c82-9aeb-20193f9ce7e8/download/ene17-vote27_chaptertables.xlsx
 description: 'National department: Environmental Affairs budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -600,15 +613,6 @@ subprogramme_by_programme:
     name: Oceans and Coasts
     type: programme
 title: Environmental Affairs budget 2017-18  - vulekamali
-treasury_datasets:
-  ENE for Vote 27 - Environmental Affairs:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-environmental-affairs-2017-18/resource/1892de86-458f-4c82-9aeb-20193f9ce7e8/download/ene17-vote27_chaptertables.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-environmental-affairs-2017-18/resource/1c5ac8e0-fe98-4838-ab6e-44b823641a4f/download/vote-27-environmental-affairs.pdf
 vote_number: 27
 vote_primary:
   name: Environmental Affairs

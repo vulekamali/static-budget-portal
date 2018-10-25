@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 5 - Education
+    url: https://data.vulekamali.gov.za/dataset/ce8d1719-ae40-4446-99ee-79966afd7f2f/resource/0e0c3ab3-72ca-4b5b-860e-2a52c2e4f5d9/download/kzn-vote-05-education.pdf
+  name: 'KwaZulu-Natal Department: Education 2018-19'
+  tables: null
 description: 'KwaZulu-Natal department: Education budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -492,15 +501,6 @@ subprogramme_by_programme:
     name: PUBLIC SPECIAL SCHOOL EDUCATION
     type: programme
 title: Education budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 5 - Education:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/ce8d1719-ae40-4446-99ee-79966afd7f2f/resource/0e0c3ab3-72ca-4b5b-860e-2a52c2e4f5d9/download/kzn-vote-05-education.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/ce8d1719-ae40-4446-99ee-79966afd7f2f/resource/b1232eb7-d204-4225-84f7-11bd34e09f10/download/kzn-education.xlsm
 vote_number: 5
 vote_primary:
   name: Education

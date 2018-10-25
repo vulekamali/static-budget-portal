@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 23 - Police
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-police-2016-17/resource/19cc06b3-8ec5-4dde-bfa5-9cc6a49f31a2/download/vote-23-police.pdf
+  name: 'National Department: Police 2016-17'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 23 - Police
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-police-2016-17/resource/12fc9b44-fb7d-4cab-9d16-e2b30a18bd80/download/ene16chap-tab-vote23.xls
 description: 'National department: Police budget data for the 2016-17 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -450,15 +463,6 @@ subprogramme_by_programme:
     name: Visible Policing
     type: programme
 title: Police budget 2016-17  - vulekamali
-treasury_datasets:
-  ENE for Vote 23 - Police:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-police-2016-17/resource/19cc06b3-8ec5-4dde-bfa5-9cc6a49f31a2/download/vote-23-police.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-police-2016-17/resource/12fc9b44-fb7d-4cab-9d16-e2b30a18bd80/download/ene16chap-tab-vote23.xls
 vote_number: 23
 vote_primary:
   name: Police

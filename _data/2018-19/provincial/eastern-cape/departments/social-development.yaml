@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 4 - Social Development
+    url: https://data.vulekamali.gov.za/dataset/26d0c4ce-8db8-43fa-b18b-0ffa24c7f817/resource/3e56b1b0-5917-40d2-9ac0-173c28ccd17c/download/ec-vote-04-social-development.pdf
+  name: 'Eastern Cape Department: Social Development 2018-19'
+  tables: null
 description: 'Eastern Cape department: Social Development budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -458,15 +467,6 @@ subprogramme_by_programme:
     name: Social Welfare Services
     type: programme
 title: Social Development budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 4 - Social Development:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/26d0c4ce-8db8-43fa-b18b-0ffa24c7f817/resource/3e56b1b0-5917-40d2-9ac0-173c28ccd17c/download/ec-vote-04-social-development.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/26d0c4ce-8db8-43fa-b18b-0ffa24c7f817/resource/ef80e778-f9fe-4ba4-9e3a-1306b70d290d/download/ec-social-development.xlsm
 vote_number: 4
 vote_primary:
   name: Social Development

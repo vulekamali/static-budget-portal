@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 09 : Community Safety, Security and Liaison'
+    url: https://data.vulekamali.gov.za/dataset/d69edbe1-c491-4a74-9049-3c541468b790/resource/252e43fa-3bd9-4e77-8f0c-f22bd6861288/download/mpu-vote-09-community-safety-security-and-liaison.pdf
+  name: 'Mpumalanga Department: Community Safety, Security and Liaison 2016-17'
+  tables: null
 description: 'Mpumalanga department: Community Safety, Security and Liaison budget
   data for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -281,15 +290,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
   programmes: []
 title: Community Safety, Security and Liaison budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 09 : Community Safety, Security and Liaison':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/d69edbe1-c491-4a74-9049-3c541468b790/resource/1101475e-c6b0-48a8-8eeb-b6686006c3e0/download/mpu-comm.-safety-sec.-and-liaison.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/d69edbe1-c491-4a74-9049-3c541468b790/resource/252e43fa-3bd9-4e77-8f0c-f22bd6861288/download/mpu-vote-09-community-safety-security-and-liaison.pdf
 vote_number: 9
 vote_primary:
   name: Community Safety, Security and Liaison

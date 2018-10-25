@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 10 - Public Service and Administration
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-public-service-and-administration-2016-17/resource/4a13f5cc-28a0-4e79-90af-d97def4d8b3a/download/vote-10-public-service-and-administration.pdf
+  name: 'National Department: Public Service and Administration 2016-17'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 10 - Public Service and Administration
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-public-service-and-administration-2016-17/resource/bf9ea57d-929f-4bb8-aa14-7a0a40257676/download/ene16chap-tab-vote10.xls
 description: 'National department: Public Service and Administration budget data for
   the 2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -517,15 +530,6 @@ subprogramme_by_programme:
     name: Service Delivery Support
     type: programme
 title: Public Service and Administration budget 2016-17  - vulekamali
-treasury_datasets:
-  ENE for Vote 10 - Public Service and Administration:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-public-service-and-administration-2016-17/resource/4a13f5cc-28a0-4e79-90af-d97def4d8b3a/download/vote-10-public-service-and-administration.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-public-service-and-administration-2016-17/resource/bf9ea57d-929f-4bb8-aa14-7a0a40257676/download/ene16chap-tab-vote10.xls
 vote_number: 10
 vote_primary:
   name: Public Service and Administration

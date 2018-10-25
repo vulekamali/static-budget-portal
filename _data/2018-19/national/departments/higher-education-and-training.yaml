@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 15 - Higher Education and Training
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-higher-education-and-training-2018-19/resource/87bbb49e-132d-4f8d-9c27-89b111786c4a/download/vote201520higher20education20and20training.pdf
+  name: 'National Department: Higher Education and Training 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 15 - Higher Education and Training
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-higher-education-and-training-2018-19/resource/695be9d9-f7dc-4e17-af2b-288bf911c303/download/ene18-vote15_chaptertables.xlsx
 description: 'National department: Higher Education and Training budget data for the
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -543,15 +556,6 @@ subprogramme_by_programme:
     name: University Education
     type: programme
 title: Higher Education and Training budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 15 - Higher Education and Training:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-higher-education-and-training-2018-19/resource/87bbb49e-132d-4f8d-9c27-89b111786c4a/download/vote201520higher20education20and20training.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-higher-education-and-training-2018-19/resource/695be9d9-f7dc-4e17-af2b-288bf911c303/download/ene18-vote15_chaptertables.xlsx
 vote_number: 15
 vote_primary:
   name: Higher Education and Training

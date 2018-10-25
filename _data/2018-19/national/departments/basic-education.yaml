@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 14 - Basic Education
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-basic-education-2018-19/resource/02ceabcb-cfd0-43cf-9ce9-c29ba263152a/download/vote-14-basic-education.pdf
+  name: 'National Department: Basic Education 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 14 - Basic Education
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-basic-education-2018-19/resource/39d3dcb7-5c04-4c4b-919b-457ee591a21c/download/ene18-vote14_chaptertables.xlsx
 description: 'National department: Basic Education budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -504,15 +517,6 @@ subprogramme_by_programme:
     name: Teachers, Education Human Resources and Institutional Development
     type: programme
 title: Basic Education budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 14 - Basic Education:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-basic-education-2018-19/resource/02ceabcb-cfd0-43cf-9ce9-c29ba263152a/download/vote-14-basic-education.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-basic-education-2018-19/resource/39d3dcb7-5c04-4c4b-919b-457ee591a21c/download/ene18-vote14_chaptertables.xlsx
 vote_number: 14
 vote_primary:
   name: Basic Education

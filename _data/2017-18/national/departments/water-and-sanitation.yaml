@@ -6,12 +6,6 @@ contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
   url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
@@ -28,6 +22,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 36 - Water and Sanitation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-water-and-sanitation-2017-18/resource/98c7c694-3005-4983-bb67-034e24517c8e/download/vote-36-water-and-sanitation.pdf
+  name: 'National Department: Water and Sanitation 2017-18'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 36 - Water and Sanitation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-water-and-sanitation-2017-18/resource/bcee75f3-58e3-4d2e-977d-e850a6549a3f/download/ene17-vote36_chaptertables.xlsx
 description: 'National department: Water and Sanitation budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -502,15 +509,6 @@ subprogramme_by_programme:
     name: Water Sector Regulation
     type: programme
 title: Water and Sanitation budget 2017-18  - vulekamali
-treasury_datasets:
-  ENE for Vote 36 - Water and Sanitation:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-water-and-sanitation-2017-18/resource/bcee75f3-58e3-4d2e-977d-e850a6549a3f/download/ene17-vote36_chaptertables.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-water-and-sanitation-2017-18/resource/98c7c694-3005-4983-bb67-034e24517c8e/download/vote-36-water-and-sanitation.pdf
 vote_number: 36
 vote_primary:
   name: Water and Sanitation

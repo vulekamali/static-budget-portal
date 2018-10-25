@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 10 - Health
+    url: https://data.vulekamali.gov.za/dataset/ef65c852-9ed3-4e22-8dfa-80f71e2d585b/resource/c538595a-8f6d-4789-acda-3e93e8631cbd/download/nc-vote-10-health.pdf
+  name: 'Northern Cape Department: Health 2018-19'
+  tables: null
 description: 'Northern Cape department: Health budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -557,15 +566,6 @@ subprogramme_by_programme:
     name: Provincial Hospital Services
     type: programme
 title: Health budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 10 - Health:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/ef65c852-9ed3-4e22-8dfa-80f71e2d585b/resource/c538595a-8f6d-4789-acda-3e93e8631cbd/download/nc-vote-10-health.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/ef65c852-9ed3-4e22-8dfa-80f71e2d585b/resource/a8c54b67-33a2-47cc-b5f5-89a131a9f801/download/nc-health.xlsm
 vote_number: 10
 vote_primary:
   name: Health

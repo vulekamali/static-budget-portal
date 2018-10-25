@@ -3,9 +3,6 @@
 #########################################
 
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
 - contributor: Centre for Child Law
   name: 'Mud to bricks: A review of school infrastructure spending and delivery'
   url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
@@ -13,9 +10,6 @@ contributed_datasets:
   name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
     Primary School case'
   url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
 - contributor: International Budget Partnership
   name: The transparency of public funding of Basic Education in South Africa
   url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
@@ -32,6 +26,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 07 : Sport, Arts and Culture'
+    url: https://data.vulekamali.gov.za/dataset/dc89c2ac-b7b1-48e9-9097-8f05a1db9e3c/resource/ee853a47-f532-4417-a52e-cbbf16ee4120/download/nc-vote-07-sport-arts-and-culture.pdf
+  name: 'Northern Cape Department: Sport, Arts and Culture 2017-18'
+  tables: null
 description: 'Northern Cape department: Sport, Arts and Culture budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -421,15 +424,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
   programmes: []
 title: Sport, Arts and Culture budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 07 : Sport, Arts and Culture':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/dc89c2ac-b7b1-48e9-9097-8f05a1db9e3c/resource/67ea26ab-59f2-4055-9f5c-e42d51ca93e1/download/nc-sport-arts-and-culture.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/dc89c2ac-b7b1-48e9-9097-8f05a1db9e3c/resource/ee853a47-f532-4417-a52e-cbbf16ee4120/download/nc-vote-07-sport-arts-and-culture.pdf
 vote_number: 7
 vote_primary:
   name: Sport, Arts and Culture

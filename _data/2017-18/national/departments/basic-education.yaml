@@ -3,9 +3,6 @@
 #########################################
 
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
 - contributor: International Budget Partnership
   name: The transparency of public funding of Basic Education in South Africa
   url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
@@ -16,9 +13,6 @@ contributed_datasets:
   name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
     Primary School case'
   url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -32,6 +26,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 14 - Basic Education
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-basic-education-2017-18/resource/3a9be7d2-97a0-4db3-ae45-81ca1c065bb5/download/vote-14-basic-education.pdf
+  name: 'National Department: Basic Education 2017-18'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 14 - Basic Education
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-basic-education-2017-18/resource/f477f71f-7102-4990-a13e-09382b663dd8/download/ene17-vote14_chaptertables.xlsx
 description: 'National department: Basic Education budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -521,15 +528,6 @@ subprogramme_by_programme:
     name: Teachers, Education Human Resources and Institutional Development
     type: programme
 title: Basic Education budget 2017-18  - vulekamali
-treasury_datasets:
-  ENE for Vote 14 - Basic Education:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-basic-education-2017-18/resource/f477f71f-7102-4990-a13e-09382b663dd8/download/ene17-vote14_chaptertables.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-basic-education-2017-18/resource/3a9be7d2-97a0-4db3-ae45-81ca1c065bb5/download/vote-14-basic-education.pdf
 vote_number: 14
 vote_primary:
   name: Basic Education

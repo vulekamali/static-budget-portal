@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 07 : Finance'
+    url: https://data.vulekamali.gov.za/dataset/2188cf20-bbed-4988-ae42-c46a3858cf7e/resource/1c47e92a-daba-43d0-8374-78918169313d/download/nw-vote-07-finance.pdf
+  name: 'North West Department: Finance 2016-17'
+  tables: null
 description: 'North West department: Finance budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -328,15 +337,6 @@ subprogramme_by_programme:
     name: Sustainable Resource Management
     type: programme
 title: Finance budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 07 : Finance':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/2188cf20-bbed-4988-ae42-c46a3858cf7e/resource/636fc9a2-be26-45f7-9fc5-a64a91cce0aa/download/nw-finance.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/2188cf20-bbed-4988-ae42-c46a3858cf7e/resource/1c47e92a-daba-43d0-8374-78918169313d/download/nw-vote-07-finance.pdf
 vote_number: 7
 vote_primary:
   name: Finance

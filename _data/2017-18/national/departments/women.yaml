@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 13 - Women
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-women-2017-18/resource/ede41831-3e99-4761-ae1d-2d005e55a7f7/download/vote-13-women.pdf
+  name: 'National Department: Women 2017-18'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 13 - Women
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-women-2017-18/resource/12998e58-0226-46cd-bfc4-db26ce64c60c/download/ene17-vote13_chaptertables.xlsx
 description: 'National department: Women budget data for the 2017-18 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -301,15 +314,6 @@ subprogramme_by_programme:
     name: Social Transformation and Economic Empowerment
     type: programme
 title: Women budget 2017-18  - vulekamali
-treasury_datasets:
-  ENE for Vote 13 - Women:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-women-2017-18/resource/12998e58-0226-46cd-bfc4-db26ce64c60c/download/ene17-vote13_chaptertables.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-women-2017-18/resource/ede41831-3e99-4761-ae1d-2d005e55a7f7/download/vote-13-women.pdf
 vote_number: 13
 vote_primary:
   name: Women

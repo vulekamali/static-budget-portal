@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 37 - Arts and Culture
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-arts-and-culture-2018-19/resource/14277a57-0fff-4fc3-b59e-c54b59af5e8f/download/vote-37-arts-and-culture.pdf
+  name: 'National Department: Arts and Culture 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 37 - Arts and Culture
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-arts-and-culture-2018-19/resource/bb9375ec-69e8-41a4-ae3b-f830c0bba01a/download/ene18-vote37_chaptertables.xlsx
 description: 'National department: Arts and Culture budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -444,15 +457,6 @@ subprogramme_by_programme:
     name: Institutional Governance
     type: programme
 title: Arts and Culture budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 37 - Arts and Culture:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-arts-and-culture-2018-19/resource/14277a57-0fff-4fc3-b59e-c54b59af5e8f/download/vote-37-arts-and-culture.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-arts-and-culture-2018-19/resource/bb9375ec-69e8-41a4-ae3b-f830c0bba01a/download/ene18-vote37_chaptertables.xlsx
 vote_number: 37
 vote_primary:
   name: Arts and Culture

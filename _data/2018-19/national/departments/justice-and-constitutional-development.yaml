@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 21 - Justice and Constitutional Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-justice-and-constitutional-development-2018-19/resource/38b04685-eef8-4907-9cf5-f96bb7a264e0/download/vote-21-justice-and-constitutional-development.pdf
+  name: 'National Department: Justice and Constitutional Development 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 21 - Justice and Constitutional Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-justice-and-constitutional-development-2018-19/resource/57746399-8615-4464-bed6-42b9952f92c2/download/ene18-vote21_chaptertables.xlsx
 description: 'National department: Justice and Constitutional Development budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -516,15 +529,6 @@ subprogramme_by_programme:
     name: State Legal Services
     type: programme
 title: Justice and Constitutional Development budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 21 - Justice and Constitutional Development:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-justice-and-constitutional-development-2018-19/resource/38b04685-eef8-4907-9cf5-f96bb7a264e0/download/vote-21-justice-and-constitutional-development.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-justice-and-constitutional-development-2018-19/resource/57746399-8615-4464-bed6-42b9952f92c2/download/ene18-vote21_chaptertables.xlsx
 vote_number: 21
 vote_primary:
   name: Justice and Constitutional Development

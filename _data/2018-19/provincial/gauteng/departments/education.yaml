@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 5 - Education
+    url: https://data.vulekamali.gov.za/dataset/8f761fde-c5c1-4c0e-84c2-53f4fb25b836/resource/f13fc01a-81d9-44f0-8e03-e07df80de604/download/gt-vote-05-education.pdf
+  name: 'Gauteng Department: Education 2018-19'
+  tables: null
 description: 'Gauteng department: Education budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -519,15 +528,6 @@ subprogramme_by_programme:
     name: PUBLIC SPECIAL SCHOOL EDUCATION
     type: programme
 title: Education budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 5 - Education:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/8f761fde-c5c1-4c0e-84c2-53f4fb25b836/resource/f13fc01a-81d9-44f0-8e03-e07df80de604/download/gt-vote-05-education.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/8f761fde-c5c1-4c0e-84c2-53f4fb25b836/resource/972a5c0c-b9b1-4624-be68-99cba819378e/download/gt-education.xlsm
 vote_number: 5
 vote_primary:
   name: Education

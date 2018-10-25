@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 30 - Science and Technology
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-science-and-technology-2018-19/resource/77ab18d1-1dd2-48a8-8924-8cb4713be481/download/vote203020science20and20technology.pdf
+  name: 'National Department: Science and Technology 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 30 - Science and Technology
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-science-and-technology-2018-19/resource/3575ff29-d887-464b-a7fb-56df8a54b1d2/download/ene18-vote30_chaptertables.xlsx
 description: 'National department: Science and Technology budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -403,15 +416,6 @@ subprogramme_by_programme:
     name: Technology Innovation
     type: programme
 title: Science and Technology budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 30 - Science and Technology:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-science-and-technology-2018-19/resource/77ab18d1-1dd2-48a8-8924-8cb4713be481/download/vote203020science20and20technology.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-science-and-technology-2018-19/resource/3575ff29-d887-464b-a7fb-56df8a54b1d2/download/ene18-vote30_chaptertables.xlsx
 vote_number: 30
 vote_primary:
   name: Science and Technology

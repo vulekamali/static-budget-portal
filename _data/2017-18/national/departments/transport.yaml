@@ -6,12 +6,6 @@ contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
   url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
 - contributor: Studies in Poverty and Inequality Institute
   name: Monitoring the right of access to adequate housing in South Africa
   url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
@@ -28,6 +22,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 35 - Transport
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-transport-2017-18/resource/31dd1db8-84c4-4a19-8fa8-a1aa3fe52c82/download/vote-35-transport.pdf
+  name: 'National Department: Transport 2017-18'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 35 - Transport
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-transport-2017-18/resource/f4d10986-87b8-4c73-88e0-f11704287cbd/download/ene17-vote35_chaptertables.xlsx
 description: 'National department: Transport budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -666,15 +673,6 @@ subprogramme_by_programme:
     name: Road Transport
     type: programme
 title: Transport budget 2017-18  - vulekamali
-treasury_datasets:
-  ENE for Vote 35 - Transport:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-transport-2017-18/resource/f4d10986-87b8-4c73-88e0-f11704287cbd/download/ene17-vote35_chaptertables.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-transport-2017-18/resource/31dd1db8-84c4-4a19-8fa8-a1aa3fe52c82/download/vote-35-transport.pdf
 vote_number: 35
 vote_primary:
   name: Transport

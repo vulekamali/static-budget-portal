@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 01 - The Presidency
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-the-presidency-2016-17/resource/f8042b4e-4b5b-41cb-ae38-1bef5cba742e/download/vote-1-the-presidency.pdf
+  name: 'National Department: The Presidency 2016-17'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 01 - The Presidency
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-the-presidency-2016-17/resource/c8c05fb7-0938-4143-9010-33f7b0c5c937/download/ene16chap-tab-vote01.xls
 description: 'National department: The Presidency budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -255,15 +268,6 @@ subprogramme_by_programme:
     name: Executive Support
     type: programme
 title: The Presidency budget 2016-17  - vulekamali
-treasury_datasets:
-  ENE for Vote 01 - The Presidency:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-the-presidency-2016-17/resource/f8042b4e-4b5b-41cb-ae38-1bef5cba742e/download/vote-1-the-presidency.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-the-presidency-2016-17/resource/c8c05fb7-0938-4143-9010-33f7b0c5c937/download/ene16chap-tab-vote01.xls
 vote_number: 1
 vote_primary:
   name: The Presidency

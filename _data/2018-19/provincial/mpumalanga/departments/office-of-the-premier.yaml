@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 1 - Office Of The Premier
+    url: https://data.vulekamali.gov.za/dataset/32835bb9-61e1-4b79-9797-2168888d9fbe/resource/ce6c26fa-864d-42fd-b0b7-6c4869491a63/download/mpu-vote-01-office-of-the-premier.pdf
+  name: 'Mpumalanga Department: Office Of The Premier 2018-19'
+  tables: null
 description: 'Mpumalanga department: Office Of The Premier budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -271,15 +280,6 @@ subprogramme_by_programme:
     name: Policy and Governance
     type: programme
 title: Office Of The Premier budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 1 - Office Of The Premier:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/32835bb9-61e1-4b79-9797-2168888d9fbe/resource/ce6c26fa-864d-42fd-b0b7-6c4869491a63/download/mpu-vote-01-office-of-the-premier.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/32835bb9-61e1-4b79-9797-2168888d9fbe/resource/a037a1e3-341a-4bf8-a3e7-15f9073c64dd/download/mpu-office-of-the-premier.xlsm
 vote_number: 1
 vote_primary:
   name: Office Of The Premier

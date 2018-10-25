@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 3 - Finance
+    url: https://data.vulekamali.gov.za/dataset/bcc1f00c-7a4a-4f20-9063-cb37d56a8373/resource/cad7c4c2-ae8d-462f-a610-2e793d8bed1b/download/mpu-vote-03-provincial-treasury.pdf
+  name: 'Mpumalanga Department: Finance 2018-19'
+  tables: null
 description: 'Mpumalanga department: Finance budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -279,15 +288,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2018-19
   programmes: []
 title: Finance budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 3 - Finance:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/bcc1f00c-7a4a-4f20-9063-cb37d56a8373/resource/cad7c4c2-ae8d-462f-a610-2e793d8bed1b/download/mpu-vote-03-provincial-treasury.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/bcc1f00c-7a4a-4f20-9063-cb37d56a8373/resource/9b798d7a-9eaa-4892-9bba-4132fc9d3eba/download/mpu-finance.xlsm
 vote_number: 3
 vote_primary:
   name: Finance

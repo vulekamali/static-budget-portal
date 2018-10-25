@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 07 : Health'
+    url: https://data.vulekamali.gov.za/dataset/42857ce0-16ce-4959-a681-d3baf98eb912/resource/7bfeda72-d364-4b78-8105-3bc8ff018836/download/kzn-vote-07-health.pdf
+  name: 'KwaZulu-Natal Department: Health 2016-17'
+  tables: null
 description: 'KwaZulu-Natal department: Health budget data for the 2016-17 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -647,15 +656,6 @@ subprogramme_by_programme:
     name: Provincial Hospital Services
     type: programme
 title: Health budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 07 : Health':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/42857ce0-16ce-4959-a681-d3baf98eb912/resource/fbe0b4cc-b120-4dc1-93a1-461a1cfe7463/download/kzn-health.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/42857ce0-16ce-4959-a681-d3baf98eb912/resource/7bfeda72-d364-4b78-8105-3bc8ff018836/download/kzn-vote-07-health.pdf
 vote_number: 7
 vote_primary:
   name: Health

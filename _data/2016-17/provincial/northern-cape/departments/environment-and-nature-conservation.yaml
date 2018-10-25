@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 13 : Environment and Nature Conservation'
+    url: https://data.vulekamali.gov.za/dataset/5b8e7f6d-c2ab-49f7-a98d-3f4ae62bb1f6/resource/aa467cd1-c396-4082-917d-e382d7d05fb5/download/nc-vote-13-environment-nature-conservation.pdf
+  name: 'Northern Cape Department: Environment and Nature Conservation 2016-17'
+  tables: null
 description: 'Northern Cape department: Environment and Nature Conservation budget
   data for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -321,15 +330,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
   programmes: []
 title: Environment and Nature Conservation budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 13 : Environment and Nature Conservation':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/5b8e7f6d-c2ab-49f7-a98d-3f4ae62bb1f6/resource/20c96dab-ecf5-434a-8291-1ac0007cfc41/download/nc-environ.-and-nature-conservation.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/5b8e7f6d-c2ab-49f7-a98d-3f4ae62bb1f6/resource/aa467cd1-c396-4082-917d-e382d7d05fb5/download/nc-vote-13-environment-nature-conservation.pdf
 vote_number: 13
 vote_primary:
   name: Environment and Nature Conservation

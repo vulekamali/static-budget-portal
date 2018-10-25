@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 9 - Public Enterprises
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-public-enterprises-2018-19/resource/9f205db4-9464-402d-9510-5b53c7720893/download/vote-09-public-enterprises.pdf
+  name: 'National Department: Public Enterprises 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 9 - Public Enterprises
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-public-enterprises-2018-19/resource/fc1638b9-b24c-406f-904e-91f00bef9e63/download/ene18-vote09_chaptertables.xlsx
 description: 'National department: Public Enterprises budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -281,15 +294,6 @@ subprogramme_by_programme:
     name: State-owned Companies Governance Assurance and Performance
     type: programme
 title: Public Enterprises budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 9 - Public Enterprises:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-public-enterprises-2018-19/resource/9f205db4-9464-402d-9510-5b53c7720893/download/vote-09-public-enterprises.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-public-enterprises-2018-19/resource/fc1638b9-b24c-406f-904e-91f00bef9e63/download/ene18-vote09_chaptertables.xlsx
 vote_number: 9
 vote_primary:
   name: Public Enterprises

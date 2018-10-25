@@ -16,6 +16,26 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2018-19 - Vote 12 - Statistics South Africa
+    url: https://data.vulekamali.gov.za/dataset/0772a68a-e558-47d2-8992-58c86a396d41/resource/88f9493b-20ba-468a-b174-235fb6493d9e/download/vote-12-statistics-south-africa.pdf
+  name: AENE 2018-19 - Vote 12 - Statistics South Africa
+  tables: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 12 - Statistics South Africa
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-statistics-south-africa-2018-19/resource/9de43f80-258a-4b9c-a107-b04bb0622387/download/vote201220statistics20south20africa.pdf
+  name: 'National Department: Statistics South Africa 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 12 - Statistics South Africa
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-statistics-south-africa-2018-19/resource/ec4cb049-825a-45c3-9440-23dc4f15d1d7/download/ene18-vote12_chaptertables.xlsx
 description: 'National department: Statistics South Africa budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -596,15 +616,6 @@ subprogramme_by_programme:
     name: Survey Operations
     type: programme
 title: Statistics South Africa budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 12 - Statistics South Africa:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-statistics-south-africa-2018-19/resource/9de43f80-258a-4b9c-a107-b04bb0622387/download/vote201220statistics20south20africa.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-statistics-south-africa-2018-19/resource/ec4cb049-825a-45c3-9440-23dc4f15d1d7/download/ene18-vote12_chaptertables.xlsx
 vote_number: 12
 vote_primary:
   name: Statistics South Africa

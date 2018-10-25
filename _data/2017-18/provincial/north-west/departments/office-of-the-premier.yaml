@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 01 : Office of the Premier'
+    url: https://data.vulekamali.gov.za/dataset/d9421d7d-1cc2-4a87-929e-d4692a37bd95/resource/56f37ca6-c9b3-4089-9aeb-aef219041d82/download/nw-vote-01-office-of-the-premier.pdf
+  name: 'North West Department: Office of the Premier 2017-18'
+  tables: null
 description: 'North West department: Office of the Premier budget data for the 2017-18
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -268,15 +277,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
   programmes: []
 title: Office of the Premier budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 01 : Office of the Premier':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/d9421d7d-1cc2-4a87-929e-d4692a37bd95/resource/b8a19194-df29-449f-8c21-a672b23960ef/download/nw-office-of-the-premier.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/d9421d7d-1cc2-4a87-929e-d4692a37bd95/resource/56f37ca6-c9b3-4089-9aeb-aef219041d82/download/nw-vote-01-office-of-the-premier.pdf
 vote_number: 1
 vote_primary:
   name: Office of the Premier

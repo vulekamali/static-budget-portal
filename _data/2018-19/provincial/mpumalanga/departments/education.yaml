@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 7 - Education
+    url: https://data.vulekamali.gov.za/dataset/c4a1c7da-76be-445c-a184-483b703410d4/resource/573fa2bd-e269-4919-9778-f94beef6c7e8/download/mpu-vote-07-education.pdf
+  name: 'Mpumalanga Department: Education 2018-19'
+  tables: null
 description: 'Mpumalanga department: Education budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -492,15 +501,6 @@ subprogramme_by_programme:
     name: Public Special Schools Education
     type: programme
 title: Education budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 7 - Education:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/c4a1c7da-76be-445c-a184-483b703410d4/resource/573fa2bd-e269-4919-9778-f94beef6c7e8/download/mpu-vote-07-education.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/c4a1c7da-76be-445c-a184-483b703410d4/resource/f274ff92-c0eb-4d49-affb-6314d975b662/download/mpu-education.xlsm
 vote_number: 7
 vote_primary:
   name: Education

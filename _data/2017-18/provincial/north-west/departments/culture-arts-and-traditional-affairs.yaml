@@ -3,9 +3,6 @@
 #########################################
 
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
 - contributor: Centre for Child Law
   name: 'Mud to bricks: A review of school infrastructure spending and delivery'
   url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
@@ -13,15 +10,6 @@ contributed_datasets:
   name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
     Primary School case'
   url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
 - contributor: International Budget Partnership
   name: The transparency of public funding of Basic Education in South Africa
   url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
@@ -44,6 +32,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 04 : Culture, Arts and Traditional Affairs'
+    url: https://data.vulekamali.gov.za/dataset/1e6bf1f4-9a91-42e1-a578-6ea9ea0f7266/resource/f0a32f7a-d47b-409b-a344-51d910adfe64/download/nw-vote-04-culture-arts-and-traditional-affairs.pdf
+  name: 'North West Department: Culture, Arts and Traditional Affairs 2017-18'
+  tables: null
 description: 'North West department: Culture, Arts and Traditional Affairs budget
   data for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -417,15 +414,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
   programmes: []
 title: Culture, Arts and Traditional Affairs budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 04 : Culture, Arts and Traditional Affairs':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/1e6bf1f4-9a91-42e1-a578-6ea9ea0f7266/resource/f4ec5251-2355-4b75-9906-5783835c48c6/download/nw-culture-arts-and-trad.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/1e6bf1f4-9a91-42e1-a578-6ea9ea0f7266/resource/f0a32f7a-d47b-409b-a344-51d910adfe64/download/nw-vote-04-culture-arts-and-traditional-affairs.pdf
 vote_number: 4
 vote_primary:
   name: Culture, Arts and Traditional Affairs

@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 12 - Economic Development And Tourism
+    url: https://data.vulekamali.gov.za/dataset/bb26adb2-a893-427a-b5b4-48558cce2253/resource/369c48b3-98f3-4521-a721-2cbf543d825f/download/wc-vote-12-eco-dev.-and-tourism.pdf
+  name: 'Western Cape Department: Economic Development And Tourism 2018-19'
+  tables: null
 description: 'Western Cape department: Economic Development And Tourism budget data
   for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -403,15 +412,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2018-19
   programmes: []
 title: Economic Development And Tourism budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 12 - Economic Development And Tourism:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/bb26adb2-a893-427a-b5b4-48558cce2253/resource/369c48b3-98f3-4521-a721-2cbf543d825f/download/wc-vote-12-eco-dev.-and-tourism.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/bb26adb2-a893-427a-b5b4-48558cce2253/resource/61178a44-2175-45aa-b67a-3d2d24f89907/download/wc-economic-dev.-and-tourism.xlsm
 vote_number: 12
 vote_primary:
   name: Economic Development And Tourism

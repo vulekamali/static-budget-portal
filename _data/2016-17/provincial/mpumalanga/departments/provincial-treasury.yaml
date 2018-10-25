@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 03 : Provincial Treasury'
+    url: https://data.vulekamali.gov.za/dataset/9a8bc46a-12f8-41ed-b273-3b0526907f23/resource/2308f656-8d11-43ae-8ac0-fd0814eee504/download/mpu-vote-03-provincial-treasury.pdf
+  name: 'Mpumalanga Department: Provincial Treasury 2016-17'
+  tables: null
 description: 'Mpumalanga department: Provincial Treasury budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -95,15 +104,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
   programmes: []
 title: Provincial Treasury budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 03 : Provincial Treasury':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/9a8bc46a-12f8-41ed-b273-3b0526907f23/resource/c1e66cdc-d6a6-45c6-925d-abc57f53e28c/download/mpu-finance.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/9a8bc46a-12f8-41ed-b273-3b0526907f23/resource/2308f656-8d11-43ae-8ac0-fd0814eee504/download/mpu-vote-03-provincial-treasury.pdf
 vote_number: 3
 vote_primary:
   name: Provincial Treasury

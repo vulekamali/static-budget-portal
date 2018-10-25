@@ -16,6 +16,20 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 22 - Office of the Chief Justice and Judicial Administration
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-office-of-the-chief-justice-and-judicial-administration-2018-19/resource/dd0a1c4b-17f3-4347-a116-aa3132d4a3ad/download/vote-22-office-of-the-chief-justice-and-judicial-administration.pdf
+  name: 'National Department: Office of the Chief Justice and Judicial Administration
+    2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 22 - Office of the Chief Justice and Judicial Administration
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-office-of-the-chief-justice-and-judicial-administration-2018-19/resource/de48db1f-e615-4df3-8b15-b69827d67e6f/download/ene18-vote22_chaptertables.xlsx
 description: 'National department: Office of the Chief Justice and Judicial Administration
   budget data for the 2018-19 financial year from National Treasury in partnership
   with IMALI YETHU.'
@@ -322,15 +336,6 @@ subprogramme_by_programme:
     name: Superior Court Services
     type: programme
 title: Office of the Chief Justice and Judicial Administration budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 22 - Office of the Chief Justice and Judicial Administration:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-office-of-the-chief-justice-and-judicial-administration-2018-19/resource/dd0a1c4b-17f3-4347-a116-aa3132d4a3ad/download/vote-22-office-of-the-chief-justice-and-judicial-administration.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-office-of-the-chief-justice-and-judicial-administration-2018-19/resource/de48db1f-e615-4df3-8b15-b69827d67e6f/download/ene18-vote22_chaptertables.xlsx
 vote_number: 22
 vote_primary:
   name: Office of the Chief Justice and Judicial Administration

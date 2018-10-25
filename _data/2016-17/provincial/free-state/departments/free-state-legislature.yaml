@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 02 : Free State Legislature'
+    url: https://data.vulekamali.gov.za/dataset/a5e4c5e4-dcf3-4485-9512-032e68a238df/resource/4bdd2874-168c-424b-987f-435a0867e11e/download/fs-vote-02-free-state-legislature.pdf
+  name: 'Free State Department: Free State Legislature 2016-17'
+  tables: null
 description: 'Free State department: Free State Legislature budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -299,15 +308,6 @@ subprogramme_by_programme:
     name: Parliamentary Services
     type: programme
 title: Free State Legislature budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 02 : Free State Legislature':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/a5e4c5e4-dcf3-4485-9512-032e68a238df/resource/4a82f3d3-8d2e-463f-87cb-81864cdadb84/download/fs-legislature.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/a5e4c5e4-dcf3-4485-9512-032e68a238df/resource/4bdd2874-168c-424b-987f-435a0867e11e/download/fs-vote-02-free-state-legislature.pdf
 vote_number: 2
 vote_primary:
   name: Free State Legislature

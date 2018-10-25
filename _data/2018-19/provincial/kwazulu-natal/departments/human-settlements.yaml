@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 8 - Human Settlements
+    url: https://data.vulekamali.gov.za/dataset/2873649f-a285-4a9c-9521-bdf36617c272/resource/486a4e3b-ec3b-426c-830d-77ec4ef70f06/download/kzn-vote-08-human-settlements.pdf
+  name: 'KwaZulu-Natal Department: Human Settlements 2018-19'
+  tables: null
 description: 'KwaZulu-Natal department: Human Settlements budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -306,15 +315,6 @@ subprogramme_by_programme:
     name: Housing Needs, Research and  Planning
     type: programme
 title: Human Settlements budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 8 - Human Settlements:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/2873649f-a285-4a9c-9521-bdf36617c272/resource/486a4e3b-ec3b-426c-830d-77ec4ef70f06/download/kzn-vote-08-human-settlements.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/2873649f-a285-4a9c-9521-bdf36617c272/resource/ccdc516d-20d0-472f-9c4b-1e93c69c31cd/download/kzn-human-settlements.xlsm
 vote_number: 8
 vote_primary:
   name: Human Settlements

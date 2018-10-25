@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 4 - Community Safety
+    url: https://data.vulekamali.gov.za/dataset/82f59d62-dff7-46a3-92fe-e6ac6707ace1/resource/843566ef-09b3-4fb1-9df1-abb3864e908c/download/wc-vote-04-community-safety.pdf
+  name: 'Western Cape Department: Community Safety 2018-19'
+  tables: null
 description: 'Western Cape department: Community Safety budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -372,15 +381,6 @@ subprogramme_by_programme:
     name: Security Risk Management
     type: programme
 title: Community Safety budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 4 - Community Safety:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/82f59d62-dff7-46a3-92fe-e6ac6707ace1/resource/843566ef-09b3-4fb1-9df1-abb3864e908c/download/wc-vote-04-community-safety.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/82f59d62-dff7-46a3-92fe-e6ac6707ace1/resource/d28c330d-1993-413b-9fcc-d1e83264839d/download/wc-community-safety.xlsm
 vote_number: 4
 vote_primary:
   name: Community Safety

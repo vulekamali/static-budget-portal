@@ -4,12 +4,6 @@
 
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
   url_path: /datasets/contributed/budget-brief-department-of-human-settlements
 - contributor: Studies in Poverty and Inequality Institute
@@ -28,6 +22,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 12 : Transport'
+    url: https://data.vulekamali.gov.za/dataset/db14c60e-51ab-41f5-8632-a6acd0fcaaba/resource/3991fc44-8bd3-43c3-b8f6-831ef54a2888/download/kzn-vote-12-transport.pdf
+  name: 'KwaZulu-Natal Department: Transport 2017-18'
+  tables: null
 description: 'KwaZulu-Natal department: Transport budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -496,15 +499,6 @@ subprogramme_by_programme:
     name: 5. Community Based Programme
     type: programme
 title: Transport budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 12 : Transport':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/db14c60e-51ab-41f5-8632-a6acd0fcaaba/resource/d6af4940-308f-4ed6-b9d8-0d7f20cd2de0/download/kzn-transport.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/db14c60e-51ab-41f5-8632-a6acd0fcaaba/resource/3991fc44-8bd3-43c3-b8f6-831ef54a2888/download/kzn-vote-12-transport.pdf
 vote_number: 12
 vote_primary:
   name: Transport

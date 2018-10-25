@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 12 - Statistics South Africa
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-statistics-south-africa-2016-17/resource/b3b4217e-0afa-4e6b-85e7-343cf5ad48a9/download/vote-12-statistics-south-africa.pdf
+  name: 'National Department: Statistics South Africa 2016-17'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 12 - Statistics South Africa
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-statistics-south-africa-2016-17/resource/02dfef5c-caef-4a26-ac80-0372fc968782/download/ene16chap-tab-vote12.xls
 description: 'National department: Statistics South Africa budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -597,15 +610,6 @@ subprogramme_by_programme:
     name: Survey Operations
     type: programme
 title: Statistics South Africa budget 2016-17  - vulekamali
-treasury_datasets:
-  ENE for Vote 12 - Statistics South Africa:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-statistics-south-africa-2016-17/resource/b3b4217e-0afa-4e6b-85e7-343cf5ad48a9/download/vote-12-statistics-south-africa.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-statistics-south-africa-2016-17/resource/02dfef5c-caef-4a26-ac80-0372fc968782/download/ene16chap-tab-vote12.xls
 vote_number: 12
 vote_primary:
   name: Statistics South Africa

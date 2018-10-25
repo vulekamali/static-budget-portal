@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 36 - Water and Sanitation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-water-and-sanitation-2016-17/resource/500f8f27-1330-447f-9d2a-0053d3f719ef/download/vote-36-water-and-sanitation.pdf
+  name: 'National Department: Water and Sanitation 2016-17'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 36 - Water and Sanitation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-water-and-sanitation-2016-17/resource/6dae90f1-d8dd-4458-baab-078ae7bed934/download/ene16chap-tab-vote36.xls
 description: 'National department: Water and Sanitation budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -556,15 +569,6 @@ subprogramme_by_programme:
     name: Water and Sanitation Services
     type: programme
 title: Water and Sanitation budget 2016-17  - vulekamali
-treasury_datasets:
-  ENE for Vote 36 - Water and Sanitation:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-water-and-sanitation-2016-17/resource/500f8f27-1330-447f-9d2a-0053d3f719ef/download/vote-36-water-and-sanitation.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-water-and-sanitation-2016-17/resource/6dae90f1-d8dd-4458-baab-078ae7bed934/download/ene16chap-tab-vote36.xls
 vote_number: 36
 vote_primary:
   name: Water and Sanitation

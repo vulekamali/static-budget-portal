@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 34 - Trade and Industry
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-trade-and-industry-2016-17/resource/de33c52e-f36e-4654-bc5d-420fed9669d1/download/vote-34-trade-and-industry.pdf
+  name: 'National Department: Trade and Industry 2016-17'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 34 - Trade and Industry
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-trade-and-industry-2016-17/resource/bee88458-0f56-4f06-bc6f-8705932539d0/download/ene16chap-tab-vote34.xls
 description: 'National department: Trade and Industry budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -636,15 +649,6 @@ subprogramme_by_programme:
     name: Trade Export South Africa
     type: programme
 title: Trade and Industry budget 2016-17  - vulekamali
-treasury_datasets:
-  ENE for Vote 34 - Trade and Industry:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-trade-and-industry-2016-17/resource/de33c52e-f36e-4654-bc5d-420fed9669d1/download/vote-34-trade-and-industry.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-trade-and-industry-2016-17/resource/bee88458-0f56-4f06-bc6f-8705932539d0/download/ene16chap-tab-vote34.xls
 vote_number: 34
 vote_primary:
   name: Trade and Industry

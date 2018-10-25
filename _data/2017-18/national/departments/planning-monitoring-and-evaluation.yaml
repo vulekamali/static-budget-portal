@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 08 - Planning, Monitoring and Evaluation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-planning-monitoring-and-evaluation-2017-18/resource/23bbf7ca-a187-4153-b3b9-da885a24e461/download/vote-08-planning-monitoring-and-evaluation.pdf
+  name: 'National Department: Planning, Monitoring and Evaluation 2017-18'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 08 - Planning, Monitoring and Evaluation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-planning-monitoring-and-evaluation-2017-18/resource/02089e83-6182-44d9-8032-db6acbf3dc0d/download/ene17-vote08_chaptertables.xlsx
 description: 'National department: Planning, Monitoring and Evaluation budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -459,15 +472,6 @@ subprogramme_by_programme:
     name: Sector Planning and Monitoring
     type: programme
 title: Planning, Monitoring and Evaluation budget 2017-18  - vulekamali
-treasury_datasets:
-  ENE for Vote 08 - Planning, Monitoring and Evaluation:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-planning-monitoring-and-evaluation-2017-18/resource/02089e83-6182-44d9-8032-db6acbf3dc0d/download/ene17-vote08_chaptertables.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-planning-monitoring-and-evaluation-2017-18/resource/23bbf7ca-a187-4153-b3b9-da885a24e461/download/vote-08-planning-monitoring-and-evaluation.pdf
 vote_number: 8
 vote_primary:
   name: Planning, Monitoring and Evaluation

@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 24 - Agriculture, Forestry and Fisheries
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-agriculture-2016-17/resource/b3b1d9dc-fb1a-4f6b-ac49-9171ef1ae16d/download/vote-24-agriculture-forestry-and-fisheries.pdf
+  name: 'National Department: Agriculture, Forestry and Fisheries 2016-17'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 24 - Agriculture, Forestry and Fisheries
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-agriculture-2016-17/resource/1633e1d9-68f9-4d28-bda1-2e08ebf2ac40/download/ene16chap-tab-vote24.xls
 description: 'National department: Agriculture, Forestry and Fisheries budget data
   for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -620,15 +633,6 @@ subprogramme_by_programme:
     name: Trade Promotion and Market Access
     type: programme
 title: Agriculture, Forestry and Fisheries budget 2016-17  - vulekamali
-treasury_datasets:
-  ENE for Vote 24 - Agriculture, Forestry and Fisheries:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-agriculture-2016-17/resource/b3b1d9dc-fb1a-4f6b-ac49-9171ef1ae16d/download/vote-24-agriculture-forestry-and-fisheries.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-agriculture-2016-17/resource/1633e1d9-68f9-4d28-bda1-2e08ebf2ac40/download/ene16chap-tab-vote24.xls
 vote_number: 24
 vote_primary:
   name: Agriculture, Forestry and Fisheries

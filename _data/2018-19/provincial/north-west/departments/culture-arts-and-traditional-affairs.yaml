@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 4 - Culture, Arts And Traditional Affairs
+    url: https://data.vulekamali.gov.za/dataset/bc33fac6-5406-43fb-90cb-8be4eeeec47e/resource/1e7f38cc-9093-4860-b881-9f425c18d5d7/download/nw-vote-04-culture-arts-and-traditional-affairs.pdf
+  name: 'North West Department: Culture, Arts And Traditional Affairs 2018-19'
+  tables: null
 description: 'North West department: Culture, Arts And Traditional Affairs budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -414,15 +423,6 @@ subprogramme_by_programme:
     name: Traditional Affairs
     type: programme
 title: Culture, Arts And Traditional Affairs budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 4 - Culture, Arts And Traditional Affairs:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/bc33fac6-5406-43fb-90cb-8be4eeeec47e/resource/1e7f38cc-9093-4860-b881-9f425c18d5d7/download/nw-vote-04-culture-arts-and-traditional-affairs.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/bc33fac6-5406-43fb-90cb-8be4eeeec47e/resource/e65aa74e-1058-4a91-b12f-b0c4a76a2791/download/nw-culture-arts-and-trad.xlsm
 vote_number: 4
 vote_primary:
   name: Culture, Arts And Traditional Affairs

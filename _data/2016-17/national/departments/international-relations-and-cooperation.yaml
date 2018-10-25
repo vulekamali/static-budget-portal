@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 06 - International Relations and Cooperation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2016-17/resource/c86a33a4-29b0-4233-9dc3-80ed1cd82153/download/vote-6-international-relations-and-cooperation.pdf
+  name: 'National Department: International Relations and Cooperation 2016-17'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 06 - International Relations and Cooperation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2016-17/resource/574a8bc2-f711-4886-be3c-b2684d587646/download/ene16chap-tab-vote06.xls
 description: 'National department: International Relations and Cooperation budget
   data for the 2016-17 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -423,15 +436,6 @@ subprogramme_by_programme:
     name: Public Diplomacy and Protocol Services
     type: programme
 title: International Relations and Cooperation budget 2016-17  - vulekamali
-treasury_datasets:
-  ENE for Vote 06 - International Relations and Cooperation:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2016-17/resource/c86a33a4-29b0-4233-9dc3-80ed1cd82153/download/vote-6-international-relations-and-cooperation.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2016-17/resource/574a8bc2-f711-4886-be3c-b2684d587646/download/ene16chap-tab-vote06.xls
 vote_number: 6
 vote_primary:
   name: International Relations and Cooperation

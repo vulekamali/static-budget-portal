@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 4 - Provincial Treasury
+    url: https://data.vulekamali.gov.za/dataset/d42344b1-18c6-4ec3-b57d-e8c244c01eb2/resource/287ea520-2fb1-470c-aec3-2bcaea80652c/download/fs-vote-04-free-state-provincial-treasury.pdf
+  name: 'Free State Department: Provincial Treasury 2018-19'
+  tables: null
 description: 'Free State department: Provincial Treasury budget data for the 2018-19
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -371,15 +380,6 @@ subprogramme_by_programme:
     name: Sustainable Resource Management
     type: programme
 title: Provincial Treasury budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 4 - Provincial Treasury:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/d42344b1-18c6-4ec3-b57d-e8c244c01eb2/resource/287ea520-2fb1-470c-aec3-2bcaea80652c/download/fs-vote-04-free-state-provincial-treasury.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/d42344b1-18c6-4ec3-b57d-e8c244c01eb2/resource/9c1ee935-3d1c-4e73-87f8-efdfd81aa14a/download/fs-provincial-treasury.xlsm
 vote_number: 4
 vote_primary:
   name: Provincial Treasury

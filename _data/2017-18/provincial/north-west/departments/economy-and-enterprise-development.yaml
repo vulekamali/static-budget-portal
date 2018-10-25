@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 06 : Economy and Entreprise Development'
+    url: https://data.vulekamali.gov.za/dataset/41bd264c-39c6-4b86-a4a8-262530cac924/resource/f56324f6-cf98-405d-bc9d-1286ce146d31/download/nw-vote-06-economy-and-entreprise-development.pdf
+  name: 'North West Department: Economy and Enterprise Development 2017-18'
+  tables: null
 description: 'North West department: Economy and Enterprise Development budget data
   for the 2017-18 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -283,15 +292,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
   programmes: []
 title: Economy and Enterprise Development budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 06 : Economy and Entreprise Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/41bd264c-39c6-4b86-a4a8-262530cac924/resource/d2f3e435-ede2-4935-a207-2458011ee35e/download/nw-economy-and-enterprise-development.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/41bd264c-39c6-4b86-a4a8-262530cac924/resource/f56324f6-cf98-405d-bc9d-1286ce146d31/download/nw-vote-06-economy-and-entreprise-development.pdf
 vote_number: 6
 vote_primary:
   name: Economy and Enterprise Development

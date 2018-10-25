@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 19 - Defence and Military Veterans
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-defence-and-military-veterans-2018-19/resource/05c90106-fa82-47e2-832b-2a0f5d955c48/download/vote201920defence20and20military20veterans.pdf
+  name: 'National Department: Defence and Military Veterans 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 19 - Defence and Military Veterans
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-defence-and-military-veterans-2018-19/resource/c24c140f-af1a-4461-b8ac-e3654fc2f956/download/ene18-vote19_chaptertables.xlsx
 description: 'National department: Military Veterans budget data for the 2018-19 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -302,15 +315,6 @@ subprogramme_by_programme:
     name: Socioeconomic Support
     type: programme
 title: Military Veterans budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 19 - Defence and Military Veterans:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-defence-and-military-veterans-2018-19/resource/05c90106-fa82-47e2-832b-2a0f5d955c48/download/vote201920defence20and20military20veterans.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-defence-and-military-veterans-2018-19/resource/c24c140f-af1a-4461-b8ac-e3654fc2f956/download/ene18-vote19_chaptertables.xlsx
 vote_number: 19
 vote_primary:
   name: Defence and Military Veterans

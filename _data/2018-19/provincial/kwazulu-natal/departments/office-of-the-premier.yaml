@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 1 - Office Of The Premier
+    url: https://data.vulekamali.gov.za/dataset/f2f3efea-fe9d-4e77-a225-5c50cbc0d114/resource/0d44079b-c398-4f0d-bd9a-13649a9c4ff0/download/kzn-vote-01-office-of-the-premier.pdf
+  name: 'KwaZulu-Natal Department: Office Of The Premier 2018-19'
+  tables: null
 description: 'KwaZulu-Natal department: Office Of The Premier budget data for the
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -337,15 +346,6 @@ subprogramme_by_programme:
     name: Policy and Governance
     type: programme
 title: Office Of The Premier budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 1 - Office Of The Premier:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/f2f3efea-fe9d-4e77-a225-5c50cbc0d114/resource/0d44079b-c398-4f0d-bd9a-13649a9c4ff0/download/kzn-vote-01-office-of-the-premier.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/f2f3efea-fe9d-4e77-a225-5c50cbc0d114/resource/ebccd9cc-ef78-4a36-bc01-604c63ec5962/download/kzn-office-of-the-premier.xlsm
 vote_number: 1
 vote_primary:
   name: Office Of The Premier

@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 09 : Environmental Affairs and Development Planning'
+    url: https://data.vulekamali.gov.za/dataset/640e7dab-469f-45ad-b680-178780aff6f8/resource/e3a776de-4f91-4245-8abd-1493bd692913/download/wc-vote-09-environmental-affairs-and-development-planning.pdf
+  name: 'Western Cape Department: Environmental Affairs and Development Planning 2016-17'
+  tables: null
 description: 'Western Cape department: Environmental Affairs and Development Planning
   budget data for the 2016-17 financial year from National Treasury in partnership
   with IMALI YETHU.'
@@ -402,15 +411,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
   programmes: []
 title: Environmental Affairs and Development Planning budget 2016-17  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 09 : Environmental Affairs and Development Planning':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/640e7dab-469f-45ad-b680-178780aff6f8/resource/ea76734f-6ec4-43cb-9fb1-025294414f4d/download/wc-environ.-affairs-and-dev-planning.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/640e7dab-469f-45ad-b680-178780aff6f8/resource/e3a776de-4f91-4245-8abd-1493bd692913/download/wc-vote-09-environmental-affairs-and-development-planning.pdf
 vote_number: 9
 vote_primary:
   name: Environmental Affairs and Development Planning

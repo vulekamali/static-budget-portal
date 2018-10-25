@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 9 - Local Government And Human Settlements
+    url: https://data.vulekamali.gov.za/dataset/479a81bf-a59d-4996-9fc4-d9cc1d199148/resource/ab689897-0ffb-46c8-aeae-00c607f922b0/download/nw-vote-09-local-government-and-human-settlements.pdf
+  name: 'North West Department: Local Government And Human Settlements 2018-19'
+  tables: null
 description: 'North West department: Local Government And Human Settlements budget
   data for the 2018-19 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -276,15 +285,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2018-19
   programmes: []
 title: Local Government And Human Settlements budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 9 - Local Government And Human Settlements:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/479a81bf-a59d-4996-9fc4-d9cc1d199148/resource/ab689897-0ffb-46c8-aeae-00c607f922b0/download/nw-vote-09-local-government-and-human-settlements.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/479a81bf-a59d-4996-9fc4-d9cc1d199148/resource/28a46b70-28ee-43b0-b061-7d0d8ae9a6f4/download/nw-local-government-and-human-settlements.xlsm
 vote_number: 9
 vote_primary:
   name: Local Government And Human Settlements

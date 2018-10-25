@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 4 - Health
+    url: https://data.vulekamali.gov.za/dataset/faff02b6-6075-4a18-97ff-e13d09f2dfda/resource/044ada6a-e67e-4854-b84c-a68859b28c64/download/gt-vote-04-health.pdf
+  name: 'Gauteng Department: Health 2018-19'
+  tables: null
 description: 'Gauteng department: Health budget data for the 2018-19 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -614,15 +623,6 @@ subprogramme_by_programme:
     name: Provincial Hospital Services
     type: programme
 title: Health budget 2018-19  - vulekamali
-treasury_datasets:
-  EPRE for Vote 4 - Health:
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/faff02b6-6075-4a18-97ff-e13d09f2dfda/resource/044ada6a-e67e-4854-b84c-a68859b28c64/download/gt-vote-04-health.pdf
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/faff02b6-6075-4a18-97ff-e13d09f2dfda/resource/fb21d98c-1dc6-4a8e-bb43-9768f6b3c7d7/download/gt-health.xlsm
 vote_number: 4
 vote_primary:
   name: Health

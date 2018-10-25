@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 31 - Small Business Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-small-business-development-2018-19/resource/f5f6b036-48be-44d2-81d8-ad5a5e96cd89/download/vote203120small20business20development.pdf
+  name: 'National Department: Small Business Development 2018-19'
+  tables:
+    description: ''
+    format: XLSX
+    name: Vote 31 - Small Business Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-small-business-development-2018-19/resource/a6d040c7-b889-4257-8a5f-823fc566a430/download/ene18-vote31_chaptertables.xlsx
 description: 'National department: Small Business Development budget data for the
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -338,15 +351,6 @@ subprogramme_by_programme:
     name: Sector Policy and Research
     type: programme
 title: Small Business Development budget 2018-19  - vulekamali
-treasury_datasets:
-  ENE for Vote 31 - Small Business Development:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-small-business-development-2018-19/resource/f5f6b036-48be-44d2-81d8-ad5a5e96cd89/download/vote203120small20business20development.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-small-business-development-2018-19/resource/a6d040c7-b889-4257-8a5f-823fc566a430/download/ene18-vote31_chaptertables.xlsx
 vote_number: 31
 vote_primary:
   name: Small Business Development

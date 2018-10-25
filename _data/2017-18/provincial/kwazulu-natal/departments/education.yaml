@@ -3,9 +3,6 @@
 #########################################
 
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
 - contributor: Centre for Child Law
   name: 'Mud to bricks: A review of school infrastructure spending and delivery'
   url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
@@ -13,9 +10,6 @@ contributed_datasets:
   name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
     Primary School case'
   url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
 - contributor: International Budget Partnership
   name: The transparency of public funding of Basic Education in South Africa
   url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
@@ -32,6 +26,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 05 : Education'
+    url: https://data.vulekamali.gov.za/dataset/492f7c5a-9a7b-4cf4-a8b8-769d7e94afd2/resource/9177d4fd-21b3-4159-a492-0020ab583e52/download/kzn-vote-05-education.pdf
+  name: 'KwaZulu-Natal Department: Education 2017-18'
+  tables: null
 description: 'KwaZulu-Natal department: Education budget data for the 2017-18 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -543,15 +546,6 @@ subprogramme_by_programme:
     name: Public Special School Education
     type: programme
 title: Education budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 05 : Education':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/492f7c5a-9a7b-4cf4-a8b8-769d7e94afd2/resource/d0db782b-f26a-4b30-9da1-7023cdeadab8/download/kzn-education.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/492f7c5a-9a7b-4cf4-a8b8-769d7e94afd2/resource/9177d4fd-21b3-4159-a492-0020ab583e52/download/kzn-vote-05-education.pdf
 vote_number: 5
 vote_primary:
   name: Education

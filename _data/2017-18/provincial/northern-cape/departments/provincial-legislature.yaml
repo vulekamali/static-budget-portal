@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 02 : Provincial Legislature'
+    url: https://data.vulekamali.gov.za/dataset/5af9f2ad-b867-41bf-bea5-a6912923906c/resource/309ddad0-45f1-4b64-94bb-75840ef89901/download/nc-vote-02-provincial-legislature.pdf
+  name: 'Northern Cape Department: Provincial Legislature 2017-18'
+  tables: null
 description: 'Northern Cape department: Provincial Legislature budget data for the
   2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -278,15 +287,6 @@ subprogramme_by_programme:
     name: Parliamentary Business
     type: programme
 title: Provincial Legislature budget 2017-18  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 02 : Provincial Legislature':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSM
-      url: https://data.vulekamali.gov.za/dataset/5af9f2ad-b867-41bf-bea5-a6912923906c/resource/5bdbdcb5-ba63-49ce-b7c1-22fffd4c61a6/download/nc-provincial-legislature.xlsm
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/5af9f2ad-b867-41bf-bea5-a6912923906c/resource/309ddad0-45f1-4b64-94bb-75840ef89901/download/nc-vote-02-provincial-legislature.pdf
 vote_number: 2
 vote_primary:
   name: Provincial Legislature
