@@ -19,13 +19,13 @@ layout: page-shell
   {% assign source_type = 'Estimates of National Expenditure' %}
   {% assign source_type_revenue = 'Estimates of National Expenditure' %}
   {% assign source_type_revenue_short = 'ENE' %}
-  {% assign source_type_adjusted = "Estimates of Provincial Revenue and Expenditure" %}
-  {% assign source_type_adjusted_short = "AEPRE" %}
+  {% assign source_type_adjusted = "Adjusted Estimates of National Expenditure" %}
+  {% assign source_type_adjusted_short = "AENE" %}
 {% else %}
   {% assign source_type = 'Estimates of Provincial Expenditure' %}
   {% assign source_type_revenue = 'Estimates of Provincial Revenue and Expenditure' %}
-  {% assign source_type_adjusted = "Adjusted Estimates of National Expenditure" %}
-  {% assign source_type_adjusted_short = "AENE" %}
+  {% assign source_type_adjusted = "Adjusted Estimates of Provincial Revenue and Expenditure" %}
+  {% assign source_type_adjusted_short = "AEPRE" %}
 {% endif %}
 
 
@@ -49,15 +49,6 @@ layout: page-shell
 {% endif %}
 
 
-{%
-  include components/department-budgets/ArrowButtons/index.html
-  fixed="true"
-  link_1="#section-plan"
-  link_2="#section-implement"
-  link_3="#section-review"
-%}
-
-
 {% if page_data.treasury_datasets %}
   {% for item in page_data.treasury_datasets %}
     {% assign modified_formats = item[1].formats | sort: 'format' %}
@@ -68,6 +59,16 @@ layout: page-shell
   {% assign pdf = pdf_link %}
   {% assign excel = excel_link %}
 {% endif %}
+
+
+{%
+  include components/department-budgets/ArrowButtons/index.html
+  fixed="true"
+  link_1="#section-plan"
+  link_2="#section-implement"
+  link_3="#section-review"
+%}
+
 
 
 
