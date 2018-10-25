@@ -78,6 +78,16 @@
     }
   }
 
+  &.is-purple {
+    background: #ad3c64;
+    border: 1px solid #ad3c64;
+    color: white;
+
+    &:hover {
+      background: darken(#ad3c64, 15%);
+    }
+  }
+
   &.is-loading {
     cursor: default;
 

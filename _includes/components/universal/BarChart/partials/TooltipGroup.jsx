@@ -8,7 +8,7 @@ const colours = [
   '#ad3c64',
 ];
 
-export default function TooltipGroup({ totalGroupSpace, items, groupSpaceArray, rank, lines, title, styling }) {
+export default function TooltipGroup({ totalGroupSpace, items, groupSpaceArray, rank, lines, title, styling, purple }) {
   const {
     barWidth,
     padding,
@@ -74,7 +74,7 @@ export default function TooltipGroup({ totalGroupSpace, items, groupSpaceArray, 
               xPosition={(padding[3] + buffer + displayAmount) - (barWidth / 2)}
               yPosition={(groupMargin / 2) + startPoint + (index * (barWidth + lineGutter)) + (barWidth / 2) + (charLineHeight * charArray.length)}
               {...{ amount, totalGroupSpace }}
-              colour={colours[index]}
+              colour={purple ? '#ad3c64' : colours[index]}
             />
           );
         })

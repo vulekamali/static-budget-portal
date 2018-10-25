@@ -2,7 +2,7 @@ import { h } from 'preact';
 import LineGroupItem from './LineGroupItem.jsx';
 
 
-export default function LineGroups({ totalGroupSpace, groupSpaceArray, items, styling }) {
+export default function LineGroups({ totalGroupSpace, groupSpaceArray, items, styling, purple }) {
   const titles = Object.keys(items);
   const { padding, buffer, valueSpace } = styling;
 
@@ -24,7 +24,7 @@ export default function LineGroups({ totalGroupSpace, groupSpaceArray, items, st
               rank={index}
               lines={items[key]}
               title={key}
-              {...{ totalGroupSpace, groupSpaceArray, styling }}
+              {...{ totalGroupSpace, groupSpaceArray, styling, purple }}
             />
           );
         })

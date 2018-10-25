@@ -100,7 +100,7 @@ export default class ResponsiveChart extends Component {
 
 
   render() {
-    const { type, items } = this.props;
+    const { type, items, purple } = this.props;
     const { mobile, width } = this.state;
     const { getNode } = this.events;
 
@@ -108,7 +108,7 @@ export default class ResponsiveChart extends Component {
       <Markup
         guides={!mobile}
         hover={!mobile}
-        {...{ type, items, width, getNode }}
+        {...{ type, items, width, getNode, purple }}
       />
     );
   }

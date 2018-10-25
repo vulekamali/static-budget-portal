@@ -76,7 +76,7 @@ export default function ProgrammesChart(props) {
   );
 
   return (
-    <div className="Section is-bevel">
+    <div>
       <canvas ref={node => canvasAction(node)} style={{ display: 'none' }} />
       <div className="ProgrammesChart">
         <div className="ProgrammesChart-info">
@@ -103,7 +103,7 @@ export default function ProgrammesChart(props) {
           <div className="Section-card">
             {hasNull ? noValues : withValues}
           </div>
-          <div className="Section-card is-invisible u-textAlignCenter">
+          <div className="Section-card is-invisible u-textAlignCenter u-paddingBottom0">
             {hasNull ? null : downloadButton}
           </div>
         </div>

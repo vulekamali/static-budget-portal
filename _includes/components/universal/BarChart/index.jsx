@@ -21,6 +21,7 @@ export default function BarChart(props) {
     guides,
     scale = 1,
     download,
+    purple,
   } = props;
 
   const { getNode } = props;
@@ -111,8 +112,8 @@ export default function BarChart(props) {
         {width > 300 ? <Breakpoints {...{ styling, totalGroupSpace }} /> : null}
         <Grid {...{ styling, totalGroupSpace }} />
         {guides ? <Guides {...{ styling, totalGroupSpace }} /> : null}
-        <LineGroups {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
-        <Tooltips {...{ totalGroupSpace, groupSpaceArray, items, styling }} />
+        <LineGroups {...{ totalGroupSpace, groupSpaceArray, items, styling, purple }} />
+        <Tooltips {...{ totalGroupSpace, groupSpaceArray, items, styling, purple }} />
 
         { download ?
           <g>

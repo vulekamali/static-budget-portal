@@ -2,7 +2,7 @@ import { h } from 'preact';
 import TooltipGroup from './TooltipGroup.jsx';
 
 
-export default function Tooltips({ totalGroupSpace, groupSpaceArray, items, styling }) {
+export default function Tooltips({ totalGroupSpace, groupSpaceArray, items, styling, purple }) {
   const titles = Object.keys(items);
   const { padding, buffer, valueSpace } = styling;
 
@@ -24,7 +24,7 @@ export default function Tooltips({ totalGroupSpace, groupSpaceArray, items, styl
               rank={index}
               lines={items[key]}
               title={key}
-              {...{ totalGroupSpace, groupSpaceArray, styling, items }}
+              {...{ totalGroupSpace, groupSpaceArray, styling, items, purple }}
             />
           );
         })

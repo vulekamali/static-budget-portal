@@ -7,6 +7,7 @@ layout: page-shell
   {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.data_key] %}
 {% endif %}
 
+
 {% if page_data.government.slug == 'south-africa' %}
   {% assign department_location = 'National' %}
 {% else %}
@@ -21,12 +22,35 @@ layout: page-shell
 {% endif %}
 
 
+{%
+  include components/department-budgets/ArrowButtons/index.html
+  fixed="true"
+  link_1="#section-plan"
+  link_3="#section-review"
+%}
+
+
 <div class="Page-content Page-content--dynamicYears">
-  <div class="Page-contentInner is-full">
-    <div class="u-marginBottom25">
-      <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0">{{ page_data.name }}</h1>
-      <span class="Page-subHeading u-textAlignCenter"> {{ department_location }} Department Budget for {{ page.financial_year }}</span>
-    </div>
+  <div class="Page-contentInner Page-contentInner--department is-full">
+
+    <nav class="SectionIndicator" data-sticky-arrows>
+      <ul class="SectionIndicator-list nav">
+        <li class="SectionIndicator-item nav-item">
+          <a href="#section-plan" data-scroll-smooth="#section-plan" class="SectionIndicator-circle SectionIndicator-circle--green nav-link"></a>
+        </li>
+
+        <li>
+          <span class="SectionIndicator-circle SectionIndicator-circle--orange"></span>
+        </li>
+
+        <li class="nav-item">
+          <a href="#section-review" data-scroll-smooth="#section-review" class="SectionIndicator-circle SectionIndicator-circle--purple nav-link"></a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0 u-marginLeft0">{{ page_data.name }}</h1>
+    <span class="Page-subHeading u-textAlignCenter"> {{ department_location }} Department Budget for {{ page.financial_year }}</span>
 
     {%
       include components/department-budgets/IntroSection/index.html
@@ -34,6 +58,21 @@ layout: page-shell
       datasets=page_data.treasury_datasets
       location=department_location
     %}
+
+    <div class="Page-subHeading u-marginTop15 u-supportsFlex u-textAlignCenter u-marginBottom25">The Budget Cycle</div>
+    <div>
+      {%
+        include components/department-budgets/ArrowButtons/index.html
+        link_1="#section-plan"
+        link_3="#section-review"
+      %}
+    </div>
+
+    <div class="u-marginTop100">
+      <div class="DeptSectionHead DeptSectionHead--green" id="section-plan">
+        Plan
+      </div>
+    </div>
 
     <div class="u-marginTop20">
       <div
@@ -105,6 +144,12 @@ layout: page-shell
         %}
       </div>
     {% endif %}
+
+    <div class="u-marginTop100">
+      <div class="DeptSectionHead DeptSectionHead--purple" id="section-review">
+        Review
+      </div>
+    </div>
 
     <div class="u-marginTop20">
       <div

@@ -4,7 +4,7 @@ import Icon from './../../../universal/Icon/index.jsx';
 import { createModal } from './../../../header-and-footer/Modals/redux.js';
 
 
-export default function Button({ selected, anchor }) {
+export default function Button({ selected, anchor, purple }) {
   const url = encodeURIComponent(window.location.href);
   const message = encodeURIComponent('SA Budget Data from vulekamali');
   const anchorText = anchor ? `#${anchor}` : '';
@@ -46,8 +46,15 @@ export default function Button({ selected, anchor }) {
     return null;
   };
 
+  const rootClasses = [
+    'Button',
+    'is-circle',
+    purple && 'is-purple',
+  ].join(' ');
+
+
   return (
-    <button className="Button is-circle" onClick={share}>
+    <button className={rootClasses} onClick={share}>
       <div className="u-transformRotate270">
         <Icon type="download" size="small" />
       </div>

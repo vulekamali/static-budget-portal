@@ -21,7 +21,7 @@ $mobile-break: 900px;
   top: 0;
   position: fixed;
   z-index: z-index(NavBar);
-  transform: translateX(-100%);
+  transform: translateX(-110%);
   transition: transform 0.3s;
 
   &.is-active {

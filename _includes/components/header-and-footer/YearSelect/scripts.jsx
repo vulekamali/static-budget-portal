@@ -21,11 +21,13 @@ class YearSelectContainer extends Component {
 
     this.updateSticky = () => {
       if (this.node) {
-        const top = this.node.getBoundingClientRect().top;
+        const top = window.pageYOffset || document.documentElement.scrollTop;
 
-        if (top + 300 > 0 && this.state.sticky) {
-          this.setState({ sticky: false });
-        } else if (top + 300 < 0 && !this.state.sticky) {
+        if (top < 200 && this.state.sticky) {
+          return this.setState({ sticky: false });
+        }
+
+        if (top > 200 && !this.state.sticky) {
           this.setState({ sticky: true });
         }
       }

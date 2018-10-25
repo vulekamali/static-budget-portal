@@ -76,7 +76,7 @@ export default function ExpenditureChart(props) {
 
 
   return (
-    <div className="Section is-bevel">
+    <div>
       <canvas ref={node => canvasAction(node)} style={{ display: 'none' }} />
       <div className="ExpenditureChart">
         <div className="ExpenditureChart-info">
@@ -118,13 +118,13 @@ export default function ExpenditureChart(props) {
           <div className="Section-card is-invisible">
             <div className="u-fontWeightBold u-marginBottom10">Share this chart:</div>
             <div className="ExpenditureChart-share">
-              <Share anchor="line-chart" />
+              <Share anchor="line-chart" purple />
             </div>
           </div>
         </div>
         <div className="ExpenditureChart-chart">
           <div className="Section-card">
-            <ResponsiveChart {...{ items, resizeAction, type }} />
+            <ResponsiveChart {...{ items, resizeAction, type }} purple />
             <div className="u-textAlignCenter">
               <label htmlFor="expenditure-select-adjusted" className="ExpenditureChart-radio u-marginRight20">
                 <input
@@ -158,7 +158,7 @@ export default function ExpenditureChart(props) {
             }
           </div>
           <div className="Section-card is-invisible u-textAlignCenter">
-            <button className="Button is-inline" onClick={downloadAction}>Download chart as image (~130 KB)</button>
+            <button className="Button is-purple is-inline" onClick={downloadAction}>Download chart as image (~130 KB)</button>
           </div>
         </div>
       </div>
