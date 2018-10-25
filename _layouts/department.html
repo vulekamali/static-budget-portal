@@ -17,8 +17,35 @@ layout: page-shell
 
 {% if page_data.government.slug == 'south-africa' %}
   {% assign source_type = 'Estimates of National Expenditure' %}
+  {% assign source_type_revenue = 'Estimates of National Expenditure' %}
+  {% assign source_type_revenue_short = 'ENE' %}
+  {% assign source_type_adjusted = "Estimates of Provincial Revenue and Expenditure" %}
+  {% assign source_type_adjusted_short = "AEPRE" %}
 {% else %}
   {% assign source_type = 'Estimates of Provincial Expenditure' %}
+  {% assign source_type_revenue = 'Estimates of Provincial Revenue and Expenditure' %}
+  {% assign source_type_adjusted = "Adjusted Estimates of National Expenditure" %}
+  {% assign source_type_adjusted_short = "AENE" %}
+{% endif %}
+
+
+{% if page_data.department_budget %}
+  {% assign chapter_name = page_data.department_budget.book_chapter.name %}
+  {% assign pdf_link = page_data.department_budget.book_chapter.document.url %}
+  {% assign excel_link = page_data.department_budget.book_chapter.tables.url %}
+{% else %}
+  {% assign chapter_name = null %}
+  {% assign pdf_link = null %}
+  {% assign excel_link = null %}
+{% endif %}
+
+
+{% if page_data.department_adjusted_budget %}
+  {% assign pdf_link_adjusted = page_data.department_adjusted_budget.book_chapter.document.url %}
+  {% assign excel_link_adjusted = page_data.department_adjusted_budget.book_chapter.tables.url %}
+{% else %}
+  {% assign pdf_link_adjusted = null %}
+  {% assign excel_link_adjusted = null %}
 {% endif %}
 
 
@@ -26,8 +53,22 @@ layout: page-shell
   include components/department-budgets/ArrowButtons/index.html
   fixed="true"
   link_1="#section-plan"
+  link_2="#section-implement"
   link_3="#section-review"
 %}
+
+
+{% if page_data.treasury_datasets %}
+  {% for item in page_data.treasury_datasets %}
+    {% assign modified_formats = item[1].formats | sort: 'format' %}
+    {% assign pdf = modified_formats[0].url %}
+    {% assign excel = modified_formats[1].url %}
+  {% endfor %}
+{% else %}
+  {% assign pdf = 'x' %}
+  {% assign excel = 'x' %}
+{% endif %}
+
 
 
 <div class="Page-content Page-content--dynamicYears">
@@ -39,9 +80,9 @@ layout: page-shell
           <a href="#section-plan" data-scroll-smooth="#section-plan" class="SectionIndicator-circle SectionIndicator-circle--green nav-link"></a>
         </li>
 
-        <li>
-          <span class="SectionIndicator-circle SectionIndicator-circle--orange"></span>
-        </li>
+        <li class="nav-item">
+            <a href="#section-implement" data-scroll-smooth="#section-implement" class="SectionIndicator-circle SectionIndicator-circle--orange nav-link"></a>
+          </li>
 
         <li class="nav-item">
           <a href="#section-review" data-scroll-smooth="#section-review" class="SectionIndicator-circle SectionIndicator-circle--purple nav-link"></a>
@@ -64,6 +105,7 @@ layout: page-shell
       {%
         include components/department-budgets/ArrowButtons/index.html
         link_1="#section-plan"
+        link_2="#section-implement"
         link_3="#section-review"
       %}
     </div>
@@ -74,25 +116,56 @@ layout: page-shell
       </div>
     </div>
 
+    <div class="u-marginTop25 u-marginLeft30">
+      <h3 class="Section-title">{{ page.financial_year }} Budget</h3>
+      <p>The {{ source_type_revenue }} ({{ source_type_revenue_short }}) is a book published along with the tabling of the budget for the new financial year.</p>
+    </div>
+
+    {% if chapter_name and pdf_link and excel_link %}
+      <div class="LinksList u-marginBottom10 u-marginLeft30">
+
+        {% if chapter_name and pdf_link %}
+          <div>
+            <a href="{{ pdf_link }}" class="LinksList-item" target="_blank" rel="noopener noreferrer">
+              <span class="LinksList-icon">
+                {% include components/universal/Icon/index.html type="download" %}
+                </span>
+              <span class="LinksList-title">
+                View {{ source_type_revenue_short }} chapter for {{ chapter_name }}. (PDF)
+              </span>
+            </a>
+          </div>
+        {% endif %}
+  
+        {% if excel_link %}
+          <div>
+            <a href="{{ excel_link }}" class="LinksList-item" target="_blank" rel="noopener noreferrer">
+              <span class="LinksList-icon">
+                {% include components/universal/Icon/index.html type="download" %}
+                </span>
+              <span class="LinksList-title">
+                View tables in {{ source_type_revenue_short }} chapter. (Excel)
+              </span>
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+   
     <div class="u-marginTop20">
       <div
         data-component="ProgrammesChart"
         id="programmes-chart"
         data-values="{{ page_data.programmes.programme_budgets | jsonify | escape }}"
         data-year="{{ page.financial_year }}"
-        data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
+        data-excel="{{ excel }}"
+        data-pdf="{{ pdf }}"
         data-dept="{{ page_data.name }}"
         data-sourceType="{{ source_type }}"
         data-dataset="{{ page_data.programmes.dataset_detail_page }}"
       >
       </div>
     </div>
-
-    {% for item in page_data.treasury_datasets %}
-      {% assign modified_formats = item[1].formats | sort: 'format' %}
-      {% assign pdf = modified_formats[0].url %}
-      {% assign excel = modified_formats[1].url %}
-    {% endfor %}
 
     {% if page_data.subprogramme_by_programme %}
       <div class="u-marginTop20">
@@ -146,6 +219,95 @@ layout: page-shell
     {% endif %}
 
     <div class="u-marginTop100">
+      <div class="DeptSectionHead DeptSectionHead--orange" id="section-implement">
+        Implement
+      </div>
+    </div>
+
+    <div class="u-marginTop25 u-marginLeft30">
+      <h3 class="Section-title">{{ page.financial_year }} Adjusted Budget</h3>
+      <p>The {{ source_type_adjusted }} ({{ source_type_adjusted_short }}) is a book published along with the tabling of the budget for the new financial year.</p>
+    </div>
+
+    <div class="LinksList u-marginBottom10 u-marginLeft30">
+      {% if pdf_link_adjusted or excel_link_adjusted %}
+        {% if pdf_link_adjusted %}
+          <div>The budget documents are not available yet on vulekamali
+            <a href="{{ pdf_link }}" class="LinksList-item" target="_blank" rel="noopener noreferrer">
+              <span class="LinksList-icon">
+                {% include components/universal/Icon/index.html type="download" %}
+                </span>
+              <span class="LinksList-title">
+                View {{ source_type_revenue_short }} chapter for {{ chapter_name }} (PDF).
+              </span>
+            </a>
+          </div>
+        {% endif %}
+
+        {% if excel_link_adjusted %}
+          <div>
+            <a href="{{ excel_link }}" class="LinksList-item" target="_blank" rel="noopener noreferrer">
+              <span class="LinksList-icon">
+                {% include components/universal/Icon/index.html type="download" %}
+                </span>
+              <span class="LinksList-title">
+                View tables in {{ source_type_revenue_short }} chapter (Excel).
+              </span>
+            </a>
+          </div>
+        {% endif %}
+      {% endif %}
+    
+      {% if pdf_link_adjusted == null or excel_link_adjusted == null %}
+        <div class="Alert Alert--secondary u-marginBottom20">
+          <div class="Alert-content">
+            {%
+              include components/universal/Icon/index.html
+              type="alert"
+              size="large"
+            %}
+            <span class="Alert-heading">
+              Please note
+            </span>
+          </div>
+          <div class="Alert-text Alert-text--secondary">The adjusted budget documents are not available yet on vulekamali.gov.za</div>
+        </div>
+      {% endif %}
+
+      {% if pdf_link_adjusted == null and excel_link_adjusted %}
+        <div class="Alert Alert--secondary u-marginBottom20">
+          <div class="Alert-content">
+            {%
+              include components/universal/Icon/index.html
+              type="alert"
+              size="large"
+            %}
+            <span class="Alert-heading">
+              Please note
+            </span>
+          </div>
+          <div class="Alert-text Alert-text--secondary">The {{ source_type_revenue_short }} chapter for {{ chapter_name }} (PDF) is not available yet</div>
+        </div>
+      {% endif %}
+
+      {% if excel_link_adjusted == null and pdf_link_adjusted  %}
+        <div class="Alert Alert--secondary u-marginBottom20">
+          <div class="Alert-content">
+            {%
+              include components/universal/Icon/index.html
+              type="alert"
+              size="large"
+            %}
+            <span class="Alert-heading">
+              Please note
+            </span>
+          </div>
+          <div class="Alert-text Alert-text--secondary">The tables in {{ source_type_revenue_short }} chapter (Excel)</div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="u-marginTop100">
       <div class="DeptSectionHead DeptSectionHead--purple" id="section-review">
         Review
       </div>
@@ -158,7 +320,8 @@ layout: page-shell
         data-adjusted="{{ page_data.expenditure_over_time.expenditure.real | jsonify | escape }}"
         data-notAdjusted="{{ page_data.expenditure_over_time.expenditure.nominal | jsonify | escape }}"
         data-year="{{ page.financial_year }}"
-        data-files="{{ page_data.treasury_datasets | jsonify | escape }}"
+        data-excel="{{ excel }}"
+        data-pdf="{{ pdf }}"
         data-department="{{ page_data.name }}"
         data-cpi="{{ site.data.global_values.cpi_dataset_url }}"
         data-sourceType="{{ source_type }}"

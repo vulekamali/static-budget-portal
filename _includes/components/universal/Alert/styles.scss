@@ -5,6 +5,14 @@
   color: #155724;
   background-color: #d4edda;
   border-color: #c3e6cb;
+  fill: #155724;
+
+  &--secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+    fill: #383d41;
+  }
 }
 
 .Alert-heading {
@@ -17,7 +25,6 @@
 
 .Alert-content {
   display: flex;
-  fill: #155724;
 }
 
 .Alert-text {

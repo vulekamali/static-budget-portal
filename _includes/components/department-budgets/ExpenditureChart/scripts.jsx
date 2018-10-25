@@ -23,31 +23,11 @@ const normaliseObject = (result, val) => {
   return null;
 };
 
-const normaliseFormats = (key) => {
-  return (innerResults, val) => {
-    return {
-      ...innerResults,
-      [`${key} (${val.format.replace(/^xls.+/i, 'Excel')})`]: val.url,
-    };
-  };
-};
-
-const normaliseFiles = (rawFiles) => {
-  return (result, key) => {
-    const object = rawFiles[key].formats.reduce(normaliseFormats(key), {});
-
-    return {
-      ...result,
-      ...object,
-    };
-  };
-};
-
 
 class ExpenditureChart extends Component {
   constructor(props) {
     super(props);
-    const { adjusted: rawAdjusted, notAdjusted: rawNotAdjusted, files: rawFiles } = this.props;
+    const { adjusted: rawAdjusted, notAdjusted: rawNotAdjusted, pdf, excel } = this.props;
 
     this.state = {
       selected: 'link',
@@ -71,7 +51,6 @@ class ExpenditureChart extends Component {
 
     this.values = {
       phaseTable: rawAdjusted.filter(removeNulls).map(normalisePhaseTable),
-      files: Object.keys(rawFiles).reduce(normaliseFiles(rawFiles), {}),
       canvas: null,
       items,
     };
@@ -140,11 +119,8 @@ class ExpenditureChart extends Component {
   render() {
     const { source } = this.state;
     const { items: rawItems } = this.values;
-    const { files = {} } = this.props;
+    const { excel, pdf } = this.props;
     const items = rawItems[source];
-    const { formats } = files[Object.keys(files)[0]];
-    const { url: pdf } = formats[0];
-    const { url: excel } = formats[1];
 
     const props = pick(this.props, ['year', 'location', 'cpi', 'dataset', 'year', 'sourceType', 'guide']);
     const values = pick(this.values, ['items', 'phaseTable']);
@@ -163,7 +139,8 @@ const query = {
   notAdjusted: 'json',
   year: 'string',
   location: 'string',
-  files: 'json',
+  excel: 'string',
+  pdf: 'string',
   department: 'string',
   cpi: 'string',
   dataset: 'string',
