@@ -30,9 +30,9 @@ layout: page-shell
 
 
 {% if page_data.department_budget %}
-  {% assign chapter_name = page_data.department_budget.book_chapter.name %}
-  {% assign pdf_link = page_data.department_budget.book_chapter.document.url %}
-  {% assign excel_link = page_data.department_budget.book_chapter.tables.url %}
+  {% assign chapter_name = page_data.department_budget.name %}
+  {% assign pdf_link = page_data.department_budget.document.url %}
+  {% assign excel_link = page_data.department_budget.tables.url %}
 {% else %}
   {% assign chapter_name = null %}
   {% assign pdf_link = null %}
@@ -41,8 +41,8 @@ layout: page-shell
 
 
 {% if page_data.department_adjusted_budget %}
-  {% assign pdf_link_adjusted = page_data.department_adjusted_budget.book_chapter.document.url %}
-  {% assign excel_link_adjusted = page_data.department_adjusted_budget.book_chapter.tables.url %}
+  {% assign pdf_link_adjusted = page_data.department_adjusted_budget.document.url %}
+  {% assign excel_link_adjusted = page_data.department_adjusted_budget.tables.url %}
 {% else %}
   {% assign pdf_link_adjusted = null %}
   {% assign excel_link_adjusted = null %}
@@ -137,7 +137,7 @@ layout: page-shell
             </a>
           </div>
         {% endif %}
-  
+
         {% if excel_link %}
           <div>
             <a href="{{ excel_link }}" class="LinksList-item" target="_blank" rel="noopener noreferrer">
@@ -152,7 +152,7 @@ layout: page-shell
         {% endif %}
       </div>
     {% endif %}
-   
+
     <div class="u-marginTop20">
       <div
         data-component="ProgrammesChart"
@@ -258,7 +258,7 @@ layout: page-shell
           </div>
         {% endif %}
       {% endif %}
-    
+
       {% if pdf_link_adjusted == null or excel_link_adjusted == null %}
         <div class="Alert Alert--secondary u-marginBottom20">
           <div class="Alert-content">
