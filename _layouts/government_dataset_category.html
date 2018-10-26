@@ -18,7 +18,7 @@ layout: page-shell
 
     <div class="Section is-invisible u-fontSize18">
       <div>
-      {{ page_data.description }}
+      {{ page_data.description | markdownify }}
       </div>
 
       {% assign guide_path = "guides/" |append: page.data_key %}
