@@ -66,6 +66,10 @@ layout: page-shell
         </div>
       {% endif %}
 
+      {% if page_data.category.slug == "conditional-grant-frameworks" %}
+        <embed src="{{ page_data.resources[0].url }}#view=FitH" type="application/pdf" width="100%" height="300px" class="PdfEmbed" />
+      {% endif %}
+
       {% if page_data.usage %}
         <div class="BasicContent u-marginTop20">
           <div class="BasicContent-title">How can it be accessed and used?</div>
