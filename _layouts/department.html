@@ -71,8 +71,6 @@ layout: page-shell
 %}
 
 
-
-
 <div class="Page-content Page-content--dynamicYears">
   <div class="Page-contentInner Page-contentInner--department is-full">
 
@@ -165,6 +163,7 @@ layout: page-shell
         data-dept="{{ page_data.name }}"
         data-sourceType="{{ source_type }}"
         data-dataset="{{ page_data.programmes.dataset_detail_page }}"
+        data-csv="{{ page_data.programmes.department_data_csv }}"
       >
       </div>
     </div>
@@ -182,6 +181,7 @@ layout: page-shell
           dataset=page_data.subprogramme_by_programme.dataset_detail_page
           pdf=pdf
           excel=excel
+          csv=page_data.subprogramme_by_programme.department_data_csv
         %}
       </div>
     {% endif %}
@@ -199,6 +199,7 @@ layout: page-shell
           dataset=page_data.subprogramme_by_programme.dataset_detail_page
           pdf=pdf
           excel=excel
+          csv=page_data.economic_classification_by_programme.department_data_csv
         %}
       {% endif %}
     </div>
@@ -216,6 +217,7 @@ layout: page-shell
           dataset=page_data.subprogramme_by_programme.dataset_detail_page
           pdf=pdf
           excel=excel
+          csv=page_data.programme_by_economic_classification.department_data_csv
         %}
       </div>
     {% endif %}
@@ -328,6 +330,7 @@ layout: page-shell
         data-cpi="{{ site.data.global_values.cpi_dataset_url }}"
         data-sourceType="{{ source_type }}"
         data-dataset="{{ page_data.programmes.dataset_detail_page }}"
+        data-csv="{{ page_data.programmes.department_data_csv }}"
       >
       </div>
     </div>

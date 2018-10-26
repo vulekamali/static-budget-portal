@@ -83,7 +83,7 @@ class ProgrammesChart extends Component {
   render() {
     const { hasNull } = this;
     const { width, mobile } = this.state;
-    const { year, dataset, sourceType, guide, excel, pdf } = this.props;
+    const { year, dataset, sourceType, guide, excel, pdf, csv } = this.props;
     const { items } = this.values;
     const { downloadAction, canvasAction } = this.events;
 
@@ -104,6 +104,7 @@ class ProgrammesChart extends Component {
           pdf,
           excel,
           guide,
+          csv,
         }}
       />
     );
@@ -120,6 +121,7 @@ const query = {
   sourceType: 'string',
   dataset: 'string',
   guide: 'string',
+  csv: 'string',
 };
 
 

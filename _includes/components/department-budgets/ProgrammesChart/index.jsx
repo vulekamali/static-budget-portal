@@ -16,6 +16,7 @@ export default function ProgrammesChart(props) {
     guide,
     pdf,
     excel,
+    csv,
   } = props;
 
 
@@ -44,6 +45,15 @@ export default function ProgrammesChart(props) {
           <span>Source:&nbsp;</span>
           <span className="u-textDecorationUnderline">{sourceType} {year}</span>
         </span>
+      </a>
+    </div>
+  );
+
+  const buildCsv = () => (
+    <div>
+      <a href={csv} className="LinksList-item">
+        <span className="LinksList-icon"><Icon type="download" /></span>
+        <span className="LinksList-title">Download this data for analysis (CSV)</span>
       </a>
     </div>
   );
@@ -88,6 +98,7 @@ export default function ProgrammesChart(props) {
           </div>
           <div className="u-marginLeft30">
             {dataset && buildDataset()}
+            {csv && buildCsv()}
             {guide && buildGuide()}
             {pdf && buildPdf()}
             {excel && buildExcel()}

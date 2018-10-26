@@ -119,7 +119,7 @@ class ExpenditureChart extends Component {
   render() {
     const { source } = this.state;
     const { items: rawItems } = this.values;
-    const { excel, pdf } = this.props;
+    const { excel, pdf, csv } = this.props;
     const items = rawItems[source];
 
     const props = pick(this.props, ['year', 'location', 'cpi', 'dataset', 'year', 'sourceType', 'guide']);
@@ -128,7 +128,7 @@ class ExpenditureChart extends Component {
     const eventSelected = ['downloadAction', 'canvasAction', 'resizeAction', 'changeSource'];
     const events = pick(this.events, eventSelected);
 
-    const passedProps = { ...props, ...values, ...state, ...events, items, pdf, excel };
+    const passedProps = { ...props, ...values, ...state, ...events, items, pdf, excel, csv };
     return <Markup {...passedProps} />;
   }
 }
@@ -146,6 +146,7 @@ const query = {
   dataset: 'string',
   sourceType: 'string',
   guide: 'string',
+  csv: 'string',
 };
 
 

@@ -13,6 +13,7 @@ export default function ExpenditureChart(props) {
     guide,
     excel,
     pdf,
+    csv,
 
     source,
     type,
@@ -25,6 +26,7 @@ export default function ExpenditureChart(props) {
     changeSource,
   } = props;
 
+
   const buildDataset = () => (
     <div>
       <a href={dataset} className="LinksList-item u-textDecorationNone">
@@ -33,6 +35,15 @@ export default function ExpenditureChart(props) {
           <span>Source:&nbsp;</span>
           <span className="u-textDecorationUnderline">{sourceType} {year}</span>
         </span>
+      </a>
+    </div>
+  );
+
+  const buildCsv = () => (
+    <div>
+      <a href={csv} className="LinksList-item">
+        <span className="LinksList-icon"><Icon type="download" /></span>
+        <span className="LinksList-title">Download this data for analysis (CSV)</span>
       </a>
     </div>
   );
@@ -110,6 +121,7 @@ export default function ExpenditureChart(props) {
           </div>
           <div className="u-marginLeft30">
             {dataset && buildDataset()}
+            {csv && buildCsv()}
             {guide && buildGuide()}
             {pdf && buildPdf()}
             {excel && buildExcel()}
