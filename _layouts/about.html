@@ -4,10 +4,12 @@ layout: page-shell
 <div class="Page-content">
   <main class="Page-contentInner Page-contentInner--floatingLinks">
 
+    {% assign languages = site.data.videos.data[1].languages %}
+
     {%
       include components/about/Background/index.html
       year=page.financial_year
-      languages=site.data.videos.data[1].languages
+      languages=languages
     %}
 
     {%
