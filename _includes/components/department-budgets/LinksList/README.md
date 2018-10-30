@@ -2,9 +2,11 @@
 
 ## Overview
 
-A list of actionable links usually associated with a piece of UI directly above or below it. Requires an icon from the `components/universal/Icon` Jekyll include for each link.
+A list of actionable links usually associated with a piece of UI directly above or below it. Requires an icon from the `components/universal/Icon` Jekyll include for each link if implemented via Jekyll.
 
-## Props
+## Jekyll Implementation
+
+## Props (for React Implementation)
 
 - `listArray`: Pass an array of objects. Each objecft represents an link item. All properties in obhects are requred, and are as follows:
   - `listArray.id`: Used in React to create `key` attribute
