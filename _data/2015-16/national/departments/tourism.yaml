@@ -16,131 +16,25 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 33 - Tourism
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-tourism-2015-16/resource/67a9b31a-b536-4bbd-97f0-581b201a0ec8/download/vote-33-tourism.pdf
+  name: 'National Department: Tourism 2015-16'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 33 - Tourism
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-tourism-2015-16/resource/d575ee06-aa28-419d-a1e7-520871679c79/download/ene15chap-tab-vote33.xls
 description: 'National department: Tourism budget data for the 2015-16 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 3214000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 228383000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 176000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Administration
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 776000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 229843000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 75544000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Domestic Tourism
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 944000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 39778000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 6004000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: International Tourism
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 1159000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 1155118000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 59294000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Policy and Knowledge Services
-    type: programme
-expenditure_over_time:
-  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  expenditure:
-    base_financial_year: 2017-18
-    nominal:
-    - amount: 1250246000.0
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 1371959000.0
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 1512667000.0
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 1583260000.0
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 1800233000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 2053303000.0
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 2127591000.0000002
-      financial_year: 2017-18
-      phase: Medium Term Estimates
-    real:
-    - amount: 1729277559
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 1797980178
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 1873404905
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 1856392331
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 2007091182
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 2153664335
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 2127591000
-      financial_year: 2017-18
-      phase: Medium Term Estimates
+  programmes: []
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -216,63 +110,18 @@ is_vote_primary: true
 name: Tourism
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes:
-  - items:
-    - name: Administration
-      total_budget: 3214000.0
-      type: programme
-    - name: Policy and Knowledge Services
-      total_budget: 1159000.0
-      type: programme
-    - name: International Tourism
-      total_budget: 944000.0
-      type: programme
-    - name: Domestic Tourism
-      total_budget: 776000.0
-      type: programme
-    name: Capital - Payments for capital assets
-    type: economic_classification_1_and_2
-  - items:
-    - name: Administration
-      total_budget: 228383000.0
-      type: programme
-    - name: Domestic Tourism
-      total_budget: 75544000.0
-      type: programme
-    - name: Policy and Knowledge Services
-      total_budget: 59294000.0
-      type: programme
-    - name: International Tourism
-      total_budget: 39778000.0
-      type: programme
-    name: Current - Current payments
-    type: economic_classification_1_and_2
-  - items:
-    - name: Policy and Knowledge Services
-      total_budget: 1155118000.0
-      type: programme
-    - name: Domestic Tourism
-      total_budget: 229843000.0
-      type: programme
-    - name: International Tourism
-      total_budget: 6004000.0
-      type: programme
-    - name: Administration
-      total_budget: 176000.0
-      type: programme
-    name: Current - Transfers and subsidies
-    type: economic_classification_1_and_2
+  econ_classes: []
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:
   - name: Administration
-    total_budget: 231773000.0
+    total_budget: null
   - name: Policy and Knowledge Services
-    total_budget: 1215571000.0
+    total_budget: null
   - name: International Tourism
-    total_budget: 46726000.0
+    total_budget: null
   - name: Domestic Tourism
-    total_budget: 306163000.0
+    total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: tourism
@@ -281,83 +130,8 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - name: Corporate Affairs
-      total_budget: 148663000.0
-      type: subprogramme
-    - name: Ministry
-      total_budget: 35917000.0
-      type: subprogramme
-    - name: Office Accommodation
-      total_budget: 28494000.0
-      type: subprogramme
-    - name: Management
-      total_budget: 18699000.0
-      type: subprogramme
-    name: Administration
-    type: programme
-  - items:
-    - name: Social Responsibility Implementation
-      total_budget: 253136000.0
-      type: subprogramme
-    - name: 'Domestic Tourism Management: Northern Region'
-      total_budget: 17094000.0
-      type: subprogramme
-    - name: Strategic Partners in Tourism
-      total_budget: 13500000.0
-      type: subprogramme
-    - name: 'Domestic Tourism Management: Southern Region'
-      total_budget: 11932000.0
-      type: subprogramme
-    - name: Domestic Tourism Management
-      total_budget: 10501000.0
-      type: subprogramme
-    name: Domestic Tourism
-    type: programme
-  - items:
-    - name: Americas and Western Europe
-      total_budget: 17135000.0
-      type: subprogramme
-    - name: Africa and Middle East
-      total_budget: 14220000.0
-      type: subprogramme
-    - name: Asia, Australasia and Eastern Europe
-      total_budget: 11935000.0
-      type: subprogramme
-    - name: International Tourism Management
-      total_budget: 3436000.0
-      type: subprogramme
-    name: International Tourism
-    type: programme
-  - items:
-    - name: South African Tourism
-      total_budget: 977712000.0
-      type: subprogramme
-    - name: Tourism Incentive Programme
-      total_budget: 180397000.0
-      type: subprogramme
-    - name: Policy Development and Evaluation
-      total_budget: 26026000.0
-      type: subprogramme
-    - name: Research and Knowledge Management
-      total_budget: 24635000.0
-      type: subprogramme
-    - name: Policy and Knowledge Services Management
-      total_budget: 6801000.0
-      type: subprogramme
-    name: Policy and Knowledge Services
-    type: programme
+  programmes: []
 title: Tourism budget 2015-16  - vulekamali
-treasury_datasets:
-  ENE for Vote 33 - Tourism:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-tourism-2015-16/resource/67a9b31a-b536-4bbd-97f0-581b201a0ec8/download/vote-33-tourism.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-tourism-2015-16/resource/d575ee06-aa28-419d-a1e7-520871679c79/download/ene15chap-tab-vote33.xls
 vote_number: 33
 vote_primary:
   name: Tourism

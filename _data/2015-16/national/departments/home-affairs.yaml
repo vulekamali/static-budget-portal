@@ -16,101 +16,25 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 05 - Home Affairs
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-home-affairs-2015-16/resource/9bf55d1a-59a4-433f-a378-163eb07218b1/download/vote-5-home-affairs.pdf
+  name: 'National Department: Home Affairs 2015-16'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 05 - Home Affairs
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-home-affairs-2015-16/resource/a348c4ec-7576-4f33-8fb0-a5a38947c95c/download/ene15chap-tab-vote05.xls
 description: 'National department: Home Affairs budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 10893000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 1585250000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 2059000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Administration
-    type: programme
-  - items:
-    - items:
-      - name: Current payments
-        total_budget: 2484689000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 1647012000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Citizen Affairs
-    type: programme
-  - items:
-    - items:
-      - name: Current payments
-        total_budget: 720570000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 349000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Immigration Affairs
-    type: programme
-expenditure_over_time:
-  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  expenditure:
-    base_financial_year: 2017-18
-    nominal:
-    - amount: 5687014000.0
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 5443627000.0
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 6909877000.0
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 7144801000.0
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 6450822000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 7196188000.0
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 7049602000.0
-      financial_year: 2017-18
-      phase: Medium Term Estimates
-    real:
-    - amount: 7865992525
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 7133983920
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 8557731125
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 8377369345
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 7192062337
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 7547923246
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 7049602000
-      financial_year: 2017-18
-      phase: Medium Term Estimates
+  programmes: []
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -150,46 +74,16 @@ is_vote_primary: true
 name: Home Affairs
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes:
-  - items:
-    - name: Administration
-      total_budget: 10893000.0
-      type: programme
-    name: Capital - Payments for capital assets
-    type: economic_classification_1_and_2
-  - items:
-    - name: Citizen Affairs
-      total_budget: 2484689000.0
-      type: programme
-    - name: Administration
-      total_budget: 1585250000.0
-      type: programme
-    - name: Immigration Affairs
-      total_budget: 720570000.0
-      type: programme
-    name: Current - Current payments
-    type: economic_classification_1_and_2
-  - items:
-    - name: Citizen Affairs
-      total_budget: 1647012000.0
-      type: programme
-    - name: Administration
-      total_budget: 2059000.0
-      type: programme
-    - name: Immigration Affairs
-      total_budget: 349000.0
-      type: programme
-    name: Current - Transfers and subsidies
-    type: economic_classification_1_and_2
+  econ_classes: []
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:
   - name: Administration
-    total_budget: 1598202000.0
+    total_budget: null
   - name: Citizen Affairs
-    total_budget: 4131701000.0
+    total_budget: null
   - name: Immigration Affairs
-    total_budget: 720919000.0
+    total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: home-affairs
@@ -198,74 +92,8 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - name: Corporate Services
-      total_budget: 589111000.0
-      type: subprogramme
-    - name: Transversal Information Technology Management
-      total_budget: 476245000.0
-      type: subprogramme
-    - name: Office Accommodation
-      total_budget: 379487000.0
-      type: subprogramme
-    - name: Management Support Services
-      total_budget: 109588000.0
-      type: subprogramme
-    - name: Ministry
-      total_budget: 43771000.0
-      type: subprogramme
-    name: Administration
-    type: programme
-  - items:
-    - name: Service Delivery to Provinces
-      total_budget: 1973426000.0
-      type: subprogramme
-    - name: Electoral Commission
-      total_budget: 1517104000.0
-      type: subprogramme
-    - name: Identification Services
-      total_budget: 275158000.0
-      type: subprogramme
-    - name: "Represented Political Parties\u2019 Fund"
-      total_budget: 127712000.0
-      type: subprogramme
-    - name: Status Services
-      total_budget: 107901000.0
-      type: subprogramme
-    - name: Access to Services
-      total_budget: 106000000.0
-      type: subprogramme
-    - name: Citizen Affairs Management
-      total_budget: 24400000.0
-      type: subprogramme
-    name: Citizen Affairs
-    type: programme
-  - items:
-    - name: Immigration Services
-      total_budget: 365137000.0
-      type: subprogramme
-    - name: Admission Services
-      total_budget: 259577000.0
-      type: subprogramme
-    - name: Asylum Seekers
-      total_budget: 65518000.0
-      type: subprogramme
-    - name: Immigration Affairs Management
-      total_budget: 30687000.0
-      type: subprogramme
-    name: Immigration Affairs
-    type: programme
+  programmes: []
 title: Home Affairs budget 2015-16  - vulekamali
-treasury_datasets:
-  ENE for Vote 05 - Home Affairs:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-home-affairs-2015-16/resource/9bf55d1a-59a4-433f-a378-163eb07218b1/download/vote-5-home-affairs.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-home-affairs-2015-16/resource/a348c4ec-7576-4f33-8fb0-a5a38947c95c/download/ene15chap-tab-vote05.xls
 vote_number: 5
 vote_primary:
   name: Home Affairs

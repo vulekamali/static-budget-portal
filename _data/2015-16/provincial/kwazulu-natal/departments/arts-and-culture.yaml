@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 15 : Arts and Culture'
+    url: https://data.vulekamali.gov.za/dataset/6edce80a-aa54-4e9f-9bb7-7fc682603878/resource/bdfa2381-5ce5-4023-8f47-07542bcb907a/download/kzn-vote-15-arts-and-culture.pdf
+  name: 'KwaZulu-Natal Department: Arts and Culture 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 15 : Arts and Culture'
+    url: https://data.vulekamali.gov.za/dataset/6edce80a-aa54-4e9f-9bb7-7fc682603878/resource/2ba4a9a2-63d9-4b44-a3f0-caf7c1ea5e1a/download/kzn-arts-and-culture.xlsx
 description: 'KwaZulu-Natal department: Arts and Culture budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -308,15 +321,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Arts and Culture budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 15 : Arts and Culture':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/6edce80a-aa54-4e9f-9bb7-7fc682603878/resource/2ba4a9a2-63d9-4b44-a3f0-caf7c1ea5e1a/download/kzn-arts-and-culture.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/6edce80a-aa54-4e9f-9bb7-7fc682603878/resource/bdfa2381-5ce5-4023-8f47-07542bcb907a/download/kzn-vote-15-arts-and-culture.pdf
 vote_number: 15
 vote_primary:
   name: Arts and Culture

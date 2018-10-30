@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 07 : Cooperative Governance and Traditional Affairs'
+    url: https://data.vulekamali.gov.za/dataset/c13b298d-b762-4912-a52a-a3586a18683d/resource/4d9c0ef1-7591-4a82-bc06-665e3702b6a7/download/gt-vote-07-cooperative-governance-and-trad-affairs.pdf
+  name: 'Gauteng Department: Cooperative Governance and Traditional Affairs 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 07 : Cooperative Governance and Traditional Affairs'
+    url: https://data.vulekamali.gov.za/dataset/c13b298d-b762-4912-a52a-a3586a18683d/resource/077b8e8d-cb0d-4574-9e9d-78ccdd71fc60/download/gt-cogta.xlsx
 description: 'Gauteng department: Cooperative Governance and Traditional Affairs budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -270,15 +283,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Cooperative Governance and Traditional Affairs budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 07 : Cooperative Governance and Traditional Affairs':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/c13b298d-b762-4912-a52a-a3586a18683d/resource/077b8e8d-cb0d-4574-9e9d-78ccdd71fc60/download/gt-cogta.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/c13b298d-b762-4912-a52a-a3586a18683d/resource/4d9c0ef1-7591-4a82-bc06-665e3702b6a7/download/gt-vote-07-cooperative-governance-and-trad-affairs.pdf
 vote_number: 7
 vote_primary:
   name: Cooperative Governance and Traditional Affairs

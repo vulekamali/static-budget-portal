@@ -16,6 +16,20 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 05 : Agriculture, Rural Development, Land And Environmental Affairs'
+    url: https://data.vulekamali.gov.za/dataset/86228ab2-8341-4509-a0c6-d5e9a4b8f14a/resource/b5604abd-6a14-4030-94cd-31d9ef6dd723/download/mpu-vote-05-agriculture-rural-deve-land-and-environ.pdf
+  name: 'Mpumalanga Department: Agriculture, Rural Development, Land And Environmental
+    Affairs 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 05 : Agriculture, Rural Development, Land And Environmental Affairs'
+    url: https://data.vulekamali.gov.za/dataset/86228ab2-8341-4509-a0c6-d5e9a4b8f14a/resource/a043951e-af6b-42f0-8504-43f8ecbecd04/download/mpu-agriculture-.xlsx
 description: 'Mpumalanga department: Agriculture, Rural Development, Land And Environmental
   Affairs budget data for the 2015-16 financial year from National Treasury in partnership
   with IMALI YETHU.'
@@ -546,15 +560,6 @@ subprogramme_by_programme:
     type: programme
 title: Agriculture, Rural Development, Land And Environmental Affairs budget 2015-16  -
   vulekamali
-treasury_datasets:
-  'EPRE for Vote 05 : Agriculture, Rural Development, Land And Environmental Affairs':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/86228ab2-8341-4509-a0c6-d5e9a4b8f14a/resource/a043951e-af6b-42f0-8504-43f8ecbecd04/download/mpu-agriculture-.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/86228ab2-8341-4509-a0c6-d5e9a4b8f14a/resource/b5604abd-6a14-4030-94cd-31d9ef6dd723/download/mpu-vote-05-agriculture-rural-deve-land-and-environ.pdf
 vote_number: 5
 vote_primary:
   name: Agriculture, Rural Development, Land And Environmental Affairs

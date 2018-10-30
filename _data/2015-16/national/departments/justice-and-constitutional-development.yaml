@@ -16,162 +16,26 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 21 - Justice and Constitutional Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-justice-and-constitutional-development-2015-16/resource/30ffd247-3a35-4c52-99ae-062343d92add/download/vote-21-justice-and-constitutional-development.pdf
+  name: 'National Department: Justice and Constitutional Development 2015-16'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 21 - Justice and Constitutional Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-justice-and-constitutional-development-2015-16/resource/2803c765-5546-47bd-a71a-676186ade80a/download/ene15chap-tab-vote21.xls
 description: 'National department: Justice and Constitutional Development budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 10328000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 1841024000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 6481000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Administration
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 358447000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 2217153000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 617944000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Auxiliary and Associated Services
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 772988000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 4732942000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 20498000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Court Services
-    type: programme
-  - items:
-    - items:
-      - name: Current payments
-        total_budget: 1820809000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 59960000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Direct charge against the National Revenue Fund
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 73381000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 3285436000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 15171000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: National Prosecuting Authority
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 10225000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 1005866000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 16085000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: State Legal Services
-    type: programme
-expenditure_over_time:
-  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  expenditure:
-    base_financial_year: 2017-18
-    nominal:
-    - amount: 12289337000.0
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 13635294000.0
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 14568376000.0
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 16459120000.0
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 16864738000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 18037926000.0
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 19137516000.0
-      financial_year: 2017-18
-      phase: Medium Term Estimates
-    real:
-    - amount: 16997994551
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 17869330162
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 18042614181
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 19298525926
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 18802603295
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 18919583670
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 19137516000
-      financial_year: 2017-18
-      phase: Medium Term Estimates
+  programmes: []
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -220,82 +84,22 @@ is_vote_primary: true
 name: Justice and Constitutional Development
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes:
-  - items:
-    - name: Court Services
-      total_budget: 772988000.0
-      type: programme
-    - name: Auxiliary and Associated Services
-      total_budget: 358447000.0
-      type: programme
-    - name: National Prosecuting Authority
-      total_budget: 73381000.0
-      type: programme
-    - name: Administration
-      total_budget: 10328000.0
-      type: programme
-    - name: State Legal Services
-      total_budget: 10225000.0
-      type: programme
-    name: Capital - Payments for capital assets
-    type: economic_classification_1_and_2
-  - items:
-    - name: Court Services
-      total_budget: 4732942000.0
-      type: programme
-    - name: National Prosecuting Authority
-      total_budget: 3285436000.0
-      type: programme
-    - name: Administration
-      total_budget: 1841024000.0
-      type: programme
-    - name: Direct charge against the National Revenue Fund
-      total_budget: 1820809000.0
-      type: programme
-    - name: State Legal Services
-      total_budget: 1005866000.0
-      type: programme
-    - name: Auxiliary and Associated Services
-      total_budget: 617944000.0
-      type: programme
-    name: Current - Current payments
-    type: economic_classification_1_and_2
-  - items:
-    - name: Auxiliary and Associated Services
-      total_budget: 2217153000.0
-      type: programme
-    - name: Direct charge against the National Revenue Fund
-      total_budget: 59960000.0
-      type: programme
-    - name: Court Services
-      total_budget: 20498000.0
-      type: programme
-    - name: State Legal Services
-      total_budget: 16085000.0
-      type: programme
-    - name: National Prosecuting Authority
-      total_budget: 15171000.0
-      type: programme
-    - name: Administration
-      total_budget: 6481000.0
-      type: programme
-    name: Current - Transfers and subsidies
-    type: economic_classification_1_and_2
+  econ_classes: []
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:
   - name: Administration
-    total_budget: 1857833000.0
-  - name: Direct charge against the National Revenue Fund
-    total_budget: 1880769000.0
+    total_budget: null
   - name: Court Services
-    total_budget: 5526428000.0
+    total_budget: null
   - name: State Legal Services
-    total_budget: 1032176000.0
+    total_budget: null
   - name: National Prosecuting Authority
-    total_budget: 3373988000.0
+    total_budget: null
   - name: Auxiliary and Associated Services
-    total_budget: 3193544000.0
+    total_budget: null
+  - name: Direct charge against the National Revenue Fund
+    total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: justice-and-constitutional-development
@@ -304,116 +108,8 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - name: Office Accommodation
-      total_budget: 1032886000.0
-      type: subprogramme
-    - name: Corporate Services
-      total_budget: 741390000.0
-      type: subprogramme
-    - name: Management
-      total_budget: 48740000.0
-      type: subprogramme
-    - name: Ministry
-      total_budget: 34817000.0
-      type: subprogramme
-    name: Administration
-    type: programme
-  - items:
-    - name: Legal Aid South Africa
-      total_budget: 1522986000.0
-      type: subprogramme
-    - name: Justice Modernisation
-      total_budget: 976391000.0
-      type: subprogramme
-    - name: Special Investigating Unit
-      total_budget: 304458000.0
-      type: subprogramme
-    - name: Public Protector of South Africa
-      total_budget: 245397000.0
-      type: subprogramme
-    - name: South African Human Rights Commission
-      total_budget: 144311000.0
-      type: subprogramme
-    - name: President's Fund
-      total_budget: 1000.0
-      type: subprogramme
-    name: Auxiliary and Associated Services
-    type: programme
-  - items:
-    - name: Lower Courts
-      total_budget: 4058919000.0
-      type: subprogramme
-    - name: Facilities Management
-      total_budget: 754990000.0
-      type: subprogramme
-    - name: Administration of Lower Courts
-      total_budget: 475730000.0
-      type: subprogramme
-    - name: Family Advocate
-      total_budget: 202331000.0
-      type: subprogramme
-    - name: Government Motor Transport
-      total_budget: 18156000.0
-      type: subprogramme
-    - name: Magistrate's Commission
-      total_budget: 16302000.0
-      type: subprogramme
-    name: Court Services
-    type: programme
-  - items:
-    - name: Magistrates' Salaries
-      total_budget: 1880769000.0
-      type: subprogramme
-    name: Direct charge against the National Revenue Fund
-    type: programme
-  - items:
-    - name: National Prosecutions Service
-      total_budget: 2294074000.0
-      type: subprogramme
-    - name: Support Services
-      total_budget: 488766000.0
-      type: subprogramme
-    - name: National Specialised Prosecutions Services
-      total_budget: 304241000.0
-      type: subprogramme
-    - name: Office for Witness Protection
-      total_budget: 161622000.0
-      type: subprogramme
-    - name: Asset Forfeiture Unit
-      total_budget: 125285000.0
-      type: subprogramme
-    name: National Prosecuting Authority
-    type: programme
-  - items:
-    - name: Master of the High Court
-      total_budget: 442338000.0
-      type: subprogramme
-    - name: Litigation and Legal Services
-      total_budget: 387806000.0
-      type: subprogramme
-    - name: Constitutional Development
-      total_budget: 72980000.0
-      type: subprogramme
-    - name: State Law Advisors
-      total_budget: 72738000.0
-      type: subprogramme
-    - name: Legislative Development and Law Reform
-      total_budget: 56314000.0
-      type: subprogramme
-    name: State Legal Services
-    type: programme
+  programmes: []
 title: Justice and Constitutional Development budget 2015-16  - vulekamali
-treasury_datasets:
-  ENE for Vote 21 - Justice and Constitutional Development:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-justice-and-constitutional-development-2015-16/resource/30ffd247-3a35-4c52-99ae-062343d92add/download/vote-21-justice-and-constitutional-development.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-justice-and-constitutional-development-2015-16/resource/2803c765-5546-47bd-a71a-676186ade80a/download/ene15chap-tab-vote21.xls
 vote_number: 21
 vote_primary:
   name: Justice and Constitutional Development

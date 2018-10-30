@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 08 : Rural Development and Agrarian Reform'
+    url: https://data.vulekamali.gov.za/dataset/5083b75f-9515-413d-82fc-42ff1ccfda67/resource/a0911bbf-5df4-4185-a1ad-ae4b0e0c06fb/download/ec-vote-08-rural-development-and-agrarian-reform.pdf
+  name: 'Eastern Cape Department: Rural Development and Agrarian Reform 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 08 : Rural Development and Agrarian Reform'
+    url: https://data.vulekamali.gov.za/dataset/5083b75f-9515-413d-82fc-42ff1ccfda67/resource/7dff484b-96ad-4728-ab6c-de6a1bb85f3c/download/ec-rural-development-and-agrarian-reform.xlsx
 description: 'Eastern Cape department: Rural Development and Agrarian Reform budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -479,15 +492,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Rural Development and Agrarian Reform budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 08 : Rural Development and Agrarian Reform':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/5083b75f-9515-413d-82fc-42ff1ccfda67/resource/7dff484b-96ad-4728-ab6c-de6a1bb85f3c/download/ec-rural-development-and-agrarian-reform.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/5083b75f-9515-413d-82fc-42ff1ccfda67/resource/a0911bbf-5df4-4185-a1ad-ae4b0e0c06fb/download/ec-vote-08-rural-development-and-agrarian-reform.pdf
 vote_number: 8
 vote_primary:
   name: Rural Development and Agrarian Reform

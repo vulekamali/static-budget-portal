@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 14 : Sport, Recreation, Arts and Culture'
+    url: https://data.vulekamali.gov.za/dataset/fcf214e7-5417-41cb-abf9-3a20bbaebb2b/resource/98207dad-dbfc-4337-b01e-f65445b60f3a/download/ec-vote-14-sport-rec-arts-and-culture.pdf
+  name: 'Eastern Cape Department: Sport, Recreation, Arts and Culture 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 14 : Sport, Recreation, Arts and Culture'
+    url: https://data.vulekamali.gov.za/dataset/fcf214e7-5417-41cb-abf9-3a20bbaebb2b/resource/3f78fc0a-7c92-4272-8779-82fcf7d96b8b/download/ec-sport-rec-arts-and-culture.xlsx
 description: 'Eastern Cape department: Sport, Recreation, Arts and Culture budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -353,15 +366,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Sport, Recreation, Arts and Culture budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 14 : Sport, Recreation, Arts and Culture':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/fcf214e7-5417-41cb-abf9-3a20bbaebb2b/resource/3f78fc0a-7c92-4272-8779-82fcf7d96b8b/download/ec-sport-rec-arts-and-culture.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/fcf214e7-5417-41cb-abf9-3a20bbaebb2b/resource/98207dad-dbfc-4337-b01e-f65445b60f3a/download/ec-vote-14-sport-rec-arts-and-culture.pdf
 vote_number: 14
 vote_primary:
   name: Sport, Recreation, Arts and Culture

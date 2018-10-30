@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 03 : Finance'
+    url: https://data.vulekamali.gov.za/dataset/0627b978-2baf-49aa-92ab-cf381b9f9907/resource/93eafbaf-b979-419c-b319-92cba03e3fd1/download/mpu-vote-03-finance.pdf
+  name: 'Mpumalanga Department: Finance 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 03 : Finance'
+    url: https://data.vulekamali.gov.za/dataset/0627b978-2baf-49aa-92ab-cf381b9f9907/resource/25bf0acd-7992-4fac-aaf6-9d0e36117f35/download/mpu-finance.xlsx
 description: 'Mpumalanga department: Finance budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -360,15 +373,6 @@ subprogramme_by_programme:
     name: Sustainable Resources Management
     type: programme
 title: Finance budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 03 : Finance':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/0627b978-2baf-49aa-92ab-cf381b9f9907/resource/93eafbaf-b979-419c-b319-92cba03e3fd1/download/mpu-vote-03-finance.pdf
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/0627b978-2baf-49aa-92ab-cf381b9f9907/resource/25bf0acd-7992-4fac-aaf6-9d0e36117f35/download/mpu-finance.xlsx
 vote_number: 3
 vote_primary:
   name: Finance

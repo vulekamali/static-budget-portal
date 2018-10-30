@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 12 : Social Development'
+    url: https://data.vulekamali.gov.za/dataset/8c0c1c4d-ae1e-4299-8560-1fb8b928a414/resource/acd3aab3-db9a-491b-8706-71b7c8112eb4/download/mpu-vote-12-social-development.pdf
+  name: 'Mpumalanga Department: Social Development 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 12 : Social Development'
+    url: https://data.vulekamali.gov.za/dataset/8c0c1c4d-ae1e-4299-8560-1fb8b928a414/resource/5f558a82-6d5c-43f7-9563-d8caf70370ba/download/mpu-social-development.xlsx
 description: 'Mpumalanga department: Social Development budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -459,15 +472,6 @@ subprogramme_by_programme:
     name: Social Welfare Services
     type: programme
 title: Social Development budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 12 : Social Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/8c0c1c4d-ae1e-4299-8560-1fb8b928a414/resource/5f558a82-6d5c-43f7-9563-d8caf70370ba/download/mpu-social-development.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/8c0c1c4d-ae1e-4299-8560-1fb8b928a414/resource/acd3aab3-db9a-491b-8706-71b7c8112eb4/download/mpu-vote-12-social-development.pdf
 vote_number: 12
 vote_primary:
   name: Social Development

@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 11 : Agriculture and Rural Development'
+    url: https://data.vulekamali.gov.za/dataset/4b47f18e-b590-48e1-86dc-84b06539af50/resource/34bff259-38b3-437e-aa2a-3999c5188766/download/fs-vote-11-agriculture-and-rural-development.pdf
+  name: 'Free State Department: Agriculture and Rural Development 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 11 : Agriculture and Rural Development'
+    url: https://data.vulekamali.gov.za/dataset/4b47f18e-b590-48e1-86dc-84b06539af50/resource/4ee916f9-b66c-4537-8039-159c68574d86/download/fs-agriculture-and-rural-dev.xlsx
 description: 'Free State department: Agriculture and Rural Development budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -408,15 +421,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Agriculture and Rural Development budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 11 : Agriculture and Rural Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/4b47f18e-b590-48e1-86dc-84b06539af50/resource/4ee916f9-b66c-4537-8039-159c68574d86/download/fs-agriculture-and-rural-dev.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/4b47f18e-b590-48e1-86dc-84b06539af50/resource/34bff259-38b3-437e-aa2a-3999c5188766/download/fs-vote-11-agriculture-and-rural-development.pdf
 vote_number: 11
 vote_primary:
   name: Agriculture and Rural Development

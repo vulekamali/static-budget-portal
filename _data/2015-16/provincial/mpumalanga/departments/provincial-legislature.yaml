@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 02 : PROVINCIAL LEGISLATURE'
+    url: https://data.vulekamali.gov.za/dataset/e42f298f-3201-4444-b605-60018a738536/resource/df1ab09e-05b1-4398-9de9-026d65aad132/download/mpu-vote-02-legislature.pdf
+  name: 'Mpumalanga Department: PROVINCIAL LEGISLATURE 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 02 : PROVINCIAL LEGISLATURE'
+    url: https://data.vulekamali.gov.za/dataset/e42f298f-3201-4444-b605-60018a738536/resource/165e3066-3948-463c-a355-cbb7ce866c86/download/mpu-provincial-legislature.xlsx
 description: 'Mpumalanga department: PROVINCIAL LEGISLATURE budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -197,15 +210,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: PROVINCIAL LEGISLATURE budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 02 : PROVINCIAL LEGISLATURE':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/e42f298f-3201-4444-b605-60018a738536/resource/165e3066-3948-463c-a355-cbb7ce866c86/download/mpu-provincial-legislature.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/e42f298f-3201-4444-b605-60018a738536/resource/df1ab09e-05b1-4398-9de9-026d65aad132/download/mpu-vote-02-legislature.pdf
 vote_number: 2
 vote_primary:
   name: PROVINCIAL LEGISLATURE

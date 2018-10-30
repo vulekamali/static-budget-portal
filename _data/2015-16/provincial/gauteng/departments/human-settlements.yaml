@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 08 : Human Settlements'
+    url: https://data.vulekamali.gov.za/dataset/3936e2af-71d3-4019-b439-e6242e3d29c0/resource/db5d6e53-0bd1-46ec-968c-1690441a4638/download/gt-vote-08-human-settlements.pdf
+  name: 'Gauteng Department: Human Settlements 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 08 : Human Settlements'
+    url: https://data.vulekamali.gov.za/dataset/3936e2af-71d3-4019-b439-e6242e3d29c0/resource/efdb4374-1698-4038-aa94-6388e31656ff/download/gt-human-settlements.xlsx
 description: 'Gauteng department: Human Settlements budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -327,15 +340,6 @@ subprogramme_by_programme:
     name: Housing Needs, Research And Planning
     type: programme
 title: Human Settlements budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 08 : Human Settlements':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/3936e2af-71d3-4019-b439-e6242e3d29c0/resource/efdb4374-1698-4038-aa94-6388e31656ff/download/gt-human-settlements.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/3936e2af-71d3-4019-b439-e6242e3d29c0/resource/db5d6e53-0bd1-46ec-968c-1690441a4638/download/gt-vote-08-human-settlements.pdf
 vote_number: 8
 vote_primary:
   name: Human Settlements

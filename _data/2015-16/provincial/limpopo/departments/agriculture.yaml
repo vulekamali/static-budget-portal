@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 04 : Agriculture'
+    url: https://data.vulekamali.gov.za/dataset/b6db4ed9-5353-4a0f-b35f-27daf9c727c3/resource/6b8ae43a-fbd3-47e5-9c53-063c2a4d9bdf/download/lim-vote-04-agriculture.pdf
+  name: 'Limpopo Department: Agriculture 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 04 : Agriculture'
+    url: https://data.vulekamali.gov.za/dataset/b6db4ed9-5353-4a0f-b35f-27daf9c727c3/resource/969a1c35-eecd-4448-99c4-8a36ac7f83e6/download/lim-agriculture.xlsx
 description: 'Limpopo department: Agriculture budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -545,15 +558,6 @@ subprogramme_by_programme:
     name: Veterinary Services
     type: programme
 title: Agriculture budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 04 : Agriculture':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/b6db4ed9-5353-4a0f-b35f-27daf9c727c3/resource/969a1c35-eecd-4448-99c4-8a36ac7f83e6/download/lim-agriculture.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/b6db4ed9-5353-4a0f-b35f-27daf9c727c3/resource/6b8ae43a-fbd3-47e5-9c53-063c2a4d9bdf/download/lim-vote-04-agriculture.pdf
 vote_number: 4
 vote_primary:
   name: Agriculture

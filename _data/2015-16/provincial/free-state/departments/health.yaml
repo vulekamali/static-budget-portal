@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 05 : Health'
+    url: https://data.vulekamali.gov.za/dataset/e7ad4fa5-b71a-4cac-ae2b-a82ccc0e14e3/resource/ffd5da4f-296b-4775-a7f1-ce1767b14d37/download/fs-vote-05-health.pdf
+  name: 'Free State Department: Health 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 05 : Health'
+    url: https://data.vulekamali.gov.za/dataset/e7ad4fa5-b71a-4cac-ae2b-a82ccc0e14e3/resource/d79aa8fa-a845-428e-b950-e8ce0ffd986b/download/fs-health.xlsx
 description: 'Free State department: Health budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -631,15 +644,6 @@ subprogramme_by_programme:
     name: Provincial Hospital Services
     type: programme
 title: Health budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 05 : Health':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/e7ad4fa5-b71a-4cac-ae2b-a82ccc0e14e3/resource/d79aa8fa-a845-428e-b950-e8ce0ffd986b/download/fs-health.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/e7ad4fa5-b71a-4cac-ae2b-a82ccc0e14e3/resource/ffd5da4f-296b-4775-a7f1-ce1767b14d37/download/fs-vote-05-health.pdf
 vote_number: 5
 vote_primary:
   name: Health

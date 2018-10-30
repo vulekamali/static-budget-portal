@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 09 : Community Safety, Security and Liaison'
+    url: https://data.vulekamali.gov.za/dataset/d9e63c57-4e81-4a03-ba68-825e2eb1e2f7/resource/d7f04394-a8d9-4511-87e2-65ddcea74332/download/mpu-vote-09-community-safety-security-and-liaison.pdf
+  name: 'Mpumalanga Department: Community Safety, Security and Liaison 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 09 : Community Safety, Security and Liaison'
+    url: https://data.vulekamali.gov.za/dataset/d9e63c57-4e81-4a03-ba68-825e2eb1e2f7/resource/a3f0e7dd-6095-4e39-802d-217a74b7640c/download/mpu-safety-security-and-liaison.xlsx
 description: 'Mpumalanga department: Community Safety, Security and Liaison budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -281,15 +294,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Community Safety, Security and Liaison budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 09 : Community Safety, Security and Liaison':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/d9e63c57-4e81-4a03-ba68-825e2eb1e2f7/resource/a3f0e7dd-6095-4e39-802d-217a74b7640c/download/mpu-safety-security-and-liaison.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/d9e63c57-4e81-4a03-ba68-825e2eb1e2f7/resource/d7f04394-a8d9-4511-87e2-65ddcea74332/download/mpu-vote-09-community-safety-security-and-liaison.pdf
 vote_number: 9
 vote_primary:
   name: Community Safety, Security and Liaison

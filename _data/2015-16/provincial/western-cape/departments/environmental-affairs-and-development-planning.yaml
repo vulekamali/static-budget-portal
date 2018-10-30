@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 09 : Environmental Affairs and Development Planning'
+    url: https://data.vulekamali.gov.za/dataset/9ede39c4-d52e-4d18-8416-3aeee6b82ec6/resource/ffa323f2-5cb4-46c7-887a-8278214b476e/download/wc-vote-09-environ-affaris-and-dev-planning.pdf
+  name: 'Western Cape Department: Environmental Affairs and Development Planning 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 09 : Environmental Affairs and Development Planning'
+    url: https://data.vulekamali.gov.za/dataset/9ede39c4-d52e-4d18-8416-3aeee6b82ec6/resource/ba980123-2e03-4f5f-987d-151ea8bcf79a/download/wc-environ-affairs-and-dev-planning.xlsx
 description: 'Western Cape department: Environmental Affairs and Development Planning
   budget data for the 2015-16 financial year from National Treasury in partnership
   with IMALI YETHU.'
@@ -402,15 +415,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Environmental Affairs and Development Planning budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 09 : Environmental Affairs and Development Planning':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/9ede39c4-d52e-4d18-8416-3aeee6b82ec6/resource/ba980123-2e03-4f5f-987d-151ea8bcf79a/download/wc-environ-affairs-and-dev-planning.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/9ede39c4-d52e-4d18-8416-3aeee6b82ec6/resource/ffa323f2-5cb4-46c7-887a-8278214b476e/download/wc-vote-09-environ-affaris-and-dev-planning.pdf
 vote_number: 9
 vote_primary:
   name: Environmental Affairs and Development Planning

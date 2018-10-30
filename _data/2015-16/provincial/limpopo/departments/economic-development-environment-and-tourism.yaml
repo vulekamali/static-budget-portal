@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 06 : Economic Development, Environment and Tourism'
+    url: https://data.vulekamali.gov.za/dataset/36bb3596-73a0-4cce-bc3b-0a1cb37ac51f/resource/04ee4f20-4d96-4ab9-8643-b8919a0add52/download/lim-vote-06-economic-dev-environm-tourism.pdf
+  name: 'Limpopo Department: Economic Development, Environment and Tourism 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 06 : Economic Development, Environment and Tourism'
+    url: https://data.vulekamali.gov.za/dataset/36bb3596-73a0-4cce-bc3b-0a1cb37ac51f/resource/ebefb9c9-a6ca-40d7-978c-c30d11c85107/download/lim-eco-dev-env-affairs-and-tourism.xlsx
 description: 'Limpopo department: Economic Development, Environment and Tourism budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -324,15 +337,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Economic Development, Environment and Tourism budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 06 : Economic Development, Environment and Tourism':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/36bb3596-73a0-4cce-bc3b-0a1cb37ac51f/resource/ebefb9c9-a6ca-40d7-978c-c30d11c85107/download/lim-eco-dev-env-affairs-and-tourism.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/36bb3596-73a0-4cce-bc3b-0a1cb37ac51f/resource/04ee4f20-4d96-4ab9-8643-b8919a0add52/download/lim-vote-06-economic-dev-environm-tourism.pdf
 vote_number: 6
 vote_primary:
   name: Economic Development, Environment and Tourism

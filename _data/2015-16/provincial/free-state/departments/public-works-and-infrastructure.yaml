@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 09 : Public Works and Infrastructure'
+    url: https://data.vulekamali.gov.za/dataset/07bf03bd-2918-4370-ae34-57793e474fc9/resource/409661c8-96f1-4cf3-b6ad-6abe0026c81c/download/fs-vote-09-public-works.pdf
+  name: 'Free State Department: Public Works and Infrastructure 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 09 : Public Works and Infrastructure'
+    url: https://data.vulekamali.gov.za/dataset/07bf03bd-2918-4370-ae34-57793e474fc9/resource/a35691d1-83f4-434e-922a-f9c29885c7d6/download/fs-public-works-and-infrastructure.xlsx
 description: 'Free State department: Public Works and Infrastructure budget data for
   the 2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -275,15 +288,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Public Works and Infrastructure budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 09 : Public Works and Infrastructure':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/07bf03bd-2918-4370-ae34-57793e474fc9/resource/a35691d1-83f4-434e-922a-f9c29885c7d6/download/fs-public-works-and-infrastructure.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/07bf03bd-2918-4370-ae34-57793e474fc9/resource/409661c8-96f1-4cf3-b6ad-6abe0026c81c/download/fs-vote-09-public-works.pdf
 vote_number: 9
 vote_primary:
   name: Public Works and Infrastructure

@@ -16,174 +16,26 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 04 - Cooperative Governance and Traditional Affairs
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-cooperative-governance-and-traditional-affairs-2015-16/resource/3036a977-6405-48aa-b654-25bec1b120a3/download/vote-4-cooperative-governance-and-traditional-affairs.pdf
+  name: 'National Department: Cooperative Governance and Traditional Affairs 2015-16'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 04 - Cooperative Governance and Traditional Affairs
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-cooperative-governance-and-traditional-affairs-2015-16/resource/3ab1588f-8832-43df-8c99-a7b05e304788/download/ene15chap-tab-vote04.xls
 description: 'National department: Cooperative Governance and Traditional Affairs
   budget data for the 2015-16 financial year from National Treasury in partnership
   with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 5080000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 242789000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 100000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Administration
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 20000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 50274784000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 46541000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Governance and Intergovernmental Relations
-    type: programme
-  - items:
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 14955762000.0
-        type: economic_classification_2
-      - name: Payments for capital assets
-        total_budget: 150000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 2408495000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 304013000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Infrastructure and Economic Development
-    type: programme
-  - items:
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 188900000.0
-        type: economic_classification_2
-      - name: Payments for capital assets
-        total_budget: 2449000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 364343000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 51113000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: National Disaster Management Centre
-    type: programme
-  - items:
-    - items:
-      - name: Current payments
-        total_budget: 22081000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Policy, Research and Knowledge Management
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 100000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 290442000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 37550000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Provincial and Municipal Government Systems
-    type: programme
-  - items:
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 119447000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Traditional Affairs
-    type: programme
-expenditure_over_time:
-  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  expenditure:
-    base_financial_year: 2017-18
-    nominal:
-    - amount: 46221564000.0
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 53434365000.0
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 56401572000.0
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 63453885000.0
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 69314159000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 73460667000.0
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 77758671000.0
-      financial_year: 2017-18
-      phase: Medium Term Estimates
-    real:
-    - amount: 63931349024
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 70026822319
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 69852109995
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 74400480997
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 77278795224
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 77051277170
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 77758671000
-      financial_year: 2017-18
-      phase: Medium Term Estimates
+  programmes: []
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -227,93 +79,24 @@ is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes:
-  - items:
-    - name: Administration
-      total_budget: 5080000.0
-      type: programme
-    - name: National Disaster Management Centre
-      total_budget: 2449000.0
-      type: programme
-    - name: Infrastructure and Economic Development
-      total_budget: 150000.0
-      type: programme
-    - name: Provincial and Municipal Government Systems
-      total_budget: 100000.0
-      type: programme
-    - name: Governance and Intergovernmental Relations
-      total_budget: 20000.0
-      type: programme
-    name: Capital - Payments for capital assets
-    type: economic_classification_1_and_2
-  - items:
-    - name: Infrastructure and Economic Development
-      total_budget: 14955762000.0
-      type: programme
-    - name: National Disaster Management Centre
-      total_budget: 188900000.0
-      type: programme
-    name: Capital - Transfers and subsidies
-    type: economic_classification_1_and_2
-  - items:
-    - name: Infrastructure and Economic Development
-      total_budget: 2408495000.0
-      type: programme
-    - name: Administration
-      total_budget: 242789000.0
-      type: programme
-    - name: National Disaster Management Centre
-      total_budget: 51113000.0
-      type: programme
-    - name: Governance and Intergovernmental Relations
-      total_budget: 46541000.0
-      type: programme
-    - name: Provincial and Municipal Government Systems
-      total_budget: 37550000.0
-      type: programme
-    - name: Policy, Research and Knowledge Management
-      total_budget: 22081000.0
-      type: programme
-    name: Current - Current payments
-    type: economic_classification_1_and_2
-  - items:
-    - name: Governance and Intergovernmental Relations
-      total_budget: 50274784000.0
-      type: programme
-    - name: National Disaster Management Centre
-      total_budget: 364343000.0
-      type: programme
-    - name: Infrastructure and Economic Development
-      total_budget: 304013000.0
-      type: programme
-    - name: Provincial and Municipal Government Systems
-      total_budget: 290442000.0
-      type: programme
-    - name: Traditional Affairs
-      total_budget: 119447000.0
-      type: programme
-    - name: Administration
-      total_budget: 100000.0
-      type: programme
-    name: Current - Transfers and subsidies
-    type: economic_classification_1_and_2
+  econ_classes: []
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:
   - name: Administration
-    total_budget: 247969000.0
+    total_budget: null
   - name: Policy, Research and Knowledge Management
-    total_budget: 22081000.0
+    total_budget: null
   - name: Governance and Intergovernmental Relations
-    total_budget: 50321345000.0
+    total_budget: null
   - name: National Disaster Management Centre
-    total_budget: 606805000.0
+    total_budget: null
   - name: Provincial and Municipal Government Systems
-    total_budget: 328092000.0
+    total_budget: null
   - name: Infrastructure and Economic Development
-    total_budget: 17668420000.0
+    total_budget: null
   - name: Traditional Affairs
-    total_budget: 119447000.0
+    total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: cooperative-governance-and-traditional-affairs
@@ -322,161 +105,8 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - name: Corporate Services
-      total_budget: 84792000.0
-      type: subprogramme
-    - name: Office Accommodation
-      total_budget: 35598000.0
-      type: subprogramme
-    - name: Financial Services
-      total_budget: 30269000.0
-      type: subprogramme
-    - name: Ministry
-      total_budget: 27752000.0
-      type: subprogramme
-    - name: Management
-      total_budget: 21062000.0
-      type: subprogramme
-    - name: Chief Operating Officer
-      total_budget: 15465000.0
-      type: subprogramme
-    - name: Communication and Liaison
-      total_budget: 11704000.0
-      type: subprogramme
-    - name: Legislation Review and Drafting
-      total_budget: 11470000.0
-      type: subprogramme
-    - name: Internal Audit and Risk Management
-      total_budget: 9857000.0
-      type: subprogramme
-    name: Administration
-    type: programme
-  - items:
-    - name: Local Government Equitable Share
-      total_budget: 50207698000.0
-      type: subprogramme
-    - name: Municipal Demarcation Board
-      total_budget: 45793000.0
-      type: subprogramme
-    - name: 'Management: Governance'
-      total_budget: 20828000.0
-      type: subprogramme
-    - name: Intergovernmental Fiscal Relations
-      total_budget: 10821000.0
-      type: subprogramme
-    - name: Intergovernmental Relations Coordination
-      total_budget: 9637000.0
-      type: subprogramme
-    - name: South African Local Government Association
-      total_budget: 9215000.0
-      type: subprogramme
-    - name: South African Cities Network
-      total_budget: 6286000.0
-      type: subprogramme
-    - name: United Cities and Local Government of Africa
-      total_budget: 5792000.0
-      type: subprogramme
-    - name: Governance and Public Participation
-      total_budget: 5275000.0
-      type: subprogramme
-    name: Governance and Intergovernmental Relations
-    type: programme
-  - items:
-    - name: Municipal Infrastructure Grant
-      total_budget: 14955762000.0
-      type: subprogramme
-    - name: Community Work Programme
-      total_budget: 2375939000.0
-      type: subprogramme
-    - name: Municipal Infrastructure Support Agency
-      total_budget: 304013000.0
-      type: subprogramme
-    - name: 'Management: Infrastructure'
-      total_budget: 13765000.0
-      type: subprogramme
-    - name: Infrastructure Development
-      total_budget: 10444000.0
-      type: subprogramme
-    - name: Local Economic Development Planning
-      total_budget: 8497000.0
-      type: subprogramme
-    name: Infrastructure and Economic Development
-    type: programme
-  - items:
-    - name: Disaster Relief Transfers
-      total_budget: 364343000.0
-      type: subprogramme
-    - name: Municipal Disaster Recovery Grant
-      total_budget: 188900000.0
-      type: subprogramme
-    - name: Intelligence and Information Systems Management
-      total_budget: 25949000.0
-      type: subprogramme
-    - name: Planning Coordination and Support
-      total_budget: 12862000.0
-      type: subprogramme
-    - name: 'Management: Head of Disaster'
-      total_budget: 6810000.0
-      type: subprogramme
-    - name: Legislation, Policy and Compliance Management
-      total_budget: 5603000.0
-      type: subprogramme
-    - name: Integrated Disaster Management Monitoring and Evaluation Systems
-      total_budget: 2338000.0
-      type: subprogramme
-    name: National Disaster Management Centre
-    type: programme
-  - items:
-    - name: Knowledge and Information Management
-      total_budget: 10329000.0
-      type: subprogramme
-    - name: 'Management: Research and Policy'
-      total_budget: 6122000.0
-      type: subprogramme
-    - name: Policy and Research Methods
-      total_budget: 5630000.0
-      type: subprogramme
-    name: Policy, Research and Knowledge Management
-    type: programme
-  - items:
-    - name: Municipal Systems Improvement Grant
-      total_budget: 251442000.0
-      type: subprogramme
-    - name: Municipal Demarcation Transition Grant
-      total_budget: 39000000.0
-      type: subprogramme
-    - name: Local Government Support and Intervention
-      total_budget: 16168000.0
-      type: subprogramme
-    - name: Development Planning
-      total_budget: 8501000.0
-      type: subprogramme
-    - name: 'Management: Provincial and Local Government Support'
-      total_budget: 7963000.0
-      type: subprogramme
-    - name: Provincial Government Support and Intervention
-      total_budget: 5018000.0
-      type: subprogramme
-    name: Provincial and Municipal Government Systems
-    type: programme
-  - items:
-    - name: Department of Traditional Affairs
-      total_budget: 119447000.0
-      type: subprogramme
-    name: Traditional Affairs
-    type: programme
+  programmes: []
 title: Cooperative Governance and Traditional Affairs budget 2015-16  - vulekamali
-treasury_datasets:
-  ENE for Vote 04 - Cooperative Governance and Traditional Affairs:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-cooperative-governance-and-traditional-affairs-2015-16/resource/3036a977-6405-48aa-b654-25bec1b120a3/download/vote-4-cooperative-governance-and-traditional-affairs.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-cooperative-governance-and-traditional-affairs-2015-16/resource/3ab1588f-8832-43df-8c99-a7b05e304788/download/ene15chap-tab-vote04.xls
 vote_number: 4
 vote_primary:
   name: Cooperative Governance and Traditional Affairs

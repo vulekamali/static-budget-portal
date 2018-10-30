@@ -16,6 +16,20 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 12 : Agriculture, Land Reform and Rural Development'
+    url: https://data.vulekamali.gov.za/dataset/88cb8d54-d105-43b9-8ce5-339b4e002b01/resource/1f99433a-3636-4051-8b56-608b0c9a103c/download/nc-vote-12-agriculture-land-reform-and-rural-dev.pdf
+  name: 'Northern Cape Department: Agriculture, Land Reform and Rural Development
+    2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 12 : Agriculture, Land Reform and Rural Development'
+    url: https://data.vulekamali.gov.za/dataset/88cb8d54-d105-43b9-8ce5-339b4e002b01/resource/52a5da67-a8b5-4792-8d24-3ef0a05d07e2/download/nc-agriculture-land-reform-and-rural-dev.xlsx
 description: 'Northern Cape department: Agriculture, Land Reform and Rural Development
   budget data for the 2015-16 financial year from National Treasury in partnership
   with IMALI YETHU.'
@@ -394,15 +408,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Agriculture, Land Reform and Rural Development budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 12 : Agriculture, Land Reform and Rural Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/88cb8d54-d105-43b9-8ce5-339b4e002b01/resource/52a5da67-a8b5-4792-8d24-3ef0a05d07e2/download/nc-agriculture-land-reform-and-rural-dev.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/88cb8d54-d105-43b9-8ce5-339b4e002b01/resource/1f99433a-3636-4051-8b56-608b0c9a103c/download/nc-vote-12-agriculture-land-reform-and-rural-dev.pdf
 vote_number: 12
 vote_primary:
   name: Agriculture, Land Reform and Rural Development

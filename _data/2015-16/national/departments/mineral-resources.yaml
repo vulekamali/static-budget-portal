@@ -16,131 +16,25 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 29 - Mineral Resources
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-mineral-resources-2015-16/resource/37b9b091-c33d-4f97-be4d-204d88397385/download/vote-29-mineral-resources.pdf
+  name: 'National Department: Mineral Resources 2015-16'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 29 - Mineral Resources
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-mineral-resources-2015-16/resource/5fe0e71c-471e-4838-9f65-15deaf30fb0c/download/ene15chap-tab-vote29.xls
 description: 'National department: Mineral Resources budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 10300000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 280240000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 2683000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Administration
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 623000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 175217000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Mine Health and Safety
-    type: programme
-  - items:
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 99416000.0
-        type: economic_classification_2
-      - name: Payments for capital assets
-        total_budget: 140000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 648293000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 141187000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Mineral Policy and Promotion
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 459000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 209457000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 50527000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Mineral Regulation
-    type: programme
-expenditure_over_time:
-  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  expenditure:
-    base_financial_year: 2017-18
-    nominal:
-    - amount: 1029435000.0
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 1173642000.0
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 1387219000.0
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 1475541000.0
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 1618542000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1684865000.0
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 1732624000.0
-      financial_year: 2017-18
-      phase: Medium Term Estimates
-    real:
-    - amount: 1423862859
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 1538081715
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 1718040308
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 1730090444
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 1804522735
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1767217824
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 1732624000
-      financial_year: 2017-18
-      phase: Medium Term Estimates
+  programmes: []
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -181,66 +75,18 @@ is_vote_primary: true
 name: Mineral Resources
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes:
-  - items:
-    - name: Administration
-      total_budget: 10300000.0
-      type: programme
-    - name: Mine Health and Safety
-      total_budget: 623000.0
-      type: programme
-    - name: Mineral Regulation
-      total_budget: 459000.0
-      type: programme
-    - name: Mineral Policy and Promotion
-      total_budget: 140000.0
-      type: programme
-    name: Capital - Payments for capital assets
-    type: economic_classification_1_and_2
-  - items:
-    - name: Mineral Policy and Promotion
-      total_budget: 99416000.0
-      type: programme
-    name: Capital - Transfers and subsidies
-    type: economic_classification_1_and_2
-  - items:
-    - name: Administration
-      total_budget: 280240000.0
-      type: programme
-    - name: Mineral Regulation
-      total_budget: 209457000.0
-      type: programme
-    - name: Mine Health and Safety
-      total_budget: 175217000.0
-      type: programme
-    - name: Mineral Policy and Promotion
-      total_budget: 141187000.0
-      type: programme
-    name: Current - Current payments
-    type: economic_classification_1_and_2
-  - items:
-    - name: Mineral Policy and Promotion
-      total_budget: 648293000.0
-      type: programme
-    - name: Mineral Regulation
-      total_budget: 50527000.0
-      type: programme
-    - name: Administration
-      total_budget: 2683000.0
-      type: programme
-    name: Current - Transfers and subsidies
-    type: economic_classification_1_and_2
+  econ_classes: []
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:
   - name: Administration
-    total_budget: 293223000.0
+    total_budget: null
   - name: Mine Health and Safety
-    total_budget: 175840000.0
+    total_budget: null
   - name: Mineral Regulation
-    total_budget: 260443000.0
+    total_budget: null
   - name: Mineral Policy and Promotion
-    total_budget: 889036000.0
+    total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: mineral-resources
@@ -249,86 +95,8 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - name: Corporate Services
-      total_budget: 110680000.0
-      type: subprogramme
-    - name: Financial Administration
-      total_budget: 92648000.0
-      type: subprogramme
-    - name: Office Accommodation
-      total_budget: 29741000.0
-      type: subprogramme
-    - name: Ministry
-      total_budget: 25580000.0
-      type: subprogramme
-    - name: Department Management
-      total_budget: 20573000.0
-      type: subprogramme
-    - name: Internal Audit
-      total_budget: 14001000.0
-      type: subprogramme
-    name: Administration
-    type: programme
-  - items:
-    - name: Mine Health and Safety Regions
-      total_budget: 125104000.0
-      type: subprogramme
-    - name: Governance Policy and Oversight
-      total_budget: 50736000.0
-      type: subprogramme
-    name: Mine Health and Safety
-    type: programme
-  - items:
-    - name: Council for Mineral Technology
-      total_budget: 390742000.0
-      type: subprogramme
-    - name: Council for Geoscience
-      total_budget: 325914000.0
-      type: subprogramme
-    - name: Mineral Promotion and International Coordination
-      total_budget: 69341000.0
-      type: subprogramme
-    - name: Mine Environmental Management
-      total_budget: 50369000.0
-      type: subprogramme
-    - name: Management
-      total_budget: 25372000.0
-      type: subprogramme
-    - name: Mineral Policy
-      total_budget: 18776000.0
-      type: subprogramme
-    - name: Assistance to Mines
-      total_budget: 5000000.0
-      type: subprogramme
-    - name: Economic Advisory Services
-      total_budget: 3522000.0
-      type: subprogramme
-    name: Mineral Policy and Promotion
-    type: programme
-  - items:
-    - name: Mineral Regulation and Administration
-      total_budget: 169594000.0
-      type: subprogramme
-    - name: South African Diamond and Precious Metals Regulator
-      total_budget: 50527000.0
-      type: subprogramme
-    - name: Management Mineral Regulation
-      total_budget: 40322000.0
-      type: subprogramme
-    name: Mineral Regulation
-    type: programme
+  programmes: []
 title: Mineral Resources budget 2015-16  - vulekamali
-treasury_datasets:
-  ENE for Vote 29 - Mineral Resources:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-mineral-resources-2015-16/resource/37b9b091-c33d-4f97-be4d-204d88397385/download/vote-29-mineral-resources.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-mineral-resources-2015-16/resource/5fe0e71c-471e-4838-9f65-15deaf30fb0c/download/ene15chap-tab-vote29.xls
 vote_number: 29
 vote_primary:
   name: Mineral Resources

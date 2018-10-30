@@ -16,95 +16,25 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 25 - Economic Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-economic-development-2015-16/resource/c4c0c628-1c08-4d0d-8541-1c0f999c5e01/download/vote-25-economic-development.pdf
+  name: 'National Department: Economic Development 2015-16'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 25 - Economic Development
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-economic-development-2015-16/resource/8a56ed4f-9360-431a-a867-27870464d929/download/ene15chap-tab-vote25.xls
 description: 'National department: Economic Development budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 2244000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 80979000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Administration
-    type: programme
-  - items:
-    - items:
-      - name: Current payments
-        total_budget: 27889000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Growth Path and Social Dialogue
-    type: programme
-  - items:
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 733245000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 41421000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Investment, Competition and Trade
-    type: programme
-expenditure_over_time:
-  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  expenditure:
-    base_financial_year: 2017-18
-    nominal:
-    - amount: 577602000.0
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 673473000.0
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 771395000.0
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 696860000.0
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 885778000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 685661000.0
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 727852000.0
-      financial_year: 2017-18
-      phase: Medium Term Estimates
-    real:
-    - amount: 798910116
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 882600066
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 955355790
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 817077144
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 987559506
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 719174735
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 727852000
-      financial_year: 2017-18
-      phase: Medium Term Estimates
+  programmes: []
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -149,40 +79,16 @@ is_vote_primary: true
 name: Economic Development
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes:
-  - items:
-    - name: Administration
-      total_budget: 2244000.0
-      type: programme
-    name: Capital - Payments for capital assets
-    type: economic_classification_1_and_2
-  - items:
-    - name: Administration
-      total_budget: 80979000.0
-      type: programme
-    - name: Investment, Competition and Trade
-      total_budget: 41421000.0
-      type: programme
-    - name: Growth Path and Social Dialogue
-      total_budget: 27889000.0
-      type: programme
-    name: Current - Current payments
-    type: economic_classification_1_and_2
-  - items:
-    - name: Investment, Competition and Trade
-      total_budget: 733245000.0
-      type: programme
-    name: Current - Transfers and subsidies
-    type: economic_classification_1_and_2
+  econ_classes: []
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:
   - name: Administration
-    total_budget: 83223000.0
+    total_budget: null
   - name: Growth Path and Social Dialogue
-    total_budget: 27889000.0
+    total_budget: null
   - name: Investment, Competition and Trade
-    total_budget: 774666000.0
+    total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: economic-development
@@ -191,53 +97,8 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - name: Corporate Management Services
-      total_budget: 37623000.0
-      type: subprogramme
-    - name: Ministry
-      total_budget: 20197000.0
-      type: subprogramme
-    - name: Office of the Director General
-      total_budget: 13888000.0
-      type: subprogramme
-    - name: Financial Management
-      total_budget: 11515000.0
-      type: subprogramme
-    name: Administration
-    type: programme
-  - items:
-    - name: Growth Path and Job Drivers
-      total_budget: 15996000.0
-      type: subprogramme
-    - name: Social Dialogue, Productivity and Innovation
-      total_budget: 11893000.0
-      type: subprogramme
-    name: Growth Path and Social Dialogue
-    type: programme
-  - items:
-    - name: Development Investment, Industrial Funding and Entrepreneurship
-      total_budget: 418233000.0
-      type: subprogramme
-    - name: Competition, Trade and other Economic Regulation
-      total_budget: 336922000.0
-      type: subprogramme
-    - name: Infrastructure Development Coordination
-      total_budget: 19511000.0
-      type: subprogramme
-    name: Investment, Competition and Trade
-    type: programme
+  programmes: []
 title: Economic Development budget 2015-16  - vulekamali
-treasury_datasets:
-  ENE for Vote 25 - Economic Development:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-economic-development-2015-16/resource/c4c0c628-1c08-4d0d-8541-1c0f999c5e01/download/vote-25-economic-development.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-economic-development-2015-16/resource/8a56ed4f-9360-431a-a867-27870464d929/download/ene15chap-tab-vote25.xls
 vote_number: 25
 vote_primary:
   name: Economic Development

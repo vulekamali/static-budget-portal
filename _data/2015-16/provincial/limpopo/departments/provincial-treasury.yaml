@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 05 : Provincial Treasury'
+    url: https://data.vulekamali.gov.za/dataset/ddea84a3-03c4-48b3-9b09-a5dae8d6940d/resource/6f7387f6-5a71-4c78-9e7e-edf93db1266e/download/lim-vote-05-provincial-treasury.pdf
+  name: 'Limpopo Department: Provincial Treasury 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 05 : Provincial Treasury'
+    url: https://data.vulekamali.gov.za/dataset/ddea84a3-03c4-48b3-9b09-a5dae8d6940d/resource/135ee2f0-f0a6-44b8-9aaa-b14cb53bd499/download/lim-provincial-treasury.xlsx
 description: 'Limpopo department: Provincial Treasury budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -338,15 +351,6 @@ subprogramme_by_programme:
     name: Sustainable Resource Management
     type: programme
 title: Provincial Treasury budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 05 : Provincial Treasury':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/ddea84a3-03c4-48b3-9b09-a5dae8d6940d/resource/135ee2f0-f0a6-44b8-9aaa-b14cb53bd499/download/lim-provincial-treasury.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/ddea84a3-03c4-48b3-9b09-a5dae8d6940d/resource/6f7387f6-5a71-4c78-9e7e-edf93db1266e/download/lim-vote-05-provincial-treasury.pdf
 vote_number: 5
 vote_primary:
   name: Provincial Treasury

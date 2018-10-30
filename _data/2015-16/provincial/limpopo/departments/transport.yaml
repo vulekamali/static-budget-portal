@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 08 : Transport'
+    url: https://data.vulekamali.gov.za/dataset/6af59bd5-b947-4fb5-85fb-7b4caaa5b28e/resource/222da8f5-2b7e-4ab3-80ef-a3e5a448c768/download/lim-vote-08-transport.pdf
+  name: 'Limpopo Department: Transport 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 08 : Transport'
+    url: https://data.vulekamali.gov.za/dataset/6af59bd5-b947-4fb5-85fb-7b4caaa5b28e/resource/daa34f19-a5cc-420d-a170-9071ca25fe90/download/lim-transport.xlsx
 description: 'Limpopo department: Transport budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -347,15 +360,6 @@ subprogramme_by_programme:
     name: Transport Regulations
     type: programme
 title: Transport budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 08 : Transport':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/6af59bd5-b947-4fb5-85fb-7b4caaa5b28e/resource/daa34f19-a5cc-420d-a170-9071ca25fe90/download/lim-transport.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/6af59bd5-b947-4fb5-85fb-7b4caaa5b28e/resource/222da8f5-2b7e-4ab3-80ef-a3e5a448c768/download/lim-vote-08-transport.pdf
 vote_number: 8
 vote_primary:
   name: Transport

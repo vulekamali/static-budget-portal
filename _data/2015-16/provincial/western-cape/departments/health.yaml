@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 06 : Health'
+    url: https://data.vulekamali.gov.za/dataset/0617a73d-79a5-4254-a5fd-3cd950c707c2/resource/bc6a93ea-f1c7-4ffd-8092-2a3362e5df89/download/wc-vote-06-health.pdf
+  name: 'Western Cape Department: Health 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 06 : Health'
+    url: https://data.vulekamali.gov.za/dataset/0617a73d-79a5-4254-a5fd-3cd950c707c2/resource/68c58275-7bea-4e6a-8b86-92dd50109bc5/download/wc-health.xlsx
 description: 'Western Cape department: Health budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -701,15 +714,6 @@ subprogramme_by_programme:
     name: Provincial Hospital Services
     type: programme
 title: Health budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 06 : Health':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/0617a73d-79a5-4254-a5fd-3cd950c707c2/resource/68c58275-7bea-4e6a-8b86-92dd50109bc5/download/wc-health.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/0617a73d-79a5-4254-a5fd-3cd950c707c2/resource/bc6a93ea-f1c7-4ffd-8092-2a3362e5df89/download/wc-vote-06-health.pdf
 vote_number: 6
 vote_primary:
   name: Health

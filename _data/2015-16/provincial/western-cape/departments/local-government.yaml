@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 14 : Local Government'
+    url: https://data.vulekamali.gov.za/dataset/74ce1197-65d5-4d22-b629-a739a0f5b7d3/resource/26f6f683-78ec-4ba9-aef3-94985a9745b5/download/wc-vote-14-local-government.pdf
+  name: 'Western Cape Department: Local Government 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 14 : Local Government'
+    url: https://data.vulekamali.gov.za/dataset/74ce1197-65d5-4d22-b629-a739a0f5b7d3/resource/45b8c0c3-afd1-4af7-91b7-ff5f65c62d54/download/wc-local-government.xlsx
 description: 'Western Cape department: Local Government budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -342,15 +355,6 @@ subprogramme_by_programme:
     name: Traditional Institutional Management
     type: programme
 title: Local Government budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 14 : Local Government':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/74ce1197-65d5-4d22-b629-a739a0f5b7d3/resource/45b8c0c3-afd1-4af7-91b7-ff5f65c62d54/download/wc-local-government.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/74ce1197-65d5-4d22-b629-a739a0f5b7d3/resource/26f6f683-78ec-4ba9-aef3-94985a9745b5/download/wc-vote-14-local-government.pdf
 vote_number: 14
 vote_primary:
   name: Local Government

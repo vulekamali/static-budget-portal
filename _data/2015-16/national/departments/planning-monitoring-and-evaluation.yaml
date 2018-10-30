@@ -16,132 +16,26 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 08 - Planning, Monitoring and Evaluation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-planning-2015-16/resource/866b954d-2e9e-4e5d-9178-a183ff2a6b05/download/vote-8-planning-monitoring-and-evaluation.pdf
+  name: 'National Department: Planning, Monitoring and Evaluation 2015-16'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 08 - Planning, Monitoring and Evaluation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-planning-2015-16/resource/c445e0ba-3936-46df-b535-454aa7badacc/download/ene15chap-tab-vote08.xls
 description: 'National department: Planning, Montoring and Evaluation budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 2020000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 67764000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Administration
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 473000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 59094000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Institutional Performance Monitoring and Evaluation
-    type: programme
-  - items:
-    - items:
-      - name: Current payments
-        total_budget: 88197000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: National Planning
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 50000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 409789000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 4703000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: National Youth Development
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 375000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 85229000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Outcomes Monitoring and Evaluation
-    type: programme
-expenditure_over_time:
-  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  expenditure:
-    base_financial_year: 2017-18
-    nominal:
-    - amount: 547257000.0
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 622196000.0
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 646595000.0
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 733842000.0
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 717694000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 738572000.0
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 784550000.0
-      financial_year: 2017-18
-      phase: Medium Term Estimates
-    real:
-    - amount: 756938434
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 815400515
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 800793727
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 860439006
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 800161589
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 774671919
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 784550000
-      financial_year: 2017-18
-      phase: Medium Term Estimates
+  programmes: []
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -180,59 +74,20 @@ is_vote_primary: true
 name: Planning, Montoring and Evaluation
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes:
-  - items:
-    - name: Administration
-      total_budget: 2020000.0
-      type: programme
-    - name: Institutional Performance Monitoring and Evaluation
-      total_budget: 473000.0
-      type: programme
-    - name: Outcomes Monitoring and Evaluation
-      total_budget: 375000.0
-      type: programme
-    - name: National Youth Development
-      total_budget: 50000.0
-      type: programme
-    name: Capital - Payments for capital assets
-    type: economic_classification_1_and_2
-  - items:
-    - name: National Planning
-      total_budget: 88197000.0
-      type: programme
-    - name: Outcomes Monitoring and Evaluation
-      total_budget: 85229000.0
-      type: programme
-    - name: Administration
-      total_budget: 67764000.0
-      type: programme
-    - name: Institutional Performance Monitoring and Evaluation
-      total_budget: 59094000.0
-      type: programme
-    - name: National Youth Development
-      total_budget: 4703000.0
-      type: programme
-    name: Current - Current payments
-    type: economic_classification_1_and_2
-  - items:
-    - name: National Youth Development
-      total_budget: 409789000.0
-      type: programme
-    name: Current - Transfers and subsidies
-    type: economic_classification_1_and_2
+  econ_classes: []
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:
   - name: Administration
-    total_budget: 69784000.0
+    total_budget: null
   - name: Outcomes Monitoring and Evaluation
-    total_budget: 85604000.0
+    total_budget: null
   - name: Institutional Performance Monitoring and Evaluation
-    total_budget: 59567000.0
+    total_budget: null
   - name: National Planning
-    total_budget: 88197000.0
+    total_budget: null
   - name: National Youth Development
-    total_budget: 414542000.0
+    total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: planning-monitoring-and-evaluation
@@ -241,80 +96,8 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - name: Corporate and Financial Services
-      total_budget: 36386000.0
-      type: subprogramme
-    - name: Information Technology Support
-      total_budget: 20197000.0
-      type: subprogramme
-    - name: Departmental Management
-      total_budget: 9822000.0
-      type: subprogramme
-    - name: Internal Audit and Enterprise Risk Management
-      total_budget: 3379000.0
-      type: subprogramme
-    name: Administration
-    type: programme
-  - items:
-    - name: Presidential Frontline Service Delivery Performance Monitoring and Support
-      total_budget: 39942000.0
-      type: subprogramme
-    - name: Management Performance Monitoring and Support
-      total_budget: 10374000.0
-      type: subprogramme
-    - name: Macro Monitoring and Evaluation Policy and Capacity Building
-      total_budget: 6371000.0
-      type: subprogramme
-    - name: Programme Management for Institutional Performance Monitoring and Evaluation
-      total_budget: 2880000.0
-      type: subprogramme
-    name: Institutional Performance Monitoring and Evaluation
-    type: programme
-  - items:
-    - name: Research and Policy Services
-      total_budget: 51421000.0
-      type: subprogramme
-    - name: Programme Management for National Planning
-      total_budget: 29490000.0
-      type: subprogramme
-    - name: Government Performance Information
-      total_budget: 7286000.0
-      type: subprogramme
-    name: National Planning
-    type: programme
-  - items:
-    - name: National Youth Development Agency
-      total_budget: 409789000.0
-      type: subprogramme
-    - name: Youth Development
-      total_budget: 4753000.0
-      type: subprogramme
-    name: National Youth Development
-    type: programme
-  - items:
-    - name: Outcomes Support
-      total_budget: 60910000.0
-      type: subprogramme
-    - name: Evaluation and Research
-      total_budget: 22066000.0
-      type: subprogramme
-    - name: Programme Management for Outcomes Monitoring and Evaluation
-      total_budget: 2628000.0
-      type: subprogramme
-    name: Outcomes Monitoring and Evaluation
-    type: programme
+  programmes: []
 title: Planning, Montoring and Evaluation budget 2015-16  - vulekamali
-treasury_datasets:
-  ENE for Vote 08 - Planning, Monitoring and Evaluation:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-planning-2015-16/resource/866b954d-2e9e-4e5d-9178-a183ff2a6b05/download/vote-8-planning-monitoring-and-evaluation.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-planning-2015-16/resource/c445e0ba-3936-46df-b535-454aa7badacc/download/ene15chap-tab-vote08.xls
 vote_number: 8
 vote_primary:
   name: Planning, Montoring and Evaluation

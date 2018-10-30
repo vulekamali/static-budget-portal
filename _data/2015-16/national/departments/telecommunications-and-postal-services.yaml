@@ -16,150 +16,26 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 32 - Telecommunications and Postal Services
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-telecommunications-and-postal-services-2015-16/resource/6dc4af9e-36c1-4d44-adcc-ece59f36bdec/download/vote-32-telecommunications-and-postal-services.pdf
+  name: 'National Department: Telecommunications and Postal Services 2015-16'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 32 - Telecommunications and Postal Services
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-telecommunications-and-postal-services-2015-16/resource/f6548f6b-59ea-47f2-88c7-6883a8e86623/download/ene15chap-tab-vote32.xls
 description: 'National department: Telecommunications and Postal Services budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 1694000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 171956000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Administration
-    type: programme
-  - items:
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 64852000.0
-        type: economic_classification_2
-      - name: Payments for capital assets
-        total_budget: 573000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 351410000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 31054000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: ICT Enterprise Development and SOE Oversight
-    type: programme
-  - items:
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 109000000.0
-        type: economic_classification_2
-      - name: Payments for capital assets
-        total_budget: 1179000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 351425000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 181160000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: ICT Infrastructure Support
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 520000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 22194000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 20733000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: International Affairs and Trade
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 1095000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 104483000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Policy, Research and Capacity Development
-    type: programme
-expenditure_over_time:
-  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  expenditure:
-    base_financial_year: 2017-18
-    nominal:
-    - amount: 1325443000.0
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 1017886000.0
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 1701462000.0
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 1616415000.0
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 1413328000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1545670000.0
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 1275319000.0
-      financial_year: 2017-18
-      phase: Medium Term Estimates
-    real:
-    - amount: 1833286278
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 1333960309
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 2107223372
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 1895266987
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 1575728345
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1621219251
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 1275319000
-      financial_year: 2017-18
-      phase: Medium Term Estimates
+  programmes: []
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -214,77 +90,20 @@ is_vote_primary: true
 name: Telecommunications and Postal Services
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes:
-  - items:
-    - name: Administration
-      total_budget: 1694000.0
-      type: programme
-    - name: ICT Infrastructure Support
-      total_budget: 1179000.0
-      type: programme
-    - name: Policy, Research and Capacity Development
-      total_budget: 1095000.0
-      type: programme
-    - name: ICT Enterprise Development and SOE Oversight
-      total_budget: 573000.0
-      type: programme
-    - name: International Affairs and Trade
-      total_budget: 520000.0
-      type: programme
-    name: Capital - Payments for capital assets
-    type: economic_classification_1_and_2
-  - items:
-    - name: ICT Infrastructure Support
-      total_budget: 109000000.0
-      type: programme
-    - name: ICT Enterprise Development and SOE Oversight
-      total_budget: 64852000.0
-      type: programme
-    name: Capital - Transfers and subsidies
-    type: economic_classification_1_and_2
-  - items:
-    - name: ICT Infrastructure Support
-      total_budget: 351425000.0
-      type: programme
-    - name: Administration
-      total_budget: 171956000.0
-      type: programme
-    - name: Policy, Research and Capacity Development
-      total_budget: 104483000.0
-      type: programme
-    - name: ICT Enterprise Development and SOE Oversight
-      total_budget: 31054000.0
-      type: programme
-    - name: International Affairs and Trade
-      total_budget: 20733000.0
-      type: programme
-    name: Current - Current payments
-    type: economic_classification_1_and_2
-  - items:
-    - name: ICT Enterprise Development and SOE Oversight
-      total_budget: 351410000.0
-      type: programme
-    - name: ICT Infrastructure Support
-      total_budget: 181160000.0
-      type: programme
-    - name: International Affairs and Trade
-      total_budget: 22194000.0
-      type: programme
-    name: Current - Transfers and subsidies
-    type: economic_classification_1_and_2
+  econ_classes: []
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:
   - name: Administration
-    total_budget: 173650000.0
+    total_budget: null
   - name: International Affairs and Trade
-    total_budget: 43447000.0
+    total_budget: null
   - name: Policy, Research and Capacity Development
-    total_budget: 105578000.0
+    total_budget: null
   - name: ICT Enterprise Development and SOE Oversight
-    total_budget: 447889000.0
+    total_budget: null
   - name: ICT Infrastructure Support
-    total_budget: 642764000.0
+    total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: telecommunications-and-postal-services
@@ -293,86 +112,8 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - name: Financial Management
-      total_budget: 69932000.0
-      type: subprogramme
-    - name: Corporate Services
-      total_budget: 52261000.0
-      type: subprogramme
-    - name: Departmental Management
-      total_budget: 29814000.0
-      type: subprogramme
-    - name: Office Accommodation
-      total_budget: 9133000.0
-      type: subprogramme
-    - name: Internal Audit
-      total_budget: 8218000.0
-      type: subprogramme
-    - name: Ministry
-      total_budget: 4292000.0
-      type: subprogramme
-    name: Administration
-    type: programme
-  - items:
-    - name: Public Entity Oversight
-      total_budget: 437460000.0
-      type: subprogramme
-    - name: ICT Support
-      total_budget: 6925000.0
-      type: subprogramme
-    - name: Small, Medium and Micro Enterprise Development
-      total_budget: 3504000.0
-      type: subprogramme
-    name: ICT Enterprise Development and SOE Oversight
-    type: programme
-  - items:
-    - name: Digital Terrestrial Television
-      total_budget: 371270000.0
-      type: subprogramme
-    - name: Broadband
-      total_budget: 271494000.0
-      type: subprogramme
-    name: ICT Infrastructure Support
-    type: programme
-  - items:
-    - name: ICT Trade/Partnership
-      total_budget: 29183000.0
-      type: subprogramme
-    - name: International Affairs
-      total_budget: 14264000.0
-      type: subprogramme
-    name: International Affairs and Trade
-    type: programme
-  - items:
-    - name: Information Society Development
-      total_budget: 53501000.0
-      type: subprogramme
-    - name: ICT Policy Development
-      total_budget: 28262000.0
-      type: subprogramme
-    - name: Capacity Development
-      total_budget: 12527000.0
-      type: subprogramme
-    - name: Economic and Market Analysis
-      total_budget: 5855000.0
-      type: subprogramme
-    - name: Research
-      total_budget: 5433000.0
-      type: subprogramme
-    name: Policy, Research and Capacity Development
-    type: programme
+  programmes: []
 title: Telecommunications and Postal Services budget 2015-16  - vulekamali
-treasury_datasets:
-  ENE for Vote 32 - Telecommunications and Postal Services:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-telecommunications-and-postal-services-2015-16/resource/6dc4af9e-36c1-4d44-adcc-ece59f36bdec/download/vote-32-telecommunications-and-postal-services.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-telecommunications-and-postal-services-2015-16/resource/f6548f6b-59ea-47f2-88c7-6883a8e86623/download/ene15chap-tab-vote32.xls
 vote_number: 32
 vote_primary:
   name: Telecommunications and Postal Services

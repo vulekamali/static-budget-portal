@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 03 : Transport, Safety and Liaison'
+    url: https://data.vulekamali.gov.za/dataset/a96a8efe-8b1d-4e12-b576-39cf9fb69a34/resource/c9dbfbb9-25e3-4505-83f9-f395c37770fd/download/nc-vote-03-transport-safety-and-liaison.pdf
+  name: 'Northern Cape Department: Transport, Safety and Liaison 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 03 : Transport, Safety and Liaison'
+    url: https://data.vulekamali.gov.za/dataset/a96a8efe-8b1d-4e12-b576-39cf9fb69a34/resource/792a3bf6-b992-412c-97cb-51a9860ed68b/download/nc-transport-safety-and-liaison.xlsx
 description: 'Northern Cape department: Transport, Safety and Liaison budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -300,15 +313,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Transport, Safety and Liaison budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 03 : Transport, Safety and Liaison':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/a96a8efe-8b1d-4e12-b576-39cf9fb69a34/resource/792a3bf6-b992-412c-97cb-51a9860ed68b/download/nc-transport-safety-and-liaison.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/a96a8efe-8b1d-4e12-b576-39cf9fb69a34/resource/c9dbfbb9-25e3-4505-83f9-f395c37770fd/download/nc-vote-03-transport-safety-and-liaison.pdf
 vote_number: 3
 vote_primary:
   name: Transport, Safety and Liaison

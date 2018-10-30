@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 11 : Social Development'
+    url: https://data.vulekamali.gov.za/dataset/947bd587-c7ea-406a-8d4d-cfad6b956359/resource/0577025e-d4f8-467a-a48d-cee5df30a432/download/nc-vote-11-social-development.pdf
+  name: 'Northern Cape Department: Social Development 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 11 : Social Development'
+    url: https://data.vulekamali.gov.za/dataset/947bd587-c7ea-406a-8d4d-cfad6b956359/resource/c88a731b-0804-48c1-847b-8cbcaff6956e/download/nc-social-development.xlsx
 description: 'Northern Cape department: Social Development budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -472,15 +485,6 @@ subprogramme_by_programme:
     name: Social Welfare Services
     type: programme
 title: Social Development budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 11 : Social Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/947bd587-c7ea-406a-8d4d-cfad6b956359/resource/c88a731b-0804-48c1-847b-8cbcaff6956e/download/nc-social-development.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/947bd587-c7ea-406a-8d4d-cfad6b956359/resource/0577025e-d4f8-467a-a48d-cee5df30a432/download/nc-vote-11-social-development.pdf
 vote_number: 11
 vote_primary:
   name: Social Development

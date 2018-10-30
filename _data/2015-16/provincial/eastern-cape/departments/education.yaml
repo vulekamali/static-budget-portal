@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 06 : Education'
+    url: https://data.vulekamali.gov.za/dataset/a5b70943-528c-4c7d-b452-eca090e31ec1/resource/b3a56af0-e12d-4e77-9329-65444ced62fa/download/ec-vote-06-education.pdf
+  name: 'Eastern Cape Department: Education 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 06 : Education'
+    url: https://data.vulekamali.gov.za/dataset/a5b70943-528c-4c7d-b452-eca090e31ec1/resource/ce3a8393-f2dc-4dc7-89ae-412195eb5f3c/download/ec-education.xlsx
 description: 'Eastern Cape department: Education budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -509,15 +522,6 @@ subprogramme_by_programme:
     name: Public Special School Education
     type: programme
 title: Education budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 06 : Education':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/a5b70943-528c-4c7d-b452-eca090e31ec1/resource/ce3a8393-f2dc-4dc7-89ae-412195eb5f3c/download/ec-education.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/a5b70943-528c-4c7d-b452-eca090e31ec1/resource/b3a56af0-e12d-4e77-9329-65444ced62fa/download/ec-vote-06-education.pdf
 vote_number: 6
 vote_primary:
   name: Education

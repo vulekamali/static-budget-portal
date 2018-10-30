@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 01 : Office of the Premier'
+    url: https://data.vulekamali.gov.za/dataset/ce5cf92e-10e8-42c3-b614-1c6e30bc27ac/resource/13ccf00f-b08d-4800-b233-8acc4c4df7b6/download/ec-vote-01-office-of-the-premier.pdf
+  name: 'Eastern Cape Department: Office of the Premier 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 01 : Office of the Premier'
+    url: https://data.vulekamali.gov.za/dataset/ce5cf92e-10e8-42c3-b614-1c6e30bc27ac/resource/d1b3e348-a5fe-44bd-8da7-53e65a70b450/download/ec-office-of-the-premier.xlsx
 description: 'Eastern Cape department: Office of the Premier budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -268,15 +281,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Office of the Premier budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 01 : Office of the Premier':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/ce5cf92e-10e8-42c3-b614-1c6e30bc27ac/resource/d1b3e348-a5fe-44bd-8da7-53e65a70b450/download/ec-office-of-the-premier.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/ce5cf92e-10e8-42c3-b614-1c6e30bc27ac/resource/13ccf00f-b08d-4800-b233-8acc4c4df7b6/download/ec-vote-01-office-of-the-premier.pdf
 vote_number: 1
 vote_primary:
   name: Office of the Premier

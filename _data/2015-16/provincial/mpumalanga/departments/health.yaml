@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 10 : Health'
+    url: https://data.vulekamali.gov.za/dataset/19f4a11a-4847-4ae6-917f-b02689a1de1f/resource/7879a61c-dba9-4217-b418-53d44e12b8f9/download/mpu-vote-10-health.pdf
+  name: 'Mpumalanga Department: Health 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 10 : Health'
+    url: https://data.vulekamali.gov.za/dataset/19f4a11a-4847-4ae6-917f-b02689a1de1f/resource/4ba6fd4f-dab9-4219-8459-e613b034ff87/download/mpu-health.xlsx
 description: 'Mpumalanga department: Health budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -607,15 +620,6 @@ subprogramme_by_programme:
     name: Provincial Hospital Services
     type: programme
 title: Health budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 10 : Health':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/19f4a11a-4847-4ae6-917f-b02689a1de1f/resource/4ba6fd4f-dab9-4219-8459-e613b034ff87/download/mpu-health.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/19f4a11a-4847-4ae6-917f-b02689a1de1f/resource/7879a61c-dba9-4217-b418-53d44e12b8f9/download/mpu-vote-10-health.pdf
 vote_number: 10
 vote_primary:
   name: Health

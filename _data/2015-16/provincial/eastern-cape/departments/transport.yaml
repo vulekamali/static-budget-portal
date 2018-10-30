@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 10 : Transport'
+    url: https://data.vulekamali.gov.za/dataset/1d34c876-942d-4c84-be29-bbe0c8a37663/resource/69ed4c8b-3999-409f-9369-32698c881ea2/download/ec-vote-10-transport.pdf
+  name: 'Eastern Cape Department: Transport 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 10 : Transport'
+    url: https://data.vulekamali.gov.za/dataset/1d34c876-942d-4c84-be29-bbe0c8a37663/resource/886ba771-aeac-4384-9de0-bc032dd2f1ad/download/ec-transport.xlsx
 description: 'Eastern Cape department: Transport budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -415,15 +428,6 @@ subprogramme_by_programme:
     name: Transport Regulation
     type: programme
 title: Transport budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 10 : Transport':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/1d34c876-942d-4c84-be29-bbe0c8a37663/resource/886ba771-aeac-4384-9de0-bc032dd2f1ad/download/ec-transport.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/1d34c876-942d-4c84-be29-bbe0c8a37663/resource/69ed4c8b-3999-409f-9369-32698c881ea2/download/ec-vote-10-transport.pdf
 vote_number: 10
 vote_primary:
   name: Transport

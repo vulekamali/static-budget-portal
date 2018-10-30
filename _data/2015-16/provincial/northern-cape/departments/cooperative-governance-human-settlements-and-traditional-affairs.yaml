@@ -16,6 +16,20 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 09 : Cooperative Governance, Human Settlements and Traditional Affairs'
+    url: https://data.vulekamali.gov.za/dataset/fb752226-124e-452a-af82-0b168773b374/resource/4cf118eb-f8eb-45f2-939f-67d6113f492e/download/nc-vote-09-cooperative-gov-hs-and-trad-affairs.pdf
+  name: 'Northern Cape Department: Cooperative Governance, Human Settlements and Traditional
+    Affairs 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 09 : Cooperative Governance, Human Settlements and Traditional Affairs'
+    url: https://data.vulekamali.gov.za/dataset/fb752226-124e-452a-af82-0b168773b374/resource/8d021956-5f2f-41e5-b578-922c0529ce10/download/nc-cog-human-settlements-and-trad-affairs.xlsx
 description: 'Northern Cape department: Cooperative Governance, Human Settlements
   and Traditional Affairs budget data for the 2015-16 financial year from National
   Treasury in partnership with IMALI YETHU.'
@@ -296,15 +310,6 @@ subprogramme_by_programme:
   programmes: []
 title: Cooperative Governance, Human Settlements and Traditional Affairs budget 2015-16  -
   vulekamali
-treasury_datasets:
-  'EPRE for Vote 09 : Cooperative Governance, Human Settlements and Traditional Affairs':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/fb752226-124e-452a-af82-0b168773b374/resource/8d021956-5f2f-41e5-b578-922c0529ce10/download/nc-cog-human-settlements-and-trad-affairs.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/fb752226-124e-452a-af82-0b168773b374/resource/4cf118eb-f8eb-45f2-939f-67d6113f492e/download/nc-vote-09-cooperative-gov-hs-and-trad-affairs.pdf
 vote_number: 9
 vote_primary:
   name: Cooperative Governance, Human Settlements and Traditional Affairs

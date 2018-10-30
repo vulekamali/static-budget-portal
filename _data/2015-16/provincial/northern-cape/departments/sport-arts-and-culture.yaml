@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 07 : Sport, Arts and Culture'
+    url: https://data.vulekamali.gov.za/dataset/a1f87904-7791-4aef-b7bb-a740980038de/resource/4d3be32d-997d-4ecb-8987-3a4a4bffa824/download/nc-vote-07-sport-arts-and-culture.pdf
+  name: 'Northern Cape Department: Sport, Arts and Culture 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 07 : Sport, Arts and Culture'
+    url: https://data.vulekamali.gov.za/dataset/a1f87904-7791-4aef-b7bb-a740980038de/resource/7112bc04-544b-4a74-86e0-a86207eedd62/download/nc-sportarts-and-culture.xlsx
 description: 'Northern Cape department: Sport, Arts and Culture budget data for the
   2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -355,15 +368,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Sport, Arts and Culture budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 07 : Sport, Arts and Culture':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/a1f87904-7791-4aef-b7bb-a740980038de/resource/7112bc04-544b-4a74-86e0-a86207eedd62/download/nc-sportarts-and-culture.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/a1f87904-7791-4aef-b7bb-a740980038de/resource/4d3be32d-997d-4ecb-8987-3a4a4bffa824/download/nc-vote-07-sport-arts-and-culture.pdf
 vote_number: 7
 vote_primary:
   name: Sport, Arts and Culture

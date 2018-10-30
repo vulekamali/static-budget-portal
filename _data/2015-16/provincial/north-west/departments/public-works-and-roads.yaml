@@ -16,6 +16,15 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document: null
+  name: 'North West Department: Public Works and Roads 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 11 : Public Works and Roads'
+    url: https://data.vulekamali.gov.za/dataset/2a2b1d5b-fc28-4c52-bb8c-65edccb24f73/resource/b9ce7918-acf6-4096-9a0d-0470c2b1854e/download/nw-public-works-and-roads.xlsx
 description: 'North West department: Public Works and Roads budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -317,13 +326,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Public Works and Roads budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 11 : Public Works and Roads':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/2a2b1d5b-fc28-4c52-bb8c-65edccb24f73/resource/b9ce7918-acf6-4096-9a0d-0470c2b1854e/download/nw-public-works-and-roads.xlsx
 vote_number: 11
 vote_primary:
   name: Public Works and Roads

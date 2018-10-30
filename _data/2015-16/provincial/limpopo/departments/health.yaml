@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 07 : Health'
+    url: https://data.vulekamali.gov.za/dataset/e4a214d4-977b-4ea0-8055-8974c0a3dbc6/resource/568447f6-d621-4234-b27b-082e1347f188/download/lim-vote-07-health.pdf
+  name: 'Limpopo Department: Health 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 07 : Health'
+    url: https://data.vulekamali.gov.za/dataset/e4a214d4-977b-4ea0-8055-8974c0a3dbc6/resource/d99f4c6a-8a0e-4811-b796-6938a9aeef28/download/lim-health.xlsx
 description: 'Limpopo department: Health budget data for the 2015-16 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -581,15 +594,6 @@ subprogramme_by_programme:
     name: Provincial Hospital Services
     type: programme
 title: Health budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 07 : Health':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/e4a214d4-977b-4ea0-8055-8974c0a3dbc6/resource/d99f4c6a-8a0e-4811-b796-6938a9aeef28/download/lim-health.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/e4a214d4-977b-4ea0-8055-8974c0a3dbc6/resource/568447f6-d621-4234-b27b-082e1347f188/download/lim-vote-07-health.pdf
 vote_number: 7
 vote_primary:
   name: Health

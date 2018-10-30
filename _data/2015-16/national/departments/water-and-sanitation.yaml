@@ -16,155 +16,25 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 36 - Water and Sanitation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-water-and-sanitation-2015-16/resource/6eff1f2e-a803-4459-b84c-033feee7c25a/download/vote-36-water-and-sanitation.pdf
+  name: 'National Department: Water and Sanitation 2015-16'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 36 - Water and Sanitation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-water-and-sanitation-2015-16/resource/ade8b63d-73a8-4bb7-bcdc-7d55ac265ad7/download/ene15chap-tab-vote36.xls
 description: 'National department: Water and Sanitation budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 56532000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 1449615000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 20020000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Administration
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 6065856000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 2851280000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 3157818000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 360833000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Water Infrastructure Development
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 60648000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 747296000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 711000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Water Planning and Information Management
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 4297000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 226042000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 1000000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Water Sector Regulation
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 1047804000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 48182000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 332989000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 15607000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Water and Sanitation Services
-    type: programme
-expenditure_over_time:
-  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  expenditure:
-    base_financial_year: 2017-18
-    nominal:
-    - amount: 8450907000.0
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 8907896000.0
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 10505916000.0
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 13647401000.0
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 16446530000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 16361549000.0
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 18204784000.0
-      financial_year: 2017-18
-      phase: Medium Term Estimates
-    real:
-    - amount: 11688870696
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 11673978916
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 13011346563
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 16001749912
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 18336340545
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 17161268722
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 18204784000
-      financial_year: 2017-18
-      phase: Medium Term Estimates
+  programmes: []
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -205,83 +75,20 @@ is_vote_primary: true
 name: Water and Sanitation
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes:
-  - items:
-    - name: Water Infrastructure Development
-      total_budget: 6065856000.0
-      type: programme
-    - name: Water and Sanitation Services
-      total_budget: 1047804000.0
-      type: programme
-    - name: Water Planning and Information Management
-      total_budget: 60648000.0
-      type: programme
-    - name: Administration
-      total_budget: 56532000.0
-      type: programme
-    - name: Water Sector Regulation
-      total_budget: 4297000.0
-      type: programme
-    name: Capital - Payments for capital assets
-    type: economic_classification_1_and_2
-  - items:
-    - name: Water Infrastructure Development
-      total_budget: 2851280000.0
-      type: programme
-    - name: Water and Sanitation Services
-      total_budget: 48182000.0
-      type: programme
-    name: Capital - Transfers and subsidies
-    type: economic_classification_1_and_2
-  - items:
-    - name: Administration
-      total_budget: 1449615000.0
-      type: programme
-    - name: Water Planning and Information Management
-      total_budget: 747296000.0
-      type: programme
-    - name: Water Infrastructure Development
-      total_budget: 360833000.0
-      type: programme
-    - name: Water and Sanitation Services
-      total_budget: 332989000.0
-      type: programme
-    - name: Water Sector Regulation
-      total_budget: 226042000.0
-      type: programme
-    name: Current - Current payments
-    type: economic_classification_1_and_2
-  - items:
-    - name: Water Infrastructure Development
-      total_budget: 3157818000.0
-      type: programme
-    - name: Administration
-      total_budget: 20020000.0
-      type: programme
-    - name: Water and Sanitation Services
-      total_budget: 15607000.0
-      type: programme
-    - name: Water Sector Regulation
-      total_budget: 1000000.0
-      type: programme
-    - name: Water Planning and Information Management
-      total_budget: 711000.0
-      type: programme
-    name: Current - Transfers and subsidies
-    type: economic_classification_1_and_2
+  econ_classes: []
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:
   - name: Administration
-    total_budget: 1526167000.0
+    total_budget: null
   - name: Water Planning and Information Management
-    total_budget: 808655000.0
+    total_budget: null
   - name: Water Infrastructure Development
-    total_budget: 12435787000.0
+    total_budget: null
   - name: Water and Sanitation Services
-    total_budget: 1444582000.0
+    total_budget: null
   - name: Water Sector Regulation
-    total_budget: 231339000.0
+    total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: water-and-sanitation
@@ -290,107 +97,8 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - name: Corporate Services
-      total_budget: 686603000.0
-      type: subprogramme
-    - name: Office Accommodation
-      total_budget: 335600000.0
-      type: subprogramme
-    - name: Financial Management
-      total_budget: 203591000.0
-      type: subprogramme
-    - name: Departmental Management
-      total_budget: 182647000.0
-      type: subprogramme
-    - name: Ministry
-      total_budget: 49636000.0
-      type: subprogramme
-    - name: International Water Support
-      total_budget: 37157000.0
-      type: subprogramme
-    - name: Internal Audit
-      total_budget: 26073000.0
-      type: subprogramme
-    - name: Programme Management Unit
-      total_budget: 4860000.0
-      type: subprogramme
-    name: Administration
-    type: programme
-  - items:
-    - name: Water Services Infrastructure
-      total_budget: 9684786000.0
-      type: subprogramme
-    - name: Infrastructure Development and Rehabilitation
-      total_budget: 2586603000.0
-      type: subprogramme
-    - name: Operation of Water Resources
-      total_budget: 164398000.0
-      type: subprogramme
-    name: Water Infrastructure Development
-    type: programme
-  - items:
-    - name: Water Information Management
-      total_budget: 533209000.0
-      type: subprogramme
-    - name: Integrated Planning
-      total_budget: 201813000.0
-      type: subprogramme
-    - name: Water Ecosystems
-      total_budget: 66648000.0
-      type: subprogramme
-    - name: Water Planning, Information Management and Support
-      total_budget: 6985000.0
-      type: subprogramme
-    name: Water Planning and Information Management
-    type: programme
-  - items:
-    - name: Water Use Authorisation and Administration
-      total_budget: 61364000.0
-      type: subprogramme
-    - name: Compliance Monitoring
-      total_budget: 60355000.0
-      type: subprogramme
-    - name: Institutional Oversight
-      total_budget: 45268000.0
-      type: subprogramme
-    - name: Enforcement
-      total_budget: 28886000.0
-      type: subprogramme
-    - name: Water Supply Services and Sanitation Regulation
-      total_budget: 23270000.0
-      type: subprogramme
-    - name: Water Sector Regulation Management and Support
-      total_budget: 6231000.0
-      type: subprogramme
-    - name: Economic and Social Regulation
-      total_budget: 5965000.0
-      type: subprogramme
-    name: Water Sector Regulation
-    type: programme
-  - items:
-    - name: National Sanitation Services
-      total_budget: 1182062000.0
-      type: subprogramme
-    - name: Water Sector Support
-      total_budget: 257175000.0
-      type: subprogramme
-    - name: Water and Sanitation Services Support
-      total_budget: 5345000.0
-      type: subprogramme
-    name: Water and Sanitation Services
-    type: programme
+  programmes: []
 title: Water and Sanitation budget 2015-16  - vulekamali
-treasury_datasets:
-  ENE for Vote 36 - Water and Sanitation:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-water-and-sanitation-2015-16/resource/6eff1f2e-a803-4459-b84c-033feee7c25a/download/vote-36-water-and-sanitation.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-water-and-sanitation-2015-16/resource/ade8b63d-73a8-4bb7-bcdc-7d55ac265ad7/download/ene15chap-tab-vote36.xls
 vote_number: 36
 vote_primary:
   name: Water and Sanitation

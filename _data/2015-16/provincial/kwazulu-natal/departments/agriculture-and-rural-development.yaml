@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 03 : Agriculture and Rural Development'
+    url: https://data.vulekamali.gov.za/dataset/4b7e1dd8-0aad-454e-9b2d-43e7125cd8d7/resource/80c5eb91-228f-46d3-8442-f5931ec1d012/download/kzn-vote-03-agriculture.pdf
+  name: 'KwaZulu-Natal Department: Agriculture and Rural Development 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 03 : Agriculture and Rural Development'
+    url: https://data.vulekamali.gov.za/dataset/4b7e1dd8-0aad-454e-9b2d-43e7125cd8d7/resource/d0af2c5c-b0c1-455a-8dbe-2434f6a7a5b0/download/kzn-agriculture-and-rural-dev.xlsx
 description: 'KwaZulu-Natal department: Agriculture and Rural Development budget data
   for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -299,15 +312,6 @@ subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
   programmes: []
 title: Agriculture and Rural Development budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 03 : Agriculture and Rural Development':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/4b7e1dd8-0aad-454e-9b2d-43e7125cd8d7/resource/d0af2c5c-b0c1-455a-8dbe-2434f6a7a5b0/download/kzn-agriculture-and-rural-dev.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/4b7e1dd8-0aad-454e-9b2d-43e7125cd8d7/resource/80c5eb91-228f-46d3-8442-f5931ec1d012/download/kzn-vote-03-agriculture.pdf
 vote_number: 3
 vote_primary:
   name: Agriculture and Rural Development

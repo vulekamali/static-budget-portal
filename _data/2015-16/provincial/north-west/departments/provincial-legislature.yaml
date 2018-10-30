@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 02 : Provincial Legislature'
+    url: https://data.vulekamali.gov.za/dataset/d82fa62f-0064-4940-b86c-11a77ae8fdea/resource/322b580e-7aa7-4449-85fb-797d16f146aa/download/nw-vote-02-provincial-legislature.pdf
+  name: 'North West Department: Provincial Legislature 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 02 : Provincial Legislature'
+    url: https://data.vulekamali.gov.za/dataset/d82fa62f-0064-4940-b86c-11a77ae8fdea/resource/e5f6f188-e22d-4765-8e53-0820c4ddbd7c/download/nw-provincial-legislature.xlsx
 description: 'North West department: Provincial Legislature budget data for the 2015-16
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -264,15 +277,6 @@ subprogramme_by_programme:
     name: Legislature operations
     type: programme
 title: Provincial Legislature budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 02 : Provincial Legislature':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/d82fa62f-0064-4940-b86c-11a77ae8fdea/resource/e5f6f188-e22d-4765-8e53-0820c4ddbd7c/download/nw-provincial-legislature.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/d82fa62f-0064-4940-b86c-11a77ae8fdea/resource/322b580e-7aa7-4449-85fb-797d16f146aa/download/nw-vote-02-provincial-legislature.pdf
 vote_number: 2
 vote_primary:
   name: Provincial Legislature

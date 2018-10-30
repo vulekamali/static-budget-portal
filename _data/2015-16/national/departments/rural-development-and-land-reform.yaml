@@ -16,155 +16,25 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 39 - Rural Development and Land Reform
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-rural-development-and-land-reform-2015-16/resource/06b2f31a-0f9b-4ee6-9e7b-349776b7c91e/download/vote-39-rural-development-and-land-reform.pdf
+  name: 'National Department: Rural Development and Land Reform 2015-16'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 39 - Rural Development and Land Reform
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-rural-development-and-land-reform-2015-16/resource/e92c2075-fb3b-4c1d-9a2a-1b8f6148030e/download/ene15chap-tab-vote39.xls
 description: 'National department: Rural Development and Land Reform budget data for
   the 2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 10324000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 1253804000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 137000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Administration
-    type: programme
-  - items:
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 560869000.0
-        type: economic_classification_2
-      - name: Payments for capital assets
-        total_budget: 1108000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 1563108000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 612023000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Land Reform
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 8352000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 644367000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 147184000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: National Geomatics Management Services
-    type: programme
-  - items:
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 2116000000.0
-        type: economic_classification_2
-      - name: Payments for capital assets
-        total_budget: 2067000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 480740000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 3862000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Restitution
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 3268000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 1345679000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 626792000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Rural Development
-    type: programme
-expenditure_over_time:
-  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  expenditure:
-    base_financial_year: 2017-18
-    nominal:
-    - amount: 7997725000.0
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 8919567000.0
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 9454056000.0
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 9455305000.0
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 9379684000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 10392008000.0
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 10888698000.0
-      financial_year: 2017-18
-      phase: Medium Term Estimates
-    real:
-    - amount: 11062052084
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 11689273999
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 11708641021
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 11086464445
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 10457469145
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 10899948523
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 10888698000
-      financial_year: 2017-18
-      phase: Medium Term Estimates
+  programmes: []
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -238,83 +108,20 @@ is_vote_primary: true
 name: Rural Development and Land Reform
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes:
-  - items:
-    - name: Administration
-      total_budget: 10324000.0
-      type: programme
-    - name: National Geomatics Management Services
-      total_budget: 8352000.0
-      type: programme
-    - name: Rural Development
-      total_budget: 3268000.0
-      type: programme
-    - name: Restitution
-      total_budget: 2067000.0
-      type: programme
-    - name: Land Reform
-      total_budget: 1108000.0
-      type: programme
-    name: Capital - Payments for capital assets
-    type: economic_classification_1_and_2
-  - items:
-    - name: Restitution
-      total_budget: 2116000000.0
-      type: programme
-    - name: Land Reform
-      total_budget: 560869000.0
-      type: programme
-    name: Capital - Transfers and subsidies
-    type: economic_classification_1_and_2
-  - items:
-    - name: Administration
-      total_budget: 1253804000.0
-      type: programme
-    - name: National Geomatics Management Services
-      total_budget: 644367000.0
-      type: programme
-    - name: Rural Development
-      total_budget: 626792000.0
-      type: programme
-    - name: Land Reform
-      total_budget: 612023000.0
-      type: programme
-    - name: Restitution
-      total_budget: 480740000.0
-      type: programme
-    name: Current - Current payments
-    type: economic_classification_1_and_2
-  - items:
-    - name: Land Reform
-      total_budget: 1563108000.0
-      type: programme
-    - name: Rural Development
-      total_budget: 1345679000.0
-      type: programme
-    - name: National Geomatics Management Services
-      total_budget: 147184000.0
-      type: programme
-    - name: Restitution
-      total_budget: 3862000.0
-      type: programme
-    - name: Administration
-      total_budget: 137000.0
-      type: programme
-    name: Current - Transfers and subsidies
-    type: economic_classification_1_and_2
+  econ_classes: []
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:
   - name: Administration
-    total_budget: 1264265000.0
+    total_budget: null
   - name: National Geomatics Management Services
-    total_budget: 799903000.0
+    total_budget: null
   - name: Rural Development
-    total_budget: 1975739000.0
+    total_budget: null
   - name: Restitution
-    total_budget: 2602669000.0
+    total_budget: null
   - name: Land Reform
-    total_budget: 2737108000.0
+    total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: rural-development-and-land-reform
@@ -323,101 +130,8 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - name: Corporate Services
-      total_budget: 364341000.0
-      type: subprogramme
-    - name: Provincial Coordination
-      total_budget: 308112000.0
-      type: subprogramme
-    - name: Financial Services
-      total_budget: 185980000.0
-      type: subprogramme
-    - name: Office Accommodation
-      total_budget: 166657000.0
-      type: subprogramme
-    - name: Management
-      total_budget: 140050000.0
-      type: subprogramme
-    - name: Internal Audit
-      total_budget: 58107000.0
-      type: subprogramme
-    - name: Ministry
-      total_budget: 41018000.0
-      type: subprogramme
-    name: Administration
-    type: programme
-  - items:
-    - name: Agricultural Land Holding Account
-      total_budget: 1542027000.0
-      type: subprogramme
-    - name: Land Reform Grants
-      total_budget: 560869000.0
-      type: subprogramme
-    - name: Land Reform Provincial Offices
-      total_budget: 445825000.0
-      type: subprogramme
-    - name: Land Reform National Office
-      total_budget: 158991000.0
-      type: subprogramme
-    - name: KwaZulu-Natal Ingonyama Trust Board
-      total_budget: 18069000.0
-      type: subprogramme
-    - name: Office of Valuer-General
-      total_budget: 11327000.0
-      type: subprogramme
-    name: Land Reform
-    type: programme
-  - items:
-    - name: National Geomatics Management Services
-      total_budget: 490317000.0
-      type: subprogramme
-    - name: Spatial Planning and Land Use Management
-      total_budget: 186890000.0
-      type: subprogramme
-    - name: Registration of Deeds Trading account
-      total_budget: 119537000.0
-      type: subprogramme
-    - name: South African Council for Planners
-      total_budget: 3159000.0
-      type: subprogramme
-    name: National Geomatics Management Services
-    type: programme
-  - items:
-    - name: Restitution Grants
-      total_budget: 2116000000.0
-      type: subprogramme
-    - name: Restitution Regional Offices
-      total_budget: 427366000.0
-      type: subprogramme
-    - name: Restitution National Office
-      total_budget: 59303000.0
-      type: subprogramme
-    name: Restitution
-    type: programme
-  - items:
-    - name: Rural Infrastructure Development
-      total_budget: 917862000.0
-      type: subprogramme
-    - name: Rural Enterprise and Industrial Development
-      total_budget: 725936000.0
-      type: subprogramme
-    - name: National Rural Youth Services Corps
-      total_budget: 331941000.0
-      type: subprogramme
-    name: Rural Development
-    type: programme
+  programmes: []
 title: Rural Development and Land Reform budget 2015-16  - vulekamali
-treasury_datasets:
-  ENE for Vote 39 - Rural Development and Land Reform:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-rural-development-and-land-reform-2015-16/resource/06b2f31a-0f9b-4ee6-9e7b-349776b7c91e/download/vote-39-rural-development-and-land-reform.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-rural-development-and-land-reform-2015-16/resource/e92c2075-fb3b-4c1d-9a2a-1b8f6148030e/download/ene15chap-tab-vote39.xls
 vote_number: 39
 vote_primary:
   name: Rural Development and Land Reform

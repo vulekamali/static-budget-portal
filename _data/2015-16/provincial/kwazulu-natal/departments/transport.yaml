@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 12 : Transport'
+    url: https://data.vulekamali.gov.za/dataset/1db4972e-f152-4e27-ac2b-a5cc00baaccc/resource/8927223d-95b0-4617-998f-0d88664e2cfe/download/kzn-vote-12-transport.pdf
+  name: 'KwaZulu-Natal Department: Transport 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 12 : Transport'
+    url: https://data.vulekamali.gov.za/dataset/1db4972e-f152-4e27-ac2b-a5cc00baaccc/resource/7c6129ac-fc53-43ae-8c40-d4371bdad103/download/kzn-transport.xlsx
 description: 'KwaZulu-Natal department: Transport budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -470,15 +483,6 @@ subprogramme_by_programme:
     name: Transport Regulation
     type: programme
 title: Transport budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 12 : Transport':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/1db4972e-f152-4e27-ac2b-a5cc00baaccc/resource/7c6129ac-fc53-43ae-8c40-d4371bdad103/download/kzn-transport.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/1db4972e-f152-4e27-ac2b-a5cc00baaccc/resource/8927223d-95b0-4617-998f-0d88664e2cfe/download/kzn-vote-12-transport.pdf
 vote_number: 12
 vote_primary:
   name: Transport

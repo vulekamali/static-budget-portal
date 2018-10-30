@@ -16,128 +16,25 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 37 - Arts and Culture
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-arts-and-culture-2015-16/resource/03a1d691-ed20-4316-9b3f-914eefd95eb8/download/vote-37-arts-and-culture.pdf
+  name: 'National Department: Arts and Culture 2015-16'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 37 - Arts and Culture
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-arts-and-culture-2015-16/resource/3c9367a9-00fc-4b6d-b1f7-eaa80dec66b7/download/ene15chap-tab-vote37.xls
 description: 'National department: Arts and Culture budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 7398000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 236614000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Administration
-    type: programme
-  - items:
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 150127000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 728184000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 197913000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Arts and Culture Promotion and Development
-    type: programme
-  - items:
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 511679000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 1534544000.0
-        type: economic_classification_2
-      - name: Current payments
-        total_budget: 129342000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Heritage Promotion and Preservation
-    type: programme
-  - items:
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 319650000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 76331000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 28077000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Institutional Governance
-    type: programme
-expenditure_over_time:
-  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  expenditure:
-    base_financial_year: 2017-18
-    nominal:
-    - amount: 2405832000.0
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 2659333000.0
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 2758200000.0
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 3527748000.0
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 3919859000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 4103395000.0
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 4347038000.0
-      financial_year: 2017-18
-      phase: Medium Term Estimates
-    real:
-    - amount: 3327626154
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 3485109993
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 3415970210
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 4136329052
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 4370275645
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 4303960723
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 4347038000
-      financial_year: 2017-18
-      phase: Medium Term Estimates
+  programmes: []
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -186,63 +83,18 @@ is_vote_primary: true
 name: Arts and Culture
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes:
-  - items:
-    - name: Administration
-      total_budget: 7398000.0
-      type: programme
-    name: Capital - Payments for capital assets
-    type: economic_classification_1_and_2
-  - items:
-    - name: Heritage Promotion and Preservation
-      total_budget: 511679000.0
-      type: programme
-    - name: Institutional Governance
-      total_budget: 319650000.0
-      type: programme
-    - name: Arts and Culture Promotion and Development
-      total_budget: 150127000.0
-      type: programme
-    name: Capital - Transfers and subsidies
-    type: economic_classification_1_and_2
-  - items:
-    - name: Administration
-      total_budget: 236614000.0
-      type: programme
-    - name: Arts and Culture Promotion and Development
-      total_budget: 197913000.0
-      type: programme
-    - name: Heritage Promotion and Preservation
-      total_budget: 129342000.0
-      type: programme
-    - name: Institutional Governance
-      total_budget: 76331000.0
-      type: programme
-    name: Current - Current payments
-    type: economic_classification_1_and_2
-  - items:
-    - name: Heritage Promotion and Preservation
-      total_budget: 1534544000.0
-      type: programme
-    - name: Arts and Culture Promotion and Development
-      total_budget: 728184000.0
-      type: programme
-    - name: Institutional Governance
-      total_budget: 28077000.0
-      type: programme
-    name: Current - Transfers and subsidies
-    type: economic_classification_1_and_2
+  econ_classes: []
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:
   - name: Administration
-    total_budget: 244012000.0
+    total_budget: null
   - name: Institutional Governance
-    total_budget: 424058000.0
+    total_budget: null
   - name: Arts and Culture Promotion and Development
-    total_budget: 1076224000.0
+    total_budget: null
   - name: Heritage Promotion and Preservation
-    total_budget: 2175565000.0
+    total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: arts-and-culture
@@ -251,101 +103,8 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - name: Office Accommodation
-      total_budget: 90519000.0
-      type: subprogramme
-    - name: Corporate Services
-      total_budget: 81797000.0
-      type: subprogramme
-    - name: Management
-      total_budget: 42757000.0
-      type: subprogramme
-    - name: Office of the CFO
-      total_budget: 24883000.0
-      type: subprogramme
-    - name: Ministry
-      total_budget: 4056000.0
-      type: subprogramme
-    name: Administration
-    type: programme
-  - items:
-    - name: Cultural and Creative Industries Development
-      total_budget: 352339000.0
-      type: subprogramme
-    - name: Performing Arts Institutions
-      total_budget: 319565000.0
-      type: subprogramme
-    - name: National Film and Video Foundation
-      total_budget: 116721000.0
-      type: subprogramme
-    - name: National Arts Council
-      total_budget: 96089000.0
-      type: subprogramme
-    - name: Pan South African Language Board
-      total_budget: 87338000.0
-      type: subprogramme
-    - name: Capital Works of Performing Arts Institutions
-      total_budget: 57683000.0
-      type: subprogramme
-    - name: National Language Services
-      total_budget: 46489000.0
-      type: subprogramme
-    name: Arts and Culture Promotion and Development
-    type: programme
-  - items:
-    - name: Public Library Services
-      total_budget: 1339186000.0
-      type: subprogramme
-    - name: Heritage Institutions
-      total_budget: 490934000.0
-      type: subprogramme
-    - name: National Library Services
-      total_budget: 105694000.0
-      type: subprogramme
-    - name: Heritage Promotion
-      total_budget: 86498000.0
-      type: subprogramme
-    - name: National Heritage Council
-      total_budget: 58475000.0
-      type: subprogramme
-    - name: South African Heritage Resources Agency
-      total_budget: 48552000.0
-      type: subprogramme
-    - name: National Archive Services
-      total_budget: 41739000.0
-      type: subprogramme
-    - name: South African Geographical Names Council
-      total_budget: 4487000.0
-      type: subprogramme
-    name: Heritage Promotion and Preservation
-    type: programme
-  - items:
-    - name: Capital Works
-      total_budget: 319650000.0
-      type: subprogramme
-    - name: Social Cohesion and Nation Building
-      total_budget: 48795000.0
-      type: subprogramme
-    - name: International Co-operation
-      total_budget: 38180000.0
-      type: subprogramme
-    - name: Coordination, Monitoring, Evaluation and Good Governance
-      total_budget: 17433000.0
-      type: subprogramme
-    name: Institutional Governance
-    type: programme
+  programmes: []
 title: Arts and Culture budget 2015-16  - vulekamali
-treasury_datasets:
-  ENE for Vote 37 - Arts and Culture:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-arts-and-culture-2015-16/resource/03a1d691-ed20-4316-9b3f-914eefd95eb8/download/vote-37-arts-and-culture.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-arts-and-culture-2015-16/resource/3c9367a9-00fc-4b6d-b1f7-eaa80dec66b7/download/ene15chap-tab-vote37.xls
 vote_number: 37
 vote_primary:
   name: Arts and Culture

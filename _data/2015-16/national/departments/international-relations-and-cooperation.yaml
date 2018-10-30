@@ -16,141 +16,26 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Vote 06 - International Relations and Cooperation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2015-16/resource/a690e619-c659-4305-b26e-bf30b6681851/download/vote-6-international-relations-and-cooperation.pdf
+  name: 'National Department: International Relations and Cooperation 2015-16'
+  tables:
+    description: ''
+    format: XLS
+    name: Vote 06 - International Relations and Cooperation
+    url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2015-16/resource/86890b84-3604-4481-9b20-4eec3fed1752/download/ene15chap-tab-vote06.xls
 description: 'National department: International Relations and Cooperation budget
   data for the 2015-16 financial year from National Treasury in partnership with IMALI
   YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 250261000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 1167033000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 1227000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Administration
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 2069000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 464850000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 26000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: International Cooperation
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 30020000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 2897197000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 4440000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: International Relations
-    type: programme
-  - items:
-    - items:
-      - name: Transfers and subsidies
-        total_budget: 635231000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: International Transfers
-    type: programme
-  - items:
-    - items:
-      - name: Payments for capital assets
-        total_budget: 1613000.0
-        type: economic_classification_2
-      name: Capital
-      type: economic_classification_1
-    - items:
-      - name: Current payments
-        total_budget: 244404000.0
-        type: economic_classification_2
-      - name: Transfers and subsidies
-        total_budget: 263000.0
-        type: economic_classification_2
-      name: Current
-      type: economic_classification_1
-    name: Public Diplomacy and Protocol Services
-    type: programme
-expenditure_over_time:
-  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  expenditure:
-    base_financial_year: 2017-18
-    nominal:
-    - amount: 5021826000.0
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 5185076000.0
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 5871296000.0
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 6104324000.0
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 5698634000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 5943556000.0
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 6543251000.0
-      financial_year: 2017-18
-      phase: Medium Term Estimates
-    real:
-    - amount: 6945937847
-      financial_year: 2011-12
-      phase: Audited Outcome
-    - amount: 6795147575
-      financial_year: 2012-13
-      phase: Audited Outcome
-    - amount: 7271471334
-      financial_year: 2013-14
-      phase: Audited Outcome
-    - amount: 7157396931
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: 6353443168
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 6234065104
-      financial_year: 2016-17
-      phase: Medium Term Estimates
-    - amount: 6543251000
-      financial_year: 2017-18
-      phase: Medium Term Estimates
+  programmes: []
+expenditure_over_time: null
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -201,68 +86,20 @@ is_vote_primary: true
 name: International Relations and Cooperation
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes:
-  - items:
-    - name: Administration
-      total_budget: 250261000.0
-      type: programme
-    - name: International Relations
-      total_budget: 30020000.0
-      type: programme
-    - name: International Cooperation
-      total_budget: 2069000.0
-      type: programme
-    - name: Public Diplomacy and Protocol Services
-      total_budget: 1613000.0
-      type: programme
-    name: Capital - Payments for capital assets
-    type: economic_classification_1_and_2
-  - items:
-    - name: International Relations
-      total_budget: 2897197000.0
-      type: programme
-    - name: Administration
-      total_budget: 1167033000.0
-      type: programme
-    - name: International Cooperation
-      total_budget: 464850000.0
-      type: programme
-    - name: Public Diplomacy and Protocol Services
-      total_budget: 244404000.0
-      type: programme
-    name: Current - Current payments
-    type: economic_classification_1_and_2
-  - items:
-    - name: International Transfers
-      total_budget: 635231000.0
-      type: programme
-    - name: International Relations
-      total_budget: 4440000.0
-      type: programme
-    - name: Administration
-      total_budget: 1227000.0
-      type: programme
-    - name: Public Diplomacy and Protocol Services
-      total_budget: 263000.0
-      type: programme
-    - name: International Cooperation
-      total_budget: 26000.0
-      type: programme
-    name: Current - Transfers and subsidies
-    type: economic_classification_1_and_2
+  econ_classes: []
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   programme_budgets:
   - name: Administration
-    total_budget: 1418521000.0
+    total_budget: null
   - name: International Relations
-    total_budget: 2931657000.0
+    total_budget: null
   - name: International Cooperation
-    total_budget: 466945000.0
+    total_budget: null
   - name: Public Diplomacy and Protocol Services
-    total_budget: 246280000.0
+    total_budget: null
   - name: International Transfers
-    total_budget: 635231000.0
+    total_budget: null
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: international-relations-and-cooperation
@@ -271,92 +108,8 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes:
-  - items:
-    - name: Corporate Services
-      total_budget: 642618000.0
-      type: subprogramme
-    - name: Office Accommodation
-      total_budget: 312169000.0
-      type: subprogramme
-    - name: Foreign Fixed Assets Management
-      total_budget: 223838000.0
-      type: subprogramme
-    - name: Financial Management
-      total_budget: 130953000.0
-      type: subprogramme
-    - name: Diplomatic Training, Research and Development
-      total_budget: 66493000.0
-      type: subprogramme
-    - name: Audit Services
-      total_budget: 19832000.0
-      type: subprogramme
-    - name: Departmental Management
-      total_budget: 16388000.0
-      type: subprogramme
-    - name: Ministry
-      total_budget: 6230000.0
-      type: subprogramme
-    name: Administration
-    type: programme
-  - items:
-    - name: Global System of Governance
-      total_budget: 253330000.0
-      type: subprogramme
-    - name: Continental Cooperation
-      total_budget: 133604000.0
-      type: subprogramme
-    - name: North-South Dialogue
-      total_budget: 76325000.0
-      type: subprogramme
-    - name: South-South Cooperation
-      total_budget: 3686000.0
-      type: subprogramme
-    name: International Cooperation
-    type: programme
-  - items:
-    - name: Africa
-      total_budget: 885923000.0
-      type: subprogramme
-    - name: Europe
-      total_budget: 809757000.0
-      type: subprogramme
-    - name: Asia and Middle East
-      total_budget: 734839000.0
-      type: subprogramme
-    - name: Americas and Caribbean
-      total_budget: 501138000.0
-      type: subprogramme
-    name: International Relations
-    type: programme
-  - items:
-    - name: Membership contribution
-      total_budget: 481194000.0
-      type: subprogramme
-    - name: Departmental agencies
-      total_budget: 154037000.0
-      type: subprogramme
-    name: International Transfers
-    type: programme
-  - items:
-    - name: Protocol Services
-      total_budget: 183935000.0
-      type: subprogramme
-    - name: Public Diplomacy
-      total_budget: 62345000.0
-      type: subprogramme
-    name: Public Diplomacy and Protocol Services
-    type: programme
+  programmes: []
 title: International Relations and Cooperation budget 2015-16  - vulekamali
-treasury_datasets:
-  ENE for Vote 06 - International Relations and Cooperation:
-    description: The Estimates of National Expenditure (ENE) sets out the detailed
-      spending plans of each government department for the coming year.
-    formats:
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2015-16/resource/a690e619-c659-4305-b26e-bf30b6681851/download/vote-6-international-relations-and-cooperation.pdf
-    - format: XLS
-      url: https://data.vulekamali.gov.za/dataset/nat-dept-international-relations-and-cooperation-2015-16/resource/86890b84-3604-4481-9b20-4eec3fed1752/download/ene15chap-tab-vote06.xls
 vote_number: 6
 vote_primary:
   name: International Relations and Cooperation

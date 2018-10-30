@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 03 : Education'
+    url: https://data.vulekamali.gov.za/dataset/cffa8673-cc66-4d5c-8bc8-426ab8f47287/resource/051ae37a-c301-4f11-a4e6-a33e6f359ee2/download/lim-vote-03-education.pdf
+  name: 'Limpopo Department: Education 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 03 : Education'
+    url: https://data.vulekamali.gov.za/dataset/cffa8673-cc66-4d5c-8bc8-426ab8f47287/resource/a004de5f-6157-494c-99e3-d8225620dd6d/download/lim-education.xlsx
 description: 'Limpopo department: Education budget data for the 2015-16 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -504,15 +517,6 @@ subprogramme_by_programme:
     name: Public Special Schools Education
     type: programme
 title: Education budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 03 : Education':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/cffa8673-cc66-4d5c-8bc8-426ab8f47287/resource/a004de5f-6157-494c-99e3-d8225620dd6d/download/lim-education.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/cffa8673-cc66-4d5c-8bc8-426ab8f47287/resource/051ae37a-c301-4f11-a4e6-a33e6f359ee2/download/lim-vote-03-education.pdf
 vote_number: 3
 vote_primary:
   name: Education

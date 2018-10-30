@@ -16,6 +16,19 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
+department_adjusted_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: 'Vote 14 : Gauteng Provincial Treasury'
+    url: https://data.vulekamali.gov.za/dataset/676abf52-8786-4da0-a256-90c5b253d4f4/resource/1e1ffff0-105a-4089-bfd0-cc3b21809b63/download/gt-vote-14-gauteng-provincial-treasury.pdf
+  name: 'Gauteng Department: Gauteng Provincial Treasury 2015-16'
+  tables:
+    description: ''
+    format: XLSX
+    name: 'Vote 14 : Gauteng Provincial Treasury'
+    url: https://data.vulekamali.gov.za/dataset/676abf52-8786-4da0-a256-90c5b253d4f4/resource/f28ed1d4-9fb4-4c86-914d-4b1db7ebb237/download/gt-provincial-treasury.xlsx
 description: 'Gauteng department: Gauteng Provincial Treasury budget data for the
   2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -419,15 +432,6 @@ subprogramme_by_programme:
     name: Sustainable Fiscal  Resource Management
     type: programme
 title: Gauteng Provincial Treasury budget 2015-16  - vulekamali
-treasury_datasets:
-  'EPRE for Vote 14 : Gauteng Provincial Treasury':
-    description: The Estimates of Provincial Revenue and Expenditure (EPRE) sets out
-      the detailed spending plans of each government department for the coming year.
-    formats:
-    - format: XLSX
-      url: https://data.vulekamali.gov.za/dataset/676abf52-8786-4da0-a256-90c5b253d4f4/resource/f28ed1d4-9fb4-4c86-914d-4b1db7ebb237/download/gt-provincial-treasury.xlsx
-    - format: PDF
-      url: https://data.vulekamali.gov.za/dataset/676abf52-8786-4da0-a256-90c5b253d4f4/resource/1e1ffff0-105a-4089-bfd0-cc3b21809b63/download/gt-vote-14-gauteng-provincial-treasury.pdf
 vote_number: 14
 vote_primary:
   name: Gauteng Provincial Treasury
