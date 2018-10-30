@@ -1,12 +1,15 @@
 .LinksList {
-  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.LinksList-item {
+.LinksList-link {
   display: inline-flex;
   padding: 0.25rem 0.5rem;
   border-radius: 2px;
   fill: grey;
+  text-decoration: none;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
@@ -15,9 +18,10 @@
 
 .LinksList-icon {
   flex-shrink: 0;
+  margin-right: 0.5rem;
 }
 
 .LinksList-title {
   flex-grow: 1;
-  margin-left: 0.5rem;
+  text-decoration: underline;
 }

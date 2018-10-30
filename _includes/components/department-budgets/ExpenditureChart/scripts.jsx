@@ -119,16 +119,51 @@ class ExpenditureChart extends Component {
   render() {
     const { source } = this.state;
     const { items: rawItems } = this.values;
-    const { excel, pdf } = this.props;
+    const { excel, pdf, dataset, sourceType, year, guide, cpi } = this.props;
     const items = rawItems[source];
 
-    const props = pick(this.props, ['year', 'location', 'cpi', 'dataset', 'year', 'sourceType', 'guide']);
-    const values = pick(this.values, ['items', 'phaseTable']);
-    const state = pick(this.state, ['width', 'mobile', 'source', 'type']);
+    const values = pick(this.values, ['phaseTable']);
+    const state = pick(this.state, ['source', 'type']);
     const eventSelected = ['downloadAction', 'canvasAction', 'resizeAction', 'changeSource'];
     const events = pick(this.events, eventSelected);
 
-    const passedProps = { ...props, ...values, ...state, ...events, items, pdf, excel };
+    const linksListArrayRaw = [
+      {
+        id: 'dataset',
+        prefix: 'Source',
+        title: `${sourceType} ${year}`,
+        link: dataset,
+        type: 'dataset',
+      },
+      {
+        id: 'guide',
+        title: `Dataset Guide for ${sourceType}`,
+        link: guide,
+        type: 'guide',
+      },
+      {
+        id: 'pdf',
+        title: `Learn more about these programmes in the ${sourceType} as PDF`,
+        link: pdf,
+        type: 'download',
+      },
+      {
+        id: 'excel',
+        title: `Learn more about these programmes in the ${sourceType} as Excel`,
+        link: excel,
+        type: 'download',
+      },
+      {
+        id: 'cpi',
+        title: 'Annual CPI Inflation {year} as Excel document',
+        link: cpi,
+        type: 'download',
+      },
+    ];
+
+    const linksListArray = linksListArrayRaw.filter(({ link }) => !!link);
+
+    const passedProps = { ...values, ...state, ...events, items, linksListArray };
     return <Markup {...passedProps} />;
   }
 }

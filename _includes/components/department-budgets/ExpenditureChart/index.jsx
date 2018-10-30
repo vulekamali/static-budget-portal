@@ -1,78 +1,21 @@
 import { h } from 'preact';
 import ResponsiveChart from './../../universal/ResponsiveChart/index.jsx';
-import Icon from './../../universal/Icon/index.jsx';
 import Share from './../../universal/Share/index.jsx';
+import Linkslist from '../LinksList/index.jsx';
 
 
 export default function ExpenditureChart(props) {
   const {
     items,
     phaseTable,
-    sourceType,
-    year,
-    guide,
-    excel,
-    pdf,
-
+    linksListArray,
     source,
     type,
-    cpi,
-    dataset,
-
     downloadAction,
     canvasAction,
     resizeAction,
     changeSource,
   } = props;
-
-  const buildDataset = () => (
-    <div>
-      <a href={dataset} className="LinksList-item u-textDecorationNone">
-        <span className="LinksList-icon"><Icon type="dataset" /></span>
-        <span className="LinksList-title">
-          <span>Source:&nbsp;</span>
-          <span className="u-textDecorationUnderline">{sourceType} {year}</span>
-        </span>
-      </a>
-    </div>
-  );
-
-  const buildGuide = () => (
-    <div>
-      <a href={guide} className="LinksList-item">
-        <span className="LinksList-icon"><Icon type="guide" /></span>
-        <span className="LinksList-title">Dataset Guide for {sourceType}</span>
-      </a>
-    </div>
-  );
-
-  const buildPdf = () => (
-    <div>
-      <a href={pdf} className="LinksList-item" target="_blank" rel="noopener noreferrer">
-        <span className="LinksList-icon"><Icon type="download" /></span>
-        <span className="LinksList-title">Learn more about these programmes in the { sourceType } as PDF</span>
-      </a>
-    </div>
-  );
-
-  const buildExcel = () => (
-    <div>
-      <a href={excel} className="LinksList-item" target="_blank" rel="noopener noreferrer">
-        <span className="LinksList-icon"><Icon type="download" /></span>
-        <span className="LinksList-title">Learn more about these programmes in the { sourceType } as Excel</span>
-      </a>
-    </div>
-  );
-
-
-  const buildCpi = () => (
-    <div>
-      <a href={cpi} className="LinksList-item" target="_blank" rel="noopener noreferrer">
-        <span className="LinksList-icon"><Icon type="download" /></span>
-        <span className="LinksList-title">Annual CPI Inflation {year} as Excel document</span>
-      </a>
-    </div>
-  );
 
 
   return (
@@ -109,11 +52,7 @@ export default function ExpenditureChart(props) {
             </div>
           </div>
           <div className="u-marginLeft30">
-            {dataset && buildDataset()}
-            {guide && buildGuide()}
-            {pdf && buildPdf()}
-            {excel && buildExcel()}
-            {cpi && buildCpi()}
+            <Linkslist listArray={linksListArray} />
           </div>
           <div className="Section-card is-invisible">
             <div className="u-fontWeightBold u-marginBottom10">Share this chart:</div>

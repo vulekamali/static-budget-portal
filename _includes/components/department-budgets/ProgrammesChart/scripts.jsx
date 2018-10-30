@@ -82,28 +82,57 @@ class ProgrammesChart extends Component {
 
   render() {
     const { hasNull } = this;
-    const { width, mobile } = this.state;
-    const { year, dataset, sourceType, guide, excel, pdf } = this.props;
+    const { year, dataset, sourceType, guide, excel, pdf, cpi } = this.props;
     const { items } = this.values;
     const { downloadAction, canvasAction } = this.events;
+
+    const linksListArrayRaw = [
+      {
+        id: 'dataset',
+        prefix: 'Source',
+        title: `${sourceType} ${year}`,
+        link: dataset,
+        type: 'dataset',
+      },
+      {
+        id: 'guide',
+        title: `Dataset Guide for ${sourceType}`,
+        link: guide,
+        type: 'guide',
+      },
+      {
+        id: 'pdf',
+        title: `Learn more about these programmes in the ${sourceType} as PDF`,
+        link: pdf,
+        type: 'download',
+      },
+      {
+        id: 'excel',
+        title: `Learn more about these programmes in the ${sourceType} as Excel`,
+        link: excel,
+        type: 'download',
+      },
+      {
+        id: 'cpi',
+        title: 'Annual CPI Inflation {year} as Excel document',
+        link: cpi,
+        type: 'download',
+      },
+    ];
+
+    const linksListArray = linksListArrayRaw.filter(({ link }) => !!link);
 
     return (
       <Markup
         national={location === 'National'}
         {...{
           hasNull,
-          width,
-          mobile,
           items,
+          linksListArray,
           year,
-          location,
           downloadAction,
           canvasAction,
           sourceType,
-          dataset,
-          pdf,
-          excel,
-          guide,
         }}
       />
     );
