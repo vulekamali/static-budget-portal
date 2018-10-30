@@ -6,6 +6,12 @@ A list of actionable links usually associated with a piece of UI directly above 
 
 ## Props
 
+- `listArray`: Pass an array of objects. Each objecft represents an link item. All properties in obhects are requred, and are as follows:
+  - `listArray.id`: Used in React to create `key` attribute
+  - `listArray.title`: The text that will be used to show the link (that user will click on)
+  - `listArray.prefex`: A string that will be prefixed before the link text (however after the icon). Useful when you want to provide more information about the link.
+  - `listArray.link`: A string that will be used in the `href` attribute of the link.
+  - `listArray.type`: The type will determine what icon will be added to link (currently supports all icons in the `components/universal/Icons` component).
 
 ## Examples
 
@@ -16,6 +22,7 @@ const example = [
   {
     id: 'dataset',
     title: 'View Dataset',
+    prefix: 'Source',
     link: '/dataset',
     type: 'dataset',
   },
@@ -43,6 +50,7 @@ const example = [
   <li class="LinksList-item">
     <a href="/dataset" class="LinksList-link">
       <span class="LinksList-icon">{% include components/universal/Icon/index.html type="dataset" %}</span>
+      <span>Source:&nbsp;</span>
       <span class="LinksList-title">View Dataset</span>
     </a>
   </li>
