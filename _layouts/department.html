@@ -126,7 +126,7 @@ layout: page-shell
 
     {% if chapter_name or pdf_link or excel_link %}
       <ul class="LinksList u-marginBottom10 u-marginLeft30">
-          {% if chapter_name and pdf_link %}
+        {% if chapter_name and pdf_link %}
           <li>
             <a href="{{ pdf_link }}" class="LinksList-link" target="_blank" rel="noopener noreferrer">
               <span class="LinksList-icon">
@@ -231,84 +231,83 @@ layout: page-shell
       <p>The {{ source_type_adjusted }} ({{ source_type_adjusted_short }}) is a book published along with the tabling of the adjusted budget.</p>
     </div>
 
-      {% if pdf_link_adjusted or excel_link_adjusted %}
-        <ul class="LinksList u-marginBottom10 u-marginLeft30">
-          {% if pdf_link_adjusted %}
-            <li>
-              <a href="{{ pdf_link_adjusted }}" class="LinksList-link" target="_blank" rel="noopener noreferrer">
-                <span class="LinksList-icon">
-                  {% include components/universal/Icon/index.html type="download" %}
-                  </span>
-                <span class="LinksList-title">
-                  View the {{ source_type_adjusted_short }} chapter for {{ chapter_name }} (PDF).
+    {% if pdf_link_adjusted or excel_link_adjusted %}
+      <ul class="LinksList u-marginBottom10 u-marginLeft30">
+        {% if pdf_link_adjusted %}
+          <li>
+            <a href="{{ pdf_link_adjusted }}" class="LinksList-link" target="_blank" rel="noopener noreferrer">
+              <span class="LinksList-icon">
+                {% include components/universal/Icon/index.html type="download" %}
                 </span>
-              </a>
-            </li>
-          {% endif %}
+              <span class="LinksList-title">
+                View the {{ source_type_adjusted_short }} chapter for {{ chapter_name }} (PDF).
+              </span>
+            </a>
+          </li>
+        {% endif %}
 
-          {% if excel_link_adjusted %}
-            <li>
-              <a href="{{ excel_link_adjusted }}" class="LinksList-link" target="_blank" rel="noopener noreferrer">
-                <span class="LinksList-icon">
-                  {% include components/universal/Icon/index.html type="download" %}
-                  </span>
-                <span class="LinksList-title">
-                  View tables in the {{ source_type_adjusted_short }} chapter (Excel).
+        {% if excel_link_adjusted %}
+          <li>
+            <a href="{{ excel_link_adjusted }}" class="LinksList-link" target="_blank" rel="noopener noreferrer">
+              <span class="LinksList-icon">
+                {% include components/universal/Icon/index.html type="download" %}
                 </span>
-              </a>
-            </li>
-          {% endif %}
-        </ul>
-      {% endif %}
+              <span class="LinksList-title">
+                View tables in the {{ source_type_adjusted_short }} chapter (Excel).
+              </span>
+            </a>
+          </li>
+        {% endif %}
+      </ul>
+    {% endif %}
 
-      {% if pdf_link_adjusted == null and excel_link_adjusted == null %}
-        <div class="Alert Alert--secondary u-marginBottom20">
-          <div class="Alert-content">
-            {%
-              include components/universal/Icon/index.html
-              type="alert"
-              size="large"
-            %}
-            <span class="Alert-heading">
-              Please note
-            </span>
-          </div>
-          <div class="Alert-text Alert-text--secondary">The adjusted budget documents are not available yet on vulekamali.gov.za</div>
+    {% if pdf_link_adjusted == null and excel_link_adjusted == null %}
+      <div class="Alert Alert--secondary u-marginBottom20">
+        <div class="Alert-content">
+          {%
+            include components/universal/Icon/index.html
+            type="alert"
+            size="large"
+          %}
+          <span class="Alert-heading">
+            Please note
+          </span>
         </div>
-      {% endif %}
+        <div class="Alert-text Alert-text--secondary">The adjusted budget documents are not available yet on vulekamali.gov.za</div>
+      </div>
+    {% endif %}
 
-      {% if pdf_link_adjusted == null and excel_link_adjusted %}
-        <div class="Alert Alert--secondary u-marginBottom20">
-          <div class="Alert-content">
-            {%
-              include components/universal/Icon/index.html
-              type="alert"
-              size="large"
-            %}
-            <span class="Alert-heading">
-              Please note
-            </span>
-          </div>
-          <div class="Alert-text Alert-text--secondary">The {{ source_type_revenue_short }} chapter for {{ chapter_name }} (PDF) is not available yet</div>
+    {% if pdf_link_adjusted == null and excel_link_adjusted %}
+      <div class="Alert Alert--secondary u-marginBottom20">
+        <div class="Alert-content">
+          {%
+            include components/universal/Icon/index.html
+            type="alert"
+            size="large"
+          %}
+          <span class="Alert-heading">
+            Please note
+          </span>
         </div>
-      {% endif %}
+        <div class="Alert-text Alert-text--secondary">The {{ source_type_revenue_short }} chapter for {{ chapter_name }} (PDF) is not available yet</div>
+      </div>
+    {% endif %}
 
-      {% if excel_link_adjusted == null and pdf_link_adjusted  %}
-        <div class="Alert Alert--secondary u-marginBottom20">
-          <div class="Alert-content">
-            {%
-              include components/universal/Icon/index.html
-              type="alert"
-              size="large"
-            %}
-            <span class="Alert-heading">
-              Please note
-            </span>
-          </div>
-          <div class="Alert-text Alert-text--secondary">The tables in {{ source_type_revenue_short }} chapter (Excel)</div>
+    {% if excel_link_adjusted == null and pdf_link_adjusted  %}
+      <div class="Alert Alert--secondary u-marginBottom20">
+        <div class="Alert-content">
+          {%
+            include components/universal/Icon/index.html
+            type="alert"
+            size="large"
+          %}
+          <span class="Alert-heading">
+            Please note
+          </span>
         </div>
-      {% endif %}
-    </div>
+        <div class="Alert-text Alert-text--secondary">The tables in {{ source_type_revenue_short }} chapter (Excel)</div>
+      </div>
+    {% endif %}
 
     <div class="u-marginTop100">
       <div class="DeptSectionHead DeptSectionHead--purple" id="section-review">
