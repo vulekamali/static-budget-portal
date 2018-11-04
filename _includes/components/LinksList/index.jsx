@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import PropTypes from 'prop-types';
 
-import Icon from '../../universal/Icon/index.jsx';
+import Icon from '../universal/Icon/index.jsx';
 
 
 const buildItem = ({ title, type, link, prefix }) => {

@@ -29,10 +29,10 @@ const example = [
     type: 'dataset',
   },
   {
-    id: 'dataset',
-    title: 'View Dataset',
+    id: 'google',
+    title: 'Go to Google.com',
     link: '//google.com',
-    type: 'dataset',
+    type: 'guide',
   },
   {
     id: 'pdf',
@@ -49,26 +49,26 @@ const example = [
 
 ```html
 <ul class="LinksList">
-  <li class="LinksList-item">
-    <a href="/dataset" class="LinksList-link">
-      <span class="LinksList-icon">{% include components/universal/Icon/index.html type="dataset" %}</span>
-      <span>Source:&nbsp;</span>
-      <span class="LinksList-title">View Dataset</span>
-    </a>
-  </li>
+  {%
+    include components/LinksList/item.html
+    prefix="Source"
+    text="View Dataset"
+    url="/dataset"
+    type="dataset"
+  %}
 
-  <li class="LinksList-item">
-    <a href="//google.com" class="LinksList-link" rel="noopener noreferrer">
-      <span class="LinksList-icon">{% include components/universal/Icon/index.html type="guide" %}</span>
-      <span class="LinksList-title">Go to Google.com</span>
-    </a>
-  </li>
+  {%
+    include components/LinksList/item.html
+    text="Go to Google.com"
+    url="//google.com"
+    type="guide"
+  %}
 
-  <li class="LinksList-item">
-    <a href="/assets/file.pdf" class="LinksList-link" rel="noopener noreferrer">
-      <span class="LinksList-icon">{% include components/universal/Icon/index.html type="download" %}</span>
-      <span class="LinksList-title">Download PDF</span>
-    </a>
-  </li>
+  {%
+    include components/LinksList/item.html
+    text="Download PDF"
+    url="/assets/file.pdf"
+    type="download"
+  %}
 </ul>
 ```

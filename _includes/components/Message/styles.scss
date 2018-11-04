@@ -1,4 +1,4 @@
-.Alert {
+.Message {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   padding: 1.5rem;
@@ -15,7 +15,7 @@
   }
 }
 
-.Alert-heading {
+.Message-heading {
   font-weight: 900;
   font-size: 18px;
   margin-bottom: 1rem;
@@ -23,11 +23,11 @@
   margin-left: 1rem;
 }
 
-.Alert-content {
+.Message-content {
   display: flex;
 }
 
-.Alert-text {
+.Message-text {
   line-height: 1.45;
   font-size: 14px;
   flex-grow: 1;
