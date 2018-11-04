@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import ResponsiveChart from './../../universal/ResponsiveChart/index.jsx';
-import Share from './../../universal/Share/index.jsx';
-import Linkslist from '../LinksList/index.jsx';
+import Share from './../../Share/index.jsx';
+import Linkslist from '../../LinksList/index.jsx';
 
 
 export default function ExpenditureChart(props) {
