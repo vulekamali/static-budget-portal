@@ -1,0 +1,29 @@
+.AdvancedChartSection {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  @media screen and (min-width: 900px) {
+    flex-direction: row;
+  }
+}
+
+.AdvancedChartSection-info {
+  padding-bottom: 1rem;
+
+  @media screen and (min-width: 900px) {
+    width: 40%;
+    padding-right: 1rem;
+    padding-bottom: 0;
+  }
+}
+
+.AdvancedChartSection-chart {
+  @media screen and (min-width: 900px) {
+    width: 60%;
+  }
+}
+
+.AdvancedChartSection-share {
+  max-width: 250px;
+}
