@@ -1,4 +1,5 @@
-export default function trimValues(value, abbreviated) {
+export default function trimValues(rawValue, abbreviated) {
+  const value = parseInt(rawValue, 10);
   const million = abbreviated ? 'm' : 'million';
   const billion = abbreviated ? 'bn' : 'billion';
 
