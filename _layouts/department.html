@@ -251,27 +251,51 @@ layout: page-shell
     {% assign info3 = "The tables in " | append: source_type_revenue_short | append: " chapter (Excel)" %}
 
     {% if pdf_link_adjusted == null and excel_link_adjusted == null %}
-      {%
-        include components/Message/index.html
-        type="info"
-        description="The adjusted budget documents are not available yet on vulekamali.gov.za"
-      %}
+      <div class="Message Message--secondary u-marginBottom20">
+        <div class="Message-content">
+          {%
+            include components/universal/Icon/index.html
+            type="alert"
+            size="large"
+          %}
+          <span class="Message-heading">
+            Please note
+          </span>
+        </div>
+        <div class="Message-text Message-text--secondary">The adjusted budget documents are not available yet on vulekamali.gov.za</div>
+      </div>
     {% endif %}
 
     {% if pdf_link_adjusted == null and excel_link_adjusted %}
-      {%
-        include components/Message/index.html
-        type="info"
-        description=info2
-      %}
+      <div class="Message Message--secondary u-marginBottom20">
+        <div class="Message-content">
+          {%
+            include components/universal/Icon/index.html
+            type="alert"
+            size="large"
+          %}
+          <span class="Message-heading">
+            Please note
+          </span>
+        </div>
+        <div class="Message-text Message-text--secondary">The {{ source_type_revenue_short }} chapter for {{ chapter_name }} (PDF) is not available yet</div>
+      </div>
     {% endif %}
 
-    {% if excel_link_adjusted == null and pdf_link_adjusted %}
-      {%
-        include components/Message/index.html
-        type="info"
-        description=info3
-      %}
+    {% if excel_link_adjusted == null and pdf_link_adjusted  %}
+      <div class="Message Message--secondary u-marginBottom20">
+        <div class="Message-content">
+          {%
+            include components/universal/Icon/index.html
+            type="alert"
+            size="large"
+          %}
+          <span class="Message-heading">
+            Please note
+          </span>
+        </div>
+        <div class="Message-text Message-text--secondary">The tables in {{ source_type_revenue_short }} chapter (Excel)</div>
+      </div>
     {% endif %}
 
     <div class="u-marginTop100">
