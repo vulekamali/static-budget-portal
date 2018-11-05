@@ -322,6 +322,22 @@ intro: "## Vote purpose\n\nLead, support and promote agricultural, forestry and 
   \ and the Conservation of Agricultural Resources Act (1983).\n\n"
 is_vote_primary: true
 name: Agriculture, Forestry and Fisheries
+adjusted_budget_summary:
+  total_change:
+    amount: -2000000.0
+    percentage: -20.0
+  by_type:
+    - name: unforeseeable
+      amount: 4000.0
+      type: "kind"
+    - name: announced
+      amount: -20000.0
+      type: "kind"
+  econ_classes:
+    - type: "economic_classification_1"
+      name:
+      items:
+        -
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   econ_classes:
