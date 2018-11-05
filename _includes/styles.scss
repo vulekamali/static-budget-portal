@@ -64,14 +64,12 @@
 @import 'components/universal/Input/styles';
 @import 'components/universal/Page/styles';
 @import 'components/universal/PseudoSelect/styles';
-@import 'components/universal/Share/styles';
 @import 'components/universal/Tooltip/styles';
 @import 'components/universal/Section/styles';
 @import 'components/universal/Grid/styles';
 @import 'components/universal/LineChart/styles';
 @import 'components/universal/Highlight/styles';
 @import 'components/universal/Loader/styles';
-@import 'components/universal/Fineprint/styles';
 @import 'components/universal/Dropdown/styles';
 @import 'components/universal/Participate/styles';
 @import 'components/universal/BasicPreview/styles';
@@ -80,8 +78,6 @@
 @import 'components/universal/BasicContent/styles';
 @import 'components/universal/Downloads/styles';
 @import 'components/universal/ThumbPreview/styles';
-@import 'components/universal/Alert/styles';
-
 @import 'components/homepage/ApiCta/styles';
 @import 'components/homepage/Circles/styles';
 @import 'components/homepage/HomeLayout/styles';
@@ -90,8 +86,6 @@
 @import 'components/homepage/Related/styles';
 @import 'components/homepage/SignUpBox/styles';
 @import 'components/homepage/ValueBlocks/styles';
-
-@import 'components/header-and-footer/Disclaimer/styles';
 @import 'components/header-and-footer/ExtraFooter/styles';
 @import 'components/header-and-footer/Footer/styles';
 @import 'components/header-and-footer/HeaderBar/styles';
@@ -101,32 +95,29 @@
 @import 'components/header-and-footer/SubLinks/styles';
 @import 'components/header-and-footer/YearSelect/styles';
 @import 'components/header-and-footer/Modals/styles';
-
 @import 'components/events/Events/styles';
-
 @import 'components/department-budgets/DeptControl/styles';
-@import 'components/department-budgets/DeptFiles/styles';
 @import 'components/department-budgets/DeptGroup/styles';
 @import 'components/department-budgets/DeptSearch/styles';
-@import 'components/department-budgets/Radios/styles';
 @import 'components/department-budgets/IntroSection/styles';
-@import 'components/department-budgets/ProgrammesChart/styles';
 @import 'components/department-budgets/ContributedData/styles';
-@import 'components/department-budgets/ExpenditureChart/styles';
-@import 'components/department-budgets/LinksList/styles';
 @import 'components/department-budgets/ArrowButtons/styles';
 @import 'components/department-budgets/DeptSectionHead/styles';
 @import 'components/department-budgets/SectionIndicator/styles';
-
 @import 'components/contributed-data/PdfEmbed/styles';
-
 @import 'components/contributed-data/CsoMeta/styles';
 @import 'components/contributed-data/Screenshots/styles';
-
 @import 'components/learning-centre/Glossary/styles';
-
 @import 'components/search-results/SearchResult/styles';
-
 @import 'components/about/Contacts/styles';
 @import 'components/about/Progress/styles';
 @import 'components/about/Stages/styles';
+
+@import 'scenes/department/AdvancedChartSection/styles';
+@import 'components/Share/styles';
+@import 'components/LinksList/styles';
+@import 'components/Message/styles';
+@import 'components/ChartSourceController/styles';
+@import 'components/ChartSourceController/components/BarChart/styles';
+@import 'components/Card/styles';
+@import 'components/Title/styles';

@@ -1,0 +1,33 @@
+
+{% if include.url %}
+  {% if include.prefix %}
+    <li>
+      {% if include.type == 'download' %}
+        <a href="{{ include.url }}" class="LinksList-link">
+      {% else %}
+        <a href="{{ include.url }}" target="_blank" rel="noopener noreferrer" class="LinksList-link">
+      {% endif %}
+        <span class="LinksList-icon">
+          {% include components/universal/Icon/index.html type=include.type %}
+        </span>
+        <div>
+          <span>{{ include.prefix }}:&nbsp;</span>
+          <span class="LinksList-title">
+            {{ include.text }}
+          </span>
+        </div>
+      </a>
+    </li>
+  {% else %}
+    <li>
+      <a href="{{ include.url }}" class="LinksList-link">
+        <span class="LinksList-icon">
+          {% include components/universal/Icon/index.html type=include.type %}
+        </span>
+        <span class="LinksList-title">
+          {{ include.text }}
+        </span>
+      </a>
+    </li>
+  {% endif %}
+{% endif %}
