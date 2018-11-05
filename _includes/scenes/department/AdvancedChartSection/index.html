@@ -1,12 +1,20 @@
 <div class="AdvancedChartSection">
   <div class="AdvancedChartSection-info">
     {% if include.type == "programmes" %}
+      {% assign text1 = include.source_type | append: " " | append: include.year %}
+      {% assign text3 = "Learn more about these programmes in the " | append: include.source_type | append: " as PDF" %}
+      {% assign text4 = "Learn more about these programmes in the " | append: include.source_type | append: " as Excel" %}
+
       <h3 class="Title Title--section">Programme budgets for {{ include.year }}</h3>
       <p class="js-tooltips">A department&#x27;s programmes are the activities that it spends money on during the financial year. Different programmes have different expenditure budgets, depending on their requirements and available finances. More detail on the programmes is available in the department's {{ include.sourceType }} documents.</p>
     {% endif %}
 
     {% if include.type == "expenditure" %}
-      <h3 class="Title Title--section">Programme budgets for {{ include.year }}</h3>
+      {% assign text1 = include.source_type | append: " " | append: include.year %}
+      {% assign text3 = "Learn more about the MTEF in the " | append: include.source_type | append: " as PDF" %}
+      {% assign text4 = "Learn more about the MTEF in the " | append: include.source_type | append: " as Excel" %}
+
+      <h3 class="Title Title--section">Budgeted and Actual Expenditure</h3>
 
       <p class="js-tooltips">
         Budgeted and actual expenditure/allocations for a department can increase or decrease from year to year. Changes in expenditure for a department can be because of changes in the activities of the department, because of changes in priorities between departments, because of cost efficiencies or because of increases in the price of goods and services due to inflation.
@@ -16,21 +24,26 @@
         The chart shows the department’s actual expenditure for past years, and budgeted expenditure for the current year and the upcoming three years of the medium-term expenditure framework (MTEF). By adjusting these numbers to take inflation into account, it is possible to determine if a department’s expenditure is really increasing or decreasing in real terms, as compared to the rest of the economy.
       </p>
 
-      <p>
-        Previous financial years indicate actual expenditure while upcoming financial years indicate estimated expenditure, in accordance with the following:
+      <p class="u-marginBottom15">
+        Previous financial years indicate actual expenditure while upcoming financial years indicate estimated expenditure:
 
-        <ul>
-          <li>Audited Outcome (AO)</li>
-          <li>Adjusted Appropriation (AA)</li>
-          <li>Main appropriation (MA)</li>
-          <li>Medium Term Estimates (MTE)</li>
-        </ul>
+        <table border="1" cellspacing="0" cellpadding="0">
+          <tr>
+            <th class="AdvancedChartSection-cell">Year</th>
+            <th class="AdvancedChartSection-cell">Phase</th>
+          </tr>
+          {% for item in include.items.real %}
+            <tr>
+              <td class="AdvancedChartSection-cell">{{ item.financial_year }}</td>
+              <td class="AdvancedChartSection-cell">{{ item.phase }}</td>
+            </tr>
+          {% endfor %}
+        </table>
       </p>
     {% endif %}
 
-    {% assign text1 = include.source_type | append: " " | append: include.year %}
-    {% assign text3 = "Learn more about these programmes in the " | append: include.source_type | append: " as PDF" %}
-    {% assign text4 = "Learn more about these programmes in the " | append: include.source_type | append: " as Excel" %}
+
+
 
     {% if include.dataset or include.guide or include.pdf or include.excel %}
       <ul class="LinksList">
@@ -79,6 +92,9 @@
           data-type="programmes"
           data-items="{{ include.items | jsonify | escape }}"
           data-scale="2"
+          data-title="{{ include.title | truncate: 45 }}"
+          data-subtitle="{{ include.subtitle }}"
+          data-description="{{ include.description }}"
         >
         </div>
       {% endif %}
@@ -86,10 +102,13 @@
       {% if include.type == "expenditure" %}
         <div 
           data-component="ChartAdaptor"
-          data-items="{{ include.expenditure_items_1 | jsonify | escape }}"
+          data-items="{{ include.items | jsonify | escape }}"
           data-type="expenditure"
           data-scale="2"
           data-color="{{ include.color }}"
+          data-title="{{ include.title | truncate: 45 }}"
+          data-subtitle="{{ include.subtitle }}"
+          data-description="{{ include.description }}"
         >
         </div>
       {% endif %}
