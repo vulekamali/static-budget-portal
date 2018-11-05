@@ -19,15 +19,21 @@ const normaliseData = ({ type, rawItems }) => {
 
 
 const ChartAdaptor = (props) => {
-  const { scale, type, items: rawItems } = props;
+  const { scale, type, items: rawItems, title, subtitle, description } = props;
 
   const items = normaliseData({ type, rawItems });
   const color = type === 'expenditure' ? '#ad3c64' : '#73b23e';
   const rotated = !!(type === 'expenditure');
   const toggle = type === 'expenditure' ? toggleValues : null;
 
+  const downloadText = {
+    title,
+    subtitle,
+    description,
+  };
+
   const styling = { scale, color, rotated };
-  return h(ChartSourceController, { items, toggle, styling });
+  return h(ChartSourceController, { items, toggle, styling, downloadText });
 };
 
 
@@ -36,6 +42,9 @@ const query = {
   items: 'json',
   scale: 'number',
   color: 'string',
+  title: 'string',
+  subtitle: 'string',
+  description: 'string',
 };
 
 

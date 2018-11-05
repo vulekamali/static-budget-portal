@@ -41,7 +41,7 @@
   {% endif %}
 
   <div class="Grid has-threeColumn u-marginTop15">
-    {% for chart in include.charts_list %}
+    {% for chart in include.charts_list %}      
       <div class="Card">
         <div class="Title Title--section">{{ chart.name }}</div>
         <div 
@@ -49,6 +49,9 @@
           data-type="multiple"
           data-items="{{ chart.items | jsonify | escape }}"
           data-scale="1"
+          data-title="{{ chart.name | truncate: 45 }}"
+          data-subtitle="{{ include.subtitle }}"
+          data-description="Main budget for subprogrammes of this department"
         >
         </div>
       </div>
