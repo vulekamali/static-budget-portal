@@ -26,7 +26,6 @@ import './components/header-and-footer/SubLinks/scripts.js';
 import './components/header-and-footer/NavBar/scripts.js';
 import './components/header-and-footer/Modals/scripts.jsx';
 
-import './components/department-budgets/ExpenditureChart/scripts.jsx';
 import './components/department-budgets/DeptSearch/scripts.jsx';
 import './components/department-budgets/IntroSection/scripts.jsx';
 import './components/department-budgets/ArrowButtons/scripts.js';
