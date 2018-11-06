@@ -30,6 +30,7 @@ description: 'Mpumalanga department: Public Works, Roads And Transport budget da
   YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fpagesize%3D10000%26cut%3Dfinancial_year.financial_year%253A2018%257Cdepartment.department%253A%2522Public%2BWorks%252C%2BRoads%2BAnd%2BTransport%2522%257Cgovernment.government%253A%2522Mpumalanga%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Ceconomic_classification_4.economic_classification_4%257Cgovernment.government%257Cdepartment.department%257Ceconomic_classification_3.economic_classification_3%257Cfinancial_year.financial_year%257Cbudget_phase.budget_phase%257Cprogramme_number.programme_number%257Cprogramme_number.programme
   programmes:
   - items:
     - items:
@@ -238,6 +239,7 @@ is_vote_primary: true
 name: Public Works, Roads And Transport
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fpagesize%3D10000%26cut%3Dfinancial_year.financial_year%253A2018%257Cdepartment.department%253A%2522Public%2BWorks%252C%2BRoads%2BAnd%2BTransport%2522%257Cgovernment.government%253A%2522Mpumalanga%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Ceconomic_classification_4.economic_classification_4%257Cgovernment.government%257Cdepartment.department%257Ceconomic_classification_3.economic_classification_3%257Cfinancial_year.financial_year%257Cbudget_phase.budget_phase%257Cprogramme_number.programme_number%257Cprogramme_number.programme
   econ_classes:
   - items:
     - name: Transport Infrastructure
@@ -337,6 +339,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fpagesize%3D10000%26cut%3Dfinancial_year.financial_year%253A2018%257Cdepartment.department%253A%2522Public%2BWorks%252C%2BRoads%2BAnd%2BTransport%2522%257Cgovernment.government%253A%2522Mpumalanga%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Ceconomic_classification_4.economic_classification_4%257Cgovernment.government%257Cdepartment.department%257Ceconomic_classification_3.economic_classification_3%257Cfinancial_year.financial_year%257Cbudget_phase.budget_phase%257Cprogramme_number.programme_number%257Cprogramme_number.programme
   programme_budgets:
   - name: Administration
     total_budget: 251805000.0
@@ -358,6 +361,7 @@ sphere:
   slug: provincial
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2018-19
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-drilldown-2018-19-v2/aggregate/%3Fpagesize%3D10000%26cut%3Dfinancial_year.financial_year%253A2018%257Cdepartment.department%253A%2522Public%2BWorks%252C%2BRoads%2BAnd%2BTransport%2522%257Cgovernment.government%253A%2522Mpumalanga%2522%26drilldown%3Dbudget_phase.budget_phase%257Cgovernment.government%257Cdepartment.department%257Csubprogramme.subprogramme%257Cfinancial_year.financial_year%257Cprogramme.programme
   programmes:
   - items:
     - name: Corporate Support

@@ -34,6 +34,7 @@ description: 'National department: Cooperative Governance and Traditional Affair
   with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fpagesize%3D10000%26cut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dvote_number.vote_number%257Csubprogramme_number.subprogramme_number%257Ceconomic_classification_2.economic_classification_2%257Csubprogramme_number.subprogramme%257Ceconomic_classification_4.economic_classification_4%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.department%257Cbudget_phase.budget_phase%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cprogramme_number.programme
   programmes: []
 expenditure_over_time: null
 financial_years:
@@ -79,9 +80,11 @@ is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fpagesize%3D10000%26cut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dvote_number.vote_number%257Csubprogramme_number.subprogramme_number%257Ceconomic_classification_2.economic_classification_2%257Csubprogramme_number.subprogramme%257Ceconomic_classification_4.economic_classification_4%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.department%257Cbudget_phase.budget_phase%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cprogramme_number.programme
   econ_classes: []
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fpagesize%3D10000%26cut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dvote_number.vote_number%257Csubprogramme_number.subprogramme_number%257Ceconomic_classification_2.economic_classification_2%257Csubprogramme_number.subprogramme%257Ceconomic_classification_4.economic_classification_4%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.department%257Cbudget_phase.budget_phase%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cprogramme_number.programme
   programme_budgets:
   - name: Administration
     total_budget: null
@@ -105,6 +108,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fpagesize%3D10000%26cut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dvote_number.vote_number%257Csubprogramme_number.subprogramme_number%257Ceconomic_classification_2.economic_classification_2%257Csubprogramme_number.subprogramme%257Ceconomic_classification_4.economic_classification_4%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.department%257Cbudget_phase.budget_phase%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cprogramme_number.programme
   programmes: []
 title: Cooperative Governance and Traditional Affairs budget 2015-16  - vulekamali
 vote_number: 4
