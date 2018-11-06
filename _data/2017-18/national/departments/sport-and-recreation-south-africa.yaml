@@ -49,6 +49,7 @@ description: 'National department: Sport and Recreation South Africa budget data
   the 2017-18 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  department_data_csv: http://localhost:8000/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2017-18/aggregate/%3Fdrilldown%3Deconomic_classification_3.economic_classification_3%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_1.economic_classification_1%257Cvote_number.vote_number%257Cprogramme_number.programme%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Csubprogramme_number.subprogramme%257Cbudget_phase.budget_phase%257Cvote_number.department%257Cgovernment_function.government_function%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme_number%26cut%3Dfinancial_year.financial_year%253A2017%257Cvote_number.department%253A%2522Sport%2Band%2BRecreation%2BSouth%2BAfrica%2522%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -243,6 +244,7 @@ is_vote_primary: true
 name: Sport and Recreation South Africa
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  department_data_csv: http://localhost:8000/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2017-18/aggregate/%3Fdrilldown%3Deconomic_classification_3.economic_classification_3%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_1.economic_classification_1%257Cvote_number.vote_number%257Cprogramme_number.programme%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Csubprogramme_number.subprogramme%257Cbudget_phase.budget_phase%257Cvote_number.department%257Cgovernment_function.government_function%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme_number%26cut%3Dfinancial_year.financial_year%253A2017%257Cvote_number.department%253A%2522Sport%2Band%2BRecreation%2BSouth%2BAfrica%2522%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
@@ -324,6 +326,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  department_data_csv: http://localhost:8000/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2017-18/aggregate/%3Fdrilldown%3Deconomic_classification_3.economic_classification_3%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_1.economic_classification_1%257Cvote_number.vote_number%257Cprogramme_number.programme%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Csubprogramme_number.subprogramme%257Cbudget_phase.budget_phase%257Cvote_number.department%257Cgovernment_function.government_function%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme_number%26cut%3Dfinancial_year.financial_year%253A2017%257Cvote_number.department%253A%2522Sport%2Band%2BRecreation%2BSouth%2BAfrica%2522%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 136856000.0
@@ -343,6 +346,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
+  department_data_csv: http://localhost:8000/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2017-18/aggregate/%3Fdrilldown%3Deconomic_classification_3.economic_classification_3%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_1.economic_classification_1%257Cvote_number.vote_number%257Cprogramme_number.programme%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Csubprogramme_number.subprogramme%257Cbudget_phase.budget_phase%257Cvote_number.department%257Cgovernment_function.government_function%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme_number%26cut%3Dfinancial_year.financial_year%253A2017%257Cvote_number.department%253A%2522Sport%2Band%2BRecreation%2BSouth%2BAfrica%2522%26pagesize%3D10000
   programmes:
   - items:
     - name: Provincial sport support and coordination
