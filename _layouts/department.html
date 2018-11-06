@@ -165,6 +165,8 @@ layout: page-shell
           excel=excel
           title="Programme budgets"
           subtitle=subtitle
+          csv=page_data.programmes.department_data_csv
+
           description="Activities of this department"
         %}
       </div>
@@ -183,6 +185,8 @@ layout: page-shell
           dataset=page_data.subprogramme_by_programme.dataset_detail_page
           pdf=pdf
           excel=excel
+          csv=page_data.programmes.department_data_csv
+
           subtitle=subtitle
         %}
         </div>
@@ -201,6 +205,8 @@ layout: page-shell
           dataset=page_data.subprogramme_by_programme.dataset_detail_page
           pdf=pdf
           excel=excel
+          csv=page_data.programmes.department_data_csv
+
           subtitle=subtitle
         %}
       </div>
@@ -218,6 +224,8 @@ layout: page-shell
         dataset=page_data.subprogramme_by_programme.dataset_detail_page
         pdf=pdf
         excel=excel
+        csv=page_data.programmes.department_data_csv
+
         subtitle=subtitle
       %}
     {% endif %}
@@ -324,6 +332,7 @@ layout: page-shell
           dataset=page_data.expenditure_over_time.dataset_detail_page
           pdf=pdf
           excel=excel
+          csv=page_data.programmes.department_data_csv
 
           color="purple"
           title="Budgeted and Actual Expenditure"
