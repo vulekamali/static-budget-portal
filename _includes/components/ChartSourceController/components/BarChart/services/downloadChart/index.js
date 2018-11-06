@@ -1,7 +1,10 @@
-const wrapInHeaderAndFooter = ({ canvas, height }) => {
+const wrapInHeaderAndFooter = ({ canvas, height, downloadText }) => {
+  const { title, subtitle, description } = downloadText;
+
   const memoryCanvas = document.createElement('canvas');
   memoryCanvas.height = height + 260;
   memoryCanvas.width = 900;
+
   const context = memoryCanvas.getContext('2d');
 
   context.rect(0, 0, 900, height + 260);
@@ -10,14 +13,14 @@ const wrapInHeaderAndFooter = ({ canvas, height }) => {
 
   context.font = 'bold 32px Lato, sans-serif';
   context.fillStyle = '#ee9f31';
-  context.fillText('Communications', 50, 60);
+  context.fillText(title, 50, 60);
 
   context.font = '18px Lato, sans-serif';
   context.fillStyle = 'grey';
-  context.fillText('Health Department Budget for 2018-19', 50, 100);
+  context.fillText(subtitle, 50, 100);
 
   context.fillStyle = '#7bb344';
-  context.fillText('Expenditure changes over time chart', 50, 120);
+  context.fillText(description, 50, 120);
 
   context.drawImage(canvas, 50, 150);
 
@@ -46,8 +49,8 @@ const download = ({ memoryCanvas }) => {
 };
 
 
-const downloadChart = ({ canvas, height }) => {
-  const memoryCanvas = wrapInHeaderAndFooter({ canvas, height });
+const downloadChart = ({ canvas, height, downloadText }) => {
+  const memoryCanvas = wrapInHeaderAndFooter({ canvas, height, downloadText });
   download({ memoryCanvas });
 };
 

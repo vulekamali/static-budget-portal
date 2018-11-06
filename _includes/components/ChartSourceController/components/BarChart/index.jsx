@@ -56,6 +56,7 @@ class BarChart extends Component {
   downloadAction(event) {
     event.preventDefault();
 
+    const { downloadText } = this.props;
     const { config } = this.values;
     const { calcHeight } = this.events;
     const height = calcHeight(2);
@@ -72,7 +73,7 @@ class BarChart extends Component {
     canvas.style.height = `${height}px`;
 
     new Chart(canvas, config);
-    downloadChart({ canvas, height });
+    downloadChart({ canvas, height, downloadText });
   }
 
   calcHeight(scale) {

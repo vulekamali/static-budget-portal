@@ -71,6 +71,7 @@ layout: page-shell
 %}
 
 
+{% assign subtitle = department_location | append: " " | append: page_data.name | append: " Department Budget " | append: page.financial_year %}
 
 
 <div class="Page-content Page-content--dynamicYears">
@@ -162,6 +163,9 @@ layout: page-shell
           dataset=page_data.subprogramme_by_programme.dataset_detail_page
           pdf=pdf
           excel=excel
+          title="Programme budgets"
+          subtitle=subtitle
+          description="Activities of this department"
         %}
       </div>
     {% endif %}
@@ -179,6 +183,7 @@ layout: page-shell
           dataset=page_data.subprogramme_by_programme.dataset_detail_page
           pdf=pdf
           excel=excel
+          subtitle=subtitle
         %}
         </div>
     {% endif %}
@@ -196,6 +201,7 @@ layout: page-shell
           dataset=page_data.subprogramme_by_programme.dataset_detail_page
           pdf=pdf
           excel=excel
+          subtitle=subtitle
         %}
       </div>
     {% endif %}
@@ -212,6 +218,7 @@ layout: page-shell
         dataset=page_data.subprogramme_by_programme.dataset_detail_page
         pdf=pdf
         excel=excel
+        subtitle=subtitle
       %}
     {% endif %}
 
@@ -304,21 +311,24 @@ layout: page-shell
       </div>
     </div>
 
-    {% if page_data.programmes %}
+    {% if page_data.expenditure_over_time %}
       <div class="u-marginBottom40 u-marginTop15">
         {%
           include scenes/department/AdvancedChartSection/index.html
-          expenditure_items_1=page_data.expenditure_over_time.expenditure
+          items=page_data.expenditure_over_time.expenditure
           type="expenditure"
 
-          data-cpi=site.data.global_values.cpi_dataset_url
+          cpi=site.data.global_values.cpi_dataset_url
           source_type=source_type
           year=page.financial_year
-          dataset=page_data.subprogramme_by_programme.dataset_detail_page
+          dataset=page_data.expenditure_over_time.dataset_detail_page
           pdf=pdf
           excel=excel
 
           color="purple"
+          title="Budgeted and Actual Expenditure"
+          subtitle=subtitle
+          description="Expenditure changes over time"
         %}
       </div>
     {% endif %}

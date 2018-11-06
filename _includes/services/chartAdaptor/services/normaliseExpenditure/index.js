@@ -1,14 +1,3 @@
-const determineType = (value) => {
-  switch (value) {
-    case 'Audited Outcome': return 'AO';
-    case 'Adjusted appropriation': return 'AA';
-    case 'Main appropriation': return 'MA';
-    case 'Medium Term Estimates': return 'MTE';
-    default: return '';
-  }
-};
-
-
 const normaliseExpenditure = (data) => {
   const {
     nominal: nominalRaw,
@@ -17,7 +6,7 @@ const normaliseExpenditure = (data) => {
 
   const createObject = (result, { financial_year: year, amount: value, phase }) => ({
     ...result,
-    [`${year} (${determineType(phase)})`]: value,
+    [year]: value,
   });
 
   const nominal = nominalRaw.reduce(createObject, {});

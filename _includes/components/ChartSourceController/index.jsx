@@ -23,12 +23,12 @@ class ChartSourceController extends Component {
   }
 
   render() {
-    const { items: rawItems, toggle, styling } = this.props;
+    const { items: rawItems, toggle, styling, downloadText } = this.props;
     const { source } = this.state;
     const { changeSource } = this.events;
     const items = rawItems[source];
 
-    return <Markup {...{ items, toggle, styling, source, changeSource }} />;
+    return <Markup {...{ items, toggle, styling, source, changeSource, downloadText }} />;
   }
 }
 
@@ -67,11 +67,11 @@ const buildToggle = ({ toggle, changeSource, source }) => {
 };
 
 
-const Markup = ({ items, toggle, styling, changeSource, source }) => {
+const Markup = ({ items, toggle, styling, changeSource, source, downloadText }) => {
   const { scale, color, rotated } = styling;
   return (
     <div className="ChartSourceController">
-      <BarChart {...{ scale, color, rotated, items }} />
+      <BarChart {...{ scale, color, rotated, items, downloadText }} />
       {toggle && buildToggle({ source, toggle, changeSource })}
     </div>
   );
