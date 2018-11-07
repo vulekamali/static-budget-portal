@@ -160,7 +160,7 @@ layout: page-shell
 
           source_type=source_type
           year=page.financial_year
-          dataset=page_data.subprogramme_by_programme.dataset_detail_page
+          dataset=page_data.programmes.dataset_detail_page
           pdf=pdf
           excel=excel
           title="Programme budgets"
@@ -185,7 +185,7 @@ layout: page-shell
           dataset=page_data.subprogramme_by_programme.dataset_detail_page
           pdf=pdf
           excel=excel
-          csv=page_data.programmes.department_data_csv
+          csv=page_data.subprogramme_by_programme.department_data_csv
 
           subtitle=subtitle
         %}
@@ -202,10 +202,10 @@ layout: page-shell
 
           source_type=source_type
           year=page.financial_year
-          dataset=page_data.subprogramme_by_programme.dataset_detail_page
+          dataset=page_data.economic_classification_by_programme.dataset_detail_page
           pdf=pdf
           excel=excel
-          csv=page_data.programmes.department_data_csv
+          csv=page_data.economic_classification_by_programme.department_data_csv
 
           subtitle=subtitle
         %}
@@ -221,10 +221,10 @@ layout: page-shell
 
         source_type=source_type
         year=page.financial_year
-        dataset=page_data.subprogramme_by_programme.dataset_detail_page
+        dataset=page_data.programme_by_economic_classification.dataset_detail_page
         pdf=pdf
         excel=excel
-        csv=page_data.programmes.department_data_csv
+        csv=page_data.programme_by_economic_classification.department_data_csv
 
         subtitle=subtitle
       %}
@@ -332,7 +332,7 @@ layout: page-shell
           dataset=page_data.expenditure_over_time.dataset_detail_page
           pdf=pdf
           excel=excel
-          csv=page_data.programmes.department_data_csv
+          csv=page_data.expenditure_over_time.department_data_csv
 
           color="purple"
           title="Budgeted and Actual Expenditure"
