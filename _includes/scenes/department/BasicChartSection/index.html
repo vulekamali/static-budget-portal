@@ -1,5 +1,10 @@
-<div>
+<div id="{{ include.id }}">
   <h3 class="Title Title--section">{{ include.title }}</h3>
+
+  <div class="AdvancedChartSection-share u-marginTop10 u-marginBottom15">
+    <div data-component="Share" data-anchor="{{ include.id }}" data-color="{{ include.color }}"></div>
+  </div>
+
   <p>{{ include.description }}</p>
 
   {% assign text1 = include.source_type | append: " " | append: include.year %}
@@ -42,8 +47,8 @@
 
   <div class="Grid has-threeColumn u-marginTop15">
     {% for chart in include.charts_list %}      
-      <div class="Card">
-        <div class="Title Title--section">{{ chart.name }}</div>
+      <div class="Card BasicChartSection-item">
+        <div class="Title Title--interSection">{{ chart.name }}</div>
         <div 
           data-component="ChartAdaptor"
           data-type="multiple"

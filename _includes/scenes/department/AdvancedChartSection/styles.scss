@@ -1,26 +1,24 @@
-.AdvancedChartSection {
+.AdvancedChartSection-container {
   display: flex;
   width: 100%;
   flex-direction: column;
 
-  @media screen and (min-width: 900px) {
-    flex-direction: row;
+  @media screen and (min-width: 1000px) {
+    flex-flow: row wrap;
   }
 }
 
-.AdvancedChartSection-info {
+.AdvancedChartSection-item {
   padding-bottom: 1rem;
 
-  @media screen and (min-width: 900px) {
-    width: 40%;
+  @media screen and (min-width: 1000px) {
+    width: 50%;
     padding-right: 1rem;
-    padding-bottom: 0;
-  }
-}
 
-.AdvancedChartSection-chart {
-  @media screen and (min-width: 900px) {
-    width: 60%;
+    &--right {
+      padding-left: 1rem;
+      padding-right: 0;
+    }
   }
 }
 
@@ -30,4 +28,20 @@
 
 .AdvancedChartSection-cell {
   padding: 0.25rem 1rem;
+}
+
+.AdvancedChartSection-indicatorsGrid {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 500px) {
+    flex-direction: row;
+  }
+}
+
+.AdvancedChartSection-indicator {
+  @media screen and (min-width: 500px) {
+    width: 50%;
+    padding-right: 3rem;
+  }
 }
