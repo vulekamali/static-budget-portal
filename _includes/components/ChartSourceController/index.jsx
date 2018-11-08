@@ -3,36 +3,6 @@ import uuid from 'uuid/v4';
 import BarChart from './components/BarChart/index.jsx';
 
 
-class ChartSourceController extends Component {
-  constructor(...props) {
-    super(...props);
-
-    const { initial, items } = this.props;
-
-    this.state = {
-      source: initial || Object.keys(items)[0],
-    };
-
-    this.events = {
-      changeSource: this.changeSource.bind(this),
-    };
-  }
-
-  changeSource(source) {
-    this.setState({ source });
-  }
-
-  render() {
-    const { items: rawItems, toggle, styling, downloadText } = this.props;
-    const { source } = this.state;
-    const { changeSource } = this.events;
-    const items = rawItems[source];
-
-    return <Markup {...{ items, toggle, styling, source, changeSource, downloadText }} />;
-  }
-}
-
-
 const buildToggle = ({ toggle, changeSource, source }) => {
   const id = uuid();
 
@@ -76,6 +46,36 @@ const Markup = ({ items, toggle, styling, changeSource, source, downloadText }) 
     </div>
   );
 };
+
+
+class ChartSourceController extends Component {
+  constructor(...props) {
+    super(...props);
+
+    const { initial, items } = this.props;
+
+    this.state = {
+      source: initial || Object.keys(items)[0],
+    };
+
+    this.events = {
+      changeSource: this.changeSource.bind(this),
+    };
+  }
+
+  changeSource(source) {
+    this.setState({ source });
+  }
+
+  render() {
+    const { items: rawItems, toggle, styling, downloadText } = this.props;
+    const { source } = this.state;
+    const { changeSource } = this.events;
+    const items = rawItems[source];
+
+    return <Markup {...{ items, toggle, styling, source, changeSource, downloadText }} />;
+  }
+}
 
 
 export default ChartSourceController;

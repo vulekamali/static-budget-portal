@@ -50,6 +50,7 @@ class BarChart extends Component {
 
     this.values = {
       node: null,
+      chartInstance: null,
     };
 
     this.events = {
@@ -59,9 +60,15 @@ class BarChart extends Component {
     };
   }
 
-  componentWillReceiveProps() {
-    const { renderChart } = this.events;
-    return renderChart();
+  componentDidUpdate() {
+    const { chartInstance } = this.values;
+    const { items, color, rotated } = this.props;
+
+    const viewportWidth = window.innerWidth;
+    const config = createChartJsConfig({ items, color, rotated, viewportWidth });
+    chartInstance.data.datasets[0].data = config.data.datasets[0].data;
+
+    return chartInstance.update();
   }
 
   downloadAction(event) {
@@ -92,7 +99,8 @@ class BarChart extends Component {
 
     const viewportWidth = window.innerWidth;
     const config = createChartJsConfig({ items, color, rotated, viewportWidth });
-    new Chart(node || newNode, config);
+
+    this.values.chartInstance = new Chart(node || newNode, config);
 
     if (!node) {
       this.values.node = newNode;
