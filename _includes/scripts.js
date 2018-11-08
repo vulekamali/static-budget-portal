@@ -42,4 +42,5 @@ import './components/universal/ThumbPreview/scripts.js';
 
 
 import './services/chartAdaptor/scripts.js';
+import './scenes/department/AdvancedChartSection/components/ChangeIndicator/scripts.js';
 import './components/Share/scripts.js';
