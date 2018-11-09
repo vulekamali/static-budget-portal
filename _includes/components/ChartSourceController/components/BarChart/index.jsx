@@ -7,7 +7,7 @@ import downloadChart from './services/downloadChart/index.js';
 
 
 const buildDownloadButton = downloadAction => (
-  <div className="ChartWrapper-button">
+  <div className="BarChart-button">
     <button
       className="Button is-small is-inline is-secondary"
       onClick={downloadAction}
@@ -18,11 +18,11 @@ const buildDownloadButton = downloadAction => (
 );
 
 
-const Markup = ({ renderChart, height, downloadAction }) => {
+const Markup = ({ renderChart, height, downloadAction, rotated }) => {
   return (
-    <div className="ChartWrapper">
-      <div>
-        <canvas ref={renderChart} style={{ width: '100%', height: `${height}px` }} />
+    <div className="BarChart">
+      <div className="BarChart-chart">
+        <canvas ref={renderChart} style={{ width: '100%', height: `${rotated ? 350 : height}px` }} />
       </div>
       {buildDownloadButton(downloadAction)}
     </div>
@@ -40,24 +40,41 @@ Markup.propTypes = {
 class BarChart extends Component {
   constructor(...props) {
     super(...props);
-    const { items, color, rotated } = this.props;
+    const { items, color, rotated, viewportWidth } = this.props;
+
+    const calcHeight = (scale) => {
+      const config = createChartJsConfig({ items, color, rotated, viewportWidth });
+      return (config.data.datasets[0].data.length * (25 * scale)) + 55;
+    };
+
 
     this.values = {
-      config: createChartJsConfig({ items, color, rotated }),
+      node: null,
+      chartInstance: null,
     };
 
     this.events = {
       renderChart: this.renderChart.bind(this),
       downloadAction: this.downloadAction.bind(this),
-      calcHeight: this.calcHeight.bind(this),
+      calcHeight,
     };
+  }
+
+  componentDidUpdate() {
+    const { chartInstance } = this.values;
+    const { items, color, rotated } = this.props;
+
+    const viewportWidth = window.innerWidth;
+    const config = createChartJsConfig({ items, color, rotated, viewportWidth });
+    chartInstance.data.datasets[0].data = config.data.datasets[0].data;
+
+    return chartInstance.update();
   }
 
   downloadAction(event) {
     event.preventDefault();
-
-    const { downloadText } = this.props;
-    const { config } = this.values;
+    const { items, color, rotated, downloadText } = this.props;
+    const config = createChartJsConfig({ items, color, rotated });
     const { calcHeight } = this.events;
     const height = calcHeight(2);
 
@@ -76,26 +93,31 @@ class BarChart extends Component {
     downloadChart({ canvas, height, downloadText });
   }
 
-  calcHeight(scale) {
-    const { config } = this.values;
-    return (config.data.datasets[0].data.length * (25 * scale)) + 55;
-  }
+  renderChart(newNode) {
+    const { items, color, rotated } = this.props;
+    const { node } = this.values;
 
-  renderChart(node) {
-    const { config } = this.values;
-    const instance = new Chart(node, config);
-    return instance;
+    const viewportWidth = window.innerWidth;
+    const config = createChartJsConfig({ items, color, rotated, viewportWidth });
+
+    this.values.chartInstance = new Chart(node || newNode, config);
+
+    if (!node) {
+      this.values.node = newNode;
+    }
+
+    return null;
   }
 
 
   render() {
     const { renderChart, downloadAction } = this.events;
     const { node } = this.state;
-    const { scale } = this.props;
+    const { scale, rotated } = this.props;
     const { calcHeight } = this.events;
 
     const height = calcHeight(scale);
-    return <Markup button {...{ downloadAction, renderChart, height, node }} />;
+    return <Markup button {...{ downloadAction, renderChart, height, node, rotated }} />;
   }
 }
 
