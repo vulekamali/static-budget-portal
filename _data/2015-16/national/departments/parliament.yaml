@@ -34,8 +34,115 @@ description: 'National department: Parliament budget data for the 2015-16 financ
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Parliament%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
-expenditure_over_time: null
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 3553000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 456019000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 364518000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Associated Services
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 503132000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 375458000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Legislation and Oversight
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 234170000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Members' Facilities
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 133204000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Public and International Participation
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1572394000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1686998000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1937341000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1989176000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 2070054000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2185239000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 2302755000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 2174856515
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 2210845196
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 2399354341
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2332333964
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 2307916325
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2292049102
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 2302755000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -99,23 +206,53 @@ name: Parliament
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Parliament%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  econ_classes: []
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 3553000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 503132000.0
+      type: programme
+    - name: Administration
+      total_budget: 456019000.0
+      type: programme
+    - name: Legislation and Oversight
+      total_budget: 375458000.0
+      type: programme
+    - name: Members' Facilities
+      total_budget: 234170000.0
+      type: programme
+    - name: Public and International Participation
+      total_budget: 133204000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Associated Services
+      total_budget: 364518000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Parliament%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
-  - name: Legislation and Oversight
-    total_budget: null
-  - name: Public and International Participation
-    total_budget: null
-  - name: Members' Facilities
-    total_budget: null
-  - name: Associated Services
-    total_budget: null
+    total_budget: 459572000.0
   - name: Direct charge against the National Revenue Fund
-    total_budget: null
+    total_budget: 503132000.0
+  - name: Legislation and Oversight
+    total_budget: 375458000.0
+  - name: Public and International Participation
+    total_budget: 133204000.0
+  - name: Members' Facilities
+    total_budget: 234170000.0
+  - name: Associated Services
+    total_budget: 364518000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: parliament
@@ -125,7 +262,73 @@ sphere:
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Parliament%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
+  programmes:
+  - items:
+    - name: Office of the Secretary
+      total_budget: 229332000.0
+      type: subprogramme
+    - name: Institutional Support
+      total_budget: 98653000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 61110000.0
+      type: subprogramme
+    - name: Office of the Speaker
+      total_budget: 45516000.0
+      type: subprogramme
+    - name: Office of the Chairperson
+      total_budget: 24961000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Constituency Support
+      total_budget: 269658000.0
+      type: subprogramme
+    - name: Political Party Support
+      total_budget: 87025000.0
+      type: subprogramme
+    - name: Party Leadership Support
+      total_budget: 7835000.0
+      type: subprogramme
+    name: Associated Services
+    type: programme
+  - items:
+    - name: Members' remuneration
+      total_budget: 503132000.0
+      type: subprogramme
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - name: Legislation and Oversight
+      total_budget: 314502000.0
+      type: subprogramme
+    - name: National Council of Provinces
+      total_budget: 34960000.0
+      type: subprogramme
+    - name: National Assembly
+      total_budget: 25996000.0
+      type: subprogramme
+    name: Legislation and Oversight
+    type: programme
+  - items:
+    - name: National Assembly Members' Facilities
+      total_budget: 201836000.0
+      type: subprogramme
+    - name: National Council of Provinces Members' Facilities
+      total_budget: 32334000.0
+      type: subprogramme
+    name: Members' Facilities
+    type: programme
+  - items:
+    - name: Public Affairs
+      total_budget: 79634000.0
+      type: subprogramme
+    - name: International Relations
+      total_budget: 53570000.0
+      type: subprogramme
+    name: Public and International Participation
+    type: programme
 title: Parliament budget 2015-16  - vulekamali
 vote_number: 2
 vote_primary:

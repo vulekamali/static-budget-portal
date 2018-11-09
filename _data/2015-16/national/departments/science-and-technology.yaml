@@ -34,8 +34,133 @@ description: 'National department: Science and Technology budget data for the 20
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Science%2Band%2BTechnology%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
-expenditure_over_time: null
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 2309000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 284671000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 12796000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 61049000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 60948000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: International Cooperation and Resources
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1678885000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 2523233000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 44948000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Research, Development and Support
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1761389000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 43075000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Socio-Economic Innovation Partnerships
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 113997000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 832084000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 62736000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Technology Innovation
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 4403472000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 4973315000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 6169489000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 6479890000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 7482120000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 7562185000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 7608642000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 6090661608
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 6517630477
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 7640776825
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 7597752805
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 8341863014
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 7931809446
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 7608642000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -73,21 +198,72 @@ name: Science and Technology
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Science%2Band%2BTechnology%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  econ_classes: []
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 2309000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Research, Development and Support
+      total_budget: 1678885000.0
+      type: programme
+    - name: Technology Innovation
+      total_budget: 113997000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 284671000.0
+      type: programme
+    - name: Technology Innovation
+      total_budget: 62736000.0
+      type: programme
+    - name: International Cooperation and Resources
+      total_budget: 60948000.0
+      type: programme
+    - name: Research, Development and Support
+      total_budget: 44948000.0
+      type: programme
+    - name: Socio-Economic Innovation Partnerships
+      total_budget: 43075000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Research, Development and Support
+      total_budget: 2523233000.0
+      type: programme
+    - name: Socio-Economic Innovation Partnerships
+      total_budget: 1761389000.0
+      type: programme
+    - name: Technology Innovation
+      total_budget: 832084000.0
+      type: programme
+    - name: International Cooperation and Resources
+      total_budget: 61049000.0
+      type: programme
+    - name: Administration
+      total_budget: 12796000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Science%2Band%2BTechnology%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
+    total_budget: 299776000.0
   - name: Technology Innovation
-    total_budget: null
+    total_budget: 1008817000.0
   - name: International Cooperation and Resources
-    total_budget: null
+    total_budget: 121997000.0
   - name: Research, Development and Support
-    total_budget: null
+    total_budget: 4247066000.0
   - name: Socio-Economic Innovation Partnerships
-    total_budget: null
+    total_budget: 1804464000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: science-and-technology
@@ -97,7 +273,85 @@ sphere:
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Science%2Band%2BTechnology%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 178722000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 103016000.0
+      type: subprogramme
+    - name: Governance
+      total_budget: 9070000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 4716000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 4252000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: International Resources
+      total_budget: 56612000.0
+      type: subprogramme
+    - name: Overseas Bilateral Cooperation
+      total_budget: 37682000.0
+      type: subprogramme
+    - name: Multilateral Cooperation and Africa
+      total_budget: 27703000.0
+      type: subprogramme
+    name: International Cooperation and Resources
+    type: programme
+  - items:
+    - name: Human Capital and Science Promotions
+      total_budget: 2345412000.0
+      type: subprogramme
+    - name: Basic Science and Infrastructure
+      total_budget: 1010014000.0
+      type: subprogramme
+    - name: Astronomy
+      total_budget: 725727000.0
+      type: subprogramme
+    - name: Science Missions
+      total_budget: 165913000.0
+      type: subprogramme
+    name: Research, Development and Support
+    type: programme
+  - items:
+    - name: Sector Innovation and Green Economy
+      total_budget: 881319000.0
+      type: subprogramme
+    - name: Technology Localisation, Beneficiation and Advanced Manufacturing
+      total_budget: 524101000.0
+      type: subprogramme
+    - name: Innovation for Inclusive Development
+      total_budget: 370043000.0
+      type: subprogramme
+    - name: Science and Technology Investment
+      total_budget: 29001000.0
+      type: subprogramme
+    name: Socio-Economic Innovation Partnerships
+    type: programme
+  - items:
+    - name: Innovation Priorities and Instruments
+      total_budget: 526206000.0
+      type: subprogramme
+    - name: Space Science
+      total_budget: 167184000.0
+      type: subprogramme
+    - name: Hydrogen and Energy
+      total_budget: 152339000.0
+      type: subprogramme
+    - name: Bioeconomy
+      total_budget: 137740000.0
+      type: subprogramme
+    - name: National Intellectual Property Management Office
+      total_budget: 25348000.0
+      type: subprogramme
+    name: Technology Innovation
+    type: programme
 title: Science and Technology budget 2015-16  - vulekamali
 vote_number: 30
 vote_primary:

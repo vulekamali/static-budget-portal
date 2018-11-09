@@ -34,8 +34,151 @@ description: 'National department: Basic Education budget data for the 2015-16 f
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Basic%2BEducation%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
-expenditure_over_time: null
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 18190000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 339322000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 185000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 347185000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 768000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 1529694000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 118000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Curriculum Policy, Support and Monitoring
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 271000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 5924800000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 49385000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Educational Enrichment Services
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 9517555000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 2025676000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 413802000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 172705000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Planning, Information and Assessment
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 503000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1071308000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 99673000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Teachers, Education Human Resources and Institutional Development
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 13346178000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 14885884000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 17011094000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 19689873000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 21511140000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 22528638000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 23860373000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 18459764015
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 19508253797
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 21067866853
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 23086624593
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 23982906336
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 23629792672
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 23860373000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -78,21 +221,84 @@ name: Basic Education
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Basic%2BEducation%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  econ_classes: []
+  econ_classes:
+  - items:
+    - name: Planning, Information and Assessment
+      total_budget: 2025676000.0
+      type: programme
+    - name: Administration
+      total_budget: 18190000.0
+      type: programme
+    - name: Curriculum Policy, Support and Monitoring
+      total_budget: 768000.0
+      type: programme
+    - name: Teachers, Education Human Resources and Institutional Development
+      total_budget: 503000.0
+      type: programme
+    - name: Educational Enrichment Services
+      total_budget: 271000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Planning, Information and Assessment
+      total_budget: 9517555000.0
+      type: programme
+    - name: Curriculum Policy, Support and Monitoring
+      total_budget: 347185000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Curriculum Policy, Support and Monitoring
+      total_budget: 1529694000.0
+      type: programme
+    - name: Planning, Information and Assessment
+      total_budget: 413802000.0
+      type: programme
+    - name: Administration
+      total_budget: 339322000.0
+      type: programme
+    - name: Teachers, Education Human Resources and Institutional Development
+      total_budget: 99673000.0
+      type: programme
+    - name: Educational Enrichment Services
+      total_budget: 49385000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Educational Enrichment Services
+      total_budget: 5924800000.0
+      type: programme
+    - name: Teachers, Education Human Resources and Institutional Development
+      total_budget: 1071308000.0
+      type: programme
+    - name: Planning, Information and Assessment
+      total_budget: 172705000.0
+      type: programme
+    - name: Administration
+      total_budget: 185000.0
+      type: programme
+    - name: Curriculum Policy, Support and Monitoring
+      total_budget: 118000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Basic%2BEducation%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
+    total_budget: 357697000.0
   - name: Curriculum Policy, Support and Monitoring
-    total_budget: null
+    total_budget: 1877765000.0
   - name: Teachers, Education Human Resources and Institutional Development
-    total_budget: null
+    total_budget: 1171484000.0
   - name: Planning, Information and Assessment
-    total_budget: null
+    total_budget: 12129738000.0
   - name: Educational Enrichment Services
-    total_budget: null
+    total_budget: 5974456000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: basic-education
@@ -102,7 +308,92 @@ sphere:
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Basic%2BEducation%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
+  programmes:
+  - items:
+    - name: Office Accommodation
+      total_budget: 166118000.0
+      type: subprogramme
+    - name: Department Management
+      total_budget: 65378000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 48976000.0
+      type: subprogramme
+    - name: Office of the Chief Financial Officer
+      total_budget: 46215000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 25640000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 5370000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Curriculum and Quality Enhancement Programmes
+      total_budget: 1334327000.0
+      type: subprogramme
+    - name: Kha Ri Gude Literacy Project
+      total_budget: 504683000.0
+      type: subprogramme
+    - name: Curriculum Implementation and Monitoring
+      total_budget: 36165000.0
+      type: subprogramme
+    - name: 'Programme Management: Curriculum Policy, Support and Monitoring'
+      total_budget: 2590000.0
+      type: subprogramme
+    name: Curriculum Policy, Support and Monitoring
+    type: programme
+  - items:
+    - name: Care and Support in Schools
+      total_budget: 5948547000.0
+      type: subprogramme
+    - name: Partnerships in Education
+      total_budget: 23087000.0
+      type: subprogramme
+    - name: 'Programme Management: Educational Enrichment Services'
+      total_budget: 2822000.0
+      type: subprogramme
+    name: Educational Enrichment Services
+    type: programme
+  - items:
+    - name: School Infrastructure
+      total_budget: 11572150000.0
+      type: subprogramme
+    - name: National Assessments and Public Examinations
+      total_budget: 416157000.0
+      type: subprogramme
+    - name: Planning and Delivery Oversight Unit
+      total_budget: 82548000.0
+      type: subprogramme
+    - name: Financial Planning, Information and Management Systems
+      total_budget: 41329000.0
+      type: subprogramme
+    - name: National Education Evaluation and Development Unit
+      total_budget: 14939000.0
+      type: subprogramme
+    - name: 'Programme Management: Planning, Information and Assessment'
+      total_budget: 2615000.0
+      type: subprogramme
+    name: Planning, Information and Assessment
+    type: programme
+  - items:
+    - name: Education Human Resources Development
+      total_budget: 1014216000.0
+      type: subprogramme
+    - name: Education Human Resources Management
+      total_budget: 142644000.0
+      type: subprogramme
+    - name: Curriculum and Professional Development Unit
+      total_budget: 12673000.0
+      type: subprogramme
+    - name: 'Programme Management: Teachers, Education Human Resources and Institutional
+        Development'
+      total_budget: 1951000.0
+      type: subprogramme
+    name: Teachers, Education Human Resources and Institutional Development
+    type: programme
 title: Basic Education budget 2015-16  - vulekamali
 vote_number: 14
 vote_primary:

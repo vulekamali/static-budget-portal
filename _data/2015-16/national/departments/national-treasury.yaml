@@ -34,8 +34,253 @@ description: 'National department: National Treasury budget data for the 2015-16
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522National%2BTreasury%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
-expenditure_over_time: null
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 9231000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 353844000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 3590000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 610000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 92320000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    - items:
+      - name: Payments for financial assets
+        total_budget: 3024000000.0
+        type: economic_classification_2
+      name: Payments for financial assets
+      type: economic_classification_1
+    name: Asset and Liability Management
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 3901760000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 61181000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 393332386000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 126440428000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    - items:
+      - name: Payments for financial assets
+        total_budget: 121000000.0
+        type: economic_classification_2
+      name: Payments for financial assets
+      type: economic_classification_1
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 451000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 105881000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 27560000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Economic Policy, Tax, Financial Regulation and Research
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 4694000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 664639000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 82029000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Financial Accounting and Supply Chain Management Systems
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 342984000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 4199821000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Financial Intelligence and State Security
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 117165000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 117000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 734602000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 48874000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    - items:
+      - name: Payments for financial assets
+        total_budget: 346684000.0
+        type: economic_classification_2
+      name: Payments for financial assets
+      type: economic_classification_1
+    name: International Financial Relations
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1300000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 215109000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 40556000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Public Finance and Budget Management
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 943444000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 8490995000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Revenue Administration
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 858847000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1878749000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 406267000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Technical Support and Development Finance
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 396321356000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 431507741000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 472916726000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 511611757000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 546851118000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 583173099000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 621431690000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 548171821626
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 565499672514
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 585696993749
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 599871241998
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 609687777734
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 611677431263
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 621431690000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -82,33 +327,144 @@ name: National Treasury
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522National%2BTreasury%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  econ_classes: []
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 9231000.0
+      type: programme
+    - name: Financial Accounting and Supply Chain Management Systems
+      total_budget: 4694000.0
+      type: programme
+    - name: Public Finance and Budget Management
+      total_budget: 1300000.0
+      type: programme
+    - name: Asset and Liability Management
+      total_budget: 610000.0
+      type: programme
+    - name: Economic Policy, Tax, Financial Regulation and Research
+      total_budget: 451000.0
+      type: programme
+    - name: International Financial Relations
+      total_budget: 117000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Revenue Administration
+      total_budget: 943444000.0
+      type: programme
+    - name: Technical Support and Development Finance
+      total_budget: 858847000.0
+      type: programme
+    - name: Financial Intelligence and State Security
+      total_budget: 342984000.0
+      type: programme
+    - name: International Financial Relations
+      total_budget: 117165000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 126440428000.0
+      type: programme
+    - name: Financial Accounting and Supply Chain Management Systems
+      total_budget: 664639000.0
+      type: programme
+    - name: Technical Support and Development Finance
+      total_budget: 406267000.0
+      type: programme
+    - name: Administration
+      total_budget: 353844000.0
+      type: programme
+    - name: Public Finance and Budget Management
+      total_budget: 215109000.0
+      type: programme
+    - name: Economic Policy, Tax, Financial Regulation and Research
+      total_budget: 105881000.0
+      type: programme
+    - name: Asset and Liability Management
+      total_budget: 92320000.0
+      type: programme
+    - name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+      total_budget: 61181000.0
+      type: programme
+    - name: International Financial Relations
+      total_budget: 48874000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 393332386000.0
+      type: programme
+    - name: Revenue Administration
+      total_budget: 8490995000.0
+      type: programme
+    - name: Financial Intelligence and State Security
+      total_budget: 4199821000.0
+      type: programme
+    - name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+      total_budget: 3901760000.0
+      type: programme
+    - name: Technical Support and Development Finance
+      total_budget: 1878749000.0
+      type: programme
+    - name: International Financial Relations
+      total_budget: 734602000.0
+      type: programme
+    - name: Financial Accounting and Supply Chain Management Systems
+      total_budget: 82029000.0
+      type: programme
+    - name: Public Finance and Budget Management
+      total_budget: 40556000.0
+      type: programme
+    - name: Economic Policy, Tax, Financial Regulation and Research
+      total_budget: 27560000.0
+      type: programme
+    - name: Administration
+      total_budget: 3590000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Asset and Liability Management
+      total_budget: 3024000000.0
+      type: programme
+    - name: International Financial Relations
+      total_budget: 346684000.0
+      type: programme
+    - name: Direct charge against the National Revenue Fund
+      total_budget: 121000000.0
+      type: programme
+    name: Payments for financial assets - Payments for financial assets
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522National%2BTreasury%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
-  - name: Economic Policy, Tax, Financial Regulation and Research
-    total_budget: null
-  - name: Public Finance and Budget Management
-    total_budget: null
-  - name: Asset and Liability Management
-    total_budget: null
-  - name: Financial Accounting and Supply Chain Management Systems
-    total_budget: null
-  - name: International Financial Relations
-    total_budget: null
-  - name: Civil and Military Pensions, Contributions to Funds and Other Benefits
-    total_budget: null
-  - name: Technical Support and Development Finance
-    total_budget: null
-  - name: Revenue Administration
-    total_budget: null
+    total_budget: 366665000.0
   - name: Financial Intelligence and State Security
-    total_budget: null
+    total_budget: 4542805000.0
   - name: Direct charge against the National Revenue Fund
-    total_budget: null
+    total_budget: 519893814000.0
+  - name: Economic Policy, Tax, Financial Regulation and Research
+    total_budget: 133892000.0
+  - name: Public Finance and Budget Management
+    total_budget: 256965000.0
+  - name: Asset and Liability Management
+    total_budget: 3116930000.0
+  - name: Financial Accounting and Supply Chain Management Systems
+    total_budget: 751362000.0
+  - name: International Financial Relations
+    total_budget: 1247442000.0
+  - name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+    total_budget: 3962941000.0
+  - name: Technical Support and Development Finance
+    total_budget: 3143863000.0
+  - name: Revenue Administration
+    total_budget: 9434439000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: national-treasury
@@ -118,7 +474,201 @@ sphere:
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522National%2BTreasury%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 104600000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 86108000.0
+      type: subprogramme
+    - name: Financial Administration
+      total_budget: 56525000.0
+      type: subprogramme
+    - name: Departmental Management
+      total_budget: 44915000.0
+      type: subprogramme
+    - name: Enterprise Wide Risk Management
+      total_budget: 24489000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 18417000.0
+      type: subprogramme
+    - name: Legal Services
+      total_budget: 16795000.0
+      type: subprogramme
+    - name: Communications
+      total_budget: 10591000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 4225000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Financial Investments
+      total_budget: 3024000000.0
+      type: subprogramme
+    - name: State Owned Entity Financial Management and Governance
+      total_budget: 32001000.0
+      type: subprogramme
+    - name: Government Debt Management
+      total_budget: 20578000.0
+      type: subprogramme
+    - name: Financial Operations
+      total_budget: 20399000.0
+      type: subprogramme
+    - name: Programme Management for Asset and Liability Management
+      total_budget: 10433000.0
+      type: subprogramme
+    - name: Strategy and Risk Management
+      total_budget: 9519000.0
+      type: subprogramme
+    name: Asset and Liability Management
+    type: programme
+  - items:
+    - name: Civil Pensions and Contributions to Funds
+      total_budget: 3079917000.0
+      type: subprogramme
+    - name: Military Pensions and Other Benefits
+      total_budget: 821843000.0
+      type: subprogramme
+    - name: Government Pensions Administration Agency
+      total_budget: 61181000.0
+      type: subprogramme
+    name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+    type: programme
+  - items:
+    - name: Provincial Equitable Share
+      total_budget: 382673477000.0
+      type: subprogramme
+    - name: Debt-service costs
+      total_budget: 126440428000.0
+      type: subprogramme
+    - name: General Fuel Levy Sharing with Metropolitan Municipalities
+      total_budget: 10658909000.0
+      type: subprogramme
+    - name: National Revenue Fund payments
+      total_budget: 121000000.0
+      type: subprogramme
+    name: Direct charge against the National Revenue Fund
+    type: programme
+  - items:
+    - name: Financial Sector Policy
+      total_budget: 30345000.0
+      type: subprogramme
+    - name: Economic Policy
+      total_budget: 27636000.0
+      type: subprogramme
+    - name: Tax Policy
+      total_budget: 24309000.0
+      type: subprogramme
+    - name: Programme Management for Economic Policy, Tax, Financial Regulation and
+        Research
+      total_budget: 22778000.0
+      type: subprogramme
+    - name: Cooperative Banks Development Agency
+      total_budget: 16176000.0
+      type: subprogramme
+    - name: Research
+      total_budget: 12648000.0
+      type: subprogramme
+    name: Economic Policy, Tax, Financial Regulation and Research
+    type: programme
+  - items:
+    - name: Financial Systems
+      total_budget: 443574000.0
+      type: subprogramme
+    - name: Financial Management Policy and Compliance Improvement
+      total_budget: 117634000.0
+      type: subprogramme
+    - name: Financial Reporting for National Accounts
+      total_budget: 85298000.0
+      type: subprogramme
+    - name: Office of the Chief Procurement Officer
+      total_budget: 48059000.0
+      type: subprogramme
+    - name: Audit Statutory Bodies
+      total_budget: 41856000.0
+      type: subprogramme
+    - name: Programme Management for Financial Accounting and Supply Chain Management
+        Systems
+      total_budget: 14698000.0
+      type: subprogramme
+    - name: 'Service Charges: Commercial Banks'
+      total_budget: 243000.0
+      type: subprogramme
+    name: Financial Accounting and Supply Chain Management Systems
+    type: programme
+  - items:
+    - name: Secret Services
+      total_budget: 4308317000.0
+      type: subprogramme
+    - name: Financial Intelligence Centre
+      total_budget: 234488000.0
+      type: subprogramme
+    name: Financial Intelligence and State Security
+    type: programme
+  - items:
+    - name: African Integration and Support
+      total_budget: 717609000.0
+      type: subprogramme
+    - name: International Development Funding Institutions
+      total_budget: 463849000.0
+      type: subprogramme
+    - name: International Economic Cooperation
+      total_budget: 31165000.0
+      type: subprogramme
+    - name: Programme Management for International Financial Relations
+      total_budget: 17826000.0
+      type: subprogramme
+    - name: International Projects
+      total_budget: 16993000.0
+      type: subprogramme
+    name: International Financial Relations
+    type: programme
+  - items:
+    - name: Intergovernmental Relations
+      total_budget: 80131000.0
+      type: subprogramme
+    - name: Budget Office and Coordination
+      total_budget: 59897000.0
+      type: subprogramme
+    - name: Public Finance
+      total_budget: 56691000.0
+      type: subprogramme
+    - name: Financial and Fiscal Commission
+      total_budget: 40556000.0
+      type: subprogramme
+    - name: Programme Management for Public Finance and Budget Management
+      total_budget: 19690000.0
+      type: subprogramme
+    name: Public Finance and Budget Management
+    type: programme
+  - items:
+    - name: South African Revenue Service
+      total_budget: 9434439000.0
+      type: subprogramme
+    name: Revenue Administration
+    type: programme
+  - items:
+    - name: Employment Creation Facilitation
+      total_budget: 1318000000.0
+      type: subprogramme
+    - name: Urban Development and Support
+      total_budget: 884195000.0
+      type: subprogramme
+    - name: Local Government Financial Management Support
+      total_budget: 587203000.0
+      type: subprogramme
+    - name: Infrastructure Development Support
+      total_budget: 270856000.0
+      type: subprogramme
+    - name: Government Technical Advisory Centre
+      total_budget: 83609000.0
+      type: subprogramme
+    name: Technical Support and Development Finance
+    type: programme
 title: National Treasury budget 2015-16  - vulekamali
 vote_number: 7
 vote_primary:

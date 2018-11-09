@@ -35,8 +35,97 @@ description: 'National department: Independent Police Investigative Directorate 
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Independent%2BPolice%2BInvestigative%2BDirectorate%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
-expenditure_over_time: null
+  programmes:
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 73879000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 366000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 4618000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Compliance Monitoring and Stakeholder Management
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 150817000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 5000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Investigation and Information Management
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 5096000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Legal Services
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 153532000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 171449000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 193141000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 234719000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 234781000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 246111000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 259902000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 212357761
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 224687402
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 239200892
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 275210989
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 261758825
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 258140412
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 259902000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -87,19 +176,43 @@ name: Independent Police Investigative Directorate
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Independent%2BPolice%2BInvestigative%2BDirectorate%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  econ_classes: []
+  econ_classes:
+  - items:
+    - name: Investigation and Information Management
+      total_budget: 150817000.0
+      type: programme
+    - name: Administration
+      total_budget: 73879000.0
+      type: programme
+    - name: Legal Services
+      total_budget: 5096000.0
+      type: programme
+    - name: Compliance Monitoring and Stakeholder Management
+      total_budget: 4618000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 366000.0
+      type: programme
+    - name: Investigation and Information Management
+      total_budget: 5000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Independent%2BPolice%2BInvestigative%2BDirectorate%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
+    total_budget: 74245000.0
   - name: Investigation and Information Management
-    total_budget: null
+    total_budget: 150822000.0
   - name: Legal Services
-    total_budget: null
+    total_budget: 5096000.0
   - name: Compliance Monitoring and Stakeholder Management
-    total_budget: null
+    total_budget: 4618000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: independent-police-investigative-directorate
@@ -109,7 +222,58 @@ sphere:
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Independent%2BPolice%2BInvestigative%2BDirectorate%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 30444000.0
+      type: subprogramme
+    - name: Finance Services
+      total_budget: 18980000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 10634000.0
+      type: subprogramme
+    - name: Department Management
+      total_budget: 10614000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 3573000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Compliance Monitoring
+      total_budget: 4033000.0
+      type: subprogramme
+    - name: Stakeholder Management
+      total_budget: 585000.0
+      type: subprogramme
+    name: Compliance Monitoring and Stakeholder Management
+    type: programme
+  - items:
+    - name: Investigation Services
+      total_budget: 132029000.0
+      type: subprogramme
+    - name: Investigation Management
+      total_budget: 15718000.0
+      type: subprogramme
+    - name: Information Management
+      total_budget: 3075000.0
+      type: subprogramme
+    name: Investigation and Information Management
+    type: programme
+  - items:
+    - name: Legal Support and Administration
+      total_budget: 1710000.0
+      type: subprogramme
+    - name: Litigation Advisory Services
+      total_budget: 1704000.0
+      type: subprogramme
+    - name: Investigation Advisory Services
+      total_budget: 1682000.0
+      type: subprogramme
+    name: Legal Services
+    type: programme
 title: Independent Police Investigative Directorate budget 2015-16  - vulekamali
 vote_number: 20
 vote_primary:
