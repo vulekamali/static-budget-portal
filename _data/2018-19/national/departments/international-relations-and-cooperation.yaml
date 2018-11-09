@@ -2,6 +2,46 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary:
+  by_type: null
+  econ_classes:
+  - items:
+    - amount: 0
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: -8231000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 30000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 8201000
+      name: Households
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: -16125000
+    name: Administration
+  - amount: -40781000
+    name: International Cooperation
+  - amount: 16125000
+    name: International Relations
+  - amount: 40781000
+    name: Public Diplomacy and Protocol Services
+  total_change:
+    amount: 0
+    percentage: 0.0
+  virements:
+    amount: 65137000
+    label: Value of virements
+    percentage: 0.99
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -20,12 +60,14 @@ department_adjusted_budget:
   document:
     description: ''
     format: PDF
+    id: f22f5343-6093-4c46-9c9f-3ea06cdfbf2d
     name: AENE 2018-19 - Vote 6 - International Relations and Cooperation
     url: https://data.vulekamali.gov.za/dataset/0c4b9c66-2b22-4ba2-a74d-1f2c5e67ff27/resource/f22f5343-6093-4c46-9c9f-3ea06cdfbf2d/download/vote-6-international-relations-and-cooperation.pdf
   name: AENE 2018-19 - Vote 6 - International Relations and Cooperation
   tables:
     description: ''
     format: XLSX
+    id: 3e7d9a21-fdd9-490e-b2b7-e3901c37cc36
     name: AENE 2018-19 - Vote 6 - International Relations and Cooperation
     url: https://data.vulekamali.gov.za/dataset/0c4b9c66-2b22-4ba2-a74d-1f2c5e67ff27/resource/3e7d9a21-fdd9-490e-b2b7-e3901c37cc36/download/aene18chap-tab-vote06.xlsx
 department_budget:
@@ -45,7 +87,7 @@ description: 'National department: International Relations and Cooperation budge
   YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Cgovernment_function.government_function%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fdrilldown%3Dfinancial_year.financial_year%257Cprogramme_number.programme%257Cbudget_phase.budget_phase%257Cprogramme_number.programme_number%257Ceconomic_classification_3.economic_classification_3%257Csubprogramme_number.subprogramme_number%257Cgovernment_function.government_function%257Ceconomic_classification_1.economic_classification_1%257Cvote_number.vote_number%257Ceconomic_classification_2.economic_classification_2%257Cvote_number.department%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%26cut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -253,7 +295,7 @@ is_vote_primary: true
 name: International Relations and Cooperation
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Cgovernment_function.government_function%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fdrilldown%3Dfinancial_year.financial_year%257Cprogramme_number.programme%257Cbudget_phase.budget_phase%257Cprogramme_number.programme_number%257Ceconomic_classification_3.economic_classification_3%257Csubprogramme_number.subprogramme_number%257Cgovernment_function.government_function%257Ceconomic_classification_1.economic_classification_1%257Cvote_number.vote_number%257Ceconomic_classification_2.economic_classification_2%257Cvote_number.department%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%26cut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26pagesize%3D10000
   econ_classes:
   - items:
     - name: International Relations
@@ -338,7 +380,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Cgovernment_function.government_function%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fdrilldown%3Dfinancial_year.financial_year%257Cprogramme_number.programme%257Cbudget_phase.budget_phase%257Cprogramme_number.programme_number%257Ceconomic_classification_3.economic_classification_3%257Csubprogramme_number.subprogramme_number%257Cgovernment_function.government_function%257Ceconomic_classification_1.economic_classification_1%257Cvote_number.vote_number%257Ceconomic_classification_2.economic_classification_2%257Cvote_number.department%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%26cut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 1665571000.0
@@ -358,7 +400,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Cgovernment_function.government_function%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fdrilldown%3Dfinancial_year.financial_year%257Cprogramme_number.programme%257Cbudget_phase.budget_phase%257Cprogramme_number.programme_number%257Ceconomic_classification_3.economic_classification_3%257Csubprogramme_number.subprogramme_number%257Cgovernment_function.government_function%257Ceconomic_classification_1.economic_classification_1%257Cvote_number.vote_number%257Ceconomic_classification_2.economic_classification_2%257Cvote_number.department%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%26cut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services

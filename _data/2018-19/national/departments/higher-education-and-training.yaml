@@ -2,6 +2,73 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary:
+  by_type:
+  - amount: 103430000
+    name: Announced in the budget speech
+    type: kind
+  econ_classes:
+  - items:
+    - amount: -4700000
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: -6592000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 1400000
+      name: Buildings and other fixed structures
+      type: economic_classification_3
+    - amount: 3808000
+      name: Machinery and equipment
+      type: economic_classification_3
+    - amount: 24000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 382778000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    - amount: 103430000
+      name: Higher education institutions
+      type: economic_classification_3
+    - amount: 4700000
+      name: Households
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  - items:
+    - amount: 1360000
+      name: Payments for financial assets
+      type: economic_classification_3
+    name: Payments for financial assets
+    type: economic_classification_2
+  programmes:
+  - amount: 14310000
+    name: Administration
+  - amount: -3200000
+    name: Community Education and Training
+  - amount: 382778000
+    name: Direct charge against the National Revenue Fund
+  - amount: -250000
+    name: Planning, Policy and Strategy
+  - amount: 1910000
+    name: Skills Development
+  - amount: -12400000
+    name: Technical and Vocational Education and Training
+  - amount: 103060000
+    name: University Education
+  total_change:
+    amount: 486208000
+    percentage: 0.54
+  virements:
+    amount: 27981000
+    label: Value of virements
+    percentage: 0.03
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -20,12 +87,14 @@ department_adjusted_budget:
   document:
     description: ''
     format: PDF
+    id: 6a259317-dc17-44bd-aae4-a5ef296c9b4f
     name: AENE 2018-19 - Vote 15 - Higher Education and Training
     url: https://data.vulekamali.gov.za/dataset/fef78114-9a77-48bd-b522-ed1d5db98449/resource/6a259317-dc17-44bd-aae4-a5ef296c9b4f/download/vote-15-higher-education-and-training.pdf
   name: AENE 2018-19 - Vote 15 - Higher Education and Training
   tables:
     description: ''
     format: XLSX
+    id: 036ffe0a-3c5c-4784-a61e-ed4e09b79281
     name: AENE 2018-19 - Vote 15 - Higher Education and Training
     url: https://data.vulekamali.gov.za/dataset/fef78114-9a77-48bd-b522-ed1d5db98449/resource/036ffe0a-3c5c-4784-a61e-ed4e09b79281/download/aene18chap-tab-vote15.xlsx
 department_budget:
@@ -44,7 +113,7 @@ description: 'National department: Higher Education and Training budget data for
   2018-19 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Cgovernment_function.government_function%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fdrilldown%3Dfinancial_year.financial_year%257Cprogramme_number.programme%257Cbudget_phase.budget_phase%257Cprogramme_number.programme_number%257Ceconomic_classification_3.economic_classification_3%257Csubprogramme_number.subprogramme_number%257Cgovernment_function.government_function%257Ceconomic_classification_1.economic_classification_1%257Cvote_number.vote_number%257Ceconomic_classification_2.economic_classification_2%257Cvote_number.department%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%26cut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -307,7 +376,7 @@ is_vote_primary: true
 name: Higher Education and Training
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Cgovernment_function.government_function%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fdrilldown%3Dfinancial_year.financial_year%257Cprogramme_number.programme%257Cbudget_phase.budget_phase%257Cprogramme_number.programme_number%257Ceconomic_classification_3.economic_classification_3%257Csubprogramme_number.subprogramme_number%257Cgovernment_function.government_function%257Ceconomic_classification_1.economic_classification_1%257Cvote_number.vote_number%257Ceconomic_classification_2.economic_classification_2%257Cvote_number.department%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%26cut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Technical and Vocational Education and Training
@@ -422,7 +491,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Cgovernment_function.government_function%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fdrilldown%3Dfinancial_year.financial_year%257Cprogramme_number.programme%257Cbudget_phase.budget_phase%257Cprogramme_number.programme_number%257Ceconomic_classification_3.economic_classification_3%257Csubprogramme_number.subprogramme_number%257Cgovernment_function.government_function%257Ceconomic_classification_1.economic_classification_1%257Cvote_number.vote_number%257Ceconomic_classification_2.economic_classification_2%257Cvote_number.department%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%26cut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 432277000.0
@@ -446,7 +515,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Cgovernment_function.government_function%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fdrilldown%3Dfinancial_year.financial_year%257Cprogramme_number.programme%257Cbudget_phase.budget_phase%257Cprogramme_number.programme_number%257Ceconomic_classification_3.economic_classification_3%257Csubprogramme_number.subprogramme_number%257Cgovernment_function.government_function%257Ceconomic_classification_1.economic_classification_1%257Cvote_number.vote_number%257Ceconomic_classification_2.economic_classification_2%257Cvote_number.department%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%26cut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services
