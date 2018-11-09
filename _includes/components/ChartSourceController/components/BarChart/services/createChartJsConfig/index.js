@@ -84,7 +84,7 @@ const createModifyLabel = (target, fontString) => ({ label, height, x, y, maxWid
   target.textBaseline = 'top';
   target.fillStyle = isHeading ? 'grey' : color;
   target.textAlign = align;
-  target.fillText(truncatedLabel, isHeading ? 0 : textX, isHeading ? textY + 3 : textY);
+  target.fillText(truncatedLabel, textX, isHeading ? textY + 3 : textY);
 };
 
 
@@ -102,8 +102,9 @@ const dynamicLabelPlugin = ({ chart }) => {
 };
 
 
-const createChartJsConfig = ({ items, rotated, color }) => {
+const createChartJsConfig = ({ items, rotated, color, viewportWidth }) => {
   const { labels, values } = flattenNesting(items);
+  const showYAxisLabels = viewportWidth && viewportWidth > 600 && rotated;
 
   return {
     type: rotated ? 'bar' : 'horizontalBar',
@@ -150,12 +151,16 @@ const createChartJsConfig = ({ items, rotated, color }) => {
       },
       scales: {
         yAxes: [{
-          display: rotated || false,
+          display: true,
           gridLines: {
-            display: false,
+            color: 'transparent',
+            display: true,
+            drawBorder: false,
+            zeroLineColor: '#ccc',
+            zeroLineWidth: 1,
           },
           ticks: {
-            display: rotated || false,
+            display: showYAxisLabels || false,
             beginAtZero: true,
             maxRotation: 0,
             callback: value => (rotated ? `R${trimValues(value)}` : value),
@@ -165,12 +170,17 @@ const createChartJsConfig = ({ items, rotated, color }) => {
         }],
         xAxes: [{
           ticks: {
+            display: rotated || true,
             beginAtZero: true,
             maxRotation: 0,
             callback: value => (rotated ? value : `R${trimValues(value)}`),
           },
           gridLines: {
-            display: false,
+            color: 'transparent',
+            display: true,
+            drawBorder: false,
+            zeroLineColor: '#ccc',
+            zeroLineWidth: 1,
           },
         }],
       },
