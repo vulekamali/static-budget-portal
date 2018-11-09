@@ -4,6 +4,9 @@
 
 adjusted_budget_summary:
   by_type:
+  - amount: -100000000
+    name: Declared unspent funds
+    type: kind
   - amount: 18447000
     name: Roll-overs
     type: kind
@@ -46,8 +49,6 @@ adjusted_budget_summary:
     name: Administration
   - amount: -100000000
     name: Social Assistance
-  - amount: 0
-    name: Social Policy and Integrated Service Delivery
   - amount: -3801000
     name: Social Security Policy and Administration
   - amount: 15947000
@@ -77,14 +78,12 @@ department_adjusted_budget:
   document:
     description: ''
     format: PDF
-    id: 1b6aa4cf-08e4-4631-a1d0-5e4484f053ab
     name: AENE 2018-19 - Vote 17 - Social Development
     url: https://data.vulekamali.gov.za/dataset/d7a58767-88a4-47eb-8aad-8f915c58c5e1/resource/1b6aa4cf-08e4-4631-a1d0-5e4484f053ab/download/vote-17-social-development.pdf
   name: AENE 2018-19 - Vote 17 - Social Development
   tables:
     description: ''
     format: XLSX
-    id: 4519af1b-59f2-4ceb-928c-f5b8be4e3b6e
     name: AENE 2018-19 - Vote 17 - Social Development
     url: https://data.vulekamali.gov.za/dataset/d7a58767-88a4-47eb-8aad-8f915c58c5e1/resource/4519af1b-59f2-4ceb-928c-f5b8be4e3b6e/download/aene18chap-tab-vote17.xlsx
 department_budget:

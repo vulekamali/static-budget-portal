@@ -3,7 +3,10 @@
 #########################################
 
 adjusted_budget_summary:
-  by_type: null
+  by_type:
+  - amount: -150000000
+    name: Declared unspent funds
+    type: kind
   econ_classes:
   - items:
     - amount: 0
@@ -21,12 +24,8 @@ adjusted_budget_summary:
     name: Payments for capital assets
     type: economic_classification_2
   programmes:
-  - amount: 0
-    name: Administration
   - amount: -150000000
     name: Detective Services
-  - amount: 0
-    name: Protection and Security Services
   total_change:
     amount: -150000000
     percentage: -0.16
@@ -52,14 +51,12 @@ department_adjusted_budget:
   document:
     description: ''
     format: PDF
-    id: 6103f313-4b63-4d92-a851-1f1dedf7cb4c
     name: AENE 2018-19 - Vote 23 - Police
     url: https://data.vulekamali.gov.za/dataset/da6df4e0-e7fa-4f56-a10c-a09f5d707a9a/resource/6103f313-4b63-4d92-a851-1f1dedf7cb4c/download/vote-23-police.pdf
   name: AENE 2018-19 - Vote 23 - Police
   tables:
     description: ''
     format: XLSX
-    id: 303b9606-a7ee-4e61-80fc-63ac4ddc63ee
     name: AENE 2018-19 - Vote 23 - Police
     url: https://data.vulekamali.gov.za/dataset/da6df4e0-e7fa-4f56-a10c-a09f5d707a9a/resource/303b9606-a7ee-4e61-80fc-63ac4ddc63ee/download/aene18chap-tab-vote23.xlsx
 department_budget:

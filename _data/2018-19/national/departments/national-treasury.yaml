@@ -7,6 +7,15 @@ adjusted_budget_summary:
   - amount: 400000000
     name: Announced in the budget speech
     type: kind
+  - amount: -17473000
+    name: Declared unspent funds
+    type: kind
+  - amount: -30684000
+    name: Shifting of functions between votes
+    type: kind
+  - amount: 989922000
+    name: Significant and unforeseeable economic and financial events
+    type: kind
   econ_classes:
   - items:
     - amount: 0
@@ -52,8 +61,6 @@ adjusted_budget_summary:
     name: Administration
   - amount: -8833000
     name: Asset and Liability Management
-  - amount: 0
-    name: Civil and Military Pensions, Contributions to Funds and Other Benefits
   - amount: 989922000
     name: Direct charge against the National Revenue Fund
   - amount: 11761000
@@ -91,14 +98,12 @@ department_adjusted_budget:
   document:
     description: ''
     format: PDF
-    id: ad58bd1d-bd66-4f65-baf7-9459fd3dfa41
     name: AENE 2018-19 - Vote 7 - National Treasury
     url: https://data.vulekamali.gov.za/dataset/014f5cd1-d340-4403-80d5-eb53425dcd75/resource/ad58bd1d-bd66-4f65-baf7-9459fd3dfa41/download/vote-7-national-treasury.pdf
   name: AENE 2018-19 - Vote 7 - National Treasury
   tables:
     description: ''
     format: XLSX
-    id: 6f2a2d09-07c6-4f18-b819-3d2325596c5e
     name: AENE 2018-19 - Vote 7 - National Treasury
     url: https://data.vulekamali.gov.za/dataset/014f5cd1-d340-4403-80d5-eb53425dcd75/resource/6f2a2d09-07c6-4f18-b819-3d2325596c5e/download/aene18chap-tab-vote07.xlsx
 department_budget:

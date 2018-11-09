@@ -3,7 +3,10 @@
 #########################################
 
 adjusted_budget_summary:
-  by_type: null
+  by_type:
+  - amount: 463000
+    name: Self-financing
+    type: kind
   econ_classes:
   - items:
     - amount: 0
@@ -65,14 +68,12 @@ department_adjusted_budget:
   document:
     description: ''
     format: PDF
-    id: 1177ed46-c07d-4ff9-a4ff-3748d5a31457
     name: AENE 2018-19 - Vote 18 - Correctional Services
     url: https://data.vulekamali.gov.za/dataset/ba1ccb18-8c6b-428f-af82-3772755d0e39/resource/1177ed46-c07d-4ff9-a4ff-3748d5a31457/download/vote-18-correctional-services.pdf
   name: AENE 2018-19 - Vote 18 - Correctional Services
   tables:
     description: ''
     format: XLSX
-    id: a51613f5-9e3b-4e8a-8537-5e512689ea4a
     name: AENE 2018-19 - Vote 18 - Correctional Services
     url: https://data.vulekamali.gov.za/dataset/ba1ccb18-8c6b-428f-af82-3772755d0e39/resource/a51613f5-9e3b-4e8a-8537-5e512689ea4a/download/aene18chap-tab-vote18.xlsx
 department_budget:

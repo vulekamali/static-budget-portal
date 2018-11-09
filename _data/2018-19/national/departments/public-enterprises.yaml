@@ -7,6 +7,9 @@ adjusted_budget_summary:
   - amount: 1249000000
     name: Announced in the budget speech
     type: kind
+  - amount: 5000000000
+    name: Special appropriation
+    type: kind
   econ_classes:
   - items:
     - amount: -1867000
@@ -33,12 +36,8 @@ adjusted_budget_summary:
     name: Payments for financial assets
     type: economic_classification_2
   programmes:
-  - amount: 0
-    name: Administration
   - amount: 6249000000
     name: Business Enhancement, Transformation and Industrialisation
-  - amount: 0
-    name: State-owned Companies Governance Assurance and Performance
   total_change:
     amount: 6249000000
     percentage: 2281.37
@@ -64,14 +63,12 @@ department_adjusted_budget:
   document:
     description: ''
     format: PDF
-    id: d77b852c-dd98-406b-b7b6-f1f4c97767b2
     name: AENE 2018-19 - Vote 9 - Public Enterprises
     url: https://data.vulekamali.gov.za/dataset/c4b8788a-0c0a-4b2b-ace2-755418c57ff4/resource/d77b852c-dd98-406b-b7b6-f1f4c97767b2/download/vote-9-public-enterprises.pdf
   name: AENE 2018-19 - Vote 9 - Public Enterprises
   tables:
     description: ''
     format: XLSX
-    id: adb51f94-ccef-462a-940a-c43cfc2f6466
     name: AENE 2018-19 - Vote 9 - Public Enterprises
     url: https://data.vulekamali.gov.za/dataset/c4b8788a-0c0a-4b2b-ace2-755418c57ff4/resource/adb51f94-ccef-462a-940a-c43cfc2f6466/download/aene18chap-tab-vote09.xlsx
 department_budget:
