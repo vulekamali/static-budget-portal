@@ -69,10 +69,6 @@
         <p class="js-tooltips">
           These charts show changes to the spending plans originally published in the {{ include.source_type}}. These changes are published in the {{ include.source_type_adjusted }}.
         </p>
-            
-        <p class="js-tooltips">
-          Virements are the allocation of unspent money from one economic classification or programme to cover excess expenditure under another economic classification or programme within the same budget vote.
-        </p>
 
         <div class="AdvancedChartSection-indicatorsGrid">
           <div class="AdvancedChartSection-indicator u-marginBottom10">
@@ -90,7 +86,7 @@
 
             <p>Total adjustment to the original budget for this department.</p>
           </div>
-  
+
           <div class="AdvancedChartSection-indicator u-marginBottom10">
             <div class="Title Title--interSection u-marginBottom10">
               Virements
@@ -159,7 +155,7 @@
     <div class="AdvancedChartSection-item AdvancedChartSection-item--right">
       <div class="Card">
         {% if include.type == "programmes" %}
-          <div 
+          <div
             data-component="ChartAdaptor"
             data-type="programmes"
             data-items="{{ include.items | jsonify | escape }}"
@@ -172,7 +168,7 @@
         {% endif %}
 
         {% if include.type == "expenditure" %}
-          <div 
+          <div
             data-component="ChartAdaptor"
             data-items="{{ include.items| jsonify | escape }}"
             data-type="expenditure"
@@ -187,14 +183,14 @@
         {% endif %}
 
         {% if include.type == "adjusted" %}
-          {% if include.items and include.items.by-type %}
+          {% if include.items and include.items.by_type %}
             <div class="Title Title--interSection u-marginBottom15">
               Adjustments by type
             </div>
 
-            <div 
+            <div
               data-component="ChartAdaptor"
-              data-items="{{ include.items.by-type | jsonify | escape }}"
+              data-items="{{ include.items.by_type | jsonify | escape }}"
               data-type="adjusted"
               data-scale="2"
               data-color="{{ include.color }}"
@@ -221,7 +217,7 @@
             </div>
           {% endif %}
 
-          {% if include.items && include.items.by-type == null %}
+          {% if include.items && include.items.by_type == null %}
             <div class="Title Title--interSection u-marginBottom15">
               Adjustments by type
             </div>
@@ -250,9 +246,9 @@
           <div class="Title Title--interSection">
             Total adjustments by economic classification
           </div>
-          
+
           {% if include.items.econ_classes %}
-            <div 
+            <div
               data-component="ChartAdaptor"
               data-type="adjusted"
               data-items="{{ include.items.econ_classes | jsonify | escape }}"
@@ -284,9 +280,9 @@
           <div class="Title Title--interSection">
             Total adjustments by programme
           </div>
-          
+
           {% if include.items.programmes %}
-            <div 
+            <div
               data-component="ChartAdaptor"
               data-type="adjusted"
               data-items="{{ include.items.programmes | jsonify | escape }}"
