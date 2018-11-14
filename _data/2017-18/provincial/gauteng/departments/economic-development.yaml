@@ -2,6 +2,7 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary: null
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -29,6 +30,7 @@ description: 'Gauteng department: Economic Development budget data for the 2017-
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  department_data_csv: http://localhost:8000/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cgovernment.government%253A%2522Gauteng%2522%257Cdepartment.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -182,15 +184,14 @@ financial_years:
   id: 2017-18
   is_selected: true
 - closest_match:
-    is_exact_match: true
-    url_path: /2018-19/provincial/gauteng/departments/economic-development
+    is_exact_match: false
+    url_path: /2018-19/provincial/gauteng
   id: 2018-19
   is_selected: false
 government:
   name: Gauteng
   slug: gauteng
-government_functions:
-- Economic affairs
+government_functions: []
 intro: "## Vision\r\n\r\nA radically transformed, modernised and re-industrialised\
   \ economy in Gauteng, manifesting decent work, economic inclusion and equity.\r\n\
   \r\n## Mission\r\n\r\nThe mission of the Department of Economic Development in pursuit\
@@ -207,6 +208,7 @@ is_vote_primary: true
 name: Economic Development
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  department_data_csv: http://localhost:8000/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cgovernment.government%253A%2522Gauteng%2522%257Cdepartment.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
@@ -264,6 +266,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  department_data_csv: http://localhost:8000/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cgovernment.government%253A%2522Gauteng%2522%257Cdepartment.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 287897000
@@ -283,6 +286,7 @@ sphere:
   slug: provincial
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
+  department_data_csv: http://localhost:8000/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-expenditure-2017-18-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cgovernment.government%253A%2522Gauteng%2522%257Cdepartment.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Ddepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cphase.phase%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme.subprogramme%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services

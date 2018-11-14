@@ -2,6 +2,7 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary: null
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -31,6 +32,7 @@ description: 'Eastern Cape department: Economic Development, Environmental Affai
   partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  department_data_csv: http://localhost:8000/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cgovernment.government%253A%2522Eastern%2BCape%2522%257Cdepartment.department%253A%2522Economic%2BDevelopment%252C%2BEnvironmental%2BAffairs%2Band%2BTourism%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -184,15 +186,14 @@ financial_years:
   id: 2017-18
   is_selected: true
 - closest_match:
-    is_exact_match: true
-    url_path: /2018-19/provincial/eastern-cape/departments/economic-development-environmental-affairs-and-tourism
+    is_exact_match: false
+    url_path: /2018-19/provincial/eastern-cape
   id: 2018-19
   is_selected: false
 government:
   name: Eastern Cape
   slug: eastern-cape
-government_functions:
-- Economic affairs
+government_functions: []
 intro: "## Vision\n\nSustainable development underpinned by ecpnomic groowth and sound\
   \ environmental management.\r\n\r\n\n\n## Mission\n\nTo lead economic development\
   \ and environmental management in the Easter Cape.\r\n\r\n\n\n## Core functions\n\
@@ -206,6 +207,7 @@ is_vote_primary: true
 name: Economic Development, Environmental Affairs and Tourism
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  department_data_csv: http://localhost:8000/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cgovernment.government%253A%2522Eastern%2BCape%2522%257Cdepartment.department%253A%2522Economic%2BDevelopment%252C%2BEnvironmental%2BAffairs%2Band%2BTourism%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
@@ -290,6 +292,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
+  department_data_csv: http://localhost:8000/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cgovernment.government%253A%2522Eastern%2BCape%2522%257Cdepartment.department%253A%2522Economic%2BDevelopment%252C%2BEnvironmental%2BAffairs%2Band%2BTourism%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 235239000
@@ -305,6 +308,7 @@ sphere:
   slug: provincial
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
+  department_data_csv: http://localhost:8000/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-expenditure-2017-18-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cgovernment.government%253A%2522Eastern%2BCape%2522%257Cdepartment.department%253A%2522Economic%2BDevelopment%252C%2BEnvironmental%2BAffairs%2Band%2BTourism%2522%26drilldown%3Ddepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cphase.phase%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme.subprogramme%26pagesize%3D10000
   programmes: []
 title: Economic Development, Environmental Affairs and Tourism budget 2017-18  - vulekamali
 vote_number: 9

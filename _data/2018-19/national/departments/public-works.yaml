@@ -7,6 +7,7 @@ adjusted_budget_summary:
   - amount: 30000000
     name: Unforeseeable/unavoidable
     type: kind
+  department_data_csv: http://localhost:8000/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253APublic%2BWorks%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:

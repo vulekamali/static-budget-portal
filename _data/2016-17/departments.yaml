@@ -191,64 +191,355 @@ national:
   slug: south-africa
 provincial:
 - departments:
-  - name: Premier
-    slug: premier
-    url_path: /2016-17/provincial/western-cape/departments/premier
+  - name: Office of the Premier
+    slug: office-of-the-premier
+    url_path: /2016-17/provincial/eastern-cape/departments/office-of-the-premier
     vote_number: 1
-  - name: Provincial Parliament
-    slug: provincial-parliament
-    url_path: /2016-17/provincial/western-cape/departments/provincial-parliament
+  - name: Provincial Legislature
+    slug: provincial-legislature
+    url_path: /2016-17/provincial/eastern-cape/departments/provincial-legislature
     vote_number: 2
-  - name: Provincial Treasury
-    slug: provincial-treasury
-    url_path: /2016-17/provincial/western-cape/departments/provincial-treasury
-    vote_number: 3
-  - name: Community Safety
-    slug: community-safety
-    url_path: /2016-17/provincial/western-cape/departments/community-safety
-    vote_number: 4
-  - name: Education
-    slug: education
-    url_path: /2016-17/provincial/western-cape/departments/education
-    vote_number: 5
   - name: Health
     slug: health
-    url_path: /2016-17/provincial/western-cape/departments/health
+    url_path: /2016-17/provincial/eastern-cape/departments/health
+    vote_number: 3
+  - name: Social Development
+    slug: social-development
+    url_path: /2016-17/provincial/eastern-cape/departments/social-development
+    vote_number: 4
+  - name: Roads and Public Works
+    slug: roads-and-public-works
+    url_path: /2016-17/provincial/eastern-cape/departments/roads-and-public-works
+    vote_number: 5
+  - name: Education
+    slug: education
+    url_path: /2016-17/provincial/eastern-cape/departments/education
+    vote_number: 6
+  - name: Cooperative Governance and Traditional Affairs
+    slug: cooperative-governance-and-traditional-affairs
+    url_path: /2016-17/provincial/eastern-cape/departments/cooperative-governance-and-traditional-affairs
+    vote_number: 7
+  - name: Rural Development and Agrarian Reform
+    slug: rural-development-and-agrarian-reform
+    url_path: /2016-17/provincial/eastern-cape/departments/rural-development-and-agrarian-reform
+    vote_number: 8
+  - name: Economic Development, Environmental Affairs and Tourism
+    slug: economic-development-environmental-affairs-and-tourism
+    url_path: /2016-17/provincial/eastern-cape/departments/economic-development-environmental-affairs-and-tourism
+    vote_number: 9
+  - name: Transport
+    slug: transport
+    url_path: /2016-17/provincial/eastern-cape/departments/transport
+    vote_number: 10
+  - name: Human Settlements
+    slug: human-settlements
+    url_path: /2016-17/provincial/eastern-cape/departments/human-settlements
+    vote_number: 11
+  - name: Provincial Treasury
+    slug: provincial-treasury
+    url_path: /2016-17/provincial/eastern-cape/departments/provincial-treasury
+    vote_number: 12
+  - name: Sport, Recreation, Arts and Culture
+    slug: sport-recreation-arts-and-culture
+    url_path: /2016-17/provincial/eastern-cape/departments/sport-recreation-arts-and-culture
+    vote_number: 14
+  - name: Safety and Liaison
+    slug: safety-and-liaison
+    url_path: /2016-17/provincial/eastern-cape/departments/safety-and-liaison
+    vote_number: 15
+  name: Eastern Cape
+  slug: eastern-cape
+- departments:
+  - name: Premier
+    slug: premier
+    url_path: /2016-17/provincial/free-state/departments/premier
+    vote_number: 1
+  - name: Free State Legislature
+    slug: free-state-legislature
+    url_path: /2016-17/provincial/free-state/departments/free-state-legislature
+    vote_number: 2
+  - name: Economic and Small Business Development, Tourism and Environmental Affairs
+    slug: economic-and-small-business-development-tourism-and-environmental-affairs
+    url_path: /2016-17/provincial/free-state/departments/economic-and-small-business-development-tourism-and-environmental-affairs
+    vote_number: 3
+  - name: Provincial Treasury
+    slug: provincial-treasury
+    url_path: /2016-17/provincial/free-state/departments/provincial-treasury
+    vote_number: 4
+  - name: Health
+    slug: health
+    url_path: /2016-17/provincial/free-state/departments/health
+    vote_number: 5
+  - name: Education
+    slug: education
+    url_path: /2016-17/provincial/free-state/departments/education
     vote_number: 6
   - name: Social Development
     slug: social-development
-    url_path: /2016-17/provincial/western-cape/departments/social-development
+    url_path: /2016-17/provincial/free-state/departments/social-development
+    vote_number: 7
+  - name: Cooperative Governance and Traditional Affairs
+    slug: cooperative-governance-and-traditional-affairs
+    url_path: /2016-17/provincial/free-state/departments/cooperative-governance-and-traditional-affairs
+    vote_number: 8
+  - name: Public Works and Infrastructure
+    slug: public-works-and-infrastructure
+    url_path: /2016-17/provincial/free-state/departments/public-works-and-infrastructure
+    vote_number: 9
+  - name: Police, Roads and Transport
+    slug: police-roads-and-transport
+    url_path: /2016-17/provincial/free-state/departments/police-roads-and-transport
+    vote_number: 10
+  - name: Agriculture and Rural Development
+    slug: agriculture-and-rural-development
+    url_path: /2016-17/provincial/free-state/departments/agriculture-and-rural-development
+    vote_number: 11
+  - name: Sport, Arts, Culture and Recreation
+    slug: sport-arts-culture-and-recreation
+    url_path: /2016-17/provincial/free-state/departments/sport-arts-culture-and-recreation
+    vote_number: 12
+  - name: Human Settlements
+    slug: human-settlements
+    url_path: /2016-17/provincial/free-state/departments/human-settlements
+    vote_number: 13
+  name: Free State
+  slug: free-state
+- departments:
+  - name: Office of the Premier
+    slug: office-of-the-premier
+    url_path: /2016-17/provincial/gauteng/departments/office-of-the-premier
+    vote_number: 1
+  - name: Gauteng Provincial Legislature
+    slug: gauteng-provincial-legislature
+    url_path: /2016-17/provincial/gauteng/departments/gauteng-provincial-legislature
+    vote_number: 2
+  - name: Economic Development
+    slug: economic-development
+    url_path: /2016-17/provincial/gauteng/departments/economic-development
+    vote_number: 3
+  - name: Health
+    slug: health
+    url_path: /2016-17/provincial/gauteng/departments/health
+    vote_number: 4
+  - name: Education
+    slug: education
+    url_path: /2016-17/provincial/gauteng/departments/education
+    vote_number: 5
+  - name: Social Development
+    slug: social-development
+    url_path: /2016-17/provincial/gauteng/departments/social-development
+    vote_number: 6
+  - name: Cooperative Governance and Traditional Affairs
+    slug: cooperative-governance-and-traditional-affairs
+    url_path: /2016-17/provincial/gauteng/departments/cooperative-governance-and-traditional-affairs
     vote_number: 7
   - name: Human Settlements
     slug: human-settlements
-    url_path: /2016-17/provincial/western-cape/departments/human-settlements
+    url_path: /2016-17/provincial/gauteng/departments/human-settlements
     vote_number: 8
-  - name: Environmental Affairs and Development Planning
-    slug: environmental-affairs-and-development-planning
-    url_path: /2016-17/provincial/western-cape/departments/environmental-affairs-and-development-planning
+  - name: Roads and Transport
+    slug: roads-and-transport
+    url_path: /2016-17/provincial/gauteng/departments/roads-and-transport
     vote_number: 9
-  - name: Transport and Public Works
-    slug: transport-and-public-works
-    url_path: /2016-17/provincial/western-cape/departments/transport-and-public-works
+  - name: Community Safety
+    slug: community-safety
+    url_path: /2016-17/provincial/gauteng/departments/community-safety
     vote_number: 10
+  - name: Agriculture and Rural Development
+    slug: agriculture-and-rural-development
+    url_path: /2016-17/provincial/gauteng/departments/agriculture-and-rural-development
+    vote_number: 11
+  - name: Sport, Arts, Culture and Recreation
+    slug: sport-arts-culture-and-recreation
+    url_path: /2016-17/provincial/gauteng/departments/sport-arts-culture-and-recreation
+    vote_number: 12
+  - name: E-Government
+    slug: e-government
+    url_path: /2016-17/provincial/gauteng/departments/e-government
+    vote_number: 13
+  - name: Gauteng Provincial Treasury
+    slug: gauteng-provincial-treasury
+    url_path: /2016-17/provincial/gauteng/departments/gauteng-provincial-treasury
+    vote_number: 14
+  - name: Infrastructure Development
+    slug: infrastructure-development
+    url_path: /2016-17/provincial/gauteng/departments/infrastructure-development
+    vote_number: 15
+  name: Gauteng
+  slug: gauteng
+- departments:
+  - name: Office of the Premier
+    slug: office-of-the-premier
+    url_path: /2016-17/provincial/kwazulu-natal/departments/office-of-the-premier
+    vote_number: 1
+  - name: Provincial Legislature
+    slug: provincial-legislature
+    url_path: /2016-17/provincial/kwazulu-natal/departments/provincial-legislature
+    vote_number: 2
+  - name: Agriculture and Rural Development
+    slug: agriculture-and-rural-development
+    url_path: /2016-17/provincial/kwazulu-natal/departments/agriculture-and-rural-development
+    vote_number: 3
+  - name: Economic Development, Tourism and Environmental Affairs
+    slug: economic-development-tourism-and-environmental-affairs
+    url_path: /2016-17/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
+    vote_number: 4
+  - name: Education
+    slug: education
+    url_path: /2016-17/provincial/kwazulu-natal/departments/education
+    vote_number: 5
+  - name: Provincial Treasury
+    slug: provincial-treasury
+    url_path: /2016-17/provincial/kwazulu-natal/departments/provincial-treasury
+    vote_number: 6
+  - name: Health
+    slug: health
+    url_path: /2016-17/provincial/kwazulu-natal/departments/health
+    vote_number: 7
+  - name: Human Settlements
+    slug: human-settlements
+    url_path: /2016-17/provincial/kwazulu-natal/departments/human-settlements
+    vote_number: 8
+  - name: Community Safety and Liaison
+    slug: community-safety-and-liaison
+    url_path: /2016-17/provincial/kwazulu-natal/departments/community-safety-and-liaison
+    vote_number: 9
+  - name: Sport and Recreation
+    slug: sport-and-recreation
+    url_path: /2016-17/provincial/kwazulu-natal/departments/sport-and-recreation
+    vote_number: 10
+  - name: Co-operative Governance and Traditional Affairs
+    slug: co-operative-governance-and-traditional-affairs
+    url_path: /2016-17/provincial/kwazulu-natal/departments/co-operative-governance-and-traditional-affairs
+    vote_number: 11
+  - name: Transport
+    slug: transport
+    url_path: /2016-17/provincial/kwazulu-natal/departments/transport
+    vote_number: 12
+  - name: Social Development
+    slug: social-development
+    url_path: /2016-17/provincial/kwazulu-natal/departments/social-development
+    vote_number: 13
+  - name: Public Works
+    slug: public-works
+    url_path: /2016-17/provincial/kwazulu-natal/departments/public-works
+    vote_number: 14
+  - name: Arts and Culture
+    slug: arts-and-culture
+    url_path: /2016-17/provincial/kwazulu-natal/departments/arts-and-culture
+    vote_number: 15
+  name: KwaZulu-Natal
+  slug: kwazulu-natal
+- departments:
+  - name: Office of the Premier
+    slug: office-of-the-premier
+    url_path: /2016-17/provincial/limpopo/departments/office-of-the-premier
+    vote_number: 1
+  - name: Provincial Legislature
+    slug: provincial-legislature
+    url_path: /2016-17/provincial/limpopo/departments/provincial-legislature
+    vote_number: 2
+  - name: Education
+    slug: education
+    url_path: /2016-17/provincial/limpopo/departments/education
+    vote_number: 3
   - name: Agriculture
     slug: agriculture
-    url_path: /2016-17/provincial/western-cape/departments/agriculture
+    url_path: /2016-17/provincial/limpopo/departments/agriculture
+    vote_number: 4
+  - name: Provincial Treasury
+    slug: provincial-treasury
+    url_path: /2016-17/provincial/limpopo/departments/provincial-treasury
+    vote_number: 5
+  - name: Economic Development, Environment and Tourism
+    slug: economic-development-environment-and-tourism
+    url_path: /2016-17/provincial/limpopo/departments/economic-development-environment-and-tourism
+    vote_number: 6
+  - name: Health
+    slug: health
+    url_path: /2016-17/provincial/limpopo/departments/health
+    vote_number: 7
+  - name: Transport
+    slug: transport
+    url_path: /2016-17/provincial/limpopo/departments/transport
+    vote_number: 8
+  - name: Public Works, Roads and Infrastructure
+    slug: public-works-roads-and-infrastructure
+    url_path: /2016-17/provincial/limpopo/departments/public-works-roads-and-infrastructure
+    vote_number: 9
+  - name: Safety, Security and Liaison
+    slug: safety-security-and-liaison
+    url_path: /2016-17/provincial/limpopo/departments/safety-security-and-liaison
+    vote_number: 10
+  - name: Co-operative Governance, Human Settlements and Traditional Affairs
+    slug: co-operative-governance-human-settlements-and-traditional-affairs
+    url_path: /2016-17/provincial/limpopo/departments/co-operative-governance-human-settlements-and-traditional-affairs
     vote_number: 11
-  - name: Economic Development and Tourism
-    slug: economic-development-and-tourism
-    url_path: /2016-17/provincial/western-cape/departments/economic-development-and-tourism
+  - name: Social Development
+    slug: social-development
+    url_path: /2016-17/provincial/limpopo/departments/social-development
     vote_number: 12
-  - name: Cultural Affairs and Sport
-    slug: cultural-affairs-and-sport
-    url_path: /2016-17/provincial/western-cape/departments/cultural-affairs-and-sport
+  - name: Sport, Arts and Culture
+    slug: sport-arts-and-culture
+    url_path: /2016-17/provincial/limpopo/departments/sport-arts-and-culture
     vote_number: 13
-  - name: Local Government
-    slug: local-government
-    url_path: /2016-17/provincial/western-cape/departments/local-government
-    vote_number: 14
-  name: Western Cape
-  slug: western-cape
+  name: Limpopo
+  slug: limpopo
+- departments:
+  - name: Office of the Premier
+    slug: office-of-the-premier
+    url_path: /2016-17/provincial/mpumalanga/departments/office-of-the-premier
+    vote_number: 1
+  - name: Provincial Legislature
+    slug: provincial-legislature
+    url_path: /2016-17/provincial/mpumalanga/departments/provincial-legislature
+    vote_number: 2
+  - name: Provincial Treasury
+    slug: provincial-treasury
+    url_path: /2016-17/provincial/mpumalanga/departments/provincial-treasury
+    vote_number: 3
+  - name: Co-operative Governance and Traditional Affairs
+    slug: co-operative-governance-and-traditional-affairs
+    url_path: /2016-17/provincial/mpumalanga/departments/co-operative-governance-and-traditional-affairs
+    vote_number: 4
+  - name: Agriculture, Rural Development, Land and Environmental Affairs
+    slug: agriculture-rural-development-land-and-environmental-affairs
+    url_path: /2016-17/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
+    vote_number: 5
+  - name: Economic Development And Tourism
+    slug: economic-development-and-tourism
+    url_path: /2016-17/provincial/mpumalanga/departments/economic-development-and-tourism
+    vote_number: 6
+  - name: Education
+    slug: education
+    url_path: /2016-17/provincial/mpumalanga/departments/education
+    vote_number: 7
+  - name: Public Works, Roads and Transport
+    slug: public-works-roads-and-transport
+    url_path: /2016-17/provincial/mpumalanga/departments/public-works-roads-and-transport
+    vote_number: 8
+  - name: Community Safety, Security and Liaison
+    slug: community-safety-security-and-liaison
+    url_path: /2016-17/provincial/mpumalanga/departments/community-safety-security-and-liaison
+    vote_number: 9
+  - name: Health
+    slug: health
+    url_path: /2016-17/provincial/mpumalanga/departments/health
+    vote_number: 10
+  - name: Culture, Sport and Recreation
+    slug: culture-sport-and-recreation
+    url_path: /2016-17/provincial/mpumalanga/departments/culture-sport-and-recreation
+    vote_number: 11
+  - name: Social Development
+    slug: social-development
+    url_path: /2016-17/provincial/mpumalanga/departments/social-development
+    vote_number: 12
+  - name: Human Settlements
+    slug: human-settlements
+    url_path: /2016-17/provincial/mpumalanga/departments/human-settlements
+    vote_number: 13
+  name: Mpumalanga
+  slug: mpumalanga
 - departments:
   - name: Office of the Premier
     slug: office-of-the-premier
@@ -360,355 +651,64 @@ provincial:
   name: North West
   slug: north-west
 - departments:
-  - name: Office of the Premier
-    slug: office-of-the-premier
-    url_path: /2016-17/provincial/mpumalanga/departments/office-of-the-premier
-    vote_number: 1
-  - name: Provincial Legislature
-    slug: provincial-legislature
-    url_path: /2016-17/provincial/mpumalanga/departments/provincial-legislature
-    vote_number: 2
-  - name: Provincial Treasury
-    slug: provincial-treasury
-    url_path: /2016-17/provincial/mpumalanga/departments/provincial-treasury
-    vote_number: 3
-  - name: Co-operative Governance and Traditional Affairs
-    slug: co-operative-governance-and-traditional-affairs
-    url_path: /2016-17/provincial/mpumalanga/departments/co-operative-governance-and-traditional-affairs
-    vote_number: 4
-  - name: Agriculture, Rural Development, Land and Environmental Affairs
-    slug: agriculture-rural-development-land-and-environmental-affairs
-    url_path: /2016-17/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
-    vote_number: 5
-  - name: Economic Development And Tourism
-    slug: economic-development-and-tourism
-    url_path: /2016-17/provincial/mpumalanga/departments/economic-development-and-tourism
-    vote_number: 6
-  - name: Education
-    slug: education
-    url_path: /2016-17/provincial/mpumalanga/departments/education
-    vote_number: 7
-  - name: Public Works, Roads and Transport
-    slug: public-works-roads-and-transport
-    url_path: /2016-17/provincial/mpumalanga/departments/public-works-roads-and-transport
-    vote_number: 8
-  - name: Community Safety, Security and Liaison
-    slug: community-safety-security-and-liaison
-    url_path: /2016-17/provincial/mpumalanga/departments/community-safety-security-and-liaison
-    vote_number: 9
-  - name: Health
-    slug: health
-    url_path: /2016-17/provincial/mpumalanga/departments/health
-    vote_number: 10
-  - name: Culture, Sport and Recreation
-    slug: culture-sport-and-recreation
-    url_path: /2016-17/provincial/mpumalanga/departments/culture-sport-and-recreation
-    vote_number: 11
-  - name: Social Development
-    slug: social-development
-    url_path: /2016-17/provincial/mpumalanga/departments/social-development
-    vote_number: 12
-  - name: Human Settlements
-    slug: human-settlements
-    url_path: /2016-17/provincial/mpumalanga/departments/human-settlements
-    vote_number: 13
-  name: Mpumalanga
-  slug: mpumalanga
-- departments:
-  - name: Office of the Premier
-    slug: office-of-the-premier
-    url_path: /2016-17/provincial/limpopo/departments/office-of-the-premier
-    vote_number: 1
-  - name: Provincial Legislature
-    slug: provincial-legislature
-    url_path: /2016-17/provincial/limpopo/departments/provincial-legislature
-    vote_number: 2
-  - name: Education
-    slug: education
-    url_path: /2016-17/provincial/limpopo/departments/education
-    vote_number: 3
-  - name: Agriculture
-    slug: agriculture
-    url_path: /2016-17/provincial/limpopo/departments/agriculture
-    vote_number: 4
-  - name: Provincial Treasury
-    slug: provincial-treasury
-    url_path: /2016-17/provincial/limpopo/departments/provincial-treasury
-    vote_number: 5
-  - name: Economic Development, Environment and Tourism
-    slug: economic-development-environment-and-tourism
-    url_path: /2016-17/provincial/limpopo/departments/economic-development-environment-and-tourism
-    vote_number: 6
-  - name: Health
-    slug: health
-    url_path: /2016-17/provincial/limpopo/departments/health
-    vote_number: 7
-  - name: Transport
-    slug: transport
-    url_path: /2016-17/provincial/limpopo/departments/transport
-    vote_number: 8
-  - name: Public Works, Roads and Infrastructure
-    slug: public-works-roads-and-infrastructure
-    url_path: /2016-17/provincial/limpopo/departments/public-works-roads-and-infrastructure
-    vote_number: 9
-  - name: Safety, Security and Liaison
-    slug: safety-security-and-liaison
-    url_path: /2016-17/provincial/limpopo/departments/safety-security-and-liaison
-    vote_number: 10
-  - name: Co-operative Governance, Human Settlements and Traditional Affairs
-    slug: co-operative-governance-human-settlements-and-traditional-affairs
-    url_path: /2016-17/provincial/limpopo/departments/co-operative-governance-human-settlements-and-traditional-affairs
-    vote_number: 11
-  - name: Social Development
-    slug: social-development
-    url_path: /2016-17/provincial/limpopo/departments/social-development
-    vote_number: 12
-  - name: Sport, Arts and Culture
-    slug: sport-arts-and-culture
-    url_path: /2016-17/provincial/limpopo/departments/sport-arts-and-culture
-    vote_number: 13
-  name: Limpopo
-  slug: limpopo
-- departments:
-  - name: Office of the Premier
-    slug: office-of-the-premier
-    url_path: /2016-17/provincial/kwazulu-natal/departments/office-of-the-premier
-    vote_number: 1
-  - name: Provincial Legislature
-    slug: provincial-legislature
-    url_path: /2016-17/provincial/kwazulu-natal/departments/provincial-legislature
-    vote_number: 2
-  - name: Agriculture and Rural Development
-    slug: agriculture-and-rural-development
-    url_path: /2016-17/provincial/kwazulu-natal/departments/agriculture-and-rural-development
-    vote_number: 3
-  - name: Economic Development, Tourism and Environmental Affairs
-    slug: economic-development-tourism-and-environmental-affairs
-    url_path: /2016-17/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
-    vote_number: 4
-  - name: Education
-    slug: education
-    url_path: /2016-17/provincial/kwazulu-natal/departments/education
-    vote_number: 5
-  - name: Provincial Treasury
-    slug: provincial-treasury
-    url_path: /2016-17/provincial/kwazulu-natal/departments/provincial-treasury
-    vote_number: 6
-  - name: Health
-    slug: health
-    url_path: /2016-17/provincial/kwazulu-natal/departments/health
-    vote_number: 7
-  - name: Human Settlements
-    slug: human-settlements
-    url_path: /2016-17/provincial/kwazulu-natal/departments/human-settlements
-    vote_number: 8
-  - name: Community Safety and Liaison
-    slug: community-safety-and-liaison
-    url_path: /2016-17/provincial/kwazulu-natal/departments/community-safety-and-liaison
-    vote_number: 9
-  - name: Sport and Recreation
-    slug: sport-and-recreation
-    url_path: /2016-17/provincial/kwazulu-natal/departments/sport-and-recreation
-    vote_number: 10
-  - name: Co-operative Governance and Traditional Affairs
-    slug: co-operative-governance-and-traditional-affairs
-    url_path: /2016-17/provincial/kwazulu-natal/departments/co-operative-governance-and-traditional-affairs
-    vote_number: 11
-  - name: Transport
-    slug: transport
-    url_path: /2016-17/provincial/kwazulu-natal/departments/transport
-    vote_number: 12
-  - name: Social Development
-    slug: social-development
-    url_path: /2016-17/provincial/kwazulu-natal/departments/social-development
-    vote_number: 13
-  - name: Public Works
-    slug: public-works
-    url_path: /2016-17/provincial/kwazulu-natal/departments/public-works
-    vote_number: 14
-  - name: Arts and Culture
-    slug: arts-and-culture
-    url_path: /2016-17/provincial/kwazulu-natal/departments/arts-and-culture
-    vote_number: 15
-  name: KwaZulu-Natal
-  slug: kwazulu-natal
-- departments:
-  - name: Office of the Premier
-    slug: office-of-the-premier
-    url_path: /2016-17/provincial/gauteng/departments/office-of-the-premier
-    vote_number: 1
-  - name: Gauteng Provincial Legislature
-    slug: gauteng-provincial-legislature
-    url_path: /2016-17/provincial/gauteng/departments/gauteng-provincial-legislature
-    vote_number: 2
-  - name: Economic Development
-    slug: economic-development
-    url_path: /2016-17/provincial/gauteng/departments/economic-development
-    vote_number: 3
-  - name: Health
-    slug: health
-    url_path: /2016-17/provincial/gauteng/departments/health
-    vote_number: 4
-  - name: Education
-    slug: education
-    url_path: /2016-17/provincial/gauteng/departments/education
-    vote_number: 5
-  - name: Social Development
-    slug: social-development
-    url_path: /2016-17/provincial/gauteng/departments/social-development
-    vote_number: 6
-  - name: Cooperative Governance and Traditional Affairs
-    slug: cooperative-governance-and-traditional-affairs
-    url_path: /2016-17/provincial/gauteng/departments/cooperative-governance-and-traditional-affairs
-    vote_number: 7
-  - name: Human Settlements
-    slug: human-settlements
-    url_path: /2016-17/provincial/gauteng/departments/human-settlements
-    vote_number: 8
-  - name: Roads and Transport
-    slug: roads-and-transport
-    url_path: /2016-17/provincial/gauteng/departments/roads-and-transport
-    vote_number: 9
-  - name: Community Safety
-    slug: community-safety
-    url_path: /2016-17/provincial/gauteng/departments/community-safety
-    vote_number: 10
-  - name: Agriculture and Rural Development
-    slug: agriculture-and-rural-development
-    url_path: /2016-17/provincial/gauteng/departments/agriculture-and-rural-development
-    vote_number: 11
-  - name: Sport, Arts, Culture and Recreation
-    slug: sport-arts-culture-and-recreation
-    url_path: /2016-17/provincial/gauteng/departments/sport-arts-culture-and-recreation
-    vote_number: 12
-  - name: E-Government
-    slug: e-government
-    url_path: /2016-17/provincial/gauteng/departments/e-government
-    vote_number: 13
-  - name: Gauteng Provincial Treasury
-    slug: gauteng-provincial-treasury
-    url_path: /2016-17/provincial/gauteng/departments/gauteng-provincial-treasury
-    vote_number: 14
-  - name: Infrastructure Development
-    slug: infrastructure-development
-    url_path: /2016-17/provincial/gauteng/departments/infrastructure-development
-    vote_number: 15
-  name: Gauteng
-  slug: gauteng
-- departments:
   - name: Premier
     slug: premier
-    url_path: /2016-17/provincial/free-state/departments/premier
+    url_path: /2016-17/provincial/western-cape/departments/premier
     vote_number: 1
-  - name: Free State Legislature
-    slug: free-state-legislature
-    url_path: /2016-17/provincial/free-state/departments/free-state-legislature
+  - name: Provincial Parliament
+    slug: provincial-parliament
+    url_path: /2016-17/provincial/western-cape/departments/provincial-parliament
     vote_number: 2
-  - name: Economic and Small Business Development, Tourism and Environmental Affairs
-    slug: economic-and-small-business-development-tourism-and-environmental-affairs
-    url_path: /2016-17/provincial/free-state/departments/economic-and-small-business-development-tourism-and-environmental-affairs
-    vote_number: 3
   - name: Provincial Treasury
     slug: provincial-treasury
-    url_path: /2016-17/provincial/free-state/departments/provincial-treasury
+    url_path: /2016-17/provincial/western-cape/departments/provincial-treasury
+    vote_number: 3
+  - name: Community Safety
+    slug: community-safety
+    url_path: /2016-17/provincial/western-cape/departments/community-safety
     vote_number: 4
-  - name: Health
-    slug: health
-    url_path: /2016-17/provincial/free-state/departments/health
-    vote_number: 5
   - name: Education
     slug: education
-    url_path: /2016-17/provincial/free-state/departments/education
+    url_path: /2016-17/provincial/western-cape/departments/education
+    vote_number: 5
+  - name: Health
+    slug: health
+    url_path: /2016-17/provincial/western-cape/departments/health
     vote_number: 6
   - name: Social Development
     slug: social-development
-    url_path: /2016-17/provincial/free-state/departments/social-development
+    url_path: /2016-17/provincial/western-cape/departments/social-development
     vote_number: 7
-  - name: Cooperative Governance and Traditional Affairs
-    slug: cooperative-governance-and-traditional-affairs
-    url_path: /2016-17/provincial/free-state/departments/cooperative-governance-and-traditional-affairs
-    vote_number: 8
-  - name: Public Works and Infrastructure
-    slug: public-works-and-infrastructure
-    url_path: /2016-17/provincial/free-state/departments/public-works-and-infrastructure
-    vote_number: 9
-  - name: Police, Roads and Transport
-    slug: police-roads-and-transport
-    url_path: /2016-17/provincial/free-state/departments/police-roads-and-transport
-    vote_number: 10
-  - name: Agriculture and Rural Development
-    slug: agriculture-and-rural-development
-    url_path: /2016-17/provincial/free-state/departments/agriculture-and-rural-development
-    vote_number: 11
-  - name: Sport, Arts, Culture and Recreation
-    slug: sport-arts-culture-and-recreation
-    url_path: /2016-17/provincial/free-state/departments/sport-arts-culture-and-recreation
-    vote_number: 12
   - name: Human Settlements
     slug: human-settlements
-    url_path: /2016-17/provincial/free-state/departments/human-settlements
+    url_path: /2016-17/provincial/western-cape/departments/human-settlements
+    vote_number: 8
+  - name: Environmental Affairs and Development Planning
+    slug: environmental-affairs-and-development-planning
+    url_path: /2016-17/provincial/western-cape/departments/environmental-affairs-and-development-planning
+    vote_number: 9
+  - name: Transport and Public Works
+    slug: transport-and-public-works
+    url_path: /2016-17/provincial/western-cape/departments/transport-and-public-works
+    vote_number: 10
+  - name: Agriculture
+    slug: agriculture
+    url_path: /2016-17/provincial/western-cape/departments/agriculture
+    vote_number: 11
+  - name: Economic Development and Tourism
+    slug: economic-development-and-tourism
+    url_path: /2016-17/provincial/western-cape/departments/economic-development-and-tourism
+    vote_number: 12
+  - name: Cultural Affairs and Sport
+    slug: cultural-affairs-and-sport
+    url_path: /2016-17/provincial/western-cape/departments/cultural-affairs-and-sport
     vote_number: 13
-  name: Free State
-  slug: free-state
-- departments:
-  - name: Office of the Premier
-    slug: office-of-the-premier
-    url_path: /2016-17/provincial/eastern-cape/departments/office-of-the-premier
-    vote_number: 1
-  - name: Provincial Legislature
-    slug: provincial-legislature
-    url_path: /2016-17/provincial/eastern-cape/departments/provincial-legislature
-    vote_number: 2
-  - name: Health
-    slug: health
-    url_path: /2016-17/provincial/eastern-cape/departments/health
-    vote_number: 3
-  - name: Social Development
-    slug: social-development
-    url_path: /2016-17/provincial/eastern-cape/departments/social-development
-    vote_number: 4
-  - name: Roads and Public Works
-    slug: roads-and-public-works
-    url_path: /2016-17/provincial/eastern-cape/departments/roads-and-public-works
-    vote_number: 5
-  - name: Education
-    slug: education
-    url_path: /2016-17/provincial/eastern-cape/departments/education
-    vote_number: 6
-  - name: Cooperative Governance and Traditional Affairs
-    slug: cooperative-governance-and-traditional-affairs
-    url_path: /2016-17/provincial/eastern-cape/departments/cooperative-governance-and-traditional-affairs
-    vote_number: 7
-  - name: Rural Development and Agrarian Reform
-    slug: rural-development-and-agrarian-reform
-    url_path: /2016-17/provincial/eastern-cape/departments/rural-development-and-agrarian-reform
-    vote_number: 8
-  - name: Economic Development, Environmental Affairs and Tourism
-    slug: economic-development-environmental-affairs-and-tourism
-    url_path: /2016-17/provincial/eastern-cape/departments/economic-development-environmental-affairs-and-tourism
-    vote_number: 9
-  - name: Transport
-    slug: transport
-    url_path: /2016-17/provincial/eastern-cape/departments/transport
-    vote_number: 10
-  - name: Human Settlements
-    slug: human-settlements
-    url_path: /2016-17/provincial/eastern-cape/departments/human-settlements
-    vote_number: 11
-  - name: Provincial Treasury
-    slug: provincial-treasury
-    url_path: /2016-17/provincial/eastern-cape/departments/provincial-treasury
-    vote_number: 12
-  - name: Sport, Recreation, Arts and Culture
-    slug: sport-recreation-arts-and-culture
-    url_path: /2016-17/provincial/eastern-cape/departments/sport-recreation-arts-and-culture
+  - name: Local Government
+    slug: local-government
+    url_path: /2016-17/provincial/western-cape/departments/local-government
     vote_number: 14
-  - name: Safety and Liaison
-    slug: safety-and-liaison
-    url_path: /2016-17/provincial/eastern-cape/departments/safety-and-liaison
-    vote_number: 15
-  name: Eastern Cape
-  slug: eastern-cape
+  name: Western Cape
+  slug: western-cape
 selected_financial_year: 2016-17
 selected_tab: departments
 slug: departments
