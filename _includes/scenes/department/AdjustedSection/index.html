@@ -28,8 +28,14 @@
       </div>
 
       <p class="js-tooltips">
-        These charts show changes to the spending plans originally published in the {{ include.source_type}}. These changes are published in the {{ include.source_type_adjusted }}.
+        These charts show changes to the spending plans originally published in the {{ include.source_type}}. Details of these changes are published in the {{ include.source_type_adjusted }}.
       </p>
+
+      {% if include.items.special_appropriation %}
+        <p class="js-tooltips">
+          Special appropriations are not included in the Adjustment Appropriations. Special appropriations passed before the adjusted budget are included in the dataset.
+        </p>
+      {% endif %}
 
       <ul class="LinksList">
         {%
@@ -129,7 +135,7 @@
           {% if include.items.special_appropriation %}
             <div class="AdjustedSection-indicator">
               <div class="Title Title--interSection u-marginBottom10">
-                Total adjustments
+                Special Appropriation
               </div>
     
               {%
