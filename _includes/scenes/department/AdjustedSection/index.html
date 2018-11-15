@@ -37,6 +37,12 @@
         </p>
       {% endif %}
 
+      {% if include.parliament == "true" %}
+        <p class="js-tooltips">
+          Amendments to Parliaments' budget are determined independently of the national government's budget processes in accordance with the Financial Management of Parliament and Provincial Legislatures Act, (2009) as amended.
+        </p>
+      {% endif %}
+
       <ul class="LinksList">
         {%
           include components/LinksList/item.html
