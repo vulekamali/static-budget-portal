@@ -70,6 +70,11 @@ layout: page-shell
   link_3="#section-review"
 %}
 
+{% if page_data.sphere.slug == "national" and page_data.slug == "parliament" %}
+  {% assign parliament = "true" %}
+{% else %}
+  {% assign parliament = "false" %}
+{% endif %}
 
 {% assign subtitle = department_location | append: " " | append: page_data.name | append: " Department Budget " | append: page.financial_year %}
 
@@ -336,6 +341,7 @@ layout: page-shell
           pdf_adjusted=pdf_link_adjusted
           excel_adjusted=excel_link_adjusted
 
+          parliament=parliament
           title="Programme budgets"
           subtitle=subtitle
           description="Activities of this department"
