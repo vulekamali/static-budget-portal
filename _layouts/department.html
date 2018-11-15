@@ -157,7 +157,7 @@ layout: page-shell
     {% if page_data.programmes %}
       <div class="u-marginBottom60">
         {%
-          include scenes/department/AdvancedChartSection/index.html
+          include scenes/department/ProgrammesSection/index.html
           type="programmes"
           items=page_data.programmes.programme_budgets
 
@@ -178,7 +178,7 @@ layout: page-shell
     {% if page_data.subprogramme_by_programme %}
       <div class="u-marginBottom60">
         {%
-          include scenes/department/BasicChartSection/index.html
+          include scenes/department/SmallMultiplesSection/index.html
           id="subprogramme-by-programme"
 
           title="Budgeted spending by sub-programme for each programme"
@@ -200,7 +200,7 @@ layout: page-shell
     {% if page_data.economic_classification_by_programme.programmes %}
       <div class="u-marginBottom60">
         {%
-          include scenes/department/BasicChartSection/index.html
+          include scenes/department/SmallMultiplesSection/index.html
           id="economic-classification-by-programme"
 
           title="Budgeted spending by Economic Classification for each programme"
@@ -222,7 +222,7 @@ layout: page-shell
     {% if page_data.programme_by_economic_classification.econ_classes %}
       <div class="u-marginBottom60">
         {%
-          include scenes/department/BasicChartSection/index.html
+          include scenes/department/SmallMultiplesSection/index.html
           id="programmes-by-economic-classification"
 
           title="Budgeted spending by programme for Economic Classification items"
@@ -249,7 +249,7 @@ layout: page-shell
     {% assign text2 = "View tables in the " | append:  source_type_adjusted_short | append: "chapter (Excel)." %}
 
     {% if pdf_link_adjusted or excel_link_adjusted %}  
-      <ul class="LinksList">
+      <ul class="LinksList u-marginBottom60">
         {%
           include components/LinksList/item.html
           text=text1
@@ -270,7 +270,7 @@ layout: page-shell
     {% assign info3 = "The tables in " | append: source_type_revenue_short | append: " chapter (Excel)" %}
 
     {% if pdf_link_adjusted == null and excel_link_adjusted == null %}
-      <div class="Message Message--secondary u-marginBottom20">
+      <div class="Message Message--secondary u-marginBottom60 ">
         <div class="Message-content">
           {%
             include components/universal/Icon/index.html
@@ -321,7 +321,7 @@ layout: page-shell
     {% if page_data.government.slug == 'south-africa' %}
       <div class="u-marginBottom60">
         {%
-          include scenes/department/AdvancedChartSection/index.html
+          include scenes/department/AdjustedSection/index.html
           
           type="adjusted"
           items=page_data.adjusted_budget_summary
@@ -375,7 +375,7 @@ layout: page-shell
     {% if page_data.expenditure_over_time %}
       <div class="u-marginBottom60 u-marginTop15">
         {%
-          include scenes/department/AdvancedChartSection/index.html
+          include scenes/department/ExpenditureSection/index.html
           items=page_data.expenditure_over_time.expenditure
           type="expenditure"
 
