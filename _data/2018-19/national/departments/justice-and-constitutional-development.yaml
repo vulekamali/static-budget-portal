@@ -11,24 +11,6 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: 13410000
-      name: Compensation of employees
-      type: economic_classification_3
-    - amount: 396945000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: 3090000
-      name: Buildings and other fixed structures
-      type: economic_classification_3
-    - amount: -46214000
-      name: Machinery and equipment
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
-  - items:
     - amount: 36559000
       name: Departmental agencies and accounts
       type: economic_classification_3
@@ -46,6 +28,21 @@ adjusted_budget_summary:
       type: economic_classification_3
     name: Payments for financial assets
     type: economic_classification_2
+  - items:
+    - amount: 13410000
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: 396945000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 3090000
+      name: Buildings and other fixed structures
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
   programmes:
   - amount: 384741000
     name: Administration
@@ -57,7 +54,7 @@ adjusted_budget_summary:
     name: State Legal Services
   special_appropriation: null
   total_change:
-    amount: 409403000
+    amount: 17458829000
     percentage: 2.4
   virements:
     amount: 97835000

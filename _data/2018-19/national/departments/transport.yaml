@@ -11,20 +11,11 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: 0
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
     - amount: 3000000000
       name: Departmental agencies and accounts
       type: economic_classification_3
     - amount: 33000000
       name: Provinces and municipalities
-      type: economic_classification_3
-    - amount: -3000000000
-      name: Public corporations and private enterprises
       type: economic_classification_3
     name: Transfers and subsidies
     type: economic_classification_2
@@ -37,7 +28,7 @@ adjusted_budget_summary:
     name: Road Transport
   special_appropriation: null
   total_change:
-    amount: 33000000
+    amount: 59831294000
     percentage: 0.06
   virements:
     amount: 10040858000

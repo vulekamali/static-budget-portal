@@ -11,21 +11,6 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: 15000000
-      name: Compensation of employees
-      type: economic_classification_3
-    - amount: -276000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: 0
-      name: Machinery and equipment
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
-  - items:
     - amount: 2276000
       name: Households
       type: economic_classification_3
@@ -33,6 +18,12 @@ adjusted_budget_summary:
       name: Public corporations and private enterprises
       type: economic_classification_3
     name: Transfers and subsidies
+    type: economic_classification_2
+  - items:
+    - amount: 15000000
+      name: Compensation of employees
+      type: economic_classification_3
+    name: Current payments
     type: economic_classification_2
   programmes:
   - amount: 24020000
@@ -45,7 +36,7 @@ adjusted_budget_summary:
     name: Nuclear Energy
   special_appropriation: null
   total_change:
-    amount: 31972000
+    amount: 8145422000
     percentage: 0.39
   virements:
     amount: 32076000

@@ -22,15 +22,6 @@ adjusted_budget_summary:
       type: economic_classification_3
     name: Payments for capital assets
     type: economic_classification_2
-  - items:
-    - amount: -14026000
-      name: Departmental agencies and accounts
-      type: economic_classification_3
-    - amount: 0
-      name: Public corporations and private enterprises
-      type: economic_classification_3
-    name: Transfers and subsidies
-    type: economic_classification_2
   programmes:
   - amount: 214000
     name: Administration
@@ -48,7 +39,7 @@ adjusted_budget_summary:
     name: Road Transport
   special_appropriation: null
   total_change:
-    amount: 0
+    amount: 59795180000
     percentage: 0.0
   virements:
     amount: 405123000

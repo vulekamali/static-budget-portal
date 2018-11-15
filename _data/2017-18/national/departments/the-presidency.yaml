@@ -11,15 +11,6 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: -150000
-      name: Compensation of employees
-      type: economic_classification_3
-    - amount: -5000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
     - amount: 6150000
       name: Households
       type: economic_classification_3
@@ -35,7 +26,7 @@ adjusted_budget_summary:
     name: Executive Support
   special_appropriation: null
   total_change:
-    amount: 6000000
+    amount: 501169000
     percentage: 1.21
   virements:
     amount: 655000

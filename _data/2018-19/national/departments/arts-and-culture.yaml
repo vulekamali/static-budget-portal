@@ -14,29 +14,8 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: -9600000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: -108885000
-      name: Heritage assets
-      type: economic_classification_3
-    - amount: 9473000
-      name: Machinery and equipment
-      type: economic_classification_3
-    - amount: -6267000
-      name: Software and other intangible assets
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
-  - items:
     - amount: 88277000
       name: Departmental agencies and accounts
-      type: economic_classification_3
-    - amount: -1687000
-      name: Higher education institutions
       type: economic_classification_3
     - amount: 2941000
       name: Households
@@ -44,10 +23,13 @@ adjusted_budget_summary:
     - amount: 33527000
       name: Non-profit institutions
       type: economic_classification_3
-    - amount: -41306000
-      name: Public corporations and private enterprises
-      type: economic_classification_3
     name: Transfers and subsidies
+    type: economic_classification_2
+  - items:
+    - amount: 9473000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
     type: economic_classification_2
   programmes:
   - amount: 9473000
@@ -60,7 +42,7 @@ adjusted_budget_summary:
     name: Institutional Governance
   special_appropriation: null
   total_change:
-    amount: -33527000
+    amount: 4338737000
     percentage: -0.77
   virements:
     amount: 175274000

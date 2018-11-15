@@ -11,26 +11,17 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: 0
-      name: Compensation of employees
-      type: economic_classification_3
     - amount: 141314000
       name: Goods and services
       type: economic_classification_3
     name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: -291314000
-      name: Software and other intangible assets
-      type: economic_classification_3
-    name: Payments for capital assets
     type: economic_classification_2
   programmes:
   - amount: -150000000
     name: Detective Services
   special_appropriation: null
   total_change:
-    amount: -150000000
+    amount: 91684161000
     percentage: -0.16
   virements:
     amount: 291314000

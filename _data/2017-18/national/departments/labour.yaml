@@ -11,13 +11,10 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: -11735000
-      name: Compensation of employees
+    - amount: 1735000
+      name: Households
       type: economic_classification_3
-    - amount: -18616000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
+    name: Transfers and subsidies
     type: economic_classification_2
   - items:
     - amount: 18556000
@@ -27,12 +24,6 @@ adjusted_budget_summary:
       name: Software and other intangible assets
       type: economic_classification_3
     name: Payments for capital assets
-    type: economic_classification_2
-  - items:
-    - amount: 1735000
-      name: Households
-      type: economic_classification_3
-    name: Transfers and subsidies
     type: economic_classification_2
   programmes:
   - amount: 2229000
@@ -45,7 +36,7 @@ adjusted_budget_summary:
     name: Public Employment Services
   special_appropriation: null
   total_change:
-    amount: -10000000
+    amount: 3055821000
     percentage: -0.33
   virements:
     amount: 24080000

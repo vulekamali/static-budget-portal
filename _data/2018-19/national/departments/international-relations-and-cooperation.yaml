@@ -8,25 +8,16 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: 0
-      name: Compensation of employees
+    - amount: 8201000
+      name: Households
       type: economic_classification_3
-    - amount: -8231000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
+    name: Transfers and subsidies
     type: economic_classification_2
   - items:
     - amount: 30000
       name: Machinery and equipment
       type: economic_classification_3
     name: Payments for capital assets
-    type: economic_classification_2
-  - items:
-    - amount: 8201000
-      name: Households
-      type: economic_classification_3
-    name: Transfers and subsidies
     type: economic_classification_2
   programmes:
   - amount: -16125000
@@ -39,7 +30,7 @@ adjusted_budget_summary:
     name: Public Diplomacy and Protocol Services
   special_appropriation: null
   total_change:
-    amount: 0
+    amount: 6552768000
     percentage: 0.0
   virements:
     amount: 65137000

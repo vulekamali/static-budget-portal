@@ -8,28 +8,16 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: -9275000
-      name: Compensation of employees
-      type: economic_classification_3
-    - amount: 8984000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: -212000
-      name: Machinery and equipment
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
-  - items:
-    - amount: -44000
-      name: Departmental agencies and accounts
-      type: economic_classification_3
     - amount: 547000
       name: Households
       type: economic_classification_3
     name: Transfers and subsidies
+    type: economic_classification_2
+  - items:
+    - amount: 8984000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
     type: economic_classification_2
   programmes:
   - amount: 301000
@@ -38,7 +26,7 @@ adjusted_budget_summary:
     name: Investigation and Information Management
   special_appropriation: null
   total_change:
-    amount: 0
+    amount: 255482000
     percentage: 0.0
   virements:
     amount: 9803000

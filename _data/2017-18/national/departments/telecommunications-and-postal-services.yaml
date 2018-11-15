@@ -14,28 +14,22 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: 6500000
-      name: Compensation of employees
-      type: economic_classification_3
-    - amount: -146395000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: -1534000
-      name: Machinery and equipment
-      type: economic_classification_3
-    - amount: 1600000
-      name: Software and other intangible assets
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
-  - items:
     - amount: 3700000000
       name: Payments for financial assets
       type: economic_classification_3
     name: Payments for financial assets
+    type: economic_classification_2
+  - items:
+    - amount: 6500000
+      name: Compensation of employees
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 1600000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
     type: economic_classification_2
   programmes:
   - amount: 3888000
@@ -50,7 +44,7 @@ adjusted_budget_summary:
     name: Policy, Research and Capacity Development
   special_appropriation: null
   total_change:
-    amount: 3560171000
+    amount: 5174377000
     percentage: 220.55
   virements:
     amount: 17892000

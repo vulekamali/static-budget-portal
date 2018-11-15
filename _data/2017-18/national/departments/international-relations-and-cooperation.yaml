@@ -14,9 +14,6 @@ adjusted_budget_summary:
     - amount: 108000000
       name: Compensation of employees
       type: economic_classification_3
-    - amount: -319543000
-      name: Goods and services
-      type: economic_classification_3
     - amount: 27449000
       name: Interest and rent on land
       type: economic_classification_3
@@ -31,12 +28,6 @@ adjusted_budget_summary:
       type: economic_classification_3
     name: Payments for capital assets
     type: economic_classification_2
-  - items:
-    - amount: -9240000
-      name: Departmental agencies and accounts
-      type: economic_classification_3
-    name: Transfers and subsidies
-    type: economic_classification_2
   programmes:
   - amount: -75317000
     name: International Cooperation
@@ -48,7 +39,7 @@ adjusted_budget_summary:
     name: Public Diplomacy and Protocol Services
   special_appropriation: null
   total_change:
-    amount: -166540000
+    amount: 6408339000
     percentage: -2.53
   virements:
     amount: 206470000

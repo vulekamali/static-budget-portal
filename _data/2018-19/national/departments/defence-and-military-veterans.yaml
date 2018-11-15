@@ -11,25 +11,16 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: -182000000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: 0
-      name: Machinery and equipment
-      type: economic_classification_3
-    - amount: 182000000
-      name: Software and other intangible assets
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
-  - items:
     - amount: 546492000
       name: Departmental agencies and accounts
       type: economic_classification_3
     name: Transfers and subsidies
+    type: economic_classification_2
+  - items:
+    - amount: 182000000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
     type: economic_classification_2
   programmes:
   - amount: 104346000
@@ -44,7 +35,7 @@ adjusted_budget_summary:
     name: Maritime Defence
   special_appropriation: null
   total_change:
-    amount: 546492000
+    amount: 48496235000
     percentage: 1.14
   virements:
     amount: 331436000

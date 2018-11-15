@@ -17,27 +17,6 @@ adjusted_budget_summary:
     percentage: 6.78
   econ_classes:
   - items:
-    - amount: -4700000
-      name: Compensation of employees
-      type: economic_classification_3
-    - amount: -6592000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: 1400000
-      name: Buildings and other fixed structures
-      type: economic_classification_3
-    - amount: 3808000
-      name: Machinery and equipment
-      type: economic_classification_3
-    - amount: 24000
-      name: Software and other intangible assets
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
-  - items:
     - amount: 103430000
       name: Higher education institutions
       type: economic_classification_3
@@ -51,6 +30,18 @@ adjusted_budget_summary:
       name: Payments for financial assets
       type: economic_classification_3
     name: Payments for financial assets
+    type: economic_classification_2
+  - items:
+    - amount: 1400000
+      name: Buildings and other fixed structures
+      type: economic_classification_3
+    - amount: 3808000
+      name: Machinery and equipment
+      type: economic_classification_3
+    - amount: 24000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
     type: economic_classification_2
   programmes:
   - amount: 14310000
@@ -67,7 +58,7 @@ adjusted_budget_summary:
     name: University Education
   special_appropriation: null
   total_change:
-    amount: 103430000
+    amount: 73124073000
     percentage: 0.14
   virements:
     amount: 27981000

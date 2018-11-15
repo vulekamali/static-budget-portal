@@ -8,21 +8,6 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: 0
-      name: Compensation of employees
-      type: economic_classification_3
-    - amount: -18383000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: 18050000
-      name: Machinery and equipment
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
-  - items:
     - amount: 2000
       name: Departmental agencies and accounts
       type: economic_classification_3
@@ -34,6 +19,12 @@ adjusted_budget_summary:
       type: economic_classification_3
     name: Transfers and subsidies
     type: economic_classification_2
+  - items:
+    - amount: 18050000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
   programmes:
   - amount: -492000
     name: Administration
@@ -43,7 +34,7 @@ adjusted_budget_summary:
     name: Superior Court Services
   special_appropriation: null
   total_change:
-    amount: 0
+    amount: 1119747000
     percentage: 0.0
   virements:
     amount: 22429000

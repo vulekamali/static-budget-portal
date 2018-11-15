@@ -11,13 +11,13 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: -2223000
-      name: Compensation of employees
+    - amount: 6169000
+      name: Households
       type: economic_classification_3
-    - amount: -10540000
-      name: Goods and services
+    - amount: 288083000
+      name: Provinces and municipalities
       type: economic_classification_3
-    name: Current payments
+    name: Transfers and subsidies
     type: economic_classification_2
   - items:
     - amount: 1017575000
@@ -31,15 +31,6 @@ adjusted_budget_summary:
       type: economic_classification_3
     name: Payments for capital assets
     type: economic_classification_2
-  - items:
-    - amount: 6169000
-      name: Households
-      type: economic_classification_3
-    - amount: 288083000
-      name: Provinces and municipalities
-      type: economic_classification_3
-    name: Transfers and subsidies
-    type: economic_classification_2
   programmes:
   - amount: -53485000
     name: Administration
@@ -51,7 +42,7 @@ adjusted_budget_summary:
     name: Water Sector Regulation
   special_appropriation: null
   total_change:
-    amount: 1302211000
+    amount: 16873729000
     percentage: 8.36
   virements:
     amount: 450085000
