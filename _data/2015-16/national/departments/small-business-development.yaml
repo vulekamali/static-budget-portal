@@ -2,6 +2,7 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary: null
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -33,9 +34,104 @@ description: 'National department: Small Business Development budget data for th
   2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Small%2BBusiness%2BDevelopment%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
-expenditure_over_time: null
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Small%2BBusiness%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 560000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 63465000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 156000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 15032000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Cooperatives Support and Development
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 421000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 935841000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 87713000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Enterprise Development and Entrepreneurship
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 735479000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 841585000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1039548000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1084568000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1103188000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1125186000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1257383000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 1017277663
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1102914262
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1287457399
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1271669668
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1229951293
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1180182836
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1257383000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -78,18 +174,48 @@ is_vote_primary: true
 name: Small Business Development
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Small%2BBusiness%2BDevelopment%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  econ_classes: []
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Small%2BBusiness%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 560000.0
+      type: programme
+    - name: Enterprise Development and Entrepreneurship
+      total_budget: 421000.0
+      type: programme
+    - name: Cooperatives Support and Development
+      total_budget: 156000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Enterprise Development and Entrepreneurship
+      total_budget: 87713000.0
+      type: programme
+    - name: Administration
+      total_budget: 63465000.0
+      type: programme
+    - name: Cooperatives Support and Development
+      total_budget: 15032000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Enterprise Development and Entrepreneurship
+      total_budget: 935841000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Small%2BBusiness%2BDevelopment%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Small%2BBusiness%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
+    total_budget: 64025000.0
   - name: Cooperatives Support and Development
-    total_budget: null
+    total_budget: 15188000.0
   - name: Enterprise Development and Entrepreneurship
-    total_budget: null
+    total_budget: 1023975000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: small-business-development
@@ -98,8 +224,44 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Small%2BBusiness%2BDevelopment%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Small%2BBusiness%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 28221000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 20935000.0
+      type: subprogramme
+    - name: Departmental Management
+      total_budget: 14869000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Cooperatives Development
+      total_budget: 15188000.0
+      type: subprogramme
+    name: Cooperatives Support and Development
+    type: programme
+  - items:
+    - name: Enterprise and Supplier Development
+      total_budget: 644617000.0
+      type: subprogramme
+    - name: Incentives, Grants and Soft Loans
+      total_budget: 322153000.0
+      type: subprogramme
+    - name: Gender, Youth and People with Disabilities Economic Empowerment
+      total_budget: 47929000.0
+      type: subprogramme
+    - name: Entrepreneurship, Intellectual Property and Indigenous Knowledge Systems
+      total_budget: 4652000.0
+      type: subprogramme
+    - name: SMMEs Local Economic Development
+      total_budget: 4624000.0
+      type: subprogramme
+    name: Enterprise Development and Entrepreneurship
+    type: programme
 title: Small Business Development budget 2015-16  - vulekamali
 vote_number: 31
 vote_primary:

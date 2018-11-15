@@ -2,6 +2,7 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary: null
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -33,9 +34,176 @@ description: 'National department: Statistics South Africa budget data for the 2
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Statistics%2BSouth%2BAfrica%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
-expenditure_over_time: null
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Statistics%2BSouth%2BAfrica%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 242505000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 534215000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 14542000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1087000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 213357000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 1000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Economic Statistics
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 640000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 65646000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Methodology, Standards and Research
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 942000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 132533000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 200000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Population and Social Statistics
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 11326000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 542165000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 69000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Statistical Collection and Outreach
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 10572000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 239432000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Statistical Support and Informatics
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 2233000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 233018000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 725000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Survey Operations
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 3674381000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1761652000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1728447000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2242514000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 2245208000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2498904000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 2278021000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 5082219506
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 2308680782
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 2140643703
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 2629375967
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 2503196630
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2621045419
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 2278021000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -76,26 +244,92 @@ is_vote_primary: true
 name: Statistics South Africa
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Statistics%2BSouth%2BAfrica%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  econ_classes: []
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Statistics%2BSouth%2BAfrica%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 242505000.0
+      type: programme
+    - name: Statistical Collection and Outreach
+      total_budget: 11326000.0
+      type: programme
+    - name: Statistical Support and Informatics
+      total_budget: 10572000.0
+      type: programme
+    - name: Survey Operations
+      total_budget: 2233000.0
+      type: programme
+    - name: Economic Statistics
+      total_budget: 1087000.0
+      type: programme
+    - name: Population and Social Statistics
+      total_budget: 942000.0
+      type: programme
+    - name: Methodology, Standards and Research
+      total_budget: 640000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Statistical Collection and Outreach
+      total_budget: 542165000.0
+      type: programme
+    - name: Administration
+      total_budget: 534215000.0
+      type: programme
+    - name: Statistical Support and Informatics
+      total_budget: 239432000.0
+      type: programme
+    - name: Survey Operations
+      total_budget: 233018000.0
+      type: programme
+    - name: Economic Statistics
+      total_budget: 213357000.0
+      type: programme
+    - name: Population and Social Statistics
+      total_budget: 132533000.0
+      type: programme
+    - name: Methodology, Standards and Research
+      total_budget: 65646000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 14542000.0
+      type: programme
+    - name: Survey Operations
+      total_budget: 725000.0
+      type: programme
+    - name: Population and Social Statistics
+      total_budget: 200000.0
+      type: programme
+    - name: Statistical Collection and Outreach
+      total_budget: 69000.0
+      type: programme
+    - name: Economic Statistics
+      total_budget: 1000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Statistics%2BSouth%2BAfrica%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Statistics%2BSouth%2BAfrica%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
+    total_budget: 791262000.0
   - name: Economic Statistics
-    total_budget: null
+    total_budget: 214445000.0
   - name: Population and Social Statistics
-    total_budget: null
+    total_budget: 133675000.0
   - name: Methodology, Standards and Research
-    total_budget: null
+    total_budget: 66286000.0
   - name: Statistical Support and Informatics
-    total_budget: null
+    total_budget: 250004000.0
   - name: Statistical Collection and Outreach
-    total_budget: null
+    total_budget: 553560000.0
   - name: Survey Operations
-    total_budget: null
+    total_budget: 235976000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: statistics-south-africa
@@ -104,8 +338,155 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Statistics%2BSouth%2BAfrica%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Statistics%2BSouth%2BAfrica%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Office Accommodation
+      total_budget: 420031000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 204487000.0
+      type: subprogramme
+    - name: Financial Administration
+      total_budget: 85817000.0
+      type: subprogramme
+    - name: Departmental Management
+      total_budget: 37715000.0
+      type: subprogramme
+    - name: National Statistics System
+      total_budget: 30755000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 12457000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Price Statistics
+      total_budget: 68122000.0
+      type: subprogramme
+    - name: Structural Industry Statistics
+      total_budget: 39866000.0
+      type: subprogramme
+    - name: Short Term Indicators
+      total_budget: 31125000.0
+      type: subprogramme
+    - name: Private Sector Finance Statistics
+      total_budget: 28628000.0
+      type: subprogramme
+    - name: Government Finance Statistics
+      total_budget: 16279000.0
+      type: subprogramme
+    - name: Economic Analysis
+      total_budget: 14597000.0
+      type: subprogramme
+    - name: National Accounts
+      total_budget: 12377000.0
+      type: subprogramme
+    - name: Programme Management for Economic Statistics
+      total_budget: 3451000.0
+      type: subprogramme
+    name: Economic Statistics
+    type: programme
+  - items:
+    - name: Business Register
+      total_budget: 31996000.0
+      type: subprogramme
+    - name: Methodology and Evaluation
+      total_budget: 17694000.0
+      type: subprogramme
+    - name: Survey Standards
+      total_budget: 7079000.0
+      type: subprogramme
+    - name: Policy Research and Analysis
+      total_budget: 5759000.0
+      type: subprogramme
+    - name: Programme Management for Methodology, Standards and Research
+      total_budget: 3758000.0
+      type: subprogramme
+    name: Methodology, Standards and Research
+    type: programme
+  - items:
+    - name: Labour Statistics
+      total_budget: 40468000.0
+      type: subprogramme
+    - name: Poverty and Inequality Statistics
+      total_budget: 37877000.0
+      type: subprogramme
+    - name: Demographic Analysis
+      total_budget: 15320000.0
+      type: subprogramme
+    - name: Social Statistics
+      total_budget: 14439000.0
+      type: subprogramme
+    - name: Health and Vital Statistics
+      total_budget: 11741000.0
+      type: subprogramme
+    - name: Population Statistics
+      total_budget: 9314000.0
+      type: subprogramme
+    - name: Programme Management for Population and Social Statistics
+      total_budget: 4516000.0
+      type: subprogramme
+    name: Population and Social Statistics
+    type: programme
+  - items:
+    - name: Provincial and District Offices
+      total_budget: 496998000.0
+      type: subprogramme
+    - name: Stakeholder Relations and Marketing
+      total_budget: 19940000.0
+      type: subprogramme
+    - name: Corporate Communications
+      total_budget: 17197000.0
+      type: subprogramme
+    - name: International Statistical Development and Cooperation
+      total_budget: 10499000.0
+      type: subprogramme
+    - name: Programme Management for Statistical Collection and Outreach
+      total_budget: 8926000.0
+      type: subprogramme
+    name: Statistical Collection and Outreach
+    type: programme
+  - items:
+    - name: Data Management and Technology
+      total_budget: 120729000.0
+      type: subprogramme
+    - name: Business Modernisation
+      total_budget: 47838000.0
+      type: subprogramme
+    - name: Publication Services
+      total_budget: 28161000.0
+      type: subprogramme
+    - name: Geography Services
+      total_budget: 25732000.0
+      type: subprogramme
+    - name: Geography Frames
+      total_budget: 24634000.0
+      type: subprogramme
+    - name: Programme Management for Statistical Support and Informatics
+      total_budget: 2910000.0
+      type: subprogramme
+    name: Statistical Support and Informatics
+    type: programme
+  - items:
+    - name: Census and Community Survey Operations
+      total_budget: 114516000.0
+      type: subprogramme
+    - name: Corporate Data Processing
+      total_budget: 66669000.0
+      type: subprogramme
+    - name: Household Survey Operations
+      total_budget: 22437000.0
+      type: subprogramme
+    - name: Survey Coordination, Monitoring and Evaluation
+      total_budget: 18437000.0
+      type: subprogramme
+    - name: Programme Management for Survey Operations
+      total_budget: 13917000.0
+      type: subprogramme
+    name: Survey Operations
+    type: programme
 title: Statistics South Africa budget 2015-16  - vulekamali
 vote_number: 12
 vote_primary:

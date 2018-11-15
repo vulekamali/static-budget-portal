@@ -2,6 +2,7 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary: null
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -33,9 +34,119 @@ description: 'National department: Communications budget data for the 2015-16 fi
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Communications%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
-expenditure_over_time: null
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Communications%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 40000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 42374000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 178000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 7719000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Communications Policy, Research and Development
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 304000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1210156000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 9920000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Entity Oversight
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 150000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 10047000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Industry and Capacity Development
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 1018081000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1257918000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1348418000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1295287000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1280888000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1344685000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1418896000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 1408158576
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 1648527128
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 1669986121
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 1518740354
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 1428070150
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1410410507
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 1418896000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -88,20 +199,56 @@ is_vote_primary: true
 name: Communications
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Communications%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  econ_classes: []
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Communications%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Entity Oversight
+      total_budget: 304000.0
+      type: programme
+    - name: Communications Policy, Research and Development
+      total_budget: 178000.0
+      type: programme
+    - name: Industry and Capacity Development
+      total_budget: 150000.0
+      type: programme
+    - name: Administration
+      total_budget: 40000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 42374000.0
+      type: programme
+    - name: Industry and Capacity Development
+      total_budget: 10047000.0
+      type: programme
+    - name: Entity Oversight
+      total_budget: 9920000.0
+      type: programme
+    - name: Communications Policy, Research and Development
+      total_budget: 7719000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Entity Oversight
+      total_budget: 1210156000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Communications%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Communications%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
+    total_budget: 42414000.0
   - name: Communications Policy, Research and Development
-    total_budget: null
+    total_budget: 7897000.0
   - name: Industry and Capacity Development
-    total_budget: null
+    total_budget: 10197000.0
   - name: Entity Oversight
-    total_budget: null
+    total_budget: 1220380000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: communications
@@ -110,8 +257,53 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Communications%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Communications%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Ministry
+      total_budget: 12000000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 11974000.0
+      type: subprogramme
+    - name: Departmental Management
+      total_budget: 9889000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 8551000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Broadcasting Policy
+      total_budget: 7897000.0
+      type: subprogramme
+    name: Communications Policy, Research and Development
+    type: programme
+  - items:
+    - name: Communication and Branding
+      total_budget: 540323000.0
+      type: subprogramme
+    - name: Regulatory Institutions
+      total_budget: 477665000.0
+      type: subprogramme
+    - name: Broadcasting and Community Media
+      total_budget: 200253000.0
+      type: subprogramme
+    - name: Programme Management for Entity Oversight
+      total_budget: 2139000.0
+      type: subprogramme
+    name: Entity Oversight
+    type: programme
+  - items:
+    - name: Enterprise Development
+      total_budget: 6381000.0
+      type: subprogramme
+    - name: Broadcasting Digital Migration
+      total_budget: 3816000.0
+      type: subprogramme
+    name: Industry and Capacity Development
+    type: programme
 title: Communications budget 2015-16  - vulekamali
 vote_number: 3
 vote_primary:

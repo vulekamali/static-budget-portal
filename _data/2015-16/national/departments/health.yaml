@@ -2,6 +2,7 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary: null
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -33,9 +34,167 @@ description: 'National department: Health budget data for the 2015-16 financial 
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Health%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
-expenditure_over_time: null
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 7634000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 447475000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 1969000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1802000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 13900399000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 539943000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 3597000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1397643000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 195679000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Health Regulation and Compliance Management
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 5275762000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 650032000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 12772757000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 460514000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Hospitals, Tertiary Health Services and Human Resource Development
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 2588000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 488157000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 97062000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: National Health Insurance, Health Planning and Systems Enablement
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 2325000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 219779000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 2901000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Primary Health Care Services
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 26212742000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 28282499000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 30228520000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 34325087000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 36468018000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 38923547000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 42337239000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 36256150001
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 37064790275
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 37437359086
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 40246597715
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 40658424424
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 40826051965
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 42337239000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -94,24 +253,93 @@ is_vote_primary: true
 name: Health
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Health%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  econ_classes: []
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Hospitals, Tertiary Health Services and Human Resource Development
+      total_budget: 650032000.0
+      type: programme
+    - name: Administration
+      total_budget: 7634000.0
+      type: programme
+    - name: Health Regulation and Compliance Management
+      total_budget: 3597000.0
+      type: programme
+    - name: National Health Insurance, Health Planning and Systems Enablement
+      total_budget: 2588000.0
+      type: programme
+    - name: Primary Health Care Services
+      total_budget: 2325000.0
+      type: programme
+    - name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+      total_budget: 1802000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Hospitals, Tertiary Health Services and Human Resource Development
+      total_budget: 5275762000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+      total_budget: 539943000.0
+      type: programme
+    - name: National Health Insurance, Health Planning and Systems Enablement
+      total_budget: 488157000.0
+      type: programme
+    - name: Hospitals, Tertiary Health Services and Human Resource Development
+      total_budget: 460514000.0
+      type: programme
+    - name: Administration
+      total_budget: 447475000.0
+      type: programme
+    - name: Primary Health Care Services
+      total_budget: 219779000.0
+      type: programme
+    - name: Health Regulation and Compliance Management
+      total_budget: 195679000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+      total_budget: 13900399000.0
+      type: programme
+    - name: Hospitals, Tertiary Health Services and Human Resource Development
+      total_budget: 12772757000.0
+      type: programme
+    - name: Health Regulation and Compliance Management
+      total_budget: 1397643000.0
+      type: programme
+    - name: National Health Insurance, Health Planning and Systems Enablement
+      total_budget: 97062000.0
+      type: programme
+    - name: Primary Health Care Services
+      total_budget: 2901000.0
+      type: programme
+    - name: Administration
+      total_budget: 1969000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Health%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
+    total_budget: 457078000.0
   - name: National Health Insurance, Health Planning and Systems Enablement
-    total_budget: null
+    total_budget: 587807000.0
   - name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
-    total_budget: null
+    total_budget: 14442144000.0
   - name: Primary Health Care Services
-    total_budget: null
+    total_budget: 225005000.0
   - name: Hospitals, Tertiary Health Services and Human Resource Development
-    total_budget: null
+    total_budget: 19159065000.0
   - name: Health Regulation and Compliance Management
-    total_budget: null
+    total_budget: 1596919000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: health
@@ -120,8 +348,131 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Health%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 213467000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 125810000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 66243000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 31917000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 19641000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: HIV and AIDS
+      total_budget: 14170753000.0
+      type: subprogramme
+    - name: Child, Youth and School Health
+      total_budget: 221190000.0
+      type: subprogramme
+    - name: Tuberculosis
+      total_budget: 27771000.0
+      type: subprogramme
+    - name: Women's Maternal and Reproductive Health
+      total_budget: 18778000.0
+      type: subprogramme
+    - name: Programme Management
+      total_budget: 3652000.0
+      type: subprogramme
+    name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+    type: programme
+  - items:
+    - name: Public Entities Management
+      total_budget: 1399991000.0
+      type: subprogramme
+    - name: Pharmaceutical Trade and Product Regulation
+      total_budget: 124816000.0
+      type: subprogramme
+    - name: Compensation Commissioner for Occupational Diseases and Occupational Health
+      total_budget: 58644000.0
+      type: subprogramme
+    - name: Food Control
+      total_budget: 9798000.0
+      type: subprogramme
+    - name: Programme Management
+      total_budget: 3670000.0
+      type: subprogramme
+    name: Health Regulation and Compliance Management
+    type: programme
+  - items:
+    - name: Tertiary Health Care Planning and Policy
+      total_budget: 10401067000.0
+      type: subprogramme
+    - name: Health Facilities Infrastructure Management
+      total_budget: 6231739000.0
+      type: subprogramme
+    - name: Human Resources for Health
+      total_budget: 2398385000.0
+      type: subprogramme
+    - name: Forensic Chemistry Laboratories
+      total_budget: 107019000.0
+      type: subprogramme
+    - name: Violence, Trauma and EMS
+      total_budget: 7133000.0
+      type: subprogramme
+    - name: Hospital Management
+      total_budget: 5162000.0
+      type: subprogramme
+    - name: Nursing Services
+      total_budget: 4941000.0
+      type: subprogramme
+    - name: Programme Management
+      total_budget: 3619000.0
+      type: subprogramme
+    name: Hospitals, Tertiary Health Services and Human Resource Development
+    type: programme
+  - items:
+    - name: Health Financing and National Health Insurance
+      total_budget: 414388000.0
+      type: subprogramme
+    - name: International Health and Development
+      total_budget: 63521000.0
+      type: subprogramme
+    - name: Health Information Management, Monitoring and Evaluation
+      total_budget: 57280000.0
+      type: subprogramme
+    - name: Sector-wide Procurement
+      total_budget: 29729000.0
+      type: subprogramme
+    - name: Technical Policy and Planning
+      total_budget: 19869000.0
+      type: subprogramme
+    - name: Programme Management
+      total_budget: 3020000.0
+      type: subprogramme
+    name: National Health Insurance, Health Planning and Systems Enablement
+    type: programme
+  - items:
+    - name: Environmental and Port Health Services
+      total_budget: 130095000.0
+      type: subprogramme
+    - name: Non-Communicable Diseases
+      total_budget: 28259000.0
+      type: subprogramme
+    - name: District Health Services
+      total_budget: 24481000.0
+      type: subprogramme
+    - name: Health Promotion and Nutrition
+      total_budget: 22525000.0
+      type: subprogramme
+    - name: Communicable Diseases
+      total_budget: 16550000.0
+      type: subprogramme
+    - name: Programme Management
+      total_budget: 3095000.0
+      type: subprogramme
+    name: Primary Health Care Services
+    type: programme
 title: Health budget 2015-16  - vulekamali
 vote_number: 16
 vote_primary:

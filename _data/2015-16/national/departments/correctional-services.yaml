@@ -2,6 +2,7 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary: null
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -33,9 +34,146 @@ description: 'National department: Correctional Services budget data for the 201
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Correctional%2BServices%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
-expenditure_over_time: null
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Correctional%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 98020000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 3582310000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 16945000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 5184000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 1790517000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 561000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Care
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 831385000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 12146731000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 102742000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Incarceration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 46183000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 1105754000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 56000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Rehabilitation
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 2070000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 888957000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 169000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Social Reintegration
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 16276801000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 17313554000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 18700011000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 19721839000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 20617584000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 21858289000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 23135316000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 22513254759
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 22689764717
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 23159553518
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 23124105131
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 22986675088
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 22926678357
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 23135316000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -75,22 +213,76 @@ is_vote_primary: true
 name: Correctional Services
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Correctional%2BServices%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  econ_classes: []
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Correctional%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Incarceration
+      total_budget: 831385000.0
+      type: programme
+    - name: Administration
+      total_budget: 98020000.0
+      type: programme
+    - name: Rehabilitation
+      total_budget: 46183000.0
+      type: programme
+    - name: Care
+      total_budget: 5184000.0
+      type: programme
+    - name: Social Reintegration
+      total_budget: 2070000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Incarceration
+      total_budget: 12146731000.0
+      type: programme
+    - name: Administration
+      total_budget: 3582310000.0
+      type: programme
+    - name: Care
+      total_budget: 1790517000.0
+      type: programme
+    - name: Rehabilitation
+      total_budget: 1105754000.0
+      type: programme
+    - name: Social Reintegration
+      total_budget: 888957000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Incarceration
+      total_budget: 102742000.0
+      type: programme
+    - name: Administration
+      total_budget: 16945000.0
+      type: programme
+    - name: Care
+      total_budget: 561000.0
+      type: programme
+    - name: Social Reintegration
+      total_budget: 169000.0
+      type: programme
+    - name: Rehabilitation
+      total_budget: 56000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Correctional%2BServices%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Correctional%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
+    total_budget: 3697275000.0
   - name: Incarceration
-    total_budget: null
+    total_budget: 13080858000.0
   - name: Rehabilitation
-    total_budget: null
+    total_budget: 1151993000.0
   - name: Care
-    total_budget: null
+    total_budget: 1796262000.0
   - name: Social Reintegration
-    total_budget: null
+    total_budget: 891196000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: correctional-services
@@ -99,8 +291,83 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Correctional%2BServices%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Correctional%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 1518496000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 999390000.0
+      type: subprogramme
+    - name: Finance
+      total_budget: 996890000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 89714000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 60155000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 32630000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Nutritional Services
+      total_budget: 946512000.0
+      type: subprogramme
+    - name: Health Services
+      total_budget: 734472000.0
+      type: subprogramme
+    - name: Hygienic Services
+      total_budget: 115278000.0
+      type: subprogramme
+    name: Care
+    type: programme
+  - items:
+    - name: Security Operations
+      total_budget: 6558540000.0
+      type: subprogramme
+    - name: Facilities
+      total_budget: 3827113000.0
+      type: subprogramme
+    - name: Offender Management
+      total_budget: 1873344000.0
+      type: subprogramme
+    - name: Remand Detention
+      total_budget: 821861000.0
+      type: subprogramme
+    name: Incarceration
+    type: programme
+  - items:
+    - name: Offender Development
+      total_budget: 751051000.0
+      type: subprogramme
+    - name: Psychological, Social and Spiritual Services
+      total_budget: 353945000.0
+      type: subprogramme
+    - name: Correctional Programmes
+      total_budget: 46997000.0
+      type: subprogramme
+    name: Rehabilitation
+    type: programme
+  - items:
+    - name: Supervision
+      total_budget: 708690000.0
+      type: subprogramme
+    - name: Parole Administration
+      total_budget: 95491000.0
+      type: subprogramme
+    - name: 'Office Accommodation: Community Corrections'
+      total_budget: 44226000.0
+      type: subprogramme
+    - name: Community Reintegration
+      total_budget: 42789000.0
+      type: subprogramme
+    name: Social Reintegration
+    type: programme
 title: Correctional Services budget 2015-16  - vulekamali
 vote_number: 18
 vote_primary:
