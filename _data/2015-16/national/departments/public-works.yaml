@@ -2,6 +2,7 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary: null
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -33,9 +34,146 @@ description: 'National department: Public Works budget data for the 2015-16 fina
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Public%2BWorks%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
-expenditure_over_time: null
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Public%2BWorks%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 9727000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 456761000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 9508000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 2360000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1713828000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 276046000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Expanded Public Works Programme
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 3000000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 43923000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 300000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Intergovernmental Coordination
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 12861000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 70721000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 9090000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Prestige Policy
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 112000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 3767520000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 35330000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Property and Construction Industry Policy and Research
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 7061437000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 7203925000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 6022654000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 6121320000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 6411087000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 6935178000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 7367696000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 9767025483
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 9440890258
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 7458924897
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 7177324955
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 7147761533
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 7274155600
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 7367696000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -85,22 +223,76 @@ is_vote_primary: true
 name: Public Works
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Public%2BWorks%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  econ_classes: []
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Public%2BWorks%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Prestige Policy
+      total_budget: 12861000.0
+      type: programme
+    - name: Administration
+      total_budget: 9727000.0
+      type: programme
+    - name: Intergovernmental Coordination
+      total_budget: 3000000.0
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 2360000.0
+      type: programme
+    - name: Property and Construction Industry Policy and Research
+      total_budget: 112000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 456761000.0
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 276046000.0
+      type: programme
+    - name: Prestige Policy
+      total_budget: 70721000.0
+      type: programme
+    - name: Intergovernmental Coordination
+      total_budget: 43923000.0
+      type: programme
+    - name: Property and Construction Industry Policy and Research
+      total_budget: 35330000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Property and Construction Industry Policy and Research
+      total_budget: 3767520000.0
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 1713828000.0
+      type: programme
+    - name: Administration
+      total_budget: 9508000.0
+      type: programme
+    - name: Prestige Policy
+      total_budget: 9090000.0
+      type: programme
+    - name: Intergovernmental Coordination
+      total_budget: 300000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Public%2BWorks%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Public%2BWorks%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
+    total_budget: 475996000.0
   - name: Intergovernmental Coordination
-    total_budget: null
+    total_budget: 47223000.0
   - name: Expanded Public Works Programme
-    total_budget: null
+    total_budget: 1992234000.0
   - name: Property and Construction Industry Policy and Research
-    total_budget: null
+    total_budget: 3802962000.0
   - name: Prestige Policy
-    total_budget: null
+    total_budget: 92672000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: public-works
@@ -109,8 +301,86 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Public%2BWorks%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Public%2BWorks%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 247364000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 109003000.0
+      type: subprogramme
+    - name: Finance and Supply Chain Management
+      total_budget: 86686000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 32943000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: 'Expanded Public Works Programme: Infrastructure'
+      total_budget: 1012749000.0
+      type: subprogramme
+    - name: 'Expanded Public Works Programme: Operations'
+      total_budget: 810160000.0
+      type: subprogramme
+    - name: 'Expanded Public Works Programme: Partnership Support'
+      total_budget: 108542000.0
+      type: subprogramme
+    - name: 'Expanded Public Works Programme: Monitoring and Evaluation'
+      total_budget: 53738000.0
+      type: subprogramme
+    - name: 'Expanded Public Works Programme: Public Employment Coordinating Commission'
+      total_budget: 7045000.0
+      type: subprogramme
+    name: Expanded Public Works Programme
+    type: programme
+  - items:
+    - name: Monitoring, Evaluation and Reporting
+      total_budget: 32895000.0
+      type: subprogramme
+    - name: Intergovernmental Relations and Coordination
+      total_budget: 14328000.0
+      type: subprogramme
+    name: Intergovernmental Coordination
+    type: programme
+  - items:
+    - name: Prestige Accommodation and State Functions
+      total_budget: 83582000.0
+      type: subprogramme
+    - name: Parliamentary Villages Management Board
+      total_budget: 9090000.0
+      type: subprogramme
+    name: Prestige Policy
+    type: programme
+  - items:
+    - name: Property Management Trading Entity
+      total_budget: 3584652000.0
+      type: subprogramme
+    - name: Construction Industry Development Board
+      total_budget: 65626000.0
+      type: subprogramme
+    - name: Independent Development Trust
+      total_budget: 50000000.0
+      type: subprogramme
+    - name: Council for the Built Environment
+      total_budget: 41994000.0
+      type: subprogramme
+    - name: Construction Policy Development Programme
+      total_budget: 24292000.0
+      type: subprogramme
+    - name: Assistance to Organisations for the Preservation of National Memorials
+      total_budget: 23273000.0
+      type: subprogramme
+    - name: Property Policy Development Programme
+      total_budget: 11350000.0
+      type: subprogramme
+    - name: Construction Education and Training Authority
+      total_budget: 1775000.0
+      type: subprogramme
+    name: Property and Construction Industry Policy and Research
+    type: programme
 title: Public Works budget 2015-16  - vulekamali
 vote_number: 11
 vote_primary:

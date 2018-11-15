@@ -2,6 +2,7 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary: null
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -33,9 +34,125 @@ description: 'National department: Arts and Culture budget data for the 2015-16 
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Arts%2Band%2BCulture%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
-expenditure_over_time: null
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Arts%2Band%2BCulture%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 7398000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 236614000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 150127000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 728184000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 197913000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Arts and Culture Promotion and Development
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 511679000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 1534544000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 129342000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Heritage Promotion and Preservation
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 319650000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 76331000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 28077000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Institutional Governance
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 2405832000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 2659333000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 2758200000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 3527748000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 3919859000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 4103395000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 4347038000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 3327626154
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 3485109993
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 3415970210
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 4136329052
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 4370275645
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 4303960723
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 4347038000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -84,20 +201,65 @@ is_vote_primary: true
 name: Arts and Culture
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Arts%2Band%2BCulture%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  econ_classes: []
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Arts%2Band%2BCulture%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 7398000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Heritage Promotion and Preservation
+      total_budget: 511679000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 319650000.0
+      type: programme
+    - name: Arts and Culture Promotion and Development
+      total_budget: 150127000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 236614000.0
+      type: programme
+    - name: Arts and Culture Promotion and Development
+      total_budget: 197913000.0
+      type: programme
+    - name: Heritage Promotion and Preservation
+      total_budget: 129342000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 76331000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Heritage Promotion and Preservation
+      total_budget: 1534544000.0
+      type: programme
+    - name: Arts and Culture Promotion and Development
+      total_budget: 728184000.0
+      type: programme
+    - name: Institutional Governance
+      total_budget: 28077000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Arts%2Band%2BCulture%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Arts%2Band%2BCulture%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
+    total_budget: 244012000.0
   - name: Institutional Governance
-    total_budget: null
+    total_budget: 424058000.0
   - name: Arts and Culture Promotion and Development
-    total_budget: null
+    total_budget: 1076224000.0
   - name: Heritage Promotion and Preservation
-    total_budget: null
+    total_budget: 2175565000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: arts-and-culture
@@ -106,8 +268,92 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Arts%2Band%2BCulture%2522%26drilldown%3Deconomic_classification_2.economic_classification_2%257Cbudget_phase.budget_phase%257Ceconomic_classification_4.economic_classification_4%257Csubprogramme_number.subprogramme%257Cfinancial_year.financial_year%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Cvote_number.department%257Ceconomic_classification_3.economic_classification_3%257Cvote_number.vote_number%257Cprogramme_number.programme%257Csubprogramme_number.subprogramme_number%26pagesize%3D10000
-  programmes: []
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Arts%2Band%2BCulture%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Office Accommodation
+      total_budget: 90519000.0
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 81797000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 42757000.0
+      type: subprogramme
+    - name: Office of the CFO
+      total_budget: 24883000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 4056000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Cultural and Creative Industries Development
+      total_budget: 352339000.0
+      type: subprogramme
+    - name: Performing Arts Institutions
+      total_budget: 319565000.0
+      type: subprogramme
+    - name: National Film and Video Foundation
+      total_budget: 116721000.0
+      type: subprogramme
+    - name: National Arts Council
+      total_budget: 96089000.0
+      type: subprogramme
+    - name: Pan South African Language Board
+      total_budget: 87338000.0
+      type: subprogramme
+    - name: Capital Works of Performing Arts Institutions
+      total_budget: 57683000.0
+      type: subprogramme
+    - name: National Language Services
+      total_budget: 46489000.0
+      type: subprogramme
+    name: Arts and Culture Promotion and Development
+    type: programme
+  - items:
+    - name: Public Library Services
+      total_budget: 1339186000.0
+      type: subprogramme
+    - name: Heritage Institutions
+      total_budget: 490934000.0
+      type: subprogramme
+    - name: National Library Services
+      total_budget: 105694000.0
+      type: subprogramme
+    - name: Heritage Promotion
+      total_budget: 86498000.0
+      type: subprogramme
+    - name: National Heritage Council
+      total_budget: 58475000.0
+      type: subprogramme
+    - name: South African Heritage Resources Agency
+      total_budget: 48552000.0
+      type: subprogramme
+    - name: National Archive Services
+      total_budget: 41739000.0
+      type: subprogramme
+    - name: South African Geographical Names Council
+      total_budget: 4487000.0
+      type: subprogramme
+    name: Heritage Promotion and Preservation
+    type: programme
+  - items:
+    - name: Capital Works
+      total_budget: 319650000.0
+      type: subprogramme
+    - name: Social Cohesion and Nation Building
+      total_budget: 48795000.0
+      type: subprogramme
+    - name: International Co-operation
+      total_budget: 38180000.0
+      type: subprogramme
+    - name: Coordination, Monitoring, Evaluation and Good Governance
+      total_budget: 17433000.0
+      type: subprogramme
+    name: Institutional Governance
+    type: programme
 title: Arts and Culture budget 2015-16  - vulekamali
 vote_number: 37
 vote_primary:

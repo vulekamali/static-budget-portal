@@ -2,6 +2,7 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary: null
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -30,7 +31,7 @@ description: 'Mpumalanga department: Economic Development and Tourism budget dat
   YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cdepartment.department%253A%2522Economic%2BDevelopment%2Band%2BTourism%2522%257Cgovernment.government%253A%2522Mpumalanga%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_4.economic_classification_4%257Cdepartment.department%257Cgovernment.government%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Ceconomic_classification_3.economic_classification_3%257Cfinancial_year.financial_year%257Cprogramme_number.programme%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Economic%2BDevelopment%2Band%2BTourism%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -220,7 +221,7 @@ is_vote_primary: true
 name: Economic Development and Tourism
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cdepartment.department%253A%2522Economic%2BDevelopment%2Band%2BTourism%2522%257Cgovernment.government%253A%2522Mpumalanga%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_4.economic_classification_4%257Cdepartment.department%257Cgovernment.government%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Ceconomic_classification_3.economic_classification_3%257Cfinancial_year.financial_year%257Cprogramme_number.programme%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Economic%2BDevelopment%2Band%2BTourism%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
@@ -296,7 +297,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cdepartment.department%253A%2522Economic%2BDevelopment%2Band%2BTourism%2522%257Cgovernment.government%253A%2522Mpumalanga%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_4.economic_classification_4%257Cdepartment.department%257Cgovernment.government%257Ceconomic_classification_1.economic_classification_1%257Cprogramme_number.programme_number%257Ceconomic_classification_3.economic_classification_3%257Cfinancial_year.financial_year%257Cprogramme_number.programme%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Economic%2BDevelopment%2Band%2BTourism%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 89639000
@@ -318,7 +319,7 @@ sphere:
   slug: provincial
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2017-18
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-expenditure-2017-18-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cdepartment.department%253A%2522Economic%2BDevelopment%2Band%2BTourism%2522%257Cgovernment.government%253A%2522Mpumalanga%2522%26drilldown%3Dphase.phase%257Csubprogramme.subprogramme%257Cdepartment.department%257Cgovernment.government%257Cprogramme_number.programme_number%257Cfinancial_year.financial_year%257Cprogramme_number.programme%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-expenditure-2017-18-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Economic%2BDevelopment%2Band%2BTourism%2522%26drilldown%3Ddepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cphase.phase%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme.subprogramme%26pagesize%3D10000
   programmes: []
 title: Economic Development and Tourism budget 2017-18  - vulekamali
 vote_number: 6
