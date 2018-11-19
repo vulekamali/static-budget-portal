@@ -18,22 +18,13 @@ adjusted_budget_summary:
     type: kind
   department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2017-18-v3/aggregate/%3Fcut%3Dfinyear.finyear%253A2017%257Cvoteno.department%253ANational%2BTreasury%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges:
-  - amount: 2984448000
-    label: Debt-service costs
-    percentage: 1.84
-  - amount: -412746000
+  - amount: -137582000
     label: National Revenue Fund payments
-    percentage: -106.5
+    percentage: -35.5
+  - amount: 994816000
+    label: Debt-service costs
+    percentage: 0.61
   econ_classes:
-  - items:
-    - amount: 24000000
-      name: Compensation of employees
-      type: economic_classification_3
-    - amount: -15611000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
   - items:
     - amount: 3730000
       name: Machinery and equipment
@@ -44,17 +35,8 @@ adjusted_budget_summary:
     name: Payments for capital assets
     type: economic_classification_2
   - items:
-    - amount: -230000000
-      name: Departmental agencies and accounts
-      type: economic_classification_3
-    - amount: -4229000
-      name: Foreign governments and international organisations
-      type: economic_classification_3
     - amount: 4466000
       name: Households
-      type: economic_classification_3
-    - amount: -2000000
-      name: Public corporations and private enterprises
       type: economic_classification_3
     name: Transfers and subsidies
     type: economic_classification_2
@@ -63,6 +45,12 @@ adjusted_budget_summary:
       name: Payments for financial assets
       type: economic_classification_3
     name: Payments for financial assets
+    type: economic_classification_2
+  - items:
+    - amount: 24000000
+      name: Compensation of employees
+      type: economic_classification_3
+    name: Current payments
     type: economic_classification_2
   programmes:
   - amount: 24761000

@@ -11,6 +11,12 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
+    - amount: 120747000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
     - amount: 1000000000
       name: Compensation of employees
       type: economic_classification_3
@@ -18,21 +24,6 @@ adjusted_budget_summary:
       name: Goods and services
       type: economic_classification_3
     name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: -300747000
-      name: Buildings and other fixed structures
-      type: economic_classification_3
-    - amount: 120747000
-      name: Software and other intangible assets
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
-  - items:
-    - amount: -592903000
-      name: Departmental agencies and accounts
-      type: economic_classification_3
-    name: Transfers and subsidies
     type: economic_classification_2
   programmes:
   - amount: 88650000

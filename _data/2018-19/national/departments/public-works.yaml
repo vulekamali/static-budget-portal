@@ -11,9 +11,6 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: 0
-      name: Compensation of employees
-      type: economic_classification_3
     - amount: 38641000
       name: Goods and services
       type: economic_classification_3
@@ -21,21 +18,6 @@ adjusted_budget_summary:
       name: Interest and rent on land
       type: economic_classification_3
     name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: -1735000
-      name: Machinery and equipment
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
-  - items:
-    - amount: -4800000
-      name: Foreign governments and international organisations
-      type: economic_classification_3
-    - amount: -2500000
-      name: Households
-      type: economic_classification_3
-    name: Transfers and subsidies
     type: economic_classification_2
   programmes:
   - amount: 3052000

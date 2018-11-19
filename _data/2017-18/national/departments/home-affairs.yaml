@@ -20,16 +20,16 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: 1240252000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
     - amount: 6548000
       name: Machinery and equipment
       type: economic_classification_3
     name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 1240252000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
     type: economic_classification_2
   programmes:
   - amount: 371722000

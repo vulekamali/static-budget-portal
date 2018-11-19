@@ -8,19 +8,10 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: 0
-      name: Compensation of employees
-      type: economic_classification_3
     - amount: 3000000
       name: Goods and services
       type: economic_classification_3
     name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: -3000000
-      name: Households
-      type: economic_classification_3
-    name: Transfers and subsidies
     type: economic_classification_2
   programmes:
   - amount: 20500000

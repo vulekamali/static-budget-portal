@@ -8,23 +8,8 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: -5800000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: 0
-      name: Machinery and equipment
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
-  - items:
     - amount: 19677000
       name: Departmental agencies and accounts
-      type: economic_classification_3
-    - amount: -13877000
-      name: Public corporations and private enterprises
       type: economic_classification_3
     name: Transfers and subsidies
     type: economic_classification_2

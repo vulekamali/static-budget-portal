@@ -17,15 +17,6 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: -1500000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: -500000
-      name: Machinery and equipment
-      type: economic_classification_3
     - amount: 500000
       name: Software and other intangible assets
       type: economic_classification_3
@@ -34,9 +25,6 @@ adjusted_budget_summary:
   - items:
     - amount: 2199000
       name: Departmental agencies and accounts
-      type: economic_classification_3
-    - amount: -126074000
-      name: Households
       type: economic_classification_3
     - amount: 27574000
       name: Non-profit institutions

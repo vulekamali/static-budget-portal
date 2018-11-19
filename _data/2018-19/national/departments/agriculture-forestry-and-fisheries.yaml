@@ -14,21 +14,6 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: -6187000
-      name: Compensation of employees
-      type: economic_classification_3
-    - amount: 91129000
-      name: Goods and services
-      type: economic_classification_3
-    - amount: 15000
-      name: Interest and rent on land
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: -885000
-      name: Buildings and other fixed structures
-      type: economic_classification_3
     - amount: 9196000
       name: Machinery and equipment
       type: economic_classification_3
@@ -48,6 +33,15 @@ adjusted_budget_summary:
       name: Provinces and municipalities
       type: economic_classification_3
     name: Transfers and subsidies
+    type: economic_classification_2
+  - items:
+    - amount: 91129000
+      name: Goods and services
+      type: economic_classification_3
+    - amount: 15000
+      name: Interest and rent on land
+      type: economic_classification_3
+    name: Current payments
     type: economic_classification_2
   programmes:
   - amount: 28485000

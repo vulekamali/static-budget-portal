@@ -8,18 +8,6 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: -178000
-      name: Compensation of employees
-      type: economic_classification_3
-    - amount: 1495000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: -1800000
-      name: Machinery and equipment
-      type: economic_classification_3
     - amount: 14000
       name: Software and other intangible assets
       type: economic_classification_3
@@ -32,10 +20,13 @@ adjusted_budget_summary:
     - amount: 469000
       name: Households
       type: economic_classification_3
-    - amount: -70637000
-      name: Public corporations and private enterprises
-      type: economic_classification_3
     name: Transfers and subsidies
+    type: economic_classification_2
+  - items:
+    - amount: 1495000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
     type: economic_classification_2
   programmes:
   - amount: 2392000

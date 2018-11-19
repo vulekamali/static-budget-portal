@@ -8,15 +8,6 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: 11300000
-      name: Compensation of employees
-      type: economic_classification_3
-    - amount: -16340000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
     - amount: 1040000
       name: Machinery and equipment
       type: economic_classification_3
@@ -27,6 +18,12 @@ adjusted_budget_summary:
       name: Non-profit institutions
       type: economic_classification_3
     name: Transfers and subsidies
+    type: economic_classification_2
+  - items:
+    - amount: 11300000
+      name: Compensation of employees
+      type: economic_classification_3
+    name: Current payments
     type: economic_classification_2
   programmes:
   - amount: -7760000

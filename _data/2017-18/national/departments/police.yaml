@@ -9,13 +9,7 @@ adjusted_budget_summary:
     type: kind
   department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2017-18-v3/aggregate/%3Fcut%3Dfinyear.finyear%253A2017%257Cvoteno.department%253APolice%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges: null
-  econ_classes:
-  - items:
-    - amount: -264000000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
+  econ_classes: null
   programmes:
   - amount: -264000000
     name: Detective Services

@@ -11,26 +11,8 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: 0
-      name: Compensation of employees
-      type: economic_classification_3
-    - amount: 78586000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
-    - amount: -1647000
-      name: Machinery and equipment
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
-  - items:
     - amount: 5509000
       name: Departmental agencies and accounts
-      type: economic_classification_3
-    - amount: -200000
-      name: Foreign governments and international organisations
       type: economic_classification_3
     - amount: 899000
       name: Households
@@ -38,10 +20,13 @@ adjusted_budget_summary:
     - amount: 5000000
       name: Non-profit institutions
       type: economic_classification_3
-    - amount: -19000000
-      name: Public corporations and private enterprises
-      type: economic_classification_3
     name: Transfers and subsidies
+    type: economic_classification_2
+  - items:
+    - amount: 78586000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
     type: economic_classification_2
   programmes:
   - amount: 76637000

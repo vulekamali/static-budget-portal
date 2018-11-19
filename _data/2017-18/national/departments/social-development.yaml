@@ -11,20 +11,11 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: -2977000
-      name: Goods and services
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
     - amount: 2500000
       name: Foreign governments and international organisations
       type: economic_classification_3
     - amount: 477000
       name: Higher education institutions
-      type: economic_classification_3
-    - amount: -735400000
-      name: Households
       type: economic_classification_3
     name: Transfers and subsidies
     type: economic_classification_2
