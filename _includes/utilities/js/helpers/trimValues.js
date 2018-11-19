@@ -15,11 +15,11 @@ export default function trimValues(rawValue, abbreviated) {
     return `${(value / 1000000).toFixed(1).replace(/\.0$/, '')} ${million}`;
   }
 
-  if (value <= 1000000000) {
+  if (value <= -1000000000) {
     return `${(value / 1000000000).toFixed(1).replace(/\.0$/, '')} ${billion}`;
   }
 
-  if (value <= 1000000) {
+  if (value <= -1000000) {
     return `${(value / 1000000).toFixed(1).replace(/\.0$/, '')} ${million}`;
   }
 
