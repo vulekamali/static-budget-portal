@@ -2,6 +2,51 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary:
+  by_type:
+  - amount: -100000000
+    name: Declared unspent funds
+    type: kind
+  - amount: 12000000
+    name: Roll-overs
+    type: kind
+  - amount: 1070800000
+    name: Self-financing
+    type: kind
+  - amount: 264000000
+    name: Shifting of functions between votes
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2017-18
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2017-18-v3/aggregate/%3Fcut%3Dfinyear.finyear%253A2017%257Cvoteno.department%253AHome%2BAffairs%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges: null
+  econ_classes:
+  - items:
+    - amount: 1240252000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 6548000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  programmes:
+  - amount: 371722000
+    name: Administration
+  - amount: 875970000
+    name: Citizen Affairs
+  - amount: -892000
+    name: Immigration Affairs
+  special_appropriation: null
+  total_change:
+    amount: 1246800000
+    percentage: 17.67122256712067
+  virements:
+    amount: 6548000
+    label: Value of virements
+    percentage: 0.09280651697907133
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

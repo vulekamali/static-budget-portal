@@ -2,6 +2,74 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary:
+  by_type:
+  - amount: -90000000
+    name: Declared unspent funds
+    type: kind
+  - amount: 11893000
+    name: Roll-overs
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2017-18
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2017-18-v3/aggregate/%3Fcut%3Dfinyear.finyear%253A2017%257Cvoteno.department%253AArts%2Band%2BCulture%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges: null
+  econ_classes:
+  - items:
+    - amount: 37835000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: -221626000
+      name: Buildings and other fixed structures
+      type: economic_classification_3
+    - amount: 137525000
+      name: Heritage assets
+      type: economic_classification_3
+    - amount: 56441000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: -87224000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    - amount: -650000
+      name: Foreign governments and international organisations
+      type: economic_classification_3
+    - amount: 7342000
+      name: Higher education institutions
+      type: economic_classification_3
+    - amount: 558000
+      name: Households
+      type: economic_classification_3
+    - amount: -4112000
+      name: Non-profit institutions
+      type: economic_classification_3
+    - amount: -4196000
+      name: Public corporations and private enterprises
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: 103913000
+    name: Administration
+  - amount: -61721000
+    name: Arts and Culture Promotion and Development
+  - amount: -31768000
+    name: Heritage Promotion and Preservation
+  - amount: -88531000
+    name: Institutional Governance
+  special_appropriation: null
+  total_change:
+    amount: -78107000
+    percentage: -1.7552746219250335
+  virements:
+    amount: 364658000
+    label: Value of virements
+    percentage: 8.19484723625205
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Education 2016/17'

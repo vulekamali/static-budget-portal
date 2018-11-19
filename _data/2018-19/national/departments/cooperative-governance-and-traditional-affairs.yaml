@@ -2,6 +2,69 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary:
+  by_type:
+  - amount: 1225484000
+    name: Announced in the budget speech
+    type: kind
+  - amount: 159639000
+    name: Unforeseeable/unavoidable
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2018-19
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253ACooperative%2BGovernance%2Band%2BTraditional%2BAffairs%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
+  direct_charges: null
+  econ_classes:
+  - items:
+    - amount: -29450000
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: 992439000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 50000
+      name: Payments for financial assets
+      type: economic_classification_3
+    name: Payments for financial assets
+    type: economic_classification_2
+  - items:
+    - amount: 12000000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    - amount: 445000
+      name: Households
+      type: economic_classification_3
+    - amount: -998700000
+      name: Non-profit institutions
+      type: economic_classification_3
+    - amount: 1408339000
+      name: Provinces and municipalities
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: 19900000
+    name: Administration
+  - amount: -6200000
+    name: Community Work Programme
+  - amount: 3200000
+    name: Institutional Development
+  - amount: -8100000
+    name: Local Government Support and Intervention Management
+  - amount: 1375423000
+    name: National Disaster Management Centre
+  - amount: 900000
+    name: Regional and Urban Development and Legislative Support
+  special_appropriation: null
+  total_change:
+    amount: 1385123000
+    percentage: 1.655817977473503
+  virements:
+    amount: 1071859000
+    label: Value of virements
+    percentage: 1.2813327058440092
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

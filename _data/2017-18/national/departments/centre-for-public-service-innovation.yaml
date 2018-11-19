@@ -2,6 +2,7 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary: null
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -16,7 +17,14 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: vote-10-public-service-and-administration.pdf
+    url: https://data.vulekamali.gov.za/dataset/d182c1f9-cd02-43d2-a8de-5f9f2770b74e/resource/93d5a664-e887-42e1-ad0d-691c3458dd1f/download/vote-10-public-service-and-administration.pdf
+  name: AENE 2017-18 - Vote 10 - Public Service and Administration
+  tables: null
 department_budget:
   document:
     description: ''

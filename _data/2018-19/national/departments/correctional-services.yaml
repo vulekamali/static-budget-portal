@@ -2,6 +2,55 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary:
+  by_type:
+  - amount: 463000
+    name: Self-financing
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2018-19
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253ACorrectional%2BServices%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
+  direct_charges: null
+  econ_classes:
+  - items:
+    - amount: -55113000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 950000
+      name: Biological assets
+      type: economic_classification_3
+    - amount: 54163000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 463000
+      name: Households
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: 104048000
+    name: Administration
+  - amount: 57328000
+    name: Care
+  - amount: -178860000
+    name: Incarceration
+  - amount: -51115000
+    name: Rehabilitation
+  - amount: 69062000
+    name: Social Reintegration
+  special_appropriation: null
+  total_change:
+    amount: 463000
+    percentage: 0.0019414210782979736
+  virements:
+    amount: 346074000
+    label: Value of virements
+    percentage: 1.4511346830472847
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
