@@ -33,7 +33,7 @@
 
       {% if include.items.special_appropriation %}
         <p class="js-tooltips">
-          Special appropriations are not included in the Adjustment Appropriations. Special appropriations passed before the adjusted budget are included in the dataset.
+          Special appropriations are not included in the Adjustments Appropriation. Special appropriations passed before the adjusted budget are included in the dataset.
         </p>
       {% endif %}
 
@@ -143,7 +143,7 @@
               <div class="Title Title--interSection u-marginBottom10">
                 Special Appropriation
               </div>
-    
+
               {%
                 include scenes/department/AdjustedSection/components/ChangeIndicator/index.html
                 percentage=include.items.special_appropriation.percentage
@@ -216,7 +216,7 @@
         </div>
       </div>
     {% endif %}
-    
+
 
     {% if include.items and include.items.econ_classes %}
       <div class="AdjustedSection-item">
