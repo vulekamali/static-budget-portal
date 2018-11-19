@@ -14,6 +14,15 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
+    - amount: 171138000
+      name: Machinery and equipment
+      type: economic_classification_3
+    - amount: 36000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
     - amount: 21456000
       name: Departmental agencies and accounts
       type: economic_classification_3
@@ -31,15 +40,6 @@ adjusted_budget_summary:
       type: economic_classification_3
     name: Current payments
     type: economic_classification_2
-  - items:
-    - amount: 171138000
-      name: Machinery and equipment
-      type: economic_classification_3
-    - amount: 36000
-      name: Software and other intangible assets
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
   programmes:
   - amount: -13646000
     name: Administration
@@ -53,7 +53,7 @@ adjusted_budget_summary:
     name: National Health Insurance, Health Planning and Systems Enablement
   special_appropriation: null
   total_change:
-    amount: 47508374000
+    amount: 365508000
     percentage: 0.78
   virements:
     amount: 261499000

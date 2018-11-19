@@ -17,6 +17,12 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
+    - amount: 500000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
     - amount: 2199000
       name: Departmental agencies and accounts
       type: economic_classification_3
@@ -27,12 +33,6 @@ adjusted_budget_summary:
       name: Provinces and municipalities
       type: economic_classification_3
     name: Transfers and subsidies
-    type: economic_classification_2
-  - items:
-    - amount: 500000
-      name: Software and other intangible assets
-      type: economic_classification_3
-    name: Payments for capital assets
     type: economic_classification_2
   programmes:
   - amount: 8500000
@@ -45,7 +45,7 @@ adjusted_budget_summary:
     name: Welfare Services Policy Development and Implementation Support
   special_appropriation: null
   total_change:
-    amount: 172822233000
+    amount: -79354000
     percentage: -0.05
   virements:
     amount: 36074000

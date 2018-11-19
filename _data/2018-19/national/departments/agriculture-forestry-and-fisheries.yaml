@@ -14,6 +14,15 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
+    - amount: 9196000
+      name: Machinery and equipment
+      type: economic_classification_3
+    - amount: 50000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
     - amount: 6387000
       name: Households
       type: economic_classification_3
@@ -34,15 +43,6 @@ adjusted_budget_summary:
       type: economic_classification_3
     name: Current payments
     type: economic_classification_2
-  - items:
-    - amount: 9196000
-      name: Machinery and equipment
-      type: economic_classification_3
-    - amount: 50000
-      name: Software and other intangible assets
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
   programmes:
   - amount: 28485000
     name: Administration
@@ -54,7 +54,7 @@ adjusted_budget_summary:
     name: Forestry and Natural Resources Management
   special_appropriation: null
   total_change:
-    amount: 7732803000
+    amount: 567805000
     percentage: 7.92
   virements:
     amount: 51863000

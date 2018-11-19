@@ -8,6 +8,12 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
+    - amount: 12555000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
     - amount: 4729000
       name: Households
       type: economic_classification_3
@@ -22,12 +28,6 @@ adjusted_budget_summary:
       type: economic_classification_3
     name: Current payments
     type: economic_classification_2
-  - items:
-    - amount: 12555000
-      name: Machinery and equipment
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
   programmes:
   - amount: 14170000
     name: Administration
@@ -41,7 +41,7 @@ adjusted_budget_summary:
     name: Rural Development
   special_appropriation: null
   total_change:
-    amount: 10184240000
+    amount: 0
     percentage: 0.0
   virements:
     amount: 737113000

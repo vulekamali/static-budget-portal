@@ -11,6 +11,15 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
+    - amount: 334577000
+      name: Buildings and other fixed structures
+      type: economic_classification_3
+    - amount: 25765000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
     - amount: 300000000
       name: Departmental agencies and accounts
       type: economic_classification_3
@@ -21,15 +30,6 @@ adjusted_budget_summary:
       name: Provinces and municipalities
       type: economic_classification_3
     name: Transfers and subsidies
-    type: economic_classification_2
-  - items:
-    - amount: 334577000
-      name: Buildings and other fixed structures
-      type: economic_classification_3
-    - amount: 25765000
-      name: Machinery and equipment
-      type: economic_classification_3
-    name: Payments for capital assets
     type: economic_classification_2
   programmes:
   - amount: 21437000
@@ -42,7 +42,7 @@ adjusted_budget_summary:
     name: Water Sector Regulation
   special_appropriation: null
   total_change:
-    amount: 15607449000
+    amount: 500000000
     percentage: 3.31
   virements:
     amount: 246671000

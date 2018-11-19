@@ -6,13 +6,19 @@ adjusted_budget_summary:
   by_type: null
   department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2017-18-v3/aggregate/%3Fcut%3Dfinyear.finyear%253A2017%257Cvoteno.department%253AHigher%2BEducation%2Band%2BTraining%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges:
-  - amount: -522540000
-    label: National Skills Fund
-    percentage: -15.7
-  - amount: -2090166000
+  - amount: -696722000
     label: Sector education and training authorities
-    percentage: -15.7
+    percentage: -5.23
+  - amount: -174180000
+    label: National Skills Fund
+    percentage: -5.23
   econ_classes:
+  - items:
+    - amount: 1723000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
   - items:
     - amount: 8071000
       name: Households
@@ -21,12 +27,6 @@ adjusted_budget_summary:
       name: Non-profit institutions
       type: economic_classification_3
     name: Transfers and subsidies
-    type: economic_classification_2
-  - items:
-    - amount: 1723000
-      name: Software and other intangible assets
-      type: economic_classification_3
-    name: Payments for capital assets
     type: economic_classification_2
   programmes:
   - amount: -3000000
@@ -43,7 +43,7 @@ adjusted_budget_summary:
     name: University Education
   special_appropriation: null
   total_change:
-    amount: 52307639000
+    amount: 0
     percentage: 0.0
   virements:
     amount: 261334000

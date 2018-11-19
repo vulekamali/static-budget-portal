@@ -14,6 +14,15 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
+    - amount: 137525000
+      name: Heritage assets
+      type: economic_classification_3
+    - amount: 56441000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
     - amount: 7342000
       name: Higher education institutions
       type: economic_classification_3
@@ -28,15 +37,6 @@ adjusted_budget_summary:
       type: economic_classification_3
     name: Current payments
     type: economic_classification_2
-  - items:
-    - amount: 137525000
-      name: Heritage assets
-      type: economic_classification_3
-    - amount: 56441000
-      name: Machinery and equipment
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
   programmes:
   - amount: 103913000
     name: Administration
@@ -48,7 +48,7 @@ adjusted_budget_summary:
     name: Institutional Governance
   special_appropriation: null
   total_change:
-    amount: 4371738000
+    amount: -78107000
     percentage: -1.76
   virements:
     amount: 364658000

@@ -11,6 +11,21 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
+    - amount: 39000
+      name: Biological assets
+      type: economic_classification_3
+    - amount: 5449000
+      name: Buildings and other fixed structures
+      type: economic_classification_3
+    - amount: 2723000
+      name: Machinery and equipment
+      type: economic_classification_3
+    - amount: 342000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
     - amount: 361000
       name: Foreign governments and international organisations
       type: economic_classification_3
@@ -31,21 +46,6 @@ adjusted_budget_summary:
       type: economic_classification_3
     name: Current payments
     type: economic_classification_2
-  - items:
-    - amount: 39000
-      name: Biological assets
-      type: economic_classification_3
-    - amount: 5449000
-      name: Buildings and other fixed structures
-      type: economic_classification_3
-    - amount: 2723000
-      name: Machinery and equipment
-      type: economic_classification_3
-    - amount: 342000
-      name: Software and other intangible assets
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
   programmes:
   - amount: 4361000
     name: Administration
@@ -59,7 +59,7 @@ adjusted_budget_summary:
     name: Forestry and Natural Resources Management
   special_appropriation: null
   total_change:
-    amount: 6847034000
+    amount: 40000000
     percentage: 0.59
   virements:
     amount: 22950000

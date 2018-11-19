@@ -11,6 +11,12 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
+    - amount: 3000000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
     - amount: 31600000
       name: Departmental agencies and accounts
       type: economic_classification_3
@@ -18,12 +24,6 @@ adjusted_budget_summary:
       name: Public corporations and private enterprises
       type: economic_classification_3
     name: Transfers and subsidies
-    type: economic_classification_2
-  - items:
-    - amount: 3000000
-      name: Machinery and equipment
-      type: economic_classification_3
-    name: Payments for capital assets
     type: economic_classification_2
   programmes:
   - amount: -6000000
@@ -35,7 +35,7 @@ adjusted_budget_summary:
       Support
   special_appropriation: null
   total_change:
-    amount: 1475670000
+    amount: 25874000
     percentage: 1.78
   virements:
     amount: 34600000

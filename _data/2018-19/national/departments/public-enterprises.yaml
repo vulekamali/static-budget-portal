@@ -11,6 +11,12 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
+    - amount: 1500000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
     - amount: 367000
       name: Households
       type: economic_classification_3
@@ -22,12 +28,6 @@ adjusted_budget_summary:
       type: economic_classification_3
     name: Payments for financial assets
     type: economic_classification_2
-  - items:
-    - amount: 1500000
-      name: Machinery and equipment
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
   programmes:
   - amount: 1249000000
     name: Business Enhancement, Transformation and Industrialisation
@@ -35,8 +35,8 @@ adjusted_budget_summary:
     amount: 5000000000
     percentage: 1825.39
   total_change:
-    amount: 6522914000
-    percentage: 2281.37
+    amount: 1249000000
+    percentage: 455.98
   virements:
     amount: 1867000
     label: Value of virements

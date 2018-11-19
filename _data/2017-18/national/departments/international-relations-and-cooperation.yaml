@@ -11,15 +11,6 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: 108000000
-      name: Compensation of employees
-      type: economic_classification_3
-    - amount: 27449000
-      name: Interest and rent on land
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
     - amount: 3326000
       name: Buildings and other fixed structures
       type: economic_classification_3
@@ -27,6 +18,15 @@ adjusted_budget_summary:
       name: Machinery and equipment
       type: economic_classification_3
     name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 108000000
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: 27449000
+      name: Interest and rent on land
+      type: economic_classification_3
+    name: Current payments
     type: economic_classification_2
   programmes:
   - amount: -75317000
@@ -39,7 +39,7 @@ adjusted_budget_summary:
     name: Public Diplomacy and Protocol Services
   special_appropriation: null
   total_change:
-    amount: 6408339000
+    amount: -166540000
     percentage: -2.53
   virements:
     amount: 206470000

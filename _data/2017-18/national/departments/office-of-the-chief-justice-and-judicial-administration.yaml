@@ -11,16 +11,16 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
-    - amount: 4000
-      name: Interest and rent on land
-      type: economic_classification_3
-    name: Current payments
-    type: economic_classification_2
-  - items:
     - amount: 23741000
       name: Machinery and equipment
       type: economic_classification_3
     name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 4000
+      name: Interest and rent on land
+      type: economic_classification_3
+    name: Current payments
     type: economic_classification_2
   programmes:
   - amount: -15250000
@@ -31,7 +31,7 @@ adjusted_budget_summary:
     name: Superior Court Services
   special_appropriation: null
   total_change:
-    amount: 1019318000
+    amount: 753000
     percentage: 0.07
   virements:
     amount: 33349000

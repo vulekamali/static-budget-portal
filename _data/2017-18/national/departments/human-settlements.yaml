@@ -11,6 +11,12 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
+    - amount: 17157000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
     - amount: 203000
       name: Foreign governments and international organisations
       type: economic_classification_3
@@ -25,12 +31,6 @@ adjusted_budget_summary:
       type: economic_classification_3
     name: Payments for financial assets
     type: economic_classification_2
-  - items:
-    - amount: 17157000
-      name: Machinery and equipment
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
   programmes:
   - amount: 12341000
     name: Administration
@@ -40,7 +40,7 @@ adjusted_budget_summary:
     name: Human Settlements Delivery Support
   special_appropriation: null
   total_change:
-    amount: 33477701000
+    amount: 13401000
     percentage: 0.04
   virements:
     amount: 6428000

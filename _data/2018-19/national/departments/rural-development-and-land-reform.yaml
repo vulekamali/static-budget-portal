@@ -8,6 +8,18 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
+    - amount: 237838000
+      name: Buildings and other fixed structures
+      type: economic_classification_3
+    - amount: 19081000
+      name: Land and sub-soil assets
+      type: economic_classification_3
+    - amount: 22442000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
     - amount: 23606000
       name: Provinces and municipalities
       type: economic_classification_3
@@ -22,18 +34,6 @@ adjusted_budget_summary:
       type: economic_classification_3
     name: Current payments
     type: economic_classification_2
-  - items:
-    - amount: 237838000
-      name: Buildings and other fixed structures
-      type: economic_classification_3
-    - amount: 19081000
-      name: Land and sub-soil assets
-      type: economic_classification_3
-    - amount: 22442000
-      name: Machinery and equipment
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
   programmes:
   - amount: 52529000
     name: Administration
@@ -47,7 +47,7 @@ adjusted_budget_summary:
     name: Rural Development
   special_appropriation: null
   total_change:
-    amount: 10425243000
+    amount: 0
     percentage: 0.0
   virements:
     amount: 1097409000

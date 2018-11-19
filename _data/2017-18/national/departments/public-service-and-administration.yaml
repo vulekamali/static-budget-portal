@@ -11,6 +11,15 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
+    - amount: 2642000
+      name: Machinery and equipment
+      type: economic_classification_3
+    - amount: 206000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
     - amount: 3000
       name: Provinces and municipalities
       type: economic_classification_3
@@ -21,15 +30,6 @@ adjusted_budget_summary:
       name: Payments for financial assets
       type: economic_classification_3
     name: Payments for financial assets
-    type: economic_classification_2
-  - items:
-    - amount: 2642000
-      name: Machinery and equipment
-      type: economic_classification_3
-    - amount: 206000
-      name: Software and other intangible assets
-      type: economic_classification_3
-    name: Payments for capital assets
     type: economic_classification_2
   programmes:
   - amount: 6026000
@@ -46,7 +46,7 @@ adjusted_budget_summary:
     name: Service Delivery Support
   special_appropriation: null
   total_change:
-    amount: 877144000
+    amount: -20000000
     percentage: -2.23
   virements:
     amount: 14523000

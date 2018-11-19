@@ -8,6 +8,12 @@ adjusted_budget_summary:
   direct_charges: null
   econ_classes:
   - items:
+    - amount: 14000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
     - amount: 70637000
       name: Departmental agencies and accounts
       type: economic_classification_3
@@ -22,12 +28,6 @@ adjusted_budget_summary:
       type: economic_classification_3
     name: Current payments
     type: economic_classification_2
-  - items:
-    - amount: 14000
-      name: Software and other intangible assets
-      type: economic_classification_3
-    name: Payments for capital assets
-    type: economic_classification_2
   programmes:
   - amount: 2392000
     name: Administration
@@ -39,7 +39,7 @@ adjusted_budget_summary:
     name: Sector Policy and Research
   special_appropriation: null
   total_change:
-    amount: 1488453000
+    amount: 0
     percentage: 0.0
   virements:
     amount: 82440000
