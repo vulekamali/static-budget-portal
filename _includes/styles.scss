@@ -113,11 +113,16 @@
 @import 'components/about/Progress/styles';
 @import 'components/about/Stages/styles';
 
-@import 'scenes/department/AdvancedChartSection/styles';
+@import 'scenes/department/AdjustedSection/styles';
+@import 'scenes/department/AdjustedSection/components/ChangeIndicator/styles';
+@import 'scenes/department/ProgrammesSection/styles';
+@import 'scenes/department/ExpenditureSection/styles';
+@import 'scenes/department/SmallMultiplesSection/styles';
+
 @import 'components/Share/styles';
 @import 'components/LinksList/styles';
 @import 'components/Message/styles';
-@import 'components/ChartSourceController/styles';
-@import 'components/ChartSourceController/components/BarChart/styles';
 @import 'components/Card/styles';
 @import 'components/Title/styles';
+@import 'components/ChartSourceController/styles';
+@import 'components/ChartSourceController/components/BarChart/styles';

@@ -70,6 +70,11 @@ layout: page-shell
   link_3="#section-review"
 %}
 
+{% if page_data.sphere.slug == "national" and page_data.slug == "parliament" %}
+  {% assign parliament = "true" %}
+{% else %}
+  {% assign parliament = "false" %}
+{% endif %}
 
 {% assign subtitle = department_location | append: " " | append: page_data.name | append: " Department Budget " | append: page.financial_year %}
 
@@ -93,7 +98,9 @@ layout: page-shell
       </ul>
     </nav>
 
-    <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0 u-marginLeft0">{{ page_data.name }}</h1>
+    <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0 u-marginLeft0">
+      {{ page_data.name }}
+    </h1>
     <span class="Page-subHeading u-textAlignCenter">
       {{ department_location }} Department Budget for {{ page.financial_year }}
     </span>
@@ -108,6 +115,7 @@ layout: page-shell
     <div class="Page-subHeading u-marginTop15 u-supportsFlex u-textAlignCenter u-marginBottom25">
       The Budget Cycle
     </div>
+
     <div>
       {%
         include components/department-budgets/ArrowButtons/index.html
@@ -123,7 +131,7 @@ layout: page-shell
       </div>
     </div>
 
-    <div class="u-marginTop25 u-marginBottom40">
+    <div class="u-marginTop25 u-marginBottom60">
       <h3 class="Title Title--section">{{ page.financial_year }} Budget</h3>
       <p>
         The {{ source_type_revenue }} ({{ source_type_revenue_short }}) is a book published along with the tabling of the budget for the new financial year.
@@ -154,7 +162,7 @@ layout: page-shell
     {% if page_data.programmes %}
       <div class="u-marginBottom60">
         {%
-          include scenes/department/AdvancedChartSection/index.html
+          include scenes/department/ProgrammesSection/index.html
           type="programmes"
           items=page_data.programmes.programme_budgets
 
@@ -175,7 +183,9 @@ layout: page-shell
     {% if page_data.subprogramme_by_programme %}
       <div class="u-marginBottom60">
         {%
-          include scenes/department/BasicChartSection/index.html
+          include scenes/department/SmallMultiplesSection/index.html
+          id="subprogramme-by-programme"
+
           title="Budgeted spending by sub-programme for each programme"
           description="Each chart shows the budgeted spending by each sub-programme of that programme."
           charts_list=page_data.subprogramme_by_programme.programmes
@@ -195,7 +205,9 @@ layout: page-shell
     {% if page_data.economic_classification_by_programme.programmes %}
       <div class="u-marginBottom60">
         {%
-          include scenes/department/BasicChartSection/index.html
+          include scenes/department/SmallMultiplesSection/index.html
+          id="economic-classification-by-programme"
+
           title="Budgeted spending by Economic Classification for each programme"
           description="Each chart shows the budgeted spending by economic classification under that Programme."
           charts_list=page_data.economic_classification_by_programme.programmes
@@ -213,28 +225,25 @@ layout: page-shell
     {% endif %}
 
     {% if page_data.programme_by_economic_classification.econ_classes %}
-      {%
-        include scenes/department/BasicChartSection/index.html
-        title="Budgeted spending by programme for Economic Classification items"
-        description="Each chart shows the budgeted spending of each Programme under that Economic Classification."
-        charts_list=page_data.programme_by_economic_classification.econ_classes
+      <div class="u-marginBottom60">
+        {%
+          include scenes/department/SmallMultiplesSection/index.html
+          id="programmes-by-economic-classification"
 
-        source_type=source_type
-        year=page.financial_year
-        dataset=page_data.programme_by_economic_classification.dataset_detail_page
-        pdf=pdf
-        excel=excel
-        csv=page_data.programme_by_economic_classification.department_data_csv
+          title="Budgeted spending by programme for Economic Classification items"
+          description="Each chart shows the budgeted spending of each Programme under that Economic Classification."
+          charts_list=page_data.programme_by_economic_classification.econ_classes
 
-        subtitle=subtitle
-      %}
-    {% endif %}
-
-    <div class="u-marginTop100">
-      <div class="DeptSectionHead DeptSectionHead--orange" id="section-implement">
-        Implement
-      </div>
+          source_type=source_type
+          year=page.financial_year
+          dataset=page_data.subprogramme_by_programme.dataset_detail_page
+          pdf=pdf
+          excel=excel
+          subtitle=subtitle
+        %}
+      {% endif %}
     </div>
+
 
     <h3 class="Title Title--section">{{ page.financial_year }} Adjusted Budget</h3>
     <p>
@@ -245,7 +254,7 @@ layout: page-shell
     {% assign text2 = "View tables in the " | append:  source_type_adjusted_short | append: "chapter (Excel)." %}
 
     {% if pdf_link_adjusted or excel_link_adjusted %}  
-      <ul class="LinksList">
+      <ul class="LinksList u-marginBottom60">
         {%
           include components/LinksList/item.html
           text=text1
@@ -266,7 +275,7 @@ layout: page-shell
     {% assign info3 = "The tables in " | append: source_type_revenue_short | append: " chapter (Excel)" %}
 
     {% if pdf_link_adjusted == null and excel_link_adjusted == null %}
-      <div class="Message Message--secondary u-marginBottom20">
+      <div class="Message Message--secondary u-marginBottom60 ">
         <div class="Message-content">
           {%
             include components/universal/Icon/index.html
@@ -282,7 +291,7 @@ layout: page-shell
     {% endif %}
 
     {% if pdf_link_adjusted == null and excel_link_adjusted %}
-      <div class="Message Message--secondary u-marginBottom20">
+      <div class="Message Message--secondary u-marginBottom60">
         <div class="Message-content">
           {%
             include components/universal/Icon/index.html
@@ -298,7 +307,7 @@ layout: page-shell
     {% endif %}
 
     {% if excel_link_adjusted == null and pdf_link_adjusted  %}
-      <div class="Message Message--secondary u-marginBottom20">
+      <div class="Message Message--secondary u-marginBottom60">
         <div class="Message-content">
           {%
             include components/universal/Icon/index.html
@@ -313,6 +322,55 @@ layout: page-shell
       </div>
     {% endif %}
 
+
+    {% if page_data.government.slug == 'south-africa' %}
+      <div class="u-marginBottom60">
+        {%
+          include scenes/department/AdjustedSection/index.html
+          
+          type="adjusted"
+          items=page_data.adjusted_budget_summary
+
+          source_type=source_type
+          source_type_adjusted=source_type_adjusted
+          year=page.financial_year
+
+          pdf=pdf
+          excel=excel
+          pdf_adjusted=pdf_link_adjusted
+          excel_adjusted=excel_link_adjusted
+
+          parliament=parliament
+          title="Programme budgets"
+          subtitle=subtitle
+          description="Activities of this department"
+        %}
+      </div>
+    {% endif %}
+
+
+    <div class="u-marginTop100">
+      <div class="DeptSectionHead DeptSectionHead--orange" id="section-implement">
+        Implement
+      </div>
+    </div>
+
+
+    <div class="Message Message--secondary u-marginBottom20 u-marginTop25">
+      <div class="Message-content">
+        {%
+          include components/universal/Icon/index.html
+          type="info"
+          size="large"
+        %}
+        <span class="Message-heading">
+          Please note
+        </span>
+      </div>
+      <div class="Message-text Message-text--secondary">Implementation data coming soon</div>
+    </div>
+
+
     <div class="u-marginTop100">
       <div class="DeptSectionHead DeptSectionHead--purple" id="section-review">
         Review
@@ -320,9 +378,9 @@ layout: page-shell
     </div>
 
     {% if page_data.expenditure_over_time %}
-      <div class="u-marginBottom40 u-marginTop15">
+      <div class="u-marginBottom60 u-marginTop15">
         {%
-          include scenes/department/AdvancedChartSection/index.html
+          include scenes/department/ExpenditureSection/index.html
           items=page_data.expenditure_over_time.expenditure
           type="expenditure"
 
@@ -330,7 +388,7 @@ layout: page-shell
           source_type=source_type
           year=page.financial_year
           dataset=page_data.expenditure_over_time.dataset_detail_page
-          pdf=pdf
+          pdf=pdf_link
           excel=excel
           csv=page_data.expenditure_over_time.department_data_csv
 

@@ -5,6 +5,7 @@ body {
   overflow-y: scroll;
   font-size: 14px;
   background-color: #f0f0f0;
+  overflow-x: hidden;
 
   &.has-overlay {
     overflow: hidden;
