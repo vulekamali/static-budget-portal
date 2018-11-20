@@ -101,19 +101,29 @@ layout: page-shell
         </div>
     {% endif %}
 
-      {% if page_data.category.slug == "performance-and-expenditure-reviews" %}
-
-        <div class="Section is-bevel">
-          <div class="Section-card">
-            <h2 class="Section-title">What is a PER?</h2>
-            <p>A Performance and Expenditure Review (PER) is a process of reviewing government spending on a particular service, and how effective this spending is.</p>
-            <a href="/guides/performance-and-expenditure-reviews" class="Button">
-              Learn more
-            </a>
-          </div>
+    {% if page_data.category.slug == "performance-and-expenditure-reviews" %}
+      <div class="Section is-bevel">
+        <div class="Section-card">
+          <h2 class="Section-title">What is a PER?</h2>
+          <p>A Performance and Expenditure Review (PER) is a process of reviewing government spending on a particular service, and how effective this spending is.</p>
+          <a href="/guides/performance-and-expenditure-reviews" class="Button">
+            Learn more
+          </a>
         </div>
+      </div>
+    {% endif %}
 
-        {% endif %}
+    {% if page_data.category.slug == "estimates-of-national-expenditure" %}
+    <div class="Section is-bevel">
+      <div class="Section-card">
+        <h2 class="Section-title">What is an ENE?</h2>
+        <p>The Estimates of National Expenditure (ENE) publications describe in detail the planned spending in all national government votes over the three-year medium-term expenditure framework (MTEF) period, government’s expenditure planning window.</p>
+        <a href="/guides/estimates-of-national-expenditure" class="Button">
+          Learn more
+        </a>
+      </div>
+    </div>
+  {% endif %}
 
     {% if page_data.category.slug != "socio-economic-data" %}
       </aside>

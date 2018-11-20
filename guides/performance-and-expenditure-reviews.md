@@ -4,7 +4,11 @@ data_key: performance-and-expenditure-reviews
 ---
 
 
-<h1 class="Page-mainHeading">Performance and Expenditure Reviews (PER)</h1>
+{% assign page_data = site.data.guides.performance-and-expenditure-reviews %}
+
+
+<h1 class="Page-mainHeading">Dataset Guide: Performance and Expenditure Reviews (PER)</h1>
+
 <div class="BasicContent u-marginBottom15">
   <div class="BasicContent-title">Introduction</div>
     <p>
