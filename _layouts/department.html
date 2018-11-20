@@ -236,9 +236,11 @@ layout: page-shell
 
           source_type=source_type
           year=page.financial_year
-          dataset=page_data.subprogramme_by_programme.dataset_detail_page
+          dataset=page_data.programme_by_economic_classification.dataset_detail_page
           pdf=pdf
           excel=excel
+          csv=page_data.programme_by_economic_classification.department_data_csv
+
           subtitle=subtitle
         %}
       {% endif %}
@@ -339,6 +341,7 @@ layout: page-shell
           excel=excel
           pdf_adjusted=pdf_link_adjusted
           excel_adjusted=excel_link_adjusted
+          csv=page_data.adjusted_budget_summary.department_data_csv
 
           parliament=parliament
           title="Programme budgets"
