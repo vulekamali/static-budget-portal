@@ -54,6 +54,13 @@
 
         {%
           include components/LinksList/item.html
+          text="Download this data for analysis (CSV)"
+          url=include.csv
+          type="download"
+        %}
+
+        {%
+          include components/LinksList/item.html
           text=guide_text
           url=include.guide
           type="guides"
