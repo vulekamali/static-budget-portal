@@ -2,6 +2,69 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary:
+  by_type:
+  - amount: -20000000
+    name: Declared unspent funds
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2017-18
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2017-18-v3/aggregate/%3Fcut%3Dfinyear.finyear%253A2017%257Cvoteno.department%253APublic%2BService%2Band%2BAdministration%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges: null
+  econ_classes:
+  - items:
+    - amount: -10500000
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: -2742000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 2642000
+      name: Machinery and equipment
+      type: economic_classification_3
+    - amount: 206000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 43000
+      name: Payments for financial assets
+      type: economic_classification_3
+    name: Payments for financial assets
+    type: economic_classification_2
+  - items:
+    - amount: -9652000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    - amount: 3000
+      name: Provinces and municipalities
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: 6026000
+    name: Administration
+  - amount: -4308000
+    name: Governance of Public Administration
+  - amount: -4368000
+    name: Government Chief Information Officer
+  - amount: -3120000
+    name: Labour Relations and Human Resource Management
+  - amount: -2050000
+    name: Policy Development, Research and Analysis
+  - amount: -12180000
+    name: Service Delivery Support
+  special_appropriation: null
+  total_change:
+    amount: -20000000
+    percentage: -2.2292965231891424
+  virements:
+    amount: 14523000
+    label: Value of virements
+    percentage: 1.6188036703137958
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -16,7 +79,14 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: vote-10-public-service-and-administration.pdf
+    url: https://data.vulekamali.gov.za/dataset/d182c1f9-cd02-43d2-a8de-5f9f2770b74e/resource/93d5a664-e887-42e1-ad0d-691c3458dd1f/download/vote-10-public-service-and-administration.pdf
+  name: AENE 2017-18 - Vote 10 - Public Service and Administration
+  tables: null
 department_budget:
   document:
     description: ''

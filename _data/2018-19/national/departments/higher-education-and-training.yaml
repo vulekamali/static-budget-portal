@@ -2,6 +2,78 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary:
+  by_type:
+  - amount: 103430000
+    name: Announced in the budget speech
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2018-19
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253AHigher%2BEducation%2Band%2BTraining%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
+  direct_charges:
+  - amount: 76556000
+    label: National Skills Fund
+    percentage: 2.2610396836741806
+  - amount: 306222000
+    label: Sector education and training authorities
+    percentage: 2.2610244156111117
+  econ_classes:
+  - items:
+    - amount: -4700000
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: -6592000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 1400000
+      name: Buildings and other fixed structures
+      type: economic_classification_3
+    - amount: 3808000
+      name: Machinery and equipment
+      type: economic_classification_3
+    - amount: 24000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 1360000
+      name: Payments for financial assets
+      type: economic_classification_3
+    name: Payments for financial assets
+    type: economic_classification_2
+  - items:
+    - amount: 103430000
+      name: Higher education institutions
+      type: economic_classification_3
+    - amount: 4700000
+      name: Households
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: 14310000
+    name: Administration
+  - amount: -3200000
+    name: Community Education and Training
+  - amount: -250000
+    name: Planning, Policy and Strategy
+  - amount: 1910000
+    name: Skills Development
+  - amount: -12400000
+    name: Technical and Vocational Education and Training
+  - amount: 103060000
+    name: University Education
+  special_appropriation: null
+  total_change:
+    amount: 103430000
+    percentage: 0.14164487705209608
+  virements:
+    amount: 27981000
+    label: Value of virements
+    percentage: 0.03831930102286281
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

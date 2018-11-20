@@ -2,6 +2,71 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary:
+  by_type:
+  - amount: -43000000
+    name: Declared unspent funds
+    type: kind
+  - amount: 9473000
+    name: Roll-overs
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2018-19
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253AArts%2Band%2BCulture%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
+  direct_charges: null
+  econ_classes:
+  - items:
+    - amount: -9600000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: -108885000
+      name: Heritage assets
+      type: economic_classification_3
+    - amount: 9473000
+      name: Machinery and equipment
+      type: economic_classification_3
+    - amount: -6267000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 88277000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    - amount: -1687000
+      name: Higher education institutions
+      type: economic_classification_3
+    - amount: 2941000
+      name: Households
+      type: economic_classification_3
+    - amount: 33527000
+      name: Non-profit institutions
+      type: economic_classification_3
+    - amount: -41306000
+      name: Public corporations and private enterprises
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: 9473000
+    name: Administration
+  - amount: -16873000
+    name: Arts and Culture Promotion and Development
+  - amount: 102077000
+    name: Heritage Promotion and Preservation
+  - amount: -128204000
+    name: Institutional Governance
+  special_appropriation: null
+  total_change:
+    amount: -33527000
+    percentage: -0.7668109702433339
+  virements:
+    amount: 175274000
+    label: Value of virements
+    percentage: 4.008769827256542
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
