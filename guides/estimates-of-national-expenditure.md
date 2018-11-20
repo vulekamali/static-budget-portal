@@ -1,15 +1,16 @@
 ---
 layout: guide_item
+data_key: estimates-of-national-expenditure
 ---
 
 
-{% assign page_data = site.data.guides.per %}
+{% assign page_data = site.data.guides.estimates-of-national-expenditure %}
 
 
-<h1 class="Page-mainHeading">Estimates of National Expenditure</h1>
+<h1 class="Page-mainHeading">Dataset Guide: Estimates of National Expenditure</h1>
 
 <div class="BasicContent u-marginBottom15">
-  <div class="BasicContent-title">Introduction</div>
+  <div class="BasicContent-title">Overview</div>
   <p>
     The Estimates of National Expenditure (ENE) publications describe in detail the planned spending in all national government votes over the three-year medium-term expenditure framework (MTEF) period, government’s expenditure planning window. An abridged publication is available together with more detailed e-publications.
   </p>
@@ -19,19 +20,15 @@ layout: guide_item
   </p>
 
   <p>
-    The Appropriation Bill itemises national government spending by vote and main economic classification. Allocations are made by economic classification. The main categories of economic classification are: current payments (payments made for operational requirements such as those for compensation of employees and goods and services); transfers and subsidies; payments for capital assets (assets that can be used for more than one year); and payments for financial assets (loans or equity investments in public corporations).
-  </p>
-
-  <p>
     Generally, a vote specifies the total amount of money appropriated to a national government department.  A national government vote is generally synonymous with a national government department. However, in certain instances, a vote may contain more than one national government department. For instance, the Cooperative Governance and Traditional Affairs vote contains two departments, the Department of Cooperative Governance and the Department of Traditional Affairs.
   </p>
 
   <p>
-    The ENE publications include information on how government institutions have spent their budgets in previous years, and how they intend to use their allocations over the medium term to achieve their goals, including the outputs and outcomes spending is expected to lead to. Each chapter in the ENE abridged publication relates to a vote. 
+    The ENE publications include information on how government institutions have spent their budgets in previous years, and how they intend to use their allocations over the medium term to achieve their goals, including the outputs and outcomes spending is expected to lead to. 
   </p>
 
   <p>
-    The publications include tables depicting non-financial performance indicators and targets, departmental receipts, and detailed expenditure trends and estimates by programme, sub-programme and economic classification for each department and for selected entities. 
+    The publications include tables depicting non-financial performance indicators and targets, departmental receipts, and detailed expenditure trends and estimates.
   </p>
 
   <p>
@@ -226,7 +223,7 @@ layout: guide_item
     </li>
 
     <li>
-      Expenditure trends and estimates for transfers and subsidies  (economic classification Level 3
+      Expenditure trends and estimates for transfers and subsidies  (economic classification Level 3)
     </li>
 
     <li>
@@ -238,7 +235,7 @@ layout: guide_item
     </li>
 
     <li>
-      Expenditure trends and estimates for each programme, by sub-programme and economic classification (Level 2), and by transfers and subsidies (Level 3))
+      Expenditure trends and estimates for each programme, by sub-programme and economic classification (Level 2), and by transfers and subsidies (Level 3)
     </li>
   </ul>
 
