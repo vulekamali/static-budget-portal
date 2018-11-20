@@ -21,12 +21,14 @@ layout: page-shell
   {% assign source_type_revenue_short = 'ENE' %}
   {% assign source_type_adjusted = "Adjusted Estimates of National Expenditure" %}
   {% assign source_type_adjusted_short = "AENE" %}
+  {% assign guide = "/guides/estimates-of-national-expenditure" %}
 {% else %}
   {% assign source_type = 'Estimates of Provincial Expenditure' %}
   {% assign source_type_revenue = 'Estimates of Provincial Revenue and Expenditure' %}
   {% assign source_type_revenue_short = 'EPRE' %}
   {% assign source_type_adjusted = "Adjusted Estimates of Provincial Revenue and Expenditure" %}
   {% assign source_type_adjusted_short = "AEPRE" %}
+  {% assign guide = null %}
 {% endif %}
 
 
@@ -174,6 +176,7 @@ layout: page-shell
           title="Programme budgets"
           subtitle=subtitle
           csv=page_data.programmes.department_data_csv
+          guide=guide
 
           description="Activities of this department"
         %}
@@ -196,6 +199,7 @@ layout: page-shell
           pdf=pdf
           excel=excel
           csv=page_data.subprogramme_by_programme.department_data_csv
+          guide=guide
 
           subtitle=subtitle
         %}
@@ -218,6 +222,7 @@ layout: page-shell
           pdf=pdf
           excel=excel
           csv=page_data.economic_classification_by_programme.department_data_csv
+          guide=guide
 
           subtitle=subtitle
         %}
@@ -240,6 +245,7 @@ layout: page-shell
           pdf=pdf
           excel=excel
           csv=page_data.programme_by_economic_classification.department_data_csv
+          guide=guide
 
           subtitle=subtitle
         %}
@@ -394,6 +400,7 @@ layout: page-shell
           pdf=pdf_link
           excel=excel
           csv=page_data.expenditure_over_time.department_data_csv
+          guide=guide
 
           color="purple"
           title="Budgeted and Actual Expenditure"

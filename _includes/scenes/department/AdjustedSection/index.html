@@ -97,23 +97,25 @@
     </div>
 
     {% if include.items == null %}
-      <div class="Message Message--secondary u-marginBottom60 ">
-        <div class="Message-content">
-          {%
-            include components/universal/Icon/index.html
-            type="info"
-            size="large"
-          %}
-          <span class="Message-heading">
-            Please note
-          </span>
+      <div class="AdjustedSection-item">
+        <div class="Message Message--secondary u-marginBottom60 ">
+          <div class="Message-content">
+            {%
+              include components/universal/Icon/index.html
+              type="info"
+              size="large"
+            %}
+            <span class="Message-heading">
+              Please note
+            </span>
+          </div>
+          <div class="Message-text Message-text--secondary">No adjusted budget data available for this year yet</div>
         </div>
-        <div class="Message-text Message-text--secondary">No adjusted budget data available for this year yet</div>
       </div>
     {% endif %}
 
     {% if include.items %}
-      <div class="AdjustedSection-item AdjustedSection-item">
+      <div class="AdjustedSection-item">
         <div class="AdjustedSection-indicatorsGrid">
           <div class="AdjustedSection-indicator">
             <div class="Title Title--interSection u-marginBottom10">
