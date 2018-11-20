@@ -40,15 +40,21 @@ npm run build
 
 Then stage the changes and commit as you would normally for a merge.
 
-Be sure to run jekyl and have a quick look whether things look and work right.
+Be sure to run Jekyll and have a quick look whether things look and work right.
 
 ### Run a local server to view the site
+Install Jekyll, then serve the site with
 
 ```
 bundle exec jekyll serve --watch
 ```
 
-Regenerating the site can take over a minute on a typical dev machine. You can speed it up by working on a subset of the site data. We delete a bunch of the routing files and tell git to ignore those changes in your local repository using `git update-index --assume-unchanged`. This means only national departments and departments from Mpumalanga and the Eastern Cape will exist, bringing regeneration time down to about 10s.
+Regenerating the site can take over a minute on a typical dev machine. 
+You can speed it up by working on a subset of the site data. 
+We delete a bunch of the routing files and tell git to ignore those changes in your local repository using 
+`git update-index --assume-unchanged`. 
+This means only national departments and departments from Mpumalanga and the Eastern Cape will exist,
+ bringing regeneration time down to about 10s.
 
 ```
 git ls-files|grep provincial|egrep -v '(mpumalanga|eastern-cape)' | grep html | tr '\n' ' ' | xargs git update-index --assume-unchanged
@@ -61,19 +67,75 @@ To remove `assume-unchanged` from all files with that currently configured:
 git ls-files -v|grep '^h'| sed 's/^h//' | xargs git update-index --no-assume-unchanged
 ```
 
-### Regenerating data files
+## Data generation
 
-#### Using Travis CI
+The static-budget-portal is the front-end (static site) of Vulekamali and does not generate or retrieve data.
+
+The static-budget-portal requests data from the [Data Manager](https://github.com/OpenUpSA/budget-portal) 
+and stores it locally in the `_data` directory, which it then uses to build the static site via Jekyll.
+
+That means the actual data being served in production is managed by Git.
+Production data exists in the `master` branch of static-budget-portal.
+
+The static-budget-portal can be pointed towards any one of the following Data Manager states:
+1) Local (development)
+2) Staging 
+3) Production
+
+
+The generated data will differ, depending on the code running in whichever Data Manager state you are building against.
+
+
+### Local (development)
+
+You will need to run a local Data Manager instance for this to work.
+
+Please see instructions for [Data Manager](https://github.com/OpenUpSA/budget-portal) in order to set that app up.
+
+After you've completed the setup for Data Manager, you can continue reading.
+
+Set your PORTAL_URL environment variable to point to your local app:
+```
+export PORTAL_URL=http://localhost:8000/ 
+python generate/from_dynamic.py
+```
+
+Generate data for each department and each financial year with the following:
+
+```
+source env/bin/activate
+python generate/from_dynamic.py
+```
+
+
+Then use `git status` and `git diff` to get an idea of what changed. 
+If it looks sensible, add the updated files and commit and PR back into the branch where you want changes reflected.
+
+When modifying the Dynamic Budget Portal server, you might want to point to your development server:
+
+You can update one file at a time as follows:
+```
+curl -o _data/2016-17/national/departments/planning-monitoring-and-evaluation.yaml https://dynamicbudgetportal.openup.org.za/2016-17/national/departments/planning-monitoring-and-evaluation.yaml
+```
+
+### Travis CI (staging/production)
+
+[Travis CI](https://travis-ci.org) is used to build page data for staging or production.
 
 Every branch push results in a Travis CI build, but by default it won't regenerate data files.
 
 Add `[ci]` to the commit message of the latest commit in the pushed branch to opt into generating data files.
 
-Add `[staging]` to that commit message  to use the staging web data server instead of production. This is useful if we want to see what the data will look like for a development branch of the web data server.
+Add `[staging]` to that commit message  to use the staging web data server instead of production. 
+This is useful if we want to see what the data will look like for a development branch of the web data server.
 
-If any files changed, Travis CI will add and commit the changes and push that back to the branch. That means you'll need to pull the branch and perhaps use `pull --rebase` if you've since committed other changes. ***Don't trust the changes because it was a robot - check that the site works as expected and the diff looks reasonable before merging your PR***
+If any files changed, Travis CI will add and commit the changes and push that back to the branch. 
+That means you'll need to pull the branch and perhaps use `pull --rebase` if you've since committed other changes. 
+***Don't trust the changes because it was a robot - check that the site works as expected and the diff looks reasonable 
+before merging your PR***
 
-Best practise is to place these tags as the first part of the first line of the commit message. This makes it easy to see whether staging or production was used in the pull request list of commits.
+Best practise is to place these tags as the first part of the first line of the commit message. 
+This makes it easy to see whether staging or production was used in the pull request list of commits.
 
 To create a commit without any code changes to trigger a build, use `--allow-empty`. e.g.
 
@@ -81,25 +143,37 @@ To create a commit without any code changes to trigger a build, use `--allow-emp
 git commit -m "[ci][staging] trigger data regeneration for new department xyz data" --allow-empty
 ```
 
-#### Locally
+#### Staging workflow
 
-```
-source env/bin/activate
-python generate/from_dynamic.py
-```
+![Staging Branch Workflow](docs/images/staging-branch-workflow.png)
 
-Then use `git status` and `git diff` to get an idea of what changed. If it looks sensible, add the updated files and commit and PR back into the branch where you want changes reflected.
+- Checkout a new `..-data-build` branch (this branch must only contain `_data/` changes)
+- Checkout a new `..-feature-build` branch from the new `data-build` branch (this branch must only contain JS, HTML, CSS etc. changes)
+- Switch back to the `..-data-build` branch
+- Commit this new `..-data-build` branch with `[ci][staging] <message>`, if empty then include parameter `--allow-empty` 
+- Push this new commit to origin
+- Check [Travis CI](https://travis-ci.org) to see the status of the build and if there are any errors
+- When Travis has completed, pull the branch (`..-data-build`) again to fetch the new data Travis built
+for us
+- Merge `..-data-build` into `..-feature-build`
+- Serve the site locally using Jekyll to confirm that the data generated by travis during staging is correct, and that
+the front-end renders correctly.
+- If all is well, you should be clear to produce and deploy production data.
 
-When modifying the Dynamic Budget Portal server, you might want to point to your development server:
+#### Deploy to production
 
-```
-PORTAL_URL=http://localhost:8000/ python generate/from_dynamic.py
-```
+Before deploying to production, ensure you've been through the Staging workflow described above.
 
-You can update one file at a time as follows:
-```
-curl -o _data/2016-17/national/departments/planning-monitoring-and-evaluation.yaml https://dynamicbudgetportal.openup.org.za/2016-17/national/departments/planning-monitoring-and-evaluation.yaml
-```
+- Checkout the existing `..-data-build` branch you've been working with
+- Commit this branch to origin with `[ci]` (no staging) to build data against production
+- If you've had any additional UI changes, follow step 7 from "Staging workflow"
+- If all is well, open a pull request on Github to merge `..-feature-build` into `..-data-build`
+    - In theory this PR should only show code changes to the UI
+    - This PR should include screenshots of a local Jekyll server with the latest code/data, of the specific changes made
+- Open a Github PR to merge `..-data-build` into `master` 
+    - This will kick off a Travis CI job, but it will not build the site (should last ~30 sec)
+    
+
 
 Architecture
 --------------
