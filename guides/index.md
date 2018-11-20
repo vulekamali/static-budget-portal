@@ -1,6 +1,5 @@
 ---
 layout: guides
-data_key: index
 ---
 
 {% assign page_data = site.data.guides.index %}
