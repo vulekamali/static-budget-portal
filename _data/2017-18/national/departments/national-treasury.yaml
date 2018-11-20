@@ -2,6 +2,92 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary:
+  by_type:
+  - amount: 4792099000
+    name: Announced in the budget speech
+    type: kind
+  - amount: -237414000
+    name: Declared unspent funds
+    type: kind
+  - amount: 5207901000
+    name: Emergency funding
+    type: kind
+  - amount: 22500000
+    name: Self-financing
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2017-18
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2017-18-v3/aggregate/%3Fcut%3Dfinyear.finyear%253A2017%257Cvoteno.department%253ANational%2BTreasury%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges:
+  - amount: 994816000
+    label: Debt-service costs
+    percentage: 0.6127483143702339
+  - amount: -137582000
+    label: National Revenue Fund payments
+    percentage: -35.50035995262559
+  econ_classes:
+  - items:
+    - amount: 24000000
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: -15611000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 3730000
+      name: Machinery and equipment
+      type: economic_classification_3
+    - amount: 4730000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 10000000000
+      name: Payments for financial assets
+      type: economic_classification_3
+    name: Payments for financial assets
+    type: economic_classification_2
+  - items:
+    - amount: -230000000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    - amount: -4229000
+      name: Foreign governments and international organisations
+      type: economic_classification_3
+    - amount: 4466000
+      name: Households
+      type: economic_classification_3
+    - amount: -2000000
+      name: Public corporations and private enterprises
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: 24761000
+    name: Administration
+  - amount: 9997957000
+    name: Asset and Liability Management
+  - amount: 24342000
+    name: Economic Policy, Tax, Financial Regulation and Research
+  - amount: -8730000
+    name: Financial Accounting and Supply Chain Management Systems
+  - amount: -5373000
+    name: International Financial Relations
+  - amount: 16943000
+    name: Public Finance and Budget Management
+  - amount: -264814000
+    name: Technical Support and Development Finance
+  special_appropriation: null
+  total_change:
+    amount: 9785086000
+    percentage: 31.77056431948601
+  virements:
+    amount: 153122000
+    label: Value of virements
+    percentage: 0.4971619411140931
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'

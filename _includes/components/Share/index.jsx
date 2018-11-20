@@ -55,9 +55,9 @@ const Markup = ({ selected, anchor, updateShare, color }) => {
             onChange={event => updateShare(event.target.value)}
             value={selected}
           >
-            <option value="link">as Link</option>
-            <option value="facebook">on Facebook</option>
-            <option value="twitter">on Twitter</option>
+            <option value="link">Share as Link</option>
+            <option value="facebook">Share on Facebook</option>
+            <option value="twitter">Share on Twitter</option>
           </select>
         </div>
         <div className="Share-button">

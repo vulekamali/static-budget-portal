@@ -1,10 +1,7 @@
 ---
-layout: guides
+layout: guide_item
 data_key: performance-and-expenditure-reviews
 ---
-
-
-{% assign page_data = site.data.guides.per %}
 
 
 <h1 class="Page-mainHeading">Performance and Expenditure Reviews (PER)</h1>

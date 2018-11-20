@@ -2,6 +2,58 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary:
+  by_type: null
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2017-18
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2017-18-v3/aggregate/%3Fcut%3Dfinyear.finyear%253A2017%257Cvoteno.department%253ARural%2BDevelopment%2Band%2BLand%2BReform%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges: null
+  econ_classes:
+  - items:
+    - amount: 12392000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 12555000
+      name: Machinery and equipment
+      type: economic_classification_3
+    - amount: -929000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: -56204000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    - amount: 4729000
+      name: Households
+      type: economic_classification_3
+    - amount: 27457000
+      name: Provinces and municipalities
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: 14170000
+    name: Administration
+  - amount: 12017000
+    name: Land Reform
+  - amount: -10839000
+    name: National Geomatics Management Services
+  - amount: -7934000
+    name: Restitution
+  - amount: -7414000
+    name: Rural Development
+  special_appropriation: null
+  total_change:
+    amount: 0
+    percentage: 0.0
+  virements:
+    amount: 737113000
+    label: Value of virements
+    percentage: 7.237781120633449
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

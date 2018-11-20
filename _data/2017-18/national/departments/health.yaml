@@ -2,6 +2,75 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary:
+  by_type:
+  - amount: 19834000
+    name: Unforeseeable/unavoidable
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2017-18
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2017-18-v3/aggregate/%3Fcut%3Dfinyear.finyear%253A2017%257Cvoteno.department%253AHealth%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges: null
+  econ_classes:
+  - items:
+    - amount: 113326000
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: 72606000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: -70662000
+      name: Buildings and other fixed structures
+      type: economic_classification_3
+    - amount: -22173000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 79000
+      name: Payments for financial assets
+      type: economic_classification_3
+    name: Payments for financial assets
+    type: economic_classification_2
+  - items:
+    - amount: -133648000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    - amount: 1972000
+      name: Households
+      type: economic_classification_3
+    - amount: 8500000
+      name: Non-profit institutions
+      type: economic_classification_3
+    - amount: 49834000
+      name: Provinces and municipalities
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: 2000000
+    name: Administration
+  - amount: -400000
+    name: Health Regulation and Compliance Management
+  - amount: 19434000
+    name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+  - amount: -200400000
+    name: Hospitals, Tertiary Health Services and Human Resource Development
+  - amount: 199600000
+    name: National Health Insurance, Health Planning and Systems Enablement
+  - amount: -400000
+    name: Primary Health Care Services
+  special_appropriation: null
+  total_change:
+    amount: 19834000
+    percentage: 0.046530589052999755
+  virements:
+    amount: 452996000
+    label: Value of virements
+    percentage: 1.0627291881946495
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
