@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: guide_item
 ---
 
 
@@ -56,26 +56,6 @@ layout: guides
 
   <p>
     Once Cabinet has approved the recommendations, all institutions are informed of their budget allocations. Institutions then finalise their budgets accordingly and prepare and submit their data and narrative inputs for the ENE publications to the National Treasury.  National Treasury then verifies and edits these inputs to produce the ENE publications. The ENE is published in a number of formats (including in print and as an Excel pivot table). The ENE is tabled in Parliament annually as part of the national budget.
-  </p>
-</div>
-
-<div class="BasicContent u-marginBottom15">
-  <div class="BasicContent-title">What can I do with the data?</div>
-
-  <p>
-    The dataset emanates from the yearly national government budget process. At the beginning of each budget process, the National Treasury publishes guidelines depicting the information that governmental institutions are expected to submit to the National Treasury in their budget submissions. A vital part of this process involves the large number of public institutions planning, negotiating and deciding collectively how to spend public resources.
-  </p>
-
-  <p>
-    As the budget process is focused on institutional performance in relation to government outcomes, it is organised by function of government. The trade-offs of financing different policy objectives within the constraints of the expenditure ceiling are examined, culminating in recommendations on how institutional policies and practices, and arrangements, can be adapted to best achieve the function’s outcomes. 
-  </p>
-
-  <p>
-    These function group discussions shape the allocations to specific government institutions. The recommendations from each function group are then presented to the ministers’ committee on the budget technical committee (MTEC), a committee comprising the directors-general of central national government departments. Once this part of the process has been finalised, the recommendations endorsed by MTEC are taken to the ministers’ committee on the budget. This committee then reviews the recommendations put forward in respect of the different function groups and ultimately considers the trade-offs and priorities for government as a whole. The recommendations of the ministers’ committee on the budget are then tabled in Cabinet. 
-  </p>
-
-  <p>
-    Once Cabinet has approved the recommendations, all institutions are informed of their budget allocations. Institutions then finalise their budgets accordingly and prepare and submit their data and narrative inputs for the ENE publications to the National Treasury.  National Treasury then verifies and edits these inputs to produce the ENE publications. The ENE is published in a number of formats (including in print and as an Excel pivot table). The ENE is tabled in Parliament annually as part of the national budget.  
   </p>
 </div>
 
@@ -320,9 +300,13 @@ layout: guides
 <div class="BasicContent u-marginBottom15">
   <div class="BasicContent-title">Further reading and resources</div>
 
-  <p>
-    Estimates of National Expenditure Overview guide - The introductory chapter of the abridged ENE is a useful guide to understanding that year’s Budget and ENE process: <a target="_blank" rel="noopener noreferrer"  href="http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Overview.pdf">http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Overview.pdf</a>
-  </p>
+  <ul>
+    <li>
+      Estimates of National Expenditure Overview guide - The introductory chapter of the abridged ENE is a useful guide to understanding that year’s Budget and ENE process: <a target="_blank" rel="noopener noreferrer"  href="http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Overview.pdf">http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Overview.pdf</a>
+    </li>
 
-  <p>
-    National Treasury’s main page for national budget information: <a target="_blank" rel="noopener noreferrer" href="http://www.treasury.gov.za/documents/national%20budget/default.aspx">http://www.treasury.gov.za/documents/national%20budget/default.aspx</a>
+    <li>
+      National Treasury’s main page for national budget information: <a target="_blank" rel="noopener noreferrer" href="http://www.treasury.gov.za/documents/national%20budget/default.aspx">http://www.treasury.gov.za/documents/national%20budget/default.aspx</a>
+    </li>
+  </ul>
+</div>

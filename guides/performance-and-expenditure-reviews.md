@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: guide_item
 ---
 
 
