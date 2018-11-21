@@ -27,7 +27,7 @@ layout: base
   {% assign page_data =  site.data.datasets[page.data_key].index %}
 
 {% elsif page.layout == 'contributed-data' %}
-  {% assign page_data = site.data.datasets.contributed.index %}
+  {% assign page_data = site.data.datasets.contributed %}
 
 {% elsif page.layout == 'dataset_landing_page' %}
   {% assign page_data = site.data.datasets.index %}
