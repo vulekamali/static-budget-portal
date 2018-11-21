@@ -56,7 +56,7 @@ layout: page-shell
                 {% for resource in page_data.resources %}
                   {% if resource.format == 'PNG' %}
                   {% else %}
-                    <a href="{{ resource.url }}" target=_blank" class="Button is-inline u-marginTop15">{{ resource.name }}</a>
+                    <a href="{{ resource.url }}" target="_blank" class="Button is-inline u-marginTop15">{{ resource.name }}</a>
                   {% endif %}
                 {% endfor %}
               </div>
@@ -66,8 +66,15 @@ layout: page-shell
         </div>
       {% endif %}
 
-      {% if page_data.category.slug == "conditional-grant-frameworks" %}
-        <embed src="{{ page_data.resources[0].url }}#view=FitH" type="application/pdf" width="100%" height="300px" class="PdfEmbed" />
+      {% if 
+        page_data.category.slug == "frameworks-for-conditional-grants-to-provinces" 
+        or page_data.category.slug == "frameworks-for-conditional-grants-to-municipalities" 
+      %}
+        {% assign source = page_data.resources[0].url %}
+        {%
+          include scenes/government_dataset/PdfEmbed/index.html
+          source=source
+        %}
       {% endif %}
 
       {% if page_data.usage %}
