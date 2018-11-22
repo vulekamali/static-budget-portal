@@ -1,10 +1,11 @@
 import { h } from 'preact';
 import CssTransitionGroup from 'preact-css-transition-group';
-import Icon from './../../universal/Icon/index.jsx';
+import Icon from './../../Icon/index.jsx';
 
 
 export default function Modal({ markup, title, closeModal }) {
   const buildModal = () => {
+
     if (!markup || !title) {
       return null;
     }
@@ -18,7 +19,7 @@ export default function Modal({ markup, title, closeModal }) {
             <div className="Modals-content">{markup}</div>
           </div>
           <button className="Modals-close" onClick={closeModal}>
-            <Icon type="close" />
+            <Icon type="close" size="small" />
           </button>
         </div>
       </div>

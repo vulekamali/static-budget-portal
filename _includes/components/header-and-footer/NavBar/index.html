@@ -2,9 +2,8 @@
   <div class="NavBar-mobileWrap js-mobileTrigger">
     <div class="NavBar-mobileTrigger">
       {%
-        include components/universal/Icon/index.html
+        include components/Icon/index.html
         type="hamburger"
-        size="large"
       %}
     </div>
   </div>
@@ -50,7 +49,6 @@
             {% assign finalUrl = item.url %}
           {% endif %} 
 
-
           <li class="NavBar-item{{ alignmentClass }}">
             <a
               class="NavBar-link{{ activeClass }}{{ subLinkClass }}"
@@ -60,9 +58,8 @@
               {% if item.id == 'homepage' %}
                 <span class="NavBar-iconWrap">
                   {%
-                    include components/universal/Icon/index.html
+                    include components/Icon/index.html
                     type="home"
-                    size="large"
                   %}
                 </span>
                 <span class="NavBar-text is-mobileOnly">Home</span>
