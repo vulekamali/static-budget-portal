@@ -2,6 +2,7 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary: null
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -33,8 +34,137 @@ description: 'National department: Social Development budget data for the 2015-1
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes: []
-expenditure_over_time: null
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Social%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 2889000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 294126000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 130093278000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Social Assistance
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 732000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 239193000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 119895000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Social Policy and Integrated Service Delivery
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1413000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 6659330000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 95422000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Social Security Policy and Administration
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 47500000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 4602000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 355086000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 255174000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Welfare Services Policy Development and Implementation Support
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 103166848000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 111144766000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 117110759000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 128597654000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 138168640000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 148106330000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 157917404000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 142695209691
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 145657476802
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 145039106698
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 150782372311
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 154045092533
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 155345470570
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 157917404000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,20 +223,73 @@ is_vote_primary: true
 name: Social Development
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes: []
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Social%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Welfare Services Policy Development and Implementation Support
+      total_budget: 4602000.0
+      type: programme
+    - name: Administration
+      total_budget: 2889000.0
+      type: programme
+    - name: Social Security Policy and Administration
+      total_budget: 1413000.0
+      type: programme
+    - name: Social Policy and Integrated Service Delivery
+      total_budget: 732000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Welfare Services Policy Development and Implementation Support
+      total_budget: 47500000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 294126000.0
+      type: programme
+    - name: Welfare Services Policy Development and Implementation Support
+      total_budget: 255174000.0
+      type: programme
+    - name: Social Policy and Integrated Service Delivery
+      total_budget: 119895000.0
+      type: programme
+    - name: Social Security Policy and Administration
+      total_budget: 95422000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Social Assistance
+      total_budget: 130093278000.0
+      type: programme
+    - name: Social Security Policy and Administration
+      total_budget: 6659330000.0
+      type: programme
+    - name: Welfare Services Policy Development and Implementation Support
+      total_budget: 355086000.0
+      type: programme
+    - name: Social Policy and Integrated Service Delivery
+      total_budget: 239193000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Social%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
+    total_budget: 297015000.0
   - name: Social Assistance
-    total_budget: null
+    total_budget: 130093278000.0
   - name: Social Security Policy and Administration
-    total_budget: null
+    total_budget: 6756165000.0
   - name: Welfare Services Policy Development and Implementation Support
-    total_budget: null
+    total_budget: 662362000.0
   - name: Social Policy and Integrated Service Delivery
-    total_budget: null
+    total_budget: 359820000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: social-development
@@ -115,7 +298,137 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes: []
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Social%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate Management
+      total_budget: 101298000.0
+      type: subprogramme
+    - name: Department Management
+      total_budget: 69916000.0
+      type: subprogramme
+    - name: Finance
+      total_budget: 55243000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 30985000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 30140000.0
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 9433000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Old Age
+      total_budget: 53517707000.0
+      type: subprogramme
+    - name: Child Support
+      total_budget: 47841724000.0
+      type: subprogramme
+    - name: Disability
+      total_budget: 20209911000.0
+      type: subprogramme
+    - name: Foster Care
+      total_budget: 5534585000.0
+      type: subprogramme
+    - name: Care Dependency
+      total_budget: 2460930000.0
+      type: subprogramme
+    - name: Grant-in-Aid
+      total_budget: 274195000.0
+      type: subprogramme
+    - name: Social Relief of Distress
+      total_budget: 249212000.0
+      type: subprogramme
+    - name: War Veterans
+      total_budget: 5014000.0
+      type: subprogramme
+    name: Social Assistance
+    type: programme
+  - items:
+    - name: National Development Agency
+      total_budget: 184381000.0
+      type: subprogramme
+    - name: Community Development
+      total_budget: 94787000.0
+      type: subprogramme
+    - name: Registration and Monitoring of Non-Profit Organisations
+      total_budget: 30488000.0
+      type: subprogramme
+    - name: Population Policy Promotion
+      total_budget: 27297000.0
+      type: subprogramme
+    - name: Special Projects and Innovation
+      total_budget: 8463000.0
+      type: subprogramme
+    - name: Substance Abuse Advisory Services and Oversight
+      total_budget: 6114000.0
+      type: subprogramme
+    - name: Social Policy Research and Development
+      total_budget: 5204000.0
+      type: subprogramme
+    - name: Programme Management
+      total_budget: 3086000.0
+      type: subprogramme
+    name: Social Policy and Integrated Service Delivery
+    type: programme
+  - items:
+    - name: Social Grants Administration
+      total_budget: 6579085000.0
+      type: subprogramme
+    - name: Social Grants Fraud Investigations
+      total_budget: 78885000.0
+      type: subprogramme
+    - name: Social Security Policy Development
+      total_budget: 48440000.0
+      type: subprogramme
+    - name: Appeals Adjudication
+      total_budget: 45012000.0
+      type: subprogramme
+    - name: Programme Management
+      total_budget: 4743000.0
+      type: subprogramme
+    name: Social Security Policy and Administration
+    type: programme
+  - items:
+    - name: Social Worker Scholarships
+      total_budget: 276144000.0
+      type: subprogramme
+    - name: HIV and AIDS
+      total_budget: 81219000.0
+      type: subprogramme
+    - name: Children
+      total_budget: 80295000.0
+      type: subprogramme
+    - name: Substance Abuse
+      total_budget: 62570000.0
+      type: subprogramme
+    - name: Social Crime Prevention and Victim Empowerment
+      total_budget: 59875000.0
+      type: subprogramme
+    - name: People with Disabilities
+      total_budget: 28494000.0
+      type: subprogramme
+    - name: Service Standards
+      total_budget: 27561000.0
+      type: subprogramme
+    - name: Older Persons
+      total_budget: 20701000.0
+      type: subprogramme
+    - name: Youth
+      total_budget: 13197000.0
+      type: subprogramme
+    - name: Families
+      total_budget: 8744000.0
+      type: subprogramme
+    - name: Programme Management
+      total_budget: 3562000.0
+      type: subprogramme
+    name: Welfare Services Policy Development and Implementation Support
+    type: programme
 title: Social Development budget 2015-16  - vulekamali
 vote_number: 17
 vote_primary:

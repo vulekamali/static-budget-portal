@@ -101,7 +101,6 @@
 @import 'components/department-budgets/ArrowButtons/styles';
 @import 'components/department-budgets/DeptSectionHead/styles';
 @import 'components/department-budgets/SectionIndicator/styles';
-@import 'components/contributed-data/PdfEmbed/styles';
 @import 'components/contributed-data/CsoMeta/styles';
 @import 'components/contributed-data/Screenshots/styles';
 @import 'components/learning-centre/Glossary/styles';
@@ -111,19 +110,24 @@
 @import 'components/about/Stages/styles';
 
 @import 'scenes/homepage/Hero/styles';
-@import 'scenes/department/AdvancedChartSection/styles';
 @import 'scenes/homepage/Features/styles';
 @import 'scenes/homepage/VideoSection/styles';
 @import 'scenes/homepage/EventSection/styles';
 @import 'scenes/homepage/AboutSection/styles';
+@import 'scenes/department/AdjustedSection/styles';
+@import 'scenes/department/AdjustedSection/components/ChangeIndicator/styles';
+@import 'scenes/department/ProgrammesSection/styles';
+@import 'scenes/department/ExpenditureSection/styles';
+@import 'scenes/department/SmallMultiplesSection/styles';
+@import 'scenes/government_dataset/PdfEmbed/styles';
 
 @import 'components/Share/styles';
 @import 'components/LinksList/styles';
 @import 'components/Message/styles';
-@import 'components/ChartSourceController/styles';
-@import 'components/ChartSourceController/components/BarChart/styles';
 @import 'components/Card/styles';
 @import 'components/Title/styles';
 @import 'components/Icon/styles';
 @import 'components/Preview/styles';
 @import 'components/Preview/components/Marker/styles';
+@import 'components/ChartSourceController/styles';
+@import 'components/ChartSourceController/components/BarChart/styles';

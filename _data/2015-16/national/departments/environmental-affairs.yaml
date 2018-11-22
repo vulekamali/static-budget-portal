@@ -2,6 +2,7 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary: null
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -33,8 +34,182 @@ description: 'National department: Environmental Affairs budget data for the 201
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes: []
-expenditure_over_time: null
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Environmental%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 118799000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 579250000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 16000000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 31381000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 683000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 512858000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 110678000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Biodiversity and Conservation
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 572000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 67177000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 11532000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Chemicals and Waste Management
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1113000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 161823000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 77213000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Climate Change and Air Quality
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 491708000.0
+        type: economic_classification_2
+      - name: Payments for capital assets
+        total_budget: 22196000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 2437471000.0
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 695489000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Environmental Programmes
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 917000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 126600000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Legal, Authorisations and Compliance
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 13822000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 470707000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Oceans and Coasts
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 4131499000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 4942661000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 5200307000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 5680386000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 5947989000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 6467479000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 6537923000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 5714482196
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 6477457786
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 6440466173
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 6660324275
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 6631450638
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 6783596411
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 6537923000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -93,24 +268,101 @@ is_vote_primary: true
 name: Environmental Affairs
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes: []
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Environmental%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 118799000.0
+      type: programme
+    - name: Environmental Programmes
+      total_budget: 22196000.0
+      type: programme
+    - name: Oceans and Coasts
+      total_budget: 13822000.0
+      type: programme
+    - name: Climate Change and Air Quality
+      total_budget: 1113000.0
+      type: programme
+    - name: Legal, Authorisations and Compliance
+      total_budget: 917000.0
+      type: programme
+    - name: Biodiversity and Conservation
+      total_budget: 683000.0
+      type: programme
+    - name: Chemicals and Waste Management
+      total_budget: 572000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Programmes
+      total_budget: 491708000.0
+      type: programme
+    - name: Biodiversity and Conservation
+      total_budget: 31381000.0
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Programmes
+      total_budget: 695489000.0
+      type: programme
+    - name: Administration
+      total_budget: 579250000.0
+      type: programme
+    - name: Oceans and Coasts
+      total_budget: 470707000.0
+      type: programme
+    - name: Legal, Authorisations and Compliance
+      total_budget: 126600000.0
+      type: programme
+    - name: Biodiversity and Conservation
+      total_budget: 110678000.0
+      type: programme
+    - name: Climate Change and Air Quality
+      total_budget: 77213000.0
+      type: programme
+    - name: Chemicals and Waste Management
+      total_budget: 67177000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Environmental Programmes
+      total_budget: 2437471000.0
+      type: programme
+    - name: Biodiversity and Conservation
+      total_budget: 512858000.0
+      type: programme
+    - name: Climate Change and Air Quality
+      total_budget: 161823000.0
+      type: programme
+    - name: Administration
+      total_budget: 16000000.0
+      type: programme
+    - name: Chemicals and Waste Management
+      total_budget: 11532000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Environmental%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
+    total_budget: 714049000.0
   - name: Legal, Authorisations and Compliance
-    total_budget: null
+    total_budget: 127517000.0
   - name: Oceans and Coasts
-    total_budget: null
+    total_budget: 484529000.0
   - name: Climate Change and Air Quality
-    total_budget: null
+    total_budget: 240149000.0
   - name: Biodiversity and Conservation
-    total_budget: null
+    total_budget: 655600000.0
   - name: Environmental Programmes
-    total_budget: null
+    total_budget: 3646864000.0
   - name: Chemicals and Waste Management
-    total_budget: null
+    total_budget: 79281000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: environmental-affairs
@@ -119,7 +371,155 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes: []
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Environmental%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate Affairs
+      total_budget: 274117000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 159779000.0
+      type: subprogramme
+    - name: Environmental Advisory Services
+      total_budget: 105523000.0
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 61348000.0
+      type: subprogramme
+    - name: Environmental Sector Coordination
+      total_budget: 59907000.0
+      type: subprogramme
+    - name: Management
+      total_budget: 53375000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: South African National Parks
+      total_budget: 278675000.0
+      type: subprogramme
+    - name: South African National Biodiversity Institute
+      total_budget: 232149000.0
+      type: subprogramme
+    - name: Protected Areas Systems Management
+      total_budget: 47280000.0
+      type: subprogramme
+    - name: iSimangaliso Wetland Park Authority
+      total_budget: 31628000.0
+      type: subprogramme
+    - name: Biodiversity Planning and Management
+      total_budget: 26025000.0
+      type: subprogramme
+    - name: Biodiversity and Conservation Management
+      total_budget: 17019000.0
+      type: subprogramme
+    - name: Biodiversity Economy and Sustainable Use
+      total_budget: 16618000.0
+      type: subprogramme
+    - name: Biodiversity Monitoring and Evaluation
+      total_budget: 6206000.0
+      type: subprogramme
+    name: Biodiversity and Conservation
+    type: programme
+  - items:
+    - name: General Waste and Municipal Support
+      total_budget: 28978000.0
+      type: subprogramme
+    - name: Hazardous Waste Management and Licensing
+      total_budget: 22005000.0
+      type: subprogramme
+    - name: Chemicals and Waste Policy, Evaluation and Monitoring
+      total_budget: 11353000.0
+      type: subprogramme
+    - name: Chemicals Management
+      total_budget: 10041000.0
+      type: subprogramme
+    - name: Chemicals and Waste Management
+      total_budget: 6904000.0
+      type: subprogramme
+    name: Chemicals and Waste Management
+    type: programme
+  - items:
+    - name: South African Weather Service
+      total_budget: 160423000.0
+      type: subprogramme
+    - name: Air Quality Management
+      total_budget: 39846000.0
+      type: subprogramme
+    - name: International Climate Change Relations and Negotiations
+      total_budget: 10357000.0
+      type: subprogramme
+    - name: Climate Change Monitoring and Evaluation
+      total_budget: 9605000.0
+      type: subprogramme
+    - name: Climate Change Mitigation
+      total_budget: 8168000.0
+      type: subprogramme
+    - name: Climate Change Management
+      total_budget: 7215000.0
+      type: subprogramme
+    - name: Climate Change Adaptation
+      total_budget: 4535000.0
+      type: subprogramme
+    name: Climate Change and Air Quality
+    type: programme
+  - items:
+    - name: Working for Water and Working on Fire
+      total_budget: 1933921000.0
+      type: subprogramme
+    - name: Environmental Protection and Infrastructure Programme
+      total_budget: 1358951000.0
+      type: subprogramme
+    - name: Green Fund
+      total_budget: 300000000.0
+      type: subprogramme
+    - name: Information Management and Sector Coordination
+      total_budget: 47530000.0
+      type: subprogramme
+    - name: Environmental Programmes Management
+      total_budget: 6462000.0
+      type: subprogramme
+    name: Environmental Programmes
+    type: programme
+  - items:
+    - name: Integrated Environmental Authorisations
+      total_budget: 50653000.0
+      type: subprogramme
+    - name: Enforcement
+      total_budget: 26024000.0
+      type: subprogramme
+    - name: Compliance Monitoring
+      total_budget: 20313000.0
+      type: subprogramme
+    - name: Law Reform and Appeals
+      total_budget: 15052000.0
+      type: subprogramme
+    - name: Corporate Legal Support and Litigation
+      total_budget: 9342000.0
+      type: subprogramme
+    - name: Legal, Authorisations and Compliance Management
+      total_budget: 6133000.0
+      type: subprogramme
+    name: Legal, Authorisations and Compliance
+    type: programme
+  - items:
+    - name: Oceans Conservation
+      total_budget: 206667000.0
+      type: subprogramme
+    - name: Integrated Coastal Management
+      total_budget: 146043000.0
+      type: subprogramme
+    - name: Oceans and Coastal Research
+      total_budget: 117941000.0
+      type: subprogramme
+    - name: Oceans and Coasts Management
+      total_budget: 7898000.0
+      type: subprogramme
+    - name: Specialist Monitoring Services
+      total_budget: 5980000.0
+      type: subprogramme
+    name: Oceans and Coasts
+    type: programme
 title: Environmental Affairs budget 2015-16  - vulekamali
 vote_number: 27
 vote_primary:

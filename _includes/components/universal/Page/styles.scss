@@ -1,35 +1,13 @@
 .Page {
   width: 100%;
-  min-height: 100%;
-
-  @media ($tablet-breakpoint) {
-    display: table;
-  }
-}
-
-.Page-head {
-  @media ($tablet-breakpoint) {
-    position: static;
-    box-shadow: none;
-    height: 1%;
-    display: table-row;
-  }
-}
-
-.Page-footer {
-  @media ($tablet-breakpoint) {
-    height: 1%;
-    display: table-row;
-  }
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .Page-contentWrap {
   background-color: $colour-shading-background;
-
-  @media ($tablet-breakpoint) {
-    height: 98%;
-    display: table-row;
-  }
+  flex-grow: 1;
 }
 
 .Page-content {

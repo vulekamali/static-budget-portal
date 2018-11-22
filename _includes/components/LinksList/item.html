@@ -1,11 +1,10 @@
-
 {% if include.url %}
   {% if include.prefix %}
     <li>
-      {% if include.type == 'download' %}
-        <a href="{{ include.url }}" class="LinksList-link LinksList-link--clickable">
-      {% else %}
+      {% if include.type == 'download' or include.type  == 'link' %}
         <a href="{{ include.url }}" target="_blank" rel="noopener noreferrer" class="LinksList-link LinksList-link--clickable">
+      {% else %}
+        <a href="{{ include.url }}" class="LinksList-link LinksList-link--clickable">
       {% endif %}
         <span class="LinksList-icon">
           {% include components/Icon/index.html type=include.type size="s" %}
@@ -20,7 +19,11 @@
     </li>
   {% else %}
     <li>
-      <a href="{{ include.url }}" class="LinksList-link LinksList-link--clickable">
+      {% if include.type == 'download' or include.type  == 'link' %}
+        <a href="{{ include.url }}" target="_blank" rel="noopener noreferrer" class="LinksList-link LinksList-link--clickable">
+      {% else %}
+        <a href="{{ include.url }}" class="LinksList-link LinksList-link--clickable">
+      {% endif %}
         <span class="LinksList-icon">
           {% include components/Icon/index.html type=include.type size="s" %}
         </span>

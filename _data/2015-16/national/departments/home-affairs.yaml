@@ -2,6 +2,7 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
+adjusted_budget_summary: null
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -33,8 +34,98 @@ description: 'National department: Home Affairs budget data for the 2015-16 fina
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes: []
-expenditure_over_time: null
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Home%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 10893000.0
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 1585250000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 2059000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 2484689000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 1647012000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Citizen Affairs
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 720570000.0
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 349000.0
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Immigration Affairs
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 5687014000.0
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 5443627000.0
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 6909877000.0
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 7144801000.0
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 6450822000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 7196188000.0
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 7049602000.0
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 7865992525
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 7133983920
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 8557731125
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 8377369345
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 7192062337
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 7547923246
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 7049602000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -74,16 +165,48 @@ is_vote_primary: true
 name: Home Affairs
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  econ_classes: []
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Home%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 10893000.0
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Citizen Affairs
+      total_budget: 2484689000.0
+      type: programme
+    - name: Administration
+      total_budget: 1585250000.0
+      type: programme
+    - name: Immigration Affairs
+      total_budget: 720570000.0
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Citizen Affairs
+      total_budget: 1647012000.0
+      type: programme
+    - name: Administration
+      total_budget: 2059000.0
+      type: programme
+    - name: Immigration Affairs
+      total_budget: 349000.0
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Home%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
+    total_budget: 1598202000.0
   - name: Citizen Affairs
-    total_budget: null
+    total_budget: 4131701000.0
   - name: Immigration Affairs
-    total_budget: null
+    total_budget: 720919000.0
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: home-affairs
@@ -92,7 +215,65 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  programmes: []
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Home%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 589111000.0
+      type: subprogramme
+    - name: Transversal Information Technology Management
+      total_budget: 476245000.0
+      type: subprogramme
+    - name: Office Accommodation
+      total_budget: 379487000.0
+      type: subprogramme
+    - name: Management Support Services
+      total_budget: 109588000.0
+      type: subprogramme
+    - name: Ministry
+      total_budget: 43771000.0
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Service Delivery to Provinces
+      total_budget: 1973426000.0
+      type: subprogramme
+    - name: Electoral Commission
+      total_budget: 1517104000.0
+      type: subprogramme
+    - name: Identification Services
+      total_budget: 275158000.0
+      type: subprogramme
+    - name: "Represented Political Parties\u2019 Fund"
+      total_budget: 127712000.0
+      type: subprogramme
+    - name: Status Services
+      total_budget: 107901000.0
+      type: subprogramme
+    - name: Access to Services
+      total_budget: 106000000.0
+      type: subprogramme
+    - name: Citizen Affairs Management
+      total_budget: 24400000.0
+      type: subprogramme
+    name: Citizen Affairs
+    type: programme
+  - items:
+    - name: Immigration Services
+      total_budget: 365137000.0
+      type: subprogramme
+    - name: Admission Services
+      total_budget: 259577000.0
+      type: subprogramme
+    - name: Asylum Seekers
+      total_budget: 65518000.0
+      type: subprogramme
+    - name: Immigration Affairs Management
+      total_budget: 30687000.0
+      type: subprogramme
+    name: Immigration Affairs
+    type: programme
 title: Home Affairs budget 2015-16  - vulekamali
 vote_number: 5
 vote_primary:
