@@ -209,7 +209,7 @@ logger.info(listing_url_path)
 listing_url = portal_url + listing_url_path[1:] + '.yaml'
 r = session.get(listing_url)
 r.raise_for_status()
-listing_path = '_data%s.yaml' % listing_url_path
+listing_path = '_data%s/index.yaml' % listing_url_path
 
 with open(listing_path, 'wb') as listing_file:
     listing_file.write(GENERATED_YAML_COMMENT)
