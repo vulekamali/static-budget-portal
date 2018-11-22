@@ -1,6 +1,8 @@
 .Features {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .Features-item {
