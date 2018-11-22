@@ -171,7 +171,7 @@ Before deploying to production, ensure you've been through the Staging workflow 
     - In theory this PR should only show code changes to the UI
     - This PR should include screenshots of a local Jekyll server with the latest code/data, of the specific changes made
 - Open a Github PR to merge `..-data-build` into `master` 
-    - This will kick off a Travis CI job, but it will not build the site (should last ~30 sec)
+    - This will kick off a Travis CI job, but it will not build the site data again (should last ~30 sec)
     
 
 
