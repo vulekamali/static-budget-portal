@@ -59,8 +59,6 @@
 @import 'components/universal/BarChart/styles';
 @import 'components/universal/Button/styles';
 @import 'components/universal/Download/styles';
-@import 'components/universal/Icon/styles';
-@import 'components/universal/Icon/styles';
 @import 'components/universal/Input/styles';
 @import 'components/universal/Page/styles';
 @import 'components/universal/PseudoSelect/styles';
@@ -72,7 +70,6 @@
 @import 'components/universal/Loader/styles';
 @import 'components/universal/Dropdown/styles';
 @import 'components/universal/Participate/styles';
-@import 'components/universal/BasicPreview/styles';
 @import 'components/universal/VideoCard/styles';
 @import 'components/universal/VideoEmbed/styles';
 @import 'components/universal/BasicContent/styles';
@@ -113,7 +110,13 @@
 @import 'components/about/Progress/styles';
 @import 'components/about/Stages/styles';
 
+@import 'scenes/homepage/Hero/styles';
 @import 'scenes/department/AdvancedChartSection/styles';
+@import 'scenes/homepage/Features/styles';
+@import 'scenes/homepage/VideoSection/styles';
+@import 'scenes/homepage/EventSection/styles';
+@import 'scenes/homepage/AboutSection/styles';
+
 @import 'components/Share/styles';
 @import 'components/LinksList/styles';
 @import 'components/Message/styles';
@@ -121,3 +124,6 @@
 @import 'components/ChartSourceController/components/BarChart/styles';
 @import 'components/Card/styles';
 @import 'components/Title/styles';
+@import 'components/Icon/styles';
+@import 'components/Preview/styles';
+@import 'components/Preview/components/Marker/styles';
