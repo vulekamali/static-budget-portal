@@ -10,6 +10,7 @@ module.exports = {
   entry: './_includes/scripts.js',
   output: {
     path: resolve(__dirname, 'assets/generated/'),
+    filename: 'scripts.[chunkhash].js',
   },
 
   devtool: 'source-map',
@@ -58,7 +59,7 @@ module.exports = {
                 },
               },
             ],
-          }
+          },
         ),
       },
     ],
@@ -66,6 +67,7 @@ module.exports = {
 
   plugins: [
     new CleanWebpackPlugin('assets/generated/*'),
+    new ExtractTextPlugin('styles.[contenthash].css'),
     new ManifestPlugin({
       fileName: '../../_data/assets.json',
       basePath: 'assets/generated/',
