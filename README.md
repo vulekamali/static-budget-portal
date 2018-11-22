@@ -71,7 +71,7 @@ git ls-files -v|grep '^h'| sed 's/^h//' | xargs git update-index --no-assume-unc
 
 The static-budget-portal is the front-end (static site) of Vulekamali and does not generate or retrieve data.
 
-The static-budget-portal requests data from the [Data Manager](https://github.com/OpenUpSA/budget-portal) 
+The static-budget-portal build script requests data from the [Data Manager](https://github.com/OpenUpSA/budget-portal) 
 and stores it locally in the `_data` directory, which it then uses to build the static site via Jekyll.
 
 That means the actual data being served in production is managed by Git.
