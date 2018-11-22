@@ -15,7 +15,7 @@ data_key: index
 <div class="Grid has-twoColumn">
   {% for type in page_data.items %}
     {%
-      include components/universal/BasicPreview/index.html
+      include components/Preview/index.html
       title=type.name
       excerpt=type.description
       url=type.url_path
