@@ -3,10 +3,52 @@ layout: page-shell
 ---
 
 
-<div class="Page-content">
-  <div class="Page-contentInner">
+{% assign page_data = site.data.homepage %}
+{% assign video_1 = site.data.videos.data[1] %}
+{% assign video_2 = site.data.videos.data[2] %}
+{% assign video_3 = site.data.videos.data[3] %}
 
-    <div class="Title">Hello</div>
+<div class="Page-content u-paddingTop0">
+  {%
+    include scenes/homepage/Hero/index.html
+  %}
 
+  <div class="Container u-paddingTop25">
+    <div class="Features">
+      {% for feature in page_data.features_list %}
+        <div class="Features-item">
+          {%
+            include components/Preview/index.html
+            title=feature.title
+            excerpt=feature.excerpt
+            url=feature.url
+            icon=feature.icon
+            color=feature.color
+            transparent="true"
+            full_height="true"
+            top_align="true"
+            prompt="Read more"
+          %}
+        </div>
+      {% endfor %}
+    </div>
   </div>
+
+  {%
+    include scenes/homepage/VideoSection/index.html
+    video_1=video_1
+    video_2=video_2
+    video_3=video_3
+  %}
+
+  {% if site.data.events.upcoming %}
+    {%
+      include scenes/homepage/EventSection/index.html
+      events_list=site.data.events.upcoming
+    %}
+  {% endif %}
+
+  {%
+    include scenes/homepage/AboutSection/index.html
+  %}
 </div>
