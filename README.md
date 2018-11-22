@@ -77,7 +77,7 @@ and stores it locally in the `_data` directory, which it then uses to build the 
 That means the actual data being served in production is managed by Git.
 Production data exists in the `master` branch of static-budget-portal.
 
-The static-budget-portal can be pointed towards any one of the following Data Manager states:
+The static-budget-portal build script can be pointed towards any one of the following Data Manager instances:
 1) Local (development)
 2) Staging 
 3) Production
