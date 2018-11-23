@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 14 - Public Works"
+    url: https://data.vulekamali.gov.za/dataset/d50d4ccb-1043-4be5-834f-d2b317ea87b8/resource/d18b5811-0d22-4d00-9fb9-0f0a283e302b/download/kzn-vote-14-public-works.pdf
+  name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 14 - Public Works"
+  tables:
+    description: ''
+    format: XLSX
+    name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 14 - Public Works"
+    url: https://data.vulekamali.gov.za/dataset/d50d4ccb-1043-4be5-834f-d2b317ea87b8/resource/d193ebf5-10fa-49a1-a773-ce4992d78733/download/kzn-public-works.xls
 department_budget:
   document:
     description: ''
