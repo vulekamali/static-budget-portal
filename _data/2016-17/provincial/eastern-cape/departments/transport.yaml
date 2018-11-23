@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: "AENE 2016-17 \u2013 Vote 10 - Transport"
+    url: https://data.vulekamali.gov.za/dataset/d8da1e62-78a9-4a35-bf35-19fbe3372b00/resource/4cedb16d-0ad2-4325-bb44-1109d9263ccb/download/ec-vote-10-transport.pdf
+  name: "AENE 2016-17 \u2013 Vote 10 - Transport"
+  tables:
+    description: ''
+    format: XLSX
+    name: "AENE 2016-17 \u2013 Vote 10 - Transport"
+    url: https://data.vulekamali.gov.za/dataset/d8da1e62-78a9-4a35-bf35-19fbe3372b00/resource/aefe187f-11c7-4f60-b043-c385ca467a42/download/ec-transport.xls
 department_budget:
   document:
     description: ''

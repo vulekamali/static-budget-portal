@@ -17,7 +17,14 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document: null
+  name: "AENE 2016-17 \u2013 Vote 5 \u2013 Roads and Public Works"
+  tables:
+    description: ''
+    format: XLSX
+    name: "AENE 2016-17 \u2013 Vote 5 \u2013 Roads and Public Works"
+    url: https://data.vulekamali.gov.za/dataset/ef259b15-4104-4376-bd52-e48295a98c54/resource/53c581c7-bd27-43bd-a8f8-e6fa81e912a7/download/ec-roads-and-public-works.xls
 department_budget:
   document:
     description: ''

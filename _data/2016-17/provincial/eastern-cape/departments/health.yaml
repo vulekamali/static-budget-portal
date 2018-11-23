@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: "AENE 2016-17 \u2013 Vote 3 - Health"
+    url: https://data.vulekamali.gov.za/dataset/0b8c1071-2442-4f3a-a26a-b81c07f793fd/resource/8dd2d4de-fc7e-41a5-a7a4-ec98826266a6/download/ec-vote-03-health.pdf
+  name: "AENE 2016-17 \u2013 Vote 3 - Health"
+  tables:
+    description: ''
+    format: XLSX
+    name: "AENE 2016-17 \u2013 Vote 3 - Health"
+    url: https://data.vulekamali.gov.za/dataset/0b8c1071-2442-4f3a-a26a-b81c07f793fd/resource/c2f3e6f8-3f83-4a49-ab88-96747f9392fa/download/ec-health.xls
 department_budget:
   document:
     description: ''
