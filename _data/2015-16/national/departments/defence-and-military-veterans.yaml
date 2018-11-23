@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2015-16 - Vote 19 - Defence and Military Veterans
+    url: https://data.vulekamali.gov.za/dataset/d19ea6ce-df20-491f-9d33-28700e4e59a9/resource/748b14d2-1b9a-4117-b667-21e922611def/download/vote-19-defence-and-military-veterans.pdf
+  name: AENE 2015-16 - Vote 19 - Defence and Military Veterans
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2015-16 - Vote 19 - Defence and Military Veterans
+    url: https://data.vulekamali.gov.za/dataset/d19ea6ce-df20-491f-9d33-28700e4e59a9/resource/832e76c9-a48e-4f12-b5af-abd60a894d92/download/aene15chaptab-vote19.xls
 department_budget:
   document:
     description: ''

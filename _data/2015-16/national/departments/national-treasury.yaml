@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: "AENE 2015-16 \u2013 Vote 7 - National Treasury"
+    url: https://data.vulekamali.gov.za/dataset/ce11133c-012f-46cd-ae8f-9608783a7ffe/resource/23a83621-6a35-4d1a-8668-710662e6773e/download/vote-07-national-treasury.pdf
+  name: "AENE 2015-16 \u2013 Vote 7 - National Treasury"
+  tables:
+    description: ''
+    format: XLSX
+    name: "AENE 2015-16 \u2013 Vote 7 - National Treasury"
+    url: https://data.vulekamali.gov.za/dataset/ce11133c-012f-46cd-ae8f-9608783a7ffe/resource/1680917f-c2bd-4f3b-b7ef-3e2bb6b65115/download/aene15chaptab-vote07.xls
 department_budget:
   document:
     description: ''

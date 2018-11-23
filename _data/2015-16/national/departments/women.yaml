@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2015-16 - Vote 13 - Women
+    url: https://data.vulekamali.gov.za/dataset/6cba18b7-bab0-414a-8a65-cfb25e700316/resource/880bf3d0-3104-40f7-afd9-13c81b054841/download/vote-13-women.pdf
+  name: AENE 2015-16 - Vote 13 - Women
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2015-16 - Vote 13 - Women
+    url: https://data.vulekamali.gov.za/dataset/6cba18b7-bab0-414a-8a65-cfb25e700316/resource/dc9261d8-8195-4c2d-8c8d-107718728fdc/download/aene15chaptab-vote13.xls
 department_budget:
   document:
     description: ''

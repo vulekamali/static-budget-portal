@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: AENE 2015-16 - Vote 12 - Statistics South Africa
+    url: https://data.vulekamali.gov.za/dataset/54fecbc3-6746-4803-bd1f-d4f8e17bad03/resource/c1423bbe-def5-42a1-bcdb-56a1816bfa88/download/vote-12-statistics-south-africa.pdf
+  name: AENE 2015-16 - Vote 12 - Statistics South Africa
+  tables:
+    description: ''
+    format: XLSX
+    name: AENE 2015-16 - Vote 12 - Statistics South Africa
+    url: https://data.vulekamali.gov.za/dataset/54fecbc3-6746-4803-bd1f-d4f8e17bad03/resource/3e11ec0b-e83c-46b0-945d-450a567e87a8/download/aene15chaptab-vote12.xls
 department_budget:
   document:
     description: ''

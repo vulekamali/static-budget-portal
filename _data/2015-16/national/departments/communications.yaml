@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: "AENE 2015-16 \u2013 Vote 3 - Communications"
+    url: https://data.vulekamali.gov.za/dataset/66ff2aa1-396b-4b6e-8361-fe7324d28d57/resource/025906ae-bc6d-48dd-851d-7ec6ab9f3044/download/vote-03-communications.pdf
+  name: "AENE 2015-16 \u2013 Vote 3 - Communications"
+  tables:
+    description: ''
+    format: XLSX
+    name: "AENE 2015-16 \u2013 Vote 3 - Communications"
+    url: https://data.vulekamali.gov.za/dataset/66ff2aa1-396b-4b6e-8361-fe7324d28d57/resource/b169f9fd-cf3e-4082-87bb-8ab7bdc999c4/download/aene15chaptab-vote03.xls
 department_budget:
   document:
     description: ''
