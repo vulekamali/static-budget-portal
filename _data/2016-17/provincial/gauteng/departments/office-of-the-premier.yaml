@@ -17,7 +17,14 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document: null
+  name: "Gauteng AEPRE 2016-17 \u2013 Vote 1 - Office of the Premier"
+  tables:
+    description: ''
+    format: XLSX
+    name: "Gauteng AEPRE 2016-17 \u2013 Vote 1 - Office of the Premier"
+    url: https://data.vulekamali.gov.za/dataset/81e6d166-3d1c-4d6d-8184-9c730f22ee0c/resource/09bdb706-dc68-4d36-afcc-9409e6778013/download/gt-office-of-the-premier.xls
 department_budget:
   document:
     description: ''

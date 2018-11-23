@@ -17,7 +17,14 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document: null
+  name: "Gauteng AEPRE 2016-17 \u2013 Vote 3 - Economic Development"
+  tables:
+    description: ''
+    format: XLSX
+    name: "Gauteng AEPRE 2016-17 \u2013 Vote 3 - Economic Development"
+    url: https://data.vulekamali.gov.za/dataset/f9760091-2ba0-4a55-ba46-01c05770693d/resource/93eeb84d-fcdb-4fcf-a859-708f70ff6c1e/download/gt-economic-development.xls
 department_budget:
   document:
     description: ''

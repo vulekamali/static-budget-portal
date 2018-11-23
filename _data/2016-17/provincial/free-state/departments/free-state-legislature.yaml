@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: "Free State AEPRE 2016-17 \u2013 Vote 2 - Free State Legislature"
+    url: https://data.vulekamali.gov.za/dataset/76ba077a-2fd8-4700-b5ab-b4b7b6c3c93d/resource/e200a019-d67f-48df-bcfd-063743f0116e/download/fs-vote-02-free-state-legislature.pdf
+  name: "Free State AEPRE 2016-17 \u2013 Vote 2 - Free State Legislature"
+  tables:
+    description: ''
+    format: XLSX
+    name: "Free State AEPRE 2016-17 \u2013 Vote 2 - Free State Legislature"
+    url: https://data.vulekamali.gov.za/dataset/76ba077a-2fd8-4700-b5ab-b4b7b6c3c93d/resource/5e5e5927-6a05-440a-a8fc-0d0b93c30282/download/fs-free-state-legislature.xls
 department_budget:
   document:
     description: ''

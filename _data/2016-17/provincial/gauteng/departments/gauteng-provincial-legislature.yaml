@@ -17,7 +17,14 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document: null
+  name: "Gauteng AEPRE 2016-17 \u2013 Vote 2 - Gauteng Provincial Legislature"
+  tables:
+    description: ''
+    format: XLSX
+    name: "Gauteng AEPRE 2016-17 \u2013 Vote 2 - Gauteng Provincial Legislature"
+    url: https://data.vulekamali.gov.za/dataset/c76fc4a3-8c49-44a0-bba6-7dab53013426/resource/7f7b4a07-da86-408a-a4d5-029619c66be6/download/gt-gauteng-provincial-legislature.xls
 department_budget:
   document:
     description: ''

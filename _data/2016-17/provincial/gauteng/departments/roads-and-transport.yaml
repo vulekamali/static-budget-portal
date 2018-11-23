@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: "Gauteng AEPRE 2016-17 \u2013 Vote 9 - Roads and Transport"
+    url: https://data.vulekamali.gov.za/dataset/63f9d5d1-c0a4-49d2-b2f9-f0d6a8014651/resource/c59d4c8e-844f-48e1-897d-5f22a8f75f72/download/gt-vote-09-roads-and-transport.pdf
+  name: "Gauteng AEPRE 2016-17 \u2013 Vote 9 - Roads and Transport"
+  tables:
+    description: ''
+    format: XLSX
+    name: "Gauteng AEPRE 2016-17 \u2013 Vote 9 - Roads and Transport"
+    url: https://data.vulekamali.gov.za/dataset/63f9d5d1-c0a4-49d2-b2f9-f0d6a8014651/resource/3f8ce13e-6151-45f8-ad26-39289e382bba/download/gt-roads-and-transport.xls
 department_budget: null
 description: 'Gauteng department: Roads and Transport budget data for the 2016-17
   financial year from National Treasury in partnership with IMALI YETHU.'
