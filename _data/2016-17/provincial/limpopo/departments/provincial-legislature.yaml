@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: "Limpopo AEPRE 2016-17 \u2013 Vote 2 - Provincial Legislature"
+    url: https://data.vulekamali.gov.za/dataset/bbcfdaa4-5e1b-4962-bea1-d21d51f28078/resource/c6f51fef-2e99-454e-b8aa-68cb3d5f2b2b/download/lim-vote-02-provincial-legislature.pdf
+  name: "Limpopo AEPRE 2016-17 \u2013 Vote 2 - Provincial Legislature"
+  tables:
+    description: ''
+    format: XLSX
+    name: "Limpopo AEPRE 2016-17 \u2013 Vote 2 - Provincial Legislature"
+    url: https://data.vulekamali.gov.za/dataset/bbcfdaa4-5e1b-4962-bea1-d21d51f28078/resource/258dbc5f-1899-4e12-8aa5-b4a747c132dc/download/lim-legislature.xls
 department_budget:
   document:
     description: ''

@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: "Mpumalanga AEPRE 2016-17 \u2013 Vote 10 - Health"
+    url: https://data.vulekamali.gov.za/dataset/9d063104-09c4-4994-b48c-68de77a76112/resource/398afc95-12b0-41b9-8ff9-82deae75d505/download/mpu-vote-10-health.pdf
+  name: "Mpumalanga AEPRE 2016-17 \u2013 Vote 10 - Health"
+  tables:
+    description: ''
+    format: XLSX
+    name: "Mpumalanga AEPRE 2016-17 \u2013 Vote 10 - Health"
+    url: https://data.vulekamali.gov.za/dataset/9d063104-09c4-4994-b48c-68de77a76112/resource/978d6e4a-aa54-4ce1-9ce9-64da30399be7/download/mpu-health.xls
 department_budget:
   document:
     description: ''
