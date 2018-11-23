@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: "NW AEPRE 2016-17 \u2013 Vote 7 - Finance"
+    url: https://data.vulekamali.gov.za/dataset/afd72993-a192-4772-98b2-28f4d14e9935/resource/3fdd67f0-a2cc-412a-833a-b5f67560ad3f/download/nw-vote-07-finance.pdf
+  name: "NW AEPRE 2016-17 \u2013 Vote 7 - Finance"
+  tables:
+    description: ''
+    format: XLSX
+    name: "NW AEPRE 2016-17 \u2013 Vote 7 - Finance"
+    url: https://data.vulekamali.gov.za/dataset/afd72993-a192-4772-98b2-28f4d14e9935/resource/e416c80a-412e-402f-85ca-1143a3087444/download/nw-finance.xls
 department_budget:
   document:
     description: ''
