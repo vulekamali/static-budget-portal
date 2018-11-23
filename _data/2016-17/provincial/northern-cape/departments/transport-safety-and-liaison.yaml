@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: "Northern Cape AEPRE 2016-17 \u2013 Vote 2 - Transport, Safety and Liaison"
+    url: https://data.vulekamali.gov.za/dataset/747f876f-8ea3-4e5b-9078-a63d0242288e/resource/56fbf767-d9d4-44ff-97da-694d3f299fa0/download/nc-vote-03-transport-safety-and-liaison.pdf
+  name: "Northern Cape AEPRE 2016-17 \u2013 Vote 2 - Transport, Safety and Liaison"
+  tables:
+    description: ''
+    format: XLSX
+    name: "Northern Cape AEPRE 2016-17 \u2013 Vote 3 - Transport, Safety and Liaison"
+    url: https://data.vulekamali.gov.za/dataset/747f876f-8ea3-4e5b-9078-a63d0242288e/resource/f5ab0d89-782b-4a8e-ad65-971ecf9613ba/download/nc-transport-safety-and-liaison.xls
 department_budget:
   document:
     description: ''

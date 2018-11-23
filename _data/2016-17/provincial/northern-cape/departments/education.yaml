@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: "Northern Cape AEPRE 2016-17 \u2013 Vote 3 - Education"
+    url: https://data.vulekamali.gov.za/dataset/90c00fa0-a8ee-4ef1-a457-e0496698016b/resource/4e053027-370a-4959-b000-d86fa582743a/download/nc-vote-04-education.pdf
+  name: "Northern Cape AEPRE 2016-17 \u2013 Vote 3 - Education"
+  tables:
+    description: ''
+    format: XLSX
+    name: "Northern Cape AEPRE 2016-17 \u2013 Vote 4 - Education"
+    url: https://data.vulekamali.gov.za/dataset/90c00fa0-a8ee-4ef1-a457-e0496698016b/resource/478eb951-edd9-454c-b015-f99a1e9bf9f3/download/nc-education.xls
 department_budget:
   document:
     description: ''

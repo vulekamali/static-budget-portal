@@ -17,7 +17,14 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document: null
+  name: "Northern Cape AEPRE 2016-17 \u2013 Vote 4 - Roads and Public Works"
+  tables:
+    description: ''
+    format: XLSX
+    name: "Northern Cape AEPRE 2016-17 \u2013 Vote 5 - Roads and Public Works"
+    url: https://data.vulekamali.gov.za/dataset/90c64c7a-7a60-490a-92af-5b0bee036aaf/resource/1543cd95-1a24-4ec2-82d4-d451289fef88/download/nc-roads-and-public-works.xls
 department_budget:
   document:
     description: ''

@@ -17,7 +17,14 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document: null
+  name: "Northern Cape AEPRE 2016-17 \u2013 Vote 5 - Economic Development and Tourism"
+  tables:
+    description: ''
+    format: XLSX
+    name: "Northern Cape AEPRE 2016-17 \u2013 Vote 6 - Economic Development and Tourism"
+    url: https://data.vulekamali.gov.za/dataset/7c73ed04-73cf-49fd-bf5d-919fe383692f/resource/98020681-f2a7-4dd9-b421-a8c452840d0d/download/nc-eco-dev-and-tourism.xls
 department_budget:
   document:
     description: ''
