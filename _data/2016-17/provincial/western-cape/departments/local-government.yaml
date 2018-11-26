@@ -17,7 +17,18 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: "WC AEPRE 2016-17 \u2013 Vote 14 - Local Government"
+    url: https://data.vulekamali.gov.za/dataset/997a9e28-32c8-4c2f-9458-bf56b0396780/resource/44a2dbdb-fecb-4744-b08b-cee5fb8a039d/download/wc-vote-14-local-government.pdf
+  name: "WC AEPRE 2016-17 \u2013 Vote 14 - Local Government"
+  tables:
+    description: ''
+    format: XLSX
+    name: "WC AEPRE 2016-17 \u2013 Vote 14 - Local Government"
+    url: https://data.vulekamali.gov.za/dataset/997a9e28-32c8-4c2f-9458-bf56b0396780/resource/2ca4401c-53fe-46f3-9494-c27aaf72d828/download/wc-local-government.xls
 department_budget:
   document:
     description: ''
