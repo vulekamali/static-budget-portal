@@ -17,7 +17,14 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document: null
+  name: "Eastern Cape AEPRE 2015-16 \u2013 Vote 1 - Office of the Premier"
+  tables:
+    description: ''
+    format: XLSX
+    name: "EC AEPRE 2015-16 \u2013 Vote 1 - Office of the Premier"
+    url: https://data.vulekamali.gov.za/dataset/0a9e3e8d-7c92-4b0d-be96-aa22a4185271/resource/f7e0789a-90c0-4316-9dde-dc0d84c10efe/download/view
 department_budget:
   document:
     description: ''
