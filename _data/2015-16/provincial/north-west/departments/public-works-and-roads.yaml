@@ -17,7 +17,14 @@ contributed_datasets:
 - contributor: Studies in Poverty and Inequality Institute
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
-department_adjusted_budget: null
+department_adjusted_budget:
+  document:
+    description: ''
+    format: PDF
+    name: "North West AEPRE 2015-16 \u2013 Vote 11 - Public Works and Roads"
+    url: https://data.vulekamali.gov.za/dataset/8dd30156-a842-4b45-b093-d71e37268787/resource/33857730-0edc-44ab-975f-7992ea5c0832/download/nw-vote11-public-works-and-roads.pdf
+  name: "North West AEPRE 2015-16 \u2013 Vote 11 - Public Works and Roads"
+  tables: null
 department_budget:
   document: null
   name: 'North West Department: Public Works and Roads 2015-16'
