@@ -2,7 +2,73 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
-adjusted_budget_summary: null
+adjusted_budget_summary:
+  by_type:
+  - amount: 62000000
+    name: Self-financing
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2016-17
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2016-17/aggregate/%3Fcut%3Dfinyear.finyear%253A2016%257Cvoteno.department%253ATrade%2Band%2BIndustry%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges: null
+  econ_classes:
+  - items:
+    - amount: 53197000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 4840000
+      name: Machinery and equipment
+      type: economic_classification_3
+    - amount: -4720000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 254630000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    - amount: -1014000
+      name: Foreign governments and international organisations
+      type: economic_classification_3
+    - amount: -137000
+      name: Households
+      type: economic_classification_3
+    - amount: 5000000
+      name: Non-profit institutions
+      type: economic_classification_3
+    - amount: -249796000
+      name: Public corporations and private enterprises
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: 40464000
+    name: Administration
+  - amount: -19189000
+    name: Consumer and Corporate Regulation
+  - amount: -30698000
+    name: Incentive Development and Administration
+  - amount: -8652000
+    name: Industrial Development
+  - amount: -7664000
+    name: International Trade and Economic Development
+  - amount: -254000
+    name: Investment South Africa
+  - amount: 13610000
+    name: Special Economic Zones and Economic Transformation
+  - amount: 74383000
+    name: Trade Export South Africa
+  special_appropriation: null
+  total_change:
+    amount: 62000000
+    percentage: 0.6003379127819397
+  virements:
+    amount: 1929310000
+    label: Value of virements and shifts due to savings
+    percentage: 18.681257072731036
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

@@ -2,7 +2,81 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
-adjusted_budget_summary: null
+adjusted_budget_summary:
+  by_type: null
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2016-17
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2016-17/aggregate/%3Fcut%3Dfinyear.finyear%253A2016%257Cvoteno.department%253ANational%2BTreasury%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges:
+  - amount: -30775000
+    label: Debt-service costs
+    percentage: -0.020833333333333336
+  - amount: 1076393000
+    label: National Revenue Fund payments
+    percentage: 742.34
+  econ_classes:
+  - items:
+    - amount: -1842000
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: 400495000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 200000
+      name: Buildings and other fixed structures
+      type: economic_classification_3
+    - amount: 18717000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: -150915000
+      name: Payments for financial assets
+      type: economic_classification_3
+    name: Payments for financial assets
+    type: economic_classification_2
+  - items:
+    - amount: -645475000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    - amount: 87545000
+      name: Foreign governments and international organisations
+      type: economic_classification_3
+    - amount: 291275000
+      name: Households
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: 54755000
+    name: Administration
+  - amount: 5918000
+    name: Asset and Liability Management
+  - amount: 289400000
+    name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+  - amount: 4091000
+    name: Economic Policy, Tax, Financial Regulation and Research
+  - amount: 366904000
+    name: Financial Accounting and Supply Chain Management Systems
+  - amount: -61091000
+    name: International Financial Relations
+  - amount: 7528000
+    name: Public Finance and Budget Management
+  - amount: -645475000
+    name: Revenue Administration
+  - amount: -22030000
+    name: Technical Support and Development Finance
+  special_appropriation: null
+  total_change:
+    amount: 0
+    percentage: 0.0
+  virements:
+    amount: 862385000
+    label: Value of virements and shifts due to savings
+    percentage: 3.0289500519064436
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

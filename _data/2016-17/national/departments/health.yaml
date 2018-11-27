@@ -2,7 +2,81 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
-adjusted_budget_summary: null
+adjusted_budget_summary:
+  by_type:
+  - amount: -12300000
+    name: Declared unspent funds
+    type: kind
+  - amount: 18858000
+    name: Roll-overs
+    type: kind
+  - amount: 26500000
+    name: Self-financing
+    type: kind
+  - amount: 1041000
+    name: Shifting of functions between votes
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2016-17
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2016-17/aggregate/%3Fcut%3Dfinyear.finyear%253A2016%257Cvoteno.department%253AHealth%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges: null
+  econ_classes:
+  - items:
+    - amount: -16000000
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: 52804000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: -30550000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 300000
+      name: Payments for financial assets
+      type: economic_classification_3
+    name: Payments for financial assets
+    type: economic_classification_2
+  - items:
+    - amount: 214000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    - amount: 14370000
+      name: Foreign governments and international organisations
+      type: economic_classification_3
+    - amount: 3961000
+      name: Households
+      type: economic_classification_3
+    - amount: 9000000
+      name: Provinces and municipalities
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: -1500000
+    name: Administration
+  - amount: 16500000
+    name: Health Regulation and Compliance Management
+  - amount: -8959000
+    name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
+  - amount: 500000
+    name: Hospitals, Tertiary Health Services and Human Resource Development
+  - amount: 28858000
+    name: National Health Insurance, Health Planning and Systems Enablement
+  - amount: -1300000
+    name: Primary Health Care Services
+  special_appropriation: null
+  total_change:
+    amount: 34099000
+    percentage: 0.08842341025799207
+  virements:
+    amount: 54345000
+    label: Value of virements and shifts due to savings
+    percentage: 0.1409240807786322
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

@@ -2,7 +2,52 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
-adjusted_budget_summary: null
+adjusted_budget_summary:
+  by_type:
+  - amount: 27858000
+    name: Roll-overs
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2016-17
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2016-17/aggregate/%3Fcut%3Dfinyear.finyear%253A2016%257Cvoteno.department%253ACooperative%2BGovernance%2Band%2BTraditional%2BAffairs%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges: null
+  econ_classes:
+  - items:
+    - amount: 24778000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 80000
+      name: Payments for financial assets
+      type: economic_classification_3
+    name: Payments for financial assets
+    type: economic_classification_2
+  - items:
+    - amount: 3000000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: -2773000
+    name: Administration
+  - amount: -1781000
+    name: Institutional Development
+  - amount: 16794000
+    name: Local Government Support and Intervention Management
+  - amount: -10000000
+    name: National Disaster Management Centre
+  - amount: 25618000
+    name: Regional and Urban Development and Legislative Support
+  special_appropriation: null
+  total_change:
+    amount: 27858000
+    percentage: 0.038164755570207584
+  virements:
+    amount: 44518000
+    label: Value of virements and shifts due to savings
+    percentage: 0.06098853429802934
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

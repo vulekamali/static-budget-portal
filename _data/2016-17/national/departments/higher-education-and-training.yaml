@@ -2,7 +2,63 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
-adjusted_budget_summary: null
+adjusted_budget_summary:
+  by_type: null
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2016-17
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2016-17/aggregate/%3Fcut%3Dfinyear.finyear%253A2016%257Cvoteno.department%253AHigher%2BEducation%2Band%2BTraining%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges:
+  - amount: -435485000
+    label: National Skills Fund
+    percentage: -12.346681817743658
+  - amount: -1741940000
+    label: Sector education and training authorities
+    percentage: -12.343282914742035
+  econ_classes:
+  - items:
+    - amount: -266174000
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: -696000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: -330000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    - amount: -427000
+      name: Foreign governments and international organisations
+      type: economic_classification_3
+    - amount: 7627000
+      name: Households
+      type: economic_classification_3
+    - amount: 260000000
+      name: Non-profit institutions
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: -929000
+    name: Administration
+  - amount: 38000
+    name: Community Education and Training
+  - amount: 39000
+    name: Planning, Policy and Strategy
+  - amount: -43091000
+    name: Skills Development
+  - amount: 43053000
+    name: Technical and Vocational Education and Training
+  - amount: 890000
+    name: University Education
+  special_appropriation: null
+  total_change:
+    amount: 0
+    percentage: 0.0
+  virements:
+    amount: 402515000
+    label: Value of virements and shifts due to savings
+    percentage: 0.8183148672471342
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

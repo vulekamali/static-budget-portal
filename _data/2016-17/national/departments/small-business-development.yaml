@@ -2,7 +2,37 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
-adjusted_budget_summary: null
+adjusted_budget_summary:
+  by_type:
+  - amount: -7000000
+    name: Declared unspent funds
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2016-17
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2016-17/aggregate/%3Fcut%3Dfinyear.finyear%253A2016%257Cvoteno.department%253ASmall%2BBusiness%2BDevelopment%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges: null
+  econ_classes:
+  - items:
+    - amount: -7000000
+      name: Compensation of employees
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  programmes:
+  - amount: -4124000
+    name: Administration
+  - amount: -270000
+    name: Small, Medium and Micro Enterprises and Cooperatives Policy and Research
+  - amount: -2606000
+    name: Small, Medium and Micro Enterprises and Cooperatives Programme Design and
+      Support
+  special_appropriation: null
+  total_change:
+    amount: -7000000
+    percentage: -0.528126907386911
+  virements:
+    amount: 19693000
+    label: Value of virements and shifts due to savings
+    percentage: 1.4857718838814913
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
