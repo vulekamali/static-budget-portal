@@ -121,16 +121,29 @@ layout: page-shell
     {% endif %}
 
     {% if page_data.category.slug == "estimates-of-national-expenditure" %}
-    <div class="Section is-bevel">
-      <div class="Section-card">
-        <h2 class="Section-title">What is an ENE?</h2>
-        <p>The Estimates of National Expenditure (ENE) publications describe in detail the planned spending in all national government votes over the three-year medium-term expenditure framework (MTEF) period, government’s expenditure planning window.</p>
-        <a href="/guides/estimates-of-national-expenditure" class="Button">
-          Learn more
-        </a>
+      <div class="Section is-bevel">
+        <div class="Section-card">
+          <h2 class="Section-title">What is an ENE?</h2>
+          <p>The Estimates of National Expenditure (ENE) publications describe in detail the planned spending in all national government votes over the three-year medium-term expenditure framework (MTEF) period, government’s expenditure planning window.</p>
+          <a href="/guides/estimates-of-national-expenditure" class="Button">
+            Learn more
+          </a>
+        </div>
       </div>
-    </div>
-  {% endif %}
+    {% endif %}
+
+
+    {% if page_data.category.slug == "frameworks-for-conditional-grants-to-provinces" %}
+      <div class="Section is-bevel">
+        <div class="Section-card">
+          <h2 class="Section-title">Allocations</h2>
+          <p>You can find grant allocations in the division of revenue bill annexures.</p>
+          <a href="/datasets/division-of-revenue-bills" class="Button">
+            View allocations
+          </a>
+        </div>
+      </div>
+    {% endif %}
 
     {% if page_data.category.slug != "socio-economic-data" %}
       </aside>
