@@ -1,23 +1,33 @@
 .VideoCard {
+  &--fullHeight {
+    height: 100%;
+  }
+}
+
+.VideoCard-card {
+  &--fullHeight {
+    height: 100%;
+  }
+}
+
+.VideoCard-container {
   color: #3f3f3f;
   width: 100%;
-  background-color: #fff;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 768px) {
-    &--fullPage {
+  &:not(.VideoCard-container--compact) {
+    @media screen and (min-width: 768px) {
+      &--fullPage {
+        flex-direction: row;
+        height: 250px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
       flex-direction: row;
       height: 250px;
     }
-  }
-
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;
-    height: 250px;
   }
 }
 

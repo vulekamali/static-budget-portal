@@ -2,7 +2,7 @@
 
 ## Overview
 
-A list of actionable links usually associated with a piece of UI directly above or below it. Requires an icon from the `components/universal/Icon` Jekyll include for each link if implemented via Jekyll.
+A list of actionable links usually associated with a piece of UI directly above or below it. Requires an icon from the `components/Icon` Jekyll include for each link if implemented via Jekyll.
 
 ## Jekyll Implementation
 
@@ -13,7 +13,7 @@ A list of actionable links usually associated with a piece of UI directly above 
   - `listArray.title`: The text that will be used to show the link (that user will click on)
   - `listArray.prefex`: A string that will be prefixed before the link text (however after the icon). Useful when you want to provide more information about the link.
   - `listArray.link`: A string that will be used in the `href` attribute of the link.
-  - `listArray.type`: The type will determine what icon will be added to link (currently supports all icons in the `components/universal/Icons` component).
+  - `listArray.type`: The type will determine what icon will be added to link (currently supports all icons in the `components/Icons` component).
 
 ## Examples
 

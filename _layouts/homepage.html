@@ -2,158 +2,53 @@
 layout: page-shell
 ---
 
-{% assign page_data = site.data[page.financial_year].index %}
-{% assign resources_data = site.data[page.financial_year].manual_resources %}
-{% assign government_functions = site.data[page.financial_year].government_functions %}
-{% assign circles_data = site.data[page.financial_year].circles %}
 
-{% assign shortYear = page.financial_year | split: "-" | first %}
-{% assign finalLink = "http://www.treasury.gov.za/documents/national%20budget/" | append: shortYear | append: "/default.aspx" %}
-{% assign finalTitle = "Explore all National Budget " | append: shortYear | append: " Resources from National Treasury" %}
-{% assign finalDownload = "http://www.treasury.gov.za/documents/national%20budget/" | append: shortYear | append: "/TimeSeries/Excel/Table%202%20-%20Main%20budget%20estimates%20of%20national%20revenue.xlsx" %}
+{% assign page_data = site.data.homepage %}
+{% assign video_1 = site.data.videos.data[1] %}
+{% assign video_2 = site.data.videos.data[2] %}
+{% assign video_3 = site.data.videos.data[3] %}
 
-<div class="Page-content Page-content--dynamicYears">
-  <div class="Page-contentInner">
+<div class="Page-content u-paddingTop0">
+  {%
+    include scenes/homepage/Hero/index.html
+  %}
 
-    <h1 class="Page-title">The South African National Budget {{ page.financial_year | split: "-" | first }}</h1>
-
-    <div class="Section is-invisible u-fontSize18 u-paddingTop0">
-      <em>Vulekamali</em> is a project by the South African National Treasury and Imali Yethu with the goal of making government budget data and processes accessible to all citizens & interested parties. <a href="/about">Read more about Vulekamali.</a>
-    </div>
-
-    <div class="Message u-marginBottom20">
-      <div class="Message-content">
-        {%
-          include components/universal/Icon/index.html
-          type="info"
-          size="large"
-        %}
-        <span class="Message-heading">
-          Please note
-        </span>
-      </div>
-      <div class="Message-text">The full Medium Term Budget Policy Statement is <a href="http://www.treasury.gov.za/documents/mtbps/2018/default.aspx">available on National Treasury's website</a>. The MTBPS documents and data will be added to vulekamali.gov.za soon.</div>
-    </div>
-
-    {% assign video1 = site.data.videos.data[0] %}
-    {% include components/universal/VideoCard/index.html fullpage="true" video=video1 utils="u-marginBottom15" %}
-
-    {% assign video1 = site.data.videos.data[1] %}
-    {% include components/universal/VideoCard/index.html fullpage="true" video=video1 utils="u-marginBottom15" %}
-
-    {% assign video2 = site.data.videos.data[2] %}
-    {% include components/universal/VideoCard/index.html fullpage="true" video=video2 utils="u-marginBottom25" %}
-
-    <div class="Page-main">
-
-      <div>
-        <div class="Section is-invisible" data-year="{{ page.financial_year }}">
-          <div class="Section-title">Spheres of government</div>
-          <span>The national revenue fund, administered by the National Treasury, is distributed to the three spheres of government.</span>
-        </div>
-
-        <div>
+  <div class="Container u-paddingTop25">
+    <div class="Features">
+      {% for feature in page_data.features_list %}
+        <div class="Features-item">
           {%
-            include components/homepage/Circles/index.html
-            year=page.financial_year
-            items=circles_data
+            include components/Preview/index.html
+            title=feature.title
+            excerpt=feature.excerpt
+            url=feature.url
+            icon=feature.icon
+            color=feature.color
+            transparent="true"
+            full_height="true"
+            top_align="true"
+            prompt="Read more"
           %}
         </div>
-
-        <div class="Section is-bevel is-dark u-marginTop40">
-          <div class="Section-card is-invisible u-paddingBottom10">
-            <div class="Section-title">
-              Where National Government gets its money for {{ page.financial_year }}
-            </div>
-          </div>
-          {%
-            include components/homepage/HomeChart/index.html
-            values=page_data.revenue
-            type="revenue"
-            year=page.financial_year
-          %}
-          <div class="Section-card is-invisible u-paddingBottom15 u-paddingTop15">
-            {% include components/universal/Download/index.html title=" Download Estimates of National Revenue (Excel)" link=finalDownload icon="true" %}
-          </div>
-        </div>
-
-        <div class="Section is-bevel is-dark u-marginTop40">
-          <div class="Section-card is-invisible u-paddingBottom10">
-            <div class="Section-title">
-              How Government spends its money for {{ page.financial_year }}
-            </div>
-          </div>
-          {%
-            include components/homepage/HomeChart/index.html
-            values=government_functions
-            type="expenditure"
-            year=page.financial_year
-          %}
-          <div class="Section-card is-invisible u-paddingBottom15 u-paddingTop15">
-            {% include components/universal/Download/index.html title=finalTitle link=finalLink %}
-          </div>
-        </div>
-
-        <div class="Section is-bevel u-marginTop40 u-marginBottom20">
-          <div class="Section-card is-invisible u-paddingBottom10">
-            <h2 class"Section-title">National Budget {{ page.financial_year | split: "-" | first }} Resources from Treasury</h2>
-            <p class="u-marginBottom0">Below are a collection of links to resources that are available on the South African National Treasury website.</p>
-          </div>
-          {%
-            include components/homepage/Links/index.html
-            resources_link=resources_data.resources_link.url
-            speech=resources_data.budget_speech.url
-            webcast=resources_data.budget_webcast.url
-            highlights=resources_data.highlights.url
-            expenditure=resources_data.estimates_national_expenditure.url
-            appropriation=resources_data.appropriation.url
-            division=resources_data.division_revenue_bill.url
-            pocket_guide=resources_data.pocket_guide.url
-            presentation=resources_data.presentation.url
-            people_guide=resources_data.people_guide
-          %}
-
-          {% assign shortYear = page.financial_year | split: "-" | first %}
-          {% assign finalLink = "http://www.treasury.gov.za/documents/national%20budget/" | append: shortYear | append: "/default.aspx" %}
-          {% assign finalTitle = "Explore all National Budget " | append: shortYear | append: " Resources from National Treasury" %}
-
-          <div class="Section-card is-invisible u-paddingBottom15 u-paddingTop15">
-            {%
-              include components/universal/Download/index.html
-              link=finalLink
-              title=finalTitle
-            %}
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="Page-sidebar">
-      <div class="Section is-bevel">
-        <div class="Section-card is-dark">
-          <div class="Section-title u-marginBottom20">Sign up for our newsletter</div>
-          <form action="https://openup.us17.list-manage.com/subscribe/post?u=1769390be13958db72c0af6ed&amp;id=308211cb20" method="post" target="_blank">
-            <input class="Input" type="email" value="" name="EMAIL" required="" placeholder="Enter email address" id="mce-EMAIL"/>
-            <button class="Button is-secondary js-pageLoad u-marginTop10" type="submit">Subscribe</button>
-          </form>
-        </div>
-      </div>
-
-      <div class="Section is-bevel u-marginTop20">
-        <div class="Section-card">
-          <div class="Section-title u-marginBottom20">Find budget data related to one of these topics</div>
-            {% for link in site.data.recommended_topics %}
-              <a href="/{{ page.financial_year }}/search-result?search={{ link | uri_escape }}" class="Button is-secondary js-pageLoad u-marginTop10">{{ link }}</a>
-            {% endfor %}
-        </div>
-      </div>
-
-      <a href="https://data.vulekamali.gov.za/" target="_blank" class="Section is-bevel is-green is-link u-marginTop20">
-        <div class="Section-card">
-          <div class="Section-title u-marginBottom20">Information for Developers & Data Scientists</div>
-          <span class="u-textDecorationUnderline">Access the documentation and API that we used to build this site</span>
-        </div>
-      </a>
+      {% endfor %}
     </div>
   </div>
+
+  {%
+    include scenes/homepage/VideoSection/index.html
+    video_1=video_1
+    video_2=video_2
+    video_3=video_3
+  %}
+
+  {% if site.data.events.upcoming %}
+    {%
+      include scenes/homepage/EventSection/index.html
+      events_list=site.data.events.upcoming
+    %}
+  {% endif %}
+
+  {%
+    include scenes/homepage/AboutSection/index.html
+  %}
 </div>

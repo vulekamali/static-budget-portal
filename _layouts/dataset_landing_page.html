@@ -17,7 +17,7 @@ layout: page-shell
     <div class="Grid has-twoColumn">
       {% for dataset in page_data.categories %}
         {%
-          include components/universal/BasicPreview/index.html
+          include components/Preview/index.html
           title=dataset.name
           excerpt=dataset.description
           url=dataset.url_path

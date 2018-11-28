@@ -1,14 +1,14 @@
 import { h } from 'preact';
 import PropTypes from 'prop-types';
 
-import Icon from '../universal/Icon/index.jsx';
+import Icon from '../Icon/index.jsx';
 
 
 const buildItem = ({ title, type, link, prefix }) => {
   return (
     <li>
       <a href={link} className="LinksList-link">
-        <span className="LinksList-icon"><Icon {...{ type }} /></span>
+        <span className="LinksList-icon"><Icon {...{ type }} size="s" /></span>
         {prefix && <span>{prefix}&nbsp;</span>}
         <span className="LinksList-title">{title}</span>
       </a>

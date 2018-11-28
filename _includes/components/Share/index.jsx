@@ -2,7 +2,7 @@ import { h, Component } from 'preact';
 import { ga } from 'react-ga';
 import PropTypes from 'prop-types';
 
-import Icon from '../universal/Icon/index.jsx';
+import Icon from '../Icon/index.jsx';
 import { createModal } from '../header-and-footer/Modals/redux.js';
 
 
@@ -63,7 +63,7 @@ const Markup = ({ selected, anchor, updateShare, color }) => {
         <div className="Share-button">
           <button className={buttonStyling} onClick={createButtonEvent({ selected, anchor })}>
             <div className="u-transformRotate270">
-              <Icon type="download" size="small" />
+              <Icon type="download" size="xs" />
             </div>
           </button>
         </div>

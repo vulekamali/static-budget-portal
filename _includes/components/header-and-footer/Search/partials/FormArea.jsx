@@ -1,4 +1,3 @@
-import { ga } from 'react-ga';
 import { h } from 'preact';
 import PropTypes from 'prop-types';
 import Icon from './Icon.jsx';
@@ -26,7 +25,7 @@ export default function FormArea({ setFocus, findSuggestions, currentKeywords, s
 
       <div className="Search-action">
         <button className="Search-button" type="submit">
-          <Icon />
+          <Icon size="s" />
         </button>
       </div>
     </form>
