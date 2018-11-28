@@ -1,4 +1,11 @@
+.Hero {
+  background: #fdf7d5;
+  color: #3f3f3f;
+}
+
 .Hero-video {
+  fill: white;
+  color: white;
   height: 100px;
   width: 100px;
   margin-top: 2rem;
@@ -9,8 +16,6 @@
   align-items: center;
   flex-direction: column;
   cursor: pointer;
-  fill: white;
-  color: white;
   position: relative;
 
   @media screen and (min-width: 750px) {
