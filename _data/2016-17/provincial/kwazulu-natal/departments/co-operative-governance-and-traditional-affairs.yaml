@@ -4,6 +4,9 @@
 
 adjusted_budget_summary: null
 contributed_datasets:
+- contributor: CEGAA
+  name: Division of Revenue Bill 2015-16
+  url_path: /datasets/contributed/division-of-revenue-bill-2015-16
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -26,7 +29,12 @@ department_adjusted_budget:
     url: https://data.vulekamali.gov.za/dataset/d818f51b-c304-407c-a4a1-061759fe7347/resource/3d845663-c040-42e3-9aaf-7a7406880836/download/kzn-vote-11-co-op-gov.-and-trad-affairs.pdf
   name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 11 - Co-operative Governance and\
     \ Traditional Affairs"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 11 - Co-operative Governance and\
+      \ Traditional Affairs"
+    url: https://data.vulekamali.gov.za/dataset/d818f51b-c304-407c-a4a1-061759fe7347/resource/b3634c8a-58e2-4140-a676-97e0fcfdc712/download/kzn-coop-gov-and-traditional-affairs.xls
 department_budget:
   document:
     description: ''

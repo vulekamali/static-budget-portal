@@ -4,6 +4,9 @@
 
 adjusted_budget_summary: null
 contributed_datasets:
+- contributor: CEGAA
+  name: Division of Revenue Bill 2015-16
+  url_path: /datasets/contributed/division-of-revenue-bill-2015-16
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -24,7 +27,11 @@ department_adjusted_budget:
     name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 12 - Transport"
     url: https://data.vulekamali.gov.za/dataset/19dc696a-511d-499d-bc92-cbe79722a71e/resource/d9021722-2886-47db-9cc9-01298735b3fd/download/kzn-vote-12-transport.pdf
   name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 12 - Transport"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 12 - Transport"
+    url: https://data.vulekamali.gov.za/dataset/19dc696a-511d-499d-bc92-cbe79722a71e/resource/8e27f705-7b6b-4a22-8836-24dc9b1b771e/download/kzn-transport.xls
 department_budget:
   document:
     description: ''

@@ -4,6 +4,9 @@
 
 adjusted_budget_summary: null
 contributed_datasets:
+- contributor: CEGAA
+  name: Division of Revenue Bill 2015-16
+  url_path: /datasets/contributed/division-of-revenue-bill-2015-16
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -24,7 +27,11 @@ department_adjusted_budget:
     name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 8 - Human Settlements"
     url: https://data.vulekamali.gov.za/dataset/2d8027c2-70e3-4750-b64c-e49571bf4082/resource/56f9b490-dd20-4cd2-9c4d-d98b89da373e/download/kzn-vote-08-human-settlement.pdf
   name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 8 - Human Settlements"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 8 - Human Settlements"
+    url: https://data.vulekamali.gov.za/dataset/2d8027c2-70e3-4750-b64c-e49571bf4082/resource/0e034a4b-ab1b-4bc4-91e5-3c06f491a9d9/download/kzn-human-settlements.xls
 department_budget:
   document:
     description: ''

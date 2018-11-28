@@ -4,6 +4,9 @@
 
 adjusted_budget_summary: null
 contributed_datasets:
+- contributor: CEGAA
+  name: Division of Revenue Bill 2015-16
+  url_path: /datasets/contributed/division-of-revenue-bill-2015-16
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -21,14 +24,12 @@ department_adjusted_budget:
   document:
     description: ''
     format: PDF
-    name: "AENE 2016-17 \u2013 Vote 8 - Rural Development and Agrarian Reform"
-    url: https://data.vulekamali.gov.za/dataset/859b2030-bc54-4272-ba91-23bfefe84be4/resource/f96fc67a-8c1d-43a5-a139-4908466fe5fe/download/ec-vote-08-rural-dev-and-agrarian-reform.pdf
-  name: "AENE 2016-17 \u2013 Vote 8 - Rural Development and Agrarian Reform"
-  tables:
-    description: ''
-    format: XLSX
-    name: "AENE 2016-17 \u2013 Vote 8 - Rural Development and Agrarian Reform"
-    url: https://data.vulekamali.gov.za/dataset/859b2030-bc54-4272-ba91-23bfefe84be4/resource/f8c752b2-0d4b-45b0-b3d0-61f11c21e7d9/download/ec-rural-dev-and-agrarian-reform.xls
+    name: "Eastern Cape AEPRE 2016-17 \u2013 Vote 8 - Rural Development and Agrarian\
+      \ Reform"
+    url: https://data.vulekamali.gov.za/dataset/07acb42e-6588-4d1f-829f-ec62c0d2a33a/resource/03c3a4bf-90e2-4e3e-92a9-f6e5babfa5bc/download/ec-vote-08-rural-dev-and-agrarian-reform.pdf
+  name: "Eastern Cape AEPRE 2016-17 \u2013 Vote 8 - Rural Development and Agrarian\
+    \ Reform"
+  tables: null
 department_budget:
   document:
     description: ''

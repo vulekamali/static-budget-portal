@@ -4,6 +4,9 @@
 
 adjusted_budget_summary: null
 contributed_datasets:
+- contributor: CEGAA
+  name: Division of Revenue Bill 2015-16
+  url_path: /datasets/contributed/division-of-revenue-bill-2015-16
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -21,14 +24,10 @@ department_adjusted_budget:
   document:
     description: ''
     format: PDF
-    name: "AENE 2016-17 \u2013 Vote 11 - Human Settlements"
-    url: https://data.vulekamali.gov.za/dataset/68c7456d-b519-4864-940c-24aa0fb37fa1/resource/a524f5ec-5849-4b6b-a516-6bae9d2ae1f7/download/ec-vote-11-human-settlements.pdf
-  name: "AENE 2016-17 \u2013 Vote 11 - Human Settlements"
-  tables:
-    description: ''
-    format: XLSX
-    name: "AENE 2016-17 \u2013 Vote 11 - Human Settlements"
-    url: https://data.vulekamali.gov.za/dataset/68c7456d-b519-4864-940c-24aa0fb37fa1/resource/90eaacc9-0034-4f42-aa40-8c5b4e156435/download/ec-human-settlements.xls
+    name: "Eastern Cape AEPRE 2016-17 \u2013 Vote 11 - Human Settlements"
+    url: https://data.vulekamali.gov.za/dataset/d4158a16-60a3-42ac-9294-36d80850fa3c/resource/04fb8e89-bd84-4a6a-8b69-a046a8b2c6f2/download/ec-vote-11-human-settlements.pdf
+  name: "Eastern Cape AEPRE 2016-17 \u2013 Vote 11 - Human Settlements"
+  tables: null
 department_budget:
   document:
     description: ''

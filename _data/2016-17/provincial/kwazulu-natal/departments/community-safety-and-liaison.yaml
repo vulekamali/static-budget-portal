@@ -4,6 +4,9 @@
 
 adjusted_budget_summary: null
 contributed_datasets:
+- contributor: CEGAA
+  name: Division of Revenue Bill 2015-16
+  url_path: /datasets/contributed/division-of-revenue-bill-2015-16
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -24,7 +27,11 @@ department_adjusted_budget:
     name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 9 - Community Safety and Liaison"
     url: https://data.vulekamali.gov.za/dataset/fe5e6037-70f3-43b6-9ff5-c069513474c1/resource/1f1d55fb-58f5-4fd4-a466-91b0254cb10d/download/kzn-vote-09-community-safety.pdf
   name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 9 - Community Safety and Liaison"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 9 - Community Safety and Liaison"
+    url: https://data.vulekamali.gov.za/dataset/fe5e6037-70f3-43b6-9ff5-c069513474c1/resource/2df69a3e-345c-4bbc-af75-65da196f9657/download/kzn-community-safety-and-liaison.xls
 department_budget:
   document:
     description: ''

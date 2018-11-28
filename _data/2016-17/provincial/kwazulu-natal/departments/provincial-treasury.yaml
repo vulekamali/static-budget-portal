@@ -4,6 +4,9 @@
 
 adjusted_budget_summary: null
 contributed_datasets:
+- contributor: CEGAA
+  name: Division of Revenue Bill 2015-16
+  url_path: /datasets/contributed/division-of-revenue-bill-2015-16
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -24,7 +27,11 @@ department_adjusted_budget:
     name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 6 - Provincial Treasury"
     url: https://data.vulekamali.gov.za/dataset/3373dfe7-eb21-429e-b3ef-a9fdf27fd836/resource/f11fa803-447a-4e88-8d28-14f96b4d0bbe/download/kzn-vote-06-provincial-treasury.pdf
   name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 6 - Provincial Treasury"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "KwaZulu-Natal AEPRE 2016-17 \u2013 Vote 6 - Provincial Treasury"
+    url: https://data.vulekamali.gov.za/dataset/3373dfe7-eb21-429e-b3ef-a9fdf27fd836/resource/de231865-5755-4eee-8006-27a1a96338e0/download/kzn-provincial-treasury.xls
 department_budget:
   document:
     description: ''

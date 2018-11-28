@@ -4,6 +4,9 @@
 
 adjusted_budget_summary: null
 contributed_datasets:
+- contributor: CEGAA
+  name: Division of Revenue Bill 2015-16
+  url_path: /datasets/contributed/division-of-revenue-bill-2015-16
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -18,7 +21,11 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget:
-  document: null
+  document:
+    description: ''
+    format: PDF
+    name: "Gauteng AEPRE 2016-17 \u2013 Vote 1 - Office of the Premier"
+    url: https://data.vulekamali.gov.za/dataset/81e6d166-3d1c-4d6d-8184-9c730f22ee0c/resource/9c7bff78-f6ca-4a89-96dc-7d6fe87116e0/download/gt-vote-01-office-of-the-premier.pdf
   name: "Gauteng AEPRE 2016-17 \u2013 Vote 1 - Office of the Premier"
   tables:
     description: ''

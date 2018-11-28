@@ -4,6 +4,9 @@
 
 adjusted_budget_summary: null
 contributed_datasets:
+- contributor: CEGAA
+  name: Division of Revenue Bill 2015-16
+  url_path: /datasets/contributed/division-of-revenue-bill-2015-16
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -21,17 +24,12 @@ department_adjusted_budget:
   document:
     description: ''
     format: PDF
-    name: "AENE 2016-17 \u2013 Vote 9 - Economic Development, Environmental Affairs\
-      \ and Tourism"
-    url: https://data.vulekamali.gov.za/dataset/062c9811-60b5-4a56-8036-9fae3a87797c/resource/d76901db-a315-4e4e-b2d5-e338761508a4/download/ec-vote-09-eco-dev-env-affairs-and-tourism.pdf
-  name: "AENE 2016-17 \u2013 Vote 9 - Economic Development, Environmental Affairs\
-    \ and Tourism"
-  tables:
-    description: ''
-    format: XLSX
-    name: "AENE 2016-17 \u2013 Vote 9 - Economic Development, Environmental Affairs\
-      \ and Tourism"
-    url: https://data.vulekamali.gov.za/dataset/062c9811-60b5-4a56-8036-9fae3a87797c/resource/29a71a86-7ec5-45f7-94ca-cb8945a5edc0/download/ec-eco-dev-environ.-affairs-and-tourism.xls
+    name: "Eastern Cape AEPRE 2016-17 \u2013 Vote 9 - Economic Development, Environmental\
+      \ Affairs and Tourism"
+    url: https://data.vulekamali.gov.za/dataset/c3189645-78ee-4e0d-bd43-037f7f956abc/resource/3a45d6cb-065d-422f-9403-40f796d17176/download/ec-vote-09-eco-dev-env-affairs-and-tourism.pdf
+  name: "Eastern Cape AEPRE 2016-17 \u2013 Vote 9 - Economic Development, Environmental\
+    \ Affairs and Tourism"
+  tables: null
 department_budget:
   document:
     description: ''
