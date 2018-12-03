@@ -259,7 +259,7 @@ layout: page-shell
     </p>
 
     {% assign text1 = "View the " | append: source_type_adjusted_short | append: " chapter for " | append: chapter_name | append: " (PDF)." %}
-    {% assign text2 = "View tables in the " | append:  source_type_adjusted_short | append: "chapter (Excel)." %}
+    {% assign text2 = "View tables in the " | append:  source_type_adjusted_short | append: " chapter (Excel)." %}
 
     {% if pdf_link_adjusted or excel_link_adjusted %}  
       <ul class="LinksList u-marginBottom60">
@@ -323,7 +323,7 @@ layout: page-shell
             Please note
           </span>
         </div>
-        <div class="Message-text Message-text--secondary">The tables in {{ source_type_revenue_short }} chapter (Excel)</div>
+        <div class="Message-text Message-text--secondary">The tables in {{ source_type_revenue_short }} chapter (Excel) is not available yet</div>
       </div>
     {% endif %}
 
