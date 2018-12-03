@@ -182,8 +182,6 @@ session = requests_session()
 
 # Basic Pages
 
-write_financial_year(session, max(YEAR_SLUGS), "")
-
 for year_slug in YEAR_SLUGS:
     write_financial_year(session, year_slug, "/%s" % year_slug)
 
