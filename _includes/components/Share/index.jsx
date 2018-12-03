@@ -14,7 +14,7 @@ const createButtonEvent = ({ selected, anchor }) => {
     ga('send', 'social', 'email', type, url);
     callback();
   };
-z
+
   const createNewTab = (newUrl) => {
     const { focus } = window.open(newUrl, '_blank');
     return focus();
