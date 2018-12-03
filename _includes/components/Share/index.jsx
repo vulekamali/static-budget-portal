@@ -14,14 +14,14 @@ const createButtonEvent = ({ selected, anchor }) => {
     ga('send', 'social', 'email', type, url);
     callback();
   };
-
+z
   const createNewTab = (newUrl) => {
     const { focus } = window.open(newUrl, '_blank');
     return focus();
   };
 
   const facebookUrl = encodeURI(`https://www.facebook.com/sharer/sharer.php?u=${url}`);
-  const twitterUrl = encodeURI(`https://twitter.com/home?status=${message}%20${url}`);
+  const twitterUrl = encodeURI(`https://twitter.com/home?status=${message} ${url}`);
 
   const shareMarkup = (
     <a className="u-wordBreak u-wordBreak--breakAll" href={encodeURI(url)}>
