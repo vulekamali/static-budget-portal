@@ -1,16 +1,17 @@
 /* eslint no-param-reassign: 0 */
 
 
+import { zip } from 'lodash';
+import colorString from 'color-string';
+
 import Chart from 'chart.js';
 import trimValues from '../../../../../../utilities/js/helpers/trimValues.js';
-
-
-const calcIfObject = value => value !== null && typeof value === 'object';
+import isObjectLiteral from './services/isObjectLiteral/index.js';
 
 
 const recursiveHeadingOverrides = (result, obj) => {
   Object.keys(obj).forEach((key) => {
-    if (calcIfObject(obj[key])) {
+    if (isObjectLiteral(obj[key])) {
       result.labels.push(`heading: ${key}`);
       result.values.push(0);
 
@@ -22,7 +23,6 @@ const recursiveHeadingOverrides = (result, obj) => {
     return null;
   });
 };
-
 
 const flattenNesting = (obj) => {
   const result = { labels: [], values: [] };
@@ -102,26 +102,50 @@ const dynamicLabelPlugin = ({ chart }) => {
 };
 
 
-const createChartJsConfig = ({ items, rotated, color, viewportWidth }) => {
+const formatDataset = ({ color, barTypes }) => (data, index) => {
+  const [r, g, b] = colorString.get.rgb(color);
+  const backgroundColor = `rgba(${r}, ${g}, ${b}, 0.${(index + 1) * 20})`;
+
+  return {
+    label: barTypes[index],
+    data,
+    backgroundColor,
+  };
+};
+
+
+const buildDatasets = (barTypes, values, color) => {
+  if (!barTypes) {
+    return [
+      {
+        data: values,
+        backgroundColor: color,
+      },
+    ];
+  }
+
+  const pivotedValues = zip(...values);
+  const result = pivotedValues.map(formatDataset({ color, barTypes }), []);
+  return result;
+};
+
+
+const createChartJsConfig = ({ items, rotated, color, viewportWidth, barTypes }) => {
   const { labels, values } = flattenNesting(items);
   const showYAxisLabels = viewportWidth && viewportWidth > 600 && rotated;
+  const datasets = buildDatasets(barTypes, values, color);
 
   return {
     type: rotated ? 'bar' : 'horizontalBar',
     data: {
       labels,
-      datasets: [
-        {
-          data: values,
-          backgroundColor: color,
-        },
-      ],
+      datasets,
     },
     options: {
       barThickness: 10,
       maintainAspectRatio: false,
       tooltips: {
-        intersect: false,
+        intersect: rotated,
         custom: (tooltip) => {
           if (!tooltip || /(^heading:\s)(.+)/im.test(tooltip.title)) {
             tooltip.opacity = 0;
@@ -131,9 +155,11 @@ const createChartJsConfig = ({ items, rotated, color, viewportWidth }) => {
         },
         callbacks: {
           label: (item, dataObject) => {
-            const { index } = item;
-            const { data } = dataObject.datasets[0];
-            return `R${trimValues(data[index])}`;
+            const { index, datasetIndex } = item;
+            const { data, label } = dataObject.datasets[datasetIndex];
+            const prefix = rotated ? `${label}: ` : '';
+
+            return `${prefix}R${trimValues(data[index])}`;
           },
         },
       },
@@ -151,6 +177,8 @@ const createChartJsConfig = ({ items, rotated, color, viewportWidth }) => {
       },
       scales: {
         yAxes: [{
+          barPercentage: 0.8,
+          categoryPercentage: 1.0,
           display: true,
           gridLines: {
             color: 'transparent',
@@ -165,10 +193,10 @@ const createChartJsConfig = ({ items, rotated, color, viewportWidth }) => {
             maxRotation: 0,
             callback: value => (rotated ? `R${trimValues(value)}` : value),
           },
-          barPercentage: 0.8,
-          categoryPercentage: 1.0,
         }],
         xAxes: [{
+          barPercentage: 1,
+          categoryPercentage: 0.6,
           ticks: {
             display: rotated || true,
             beginAtZero: true,
