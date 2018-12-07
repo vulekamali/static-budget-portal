@@ -5,13 +5,13 @@ datasets:
   category:
     description: Annual Reports expenditure data for the end of a financial year,
       including Audited Outcome and Final Appropriation.
-    name: Annual Reports
+    name: Annual Report Expenditure Data
     slug: annual-reports
     url_path: /datasets/annual-reports
   created: '2018-11-30T08:05:15.682939'
   description: null
   intro_short: null
-  last_updated: '2018-11-30T09:35:43.734773'
+  last_updated: '2018-12-06T14:15:37.459979'
   license:
     name: License not specified
     url: null
@@ -25,13 +25,17 @@ datasets:
     telephone: null
     twitter: null
     url: null
-  resources: []
+  resources:
+  - description: Normalised resource
+    format: CSV
+    name: National Annual Report Expenditure 2017-18
+    url: https://data.vulekamali.gov.za/dataset/3909f64d-b35d-4f71-af61-93148d943580/resource/977f2471-53ec-4643-b054-bb59a1eba511/download/are-2017-18.csv
   slug: annual-report-expenditure-2017-18
   url_path: /datasets/annual-reports/annual-report-expenditure-2017-18
 description: Annual Reports expenditure data for the end of a financial year, including
   Audited Outcome and Final Appropriation.
-name: Annual Reports
+name: Annual Report Expenditure Data
 selected_tab: datasets
 slug: annual-reports
-title: Annual Reports - vulekamali
+title: Annual Report Expenditure Data - vulekamali
 url_path: /datasets/annual-reports
