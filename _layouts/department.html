@@ -384,24 +384,24 @@ layout: page-shell
       </div>
     </div>
 
-    {% if page_data.expenditure_over_time %}
+    {% if page_data.budget_actual %}
       <div class="u-marginBottom60 u-marginTop15">
         {%
           include scenes/department/ExpenditureSection/index.html
-          items=page_data.expenditure_over_time.expenditure
+          items=page_data.budget_actual.expenditure
           type="expenditure"
 
           cpi=site.data.global_values.cpi_dataset_url
           source_type=source_type
           year=page.financial_year
-          dataset=page_data.expenditure_over_time.dataset_detail_page
+          dataset=page_data.budget_actual.dataset_detail_page
           pdf=pdf_link
           excel=excel
-          csv=page_data.expenditure_over_time.department_data_csv
+          csv=page_data.budget_actual.department_data_csv
           guide=guide
 
           color="purple"
-          title="Budgeted and Actual Expenditure"
+          title="Budget vs. Actual Spending"
           subtitle=subtitle
           description="Expenditure changes over time"
         %}
