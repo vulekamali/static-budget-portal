@@ -1,4 +1,4 @@
-import normaliseProgrammes from './index.js';
+import normaliseExpenditure from './index.js';
 
 
 const input = {
@@ -45,5 +45,5 @@ const output = {
 };
 
 
-test('basic', expect(normaliseProgrammes(input)).toEqual(output));
-
+const basicCondition = () => expect(normaliseExpenditure(input)).toEqual(output);
+test('basic', basicCondition);
