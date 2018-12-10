@@ -132,7 +132,7 @@ const buildDatasets = (barTypes, values, color) => {
 
 const createChartJsConfig = ({ items, rotated, color, viewportWidth, barTypes }) => {
   const { labels, values } = flattenNesting(items);
-  const showYAxisLabels = viewportWidth && viewportWidth > 600 && rotated;
+  const rotateLabels = viewportWidth && viewportWidth < 600 && rotated;
   const datasets = buildDatasets(barTypes, values, color);
 
   return {
@@ -188,9 +188,8 @@ const createChartJsConfig = ({ items, rotated, color, viewportWidth, barTypes })
             zeroLineWidth: 1,
           },
           ticks: {
-            display: showYAxisLabels || false,
+            display: rotated,
             beginAtZero: true,
-            maxRotation: 0,
             callback: value => (rotated ? `R${trimValues(value)}` : value),
           },
         }],
@@ -198,9 +197,9 @@ const createChartJsConfig = ({ items, rotated, color, viewportWidth, barTypes })
           barPercentage: 1,
           categoryPercentage: 0.6,
           ticks: {
-            display: rotated || true,
             beginAtZero: true,
-            maxRotation: 0,
+            maxRotation: rotateLabels ? 90 : 0,
+            minRotation: rotateLabels ? 90 : 0,
             callback: value => (rotated ? value : `R${trimValues(value)}`),
           },
           gridLines: {
