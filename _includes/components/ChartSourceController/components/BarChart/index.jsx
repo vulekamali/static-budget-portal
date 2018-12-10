@@ -99,8 +99,6 @@ class BarChart extends Component {
 
     const viewportWidth = window.innerWidth;
     const config = createChartJsConfig({ items, color, rotated, viewportWidth, barTypes });
-    console.log(config);
-
     this.values.chartInstance = new Chart(node || newNode, config);
 
     if (!node) {
