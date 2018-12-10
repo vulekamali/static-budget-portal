@@ -27,6 +27,11 @@
   max-width: 250px;
 }
 
-.ExpenditureSection-cell {
-  padding: 0.25rem 1rem;
+.ExpenditureSection-label {
+  display: flex;
+}
+
+.ExpenditureSection-labelItem {
+  margin-top: 1rem;
+  margin-right: 3rem;
 }

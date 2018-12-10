@@ -60,56 +60,57 @@
           type="download"
         %}
       </ul>
+    </div>
 
-      <div class="Title Title--interSection u-marginTop25">Chart Legend</div>
+    <div class="ExpenditureSection-item ExpenditureSection-item--right">
+      <div class="ExpenditureSection-label u-marginBottom15">
+        <div class="ExpenditureSection-labelItem">
+          {%
+            include components/ChartLabel/index.html
+            index="0"
+            label="Main Appropriation"
+          %}
+        </div>
 
-      <div class="u-marginTop10">
-        {%
-          include scenes/department/ExpenditureSection/components/ChartLabel/index.html
-          index="0"
-          label="Main Appropriation"
-        %}
+        <div class="ExpenditureSection-labelItem">
+          {%
+            include components/ChartLabel/index.html
+            index="1"
+            label="Adjusted Appropriation"
+          %}
+        </div>
+
+        <div class="ExpenditureSection-labelItem">
+          {%
+            include components/ChartLabel/index.html
+            index="2"
+            label="Final Appropriation"
+          %}
+        </div>
+
+        <div class="ExpenditureSection-labelItem">
+          {%
+            include components/ChartLabel/index.html
+            index="3"
+            label="Audited Outcome"
+          %}
+        </div>
       </div>
 
-      <div class="u-marginTop10">
-        {%
-          include scenes/department/ExpenditureSection/components/ChartLabel/index.html
-          index="1"
-          label="Adjusted Appropriation"
-        %}
-      </div>
-
-      <div class="u-marginTop10">
-        {%
-          include scenes/department/ExpenditureSection/components/ChartLabel/index.html
-          index="2"
-          label="Final Appropriation"
-        %}
-      </div>
-
-      <div class="u-marginTop10">
-        {%
-          include scenes/department/ExpenditureSection/components/ChartLabel/index.html
-          index="3"
-          label="Audited Outcome"
-        %}
-      </div>
-  </div>
-
-  <div class="ExpenditureSection-item ExpenditureSection-item--right">
-    <div class="Card">
-      <div
-        data-component="ChartAdaptor"
-        data-items="{{ include.items| jsonify | escape }}"
-        data-type="expenditure"
-        data-scale="2"
-        data-color="{{ include.color }}"
-        data-title="{{ include.title | truncate: 45 }}"
-        data-subtitle="{{ include.subtitle }}"
-        data-description="{{ include.description }}"
-        data-barTypes="[&quot;Main Appropriation&quot;, &quot;Adjusted Appropriation&quot;, &quot;Final Appropriation&quot;, &quot;Audited Outcome&quot;]"
-        data-rotated
-      >
+      <div class="Card">
+        <div
+          data-component="ChartAdaptor"
+          data-items="{{ include.items| jsonify | escape }}"
+          data-type="expenditure"
+          data-scale="2"
+          data-color="{{ include.color }}"
+          data-title="{{ include.title | truncate: 45 }}"
+          data-subtitle="{{ include.subtitle }}"
+          data-description="{{ include.description }}"
+          data-barTypes="[&quot;Main Appropriation&quot;, &quot;Adjusted Appropriation&quot;, &quot;Final Appropriation&quot;, &quot;Audited Outcome&quot;]"
+          data-rotated
+        >
+        </div>
       </div>
     </div>
   </div>
