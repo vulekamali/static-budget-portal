@@ -17,7 +17,7 @@ description: null
 intro: null
 intro_short: null
 key_points: null
-last_updated: '2018-11-28T08:27:17.836299'
+last_updated: '2018-12-11T09:13:38.987399'
 license:
   name: License not specified
   url: null
@@ -34,13 +34,13 @@ organization:
   url: null
 resources:
 - description: ''
-  format: OpenSpending API
-  name: Adjusted Estimates of National Expenditure 2016-17
-  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:adjusted-estimates-of-national-expenditure-2016-17/model/
-- description: ''
   format: CSV
   name: Adjusted Estimates of National Expenditure 2016-17
   url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/adjusted-estimates-of-national-expenditure-2016-17/final/data/aene-2016-17.csv
+- description: ''
+  format: OpenSpending API
+  name: Adjusted Estimates of National Expenditure 2016-17
+  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:adjusted-estimates-of-national-expenditure-2016-17/model/
 - description: 'Source data provided by Treasury data owners for vulekamali.gov.za '
   format: XLSX
   name: NAT AENE 2016-17.xlsx
