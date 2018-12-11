@@ -18,7 +18,7 @@ intro: "Combined and normalised dataset consisting of ENE, AENE and AR expenditu
 intro_short: "Combined and normalised dataset consisting of ENE, AENE and AR expenditure\
   \ data.\r\nIncludes data from multiple fiscal years."
 key_points: null
-last_updated: '2018-12-11T06:33:57.574470'
+last_updated: '2018-12-11T08:32:21.889699'
 license:
   name: License not specified
   url: null
@@ -36,10 +36,8 @@ organization:
 resources:
 - description: ''
   format: openspending api
-  name: Combined and normalised dataset consisting of ENE, AENE and AR expenditure
-    data. Includes data from multiple fiscal years.
-  url: http://Combined and normalised dataset consisting of ENE, AENE and AR expenditure
-    data. Includes data from multiple fiscal years.
+  name: Expenditure Time Series
+  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:expenditure-time-series/model/
 - description: ''
   format: CSV
   name: 'Expenditure Time Series '
