@@ -1,0 +1,50 @@
+author:
+  email: ''
+  name: ''
+category:
+  description: "Expenditure data sourced from the Main Budget, Adjusted Budget and\
+    \ Annual Report events. Use this data to compare budgeted and actual expenditure.\r\
+    \n\r\nNote that this data is not aligned with the current MTEF like the [ENE](https://vulekamali.gov.za/datasets/estimates-of-national-expenditure)\
+    \ and [EPRE](https://vulekamali.gov.za/datasets/estimates-of-provincial-expenditure)\
+    \ data is."
+  name: Expenditure Time Series
+  slug: expenditure-time-series
+  url_path: /datasets/expenditure-time-series
+created: '2018-12-11T06:30:26.964157'
+description: "Combined and normalised dataset consisting of ENE, AENE and AR expenditure\
+  \ data.\r\nIncludes data from multiple fiscal years."
+intro: "Combined and normalised dataset consisting of ENE, AENE and AR expenditure\
+  \ data.\r\nIncludes data from multiple fiscal years."
+intro_short: "Combined and normalised dataset consisting of ENE, AENE and AR expenditure\
+  \ data.\r\nIncludes data from multiple fiscal years."
+key_points: null
+last_updated: '2018-12-11T08:32:21.889699'
+license:
+  name: License not specified
+  url: null
+methodology: null
+name: Expenditure Time Series
+organization:
+  email: null
+  facebook: null
+  logo_url: https://data.vulekamali.gov.za/uploads/group/2017-09-28-151852.487803treasury-logo.jpg
+  name: National Treasury
+  slug: national-treasury
+  telephone: null
+  twitter: null
+  url: null
+resources:
+- description: ''
+  format: openspending api
+  name: Expenditure Time Series
+  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:expenditure-time-series/model/
+- description: ''
+  format: CSV
+  name: 'Expenditure Time Series '
+  url: https://data.vulekamali.gov.za/dataset/9eb118ed-a55e-4227-a13f-52e3379b8df6/resource/78066aee-944e-4ff4-b6fa-40abfd5f8154/download/expenditure-time-series.csv
+selected_tab: datasets
+slug: expenditure-time-series
+title: Expenditure Time Series - vulekamali
+url_path: /datasets/expenditure-time-series/expenditure-time-series
+usage: null
+use_for: null

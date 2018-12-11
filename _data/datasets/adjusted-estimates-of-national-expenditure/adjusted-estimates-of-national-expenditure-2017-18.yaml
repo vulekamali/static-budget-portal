@@ -17,7 +17,7 @@ description: null
 intro: null
 intro_short: null
 key_points: null
-last_updated: '2018-11-12T15:56:55.780262'
+last_updated: '2018-12-11T09:13:56.352354'
 license:
   name: Other (Public Domain)
   url: null
@@ -33,6 +33,14 @@ organization:
   twitter: null
   url: null
 resources:
+- description: ''
+  format: CSV
+  name: Adjusted Estimates of National Expenditure 2017-18
+  url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/aene-2017-18-v3/final/data/aene-2017-18.csv
+- description: ''
+  format: OpenSpending API
+  name: Adjusted Estimates of National Expenditure 2017-18
+  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:aene-2017-18-v3/model/
 - description: Source data provided by Treasury data owners for vulekamali.gov.za
   format: XLSX
   name: AENE 2017-18 source data
@@ -41,14 +49,6 @@ resources:
   format: CSV
   name: Value of Virements
   url: https://data.vulekamali.gov.za/dataset/b89c2250-8220-4cb7-ada5-1ccb8c94814c/resource/f52065c2-1bd1-4767-ac58-42027a06b89b/download/aene-2017-18-table-2-virements.csv
-- description: ''
-  format: OpenSpending API
-  name: Adjusted Estimates of National Expenditure 2017-18
-  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:aene-2017-18-v3/model/
-- description: ''
-  format: CSV
-  name: Adjusted Estimates of National Expenditure 2017-18
-  url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/aene-2017-18-v3/final/data/aene-2017-18.csv
 selected_tab: datasets
 slug: adjusted-estimates-of-national-expenditure-2017-18
 title: Adjusted Estimates of National Expenditure 2017-18 - vulekamali
