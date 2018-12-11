@@ -8,7 +8,7 @@ adjusted_budget_summary:
     name: Announced in the budget speech
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253ATransport%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253ATransport%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -38,6 +38,411 @@ adjusted_budget_summary:
     amount: 10040858000
     label: Value of virements
     percentage: 16.791211468340553
+budget_actual:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 53357297000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 53615077000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 53320787000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 56015163000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 56287554000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 56287554000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 56407480000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 59805180000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 59805180000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 59805180000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 54676260000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 59808494000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 59841494000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    real:
+    - amount: 59488388636
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 59775789192
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 59447683405
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 58753071899
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 59038776826
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 59038776826
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 59164564568
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 59805180000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 59805180000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 59805180000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 54676260000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 56695022024
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 56726304131
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+budget_actual_programmes:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  programmes:
+    base_financial_year: 2017-18
+    programmes:
+    - items:
+      - amount: 149526000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 150383000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 145284000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 253223000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 253223000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 258267000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 210427000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 169869000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 170235000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 171165000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 166149000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 182253000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 182253000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Civil Aviation
+    - items:
+      - amount: 80583000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 88764000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 88762000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 78954000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 78954000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 77054000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 77054000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 81663000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 82641000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 83075000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 76660000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 89982000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 89982000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Integrated Transport Planning
+    - items:
+      - amount: 18311364000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 18310610000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 18305274000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 18985533000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 18985533000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 18993457000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 18992005000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 19320255000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 19308899000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 19333199000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 14515158000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 18887279000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 15887279000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Rail Transport
+    - items:
+      - amount: 383457000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 422169000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 420824000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 394763000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 392793000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 365182000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 365136000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 406857000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 407071000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 415254000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 407466000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 430077000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 430077000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Administration
+    - items:
+      - amount: 22784917000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 23164889000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 22889198000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 24525567000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 24799126000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 24878466000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 25055434000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 27128572000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 27129639000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 27138175000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 27118369000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 27098760000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 30098760000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Road Transport
+    - items:
+      - amount: 1700000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 1700000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 3821000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 10000000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 10000000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 10000000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 5559000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 10200000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 10200000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Direct charge against the National Revenue Fund
+    - items:
+      - amount: 11536361000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 11334588000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 11328571000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 11655390000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 11655390000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 11557042000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 11550042000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 12568272000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 12567348000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 12525895000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 12277572000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 12990018000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 13023018000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Public Transport
+    - items:
+      - amount: 111089000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 143674000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 142874000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 121733000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 120835000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 156386000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 153561000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 119692000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 129347000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 128417000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 109327000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 119925000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 119925000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Maritime Transport
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -80,7 +485,7 @@ description: 'National department: Transport budget data for the 2018-19 financi
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Transport%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Transport%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -386,7 +791,7 @@ is_vote_primary: true
 name: Transport
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Transport%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Transport%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
@@ -525,7 +930,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Transport%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Transport%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 430077000.0
@@ -551,7 +956,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Transport%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Transport%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services

@@ -3,6 +3,216 @@
 #########################################
 
 adjusted_budget_summary: null
+budget_actual:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 69314159000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 70815477000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 68097537000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 72994048000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 73021906000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 73021906000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 69852230000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    real:
+    - amount: 77278795224
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 78952624178
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 75922375645
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 76561850768
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 76591070412
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 76591070412
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 73266467002
+      financial_year: 2016-17
+      phase: Audit Outcome
+budget_actual_programmes:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  programmes:
+    base_financial_year: 2017-18
+    programmes:
+    - items:
+      - amount: 68122162000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 68120381000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 68113231000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 66163451000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Institutional Development
+    - items:
+      - amount: 606805000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 591355000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 258158000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 598887000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 588887000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 591492000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 295282000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: National Disaster Management Centre
+    - items:
+      - amount: 247969000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 271125000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 269422000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 266464000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 263691000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 271245000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 267266000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Administration
+    - items:
+      - amount: 332176000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 357794000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 357390000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 320969000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Regional and Urban Development and Legislative Support
+    - items:
+      - amount: 22081000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 19281000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 17914000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      name: Policy, Research and Knowledge Management
+    - items:
+      - amount: 3191185000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 3191185000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 3191185000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 2371096000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Community Work Programme
+    - items:
+      - amount: 50321345000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 51809326000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 49466922000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      name: Governance and Intergovernmental Relations
+    - items:
+      - amount: 328092000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 329092000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 293335000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      name: Provincial and Municipal Government Systems
+    - items:
+      - amount: 17668420000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 17669370000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 17665858000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      name: Infrastructure and Economic Development
+    - items:
+      - amount: 119447000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 125928000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 125928000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      name: Traditional Affairs
+    - items:
+      - amount: 483174000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 499968000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 497363000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 434166000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Local Government Support and Intervention Management
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -45,7 +255,7 @@ description: 'Free State department: Cooperative Governance and Traditional Affa
   with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Free%2BState%2522%257Cdepartment.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Free%2BState%2522%257Cdepartment.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -296,7 +506,7 @@ is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Free%2BState%2522%257Cdepartment.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Free%2BState%2522%257Cdepartment.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
@@ -390,7 +600,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Free%2BState%2522%257Cdepartment.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Free%2BState%2522%257Cdepartment.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 133006000
@@ -410,7 +620,7 @@ sphere:
   slug: provincial
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-expenditure-2016-17-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Free%2BState%2522%257Cdepartment.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Ddepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cphase.phase%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme.subprogramme%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-expenditure-2016-17-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Free%2BState%2522%257Cdepartment.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Ddepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cphase.phase%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme.subprogramme%26pagesize%3D10000
   programmes: []
 title: Cooperative Governance and Traditional Affairs budget 2016-17  - vulekamali
 vote_number: 8

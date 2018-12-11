@@ -3,6 +3,174 @@
 #########################################
 
 adjusted_budget_summary: null
+budget_actual:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 6411087000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 6312222000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 6281147000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 6528765000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 6512799000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 6512799000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 6403346000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    real:
+    - amount: 7147761533
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 7037536318
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 7002890604
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 6847877948
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 6831131561
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 6831131561
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 6716328718
+      financial_year: 2016-17
+      phase: Audit Outcome
+budget_actual_programmes:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  programmes:
+    base_financial_year: 2017-18
+    programmes:
+    - items:
+      - amount: 1992234000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 1953369000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 1939909000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 2319500000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 2319500000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 2319500000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 2301446000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Expanded Public Works Programme
+    - items:
+      - amount: 475996000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 480334000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 479150000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 516634000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 516006000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 516006000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 450444000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Administration
+    - items:
+      - amount: 47223000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 46015000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 44747000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 31439000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 28639000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 28639000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 16477000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Intergovernmental Coordination
+    - items:
+      - amount: 3802962000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 3742985000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 3735387000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 3565100000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 3552562000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 3553089000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 3547048000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Property and Construction Industry Policy and Research
+    - items:
+      - amount: 92672000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 89519000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 81954000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 96092000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 96092000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 95565000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 87931000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Prestige Policy
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -41,7 +209,7 @@ description: 'KwaZulu-Natal department: Public Works budget data for the 2016-17
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Public%2BWorks%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Public%2BWorks%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -226,7 +394,7 @@ is_vote_primary: true
 name: Public Works
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Public%2BWorks%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Public%2BWorks%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: 1. Administration
@@ -311,7 +479,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Public%2BWorks%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Public%2BWorks%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programme_budgets:
   - name: 1. Administration
     total_budget: 359425000
@@ -327,7 +495,7 @@ sphere:
   slug: provincial
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-expenditure-2016-17-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Public%2BWorks%2522%26drilldown%3Ddepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cphase.phase%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme.subprogramme%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-expenditure-2016-17-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Public%2BWorks%2522%26drilldown%3Ddepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cphase.phase%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme.subprogramme%26pagesize%3D10000
   programmes:
   - items:
     - name: Management

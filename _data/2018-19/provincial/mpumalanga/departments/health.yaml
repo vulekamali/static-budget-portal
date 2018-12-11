@@ -3,6 +3,341 @@
 #########################################
 
 adjusted_budget_summary: null
+budget_actual:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 36468018000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 36253925000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 36038825000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 38563317000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 38597416000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 38597416000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 38496186000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 42625723000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 42645557000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 42645557000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 42424691000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 47142866000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 47508374000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    real:
+    - amount: 40658424424
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 40419730781
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 40179914428
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 40448214645
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 40483980335
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 40483980335
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 40377802416
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 42625723000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 42645557000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 42645557000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 42424691000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 44688733111
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 45035213732
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+budget_actual_programmes:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  programmes:
+    base_financial_year: 2017-18
+    programmes:
+    - items:
+      - amount: 457078000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 443416000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 438501000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 463464000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 461964000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 448820000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 442877000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 512838000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 514838000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 500541000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 478160000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 550792000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 537146000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Administration
+    - items:
+      - amount: 225005000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 215239000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 212571000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 257839000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 256539000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 238055000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 225731000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 264299000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 263899000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 263343000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 253771000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 301736000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 301736000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Primary Health Care Services
+    - items:
+      - amount: 587807000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 611213000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 553053000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 559762000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 588620000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 690593000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 679170000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 735087000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 934687000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 924954000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 841540000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 1671553000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 1848199000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: National Health Insurance, Health Planning and Systems Enablement
+    - items:
+      - amount: 19159065000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 19057465000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 19056279000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 19573498000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 19573998000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 19496416000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 19468716000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 21108184000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 20907784000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 20914800000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 20828771000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 22124182000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 22310690000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Hospitals, Tertiary Health Services and Human Resource Development
+    - items:
+      - amount: 1596919000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 1601732000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 1599420000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 1690186000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 1706686000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 1716965000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 1714510000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 1726971000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 1726571000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 1746609000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 1742508000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 1775546000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 1796546000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Health Regulation and Compliance Management
+    - items:
+      - amount: 14442144000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 14324860000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 14179001000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 16018568000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 16009609000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 16006567000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 15965182000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 18278344000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 18297778000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 18295310000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 18279941000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 20719057000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 20714057000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -30,7 +365,7 @@ description: 'Mpumalanga department: Health budget data for the 2018-19 financia
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -311,7 +646,7 @@ is_vote_primary: true
 name: Health
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: District Health Services
@@ -450,7 +785,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 265526000.0
@@ -478,7 +813,7 @@ sphere:
   slug: provincial
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-drilldown-2018-19-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme.programme%257Csubprogramme.subprogramme%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-drilldown-2018-19-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme.programme%257Csubprogramme.subprogramme%26pagesize%3D10000
   programmes:
   - items:
     - name: MANAGEMENT
