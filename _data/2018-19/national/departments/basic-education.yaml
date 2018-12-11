@@ -14,7 +14,7 @@ adjusted_budget_summary:
     name: Unforeseeable/unavoidable
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253ABasic%2BEducation%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253ABasic%2BEducation%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -69,6 +69,300 @@ adjusted_budget_summary:
     amount: 68035000
     label: Value of virements
     percentage: 0.2994177077045037
+budget_actual:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 21511140000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 21286426000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 20796125000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 22269595000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 22413461000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 22413461000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 21476064000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 23408620000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 22993620000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 22993620300
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 22931956000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 22722437000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 23699583000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    real:
+    - amount: 23982906336
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 23732371273
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 23185731581
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 23358088170
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 23508986051
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 23508986051
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 22525770965
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 23408620000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 22993620000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 22993620300
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 22931956000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 21539567041
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 22465845405
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+budget_actual_programmes:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  programmes:
+    base_financial_year: 2017-18
+    programmes:
+    - items:
+      - amount: 5974456000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 5938035000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 5936456000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 6291684000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 6341427000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 6342761000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 6333722000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 6726977000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 6729977000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 6740565000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 6736153000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 7105128000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 7108968000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Educational Enrichment Services
+    - items:
+      - amount: 1877765000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 1837965000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 1797740000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 1936100000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 1902207000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 1877954000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 1826691000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 1801953000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 1783016000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 1766338000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 1731097000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 1905011000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 1867116000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Curriculum Policy, Support and Monitoring
+    - items:
+      - amount: 357697000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 386645000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 386475000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 377893000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 388393000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 419000000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 418301000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 416283000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 426583000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 435072000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 435072000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 450476000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 472145000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Administration
+    - items:
+      - amount: 12129738000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 11959764000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 11511906000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 12500176000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 12621392000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 12594706000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 11719953000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 13248303000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 12801940000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 12800957300
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 12785811000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 11971342000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 12938313000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Planning, Information and Assessment
+    - items:
+      - amount: 1171484000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 1164017000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 1163548000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 1163742000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 1160042000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 1179040000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 1177397000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 1215104000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 1252104000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 1250688000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 1243823000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 1290480000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 1313041000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Teachers, Education Human Resources and Institutional Development
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -111,7 +405,7 @@ description: 'National department: Basic Education budget data for the 2018-19 f
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Basic%2BEducation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Basic%2BEducation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -358,7 +652,7 @@ is_vote_primary: true
 name: Basic Education
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Basic%2BEducation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Basic%2BEducation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
@@ -491,7 +785,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Basic%2BEducation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Basic%2BEducation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 450476000.0
@@ -511,7 +805,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Basic%2BEducation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Basic%2BEducation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - name: Office Accommodation

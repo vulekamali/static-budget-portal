@@ -3,6 +3,259 @@
 #########################################
 
 adjusted_budget_summary: null
+budget_actual:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 30943381000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 30543381000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 30034544000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 30690856000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 30696356000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 30696356000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 30587231000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 33464300000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 33477701000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 33477701000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 33370485000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 32355716000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 32455843000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    real:
+    - amount: 34498971614
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 34053009079
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 33485703482
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 32190963529
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 32196732358
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 32196732358
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 32082273547
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 33464300000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 33477701000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 33477701000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 33370485000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 30671363021
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 30766277674
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+budget_actual_programmes:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  programmes:
+    base_financial_year: 2017-18
+    programmes:
+    - items:
+      - amount: 169800000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 166690000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 120796000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 224582000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 217298000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 217685000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 151742000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 217302000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 216862000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 205119000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 156547000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 246005000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 246005000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Human Settlements Delivery Support
+    - items:
+      - amount: 435116000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 435251000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 411074000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 442274000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 460058000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 455459000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 420897000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 457665000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 470006000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 464069000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 419775000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 442650000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 439750000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Administration
+    - items:
+      - amount: 30264127000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 29863947000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 29426936000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 29940937000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 29930937000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 29930937000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 29927992000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 32695760000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 32697260000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 32697260000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 32694309000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 31577280000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 31677407000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Housing Development Finance
+    - items:
+      - amount: 74338000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 77493000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 75738000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 83063000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 88063000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 92275000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 86600000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      - amount: 93573000.0
+        financial_year: 2017-18
+        phase: Main appropriation
+      - amount: 93573000
+        financial_year: 2017-18
+        phase: Adjusted appropriation
+      - amount: 111253000
+        financial_year: 2017-18
+        phase: Final Appropriation
+      - amount: 99854000
+        financial_year: 2017-18
+        phase: Audit Outcome
+      - amount: 89781000.0
+        financial_year: 2018-19
+        phase: Main appropriation
+      - amount: 92681000
+        financial_year: 2018-19
+        phase: Adjusted appropriation
+      name: Human Settlements Policy, Strategy and Planning
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -30,7 +283,7 @@ description: 'KwaZulu-Natal department: Human Settlements budget data for the 20
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Human%2BSettlements%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Human%2BSettlements%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -185,7 +438,7 @@ is_vote_primary: true
 name: Human Settlements
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Human%2BSettlements%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Human%2BSettlements%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Housing Development
@@ -246,7 +499,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Human%2BSettlements%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2018-19-shifted-econ-classes/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Human%2BSettlements%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 225774000.0
@@ -266,7 +519,7 @@ sphere:
   slug: provincial
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2018-19
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-drilldown-2018-19-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Human%2BSettlements%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme.programme%257Csubprogramme.subprogramme%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-drilldown-2018-19-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cdepartment.department%253A%2522Human%2BSettlements%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme.programme%257Csubprogramme.subprogramme%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services

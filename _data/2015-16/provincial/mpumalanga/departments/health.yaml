@@ -3,6 +3,101 @@
 #########################################
 
 adjusted_budget_summary: null
+budget_actual:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 36468018000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 36253925000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 36038825000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    real:
+    - amount: 40658424424
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 40419730781
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 40179914428
+      financial_year: 2015-16
+      phase: Audit Outcome
+budget_actual_programmes:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  programmes:
+    base_financial_year: 2017-18
+    programmes:
+    - items:
+      - amount: 457078000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 443416000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 438501000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      name: Administration
+    - items:
+      - amount: 225005000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 215239000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 212571000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      name: Primary Health Care Services
+    - items:
+      - amount: 587807000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 611213000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 553053000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      name: National Health Insurance, Health Planning and Systems Enablement
+    - items:
+      - amount: 19159065000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 19057465000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 19056279000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      name: Hospitals, Tertiary Health Services and Human Resource Development
+    - items:
+      - amount: 1596919000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 1601732000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 1599420000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      name: Health Regulation and Compliance Management
+    - items:
+      - amount: 14442144000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 14324860000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 14179001000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -41,7 +136,7 @@ description: 'Mpumalanga department: Health budget data for the 2015-16 financia
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -341,7 +436,7 @@ is_vote_primary: true
 name: Health
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: District Health Services
@@ -495,7 +590,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 283305000
@@ -521,7 +616,7 @@ sphere:
   slug: provincial
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-expenditure-2015-16-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Ddepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cphase.phase%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme.subprogramme%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-expenditure-2015-16-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cdepartment.department%253A%2522Health%2522%26drilldown%3Ddepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cphase.phase%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme.subprogramme%26pagesize%3D10000
   programmes:
   - items:
     - name: Management

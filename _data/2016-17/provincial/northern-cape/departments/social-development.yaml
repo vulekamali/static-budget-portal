@@ -3,6 +3,174 @@
 #########################################
 
 adjusted_budget_summary: null
+budget_actual:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 138168640000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 137893640000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 136405673000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 148937729000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 147933229000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 147933229000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 147342628000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    real:
+    - amount: 154045092533
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 153738493290
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 152079549450
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 156217506687
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 155163908740
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 155163908740
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 154544440347
+      financial_year: 2016-17
+      phase: Audit Outcome
+budget_actual_programmes:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  programmes:
+    base_financial_year: 2017-18
+    programmes:
+    - items:
+      - amount: 130093278000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 129818278000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 128333376000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 140498691000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 139498691000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 139498691000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 138915638000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Social Assistance
+    - items:
+      - amount: 6756165000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 6717420000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 6716424000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 7015500000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 6997000000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 6981273000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 6980942000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Social Security Policy and Administration
+    - items:
+      - amount: 297015000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 305053000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 305053000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 322512000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 338512000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 350131000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 349746000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Administration
+    - items:
+      - amount: 662362000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 678287000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 676403000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 723322000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 721322000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 718563000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 713088000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Welfare Services Policy Development and Implementation Support
+    - items:
+      - amount: 359820000.0
+        financial_year: 2015-16
+        phase: Main appropriation
+      - amount: 374602000
+        financial_year: 2015-16
+        phase: Final Appropriation
+      - amount: 374417000
+        financial_year: 2015-16
+        phase: Audit Outcome
+      - amount: 377704000.0
+        financial_year: 2016-17
+        phase: Main appropriation
+      - amount: 377704000
+        financial_year: 2016-17
+        phase: Adjusted appropriation
+      - amount: 384571000
+        financial_year: 2016-17
+        phase: Final Appropriation
+      - amount: 383214000
+        financial_year: 2016-17
+        phase: Audit Outcome
+      name: Social Policy and Integrated Service Delivery
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -41,7 +209,7 @@ description: 'Northern Cape department: Social Development budget data for the 2
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Northern%2BCape%2522%257Cdepartment.department%253A%2522Social%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Northern%2BCape%2522%257Cdepartment.department%253A%2522Social%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -291,7 +459,7 @@ is_vote_primary: true
 name: Social Development
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Northern%2BCape%2522%257Cdepartment.department%253A%2522Social%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Northern%2BCape%2522%257Cdepartment.department%253A%2522Social%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
@@ -397,7 +565,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Northern%2BCape%2522%257Cdepartment.department%253A%2522Social%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Northern%2BCape%2522%257Cdepartment.department%253A%2522Social%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 119490000
@@ -417,7 +585,7 @@ sphere:
   slug: provincial
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/epre-sub-programme-expenditure-2016-17
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-expenditure-2016-17-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Northern%2BCape%2522%257Cdepartment.department%253A%2522Social%2BDevelopment%2522%26drilldown%3Ddepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cphase.phase%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme.subprogramme%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aepre-sub-programme-expenditure-2016-17-v2/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cgovernment.government%253A%2522Northern%2BCape%2522%257Cdepartment.department%253A%2522Social%2BDevelopment%2522%26drilldown%3Ddepartment.department%257Cfinancial_year.financial_year%257Cgovernment.government%257Cphase.phase%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme.subprogramme%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Management Services
