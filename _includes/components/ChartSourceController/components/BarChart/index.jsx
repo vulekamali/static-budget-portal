@@ -40,10 +40,10 @@ Markup.propTypes = {
 class BarChart extends Component {
   constructor(...props) {
     super(...props);
-    const { items, color, rotated, viewportWidth } = this.props;
+    const { items, color, rotated, viewportWidth, barTypes } = this.props;
 
     const calcHeight = (scale) => {
-      const config = createChartJsConfig({ items, color, rotated, viewportWidth });
+      const config = createChartJsConfig({ items, color, rotated, viewportWidth, barTypes });
       return (config.data.datasets[0].data.length * (25 * scale)) + 55;
     };
 
@@ -62,19 +62,22 @@ class BarChart extends Component {
 
   componentDidUpdate() {
     const { chartInstance } = this.values;
-    const { items, color, rotated } = this.props;
+    const { items, color, rotated, barTypes } = this.props;
 
     const viewportWidth = window.innerWidth;
-    const config = createChartJsConfig({ items, color, rotated, viewportWidth });
-    chartInstance.data.datasets[0].data = config.data.datasets[0].data;
+    const config = createChartJsConfig({ items, color, rotated, viewportWidth, barTypes });
+
+    config.data.datasets.forEach(({ data }, index) => {
+      chartInstance.data.datasets[index].data = data;
+    });
 
     return chartInstance.update();
   }
 
   downloadAction(event) {
     event.preventDefault();
-    const { items, color, rotated, downloadText } = this.props;
-    const config = createChartJsConfig({ items, color, rotated });
+    const { items, color, rotated, downloadText, barTypes } = this.props;
+    const config = createChartJsConfig({ items, color, rotated, barTypes });
     const { calcHeight } = this.events;
     const height = calcHeight(2);
 
@@ -94,12 +97,11 @@ class BarChart extends Component {
   }
 
   renderChart(newNode) {
-    const { items, color, rotated } = this.props;
+    const { items, color, rotated, barTypes } = this.props;
     const { node } = this.values;
 
     const viewportWidth = window.innerWidth;
-    const config = createChartJsConfig({ items, color, rotated, viewportWidth });
-
+    const config = createChartJsConfig({ items, color, rotated, viewportWidth, barTypes });
     this.values.chartInstance = new Chart(node || newNode, config);
 
     if (!node) {

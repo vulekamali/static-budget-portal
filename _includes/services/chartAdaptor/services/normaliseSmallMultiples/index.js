@@ -8,7 +8,6 @@ const recursiveReduce = (result, { name, items, total_budget: value }) => {
 
 const normaliseSmallMultiples = (rawItems) => {
   const data = rawItems.reduce(recursiveReduce, {});
-
   return { data };
 };
 
