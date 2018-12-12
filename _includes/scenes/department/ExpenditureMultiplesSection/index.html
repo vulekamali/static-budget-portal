@@ -11,12 +11,12 @@
 {% endcapture %}
 
 <div class="ExpenditureMultiplesSection" id="expenditure-multiples">
-  <h3 class="Title Title--section">Budget vs. Actual Spending by Programme</h3>
+  <h3 class="Title Title--section">Budgeted and Actual Expenditure comparison by Programme</h3>
 
   <div>
     <div>
       <div class="ExpenditureMultiplesSection-share u-marginTop10 u-marginBottom15">
-        <div 
+        <div
           data-component="Share"
           data-anchor="expenditure-multiples"
           data-color="{{ include.color }}"
@@ -104,7 +104,7 @@
 
   <div class="ExpenditureMultiplesSection-container u-marginTop30">
     {% for chart in include.items %}
-      <div class="ExpenditureMultiplesSection-item">  
+      <div class="ExpenditureMultiplesSection-item">
         <div class="Card Card--fullHeight">
           <div class="Title Title--interSection">{{ chart.name }}</div>
           <div
