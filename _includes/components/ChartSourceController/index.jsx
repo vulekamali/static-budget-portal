@@ -8,13 +8,14 @@ const buildToggle = ({ toggle, changeSource, source }) => {
 
   const toggleItems = Object.keys(toggle).map((key) => {
     const { title } = toggle[key];
+    const htmlId = uuid();
 
     return (
-      <label htmlFor={key} {...{ key }} className="ChartSourceController-item">
+      <label htmlFor={htmlId} {...{ key }} className="ChartSourceController-item">
         <input
           type="radio"
           value={key}
-          id={key}
+          id={htmlId}
           name={id}
           checked={key === source}
           onChange={event => changeSource(event.target.value)}
