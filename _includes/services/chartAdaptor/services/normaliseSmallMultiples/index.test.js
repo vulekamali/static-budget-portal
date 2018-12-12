@@ -34,4 +34,5 @@ const output = {
 };
 
 
-test('basic', expect(normaliseSmallMultiples(input)).toEqual(output));
+const basicCondition = () => expect(normaliseSmallMultiples(input)).toEqual(output);
+test('basic', basicCondition);

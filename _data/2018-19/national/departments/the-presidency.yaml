@@ -33,6 +33,261 @@ adjusted_budget_summary:
     amount: 2691000
     label: Value of virements
     percentage: 0.5322599786383955
+budget_actual:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 510330000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 475929000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 466737000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 499675000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 489775000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 489775000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 475333000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 495169000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 501169000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 501169000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 481525000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 505580000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 505580000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    real:
+    - amount: 568970151
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 530616258
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 520368039
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 524098112
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 513714220
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 513714220
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 498566324
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 495169000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 501169000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 501169000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 481525000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 479260842
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 479260842
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+budget_actual_programmes:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  programmes:
+  - items:
+    - amount: 483940000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 446242000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 446212000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 453351000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 454217000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 455041000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 447709000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 449000000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 454330000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 454324000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 440124000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 456003000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 457144000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Administration
+  - items:
+    - amount: 5726000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 5726000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 5620000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 6035000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 6035000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 6035000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 5713000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 6373000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 6373000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 6373000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 5712000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 6742000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 6742000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Direct charge against the National Revenue Fund
+  - items:
+    - amount: 26390000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 29687000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 20525000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 46324000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 35558000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 34734000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 27624000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 46169000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 46839000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 46845000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 41401000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 49577000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 48436000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Executive Support
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

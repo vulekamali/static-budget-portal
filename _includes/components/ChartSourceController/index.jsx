@@ -8,13 +8,14 @@ const buildToggle = ({ toggle, changeSource, source }) => {
 
   const toggleItems = Object.keys(toggle).map((key) => {
     const { title } = toggle[key];
+    const htmlId = uuid();
 
     return (
-      <label htmlFor={key} {...{ key }} className="ChartSourceController-item">
+      <label htmlFor={htmlId} {...{ key }} className="ChartSourceController-item">
         <input
           type="radio"
           value={key}
-          id={key}
+          id={htmlId}
           name={id}
           checked={key === source}
           onChange={event => changeSource(event.target.value)}
@@ -37,11 +38,11 @@ const buildToggle = ({ toggle, changeSource, source }) => {
 };
 
 
-const Markup = ({ items, toggle, styling, changeSource, source, downloadText }) => {
+const Markup = ({ items, toggle, styling, changeSource, source, downloadText, barTypes }) => {
   const { scale, color, rotated } = styling;
   return (
     <div className="ChartSourceController">
-      <BarChart {...{ scale, color, rotated, items, downloadText }} />
+      <BarChart {...{ barTypes, scale, color, rotated, items, downloadText, source }} />
       {toggle && buildToggle({ source, toggle, changeSource })}
     </div>
   );
@@ -68,12 +69,12 @@ class ChartSourceController extends Component {
   }
 
   render() {
-    const { items: rawItems, toggle, styling, downloadText } = this.props;
+    const { items: rawItems, toggle, styling, downloadText, barTypes } = this.props;
     const { source } = this.state;
     const { changeSource } = this.events;
     const items = rawItems[source];
 
-    return <Markup {...{ items, toggle, styling, source, changeSource, downloadText }} />;
+    return <Markup {...{ items, toggle, styling, source, changeSource, downloadText, barTypes }} />;
   }
 }
 
