@@ -16,7 +16,7 @@ datasets:
   created: '2018-11-23T10:36:36.657260'
   description: null
   intro_short: null
-  last_updated: '2018-11-28T08:27:17.836299'
+  last_updated: '2018-12-11T09:13:38.987399'
   license:
     name: License not specified
     url: null
@@ -32,13 +32,13 @@ datasets:
     url: null
   resources:
   - description: ''
-    format: OpenSpending API
-    name: Adjusted Estimates of National Expenditure 2016-17
-    url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:adjusted-estimates-of-national-expenditure-2016-17/model/
-  - description: ''
     format: CSV
     name: Adjusted Estimates of National Expenditure 2016-17
     url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/adjusted-estimates-of-national-expenditure-2016-17/final/data/aene-2016-17.csv
+  - description: ''
+    format: OpenSpending API
+    name: Adjusted Estimates of National Expenditure 2016-17
+    url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:adjusted-estimates-of-national-expenditure-2016-17/model/
   - description: 'Source data provided by Treasury data owners for vulekamali.gov.za '
     format: XLSX
     name: NAT AENE 2016-17.xlsx
@@ -66,7 +66,7 @@ datasets:
   created: '2018-11-07T13:35:36.364154'
   description: null
   intro_short: null
-  last_updated: '2018-11-12T15:56:55.780262'
+  last_updated: '2018-12-11T09:13:56.352354'
   license:
     name: Other (Public Domain)
     url: null
@@ -81,6 +81,14 @@ datasets:
     twitter: null
     url: null
   resources:
+  - description: ''
+    format: CSV
+    name: Adjusted Estimates of National Expenditure 2017-18
+    url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/aene-2017-18-v3/final/data/aene-2017-18.csv
+  - description: ''
+    format: OpenSpending API
+    name: Adjusted Estimates of National Expenditure 2017-18
+    url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:aene-2017-18-v3/model/
   - description: Source data provided by Treasury data owners for vulekamali.gov.za
     format: XLSX
     name: AENE 2017-18 source data
@@ -89,14 +97,6 @@ datasets:
     format: CSV
     name: Value of Virements
     url: https://data.vulekamali.gov.za/dataset/b89c2250-8220-4cb7-ada5-1ccb8c94814c/resource/f52065c2-1bd1-4767-ac58-42027a06b89b/download/aene-2017-18-table-2-virements.csv
-  - description: ''
-    format: OpenSpending API
-    name: Adjusted Estimates of National Expenditure 2017-18
-    url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:aene-2017-18-v3/model/
-  - description: ''
-    format: CSV
-    name: Adjusted Estimates of National Expenditure 2017-18
-    url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/aene-2017-18-v3/final/data/aene-2017-18.csv
   slug: adjusted-estimates-of-national-expenditure-2017-18
   url_path: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2017-18
 - author:
@@ -116,7 +116,7 @@ datasets:
   created: '2018-10-31T15:17:50.189525'
   description: null
   intro_short: null
-  last_updated: '2018-11-08T12:45:47.861889'
+  last_updated: '2018-12-11T09:13:06.922971'
   license:
     name: Other (Public Domain)
     url: null
@@ -131,18 +131,18 @@ datasets:
     twitter: null
     url: null
   resources:
-  - description: Source data provided by Treasury data owners for vulekamali.gov.za
-    format: XLSX
-    name: AENE 2018-19 source data
-    url: https://data.vulekamali.gov.za/dataset/ec02dddf-0be9-4569-b951-591e52cc81fe/resource/37c2f6f6-7cdb-4c7f-bd4f-026a0334076a/download/nat-aene-2018-19.xlsx
-  - description: ''
-    format: OpenSpending API
-    name: Adjusted Estimates of National Expenditure 2018-19
-    url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:aene-2018-19-v2/model/
   - description: ''
     format: CSV
     name: Adjusted Estimates of National Expenditure 2018-19
     url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/aene-2018-19-v2/final/data/aene-2018-19.csv
+  - description: ''
+    format: OpenSpending API
+    name: Adjusted Estimates of National Expenditure 2018-19
+    url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:aene-2018-19-v2/model/
+  - description: Source data provided by Treasury data owners for vulekamali.gov.za
+    format: XLSX
+    name: AENE 2018-19 source data
+    url: https://data.vulekamali.gov.za/dataset/ec02dddf-0be9-4569-b951-591e52cc81fe/resource/37c2f6f6-7cdb-4c7f-bd4f-026a0334076a/download/nat-aene-2018-19.xlsx
   - description: ''
     format: CSV
     name: Value of Virements
