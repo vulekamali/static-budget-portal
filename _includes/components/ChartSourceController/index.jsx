@@ -42,7 +42,7 @@ const Markup = ({ items, toggle, styling, changeSource, source, downloadText, ba
   const { scale, color, rotated } = styling;
   return (
     <div className="ChartSourceController">
-      <BarChart {...{ barTypes, scale, color, rotated, items, downloadText }} />
+      <BarChart {...{ barTypes, scale, color, rotated, items, downloadText, source }} />
       {toggle && buildToggle({ source, toggle, changeSource })}
     </div>
   );

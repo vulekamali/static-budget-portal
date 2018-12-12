@@ -1,5 +1,14 @@
-const wrapInHeaderAndFooter = ({ canvas, height, downloadText }) => {
-  const { title, subtitle, description } = downloadText;
+const calcSemanticName = (typeString) => {
+  switch (typeString) {
+    case 'nominal': return 'Not adjusted for inflation';
+    case 'real': return 'Adjusted for inflation';
+    default: throw (new Error(`Unknown parameter: ${typeString}`));
+  }
+};
+
+const wrapInHeaderAndFooter = ({ canvas, height, downloadText, source }) => {
+  const { title, subtitle, description: rawDescription } = downloadText;
+  const description = source ? `${rawDescription} (${calcSemanticName(source)})` : rawDescription;
 
   const memoryCanvas = document.createElement('canvas');
   memoryCanvas.height = height + 260;
@@ -49,8 +58,8 @@ const download = ({ memoryCanvas }) => {
 };
 
 
-const downloadChart = ({ canvas, height, downloadText }) => {
-  const memoryCanvas = wrapInHeaderAndFooter({ canvas, height, downloadText });
+const downloadChart = ({ canvas, height, downloadText, source }) => {
+  const memoryCanvas = wrapInHeaderAndFooter({ canvas, height, downloadText, source });
   download({ memoryCanvas });
 };
 
