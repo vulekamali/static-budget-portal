@@ -66,7 +66,10 @@ class BarChart extends Component {
 
     const viewportWidth = window.innerWidth;
     const config = createChartJsConfig({ items, color, rotated, viewportWidth, barTypes });
-    chartInstance.data.datasets[0].data = config.data.datasets[0].data;
+
+    config.data.datasets.forEach(({ data }, index) => {
+      chartInstance.data.datasets[index].data = data;
+    });
 
     return chartInstance.update();
   }
