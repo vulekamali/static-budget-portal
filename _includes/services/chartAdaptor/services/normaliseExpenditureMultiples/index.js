@@ -1,10 +1,10 @@
 const convertPhaseIntoNumber = (phaseString) => {
   switch (phaseString) {
-    case 'Main Appropriation': return 1;
-    case 'Adjusted Appropriation': return 2;
+    case 'Main appropriation': return 1;
+    case 'Adjusted appropriation': return 2;
     case 'Final Appropriation': return 3;
-    case 'Audited Appropriation': return 4;
-    default: return null;
+    case 'Audit Outcome': return 4;
+    default: throw (new Error(`Unknown phase: ${phaseString}`));
   }
 };
 
@@ -21,19 +21,19 @@ const forcePhaseOrder = (itemsArray) => {
 };
 
 
-const forceYearOrder = (itemsArray) => {
-  return itemsArray.sort(
-    (a, b) => convertYearIntoNumber(a.financial_year) - convertYearIntoNumber(b.financial_year),
-  );
+const forceYearOrder = (itemsObject) => {
+  const years = Object.keys(itemsObject);
+  const orderedYears = years.sort((a, b) => convertYearIntoNumber(a) - convertYearIntoNumber(b));
+  const formatYearPhases = reference => (result, year) => ({
+    ...result,
+    [year]: reference[year],
+  });
+
+  return orderedYears.reduce(formatYearPhases(itemsObject), {});
 };
 
 
-const forceOrder = (itemsArray) => {
-  const orderedbyYears = forceYearOrder(itemsArray);
-  return forcePhaseOrder(orderedbyYears);
-};
-
-const addToYear = (result, { financial_year: year, amount }) => {
+const assignToYearKey = (result, { financial_year: year, amount }) => {
   return {
     ...result,
     [year]: [
@@ -44,8 +44,16 @@ const addToYear = (result, { financial_year: year, amount }) => {
 };
 
 
+const normalise = (itemsArray) => {
+  const orderedByPhase = forcePhaseOrder(itemsArray);
+  const formattedIntoObject = orderedByPhase.reduce(assignToYearKey, {});
+  const orderedByYears = forceYearOrder(formattedIntoObject);
+  return orderedByYears;
+};
+
+
 const normaliseExpenditureMultiples = (rawData) => {
-  const data = forceOrder(rawData).reduce(addToYear, {});
+  const data = normalise(rawData);
   return { data };
 };
 
