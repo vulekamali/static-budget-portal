@@ -31,9 +31,10 @@ const ChartAdaptor = (props) => {
   || type === 'expenditureMultiples'
   || type === 'expenditurePhase';
 
+  const needToggle = type === 'expenditurePhase' || type === 'expenditure';
   const items = normaliseData({ type, rawItems, rotated });
   const color = expenditure ? '#ad3c64' : '#73b23e';
-  const toggle = type === 'expenditurePhase' ? toggleValues : null;
+  const toggle = needToggle ? toggleValues : null;
 
   const downloadText = {
     title,

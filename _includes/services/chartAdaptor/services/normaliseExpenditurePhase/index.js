@@ -1,4 +1,4 @@
-const convertPhaseIntoValue = (phaseString) => {
+const convertPhaseIntoNumber = (phaseString) => {
   switch (phaseString) {
     case 'Main Appropriation': return 1;
     case 'Adjusted Appropriation': return 2;
@@ -9,12 +9,32 @@ const convertPhaseIntoValue = (phaseString) => {
 };
 
 
-const forceCorrectOrder = (itemsArray) => {
-  return itemsArray.sort((a, b) => convertPhaseIntoValue(a) - convertPhaseIntoValue(b));
+const convertYearIntoNumber = (yearString) => {
+  return parseInt(yearString.match(/^\d+/), 10);
 };
 
 
-const addToYear = (result, { financial_year: year, amount }) => {
+const forcePhaseOrder = (itemsArray) => {
+  return itemsArray.sort(
+    (a, b) => convertPhaseIntoNumber(a.phase) - convertPhaseIntoNumber(b.phase),
+  );
+};
+
+
+const forceYearOrder = (itemsArray) => {
+  return itemsArray.sort(
+    (a, b) => convertYearIntoNumber(a.financial_year) - convertYearIntoNumber(b.financial_year),
+  );
+};
+
+
+const forceOrder = (itemsArray) => {
+  const orderedbyYears = forceYearOrder(itemsArray);
+  return forcePhaseOrder(orderedbyYears);
+};
+
+
+const assignToYearKey = (result, { financial_year: year, amount }) => {
   return {
     ...result,
     [year]: [
@@ -28,8 +48,8 @@ const addToYear = (result, { financial_year: year, amount }) => {
 const normaliseExpenditurePhase = (data) => {
   const { nominal: nominalRaw, real: realRaw } = data;
 
-  const nominal = forceCorrectOrder(nominalRaw).reduce(addToYear, {});
-  const real = forceCorrectOrder(realRaw).reduce(addToYear, {});
+  const nominal = forceOrder(nominalRaw).reduce(assignToYearKey, {});
+  const real = forceOrder(realRaw).reduce(assignToYearKey, {});
 
   return {
     nominal,
