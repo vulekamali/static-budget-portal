@@ -407,6 +407,8 @@ layout: page-shell
       </div>
     {% endif %}
 
+    {% capture review_subtitle %}{{ department_location }} {{page_data.name }} Department{% endcapture %}
+
     {% if page_data.budget_actual %}
       <div class="u-marginBottom60 u-marginTop15">
         {%
@@ -421,9 +423,8 @@ layout: page-shell
           csv=page_data.budget_actual.department_data_csv
 
           color="purple"
-          title="Budget vs. Actual Spending"
-          subtitle=subtitle
-          description="Expenditure changes over time"
+          description="Budgeted and Actual Expenditure"
+          subtitle=review_subtitle
         %}
       </div>
     {% endif %}
@@ -442,9 +443,8 @@ layout: page-shell
           csv=page_data.budget_actual_programmes.department_data_csv
 
           color="purple"
-          title="Budget vs. Actual Spending"
-          subtitle=subtitle
-          description="Expenditure changes over time"
+          subtitle=review_subtitle
+          description="Budgeted and Actual Expenditure"
         %}
       </div>
     {% endif %}
