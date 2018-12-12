@@ -157,7 +157,7 @@ const createChartJsConfig = ({ items, rotated, color, viewportWidth, barTypes })
           label: (item, dataObject) => {
             const { index, datasetIndex } = item;
             const { data, label } = dataObject.datasets[datasetIndex];
-            const prefix = rotated ? `${label}: ` : '';
+            const prefix = barTypes ? `${label}: ` : '';
 
             return `${prefix}R${trimValues(data[index])}`;
           },
