@@ -69,7 +69,7 @@ export default class SearchPageContainer extends Component {
 
 
   addPage() {
-    const { tab, page } = this.state;
+    const { tab, page, items } = this.state;
     const { search: phrase, year } = this.props;
 
     if (this.static.currentFetch && this.static.currentFetch.token.active) {
@@ -81,9 +81,9 @@ export default class SearchPageContainer extends Component {
     this.static.currentFetch.request
       .then((data) => {
         const newTab = {
-          ...this.state.items,
+          ...items,
           items: [
-            ...this.state.items[tab].items,
+            ...items[tab].items,
             ...data[tab].items,
           ],
         };
@@ -92,6 +92,7 @@ export default class SearchPageContainer extends Component {
           page: page + 1,
           items: {
             [tab]: newTab,
+            count: items.count,
           },
         });
       })
