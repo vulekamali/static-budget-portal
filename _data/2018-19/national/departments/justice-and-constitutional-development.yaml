@@ -8,7 +8,7 @@ adjusted_budget_summary:
     name: Announced in the budget speech
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253AJustice%2Band%2BConstitutional%2BDevelopment%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253AJustice%2Band%2BConstitutional%2BDevelopment%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -170,93 +170,43 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
   - items:
-    - amount: 1880769000.0
+    - amount: 1032176000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 1830769000
+    - amount: 1018338000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 1721789000
+    - amount: 1002173000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 2040162000.0
+    - amount: 1127969000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 2010162000
+    - amount: 1126469000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 2010162000
+    - amount: 1104981000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 1845713000
+    - amount: 1104981000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 2140520000.0
+    - amount: 1221218000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 2040520000
+    - amount: 1232276000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 2040520000
+    - amount: 1232217000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 1933468000
+    - amount: 1164862000
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 2215538000.0
+    - amount: 1251528000.0
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 2215538000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Direct charge against the National Revenue Fund
-  - items:
-    - amount: 5526428000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 5667254000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 5667254000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 6121588000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 6061588000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 6272604000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 6272604000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 6276828000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 6604598000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 6436550000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 6340628000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 6443672000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 6431035000
+    - amount: 1245827000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -268,107 +218,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Court Services
-  - items:
-    - amount: 3373988000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 3374346000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 3374346000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 3557505000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 3557505000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 3554576000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 3554576000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 3684311000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 3684311000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 3743041000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 3742915000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 3648849000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 3648849000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: National Prosecuting Authority
-  - items:
-    - amount: 1857833000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1832581000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 1819166000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 2079934000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 2130934000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 1970717000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 1969006000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 2129281000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 1786853000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 1974265000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 1958100000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 2117741000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 2502482000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Administration
+    name: State Legal Services
   - items:
     - amount: 3193544000.0
       financial_year: 2015-16
@@ -420,43 +270,93 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Auxiliary and Associated Services
   - items:
-    - amount: 1032176000.0
+    - amount: 1880769000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 1018338000
+    - amount: 1830769000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 1002173000
+    - amount: 1721789000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 1127969000.0
+    - amount: 2040162000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 1126469000
+    - amount: 2010162000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 1104981000
+    - amount: 2010162000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 1104981000
+    - amount: 1845713000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 1221218000.0
+    - amount: 2140520000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 1232276000
+    - amount: 2040520000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 1232217000
+    - amount: 2040520000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 1164862000
+    - amount: 1933468000
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 1251528000.0
+    - amount: 2215538000.0
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 1245827000
+    - amount: 2215538000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Direct charge against the National Revenue Fund
+  - items:
+    - amount: 1857833000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1832581000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1819166000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 2079934000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 2130934000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1970717000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1969006000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 2129281000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1786853000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1974265000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 1958100000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 2117741000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2502482000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -468,7 +368,107 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: State Legal Services
+    name: Administration
+  - items:
+    - amount: 3373988000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 3374346000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 3374346000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 3557505000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 3557505000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 3554576000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 3554576000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 3684311000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 3684311000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 3743041000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 3742915000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 3648849000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 3648849000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: National Prosecuting Authority
+  - items:
+    - amount: 5526428000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 5667254000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 5667254000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 6121588000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 6061588000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 6272604000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 6272604000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 6276828000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 6604598000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 6436550000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 6340628000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 6443672000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 6431035000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Court Services
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -512,7 +512,7 @@ description: 'National department: Justice and Constitutional Development budget
   YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Justice%2Band%2BConstitutional%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Justice%2Band%2BConstitutional%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -769,7 +769,7 @@ is_vote_primary: true
 name: Justice and Constitutional Development
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Justice%2Band%2BConstitutional%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Justice%2Band%2BConstitutional%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Court Services
@@ -887,7 +887,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Justice%2Band%2BConstitutional%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Justice%2Band%2BConstitutional%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 2117741000.0
@@ -909,7 +909,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Justice%2Band%2BConstitutional%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Justice%2Band%2BConstitutional%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - name: Office Accommodation
