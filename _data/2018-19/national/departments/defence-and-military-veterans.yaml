@@ -92,6 +92,15 @@ budget_actual:
     - amount: 48496235000
       financial_year: 2018-19
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
     real:
     - amount: 49701844482
       financial_year: 2015-16
@@ -132,339 +141,418 @@ budget_actual:
     - amount: 45971649301
       financial_year: 2018-19
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 3603153000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 3616407000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 3602801000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 3899635000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 3672635000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 3445535000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 3431011000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 3688564000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 3535399000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 3229122000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 3208059000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 3375584000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 3375584000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Force Employment
-    - items:
-      - amount: 3932914000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 4243150000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 4243150000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 4416816000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 4440671000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 4448745000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 4448745000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 4586699000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 4586699000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 4853116000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 4852916000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 4714062000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 4714062000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Military Health Support
-    - items:
-      - amount: 5816992000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 5476612000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 5476612000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 5911093000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 5924287000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 6056698000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 6056698000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 6077210000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 6362443000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 6463949000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 6463949000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 6285942000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 6181596000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: General Support
-    - items:
-      - amount: 827451000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 830060000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 830060000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 900248000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 900248000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 881289000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 881289000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 917277000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 917277000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 888000000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 888000000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 950364000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 950364000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Defence Intelligence
-    - items:
-      - amount: 4827173000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 4984514000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 4981493000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 5151108000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 5347951000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 5740559000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 5740559000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 5380834000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 5469484000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 5506480000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 5505415000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 5548928000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 5653274000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Administration
-    - items:
-      - amount: 3717249000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 3732748000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 3732748000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 4355880000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 4386815000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 4323232000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 4298385000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 4790003000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 4590003000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 4613939000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 4613939000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 4424685000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 4699355000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Maritime Defence
-    - items:
-      - amount: 7049155000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 7085719000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 7085719000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 6883527000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 6936583000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 6782585000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 6782585000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 6628007000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 6818498000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 6753411000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 6753411000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 6415901000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 6650779000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Air Defence
-    - items:
-      - amount: 14805303000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 15118951000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 15118951000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 15651438000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 15627275000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 15557822000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 15557822000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 16550196000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 16719757000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 16691543000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 16691543000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 16234277000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 16271221000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Landward Defence
+  - items:
+    - amount: 827451000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 830060000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 830060000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 900248000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 900248000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 881289000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 881289000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 917277000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 917277000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 888000000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 888000000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 950364000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 950364000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Defence Intelligence
+  - items:
+    - amount: 3932914000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 4243150000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 4243150000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 4416816000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 4440671000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 4448745000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 4448745000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 4586699000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 4586699000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 4853116000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 4852916000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 4714062000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 4714062000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Military Health Support
+  - items:
+    - amount: 5816992000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 5476612000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 5476612000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 5911093000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 5924287000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 6056698000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 6056698000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 6077210000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 6362443000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 6463949000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 6463949000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 6285942000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 6181596000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: General Support
+  - items:
+    - amount: 3603153000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 3616407000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 3602801000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 3899635000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 3672635000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 3445535000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 3431011000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 3688564000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 3535399000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 3229122000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 3208059000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 3375584000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 3375584000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Force Employment
+  - items:
+    - amount: 3717249000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 3732748000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 3732748000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 4355880000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 4386815000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 4323232000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 4298385000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 4790003000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 4590003000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 4613939000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 4613939000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 4424685000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 4699355000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Maritime Defence
+  - items:
+    - amount: 7049155000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 7085719000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 7085719000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 6883527000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 6936583000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 6782585000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 6782585000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 6628007000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 6818498000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 6753411000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 6753411000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 6415901000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 6650779000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Air Defence
+  - items:
+    - amount: 4827173000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 4984514000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 4981493000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 5151108000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 5347951000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 5740559000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 5740559000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 5380834000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 5469484000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 5506480000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 5505415000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 5548928000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 5653274000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Administration
+  - items:
+    - amount: 14805303000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 15118951000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 15118951000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 15651438000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 15627275000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 15557822000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 15557822000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 16550196000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 16719757000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 16691543000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 16691543000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 16234277000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 16271221000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Landward Defence
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

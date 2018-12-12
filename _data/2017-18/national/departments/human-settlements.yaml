@@ -91,6 +91,21 @@ budget_actual:
     - amount: 33370485000
       financial_year: 2017-18
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     real:
     - amount: 34498971614
       financial_year: 2015-16
@@ -125,151 +140,224 @@ budget_actual:
     - amount: 33370485000
       financial_year: 2017-18
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 169800000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 166690000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 120796000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 224582000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 217298000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 217685000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 151742000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 217302000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 216862000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 205119000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 156547000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Human Settlements Delivery Support
-    - items:
-      - amount: 435116000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 435251000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 411074000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 442274000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 460058000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 455459000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 420897000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 457665000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 470006000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 464069000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 419775000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Administration
-    - items:
-      - amount: 30264127000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 29863947000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 29426936000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 29940937000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 29930937000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 29930937000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 29927992000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 32695760000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 32697260000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 32697260000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 32694309000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Housing Development Finance
-    - items:
-      - amount: 74338000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 77493000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 75738000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 83063000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 88063000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 92275000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 86600000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 93573000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 93573000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 111253000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 99854000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Human Settlements Policy, Strategy and Planning
+  - items:
+    - amount: 30264127000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 29863947000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 29426936000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 29940937000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 29930937000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 29930937000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 29927992000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 32695760000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 32697260000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 32697260000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 32694309000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Housing Development Finance
+  - items:
+    - amount: 435116000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 435251000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 411074000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 442274000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 460058000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 455459000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 420897000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 457665000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 470006000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 464069000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 419775000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Administration
+  - items:
+    - amount: 74338000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 77493000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 75738000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 83063000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 88063000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 92275000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 86600000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 93573000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 93573000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 111253000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 99854000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Human Settlements Policy, Strategy and Planning
+  - items:
+    - amount: 169800000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 166690000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 120796000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 224582000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 217298000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 217685000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 151742000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 217302000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 216862000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 205119000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 156547000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Human Settlements Delivery Support
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'

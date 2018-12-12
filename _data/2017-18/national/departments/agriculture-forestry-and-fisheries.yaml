@@ -113,6 +113,21 @@ budget_actual:
     - amount: 6728132000
       financial_year: 2017-18
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     real:
     - amount: 7116454963
       financial_year: 2015-16
@@ -147,221 +162,324 @@ budget_actual:
     - amount: 6728132000
       financial_year: 2017-18
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 2134770000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 2143284000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 2143017000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 1953418000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 1944610000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 1927266000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 1927031000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 2197187000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 2236871000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 2249520000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 2230660000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Agricultural Production, Health and Food Safety
-    - items:
-      - amount: 443267000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 465907000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 465890000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 458598000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 458598000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 468108000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 468090000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 482184000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 481884000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 504745000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 504722000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Fisheries
-    - items:
-      - amount: 729947000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 788853000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 785802000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 788053000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 781358000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 843571000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 828485000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 902473000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 906834000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 920487000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 827999000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Administration
-    - items:
-      - amount: 1930297000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 1910535000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 1906794956
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 1889738000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 1888697000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 1881198000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 1879016000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 1946764000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 1944057000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 1928604000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 1925580000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Food Security and Agrarian Reform
-    - items:
-      - amount: 906564000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 862844000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 862280000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 945562000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 1137706000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 1084122000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 1077741000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 1016720000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 1015682000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 963758000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 960504000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Forestry and Natural Resources Management
-    - items:
-      - amount: 238162000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 237327000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 236758204
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 297596000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 303996000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 310700000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 310464000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 261706000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 261706000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 279920000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 278667000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Trade Promotion and Market Access
+  - items:
+    - amount: 1930297000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1910535000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1906794956
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1889738000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1888697000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1881198000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1879016000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 1946764000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1944057000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1928604000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 1925580000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Food Security and Agrarian Reform
+  - items:
+    - amount: 729947000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 788853000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 785802000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 788053000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 781358000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 843571000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 828485000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 902473000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 906834000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 920487000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 827999000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Administration
+  - items:
+    - amount: 2134770000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2143284000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 2143017000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1953418000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1944610000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1927266000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1927031000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 2197187000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 2236871000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2249520000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 2230660000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Agricultural Production, Health and Food Safety
+  - items:
+    - amount: 443267000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 465907000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 465890000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 458598000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 458598000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 468108000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 468090000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 482184000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 481884000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 504745000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 504722000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Fisheries
+  - items:
+    - amount: 238162000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 237327000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 236758204
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 297596000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 303996000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 310700000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 310464000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 261706000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 261706000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 279920000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 278667000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Trade Promotion and Market Access
+  - items:
+    - amount: 906564000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 862844000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 862280000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 945562000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1137706000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1084122000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1077741000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 1016720000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1015682000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 963758000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 960504000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Forestry and Natural Resources Management
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

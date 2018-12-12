@@ -89,6 +89,21 @@ budget_actual:
     - amount: 1459484005
       financial_year: 2017-18
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     real:
     - amount: 1229951293
       financial_year: 2015-16
@@ -123,126 +138,376 @@ budget_actual:
     - amount: 1459484005
       financial_year: 2017-18
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 1178648000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 1300183000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 1336057000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 1338635000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 1325737002
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Small, Medium and Micro Enterprises and Cooperatives Programme Design
-        and Support
-    - items:
-      - amount: 15188000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 12241000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 11692229
-        financial_year: 2015-16
-        phase: Audit Outcome
-      name: Cooperatives Support and Development
-    - items:
-      - amount: 26105000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 25835000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 13847691
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Small Medium and Micro Enterprises and Cooperatives Policy and Research
-    - items:
-      - amount: 25835000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 21999000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 17999000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 17324000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 16747584
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Small, Medium and Micro Enterprises and Cooperatives Policy and Research
-    - items:
-      - amount: 1023975000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 1034422000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 1020751645
-        financial_year: 2015-16
-        phase: Audit Outcome
-      name: Enterprise Development and Entrepreneurship
-    - items:
-      - amount: 64025000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 80857000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 66446677
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 118080000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 113956000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 111025000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 98924951
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 127614000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 121614000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 119711000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 116999419
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Administration
-    - items:
-      - amount: 1181254000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 1181579000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 1084267230
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Small Medium and Micro Enterprises and Cooperatives Programme Design and
-        Support
+  - items:
+    - amount: 25835000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 21999000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 17999000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 17324000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 16747584
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: Small, Medium and Micro Enterprises and Cooperatives Policy and Research
+  - items:
+    - amount: 64025000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 80857000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 66446677
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 118080000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 113956000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 111025000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 98924951
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 127614000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 121614000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 119711000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 116999419
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Administration
+  - items:
+    - amount: 1023975000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1034422000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1020751645
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    name: Enterprise Development and Entrepreneurship
+  - items:
+    - amount: 26105000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 25835000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 13847691
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    name: Small Medium and Micro Enterprises and Cooperatives Policy and Research
+  - items:
+    - amount: 1178648000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1300183000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1336057000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1338635000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 1325737002
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: Small, Medium and Micro Enterprises and Cooperatives Programme Design and
+      Support
+  - items:
+    - amount: 15188000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 12241000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 11692229
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    name: Cooperatives Support and Development
+  - items:
+    - amount: 1181254000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1181579000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1084267230
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    name: Small Medium and Micro Enterprises and Cooperatives Programme Design and
+      Support
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: A People's Guide to the Adjusted Budget 2018/19

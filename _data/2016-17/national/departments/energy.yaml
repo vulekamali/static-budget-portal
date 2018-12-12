@@ -79,6 +79,33 @@ budget_actual:
     - amount: 7512841593
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     real:
     - amount: 8341834026
       financial_year: 2015-16
@@ -101,149 +128,336 @@ budget_actual:
     - amount: 7880054232
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 5778297000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 5824050000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 5820485355
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 5699907000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 5705155000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 5714645000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 5678658473
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Electrification and Energy Programme and Project Management
-    - items:
-      - amount: 242598000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 277898000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 277766895
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 240137000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 244822000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 247018000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 282761955
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Administration
-    - items:
-      - amount: 45096000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 40586000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 38094559
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 46748000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 43518000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 40164000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 39877828
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Energy Policy and Planning
-    - items:
-      - amount: 654398000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 655116000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 655028908
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 863575000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 880141000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 879834000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 872451437
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Nuclear Energy
-    - items:
-      - amount: 687327000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 400961000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 281783365
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 616933000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 599392000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 589894000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 560100615
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Clean Energy
-    - items:
-      - amount: 74378000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 69008000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 68958173
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 77871000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 77528000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 79001000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 78991285
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Petroleum and Petroleum Products Regulation
+  - items:
+    - amount: 687327000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 400961000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 281783365
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 616933000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 599392000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 589894000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 560100615
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Clean Energy
+  - items:
+    - amount: 654398000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 655116000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 655028908
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 863575000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 880141000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 879834000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 872451437
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Nuclear Energy
+  - items:
+    - amount: 242598000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 277898000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 277766895
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 240137000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 244822000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 247018000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 282761955
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Administration
+  - items:
+    - amount: 74378000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 69008000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 68958173
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 77871000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 77528000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 79001000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 78991285
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Petroleum and Petroleum Products Regulation
+  - items:
+    - amount: 45096000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 40586000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 38094559
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 46748000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 43518000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 40164000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 39877828
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Energy Policy and Planning
+  - items:
+    - amount: 5778297000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 5824050000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 5820485355
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 5699907000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 5705155000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 5714645000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 5678658473
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Electrification and Energy Programme and Project Management
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

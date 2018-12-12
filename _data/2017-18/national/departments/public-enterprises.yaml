@@ -76,6 +76,21 @@ budget_actual:
     - amount: 250413000
       financial_year: 2017-18
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     real:
     - amount: 298216262
       financial_year: 2015-16
@@ -110,116 +125,174 @@ budget_actual:
     - amount: 250413000
       financial_year: 2017-18
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 158587000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 161874000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 145760000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 157992000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 155792000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 155792000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 153788000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 155468000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 158468000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 158468000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 150629000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Administration
-    - items:
-      - amount: 23829000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 23509000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 19730000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 26007000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 25906000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 25906000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 23303000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 25243000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 24243000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 24243000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 21572000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Legal and Governance
-    - items:
-      - amount: 85065000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 23117211000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 23094185000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 89977000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 86278000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 86278000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 76688000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 85985000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 83985000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 83985000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 78212000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Portfolio Management and Strategic Partnerships
+  - items:
+    - amount: 158587000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 161874000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 145760000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 157992000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 155792000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 155792000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 153788000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 155468000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 158468000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 158468000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 150629000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Administration
+  - items:
+    - amount: 23829000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 23509000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 19730000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 26007000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 25906000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 25906000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 23303000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 25243000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 24243000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 24243000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 21572000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Legal and Governance
+  - items:
+    - amount: 85065000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 23117211000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 23094185000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 89977000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 86278000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 86278000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 76688000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 85985000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 83985000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 83985000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 78212000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Portfolio Management and Strategic Partnerships
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

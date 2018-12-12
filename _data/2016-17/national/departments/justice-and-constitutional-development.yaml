@@ -72,192 +72,406 @@ budget_actual:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 16864738000.0
+    - amount: 14983969000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 16841542000
+    - amount: 15010773000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 16693569000
+    - amount: 14971780000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 18089898000.0
+    - amount: 16049736000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 18050898000
+    - amount: 16040736000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 18050898000
+    - amount: 16040736000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 17884735000
+    - amount: 16039022000
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     real:
-    - amount: 18802603295
+    - amount: 16705722015
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 18776741927
+    - amount: 16735605965
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 18611765892
+    - amount: 16692132422
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 18974095957
+    - amount: 16834214928
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 18933189715
+    - amount: 16824775026
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 18933189715
+    - amount: 16824775026
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 18758905001
+    - amount: 16822977249
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 3373988000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 3374346000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 3374346000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 3557505000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 3557505000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 3554576000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 3554576000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: National Prosecuting Authority
-    - items:
-      - amount: 1032176000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 1018338000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 1002173000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 1127969000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 1126469000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 1104981000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 1104981000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: State Legal Services
-    - items:
-      - amount: 1857833000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 1832581000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 1819166000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 2079934000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 2130934000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 1970717000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 1969006000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Administration
-    - items:
-      - amount: 1880769000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 1830769000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 1721789000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 2040162000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 2010162000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 2010162000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 1845713000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Direct charge against the National Revenue Fund
-    - items:
-      - amount: 5526428000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 5667254000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 5667254000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 6121588000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 6061588000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 6272604000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 6272604000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Court Services
-    - items:
-      - amount: 3193544000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 3118254000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 3108841000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 3162740000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 3164240000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 3137858000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 3137855000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Auxiliary and Associated Services
+  - items:
+    - amount: 1880769000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1830769000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1721789000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 2040162000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 2010162000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2010162000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1845713000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Direct charge against the National Revenue Fund
+  - items:
+    - amount: 5526428000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 5667254000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 5667254000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 6121588000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 6061588000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 6272604000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 6272604000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Court Services
+  - items:
+    - amount: 3373988000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 3374346000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 3374346000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 3557505000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 3557505000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 3554576000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 3554576000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: National Prosecuting Authority
+  - items:
+    - amount: 1857833000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1832581000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1819166000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 2079934000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 2130934000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1970717000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1969006000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Administration
+  - items:
+    - amount: 3193544000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 3118254000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 3108841000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 3162740000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 3164240000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 3137858000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 3137855000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Auxiliary and Associated Services
+  - items:
+    - amount: 1032176000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1018338000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1002173000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1127969000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1126469000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1104981000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1104981000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: State Legal Services
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

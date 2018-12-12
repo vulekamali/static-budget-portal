@@ -68,6 +68,33 @@ budget_actual:
     - amount: 2075692000
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     real:
     - amount: 1575728345
       financial_year: 2015-16
@@ -90,128 +117,336 @@ budget_actual:
     - amount: 2177147664
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 891801000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 886608000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 886608000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 882353000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: ICT Enterprise Development and Oversight
-    - items:
-      - amount: 105578000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 97132000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 73979000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 95618000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 88781000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 88775000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 78494000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Policy, Research and Capacity Development
-    - items:
-      - amount: 173650000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 223030000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 221864000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 193337000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 207904000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 217322000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 211582000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Administration
-    - items:
-      - amount: 447889000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 490231000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 488959000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      name: ICT Enterprise Development and SOE Oversight
-    - items:
-      - amount: 43447000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 43310000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 41542000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 44710000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 45651000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 48430000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 46944000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: International Affairs and Trade
-    - items:
-      - amount: 642764000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 551550000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 473753000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 1191946000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 1188468000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 1176277000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 856319000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: ICT Infrastructure Support
+  - items:
+    - amount: 173650000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 223030000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 221864000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 193337000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 207904000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 217322000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 211582000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Administration
+  - items:
+    - amount: 105578000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 97132000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 73979000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 95618000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 88781000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 88775000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 78494000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Policy, Research and Capacity Development
+  - items:
+    - amount: 447889000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 490231000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 488959000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: ICT Enterprise Development and SOE Oversight
+  - items:
+    - amount: 43447000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 43310000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 41542000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 44710000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 45651000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 48430000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 46944000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: International Affairs and Trade
+  - items:
+    - amount: 891801000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 886608000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 886608000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 882353000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    name: ICT Enterprise Development and Oversight
+  - items:
+    - amount: 642764000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 551550000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 473753000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1191946000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1188468000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1176277000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 856319000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: ICT Infrastructure Support
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

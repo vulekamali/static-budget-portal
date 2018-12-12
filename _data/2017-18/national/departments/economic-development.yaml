@@ -91,6 +91,21 @@ budget_actual:
     - amount: 912049770
       financial_year: 2017-18
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     real:
     - amount: 987559506
       financial_year: 2015-16
@@ -125,116 +140,174 @@ budget_actual:
     - amount: 912049770
       financial_year: 2017-18
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 27889000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 27889000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 26705000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 36008000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 33075000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 29887000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 27797244
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 35609000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 32822000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 31736000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 31126000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Growth Path and Social Dialogue
-    - items:
-      - amount: 83223000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 83223000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 83144000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 79208000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 89237000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 92430830
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 90417318
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 80674000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 86461000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 85117000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 83666208
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Administration
-    - items:
-      - amount: 774666000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 774666000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 773884000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 559445000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 552349000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 552342542
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 546869148
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 680954000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 794954000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 797384000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 797257562
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Investment, Competition and Trade
+  - items:
+    - amount: 27889000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 27889000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 26705000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 36008000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 33075000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 29887000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 27797244
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 35609000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 32822000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 31736000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 31126000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Growth Path and Social Dialogue
+  - items:
+    - amount: 83223000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 83223000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 83144000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 79208000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 89237000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 92430830
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 90417318
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 80674000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 86461000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 85117000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 83666208
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Administration
+  - items:
+    - amount: 774666000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 774666000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 773884000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 559445000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 552349000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 552342542
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 546869148
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 680954000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 794954000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 797384000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 797257562
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Investment, Competition and Trade
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: A People's Guide to the Adjusted Budget 2018/19

@@ -105,6 +105,18 @@ budget_actual:
     - amount: 958035000
       financial_year: 2018-19
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
     real:
     - amount: 840862360
       financial_year: 2015-16
@@ -142,247 +154,521 @@ budget_actual:
     - amount: 908162232
       financial_year: 2018-19
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 415983000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 415983000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 413417000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 411396000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 411402000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 411085000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 441996000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 440164000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 440164000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 437565000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 455866000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 488624000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: National Youth Development
-    - items:
-      - amount: 75632000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 70736000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 103237000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 91508000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 88233000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 84216000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: National Planning
-    - items:
-      - amount: 54547000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 44703000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 47639000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 46139000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 77392000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 81470000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: National Planning Coordination
-    - items:
-      - amount: 60626000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 60626000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 67839000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 61955000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 62412000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 61897000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Institutional Performance Monitoring and Evaluation
-    - items:
-      - amount: 40111000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 32410000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 34618000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 34343000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 35123000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 44786000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Public Sector Monitoring and Capacity Development
-    - items:
-      - amount: 111872000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 111872000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 134315000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 141052000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 142453000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 134299000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 168305000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 173446000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 173432000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 154931000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 186630000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 170840000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Administration
-    - items:
-      - amount: 90087000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 89560000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 108854000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 91751000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 93162000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 89749000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Outcomes Monitoring and Evaluation
-    - items:
-      - amount: 56963000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 53398000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 53421000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 51786000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 59263000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 63317000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Frontline and Citizen-Based Service Delivery and Monitoring
-    - items:
-      - amount: 52153000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 47422000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 44093000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 40902000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 55893000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 62235000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Sector Planning and Monitoring
-    - items:
-      - amount: 109421000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 106953000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 105129000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 101172000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 57184000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 46763000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Evidence and Knowledge Systems
+  - items:
+    - amount: 109421000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 106953000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 105129000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 101172000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 57184000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 46763000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Evidence and Knowledge Systems
+  - items:
+    - amount: 90087000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 89560000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 108854000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 91751000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 93162000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 89749000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Outcomes Monitoring and Evaluation
+  - items:
+    - amount: 75632000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 70736000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 103237000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 91508000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 88233000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 84216000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: National Planning
+  - items:
+    - amount: 56963000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 53398000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 53421000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 51786000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 59263000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 63317000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Frontline and Citizen-Based Service Delivery and Monitoring
+  - items:
+    - amount: 415983000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 415983000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 413417000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 411396000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 411402000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 411085000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 441996000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 440164000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 440164000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 437565000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 455866000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 488624000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: National Youth Development
+  - items:
+    - amount: 111872000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 111872000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 134315000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 141052000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 142453000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 134299000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 168305000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 173446000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 173432000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 154931000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 186630000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 170840000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Administration
+  - items:
+    - amount: 60626000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 60626000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 67839000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 61955000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 62412000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 61897000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Institutional Performance Monitoring and Evaluation
+  - items:
+    - amount: 40111000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 32410000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 34618000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 34343000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 35123000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 44786000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Public Sector Monitoring and Capacity Development
+  - items:
+    - amount: 54547000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 44703000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 47639000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 46139000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 77392000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 81470000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: National Planning Coordination
+  - items:
+    - amount: 52153000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 47422000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 44093000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 40902000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 55893000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 62235000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Sector Planning and Monitoring
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
