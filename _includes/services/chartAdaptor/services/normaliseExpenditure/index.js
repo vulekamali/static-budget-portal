@@ -1,21 +1,18 @@
-const addToYear = (result, { financial_year: year, amount }) => {
-  return {
-    ...result,
-    [year]: [
-      ...(result[year] || []),
-      amount,
-    ],
-  };
-};
-
-
 const normaliseExpenditure = (data) => {
-  const { nominal, real } = data;
+  const {
+    nominal: nominalRaw,
+    real: realRaw,
+  } = data;
 
-  return {
-    nominal: nominal.reduce(addToYear, {}),
-    real: real.reduce(addToYear, {}),
-  };
+  const createObject = (result, { financial_year: year, amount: value }) => ({
+    ...result,
+    [year]: value,
+  });
+
+  const nominal = nominalRaw.reduce(createObject, {});
+  const real = realRaw.reduce(createObject, {});
+
+  return { nominal, real };
 };
 
 
