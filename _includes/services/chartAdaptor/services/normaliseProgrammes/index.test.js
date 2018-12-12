@@ -16,4 +16,5 @@ const output = {
 };
 
 
-test('basic', expect(normaliseExpenditure(input)).toEqual(output));
+const basicCondition = () => expect(normaliseExpenditure(input)).toEqual(output);
+test('basic', basicCondition);

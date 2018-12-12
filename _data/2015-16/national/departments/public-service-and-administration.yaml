@@ -3,6 +3,411 @@
 #########################################
 
 adjusted_budget_summary: null
+budget_actual:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 930868000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 941482000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 934792000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    real:
+    - amount: 1037830633
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1049664249
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1042205526
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+budget_actual_programmes:
+  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  programmes:
+  - items:
+    - amount: 314574000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 325094000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 325004000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Service Delivery Support
+  - items:
+    - amount: 37465000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 35518000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 32325000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Policy Development, Research and Analysis
+  - items:
+    - amount: 68607000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 70410000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 67552000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Labour Relations and Human Resource Management
+  - items:
+    - amount: 219702000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 216125000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 215765000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Administration
+  - items:
+    - amount: 21493000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 20308000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 20208000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Government Chief Information Officer
+  - items:
+    - amount: 269027000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 274027000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 273938000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Governance of Public Administration
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
