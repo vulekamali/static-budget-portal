@@ -72,6 +72,15 @@ budget_actual:
     - amount: 7430532000
       financial_year: 2018-19
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
     real:
     - amount: 6631450638
       financial_year: 2015-16
@@ -112,300 +121,418 @@ budget_actual:
     - amount: 7043718161
       financial_year: 2018-19
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 189324000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 189324000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Legal, Authorisations, Compliance and Enforcement
-    - items:
-      - amount: 655600000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 700648000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 699863000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 718249000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 718249000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 738721000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 738721000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 696518000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 696518000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 695690000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 692660000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 773350000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 773350000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Biodiversity and Conservation
-    - items:
-      - amount: 79281000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 79740000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 79740000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 109273000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 109273000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 98393000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 94968000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 450335000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 417335000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 422052000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 353885000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 550254000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 550254000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Chemicals and Waste Management
-    - items:
-      - amount: 714049000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 832487000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 832487000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 808226000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 803226000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 828874000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 827902000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 863045000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 863045000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 922046000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 922046000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 941820000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 941820000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Administration
-    - items:
-      - amount: 240149000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 246114000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 246114000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 289582000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 289582000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 296403000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 295484000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 294872000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 294872000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 295824000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 294887000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 294508000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 294508000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Climate Change and Air Quality
-    - items:
-      - amount: 3646864000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 3580570000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 3579640000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 3865083000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 3865083000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 3805726000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 3766912000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 3895209000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 3928209000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 3908870000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 3732605000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 3871281000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 4189281000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Environmental Programmes
-    - items:
-      - amount: 127517000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 131717000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 131417000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 164647000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 164647000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 154303000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 154303000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 179780000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 179780000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 169594000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 165441000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Legal, Authorisations and Compliance
-    - items:
-      - amount: 484529000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 372021000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 368659000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 475041000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 475041000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 502681000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 502681000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 468455000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 468455000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 434138000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 428613000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 491995000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 491995000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Oceans and Coasts
+  - items:
+    - amount: 189324000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 189324000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Legal, Authorisations, Compliance and Enforcement
+  - items:
+    - amount: 714049000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 832487000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 832487000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 808226000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 803226000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 828874000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 827902000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 863045000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 863045000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 922046000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 922046000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 941820000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 941820000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Administration
+  - items:
+    - amount: 655600000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 700648000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 699863000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 718249000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 718249000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 738721000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 738721000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 696518000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 696518000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 695690000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 692660000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 773350000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 773350000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Biodiversity and Conservation
+  - items:
+    - amount: 3646864000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 3580570000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 3579640000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 3865083000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 3865083000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 3805726000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 3766912000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 3895209000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 3928209000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 3908870000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 3732605000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 3871281000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 4189281000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Environmental Programmes
+  - items:
+    - amount: 484529000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 372021000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 368659000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 475041000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 475041000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 502681000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 502681000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 468455000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 468455000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 434138000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 428613000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 491995000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 491995000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Oceans and Coasts
+  - items:
+    - amount: 79281000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 79740000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 79740000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 109273000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 109273000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 98393000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 94968000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 450335000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 417335000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 422052000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 353885000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 550254000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 550254000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Chemicals and Waste Management
+  - items:
+    - amount: 127517000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 131717000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 131417000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 164647000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 164647000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 154303000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 154303000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 179780000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 179780000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 169594000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 165441000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Legal, Authorisations and Compliance
+  - items:
+    - amount: 240149000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 246114000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 246114000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 289582000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 289582000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 296403000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 295484000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 294872000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 294872000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 295824000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 294887000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 294508000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 294508000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Climate Change and Air Quality
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

@@ -76,6 +76,33 @@ budget_actual:
     - amount: 8143524000
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     real:
     - amount: 7192062337
       financial_year: 2015-16
@@ -98,80 +125,186 @@ budget_actual:
     - amount: 8541563131
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 720919000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 731406000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 729756000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 1042691000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 1042466000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 1145801000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 1145702000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Immigration Affairs
-    - items:
-      - amount: 1598202000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 1758739000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 1757204000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 2222890000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 2387819000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 2222834000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 2210834000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Administration
-    - items:
-      - amount: 4131701000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 4858580000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 4856418000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 3901559000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 4725520000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 4787170000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 4786988000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Citizen Affairs
+  - items:
+    - amount: 4131701000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 4858580000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 4856418000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 3901559000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 4725520000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 4787170000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 4786988000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Citizen Affairs
+  - items:
+    - amount: 720919000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 731406000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 729756000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1042691000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1042466000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1145801000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1145702000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Immigration Affairs
+  - items:
+    - amount: 1598202000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1758739000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1757204000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 2222890000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 2387819000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2222834000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 2210834000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Administration
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

@@ -81,6 +81,21 @@ budget_actual:
     - amount: 1776685000
       financial_year: 2017-18
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     real:
     - amount: 1804522735
       financial_year: 2015-16
@@ -115,151 +130,224 @@ budget_actual:
     - amount: 1776685000
       financial_year: 2017-18
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 260443000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 246236000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 246236000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 270786000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 265127000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 260177000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 258758000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 364577000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 379260000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 370392000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 370104000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Mineral Regulation
-    - items:
-      - amount: 293223000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 359067000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 359067000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 310868000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 345814000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 362796000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 361050000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 317722000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 339931000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 362906000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 362470000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Administration
-    - items:
-      - amount: 175840000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 171509000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 171506000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 184934000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 189873000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 190440000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 189557000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 189401000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 194146000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 203687000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 203657000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Mine Health and Safety
-    - items:
-      - amount: 889036000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 861730000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 861672000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 902489000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 868263000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 855664000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 851736000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 907749000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 866112000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 842464000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 840454000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      name: Mineral Policy and Promotion
+  - items:
+    - amount: 889036000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 861730000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 861672000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 902489000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 868263000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 855664000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 851736000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 907749000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 866112000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 842464000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 840454000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Mineral Policy and Promotion
+  - items:
+    - amount: 175840000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 171509000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 171506000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 184934000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 189873000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 190440000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 189557000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 189401000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 194146000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 203687000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 203657000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Mine Health and Safety
+  - items:
+    - amount: 293223000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 359067000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 359067000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 310868000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 345814000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 362796000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 361050000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 317722000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 339931000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 362906000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 362470000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Administration
+  - items:
+    - amount: 260443000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 246236000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 246236000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 270786000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 265127000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 260177000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 258758000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 364577000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 379260000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 370392000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 370104000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Mineral Regulation
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: A People's Guide to the Adjusted Budget 2018/19

@@ -15,7 +15,7 @@ intro: Annual Report Expenditure data for the 2016-17 financial year, published 
 intro_short: Annual Report Expenditure data for the 2016-17 financial year, published
   by the National Treasury and normalised for Vulekamali
 key_points: null
-last_updated: '2018-12-06T15:13:27.274196'
+last_updated: '2018-12-12T07:28:09.645674'
 license:
   name: License not specified
   url: null
@@ -32,13 +32,13 @@ organization:
   url: null
 resources:
 - description: ''
-  format: openspending api
-  name: National Annual Report Expenditure 2016-17
-  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:nat-are-2016-17/model/
-- description: ''
   format: CSV
   name: National Annual Report Expenditure 2016-17
   url: https://data.vulekamali.gov.za/dataset/5acabeef-4140-4f74-8178-885186677fd3/resource/b2135502-a76e-4d24-bd88-7c5447834d1a/download/are-2016-17.csv
+- description: ''
+  format: OpenSpending API
+  name: National Annual Report Expenditure 2016-17
+  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:nat-are-2016-17/model/
 selected_tab: datasets
 slug: annual-report-expenditure-2016-17
 title: Annual Report Expenditure 2016-17 - vulekamali

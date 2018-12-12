@@ -18,7 +18,7 @@ intro: "Combined and normalised dataset consisting of ENE, AENE and AR expenditu
 intro_short: "Combined and normalised dataset consisting of ENE, AENE and AR expenditure\
   \ data.\r\nIncludes data from multiple fiscal years."
 key_points: null
-last_updated: '2018-12-11T08:32:21.889699'
+last_updated: '2018-12-12T07:25:58.675825'
 license:
   name: License not specified
   url: null
@@ -35,13 +35,13 @@ organization:
   url: null
 resources:
 - description: ''
-  format: openspending api
-  name: Expenditure Time Series
-  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:expenditure-time-series/model/
-- description: ''
   format: CSV
   name: 'Expenditure Time Series '
   url: https://data.vulekamali.gov.za/dataset/9eb118ed-a55e-4227-a13f-52e3379b8df6/resource/78066aee-944e-4ff4-b6fa-40abfd5f8154/download/expenditure-time-series.csv
+- description: ''
+  format: OpenSpending API
+  name: Expenditure Time Series
+  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:expenditure-time-series/model/
 selected_tab: datasets
 slug: expenditure-time-series
 title: Expenditure Time Series - vulekamali

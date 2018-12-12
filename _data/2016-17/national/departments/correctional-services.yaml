@@ -62,6 +62,33 @@ budget_actual:
     - amount: 21542174000
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     real:
     - amount: 22986675088
       financial_year: 2015-16
@@ -84,126 +111,286 @@ budget_actual:
     - amount: 22595112289
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 1796262000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 2088481000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 2088481000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 1975116000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 1975116000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 2235094000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 2235094000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Care
-    - items:
-      - amount: 891196000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 890964000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 890964000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 807777000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 807777000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 853727000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 853727000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Social Reintegration
-    - items:
-      - amount: 13080858000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 12464955000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 12465076000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 13700861000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 13701515000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 13423945000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 13388093000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Incarceration
-    - items:
-      - amount: 3697275000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 4015015000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 4015015000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 3876194000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 3876194000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 3879599000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 3879599000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Administration
-    - items:
-      - amount: 1151993000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 1129139000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 1129139000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 1217339000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 1219589000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 1187826000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 1185661000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      name: Rehabilitation
+  - items:
+    - amount: 1796262000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2088481000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 2088481000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1975116000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1975116000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2235094000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 2235094000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Care
+  - items:
+    - amount: 891196000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 890964000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 890964000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 807777000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 807777000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 853727000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 853727000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Social Reintegration
+  - items:
+    - amount: 1151993000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1129139000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1129139000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1217339000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1219589000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1187826000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1185661000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Rehabilitation
+  - items:
+    - amount: 3697275000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 4015015000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 4015015000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 3876194000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 3876194000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 3879599000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 3879599000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Administration
+  - items:
+    - amount: 13080858000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 12464955000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 12465076000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 13700861000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 13701515000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 13423945000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 13388093000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Incarceration
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

@@ -111,6 +111,15 @@ budget_actual:
     - amount: 4338737000
       financial_year: 2018-19
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
     real:
     - amount: 4370275645
       financial_year: 2015-16
@@ -151,175 +160,218 @@ budget_actual:
     - amount: 4112873829
       financial_year: 2018-19
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
-    base_financial_year: 2017-18
-    programmes:
-    - items:
-      - amount: 244012000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 278287000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 253932000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 281119000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 262601000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 262340000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 242684000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 266509000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 370422000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 372338000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 322208000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 300844000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 310317000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Administration
-    - items:
-      - amount: 424058000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 224126000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 231730000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 364429000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 325217000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 239698000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 192230000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 385951000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 297420000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 297719000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 161635000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 416027000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 287823000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Institutional Governance
-    - items:
-      - amount: 1076224000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 999836000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 973035000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 1094707000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 1068236000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 1126112000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 1099327000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 1154316000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 1092595000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 1090832000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 1050635000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 1184413000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 1167540000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Arts and Culture Promotion and Development
-    - items:
-      - amount: 2175565000.0
-        financial_year: 2015-16
-        phase: Main appropriation
-      - amount: 2323798000
-        financial_year: 2015-16
-        phase: Final Appropriation
-      - amount: 2303656000
-        financial_year: 2015-16
-        phase: Audit Outcome
-      - amount: 2330598000.0
-        financial_year: 2016-17
-        phase: Main appropriation
-      - amount: 2406518000
-        financial_year: 2016-17
-        phase: Adjusted appropriation
-      - amount: 2434422000
-        financial_year: 2016-17
-        phase: Final Appropriation
-      - amount: 2423226000
-        financial_year: 2016-17
-        phase: Audit Outcome
-      - amount: 2643069000.0
-        financial_year: 2017-18
-        phase: Main appropriation
-      - amount: 2611301000
-        financial_year: 2017-18
-        phase: Adjusted appropriation
-      - amount: 2610849000
-        financial_year: 2017-18
-        phase: Final Appropriation
-      - amount: 2607002000
-        financial_year: 2017-18
-        phase: Audit Outcome
-      - amount: 2470980000.0
-        financial_year: 2018-19
-        phase: Main appropriation
-      - amount: 2573057000
-        financial_year: 2018-19
-        phase: Adjusted appropriation
-      name: Heritage Promotion and Preservation
+  - items:
+    - amount: 424058000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 224126000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 231730000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 364429000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 325217000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 239698000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 192230000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 385951000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 297420000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 297719000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 161635000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 416027000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 287823000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Institutional Governance
+  - items:
+    - amount: 1076224000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 999836000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 973035000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1094707000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1068236000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1126112000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1099327000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 1154316000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1092595000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1090832000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 1050635000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 1184413000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1167540000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Arts and Culture Promotion and Development
+  - items:
+    - amount: 244012000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 278287000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 253932000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 281119000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 262601000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 262340000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 242684000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 266509000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 370422000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 372338000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 322208000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 300844000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 310317000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Administration
+  - items:
+    - amount: 2175565000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2323798000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 2303656000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 2330598000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 2406518000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2434422000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 2423226000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 2643069000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 2611301000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2610849000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 2607002000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 2470980000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2573057000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Heritage Promotion and Preservation
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

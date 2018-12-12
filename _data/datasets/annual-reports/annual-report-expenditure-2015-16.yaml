@@ -15,7 +15,7 @@ intro: Annual Report Expenditure data for the 2015-16 financial year, published 
 intro_short: Annual Report Expenditure data for the 2015-16 financial year, published
   by the National Treasury and normalised for Vulekamali
 key_points: null
-last_updated: '2018-12-06T14:40:56.470892'
+last_updated: '2018-12-12T07:28:02.432456'
 license:
   name: License not specified
   url: null
@@ -32,13 +32,13 @@ organization:
   url: null
 resources:
 - description: ''
-  format: openspending api
-  name: National Annual Report Expenditure 2015-16
-  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:nat-are-2015-16/model/
-- description: ''
   format: CSV
   name: National Annual Report Expenditure 2015-16
   url: https://data.vulekamali.gov.za/dataset/e75e7fe3-e80d-421d-95ab-aefd3dbc7819/resource/f5561bdf-2528-4361-9669-32ab64e980ce/download/are-2015-16.csv
+- description: ''
+  format: OpenSpending API
+  name: National Annual Report Expenditure 2015-16
+  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:nat-are-2015-16/model/
 selected_tab: datasets
 slug: annual-report-expenditure-2015-16
 title: Annual Report Expenditure 2015-16 - vulekamali
