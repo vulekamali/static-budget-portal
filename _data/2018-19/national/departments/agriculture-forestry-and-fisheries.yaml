@@ -2,13 +2,12 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
-
 adjusted_budget_summary:
   by_type:
   - amount: 566500000
     name: Announced in the budget speech
     type: kind
-  - amount: 130005000
+  - amount: 1305000
     name: Unforeseeable/unavoidable
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2018-19
@@ -710,6 +709,54 @@ economic_classification_by_programme:
       type: economic_classification_1
     name: Trade Promotion and Market Access
     type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 6628873000.0
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 6400542000.0
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 6490827000.0
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 6847034000.0
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 7164998000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 7601275000.0
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 7813371000.0
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    real:
+    - amount: 7772437253
+      financial_year: 2014-15
+      phase: Audited Outcome
+    - amount: 7136004846
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 6808085614
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 6847034000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 6792007158
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 6843470882
+      financial_year: 2019-20
+      phase: Medium Term Estimates
+    - amount: 6665122557
+      financial_year: 2020-21
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
