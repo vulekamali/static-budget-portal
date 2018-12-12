@@ -150,7 +150,7 @@ layout: page-shell
             url=pdf_link
             type="download"
           %}
-          
+
           {%
             include components/LinksList/item.html
             text=text2
@@ -261,7 +261,7 @@ layout: page-shell
     {% assign text1 = "View the " | append: source_type_adjusted_short | append: " chapter for " | append: chapter_name | append: " (PDF)." %}
     {% assign text2 = "View tables in the " | append:  source_type_adjusted_short | append: " chapter (Excel)." %}
 
-    {% if pdf_link_adjusted or excel_link_adjusted %}  
+    {% if pdf_link_adjusted or excel_link_adjusted %}
       <ul class="LinksList u-marginBottom60">
         {%
           include components/LinksList/item.html
@@ -269,7 +269,7 @@ layout: page-shell
           url=pdf_link_adjusted
           type="download"
         %}
-        
+
         {%
           include components/LinksList/item.html
           text=text2
@@ -332,7 +332,7 @@ layout: page-shell
       <div class="u-marginBottom60">
         {%
           include scenes/department/AdjustedSection/index.html
-          
+
           type="adjusted"
           items=page_data.adjusted_budget_summary
 
@@ -400,7 +400,7 @@ layout: page-shell
           guide=guide
 
           color="purple"
-          title="Budgeted and Actual Expenditure"
+          title="Planned compared to historical expenditure"
           subtitle=subtitle
           description="Expenditure changes over time"
         %}
@@ -423,7 +423,7 @@ layout: page-shell
           csv=page_data.budget_actual.department_data_csv
 
           color="purple"
-          description="Budgeted and Actual Expenditure"
+          description="Budgeted and Actual Expenditure comparison"
           subtitle=review_subtitle
         %}
       </div>
@@ -444,7 +444,7 @@ layout: page-shell
 
           color="purple"
           subtitle=review_subtitle
-          description="Budgeted and Actual Expenditure"
+          description="Budgeted and Actual Expenditure comparison by Programme"
         %}
       </div>
     {% endif %}
