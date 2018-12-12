@@ -10,22 +10,17 @@
   Learn more about the MTEF in the {{ include.source_type }} as Excel
 {% endcapture %}
 
-<div class="ExpenditureMultiplesSection" id="expenditure-multiples">
-  <h3 class="Title Title--section">Budget vs. Actual Spending by Programme</h3>
+<div class="ExpenditurePhaseSection" id="expenditure">
+  <h3 class="Title Title--section">Budget vs. Actual Spending</h3>
 
-  <div>
-    <div>
-      <div class="ExpenditureMultiplesSection-share u-marginTop10 u-marginBottom15">
-        <div 
-          data-component="Share"
-          data-anchor="expenditure-multiples"
-          data-color="{{ include.color }}"
-        >
-        </div>
+  <div class="ExpenditurePhaseSection-container">
+    <div class="ExpenditurePhaseSection-item">
+      <div class="ExpenditurePhaseSection-share u-marginTop10 u-marginBottom15">
+        <div data-component="Share" data-anchor="expenditure" data-color="{{ include.color }}"></div>
       </div>
 
       <p class="js-tooltips">
-        Compare the amount of budget allocated to each of this deparment’s programmes at each phase in the process leading up to the Audited Outcome
+        Compare the Adjusted Appropriation to the Main Appropriation to see how the spending plans changed during the year. The Audited Outcome then shows what was actually spent.
       </p>
 
       <ul class="LinksList">
@@ -65,9 +60,11 @@
           type="download"
         %}
       </ul>
+    </div>
 
-      <div class="ExpenditureMultiplesSection-label u-marginTop25">
-        <div class="ExpenditureMultiplesSection-labelItem">
+    <div class="ExpenditurePhaseSection-item ExpenditurePhaseSection-item--right">
+      <div class="ExpenditurePhaseSection-label u-marginBottom15">
+        <div class="ExpenditurePhaseSection-labelItem">
           {%
             include components/ChartLabel/index.html
             index="0"
@@ -75,7 +72,7 @@
           %}
         </div>
 
-        <div class="ExpenditureMultiplesSection-labelItem">
+        <div class="ExpenditurePhaseSection-labelItem">
           {%
             include components/ChartLabel/index.html
             index="1"
@@ -83,7 +80,7 @@
           %}
         </div>
 
-        <div class="ExpenditureMultiplesSection-labelItem">
+        <div class="ExpenditurePhaseSection-labelItem">
           {%
             include components/ChartLabel/index.html
             index="2"
@@ -91,7 +88,7 @@
           %}
         </div>
 
-        <div class="ExpenditureMultiplesSection-labelItem">
+        <div class="ExpenditurePhaseSection-labelItem">
           {%
             include components/ChartLabel/index.html
             index="3"
@@ -99,29 +96,22 @@
           %}
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="ExpenditureMultiplesSection-container u-marginTop30">
-    {% for chart in include.items %}
-      <div class="ExpenditureMultiplesSection-item">  
-        <div class="Card Card--fullHeight">
-          <div class="Title Title--interSection">{{ chart.name }}</div>
-          <div
+      <div class="Card">
+        <div
           data-component="ChartAdaptor"
-          data-items="{{ chart.items | jsonify | escape }}"
-          data-type="expenditureMultiples"
-          data-scale="1"
-          data-color="{{ include.color }}"
-          data-title="{{ chart.title | truncate: 45 }}"
+          data-items="{{ include.items | jsonify | escape }}"
+          data-type="expenditurePhase"
+          data-scale="2"
+          data-color="purple"
+          data-title="{{ include.title | truncate: 45 }}"
           data-subtitle="{{ include.subtitle }}"
           data-description="{{ include.description }}"
           data-barTypes="[&quot;Main Appropriation&quot;, &quot;Adjusted Appropriation&quot;, &quot;Final Appropriation&quot;, &quot;Audited Outcome&quot;]"
           data-rotated
         >
         </div>
-        </div>
       </div>
-    {% endfor %}
+    </div>
   </div>
 </div>

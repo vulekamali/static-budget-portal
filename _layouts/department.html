@@ -384,10 +384,33 @@ layout: page-shell
       </div>
     </div>
 
-    {% if page_data.budget_actual %}
+    {% if page_data.expenditure_over_time %}
       <div class="u-marginBottom60 u-marginTop15">
         {%
           include scenes/department/ExpenditureSection/index.html
+          items=page_data.expenditure_over_time.expenditure
+
+          cpi=site.data.global_values.cpi_dataset_url
+          source_type=source_type
+          year=page.financial_year
+          dataset=page_data.expenditure_over_time.dataset_detail_page
+          pdf=pdf_link
+          excel=excel
+          csv=page_data.expenditure_over_time.department_data_csv
+          guide=guide
+
+          color="purple"
+          title="Budgeted and Actual Expenditure"
+          subtitle=subtitle
+          description="Expenditure changes over time"
+        %}
+      </div>
+    {% endif %}
+
+    {% if page_data.budget_actual %}
+      <div class="u-marginBottom60 u-marginTop15">
+        {%
+          include scenes/department/ExpenditurePhaseSection/index.html
           items=page_data.budget_actual.expenditure
 
           cpi=site.data.global_values.cpi_dataset_url
@@ -411,7 +434,7 @@ layout: page-shell
       <div class="u-marginBottom60 u-marginTop15">
         {%
           include scenes/department/ExpenditureMultiplesSection/index.html
-          items=page_data.budget_actual_programmes.expenditure
+          items=page_data.budget_actual_programmes.programmes
 
           cpi=site.data.global_values.cpi_dataset_url
           source_type=source_type
