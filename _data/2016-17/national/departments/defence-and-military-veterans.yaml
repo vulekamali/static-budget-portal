@@ -8,7 +8,7 @@ adjusted_budget_summary:
     name: Self-financing
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2016-17/aggregate/%3Fcut%3Dfinyear.finyear%253A2016%257Cvoteno.department%253ADefence%2Band%2BMilitary%2BVeterans%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2016-17/aggregate/%3Fcut%3Dfinyear.finyear%253A2016%257Cvoteno.department%253ADefence%2Band%2BMilitary%2BVeterans%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -155,75 +155,25 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
   - items:
-    - amount: 827451000.0
+    - amount: 14805303000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 830060000
+    - amount: 15118951000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 830060000
+    - amount: 15118951000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 900248000.0
+    - amount: 15651438000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 900248000
+    - amount: 15627275000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 881289000
+    - amount: 15557822000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 881289000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    name: Defence Intelligence
-  - items:
-    - amount: 3932914000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 4243150000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 4243150000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 4416816000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 4440671000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 4448745000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 4448745000
+    - amount: 15557822000
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -253,157 +203,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2015-16
       phase: Adjusted appropriation
-    name: Military Health Support
-  - items:
-    - amount: 5816992000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 5476612000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 5476612000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 5911093000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 5924287000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 6056698000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 6056698000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    name: General Support
-  - items:
-    - amount: 3603153000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 3616407000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 3602801000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 3899635000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 3672635000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 3445535000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 3431011000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    name: Force Employment
-  - items:
-    - amount: 3717249000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 3732748000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 3732748000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 4355880000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 4386815000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 4323232000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 4298385000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    name: Maritime Defence
+    name: Landward Defence
   - items:
     - amount: 7049155000.0
       financial_year: 2015-16
@@ -455,6 +255,106 @@ budget_actual_programmes:
       phase: Adjusted appropriation
     name: Air Defence
   - items:
+    - amount: 3717249000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 3732748000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 3732748000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 4355880000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 4386815000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 4323232000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 4298385000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Maritime Defence
+  - items:
+    - amount: 3932914000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 4243150000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 4243150000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 4416816000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 4440671000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 4448745000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 4448745000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Military Health Support
+  - items:
     - amount: 4827173000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -505,25 +405,25 @@ budget_actual_programmes:
       phase: Adjusted appropriation
     name: Administration
   - items:
-    - amount: 14805303000.0
+    - amount: 827451000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 15118951000
+    - amount: 830060000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 15118951000
+    - amount: 830060000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 15651438000.0
+    - amount: 900248000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 15627275000
+    - amount: 900248000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 15557822000
+    - amount: 881289000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 15557822000
+    - amount: 881289000
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -553,7 +453,107 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2015-16
       phase: Adjusted appropriation
-    name: Landward Defence
+    name: Defence Intelligence
+  - items:
+    - amount: 3603153000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 3616407000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 3602801000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 3899635000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 3672635000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 3445535000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 3431011000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Force Employment
+  - items:
+    - amount: 5816992000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 5476612000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 5476612000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 5911093000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 5924287000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 6056698000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 6056698000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: General Support
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -596,7 +596,7 @@ description: 'National department: Defence and Military Veterans budget data for
   2016-17 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -948,7 +948,7 @@ is_vote_primary: true
 name: Defence and Military Veterans
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Landward Defence
@@ -1153,7 +1153,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 5151108000.0
@@ -1179,7 +1179,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - name: Office Accommodation

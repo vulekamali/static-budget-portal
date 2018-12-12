@@ -123,37 +123,37 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
   - items:
-    - amount: 503132000.0
+    - amount: 364518000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 503132000
+    - amount: 372000000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 440296000
+    - amount: 371033000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 529798000.0
+    - amount: 626717000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 529798000
+    - amount: 626717000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 556288000.0
+    - amount: 669544000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 556288000
+    - amount: 669544000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 556288000
+    - amount: 669544000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 556288000
+    - amount: 669544000
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 493161000.0
+    - amount: 698103000.0
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 493161000
+    - amount: 698103000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -171,7 +171,107 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Direct charge against the National Revenue Fund
+    name: Associated Services
+  - items:
+    - amount: 525983000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 525983000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 549166000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 549166000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 549166000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 549166000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 579464000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 579464000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Core Business
+  - items:
+    - amount: 375458000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 402724000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 397216000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Legislation and Oversight
   - items:
     - amount: 72801000.0
       financial_year: 2016-17
@@ -323,6 +423,56 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Public and International Participation
   - items:
+    - amount: 503132000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 503132000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 440296000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 529798000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 529798000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 556288000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 556288000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 556288000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 556288000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 493161000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 493161000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Direct charge against the National Revenue Fund
+  - items:
     - amount: 459572000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -423,106 +573,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: DETAIL NOT AVAILABLE
   - items:
-    - amount: 364518000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 372000000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 371033000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 626717000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 626717000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 669544000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 669544000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 669544000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 669544000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 698103000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 698103000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Associated Services
-  - items:
-    - amount: 375458000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 402724000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 397216000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Legislation and Oversight
-  - items:
     - amount: 318139000.0
       financial_year: 2016-17
       phase: Main appropriation
@@ -572,56 +622,6 @@ budget_actual_programmes:
       financial_year: 2018-19
       phase: Audit Outcome
     name: Support Services
-  - items:
-    - amount: 525983000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 525983000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 549166000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 549166000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 549166000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 549166000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 579464000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 579464000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Core Business
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

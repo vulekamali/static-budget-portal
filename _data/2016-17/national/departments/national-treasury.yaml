@@ -5,7 +5,7 @@
 adjusted_budget_summary:
   by_type: null
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2016-17/aggregate/%3Fcut%3Dfinyear.finyear%253A2016%257Cvoteno.department%253ANational%2BTreasury%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2016-17/aggregate/%3Fcut%3Dfinyear.finyear%253A2016%257Cvoteno.department%253ANational%2BTreasury%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges:
   - amount: -30775000
     label: Debt-service costs
@@ -183,25 +183,25 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
   - items:
-    - amount: 3962941000.0
+    - amount: 9434439000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 3967741000
+    - amount: 9334439000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 3967698000
+    - amount: 9334439000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 4173242000.0
+    - amount: 10009151000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 4462642000
+    - amount: 9363676000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 4462642000
+    - amount: 9363676000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 4400158875
+    - amount: 9363676000
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -231,27 +231,27 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2015-16
       phase: Adjusted appropriation
-    name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+    name: Revenue Administration
   - items:
-    - amount: 1247442000.0
+    - amount: 3116930000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 3547662000
+    - amount: 3265171000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 3546134000
+    - amount: 3264294000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 5039068000.0
+    - amount: 107211000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 4977977000
+    - amount: 113129000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 4961628000
+    - amount: 113129000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 4955752630
+    - amount: 110146309
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -281,7 +281,157 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2015-16
       phase: Adjusted appropriation
-    name: International Financial Relations
+    name: Asset and Liability Management
+  - items:
+    - amount: 133892000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 132730000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 131290000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 146070000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 150161000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 156561100
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 151181509
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Economic Policy, Tax, Financial Regulation and Research
+  - items:
+    - amount: 4542805000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 4562062000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 4562062000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 4812487000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 4812487000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 4812487000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 4812487000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Financial Intelligence and State Security
+  - items:
+    - amount: 751362000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 783753000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 774494280
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 849854000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1216758000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1251758000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1209857964
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Financial Accounting and Supply Chain Management Systems
   - items:
     - amount: 519893814000.0
       financial_year: 2015-16
@@ -383,6 +533,56 @@ budget_actual_programmes:
       phase: Adjusted appropriation
     name: Public Finance and Budget Management
   - items:
+    - amount: 3962941000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 3967741000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 3967698000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 4173242000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 4462642000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 4462642000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 4400158875
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: Civil and Military Pensions, Contributions to Funds and Other Benefits
+  - items:
     - amount: 366665000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -433,6 +633,56 @@ budget_actual_programmes:
       phase: Adjusted appropriation
     name: Administration
   - items:
+    - amount: 1247442000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 3547662000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 3546134000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 5039068000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 4977977000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 4961628000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 4955752630
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    name: International Financial Relations
+  - items:
     - amount: 3143863000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -482,256 +732,6 @@ budget_actual_programmes:
       financial_year: 2015-16
       phase: Adjusted appropriation
     name: Technical Support and Development Finance
-  - items:
-    - amount: 133892000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 132730000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 131290000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 146070000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 150161000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 156561100
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 151181509
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    name: Economic Policy, Tax, Financial Regulation and Research
-  - items:
-    - amount: 9434439000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 9334439000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 9334439000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 10009151000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 9363676000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 9363676000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 9363676000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    name: Revenue Administration
-  - items:
-    - amount: 3116930000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 3265171000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 3264294000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 107211000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 113129000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 113129000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 110146309
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    name: Asset and Liability Management
-  - items:
-    - amount: 4542805000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 4562062000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 4562062000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 4812487000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 4812487000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 4812487000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 4812487000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    name: Financial Intelligence and State Security
-  - items:
-    - amount: 751362000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 783753000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 774494280
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 849854000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 1216758000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 1251758000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 1209857964
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    name: Financial Accounting and Supply Chain Management Systems
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -774,7 +774,7 @@ description: 'National department: National Treasury budget data for the 2016-17
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -1097,7 +1097,7 @@ is_vote_primary: true
 name: National Treasury
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Public Finance and Budget Management
@@ -1248,7 +1248,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 412661000.0
@@ -1280,7 +1280,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services
