@@ -10,6 +10,9 @@ budget_actual:
     nominal:
     - amount: 754200000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 754200000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 748777000
       financial_year: 2015-16
@@ -53,10 +56,10 @@ budget_actual:
     - amount: null
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: null
+    real:
+    - amount: 840862360
       financial_year: 2015-16
       phase: Adjusted appropriation
-    real:
     - amount: 840862360
       financial_year: 2015-16
       phase: Final Appropriation
@@ -102,13 +105,13 @@ budget_actual:
     - amount: null
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
   - items:
+    - amount: 60431000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 60626000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -154,11 +157,11 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Institutional Performance Monitoring and Evaluation
   - items:
+    - amount: 82197000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 75632000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -204,11 +207,11 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: National Planning
   - items:
+    - amount: 92324000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 90087000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -254,11 +257,11 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Outcomes Monitoring and Evaluation
   - items:
+    - amount: 415063000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 415983000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -304,11 +307,11 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: National Youth Development
   - items:
+    - amount: 104185000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 111872000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -354,9 +357,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
 contributed_datasets:
 - contributor: International Budget Partnership

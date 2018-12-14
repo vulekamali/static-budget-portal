@@ -55,6 +55,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 234781000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 234781000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 234157318
       financial_year: 2015-16
@@ -95,13 +98,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 261758825
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 261758825
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 261758825
       financial_year: 2015-16
       phase: Final Appropriation
@@ -144,9 +147,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -154,6 +154,9 @@ budget_actual_programmes:
     - amount: 4618000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 4468000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 4268000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -196,14 +199,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Compliance Monitoring and Stakeholder Management
   - items:
     - amount: 150822000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 150822000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 152816000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -246,14 +249,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Investigation and Information Management
   - items:
     - amount: 5096000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 5476000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 5763000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -285,9 +288,6 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -304,6 +304,9 @@ budget_actual_programmes:
     - amount: 74245000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 74015000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 71934000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -346,9 +349,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
 contributed_datasets:
 - contributor: Public Service Accountability Monitor

@@ -64,6 +64,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 21286426000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 21286426000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 20796125000
       financial_year: 2015-16
@@ -104,13 +107,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 23982906336
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 23732371273
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 23732371273
       financial_year: 2015-16
       phase: Final Appropriation
@@ -153,9 +156,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -163,6 +163,9 @@ budget_actual_programmes:
     - amount: 1171484000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 1163353000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 1164017000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -205,14 +208,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Teachers, Education Human Resources and Institutional Development
   - items:
     - amount: 12129738000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 11974032000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 11959764000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -255,14 +258,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Planning, Information and Assessment
   - items:
     - amount: 5974456000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 5943822000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 5938035000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -305,14 +308,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Educational Enrichment Services
   - items:
     - amount: 1877765000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 1844922000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 1837965000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -355,14 +358,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Curriculum Policy, Support and Monitoring
   - items:
     - amount: 357697000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 360297000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 386645000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -405,9 +408,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
 contributed_datasets:
 - contributor: Public Service Accountability Monitor

@@ -13,6 +13,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 885778000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 885778000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 883733000
       financial_year: 2015-16
@@ -53,13 +56,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 987559506
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 987559506
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 987559506
       financial_year: 2015-16
       phase: Final Appropriation
@@ -102,9 +105,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -112,6 +112,9 @@ budget_actual_programmes:
     - amount: 27889000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 27889000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 27889000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -154,14 +157,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Growth Path and Social Dialogue
   - items:
     - amount: 774666000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 774666000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 774666000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -204,14 +207,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Investment, Competition and Trade
   - items:
     - amount: 83223000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 83223000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 83223000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -254,9 +257,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
 contributed_datasets:
 - contributor: International Budget Partnership

@@ -13,6 +13,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 941482000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 941482000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 934792000
       financial_year: 2015-16
@@ -53,13 +56,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 1037830633
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 1049664249
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 1049664249
       financial_year: 2015-16
       phase: Final Appropriation
@@ -102,9 +105,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -112,6 +112,9 @@ budget_actual_programmes:
     - amount: 314574000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 313464000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 325094000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -154,14 +157,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Service Delivery Support
   - items:
     - amount: 37465000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 38606000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 35518000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -204,14 +207,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Policy Development, Research and Analysis
   - items:
     - amount: 68607000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 73607000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 70410000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -254,14 +257,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Labour Relations and Human Resource Management
   - items:
     - amount: 219702000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 221441000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 216125000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -304,14 +307,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
   - items:
     - amount: 21493000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 21493000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 20308000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -354,14 +357,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Government Chief Information Officer
   - items:
     - amount: 269027000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 272871000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 274027000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -404,9 +407,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Governance of Public Administration
 contributed_datasets:
 - contributor: International Budget Partnership

@@ -13,6 +13,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 1405253000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1405253000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 1300097000
       financial_year: 2015-16
@@ -53,13 +56,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 1575728345
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 1566725477
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 1566725477
       financial_year: 2015-16
       phase: Final Appropriation
@@ -102,9 +105,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -112,6 +112,9 @@ budget_actual_programmes:
     - amount: 642764000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 627990000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 551550000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -154,14 +157,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: ICT Infrastructure Support
   - items:
     - amount: 43447000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 43447000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 43310000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -204,14 +207,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: International Affairs and Trade
   - items:
     - amount: 447889000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 447889000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 490231000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -254,14 +257,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: ICT Enterprise Development and SOE Oversight
   - items:
     - amount: 105578000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 105578000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 97132000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -304,14 +307,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Policy, Research and Capacity Development
   - items:
     - amount: 173650000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 180349000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 223030000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -354,9 +357,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
 contributed_datasets:
 - contributor: International Budget Partnership

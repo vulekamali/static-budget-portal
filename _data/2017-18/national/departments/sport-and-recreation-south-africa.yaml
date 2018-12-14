@@ -47,6 +47,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 980879000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 980879000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 979902000
       financial_year: 2015-16
@@ -87,13 +90,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 1102138431
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 1093588214
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 1093588214
       financial_year: 2015-16
       phase: Final Appropriation
@@ -136,9 +139,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -146,6 +146,9 @@ budget_actual_programmes:
     - amount: 92152000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 75552000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 57152000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -188,14 +191,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Winning Nation
   - items:
     - amount: 9678000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 6788000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 2996000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -238,14 +241,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Sport Infrastructure Support
   - items:
     - amount: 133244000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 154017000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 154017000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -288,14 +291,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Sport Support
   - items:
     - amount: 628646000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 629045000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 652207000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -338,14 +341,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Active Nation
   - items:
     - amount: 124828000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 115477000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 114507000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -388,9 +391,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
 contributed_datasets:
 - contributor: Public Service Accountability Monitor

@@ -71,6 +71,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 15746530000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 15746530000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 15556974000
       financial_year: 2015-16
@@ -111,13 +114,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 18336340545
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 17555906108
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 17555906108
       financial_year: 2015-16
       phase: Final Appropriation
@@ -160,9 +163,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -170,6 +170,9 @@ budget_actual_programmes:
     - amount: 231339000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 284609000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 271117000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -212,14 +215,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Water Sector Regulation
   - items:
     - amount: 1444582000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 1414674000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 1414674000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -251,9 +254,6 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -270,6 +270,9 @@ budget_actual_programmes:
     - amount: 12435787000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 11815750000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 11856540000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -312,14 +315,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Water Infrastructure Development
   - items:
     - amount: 808655000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 743963000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 684446000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -362,14 +365,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Water Planning and Information Management
   - items:
     - amount: 1526167000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 1487534000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 1519753000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -412,9 +415,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
 contributed_datasets:
 - contributor: Public Service Accountability Monitor

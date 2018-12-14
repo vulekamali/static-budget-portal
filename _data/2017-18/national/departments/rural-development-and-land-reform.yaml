@@ -64,6 +64,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 9197361000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 9197361000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 9118046585
       financial_year: 2015-16
@@ -104,13 +107,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 10457469145
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 10254196077
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 10254196077
       financial_year: 2015-16
       phase: Final Appropriation
@@ -153,9 +156,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -163,6 +163,9 @@ budget_actual_programmes:
     - amount: 799903000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 748063000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 701279000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -205,14 +208,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: National Geomatics Management Services
   - items:
     - amount: 2737108000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 2537108000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 2547469000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -255,14 +258,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Land Reform
   - items:
     - amount: 1264265000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 1324944000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 1340960000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -305,14 +308,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
   - items:
     - amount: 2602669000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 2602669000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 2675984000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -355,14 +358,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Restitution
   - items:
     - amount: 1975739000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 1984577000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 1931669000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -405,9 +408,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Rural Development
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
