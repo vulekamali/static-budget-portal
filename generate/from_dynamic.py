@@ -12,6 +12,7 @@ import yaml
 import logging
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
+from requests.exceptions import ChunkedEncodingError
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -61,6 +62,17 @@ def requests_session(
     return session
 
 
+def http_get(session, url, retries=3):
+    try:
+        return session.get(url)
+    except ChunkedEncodingError as e:
+        logger.error(e, exc_info=True)
+        if retries:
+            http_get(session, session, url, retries-1)
+        else:
+            raise e
+
+
 def ensure_file_dirs(file_path):
     dirname = os.path.dirname(file_path)
     if dirname:
@@ -95,7 +107,7 @@ def write_financial_year(session, year_slug, static_path):
     url_path = '/%s' % year_slug
     logger.info(url_path)
     url = portal_url + url_path[1:] + ".yaml"
-    r = session.get(url)
+    r = http_get(session, url)
     r.raise_for_status()
     path = '_data%s/index.yaml' % static_path
 
@@ -189,7 +201,7 @@ for year_slug in YEAR_SLUGS:
         url_path = '/%s/%s' % (year_slug, slug)
         logger.info(url_path)
         url = portal_url + url_path[1:] + ".yaml"
-        r = session.get(url)
+        r = http_get(session, url)
         r.raise_for_status()
         path = '_data%s.yaml' % url_path
 
@@ -205,7 +217,7 @@ for year_slug in YEAR_SLUGS:
 listing_url_path = '/datasets/contributed'
 logger.info(listing_url_path)
 listing_url = portal_url + listing_url_path[1:] + '.yaml'
-r = session.get(listing_url)
+r = http_get(session, listing_url)
 r.raise_for_status()
 listing_path = '_data%s/index.yaml' % listing_url_path
 
@@ -224,7 +236,7 @@ for dataset in listing['datasets']:
     dataset_context_path = '_data/' + dataset_path
     ensure_file_dirs(dataset_context_path)
 
-    r = session.get(dataset_url)
+    r = http_get(session, dataset_url)
     r.raise_for_status()
     write_contributed_dataset_page(dataset['url_path'], r.text)
     with open(dataset_context_path, 'wb') as dataset_file:
@@ -237,7 +249,7 @@ for dataset in listing['datasets']:
 category_list_url_path = "/datasets"
 logger.info(category_list_url_path)
 category_list_url = portal_url + category_list_url_path[1:] + '.yaml'
-r = session.get(category_list_url)
+r = http_get(session, category_list_url)
 r.raise_for_status()
 
 category_list_path = '_data%s/index.yaml' % category_list_url_path
@@ -255,7 +267,7 @@ for category in dataset_categories:
     dataset_list_url_path = "/datasets/" + category
     logger.info(dataset_list_url_path)
     dataset_list_url = portal_url + dataset_list_url_path[1:] + '.yaml'
-    r = session.get(dataset_list_url)
+    r = http_get(session, dataset_list_url)
     r.raise_for_status()
 
     dataset_list_path = '_data%s/index.yaml' % dataset_list_url_path
@@ -277,7 +289,7 @@ for category in dataset_categories:
         dataset_context_path = '_data/' + dataset_path
         ensure_file_dirs(dataset_context_path)
 
-        r = session.get(dataset_url)
+        r = http_get(session, dataset_url)
         r.raise_for_status()
         write_categorised_dataset_page(dataset['url_path'], r.text)
         with open(dataset_context_path, 'wb') as dataset_file:
@@ -289,7 +301,7 @@ for year_slug in YEAR_SLUGS:
     listing_url_path = '/%s/departments' % year_slug
     logger.info(listing_url_path)
     listing_url = portal_url + listing_url_path[1:] + '.yaml'
-    r = session.get(listing_url)
+    r = http_get(session, listing_url)
     r.raise_for_status()
     listing_path = '_data%s.yaml' % listing_url_path
 
@@ -309,7 +321,7 @@ for year_slug in YEAR_SLUGS:
                 department_context_path = '_data/' + department_path[1:]
                 ensure_file_dirs(department_context_path)
 
-                r = session.get(department_url)
+                r = http_get(session, department_url)
                 r.raise_for_status()
                 write_department_page(department['url_path'], r.text)
                 with open(department_context_path, 'wb') as department_file:
