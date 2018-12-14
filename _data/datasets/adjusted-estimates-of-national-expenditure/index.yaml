@@ -16,7 +16,7 @@ datasets:
   created: '2018-12-12T14:08:53.272254'
   description: null
   intro_short: null
-  last_updated: '2018-12-14T10:11:32.312621'
+  last_updated: '2018-12-14T14:47:15.752612'
   license:
     name: License not specified
     url: null
@@ -39,6 +39,10 @@ datasets:
     format: OpenSpending API
     name: Adjusted Estimates of National Expenditure 2015-16
     url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:adjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/model/
+  - description: ''
+    format: CSV
+    name: Value of Virements
+    url: https://data.vulekamali.gov.za/dataset/fe97d4dd-3cab-4fa8-911d-dee89a92489c/resource/6ce5358b-c144-432b-bf3b-10d6df19ec20/download/aene-2015-16-table-2-virements.csv
   slug: adjusted-estimates-of-national-expenditure-2015-16
   url_path: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2015-16
 - author:
