@@ -2,7 +2,62 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
-adjusted_budget_summary: null
+adjusted_budget_summary:
+  by_type:
+  - amount: 2007000
+    name: Significant and unforeseeable economic and financial events
+    type: kind
+  - amount: 33106000
+    name: Unforeseeable/unavoidable
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2015-16
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253APublic%2BEnterprises%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges: null
+  econ_classes:
+  - items:
+    - amount: 844000
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: -20000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 70000
+      name: Machinery and equipment
+      type: economic_classification_3
+    - amount: -50000
+      name: Software and other intangible assets
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 1163000
+      name: Households
+      type: economic_classification_3
+    - amount: 33106000
+      name: Public corporations and private enterprises
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: 3287000
+    name: Administration
+  - amount: -320000
+    name: Legal and Governance
+  - amount: 32146000
+    name: Portfolio Management and Strategic Partnerships
+  special_appropriation:
+    amount: 23000000000
+    percentage: 8598.741592860802
+  total_change:
+    amount: 35113000
+    percentage: 13.127287545657449
+  virements:
+    amount: 24704000
+    label: Value of virements and shifts due to savings
+    percentage: 9.235796187392749
 budget_actual:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   expenditure:

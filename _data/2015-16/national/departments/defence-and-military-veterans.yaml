@@ -2,7 +2,61 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
-adjusted_budget_summary: null
+adjusted_budget_summary:
+  by_type:
+  - amount: 213351000
+    name: Self-financing
+    type: kind
+  - amount: 295420000
+    name: Significant and unforeseeable economic and financial events
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2015-16
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253ADefence%2Band%2BMilitary%2BVeterans%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges: null
+  econ_classes:
+  - items:
+    - amount: 295420000
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: 150153000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: 57393000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    - amount: 5805000
+      name: Foreign governments and international organisations
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: 35228000
+    name: Administration
+  - amount: 118439000
+    name: Air Defence
+  - amount: 4008000
+    name: Defence Intelligence
+  - amount: 210156000
+    name: Force Employment
+  - amount: -444378000
+    name: General Support
+  - amount: 397073000
+    name: Landward Defence
+  - amount: 51898000
+    name: Maritime Defence
+  - amount: 136347000
+    name: Military Health Support
+  special_appropriation: null
+  total_change:
+    amount: 508771000
+    percentage: 1.1412695418219048
+  virements:
+    amount: 478314000
+    label: Value of virements and shifts due to savings
+    percentage: 1.0729487325869644
 budget_actual:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   expenditure:

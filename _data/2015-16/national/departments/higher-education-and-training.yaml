@@ -2,7 +2,70 @@
 #  GENERATED FILE. Don't edit by hand.  #
 #########################################
 
-adjusted_budget_summary: null
+adjusted_budget_summary:
+  by_type:
+  - amount: -30600000
+    name: Declared unspent funds
+    type: kind
+  - amount: 66783000
+    name: Significant and unforeseeable economic and financial events
+    type: kind
+  dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2015-16
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253AHigher%2BEducation%2Band%2BTraining%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  direct_charges:
+  - amount: 222000000
+    label: National Skills Fund
+    percentage: 7.557979404846571
+  - amount: 888000000
+    label: Sector education and training authorities
+    percentage: 7.555706102432401
+  econ_classes:
+  - items:
+    - amount: 8963000
+      name: Compensation of employees
+      type: economic_classification_3
+    - amount: -113956000
+      name: Goods and services
+      type: economic_classification_3
+    name: Current payments
+    type: economic_classification_2
+  - items:
+    - amount: -1971000
+      name: Machinery and equipment
+      type: economic_classification_3
+    name: Payments for capital assets
+    type: economic_classification_2
+  - items:
+    - amount: 31893000
+      name: Departmental agencies and accounts
+      type: economic_classification_3
+    - amount: 397000
+      name: Households
+      type: economic_classification_3
+    - amount: 110857000
+      name: Non-profit institutions
+      type: economic_classification_3
+    name: Transfers and subsidies
+    type: economic_classification_2
+  programmes:
+  - amount: 41201000
+    name: Administration
+  - amount: 3410000
+    name: Human Resource Development, Planning and Monitoring Coordination
+  - amount: 1932000
+    name: Skills Development
+  - amount: 3120000
+    name: University Education
+  - amount: -13480000
+    name: Vocational and Continuing Education and Training
+  special_appropriation: null
+  total_change:
+    amount: 36183000
+    percentage: 0.08647127165680205
+  virements:
+    amount: 2097206000
+    label: Value of virements and shifts due to savings
+    percentage: 5.011968873401188
 budget_actual:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   expenditure:
