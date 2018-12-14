@@ -68,7 +68,7 @@ def http_get(session, url, retries=3):
     except ChunkedEncodingError as e:
         logger.error(e, exc_info=True)
         if retries:
-            http_get(session, session, url, retries-1)
+            http_get(session, url, retries-1)
         else:
             raise e
 
